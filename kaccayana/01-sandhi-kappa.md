@@ -2275,7 +2275,7 @@ Secuencias de formación \[en caso de consonantes\]:
 
 **Pakkamo**: pa kamo; pa kkamo (§28); pakkamo (§11).
 
-**Parakkamo**: parā kamo; para kamo (§25); para kkamo (§28); parakkamo (§11).
+**Parakkamo**: parā kamo; par ā kamo (§10); par a kamo (§26); para kkamo (§28); parakkamo (§11).
 
 **Nikkamo**: ni kamo; ni kkamo (§28); nikkamo (§11).
 
