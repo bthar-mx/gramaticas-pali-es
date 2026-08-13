@@ -1,0 +1,145 @@
+{
+ "_nota": "Funciones que un sutta ejerce más allá de su enunciado. Transcrito de kaccayana/01-sandhi-kappa.md; el pasaje Suttavibhāgena está en §20 y las citas «ca» en las secuencias del capítulo. Nada de esto está inventado.",
+ "fuente": "Kaccāyana-vyākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU), §20 y §51",
+ "direccion": "subyacente → atestiguada, que es la de Nandisena y la del proyecto",
+ "yogavibhaga": {
+  "aforismo": 20,
+  "pali": "Suttavibhāgena bahudhā siyā … Icc evamādī yojetabbā",
+  "glosa": "Dividiendo el sutta en reglas similares, podría haber numerosas aplicaciones. Deben formarse otros ejemplos similares a estos.",
+  "abierta": true,
+  "subsuttas": [
+   {
+    "subsutta": "To dassa",
+    "de": "d",
+    "a": "t",
+    "subyacente": "Sugado",
+    "atestiguada": "Sugato"
+   },
+   {
+    "subsutta": "Ṭo tassa",
+    "de": "t",
+    "a": "ṭ",
+    "subyacente": "dukkataṃ",
+    "atestiguada": "dukkaṭaṃ"
+   },
+   {
+    "subsutta": "Dho tassa",
+    "de": "t",
+    "a": "dh",
+    "subyacente": "gantabbo",
+    "atestiguada": "gandhabbo"
+   },
+   {
+    "subsutta": "Tro ttassa",
+    "de": "tt",
+    "a": "tr",
+    "subyacente": "attajo",
+    "atestiguada": "atrajo"
+   },
+   {
+    "subsutta": "Ko gassa",
+    "de": "g",
+    "a": "k",
+    "subyacente": "kulūpago",
+    "atestiguada": "kulūpako"
+   },
+   {
+    "subsutta": "Lo rassa",
+    "de": "r",
+    "a": "l",
+    "subyacente": "mahāsāro",
+    "atestiguada": "mahāsālo"
+   },
+   {
+    "subsutta": "Jo yassa",
+    "de": "y",
+    "a": "j",
+    "subyacente": "gavayo",
+    "atestiguada": "gavajo"
+   },
+   {
+    "subsutta": "Bbo vvassa",
+    "de": "vv",
+    "a": "bb",
+    "subyacente": "kuvvato",
+    "atestiguada": "kubbato"
+   },
+   {
+    "subsutta": "Ko yassa",
+    "de": "y",
+    "a": "k",
+    "subyacente": "saye",
+    "atestiguada": "sake"
+   },
+   {
+    "subsutta": "Yo jassa",
+    "de": "j",
+    "a": "y",
+    "subyacente": "nijaṃ",
+    "atestiguada": "niyaṃ"
+   },
+   {
+    "subsutta": "Ko tassa",
+    "de": "t",
+    "a": "k",
+    "subyacente": "niyato",
+    "atestiguada": "niyako"
+   },
+   {
+    "subsutta": "Cco ttassa",
+    "de": "tt",
+    "a": "cc",
+    "subyacente": "bhatto",
+    "atestiguada": "bhacco"
+   },
+   {
+    "subsutta": "Pho passa",
+    "de": "p",
+    "a": "ph",
+    "subyacente": "nippatti",
+    "atestiguada": "nipphatti"
+   },
+   {
+    "subsutta": "Kho kassa",
+    "de": "k",
+    "a": "kh",
+    "subyacente": "nikkamati",
+    "atestiguada": "nikkhamati"
+   }
+  ]
+ },
+ "ca_atestiguados": [
+  {
+   "paso": "cirap pavāsiṃ",
+   "aforismo": 35
+  },
+  {
+   "paso": "sad atthapasuto",
+   "aforismo": 35
+  },
+  {
+   "paso": "sugato",
+   "aforismo": 35
+  },
+  {
+   "paso": "agy āgāraṃ",
+   "aforismo": 41
+  },
+  {
+   "paso": "paṭisanthāravuty assa",
+   "aforismo": 41
+  },
+  {
+   "paso": "par āyaṇaṃ",
+   "aforismo": 20
+  },
+  {
+   "paso": "b y aggaṃ",
+   "aforismo": 20
+  },
+  {
+   "paso": "du bb uttaṃ",
+   "aforismo": 20
+  }
+ ]
+}

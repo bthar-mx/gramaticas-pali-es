@@ -70,6 +70,7 @@ suttas, y que el lector juzgue.
 | `kaccayana/01-sandhi-kappa.md` | los 51 aforismos traducidos, con 164 secuencias de formación |
 | `recursos/combinacion-eufonica.md` | el documento de Nandisena: reglas y tablas de formas |
 | `comun/concordancia.json` | numeración Kaccāyana / Rūpasiddhi / Saddanīti |
+| `recursos/sandhi/suttavibhaga.json` | las 14 sub-suttas de §20 por *suttavibhāga* y las 8 citas «ca» atestiguadas |
 | Thitzana vol. 2, capítulo de Sandhi | ~101 bloques `[SM]` con el método en prosa |
 
 En `reglas.json` cada forma dice de dónde sale su secuencia: `verificada` (49,
@@ -148,8 +149,9 @@ siguiente.
 **El «ca» de un sutta hace más de lo que dice su enunciado.** Cuando un paso
 hace una sustitución que ningún enunciado cubre, lo probable no es que falte
 una regla: es el «ca» de alguna. Se cita como «"ca" en §20». Thitzana
-documenta el mecanismo —*yogavibhāga*, la división del sutta— y enumera
-catorce sub-suttas de §20 en las páginas 138-140. Está resumido en `CLAUDE.md`.
+documenta el mecanismo —*suttavibhāga*, la división del sutta—. Las catorce
+sub-suttas de §20 están en el propio capítulo (§20) y transcritas en
+`recursos/sandhi/suttavibhaga.json`, que es donde conviene leerlas.
 
 **§51 es el sutta comodín** y por eso el más rico en patrones: reúne 41
 secuencias ya traducidas. Conviene mirar ahí antes de dar una forma por inexplicable.

@@ -128,11 +128,19 @@ De modo que cuando un paso hace una sustitución que ningún enunciado cubre,
 lo probable no es que falte una regla: es que sea el «ca» de alguna, y §20 es
 la candidata habitual.
 
-### Las 14 funciones de §20 por yogavibhāga
+### Las 14 funciones de §20 por suttavibhāga
 
-Thitzana, vol. 2, pp. 138-140, documenta el mecanismo: *yogavibhāga*, el
-procedimiento de dividir el sutta —*Suttavibhāgena bahudhā siyā*—. Enumera
-catorce sub-suttas de «Do dhassa ca» (§20):
+**Están en el propio capítulo**, en §20, líneas 887-891 de
+`kaccayana/01-sandhi-kappa.md`: el pasaje pāḷi *Suttavibhāgena bahudhā siyā …
+Icc evamādī yojetabbā* con su traducción y los catorce ejemplos. Thitzana,
+vol. 2, pp. 138-140, documenta lo mismo por su lado, de modo que sirve de
+cotejo, no de fuente.
+
+Transcritas a `recursos/sandhi/suttavibhaga.json`, listas para el
+solucionador, junto con las ocho citas «ca» que el capítulo hace en sus
+secuencias (tres a §35, dos a §41, tres a §20).
+
+Las catorce sub-suttas de «Do dhassa ca» (§20):
 
 | Sub-sutta   | Cambio  | Ejemplo |
 | ----------- | ------- | ------- |
@@ -153,10 +161,16 @@ catorce sub-suttas de «Do dhassa ca» (§20):
 
 Aparte de éstas, el propio «ca» de §20 da **dha → ha** (sādhu → sāhu).
 
-**Ojo con la dirección de la flecha.** Thitzana imprime «Sugato> Sugado»,
-es decir la forma atestiguada primero, aunque declare que `>` significa «se
-convierte en». Al traer material suyo hay que invertirlo y escribirlo con
-flecha: «sugado → sugato». La convención está fijada en `comun/convenciones.md`.
+**Ojo con la dirección de la flecha.** Nandisena escribe «Sugado > Sugato»,
+de la subyacente a la atestiguada, que es la dirección del proyecto. Thitzana
+la invierte: imprime «Sugato> Sugado», la atestiguada primero, aunque declare
+que `>` significa «se convierte en». Al traer material suyo hay que darle la
+vuelta. La convención está fijada en `comun/convenciones.md`.
+
+**Y con dos ejemplos que difieren entre ambos.** En *Pho passa*, Nandisena
+escribe «nippatti → nipphatti» y Thitzana «nipatti → nipphatti»; en *Yo
+jassa*, Nandisena da «nijaṃ → niyaṃ» y Thitzana «nijaṃputtaṃ →
+niyaṃputtaṃ». Manda Nandisena, que es la edición base.
 
 La lista se cierra con *Icceva’mādī yojetabbā* —«y así los demás casos
 semejantes»—, que es lo que ampara las sustituciones que §51 cita sin figurar
