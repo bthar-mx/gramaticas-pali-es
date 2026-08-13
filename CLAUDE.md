@@ -153,6 +153,11 @@ catorce sub-suttas de «Do dhassa ca» (§20):
 
 Aparte de éstas, el propio «ca» de §20 da **dha → ha** (sādhu → sāhu).
 
+**Ojo con la dirección de la flecha.** Thitzana imprime «Sugato> Sugado»,
+es decir la forma atestiguada primero, aunque declare que `>` significa «se
+convierte en». Al traer material suyo hay que invertirlo y escribirlo con
+flecha: «sugado → sugato». La convención está fijada en `comun/convenciones.md`.
+
 La lista se cierra con *Icceva’mādī yojetabbā* —«y así los demás casos
 semejantes»—, que es lo que ampara las sustituciones que §51 cita sin figurar
 en la tabla, como v → b y n → ṇ.

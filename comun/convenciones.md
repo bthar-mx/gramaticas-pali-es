@@ -67,6 +67,23 @@ Bālāvatāra, **no** a suttas de este capítulo. El generador no las enlaza y
 las lista al terminar, para poder revisarlas. Un §N que apunte a un sutta
 inexistente en el capítulo tampoco se enlaza y aparece en ese aviso.
 
+### La flecha de derivación
+
+Entre dos formas se escribe **→**, nunca `>`:
+
+    sugado → sugato
+    dukkataṃ → dukkaṭaṃ
+
+La flecha va siempre de la forma subyacente a la atestiguada, en el sentido
+en que ocurre la operación.
+
+Dos motivos para no usar `>`: en markdown, un `>` al principio de línea abre
+una cita, y además el `>` de Thitzana lleva la dirección contraria. Él
+imprime «Sugato> Sugado» —primero la forma atestiguada— aunque su propia nota
+diga que el signo significa «se convierte en». Al incorporar material suyo hay
+que invertir el orden, y sólo se deja su `>` tal cual cuando se le cita
+literalmente.
+
 ### Glosas emergentes
 
 Para glosar una palabra pāḷi dentro del texto:
