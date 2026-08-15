@@ -510,6 +510,8 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
   font: 11.5px/1.65 var(--sans);
   color: var(--text3);
 }
+.footer-box-copy a { color: var(--accent); }
+body.dark .footer-box-copy a { color: var(--accent-mid); }
 .footer-box-main strong {
   font-weight: 500;
   color: var(--text2);
