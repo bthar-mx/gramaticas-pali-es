@@ -80,8 +80,8 @@ RE_FN_DEF = re.compile(r'^\[\^(\d+)\]:\s*(.*)$')
 # ── Utilidades de texto ─────────────────────────────────────────────────
 
 def desescapar(t):
-    """El markdown viene de una exportación con escapes tipo \\[ \\+ \\."""
-    return re.sub(r'\\([\[\]\+\.\(\)\*\-])', r'\1', t)
+    """El markdown viene de una exportación con escapes tipo \\[ \\+ \\= \\."""
+    return re.sub(r'\\([\[\]\+\.\(\)\*\-=!])', r'\1', t)
 
 
 def escapar_html(t):
@@ -697,7 +697,10 @@ def render_kanda_nav(suttas):
             '{5}</button>'.format(k, KANDAS_PALI[k - 1], KANDAS_ES[k - 1],
                                   a, b, KANDAS_PALI[k - 1].split("-")[0]))
     return ('<div class="kanda-nav" id="kanda-nav">'
-            '<span class="kanda-nav-label">Kaṇḍa:</span>{0}</div>'
+            '<span class="kanda-nav-label">Kaṇḍa:</span>{0}'
+            '<input aria-label="Ir al sutta número…" class="kanda-jump" '
+            'id="kanda-jump" onkeydown="kandaJumpKey(event)" '
+            'placeholder="§…" type="search"/></div>'
             .format("".join(botones)))
 
 
@@ -725,14 +728,6 @@ def render(cap, meta, notas):
             cuerpo.append(cierre_kanda(s["cierre"]))
     cuerpo.append('</div>\n')
 
-    pastillas = "".join(
-        '<span class="nav-tip-wrap"><button class="nav-btn" onclick="jumpOpen(\'s{0}\')">'
-        '§{0}</button><span class="nav-tip-box">{1}. {2}. {3}'
-        '<br/><span class="nav-tip-es">{4}</span></span></span>'
-        .format(s["n"], s["n"], s["rup"], escapar_html(s["pali"]),
-                escapar_html(glosa_breve(s)))
-        for s in suttas)
-
     return PLANTILLA.format(
         obra=meta["obra"], obra_sub=meta["obra_sub"],
         obra_display=marcar_diacriticos(escapar_html(meta["obra"])),
@@ -747,7 +742,6 @@ def render(cap, meta, notas):
         total=total, nk=nk,
         toc=render_toc(suttas, meta),
         kanda_nav=render_kanda_nav(suttas),
-        pastillas=pastillas,
         cuerpo="".join(cuerpo),
         done_key="{0}_{1}_done".format(meta["obra_slug"], meta["slug"]),
         cap_id="{0}-{1}".format(meta["obra_slug"], meta["slug"]),
@@ -800,6 +794,7 @@ PLANTILLA = '''<!DOCTYPE html>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
+<button aria-label="Volver al inicio" id="top-btn" onclick="window.scrollTo({{top:0,behavior:'smooth'}})" title="Volver al inicio">↑</button>
 <nav aria-label="Tabla de contenidos" id="toc">
 {toc}
 </nav>
@@ -830,7 +825,6 @@ PLANTILLA = '''<!DOCTYPE html>
 <span class="done-count" id="done-count" title="Suttas estudiados">0 / {total} estudiados</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
 </div>
-<div class="nav-pills"><span class="nav-pill-label">Ir a:</span>{pastillas}</div>
 {kanda_nav}{cuerpo}{fin_capitulo}
 <div class="footer-box">
 <div class="footer-box-main">

@@ -147,6 +147,29 @@ body.dark {
   background: var(--accent-bg); color: var(--accent);
   border-color: var(--accent-mid);
 }
+.kanda-jump {
+  margin-left: auto; width: 72px; padding: 4px 9px;
+  border: .5px solid var(--border2); border-radius: 100px;
+  font: 11px/1.2 var(--sans); background: var(--bg); color: var(--text);
+  outline: none; transition: border-color .15s, box-shadow .15s, width .15s;
+}
+.kanda-jump:focus {
+  border-color: var(--accent-mid); box-shadow: 0 0 0 2px var(--accent-bg);
+  width: 96px;
+}
+
+/* 5. Botón flotante «volver al inicio». */
+#top-btn {
+  position: fixed; right: 18px; bottom: 18px; z-index: 60;
+  width: 38px; height: 38px; border-radius: 50%;
+  border: .5px solid var(--border2); background: var(--bg);
+  color: var(--text2); font: 16px/1 var(--sans); cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,.12);
+  opacity: 0; pointer-events: none; transform: translateY(6px);
+  transition: opacity .2s, transform .2s, background .12s;
+}
+#top-btn.show { opacity: 1; pointer-events: auto; transform: none; }
+#top-btn:hover { background: var(--bg2); color: var(--text); }
 
 /* ── Main layout ─────────────────────────────────────────────────── */
 #main {
@@ -406,7 +429,7 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 
 /* ── Print ───────────────────────────────────────────────────────── */
 @media print {
-  #toc, #pbar-wrap, #pbadge, #dark-btn, .controls, .search-wrap,
+  #toc, #pbar-wrap, #pbadge, #dark-btn, #top-btn, .controls, .search-wrap,
   .nav-pills, .kanda-nav, .back-top-btn, .copy-btn,
   .collapsible-btn { display: none !important; }
   .sutta-card { content-visibility: visible; }

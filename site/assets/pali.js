@@ -362,6 +362,23 @@ function filterToc(q) {
   });
 }
 
+// Caja «§…» de la barra fija de kaṇḍas.
+function kandaJumpKey(e) {
+  if (e.key !== 'Enter') return;
+  var m = e.target.value.trim().match(/^§?\s*(\d+)$/);
+  if (m && document.getElementById('s' + m[1])) {
+    jump('s' + m[1]);
+    e.target.value = '';
+    e.target.blur();
+  }
+}
+
+// Botón flotante «volver al inicio»: aparece al bajar.
+window.addEventListener('scroll', function() {
+  var b = document.getElementById('top-btn');
+  if (b) b.classList.toggle('show', window.scrollY > 600);
+}, {passive: true});
+
 function tocJumpKey(e) {
   if (e.key !== 'Enter') return;
   var v = e.target.value.trim();

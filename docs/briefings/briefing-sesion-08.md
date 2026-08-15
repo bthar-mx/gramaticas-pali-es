@@ -16,9 +16,10 @@ mandando el 05 y el 07.*
 - `comun/concordancia.json` tiene ya el capítulo 2 (219 entradas, continuidad
   §52–§270 verificada). La tarjeta de `site/kaccayana/index.html` enlaza a
   `nama/`. Insignia de versión 1.0 (2026-08-14).
-- **Falta solo:** revisión visual de Angel y `git push` para desplegar.
-  Quedan además cambios de sesiones previas SIN commit (CLAUDE.md, glosario,
-  briefings, borradores, el maestro del Nāma): conviene commitear todo junto.
+- **Commit 3a94612 hecho y desplegado**: el capítulo está EN VIVO en
+  <https://gramaticas.buddha-dhamma.net/kaccayana/nama/> (verificado al
+  cierre: cabecera «219 suttas · 5 secciones · v1.0», tarjeta del índice
+  actualizada). El árbol de trabajo quedó limpio.
 
 ## 2. LA CONVERSIÓN (herramientas/convertir_nama.py)
 
@@ -77,17 +78,27 @@ En `site/assets/pali.css` y `pali.js` (compartidos por todos los capítulos):
 4. Mini-navegación fija de kaṇḍas (`.kanda-nav`, sticky) con resaltado por
    scroll; los encabezados de kaṇḍa llevan `id="kanda-N"`.
 
+**Ajustes tras la primera revisión de Angel en vivo (misma sesión):**
+
+- Corregido `desescapar`: los escapes `\=` y `\!` de la exportación quedaban
+  visibles en los ejemplos (627 casos).
+- **Retiradas las 219 pastillas «Ir a:»**; en su lugar, caja «§…» en la barra
+  fija de kaṇḍas (funciona también en móvil, donde el TOC no se ve).
+- **Botón flotante «↑»** (abajo a la derecha, aparece tras bajar 600 px) para
+  volver al inicio; el «Inicio ↑» del pie de cada sutta se conserva.
+
 ## 5. PENDIENTES QUE DEJA ESTA SESIÓN
 
-1. **Revisión visual** de /kaccayana/nama/ (no se pudo abrir navegador en la
-   sesión). Abrir `site/kaccayana/nama/index.html` en local o desplegar y
-   revisar en vivo: §185 (versos), §215 (nota en el encabezado), §197/§214/
-   §227–§229 (dos bloques de ejemplos), TOC, kaṇḍa-nav, modo oscuro, EPUB.
+1. **Revisión visual en vivo** de /kaccayana/nama/ (quedó pendiente al
+   cierre): §185 (versos pāda a pāda), §215 (nota en el encabezado),
+   §197/§214/§227–§229 (dos bloques de ejemplos), un enlace cruzado al
+   Sandhi (p. ej. §12 en un desglose), TOC plegable y caja «ir a §…»,
+   kaṇḍa-nav fija, modo oscuro, impresión, EPUB.
 2. **§77:** ¿corregir el `---` en el maestro?
 3. **Notas convertidas:** ¿mantener o quitar los prefijos «Nota:» dentro de
-   las definiciones? ¿Anclas bien situadas? (16 casos.)
-4. Commit + push de todo (incluye lo pendiente de sesiones previas).
-5. Siguen abiertos los pendientes del briefing-07 §5 (no se tocaron):
+   las definiciones? ¿Anclas bien situadas? (16 casos; tabla en el chat de
+   la sesión 08 y en la salida de convertir_nama.py.)
+4. Siguen abiertos los pendientes del briefing-07 §5 (no se tocaron):
    [^41]/§204, §184 nota 57, §185 cuarto pāda, §237 ta → sa, §238 nota 77,
    arrastre pleno «“tu” (§205)», volcar la tabla 6.1 al glosario.
 
