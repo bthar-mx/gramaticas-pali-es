@@ -85,7 +85,18 @@ En `site/assets/pali.css` y `pali.js` (compartidos por todos los capítulos):
 - **Retiradas las 219 pastillas «Ir a:»**; en su lugar, caja «§…» en la barra
   fija de kaṇḍas (funciona también en móvil, donde el TOC no se ve).
 - **Botón flotante «↑»** (abajo a la derecha, aparece tras bajar 600 px) para
-  volver al inicio; el «Inicio ↑» del pie de cada sutta se conserva.
+  volver al inicio; el «Inicio ↑» del pie de cada sutta se conserva. Colocado
+  ENCIMA del conmutador 🌓 (compartían esquina y quedaba oculto).
+- **Tooltips en las referencias §N** (idea de Angel): al pasar el cursor,
+  «§N · título pāḷi — glosa» (en las citas al Sandhi: título y capítulo), con
+  la caja estilada del sitio (12,5 px), vía `data-tip` + CSS `::after`, sin
+  DOM extra. El clic navega como siempre.
+- **Recorte de tooltips corregido:** `content-visibility` confina la pintura
+  y recortaba los tooltips al borde de la tarjeta; la tarjeta bajo el cursor
+  y las abiertas quedan excluidas (`:not(:hover):not(.open)`).
+- **Caché de assets con huella:** las páginas enlazan
+  `pali.css?v=<hash>` / `pali.js?v=<hash>` (md5 de ambos, calculado al
+  generar). Sin esto, los lectores veían CSS/JS viejos tras cada mejora.
 
 ## 5. PENDIENTES QUE DEJA ESTA SESIÓN
 
@@ -98,7 +109,20 @@ En `site/assets/pali.css` y `pali.js` (compartidos por todos los capítulos):
 3. **Notas convertidas:** ¿mantener o quitar los prefijos «Nota:» dentro de
    las definiciones? ¿Anclas bien situadas? (16 casos; tabla en el chat de
    la sesión 08 y en la salida de convertir_nama.py.)
-4. Siguen abiertos los pendientes del briefing-07 §5 (no se tocaron):
+4. **PRIMERA TAREA DE LA SESIÓN 09 (decidido con Angel):** versionado y DOI
+   como en el OSBCT, sin cambiar el hosting: (a) crear `CITATION.cff` y
+   `.zenodo.json` (título, Bhikkhu Nandisena como traductor de la edición
+   base, IEBH, licencia); (b) dejar preparados los comandos de la primera
+   release (`git tag v1.0.0` = Sandhi + Nāma completos, release en GitHub);
+   (c) Angel activa el repositorio en Zenodo (Settings → GitHub, con su
+   cuenta) ANTES de publicar la release, para que Zenodo emita el DOI.
+5. **Errata candidata:** §83, glosa del maestro (línea 802): «‘aṃ,» sin
+   comilla de cierre («Cuando siguen ‘aṃ, una sustitución…»). Cotejar y, si
+   procede, corregir maestro + regenerar con convertir_nama.py.
+6. **Idea pendiente de decisión:** en móvil (<1100 px) no hay TOC; si Angel
+   echa de menos una lista ojeable de suttas, hacer un cajón deslizante (☰)
+   con el mismo TOC, en vez de resucitar las pastillas.
+7. Siguen abiertos los pendientes del briefing-07 §5 (no se tocaron):
    [^41]/§204, §184 nota 57, §185 cuarto pāda, §237 ta → sa, §238 nota 77,
    arrastre pleno «“tu” (§205)», volcar la tabla 6.1 al glosario.
 
