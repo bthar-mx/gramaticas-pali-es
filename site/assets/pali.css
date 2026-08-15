@@ -837,3 +837,34 @@ body.dark .doc a { color: var(--accent-mid); }
   font-family: var(--display); font-weight: 700;
   font-size: clamp(34px, 7vw, 58px); line-height: .95; letter-spacing: -.02em;
 }
+
+/* ── Cajón TOC móvil (☰, sesión 10) ──────────────────────────────
+   En pantallas sin sidebar (<1100 px) el mismo #toc se abre como
+   cajón deslizante desde el botón ☰ de la barra de kaṇḍas. */
+.toc-burger { display: none; }
+@media (max-width: 1099px) {
+  .toc-burger {
+    display: inline-flex; align-items: center; justify-content: center;
+    border: .5px solid var(--border); background: var(--bg);
+    border-radius: 100px; padding: 3px 10px;
+    font: 14px/1.2 var(--sans); color: var(--text2); cursor: pointer;
+  }
+  .toc-burger:hover { background: var(--bg2); color: var(--text); }
+  #toc.toc-drawer {
+    display: block; z-index: 1600;
+    width: min(320px, 86vw);
+    transform: translateX(-105%); visibility: hidden;
+    transition: transform .25s ease, visibility .25s;
+    box-shadow: 4px 0 24px rgba(0,0,0,.18);
+    border-right: .5px solid var(--border2);
+  }
+  body.toc-open #toc.toc-drawer { transform: none; visibility: visible; }
+  #toc-ovl {
+    position: fixed; inset: 0; background: rgba(0,0,0,.35);
+    z-index: 1590; opacity: 0; visibility: hidden;
+    transition: opacity .25s ease, visibility .25s;
+  }
+  body.toc-open #toc-ovl { opacity: 1; visibility: visible; }
+  body.toc-open { overflow: hidden; }
+}
+@media print { .toc-burger, #toc-ovl { display: none !important; } }

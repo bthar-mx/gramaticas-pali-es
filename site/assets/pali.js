@@ -528,6 +528,43 @@ document.addEventListener('click', function(e) {
     });
   }
 });
+// ─── Cajón TOC móvil (☰, sesión 10) ─────────────────────────────
+// En pantallas sin sidebar (<1100 px) el mismo #toc se abre como cajón
+// deslizante. El botón ☰ se inserta al frente de la barra de kaṇḍas.
+function toggleTocDrawer(force) {
+  var open = (typeof force === 'boolean') ? force
+           : !document.body.classList.contains('toc-open');
+  document.body.classList.toggle('toc-open', open);
+  var b = document.getElementById('toc-burger');
+  if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var toc = document.getElementById('toc');
+  var nav = document.querySelector('.kanda-nav');
+  if (!toc || !nav) return;
+  toc.classList.add('toc-drawer');
+  var b = document.createElement('button');
+  b.id = 'toc-burger'; b.className = 'toc-burger';
+  b.setAttribute('aria-label', 'Abrir el índice de suttas');
+  b.setAttribute('aria-expanded', 'false');
+  b.textContent = '☰';
+  b.addEventListener('click', function() { toggleTocDrawer(); });
+  nav.insertBefore(b, nav.firstChild);
+  var ovl = document.createElement('div');
+  ovl.id = 'toc-ovl';
+  ovl.addEventListener('click', function() { toggleTocDrawer(false); });
+  document.body.appendChild(ovl);
+  // Elegir un sutta cierra el cajón.
+  toc.addEventListener('click', function(e) {
+    if (e.target.closest && e.target.closest('.toc-item')) toggleTocDrawer(false);
+  });
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && document.body.classList.contains('toc-open')) {
+    toggleTocDrawer(false);
+  }
+});
+
 // Mobile: tap fn-sup to toggle tooltip
 document.addEventListener('click', function(e) {
   var sup = e.target.closest('.fn-sup');
