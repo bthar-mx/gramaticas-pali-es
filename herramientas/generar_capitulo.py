@@ -143,12 +143,12 @@ def enlazar_suttas(t):
         if not otra and (not SUTTAS_VALIDOS or n in SUTTAS_VALIDOS):
             resumen = RESUMEN_SUTTAS.get(n, "")
             return ('<a class="sutta-xref" href="#s{0}" onclick="jumpOpen(\'s{0}\')" '
-                    'title="§{0}{1}">§{0}</a>').format(
+                    'data-tip="§{0}{1}">§{0}</a>').format(
                         n, " · " + atributo(resumen) if resumen else "")
         if not otra and n in SUTTAS_OTROS_CAP:
             slug, titulo, pali = SUTTAS_OTROS_CAP[n]
             return ('<a class="sutta-xref" href="../{1}/#s{0}" '
-                    'title="§{0}{3} ({2})">§{0}</a>').format(
+                    'data-tip="§{0}{3} ({2})">§{0}</a>').format(
                         n, slug, atributo(titulo),
                         " · " + atributo(pali) if pali else "")
         NO_ENLAZADOS.append((n, previo.strip()))
