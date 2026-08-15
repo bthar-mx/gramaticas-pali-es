@@ -20,43 +20,43 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *nivattana* | excluir | | Nāma, §215, §253 |
 | *vikappana* | como alternativa | Antes provisional «alternativa»; fijado en sesión 07. | Nāma, §76, §162 |
 | *vikappena* | alternativamente | **Provisional.** | Nāma |
-| *Jina* | el Victorioso | | briefing-05 §6.1 |
-| *Buddha* | Buddha | **Nunca «Buda».** | briefing-05 §6.1 |
-| *adhikāra* | aforismo regulativo | | briefing-05 §6.1 |
+| *Jina* | el Victorioso | | Sandhi, versos iniciales |
+| *Buddha* | Buddha | **Nunca «Buda».** | Sandhi, versos iniciales |
+| *adhikāra* | aforismo regulativo | | Nāma, §52 |
 | *vibhatti* | inflexión | Antes «inflexión nominal»; acortado en sesión 09. | sesión 09 |
-| *kvaci* | a veces | Ver `terminologia-particulas.md`. | briefing-05 §6.1 |
-| *vā* | opcionalmente | Ver `terminologia-particulas.md`. | briefing-05 §6.1 |
-| *navā* | ocasionalmente | Ver `terminologia-particulas.md`. | briefing-05 §6.1 |
-| *vibhāsā* | facultativamente | Ver `terminologia-particulas.md`. | briefing-05 §6.1 |
-| *sandhi* | combinación eufónica | | briefing-05 §6.1 |
-| *rassa* | corta | **No «breve».** | briefing-05 §6.1 |
-| *lahu* | leve | | briefing-05 §6.1 |
-| *dīgha* | larga | | briefing-05 §6.1 |
-| *vaggā* | agrupadas | | briefing-05 §6.1 |
-| *niggahita* | sin traducir | | briefing-05 §6.1 |
-| *liṅga* | según contexto: «base», «género» o «forma final» | | briefing-05 §6.1 |
-| *kimatthaṃ* | ¿Cuál es la finalidad de decir…? | | briefing-05 §6.1 |
-| *kvattho* | ¿Cuál es la utilidad del nombre…? | | briefing-05 §6.1 |
-| *pakati* | natural | | briefing-05 §6.1 |
-| *alutta-samāsa* | compuesto con \[inflexión\] no elidida | | briefing-05 §6.1 |
-| *bhāvaniddesa* | expresión que indica estado | | briefing-05 §6.1 |
-| *anukaḍḍhana* | arrastre | Ver «Las aplicaciones de ‘ca’» en `terminologia-particulas.md`. | briefing-05 §6.1 |
-| *sampiṇḍana* | recolección/fusión | En §203: «inclusión» (sesión 06). | briefing-05 §6.1 |
-| *saññā* | nombre / denominación | | briefing-05 §6.1 |
-| *kāriya* | operación gramatical | | briefing-05 §6.1 |
-| *sabbanāma-vidhāna* | procedimiento pronominal | | briefing-05 §6.1 |
-| *bahubbīhi* | compuesto relativo | | briefing-05 §6.1 |
-| *dvanda* / *dvandaṭṭha* | compuesto copulativo / en un compuesto copulativo | | briefing-05 §6.1 |
-| *avadhāraṇa* | para restringir \[el alcance de este sutta\] | | briefing-05 §6.1 |
-| *evaṃ sabbattha* | Así en todas partes | | briefing-05 §6.1 |
-| *tiṭṭhati* | permanece | | briefing-05 §6.1 |
-| *manogaṇādito* | tras el grupo “mano” y otros | «“mano”» con comillas dobles (briefing-05 §10.3c). | briefing-05 §6.1 |
-| *yathāsaṅkhyaṃ* | respectivamente | Implícito. | briefing-05 §6.1 |
-| *sabbass’ eva* | toda la base \[X\] | | briefing-05 §6.1 |
-| *ādiggahaṇena* | Al tomar ‘ādi’ | Comillas de ‘ādi’ pendientes de decisión (briefing-05 §10.2.5). | briefing-05 §6.1 |
-| *santa* (y familia) | santo (y derivados) | | briefing-05 §6.1 |
-| *daṭṭhabba* | se debe considerar | | briefing-05 §6.1 |
-| *puna … ggahaṇena* | Tomando ‘\[X\]’ de nuevo | | briefing-05 §6.1 |
+| *kvaci* | a veces | Ver `terminologia-particulas.md`. | Sandhi, §14 |
+| *vā* | opcionalmente | Ver `terminologia-particulas.md`. | Sandhi, §13 |
+| *navā* | ocasionalmente | Ver `terminologia-particulas.md`. | Sandhi, §21 |
+| *vibhāsā* | facultativamente | Ver `terminologia-particulas.md`. | Nāma, §154 |
+| *sandhi* | combinación eufónica | | Sandhi, §10 |
+| *rassa* | corta | **No «breve».** | Sandhi, §4 |
+| *lahu* | leve | | Sandhi, §4 |
+| *dīgha* | larga | | Sandhi, §5 |
+| *vaggā* | agrupadas | | Sandhi, §7 |
+| *niggahita* | sin traducir | | Sandhi, §8 |
+| *liṅga* | según contexto: «base», «género» o «forma final» | | Nāma, §53 |
+| *kimatthaṃ* | ¿Cuál es la finalidad de decir…? | | Nāma, §57 |
+| *kvattho* | ¿Cuál es la utilidad del nombre…? | | Sandhi, §2 |
+| *pakati* | natural | | Sandhi, §23 |
+| *alutta-samāsa* | compuesto con \[inflexión\] no elidida | | Nāma, §77 |
+| *bhāvaniddesa* | expresión que indica estado | | Nāma, §90 |
+| *anukaḍḍhana* | arrastre | Ver «Las aplicaciones de ‘ca’» en `terminologia-particulas.md`. | Sandhi, §16 (nota) |
+| *sampiṇḍana* | recolección/fusión | En §203: «inclusión» (sesión 06). | Sandhi, §22 (nota) |
+| *saññā* | nombre / denominación | | Sandhi, §1 |
+| *kāriya* | operación gramatical | | Nāma, §166 |
+| *sabbanāma-vidhāna* | procedimiento pronominal | | Nāma, §167 |
+| *bahubbīhi* | compuesto relativo | | Nāma, §167 |
+| *dvanda* / *dvandaṭṭha* | compuesto copulativo / en un compuesto copulativo | | Nāma, §165 |
+| *avadhāraṇa* | para restringir \[el alcance de este sutta\] | | Nāma, §79 |
+| *evaṃ sabbattha* | Así en todas partes | | Nāma, §168 |
+| *tiṭṭhati* | permanece | | Sandhi, §23 (prosa) |
+| *manogaṇādito* | tras el grupo “mano” y otros | «“mano”» con comillas dobles (briefing-05 §10.3c). | Nāma, §181 |
+| *yathāsaṅkhyaṃ* | respectivamente | Implícito. | Sandhi, §29 |
+| *sabbass’ eva* | toda la base \[X\] | | Nāma, §80 |
+| *ādiggahaṇena* | Al tomar ‘ādi’ | Comillas de ‘ādi’ pendientes de decisión (briefing-05 §10.2.5). | Nāma, §181 |
+| *santa* (y familia) | santo (y derivados) | | Nāma, §185 |
+| *daṭṭhabba* | se debe considerar | | Nāma, §187 |
+| *puna … ggahaṇena* | Tomando ‘\[X\]’ de nuevo | | Nāma, §82 |
 
 ## En discusión
 
