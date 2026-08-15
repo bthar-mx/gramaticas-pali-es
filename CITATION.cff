@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Kaccāyana-vyākaraṇa — traducción española"
+message: "Si usa esta traducción, por favor cítela con estos metadatos."
+type: dataset
+abstract: >-
+  Traducción española del Kaccāyana-vyākaraṇa, la gramática clásica más
+  antigua de la lengua pāḷi, con el texto pāḷi completo, análisis morfológico
+  de los ejemplos, notas, glosario terminológico y concordancia con el
+  Padarūpasiddhi y el Saddanīti-Suttamālā. La versión 1.0.0 comprende los dos
+  primeros capítulos completos: Sandhi-kappa (§1–§51) y Nāma-kappa
+  (§52–§270). Edición base: la traducción de Bhikkhu Nandisena (ITBMU);
+  referencia secundaria: Ven. A. Thitzana. Un proyecto del Instituto de
+  Estudios Buddhistas Hispano (IEBH).
+authors:
+  - name: "Instituto de Estudios Buddhistas Hispano (IEBH)"
+keywords:
+  - Pāḷi
+  - Kaccāyana
+  - vyākaraṇa
+  - gramática pāḷi
+  - Theravāda
+  - traducción española
+  - digital humanities
+url: "https://gramaticas.buddha-dhamma.net"
+repository-code: "https://github.com/admin-iebh/gramaticas-pali-es"
+license: CC-BY-NC-SA-4.0
+version: "1.0.0"
+date-released: "2026-08-15"

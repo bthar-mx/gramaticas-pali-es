@@ -1,0 +1,41 @@
+{
+  "upload_type": "publication",
+  "publication_type": "book",
+  "access_right": "open",
+  "license": "cc-by-nc-sa-4.0",
+  "language": "spa",
+  "version": "1.0.0",
+  "title": "Kaccāyana-vyākaraṇa — traducción española",
+  "description": "<p>Traducción española del <strong>Kaccāyana-vyākaraṇa</strong>, la gramática clásica más antigua de la lengua pāḷi, con el texto pāḷi completo, análisis morfológico de los ejemplos, notas, glosario terminológico y concordancia con el Padarūpasiddhi y el Saddanīti-Suttamālā.</p><p>La versión 1.0.0 comprende los dos primeros capítulos completos, 270 suttas: <strong>Sandhi-kappa</strong> (§1–§51, combinación eufónica) y <strong>Nāma-kappa</strong> (§52–§270, morfología nominal, cinco secciones y 76 notas). El markdown del repositorio es la fuente; el sitio publicado, con navegación por sutta, referencias cruzadas enlazadas y exportación EPUB, se sirve en <a href=\"https://gramaticas.buddha-dhamma.net\">https://gramaticas.buddha-dhamma.net</a>.</p><p><strong>Edición base:</strong> la traducción de Bhikkhu Nandisena (ITBMU), seguida al pie de la letra; los desgloses estructurales y material complementario proceden de la edición de Ven. A. Thitzana; el texto pāḷi se coteja con la edición de la PTS (Pind). Las expansiones morfológicas propias y toda desviación de la edición base están señaladas como tales.</p><p>Un proyecto del Instituto de Estudios Buddhistas Hispano (IEBH). Obras previstas en el mismo repositorio: Padarūpasiddhi, Moggallāna-vyākaraṇa y Saddanīti.</p>",
+  "creators": [
+    {
+      "name": "Instituto de Estudios Buddhistas Hispano (IEBH)"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Nandisena, Bhikkhu",
+      "type": "Other",
+      "affiliation": "ITBMU"
+    }
+  ],
+  "keywords": [
+    "Pāḷi",
+    "Kaccāyana",
+    "vyākaraṇa",
+    "gramática pāḷi",
+    "Theravāda",
+    "traducción española",
+    "sandhi",
+    "morfología nominal",
+    "digital humanities"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://gramaticas.buddha-dhamma.net",
+      "relation": "isVariantFormOf",
+      "scheme": "url",
+      "resource_type": "other"
+    }
+  ]
+}
