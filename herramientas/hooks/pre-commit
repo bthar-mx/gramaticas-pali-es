@@ -1,6 +1,8 @@
 #!/bin/sh
-# Regenera el sitio antes de cada commit, para que el HTML publicado nunca
-# se quede atrás del markdown. Instalar con: herramientas/instalar-hooks.sh
+# Antes de cada commit: (1) convierte el maestro del Nāma al formato del
+# generador y (2) regenera el sitio, para que ni el archivo del generador ni
+# el HTML publicado se queden atrás del markdown.
+# Instalar con: herramientas/instalar-hooks.sh
 
 RAIZ=$(git rev-parse --show-toplevel)
 
@@ -11,6 +13,14 @@ if [ -z "$PY" ]; then
   exit 0
 fi
 
+CONV=$("$PY" "$RAIZ/herramientas/convertir_nama.py" 2>&1)
+if [ $? -ne 0 ]; then
+  echo "$CONV"
+  echo "pre-commit: convertir_nama.py ha fallado (el maestro y el archivo del"
+  echo "            generador no cuadran); commit detenido."
+  exit 1
+fi
+
 SALIDA=$("$PY" "$RAIZ/herramientas/generar_todo.py" 2>&1)
 if [ $? -ne 0 ]; then
   echo "$SALIDA"
@@ -18,9 +28,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-CAMBIOS=$(cd "$RAIZ" && git diff --name-only -- site/)
+CAMBIOS=$(cd "$RAIZ" && git diff --name-only -- site/ kaccayana/02-nama-kappa.md)
 if [ -n "$CAMBIOS" ]; then
-  echo "pre-commit: el sitio se ha regenerado y se añade al commit:"
+  echo "pre-commit: regenerado y añadido al commit:"
   echo "$CAMBIOS" | sed 's/^/    /'
   (cd "$RAIZ" && echo "$CAMBIOS" | tr '\n' '\0' | xargs -0 git add)
 fi
