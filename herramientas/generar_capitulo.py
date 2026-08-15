@@ -31,14 +31,13 @@ CAPITULOS = {
         "titulo_es": "1-Capítulo de Sandhi",
         "anterior": None,
         "siguiente": "2-Nāma-Kappa",
-        "version": "1.2",
-        "version_fecha": "2026-08-11",
-        "version_nota": "La página se genera ahora desde el markdown; glosas "
-                        "emergentes y referencias §N derivadas del texto. "
-                        "Restituidos el pie con el aviso de copyright, el "
-                        "cierre del capítulo, la navegación entre capítulos y "
-                        "esta insignia, que la primera generación había "
-                        "perdido. Portada en Gentium Book Plus.",
+        "version": "1.3",
+        "version_fecha": "2026-08-15",
+        "version_nota": "Mejoras de diseño compartidas de las sesiones 08–09: "
+                        "TOC plegable con caja «ir a §…», navegación fija de "
+                        "kaṇḍas, tooltips en las referencias §N, botón «↑», "
+                        "caché de estilos con huella y contraste del acento "
+                        "en modo oscuro.",
     },
     "02-nama-kappa": {
         "slug": "nama",
@@ -50,11 +49,12 @@ CAPITULOS = {
         "titulo_es": "2-Capítulo del Nombre",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.0",
-        "version_fecha": "2026-08-14",
-        "version_nota": "Primera publicación completa del capítulo (§52–§270, "
-                        "cinco kaṇḍas), generada desde el documento maestro "
-                        "revisado en la sesión 07.",
+        "version": "1.1",
+        "version_fecha": "2026-08-15",
+        "version_nota": "Revisión de la sesión 09: «inflexión» en lugar de "
+                        "«inflexión nominal»; §237 cita §174 para ta → sa; "
+                        "separador de §77 y comilla de §83 en el maestro; "
+                        "sub-listas de ejemplos anidadas.",
     },
 }
 
