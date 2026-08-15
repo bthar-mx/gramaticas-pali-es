@@ -26,3 +26,8 @@ repository-code: "https://github.com/admin-iebh/gramaticas-pali-es"
 license: CC-BY-NC-SA-4.0
 version: "1.0.0"
 date-released: "2026-08-15"
+doi: "10.5281/zenodo.21948011"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21948011"
+    description: "Zenodo archive of v1.0.0"
