@@ -62,7 +62,11 @@ COPYRIGHT = (
     "Edición del texto en pāḷi y traducción al español por Bhikkhu Nandisena. "
     "Este material puede ser reproducido para uso personal y distribuido de "
     "forma gratuita. Copyright © 2026 Instituto de Estudios Buddhistas "
-    "Hispano (IEBH)."
+    "Hispano (IEBH). Publicado bajo licencia "
+    '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" '
+    'rel="license">CC BY-NC-SA 4.0</a> · DOI '
+    '<a href="https://doi.org/10.5281/zenodo.21948011">'
+    "10.5281/zenodo.21948011</a>."
 )
 
 KANDAS_PALI = ["Paṭhama-Kaṇḍa", "Dutiya-Kaṇḍa", "Tatiya-Kaṇḍa",
