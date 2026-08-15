@@ -50,9 +50,11 @@ CAPITULOS = {
         "titulo_es": "2-Capítulo del Nombre",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "0.1",
-        "version_fecha": "",
-        "version_nota": "Traducción en curso.",
+        "version": "1.0",
+        "version_fecha": "2026-08-14",
+        "version_nota": "Primera publicación completa del capítulo (§52–§270, "
+                        "cinco kaṇḍas), generada desde el documento maestro "
+                        "revisado en la sesión 07.",
     },
 }
 
@@ -88,23 +90,59 @@ def escapar_html(t):
 
 # Abreviaturas de otras obras: "Rū. §49", "Sad. §139", "Bā. §41" remiten a
 # Rūpasiddhi, Saddanīti y Bālāvatāra, no a un sutta de este capítulo.
-RE_OTRA_OBRA = re.compile(r'[A-ZĀĪŪÑṄ][a-zāīūṃṇṭḍñṅḷ]{0,4}\.\s*$')
+# Admite un tomo en números romanos por medio: "Sad. iii §25".
+RE_OTRA_OBRA = re.compile(
+    r'[A-ZĀĪŪÑṄ][a-zāīūṃṇṭḍñṅḷ]{0,4}\.\s*(?:[ivxlcdm]+\s+)?$')
+# "Kac. §79" es la propia obra: sí se enlaza si el sutta está en el capítulo.
+RE_PROPIA_OBRA = re.compile(r'Kac\.\s*$')
 
 SUTTAS_VALIDOS = set()
+SUTTAS_OTROS_CAP = {}     # n → (slug, título pāḷi del capítulo) ya publicado
 FIN_CAPITULO = {}
 NO_ENLAZADOS = []
 
 
+def cargar_capitulos_publicados(clave_actual, obra_slug):
+    """Suttas de otros capítulos ya publicados, desde comun/concordancia.json.
+
+    Permite enlazar las citas cruzadas (p. ej. §20 del Sandhi-kappa citado
+    desde el Nāma-kappa). Sólo se enlaza a capítulos cuyo HTML existe.
+    """
+    ruta = os.path.join(RAIZ, "comun", "concordancia.json")
+    if not os.path.exists(ruta):
+        return
+    with open(ruta, encoding="utf-8") as f:
+        conc = json.load(f)
+    for clave, cap in conc.get("capitulos", {}).items():
+        if clave == clave_actual or clave not in CAPITULOS:
+            continue
+        meta = CAPITULOS[clave]
+        destino = os.path.join(RAIZ, "site", meta["obra_slug"], meta["slug"],
+                               "index.html")
+        if meta["obra_slug"] != obra_slug or not os.path.exists(destino):
+            continue
+        for s in cap.get("suttas", []):
+            SUTTAS_OTROS_CAP[s["kaccayana"]] = (meta["slug"],
+                                                meta["titulo_pali"])
+
+
 def enlazar_suttas(t):
-    """§N → enlace al ancla del sutta, sólo si es un sutta de este capítulo."""
+    """§N → enlace al ancla del sutta: en este capítulo o, si pertenece a
+    otro capítulo ya publicado (concordancia), a su página."""
     def rep(m):
         n = int(m.group(1))
-        previo = t[max(0, m.start() - 8):m.start()]
-        if RE_OTRA_OBRA.search(previo) or (SUTTAS_VALIDOS and n not in SUTTAS_VALIDOS):
-            NO_ENLAZADOS.append((n, previo.strip()))
-            return m.group(0)
-        return ('<a class="sutta-xref" href="#s{0}" onclick="jumpOpen(\'s{0}\')" '
-                'title="Ir al sutta §{0}">§{0}</a>').format(n)
+        previo = t[max(0, m.start() - 14):m.start()]
+        otra = RE_OTRA_OBRA.search(previo) and not RE_PROPIA_OBRA.search(previo)
+        if not otra and (not SUTTAS_VALIDOS or n in SUTTAS_VALIDOS):
+            return ('<a class="sutta-xref" href="#s{0}" onclick="jumpOpen(\'s{0}\')" '
+                    'title="Ir al sutta §{0}">§{0}</a>').format(n)
+        if not otra and n in SUTTAS_OTROS_CAP:
+            slug, titulo = SUTTAS_OTROS_CAP[n]
+            return ('<a class="sutta-xref" href="../{1}/#s{0}" '
+                    'title="Ir al sutta §{0} ({2})">§{0}</a>').format(
+                        n, slug, escapar_html(titulo))
+        NO_ENLAZADOS.append((n, previo.strip()))
+        return m.group(0)
     return re.sub(r'§(\d+)', rep, t)
 
 
@@ -157,7 +195,7 @@ def leer_notas(lineas):
 
 
 RE_CIERRE_PALI = re.compile(r'^\*\*(Iti\s+.+?kaṇḍo)\.?\*\*$')
-RE_FIN_PALI = re.compile(r'^\*\*(.+?niṭṭhito)\.?\*\*$')
+RE_FIN_PALI = re.compile(r'^\*\*(.+?[Nn]iṭṭhito)\.?\*\*$')
 RE_FIN_ES = re.compile(r'^\*\*(Fin del capítulo.+?)\.?\*\*$')
 RE_CIERRE_ES = re.compile(r'^\*\*(Así termina la .+?)\.?\*\*$')
 
@@ -216,6 +254,9 @@ def parsear(path):
         m = RE_SUTTA.match(l)
         if m:
             n, rup, pali, resto = int(m.group(1)), int(m.group(2)), m.group(3), m.group(4)
+            # notas al pie ancladas en el encabezado (título o tras él)
+            notas_hdr = re.findall(r'\[\^(\d+)\]', resto)
+            resto = re.sub(r'\[\^\d+\]\s*', '', resto)
             # (Saddanīti) al final del texto pāḷi
             sadd = None
             ms = re.search(r'\(([\d,\s\-–]+)\)\s*\\?\.?\s*$', pali)
@@ -223,6 +264,8 @@ def parsear(path):
                 sadd = [x for x in re.split(r'[,\s]+', ms.group(1)) if x]
                 pali = pali[:ms.start()].strip()
             pali = desescapar(pali).rstrip(". ").strip()
+            pali_notas = pali                       # con anclas, para el título
+            pali = re.sub(r'\[\^\d+\]', '', pali)   # limpio: TOC, pastillas…
             # desglose [A + B, n]
             desglose, voces = None, None
             md = re.search(r'\\?\[(.+?),\s*(\d+)\\?\]', resto)
@@ -237,6 +280,7 @@ def parsear(path):
             cuerpo_s, cierre = separar_cierre(lineas[i + 1:j])
             suttas.append({
                 "n": n, "rup": rup, "sadd": sadd, "pali": pali,
+                "pali_notas": pali_notas, "notas_hdr": notas_hdr,
                 "desglose": desglose, "voces": voces,
                 "kanda": max(kanda_actual, 1),
                 "cuerpo": cuerpo_s, "cierre": cierre,
@@ -320,6 +364,41 @@ def parrafos(lineas, notas, clase="rest-para"):
     return "".join(out)
 
 
+def bloque_pali(lineas, notas):
+    """El primer bloque, con modo verso: un párrafo cuyas líneas acaban en
+    salto forzado (dos espacios) se mantiene pāda por pāda; el párrafo
+    siguiente es su traducción."""
+    paras, buf = [], []
+    for l in lineas:
+        if l.strip():
+            buf.append(l)
+        elif buf:
+            paras.append(buf); buf = []
+    if buf:
+        paras.append(buf)
+    # Pādas según briefing-05 §7.7: salto forzado (dos espacios) y coma
+    # final en todas las líneas menos la última.
+    es_verso = [len(p) > 1 and all(x.endswith("  ") and
+                                   x.rstrip().endswith(",") for x in p[:-1])
+                for p in paras]
+    if not any(es_verso):
+        return '<div class="pali-block">{0}</div>'.format(
+            inline(" ".join(x.strip() for x in lineas if x.strip()), notas))
+    out = []
+    for i, p in enumerate(paras):
+        texto = " ".join(x.strip() for x in p)
+        if es_verso[i]:
+            out.append('<div class="pali-verse">{0}</div>'.format(
+                "<br/>".join(inline(x.strip(), notas) for x in p)))
+        elif i and es_verso[i - 1]:
+            out.append('<div class="pali-verse-trans">{0}</div>'.format(
+                inline(texto, notas)))
+        else:
+            out.append('<p class="pali-para">{0}</p>'.format(
+                inline(texto, notas)))
+    return '<div class="pali-block">{0}</div>'.format("".join(out))
+
+
 def render_sutta(s, notas):
     n = s["n"]
     sid = "s{0}".format(n)
@@ -327,8 +406,7 @@ def render_sutta(s, notas):
 
     pali_html = ""
     if bloques:
-        pali_html = '<div class="pali-block">{0}</div>'.format(
-            inline(" ".join(x.strip() for x in bloques[0] if x.strip()), notas))
+        pali_html = bloque_pali(bloques[0], notas)
 
     gloss_html = vutti_html = ""
     if len(bloques) > 1:
@@ -354,8 +432,11 @@ def render_sutta(s, notas):
             '<div class="rest-content">{1}</div></div>\n'
         ).format(sid, cuerpo)
 
-    # notas al pie usadas en este sutta
+    # notas al pie usadas en este sutta (primero las del encabezado)
     usadas = []
+    for k in re.findall(r'\[\^(\d+)\]', s["pali_notas"]) + s["notas_hdr"]:
+        if k not in usadas:
+            usadas.append(k)
     for l in s["cuerpo"]:
         for m in re.finditer(r'\[\^(\d+)\]', l):
             if m.group(1) not in usadas:
@@ -368,7 +449,7 @@ def render_sutta(s, notas):
             for k in usadas)
         notas_html = (
             '<hr class="divider"/>'
-            '<button class="collapsible-btn" data-type="fn" '
+            '<button class="collapsible-btn" data-type="fn" data-count="{1}" '
             'onclick="toggleSeq(\'{0}fn\', this)">'
             '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
             '<path d="M4 6h12M4 10h8M4 14h10"></path></svg>\n'
@@ -396,6 +477,9 @@ def render_sutta(s, notas):
                      '<span class="ref-tip-term">({0})</span>'
                      '<span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span>'
                      '</span></span>').format(", ".join(s["sadd"]))
+    if s["notas_hdr"]:
+        sadd_html += marcar_notas(
+            "".join("[^{0}]".format(k) for k in s["notas_hdr"]), notas)
 
     return (
         '<div class="sutta-card" id="{sid}">\n'
@@ -423,7 +507,8 @@ def render_sutta(s, notas):
         '<path d="M10 15V5M5 10l5-5 5 5"></path></svg>\n'
         '          Inicio ↑\n        </button>\n'
         '</div>\n</div>\n</div>\n'
-    ).format(sid=sid, ref=ref, sadd=sadd_html, pali=escapar_html(s["pali"]),
+    ).format(sid=sid, ref=ref, sadd=sadd_html,
+             pali=marcar_notas(escapar_html(s["pali_notas"]), notas),
              desglose=desglose_html, palib=pali_html, gloss=gloss_html,
              vutti=vutti_html, resto=resto_html, notas=notas_html)
 
@@ -557,20 +642,63 @@ def version_pie(meta):
             '</time>.{3}</p>').format(v, f, largo, escapar_html(nota))
 
 
+def rangos_kanda(suttas):
+    """(primero, último) de cada kaṇḍa, para el TOC y la mini-navegación."""
+    rangos = {}
+    for s in suttas:
+        a, b = rangos.get(s["kanda"], (s["n"], s["n"]))
+        rangos[s["kanda"]] = (min(a, s["n"]), max(b, s["n"]))
+    return rangos
+
+
 def render_toc(suttas, meta):
+    """TOC con grupos de kaṇḍa plegables y caja «ir a §…» / filtro."""
+    rangos = rangos_kanda(suttas)
     partes = ['<p class="toc-title">{0}</p>'.format(meta["titulo_pali"])]
+    partes.append(
+        '<div class="toc-jump-wrap">'
+        '<input aria-label="Ir a un sutta o filtrar por título" '
+        'class="toc-jump" id="toc-jump" oninput="filterToc(this.value)" '
+        'onkeydown="tocJumpKey(event)" placeholder="Ir a §… / filtrar" '
+        'type="search"/></div>')
     kanda = None
     for s in suttas:
         if s["kanda"] != kanda:
+            if kanda is not None:
+                partes.append('</div></div>')
             kanda = s["kanda"]
-            partes.append('<p class="toc-kanda">{0}</p>'.format(
-                KANDAS_PALI[kanda - 1]))
+            a, b = rangos[kanda]
+            partes.append(
+                '<div class="toc-group" id="tocg-{0}">'
+                '<button class="toc-kanda toc-kanda-btn" '
+                'onclick="toggleTocGroup({0})">'
+                '<span class="toc-caret">▸</span><span>{1}</span>'
+                '<span class="toc-kanda-range">§{2}–§{3}</span></button>'
+                '<div class="toc-group-items">'.format(
+                    kanda, KANDAS_PALI[kanda - 1], a, b))
         titulo = s["pali"]
         corto = titulo if len(titulo) <= 26 else titulo[:24].rstrip() + "…"
         partes.append(
             '<a class="toc-item" id="toc-s{0}" onclick="jumpTo(\'s{0}\')">§{0} {1}</a>'
             .format(s["n"], escapar_html(corto)))
+    partes.append('</div></div>')
     return "".join(partes)
+
+
+def render_kanda_nav(suttas):
+    """Mini-navegación fija de los kaṇḍas del capítulo."""
+    rangos = rangos_kanda(suttas)
+    botones = []
+    for k in sorted(rangos):
+        a, b = rangos[k]
+        botones.append(
+            '<button class="kanda-nav-btn" id="knav-{0}" '
+            'onclick="jumpKanda({0})" title="{1} · {2} · §{3}–§{4}">'
+            '{5}</button>'.format(k, KANDAS_PALI[k - 1], KANDAS_ES[k - 1],
+                                  a, b, KANDAS_PALI[k - 1].split("-")[0]))
+    return ('<div class="kanda-nav" id="kanda-nav">'
+            '<span class="kanda-nav-label">Kaṇḍa:</span>{0}</div>'
+            .format("".join(botones)))
 
 
 def render(cap, meta, notas):
@@ -589,8 +717,9 @@ def render(cap, meta, notas):
             kanda = s["kanda"]
             cuerpo.append('<div class="kanda-section">\n')
             cuerpo.append(
-                '<div class="kanda-heading">{0}<span class="kanda-es">· {1}</span></div>\n'
-                .format(KANDAS_PALI[kanda - 1], KANDAS_ES[kanda - 1]))
+                '<div class="kanda-heading" id="kanda-{2}">{0}'
+                '<span class="kanda-es">· {1}</span></div>\n'
+                .format(KANDAS_PALI[kanda - 1], KANDAS_ES[kanda - 1], kanda))
         cuerpo.append(render_sutta(s, notas))
         if s.get("cierre"):
             cuerpo.append(cierre_kanda(s["cierre"]))
@@ -617,6 +746,7 @@ def render(cap, meta, notas):
         titulo_pali=meta["titulo_pali"], titulo_es=meta["titulo_es"],
         total=total, nk=nk,
         toc=render_toc(suttas, meta),
+        kanda_nav=render_kanda_nav(suttas),
         pastillas=pastillas,
         cuerpo="".join(cuerpo),
         done_key="{0}_{1}_done".format(meta["obra_slug"], meta["slug"]),
@@ -701,7 +831,7 @@ PLANTILLA = '''<!DOCTYPE html>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
 </div>
 <div class="nav-pills"><span class="nav-pill-label">Ir a:</span>{pastillas}</div>
-{cuerpo}{fin_capitulo}
+{kanda_nav}{cuerpo}{fin_capitulo}
 <div class="footer-box">
 <div class="footer-box-main">
 <strong>{obra}</strong> — {titulo_pali} · {total} suttas (§{primero}–§{ultimo}).
@@ -744,6 +874,7 @@ def main():
     meta = CAPITULOS[clave]
 
     ruta_abs = ruta if os.path.isabs(ruta) else os.path.join(RAIZ, ruta)
+    cargar_capitulos_publicados(clave, meta["obra_slug"])
     # primera pasada: saber qué suttas existen antes de enlazar referencias
     SUTTAS_VALIDOS.update(
         int(m.group(1)) for m in

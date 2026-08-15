@@ -16,6 +16,7 @@
         var tocItem = document.getElementById('toc-' + id);
         if (tocItem) {
           tocItem.classList.add('scroll-active');
+          if (typeof openTocGroupOf === 'function') openTocGroupOf(tocItem);
           try { tocItem.scrollIntoView({block:'nearest', behavior:'smooth'}); } catch(e) {}
         }
       }
@@ -174,7 +175,9 @@ function exportEPUB() {
     '<p style="text-align:center"><strong>' + CAP.capituloPali + '</strong></p>\n' +
     '<p style="text-align:center">' + CAP.capituloEs + '</p>\n' +
     '<p style="text-align:center;margin-top:2em;color:#666;font-size:.9em">' +
-    'Edición bilingüe Pāḷi–Español · 51 suttas · 5 secciones<br/>' +
+    'Edición bilingüe Pāḷi–Español · ' +
+    document.querySelectorAll('.sutta-card[id^="s"]').length + ' suttas · ' +
+    document.querySelectorAll('.kanda-section').length + ' secciones<br/>' +
     'Traducción al español por Bhikkhu Nandisena</p>\n' +
     '</body></html>';
   zip.folder('OEBPS').file('title.xhtml', title_html);
@@ -240,6 +243,9 @@ function exportEPUB() {
   });
 }
 
+// El botón del EPUB llama a exportEpub(); alias del nombre real.
+function exportEpub() { exportEPUB(); }
+
 // ─── Visited tracking ────────────────────────────────────────────
 var visited = new Set();
 
@@ -303,9 +309,96 @@ function setTocActive(id) {
   var a = document.getElementById('toc-' + id);
   if (a) {
     a.classList.add('active');
+    openTocGroupOf(a);
     try { a.scrollIntoView({block:'nearest', behavior:'smooth'}); } catch(e) {}
   }
 }
+
+// ─── Diseño de una página (sesión 08): TOC plegable, «ir a §…»,
+//     mini-navegación de kaṇḍas ─────────────────────────────────────
+function toggleTocGroup(k) {
+  var g = document.getElementById('tocg-' + k);
+  if (g) g.classList.toggle('open');
+}
+
+// Abre el grupo del kaṇḍa activo y cierra los demás.
+function openTocGroupOf(el) {
+  var g = el && el.closest ? el.closest('.toc-group') : null;
+  if (!g || g.classList.contains('open')) return;
+  document.querySelectorAll('.toc-group.open').forEach(function(x) {
+    x.classList.remove('open');
+  });
+  g.classList.add('open');
+}
+
+function jumpKanda(k) {
+  var h = document.getElementById('kanda-' + k);
+  if (h) h.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+// Caja «ir a §…» / filtro por título pāḷi.
+function filterToc(q) {
+  q = q.trim().toLowerCase();
+  var esNum = /^§?\s*\d+$/.test(q);
+  var grupos = document.querySelectorAll('.toc-group');
+  if (!q || esNum) {
+    document.querySelectorAll('.toc-item.toc-hidden').forEach(function(el) {
+      el.classList.remove('toc-hidden');
+    });
+    grupos.forEach(function(g) {
+      g.classList.remove('toc-filtered', 'toc-empty');
+    });
+    return;
+  }
+  grupos.forEach(function(g) {
+    var hay = false;
+    g.querySelectorAll('.toc-item').forEach(function(el) {
+      var ok = el.textContent.toLowerCase().indexOf(q) >= 0;
+      el.classList.toggle('toc-hidden', !ok);
+      if (ok) hay = true;
+    });
+    g.classList.toggle('toc-filtered', hay);
+    g.classList.toggle('toc-empty', !hay);
+  });
+}
+
+function tocJumpKey(e) {
+  if (e.key !== 'Enter') return;
+  var v = e.target.value.trim();
+  var m = v.match(/^§?\s*(\d+)$/);
+  if (m) {
+    if (document.getElementById('s' + m[1])) jump('s' + m[1]);
+    return;
+  }
+  var vis = document.querySelectorAll('.toc-item:not(.toc-hidden)');
+  if (v && vis.length === 1) vis[0].click();
+}
+
+// Resalta en la mini-navegación el kaṇḍa por el que se pasa.
+(function() {
+  if (!window.IntersectionObserver) return;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(en) {
+      if (!en.isIntersecting) return;
+      var k = en.target.id.replace('kanda-', '');
+      document.querySelectorAll('.kanda-nav-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      var btn = document.getElementById('knav-' + k);
+      if (btn) btn.classList.add('active');
+    });
+  }, {rootMargin: '-5% 0px -75% 0px'});
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.kanda-heading[id]').forEach(function(h) {
+      obs.observe(h);
+    });
+    // al cargar, solo el primer grupo del TOC abierto
+    var g1 = document.querySelector('.toc-group');
+    if (g1 && !document.querySelector('.toc-group.open')) {
+      g1.classList.add('open');
+    }
+  });
+})();
 
 // ─── Collapsible sections ────────────────────────────────────────
 function toggleSeq(seqId, btn) {

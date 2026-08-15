@@ -24,6 +24,26 @@ estudiantes hispanohablantes de pāḷi con formación budista.
   las expansiones morfológicas (pasos de elisión o sustitución que Nandisena no
   menciona). Lo tomado de Ven. A. Thitzana se señala siempre como suyo.
 
+## Gestión de la sesión
+
+Corresponde a Claude —no a Angel— avisar cuando la conversación se ha alargado
+lo bastante como para convenir abrir una nueva. El aviso se da **antes** de que
+la calidad se resienta, no después, y no espera a que Angel lo pregunte.
+
+Al avisar, Claude entrega lo que el chat nuevo necesita para continuar sin
+pérdida:
+
+- el punto exacto donde se dejó el trabajo: último sutta aprobado y siguiente;
+- qué archivo debe leer primero el chat nuevo
+  (`docs/briefings/briefing-sesion-NN.md`);
+- las decisiones, erratas y convenciones acordadas en la sesión que todavía no
+  estén recogidas en ese briefing;
+- el briefing actualizado, escrito y guardado **antes** de cerrar la sesión, no
+  prometido para después.
+
+Un chat nuevo empieza sin memoria de la conversación anterior: lo que no quede
+escrito en el briefing se pierde.
+
 ## Cómo se publica
 
 El markdown es la fuente; el HTML de `site/` es salida generada. **Nunca se

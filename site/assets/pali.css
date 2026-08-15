@@ -93,6 +93,61 @@ body.dark {
 .toc-item:hover { background: var(--bg2); color: var(--text); }
 .toc-item.active { background: var(--accent-bg); color: var(--accent); font-weight: 500; }
 
+/* ── Diseño de una página (sesión 08) ────────────────────────────── */
+/* 1. Solo se maqueta lo que entra en pantalla. */
+.sutta-card { content-visibility: auto; contain-intrinsic-size: auto 64px; }
+
+/* 2. Grupos de kaṇḍa plegables en el TOC; solo el activo abierto. */
+.toc-kanda-btn {
+  display: flex; width: 100%; align-items: baseline; gap: 6px;
+  background: none; border: none; border-bottom: .5px solid var(--border);
+  cursor: pointer; text-align: left; font-family: var(--sans);
+}
+.toc-caret {
+  font-size: 9px; color: var(--text3);
+  transition: transform .15s; flex-shrink: 0;
+}
+.toc-group.open .toc-caret { transform: rotate(90deg); }
+.toc-kanda-range {
+  margin-left: auto; font: 9.5px/1 var(--mono); color: var(--text3);
+  letter-spacing: 0; text-transform: none;
+}
+.toc-group-items { display: none; }
+.toc-group.open .toc-group-items,
+.toc-group.toc-filtered .toc-group-items { display: block; }
+.toc-group.toc-empty { display: none; }
+.toc-item.toc-hidden { display: none; }
+
+/* 3. Caja «ir a §…» / filtro por título pāḷi. */
+.toc-jump-wrap { margin: 0 0 .5rem; }
+.toc-jump {
+  width: 100%; padding: 6px 9px;
+  border: .5px solid var(--border2); border-radius: var(--r);
+  font: 12px/1.2 var(--sans); background: var(--bg); color: var(--text);
+  outline: none; transition: border-color .15s, box-shadow .15s;
+}
+.toc-jump:focus { border-color: var(--accent-mid); box-shadow: 0 0 0 2px var(--accent-bg); }
+
+/* 4. Mini-navegación fija de los kaṇḍas. */
+.kanda-nav {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px;
+  padding: .5rem 0; margin-bottom: .5rem;
+  background: var(--bg); border-bottom: .5px solid var(--border);
+}
+.kanda-nav-label { font: 11px/1 var(--mono); color: var(--text3); margin-right: 4px; }
+.kanda-nav-btn {
+  border: .5px solid var(--border); background: var(--bg);
+  border-radius: 100px; padding: 4px 11px;
+  font: 11px/1 var(--sans); color: var(--text2); cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.kanda-nav-btn:hover { background: var(--bg2); color: var(--text); }
+.kanda-nav-btn.active {
+  background: var(--accent-bg); color: var(--accent);
+  border-color: var(--accent-mid);
+}
+
 /* ── Main layout ─────────────────────────────────────────────────── */
 #main {
   min-height: 100vh;
@@ -213,6 +268,15 @@ body.dark .sutta-card { background: var(--bg2); }
   border-radius: 0 var(--r) var(--r) 0; padding: .75rem 1rem;
   margin-bottom: 1rem; font: 14px/1.9 var(--serif); color: var(--text2);
 }
+/* Modo verso: pādas línea a línea con su traducción debajo (p. ej. §185) */
+.pali-block p.pali-para { margin: 0 0 .6rem; }
+.pali-block p.pali-para:last-child { margin-bottom: 0; }
+.pali-verse { padding-left: 1rem; margin: 0 0 .6rem; }
+.pali-verse-trans {
+  font-size: 13.5px; color: var(--text); font-style: italic;
+  margin: 0 0 .8rem;
+}
+.pali-verse-trans:last-child, .pali-verse:last-child { margin-bottom: 0; }
 
 /* ── Translation ─────────────────────────────────────────────────── */
 .gloss {
@@ -343,7 +407,9 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 /* ── Print ───────────────────────────────────────────────────────── */
 @media print {
   #toc, #pbar-wrap, #pbadge, #dark-btn, .controls, .search-wrap,
-  .nav-pills, .back-top-btn, .copy-btn, .collapsible-btn { display: none !important; }
+  .nav-pills, .kanda-nav, .back-top-btn, .copy-btn,
+  .collapsible-btn { display: none !important; }
+  .sutta-card { content-visibility: visible; }
   .sutta-card { break-inside: avoid; box-shadow: none; border: .5px solid #ccc; }
   .sutta-body { display: block !important; }
   .collapsible-content { display: block !important; }
