@@ -5290,7 +5290,7 @@ Ejemplos:
 
 1. **Sabbā** \= sabba \+ si (se inserta ‘ā’ tras “sabba” (§237); ‘si’ se elide (§220); ‘a’ se elide (§83)).  
 2. **Yā** \= ya \+ si (se inserta ‘ā’ tras “ya” (§237); ‘si’ se elide (§220); ‘a’ se elide (§83)).  
-3. **Sā** \= ta \+ si (“ta” se sustituye por “sa”; se inserta ‘ā’ tras “sa” (§237); ‘si’ se elide (§220); ‘a’ se elide (§83)).  
+3. **Sā** \= ta \+ si (‘t’ de “ta” se convierte en ‘s’ (§174); se inserta ‘ā’ tras “sa” (§237); ‘si’ se elide (§220); ‘a’ se elide (§83)).  
 4. **Kā** \= ka \+ si (se inserta ‘ā’ tras “ka” (§237); ‘si’ se elide (§220); ‘a’ se elide (§83)).  
 5. **Katarā** \= katara \+ si (se inserta ‘ā’ tras “katara” (§237); ‘si’ se elide (§220); ‘a’ se elide (§83)).
 
