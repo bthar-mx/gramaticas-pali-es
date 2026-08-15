@@ -560,7 +560,7 @@ Cuando \[alguno de los tres\] ‘yo’ siguen, ‘o’ de “go” se sustituye 
 
 Ejemplos:
 
-1. **Gāvo** \= go \+ yo (‘o’ de “go” se sustituye por ‘āva’ (§74); ‘yo’ se sustituye por ‘o’ por “tu” (§205); ‘a’ se elide (§12)).  
+1. **Gāvo** \= go \+ yo (‘o’ de “go” se sustituye por ‘āva’ (§74); ‘yo’ se sustituye por ‘o’ (“tu” en §205); ‘a’ se elide (§12)).  
 2. El procedimiento de formación del resto de los ejemplos es similar al anterior.
 
 ¿Cuál es la finalidad de tomar “ca”? \[Por la inclusión de “ca”, hay sustitución de ‘āva’\] también cuando siguen ‘nā’, ‘smā’, ‘smiṃ’ y ‘su’.
@@ -600,7 +600,7 @@ Por la inclusión de “ca”, cuando siguen las inflexiones restantes mencionad
 Ejemplos:
 
 1. **Gavassa** \= go \+ sa (por “ca” de este sutta, ‘o’ de “go” se sustituye por ‘ava’ (§75); se inserta ‘s’ (§61)).  
-2. **Gavo** \= go \+ yo (por “ca” de este sutta, ‘o’ de “go” se sustituye por ‘ava’ (§75); ‘yo’ se sustituye por ‘o’ por “tu” (§205); ‘a’ se elide (§12)).  
+2. **Gavo** \= go \+ yo (por “ca” de este sutta, ‘o’ de “go” se sustituye por ‘ava’ (§75); ‘yo’ se sustituye por ‘o’ (“tu” en §205); ‘a’ se elide (§12)).  
 3. **Gavena** \= go \+ nā (por “ca” de este sutta, ‘o’ de “go” se sustituye por ‘ava’ (§75); ‘nā’ se sustituye por ‘ena’ (§103); ‘a’ se elide (§12)).  
 4. **Gavā** \= go \+ smā (por “ca” de este sutta, ‘o’ de “go” se sustituye por ‘ava’ (§75); ‘smā’ se sustituye por ‘ā’ (§108); ‘a’ se elide (§12)).  
 5. **Gave** \= go \+ smiṃ (por “ca” de este sutta, ‘o’ de “go” se sustituye por ‘ava’ (§75); ‘smiṃ’ se sustituye por ‘e’ (§108); ‘a’ se elide (§12)).  
@@ -700,8 +700,8 @@ Y por la inclusión de “ca”, cuando siguen ‘smiṃ’ y ‘yo’, a veces,
 Ejemplos:
 
 1. **Bhuvi** \= bhū \+ smiṃ (por “ca” de este sutta, ū’ de “bhū” se sustituye por ‘uva’ (§78); por “tato” del §206 ‘smiṃ’ se sustituye por ‘i’; ‘a’ de ‘uva’ se elide (§12)).  
-2. **Pasavo** \= pasu \+ yo (por “ca” de este sutta, ‘u’ de “pasu” se sustituye por ‘ava’ (§78); por “tu” (§205) ‘yo’ se sustituye por ‘o’; ‘a’ de ‘ava’ se elide (§12)).  
-3. **Caturo** \= catu \+ yo (por “ca” de este sutta, ‘u’ se sustituye por ‘ura’ (§78); por “tu” (§205) ‘yo’ se sustituye por ‘o’; ‘a’ de ‘ura’ se elide (§12)).
+2. **Pasavo** \= pasu \+ yo (por “ca” de este sutta, ‘u’ de “pasu” se sustituye por ‘ava’ (§78); ‘yo’ se sustituye por ‘o’ (“tu” en §205); ‘a’ de ‘ava’ se elide (§12)).  
+3. **Caturo** \= catu \+ yo (por “ca” de este sutta, ‘u’ se sustituye por ‘ura’ (§78); ‘yo’ se sustituye por ‘o’ (“tu” en §205); ‘a’ de ‘ura’ se elide (§12)).
 
 ¿Cuál es la finalidad de decir “cuando sigue una vocal”? \[Este sutta no se aplica cuando no sigue una vocal, como en\] godhano, govindho.
 
