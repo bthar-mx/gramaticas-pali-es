@@ -490,8 +490,12 @@ function copySutta(id) {
 }
 
 // ─── Dark mode ───────────────────────────────────────────────────
+// La preferencia se guarda en la clave `pali_dark`, compartida con
+// /recursos/sandhi/; la aplica un script inline al principio de <body>
+// (antes de pintar), y aquí solo se conmuta y persiste.
 function toggleDark() {
-  document.body.classList.toggle('dark');
+  var dark = document.body.classList.toggle('dark');
+  try { localStorage.setItem('pali_dark', dark ? '1' : '0'); } catch (e) {}
 }
 
 // ─── Keyboard ────────────────────────────────────────────────────

@@ -834,6 +834,10 @@ PLANTILLA = '''<!DOCTYPE html>
 <link href="../../assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
 <body>
+<script>/* Tema guardado (clave compartida con /recursos/sandhi/), antes de pintar. */
+try{{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.body.classList.add('dark');}}catch(e){{}}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
