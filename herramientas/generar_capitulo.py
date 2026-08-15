@@ -97,9 +97,15 @@ RE_OTRA_OBRA = re.compile(
 RE_PROPIA_OBRA = re.compile(r'Kac\.\s*$')
 
 SUTTAS_VALIDOS = set()
-SUTTAS_OTROS_CAP = {}     # n → (slug, título pāḷi del capítulo) ya publicado
+SUTTAS_OTROS_CAP = {}     # n → (slug, título del capítulo, título del sutta)
+RESUMEN_SUTTAS = {}       # n → «Título — glosa» de este capítulo
 FIN_CAPITULO = {}
 NO_ENLAZADOS = []
+
+
+def atributo(t):
+    """Texto seguro para un atributo HTML entre comillas dobles."""
+    return escapar_html(t).replace('"', '&quot;')
 
 
 def cargar_capitulos_publicados(clave_actual, obra_slug):
@@ -123,7 +129,8 @@ def cargar_capitulos_publicados(clave_actual, obra_slug):
             continue
         for s in cap.get("suttas", []):
             SUTTAS_OTROS_CAP[s["kaccayana"]] = (meta["slug"],
-                                                meta["titulo_pali"])
+                                                meta["titulo_pali"],
+                                                s.get("pali", ""))
 
 
 def enlazar_suttas(t):
@@ -134,13 +141,16 @@ def enlazar_suttas(t):
         previo = t[max(0, m.start() - 14):m.start()]
         otra = RE_OTRA_OBRA.search(previo) and not RE_PROPIA_OBRA.search(previo)
         if not otra and (not SUTTAS_VALIDOS or n in SUTTAS_VALIDOS):
+            resumen = RESUMEN_SUTTAS.get(n, "")
             return ('<a class="sutta-xref" href="#s{0}" onclick="jumpOpen(\'s{0}\')" '
-                    'title="Ir al sutta §{0}">§{0}</a>').format(n)
+                    'title="§{0}{1}">§{0}</a>').format(
+                        n, " · " + atributo(resumen) if resumen else "")
         if not otra and n in SUTTAS_OTROS_CAP:
-            slug, titulo = SUTTAS_OTROS_CAP[n]
+            slug, titulo, pali = SUTTAS_OTROS_CAP[n]
             return ('<a class="sutta-xref" href="../{1}/#s{0}" '
-                    'title="Ir al sutta §{0} ({2})">§{0}</a>').format(
-                        n, slug, escapar_html(titulo))
+                    'title="§{0}{3} ({2})">§{0}</a>').format(
+                        n, slug, atributo(titulo),
+                        " · " + atributo(pali) if pali else "")
         NO_ENLAZADOS.append((n, previo.strip()))
         return m.group(0)
     return re.sub(r'§(\d+)', rep, t)
@@ -704,6 +714,16 @@ def render_kanda_nav(suttas):
             .format("".join(botones)))
 
 
+def version_assets():
+    """Huella de pali.css + pali.js para invalidar la caché al cambiarlos."""
+    import hashlib
+    h = hashlib.md5()
+    for f in ("pali.css", "pali.js"):
+        with open(os.path.join(RAIZ, "site", "assets", f), "rb") as fh:
+            h.update(fh.read())
+    return h.hexdigest()[:8]
+
+
 def render(cap, meta, notas):
     suttas = cap["suttas"]
     total = len(suttas)
@@ -742,6 +762,7 @@ def render(cap, meta, notas):
         total=total, nk=nk,
         toc=render_toc(suttas, meta),
         kanda_nav=render_kanda_nav(suttas),
+        assets_v=version_assets(),
         cuerpo="".join(cuerpo),
         done_key="{0}_{1}_done".format(meta["obra_slug"], meta["slug"]),
         cap_id="{0}-{1}".format(meta["obra_slug"], meta["slug"]),
@@ -788,7 +809,7 @@ PLANTILLA = '''<!DOCTYPE html>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&amp;family=Noto+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/pali.css" rel="stylesheet"/>
+<link href="../../assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
 <body>
 <div id="pbar-wrap"><div id="pbar"></div></div>
@@ -850,7 +871,7 @@ window.PALI_CAPITULO = {{
 }};
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="../../assets/pali.js"></script>
+<script src="../../assets/pali.js?v={assets_v}"></script>
 </body>
 </html>
 '''
@@ -869,11 +890,15 @@ def main():
 
     ruta_abs = ruta if os.path.isabs(ruta) else os.path.join(RAIZ, ruta)
     cargar_capitulos_publicados(clave, meta["obra_slug"])
-    # primera pasada: saber qué suttas existen antes de enlazar referencias
+    # primera pasada: saber qué suttas existen antes de enlazar referencias,
+    # y armar el resumen (título — glosa) para el tooltip de cada §N
     SUTTAS_VALIDOS.update(
         int(m.group(1)) for m in
         (RE_SUTTA.match(l) for l in open(ruta_abs, encoding="utf-8"))
         if m)
+    for s in parsear(ruta_abs)["suttas"]:
+        glosa = glosa_breve(s)
+        RESUMEN_SUTTAS[s["n"]] = (s["pali"] + (" — " + glosa if glosa else ""))
     cap = parsear(ruta_abs)
     html = render(cap, meta, cap["notas"])
 

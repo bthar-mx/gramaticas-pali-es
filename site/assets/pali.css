@@ -94,8 +94,12 @@ body.dark {
 .toc-item.active { background: var(--accent-bg); color: var(--accent); font-weight: 500; }
 
 /* ── Diseño de una página (sesión 08) ────────────────────────────── */
-/* 1. Solo se maqueta lo que entra en pantalla. */
-.sutta-card { content-visibility: auto; contain-intrinsic-size: auto 64px; }
+/* 1. Solo se maqueta lo que entra en pantalla. La tarjeta abierta o bajo
+   el cursor se excluye: el confinamiento de pintura recortaría sus
+   tooltips (números de sutta, notas al pie). */
+.sutta-card:not(:hover):not(.open) {
+  content-visibility: auto; contain-intrinsic-size: auto 64px;
+}
 
 /* 2. Grupos de kaṇḍa plegables en el TOC; solo el activo abierto. */
 .toc-kanda-btn {
