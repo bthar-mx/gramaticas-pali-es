@@ -593,7 +593,7 @@ def insignia_version(meta):
     largo = "{0} de {1} de {2}".format(d, MESES[m - 1], a)
     titulo = "Versión {0} · {1}{2}".format(
         v, largo, " · " + meta["version_nota"] if meta.get("version_nota") else "")
-    return ('<span aria-label="{0}" class="version-badge" title="{0}">'
+    return ('<span aria-label="{0}" class="version-badge" data-tip="{0}">'
             'v{1}<time datetime="{2}">{2}</time></span>').format(
         escapar_html(titulo), v, f)
 
@@ -721,10 +721,13 @@ def render_kanda_nav(suttas):
     for k in sorted(rangos):
         a, b = rangos[k]
         botones.append(
-            '<button class="kanda-nav-btn" id="knav-{0}" '
-            'onclick="jumpKanda({0})" title="{1} · {2} · §{3}–§{4}">'
-            '{5}</button>'.format(k, KANDAS_PALI[k - 1], KANDAS_ES[k - 1],
-                                  a, b, KANDAS_PALI[k - 1].split("-")[0]))
+            '<button aria-label="{1}" class="kanda-nav-btn" id="knav-{0}" '
+            'onclick="jumpKanda({0})" data-tip="{1}">'
+            '{2}</button>'.format(
+                k,
+                "Ir a la {0} ({1}, §{2}–§{3})".format(
+                    KANDAS_ES[k - 1].lower(), KANDAS_PALI[k - 1], a, b),
+                KANDAS_PALI[k - 1].split("-")[0]))
     return ('<div class="kanda-nav" id="kanda-nav">'
             '<span class="kanda-nav-label">Kaṇḍa:</span>{0}'
             '<input aria-label="Ir al sutta número…" class="kanda-jump" '
