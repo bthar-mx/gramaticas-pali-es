@@ -1,5 +1,7 @@
 # Gramáticas Pāḷi — Traducciones al español
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21948011.svg)](https://doi.org/10.5281/zenodo.21948011)
+
 Traducciones al español de las gramáticas clásicas de la lengua pāḷi,
 con glosario terminológico común y concordancia entre las obras.
 
