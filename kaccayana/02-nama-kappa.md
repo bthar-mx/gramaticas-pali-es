@@ -3813,7 +3813,7 @@ Ejemplos:
 
 ¿Cuál es la finalidad de decir “opcionalmente”? \[Para permitir excepciones a este sutta, como en:\] Manena, tejena, yasena.
 
-¿Cuál es la finalidad de decir “cuando hay una vocal”? \[Este sutta no se aplica cuando no ocurre la sustitución vocálica de la inflexión, como en:\] Mano, tejo, yaso.
+¿Cuál es la finalidad de decir “cuando hay una vocal”? \[Este sutta no se aplica cuando no ocurre la sustitución vocálica de la inflexión, como en:\] Mano, tejo, yaso.[^38]
 
 Tomando “ādi” de nuevo, también cuando siguen otros sufijos, se inserta ‘s’. Mānasikaṃ, vācasikaṃ.
 
@@ -3828,14 +3828,14 @@ Sabbhi kubbetha santhavaṃ,
 Sataṃ saddhammam aññāya,  
 Seyyo hoti na pāpiyo. 
 
-Uno se debería asociar solamente con los santos, debería procurar compañía con los santos, \[porque\] comprender el buen Dhamma de los santos, es lo mejor, no lo peor.
+Uno se debería asociar solamente con los santos, debería procurar compañía con los santos; habiendo comprendido el buen Dhamma de los santos, uno se vuelve mejor, no peor.
 
 Jīranti ve rājaratha sucittā,   
 Atho sarīram pi jaraṃ upeti,  
 Satañ ca dhammo na jaraṃ upeti,   
 Santo have sabbhi pavedayanti.
 
-Envejecen los bien decorados carruajes de los reyes, también el cuerpo llega a la vejez. Pero el Dhamma de los santos no envejece; esto los santos proclaman entre los santos.[^38]
+Envejecen los bien decorados carruajes de los reyes, también el cuerpo llega a la vejez. Pero el Dhamma de los santos no envejece; esto los santos proclaman entre los santos.[^39]
 
 Sabbhūto (siendo santo), sabbhāvo (estado/condición de santo). 
 
@@ -3857,7 +3857,7 @@ Ejemplos:
 
 ¿Cuál es la finalidad de decir “cuando sigue ‘bh’”? \[Este sutta no se aplica cuando no sigue ‘bh’, como en:\] Santehi pūjito Bhagavā.
 
-Tomar “ca” es, a veces, para que se realice la sustitución por ‘sa’.[^39] Sakkāro, sakkato.
+Tomar “ca” es, a veces, para que se realice la sustitución por ‘sa’.[^40] Sakkāro, sakkato.
 
 ---
 
@@ -4006,7 +4006,7 @@ Ejemplos:
 
 ---
 
-**191\. 130\. Sakhato[^40] c’ āyo no (394).** \[Sakhato \+ ca \+ āyo-no, 3\]
+**191\. 130\. Sakhato[^41] c’ āyo no (394).** \[Sakhato \+ ca \+ āyo-no, 3\]
 
 Tasmā sakhato ca yonaṃ āyo-no-ādesā honti. 
 
@@ -4053,7 +4053,7 @@ Ejemplos:
 
 Tasmā brahmato gassa ca ekāro hoti. 
 
-He brahme.[^41]
+He brahme.[^42]
 
 ---
 
@@ -4178,7 +4178,7 @@ Tassa brahma saddassa anto uttam āpajjate sa nā icc etesu.
 
 Brahmuno, brahmunā. 
 
-Sa-nāsv iti kimatthaṃ? Brahmā.[^42]
+Sa-nāsv iti kimatthaṃ? Brahmā.[^43]
 
 ---
 
@@ -4231,7 +4231,7 @@ Satthu-pitu-ādīnam anto aññesu vacanesu ārattam āpajjate.
 
 Satthāraṃ, pitaraṃ, mātaraṃ, bhātaraṃ, kattāraṃ, satthārehi, pitarehi, mātarehi, bhātarehi, kattārehi. 
 
-Aññesv iti kimatthaṃ? Satthā, pitā, mātā, bhātā, kattā.[^43]
+Aññesv iti kimatthaṃ? Satthā, pitā, mātā, bhātā, kattā.[^44]
 
 ---
 
@@ -4350,7 +4350,7 @@ Ejemplos:
   * **Bhātussa** \= bhātu \+ sa (‘u’ de “bhātu” se sustituye por ‘u’ (§203); se inserta ‘s’ (§61)).  
   * **Bhātuno** \= bhātu \+ sa (‘u’ de “bhātu” se sustituye por ‘u’ (§203); ‘u’ recibe el nombre ‘la’ (§58); ‘sa’ se sustituye por ‘no’ (§117)).
 
-El tomar “ca” es para la inclusión del segundo \[significado\].[^44]
+El tomar “ca” es para la inclusión del segundo \[significado\].
 
 ---
 
@@ -4386,7 +4386,7 @@ Ejemplos:
 
 ¿Cuál es la finalidad de la repetición de este sutta? Para fijar el cambio de ‘u’ a ‘u’.[^45] Sakkamandhātu.
 
-El tomar “ca” es para la inclusión del segundo \[significado\].[^46]
+El tomar “ca” es para la inclusión del segundo \[significado\].
 
 ---
 
@@ -4415,7 +4415,7 @@ Ejemplos:
 5. **Kattāro** \= kattu \+ yo (‘u’ de “kattu” se convierte en ‘āra’ (§200); ‘yo’ se sustituye por ‘o’ (§205); ‘a’ se elide (§83)).  
 6. **Vattāro** \= vattu \+ yo (‘u’ de “vattu” se convierte en ‘āra’ (§200); ‘yo’ se sustituye por ‘o’ (§205); ‘a’ se elide (§83)).
 
-Al tomar “tu”, también tras otras palabras ‘yo’ deviene ‘o’. Caturo janā, gāvo, ubho, purisā.[^47]
+Al tomar “tu”, también tras otras palabras ‘yo’ deviene ‘o’. Caturo janā, gāvo, ubho, purisā.[^46]
 
 ---
 
@@ -4599,9 +4599,9 @@ Ejemplos:
 
 ¿Cuál es la finalidad de decir “la final de ‘atta’”? \[Este sutta no se aplica cuando no hay “atta”, como en:\] rājehi, rājebhi.
 
-¿Cuál es la finalidad de decir “cuando sigue ‘hi’”? \[Este sutta no se aplica cuando no sigue ‘hi’, como en:\] attano.[^48]
+¿Cuál es la finalidad de decir “cuando sigue ‘hi’”? \[Este sutta no se aplica cuando no sigue ‘hi’, como en:\] attano.[^47]
 
-Por la expresión que indica estado “anattaṃ”, la palabra “atta” se sustituye por “saka” cuando siguen todas las inflexiones. Sako, sakā, sakaṃ, sake.[^49]
+Por la expresión que indica estado “anattaṃ”, la palabra “atta” se sustituye por “saka” cuando siguen todas las inflexiones. Sako, sakā, sakaṃ, sake.[^48]
 
 ---
 
@@ -4670,7 +4670,7 @@ Ejemplos:
 
 ---
 
-**215\. 141\. Jha-lato ca (442).**[^50] \[Jha-lato \+ ca, 2\]
+**215\. 141\. Jha-lato ca (442).**[^49] \[Jha-lato \+ ca, 2\]
 
 Jha la icc etehi smāvacanassa nā hoti. 
 
@@ -4813,7 +4813,7 @@ Ga-sī ti kimatthaṃ? Itthiyā; satthussa.
 
 Tras los restantes, ‘ga’ y ‘si’ también se eliden.
 
-Tras las restantes bases mostradas,[^51] ‘ga’ y ‘si’ se eliden.
+Tras las restantes bases mostradas,[^50] ‘ga’ y ‘si’ se eliden.
 
 ---
 
@@ -4856,7 +4856,7 @@ Ejemplos:
 2. **Tumhe pan’ āvuso** (¿y vosotros, amigos?)  
 3. **Padaso dhammaṃ vāceyya** (debería hacer recitar el Dhamma palabra por palabra)   
 4. **Vihāraṃ sve upagaccheyya** (debería acercarse mañana al monasterio).  
-5. **Āvuso** \= āvuso \+ si (‘si’ se elide (§221)).[^52]
+5. **Āvuso** \= āvuso \+ si (‘si’ se elide (§221)).[^51]
 
 Los veinte prefijos son los siguientes: pa, parā, ni, nī, u, du, saṃ, vi, ava, anu, pari, adhi, abhi, pati, su, ā, ati, api, apa, upa. \[Ejemplos:\] Pahāro, parābhavo, nihāro, nīhāro, uhāro, duhāro, saṃhāro, vihāro, avahāro, anuhāro, parihāro, adhihāro, abhihāro, patihāro, suhāro, āhāro, atihāro, apihāro, apahāro, upahāro. 
 
@@ -4882,7 +4882,7 @@ Samāsesu ti kimatthaṃ? Pumassa liṅgaṃ.
 
 En los compuestos de “puma”, cuando \[la palabra\] “liṅga”, etc.
 
-En los compuestos, cuando \[las palabras\] “liṅga”, etc., son el miembro siguiente,[^53] la \[vocal\] final de “puma” se elide.
+En los compuestos, cuando \[las palabras\] “liṅga”, etc., son el miembro siguiente,[^52] la \[vocal\] final de “puma” se elide.
 
 ---
 
@@ -5021,7 +5021,7 @@ Kim icc etassa ko ca hoti vapaccaye pare.
 
 Kva gato ’si tvaṃ Devānaṃpiyatissa. 
 
-Caggahaṇena avapaccaye pare pi ko ca hoti. Ko taṃ ninditum arahati; kathaṃ bodhayituṃ dhammaṃ.[^54] 
+Caggahaṇena avapaccaye pare pi ko ca hoti. Ko taṃ ninditum arahati; kathaṃ bodhayituṃ dhammaṃ.[^53] 
 
 Ve ti kimatthaṃ? Kuto āgato ’si tvaṃ.
 
@@ -5108,7 +5108,7 @@ Ejemplos:
   * **Kaṃ** \= kiṃ \+ aṃ (“kiṃ” se sustituye por “ka” (§229); ‘a’ se elide (§83)).  
   * **Kathaṃ** \= kiṃ \+ thaṃ (“kiṃ” se sustituye por “ka” (§229)).
 
-El tomar “ca” es para el arrastre.[^55]
+El tomar “ca” es para el arrastre.[^54]
 
 ---
 
@@ -5134,7 +5134,7 @@ Ejemplos:
 2. **Kuto** \= kiṃ \+ to (“kiṃ” se sustituye por “ku” (§230)).  
 3. **Kuttha** \= kiṃ \+ tha (“kiṃ” se sustituye por “ku” (§230); ‘t’ se duplica (§28)).
 
-El tomar “ca” es para el arrastre.[^56]
+El tomar “ca” es para el arrastre.[^55]
 
 ---
 
@@ -5181,7 +5181,7 @@ Ejemplos:
 
 ---
 
-**233\. 264\. E to-thesu ca.**[^57] \[E \+ to-thesu \+ ca, 3\]
+**233\. 264\. E to-thesu ca.**[^56] \[E \+ to-thesu \+ ca, 3\]
 
 Sabbassa etasaddassa ekāro hoti vā to tha icc etesu. 
 
@@ -5208,7 +5208,7 @@ Ejemplos:
 
 Imasaddassa sabbass’ eva ikāro hoti thaṃ dāni ha to dha icc etesu. 
 
-Itthaṃ, idāni, iha, ito, idha.[^58]
+Itthaṃ, idāni, iha, ito, idha.[^57]
 
 ---
 
@@ -5300,13 +5300,13 @@ Ejemplos:
 
 Nadādito vā anadādito vā itthiyaṃ vattamānāya ī-paccayo hoti. 
 
-Nadī, mahī, kumārī, taruṇī, sakhī, itthī.[^59]
+Nadī, mahī, kumārī, taruṇī, sakhī, itthī.[^58]
 
 ---
 
 Opcionalmente, tras “nada”, etc., \[hay\] ‘ī’.
 
-Opcionalmente, en el femenino, tras “nada”, etc., y tras las palabras que no son “nadādi”,[^60] hay el sufijo ‘ī’.
+Opcionalmente, en el femenino, tras “nada”, etc., y tras las palabras que no son “nadādi”,[^59] hay el sufijo ‘ī’.
 
 ---
 
@@ -5323,7 +5323,7 @@ Ejemplos:
 
 **239\. 190\. Ṇava-ṇika-ṇeyya-ṇa-ntūhi (468).** \[Ṇava-ṇika-ṇeyya-ṇa-ntūhi, 1\]
 
-Ṇava ṇika ṇeyya ṇa ntu icc etehi[^61] itthiyaṃ vattamānehi ī-paccayo hoti. 
+Ṇava ṇika ṇeyya ṇa ntu icc etehi[^60] itthiyaṃ vattamānehi ī-paccayo hoti. 
 
 Māṇavī, paṇḍavī, nāvikī, venateyyī, kunteyyī, gotamī, guṇavatī, sāmāvatī.
 
@@ -5376,7 +5376,7 @@ Ejemplos:
 
 **241\. 191\. Ntussa tam īkāre** (471). \[Ntussa \+ taṃ \+ īkāre, 3\]
 
-Sabbass’ eva ntupaccayassa takāro[^62] hoti vā īkāre pare. 
+Sabbass’ eva ntupaccayassa takāro[^61] hoti vā īkāre pare. 
 
 Guṇavatī, guṇavantī; kulavatī, kulavantī; satimatī, satimantī; mahatī, mahantī; gottamatī, gottamantī.
 
@@ -5405,7 +5405,7 @@ Ejemplos:
 
 **242\. 192\. Bhavato bhoto** (472). \[Bhavato \+ bhoto, 2\]
 
-Sabbass’ eva bhavantasaddassa bhotādeso hoti īkāre itthigate[^63] pare. 
+Sabbass’ eva bhavantasaddassa bhotādeso hoti īkāre itthigate[^62] pare. 
 
 Bhoti ayye, bhoti kaññe, bhoti Kharādiye.
 
@@ -5430,7 +5430,7 @@ Sabbass’ eva bhavantasaddassa bho-ādeso hoti ge pare.
 
 Bho purisa, bho aggi, bho rāja, bho sattha, bho daṇḍi, bho sayambhu. 
 
-Ge ti kimatthaṃ? Bhavatā, bhavaṃ.[^64] 
+Ge ti kimatthaṃ? Bhavatā, bhavaṃ.[^63] 
 
 Tuggahaṇena aññasmim pi vacane sabbassa bhavantasaddassa bhonta bhante bhonto bhadde bhotā bhoto icc ete ādesā honti. Bhonta, bhante, bhonto, bhadde, bhotā, bhoto.
 
@@ -5563,7 +5563,7 @@ Ejemplos:
 9. **Tadā** \= ta \+ dā.  
 10. **Kadā** \= kiṃ \+ dā (“kiṃ” se sustituye por “ka” (“ca” en §227)).  
 11. **Idha** \= ima \+ dha (“ima” se sustituye por ‘i’ (§234)).  
-12. **Idāni** \= ima \+ dāni (“ima” se sustituye por ‘i’ (§234)).[^65]
+12. **Idāni** \= ima \+ dāni (“ima” se sustituye por ‘i’ (§234)).[^64]
 
 ---
 
@@ -5764,7 +5764,7 @@ Ejemplos:
 
 En el tiempo.
 
-Se debe entender que “kāle” tiene valor de aforismo regulativo.[^66]
+Se debe entender que “kāle” tiene valor de aforismo regulativo.[^65]
 
 ---
 
@@ -5873,7 +5873,7 @@ Bāhussaccaṃ; paṇḍiccaṃ; vepullaṃ; kāruññaṃ; kosallaṃ; sāmañ�
 
 Y cuando sigue ‘ya’, ‘a’ y ‘ā’ se eliden.
 
-Cuando sigue el sufijo ‘ya’, las letras ‘a’ y ‘ā’ se eliden.[^67]
+Cuando sigue el sufijo ‘ya’, las letras ‘a’ y ‘ā’ se eliden.[^66]
 
 ---
 
@@ -5887,7 +5887,7 @@ Jeyyo, jeṭṭho.
 
 Cuando siguen ‘iya’ e ‘iṭṭha’, \[hay\] ‘jo’ de “vuḍḍha”.
 
-Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “vuḍḍha” se sustituye por “jo”.[^68]
+Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “vuḍḍha” se sustituye por “jo”.[^67]
 
 ---
 
@@ -5901,7 +5901,7 @@ Seyyo, seṭṭho, jeyyo, jeṭṭho.
 
 Y \[hay\] ‘sa’ de “pasattha”.
 
-Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “pasattha” se sustituye por “sa”, y \[hay\] también la sustitución “ja”.[^69]
+Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “pasattha” se sustituye por “sa”, y \[hay\] también la sustitución “ja”.[^68]
 
 ---
 
@@ -5915,7 +5915,7 @@ Nediyo, nediṭṭho.
 
 “Neda” de “antika”.
 
-Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “antika” se sustituye por “neda”.[^70]
+Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “antika” se sustituye por “neda”.[^69]
 
 ---
 
@@ -5929,7 +5929,7 @@ Sādhiyo, sādhiṭṭho.
 
 “Sādha” de “bāḷha”.
 
-Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “bāḷha” se sustituye por “sādha”.[^71]
+Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “bāḷha” se sustituye por “sādha”.[^70]
 
 ---
 
@@ -5943,7 +5943,7 @@ Kaṇiyo, kaṇiṭṭho.
 
 “Kaṇ” de “appa”.
 
-Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “appa” se sustituye por “kaṇ”.[^72]
+Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “appa” se sustituye por “kaṇ”.[^71]
 
 ---
 
@@ -5959,7 +5959,7 @@ Caggahaṇam anukaḍḍhanatthaṃ.
 
 Y de “yuva”.
 
-Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “yuva” se sustituye por “kaṇ”.[^73]
+Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “yuva” se sustituye por “kaṇ”.[^72]
 
 El tomar “ca” es para el arrastre de la palabra “kaṇ”.
 
@@ -5986,7 +5986,7 @@ Ejemplos:
 3. **Satiyo** \= satimantu \+ iya \+ si (“mantu” se elide (§268); ‘i’ se elide (§83); ‘si’ se sustituye por ‘o’ (§104)).  
 4. **Satiṭṭho** \= satimantu \+ iṭṭha \+ si (“mantu” se elide (§268); ‘i’ se elide (§83); ‘si’ se sustituye por ‘o’ (§104)).  
 5. **Medhiyo** \= medhāvī \+ iya \+ si (“vī” se elide (§268); ‘ā’ se elide (§83); ‘si’ se sustituye por ‘o’ (§104)).  
-6. **Medhiṭṭho** \= medhāvī \+ iṭṭha \+ si (“vī” se elide (§268); ‘ā’ se elide (§83); ‘si’ se sustituye por ‘o’ (§104)).[^74]
+6. **Medhiṭṭho** \= medhāvī \+ iṭṭha \+ si (“vī” se elide (§268); ‘ā’ se elide (§83); ‘si’ se sustituye por ‘o’ (§104)).[^73]
 
 ---
 
@@ -6020,9 +6020,9 @@ Ejemplos:
 
 ¿Cuál es la finalidad de decir “las letras ‘t’, ‘l’, ‘ṇ’ y ‘d’”? \[Este sutta no se aplica cuando no hay estas letras, como en:\] Ālasyaṃ, ārogyaṃ.
 
-¿Cuál es la finalidad de decir “consonantes”?[^75] \[Este sutta no se aplica cuando no hay consonantes, como en:\] Maccunā.
+¿Cuál es la finalidad de decir “consonantes”?[^74] \[Este sutta no se aplica cuando no hay consonantes, como en:\] Maccunā.
 
-¿Cuál es la finalidad de tomar ‘kāra’? Para dar a conocer la sustitución de la letra ‘ya’ por la letra ‘ma’, como en: Opammaṃ.[^76]
+¿Cuál es la finalidad de tomar ‘kāra’? Para dar a conocer la sustitución de la letra ‘ya’ por la letra ‘ma’, como en: Opammaṃ.[^75]
 
 ---
 
@@ -6140,65 +6140,65 @@ Ejemplos:
 
 [^37]:  *Taddhita-Kappa*.
 
-[^38]:  Dh. verso 151\.
+[^38]:  Esto no debería estar aquí. El Nyāsa tampoco lo comenta.
 
-[^39]:  “Ca” es para la sustitución por ‘sa’ y no ‘b’.
+[^39]:  Dh. verso 151\.
 
-[^40]:  Sakhāto (Sī).
+[^40]:  “Ca” es para la sustitución por ‘sa’ y no ‘b’.
 
-[^41]:  Nota del traductor: En el ejemplo *he brahme*, *he* es una partícula vocativa asociada con *brahme*. Es esa función la que invoca la aplicación de ‘ga’, pues §57 (Ālapane si gasañño) se lo asigna a ‘si’ únicamente en el vocativo.
+[^41]:  Sakhāto (Sī).
 
-[^42]:  Con respecto a esto se encuentra en el manuscrito cingalés la lectura “uttam iti bhāvaniddeso katthaci abhāvaṃ dasseti, brahmassa” (‘uttaṃ’ es una expresión que indica estado \[y\] muestra que en algunos casos \[la operación\] no se produce \[como en\] brahmassa).
+[^42]:  Nota del traductor: En el ejemplo *he brahme*, *he* es una partícula vocativa asociada con *brahme*. Es esa función la que invoca la aplicación de ‘ga’, pues §57 (Ālapane si gasañño) se lo asigna a ‘si’ únicamente en el vocativo.
 
-[^43]:  Con respecto a esto se encuentra en el manuscrito cingalés la lectura “ārattaggahaṇena katthaci aniyamaṃ dasseti, satthussa, pitussa, mātussa, bhātussā” (al tomar ‘āratta’ se muestra que en algunos casos \[la aplicación\] no es fija \[como en\] satthussa, pitussa, mātussa, bhātussā).
+[^43]:  Con respecto a esto se encuentra en el manuscrito cingalés la lectura “uttam iti bhāvaniddeso katthaci abhāvaṃ dasseti, brahmassa” (‘uttaṃ’ es una expresión que indica estado \[y\] muestra que en algunos casos \[la operación\] no se produce \[como en\] brahmassa).
 
-[^44]:  El primer significado es el cambio de ‘u’ a ‘u’, y el segundo significado es la elisión de ‘sa’.
+[^44]:  Con respecto a esto se encuentra en el manuscrito cingalés la lectura “ārattaggahaṇena katthaci aniyamaṃ dasseti, satthussa, pitussa, mātussa, bhātussā” (al tomar ‘āratta’ se muestra que en algunos casos \[la aplicación\] no es fija \[como en\] satthussa, pitussa, mātussa, bhātussā).
 
 [^45]:  Hay un solo ejemplo de “sakkamandhātu” con ‘sa’.
 
-[^46]:  El primer significado es el cambio de ‘u’ a ‘u’, y el segundo significado es la elisión de ‘sa’.
+[^46]:  Ubho purisā, najjo (Sī).
 
-[^47]:  Ubho purisā, najjo (Sī).
+[^47]:  Attanā (Sī).
 
-[^48]:  Attanā (Sī).
+[^48]:  Sakārādeso (K).
 
-[^49]:  Sakārādeso (K).
+[^49]:  Caggahaṇaṃ kvaci nivattanatthaṃ (Rū.), caggahaṇaṃ tadanukaḍḍhanatthaṃ (Nyā.) (El tomar “ca” es para excluir “kvaci” (Rū.); el tomar “ca” es para el arrastre de eso (Nyā.)).
 
-[^50]:  Caggahaṇaṃ kvaci nivattanatthaṃ (Rū.), caggahaṇaṃ tadanukaḍḍhanatthaṃ (Nyā.) (El tomar “ca” es para excluir “kvaci” (Rū.); el tomar “ca” es para el arrastre de eso (Nyā.)).
+[^50]:  Los que están mostrados por los suttas “Si ’ṃ” (§219), “S’ o” (§104), “Sy ā ca” (§189), “Sakhato gass’ e vā” (§113) y “Ghat’ e ca” (§114) se llaman aquí “sesa” \[restantes\].
 
-[^51]:  Los que están mostrados por los suttas “Si ’ṃ” (§219), “S’ o” (§104), “Sy ā ca” (§189), “Sakhato gass’ e vā” (§113) y “Ghat’ e ca” (§114) se llaman aquí “sesa” \[restantes\].
+[^51]:  Nota: Esta regla se debe emplear tras los veinte prefijos, ‘pa’, etc., y las partículas, ‘yathā’, etc.
 
-[^52]:  Nota: Esta regla se debe emplear tras los veinte prefijos, ‘pa’, etc., y las partículas, ‘yathā’, etc.
+[^52]:  Parapadesu pi.
 
-[^53]:  Parapadesu pi.
+[^53]:  Bodhesi tvaṃ (Sī).
 
-[^54]:  Bodhesi tvaṃ (Sī).
+[^54]:  Es para el arrastre de “ka”.
 
-[^55]:  Es para el arrastre de “ka”.
+[^55]:  Es para el arrastre de “kissa” y “ku”.
 
-[^56]:  Es para el arrastre de “kissa” y “ku”.
+[^56]:  Etothesu vā (Sī).
 
-[^57]:  Etothesu vā (Sī).
+[^57]:  Ito paraṃ “cassaddaggahaṇam avadhāraṇatthan” ti pāṭo sīhaḷapotthake dissati. Padarūpasiddhiṭīkāyaṃ pana “caggahaṇaṃ sabbaggahaṇ’ ānukaḍḍhanatthan” ti vuttaṃ. (Con respecto a esto, en el libro cingalés aparece la lectura “el tomar la palabra ‘ca’ es para restringir”. Pero en la ṭīkā del Padarūpasiddhi se dice “el tomar ‘ca’ es para el arrastre del tomar ‘sabba’”.)
 
-[^58]:  Ito paraṃ “cassaddaggahaṇam avadhāraṇatthan” ti pāṭo sīhaḷapotthake dissati. Padarūpasiddhiṭīkāyaṃ pana “caggahaṇaṃ sabbaggahaṇ’ ānukaḍḍhanatthan” ti vuttaṃ. (Con respecto a esto, en el libro cingalés aparece la lectura “el tomar la palabra ‘ca’ es para restringir”. Pero en la ṭīkā del Padarūpasiddhi se dice “el tomar ‘ca’ es para el arrastre del tomar ‘sabba’”.)
+[^58]:  Ito paraṃ “hatthī” ti udāharaṇaṃ katthaci dissati, taṃ na yuttaṃ itthiyaṃ “hatthinī” ti padass’ eva diṭṭhattā. (Con respecto a esto, en algunos lugares aparece el ejemplo “hatthī”; no es apropiado, porque en el femenino sólo se encuentra la palabra “hatthinī”.)
 
-[^59]:  Ito paraṃ “hatthī” ti udāharaṇaṃ katthaci dissati, taṃ na yuttaṃ itthiyaṃ “hatthinī” ti padass’ eva diṭṭhattā. (Con respecto a esto, en algunos lugares aparece el ejemplo “hatthī”; no es apropiado, porque en el femenino sólo se encuentra la palabra “hatthinī”.)
+[^59]:  “Nadādi” son las palabras terminadas en ‘a’, como “nada”; “anadādi” son las palabras terminadas en ‘u’ y ‘o’ que no pertenecen a “nadādi”.
 
-[^60]:  “Nadādi” son las palabras terminadas en ‘a’, como “nada”; “anadādi” son las palabras terminadas en ‘u’ y ‘o’ que no pertenecen a “nadādi”.
+[^60]:  Ṇavaṇikaṇeyyaṇantupaccayantehi (Rū).
 
-[^61]:  Ṇavaṇikaṇeyyaṇantupaccayantehi (Rū).
+[^61]:  To ādeso (K).
 
-[^62]:  To ādeso (K).
+[^62]:  Itthiyaṃ kate (Sī).
 
-[^63]:  Itthiyaṃ kate (Sī).
+[^63]:  Bhavato (Sī).
 
-[^64]:  Bhavato (Sī).
+[^64]:  Nota: Conforme a este sutta, estos sufijos se deben considerar inflexiones.
 
-[^65]:  Nota: Conforme a este sutta, estos sufijos se deben considerar inflexiones.
+[^65]:  Este adhikāra sutta tiene influencia desde §257 hasta §259.
 
-[^66]:  Este adhikāra sutta tiene influencia desde §257 hasta §259.
+[^66]:  Nota: Los ejemplos aquí son del sufijo taddhita ‘ṇya’. Véase §269.
 
-[^67]:  Nota: Los ejemplos aquí son del sufijo taddhita ‘ṇya’. Véase §269.
+[^67]:  Nota: Los ejemplos aquí son de los sufijos taddhita ‘iya’ e ‘iṭṭha’.
 
 [^68]:  Nota: Los ejemplos aquí son de los sufijos taddhita ‘iya’ e ‘iṭṭha’.
 
@@ -6212,8 +6212,6 @@ Ejemplos:
 
 [^73]:  Nota: Los ejemplos aquí son de los sufijos taddhita ‘iya’ e ‘iṭṭha’.
 
-[^74]:  Nota: Los ejemplos aquí son de los sufijos taddhita ‘iya’ e ‘iṭṭha’.
+[^74]:  Hay aquí dos explicaciones, una del Nyāsa y otra del Rūpasiddhi. El Nyāsa dice que tras “musa pāṇacāge” hay el sufijo ‘tyu’. Por §638 se eliden la final de la raíz, ‘sa’, y ‘u’ de ‘mu’.
 
-[^75]:  Hay aquí dos explicaciones, una del Nyāsa y otra del Rūpasiddhi. El Nyāsa dice que tras “musa pāṇacāge” hay el sufijo ‘tyu’. Por §638 se eliden la final de la raíz, ‘sa’, y ‘u’ de ‘mu’.
-
-[^76]:  Nota del traductor (Ven. A. Thitzana): Estas formas son nombres abstractos formados con el sufijo taddhita ṇya, «el estado de ser X», y su derivación completa se reparte entre este capítulo y el de taddhita. Tómese paṇḍiccaṃ como modelo. (1) A la base se le añade ṇya (sutta 360 de Thitzana): paṇḍita \+ ṇya. (2) ‘ṇ’ del sufijo se elide (su sutta 396): paṇḍita \+ ya. (3) La vocal final de la base se elide ante ‘ya’ (§261): paṇḍit \+ ya. (4) La consonante, junto con ‘y’, se convierte en la que corresponde según este sutta —‘t’ en ‘c’, ‘l’ en ‘l’, ‘ṇ’ en ‘ñ’, ‘d’ en ‘j’—: paṇḍic°. (5) La consonante resultante se duplica (§28): paṇḍicca. (6) La vocal de la base recibe vuddhi (su sutta 400): ‘u’ deviene ‘o’ en kosallaṃ y sohajjaṃ; ‘i’ deviene ‘e’ en vepullaṃ y nepuññaṃ; ‘a’ se alarga en kāruññaṃ y sāmaññaṃ (en bāhussaccaṃ, en cambio, ‘u’ de “suta” deviene ‘a’; Nandisena cita §404). (7) Por último, al ser neutros, ‘si’ se sustituye por ‘aṃ’ (§219) y ‘a’ final se elide (§83): paṇḍiccaṃ. Las bases de los ocho ejemplos: bāhussuta → bāhussaccaṃ; paṇḍita → paṇḍiccaṃ; vipula → vepullaṃ; karuṇā → kāruññaṃ; kusala → kosallaṃ; nipuṇa → nepuññaṃ; samaṇa —o samāna— → sāmaññaṃ; suhada → sohajjaṃ. En opammaṃ (upamā \+ ṇya) ‘y’ se sustituye por ‘m’, conforme al cuarto kimatthaṃ de este sutta, con ‘u’ devenida ‘o’.
+[^75]:  Nota del traductor (Ven. A. Thitzana): Estas formas son nombres abstractos formados con el sufijo taddhita ṇya, «el estado de ser X», y su derivación completa se reparte entre este capítulo y el de taddhita. Tómese paṇḍiccaṃ como modelo. (1) A la base se le añade ṇya (sutta 360 de Thitzana): paṇḍita \+ ṇya. (2) ‘ṇ’ del sufijo se elide (su sutta 396): paṇḍita \+ ya. (3) La vocal final de la base se elide ante ‘ya’ (§261): paṇḍit \+ ya. (4) La consonante, junto con ‘y’, se convierte en la que corresponde según este sutta —‘t’ en ‘c’, ‘l’ en ‘l’, ‘ṇ’ en ‘ñ’, ‘d’ en ‘j’—: paṇḍic°. (5) La consonante resultante se duplica (§28): paṇḍicca. (6) La vocal de la base recibe vuddhi (su sutta 400): ‘u’ deviene ‘o’ en kosallaṃ y sohajjaṃ; ‘i’ deviene ‘e’ en vepullaṃ y nepuññaṃ; ‘a’ se alarga en kāruññaṃ y sāmaññaṃ (en bāhussaccaṃ, en cambio, ‘u’ de “suta” deviene ‘a’; Nandisena cita §404). (7) Por último, al ser neutros, ‘si’ se sustituye por ‘aṃ’ (§219) y ‘a’ final se elide (§83): paṇḍiccaṃ. Las bases de los ocho ejemplos: bāhussuta → bāhussaccaṃ; paṇḍita → paṇḍiccaṃ; vipula → vepullaṃ; karuṇā → kāruññaṃ; kusala → kosallaṃ; nipuṇa → nepuññaṃ; samaṇa —o samāna— → sāmaññaṃ; suhada → sohajjaṃ. En opammaṃ (upamā \+ ṇya) ‘y’ se sustituye por ‘m’, conforme al cuarto kimatthaṃ de este sutta, con ‘u’ devenida ‘o’.
