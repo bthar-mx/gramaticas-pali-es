@@ -140,11 +140,13 @@ body.dark {
   padding: .5rem 0; margin-bottom: .5rem;
   background: var(--bg); border-bottom: .5px solid var(--border);
 }
-.kanda-nav-label { font: 11px/1 var(--mono); color: var(--text3); margin-right: 4px; }
+.kanda-nav-label { font: 11px/1 var(--mono); color: var(--text3); margin-right: 4px;
+  text-transform: uppercase; letter-spacing: .06em; }
 .kanda-nav-btn {
   border: .5px solid var(--border); background: var(--bg);
   border-radius: 100px; padding: 4px 11px;
   font: 11px/1 var(--sans); color: var(--text2); cursor: pointer;
+  text-transform: uppercase; letter-spacing: .06em;
   transition: background .12s, color .12s;
 }
 .kanda-nav-btn:hover { background: var(--bg2); color: var(--text); }
