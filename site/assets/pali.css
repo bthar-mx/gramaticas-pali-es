@@ -353,6 +353,7 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 .rest-para { margin-bottom: .5rem; }
 .formation-title { font-weight: 500; margin-top: .5rem; }
 .seq-list { padding-left: 1.5rem; font: 12px/2 var(--mono); }
+.seq-sub { padding-left: 1.25rem; list-style: disc; margin: 0; }
 .fn-block { font: 12px/1.7 var(--sans); }
 .fn-item { display: grid; grid-template-columns: 28px 1fr; gap: 0 8px; padding: .2rem 0; }
 .fn-num { font-weight: 500; color: var(--accent); text-align: right; }

@@ -334,8 +334,10 @@ def partir_bloques(cuerpo):
 # ── Renderizado de bloques ──────────────────────────────────────────────
 
 def parrafos(lineas, notas, clase="rest-para"):
-    """Agrupa líneas en párrafos, listas numeradas y títulos en negrita."""
+    """Agrupa líneas en párrafos, listas numeradas (con sub-ítems `  * `
+    anidados, que pueden llegar tras línea en blanco) y títulos en negrita."""
     out, buf, lista = [], [], []
+    gap = [False]                     # línea en blanco vista con lista abierta
 
     def volcar_buf():
         if buf:
@@ -345,17 +347,34 @@ def parrafos(lineas, notas, clase="rest-para"):
 
     def volcar_lista():
         if lista:
-            items = "".join("<li>{0}</li>".format(inline(x, notas)) for x in lista)
+            items = "".join(
+                "<li>{0}{1}</li>".format(
+                    inline(x, notas),
+                    '<ul class="seq-sub">{0}</ul>'.format("".join(
+                        "<li>{0}</li>".format(inline(s, notas)) for s in subs))
+                    if subs else "")
+                for x, subs in lista)
             out.append('<ol class="seq-list">{0}</ol>'.format(items))
             lista.clear()
+        gap[0] = False
 
     for l in lineas:
         t = l.strip()
         if not t:
-            volcar_buf(); volcar_lista(); continue
-        mi = re.match(r'^\d+\.\s+(.*)$', t)
+            volcar_buf()
+            gap[0] = bool(lista)      # la lista queda abierta por si siguen sub-ítems
+            continue
+        if lista and re.match(r'^\s+\*\s+', l):
+            lista[-1][1].append(re.sub(r'^\s+\*\s+', '', l).strip())
+            continue
+        mi = re.match(r'^(\d+)\.\s+(.*)$', t)
         if mi:
-            volcar_buf(); lista.append(mi.group(1)); continue
+            volcar_buf()
+            if lista and gap[0] and mi.group(1) == "1":
+                volcar_lista()        # empieza una lista nueva, no continúa la abierta
+            lista.append([mi.group(2), []])
+            gap[0] = False
+            continue
         volcar_lista()
         mt = re.match(r'^\*\*(.+?)\*\*$', t)
         if mt:

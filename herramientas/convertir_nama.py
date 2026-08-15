@@ -38,7 +38,7 @@ RE_ANCLA = re.compile(r'\[\^([0-9]+|X\d+)\]')
 
 registro = {"suttas_divididos": [], "suttas_sin_tercer_bloque": [],
             "listas_convertidas": 0, "items": 0, "notas": [],
-            "desgloses": 0, "sep77": False}
+            "desgloses": 0}
 
 
 def leer(path):
@@ -66,18 +66,6 @@ def tr_header(seg, meta):
                                          m.group(4), m.group(5))
         meta["voz"] = m.group(3)
         registro["desgloses"] += 1
-    return seg
-
-
-def tr_sep77(n, seg, meta):
-    """§77 carece del --- entre pāḷi y español; se inserta y se avisa."""
-    if n != 77:
-        return seg
-    i = next(k for k, l in enumerate(seg) if l.startswith("Después de este"))
-    assert seg[i - 1].strip() == "" and "---" not in [x.strip() for x in seg[:i]]
-    seg[i:i] = ["---", ""]
-    meta["sep77"] = i
-    registro["sep77"] = True
     return seg
 
 
@@ -206,7 +194,6 @@ def convertir(texto):
     for n, seg in segs:
         meta = {}
         seg = tr_header(seg, meta)
-        seg = tr_sep77(n, seg, meta)
         seg = tr_split(n, seg, meta)
         seg = tr_bullets(n, seg, meta)
         seg = tr_notas(n, seg, meta, nuevas)
@@ -291,12 +278,6 @@ def recomponer(convertido, metas, mapa, defs_originales):
                 del seg[ki + 1:ki + 3]
                 seg[ki] = orig
 
-        # 2) §77
-        if "sep77" in meta:
-            s = meta["sep77"]
-            assert seg[s] == "---" and seg[s + 1] == ""
-            del seg[s:s + 2]
-
         # 1) encabezado
         if "voz" in meta:
             m = re.match(r'^(.*?), (\d+)(\\\])(\s*)$', seg[0])
@@ -327,7 +308,6 @@ def main():
     print("Suttas SIN tercer bloque:", registro["suttas_sin_tercer_bloque"])
     print("Listas convertidas:", registro["listas_convertidas"],
           "· items:", registro["items"])
-    print("Separador §77 insertado:", registro["sep77"])
     print("Notas convertidas ({0}):".format(len(registro["notas"])))
     for c in registro["notas"]:
         print("  §{0} [{1}] → [^{2}]  {3}".format(

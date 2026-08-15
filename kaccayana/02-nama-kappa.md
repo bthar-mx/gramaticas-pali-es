@@ -845,7 +845,7 @@ Pakatiggahaṇasāmatthena puna sandhibhāvo ca hoti. Seyyo; seṭṭho; jeyyo; 
 
 ---
 
-Cuando siguen ‘aṃ, una sustitución, un sufijo, etc., \[hay\] elisión de la vocal; cuando hay elisión de la vocal, \[la vocal restante permanece\] natural.
+Cuando siguen ‘aṃ’, una sustitución, un sufijo, etc., \[hay\] elisión de la vocal; cuando hay elisión de la vocal, \[la vocal restante permanece\] natural.
 
 Cuando siguen \[la inflexión\] ‘aṃ’, una sustitución, un sufijo, etc., hay elisión de la vocal; y cuando hay elisión de la vocal, \[la vocal restante\] permanece natural.[^16][^17]
 
