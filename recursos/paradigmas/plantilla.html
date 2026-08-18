@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.8">
+<meta name="version" content="1.9">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,7 +88,9 @@ h1 .dia{color:var(--haritala)}
   color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
   border-radius:999px;padding:4px 10px;position:relative}
 .version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-.version-badge[data-tip]:hover::after{content:attr(data-tip);
+/* Con el dedo no hay hover: la clase «on» la pone un toque (ver el guion). */
+.version-badge[data-tip]:hover::after,
+.version-badge[data-tip].on::after{content:attr(data-tip);
   position:absolute;top:calc(100% + 8px);left:0;
   background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
   border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--serif);
@@ -248,6 +250,38 @@ footer a{color:var(--nila)}
   .meta{margin-left:0;width:100%}
   .tbl{display:block;overflow-x:auto}
 }
+
+/* ---------- táctil ---------- */
+/* Todo lo de aquí vale sólo para punteros gruesos (dedo o lápiz): con ratón
+   la página queda exactamente como estaba. Dos cosas: zonas de toque de 44px
+   —el mínimo recomendado— y tooltips que se abren al tocar, porque en táctil
+   no existe el hover. La lógica del primer/segundo toque va en el guion. */
+@media (pointer:coarse){
+  input[type=search]{padding:12px 13px;min-height:44px}
+  /* Los filtros pasan a repartirse en filas; la raya de separación es el
+     hueco de 1px, que deja ver el fondo del contenedor. */
+  .filtros{flex-wrap:wrap;gap:1px;background:var(--hair);border-radius:3px}
+  .filtros button{flex:1 0 auto;min-height:44px;font-size:11.5px;
+    padding:12px 13px;border-right:0}
+  .icon-btn{min-height:44px;min-width:44px;padding:12px 13px;font-size:15px}
+  .mini-btn{min-height:38px;padding:9px 12px;font-size:11px}
+  .mini-btn svg{width:14px;height:14px}
+  .meta a{display:inline-block;padding:9px 2px}
+  .sidebar{width:min(300px,84vw)}
+  .sidebar a{padding:10px 18px;font-size:15px}
+  .sb-sec>summary{padding:14px 18px 12px;font-size:11.5px}
+  .tbl th,.tbl td{padding:10px}
+  .tbl tbody th{cursor:pointer}
+  a[data-sutta]{display:inline-block;padding:6px 3px}
+  .version-badge{padding:8px 14px}
+  #top-btn{width:48px;height:48px;font-size:19px;right:16px;bottom:16px}
+}
+@media (pointer:coarse) and (max-width:640px){
+  /* Cada grupo de filtros, a línea completa: así los botones crecen a lo
+     ancho en lugar de estrujarse. */
+  #f-gen,#f-tema{flex:1 1 100%}
+}
+
 @media (prefers-reduced-motion:reduce){
   .hero div{opacity:1!important;transition:none!important}
   *{animation:none!important}
@@ -306,7 +340,7 @@ footer a{color:var(--nila)}
   El paradigma femenino de <i>go</i> (F-O) es el mismo documento que el masculino (M-O1).</p>
   <p><strong>Cómo leer las tablas.</strong> Las ocho filas son las inflexiones nominales, nombradas por su
   ordinal con el pāḷi al lado, como en la traducción de Kaccāyana. Al pasar el cursor por el nombre de
-  la inflexión se ve el caso gramatical correspondiente: primera = nominativo, segunda = acusativo,
+  la inflexión —o al tocarlo, en móvil— se ve el caso gramatical correspondiente: primera = nominativo, segunda = acusativo,
   tercera = instrumental, cuarta = dativo, quinta = ablativo, sexta = genitivo/posesivo,
   séptima = locativo. El vocativo (<i>ālapana</i>) va en fila propia; un guion «—» significa que el
   paradigma no tiene esa forma.</p>
@@ -397,7 +431,9 @@ function tabla(p){
   const head = '<tr><th></th>' + p.columnas.map(c => `<th>${esc(c)}</th>`).join('') + '</tr>';
   const filas = p.filas.map((fila,i) => {
     const [ord, pali] = DATA.inflexiones[i].split(' (');
-    return `<tr><th title="= caso ${esc(DATA.casos[i])}">${esc(ord)} <i>(${esc(pali)}</i></th>`
+    /* El «title» es para el ratón; los data-… los usa el tooltip táctil. */
+    return `<tr><th title="= caso ${esc(DATA.casos[i])}" data-caso="${esc(DATA.casos[i])}"`
+         + ` data-ord="${esc(ord)}">${esc(ord)} <i>(${esc(pali)}</i></th>`
          + fila.map(celda).join('') + '</tr>';
   }).join('');
   return `<table class="tbl"><thead>${head}</thead><tbody>${filas}</tbody></table>`;
@@ -519,8 +555,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.8', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'N-Ā1 pasa de «asaddhā» a «assaddhā», la forma con -ss- que dan el documento de origen, Rūpasiddhi (assaddhāsaddo, en su sección del napuṃsakaliṅga, donde este paradigma tiene su origen: se acorta por Kacc. §342 y se declina como citta) y el canon; y «assadhā» de la primera del plural se corrige a «assaddhā». Ambas con el visto bueno de Angel.';
+const VERSION = '1.9', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'La página se hace táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
@@ -604,16 +640,33 @@ document.addEventListener('click', e => {
   if(innerWidth <= 900) closeSb();
 });
 
-/* ---------- tooltip de las referencias §N ---------- */
+/* ---------- puntero: distinguir el dedo del ratón ---------- */
+/* En táctil no hay hover, así que los tooltips no aparecerían nunca. La
+   solución: el primer toque abre el tooltip y el segundo sigue el enlace.
+   Se mira el tipo del último puntero, no el ancho de la pantalla, para que
+   un portátil con pantalla táctil se comporte bien de las dos maneras. */
+let puntero = 'mouse';
+addEventListener('pointerdown', e => { puntero = e.pointerType || 'mouse'; },
+  {capture:true, passive:true});
+/* Sin PointerEvent (Safari antiguo) decide la media query. */
+const conRaton = () => puntero === 'mouse' && matchMedia('(hover: hover)').matches;
+
+/* ---------- tooltip de las referencias §N y de las inflexiones ---------- */
 const tip = document.getElementById('tip');
 let tipT = null;
+let tipDe = null;   /* el elemento que lo tiene abierto, para el segundo toque */
 function tipHTML(n){
   const s = (DATA.nama || {})[n];
   if(!s) return '';
   return `<span class="tn">Nāma-Kappa · §${n}</span>
     <p class="tp">${esc(s.pali)}</p>
     ${s.es ? `<p class="te">${esc(s.es)}</p>` : ''}
-    <p class="tk">clic para abrir el sutta</p>`;
+    <p class="tk">${conRaton() ? 'clic' : 'toca otra vez'} para abrir el sutta</p>`;
+}
+/* Con ratón, el caso lo da el «title» nativo; con el dedo, este tooltip. */
+function casoHTML(th){
+  return `<span class="tn">${esc(th.dataset.ord || '')}</span>
+    <p class="te" style="margin:0">= caso ${esc(th.dataset.caso || '')}</p>`;
 }
 function placeTip(el){
   const r = el.getBoundingClientRect();
@@ -627,26 +680,32 @@ function placeTip(el){
   tip.style.left = x + 'px'; tip.style.top = y + 'px';
   tip.style.visibility = '';
 }
-function showTip(el){
-  const html = tipHTML(el.dataset.sutta);
+function pintarTip(el, html){
   if(!html) return;
   tip.innerHTML = html;
   tip.setAttribute('aria-hidden','false');
   placeTip(el);
+  tipDe = el;
 }
+function showTip(el){ pintarTip(el, tipHTML(el.dataset.sutta)); }
 function hideTip(){
   clearTimeout(tipT);
   tip.classList.remove('on');
   tip.setAttribute('aria-hidden','true');
+  tipDe = null;
 }
+/* Hover y foco: sólo con ratón. En táctil el navegador emula un «mouseover»
+   antes del toque, y sin este filtro el tooltip se abriría solo y el primer
+   toque ya navegaría. */
 document.addEventListener('mouseover', e => {
+  if(!conRaton()) return;
   const a = e.target.closest('a[data-sutta]');
   if(!a) return;
   clearTimeout(tipT);
   tipT = setTimeout(() => showTip(a), 110);
 });
 document.addEventListener('mouseout', e => {
-  if(e.target.closest('a[data-sutta]')) hideTip();
+  if(conRaton() && e.target.closest('a[data-sutta]')) hideTip();
 });
 document.addEventListener('focusin', e => {
   const a = e.target.closest('a[data-sutta]');
@@ -657,6 +716,34 @@ document.addEventListener('focusout', e => {
 });
 addEventListener('scroll', hideTip, {passive:true});
 addEventListener('keydown', e => { if(e.key === 'Escape') hideTip(); });
+
+/* Táctil: primer toque, tooltip; segundo, el enlace. Tocar fuera lo cierra. */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-sutta]');
+  if(a){
+    if(conRaton()) return;              /* con ratón el clic abre, como siempre */
+    if(tipDe === a){ hideTip(); return; }   /* segundo toque: deja pasar el enlace */
+    e.preventDefault();
+    showTip(a);
+    return;
+  }
+  const th = e.target.closest('.tbl tbody th[data-caso]');
+  if(th){
+    if(conRaton()) return;              /* con ratón basta el «title» nativo */
+    if(tipDe === th) hideTip(); else pintarTip(th, casoHTML(th));
+    return;
+  }
+  if(!e.target.closest('#tip')) hideTip();
+});
+
+/* La insignia de versión abre su nota al tocarla (con ratón, al pasar). */
+(function(){
+  const b = document.getElementById('vbadge');
+  document.addEventListener('click', e => {
+    if(e.target.closest('#vbadge') && !conRaton()) b.classList.toggle('on');
+    else b.classList.remove('on');
+  });
+})();
 
 /* ---------- copiar paradigma y copiar enlace ---------- */
 function textoParadigma(p){
