@@ -27,9 +27,18 @@
     --btn-bg:transparent;
   }
 
-  /* ---------- marca del IEBH, en el pie ---------- */
+  /* ---------- marca del IEBH ---------- */
   /* Esta página tiene dos vías al tema oscuro —el atributo y la preferencia
      del sistema—, así que la marca clara se declara en las dos. */
+  .marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
+    background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+  :root[data-theme="dark"] .marca-arbol{
+    background-image:url(../../assets/iebh-arbol-blanco.svg)}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .marca-arbol{
+      background-image:url(../../assets/iebh-arbol-blanco.svg)}
+  }
+  .eyebrow-iebh{display:flex;align-items:center;gap:9px;margin:0 0 .35rem}
   .marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
     background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
   :root[data-theme="dark"] .marca-lockup{
@@ -562,7 +571,7 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
 
   <header>
     <div>
-      <p class="eyebrow">Kaccāyana · derivación nominal</p>
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><p class="eyebrow" style="margin:0">Kaccāyana · derivación nominal</p></div>
       <h1>Ejemplo de formación del <em>nombre</em></h1>
     </div>
     <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">

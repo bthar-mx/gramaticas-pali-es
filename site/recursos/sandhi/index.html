@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Sandhi · Combinación eufónica en pāḷi</title>
-<meta name="version" content="3.7">
+<meta name="version" content="3.8">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Referencia interactiva de las reglas de sandhi del pāḷi, según Kaccāyana, Rūpasiddhi y Saddanīti.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,8 +70,12 @@ body{padding-left:238px}
 .scrim{display:none}
 
 /* ---------- marca del IEBH ---------- */
-/* Sólo en el pie: la línea de arriba nombra a Kaccāyana, Rūpasiddhi y
-   Saddanīti, no al instituto, y la marca ahí diría lo que no es. */
+/* El árbol arriba, como marca de quien publica el sitio —no como pie de la
+   línea que tiene al lado—, y el imagotipo completo abajo, con la licencia. */
+.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
+  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
 .marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
   background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
 html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
@@ -335,7 +339,7 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   <div class="wrap mast">
     <div>
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
-      <div class="lbl">Kaccāyana · Rūpasiddhi · Saddanīti</div>
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Kaccāyana · Rūpasiddhi · Saddanīti</span></div>
       <h1>Sandh<span class="dia">i</span></h1>
       <p class="tag">Las reglas de combinación eufónica del pāḷi, con su secuencia.</p>
       <span class="version-badge" id="vbadge"></span>
@@ -806,8 +810,8 @@ addEventListener('scroll', () => {
 topBtn.addEventListener('click', volverArriba);
 
 /* ---------- versión ---------- */
-const VERSION = '3.7', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'Aparece en el pie el imagotipo del Instituto de Estudios Buddhistas Hispano, junto a la licencia, en las dos versiones del manual de marca: granate sobre claro y blanca sobre oscuro. Arriba no se pone, porque esa línea nombra a Kaccāyana, Rūpasiddhi y Saddanīti, no al instituto. El sitio estrena también icono de pestaña. Antes, en la versión 3.6: Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
+const VERSION = '3.8', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'El árbol del IEBH aparece también en la cabecera, junto a «Kaccāyana · Rūpasiddhi · Saddanīti»: va como marca de quien publica el sitio, no como pie de esa línea. El imagotipo completo sigue en el pie. Antes, en la versión 3.7: Aparece en el pie el imagotipo del Instituto de Estudios Buddhistas Hispano, junto a la licencia, en las dos versiones del manual de marca: granate sobre claro y blanca sobre oscuro. Arriba no se pone, porque esa línea nombra a Kaccāyana, Rūpasiddhi y Saddanīti, no al instituto. El sitio estrena también icono de pestaña. Antes, en la versión 3.6: Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];

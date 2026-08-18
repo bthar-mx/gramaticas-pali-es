@@ -906,6 +906,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <div id="inner">
 <div class="page-hdr">
 <a class="idx-back" href="../">← {obra}</a>
+<div class="hdr-marca"><span class="marca-arbol"></span></div>
 <div class="hdr-grammar">{obra_display}</div>
 <div class="hdr-sub">{obra_sub}</div>
 <div class="hdr-chapter">{titulo_pali} · {titulo_es}</div>

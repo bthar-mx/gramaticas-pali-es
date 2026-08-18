@@ -124,7 +124,7 @@ if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
 document.body.classList.add('dark');}}catch(e){{}}</script>
 <main class="idx">
 {volver}
-<p class="idx-eyebrow">{eyebrow}</p>
+<p class="idx-eyebrow"><span class="marca-arbol"></span>{eyebrow}</p>
 <h1 class="display">{h1}</h1>
 {cuerpo}
 <div class="idx-foot">
@@ -249,10 +249,7 @@ def portada(pub):
         descripcion="Traducciones al español de las gramáticas clásicas de la "
                     "lengua pāḷi. Instituto de Estudios Buddhistas Hispano.",
         raiz="", volver="",
-        # El árbol acompaña sólo a la línea que nombra al instituto; en las
-        # otras páginas el eyebrow dice otra cosa y la marca ahí engañaría.
-        eyebrow=('<span class="marca-arbol"></span>'
-                 'Instituto de Estudios Buddhistas Hispano'),
+        eyebrow="Instituto de Estudios Buddhistas Hispano",
         h1='Gramáticas P<span class="dia">ā</span><span class="dia">ḷ</span>i '
            'en español',
         cuerpo=cuerpo,

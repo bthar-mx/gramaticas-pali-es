@@ -74,9 +74,11 @@ body {
 #toc {
   position: fixed; top: 0; left: 0; bottom: 0;
   width: var(--toc-w); overflow-y: auto;
+  /* Gentium, como la barra lateral de los recursos. Ya se carga en esta
+     página para los títulos, así que no cuesta una petición más. */
   background: var(--bg); border-right: .5px solid var(--border);
   padding: 1.5rem 1rem 2rem 1.25rem;
-  font-family: var(--serif);
+  font-family: var(--display);
   scrollbar-width: thin;
   display: none;
 }
@@ -90,9 +92,13 @@ body {
   margin-bottom: 1.25rem; padding-bottom: .75rem;
   border-bottom: .5px solid var(--border);
 }
+/* Los rótulos de kaṇḍa se igualan a los de la barra lateral de los recursos
+   (MASCULINOS, FEMENINOS…): mismo mono, mismo oropimente, misma letra
+   espaciada. En gris --text3 se leían como desactivados. */
 .toc-kanda {
-  font-size: 11px; font-weight: 500; letter-spacing: .07em;
-  text-transform: uppercase; color: var(--text3);
+  font-family: var(--mono);
+  font-size: 10.5px; font-weight: 600; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--haritala);
   margin: 1rem 0 .35rem; padding-bottom: .25rem;
   border-bottom: .5px solid var(--border);
 }
@@ -117,7 +123,8 @@ body {
 .toc-kanda-btn {
   display: flex; width: 100%; align-items: baseline; gap: 6px;
   background: none; border: none; border-bottom: .5px solid var(--border);
-  cursor: pointer; text-align: left; font-family: var(--sans);
+  /* El tipo lo pone .toc-kanda (mono); antes lo forzaba a Inter aquí. */
+  cursor: pointer; text-align: left; font-family: inherit;
 }
 .toc-caret {
   font-size: 9px; color: var(--text3);
@@ -554,6 +561,10 @@ body.dark .marca-lockup { background-image: url(iebh-imagotipo-blanco.svg); }
   background: url(iebh-arbol-granate.svg) center/contain no-repeat;
 }
 body.dark .marca-arbol { background-image: url(iebh-arbol-blanco.svg); }
+/* En los capítulos la cabecera no tiene línea de crédito, así que el árbol
+   va solo, entre el enlace de vuelta y el título de la obra. */
+.hdr-marca { margin: .35rem 0 .5rem; line-height: 0; }
+.hdr-marca .marca-arbol { margin-right: 0; vertical-align: 0; }
 .footer-box-main strong {
   font-weight: 500;
   color: var(--text2);
