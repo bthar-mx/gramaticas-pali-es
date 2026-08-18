@@ -68,6 +68,10 @@ def main():
     if os.path.exists(os.path.join(recursos, "nombre", "plantilla.html")):
         fallos += correr("generar_nombre.py")
 
+    # paradigmas de declinación
+    if os.path.exists(os.path.join(recursos, "paradigmas", "plantilla.html")):
+        fallos += correr("generar_paradigmas.py")
+
     # las tres páginas de índice — al final, porque cuentan lo ya generado
     fallos += correr("generar_indices.py")
 

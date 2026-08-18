@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
+<meta name="version" content="1.0">
+<meta name="version-date" content="2026-08-18">
+<meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ola:#E7E3D6;        /* hoja de palma */
+  --ola-2:#F0EDE4;
+  --ink:#171612;        /* tinta de humo */
+  --soot:#4E4839;
+  --hair:#BFB7A0;
+  --haritala:#5C4008;   /* oropimente */
+  --hover:rgba(255,255,255,.55);
+  --active:rgba(255,255,255,.75);
+  --hl:rgba(92,64,8,.16);
+  --chip-k:rgba(39,65,79,.10);
+  --nila:#27414F;       /* índigo */
+  --rakta:#7E2E23;      /* bermellón */
+  --shadow:rgba(0,0,0,.05);
+  --serif:"Gentium Book Plus",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html[data-theme=dark]{
+  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
+  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
+  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
+  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
+}
+html[data-theme=dark] body{background-image:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ola);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.55;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+
+/* ---------- barra lateral ---------- */
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
+  background:var(--ola-2);border-right:1px solid var(--hair);padding:20px 0 48px}
+.sidebar h3{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--haritala);margin:20px 18px 6px}
+.sidebar h3:first-of-type{margin-top:6px}
+.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:6px}
+.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
+.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5}
+.sidebar a{display:block;padding:3px 18px;color:var(--ink);text-decoration:none;font-size:14px;
+  border-left:2px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sidebar a:hover{background:var(--ola);color:var(--nila)}
+.sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
+.sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
+.sidebar a:hover b,.sidebar a.on b{color:inherit}
+.sb-close{display:none}
+#burger{display:none}
+body{padding-left:238px}
+.scrim{display:none}
+
+/* ---------- eyebrow / labels ---------- */
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
+     text-transform:uppercase;color:var(--soot)}
+
+/* ---------- header ---------- */
+header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
+.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
+h1{font-size:clamp(40px,8vw,64px);line-height:.92;margin:0;font-weight:700;letter-spacing:-.02em}
+h1 .dia{color:var(--haritala)}
+.tag{margin:10px 0 0;max-width:38ch;color:var(--soot);font-size:16.5px}
+.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
+  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
+  border-radius:999px;padding:4px 10px;position:relative}
+.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
+.version-badge[data-tip]:hover::after{content:attr(data-tip);
+  position:absolute;top:calc(100% + 8px);left:0;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--serif);
+  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
+  min-width:160px;max-width:min(340px,70vw);z-index:100;
+  box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
+.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
+      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
+.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
+.hero div.on{opacity:1;transition:opacity .5s ease}
+.hero b{font-weight:700;color:var(--haritala)}
+.hero .ref{color:var(--soot);font-size:10.5px}
+
+/* ---------- controls ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--ola);
+     border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
+.bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+input[type=search]{
+  flex:1 1 220px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;padding:9px 12px}
+input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
+.filtros{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.filtros button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding:8px 10px;border:0;background:var(--ola-2);color:var(--soot);
+  cursor:pointer;border-right:1px solid var(--hair)}
+.filtros button:last-child{border-right:0}
+.filtros button[aria-pressed=true]{background:var(--nila);color:var(--ola-2)}
+.filtros.tema button[aria-pressed=true]{background:var(--haritala)}
+.filtros button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
+.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
+.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
+  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
+.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
+.icon-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+
+/* La barra es pegajosa: sin este margen, saltar a un paradigma lo deja oculto. */
+.sec,.card{scroll-margin-top:var(--barra,74px)}
+
+/* ---------- sections ---------- */
+.sec{margin:38px 0 8px;display:flex;align-items:baseline;gap:12px}
+.sec h2{font-size:20px;margin:0;font-weight:700;letter-spacing:.01em}
+.sec .rule{flex:1;height:1px;background:var(--hair)}
+
+/* ---------- cards ---------- */
+.card{border-top:1px solid var(--hair);padding:22px 0 26px}
+.card:last-child{border-bottom:1px solid var(--hair)}
+.chead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.cod{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.07em;
+  color:var(--nila);background:var(--chip-k);border-radius:2px;padding:2.5px 8px;white-space:nowrap}
+.title{font-size:19px;margin:0;font-weight:400}
+.pali{font-style:italic;font-weight:700}
+.gloss{color:var(--soot)}
+.meta{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.05em;margin-left:auto;
+  display:flex;gap:10px;align-items:baseline;white-space:nowrap}
+.meta a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
+.meta a:hover{color:var(--haritala)}
+
+/* ---------- tablas de declinación (elemento central) ---------- */
+.tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:15.5px}
+.tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+.tbl thead th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;
+   text-transform:uppercase;color:var(--soot);border-bottom:1.5px solid var(--ink)}
+.tbl tbody th{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--nila);
+   white-space:nowrap;cursor:help;width:1%}
+.tbl tbody th i{font-style:italic;color:var(--soot)}
+.tbl td{font-style:italic;font-weight:600}
+.tbl td .sep{font-style:normal;font-weight:400;color:var(--soot)}
+.tbl td .rara{opacity:.62;font-weight:400}
+.tbl td.nada{font-style:normal;font-weight:400;color:var(--soot);opacity:.6}
+.tbl tbody tr:hover{background:var(--hover)}
+mark{background:var(--hl);color:inherit;border-radius:2px;
+  box-shadow:inset 0 -1px 0 var(--haritala)}
+
+/* ---------- notas de la tarjeta ---------- */
+.familia{margin:10px 0 0;font-size:14.5px;color:var(--soot)}
+.familia b{color:var(--ink);font-weight:600}
+.parcial{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;color:var(--soot);
+  letter-spacing:.02em;border-left:2px solid var(--haritala);padding-left:8px;line-height:1.7}
+.igual{margin:10px 0 0;font-size:15px;color:var(--soot)}
+.igual a{color:var(--nila)}
+.sufchips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 0}
+.sufchips span{font-family:var(--serif);font-style:italic;font-weight:700;font-size:15px;
+  padding:3px 10px;border:1px solid var(--hair);border-radius:2px;background:var(--ola-2)}
+
+/* ---------- volver al inicio (igual que en los capítulos) ---------- */
+#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
+  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
+  opacity:0;pointer-events:none;transform:translateY(6px);
+  transition:opacity .2s,transform .2s,background .12s,color .12s}
+#top-btn.show{opacity:1;pointer-events:auto;transform:none}
+#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
+#top-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
+
+/* ---------- empty + footer ---------- */
+.empty{padding:60px 0;text-align:center;color:var(--soot)}
+.empty p{margin:0 0 6px}
+footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
+       color:var(--soot);font-size:14px}
+footer a{color:var(--nila)}
+.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
+  font-size:12.5px;line-height:1.65;color:var(--soot)}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
+  text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+
+@media (max-width:900px){
+  body{padding-left:0}
+  .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
+  .sidebar.open{transform:none}
+  .sb-close{display:block;position:absolute;top:12px;right:12px}
+  #burger{display:inline-flex}
+  .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mast{gap:22px}
+  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
+        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
+  .hero div{justify-content:flex-start}
+  .bar .wrap{gap:9px}
+  .count{width:100%}
+  .meta{margin-left:0;width:100%}
+  .tbl{display:block;overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero div{opacity:1!important;transition:none!important}
+  *{animation:none!important}
+}
+@media print{
+  #sbnav,#sbclose,#burger,#theme,#top-btn,.hero,input#q,.filtros{display:none!important}
+  body{background:#fff;color:#000;padding-left:0}
+  .sidebar{display:none}
+  .card{break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar" aria-label="Índice">
+  <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
+  <div class="sb-brand"><b>Paradigmas</b><span class="lbl">Declinación nominal y pronominal</span></div>
+  <nav id="sbnav"></nav>
+</aside>
+
+<header>
+  <div class="wrap mast">
+    <div>
+      <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <div class="lbl">Instituto de Estudios Buddhistas Hispano</div>
+      <h1>Paradigmas de declinaci<span class="dia">ó</span>n</h1>
+      <p class="tag">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
+      <span class="version-badge" id="vbadge"></span>
+    </div>
+    <div class="hero" id="hero" aria-hidden="true"></div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <input type="search" id="q" placeholder="Buscar paradigma o forma — «purisa», «rannā», «bhikkhave»…" aria-label="Buscar">
+    <span class="filtros" id="f-gen" role="group" aria-label="Filtrar por género"></span>
+    <span class="filtros tema" id="f-tema" role="group" aria-label="Filtrar por tema"></span>
+    <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+    <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<main class="wrap" id="out"></main>
+<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+
+<footer class="wrap">
+  <p class="version-foot" id="vfoot"></p>
+  <p><strong>Fuente.</strong> Los 83 paradigmas proceden de los documentos de declinación preparados por
+  Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano, transcritos aquí tal como están,
+  con las variantes de cada celda separadas. Las formas entre paréntesis se dan así en el documento.
+  El paradigma femenino de <i>go</i> (F-O) es el mismo documento que el masculino (M-O1).</p>
+  <p><strong>Cómo leer las tablas.</strong> Las ocho filas son las inflexiones nominales, nombradas por su
+  ordinal con el pāḷi al lado, como en la traducción de Kaccāyana. Al pasar el cursor por el nombre de
+  la inflexión se ve el caso gramatical correspondiente: primera = nominativo, segunda = acusativo,
+  tercera = instrumental, cuarta = dativo, quinta = ablativo, sexta = genitivo/posesivo,
+  séptima = locativo. El vocativo (<i>ālapana</i>) va en fila propia; un guion «—» significa que el
+  paradigma no tiene esa forma.</p>
+  <p><strong>Véase también.</strong> El capítulo que prescribe estas inflexiones, en
+  <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; la referencia interactiva de
+  <a href="../sandhi/">sandhi</a>; y la <a href="../nombre/">formación del nombre</a> paso a paso.</p>
+
+  <p class="licencia">Preparado por Bhikkhu Nandisena<br>
+  Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
+  Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
+</footer>
+
+<script>
+const DATA = {"_nota":"Paradigmas de declinación nominal y pronominal, transcritos de los documentos públicos del IEBH (véase indice.json). Las variantes de cada celda van como lista. Las formas entre paréntesis se conservan tal como están en el documento. Una celda [] corresponde al guion del documento (forma inexistente). La transcripción es literal; toda desviación se señala en «notas».","fuente":"https://docs.google.com/document/d/1QfTBtjov4WrEGOLadb9jB5ApFE4Pf7ZGxpEDeT_d21s/edit","inflexiones":["primera (paṭhamā)","vocativo (ālapana)","segunda (dutiyā)","tercera (tatiyā)","cuarta (catutthī)","quinta (pañcamī)","sexta (chaṭṭhī)","séptima (sattamī)"],"casos":["nominativo","vocativo","acusativo","instrumental","dativo","ablativo","genitivo/posesivo","locativo"],"paradigmas":[{"codigo":"M-A1","paradigma":"purisa (hombre)","genero":"masculino","doc":"1BolMW0t7CS-T54v0tlWfAbG4HsO7L66b4TKhGwNPLps","titulo_doc":"M-A1—PURISA (hombre)","columnas":["singular","plural"],"filas":[[["puriso"],["purisā"]],[["bho purisa","purisā"],["bhavanto purisā"]],[["purisaṃ"],["purise"]],[["purisena"],["purisehi","purisebhi"]],[["purisassa","purisāya"],["purisānaṃ"]],[["purisā","purisasmā","purisamhā"],["purisehi","purisebhi"]],[["purisassa"],["purisānaṃ"]],[["purise","purisasmiṃ","purisamhi"],["purisesu"]]]},{"codigo":"M-A2","paradigma":"mana (mente)","genero":"masculino","doc":"1kOk60rkww-ccDEY6dVF6GxSONQe_ZakHu7W557-nxiU","titulo_doc":"M-A2—MANA (mente)","columnas":["singular","plural"],"filas":[[["mano"],["manā"]],[["he mana","manā"],["bhavanto mānā"]],[["manaṃ"],["mane"]],[["manasā","manena"],["manehi","manebhi"]],[["manaso","manassa"],["manānaṃ"]],[["manā","manasmā","manamhā"],["manehi","manebhi"]],[["manaso","manassa"],["manānaṃ"]],[["manasi","mane","manasmiṃ","manamhi"],["manesu"]]]},{"codigo":"M-A3","paradigma":"guṇavantu (virtuoso)","genero":"masculino","doc":"1AorO6Tw70Jm1RsxOOYPMIrcLhTJCSNbYD7raouAofTw","titulo_doc":"M-A3—GUṆAVANTU (virtuoso)","columnas":["singular","plural"],"filas":[[["guṇavā"],["guṇavanto","guṇavantā","(guṇavanti)"]],[["bho guṇavaṃ","guṇava","guṇavā"],["bhavanto guṇavanto","guṇavantā"]],[["guṇavantaṃ"],["guṇavante"]],[["guṇavatā","guṇavantena"],["guṇavantehi","guṇavantebhi"]],[["guṇavantassa","guṇavato"],["guṇavataṃ","guṇavantānaṃ"]],[["guṇavatā","guṇavantā","guṇavantasmā","guṇavantamhā"],["guṇavantehi","guṇavantebhi"]],[["guṇavantassa","guṇavato"],["guṇavataṃ","guṇavantānaṃ"]],[["guṇavati","guṇavante","guṇavantasmiṃ","guṇavantamhi"],["guṇavantesu"]]]},{"codigo":"M-A4","paradigma":"satimantu (atento)","genero":"masculino","doc":"12QYkKa00nJdwRnlvGJ4KZUvijgdQl3g2eMweJWRc_RI","titulo_doc":"M-A4 — SATIMANTU (atento)","columnas":["singular","plural"],"filas":[[["satimā"],["satimanto","satimantā","(satimanti)"]],[["bho satimaṃ","satima","satimā"],["bhavanto satimanto","satimantā"]],[["satimaṃ","satimantaṃ"],["satimante"]],[["satimatā","satimantena"],["satimantehi","satimantebhi"]],[["satimassa","satimato","satimantassa"],["satimataṃ","satimantānaṃ"]],[["satimatā","satimantā","satimantasmā","satimantamhā"],["satimantehi","satimantebhi"]],[["satimassa","satimato","satimantassa"],["satimataṃ","satimantānaṃ"]],[["satimati","satimante","satimantasmiṃ","satimantamhi"],["satimantesu"]]]},{"codigo":"M-A5","paradigma":"gacchanta (yendo)","genero":"masculino","doc":"1gzRy7lJN2ziuK27xkUpaMAiYwLpE3hA_gsO21fSKUVU","titulo_doc":"M-A5—GACCHANTA (yendo)","columnas":["singular","plural"],"filas":[[["gacchaṃ","gacchanto"],["gacchanto","gacchantā"]],[["bho gacchaṃ","gaccha","gacchā"],["bhavanto gacchanto","gacchantā"]],[["gacchaṃ","gacchantaṃ"],["gacchante"]],[["gacchatā","gacchantena"],["gacchantehi","gacchantebhi"]],[["gacchato","gacchantassa"],["gacchataṃ","gacchantānaṃ"]],[["gacchatā","gacchantasmā","gacchantamhā"],["gacchantehi","gacchantebhi"]],[["gacchato","gacchantassa"],["gacchataṃ","gacchantānaṃ"]],[["gacchati","gacchante","gacchantasmiṃ","gacchantamhi"],["gacchantesu"]]]},{"codigo":"M-A6","paradigma":"bhavanta (venerable)","genero":"masculino","doc":"1lKpeeFIUfof1tcJQUf7KlOTQwg5_KDGPxSLMowlPxZY","titulo_doc":"M-A6—BHAVANTA (venerable, honorable)","columnas":["singular","plural"],"filas":[[["bhavaṃ","bhavanto"],["bhonto","bhavanto","bhavantā"]],[["bho","bhante","bhonta","bhontā"],["bhonto","bhavanto","bhavantā"]],[["bhavantaṃ"],["bhonte","bhavante"]],[["bhotā","bhavatā","bhavantena"],["bhavantehi","bhavantebhi"]],[["bhoto","bhavato","bhavantassa"],["bhavataṃ","bhavantānaṃ"]],[["bhotā","bhavatā","bhavantasmā","bhavantamhā"],["bhavantehi","bhavantebhi"]],[["bhoto","bhavato","bhavantassa"],["bhavataṃ","bhavantānaṃ"]],[["bhavati","bhavante","bhavantasmiṃ","bhavantamhi"],["bhavantesu"]]]},{"codigo":"M-A7","paradigma":"bhaddanta (venerable)","genero":"masculino","doc":"145Fg9fW_4b65WBm1uIXo-YPIqf724KAssiTCsnUiTP0","titulo_doc":"M-A7 —BHADANTA (venerable, honorable)","columnas":["singular","plural"],"filas":[[["bhadanto"],["bhadantā","bhaddantā"]],[["bho bhaddanta","bhante","bhadanta","bhadantā"],["bhadantā","bhaddantā","bhante"]],[["bhadantaṃ"],["bhadante","bhaddante"]],[["bhadantena"],["bhadantehi","bhadantebhi"]],[["bhadantassa"],["bhadantānaṃ"]],[["bhadantā","bhadantasmā","bhadantamhā"],["bhadantehi","bhadantebhi"]],[["bhadantassa"],["bhadantānaṃ"]],[["bhadante","bhadantasmiṃ","bhadantamhi"],["bhadantesu"]]]},{"codigo":"M-A8","paradigma":"santa (virtuoso, santo)","genero":"masculino","doc":"1iPOQACCObVVENrcAWfZlBcP_58ixM1fSIZ9u_7Fk2YQ","titulo_doc":"M-A8 —SANTA (virtuoso)","columnas":["singular","plural"],"filas":[[["saṃ","santo"],["santo","santā"]],[["bho saṃ","santa","santā"],["bhavanto santo","santā"]],[["saṃ","santaṃ"],["sante"]],[["satā","santena"],["santehi","santebhi","sabbhi"]],[["sato","santassa"],["sataṃ","santānaṃ"]],[["satā","santasmā","santamhā"],["santehi","santebhi","sabbhi"]],[["sato","santassa"],["sataṃ","santānaṃ"]],[["sati","sante","santasmiṃ","santamhi"],["santesu"]]]},{"codigo":"M-A9","paradigma":"rāja (rey)","genero":"masculino","doc":"1T1qRer2kUtgION7OdsabhpVeVCfyNvnC8cuTg79Z9dI","titulo_doc":"M-A9 — RĀJA (rey)","columnas":["singular","plural"],"filas":[[["rājā"],["rājāno"]],[["bho rāja","rājā"],["bhavanto rājāno"]],[["rājānaṃ","rājaṃ"],["rājāno"]],[["raññā","rājena"],["rājūhi","rājūbhi","rājehi","rājebhi"]],[["rañño","rājino"],["raññaṃ","rājūnaṃ","rājānaṃ"]],[["raññā"],["rājūhi","rājūbhi","rājehi","rājebhi"]],[["rañño","rājino"],["raññaṃ","rājūnaṃ","rājānaṃ"]],[["raññe","rājini"],["rājūsu","rājesu"]]]},{"codigo":"M-A10","paradigma":"brahma (dios)","genero":"masculino","doc":"1On3xuV7UdI-U_0a9OqxbCucRvq03pm9MnLHWcVzLoLw","titulo_doc":"M-A10 — BRAHMA (dios)","columnas":["singular","plural"],"filas":[[["brahmā"],["brahmāno"]],[["bho brahme"],["bhavanto brahmāno"]],[["brahmānaṃ","brahmaṃ"],["brahmāno"]],[["brahmunā"],["brahmehi","brahmebhi"]],[["brahmuno","brahmassa"],["brahmānaṃ","brahmūnaṃ"]],[["brahmunā"],["brahmehi","brahmebhi"]],[["brahmuno","brahmassa"],["brahmānaṃ","brahmūnaṃ"]],[["brahmani"],["brahmesu"]]]},{"codigo":"M-A11","paradigma":"atta (alma, uno mismo)","genero":"masculino","doc":"14QU9KbXeSbhfuN9mFSpRW69NXsy7-Arz7E1haEdXs2Q","titulo_doc":"M-A11 —ATTA (alma, uno mismo)","columnas":["singular","plural"],"filas":[[["attā"],["attāno"]],[["bho atta","attā"],["bhavanto attāno"]],[["attānaṃ","attaṃ"],["attāno"]],[["attanā","attena"],["attanehi","attanebhi"]],[["attano"],["attānaṃ"]],[["attanā"],["attanehi","attanebhi"]],[["attano"],["attānaṃ"]],[["attani"],["attesu"]]]},{"codigo":"M-A12","paradigma":"sakha (amigo)","genero":"masculino","doc":"1n09cIDC9p0e9b5w6d6ReVdN_MBZFPQeRLM2U_Uf-ZEQ","titulo_doc":"M-A12 —SAKHA (amigo)","columnas":["singular","plural"],"filas":[[["sakhā"],["sakhāno","sakhāyo","sakhino"]],[["bho sakha","sakhā","sakhi","sakhī","sakhe"],["bhavanto sakhāno","sakhāyo","sakhino"]],[["sakhāraṃ","sakhānaṃ","sakhaṃ"],["sakhāno","sakhāyo","sakhino"]],[["sakhinā"],["sakhārehi","sakhārebhi","sakhehi","sakhebhi"]],[["sakhino","sakhissa"],["sakhārānaṃ","sakhīnaṃ"]],[["sakhinā"],["sakhārehi","sakhārebhi","sakhehi","sakhebhi"]],[["sakhino","sakhissa"],["sakhārānaṃ","sakhīnaṃ"]],[["sakkhe"],["sakhāresu","sakhesu"]]]},{"codigo":"M-A13","paradigma":"ātuma (alma, uno mismo)","genero":"masculino","doc":"1kdXVvTpxBidA3c5npq8v0ohl94iMHDTLPBHrDAzm3ok","titulo_doc":"M-A13 —ĀTUMA (alma, uno mismo)","columnas":["singular","plural"],"filas":[[["ātumā"],["ātumāno"]],[["bho ātuma","ātumā"],["bhavanto ātumāno"]],[["ātumānaṃ","ātumaṃ"],["ātumāno"]],[["ātumena"],["ātumehi","ātumebhi"]],[["ātumassa"],["ātumānaṃ"]],[["ātumā","ātumasmā","ātumamhā"],["ātumehi","ātumebhi"]],[["ātumassa"],["ātumānaṃ"]],[["ātume","ātumasmiṃ","ātumamhi"],["ātumesu"]]]},{"codigo":"M-A14","paradigma":"puma (macho)","genero":"masculino","doc":"1vVUq6UvxjbVyVF0fZhHr33jq0YUv7sDzuab0rvecPYY","titulo_doc":"M-A14 —PUMA (macho)","columnas":["singular","plural"],"filas":[[["pumā"],["pumāno"]],[["he pumaṃ"],["he pumāno"]],[["pumaṃ"],["pumāno"]],[["pumānā","pumunā","pumena"],["pumānehi","pumānebhi"]],[["pumuno","pumassa"],["pumānaṃ"]],[["pumānā","pumunā","pumā","pumasmā","pumamhā"],["pumānehi","pumānebhi","pumehi","pumebhi"]],[["pumuno","pumassa"],["pumānaṃ"]],[["pumāne","pume","pumasmiṃ","pumamhi"],["pumāsu","pumesu"]]]},{"codigo":"M-A15","paradigma":"yuva (joven)","genero":"masculino","doc":"12sknsNtc0ARjN5VzCKVu5nvyV9Onc95pyXwvKb06LPE","titulo_doc":"M-A15 —YUVA (joven)","columnas":["singular","plural"],"filas":[[["yuvā","yuvāno"],["yuvānā","yuvā"]],[["he yuva","yuvā","yuvāna","yuvānā"],["bhavanto yuvānā"]],[["yuvānaṃ","yuvaṃ"],["yuvāne","yuve"]],[["yuvānā","yuvena","yuvānena"],["yuvānehi","yuvānebhi","yuvehi","yuvebhi"]],[["yuvānassa","yuvassa"],["yuvānānaṃ","yuvānaṃ"]],[["yuvānā","yuvānasmā","yuvānamhā"],["yuvānehi","yuvānebhi","yuvehi","yuvebhi"]],[["yuvānassa","yuvassa"],["yuvānānaṃ","yuvānaṃ"]],[["yuvāne","yuvānasmiṃ","yuvānamhi","yuve","yuvasmiṃ","yuvamhi"],["yuvānesu","yuvāsu","yuvesu"]]]},{"codigo":"M-Ā1","paradigma":"sā (perro)","genero":"masculino","doc":"1jEY9cuYT8VDglSNFDTTyyWiJ5kvFH0yTSnKHQNJNYxw","titulo_doc":"M-Ā1—SĀ (perro)","columnas":["singular","plural"],"filas":[[["sā"],["sā"]],[["he sa","sā"],["he sā"]],[["saṃ"],["se"]],[["sena"],["sāhi","sābhi"]],[["sassa","sāya"],["sānaṃ"]],[["sā","sasmā","samhā"],["sāhi","sābhi"]],[["sassa"],["sānaṃ"]],[["se","sasmiṃ","samhi"],["sāsu"]]]},{"codigo":"M-I1","paradigma":"aggi (fuego)","genero":"masculino","doc":"1vmqvSuhW8cDEvkmKy3gNbNv0kzwZCfMLk-6jvX_a3Ic","titulo_doc":"M-I1—AGGI (fuego)","columnas":["singular","plural"],"filas":[[["aggini","aggi"],["aggī","aggayo"]],[["he aggi"],["he aggī","aggayo"]],[["aggiṃ"],["aggī","aggayo"]],[["agginā"],["aggīhi","aggībhi","aggihi","aggibhi"]],[["aggino","aggissa"],["aggīnaṃ","agginaṃ"]],[["agginā","aggismā","aggimhā"],["aggīhi","aggībhi","aggihi","aggibhi"]],[["aggino","aggissa"],["aggīnaṃ","agginaṃ"]],[["aggimhi","aggismiṃ"],["aggīsu","aggisu"]]]},{"codigo":"M-Ī1","paradigma":"daṇḍī (poseedor de una vara)","genero":"masculino","doc":"1ZU8V0d_Dh3mFZBesJPhS718uYlYCa0XMfufcrO0iEwM","titulo_doc":"M-Ī1—DAṆḌĪ (poseedor de una vara)","columnas":["singular","plural"],"filas":[[["daṇḍī"],["daṇḍī","daṇḍino"]],[["bho daṇḍi"],["bhavanto daṇḍī","daṇḍino"]],[["daṇḍinaṃ","daṇḍiṃ"],["daṇḍī","daṇḍino"]],[["daṇḍinā"],["daṇḍīhi","daṇḍībhi"]],[["daṇḍino","daṇḍissa"],["daṇḍīnaṃ"]],[["daṇḍinā","daṇḍismā","daṇḍimhā"],["daṇḍīhi","daṇḍībhi"]],[["daṇḍino","daṇḍissa"],["daṇḍīnaṃ"]],[["daṇḍini","daṇḍismiṃ","daṇḍimhi"],["daṇḍīsu"]]]},{"codigo":"M-Ī2","paradigma":"gāmaṇī (jefe de poblado)","genero":"masculino","doc":"15RRLY3qv4jfrwezI7bBLtnqKwZ7ooUNMnh6nxbGAOj4","titulo_doc":"M-Ī2—GĀMAṆĪ (jefe de poblado)","columnas":["singular","plural"],"filas":[[["gāmaṇī"],["gāmaṇī","gāmaṇino"]],[["bho gāmaṇi"],["bhonto gāmaṇī","gāmaṇino"]],[["gāmaṇinaṃ","gāmaṇiṃ"],["gāmaṇī","gāmaṇino"]],[["gāmaṇinā"],["gāmaṇīhi","gāmaṇībhi"]],[["gāmanino","gāmanissa"],["gāmaṇīnaṃ"]],[["gāmaṇinā","gāmaṇismā","gāmaṇimhā"],["gāmanīhi","gāmaṇībhi"]],[["gāmaṇino","gāmaṇissa"],["gāmaṇīnaṃ"]],[["gāmaṇismiṃ","gāmāṇimhi"],["gāmaṇīsu"]]]},{"codigo":"M-U1","paradigma":"bhikkhu (monje)","genero":"masculino","doc":"1_o3zkFMvOtNEvV4ts5sLM_Ns0hunNb5Cr2tDfCs8LTU","titulo_doc":"M-U1—BHIKKHU (monje)","columnas":["singular","plural"],"filas":[[["bhikkhu"],["bhikkhū","bhikkhavo"]],[["bho bhikkhu"],["bhavanto bhikkhū","bhikkhave","bhikkhavo"]],[["bhikkhuṃ"],["bhikkhū","bhikkhavo"]],[["bhikkhunā"],["bhikkhūhi","bhikkhūbhi","bhikkhuhi","bhikkhubhi"]],[["bhikkhuno","bhikkhussa"],["bhikkhūnaṃ","bhikkhunaṃ"]],[["bhikkhunā","bhikkhusmā","bhikkhumhā"],["bhikkhūhi","bhikkhūbhi","bhikkhuhi","bhikkhubhi"]],[["bhikkhuno","bhikkhussa"],["bhikkhūnaṃ","bhikkhunaṃ"]],[["bhikkhumhi","bhikkhusmiṃ"],["bhikkhūsu","bhikkhusu"]]]},{"codigo":"M-U2","paradigma":"satthu (maestro)","genero":"masculino","doc":"1m-XjQs1q1xbPwBl42POK6kVGUC3NrSq0Bqu2DolXdDA","titulo_doc":"M-U2—SATTHU (maestro)","columnas":["singular","plural"],"notas":["El documento abrevia «satthārehi, -bhi» en la tercera y la quinta del plural; se transcribe expandido como «satthārehi, satthārebhi»."],"filas":[[["satthā"],["satthāro"]],[["bho sattha","satthā"],["bhavanto satthāro"]],[["satthāraṃ"],["satthāre","satthāro"]],[["satthārā","satthunā"],["satthārehi","satthārebhi"]],[["satthu","satthussa","satthuno"],["satthārānaṃ","satthānaṃ"]],[["satthārā"],["satthārehi","satthārebhi"]],[["satthu","satthussa","satthuno"],["satthārānaṃ","satthānaṃ"]],[["satthari"],["satthāresu"]]]},{"codigo":"M-U3","paradigma":"kattu (hacedor)","genero":"masculino","doc":"16w-p0obnxcqRVHiKXfXZeFGI2AT_C512TQ18oVPEBsU","titulo_doc":"M-U3— KATTU (hacedor)","columnas":["singular","plural"],"notas":["El documento abrevia «kattārehi, -bhi» en la tercera y la quinta del plural; se transcribe expandido como «kattārehi, kattārebhi»."],"filas":[[["kattā"],["kattāro"]],[["bho katta","kattā"],["bhavanto kattāro"]],[["kattāraṃ"],["kattāre","kattāro"]],[["kattārā"],["kattārehi","kattārebhi"]],[["kattu","kattussa","kattuno"],["kattārānaṃ","kattānaṃ","kattūnaṃ","kattunaṃ"]],[["kattārā"],["kattārehi","kattārebhi"]],[["kattu","kattussa","kattuno"],["kattārānaṃ","kattānaṃ","kattūnaṃ","kattunaṃ"]],[["kattari"],["kattāresu","kattūsu","kattusu"]]]},{"codigo":"M-U4","paradigma":"pitu (padre)","genero":"masculino","doc":"1u12t_25PCi4-Yl8_ObtmF7SR1WwU5rHo1DnWpXm572I","titulo_doc":"M-U4— PITU (padre)","columnas":["singular","plural"],"filas":[[["pitā"],["pitaro"]],[["bho pita","pitā"],["bhavanto pitaro"]],[["pitaraṃ"],["pitare","pitaro"]],[["pitarā","pitunā"],["pitarehi","pitarebhi","pitūhi","pitūbhi","pituhi","pitubhi"]],[["pitu","pituno","pitussa"],["pitarānaṃ","pitānaṃ","pitūnaṃ","pitunaṃ"]],[["pitarā"],["pitarehi","pitarebhi","pitūhi","pitūbhi","pituhi","pitubhi"]],[["pitu","pituno","pitussa"],["pitarānaṃ","pitānaṃ","pitūnaṃ","pitunaṃ"]],[["pitari"],["pitaresu","pitūsu","pitusu"]]]},{"codigo":"M-Ū1","paradigma":"abhibhū (jefe supremo, etc.)","genero":"masculino","doc":"1fPCOiPK_D2luvaWsIBSLjb24qTpMUwEL7SH3l7BLenQ","titulo_doc":"M-Ū1—ABHIBHŪ (señor, jefe supremo, conquistador)","columnas":["singular","plural"],"filas":[[["abhibhū"],["abhibhū","abhibhuvo","abhibhuno"]],[["bho abhibhu"],["bhavanto abhibhū","abhibhuvo"]],[["abhibhuṃ"],["abhibhū","abhibhuvo"]],[["abhibhunā"],["abhibhūhi","abhibhūbhi"]],[["abhibhuno","abhibhussa"],["abhibhūnaṃ"]],[["abhibhunā","abhibhusmā","abhibhumhā"],["abhibhūhi","abhibhūbhi"]],[["abhibhuno","abhibhussa"],["abhibhūnaṃ"]],[["abhibhumhi","abhibhusmiṃ"],["abhibhūsu"]]]},{"codigo":"M-Ū2","paradigma":"sabbaññū (omnisciente)","genero":"masculino","doc":"1Qf_9ibXluHP0tQ7_KkpUi70RVpyA1bYplv152BVJmXk","titulo_doc":"M-Ū2—SABBAÑÑŪ (omnisciente)","columnas":["singular","plural"],"filas":[[["sabbaññū"],["sabbaññū","sabbaññuno"]],[["bho sabbaññu"],["bhonto sabbaññū","sabbaññuno"]],[["sabbaññuṃ"],["sabbaññū","sabbaññuno"]],[["sabbaññunā"],["sabbaññūhi","sabbaññūbhi"]],[["sabbaññuno","sabbaññussa"],["sabbaññūnaṃ"]],[["sabbaññunā","sabbaññusmā","sabbaññumhā"],["sabbaññūhi","sabbaññūbhi"]],[["sabbaññuno","sabbaññussa"],["sabbaññūnaṃ"]],[["sabbaññumhi","sabbaññusmiṃ"],["sabbaññūsu"]]]},{"codigo":"M-O1","paradigma":"go (buey, ganado)","genero":"masculino","doc":"1aacMccFlV2sIPTmIfGj6gR3a8oRebdTTFHZeem9ycNg","titulo_doc":"M-O1/FO—GO (buey, ganado)","columnas":["singular","plural"],"filas":[[["go"],["gāvo","gavo"]],[["he go"],["he gāvo","gavo"]],[["gāvuṃ","gāvaṃ","gavaṃ"],["gāvo","gavo"]],[["gāvena","gavena"],["gohi","gobhi"]],[["gāvassa","gavassa"],["gavaṃ","gunnaṃ","gonaṃ"]],[["gāvā","gāvamhā","gāvasmā","gavā","gavamhā","gavasmā"],["gohi","gobhi"]],[["gāvassa","gavassa"],["gavaṃ","gunnaṃ","gonaṃ"]],[["gāve","gāvamhi","gāvasmiṃ","gave","gavamhi","gavasmiṃ"],["gāvesu","gavesu","gosu"]]]},{"codigo":"M+1","paradigma":"addha (tiempo, camino)","genero":"masculino","doc":"1iUgOpegrKAY_7Kaa4mMM2yzn7W-udlAaD-TwK6ZxAcI","titulo_doc":"M+1—ADDHA (tiempo, camino)","columnas":["singular","plural"],"filas":[[["addhā"],["addhā","addhāno"]],[["bho addha"],["bhavanto addhā","addhāno"]],[["addhānaṃ"],["addhāne"]],[["addhunā"],["addhānehi","addhānebhi"]],[["addhuno"],["addhānaṃ"]],[["addhunā"],["addhānehi","addhānebhi"]],[["addhuno"],["addhānaṃ"]],[["addhani","addhāne"],["addhānesu"]]]},{"codigo":"F-Ā1","paradigma":"kaññā (niña)","genero":"femenino","doc":"1OEYtHHorReFmdJ4Fvs9GvRb7IouyMIn8-T8YBSOrpaE","titulo_doc":"F-Ā1—KAÑÑĀ (niña)","columnas":["singular","plural"],"filas":[[["kaññā"],["kaññā","kaññāyo"]],[["bhoti kaññe"],["bhotiyo kaññā","kaññāyo"]],[["kaññaṃ"],["kaññā","kaññāyo"]],[["kaññāya"],["kaññāhi","kaññābhi"]],[["kaññāya"],["kaññānaṃ"]],[["kaññāya"],["kaññāhi","kaññābhi"]],[["kaññāya"],["kaññānaṃ"]],[["kaññāyaṃ","kaññāya"],["kaññāsu"]]]},{"codigo":"F-Ā1A","paradigma":"ammā (madre, hija, señora)","genero":"femenino","doc":"1s7AMyFOYpSr3ZQE5fQsDCryssef8elTrjnZFItx9nXk","titulo_doc":"F-Ā1A—AMMĀ (madre, hija, señora)","columnas":["singular","plural"],"notas":["Nota del documento: «Este paradigma es similar al paradigma de kaññā (niña) excepto en el vocativo. Ref. Sad. i 262-3; Rū. §181.»"],"filas":[[["ammā"],["ammā","ammāyo"]],[["bhoti amma","ammā"],["bhotiyo ammā","ammāyo"]],[["ammaṃ"],["ammā","ammāyo"]],[["ammāya"],["ammāhi","ammābhi"]],[["ammāya"],["ammānaṃ"]],[["ammāya"],["ammāhi","ammābhi"]],[["ammāya"],["ammānaṃ"]],[["ammāyaṃ","ammāya"],["ammāsu"]]]},{"codigo":"F-I1","paradigma":"ratti (noche)","genero":"femenino","doc":"1WKJYA7-9vQK2ZUvb4foopxouBY0PYpPHPnE58VNF-9s","titulo_doc":"F-I1—RATTI (noche)","columnas":["singular","plural"],"filas":[[["ratti"],["rattī","rattiyo","ratyo"]],[["he ratti"],["he rattī","rattiyo","(ratyo)"]],[["rattiṃ"],["rattī","rattiyo","(ratyo)"]],[["rattiyā"],["rattīhi","rattībhi","rattihi","rattibhi"]],[["rattiyā"],["rattīnaṃ","rattinaṃ"]],[["ratyā","rattiyā"],["rattīhi","rattībhi","rattihi","rattibhi"]],[["rattiyā"],["rattīnaṃ","rattinaṃ"]],[["ratyaṃ","rattiyaṃ","ratyā","rattiyā","rattiṃ","ratto"],["rattīsu","rattisu"]]]},{"codigo":"F-Ī1","paradigma":"itthī (mujer)","genero":"femenino","doc":"16Qj6AVODT2cgTk3_eD8VahcXoTW2gBtNOZUR5D0ySZc","titulo_doc":"F-Ī1—ITTHĪ (mujer)","columnas":["singular","plural"],"filas":[[["itthī"],["itthī","itthiyo"]],[["bhoti itthi"],["bhotiyo itthī","itthiyo"]],[["itthiyaṃ","itthiṃ"],["itthī","itthiyo"]],[["itthiyā"],["itthīhi","itthībhi"]],[["itthiyā"],["itthīnaṃ"]],[["itthiyā"],["itthīhi","itthībhi"]],[["itthiyā"],["itthīnaṃ"]],[["itthiyaṃ","itthiyā"],["itthīsu"]]]},{"codigo":"F-Ī2","paradigma":"nadī (río)","genero":"femenino","doc":"12JMj-KXP5K3t75wz0IuxKpuqcnSs1J9XcIHNH30Wrqw","titulo_doc":"F-Ī2—NADĪ (río)","columnas":["singular","plural"],"filas":[[["nadī"],["nadī","najjo","nadiyo"]],[["he nadi"],["he nadī","najjo","nadiyo"]],[["nadiyaṃ","nadiṃ"],["nadī","najjo","nadiyo"]],[["najjā","nadiyā"],["nadīhi","nadībhi"]],[["najjā","nadiyā"],["nadīnaṃ"]],[["najjā","nadiyā"],["nadīhi","nadībhi"]],[["najjā","nadiyā"],["nadīnaṃ"]],[["najjaṃ","nadiyaṃ","nadiyā"],["nadīsu"]]]},{"codigo":"F-Ī3","paradigma":"puthavī (la tierra)","genero":"femenino","doc":"17TCWmv1pDBnrTh5JVFrgvv-qr_tS5WBg7stQ5ylsVTM","titulo_doc":"F-Ī3—PUTHAVĪ (la tierra)","columnas":["singular","plural"],"filas":[[["puthavī"],["(puthavī)","puthaviyo"]],[["bhoti puthavi"],["bhotiyo (puthavī)","puthaviyo"]],[["puthaviṃ"],["(puthavī)","puthaviyo"]],[["puthabyā","puthaviyā"],["puthavīhi","puthavībhi"]],[["puthabyā","puthaviyā"],["puthavīnaṃ"]],[["puthabyā","puthaviyā"],["puthavīhi","puthavībhi"]],[["puthabyā","puthaviyā"],["puthavīnaṃ"]],[["puthabyaṃ","puthaviyaṃ","puthaviyā"],["puthavīsu"]]]},{"codigo":"F-Ī4","paradigma":"guṇavatī, guṇavantī (virtuosa)","genero":"femenino","doc":"1WRRan2yUW0KJhrFB2TwQmij_SKL8M7ZJxv4tIObsA6U","titulo_doc":"F-Ī4—GUṆAVATĪ/GUṆAVANTĪ (virtuosa)","columnas":["singular","plural"],"filas":[[["guṇavatī","guṇavantī"],["guṇavatī","guṇavatiyo","guṇavantī","guṇavantiyo"]],[["bhoti guṇavati","guṇavanti"],["bhotiyo guṇavatī","guṇavatiyo","guṇavantī","guṇavantiyo"]],[["guṇavatiṃ","guṇavantiṃ"],["guṇavatī","guṇavatiyo","guṇavantī","guṇavantiyo"]],[["guṇavatiyā","guṇavantiyā"],["guṇavatīhi","guṇavatībhi","guṇavantīhi","guṇavantibhi"]],[["guṇavatiyā","guṇavantiyā"],["guṇavatīnaṃ","guṇavantīnaṃ"]],[["guṇavatiyā","guṇavantiyā"],["guṇavatīhi","guṇavatībhi","guṇavantīhi","guṇavantibhi"]],[["guṇavatiyā","guṇavantiyā"],["guṇavatīnaṃ","guṇavantīnaṃ"]],[["guṇavatiyaṃ","guṇavatiyā","guṇavantiyaṃ","guṇavantiyā"],["guṇavatīsu","guṇavantīsu"]]]},{"codigo":"F-U1","paradigma":"yāgu (sopa de arroz)","genero":"femenino","doc":"1J-aJcDLRHKzThMJ7sWbnU5LZ-lgtzPJQgRZ7XEkwAek","titulo_doc":"F-U1—YĀGU (sopa de arroz)","columnas":["singular","plural"],"filas":[[["yāgu"],["yāgū","yāguyo"]],[["he yāgu"],["he yāgū","yāguyo"]],[["yāguṃ"],["yāgū","yāguyo"]],[["yāguyā"],["yāgūhi","yāgūbhi","yāguhi","yāgubhi"]],[["yāguyā"],["yāgūnaṃ","yāgunaṃ"]],[["yāguyā"],["yāgūhi","yāgūbhi","yāguhi","yāgubhi"]],[["yāguyā"],["yāgūnaṃ","yāgunaṃ"]],[["yāguyaṃ","yāguyā"],["yāgūsu","yāgusu"]]]},{"codigo":"F-U2","paradigma":"mātu (madre)","genero":"femenino","doc":"15eCce-IEqDjgaI_dcLcenZJHchY1LF99Kw_xg-K6i3M","titulo_doc":"F-U2—MĀTU (madre)","columnas":["singular","plural"],"notas":["En la quinta del plural el documento da «mātarehi, mātarebhi, mātūhi, mātūbhi,» con coma final; se transcriben las cuatro formas dadas."],"filas":[[["mātā"],["mātaro"]],[["bhoti māta","mātā"],["bhotiyo mātāro"]],[["mātaraṃ"],["mātare","mātaro"]],[["mātarā","mātuyā","matyā"],["mātarehi","mātarebhi","mātūhi","mātūbhi","mātuhi","mātubhi"]],[["mātu","mātussa","mātuyā"],["mātarānaṃ","mātānaṃ","mātūnaṃ","mātunaṃ"]],[["mātarā","mātuyā","(matyā)"],["mātarehi","mātarebhi","mātūhi","mātūbhi"]],[["mātu","mātussa","mātuyā"],["mātarānaṃ","mātānaṃ","mātūnaṃ","mātunaṃ"]],[["mātari"],["mātaresu","mātūsu","mātusu"]]]},{"codigo":"F-Ū2","paradigma":"jambū (yambo)","genero":"femenino","doc":"1FCCKE5V0_H4Sy-obCN4d45r_sabTyhYWvYRSggGVNOA","titulo_doc":"F-Ū2—JAMBŪ (yambo)","columnas":["singular","plural"],"filas":[[["jambū"],["jambū","jambuyo"]],[["he jambu"],["he jambū","jambuyo"]],[["jambuṃ"],["jambū","jambuyo"]],[["jambuyā"],["jambūhi","jambūbhi"]],[["jambuyā"],["jambūnaṃ"]],[["jambuyā"],["jambūhi","jambūbhi"]],[["jambuyā"],["jambūnaṃ"]],[["jambuyaṃ","jambuyā"],["jambūsu"]]]},{"codigo":"F-O","paradigma":"go (vaca) — igual que el masculino go","genero":"femenino","doc":"1aacMccFlV2sIPTmIfGj6gR3a8oRebdTTFHZeem9ycNg","titulo_doc":"M-O1/FO—GO (buey, ganado)","igual_que":"M-O1"},{"codigo":"N-A1","paradigma":"citta (conciencia, mente)","genero":"neutro","doc":"12DNuYxXqAEVICROn4-QW5738idDfIiKAKeOM0OFEOp0","titulo_doc":"N-A1—CITTA (conciencia, mente)","columnas":["singular","plural"],"filas":[[["cittaṃ"],["cittā","cittāni"]],[["he citta"],["he cittā","cittāni"]],[["cittaṃ"],["citte","cittāni"]],[["cittena"],["cittehi","cittebhi"]],[["cittassa"],["cittānaṃ"]],[["cittā","cittasmā","cittamhā"],["cittehi","cittebhi"]],[["cittassa"],["cittānaṃ"]],[["citte","cittasmiṃ","cittamhi"],["cittesu"]]]},{"codigo":"N-A2","paradigma":"kamma (acción)","genero":"neutro","doc":"1jY_iQlIoRVTjqkKLcdcHQrMI7LnKRnu55DCY_v1jW6Y","titulo_doc":"N-A2—KAMMA (acción)","columnas":["singular","plural"],"filas":[[["kammaṃ"],["kammā","kammāni"]],[["he kamma"],["he kammā","kammāni"]],[["kammaṃ"],["kamme","kammāni"]],[["kammunā","kammanā","kammena"],["kammehi","kammebhi"]],[["kammuno","kammassa"],["kammānaṃ"]],[["kammunā","kammā","kammamhā","kammasmā"],["kammehi","kammebhi"]],[["kammuno","kammassa"],["kammānaṃ"]],[["kammani","kamme","kammamhi","kammasmiṃ"],["kammesu"]]]},{"codigo":"N-A3","paradigma":"guṇavantu (virtuoso)","genero":"neutro","doc":"1pItqMqnF655wepI7UkTSHggYrPT-ogIpaOrN8zXcBXY","titulo_doc":"N-A3—GUṆAVANTU (virtuoso)","columnas":["singular","plural"],"filas":[[["guṇavaṃ"],["guṇavantā","guṇavanti","guṇavantāni"]],[["bho guṇavaṃ","guṇavantaṃ"],["bhavantāni guṇavantā","guṇavanti","guṇavantāni"]],[["guṇavaṃ","guṇavantaṃ"],["guṇavante","guṇavanti","guṇavantāni"]],[["guṇavatā","guṇavantena"],["guṇavantehi","guṇavantebhi"]],[["guṇavantassa","guṇavato"],["guṇavataṃ","guṇavantānaṃ"]],[["guṇavatā","guṇavantā","guṇavantasmā","guṇavantamhā"],["guṇavantehi","guṇavantebhi"]],[["guṇavantassa","guṇavato"],["guṇavataṃ","guṇavantānaṃ"]],[["guṇavati","guṇavante","guṇavantasmiṃ","guṇavantamhi"],["guṇavantesu"]]]},{"codigo":"N-A4","paradigma":"gacchanta (yendo)","genero":"neutro","doc":"1cU2JGaB1u8omjxjM2guLx82015CYDHGN9yCCMX5vPwU","titulo_doc":"N-A4—GACCHANTA (yendo)","columnas":["singular","plural"],"filas":[[["gacchaṃ","gacchantaṃ"],["gacchantā","gacchanti","gacchantāni"]],[["bho gacchaṃ","gaccha","gacchā"],["bhavantāni gacchantā","gacchanti","gacchantāni"]],[["gacchaṃ","gacchantaṃ"],["gacchante","gacchanti","gacchantāni"]],[["gacchatā","gacchantena"],["gacchantehi","gacchantebhi"]],[["gacchato","gacchantassa"],["gacchataṃ","gacchantānaṃ"]],[["gacchatā","gacchantasmā","gacchantamhā"],["gacchantehi","gacchantebhi"]],[["gacchato","gacchantassa"],["gacchataṃ","gacchantānaṃ"]],[["gacchati","gacchante","gacchantasmiṃ","gacchantamhi"],["gacchantesu"]]]},{"codigo":"N-Ā1","paradigma":"asaddhā (infiel)","genero":"neutro","doc":"1IXTrQwsrNoOflxd6V9VGZZ1SmMyitfMGIoBDQB9NRTQ","titulo_doc":"N-Ā1—ASSADDHĀ (infiel)","columnas":["singular","plural"],"notas":["El índice escribe «asaddhā»; el documento, «ASSADDHĀ», y las formas van con -ss-. Se transcribe el documento tal cual, incluida «assadhā» (con una sola d) en la primera del plural."],"filas":[[["assaddhaṃ"],["assadhā","assaddhāni"]],[["he assaddha"],["he assaddhā","assaddhāni"]],[["assaddhaṃ"],["assaddhe","assaddhāni"]],[["assaddhena"],["assaddhehi","assaddhebhi"]],[["assaddhassa"],["assaddhānaṃ"]],[["assaddhā","assaddhasmā","assaddhamhā"],["assaddhehi","assaddhebhi"]],[["assaddhassa"],["assaddhānaṃ"]],[["assaddhe","assaddhasmiṃ","assaddhamhi"],["assaddhesu"]]]},{"codigo":"N-I1","paradigma":"aṭṭhi (hueso)","genero":"neutro","doc":"1Xe5ROPQLGRc7-R7z8haamzPaK8NH8DDmJK0vS20LNrc","titulo_doc":"N-I1—AṬṬHI (hueso)","columnas":["singular","plural"],"filas":[[["aṭṭhi"],["aṭṭhī","aṭṭhīni"]],[["he aṭṭhi"],["he aṭṭhī","aṭṭhīni"]],[["aṭṭhiṃ"],["aṭṭhī","aṭṭhīni"]],[["aṭṭhinā"],["aṭṭhīhi","aṭṭhībhi","aṭṭhihi","aṭṭhibhi"]],[["aṭṭhino","aṭṭhissa"],["aṭṭhīnaṃ","(aṭṭhinaṃ)"]],[["aṭṭhinā","aṭṭhismā","aṭṭhimhā"],["aṭṭhīhi","aṭṭhībhi","aṭṭhihi","aṭṭhibhi"]],[["aṭṭhino","aṭṭhissa"],["aṭṭhīnaṃ","aṭṭhinaṃ"]],[["aṭṭhimhi","aṭṭhismiṃ"],["aṭṭhīsu","aṭṭhisu"]]]},{"codigo":"N-Ī1","paradigma":"sukhakārī (algo que produce placer)","genero":"neutro","doc":"1MRoUPfSieOQXmuKB70EkcdpNy3DIH4L2DhxH4kBvekA","titulo_doc":"N-Ī1—SUKHAKĀRĪ (que produce placer)","columnas":["singular","plural"],"filas":[[["sukhakāri"],["sukhakārī","sukhakārīni"]],[["he sukhakāri"],["he sukhakārī","sukhakārīni"]],[["sukhakārinaṃ","sukhakāriṃ"],["sukhakārī","sukhakārīni"]],[["sukhakārinā"],["sukhakārīhi","sukhakārībhi"]],[["sukhakārino","sukhakārissa"],["sukhakārīnaṃ"]],[["sukhakārinā","sukhakārismā","sukhakārimhā"],["sukhakārīhi","sukhakārībhi"]],[["sukhakārino","sukhakārissa"],["sukhakārīnaṃ"]],[["sukhakārini","sukhakārismiṃ","sukhakārimhi"],["sukhakārīsu"]]]},{"codigo":"N-U1","paradigma":"āyu (edad)","genero":"neutro","doc":"1lIfivXJ0JBdqgz-N7_gCFKojNP5xjka3jetP14zPXUY","titulo_doc":"N-U1—ĀYU (edad)","columnas":["singular","plural"],"filas":[[["āyu"],["āyū","āyūni"]],[["he āyu"],["he āyū","āyūni"]],[["āyuṃ"],["āyū","āyūni"]],[["āyunā","āyusā"],["āyūhi","āyūbhi"]],[["āyuno","āyussa"],["āyūnaṃ"]],[["āyunā","āyusmā","āyumhā"],["āyūhi","āyūbhi"]],[["āyuno","āyussa"],["āyūnaṃ"]],[["āyumhi","āyusmiṃ"],["āyūsu"]]]},{"codigo":"N-Ū1","paradigma":"gotrabhū (cambio de linaje)","genero":"neutro","doc":"17uGXXzhyKWi1Z2KMWlZt29xCrlTGQ_ZfGbhXI9IStgs","titulo_doc":"N-Ū1—GOTRABHŪ (cambio de linaje)","columnas":["singular","plural"],"filas":[[["gotrabhu"],["gotrabhū","gotrabhūni"]],[["he gotrabhu"],["he gotrabhū","gotrabhūni"]],[["gotrabhuṃ"],["gotrabhū","gotrabhūni"]],[["gotrabhunā"],["gotrabhūhi","gotrabhūbhi","gotrabhuhi","gotrabhubhi"]],[["gotrabhuno","gotrabhussa"],["gotrabhūnaṃ","gotrabhunaṃ"]],[["gotrabhunā","gotrabhusmā","gotrabhumhā"],["gotrabhūhi","gotrabhūbhi","gotrabhuhi","gotrabhubhi"]],[["gotrabhuno","gotrabhussa"],["gotrabhūnaṃ","gotrabhunaṃ"]],[["gotrabhumhi","gotrabhusmiṃ"],["gotrabhūsu","gotrabhusu"]]]},{"codigo":"N-O1","paradigma":"cittago (poseedor de ganado moteado)","genero":"neutro","doc":"1O4C190nFKYbqktMUml0vr0J_skfemTzaMvM5dKC7uto","titulo_doc":"N-O1—CITTAGO (poseedor de ganado moteado)","columnas":["singular","plural"],"filas":[[["cittagu"],["cittagū","cittagūni"]],[["he cittagu"],["he cittagū","cittagūni"]],[["cittaguṃ"],["cittagū","cittagūni"]],[["cittagunā"],["cittagūhi","cittagūbhi"]],[["cittaguno","cittagussa"],["cittagūnaṃ"]],[["cittagunā","cittagusmā","cittagumhā"],["cittagūhi","cittagūbhi"]],[["cittaguno","cittagussa"],["cittagūnaṃ"]],[["cittagumhi","cittagusmiṃ"],["cittagūsu"]]]},{"codigo":"PM1","paradigma":"sabba (todo)","genero":"pronombre-m","doc":"1it1d_b1m7lX9_v8tC6zOdjwNybHIE24uGVxz4M7G_Ok","titulo_doc":"PM1—SABBA (todo)","subtitulo":"masculino","familia":"Como sabba se declinan: katara, katama, ubhaya, itara, añña, aññatara, aññatama.","columnas":["singular","plural"],"filas":[[["sabbo"],["sabbe"]],[["he sabba","sabbā"],["he sabbe"]],[["sabbaṃ"],["sabbe"]],[["sabbena"],["sabbehi","sabbebhi"]],[["sabbassa"],["sabbesaṃ","sabbesānaṃ"]],[["sabbasmā","sabbamhā"],["sabbehi","sabbebhi"]],[["sabbassa"],["sabbesaṃ","sabbesānaṃ"]],[["sabbasmiṃ","sabbamhi"],["sabbesu"]]]},{"codigo":"PF1","paradigma":"sabba (toda)","genero":"pronombre-f","doc":"1iyu6B4CoLSMazWDOyvdMP9Z6Kzgye9YcQLqsNkCYcZg","titulo_doc":"PF1—SABBA (toda)","subtitulo":"femenino","familia":"Los siguientes pronombres tienen la misma declinación que sabba: katara, katama, ubhaya, itara, añña, aññatara, aññatama.","columnas":["singular","plural"],"filas":[[["sabbā"],["sabbā","sabbāyo"]],[["he sabbe"],["he sabbā","sabbāyo"]],[["sabbaṃ"],["sabbā","sabbāyo"]],[["sabbāya"],["sabbāhi","sabbābhi"]],[["sabbassā","sabbāya"],["sabbāsaṃ","sabbāsānaṃ"]],[["sabbāya"],["sabbāhi","sabbābhi"]],[["sabbassā","sabbāya"],["sabbāsaṃ","sabbāsānaṃ"]],[["sabbassaṃ","sabbāyaṃ"],["sabbāsu"]]]},{"codigo":"PN1","paradigma":"sabba (todo)","genero":"pronombre-n","doc":"1Bo4Qbrt0P5pdHqFt5xpQ_tQf2xopFUsviABGmqqTMI0","titulo_doc":"PN1—SABBA (todo)","subtitulo":"neutro","familia":"Los siguientes pronombres tienen la misma declinación que sabba: katara, katama, ubhaya, itara, añña, aññatara, aññatama.","columnas":["singular","plural"],"filas":[[["sabbaṃ"],["sabbāni"]],[["he sabba"],["he sabbāni"]],[["sabbaṃ"],["sabbāni"]],[["sabbena"],["sabbehi","sabbebhi"]],[["sabbassa"],["sabbesaṃ","sabbesānaṃ"]],[["sabbasmā","sabbamhā"],["sabbehi","sabbebhi"]],[["sabbassa"],["sabbesaṃ","sabbesānaṃ"]],[["sabbasmiṃ","sabbamhi"],["sabbesu"]]]},{"codigo":"PM2","paradigma":"pubba (anterior, etc.)","genero":"pronombre-m","doc":"1whBsdCVh9YcDt7vcuDw2IPiwOm8z--YqaNlI9I3oH0c","titulo_doc":"PM2—PUBBA (anterior, precedente, oriental)","subtitulo":"masculino","familia":"Los siguientes pronombres tienen la misma declinación que pubba: para, apara, dakkhiṇa, uttara, adhara.","columnas":["singular","plural"],"filas":[[["pubbo"],["pubbe","pubbā"]],[["he pubba"],["he pubbe","pubbā"]],[["pubbaṃ"],["pubbe"]],[["pubbena"],["pubbehi","pubbebhi"]],[["pubbassa"],["pubbesaṃ","pubbesānaṃ"]],[["pubbā","pubbasmā","pubbamhā"],["pubbehi","pubbebhi"]],[["pubbassa"],["pubbesaṃ","pubbesānaṃ"]],[["pubbe","pubbasmiṃ","pubbamhi"],["pubbesu"]]]},{"codigo":"PF2","paradigma":"pubba (anterior, etc.)","genero":"pronombre-f","doc":"1Az81wGWynRCqMfg-vo7J9Pd7Xw4yp5-2BSm4tmNtMlw","titulo_doc":"PF2—PUBBA (anterior, precedente, oriental)","subtitulo":"femenino","familia":"Los siguientes pronombres tienen la misma declinación que pubba: para, apara, dakkhiṇa, uttara, adhara.","columnas":["singular","plural"],"filas":[[["pubbā"],["pubbā","pubbāyo"]],[["he pubbe"],["he pubbā","pubbāyo"]],[["pubbaṃ"],["pubbā","pubbāyo"]],[["pubbāya"],["pubbāhi","pubbābhi"]],[["pubbassā","pubbāya"],["pubbāsaṃ","pubbāsānaṃ"]],[["pubbāya"],["pubbāhi","pubbābhi"]],[["pubbassā","pubbāya"],["pubbāsaṃ","pubbāsānaṃ"]],[["pubbassaṃ","pubbāyaṃ"],["pubbāsu"]]]},{"codigo":"PN2","paradigma":"pubba (anterior, etc.)","genero":"pronombre-n","doc":"1ushiHvTheI4FOsEPP1v4Ym57Qxo62Q8C25WgYEMI1bE","titulo_doc":"PN2—PUBBA (anterior, precedente, oriental)","subtitulo":"neutro","familia":"Los siguientes pronombres tienen la misma declinación que pubba: para, apara, dakkhiṇa, uttara, adhara.","columnas":["singular","plural"],"filas":[[["pubbaṃ"],["pubbāni"]],[["he pubba"],["he pubbāni"]],[["pubbaṃ"],["pubbāni"]],[["pubbena"],["pubbehi","pubbebhi"]],[["pubbassa"],["pubbesaṃ","pubbesānaṃ"]],[["pubbasmā","pubbamhā"],["pubbehi","pubbebhi"]],[["pubbassa"],["pubbesaṃ","pubbesānaṃ"]],[["pubbasmiṃ","pubbamhi"],["pubbesu"]]]},{"codigo":"PM3","paradigma":"ya (cual, que, etc.)","genero":"pronombre-m","doc":"1AJgWfEWNDmKXsMX2Ybog9aYs9dJLnb026viJ7zopzdY","titulo_doc":"PM3—YA (cual, que, quien)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["yo"],["ye"]],[[],[]],[["yaṃ"],["ye"]],[["yena"],["yehi","yebhi"]],[["yassa"],["yesaṃ","yesānaṃ"]],[["yasmā","yamhā"],["yehi","yebhi"]],[["yassa"],["yesaṃ","yesānaṃ"]],[["yasmiṃ","yamhi"],["yesu"]]]},{"codigo":"PF3","paradigma":"ya (cual, que, etc.)","genero":"pronombre-f","doc":"17pgQKHBh7YzrUgWemBYUfrO2BzpfcBRPwTzgeoWPY1Q","titulo_doc":"PF3—YA (cual, que, quien)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["yā"],["yā","yāyo"]],[[],[]],[["yaṃ"],["yā","yāyo"]],[["yāya"],["yāhi","yābhi"]],[["yassā","yāya"],["yāsaṃ","yāsānaṃ"]],[["yāya"],["yāhi","yābhi"]],[["yassā","yāya"],["yāsaṃ","yāsānaṃ"]],[["yassaṃ","yāyaṃ"],["yāsu"]]]},{"codigo":"PN3","paradigma":"ya (cual, que, etc.)","genero":"pronombre-n","doc":"1y2ChvvYwh6N5JxJ7QTDLn_sLwgTKHm9-ZKZ1eFRZPQY","titulo_doc":"PN3—YA (cual, que, quien)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["yaṃ"],["yāni"]],[[],[]],[["yaṃ"],["yāni"]],[["yena"],["yehi","yebhi"]],[["yassa"],["yesaṃ","yesānaṃ"]],[["yasmā","yamhā"],["yehi","yebhi"]],[["yassa"],["yesaṃ","yesānaṃ"]],[["yasmiṃ","yamhi"],["yesu"]]]},{"codigo":"PM4","paradigma":"ta (ese)","genero":"pronombre-m","doc":"16OrZmk5X-LBLDOL1fcnGuw2NhD_OP8NqIsZpgX0l3BA","titulo_doc":"PM4—TA (ese)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["so"],["ne","te"]],[[],[]],[["naṃ","taṃ"],["ne","te"]],[["nena","tena"],["nehi","nebhi","tehi","tebhi"]],[["assa","nassa","tassa"],["nesaṃ","nesānaṃ","tesānaṃ","tesaṃ"]],[["asmā","nasmā","tasmā","namhā","tamhā"],["nehi","nebhi","tehi","tebhi"]],[["assa","nassa","tassa"],["nesaṃ","nesānaṃ","tesānaṃ","tesaṃ"]],[["asmiṃ","nasmiṃ","tasmiṃ","namhi","tamhi"],["nesu","tesu"]]]},{"codigo":"PF4","paradigma":"ta (esa)","genero":"pronombre-f","doc":"14Nq4XIMHwshbGVxJ-NdO0w9CX9yJVyl8RONgwmCeeoU","titulo_doc":"PF4—TA (esa)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["sā"],["nā","tā","nāyo","tāyo"]],[[],[]],[["naṃ","taṃ"],["nā","tā","nāyo","tāyo"]],[["nāya","tāya"],["nāhi","tāhi","nābhi","tābhi"]],[["tissāya","tassāya","assāya","nassāya","assā","nassā","tissā","tassā","nāya","tāya"],["nāsaṃ","(nāsānaṃ)","tāsaṃ","(tāsānaṃ)"]],[["nāya","tāya"],["nāhi","tāhi","nābhi","tābhi"]],[["tissāya","tassāya","assāya","nassāya","assā","nassā","tissā","tassā","nāya","tāya"],["nāsaṃ","(nāsānaṃ)","tāsaṃ","(tāsānaṃ)"]],[["assaṃ","nassaṃ","tissaṃ","tassaṃ","nāyaṃ","tāyaṃ"],["nāsu","tāsu"]]]},{"codigo":"PN4","paradigma":"ta (ese)","genero":"pronombre-n","doc":"1d2p0Rr49zilaituy_5z5tpl5e1aLPC8u8ajzYmQtBKk","titulo_doc":"PN4—TA (ese)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["naṃ","taṃ"],["nāni","tāni"]],[[],[]],[["naṃ","taṃ"],["nāni","tāni"]],[["nena","tena"],["nehi","nebhi","tehi","tebhi"]],[["assa","nassa","tassa"],["nesaṃ","nesānaṃ","tesānaṃ","tesaṃ"]],[["asmā","nasmā","tasmā","namhā","tamhā"],["nehi","nebhi","tehi","tebhi"]],[["assa","nassa","tassa"],["nesaṃ","nesānaṃ","tesānaṃ","tesaṃ"]],[["asmiṃ","nasmiṃ","tasmiṃ","namhi","tamhi"],["nesu","tesu"]]]},{"codigo":"PM5","paradigma":"eta (ese, este)","genero":"pronombre-m","doc":"15glIIisAlDoEI80OXgudiZ24z34wwI7_KNZ8yUkrSoY","titulo_doc":"PM5—ETA (ese, este)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["eso"],["ete"]],[[],[]],[["etaṃ"],["ete"]],[["etena"],["etehi","etebhi"]],[["etassa"],["etesaṃ","etesānaṃ"]],[["etasmā","etamhā"],["etehi","etebhi"]],[["etassa"],["etesaṃ","etesānaṃ"]],[["etasmiṃ","etamhi"],["etesu"]]]},{"codigo":"PF5","paradigma":"eta (esa, esta)","genero":"pronombre-f","doc":"1M2qUq-Pg6In2V6594naLUhmyG6DLXAvvlzJCYJE93p4","titulo_doc":"PF5—ETA (ese, este)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["esā"],["etā","etāyo"]],[[],[]],[["etaṃ"],["etā","etāyo"]],[["etāya"],["etāhi","etābhi"]],[["etissāya","etissā","etāya"],["etāsaṃ","etāsānaṃ"]],[["etāya"],["etāhi","etābhi"]],[["etissāya","etissā","etāya"],["etāsaṃ","etāsānaṃ"]],[["etissaṃ","etāyaṃ","(etāya)"],["etāsu"]]]},{"codigo":"PN5","paradigma":"eta (ese, este)","genero":"pronombre-n","doc":"1BsAybCCO42HVdyE2FTdQvTHK25NVYaIsM_NhhmLHYgQ","titulo_doc":"PN5—ETA (ese, este)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["etaṃ"],["etāni"]],[[],[]],[["etaṃ"],["etāni"]],[["etena"],["etehi","etebhi"]],[["etassa"],["etesaṃ","etesānaṃ"]],[["etasmā","etamhā"],["etehi","etebhi"]],[["etassa"],["etesaṃ","etesānaṃ"]],[["etasmiṃ","etamhi"],["etesu"]]]},{"codigo":"PM6","paradigma":"ima (este)","genero":"pronombre-m","doc":"1LL9UM0NMW_WLHYclI4PDNmNcxtj0hGT_UigdzYW9yd8","titulo_doc":"PM6—IMA (este)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["ayaṃ"],["ime"]],[[],[]],[["imaṃ"],["ime"]],[["anena","iminā"],["ehi","ebhi","imehi","imebhi"]],[["assa","imassa"],["esaṃ","esānaṃ","imesaṃ","imesānaṃ"]],[["asmā","imasmā","imamhā"],["ehi","ebhi","imehi","imebhi"]],[["assa","imassa"],["esaṃ","esānaṃ","imesaṃ","imesānaṃ"]],[["asmiṃ","imasmiṃ","imamhi"],["esu","imesu"]]]},{"codigo":"PF6","paradigma":"ima (esta)","genero":"pronombre-f","doc":"1tJoeJT5kLAek55XeW62Fjjbpqb1s4DU8YDrFOOO2ELs","titulo_doc":"PF6—IMA (esta)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["ayaṃ"],["imā","imāyo"]],[[],[]],[["imaṃ"],["imā","imāyo"]],[["imāya"],["imāhi","imābhi"]],[["assāya","imissāya","assā","imissā","imāya"],["imāsaṃ","imāsānaṃ"]],[["imāya"],["imāhi","imābhi"]],[["assāya","imissāya","assā","imissā","imāya"],["imāsaṃ","imāsānaṃ"]],[["assaṃ","imissaṃ","imissā","imāyaṃ"],["imāsu"]]]},{"codigo":"PN6","paradigma":"ima (este)","genero":"pronombre-n","doc":"1vMXlkAS5dFjuVSjwtEGrHEvJtR66NKQAPSDTAKBTK7I","titulo_doc":"PN6—IMA (este)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["idaṃ","imaṃ"],["imāni"]],[[],[]],[["idaṃ","imaṃ"],["imāni"]],[["anena","iminā"],["ehi","ebhi","imehi","imebhi"]],[["assa","imassa"],["esaṃ","esānaṃ","imesaṃ","imesānaṃ"]],[["asmā","imasmā","imamhā"],["ehi","ebhi","imehi","imebhi"]],[["assa","imassa"],["esaṃ","esānaṃ","imesaṃ","imesānaṃ"]],[["asmiṃ","imasmiṃ","imamhi"],["esu","imesu"]]]},{"codigo":"PM7","paradigma":"amu (tal y tal)","genero":"pronombre-m","doc":"1oJ_PGhVhMleiGw4vNuxvWhE_UKBKuff2PYXl3lPMJkU","titulo_doc":"PM7—AMU (tal y tal)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["asu","amu"],["amū"]],[[],[]],[["amuṃ"],["amū"]],[["amunā"],["amūhi","amūbhi","amuhi","amubhi"]],[["amussa","adussa"],["amūsaṃ","amūsānaṃ","amusaṃ","amusānaṃ"]],[["amusmā","amumhā"],["amūhi","amūbhi","amuhi","amubhi"]],[["amussa","adussa"],["amūsaṃ","amūsānaṃ","amusaṃ","amusānaṃ"]],[["amusmiṃ","amumhi"],["amūsu","amusu"]]]},{"codigo":"PF7","paradigma":"amu (tal y tal)","genero":"pronombre-f","doc":"1QB0RMnKZiGxSViXgS3snz2CORYqd585nylX2Bo3GzMQ","titulo_doc":"PF7—AMU (tal y tal)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["asu","amu"],["amū","amuyo"]],[[],[]],[["amuṃ"],["amū","amuyo"]],[["amuyā"],["amūhi","amūbhi","(amuhi)","(amubhi)"]],[["amussā","amuyā"],["amūsaṃ","amūsānaṃ"]],[["amuyā"],["amūhi","amūbhi","(amuhi)","(amubhi)"]],[["amussā","amuyā"],["amūsaṃ","amūsānaṃ"]],[["amussaṃ","amuyaṃ","amuyā"],["amūsu","(amusu)"]]]},{"codigo":"PN7","paradigma":"amu (tal y tal)","genero":"pronombre-n","doc":"1ECaaJcyOXCi3haisTRy56o18yU0t4WC-Mnmf7glzPzQ","titulo_doc":"PN7—AMU (tal y tal)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["aduṃ"],["amū","amūni"]],[[],[]],[["aduṃ"],["amū","amūni"]],[["amunā"],["amūhi","amūbhi","amuhi","amubhi"]],[["amussa","adussa"],["amūsaṃ","amūsānaṃ","amusaṃ","amusānaṃ"]],[["amusmā","amumhā"],["amūhi","amūbhi","amuhi","amubhi"]],[["amussa","adussa"],["amūsaṃ","amūsānaṃ","amusaṃ","amusānaṃ"]],[["amusmiṃ","amumhi"],["amūsu","amusu"]]]},{"codigo":"PM8","paradigma":"kim (¿qué, quién, cuál?)","genero":"pronombre-m","doc":"1vNXrUmSI8k8w9B3k6ksF9nl7tzCKccMzrB8Nb3dFgCk","titulo_doc":"PM8—KIM (qué, quién, cuál)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["ko"],["ke"]],[[],[]],[["kaṃ"],["ke"]],[["kena"],["kehi","kebhi"]],[["kassa","kissa"],["kesaṃ","kesānaṃ"]],[["kasmā","kamhā"],["kehi","kebhi"]],[["kassa","kissa"],["kesaṃ","kesānaṃ"]],[["kasmiṃ","kismiṃ","kamhi","kimhi"],["kesu"]]]},{"codigo":"PF8","paradigma":"kim (¿qué, quién, cuál?)","genero":"pronombre-f","doc":"19hzkcIWM6ufJLtphcvX4rUXorriHm2IiiiaC7dylcNI","titulo_doc":"PF8—KIM (qué, quién, cuál)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["kā"],["kā","kāyo"]],[[],[]],[["kaṃ"],["kā","kāyo"]],[["kāya"],["kāhi","kābhi"]],[["kassā","kāya"],["kāsaṃ","kāsānaṃ"]],[["kāya"],["kāhi","kābhi"]],[["kassā","kāya"],["kāsaṃ","kāsānaṃ"]],[["kassaṃ","kāyaṃ"],["kāsu"]]]},{"codigo":"PN8","paradigma":"kim (¿qué, quién, cuál?)","genero":"pronombre-n","doc":"13lZEJi5EVdumW1PDgC6KAxGn1pGek_lvV17xnz9Agyw","titulo_doc":"PN8—KIM (qué, quién, cuál)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["kiṃ"],["kāni"]],[[],[]],[["kiṃ"],["kāni"]],[["kena"],["kehi","kebhi"]],[["kassa","kissa"],["kesaṃ","kesānaṃ"]],[["kasmā","kamhā"],["kehi","kebhi"]],[["kassa","kissa"],["kesaṃ","kesānaṃ"]],[["kasmiṃ","kismiṃ","kamhi","kimhi"],["kesu"]]]},{"codigo":"PM9","paradigma":"eka (uno, etc.)","genero":"pronombre-m","doc":"150J7AE1XSV4s0mtwyZSrN1lM0y_n6LMBVFExwshlKyE","titulo_doc":"PM9—EKA (uno, solo, solitario, principal)","subtitulo":"masculino","columnas":["singular","plural"],"filas":[[["eko"],["eke"]],[[],[]],[["ekaṃ"],["eke"]],[["ekena"],["ekehi","ekebhi"]],[["ekassa"],["ekesaṃ","ekesānaṃ"]],[["ekasmā","ekamhā"],["ekehi","ekebhi"]],[["ekassa"],["ekesaṃ","ekesānaṃ"]],[["ekasmiṃ","ekamhi"],["ekesu"]]]},{"codigo":"PF9","paradigma":"eka (una, etc.)","genero":"pronombre-f","doc":"1v4uZjsDMDw_eGoeiUQEr0Id_tY7Nig_Jv68GsdRCcFs","titulo_doc":"PF9—EKA (uno, solo, solitario, principal)","subtitulo":"femenino","columnas":["singular","plural"],"filas":[[["ekā"],["ekā","ekāyo"]],[[],[]],[["ekaṃ"],["ekā","ekāyo"]],[["ekāya"],["ekāhi","ekābhi"]],[["ekissā","ekāya"],["ekāsaṃ","ekāsānaṃ"]],[["ekāya"],["ekāhi","ekābhi"]],[["ekissā","ekāya"],["ekāsaṃ","ekāsānaṃ"]],[["ekissaṃ","ekāyaṃ"],["ekāsu"]]]},{"codigo":"PN9","paradigma":"eka (uno, etc.)","genero":"pronombre-n","doc":"1Mc6sohu4yR8aaBMTVKrR45aXyt4NfjGP1YCSi_qHXtE","titulo_doc":"PN9—EKA (uno, solo, solitario, principal)","subtitulo":"neutro","columnas":["singular","plural"],"filas":[[["ekaṃ"],["ekāni"]],[[],[]],[["ekaṃ"],["ekāni"]],[["ekena"],["ekehi","ekebhi"]],[["ekassa"],["ekesaṃ","ekesānaṃ"]],[["ekasmā","ekamhā"],["ekehi","ekebhi"]],[["ekassa"],["ekesaṃ","ekesānaṃ"]],[["ekasmiṃ","ekamhi"],["ekesu"]]]},{"codigo":"P10","paradigma":"ubho (ambos, ambas)","genero":"pronombre","doc":"1Lzuys6lDk9K85r2o27dsQoR2Ra6NVg__CYzwTme4spI","titulo_doc":"P10—UBHO (ambos)","subtitulo":"todos los géneros","columnas":["plural"],"filas":[[["ubho","ubhe"]],[[]],[["ubho","ubhe"]],[["ubhohi","ubhobhi","ubhehi","ubhebhi"]],[["ubhinnaṃ"]],[["ubhohi","ubhobhi","ubhehi","ubhebhi"]],[["ubhinnaṃ"]],[["ubhosu","ubhesu"]]]},{"codigo":"P11","paradigma":"dvi (dos)","genero":"pronombre","doc":"1pDskWMs5fV7tXYOmHPtA415h2lLVMxlvuIFtjaqLDGQ","titulo_doc":"P11—DVI (dos)","subtitulo":"todos los géneros","columnas":["plural"],"filas":[[["dve","duve"]],[[]],[["dve","duve"]],[["dvīhi","dvībhi"]],[["dvinnaṃ","duvinnaṃ"]],[["dvīhi","dvībhi"]],[["dvinnaṃ","duvinnaṃ"]],[["dvīsu"]]]},{"codigo":"P12","paradigma":"ti (tres)","genero":"pronombre","doc":"1qLXXFRBlwNShvSrpa74AROa28TqzwWhr6IOO886n_X0","titulo_doc":"P12—TI (tres)","columnas":["plural masculino","plural femenino","plural neutro"],"filas":[[["tayo"],["tisso"],["tīṇi"]],[[],[],[]],[["tayo"],["tisso"],["tīṇi"]],[["tīhi","tībhi"],["tīhi","tībhi"],["tīhi","tībhi"]],[["tiṇṇaṃ","tiṇṇannaṃ"],["tissannaṃ"],["tiṇṇaṃ","tiṇṇannaṃ"]],[["tīhi","tībhi"],["tīhi","tībhi"],["tīhi","tībhi"]],[["tiṇṇaṃ","tiṇṇannaṃ"],["tissannaṃ"],["tiṇṇaṃ","tiṇṇannaṃ"]],[["tīsu"],["tīsu"],["tīsu"]]]},{"codigo":"P13","paradigma":"catu (cuatro)","genero":"pronombre","doc":"1Dwg3fjOXxS3qRhuo7I25zFECZLzmKlIbOLakR-tRmlU","titulo_doc":"P13—CATU (cuatro)","columnas":["plural masculino","plural femenino","plural neutro"],"filas":[[["cattāro","caturo"],["catasso"],["cattāri"]],[[],[],[]],[["cattāro","caturo"],["catasso"],["cattāri"]],[["catūhi","catūbhi","catubbhi"],["catūhi","catūbhi","catubbhi"],["catūhi","catūbhi","catubbhi"]],[["catunnaṃ"],["catassannaṃ"],["catunnaṃ"]],[["catūhi","catūbhi","catubbhi"],["catūhi","catūbhi","catubbhi"],["catūhi","catūbhi","catubbhi"]],[["catunnaṃ"],["catassannaṃ"],["catunnaṃ"]],[["catūsu"],["catūsu"],["catūsu"]]]},{"codigo":"P14","paradigma":"amha (yo)","genero":"pronombre","doc":"1JqaYfQdCjjP7IZfP1OMv6NI8__yAkcw1YxAAaTBiJPE","titulo_doc":"P14—AMHA (yo)","subtitulo":"nombre sin género (aliṅganāma)","columnas":["singular","plural"],"filas":[[["ahaṃ"],["amhe","mayaṃ"]],[[],[]],[["mamaṃ","maṃ"],["amhākaṃ","amhe","no"]],[["mayā","me"],["amhehi","amhebhi","no"]],[["amhaṃ","mama","mayhaṃ","mamaṃ","me"],["amhaṃ","amhākaṃ","asmākaṃ","no"]],[["mayā"],["amhehi","amhebhi"]],[["amhaṃ","mama","mayhaṃ","mamaṃ","me"],["amhaṃ","amhākaṃ","asmākaṃ","no"]],[["mayi"],["amhesu"]]]},{"codigo":"P15","paradigma":"tumha (tú)","genero":"pronombre","doc":"1os3-sdp4_M74t0GThhkwvhkt7PAIw2yFF6wxWfV4Z1A","titulo_doc":"P15—TUMHA (tú)","subtitulo":"nombre sin género (aliṅganāma)","columnas":["singular","plural"],"filas":[[["tvaṃ","tuvaṃ"],["tumhe"]],[[],[]],[["tavaṃ","taṃ","tuvaṃ","tvaṃ"],["tumhākaṃ","tumhe","vo"]],[["tvayā","tayā","te"],["tumhehi","tumhebhi","vo"]],[["tumhaṃ","tava","tuyhaṃ","te"],["tumhaṃ","tumhākaṃ","vo"]],[["tayā"],["tumhehi","tumhebhi"]],[["tumhaṃ","tava","tuyhaṃ","te"],["tumhaṃ","tumhākaṃ","vo"]],[["tvayi","tayi"],["tumhesu"]]]},{"codigo":"#1","paradigma":"pañca (cinco)","genero":"numeral","doc":"1zFRH_HoMU4IKxQn_NrS5BvPrP8TitaEQpA_ChkRktMM","titulo_doc":"#1—PAÑCA (cinco)","subtitulo":"todos los géneros","familia":"De similar declinación: cha (6), satta (7), aṭṭha (8), nava (9), dasa (10), ekādasa (11), ekārasa (11), bārasa (12), dvādasa (12), terasa (13), teḷasa (13), cuddasa (14), coddasa (14), catuddasa (14), pannarasa (15), paṇṇarasa (15), soḷasa (16), sattarasa (17), sattadasa (17), aṭṭhārasa (18), aṭṭhādasa (18).","columnas":["plural"],"notas":["El documento escribe «pañacahi» en la quinta; probable errata por «pañcahi». Se transcribe tal cual."],"filas":[[["pañca"]],[[]],[["pañca"]],[["pañcahi","pañcabhi"]],[["pañcannaṃ"]],[["pañacahi","pañcabhi"]],[["pañcannaṃ"]],[["pañcasu"]]]},{"codigo":"#2","paradigma":"kati (¿cuántos?)","genero":"numeral","doc":"1QDD1tZl45ark2rGLpqN6WOa5GPK2orvjHTB0Fcrn9q0","titulo_doc":"#2—KATI (¿cuántos?)","columnas":["plural"],"filas":[[["kati"]],[[]],[["kati"]],[["katihi","katibhi"]],[["katinaṃ"]],[["katihi","katibhi"]],[["katinaṃ"]],[["katisu"]]]},{"codigo":"Sufijos-Inflexiones","paradigma":"sufijos que son inflexiones (vibhatti-paccaya)","genero":"sufijos","doc":"1A-36EwhfC-t9AEO5uaBbEvrUjwkaDV7GOoUktDJY2p0","titulo_doc":"SUFIJOS QUE SON INFLEXIONES (vibhatti-paccaya)","texto":"Estos sufijos tienen la misma forma en los tres géneros y dos números (singular y plural). Hay quince: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ.","sufijos":["to","tra","tha","dā","dācanaṃ","dāni","dha","dhi","dhunā","rahi","va","ha","haṃ","hiṃ","hiñcanaṃ"],"notas":["La tabla de este documento es una imagen incrustada y no puede extraerse como texto; se conserva sólo el encabezado y la lista de los quince sufijos."]}]};
+
+/* ---------- utilidades ---------- */
+const FOLD = {'ā':'a','ī':'i','ū':'u','ṃ':'m','ṁ':'m','ñ':'n','ṭ':'t','ḍ':'d','ṇ':'n',
+              'ḷ':'l','ṅ':'n','ṣ':'s','ś':'s','é':'e','á':'a','í':'i','ó':'o','ú':'u'};
+function fold(s){
+  return (s||'').toLowerCase()
+    .replace(/[āīūṃṁñṭḍṇḷṅṣśéáíóú]/g, c => FOLD[c])
+    .replace(/[’'‘"“”\.,;:()\[\]§+=¿?—-]/g,'')
+    .replace(/\s+/g,' ').trim();
+}
+const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+/* ---------- clasificación ---------- */
+const GENS = [['all','Todos'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neutro'],
+              ['pronombre','Pronombres'],['numeral','Numerales']];
+const TEMAS = [['all','Tema'],['a','a'],['ā','ā'],['i','i'],['ī','ī'],['u','u'],['ū','ū'],['o','o']];
+const SECS = [['masculino','Masculinos','tema nominal masculino'],
+              ['femenino','Femeninos','tema nominal femenino'],
+              ['neutro','Neutros','tema nominal neutro'],
+              ['pronombre','Pronombres','sabbanāma — con género y sin él'],
+              ['numeral','Numerales','pañca, kati'],
+              ['sufijos','Sufijos','vibhatti-paccaya']];
+function genOf(p){
+  if(p.genero.startsWith('pronombre')) return 'pronombre';
+  return p.genero;                      /* masculino · femenino · neutro · numeral · sufijos */
+}
+function temaOf(p){
+  const m = /^[MFN]-([AĀIĪUŪO])/.exec(p.codigo);
+  return m ? m[1].toLowerCase()
+             .replace('ā','ā').replace('ī','ī').replace('ū','ū') : null;
+}
+const idOf = p => p.codigo.replace('#','num');
+
+/* ---------- índice de búsqueda ---------- */
+DATA.paradigmas.forEach(p => {
+  const formas = (p.filas||[]).flat(2).join(' ');
+  p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
+                p.familia||'', p.texto||'', (p.sufijos||[]).join(' '), formas].join(' '));
+  p.gen = genOf(p); p.tema = temaOf(p);
+});
+const POR_CODIGO = {}; DATA.paradigmas.forEach(p => POR_CODIGO[p.codigo] = p);
+
+/* ---------- estado ---------- */
+const out = document.getElementById('out'), cnt = document.getElementById('count');
+let q = '', gen = 'all', tema = 'all';
+
+function hi(text){
+  if(!q) return esc(text);
+  const f = fold(text), needle = fold(q), at = f.indexOf(needle);
+  if(at < 0 || !needle) return esc(text);
+  let oi = 0, fi = 0; const idx = [];
+  while(oi < text.length){
+    const folded = fold(text[oi]);
+    if(folded.length){ idx[fi] = oi; fi += folded.length; }
+    oi++;
+  }
+  const a = idx[at] ?? 0, b = idx[at + needle.length] ?? text.length;
+  return esc(text.slice(0,a)) + '<mark>' + esc(text.slice(a,b)) + '</mark>' + esc(text.slice(b));
+}
+
+/* ---------- render ---------- */
+function celda(variantes){
+  if(!variantes.length) return '<td class="nada">—</td>';
+  const html = variantes.map(v => /^\(.*\)$/.test(v)
+      ? `<span class="rara">${hi(v)}</span>` : hi(v))
+    .join('<span class="sep">, </span>');
+  return `<td>${html}</td>`;
+}
+function tabla(p){
+  const head = '<tr><th></th>' + p.columnas.map(c => `<th>${esc(c)}</th>`).join('') + '</tr>';
+  const filas = p.filas.map((fila,i) => {
+    const [ord, pali] = DATA.inflexiones[i].split(' (');
+    return `<tr><th title="= caso ${esc(DATA.casos[i])}">${esc(ord)} <i>(${esc(pali)}</i></th>`
+         + fila.map(celda).join('') + '</tr>';
+  }).join('');
+  return `<table class="tbl"><thead>${head}</thead><tbody>${filas}</tbody></table>`;
+}
+function titulo(p){
+  const at = p.paradigma.indexOf(' (');
+  const pali = at < 0 ? p.paradigma : p.paradigma.slice(0, at);
+  const glosa = at < 0 ? '' : ' ' + p.paradigma.slice(at + 1);
+  return `<span class="pali">${hi(pali)}</span><span class="gloss">${hi(glosa)}</span>`;
+}
+function card(p){
+  const docURL = `https://docs.google.com/document/d/${p.doc}/edit`;
+  let cuerpo = '';
+  if(p.igual_que){
+    const ref = POR_CODIGO[p.igual_que];
+    cuerpo = `<p class="igual">Se declina igual que el masculino:
+      <a href="#${idOf(ref)}">${esc(ref.codigo)} · <i>${esc(ref.paradigma)}</i></a> — mismo documento.</p>`;
+  } else if(p.filas){
+    cuerpo = tabla(p);
+  } else {
+    cuerpo = `<p style="margin:10px 0 0">${hi(p.texto||'')}</p>`
+           + `<div class="sufchips">${(p.sufijos||[]).map(s => `<span>${hi(s)}</span>`).join('')}</div>`;
+  }
+  const familia = p.familia ? `<p class="familia">${hi(p.familia)}</p>` : '';
+  const notas = (p.notas||[]).map(n => `<p class="parcial">${esc(n)}</p>`).join('');
+  return `<article class="card" id="${idOf(p)}">
+    <div class="chead">
+      <span class="cod">${esc(p.codigo)}</span>
+      <p class="title">${titulo(p)}</p>
+      <span class="meta">${p.subtitulo ? esc(p.subtitulo) + ' · ' : ''}<a href="${docURL}"
+        target="_blank" rel="noopener" title="Documento de origen (IEBH)">doc ↗</a></span>
+    </div>
+    ${cuerpo}${familia}${notas}
+  </article>`;
+}
+function visible(p){
+  if(gen !== 'all' && p.gen !== gen) return false;
+  if(tema !== 'all' && p.tema !== tema) return false;
+  const n = fold(q);
+  return !n || p.hay.includes(n);
+}
+function render(){
+  let html = '', total = 0;
+  SECS.forEach(([id, nombre, sub]) => {
+    const lista = DATA.paradigmas.filter(p => p.gen === id && visible(p));
+    if(!lista.length) return;
+    total += lista.length;
+    html += `<div class="sec" id="sec-${id}"><h2>${nombre}</h2><span class="lbl">${sub}</span><span class="rule"></span></div>`;
+    html += lista.map(card).join('');
+  });
+  cnt.textContent = `${total} / ${DATA.paradigmas.length} entradas`;
+  out.innerHTML = html || `<div class="empty"><p>Sin resultados para «${esc(q)}».</p>
+    <p class="lbl">Los diacríticos son opcionales: «ranna» encuentra «raññā».</p></div>`;
+}
+
+/* ---------- filtros ---------- */
+function botones(cont, defs, get, set){
+  const el = document.getElementById(cont);
+  el.innerHTML = defs.map(([v,t],i) =>
+    `<button data-v="${v}" aria-pressed="${i===0}">${t}</button>`).join('');
+  el.addEventListener('click', e => {
+    const b = e.target.closest('button'); if(!b) return;
+    set(b.dataset.v);
+    el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    render();
+  });
+}
+botones('f-gen',  GENS,  () => gen,  v => gen = v);
+botones('f-tema', TEMAS, () => tema, v => tema = v);
+document.getElementById('q').addEventListener('input', e => { q = e.target.value; render(); });
+
+/* ---------- portada: una fila del paradigma, revelada ---------- */
+(function(){
+  const lineas = [['puriso','primera sg.'],['purisā','primera pl.'],
+                  ['purisena','tercera sg.'],['purisehi, purisebhi','tercera pl.'],
+                  ['purise, purisasmiṃ, purisamhi','séptima sg.']];
+  const el = document.getElementById('hero');
+  el.innerHTML = lineas.map(([f,r]) =>
+    `<div><b><i>${f}</i></b><span class="ref">${r}</span></div>`).join('');
+  const rows = el.querySelectorAll(':scope > div');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  rows.forEach((r,i) => reduce ? r.classList.add('on') : setTimeout(() => r.classList.add('on'), 260 + i*220));
+})();
+
+/* ---------- versión ---------- */
+const VERSION = '1.0', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Primera publicación: los 83 paradigmas de declinación del IEBH transcritos de los documentos originales, con las variantes de cada celda separadas y buscador que ignora los diacríticos.';
+(function(){
+  const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+           'septiembre','octubre','noviembre','diciembre'];
+  const [y,m,d] = VERSION_DATE.split('-').map(Number);
+  const largo = `${d} de ${M[m-1]} de ${y}`;
+  const tip = `Versión ${VERSION} · ${largo} · ${VERSION_NOTE}`;
+  const b = document.getElementById('vbadge');
+  b.setAttribute('data-tip', tip); b.setAttribute('aria-label', tip);
+  b.innerHTML = `v${VERSION}<time datetime="${VERSION_DATE}">${VERSION_DATE}</time>`;
+  document.getElementById('vfoot').innerHTML =
+    `<strong>Versión ${VERSION}</strong> — <time datetime="${VERSION_DATE}">${largo}</time>. ${esc(VERSION_NOTE)}`;
+})();
+
+/* ---------- tema ---------- */
+const store = {
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+};
+const root = document.documentElement;
+/* La preferencia de tema se comparte con el resto del sitio (clave pali_dark) */
+const saved = store.get('pali_dark');
+if(saved === '1' || (saved === null && matchMedia('(prefers-color-scheme: dark)').matches))
+  root.dataset.theme = 'dark';
+document.getElementById('theme').onclick = () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? '' : 'dark';
+  store.set('pali_dark', root.dataset.theme === 'dark' ? '1' : '0');
+};
+
+/* ---------- barra lateral ---------- */
+(function(){
+  let h = '';
+  SECS.forEach(([id, nombre]) => {
+    const lista = DATA.paradigmas.filter(p => p.gen === id);
+    if(!lista.length) return;
+    h += `<h3>${nombre} · ${lista.length}</h3>`;
+    lista.forEach(p => {
+      const lema = p.paradigma.split(' (')[0];
+      h += `<a href="#${idOf(p)}" data-goto="${idOf(p)}"><b>${esc(p.codigo)}</b><i>${esc(lema)}</i></a>`;
+    });
+  });
+  document.getElementById('sbnav').innerHTML = h;
+})();
+
+const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
+const closeSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
+document.getElementById('burger').onclick = () => {
+  sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+};
+document.getElementById('sbclose').onclick = closeSb;
+scrim.onclick = closeSb;
+addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
+
+/* Al saltar desde la barra o entre tarjetas, limpiar los filtros si esconden el destino. */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-goto], .igual a');
+  if(!a) return;
+  const id = a.getAttribute('href').slice(1);
+  const p = DATA.paradigmas.find(x => idOf(x) === id);
+  if(!p) return;
+  e.preventDefault();
+  if(!visible(p)){
+    q = ''; gen = 'all'; tema = 'all';
+    document.getElementById('q').value = '';
+    document.querySelectorAll('#f-gen button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'all'));
+    document.querySelectorAll('#f-tema button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'all'));
+    render();
+  }
+  document.querySelectorAll('#sbnav a').forEach(x => x.classList.toggle('on', x === a));
+  const el = document.getElementById(id);
+  if(el) el.scrollIntoView({block:'start', behavior:'smooth'});
+  if(innerWidth <= 900) closeSb();
+});
+
+/* ---------- volver al inicio: aparece al bajar ---------- */
+const topBtn = document.getElementById('top-btn');
+addEventListener('scroll', () => {
+  topBtn.classList.toggle('show', scrollY > 600);
+}, {passive:true});
+topBtn.addEventListener('click', () => {
+  const suave = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  scrollTo({top:0, behavior: suave ? 'smooth' : 'instant'});
+});
+
+/* Alto real de la barra pegajosa; se mide en tiempo de ejecución. */
+(function(){
+  const barra = document.querySelector('.bar');
+  if(!barra) return;
+  const medir = () => document.documentElement.style
+    .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
+  medir();
+  addEventListener('resize', medir);
+})();
+
+render();
+</script>
+</body>
+</html>

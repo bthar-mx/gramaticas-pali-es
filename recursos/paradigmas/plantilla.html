@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
+<meta name="version" content="1.0">
+<meta name="version-date" content="2026-08-18">
+<meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ola:#E7E3D6;        /* hoja de palma */
+  --ola-2:#F0EDE4;
+  --ink:#171612;        /* tinta de humo */
+  --soot:#4E4839;
+  --hair:#BFB7A0;
+  --haritala:#5C4008;   /* oropimente */
+  --hover:rgba(255,255,255,.55);
+  --active:rgba(255,255,255,.75);
+  --hl:rgba(92,64,8,.16);
+  --chip-k:rgba(39,65,79,.10);
+  --nila:#27414F;       /* índigo */
+  --rakta:#7E2E23;      /* bermellón */
+  --shadow:rgba(0,0,0,.05);
+  --serif:"Gentium Book Plus",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html[data-theme=dark]{
+  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
+  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
+  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
+  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
+}
+html[data-theme=dark] body{background-image:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ola);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.55;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+
+/* ---------- barra lateral ---------- */
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
+  background:var(--ola-2);border-right:1px solid var(--hair);padding:20px 0 48px}
+.sidebar h3{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--haritala);margin:20px 18px 6px}
+.sidebar h3:first-of-type{margin-top:6px}
+.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:6px}
+.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
+.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5}
+.sidebar a{display:block;padding:3px 18px;color:var(--ink);text-decoration:none;font-size:14px;
+  border-left:2px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sidebar a:hover{background:var(--ola);color:var(--nila)}
+.sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
+.sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
+.sidebar a:hover b,.sidebar a.on b{color:inherit}
+.sb-close{display:none}
+#burger{display:none}
+body{padding-left:238px}
+.scrim{display:none}
+
+/* ---------- eyebrow / labels ---------- */
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
+     text-transform:uppercase;color:var(--soot)}
+
+/* ---------- header ---------- */
+header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
+.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
+h1{font-size:clamp(40px,8vw,64px);line-height:.92;margin:0;font-weight:700;letter-spacing:-.02em}
+h1 .dia{color:var(--haritala)}
+.tag{margin:10px 0 0;max-width:38ch;color:var(--soot);font-size:16.5px}
+.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
+  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
+  border-radius:999px;padding:4px 10px;position:relative}
+.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
+.version-badge[data-tip]:hover::after{content:attr(data-tip);
+  position:absolute;top:calc(100% + 8px);left:0;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--serif);
+  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
+  min-width:160px;max-width:min(340px,70vw);z-index:100;
+  box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
+.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
+      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
+.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
+.hero div.on{opacity:1;transition:opacity .5s ease}
+.hero b{font-weight:700;color:var(--haritala)}
+.hero .ref{color:var(--soot);font-size:10.5px}
+
+/* ---------- controls ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--ola);
+     border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
+.bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+input[type=search]{
+  flex:1 1 220px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;padding:9px 12px}
+input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
+.filtros{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.filtros button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding:8px 10px;border:0;background:var(--ola-2);color:var(--soot);
+  cursor:pointer;border-right:1px solid var(--hair)}
+.filtros button:last-child{border-right:0}
+.filtros button[aria-pressed=true]{background:var(--nila);color:var(--ola-2)}
+.filtros.tema button[aria-pressed=true]{background:var(--haritala)}
+.filtros button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
+.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
+.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
+  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
+.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
+.icon-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+
+/* La barra es pegajosa: sin este margen, saltar a un paradigma lo deja oculto. */
+.sec,.card{scroll-margin-top:var(--barra,74px)}
+
+/* ---------- sections ---------- */
+.sec{margin:38px 0 8px;display:flex;align-items:baseline;gap:12px}
+.sec h2{font-size:20px;margin:0;font-weight:700;letter-spacing:.01em}
+.sec .rule{flex:1;height:1px;background:var(--hair)}
+
+/* ---------- cards ---------- */
+.card{border-top:1px solid var(--hair);padding:22px 0 26px}
+.card:last-child{border-bottom:1px solid var(--hair)}
+.chead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.cod{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.07em;
+  color:var(--nila);background:var(--chip-k);border-radius:2px;padding:2.5px 8px;white-space:nowrap}
+.title{font-size:19px;margin:0;font-weight:400}
+.pali{font-style:italic;font-weight:700}
+.gloss{color:var(--soot)}
+.meta{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.05em;margin-left:auto;
+  display:flex;gap:10px;align-items:baseline;white-space:nowrap}
+.meta a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
+.meta a:hover{color:var(--haritala)}
+
+/* ---------- tablas de declinación (elemento central) ---------- */
+.tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:15.5px}
+.tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+.tbl thead th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;
+   text-transform:uppercase;color:var(--soot);border-bottom:1.5px solid var(--ink)}
+.tbl tbody th{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--nila);
+   white-space:nowrap;cursor:help;width:1%}
+.tbl tbody th i{font-style:italic;color:var(--soot)}
+.tbl td{font-style:italic;font-weight:600}
+.tbl td .sep{font-style:normal;font-weight:400;color:var(--soot)}
+.tbl td .rara{opacity:.62;font-weight:400}
+.tbl td.nada{font-style:normal;font-weight:400;color:var(--soot);opacity:.6}
+.tbl tbody tr:hover{background:var(--hover)}
+mark{background:var(--hl);color:inherit;border-radius:2px;
+  box-shadow:inset 0 -1px 0 var(--haritala)}
+
+/* ---------- notas de la tarjeta ---------- */
+.familia{margin:10px 0 0;font-size:14.5px;color:var(--soot)}
+.familia b{color:var(--ink);font-weight:600}
+.parcial{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;color:var(--soot);
+  letter-spacing:.02em;border-left:2px solid var(--haritala);padding-left:8px;line-height:1.7}
+.igual{margin:10px 0 0;font-size:15px;color:var(--soot)}
+.igual a{color:var(--nila)}
+.sufchips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 0}
+.sufchips span{font-family:var(--serif);font-style:italic;font-weight:700;font-size:15px;
+  padding:3px 10px;border:1px solid var(--hair);border-radius:2px;background:var(--ola-2)}
+
+/* ---------- volver al inicio (igual que en los capítulos) ---------- */
+#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
+  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
+  opacity:0;pointer-events:none;transform:translateY(6px);
+  transition:opacity .2s,transform .2s,background .12s,color .12s}
+#top-btn.show{opacity:1;pointer-events:auto;transform:none}
+#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
+#top-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
+
+/* ---------- empty + footer ---------- */
+.empty{padding:60px 0;text-align:center;color:var(--soot)}
+.empty p{margin:0 0 6px}
+footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
+       color:var(--soot);font-size:14px}
+footer a{color:var(--nila)}
+.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
+  font-size:12.5px;line-height:1.65;color:var(--soot)}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
+  text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+
+@media (max-width:900px){
+  body{padding-left:0}
+  .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
+  .sidebar.open{transform:none}
+  .sb-close{display:block;position:absolute;top:12px;right:12px}
+  #burger{display:inline-flex}
+  .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mast{gap:22px}
+  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
+        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
+  .hero div{justify-content:flex-start}
+  .bar .wrap{gap:9px}
+  .count{width:100%}
+  .meta{margin-left:0;width:100%}
+  .tbl{display:block;overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero div{opacity:1!important;transition:none!important}
+  *{animation:none!important}
+}
+@media print{
+  #sbnav,#sbclose,#burger,#theme,#top-btn,.hero,input#q,.filtros{display:none!important}
+  body{background:#fff;color:#000;padding-left:0}
+  .sidebar{display:none}
+  .card{break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar" aria-label="Índice">
+  <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
+  <div class="sb-brand"><b>Paradigmas</b><span class="lbl">Declinación nominal y pronominal</span></div>
+  <nav id="sbnav"></nav>
+</aside>
+
+<header>
+  <div class="wrap mast">
+    <div>
+      <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <div class="lbl">Instituto de Estudios Buddhistas Hispano</div>
+      <h1>Paradigmas de declinaci<span class="dia">ó</span>n</h1>
+      <p class="tag">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
+      <span class="version-badge" id="vbadge"></span>
+    </div>
+    <div class="hero" id="hero" aria-hidden="true"></div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <input type="search" id="q" placeholder="Buscar paradigma o forma — «purisa», «rannā», «bhikkhave»…" aria-label="Buscar">
+    <span class="filtros" id="f-gen" role="group" aria-label="Filtrar por género"></span>
+    <span class="filtros tema" id="f-tema" role="group" aria-label="Filtrar por tema"></span>
+    <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+    <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<main class="wrap" id="out"></main>
+<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+
+<footer class="wrap">
+  <p class="version-foot" id="vfoot"></p>
+  <p><strong>Fuente.</strong> Los 83 paradigmas proceden de los documentos de declinación preparados por
+  Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano, transcritos aquí tal como están,
+  con las variantes de cada celda separadas. Las formas entre paréntesis se dan así en el documento.
+  El paradigma femenino de <i>go</i> (F-O) es el mismo documento que el masculino (M-O1).</p>
+  <p><strong>Cómo leer las tablas.</strong> Las ocho filas son las inflexiones nominales, nombradas por su
+  ordinal con el pāḷi al lado, como en la traducción de Kaccāyana. Al pasar el cursor por el nombre de
+  la inflexión se ve el caso gramatical correspondiente: primera = nominativo, segunda = acusativo,
+  tercera = instrumental, cuarta = dativo, quinta = ablativo, sexta = genitivo/posesivo,
+  séptima = locativo. El vocativo (<i>ālapana</i>) va en fila propia; un guion «—» significa que el
+  paradigma no tiene esa forma.</p>
+  <p><strong>Véase también.</strong> El capítulo que prescribe estas inflexiones, en
+  <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; la referencia interactiva de
+  <a href="../sandhi/">sandhi</a>; y la <a href="../nombre/">formación del nombre</a> paso a paso.</p>
+
+  <p class="licencia">Preparado por Bhikkhu Nandisena<br>
+  Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
+  Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
+</footer>
+
+<script>
+const DATA = /*__DATOS__*/{}/*__FIN__*/;
+
+/* ---------- utilidades ---------- */
+const FOLD = {'ā':'a','ī':'i','ū':'u','ṃ':'m','ṁ':'m','ñ':'n','ṭ':'t','ḍ':'d','ṇ':'n',
+              'ḷ':'l','ṅ':'n','ṣ':'s','ś':'s','é':'e','á':'a','í':'i','ó':'o','ú':'u'};
+function fold(s){
+  return (s||'').toLowerCase()
+    .replace(/[āīūṃṁñṭḍṇḷṅṣśéáíóú]/g, c => FOLD[c])
+    .replace(/[’'‘"“”\.,;:()\[\]§+=¿?—-]/g,'')
+    .replace(/\s+/g,' ').trim();
+}
+const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+/* ---------- clasificación ---------- */
+const GENS = [['all','Todos'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neutro'],
+              ['pronombre','Pronombres'],['numeral','Numerales']];
+const TEMAS = [['all','Tema'],['a','a'],['ā','ā'],['i','i'],['ī','ī'],['u','u'],['ū','ū'],['o','o']];
+const SECS = [['masculino','Masculinos','tema nominal masculino'],
+              ['femenino','Femeninos','tema nominal femenino'],
+              ['neutro','Neutros','tema nominal neutro'],
+              ['pronombre','Pronombres','sabbanāma — con género y sin él'],
+              ['numeral','Numerales','pañca, kati'],
+              ['sufijos','Sufijos','vibhatti-paccaya']];
+function genOf(p){
+  if(p.genero.startsWith('pronombre')) return 'pronombre';
+  return p.genero;                      /* masculino · femenino · neutro · numeral · sufijos */
+}
+function temaOf(p){
+  const m = /^[MFN]-([AĀIĪUŪO])/.exec(p.codigo);
+  return m ? m[1].toLowerCase()
+             .replace('ā','ā').replace('ī','ī').replace('ū','ū') : null;
+}
+const idOf = p => p.codigo.replace('#','num');
+
+/* ---------- índice de búsqueda ---------- */
+DATA.paradigmas.forEach(p => {
+  const formas = (p.filas||[]).flat(2).join(' ');
+  p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
+                p.familia||'', p.texto||'', (p.sufijos||[]).join(' '), formas].join(' '));
+  p.gen = genOf(p); p.tema = temaOf(p);
+});
+const POR_CODIGO = {}; DATA.paradigmas.forEach(p => POR_CODIGO[p.codigo] = p);
+
+/* ---------- estado ---------- */
+const out = document.getElementById('out'), cnt = document.getElementById('count');
+let q = '', gen = 'all', tema = 'all';
+
+function hi(text){
+  if(!q) return esc(text);
+  const f = fold(text), needle = fold(q), at = f.indexOf(needle);
+  if(at < 0 || !needle) return esc(text);
+  let oi = 0, fi = 0; const idx = [];
+  while(oi < text.length){
+    const folded = fold(text[oi]);
+    if(folded.length){ idx[fi] = oi; fi += folded.length; }
+    oi++;
+  }
+  const a = idx[at] ?? 0, b = idx[at + needle.length] ?? text.length;
+  return esc(text.slice(0,a)) + '<mark>' + esc(text.slice(a,b)) + '</mark>' + esc(text.slice(b));
+}
+
+/* ---------- render ---------- */
+function celda(variantes){
+  if(!variantes.length) return '<td class="nada">—</td>';
+  const html = variantes.map(v => /^\(.*\)$/.test(v)
+      ? `<span class="rara">${hi(v)}</span>` : hi(v))
+    .join('<span class="sep">, </span>');
+  return `<td>${html}</td>`;
+}
+function tabla(p){
+  const head = '<tr><th></th>' + p.columnas.map(c => `<th>${esc(c)}</th>`).join('') + '</tr>';
+  const filas = p.filas.map((fila,i) => {
+    const [ord, pali] = DATA.inflexiones[i].split(' (');
+    return `<tr><th title="= caso ${esc(DATA.casos[i])}">${esc(ord)} <i>(${esc(pali)}</i></th>`
+         + fila.map(celda).join('') + '</tr>';
+  }).join('');
+  return `<table class="tbl"><thead>${head}</thead><tbody>${filas}</tbody></table>`;
+}
+function titulo(p){
+  const at = p.paradigma.indexOf(' (');
+  const pali = at < 0 ? p.paradigma : p.paradigma.slice(0, at);
+  const glosa = at < 0 ? '' : ' ' + p.paradigma.slice(at + 1);
+  return `<span class="pali">${hi(pali)}</span><span class="gloss">${hi(glosa)}</span>`;
+}
+function card(p){
+  const docURL = `https://docs.google.com/document/d/${p.doc}/edit`;
+  let cuerpo = '';
+  if(p.igual_que){
+    const ref = POR_CODIGO[p.igual_que];
+    cuerpo = `<p class="igual">Se declina igual que el masculino:
+      <a href="#${idOf(ref)}">${esc(ref.codigo)} · <i>${esc(ref.paradigma)}</i></a> — mismo documento.</p>`;
+  } else if(p.filas){
+    cuerpo = tabla(p);
+  } else {
+    cuerpo = `<p style="margin:10px 0 0">${hi(p.texto||'')}</p>`
+           + `<div class="sufchips">${(p.sufijos||[]).map(s => `<span>${hi(s)}</span>`).join('')}</div>`;
+  }
+  const familia = p.familia ? `<p class="familia">${hi(p.familia)}</p>` : '';
+  const notas = (p.notas||[]).map(n => `<p class="parcial">${esc(n)}</p>`).join('');
+  return `<article class="card" id="${idOf(p)}">
+    <div class="chead">
+      <span class="cod">${esc(p.codigo)}</span>
+      <p class="title">${titulo(p)}</p>
+      <span class="meta">${p.subtitulo ? esc(p.subtitulo) + ' · ' : ''}<a href="${docURL}"
+        target="_blank" rel="noopener" title="Documento de origen (IEBH)">doc ↗</a></span>
+    </div>
+    ${cuerpo}${familia}${notas}
+  </article>`;
+}
+function visible(p){
+  if(gen !== 'all' && p.gen !== gen) return false;
+  if(tema !== 'all' && p.tema !== tema) return false;
+  const n = fold(q);
+  return !n || p.hay.includes(n);
+}
+function render(){
+  let html = '', total = 0;
+  SECS.forEach(([id, nombre, sub]) => {
+    const lista = DATA.paradigmas.filter(p => p.gen === id && visible(p));
+    if(!lista.length) return;
+    total += lista.length;
+    html += `<div class="sec" id="sec-${id}"><h2>${nombre}</h2><span class="lbl">${sub}</span><span class="rule"></span></div>`;
+    html += lista.map(card).join('');
+  });
+  cnt.textContent = `${total} / ${DATA.paradigmas.length} entradas`;
+  out.innerHTML = html || `<div class="empty"><p>Sin resultados para «${esc(q)}».</p>
+    <p class="lbl">Los diacríticos son opcionales: «ranna» encuentra «raññā».</p></div>`;
+}
+
+/* ---------- filtros ---------- */
+function botones(cont, defs, get, set){
+  const el = document.getElementById(cont);
+  el.innerHTML = defs.map(([v,t],i) =>
+    `<button data-v="${v}" aria-pressed="${i===0}">${t}</button>`).join('');
+  el.addEventListener('click', e => {
+    const b = e.target.closest('button'); if(!b) return;
+    set(b.dataset.v);
+    el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    render();
+  });
+}
+botones('f-gen',  GENS,  () => gen,  v => gen = v);
+botones('f-tema', TEMAS, () => tema, v => tema = v);
+document.getElementById('q').addEventListener('input', e => { q = e.target.value; render(); });
+
+/* ---------- portada: una fila del paradigma, revelada ---------- */
+(function(){
+  const lineas = [['puriso','primera sg.'],['purisā','primera pl.'],
+                  ['purisena','tercera sg.'],['purisehi, purisebhi','tercera pl.'],
+                  ['purise, purisasmiṃ, purisamhi','séptima sg.']];
+  const el = document.getElementById('hero');
+  el.innerHTML = lineas.map(([f,r]) =>
+    `<div><b><i>${f}</i></b><span class="ref">${r}</span></div>`).join('');
+  const rows = el.querySelectorAll(':scope > div');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  rows.forEach((r,i) => reduce ? r.classList.add('on') : setTimeout(() => r.classList.add('on'), 260 + i*220));
+})();
+
+/* ---------- versión ---------- */
+const VERSION = '1.0', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Primera publicación: los 83 paradigmas de declinación del IEBH transcritos de los documentos originales, con las variantes de cada celda separadas y buscador que ignora los diacríticos.';
+(function(){
+  const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+           'septiembre','octubre','noviembre','diciembre'];
+  const [y,m,d] = VERSION_DATE.split('-').map(Number);
+  const largo = `${d} de ${M[m-1]} de ${y}`;
+  const tip = `Versión ${VERSION} · ${largo} · ${VERSION_NOTE}`;
+  const b = document.getElementById('vbadge');
+  b.setAttribute('data-tip', tip); b.setAttribute('aria-label', tip);
+  b.innerHTML = `v${VERSION}<time datetime="${VERSION_DATE}">${VERSION_DATE}</time>`;
+  document.getElementById('vfoot').innerHTML =
+    `<strong>Versión ${VERSION}</strong> — <time datetime="${VERSION_DATE}">${largo}</time>. ${esc(VERSION_NOTE)}`;
+})();
+
+/* ---------- tema ---------- */
+const store = {
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+};
+const root = document.documentElement;
+/* La preferencia de tema se comparte con el resto del sitio (clave pali_dark) */
+const saved = store.get('pali_dark');
+if(saved === '1' || (saved === null && matchMedia('(prefers-color-scheme: dark)').matches))
+  root.dataset.theme = 'dark';
+document.getElementById('theme').onclick = () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? '' : 'dark';
+  store.set('pali_dark', root.dataset.theme === 'dark' ? '1' : '0');
+};
+
+/* ---------- barra lateral ---------- */
+(function(){
+  let h = '';
+  SECS.forEach(([id, nombre]) => {
+    const lista = DATA.paradigmas.filter(p => p.gen === id);
+    if(!lista.length) return;
+    h += `<h3>${nombre} · ${lista.length}</h3>`;
+    lista.forEach(p => {
+      const lema = p.paradigma.split(' (')[0];
+      h += `<a href="#${idOf(p)}" data-goto="${idOf(p)}"><b>${esc(p.codigo)}</b><i>${esc(lema)}</i></a>`;
+    });
+  });
+  document.getElementById('sbnav').innerHTML = h;
+})();
+
+const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
+const closeSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
+document.getElementById('burger').onclick = () => {
+  sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+};
+document.getElementById('sbclose').onclick = closeSb;
+scrim.onclick = closeSb;
+addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
+
+/* Al saltar desde la barra o entre tarjetas, limpiar los filtros si esconden el destino. */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-goto], .igual a');
+  if(!a) return;
+  const id = a.getAttribute('href').slice(1);
+  const p = DATA.paradigmas.find(x => idOf(x) === id);
+  if(!p) return;
+  e.preventDefault();
+  if(!visible(p)){
+    q = ''; gen = 'all'; tema = 'all';
+    document.getElementById('q').value = '';
+    document.querySelectorAll('#f-gen button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'all'));
+    document.querySelectorAll('#f-tema button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'all'));
+    render();
+  }
+  document.querySelectorAll('#sbnav a').forEach(x => x.classList.toggle('on', x === a));
+  const el = document.getElementById(id);
+  if(el) el.scrollIntoView({block:'start', behavior:'smooth'});
+  if(innerWidth <= 900) closeSb();
+});
+
+/* ---------- volver al inicio: aparece al bajar ---------- */
+const topBtn = document.getElementById('top-btn');
+addEventListener('scroll', () => {
+  topBtn.classList.toggle('show', scrollY > 600);
+}, {passive:true});
+topBtn.addEventListener('click', () => {
+  const suave = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  scrollTo({top:0, behavior: suave ? 'smooth' : 'instant'});
+});
+
+/* Alto real de la barra pegajosa; se mide en tiempo de ejecución. */
+(function(){
+  const barra = document.querySelector('.bar');
+  if(!barra) return;
+  const medir = () => document.documentElement.style
+    .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
+  medir();
+  addEventListener('resize', medir);
+})();
+
+render();
+</script>
+</body>
+</html>

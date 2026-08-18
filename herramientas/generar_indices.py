@@ -77,6 +77,11 @@ RECURSOS = [
      "La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz "
      "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "
      "paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa."),
+    ("paradigmas/", "__PARADIGMAS_BADGE__", "Paradigmas de declinación",
+     "Los 83 paradigmas de declinación nominal y pronominal del IEBH, con "
+     "todas las variantes de cada forma: nombres por género y tema, "
+     "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
+     "ignora los diacríticos y filtros por género y por tema."),
 ]
 
 # Fuera de este sitio. Van en su propia sección y marcadas como externas:
@@ -197,6 +202,18 @@ def formas_sandhi():
     return len(d.get("rules", [])), len(d.get("ce", []))
 
 
+def tablas_paradigmas():
+    """Número de paradigmas de paradigmas.json (sin el documento de
+    sufijos), para la insignia del recurso."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "paradigmas", "paradigmas.json")
+    if not os.path.exists(p):
+        return None
+    d = json.load(open(p, encoding="utf-8"))
+    return sum(1 for x in d.get("paradigmas", [])
+               if x.get("genero") != "sufijos")
+
+
 # ---------------------------------------------------------------- páginas
 
 def portada(pub):
@@ -290,8 +307,10 @@ def indice_kaccayana(pub):
 def indice_recursos():
     conteo = formas_sandhi()
     badge = "{0} reglas · {1} formas".format(*conteo) if conteo else "sandhi"
-    tarjetas = [tarjeta(href, badge if ins == "__SANDHI_BADGE__" else ins,
-                        titulo, desc)
+    n_par = tablas_paradigmas()
+    badge_par = "{0} paradigmas".format(n_par) if n_par else "paradigmas"
+    insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par}
+    tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc)
                 for href, ins, titulo, desc in RECURSOS]
 
     externas = [tarjeta(href, ins, titulo, desc, externo=True)
