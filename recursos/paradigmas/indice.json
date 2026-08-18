@@ -1,0 +1,510 @@
+{
+ "_nota": "Índice de paradigmas nominales. Documentos públicos de Google Docs del IEBH; el campo doc es el identificador, del que sale la URL de exportación.",
+ "fuente": "https://docs.google.com/document/d/1QfTBtjov4WrEGOLadb9jB5ApFE4Pf7ZGxpEDeT_d21s/edit",
+ "entradas": [
+  {
+   "codigo": "M-A1",
+   "paradigma": "purisa (hombre)",
+   "doc": "1BolMW0t7CS-T54v0tlWfAbG4HsO7L66b4TKhGwNPLps",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A2",
+   "paradigma": "mana (mente)",
+   "doc": "1kOk60rkww-ccDEY6dVF6GxSONQe_ZakHu7W557-nxiU",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A3",
+   "paradigma": "guṇavantu (virtuoso)",
+   "doc": "1AorO6Tw70Jm1RsxOOYPMIrcLhTJCSNbYD7raouAofTw",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A4",
+   "paradigma": "satimantu (atento)",
+   "doc": "12QYkKa00nJdwRnlvGJ4KZUvijgdQl3g2eMweJWRc_RI",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A5",
+   "paradigma": "gacchanta (yendo)",
+   "doc": "1gzRy7lJN2ziuK27xkUpaMAiYwLpE3hA_gsO21fSKUVU",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A6",
+   "paradigma": "bhavanta (venerable)",
+   "doc": "1lKpeeFIUfof1tcJQUf7KlOTQwg5_KDGPxSLMowlPxZY",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A7",
+   "paradigma": "bhaddanta (venerable)",
+   "doc": "145Fg9fW_4b65WBm1uIXo-YPIqf724KAssiTCsnUiTP0",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A8",
+   "paradigma": "santa (virtuoso, santo)",
+   "doc": "1iPOQACCObVVENrcAWfZlBcP_58ixM1fSIZ9u_7Fk2YQ",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A9",
+   "paradigma": "rāja (rey)",
+   "doc": "1T1qRer2kUtgION7OdsabhpVeVCfyNvnC8cuTg79Z9dI",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A10",
+   "paradigma": "brahma (dios)",
+   "doc": "1On3xuV7UdI-U_0a9OqxbCucRvq03pm9MnLHWcVzLoLw",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A11",
+   "paradigma": "atta (alma, uno mismo)",
+   "doc": "14QU9KbXeSbhfuN9mFSpRW69NXsy7-Arz7E1haEdXs2Q",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A12",
+   "paradigma": "sakha (amigo)",
+   "doc": "1n09cIDC9p0e9b5w6d6ReVdN_MBZFPQeRLM2U_Uf-ZEQ",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A13",
+   "paradigma": "ātuma (alma, uno mismo)",
+   "doc": "1kdXVvTpxBidA3c5npq8v0ohl94iMHDTLPBHrDAzm3ok",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A14",
+   "paradigma": "puma (macho)",
+   "doc": "1vVUq6UvxjbVyVF0fZhHr33jq0YUv7sDzuab0rvecPYY",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-A15",
+   "paradigma": "yuva (joven)",
+   "doc": "12sknsNtc0ARjN5VzCKVu5nvyV9Onc95pyXwvKb06LPE",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-Ā1",
+   "paradigma": "sā (perro)",
+   "doc": "1jEY9cuYT8VDglSNFDTTyyWiJ5kvFH0yTSnKHQNJNYxw",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-I1",
+   "paradigma": "aggi (fuego)",
+   "doc": "1vmqvSuhW8cDEvkmKy3gNbNv0kzwZCfMLk-6jvX_a3Ic",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-Ī1",
+   "paradigma": "daṇḍī (poseedor de una vara)",
+   "doc": "1ZU8V0d_Dh3mFZBesJPhS718uYlYCa0XMfufcrO0iEwM",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-Ī2",
+   "paradigma": "gāmaṇī (jefe de poblado)",
+   "doc": "15RRLY3qv4jfrwezI7bBLtnqKwZ7ooUNMnh6nxbGAOj4",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-U1",
+   "paradigma": "bhikkhu (monje)",
+   "doc": "1_o3zkFMvOtNEvV4ts5sLM_Ns0hunNb5Cr2tDfCs8LTU",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-U2",
+   "paradigma": "satthu (maestro)",
+   "doc": "1m-XjQs1q1xbPwBl42POK6kVGUC3NrSq0Bqu2DolXdDA",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-U3",
+   "paradigma": "kattu (hacedor)",
+   "doc": "16w-p0obnxcqRVHiKXfXZeFGI2AT_C512TQ18oVPEBsU",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-U4",
+   "paradigma": "pitu (padre)",
+   "doc": "1u12t_25PCi4-Yl8_ObtmF7SR1WwU5rHo1DnWpXm572I",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-Ū1",
+   "paradigma": "abhibhū (jefe supremo, etc.)",
+   "doc": "1fPCOiPK_D2luvaWsIBSLjb24qTpMUwEL7SH3l7BLenQ",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-Ū2",
+   "paradigma": "sabbaññū (omnisciente)",
+   "doc": "1Qf_9ibXluHP0tQ7_KkpUi70RVpyA1bYplv152BVJmXk",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M-O1",
+   "paradigma": "go (buey, ganado)",
+   "doc": "1aacMccFlV2sIPTmIfGj6gR3a8oRebdTTFHZeem9ycNg",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "M+1",
+   "paradigma": "addha (tiempo, camino)",
+   "doc": "1iUgOpegrKAY_7Kaa4mMM2yzn7W-udlAaD-TwK6ZxAcI",
+   "genero": "masculino"
+  },
+  {
+   "codigo": "F-Ā1",
+   "paradigma": "kaññā (niña)",
+   "doc": "1OEYtHHorReFmdJ4Fvs9GvRb7IouyMIn8-T8YBSOrpaE",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-Ā1A",
+   "paradigma": "ammā (madre, hija, señora)",
+   "doc": "1s7AMyFOYpSr3ZQE5fQsDCryssef8elTrjnZFItx9nXk",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-I1",
+   "paradigma": "ratti (noche)",
+   "doc": "1WKJYA7-9vQK2ZUvb4foopxouBY0PYpPHPnE58VNF-9s",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-Ī1",
+   "paradigma": "itthī (mujer)",
+   "doc": "16Qj6AVODT2cgTk3_eD8VahcXoTW2gBtNOZUR5D0ySZc",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-Ī2",
+   "paradigma": "nadī (río)",
+   "doc": "12JMj-KXP5K3t75wz0IuxKpuqcnSs1J9XcIHNH30Wrqw",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-Ī3",
+   "paradigma": "puthavī (la tierra)",
+   "doc": "17TCWmv1pDBnrTh5JVFrgvv-qr_tS5WBg7stQ5ylsVTM",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-Ī4",
+   "paradigma": "guṇavatī, guṇavantī (virtuosa)",
+   "doc": "1WRRan2yUW0KJhrFB2TwQmij_SKL8M7ZJxv4tIObsA6U",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-U1",
+   "paradigma": "yāgu (sopa de arroz)",
+   "doc": "1J-aJcDLRHKzThMJ7sWbnU5LZ-lgtzPJQgRZ7XEkwAek",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-U2",
+   "paradigma": "mātu (madre)",
+   "doc": "15eCce-IEqDjgaI_dcLcenZJHchY1LF99Kw_xg-K6i3M",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-Ū2",
+   "paradigma": "jambū (yambo)",
+   "doc": "1FCCKE5V0_H4Sy-obCN4d45r_sabTyhYWvYRSggGVNOA",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "F-O",
+   "paradigma": "go (vaca) — igual que el masculino go",
+   "doc": "1aacMccFlV2sIPTmIfGj6gR3a8oRebdTTFHZeem9ycNg",
+   "genero": "femenino"
+  },
+  {
+   "codigo": "N-A1",
+   "paradigma": "citta (conciencia, mente)",
+   "doc": "12DNuYxXqAEVICROn4-QW5738idDfIiKAKeOM0OFEOp0",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-A2",
+   "paradigma": "kamma (acción)",
+   "doc": "1jY_iQlIoRVTjqkKLcdcHQrMI7LnKRnu55DCY_v1jW6Y",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-A3",
+   "paradigma": "guṇavantu (virtuoso)",
+   "doc": "1pItqMqnF655wepI7UkTSHggYrPT-ogIpaOrN8zXcBXY",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-A4",
+   "paradigma": "gacchanta (yendo)",
+   "doc": "1cU2JGaB1u8omjxjM2guLx82015CYDHGN9yCCMX5vPwU",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-Ā1",
+   "paradigma": "asaddhā (infiel)",
+   "doc": "1IXTrQwsrNoOflxd6V9VGZZ1SmMyitfMGIoBDQB9NRTQ",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-I1",
+   "paradigma": "aṭṭhi (hueso)",
+   "doc": "1Xe5ROPQLGRc7-R7z8haamzPaK8NH8DDmJK0vS20LNrc",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-Ī1",
+   "paradigma": "sukhakārī (algo que produce placer)",
+   "doc": "1MRoUPfSieOQXmuKB70EkcdpNy3DIH4L2DhxH4kBvekA",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-U1",
+   "paradigma": "āyu (edad)",
+   "doc": "1lIfivXJ0JBdqgz-N7_gCFKojNP5xjka3jetP14zPXUY",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-Ū1",
+   "paradigma": "gotrabhū (cambio de linaje)",
+   "doc": "17uGXXzhyKWi1Z2KMWlZt29xCrlTGQ_ZfGbhXI9IStgs",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "N-O1",
+   "paradigma": "cittago (poseedor de ganado moteado)",
+   "doc": "1O4C190nFKYbqktMUml0vr0J_skfemTzaMvM5dKC7uto",
+   "genero": "neutro"
+  },
+  {
+   "codigo": "PM1",
+   "paradigma": "sabba (todo)",
+   "doc": "1it1d_b1m7lX9_v8tC6zOdjwNybHIE24uGVxz4M7G_Ok",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF1",
+   "paradigma": "sabba (toda)",
+   "doc": "1iyu6B4CoLSMazWDOyvdMP9Z6Kzgye9YcQLqsNkCYcZg",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN1",
+   "paradigma": "sabba (todo)",
+   "doc": "1Bo4Qbrt0P5pdHqFt5xpQ_tQf2xopFUsviABGmqqTMI0",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM2",
+   "paradigma": "pubba (anterior, etc.)",
+   "doc": "1whBsdCVh9YcDt7vcuDw2IPiwOm8z--YqaNlI9I3oH0c",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF2",
+   "paradigma": "pubba (anterior, etc.)",
+   "doc": "1Az81wGWynRCqMfg-vo7J9Pd7Xw4yp5-2BSm4tmNtMlw",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN2",
+   "paradigma": "pubba (anterior, etc.)",
+   "doc": "1ushiHvTheI4FOsEPP1v4Ym57Qxo62Q8C25WgYEMI1bE",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM3",
+   "paradigma": "ya (cual, que, etc.)",
+   "doc": "1AJgWfEWNDmKXsMX2Ybog9aYs9dJLnb026viJ7zopzdY",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF3",
+   "paradigma": "ya (cual, que, etc.)",
+   "doc": "17pgQKHBh7YzrUgWemBYUfrO2BzpfcBRPwTzgeoWPY1Q",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN3",
+   "paradigma": "ya (cual, que, etc.)",
+   "doc": "1y2ChvvYwh6N5JxJ7QTDLn_sLwgTKHm9-ZKZ1eFRZPQY",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM4",
+   "paradigma": "ta (ese)",
+   "doc": "16OrZmk5X-LBLDOL1fcnGuw2NhD_OP8NqIsZpgX0l3BA",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF4",
+   "paradigma": "ta (esa)",
+   "doc": "14Nq4XIMHwshbGVxJ-NdO0w9CX9yJVyl8RONgwmCeeoU",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN4",
+   "paradigma": "ta (ese)",
+   "doc": "1d2p0Rr49zilaituy_5z5tpl5e1aLPC8u8ajzYmQtBKk",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM5",
+   "paradigma": "eta (ese, este)",
+   "doc": "15glIIisAlDoEI80OXgudiZ24z34wwI7_KNZ8yUkrSoY",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF5",
+   "paradigma": "eta (esa, esta)",
+   "doc": "1M2qUq-Pg6In2V6594naLUhmyG6DLXAvvlzJCYJE93p4",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN5",
+   "paradigma": "eta (ese, este)",
+   "doc": "1BsAybCCO42HVdyE2FTdQvTHK25NVYaIsM_NhhmLHYgQ",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM6",
+   "paradigma": "ima (este)",
+   "doc": "1LL9UM0NMW_WLHYclI4PDNmNcxtj0hGT_UigdzYW9yd8",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF6",
+   "paradigma": "ima (esta)",
+   "doc": "1tJoeJT5kLAek55XeW62Fjjbpqb1s4DU8YDrFOOO2ELs",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN6",
+   "paradigma": "ima (este)",
+   "doc": "1vMXlkAS5dFjuVSjwtEGrHEvJtR66NKQAPSDTAKBTK7I",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM7",
+   "paradigma": "amu (tal y tal)",
+   "doc": "1oJ_PGhVhMleiGw4vNuxvWhE_UKBKuff2PYXl3lPMJkU",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF7",
+   "paradigma": "amu (tal y tal)",
+   "doc": "1QB0RMnKZiGxSViXgS3snz2CORYqd585nylX2Bo3GzMQ",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN7",
+   "paradigma": "amu (tal y tal)",
+   "doc": "1ECaaJcyOXCi3haisTRy56o18yU0t4WC-Mnmf7glzPzQ",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM8",
+   "paradigma": "kim (¿qué, quién, cuál?)",
+   "doc": "1vNXrUmSI8k8w9B3k6ksF9nl7tzCKccMzrB8Nb3dFgCk",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF8",
+   "paradigma": "kim (¿qué, quién, cuál?)",
+   "doc": "19hzkcIWM6ufJLtphcvX4rUXorriHm2IiiiaC7dylcNI",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN8",
+   "paradigma": "kim (¿qué, quién, cuál?)",
+   "doc": "13lZEJi5EVdumW1PDgC6KAxGn1pGek_lvV17xnz9Agyw",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "PM9",
+   "paradigma": "eka (uno, etc.)",
+   "doc": "150J7AE1XSV4s0mtwyZSrN1lM0y_n6LMBVFExwshlKyE",
+   "genero": "pronombre-m"
+  },
+  {
+   "codigo": "PF9",
+   "paradigma": "eka (una, etc.)",
+   "doc": "1v4uZjsDMDw_eGoeiUQEr0Id_tY7Nig_Jv68GsdRCcFs",
+   "genero": "pronombre-f"
+  },
+  {
+   "codigo": "PN9",
+   "paradigma": "eka (uno, etc.)",
+   "doc": "1Mc6sohu4yR8aaBMTVKrR45aXyt4NfjGP1YCSi_qHXtE",
+   "genero": "pronombre-n"
+  },
+  {
+   "codigo": "P10",
+   "paradigma": "ubho (ambos, ambas)",
+   "doc": "1Lzuys6lDk9K85r2o27dsQoR2Ra6NVg__CYzwTme4spI",
+   "genero": "pronombre"
+  },
+  {
+   "codigo": "P11",
+   "paradigma": "dvi (dos)",
+   "doc": "1pDskWMs5fV7tXYOmHPtA415h2lLVMxlvuIFtjaqLDGQ",
+   "genero": "pronombre"
+  },
+  {
+   "codigo": "P12",
+   "paradigma": "ti (tres)",
+   "doc": "1qLXXFRBlwNShvSrpa74AROa28TqzwWhr6IOO886n_X0",
+   "genero": "pronombre"
+  },
+  {
+   "codigo": "P13",
+   "paradigma": "catu (cuatro)",
+   "doc": "1Dwg3fjOXxS3qRhuo7I25zFECZLzmKlIbOLakR-tRmlU",
+   "genero": "pronombre"
+  },
+  {
+   "codigo": "P14",
+   "paradigma": "amha (yo)",
+   "doc": "1JqaYfQdCjjP7IZfP1OMv6NI8__yAkcw1YxAAaTBiJPE",
+   "genero": "pronombre"
+  },
+  {
+   "codigo": "P15",
+   "paradigma": "tumha (tú)",
+   "doc": "1os3-sdp4_M74t0GThhkwvhkt7PAIw2yFF6wxWfV4Z1A",
+   "genero": "pronombre"
+  },
+  {
+   "codigo": "#1",
+   "paradigma": "pañca (cinco)",
+   "doc": "1zFRH_HoMU4IKxQn_NrS5BvPrP8TitaEQpA_ChkRktMM",
+   "genero": "numeral"
+  },
+  {
+   "codigo": "#2",
+   "paradigma": "kati (¿cuántos?)",
+   "doc": "1QDD1tZl45ark2rGLpqN6WOa5GPK2orvjHTB0Fcrn9q0",
+   "genero": "numeral"
+  },
+  {
+   "codigo": "Sufijos-Inflexiones",
+   "paradigma": "",
+   "doc": "1A-36EwhfC-t9AEO5uaBbEvrUjwkaDV7GOoUktDJY2p0",
+   "genero": "sufijos"
+  }
+ ]
+}
