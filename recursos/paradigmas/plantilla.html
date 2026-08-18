@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.5">
+<meta name="version" content="1.6">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,6 +174,7 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .tbl.suf td.multi{font-weight:400}
 .tbl.suf .uso-l{font-size:14.5px;color:var(--soot);margin:2px 0}
 .tbl.suf .uso-t{color:var(--ink)}
+.tbl.suf .g{font-weight:400;color:var(--soot);font-size:13.5px}
 .tbl.suf .refs{font-family:var(--mono);font-size:11px;white-space:nowrap;font-weight:400}
 .tbl.suf .refs a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
 .tbl.suf .refs a:hover{color:var(--haritala)}
@@ -424,8 +425,13 @@ function card(p){
         ? esc(tok).replace(/§(\d+)/, (m,n) =>
             `<a href="../../kaccayana/nama/#s${n}" data-sutta="${n}">§${n}</a>`)
         : esc(tok)).join(', ');
+    /* «kva (¿dónde?)» — la forma en negrita, la glosa del maestro en claro */
+    const ejemplo = x => {
+      const m = /^(.*?)\s*\((.+)\)$/.exec(x);
+      return m ? `${hi(m[1])} <span class="g">(${hi(m[2])})</span>` : hi(x);
+    };
     const sentido = u => `<div class="uso-l"><span class="uso-t">${hi(u.uso)}</span>
-      — ${u.ej.map(hi).join('<span class="sep">, </span>')}
+      — ${u.ej.map(ejemplo).join('<span class="sep">, </span>')}
       <span class="refs">· ${refURL(u.ref)}</span></div>`;
     const filas = (p.detalle||[]).map(d => {
       const usos = d.usos || [{uso: d.uso, ej: d.ej, ref: d.ref}];
@@ -513,8 +519,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.5', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'Las referencias §N de la tabla de sufijos llevan ahora el tooltip grande de sandhi, con el sutta entero —número, pāḷi y traducción, tomados del Nāma-Kappa publicado— en lugar del rótulo diminuto del navegador.';
+const VERSION = '1.6', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'La tabla de vibhatti-paccaya se cotejó por fin con el documento maestro de Bhikkhu Nandisena, que Angel facilitó en .docx: se incorporan sus ejemplos (purisato, kaññato, cittato, etto…), sus glosas españolas (kva «¿dónde?», idha «aquí»…), su «lugar y tiempo» en la séptima y su numeración de Rūpasiddhi junto a la de Kaccāyana. El maestro confirma los tres usos de ‘to’. Su lectura «sabbatha» se anota; se imprime «sabbattha» (§28).';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
