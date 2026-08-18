@@ -5,7 +5,7 @@
 Traducciones al español de las gramáticas clásicas de la lengua pāḷi,
 con glosario terminológico común y concordancia entre las obras.
 
-Un proyecto del Instituto de Estudios Budistas Hispano (IEBH).
+Un proyecto del Instituto de Estudios Buddhistas Hispano (IEBH).
 
 ## Contenido
 

@@ -58,6 +58,10 @@ def main():
     if os.path.exists(os.path.join(recursos, "sandhi", "plantilla.html")):
         fallos += correr("generar_sandhi.py")
 
+    # formación del nombre · pācako
+    if os.path.exists(os.path.join(recursos, "nombre", "plantilla.html")):
+        fallos += correr("generar_nombre.py")
+
     print()
     print("Todo regenerado." if not fallos else "{0} paso(s) con error.".format(fallos))
     return 1 if fallos else 0

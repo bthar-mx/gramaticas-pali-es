@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="La derivación de «pācako» paso a paso, del sufijo ṇvu a la primera inflexión, con el aforismo de Kaccāyana que ampara cada paso.">
+<meta name="version" content="1.0">
+<meta name="version-date" content="2026-08-18">
+<title>Formación del nombre · pācako</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1&amp;family=Spectral:ital,wght@0,300;0,400;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Noto+Serif:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  /* ---------- tokens: light (palm leaf) ---------- */
+  :root{
+    --ground:#E9EBE4;
+    --card:#F4F5F0;
+    --ink:#1D2430;
+    --ink-soft:#5C6572;
+    --rule:#C9CDC1;
+    --rule-soft:#DCDFD6;
+    --ochre:#A9660D;
+    --ochre-wash:#F0E4CE;
+    --hover:rgba(255,255,255,.55);
+    --btn-bg:transparent;
+  }
+
+  /* ---------- tokens: dark (lamp-black ink) ---------- */
+  :root[data-theme="dark"]{
+    --ground:#171B16;
+    --card:#20251E;
+    --ink:#E8EADF;
+    --ink-soft:#9AA394;
+    --rule:#3B4237;
+    --rule-soft:#2A2F27;
+    --ochre:#DFA23A;
+    --ochre-wash:rgba(223,162,58,.20);
+    --hover:rgba(255,255,255,.035);
+    --btn-bg:transparent;
+  }
+
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#171B16;
+      --card:#20251E;
+      --ink:#E8EADF;
+      --ink-soft:#9AA394;
+      --rule:#3B4237;
+      --rule-soft:#2A2F27;
+      --ochre:#DFA23A;
+      --ochre-wash:rgba(223,162,58,.20);
+      --hover:rgba(255,255,255,.035);
+    }
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    padding:clamp(1.25rem,5vw,4.5rem) clamp(1rem,5vw,3rem);
+    background:var(--ground);
+    color:var(--ink);
+    font-family:"Spectral",Georgia,serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    transition:background-color .25s ease,color .25s ease;
+  }
+
+  .sheet{
+    max-width:60rem;
+    margin:0 auto;
+  }
+
+  /* ---------- back to site ---------- */
+
+  .volver-sitio{
+    display:inline-block;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-bottom:1.1rem;
+    opacity:.85;
+  }
+
+  .volver-sitio:hover{color:var(--ochre);opacity:1;}
+
+  .volver-sitio:focus-visible{outline:2px solid var(--ochre);outline-offset:2px;}
+
+  /* ---------- header ---------- */
+
+  header{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:1.5rem;
+  }
+
+  .eyebrow{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.7rem;
+    font-weight:500;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ochre);
+    margin:0 0 1.1rem;
+  }
+
+  h1{
+    font-family:"Fraunces","Spectral",Georgia,serif;
+    font-variation-settings:"SOFT" 40,"WONK" 1,"opsz" 100;
+    font-weight:600;
+    font-size:clamp(2rem,6.4vw,3.6rem);
+    line-height:1.02;
+    letter-spacing:-.015em;
+    margin:0;
+    max-width:22ch;
+  }
+
+  h1 em{
+    font-style:normal;
+    color:var(--ochre);
+  }
+
+  /* ---------- theme toggle ---------- */
+
+  .theme-toggle{
+    flex:0 0 auto;
+    margin-top:-.2rem;
+    display:inline-flex;
+    align-items:center;
+    gap:.45rem;
+    padding:.5rem .8rem;
+    background:var(--btn-bg);
+    color:var(--ink-soft);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.63rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:color .2s ease,border-color .2s ease;
+  }
+
+  .theme-toggle:hover{color:var(--ink);border-color:var(--ink-soft);}
+
+  .theme-toggle:focus-visible{outline:2px solid var(--ochre);outline-offset:2px;}
+
+  .theme-toggle .dot{
+    width:.5rem;
+    height:.5rem;
+    border-radius:50%;
+    border:1px solid currentColor;
+    background:linear-gradient(to right,currentColor 50%,transparent 50%);
+  }
+
+  /* ---------- hero: the transformation ---------- */
+
+  .thesis{
+    margin:clamp(2rem,5vw,2.75rem) 0 clamp(2.25rem,6vw,3.25rem);
+    padding:clamp(1.4rem,4vw,2rem) clamp(1.25rem,4vw,2.25rem);
+    background:var(--card);
+    border-top:2px solid var(--ink);
+    border-bottom:1px solid var(--rule);
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:clamp(.9rem,3vw,1.75rem);
+  }
+
+  .term{min-width:0;}
+
+  .term .form{
+    font-family:"Noto Serif",Georgia,serif;
+    font-size:clamp(1.6rem,5.4vw,2.5rem);
+    font-weight:600;
+    line-height:1.1;
+    display:block;
+  }
+
+  .term .form .rootmark{
+    color:var(--ochre);
+    font-weight:400;
+    margin-right:.06em;
+  }
+
+  .term.result .form{color:var(--ochre);}
+
+  .term .gloss{
+    display:block;
+    margin-top:.45rem;
+    font-size:.9rem;
+    font-style:italic;
+    color:var(--ink-soft);
+  }
+
+  .arrow{
+    font-family:"Noto Serif",serif;
+    font-size:clamp(1.3rem,4vw,2rem);
+    color:var(--rule);
+    line-height:1;
+    transform:translateY(-.2em);
+  }
+
+  .thesis .count{
+    margin-left:auto;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    text-align:right;
+    line-height:1.7;
+    align-self:center;
+  }
+
+  .thesis .count b{
+    display:block;
+    font-family:"Fraunces","Spectral",serif;
+    font-variation-settings:"SOFT" 40,"WONK" 1;
+    font-size:1.9rem;
+    font-weight:600;
+    letter-spacing:0;
+    color:var(--ink);
+  }
+
+  /* ---------- table ---------- */
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.95rem;
+  }
+
+  caption{
+    caption-side:top;
+    text-align:left;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    padding-bottom:.85rem;
+  }
+
+  caption .swatch{color:var(--ochre);}
+
+  thead th{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.63rem;
+    font-weight:500;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    text-align:left;
+    padding:0 .85rem .7rem;
+    border-bottom:1px solid var(--ink);
+    white-space:nowrap;
+  }
+
+  thead th.n,
+  thead th.ref{text-align:right;}
+
+  tbody tr{border-bottom:1px solid var(--rule-soft);}
+
+  tbody tr:hover{background:var(--hover);}
+
+  tbody td{
+    padding:1.05rem .85rem;
+    vertical-align:top;
+  }
+
+  td.n{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.78rem;
+    font-variant-numeric:tabular-nums;
+    color:var(--ink-soft);
+    text-align:right;
+    width:2.75rem;
+    padding-right:1.1rem;
+    white-space:nowrap;
+  }
+
+  td.step{
+    width:32%;
+    color:var(--ink);
+  }
+
+  td.form{
+    font-family:"Noto Serif",Georgia,serif;
+    font-size:1.12rem;
+    letter-spacing:.005em;
+    white-space:nowrap;
+    width:11.5rem;
+  }
+
+  td.note{
+    font-size:.85rem;
+    color:var(--ink-soft);
+    line-height:1.55;
+  }
+
+  td.note .empty{color:var(--rule);}
+
+  td.ref{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.76rem;
+    color:var(--ink-soft);
+    text-align:right;
+    white-space:nowrap;
+    width:4.5rem;
+    line-height:1.5;
+  }
+
+  td.ref .also{display:block;}
+
+  /* referencias enlazadas al capítulo correspondiente */
+  a.xref{
+    color:var(--ochre);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+
+  a.xref:hover{border-bottom-color:var(--ochre);}
+
+  a.xref:focus-visible{outline:2px solid var(--ochre);outline-offset:2px;}
+
+  /* referencias a capítulos todavía no publicados */
+  .xref-pend{
+    color:var(--ink-soft);
+    border-bottom:1px dotted var(--rule);
+    cursor:help;
+  }
+
+  /* the signature: mutation typography */
+  .new{
+    color:var(--ochre);
+    font-weight:600;
+    background:linear-gradient(to top,var(--ochre-wash) 34%,transparent 34%);
+    padding:0 .04em;
+  }
+
+  .gone{
+    color:var(--rule);
+    text-decoration:line-through;
+    text-decoration-thickness:1px;
+  }
+
+  .plus{
+    color:var(--ink-soft);
+    font-weight:400;
+    padding:0 .1em;
+  }
+
+  /* milestone rows: the two real outputs */
+  tbody tr.milestone{
+    background:var(--card);
+    border-bottom:1px solid var(--rule);
+  }
+
+  tbody tr.milestone:hover{background:var(--card);}
+
+  tbody tr.milestone td{padding-top:1.2rem;padding-bottom:1.2rem;}
+
+  tbody tr.milestone td.n{color:var(--ink);font-weight:500;}
+
+  tbody tr.milestone td.n::after{
+    content:"";
+    display:inline-block;
+    width:.34rem;
+    height:.34rem;
+    border-radius:50%;
+    background:var(--ochre);
+    margin-left:.45rem;
+    vertical-align:.12em;
+  }
+
+  tbody tr.milestone td.form{
+    font-size:1.4rem;
+    font-weight:600;
+  }
+
+  tbody tr.milestone td.step{font-weight:600;}
+
+  tbody tr:last-child{border-bottom:2px solid var(--ink);}
+
+  /* ---------- scholium ---------- */
+
+  .scholium{
+    margin-top:clamp(2rem,5vw,2.75rem);
+    display:grid;
+    grid-template-columns:2.75rem 1fr;
+    gap:0 1.1rem;
+    max-width:46rem;
+  }
+
+  .scholium .num{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.78rem;
+    color:var(--ochre);
+    text-align:right;
+    padding-top:.28rem;
+  }
+
+  .scholium p{
+    margin:0;
+    font-size:.95rem;
+    line-height:1.72;
+  }
+
+  .scholium p strong{
+    font-weight:600;
+    font-style:normal;
+  }
+
+  .pali{
+    font-family:"Noto Serif",Georgia,serif;
+    font-size:.95em;
+  }
+
+  /* ---------- footer ---------- */
+
+  footer{
+    margin-top:clamp(2.5rem,6vw,3.5rem);
+    padding-top:1.25rem;
+    border-top:1px solid var(--rule);
+    font-size:.85rem;
+    line-height:1.7;
+    color:var(--ink-soft);
+  }
+
+  footer p{margin:0 0 1rem;}
+
+  footer p:last-child{margin-bottom:0;}
+
+  footer strong{color:var(--ink);font-weight:600;}
+
+  footer a{color:var(--ochre);}
+
+  .colofon{
+    margin-top:1.5rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--rule-soft);
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.66rem;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem 1.5rem;
+    justify-content:space-between;
+  }
+
+  .licencia{
+    margin-top:1.5rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--rule-soft);
+    font-size:.78rem;
+    line-height:1.65;
+  }
+
+  /* ---------- entrance ---------- */
+
+  .sheet > *{animation:rise .5s cubic-bezier(.2,.7,.3,1) both;}
+  .sheet > :nth-child(2){animation-delay:.06s;}
+  .sheet > :nth-child(3){animation-delay:.12s;}
+  .sheet > :nth-child(4){animation-delay:.18s;}
+
+  @keyframes rise{
+    from{opacity:0;transform:translateY(.5rem);}
+    to{opacity:1;transform:none;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .sheet > *{animation:none;}
+    body,.theme-toggle{transition:none;}
+  }
+
+  /* ---------- responsive ---------- */
+
+  @media (max-width:740px){
+    header{flex-direction:column-reverse;align-items:flex-start;gap:1.25rem;}
+    .theme-toggle{margin-top:0;}
+
+    thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+
+    tbody tr{
+      display:grid;
+      grid-template-columns:2.5rem 1fr auto;
+      gap:.15rem .75rem;
+      padding:1.1rem 0;
+      border-bottom:1px solid var(--rule-soft);
+    }
+
+    tbody td{padding:0;width:auto;}
+
+    td.n{grid-column:1;grid-row:1;text-align:left;padding:0;}
+    td.ref{grid-column:3;grid-row:1;}
+    td.form{grid-column:2;grid-row:1;font-size:1.18rem;}
+    td.step{grid-column:2 / -1;grid-row:2;font-size:.9rem;padding-top:.25rem;}
+    td.note{grid-column:2 / -1;grid-row:3;padding-top:.35rem;}
+    td.note .empty{display:none;}
+
+    tbody tr.milestone{
+      padding:1.1rem .75rem;
+      margin:0 -.75rem;
+    }
+
+    tbody tr.milestone td.form{font-size:1.4rem;}
+
+    .thesis .count{margin-left:0;text-align:left;flex-basis:100%;}
+  }
+
+  /* ---------- print always light ---------- */
+
+  @media print{
+    :root,:root[data-theme="dark"]{
+      --ground:#fff;
+      --card:#F4F5F0;
+      --ink:#1D2430;
+      --ink-soft:#5C6572;
+      --rule:#C9CDC1;
+      --rule-soft:#DCDFD6;
+      --ochre:#A9660D;
+      --ochre-wash:#F0E4CE;
+    }
+    body{padding:0;}
+    .theme-toggle,.volver-sitio{display:none;}
+    a.xref{color:#000;}
+    tbody tr{page-break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<script>/* Tema guardado (clave compartida con el resto del sitio), antes de pintar. */
+try{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.documentElement.setAttribute('data-theme','dark');
+else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
+<main class="sheet">
+
+  <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+
+  <header>
+    <div>
+      <p class="eyebrow">Kaccāyana · derivación nominal</p>
+      <h1>Ejemplo de formación del <em>nombre</em></h1>
+    </div>
+    <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="themeLabel">Modo oscuro</span>
+    </button>
+  </header>
+
+  <section class="thesis" aria-label="Resumen de la derivación">
+    <div class="term">
+      <span class="form"><span class="rootmark">√</span>paca</span>
+      <span class="gloss">“cocinar”</span>
+    </div>
+    <div class="arrow" aria-hidden="true">⟶</div>
+    <div class="term result">
+      <span class="form">pācako</span>
+      <span class="gloss">“uno que cocina”</span>
+    </div>
+    <div class="count"><b>10</b>pasos</div>
+  </section>
+
+  <table>
+    <caption>Cada paso muestra la forma resultante; en <span class="swatch">ocre</span>, el elemento que entra, y tachado, el que se elide.</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="n">#</th>
+        <th scope="col" class="step">Paso</th>
+        <th scope="col" class="form">Forma</th>
+        <th scope="col" class="note">Comentario</th>
+        <th scope="col" class="ref">Kacc.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="n">1</td>
+        <td class="step">Colocar la raíz</td>
+        <td class="form"><span class="new">paca</span></td>
+        <td class="note">La raíz <span class="pali">√paca</span> significa “cocinar”.</td>
+        <td class="ref"><span class="xref-pend" title="Capítulo todavía en preparación">§457</span></td>
+      </tr>
+      <tr>
+        <td class="n">2</td>
+        <td class="step">Elidir la vocal</td>
+        <td class="form">pac<span class="gone">a</span></td>
+        <td class="note"><span class="empty">—</span></td>
+        <td class="ref"><span class="xref-pend" title="Capítulo todavía en preparación">§521</span></td>
+      </tr>
+      <tr>
+        <td class="n">3</td>
+        <td class="step">Colocar sufijo</td>
+        <td class="form">pac<span class="plus">+</span><span class="new">ṇvu</span></td>
+        <td class="note">Se añade el sufijo <span class="pali">ṇvu</span>.</td>
+        <td class="ref"><span class="xref-pend" title="Capítulo todavía en preparación">§527</span></td>
+      </tr>
+      <tr>
+        <td class="n">4</td>
+        <td class="step">‘ṇ’ fortalece la primera vocal</td>
+        <td class="form">p<span class="new">ā</span>c<span class="plus">+</span><span class="gone">ṇ</span>vu</td>
+        <td class="note">La letra indicativa <span class="pali">ṇ</span> indica el fortalecimiento de la primera vocal de la raíz.</td>
+        <td class="ref"><span class="xref-pend" title="Capítulo todavía en preparación">§621</span></td>
+      </tr>
+      <tr>
+        <td class="n">5</td>
+        <td class="step">‘ṇvu’ se sustituye por ‘aka’</td>
+        <td class="form">pāc<span class="plus">+</span><span class="new">aka</span></td>
+        <td class="note"><span class="empty">—</span></td>
+        <td class="ref"><span class="xref-pend" title="Capítulo todavía en preparación">§622</span></td>
+      </tr>
+      <tr class="milestone">
+        <td class="n">6</td>
+        <td class="step">Formar la base o tema nominal</td>
+        <td class="form">pācaka</td>
+        <td class="note">“Uno que cocina”.</td>
+        <td class="ref"><a class="xref" href="../../kaccayana/nama/#s53" title="2-Nāma-Kappa · §53">§53</a></td>
+      </tr>
+      <tr>
+        <td class="n">7</td>
+        <td class="step">Insertar la inflexión nominal</td>
+        <td class="form">pācaka<span class="plus">+</span><span class="new">si</span></td>
+        <td class="note"><span class="empty">—</span></td>
+        <td class="ref"><a class="xref" href="../../kaccayana/nama/#s54" title="2-Nāma-Kappa · §54">§54</a><span class="also"><a class="xref" href="../../kaccayana/nama/#s56" title="2-Nāma-Kappa · §56">§56</a></span></td>
+      </tr>
+      <tr>
+        <td class="n">8</td>
+        <td class="step">‘si’ se sustituye por ‘o’</td>
+        <td class="form">pācaka<span class="plus">+</span><span class="new">o</span></td>
+        <td class="note"><span class="empty">—</span></td>
+        <td class="ref"><a class="xref" href="../../kaccayana/nama/#s104" title="2-Nāma-Kappa · §104">§104</a><span class="also"><a class="xref" href="../../kaccayana/nama/#s56" title="2-Nāma-Kappa · §56">§56</a></span></td>
+      </tr>
+      <tr>
+        <td class="n">9</td>
+        <td class="step">Elidir la vocal final de ‘pācaka’</td>
+        <td class="form">pācak<span class="gone">a</span><span class="plus">+</span>o</td>
+        <td class="note"><span class="empty">—</span></td>
+        <td class="ref"><a class="xref" href="../../kaccayana/nama/#s83" title="2-Nāma-Kappa · §83">§83</a></td>
+      </tr>
+      <tr class="milestone">
+        <td class="n">10</td>
+        <td class="step">Formar el nombre</td>
+        <td class="form">pācako</td>
+        <td class="note">Primera inflexión, masculino singular.</td>
+        <td class="ref"><a class="xref" href="../../kaccayana/sandhi/#s11" title="1-Sandhi-Kappa · §11">§11</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <aside class="scholium">
+    <div class="num">3.</div>
+    <p>El sufijo <span class="pali">ṇvu</span> se utiliza después de todas las raíces, haya o no un objeto antes, y sirve para los tres tiempos. <strong>La letra indicativa <span class="pali">ṇ</span> indica el fortalecimiento de la primera vocal de la raíz.</strong></p>
+  </aside>
+
+  <footer>
+    <p><strong>Cómo leer la tabla.</strong> Cada fila da la forma tal como queda tras el paso, no la operación en abstracto: en ocre, lo que entra; tachado, lo que se elide. Las dos filas marcadas con punto son las formas reales del recorrido —la base <span class="pali">pācaka</span> y el nombre flexionado <span class="pali">pācako</span>—; las demás son estados intermedios que no se atestiguan por sí solos. La última columna remite al aforismo de Kaccāyana que ampara el paso.</p>
+
+    <p><strong>De qué capítulos vienen los aforismos.</strong> La derivación cruza tres capítulos. Los pasos 1–5 —raíz, sufijo <span class="pali">ṇvu</span> y su sustitución— pertenecen al <em>Kibbidhāna-Kappa</em> y al <em>Uṇādi-Kappa</em>, todavía en preparación, de modo que §457, §521, §527, §621 y §622 aparecen aquí sin enlace. Los pasos 6–9 —base, inflexión y elisión— son del <em>Nāma-Kappa</em>, y el paso 10 aplica §11 del <em>Sandhi-Kappa</em>, el aforismo que vuelve a unir la consonante con su vocal.</p>
+
+    <p><strong>Véase también.</strong> Los capítulos traducidos, con el vutti y las notas de cada aforismo, en
+    <a href="../../kaccayana/nama/">2-Nāma-Kappa</a> y <a href="../../kaccayana/sandhi/">1-Sandhi-Kappa</a>.
+    Las reglas de combinación eufónica, con sus 266 formas y sus secuencias, en
+    <a href="../sandhi/">Sandhi</a>.</p>
+
+    <p class="licencia">Preparado por Bhikkhu Nandisena<br>
+    Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
+    Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
+
+    <p class="colofon">
+      <span>Formación del nombre · pācako</span>
+      <span>Kaccāyana-vyākaraṇa · v1.0 · 2026-08-18</span>
+    </p>
+  </footer>
+
+</main>
+
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+    var label = document.getElementById('themeLabel');
+    var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+
+    var store = {
+      get: function(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+      set: function(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+    };
+
+    function isDark(){
+      var set = root.getAttribute('data-theme');
+      if (set) return set === 'dark';
+      return !!(systemDark && systemDark.matches);
+    }
+
+    function sync(){
+      var dark = isDark();
+      label.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    }
+
+    btn.addEventListener('click', function(){
+      var dark = !isDark();
+      root.setAttribute('data-theme', dark ? 'dark' : 'light');
+      store.set('pali_dark', dark ? '1' : '0');   // clave compartida con el resto del sitio
+      sync();
+    });
+
+    if (systemDark && systemDark.addEventListener){
+      systemDark.addEventListener('change', function(){
+        if (!root.getAttribute('data-theme')) sync();
+      });
+    }
+
+    sync();
+  })();
+</script>
+</body>
+</html>
