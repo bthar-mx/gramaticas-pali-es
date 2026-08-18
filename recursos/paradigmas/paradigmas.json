@@ -725,13 +725,13 @@
    [["tayā"], ["tumhehi", "tumhebhi"]],
    [["tumhaṃ", "tava", "tuyhaṃ", "te"], ["tumhaṃ", "tumhākaṃ", "vo"]],
    [["tvayi", "tayi"], ["tumhesu"]]]},
-  {"codigo": "#1", "paradigma": "pañca (cinco)", "genero": "numeral", "doc": "1zFRH_HoMU4IKxQn_NrS5BvPrP8TitaEQpA_ChkRktMM", "titulo_doc": "#1—PAÑCA (cinco)", "subtitulo": "todos los géneros", "familia": "De similar declinación: cha (6), satta (7), aṭṭha (8), nava (9), dasa (10), ekādasa (11), ekārasa (11), bārasa (12), dvādasa (12), terasa (13), teḷasa (13), cuddasa (14), coddasa (14), catuddasa (14), pannarasa (15), paṇṇarasa (15), soḷasa (16), sattarasa (17), sattadasa (17), aṭṭhārasa (18), aṭṭhādasa (18).", "columnas": ["plural"], "notas": ["El documento escribe «pañacahi» en la quinta; probable errata por «pañcahi». Se transcribe tal cual."], "filas": [
+  {"codigo": "#1", "paradigma": "pañca (cinco)", "genero": "numeral", "doc": "1zFRH_HoMU4IKxQn_NrS5BvPrP8TitaEQpA_ChkRktMM", "titulo_doc": "#1—PAÑCA (cinco)", "subtitulo": "todos los géneros", "familia": "De similar declinación: cha (6), satta (7), aṭṭha (8), nava (9), dasa (10), ekādasa (11), ekārasa (11), bārasa (12), dvādasa (12), terasa (13), teḷasa (13), cuddasa (14), coddasa (14), catuddasa (14), pannarasa (15), paṇṇarasa (15), soḷasa (16), sattarasa (17), sattadasa (17), aṭṭhārasa (18), aṭṭhādasa (18).", "columnas": ["plural"], "notas": ["El documento escribe «pañacahi» en la quinta; errata por «pañcahi», corregida aquí con el visto bueno de Angel (sesión 17)."], "filas": [
    [["pañca"]],
    [[]],
    [["pañca"]],
    [["pañcahi", "pañcabhi"]],
    [["pañcannaṃ"]],
-   [["pañacahi", "pañcabhi"]],
+   [["pañcahi", "pañcabhi"]],
    [["pañcannaṃ"]],
    [["pañcasu"]]]},
   {"codigo": "#2", "paradigma": "kati (¿cuántos?)", "genero": "numeral", "doc": "1QDD1tZl45ark2rGLpqN6WOa5GPK2orvjHTB0Fcrn9q0", "titulo_doc": "#2—KATI (¿cuántos?)", "columnas": ["plural"], "filas": [
@@ -743,6 +743,22 @@
    [["katihi", "katibhi"]],
    [["katinaṃ"]],
    [["katisu"]]]},
-  {"codigo": "Sufijos-Inflexiones", "paradigma": "sufijos que son inflexiones (vibhatti-paccaya)", "genero": "sufijos", "doc": "1A-36EwhfC-t9AEO5uaBbEvrUjwkaDV7GOoUktDJY2p0", "titulo_doc": "SUFIJOS QUE SON INFLEXIONES (vibhatti-paccaya)", "texto": "Estos sufijos tienen la misma forma en los tres géneros y dos números (singular y plural). Hay quince: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ.", "sufijos": ["to", "tra", "tha", "dā", "dācanaṃ", "dāni", "dha", "dhi", "dhunā", "rahi", "va", "ha", "haṃ", "hiṃ", "hiñcanaṃ"], "notas": ["La tabla de este documento es una imagen incrustada y no puede extraerse como texto; se conserva sólo el encabezado y la lista de los quince sufijos."]}
+  {"codigo": "Sufijos-Inflexiones", "paradigma": "sufijos que son inflexiones (vibhatti-paccaya)", "genero": "sufijos", "doc": "1A-36EwhfC-t9AEO5uaBbEvrUjwkaDV7GOoUktDJY2p0", "titulo_doc": "SUFIJOS QUE SON INFLEXIONES (vibhatti-paccaya)", "texto": "Estos sufijos tienen la misma forma en los tres géneros y dos números (singular y plural). Hay quince: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ. Se llaman «inflexiones» por §247 (Tvādayo vibhattisaññāyo).", "sufijos": ["to", "tra", "tha", "dā", "dācanaṃ", "dāni", "dha", "dhi", "dhunā", "rahi", "va", "ha", "haṃ", "hiṃ", "hiñcanaṃ"], "detalle": [
+   {"s": "to", "uso": "quinta (pañcamī) — a veces", "ref": "§248", "ej": ["sabbato", "yato", "tato", "kuto", "ato", "ito"]},
+   {"s": "tra", "uso": "séptima (sattamī), tras los pronombres", "ref": "§249", "ej": ["sabbatra", "yatra", "tatra"]},
+   {"s": "tha", "uso": "séptima (sattamī), tras los pronombres", "ref": "§249", "ej": ["sabbattha", "yattha", "tattha"]},
+   {"s": "dā", "uso": "séptima (sattamī) de tiempo, tras «kiṃ», «sabba», «añña», «eka», «ya» y «ku»; también tras «ta»", "ref": "§257, §258, §260", "ej": ["kadā", "sabbadā", "sadā", "aññadā", "ekadā", "yadā", "tadā"]},
+   {"s": "dācanaṃ", "uso": "séptima (sattamī) de tiempo, tras «kiṃ» → «ku»", "ref": "§257", "ej": ["kudācanaṃ"]},
+   {"s": "dāni", "uso": "séptima (sattamī) de tiempo, tras «ta» e «ima»", "ref": "§258, §259", "ej": ["tadāni", "idāni"]},
+   {"s": "dha", "uso": "séptima (sattamī), tras «ima»", "ref": "§254", "ej": ["idha"]},
+   {"s": "dhi", "uso": "séptima (sattamī), tras «sabba» — a veces", "ref": "§250", "ej": ["sabbadhi"]},
+   {"s": "dhunā", "uso": "séptima (sattamī) de tiempo, tras «ima»", "ref": "§259", "ej": ["adhunā"]},
+   {"s": "rahi", "uso": "séptima (sattamī) de tiempo, tras «ima»", "ref": "§259", "ej": ["etarahi"]},
+   {"s": "va", "uso": "séptima (sattamī), tras «kiṃ»", "ref": "§251", "ej": ["kva"]},
+   {"s": "ha", "uso": "séptima (sattamī), tras «ima»", "ref": "§254", "ej": ["iha"]},
+   {"s": "haṃ", "uso": "séptima (sattamī), tras «kiṃ» y «ta»", "ref": "§252, §253", "ej": ["kuhaṃ", "tahaṃ"]},
+   {"s": "hiṃ", "uso": "séptima (sattamī), tras «kiṃ», «ta» y «ya»", "ref": "§252, §253, §255", "ej": ["kuhiṃ", "tahiṃ", "yahiṃ"]},
+   {"s": "hiñcanaṃ", "uso": "séptima (sattamī), tras «kiṃ»", "ref": "§252", "ej": ["kuhiñcanaṃ"]}
+  ], "notas": ["La tabla de este documento es una imagen incrustada y no puede extraerse como texto; se conserva el encabezado y la lista de los quince sufijos.", "El uso y los ejemplos de cada sufijo se toman del propio Nāma-Kappa, §247–§260, no de la tabla del documento. Kaccāyana da ‘to’ sólo en el sentido de la quinta (§248); si la tabla del documento le asigna además otros usos (p. ej. tercera), queda por cotejar con la imagen."]}
  ]
 }
