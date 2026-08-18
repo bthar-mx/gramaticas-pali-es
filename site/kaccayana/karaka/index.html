@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/pali.css?v=0abd2604" rel="stylesheet"/>
+<link href="../../assets/pali.css?v=e61882aa" rel="stylesheet"/>
 </head>
 <body>
 <script>/* Tema guardado (clave compartida con /recursos/sandhi/), antes de pintar. */
@@ -19,7 +19,7 @@ document.body.classList.add('dark');}catch(e){}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
-<button aria-label="Volver al inicio" id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">↑</button>
+<button aria-label="Volver al inicio" id="top-btn" onclick="volverArriba()" title="Volver al inicio">↑</button>
 <nav aria-label="Tabla de contenidos" id="toc">
 <p class="toc-title">3-Kāraka-Kappa</p><div class="toc-jump-wrap"><input aria-label="Ir a un sutta o filtrar por título" class="toc-jump" id="toc-jump" oninput="filterToc(this.value)" onkeydown="tocJumpKey(event)" placeholder="Ir a §… / filtrar" type="search"/></div><div class="toc-group" id="tocg-1"><button class="toc-kanda toc-kanda-btn" onclick="toggleTocGroup(1)"><span class="toc-caret">▸</span><span>Chaṭṭha-Kaṇḍa</span><span class="toc-kanda-range">§271–§315</span></button><div class="toc-group-items"><a class="toc-item" id="toc-s271" onclick="jumpTo('s271')">§271 Yasmād apeti bhayam ādat…</a><a class="toc-item" id="toc-s272" onclick="jumpTo('s272')">§272 Dhātu-nāmānam upasaggayo…</a><a class="toc-item" id="toc-s273" onclick="jumpTo('s273')">§273 Rakkhaṇatthānam icchitaṃ</a><a class="toc-item" id="toc-s274" onclick="jumpTo('s274')">§274 Yena vā ’dassanaṃ</a><a class="toc-item" id="toc-s275" onclick="jumpTo('s275')">§275 Dūr’-antik’-addhakālanim…</a><a class="toc-item" id="toc-s276" onclick="jumpTo('s276')">§276 Yassa dātukāmo rocate dh…</a><a class="toc-item" id="toc-s277" onclick="jumpTo('s277')">§277 Silāgha-hanu-ṭhā-sapa-dh…</a><a class="toc-item" id="toc-s278" onclick="jumpTo('s278')">§278 Yo ’dhāro tam okāsaṃ</a><a class="toc-item" id="toc-s279" onclick="jumpTo('s279')">§279 Yena vā kayirate taṃ kar…</a><a class="toc-item" id="toc-s280" onclick="jumpTo('s280')">§280 Yaṃ karoti taṃ kammaṃ</a><a class="toc-item" id="toc-s281" onclick="jumpTo('s281')">§281 Yo karoti sa kattā</a><a class="toc-item" id="toc-s282" onclick="jumpTo('s282')">§282 Yo kāreti sa hetu</a><a class="toc-item" id="toc-s283" onclick="jumpTo('s283')">§283 Yassa vā pariggaho taṃ s…</a><a class="toc-item" id="toc-s284" onclick="jumpTo('s284')">§284 Liṅgatthe paṭhamā</a><a class="toc-item" id="toc-s285" onclick="jumpTo('s285')">§285 Ālapane ca</a><a class="toc-item" id="toc-s286" onclick="jumpTo('s286')">§286 Karaṇe tatiyā</a><a class="toc-item" id="toc-s287" onclick="jumpTo('s287')">§287 Sahādiyoge ca</a><a class="toc-item" id="toc-s288" onclick="jumpTo('s288')">§288 Kattari ca</a><a class="toc-item" id="toc-s289" onclick="jumpTo('s289')">§289 Hetvatthe ca</a><a class="toc-item" id="toc-s290" onclick="jumpTo('s290')">§290 Sattamyatthe ca</a><a class="toc-item" id="toc-s291" onclick="jumpTo('s291')">§291 Yen’ aṅgavikāro</a><a class="toc-item" id="toc-s292" onclick="jumpTo('s292')">§292 Visesane ca</a><a class="toc-item" id="toc-s293" onclick="jumpTo('s293')">§293 Sampadāne catutthī</a><a class="toc-item" id="toc-s294" onclick="jumpTo('s294')">§294 Namoyogādīsv api ca</a><a class="toc-item" id="toc-s295" onclick="jumpTo('s295')">§295 Apādāne pañcamī</a><a class="toc-item" id="toc-s296" onclick="jumpTo('s296')">§296 Kāraṇatthe ca</a><a class="toc-item" id="toc-s297" onclick="jumpTo('s297')">§297 Kammatthe dutiyā</a><a class="toc-item" id="toc-s298" onclick="jumpTo('s298')">§298 Kāladdhānam accantasaṃyoge</a><a class="toc-item" id="toc-s299" onclick="jumpTo('s299')">§299 Kammappavacanīyayutte</a><a class="toc-item" id="toc-s300" onclick="jumpTo('s300')">§300 Gati-buddhi-bhuja-paṭha-…</a><a class="toc-item" id="toc-s301" onclick="jumpTo('s301')">§301 Sāmismiṃ chaṭṭhī</a><a class="toc-item" id="toc-s302" onclick="jumpTo('s302')">§302 Okāse sattamī</a><a class="toc-item" id="toc-s303" onclick="jumpTo('s303')">§303 Sām’-issar’-ādhipati-dāy…</a><a class="toc-item" id="toc-s304" onclick="jumpTo('s304')">§304 Niddhāraṇe ca</a><a class="toc-item" id="toc-s305" onclick="jumpTo('s305')">§305 Anādare ca</a><a class="toc-item" id="toc-s306" onclick="jumpTo('s306')">§306 Kvaci dutiyā chaṭṭhīnam…</a><a class="toc-item" id="toc-s307" onclick="jumpTo('s307')">§307 Tatiyā-sattamīnañ ca</a><a class="toc-item" id="toc-s308" onclick="jumpTo('s308')">§308 Chaṭṭhī ca</a><a class="toc-item" id="toc-s309" onclick="jumpTo('s309')">§309 Dutiyā-pañcamīnañ ca</a><a class="toc-item" id="toc-s310" onclick="jumpTo('s310')">§310 Kamma-karaṇa-nimittatthe…</a><a class="toc-item" id="toc-s311" onclick="jumpTo('s311')">§311 Sampadāne ca</a><a class="toc-item" id="toc-s312" onclick="jumpTo('s312')">§312 Pañcamyatthe ca</a><a class="toc-item" id="toc-s313" onclick="jumpTo('s313')">§313 Kāla-bhāvesu ca</a><a class="toc-item" id="toc-s314" onclick="jumpTo('s314')">§314 Upa-’dhyādhik’-issaravac…</a><a class="toc-item" id="toc-s315" onclick="jumpTo('s315')">§315 Maṇḍit’-ussukkesu tatiyā</a></div></div>
 </nav>
@@ -84,7 +84,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s271')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -118,7 +118,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s272')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -148,7 +148,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s273')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -178,7 +178,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s274')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -212,7 +212,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s275')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -246,7 +246,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s276')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -280,7 +280,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s277')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -314,7 +314,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s278')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -348,7 +348,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s279')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -382,7 +382,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s280')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -416,7 +416,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s281')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -450,7 +450,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s282')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -484,7 +484,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s283')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -518,7 +518,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s284')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -548,7 +548,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s285')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -578,7 +578,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s286')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -612,7 +612,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s287')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -642,7 +642,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s288')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -672,7 +672,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s289')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -706,7 +706,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s290')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -736,7 +736,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s291')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -766,7 +766,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s292')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -796,7 +796,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s293')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -826,7 +826,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s294')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -856,7 +856,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s295')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -886,7 +886,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s296')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -916,7 +916,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s297')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -946,7 +946,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s298')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -976,7 +976,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s299')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1006,7 +1006,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s300')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1036,7 +1036,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s301')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1066,7 +1066,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s302')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1096,7 +1096,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s303')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1130,7 +1130,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s304')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1164,7 +1164,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s305')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1194,7 +1194,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s306')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1224,7 +1224,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s307')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1254,7 +1254,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s308')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1284,7 +1284,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s309')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1314,7 +1314,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s310')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1344,7 +1344,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s311')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1374,7 +1374,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s312')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1408,7 +1408,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s313')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1442,7 +1442,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s314')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1472,7 +1472,7 @@ document.body.classList.add('dark');}catch(e){}</script>
           Enlace
         </button>
 <button class="copy-btn" onclick="copySutta('s315')" title="Copiar sutta al portapapeles">Copiar §</button>
-<button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver al inicio">
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
 <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
           Inicio ↑
         </button>
@@ -1507,6 +1507,6 @@ window.PALI_CAPITULO = {
 };
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="../../assets/pali.js?v=0abd2604"></script>
+<script src="../../assets/pali.js?v=e61882aa"></script>
 </body>
 </html>

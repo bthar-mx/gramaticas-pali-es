@@ -259,6 +259,36 @@ function toggleCard(id) {
   setTocActive(id);
 }
 
+// ─── Saltar: suave de cerca, de golpe de lejos ──────────────────
+// Un capítulo mide muchos miles de píxeles, y más con las tarjetas
+// abiertas. Animar el recorrido entero tarda segundos, porque el navegador
+// lo recorre todo. A menos de dos pantallas la animación sí ayuda a ver de
+// dónde a dónde se va; más allá, sólo hace esperar.
+function saltarA(el, block) {
+  var lejos = Math.abs(el.getBoundingClientRect().top) >= window.innerHeight * 2;
+  var quieto = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  try {
+    el.scrollIntoView({block: block || 'start',
+                       behavior: (lejos || quieto) ? 'instant' : 'smooth'});
+  } catch (e) {                       // navegadores sin «instant»
+    el.scrollIntoView(true);
+  }
+}
+
+// Volver al inicio, con el mismo criterio: desde el final de un capítulo
+// la animación tardaría lo mismo que cualquier otro salto largo.
+function volverArriba() {
+  var quieto = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var lejos = window.scrollY >= window.innerHeight * 2;
+  try {
+    window.scrollTo({top: 0, behavior: (lejos || quieto) ? 'instant' : 'smooth'});
+  } catch (e) {
+    window.scrollTo(0, 0);
+  }
+}
+
 // ─── Jump to sutta (from nav or TOC) ────────────────────────────
 function jump(id) {
   var card = document.getElementById(id);
@@ -266,7 +296,7 @@ function jump(id) {
   card.classList.add('open');
   if (id !== 'intro') visited.add(id);
   setTimeout(function() {
-    card.scrollIntoView({behavior:'smooth', block:'start'});
+    saltarA(card, 'start');           // se mide ya abierta la tarjeta
   }, 40);
   refreshProgress();
   setTocActive(id);
@@ -333,7 +363,7 @@ function openTocGroupOf(el) {
 
 function jumpKanda(k) {
   var h = document.getElementById('kanda-' + k);
-  if (h) h.scrollIntoView({behavior: 'smooth', block: 'start'});
+  if (h) saltarA(h, 'start');
 }
 
 // Caja «ir a §…» / filtro por título pāḷi.

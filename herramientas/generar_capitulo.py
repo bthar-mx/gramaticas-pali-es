@@ -586,7 +586,7 @@ def render_sutta(s, notas):
         '<circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>\n'
         '          Enlace\n        </button>\n'
         '<button class="copy-btn" onclick="copySutta(\'{sid}\')" title="Copiar sutta al portapapeles">Copiar §</button>\n'
-        '<button class="back-top-btn" onclick="window.scrollTo({{top:0,behavior:\'smooth\'}})" title="Volver al inicio">\n'
+        '<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">\n'
         '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
         '<path d="M10 15V5M5 10l5-5 5 5"></path></svg>\n'
         '          Inicio ↑\n        </button>\n'
@@ -608,7 +608,7 @@ PIE_TARJETA = (
     '<circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>\n'
     '          Enlace\n        </button>\n'
     '<button class="copy-btn" onclick="copySutta(\'{sid}\')" title="Copiar sutta al portapapeles">Copiar §</button>\n'
-    '<button class="back-top-btn" onclick="window.scrollTo({{top:0,behavior:\'smooth\'}})" title="Volver al inicio">\n'
+    '<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">\n'
     '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
     '<path d="M10 15V5M5 10l5-5 5 5"></path></svg>\n'
     '          Inicio ↑\n        </button>\n'
@@ -897,7 +897,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
-<button aria-label="Volver al inicio" id="top-btn" onclick="window.scrollTo({{top:0,behavior:'smooth'}})" title="Volver al inicio">↑</button>
+<button aria-label="Volver al inicio" id="top-btn" onclick="volverArriba()" title="Volver al inicio">↑</button>
 <nav aria-label="Tabla de contenidos" id="toc">
 {toc}
 </nav>

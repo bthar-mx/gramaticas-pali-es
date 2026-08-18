@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sandhi · Combinación eufónica en pāḷi</title>
-<meta name="version" content="3.5">
-<meta name="version-date" content="2026-08-12">
+<meta name="version" content="3.6">
+<meta name="version-date" content="2026-08-18">
 <meta name="description" content="Referencia interactiva de las reglas de sandhi del pāḷi, según Kaccāyana, Rūpasiddhi y Saddanīti.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -650,12 +650,26 @@ document.querySelectorAll('#filtros button').forEach(b => {
   });
 });
 document.getElementById('q').addEventListener('input', e => { q = e.target.value; render(); });
+/* Suave de cerca, de golpe de lejos. Las vistas miden miles de píxeles (51
+   aforismos, 49 reglas, 266 formas): animar el recorrido entero tarda
+   segundos. A menos de dos pantallas la animación ayuda a situarse. */
+function saltarA(el, block){
+  const lejos = Math.abs(el.getBoundingClientRect().top) >= innerHeight * 2;
+  const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  el.scrollIntoView({block: block || 'start',
+                     behavior: (lejos || quieto) ? 'instant' : 'smooth'});
+}
+function volverArriba(){
+  const lejos = scrollY >= innerHeight * 2;
+  const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  scrollTo({top:0, behavior: (lejos || quieto) ? 'instant' : 'smooth'});
+}
 document.getElementById('out').addEventListener('click', e => {
   const b = e.target.closest('button.ir-a');
   if(!b) return;
   setTab(b.dataset.v);
   render();
-  scrollTo({top: 0, behavior: 'smooth'});
+  volverArriba();
 });
 document.querySelectorAll('.tabs button').forEach(b => {
   b.addEventListener('click', () => {
@@ -675,7 +689,7 @@ document.addEventListener('click', e => {
   document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x.dataset.v === 'aforismos'));
   render();
   const el = document.getElementById('s' + a.dataset.goto);
-  if(el) el.scrollIntoView({block:'center', behavior:'smooth'});
+  if(el) saltarA(el, 'center');
 });
 
 /* ---------- portada: una secuencia, revelada ---------- */
@@ -781,14 +795,11 @@ const topBtn = document.getElementById('top-btn');
 addEventListener('scroll', () => {
   topBtn.classList.toggle('show', scrollY > 600);
 }, {passive:true});
-topBtn.addEventListener('click', () => {
-  const suave = !matchMedia('(prefers-reduced-motion: reduce)').matches;
-  scrollTo({top:0, behavior: suave ? 'smooth' : 'instant'});
-});
+topBtn.addEventListener('click', volverArriba);
 
 /* ---------- versión ---------- */
-const VERSION = '3.5', VERSION_DATE = '2026-08-12';
-const VERSION_NOTE = 'Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
+const VERSION = '3.6', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
@@ -864,11 +875,11 @@ document.getElementById('sbnav').addEventListener('click', e => {
     setTab('reglas'); render();
     // Por identificador, no por el texto: «byanjana» no casa con «byañjana».
     const h = document.querySelector(`.sec[data-sec="${id}"]`);
-    (h || document.body).scrollIntoView({block:'start', behavior:'smooth'});
+    saltarA(h || document.body, 'start');
   } else {
     setTab('aforismos'); render();
     const el = document.getElementById('s' + id);
-    if(el) el.scrollIntoView({block:'center', behavior:'smooth'});
+    if(el) saltarA(el, 'center');
   }
   if(innerWidth <= 900) closeSb();
 });
