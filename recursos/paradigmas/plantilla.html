@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.4">
+<meta name="version" content="1.5">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -191,6 +191,19 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 .igual{margin:10px 0 0;font-size:15px;color:var(--soot)}
 .igual a{color:var(--nila)}
 
+/* ---------- tooltip de sutta (como en /recursos/sandhi/, en grande) ---------- */
+#tip{position:fixed;z-index:200;max-width:380px;pointer-events:none;opacity:0;
+  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
+  box-shadow:0 8px 26px var(--shadow);padding:13px 15px;font-size:15.5px;line-height:1.5}
+#tip.on{opacity:1;transform:none}
+#tip .tn{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--nila);
+  display:block;margin-bottom:5px}
+#tip .tp{font-style:italic;font-weight:700;margin:0;font-size:16.5px}
+#tip .te{margin:5px 0 0;color:var(--soot);font-size:15px}
+#tip .tk{font-family:var(--mono);font-size:10.5px;color:var(--haritala);margin:8px 0 0;
+  letter-spacing:.06em;text-transform:uppercase}
+
 /* ---------- volver al inicio (igual que en los capítulos) ---------- */
 #top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
   width:38px;height:38px;border-radius:50%;
@@ -281,6 +294,7 @@ footer a{color:var(--nila)}
 </div>
 
 <main class="wrap" id="out"></main>
+<div id="tip" role="tooltip" aria-hidden="true"></div>
 <button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
 
 <footer class="wrap">
@@ -408,7 +422,7 @@ function card(p){
     const refURL = r => r.split(/,\s*/).map(tok =>
       /^§\d+/.test(tok.trim())
         ? esc(tok).replace(/§(\d+)/, (m,n) =>
-            `<a href="../../kaccayana/nama/#s${n}" title="Ver §${n} en el Nāma-Kappa">§${n}</a>`)
+            `<a href="../../kaccayana/nama/#s${n}" data-sutta="${n}">§${n}</a>`)
         : esc(tok)).join(', ');
     const sentido = u => `<div class="uso-l"><span class="uso-t">${hi(u.uso)}</span>
       — ${u.ej.map(hi).join('<span class="sep">, </span>')}
@@ -499,8 +513,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.4', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'El sufijo ‘to’ muestra ahora sus tres usos: quinta (§248, Kaccāyana), y séptima —ādito, majjhato…— y tercera —aniccato, dukkhato…—, que Rūpasiddhi obtiene por yogavibhāga de «Kvaci to» en el vutti que sigue a su §265; lo de Rūpasiddhi va señalado como suyo y sin enlazar, como en los capítulos.';
+const VERSION = '1.5', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Las referencias §N de la tabla de sufijos llevan ahora el tooltip grande de sandhi, con el sutta entero —número, pāḷi y traducción, tomados del Nāma-Kappa publicado— en lugar del rótulo diminuto del navegador.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
@@ -583,6 +597,60 @@ document.addEventListener('click', e => {
   if(el) el.scrollIntoView({block:'start', behavior:'smooth'});
   if(innerWidth <= 900) closeSb();
 });
+
+/* ---------- tooltip de las referencias §N ---------- */
+const tip = document.getElementById('tip');
+let tipT = null;
+function tipHTML(n){
+  const s = (DATA.nama || {})[n];
+  if(!s) return '';
+  return `<span class="tn">Nāma-Kappa · §${n}</span>
+    <p class="tp">${esc(s.pali)}</p>
+    ${s.es ? `<p class="te">${esc(s.es)}</p>` : ''}
+    <p class="tk">clic para abrir el sutta</p>`;
+}
+function placeTip(el){
+  const r = el.getBoundingClientRect();
+  tip.style.visibility = 'hidden'; tip.classList.add('on');
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = r.left, y = r.bottom + 8;
+  if(x + w > innerWidth - 12) x = innerWidth - w - 12;
+  if(x < 12) x = 12;
+  if(y + h > innerHeight - 12) y = r.top - h - 8;
+  if(y < 8) y = 8;
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  tip.style.visibility = '';
+}
+function showTip(el){
+  const html = tipHTML(el.dataset.sutta);
+  if(!html) return;
+  tip.innerHTML = html;
+  tip.setAttribute('aria-hidden','false');
+  placeTip(el);
+}
+function hideTip(){
+  clearTimeout(tipT);
+  tip.classList.remove('on');
+  tip.setAttribute('aria-hidden','true');
+}
+document.addEventListener('mouseover', e => {
+  const a = e.target.closest('a[data-sutta]');
+  if(!a) return;
+  clearTimeout(tipT);
+  tipT = setTimeout(() => showTip(a), 110);
+});
+document.addEventListener('mouseout', e => {
+  if(e.target.closest('a[data-sutta]')) hideTip();
+});
+document.addEventListener('focusin', e => {
+  const a = e.target.closest('a[data-sutta]');
+  if(a) showTip(a);
+});
+document.addEventListener('focusout', e => {
+  if(e.target.closest('a[data-sutta]')) hideTip();
+});
+addEventListener('scroll', hideTip, {passive:true});
+addEventListener('keydown', e => { if(e.key === 'Escape') hideTip(); });
 
 /* ---------- copiar paradigma y copiar enlace ---------- */
 function textoParadigma(p){

@@ -27,11 +27,58 @@ import sys
 import unicodedata
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
+
+from generar_capitulo import parsear, partir_bloques, desescapar  # noqa: E402
 
 DATOS = os.path.join(RAIZ, "recursos", "paradigmas", "paradigmas.json")
 INDICE = os.path.join(RAIZ, "recursos", "paradigmas", "indice.json")
 PLANTILLA = os.path.join(RAIZ, "recursos", "paradigmas", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "paradigmas", "index.html")
+MD_NAMA = os.path.join(RAIZ, "kaccayana", "02-nama-kappa.md")
+
+
+def _limpiar(t):
+    """Quita marcadores de nota, glosas emergentes y escapes."""
+    t = re.sub(r'\[\^\d+\]', '', t)
+    t = re.sub(r'\{([^|{}]+)\|[^{}]*\}', r'\1', t)
+    t = desescapar(t)
+    return re.sub(r'\s+', ' ', t).strip()
+
+
+def suttas_citados(datos):
+    """Los §N del Nāma-Kappa citados en el detalle de los sufijos.
+
+    Sólo las referencias desnudas «§N»; las de otras obras (Rū. §N) no
+    remiten a este sitio y quedan fuera.
+    """
+    citados = set()
+    for p in datos["paradigmas"]:
+        for d in p.get("detalle", []):
+            for u in (d.get("usos") or [d]):
+                for tok in re.split(r',\s*', u.get("ref", "")):
+                    m = re.match(r'§(\d+)', tok.strip())
+                    if m:
+                        citados.add(int(m.group(1)))
+    return citados
+
+
+def suttas_nama(citados):
+    """{n: {pali, es}} para el tooltip de las referencias §N."""
+    if not citados or not os.path.exists(MD_NAMA):
+        return {}
+    fuera = {}
+    for s in parsear(MD_NAMA)["suttas"]:
+        if s["n"] not in citados:
+            continue
+        bloques = partir_bloques(s["cuerpo"])
+        es = ""
+        if len(bloques) > 1:
+            lineas = [x.strip() for x in bloques[1] if x.strip()]
+            if lineas:
+                es = _limpiar(lineas[0])
+        fuera[str(s["n"])] = {"pali": _limpiar(s["pali"]), "es": es}
+    return fuera
 
 
 def verificar(datos, indice):
@@ -90,6 +137,13 @@ def main():
         if len(fallos) > 20:
             print("  … y {0} más".format(len(fallos) - 20))
         return 1
+
+    citados = suttas_citados(datos)
+    datos["nama"] = suttas_nama(citados)
+    sin_texto = sorted(n for n in citados if str(n) not in datos["nama"])
+    if sin_texto:
+        print("  aviso — §N citados sin texto en el Nāma-Kappa: {0}".format(
+            sin_texto))
 
     plantilla = open(PLANTILLA, encoding="utf-8").read()
     marca = re.search(r'/\*__DATOS__\*/.*?/\*__FIN__\*/', plantilla, re.S)
