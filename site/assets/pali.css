@@ -17,14 +17,14 @@
   --accent-mid:    #7F77DD;
   --green:         #3B6D11;
   --green-bg:      #EAF3DE;
-  --serif:         'Noto Serif', Georgia, serif;
+  --serif:         'Gentium Book Plus', Georgia, serif;
   --sans:          'Inter', system-ui, sans-serif;
   --mono:          'JetBrains Mono', monospace;
   --r:             8px;
   --rl:            12px;
   --toc-w:         240px;
   --haritala:      #5C4008;   /* oropimente: el amarillo de las correcciones */
-  --display:       "Gentium Book Plus", "Noto Serif", Georgia, serif;
+  --display:       "Gentium Book Plus", Georgia, serif;
 }
 body.dark {
   --bg: #18181A; --bg2: #222224; --bg3: #2C2C2F;
@@ -354,7 +354,7 @@ body.dark .sutta-card { background: var(--bg2); }
 
 /* ── Translation ─────────────────────────────────────────────────── */
 .gloss {
-  font: 400 15px/1.5 var(--serif); color: var(--text);
+  font: 400 16px/1.6 var(--serif); color: var(--text);
   padding: .55rem .9rem; border-left: 3px solid var(--accent-mid);
   background: var(--accent-bg); border-radius: 0 var(--r) var(--r) 0;
   margin-bottom: .5rem;

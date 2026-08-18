@@ -113,7 +113,7 @@ PAGINA = """<!DOCTYPE html>
 <meta content="{descripcion}" name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&amp;family=Noto+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="{raiz}assets/pali.css" rel="stylesheet"/>
 </head>
