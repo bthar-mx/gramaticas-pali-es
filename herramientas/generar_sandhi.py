@@ -142,7 +142,9 @@ def suttas_desde_markdown():
             split = "{0}, {1}".format(desescapar(s["desglose"]), s["voces"])
         fuera.append({
             "kac": s["n"],
-            "ru": s["rup"],
+            # `rup` es cadena desde la sesión 14 (admite «88, 308»); en el
+            # Sandhi siempre es un número, y se conserva como tal.
+            "ru": int(s["rup"]) if s["rup"].isdigit() else s["rup"],
             "sad": ", ".join(s["sadd"]) if s["sadd"] else None,
             "pali": limpiar(s["pali"]),
             "split": split,

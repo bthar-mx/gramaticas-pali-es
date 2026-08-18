@@ -1,7 +1,8 @@
 #!/bin/sh
-# Antes de cada commit: (1) convierte el maestro del Nāma al formato del
-# generador y (2) regenera el sitio, para que ni el archivo del generador ni
-# el HTML publicado se queden atrás del markdown.
+# Antes de cada commit: (1) convierte los maestros de docs/ al formato del
+# generador —todos los herramientas/convertir_*.py— y (2) regenera el sitio,
+# para que ni los archivos del generador ni el HTML publicado se queden atrás
+# del markdown.
 # Instalar con: herramientas/instalar-hooks.sh
 
 RAIZ=$(git rev-parse --show-toplevel)
@@ -13,13 +14,16 @@ if [ -z "$PY" ]; then
   exit 0
 fi
 
-CONV=$("$PY" "$RAIZ/herramientas/convertir_nama.py" 2>&1)
-if [ $? -ne 0 ]; then
-  echo "$CONV"
-  echo "pre-commit: convertir_nama.py ha fallado (el maestro y el archivo del"
-  echo "            generador no cuadran); commit detenido."
-  exit 1
-fi
+for SCRIPT in "$RAIZ"/herramientas/convertir_*.py; do
+  [ -e "$SCRIPT" ] || continue
+  CONV=$(cd "$RAIZ" && "$PY" "$SCRIPT" 2>&1)
+  if [ $? -ne 0 ]; then
+    echo "$CONV"
+    echo "pre-commit: $(basename "$SCRIPT") ha fallado (el maestro y el archivo"
+    echo "            del generador no cuadran); commit detenido."
+    exit 1
+  fi
+done
 
 SALIDA=$("$PY" "$RAIZ/herramientas/generar_todo.py" 2>&1)
 if [ $? -ne 0 ]; then
@@ -28,7 +32,7 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-CAMBIOS=$(cd "$RAIZ" && git diff --name-only -- site/ kaccayana/02-nama-kappa.md)
+CAMBIOS=$(cd "$RAIZ" && git diff --name-only -- site/ kaccayana/)
 if [ -n "$CAMBIOS" ]; then
   echo "pre-commit: regenerado y añadido al commit:"
   echo "$CAMBIOS" | sed 's/^/    /'

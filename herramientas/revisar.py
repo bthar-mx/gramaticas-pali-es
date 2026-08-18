@@ -22,7 +22,9 @@ import sys
 import unicodedata
 from collections import Counter
 
-RE_SUTTA = re.compile(r'^\*\*(\d+)\\?\.\s*(\d+)\\?\.\s*(.+?)\*\*\s*(.*)$')
+# El número de Rūpasiddhi puede ser doble: «271. 88, 308.» (§271 del Kāraka).
+RE_SUTTA = re.compile(
+    r'^\*\*(\d+)\\?\.\s*(\d+(?:,\s*\d+)*)\\?\.\s*(.+?)\*\*\s*(.*)$')
 RE_KANDA = re.compile(r'^\*\*[A-ZĀĪŪṂṆṬḌÑṄḶ]+-KAṆḌA\*\*')
 RE_FN_DEF = re.compile(r'^\[\^(\d+)\]:')
 RE_CIERRE = re.compile(r'^\*\*Iti\s+.+?kaṇḍo\.?\*\*$')
@@ -81,7 +83,7 @@ def revisar(path, desde=None, hasta=None):
         m = RE_SUTTA.match(l)
         if not m:
             continue
-        n, rup, pali, resto = int(m.group(1)), int(m.group(2)), m.group(3), m.group(4)
+        n, rup, pali, resto = int(m.group(1)), m.group(2), m.group(3), m.group(4)
         if desde and n < desde:
             continue
         if hasta and n > hasta:

@@ -220,7 +220,7 @@ PLANTILLA = '''<!DOCTYPE html>
 <title>{titulo} · Gramáticas Pāḷi en español</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/pali.css" rel="stylesheet"/>
 </head>
 <body>

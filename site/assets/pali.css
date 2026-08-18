@@ -329,7 +329,7 @@ body.dark .sutta-card { background: var(--bg2); }
 .pali-block p.pali-para:last-child { margin-bottom: 0; }
 .pali-verse { padding-left: 1rem; margin: 0 0 .6rem; }
 .pali-verse-trans {
-  font-size: 13.5px; color: var(--text); font-style: italic;
+  font-size: 13.5px; color: var(--text);
   margin: 0 0 .8rem;
 }
 .pali-verse-trans:last-child, .pali-verse:last-child { margin-bottom: 0; }
@@ -368,6 +368,14 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 .rest-para { margin-bottom: .5rem; }
 .formation-title { font-weight: 500; margin-top: .5rem; }
 .seq-list { padding-left: 1.5rem; font: 12px/2 var(--mono); }
+/* Listas de «Ejemplos»: prosa (pāḷi + traducción), no pasos de derivación.
+   Van en la serif del resto de la traducción; las de «Secuencia», en mono. */
+.seq-list.seq-ejemplos { font: 13px/1.75 var(--serif); }
+/* El reset pone margin:0 en todo, así que la lista quedaba pegada a lo que
+   viniera detrás —el «(2) …» siguiente, un kimatthaṃ, otro rótulo—. Se separa
+   de lo que sigue, salvo si cierra el bloque. */
+.seq-list { margin-bottom: .85rem; }
+.seq-list:last-child { margin-bottom: 0; }
 .seq-sub { padding-left: 1.25rem; list-style: disc; margin: 0; }
 .fn-block { font: 12px/1.7 var(--sans); }
 .fn-item { display: grid; grid-template-columns: 28px 1fr; gap: 0 8px; padding: .2rem 0; }

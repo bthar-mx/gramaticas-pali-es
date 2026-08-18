@@ -37,7 +37,7 @@ Ejemplos:
 
 ---
 
-**272. 309. Dhātu-nāmānam upasaggayogādīsv api ca (558, 568).** [Dhātu-nāmānaṃ + upasaggayogādīsu + api + ca = 4 voces]
+**272. 309. Dhātu-nāmānam upasaggayogādīsv api ca (558, 568).** [Dhātu-nāmānaṃ + upasaggayoga-ādīsu + api + ca = 4 voces]
 
 Dhātu-nāmānaṃ payoge ca upasaggayogādīsv api ca taṃ kārakaṃ apādānasaññaṃ hoti.
 

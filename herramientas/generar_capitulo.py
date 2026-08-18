@@ -56,6 +56,23 @@ CAPITULOS = {
                         "separador de §77 y comilla de §83 en el maestro; "
                         "sub-listas de ejemplos anidadas.",
     },
+    "03-karaka-kappa": {
+        "slug": "karaka",
+        "obra": "Kaccāyana-Byākaraṇaṃ",
+        "obra_sub": "Gramática de Kaccāyana",
+        "obra_slug": "kaccayana",
+        "num": 3,
+        "titulo_pali": "3-Kāraka-Kappa",
+        "titulo_es": "3-Capítulo de casos gramaticales",
+        "anterior": "2-Nāma-Kappa",
+        "siguiente": "4-Samāsa-Kappa",     # en preparación: botón inactivo
+        "version": "1.0",
+        "version_fecha": "2026-08-17",
+        "version_nota": "Primera publicación del Kāraka-Kappa (§271–§315, "
+                        "45 suttas, 55 notas): los ocho nombres kāraka se "
+                        "traducen en la prosa (ablativo, dativo, locativo, "
+                        "instrumental, objeto, sujeto, causa, posesivo).",
+    },
 }
 
 COPYRIGHT = (
@@ -76,9 +93,28 @@ KANDAS_ES = ["Primera sección", "Segunda sección", "Tercera sección",
              "Cuarta sección", "Quinta sección", "Sexta sección",
              "Séptima sección", "Octava sección"]
 
-RE_SUTTA = re.compile(r'^\*\*(\d+)\\?\.\s*(\d+)\\?\.\s*(.+?)\*\*\s*(.*)$')
+# El número de Rūpasiddhi puede ser doble: «271. 88, 308.» (§271 del Kāraka).
+RE_SUTTA = re.compile(
+    r'^\*\*(\d+)\\?\.\s*(\d+(?:,\s*\d+)*)\\?\.\s*(.+?)\*\*\s*(.*)$')
 RE_KANDA = re.compile(r'^\*\*([A-ZĀĪŪṂṆṬḌÑṄḶ]+-KAṆḌA)\*\*')
 RE_FN_DEF = re.compile(r'^\[\^(\d+)\]:\s*(.*)$')
+
+# Numeración de kaṇḍas: la del capítulo es correlativa (1, 2, 3…), pero el
+# nombre que le toca lo dice el propio markdown. El Kāraka-kappa es el
+# CHAṬṬHA-KAṆḌA aunque sea el primer (y único) kaṇḍa de su archivo.
+KANDA_NOMBRE = {}          # nº correlativo del capítulo → índice en KANDAS_*
+
+
+def indice_kanda(k):
+    return KANDA_NOMBRE.get(k, k - 1)
+
+
+def kanda_pali(k):
+    return KANDAS_PALI[indice_kanda(k)]
+
+
+def kanda_es(k):
+    return KANDAS_ES[indice_kanda(k)]
 
 
 # ── Utilidades de texto ─────────────────────────────────────────────────
@@ -261,13 +297,18 @@ def parsear(path):
     i = 0
     while i < fin_cuerpo:
         l = lineas[i]
-        if RE_KANDA.match(l):
+        mk = RE_KANDA.match(l)
+        if mk:
             kanda_actual += 1
+            nombres = [x.upper() for x in KANDAS_PALI]
+            if mk.group(1) in nombres:
+                KANDA_NOMBRE[kanda_actual] = nombres.index(mk.group(1))
             i += 1
             continue
         m = RE_SUTTA.match(l)
         if m:
-            n, rup, pali, resto = int(m.group(1)), int(m.group(2)), m.group(3), m.group(4)
+            n, pali, resto = int(m.group(1)), m.group(3), m.group(4)
+            rup = ", ".join(x for x in re.split(r'[,\s]+', m.group(2)) if x)
             # notas al pie ancladas en el encabezado (título o tras él)
             notas_hdr = re.findall(r'\[\^(\d+)\]', resto)
             resto = re.sub(r'\[\^\d+\]\s*', '', resto)
@@ -342,6 +383,9 @@ def parrafos(lineas, notas, clase="rest-para"):
     anidados, que pueden llegar tras línea en blanco) y títulos en negrita."""
     out, buf, lista = [], [], []
     gap = [False]                     # línea en blanco vista con lista abierta
+    # Las listas de «Ejemplos» son prosa (pāḷi + traducción) y van en la
+    # serif; las de «Secuencia» son pasos de derivación y siguen en mono.
+    ejemplos = [False]
 
     def volcar_buf():
         if buf:
@@ -358,7 +402,8 @@ def parrafos(lineas, notas, clase="rest-para"):
                         "<li>{0}</li>".format(inline(s, notas)) for s in subs))
                     if subs else "")
                 for x, subs in lista)
-            out.append('<ol class="seq-list">{0}</ol>'.format(items))
+            out.append('<ol class="seq-list{0}">{1}</ol>'.format(
+                " seq-ejemplos" if ejemplos[0] else "", items))
             lista.clear()
         gap[0] = False
 
@@ -389,6 +434,7 @@ def parrafos(lineas, notas, clase="rest-para"):
         me = re.match(r'^(Secuencia|Ejemplos?[^:]*|Contraejemplos?[^:]*):\s*$', t)
         if me:
             volcar_buf()
+            ejemplos[0] = me.group(1).startswith(("Ejemplo", "Contraejemplo"))
             out.append('<div class="section-label">{0}</div>'
                        .format(inline(desescapar(me.group(0).rstrip(":")), notas)))
             continue
@@ -398,9 +444,17 @@ def parrafos(lineas, notas, clase="rest-para"):
 
 
 def bloque_pali(lineas, notas):
-    """El primer bloque, con modo verso: un párrafo cuyas líneas acaban en
-    salto forzado (dos espacios) se mantiene pāda por pāda; el párrafo
-    siguiente es su traducción."""
+    """El primer bloque, párrafo por párrafo, como en el maestro.
+
+    Hasta la sesión 14 el bloque se unía en un solo párrafo corrido salvo
+    que hubiera un verso, de modo que las separaciones entre las
+    explicaciones —«**Dūratthe** tāva: …», «**Antikatthe**: …»— se perdían
+    (§275 del Kāraka tiene 22 párrafos; 213 de los 219 suttas del Nāma y 50
+    de los 51 del Sandhi estaban igual). Ahora se respetan siempre.
+
+    Modo verso: un párrafo cuyas líneas acaban en salto forzado (dos
+    espacios) se mantiene pāda por pāda; el párrafo siguiente es su
+    traducción."""
     paras, buf = [], []
     for l in lineas:
         if l.strip():
@@ -414,9 +468,6 @@ def bloque_pali(lineas, notas):
     es_verso = [len(p) > 1 and all(x.endswith("  ") and
                                    x.rstrip().endswith(",") for x in p[:-1])
                 for p in paras]
-    if not any(es_verso):
-        return '<div class="pali-block">{0}</div>'.format(
-            inline(" ".join(x.strip() for x in lineas if x.strip()), notas))
     out = []
     for i, p in enumerate(paras):
         texto = " ".join(x.strip() for x in p)
@@ -501,8 +552,8 @@ def render_sutta(s, notas):
            '<span class="ref-tip"><span class="ref-tip-term">{0}</span>'
            '<span class="ref-tip-box">Kaccāyana Sutta</span></span>. '
            '<span class="ref-tip"><span class="ref-tip-term">{1}</span>'
-           '<span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span>'
-           ).format(n, s["rup"])
+           '<span class="ref-tip-box">Rūpasiddhi Sutta{2}</span></span>.</span>'
+           ).format(n, s["rup"], "s" if "," in s["rup"] else "")
 
     sadd_html = ""
     if s["sadd"]:
@@ -708,7 +759,7 @@ def render_toc(suttas, meta):
                 '<span class="toc-caret">▸</span><span>{1}</span>'
                 '<span class="toc-kanda-range">§{2}–§{3}</span></button>'
                 '<div class="toc-group-items">'.format(
-                    kanda, KANDAS_PALI[kanda - 1], a, b))
+                    kanda, kanda_pali(kanda), a, b))
         titulo = s["pali"]
         corto = titulo if len(titulo) <= 26 else titulo[:24].rstrip() + "…"
         partes.append(
@@ -730,8 +781,8 @@ def render_kanda_nav(suttas):
             '{2}</button>'.format(
                 k,
                 "Ir a la {0} ({1}, §{2}–§{3})".format(
-                    KANDAS_ES[k - 1].lower(), KANDAS_PALI[k - 1], a, b),
-                KANDAS_PALI[k - 1].split("-")[0]))
+                    kanda_es(k).lower(), kanda_pali(k), a, b),
+                kanda_pali(k).split("-")[0]))
     return ('<div class="kanda-nav" id="kanda-nav">'
             '<span class="kanda-nav-label">Kaṇḍa:</span>{0}'
             '<input aria-label="Ir al sutta número…" class="kanda-jump" '
@@ -768,7 +819,7 @@ def render(cap, meta, notas):
             cuerpo.append(
                 '<div class="kanda-heading" id="kanda-{2}">{0}'
                 '<span class="kanda-es">· {1}</span></div>\n'
-                .format(KANDAS_PALI[kanda - 1], KANDAS_ES[kanda - 1], kanda))
+                .format(kanda_pali(kanda), kanda_es(kanda), kanda))
         cuerpo.append(render_sutta(s, notas))
         if s.get("cierre"):
             cuerpo.append(cierre_kanda(s["cierre"]))
@@ -786,6 +837,7 @@ def render(cap, meta, notas):
         version=meta.get("version", ""), version_fecha=meta.get("version_fecha", ""),
         titulo_pali=meta["titulo_pali"], titulo_es=meta["titulo_es"],
         total=total, nk=nk,
+        nk_txt="{0} {1}".format(nk, "sección" if nk == 1 else "secciones"),
         toc=render_toc(suttas, meta),
         kanda_nav=render_kanda_nav(suttas),
         assets_v=version_assets(),
@@ -834,7 +886,7 @@ PLANTILLA = '''<!DOCTYPE html>
 <meta content="{version_fecha}" name="version-date"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&amp;family=Noto+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
 <body>
@@ -856,7 +908,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <div class="hdr-grammar">{obra_display}</div>
 <div class="hdr-sub">{obra_sub}</div>
 <div class="hdr-chapter">{titulo_pali} · {titulo_es}</div>
-<div class="hdr-meta">Edición bilingüe Pāḷi–Español · {total} suttas · {nk} secciones{insignia}</div>
+<div class="hdr-meta">Edición bilingüe Pāḷi–Español · {total} suttas · {nk_txt}{insignia}</div>
 </div>
 <div class="search-wrap">
 <input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="Buscar sutta (pāḷi o español)…" type="search"/>
@@ -937,7 +989,7 @@ def main():
     with open(destino, "w", encoding="utf-8") as f:
         f.write(html)
 
-    print("{0} suttas · {1} secciones · {2} notas → {3}".format(
+    print("{0} suttas · {1} kaṇḍa(s) · {2} notas → {3}".format(
         len(cap["suttas"]), max(s["kanda"] for s in cap["suttas"]),
         len(cap["notas"]), os.path.relpath(destino, RAIZ)))
 
