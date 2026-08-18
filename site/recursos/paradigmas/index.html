@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.10">
+<meta name="version" content="1.11">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,6 +71,20 @@ body{
 #burger{display:none}
 body{padding-left:238px}
 .scrim{display:none}
+
+/* ---------- marca del IEBH ---------- */
+/* Dos archivos por marca, uno por tema, en lugar de teñir uno solo: el
+   imagotipo lleva el punto de la «i» en otro color, y aplanarlo con CSS
+   alteraría la marca. Ambas versiones son las que da el manual. Van de
+   fondo y no de <img> para que el navegador sólo pida la del tema en uso. */
+.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
+  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
+.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
+  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
+html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
+/* El nombre del instituto ya está escrito al lado: el árbol es decorativo. */
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
 
 /* ---------- eyebrow / labels ---------- */
 .lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
@@ -308,7 +323,7 @@ footer a{color:var(--nila)}
   <div class="wrap mast">
     <div>
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
-      <div class="lbl">Instituto de Estudios Buddhistas Hispano</div>
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
       <h1>Paradigmas de declinaci<span class="dia">ó</span>n</h1>
       <p class="tag">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
       <span class="version-badge" id="vbadge"></span>
@@ -348,7 +363,7 @@ footer a{color:var(--nila)}
   <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; la referencia interactiva de
   <a href="../sandhi/">sandhi</a>; y la <a href="../nombre/">formación del nombre</a> paso a paso.</p>
 
-  <p class="licencia">Preparado por Bhikkhu Nandisena<br>
+  <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
@@ -555,8 +570,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.10', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
+const VERSION = '1.11', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Aparece la marca del Instituto de Estudios Buddhistas Hispano: el árbol bodhi junto a la línea que ya nombra al instituto, y el imagotipo completo en el pie, junto a la licencia. Ambas versiones —granate sobre claro, blanca sobre oscuro— son las del manual de marca del IEBH, sin recolorear ni recortar. El sitio estrena también icono de pestaña. Antes, en la versión 1.10: Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];

@@ -114,6 +114,7 @@ PAGINA = """<!DOCTYPE html>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&amp;family=Noto+Serif:ital,wght@0,400;0,500;1,400;1,500&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="{raiz}assets/pali.css" rel="stylesheet"/>
 </head>
 <body>
@@ -127,6 +128,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <h1 class="display">{h1}</h1>
 {cuerpo}
 <div class="idx-foot">
+<span class="marca-lockup"></span>
 {pie}
 </div>
 
@@ -247,7 +249,10 @@ def portada(pub):
         descripcion="Traducciones al español de las gramáticas clásicas de la "
                     "lengua pāḷi. Instituto de Estudios Buddhistas Hispano.",
         raiz="", volver="",
-        eyebrow="Instituto de Estudios Buddhistas Hispano",
+        # El árbol acompaña sólo a la línea que nombra al instituto; en las
+        # otras páginas el eyebrow dice otra cosa y la marca ahí engañaría.
+        eyebrow=('<span class="marca-arbol"></span>'
+                 'Instituto de Estudios Buddhistas Hispano'),
         h1='Gramáticas P<span class="dia">ā</span><span class="dia">ḷ</span>i '
            'en español',
         cuerpo=cuerpo,

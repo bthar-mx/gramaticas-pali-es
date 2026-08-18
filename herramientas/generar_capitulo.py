@@ -881,6 +881,7 @@ PLANTILLA = '''<!DOCTYPE html>
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <title>{obra} · {titulo_pali}</title>
 <meta content="{version}" name="version"/>
 <meta content="{version_fecha}" name="version-date"/>
@@ -936,6 +937,7 @@ Pasa el cursor sobre los términos pāḷi o los superíndices numéricos para v
 su significado. Expande «Ver notas» para leer las notas completas.
 </div>
 <div class="footer-box-copy">
+<span class="marca-lockup"></span>
 {copyright}
 {version_pie}</div>
 </div>

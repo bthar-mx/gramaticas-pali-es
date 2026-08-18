@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Sandhi · Combinación eufónica en pāḷi</title>
-<meta name="version" content="3.6">
+<meta name="version" content="3.7">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Referencia interactiva de las reglas de sandhi del pāḷi, según Kaccāyana, Rūpasiddhi y Saddanīti.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,6 +68,13 @@ body{
 #burger{display:none}
 body{padding-left:238px}
 .scrim{display:none}
+
+/* ---------- marca del IEBH ---------- */
+/* Sólo en el pie: la línea de arriba nombra a Kaccāyana, Rūpasiddhi y
+   Saddanīti, no al instituto, y la marca ahí diría lo que no es. */
+.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
+  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
+html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
 
 /* ---------- eyebrow / labels ---------- */
 .lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
@@ -381,7 +389,7 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   de Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano.</p>
   <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11 vuelve a unirlas. Entre esos dos pasos ocurre la operación propiamente dicha. «EM» es la forma de la edición moderna, con apóstrofo. En amarillo, lo que cambia en cada paso; en rojo, los contraejemplos, que muestran dónde la regla <em>no</em> se aplica.</p>
 
-  <p class="licencia">Preparado por Bhikkhu Nandisena<br>
+  <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
@@ -798,8 +806,8 @@ addEventListener('scroll', () => {
 topBtn.addEventListener('click', volverArriba);
 
 /* ---------- versión ---------- */
-const VERSION = '3.6', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
+const VERSION = '3.7', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Aparece en el pie el imagotipo del Instituto de Estudios Buddhistas Hispano, junto a la licencia, en las dos versiones del manual de marca: granate sobre claro y blanca sobre oscuro. Arriba no se pone, porque esa línea nombra a Kaccāyana, Rūpasiddhi y Saddanīti, no al instituto. El sitio estrena también icono de pestaña. Antes, en la versión 3.6: Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];

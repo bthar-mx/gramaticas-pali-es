@@ -531,6 +531,29 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 }
 .footer-box-copy a { color: var(--accent); }
 body.dark .footer-box-copy a { color: var(--accent-mid); }
+/* Marca del IEBH en la caja de créditos. Dos archivos, uno por tema: el
+   imagotipo lleva el punto de la «i» en otro color y teñir uno solo con CSS
+   alteraría la marca. De fondo y no en <img> para que el navegador pida
+   sólo la versión del tema en uso. El nombre del instituto va escrito
+   debajo, así que la imagen es decorativa y no lleva texto alternativo. */
+.marca-lockup {
+  display: block;
+  width: 180px;
+  height: 75px;
+  margin: 0 0 .6rem;
+  background: url(iebh-imagotipo-granate.svg) left center/contain no-repeat;
+}
+body.dark .marca-lockup { background-image: url(iebh-imagotipo-blanco.svg); }
+/* El árbol solo, para la línea que ya nombra al instituto. */
+.marca-arbol {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: -8px;
+  margin-right: .55rem;
+  background: url(iebh-arbol-granate.svg) center/contain no-repeat;
+}
+body.dark .marca-arbol { background-image: url(iebh-arbol-blanco.svg); }
 .footer-box-main strong {
   font-weight: 500;
   color: var(--text2);
