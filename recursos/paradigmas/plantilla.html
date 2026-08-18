@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.1">
+<meta name="version" content="1.2">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -434,7 +434,7 @@ function render(){
 }
 
 /* ---------- filtros ---------- */
-function botones(cont, defs, get, set){
+function botones(cont, defs, get, set, despues){
   const el = document.getElementById(cont);
   el.innerHTML = defs.map(([v,t],i) =>
     `<button data-v="${v}" aria-pressed="${i===0}">${t}</button>`).join('');
@@ -443,9 +443,19 @@ function botones(cont, defs, get, set){
     set(b.dataset.v);
     el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
     render();
+    if(despues) despues(b.dataset.v);
   });
 }
-botones('f-gen',  GENS,  () => gen,  v => gen = v);
+/* Al filtrar por género, la barra lateral acompaña: se abre esa sección
+   (y se cierran las demás); con «Todos» se pliegan todas. */
+function sincronizarBarra(v){
+  document.querySelectorAll('#sbnav .sb-sec').forEach(d => {
+    const abre = d.dataset.sec === v;
+    d.open = abre;
+    if(abre) d.scrollIntoView({block:'nearest'});
+  });
+}
+botones('f-gen',  GENS,  () => gen,  v => gen = v, sincronizarBarra);
 botones('f-tema', TEMAS, () => tema, v => tema = v);
 document.getElementById('q').addEventListener('input', e => { q = e.target.value; render(); });
 
@@ -463,8 +473,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.1', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'Formas en redonda (la cursiva queda para los lemas), portada compacta con la muestra a la derecha, secciones plegables en la barra lateral, y los quince vibhatti-paccaya detallados uno a uno —uso, ejemplos y sutta del Nāma-Kappa (§247–§260)— con su entrada en la barra. Corregida la errata «pañacahi» → «pañcahi» de la quinta de pañca, con el visto bueno de Angel.';
+const VERSION = '1.2', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Formas en redonda (la cursiva queda para los lemas), portada compacta con la muestra a la derecha, secciones plegables en la barra lateral que acompañan al filtro de género, y los quince vibhatti-paccaya detallados uno a uno —uso, ejemplos y sutta del Nāma-Kappa (§247–§260)— con su entrada en la barra. Corregida la errata «pañacahi» → «pañcahi» de la quinta de pañca, con el visto bueno de Angel.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
