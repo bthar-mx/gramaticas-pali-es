@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.9">
+<meta name="version" content="1.10">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -555,8 +555,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.9', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'La página se hace táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
+const VERSION = '1.10', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
@@ -617,6 +617,16 @@ document.getElementById('sbclose').onclick = closeSb;
 scrim.onclick = closeSb;
 addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
 
+/* Los 82 paradigmas hacen una página de unos 35.000 px de alto. Un salto
+   «suave» de punta a punta tarda segundos: el navegador recorre toda esa
+   distancia animando. Cerca, la animación ayuda a ver de dónde a dónde se
+   va; lejos, sólo hace esperar. De ahí el umbral. */
+function saltarA(el){
+  const cerca = Math.abs(el.getBoundingClientRect().top) < innerHeight * 2;
+  const suave = cerca && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  el.scrollIntoView({block:'start', behavior: suave ? 'smooth' : 'instant'});
+}
+
 /* Al saltar desde la barra o entre tarjetas, limpiar los filtros si esconden el destino. */
 document.addEventListener('click', e => {
   const a = e.target.closest('a[data-goto], .igual a');
@@ -636,7 +646,7 @@ document.addEventListener('click', e => {
   }
   document.querySelectorAll('#sbnav a').forEach(x => x.classList.toggle('on', x === a));
   const el = document.getElementById(id);
-  if(el) el.scrollIntoView({block:'start', behavior:'smooth'});
+  if(el) saltarA(el);
   if(innerWidth <= 900) closeSb();
 });
 
@@ -793,7 +803,10 @@ addEventListener('scroll', () => {
   topBtn.classList.toggle('show', scrollY > 600);
 }, {passive:true});
 topBtn.addEventListener('click', () => {
-  const suave = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Mismo umbral que saltarA: desde el final de la página, «suave» tardaría
+     lo mismo que un salto de la barra lateral. */
+  const suave = scrollY < innerHeight * 2
+    && !matchMedia('(prefers-reduced-motion: reduce)').matches;
   scrollTo({top:0, behavior: suave ? 'smooth' : 'instant'});
 });
 
