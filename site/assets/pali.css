@@ -35,6 +35,14 @@ body.dark {
   --haritala: #EFC14E;
 }
 
+/* En los capítulos el fondo lo pone #main; las páginas de índice no lo
+   tienen, y sin esto el modo oscuro dejaba la página blanca con el texto
+   casi blanco encima. */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
 /* ── Progress bar ────────────────────────────────────────────────── */
 #pbar-wrap {
   position: fixed; top: 0; left: 0; right: 0; height: 2px;

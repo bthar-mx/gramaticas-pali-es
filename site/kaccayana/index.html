@@ -11,8 +11,11 @@
 <link href="../assets/pali.css" rel="stylesheet"/>
 </head>
 <body>
+<script>/* Tema guardado, antes de pintar. */
+try{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.body.classList.add('dark');}catch(e){}</script>
 <main class="idx">
-
 <a class="idx-back" href="../">← Gramáticas Pāḷi</a>
 
 <p class="idx-eyebrow">Gramática de Kaccāyana</p>
@@ -30,25 +33,21 @@
     <a class="idx-card" href="sandhi/">
       <span class="idx-badge">51 suttas</span>
       <span class="t">1 · Sandhi-Kappa</span>
-      <span class="d">Capítulo de <i>sandhi</i> — la combinación eufónica de letras.
-      §1–§51, en cinco kaṇḍas. Traducción completa.</span>
+      <span class="d">Capítulo de <i>sandhi</i> — la combinación eufónica de letras. §1–§51, en cinco kaṇḍas. Traducción completa.</span>
     </a>
   </li>
   <li>
     <a class="idx-card" href="nama/">
       <span class="idx-badge">219 suttas</span>
       <span class="t">2 · Nāma-Kappa</span>
-      <span class="d">Capítulo del nombre — declinación nominal y pronominal.
-      §52–§270, en cinco kaṇḍas. Traducción completa.</span>
+      <span class="d">Capítulo del nombre — declinación nominal y pronominal. §52–§270, en cinco kaṇḍas. Traducción completa.</span>
     </a>
   </li>
   <li>
     <a class="idx-card" href="karaka/">
       <span class="idx-badge">45 suttas</span>
       <span class="t">3 · Kāraka-Kappa</span>
-      <span class="d">Capítulo de casos gramaticales — las relaciones sintácticas
-      y las inflexiones que las expresan. §271–§315, sexta sección del
-      Nāma-kappa. Traducción completa.</span>
+      <span class="d">Capítulo de casos gramaticales — las relaciones sintácticas y las inflexiones que las expresan. §271–§315, sexta sección del Nāma-kappa. Traducción completa.</span>
     </a>
   </li>
   <li>
@@ -117,7 +116,6 @@
     try { localStorage.setItem('pali_dark', document.body.classList.contains('dark') ? '1' : '0'); } catch (e) {}
   };
   document.body.appendChild(b);
-  try { if (localStorage.getItem('pali_dark') === '1') document.body.classList.add('dark'); } catch (e) {}
 })();
 </script>
 </body>

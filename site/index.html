@@ -11,6 +11,10 @@
 <link href="assets/pali.css" rel="stylesheet"/>
 </head>
 <body>
+<script>/* Tema guardado, antes de pintar. */
+try{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.body.classList.add('dark');}catch(e){}</script>
 <main class="idx">
 
 <p class="idx-eyebrow">Instituto de Estudios Buddhistas Hispano</p>
@@ -26,10 +30,9 @@
 <ul class="idx-list">
   <li>
     <a class="idx-card" href="kaccayana/">
-      <span class="idx-badge">1 de 8 capítulos</span>
+      <span class="idx-badge">3 de 8 capítulos</span>
       <span class="t">Kacc<span class="dia">ā</span>yana-By<span class="dia">ā</span>kara<span class="dia">ṇ</span>a<span class="dia">ṃ</span></span>
-      <span class="d">Gramática de Kaccāyana. La más antigua de las gramáticas pāḷi.
-      Edición base: Bhikkhu U Nandisena (ITBMU).</span>
+      <span class="d">Gramática de Kaccāyana. La más antigua de las gramáticas pāḷi. Edición base: Bhikkhu U Nandisena (ITBMU).</span>
     </a>
   </li>
   <li>
@@ -60,8 +63,7 @@
   <li>
     <a class="idx-card" href="recursos/">
       <span class="t">Material de apoyo</span>
-      <span class="d">Reglas de combinación eufónica (<i>sandhi</i>), tablas y glosarios
-      de referencia para el estudio de la lengua.</span>
+      <span class="d">Reglas de combinación eufónica (<i>sandhi</i>), tablas y glosarios de referencia para el estudio de la lengua.</span>
     </a>
   </li>
 </ul>
@@ -86,7 +88,6 @@
     try { localStorage.setItem('pali_dark', document.body.classList.contains('dark') ? '1' : '0'); } catch (e) {}
   };
   document.body.appendChild(b);
-  try { if (localStorage.getItem('pali_dark') === '1') document.body.classList.add('dark'); } catch (e) {}
 })();
 </script>
 </body>

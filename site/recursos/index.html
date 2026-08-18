@@ -11,8 +11,11 @@
 <link href="../assets/pali.css" rel="stylesheet"/>
 </head>
 <body>
+<script>/* Tema guardado, antes de pintar. */
+try{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.body.classList.add('dark');}catch(e){}</script>
 <main class="idx">
-
 <a class="idx-back" href="../">← Gramáticas Pāḷi</a>
 
 <p class="idx-eyebrow">Material de apoyo</p>
@@ -26,38 +29,22 @@
 <ul class="idx-list">
   <li>
     <a class="idx-card" href="sandhi/">
-      <span class="idx-badge">49 reglas · 261 formas</span>
+      <span class="idx-badge">49 reglas · 266 formas</span>
       <span class="t">Sandhi — referencia interactiva</span>
-      <span class="d">Las reglas de combinación eufónica y los 51 aforismos del
-      Sandhi-Kappa, con la derivación paso a paso de cada forma y la concordancia
-      entre Kaccāyana, Rūpasiddhi y Saddanīti. Buscador que ignora los diacríticos.</span>
+      <span class="d">Las reglas de combinación eufónica y los 51 aforismos del Sandhi-Kappa, con la derivación paso a paso de cada forma y la concordancia entre Kaccāyana, Rūpasiddhi y Saddanīti. Buscador que ignora los diacríticos.</span>
     </a>
   </li>
   <li>
     <a class="idx-card" href="nombre/">
       <span class="idx-badge">10 pasos</span>
       <span class="t">Formación del nombre — pācako</span>
-      <span class="d">La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la
-      raíz <i>√paca</i> al nominativo singular, con el aforismo que ampara cada paso.
-      Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa.</span>
-    </a>
-  </li>
-  <li>
-    <a class="idx-card" href="combinacion-eufonica/">
-      <span class="idx-badge wip">sin verificar</span>
-      <span class="t">Reglas de combinación eufónica (sandhi)</span>
-      <span class="d">Bhikkhu Nandisena. Las operaciones de <i>sandhi</i> ordenadas por tipo,
-      con tablas de ejemplos y referencias al canon. Basado en Kaccāyana,
-      Rūpasiddhi y Saddanīti iii.</span>
+      <span class="d">La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz <i>√paca</i> al nominativo singular, con el aforismo que ampara cada paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa.</span>
     </a>
   </li>
 </ul>
 
 <div class="idx-foot">
-  Los textos marcados «sin verificar» proceden de conversiones automáticas de
-  los PDF del IEBH y están pendientes de cotejo con el original.<br/>
-  Fuentes:
-  <a href="https://github.com/admin-iebh/gramaticas-pali-es">github.com/admin-iebh/gramaticas-pali-es</a>.
+  Fuentes: <a href="https://github.com/admin-iebh/gramaticas-pali-es">github.com/admin-iebh/gramaticas-pali-es</a>.
 </div>
 
 </main>
@@ -73,7 +60,6 @@
     try { localStorage.setItem('pali_dark', document.body.classList.contains('dark') ? '1' : '0'); } catch (e) {}
   };
   document.body.appendChild(b);
-  try { if (localStorage.getItem('pali_dark') === '1') document.body.classList.add('dark'); } catch (e) {}
 })();
 </script>
 </body>

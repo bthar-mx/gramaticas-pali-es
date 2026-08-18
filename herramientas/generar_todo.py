@@ -48,10 +48,16 @@ def main():
                              os.path.join(meta["obra_slug"], clave + ".md"))
 
     # documentos en prosa
+    #
+    # combinacion-eufonica.md ya no se publica: la referencia interactiva de
+    # /recursos/sandhi/ lo reemplaza. El markdown se conserva porque
+    # reconstruir_sandhi.py lo lee para rehacer reglas.json.
+    SIN_PUBLICAR = {"combinacion-eufonica.md"}
+
     recursos = os.path.join(RAIZ, "recursos")
     if os.path.isdir(recursos):
         for f in sorted(os.listdir(recursos)):
-            if f.endswith(".md"):
+            if f.endswith(".md") and f not in SIN_PUBLICAR:
                 fallos += correr("generar_recurso.py", os.path.join("recursos", f))
 
     # referencia interactiva de sandhi
@@ -61,6 +67,9 @@ def main():
     # formación del nombre · pācako
     if os.path.exists(os.path.join(recursos, "nombre", "plantilla.html")):
         fallos += correr("generar_nombre.py")
+
+    # las tres páginas de índice — al final, porque cuentan lo ya generado
+    fallos += correr("generar_indices.py")
 
     print()
     print("Todo regenerado." if not fallos else "{0} paso(s) con error.".format(fallos))
