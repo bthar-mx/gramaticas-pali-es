@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.6">
+<meta name="version" content="1.7">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -336,7 +336,7 @@ const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&g
 
 /* ---------- clasificación ---------- */
 const GENS = [['all','Todos'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neutro'],
-              ['pronombre','Pronombres'],['numeral','Numerales']];
+              ['pronombre','Pronombres'],['numeral','Numerales'],['sufijos','Sufijos']];
 const TEMAS = [['all','Tema'],['a','a'],['ā','ā'],['i','i'],['ī','ī'],['u','u'],['ū','ū'],['o','o']];
 const SECS = [['masculino','Masculinos','tema nominal masculino'],
               ['femenino','Femeninos','tema nominal femenino'],
@@ -519,8 +519,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.6', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'La tabla de vibhatti-paccaya se cotejó por fin con el documento maestro de Bhikkhu Nandisena, que Angel facilitó en .docx: se incorporan sus ejemplos (purisato, kaññato, cittato, etto…), sus glosas españolas (kva «¿dónde?», idha «aquí»…), su «lugar y tiempo» en la séptima y su numeración de Rūpasiddhi junto a la de Kaccāyana. El maestro confirma los tres usos de ‘to’. Su lectura «sabbatha» se anota; se imprime «sabbattha» (§28).';
+const VERSION = '1.7', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'La tabla de vibhatti-paccaya, cotejada con el documento de origen completo: se incorporan sus ejemplos (purisato, kaññato, cittato, etto…), sus glosas españolas (kva «¿dónde?», idha «aquí»…), su «lugar y tiempo» en la séptima y su numeración de Rūpasiddhi junto a la de Kaccāyana, que confirma los tres usos de ‘to’. Con pestaña propia de Sufijos en el filtro. La errata «sabbatha» del origen se corrige a «sabbattha» (§28) con el visto bueno de Angel. Un cotejo automático de las 82 tablas contra ese documento no halló ninguna discrepancia de transcripción.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
