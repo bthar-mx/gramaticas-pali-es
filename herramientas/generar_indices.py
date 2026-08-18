@@ -79,6 +79,18 @@ RECURSOS = [
      "paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa."),
 ]
 
+# Fuera de este sitio. Van en su propia sección y marcadas como externas:
+# «Disponible» significa material del IEBH alojado aquí, y conviene que
+# seguir siendo verdad.
+CORPUS = [
+    ("https://buddha-dhamma.net/", "118 volúmenes",
+     "Chaṭṭhasaṅgītipiṭaka — Tipiṭaka del Sexto Concilio",
+     "La edición del Sexto Concilio romanizada: canon, comentarios y "
+     "subcomentarios enlazados capa a capa, de modo que desde cualquier "
+     "párrafo se llega a su aṭṭhakathā y su ṭīkā. 83.751 párrafos y 54.036 "
+     "variantes, con búsqueda que ignora los diacríticos."),
+]
+
 FUENTES = ('<a href="https://github.com/admin-iebh/gramaticas-pali-es">'
            'github.com/admin-iebh/gramaticas-pali-es</a>')
 
@@ -133,14 +145,21 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 """
 
 
-def tarjeta(href, insignia, titulo, desc, wip=False):
+def tarjeta(href, insignia, titulo, desc, wip=False, externo=False):
     ins = ""
     if insignia:
         ins = '      <span class="idx-badge{0}">{1}</span>\n'.format(
             " wip" if wip else "", insignia)
-    cuerpo = ('{0}      <span class="t">{1}</span>\n'
-              '      <span class="d">{2}</span>\n').format(ins, titulo, desc)
-    if href:
+    marca = ('<span aria-hidden="true" class="idx-ext">↗</span>'
+             if externo else "")
+    cuerpo = ('{0}      <span class="t">{1}{2}</span>\n'
+              '      <span class="d">{3}</span>\n').format(
+                  ins, titulo, marca, desc)
+    if href and externo:
+        interior = ('    <a class="idx-card ext" href="{0}" '
+                    'rel="noopener" target="_blank">\n{1}    </a>').format(
+                        href, cuerpo)
+    elif href:
         interior = '    <a class="idx-card" href="{0}">\n{1}    </a>'.format(
             href, cuerpo)
     else:
@@ -275,11 +294,17 @@ def indice_recursos():
                         titulo, desc)
                 for href, ins, titulo, desc in RECURSOS]
 
+    externas = [tarjeta(href, ins, titulo, desc, externo=True)
+                for href, ins, titulo, desc in CORPUS]
+
     cuerpo = ('<p class="idx-lede">\n'
               '  Material de referencia para el estudio de la lengua pāḷi, '
-              'complementario a\n  las traducciones de las gramáticas.\n'
+              'complementario a\n  las traducciones de las gramáticas, y el '
+              'corpus en el que leer los\n  pasajes que citan.\n'
               '</p>\n\n'
-              '<h2>Disponible</h2>\n{0}\n').format(lista(tarjetas))
+              '<h2>Disponible</h2>\n{0}\n\n'
+              '<h2>Corpus</h2>\n{1}\n').format(lista(tarjetas),
+                                               lista(externas))
 
     return PAGINA.format(
         titulo="Recursos · Gramáticas Pāḷi en español",

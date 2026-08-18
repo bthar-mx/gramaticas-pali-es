@@ -780,6 +780,13 @@ a.idx-card:hover { background: var(--accent-bg); border-color: var(--accent-mid)
 .idx-card .t { font-family: var(--serif); font-size: 1.06rem; display: block; margin-bottom: .2rem; }
 .idx-card .d { font-size: .87rem; color: var(--text3); line-height: 1.5; }
 .idx-card.pend { opacity: .55; }
+/* Fuera de este sitio: borde punteado y flecha, para que se vea que se sale. */
+.idx-card.ext { border-style: dashed; background: transparent; }
+a.idx-card.ext:hover { background: var(--bg2); }
+.idx-ext {
+  display: inline-block; margin-left: .4rem;
+  font: 400 .75em/1 var(--mono); color: var(--text3); vertical-align: .1em;
+}
 .idx-badge {
   float: right; font: 400 10px/1.7 var(--mono); padding: 0 .55rem;
   border-radius: 100px; background: var(--green-bg); color: var(--green);
