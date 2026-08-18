@@ -3,7 +3,8 @@
 *Complementa a los briefings 05–17. La sesión 18 no tocó ni una forma pāḷi:
 fue toda de interfaz. Hizo táctil la página de paradigmas, arregló los saltos
 largos en todo el sitio, incorporó la marca del IEBH y empezó a unificar la
-tipografía. Quedan dos decisiones abiertas, en la sección 6.*
+tipografía. **Lo primero que toca hacer es terminar esa unificación: Gentium
+Book Plus en todo el proyecto, sección 6a.** La URL corta sigue abierta.*
 
 ---
 
@@ -153,21 +154,43 @@ y luego cotejar que el `const DATA = {...}` de los HTML generados sigue siendo
 idéntico byte a byte al del último commit (53.319 bytes en paradigmas, 131.516
 en sandhi). Si cambia sin haber tocado el JSON, algo va mal.
 
-## 6. LAS DOS DECISIONES ABIERTAS
+## 6. TIPOGRAFÍA (decidida, sin hacer) Y URL (abierta)
 
-### a) Noto Serif o Gentium para el cuerpo de los capítulos
+### a) Tipografía — DECIDIDO: Gentium Book Plus
 
-Los capítulos cargan **cuatro** familias: Gentium (titulares), Noto Serif
-(cuerpo, seis pesos más cursivas), Inter y JetBrains Mono. Las páginas de
-recursos cargan dos. Unificar en Gentium eliminaría Noto Serif entero.
+**Angel ha decidido unificar todo el proyecto en Gentium Book Plus.** Noto
+Serif desaparece del cuerpo de texto. Es trabajo del chat siguiente y aún no
+está hecho.
 
-Hay un borrador para verlo: `docs/borradores/comparacion-tipografia.html`,
-con el mismo pasaje (§59 / Kacc. 182) en ambas tipografías, a los tamaños
-reales de los capítulos y con botones para aislar cada una.
+Motivo: SIL dibujó Gentium para lenguas con diacríticos latinos densos, que es
+exactamente el pāḷi romanizado (ā ī ū ṃ ṇ ḷ ṅ ñ); ya es la tipografía de las
+páginas de recursos y de los titulares de los capítulos, de modo que unificar
+no añade ninguna petición y elimina Noto Serif entero —seis pesos más
+cursivas— de todas las páginas que lo cargan.
 
-**Recomendación de Claude: Gentium**, con la salvedad de que tiene la altura
-de x más baja y a los 15 px del cuerpo puede pedir 16. Angel aplazó la
-decisión; hay que mirar el borrador antes de tocar nada.
+**Salvedad que hay que comprobar al hacerlo:** Gentium tiene la altura de x
+más baja que Noto Serif. A los 15 px del cuerpo de los capítulos puede leerse
+pequeño y pedir 16. Mirar `docs/borradores/comparacion-tipografia.html`, que
+tiene el mismo pasaje (§59 / Kacc. 182) en las dos tipografías a tamaño real,
+con botones para aislar cada una.
+
+Dónde está Noto Serif, para no dejarse nada:
+
+| Archivo | Qué hacer |
+| ------- | --------- |
+| `site/assets/pali.css` línea 20 | `--serif` pasa a Gentium (18 usos cuelgan de esa variable) |
+| `site/assets/pali.css` línea 27 | `--display` puede quedarse; su reserva a Noto Serif sobra |
+| `herramientas/generar_capitulo.py` | quitar `Noto+Serif` del enlace de Google Fonts |
+| `herramientas/generar_indices.py` | ídem |
+| `herramientas/generar_recurso.py` | ídem |
+| `recursos/nombre/plantilla.html` | cuatro `font-family:"Noto Serif"` sueltos (líneas 202, 226, 318, 445) más el enlace |
+
+No tocar `docs/borradores/comparacion-tipografia.html`: es justamente el
+borrador que compara las dos y necesita seguir cargando ambas.
+
+Después: `python3 herramientas/generar_todo.py`, mirar un capítulo en el
+navegador a ver si el cuerpo pide 16 px, y comprobar que ninguna página sigue
+pidiendo Noto Serif.
 
 ### b) URL más corta
 
