@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.2">
+<meta name="version" content="1.3">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,9 +143,18 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .pali{font-style:italic;font-weight:700}
 .gloss{color:var(--soot)}
 .meta{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.05em;margin-left:auto;
-  display:flex;gap:10px;align-items:baseline;white-space:nowrap}
+  display:flex;gap:8px;align-items:center;white-space:nowrap}
 .meta a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
 .meta a:hover{color:var(--haritala)}
+.mini-btn{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);
+  font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--soot);
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;
+  padding:4px 8px;cursor:pointer;line-height:1}
+.mini-btn svg{width:12px;height:12px}
+.mini-btn:hover{color:var(--ink);border-color:var(--soot)}
+.mini-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.mini-btn.ok{color:var(--haritala);border-color:var(--haritala)}
+@media print{.mini-btn{display:none}}
 
 /* ---------- tablas de declinación (elemento central) ---------- */
 .tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:15.5px}
@@ -407,8 +416,12 @@ function card(p){
     <div class="chead">
       <span class="cod">${esc(p.codigo)}</span>
       <p class="title">${titulo(p)}</p>
-      <span class="meta">${p.subtitulo ? esc(p.subtitulo) + ' · ' : ''}<a href="${docURL}"
-        target="_blank" rel="noopener" title="Documento de origen (IEBH)">doc ↗</a></span>
+      <span class="meta">${p.subtitulo ? esc(p.subtitulo) + ' · ' : ''}
+        <button class="mini-btn" data-share="${idOf(p)}" title="Copiar enlace a este paradigma">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><circle cx="15" cy="5" r="2"/><circle cx="5" cy="10" r="2"/><circle cx="15" cy="15" r="2"/><path d="M7 11l6 3M7 9l6-3"/></svg>
+          Enlace</button>
+        <button class="mini-btn" data-copy="${idOf(p)}" title="Copiar el paradigma al portapapeles">Copiar</button>
+        <a href="${docURL}" target="_blank" rel="noopener" title="Documento de origen (IEBH)">doc ↗</a></span>
     </div>
     ${cuerpo}${familia}${notas}
   </article>`;
@@ -473,8 +486,8 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 })();
 
 /* ---------- versión ---------- */
-const VERSION = '1.2', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'Formas en redonda (la cursiva queda para los lemas), portada compacta con la muestra a la derecha, secciones plegables en la barra lateral que acompañan al filtro de género, y los quince vibhatti-paccaya detallados uno a uno —uso, ejemplos y sutta del Nāma-Kappa (§247–§260)— con su entrada en la barra. Corregida la errata «pañacahi» → «pañcahi» de la quinta de pañca, con el visto bueno de Angel.';
+const VERSION = '1.3', VERSION_DATE = '2026-08-18';
+const VERSION_NOTE = 'Cada paradigma lleva ahora los botones «Enlace» y «Copiar», como los suttas de los capítulos: el primero copia el enlace directo a la tarjeta; el segundo, la tabla entera en texto plano con columnas alineadas, lista para pegar en un correo o unas notas.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
@@ -556,6 +569,47 @@ document.addEventListener('click', e => {
   const el = document.getElementById(id);
   if(el) el.scrollIntoView({block:'start', behavior:'smooth'});
   if(innerWidth <= 900) closeSb();
+});
+
+/* ---------- copiar paradigma y copiar enlace ---------- */
+function textoParadigma(p){
+  const L = [`${p.codigo} · ${p.paradigma}${p.subtitulo ? ' — ' + p.subtitulo : ''}`];
+  if(p.igual_que){
+    L.push('Se declina igual que ' + p.igual_que + ' (mismo documento).');
+  } else if(p.filas){
+    const cab = ['inflexión', ...p.columnas];
+    const filas = p.filas.map((f,i) =>
+      [DATA.inflexiones[i], ...f.map(c => c.length ? c.join(', ') : '—')]);
+    const anchos = cab.map((c,j) => Math.max(c.length, ...filas.map(r => r[j].length)));
+    L.push('', cab.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd());
+    filas.forEach(r =>
+      L.push(r.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd()));
+  } else if(p.detalle){
+    L.push(p.texto || '', '');
+    p.detalle.forEach(d =>
+      L.push(`${d.s} — ${d.uso} · ${d.ej.join(', ')} (${d.ref})`));
+  }
+  if(p.familia) L.push('', p.familia);
+  L.push('', 'Paradigmas de declinación · Instituto de Estudios Buddhistas Hispano',
+         location.href.split('#')[0] + '#' + idOf(p));
+  return L.join('\n');
+}
+function avisoCopiado(btn){
+  const orig = btn.innerHTML;
+  btn.innerHTML = '✓ ¡Copiado!';
+  btn.classList.add('ok');
+  setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('ok'); }, 2000);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('button[data-share],button[data-copy]');
+  if(!b) return;
+  const id = b.dataset.share || b.dataset.copy;
+  const p = DATA.paradigmas.find(x => idOf(x) === id);
+  if(!p) return;
+  const texto = b.dataset.share
+    ? location.href.split('#')[0] + '#' + id
+    : textoParadigma(p);
+  navigator.clipboard.writeText(texto).then(() => avisoCopiado(b));
 });
 
 /* ---------- volver al inicio: aparece al bajar ---------- */
