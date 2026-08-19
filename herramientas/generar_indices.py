@@ -24,7 +24,7 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 
-from generar_capitulo import CAPITULOS, parsear  # noqa: E402
+from generar_capitulo import CAPITULOS, parsear, version_assets  # noqa: E402
 
 # ---------------------------------------------------------------- datos
 
@@ -115,7 +115,7 @@ PAGINA = """<!DOCTYPE html>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="{raiz}assets/pali.css" rel="stylesheet"/>
+<link href="{raiz}assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
 <body>
 <script>/* Tema guardado, antes de pintar. */
@@ -245,6 +245,7 @@ def portada(pub):
         "de referencia para el estudio de la lengua.")]))
 
     return PAGINA.format(
+        assets_v=version_assets(),
         titulo="Gramáticas Pāḷi en español",
         descripcion="Traducciones al español de las gramáticas clásicas de la "
                     "lengua pāḷi. Instituto de Estudios Buddhistas Hispano.",
@@ -293,6 +294,7 @@ def indice_kaccayana(pub):
     ).format(lista(tarjetas))
 
     return PAGINA.format(
+        assets_v=version_assets(),
         titulo="Kaccāyana-Byākaraṇaṃ · Gramáticas Pāḷi en español",
         descripcion="Traducción al español de la gramática de Kaccāyana, "
                     "capítulo por capítulo.",
@@ -328,6 +330,7 @@ def indice_recursos():
                                                lista(externas))
 
     return PAGINA.format(
+        assets_v=version_assets(),
         titulo="Recursos · Gramáticas Pāḷi en español",
         descripcion="Material de apoyo para el estudio de la gramática pāḷi: "
                     "reglas, tablas y glosarios.",

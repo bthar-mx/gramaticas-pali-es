@@ -4,19 +4,24 @@
 /* ── Reset & variables ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg:            #FAFAF8;
-  --bg2:           #F3F2EE;
-  --bg3:           #ECEAE4;
-  --text:          #1A1917;
-  --text2:         #4A4845;
-  --text3:         #8C8A85;
-  --border:        rgba(28,26,22,.11);
-  --border2:       rgba(28,26,22,.20);
-  --accent:        #534AB7;
-  --accent-bg:     #EEEDFE;
-  --accent-mid:    #7F77DD;
-  --green:         #3B6D11;
-  --green-bg:      #EAF3DE;
+  /* Paleta «hoja de palma», la de /recursos/sandhi/ y /recursos/paradigmas/
+     (sesión 20). El modelo de superficies se invierte: el campo de página es
+     el tono MÁS oscuro (--bg = ola) y lo elevado se aclara (--bg2 = ola-2,
+     --bg3 = un paso más de luz para el hover de lo ya elevado). Contraste
+     medido de cada par; los textos cumplen AA sobre todas las superficies. */
+  --bg:            #E7E3D6;   /* ola — campo de página; ink 14,10:1 */
+  --bg2:           #F0EDE4;   /* ola-2 — superficies elevadas; ink 15,47:1 */
+  --bg3:           #F6F4EC;   /* hover de lo elevado; ink 16,44:1 */
+  --text:          #171612;   /* ink, tinta de humo */
+  --text2:         #4E4839;   /* soot — 7,08:1 sobre --bg */
+  --text3:         #6B6455;   /* 4,57:1 — el #8C8A85 anterior suspendía AA (3,30:1) */
+  --border:        #BFB7A0;   /* hair — sólido, no alfa */
+  --border2:       #A89C7F;   /* hair oscuro — el filete más marcado, también sólido */
+  --accent:        #27414F;   /* nīla — 8,37:1; desaparece el violeta #534AB7 */
+  --accent-bg:     rgba(39,65,79,.10);   /* chip-k de la página de sandhi */
+  --accent-mid:    #517488;   /* nīla medio: filete de .gloss, focos, barra de progreso */
+  --green:         #55611E;   /* oliva cálido, ajustado a la paleta — 5,25:1 */
+  --green-bg:      rgba(85,97,30,.12);
   --serif:         'Gentium Book Plus', Georgia, serif;
   --sans:          'Inter', system-ui, sans-serif;
   --mono:          'JetBrains Mono', monospace;
@@ -26,12 +31,18 @@
   --haritala:      #5C4008;   /* oropimente: el amarillo de las correcciones */
   --display:       "Gentium Book Plus", Georgia, serif;
 }
+/* El oscuro de hoja de palma, copiado del que ya está probado en la página
+   de sandhi (html[data-theme=dark]), no inventado. --bg3 y --text3 no
+   existen allí: --bg3 es un paso más de luz sobre ola-2 oscuro, y --text3
+   (4,96:1 sobre --bg2) aclara el soot oscuro para el texto terciario. */
 body.dark {
-  --bg: #18181A; --bg2: #222224; --bg3: #2C2C2F;
-  --text: #EEECEA; --text2: #B8B6B0; --text3: #8A8880;
-  --border: rgba(255,255,255,.09); --border2: rgba(255,255,255,.17);
-  --accent-bg: #26224A;
-  --accent: #A9A2F0;
+  --bg: #1A1917; --bg2: #232220; --bg3: #2C2A26;
+  --text: #F4F1E8; --text2: #BDB5A2; --text3: #978F80;
+  --border: #494438; --border2: #5C564A;
+  --accent: #B6D8EE;
+  --accent-bg: rgba(182,216,238,.13);
+  --accent-mid: #8FB6CE;
+  --green: #A5D178; --green-bg: rgba(165,209,120,.14);
   --haritala: #EFC14E;
 }
 
@@ -41,7 +52,11 @@ body.dark {
 body {
   background: var(--bg);
   color: var(--text);
+  /* La luz suave arriba a la izquierda de la página de sandhi, como la que
+     cae sobre una hoja de palma. En oscuro se apaga, igual que allí. */
+  background-image: radial-gradient(circle at 12% 8%, rgba(255,255,255,.55), transparent 55%);
 }
+body.dark { background-image: none; }
 
 /* ── Progress bar ────────────────────────────────────────────────── */
 #pbar-wrap {
@@ -51,7 +66,7 @@ body {
 #pbar { height: 100%; width: 0; background: var(--accent-mid); transition: width .4s; }
 #pbadge {
   position: fixed; top: 10px; right: 60px;
-  background: var(--bg); border: .5px solid var(--border2);
+  background: var(--bg2); border: .5px solid var(--border2);
   border-radius: 100px; padding: 2px 9px;
   font: 10px/1 var(--mono); color: var(--text3);
   z-index: 2000;
@@ -61,7 +76,7 @@ body {
 #dark-btn {
   position: fixed; bottom: 1.5rem; right: 1.5rem;
   width: 38px; height: 38px; border-radius: 50%;
-  background: var(--bg); border: .5px solid var(--border2);
+  background: var(--bg2); border: .5px solid var(--border2);
   /* Sin color propio, el glifo ◐ quedaba en el negro por defecto del
      navegador: invisible sobre el fondo oscuro de las páginas de índice. */
   color: var(--text);
@@ -76,7 +91,8 @@ body {
   width: var(--toc-w); overflow-y: auto;
   /* Gentium, como la barra lateral de los recursos. Ya se carga en esta
      página para los títulos, así que no cuesta una petición más. */
-  background: var(--bg); border-right: .5px solid var(--border);
+  /* Como la barra lateral de sandhi: ola-2, elevada sobre el campo. */
+  background: var(--bg2); border-right: .5px solid var(--border);
   padding: 1.5rem 1rem 2rem 1.25rem;
   font-family: var(--display);
   scrollbar-width: thin;
@@ -108,7 +124,7 @@ body {
   cursor: pointer; line-height: 1.55; transition: background .1s, color .1s;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.toc-item:hover { background: var(--bg2); color: var(--text); }
+.toc-item:hover { background: var(--bg3); color: var(--text); }
 .toc-item.active { background: var(--accent-bg); color: var(--accent); font-weight: 500; }
 
 /* ── Diseño de una página (sesión 08) ────────────────────────────── */
@@ -146,7 +162,7 @@ body {
 .toc-jump {
   width: 100%; padding: 6px 9px;
   border: .5px solid var(--border2); border-radius: var(--r);
-  font: 12px/1.2 var(--sans); background: var(--bg); color: var(--text);
+  font: 12px/1.2 var(--sans); background: var(--bg3); color: var(--text);
   outline: none; transition: border-color .15s, box-shadow .15s;
 }
 .toc-jump:focus { border-color: var(--accent-mid); box-shadow: 0 0 0 2px var(--accent-bg); }
@@ -161,13 +177,13 @@ body {
 .kanda-nav-label { font: 11px/1 var(--mono); color: var(--text3); margin-right: 4px;
   text-transform: uppercase; letter-spacing: .06em; }
 .kanda-nav-btn {
-  border: .5px solid var(--border); background: var(--bg);
+  border: .5px solid var(--border); background: var(--bg2);
   border-radius: 100px; padding: 4px 11px;
   font: 11px/1 var(--sans); color: var(--text2); cursor: pointer;
   text-transform: uppercase; letter-spacing: .06em;
   transition: background .12s, color .12s;
 }
-.kanda-nav-btn:hover { background: var(--bg2); color: var(--text); }
+.kanda-nav-btn:hover { background: var(--bg3); color: var(--text); }
 .kanda-nav-btn.active {
   background: var(--accent-bg); color: var(--accent);
   border-color: var(--accent-mid);
@@ -175,7 +191,7 @@ body {
 .kanda-jump {
   margin-left: auto; width: 72px; padding: 4px 9px;
   border: .5px solid var(--border2); border-radius: 100px;
-  font: 11px/1.2 var(--sans); background: var(--bg); color: var(--text);
+  font: 11px/1.2 var(--sans); background: var(--bg2); color: var(--text);
   outline: none; transition: border-color .15s, box-shadow .15s, width .15s;
 }
 .kanda-jump:focus {
@@ -193,7 +209,7 @@ body {
   content: attr(data-tip);
   position: absolute; bottom: calc(100% + 8px); left: 50%;
   transform: translateX(-50%);
-  background: var(--bg); color: var(--text);
+  background: var(--bg2); color: var(--text);
   border: .5px solid var(--border2); border-radius: var(--r);
   padding: 8px 13px; font: 12.5px/1.6 var(--sans);
   white-space: normal; width: max-content;
@@ -213,19 +229,21 @@ body {
 #top-btn {
   position: fixed; right: 1.5rem; bottom: calc(1.5rem + 48px); z-index: 60;
   width: 38px; height: 38px; border-radius: 50%;
-  border: .5px solid var(--border2); background: var(--bg);
+  border: .5px solid var(--border2); background: var(--bg2);
   color: var(--text2); font: 16px/1 var(--sans); cursor: pointer;
   box-shadow: 0 2px 10px rgba(0,0,0,.12);
   opacity: 0; pointer-events: none; transform: translateY(6px);
   transition: opacity .2s, transform .2s, background .12s;
 }
 #top-btn.show { opacity: 1; pointer-events: auto; transform: none; }
-#top-btn:hover { background: var(--bg2); color: var(--text); }
+#top-btn:hover { background: var(--bg3); color: var(--text); }
 
 /* ── Main layout ─────────────────────────────────────────────────── */
 #main {
   min-height: 100vh;
-  background: var(--bg);
+  /* Transparente para no tapar el degradado radial del body; el color de
+     campo lo pone el body. */
+  background: transparent;
   color: var(--text);
   font-family: var(--sans);
   font-size: 15px;
@@ -247,7 +265,9 @@ body {
 /* Los diacríticos, en oropimente — como en la portada de Sandhi. */
 .dia { color: var(--haritala); }
 .hdr-sub { font-size: 14px; color: var(--text2); margin-bottom: 1rem; }
-.hdr-chapter { font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+/* Gentium no tiene 500: criterio de Wispr, 400 con interletraje negativo
+   en vez de peso (briefing 19, secciones 4 y 7 bis). */
+.hdr-chapter { font-family: var(--serif); font-size: 18px; font-weight: 400; letter-spacing: -.03em; color: var(--text); margin-bottom: 2px; }
 .hdr-meta { font-size: 12px; color: var(--text3); }
 
 /* ── Controls bar ────────────────────────────────────────────────── */
@@ -272,7 +292,7 @@ body {
 .search-input {
   width: 100%; padding: 9px 36px 9px 13px;
   border: .5px solid var(--border2); border-radius: var(--r);
-  font: 13px/1 var(--sans); background: var(--bg); color: var(--text);
+  font: 13px/1 var(--sans); background: var(--bg2); color: var(--text);
   outline: none; transition: border-color .15s, box-shadow .15s;
 }
 .search-input:focus { border-color: var(--accent-mid); box-shadow: 0 0 0 2px var(--accent-bg); }
@@ -404,7 +424,7 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 .fn-sup { font-size: 10px; color: var(--accent); vertical-align: super; line-height: 0; cursor: help; }
 .fn-tip-box {
   display: none; position: absolute; bottom: calc(100% + 8px); left: 50%;
-  transform: translateX(-50%); background: var(--bg); color: var(--text);
+  transform: translateX(-50%); background: var(--bg2); color: var(--text);
   border: .5px solid var(--border2); border-radius: var(--r);
   padding: 8px 13px; font: 12.5px/1.6 var(--sans);
   white-space: normal; min-width: 200px; max-width: 340px;
@@ -417,7 +437,7 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 .tip-term { border-bottom: 1px dotted var(--accent-mid); cursor: help; }
 .tip-box {
   display: none; position: absolute; bottom: calc(100% + 8px); left: 50%;
-  transform: translateX(-50%); background: var(--bg); color: var(--text);
+  transform: translateX(-50%); background: var(--bg2); color: var(--text);
   border: .5px solid var(--border2); border-radius: var(--r);
   padding: 7px 12px; font: 12.5px/1.5 var(--sans);
   white-space: normal; min-width: 160px; max-width: 260px;
@@ -430,7 +450,7 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 .ref-tip-term { border-bottom: 1px dotted var(--border2); cursor: help; font: 12px/1 var(--mono); color: var(--text3); }
 .ref-tip-box {
   display: none; position: absolute; bottom: calc(100% + 6px); left: 50%;
-  transform: translateX(-50%); background: var(--bg); color: var(--text);
+  transform: translateX(-50%); background: var(--bg2); color: var(--text);
   border: .5px solid var(--border2); border-radius: var(--r);
   padding: 6px 10px; font: 12px/1.5 var(--sans);
   white-space: normal; min-width: 140px; max-width: 240px;
@@ -448,7 +468,7 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 .nav-btn:hover { background: var(--bg2); color: var(--text); }
 .nav-tip-box {
   display: none; position: absolute; bottom: calc(100% + 8px); left: 50%;
-  transform: translateX(-50%); background: var(--bg); color: var(--text);
+  transform: translateX(-50%); background: var(--bg2); color: var(--text);
   border: .5px solid var(--border2); border-radius: var(--r);
   padding: 10px 14px; font: 12.5px/1.6 var(--sans);
   white-space: normal; min-width: 240px; max-width: 320px;
@@ -654,21 +674,22 @@ body, #main { overflow-x: hidden; }
 /* Dark mode: kanda-end readable */
 body.dark .kanda-end { border-top-color: var(--border2); }
 body.dark .kanda-end-pali,
-body.dark .kanda-end-es { color: #C8C6C0; }
+body.dark .kanda-end-es { color: #C9C2B0; }
 
-/* Dark mode: footnote superscripts and sutta-xref brighter */
-body.dark .fn-sup { color: #A09AE4; }
-body.dark .sutta-xref { color: #A09AE4; }
+/* Dark mode: footnote superscripts and sutta-xref brighter.
+   Antes violeta #A09AE4; el nīla oscuro ya es suficientemente claro. */
+body.dark .fn-sup { color: var(--accent); }
+body.dark .sutta-xref { color: var(--accent); }
 
 /* Dark mode: sutta numbers brighter */
 body.dark .sutta-ref,
-body.dark .sutta-ref-num { color: #D0CEC8; }
-body.dark .sutta-breakdown { color: #C0BEB8; }
-body.dark .kanda-heading { color: #C0BEB8; }
+body.dark .sutta-ref-num { color: #D2CBB8; }
+body.dark .sutta-breakdown { color: #C1BAA7; }
+body.dark .kanda-heading { color: #C1BAA7; }
 
 
 @media print {
-  .gloss { background: #eeeefa !important; color: #000 !important; border-left-color: #7F77DD !important; }
+  .gloss { background: #ecf1f3 !important; color: #000 !important; border-left-color: #517488 !important; }
   .vutti { background: #f4f4f2 !important; color: #111 !important; border-left-color: #888 !important; }
   .pali-block { background: #f7f7f5 !important; color: #333 !important; }
   .sutta-ref, .sutta-ref-num, .sutta-breakdown { color: #555 !important; }
@@ -681,7 +702,7 @@ body.dark .kanda-heading { color: #C0BEB8; }
 
 body.dark .chapter-end { border-top-color: var(--border2); }
 body.dark .chapter-end-pali,
-body.dark .chapter-end-es { color: #C8C6C0; }
+body.dark .chapter-end-es { color: #C9C2B0; }
 
 
 /* TOC: active item highlighted on scroll */
@@ -717,7 +738,7 @@ body.dark .chapter-end-es { color: #C8C6C0; }
 .done-cb {
   width: 16px; height: 16px; border: 1.5px solid var(--border2);
   border-radius: 4px; display: flex; align-items: center; justify-content: center;
-  transition: all .15s; flex-shrink: 0; background: var(--bg);
+  transition: all .15s; flex-shrink: 0; background: var(--bg2);
 }
 .done-cb.checked {
   background: var(--green); border-color: var(--green);
@@ -749,7 +770,7 @@ body.dark .chapter-end-es { color: #C8C6C0; }
   font: 13px/1 var(--sans); color: var(--text2);
   cursor: pointer; transition: all .15s; text-decoration: none;
 }
-.chapter-nav-btn:hover { background: var(--bg); color: var(--text); }
+.chapter-nav-btn:hover { background: var(--bg3); color: var(--text); }
 .chapter-nav-btn.disabled { opacity: .4; cursor: not-allowed; pointer-events: none; }
 .chapter-nav-btn svg { width: 14px; height: 14px; }
 .chapter-nav-title {
@@ -797,7 +818,7 @@ body.dark .chapter-end-es { color: #C8C6C0; }
   text-transform: uppercase; color: var(--text3); margin-bottom: 1.1rem;
 }
 .idx h1 {
-  font-family: var(--serif); font-weight: 500;
+  font-family: var(--serif); font-weight: 400; letter-spacing: -.03em;
   font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: .5rem;
 }
 .idx .idx-sub { font-family: var(--serif); color: var(--text2); font-size: 1.05rem; margin-bottom: .35rem; }
@@ -828,7 +849,7 @@ a.idx-card.ext:hover { background: var(--bg2); }
   float: right; font: 400 10px/1.7 var(--mono); padding: 0 .55rem;
   border-radius: 100px; background: var(--green-bg); color: var(--green);
 }
-body.dark .idx-badge { background: #24331a; color: #a5d178; }
+body.dark .idx-badge { background: var(--green-bg); color: var(--green); }
 .idx-badge.wip { background: var(--bg3); color: var(--text3); }
 .idx-foot {
   margin-top: 4rem; padding-top: 1.4rem; border-top: .5px solid var(--border);
@@ -845,15 +866,15 @@ body.dark .idx-foot a { color: var(--accent-mid); }
   font-family: var(--sans); font-size: 15px; line-height: 1.7; color: var(--text);
 }
 .doc h1 {
-  font-family: var(--serif); font-weight: 500; line-height: 1.2;
+  font-family: var(--serif); font-weight: 400; letter-spacing: -.03em; line-height: 1.2;
   font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: .4rem;
 }
 .doc h2 {
-  font-family: var(--serif); font-weight: 500; font-size: 1.35rem;
+  font-family: var(--serif); font-weight: 400; letter-spacing: -.03em; font-size: 1.35rem;
   color: var(--accent); margin: 3rem 0 .9rem;
   padding-bottom: .5rem; border-bottom: .5px solid var(--border);
 }
-.doc h3 { font-family: var(--serif); font-weight: 500; font-size: 1.12rem; margin: 2rem 0 .6rem; }
+.doc h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -.03em; font-size: 1.12rem; margin: 2rem 0 .6rem; }
 .doc h4 { font-weight: 500; font-size: 1rem; margin: 1.5rem 0 .5rem; color: var(--text2); }
 .doc p { margin-bottom: .9rem; }
 .doc .doc-autor { font-family: var(--serif); color: var(--text2); margin-bottom: 1.5rem; }
@@ -907,11 +928,11 @@ body.dark .doc a { color: var(--accent-mid); }
 @media (max-width: 1099px) {
   .toc-burger {
     display: inline-flex; align-items: center; justify-content: center;
-    border: .5px solid var(--border); background: var(--bg);
+    border: .5px solid var(--border); background: var(--bg2);
     border-radius: 100px; padding: 3px 10px;
     font: 14px/1.2 var(--sans); color: var(--text2); cursor: pointer;
   }
-  .toc-burger:hover { background: var(--bg2); color: var(--text); }
+  .toc-burger:hover { background: var(--bg3); color: var(--text); }
   #toc.toc-drawer {
     display: block; z-index: 1600;
     width: min(320px, 86vw);
