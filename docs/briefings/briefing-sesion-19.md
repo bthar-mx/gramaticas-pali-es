@@ -42,7 +42,7 @@ pedía el briefing 18: sigue cargando las dos tipografías, que es su función.
 | ------- | ----------- |
 | `site/assets/pali.css` l. 20 | `--serif` pasa a `'Gentium Book Plus', Georgia, serif` (18 usos cuelgan de ahí) |
 | `site/assets/pali.css` l. 27 | `--display` pierde su reserva muerta a Noto Serif |
-| `site/assets/pali.css` `.gloss` | cuerpo del capítulo: `15px/1.5` → **`16px/1.6`** (sección 3) |
+| `site/assets/pali.css` `.gloss` | cuerpo del capítulo: `15px/1.5` → **`16px/1.7`** (secciones 3 y 7 ter) |
 | `herramientas/generar_capitulo.py` | enlace de Google Fonts: fuera Noto Serif |
 | `herramientas/generar_indices.py` | ídem |
 | `herramientas/generar_recurso.py` | ídem |
@@ -96,7 +96,7 @@ tocar las insignias de versión.
 `SIN_PUBLICAR`. El arreglo queda hecho para el próximo documento en prosa que
 se publique, no para nada que esté vivo ahora.
 
-## 3. EL CUERPO DEL CAPÍTULO: 15 → 16 px, Y POR QUÉ 1.6
+## 3. EL CUERPO DEL CAPÍTULO: 15 → 16 px, Y POR QUÉ 1.7
 
 El briefing 18 dejaba la pregunta abierta —«a los 15 px puede leerse pequeño y
 pedir 16»— y remitía al borrador de comparación. En lugar de juzgarlo a ojo se
@@ -133,7 +133,15 @@ De donde salen las tres conclusiones:
 - **El interlineado importaba más que el cuerpo.** La caja de contenido de
   Gentium es más alta (1,465 em frente a 1,362). A `16px/1.5` el blanco entre
   líneas caía a 0,6 px —apretado de ver—; a `16px/1.6` vuelve a los ~2 px que
-  había con `15px/1.5`. De ahí el `1.6`.
+  había con `15px/1.5`.
+
+**Corregido al final de la sesión, a la vista del navegador: quedó en `1.7`, no
+en `1.6`.** El razonamiento del `1.6` era conservar el interlineado que la
+glosa tenía con Noto Serif, y lo conservaba exactamente. Pero al ver una
+captura con el `.vutti` a `14px/1.7` justo debajo se vio el error: ese vutti
+deja ~3,3 px de aire y la glosa a `1.6` sólo 2,2 px, de modo que **el bloque
+más importante de la página iba a ser el más apretado**. Igualar el aire del
+vutti a 16 px pide 1,67; se redondeó a `1.7`. Ver sección 7 ter.
 
 Decidido por Angel sobre estos números. **Falta mirarlo en el navegador**: los
 demás tamaños que cuelgan de `--serif` (14 px del `.pali-block`, 13,5, 13)
@@ -339,6 +347,28 @@ para `--bg3`: `#F6F4EC` (ink encima 16,44:1), `#EFEBDE` (15,18:1), `#DCD7C7`
   `sandhi-theme`. **No hay desincronización; no hay que «arreglarlo».**
 - Quedan ~20 hexadecimales literales en `pali.css` (algunos son estilos de
   impresión: `#f7f7f5`, `#f5f5f0`). Hay que repasarlos aparte de los tokens.
+- **LA TRAMPA GORDA, descubierta al cambiar el interlineado: los índices no
+  llevan rompecachés.** Los capítulos enlazan
+  `pali.css?v=<hash md5>` —`version_assets()` en `generar_capitulo.py`, línea
+  796— y el generador lo rehace solo. **Las tres páginas de índice enlazan
+  `pali.css` a secas**, sin `?v=`:
+
+  | Página | Enlace |
+  | ------ | ------ |
+  | los 3 capítulos | `pali.css?v=43815aef` · `pali.js?v=43815aef` |
+  | `site/index.html` | `pali.css` |
+  | `site/kaccayana/index.html` | `pali.css` |
+  | `site/recursos/index.html` | `pali.css` |
+
+  Consecuencia para la pasada de la paleta: `pali.css` va a cambiar de arriba
+  abajo y **tres de las seis páginas afectadas no se lo van a decir al
+  navegador**. Se verán los capítulos con la paleta nueva y los índices con la
+  vieja, según lo que tenga cacheado cada visitante y la caché de Cloudflare —
+  y al depurar parecerá un error de CSS cuando no lo es.
+
+  **Arreglarlo antes de empezar con la paleta**: llevar `version_assets()` a
+  `generar_indices.py` y usar `pali.css?v={assets_v}` en su plantilla, igual
+  que los capítulos. Es un cambio pequeño y ahorra una tarde de desconcierto.
 
 ### Alcance
 
@@ -366,6 +396,85 @@ lecturas largas, y si el degradado radial funciona en páginas de 35.000 px.
 600 que Gentium no tiene— se resuelve sola si se adopta el criterio de Wispr,
 que no usa el peso como recurso en los titulares: `font-weight:400` y
 `letter-spacing:-.03em`. Conviene decidirlo a la vez que la paleta.
+
+## 7 ter. LO QUE SE VIO EN EL NAVEGADOR AL CIERRE
+
+Angel miró el capítulo de Sandhi ya con Gentium y mandó dos capturas: la página
+plegada y §12–§13 desplegados. Es la única comprobación visual que existe de
+todo lo de hoy, así que conviene no perderla.
+
+### Confirmado, funciona
+
+- **Gentium carga en todas partes**; no se ve ninguna caída a Georgia. Los
+  diacríticos del pāḷi se ven correctos y los del titular, en oropimente,
+  quedan bien.
+- **El cuerpo a 16 px acierta.** La glosa es claramente la línea principal y
+  manda sobre el vutti sin gritar. La jerarquía se lee bien.
+- La barra lateral, con Gentium y los rótulos de kaṇḍa en mono dorado (cambio
+  de la sesión 18), hace juego con el cuerpo.
+
+### DECISIÓN NUEVA, SIN TOMAR: la escalera de tamaños de la serif
+
+Esto salió de mirar la captura y **no estaba previsto**. Al pasar a Gentium
+**todos** los tamaños en serif perdieron el mismo 15 % de tamaño aparente, pero
+esta mañana sólo se compensó `.gloss` (15 → 16 px). Resultado: la distancia
+entre la traducción española y el texto pāḷi se ha abierto por partida doble, y
+**el pāḷi —que es la fuente— queda visiblemente por debajo de su traducción.**
+
+Devolver al `.pali-block` su tamaño aparente anterior pediría 16,5 px, que
+adelantaría a la glosa. O sea que no es la solución. La pregunta real es si
+subir toda la escalera ese mismo 7 %:
+
+| Regla | Ahora | Propuesta |
+| ----- | ----: | --------: |
+| `.pali-block` | 14 | 15 |
+| `.vutti` | 14 | 15 |
+| `.seq-list.seq-ejemplos` | 13 | 14 |
+| `.sutta-pali-title` | 16 | 17 |
+| `.intro-pali` | 14 | 15 |
+| `.intro-trans` | 13,5 | 14,5 |
+
+**Es una decisión editorial, no tipográfica** —cuál de los dos textos manda en
+la página—, y por eso se deja para Angel. No tocarla sin que él lo diga.
+
+### El interlineado: corregido a 1.7, y todavía sin ver del todo
+
+En las tres capturas **todas las glosas ocupan una sola línea**, de modo que
+el interlineado de `.gloss` no se ha visto nunca directamente. Lo que sí se vio,
+en la tercera, fue el primer bloque en serif de dos líneas —el párrafo «¿Por
+qué se dice “opcionalmente” (vā)?»— a `14px/1.7`, y de ahí salió la corrección:
+
+| Bloque | Tamaño | Caja de Gentium | Aire entre líneas |
+| ------ | ------ | --------------- | ----------------- |
+| ese párrafo | 14px/1.7 = 23,8 px | 20,5 px | **3,3 px** — se ve cómodo |
+| `.gloss` con 1.6 | 16px/1.6 = 25,6 px | 23,4 px | **2,2 px** |
+| `.gloss` con 1.7 | 16px/1.7 = 27,2 px | 23,4 px | **3,8 px** |
+
+Con `1.6` la glosa —el bloque más grande y más importante— habría quedado más
+apretada que el párrafo de debajo. **Se cambió a `1.7` y está aplicado.**
+
+**Sigue faltando la comprobación directa:** una captura de un sutta cuya
+traducción ocupe dos o tres líneas. La aritmética es firme, pero no sustituye a
+verlo.
+
+### La captura confirma el diagnóstico de la paleta
+
+Tres cosas que en la sección 7 bis eran números y ahora se ven:
+
+1. **Las tarjetas no se separan del fondo.** Filete al 11 % y superficies al
+   17 % de saturación: «Versos introductorios» y las fichas de sutta flotan
+   casi al mismo valor que la página.
+2. **`--text3` no se lee.** «Capítulo anterior / Introducción» parece
+   desactivado sin estarlo, y «0 / 51 estudiados» y el campo `§...` pelean con
+   el fondo. Es el 3,30:1 en la práctica.
+3. **El violeta está en el peor sitio posible.** No es sólo la insignia de
+   versión: es **el fondo de la glosa** —el elemento más importante de la
+   página, dos veces por sutta—, más las llamadas de nota y el elemento activo
+   de la barra lateral. Es el único color frío sobre papel cálido.
+
+De donde sale una consecuencia práctica para ordenar el trabajo: **cambiar
+`--accent` es lo que más se va a notar de toda la paleta.** Si hubiera que
+hacer una sola cosa, es ésa.
 
 ## 8. SIGUE SIN RESOLVER: EL PERMISO DE LA MARCA
 

@@ -354,7 +354,7 @@ body.dark .sutta-card { background: var(--bg2); }
 
 /* ── Translation ─────────────────────────────────────────────────── */
 .gloss {
-  font: 400 16px/1.6 var(--serif); color: var(--text);
+  font: 400 16px/1.7 var(--serif); color: var(--text);
   padding: .55rem .9rem; border-left: 3px solid var(--accent-mid);
   background: var(--accent-bg); border-radius: 0 var(--r) var(--r) 0;
   margin-bottom: .5rem;
