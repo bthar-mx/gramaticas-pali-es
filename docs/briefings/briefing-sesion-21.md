@@ -1,33 +1,40 @@
 # Kaccāyana Pāḷi-Español: Briefing de la Sesión 21
 
 *Complementa a los briefings 05–20. La sesión 21 transcurrió en dos chats a la
-vez. En el otro se incorporó el **Nyāsa-Pāḷi** como referencia de segunda capa
-—es lo principal de hoy y está en la sección 2—. En éste sólo se verificó esa
-incorporación y se escribió este briefing. **No se tocó ni una forma pāḷi, ni
-el sitio, ni la paleta.** Todo lo que quedó abierto en el briefing 20, §5,
-sigue abierto y se repite aquí al final.*
+vez. En el otro se incorporó el **Nyāsa-Pāḷi** como referencia de segunda capa,
+con su escaneo birmano de 1933 —es lo principal de hoy, sección 2—. En éste se
+verificó esa incorporación y se escribió este briefing. **No se tocó ni una
+forma pāḷi, ni el sitio, ni la paleta.** Lo abierto del briefing 20, §5, sigue
+abierto y se repite al final.*
+
+> **Lo primero que tiene que saber el chat nuevo:** el escaneo del Nyāsa **no
+> está en el repositorio**, aunque el mensaje del commit diga que sí. Lo
+> excluye `.gitignore` con la regla `*.pdf`. Sección 2, «El escaneo».
 
 ---
 
 ## 1. ESTADO AL CIERRE
 
-**Sin commitear al escribir esto:** el árbol `docs/fuentes/nyasa/` entero y
-este briefing. Órdenes para Angel:
+HEAD: **`d0acb5f`**. Comprobado **sin ejecutar git**, leyendo
+`.git/refs/heads/main` y `.git/logs/HEAD` como texto plano —el método que fijó
+el briefing 20 y que evita el `index.lock`—.
 
-    git add docs/fuentes/nyasa/ docs/briefings/briefing-sesion-21.md
-    git commit -m "fuentes: Nyāsa-Pāḷi (Mukhamattadīpanī) como referencia de segunda capa; briefing sesión 21"
-    git push
+Los cinco commits desde el cierre de la sesión 19:
 
-Antes de ejecutarlas conviene decidir una cosa: **el master pesa 1,01 MB y los
-nueve extractos otro 1,01 MB**, de modo que el repositorio —que es público—
-crece ~2 MB de una vez. Si se prefiere no duplicar, la extracción es
-reproducible con `dividir_nyasa.py` a partir del master y podría quedarse
-fuera; pero entonces hay que decirlo en `CLAUDE.md`, porque el que clone no
-tendrá los capítulos. **Sin decidir.**
+| Hash | Qué |
+| ---- | --- |
+| `0f6e98c` | glosa a 16px/1.7; briefing 19 |
+| `1b7b8dd` | paleta hoja de palma; rompecachés en índices; titulares serif a 400 |
+| `1f64337` | CLAUDE.md (pali.css/pali.js/SVG son fuente); briefing sesión 20 |
+| `b8b41a4` | **Nyāsa: master, errata y extracción por capítulos** |
+| `d0acb5f` | **Nyāsa: transcripción, errata, extracción «y escaneo 1933 comprimido»** ← HEAD |
 
-Del briefing 20 quedaba pendiente de commitear la corrección de `CLAUDE.md` y
-el propio briefing 20 (`git add CLAUDE.md docs/briefings/briefing-sesion-20.md`).
-**Comprobar si eso llegó a hacerse** antes de encadenar el commit de hoy.
+Dos cosas que conviene tener claras al leer esa tabla:
+
+- **Lo que quedaba pendiente del briefing 20 ya está commiteado** (`1f64337`).
+  Esa comprobación queda cerrada.
+- **Hay dos commits de Nyāsa y el segundo promete algo que no entregó.** Ver
+  abajo.
 
 ## 2. NYĀSA-PĀḶI: INCORPORADO
 
@@ -36,19 +43,57 @@ Se incorpora el **Nyāsa-Pāḷi (Mukhamattadīpanī)**, de Vimalabuddhi, como
 
 **Procedencia:** transcripción `.docx` de la edición Sudhammavatī (Yangon).
 
-### Qué hay y dónde
+### Qué hay en `docs/fuentes/nyasa/`
 
-`docs/fuentes/nyasa/`:
-
-| Archivo | Qué es |
-| ------- | ------ |
-| `Nyasa_Pali_Mukhamattadipani_master.md` | el master; md5 `df5699b9ae436590e0e36d5361e32707` |
-| `Nyasa_errata.md` | registro de correcciones — **leerlo antes de usar nada** |
-| `Nyasa-00-prologo-y-matika.md` … `Nyasa-08-unadi.md` | extracción por capítulos |
-| `limpiar_nyasa.py`, `dividir_nyasa.py` | los dos scripts |
+| Archivo | Qué es | ¿En el repo? |
+| ------- | ------ | ------------ |
+| `Nyasa_Pali_Mukhamattadipani_master.md` | el master; md5 `df5699b9ae436590e0e36d5361e32707` | sí |
+| `Nyasa_errata.md` | registro de correcciones — **leerlo antes de usar nada** | sí |
+| `Nyasa-00-prologo-y-matika.md` … `Nyasa-08-unadi.md` | extracción por capítulos | sí |
+| `limpiar_nyasa.py`, `dividir_nyasa.py`, `comprimir_nyasa_pdf.py` | los tres scripts | sí |
+| `Nyasa_1933_escaneo_bitonal_200dpi.pdf` | escaneo birmano recomprimido, 54 MB | **NO** |
 
 Los nueve extractos llevan cabecera de procedencia y el aviso de **no editar
 ahí**: se corrige en el master y se regenera.
+
+### El escaneo: existe, está verificado, y NO está en el repositorio
+
+Esto es lo más importante de la sección, porque el mensaje del commit `d0acb5f`
+dice «…y escaneo 1933 comprimido» y **el PDF no entró**. La causa es
+`.gitignore`, que trae la regla global `*.pdf`. Comprobado leyendo
+`.git/index`: aparecen los nueve `.md` y los tres `.py`, y **no aparece el
+PDF**. Coherente con el tamaño: `.git` ocupa 15 MB y el árbol de trabajo 61 MB.
+
+**Consecuencia práctica: el escaneo existe sólo en la máquina de Angel.** Quien
+clone el repositorio no lo tendrá, por mucho que este briefing y el mensaje del
+commit lo nombren.
+
+**Sin decidir, y hay que decidirlo:**
+
+- **(a) Dejarlo fuera y subirlo como asset de Release**, junto al original de
+  357 MB que ya está pendiente de eso. Es lo coherente con `*.pdf` en
+  `.gitignore` y con mantener público un repositorio ligero.
+- **(b) Meterlo con una excepción** (`!docs/fuentes/nyasa/*.pdf`). Aviso: son
+  53,7 MiB y GitHub avisa a partir de 50 MB por archivo; además quedaría en el
+  historial para siempre, y sacarlo después obliga a reescribir historia.
+
+La recomendación, si vale: **(a)**. Y **cambiar el mensaje del commit no es
+posible sin reescribir**, así que basta con que quede dicho aquí.
+
+**Propiedades verificadas del PDF** (`pdfinfo` + `pdfimages`):
+
+| | |
+| --- | --- |
+| páginas | 525 |
+| resolución | 200 ppi |
+| profundidad | 1 bit por píxel — bitonal, como anuncia el nombre |
+| tamaño | 56.274.205 bytes (54 MB) |
+
+**La fórmula de paginación, verificada aquí:** *página impresa N = página PDF
+N + 38*. Se renderizó la página 60 del PDF, que según la fórmula debe ser la
+impresa 22, y su encabezado lleva el numeral birmano **၂၂**. Coincide. Es la
+edición Sudhammavatī, contrastada por contenido en la p. 22 por el otro chat
+—eso último no se ha vuelto a verificar aquí, porque exige leer birmano—.
 
 ### Verificado en esta sesión
 
@@ -58,12 +103,13 @@ No se dio nada por bueno de oídas:
 - **Recomposición byte a byte:** se ejecutó `dividir_nyasa.py`, que trae su
   propia comprobación (`assert recomp == t`). Responde
   `recomposición byte a byte: OK`.
-- **Aviso para el que repita la comprobación a mano:** concatenar los nueve
+- **Aviso para quien repita la comprobación a mano:** concatenar los nueve
   archivos da 1.016.517 bytes frente a los 1.012.387 del master. **No es una
-  discrepancia**: son las nueve cabeceras de procedencia añadidas (4.130
-  bytes). La comprobación válida es la del script, que las descuenta.
+  discrepancia**: son las nueve cabeceras de procedencia (4.130 bytes). La
+  comprobación válida es la del script, que las descuenta.
 - **Las cinco anclas citadas** —§12, §52, §53, §271, §284— resuelven a los
   archivos que les tocan.
+- **La fórmula de páginas del escaneo**, como se ha dicho.
 - **`CLAUDE.md` no menciona todavía `docs/fuentes/nyasa/`.** Pendiente real.
 
 ### Correcciones
@@ -84,12 +130,11 @@ pāḷi.
    proyecto; hace falta concordancia.
 3. **Las anclas no son tipográficamente uniformes**: las hay sin negrita y con
    espacios (`( 570 )`). Cualquier emparejamiento mecánico va a perder casos.
-4. **Corrupción de espaciado extensa en los capítulos 4–8** (Samāsa, Taddhita,
+4. **Corrupción de espaciado en los capítulos 4–8** (Samāsa, Taddhita,
    Ākhyāta, Kibbidhāna, Uṇādi): palabras fusionadas y partidas a mitad de
    línea, p. ej. «gadhi iccetasmā ikapaccayohotītiñāpa naṃtthaṃ». Demasiado
    ambigua para arreglo mecánico: **se corrige capítulo por capítulo en el
-   punto de uso**, cuando cada capítulo entre en traducción. Los capítulos 1–3
-   están notablemente más limpios.
+   punto de uso**. Los capítulos 1–3 están notablemente más limpios.
 5. **El capítulo 7 se llama `Kitabbidhāna`** en esta edición, no
    `Kibbidhāna`. Forma consistente de la edición; se conserva.
 6. **Colofón duplicado** en el dutiyo pariccheda del Kibbidhāna, con texto
@@ -102,16 +147,23 @@ pāḷi.
 
 **Todo material tomado del Nyāsa se señala como suyo** antes de incorporarlo,
 para que Angel decida y se dé el crédito. Y la transcripción **lleva ruido de
-OCR: no se cita textualmente sin verificar**, como avisan las propias cabeceras
-de los extractos.
+OCR: no se cita textualmente sin verificar**, como avisan las cabeceras de los
+propios extractos. El escaneo de 1933 es el árbitro de lecturas.
+
+### En el project knowledge de claude.ai
+
+Subidos allí, para consulta desde chats sin acceso al repositorio: la errata,
+`Nyasa-01`, `Nyasa-02`, `Nyasa-03`, y los cortes del PDF 01 y 03.
 
 ### Pendientes del Nyāsa
 
-- **Escaneo en birmano como árbitro de lecturas**, verificando que la
-  paginación coincide con los marcadores `[p. N]`.
-- **Añadir `docs/fuentes/nyasa/` a `CLAUDE.md`**, junto a las demás fuentes.
+- **Decidir qué se hace con el escaneo** (a/b de arriba) y, en cualquier caso,
+  subir el original de 357 MB como asset de Release.
+- **Añadir `docs/fuentes/nyasa/` a `CLAUDE.md`.** Se suma al ítem ya abierto
+  sobre rutas editables.
 - Decidir la zona gris de la errata §3, punto por punto.
-- Decidir si los nueve extractos entran al repositorio o se regeneran (§1).
+- Verificar que la paginación del escaneo cuadra en más puntos que la p. 22
+  —la fórmula se comprobó en una sola página—.
 
 ## 3. LO QUE SIGUE ABIERTO, DEL BRIEFING 20
 
@@ -131,7 +183,7 @@ Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
    Sacaría a la luz las cuatro erratas sin decidir: `mānā`, `gāmanino`,
    `sakkhe`, la coma de `mātūbhi`. Candidato a sesión entera y en limpio.
    **Nota nueva: el Nyāsa es ahora un árbitro más para esa pasada**, con las
-   cautelas de la sección 2.
+   cautelas de la sección 2 —y el Nāma es de los capítulos limpios—.
 4. URL más corta (configuración de Cloudflare).
 5. `recursos/nombre/`: rediseño con la paleta nueva delante.
 6. Las listas «De similar declinación»; los opcionales nunca pedidos.
@@ -151,7 +203,9 @@ Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
 
 - **Ninguna orden de git desde el sandbox, ni siquiera `status`** — deja un
   `.git/index.lock` que Angel borra a mano. Para saber el estado del
-  repositorio: leer `.git/refs/heads/main` y `.git/logs/HEAD` como texto.
+  repositorio: leer `.git/refs/heads/main`, `.git/logs/HEAD` y `.git/index`
+  como archivos. Con eso se averigua el hash, el mensaje y qué está indexado,
+  que es cuanto hace falta.
 - Nada se edita dentro de `site/` salvo `pali.css`, `pali.js` y los SVG de la
   marca.
 - Lo tomado de Thitzana, Rūpasiddhi **o Nyāsa** se señala como suyo; la flecha
