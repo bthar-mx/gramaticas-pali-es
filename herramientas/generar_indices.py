@@ -63,9 +63,10 @@ OBRAS = [
      "Edición base: Bhikkhu U Nandisena (ITBMU)."),
     (None, "Padarūpasiddhi",
      "De Buddhappiya. Reordena el material de Kaccāyana por temas."),
-    (None, "Moggallāna-vyākaraṇa",
-     "De Moggallāna Thera. Tradición gramatical independiente de Kaccāyana."),
     (None, "Saddanīti", "De Aggavaṃsa. La gramática pāḷi más extensa."),
+    (None, "Nirutti-dīpanī",
+     "De Ledi Sayadaw. Una gramática moderna en siete capítulos en el mismo "
+     "orden que Kaccāyana."),
 ]
 
 RECURSOS = [
