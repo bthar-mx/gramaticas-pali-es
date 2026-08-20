@@ -195,7 +195,7 @@ Dūratthe, antikatthe, addhanimmāne, kālanimmāne, tvālope, disāyoge, vibhat
 
 **Kālanimmāne**: Ito bhikkhave ekanavutikappe Vipassī nāma Bhagavā loke udapādi (D. ii, 2). Ito tiṇṇaṃ māsānaṃ accayena parinibbāyissati (D. ii, 89\) icc evamādi.
 
-**Tvālope** kammādhikaraṇesu: Pāsādā saṅkameyya (S. i, 96), pāsādaṃ abhiruhitvā (saṅkameyya) vā. Pabbatā saṅkameyya, pabbataṃ abhiruhitvā (saṅkameyya) vā. Hatthikkhandhā saṅkameyya, hatthikkhandhaṃ abhiruhitvā (saṅkameyya) vā. Āsanā vuṭṭhaheyya, āsane nisīditvā (vuṭṭhaheyya) vā icc evamādi.
+**Tvālope** kammādhikaraṇesu: Pāsādā saṅkameyya (S. i, 96), pāsādaṃ abhiruhitvā (saṅkameyya) vā. Pabbatā saṅkameyya, pabbataṃ abhiruhitvā (saṅkameyya) vā. Hatthikkhandhā saṅkameyya (S. i, 96), hatthikkhandhaṃ abhiruhitvā (saṅkameyya) vā. Āsanā vuṭṭhaheyya, āsane nisīditvā (vuṭṭhaheyya) vā icc evamādi.
 
 **Disāyoge**: Avīcito yāva upari bhavaggam antare bahū sattanikāyā vasanti. Yato khemaṃ tato bhayaṃ (Khu. v, 193). Puratthimato, dakkhiṇato, pacchimato, uttarato aggī pajjalanti. Yato assosuṃ bhagavantaṃ. Uddhaṃ pādatalā adho kesamatthakā (D. ii, 233\) icc evamādi.
 
@@ -461,7 +461,7 @@ Yo paṭiggāhako tassa,
 
 icc evamādi.
 
-**Ārocanatthe**: Ārocayāmi vo bhikkhave; āmantayāmi vo bhikkhave (D. ii, 128); paṭivedayāmi vo bhikkhave (M. i, 339). Ārocayāmi te mahārāja (S. i, 101); āmantayāmi te mahārāja; paṭivedayāmi te mahārāja (S. i, 101\) icc evamādi.
+**Ārocanatthe**: Ārocayāmi vo bhikkhave (M. i, 339); āmantayāmi vo bhikkhave (D. ii, 128); paṭivedayāmi vo bhikkhave (M. i, 339). Ārocayāmi te mahārāja (S. i, 101); āmantayāmi te mahārāja; paṭivedayāmi te mahārāja (S. i, 101\) icc evamādi.
 
 **Tadatthe:** Ūnassa pāripūriyā taṃ cīvaraṃ nikkhipitabbaṃ. Buddhassa atthāya, Dhammassa atthāya, Saṃghassa atthāya, jīvitaṃ pariccajāmi icc evamādi.
 
@@ -978,7 +978,7 @@ Ejemplos:
 
 Sahādiyogatthe[^48] ca tatiyāvibhatti hoti.
 
-Sahā ’pi Gaggena saṃgho uposathaṃ kareyya (Vin. iii, 166), vinā pi Gaggena, mahatā bhikkhusaṃghena saddhiṃ (Vin. iii, 45; D. i, 1; ii, 81); sahassena samaṃ mitā (S. i, 18).
+Sahā ’pi Gaggena saṃgho uposathaṃ kareyya (Vin. iii, 166), vinā pi Gaggena (Vin. iii, 166), mahatā bhikkhusaṃghena saddhiṃ (Vin. iii, 45; D. i, 1; ii, 81); sahassena samaṃ mitā (S. i, 18).
 
 ---
 
@@ -1045,7 +1045,7 @@ Ejemplos:
 
 Sattamyatthe ca tatiyāvibhatti hoti.
 
-Tena kālena (Khu. iii, 41), tena samayena (Vin. i, 1). (Yena kālena, yena samayena)[^49] tena kho pana samayena.
+Tena kālena (Khu. iii, 41), tena samayena (Vin. i, 1). (Yena kālena, yena samayena)[^49] tena kho pana samayena (Vin. i,7; iii, 1; D. ii, 76).
 
 ---
 

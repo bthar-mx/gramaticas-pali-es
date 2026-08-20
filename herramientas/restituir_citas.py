@@ -66,13 +66,30 @@ RE_HDR_ESP = re.compile(r'^\*\*(\d{2,3})\\\.\s')
 RE_PALABRA = re.compile(r"[^\s;,.!?()\[\]]+")
 
 
+# Erratas de la edición base que el español ya trae corregidas (Angel,
+# sesión 22). No se corrige nada: se le enseñan al emparejador para que la
+# cita encuentre su sitio pese a la errata.
+VARIANTES = {
+    "saṅkhameyya": "saṅkameyya",   # §275
+    "bhikhave":    "bhikkhave",    # §277
+    "samyena":     "samayena",     # §290
+}
+RE_VARIANTES = re.compile("|".join(VARIANTES), re.IGNORECASE)
+
+
 def normalizar(s):
-    """Comparación indulgente: comillas, guiones y escapes del markdown."""
+    """Comparación indulgente: comillas, guiones y escapes del markdown.
+
+    También se prescinde de mayúsculas —Nandisena capitaliza el ejemplo que
+    abre la frase y el maestro no siempre— y se rectifican las erratas
+    conocidas de la edición base.
+    """
     s = s.replace("\\", "")
     s = (s.replace("’", "'").replace("‘", "'")
           .replace("“", '"').replace("”", '"')
           .replace("–", "-").replace("—", "-"))
-    s = unicodedata.normalize("NFC", s)
+    s = unicodedata.normalize("NFC", s).lower()
+    s = RE_VARIANTES.sub(lambda m: VARIANTES[m.group(0).lower()], s)
     return re.sub(r"\s+", " ", s)
 
 

@@ -3,15 +3,15 @@
   {
    "capitulo": "nama",
    "detectadas": 129,
-   "aplicadas": 116,
-   "pendientes": 13,
+   "aplicadas": 118,
+   "pendientes": 11,
    "reconstruccion": true
   },
   {
    "capitulo": "karaka",
    "detectadas": 99,
-   "aplicadas": 91,
-   "pendientes": 8,
+   "aplicadas": 95,
+   "pendientes": 4,
    "reconstruccion": true
   }
  ],
@@ -20,27 +20,32 @@
    "aplicadas": [
     {
      "sutta": 57,
-     "ancla": "Bhoti ayye",
+     "ancla": "bhoti ayye",
      "cita": "(Vin. ii, 280)"
     },
     {
      "sutta": 57,
-     "ancla": "Sā ayyā",
+     "ancla": "sā ayyā",
      "cita": "(Vin. ii, 307)"
     },
     {
      "sutta": 57,
-     "ancla": "Bhotiyo ayyāyo",
+     "ancla": "bhotiyo ayyāyo",
      "cita": "(Vin. ii, 288)"
     },
     {
      "sutta": 57,
-     "ancla": "Kharādiye",
+     "ancla": "kharādiye",
      "cita": "(Khu. v, 4)"
     },
     {
      "sutta": 68,
      "ancla": "matyā",
+     "cita": "(Khu. vi, 39)"
+    },
+    {
+     "sutta": 68,
+     "ancla": "nikatiyaṃ",
      "cita": "(Khu. vi, 39)"
     },
     {
@@ -55,22 +60,22 @@
     },
     {
      "sutta": 69,
-     "ancla": "Bārāṇasiṃ ahu rājā",
+     "ancla": "bārāṇasiṃ ahu rājā",
      "cita": "(Khu. v, 380)"
     },
     {
      "sutta": 70,
-     "ancla": "Pañcah' aṅgehi",
+     "ancla": "pañcah' aṅgehi",
      "cita": "(Vin. v, 343)"
     },
     {
      "sutta": 70,
-     "ancla": "Cakkh' āyatanaṃ",
+     "ancla": "cakkh' āyatanaṃ",
      "cita": "(Abhi. iii, 5)"
     },
     {
      "sutta": 71,
-     "ancla": "Agyāgāraṃ",
+     "ancla": "agyāgāraṃ",
      "cita": "(Vin. iii, 33)"
     },
     {
@@ -95,7 +100,7 @@
     },
     {
      "sutta": 77,
-     "ancla": "Gavaṃpati",
+     "ancla": "gavaṃpati",
      "cita": "(S. iii, 382)"
     },
     {
@@ -110,12 +115,12 @@
     },
     {
      "sutta": 83,
-     "ancla": "Appamādo amataṃ padaṃ",
+     "ancla": "appamādo amataṃ padaṃ",
      "cita": "(Khu. i, 16)"
     },
     {
      "sutta": 83,
-     "ancla": "Seyyo",
+     "ancla": "seyyo",
      "cita": "(Khu. i, 29)"
     },
     {
@@ -130,7 +135,7 @@
     },
     {
      "sutta": 89,
-     "ancla": "Sukhettesu brahmacārisu",
+     "ancla": "sukhettesu brahmacārisu",
      "cita": "(A. i, 352)"
     },
     {
@@ -145,18 +150,23 @@
     },
     {
      "sutta": 93,
-     "ancla": "Bandhumassa rañño",
+     "ancla": "bandhumassa rañño",
      "cita": "(D. ii, 6)"
     },
     {
      "sutta": 93,
-     "ancla": "Bandhumato rañño",
+     "ancla": "bandhumato rañño",
      "cita": "(D. ii, 13)"
     },
     {
      "sutta": 94,
-     "ancla": "Himavanto pabbato",
+     "ancla": "himavanto pabbato",
      "cita": "(Khu. i, 56)"
+    },
+    {
+     "sutta": 96,
+     "ancla": "isayo",
+     "cita": "(Khu. ii, 88)"
     },
     {
      "sutta": 96,
@@ -165,7 +175,7 @@
     },
     {
      "sutta": 98,
-     "ancla": "Mātulānī",
+     "ancla": "mātulānī",
      "cita": "(Khu. i, 219)"
     },
     {
@@ -175,7 +185,7 @@
     },
     {
      "sutta": 98,
-     "ancla": "Najjo sandanti",
+     "ancla": "najjo sandanti",
      "cita": "(S. ii, 178)"
     },
     {
@@ -185,47 +195,47 @@
     },
     {
      "sutta": 99,
-     "ancla": "Vaṇṇavantaṃ",
+     "ancla": "vaṇṇavantaṃ",
      "cita": "(Khu. i, 20)"
     },
     {
      "sutta": 102,
-     "ancla": "Buddhānaṃ Bhagavantānaṃ āciṇṇasamāciṇṇo",
+     "ancla": "buddhānaṃ bhagavantānaṃ āciṇṇasamāciṇṇo",
      "cita": "(Vin. i, \n114)"
     },
     {
      "sutta": 105,
-     "ancla": "Suttaso",
+     "ancla": "suttaso",
      "cita": "(A. ii, 207)"
     },
     {
      "sutta": 105,
-     "ancla": "Padaso",
+     "ancla": "padaso",
      "cita": "(Vin. ii, 25)"
     },
     {
      "sutta": 105,
-     "ancla": "Sabbaso",
+     "ancla": "sabbaso",
      "cita": "(A. i, 556)"
     },
     {
      "sutta": 106,
-     "ancla": "Dīghaso",
+     "ancla": "dīghaso",
      "cita": "(Vin. i, 227)"
     },
     {
      "sutta": 109,
-     "ancla": "hitāya sukhāya devamanussānaṃ Buddho loke uppajjati",
+     "ancla": "hitāya sukhāya devamanussānaṃ buddho loke uppajjati",
      "cita": "(A. i, 21)"
     },
     {
      "sutta": 114,
-     "ancla": "bhoti Kharādiye",
+     "ancla": "bhoti kharādiye",
      "cita": "(Khu. v, 4)"
     },
     {
      "sutta": 123,
-     "ancla": "Sīlavantassa jhāyino",
+     "ancla": "sīlavantassa jhāyino",
      "cita": "(Khu. i, 29)"
     },
     {
@@ -240,17 +250,12 @@
     },
     {
      "sutta": 127,
-     "ancla": "Satimā",
+     "ancla": "satimā",
      "cita": "(M. i, 70)"
     },
     {
      "sutta": 130,
-     "ancla": "Aduṃ",
-     "cita": "(Khu. v, 34)"
-    },
-    {
-     "sutta": 130,
-     "ancla": "Amuṃ",
+     "ancla": "amuṃ",
      "cita": "(M. i, 210)"
     },
     {
@@ -260,12 +265,12 @@
     },
     {
      "sutta": 132,
-     "ancla": "Ubhinnaṃ",
+     "ancla": "ubhinnaṃ",
      "cita": "(Khu. v, 18)"
     },
     {
      "sutta": 133,
-     "ancla": "Tisso vedanā",
+     "ancla": "tisso vedanā",
      "cita": "(D. iii, 181)"
     },
     {
@@ -279,18 +284,23 @@
      "cita": "(Khu. i, 3)"
     },
     {
+     "sutta": 135,
+     "ancla": "rañño rājino",
+     "cita": "(Khu. i, 324)"
+    },
+    {
      "sutta": 136,
      "ancla": "rājūnaṃ",
      "cita": "(Khu. i, 88)"
     },
     {
      "sutta": 140,
-     "ancla": "Tuvaṃ satthā",
+     "ancla": "tuvaṃ satthā",
      "cita": "(M. ii, 354)"
     },
     {
      "sutta": 147,
-     "ancla": "Pahāya vo bhikkhave gamissāmi",
+     "ancla": "pahāya vo bhikkhave gamissāmi",
      "cita": "(Khu. iv, 265)"
     },
     {
@@ -300,7 +310,7 @@
     },
     {
      "sutta": 147,
-     "ancla": "Dhammaṃ vo bhikkhave desessāmi",
+     "ancla": "dhammaṃ vo bhikkhave desessāmi",
      "cita": "(M. iii, 86)"
     },
     {
@@ -310,17 +320,17 @@
     },
     {
      "sutta": 147,
-     "ancla": "Tuṭṭho 'smi vo bhikkhave pakatiyā",
+     "ancla": "tuṭṭho 'smi vo bhikkhave pakatiyā",
      "cita": "(Khu. vi, 89)"
     },
     {
      "sutta": 147,
-     "ancla": "satthā no Bhagavā anuppatto",
+     "ancla": "satthā no bhagavā anuppatto",
      "cita": "(M. i, \n266)"
     },
     {
      "sutta": 148,
-     "ancla": "Dadāmi te gāmavarāni pañca",
+     "ancla": "dadāmi te gāmavarāni pañca",
      "cita": "(Khu. v, 229)"
     },
     {
@@ -330,12 +340,12 @@
     },
     {
      "sutta": 149,
-     "ancla": "Passeyya taṃ vassasataṃ arogaṃ",
+     "ancla": "passeyya taṃ vassasataṃ arogaṃ",
      "cita": "(Khu. vi, 14)"
     },
     {
      "sutta": 160,
-     "ancla": "Kammunā",
+     "ancla": "kammunā",
      "cita": "(Khu. i, 299)"
     },
     {
@@ -345,12 +355,12 @@
     },
     {
      "sutta": 173,
-     "ancla": "Aduṃ",
+     "ancla": "aduṃ",
      "cita": "(Khu. v, 34)"
     },
     {
      "sutta": 173,
-     "ancla": "Amhaṃ",
+     "ancla": "amhaṃ",
      "cita": "(M. i, 211)"
     },
     {
@@ -370,7 +380,7 @@
     },
     {
      "sutta": 181,
-     "ancla": "Manasi",
+     "ancla": "manasi",
      "cita": "(D. i, 12)"
     },
     {
@@ -415,12 +425,12 @@
     },
     {
      "sutta": 182,
-     "ancla": "Manaso",
+     "ancla": "manaso",
      "cita": "(Khu. ii, 14)"
     },
     {
      "sutta": 183,
-     "ancla": "Manomayaṃ",
+     "ancla": "manomayaṃ",
      "cita": "(D. i, 73)"
     },
     {
@@ -455,22 +465,22 @@
     },
     {
      "sutta": 185,
-     "ancla": "hoti na pāpiyo",
+     "ancla": "seyyo hoti na pāpiyo",
      "cita": "(S. i, 16)"
     },
     {
      "sutta": 185,
-     "ancla": "have sabbhi pavedayanti",
+     "ancla": "santo have sabbhi pavedayanti",
      "cita": "(Khu. i, 36)"
     },
     {
      "sutta": 205,
-     "ancla": "Caturo janā",
+     "ancla": "caturo janā",
      "cita": "(Khu. i, 336)"
     },
     {
      "sutta": 209,
-     "ancla": "Mātito",
+     "ancla": "mātito",
      "cita": "(D. i, 106)"
     },
     {
@@ -480,7 +490,7 @@
     },
     {
      "sutta": 221,
-     "ancla": "Tvaṃ pan' āvuso",
+     "ancla": "tvaṃ pan' āvuso",
      "cita": "(Vin. ii, 1)"
     },
     {
@@ -495,22 +505,22 @@
     },
     {
      "sutta": 227,
-     "ancla": "Ko taṃ ninditum arahati",
+     "ancla": "ko taṃ ninditum arahati",
      "cita": "(Khu. i, 47)"
     },
     {
      "sutta": 242,
-     "ancla": "Bhoti ayye",
+     "ancla": "bhoti ayye",
      "cita": "(Vin. ii, 280)"
     },
     {
      "sutta": 242,
-     "ancla": "bhoti Kharādiye",
+     "ancla": "bhoti kharādiye",
      "cita": "(Khu. v, 4)"
     },
     {
      "sutta": 261,
-     "ancla": "Bāhussaccaṃ",
+     "ancla": "bāhussaccaṃ",
      "cita": "(Khu. i, 4)"
     },
     {
@@ -540,7 +550,7 @@
     },
     {
      "sutta": 263,
-     "ancla": "Seyyo",
+     "ancla": "seyyo",
      "cita": "(A. i, 130)"
     },
     {
@@ -585,7 +595,7 @@
     },
     {
      "sutta": 269,
-     "ancla": "Ālasyaṃ",
+     "ancla": "ālasyaṃ",
      "cita": "(Abhi. iii, 364)"
     },
     {
@@ -595,17 +605,11 @@
     },
     {
      "sutta": 269,
-     "ancla": "Opammaṃ",
+     "ancla": "opammaṃ",
      "cita": "(M. ii, 42)"
     }
    ],
    "pendientes": [
-    {
-     "sutta": 68,
-     "cita": "(Khu. vi, 39)",
-     "previo": "khyaṃ.\nMatyaṃ, matiyaṃ, matyā  , matiyā. Nikatyaṃ. Nikatiyaṃ",
-     "motivo": "sin ancla única en su sutta"
-    },
     {
      "sutta": 68,
      "cita": "(Khu. vi, 315)",
@@ -619,9 +623,9 @@
      "motivo": "sin ancla única en su sutta"
     },
     {
-     "sutta": 96,
-     "cita": "(Khu. ii, 88)",
-     "previo": "ho attam āpajjate.\n \n\nAggayo; munayo (ItivuttaA. 114); Isayo",
+     "sutta": 130,
+     "cita": "(Khu. v, 34)",
+     "previo": "tissa aduṃ-ādeso hoti aṃ-sisu napuṃsake \nvattamānassa. \nAduṃ",
      "motivo": "sin ancla única en su sutta"
     },
     {
@@ -655,12 +659,6 @@
      "motivo": "sin ancla única en su sutta"
     },
     {
-     "sutta": 135,
-     "cita": "(Khu. i, 324)",
-     "previo": "ñño rājino icc ete ādesā honti se vibhattimhi.\nRañño, rājino",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
      "sutta": 173,
      "cita": "(M. ii, 175)",
      "previo": "puṃsakassa makāro sakāram āpajjate vā simhi vibhattimhi.\nAsu",
@@ -684,7 +682,7 @@
    "aplicadas": [
     {
      "sutta": 272,
-     "ancla": "Himavatā pabhavanti pañca mahānadiyo",
+     "ancla": "himavatā pabhavanti pañca mahānadiyo",
      "cita": "(MA. iii, 26)"
     },
     {
@@ -699,17 +697,17 @@
     },
     {
      "sutta": 272,
-     "ancla": "Te bhikkhū nānā kulā pabbajitā",
+     "ancla": "te bhikkhū nānā kulā pabbajitā",
      "cita": "(Vin. i, 9)"
     },
     {
      "sutta": 272,
-     "ancla": "Yato 'haṃ bhagini ariyāya jātiyā jāto",
+     "ancla": "yato 'haṃ bhagini ariyāya jātiyā jāto",
      "cita": "(M. ii, 306)"
     },
     {
      "sutta": 272,
-     "ancla": "Yato sarāmi attānaṃ",
+     "ancla": "yato sarāmi attānaṃ",
      "cita": "(Khu. vi, 175)"
     },
     {
@@ -724,37 +722,42 @@
     },
     {
      "sutta": 275,
-     "ancla": "ekanavutikappe Vipassī nāma Bhagavā loke udapādi",
+     "ancla": "ekanavutikappe vipassī nāma bhagavā loke udapādi",
      "cita": "(D. ii, 2)"
     },
     {
      "sutta": 275,
-     "ancla": "Ito tiṇṇaṃ māsānaṃ accayena parinibbāyissati",
+     "ancla": "ito tiṇṇaṃ māsānaṃ accayena parinibbāyissati",
      "cita": "(D. ii, 89\\)"
     },
     {
      "sutta": 275,
-     "ancla": "**Tvālope** kammādhikaraṇesu: Pāsādā saṅkameyya",
+     "ancla": "**tvālope** kammādhikaraṇesu: pāsādā saṅkameyya",
      "cita": "(S. i, 96)"
     },
     {
      "sutta": 275,
-     "ancla": "Yato khemaṃ tato bhayaṃ",
+     "ancla": "hatthikkhandhā saṅkameyya",
+     "cita": "(S. i, 96)"
+    },
+    {
+     "sutta": 275,
+     "ancla": "yato khemaṃ tato bhayaṃ",
      "cita": "(Khu. v, 193)"
     },
     {
      "sutta": 275,
-     "ancla": "Uddhaṃ pādatalā adho kesamatthakā",
+     "ancla": "uddhaṃ pādatalā adho kesamatthakā",
      "cita": "(D. ii, 233\\)"
     },
     {
      "sutta": 275,
-     "ancla": "Gāmadhammā vasaladhammā asaddhammā ārati virati paṭivirati",
+     "ancla": "gāmadhammā vasaladhammā asaddhammā ārati virati paṭivirati",
      "cita": "(Khu. viii, 42)"
     },
     {
      "sutta": 275,
-     "ancla": "**Suddhe**: Lobhaniyehi dhammehi suddho asaṃsaṭṭho",
+     "ancla": "**suddhe**: lobhaniyehi dhammehi suddho asaṃsaṭṭho",
      "cita": "(M. ii, 383)"
     },
     {
@@ -764,7 +767,7 @@
     },
     {
      "sutta": 275,
-     "ancla": "**Pamocane**: Parimutto dukkhasmā ti vadāmi",
+     "ancla": "**pamocane**: parimutto dukkhasmā ti vadāmi",
      "cita": "(S. ii, 26)"
     },
     {
@@ -774,7 +777,7 @@
     },
     {
      "sutta": 275,
-     "ancla": "Kasmā nu tumhaṃ daharā na mīyare",
+     "ancla": "kasmā nu tumhaṃ daharā na mīyare",
      "cita": "(Khu. v, 214)"
     },
     {
@@ -784,7 +787,7 @@
     },
     {
      "sutta": 275,
-     "ancla": "**Pubbayoge**: Pubbe 'va sambodhā",
+     "ancla": "**pubbayoge**: pubbe 'va sambodhā",
      "cita": "(M. i, 219; A. i, 261\\)"
     },
     {
@@ -799,7 +802,7 @@
     },
     {
      "sutta": 277,
-     "ancla": "kujjha Mahāvīra mā raṭṭhaṃ vinassa idaṃ",
+     "ancla": "kujjha mahāvīra mā raṭṭhaṃ vinassa idaṃ",
      "cita": "(Khu. v, 99\\)"
     },
     {
@@ -814,8 +817,13 @@
     },
     {
      "sutta": 277,
-     "ancla": "Te bhikkhū Bhagavato paccassosuṃ",
+     "ancla": "te bhikkhū bhagavato paccassosuṃ",
      "cita": "(D. ii, 9; M. i, 1; A. i, 1)"
+    },
+    {
+     "sutta": 277,
+     "ancla": "**ārocanatthe**: ārocayāmi vo bhikkhave",
+     "cita": "(M. i, 339)"
     },
     {
      "sutta": 277,
@@ -829,7 +837,7 @@
     },
     {
      "sutta": 277,
-     "ancla": "Ārocayāmi te mahārāja",
+     "ancla": "ārocayāmi te mahārāja",
      "cita": "(S. i, 101)"
     },
     {
@@ -839,22 +847,22 @@
     },
     {
      "sutta": 277,
-     "ancla": "hitāya sukhāya devamanussānaṃ Buddho loke uppajjati",
+     "ancla": "hitāya sukhāya devamanussānaṃ buddho loke uppajjati",
      "cita": "(D. ii, 179; 181; M. i, 117; A. i, 21)"
     },
     {
      "sutta": 277,
-     "ancla": "Bhikkhūnaṃ phāsuvihārāya vinayo paññatto",
+     "ancla": "bhikkhūnaṃ phāsuvihārāya vinayo paññatto",
      "cita": "(Vin. i, 24; v, 2\\)"
     },
     {
      "sutta": 277,
-     "ancla": "Alaṃ me Buddho",
+     "ancla": "alaṃ me buddho",
      "cita": "(Vin. i, 32)"
     },
     {
      "sutta": 277,
-     "ancla": "Alaṃ me rajjaṃ",
+     "ancla": "alaṃ me rajjaṃ",
      "cita": "(Khu. vi, 151)"
     },
     {
@@ -874,7 +882,7 @@
     },
     {
      "sutta": 277,
-     "ancla": "Upamaṃ te karissāmi",
+     "ancla": "upamaṃ te karissāmi",
      "cita": "(D. ii, 259; M. i, 203)"
     },
     {
@@ -884,27 +892,27 @@
     },
     {
      "sutta": 277,
-     "ancla": "Amhākaṃ maṇinā attho",
+     "ancla": "amhākaṃ maṇinā attho",
      "cita": "(Vin. i, 220)"
     },
     {
      "sutta": 277,
-     "ancla": "Bahūpakārā bhante Mahāpajāpatigotamī Bhagavato",
+     "ancla": "bahūpakārā bhante mahāpajāpatigotamī bhagavato",
      "cita": "(M. iii, 290)"
     },
     {
      "sutta": 277,
-     "ancla": "Bahūpakārā bhikkhave mātāpitaro puttānaṃ",
+     "ancla": "bahūpakārā bhikkhave mātāpitaro puttānaṃ",
      "cita": "(Khu. i, 269; A. i, 131\\)"
     },
     {
      "sutta": 278,
-     "ancla": "Sāvatthiyaṃ viharati Jetavane",
+     "ancla": "sāvatthiyaṃ viharati jetavane",
      "cita": "(A. i, 1; S. i, 1)"
     },
     {
      "sutta": 279,
-     "ancla": "Cakkhunā rūpaṃ passati",
+     "ancla": "cakkhunā rūpaṃ passati",
      "cita": "(D. ii, 269)"
     },
     {
@@ -939,7 +947,12 @@
     },
     {
      "sutta": 287,
-     "ancla": "Sahā 'pi Gaggena saṃgho uposathaṃ kareyya",
+     "ancla": "sahā 'pi gaggena saṃgho uposathaṃ kareyya",
+     "cita": "(Vin. iii, 166)"
+    },
+    {
+     "sutta": 287,
+     "ancla": "vinā pi gaggena",
      "cita": "(Vin. iii, 166)"
     },
     {
@@ -954,7 +967,7 @@
     },
     {
      "sutta": 290,
-     "ancla": "Tena kālena",
+     "ancla": "tena kālena",
      "cita": "(Khu. iii, 41)"
     },
     {
@@ -963,8 +976,13 @@
      "cita": "(Vin. i, 1)"
     },
     {
+     "sutta": 290,
+     "ancla": "tena kho pana samayena",
+     "cita": "(Vin. i,7; iii, 1; D. ii, 76)"
+    },
+    {
      "sutta": 292,
-     "ancla": "Gottena",
+     "ancla": "gottena",
      "cita": "(Khu. iii, 25\\)"
     },
     {
@@ -974,7 +992,7 @@
     },
     {
      "sutta": 294,
-     "ancla": "Namo te Buddhavīr' atthu",
+     "ancla": "namo te buddhavīr' atthu",
      "cita": "(S. i, 48)"
     },
     {
@@ -989,7 +1007,7 @@
     },
     {
      "sutta": 295,
-     "ancla": "Pāpā cittaṃ nivāraye",
+     "ancla": "pāpā cittaṃ nivāraye",
      "cita": "(Khu. i, 30)"
     },
     {
@@ -999,7 +1017,7 @@
     },
     {
      "sutta": 296,
-     "ancla": "Ananubodhā appaṭivedhā catunnaṃ ariyasaccānaṃ yathābhūtaṃ adassanā",
+     "ancla": "ananubodhā appaṭivedhā catunnaṃ ariyasaccānaṃ yathābhūtaṃ adassanā",
      "cita": "(D. ii, 77)"
     },
     {
@@ -1019,12 +1037,12 @@
     },
     {
      "sutta": 299,
-     "ancla": "Pabbajitam anu pabbajiṃsu",
+     "ancla": "pabbajitam anu pabbajiṃsu",
      "cita": "(D. ii, 25)"
     },
     {
      "sutta": 302,
-     "ancla": "Gambhīre odakantike",
+     "ancla": "gambhīre odakantike",
      "cita": "(Khu. i, 9)"
     },
     {
@@ -1039,12 +1057,12 @@
     },
     {
      "sutta": 306,
-     "ancla": "ssu maṃ Aggivessana tisso upamā paṭibhaṃsu",
+     "ancla": "ssu maṃ aggivessana tisso upamā paṭibhaṃsu",
      "cita": "(M. i, 307)"
     },
     {
      "sutta": 307,
-     "ancla": "Sace maṃ samaṇo Gotamo ālapissati",
+     "ancla": "sace maṃ samaṇo gotamo ālapissati",
      "cita": "(S. i, 179)"
     },
     {
@@ -1054,17 +1072,17 @@
     },
     {
      "sutta": 307,
-     "ancla": "Pubbaṇhasamayaṃ nivāsetvā",
+     "ancla": "pubbaṇhasamayaṃ nivāsetvā",
      "cita": "(Vin. i, 7; iii, 48; D. ii, 75; M. i, 118)"
     },
     {
      "sutta": 307,
-     "ancla": "ekaṃ samayaṃ Bhagavā",
+     "ancla": "ekaṃ samayaṃ bhagavā",
      "cita": "(D. i, 1)"
     },
     {
      "sutta": 308,
-     "ancla": "Kusalā naccagītassa sikkhitā cāturitthiyo",
+     "ancla": "kusalā naccagītassa sikkhitā cāturitthiyo",
      "cita": "(Khu. vi, 156, 158)"
     },
     {
@@ -1074,47 +1092,47 @@
     },
     {
      "sutta": 309,
-     "ancla": "Tassa bhavanti vattāro",
+     "ancla": "tassa bhavanti vattāro",
      "cita": "(M. ii, 133-5)"
     },
     {
      "sutta": 309,
-     "ancla": "Assavanatā dhammassa parihāyanti",
+     "ancla": "assavanatā dhammassa parihāyanti",
      "cita": "(Vin. iii, 6; D. ii, 32, 40; M. i, 224; ii, 292; S. i, 139)"
     },
     {
      "sutta": 309,
-     "ancla": "Kinnu kho ahaṃ tassa sukhassa bhāyāmi",
+     "ancla": "kinnu kho ahaṃ tassa sukhassa bhāyāmi",
      "cita": "(M. i, 313)"
     },
     {
      "sutta": 309,
-     "ancla": "Sabbe tasanti daṇḍassa",
+     "ancla": "sabbe tasanti daṇḍassa",
      "cita": "(Khu. i, 32)"
     },
     {
      "sutta": 309,
-     "ancla": "Sabbe bhāyanti maccuno",
+     "ancla": "sabbe bhāyanti maccuno",
      "cita": "(Khu. i, 32)"
     },
     {
      "sutta": 309,
-     "ancla": "Bhīto catunnaṃ āsīvisānaṃ ghoravisānaṃ",
+     "ancla": "bhīto catunnaṃ āsīvisānaṃ ghoravisānaṃ",
      "cita": "(S. ii, 381-2)"
     },
     {
      "sutta": 310,
-     "ancla": "Sundar' āvuso ime ājīvakā bhikkhūsu abhivādenti",
+     "ancla": "sundar' āvuso ime ājīvakā bhikkhūsu abhivādenti",
      "cita": "(Vin. i, 313)"
     },
     {
      "sutta": 310,
-     "ancla": "Hatthesu piṇḍāya caranti",
+     "ancla": "hatthesu piṇḍāya caranti",
      "cita": "(Vin. iii, 125)"
     },
     {
      "sutta": 310,
-     "ancla": "Dīpi cammesu haññate",
+     "ancla": "dīpi cammesu haññate",
      "cita": "(Khu. vi, 172)"
     },
     {
@@ -1124,12 +1142,12 @@
     },
     {
      "sutta": 311,
-     "ancla": "Saṃghe dinnaṃ mahapphalaṃ",
+     "ancla": "saṃghe dinnaṃ mahapphalaṃ",
      "cita": "(Khu. ii, 49)"
     },
     {
      "sutta": 311,
-     "ancla": "saṃghe Gotami dehi",
+     "ancla": "saṃghe gotami dehi",
      "cita": "(M. iii, 296)"
     },
     {
@@ -1141,12 +1159,6 @@
    "pendientes": [
     {
      "sutta": 275,
-     "cita": "(S. i, 96)",
-     "previo": "ataṃ abhiruhitvā (saṅkameyya) vā. Hatthikkhandhā saṅkhameyya",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 275,
      "cita": "(Khu. vii, 111; VinA. i, 22; DA. i, 24\\)",
      "previo": "yyākaraṇā, udānā, itivuttakā, jātakā, abbhutadhammā, vedallā",
      "motivo": "sin ancla única en su sutta"
@@ -1155,24 +1167,6 @@
      "sutta": 275,
      "cita": "(Khu. vii, 111; VinA. i, 22; DA. i, 24\\)",
      "previo": "yyākaraṇā, udānā, itivuttakā, jātaka, abbhutadhammā, vedallā",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 277,
-     "cita": "(M. i, 339)",
-     "previo": "niyā.\n\n\ticc evamādi.\n\n**Ārocanatthe**: Ārocayāmi vo bhikhave",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 287,
-     "cita": "(Vin. iii, 166)",
-     "previo": "Sahā ‘pi Gaggena saṃgho uposathaṃ kareyya  , vinā pi gaggena",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 290,
-     "cita": "(Vin. i,7; iii, 1; D. ii, 76)",
-     "previo": "a  . (Yena kālena, yena samayena)[^35] tena kho pana samyena",
      "motivo": "sin ancla única en su sutta"
     },
     {
