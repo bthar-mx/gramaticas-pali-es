@@ -458,6 +458,15 @@ hr.div { border: none; border-top: .5px solid var(--border); margin: .85rem 0; }
 }
 .ref-tip:hover .ref-tip-box { display: block; }
 
+/* Citas canónicas del bloque pāḷi: (Khu. i, 336). Aparato editorial, no
+   texto pāḷi, de ahí el cuerpo menor y la tinta atenuada; el emergente
+   desata la sigla. Guía de estilo §5. */
+.cita-term {
+  font-size: .88em; color: var(--text3);
+  border-bottom: 1px dotted var(--border2); cursor: help;
+  white-space: nowrap;
+}
+
 /* ── Nav tooltips ────────────────────────────────────────────────── */
 .nav-tip-wrap { position: relative; display: inline-block; }
 .nav-btn {

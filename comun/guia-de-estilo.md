@@ -87,6 +87,51 @@ Justo después de la línea del sutta, se incluye el desglose en componentes/pal
 - **En el texto pāḷi:** se conservan las referencias originales (p. ej. *Khu. i, 67*; *Vin. iii, 19*; *M. i, 243*).
 - **En las líneas traducidas al español:** estas referencias **se omiten**. Es suficiente con que aparezcan en el texto pāḷi.
 
+### 5.1 Restitución (sesión 22)
+
+Durante la traducción de los capítulos 2 y 3 las referencias se retiraron
+también del pāḷi, con el plan —briefings 04 y 05, §10.1— de reponerlas «en la
+fase HTML». Nunca se hizo. Se han restituido con
+`herramientas/restituir_citas.py`, que las toma de la edición base, las
+coloca sólo en el bloque pāḷi y verifica cada inserción por reconstrucción.
+Las que no tienen ancla única no se colocan: quedan listadas en
+`docs/fuentes/citas-canonicas.json` a la espera de decisión.
+
+El Sandhi-Kappa nunca las perdió: es anterior a aquella decisión.
+
+### 5.2 Presentación
+
+No se marcan en el maestro. El generador las reconoce solas —la sigla es un
+conjunto cerrado y el tomo va en romanos— y las envuelve en un emergente que
+desata la sigla. **La expansión es mecánica, no una identificación de la
+edición:** el tomo y la página remiten a la que usa Nandisena, que no consta
+en los archivos del proyecto.
+
+<!-- DUDA: ¿qué edición hay detrás de los números de tomo y página de
+     Nandisena? Si es la birmana de la Sexta Recitación, conviene decirlo en
+     el emergente; mientras no se confirme, no se nombra ninguna. -->
+
+| Sigla | Se desata como |
+| ----- | -------------- |
+| `D.` | Dīgha-nikāya |
+| `M.` | Majjhima-nikāya |
+| `S.` | Saṃyutta-nikāya |
+| `A.` | Aṅguttara-nikāya |
+| `Khu.` | Khuddaka-nikāya |
+| `Vin.` | Vinaya-piṭaka |
+| `Abhi.` | Abhidhamma-piṭaka |
+| `J.` | Jātaka |
+| `DA.` `MA.` `SA.` `AA.` | el aṭṭhakathā del nikāya correspondiente |
+| `DhA.` | Dhammapada-aṭṭhakathā |
+| `UdānaA.` | Udāna-aṭṭhakathā |
+| `PetavatthuA.` | Petavatthu-aṭṭhakathā |
+| `Sad.` | Saddanīti |
+| `Mog.-pañcikā` | Moggallāna-pañcikā |
+
+La tabla vive en `herramientas/generar_capitulo.py` (`ABREVIATURAS`). Las
+siglas que no estén ahí no reciben emergente: aparecen tal cual, que es
+preferible a desatarlas a ojo.
+
 ---
 
 ## 6. Notas al pie (notas del traductor)

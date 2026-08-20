@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noto Serif frente a Gentium — cuerpo de texto de los capítulos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Los mismos valores que usan los capítulos: no es una maqueta bonita,
+   es el cuerpo de texto real a su tamaño real. */
+:root{
+  --bg:#FAFAF8; --bg2:#F3F2EE; --text:#1A1917; --text2:#4A4845; --text3:#8C8A85;
+  --border:rgba(28,26,22,.11); --accent:#534AB7; --haritala:#5C4008;
+  --noto:'Noto Serif',Georgia,serif;
+  --gentium:'Gentium Book Plus','Noto Serif',Georgia,serif;
+  --mono:'JetBrains Mono',monospace;
+}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:15px/1.7 var(--noto);padding:0 0 60px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{padding:34px 0 18px;border-bottom:.5px solid var(--border);margin-bottom:26px}
+h1{font:600 24px/1.25 var(--gentium);margin:0 0 6px}
+.lede{color:var(--text2);font-size:14px;margin:0;max-width:70ch}
+.aviso{margin:14px 0 0;font:12px/1.6 var(--mono);color:var(--haritala);
+  border-left:2px solid var(--haritala);padding-left:10px;max-width:78ch}
+.par{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+@media (max-width:860px){.par{grid-template-columns:1fr}}
+.col h2{font:600 10.5px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;
+  color:var(--haritala);margin:0 0 12px;padding-bottom:7px;
+  border-bottom:.5px solid var(--border)}
+.col.noto .cuerpo{font-family:var(--noto)}
+.col.gentium .cuerpo{font-family:var(--gentium)}
+.tarjeta{background:var(--bg2);border:.5px solid var(--border);border-radius:8px;
+  padding:14px 16px;margin-bottom:12px}
+.titulo{font-size:16px;line-height:1.4;margin:0 0 4px}
+.num{font:12px/1 var(--mono);color:var(--text3)}
+.desglose{font:11px/1.5 var(--mono);color:var(--text3);margin:4px 0 0}
+.pali{font-style:italic;margin:10px 0 0}
+.es{margin:10px 0 0}
+b{font-weight:700}
+.dia{color:var(--haritala)}
+.escala{margin:30px 0 0;padding-top:18px;border-top:.5px solid var(--border)}
+.escala p{margin:0 0 6px}
+.s22{font-size:22px}.s18{font-size:18px}.s15{font-size:15px}.s13{font-size:13px}.s11{font-size:11px}
+.control{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5;
+  border-bottom:.5px solid var(--border);margin-bottom:22px}
+button{font:600 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;
+  padding:10px 14px;border:1px solid var(--border);background:var(--bg2);
+  color:var(--text2);border-radius:3px;cursor:pointer;margin-right:8px}
+button[aria-pressed=true]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.solo-uno .par{grid-template-columns:1fr}
+.solo-uno .col.oculta{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Noto Serif frente a Gentium Book Plus</h1>
+  <p class="lede">El mismo pasaje del Nāma-Kappa (§59 / Kacc. 182), con los tamaños y
+  el interlineado que los capítulos usan de verdad. A la izquierda, la tipografía
+  actual del cuerpo; a la derecha, la que ya usan los títulos y las barras laterales.</p>
+  <p class="aviso">Esto es un borrador de trabajo: no forma parte del sitio ni se
+  publica. Vive en docs/borradores/ y no se sube al repositorio.</p>
+</header>
+
+<div class="control">
+  <button id="b-par" aria-pressed="true">Lado a lado</button>
+  <button id="b-noto" aria-pressed="false">Sólo Noto Serif</button>
+  <button id="b-gen" aria-pressed="false">Sólo Gentium</button>
+</div>
+
+<div class="par" id="par">
+
+  <div class="col noto" data-col="noto">
+    <h2>Noto Serif — lo que hay ahora</h2>
+    <div class="cuerpo">
+      <div class="tarjeta">
+        <p class="titulo"><span class="num">59 · 182 ·</span> Te itthikhyā po <span class="num">(206)</span></p>
+        <p class="desglose">Te + itthikhyā + po, 3</p>
+      </div>
+      <p class="pali">Te ivaṇṇ’-uvaṇṇā yadā itthikhyā, tadā pasaññā honti.
+      Rattiyā, itthiyā, dhenuyā, vadhuyā. Itthikhyā ti kimatthaṃ? Isinā,
+      bhikkhunā. Pa icc anena kvattho? Pato yā.</p>
+      <p class="es">Aquellas que indican [género] femenino [reciben el nombre de] ‘pa’.
+      Aquellas letras ‘i’, ‘ī’ y ‘u’, ‘ū’, cuando indican [género] femenino, reciben
+      el nombre de ‘pa’. Ejemplos: <b>rattiyā</b> (de noche), <b>itthiyā</b> (de la
+      mujer), <b>dhenuyā</b> (de la vaca), <b>vadhuyā</b> (de la nuera). ¿Cuál es la
+      finalidad de decir «indican [género] femenino»? [Para excluir ejemplos como]
+      «isinā» (por el sabio), «bhikkhunā» (por el bhikkhu).</p>
+      <div class="escala">
+        <p class="s22">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s18">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s15">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s13">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s11">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s15">ā ī ū ṃ ṁ ñ ṭ ḍ ṇ ḷ ṅ · Ā Ī Ū Ṃ Ñ Ṭ Ḍ Ṇ Ḷ Ṅ</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col gentium" data-col="gentium">
+    <h2>Gentium Book Plus — la propuesta</h2>
+    <div class="cuerpo">
+      <div class="tarjeta">
+        <p class="titulo"><span class="num">59 · 182 ·</span> Te itthikhyā po <span class="num">(206)</span></p>
+        <p class="desglose">Te + itthikhyā + po, 3</p>
+      </div>
+      <p class="pali">Te ivaṇṇ’-uvaṇṇā yadā itthikhyā, tadā pasaññā honti.
+      Rattiyā, itthiyā, dhenuyā, vadhuyā. Itthikhyā ti kimatthaṃ? Isinā,
+      bhikkhunā. Pa icc anena kvattho? Pato yā.</p>
+      <p class="es">Aquellas que indican [género] femenino [reciben el nombre de] ‘pa’.
+      Aquellas letras ‘i’, ‘ī’ y ‘u’, ‘ū’, cuando indican [género] femenino, reciben
+      el nombre de ‘pa’. Ejemplos: <b>rattiyā</b> (de noche), <b>itthiyā</b> (de la
+      mujer), <b>dhenuyā</b> (de la vaca), <b>vadhuyā</b> (de la nuera). ¿Cuál es la
+      finalidad de decir «indican [género] femenino»? [Para excluir ejemplos como]
+      «isinā» (por el sabio), «bhikkhunā» (por el bhikkhu).</p>
+      <div class="escala">
+        <p class="s22">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s18">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s15">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s13">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s11">Saṅkhārā aniccā — ñāṇadassana</p>
+        <p class="s15">ā ī ū ṃ ṁ ñ ṭ ḍ ṇ ḷ ṅ · Ā Ī Ū Ṃ Ñ Ṭ Ḍ Ṇ Ḷ Ṅ</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+const par = document.getElementById('par');
+const botones = {
+  'b-par':  null,
+  'b-noto': 'gentium',   /* qué columna se oculta */
+  'b-gen':  'noto'
+};
+Object.keys(botones).forEach(id => {
+  document.getElementById(id).addEventListener('click', () => {
+    Object.keys(botones).forEach(x =>
+      document.getElementById(x).setAttribute('aria-pressed', x === id));
+    const ocultar = botones[id];
+    document.body.classList.toggle('solo-uno', !!ocultar);
+    par.querySelectorAll('.col').forEach(c =>
+      c.classList.toggle('oculta', !!ocultar && c.dataset.col === ocultar));
+  });
+});
+</script>
+</body>
+</html>

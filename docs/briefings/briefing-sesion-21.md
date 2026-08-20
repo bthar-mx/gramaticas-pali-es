@@ -238,11 +238,15 @@ Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
 8. **El siguiente capítulo a traducir: sin decidir y hay que preguntarlo.** El
    4 (Samāsa) vive en otro hilo y sus archivos no se tocan. *Y ojo: el
    capítulo 4 del Nyāsa es de los que llevan la corrupción de espaciado.*
-9. **`memory.md` del proyecto:** el briefing 20 dejó redactada la versión al
-   día y se la entregó a Angel para pegarla en claude.ai, porque el archivo es
-   de sólo lectura desde Cowork. **Comprobar si ya está pegado.** Si no, el
-   viejo sigue diciendo que el Nāma-Kappa está parado en §203, que es falso —
-   los capítulos 1–3 están completos y publicados.
+9. **`memory.md` del proyecto: RESUELTO el 20-08 por la tarde.** Ya trae el
+   texto nuevo —capítulos 1, 2 y 3 publicados, con nota explícita de que lo del
+   §203 era falso—. No hay nada que hacer aquí.
+
+   Dos cosas aprendidas por el camino, por si vuelve a pasar: **la memoria no
+   está disponible desde Cowork**, así que ningún chat de Cowork puede
+   escribirla —hay que hacerlo desde claude.ai web, Desktop o móvil—; y **el
+   panel tarda en reflejar los cambios**, de modo que ver el texto viejo no
+   significa que la escritura haya fallado. Aquí tardó unas horas.
 
 ## 4. RECORDATORIOS QUE NO CAMBIAN
 

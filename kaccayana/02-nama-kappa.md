@@ -76,11 +76,11 @@ Aquí el género \[y la forma final\] debe establecerse de tal manera que no con
 
 Ālapanatthe si gasañño hoti. 
 
-Bhoti ayye; bhoti kaññe; bhoti Kharādiye. 
+Bhoti ayye (Vin. ii, 280); bhoti kaññe; bhoti Kharādiye (Khu. v, 4). 
 
-Ālapane ti kimatthaṃ? Sā ayyā. 
+Ālapane ti kimatthaṃ? Sā ayyā (Vin. ii, 307). 
 
-Sī ti kimatthaṃ? Bhotiyo ayyāyo. 
+Sī ti kimatthaṃ? Bhotiyo ayyāyo (Vin. ii, 288). 
 
 Ga icc anena kvattho? Ghat’ e ca.
 
@@ -380,7 +380,7 @@ Ejemplos:
 
 Pa icc etasmā smiṃ smā icc etesaṃ aṃ-ā ādesā honti vā yathāsaṅkhyaṃ. 
 
-Matyaṃ, matiyaṃ, matyā, matiyā. Nikatyaṃ, nikatiyaṃ, nikatyā, nikatiyā. Vikatyaṃ, vikatiyaṃ, vikatyā, vikatiyā. Viratyaṃ, viratiyaṃ, viratyā, viratiyā. Ratyaṃ, ratiyaṃ, ratyā, ratiyā. Puthabyaṃ, puthaviyaṃ, puthabyā, puthaviyā. Pavatyaṃ, pavatyā, pavattiyaṃ, pavattiyā.
+Matyaṃ, matiyaṃ, matyā (Khu. vi, 39), matiyā. Nikatyaṃ, nikatiyaṃ, nikatyā (Khu. v, 9), nikatiyā. Vikatyaṃ, vikatiyaṃ, vikatyā, vikatiyā. Viratyaṃ, viratiyaṃ, viratyā, viratiyā. Ratyaṃ, ratiyaṃ, ratyā, ratiyā. Puthabyaṃ, puthaviyaṃ, puthabyā, puthaviyā. Pavatyaṃ, pavatyā, pavattiyaṃ, pavattiyā.
 
 ---
 
@@ -406,7 +406,7 @@ Ejemplos:
 
 Vā ti kimatthaṃ? Ādismiṃ, ādimhi nāthaṃ namassitvāna. 
 
-Caggahaṇena aññasmā pi smiṃvacanassa ā-o-aṃ ādesā honti. Divā ca ratto ca haranti ye baliṃ. Bārāṇasiṃ ahu rājā.
+Caggahaṇena aññasmā pi smiṃvacanassa ā-o-aṃ ādesā honti. Divā ca ratto ca haranti ye baliṃ (Khu. i, 312). Bārāṇasiṃ ahu rājā (Khu. v, 380).
 
 ---
 
@@ -443,7 +443,7 @@ Tiyantaṃ pacchiyāgāre, aggiyāgāre, bhikkhuvāsane nisīdati, puthuvāsane 
 
 Sare ti kimatthaṃ? Timalaṃ, tiphalaṃ, ticatukkaṃ, tidaṇḍaṃ, tilokaṃ, tinayanaṃ, tipāsaṃ, tihaṃsaṃ, tibhavaṃ, tikhandhaṃ, tipiṭakaṃ, tivedanaṃ, catuddisaṃ, puthubhūtaṃ. 
 
-Vā ti kimatthaṃ? Pañcah’ aṅgehi, tīhākārehi. Cakkh’ āyatanaṃ. 
+Vā ti kimatthaṃ? Pañcah’ aṅgehi (Vin. v, 343), tīhākārehi. Cakkh’ āyatanaṃ (Abhi. iii, 5). 
 
 Vā ti vikappanatthaṃ? Ikārassa ayādeso hoti. Vatthuttayaṃ.
 
@@ -473,7 +473,7 @@ Ejemplos:
 
 Jha-lānaṃ yakāra-vākārādesā honti sare pare yathāsaṅkhyaṃ. 
 
-Agyāgāraṃ; cakkh’ āyatanaṃ; svāgataṃ; te mahāvīra. 
+Agyāgāraṃ (Vin. iii, 33); cakkh’ āyatanaṃ (Abhi. iii, 5); svāgataṃ (Khu. v, 300); te mahāvīra. 
 
 Caggahaṇaṃ sampiṇḍanatthaṃ.
 
@@ -499,7 +499,7 @@ Ejemplos:
 
 Pasaññassa ca ivaṇṇassa vibhattādese sare pare yakārādeso hoti. 
 
-Puthabyā; ratyā; matyā. 
+Puthabyā; ratyā (Khu. vi, 315); matyā (Khu. vi, 39). 
 
 Sare ti kimatthaṃ? Puthaviyaṃ.
 
@@ -641,7 +641,7 @@ Ejemplos:
 
 Tato gosaddato naṃvacanassa aṃādeso hoti, go icc etassa okārassa avādeso hoti patimhi pare ālutte ca samāse. 
 
-Gavaṃpati. 
+Gavaṃpati (S. iii, 382). 
 
 Alutte ti kimatthaṃ? Gopati. 
 
@@ -679,9 +679,9 @@ Gavassakaṃ, gaveḷakaṃ, gavājinaṃ.
 
 Caggahaṇena uvaṇṇa icc evam antānaṃ liṅgānaṃ uva-ava-urādesā honti smiṃ-yo icc etesu kvaci. 
 
-Bhuvi, pasavo, guravo, caturo. 
+Bhuvi, pasavo, guravo, caturo (Khu. i, 293). 
 
-Sare ti kimatthaṃ? Godhano, govindho.
+Sare ti kimatthaṃ? Godhano, govindho (D. ii, 186).
 
 ---
 
@@ -835,13 +835,14 @@ Saralopo hoti amādesa-paccayādimhi, saralope tu pakati hoti.
 
 Purisaṃ, purise, pāpaṃ, pāpe, pāpiyo, pāpiṭṭho. 
 
-Amādesapaccayādimhī ti kimatthaṃ? Appamādo amataṃ padaṃ. 
+Amādesapaccayādimhī ti kimatthaṃ? Appamādo amataṃ padaṃ (Khu. i, 16). 
 
 Saralope ti kimatthaṃ? Purisassa, daṇḍinaṃ. 
 
 Tuggahaṇam avadhāraṇatthaṃ? Bhikkhunī, gahapatānī. 
 
-Pakatiggahaṇasāmatthena puna sandhibhāvo ca hoti. Seyyo; seṭṭho; jeyyo; jeṭṭho.
+Pakatiggahaṇasāmatthena puna sandhibhāvo ca hoti. Seyyo (Khu. i, 29); seṭṭho (Vin. i, 
+4); jeyyo; jeṭṭho (D. ii, 13).
 
 ---
 
@@ -1039,7 +1040,7 @@ Aggīsu, aggīnaṃ, aggīhi; rattīsu, rattīnaṃ, rattīhi; bhikkhūsu, bhikk
 
 Etesv ti kimatthaṃ? Agginā, pāṇinā, daṇḍinā. 
 
-Caggahaṇam avadhāraṇatthaṃ. Sukhettesu brahmacārisu; dhammam akkhāsi Bhagavā; bhikkhunaṃ datvā sakehi pāṇibhi.
+Caggahaṇam avadhāraṇatthaṃ. Sukhettesu brahmacārisu (A. i, 352); dhammam akkhāsi Bhagavā; bhikkhunaṃ datvā sakehi pāṇibhi (Khu. ii, 138).
 
 ---
 
@@ -1166,7 +1167,7 @@ Por la inclusión de “anta”, la vocal final del sufijo ‘ntu’ se conviert
 
 Sabbass’ eva ntupaccayassa attaṃ hoti vā aṃ sa icc etesu. 
 
-Satimaṃ bhikkhuṃ, satimantaṃ bhikkhuṃ vā. Bandhumaṃ rājānaṃ, bandhumantaṃ rājānaṃ vā. Satimassa bhikkhuno, satimato bhikkhuno vā. Bandhumassa rañño suṅkaṃ. Bandhumato rañño vā suṅkaṃ deti.
+Satimaṃ bhikkhuṃ, satimantaṃ bhikkhuṃ vā. Bandhumaṃ rājānaṃ, bandhumantaṃ rājānaṃ vā (D. ii, 14). Satimassa bhikkhuno, satimato bhikkhuno vā. Bandhumassa rañño (D. ii, 6) suṅkaṃ. Bandhumato rañño (D. ii, 13) vā suṅkaṃ deti.
 
 Etesv ti kimatthaṃ? Satimā bhikkhu. Bandhumā rājā.
 
@@ -1191,7 +1192,7 @@ Ejemplos:
 
 Ntupaccayassa antassa attaṃ hoti vā simhi vibhattimhi. 
 
-Himavanto pabbato. 
+Himavanto pabbato (Khu. i, 56). 
 
 Vā ti kimatthaṃ? Himavā pabbato.
 
@@ -1239,7 +1240,7 @@ Ejemplos:
 
 Yosu akatarasso jho attam āpajjate. 
 
-Aggayo, munayo, isayo, gahapatayo. 
+Aggayo, munayo, isayo, gahapatayo (Khu. vi, 423). 
 
 Yosv ti kimatthaṃ? Aggīsu. 
 
@@ -1310,11 +1311,12 @@ Ejemplos:
 
 Mātula icc evam ādīnaṃ anto ānattam āpajjate īkāre paccaye pare. 
 
-Mātulānī, ayyakānī, varuṇānī. 
+Mātulānī (Khu. i, 219), ayyakānī, varuṇānī. 
 
-Īkāre ti kimatthaṃ? Bhikkhunī, rājinī, jālinī, gahapatānī. 
+Īkāre ti kimatthaṃ? Bhikkhunī, rājinī, jālinī, gahapatānī (Vin. i, 314). 
 
-Ānattaggahaṇena nadī icc etassa dīsaddassa jjo-jjā-ādesā honti saha vibhattiyā yo nā sa icc etesu. Najjo sandanti; najjā kataṃ taraṅgaṃ; najjā nerañjarāya tīre.
+Ānattaggahaṇena nadī icc etassa dīsaddassa jjo-jjā-ādesā honti saha vibhattiyā yo nā sa icc etesu. Najjo sandanti (S. ii, 178); najjā kataṃ taraṅgaṃ; najjā nerañjarāya tīre (Vin. 
+iii, 1).
 
 ---
 
@@ -1345,7 +1347,7 @@ Sabbato liṅgato smā hi smiṃ icc etesaṃ mhā bhi mhi icc ete ādesā honti
 
 Purisamhā, purisasmā; purisebhi, purisehi; purisamhi, purisasmiṃ. 
 
-Smā-hi-smiṃnam iti kimatthaṃ? Vaṇṇavantaṃ agandhakaṃ viruḷhapupphaṃ; mahantaṃ chattaṃ mahāchattaṃ; mahantaṃ dhajaṃ mahādhajaṃ.
+Smā-hi-smiṃnam iti kimatthaṃ? Vaṇṇavantaṃ (Khu. i, 20) agandhakaṃ viruḷhapupphaṃ; mahantaṃ chattaṃ mahāchattaṃ; mahantaṃ dhajaṃ mahādhajaṃ.
 
 ---
 
@@ -1423,7 +1425,8 @@ Sabbesaṃ sabbanāmānaṃ anto akāro ettam āpajjate naṃmhi vibhattimhi.
 
 Sabbesaṃ, sabbesānaṃ; yesaṃ, yesānaṃ; tesaṃ, tesānaṃ; imesaṃ, imesānaṃ; kesaṃ, kesānaṃ; itaresaṃ, itaresānaṃ; katamesaṃ, katamesānaṃ. 
 
-Sabbanāmānam iti kimatthaṃ? Buddhānaṃ Bhagavantānaṃ āciṇṇasamāciṇṇo. 
+Sabbanāmānam iti kimatthaṃ? Buddhānaṃ Bhagavantānaṃ āciṇṇasamāciṇṇo (Vin. i, 
+114). 
 
 Akāro ti kimatthaṃ? Amūsaṃ, amūsānaṃ. 
 
@@ -1520,7 +1523,7 @@ Ejemplos:
 
 Tasmā akārato nāvacanassa so-ādeso hoti vā. 
 
-Atthaso dhammaṃ jānāti. Byañjanaso atthaṃ jānāti. Akkharaso. Suttaso. Padaso. Yasaso. Upāyaso. Sabbaso. Thāmaso. Ṭhānaso. 
+Atthaso dhammaṃ jānāti. Byañjanaso atthaṃ jānāti. Akkharaso. Suttaso (A. ii, 207). Padaso (Vin. ii, 25). Yasaso. Upāyaso. Sabbaso (A. i, 556). Thāmaso. Ṭhānaso. 
 
 Vā ti kimatthaṃ? Pādena vā pādārahena vā atirekapādena vā yo bhikkhu theyyacittena parassa bhaṇḍaṃ gaṇhāti, so bhikkhu pārājiko hoti asaṃvāso.
 
@@ -1545,7 +1548,7 @@ Ejemplo:
 
 Dīgha ora icc etehi smāvacanassa so-ādeso hoti vā. 
 
-Dīghaso, oraso; dīghamhā, oramhā. 
+Dīghaso (Vin. i, 227), oraso; dīghamhā, oramhā. 
 
 Dīgh’-orehi ti kimatthaṃ? Saramhā, vacanamhā.
 
@@ -1629,7 +1632,7 @@ Ejemplos:
 
 Tasmā akārato catutthekavacanassa āyādeso hoti vā. 
 
-Atthāya hitāya sukhāya devamanussānaṃ Buddho loke uppajjati. 
+Atthāya hitāya sukhāya devamanussānaṃ Buddho loke uppajjati (A. i, 21). 
 
 Ato ti kimatthaṃ? Isissa. 
 
@@ -1792,7 +1795,7 @@ Ejemplo:
 
 Tasmā ghato gassa ekārādeso hoti. 
 
-Bhoti ayye, bhoti kaññe, bhoti Kharādiye. 
+Bhoti ayye, bhoti kaññe, bhoti Kharādiye (Khu. v, 4). 
 
 Caggahaṇam avadhāraṇatthaṃ. Sanniṭṭhānaṃ.
 
@@ -2062,7 +2065,7 @@ Ejemplo:
 
 Sabbass’ eva ntupaccayassa savibhattissa ntassādeso hoti vā se vibhattimhi. 
 
-Sīlavantassa jhāyino, sīlavato jhāyino vā. 
+Sīlavantassa jhāyino (Khu. i, 29), sīlavato jhāyino vā. 
 
 Se ti kimatthaṃ? Sīlavā tiṭṭhati.
 
@@ -2086,7 +2089,7 @@ Ejemplo:
 
 Sabbass’ eva ntupaccayassa savibhattissa ā-ādeso hoti simhi vibhattimhi. 
 
-Guṇavā, paññavā, sīlavā, balavā, dhanavā, mahimā, satimā, dhitimā. 
+Guṇavā, paññavā, sīlavā, balavā, dhanavā, mahimā, satimā (M. i, 70), dhitimā (S. i, 170). 
 
 Ntusse ti kimatthaṃ? Puriso tiṭṭhati. 
 
@@ -2168,7 +2171,7 @@ Sabbass’ eva ntupaccayassa savibhattissa to-ti-tādesā honti vā sa smiṃ n�
 
 Guṇavato, guṇavantassa; guṇavati, guṇavantasmiṃ; guṇavatā, guṇavantena; satimato, satimantassa; satimati, satimantasmiṃ; satimatā, satimantena. 
 
-Etesv ti kimatthaṃ? Guṇavā. Satimā.
+Etesv ti kimatthaṃ? Guṇavā. Satimā (M. i, 70).
 
 ---
 
@@ -2244,9 +2247,9 @@ Ejemplo:
 
 Sabbass’ eva amusaddassa savibhattissa aduṃ-ādeso hoti aṃ-sisu napuṃsake vattamānassa. 
 
-Aduṃ pupphaṃ passasi; aduṃ pupphaṃ virocati. 
+Aduṃ (Khu. v, 34) pupphaṃ passasi; aduṃ pupphaṃ virocati. 
 
-Napuṃsake ti kimatthaṃ? Amuṃ rājānaṃ passasi; asu rājā tiṭṭhati.
+Napuṃsake ti kimatthaṃ? Amuṃ (M. i, 210) rājānaṃ passasi; asu rājā tiṭṭhati.
 
 ---
 
@@ -2284,7 +2287,7 @@ Dve itthiyo, dve dhammā, dve rūpāni.
 
 Yosv ti kimatthaṃ? Dvīsu. 
 
-Caggahaṇena duve dvaya ubha ubhaya duvi ca honti yo nā aṃ naṃ icc etesu. Duve samaṇā. Duve brāhmaṇā. Duve janā. Dvayena, dvayaṃ. Ubhinnaṃ. Ubhayesaṃ, duvinnaṃ.
+Caggahaṇena duve dvaya ubha ubhaya duvi ca honti yo nā aṃ naṃ icc etesu. Duve samaṇā. Duve brāhmaṇā. Duve janā. Dvayena, dvayaṃ (Vin. i, 24; VinA. i, 105). Ubhinnaṃ (Khu. v, 18). Ubhayesaṃ, duvinnaṃ.
 
 ---
 
@@ -2315,7 +2318,7 @@ Ejemplos:
 
 Ti-catunnaṃ saṅkhyānaṃ itthi-puma-napuṃsake vattamānānaṃ savibhattīnaṃ tisso catasso tayo cattāro tīṇi cattāri icc ete ādesā honti yathāsaṅkhyaṃ yo icc etesu. 
 
-Tisso vedanā; catasso disā; tayo janā; cattāro purisā; tīṇi āyatanāni; cattāri ariyasaccāni. 
+Tisso vedanā (D. iii, 181); catasso disā; tayo janā (Khu. v, 196); cattāro purisā; tīṇi āyatanāni; cattāri ariyasaccāni (Khu. i, 3). 
 
 Yosv ti kimatthaṃ? Tīsu, catūsu.
 
@@ -2394,7 +2397,7 @@ Ejemplos:
 
 Sabbass’ eva rājasaddassa savibhattissa raññaṃ-ādeso hoti vā naṃmhi vibhattimhi. 
 
-Raññaṃ, rājūnaṃ idaṃ raṭṭhaṃ.
+Raññaṃ, rājūnaṃ (Khu. i, 88) idaṃ raṭṭhaṃ.
 
 ---
 
@@ -2488,7 +2491,7 @@ Tvaṃ, ahaṃ.
 
 Simhi ti kimatthaṃ? Tayi, mayi. 
 
-Caggahaṇena tuvaṃ ca hoti. Tuvaṃ satthā.
+Caggahaṇena tuvaṃ ca hoti. Tuvaṃ satthā (M. ii, 354).
 
 ---
 
@@ -2667,11 +2670,12 @@ Ejemplos:
 
 Sabbesaṃ tumha-amhasaddānaṃ savibhattīnaṃ yadā padasmā paresaṃ vo-no-ādesā honti navā yathāsaṅkhyaṃ dutiyā catutthī chaṭṭhī icc etesu bahuvacanesu. 
 
-Pahāya vo bhikkhave gamissāmi; mā no ajja vikantiṃsu rañño sūdā mahānase. Evaṃ dutiyatthe. 
+Pahāya vo bhikkhave gamissāmi (Khu. iv, 265); mā no ajja vikantiṃsu (Khu. vi, 93) rañño sūdā mahānase. Evaṃ dutiyatthe. 
 
-Dhammaṃ vo bhikkhave desessāmi; saṃvibhajetha no rajjena. Evaṃ catutthyatthe. 
+Dhammaṃ vo bhikkhave desessāmi (M. iii, 86); saṃvibhajetha no rajjena (D. ii, 188). Evaṃ catutthyatthe. 
 
-Tuṭṭho ’smi vo bhikkhave pakatiyā; satthā no Bhagavā anuppatto. Evaṃ chaṭṭhyatthe. 
+Tuṭṭho ’smi vo bhikkhave pakatiyā (Khu. vi, 89); satthā no Bhagavā anuppatto (M. i, 
+266). Evaṃ chaṭṭhyatthe. 
 
 Navā ti kimatthaṃ? Eso amhākaṃ satthā. 
 
@@ -2730,7 +2734,7 @@ Ejemplos en el sentido de la sexta \[inflexión\]:
 
 Sabbesaṃ tumha-amhasaddānaṃ savibhattīnaṃ yadā padasmā paresaṃ te me-ādesā honti yathāsaṅkhyaṃ catutthī chaṭṭhī icc etesu ekavacanesu. 
 
-Dadāmi te gāmavarāni pañca; dadāhi me gāmavaraṃ; idaṃ te raṭṭhaṃ; ayaṃ me putto. 
+Dadāmi te gāmavarāni pañca (Khu. v, 229); dadāhi me gāmavaraṃ; idaṃ te raṭṭhaṃ (Khu. vi, 66, 131); ayaṃ me putto. 
 
 Padato ti kimatthaṃ? Tava ñāti, mama ñāti.
 
@@ -2763,7 +2767,7 @@ Ejemplos:
 
 Sabbesaṃ tumha-amhasaddānaṃ savibhattīnaṃ yadā padasmā paresaṃ te-me-ādesā na honti aṃmhi vibhattimhi. 
 
-Passeyya taṃ vassasataṃ arogaṃ; so maṃ bravīti.
+Passeyya taṃ vassasataṃ arogaṃ (Khu. vi, 14); so maṃ bravīti.
 
 ---
 
@@ -3061,7 +3065,7 @@ La inclusión de “ca” es para el arrastre.[^36]
 
 Kamma icc evam antassa ca u-a-ādesā honti vā nāmhi vibhattimhi. 
 
-Kammunā, kammanā, kammena vā.
+Kammunā (Khu. i, 299), kammanā (M. ii, 408), kammena vā.
 
 Caggahaṇena maghava yuva icc evam antassa ā-ādeso hoti kvaci nā su icc etesu vibhattīsu. Maghavānā, maghavāsu, maghavesu, maghavena vā. Yuvānā, yuvāsu, yuvesu, yuvena vā.
 
@@ -3441,11 +3445,11 @@ Amusaddassa anapuṃsakassa makāro sakāram āpajjate vā simhi vibhattimhi.
 
 Asu rājā; asu itthī; amuko rājā; amukā itthī. 
 
-Anapuṃsakasse ti kimatthaṃ? Aduṃ pupphaṃ virocati. 
+Anapuṃsakasse ti kimatthaṃ? Aduṃ (Khu. v, 34) pupphaṃ virocati. 
 
 Amusse ti kimatthaṃ? Ayaṃ puriso tiṭṭhati. 
 
-Simhī ti kimatthaṃ? Amhaṃ purisaṃ passasi.
+Simhī ti kimatthaṃ? Amhaṃ (M. i, 211) purisaṃ passasi.
 
 ---
 
@@ -3626,7 +3630,7 @@ Formas paralelas (con §177 aplicado / no aplicado):
 
 Sabbato sabbanāmato kakārāgamo hoti vā simhi vibhattimhi. 
 
-Sabbako, yako, sako, amuko, asuko. 
+Sabbako, yako, sako, amuko, asuko (A. i, 73). 
 
 Vā ti kimatthaṃ? Sabbo, yo, so, ko. 
 
@@ -3662,7 +3666,7 @@ Al tomar “sabbato” de nuevo, también se inserta ‘ka’ en otros \[lugares
 
 Sabbato sabbanāmato gha-pasaññato smiṃ sa icc etesaṃ saṃ-sā-ādesā honti vā yathāsaṅkhyaṃ. 
 
-Sabbassaṃ, sabbassā; sabbāyaṃ, sabbāya. Imissaṃ, imissā; imāyaṃ, imāya. Amussaṃ, amussā; amuyaṃ, amuyā. 
+Sabbassaṃ, sabbassā; sabbāyaṃ, sabbāya. Imissaṃ, imissā (Abhi. ii, 254); imāyaṃ, imāya. Amussaṃ, amussā (M. iii, 10); amuyaṃ, amuyā. 
 
 Sabbanāmato ti kimatthaṃ? Itthiyaṃ, itthiyā. 
 
@@ -3718,7 +3722,7 @@ Ejemplo:
 
 Tasmā manogaṇādito smiṃ nā icc etesaṃ ikāra-ākārādesā honti vā yathāsaṅkhyaṃ. 
 
-Manasi, manasmiṃ; sirasi, sirasmiṃ; manasā, manena; vacasā, vacena; sirasā, sirena; sarasā, sarena; tapasā, tapena; vayasā, vayena; yasasā, yasena; tejasā, tejena; urasā, urena; thāmasā, thāmena. 
+Manasi (D. i, 12), manasmiṃ; sirasi, sirasmiṃ; manasā (Khu. i, 13), manena; vacasā (A. i, 504), vacena; sirasā (M. ii, 406), sirena; sarasā, sarena; tapasā (Khu. ii, 128), tapena; vayasā (D. ii, 125), vayena; yasasā (Khu. ii, 73), yasena; tejasā (Khu. ii, 135), tejena; urasā (M. ii, 409), urena; thāmasā, thāmena. 
 
 Smiṃ-nānam iti kimatthaṃ? Mano, siro, tamo, tapo, tejo. 
 
@@ -3747,7 +3751,7 @@ Al tomar “ādi”, también tras otras \[bases\], ‘smiṃ’ y ‘nā’ se 
 
 Tasmā manogaṇādito sassa ca okāro hoti. 
 
-Manaso, thāmaso, tapaso.
+Manaso (Khu. ii, 14), thāmaso, tapaso.
 
 ---
 
@@ -3767,11 +3771,11 @@ Ejemplo:
 
 Etesaṃ manogaṇādīnaṃ anto ottam āpajjate vibhattilope kate. 
 
-Manomayaṃ, ayomayaṃ, tejosamena, tapoguṇena, siroruhena. 
+Manomayaṃ (D. i, 73), ayomayaṃ (Khu. i, 383), tejosamena, tapoguṇena, siroruhena. 
 
 Ādiggahaṇaṃ kimatthaṃ? Aññesam anto ottam āpajjate. Āposamena, vāyosamena. 
 
-Lope ti kimatthaṃ? Padasā, tapasā, yasasā, vacasā, manasā. Evaṃ aññe pi yojetabbā.
+Lope ti kimatthaṃ? Padasā, tapasā (Khu. ii, 121), yasasā (Khu. ii, 73), vacasā (A. i, 504), manasā (Khu. i, 13). Evaṃ aññe pi yojetabbā.
 
 ---
 
@@ -3797,7 +3801,7 @@ Vā ti kimatthaṃ? Manena, tejena, yasena.
 
 Sare ti kimatthaṃ? Mano, tejo, yaso.
 
-Puna ādiggahaṇena aññasmim pi paccaye pare sakārāgamo hoti. Mānasikaṃ, vācasikaṃ.
+Puna ādiggahaṇena aññasmim pi paccaye pare sakārāgamo hoti. Mānasikaṃ, vācasikaṃ (Abhi. ii, 255).
 
 ---
 
@@ -3826,14 +3830,14 @@ Sabbassa santasaddassa sakārādeso hoti bhakāre pare, ante ca bakārāgamo hot
 Sabbhir eva samāsetha,   
 Sabbhi kubbetha santhavaṃ,   
 Sataṃ saddhammam aññāya,  
-Seyyo hoti na pāpiyo. 
+Seyyo hoti na pāpiyo (S. i, 16). 
 
 Uno se debería asociar solamente con los santos, debería procurar compañía con los santos; habiendo comprendido el buen Dhamma de los santos, uno se vuelve mejor, no peor.
 
 Jīranti ve rājaratha sucittā,   
 Atho sarīram pi jaraṃ upeti,  
 Satañ ca dhammo na jaraṃ upeti,   
-Santo have sabbhi pavedayanti.
+Santo have sabbhi pavedayanti (Khu. i, 36).
 
 Envejecen los bien decorados carruajes de los reyes, también el cuerpo llega a la vejez. Pero el Dhamma de los santos no envejece; esto los santos proclaman entre los santos.[^39]
 
@@ -4396,7 +4400,7 @@ Tato ārādesato sabbesaṃ yonaṃ okārādeso hoti.
 
 Satthāro, pitaro, mātaro, bhātaro, kattāro, vattāro. 
 
-Tuggahaṇena aññasmā pi yonaṃ okāro hoti. Caturo janā, gāvo, ubho, purisā.
+Tuggahaṇena aññasmā pi yonaṃ okāro hoti. Caturo janā (Khu. i, 336), gāvo, ubho, purisā.
 
 ---
 
@@ -4506,7 +4510,7 @@ Pitādīnam ārādeso rassam āpajjate asimhi vibhattimhi.
 
 Pitarā, mātarā, bhātarā, dhītarā, pitaro, mātaro, bhātaro, dhītaro. 
 
-Asimhiggahaṇam tomhi pare ikārādesañāpanatthaṃ. Mātito, pitito, bhātito, duhitito.
+Asimhiggahaṇam tomhi pare ikārādesañāpanatthaṃ. Mātito (D. i, 106), pitito (D. i, 106), bhātito, duhitito.
 
 ---
 
@@ -4838,7 +4842,7 @@ Ejemplos:
 
 Sabbāsaṃ vibhattīnaṃ ekavacanabahuvacanānaṃ paṭhamā-dutiyā-tatiyā-catutthī-pañcamī-chaṭṭhī-sattamīnaṃ lopo hoti āvuso upasagga nipāta icc evamādīhi ca. 
 
-Tvaṃ pan’ āvuso; tumhe pan’ āvuso; padaso dhammaṃ vāceyya; vihāraṃ sve upagaccheyya. Pa, parā, ni, nī, u, du, saṃ, vi, ava, anu, pari, adhi, abhi, pati, su, ā, ati, api, apa, upa. Pahāro, parābhavo, nihāro, nīhāro, uhāro, duhāro, saṃhāro, vihāro, avahāro, anuhāro, parihāro, adhihāro, abhihāro, patihāro, suhāro, āhāro, atihāro, apihāro, apahāro, upahāro. Evaṃ vīsati upasaggehi ca, yathā, tathā, evaṃ, khalu, kho, tatra, atho, atha, hi, tu, ca, vā, vo, haṃ, ahaṃ, alaṃ, eva, ho, aho, he, ahe, re, are. Evamādīhi nipātehi ca yojetabbāni. 
+Tvaṃ pan’ āvuso (Vin. ii, 1); tumhe pan’ āvuso (Vin. ii, 161); padaso dhammaṃ vāceyya (Vin. ii, 25); vihāraṃ sve upagaccheyya. Pa, parā, ni, nī, u, du, saṃ, vi, ava, anu, pari, adhi, abhi, pati, su, ā, ati, api, apa, upa. Pahāro, parābhavo, nihāro, nīhāro, uhāro, duhāro, saṃhāro, vihāro, avahāro, anuhāro, parihāro, adhihāro, abhihāro, patihāro, suhāro, āhāro, atihāro, apihāro, apahāro, upahāro. Evaṃ vīsati upasaggehi ca, yathā, tathā, evaṃ, khalu, kho, tatra, atho, atha, hi, tu, ca, vā, vo, haṃ, ahaṃ, alaṃ, eva, ho, aho, he, ahe, re, are. Evamādīhi nipātehi ca yojetabbāni. 
 
 Caggahaṇam avadhāraṇatthaṃ.
 
@@ -5021,7 +5025,7 @@ Kim icc etassa ko ca hoti vapaccaye pare.
 
 Kva gato ’si tvaṃ Devānaṃpiyatissa. 
 
-Caggahaṇena avapaccaye pare pi ko ca hoti. Ko taṃ ninditum arahati; kathaṃ bodhayituṃ dhammaṃ.[^53] 
+Caggahaṇena avapaccaye pare pi ko ca hoti. Ko taṃ ninditum arahati (Khu. i, 47); kathaṃ bodhayituṃ dhammaṃ.[^53] 
 
 Ve ti kimatthaṃ? Kuto āgato ’si tvaṃ.
 
@@ -5407,7 +5411,7 @@ Ejemplos:
 
 Sabbass’ eva bhavantasaddassa bhotādeso hoti īkāre itthigate[^62] pare. 
 
-Bhoti ayye, bhoti kaññe, bhoti Kharādiye.
+Bhoti ayye (Vin. ii, 280), bhoti kaññe, bhoti Kharādiye (Khu. v, 4).
 
 ---
 
@@ -5867,7 +5871,7 @@ Ejemplos:
 
 Avaṇṇo ye paccaye pare lopam āpajjate. 
 
-Bāhussaccaṃ; paṇḍiccaṃ; vepullaṃ; kāruññaṃ; kosallaṃ; sāmaññaṃ; sohajjaṃ.
+Bāhussaccaṃ (Khu. i, 4); paṇḍiccaṃ (Abhi. iii, 128); vepullaṃ (Abhi. iii, 128); kāruññaṃ; kosallaṃ (Abhi. iii, 128); sāmaññaṃ (Khu. vi, 177); sohajjaṃ.
 
 ---
 
@@ -5881,7 +5885,7 @@ Cuando sigue el sufijo ‘ya’, las letras ‘a’ y ‘ā’ se eliden.[^66]
 
 Sabbass’ eva vuḍḍhasaddassa jo-ādeso hoti iya iṭṭha icc etesu paccayesu. 
 
-Jeyyo, jeṭṭho.
+Jeyyo, jeṭṭho (D. ii, 13).
 
 ---
 
@@ -5895,7 +5899,7 @@ Cuando siguen los sufijos ‘iya’ e ‘iṭṭha’, toda la palabra “vuḍ�
 
 Sabbass’ eva pasatthasaddassa so-ādeso hoti, jādeso ca iya iṭṭha icc etesu paccayesu. 
 
-Seyyo, seṭṭho, jeyyo, jeṭṭho.
+Seyyo (A. i, 130), seṭṭho (D. ii, 13), jeyyo, jeṭṭho (D. ii, 13).
 
 ---
 
@@ -5994,15 +5998,16 @@ Ejemplos:
 
 Yakāravantānaṃ ta-la-ṇa-dakārānaṃ byañjanāni ca-la-ña-ja-kārattam āpajjante yathāsaṅkhyaṃ. 
 
-Bāhussaccaṃ; paṇḍiccaṃ; vepullaṃ; kāruññaṃ; kosallaṃ; nepuññaṃ; sāmaññaṃ; sohajjaṃ. 
+Bāhussaccaṃ; paṇḍiccaṃ (Abhi. iii, 128); vepullaṃ (Abhi. iii, 128); kāruññaṃ (Khu. vi, 177); kosallaṃ (Abhi. iii, 128); nepuññaṃ (Abhi. iii, 128); sāmaññaṃ (S. iii, 
+20); sohajjaṃ. 
 
 Yavatam ti kimatthaṃ? Tiṇadalaṃ. 
 
-Ta-la-ṇa-da-kārānam iti kimatthaṃ? Ālasyaṃ; ārogyaṃ. 
+Ta-la-ṇa-da-kārānam iti kimatthaṃ? Ālasyaṃ (Abhi. iii, 364); ārogyaṃ (Khu. i, 395). 
 
 Byañjanāni iti kimatthaṃ? Maccunā. 
 
-Kāraggahaṇaṃ kimatthaṃ? Yakārassa makārādesañāpanatthaṃ. Opammaṃ.
+Kāraggahaṇaṃ kimatthaṃ? Yakārassa makārādesañāpanatthaṃ. Opammaṃ (M. ii, 42).
 
 ---
 

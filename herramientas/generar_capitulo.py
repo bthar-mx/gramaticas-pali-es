@@ -222,6 +222,70 @@ def glosas_emergentes(t):
         t)
 
 
+# Abreviaturas canónicas tal como las imprime Nandisena. La expansión es
+# mecánica —desatar la sigla—, no una identificación de la edición: el tomo
+# y la página remiten a la edición que él usa, que no consta en los archivos
+# del proyecto. Ver `comun/guia-de-estilo.md` §5.
+ABREVIATURAS = {
+    "D":            "Dīgha-nikāya",
+    "M":            "Majjhima-nikāya",
+    "S":            "Saṃyutta-nikāya",
+    "A":            "Aṅguttara-nikāya",
+    "Khu":          "Khuddaka-nikāya",
+    "Vin":          "Vinaya-piṭaka",
+    "Abhi":         "Abhidhamma-piṭaka",
+    "J":            "Jātaka",
+    "DA":           "Dīgha-nikāya-aṭṭhakathā",
+    "MA":           "Majjhima-nikāya-aṭṭhakathā",
+    "SA":           "Saṃyutta-nikāya-aṭṭhakathā",
+    "AA":           "Aṅguttara-nikāya-aṭṭhakathā",
+    "DhA":          "Dhammapada-aṭṭhakathā",
+    "UdānaA":       "Udāna-aṭṭhakathā",
+    "PetavatthuA":  "Petavatthu-aṭṭhakathā",
+    "Sad":          "Saddanīti",
+    "Mog.-pañcikā": "Moggallāna-pañcikā",
+}
+
+# (Khu. i, 336) — una o varias siglas conocidas seguidas de tomo y página.
+_SIGLAS = "|".join(re.escape(k) for k in
+                   sorted(ABREVIATURAS, key=len, reverse=True))
+RE_CITA = re.compile(
+    r'\((?P<cuerpo>(?:' + _SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*?)\)')
+RE_SIGLA_EN_CITA = re.compile(r'\b(' + _SIGLAS + r')\.')
+RE_CITA_SIMPLE = re.compile(
+    r'^(?P<sigla>' + _SIGLAS + r')\.?\s*(?P<tomo>[ivxlIVXL]+)\s*,\s*'
+    r'(?P<pag>[\d\-–]+)$')
+
+
+def citas_canonicas(t):
+    """(Khu. i, 336) → la cita, con la sigla desatada al pasar el ratón.
+
+    Se detectan solas: la sigla es un conjunto cerrado y el tomo va en
+    numeración romana, de modo que no hay que marcarlas en el maestro y las
+    que ya estaban puestas —las 30 del Sandhi-Kappa— ganan el emergente sin
+    tocar el texto. Regla de colocación: guía de estilo §5, sólo en el
+    bloque pāḷi.
+    """
+    def rep(m):
+        cuerpo = m.group("cuerpo").strip()
+        simple = RE_CITA_SIMPLE.match(cuerpo)
+        if simple:
+            glosa = "{0} · tomo {1}, página {2}".format(
+                ABREVIATURAS[simple.group("sigla")],
+                simple.group("tomo").lower(), simple.group("pag"))
+        else:
+            vistas, obras = set(), []
+            for s in RE_SIGLA_EN_CITA.findall(cuerpo):
+                if s not in vistas:
+                    vistas.add(s)
+                    obras.append(ABREVIATURAS[s])
+            glosa = " · ".join(obras)
+        return ('<span class="ref-tip"><span class="cita-term">({0})</span>'
+                '<span class="ref-tip-box">{1}</span></span>').format(
+                    m.group("cuerpo"), glosa)
+    return RE_CITA.sub(rep, t)
+
+
 def inline(t, notas):
     """Cadena de transformaciones para texto corrido."""
     t = escapar_html(desescapar(t))
@@ -229,6 +293,7 @@ def inline(t, notas):
     t = glosas_emergentes(t)
     t = marcar_notas(t, notas)
     t = enlazar_suttas(t)
+    t = citas_canonicas(t)
     return t
 
 
