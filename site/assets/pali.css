@@ -360,7 +360,7 @@ body.dark .sutta-card { background: var(--bg2); }
 .pali-block {
   background: var(--bg2); border-left: 3px solid var(--border2);
   border-radius: 0 var(--r) var(--r) 0; padding: .75rem 1rem;
-  margin-bottom: 1rem; font: 14px/1.9 var(--serif); color: var(--text2);
+  margin-bottom: 1rem; font: 16px/1.9 var(--serif); color: var(--text);
 }
 /* Modo verso: pādas línea a línea con su traducción debajo (p. ej. §185) */
 .pali-block p.pali-para { margin: 0 0 .6rem; }
@@ -619,7 +619,7 @@ body.dark .fn-tip-box {
   .sutta-header { padding: .7rem .85rem; }
   .sutta-pali-title { font-size: 14px; }
   .sutta-body { padding: .85rem 1rem 1rem; }
-  .pali-block { font-size: 13px; padding: .6rem .8rem; }
+  .pali-block { font-size: 14px; padding: .6rem .8rem; }
   .gloss { font-size: 14px; padding: .5rem .75rem; }
   .vutti { font-size: 13px; padding: .4rem .75rem; }
   .controls { gap: 4px; }
