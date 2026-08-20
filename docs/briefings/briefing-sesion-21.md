@@ -165,6 +165,51 @@ Subidos allí, para consulta desde chats sin acceso al repositorio: la errata,
 - Verificar que la paginación del escaneo cuadra en más puntos que la p. 22
   —la fórmula se comprobó en una sola página—.
 
+## 2 bis. BORRADORES BORRADOS, RECUPERADOS — Y UN HALLAZGO
+
+`docs/borradores/` guardaba trece archivos según el briefing 18; quedaban
+cinco. **Los ocho que faltaban se recuperaron de Time Machine** (copia del
+18-08 a las 22:09) y están en `~/Desktop/borradores-recuperados/`. Los cinco
+supervivientes son idénticos byte a byte a los de la copia, así que el rescate
+es fiel.
+
+Los ocho eran: `3-Kāraka-Kappa-revA.md`,
+`capitulo-03-karaka-kappa-completo.md`, los tres `sesion-06-suttas-*` y los
+tres `sesion-11-suttas-*`. Todos son borradores de capítulos ya publicados: el
+borrado fue una limpieza deliberada y **razonable**.
+
+**Se comprobó, uno a uno, que todo lo que afectaba al texto publicado se había
+resuelto y aplicado antes del borrado:** diez erratas de Nandisena, los seis
+términos del glosario, la fórmula de *avadhāraṇa*, el desglose de una voz de
+§239 y la DUDA de §237 —que se resolvió con §174 y que hoy no deja ni un
+`<!-- DUDA -->` en el capítulo—. Nada del sitio se apoya en una pregunta sin
+responder.
+
+**Pero los borradores llevaban al final una sección `NOTAS DE TRABAJO` que el
+capítulo, por ser texto limpio, no podía recoger**, y ahí sí había cosas vivas
+—sobre todo diecisiete apartados de Thitzana ofrecidos y no incluidos, marcados
+«recuperable si Angel lo quiere», que no constaban en ningún otro sitio—.
+
+Todo eso se ha volcado a **`docs/notas-de-trabajo-nama.md`**, ya en el
+repositorio y bajo control de versiones. Los borradores originales pueden
+quedarse en el archivo del Escritorio.
+
+### El hallazgo: §10.1 nunca se ejecutó
+
+Al verificar lo anterior salió algo que no venía a cuento y que importa más que
+el resto. Los briefings 04 y 05 tienen una sección **§10.1, «Restitución de
+referencias bibliográficas (fase HTML)»**: las referencias canónicas se retiran
+de la línea española y **se restituyen al pasar a HTML**.
+
+**No se hizo.** `site/kaccayana/nama/index.html` no contiene **ni una sola**
+referencia bibliográfica: cero coincidencias con el patrón `Khu./Vin./Abhi./D./
+M./A./S. tomo, página`.
+
+No se han perdido —están en los briefings, y las de §204–§270 están tabuladas
+en `docs/notas-de-trabajo-nama.md` §1.2—, pero el plan quedó a medias y nadie
+volvió a él. **Conviene decidir si se retoma**, y si se retoma, si alcanza a
+los tres capítulos publicados o sólo al Nāma.
+
 ## 3. LO QUE SIGUE ABIERTO, DEL BRIEFING 20
 
 Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
