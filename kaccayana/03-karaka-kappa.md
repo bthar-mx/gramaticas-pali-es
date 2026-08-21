@@ -221,7 +221,7 @@ Dūratthe, antikatthe, addhanimmāne, kālanimmāne, tvālope, disāyoge, vibhat
 
 **Pañhe** tvālope kammādhikaraṇesu: Abhidhammā pucchanti, abhidhammaṃ sutvā, abhidhamme ṭhatvā (pucchanti) vā. Vinayā pucchanti, vinayaṃ sutvā, vinaye ṭhatvā (pucchanti) vā. Dutiyā ca tatiyā ca. Abhidhammaṃ, abhidhammena vā. Vinayaṃ, vinayena vā. Evaṃ suttā, geyyā, gāthāya, veyyākaraṇā, udānā, itivuttakā, jātakā, abbhutadhammā, vedallā (Khu. vii, 111; VinA. i, 22; DA. i, 24\) icc evamādi.
 
-**Kathane** tvālope kammādhikaraṇesu: Abhidhammā kathayanti, abhidhammaṃ sutvā, abhidhamme ṭhatvā (kathayanti). Vinayā kathayanti, vinayaṃ sutvā, vinaye ṭhatvā (kathayanti). Dutiyā ca tatiyā ca. Abhidhammaṃ, abhidhammena vā. Vinayaṃ, vinayena vā. Evaṃ suttā, geyyā, gāthāya, veyyākaraṇā, udānā, itivuttakā, jātaka, abbhutadhammā, vedallā (Khu. vii, 111; VinA. i, 22; DA. i, 24\) icc evamādi.
+**Kathane** tvālope kammādhikaraṇesu: Abhidhammā kathayanti, abhidhammaṃ sutvā, abhidhamme ṭhatvā (kathayanti). Vinayā kathayanti, vinayaṃ sutvā, vinaye ṭhatvā (kathayanti). Dutiyā ca tatiyā ca. Abhidhammaṃ, abhidhammena vā. Vinayaṃ, vinayena vā. Evaṃ suttā, geyyā, gāthāya, veyyākaraṇā, udānā, itivuttakā, jātakā, abbhutadhammā, vedallā (Khu. vii, 111; VinA. i, 22; DA. i, 24\) icc evamādi.
 
 **Thoke**: Thokā muccanti;[^14] appamattakā muccanti;[^15] kicchā muccanti.[^16] Tatiyā ca. Thokena, appamattakena, kicchena vā icc evamādi.
 

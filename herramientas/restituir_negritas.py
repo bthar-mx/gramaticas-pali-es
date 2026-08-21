@@ -67,6 +67,36 @@ RE_SALTABLE = re.compile(
     r'|\((?:' + _SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*\)')  # cita
 
 
+# La única divergencia de división registrada del proyecto (sesión 22, y
+# «vale para toda su clase»): en el locativo ante «iti», Nandisena contrae
+# —«Yosvī ti», «Sesesū ti»— y el maestro escribe la forma suelta, «Yosv
+# iti». Angel decidió que manda el maestro.
+#
+# La negrita del PDF cubre el lemma contraído, «**Yosvī** ti», de modo que
+# sin bridge ninguna de estas líneas encuentra su sitio: son la mayor parte
+# de las 57 ausentes del Nāma. Se reescribe la línea del PDF a la división
+# del maestro —«**Yosv i**ti»—, que deja la negrita justo donde le toca.
+#
+# No es tolerancia de emparejamiento: es una regla cerrada y documentada,
+# como `VARIANTES` en `restituir_citas.py`. Lo que no encaje en ella sigue
+# informándose como ausente.
+RE_REDIV = (
+    # «**Yosvī** ti» · «**Sesesū** ti» → «**Yosv i**ti»
+    (re.compile(r'\*\*([^*]+?)s(?:vī|ū)\s*\*\*\s*ti\b'), r'**\1sv i**ti'),
+    # «**Su-naṃ-hi-**sū ti» → la negrita acaba antes del locativo
+    (re.compile(r'\*\*([^*]+?)\*\*s(?:vī|ū)\s+ti\b'), r'**\1sv i**ti'),
+)
+
+
+def redividir(linea):
+    """Reescribe el locativo contraído del PDF a la división del maestro."""
+    n = 0
+    for regex, con in RE_REDIV:
+        linea, k = regex.subn(con, linea)
+        n += k
+    return linea, n
+
+
 def normalizar(s):
     """(texto comparable, mapa al original).
 
@@ -210,9 +240,12 @@ def main():
         regiones[sutta] = (norm, [ini + i for i in mapa])
 
     colocadas, ambiguas, ausentes = [], [], []
+    redivididas = 0
     for linea_pdf in lineas_del_pdf(args.pdf):
         if "**" not in linea_pdf or RE_TITULO_PDF.match(linea_pdf):
             continue
+        linea_pdf, n = redividir(linea_pdf)
+        redivididas += n
         norm, marcas = tramos(linea_pdf)
         if not marcas or len(norm) < MINIMO:
             continue
@@ -285,13 +318,14 @@ def main():
     print("  líneas del PDF aprovechadas : {0}".format(len(colocadas)))
     print("  ambiguas (sale más de una vez): {0}".format(len(ambiguas)))
     print("  ausentes (no está en el pāḷi) : {0}".format(len(ausentes)))
+    print("  líneas redivididas (locativo) : {0}".format(redivididas))
     print("  solapes descartados           : {0}".format(solapes))
     print("  ya estaban en negrita         : {0}".format(ya_estaban))
     print("  negrita en el maestro: {0} → {1}".format(
         len(RE_NEGRITA.findall(original)), len(RE_NEGRITA.findall(nuevo))))
     print("  reconstrucción: {0}".format("OK" if ok else "FALLA"))
-    for l in ausentes[:10]:
-        print("    ausente: {0}".format(l[:94]))
+    for l in ausentes:
+        print("    ausente: {0}".format(l[:150]))
 
     if not ok:
         print("NO SE ESCRIBE NADA.")

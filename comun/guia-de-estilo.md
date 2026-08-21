@@ -154,6 +154,24 @@ No se corrige nada: se le enseñan al emparejador (`VARIANTES` en
 | §290 | sam**y**ena | samayena | 22 |
 | §132 | brāh**a**maṇā | brāhmaṇā | 23 |
 
+### 5.1 quinquies. Correcciones a la edición base
+
+Distintas de la tabla anterior: allí el maestro ya traía la lectura buena y
+sólo había que enseñársela al emparejador. Aquí **se corrige**, por decisión
+expresa de Angel.
+
+| Sutta | Nandisena | Corregido a | Sesión |
+| ----- | --------- | ----------- | ------ |
+| Kāraka §275 | jātaka | **jātakā** | 23 |
+
+En §275 la lista de los nueve aṅgas aparece dos veces —bajo `Pañhe` y bajo
+`Kathane`— y la edición base imprimía *jātakā* en la primera y *jātaka* en
+la segunda. Corregida la segunda, **las dos listas son ya idénticas**, de
+modo que las dos citas `(Khu. vii, 111; VinA. i, 22; DA. i, 24)` han dejado
+de tener ancla única: están puestas y verificadas, pero una pasada futura de
+`restituir_citas.py --base` volvería a darlas por pendientes. No es un
+error: es el emparejador negándose a elegir, que es lo que debe hacer.
+
 ### 5.2 Presentación
 
 No se marcan en el maestro. El generador las reconoce solas —la sigla es un
