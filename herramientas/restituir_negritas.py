@@ -75,16 +75,21 @@ RE_SALTABLE = re.compile(
 # La negrita del PDF cubre el lemma contraído, «**Yosvī** ti», de modo que
 # sin bridge ninguna de estas líneas encuentra su sitio: son la mayor parte
 # de las 57 ausentes del Nāma. Se reescribe la línea del PDF a la división
-# del maestro —«**Yosv i**ti»—, que deja la negrita justo donde le toca.
+# del maestro —«**Yosv** iti»—, que deja la negrita justo donde le toca.
 #
 # No es tolerancia de emparejamiento: es una regla cerrada y documentada,
 # como `VARIANTES` en `restituir_citas.py`. Lo que no encaje en ella sigue
 # informándose como ausente.
+#
+# **La negrita acaba en el locativo, no dentro de «iti»** (Angel, sesión
+# 23). En el PDF la 'ī' de «Yosvī» es la 'i' de «iti» absorbida por la
+# contracción, así que al deshacerla esa letra vuelve a «iti» y sale de la
+# negrita: lo que el sutta nombra es «yosu», no «yosv i».
 RE_REDIV = (
-    # «**Yosvī** ti» · «**Sesesū** ti» → «**Yosv i**ti»
-    (re.compile(r'\*\*([^*]+?)s(?:vī|ū)\s*\*\*\s*ti\b'), r'**\1sv i**ti'),
+    # «**Yosvī** ti» · «**Sesesū** ti» → «**Yosv** iti»
+    (re.compile(r'\*\*([^*]+?)s(?:vī|ū)\s*\*\*\s*ti\b'), r'**\1sv** iti'),
     # «**Su-naṃ-hi-**sū ti» → la negrita acaba antes del locativo
-    (re.compile(r'\*\*([^*]+?)\*\*s(?:vī|ū)\s+ti\b'), r'**\1sv i**ti'),
+    (re.compile(r'\*\*([^*]+?)\*\*s(?:vī|ū)\s+ti\b'), r'**\1sv** iti'),
 )
 
 
@@ -255,13 +260,16 @@ def main():
             while desde != -1:
                 hits.append((sutta, desde, mapa))
                 desde = region.find(norm, desde + 1)
-                if len(hits) > 1:
-                    break
-            if len(hits) > 1:
-                break
         if not hits:
             ausentes.append(linea_pdf)
         elif len(hits) > 1:
+            # Se intentó en la sesión 23 colocar la línea repetida en todas
+            # sus apariciones —«Ekavacanesv iti kimatthaṃ? Tāsaṃ,
+            # sabbāsaṃ.» sale igual en §62 y §66, y las dos se quedan sin
+            # negrita—. No sale: las líneas que se repiten son las genéricas
+            # y aparecen en muchos suttas, el marcado se entrelaza con la
+            # negrita que ya está, y **la reconstrucción deja de reproducir
+            # el maestro**. Se mantiene el reparo original.
             ambiguas.append(linea_pdf)
         else:
             sutta, desde, mapa = hits[0]
@@ -292,6 +300,18 @@ def main():
             # Si el maestro ya lo trae en negrita, no se anida otra.
             if bloque[max(0, i - 2):i] == "**" and bloque[j:j + 2] == "**":
                 ya_estaban += 1
+                continue
+            # Y si el tramo *pisa a medias* una negrita que ya está, se
+            # descarta (sesión 23). Antes sólo se miraba la coincidencia
+            # exacta, de modo que un tramo que empezara dentro de una
+            # negrita existente y acabara fuera producía marcado
+            # entrelazado —`**a**b**c**`— que `pelar` ya no sabe deshacer:
+            # es lo que hacía fallar la reconstrucción al colocar una misma
+            # línea en varios suttas.
+            if any(not (j <= m.start() or i >= m.end())
+                   and not (i >= m.start() and j <= m.end())
+                   for m in RE_NEGRITA.finditer(bloque)):
+                solapes += 1
                 continue
             bloque = bloque[:i] + "**" + bloque[i:j] + "**" + bloque[j:]
             puestos += 1

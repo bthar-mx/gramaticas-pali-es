@@ -206,11 +206,11 @@ Ejemplo: **purisassa** \= purisa \+ sa. Por este sutta, ‘s’ se inserta despu
 
 Etissaṃ, etissā; imissaṃ, imissā; tissaṃ, tissā; tassaṃ, tassā; yassaṃ, yassā; amussaṃ, amussā. 
 
-**Saṃ-sāsv i**ti kimatthaṃ? Agginā, pāṇinā. 
+**Saṃ-sāsv** iti kimatthaṃ? Agginā, pāṇinā. 
 
 Ekavacanesv iti kimatthaṃ? Tāsaṃ, sabbāsaṃ. 
 
-**Vibhattādesesv i**ti kimatthaṃ? Manasā, vacasā, thāmasā.
+**Vibhattādesesv** iti kimatthaṃ? Manasā, vacasā, thāmasā.
 
 ---
 
@@ -242,7 +242,7 @@ Etissaṃ, etissā; imissaṃ, imissā.
 
 Saṃsāsv iti kimatthaṃ? Etāya, imāya. 
 
-**Ekavacanesv i**ti kimatthaṃ? Etāsaṃ, imāsaṃ.
+**Ekavacanesv** iti kimatthaṃ? Etāsaṃ, imāsaṃ.
 
 ---
 
@@ -880,7 +880,7 @@ Itthiṃ, itthiyo, itthiyā. Vadhuṃ, vadhuyo, vadhuyā. Daṇḍiṃ, daṇḍ
 
 **Agho** ti kimatthaṃ? Kaññaṃ, kaññāyo, kaññāya. 
 
-**Ekavacanayosv i**ti kimatthaṃ? Itthīhi, sayambhūhi. 
+**Ekavacanayosv** iti kimatthaṃ? Itthīhi, sayambhūhi. 
 
 Caggahaṇam avadhāraṇatthaṃ? Nadiṃ, nadīyo, nadiyā. 
 
@@ -3330,7 +3330,7 @@ Sabbass’ eva **rāja**saddassa **rāju**-ādeso hoti **su naṃ hi** icc etesu
 
 Rājūsu, rājūnaṃ, rājūhi, rājūbhi. 
 
-**Su-naṃ-hi-sv i**ti kimatthaṃ? Rājā. 
+**Su-naṃ-hi-sv** iti kimatthaṃ? Rājā. 
 
 **Caggahaṇam** avadhāraṇatthaṃ. Rājesu, rājānaṃ, rājehi, rājebhi.
 
@@ -3558,7 +3558,7 @@ Assa, tassa; asmā, tasmā; asmiṃ, tasmiṃ; assaṃ, tassaṃ; assā, tassā.
 
 **Takāra**sse ti kimatthaṃ? Amussaṃ, amussā. 
 
-**Etesv ī**ti kimatthaṃ? Nesu, tesu.
+**Etesv** iti kimatthaṃ? Nesu, tesu.
 
 ---
 
@@ -3902,7 +3902,7 @@ Ejemplos:
 
 Gacchato, mahato; gacchati, mahati, gacchatā, mahatā.
 
-**Sesesv i**ti kimatthaṃ? Gacchaṃ, mahaṃ, caraṃ, khādaṃ.
+**Sesesv** iti kimatthaṃ? Gacchaṃ, mahaṃ, caraṃ, khādaṃ.
 
 ---
 
@@ -4182,7 +4182,7 @@ Tassa **brahma** saddassa anto **u**ttam āpajjate **sa nā** icc etesu.
 
 Brahmuno, brahmunā. 
 
-**Sa-nāsv i**ti kimatthaṃ? Brahmā.[^43]
+**Sa-nāsv** iti kimatthaṃ? Brahmā.[^43]
 
 ---
 
@@ -4235,7 +4235,7 @@ Ejemplos:
 
 Satthāraṃ, pitaraṃ, mātaraṃ, bhātaraṃ, kattāraṃ, satthārehi, pitarehi, mātarehi, bhātarehi, kattārehi. 
 
-**Aññesv i**ti kimatthaṃ? Satthā, pitā, mātā, bhātā, kattā.[^44]
+**Aññesv** iti kimatthaṃ? Satthā, pitā, mātā, bhātā, kattā.[^44]
 
 ---
 
@@ -4878,7 +4878,7 @@ Pulliṅgaṃ, pumbhāvo, puṅkokilo.
 
 **Pumasse** ti kimatthaṃ? Itthiliṅgaṃ, napuṃsakaliṅgaṃ. 
 
-**Liṅgādīsv i**ti kimatthaṃ? Pumitthī. 
+**Liṅgādīsv** iti kimatthaṃ? Pumitthī. 
 
 **Samāse**su ti kimatthaṃ? Pumassa liṅgaṃ.
 
