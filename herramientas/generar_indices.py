@@ -64,9 +64,9 @@ OBRAS = [
     (None, "Nyāsa",
      "Atribuido a Vimalabuddhi (siglo XI), y llamado también "
      "<i>Mukhamattadīpanī</i>. El comentario clásico de la gramática de "
-     "Kaccāyana: recorre los aforismos uno a uno y explica por extenso lo "
-     "que cada uno enuncia en dos o tres palabras. El proyecto ya lo "
-     "consulta y utiliza como fuente de segunda capa."),
+     "Kaccāyana: recorre los aforismos uno a uno y suple lo que la brevedad "
+     "del aforismo calla. El proyecto ya lo consulta y utiliza como fuente "
+     "de segunda capa."),
     (None, "Padarūpasiddhi",
      "De Buddhappiya. Reordena el material de Kaccāyana por temas."),
     (None, "Saddanīti", "De Aggavaṃsa. La gramática pāḷi más extensa."),
