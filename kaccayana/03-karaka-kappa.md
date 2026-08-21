@@ -10,7 +10,7 @@ Yasmā vā apeti, yasmā vā bhayaṃ jāyate, yasmā vā ādatte, taṃ kāraka
 
 Taṃ yathā? Gāmā apenti munayo; nagarā niggato rājā; corā bhayaṃ jāyate; ācariyupajjhāyehi sikkhaṃ gaṇhāti sisso.
 
-Apādānam icc anena kvattho? Apādāne pañcamī.
+**Apādānam** icc anena kvattho? Apādāne pañcamī.
 
 ---
 
@@ -164,7 +164,7 @@ Yena vā adassanam icchitaṃ, taṃ kārakaṃ apādānasaññaṃ hoti.
 
 Upajjhāyā antaradhāyati sisso; mātarā ca pitarā ca antaradhāyati putto.
 
-Vā ti kimatthaṃ? Sattamīvibhatyatthaṃ. Jetavane antaradhāyati Bhagavā.
+**Vā** ti kimatthaṃ? Sattamīvibhatyatthaṃ. Jetavane antaradhāyati Bhagavā.
 
 ---
 
@@ -396,9 +396,9 @@ Yassa vā dātukāmo, yassa vā rocate, yassa vā dhārayate, taṃ kārakaṃ s
 
 Samaṇassa cīvaraṃ dadāti; samaṇassa rocate saccaṃ; Devadattassa suvaṇṇacchattaṃ dhārayate Yaññadatto.
 
-Sampadānam icc anena kvattho? Sampadāne catutthī.
+**Sampadānam** icc anena kvattho? Sampadāne catutthī.
 
-Vā ti vikappanatthaṃ. Dhātu-nāmānaṃ payoge vā upasaggappayoge vā nipātappayoge vā sati atthavikappanatthaṃ vā ti padaṃ payujjati.
+**Vā** ti vikappanatthaṃ. Dhātu-nāmānaṃ payoge vā upasaggappayoge vā nipātappayoge vā sati atthavikappanatthaṃ **vā** ti padaṃ payujjati.
 
 ---
 
@@ -422,7 +422,7 @@ Ejemplos:
 
 **277\. 303\. Silāgha-hanu-ṭhā-sapa-dhāra-piha-kudha-duh’-issosūya-rādh’-ikkha-paccāsuṇa-anupatigiṇa-pubbakatt’-ārocanattha-tadattha-tumatthālamattha-maññānādar’-appāṇini, gatyatthakammani, āsīsattha-sammuti-bhiyya-sattamyatthesu ca (554).** \[Silāgha-hanu-ṭhā-sapa-dhāra-piha-kudha-duha-issa-usūya-rādha-ikkha-paccāsuṇa-anupatigiṇa-pubbakattu-ārocanattha-tadattha-tumattha-alamattha-mañña-anādara-appāṇini \+ gatyatthakammani \+ āsīsattha-sammuti-bhiyya-sattamyatthesu \+ ca, 4\]
 
-Silāgha hanu ṭhā sapa dhāra piha kudha duha issa icc etesaṃ dhātūnaṃ payoge, usūyatthānañ ca payoge, rādh’-ikkhappayoge, paccāsuṇa-anu-pati-giṇānaṃ pubbakattari, ārocanatthe, tadatthe, tumatthe, alamatthe, maññatippayoge anādare appāṇini, gatyatthānaṃ dhātūnaṃ kammani, āsīsatthe ca sammuti bhiyya sattamyatthesu ca, taṃ kārakaṃ sampadānasaññaṃ hoti.
+**Silāgha hanu ṭhā sapa dhāra piha kudha duha issa** icc etesaṃ dhātūnaṃ payoge, usūyatthānañ ca payoge, rādh’-ikkhappayoge, paccāsuṇa-anu-pati-giṇānaṃ pubbakattari, ārocanatthe, tadatthe, tumatthe, alamatthe, maññatippayoge anādare appāṇini, gatyatthānaṃ dhātūnaṃ kammani, āsīsatthe ca sammuti bhiyya sattamyatthesu ca, taṃ kārakaṃ sampadānasaññaṃ hoti.
 
 **Silāghappayoge** tāva: Buddhassa silāghate, Dhammassa silāghate, Saṃghassa silāghate; sakaṃ upajjhāyassa silāghate; tava silāghate, mama silāghate icc evamādi.
 
@@ -725,7 +725,7 @@ Tattha **byāpiko** tāva: Jalesu khīraṃ tiṭṭhati, tilesu telaṃ, ucchū
 
 **Sāmīpiko**: Vane hatthino caranti; gaṅgāyaṃ ghoso tiṭṭhati; vaje gāvo duhanti; Sāvatthiyaṃ viharati Jetavane (A. i, 1; S. i, 1).
 
-Okāsam icc anena kvattho? Okāse sattamī.
+**Okāsam** icc anena kvattho? Okāse sattamī.
 
 ---
 
@@ -777,7 +777,7 @@ Yena vā kayirate, yena vā passati, yena vā suṇāti, taṃ kārakaṃ kara�
 
 Dattena vīhiṃ lunāti; vāsiyā kaṭṭhaṃ tacchati; pharasunā rukkhaṃ chindati; kudālena pathaviṃ[^38] khaṇati; satthena kammaṃ karoti. Cakkhunā rūpaṃ passati (D. ii, 269); sotena saddaṃ suṇāti (D. ii, 269).
 
-Karaṇam icc anena kvattho? Karaṇe tatiyā.
+**Karaṇam** icc anena kvattho? Karaṇe tatiyā.
 
 ---
 
@@ -807,7 +807,7 @@ Yaṃ vā karoti, yaṃ vā passati, yaṃ vā suṇāti, taṃ kārakaṃ kamma
 
 Chattaṃ karoti; rathaṃ karoti; rūpaṃ passati (D. ii, 269); saddaṃ suṇāti (D. ii, 269); kaṇṭakaṃ maddati; visaṃ gilati.
 
-Kammam icc anena kvattho? Kammatthe dutiyā.
+**Kammam** icc anena kvattho? Kammatthe dutiyā.
 
 ---
 
@@ -836,7 +836,7 @@ Yo karoti, so kattusañño hoti.
 
 Ahinā daṭṭho naro; garuḷena hato nāgo. Buddhena jito Māro; Upaguttena Māro bandho.[^41]
 
-Kattu icc anena kvattho? Kattari ca.
+**Kattu** icc anena kvattho? Kattari ca.
 
 ---
 
@@ -863,7 +863,7 @@ Yo kattāraṃ kāreti, so hetusañño hoti, kattā ca.
 
 So puriso taṃ purisaṃ kammaṃ kāreti; so puriso tena purisena kammaṃ kāreti; so puriso tassa purisassa kammaṃ kāreti. Evaṃ hāreti, pāṭheti, pāceti, dhāreti.
 
-Hetu icc anena kvattho? Dhātūhi ṇe-ṇaya-ṇāpe-ṇāpayā kāritāni hetvatthe.
+**Hetu** icc anena kvattho? Dhātūhi ṇe-ṇaya-ṇāpe-ṇāpayā kāritāni hetvatthe.
 
 ---
 
@@ -888,7 +888,7 @@ Yassa vā pariggaho, taṃ sāmīsaññaṃ hoti.
 
 Tassa bhikkhuno paṭivīso;[^45] bhikkhuno patto; tassa bhikkhuno cīvaraṃ; attano mukhaṃ.
 
-Sāmī icc anena kvattho? Sāmismiṃ chaṭṭhī.
+**Sāmī** icc anena kvattho? Sāmismiṃ chaṭṭhī.
 
 ---
 
@@ -1230,7 +1230,7 @@ Kāladdhānaṃ accantasaṃyoge dutiyāvibhatti hoti.
 
 Māsaṃ maṃsodanaṃ bhuñjati; saradaṃ ramaṇīyā nadī; māsaṃ sajjhāyati. Yojanaṃ vanarāji; yojanaṃ dīgho pabbato; kosaṃ sajjhāyati.
 
-Accantasaṃyoge ti kimatthaṃ? Saṃvacchare bhojanaṃ bhuñjati.
+**Accantasaṃyoge** ti kimatthaṃ? Saṃvacchare bhojanaṃ bhuñjati.
 
 ---
 
@@ -1255,7 +1255,7 @@ Ejemplos:
 
 **299\. 288\. Kammappavacanīyayutte (582-586).** \[Kammappavacanīyayutte, 1\]
 
-Kammappavacanīyayutte dutiyāvibhatti hoti.
+**Kammappavacanīya**yutte dutiyāvibhatti hoti.
 
 Taṃ kho pana bhavantaṃ gotamaṃ evaṃ kalyāṇo kittisaddo abbhuggato (Vin. i, 1; iii, 45; D. i, 46, 83, 104; M. ii, 376). Pabbajitam anu pabbajiṃsu (D. ii, 25).
 

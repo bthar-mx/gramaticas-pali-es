@@ -134,6 +134,47 @@ preferible a desatarlas a ojo.
 
 ---
 
+## 5 bis. Negrita dentro del vutti (sesión 22)
+
+Nandisena imprime en negrita, **dentro del vutti**, las letras o sílabas que
+el propio sutta nombra. No es adorno: dice qué parte de la explicación
+responde a qué palabra del aforismo.
+
+    §237  Itthiyam ato āpaccayo
+          Itthiyaṃ vattamānāya **a**kārato **ā**paccayo hoti.
+
+    §238  Nadādito vā ī
+          **Nadā**dito vā a**nadā**dito vā … **ī-**paccayo hoti.
+
+Se perdió al convertir el PDF a texto y se ha restituido con
+`herramientas/restituir_negritas.py`, que la lee del PDF —allí la negrita es
+una fuente aparte, `Times-Bold`— y la coloca sólo donde la línea del PDF
+aparece **una sola vez** en los bloques pāḷi del capítulo. Verificación por
+reconstrucción: quitadas las marcas, el maestro vuelve byte a byte.
+
+**Alcance: sólo el bloque pāḷi.** El título del sutta va entero en negrita
+en el PDF y aquí no la lleva; las líneas españolas tampoco, como en la
+edición base.
+
+### Lo que quedó fuera, y por qué
+
+De las líneas con negrita del Nāma se colocaron 789 tramos y se rechazaron
+67 líneas. Casi todas se rechazan porque **la capa de texto del PDF falla
+justo donde cambia la fuente**: `yathāsaṅkyaṃ` por *yathāsaṅkhyaṃ*,
+`etessa` por *etassa*, `aṃ-āadesā` por *aṃ-ā ādesā*. Emparejarlas con
+tolerancia sería invitar a la corrupción silenciosa en pāḷi, así que se
+descartan.
+
+Aparte hay 18 líneas con una divergencia de fondo, no de extracción:
+Nandisena divide `Saṃ-sāsvī ti kimatthaṃ?` donde el maestro lee
+`Saṃ-sāsv iti kimatthaṃ?`.
+
+<!-- DUDA: esa división —«…vī ti» frente a «…v iti»— es sistemática y nadie
+     la había registrado. ¿Se conserva la del maestro o se vuelve a la de la
+     edición base? Afecta a 18 líneas del Nāma. -->
+
+---
+
 ## 6. Notas al pie (notas del traductor)
 
 - Se presentan bajo el encabezado **"Nota(s) del traductor:"**, numeradas.
