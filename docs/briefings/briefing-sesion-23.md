@@ -3,28 +3,41 @@
 *Complementa a los briefings 05–22. La sesión 23 tuvo un solo hilo, heredado
 del §6 de la 22: **las quince citas pendientes**. Resultó que no estaban
 pendientes por ambigüedad sino por un defecto del emparejador. De paso salió
-un segundo hilo, la negrita del vutti, que sigue abierto. No se tradujo ni un
+un segundo hilo, la negrita del vutti, que quedó a medias. No se tradujo ni un
 sutta nuevo; no se tocó el capítulo 4.*
 
 > **Lo primero que tiene que saber el chat nuevo:** doce de las quince citas
-> están puestas y verificadas. Lo que queda abierto es **la negrita**, y en
-> concreto una decisión de Angel que bloquea trece líneas: unificar la
-> división `Xsv ti` → `Xsv iti`.
+> están puestas y verificadas, y §66 —lo que Angel preguntaba— quedó resuelto.
+> Lo que queda abierto es **la negrita de los 26 lemas restantes**, que ya no
+> depende de ninguna decisión sino de volver a tener delante el PDF del Nāma.
+
+> **Enmienda del 21 de agosto (sesión 24).** Este briefing se escribió *antes*
+> del último commit de la sesión y quedó desfasado en tres puntos: daba §66 por
+> no resuelto, el reparo de ambigüedad por revertido y las divisiones `Xsv ti`
+> por trece. Las secciones §1, §5 y §6 están corregidas abajo; los párrafos
+> tachados por los hechos se han reescrito, no borrado, y se dice en cada caso
+> qué decía antes. **Moraleja de procedimiento: el briefing se escribe al
+> cerrar, no antes del último commit.**
 
 ---
 
 ## 1. ESTADO AL CIERRE
 
-HEAD: **`4aeead1`**, empujado (`origin/main` igual). Comprobado **sin
+HEAD: **`b426955`**, empujado (`origin/main` igual). Comprobado **sin
 ejecutar git**, leyendo `.git/refs/heads/main`, `.git/logs/HEAD` y
 `.git/refs/remotes/origin/main` como texto plano.
 
-Un solo commit de contenido en toda la sesión:
+Dos commits de contenido:
 
 | Hash | Qué |
 | ---- | --- |
 | `c06d2e8`/`4e3f72e` | reintentos del hook sobre el commit de la 22 |
-| `4aeead1` | **citas, §275 y negrita** ← HEAD |
+| `4aeead1` | citas, §275 y negrita |
+| `b426955` | **repetida no es ambigua cuando las cuentas cuadran; §66** ← HEAD |
+
+*(Este apartado decía `4aeead1` y «un solo commit». Se escribió antes de que
+`b426955` existiera. Es el commit que resuelve §66 y levanta el reparo de
+ambigüedad, y sin él las secciones §5 y §6 de abajo no se entienden.)*
 
 ## 2. LAS CITAS: NO ERAN AMBIGUAS, EL EMPAREJADOR ESTABA ROTO
 
@@ -135,37 +148,77 @@ primero —`**Yosv i**ti`— y Angel lo corrigió.
   Además hacía **fallar la reconstrucción** de `restituir_negritas.py`, que
   quedó otra vez en OK al corregirlo.
 
-### Lo que NO se arregló: §66, que es lo que Angel preguntaba
+### §66, que es lo que Angel preguntaba: **resuelto** en `b426955`
 
-**Quedan 30 lemas sin negrita.** Dos bloqueos distintos:
+*(Este apartado se titulaba «Lo que NO se arregló: §66» y daba 30 lemas
+pendientes y dos bloqueos vivos. Lo escribí antes del último commit. Lo que
+sigue es lo que de verdad pasó.)*
 
-1. **`Saṃsāsv` (§63, §66)**: el maestro lo escribe sin guion; el PDF y §62
-   traen `Saṃ-sāsv`. Es el punto 3 del §6 de la 22, todavía abierto.
-2. **`Ekavacanesv` (§62, §66)**: la línea del PDF es idéntica en los dos
-   suttas y el script la descarta por ambigua.
+Los dos bloqueos cayeron, y por la misma vía:
 
-**Se intentó levantar ese reparo y no sale.** Las líneas que se repiten son
-las genéricas, aparecen en muchos suttas a la vez, el marcado nuevo se
-entrelaza con la negrita que ya está y **la reconstrucción deja de reproducir
-el maestro**. Se dio marcha atrás y quedó nota en el código para que nadie lo
-reintente igual. Hacerlo bien pide emparejar por contexto de cada aparición,
-no «ponerlo en todas».
+1. **`Saṃsāsv` (§63, §66)** — el maestro lo escribía sin guion frente al
+   `Saṃ-sāsv` del PDF y de §62. **Cerrado**: hoy no queda ni una aparición sin
+   guion y hay cuatro con él. Con eso muere también el punto 3 del §6 de la 22.
+2. **`Ekavacanesv` (§62, §66)** — la línea del PDF es idéntica en los dos
+   suttas y el script la descartaba por ambigua. **Reparo levantado.**
+
+**La regla que lo hizo seguro: repetida no es ambigua cuando las cuentas
+cuadran.** «Ekavacanesv iti kimatthaṃ? Tāsaṃ, sabbāsaṃ.» sale dos veces en el
+PDF y dos veces en el maestro, §62 y §66. No hay nada que adivinar: es una
+correspondencia uno a uno que se resuelve por orden.
+
+El primer intento —colocar la línea repetida en *todas* sus apariciones— sí
+falló, y es lo que este briefing dio por definitivo: las líneas que se repiten
+son las genéricas, salen en muchos más sitios de los que el PDF tiene, el
+marcado se entrelaza con la negrita ya puesta y la reconstrucción deja de
+reproducir el maestro. **Exigir que las cuentas coincidan descarta esas solas.**
+Hicieron falta además dos cosas:
+
+- `restituir_negritas.py` líneas 281-302: la condición `len(hits) ==
+  veces_pdf[norm]`, con el porqué comentado en el código.
+- Líneas 331-342: descartar el tramo que **pisa a medias** una negrita
+  existente. Antes sólo se miraba la coincidencia exacta, de modo que un tramo
+  que empezara dentro de una negrita y acabara fuera producía marcado
+  entrelazado —`**a**b**c**`— que `pelar` ya no sabe deshacer. Era eso, y no la
+  ambigüedad, lo que hacía fallar la reconstrucción.
+
+**Estado real al cierre: 26 lemas sin negrita**, no 30. También se restituyó
+**§222** (`**Liṅgādīsv** iti`), que este briefing seguía contando como
+pendiente.
 
 ## 6. LO QUE SIGUE ABIERTO
 
-### La decisión que desbloquea más
+### ~~La decisión que desbloquea más~~ · resuelta el 21 de agosto
 
-1. **Unificar `Xsv ti` → `Xsv iti` en trece sitios** —§88 ×2, §89, §92, §93,
-   §96, §97, §127, §132, §133, §147, §155, §222—. El maestro tiene ahí una
-   tercera forma que no es ni la de Nandisena (`Yosvī ti`) ni la decidida
-   (`Yosv iti`): le falta la `i` entera. Unificarla les devolvería la negrita
-   desde el PDF. **Cambia el pāḷi, así que no se tocó.** Se le planteó a
-   Angel y no llegó a contestarlo.
-2. **El guion de `Saṃsāsv`** (§63, §66) — punto 3 del §6 de la 22.
-3. **El reparo de ambigüedad**, si se quiere §66 entero.
+1. **Unificar `Xsv ti` → `Xsv iti`: HECHO.** Eran **doce**, no trece —§88 ×2,
+   §89, §92, §93, §96, §97, §127, §132, §133, §147, §155—; §222 ya lo había
+   arreglado `b426955`. Angel lo decidió al abrir la sesión 24.
+
+   El maestro tenía ahí una forma que no es ni la de Nandisena (`Yosvī ti`) ni
+   la decidida (`Yosv iti`): le falta la `i` entera, y así **no se puede leer**
+   —sin esa vocal no queda ningún `iti` que valga—. Es la pérdida de un macrón
+   en la capa de texto, la misma avería del punto 4 de abajo, no una variante.
+
+   **La prueba de que no era distinción del maestro: `Etesv`.** Lo imprimía de
+   las dos maneras en el mismo capítulo, `Etesv ti` cinco veces y `Etesv iti`
+   dos. Igual `Yosv` (5/0), `Katanikāralopesv` (1/0) y `Ve-vosv` (1/0).
+
+   **Cómo se verificó**, ya que cambia el pāḷi: la única diferencia admitida
+   entre el maestro de antes y el de después son doce inserciones de `i`. Tres
+   comprobaciones lineales, y el script no escribe si alguna falla —la
+   diferencia de longitud es exactamente 12; los dos textos son **idénticos al
+   quitarles toda la `i`**; y no queda ningún `Xsv ti`—. Las doce líneas
+   tocadas coinciden una a una con las doce localizadas antes de tocar nada.
+
+   Ojo: esto **no pone negrita por sí solo**. Prepara el terreno. Los 26 lemas
+   siguen en 26 hasta que se vuelva a pasar `restituir_negritas.py`, y para eso
+   hace falta el PDF del Nāma, que no vive en el repositorio.
+2. ~~**El guion de `Saṃsāsv`** (§63, §66)~~ — **cerrado** en `b426955`, ver §5.
+3. ~~**El reparo de ambigüedad**~~ — **levantado** en `b426955`, ver §5.
 4. **53 líneas ausentes** en el informe de negritas, casi todas por defectos
    de la capa de texto del PDF (macrones que se pierden, `s`→`v`). El informe
-   ya las lista enteras.
+   ya las lista enteras. **Es lo único que sigue vivo de este hilo**, junto con
+   los 26 lemas, y ambas cosas piden el PDF delante.
 
 ### Nuevo de esta sesión
 
@@ -223,3 +276,9 @@ no «ponerlo en todas».
 - **Proponer y verificar, nunca afirmar.** Las dos veces que esta sesión se
   salió de ahí —la colocación a final de frase, la negrita comiéndose la
   `i`— las cazó Angel, no la máquina.
+- **El briefing se escribe cuando ya no se va a tocar nada más.** `CLAUDE.md`
+  pide que esté escrito y guardado antes de cerrar; éste lo estuvo *demasiado*
+  antes, y dio por abierto lo que el commit siguiente cerró. Un briefing que
+  adelanta el cierre manda a la sesión próxima a rehacer trabajo hecho. **Lo
+  primero que hace un chat nuevo es comprobar `HEAD` contra el briefing**; si
+  no coinciden, manda el árbol.
