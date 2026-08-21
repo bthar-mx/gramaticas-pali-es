@@ -9,9 +9,10 @@ abstract: >-
   Padarūpasiddhi y el Saddanīti-Suttamālā. La versión 1.1.0 comprende los tres
   primeros capítulos completos, 315 suttas: Sandhi-kappa (§1–§51), Nāma-kappa
   (§52–§270) y Kāraka-kappa (§271–§315). Restituye además, desde la edición
-  base y verificadas por reconstrucción, las 214 referencias canónicas que la
-  fase de traducción había retirado y los 975 tramos de la negrita que
-  Nandisena imprime dentro del vutti. Edición base: la traducción de Bhikkhu
+  base y verificado por reconstrucción, lo que la conversión a texto había
+  perdido: los tres capítulos quedan con 222 referencias canónicas y 990
+  tramos de la negrita con que Nandisena señala, dentro del vutti, las letras
+  que cada sutta nombra. Edición base: la traducción de Bhikkhu
   Nandisena (ITBMU); referencias secundarias: Ven. A. Thitzana, Rūpasiddhi y
   el Nyāsa-Pāḷi. Un proyecto del Instituto de Estudios Buddhistas Hispano
   (IEBH).
@@ -29,9 +30,15 @@ url: "https://gramaticas.buddha-dhamma.net"
 repository-code: "https://github.com/admin-iebh/gramaticas-pali-es"
 license: CC-BY-NC-SA-4.0
 version: "1.1.0"
-date-released: "2026-08-20"
-doi: "10.5281/zenodo.21948011"
+date-released: "2026-08-21"
+doi: "10.5281/zenodo.21948010"
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21948010"
+    description: "Zenodo concept DOI — always resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.22037060"
+    description: "Zenodo archive of v1.1.0"
   - type: doi
     value: "10.5281/zenodo.21948011"
     description: "Zenodo archive of v1.0.0"

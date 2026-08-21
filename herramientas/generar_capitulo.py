@@ -85,9 +85,15 @@ COPYRIGHT = (
     "Hispano (IEBH). Publicado bajo licencia "
     '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" '
     'rel="license">CC BY-NC-SA 4.0</a> · DOI '
-    '<a href="https://doi.org/10.5281/zenodo.21948011">'
-    "10.5281/zenodo.21948011</a>."
+    '<a href="https://doi.org/10.5281/zenodo.21948010">'
+    "10.5281/zenodo.21948010</a>."
 )
+# Éste es el DOI de *concepto* —el que Zenodo llama «Cite all versions»—, no
+# el de ninguna versión concreta: resuelve siempre a la más reciente, que es
+# lo que corresponde a una página que siempre muestra lo último. Con un DOI
+# de versión el pie se quedaría atrás en cada entrega.
+# Los de versión son 21948011 (v1.0.0) y 22037060 (v1.1.0), y viven en la
+# lista `identifiers` de `CITATION.cff`.
 
 KANDAS_PALI = ["Paṭhama-Kaṇḍa", "Dutiya-Kaṇḍa", "Tatiya-Kaṇḍa",
                "Catuttha-Kaṇḍa", "Pañcama-Kaṇḍa", "Chaṭṭha-Kaṇḍa",
