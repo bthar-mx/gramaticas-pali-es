@@ -59,12 +59,44 @@ MAESTROS = {
 RE_HDR = re.compile(r'^\*\*(\d{1,3})\\\.\s')
 RE_NEGRITA = re.compile(r'\*\*([^*]+)\*\*')
 RE_TITULO_PDF = re.compile(r'^\*\*\d{1,3}\.\s+[\d, ]+\.\s')
-MINIMO = 24          # una línea más corta no identifica nada por sí sola
-_SIGLAS = ("Khu|Vin|Abhi|DhA|DA|MA|SA|AA|VinA|ItivuttaA|UdānaA"
-           "|PetavatthuA|Sad|Mog|D|M|A|S|J")
+# Suelo de longitud del ancla. Estuvo en 24 desde el principio, cuando la
+# única regla de colocación era «aparece una sola vez»: entonces una línea
+# corta sí era peligrosa, porque cuanto más corta más fácil que casara por
+# casualidad. Bajado a 16 en la sesión 24, y no por optimismo — se midió.
+#
+# De las 17 líneas del Nāma que caían por debajo de 24:
+#
+#     10  únicas en el PDF y únicas en el maestro (1=1) → colocables
+#      6  ausentes de todos modos: «**2-NĀMA-KAPPA**», rótulos ingleses,
+#         fragmentos de nota al pie. El suelo no aportaba nada aquí.
+#      1  «honti **aṃ**mhi vibhattimhi» — 2 en el maestro y 1 en el PDF
+#
+# Esa última es la única de verdad peligrosa, y **no la para el suelo: la para
+# la regla de las cuentas** (sesión 23), que exige que el maestro repita la
+# línea tantas veces como el PDF. De modo que el suelo no atrapaba ya nada que
+# las demás reglas no atrapasen, y a cambio rechazaba nueve lemas legítimos
+# —«**Vā** ti kimatthaṃ? Aggi.», 19 caracteres— por el solo hecho de que el
+# ejemplo que los ilustra es corto.
+#
+# Se conserva un suelo, no se quita: por debajo de 16 quedan los rótulos y los
+# restos de numeración, que no son texto que colocar.
+MINIMO = 16
+# Siglas de cita, **de más larga a más corta**. El orden importa: la
+# alternación de `re` se queda con la primera que case, de modo que un `Vin`
+# colocado antes que `VinA` se comía las tres primeras letras de «VinA» y
+# dejaba una `A` que ya no encajaba con lo que sigue. Estaba así, y por eso
+# `VinA` y `AbhiA` no se reconocían nunca (sesión 24).
+#
+# `AbhiA` y `Rū` faltaban directamente: la primera sale en el PDF del Nāma
+# —«(AbhiA. i, 337)», §94—, la segunda en los maestros.
+_SIGLAS = ("ItivuttaA|PetavatthuA|UdānaA|AbhiA|VinA|Abhi|Khu|Sad|Mog|DhA"
+           "|Rū|DA|MA|SA|AA|Vin|D|M|A|S|J")
 RE_SALTABLE = re.compile(
     r'\[\^\d+\]'                                   # nota al pie
-    r'|\((?:' + _SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*\)')  # cita
+    # `\(\s*` y no `\(`: el PDF imprime «( D. ii, 6)» con un espacio suelto
+    # tras el paréntesis (§93), y sin esta holgura la cita no se reconocía,
+    # de modo que quedaba dentro del ancla y ninguna línea encontraba sitio.
+    r'|\(\s*(?:' + _SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*\)')  # cita
 
 
 # La única divergencia de división registrada del proyecto (sesión 22, y
@@ -93,13 +125,102 @@ RE_REDIV = (
 )
 
 
+# Dos averías del PDF que **cambian la longitud** y por eso no caben en
+# `VARIANTES`, que trabaja sobre la cadena normalizada y necesita conservarla.
+# Se reparan aquí, sobre la línea cruda, antes de normalizar nada.
+#
+#     PDF                    maestro              qué pasó
+#     **Etevī** ti           Etesv iti            's' salió como 'v'
+#     **Tumha-mhākam** iti   Tumha-amhākaṃ iti    se perdió la 'a' y la 'ṃ'
+#
+# Igual que `VARIANTES`, es tabla cerrada y cotejada a mano, no tolerancia.
+# Las dos formas de la izquierda salen **una sola vez en el PDF** y **ninguna
+# en el maestro**, de modo que la regla no puede dispararse donde no toca. Y
+# el PDF escribe «Etesvī» bien otras cinco veces, que es lo que confirma que
+# «Etevī» es esa misma palabra estropeada y no otra cosa.
+RE_DEFECTO = (
+    (re.compile(r'\*\*Etevī\*\*\s*ti\b'), r'**Etesv** iti'),
+    (re.compile(r'\*\*Tumha-mhākam\*\*\s*iti\b'), r'**Tumha-amhākaṃ** iti'),
+)
+
+
 def redividir(linea):
-    """Reescribe el locativo contraído del PDF a la división del maestro."""
+    """Reescribe el locativo contraído del PDF a la división del maestro.
+
+    Y repara de paso las dos averías de `RE_DEFECTO`, que no son división
+    sino letras que la capa de texto perdió.
+    """
     n = 0
-    for regex, con in RE_REDIV:
+    for regex, con in RE_DEFECTO + RE_REDIV:
         linea, k = regex.subn(con, linea)
         n += k
     return linea, n
+
+
+# Lo que la capa de texto del PDF pierde, cotejado una a una (sesión 24).
+#
+# Nueve líneas del Nāma no encontraban su sitio por **un solo carácter**, y
+# siempre el mismo tipo de avería: un diacrítico que `pdftohtml` no devuelve.
+# No son variantes de lectura ni erratas de Nandisena —el PDF *imprime* el
+# diacrítico, lo que falla es extraerlo—, así que **no se corrige nada**: se
+# le enseña al emparejador, igual que `VARIANTES` en `restituir_citas.py`.
+#
+#     PDF (capa de texto)        maestro          avería
+#     kimattham                  kimatthaṃ        m por ṃ   (§76, §194)
+#     Pancādīnaṃ                 Pañcādīnaṃ       n por ñ   (§90)
+#     Vibhasā                    Vibhāsā          a por ā   (§154)
+#
+# **Esto no es tolerancia de emparejamiento.** Es una tabla cerrada: cada
+# entrada se comprobó contra el PDF con los ojos, y lo que no esté en ella
+# sigue saliendo como ausente. La alternativa —plegar los diacríticos y
+# aceptar el ancla si el resultado es único— se descartó: en pāḷi la cantidad
+# vocálica significa, y la comprobación de reconstrucción **no detectaría** una
+# negrita bien puesta sobre la letra equivocada, porque sólo demuestra que al
+# quitar el marcado vuelve el maestro intacto.
+#
+# Dos condiciones que hacen segura cada entrada:
+#
+#   1. **La forma de la izquierda no existe en el maestro.** Comprobado: el
+#      maestro escribe `kimatthaṃ` 198 veces y `kimattham` ninguna, de modo que
+#      la sustitución no puede pisar nada legítimo.
+#   2. **Conserva la longitud**, carácter por carácter, porque las marcas de
+#      negrita son índices sobre la cadena normalizada. Lo garantiza el
+#      `assert` de abajo.
+#
+# Sustituida la grafía, decide la regla de siempre: el ancla se coloca sólo si
+# aparece una vez. La tabla no coloca nada por sí misma.
+#
+# §190 merece nota aparte. Es la única de las nueve donde el diacrítico está en
+# el PDF y falta en el maestro —`evamādīto` frente a `evamādito`—, que leído sin
+# más parecería errata nuestra. No lo es: **el propio PDF imprime `evamādito`
+# cuatro veces y `evamādīto` una**, justo ahí. El maestro sigue a la mayoría y
+# se queda como está; es un singleton de la edición base, de la clase de
+# `brāhamaṇā` (sesión 23).
+VARIANTES = (
+    ("kimattham",      "kimatthaṃ"),       # §76, §194
+    ("Pancādīnaṃ",     "Pañcādīnaṃ"),      # §90
+    ("Pañcadīnam",     "Pañcādīnam"),      # §134
+    ("Vibhasā",        "Vibhāsā"),         # §154
+    ("parealutte",     "pareālutte"),      # §77
+    ("aṃ-āadesā",      "aṃ-āādesā"),       # §68
+    ("aṃnamiccetesu",  "aṃnaṃiccetesu"),   # §132
+    ("evamādīto",      "evamādito"),       # §190 — al revés, ver arriba
+)
+
+for _pdf, _mae in VARIANTES:
+    assert len(_pdf) == len(_mae), (
+        "VARIANTES: «{0}» y «{1}» no miden lo mismo; las marcas de negrita son "
+        "índices sobre la cadena normalizada y se descolocarían.".format(
+            _pdf, _mae))
+
+
+def variantes(norm):
+    """Reescribe la grafía del PDF a la del maestro. Sólo del lado del PDF."""
+    n = 0
+    for pdf, mae in VARIANTES:
+        norm, k = norm.replace(pdf, mae), norm.count(pdf)
+        n += k
+    return norm, n
 
 
 def normalizar(s):
@@ -217,6 +338,11 @@ def tramos(linea_pdf):
             plano += trozo
             pos += len(trozo)
     norm, _ = normalizar(plano)
+    # Grafías que la capa de texto del PDF pierde. Va aquí y no en
+    # `normalizar` porque sólo se aplica al lado del PDF: el maestro es la
+    # referencia y no se toca. Conserva la longitud, así que las marcas de
+    # abajo —índices sobre esta misma cadena— siguen valiendo.
+    norm, _ = variantes(norm)
     fuera = []
     for ini, fin in marcas:
         a, _ = normalizar(plano[:ini])

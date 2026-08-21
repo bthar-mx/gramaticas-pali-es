@@ -378,7 +378,7 @@ Ejemplos:
 
 **68\. 184\. Am-ā pato smiṃ-smānaṃ vā (216).** \[Aṃ-ā \+ pato \+ smiṃ-smānaṃ \+ vā, 4\]
 
-Pa icc etasmā smiṃ smā icc etesaṃ aṃ-ā ādesā honti vā yathāsaṅkhyaṃ. 
+**Pa** icc etasmā **smiṃ smā** icc etesaṃ **aṃ-ā** ādesā honti vā yathāsaṅkhyaṃ. 
 
 Matyaṃ, matiyaṃ, matyā (Khu. vi, 39), matiyā. Nikatyaṃ, nikatiyaṃ (Khu. vi, 39), nikatyā (Khu. v, 9), nikatiyā. Vikatyaṃ, vikatiyaṃ, vikatyā, vikatiyā. Viratyaṃ, viratiyaṃ, viratyā, viratiyā. Ratyaṃ, ratiyaṃ, ratyā (Khu. vi, 315), ratiyā. Puthabyaṃ, puthaviyaṃ, puthabyā, puthaviyā. Pavatyaṃ, pavatyā, pavattiyaṃ, pavattiyā.
 
@@ -614,7 +614,7 @@ Ejemplos:
 
 Gāvuṃ, gāvaṃ. 
 
-Āvasse ti kimatthaṃ? Gavaṃ. 
+**Āvasse** ti kimatthaṃ? Gavaṃ. 
 
 **Aṃmhi** ti kimatthaṃ? Gāvo tiṭṭhanti.
 
@@ -639,7 +639,7 @@ Ejemplos:
 
 **77\. 175\. Tato naṃ aṃ patimh’ ālutte ca samāse (227-8).** \[Tato \+ naṃ \+ aṃ \+ patimhi \+ ālutte \+ ca \+ samāse, 7\]
 
-Tato gosaddato naṃvacanassa aṃādeso hoti, go icc etassa okārassa avādeso hoti patimhi pare ālutte ca samāse. 
+Tato gosaddato naṃvacanassa aṃādeso hoti, go icc etassa okārassa avādeso hoti **pati**mhi pare ālutte ca samāse. 
 
 Gavaṃpati (S. iii, 382). 
 
@@ -1005,9 +1005,9 @@ Sabbe sarā **yo**su katanikāra-lopesu dīgham āpajjante.
 
 Aggī, bhikkhū, rattī, yāgū, aṭṭhī, aṭṭhīni, āyū, āyūni, sabbāni, yāni, tāni, kāni, katamāni, etāni, amūni, imāni. 
 
-Yosv iti kimatthaṃ? Aggi, bhikkhu, ratti, yāgu, sabbo, yo, so, ko, amuko. 
+**Yosv** iti kimatthaṃ? Aggi, bhikkhu, ratti, yāgu, sabbo, yo, so, ko, amuko. 
 
-Katanikāralopesv iti kimatthaṃ? Itthiyo, vadhuyo, sayambhuvo. 
+**Katanikāralopesv** iti kimatthaṃ? Itthiyo, vadhuyo, sayambhuvo. 
 
 **Pun’ ārambhaggahaṇaṃ** kimatthaṃ? Niccadīpanatthaṃ. Aggī, bhikkhū, rattī, yāni, tāni, katamāni.
 
@@ -1038,7 +1038,7 @@ Ejemplos:
 
 Aggīsu, aggīnaṃ, aggīhi; rattīsu, rattīnaṃ, rattīhi; bhikkhūsu, bhikkhūnaṃ, bhikkhūhi. Purisānaṃ. 
 
-Etesv iti kimatthaṃ? Agginā, pāṇinā, daṇḍinā. 
+**Etesv** iti kimatthaṃ? Agginā, pāṇinā, daṇḍinā. 
 
 **Caggahaṇam** avadhāraṇatthaṃ. Sukhettesu brahmacārisu (A. i, 352); dhammam akkhāsi Bhagavā; bhikkhunaṃ datvā sakehi pāṇibhi (Khu. ii, 138).
 
@@ -1069,7 +1069,7 @@ Ejemplos:
 
 **90\. 252\. Pañcādīnam attaṃ (247).** \[Pañca-ādīnaṃ \+ attaṃ, 2\]
 
-Pañcādīnaṃ saṅkhyānaṃ anto attam āpajjate su naṃ hi icc etesu. 
+**Pañcā**dīnaṃ saṅkhyānaṃ anto **a**ttam āpajjate **su naṃ hi** icc etesu. 
 
 Pañcasu, pañcannaṃ, pañcahi; chasu, channaṃ, chahi; sattasu, sattannaṃ, sattahi; aṭṭhasu, aṭṭhannaṃ, aṭṭhahi; navasu, navannaṃ, navahi; dasasu, dasannaṃ, dasahi. 
 
@@ -1169,7 +1169,7 @@ Sabbass’ eva **ntu**paccayassa **a**ttaṃ hoti vā **aṃ sa** icc etesu.
 
 Satimaṃ bhikkhuṃ, satimantaṃ bhikkhuṃ vā. Bandhumaṃ rājānaṃ, bandhumantaṃ rājānaṃ vā (D. ii, 14). Satimassa bhikkhuno, satimato bhikkhuno vā. Bandhumassa rañño (D. ii, 6) suṅkaṃ. Bandhumato rañño (D. ii, 13) vā suṅkaṃ deti.
 
-Etesv iti kimatthaṃ? Satimā bhikkhu. Bandhumā rājā.
+**Etesv** iti kimatthaṃ? Satimā bhikkhu. Bandhumā rājā.
 
 ---
 
@@ -1194,7 +1194,7 @@ Ejemplos:
 
 Himavanto pabbato (Khu. i, 56). 
 
-Vā ti kimatthaṃ? Himavā pabbato.
+**Vā** ti kimatthaṃ? Himavā pabbato.
 
 ---
 
@@ -1218,7 +1218,7 @@ Ejemplo:
 
 Purato aggini. Pacchato aggini. Akkhiṇato aggini. Vāmato aggini. 
 
-Vā ti kimatthaṃ? Aggi.
+**Vā** ti kimatthaṃ? Aggi.
 
 ---
 
@@ -1242,11 +1242,11 @@ Ejemplos:
 
 Aggayo, munayo, isayo (Khu. ii, 88), gahapatayo (Khu. vi, 423). 
 
-Yosv iti kimatthaṃ? Aggīsu. 
+**Yosv** iti kimatthaṃ? Aggīsu. 
 
 **Akatarasso** ti kimatthaṃ? Daṇḍino. 
 
-Jho ti kimatthaṃ? Rattiyo.
+**Jho** ti kimatthaṃ? Rattiyo.
 
 ---
 
@@ -1281,7 +1281,7 @@ Bhikkhave, bhikkhavo; hetave, hetavo.
 
 **Akatarasso** ti kimatthaṃ? Sayambhuvo, vessabhuvo, parābhibhuvo. 
 
-Ve-vosv iti kimatthaṃ? Hetunā, ketunā, setunā. 
+**Ve-vosv** iti kimatthaṃ? Hetunā, ketunā, setunā. 
 
 Caggahaṇam anukaḍḍhanatthaṃ.
 
@@ -1469,7 +1469,7 @@ Sabbena, yena, tena, kena, anena, purisena, rūpena.
 
 **Ato** ti kimatthaṃ? Muninā, amunā, bhikkhunā. 
 
-Nā ti kimatthaṃ? Tasmā.
+**Nā** ti kimatthaṃ? Tasmā.
 
 ---
 
@@ -1634,7 +1634,7 @@ Tasmā akārato catutthekavacanassa āyādeso hoti vā.
 
 Atthāya hitāya sukhāya devamanussānaṃ Buddho loke uppajjati (A. i, 21). 
 
-Ato ti kimatthaṃ? Isissa. 
+**Ato** ti kimatthaṃ? Isissa. 
 
 **Catutthī** ti kimatthaṃ? Purisassa mukhaṃ. 
 
@@ -2171,7 +2171,7 @@ Sabbass’ eva **ntu**paccayassa savibhattissa **to-ti-tā**desā honti vā **sa
 
 Guṇavato, guṇavantassa; guṇavati, guṇavantasmiṃ; guṇavatā, guṇavantena; satimato, satimantassa; satimati, satimantasmiṃ; satimatā, satimantena. 
 
-Etesv iti kimatthaṃ? Guṇavā. Satimā (M. i, 70).
+**Etesv** iti kimatthaṃ? Guṇavā. Satimā (M. i, 70).
 
 ---
 
@@ -2285,9 +2285,9 @@ Un número que es femenino, masculino y neutro.
 
 Dve itthiyo, dve dhammā, dve rūpāni. 
 
-Yosv iti kimatthaṃ? Dvīsu. 
+**Yosv** iti kimatthaṃ? Dvīsu. 
 
-Caggahaṇena duve dvaya ubha ubhaya duvi ca honti yo nā aṃ naṃ icc etesu. Duve (DA. i, 58) samaṇā. Duve (DA. i, 58) brāhmaṇā. Duve (DA. i, 58) janā. Dvayena, dvayaṃ (Vin. i, 24; VinA. i, 105). Ubhinnaṃ (Khu. v, 18). Ubhayesaṃ, duvinnaṃ.
+**Caggahaṇena duve dvaya ubha ubhaya duvi** ca honti **yo nā aṃ naṃ** icc etesu. Duve (DA. i, 58) samaṇā. Duve (DA. i, 58) brāhmaṇā. Duve (DA. i, 58) janā. Dvayena, dvayaṃ (Vin. i, 24; VinA. i, 105). Ubhinnaṃ (Khu. v, 18). Ubhayesaṃ, duvinnaṃ.
 
 ---
 
@@ -2320,7 +2320,7 @@ Ejemplos:
 
 Tisso vedanā (D. iii, 181); catasso disā; tayo janā (Khu. v, 196); cattāro purisā; tīṇi āyatanāni; cattāri ariyasaccāni (Khu. i, 3). 
 
-Yosv iti kimatthaṃ? Tīsu, catūsu.
+**Yosv** iti kimatthaṃ? Tīsu, catūsu.
 
 ---
 
@@ -2349,7 +2349,7 @@ Pañcādīnaṃ saṅkhyānaṃ itthi-puma-napuṃsake vattamānānaṃ savibhat
 
 Pañca, pañca; cha, cha; satta, satta; aṭṭha, aṭṭha; nava, nava; dasa, dasa. 
 
-Pañcādīnam iti kimatthaṃ? Dve, tayo.
+**Pañcādīnam** iti kimatthaṃ? Dve, tayo.
 
 ---
 
@@ -2374,7 +2374,7 @@ Sabbass’ eva **rāja**saddassa savibhattissa **rañño rājino** (Khu. i, 324)
 
 Rañño, rājino. 
 
-Se ti kimatthaṃ? Raññā.
+**Se** ti kimatthaṃ? Raññā.
 
 ---
 
@@ -2672,18 +2672,18 @@ Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ yadā padasmā paresaṃ *
 
 Pahāya vo bhikkhave gamissāmi (Khu. iv, 265); mā no ajja vikantiṃsu (Khu. vi, 93) rañño sūdā mahānase. Evaṃ **dutiyatthe**. 
 
-Dhammaṃ vo bhikkhave desessāmi (M. iii, 86); saṃvibhajetha no rajjena (D. ii, 188). Evaṃ catutthyatthe. 
+Dhammaṃ vo bhikkhave desessāmi (M. iii, 86); saṃvibhajetha no rajjena (D. ii, 188). Evaṃ **catutthyatthe**. 
 
 Tuṭṭho ’smi vo bhikkhave pakatiyā (Khu. vi, 89); satthā no Bhagavā anuppatto (M. i, 
 266). Evaṃ chaṭṭhyatthe. 
 
 **Navā** ti kimatthaṃ? Eso amhākaṃ satthā. 
 
-Tumha-amhākaṃ iti kimatthaṃ? Ete isayo passasi. 
+**Tumha-amhākaṃ** iti kimatthaṃ? Ete isayo passasi. 
 
 **Padato** ti kimatthaṃ? Tumhākaṃ satthā. 
 
-Etesv iti kimatthaṃ? Gacchatha tumhe.
+**Etesv** iti kimatthaṃ? Gacchatha tumhe.
 
 ---
 
@@ -2913,7 +2913,7 @@ Ejemplo:
 
 Itthī ca pumā ca napuṃsakaṃ ca itthipumannapuṃsakāni. Itthipumannapuṃsakānaṃ samūho itthipumannapuṃsakasamūho. 
 
-Vibhāsā ti kimatthaṃ? Itthipumanapuṃsakāni.
+**Vibhāsā** ti kimatthaṃ? Itthipumanapuṃsakāni.
 
 ---
 
@@ -2937,7 +2937,7 @@ Ejemplo:
 
 Pumāno, he pumāno. 
 
-Yosv iti kimatthaṃ? Pumā.
+**Yosv** iti kimatthaṃ? Pumā.
 
 ---
 
@@ -3937,7 +3937,7 @@ Ejemplos:
 
 Brahmānaṃ, brahmaṃ; attānaṃ, attaṃ; sakhānaṃ, sakhaṃ; rājānaṃ, rājaṃ. 
 
-Am iti kimatthaṃ? Rājā.
+**Am** iti kimatthaṃ? Rājā.
 
 ---
 
@@ -3988,7 +3988,7 @@ Ejemplos:
 
 **190\. 114\. Yonam āno (392).** \[Yonaṃ \+ āno, 2\]
 
-Brahma atta sakha rāja icc evamādito yonaṃ āno-ādeso hoti. 
+**Brahma atta sakha rāja** icc evamādito **yo**naṃ **āno**-ādeso hoti. 
 
 Brahmāno, attāno, sakhāno, rājāno, ātumāno.
 
@@ -4079,7 +4079,7 @@ Tassa **sakha**ntassa **i**kāro hoti **no nā naṃ sa** icc etesu.
 
 Sakhino, sakhinā, sakhīnaṃ, sakhissa. 
 
-Etesv iti kimatthaṃ? Sakhārehi.
+**Etesv** iti kimatthaṃ? Sakhārehi.
 
 ---
 
@@ -4910,7 +4910,7 @@ Ejemplos:
 
 **Pasaññato** ti kimatthaṃ? Daṇḍinaṃ, bhoginaṃ. 
 
-Am iti kimatthaṃ? Itthīhi.
+**Am** iti kimatthaṃ? Itthīhi.
 
 ---
 
