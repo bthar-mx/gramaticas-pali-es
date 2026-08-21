@@ -99,6 +99,61 @@ Las que no tienen ancla única no se colocan: quedan listadas en
 
 El Sandhi-Kappa nunca las perdió: es anterior a aquella decisión.
 
+### 5.1 bis. Dónde va la cita, y cuántas (sesión 23)
+
+Dos reglas, decididas por Angel sobre el caso de §132, donde Nandisena pone
+`(DA. i, 58)` tres veces sobre `Duve samaṇā / Duve brāhmaṇā / Duve janā`:
+
+1. **Se repite la cita en cada ejemplo atestiguado**, aunque sea la misma
+   referencia tres veces seguidas. Poner sólo la primera daría a entender
+   que los otros dos ejemplos no están atestiguados, lo que sería falso.
+2. **La cita va donde la pone la edición base**, que no es siempre el final
+   de la frase: cuando lo que la referencia certifica es la voz ilustrada,
+   va pegada a esa voz y no al final de la oración.
+
+        §132  Duve (DA. i, 58) samaṇā. Duve (DA. i, 58) brāhmaṇā.
+        §130  Amuṃ (M. i, 210) rājānaṃ passasi; asu (D. ii, 162) rājā tiṭṭhati.
+        §175  Nāya, tāya; naṃ (Khu. i, 308), taṃ; ne (DhA. i, 6), te; …
+
+   En §175 no hay siquiera frase que cerrar: la lista son formas sueltas.
+   Mover la cita al final de la oración habría sido rehacer la edición base,
+   que es justo lo que `CLAUDE.md` prohíbe.
+
+### 5.1 ter. Por qué quedaron quince pendientes (sesión 23)
+
+No por ambigüedad, como se creyó en la 22: **por un defecto del
+emparejador**. `anclas_candidatas` arma el ancla uniendo voces con un solo
+espacio, pero entre esas voces el maestro imprime comas y puntos —«Duve
+samaṇā. Duve»—, y `normalizar` comparaba la puntuación al pie de la letra.
+De modo que **ningún ancla de más de una voz podía coincidir nunca**: el
+emparejador caía siempre al ancla de una sola voz, que casi nunca es única,
+y por eso informaba «sin ancla única».
+
+Corregido —se descarta la puntuación al comparar, y también los asteriscos,
+que desde `restituir_negritas.py` pueden partir un ancla—, **doce de las
+quince se resolvieron solas**, con anclas de hasta seis voces y sin
+necesidad de ordenar ocurrencias ni de adivinar nada.
+
+Como la edición base no está en el repositorio, el modo `--pendientes`
+reemparejar las que quedaron listadas en `citas-canonicas.json` sin
+necesidad de ella, y actualiza el JSON para que la operación sea
+idempotente:
+
+    python3 herramientas/restituir_citas.py --pendientes            # prueba
+    python3 herramientas/restituir_citas.py --pendientes --aplicar
+
+### 5.1 quater. Erratas de la edición base que el maestro ya traía corregidas
+
+No se corrige nada: se le enseñan al emparejador (`VARIANTES` en
+`restituir_citas.py`) para que la cita encuentre su sitio pese a la errata.
+
+| Sutta | Nandisena | El maestro | Sesión |
+| ----- | --------- | ---------- | ------ |
+| §275 | saṅkha**m**eyya | saṅkameyya | 22 |
+| §277 | bhi**kh**ave | bhikkhave | 22 |
+| §290 | sam**y**ena | samayena | 22 |
+| §132 | brāh**a**maṇā | brāhmaṇā | 23 |
+
 ### 5.2 Presentación
 
 No se marcan en el maestro. El generador las reconoce solas —la sigla es un

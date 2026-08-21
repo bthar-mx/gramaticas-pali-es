@@ -3,15 +3,15 @@
   {
    "capitulo": "nama",
    "detectadas": 129,
-   "aplicadas": 118,
-   "pendientes": 11,
+   "aplicadas": 128,
+   "pendientes": 1,
    "reconstruccion": true
   },
   {
    "capitulo": "karaka",
    "detectadas": 99,
-   "aplicadas": 95,
-   "pendientes": 4,
+   "aplicadas": 97,
+   "pendientes": 2,
    "reconstruccion": true
   }
  ],
@@ -607,73 +607,63 @@
      "sutta": 269,
      "ancla": "opammaṃ",
      "cita": "(M. ii, 42)"
+    },
+    {
+     "sutta": 68,
+     "ancla": "viratiyaṃ viratyā viratiyā ratyaṃ ratiyaṃ ratyā",
+     "cita": "(Khu. vi, 315)"
+    },
+    {
+     "sutta": 130,
+     "ancla": "aduṃ-ādeso hoti aṃ-sisu napuṃsake vattamānassa aduṃ",
+     "cita": "(Khu. v, 34)"
+    },
+    {
+     "sutta": 130,
+     "ancla": "napuṃsake vattamānassa aduṃ pupphaṃ passasi aduṃ",
+     "cita": "(Khu. v, 34)"
+    },
+    {
+     "sutta": 130,
+     "ancla": "rājānaṃ passasi asu",
+     "cita": "(D. ii, 162)"
+    },
+    {
+     "sutta": 132,
+     "ancla": "icc etesu duve",
+     "cita": "(DA. i, 58)"
+    },
+    {
+     "sutta": 132,
+     "ancla": "icc etesu duve samaṇā duve",
+     "cita": "(DA. i, 58)"
+    },
+    {
+     "sutta": 132,
+     "ancla": "etesu duve samaṇā duve brāhmaṇā duve",
+     "cita": "(DA. i, 58)"
+    },
+    {
+     "sutta": 173,
+     "ancla": "sakāram āpajjate vā simhi vibhattimhi asu",
+     "cita": "(M. ii, 175)"
+    },
+    {
+     "sutta": 175,
+     "ancla": "vā sabbattha liṅgesu nāya tāya naṃ",
+     "cita": "(Khu. i, 308)"
+    },
+    {
+     "sutta": 175,
+     "ancla": "liṅgesu nāya tāya naṃ taṃ ne",
+     "cita": "(DhA. i, 6)"
     }
    ],
    "pendientes": [
     {
-     "sutta": 68,
-     "cita": "(Khu. vi, 315)",
-     "previo": "ratyaṃ, viratiyaṃ, viratyā, viratiyā. Ratyaṃ, ratiyaṃ, ratyā",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
      "sutta": 81,
      "cita": "(Khu. vi, 46, 51)",
      "previo": "f “viparīta”.  \n See Saddanīti-Suttamālā §25-26.  \n Gavaṃ ce",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 130,
-     "cita": "(Khu. v, 34)",
-     "previo": "tissa aduṃ-ādeso hoti aṃ-sisu napuṃsake \nvattamānassa. \nAduṃ",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 130,
-     "cita": "(Khu. v, 34)",
-     "previo": "-sisu napuṃsake \nvattamānassa. \nAduṃ   pupphaṃ passasi; aduṃ",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 130,
-     "cita": "(D. ii, 162)",
-     "previo": "irocati.\nNapuṃsake ti kimatthaṃ? Amuṃ   rājānaṃ passasi; asu",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 132,
-     "cita": "(DA. i, 58)",
-     "previo": "dvaya ubha ubhaya duvi ca honti yo nā aṃ nam icc etesu. Duve",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 132,
-     "cita": "(DA. i, 58)",
-     "previo": "a duvi ca honti yo nā aṃ nam icc etesu. Duve \n  samaṇā. Duve",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 132,
-     "cita": "(DA. i, 58)",
-     "previo": " nā aṃ nam icc etesu. Duve \n  samaṇā. Duve   brāhamaṇā. Duve",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 173,
-     "cita": "(M. ii, 175)",
-     "previo": "puṃsakassa makāro sakāram āpajjate vā simhi vibhattimhi.\nAsu",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 175,
-     "cita": "(Khu. i, 308)",
-     "previo": "akārassa nattaṃ hoti vā sabbattha liṅgesu.  \nNāya, tāya; naṃ",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 175,
-     "cita": "(DhA. i, 6)",
-     "previo": "ttaṃ hoti vā sabbattha liṅgesu.  \nNāya, tāya; naṃ  , taṃ; ne",
      "motivo": "sin ancla única en su sutta"
     }
    ]
@@ -1154,21 +1144,19 @@
      "sutta": 311,
      "ancla": "dinne ahañ c' eva pūjito bhavissāmi",
      "cita": "(M. iii, 296)"
+    },
+    {
+     "sutta": 275,
+     "ancla": "yyākaraṇā udānā itivuttakā jātakā abbhutadhammā vedallā",
+     "cita": "(Khu. vii, 111; VinA. i, 22; DA. i, 24\\)"
+    },
+    {
+     "sutta": 275,
+     "ancla": "yyākaraṇā udānā itivuttakā jātaka abbhutadhammā vedallā",
+     "cita": "(Khu. vii, 111; VinA. i, 22; DA. i, 24\\)"
     }
    ],
    "pendientes": [
-    {
-     "sutta": 275,
-     "cita": "(Khu. vii, 111; VinA. i, 22; DA. i, 24\\)",
-     "previo": "yyākaraṇā, udānā, itivuttakā, jātakā, abbhutadhammā, vedallā",
-     "motivo": "sin ancla única en su sutta"
-    },
-    {
-     "sutta": 275,
-     "cita": "(Khu. vii, 111; VinA. i, 22; DA. i, 24\\)",
-     "previo": "yyākaraṇā, udānā, itivuttakā, jātaka, abbhutadhammā, vedallā",
-     "motivo": "sin ancla única en su sutta"
-    },
     {
      "sutta": 308,
      "cita": "(D. ii, 126-7. Piṭṭhesu passitabbaṃ)",

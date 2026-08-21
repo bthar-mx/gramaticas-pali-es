@@ -73,8 +73,14 @@ VARIANTES = {
     "saṅkhameyya": "saṅkameyya",   # §275
     "bhikhave":    "bhikkhave",    # §277
     "samyena":     "samayena",     # §290
+    "brāhamaṇā":   "brāhmaṇā",     # §132
 }
 RE_VARIANTES = re.compile("|".join(VARIANTES), re.IGNORECASE)
+
+# Puntuación y marcas de énfasis, que se descartan al comparar. Ver
+# `normalizar`: el ancla se arma uniendo voces con un espacio, mientras que
+# el maestro conserva entre ellas las comas y los puntos del original.
+RE_PUNTUACION = re.compile(r"[;,.:!?*]")
 
 
 def normalizar(s):
@@ -83,6 +89,17 @@ def normalizar(s):
     También se prescinde de mayúsculas —Nandisena capitaliza el ejemplo que
     abre la frase y el maestro no siempre— y se rectifican las erratas
     conocidas de la edición base.
+
+    **Y se prescinde de la puntuación** (sesión 23). `anclas_candidatas`
+    arma el ancla uniendo voces con un solo espacio, pero entre esas voces
+    el maestro imprime comas, puntos y punto y coma —«Duve samaṇā. Duve»—,
+    de modo que mientras se comparó la puntuación al pie de la letra
+    **ningún ancla de más de una voz pudo coincidir jamás**: el emparejador
+    caía siempre al ancla de una sola voz, y las quince citas que quedaron
+    pendientes lo quedaron por eso, no por ser ambiguas. Se descartan
+    igualmente los asteriscos, que son marcado y no texto: desde que
+    `restituir_negritas.py` marca el vutti, un ancla puede cruzar un tramo
+    en negrita.
     """
     s = s.replace("\\", "")
     s = (s.replace("’", "'").replace("‘", "'")
@@ -90,7 +107,8 @@ def normalizar(s):
           .replace("–", "-").replace("—", "-"))
     s = unicodedata.normalize("NFC", s).lower()
     s = RE_VARIANTES.sub(lambda m: VARIANTES[m.group(0).lower()], s)
-    return re.sub(r"\s+", " ", s)
+    s = RE_PUNTUACION.sub("", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def partir_por_sutta(texto, regex):
@@ -272,13 +290,106 @@ def aplicar(esp_txt, resueltas):
     return "\n".join(salida), aplicadas, fallos, intactos
 
 
+def main_pendientes(escribir):
+    """Reemparejar las pendientes contra los maestros de hoy.
+
+    Mismo camino que el modo normal —mismo emparejador, misma verificación
+    por reconstrucción—; sólo cambia de dónde salen las citas.
+    """
+    algo_mal, resumen = False, []
+
+    for nombre, (_, maestro, _, _) in CAPITULOS.items():
+        ruta_esp = os.path.join(RAIZ, maestro)
+        esp_txt = open(ruta_esp, encoding="utf-8").read()
+        esp_bloques = partir_por_sutta(esp_txt, RE_HDR_ESP)
+
+        citas = desde_pendientes(nombre)
+        resueltas, siguen = emparejar(citas, esp_bloques)
+        nuevo, aplicadas, fallos, ok = aplicar(esp_txt, resueltas)
+        siguen.extend(fallos)
+        if not ok:
+            algo_mal = True
+
+        print("· {0}: {1} pendientes · {2} resueltas · {3} siguen · "
+              "reconstrucción {4}".format(
+                  nombre, len(citas), aplicadas, len(siguen),
+                  "OK" if ok else "FALLA"))
+        for r in resueltas:
+            print("    §{0} {1}  ← «{2}»".format(
+                r["sutta"], r["cita"], r["ancla"]))
+        for p in siguen:
+            print("    §{0} {1}  SIGUE ({2})".format(
+                p["sutta"], p["cita"], p["motivo"]))
+
+        resumen.append((nombre, resueltas, siguen))
+        if escribir and ok:
+            open(ruta_esp, "w", encoding="utf-8").write(nuevo)
+
+    # Sin esto la operación no sería idempotente: las resueltas seguirían
+    # figurando como pendientes y una segunda pasada las insertaría por
+    # duplicado, porque el ancla sigue estando donde estaba.
+    if escribir and not algo_mal:
+        ruta_prop = os.path.join(RAIZ, PROPUESTA)
+        with open(ruta_prop, encoding="utf-8") as f:
+            datos = json.load(f)
+        for nombre, resueltas, siguen in resumen:
+            bloque = datos["citas"][nombre]
+            bloque["aplicadas"].extend(
+                {"sutta": r["sutta"], "ancla": r["ancla"], "cita": r["cita"]}
+                for r in resueltas)
+            bloque["pendientes"] = [
+                {"sutta": p["sutta"], "cita": p["cita"],
+                 "previo": p["previo"][-60:], "motivo": p["motivo"]}
+                for p in siguen]
+            for fila in datos["informe"]:
+                if fila["capitulo"] == nombre:
+                    fila["aplicadas"] += len(resueltas)
+                    fila["pendientes"] = len(siguen)
+        with open(ruta_prop, "w", encoding="utf-8") as f:
+            json.dump(datos, f, ensure_ascii=False, indent=1)
+        print("propuesta actualizada en {0}".format(PROPUESTA))
+
+    if algo_mal:
+        print("LA RECONSTRUCCIÓN NO REPRODUCE EL MAESTRO — no se ha escrito.")
+        return 1
+    if not escribir:
+        print("(prueba: sin --aplicar no se ha tocado nada)")
+    return 0
+
+
+def desde_pendientes(nombre):
+    """Las citas que quedaron pendientes, releídas de la propuesta anterior.
+
+    La edición base no vive en el repositorio, de modo que sin ella no se
+    puede repetir la extracción. Pero `citas-canonicas.json` guarda de cada
+    pendiente su sutta, su cita y las sesenta últimas letras del texto que
+    la precede, y eso basta para volver a emparejarla: el ancla nunca pasa
+    de seis voces. Así la corrección de la sesión 23 pudo aplicarse sin
+    tener delante los archivos de Nandisena.
+    """
+    ruta = os.path.join(RAIZ, PROPUESTA)
+    with open(ruta, encoding="utf-8") as f:
+        datos = json.load(f)
+    return [dict(c) for c in datos["citas"][nombre]["pendientes"]]
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--base", required=True,
+    ap.add_argument("--base",
                     help="carpeta con los archivos de la edición base")
+    ap.add_argument("--pendientes", action="store_true",
+                    help="reemparejar sólo las pendientes de "
+                         "citas-canonicas.json, sin la edición base")
     ap.add_argument("--aplicar", action="store_true",
                     help="escribir los maestros (sin esto no toca nada)")
     args = ap.parse_args()
+
+    if not args.base and not args.pendientes:
+        print("hace falta --base o --pendientes")
+        return 1
+
+    if args.pendientes:
+        return main_pendientes(args.aplicar)
 
     informe, propuesta = [], {}
     algo_mal = False
