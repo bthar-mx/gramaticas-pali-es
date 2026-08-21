@@ -31,13 +31,13 @@ CAPITULOS = {
         "titulo_es": "1-Capítulo de Sandhi",
         "anterior": None,
         "siguiente": "2-Nāma-Kappa",
-        "version": "1.3",
-        "version_fecha": "2026-08-15",
-        "version_nota": "Mejoras de diseño compartidas de las sesiones 08–09: "
-                        "TOC plegable con caja «ir a §…», navegación fija de "
-                        "kaṇḍas, tooltips en las referencias §N, botón «↑», "
-                        "caché de estilos con huella y contraste del acento "
-                        "en modo oscuro.",
+        "version": "1.4",
+        "version_fecha": "2026-08-20",
+        "version_nota": "Restituida desde el PDF de la edición base la "
+                        "negrita que Nandisena pone dentro del vutti (100 "
+                        "tramos): las letras que el propio sutta nombra. Las "
+                        "referencias canónicas desatan la sigla al pasar el "
+                        "cursor. Bloque pāḷi a 16 px y tinta plena.",
     },
     "02-nama-kappa": {
         "slug": "nama",
@@ -49,12 +49,14 @@ CAPITULOS = {
         "titulo_es": "2-Capítulo del Nombre",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.1",
-        "version_fecha": "2026-08-15",
-        "version_nota": "Revisión de la sesión 09: «inflexión» en lugar de "
-                        "«inflexión nominal»; §237 cita §174 para ta → sa; "
-                        "separador de §77 y comilla de §83 en el maestro; "
-                        "sub-listas de ejemplos anidadas.",
+        "version": "1.2",
+        "version_fecha": "2026-08-20",
+        "version_nota": "Restituidas 118 referencias canónicas que la fase de "
+                        "traducción había retirado (briefings 04–05, §10.1) y "
+                        "806 tramos de la negrita que Nandisena pone dentro "
+                        "del vutti, ambas tomadas de la edición base y "
+                        "verificadas por reconstrucción. La sigla de cada "
+                        "referencia se desata al pasar el cursor.",
     },
     "03-karaka-kappa": {
         "slug": "karaka",
@@ -66,12 +68,13 @@ CAPITULOS = {
         "titulo_es": "3-Capítulo de casos gramaticales",
         "anterior": "2-Nāma-Kappa",
         "siguiente": "4-Samāsa-Kappa",     # en preparación: botón inactivo
-        "version": "1.0",
-        "version_fecha": "2026-08-17",
-        "version_nota": "Primera publicación del Kāraka-Kappa (§271–§315, "
-                        "45 suttas, 55 notas): los ocho nombres kāraka se "
-                        "traducen en la prosa (ablativo, dativo, locativo, "
-                        "instrumental, objeto, sujeto, causa, posesivo).",
+        "version": "1.1",
+        "version_fecha": "2026-08-20",
+        "version_nota": "Restituidas 96 referencias canónicas que la fase de "
+                        "traducción había retirado (briefings 04–05, §10.1) y "
+                        "la negrita del vutti cotejada con el PDF de la "
+                        "edición base (74 tramos, 14 nuevos). La sigla de "
+                        "cada referencia se desata al pasar el cursor.",
     },
 }
 
