@@ -15,7 +15,7 @@ Un proyecto del Instituto de Estudios Buddhistas Hispano (IEBH).
 | `comun/`     | glosario, convenciones, guía de estilo y concordancia          |
 | `site/`      | sitio publicado (HTML) — **salida**, no fuente                 |
 
-Obras previstas: Padarūpasiddhi, Saddanīti, Nirutti-dīpanī.
+Obras previstas: Nyāsa, Padarūpasiddhi, Saddanīti, Nirutti-dīpanī.
 Las carpetas se crearán cuando haya texto que colocar en ellas.
 
 El markdown de `kaccayana/` es la fuente de verdad. El HTML de `site/` es la

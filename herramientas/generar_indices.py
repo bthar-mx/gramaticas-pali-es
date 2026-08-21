@@ -61,6 +61,11 @@ OBRAS = [
      "</span>kara<span class=\"dia\">ṇ</span>a<span class=\"dia\">ṃ</span>",
      "Gramática de Kaccāyana. La más antigua de las gramáticas pāḷi. "
      "Edición base: Bhikkhu U Nandisena (ITBMU)."),
+    (None, "Nyāsa",
+     "Atribuido a Vimalabuddhi (siglo XI), y llamado también "
+     "<i>Mukhamattadīpanī</i>. El comentario clásico a Kaccāyana: recorre "
+     "los aforismos uno a uno y desata lo que el sutta da por sabido. El "
+     "proyecto ya lo consulta como fuente de segunda capa."),
     (None, "Padarūpasiddhi",
      "De Buddhappiya. Reordena el material de Kaccāyana por temas."),
     (None, "Saddanīti", "De Aggavaṃsa. La gramática pāḷi más extensa."),
