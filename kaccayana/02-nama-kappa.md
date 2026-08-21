@@ -208,7 +208,7 @@ Etissaṃ, etissā; imissaṃ, imissā; tissaṃ, tissā; tassaṃ, tassā; yass
 
 **Saṃ-sāsv** iti kimatthaṃ? Agginā, pāṇinā. 
 
-Ekavacanesv iti kimatthaṃ? Tāsaṃ, sabbāsaṃ. 
+**Ekavacanesv** iti kimatthaṃ? Tāsaṃ, sabbāsaṃ. 
 
 **Vibhattādesesv** iti kimatthaṃ? Manasā, vacasā, thāmasā.
 
@@ -240,7 +240,7 @@ Ejemplos:
 
 Etissaṃ, etissā; imissaṃ, imissā. 
 
-Saṃsāsv iti kimatthaṃ? Etāya, imāya. 
+**Saṃ-sāsv** iti kimatthaṃ? Etāya, imāya. 
 
 **Ekavacanesv** iti kimatthaṃ? Etāsaṃ, imāsaṃ.
 
@@ -311,9 +311,9 @@ Ejemplos:
 
 Tassaṃ, tassā; yassaṃ, yassā; sabbassaṃ, sabbassā. 
 
-Saṃsāsv iti kimatthaṃ? Tāya, sabbāya. 
+**Saṃ-sāsv** iti kimatthaṃ? Tāya, sabbāya. 
 
-Ekavacanesv iti kimatthaṃ? Tāsaṃ, sabbāsaṃ.
+**Ekavacanesv** iti kimatthaṃ? Tāsaṃ, sabbāsaṃ.
 
 ---
 
@@ -2518,7 +2518,7 @@ Ejemplo:
 
 **141\. 241\. Tava-mama se.** \[Tava-mama \+ se, 2\]
 
-Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ **tava mama** icc ete ādesā honti yathāsaṅkhyaṃ se vibhattimhi. 
+Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ **tava mama** icc ete ādesā honti yathāsaṅkhyaṃ **se** vibhattimhi. 
 
 Tava, mama. 
 
@@ -2543,7 +2543,7 @@ Ejemplos:
 
 **142\. 242\. Tuyhaṃ mayhañ ca (321).** \[Tuyhaṃ-mayhaṃ \+ ca, 2\]
 
-Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ **tuyhaṃ mayhaṃ** icc ete ādesā honti yathāsaṅkhyaṃ se vibhattimhi. 
+Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ **tuyhaṃ mayhaṃ** icc ete ādesā honti yathāsaṅkhyaṃ **se** vibhattimhi. 
 
 Tuyhaṃ, mayhaṃ dhanaṃ dīyate. 
 
@@ -2668,7 +2668,7 @@ Ejemplos:
 
 **147\. 246\. Padato dutiyā-catutthī-chaṭṭhīsu vo-no (325).** \[Padato \+ dutiyā-catutthī-chaṭṭhīsu \+ vo-no, 3\]
 
-Sabbesaṃ tumha-amhasaddānaṃ savibhattīnaṃ yadā padasmā paresaṃ vo-no-ādesā honti navā yathāsaṅkhyaṃ dutiyā catutthī chaṭṭhī icc etesu bahuvacanesu. 
+Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ yadā padasmā paresaṃ **vo-no**-ādesā honti navā yathāsaṅkhyaṃ dutiyā catutthī chaṭṭhī icc etesu bahuvacanesu. 
 
 Pahāya vo bhikkhave gamissāmi (Khu. iv, 265); mā no ajja vikantiṃsu (Khu. vi, 93) rañño sūdā mahānase. Evaṃ **dutiyatthe**. 
 
@@ -2819,7 +2819,7 @@ Ejemplos:
 
 **151\. 250\. Bahuvacanesu vo no (329).** \[Bahuvacanesu \+ vo-no, 2\]
 
-Sabbesaṃ tumha-amhasaddānaṃ savibhattīnaṃ yadā padasmā paresaṃ vo-no-ādesā honti yathāsaṅkhyaṃ tatiyābahuvacanesu paresu. 
+Sabbesaṃ **tumha-amha**saddānaṃ savibhattīnaṃ yadā padasmā paresaṃ **vo-no**-ādesā honti yathāsaṅkhyaṃ tatiyābahuvacanesu paresu. 
 
 Kataṃ vo kammaṃ, kataṃ no kammaṃ.
 
@@ -4325,7 +4325,7 @@ El tomar “ca” es para incluir también otros.
 
 **Satthu pitu** icc evamādīnam antassa **u**ttaṃ hoti vā **sa**smiṃ **sa**lopo ca. 
 
-Satthu, satthussa, satthuno dīyate, pariggaho vā. Pitu, pitussa, pituno dīyate, pariggaho vā. Bhātu, bhātussa, bhātuno dīyate, pariggaho vā. Caggahaṇaṃ dutiyasampiṇḍanatthaṃ.
+Satthu, satthussa, satthuno dīyate, pariggaho vā. Pitu, pitussa, pituno dīyate, pariggaho vā. Bhātu, bhātussa, bhātuno dīyate, pariggaho vā. **Ca**ggahaṇaṃ dutiyasampiṇḍanatthaṃ.
 
 ---
 
@@ -4366,7 +4366,7 @@ Sakkamandhātu iva assa rājino vibhavo. Evaṃ kattu, gantu, dātu icc evamād�
 
 **Pun’ ārambhaggahaṇam** kimatthaṃ? Niccadīpanatthaṃ. Sakkamandhātu. 
 
-Caggahaṇaṃ dutiyasampiṇḍanatthaṃ.
+**Ca**ggahaṇaṃ dutiyasampiṇḍanatthaṃ.
 
 ---
 

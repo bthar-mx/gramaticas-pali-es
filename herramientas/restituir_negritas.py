@@ -244,8 +244,10 @@ def main():
         norm, mapa = normalizar(bloque[ini:fin])
         regiones[sutta] = (norm, [ini + i for i in mapa])
 
-    colocadas, ambiguas, ausentes = [], [], []
-    redivididas = 0
+    # Primera pasada: cuántas veces trae el PDF cada línea. Hace falta antes
+    # de colocar nada, porque una línea repetida sólo es colocable si el
+    # maestro la repite **el mismo número de veces**.
+    utiles, redivididas = [], 0
     for linea_pdf in lineas_del_pdf(args.pdf):
         if "**" not in linea_pdf or RE_TITULO_PDF.match(linea_pdf):
             continue
@@ -254,6 +256,16 @@ def main():
         norm, marcas = tramos(linea_pdf)
         if not marcas or len(norm) < MINIMO:
             continue
+        utiles.append((linea_pdf, norm, marcas))
+
+    veces_pdf = {}
+    for _, norm, _ in utiles:
+        veces_pdf[norm] = veces_pdf.get(norm, 0) + 1
+    usadas = dict.fromkeys(veces_pdf, 0)
+
+    colocadas, ambiguas, ausentes = [], [], []
+    emparejadas = 0
+    for linea_pdf, norm, marcas in utiles:
         hits = []
         for sutta, (region, mapa) in regiones.items():
             desde = region.find(norm)
@@ -262,19 +274,34 @@ def main():
                 desde = region.find(norm, desde + 1)
         if not hits:
             ausentes.append(linea_pdf)
-        elif len(hits) > 1:
-            # Se intentó en la sesión 23 colocar la línea repetida en todas
-            # sus apariciones —«Ekavacanesv iti kimatthaṃ? Tāsaṃ,
-            # sabbāsaṃ.» sale igual en §62 y §66, y las dos se quedan sin
-            # negrita—. No sale: las líneas que se repiten son las genéricas
-            # y aparecen en muchos suttas, el marcado se entrelaza con la
-            # negrita que ya está, y **la reconstrucción deja de reproducir
-            # el maestro**. Se mantiene el reparo original.
-            ambiguas.append(linea_pdf)
-        else:
+        elif len(hits) == 1:
             sutta, desde, mapa = hits[0]
             colocadas.append((sutta, [(desde + a, desde + b)
                                       for a, b in marcas], mapa))
+        elif len(hits) == veces_pdf[norm]:
+            # Repetida no es ambigua **cuando las cuentas cuadran**
+            # (sesión 23). «Ekavacanesv iti kimatthaṃ? Tāsaṃ, sabbāsaṃ.»
+            # sale dos veces en el PDF —una por sutta— y dos veces en el
+            # maestro, §62 y §66: no hay nada que adivinar, es una
+            # correspondencia uno a uno que se resuelve por orden.
+            #
+            # Exigir que las cuentas coincidan es lo que hace segura la
+            # regla. Un primer intento colocó la línea en *todas* sus
+            # apariciones sin más, y falló: las líneas que se repiten son
+            # las genéricas, salen en muchos más sitios de los que el PDF
+            # tiene, el marcado se entrelaza con la negrita ya puesta y la
+            # reconstrucción deja de reproducir el maestro. Con las cuentas
+            # de por medio, ésas se descartan solas.
+            orden = usadas[norm]
+            usadas[norm] += 1
+            if orden < len(hits):
+                sutta, desde, mapa = sorted(
+                    hits, key=lambda h: (h[0], h[1]))[orden]
+                colocadas.append((sutta, [(desde + a, desde + b)
+                                          for a, b in marcas], mapa))
+                emparejadas += 1
+        else:
+            ambiguas.append(linea_pdf)
 
     # Aplicar por sutta, de atrás hacia delante.
     por_sutta = {}
@@ -339,6 +366,7 @@ def main():
     print("  ambiguas (sale más de una vez): {0}".format(len(ambiguas)))
     print("  ausentes (no está en el pāḷi) : {0}".format(len(ausentes)))
     print("  líneas redivididas (locativo) : {0}".format(redivididas))
+    print("  repetidas emparejadas por orden: {0}".format(emparejadas))
     print("  solapes descartados           : {0}".format(solapes))
     print("  ya estaban en negrita         : {0}".format(ya_estaban))
     print("  negrita en el maestro: {0} → {1}".format(
