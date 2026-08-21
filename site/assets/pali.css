@@ -608,6 +608,23 @@ body.dark .fn-tip-box {
   border-color: var(--border2);
 }
 
+/* ── Peso del tipo en oscuro ─────────────────────────────────────── */
+/* El texto claro sobre fondo oscuro «engorda»: el suavizado subpíxel de
+   macOS reparte luz hacia los lados del trazo y lo engruesa. Con Gentium,
+   que sólo trae 400 y 700, eso borraba la diferencia entre el vutti y la
+   negrita que Nandisena pone dentro —parecían las dos negrita—. El
+   suavizado en escala de grises le devuelve al tipo su peso real.
+   En claro no se toca: ahí el efecto es el contrario y 400 se afina. */
+body.dark {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Y la negrita del bloque pāḷi, un punto por debajo del blanco del texto:
+   cuanto más brillante, más se derrama el trazo. Sigue siendo 700, sigue
+   leyéndose como negrita, pero deja de pesar más de la cuenta. */
+body.dark .pali-block strong { color: #E4DFD0; }
+
 
 /* ── Mobile layout ───────────────────────────────────────────────── */
 

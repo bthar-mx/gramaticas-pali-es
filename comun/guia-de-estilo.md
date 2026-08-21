@@ -176,13 +176,19 @@ donde cambia la fuente**: `yathāsaṅkyaṃ` por *yathāsaṅkhyaṃ*, `etessa`
 *etassa*, `aṃ-āadesā` por *aṃ-ā ādesā*. Emparejar con tolerancia sería
 invitar a la corrupción silenciosa en pāḷi, así que se descarta.
 
-Aparte hay 18 líneas del Nāma con una divergencia de fondo, no de
+### La división «…sv iti», fijada
+
+Aparte había 18 líneas del Nāma con una divergencia de fondo, no de
 extracción: Nandisena divide `Saṃ-sāsvī ti kimatthaṃ?` donde el maestro lee
 `Saṃ-sāsv iti kimatthaṃ?`.
 
-<!-- DUDA: esa división —«…vī ti» frente a «…v iti»— es sistemática y nadie
-     la había registrado. ¿Se conserva la del maestro o se vuelve a la de la
-     edición base? Afecta a 18 líneas del Nāma. -->
+**Manda el maestro: se escribe `Saṃ-sāsv iti`** (Angel, sesión 22). Vale
+para todas las de su clase —`Ekavacanesv iti`, `Vibhattādesesv iti`— y es
+la única divergencia de división registrada frente a la edición base.
+
+El emparejador la conoce: reconoce `…svī ti` del PDF como `…sv iti` del
+maestro, de modo que la negrita de esas líneas se coloca sin tocar la
+división adoptada.
 
 ---
 

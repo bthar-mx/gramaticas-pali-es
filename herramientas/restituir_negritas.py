@@ -104,7 +104,13 @@ def normalizar(s):
              "–": "-", "—": "-"}.get(c, c)
         fuera.append(unicodedata.normalize("NFC", c))
         mapa.append(i)
-    return "".join(fuera), mapa
+    # División adoptada por el proyecto (guía de estilo §5 bis): el maestro
+    # escribe «Saṃ-sāsv iti» donde el PDF imprime «Saṃ-sāsvī ti». Sin
+    # espacios queda «svīti» frente a «sviti»; se igualan las dos. Es una
+    # equivalencia estrecha a propósito: en pāḷi la cantidad vocálica
+    # significa, y no se toca la 'ī' en ningún otro contexto.
+    # La sustitución conserva la longitud, así que `mapa` sigue valiendo.
+    return re.sub("svīti", "sviti", "".join(fuera)), mapa
 
 
 def lineas_del_pdf(ruta):
