@@ -620,10 +620,17 @@ body.dark {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Y la negrita del bloque pāḷi, un punto por debajo del blanco del texto:
-   cuanto más brillante, más se derrama el trazo. Sigue siendo 700, sigue
-   leyéndose como negrita, pero deja de pesar más de la cuenta. */
-body.dark .pali-block strong { color: #E4DFD0; }
+/* Y la negrita del bloque pāḷi deja de fiarlo todo al peso.
+   Sobre fondo oscuro las formas claras se ven más gruesas de lo que son
+   —irradiación—, y el engorde no es proporcional: el trazo fino gana más
+   que el grueso, de modo que 400 y 700 se acercan. Gentium, además, no
+   tiene peso intermedio al que huir, y lo marcado suele ser una sola
+   letra, que es donde menos se nota un cambio de peso.
+   Así que en oscuro la negrita añade color —oropimente, el amarillo con
+   que este proyecto marca— sin dejar de ser 700. El tono no lo altera la
+   irradiación, y no es el nīla de los enlaces, para que no parezca que se
+   puede pulsar. En claro no hace falta: allí el peso solo ya se ve. */
+body.dark .pali-block strong { color: var(--haritala); }
 
 
 /* ── Mobile layout ───────────────────────────────────────────────── */
