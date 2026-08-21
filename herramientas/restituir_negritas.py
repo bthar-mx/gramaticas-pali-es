@@ -47,8 +47,11 @@ import xml.etree.ElementTree as ET
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# El archivo que el generador lee de verdad. El Sandhi no tiene
+# `convertir_sandhi.py`: su fuente viva es la de `kaccayana/`, y
+# `docs/1. Sandhi-Kappa.md` es sólo el maestro archivado.
 MAESTROS = {
-    "sandhi": "docs/1. Sandhi-Kappa.md",
+    "sandhi": "kaccayana/01-sandhi-kappa.md",
     "nama":   "docs/2. Nāma-Kappa.md",
     "karaka": "docs/3. Kāraka-Kappa.md",
 }
@@ -57,19 +60,45 @@ RE_HDR = re.compile(r'^\*\*(\d{1,3})\\\.\s')
 RE_NEGRITA = re.compile(r'\*\*([^*]+)\*\*')
 RE_TITULO_PDF = re.compile(r'^\*\*\d{1,3}\.\s+[\d, ]+\.\s')
 MINIMO = 24          # una línea más corta no identifica nada por sí sola
+_SIGLAS = ("Khu|Vin|Abhi|DhA|DA|MA|SA|AA|VinA|ItivuttaA|UdānaA"
+           "|PetavatthuA|Sad|Mog|D|M|A|S|J")
+RE_SALTABLE = re.compile(
+    r'\[\^\d+\]'                                   # nota al pie
+    r'|\((?:' + _SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*\)')  # cita
 
 
 def normalizar(s):
-    """(texto sin espacios ni escapes, mapa al original).
+    """(texto comparable, mapa al original).
 
     mapa[i] es la posición en `s` del carácter i del texto normalizado.
+
+    Se vuelve ciego a todo lo que un lado tiene y el otro no:
+
+    - **espacios**: en el PDF los diacríticos vienen de otra fuente, así que
+      las palabras llegan partidas y el espacio que separa los tramos es a
+      veces posición y no carácter («si gasañño» sale «sigasañño»);
+    - **asteriscos**: el Kāraka ya trae en negrita los rótulos del vutti;
+    - **glosas emergentes** `{akkharā|letras}`, que sólo están en el
+      maestro del Sandhi;
+    - **marcadores de nota** `[^22]` y **citas canónicas** `(Khu. i, 27)`:
+      el Sandhi guarda en notas al pie lo que el PDF imprime entre
+      paréntesis, y el Nāma al revés.
     """
-    fuera, mapa = [], []
+    saltar = set()
+    for m in RE_SALTABLE.finditer(s):
+        saltar.update(range(m.start(), m.end()))
+    fuera, mapa, en_glosa = [], [], False
     for i, c in enumerate(s):
-        # El asterisco es invisible para la comparación: el Kāraka ya trae
-        # en negrita los rótulos del vutti (**Dūratthe**, **Ārocanatthe**),
-        # y si contaran como texto ninguna línea del PDF encajaría.
-        if c in "\\*" or c.isspace():
+        if i in saltar:
+            continue
+        if en_glosa:
+            if c == "}":
+                en_glosa = False
+            continue
+        if c == "|":
+            en_glosa = True
+            continue
+        if c in "\\*{}" or c.isspace():
             continue
         c = {"’": "'", "‘": "'", "“": '"', "”": '"',
              "–": "-", "—": "-"}.get(c, c)

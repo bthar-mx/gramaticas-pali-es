@@ -2249,7 +2249,7 @@ Sabbass’ eva **amu**saddassa savibhattissa **aduṃ**-ādeso hoti **aṃ-si**s
 
 Aduṃ pupphaṃ passasi; aduṃ pupphaṃ virocati. 
 
-Napuṃsake ti kimatthaṃ? Amuṃ (M. i, 210) rājānaṃ passasi; asu rājā tiṭṭhati.
+**Napuṃsake** ti kimatthaṃ? Amuṃ (M. i, 210) rājānaṃ passasi; asu rājā tiṭṭhati.
 
 ---
 
@@ -2370,7 +2370,7 @@ Ejemplo:
 
 **135\. 118\. Rājassa rañño rājino se (314).** \[Rājassa \+ rañño-rājino \+ se, 3\]
 
-Sabbass’ eva rājasaddassa savibhattissa rañño rājino (Khu. i, 324) icc ete ādesā honti se vibhattimhi. 
+Sabbass’ eva **rāja**saddassa savibhattissa **rañño rājino** (Khu. i, 324) icc ete ādesā honti **se** vibhattimhi. 
 
 Rañño, rājino. 
 
@@ -5327,7 +5327,7 @@ Ejemplos:
 
 **239\. 190\. Ṇava-ṇika-ṇeyya-ṇa-ntūhi (468).** \[Ṇava-ṇika-ṇeyya-ṇa-ntūhi, 1\]
 
-Ṇava ṇika ṇeyya ṇa ntu icc etehi[^60] itthiyaṃ vattamānehi ī-paccayo hoti. 
+**Ṇava ṇika ṇeyya ṇa ntu** icc etehi[^60] itthiyaṃ vattamānehi **ī-**paccayo hoti. 
 
 Māṇavī, paṇḍavī, nāvikī, venateyyī, kunteyyī, gotamī, guṇavatī, sāmāvatī.
 
@@ -5380,7 +5380,7 @@ Ejemplos:
 
 **241\. 191\. Ntussa tam īkāre** (471). \[Ntussa \+ taṃ \+ īkāre, 3\]
 
-Sabbass’ eva ntupaccayassa takāro[^61] hoti vā īkāre pare. 
+Sabbass’ eva **ntu**paccayassa **ta**kāro[^61] hoti vā **ī**kāre pare. 
 
 Guṇavatī, guṇavantī; kulavatī, kulavantī; satimatī, satimantī; mahatī, mahantī; gottamatī, gottamantī.
 
@@ -5409,7 +5409,7 @@ Ejemplos:
 
 **242\. 192\. Bhavato bhoto** (472). \[Bhavato \+ bhoto, 2\]
 
-Sabbass’ eva bhavantasaddassa bhotādeso hoti īkāre itthigate[^62] pare. 
+Sabbass’ eva **bhavanta**saddassa **bhotā**deso hoti **ī**kāre itthigate[^62] pare. 
 
 Bhoti ayye (Vin. ii, 280), bhoti kaññe, bhoti Kharādiye (Khu. v, 4).
 

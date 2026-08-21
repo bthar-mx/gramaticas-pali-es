@@ -156,17 +156,28 @@ reconstrucción: quitadas las marcas, el maestro vuelve byte a byte.
 en el PDF y aquí no la lleva; las líneas españolas tampoco, como en la
 edición base.
 
+### Lo hecho
+
+| Capítulo | Tramos | Líneas rechazadas |
+| -------- | -----: | ----------------: |
+| Sandhi | 100 | 19 |
+| Nāma | 801 | 64 |
+| Kāraka | 74 —60 ya estaban puestos a mano— | 15 |
+
+El emparejador es ciego a lo que un lado tiene y el otro no: espacios,
+asteriscos, glosas emergentes `{akkharā|letras}` y —porque el Sandhi guarda
+en notas al pie lo que el PDF imprime entre paréntesis— marcadores `[^22]` y
+citas canónicas.
+
 ### Lo que quedó fuera, y por qué
 
-De las líneas con negrita del Nāma se colocaron 789 tramos y se rechazaron
-67 líneas. Casi todas se rechazan porque **la capa de texto del PDF falla
-justo donde cambia la fuente**: `yathāsaṅkyaṃ` por *yathāsaṅkhyaṃ*,
-`etessa` por *etassa*, `aṃ-āadesā` por *aṃ-ā ādesā*. Emparejarlas con
-tolerancia sería invitar a la corrupción silenciosa en pāḷi, así que se
-descartan.
+Casi todo lo rechazado lo es porque **la capa de texto del PDF falla justo
+donde cambia la fuente**: `yathāsaṅkyaṃ` por *yathāsaṅkhyaṃ*, `etessa` por
+*etassa*, `aṃ-āadesā` por *aṃ-ā ādesā*. Emparejar con tolerancia sería
+invitar a la corrupción silenciosa en pāḷi, así que se descarta.
 
-Aparte hay 18 líneas con una divergencia de fondo, no de extracción:
-Nandisena divide `Saṃ-sāsvī ti kimatthaṃ?` donde el maestro lee
+Aparte hay 18 líneas del Nāma con una divergencia de fondo, no de
+extracción: Nandisena divide `Saṃ-sāsvī ti kimatthaṃ?` donde el maestro lee
 `Saṃ-sāsv iti kimatthaṃ?`.
 
 <!-- DUDA: esa división —«…vī ti» frente a «…v iti»— es sistemática y nadie

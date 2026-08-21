@@ -35,9 +35,9 @@ El significado de todas las palabras se conoce únicamente por medio de las letr
 
 **2\. 2\. Akkharā p’ ādayo ekacattālīsaṃ (1, 2).** \[Akkharā \+ api \+ a-ādayo \+ ekacattālīsaṃ, 4\]
 
-Te ca kho {akkharā|letras} api {akāradayo|comenzando con 'a'} ekacattālīsaṃ suttantesu {sopakārā|de gran utilidad}.
+Te ca kho {akkharā|letras} api {**a**kāradayo|comenzando con 'a'} ekacattālīsaṃ suttantesu {sopakārā|de gran utilidad}.
 
-Taṃ yathā? a ā i ī u ū e o; ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma; ya ra la va sa ha ḷa aṃ. Iti akkharā nāma.
+Taṃ yathā? a ā i ī u ū e o; ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma; ya ra la va sa ha ḷa aṃ. Iti **akkharā** nāma.
 
 Tena kvattho? Attho akkharasaññāto.
 
@@ -55,9 +55,9 @@ Y estas letras, que son cuarenta y una comenzando con ‘a’, son de gran utili
 
 **3\. 3\. Tatth’ odantā sarā aṭṭha (3).** \[Tattha \+ o-antā \+ sarā \+ aṭṭha, 4\]
 
-Tattha akkharesu akārādīsu {odantā|terminadas en 'o'} aṭṭha {akkharā|letras} {sarā|vocales} nāma honti.
+Tattha akkharesu **a**kārādīsu {**o**dantā|terminadas en 'o'} aṭṭha {akkharā|letras} {sarā|vocales} nāma honti.
 
-Taṃ yathā? a ā i ī u ū e o. Iti sarā nāma.
+Taṃ yathā? a ā i ī u ū e o. Iti **sarā** nāma.
 
 Tena kvattho? Sarā sare {lopaṃ|elisión}.
 
@@ -77,7 +77,7 @@ Entre esas letras, las ocho letras que comienzan con ‘a’ y terminan en ‘o�
 
 Tattha aṭṭhasu saresu {lahumattā|de medida leve} tayo {sarā|vocales} {rassā|cortas} nāma honti.
 
-Taṃ yathā? a i u. Iti rassā nāma.
+Taṃ yathā? a i u. Iti **rassā** nāma.
 
 Tena kvattho? Rassaṃ.
 
@@ -97,7 +97,7 @@ Entre las ocho vocales, las tres \[vocales\] de medida leve se denominan “cort
 
 Tattha aṭṭhasu saresu rassehi aññe pañca {sarā|vocales} {dīghā|largas} nāma honti.
 
-Taṃ yathā? ā ī ū e o. Iti dīghā nāma.
+Taṃ yathā? ā ī ū e o. Iti **dīghā** nāma.
 
 Tena kvattho? Dīghaṃ.
 
@@ -115,9 +115,9 @@ Entre las ocho vocales, las otras cinco vocales, aparte de las cortas, se denomi
 
 **6\. 8\. Sesā byañjanā (6).** \[Sesā \+ byañjanā, 2\]
 
-Ṭhapetvā aṭṭha sare sesā {akkharā|letras} kakārādayo niggahitantā {byañjanā|consonantes} nāma honti.
+Ṭhapetvā aṭṭha sare sesā {akkharā|letras} **k**akārādayo **niggahita**ntā {byañjanā|consonantes} nāma honti.
 
-Taṃ yathā? ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma; ya ra la va sa ha ḷa aṃ. Iti byañjanā nāma.
+Taṃ yathā? ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma; ya ra la va sa ha ḷa aṃ. Iti **byañjanā** nāma.
 
 Tena kvattho? Sarā {pakati|forma original} byañjane.
 
@@ -135,9 +135,9 @@ Excluyendo las ocho vocales, las letras restantes, que comienzan con ‘ka’ y 
 
 **7\. 9\. Vaggā pañcapañcaso mantā (7).** \[Vaggā \+ pañcapañcaso \+ ma-antā, 3\]
 
-Tesaṃ kho byañjanānaṃ kakārādayo makārantā pañcapañcaso akkharavanto {vaggā|agrupadas (grupos de cinco)} nāma honti.
+Tesaṃ kho byañjanānaṃ **k**akārādayo makārantā pañcapañcaso akkharavanto {vaggā|agrupadas (grupos de cinco)} nāma honti.
 
-Taṃ yathā? ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma. Iti vaggā nāma.
+Taṃ yathā? ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma. Iti **vaggā** nāma.
 
 Tena kvattho? Vaggantaṃ vā vagge.
 
@@ -155,7 +155,7 @@ De esas consonantes, las letras que comienzan con ‘ka’ y terminan con ‘ma�
 
 **8\. 10\. Aṃ iti niggahitaṃ (8).** \[Aṃ \+ iti \+ niggahitaṃ, 3\]
 
-Aṃ iti {niggahitaṃ|niggahita (nasalización)} nāma hoti.
+**Aṃ** iti {**niggahitaṃ**|niggahita (nasalización)} nāma hoti.
 
 Tena kvattho? Aṃ byañjane niggahitaṃ.
 
@@ -173,7 +173,7 @@ Tena kvattho? Aṃ byañjane niggahitaṃ.
 
 Yā ca pana paresu sakkataganthesu samaññā {ghosā|sonoras} ti vā {aghosā|sordas} ti vā, tā payoge sati etthāpi yujjante.
 
-Tattha ghosā nāma: ga gha ṅa; ja jha ña; ḍa ḍha ṇa; da dha na; ba bha ma; ya ra la va ha ḷa. Iti ghosā nāma. Aghosā nāma: ka kha; ca cha; ṭa ṭha; ta tha; pa pha; sa. Iti aghosā nāma.
+Tattha ghosā nāma: ga gha ṅa; ja jha ña; ḍa ḍha ṇa; da dha na; ba bha ma; ya ra la va ha ḷa. Iti **ghosā** nāma. Aghosā nāma: ka kha; ca cha; ṭa ṭha; ta tha; pa pha; sa. Iti **aghosā** nāma.
 
 Tena kvattho? Vagge ghosāghosānaṃ tatiya-paṭhamā.
 
@@ -211,7 +211,7 @@ Assaraṃ kho byañjanaṃ adhoṭhitaṃ parakkharaṃ naye yutte.
 
 Tatrābhiratim iccheyya (Khu. i, 29).
 
-Yutte ti kasmā? Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me (Khu. i, 26). Ettha pana yuttaṃ na hoti.
+**Yutte** ti kasmā? Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me (Khu. i, 26). Ettha pana yuttaṃ na hoti.
 
 ---
 
@@ -305,7 +305,7 @@ Saramhā asarūpā paro saro {lopaṃ|elisión} pappoti vā.
 
 Cattāro ’me bhikkhave dhammā,[^13] kinnu ’mā ’va samaṇiyo.[^14]
 
-Vā ti kasmā? Pañc’ indriyāni,[^15] tay’ assu dhammā jahitā bhavanti.[^16]
+**Vā** ti kasmā? Pañc’ indriyāni,[^15] tay’ assu dhammā jahitā bhavanti.[^16]
 
 ---
 
@@ -371,7 +371,7 @@ Saro kho paro pubbasare lutte {kvaci|a veces / ocasionalmente} asavaṇṇaṃ p
 
 Saṅkyaṃ n’ opeti vedagū,[^21] bandhusseva samāgamo.
 
-Kvacī ti kasmā? Yass’ indriyāni,[^22] tathūpamaṃ dhammavaraṃ adesayi.[^23]
+**Kvacī** ti kasmā? Yass’ indriyāni,[^22] tathūpamaṃ dhammavaraṃ adesayi.[^23]
 
 ---
 
@@ -440,7 +440,7 @@ Saro kho paro pubbasare lutte {kvaci|a veces / ocasionalmente} {dīghaṃ|largo 
 
 Saddhīdha vittaṃ purisassa seṭṭhaṃ,[^24] anāgārehi cūbhayaṃ.[^25]
 
-Kvacī ti kasmā? Pañcah’ Upāli aṅgehi samannāgato,[^26] natth’ aññaṃ kiñci.
+**Kvacī** ti kasmā? Pañcah’ Upāli aṅgehi samannāgato,[^26] natth’ aññaṃ kiñci.
 
 ---
 
@@ -570,11 +570,11 @@ Secuencia:
 
 **17\. 19\. Yam edantass’ ādeso (43).** \[Yaṃ \+ e-antassa \+ ādeso, 3\]
 
-Ekārassa antabhūtassa sare pare {kvaci|a veces / ocasionalmente} yakārādeso hoti.
+**E**kārassa antabhūtassa sare pare {kvaci|a veces / ocasionalmente} **ya**kārādeso hoti.
 
 Adhigato kho my āyaṃ dhammo,[^31] ty āhaṃ evaṃ vadeyyaṃ,[^32] ty āssa pahīnā honti.[^33]
 
-Kvacī ti kasmā? ne ’nāgatā, iti n’ ettha.
+**Kvacī** ti kasmā? ne ’nāgatā, iti n’ ettha.
 
 ---
 
@@ -640,11 +640,11 @@ Secuencia:
 
 **18\. 20\. Vam od-udantānaṃ (44).** \[Vaṃ \+ o-u-dantānaṃ, 2\]
 
-Okār’-ukārānaṃ antabhūtānaṃ sare pare {kvaci|a veces / ocasionalmente} vakārādeso hoti.
+**O**kār’-**u**kārānaṃ antabhūtānaṃ sare pare {kvaci|a veces / ocasionalmente} **va**kārādeso hoti.
 
 Attha khv assa,[^34] sv assa hoti, bahv ābādho,[^35] vatthv ettha vihitaṃ niccaṃ, cakkhv āpātham āgacchati.
 
-Kvacī ti kasmā? Cattāro ’me bhikkhave dhammā,[^36] kinnu ’mā ’va samaṇiyo.[^37]
+**Kvacī** ti kasmā? Cattāro ’me bhikkhave dhammā,[^36] kinnu ’mā ’va samaṇiyo.[^37]
 
 ---
 
@@ -740,7 +740,7 @@ Secuencia:
 
 **19\. 22\. Sabbo caṃ ti (46, 47).** \[Sabbo \+ ca \+ ti, 3\]
 
-Sabbo icc eso tisaddo byañjano sare pare {kvaci|a veces / ocasionalmente} cakāraṃ pappoti.
+Sabbo icc eso **ti**saddo byañjano sare pare {kvaci|a veces / ocasionalmente} **ca**kāraṃ pappoti.
 
 Icc etaṃ kusalaṃ,[^38] icc assa vacanīyaṃ,[^39] paccuttaritvā,[^40] paccāharati.[^41]
 
@@ -815,11 +815,11 @@ Secuencia:
 
 **20\. 27\. Do dhassa ca (50).** \[Do \+ dhassa \+ ca, 3\]
 
-Dha icc etassa sare pare {kvaci|a veces / ocasionalmente} dakārādeso hoti.
+**Dha** icc etassa sare pare {kvaci|a veces / ocasionalmente} **da**kārādeso hoti.
 
 Ekam idāhaṃ bhikkhave samayaṃ.[^43]
 
-Kvacī ti kasmā? Idh’ eva maraṇaṃ bhavissati.[^44]
+**Kvacī** ti kasmā? Idh’ eva maraṇaṃ bhavissati.[^44]
 
 ---
 
@@ -894,11 +894,11 @@ Dividiendo el sutta \[en reglas similares\], podría haber numerosas aplicacione
 
 **21\. 21\. Ivaṇṇo yaṃ navā (51).** \[I-vaṇṇo \+ yaṃ \+ navā, 3\]
 
-Pubbo ivaṇṇo sare pare yakāraṃ pappoti navā.
+Pubbo **i**vaṇṇo sare pare **ya**kāraṃ pappoti navā.
 
 Paṭisanthāravuty assa,[^48] sabbā vity ānubhūyate.
 
-Navā ti kasmā? Pañcah' aṅgehi samannāgato,[^49] muttacāgī anuddhato.
+**Navā** ti kasmā? Pañcah' aṅgehi samannāgato,[^49] muttacāgī anuddhato.
 
 ---
 
@@ -959,11 +959,11 @@ En el ejemplo “muttacāgī anuddhato”, existe la posibilidad de que ‘ī’
 
 **22\. 28\. Evādissa ri pubbo ca rasso (52).** \[Eva-ādissa \+ ri \+ pubbo \+ ca \+ rasso, 5\]
 
-Saramhā parassa evassa ekārassa ādissa rikāro hoti, pubbo ca saro rasso hoti navā.
+Saramhā parassa evassa **e**kārassa ādissa **ri**kāro hoti, pubbo ca saro rasso hoti navā.
 
 Yatha-r-iva[^50] vasudhātalañ ca sabbaṃ, tatha-r-iva guṇavā supūjaniyo.
 
-Navā ti kasmā? Yathā eva, tathā eva.
+**Navā** ti kasmā? Yathā eva, tathā eva.
 
 ---
 
@@ -1083,7 +1083,7 @@ Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} {dīghaṃ|largo / se 
 
 Sammā dhammaṃ vipassato,[^58] evaṃ gāme munī care,[^59] khantī paramaṃ tapo titikkhā.[^60]
 
-Kvacī ti kasmā? Idha modati pecca modati,[^61] patilīyati,[^62] paṭihaññati.[^63]
+**Kvacī** ti kasmā? Idha modati pecca modati,[^61] patilīyati,[^62] paṭihaññati.[^63]
 
 ---
 
@@ -1140,7 +1140,7 @@ Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} rassaṃ papponti.
 
 Bhovādi nāma so hoti,[^64] yathā bhāvi guṇena so.
 
-Kvacī ti kasmā? Sammā samādhi,[^65] sāvittī chandaso mukhaṃ, upanīyati jīvitam appam āyu.[^66]
+**Kvacī** ti kasmā? Sammā samādhi,[^65] sāvittī chandaso mukhaṃ, upanīyati jīvitam appam āyu.[^66]
 
 ---
 
@@ -1182,11 +1182,11 @@ Contraejemplos:
 
 **27\. 39\. Lopañ ca tatrākāro (66, 163-4).** \[Lopaṃ \+ ca \+ tatra \+ a-kāro, 4\]
 
-Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} {lopaṃ|elisión} papponti, tatra ca lope kate akārāgamo hoti.
+Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} {lopaṃ|elisión} papponti, tatra ca lope kate **a**kārāgamo hoti.
 
 Sa sīlavā,[^67] sa paññavā,[^68] esa dhammo sanantano,[^69] sa ve kasāvam arahati,[^70] sa mānakāmo pi bhaveyya, sa ve muni jātibhayaṃ adassi.
 
-Kvacī ti kasmā? So muni,[^71] eso dhammo padissati, na so kāsāvam arahati.[^72]
+**Kvacī** ti kasmā? So muni,[^71] eso dhammo padissati, na so kāsāvam arahati.[^72]
 
 ---
 
@@ -1269,7 +1269,7 @@ Saramhā parassa byañjanassa {dvebhāvo|duplicación} hoti {ṭhāne|en el luga
 
 Idha ppamādo, purisassa jantuno, pabbajjaṃ kittayissāmi,[^74] cātuddasiṃ,[^75] pañcaddasiṃ,[^76] abhikkantataro cando.
 
-Ṭhāne ti kasmā? Idha modati pecca modati.[^77]
+**Ṭhāne** ti kasmā? Idha modati pecca modati.[^77]
 
 ---
 
@@ -1336,7 +1336,7 @@ Vagge kho pubbesaṃ byañjanānaṃ ghosāghosabhūtānaṃ saramhā yathāsa�
 
 Es’ eva ca jjhānapphalo, yatra ṭṭhitaṃ na ppasaheyya maccu,[^79] sele yathā pabbatamuddhani ṭṭhito,[^80] cattāri ṭṭhānāni naro pamatto.[^81]
 
-Ṭhāne ti kasmā? Idha cetaso daḷhaṃ gaṇhāti thāmasā.
+**Ṭhāne** ti kasmā? Idha cetaso daḷhaṃ gaṇhāti thāmasā.
 
 ---
 
@@ -1438,7 +1438,7 @@ Tan niccutaṃ, dhammañ care sucaritaṃ (Khu. i, 39), cirappavāsiṃ purisa�
 
 Vāggahaṇena niggahitaṃ kho lakārādeso hoti. Puggalaṃ.[^87]
 
-Vā ti kasmā? Na taṃ kammaṃ kataṃ sādhu (Khu. i, 23).
+**Vā** ti kasmā? Na taṃ kammaṃ kataṃ sādhu (Khu. i, 23).
 
 ---
 
@@ -1478,11 +1478,11 @@ Ejemplos \[con secuencia de formación\]:
 
 **32\. 50\. E-he ñaṃ (140).** \[E-he \+ ñaṃ, 2\]
 
-Ekāra-hakāre pare {niggahitaṃ|niggahita (nasalización)} kho ñakāraṃ pappoti vā.
+**E**kāra-**ha**kāre pare {niggahitaṃ|niggahita (nasalización)} kho **ña**kāraṃ pappoti vā.
 
 Paccattañ ñeva parinibbāyissāmi,[^89] tañ ñev' ettha paṭipucchissāmi,[^90] evañ hi vo bhikkhave sikkhitabbaṃ.[^91] Tañ hi tassa musā hoti.[^92]
 
-Vā ti kasmā? Evam etaṃ abhiññāya,[^93] evaṃ hoti subhāsitaṃ.
+**Vā** ti kasmā? Evam etaṃ abhiññāya,[^93] evaṃ hoti subhāsitaṃ.
 
 ---
 
@@ -1518,11 +1518,11 @@ Contraejemplos:
 
 **33\. 51\. Sa ye ca (141).** \[Sa \+ ye \+ ca, 3\]
 
-Niggahitaṃ kho yakāre pare saha yakārena ñakāraṃ pappoti vā. 
+Niggahitaṃ kho **ya**kāre pare saha **ya**kārena **ña**kāraṃ pappoti vā. 
 
 Saññogo, saññuttaṃ. 
 
-Vā ti kasmā? Saṃyogo, saṃyuttaṃ.
+**Vā** ti kasmā? Saṃyogo, saṃyuttaṃ.
 
 ---
 
@@ -1556,11 +1556,11 @@ Contraejemplos:
 
 **34\. 52\. Ma-dā sare (142-5).** \[Ma-dā \+ sare, 2\]
 
-Niggahitassa kho sare pare makāra-dakārādesā honti vā.
+Niggahitassa kho sare pare **ma**kāra-**da**kārādesā honti vā.
 
 Tam ahaṃ brūmi brāhmaṇaṃ,[^95] etad avoca satthā.[^96]
 
-Vā ti kasmā? Akkocchi maṃ avadhi maṃ,[^97] ajini maṃ ahāsi me.[^98]
+**Vā** ti kasmā? Akkocchi maṃ avadhi maṃ,[^97] ajini maṃ ahāsi me.[^98]
 
 ---
 
@@ -1594,17 +1594,17 @@ Contraejemplos:
 
 **35\. 34\. Ya-va-ma-da-na-ta-ra-lā c’ āgamā (56).** \[Ya-va-ma-da-na-ta-ra-lā \+ ca \+ āgamā, 3\]
 
-Sare pare yakāro vakāro makāro dakāro nakāro takāro rakāro lakāro ime {āgamā|letra insertada} honti vā.
+Sare pare **ya**kāro **va**kāro **ma**kāro **da**kāro **na**kāro **ta**kāro **ra**kāro **la**kāro ime {āgamā|letra insertada} honti vā.
 
 Na-y-imassa vijjā,[^99] yatha-y-idaṃ cittaṃ.[^100] Migī bhantā-v-udikkhati,[^101] sittā te lahu-m-essati,[^102] asittā te garu-m-essati. Asso bhadro kasā-m-iva,[^103] samma-d-aññā vimuttānaṃ.[^104] Manasā-d-aññā vimuttānaṃ, atta-d-attham abhiññāya.[^105] Ciraṃ-n-āyati, ito-n-āyati. Yasmā-t-iha bhikkhave, tasmā-t-iha bhikkhave,[^106] ajja-t-agge[^107] pāṇupetaṃ. Sabbhi-r-eva samāsetha,[^108] āragge-r-iva sāsapo,[^109] sāsapo-r-iva āraggā.[^110] Cha-ḷ-abhiññā,[^111] sa-ḷ-āyatanaṃ.[^112]
 
 Vā ti kasmā? Evaṃ mahiddhiyā esā, akkocchi maṃ avadhi maṃ,[^113] ajini maṃ ahāsi me,[^114] ajeyyo anugāmiko.[^115]
 
-Caggahaṇena idh’ eva makārassa pakāro hoti. Cirappavāsiṃ purisaṃ.[^116]
+**Ca**ggahaṇena idh’ eva **ma**kārassa **pa**kāro hoti. Cirappavāsiṃ purisaṃ.[^116]
 
-Kakārassa ca dakāro hoti. Sadatthapasuto siyā.[^117]
+**Ka**kārassa ca **da**kāro hoti. Sadatthapasuto siyā.[^117]
 
-Dakārassa ca takāro hoti. Sugato.[^118]
+**Da**kārassa ca **ta**kāro hoti. Sugato.[^118]
 
 ---
 
@@ -1654,7 +1654,7 @@ Contraejemplos:
 
 **36\. 47\. Kvaci o byañjane (130).** \[Kvaci \+ o \+ byañjane, 3\]
 
-Byañjane pare {kvaci|a veces / ocasionalmente} okārāgamo hoti.
+Byañjane pare {kvaci|a veces / ocasionalmente} **o**kārāgamo hoti.
 
 Atippago kho tāva Sāvatthiyaṃ piṇḍāya carituṃ. Parosahassaṃ.[^120]
 
@@ -1748,7 +1748,7 @@ Niggahitaṃ kho sare pare kvaci lopaṃ pappoti.
 
 Tāsāhaṃ santike,[^134] vidūn' aggam iti.
 
-Kvacī ti kasmā? Aham eva nūna bālo etam atthaṃ viditvāna.[^135]
+**Kvacī** ti kasmā? Aham eva nūna bālo etam atthaṃ viditvāna.[^135]
 
 ---
 
@@ -1820,7 +1820,7 @@ Niggahitamhā paro saro lopaṃ pappoti vā.
 
 Bhāsitaṃ abhinandun ti;[^141] uttattaṃ ’va, yathābījaṃ ’va, yathādhaññaṃ ’va.
 
-Vā ti kasmā? Aham eva nūna bālo, etad ahosi.[^142]
+**Vā** ti kasmā? Aham eva nūna bālo, etad ahosi.[^142]
 
 ---
 
@@ -1913,7 +1913,7 @@ Contraejemplos:
 
 **42\. 32\. Go sare puthass’ āgamo kvaci (53).** \[Go \+ sare \+ putha-ssa \+ āgamo \+ kvaci, 5\]
 
-Putha icc etassa ante sare pare {kvaci|a veces / ocasionalmente} gakārāgamo hoti.
+**Putha** icc etassa ante sare pare {kvaci|a veces / ocasionalmente} **ga**kārāgamo hoti.
 
 Puthag eva.
 
@@ -1935,11 +1935,11 @@ Ejemplo \[con secuencia de formación\]:
 
 **43\. 33\. Pāssa c’ anto rasso (54).** \[Pā-ssa \+ ca \+ anto \+ rasso, 4\]
 
-Pā icc etassa ante sare pare {kvaci|a veces / ocasionalmente} gakārāgamo hoti, anto ca saro rasso hoti.
+**Pā** icc etassa ante sare pare {kvaci|a veces / ocasionalmente} **ga**kārāgamo hoti, anto ca saro rasso hoti.
 
 Pag eva[^148] vutyassa.
 
-Kvacī ti kasmā? Pā eva[^149] vutyassa.
+**Kvacī** ti kasmā? Pā eva[^149] vutyassa.
 
 ---
 
@@ -1969,7 +1969,7 @@ Contraejemplo:
 
 **44\. 24\. Abbho abhi (57).** \[Abbho \+ abhi, 2\]
 
-Abhi icc etassa sare pare abbhādeso hoti.
+**Abhi** icc etassa sare pare **abbhā**deso hoti.
 
 Abbhudīritaṃ, abbhuggacchati.[^150]
 
@@ -1993,7 +1993,7 @@ Ejemplos \[con secuencia de formación\]:
 
 **45\. 25\. Ajjho adhi (58).** \[Ajjho \+ adhi, 2\]
 
-Adhi icc etassa sare pare ajjhādeso hoti.
+**Adhi** icc etassa sare pare **ajjhā**deso hoti.
 
 Ajjhokāse,[^151] ajjhāgamā.
 
@@ -2017,11 +2017,11 @@ Ejemplos \[con secuencia de formación\]:
 
 **46\. 26\. Te na vā ivaṇṇe (59).** \[Te \+ na \+ vā \+ i-vaṇṇe, 4\]
 
-Te ca kho abhi adhi icc ete ivaṇṇe pare abbho ajjho iti vuttarūpā na honti vā.
+Te ca kho **abhi adhi** icc ete **i**vaṇṇe pare **abbho ajjho** iti vuttarūpā na honti vā.
 
 Abhicchitaṃ, adhīritaṃ.
 
-Vā ti kasmā? Abbhīritaṃ, ajjhiṇamutto.
+**Vā** ti kasmā? Abbhīritaṃ, ajjhiṇamutto.
 
 ---
 
@@ -2055,7 +2055,7 @@ Contraejemplos:
 
 **47\. 23\. Atissa c’ antassa (60).** \[Atissa \+ ca \+ antassa, 3\]
 
-Ati icc etassa antabhūtassa tisaddassa ivaṇṇe pare “sabbo caṃ tī” ti vuttarūpaṃ na hoti.
+**Ati** icc etassa antabhūtassa **ti**saddassa **i**vaṇṇe pare “sabbo caṃ tī” ti vuttarūpaṃ na hoti.
 
 Atīsigaṇo, atīritaṃ.
 
@@ -2091,11 +2091,11 @@ Contraejemplo:
 
 **48\. 43\. Kvaci paṭi patissa (137).** \[Kvaci \+ paṭi \+ patissa, 3\]
 
-Pati icc etassa sare vā byañjane vā pare {kvaci|a veces / ocasionalmente} paṭi-ādeso hoti.
+**Pati** icc etassa sare vā byañjane vā pare {kvaci|a veces / ocasionalmente} **paṭi-**ādeso hoti.
 
 Paṭaggi[^153] dātabbo, paṭihaññati.[^154]
 
-Kvacī ti kasmā? Paccantimesu janapadesu,[^155] patilīyati,[^156] patirūpadesavāso ca.[^157]
+**Kvacī** ti kasmā? Paccantimesu janapadesu,[^155] patilīyati,[^156] patirūpadesavāso ca.[^157]
 
 ---
 
@@ -2131,9 +2131,9 @@ Contraejemplos:
 
 **49\. 44\. Puthass u byañjane (129).** \[Putha-ssa \+ u \+ byañjane, 3\]
 
-Putha icc etassa anto saro byañjane pare ukāro hoti. 
+**Putha** icc etassa anto saro byañjane pare **u**kāro hoti. 
 
-Puthujjano,[^158] puthubhūtaṃ.[^159] Antaggahaṇena aputhassāpi sare pare antassa ukāro hoti. Manuññaṃ.[^160]
+Puthujjano,[^158] puthubhūtaṃ.[^159] **Anta**ggahaṇena aputhassāpi sare pare antassa **u**kāro hoti. Manuññaṃ.[^160]
 
 ---
 
@@ -2161,11 +2161,11 @@ Ejemplos \[con secuencia de formación\]:
 
 **50\. 45\. O avassa (126).** \[O \+ avassa, 2\]
 
-Ava icc etassa byañjane pare {kvaci|a veces / ocasionalmente} okāro hoti. 
+**Ava** icc etassa byañjane pare {kvaci|a veces / ocasionalmente} **o**kāro hoti. 
 
 Andhakārena onaddhā.[^161] 
 
-Kvacī ti kasmā? Avasussatu me sarīre maṃsalohitaṃ.[^162]
+**Kvacī** ti kasmā? Avasussatu me sarīre maṃsalohitaṃ.[^162]
 
 ---
 
