@@ -23,8 +23,8 @@ sutta nuevo; no se tocó el capítulo 4.*
 
 ## 1. ESTADO AL CIERRE
 
-HEAD: **`b426955`**, empujado (`origin/main` igual). Comprobado **sin
-ejecutar git**, leyendo `.git/refs/heads/main`, `.git/logs/HEAD` y
+HEAD: **`b426955`**, publicado en `origin/main`. Comprobado **sin ejecutar
+git**, leyendo `.git/refs/heads/main`, `.git/logs/HEAD` y
 `.git/refs/remotes/origin/main` como texto plano.
 
 Dos commits de contenido:

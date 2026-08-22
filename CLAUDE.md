@@ -10,6 +10,13 @@ estudiantes hispanohablantes de pāḷi con formación budista.
 
 ## Reglas
 
+- **Con Angel se habla en inglés. Todo lo demás va en español**: el sitio, los
+  briefings, los mensajes de commit, los comentarios del código. Una respuesta
+  en el chat es para Angel y va en inglés **entera**, también los bloques que
+  le pases para copiar.
+- **Nada de verbos ingleses conjugados en español** —«commitear», «pushear»,
+  «empujado», «mergear», «testear»—. La tabla y el porqué, en
+  `comun/convenciones.md` §0.
 - Registro formal y doctrinal; no coloquial.
 - Términos técnicos pāḷi sin traducir, con diacríticos completos
   (nibbāna, saṅkhāra, kāraka); cursiva en la primera aparición de cada sección.

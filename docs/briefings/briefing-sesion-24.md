@@ -9,37 +9,27 @@ nuevo; no se tocó el capítulo 4.*
 > queda son dos casos concretos —§70 y §92—, cada uno con su camino ya medido
 > y ninguno pendiente de trabajo a ciegas.
 
-> **Hay trabajo sin commitear.** Angel se fue a mediodía y pidió seguir. Todo
-> lo de abajo está aplicado y verificado en el árbol, pero **el commit está sin
-> hacer**: yo no ejecuto git. Ver §1.
-
 ---
 
 ## 1. ESTADO AL CIERRE
 
-HEAD: **`08b061f`**, empujado (`origin/main` igual). Comprobado **sin ejecutar
-git**, leyendo `.git/refs/heads/main`, `.git/logs/HEAD` y
+HEAD: **`b841dbd`**, publicado en `origin/main`, **árbol limpio**. Comprobado
+**sin ejecutar git**, leyendo `.git/refs/heads/main`, `.git/logs/HEAD` y
 `.git/refs/remotes/origin/main` como texto plano.
 
 | Hash | Qué |
 | ---- | --- |
 | `b426955` | negrita: repetida no es ambigua cuando las cuentas cuadran; §66 |
-| `08b061f` | **división: «Xsv ti» es una «i» perdida; enmienda del briefing 23** ← HEAD |
+| `08b061f` | división: «Xsv ti» es una «i» perdida; enmienda del briefing 23 |
+| `b841dbd` | **negrita: lo que la capa de texto del PDF pierde, en tabla cerrada** ← HEAD |
 
-**Pendiente de commit**, ya aplicado y verificado en el árbol:
+Los tres commits de las sesiones 23-24 están publicados y el sitio desplegado.
+No queda nada por confirmar.
 
-    docs/2. Nāma-Kappa.md          los 14 tramos de negrita de esta tarde
-    docs/3. Kāraka-Kappa.md        reescrito idéntico (0 tramos; sin diff real)
-    herramientas/restituir_negritas.py   VARIANTES, RE_DEFECTO, MINIMO, siglas
-    kaccayana/02-nama-kappa.md     salida del conversor
-    site/**                        salida del generador
-
-El hook de pre-commit vuelve a correr los conversores y `generar_todo.py`, de
-modo que basta con:
-
-    git add -A
-    git commit -m "negrita: lo que la capa de texto del PDF pierde, en tabla cerrada"
-    git push
+*(Este apartado se escribió primero dando `08b061f` y una lista de archivos sin
+confirmar, porque Angel se fue a mediodía y yo no ejecuto git. A su vuelta los
+confirmó y los publicó. Se corrige aquí mismo antes de cerrar — que es justo el
+fallo que la sesión 23 cometió y que el §8 de abajo manda no repetir.)*
 
 ## 2. LA UNIFICACIÓN `Xsv ti` → `Xsv iti` (mañana)
 
@@ -236,7 +226,16 @@ existe.
 - **Ninguna orden de git desde el sandbox, ni siquiera `status`.** Leer
   `.git/refs/heads/main`, `.git/logs/HEAD` y `.git/index` como archivos.
 - **Con Angel se habla en inglés**; el producto —sitio, mensajes de commit,
-  comentarios del código, estos briefings— va en español.
+  comentarios del código, estos briefings— va en español. Una respuesta en el
+  chat va en inglés **entera**, también los bloques que se le pasen para
+  copiar. En la 24 se le entregó en español el texto para el chat siguiente:
+  eso incumple la regla aunque el resto de la respuesta esté en inglés.
+- **Nada de verbos ingleses conjugados en español.** «Commitear», «empujado»,
+  «pushear», «mergear», «testear». La tabla y el porqué están ahora en
+  `comun/convenciones.md` §0, que es donde tenían que haber estado desde el
+  principio. **Cuidado con los briefings 10 a 22**: los catorce calcos que
+  siguen ahí no son estilo de la casa, son el error que se venía copiando de
+  sesión en sesión. No imitarlos.
 - **Los PDF no viven en el repositorio** (`.gitignore`: `*.pdf`). Sin ellos no
   se puede repetir la restitución de negritas. Hay que pedírselos a Angel.
 - **Todo cambio del emparejador se corre contra los dos capítulos.** Ver §4.1.

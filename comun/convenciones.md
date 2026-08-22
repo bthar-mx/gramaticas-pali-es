@@ -2,6 +2,35 @@
 
 Documento normativo. Toda decisión que se repita va aquí.
 
+## 0. Registro del español del proyecto
+
+Vale para **todo** lo que se escribe en español —capítulos, recursos,
+briefings, mensajes de commit, comentarios del código—, no sólo para la
+traducción.
+
+**No se calcan verbos ingleses.** «Commitear», «pushear», «mergear»,
+«deployar», «linkear», «testear», «parchear» y compañía no son español, y
+«empujado» por *pushed* es una traducción literal que en español no significa
+eso. El sustantivo técnico se deja como es —«el commit», «el hook», «el
+push»—; lo que no se hace es conjugarlo.
+
+| En vez de | Se escribe |
+| --------- | ---------- |
+| commitear, commiteado | confirmar; hacer el commit; «sin confirmar» |
+| empujado, pushear | publicado; subido a `origin` |
+| mergear | fusionar; integrar |
+| deployar | desplegar |
+| parchear | corregir; aplicar un parche |
+| testear | probar; comprobar |
+
+**Por qué está escrito aquí y no sólo dicho.** Angel lo había advertido en
+sesiones anteriores y volvió a salir en la 24. La causa es mecánica: un chat
+nuevo no recuerda ninguna conversación, sólo lee el repositorio, y este
+documento no lo recogía. Lo que sí leía eran los briefings 10 a 22, donde
+«commitear» y «empujado» aparecen veintiuna veces **usados como si fueran la
+casa**. De modo que cada sesión no es que olvidara la regla: aprendía el error
+del propio registro. Escrito aquí, deja de depender de que alguien lo recuerde.
+
 ## 1. Términos pāḷi
 
 - Términos técnicos sin traducir. Unicode NFC, diacríticos completos.
