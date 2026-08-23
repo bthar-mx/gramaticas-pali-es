@@ -831,7 +831,7 @@ Tomando de nuevo “jha-la-pehi” sirve para impedir que siga “vā” hasta a
 
 **83\. 67\. Saralopo ’mādesa-paccayādimhi saralope tu pakati (236).** \[Sara-lopo \+ aṃ-ādesa-paccaya-ādimhi \+ saralope \+ tu \+ pakati, 5\]
 
-Saralopo hoti **amādesa-paccayādimhi**, saralope tu pakati hoti. 
+Saralopo hoti **amādesa-paccayādi**mhi, saralope tu pakati hoti. 
 
 Purisaṃ, purise, pāpaṃ, pāpe, pāpiyo, pāpiṭṭho. 
 
