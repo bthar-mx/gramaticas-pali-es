@@ -48,7 +48,9 @@ def norm(s):
         s = s.replace(a, b)
     s = re.sub(r"\[\^\d+\]", "", s)
     # referencias canónicas: (Vin. iii, 320), (A. ii, 468; Khu. i, 59), (DhA. i, 30)…
-    s = re.sub(r"\s*\((?:[A-ZĀ][A-Za-zĀāĪīŪūṂṃṆṇ]*\.?(?:[A-Z][a-z]*\.)?\s*[ivxlcdm]+,\s*\d+(?:,\s*\d+)*\s*;?\s*)+\)", "", s)
+    # Sesión 27: volumen romano opcional («KhuA. 109») y Ṭ/guion en la sigla
+    # («Sārattha-Ṭīkā ii, 329»), formas que trae el Kibbidhāna.
+    s = re.sub(r"\s*\((?:[A-ZĀĪŪṬḌṆ][A-Za-zĀāĪīŪūṂṃṆṇṬṭḌḍḶḷ-]*\.?(?:[A-Z][a-z]*\.)?\s*(?:[ivxlcdm]+,\s*)?\d+(?:,\s*\d+)*\s*;?\s*)+\)", "", s)
     s = re.sub(r"\s+", " ", s)
     return s.strip()
 
