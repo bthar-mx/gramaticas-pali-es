@@ -67,7 +67,12 @@ body{
 .sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
 .sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
 .sidebar a:hover b,.sidebar a.on b{color:inherit}
-.sb-close{display:none}
+.sb-close{position:absolute;top:14px;right:12px;
+  font-family:var(--mono);font-size:12px;line-height:1;padding:5px 8px;
+  background:var(--ola);color:var(--soot);border:1px solid var(--hair);
+  border-radius:2px;cursor:pointer}
+.sb-close:hover{color:var(--ink);border-color:var(--soot)}
+.sb-close:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
 body{padding-left:238px}
 .scrim{display:none}
 
@@ -261,7 +266,6 @@ footer a{color:var(--nila)}
   body{padding-left:0}
   .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
   .sidebar.open{transform:none}
-  .sb-close{display:block;position:absolute;top:12px;right:12px}
   .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
 }
 @media (max-width:640px){
@@ -324,7 +328,8 @@ footer a{color:var(--nila)}
 
 <div class="scrim" id="scrim"></div>
 <aside class="sidebar" id="sidebar" aria-label="Índice">
-  <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
+    title="Ocultar el índice">« ocultar</button>
   <div class="sb-brand"><b>Paradigmas</b><span class="lbl">Declinación nominal y pronominal</span></div>
   <nav id="sbnav"></nav>
 </aside>
@@ -347,7 +352,8 @@ footer a{color:var(--nila)}
     <input type="search" id="q" placeholder="Buscar paradigma o forma — «purisa», «rannā», «bhikkhave»…" aria-label="Buscar">
     <span class="filtros" id="f-gen" role="group" aria-label="Filtrar por género"></span>
     <span class="filtros tema" id="f-tema" role="group" aria-label="Filtrar por tema"></span>
-    <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
+      title="Ocultar el índice" aria-expanded="true">☰</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
     <span class="count" id="count"></span>
   </div>
@@ -649,6 +655,7 @@ function pintarBarra(oculta){
   const b = document.getElementById('burger');
   b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
   b.setAttribute('title', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
 }
 (function(){
   /* Sólo se recuerda para pantalla ancha: en estrecha la barra siempre
@@ -669,7 +676,12 @@ document.getElementById('burger').onclick = () => {
     scrim.classList.toggle('on');
   }
 };
-document.getElementById('sbclose').onclick = closeSb;
+document.getElementById('sbclose').onclick = () => {
+  if(anchaBastante()){
+    store.set(BARRA_OCULTA, '1');
+    pintarBarra(true);
+  } else closeSb();
+};
 scrim.onclick = closeSb;
 addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
 

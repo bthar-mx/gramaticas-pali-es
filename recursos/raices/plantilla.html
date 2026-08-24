@@ -65,7 +65,12 @@ body{
 .abc button:hover small{color:inherit}
 .sb-nota{padding:4px 18px 0;font-size:12.5px;line-height:1.6;color:var(--soot);
   border-top:1px solid var(--hair);margin-top:6px;padding-top:12px}
-.sb-close{display:none}
+.sb-close{position:absolute;top:14px;right:12px;
+  font-family:var(--mono);font-size:12px;line-height:1;padding:5px 8px;
+  background:var(--ola);color:var(--soot);border:1px solid var(--hair);
+  border-radius:2px;cursor:pointer}
+.sb-close:hover{color:var(--ink);border-color:var(--soot)}
+.sb-close:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
 body{padding-left:238px}
 .scrim{display:none}
 
@@ -365,7 +370,6 @@ footer a{color:var(--nila)}
   body{padding-left:0}
   .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
   .sidebar.open{transform:none}
-  .sb-close{display:block;position:absolute;top:12px;right:12px}
   .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
   .fila{grid-template-columns:minmax(110px,1fr) minmax(0,2.4fr)}
   .col-skt{grid-column:1/-1;border-left:0;padding-left:0;margin-top:8px;
@@ -414,7 +418,8 @@ footer a{color:var(--nila)}
 
 <div class="scrim" id="scrim"></div>
 <aside class="sidebar" id="sidebar" aria-label="Índice alfabético">
-  <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
+    title="Ocultar el índice">« ocultar</button>
   <div class="sb-brand"><b>Raíces pāḷi</b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā</span></div>
   <div class="sb-tit" id="abc-tit">Saddanīti por inicial</div>
   <div class="abc" id="abc"></div>
@@ -460,7 +465,8 @@ footer a{color:var(--nila)}
     <input type="search" id="q" placeholder="Buscar raíz o significado — «paca», «gam», «cocinar», «gatyatthe»…" aria-label="Buscar">
     <span class="filtros gana" id="f-gana" role="group" aria-label="Filtrar por gaṇa"></span>
     <span class="filtros" id="f-skt" role="group" aria-label="Filtrar por cognado sánscrito"></span>
-    <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
+      title="Ocultar el índice" aria-expanded="true">☰</button>
     <button class="icon-btn" id="en-btn" aria-pressed="false" title="Mostrar también el inglés">EN</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
     <span class="count" id="count"></span>
@@ -1186,6 +1192,7 @@ function pintarBarra(oculta){
   const b = document.getElementById('burger');
   b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
   b.setAttribute('title', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
 }
 (function(){
   /* Sólo se recuerda para pantalla ancha: en estrecha la barra siempre
@@ -1206,7 +1213,12 @@ document.getElementById('burger').onclick = () => {
     scrim.classList.toggle('on');
   }
 };
-document.getElementById('sbclose').onclick = cerrarSb;
+document.getElementById('sbclose').onclick = () => {
+  if(anchaBastante()){
+    store.set(BARRA_OCULTA, '1');
+    pintarBarra(true);
+  } else cerrarSb();
+};
 scrim.onclick = cerrarSb;
 addEventListener('keydown', e => { if(e.key === 'Escape') cerrarSb(); });
 
