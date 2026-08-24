@@ -588,6 +588,41 @@ document.addEventListener('DOMContentLoaded', function() {
   toc.addEventListener('click', function(e) {
     if (e.target.closest && e.target.closest('.toc-item')) toggleTocDrawer(false);
   });
+
+  // ─── Plegar el índice en pantalla ancha (sesión 29) ───────────
+  // El ☰ de la barra de kaṇḍas es para el cajón de pantalla estrecha.
+  // En ancha el índice va fijo al lado del texto, y se pliega con su
+  // propio botón; una pestaña en el borde lo devuelve, que es donde se
+  // busca. No se guarda: se abre siempre al entrar.
+  function verToc(oculto) {
+    document.documentElement.classList.toggle('sin-toc', oculto);
+    var v = document.getElementById('toc-volver');
+    if (v) v.setAttribute('aria-expanded', oculto ? 'false' : 'true');
+  }
+  var cerrar = document.createElement('button');
+  cerrar.className = 'toc-ocultar';
+  cerrar.type = 'button';
+  cerrar.textContent = '« ocultar';
+  cerrar.setAttribute('aria-label', 'Ocultar el índice');
+  cerrar.setAttribute('title', 'Ocultar el índice');
+  cerrar.addEventListener('click', function() { verToc(true); });
+  toc.style.position = toc.style.position || '';
+  toc.insertBefore(cerrar, toc.firstChild);
+
+  var volver = document.createElement('button');
+  volver.id = 'toc-volver';
+  volver.type = 'button';
+  volver.textContent = '» Índice';
+  volver.setAttribute('aria-label', 'Mostrar el índice');
+  volver.setAttribute('title', 'Mostrar el índice');
+  volver.addEventListener('click', function() { verToc(false); });
+  document.body.appendChild(volver);
+
+  // Al estrecharse la ventana el índice pasa a cajón: que no se quede
+  // plegado y sin pestaña que lo devuelva.
+  addEventListener('resize', function() {
+    if (innerWidth < 1100) document.documentElement.classList.remove('sin-toc');
+  });
 });
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && document.body.classList.contains('toc-open')) {
