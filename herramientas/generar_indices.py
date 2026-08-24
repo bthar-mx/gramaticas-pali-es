@@ -85,7 +85,8 @@ RECURSOS = [
      "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "
      "paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa."),
     ("paradigmas/", "__PARADIGMAS_BADGE__", "Paradigmas de declinación",
-     "Los 83 paradigmas de declinación nominal y pronominal del IEBH, con "
+     "Los 83 paradigmas de declinación nominal y pronominal de la lengua "
+     "pāḷi, con "
      "todas las variantes de cada forma: nombres por género y tema, "
      "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
      "ignora los diacríticos y filtros por género y por tema."),
