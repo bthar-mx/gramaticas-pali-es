@@ -117,8 +117,8 @@ body.dark { background-image: none; }
     display: inline-flex; align-items: center;
     position: absolute; top: 1.25rem; right: .9rem;
     border: .5px solid var(--border); background: var(--bg3);
-    border-radius: 3px; padding: 3px 7px;
-    font: 600 10px/1 var(--mono); letter-spacing: .08em;
+    border-radius: 3px; padding: 5px 9px;
+    font: 600 12.5px/1 var(--mono); letter-spacing: .06em;
     color: var(--text2); cursor: pointer;
   }
   .toc-ocultar:hover { background: var(--bg2); color: var(--text); }
@@ -132,8 +132,8 @@ body.dark { background-image: none; }
     z-index: 1595; writing-mode: vertical-rl;
     border: .5px solid var(--border); border-left: 0;
     border-radius: 0 3px 3px 0; background: var(--bg2);
-    padding: 14px 5px; cursor: pointer;
-    font: 600 10.5px/1 var(--mono); letter-spacing: .14em;
+    padding: 18px 8px; cursor: pointer;
+    font: 600 13px/1 var(--mono); letter-spacing: .12em;
     text-transform: uppercase; color: var(--text2);
     box-shadow: 2px 0 10px rgba(0,0,0,.10);
   }
@@ -241,10 +241,12 @@ body.dark { background-image: none; }
 /* 6. Tooltip de las referencias §N: título — glosa del sutta citado.
    La insignia de versión y los botones de kaṇḍa usan el mismo mecanismo,
    pero desplegado hacia abajo (están arriba y hacia arriba se recortaría). */
-.sutta-xref, .version-badge, .kanda-nav-btn { position: relative; }
+.sutta-xref, .version-badge, .kanda-nav-btn, .toc-ocultar { position: relative; }
 .sutta-xref[data-tip]:hover::after,
 .version-badge[data-tip]:hover::after,
-.kanda-nav-btn[data-tip]:hover::after {
+.kanda-nav-btn[data-tip]:hover::after,
+.toc-ocultar[data-tip]:hover::after,
+#toc-volver[data-tip]:hover::after {
   content: attr(data-tip);
   position: absolute; bottom: calc(100% + 8px); left: 50%;
   transform: translateX(-50%);
@@ -256,8 +258,17 @@ body.dark { background-image: none; }
   z-index: 100; box-shadow: 0 3px 12px rgba(0,0,0,.1);
 }
 .version-badge[data-tip]:hover::after,
-.kanda-nav-btn[data-tip]:hover::after {
+.kanda-nav-btn[data-tip]:hover::after,
+.toc-ocultar[data-tip]:hover::after {
   bottom: auto; top: calc(100% + 8px);
+  font-weight: 400; letter-spacing: normal; text-align: left;
+}
+.toc-ocultar[data-tip]:hover::after { left: auto; right: 0; transform: none; }
+/* La pestaña del borde va en vertical; su globo, no. */
+#toc-volver[data-tip]:hover::after {
+  bottom: auto; top: 50%; left: calc(100% + 8px);
+  transform: translateY(-50%);
+  writing-mode: horizontal-tb; text-orientation: mixed;
   font-weight: 400; letter-spacing: normal; text-align: left;
 }
 .kanda-nav-btn[data-tip]:hover::after {

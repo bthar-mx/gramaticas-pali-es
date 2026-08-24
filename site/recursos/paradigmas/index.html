@@ -68,7 +68,7 @@ body{
 .sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
 .sidebar a:hover b,.sidebar a.on b{color:inherit}
 .sb-close{position:absolute;top:14px;right:12px;
-  font-family:var(--mono);font-size:12px;line-height:1;padding:5px 8px;
+  font-family:var(--mono);font-size:13.5px;line-height:1;padding:7px 10px;
   background:var(--ola);color:var(--soot);border:1px solid var(--hair);
   border-radius:2px;cursor:pointer}
 .sb-close:hover{color:var(--ink);border-color:var(--soot)}
@@ -91,11 +91,11 @@ html.sin-barra .sidebar{transform:translateX(-100%)}
 #volver-barra{position:fixed;left:0;top:50%;transform:translateY(-50%);
   z-index:56;display:none;align-items:center;gap:7px;
   writing-mode:vertical-rl;
-  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;
+  font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;
   background:var(--ola-2);color:var(--soot);
   border:1px solid var(--hair);border-left:0;
-  border-radius:0 3px 3px 0;padding:16px 6px;cursor:pointer;
+  border-radius:0 3px 3px 0;padding:20px 9px;cursor:pointer;
   box-shadow:2px 0 10px var(--shadow)}
 #volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
 #volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
@@ -138,6 +138,13 @@ h1 .dia{color:var(--haritala)}
   border-radius:999px;padding:4px 10px;position:relative}
 .version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
 /* Con el dedo no hay hover: la clase «on» la pone un toque (ver el guion). */
+.sb-close,#volver-barra,#burger{position:relative}
+/* Esta página no tiene el motor de globos de Raíces: usa el globo por CSS
+   de la insignia de versión, y estos dos controles se suman a él. El
+   «title» del navegador es diminuto y no se puede estilar. */
+.sb-close[data-tip]:hover::after,
+#volver-barra[data-tip]:hover::after,
+#burger[data-tip]:hover::after,
 .version-badge[data-tip]:hover::after,
 .version-badge[data-tip].on::after{content:attr(data-tip);
   position:absolute;top:calc(100% + 8px);left:0;
@@ -146,6 +153,12 @@ h1 .dia{color:var(--haritala)}
   letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
   min-width:160px;max-width:min(340px,70vw);z-index:100;
   box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.sb-close[data-tip]:hover::after{left:auto;right:0;top:calc(100% + 8px)}
+#burger[data-tip]:hover::after{left:0;top:calc(100% + 8px);text-transform:none;font-weight:400}
+/* La pestaña va en vertical; su globo, no. */
+#volver-barra[data-tip]:hover::after{
+  top:50%;left:calc(100% + 10px);transform:translateY(-50%);
+  writing-mode:horizontal-tb;text-transform:none;font-weight:400}
 .version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
 .hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
       border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
@@ -346,10 +359,10 @@ footer a{color:var(--nila)}
 
 <div class="scrim" id="scrim"></div>
 <button id="volver-barra" aria-label="Mostrar el índice"
-  title="Mostrar el índice">» Índice</button>
+  data-tip="Mostrar otra vez el índice al lado del texto.">» Índice</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
-    title="Ocultar el índice">« ocultar</button>
+    data-tip="Aparta el índice y el texto ocupa su sitio. Vuelve con la pestaña del borde izquierdo.">« ocultar</button>
   <div class="sb-brand"><b>Paradigmas</b><span class="lbl">Declinación nominal y pronominal</span></div>
   <nav id="sbnav"></nav>
 </aside>
@@ -373,7 +386,7 @@ footer a{color:var(--nila)}
     <span class="filtros" id="f-gen" role="group" aria-label="Filtrar por género"></span>
     <span class="filtros tema" id="f-tema" role="group" aria-label="Filtrar por tema"></span>
     <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
-      title="Ocultar el índice" aria-expanded="true">☰</button>
+      aria-expanded="true">☰</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
     <span class="count" id="count"></span>
   </div>
@@ -674,7 +687,9 @@ function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
   b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
-  b.setAttribute('title', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  b.setAttribute('data-tip', oculta
+    ? 'Mostrar otra vez el índice al lado del texto.'
+    : 'Aparta el índice y el texto ocupa su sitio.');
   b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
 }
 (function(){

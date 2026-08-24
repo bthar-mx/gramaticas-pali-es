@@ -66,7 +66,7 @@ body{
 .sb-nota{padding:4px 18px 0;font-size:12.5px;line-height:1.6;color:var(--soot);
   border-top:1px solid var(--hair);margin-top:6px;padding-top:12px}
 .sb-close{position:absolute;top:14px;right:12px;
-  font-family:var(--mono);font-size:12px;line-height:1;padding:5px 8px;
+  font-family:var(--mono);font-size:13.5px;line-height:1;padding:7px 10px;
   background:var(--ola);color:var(--soot);border:1px solid var(--hair);
   border-radius:2px;cursor:pointer}
 .sb-close:hover{color:var(--ink);border-color:var(--soot)}
@@ -89,11 +89,11 @@ html.sin-barra .sidebar{transform:translateX(-100%)}
 #volver-barra{position:fixed;left:0;top:50%;transform:translateY(-50%);
   z-index:56;display:none;align-items:center;gap:7px;
   writing-mode:vertical-rl;
-  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;
+  font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;
   background:var(--ola-2);color:var(--soot);
   border:1px solid var(--hair);border-left:0;
-  border-radius:0 3px 3px 0;padding:16px 6px;cursor:pointer;
+  border-radius:0 3px 3px 0;padding:20px 9px;cursor:pointer;
   box-shadow:2px 0 10px var(--shadow)}
 #volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
 #volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
@@ -438,10 +438,10 @@ footer a{color:var(--nila)}
 
 <div class="scrim" id="scrim"></div>
 <button id="volver-barra" aria-label="Mostrar el índice"
-  title="Mostrar el índice">» Índice</button>
+  data-tip="Mostrar el índice|Vuelve a poner el índice al lado del texto.">» Índice</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice alfabético">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
-    title="Ocultar el índice">« ocultar</button>
+    data-tip="Ocultar el índice|Aparta el índice y el texto ocupa su sitio. Vuelve con la pestaña del borde izquierdo.">« ocultar</button>
   <div class="sb-brand"><b>Raíces pāḷi</b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā</span></div>
   <div class="sb-tit" id="abc-tit">Saddanīti por inicial</div>
   <div class="abc" id="abc"></div>
@@ -489,7 +489,7 @@ footer a{color:var(--nila)}
     <span class="filtros gana" id="f-gana" role="group" aria-label="Filtrar por gaṇa"></span>
     <span class="filtros" id="f-skt" role="group" aria-label="Filtrar por cognado sánscrito"></span>
     <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
-      title="Ocultar el índice" aria-expanded="true">☰</button>
+      aria-expanded="true">☰</button>
     <button class="icon-btn" id="en-btn" aria-pressed="false" title="Mostrar también el inglés">EN</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
     <span class="count" id="count"></span>
@@ -1216,7 +1216,9 @@ function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
   b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
-  b.setAttribute('title', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  b.setAttribute('data-tip', oculta
+    ? 'Mostrar el índice|Vuelve a poner el índice al lado del texto.'
+    : 'Ocultar el índice|Aparta el índice y el texto ocupa su sitio.');
   b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
 }
 (function(){
