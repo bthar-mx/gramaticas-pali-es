@@ -72,6 +72,13 @@ def main():
     if os.path.exists(os.path.join(recursos, "paradigmas", "plantilla.html")):
         fallos += correr("generar_paradigmas.py")
 
+    # raíces pāḷi y sánscritas
+    # Los datos los producen extraer_raices.py, extraer_dhatupatha.py y
+    # extraer_dhatumanjusa.py a partir de los PDF, que no están en el
+    # repositorio; aquí sólo se publica lo ya extraído.
+    if os.path.exists(os.path.join(recursos, "raices", "raices.json")):
+        fallos += correr("generar_raices.py")
+
     # las tres páginas de índice — al final, porque cuentan lo ya generado
     fallos += correr("generar_indices.py")
 

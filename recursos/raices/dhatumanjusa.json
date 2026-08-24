@@ -1,0 +1,4276 @@
+{
+ "_nota": "La Kaccāyana-Dhātumañjūsā, atribuida a Sīlavaṃsa: la lista de raíces puesta en verso. Transcrita de «The Pāli Dhātupāṭha and the Dhātumañjūsā», ed. Dines Andersen y Helmer Smith, Copenhague 1921, en la transcripción de A. Ruiz-Falqués (Taunggyi, 2019). Se transcriben las estrofas tal como se imprimen, con el rango de raíces que la edición numera entre paréntesis y las notas críticas, que van numeradas por raíz. NO se separan aquí pares de raíz y significado: en el verso van encajados en el metro, y deshacerlo sería interpretar. La numeración de raíces de esta obra es la suya propia y no coincide con la del Dhātupāṭha.",
+ "fuente": {
+  "titulo": "The Pāli Dhātupāṭha and the Dhātumañjūsā",
+  "obra": "Kaccāyana-Dhātumañjūsā",
+  "autor": "Sīlavaṃsa",
+  "editores": "Dines Andersen y Helmer Smith",
+  "lugar": "Copenhague",
+  "anyo": 1921,
+  "transcripcion": "A. Ruiz-Falqués, Taunggyi, 2019"
+ },
+ "estrofas": [
+  {
+   "n": 1,
+   "versos": [
+    "Niruttinikarāpārapārāvārantagaṃ muniṃ",
+    "vanditvā Dhātumañjūsaṃ brūmi pāvacanañjasaṃ."
+   ],
+   "rangos": [],
+   "gana": null,
+   "signo": null,
+   "pagina": 24,
+   "notas": []
+  },
+  {
+   "n": 2,
+   "versos": [
+    "Sogatāgamam āgamma taṃ-taṃ-vyākaraṇāni ca",
+    "pāṭhe cāpaṭhitā p’ ettha dhātv atthā ca pavuccare;"
+   ],
+   "rangos": [],
+   "gana": null,
+   "signo": null,
+   "pagina": 24,
+   "notas": [
+    {
+     "raiz_n": null,
+     "texto": "ca vuccare, Ckbip (originally dhātū atthā ca vuccare?)."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "versos": [
+    "chandahānittham okāraṃ dhātvantānaṃ siyā kvaci,",
+    "y-ūnaṃ dīgho ca, dhātumhā pubbam atthapadaṃ api."
+   ],
+   "rangos": [],
+   "gana": null,
+   "signo": null,
+   "pagina": 24,
+   "notas": []
+  },
+  {
+   "n": 4,
+   "versos": [
+    "bhū sattāyaṃ paca pāke",
+    "gamu sappa gatimhi ca. —",
+    "silokadhātu saṃghāte",
+    "saki saṃkāya vattate"
+   ],
+   "rangos": [
+    [
+     1,
+     4
+    ],
+    [
+     5,
+     6
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 24,
+   "notas": []
+  },
+  {
+   "n": 5,
+   "versos": [
+    "atho kuka vak’ ādāne",
+    "ke sadde aki lakkhaṇe",
+    "ku sadde kucchite ṭaṃka",
+    "dāraṇe maki maṇḍane"
+   ],
+   "rangos": [
+    [
+     7,
+     10
+    ],
+    [
+     11,
+     13
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 24,
+   "notas": []
+  },
+  {
+   "n": 6,
+   "versos": [
+    "vaki koṭilla-yātrāsu",
+    "sakka-ṭīkadvayaṃ gate",
+    "kaki lolattane yāte",
+    "takīdhātu gatādisu. —"
+   ],
+   "rangos": [
+    [
+     14,
+     16
+    ],
+    [
+     17,
+     18
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 24,
+   "notas": [
+    {
+     "raiz_n": 14,
+     "texto": "vaṃka koṭilyātāsu, Cp."
+    },
+    {
+     "raiz_n": 18,
+     "texto": "takīdhā gatādisu, Ckbp; takī- dha gatādisu, Ci; takī idha gatādisu, KD."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "versos": [
+    "Ikkho tu dassan’-aṃkesu",
+    "khi khaye kaṃkha kaṃkhane",
+    "cakkha dasse cikkha vāce,",
+    "dikkhôpanaya-muṇḍiya-"
+   ],
+   "rangos": [
+    [
+     19,
+     21
+    ],
+    [
+     22,
+     24
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": [
+    {
+     "raiz_n": 20,
+     "texto": "khī, KD."
+    },
+    {
+     "raiz_n": 24,
+     "texto": "-muṇḍisuvatādesesu, KD."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "versos": [
+    "vatādesesu niyame",
+    "bhakkhādanamhi bhikkha ca",
+    "yāce rakkho rakkhaṇamhi",
+    "sikkho vijjaggahe tathā. —"
+   ],
+   "rangos": [
+    [
+     25,
+     26
+    ],
+    [
+     27,
+     28
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": []
+  },
+  {
+   "n": 9,
+   "versos": [
+    "aggo tu gatikoṭille",
+    "laga saṅge mag’ esane",
+    "agī igī rigi ligī",
+    "vagi gatyatthadhātavo. —"
+   ],
+   "rangos": [
+    [
+     29,
+     31
+    ],
+    [
+     32,
+     36
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": []
+  },
+  {
+   "n": 10,
+   "versos": [
+    "silāgha katthane jaggha",
+    "hasane aggha agghane",
+    "sighi āghāyane hoti",
+    "laghi sosa-gatīsu ca. —"
+   ],
+   "rangos": [
+    [
+     37,
+     39
+    ],
+    [
+     40,
+     41
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": [
+    {
+     "raiz_n": 41,
+     "texto": "sosaṇa-gatīsu, Cp."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "versos": [
+    "vaca vyattavace yāca",
+    "yācane ruca dittiyaṃ",
+    "suca soke kuca sadde",
+    "atho vica vivecane"
+   ],
+   "rangos": [
+    [
+     42,
+     44
+    ],
+    [
+     45,
+     47
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": []
+  },
+  {
+   "n": 12,
+   "versos": [
+    "añca pūjā-gate vañca",
+    "gamane kiñcāvamaddane",
+    "luñcāpanayane nacca",
+    "naccane maca rocane"
+   ],
+   "rangos": [
+    [
+     48,
+     50
+    ],
+    [
+     51,
+     53
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": []
+  },
+  {
+   "n": 13,
+   "versos": [
+    "accāccane cu cavane",
+    "saco tu samavāyane",
+    "paca yāte kaci vacca",
+    "dittiyaṃ maci dhāraṇe. —"
+   ],
+   "rangos": [
+    [
+     54,
+     56
+    ],
+    [
+     57,
+     60
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 25,
+   "notas": [
+    {
+     "raiz_n": 56,
+     "texto": "sace, Ckbip."
+    },
+    {
+     "raiz_n": 59,
+     "texto": "ditti, Ckbi; dittā, Cp."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "versos": [
+    "puccha sampucchane muccha",
+    "mohasmiṃ lañcha lakkhaṇe",
+    "añch’ āyāme bhave puñcha",
+    "puñchane uñcha uñchane"
+   ],
+   "rangos": [
+    [
+     61,
+     63
+    ],
+    [
+     64,
+     66
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": [
+    {
+     "raiz_n": 63,
+     "texto": "lañchi, Ckbip."
+    },
+    {
+     "raiz_n": 66,
+     "texto": "uñchi, Cbip; añchi añchane, Ck."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "versos": [
+    "taccho tanukriye piñcha",
+    "piñchane. — rāja dittiyaṃ",
+    "vajāja gamane rañja",
+    "rāge bhañjāvamaddane"
+   ],
+   "rangos": [
+    [
+     67,
+     69
+    ],
+    [
+     70,
+     73
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": []
+  },
+  {
+   "n": 16,
+   "versos": [
+    "añju vyatti-gatī-kanti-",
+    "makkhaṇesv eja kampane",
+    "bhaja saṃsevane sañja",
+    "saṅge tu iñja kampane"
+   ],
+   "rangos": [
+    [
+     74,
+     75
+    ],
+    [
+     76,
+     78
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": []
+  },
+  {
+   "n": 17,
+   "versos": [
+    "yaja devaccane dāna-",
+    "saṅgatīkaraṇesu ca",
+    "tijja kkhamā-nisānesu",
+    "bandhe pi caja hāniyaṃ"
+   ],
+   "rangos": [
+    [
+     79,
+     79
+    ],
+    [
+     80,
+     81
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": [
+    {
+     "raiz_n": 80,
+     "texto": "kkhama- Cki KD; handhe or khandhe (?), both readings equally ob- scure."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "versos": [
+    "sañj’ āliṅgana-vissagga-",
+    "nimmāne mujja mujjane",
+    "majja saṃsuddhiyaṃ lajja",
+    "lajjane tajja tajjane"
+   ],
+   "rangos": [
+    [
+     82,
+     83
+    ],
+    [
+     84,
+     86
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": [
+    {
+     "raiz_n": 82,
+     "texto": "saj’, KD."
+    },
+    {
+     "raiz_n": 84,
+     "texto": "mañja, Cb."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "versos": [
+    "ajja sajjājjane sajja",
+    "nimmāne gajja saddane",
+    "guja-kūjadvayaṃ sadde",
+    "avyatte khajja bhakkhaṇe"
+   ],
+   "rangos": [
+    [
+     87,
+     90
+    ],
+    [
+     91,
+     93
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": []
+  },
+  {
+   "n": 20,
+   "versos": [
+    "bhajja pāke viji bhaye",
+    "calane vīja vījane",
+    "khaji gamanavekalle",
+    "ji jaye ju jave siyā. —"
+   ],
+   "rangos": [
+    [
+     94,
+     96
+    ],
+    [
+     97,
+     99
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 26,
+   "notas": []
+  },
+  {
+   "n": 21,
+   "versos": [
+    "jhe cintāy’ ujjha ussagge. –",
+    "gamane aṭa-paṭadvayaṃ",
+    "naṭa nacce raṭa pari-",
+    "bhāsane vaṭa veṭhane"
+   ],
+   "rangos": [
+    [
+     100,
+     103
+    ],
+    [
+     104,
+     106
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 27,
+   "notas": [
+    {
+     "raiz_n": 106,
+     "texto": "veṭha veṭhane, Cki."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "versos": [
+    "vaṭṭa āvattane vaṇṭa",
+    "vaṇṭatthe kaṭa maddane",
+    "phuṭo vikasanādīsu",
+    "kaṭa saṃvaraṇe gate"
+   ],
+   "rangos": [
+    [
+     107,
+     109
+    ],
+    [
+     110,
+     111
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 27,
+   "notas": [
+    {
+     "raiz_n": 110,
+     "texto": "visaṇhādīsu, Cb; visaraṇādīsu, KD."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "versos": [
+    "ghuṭa ghose patighāte",
+    "ciṭ’ akkose ca pesane",
+    "bhaṭa bhatyaṃ kuṭa koṭṭa",
+    "cchedane luṭa loṭane"
+   ],
+   "rangos": [
+    [
+     112,
+     113
+    ],
+    [
+     114,
+     117
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 27,
+   "notas": [
+    {
+     "raiz_n": 115,
+     "texto": "kuṭṭa, Cb (omitting koṭṭa)."
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "versos": [
+    "jaṭa jhaṭa piṭa saṃghāte",
+    "ciṭ’ uttāse ghaṭ’ īhane",
+    "ghaṭi saṃghaṭṭane cuṭa",
+    "chedane muṭa maddane"
+   ],
+   "rangos": [
+    [
+     118,
+     122
+    ],
+    [
+     123,
+     125
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 27,
+   "notas": [
+    {
+     "raiz_n": 124,
+     "texto": "cheda, Ckbi; kaccha, Cp;"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "versos": [
+    "paṭha vyattavace heṭha",
+    "bādhāyaṃ veṭha veṭhane",
+    "suṭhī-kuṭhīdvayaṃ ghose",
+    "pīṭha hiṃsana-dhāraṇe"
+   ],
+   "rangos": [
+    [
+     126,
+     128
+    ],
+    [
+     129,
+     131
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 27,
+   "notas": []
+  },
+  {
+   "n": 26,
+   "versos": [
+    "kaṭha sosana-pākesu",
+    "vaṭha thūlattane bhave",
+    "kaṭhi soke ruṭha luṭho-",
+    "paghāte saṭha ketave",
+    "taṭṭa, KD; cf. W. 28,84. — 133. mūlattane, Ckbip KD; KD gives thūla-",
+    "ttane in the corrections. — 134. sose, Ckbip KD; cf. ; vide W. 8,11."
+   ],
+   "rangos": [
+    [
+     132,
+     133
+    ],
+    [
+     134,
+     137
+    ],
+    [
+     132,
+     132
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 27,
+   "notas": []
+  },
+  {
+   "n": 27,
+   "versos": [
+    "siyā haṭha balakkāre —",
+    "kaḍi bhede khaḍi cchide",
+    "maṇḍa vibhūsane caṇḍa",
+    "caṇḍikke bhaḍi bhaṇḍane"
+   ],
+   "rangos": [
+    [
+     138,
+     140
+    ],
+    [
+     141,
+     143
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": []
+  },
+  {
+   "n": 28,
+   "versos": [
+    "paḍi uppaṇḍane liṅga-",
+    "vekalle muḍi khaṇḍane",
+    "gaḍi vattekadesamhi",
+    "gaḍi sannicaye pi ca"
+   ],
+   "rangos": [
+    [
+     144,
+     145
+    ],
+    [
+     146,
+     147
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": []
+  },
+  {
+   "n": 29,
+   "versos": [
+    "raḍi eraḍi hiṃsāyaṃ",
+    "piḍi saṃghātaādisu",
+    "kuḍi dāhe paḍi gate",
+    "hiṇḍa āhiṇḍane siyā"
+   ],
+   "rangos": [
+    [
+     148,
+     150
+    ],
+    [
+     151,
+     153
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": []
+  },
+  {
+   "n": 30,
+   "versos": [
+    "karaṇḍa bhājanatthe ca",
+    "atho laḍi jigucchane",
+    "vattate meḍi koṭille",
+    "saḍi sumbattha-m-īraṇe"
+   ],
+   "rangos": [
+    [
+     154,
+     155
+    ],
+    [
+     156,
+     157
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": [
+    {
+     "raiz_n": 154,
+     "texto": "kara(ṇ)ḍi, Ckbip; bhājanatthamhi, KD (omitting ca)."
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "versos": [
+    "atho pi aṇḍa aṇḍatthe",
+    "dissate tuḍi toḍane —",
+    "vaḍḍha saṃvaḍḍhane kaḍḍha",
+    "kaḍḍhane. — bhaṇa bhāsane"
+   ],
+   "rangos": [
+    [
+     158,
+     159
+    ],
+    [
+     160,
+     162
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": [
+    {
+     "raiz_n": 158,
+     "texto": "aḍi, KD."
+    },
+    {
+     "raiz_n": 159,
+     "texto": "to(ṇ)ḍi. Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "versos": [
+    "soṇa vaṇṇe guṇ’ abhyāse",
+    "iṇa-pheṇadvayaṃ gate",
+    "paṇa vohāra-thomesu",
+    "vattate kaṇa mīlane"
+   ],
+   "rangos": [
+    [
+     163,
+     166
+    ],
+    [
+     167,
+     168
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": []
+  },
+  {
+   "n": 33,
+   "versos": [
+    "aṇa raṇa kaṇa maṇa kvaṇa kuṇa sadde. —",
+    "yata patiyatane juta dittimhi",
+    "ata pata gamane cita saññāṇe",
+    "kita vāsādo vatu vatthumhi. —"
+   ],
+   "rangos": [
+    [
+     169,
+     174
+    ],
+    [
+     175,
+     176
+    ],
+    [
+     177,
+     179
+    ],
+    [
+     180,
+     181
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 28,
+   "notas": [
+    {
+     "raiz_n": 181,
+     "texto": "vattumhi, Ckbip KD."
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "versos": [
+    "bhave kattha silāghāyaṃ",
+    "matha mantha viloṭane",
+    "nātha yācana-santāpa-",
+    "isserāsiṃsanesu ca"
+   ],
+   "rangos": [
+    [
+     182,
+     184
+    ],
+    [
+     185,
+     185
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 29,
+   "notas": [
+    {
+     "raiz_n": 184,
+     "texto": "viloṭane, so Ckbip KD; cf. Dhp. 127. —"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "versos": [
+    "patha ve puthu vitthāre",
+    "vyatha bhīti-calesu ca",
+    "gotthu vaṃse patha pantha",
+    "gate. — nanda samiddhiyaṃ"
+   ],
+   "rangos": [
+    [
+     186,
+     188
+    ],
+    [
+     189,
+     192
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 29,
+   "notas": [
+    {
+     "raiz_n": 186,
+     "texto": "putha, Ckbip KD; cf. (532-33)."
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "versos": [
+    "vandābhivāda-thomesu",
+    "vada vyattavace pi ca",
+    "atho ninda garahāyaṃ",
+    "khadi pakkhandanādisu"
+   ],
+   "rangos": [
+    [
+     193,
+     194
+    ],
+    [
+     195,
+     196
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 29,
+   "notas": [
+    {
+     "raiz_n": 194,
+     "texto": "gada, Ckbip KD, but cf. (222). —"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "versos": [
+    "phadī tu kiñcicalane",
+    "cadi kanti-hilādane",
+    "kilidī paridevādo",
+    "udi ssava-kiledane"
+   ],
+   "rangos": [
+    [
+     197,
+     198
+    ],
+    [
+     199,
+     200
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 29,
+   "notas": []
+  },
+  {
+   "n": 38,
+   "versos": [
+    "idī tu paramissariye",
+    "adī adi ca bandhane",
+    "bhaganda secane hoti",
+    "bhadi kalyāṇakammani"
+   ],
+   "rangos": [
+    [
+     201,
+     203
+    ],
+    [
+     204,
+     205
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 29,
+   "notas": [
+    {
+     "raiz_n": 202,
+     "texto": "So Ckbip; adi andu ca, KD !"
+    },
+    {
+     "raiz_n": 205,
+     "texto": "bhadda, Cp KD."
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "versos": [
+    "sida siṅgāra-pākesu",
+    "saddu haritase siyā",
+    "madi balye muda-madā",
+    "santose madda maddane"
+   ],
+   "rangos": [
+    [
+     206,
+     207
+    ],
+    [
+     208,
+     211
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 29,
+   "notas": [
+    {
+     "raiz_n": 207,
+     "texto": "So Cki; harita-ghosiyā, Cbp; haritaghosane, KD (in the index -sosane)."
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "versos": [
+    "sandu passavanādīsu",
+    "kand’ avhāne ca rodane",
+    "vida lābhe dada dāne",
+    "rudi assuvimocane"
+   ],
+   "rangos": [
+    [
+     212,
+     213
+    ],
+    [
+     214,
+     216
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": []
+  },
+  {
+   "n": 41,
+   "versos": [
+    "sado visaraṇ’-ādāna-",
+    "gamane cāvasādane",
+    "hilādi tu sukhe sūda",
+    "kkharaṇe rada vilekhane"
+   ],
+   "rangos": [
+    [
+     217,
+     217
+    ],
+    [
+     218,
+     220
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": [
+    {
+     "raiz_n": 218,
+     "texto": "hilādi, Mss., hiḷāda, KD."
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "versos": [
+    "sāda assādanādīsu",
+    "gada vyattavace pi ca",
+    "nada avyattasadde tu",
+    "radāda khāda bhakkhaṇe"
+   ],
+   "rangos": [
+    [
+     221,
+     222
+    ],
+    [
+     223,
+     226
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": []
+  },
+  {
+   "n": 43,
+   "versos": [
+    "adda yācana-yātrādisv",
+    "atho mida sinehane",
+    "siyā khuda jighacchāyaṃ",
+    "dalidda duggatimhi tu"
+   ],
+   "rangos": [
+    [
+     227,
+     228
+    ],
+    [
+     229,
+     230
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": [
+    {
+     "raiz_n": 230,
+     "texto": "duggaccaṃ hi tu, KD."
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "versos": [
+    "dā dāve du gatīvuddhyaṃ",
+    "dā dāne pi da sodhane",
+    "tanda ālasiye. — bādha",
+    "bādhāyaṃ gudha rosane"
+   ],
+   "rangos": [
+    [
+     231,
+     234
+    ],
+    [
+     235,
+     237
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": [
+    {
+     "raiz_n": 234,
+     "texto": "Instead of pi da Cb has devidā and Cp vidha; vida jānane, KD."
+    },
+    {
+     "raiz_n": 235,
+     "texto": "tadi, KD."
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "versos": [
+    "atho gādha patiṭṭhāyaṃ",
+    "vudhu edha ca vuddhiyaṃ",
+    "dhā hoti dhāraṇe ceti",
+    "cetiyaṃ budha bodhane"
+   ],
+   "rangos": [
+    [
+     238,
+     240
+    ],
+    [
+     241,
+     242
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": [
+    {
+     "raiz_n": 241,
+     "texto": "So Cbip; Ck omits ceti; c’ eva cintāyaṃ, KD."
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "versos": [
+    "sidhu gatimhi yuddha sam-",
+    "pahāre vidha vedhane",
+    "rādha hiṃsāya saṃrādhe",
+    "badha bandha ca bandhane"
+   ],
+   "rangos": [
+    [
+     243,
+     245
+    ],
+    [
+     246,
+     248
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 30,
+   "notas": [
+    {
+     "raiz_n": 247,
+     "texto": "vadha, Cb."
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "versos": [
+    "idha sādha ca siddhimhi",
+    "māna pūjāya vana ⟨sana⟩sam-",
+    "dhe pāne indha dittiyaṃ. —",
+    "bhattiyaṃ ana pāṇane",
+    "kana ditti-gati-kantīsu",
+    "khane khanv āvadāraṇe. —"
+   ],
+   "rangos": [
+    [
+     249,
+     252
+    ],
+    [
+     253,
+     256
+    ],
+    [
+     257,
+     259
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 31,
+   "notas": [
+    {
+     "raiz_n": 252,
+     "texto": "indhi, Ckb."
+    },
+    {
+     "raiz_n": 255,
+     "texto": "⟨sana⟩ omitted in Cki; na sana instead of vana sana, Cp; sambhame, Ckbip KD; cf. Dhp. 175."
+    },
+    {
+     "raiz_n": 257,
+     "texto": "-kantyaṃ, KD."
+    },
+    {
+     "raiz_n": 258,
+     "texto": "So KD !; khanu khanv āvadāraṇe, Ckbip; cf. Dhp. 178."
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "versos": [
+    "gupa gopanake gupa saṃvaraṇe",
+    "tapa santāpe tapa issariye",
+    "cupa mandagate tapu ubbege",
+    "rapa lapa vākye sapa akkose"
+   ],
+   "rangos": [
+    [
+     260,
+     261
+    ],
+    [
+     262,
+     263
+    ],
+    [
+     264,
+     265
+    ],
+    [
+     266,
+     268
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 31,
+   "notas": []
+  },
+  {
+   "n": 49,
+   "versos": [
+    "japa jappa vace vyatte",
+    "tappa santappane siyā",
+    "kapi kiñcicale kappa",
+    "sāmatthe vepu kampane"
+   ],
+   "rangos": [
+    [
+     269,
+     271
+    ],
+    [
+     272,
+     274
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 31,
+   "notas": []
+  },
+  {
+   "n": 50,
+   "versos": [
+    "kappa santagate chede",
+    "takke hiṃsādisūccate",
+    "vapa bījavinikkhepe",
+    "dhūpa santāpane pi ca"
+   ],
+   "rangos": [
+    [
+     275,
+     275
+    ],
+    [
+     276,
+     277
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 31,
+   "notas": [
+    {
+     "raiz_n": 275,
+     "texto": "tappa, Ckbip KD."
+    },
+    {
+     "raiz_n": 277,
+     "texto": "santagate, Cki; santappane, Cp; santapane, KD."
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "versos": [
+    "capa sāntve pu pavane",
+    "jhapa dāhe supo saye. —",
+    "puppha vikasane hoti. —",
+    "rabi laby avasaṃsane"
+   ],
+   "rangos": [
+    [
+     278,
+     281
+    ],
+    [
+     282,
+     284
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 31,
+   "notas": [
+    {
+     "raiz_n": 283,
+     "texto": "ramba lamb’, Ck KD; ramba laby, Ci."
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "versos": [
+    "cumba vadanasaṃyoge",
+    "kamba saṃvaraṇe mato",
+    "amba sadde ca assāde",
+    "tāyane sabi maṇḍane"
+   ],
+   "rangos": [
+    [
+     285,
+     286
+    ],
+    [
+     287,
+     288
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": [
+    {
+     "raiz_n": 285,
+     "texto": "cubi, Cb."
+    },
+    {
+     "raiz_n": 286,
+     "texto": "kabī, Cb(p)."
+    },
+    {
+     "raiz_n": 287,
+     "texto": "abi, Cb(p)."
+    }
+   ]
+  },
+  {
+   "n": 53,
+   "versos": [
+    "gabba dappe’ bba-sabbā pi",
+    "gamane pubba pūraṇe",
+    "gumb’ abba gumbane cabba",
+    "adane ubba dhāraṇe."
+   ],
+   "rangos": [
+    [
+     289,
+     292
+    ],
+    [
+     293,
+     296
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": []
+  },
+  {
+   "n": 54,
+   "versos": [
+    "labha lābhe jabhī gatta-",
+    "vināme subha sobhane",
+    "bhī bhaye rabha rābhasse",
+    "cārambhe khubha sañcale"
+   ],
+   "rangos": [
+    [
+     297,
+     299
+    ],
+    [
+     300,
+     302
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": [
+    {
+     "raiz_n": 298,
+     "texto": "jambha, Cki."
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "versos": [
+    "thabhī khabhī patibandhe",
+    "gabbha pāgabbhiye vadhe",
+    "sumbha saṃsumbhane sambha",
+    "vissāse yabha methune"
+   ],
+   "rangos": [
+    [
+     303,
+     305
+    ],
+    [
+     306,
+     308
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": [
+    {
+     "raiz_n": 303,
+     "texto": "thambha khambha, KD."
+    },
+    {
+     "raiz_n": 307,
+     "texto": "sambhu, Cbp."
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "versos": [
+    "dubha jigiṃsane dambha",
+    "ganthane udrabhādane. —",
+    "kamū tu padavikkhepe",
+    "khamū tu sahane siyā"
+   ],
+   "rangos": [
+    [
+     309,
+     311
+    ],
+    [
+     312,
+     313
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": []
+  },
+  {
+   "n": 57,
+   "versos": [
+    "bhamu tu anavaṭṭhāne",
+    "vamu uggiraṇādisu",
+    "kilamu klamu gilāne dve",
+    "ramu kīḷāyam īrito"
+   ],
+   "rangos": [
+    [
+     314,
+     315
+    ],
+    [
+     316,
+     318
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": [
+    {
+     "raiz_n": 314,
+     "texto": "tu is Fausbøll’s conjecture; Cp KD give bhamu anavaṭṭhāne ca; Ckbi only: bhamu anavaṭṭhāne."
+    },
+    {
+     "raiz_n": 317,
+     "texto": "gelaññe, KD. omitting dve."
+    }
+   ]
+  },
+  {
+   "n": 58,
+   "versos": [
+    "damo dame-nama name",
+    "atho sama parissame",
+    "yamu uparame nāse",
+    "ama yāte mu bandhane"
+   ],
+   "rangos": [
+    [
+     319,
+     321
+    ],
+    [
+     322,
+     324
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 32,
+   "notas": []
+  },
+  {
+   "n": 59,
+   "versos": [
+    "dhamo pumo ca dhamane",
+    "tama saṃkā-vibhūsane",
+    "dhuma thima ca saṃghāte",
+    "tama sāntve-vasādiye. —"
+   ],
+   "rangos": [
+    [
+     325,
+     327
+    ],
+    [
+     328,
+     330
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 33,
+   "notas": []
+  },
+  {
+   "n": 60,
+   "versos": [
+    "ayo vayo paya mayo",
+    "nayo raya gatimhi ca",
+    "daya dāna-gatī-rakkhā-",
+    "hiṃsādisu yu missane"
+   ],
+   "rangos": [
+    [
+     331,
+     336
+    ],
+    [
+     337,
+     338
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 33,
+   "notas": []
+  },
+  {
+   "n": 61,
+   "versos": [
+    "cāyu sampūjane tāyu",
+    "santāne pāyu vuddhiyaṃ",
+    "atho usūya dosāvi-",
+    "karaṇe sāya sāyane. —"
+   ],
+   "rangos": [
+    [
+     339,
+     341
+    ],
+    [
+     342,
+     343
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 33,
+   "notas": [
+    {
+     "raiz_n": 341,
+     "texto": "vāyu, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 62,
+   "versos": [
+    "tara taraṇasmiṃ thara santharaṇe",
+    "bhara bharaṇasmiṃ phara sampharaṇe",
+    "sara gati-cintā-hiṃsā-sadde",
+    "phura calanādo hara haraṇamhi"
+   ],
+   "rangos": [
+    [
+     344,
+     345
+    ],
+    [
+     346,
+     347
+    ],
+    [
+     348,
+     348
+    ],
+    [
+     349,
+     350
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 33,
+   "notas": [
+    {
+     "raiz_n": 350,
+     "texto": "haraṇasmiṃ, KD."
+    }
+   ]
+  },
+  {
+   "n": 63,
+   "versos": [
+    "ri santatismiṃ ru gate ru sadde",
+    "khura cchidasmiṃ dhara dhāraṇamhi",
+    "jara jīraṇatthe mara pāṇacāge",
+    "khara seka-nāse ghara secanamhi"
+   ],
+   "rangos": [
+    [
+     351,
+     353
+    ],
+    [
+     354,
+     355
+    ],
+    [
+     356,
+     357
+    ],
+    [
+     358,
+     359
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 33,
+   "notas": [
+    {
+     "raiz_n": 358,
+     "texto": "seca-nāse, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 64,
+   "versos": [
+    "garo nigaraṇe seke",
+    "dara dāhe vidāraṇe",
+    "cara gati-bhakkhaṇesu",
+    "vara saṃvaraṇādisu"
+   ],
+   "rangos": [
+    [
+     360,
+     361
+    ],
+    [
+     362,
+     363
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 33,
+   "notas": [
+    {
+     "raiz_n": 361,
+     "texto": "ḍāhe, Cbp KD."
+    }
+   ]
+  },
+  {
+   "n": 65,
+   "versos": [
+    "chara cchede ara nāse",
+    "gate ca pūra pūraṇe",
+    "kur’ akkose nara naye",
+    "jāgara supinakkhaye. —"
+   ],
+   "rangos": [
+    [
+     364,
+     366
+    ],
+    [
+     367,
+     369
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": []
+  },
+  {
+   "n": 66,
+   "versos": [
+    "pilu-palū sala-hulā",
+    "gatyatthā cala kampane",
+    "khala sañcalane phulla",
+    "vikāse jala dittiyaṃ"
+   ],
+   "rangos": [
+    [
+     370,
+     374
+    ],
+    [
+     375,
+     377
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": []
+  },
+  {
+   "n": 67,
+   "versos": [
+    "phala nipphattiyaṃ hoti",
+    "dala ditti-vidāraṇe",
+    "dala duggatiyaṃ nīla",
+    "vaṇṇe mīla nimīlane"
+   ],
+   "rangos": [
+    [
+     378,
+     379
+    ],
+    [
+     380,
+     382
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": []
+  },
+  {
+   "n": 68,
+   "versos": [
+    "sīla samādhimhi kīla",
+    "bandhe gala gilādane",
+    "kūla āvaraṇe sūla",
+    "rujāyaṃ bala pāṇane"
+   ],
+   "rangos": [
+    [
+     383,
+     386
+    ],
+    [
+     387,
+     389
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": []
+  },
+  {
+   "n": 69,
+   "versos": [
+    "tala mūla patiṭṭhāyaṃ",
+    "vala valla nivāraṇe",
+    "palla ninne ca gamane",
+    "mala malla ca dhāraṇe"
+   ],
+   "rangos": [
+    [
+     390,
+     393
+    ],
+    [
+     394,
+     396
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": [
+    {
+     "raiz_n": 392,
+     "texto": "bala balla, Ckbip."
+    },
+    {
+     "raiz_n": 396,
+     "texto": "mallavadhāraṇe, Ckbip KD."
+    }
+   ]
+  },
+  {
+   "n": 70,
+   "versos": [
+    "vattate khila kāṭhinne,",
+    "kalile ala-kaladvayaṃ",
+    "vella saṃharaṇe kalla",
+    "saddane ali bandhane"
+   ],
+   "rangos": [
+    [
+     397,
+     399
+    ],
+    [
+     400,
+     402
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": []
+  },
+  {
+   "n": 71,
+   "versos": [
+    "culla hāvakriye thūla",
+    "kassane cula maddane",
+    "vattate khala soceyye",
+    "pala rakkhā-gate pi ca"
+   ],
+   "rangos": [
+    [
+     403,
+     405
+    ],
+    [
+     406,
+     407
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 34,
+   "notas": [
+    {
+     "raiz_n": 404,
+     "texto": "thūlākassane, KD."
+    },
+    {
+     "raiz_n": 405,
+     "texto": "So Ckbip KD (i.e. majjane? W. 32,62 v.l.)."
+    },
+    {
+     "raiz_n": 406,
+     "texto": "So KD; Ckbip only; vattate kūla pala gate pi ca."
+    }
+   ]
+  },
+  {
+   "n": 72,
+   "versos": [
+    "kelu khelu celu pelu",
+    "velu sañcalanādisu. —",
+    "ava rakkhaṇe jīva pāṇa-",
+    "dhāraṇe tu plavo gate"
+   ],
+   "rangos": [
+    [
+     408,
+     412
+    ],
+    [
+     413,
+     415
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 35,
+   "notas": [
+    {
+     "raiz_n": 408,
+     "texto": "kela khela cela pela vela. KD."
+    },
+    {
+     "raiz_n": 411,
+     "texto": "belu, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 73,
+   "versos": [
+    "kaṇḍūvanamhi kaṇḍūvo",
+    "saraṇe chedane davo",
+    "davo tu davane devu",
+    "devane sevu sevane"
+   ],
+   "rangos": [
+    [
+     416,
+     417
+    ],
+    [
+     418,
+     420
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 35,
+   "notas": [
+    {
+     "raiz_n": 417,
+     "texto": "saraṇā(/a)-jetane, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 74,
+   "versos": [
+    "dhāvu gamanavuddhimhi",
+    "paṭhito dhovu dhovane",
+    "ve vi dve tantusantāne",
+    "ve vu saṃvaraṇe siyuṃ",
+    "hvo avhāne kevu seke",
+    "dhuva yātrā-thiresu ca. —"
+   ],
+   "rangos": [
+    [
+     421,
+     422
+    ],
+    [
+     423,
+     426
+    ],
+    [
+     427,
+     429
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 35,
+   "notas": [
+    {
+     "raiz_n": 428,
+     "texto": "keva, Ckbi KD; seke (Ckbip KD) ∂: seeane mistaken for sevane (?), W. 14,30."
+    }
+   ]
+  },
+  {
+   "n": 75,
+   "versos": [
+    "asa gasa adane ghasa adanasmiṃ",
+    "isa pariyese isu icchāyaṃ",
+    "sasu pāṇana-gati-hiṃsādyatthe",
+    "masa āmasane musa sammose"
+   ],
+   "rangos": [
+    [
+     430,
+     432
+    ],
+    [
+     433,
+     434
+    ],
+    [
+     435,
+     435
+    ],
+    [
+     436,
+     437
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 35,
+   "notas": []
+  },
+  {
+   "n": 76,
+   "versos": [
+    "kusa akkose dusa appīte",
+    "tusa santose pusa posamhi",
+    "rusa ālepe rusa hiṃsāyaṃ",
+    "masu macchere usu dāhe pi"
+   ],
+   "rangos": [
+    [
+     438,
+     439
+    ],
+    [
+     440,
+     441
+    ],
+    [
+     442,
+     443
+    ],
+    [
+     444,
+     445
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 35,
+   "notas": []
+  },
+  {
+   "n": 77,
+   "versos": [
+    "hasa hasanasmiṃ ghusa saddasmiṃ",
+    "tasa ubbege trasa ubbege",
+    "lasa kantyatthe rasa assāde",
+    "puna bhasa bhasmīkaraṇe cāpi"
+   ],
+   "rangos": [
+    [
+     446,
+     447
+    ],
+    [
+     448,
+     449
+    ],
+    [
+     450,
+     451
+    ],
+    [
+     452,
+     452
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 35,
+   "notas": [
+    {
+     "raiz_n": 448,
+     "texto": "tasu, Cbp."
+    },
+    {
+     "raiz_n": 449,
+     "texto": "trasu, Cbp."
+    }
+   ]
+  },
+  {
+   "n": 78,
+   "versos": [
+    "gavesa maggane paṃsa",
+    "nāsane disa pekkhaṇe",
+    "sāsānusiṭṭhiyaṃ hasa",
+    "pītiyaṃ pasa bandhane"
+   ],
+   "rangos": [
+    [
+     453,
+     455
+    ],
+    [
+     456,
+     458
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 36,
+   "notas": [
+    {
+     "raiz_n": 457,
+     "texto": "haṃsa, KD; haṇa saṃpītiyaṃ, Cp."
+    },
+    {
+     "raiz_n": 458,
+     "texto": "pāsa, Cp KD."
+    }
+   ]
+  },
+  {
+   "n": 79,
+   "versos": [
+    "saṃsa pasaṃsane issa",
+    "issāyaṃ kassa kassane",
+    "dhaṃsa padhaṃsane siṃsa",
+    "icchāyaṃ ghaṃsa ghaṃsane"
+   ],
+   "rangos": [
+    [
+     459,
+     461
+    ],
+    [
+     462,
+     464
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 36,
+   "notas": [
+    {
+     "raiz_n": 462,
+     "texto": "pasaṃsane, Ckbip; cf., however, W. 18,15–16."
+    }
+   ]
+  },
+  {
+   "n": 80,
+   "versos": [
+    "ḍaṃsa-daṃsā tu dasane",
+    "bhāsa vācāya dittiyaṃ",
+    "siyā bhūsa alaṃkāre",
+    "atho āsūpavesane"
+   ],
+   "rangos": [
+    [
+     465,
+     467
+    ],
+    [
+     468,
+     469
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 36,
+   "notas": []
+  },
+  {
+   "n": 81,
+   "versos": [
+    "vasa kanti-nivāsesu",
+    "vassa secana-saddane",
+    "kisa sāne kasa gate",
+    "kasa hiṃsā-vilekhane"
+   ],
+   "rangos": [
+    [
+     470,
+     471
+    ],
+    [
+     472,
+     474
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 36,
+   "notas": []
+  },
+  {
+   "n": 82,
+   "versos": [
+    "disātisajjanādīsu",
+    "kāsa dittimhi saddane",
+    "duve dhātū khasa jhasa",
+    "hiṃsāyaṃ misa mīlane"
+   ],
+   "rangos": [
+    [
+     475,
+     476
+    ],
+    [
+     477,
+     479
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 36,
+   "notas": []
+  },
+  {
+   "n": 83,
+   "versos": [
+    "su hiṃsā-kulasandhāna-",
+    "yātrādisu su passave",
+    "su sadde su pasavane",
+    "si saye ca si sevane. —"
+   ],
+   "rangos": [
+    [
+     480,
+     481
+    ],
+    [
+     482,
+     485
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 36,
+   "notas": [
+    {
+     "raiz_n": 483,
+     "texto": "savane, Cki (Ci inserting sadde before 482. su); Cp inserts hi after pasavane."
+    }
+   ]
+  },
+  {
+   "n": 84,
+   "versos": [
+    "maha pūjāyāraha pūjāyaṃ",
+    "guha saṃvaraṇe liha assāde",
+    "raha cāgasmiṃ muha mucchāyaṃ",
+    "maha sattāyaṃ bahu saṃkhyāne"
+   ],
+   "rangos": [
+    [
+     486,
+     487
+    ],
+    [
+     488,
+     489
+    ],
+    [
+     490,
+     491
+    ],
+    [
+     492,
+     493
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 37,
+   "notas": []
+  },
+  {
+   "n": 85,
+   "versos": [
+    "saha kkhame daha bhasmī-",
+    "karaṇe ca patiṭṭhāyaṃ",
+    "ruha sañjanane ūha vi-",
+    "takke vaha pāpuṇane"
+   ],
+   "rangos": [
+    [
+     494,
+     495
+    ],
+    [
+     496,
+     498
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 37,
+   "notas": []
+  },
+  {
+   "n": 86,
+   "versos": [
+    "duha ppapūraṇe nāse",
+    "diho upacaye mato",
+    "nindāyaṃ garaho īha",
+    "ghaṭane miha secane"
+   ],
+   "rangos": [
+    [
+     499,
+     500
+    ],
+    [
+     501,
+     503
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 37,
+   "notas": [
+    {
+     "raiz_n": 502,
+     "texto": "ghaṭṭane, Ckbi; ghaṭa ghaṭane, Cp"
+    }
+   ]
+  },
+  {
+   "n": 87,
+   "versos": [
+    "gāhu viloḷane brūha",
+    "baha braha ca vuddhiyaṃ",
+    "vhe saddamhi hasane [ca]",
+    "hā cāge. – luḷa manthane",
+    "kīḷa vihāramhi laḷa",
+    "vilāse’me savuddhikā.",
+    "savuddhibhūvādayo."
+   ],
+   "rangos": [
+    [
+     504,
+     507
+    ],
+    [
+     508,
+     510
+    ],
+    [
+     511,
+     512
+    ]
+   ],
+   "gana": "I",
+   "signo": "a",
+   "pagina": 37,
+   "notas": [
+    {
+     "raiz_n": 504,
+     "texto": "gāha, KD."
+    },
+    {
+     "raiz_n": 508,
+     "texto": "veha, Ckbip; [ca] omitted by Ckbip KD."
+    }
+   ]
+  },
+  {
+   "n": 88,
+   "versos": [
+    "tuda vyathāyan tu nuda",
+    "khepane likha lekhane. —",
+    "kuca saṃkocane rica",
+    "kkharaṇe khaca bandhane"
+   ],
+   "rangos": [
+    [
+     513,
+     515
+    ],
+    [
+     516,
+     518
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 37,
+   "notas": []
+  },
+  {
+   "n": 89,
+   "versos": [
+    "uca sadde samavāye. —",
+    "vijī bhaya-calesu ca",
+    "vattate bhuja koṭille",
+    "valañja tu valañjane"
+   ],
+   "rangos": [
+    [
+     519,
+     520
+    ],
+    [
+     521,
+     522
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 37,
+   "notas": [
+    {
+     "raiz_n": 520,
+     "texto": "-calanesu ca, Cp."
+    },
+    {
+     "raiz_n": 522,
+     "texto": "valañjo, KD."
+    }
+   ]
+  },
+  {
+   "n": 90,
+   "versos": [
+    "bhaja sevā-puthakkāre",
+    "ruja roge. — aṭāṭane",
+    "kuṭa cchede ca koṭille",
+    "agā sajjhāyanādisu. —"
+   ],
+   "rangos": [
+    [
+     523,
+     525
+    ],
+    [
+     526,
+     526
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 38,
+   "notas": [
+    {
+     "raiz_n": 526,
+     "texto": "agā, Ckbip KD, i.e. āgā (?)."
+    }
+   ]
+  },
+  {
+   "n": 91,
+   "versos": [
+    "puṇo subhakriye. — vatta",
+    "vattane cata yācane. —",
+    "kutha pāke pūtibhāve",
+    "kutha saṃklesane pi ca"
+   ],
+   "rangos": [
+    [
+     527,
+     529
+    ],
+    [
+     530,
+     531
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 38,
+   "notas": [
+    {
+     "raiz_n": 530,
+     "texto": "putha, Ckbip KD (cf. W. 26,11)."
+    }
+   ]
+  },
+  {
+   "n": 92,
+   "versos": [
+    "ubho dhātū putha patha",
+    "vitthāre. — vida jānane",
+    "hada uccāraussagge",
+    "cintāyaṃ. — midha hiṃsane"
+   ],
+   "rangos": [
+    [
+     532,
+     534
+    ],
+    [
+     535,
+     536
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 38,
+   "notas": [
+    {
+     "raiz_n": 536,
+     "texto": "mida, Cp KD; cidha, Ckb; hida, Ci."
+    }
+   ]
+  },
+  {
+   "n": 93,
+   "versos": [
+    "nandha vinandhane. — thīna",
+    "puna saṃghātavācino. —",
+    "kapa acchādane vappa",
+    "vāraṇe khipa peraṇe"
+   ],
+   "rangos": [
+    [
+     537,
+     539
+    ],
+    [
+     540,
+     542
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 38,
+   "notas": []
+  },
+  {
+   "n": 94,
+   "versos": [
+    "supa saye chupa samphasse",
+    "vattate capa sāntvane. —",
+    "nabhadhātu vihiṃsāyaṃ",
+    "rumbha uppīḷanādisu"
+   ],
+   "rangos": [
+    [
+     543,
+     545
+    ],
+    [
+     546,
+     547
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 38,
+   "notas": [
+    {
+     "raiz_n": 544,
+     "texto": "chupo phasse, KD."
+    },
+    {
+     "raiz_n": 545,
+     "texto": "sānane, Ckbi; sāsane, Cp."
+    }
+   ]
+  },
+  {
+   "n": 95,
+   "versos": [
+    "sumbha saṃsumbhane jambha",
+    "jambhane chubha nicchubhe",
+    "ṭhubha niṭṭhubhane. — camu",
+    "adane chamu hīḷane"
+   ],
+   "rangos": [
+    [
+     548,
+     550
+    ],
+    [
+     551,
+     553
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 38,
+   "notas": [
+    {
+     "raiz_n": 552,
+     "texto": "mu, Cki."
+    }
+   ]
+  },
+  {
+   "n": 96,
+   "versos": [
+    "jhamu dāhe chamu [jamu]",
+    "adane. — iriya vattane. —",
+    "kiradhātu vikiraṇe",
+    "giro nigaraṇādisu"
+   ],
+   "rangos": [
+    [
+     554,
+     556
+    ],
+    [
+     557,
+     558
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 39,
+   "notas": [
+    {
+     "raiz_n": 558,
+     "texto": "nigiraṇādisu, KD, cf. (360)."
+    }
+   ]
+  },
+  {
+   "n": 97,
+   "versos": [
+    "phura sañcalanādīsu",
+    "kura saddādanesu ca",
+    "khura cchede vilikhane",
+    "ghura bhīme. — gilādane"
+   ],
+   "rangos": [
+    [
+     559,
+     560
+    ],
+    [
+     561,
+     563
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 39,
+   "notas": []
+  },
+  {
+   "n": 98,
+   "versos": [
+    "tila snehe cila vasane",
+    "hila hāve sil’ uñchane",
+    "bila bhede phula caye. —",
+    "kusa cchedana-pūraṇe."
+   ],
+   "rangos": [
+    [
+     564,
+     567
+    ],
+    [
+     568,
+     570
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 39,
+   "notas": [
+    {
+     "raiz_n": 565,
+     "texto": "cala, Ckbip; vane, Ckbi; vāse KD. —"
+    }
+   ]
+  },
+  {
+   "n": 99,
+   "versos": [
+    "visa ppavesa-pharaṇe",
+    "disātisajjanādisu",
+    "phusa phasse musa theyye",
+    "thusa appīkriyāya tu. —",
+    "guḷa mokkhe guḷa pari-",
+    "vattanamhi tudādayo.",
+    "tudādayo avuddhikā."
+   ],
+   "rangos": [
+    [
+     571,
+     572
+    ],
+    [
+     573,
+     575
+    ],
+    [
+     576,
+     577
+    ]
+   ],
+   "gana": "I",
+   "signo": "b",
+   "pagina": 39,
+   "notas": []
+  },
+  {
+   "n": 100,
+   "versos": [
+    "hū bhū sattāyam uccanti",
+    "i ajjhāne gatimhi ca. —",
+    "khā-khyādvayaṃ pakathane. —",
+    "ji jaye. — ñā ’vabodhane. —"
+   ],
+   "rangos": [
+    [
+     578,
+     580
+    ],
+    [
+     581,
+     584
+    ]
+   ],
+   "gana": "I",
+   "signo": "c",
+   "pagina": 39,
+   "notas": [
+    {
+     "raiz_n": 580,
+     "texto": "ajjheyaṇe (meaning ajjhene), Cp."
+    }
+   ]
+  },
+  {
+   "n": 101,
+   "versos": [
+    "ḍī ḷī vehāsagamane. —",
+    "ṭhā gatīvinivuttiyaṃ. —",
+    "[555bis jamu, our conjecture, cf. W. 13,29]. — 556. vattane pi ca, KD. —",
+    "nī pāpaṇe muna ñāṇe",
+    "hana hiṃsā-gatīsu pi. —"
+   ],
+   "rangos": [
+    [
+     585,
+     587
+    ],
+    [
+     588,
+     590
+    ]
+   ],
+   "gana": "I",
+   "signo": "c",
+   "pagina": 39,
+   "notas": [
+    {
+     "raiz_n": 587,
+     "texto": "gativinivuttiyaṃ, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 102,
+   "versos": [
+    "pā rakkhaṇamhi pā pāne. —",
+    "brū vācāyaṃ viyattiyaṃ. —",
+    "bhā dittiyaṃ. — mā pamāṇe. —",
+    "atho yā pāpuṇe siyā. —"
+   ],
+   "rangos": [
+    [
+     591,
+     593
+    ],
+    [
+     594,
+     596
+    ]
+   ],
+   "gana": "I",
+   "signo": "c",
+   "pagina": 40,
+   "notas": []
+  },
+  {
+   "n": 103,
+   "versos": [
+    "duve pi rā lā ādāne. —",
+    "vā gati-bandhanesu pi. —",
+    "asadhātu bhuvi khyāto",
+    "si saye sā samattiyaṃ.",
+    "hū-bhūvādayo luttavikaraṇā."
+   ],
+   "rangos": [
+    [
+     597,
+     599
+    ],
+    [
+     600,
+     602
+    ]
+   ],
+   "gana": "I",
+   "signo": "c",
+   "pagina": 40,
+   "notas": [
+    {
+     "raiz_n": 602,
+     "texto": "samatthiye, Ckbip KD."
+    }
+   ]
+  },
+  {
+   "n": 104,
+   "versos": [
+    "hu dāne pi ca ādāne",
+    "apy adane ca vattati",
+    "hā cāge kamu yātrāyaṃ",
+    "dā dāne dhā ca dhāraṇe.",
+    "juhotyādayo sadvibhāva-luttavikaraṇā."
+   ],
+   "rangos": [
+    [
+     603,
+     603
+    ],
+    [
+     604,
+     607
+    ]
+   ],
+   "gana": "I",
+   "signo": "d",
+   "pagina": 40,
+   "notas": [
+    {
+     "raiz_n": 603,
+     "texto": "avyadāne, Ckip; avyavadāne, Cb; abyadāne, KD (but in the corrections: abhyādāne!); our conjecture is founded upon W. 25,1; from a metrical point of view we should expect: hu dāne pi ca adane apy ādāne ca vattati; or avyadāne = habyadāne (?). 613. bhuja pā bhojane, Cbp, Cp adding pi ca."
+    }
+   ]
+  },
+  {
+   "n": 105,
+   "versos": [
+    "rudhi āvaraṇe. — muca",
+    "mocane rica recane",
+    "sica seke. — yuja yoge",
+    "bhuja pālana-bhojane. —"
+   ],
+   "rangos": [
+    [
+     608,
+     610
+    ],
+    [
+     611,
+     613
+    ]
+   ],
+   "gana": "II",
+   "signo": null,
+   "pagina": 40,
+   "notas": []
+  },
+  {
+   "n": 106,
+   "versos": [
+    "kati cchede. — chidi dvedhā-",
+    "karaṇe bhida vidāraṇe",
+    "vida lābhe. — lupa cchede",
+    "vināse lipa limpane. —",
+    "pisa sañcuṇṇane hiṃsa",
+    "vihiṃsāyaṃ rudhādayo.",
+    "rudhādayo."
+   ],
+   "rangos": [
+    [
+     614,
+     616
+    ],
+    [
+     617,
+     619
+    ],
+    [
+     620,
+     621
+    ]
+   ],
+   "gana": "II",
+   "signo": null,
+   "pagina": 41,
+   "notas": [
+    {
+     "raiz_n": 621,
+     "texto": "hisi, Cb KD."
+    }
+   ]
+  },
+  {
+   "n": 107,
+   "versos": [
+    "divu kīḷā-vijigiṃsā-",
+    "vohāra-jjuti-thomite",
+    "sivu tantūna santāne",
+    "khi khaye khā pakāsane. —"
+   ],
+   "rangos": [
+    [
+     622,
+     622
+    ],
+    [
+     623,
+     625
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 41,
+   "notas": []
+  },
+  {
+   "n": 108,
+   "versos": [
+    "kā gā sadde pi. — ghā gandho-",
+    "pādāne. — ruca rocane",
+    "kaca dityaṃ muca moce",
+    "atho vica vivecane. —"
+   ],
+   "rangos": [
+    [
+     626,
+     629
+    ],
+    [
+     630,
+     632
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 41,
+   "notas": [
+    {
+     "raiz_n": 626,
+     "texto": "khā instead of kā gā, Cki."
+    }
+   ]
+  },
+  {
+   "n": 109,
+   "versos": [
+    "rañja rāge sañja saṅge",
+    "khalane majja suddhiyaṃ",
+    "yujo samādhimhi lujo",
+    "vināse. — jhā vicintane. —"
+   ],
+   "rangos": [
+    [
+     633,
+     635
+    ],
+    [
+     636,
+     638
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 41,
+   "notas": [
+    {
+     "raiz_n": 634,
+     "texto": "sañja"
+    }
+   ]
+  },
+  {
+   "n": 110,
+   "versos": [
+    "tā pālane. — chidi dvedhā-",
+    "karaṇe mida sinehane",
+    "mad’ ummāde khida dīna-",
+    "bhāve bhida vidāraṇe"
+   ],
+   "rangos": [
+    [
+     639,
+     641
+    ],
+    [
+     642,
+     644
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 41,
+   "notas": [
+    {
+     "raiz_n": 640,
+     "texto": "dvedhākāre, KD … snehane, Cp."
+    }
+   ]
+  },
+  {
+   "n": 111,
+   "versos": [
+    "sida pāke pada gate",
+    "vida sattā-vicintane",
+    "saṃkhalane, Ckbi. — 635. maja, Ckbip. — 638. vicintaye, Cki, cf. . —",
+    "dī khaye dā tu supane",
+    "dā dāne dāvakhaṇḍane. —"
+   ],
+   "rangos": [
+    [
+     654,
+     647
+    ],
+    [
+     688,
+     688
+    ],
+    [
+     648,
+     651
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 41,
+   "notas": [
+    {
+     "raiz_n": 649,
+     "texto": "tu missing in Ckbi; Cp gives: dhā tu supuna; KD reads: dī"
+    },
+    {
+     "raiz_n": 688,
+     "texto": "pipāsaye, Cp; pipāsane, KD, cf. (821, 844, 860)."
+    }
+   ]
+  },
+  {
+   "n": 112,
+   "versos": [
+    "budhāvagamanādīsu",
+    "atthesu yuddha yujjhane",
+    "kudha kope sudha soce",
+    "rādha hiṃsāya siddhiyaṃ"
+   ],
+   "rangos": [
+    [
+     652,
+     653
+    ],
+    [
+     654,
+     656
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 42,
+   "notas": []
+  },
+  {
+   "n": 113,
+   "versos": [
+    "idha saṃsiddhi-vuddhīsu",
+    "sidha sādha ca siddhiyaṃ",
+    "vidha vedhe gidha gedhe",
+    "rudhi āvaraṇādisu. —"
+   ],
+   "rangos": [
+    [
+     657,
+     659
+    ],
+    [
+     660,
+     662
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 42,
+   "notas": []
+  },
+  {
+   "n": 114,
+   "versos": [
+    "mana ñāṇe jan’ uppāde",
+    "hana hiṃsā-gatīsu pi",
+    "sinā soce. — kupa kope",
+    "tapa santāpa-pīṇane"
+   ],
+   "rangos": [
+    [
+     663,
+     665
+    ],
+    [
+     666,
+     668
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 42,
+   "notas": []
+  },
+  {
+   "n": 115,
+   "versos": [
+    "lupa cchede rupa nāse",
+    "pakāse dipa dittiyaṃ",
+    "dapa hāse. — labha lābhe",
+    "lubha gedhe khubho cale. —"
+   ],
+   "rangos": [
+    [
+     669,
+     671
+    ],
+    [
+     672,
+     675
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 42,
+   "notas": []
+  },
+  {
+   "n": 116,
+   "versos": [
+    "samūpasama-khedesu. —",
+    "hara hiri ca lajjane. —",
+    "milā gattavināme ca",
+    "gilā hāsakkhaye pi ca"
+   ],
+   "rangos": [
+    [
+     676,
+     678
+    ],
+    [
+     679,
+     680
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 42,
+   "notas": []
+  },
+  {
+   "n": 117,
+   "versos": [
+    "lī silese dravīkāre. —",
+    "vā gati-bandhanesu ca. —",
+    "lisa lese tusa tose",
+    "silisāliṅganādisu",
+    "khaye, supane dā ca, dāne dā tv avakhaṇḍane. — 671. dipi, Ck. —",
+    "cf. , see also (132: 134, 459: 462), and Dhp. 444."
+   ],
+   "rangos": [
+    [
+     681,
+     682
+    ],
+    [
+     683,
+     685
+    ],
+    [
+     681,
+     681
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 42,
+   "notas": [
+    {
+     "raiz_n": 681,
+     "texto": "11 silese, Cip; selese, Ckb (omitting lī)."
+    },
+    {
+     "raiz_n": 683,
+     "texto": "lisi, Ckbip KD, but"
+    }
+   ]
+  },
+  {
+   "n": 118,
+   "versos": [
+    "kilisa klisa upatāpe",
+    "atho tasa pipāsayaṃ",
+    "rusa rose disa-dusā",
+    "appītimhi duve siyuṃ"
+   ],
+   "rangos": [
+    [
+     686,
+     688
+    ],
+    [
+     689,
+     691
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 43,
+   "notas": [
+    {
+     "raiz_n": 686,
+     "texto": "kilisa kilisopatāpe, KD."
+    },
+    {
+     "raiz_n": 688,
+     "texto": "pipāsaye, Cp; pipāsane, KD, cf. (821, 844, 860)."
+    },
+    {
+     "raiz_n": 690,
+     "texto": "-dusa, Ckip."
+    }
+   ]
+  },
+  {
+   "n": 119,
+   "versos": [
+    "yasu ppayatane asu",
+    "khepane pi ca vattate",
+    "susa sose bhasa adho-",
+    "pāte nasa adassane"
+   ],
+   "rangos": [
+    [
+     692,
+     693
+    ],
+    [
+     694,
+     696
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 43,
+   "notas": []
+  },
+  {
+   "n": 120,
+   "versos": [
+    "sāssāde sāvasāne ca",
+    "sā tanūkaraṇe pi ca. —",
+    "hā hāne muha vecitte",
+    "naha sajjana-bandhane",
+    "nahā soce pih’ icchāyaṃ",
+    "siniha sniha pītiyaṃ.",
+    "divādayo."
+   ],
+   "rangos": [
+    [
+     697,
+     699
+    ],
+    [
+     700,
+     702
+    ],
+    [
+     703,
+     706
+    ]
+   ],
+   "gana": "III",
+   "signo": null,
+   "pagina": 43,
+   "notas": [
+    {
+     "raiz_n": 698,
+     "texto": "ca only in KD."
+    },
+    {
+     "raiz_n": 700,
+     "texto": "cāge, KD."
+    }
+   ]
+  },
+  {
+   "n": 121,
+   "versos": [
+    "su savane saka sattimhi",
+    "khi khayamhi gi saddane",
+    "apa sambhu ca pāpuṇane",
+    "hi gatimhi vu saṃvare.",
+    "svādayo."
+   ],
+   "rangos": [
+    [
+     707,
+     710
+    ],
+    [
+     711,
+     714
+    ]
+   ],
+   "gana": "IV",
+   "signo": null,
+   "pagina": 43,
+   "notas": [
+    {
+     "raiz_n": 709,
+     "texto": "khī, KD."
+    }
+   ]
+  },
+  {
+   "n": 122,
+   "versos": [
+    "kī vinimaye. — ci caye. —",
+    "ji jaye. — ñāvabodhane. —",
+    "thu thave. — dhu pakampāyaṃ. —",
+    "atho pu pavane siyā"
+   ],
+   "rangos": [
+    [
+     715,
+     718
+    ],
+    [
+     719,
+     721
+    ]
+   ],
+   "gana": "V",
+   "signo": null,
+   "pagina": 43,
+   "notas": [
+    {
+     "raiz_n": 719,
+     "texto": "pu thave, Cki; pu thuve, Cbp; thv abhitthave, KD."
+    },
+    {
+     "raiz_n": 720,
+     "texto": "pakampanaya, Ckb; pakampane, Ci; kampane dhū, KD."
+    }
+   ]
+  },
+  {
+   "n": 123,
+   "versos": [
+    "pī tappane. — mā pamāṇe. —",
+    "khipa kkhepe. — mi hiṃsane",
+    "mi pamāṇe mu bandhe ca. —",
+    "lu pacchede. — si bandhane",
+    "asa bhakkhaṇe. — atho gaha",
+    "upādāne kiyādayo.",
+    "kiyādayo."
+   ],
+   "rangos": [
+    [
+     722,
+     725
+    ],
+    [
+     726,
+     729
+    ],
+    [
+     730,
+     731
+    ]
+   ],
+   "gana": "V",
+   "signo": null,
+   "pagina": 44,
+   "notas": [
+    {
+     "raiz_n": 724,
+     "texto": "Cf. Dhp. 501."
+    },
+    {
+     "raiz_n": 728,
+     "texto": "chede, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 124,
+   "versos": [
+    "tanu vitthāre saka sattismiṃ",
+    "du parītāpe sanu dānamhi",
+    "vana yācāyaṃ manu bodhasmiṃ",
+    "hi gate apa pāpuṇanasmiṃ hi",
+    "kara karaṇasmiṃ bhavati si bandhe",
+    "su abhissavane tanuādīni.",
+    "tanādayo."
+   ],
+   "rangos": [
+    [
+     732,
+     733
+    ],
+    [
+     734,
+     735
+    ],
+    [
+     736,
+     737
+    ],
+    [
+     738,
+     739
+    ],
+    [
+     740,
+     741
+    ],
+    [
+     742,
+     742
+    ]
+   ],
+   "gana": "VI",
+   "signo": null,
+   "pagina": 44,
+   "notas": [
+    {
+     "raiz_n": 734,
+     "texto": "paritāpe, Ckbip."
+    },
+    {
+     "raiz_n": 735,
+     "texto": "dānasmiṃ, KD."
+    },
+    {
+     "raiz_n": 739,
+     "texto": "hi omitted in Ci."
+    }
+   ]
+  },
+  {
+   "n": 125,
+   "versos": [
+    "cura theyye. — lokadhātu",
+    "dassane aki lakkhaṇe",
+    "siyā thaka patīghāte",
+    "puna takka vitakkane. —"
+   ],
+   "rangos": [
+    [
+     743,
+     745
+    ],
+    [
+     746,
+     747
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 44,
+   "notas": [
+    {
+     "raiz_n": 746,
+     "texto": "patighāte, Cp KD."
+    }
+   ]
+  },
+  {
+   "n": 126,
+   "versos": [
+    "lakkha dassana-aṃkesu",
+    "vattate makkha makkhaṇe",
+    "bhakkhādane mokkha moce",
+    "sukha dukkha ca takriye. —"
+   ],
+   "rangos": [
+    [
+     748,
+     749
+    ],
+    [
+     750,
+     753
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 44,
+   "notas": []
+  },
+  {
+   "n": 127,
+   "versos": [
+    "liṅga cittakriyādīsu",
+    "maga magga gavesane. —",
+    "punāpi paca vitthāre",
+    "klese vañca palambhane"
+   ],
+   "rangos": [
+    [
+     754,
+     756
+    ],
+    [
+     757,
+     758
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 45,
+   "notas": [
+    {
+     "raiz_n": 758,
+     "texto": "palabbhane, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 128,
+   "versos": [
+    "cacca ajjhayane acca",
+    "pūjāyaṃ vaca bhāsane",
+    "raca patiyatane sūca",
+    "pesuññe ruca rocane"
+   ],
+   "rangos": [
+    [
+     759,
+     761
+    ],
+    [
+     762,
+     764
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 45,
+   "notas": [
+    {
+     "raiz_n": 759,
+     "texto": "ajjhāyane, Cp KD."
+    },
+    {
+     "raiz_n": 762,
+     "texto": "patīyatane, Cb."
+    }
+   ]
+  },
+  {
+   "n": 129,
+   "versos": [
+    "muca ppamocane loca",
+    "dassane kaca dittiyaṃ. —",
+    "sajjājja ajjane tajja",
+    "tajjane vajja vajjane"
+   ],
+   "rangos": [
+    [
+     765,
+     767
+    ],
+    [
+     768,
+     771
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 45,
+   "notas": []
+  },
+  {
+   "n": 130,
+   "versos": [
+    "yuja saṃyamane pūja",
+    "pūjāyaṃ tija tejane",
+    "paja maggasaṃvaraṇe",
+    "gate bhaja vibhājane"
+   ],
+   "rangos": [
+    [
+     772,
+     774
+    ],
+    [
+     775,
+     776
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 45,
+   "notas": []
+  },
+  {
+   "n": 131,
+   "versos": [
+    "atho bhāja puthakkāre",
+    "sabhāja pīti-dassane. —",
+    "ghaṭī ghaṭana-saṃghāte",
+    "ghaṭṭa sañcalanādisu"
+   ],
+   "rangos": [
+    [
+     777,
+     778
+    ],
+    [
+     779,
+     780
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 45,
+   "notas": [
+    {
+     "raiz_n": 779,
+     "texto": "So Cki; Cb omits ghaṭī; Cp has atho instead of ghaṭī; KD renders: atho tu ghaṭa saṃghāte."
+    }
+   ]
+  },
+  {
+   "n": 132,
+   "versos": [
+    "kuṭa koṭṭa cchedane dve",
+    "kuṭa ākoṭanādisu",
+    "naṭa nacce caṭa puṭa",
+    "bhede vaṇṭa vibhājane"
+   ],
+   "rangos": [
+    [
+     781,
+     783
+    ],
+    [
+     784,
+     787
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 45,
+   "notas": [
+    {
+     "raiz_n": 786,
+     "texto": "Cf. Dhp. 560, note."
+    }
+   ]
+  },
+  {
+   "n": 133,
+   "versos": [
+    "tuvaṭṭa ekasayane",
+    "saṭo visaraṇe siyā. —",
+    "guṇṭha oguṇṭhane heṭha",
+    "bādhāyaṃ veṭha veṭhane. —",
+    "guḍi veṭhe kaḍi-khaḍī",
+    "bhedane maḍi bhūsane"
+   ],
+   "rangos": [
+    [
+     788,
+     789
+    ],
+    [
+     790,
+     792
+    ],
+    [
+     793,
+     796
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 46,
+   "notas": [
+    {
+     "raiz_n": 789,
+     "texto": "ghaṭo, Ckbip KD, but cf. W. 9,12."
+    }
+   ]
+  },
+  {
+   "n": 134,
+   "versos": [
+    "paṇḍa bhaṇḍa paribhāse",
+    "daḍi āṇāyam īrito",
+    "taḍi sañcalane piṇḍa",
+    "saṃghāte chaḍḍa chaḍḍane. —"
+   ],
+   "rangos": [
+    [
+     797,
+     799
+    ],
+    [
+     800,
+     802
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 46,
+   "notas": [
+    {
+     "raiz_n": 800,
+     "texto": "So Ckbip; saṃtāḷane,"
+    }
+   ]
+  },
+  {
+   "n": 135,
+   "versos": [
+    "vaṇṇa saṃvaṇṇane cuṇṇa",
+    "cuṇṇane āṇa pesane",
+    "gaṇa saṃkalane kaṇṇa",
+    "savane. — cinta cintane"
+   ],
+   "rangos": [
+    [
+     803,
+     805
+    ],
+    [
+     806,
+     808
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 46,
+   "notas": []
+  },
+  {
+   "n": 136,
+   "versos": [
+    "yanta saṃkocane manta",
+    "guttabhāsana-jānane",
+    "cita sañcetanādīsu",
+    "kitta saṃsaddane bhave"
+   ],
+   "rangos": [
+    [
+     809,
+     810
+    ],
+    [
+     811,
+     812
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 46,
+   "notas": []
+  },
+  {
+   "n": 137,
+   "versos": [
+    "yata niyyātane. — gantha",
+    "sandabbhe attha yācane",
+    "katha vākyappabandhe ca. —",
+    "vida ñāṇe cuda codane"
+   ],
+   "rangos": [
+    [
+     813,
+     815
+    ],
+    [
+     816,
+     818
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 46,
+   "notas": [
+    {
+     "raiz_n": 817,
+     "texto": "Vi ññāne, Ckbip."
+    },
+    {
+     "raiz_n": 818,
+     "texto": "nude cuda, KD."
+    }
+   ]
+  },
+  {
+   "n": 138,
+   "versos": [
+    "chadā pavāraṇe chadda",
+    "vamane chanda icchayaṃ",
+    "vadī ‘bhivāda-thomesu",
+    "bhadi kalyāṇakammani",
+    "KD. — 807. Ckbi insert nayaṃ after savane. — 814. sandavhe, Ckbip. —"
+   ],
+   "rangos": [
+    [
+     819,
+     821
+    ],
+    [
+     822,
+     823
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 46,
+   "notas": [
+    {
+     "raiz_n": 821,
+     "texto": "Cf. (688)."
+    }
+   ]
+  },
+  {
+   "n": 139,
+   "versos": [
+    "hilādī tu sukhe. — gandha",
+    "sūcane vidha kampane",
+    "randha pāke. — atho māna",
+    "pūjāyaṃ nu tthutimhi tu"
+   ],
+   "rangos": [
+    [
+     824,
+     826
+    ],
+    [
+     827,
+     829
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": [
+    {
+     "raiz_n": 824,
+     "texto": "hilādi, Ckbi; hilāda, KD; tu only in KD."
+    }
+   ]
+  },
+  {
+   "n": 140,
+   "versos": [
+    "thana devasaddane ūna",
+    "parihāne thena coriye",
+    "dhana sadde. — ñapa tosa-",
+    "nisāna-māraṇādisu"
+   ],
+   "rangos": [
+    [
+     830,
+     832
+    ],
+    [
+     833,
+     834
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": [
+    {
+     "raiz_n": 830,
+     "texto": "devasadde,"
+    }
+   ]
+  },
+  {
+   "n": 141,
+   "versos": [
+    "lapa vākye jhapa dāhe",
+    "rupa ropanaādisu",
+    "pī tappane siyā kappa",
+    "vitakke. — labhi vañcane"
+   ],
+   "rangos": [
+    [
+     835,
+     837
+    ],
+    [
+     838,
+     840
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": []
+  },
+  {
+   "n": 142,
+   "versos": [
+    "atho vabhī garahāyaṃ. —",
+    "samu savana-dassane",
+    "kamu icchāya kantimhi",
+    "siyā thoma silāghayaṃ"
+   ],
+   "rangos": [
+    [
+     841,
+     842
+    ],
+    [
+     843,
+     844
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": []
+  },
+  {
+   "n": 143,
+   "versos": [
+    "timu temana-saṃkāsu",
+    "ama roga-gatādisu",
+    "saṅgāma yuddhe vatteyya. —",
+    "īra vācā-pakampane"
+   ],
+   "rangos": [
+    [
+     845,
+     846
+    ],
+    [
+     847,
+     848
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": []
+  },
+  {
+   "n": 144,
+   "versos": [
+    "vara āvaraṇ’-icchāsu",
+    "yācāyaṃ dhara dhāraṇe",
+    "tīra kammasamattimhi",
+    "pāra sāmatthiyādisu. —"
+   ],
+   "rangos": [
+    [
+     840,
+     850
+    ],
+    [
+     851,
+     852
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": [
+    {
+     "raiz_n": 851,
+     "texto": "-samatthimhi, Ci KD; -sāmatthimhi, Cp."
+    }
+   ]
+  },
+  {
+   "n": 145,
+   "versos": [
+    "tul’ ummāne khala soce",
+    "sañcaye pāla rakkhaṇe",
+    "KD. — 842. samana-, Cp; sāntvana-, KD (cf. W. 35,27). — 844. silāghāyaṃ,",
+    "Cp; silāghane, KD cf. . — 849. yācā Ckbi; Cp has siyā ca instead",
+    "kala saṃkalanādīsu",
+    "bhave mīla nimīlane"
+   ],
+   "rangos": [
+    [
+     853,
+     855
+    ],
+    [
+     688,
+     688
+    ],
+    [
+     856,
+     857
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 47,
+   "notas": [
+    {
+     "raiz_n": 688,
+     "texto": "pipāsaye, Cp; pipāsane, KD, cf. (821, 844, 860)."
+    },
+    {
+     "raiz_n": 855,
+     "texto": "pala, KD; pāra lakkhaṇe Ci (cf. Dhp. 610)."
+    }
+   ]
+  },
+  {
+   "n": 146,
+   "versos": [
+    "sīlūpadhāraṇe mūla",
+    "rohane lala icchayaṃ",
+    "vattate dula ukkhepe",
+    "pula mahatte samussaye. —"
+   ],
+   "rangos": [
+    [
+     858,
+     860
+    ],
+    [
+     861,
+     862
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 48,
+   "notas": [
+    {
+     "raiz_n": 860,
+     "texto": "icchāyaṃ, Cp; icchane, KD, cf. (688)."
+    },
+    {
+     "raiz_n": 861,
+     "texto": "vatta, Cki; KD"
+    }
+   ]
+  },
+  {
+   "n": 147,
+   "versos": [
+    "ghusa sadde pisa pese",
+    "bhūsālaṃkaraṇe siyā",
+    "rusa pārusiye khuṃsa",
+    "akkose pusa posane"
+   ],
+   "rangos": [
+    [
+     863,
+     865
+    ],
+    [
+     866,
+     868
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 48,
+   "notas": [
+    {
+     "raiz_n": 865,
+     "texto": "-kāranū, Ckbip."
+    },
+    {
+     "raiz_n": 866,
+     "texto": "rusi, Cp."
+    }
+   ]
+  },
+  {
+   "n": 148,
+   "versos": [
+    "disa uccāraṇādīsu",
+    "vasa acchādanādisu",
+    "ras’ assāde rave snehe",
+    "atho sisa visesane"
+   ],
+   "rangos": [
+    [
+     860,
+     870
+    ],
+    [
+     871,
+     872
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 48,
+   "notas": [
+    {
+     "raiz_n": 860,
+     "texto": "icchāyaṃ, Cp; icchane, KD, cf. (688)."
+    },
+    {
+     "raiz_n": 861,
+     "texto": "vatta, Cki; KD"
+    },
+    {
+     "raiz_n": 865,
+     "texto": "-kāranū, Ckbip."
+    },
+    {
+     "raiz_n": 866,
+     "texto": "rusi, Cp."
+    },
+    {
+     "raiz_n": 869,
+     "texto": "dis’ ucc-, Ckbip."
+    }
+   ]
+  },
+  {
+   "n": 149,
+   "versos": [
+    "si bandhe missa sammisse. —",
+    "kuha vimhāpane siyā",
+    "raha cāge gate cāpi",
+    "maha pūjāyaṃ īraye"
+   ],
+   "rangos": [
+    [
+     873,
+     875
+    ],
+    [
+     876,
+     877
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 48,
+   "notas": []
+  },
+  {
+   "n": 150,
+   "versos": [
+    "pih’ icchāyaṃ siyā. — vīḷa",
+    "lajjāyaṃ phaḷa phāḷane",
+    "hīḷa gārahiye pīḷa",
+    "bādhāyaṃ taḷa tāḷane",
+    "laḷadhātūpasevāyaṃ",
+    "vattatīme curādayo.",
+    "* niccaṃ ṇeṇayantā curādayo samattā. *)",
+    "omits vattate and reads ukkhepaṇe. — 862. mahattana-samussaye, KD. —",
+    "acchādane siyā, KD. — 876. cāpi, KD; Ckbi also here cāge, and Cp cāhe,",
+    "i.e. cāgā (?), cf. . — 877. īrito, KD."
+   ],
+   "rangos": [
+    [
+     878,
+     880
+    ],
+    [
+     881,
+     883
+    ],
+    [
+     884,
+     884
+    ],
+    [
+     526,
+     526
+    ]
+   ],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 48,
+   "notas": [
+    {
+     "raiz_n": 526,
+     "texto": "agā, Ckbip KD, i.e. āgā (?)."
+    }
+   ]
+  },
+  {
+   "n": 151,
+   "versos": [
+    "bhuvādī ca rudhādī ca divādī svādayo gaṇā",
+    "kiyādī ca tanādī ca curādī cīdha sattadhā."
+   ],
+   "rangos": [],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 49,
+   "notas": []
+  },
+  {
+   "n": 152,
+   "versos": [
+    "kriyāvācittam akkhātum ekekattho bahūdito,",
+    "payogato ’nugantabbā, anekatthā hi dhātavo."
+   ],
+   "rangos": [],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 49,
+   "notas": [
+    {
+     "raiz_n": null,
+     "texto": "Cf. Cāndra-Dhātupāṭha, ed. LIEBICH, p.34*."
+    }
+   ]
+  },
+  {
+   "n": 153,
+   "versos": [
+    "hitāya mandabuddhīnaṃ vyattaṃ vaṇṇakkamā lahuṃ",
+    "racitā Dhātumañjūsā Sīlavaṃsena dhīmatā."
+   ],
+   "rangos": [],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 49,
+   "notas": []
+  },
+  {
+   "n": 154,
+   "versos": [
+    "saddhammapaṃkeruharājahaṃso",
+    "āsiṭṭhadhammaṭṭhiti sīlavaṃso",
+    "yakkhaddileṇākhyanivāsavāsī",
+    "yatissaro so ’yam idaṃ akāsi."
+   ],
+   "rangos": [],
+   "gana": "VII",
+   "signo": null,
+   "pagina": 49,
+   "notas": []
+  }
+ ]
+}

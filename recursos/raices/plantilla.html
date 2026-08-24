@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Raíces pāḷi · Saddanīti, Dhātupāṭha y Dhātumañjūsā</title>
+<meta name="version" content="1.2">
+<meta name="version-date" content="2026-08-24">
+<meta name="description" content="Las 1.698 raíces pāḷi del Saddanīti Dhātumālā comparadas con las del Pāṇinīya-Dhātupāṭha, del libro «Pali Roots in Saddanīti» del Venerable U Sīlānanda, editado por Bhikkhu Nandisena.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ola:#E7E3D6;        /* hoja de palma */
+  --ola-2:#F0EDE4;
+  --ink:#171612;        /* tinta de humo */
+  --soot:#4E4839;
+  --hair:#BFB7A0;
+  --haritala:#5C4008;   /* oropimente */
+  --hover:rgba(255,255,255,.55);
+  --active:rgba(255,255,255,.75);
+  --hl:rgba(92,64,8,.16);
+  --chip-k:rgba(39,65,79,.10);
+  --nila:#27414F;       /* índigo */
+  --rakta:#7E2E23;      /* bermellón */
+  --shadow:rgba(0,0,0,.05);
+  --serif:"Gentium Book Plus",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html[data-theme=dark]{
+  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
+  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
+  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
+  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
+}
+html[data-theme=dark] body{background-image:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ola);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.55;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* ---------- barra lateral ---------- */
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
+  background:var(--ola-2);border-right:1px solid var(--hair);padding:20px 0 48px}
+.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:10px}
+.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
+.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5}
+.sb-tit{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--haritala);padding:10px 18px 6px}
+.abc{display:flex;flex-wrap:wrap;gap:3px;padding:0 14px 14px}
+.abc button{font-family:var(--serif);font-size:15px;font-weight:700;font-style:italic;
+  min-width:34px;padding:4px 4px 3px;background:var(--ola);color:var(--ink);
+  border:1px solid var(--hair);border-radius:2px;cursor:pointer;line-height:1.1}
+.abc button:hover{border-color:var(--soot);color:var(--nila)}
+.abc button:disabled{opacity:.42;cursor:default;background:transparent;
+  border-style:dashed}
+.abc button small{display:block;font-family:var(--mono);font-style:normal;
+  font-size:8px;font-weight:600;color:var(--soot);letter-spacing:0}
+.abc button:hover small{color:inherit}
+.sb-nota{padding:4px 18px 0;font-size:12.5px;line-height:1.6;color:var(--soot);
+  border-top:1px solid var(--hair);margin-top:6px;padding-top:12px}
+.sb-close{display:none}
+#burger{display:none}
+body{padding-left:238px}
+.scrim{display:none}
+
+/* ---------- marca del IEBH ---------- */
+.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
+  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
+.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
+  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
+html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
+
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
+     text-transform:uppercase;color:var(--soot)}
+
+/* ---------- header ---------- */
+header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
+.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
+.mast>div:first-child{flex:1 1 380px;min-width:280px}
+.mast .hero{flex:0 1 auto}
+h1{font-size:clamp(34px,5.5vw,52px);line-height:.95;margin:0;font-weight:700;letter-spacing:-.02em}
+h1 .dia{color:var(--haritala)}
+.tag{margin:8px 0 0;max-width:46ch;color:var(--soot);font-size:16.5px}
+/* Las tres obras, bajo el título: la página no es sólo el Saddanīti. */
+.obras{margin:9px 0 0;font-family:var(--mono);font-size:11.5px;font-weight:600;
+  letter-spacing:.06em;color:var(--haritala)}
+.obras i{font-family:var(--serif);font-style:italic;font-size:14.5px;letter-spacing:0}
+@media (max-width:640px){.obras{font-size:10.5px}.obras i{font-size:13.5px}}
+.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
+  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
+  border-radius:999px;padding:4px 10px;position:relative}
+.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
+.version-badge[data-tip]:hover::after,
+.version-badge[data-tip].on::after{content:attr(data-tip);
+  position:absolute;top:calc(100% + 8px);left:0;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--serif);
+  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
+  min-width:160px;max-width:min(340px,70vw);z-index:100;
+  box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
+.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
+      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
+.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
+.hero div.on{opacity:1;transition:opacity .5s ease}
+.hero b{font-weight:700;color:var(--haritala);font-family:var(--serif);
+  font-style:italic;font-size:15px}
+.hero .ref{color:var(--soot);font-size:10.5px}
+
+/* ---------- controles ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--ola);
+     border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
+.bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+input[type=search]{
+  flex:1 1 240px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;padding:9px 12px}
+input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
+.filtros{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.filtros button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding:8px 10px;border:0;background:var(--ola-2);color:var(--soot);
+  cursor:pointer;border-right:1px solid var(--hair)}
+.filtros button:last-child{border-right:0}
+.filtros button[aria-pressed=true]{background:var(--nila);color:var(--ola-2)}
+.filtros.gana button[aria-pressed=true]{background:var(--haritala);color:var(--ola-2)}
+.filtros button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
+.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
+.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
+  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
+.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
+.icon-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.icon-btn[aria-pressed=true]{background:var(--nila);color:var(--ola-2);border-color:var(--nila)}
+
+/* ---------- pestañas ---------- */
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--hair);margin:0 0 4px}
+.tabs button{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;background:none;border:0;border-bottom:2px solid transparent;
+  color:var(--soot);padding:12px 2px;margin-right:26px;cursor:pointer}
+.tabs button[aria-selected=true]{color:var(--haritala);border-bottom-color:var(--haritala)}
+.tabs button:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.tabs button span{font-family:var(--serif);font-size:12px;letter-spacing:0;
+  text-transform:none;opacity:.75;margin-left:6px}
+
+/* ---------- letra ---------- */
+.letra{margin:34px 0 2px;display:flex;align-items:baseline;gap:12px;
+  scroll-margin-top:var(--barra,74px)}
+.letra h2{font-size:24px;margin:0;font-weight:700;font-style:italic;color:var(--haritala)}
+.letra .rule{flex:1;height:1px;background:var(--hair)}
+.letra .n{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.08em}
+
+/* ---------- la fila de una raíz ---------- */
+.fila{border-top:1px solid var(--hair);display:grid;
+  grid-template-columns:minmax(120px,1.1fr) minmax(0,2.6fr) minmax(0,2fr);
+  gap:0 20px;padding:12px 0;align-items:start;scroll-margin-top:var(--barra,74px)}
+.fila:last-child{border-bottom:1px solid var(--hair)}
+.fila:hover{background:var(--hover)}
+.fila.abierta{background:var(--active)}
+.col-raiz{display:flex;flex-direction:column;gap:4px}
+.raiz{font-style:italic;font-weight:700;font-size:20px;line-height:1.2;cursor:pointer;
+  background:none;border:0;padding:0;text-align:left;color:inherit;font-family:var(--serif)}
+.raiz:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.raiz .mas{font-family:var(--mono);font-style:normal;font-weight:400;font-size:11px;
+  color:var(--soot);margin-left:6px;opacity:.7}
+.gana{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.07em;
+  color:var(--nila);background:var(--chip-k);border-radius:2px;padding:2px 7px;
+  align-self:flex-start;white-space:nowrap;cursor:help}
+.glosa{font-style:italic;color:var(--ink);font-weight:600}
+.es{color:var(--soot);font-size:15.5px}
+.en{color:var(--soot);font-size:15px;font-style:italic;display:none}
+body.con-en .en{display:block}
+.col-skt{border-left:1px solid var(--hair);padding-left:20px}
+.skt{font-style:italic;font-weight:700;color:var(--rakta);font-size:17px}
+.skt-glosa{font-style:italic;color:var(--soot);font-size:15px}
+.nada{color:var(--soot);opacity:.45;font-family:var(--mono);font-size:11px}
+.refs{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.04em;
+  margin-top:3px;white-space:nowrap}
+
+/* Enlace y Copiar en cada fila. Con 1.698 filas, tenerlos siempre a la vista
+   convierte la lista en un muro de botones, así que aparecen al posar el
+   cursor en la fila o al llegar a ellos con el tabulador. Con el dedo no hay
+   hover: ahí se quedan puestos. */
+.acciones{display:flex;gap:6px;margin-top:7px;opacity:0;transition:opacity .12s ease}
+.fila:hover .acciones,.fila:focus-within .acciones,.fila.abierta .acciones{opacity:1}
+@media (pointer:coarse){.acciones{opacity:1}}
+@media (prefers-reduced-motion:reduce){.acciones{transition:none}}
+@media print{.acciones{display:none}}
+
+/* ---------- detalle desplegado ---------- */
+.detalle{grid-column:1/-1;margin:10px 0 2px;padding:14px 16px;background:var(--ola-2);
+  border:1px solid var(--hair);border-left:2px solid var(--haritala);border-radius:2px;
+  font-size:15px;line-height:1.65}
+.detalle dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
+.detalle dt{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--soot);padding-top:4px;white-space:nowrap}
+.detalle dd{margin:0}
+.detalle .nota{margin-top:10px;padding-top:9px;border-top:1px solid var(--hair);
+  font-size:14px;color:var(--soot)}
+.detalle .nota b{font-family:var(--mono);font-size:10px;color:var(--haritala);
+  margin-right:5px;vertical-align:super}
+.detalle .acc{margin-top:11px;display:flex;gap:8px;flex-wrap:wrap}
+.mini-btn{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);
+  font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--soot);
+  background:var(--ola);border:1px solid var(--hair);border-radius:2px;
+  padding:5px 9px;cursor:pointer;line-height:1}
+.mini-btn:hover{color:var(--ink);border-color:var(--soot)}
+.mini-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.mini-btn.ok{color:var(--haritala);border-color:var(--haritala)}
+@media print{.mini-btn{display:none}}
+
+/* ---------- índice de significados ---------- */
+.sig{border-top:1px solid var(--hair);padding:13px 0;scroll-margin-top:var(--barra,74px)}
+.sig:last-child{border-bottom:1px solid var(--hair)}
+.sig:hover{background:var(--hover)}
+.sig .cab{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.sig .glosa{font-size:17px}
+.sig .lista{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--serif);font-style:italic;font-weight:700;font-size:15.5px;
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;
+  padding:3px 9px;cursor:pointer;color:var(--ink);line-height:1.3}
+.chip:hover{border-color:var(--haritala);color:var(--haritala)}
+.chip:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.chip u{font-family:var(--mono);font-style:normal;font-weight:600;font-size:9.5px;
+  color:var(--soot);text-decoration:none;margin-left:6px;letter-spacing:.05em}
+.chip:hover u{color:inherit}
+
+/* ---------- Dhātupāṭha ---------- */
+.dp-marca{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.08em;
+  color:var(--rakta);border:1px solid currentColor;border-radius:2px;
+  padding:1px 4px;margin-left:7px;vertical-align:2px;cursor:help;white-space:nowrap}
+.dp-lista{margin:0;padding:0;list-style:none}
+.dp-lista li{padding:3px 0;border-bottom:1px dotted var(--hair)}
+.dp-lista li:last-child{border-bottom:0}
+.dp-n{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--rakta);
+  margin-right:8px}
+.dp-cierto{color:var(--haritala);font-family:var(--mono);font-size:9px;
+  font-weight:700;letter-spacing:.06em;margin-left:7px;cursor:help}
+.dp-nota{display:block;font-size:13px;color:var(--soot);margin-top:2px;
+  padding-left:10px;border-left:2px solid var(--hair)}
+.dp-fila{border-top:1px solid var(--hair);display:grid;
+  grid-template-columns:minmax(90px,.7fr) minmax(0,1.4fr) minmax(0,1.6fr);
+  gap:0 20px;padding:11px 0;align-items:start;scroll-margin-top:var(--barra,74px)}
+.dp-fila:last-child{border-bottom:1px solid var(--hair)}
+.dp-fila:hover{background:var(--hover)}
+.dp-fila .raiz{font-size:19px;cursor:auto}
+.dp-grupo{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.07em;
+  color:var(--rakta);background:rgba(126,46,35,.08);border-radius:2px;
+  padding:2px 7px;align-self:flex-start;white-space:nowrap;cursor:help}
+html[data-theme=dark] .dp-grupo{background:rgba(240,154,136,.14)}
+@media (max-width:900px){
+  .dp-fila{grid-template-columns:minmax(90px,1fr) minmax(0,2fr)}
+  .dp-fila>:nth-child(3){grid-column:1/-1;margin-top:6px}
+}
+@media (max-width:640px){.dp-fila{grid-template-columns:1fr;gap:5px}}
+.prestado{font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.06em;
+  color:var(--nila);margin-left:6px;vertical-align:1px;cursor:help}
+
+/* ---------- Dhātumañjūsā ---------- */
+.dm-marca{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.08em;
+  color:var(--nila);border:1px solid currentColor;border-radius:2px;
+  padding:1px 4px;margin-left:5px;vertical-align:2px;cursor:help;white-space:nowrap}
+.dm{border-top:1px solid var(--hair);padding:15px 0;scroll-margin-top:var(--barra,74px)}
+.dm:last-child{border-bottom:1px solid var(--hair)}
+.dm:hover{background:var(--hover)}
+.dm-cab{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:5px}
+.dm-n{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--haritala);
+  letter-spacing:.06em}
+.dm-rango{font-family:var(--mono);font-size:10px;color:var(--soot);letter-spacing:.05em}
+.dm-versos{font-style:italic;font-size:17.5px;line-height:1.72;
+  border-left:2px solid var(--hair);padding-left:14px;margin:0}
+.dm-versos span{display:block}
+.dm-notas{margin-top:9px;font-size:13.5px;color:var(--soot);line-height:1.6}
+.dm-notas b{font-family:var(--mono);font-size:10px;color:var(--haritala);margin-right:5px}
+.dm-notas p{margin:2px 0}
+@media (max-width:640px){.dm-versos{font-size:16.5px;padding-left:10px}}
+
+/* ---------- globo de ayuda ---------- */
+/* El «title» del navegador tarda casi un segundo en salir, no se puede
+   estilar y con el dedo no aparece nunca. Este globo sale enseguida, se lee
+   con teclado y responde al toque. */
+#tip{position:fixed;z-index:200;max-width:330px;pointer-events:none;opacity:0;
+  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  border-radius:3px;box-shadow:0 8px 26px var(--shadow);
+  padding:10px 13px;font:400 14px/1.5 var(--serif)}
+#tip.on{opacity:1;transform:none}
+#tip b{display:block;font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--haritala);
+  margin-bottom:4px}
+#tip i{color:var(--soot)}
+@media (prefers-reduced-motion:reduce){#tip{transition:none}}
+@media print{#tip{display:none}}
+[data-tip]{cursor:help}
+button[data-tip]{cursor:pointer}
+
+mark{background:var(--hl);color:inherit;border-radius:2px;
+  box-shadow:inset 0 -1px 0 var(--haritala)}
+.destacada{animation:latido 1.6s ease}
+@keyframes latido{0%,100%{background:transparent}22%{background:var(--hl)}}
+
+/* ---------- volver al inicio ---------- */
+#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
+  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
+  opacity:0;pointer-events:none;transform:translateY(6px);
+  transition:opacity .2s,transform .2s,background .12s,color .12s}
+#top-btn.show{opacity:1;pointer-events:auto;transform:none}
+#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
+#top-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
+
+/* ---------- vacío + pie ---------- */
+.empty{padding:60px 0;text-align:center;color:var(--soot)}
+.empty p{margin:0 0 6px}
+footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
+       color:var(--soot);font-size:14px}
+footer a{color:var(--nila)}
+.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
+  font-size:12.5px;line-height:1.65;color:var(--soot)}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
+  text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+
+@media (max-width:900px){
+  body{padding-left:0}
+  .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
+  .sidebar.open{transform:none}
+  .sb-close{display:block;position:absolute;top:12px;right:12px}
+  #burger{display:inline-flex}
+  .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
+  .fila{grid-template-columns:minmax(110px,1fr) minmax(0,2.4fr)}
+  .col-skt{grid-column:1/-1;border-left:0;padding-left:0;margin-top:8px;
+    padding-top:8px;border-top:1px dotted var(--hair)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mast{gap:22px}
+  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
+        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
+  .hero div{justify-content:flex-start}
+  .bar .wrap{gap:9px}
+  .count{width:100%}
+  .fila{grid-template-columns:1fr;gap:6px}
+  .detalle dl{grid-template-columns:1fr;gap:0 0}
+  .detalle dt{padding-top:9px}
+}
+@media (pointer:coarse){
+  input[type=search]{padding:12px 13px;min-height:44px}
+  .filtros{flex-wrap:wrap;gap:1px;background:var(--hair);border-radius:3px}
+  .filtros button{flex:1 0 auto;min-height:44px;font-size:11.5px;padding:12px 13px;border-right:0}
+  .icon-btn{min-height:44px;min-width:44px;padding:12px 13px;font-size:15px}
+  .mini-btn{min-height:38px;padding:9px 12px;font-size:11px}
+  .sidebar{width:min(300px,84vw)}
+  .abc button{min-width:44px;min-height:44px;font-size:17px}
+  .chip{min-height:38px;display:inline-flex;align-items:center}
+  .version-badge{padding:8px 14px}
+  #top-btn{width:48px;height:48px;font-size:19px;right:16px;bottom:16px}
+}
+@media (pointer:coarse) and (max-width:640px){#f-gana,#f-skt{flex:1 1 100%}}
+@media (prefers-reduced-motion:reduce){
+  .hero div{opacity:1!important;transition:none!important}
+  *{animation:none!important}
+}
+@media print{
+  #burger,#theme,#top-btn,.hero,input#q,.filtros,.tabs,.mini-btn{display:none!important}
+  body{background:#fff;color:#000;padding-left:0}
+  .sidebar{display:none}
+  .fila{break-inside:avoid}
+  .en{display:block}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar" aria-label="Índice alfabético">
+  <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
+  <div class="sb-brand"><b>Raíces pāḷi</b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā</span></div>
+  <div class="sb-tit" id="abc-tit">Raíces por inicial</div>
+  <div class="abc" id="abc"></div>
+  <div id="sb-dm" style="display:none">
+    <div class="sb-tit">La Dhātumañjūsā</div>
+    <p class="sb-nota" style="border-top:0;margin-top:0;padding-top:0">
+    Las 154 estrofas van en su orden. El poema numera sus propias raíces
+    —hasta la 884— y esa numeración no es la del Dhātupāṭha. Las notas al pie
+    de la edición se dan bajo cada estrofa, con el número de raíz al que se
+    refieren.</p>
+  </div>
+  <p class="sb-nota">Las letras siguen el orden del alfabeto pāḷi, no el latino:
+  vocales, guturales, palatales, cerebrales, dentales, labiales y el resto. El
+  número es cuántas entradas empiezan por esa letra en lo que hay a la vista;
+  una letra en trazo discontinuo no tiene ninguna. Ninguna palabra pāḷi empieza
+  por <i>ṅ</i> ni por <i>ṇ</i>.</p>
+</aside>
+
+<header>
+  <div class="wrap mast">
+    <div>
+      <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
+      <h1>Ra<span class="dia">í</span>ces p<span class="dia">ā</span>ḷi</h1>
+      <p class="obras"><i>Saddanīti-dhātumālā</i> · <i>Dhātupāṭha</i> · <i>Dhātumañjūsā</i></p>
+      <p class="tag">Las raíces del <i>Saddanīti</i> cotejadas una a una con las del
+      <i>Pāṇinīya-dhātupāṭha</i>, y junto a ellas las otras dos listas clásicas de raíces
+      pāḷi: el <i>Dhātupāṭha</i> y la <i>Dhātumañjūsā</i> en verso.</p>
+      <span class="version-badge" id="vbadge"></span>
+    </div>
+    <div class="hero" id="hero" aria-hidden="true"></div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <input type="search" id="q" placeholder="Buscar raíz o significado — «paca», «gam», «cocinar», «gatyatthe»…" aria-label="Buscar">
+    <span class="filtros gana" id="f-gana" role="group" aria-label="Filtrar por gaṇa"></span>
+    <span class="filtros" id="f-skt" role="group" aria-label="Filtrar por cognado sánscrito"></span>
+    <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+    <button class="icon-btn" id="en-btn" aria-pressed="false" title="Mostrar también el inglés">EN</button>
+    <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-raices" aria-selected="true" data-tab="raices">Raíces <span id="n-raices"></span></button>
+    <button role="tab" id="tab-significados" aria-selected="false" data-tab="significados">Significados <span id="n-significados"></span></button>
+    <button role="tab" id="tab-dhatupatha" aria-selected="false" data-tab="dhatupatha">Dhātupāṭha <span id="n-dhatupatha"></span></button>
+    <button role="tab" id="tab-dhatumanjusa" aria-selected="false" data-tab="dhatumanjusa">Dhātumañjūsā <span id="n-dhatumanjusa"></span></button>
+  </div>
+</div>
+
+<main class="wrap" id="out"></main>
+<div id="tip" role="tooltip" aria-hidden="true"></div>
+<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+
+<footer class="wrap">
+  <p class="version-foot" id="vfoot"></p>
+  <p><strong>Fuente.</strong> Las 1.698 raíces proceden de
+  <a href="https://drive.google.com/open?id=16neD1t6MKCsHNkf0zbi0zdG6nt7IamQl" rel="noopener" target="_blank"><i>Pali
+  Roots in Saddanīti</i></a> —<i>Pali Roots in Saddanīti Dhātu-Mālā Compared with
+  Pāṇinīya-Dhātupāṭha</i>—, del Venerable U Sīlānanda, edición de Bhikkhu Nandisena
+  (Centro Mexicano del Buddhismo Theravada, 2005). La obra coteja la <i>Dhātumālā</i>
+  del <i>Saddanīti</i> con el <i>Pāṇinīya-Dhātupāṭha</i>, raíz por raíz. El texto se
+  transcribe tal como está, en español y en inglés, sin corregir ni completar nada; las
+  notas del autor van con cada raíz.</p>
+  <p><strong>Cómo leer las referencias.</strong> El número romano es el <i>gaṇa</i>
+  —la clase de conjugación— y el arábigo, la página de la edición de referencia. El pāḷi
+  tiene ocho gaṇas y el sánscrito diez, de modo que una misma raíz puede figurar en clases
+  distintas en cada lengua. Una raíz sin columna sánscrita es la que el autor no halló en
+  las listas sánscritas: son 180.</p>
+  <p><strong>El Dhātupāṭha.</strong> La tercera pestaña es otra obra y otra lista:
+  las 639 raíces del <i>Dhātupāṭha</i> pāḷi en la edición de Dines Andersen y Helmer
+  Smith (Copenhague, 1921), transcrita por A. Ruiz-Falqués (2019), con las notas
+  críticas que registran las lecturas de los manuscritos. Su numeración de grupos
+  <b>no</b> es la del Saddanīti: son nueve, siguiendo la ordenación de los
+  <i>Dhātupāṭha</i> sánscritos, y el primero se parte en <i>I, a</i> e <i>I, b</i>
+  según lleven o no signo de conjugación. La marca <span class="dp-marca">DP</span>
+  junto a una raíz avisa de que el mismo lema figura allí; al desplegarla se ve con
+  qué número y con qué significado. La correspondencia se establece <b>sólo por el
+  lema</b>: una misma raíz puede aparecer en las dos obras con sentidos distintos, y
+  no toca aquí decidir cuál es cuál. Cuando además coincide el significado se
+  indica, y ésa es la correspondencia que puede darse por segura: son 229 de 675.</p>
+
+  <p><strong>La Dhātumañjūsā.</strong> La cuarta pestaña es la
+  <i>Kaccāyana-Dhātumañjūsā</i>, atribuida a Sīlavaṃsa: la misma lista de raíces
+  puesta en verso, 154 estrofas en <i>śloka</i>, en la edición de Andersen y Smith.
+  Va como texto y no como tabla, y a propósito: en el verso la raíz y su significado
+  están encajados en el metro, con elisión y compuestos partidos entre <i>pādas</i>, de
+  modo que separarlos sería interpretar y no transcribir. Lo que sí es del editor, y
+  aquí se conserva, es el rango de raíces que numera cada verso entre paréntesis —esa
+  numeración llega hasta la 884 y <b>no</b> es la del Dhātupāṭha— y las notas críticas,
+  que van bajo cada estrofa con el número de raíz al que se refieren. La marca
+  <span class="dm-marca">DM</span> junto a una raíz señala las estrofas que la nombran
+  <b>literalmente</b>: es una coincidencia de palabra, no una identificación.</p>
+
+  <p><strong>Los significados del Dhātupāṭha.</strong> Andersen y Smith no traducen: su
+  entrada trae la raíz y la glosa pāḷi, nada más. El inglés que se muestra procede de la
+  hoja de cálculo pública de la digitalización (Bodhirasa Bhikkhu, 2019) y cubre las 643
+  entradas. El español no existe en ninguna de las dos fuentes, así que se toma prestado
+  del <i>Saddanīti</i>: cuando la tabla de U Sīlānanda usa <b>exactamente la misma glosa
+  pāḷi</b> para alguna raíz, se reutiliza la traducción de Nandisena, y la entrada lo señala con
+  <span class="prestado">ES·N</span>. Alcanza a 430 de 643; en las demás las dos obras
+  glosan el mismo sentido con palabras distintas —<i>gamanatthā</i> frente a
+  <i>gatyatthe</i>— y ahí no hay nada que reutilizar sin inventar.</p>
+
+  <p><strong>Cómo buscar.</strong> El buscador ignora los diacríticos, así que
+  «paca» encuentra <i>pāca</i> y «hims» encuentra <i>hiṃs</i>. Busca a la vez por raíz
+  pāḷi, raíz sánscrita, glosa y significado en español e inglés. La pestaña
+  <i>Significados</i> hace el camino inverso: del sentido a las raíces que lo expresan.</p>
+  <p><strong>Véase también.</strong> Los paradigmas de
+  <a href="../paradigmas/">declinación</a>; la <a href="../nombre/">formación del nombre</a>
+  paso a paso, que parte de la raíz <i>√paca</i>; y la referencia de
+  <a href="../sandhi/">sandhi</a>.</p>
+
+  <p><strong>Créditos.</strong> Las raíces pāḷi del <i>Saddanīti</i> están tomadas del
+  libro <a href="https://drive.google.com/open?id=16neD1t6MKCsHNkf0zbi0zdG6nt7IamQl" rel="noopener" target="_blank"><i>Pali
+  Roots in Saddanīti</i></a>, del <b>Venerable U Sīlānanda</b> (1927-2005), abad del
+  Dhammananda Vihara de Half Moon Bay, California, compilador principal del diccionario
+  pāḷi-birmano del Tipiṭaka y uno de los editores finales de los textos pāḷi en el Sexto
+  Concilio Buddhista. Suyo es el trabajo que sostiene esta página: el cotejo de cada raíz
+  pāḷi con su correspondiente sánscrita, el significado de cada una y la guía de las
+  raíces.</p>
+
+  <p>La edición del libro, su versión española y la traducción de los significados se
+  deben a <b>Bhikkhu Nandisena</b>, del Instituto de Estudios Buddhistas Hispano, a quien
+  corresponde además el mérito de que este material exista en español. El
+  <i>Dhātupāṭha</i> y la <i>Dhātumañjūsā</i> proceden de la edición de Dines Andersen y
+  Helmer Smith (Copenhague, 1921), en la transcripción de A. Ruiz-Falqués (Taunggyi,
+  2019); la traducción inglesa de sus entradas, de la digitalización de Bodhirasa
+  Bhikkhu (2019).</p>
+
+  <p class="licencia"><span class="marca-lockup"></span>
+  <i>Pali Roots in Saddanīti</i> · Copyright © 2001 Venerable U Sīlānanda. Publicado por
+  el Centro Mexicano del Buddhismo Theravada A.C. (CMBT), 2005. Todos los derechos
+  reservados por sus titulares; esta transcripción se ofrece para el estudio de la lengua
+  pāḷi y no sustituye a la edición impresa.<br>
+  Presentación, cotejo y programación: Instituto de Estudios Buddhistas Hispano (IEBH),
+  2026.</p>
+</footer>
+
+<script>
+const DATA = /*__DATOS__*/{}/*__FIN__*/;
+
+/* ---------- utilidades ---------- */
+const FOLD = {'ā':'a','ī':'i','ū':'u','ṃ':'m','ṁ':'m','ñ':'n','ṭ':'t','ḍ':'d','ṇ':'n',
+              'ḷ':'l','ṅ':'n','ṣ':'s','ś':'s','ṛ':'r','ṝ':'r','ḥ':'h',
+              'é':'e','á':'a','í':'i','ó':'o','ú':'u','ü':'u','ô':'o','ý':'y'};
+function fold(s){
+  return (s||'').toLowerCase()
+    .replace(/[āīūṃṁñṭḍṇḷṅṣśṛṝḥéáíóúüôý]/g, c => FOLD[c])
+    .replace(/[’'‘"“”\.,;:()\[\]§+=¿?—–-]/g,'')
+    .replace(/\s+/g,' ').trim();
+}
+const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+/* Envoltorio de matchMedia: un entorno sin él —o una consulta que no
+   entienda— no debe llevarse por delante el pintado de la página. */
+const mq = c => { try{ return !!(window.matchMedia && matchMedia(c).matches); }catch(e){ return false; } };
+
+/* El orden del alfabeto pāḷi, que no es el latino. */
+const ALFABETO = ['a','ā','i','ī','u','ū','e','o','k','kh','g','gh','ṅ',
+                  'c','ch','j','jh','ñ','ṭ','ṭh','ḍ','ḍh','ṇ','t','th',
+                  'd','dh','n','p','ph','b','bh','m','y','r','l','ḷ','v','s','h'];
+
+/* Dónde se articula cada letra. Es lo que ordena el alfabeto pāḷi —de la
+   garganta a los labios— y explica por qué la lista no sigue el orden
+   latino. */
+const VARGA = [
+  [['a','ā','i','ī','u','ū','e','o'], 'Vocal', 'sara'],
+  [['k','kh','g','gh','ṅ'],  'Gutural',  'kaṇṭhaja — se articula en la garganta'],
+  [['c','ch','j','jh','ñ'],  'Palatal',  'tāluja — se articula contra el paladar'],
+  [['ṭ','ṭh','ḍ','ḍh','ṇ'],  'Cerebral', 'muddhaja — la lengua se retrae contra el cielo de la boca'],
+  [['t','th','d','dh','n'],  'Dental',   'dantaja — la lengua toca los dientes'],
+  [['p','ph','b','bh','m'],  'Labial',   'oṭṭhaja — se articula con los labios'],
+  [['y','r','l','ḷ','v'],    'Semivocal','antaṭṭha'],
+  [['s'],                    'Sibilante','sakāra'],
+  [['h'],                    'Aspirada', 'hakāra'],
+];
+function claseDe(l){
+  for(const [ls, nombre, glosa] of VARGA) if(ls.includes(l)) return [nombre, glosa];
+  return ['', ''];
+}
+
+const GANAS_PALI = DATA.ganas.pali, GANAS_SKT = DATA.ganas.sanscrito;
+const ROM = ['','I','II','III','IV','V','VI','VII','VIII','IX','X'];
+
+/* «Grupo Bhūvādi — signo de conjugación “a”»: el rótulo que se ve al pasar
+   el cursor por un número de gaṇa. El signo (vikaraṇa) es lo que se
+   interpone entre la raíz y la desinencia, y es lo que separa un grupo de
+   otro; los pāḷi los prescribe Kaccāyana en los aforismos 447-454. */
+function mayus(x){ return x ? x[0].toUpperCase() + x.slice(1) : ''; }
+/* «Grupo Bhūvādigaṇa» diría dos veces lo mismo: «grupo» es la traducción de
+   «gaṇa». En el rótulo se deja sólo el nombre. */
+function nombreGana(n, ganas){
+  const g = ganas[String(n)];
+  return g ? mayus(g.nombre.replace(/gaṇa$/, '')) : '';
+}
+const OBRAS = DATA.obras || {
+  pali: {sigla:'SD', nombre:'Saddanīti-dhātumālā', cifra:'página'},
+  sanscrito: {sigla:'PD', nombre:'Pāṇinīya-dhātupāṭha', cifra:'raíz nº'},
+};
+function rotuloGana(n, ganas){
+  const g = ganas[String(n)];
+  if(!g) return '';
+  const skt = ganas === GANAS_SKT;
+  const obra = skt ? OBRAS.sanscrito : OBRAS.pali;
+  return `Grupo ${nombreGana(n, ganas)}|Signo de conjugación (vikaraṇa) «${g.signo}»`
+    + (g.nota ? `. ${g.nota}` : '')
+    + `. Grupo ${ROM[n]} del ${obra.nombre}`
+    + (g.total ? `, con unas ${g.total} raíces` : '') + '.';
+}
+/* «I 12» es grupo I y página 12 del Saddanīti-dhātumālā; «X 371» es grupo X
+   y raíz nº 371 del Pāṇinīya-dhātupāṭha. La cifra no significa lo mismo en
+   una obra que en la otra, y así lo dice la leyenda del propio libro. */
+function rotuloRef(x, ganas){
+  const obra = ganas === GANAS_SKT ? OBRAS.sanscrito : OBRAS.pali;
+  const g = ganas[String(x.gana)];
+  return `${obra.sigla} ${ROM[x.gana]} ${x.pagina}|Grupo ${nombreGana(x.gana, ganas)}` +
+    `${g ? ` (signo «${g.signo}»)` : ''}, ${obra.cifra} ${x.pagina} del ${obra.nombre}.`;
+}
+
+/* ---------- índice de búsqueda ---------- */
+/* Se calcula una vez: 1.698 raíces por cuatro campos son demasiadas
+   normalizaciones para repetirlas en cada tecla. */
+DATA.raices.forEach(r => {
+  r._b = fold([r.raices.join(' '), r.glosa, r.es, r.en,
+               r.sanscrito.join(' '), r.sanscrito_glosa, r.remite].join(' '));
+});
+DATA.significados.forEach(s => {
+  s._b = fold([s.glosa, s.es, s.en, s.raices.map(x => x.raiz).join(' ')].join(' '));
+});
+
+/* El Dhātupāṭha de Andersen y Smith va aparte: es otra obra, con su propia
+   numeración y sus propios nueve grupos. Se cruza con el Saddanīti por lema
+   —nada más—, y eso se dice en cada ficha. */
+const DP = (DATA.dhatupatha && DATA.dhatupatha.entradas) || [];
+const DP_GRUPOS = (DATA.dhatupatha && DATA.dhatupatha.grupos) || {};
+DP.forEach((x, i) => {
+  x._i = i;
+  x._b = fold([x.raiz, x.glosa, x.notas.join(' ')].join(' '));
+  x.letra = letraDe(x.raiz);
+});
+function letraDe(w){
+  const dobles = ['kh','gh','ch','jh','ṭh','ḍh','th','dh','ph','bh'];
+  const s = (w || '').toLowerCase().replace(/[\[\]()’'-]/g, '');
+  for(const d of dobles) if(s.startsWith(d)) return d;
+  return s.slice(0,1);
+}
+function dpNum(x){ return x.n + (x.sufijo || ''); }
+
+/* La Dhātumañjūsā es la lista de raíces puesta en verso. Aquí va como texto,
+   no como tabla: en el śloka la raíz y su significado están encajados en el
+   metro, y separarlos sería interpretar, no transcribir. */
+const DM = (DATA.dhatumanjusa && DATA.dhatumanjusa.estrofas) || [];
+DM.forEach(e => {
+  e._b = fold([e.versos.join(' '), e.notas.map(n => n.texto).join(' ')].join(' '));
+  e.letra = letraDe((e.versos[0] || '').split(/\s+/)[0] || '');
+});
+function dmRango(e){
+  if(!e.rangos.length) return '';
+  const a = e.rangos[0][0], b = e.rangos[e.rangos.length - 1][1];
+  return a === b ? `raíz ${a}` : `raíces ${a}–${b}`;
+}
+function dpGrupo(x){
+  const nombre = DP_GRUPOS[x.gana] || '';
+  return `Grupo ${x.gana}${x.signo ? ', ' + x.signo : ''}` +
+    (nombre ? ` — ${nombre}` : '') +
+    (x.signo ? ` · signo de conjugación «${x.signo}»` : '') +
+    ' · numeración de Andersen y Smith, no la del Saddanīti';
+}
+
+/* ---------- estado ---------- */
+let q = '', gana = 'all', skt = 'all', pestanya = 'raices';
+const out = document.getElementById('out'), cnt = document.getElementById('count');
+
+/* ---------- resaltado ---------- */
+/* Se resalta sobre el texto original: se pliega carácter a carácter para
+   saber a qué posición del original corresponde cada una de la plegada. */
+function hi(texto){
+  if(!q || !texto) return esc(texto);
+  const f = fold(texto), aguja = fold(q);
+  if(!aguja) return esc(texto);
+  const at = f.indexOf(aguja);
+  if(at < 0) return esc(texto);
+  let oi = 0, fi = 0; const idx = [];
+  while(oi < texto.length){
+    const plegado = fold(texto[oi]);
+    for(let k = 0; k < plegado.length; k++){ idx[fi + k] = oi; }
+    fi += plegado.length; oi++;
+  }
+  idx[fi] = texto.length;
+  const a = idx[at] ?? 0, b = idx[at + aguja.length] ?? texto.length;
+  return esc(texto.slice(0,a)) + '<mark>' + esc(texto.slice(a,b)) + '</mark>' + esc(texto.slice(b));
+}
+
+/* ---------- filtrado ---------- */
+function visibleRaiz(r){
+  if(gana !== 'all' && !r.refs.some(x => String(x.gana) === gana)) return false;
+  if(skt === 'con' && !r.sanscrito.length) return false;
+  if(skt === 'sin' && r.sanscrito.length) return false;
+  return !q || r._b.includes(fold(q));
+}
+function visibleSig(s){
+  return !q || s._b.includes(fold(q));
+}
+
+/* ---------- pintado ---------- */
+function refsHTML(rs, ganas){
+  if(!rs.length) return '';
+  return rs.map(x =>
+    `<span data-tip="${esc(rotuloRef(x, ganas))}">` +
+    `${ROM[x.gana]}&nbsp;${x.pagina}</span>`).join(' · ');
+}
+
+function filaHTML(r){
+  const raiz = r.raices.map(x => hi(x)).join(' <span class="mas">/</span> ');
+  const g = r.refs.length ? r.refs[0].gana : 0;
+  const chip = g ? `<span class="gana" data-tip="${esc(rotuloGana(g, GANAS_PALI))}">${ROM[g]}</span>` : '';
+  const skt_ = r.sanscrito.length
+    ? `<div class="skt">${r.sanscrito.map(x => hi(x)).join(' / ')}</div>
+       <div class="skt-glosa">${hi(r.sanscrito_glosa)}</div>
+       <div class="refs">${refsHTML(r.sanscrito_refs, GANAS_SKT)}</div>`
+    : (r.remite
+        ? `<div class="skt-glosa">${hi(r.remite)}</div>`
+        : `<div class="nada">sin cognado registrado</div>`);
+  const nota = r.notas.length ? `<span class="mas" title="tiene nota">✻</span>` : '';
+  const dm = (r.dm || []).length
+    ? `<span class="dm-marca" data-tip="${esc('Dhātumañjūsā|La nombran las estrofas ' + r.dm.join(', ') + '. El enlace es una coincidencia literal de la palabra en el verso; el poema no separa raíz y significado.')}">DM</span>`
+    : '';
+  const dp = (r.dp || []).length
+    ? `<span class="dp-marca" data-tip="${esc('Dhātupāṭha|También en el Dhātupāṭha de Andersen y Smith, con el nº ' + r.dp.map(dpNum).join(', ') + '. Despliega la raíz para verlo.')}">DP</span>`
+    : '';
+  return `<div class="fila" id="r${r.id}" data-id="${r.id}">
+    <div class="col-raiz">
+      <button class="raiz" data-abre="${r.id}" aria-expanded="false">${raiz}${nota}${dp}${dm}</button>
+      ${chip}
+      <div class="refs">${refsHTML(r.refs, GANAS_PALI)}</div>
+      <div class="acciones">
+        <button class="mini-btn" data-share="${r.id}" title="Copiar el enlace a esta raíz">Enlace</button>
+        <button class="mini-btn" data-copy="${r.id}" title="Copiar la entrada entera">Copiar</button>
+      </div>
+    </div>
+    <div class="col-sig">
+      <div class="glosa">${hi(r.glosa)}</div>
+      <div class="es">${hi(r.es)}</div>
+      <div class="en">${hi(r.en)}</div>
+    </div>
+    <div class="col-skt">${skt_}</div>
+  </div>`;
+}
+
+function detalleHTML(r){
+  const g = r.refs.map(x =>
+    `<span data-tip="${esc(rotuloRef(x, GANAS_PALI))}">${ROM[x.gana]} ${x.pagina} ` +
+    `<i>(${esc(nombreGana(x.gana, GANAS_PALI))})</i></span>`).join(' · ');
+  const gs = r.sanscrito_refs.map(x =>
+    `<span data-tip="${esc(rotuloRef(x, GANAS_SKT))}">${ROM[x.gana]} ${x.pagina} ` +
+    `<i>(${esc(nombreGana(x.gana, GANAS_SKT))})</i></span>`).join(' · ');
+  let h = '<dl>';
+  h += `<dt>Raíz</dt><dd><i><b>${esc(r.raices.join(' / '))}</b></i></dd>`;
+  if(r.glosa) h += `<dt>Glosa pāḷi</dt><dd><i>${esc(r.glosa)}</i></dd>`;
+  if(r.es) h += `<dt>Español</dt><dd>${esc(r.es)}</dd>`;
+  if(r.en) h += `<dt>Inglés</dt><dd><i>${esc(r.en)}</i></dd>`;
+  if(g) h += `<dt>Saddanīti-dhātumālā</dt><dd>${g}</dd>`;
+  if(r.sanscrito.length){
+    h += `<dt>Sánscrito</dt><dd><i><b>${esc(r.sanscrito.join(' / '))}</b></i>` +
+         (r.sanscrito_glosa ? ` — <i>${esc(r.sanscrito_glosa)}</i>` : '') + '</dd>';
+    if(gs) h += `<dt>Pāṇinīya-dhātupāṭha</dt><dd>${gs}</dd>`;
+  } else if(r.remite){
+    h += `<dt>Sánscrito</dt><dd>${esc(r.remite)} <i>(remisión del autor)</i></dd>`;
+  }
+  h += `<dt>Página</dt><dd>${r.pagina} del original</dd>`;
+  if((r.dm || []).length){
+    h += `<dt>Dhātumañjūsā</dt><dd>` +
+      r.dm.map(n => `<button class="chip" data-estrofa="${n}">${n}</button>`).join(' ') +
+      ` <i>(la nombran estas estrofas)</i></dd>`;
+  }
+  if((r.dp || []).length){
+    const li = r.dp.map(x => {
+      const cierto = x.misma_glosa
+        ? '<span class="dp-cierto" data-tip="Mismo significado|Coinciden el lema y el significado, de modo que la correspondencia entre las dos obras puede darse por segura.">mismo significado</span>'
+        : '';
+      const notas = x.notas.filter(Boolean).map(n =>
+        `<span class="dp-nota">${esc(n)}</span>`).join('');
+      return `<li><span class="dp-n">${esc(dpNum(x))}</span>` +
+             `<i><b>${esc(x.raiz)}</b></i> — <i>${esc(x.glosa)}</i>` +
+             ` <span class="dp-grupo" data-tip="${esc(dpGrupo(x))}">${esc(x.gana)}${x.signo ? ', ' + esc(x.signo) : ''}</span>` +
+             `${cierto}${notas}</li>`;
+    }).join('');
+    h += `<dt>Dhātupāṭha pāḷi</dt><dd><ul class="dp-lista">${li}</ul></dd>`;
+  }
+  h += '</dl>';
+  r.notas.forEach(n => { h += `<p class="nota"><b>${n.n}</b>${esc(n.texto)}</p>`; });
+  h += `<div class="acc">
+    <button class="mini-btn" data-busca-sig="${r.id}">Otras raíces con este sentido</button>
+  </div>`;
+  return `<div class="detalle">${h}</div>`;
+}
+
+function dpFilaHTML(x){
+  const notas = x.notas.filter(Boolean).map(n =>
+    `<span class="dp-nota">${hi(n)}</span>`).join('');
+  const dudas = (x.dudoso ? '<span class="dp-cierto" data-tip="Sin separar|El original imprime la entrada sin separar la raíz del significado. Se deja tal cual, sin inventar el corte.">sin separar</span>' : '')
+    + (x.inferido ? '<span class="dp-cierto" data-tip="Reparto deducido|Cuántas raíces van en la entrada no lo dice un rango explícito, sino la propia numeración de la edición; sólo se acepta cuando el reparto cuadra exactamente.">reparto deducido</span>' : '');
+  return `<div class="dp-fila" id="dp${x._i}">
+    <div class="col-raiz">
+      <span class="raiz">${hi(x.raiz)}</span>
+      <span class="dp-grupo" data-tip="${esc(dpGrupo(x))}">${esc(x.gana)}${x.signo ? ', ' + esc(x.signo) : ''}</span>
+      <div class="refs">nº ${esc(dpNum(x))}${x.letra ? '' : ''}</div>
+    </div>
+    <div class="col-sig"><div class="glosa">${hi(x.glosa)}</div>
+      ${x.es ? `<div class="es">${hi(x.es)}<span class="prestado" data-tip="${esc('Español prestado|Andersen y Smith no traducen. Este español es el que Nandisena da, en «Pali Roots in Saddanīti», para esta misma glosa pāḷi («' + x.glosa + '») en el Saddanīti; no es una traducción del Dhātupāṭha.')}">ES·N</span></div>` : ''}
+      <div class="en">${hi(x.en)}</div>${dudas}</div>
+    <div class="col-skt">${notas || '<span class="nada">sin nota crítica</span>'}</div>
+  </div>`;
+}
+
+function dmHTML(e){
+  const versos = e.versos.map(v => `<span>${hi(v)}</span>`).join('');
+  const notas = e.notas.length
+    ? `<div class="dm-notas">` + e.notas.map(n =>
+        `<p><b>${n.raiz_n === null ? 'estrofa' : 'raíz ' + n.raiz_n}</b>${hi(n.texto)}</p>`
+      ).join('') + `</div>`
+    : '';
+  const gana = e.gana
+    ? `<span class="dp-grupo" data-tip="${esc('Grupo ' + e.gana + (e.signo ? ', ' + e.signo : '') +
+        '|Sección del poema, en la numeración de grupos de esta edición.')}">${esc(e.gana)}${e.signo ? ', ' + esc(e.signo) : ''}</span>`
+    : '';
+  return `<div class="dm" id="dm${e.n}">
+    <div class="dm-cab"><span class="dm-n">Estrofa ${e.n}</span>${gana}
+      <span class="dm-rango">${esc(dmRango(e))}</span></div>
+    <p class="dm-versos">${versos}</p>${notas}
+  </div>`;
+}
+
+function sigHTML(s, i){
+  const chips = s.raices.map(x =>
+    `<button class="chip" data-raiz="${esc(x.raiz)}">${hi(x.raiz)}<u>${esc(x.ref.toUpperCase())}</u></button>`).join('');
+  return `<div class="sig" id="s${i}">
+    <div class="cab"><span class="glosa">${hi(s.glosa)}</span></div>
+    <div class="es">${hi(s.es)}</div>
+    <div class="en">${hi(s.en)}</div>
+    <div class="lista">${chips}</div>
+  </div>`;
+}
+
+function render(){
+  const esRaices = pestanya === 'raices', esDP = pestanya === 'dhatupatha',
+        esDM = pestanya === 'dhatumanjusa';
+  const lista = esRaices ? DATA.raices.filter(visibleRaiz)
+    : esDP ? DP.filter(x => !q || x._b.includes(fold(q)))
+    : esDM ? DM.filter(x => !q || x._b.includes(fold(q)))
+    : DATA.significados.filter(visibleSig);
+  const total = esRaices ? DATA.raices.length
+    : esDP ? DP.length : esDM ? DM.length : DATA.significados.length;
+
+  if(!lista.length){
+    out.innerHTML = `<div class="empty"><p>Nada que responda a esa búsqueda.</p>
+      <p class="lbl">Prueba con menos letras, o sin diacríticos.</p></div>`;
+    cnt.textContent = '0 de ' + total;
+    pintarAbc(new Map());
+    return;
+  }
+
+  const cuentas = new Map();
+  if(!esDM) lista.forEach(x => cuentas.set(x.letra, (cuentas.get(x.letra) || 0) + 1));
+  let h = '', letra = null;
+  lista.forEach((x, i) => {
+    if(esDM){ h += dmHTML(x); return; }
+    if(x.letra !== letra){
+      letra = x.letra;
+      h += `<div class="letra" id="L-${letra}"><h2>${esc(letra)}</h2>
+        <span class="rule"></span><span class="n">${cuentas.get(letra)}</span></div>`;
+    }
+    h += esRaices ? filaHTML(x)
+       : esDP ? dpFilaHTML(x)
+       : esDM ? dmHTML(x)
+       : sigHTML(x, DATA.significados.indexOf(x));
+  });
+  out.innerHTML = h;
+  cnt.textContent = `${lista.length} de ${total}` +
+    (esRaices ? ' raíces' : esDP ? ' entradas'
+     : esDM ? ' estrofas' : ' significados');
+  pintarAbc(cuentas);
+}
+
+/* ---------- índice alfabético ---------- */
+/* La cuenta debajo de cada letra evita la duda de si una letra apagada lo
+   está porque no hay nada o porque algo la esconde: si pone 0, no hay nada
+   que ver con lo que hay filtrado ahora mismo. */
+const SIN_INICIAL = ['ṅ','ṇ'];
+function pintarAbc(cuentas){
+  const el = document.getElementById('abc');
+  const N = {raices: ['raíz','raíces','ninguna raíz'],
+             significados: ['significado','significados','ningún significado'],
+             dhatupatha: ['entrada','entradas','ninguna entrada'],
+             dhatumanjusa: ['estrofa','estrofas','ninguna estrofa']}[pestanya];
+  const [una, plural, ninguno] = N;
+  el.innerHTML = ALFABETO.map(l => {
+    const n = cuentas.get(l) || 0;
+    const [clase, glosa] = claseDe(l);
+    const cuenta = n ? `${n} ${n === 1 ? una : plural}` : ninguno;
+    const tit = `${clase} «${l}»|${glosa}. ${mayus(cuenta)} ` +
+      `${n ? 'empiezan' : 'empieza'} por esta letra` +
+      (n ? ' en lo que hay a la vista.' : '.') +
+      (SIN_INICIAL.includes(l) ? ' Ninguna palabra pāḷi empieza por ella.' : '');
+    return `<button data-letra="${l}" data-tip="${esc(tit)}"${n ? '' : ' disabled'}>` +
+           `<i>${l}</i><small>${n}</small></button>`;
+  }).join('');
+}
+document.getElementById('abc').addEventListener('click', e => {
+  const b = e.target.closest('button[data-letra]');
+  if(!b || b.disabled) return;
+  const el = document.getElementById('L-' + b.dataset.letra);
+  if(el) saltarA(el);
+  if(innerWidth <= 900) cerrarSb();
+});
+
+/* ---------- desplegar una raíz ---------- */
+out.addEventListener('click', e => {
+  const b = e.target.closest('button[data-abre]');
+  if(!b) return;
+  const fila = b.closest('.fila');
+  const ya = fila.querySelector('.detalle');
+  if(ya){ ya.remove(); fila.classList.remove('abierta'); b.setAttribute('aria-expanded','false'); return; }
+  const r = DATA.raices.find(x => x.id === +b.dataset.abre);
+  fila.insertAdjacentHTML('beforeend', detalleHTML(r));
+  fila.classList.add('abierta');
+  b.setAttribute('aria-expanded','true');
+});
+
+/* ---------- ir de un significado a su raíz, y al revés ---------- */
+out.addEventListener('click', e => {
+  const c = e.target.closest('button[data-raiz]');
+  if(c){ irARaiz(c.dataset.raiz); return; }
+  const est = e.target.closest('button[data-estrofa]');
+  if(est){
+    cambiarPestanya('dhatumanjusa');
+    limpiarFiltros();
+    render();
+    const el = document.getElementById('dm' + est.dataset.estrofa);
+    if(el){
+      el.classList.remove('destacada'); void el.offsetWidth;
+      el.classList.add('destacada');
+      saltarA(el);
+    }
+    return;
+  }
+  const s = e.target.closest('button[data-busca-sig]');
+  if(s){
+    const r = DATA.raices.find(x => x.id === +s.dataset.buscaSig);
+    if(r && r.glosa) irASignificado(r.glosa);
+  }
+});
+
+function limpiarFiltros(){
+  q = ''; gana = 'all'; skt = 'all';
+  document.getElementById('q').value = '';
+  document.querySelectorAll('#f-gana button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'all'));
+  document.querySelectorAll('#f-skt button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'all'));
+}
+function irARaiz(raiz){
+  const r = DATA.raices.find(x => x.raices.includes(raiz))
+         || DATA.raices.find(x => x.raices.some(y => fold(y) === fold(raiz)));
+  if(!r) return;
+  cambiarPestanya('raices');
+  limpiarFiltros();
+  render();
+  const el = document.getElementById('r' + r.id);
+  if(!el) return;
+  el.classList.remove('destacada'); void el.offsetWidth; el.classList.add('destacada');
+  saltarA(el);
+}
+function irASignificado(glosa){
+  cambiarPestanya('significados');
+  limpiarFiltros();
+  q = glosa;
+  document.getElementById('q').value = glosa;
+  render();
+}
+
+/* ---------- pestañas ---------- */
+const ROTULOS = {
+  raices: ['Raíces por inicial',
+           'Buscar raíz o significado — «paca», «gam», «cocinar», «gatyatthe»…'],
+  significados: ['Significados por inicial',
+           'Buscar un sentido — «ir», «hablar», «gatiyaṃ», «hiṃsā»…'],
+  dhatupatha: ['Dhātupāṭha por inicial',
+           'Buscar en el Dhātupāṭha — «bhū», «pāke», «cutting»…'],
+  dhatumanjusa: ['Estrofas',
+           'Buscar en el poema — «bhū sattāyaṃ», «gatimhi», «Ckbip»…'],
+};
+function cambiarPestanya(v){
+  pestanya = v;
+  document.querySelectorAll('.tabs button').forEach(b =>
+    b.setAttribute('aria-selected', b.dataset.tab === v));
+  const raices = v === 'raices';
+  document.getElementById('f-gana').style.display = raices ? '' : 'none';
+  document.getElementById('f-skt').style.display = raices ? '' : 'none';
+  document.getElementById('abc-tit').textContent = ROTULOS[v][0];
+  // La Dhātumañjūsā es un poema: se lee seguido, no por inicial.
+  document.getElementById('abc').style.display = v === 'dhatumanjusa' ? 'none' : '';
+  document.getElementById('abc-tit').style.display = v === 'dhatumanjusa' ? 'none' : '';
+  document.getElementById('sb-dm').style.display = v === 'dhatumanjusa' ? '' : 'none';
+  document.getElementById('q').placeholder = ROTULOS[v][1];
+}
+document.querySelector('.tabs').addEventListener('click', e => {
+  const b = e.target.closest('button[data-tab]');
+  if(!b || b.dataset.tab === pestanya) return;
+  cambiarPestanya(b.dataset.tab);
+  render();
+  scrollTo({top:0, behavior:'instant'});
+});
+
+/* ---------- buscador y filtros ---------- */
+let tecla = null;
+document.getElementById('q').addEventListener('input', e => {
+  clearTimeout(tecla);
+  const v = e.target.value;
+  tecla = setTimeout(() => { q = v; render(); }, 110);
+});
+
+function botones(cont, defs, set){
+  const el = document.getElementById(cont);
+  el.innerHTML = defs.map(([v, t, tit]) =>
+    `<button data-v="${v}" aria-pressed="${v === 'all'}"` +
+    `${tit ? ` data-tip="${esc(tit)}"` : ''}>${t}</button>`).join('');
+  el.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if(!b) return;
+    set(b.dataset.v);
+    el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    render();
+  });
+}
+botones('f-gana', [['all','Gaṇa','Grupo — la clase de conjugación de la raíz']].concat(
+  Object.keys(GANAS_PALI).map(n => [n, ROM[+n], rotuloGana(n, GANAS_PALI)])),
+  v => { gana = v; });
+botones('f-skt', [['all','Todas'],['con','Con sánsc.','sólo las que tienen cognado sánscrito'],
+                  ['sin','Sin sánsc.','sólo las que no lo tienen']], v => { skt = v; });
+
+/* ---------- inglés a demanda ---------- */
+(function(){
+  const b = document.getElementById('en-btn');
+  const puesto = (() => { try{ return localStorage.getItem('pali_raices_en') === '1'; }catch(e){ return false; } })();
+  const aplicar = v => {
+    document.body.classList.toggle('con-en', v);
+    b.setAttribute('aria-pressed', v ? 'true' : 'false');
+    try{ localStorage.setItem('pali_raices_en', v ? '1' : '0'); }catch(e){}
+  };
+  aplicar(puesto);
+  b.onclick = () => aplicar(!document.body.classList.contains('con-en'));
+})();
+
+/* ---------- cuentas de las pestañas ---------- */
+document.getElementById('n-raices').textContent = DATA.raices.length;
+document.getElementById('n-significados').textContent = DATA.significados.length;
+if(DP.length){
+  document.getElementById('n-dhatupatha').textContent = DP.length;
+} else {
+  document.getElementById('tab-dhatupatha').remove();
+}
+if(DM.length){
+  document.getElementById('n-dhatumanjusa').textContent = DM.length;
+} else {
+  document.getElementById('tab-dhatumanjusa').remove();
+}
+
+/* ---------- insignia de versión ---------- */
+const VERSION = document.querySelector('meta[name=version]').content;
+const VERSION_DATE = document.querySelector('meta[name="version-date"]').content;
+const VERSION_NOTE = 'Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras.';
+(function(){
+  const badge = document.getElementById('vbadge');
+  const largo = new Date(VERSION_DATE + 'T12:00:00').toLocaleDateString('es',
+    {year:'numeric', month:'long', day:'numeric'});
+  badge.innerHTML = `v${VERSION} <time datetime="${VERSION_DATE}">${largo}</time>`;
+  badge.dataset.tip = VERSION_NOTE;
+  document.getElementById('vfoot').innerHTML =
+    `<strong>Versión ${VERSION}</strong> — <time datetime="${VERSION_DATE}">${largo}</time>. ${esc(VERSION_NOTE)}`;
+})();
+
+/* ---------- tema ---------- */
+const store = {
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+};
+const root = document.documentElement;
+const saved = store.get('pali_dark');
+if(saved === '1' || (saved === null && mq('(prefers-color-scheme: dark)')))
+  root.dataset.theme = 'dark';
+document.getElementById('theme').onclick = () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? '' : 'dark';
+  store.set('pali_dark', root.dataset.theme === 'dark' ? '1' : '0');
+};
+
+/* ---------- barra lateral ---------- */
+const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
+const cerrarSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
+document.getElementById('burger').onclick = () => {
+  sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+};
+document.getElementById('sbclose').onclick = cerrarSb;
+scrim.onclick = cerrarSb;
+addEventListener('keydown', e => { if(e.key === 'Escape') cerrarSb(); });
+
+/* Con 1.698 filas la página es muy alta: animar el salto de punta a punta
+   sólo hace esperar. Cerca ayuda a ver de dónde a dónde se va. */
+function saltarA(el){
+  if(!el || !el.scrollIntoView) return;
+  const cerca = Math.abs(el.getBoundingClientRect().top) < innerHeight * 2;
+  const suave = cerca && !mq('(prefers-reduced-motion: reduce)');
+  el.scrollIntoView({block:'start', behavior: suave ? 'smooth' : 'instant'});
+}
+
+/* ---------- copiar ---------- */
+function textoRaiz(r){
+  const L = [r.raices.join(' / ') + (r.glosa ? ' — ' + r.glosa : '')];
+  if(r.es) L.push('Español: ' + r.es);
+  if(r.en) L.push('Inglés: ' + r.en);
+  if(r.ref) L.push('Saddanīti-dhātumālā: ' + r.ref);
+  if(r.sanscrito.length){
+    L.push('Sánscrito: ' + r.sanscrito.join(' / ') +
+      (r.sanscrito_glosa ? ' — ' + r.sanscrito_glosa : ''));
+    if(r.sanscrito_ref) L.push('Pāṇinīya-dhātupāṭha: ' + r.sanscrito_ref);
+  }
+  r.notas.forEach(n => L.push('Nota ' + n.n + ': ' + n.texto));
+  L.push('', 'Raíces pāḷi · Instituto de Estudios Buddhistas Hispano',
+         'De «Pali Roots in Saddanīti», Ven. U Sīlānanda, ed. Bhikkhu Nandisena, CMBT 2005, p. ' + r.pagina,
+         location.href.split('#')[0] + '#r' + r.id);
+  return L.join('\n');
+}
+function avisoCopiado(btn){
+  const orig = btn.innerHTML;
+  btn.innerHTML = '✓ ¡Copiado!';
+  btn.classList.add('ok');
+  setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('ok'); }, 2000);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('button[data-share],button[data-copy]');
+  if(!b) return;
+  const id = +(b.dataset.share || b.dataset.copy);
+  const r = DATA.raices.find(x => x.id === id);
+  if(!r) return;
+  const texto = b.dataset.share
+    ? location.href.split('#')[0] + '#r' + id
+    : textoRaiz(r);
+  navigator.clipboard.writeText(texto).then(() => avisoCopiado(b));
+});
+
+/* La insignia de versión abre su nota al tocarla. */
+let puntero = 'mouse';
+addEventListener('pointerdown', e => { puntero = e.pointerType || 'mouse'; },
+  {capture:true, passive:true});
+const conRaton = () => puntero === 'mouse' && mq('(hover: hover)');
+(function(){
+  const b = document.getElementById('vbadge');
+  document.addEventListener('click', e => {
+    if(e.target.closest('#vbadge') && !conRaton()) b.classList.toggle('on');
+    else b.classList.remove('on');
+  });
+})();
+
+/* ---------- globo de ayuda ---------- */
+/* «data-tip» lleva «Título|Texto» o sólo el texto. Se pinta enseguida, se
+   abre también con el tabulador, y con el dedo lo abre un toque y lo cierra
+   otro, porque en táctil no existe el hover. */
+const tip = document.getElementById('tip');
+let tipT = null, tipDe = null;
+function colocarTip(el){
+  const r = el.getBoundingClientRect();
+  tip.style.visibility = 'hidden';
+  tip.classList.add('on');
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = r.left, y = r.bottom + 8;
+  if(x + w > innerWidth - 12) x = innerWidth - w - 12;
+  if(x < 12) x = 12;
+  if(y + h > innerHeight - 12) y = r.top - h - 8;
+  if(y < 8) y = 8;
+  tip.style.left = x + 'px';
+  tip.style.top = y + 'px';
+  tip.style.visibility = '';
+}
+function abrirTip(el){
+  const bruto = el.getAttribute('data-tip');
+  if(!bruto) return;
+  const corte = bruto.indexOf('|');
+  const titulo = corte < 0 ? '' : bruto.slice(0, corte);
+  const cuerpo = corte < 0 ? bruto : bruto.slice(corte + 1);
+  tip.innerHTML = (titulo ? `<b>${esc(titulo)}</b>` : '') + esc(cuerpo);
+  tip.setAttribute('aria-hidden', 'false');
+  colocarTip(el);
+  tipDe = el;
+}
+function cerrarTip(){
+  clearTimeout(tipT);
+  tip.classList.remove('on');
+  tip.setAttribute('aria-hidden', 'true');
+  tipDe = null;
+}
+document.addEventListener('mouseover', e => {
+  if(!conRaton()) return;
+  const el = e.target.closest('[data-tip]');
+  if(!el || el === tipDe) return;
+  clearTimeout(tipT);
+  tipT = setTimeout(() => abrirTip(el), 90);
+});
+document.addEventListener('mouseout', e => {
+  if(conRaton() && e.target.closest('[data-tip]')) cerrarTip();
+});
+document.addEventListener('focusin', e => {
+  const el = e.target.closest('[data-tip]');
+  if(el) abrirTip(el);
+});
+document.addEventListener('focusout', e => {
+  if(e.target.closest('[data-tip]')) cerrarTip();
+});
+/* Con el dedo: el primer toque enseña el globo; si el elemento además hace
+   algo —un filtro, una letra del índice—, el segundo toque lo hace. */
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-tip]');
+  if(!el){ cerrarTip(); return; }
+  if(conRaton()) return;
+  if(tipDe === el){ cerrarTip(); return; }
+  if(el.tagName === 'BUTTON' && !el.disabled) abrirTip(el);
+  else { e.preventDefault(); abrirTip(el); }
+}, true);
+addEventListener('scroll', cerrarTip, {passive:true});
+addEventListener('keydown', e => { if(e.key === 'Escape') cerrarTip(); });
+
+/* ---------- volver al inicio ---------- */
+const topBtn = document.getElementById('top-btn');
+addEventListener('scroll', () => {
+  topBtn.classList.toggle('show', scrollY > 600);
+}, {passive:true});
+topBtn.addEventListener('click', () => {
+  const suave = scrollY < innerHeight * 2
+    && !mq('(prefers-reduced-motion: reduce)');
+  scrollTo({top:0, behavior: suave ? 'smooth' : 'instant'});
+});
+
+/* Alto real de la barra pegajosa. */
+(function(){
+  const barra = document.querySelector('.bar');
+  if(!barra) return;
+  const medir = () => document.documentElement.style
+    .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
+  medir();
+  addEventListener('resize', medir);
+})();
+
+/* ---------- el desfile de la cabecera ---------- */
+(function(){
+  const lineas = [['paca','cocinar'],['gamu','ir'],['ñā','conocer'],
+                  ['bhū','ser, existir'],['kara','hacer'],['dhara','sostener']];
+  const el = document.getElementById('hero');
+  el.innerHTML = lineas.map(([r,g]) =>
+    `<div><b>${r}</b><span class="ref">${g}</span></div>`).join('');
+  const filas = el.querySelectorAll(':scope > div');
+  if(mq('(prefers-reduced-motion: reduce)')){
+    filas.forEach(f => f.classList.add('on'));
+    return;
+  }
+  filas.forEach((f,i) => setTimeout(() => f.classList.add('on'), 220 + i * 260));
+})();
+
+/* ---------- arranque ---------- */
+cambiarPestanya('raices');
+render();
+
+/* Si el enlace trae #rNNN, desplegar esa raíz. */
+(function(){
+  const m = /^#r(\d+)$/.exec(location.hash);
+  if(!m) return;
+  const el = document.getElementById('r' + m[1]);
+  if(!el) return;
+  el.querySelector('button[data-abre]')?.click();
+  saltarA(el);
+})();
+</script>
+</body>
+</html>

@@ -89,6 +89,14 @@ RECURSOS = [
      "todas las variantes de cada forma: nombres por género y tema, "
      "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
      "ignora los diacríticos y filtros por género y por tema."),
+    ("raices/", "__RAICES_BADGE__", "Raíces pāḷi comparadas con las sánscritas",
+     "Las raíces de la <i>Dhātumālā</i> del <i>Saddanīti</i> con su "
+     "significado en español y en inglés, la raíz sánscrita correspondiente "
+     "cuando la hay, y el <i>gaṇa</i> y la página de cada una, del libro "
+     "<i>Pali Roots in Saddanīti</i> del Ven. U Sīlānanda, editado por "
+     "Bhikkhu Nandisena. Con el índice inverso, que va del "
+     "sentido a las raíces que lo expresan, y el <i>Dhātupāṭha</i> y la "
+     "<i>Dhātumañjūsā</i> de Andersen y Smith concordados lema a lema."),
 ]
 
 # Fuera de este sitio. Van en su propia sección y marcadas como externas:
@@ -223,6 +231,24 @@ def tablas_paradigmas():
                if x.get("genero") != "sufijos")
 
 
+def cuenta_raices():
+    """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "raices", "raices.json")
+    if not os.path.exists(p):
+        return None
+    d = json.load(open(p, encoding="utf-8"))
+    rs = d.get("raices", [])
+    dp = os.path.join(RAIZ, "recursos", "raices", "dhatupatha.json")
+    dm = os.path.join(RAIZ, "recursos", "raices", "dhatumanjusa.json")
+    n_dp = n_dm = 0
+    if os.path.exists(dp):
+        n_dp = len(json.load(open(dp, encoding="utf-8")).get("entradas", []))
+    if os.path.exists(dm):
+        n_dm = len(json.load(open(dm, encoding="utf-8")).get("estrofas", []))
+    return len(rs), sum(1 for r in rs if r.get("sanscrito")), n_dp, n_dm
+
+
 # ---------------------------------------------------------------- páginas
 
 def portada(pub):
@@ -320,9 +346,20 @@ def indice_recursos():
     badge = "{0} reglas · {1} formas".format(*conteo) if conteo else "sandhi"
     n_par = tablas_paradigmas()
     badge_par = "{0} paradigmas".format(n_par) if n_par else "paradigmas"
-    insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par}
+    n_rai = cuenta_raices()
+    if n_rai:
+        badge_rai = "{0} raíces · {1} con sánscrito".format(n_rai[0], n_rai[1])
+        if n_rai[2]:
+            badge_rai += " · {0} del Dhātupāṭha".format(n_rai[2])
+        if n_rai[3]:
+            badge_rai += " · {0} estrofas".format(n_rai[3])
+    else:
+        badge_rai = "raíces"
+    insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
+                 "__RAICES_BADGE__": badge_rai}
     tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc)
-                for href, ins, titulo, desc in RECURSOS]
+                for href, ins, titulo, desc in RECURSOS
+                if ins != "__RAICES_BADGE__" or n_rai]
 
     externas = [tarjeta(href, ins, titulo, desc, externo=True)
                 for href, ins, titulo, desc in CORPUS]

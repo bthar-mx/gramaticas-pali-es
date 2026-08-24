@@ -1,0 +1,10698 @@
+{
+ "_nota": "El Dhātupāṭha pāḷi, con sus 639 raíces numeradas. Transcrito de «The Pāli Dhātupāṭha and the Dhātumañjūsā», ed. Dines Andersen y Helmer Smith, Copenhague 1921, en la transcripción de A. Ruiz-Falqués (Taunggyi, 2019). El texto es literal. Las notas son las notas críticas de la edición, que dan las lecturas de los manuscritos. «dudoso» marca la entrada que el original no deja separar en raíz y significado; «inferido», aquella cuyo número de raíces no viene de un rango explícito sino de la propia numeración de la edición, y sólo cuando el reparto cuadra exactamente.",
+ "fuente": {
+  "titulo": "The Pāli Dhātupāṭha and the Dhātumañjūsā",
+  "editores": "Dines Andersen y Helmer Smith",
+  "lugar": "Copenhague",
+  "anyo": 1921,
+  "transcripcion": "A. Ruiz-Falqués, Taunggyi, 2019"
+ },
+ "grupos": {
+  "I": "bhuvādayo",
+  "II": "rudhādayo",
+  "III": "divādayo",
+  "IV": "tudādayo",
+  "V": "jyādayo",
+  "VI": "kyādayo",
+  "VII": "svādayo",
+  "VIII": "tanādayo",
+  "IX": "curādayo"
+ },
+ "entradas": [
+  {
+   "n": 1,
+   "sufijo": "",
+   "raiz": "bhū",
+   "glosa": "sattāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 2,
+   "sufijo": "",
+   "raiz": "ku",
+   "glosa": "sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 3,
+   "sufijo": "",
+   "raiz": "aṃka",
+   "glosa": "lakkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "lakkhane, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 4,
+   "sufijo": "",
+   "raiz": "saṃkha",
+   "glosa": "saṃkāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 5,
+   "sufijo": "",
+   "raiz": "vaṃka",
+   "glosa": "koṭilye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 6,
+   "sufijo": "",
+   "raiz": "kuka",
+   "glosa": "ādāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 7,
+   "sufijo": "",
+   "raiz": "vaka",
+   "glosa": "ādāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 8,
+   "sufijo": "",
+   "raiz": "siloka",
+   "glosa": "saṃghāte",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 9,
+   "sufijo": "",
+   "raiz": "sakka",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 10,
+   "sufijo": "",
+   "raiz": "ṭīka",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "K",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 11,
+   "sufijo": "",
+   "raiz": "khi",
+   "glosa": "khaye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 12,
+   "sufijo": "",
+   "raiz": "sikkha",
+   "glosa": "vijjopādāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 13,
+   "sufijo": "",
+   "raiz": "bhikkha",
+   "glosa": "yācane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 14,
+   "sufijo": "",
+   "raiz": "dikkha",
+   "glosa": "muṇḍiyopanayana-niyama-vatādesesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "muḍiyopanāyana-, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 15,
+   "sufijo": "",
+   "raiz": "ikkha",
+   "glosa": "dassane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 16,
+   "sufijo": "",
+   "raiz": "cakkha",
+   "glosa": "dassane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 17,
+   "sufijo": "",
+   "raiz": "bhakkha",
+   "glosa": "adane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 18,
+   "sufijo": "",
+   "raiz": "rakkha",
+   "glosa": "pālane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 19,
+   "sufijo": "",
+   "raiz": "cikkha",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 20,
+   "sufijo": "",
+   "raiz": "kaṃkha",
+   "glosa": "Icchāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "KH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 21,
+   "sufijo": "",
+   "raiz": "magga",
+   "glosa": "anvesane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 22,
+   "sufijo": "",
+   "raiz": "jagga",
+   "glosa": "niddākhaye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 23,
+   "sufijo": "",
+   "raiz": "laga",
+   "glosa": "saṅge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "laṅga, Ckp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 24,
+   "sufijo": "",
+   "raiz": "maṅga",
+   "glosa": "maṅgalye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 25,
+   "sufijo": "",
+   "raiz": "aṅga",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 26,
+   "sufijo": "",
+   "raiz": "iṅga",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 27,
+   "sufijo": "",
+   "raiz": "raṅga",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 28,
+   "sufijo": "",
+   "raiz": "laṅga",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 29,
+   "sufijo": "",
+   "raiz": "vaṅga",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "G",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 30,
+   "sufijo": "",
+   "raiz": "silāgha",
+   "glosa": "katthane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "GH",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "kathane, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 31,
+   "sufijo": "",
+   "raiz": "jaggha",
+   "glosa": "hasane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "GH",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "jagga niddākhaye, jagga hasane, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 32,
+   "sufijo": "",
+   "raiz": "aggha",
+   "glosa": "agghane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "GH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 33,
+   "sufijo": "",
+   "raiz": "laṃgha",
+   "glosa": "gati-sosanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "GH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 34,
+   "sufijo": "",
+   "raiz": "siṃgha",
+   "glosa": "ghāyane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "GH",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 35,
+   "sufijo": "",
+   "raiz": "cu",
+   "glosa": "cavane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 36,
+   "sufijo": "",
+   "raiz": "vaca",
+   "glosa": "vyattavacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "bbattavacaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 37,
+   "sufijo": "",
+   "raiz": "ruca",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 38,
+   "sufijo": "",
+   "raiz": "yāca",
+   "glosa": "yācane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 39,
+   "sufijo": "",
+   "raiz": "suca",
+   "glosa": "soke",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 40,
+   "sufijo": "",
+   "raiz": "paca",
+   "glosa": "pāke",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 41,
+   "sufijo": "",
+   "raiz": "saca",
+   "glosa": "samavāye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [
+    "paca, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 42,
+   "sufijo": "",
+   "raiz": "kiñca",
+   "glosa": "maddane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 43,
+   "sufijo": "",
+   "raiz": "luñca",
+   "glosa": "apanayane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 44,
+   "sufijo": "",
+   "raiz": "riñca",
+   "glosa": "riñcane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 45,
+   "sufijo": "",
+   "raiz": "añca",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 46,
+   "sufijo": "",
+   "raiz": "vañca",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 47,
+   "sufijo": "",
+   "raiz": "acca",
+   "glosa": "pūjāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 48,
+   "sufijo": "",
+   "raiz": "añca",
+   "glosa": "pūjāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "C",
+   "paginas": [
+    7
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 49,
+   "sufijo": "",
+   "raiz": "puccha",
+   "glosa": "pucchane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 50,
+   "sufijo": "",
+   "raiz": "muccha",
+   "glosa": "mohe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 51,
+   "sufijo": "",
+   "raiz": "taccha",
+   "glosa": "tanukaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 52,
+   "sufijo": "",
+   "raiz": "uñcha",
+   "glosa": "uñche",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 53,
+   "sufijo": "",
+   "raiz": "añcha",
+   "glosa": "āyāme",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 54,
+   "sufijo": "",
+   "raiz": "lañcha",
+   "glosa": "lakkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 55,
+   "sufijo": "",
+   "raiz": "puñcha",
+   "glosa": "puñchane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "CH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 56,
+   "sufijo": "",
+   "raiz": "ji",
+   "glosa": "jaye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 57,
+   "sufijo": "",
+   "raiz": "ju",
+   "glosa": "jave",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 58,
+   "sufijo": "",
+   "raiz": "aja",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 59,
+   "sufijo": "",
+   "raiz": "vaja",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 60,
+   "sufijo": "",
+   "raiz": "rāja",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 61,
+   "sufijo": "",
+   "raiz": "bhaja",
+   "glosa": "sevāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 62,
+   "sufijo": "",
+   "raiz": "yaja",
+   "glosa": "devapūja- saṅgatikaraṇa-dānesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "devapūjāyaṃ gatikaraṇa-, Ckp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 63,
+   "sufijo": "",
+   "raiz": "tija",
+   "glosa": "nisāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 64,
+   "sufijo": "",
+   "raiz": "sañja",
+   "glosa": "vissajjanāliṅgananimmānesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "saja, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 65,
+   "sufijo": "",
+   "raiz": "caja",
+   "glosa": "hāniyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "vañja, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 66,
+   "sufijo": "",
+   "raiz": "rañja",
+   "glosa": "rāge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 67,
+   "sufijo": "",
+   "raiz": "sañja",
+   "glosa": "saṅge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 68,
+   "sufijo": "",
+   "raiz": "bhañja",
+   "glosa": "omaddane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 69,
+   "sufijo": "",
+   "raiz": "añja",
+   "glosa": "vyatti-makkhaṇa-gati-kantisu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 70,
+   "sufijo": "",
+   "raiz": "mujja",
+   "glosa": "mujjane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 71,
+   "sufijo": "",
+   "raiz": "majja",
+   "glosa": "saṃsuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 72,
+   "sufijo": "",
+   "raiz": "lajja",
+   "glosa": "lajjane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 73,
+   "sufijo": "",
+   "raiz": "ajja",
+   "glosa": "ajjane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 74,
+   "sufijo": "",
+   "raiz": "sajja",
+   "glosa": "ajjane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 75,
+   "sufijo": "",
+   "raiz": "tajja",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 76,
+   "sufijo": "",
+   "raiz": "gajja",
+   "glosa": "sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 77,
+   "sufijo": "",
+   "raiz": "guja",
+   "glosa": "avyatte sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "kuja, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 78,
+   "sufijo": "",
+   "raiz": "kūja",
+   "glosa": "avyatte sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "kuja, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 79,
+   "sufijo": "",
+   "raiz": "bhajja",
+   "glosa": "pāke",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 80,
+   "sufijo": "",
+   "raiz": "vīja",
+   "glosa": "vījane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 81,
+   "sufijo": "",
+   "raiz": "khañja",
+   "glosa": "gativekalye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 82,
+   "sufijo": "",
+   "raiz": "eja",
+   "glosa": "kampane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "J",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 83,
+   "sufijo": "",
+   "raiz": "ujjha",
+   "glosa": "ussagge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "JH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 84,
+   "sufijo": "",
+   "raiz": "aṭa",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 85,
+   "sufijo": "",
+   "raiz": "paṭa",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 86,
+   "sufijo": "",
+   "raiz": "raṭa",
+   "glosa": "paribhāsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 87,
+   "sufijo": "",
+   "raiz": "naṭa",
+   "glosa": "nāṭye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "nāṭṭe, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 88,
+   "sufijo": "",
+   "raiz": "ghaṭṭa",
+   "glosa": "ghaṭṭane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 89,
+   "sufijo": "",
+   "raiz": "vaṭṭa",
+   "glosa": "vaṭṭane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 90,
+   "sufijo": "",
+   "raiz": "kuṭa",
+   "glosa": "cchedane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 91,
+   "sufijo": "",
+   "raiz": "koṭṭa",
+   "glosa": "cchedane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 92,
+   "sufijo": "",
+   "raiz": "vaṇṭa",
+   "glosa": "vibhājane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 93,
+   "sufijo": "",
+   "raiz": "kaṭa",
+   "glosa": "maddane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 94,
+   "sufijo": "",
+   "raiz": "bhaṭa",
+   "glosa": "bhatiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 95,
+   "sufijo": "",
+   "raiz": "jaṭa",
+   "glosa": "saṃghāte",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "jiṭa, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 96,
+   "sufijo": "",
+   "raiz": "jhaṭa",
+   "glosa": "saṃghāte",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "jiṭa, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 97,
+   "sufijo": "",
+   "raiz": "piṭa",
+   "glosa": "saṃghāte",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "jiṭa, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 98,
+   "sufijo": "",
+   "raiz": "ghaṭa",
+   "glosa": "īhāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṭ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 99,
+   "sufijo": "",
+   "raiz": "paṭha",
+   "glosa": "uccāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "ṬH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 100,
+   "sufijo": "",
+   "raiz": "saṭha",
+   "glosa": "ketave",
+   "gana": "I",
+   "signo": "a",
+   "letra": "ṬH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 101,
+   "sufijo": "",
+   "raiz": "haṭha",
+   "glosa": "balakkhāre",
+   "gana": "I",
+   "signo": "a",
+   "letra": "ṬH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 102,
+   "sufijo": "",
+   "raiz": "kaṇḍa",
+   "glosa": "bhedane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "khaṇḍa bhedaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 103,
+   "sufijo": "",
+   "raiz": "maṇḍa",
+   "glosa": "bhūsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 104,
+   "sufijo": "",
+   "raiz": "paṇḍa",
+   "glosa": "liṅgavekalle",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "liṅgavekalye, Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 105,
+   "sufijo": "",
+   "raiz": "khaṇḍa",
+   "glosa": "cchedane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "Omitted in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 106,
+   "sufijo": "",
+   "raiz": "muṇḍa",
+   "glosa": "khaṇḍane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 107,
+   "sufijo": "",
+   "raiz": "kuṇḍa",
+   "glosa": "dāhe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 108,
+   "sufijo": "",
+   "raiz": "hiṇḍa",
+   "glosa": "āhiṇḍane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḍ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 109,
+   "sufijo": "",
+   "raiz": "vaḍḍha",
+   "glosa": "vaḍḍhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "ḌH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 110,
+   "sufijo": "",
+   "raiz": "kaḍḍha",
+   "glosa": "kaḍḍhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "ḌH",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 111,
+   "sufijo": "",
+   "raiz": "bhaṇa",
+   "glosa": "bhaṇane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 112,
+   "sufijo": "",
+   "raiz": "paṇa",
+   "glosa": "vyavahāratthutisu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [
+    "-tthutigatisu, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 113,
+   "sufijo": "",
+   "raiz": "kaṇa",
+   "glosa": "nimīlane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 114,
+   "sufijo": "",
+   "raiz": "aṇa",
+   "glosa": "saddatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 115,
+   "sufijo": "",
+   "raiz": "raṇa",
+   "glosa": "saddatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 116,
+   "sufijo": "",
+   "raiz": "maṇa",
+   "glosa": "saddatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 117,
+   "sufijo": "",
+   "raiz": "kaṇa",
+   "glosa": "saddatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 118,
+   "sufijo": "",
+   "raiz": "kvaṇa",
+   "glosa": "saddatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ṇ",
+   "paginas": [
+    8
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 119,
+   "sufijo": "",
+   "raiz": "vatta",
+   "glosa": "vattane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "T",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "vaṇṇa vaṇṇaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 120,
+   "sufijo": "",
+   "raiz": "juta",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "T",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "juti, Mss.; dittiyaṃ in Ck corrected from jutirittiyaṃ."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 121,
+   "sufijo": "",
+   "raiz": "yata",
+   "glosa": "yatane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "T",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 122,
+   "sufijo": "",
+   "raiz": "kita",
+   "glosa": "nivāsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "T",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "nivāse, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 123,
+   "sufijo": "",
+   "raiz": "pata",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "T",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 124,
+   "sufijo": "",
+   "raiz": "patha",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "T",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 125,
+   "sufijo": "",
+   "raiz": "thu",
+   "glosa": "abhitthave",
+   "gana": "I",
+   "signo": "a",
+   "letra": "TH",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 126,
+   "sufijo": "",
+   "raiz": "matha",
+   "glosa": "viloḷane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "TH",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "vilolane, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 127,
+   "sufijo": "",
+   "raiz": "mantha",
+   "glosa": "viloḷane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "TH",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "vilolane, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 128,
+   "sufijo": "",
+   "raiz": "kattha",
+   "glosa": "silāghāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "TH",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 129,
+   "sufijo": "",
+   "raiz": "nātha",
+   "glosa": "yācanopa- tāp’-issariyāsiṃsāsu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "TH",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 130,
+   "sufijo": "",
+   "raiz": "vyatha",
+   "glosa": "dukkha-bhaya-calanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "TH",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 131,
+   "sufijo": "",
+   "raiz": "dā",
+   "glosa": "dāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 132,
+   "sufijo": "",
+   "raiz": "du",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 133,
+   "sufijo": "",
+   "raiz": "dā",
+   "glosa": "dāve",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "dū, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 134,
+   "sufijo": "",
+   "raiz": "vada",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 135,
+   "sufijo": "",
+   "raiz": "vanda",
+   "glosa": "abhivādana-tthutisu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 136,
+   "sufijo": "",
+   "raiz": "nanda",
+   "glosa": "samiddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 137,
+   "sufijo": "",
+   "raiz": "ninda",
+   "glosa": "garahāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 138,
+   "sufijo": "",
+   "raiz": "kand’",
+   "glosa": "avahāna-rodanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 139,
+   "sufijo": "",
+   "raiz": "phanda",
+   "glosa": "kiñcicalane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 140,
+   "sufijo": "",
+   "raiz": "canda",
+   "glosa": "ditti-hilādanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 141,
+   "sufijo": "",
+   "raiz": "anda",
+   "glosa": "bandhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 142,
+   "sufijo": "",
+   "raiz": "inda",
+   "glosa": "paramissariye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 143,
+   "sufijo": "",
+   "raiz": "bhadda",
+   "glosa": "kalyāṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 144,
+   "sufijo": "",
+   "raiz": "ruda",
+   "glosa": "rodane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 145,
+   "sufijo": "",
+   "raiz": "unda",
+   "glosa": "kiledane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "kilodane, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 146,
+   "sufijo": "",
+   "raiz": "muda",
+   "glosa": "tose",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "tosane, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 147,
+   "sufijo": "",
+   "raiz": "sāda",
+   "glosa": "assādane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 148,
+   "sufijo": "",
+   "raiz": "gada",
+   "glosa": "vyattavacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 149,
+   "sufijo": "",
+   "raiz": "sanda",
+   "glosa": "passavane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 150,
+   "sufijo": "",
+   "raiz": "sada",
+   "glosa": "visaraṇa-gaty-avasādanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "-gaty-avasādana-dānesu, Ci, -gaty-āvasādanā-dānesu, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 151,
+   "sufijo": "",
+   "raiz": "sūda",
+   "glosa": "kkharaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "suda, Mss.; kkaraṇe, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 152,
+   "sufijo": "",
+   "raiz": "hilāda",
+   "glosa": "sukhe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 153,
+   "sufijo": "",
+   "raiz": "nada",
+   "glosa": "avyattasadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "avyatte sadde, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 154,
+   "sufijo": "",
+   "raiz": "ada",
+   "glosa": "bhakkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 155,
+   "sufijo": "",
+   "raiz": "khāda",
+   "glosa": "bhakkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 156,
+   "sufijo": "",
+   "raiz": "madda",
+   "glosa": "maddane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 157,
+   "sufijo": "",
+   "raiz": "adda",
+   "glosa": "gati-yācanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 158,
+   "sufijo": "",
+   "raiz": "dalidda",
+   "glosa": "duggatiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 159,
+   "sufijo": "",
+   "raiz": "rada",
+   "glosa": "vilekhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [
+    "vilekhaṇe, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 160,
+   "sufijo": "",
+   "raiz": "mida",
+   "glosa": "snehane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 161,
+   "sufijo": "",
+   "raiz": "khuda",
+   "glosa": "jighacchāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 162,
+   "sufijo": "",
+   "raiz": "sida",
+   "glosa": "pāke",
+   "gana": "I",
+   "signo": "a",
+   "letra": "D",
+   "paginas": [
+    9
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 163,
+   "sufijo": "",
+   "raiz": "dhā",
+   "glosa": "dhāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 164,
+   "sufijo": "",
+   "raiz": "dhe",
+   "glosa": "pāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 165,
+   "sufijo": "",
+   "raiz": "edha",
+   "glosa": "vuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "edha vuddhiyaṃ, Ci.",
+    "vaddha, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 166,
+   "sufijo": "",
+   "raiz": "vadha",
+   "glosa": "vuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "edha vuddhiyaṃ, Ci.",
+    "vaddha, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 167,
+   "sufijo": "",
+   "raiz": "gādha",
+   "glosa": "patiṭṭhāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 168,
+   "sufijo": "",
+   "raiz": "vidha",
+   "glosa": "bādhāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "So Ci; vi bādhāyaṃ, Ck; bādha vibādhāyaṃ, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 169,
+   "sufijo": "",
+   "raiz": "vadha",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": true
+  },
+  {
+   "n": 170,
+   "sufijo": "",
+   "raiz": "sidha",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "Omitted in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 171,
+   "sufijo": "",
+   "raiz": "vidha",
+   "glosa": "vedhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 172,
+   "sufijo": "",
+   "raiz": "vadha",
+   "glosa": "bandhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 173,
+   "sufijo": "",
+   "raiz": "indha",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "inda, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 174,
+   "sufijo": "",
+   "raiz": "vana",
+   "glosa": "sambhattiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "vaṇṇa, Cp (omitting sana)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 175,
+   "sufijo": "",
+   "raiz": "sana",
+   "glosa": "sambhattiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "vaṇṇa, Cp (omitting sana)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 176,
+   "sufijo": "",
+   "raiz": "ana",
+   "glosa": "pāṇāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 177,
+   "sufijo": "",
+   "raiz": "kana",
+   "glosa": "ditti-gati-kantisu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "vaṇṇa vaṇṇaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 178,
+   "sufijo": "",
+   "raiz": "kana",
+   "glosa": "avadāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "juti, Mss.; dittiyaṃ in Ck corrected from jutirittiyaṃ."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 179,
+   "sufijo": "",
+   "raiz": "khana",
+   "glosa": "avadāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "DH",
+   "paginas": [
+    9,
+    10
+   ],
+   "notas": [
+    "juti, Mss.; dittiyaṃ in Ck corrected from jutirittiyaṃ."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 180,
+   "sufijo": "",
+   "raiz": "pu",
+   "glosa": "pavane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 181,
+   "sufijo": "",
+   "raiz": "gupa",
+   "glosa": "rakkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 182,
+   "sufijo": "",
+   "raiz": "tapa",
+   "glosa": "santāpe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 183,
+   "sufijo": "",
+   "raiz": "dhūpa",
+   "glosa": "santāpe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 184,
+   "sufijo": "",
+   "raiz": "sapa",
+   "glosa": "akkose",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 185,
+   "sufijo": "",
+   "raiz": "vepa",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 186,
+   "sufijo": "",
+   "raiz": "kampa",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 187,
+   "sufijo": "",
+   "raiz": "rapa",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 188,
+   "sufijo": "",
+   "raiz": "lapa",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 189,
+   "sufijo": "",
+   "raiz": "japa",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 190,
+   "sufijo": "",
+   "raiz": "jappa",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 191,
+   "sufijo": "",
+   "raiz": "cupa",
+   "glosa": "mandagamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 192,
+   "sufijo": "",
+   "raiz": "vapa",
+   "glosa": "bījanikkhepe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 193,
+   "sufijo": "",
+   "raiz": "tappa",
+   "glosa": "santappane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 194,
+   "sufijo": "",
+   "raiz": "sappa",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 195,
+   "sufijo": "",
+   "raiz": "kappa",
+   "glosa": "sāmatthiye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "P",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 196,
+   "sufijo": "",
+   "raiz": "puppha",
+   "glosa": "vikasane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "PH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 197,
+   "sufijo": "",
+   "raiz": "cumba",
+   "glosa": "vadanasaṃyoge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "B",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 198,
+   "sufijo": "",
+   "raiz": "ramba",
+   "glosa": "avasaṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "B",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 199,
+   "sufijo": "",
+   "raiz": "lamba",
+   "glosa": "avasaṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "B",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 200,
+   "sufijo": "",
+   "raiz": "kamba",
+   "glosa": "saṃvaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "B",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 201,
+   "sufijo": "",
+   "raiz": "samba",
+   "glosa": "maṇḍane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "B",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 202,
+   "sufijo": "",
+   "raiz": "amba",
+   "glosa": "sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "B",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 203,
+   "sufijo": "",
+   "raiz": "bhī",
+   "glosa": "bhaye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 204,
+   "sufijo": "",
+   "raiz": "labha",
+   "glosa": "lābhe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 205,
+   "sufijo": "",
+   "raiz": "rabha",
+   "glosa": "ārambhe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 206,
+   "sufijo": "",
+   "raiz": "kubha",
+   "glosa": "sañcalane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 207,
+   "sufijo": "",
+   "raiz": "subha",
+   "glosa": "sobhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 208,
+   "sufijo": "",
+   "raiz": "jambha",
+   "glosa": "gattavināme",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 209,
+   "sufijo": "",
+   "raiz": "thambha",
+   "glosa": "patibandhe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 210,
+   "sufijo": "",
+   "raiz": "khambha",
+   "glosa": "patibandhe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 211,
+   "sufijo": "",
+   "raiz": "gabbha",
+   "glosa": "pāgabbhiye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 212,
+   "sufijo": "",
+   "raiz": "udrabha",
+   "glosa": "adane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 213,
+   "sufijo": "",
+   "raiz": "dubha",
+   "glosa": "jigiṃsāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "jighaṃsāyaṃ (?) Ck, cf. W. 26,88."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 214,
+   "sufijo": "",
+   "raiz": "sambha",
+   "glosa": "vissāse",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 215,
+   "sufijo": "",
+   "raiz": "yabha",
+   "glosa": "methune",
+   "gana": "I",
+   "signo": "a",
+   "letra": "BH",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 216,
+   "sufijo": "",
+   "raiz": "mū",
+   "glosa": "bandhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "mu, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 217,
+   "sufijo": "",
+   "raiz": "kama",
+   "glosa": "padavikkhepe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 218,
+   "sufijo": "",
+   "raiz": "khama",
+   "glosa": "sahane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 219,
+   "sufijo": "",
+   "raiz": "bhama",
+   "glosa": "anavaṭṭhāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "bhamu, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 220,
+   "sufijo": "",
+   "raiz": "sama",
+   "glosa": "parissame",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 221,
+   "sufijo": "",
+   "raiz": "vama",
+   "glosa": "uggirane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 222,
+   "sufijo": "",
+   "raiz": "kilama",
+   "glosa": "gilāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 223,
+   "sufijo": "",
+   "raiz": "klama",
+   "glosa": "gilāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 224,
+   "sufijo": "",
+   "raiz": "rama",
+   "glosa": "kīḷāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "kīlāyaṃ, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 225,
+   "sufijo": "",
+   "raiz": "nama",
+   "glosa": "namane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 226,
+   "sufijo": "",
+   "raiz": "yama",
+   "glosa": "uparame",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 227,
+   "sufijo": "",
+   "raiz": "dhama",
+   "glosa": "sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "dhamma, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 228,
+   "sufijo": "",
+   "raiz": "ama",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "M",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 229,
+   "sufijo": "",
+   "raiz": "sāya",
+   "glosa": "sāyane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 230,
+   "sufijo": "",
+   "raiz": "daya",
+   "glosa": "dāna-gati-hiṃsādānesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 231,
+   "sufijo": "",
+   "raiz": "aya",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "232bis, paya only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 232,
+   "sufijo": "",
+   "raiz": "vaya",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "232bis, paya only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 233,
+   "sufijo": "",
+   "raiz": "maya",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "232bis, paya only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 234,
+   "sufijo": "",
+   "raiz": "raya",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "232bis, paya only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 235,
+   "sufijo": "",
+   "raiz": "naya",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "232bis, paya only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 236,
+   "sufijo": "",
+   "raiz": "tāya",
+   "glosa": "santāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 237,
+   "sufijo": "",
+   "raiz": "cāya",
+   "glosa": "pūjāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 238,
+   "sufijo": "",
+   "raiz": "sūya",
+   "glosa": "dosāvikaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [
+    "sūya, Mss.; probably artificially inferred from usūya; cf. Dhm. (342)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 239,
+   "sufijo": "",
+   "raiz": "pāya",
+   "glosa": "vuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Y",
+   "paginas": [
+    10
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 240,
+   "sufijo": "",
+   "raiz": "ru",
+   "glosa": "sadde",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 241,
+   "sufijo": "",
+   "raiz": "tara",
+   "glosa": "taraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 242,
+   "sufijo": "",
+   "raiz": "thara",
+   "glosa": "santharaṇe, pādipubbo va",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 243,
+   "sufijo": "",
+   "raiz": "cara",
+   "glosa": "gati-bhakkhaṇesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 244,
+   "sufijo": "",
+   "raiz": "pūra",
+   "glosa": "pūraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "pura, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 245,
+   "sufijo": "",
+   "raiz": "mara",
+   "glosa": "pāṇacāge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 246,
+   "sufijo": "",
+   "raiz": "dhara",
+   "glosa": "dhāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "dharane, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 247,
+   "sufijo": "",
+   "raiz": "dara",
+   "glosa": "dāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 248,
+   "sufijo": "",
+   "raiz": "sara",
+   "glosa": "gati-hiṃsā-cintāsu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 249,
+   "sufijo": "",
+   "raiz": "gara",
+   "glosa": "secane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 250,
+   "sufijo": "",
+   "raiz": "ghara",
+   "glosa": "secane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 251,
+   "sufijo": "",
+   "raiz": "khara",
+   "glosa": "vināse",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 252,
+   "sufijo": "",
+   "raiz": "jara",
+   "glosa": "jīraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 253,
+   "sufijo": "",
+   "raiz": "ara",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 254,
+   "sufijo": "",
+   "raiz": "jāgara",
+   "glosa": "niddākhaye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 255,
+   "sufijo": "",
+   "raiz": "vara",
+   "glosa": "varaṇa-sambhattisu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "R",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "vāraṇa-, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 256,
+   "sufijo": "",
+   "raiz": "pilu",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "256. pīlu, Ci.",
+    "257. pilu, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 257,
+   "sufijo": "",
+   "raiz": "pau",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "256. pīlu, Ci.",
+    "257. pilu, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 258,
+   "sufijo": "",
+   "raiz": "sala",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "256. pīlu, Ci.",
+    "257. pilu, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 259,
+   "sufijo": "",
+   "raiz": "hula",
+   "glosa": "gamanatthā",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "256. pīlu, Ci.",
+    "257. pilu, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 260,
+   "sufijo": "",
+   "raiz": "khala",
+   "glosa": "kampane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 261,
+   "sufijo": "",
+   "raiz": "cala",
+   "glosa": "kampane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 262,
+   "sufijo": "",
+   "raiz": "gala",
+   "glosa": "adane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 263,
+   "sufijo": "",
+   "raiz": "dala",
+   "glosa": "vidāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 264,
+   "sufijo": "",
+   "raiz": "jala",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 265,
+   "sufijo": "",
+   "raiz": "phulla",
+   "glosa": "vikasane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 266,
+   "sufijo": "",
+   "raiz": "phala",
+   "glosa": "nipphattiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 267,
+   "sufijo": "",
+   "raiz": "mīla",
+   "glosa": "nimīlane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 268,
+   "sufijo": "",
+   "raiz": "sīla",
+   "glosa": "samādhimhi",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 269,
+   "sufijo": "",
+   "raiz": "nīla",
+   "glosa": "vaṇṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 270,
+   "sufijo": "",
+   "raiz": "kīla",
+   "glosa": "bandhane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 271,
+   "sufijo": "",
+   "raiz": "kūla",
+   "glosa": "āvaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 272,
+   "sufijo": "",
+   "raiz": "sūla",
+   "glosa": "rujāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "Omitted in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 273,
+   "sufijo": "",
+   "raiz": "bala",
+   "glosa": "pāṇane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "pānane, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 274,
+   "sufijo": "",
+   "raiz": "vala",
+   "glosa": "saṃvaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 275,
+   "sufijo": "",
+   "raiz": "valla",
+   "glosa": "saṃvaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 276,
+   "sufijo": "",
+   "raiz": "vela",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 277,
+   "sufijo": "",
+   "raiz": "cela",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 278,
+   "sufijo": "",
+   "raiz": "kela",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 279,
+   "sufijo": "",
+   "raiz": "khela",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 280,
+   "sufijo": "",
+   "raiz": "pela",
+   "glosa": "calane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "L",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 281,
+   "sufijo": "",
+   "raiz": "vī",
+   "glosa": "tantusantāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 282,
+   "sufijo": "",
+   "raiz": "jīva",
+   "glosa": "pāṇadhāraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "pāna-, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 283,
+   "sufijo": "",
+   "raiz": "ava",
+   "glosa": "rakkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 284,
+   "sufijo": "",
+   "raiz": "deva",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "gamane, so all Mss.; cf. Dhm. (419)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 285,
+   "sufijo": "",
+   "raiz": "seva",
+   "glosa": "sevane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 286,
+   "sufijo": "",
+   "raiz": "kaṇḍu[va]",
+   "glosa": "kaṇḍuvane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "kaṇḍu, all Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 287,
+   "sufijo": "",
+   "raiz": "dhāva",
+   "glosa": "gatisuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [
+    "gatisuddhiyaṃ, all Mss., probably wrong reading for gativuddhiyaṃ; cf. Dhm. (421)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 288,
+   "sufijo": "",
+   "raiz": "dhova",
+   "glosa": "dhovane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "V",
+   "paginas": [
+    11
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 289,
+   "sufijo": "",
+   "raiz": "si",
+   "glosa": "sevāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 290,
+   "sufijo": "",
+   "raiz": "su",
+   "glosa": "passavane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "passave, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 291,
+   "sufijo": "",
+   "raiz": "su",
+   "glosa": "pasave",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 292,
+   "sufijo": "",
+   "raiz": "asa",
+   "glosa": "adane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "hasa, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 293,
+   "sufijo": "",
+   "raiz": "gasa",
+   "glosa": "adane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "hasa, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 294,
+   "sufijo": "",
+   "raiz": "ghasa",
+   "glosa": "adane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "hasa, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 295,
+   "sufijo": "",
+   "raiz": "isa",
+   "glosa": "icchāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 296,
+   "sufijo": "",
+   "raiz": "siṃsa",
+   "glosa": "icchāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 297,
+   "sufijo": "",
+   "raiz": "esa",
+   "glosa": "maggane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 298,
+   "sufijo": "",
+   "raiz": "gavesa",
+   "glosa": "maggane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 299,
+   "sufijo": "",
+   "raiz": "āsa",
+   "glosa": "upavesane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 300,
+   "sufijo": "",
+   "raiz": "sāsa",
+   "glosa": "anusiṭṭhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 301,
+   "sufijo": "",
+   "raiz": "sasa",
+   "glosa": "gati-hiṃsā- pāṇanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "sāsa, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 302,
+   "sufijo": "",
+   "raiz": "disa",
+   "glosa": "pekkhaṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 303,
+   "sufijo": "",
+   "raiz": "disa",
+   "glosa": "atisajjane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 304,
+   "sufijo": "",
+   "raiz": "kasa",
+   "glosa": "gati-hiṃsā-vilekhanesu",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 305,
+   "sufijo": "",
+   "raiz": "masa",
+   "glosa": "āmasane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 306,
+   "sufijo": "",
+   "raiz": "rusa",
+   "glosa": "rose",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "rosaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 307,
+   "sufijo": "",
+   "raiz": "pusa",
+   "glosa": "posane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 308,
+   "sufijo": "",
+   "raiz": "tusa",
+   "glosa": "tuṭṭhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "pura, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 309,
+   "sufijo": "",
+   "raiz": "haṃsa",
+   "glosa": "tuṭṭhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "pura, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 310,
+   "sufijo": "",
+   "raiz": "hasa",
+   "glosa": "hasane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "dharane, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 311,
+   "sufijo": "",
+   "raiz": "kusa",
+   "glosa": "akkose avhāne ca",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 312,
+   "sufijo": "",
+   "raiz": "issa",
+   "glosa": "issāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 313,
+   "sufijo": "",
+   "raiz": "daṃsa",
+   "glosa": "daṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 314,
+   "sufijo": "",
+   "raiz": "ḍamsa",
+   "glosa": "daṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 315,
+   "sufijo": "",
+   "raiz": "bhūsa",
+   "glosa": "alṃkāre",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 316,
+   "sufijo": "",
+   "raiz": "kāsa",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 317,
+   "sufijo": "",
+   "raiz": "bhāsa",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 318,
+   "sufijo": "",
+   "raiz": "ghaṃsa",
+   "glosa": "ghaṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 319,
+   "sufijo": "",
+   "raiz": "saṃsa",
+   "glosa": "pasaṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 320,
+   "sufijo": "",
+   "raiz": "dhaṃsa",
+   "glosa": "dhaṃsane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 321,
+   "sufijo": "",
+   "raiz": "piṃsa",
+   "glosa": "saṃcuṇṇane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [
+    "vāraṇa-, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 322,
+   "sufijo": "",
+   "raiz": "tasa",
+   "glosa": "ubbege",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 323,
+   "sufijo": "",
+   "raiz": "trasa",
+   "glosa": "ubbege",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 324,
+   "sufijo": "",
+   "raiz": "lasa",
+   "glosa": "kantiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 325,
+   "sufijo": "",
+   "raiz": "rasa",
+   "glosa": "assādane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 326,
+   "sufijo": "",
+   "raiz": "bhasa",
+   "glosa": "bhasmīkaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "S",
+   "paginas": [
+    11,
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 327,
+   "sufijo": "",
+   "raiz": "hā",
+   "glosa": "cāge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 328,
+   "sufijo": "",
+   "raiz": "miha",
+   "glosa": "īsahasane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [
+    "miha īhaṇe, Cp; miha īha hasane, Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 329,
+   "sufijo": "",
+   "raiz": "vhe",
+   "glosa": "avhāne",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 330,
+   "sufijo": "",
+   "raiz": "araha",
+   "glosa": "pūjāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 331,
+   "sufijo": "",
+   "raiz": "maha",
+   "glosa": "pūjāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 332,
+   "sufijo": "",
+   "raiz": "daha",
+   "glosa": "bhasmīkaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 333,
+   "sufijo": "",
+   "raiz": "vaha",
+   "glosa": "pāpuṇane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 334,
+   "sufijo": "",
+   "raiz": "ruha",
+   "glosa": "janane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 335,
+   "sufijo": "",
+   "raiz": "liha",
+   "glosa": "assādane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 336,
+   "sufijo": "",
+   "raiz": "diha",
+   "glosa": "upacaye",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 337,
+   "sufijo": "",
+   "raiz": "guha",
+   "glosa": "saṃvaraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 338,
+   "sufijo": "",
+   "raiz": "duha",
+   "glosa": "papūraṇe",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 339,
+   "sufijo": "",
+   "raiz": "raha",
+   "glosa": "cāge",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 340,
+   "sufijo": "",
+   "raiz": "garaha",
+   "glosa": "nindāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 341,
+   "sufijo": "",
+   "raiz": "saha",
+   "glosa": "marisane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 342,
+   "sufijo": "",
+   "raiz": "miha",
+   "glosa": "secane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 343,
+   "sufijo": "",
+   "raiz": "muha",
+   "glosa": "mucchāyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 344,
+   "sufijo": "",
+   "raiz": "baha",
+   "glosa": "vuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 345,
+   "sufijo": "",
+   "raiz": "braha",
+   "glosa": "vuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 346,
+   "sufijo": "",
+   "raiz": "brūha",
+   "glosa": "vuddhiyaṃ",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 347,
+   "sufijo": "",
+   "raiz": "īha",
+   "glosa": "ghaṭane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [
+    "ghaṭṭane, Cip; ghaṭṭhane, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 348,
+   "sufijo": "",
+   "raiz": "ūha",
+   "glosa": "vitakke",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 349,
+   "sufijo": "",
+   "raiz": "gāha",
+   "glosa": "viloḷane",
+   "gana": "I",
+   "signo": "a",
+   "letra": "H",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 350,
+   "sufijo": "",
+   "raiz": "khīḷa",
+   "glosa": "vihāre",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḷ",
+   "paginas": [
+    12
+   ],
+   "notas": [
+    "kila, Cp; cf. Dhm. (511)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 351,
+   "sufijo": "",
+   "raiz": "laḷa",
+   "glosa": "vilāse",
+   "gana": "I",
+   "signo": "a",
+   "letra": "Ḷ",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 352,
+   "sufijo": "",
+   "raiz": "hū",
+   "glosa": "sattāyaṃ",
+   "gana": "I",
+   "signo": "b",
+   "letra": null,
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": true,
+   "pegada": false
+  },
+  {
+   "n": 353,
+   "sufijo": "",
+   "raiz": "bhū",
+   "glosa": "sattāyaṃ",
+   "gana": "I",
+   "signo": "b",
+   "letra": null,
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": true,
+   "pegada": false
+  },
+  {
+   "n": 354,
+   "sufijo": "",
+   "raiz": "i",
+   "glosa": "ajjhena-gati- kantisu",
+   "gana": "I",
+   "signo": "b",
+   "letra": null,
+   "paginas": [
+    12
+   ],
+   "notas": [
+    "ajjhesana, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 355,
+   "sufijo": "",
+   "raiz": "khā",
+   "glosa": "kathane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "KH",
+   "paginas": [
+    12
+   ],
+   "notas": [
+    "pakathane, Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 356,
+   "sufijo": "",
+   "raiz": "khyā",
+   "glosa": "kathane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "KH",
+   "paginas": [
+    12
+   ],
+   "notas": [
+    "pakathane, Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 357,
+   "sufijo": "",
+   "raiz": "ji",
+   "glosa": "jaye",
+   "gana": "I",
+   "signo": "b",
+   "letra": "J",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 358,
+   "sufijo": "",
+   "raiz": "ñā",
+   "glosa": "avabodhane; Ṭh",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Ñ",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 359,
+   "sufijo": "",
+   "raiz": "ṭhā",
+   "glosa": "gatinivuttiyaṃ",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Ñ",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 360,
+   "sufijo": "",
+   "raiz": "ḍī",
+   "glosa": "ākāsagamane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Ḍ",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 361,
+   "sufijo": "",
+   "raiz": "ḷī",
+   "glosa": "ākāsagamane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Ḍ",
+   "paginas": [
+    12
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 362,
+   "sufijo": "",
+   "raiz": "nī",
+   "glosa": "pāpaṇe",
+   "gana": "I",
+   "signo": "b",
+   "letra": "N",
+   "paginas": [
+    13
+   ],
+   "notas": [
+    "papane, Ck; pāpunane, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 363,
+   "sufijo": "",
+   "raiz": "hana",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "I",
+   "signo": "b",
+   "letra": "N",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 364,
+   "sufijo": "",
+   "raiz": "pā",
+   "glosa": "pāne",
+   "gana": "I",
+   "signo": "b",
+   "letra": "P",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 365,
+   "sufijo": "",
+   "raiz": "pā",
+   "glosa": "rakkhaṇe",
+   "gana": "I",
+   "signo": "b",
+   "letra": "P",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 366,
+   "sufijo": "",
+   "raiz": "brū",
+   "glosa": "vacane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "B",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 367,
+   "sufijo": "",
+   "raiz": "bhā",
+   "glosa": "dittiyaṃ",
+   "gana": "I",
+   "signo": "b",
+   "letra": "BH",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 368,
+   "sufijo": "",
+   "raiz": "yā",
+   "glosa": "pāpuṇane; R-L",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Y",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 369,
+   "sufijo": "",
+   "raiz": "rā",
+   "glosa": "ādāne",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Y",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 370,
+   "sufijo": "",
+   "raiz": "lā",
+   "glosa": "ādāne",
+   "gana": "I",
+   "signo": "b",
+   "letra": "Y",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 371,
+   "sufijo": "",
+   "raiz": "vī",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "V",
+   "paginas": [
+    13
+   ],
+   "notas": [
+    "vi, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 372,
+   "sufijo": "",
+   "raiz": "vā",
+   "glosa": "gamane",
+   "gana": "I",
+   "signo": "b",
+   "letra": "V",
+   "paginas": [
+    13
+   ],
+   "notas": [
+    "vi, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 373,
+   "sufijo": "",
+   "raiz": "asa",
+   "glosa": "bhuvi",
+   "gana": "I",
+   "signo": "b",
+   "letra": "S",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 374,
+   "sufijo": "",
+   "raiz": "si",
+   "glosa": "saye",
+   "gana": "I",
+   "signo": "b",
+   "letra": "S",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 375,
+   "sufijo": "",
+   "raiz": "rudhi",
+   "glosa": "āvaraṇe",
+   "gana": "II",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    13
+   ],
+   "notas": [
+    "rudha, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 376,
+   "sufijo": "",
+   "raiz": "muca",
+   "glosa": "mocane",
+   "gana": "II",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 377,
+   "sufijo": "",
+   "raiz": "sica",
+   "glosa": "kkharaṇe",
+   "gana": "II",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 378,
+   "sufijo": "",
+   "raiz": "yuja",
+   "glosa": "yoge",
+   "gana": "II",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 379,
+   "sufijo": "",
+   "raiz": "bhuja",
+   "glosa": "pālan’-ajjhohāresu",
+   "gana": "II",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 380,
+   "sufijo": "",
+   "raiz": "kata",
+   "glosa": "cchedane",
+   "gana": "II",
+   "signo": null,
+   "letra": "T",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 381,
+   "sufijo": "",
+   "raiz": "bhida",
+   "glosa": "vidāraṇe",
+   "gana": "II",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 382,
+   "sufijo": "",
+   "raiz": "chida",
+   "glosa": "dvedhākaraṇe",
+   "gana": "II",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 383,
+   "sufijo": "",
+   "raiz": "vida",
+   "glosa": "lābhe",
+   "gana": "II",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 384,
+   "sufijo": "",
+   "raiz": "vadha",
+   "glosa": "bandhane",
+   "gana": "II",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    13
+   ],
+   "notas": [
+    "vada, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 385,
+   "sufijo": "",
+   "raiz": "lipa",
+   "glosa": "limpane",
+   "gana": "II",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 386,
+   "sufijo": "",
+   "raiz": "lupa",
+   "glosa": "cchedane",
+   "gana": "II",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 387,
+   "sufijo": "",
+   "raiz": "hiṃsa",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "II",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 388,
+   "sufijo": "",
+   "raiz": "gaha",
+   "glosa": "upādāne",
+   "gana": "II",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 389,
+   "sufijo": "",
+   "raiz": "diva",
+   "glosa": "kīḷā-vijigiṃsā-vohāra-jjuti-tthuti-gatisu",
+   "gana": "III",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    13
+   ],
+   "notas": [
+    "divu, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 390,
+   "sufijo": "",
+   "raiz": "siva",
+   "glosa": "tantusantāne",
+   "gana": "III",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 391,
+   "sufijo": "",
+   "raiz": "khā",
+   "glosa": "pakāsane",
+   "gana": "III",
+   "signo": null,
+   "letra": "KH",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 392,
+   "sufijo": "",
+   "raiz": "kā",
+   "glosa": "sadde",
+   "gana": "III",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 393,
+   "sufijo": "",
+   "raiz": "gā",
+   "glosa": "sadde",
+   "gana": "III",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    13
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 394,
+   "sufijo": "",
+   "raiz": "ghā",
+   "glosa": "gandhopādāne",
+   "gana": "III",
+   "signo": null,
+   "letra": "GH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 395,
+   "sufijo": "",
+   "raiz": "ruca",
+   "glosa": "rocane",
+   "gana": "III",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 396,
+   "sufijo": "",
+   "raiz": "rica",
+   "glosa": "virecane",
+   "gana": "III",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "395—396. rica (corr. to ruca) virocane, rica virocane (corr. to virecane), Ck; ruca virocane, (omitting rica) Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 397,
+   "sufijo": "",
+   "raiz": "sañja",
+   "glosa": "saṅge",
+   "gana": "III",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 398,
+   "sufijo": "",
+   "raiz": "rañja",
+   "glosa": "rāge",
+   "gana": "III",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 399,
+   "sufijo": "",
+   "raiz": "yuñja",
+   "glosa": "samādhimhi",
+   "gana": "III",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 400,
+   "sufijo": "",
+   "raiz": "luja",
+   "glosa": "vināse",
+   "gana": "III",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 401,
+   "sufijo": "",
+   "raiz": "jhā",
+   "glosa": "cintāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "JH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 402,
+   "sufijo": "",
+   "raiz": "tā",
+   "glosa": "pālane",
+   "gana": "III",
+   "signo": null,
+   "letra": "T",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 403,
+   "sufijo": "",
+   "raiz": "dā",
+   "glosa": "avakhaṇḍane",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 404,
+   "sufijo": "",
+   "raiz": "dī",
+   "glosa": "khaye",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 405,
+   "sufijo": "",
+   "raiz": "bhida",
+   "glosa": "vidāraṇe",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 406,
+   "sufijo": "",
+   "raiz": "chida",
+   "glosa": "dvedhākaraṇe",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 407,
+   "sufijo": "",
+   "raiz": "khida",
+   "glosa": "dīnabhāve",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 408,
+   "sufijo": "",
+   "raiz": "sida",
+   "glosa": "pāke",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "sinda, Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 409,
+   "sufijo": "",
+   "raiz": "khida",
+   "glosa": "asahane",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 410,
+   "sufijo": "",
+   "raiz": "pada",
+   "glosa": "gamane",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 411,
+   "sufijo": "",
+   "raiz": "vida",
+   "glosa": "sattāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 412,
+   "sufijo": "",
+   "raiz": "mada",
+   "glosa": "ummāde",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 413,
+   "sufijo": "",
+   "raiz": "mida",
+   "glosa": "snehane",
+   "gana": "III",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 414,
+   "sufijo": "",
+   "raiz": "budha",
+   "glosa": "avagamane",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 415,
+   "sufijo": "",
+   "raiz": "yudha",
+   "glosa": "sampahāre",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 416,
+   "sufijo": "",
+   "raiz": "kudha",
+   "glosa": "kodhe",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "kope, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 417,
+   "sufijo": "",
+   "raiz": "sudha",
+   "glosa": "soceyye",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 418,
+   "sufijo": "",
+   "raiz": "idha",
+   "glosa": "saṃsiddhiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "pidha, Mss.; cf. Dhm. (658)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 419,
+   "sufijo": "",
+   "raiz": "sidha",
+   "glosa": "saṃsiddhiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "pidha, Mss.; cf. Dhm. (658)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 420,
+   "sufijo": "",
+   "raiz": "rādha",
+   "glosa": "saṃsiddhiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "pidha, Mss.; cf. Dhm. (658)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 421,
+   "sufijo": "",
+   "raiz": "sādha",
+   "glosa": "saṃsiddhiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "pidha, Mss.; cf. Dhm. (658)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 422,
+   "sufijo": "",
+   "raiz": "vidha",
+   "glosa": "vedhane",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 423,
+   "sufijo": "",
+   "raiz": "gidha",
+   "glosa": "abhikaṃkhāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 424,
+   "sufijo": "",
+   "raiz": "rādha",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 425,
+   "sufijo": "",
+   "raiz": "rudha",
+   "glosa": "āvaraṇe",
+   "gana": "III",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 426,
+   "sufijo": "",
+   "raiz": "sinā",
+   "glosa": "soceyye",
+   "gana": "III",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 427,
+   "sufijo": "",
+   "raiz": "mana",
+   "glosa": "ñāṇe",
+   "gana": "III",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 428,
+   "sufijo": "",
+   "raiz": "jana",
+   "glosa": "janane",
+   "gana": "III",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 429,
+   "sufijo": "",
+   "raiz": "hana",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 430,
+   "sufijo": "",
+   "raiz": "kupa",
+   "glosa": "kope",
+   "gana": "III",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 431,
+   "sufijo": "",
+   "raiz": "tapa",
+   "glosa": "santāpe",
+   "gana": "III",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 432,
+   "sufijo": "",
+   "raiz": "dipa",
+   "glosa": "dittiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 433,
+   "sufijo": "",
+   "raiz": "lupa",
+   "glosa": "cchedane",
+   "gana": "III",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 434,
+   "sufijo": "",
+   "raiz": "lubha",
+   "glosa": "lobhe",
+   "gana": "III",
+   "signo": null,
+   "letra": "BH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 435,
+   "sufijo": "",
+   "raiz": "khubha",
+   "glosa": "sañcalane",
+   "gana": "III",
+   "signo": null,
+   "letra": "BH",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 436,
+   "sufijo": "",
+   "raiz": "sama",
+   "glosa": "upasama-khedesu",
+   "gana": "III",
+   "signo": null,
+   "letra": "M",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 437,
+   "sufijo": "",
+   "raiz": "hiri",
+   "glosa": "lajjāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 438,
+   "sufijo": "",
+   "raiz": "hara",
+   "glosa": "lajjāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 439,
+   "sufijo": "",
+   "raiz": "gilā",
+   "glosa": "hāsakkhaye",
+   "gana": "III",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 440,
+   "sufijo": "",
+   "raiz": "milā",
+   "glosa": "gattavināme",
+   "gana": "III",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    14
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 441,
+   "sufijo": "",
+   "raiz": "lī",
+   "glosa": "silesana-dravīkaraṇesu",
+   "gana": "III",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "-dāvi (or dravi) karaṇesu, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 442,
+   "sufijo": "",
+   "raiz": "vā",
+   "glosa": "gati-bandhanesu",
+   "gana": "III",
+   "signo": null,
+   "letra": "V",
+   "paginas": [
+    14
+   ],
+   "notas": [
+    "gati-bandhaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 443,
+   "sufijo": "",
+   "raiz": "silisa",
+   "glosa": "āliṅgane",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 444,
+   "sufijo": "",
+   "raiz": "lisa",
+   "glosa": "lese",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 445,
+   "sufijo": "",
+   "raiz": "kilisa",
+   "glosa": "upatāpe",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 446,
+   "sufijo": "",
+   "raiz": "klisa",
+   "glosa": "upatāpe",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 447,
+   "sufijo": "",
+   "raiz": "tasa",
+   "glosa": "pipāsāyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 448,
+   "sufijo": "",
+   "raiz": "tusa",
+   "glosa": "tuṭṭhimhi",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 449,
+   "sufijo": "",
+   "raiz": "īsa",
+   "glosa": "issariye",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 450,
+   "sufijo": "",
+   "raiz": "rusa",
+   "glosa": "rose",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 451,
+   "sufijo": "",
+   "raiz": "disa",
+   "glosa": "appītiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 452,
+   "sufijo": "",
+   "raiz": "dusa",
+   "glosa": "appītiyaṃ",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 453,
+   "sufijo": "",
+   "raiz": "asa",
+   "glosa": "kkhepane",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 454,
+   "sufijo": "",
+   "raiz": "yasa",
+   "glosa": "payatane",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 455,
+   "sufijo": "",
+   "raiz": "bhasa",
+   "glosa": "adhopatane",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 456,
+   "sufijo": "",
+   "raiz": "nasa",
+   "glosa": "adassane",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 457,
+   "sufijo": "",
+   "raiz": "susa",
+   "glosa": "sosane",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 458,
+   "sufijo": "",
+   "raiz": "sā",
+   "glosa": "tanukaraṇ’-avasānesu",
+   "gana": "III",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    14,
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 459,
+   "sufijo": "",
+   "raiz": "naha",
+   "glosa": "bandhane",
+   "gana": "III",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 460,
+   "sufijo": "",
+   "raiz": "muha",
+   "glosa": "vecitte",
+   "gana": "III",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 461,
+   "sufijo": "",
+   "raiz": "naha",
+   "glosa": "soceyye",
+   "gana": "III",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 462,
+   "sufijo": "",
+   "raiz": "hā",
+   "glosa": "parihāne",
+   "gana": "III",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 463,
+   "sufijo": "",
+   "raiz": "siniha",
+   "glosa": "pīṇane",
+   "gana": "III",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "sinihi sniha, Ck; sinihi snihi,Ci; siniha sinīha, Cp; pīnane, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 464,
+   "sufijo": "",
+   "raiz": "sniha",
+   "glosa": "pīṇane",
+   "gana": "III",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "sinihi sniha, Ck; sinihi snihi,Ci; siniha sinīha, Cp; pīnane, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 465,
+   "sufijo": "",
+   "raiz": "tuda",
+   "glosa": "vyathane",
+   "gana": "IV",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 466,
+   "sufijo": "",
+   "raiz": "nuda",
+   "glosa": "kkhepe",
+   "gana": "IV",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 467,
+   "sufijo": "",
+   "raiz": "likha",
+   "glosa": "lekhane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "KH",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 468,
+   "sufijo": "",
+   "raiz": "kuca",
+   "glosa": "saṃkoce",
+   "gana": "IV",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 469,
+   "sufijo": "",
+   "raiz": "ruja",
+   "glosa": "bhaṅge",
+   "gana": "IV",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 470,
+   "sufijo": "",
+   "raiz": "bhuja",
+   "glosa": "koṭilye",
+   "gana": "IV",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 471,
+   "sufijo": "",
+   "raiz": "vija",
+   "glosa": "bhaya-calanesu",
+   "gana": "IV",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "vīja, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 472,
+   "sufijo": "",
+   "raiz": "kuṭa",
+   "glosa": "koṭilye",
+   "gana": "IV",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 473,
+   "sufijo": "",
+   "raiz": "ruṭha",
+   "glosa": "upaghāte",
+   "gana": "IV",
+   "signo": null,
+   "letra": "ṬH",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 474,
+   "sufijo": "",
+   "raiz": "luṭha",
+   "glosa": "upaghāte",
+   "gana": "IV",
+   "signo": null,
+   "letra": "ṬH",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 475,
+   "sufijo": "",
+   "raiz": "puṇa",
+   "glosa": "kammani subhe",
+   "gana": "IV",
+   "signo": null,
+   "letra": "Ṇ",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 476,
+   "sufijo": "",
+   "raiz": "vida",
+   "glosa": "ñāṇe",
+   "gana": "IV",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 477,
+   "sufijo": "",
+   "raiz": "putha",
+   "glosa": "vitthāre",
+   "gana": "IV",
+   "signo": null,
+   "letra": "TH",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 478,
+   "sufijo": "",
+   "raiz": "patha",
+   "glosa": "vitthāre",
+   "gana": "IV",
+   "signo": null,
+   "letra": "TH",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 479,
+   "sufijo": "",
+   "raiz": "khipa",
+   "glosa": "peraṇe",
+   "gana": "IV",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 480,
+   "sufijo": "",
+   "raiz": "chupa",
+   "glosa": "samphasse",
+   "gana": "IV",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "chupha, Ck; jutha, Ci; juta, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 481,
+   "sufijo": "",
+   "raiz": "supa",
+   "glosa": "saye",
+   "gana": "IV",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "supa save, all Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 482,
+   "sufijo": "",
+   "raiz": "kira",
+   "glosa": "vikiraṇe",
+   "gana": "IV",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "vikaraṇe, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 483,
+   "sufijo": "",
+   "raiz": "gira",
+   "glosa": "giraṇe",
+   "gana": "IV",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "nigiraṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 484,
+   "sufijo": "",
+   "raiz": "phura",
+   "glosa": "calane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 485,
+   "sufijo": "",
+   "raiz": "kura",
+   "glosa": "sadde",
+   "gana": "IV",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 486,
+   "sufijo": "",
+   "raiz": "khura",
+   "glosa": "cchedana-vilekhanesu",
+   "gana": "IV",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "saṃcchedana-, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 487,
+   "sufijo": "",
+   "raiz": "ghura",
+   "glosa": "bhīme",
+   "gana": "IV",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 488,
+   "sufijo": "",
+   "raiz": "gila",
+   "glosa": "adane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 489,
+   "sufijo": "",
+   "raiz": "bila",
+   "glosa": "bhedane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    15
+   ],
+   "notas": [
+    "khila, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 490,
+   "sufijo": "",
+   "raiz": "kusa",
+   "glosa": "cchedane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 491,
+   "sufijo": "",
+   "raiz": "musa",
+   "glosa": "theyye",
+   "gana": "IV",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 492,
+   "sufijo": "",
+   "raiz": "visa",
+   "glosa": "ppavesane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 493,
+   "sufijo": "",
+   "raiz": "disa",
+   "glosa": "atisajjane",
+   "gana": "IV",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 494,
+   "sufijo": "",
+   "raiz": "phussa",
+   "glosa": "samphasse",
+   "gana": "IV",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    15
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 495,
+   "sufijo": "",
+   "raiz": "ji",
+   "glosa": "jaye",
+   "gana": "V",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 496,
+   "sufijo": "",
+   "raiz": "ci",
+   "glosa": "caye",
+   "gana": "V",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 497,
+   "sufijo": "",
+   "raiz": "ñā",
+   "glosa": "avabodhane",
+   "gana": "V",
+   "signo": null,
+   "letra": "Ñ",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 498,
+   "sufijo": "",
+   "raiz": "thu",
+   "glosa": "abhitthave",
+   "gana": "V",
+   "signo": null,
+   "letra": "TH",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 499,
+   "sufijo": "",
+   "raiz": "dhu",
+   "glosa": "kampane",
+   "gana": "V",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 500,
+   "sufijo": "",
+   "raiz": "pu",
+   "glosa": "pavane",
+   "gana": "V",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 501,
+   "sufijo": "",
+   "raiz": "khipa",
+   "glosa": "khepe",
+   "gana": "V",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 502,
+   "sufijo": "",
+   "raiz": "mi",
+   "glosa": "hiṃsāyaṃ",
+   "gana": "V",
+   "signo": null,
+   "letra": "M",
+   "paginas": [
+    16
+   ],
+   "notas": [
+    "501—502. All Mss. put mi hiṃsāyaṃ before khipa khepe, cf. Dhm. (724)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 503,
+   "sufijo": "",
+   "raiz": "mu",
+   "glosa": "bandhane",
+   "gana": "V",
+   "signo": null,
+   "letra": "M",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 504,
+   "sufijo": "",
+   "raiz": "lu",
+   "glosa": "cchedane",
+   "gana": "V",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    16
+   ],
+   "notas": [
+    "pacchedaṇe, Cp, cf. 433 above."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 505,
+   "sufijo": "",
+   "raiz": "si",
+   "glosa": "bandhane",
+   "gana": "V",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    16
+   ],
+   "notas": [
+    "khi si bandhane, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 506,
+   "sufijo": "",
+   "raiz": "asa",
+   "glosa": "bhojane",
+   "gana": "V",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 507,
+   "sufijo": "",
+   "raiz": "kī",
+   "glosa": "dabbavinimaye",
+   "gana": "VI",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 508,
+   "sufijo": "",
+   "raiz": "saka",
+   "glosa": "sattiyaṃ",
+   "gana": "VI",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 509,
+   "sufijo": "",
+   "raiz": "khi",
+   "glosa": "khaye",
+   "gana": "VI",
+   "signo": null,
+   "letra": "KH",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 510,
+   "sufijo": "",
+   "raiz": "gi",
+   "glosa": "sadde; P-BH",
+   "gana": "VI",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 511,
+   "sufijo": "",
+   "raiz": "apa",
+   "glosa": "pāpuṇane",
+   "gana": "VI",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 512,
+   "sufijo": "",
+   "raiz": "sambhu",
+   "glosa": "pāpuṇane",
+   "gana": "VI",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 513,
+   "sufijo": "",
+   "raiz": "su",
+   "glosa": "savane",
+   "gana": "VI",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 514,
+   "sufijo": "",
+   "raiz": "su",
+   "glosa": "savane",
+   "gana": "VII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 515,
+   "sufijo": "",
+   "raiz": "khi",
+   "glosa": "khaye",
+   "gana": "VII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 516,
+   "sufijo": "",
+   "raiz": "vu",
+   "glosa": "saṃvaraṇe",
+   "gana": "VII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 517,
+   "sufijo": "",
+   "raiz": "gi",
+   "glosa": "sadde",
+   "gana": "VII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 518,
+   "sufijo": "",
+   "raiz": "saka",
+   "glosa": "sattiyaṃ",
+   "gana": "VII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 519,
+   "sufijo": "",
+   "raiz": "tana",
+   "glosa": "vitthāre",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [
+    "tanu, Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 520,
+   "sufijo": "",
+   "raiz": "saka",
+   "glosa": "sattiyaṃ",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [
+    "519—520. omitted in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 521,
+   "sufijo": "",
+   "raiz": "du",
+   "glosa": "paritāpe",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 522,
+   "sufijo": "",
+   "raiz": "sana",
+   "glosa": "dāne",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 523,
+   "sufijo": "",
+   "raiz": "vana",
+   "glosa": "yācane",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 524,
+   "sufijo": "",
+   "raiz": "mana",
+   "glosa": "bodhane",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 525,
+   "sufijo": "",
+   "raiz": "hi",
+   "glosa": "gatiyaṃ",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 526,
+   "sufijo": "",
+   "raiz": "kara",
+   "glosa": "karaṇe",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 527,
+   "sufijo": "",
+   "raiz": "apa",
+   "glosa": "pāpuṇane",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [
+    "501—502. All Mss. put mi hiṃsāyaṃ before khipa khepe, cf. Dhm. (724)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 528,
+   "sufijo": "",
+   "raiz": "si",
+   "glosa": "bandhane",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 529,
+   "sufijo": "",
+   "raiz": "su",
+   "glosa": "abhisave",
+   "gana": "VIII",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    16,
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 530,
+   "sufijo": "",
+   "raiz": "cura",
+   "glosa": "theyye",
+   "gana": "IX",
+   "signo": null,
+   "letra": null,
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 531,
+   "sufijo": "",
+   "raiz": "loka",
+   "glosa": "dassane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "loka locanadassane, all Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 532,
+   "sufijo": "",
+   "raiz": "loca",
+   "glosa": "dassane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "loka locanadassane, all Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 533,
+   "sufijo": "",
+   "raiz": "thaka",
+   "glosa": "paṭighāte",
+   "gana": "IX",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "paritāpe, Cp; parighāte, Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 534,
+   "sufijo": "",
+   "raiz": "takka",
+   "glosa": "vitakke",
+   "gana": "IX",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 535,
+   "sufijo": "",
+   "raiz": "aṃka",
+   "glosa": "lakkhaṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 536,
+   "sufijo": "",
+   "raiz": "lakkha",
+   "glosa": "dassane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "K",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 537,
+   "sufijo": "",
+   "raiz": "bhakkha",
+   "glosa": "adane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "KH",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 538,
+   "sufijo": "",
+   "raiz": "makkha",
+   "glosa": "makkhaṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "KH",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 539,
+   "sufijo": "",
+   "raiz": "mokkha",
+   "glosa": "mocane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "KH",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 540,
+   "sufijo": "",
+   "raiz": "maga",
+   "glosa": "anvesane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 541,
+   "sufijo": "",
+   "raiz": "magga",
+   "glosa": "anvesane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "G",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 542,
+   "sufijo": "",
+   "raiz": "paca",
+   "glosa": "vitthāre",
+   "gana": "IX",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "raca, Cik; cara, Cp; cf. Dhm. (757) & W. 32,108."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 543,
+   "sufijo": "",
+   "raiz": "vañca",
+   "glosa": "palambhane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "palabbhane, Cik; labbhaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 544,
+   "sufijo": "",
+   "raiz": "acca",
+   "glosa": "pūjāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 545,
+   "sufijo": "",
+   "raiz": "cacca",
+   "glosa": "ajjhene",
+   "gana": "IX",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "ajjhesane, Mss."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 546,
+   "sufijo": "",
+   "raiz": "raca",
+   "glosa": "patiyatane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "C",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "cara, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 547,
+   "sufijo": "",
+   "raiz": "vajja",
+   "glosa": "vajjane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 547,
+   "sufijo": "a",
+   "raiz": "tajja",
+   "glosa": "tajjane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "Only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 548,
+   "sufijo": "",
+   "raiz": "ajja",
+   "glosa": "ajjane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "sajjane, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 549,
+   "sufijo": "",
+   "raiz": "sajja",
+   "glosa": "ajjane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "sajjane, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 550,
+   "sufijo": "",
+   "raiz": "yuja",
+   "glosa": "saṅgamane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "saṅgamane, perhaps for saṃyamane; cf. Dhm. (772) & W. 34,1."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 551,
+   "sufijo": "",
+   "raiz": "tija",
+   "glosa": "nisāne",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 552,
+   "sufijo": "",
+   "raiz": "pūja",
+   "glosa": "pūjāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 553,
+   "sufijo": "",
+   "raiz": "sabhāja",
+   "glosa": "pīti-dassanesu",
+   "gana": "IX",
+   "signo": null,
+   "letra": "J",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 554,
+   "sufijo": "",
+   "raiz": "ghaṭa",
+   "glosa": "ghāṭane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 554,
+   "sufijo": "a",
+   "raiz": "ghaṭṭa",
+   "glosa": "calane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "Only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 555,
+   "sufijo": "",
+   "raiz": "kuṭa",
+   "glosa": "cchedane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 556,
+   "sufijo": "",
+   "raiz": "koṭṭa",
+   "glosa": "cchedane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 557,
+   "sufijo": "",
+   "raiz": "kuṭa",
+   "glosa": "ākoṭane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "Omitted in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 558,
+   "sufijo": "",
+   "raiz": "naṭa",
+   "glosa": "nāṭye",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "nāṭṭye, Cik; naṭṭe Cp; cf. 87 above."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 559,
+   "sufijo": "",
+   "raiz": "caṭa",
+   "glosa": "bhedane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "Cf. W. 33,48: sphuṭa."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 560,
+   "sufijo": "",
+   "raiz": "puṭa",
+   "glosa": "bhedane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "Cf. W. 33,48: sphuṭa."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 561,
+   "sufijo": "",
+   "raiz": "vaṇṭa",
+   "glosa": "vibhājane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṭ",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "vantha, Cik; vandha, Cp; cf. W. 9,43."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 562,
+   "sufijo": "",
+   "raiz": "veṭha",
+   "glosa": "veṭhane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "ṬH",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "guṇṭha guṇṭha ca, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 563,
+   "sufijo": "",
+   "raiz": "guṇṭha",
+   "glosa": "veṭhane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "ṬH",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "guṇṭha guṇṭha ca, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 563,
+   "sufijo": "a",
+   "raiz": "kaṇṭha",
+   "glosa": "soke",
+   "gana": "IX",
+   "signo": null,
+   "letra": "ṬH",
+   "paginas": [
+    17
+   ],
+   "notas": [
+    "Only in Cp; cf. Dhm (134)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 564,
+   "sufijo": "",
+   "raiz": "kaṇḍa",
+   "glosa": "bhedane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "kaṇḍa, omitted in Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 565,
+   "sufijo": "",
+   "raiz": "khaṇḍa",
+   "glosa": "bhedane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "kaṇḍa, omitted in Ci."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 566,
+   "sufijo": "",
+   "raiz": "maṇḍa",
+   "glosa": "bhūsāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "bhūsaṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 567,
+   "sufijo": "",
+   "raiz": "paṇḍa",
+   "glosa": "paribhāse",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 568,
+   "sufijo": "",
+   "raiz": "bhaṇḍa",
+   "glosa": "paribhāse",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 569,
+   "sufijo": "",
+   "raiz": "piṇḍa",
+   "glosa": "saṃghāte",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 570,
+   "sufijo": "",
+   "raiz": "daṇḍa",
+   "glosa": "daṇḍane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 571,
+   "sufijo": "",
+   "raiz": "chaḍḍa",
+   "glosa": "chaḍḍane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḍ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 572,
+   "sufijo": "",
+   "raiz": "vaṇṇa",
+   "glosa": "vaṇṇane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṇ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 573,
+   "sufijo": "",
+   "raiz": "cuṇṇa",
+   "glosa": "saṃcuṇṇane, {{",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṇ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 574,
+   "sufijo": "",
+   "raiz": "gaṇa",
+   "glosa": "saṃkhyāne",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṇ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 575,
+   "sufijo": "",
+   "raiz": "kaṇṇa",
+   "glosa": "savane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṇ",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 576,
+   "sufijo": "",
+   "raiz": "āṇa",
+   "glosa": "pesane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ṇ",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "ana, Cp; cf. Dhm. (805)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 577,
+   "sufijo": "",
+   "raiz": "cinta",
+   "glosa": "cintāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "T",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 578,
+   "sufijo": "",
+   "raiz": "manta",
+   "glosa": "guttabhāsane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "T",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 579,
+   "sufijo": "",
+   "raiz": "kitta",
+   "glosa": "saṃsadde",
+   "gana": "IX",
+   "signo": null,
+   "letra": "T",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 580,
+   "sufijo": "",
+   "raiz": "yata",
+   "glosa": "niyyātane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "T",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "niyyataṇe, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 581,
+   "sufijo": "",
+   "raiz": "gantha",
+   "glosa": "ganthane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "TH",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 582,
+   "sufijo": "",
+   "raiz": "katha",
+   "glosa": "vākyappabandhane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "TH",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 583,
+   "sufijo": "",
+   "raiz": "attha",
+   "glosa": "yācane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "TH",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 584,
+   "sufijo": "",
+   "raiz": "vida",
+   "glosa": "ñāṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 585,
+   "sufijo": "",
+   "raiz": "cuda",
+   "glosa": "codane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 586,
+   "sufijo": "",
+   "raiz": "chada",
+   "glosa": "saṃvaraṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 587,
+   "sufijo": "",
+   "raiz": "chanda",
+   "glosa": "icchāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 588,
+   "sufijo": "",
+   "raiz": "vanda",
+   "glosa": "abhivādanatthutisu",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 589,
+   "sufijo": "",
+   "raiz": "bhadda",
+   "glosa": "kalyāṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 590,
+   "sufijo": "",
+   "raiz": "chadda",
+   "glosa": "vamane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 591,
+   "sufijo": "",
+   "raiz": "hilāda",
+   "glosa": "sukhe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "D",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 592,
+   "sufijo": "",
+   "raiz": "gandha",
+   "glosa": "sūcane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "DH",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 593,
+   "sufijo": "",
+   "raiz": "māna",
+   "glosa": "pūjāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 594,
+   "sufijo": "",
+   "raiz": "dhana",
+   "glosa": "sadde, }}",
+   "gana": "IX",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "574—594 {{ }} wanting in Cik."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 595,
+   "sufijo": "",
+   "raiz": "thena",
+   "glosa": "coriye",
+   "gana": "IX",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 596,
+   "sufijo": "",
+   "raiz": "thana",
+   "glosa": "devasadde",
+   "gana": "IX",
+   "signo": null,
+   "letra": "N",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 597,
+   "sufijo": "",
+   "raiz": "pī",
+   "glosa": "tappane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 598,
+   "sufijo": "",
+   "raiz": "ñāpa",
+   "glosa": "māraṇa-tosana-nisānesu",
+   "gana": "IX",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 599,
+   "sufijo": "",
+   "raiz": "lapa",
+   "glosa": "vacane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 600,
+   "sufijo": "",
+   "raiz": "jhapa",
+   "glosa": "dāhe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 601,
+   "sufijo": "",
+   "raiz": "kappa",
+   "glosa": "vitakke",
+   "gana": "IX",
+   "signo": null,
+   "letra": "P",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 602,
+   "sufijo": "",
+   "raiz": "vambha",
+   "glosa": "garahāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "BH",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 603,
+   "sufijo": "",
+   "raiz": "kama",
+   "glosa": "icchāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "M",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 604,
+   "sufijo": "",
+   "raiz": "thoma",
+   "glosa": "silāghāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "M",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 605,
+   "sufijo": "",
+   "raiz": "saṅgāma",
+   "glosa": "yuddhe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "M",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 606,
+   "sufijo": "",
+   "raiz": "vara",
+   "glosa": "āvaraṇ’-icchāsu",
+   "gana": "IX",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 607,
+   "sufijo": "",
+   "raiz": "īra",
+   "glosa": "kkhepe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 608,
+   "sufijo": "",
+   "raiz": "dhara",
+   "glosa": "dhāraṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    18
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 609,
+   "sufijo": "",
+   "raiz": "tīra",
+   "glosa": "kammasamattiyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "kammasāmatthiyaṃ, Cip."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 609,
+   "sufijo": "a",
+   "raiz": "pāra",
+   "glosa": "sāmatthiye",
+   "gana": "IX",
+   "signo": null,
+   "letra": "R",
+   "paginas": [
+    18
+   ],
+   "notas": [
+    "pāra sāmatthiye, only in Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 610,
+   "sufijo": "",
+   "raiz": "pāla",
+   "glosa": "rakkhaṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [
+    "pāra lakkhaṇe, Mss.; cf. Dhm. (855)."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 611,
+   "sufijo": "",
+   "raiz": "khala",
+   "glosa": "soceyye",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 612,
+   "sufijo": "",
+   "raiz": "tula",
+   "glosa": "ummāne",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 613,
+   "sufijo": "",
+   "raiz": "kala",
+   "glosa": "saṃkhyāne",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 614,
+   "sufijo": "",
+   "raiz": "mīla",
+   "glosa": "nimīlane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 615,
+   "sufijo": "",
+   "raiz": "sīla",
+   "glosa": "upadhāraṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 616,
+   "sufijo": "",
+   "raiz": "dula",
+   "glosa": "ukkhepane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 617,
+   "sufijo": "",
+   "raiz": "tala",
+   "glosa": "patiṭṭhāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 618,
+   "sufijo": "",
+   "raiz": "pula",
+   "glosa": "samussaye",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 619,
+   "sufijo": "",
+   "raiz": "pula",
+   "glosa": "mahatte",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 620,
+   "sufijo": "",
+   "raiz": "lala",
+   "glosa": "icchāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "L",
+   "paginas": [
+    18,
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 621,
+   "sufijo": "",
+   "raiz": "pisa",
+   "glosa": "gamane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 622,
+   "sufijo": "",
+   "raiz": "ghusa",
+   "glosa": "sadde",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 623,
+   "sufijo": "",
+   "raiz": "bhūsa",
+   "glosa": "alaṃkāre",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 624,
+   "sufijo": "",
+   "raiz": "pusa",
+   "glosa": "posane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 625,
+   "sufijo": "",
+   "raiz": "khuṃsa",
+   "glosa": "akkosane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 626,
+   "sufijo": "",
+   "raiz": "rusa",
+   "glosa": "pārusiye",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 627,
+   "sufijo": "",
+   "raiz": "disa",
+   "glosa": "uccāraṇe",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [
+    "ucchārane, Ck."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 628,
+   "sufijo": "",
+   "raiz": "vasa",
+   "glosa": "acchādane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 629,
+   "sufijo": "",
+   "raiz": "rasa",
+   "glosa": "assādana-snehanesu",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 630,
+   "sufijo": "",
+   "raiz": "sisa",
+   "glosa": "visesane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 631,
+   "sufijo": "",
+   "raiz": "missa",
+   "glosa": "sammisse",
+   "gana": "IX",
+   "signo": null,
+   "letra": "S",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 632,
+   "sufijo": "",
+   "raiz": "raha",
+   "glosa": "cāge",
+   "gana": "IX",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    19
+   ],
+   "notas": [
+    "rasa, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 633,
+   "sufijo": "",
+   "raiz": "kuha",
+   "glosa": "vimhāpane",
+   "gana": "IX",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    19
+   ],
+   "notas": [
+    "kusa, Cp."
+   ],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 634,
+   "sufijo": "",
+   "raiz": "piha",
+   "glosa": "icchāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 635,
+   "sufijo": "",
+   "raiz": "maha",
+   "glosa": "pūjāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "H",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 636,
+   "sufijo": "",
+   "raiz": "pīḷa",
+   "glosa": "bādhāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḷ",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 637,
+   "sufijo": "",
+   "raiz": "hīḷa",
+   "glosa": "nindāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḷ",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 638,
+   "sufijo": "",
+   "raiz": "taḷa",
+   "glosa": "āghāte",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḷ",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  },
+  {
+   "n": 639,
+   "sufijo": "",
+   "raiz": "laḷa",
+   "glosa": "upasevāyaṃ",
+   "gana": "IX",
+   "signo": null,
+   "letra": "Ḷ",
+   "paginas": [
+    19
+   ],
+   "notas": [],
+   "dudoso": false,
+   "inferido": false,
+   "pegada": false
+  }
+ ]
+}
