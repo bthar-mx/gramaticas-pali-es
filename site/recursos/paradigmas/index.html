@@ -84,6 +84,24 @@ body{padding-left:238px}
 body{transition:padding-left .2s ease}
 html.sin-barra body{padding-left:0}
 html.sin-barra .sidebar{transform:translateX(-100%)}
+/* ---------- pestaña para traer de vuelta el índice ---------- */
+/* Al plegar la barra hay que poder devolverla, y buscar un ☰ pequeño entre
+   los demás iconos no es manera. Esta pestaña se queda en el borde
+   izquierdo, justo donde estaba la barra, y sólo se ve cuando está plegada. */
+#volver-barra{position:fixed;left:0;top:50%;transform:translateY(-50%);
+  z-index:56;display:none;align-items:center;gap:7px;
+  writing-mode:vertical-rl;
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;
+  background:var(--ola-2);color:var(--soot);
+  border:1px solid var(--hair);border-left:0;
+  border-radius:0 3px 3px 0;padding:16px 6px;cursor:pointer;
+  box-shadow:2px 0 10px var(--shadow)}
+#volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
+#volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+html.sin-barra #volver-barra{display:flex}
+@media (max-width:900px){html.sin-barra #volver-barra{display:none}}
+@media print{#volver-barra{display:none!important}}
 @media (prefers-reduced-motion:reduce){
   .sidebar,body{transition:none}
 }
@@ -327,6 +345,8 @@ footer a{color:var(--nila)}
 <body>
 
 <div class="scrim" id="scrim"></div>
+<button id="volver-barra" aria-label="Mostrar el índice"
+  title="Mostrar el índice">» Índice</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
     title="Ocultar el índice">« ocultar</button>
@@ -675,6 +695,10 @@ document.getElementById('burger').onclick = () => {
     sidebar.classList.toggle('open');
     scrim.classList.toggle('on');
   }
+};
+document.getElementById('volver-barra').onclick = () => {
+  store.set(BARRA_OCULTA, '0');
+  pintarBarra(false);
 };
 document.getElementById('sbclose').onclick = () => {
   if(anchaBastante()){

@@ -347,8 +347,13 @@ def indice_recursos():
     n_par = tablas_paradigmas()
     badge_par = "{0} paradigmas".format(n_par) if n_par else "paradigmas"
     n_rai = cuenta_raices()
+    def miles(n):
+        """12345 → «12.345». El punto de millar, como en el resto del sitio."""
+        return "{0:,}".format(n).replace(",", ".")
+
     if n_rai:
-        badge_rai = "{0} raíces · {1} con sánscrito".format(n_rai[0], n_rai[1])
+        badge_rai = "{0} raíces · {1} con sánscrito".format(
+            miles(n_rai[0]), miles(n_rai[1]))
         if n_rai[2]:
             badge_rai += " · {0} del Dhātupāṭha".format(n_rai[2])
         if n_rai[3]:
