@@ -237,6 +237,81 @@ Dos cosas más que salen de ahí:
 Recordatorio de siempre: lo tomado de Thitzana se señala como suyo antes de
 incorporarlo, para que Angel decida y se le dé el crédito al Venerable.
 
+## Estado de recursos/raices
+
+La referencia de raíces (`/recursos/raices/`, v1.3) reúne **tres obras
+distintas** en cuatro pestañas, y confundirlas es el error fácil:
+
+| Pestaña | Obra | Cuántas | Qué numera |
+| --- | --- | --- | --- |
+| Raíces | Saddanīti-dhātumālā | 1.698 | gaṇa (I-VIII) + **página** |
+| Significados | índice inverso de la misma | 776 | — |
+| Dhātupāṭha | Andersen y Smith, 1921 | 643 | 1–639, más cuatro con letra |
+| Dhātumañjūsā | Kaccāyana-Dhātumañjūsā | 154 estrofas | la suya, hasta 884 |
+
+Se arma con `herramientas/generar_raices.py` a partir de
+`recursos/raices/plantilla.html` y cuatro JSON: `raices.json`,
+`dhatupatha.json`, `dhatupatha-ingles.json` y `dhatumanjusa.json`.
+
+### La fuente principal, y cómo se cita
+
+**«Pali Roots in Saddanīti», del Venerable U Sīlānanda**, editado por
+Bhikkhu Nandisena (CMBT, 2005). U Sīlānanda es el **autor**; Nandisena,
+el editor y traductor al español. No es «Pali Roots in Comparison»: ése
+es el título de la sección de la p. 57, no del libro.
+
+### Dos cifras que no significan lo mismo
+
+Según la leyenda de la propia edición (p. 46): en pāḷi, `I 12` es grupo
+y **página** del Saddanīti-dhātumālā; en sánscrito, `X 371` es grupo y
+**número de raíz** del Pāṇinīya-dhātupāṭha. Y **los nueve gaṇas del
+Dhātupāṭha no son los ocho del Saddanīti**: siguen la ordenación
+sánscrita, y el primero se parte en I,a e I,b.
+
+### Por qué hay un extractor propio
+
+El PDF de U Sīlānanda no tiene capa de texto utilizable: Quartz lo
+compuso con **477 subconjuntos tipográficos**, cada uno con su
+codificación y el ToUnicode roto. `extraer_raices.py` lo reconstruye por
+el **contorno** de cada glifo —161 distintos en todo el libro, en la
+constante `GLIFOS`— y recorta las celdas con las líneas de la tabla. Si
+el PDF cambiara, `GLIFOS` hay que rehacerlo; el guion avisa si el número
+de contornos no es 161.
+
+**Los tres PDF no están en el repositorio.** `generar_todo.py` publica lo
+ya extraído; sólo hay que volver a extraer si cambia una fuente.
+
+### Lo que conviene saber antes de tocarlo
+
+- **La concordancia entre obras es por lema y nada más.** Cuando además
+  coincide la glosa pāḷi se marca, y ésa es la fiable: 229 de 675.
+- **La Dhātumañjūsā va como poema, no como tabla.** El enlace con una
+  raíz es coincidencia literal de la palabra en el verso, con lemas de
+  tres letras o más. No se deshace el metro: en el śloka la raíz y su
+  significado van encajados, y separarlos sería interpretar.
+- **El español del Dhātupāṭha es prestado**, no traducido aquí: se
+  reutiliza el del Saddanīti cuando la glosa pāḷi es idéntica (430 de
+  643), y la entrada lo marca con `ES·N`. El inglés viene de la hoja de
+  la digitalización (Bodhirasa Bhikkhu, 2019). Los 213 restantes no son
+  un hueco que rellenar: las dos obras glosan el mismo sentido con
+  palabras distintas —*gamanatthā* frente a *gatyatthe*—.
+- **La letra del Dhātupāṭha no es la inicial de la raíz.** La edición
+  agrupa por la consonante de la raíz: bajo «K» van *bhū, ku, aṃka,
+  saṃkha, vaka*. Esa cabecera viene ya en los datos y **no se
+  recalcula**; tomarla por la inicial llena la página de secciones
+  repetidas.
+- **Los guiones son del texto, no de corte.** El original es una tabla
+  de Word, y Word no parte palabras al final de línea: `-` y `–`
+  segmentan los compuestos (`hiṃsā-saṃkleśa–nayoḥ`).
+
+### Comprobaciones
+
+`generar_raices.py` no publica si los datos no cuadran: comprueba lemas,
+referencias, gaṇas dentro de rango, NFC y que no quede ningún carácter
+sin descifrar. La hoja de cálculo pública de la digitalización sirve de
+cotejo independiente: sus 643 claves coinciden una a una con las
+extraídas del PDF.
+
 ## Hacia dónde va esto: un solucionador de sandhis
 
 El objetivo a plazo es una herramienta a la que se le pegue un párrafo en
