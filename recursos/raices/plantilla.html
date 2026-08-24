@@ -1215,18 +1215,21 @@ function pintarBarra(oculta){
   b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
 }
 (function(){
-  /* Sólo se recuerda para pantalla ancha: en estrecha la barra siempre
-     empieza recogida, que es lo natural ahí. */
-  pintarBarra(anchaBastante() && store.get(BARRA_OCULTA) === '1');
+  /* El índice se abre siempre al llegar. Plegarlo es una comodidad del
+     momento —para leer más ancho—, no una preferencia que deba durar: si se
+     recordara, quien lo plegó una vez volvería cada día a una página sin su
+     navegación, y tendría que acordarse de dónde estaba el botón para
+     recuperarla. Se borra además lo que hubiera guardado una versión
+     anterior, para que nadie se quede con la barra plegada. */
+  try{ localStorage.removeItem(BARRA_OCULTA); }catch(e){}
+  pintarBarra(false);
   addEventListener('resize', () => {
     if(!anchaBastante()) document.documentElement.classList.remove('sin-barra');
-    else pintarBarra(store.get(BARRA_OCULTA) === '1');
   });
 })();
 document.getElementById('burger').onclick = () => {
   if(anchaBastante()){
     const oculta = !document.documentElement.classList.contains('sin-barra');
-    store.set(BARRA_OCULTA, oculta ? '1' : '0');
     pintarBarra(oculta);
   } else {
     sidebar.classList.toggle('open');
@@ -1234,12 +1237,10 @@ document.getElementById('burger').onclick = () => {
   }
 };
 document.getElementById('volver-barra').onclick = () => {
-  store.set(BARRA_OCULTA, '0');
   pintarBarra(false);
 };
 document.getElementById('sbclose').onclick = () => {
   if(anchaBastante()){
-    store.set(BARRA_OCULTA, '1');
     pintarBarra(true);
   } else cerrarSb();
 };
