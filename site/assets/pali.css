@@ -241,7 +241,7 @@ body.dark { background-image: none; }
 /* 6. Tooltip de las referencias §N: título — glosa del sutta citado.
    La insignia de versión y los botones de kaṇḍa usan el mismo mecanismo,
    pero desplegado hacia abajo (están arriba y hacia arriba se recortaría). */
-.sutta-xref, .version-badge, .kanda-nav-btn, .toc-ocultar { position: relative; }
+.sutta-xref, .version-badge, .kanda-nav-btn { position: relative; }
 .sutta-xref[data-tip]:hover::after,
 .version-badge[data-tip]:hover::after,
 .kanda-nav-btn[data-tip]:hover::after,
