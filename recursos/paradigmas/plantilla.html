@@ -68,9 +68,20 @@ body{
 .sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
 .sidebar a:hover b,.sidebar a.on b{color:inherit}
 .sb-close{display:none}
-#burger{display:none}
 body{padding-left:238px}
 .scrim{display:none}
+
+/* ---------- ocultar la barra lateral ---------- */
+/* El botón ☰ vale para las dos cosas: en pantalla ancha pliega la barra y el
+   texto se ensancha; en estrecha la saca por encima, como antes. La
+   preferencia se guarda y la comparten todas las páginas del sitio. */
+.sidebar{transition:transform .2s ease}
+body{transition:padding-left .2s ease}
+html.sin-barra body{padding-left:0}
+html.sin-barra .sidebar{transform:translateX(-100%)}
+@media (prefers-reduced-motion:reduce){
+  .sidebar,body{transition:none}
+}
 
 /* ---------- marca del IEBH ---------- */
 /* Dos archivos por marca, uno por tema, en lugar de teñir uno solo: el
@@ -251,7 +262,6 @@ footer a{color:var(--nila)}
   .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
   .sidebar.open{transform:none}
   .sb-close{display:block;position:absolute;top:12px;right:12px}
-  #burger{display:inline-flex}
   .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
 }
 @media (max-width:640px){
@@ -382,6 +392,9 @@ function fold(s){
     .replace(/\s+/g,' ').trim();
 }
 const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+/* Envoltorio de matchMedia: un entorno sin él —o una consulta que no
+   entienda— no debe llevarse por delante el pintado de la página. */
+const mq = c => { try{ return !!(window.matchMedia && matchMedia(c).matches); }catch(e){ return false; } };
 
 /* ---------- clasificación ---------- */
 const GENS = [['all','Todos'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neutro'],
@@ -565,7 +578,7 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
   el.innerHTML = lineas.map(([f,r]) =>
     `<div><b>${f}</b><span class="ref">${r}</span></div>`).join('');
   const rows = el.querySelectorAll(':scope > div');
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reduce = mq('(prefers-reduced-motion: reduce)');
   rows.forEach((r,i) => reduce ? r.classList.add('on') : setTimeout(() => r.classList.add('on'), 260 + i*220));
 })();
 
@@ -593,7 +606,7 @@ const store = {
 const root = document.documentElement;
 /* La preferencia de tema se comparte con el resto del sitio (clave pali_dark) */
 const saved = store.get('pali_dark');
-if(saved === '1' || (saved === null && matchMedia('(prefers-color-scheme: dark)').matches))
+if(saved === '1' || (saved === null && mq('(prefers-color-scheme: dark)')))
   root.dataset.theme = 'dark';
 document.getElementById('theme').onclick = () => {
   root.dataset.theme = root.dataset.theme === 'dark' ? '' : 'dark';
@@ -625,8 +638,36 @@ document.getElementById('theme').onclick = () => {
 
 const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
 const closeSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
+/* ---------- ocultar y mostrar la barra lateral ---------- */
+/* Dos comportamientos con un solo botón, según quepa o no la barra al lado
+   del texto: en pantalla ancha la pliega y el texto ocupa su sitio; en
+   estrecha la superpone con un velo, que es lo que ya hacía. */
+const BARRA_OCULTA = 'pali_barra_oculta';
+const anchaBastante = () => innerWidth > 900;
+function pintarBarra(oculta){
+  document.documentElement.classList.toggle('sin-barra', oculta);
+  const b = document.getElementById('burger');
+  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
+  b.setAttribute('title', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+}
+(function(){
+  /* Sólo se recuerda para pantalla ancha: en estrecha la barra siempre
+     empieza recogida, que es lo natural ahí. */
+  pintarBarra(anchaBastante() && store.get(BARRA_OCULTA) === '1');
+  addEventListener('resize', () => {
+    if(!anchaBastante()) document.documentElement.classList.remove('sin-barra');
+    else pintarBarra(store.get(BARRA_OCULTA) === '1');
+  });
+})();
 document.getElementById('burger').onclick = () => {
-  sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+  if(anchaBastante()){
+    const oculta = !document.documentElement.classList.contains('sin-barra');
+    store.set(BARRA_OCULTA, oculta ? '1' : '0');
+    pintarBarra(oculta);
+  } else {
+    sidebar.classList.toggle('open');
+    scrim.classList.toggle('on');
+  }
 };
 document.getElementById('sbclose').onclick = closeSb;
 scrim.onclick = closeSb;
@@ -638,7 +679,7 @@ addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
    va; lejos, sólo hace esperar. De ahí el umbral. */
 function saltarA(el){
   const cerca = Math.abs(el.getBoundingClientRect().top) < innerHeight * 2;
-  const suave = cerca && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const suave = cerca && !mq('(prefers-reduced-motion: reduce)');
   el.scrollIntoView({block:'start', behavior: suave ? 'smooth' : 'instant'});
 }
 
@@ -674,7 +715,7 @@ let puntero = 'mouse';
 addEventListener('pointerdown', e => { puntero = e.pointerType || 'mouse'; },
   {capture:true, passive:true});
 /* Sin PointerEvent (Safari antiguo) decide la media query. */
-const conRaton = () => puntero === 'mouse' && matchMedia('(hover: hover)').matches;
+const conRaton = () => puntero === 'mouse' && mq('(hover: hover)');
 
 /* ---------- tooltip de las referencias §N y de las inflexiones ---------- */
 const tip = document.getElementById('tip');
@@ -821,7 +862,7 @@ topBtn.addEventListener('click', () => {
   /* Mismo umbral que saltarA: desde el final de la página, «suave» tardaría
      lo mismo que un salto de la barra lateral. */
   const suave = scrollY < innerHeight * 2
-    && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    && !mq('(prefers-reduced-motion: reduce)');
   scrollTo({top:0, behavior: suave ? 'smooth' : 'instant'});
 });
 

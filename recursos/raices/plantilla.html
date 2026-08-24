@@ -66,9 +66,20 @@ body{
 .sb-nota{padding:4px 18px 0;font-size:12.5px;line-height:1.6;color:var(--soot);
   border-top:1px solid var(--hair);margin-top:6px;padding-top:12px}
 .sb-close{display:none}
-#burger{display:none}
 body{padding-left:238px}
 .scrim{display:none}
+
+/* ---------- ocultar la barra lateral ---------- */
+/* El botón ☰ vale para las dos cosas: en pantalla ancha pliega la barra y el
+   texto se ensancha; en estrecha la saca por encima, como antes. La
+   preferencia se guarda y la comparten todas las páginas del sitio. */
+.sidebar{transition:transform .2s ease}
+body{transition:padding-left .2s ease}
+html.sin-barra body{padding-left:0}
+html.sin-barra .sidebar{transform:translateX(-100%)}
+@media (prefers-reduced-motion:reduce){
+  .sidebar,body{transition:none}
+}
 
 /* ---------- marca del IEBH ---------- */
 .marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
@@ -156,6 +167,26 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .letra h2{font-size:24px;margin:0;font-weight:700;font-style:italic;color:var(--haritala)}
 .letra .rule{flex:1;height:1px;background:var(--hair)}
 .letra .n{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.08em}
+/* Subcabecera de letra dentro de una sección del Dhātupāṭha: son las
+   cabeceras «K», «KH», «G»… que el propio libro pone dentro de cada gaṇa. */
+.subletra{margin:16px 0 0;display:flex;align-items:baseline;gap:10px;
+  scroll-margin-top:var(--barra,74px)}
+.subletra b{font-family:var(--serif);font-style:italic;font-weight:700;
+  font-size:16px;color:var(--soot)}
+.subletra .rule{flex:1;height:1px;background:var(--hair);opacity:.6}
+.subletra .n{font-family:var(--mono);font-size:9.5px;color:var(--soot);opacity:.8}
+/* Índice de secciones del Dhātupāṭha, en la barra lateral. */
+.secs{padding:0 14px 14px}
+.secs button{display:flex;width:100%;align-items:baseline;gap:8px;
+  font-family:var(--serif);font-size:14.5px;text-align:left;
+  background:none;border:0;border-left:2px solid transparent;
+  padding:5px 8px;cursor:pointer;color:var(--ink)}
+.secs button:hover{background:var(--ola);color:var(--nila);border-left-color:var(--haritala)}
+.secs button i{font-family:var(--mono);font-size:10.5px;font-weight:700;
+  color:var(--soot);min-width:34px}
+.secs button:hover i{color:inherit}
+.secs button u{margin-left:auto;font-family:var(--mono);font-size:9px;
+  color:var(--soot);text-decoration:none}
 
 /* ---------- la fila de una raíz ---------- */
 .fila{border-top:1px solid var(--hair);display:grid;
@@ -335,7 +366,6 @@ footer a{color:var(--nila)}
   .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
   .sidebar.open{transform:none}
   .sb-close{display:block;position:absolute;top:12px;right:12px}
-  #burger{display:inline-flex}
   .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
   .fila{grid-template-columns:minmax(110px,1fr) minmax(0,2.4fr)}
   .col-skt{grid-column:1/-1;border-left:0;padding-left:0;margin-top:8px;
@@ -386,8 +416,14 @@ footer a{color:var(--nila)}
 <aside class="sidebar" id="sidebar" aria-label="Índice alfabético">
   <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
   <div class="sb-brand"><b>Raíces pāḷi</b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā</span></div>
-  <div class="sb-tit" id="abc-tit">Raíces por inicial</div>
+  <div class="sb-tit" id="abc-tit">Saddanīti por inicial</div>
   <div class="abc" id="abc"></div>
+  <div class="secs" id="secs"></div>
+  <p class="sb-nota" id="sb-dp-nota" style="display:none">El
+  <i>Dhātupāṭha</i> no va en orden alfabético, sino en el de su edición: nueve
+  secciones de gaṇa, y dentro de cada una las raíces por inicial. Por eso una
+  misma letra reaparece en cada sección, y el índice es de secciones.</p>
+
   <div id="sb-dm" style="display:none">
     <div class="sb-tit">La Dhātumañjūsā</div>
     <p class="sb-nota" style="border-top:0;margin-top:0;padding-top:0">
@@ -396,7 +432,7 @@ footer a{color:var(--nila)}
     de la edición se dan bajo cada estrofa, con el número de raíz al que se
     refieren.</p>
   </div>
-  <p class="sb-nota">Las letras siguen el orden del alfabeto pāḷi, no el latino:
+  <p class="sb-nota" id="sb-abc-nota">Las letras siguen el orden del alfabeto pāḷi, no el latino:
   vocales, guturales, palatales, cerebrales, dentales, labiales y el resto. El
   número es cuántas entradas empiezan por esa letra en lo que hay a la vista;
   una letra en trazo discontinuo no tiene ninguna. Ninguna palabra pāḷi empieza
@@ -412,7 +448,7 @@ footer a{color:var(--nila)}
       <p class="obras"><i>Saddanīti-dhātumālā</i> · <i>Dhātupāṭha</i> · <i>Dhātumañjūsā</i></p>
       <p class="tag">Las raíces del <i>Saddanīti</i> cotejadas una a una con las del
       <i>Pāṇinīya-dhātupāṭha</i>, y junto a ellas las otras dos listas clásicas de raíces
-      pāḷi: el <i>Dhātupāṭha</i> y la <i>Dhātumañjūsā</i> en verso.</p>
+      pāḷi: <i>Dhātupāṭha</i> y <i>Dhātumañjūsā</i> en verso.</p>
       <span class="version-badge" id="vbadge"></span>
     </div>
     <div class="hero" id="hero" aria-hidden="true"></div>
@@ -520,13 +556,10 @@ footer a{color:var(--nila)}
   2019); la traducción inglesa de sus entradas, de la digitalización de Bodhirasa
   Bhikkhu (2019).</p>
 
-  <p class="licencia"><span class="marca-lockup"></span>
-  <i>Pali Roots in Saddanīti</i> · Copyright © 2001 Venerable U Sīlānanda. Publicado por
-  el Centro Mexicano del Buddhismo Theravada A.C. (CMBT), 2005. Todos los derechos
-  reservados por sus titulares; esta transcripción se ofrece para el estudio de la lengua
-  pāḷi y no sustituye a la edición impresa.<br>
-  Presentación, cotejo y programación: Instituto de Estudios Buddhistas Hispano (IEBH),
-  2026.</p>
+  <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
+  Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
+  Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
 </footer>
 
 <script>
@@ -627,8 +660,7 @@ const DP = (DATA.dhatupatha && DATA.dhatupatha.entradas) || [];
 const DP_GRUPOS = (DATA.dhatupatha && DATA.dhatupatha.grupos) || {};
 DP.forEach((x, i) => {
   x._i = i;
-  x._b = fold([x.raiz, x.glosa, x.notas.join(' ')].join(' '));
-  x.letra = letraDe(x.raiz);
+  x._b = fold([x.raiz, x.glosa, x.en, x.es, x.notas.join(' ')].join(' '));
 });
 function letraDe(w){
   const dobles = ['kh','gh','ch','jh','ṭh','ḍh','th','dh','ph','bh'];
@@ -636,6 +668,11 @@ function letraDe(w){
   for(const d of dobles) if(s.startsWith(d)) return d;
   return s.slice(0,1);
 }
+
+/* Ojo: en el Dhātupāṭha la letra NO es la inicial de la raíz. La edición
+   agrupa por la consonante de la raíz, de modo que bajo «K» van bhū, ku,
+   aṃka, saṃkha y vaka. Esa cabecera viene ya en los datos y no se recalcula:
+   tomarla por la inicial llenaba la página de secciones repetidas. */
 function dpNum(x){ return x.n + (x.sufijo || ''); }
 
 /* La Dhātumañjūsā es la lista de raíces puesta en verso. Aquí va como texto,
@@ -854,25 +891,71 @@ function render(){
 
   const cuentas = new Map();
   if(!esDM) lista.forEach(x => cuentas.set(x.letra, (cuentas.get(x.letra) || 0) + 1));
-  let h = '', letra = null;
+  let h = '', letra = null, seccion = null;
   lista.forEach((x, i) => {
     if(esDM){ h += dmHTML(x); return; }
+
+    /* El Dhātupāṭha no va en orden alfabético: va en el de la edición, nueve
+       secciones de gaṇa y dentro de cada una las iniciales. Por eso aquí las
+       cabeceras son las secciones del libro, y la inicial es una subcabecera
+       que puede repetirse —y se repite— en cada sección. Indizarlo por letra
+       daría cuarenta y nueve sitios distintos llamados «k». */
+    if(esDP){
+      const sec = x.gana + (x.signo || '');
+      if(sec !== seccion){
+        seccion = sec; letra = null;
+        const n = lista.filter(y => (y.gana + (y.signo || '')) === sec).length;
+        h += `<div class="letra" id="G-${esc(sec)}">
+          <h2>${esc(x.gana)}${x.signo ? ', ' + esc(x.signo) : ''}</h2>
+          <span class="rule"></span><span class="n">${n}</span></div>`;
+      }
+      if(x.letra !== letra){
+        letra = x.letra;
+        const n = lista.filter(y => (y.gana + (y.signo || '')) === sec && y.letra === letra).length;
+        h += `<div class="subletra" id="G-${esc(sec)}-${esc(letra)}">
+          <b>${esc(letra)}</b><span class="rule"></span><span class="n">${n}</span></div>`;
+      }
+      h += dpFilaHTML(x);
+      return;
+    }
     if(x.letra !== letra){
       letra = x.letra;
       h += `<div class="letra" id="L-${letra}"><h2>${esc(letra)}</h2>
         <span class="rule"></span><span class="n">${cuentas.get(letra)}</span></div>`;
     }
-    h += esRaices ? filaHTML(x)
-       : esDP ? dpFilaHTML(x)
-       : esDM ? dmHTML(x)
-       : sigHTML(x, DATA.significados.indexOf(x));
+    h += esRaices ? filaHTML(x) : sigHTML(x, DATA.significados.indexOf(x));
   });
   out.innerHTML = h;
   cnt.textContent = `${lista.length} de ${total}` +
     (esRaices ? ' raíces' : esDP ? ' entradas'
      : esDM ? ' estrofas' : ' significados');
-  pintarAbc(cuentas);
+  if(esDP) pintarSecciones(lista); else pintarAbc(cuentas);
 }
+
+/* Las nueve secciones del Dhātupāṭha, con su nombre y cuántas raíces trae
+   cada una. Es el índice que corresponde a un texto que no va alfabético. */
+function pintarSecciones(lista){
+  const orden = [], cuenta = new Map(), primera = new Map();
+  lista.forEach(x => {
+    const sec = x.gana + (x.signo || '');
+    if(!cuenta.has(sec)){ orden.push(sec); primera.set(sec, x); }
+    cuenta.set(sec, (cuenta.get(sec) || 0) + 1);
+  });
+  document.getElementById('secs').innerHTML = orden.map(sec => {
+    const x = primera.get(sec);
+    const nombre = DP_GRUPOS[x.gana] || '';
+    return `<button data-sec="${esc(sec)}" data-tip="${esc(dpGrupo(x))}">` +
+      `<i>${esc(x.gana)}${x.signo ? ', ' + esc(x.signo) : ''}</i>` +
+      `<span>${esc(nombre)}</span><u>${cuenta.get(sec)}</u></button>`;
+  }).join('');
+}
+document.getElementById('secs').addEventListener('click', e => {
+  const b = e.target.closest('button[data-sec]');
+  if(!b) return;
+  const el = document.getElementById('G-' + b.dataset.sec);
+  if(el) saltarA(el);
+  if(innerWidth <= 900) cerrarSb();
+});
 
 /* ---------- índice alfabético ---------- */
 /* La cuenta debajo de cada letra evita la duda de si una letra apagada lo
@@ -971,11 +1054,11 @@ function irASignificado(glosa){
 
 /* ---------- pestañas ---------- */
 const ROTULOS = {
-  raices: ['Raíces por inicial',
+  raices: ['Saddanīti por inicial',
            'Buscar raíz o significado — «paca», «gam», «cocinar», «gatyatthe»…'],
-  significados: ['Significados por inicial',
+  significados: ['Significados del Saddanīti',
            'Buscar un sentido — «ir», «hablar», «gatiyaṃ», «hiṃsā»…'],
-  dhatupatha: ['Dhātupāṭha por inicial',
+  dhatupatha: ['Dhātupāṭha por secciones',
            'Buscar en el Dhātupāṭha — «bhū», «pāke», «cutting»…'],
   dhatumanjusa: ['Estrofas',
            'Buscar en el poema — «bhū sattāyaṃ», «gatimhi», «Ckbip»…'],
@@ -988,10 +1071,15 @@ function cambiarPestanya(v){
   document.getElementById('f-gana').style.display = raices ? '' : 'none';
   document.getElementById('f-skt').style.display = raices ? '' : 'none';
   document.getElementById('abc-tit').textContent = ROTULOS[v][0];
-  // La Dhātumañjūsā es un poema: se lee seguido, no por inicial.
-  document.getElementById('abc').style.display = v === 'dhatumanjusa' ? 'none' : '';
+  // Cada obra pide su índice: alfabético el Saddanīti, por secciones el
+  // Dhātupāṭha, y ninguno la Dhātumañjūsā, que es un poema y se lee seguido.
+  const conAbc = v === 'raices' || v === 'significados';
+  document.getElementById('abc').style.display = conAbc ? '' : 'none';
+  document.getElementById('secs').style.display = v === 'dhatupatha' ? '' : 'none';
   document.getElementById('abc-tit').style.display = v === 'dhatumanjusa' ? 'none' : '';
   document.getElementById('sb-dm').style.display = v === 'dhatumanjusa' ? '' : 'none';
+  document.getElementById('sb-abc-nota').style.display = conAbc ? '' : 'none';
+  document.getElementById('sb-dp-nota').style.display = v === 'dhatupatha' ? '' : 'none';
   document.getElementById('q').placeholder = ROTULOS[v][1];
 }
 document.querySelector('.tabs').addEventListener('click', e => {
@@ -1087,8 +1175,36 @@ document.getElementById('theme').onclick = () => {
 /* ---------- barra lateral ---------- */
 const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
 const cerrarSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
+/* ---------- ocultar y mostrar la barra lateral ---------- */
+/* Dos comportamientos con un solo botón, según quepa o no la barra al lado
+   del texto: en pantalla ancha la pliega y el texto ocupa su sitio; en
+   estrecha la superpone con un velo, que es lo que ya hacía. */
+const BARRA_OCULTA = 'pali_barra_oculta';
+const anchaBastante = () => innerWidth > 900;
+function pintarBarra(oculta){
+  document.documentElement.classList.toggle('sin-barra', oculta);
+  const b = document.getElementById('burger');
+  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
+  b.setAttribute('title', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+}
+(function(){
+  /* Sólo se recuerda para pantalla ancha: en estrecha la barra siempre
+     empieza recogida, que es lo natural ahí. */
+  pintarBarra(anchaBastante() && store.get(BARRA_OCULTA) === '1');
+  addEventListener('resize', () => {
+    if(!anchaBastante()) document.documentElement.classList.remove('sin-barra');
+    else pintarBarra(store.get(BARRA_OCULTA) === '1');
+  });
+})();
 document.getElementById('burger').onclick = () => {
-  sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+  if(anchaBastante()){
+    const oculta = !document.documentElement.classList.contains('sin-barra');
+    store.set(BARRA_OCULTA, oculta ? '1' : '0');
+    pintarBarra(oculta);
+  } else {
+    sidebar.classList.toggle('open');
+    scrim.classList.toggle('on');
+  }
 };
 document.getElementById('sbclose').onclick = cerrarSb;
 scrim.onclick = cerrarSb;
