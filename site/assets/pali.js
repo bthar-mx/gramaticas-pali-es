@@ -604,7 +604,7 @@ document.addEventListener('DOMContentLoaded', function() {
   cerrar.type = 'button';
   cerrar.textContent = '« ocultar';
   cerrar.setAttribute('aria-label', 'Ocultar el índice');
-  cerrar.setAttribute('data-tip', 'Ocultar el índice y leer a todo lo ancho. Vuelve con la pestaña del borde izquierdo.');
+  cerrar.setAttribute('data-tip', 'Aparta el índice para leer a todo lo ancho. Vuelve con la pestaña del borde izquierdo.');
   cerrar.addEventListener('click', function() { verToc(true); });
   toc.style.position = toc.style.position || '';
   toc.insertBefore(cerrar, toc.firstChild);

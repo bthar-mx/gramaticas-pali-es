@@ -65,4 +65,29 @@ for sel, esperado in (('.toc-ocultar', 'absolute'), ('#toc-volver', 'fixed')):
     mal += 0 if ok else 1
     print(('✓' if ok else '✗'), sel, '→', v[-1] if v else '(ninguna)',
           '· esperado:', esperado, '· todas:', v or '—')
+
+# Un globo que cuelgue de algo metido en la barra lateral tiene que ir en
+# «fixed»: la barra lleva overflow-y:auto, que recorta también a los lados,
+# y el globo es más ancho que ella. En «absolute» sale cortado.
+#
+# Como arriba, lo que cuenta es la última declaración que le aplica, no cada
+# regla por separado: hay una regla común que pone «absolute» a todos los
+# globos y luego la propia que la corrige.
+for sel, dentro in (('.toc-ocultar', True), ('#toc-volver', False)):
+    pos = []
+    for cab, cuerpo in reglas(css):
+        sels = [x.strip() for x in cab.split(',')]
+        if not any(x.startswith(sel) and '::after' in x for x in sels):
+            continue
+        pos += re.findall(r'(?<![-\w])position:\s*([a-z]+)', cuerpo)
+    if not pos:
+        continue
+    esperado = 'fixed' if dentro else 'absolute'
+    bien = pos[-1] == esperado
+    mal += 0 if bien else 1
+    print(('✓' if bien else '✗'), sel + '::after →', pos[-1],
+          '· esperado:', esperado,
+          '· dentro de la barra' if dentro else '· fuera de la barra',
+          '· todas:', pos)
+
 sys.exit(1 if mal else 0)

@@ -263,7 +263,13 @@ body.dark { background-image: none; }
   bottom: auto; top: calc(100% + 8px);
   font-weight: 400; letter-spacing: normal; text-align: left;
 }
-.toc-ocultar[data-tip]:hover::after { left: auto; right: 0; transform: none; }
+.toc-ocultar[data-tip]:hover::after {
+  /* La barra recorta (overflow-y:auto recorta también a los lados) y el
+     globo es más ancho que ella. En «fixed» escapa del recorte y se pone
+     junto a la barra, sobre el texto. */
+  position: fixed; left: calc(var(--toc-w) + 10px); top: 1rem;
+  right: auto; bottom: auto; transform: none; max-width: 320px;
+}
 /* La pestaña del borde va en vertical; su globo, no. */
 #toc-volver[data-tip]:hover::after {
   bottom: auto; top: 50%; left: calc(100% + 8px);
