@@ -112,8 +112,8 @@ CORPUS = [
      "variantes, con búsqueda que ignora los diacríticos."),
 ]
 
-FUENTES = ('<a href="https://github.com/admin-iebh/gramaticas-pali-es">'
-           'github.com/admin-iebh/gramaticas-pali-es</a>')
+FUENTES = ('<a href="https://github.com/bthar-mx/gramaticas-pali-es">'
+           'github.com/bthar-mx/gramaticas-pali-es</a>')
 
 # ---------------------------------------------------------------- plantilla
 

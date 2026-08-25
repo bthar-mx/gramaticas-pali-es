@@ -52,5 +52,5 @@ define sus propios datos en `window.PALI_CAPITULO` antes de cargar `pali.js`.
 ## Textos relacionados
 
 Corpus del Sexto Concilio: <https://buddha-dhamma.net\> ·
-<https://github.com/admin-iebh/OSBCT\>
+<https://github.com/bthar-mx/OSBCT\>
 

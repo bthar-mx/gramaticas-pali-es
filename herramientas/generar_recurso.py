@@ -282,8 +282,8 @@ def main():
         pie.append("Publicación IEBH: {0}".format(html.escape(meta["publicacion_iebh"])))
     if meta.get("source_pdf"):
         pie.append("Original: {0}".format(html.escape(meta["source_pdf"])))
-    pie.append('<a href="https://github.com/admin-iebh/gramaticas-pali-es">'
-               'github.com/admin-iebh/gramaticas-pali-es</a>')
+    pie.append('<a href="https://github.com/bthar-mx/gramaticas-pali-es">'
+               'github.com/bthar-mx/gramaticas-pali-es</a>')
 
     nombre = os.path.splitext(os.path.basename(ruta_abs))[0]
     destino = os.path.join(RAIZ, "site", "recursos", nombre, "index.html")
