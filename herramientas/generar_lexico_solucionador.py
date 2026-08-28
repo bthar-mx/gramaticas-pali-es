@@ -52,11 +52,19 @@ def nombre(letra):
 
 def main():
     d = json.load(open(CORPUS, encoding="utf-8"))
-    formas = sorted({cotejo(f) for f in d.get("formas", {})} - {""})
+    # Cada fragmento lleva [forma, cuenta]: la cuenta agregada por forma de
+    # cotejo es el árbitro de la señal «posible» (etapa 3) y viaja con el
+    # léxico para no pedir un segundo archivo.
+    frec = {}
+    for f, n in d.get("formas", {}).items():
+        q = cotejo(f)
+        if q:
+            frec[q] = frec.get(q, 0) + n
+    formas = sorted(frec)
 
     grupos = {}
     for f in formas:
-        grupos.setdefault(f[0], []).append(f)
+        grupos.setdefault(f[0], []).append([f, frec[f]])
 
     os.makedirs(DESTINO, exist_ok=True)
     indice = {"origen": "recursos/corpus/corpus-formas.json",

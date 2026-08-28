@@ -71,7 +71,9 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella }) {
     if (tablas) {
         tablas.filas.forEach((fila, i) => {
             (fila.secuencias || []).forEach((s, j) => {
-                const f = s.em || s.forma_inicial;
+                // La clave es la forma RESULTANTE (em o forma_final), no la
+                // inicial: el banco se consulta por lo que el lector pega.
+                const f = s.em || s.forma_final;
                 if (f) meter(f, {
                     dato: s,
                     archivo: "recursos/sandhi/tablas-nandisena-secuencias.json",
@@ -110,6 +112,11 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella }) {
     _cache.canon = new Set();
     _cache.nipata = new Set((listas ? listas.nipata : []).map(cotejo));
     _cache.huella = huella === undefined ? null : huella;
+    // Las cuentas del canon, si el léxico las trae (léxico fragmentado):
+    // árbitro de la señal «posible» de la etapa 3. Con un Set de formas
+    // (arnés de la etapa 1) no hay cuentas y la señal «posible» calla.
+    _cache.frecuencia = typeof base.frecuencia === "function"
+        ? q => base.frecuencia(q) : () => 0;
 }
 
 function esPalabra(t) { return _cache.lexico.has(cotejo(t)); }
@@ -539,8 +546,14 @@ function compuestoAparente(c) {
 
 function senal(voz) {
     // ¿Hay motivo para SOSPECHAR sandhi en esta voz, antes de proponer nada?
-    // Dos señales, las dos medidas. (La del DPD calla en solo-canon.)
+    // Señales medidas (`medir_deteccion_canon.py`). La del DPD calla en
+    // solo-canon.
     const c = cotejo(voz);
+    if ([...MARCAS].some(x => voz.includes(x))) {
+        // En solo-canon el sello ortográfico asciende a señal: es la
+        // edición diciendo dónde está la juntura.
+        return ["segura", "la edición marcó la juntura: apóstrofo o guion"];
+    }
     if (descomposicion(voz).length)
         return ["segura",
                 "el DPD publica su propia descomposición de esta voz"];
@@ -601,7 +614,49 @@ function porQueNo(voz, k) {
         + "o que el análisis necesite más de dos piezas.", d];
 }
 
+// Los aforismos «ruidosos» para la DETECCIÓN, no para la validez: alargar o
+// acortar (§25, §26), duplicar (§28, §29) e insertar (§35, §37) producen
+// lecturas verificadas sobre flexiones corrientes. La lectura se publica
+// igual; lo que no hace es, por sí sola, encender la señal.
+const RUIDOSAS = new Set([25, 26, 28, 29, 35, 37, "35+26", "35nota9"]);
+
 function solucionar(voz) {
+    // Resuelve, y completa la señal con lo que las lecturas permiten decir
+    // (la señal «posible» de la etapa 3). El cuerpo está en `_solucionar`;
+    // esta envoltura sólo toca `senal`/`senal_motivo`, nunca las lecturas
+    // ni el estado. Números y porqués: `_ascender_senal` del Python.
+    const r = _solucionar(voz);
+    ascenderSenal(r);
+    return r;
+}
+
+function ascenderSenal(r) {
+    if (r.senal || r.escrita.trim().split(/\s+/u).filter(t => t).length !== 1)
+        return;
+    if (r.del_banco && r.estado !== "sin_sandhi_por_regla") {
+        r.senal = "segura";
+        r.senal_motivo = "la forma está en el banco, con secuencia de "
+            + "procedencia";
+        return;
+    }
+    const frec = _cache.frecuencia;
+    const nip = _cache.nipata;
+    const fF = frec(r.cotejo);
+    for (const l of (r.lecturas || [])) {
+        const comp = (l.componentes || []).map(cotejo);
+        if (comp.length < 2 || !nip.has(comp[comp.length - 1])) continue;
+        if (RUIDOSAS.has(l.sutta)) continue;
+        if (Math.min(...comp.map(c => frec(c))) > fF) {
+            r.senal = "posible";
+            r.senal_motivo = "una lectura verificada la parte en dos voces "
+                + "más frecuentes en el canon que la forma entera, con la "
+                + "segunda en la lista cerrada de nipāta";
+            return;
+        }
+    }
+}
+
+function _solucionar(voz) {
     const k = cotejo(voz);
     const r = { escrita: voz, cotejo: k, estado: null, motivo: null,
                 lecturas: [], banco: huellaBanco() };

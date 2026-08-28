@@ -152,9 +152,18 @@ def cargar():
     if SOLO_CANON:
         _c = json.load(open(CORPUS, encoding="utf-8"))
         _cache["lexico"] = {cotejo(f) for f in _c.get("formas", {})}
+        # Las cuentas del canon, agregadas por forma de cotejo. Son el
+        # árbitro de la señal «posible» (etapa 3): no decide una autoridad
+        # de afuera sino la frecuencia en la propia edición.
+        frec = {}
+        for f, n in _c.get("formas", {}).items():
+            q = cotejo(f)
+            frec[q] = frec.get(q, 0) + n
+        _cache["frecuencia"] = frec
     else:
         _cache["lexico"] = {cotejo(x) for x in
                             open(LEXICO, encoding="utf-8").read().split("\n") if x}
+        _cache["frecuencia"] = {}
     # ── El segundo léxico: las voces que el propio banco atestigua ──────
     #
     # 18 de las voces que el Venerable usa como componente en `reglas.json` no
@@ -781,6 +790,83 @@ def proponer(F, una_voz=True, compuestos=False):
 # ── Resolver ────────────────────────────────────────────────────────────
 
 def solucionar(voz):
+    """Resuelve, y en solo-canon completa la señal con lo que las lecturas
+    permiten decir (la señal «posible» de la etapa 3). El cuerpo está en
+    `_solucionar`; esta envoltura sólo toca `senal`/`senal_motivo`, nunca
+    las lecturas ni el estado."""
+    r = _solucionar(voz)
+    if SOLO_CANON:
+        _ascender_senal(r)
+    return r
+
+
+# Los aforismos «ruidosos» para la DETECCIÓN, no para la validez: alargar o
+# acortar (§25, §26), duplicar (§28, §29) e insertar (§35, §37) producen
+# lecturas verificadas sobre flexiones corrientes —de «gacchā + ti» sale
+# «gacchati»—. Una lectura así sigue siendo válida y se publica; lo que no
+# hace es, por sí sola, encender la señal.
+RUIDOSAS = {25, 26, 28, 29, 35, 37, "35+26", "35nota9"}
+
+
+def _ascender_senal(r):
+    """La señal «posible» del modo solo-canon, medida antes de escribirse.
+
+    Con el DPD apartado, «no está en el léxico» se apaga: el corpus del canon
+    lista lo que está ESCRITO, y `lokaggo` figura con su cuenta. Lo medido
+    sobre el texto entero (`medir_deteccion_canon.py`, 2026-08-28), con la
+    señal que ESTA función devuelve, no una paralela:
+
+        «segura»              versos   marca  1,1 %   sandhi 85 %   recall  8 %
+                              prosa    marca  3,9 %   sandhi 92 %   recall 23 %
+        «segura» o «posible»  versos   marca  7,5 %   sandhi 51 %   recall 32 %
+                              prosa    marca 10,9 %   sandhi 66 %   recall 46 %
+
+    El 15 % que a la «segura» no le cuenta como sandhi el corpus de medida no
+    son yerros de la señal: son formas ATESTIGUADAS en el banco del Venerable
+    que el corpus clasifica de otro modo —`taṇhakkhayo`, `pañcakkhandhā` como
+    compuesto aunque §28 opera en su juntura; `chaḷabhiññā` como juntura; y
+    `svāgataṃ`, un sandhi real que el corpus ni marcó—. El banco es acá el
+    mejor testigo, y la referencia está teñida de DPD (briefing 30 §2).
+
+    Queda por debajo del recall que daba la descomposición del DPD (71-79 %),
+    y eso se declara donde se publique. Por eso son DOS niveles y no uno: la
+    «segura» casi no se equivoca; la «posible» avisa que conviene mirar, con
+    su cifra a la vista. Lo que no se marca no se pierde: se calla, y la voz
+    sigue consultable una por una.
+
+    Tres reglas, en orden:
+      · la forma está en el banco con una cadena que opera → «segura»
+        (atestiguada por el Venerable, no es heurística);
+      · alguna lectura tiene la 2.ª voz en la lista cerrada de nipāta, un
+        aforismo fuera de `RUIDOSAS`, y sus dos piezas superan en frecuencia
+        a la forma entera → «posible»;
+      · si no, la señal queda como estaba.
+    """
+    if r.get("senal") or len(r["escrita"].split()) != 1:
+        return
+    if r.get("del_banco") and r.get("estado") != "sin_sandhi_por_regla":
+        r["senal"] = "segura"
+        r["senal_motivo"] = "la forma está en el banco, con secuencia de procedencia"
+        return
+    frec = cargar().get("frecuencia", {})
+    nip = cargar()["nipata"]
+    fF = frec.get(r["cotejo"], 0)
+    for l in r.get("lecturas", []):
+        comp = [cotejo(x) for x in l.get("componentes", [])]
+        if len(comp) < 2 or comp[-1] not in nip:
+            continue
+        if l.get("sutta") in RUIDOSAS:
+            continue
+        if min(frec.get(c, 0) for c in comp) > fF:
+            r["senal"] = "posible"
+            r["senal_motivo"] = ("una lectura verificada la parte en dos voces "
+                                 "más frecuentes en el canon que la forma "
+                                 "entera, con la segunda en la lista cerrada "
+                                 "de nipāta")
+            return
+
+
+def _solucionar(voz):
     c = cargar()
     k = cotejo(voz)
     r = {"escrita": voz, "cotejo": k, "estado": None, "motivo": None,
@@ -1127,6 +1213,11 @@ def senal(voz):
     por una, con todas sus lecturas. Lo que no hace es gritar.
     """
     c = cotejo(voz)
+    if SOLO_CANON and any(x in voz for x in MARCAS):
+        # En solo-canon el sello ortográfico asciende a señal: es la edición
+        # diciendo dónde está la juntura. En el corpus de medida no aparece
+        # (0 %), pero el lector pega texto de cualquier fuente.
+        return ("segura", "la edición marcó la juntura: apóstrofo o guion")
     if descomposicion(voz):
         return ("segura", "el DPD publica su propia descomposición de esta voz")
     if c.endswith("ti") and len(c) > 3 and c[-3] in "āīū":

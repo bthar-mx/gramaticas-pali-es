@@ -1,4 +1,4 @@
-EL PORTE A JAVASCRIPT — ETAPAS 1 Y 2 (briefing sesión 30, §6)
+EL PORTE A JAVASCRIPT — ETAPAS 1, 2 Y 3 (briefing sesión 30, §6)
 
 Núcleo del solucionador de sandhis en JS, medido contra el Python, que queda
 como referencia permanente. Modo: solo-canon (el DPD fuera, decisión del
@@ -42,15 +42,45 @@ Las referencias (generadas, nunca editadas a mano):
   [--comentario]`. (El corte de `Sandhi` no es la verdad: su partición se
   hizo CON el DPD — la referencia está teñida, briefing 30 §2.)
 
+LA DETECCIÓN SIN DPD (etapa 3). Con el DPD apartado, «no está en el léxico»
+se apaga —el corpus del canon lista lo que está ESCRITO, y `lokaggo` figura
+con su cuenta: medido, marca el 0 % de los versos—. La señal rediseñada
+tiene DOS niveles, medidos sobre el texto entero con
+`python3 nuestro/medir_deteccion_canon.py [--comentario]`:
+
+  «segura»   — sello ortográfico, cola de «iti», fuera del canon, o forma
+               atestiguada en el banco.        versos 85 % · prosa 92 %
+  «posible»  — una lectura verificada con la 2.ª voz en la lista cerrada de
+               nipāta, aforismo no «ruidoso» (§25/26/28/29/35/37), y las dos
+               piezas más frecuentes en el canon que la forma entera. Las
+               cuentas de la propia edición arbitran; ninguna autoridad de
+               afuera.       juntas: versos 51 % @ recall 32 · prosa 66 % @ 46
+
+  Queda por debajo del recall del DPD (71-79 %) y eso SE DECLARA donde se
+  publique. Los umbrales probados y descartados están en la tabla del
+  script; los tres criterios que LA-DETECCION-medida.md ya había descartado
+  (nipāta a secas, once letras, frecuencia a secas) no se reintentaron.
+  Los pormenores y cifras: `_ascender_senal` en solucionar_sandhis.py.
+
+  Los fragmentos llevan ahora [forma, cuenta]; `lexicoFragmentado` expone
+  frecuencia(q) además de has(q).
+
 LAS PUERTAS (pasadas 2026-08-28):
   Etapa 1 — 218 de 251 medibles del banco, y las 266 formas con lecturas
   idénticas al Python, secuencia por secuencia.
   Etapa 2 — 551 de 698 (Therīgāthā) y 6.048 de 7.178 (su comentario) con el
   léxico fragmentado, y las 10.177 formas idénticas al Python en categoría,
   rango y lecturas.
+  Etapa 3 — paridad: señal y motivo idénticos al Python en las 16.366
+  formas únicas de los dos corpus (`node nuestro/js/arnes_deteccion.js`,
+  referencia de `python3 nuestro/volcar_referencia_senal.py`). Este arnés
+  encontró un defecto real del porte —la clave del banco de las Tablas era
+  forma_inicial donde el Python usa em/forma_final— antes de publicarse.
+
 Si un arnés no da idéntico, el defecto es del porte, no del Python.
 
-Lo que NO está todavía: combinar() y juntura declarada, la detección en
-párrafo (etapa 3, rediseño sin DPD), la página del sitio (etapa 4, interfaz
-mínima del §3.4 del briefing 30). La capa --canon del modo DPD no se porta:
-este porte es solo-canon por decisión.
+Lo que NO está todavía: combinar() y juntura declarada, la ampliación del
+banco de pruebas más allá de la Therīgāthā (pide fuente de verdad nueva:
+decisión de Angel), la página del sitio (etapa 4, interfaz mínima del §3.4
+del briefing 30). La capa --canon del modo DPD no se porta: este porte es
+solo-canon por decisión.

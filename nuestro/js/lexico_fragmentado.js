@@ -16,19 +16,30 @@ const path = require("path");
 function lexicoFragmentado(dir) {
     const indice = JSON.parse(
         fs.readFileSync(path.join(dir, "indice.json"), "utf-8"));
-    const cargados = new Map();          // letra → Set de formas
+    const cargados = new Map();          // letra → Map forma → cuenta
+    function fragmento(q) {
+        if (!q) return null;
+        const info = indice.fragmentos[q[0]];
+        if (!info) return null;
+        let m = cargados.get(q[0]);
+        if (!m) {
+            // Cada fragmento es una lista de [forma, cuenta]: la cuenta es
+            // el árbitro de la señal «posible» (etapa 3) y viaja con el
+            // léxico para no pedir un segundo archivo.
+            m = new Map(JSON.parse(fs.readFileSync(
+                path.join(dir, info.archivo), "utf-8")));
+            cargados.set(q[0], m);
+        }
+        return m;
+    }
     return {
         has(q) {
-            if (!q) return false;
-            const info = indice.fragmentos[q[0]];
-            if (!info) return false;
-            let s = cargados.get(q[0]);
-            if (!s) {
-                s = new Set(JSON.parse(fs.readFileSync(
-                    path.join(dir, info.archivo), "utf-8")));
-                cargados.set(q[0], s);
-            }
-            return s.has(q);
+            const m = fragmento(q);
+            return m ? m.has(q) : false;
+        },
+        frecuencia(q) {
+            const m = fragmento(q);
+            return (m && m.get(q)) || 0;
         },
         total: indice.total,
         fragmentosCargados: () => [...cargados.keys()],
