@@ -182,6 +182,14 @@ def medir(archivo, limite=None):
             ("BASE, o piezas > 10× la forma", base or r10),
             ("BASE, o > 1× nipāta y sustantiva", base or rns1),
             ("BASE, o > 10× nipāta y sustantiva", base or rns10),
+            # La unión que pide el caso `tenupasaṅkami` (reportado por Angel,
+            # 2026-08-28): la segunda voz es un verbo, no un nipāta, y la
+            # variante nipāta-sola lo calla. ¿Qué cuesta admitir también la
+            # sustantiva de 10× y de 100× sin nipāta?
+            ("BASE, o rns1, o sustantiva 10×", base or rns1 or rs10),
+            ("BASE, o rns1, o sustantiva 100×",
+             base or rns1 or (rs10 and ratio_explica(voz, 100,
+                                                     solo_sustantiva=True))),
             # Las dos últimas filas NO se recalculan acá: salen de la señal
             # que el motor de verdad devuelve (`solucionar()["senal"]`), para
             # que el número publicado sea el de la función que se publica.

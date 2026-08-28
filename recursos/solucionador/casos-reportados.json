@@ -1,0 +1,44 @@
+{
+ "_que_es": "Casos adjudicados por lectores del solucionador. Decisión del Venerable (briefing 30 §3.5): la herramienta mejora con los fallos que reporten los lectores, y cada fallo es un caso de prueba permanente. Cada caso lleva su fuente y su fecha: es una adjudicación atribuida, no una heurística. El motor los consulta como al banco: un caso con sandhi=true da señal «segura» y pone primera la lectura adjudicada si el motor la produce; uno con sandhi=false es prueba de regresión de que la señal calla. Se comprueban con: node nuestro/js/arnes_casos.js",
+ "casos": [
+  {
+   "forma": "tenupasaṅkami",
+   "sandhi": true,
+   "componentes": "tena + upasaṅkami",
+   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "nota": "La señal por frecuencia no puede verlo: la forma aparece 1.763 veces en el canon y su segunda voz «upasaṅkami» sólo 231 — el sandhi formulaico es más frecuente que sus propias piezas. Por eso existe este archivo."
+  },
+  {
+   "forma": "etadavoca",
+   "sandhi": true,
+   "componentes": "etaṃ + avoca",
+   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "nota": "Ya estaba en el banco y la firmada sale primera; el caso lo fija como regresión."
+  },
+  {
+   "forma": "oghamatarīti",
+   "sandhi": true,
+   "componentes": "oghamatari + iti",
+   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "nota": "La secuencia correcta es §10 · §12 · §15 · §11. El motor la producía como segunda lectura entre 18; la adjudicación la pone primera."
+  },
+  {
+   "forma": "sāvatthiyaṃ",
+   "sandhi": false,
+   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "nota": "Locativo de Sāvatthī, voz entera. La señal falsa que se vio venía de un defecto del tokenizador de la página (amputaba la ṁ final), corregido el mismo día."
+  },
+  {
+   "forma": "kathaṃ",
+   "sandhi": false,
+   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "nota": "Adverbio interrogativo, voz entera. Mismo defecto del tokenizador."
+  },
+  {
+   "forma": "tvaṃ",
+   "sandhi": false,
+   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "nota": "Pronombre, voz entera. Mismo defecto del tokenizador."
+  }
+ ]
+}

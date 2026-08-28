@@ -319,7 +319,8 @@ let __iniciado = false;
 function iniciarMotor(){
   if(__iniciado) return;
   MOTOR.iniciar({ lexico: LEXICO, reglas: DATA.reglas, tablas: DATA.tablas,
-                  listas: DATA.listas, huella: DATA.huella });
+                  listas: DATA.listas, huella: DATA.huella,
+                  casos: DATA.casos });
   __iniciado = true;
 }
 
@@ -373,10 +374,16 @@ function ladder(steps, isCE){
 
 /* ---------- tokenización ---------- */
 /* Se parte por espacios y se poda la puntuación externa; el apóstrofo y el
-   guion se conservan, que son marcas de juntura de la edición. */
-const PODA = /^[^\wāīūṃṅñṭḍṇḷ’'-]+|[^\wāīūṃṅñṭḍṇḷ’'-]+$/gu;
+   guion ASCII se conservan, que son marcas de juntura de la edición. La
+   clase es \p{L}\p{M} —toda letra con sus marcas—, no una lista escrita a
+   mano: la lista olvidó la «ṁ» de punto arriba (U+1E41, la niggahīta de la
+   Mahāsaṅgīti) y amputaba la final de cada voz — de «kathaṁ» quedaba
+   «katha», que recibía señal falsa. Caso reportado por Angel, 2026-08-28.
+   La raya y el guion largo (– —) separan voces: son puntuación de esas
+   ediciones, no la marca de juntura, y «sutaṁ–ekaṁ» debe ser dos voces. */
+const PODA = /^[^\p{L}\p{M}’'-]+|[^\p{L}\p{M}’'-]+$/gu;
 function fichas(texto){
-  return texto.split(/\s+/u)
+  return texto.replace(/[–—]/gu, ' ').split(/\s+/u)
     .map(t => t.replace(PODA, ''))
     .filter(t => t && /\p{L}/u.test(t));
 }
@@ -384,10 +391,19 @@ function fichas(texto){
 /* ---------- procedencia de cada lectura ---------- */
 function pieLectura(l){
   const partes = [];
+  if(l.adjudicada) partes.push(`lectura adjudicada · ${esc(l.adjudicada)}`);
   if(l.referencia) partes.push(`Referencia: <b>${esc(String(l.referencia))}</b>`);
   partes.push(esc(l.procedencia || ''));
-  const clase = (l.procedencia === 'firmada') ? 'parcial verif' : 'cita';
+  const clase = (l.procedencia === 'firmada' || l.adjudicada)
+    ? 'parcial verif' : 'cita';
   return `<p class="${clase}" style="margin:6px 0 0">${partes.join(' · ')}</p>`;
+}
+
+function unaLectura(l){
+  const comp = (l.componentes || []).filter(x => x);
+  return `<p class="lbl" style="margin:14px 0 0">${comp.length ? esc(comp.join(' + ')) : '—'}</p>`
+       + ladder(l.pasos || [], false)
+       + pieLectura(l);
 }
 
 function cuerpoResultado(r, esVozSola){
@@ -395,12 +411,21 @@ function cuerpoResultado(r, esVozSola){
   if(esVozSola && r.motivo){
     h += `<p class="motivo">${esc(r.motivo)}</p>`;
   }
-  (r.lecturas || []).forEach(l => {
-    const comp = (l.componentes || []).filter(x => x);
-    h += `<p class="lbl" style="margin:14px 0 0">${comp.length ? esc(comp.join(' + ')) : '—'}</p>`
-       + ladder(l.pasos || [], false)
-       + pieLectura(l);
-  });
+  const lect = r.lecturas || [];
+  if(!lect.length) return h;
+  /* La primera lectura a la vista; las demás, plegadas. No se elige en
+     silencio: se dicen cuántas hay y se abren con un clic — el sandhi es
+     genuinamente ambiguo y todas las que recomponen se muestran. */
+  h += unaLectura(lect[0]);
+  if(lect.length > 1){
+    h += `<details style="margin-top:10px">
+      <summary class="lbl" style="cursor:pointer;list-style:none">
+        + ${lect.length - 1} lectura${lect.length > 2 ? 's' : ''} más que también
+        recompone${lect.length > 2 ? 'n' : ''} — el orden es de verosimilitud,
+        no de certeza</summary>
+      ${lect.slice(1).map(unaLectura).join('')}
+    </details>`;
+  }
   return h;
 }
 

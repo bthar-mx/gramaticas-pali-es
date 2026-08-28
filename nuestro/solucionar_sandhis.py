@@ -99,6 +99,7 @@ LEXICO = ruta("recursos", "lexico", "dpd-formas.txt")
 BANCO = ruta("banco.sha256")
 LISTAS = ruta("recursos", "sandhi", "listas-cerradas.json")
 CORPUS = ruta("recursos", "corpus", "corpus-formas.json")
+CASOS = ruta("recursos", "solucionador", "casos-reportados.json")
 
 # La capa del canon, apagada. Ver el porqué —y los dos números— en `cargar()`.
 # Se enciende con `--canon`, nunca por el solo hecho de que el archivo exista.
@@ -235,6 +236,15 @@ def cargar():
     if os.path.exists(LISTAS):
         _cache["nipata"] = {cotejo(x) for x in
                             json.load(open(LISTAS, encoding="utf-8"))["nipata"]}
+    # ── Los casos adjudicados por lectores ──────────────────────────────
+    # Decisión del Venerable (briefing 30 §3.5): cada fallo reportado, un
+    # caso de prueba permanente. No es heurística: es adjudicación con
+    # fuente y fecha, y el motor la consulta como al banco.
+    _cache["casos"] = {}
+    if os.path.exists(CASOS):
+        d_casos = json.load(open(CASOS, encoding="utf-8"))
+        _cache["casos"] = {cotejo(c["forma"]): c
+                           for c in d_casos.get("casos", [])}
     return _cache
 
 
@@ -797,7 +807,46 @@ def solucionar(voz):
     r = _solucionar(voz)
     if SOLO_CANON:
         _ascender_senal(r)
+        _aplicar_caso(r)
     return r
+
+
+def _aplicar_caso(r):
+    """Un caso adjudicado manda sobre la señal, y su lectura va primera.
+
+    No es heurística: es una adjudicación con fuente y fecha
+    (`recursos/solucionador/casos-reportados.json`), y se atribuye siempre
+    (principio 4). Tres efectos, y ninguno inventa nada:
+
+      · sandhi=true → señal «segura» (si no la había), con el motivo
+        nombrando la fuente;
+      · la lectura cuyas componentes coinciden con las adjudicadas sube al
+        primer lugar, marcada `adjudicada` — el resto no se toca ni se
+        borra: todas las lecturas que recomponen se siguen mostrando;
+      · sandhi=false no toca nada aquí: es prueba de regresión de que la
+        señal calla (la comprueba `arnes_casos`).
+
+    El primer caso fue `tenupasaṅkami` (Angel, 2026-08-28): la señal por
+    frecuencia no puede verlo —1.763 apariciones contra 231 de su propia
+    segunda voz— y ésta es la vía que la decisión del Venerable dejó
+    prevista: cada fallo reportado, un caso permanente.
+    """
+    caso = cargar()["casos"].get(r["cotejo"])
+    if not caso or not caso.get("sandhi"):
+        return
+    objetivo = [cotejo(x) for x in partir_componentes(caso.get("componentes", ""))]
+    delante, detras = [], []
+    for l in r.get("lecturas", []):
+        comp = [cotejo(x) for x in l.get("componentes", [])]
+        if objetivo and comp == objetivo:
+            l["adjudicada"] = caso.get("fuente", "")
+            delante.append(l)
+        else:
+            detras.append(l)
+    r["lecturas"] = delante + detras
+    if not r.get("senal"):
+        r["senal"] = "segura"
+        r["senal_motivo"] = ("caso adjudicado: " + caso.get("fuente", ""))
 
 
 # Los aforismos «ruidosos» para la DETECCIÓN, no para la validez: alargar o

@@ -37,6 +37,8 @@ REGLAS = os.path.join(RAIZ, "recursos", "sandhi", "reglas.json")
 TABLAS = os.path.join(RAIZ, "recursos", "sandhi",
                       "tablas-nandisena-secuencias.json")
 LISTAS = os.path.join(RAIZ, "recursos", "sandhi", "listas-cerradas.json")
+CASOS = os.path.join(RAIZ, "recursos", "solucionador",
+                     "casos-reportados.json")
 BANCO = os.path.join(RAIZ, "banco.sha256")
 PLANTILLA = os.path.join(RAIZ, "recursos", "solucionador", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "solucionador", "index.html")
@@ -119,6 +121,9 @@ def main():
         "reglas": {"ce": reglas["ce"]},
         "tablas": tablas,
         "listas": listas,
+        # Los casos adjudicados por lectores: cada fallo, un caso permanente.
+        "casos": (json.load(open(CASOS, encoding="utf-8"))
+                  if os.path.exists(CASOS) else {"casos": []}),
     }
 
     plantilla = open(PLANTILLA, encoding="utf-8").read()

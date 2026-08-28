@@ -45,7 +45,8 @@ function partirComponentes(t) {
 // —`putha`, `vipali`, `ani`, `chayo`…—. Ese añadido hace circular la medida
 // del banco, y así está dicho en el informe; el número que vale es el del
 // corpus, que estas voces no tocan.
-function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella }) {
+function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella,
+                   casos }) {
     // El léxico base: o una lista de formas crudas (`formasCanon`, se cotejan
     // acá), o un objeto con `.has()` sobre formas YA cotejadas — el léxico
     // fragmentado con carga bajo demanda de la etapa 2.
@@ -117,6 +118,12 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella }) {
     // (arnés de la etapa 1) no hay cuentas y la señal «posible» calla.
     _cache.frecuencia = typeof base.frecuencia === "function"
         ? q => base.frecuencia(q) : () => 0;
+    // Los casos adjudicados por lectores: cada fallo reportado, un caso
+    // permanente con fuente y fecha (decisión del Venerable, briefing 30
+    // §3.5). El motor los consulta como al banco.
+    _cache.casos = new Map();
+    for (const c of ((casos && casos.casos) || []))
+        _cache.casos.set(cotejo(c.forma), c);
 }
 
 function esPalabra(t) { return _cache.lexico.has(cotejo(t)); }
@@ -627,7 +634,33 @@ function solucionar(voz) {
     // ni el estado. Números y porqués: `_ascender_senal` del Python.
     const r = _solucionar(voz);
     ascenderSenal(r);
+    aplicarCaso(r);
     return r;
+}
+
+function aplicarCaso(r) {
+    // Un caso adjudicado manda sobre la señal, y su lectura va primera —
+    // con su fuente, siempre. Porqués y el primer caso (tenupasaṅkami):
+    // `_aplicar_caso` del Python.
+    const caso = _cache.casos.get(r.cotejo);
+    if (!caso || !caso.sandhi) return;
+    const objetivo = partirComponentes(caso.componentes || "").map(cotejo);
+    const delante = [], detras = [];
+    for (const l of (r.lecturas || [])) {
+        const comp = (l.componentes || []).map(cotejo);
+        if (objetivo.length && comp.length === objetivo.length
+            && comp.every((x, i) => x === objetivo[i])) {
+            l.adjudicada = caso.fuente || "";
+            delante.push(l);
+        } else {
+            detras.push(l);
+        }
+    }
+    r.lecturas = delante.concat(detras);
+    if (!r.senal) {
+        r.senal = "segura";
+        r.senal_motivo = "caso adjudicado: " + (caso.fuente || "");
+    }
 }
 
 function ascenderSenal(r) {

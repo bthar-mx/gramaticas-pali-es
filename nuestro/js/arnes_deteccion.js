@@ -32,12 +32,14 @@ function main() {
     const tablas = leerJson("recursos", "sandhi",
                             "tablas-nandisena-secuencias.json");
     const listas = leerJson("recursos", "sandhi", "listas-cerradas.json");
+    const casos = leerJson("recursos", "solucionador",
+                           "casos-reportados.json");
     const lexico = lexicoFragmentado(
         path.join(RAIZ, "site", "recursos", "solucionador", "lexico"));
     const referencia = leerJson("nuestro", "js",
                                 "referencia-senal-solo-canon.json");
 
-    motor.iniciar({ lexico, reglas, tablas, listas });
+    motor.iniciar({ lexico, reglas, tablas, listas, casos });
 
     console.log("ARNÉS JS · señal de detección en modo solo-canon");
     const cuenta = { segura: 0, posible: 0, nada: 0 };

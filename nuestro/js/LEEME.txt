@@ -23,6 +23,14 @@ Venerable 2026-08-28; la autoridad es Kaccāyana y el texto de la edición).
                   será un fetch con el mismo contrato.
   arnes.js        la puerta de la etapa 1:  node nuestro/js/arnes.js
   arnes_corpus.js la puerta de la etapa 2:  node nuestro/js/arnes_corpus.js
+  arnes_casos.js  los casos adjudicados por lectores
+                  (recursos/solucionador/casos-reportados.json): cada fallo
+                  reportado, un caso permanente con fuente y fecha. Un caso
+                  sandhi=true da señal «segura» y pone primera la lectura
+                  adjudicada; sandhi=false es regresión de que la señal
+                  calla. El primero fue tenupasaṅkami (Angel, 2026-08-28):
+                  la señal por frecuencia no puede verlo — 1.763 apariciones
+                  contra 231 de su propia segunda voz.
 
 Los fragmentos del léxico están en recursos/solucionador/lexico/ (30 archivos
 por letra inicial + indice.json) y los escribe

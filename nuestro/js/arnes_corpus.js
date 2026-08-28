@@ -200,10 +200,13 @@ function main() {
     const tablas = leerJson("recursos", "sandhi",
                             "tablas-nandisena-secuencias.json");
     const listas = leerJson("recursos", "sandhi", "listas-cerradas.json");
+    const casos = leerJson("recursos", "solucionador",
+                           "casos-reportados.json");
     const lexico = lexicoFragmentado(
         path.join(RAIZ, "site", "recursos", "solucionador", "lexico"));
 
-    motor.iniciar({ lexico, reglas, tablas, listas, huella: huellaBanco() });
+    motor.iniciar({ lexico, reglas, tablas, listas, casos,
+                huella: huellaBanco() });
 
     console.log("ARNÉS JS · corpus en modo solo-canon, léxico fragmentado"
         + ` (${lexico.total} formas, carga bajo demanda)`);
