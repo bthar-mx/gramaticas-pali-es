@@ -117,8 +117,10 @@ body.dark { background-image: none; }
     display: inline-flex; align-items: center;
     position: absolute; top: 1.25rem; right: .9rem;
     border: .5px solid var(--border); background: var(--bg3);
-    border-radius: 3px; padding: 5px 9px;
-    font: 600 12.5px/1 var(--mono); letter-spacing: .06em;
+    border-radius: 3px; padding: 5px 8px;
+    /* Antes decía «ocultar» en 12.5 px; con el ☰ solo, un punto más
+       para que el glifo no quede diminuto. */
+    font: 600 14px/1 var(--mono);
     color: var(--text2); cursor: pointer;
   }
   .toc-ocultar:hover { background: var(--bg2); color: var(--text); }

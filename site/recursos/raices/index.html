@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Raíces pāḷi · Saddanīti, Dhātupāṭha y Dhātumañjūsā</title>
-<meta name="version" content="1.3">
-<meta name="version-date" content="2026-08-24">
+<meta name="version" content="1.4">
+<meta name="version-date" content="2026-08-28">
 <meta name="description" content="Las 1.698 raíces pāḷi del Saddanīti Dhātumālā comparadas con las del Pāṇinīya-Dhātupāṭha, del libro «Pali Roots in Saddanīti» del Venerable U Sīlānanda, editado por Bhikkhu Nandisena.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -441,7 +441,7 @@ footer a{color:var(--nila)}
   data-tip="Mostrar el índice|Vuelve a poner el índice al lado del texto.">» Índice</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice alfabético">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
-    data-tip="Ocultar el índice|Aparta el índice y el texto ocupa su sitio. Vuelve con la pestaña del borde izquierdo.">« ocultar</button>
+    data-tip="Ocultar el índice|Aparta el índice y el texto ocupa su sitio. Vuelve con la pestaña del borde izquierdo.">☰</button>
   <div class="sb-brand"><b>Raíces pāḷi</b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā</span></div>
   <div class="sb-tit" id="abc-tit">Saddanīti por inicial</div>
   <div class="abc" id="abc"></div>
@@ -1178,7 +1178,7 @@ if(DM.length){
 /* ---------- insignia de versión ---------- */
 const VERSION = document.querySelector('meta[name=version]').content;
 const VERSION_DATE = document.querySelector('meta[name="version-date"]').content;
-const VERSION_NOTE = 'El índice de la izquierda se pliega y se despliega, y vuelve a abrirse siempre al entrar: plegarlo es comodidad del momento, no una preferencia guardada. El Dhātupāṭha estrena índice propio, por las nueve secciones de su edición, porque no va en orden alfabético y el índice por letras repetía la misma inicial en cada sección. Antes, en la versión 1.2: Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras. Antes, en la versión 1.1: Se añade el Dhātupāṭha de Andersen y Smith y su concordancia con las raíces del Saddanīti. La 1.0 publicó las 1.698 raíces del Saddanīti-dhātumālā cotejadas con el Pāṇinīya-dhātupāṭha, y su índice inverso de significados.';
+const VERSION_NOTE = 'El botón que pliega el índice pasa a ser el mismo ☰ en todas las páginas del sitio, en la esquina del propio índice. Antes, en la versión 1.3: El índice de la izquierda se pliega y se despliega, y vuelve a abrirse siempre al entrar: plegarlo es comodidad del momento, no una preferencia guardada. El Dhātupāṭha estrena índice propio, por las nueve secciones de su edición, porque no va en orden alfabético y el índice por letras repetía la misma inicial en cada sección. Antes, en la versión 1.2: Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras. Antes, en la versión 1.1: Se añade el Dhātupāṭha de Andersen y Smith y su concordancia con las raíces del Saddanīti. La 1.0 publicó las 1.698 raíces del Saddanīti-dhātumālā cotejadas con el Pāṇinīya-dhātupāṭha, y su índice inverso de significados.';
 (function(){
   const badge = document.getElementById('vbadge');
   const largo = new Date(VERSION_DATE + 'T12:00:00').toLocaleDateString('es',

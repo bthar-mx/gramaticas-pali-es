@@ -602,7 +602,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var cerrar = document.createElement('button');
   cerrar.className = 'toc-ocultar';
   cerrar.type = 'button';
-  cerrar.textContent = '« ocultar';
+  /* El mismo ☰ que en las barras de los recursos: un solo símbolo para
+     plegar el índice en todo el sitio. */
+  cerrar.textContent = '☰';
   cerrar.setAttribute('aria-label', 'Ocultar el índice');
   cerrar.setAttribute('data-tip', 'Aparta el índice para leer a todo lo ancho. Vuelve con la pestaña del borde izquierdo.');
   cerrar.addEventListener('click', function() { verToc(true); });
