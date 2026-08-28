@@ -63,10 +63,48 @@ body{
 .sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
 .sidebar a b{font-family:var(--mono);font-size:11px;color:var(--soot);margin-right:6px}
 .sidebar a:hover b,.sidebar a.on b{color:inherit}
-.sb-close{display:none}
-#burger{display:none}
+.sb-close{position:absolute;top:14px;right:12px;
+  font-family:var(--mono);font-size:13.5px;line-height:1;padding:7px 10px;
+  background:var(--ola);color:var(--soot);border:1px solid var(--hair);
+  border-radius:2px;cursor:pointer}
+.sb-close:hover{color:var(--ink);border-color:var(--soot)}
+.sb-close:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+#burger{display:inline-flex}
 body{padding-left:238px}
 .scrim{display:none}
+
+/* ---------- ocultar la barra lateral ---------- */
+/* Como en /recursos/paradigmas/ y /recursos/raices/: el botón ☰ vale para
+   las dos cosas: en pantalla ancha pliega la barra y el texto se ensancha;
+   en estrecha la saca por encima, como antes. No se guarda entre visitas:
+   plegarla es comodidad del momento, no una preferencia que deba durar. */
+.sidebar{transition:transform .2s ease}
+body{transition:padding-left .2s ease}
+html.sin-barra body{padding-left:0}
+html.sin-barra .sidebar{transform:translateX(-100%)}
+/* ---------- pestaña para traer de vuelta el índice ---------- */
+/* Al plegar la barra hay que poder devolverla, y buscar un ☰ pequeño entre
+   los demás iconos no es manera. Esta pestaña se queda en el borde
+   izquierdo, justo donde estaba la barra, y sólo se ve cuando está plegada. */
+#volver-barra{position:fixed;left:0;top:50%;transform:translateY(-50%);
+  z-index:56;display:none;align-items:center;gap:7px;
+  writing-mode:vertical-rl;
+  font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;
+  background:var(--ola-2);color:var(--soot);
+  border:1px solid var(--hair);border-left:0;
+  border-radius:0 3px 3px 0;padding:20px 9px;cursor:pointer;
+  box-shadow:2px 0 10px var(--shadow)}
+#volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
+#volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+html.sin-barra #volver-barra{display:flex}
+/* Con la barra plegada, el botón «Volver» vuelve al borde, como en estrecha. */
+html.sin-barra #volver{left:22px}
+@media (max-width:900px){html.sin-barra #volver-barra{display:none}}
+@media print{#volver-barra{display:none!important}}
+@media (prefers-reduced-motion:reduce){
+  .sidebar,body{transition:none}
+}
 
 /* ---------- marca del IEBH ---------- */
 /* El árbol arriba, como marca de quien publica el sitio —no como pie de la
@@ -94,7 +132,12 @@ h1 .dia{color:var(--haritala)}
   color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
   border-radius:999px;padding:4px 10px}
 .version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-.version-badge{position:relative}
+.version-badge,.sb-close,#volver-barra,#burger{position:relative}
+/* Estos controles usan el globo por CSS de la insignia de versión, no el
+   motor de globos #tip de las tarjetas. */
+.sb-close[data-tip]:hover::after,
+#volver-barra[data-tip]:hover::after,
+#burger[data-tip]:hover::after,
 .version-badge[data-tip]:hover::after{content:attr(data-tip);
   position:absolute;top:calc(100% + 8px);left:0;
   background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
@@ -102,6 +145,14 @@ h1 .dia{color:var(--haritala)}
   letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
   min-width:160px;max-width:min(340px,70vw);z-index:100;
   box-shadow:0 3px 12px rgba(0,0,0,.12)}
+/* La barra recorta y el globo del «ocultar» no cabe dentro: en «fixed» se
+   sale de ella y se pone al lado, sobre el texto. */
+.sb-close[data-tip]:hover::after{
+  position:fixed;left:250px;top:14px;right:auto;bottom:auto;max-width:320px}
+/* La pestaña va en vertical; su globo, no. */
+#volver-barra[data-tip]:hover::after{
+  top:50%;left:calc(100% + 10px);transform:translateY(-50%);
+  writing-mode:horizontal-tb}
 .version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
 .hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
       border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
@@ -277,8 +328,6 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   body{padding-left:0}
   .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
   .sidebar.open{transform:none}
-  .sb-close{display:block;position:absolute;top:12px;right:12px}
-  #burger{display:inline-flex}
   .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
 }
 @media (max-width:640px){
@@ -328,8 +377,11 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 <body>
 
 <div class="scrim" id="scrim"></div>
+<button id="volver-barra" aria-label="Mostrar el índice"
+  data-tip="Mostrar otra vez el índice al lado del texto.">» Índice</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice">
-  <button class="icon-btn sb-close" id="sbclose" aria-label="Cerrar">✕</button>
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
+    data-tip="Aparta el índice y el texto ocupa su sitio. Vuelve con la pestaña del borde izquierdo.">« ocultar</button>
   <div class="sb-brand"><b>Sandhi</b><span class="lbl">Kaccāyana · Rūpasiddhi · Saddanīti</span></div>
   <nav id="sbnav"></nav>
 </aside>
@@ -367,7 +419,8 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
       <button role="tab" id="t-formas"   aria-selected="false" data-v="formas">Formas<i></i></button>
       <button role="tab" id="t-conc"     aria-selected="false" data-v="conc">Concordancia</button>
     </div>
-    <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
+      aria-expanded="true">☰</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
     <span class="filtros" id="filtros" hidden>
       <button data-src="all" aria-pressed="true">Todas</button>
@@ -809,8 +862,8 @@ addEventListener('scroll', () => {
 topBtn.addEventListener('click', volverArriba);
 
 /* ---------- versión ---------- */
-const VERSION = '3.8', VERSION_DATE = '2026-08-18';
-const VERSION_NOTE = 'El árbol del IEBH aparece también en la cabecera, junto a «Kaccāyana · Rūpasiddhi · Saddanīti»: va como marca de quien publica el sitio, no como pie de esa línea. El imagotipo completo sigue en el pie. Antes, en la versión 3.7: Aparece en el pie el imagotipo del Instituto de Estudios Buddhistas Hispano, junto a la licencia, en las dos versiones del manual de marca: granate sobre claro y blanca sobre oscuro. Arriba no se pone, porque esa línea nombra a Kaccāyana, Rūpasiddhi y Saddanīti, no al instituto. El sitio estrena también icono de pestaña. Antes, en la versión 3.6: Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
+const VERSION = '3.9', VERSION_DATE = '2026-08-28';
+const VERSION_NOTE = 'El índice lateral se puede apartar también en pantalla ancha, como en Paradigmas y Raíces: el botón ☰ de la barra de controles o el «ocultar» de la propia barra la pliegan y el texto ocupa su sitio, y una pestaña en el borde izquierdo la devuelve. En pantalla estrecha el ☰ sigue sacándola por encima, como antes. Sin cambios en las reglas ni en las formas. Antes, en la versión 3.8: El árbol del IEBH aparece también en la cabecera, junto a «Kaccāyana · Rūpasiddhi · Saddanīti»: va como marca de quien publica el sitio, no como pie de esa línea. El imagotipo completo sigue en el pie. Antes, en la versión 3.7: Aparece en el pie el imagotipo del Instituto de Estudios Buddhistas Hispano, junto a la licencia, en las dos versiones del manual de marca: granate sobre claro y blanca sobre oscuro. Arriba no se pone, porque esa línea nombra a Kaccāyana, Rūpasiddhi y Saddanīti, no al instituto. El sitio estrena también icono de pestaña. Antes, en la versión 3.6: Los saltos desde la barra lateral y desde las referencias §N son ya inmediatos cuando el destino queda lejos: el desplazamiento animado recorría toda la vista y tardaba segundos. Se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; igual el botón «↑». Sin cambios en las reglas ni en las formas. Antes, en la versión 3.5: Pakati 2 ilustraba la clase con «bhadro kasā-m-iva», donde lo que se ve es la ‘m’ que §35 inserta, no la vocal que persiste: en la entrada, la ‘ā’ de «kasā» va seguida de vocal, y sólo queda ante consonante después de la inserción. La clase encabeza ahora con «Manopubbaṅgamā dhammā» (Dh. 13), el ejemplo que el propio §23 da en el Sandhi-kappa, donde la vocal simplemente permanece. Se añaden también «pamādo maccuno padaṃ» (Dh. 16) y «tiṇṇo pāraṅgato ahu» (Dh. 72), los otros dos de §23. Las dos formas de Nandisena se conservan, con nota que explica en qué sentido ilustran la clase. De 263 formas se pasa a 266.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];
@@ -862,10 +915,39 @@ const CATS = [['sara','Sara-sandhi'],['byanjana','Byañjana-sandhi'],
 
 const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
 const closeSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
+/* ---------- ocultar y mostrar la barra lateral ---------- */
+/* Como en /recursos/paradigmas/ y /recursos/raices/: dos comportamientos con
+   un solo botón, según quepa o no la barra al lado del texto. En pantalla
+   ancha la pliega y el texto ocupa su sitio; en estrecha la superpone con un
+   velo, que es lo que ya hacía. El índice se abre siempre al llegar:
+   plegarlo es una comodidad del momento, no una preferencia que deba durar. */
+const anchaBastante = () => innerWidth > 900;
+function pintarBarra(oculta){
+  document.documentElement.classList.toggle('sin-barra', oculta);
+  const b = document.getElementById('burger');
+  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
+  b.setAttribute('data-tip', oculta
+    ? 'Mostrar otra vez el índice al lado del texto.'
+    : 'Aparta el índice y el texto ocupa su sitio.');
+  b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+}
+pintarBarra(false);
+/* Al estrecharse la ventana la barra pasa a cajón: que no se quede plegada
+   y sin pestaña que la devuelva. */
+addEventListener('resize', () => {
+  if(!anchaBastante()) document.documentElement.classList.remove('sin-barra');
+});
 document.getElementById('burger').onclick = () => {
-  sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+  if(anchaBastante()){
+    pintarBarra(!document.documentElement.classList.contains('sin-barra'));
+  } else {
+    sidebar.classList.toggle('open'); scrim.classList.toggle('on');
+  }
 };
-document.getElementById('sbclose').onclick = closeSb;
+document.getElementById('volver-barra').onclick = () => { pintarBarra(false); };
+document.getElementById('sbclose').onclick = () => {
+  if(anchaBastante()) pintarBarra(true); else closeSb();
+};
 scrim.onclick = closeSb;
 addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
 
