@@ -410,7 +410,7 @@ function ladder(steps, isCE){
    clase es \p{L}\p{M} —toda letra con sus marcas—, no una lista escrita a
    mano: la lista olvidó la «ṁ» de punto arriba (U+1E41, la niggahīta de la
    Mahāsaṅgīti) y amputaba la final de cada voz — de «kathaṁ» quedaba
-   «katha», que recibía señal falsa. Caso reportado por Angel, 2026-08-28.
+   «katha», que recibía señal falsa. Caso reportado por el IEBH, 2026-08-28.
    La raya y el guion largo (– —) separan voces: son puntuación de esas
    ediciones, no la marca de juntura, y «sutaṁ–ekaṁ» debe ser dos voces. */
 const PODA = /^[^\p{L}\p{M}’'-]+|[^\p{L}\p{M}’'-]+$/gu;
@@ -448,7 +448,7 @@ function plegadas(lista, titulo){
 }
 
 function cuerpoResultado(r, esVozSola){
-  /* Instrucción de Angel (2026-08-28): UNA sola lectura por sandhi, y si el
+  /* Instrucción del IEBH (2026-08-28): UNA sola lectura por sandhi, y si el
      motor no sabe cuál es, que lo diga. Se afirma una lectura sólo cuando
      hay autoridad detrás —firmada en el banco, adjudicada por un lector, o
      del propio banco—; sin autoridad no se elige: se declara la ignorancia
@@ -572,7 +572,7 @@ async function analizar(){
   }
 }
 $('analizar').addEventListener('click', analizar);
-/* Limpiar (pedido de Angel, 2026-08-28): vacía el pasaje y el resultado. */
+/* Limpiar (pedido del IEBH, 2026-08-28): vacía el pasaje y el resultado. */
 $('limpiar').addEventListener('click', () => {
   $('texto').value = '';
   $('out').innerHTML = '';
@@ -585,7 +585,7 @@ $('texto').addEventListener('keydown', e => {
 
 /* ---------- portada: una secuencia, revelada ---------- */
 (function(){
-  /* El mismo ejemplo de portada que /recursos/sandhi/ (pedido de Angel,
+  /* El mismo ejemplo de portada que /recursos/sandhi/ (pedido del IEBH,
      2026-08-28): la escalera de yassindriyāni, con su forma EM. */
   const steps = ['yassa indriyāni','yass a indriyāni (§10)','yass indriyāni (§12)',
                  'yassindriyāni (§11)','yass’ indriyāni (EM)'];

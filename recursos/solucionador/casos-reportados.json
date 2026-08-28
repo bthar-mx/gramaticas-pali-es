@@ -5,19 +5,19 @@
    "segunda": "iti",
    "remanente": "ti",
    "clase_vocal": true,
-   "fuente": "Angel, 2026-08-28 · pauta de las enclíticas (SN 1.1, DN 2)",
-   "nota": "La cola de «iti» del discurso directo. Si entre las lecturas verificadas hay exactamente UNA primera voz atestiguada en el canon con «iti» de segunda, ésa se afirma: abhisambuddho + iti. Regla de la clase vocálica, adjudicada por Angel el 2026-08-28: «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti» — la vocal que sobrevive ante «ti» conserva la clase de la vocal final de la base (a/ā, i/ī, u/ū, e, o), y las bases de otra clase quedan excluidas; en el corpus, hotīti 7.621, hotūti 213, hotāti 0. Desempate adjudicado: entre la base breve y su gemela alargada (pabbajjāya / pabbajjāyā, hoti / hotī) se afirma la BREVE — la larga suele ser el producto del propio sandhi—. Con bases distintas de verdad el patrón calla y la duda se declara."
+   "fuente": "IEBH, 2026-08-28 · pauta de las enclíticas (SN 1.1, DN 2)",
+   "nota": "La cola de «iti» del discurso directo. Si entre las lecturas verificadas hay exactamente UNA primera voz atestiguada en el canon con «iti» de segunda, ésa se afirma: abhisambuddho + iti. Regla de la clase vocálica, adjudicada por el IEBH el 2026-08-28: «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti» — la vocal que sobrevive ante «ti» conserva la clase de la vocal final de la base (a/ā, i/ī, u/ū, e, o), y las bases de otra clase quedan excluidas; en el corpus, hotīti 7.621, hotūti 213, hotāti 0. Desempate adjudicado: entre la base breve y su gemela alargada (pabbajjāya / pabbajjāyā, hoti / hotī) se afirma la BREVE — la larga suele ser el producto del propio sandhi—. Con bases distintas de verdad el patrón calla y la duda se declara."
   },
   {
    "segunda": "api",
-   "fuente": "Angel, 2026-08-28 · pauta de las enclíticas (DN 2)",
+   "fuente": "IEBH, 2026-08-28 · pauta de las enclíticas (DN 2)",
    "nota": "La cola de «pi» (api con la vocal elidida, §13): yepi = ye + api, tepi = te + api. La lectura con «pi» suelto sería yuxtaposición sin operación y queda fuera del encargo, así que api es la única segunda voz en alcance."
   },
   {
    "segunda": "ca",
-   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā) y el informe de familias",
-   "nota": "La familia del sandhi de niggahīta ante «ca» (§31): vedanānañca = vedanānaṃ + ca, maggañca = maggaṃ + ca, tañca, evañca, yañca, kathañca… En palabras de Angel: «this is niggahita sandhi, sandhi 101». Firmada tras el informe de familias de la sesión 32: 41 de las 46 formas «no sabe» de la familia se afirman por base única atestiguada, sin un solo riesgo de base residual. Mismo mecanismo que «iti» y «api»: base única atestiguada, con el resguardo de la base residual.",
-   "_resguardo": "El RESGUARDO DE LA BASE RESIDUAL, adjudicado por Angel el 2026-08-28 (sesión 32) para TODOS los patrones y aplicado en el mecanismo (_aplicar_patron / aplicarPatron): una base candidata debe ser al menos tan frecuente en el canon como la forma entera. Sin él, «ho» (4 apariciones) concedía la unicidad y el patrón afirmaba hoti (59.320) como ho + iti — y pajānāti, bhaṇati, vadati, karoti…—; del otro lado, «cakkhundriyaña» (1) negaba la unicidad a cakkhundriyaṃ + ca. La base residual ni concede ni bloquea: no cuenta como candidata."
+   "fuente": "IEBH, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā) y el informe de familias",
+   "nota": "La familia del sandhi de niggahīta ante «ca» (§31): vedanānañca = vedanānaṃ + ca, maggañca = maggaṃ + ca, tañca, evañca, yañca, kathañca… En palabras del IEBH: «this is niggahita sandhi, sandhi 101». Firmada tras el informe de familias de la sesión 32: 41 de las 46 formas «no sabe» de la familia se afirman por base única atestiguada, sin un solo riesgo de base residual. Mismo mecanismo que «iti» y «api»: base única atestiguada, con el resguardo de la base residual.",
+   "_resguardo": "El RESGUARDO DE LA BASE RESIDUAL, adjudicado por el IEBH el 2026-08-28 (sesión 32) para TODOS los patrones y aplicado en el mecanismo (_aplicar_patron / aplicarPatron): una base candidata debe ser al menos tan frecuente en el canon como la forma entera. Sin él, «ho» (4 apariciones) concedía la unicidad y el patrón afirmaba hoti (59.320) como ho + iti — y pajānāti, bhaṇati, vadati, karoti…—; del otro lado, «cakkhundriyaña» (1) negaba la unicidad a cakkhundriyaṃ + ca. La base residual ni concede ni bloquea: no cuenta como candidata."
   }
  ],
  "casos": [
@@ -25,45 +25,45 @@
    "forma": "tenupasaṅkami",
    "sandhi": true,
    "componentes": "tena + upasaṅkami",
-   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "fuente": "IEBH, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "La señal por frecuencia no puede verlo: la forma aparece 1.763 veces en el canon y su segunda voz «upasaṅkami» sólo 231 — el sandhi formulaico es más frecuente que sus propias piezas. Por eso existe este archivo."
   },
   {
    "forma": "etadavoca",
    "sandhi": true,
    "componentes": "etaṃ + avoca",
-   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "fuente": "IEBH, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "Ya estaba en el banco y la firmada sale primera; el caso lo fija como regresión."
   },
   {
    "forma": "oghamatarīti",
    "sandhi": true,
    "componentes": "oghamatari + iti",
-   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "fuente": "IEBH, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "La secuencia correcta es §10 · §12 · §15 · §11. El motor la producía como segunda lectura entre 18; la adjudicación la pone primera."
   },
   {
    "forma": "sāvatthiyaṃ",
    "sandhi": false,
-   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "fuente": "IEBH, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "Locativo de Sāvatthī, voz entera. La señal falsa que se vio venía de un defecto del tokenizador de la página (amputaba la ṁ final), corregido el mismo día."
   },
   {
    "forma": "kathaṃ",
    "sandhi": false,
-   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "fuente": "IEBH, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "Adverbio interrogativo, voz entera. Mismo defecto del tokenizador."
   },
   {
    "forma": "tvaṃ",
    "sandhi": false,
-   "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
+   "fuente": "IEBH, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "Pronombre, voz entera. Mismo defecto del tokenizador."
   },
   {
    "forma": "navo",
    "sandhi": false,
-   "fuente": "Angel, 2026-08-28 · DN 2",
+   "fuente": "IEBH, 2026-08-28 · DN 2",
    "nota": "«navo ca pabbajjāya»: adjetivo, voz entera. La señal de frecuencia proponía naṃ + vo (§39); falso."
   },
   {
@@ -71,35 +71,35 @@
    "sandhi": true,
    "componentes": "ca + eva",
    "grado": "habitual",
-   "fuente": "Angel, 2026-08-28 · DN 2",
-   "nota": "Adjudicación HABITUAL, no exclusiva — en palabras de Angel: «ceva could be ca eva or ce eva or ci eva and so on; most of the time is ca eva», y decidir un pasaje concreto pediría leer los Comentarios. Se afirma la lectura habitual y las demás quedan a la vista, plegadas. Distinto del grado exclusivo de hotīti («es sólo hoti + iti»)."
+   "fuente": "IEBH, 2026-08-28 · DN 2",
+   "nota": "Adjudicación HABITUAL, no exclusiva — en palabras del IEBH: «ceva could be ca eva or ce eva or ci eva and so on; most of the time is ca eva», y decidir un pasaje concreto pediría leer los Comentarios. Se afirma la lectura habitual y las demás quedan a la vista, plegadas. Distinto del grado exclusivo de hotīti («es sólo hoti + iti»)."
   },
   {
    "forma": "pajānāti",
    "sandhi": false,
-   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
-   "nota": "En palabras de Angel: «pajānāti is a verb of fifth group kiyādi-gaṇa, not sandhi». Voz entera. El patrón de «iti» la afirmaba como pajāna + iti porque «pajāna» (1 aparición en el canon) resultaba la única base atestiguada — la unicidad concedida por una base residual. El caso apaga la señal; el defecto general del patrón queda medido y espera regla firmada."
+   "fuente": "IEBH, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
+   "nota": "En palabras del IEBH: «pajānāti is a verb of fifth group kiyādi-gaṇa, not sandhi». Voz entera. El patrón de «iti» la afirmaba como pajāna + iti porque «pajāna» (1 aparición en el canon) resultaba la única base atestiguada — la unicidad concedida por una base residual. El caso apaga la señal; el defecto general del patrón queda medido y espera regla firmada."
   },
   {
    "forma": "vedanānañca",
    "sandhi": true,
    "componentes": "vedanānaṃ + ca",
-   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
-   "nota": "Sandhi de niggahīta (§31): la ṃ se asimila en ñ ante c. El motor ya producía esta lectura primera con señal «posible», pero sin autoridad no la afirmaba y declaraba «no sabe» entre 20 lecturas. En palabras de Angel: «this is niggahita sandhi, sandhi 101». La familia entera (…ñca ← …ṃ + ca) es candidata a patrón; ver el informe de familias."
+   "fuente": "IEBH, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
+   "nota": "Sandhi de niggahīta (§31): la ṃ se asimila en ñ ante c. El motor ya producía esta lectura primera con señal «posible», pero sin autoridad no la afirmaba y declaraba «no sabe» entre 20 lecturas. En palabras del IEBH: «this is niggahita sandhi, sandhi 101». La familia entera (…ñca ← …ṃ + ca) es candidata a patrón; ver el informe de familias."
   },
   {
    "forma": "maggañca",
    "sandhi": true,
    "componentes": "maggaṃ + ca",
-   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
+   "fuente": "IEBH, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
    "nota": "Mismo sandhi de niggahīta (§31) que vedanānañca: maggaṃ + ca. Primera lectura del motor, señal «posible», sin afirmación por falta de autoridad. El caso la afirma; la regla general de la familia espera firma."
   },
   {
    "forma": "cetā",
    "sandhi": true,
    "componentes": "ca + etā",
-   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā): «yattha cetā nirujjhanti»",
-   "nota": "En palabras de Angel: «in this verse cetā is sandhi ca etā». El motor producía ca + etā (§12) como primera lectura, pero la señal callaba del todo: la detección busca la enclítica como SEGUNDA voz (…ñca, …ti, …pi) y aquí la partícula es la PRIMERA — el punto ciego estructural de tenupasaṅkami, ahora del lado proclítico. La familia entera (cāyaṃ, cassa, cetaṃ, cidaṃ… y las gemelas con na-, sv-, yv-) es candidata a regla de primera voz; no existe todavía mecanismo de patrón por primera voz: decidirlo pide firma."
+   "fuente": "IEBH, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā): «yattha cetā nirujjhanti»",
+   "nota": "En palabras del IEBH: «in this verse cetā is sandhi ca etā». El motor producía ca + etā (§12) como primera lectura, pero la señal callaba del todo: la detección busca la enclítica como SEGUNDA voz (…ñca, …ti, …pi) y aquí la partícula es la PRIMERA — el punto ciego estructural de tenupasaṅkami, ahora del lado proclítico. La familia entera (cāyaṃ, cassa, cetaṃ, cidaṃ… y las gemelas con na-, sv-, yv-) es candidata a regla de primera voz; no existe todavía mecanismo de patrón por primera voz: decidirlo pide firma."
   }
  ]
 }

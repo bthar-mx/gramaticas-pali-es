@@ -118,7 +118,7 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella,
     // (arnés de la etapa 1) no hay cuentas y la señal «posible» calla.
     _cache.frecuencia = typeof base.frecuencia === "function"
         ? q => base.frecuencia(q) : () => 0;
-    // El testigo del DPD (decisión de Angel, 2026-08-28): sólo se enciende
+    // El testigo del DPD (decisión del IEBH, 2026-08-28): sólo se enciende
     // si el léxico lo declara (`conDpd`) — con fragmentos sin la marca,
     // «no figura en el DPD» sería verdad de todo. Con un Set de formas
     // (arnés de la etapa 1) queda apagado, como el Python sin --dpd-filtro.
@@ -671,7 +671,7 @@ function aplicarPatron(r) {
     for (const patron of (_cache.patrones || [])) {
         const seg = cotejo(patron.segunda || "");
         if (!seg) continue;
-        // El resguardo de la base residual, adjudicado por Angel
+        // El resguardo de la base residual, adjudicado por el IEBH
         // (2026-08-28, sesión 32): la base candidata debe ser al menos tan
         // frecuente como la forma entera — «ho» (4) ya no concede la
         // unicidad a hoti (59.320), ni una base de 1 aparición la niega.
@@ -683,7 +683,7 @@ function aplicarPatron(r) {
                 && (frec(comp[0]) || 0) >= Math.max(fForma, 1))
                 bases.add(comp[0]);
         }
-        // Regla de la clase vocálica, adjudicada por Angel (2026-08-28):
+        // Regla de la clase vocálica, adjudicada por el IEBH (2026-08-28):
         // «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti». Ver
         // `_aplicar_patron` del Python.
         if (patron.clase_vocal && patron.remanente) {
