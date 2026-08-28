@@ -1,0 +1,30 @@
+EL PORTE A JAVASCRIPT — ETAPA 1 (briefing sesión 30, §6)
+
+Núcleo del solucionador de sandhis en JS, medido contra el Python, que queda
+como referencia permanente. Modo: solo-canon (el DPD fuera, decisión del
+Venerable 2026-08-28; la autoridad es Kaccāyana y el texto de la edición).
+
+  normalizar.js   porte de nuestro/normalizar.py — cotejo()
+  operaciones.js  porte de nuestro/operaciones.py — una función por aforismo,
+                  con su enunciado arriba
+  derivar.js      porte de herramientas/derivar_secuencias.py — EL VERIFICADOR,
+                  del Venerable; se transcribe, no se «mejora»
+  motor.js        porte del núcleo de nuestro/solucionar_sandhis.py — el
+                  vecindario, forward(), proponer(), proponerEnFrase(),
+                  proponerEnMarca(). No lee archivos: recibe los datos por
+                  iniciar(), para servir igual en Node y en el navegador.
+  arnes.js        el arnés de la puerta:  node nuestro/js/arnes.js
+
+  referencia-banco-solo-canon.json — la salida del Python sobre las 266 formas
+  del banco, todas las lecturas con sus pasos, en su orden. La vuelca
+  `python3 nuestro/volcar_referencia.py --solo-canon`. Generada, no fuente:
+  se regenera cuando cambie el motor Python o el banco; nunca se edita a mano.
+
+LA PUERTA (pasada 2026-08-28): 218 de 251 medibles en modo solo-canon, y las
+266 formas con lecturas idénticas al Python, secuencia por secuencia. Si el
+arnés no da idéntico, el defecto es del porte, no del Python.
+
+Lo que NO está en esta etapa: solucionar() con su consulta al banco y sus
+estados (los tres silencios), señal, combinar(), juntura declarada, la
+pantalla. Van con las etapas 2–4. La segmentación con léxico fragmentado
+(etapa 2) parte de motor.iniciar(), que ya recibe el léxico desde afuera.
