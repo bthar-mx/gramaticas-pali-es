@@ -115,6 +115,21 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
   color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
 .icon-btn:hover{color:var(--ink);border-color:var(--soot)}
 .estado{font-family:var(--mono);font-size:11px;color:var(--soot)}
+.icon-btn.on{color:var(--haritala);border-color:var(--haritala)}
+
+/* ---------- modo revisión ---------- */
+.rev-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0 2px;
+  padding:8px 10px;border:1px dashed var(--hair);border-radius:2px}
+.rev-lbl{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--soot);margin-right:2px}
+.rev-btn{font-family:var(--mono);font-size:11px;padding:5px 9px;cursor:pointer;
+  background:var(--ola-2);color:var(--soot);border:1px solid var(--hair);border-radius:2px}
+.rev-btn:hover{color:var(--ink);border-color:var(--soot)}
+.rev-btn.on{color:var(--ola-2);background:var(--nila);border-color:var(--nila)}
+.rev-otra{font-family:var(--mono);font-size:12px;padding:5px 8px;min-width:16ch;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);border-radius:2px}
+.rev-acciones{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0 6px}
+.rev-nota-modo{font-size:13.5px;color:var(--soot);margin:14px 0 0;max-width:88ch}
 .cuenta-sandhis{font-size:18px;margin:26px 0 4px}
 .cuenta-sandhis b{color:var(--haritala)}
 
@@ -240,6 +255,8 @@ footer a{color:var(--nila)}
     <div class="acciones">
       <button class="boton" id="analizar">Analizar</button>
       <button class="boton secundario" id="limpiar">Limpiar</button>
+      <button class="icon-btn" id="revision" aria-label="Modo revisión"
+        title="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
       <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
       <span class="estado" id="estado"></span>
     </div>
@@ -464,10 +481,13 @@ function cuerpoResultado(r, esVozSola){
   const autoridad = l0.adjudicada || l0.patron
     || l0.procedencia === 'firmada' || l0.origen;
   if(autoridad){
+    /* Con señal segura, la lectura afirmada basta: las demás no se
+       muestran (pedido del IEBH, 2026-08-28). Sin señal segura, el
+       resto queda plegado, nunca borrado. */
     h += unaLectura(l0)
-       + plegadas(lect.slice(1),
+       + (r.senal === 'segura' ? '' : plegadas(lect.slice(1),
          `otras ${lect.length - 1} lectura${lect.length > 2 ? 's' : ''} que también
-          recompone${lect.length > 2 ? 'n' : ''}, sin firma ni adjudicación`);
+          recompone${lect.length > 2 ? 'n' : ''}, sin firma ni adjudicación`));
   } else if(lect.length === 1){
     h += unaLectura(l0)
        + `<p class="parcial" style="margin-top:8px">Única lectura que recompone.
@@ -502,13 +522,13 @@ function tarjeta(voz, r, abierta){
      IEBH, 2026-08-28). El estado se muestra sólo cuando dice algo más. */
   const estado = (r.senal === 'segura' && r.estado === 'candidatos')
     ? '' : esc(ESTADOS[r.estado] || r.estado || '');
-  return `<details class="form"${abierta ? ' open' : ''}>
+  return `<details class="form"${abierta ? ' open' : ''} data-voz="${esc(voz)}">
     <summary>
       <span class="fname">${esc(voz)}</span>
       <span class="fmeta">${chip}${estado ? ' ' + estado : ''}${
-        n ? ` · ${n} lectura${n>1?'s':''}` : ''}</span>
+        (n && r.senal !== 'segura') ? ` · ${n} lectura${n>1?'s':''}` : ''}</span>
     </summary>
-    <div class="fbody">${cuerpoResultado(r, abierta)}</div>
+    <div class="fbody">${REV.on ? revBarra(voz, r) : ''}${cuerpoResultado(r, abierta)}</div>
   </details>`;
 }
 
@@ -561,16 +581,34 @@ async function analizar(){
     }
     const seguras = marcadas.filter(([,r]) => r.senal === 'segura').length;
     const posibles = marcadas.length - seguras;
-    html = `<p class="cuenta-sandhis"><b>${marcadas.length}</b> punto${marcadas.length===1?'':'s'} de sandhi señalado${marcadas.length===1?'':'s'} en ${voces.length} voces — ${seguras} seguro${seguras===1?'':'s'} · ${posibles} posible${posibles===1?'':'s'}</p>`;
+    html = `<p class="cuenta-sandhis"><b>${marcadas.length}</b> sandhi${marcadas.length===1?'':'s'} encontrado${marcadas.length===1?'':'s'} en ${voces.length} voces — ${seguras} seguro${seguras===1?'':'s'} · ${posibles} posible${posibles===1?'':'s'}</p>`;
     if(marcadas.length){
       html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
+    }
+    if(REV.on){
+      /* En revisión también se muestran las voces calladas: un fallo de la
+         señal es tan reportable como una marca falsa (el caso vedanānañca). */
+      const calladas = voces.filter(v => !resolver(v).senal);
+      if(calladas.length){
+        html += `<p class="lbl" style="margin:22px 0 6px">Las demás voces — la señal calla</p>
+          <div class="forms">${calladas.map(v => tarjeta(v, resolver(v), false)).join('')}</div>`;
+      }
     }
     html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
       el 47 % de los sandhis presentes en el verso y el 57 % en la prosa, y lo marcado
       como <em>seguro</em> acierta una juntura real en 9 de cada 10 casos. Lo que calla no
       se pierde: pegue una voz sola y el motor la analiza con todas sus lecturas.</p>`;
   }
+  if(REV.on) html += revAcciones();
+  /* Conservar qué tarjetas estaban abiertas: la revisión re-pinta. */
+  const abiertas = new Set([...out.querySelectorAll('details.form[open]')]
+    .map(d => d.dataset.voz));
   out.innerHTML = html;
+  if(abiertas.size){
+    out.querySelectorAll('details.form').forEach(d => {
+      if(abiertas.has(d.dataset.voz)) d.open = true;
+    });
+  }
   $('estado').textContent = '';
   boton.disabled = false;
   if(SOLUCIONADOR.lexico.faltantes){
@@ -588,6 +626,114 @@ $('limpiar').addEventListener('click', () => {
 });
 $('texto').addEventListener('keydown', e => {
   if(e.key === 'Enter' && (e.ctrlKey || e.metaKey)){ e.preventDefault(); analizar(); }
+});
+
+/* ---------- modo revisión (pedido del IEBH, 2026-08-28) ----------
+   Para lectores que saben de sandhi: cada voz analizada acepta un
+   veredicto —la lectura primera es correcta, no es sandhi, u otra
+   lectura en componentes—, y el conjunto se exporta en el formato
+   exacto de docs/solucionador/por-adjudicar-lote-N.md, que
+   herramientas/incorporar_adjudicaciones.py ya sabe leer. Nada se
+   adjudica solo: el archivo exportado pasa por la firma del IEBH.
+   Los veredictos viven en el navegador del revisor (localStorage);
+   borrarlos es suyo, no del sitio. */
+const REV = { on: false, v: new Map() };
+try {
+  for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
+    REV.v.set(k, x);
+} catch(e){ /* sin almacenamiento: la revisión vive lo que la página */ }
+function revGuardar(){
+  try { localStorage.setItem('rev-veredictos', JSON.stringify([...REV.v])); }
+  catch(e){}
+}
+function revBarra(voz, r){
+  const v = REV.v.get(voz);
+  const comp1 = ((r.lecturas || [])[0] || {}).componentes || [];
+  const marca = t => (v && v.t === t) ? ' on' : '';
+  return `<div class="rev-bar" data-voz="${esc(voz)}">
+    <span class="rev-lbl">veredicto</span>
+    ${comp1.length ? `<button type="button" class="rev-btn${marca('primera')}" data-rev="primera">✓ ${esc(comp1.join(' + '))}</button>` : ''}
+    <button type="button" class="rev-btn${marca('no')}" data-rev="no">✗ no es sandhi</button>
+    <input type="text" class="rev-otra" data-rev-otra
+      placeholder="otra lectura: voz + voz" title="Escriba los componentes y pulse Enter"
+      value="${v && v.t === 'otra' ? esc(v.comp) : ''}">
+    ${v ? `<button type="button" class="rev-btn" data-rev="quitar" title="Quitar este veredicto">borrar</button>` : ''}
+  </div>`;
+}
+function revAcciones(){
+  const n = REV.v.size;
+  return `<div class="rev-acciones">
+    <button type="button" class="boton" id="rev-exportar"${n ? '' : ' disabled'}>Exportar ${n} veredicto${n===1?'':'s'}</button>
+    <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>Borrar todos</button>
+    <span class="estado">el archivo exportado se incorpora con
+      herramientas/incorporar_adjudicaciones.py — nada se adjudica sin firma</span>
+  </div>`;
+}
+function revPoner(voz, dato){
+  const r = resolver(voz);
+  const l0 = (r.lecturas || [])[0] || {};
+  REV.v.set(voz, Object.assign({
+    senal: r.senal || null,
+    primera: (l0.componentes || []).join(' + '),
+    fecha: new Date().toISOString().slice(0, 10),
+  }, dato));
+  revGuardar();
+  analizar();
+}
+function revExportar(){
+  const fecha = new Date().toISOString().slice(0, 10);
+  const L = [];
+  L.push('# Veredictos de revisión — ' + fecha, '');
+  L.push('*Generado por el modo revisión de /recursos/solucionador/ (v' +
+         DATA.version + '). Cada veredicto es del revisor; se incorpora con:*', '');
+  L.push('    python3 herramientas/incorporar_adjudicaciones.py <este archivo> --fuente "IEBH, ' + fecha + ' · revisión en la página"');
+  L.push('    python3 herramientas/generar_solucionador.py');
+  L.push('    node nuestro/js/arnes_casos.js', '', '---', '');
+  let i = 0;
+  for(const [voz, v] of REV.v){
+    i += 1;
+    L.push(`## ${i}. ${voz}  ·  señal ${v.senal || 'ninguna'}  ·  revisado en la página`);
+    if(v.primera) L.push(`- **a)** ${v.primera} — la primera lectura del motor`);
+    L.push('');
+    L.push('VEREDICTO: ' + (v.t === 'no' ? 'no' : (v.t === 'primera' ? v.primera : v.comp)));
+    L.push('');
+  }
+  const texto = L.join('\n') + '\n';
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([texto], {type: 'text/markdown;charset=utf-8'}));
+  a.download = 'veredictos-' + fecha + '.md';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  if(navigator.clipboard) navigator.clipboard.writeText(texto).catch(() => {});
+}
+$('revision').addEventListener('click', () => {
+  REV.on = !REV.on;
+  $('revision').classList.toggle('on', REV.on);
+  if($('texto').value.trim()) analizar();
+});
+$('out').addEventListener('click', e => {
+  const b = e.target.closest('[data-rev]');
+  if(b){
+    const voz = b.closest('.rev-bar').dataset.voz;
+    const que = b.dataset.rev;
+    if(que === 'quitar'){ REV.v.delete(voz); revGuardar(); analizar(); }
+    else revPoner(voz, { t: que });
+    return;
+  }
+  if(e.target.id === 'rev-exportar') revExportar();
+  if(e.target.id === 'rev-borrar'){
+    if(confirm('¿Borrar los ' + REV.v.size + ' veredictos guardados en este navegador?')){
+      REV.v.clear(); revGuardar(); analizar();
+    }
+  }
+});
+$('out').addEventListener('keydown', e => {
+  if(e.key === 'Enter' && e.target.matches('[data-rev-otra]')){
+    e.preventDefault();
+    const comp = e.target.value.trim();
+    if(!comp.includes('+')){ alert('Escriba los componentes con «+»: voz + voz'); return; }
+    revPoner(e.target.closest('.rev-bar').dataset.voz, { t: 'otra', comp });
+  }
 });
 
 /* ---------- portada: una secuencia, revelada ---------- */
