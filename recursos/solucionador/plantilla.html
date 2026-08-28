@@ -498,10 +498,14 @@ const ESTADOS = {
 function tarjeta(voz, r, abierta){
   const chip = CHIP[r.senal] || '';
   const n = (r.lecturas || []).length;
+  /* Con señal segura, «candidatos» sobra: la señal ya afirma (pedido del
+     IEBH, 2026-08-28). El estado se muestra sólo cuando dice algo más. */
+  const estado = (r.senal === 'segura' && r.estado === 'candidatos')
+    ? '' : esc(ESTADOS[r.estado] || r.estado || '');
   return `<details class="form"${abierta ? ' open' : ''}>
     <summary>
       <span class="fname">${esc(voz)}</span>
-      <span class="fmeta">${chip} ${esc(ESTADOS[r.estado] || r.estado || '')}${
+      <span class="fmeta">${chip}${estado ? ' ' + estado : ''}${
         n ? ` · ${n} lectura${n>1?'s':''}` : ''}</span>
     </summary>
     <div class="fbody">${cuerpoResultado(r, abierta)}</div>
@@ -543,8 +547,11 @@ async function analizar(){
     /* Una voz sola: el análisis completo, diga lo que diga — los tres
        silencios se dicen distinto, y ninguno se esconde. */
     const r = resolver(voces[0]);
-    html = `<p class="cuenta-sandhis">${esc(voces[0])} — ${esc(ESTADOS[r.estado] || r.estado || '')}${
-      r.senal ? ' · ' + (CHIP[r.senal]||'') : ''}</p>`
+    /* Con señal segura, «candidatos» sobra también acá. */
+    const est1 = (r.senal === 'segura' && r.estado === 'candidatos')
+      ? '' : esc(ESTADOS[r.estado] || r.estado || '');
+    html = `<p class="cuenta-sandhis">${esc(voces[0])}${est1 ? ' — ' + est1 : ''}${
+      r.senal ? (est1 ? ' · ' : ' — ') + (CHIP[r.senal]||'') : ''}</p>`
       + `<div class="forms">${tarjeta(voces[0], r, true)}</div>`;
   } else {
     const marcadas = [];

@@ -17,12 +17,11 @@
 | ti (183.581) | 28 | 16.408 | 0 | 23 | 5 |
 | hi (38.054) | 7 | 13.622 | 3 | 0 | 4 |
 | atthi (13.252) | 2 | 12.320 | 0 | 0 | 2 |
-| vā (94.815) | 12 | 5.913 | 0 | 0 | 12 |
 | taṃ (53.782) | 20 | 5.845 | 0 | 0 | 20 |
-| anto (1.610) | 12 | 5.162 | 2 | 0 | 10 |
-| ito (4.337) | 12 | 4.956 | 3 | 7 | 2 |
 | heva (268) | 5 | 4.804 | 0 | 0 | 5 |
 | evaṃ (46.248) | 5 | 4.777 | 1 | 0 | 4 |
+| anto (1.610) | 11 | 4.597 | 2 | 0 | 9 |
+| ito (4.337) | 11 | 4.391 | 3 | 6 | 2 |
 | pi (291) | 11 | 4.277 | 3 | 6 | 2 |
 | api (2.250) | 9 | 3.861 | 0 | 0 | 9 |
 | etaṃ (5.542) | 13 | 3.773 | 3 | 0 | 10 |
@@ -39,6 +38,7 @@
 | upanissayo (215) | 3 | 1.418 | 0 | 0 | 3 |
 | alaṃ (1.052) | 4 | 1.374 | 1 | 0 | 3 |
 | adhipati (379) | 3 | 1.369 | 0 | 0 | 3 |
+| vā (94.815) | 4 | 1.355 | 0 | 0 | 4 |
 | evā (150) | 4 | 1.355 | 0 | 0 | 4 |
 | itthaṃ (732) | 4 | 1.353 | 1 | 0 | 3 |
 | atthaṃ (2.979) | 4 | 1.353 | 0 | 0 | 4 |
@@ -52,7 +52,6 @@
 | sāmī (153) | 3 | 1.083 | 1 | 2 | 0 |
 | ayameva (949) | 1 | 964 | 0 | 0 | 1 |
 | ko (4.171) | 5 | 956 | 0 | 0 | 5 |
-| santo (970) | 2 | 942 | 0 | 0 | 2 |
 | antaṃ (334) | 4 | 816 | 0 | 0 | 4 |
 | antarā (1.173) | 2 | 815 | 0 | 0 | 2 |
 | atthiyā (595) | 1 | 686 | 0 | 0 | 1 |
@@ -83,6 +82,7 @@
 | attato (518) | 1 | 382 | 0 | 1 | 0 |
 | ādīni (1.404) | 2 | 381 | 0 | 0 | 2 |
 | kalaṃ (149) | 1 | 380 | 0 | 0 | 1 |
+| santo (970) | 1 | 377 | 0 | 0 | 1 |
 | ananto (147) | 1 | 367 | 0 | 0 | 1 |
 | uppajjittha (2.006) | 1 | 363 | 0 | 0 | 1 |
 | ettha (13.604) | 1 | 363 | 0 | 1 | 0 |
@@ -264,23 +264,6 @@
 | natthi | 11.958 | ¿? + atthi | na (138.642), naṃ (6.103), ne (358), ni (20), no (16.556), nu (7.037), … | 9 bases |
 | hatthi | 362 | ¿? + atthi | ha (45), haṃ (30), he (11), hi (38.054), hiṃ (5), ho (4), … | 10 bases |
 
-### «vā» (94.815 apariciones propias) — masa 5.913 · 12 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| dassetvā | 2.144 | ¿? + vā | dasseti (5.078), dassetu (6), dassetā (9), dassetī (132), dassetū (3) | 5 bases |
-| kathetvā | 616 | ¿? + vā | kathe (2), katheti (640), kathetu (7), kathetā (4), kathetī (79), kathetū (5) | 6 bases |
-| sīlavā | 536 | ¿? + vā | sīlaṃ (2.410), sīlā (27) | 2 bases |
-| uppādetvā | 516 | ¿? + vā | uppāde (37), uppādeti (705), uppādetu (3), uppādetā (52), uppādetī (15) | 5 bases |
-| balavā | 396 | ¿? + vā | balaṃ (621), balā (18) | 2 bases |
-| bhāvetvā | 344 | ¿? + vā | bhāve (32), bhāveti (1.833), bhāvetu (9), bhāvetī (108), bhāvetū (4) | 5 bases |
-| yācitvā | 298 | ¿? + vā | yāci (427), yācita (1), yācite (15), yācito (368), yācitā (21) | 5 bases |
-| desetvā | 271 | ¿? + vā | dese (87), deseti (974), desetu (113), desetā (17), desetī (56), desetū (33) | 6 bases |
-| sutavā | 255 | ¿? + vā | sutaṃ (1.760), sutā (122) | 2 bases |
-| paññapetvā | 199 | ¿? + vā | paññape (1), paññapeti (260), paññapetī (19) | 3 bases |
-| vavatthapetvā | 170 | ¿? + vā | vavatthapeti (207), vavatthapetī (4) | 2 bases |
-| antavā | 168 | ¿? + vā | antaṃ (334), antā (68) | 2 bases |
-
 ### «taṃ» (53.782 apariciones propias) — masa 5.845 · 20 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -301,40 +284,6 @@
 | pavattitaṃ | 195 | ¿? + taṃ | pavattiṃ (740), pavattī (24) | 2 bases |
 | dukkhassantaṃ | 189 | ¿? + taṃ | dukkhassa (1.176), dukkhassā (44) | 2 bases |
 
-### «anto» (1.610 apariciones propias) — masa 5.162 · 12 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| santo | 970 | ¿? + anto | sa (2.132), saṃ (145), se (70), si (2), so (42.327), su (312), … | 9 bases |
-| passanto | 565 | ¿? + anto | passa (624), passaṃ (364), passe (161), passi (172), passiṃ (19), passo (3), … | 8 bases |
-| bhonto | 460 | bho + anto | bho (3.578) | única |
-| arahanto | 432 | ¿? + anto | araha (2), arahaṃ (754), arahe (2), araho (24), arahā (1.133), arā (23) | 6 bases |
-| gaṇhanto | 415 | ¿? + anto | gaṇha (146), gaṇhaṃ (1), gaṇhe (12), gaṇhi (541), gaṇhiṃ (36), gaṇhā (92), … | 7 bases |
-| caranto | 379 | ¿? + anto | ca (133.362), cara (194), caraṃ (119), care (455), cari (64), cariṃ (10), … | 11 bases |
-| pucchanto | 378 | ¿? + anto | puccha (126), pucchaṃ (117), pucche (1), pucchi (2.274), pucchiṃ (23), pucchā (788), … | 7 bases |
-| vasanto | 377 | ¿? + anto | vasa (55), vasaṃ (499), vase (347), vasi (278), vasiṃ (43), vaso (76), … | 10 bases |
-| jānanto | 367 | ¿? + anto | jāna (33), jānaṃ (444), jāne (4), jāni (32), jāniṃ (36), jāno (4), … | 8 bases |
-| āyasmanto | 302 | āyasmā + anto | āyasmā (4.220) | única |
-| mahanto | 288 | ¿? + anto | ma (86), maha (3), mahaṃ (12), mahe (10), mahiṃ (59), maho (3), … | 9 bases |
-| bhagavanto | 229 | ¿? + anto | bhaga (1), bhagavaṃ (1), bhagavā (17.211), bhagā (19) | 4 bases |
-
-### «ito» (4.337 apariciones propias) — masa 4.956 · 12 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| santo | 970 | saṃ + ito | saṃ (145) | única ⚠ |
-| passanto | 565 | passaṃ + ito | passaṃ (364) | única ⚠ |
-| arahanto | 432 | arahaṃ + ito | arahaṃ (754) | única |
-| gaṇhanto | 415 | gaṇhaṃ + ito | gaṇhaṃ (1) | única ⚠ |
-| cittato | 382 | ¿? + ito | citta (145), cittaṃ (11.268) | 2 bases |
-| caranto | 379 | caraṃ + ito | caraṃ (119) | única ⚠ |
-| pucchanto | 378 | pucchaṃ + ito | pucchaṃ (117) | única ⚠ |
-| vasanto | 377 | vasaṃ + ito | vasaṃ (499) | única |
-| jānanto | 367 | jānaṃ + ito | jānaṃ (444) | única |
-| mahanto | 288 | mahaṃ + ito | mahaṃ (12) | única ⚠ |
-| bhagavanto | 229 | bhagavaṃ + ito | bhagavaṃ (1) | única ⚠ |
-| ekantato | 174 | ¿? + ito | ekanta (53), ekantaṃ (102) | 2 bases |
-
 ### «heva» (268 apariciones propias) — masa 4.804 · 5 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -354,6 +303,38 @@
 | ādīnavaṃ | 652 | ādīnaṃ + evaṃ | ādīnaṃ (895) | única |
 | nāvaṃ | 273 | ¿? + evaṃ | na (138.642), nā (26) | 2 bases |
 | navaṃ | 212 | ¿? + evaṃ | na (138.642), naṃ (6.103) | 2 bases |
+
+### «anto» (1.610 apariciones propias) — masa 4.597 · 11 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| santo | 970 | ¿? + anto | sa (2.132), saṃ (145), se (70), si (2), so (42.327), su (312), … | 9 bases |
+| bhonto | 460 | bho + anto | bho (3.578) | única |
+| arahanto | 432 | ¿? + anto | araha (2), arahaṃ (754), arahe (2), araho (24), arahā (1.133), arā (23) | 6 bases |
+| gaṇhanto | 415 | ¿? + anto | gaṇha (146), gaṇhaṃ (1), gaṇhe (12), gaṇhi (541), gaṇhiṃ (36), gaṇhā (92), … | 7 bases |
+| caranto | 379 | ¿? + anto | ca (133.362), cara (194), caraṃ (119), care (455), cari (64), cariṃ (10), … | 11 bases |
+| pucchanto | 378 | ¿? + anto | puccha (126), pucchaṃ (117), pucche (1), pucchi (2.274), pucchiṃ (23), pucchā (788), … | 7 bases |
+| vasanto | 377 | ¿? + anto | vasa (55), vasaṃ (499), vase (347), vasi (278), vasiṃ (43), vaso (76), … | 10 bases |
+| jānanto | 367 | ¿? + anto | jāna (33), jānaṃ (444), jāne (4), jāni (32), jāniṃ (36), jāno (4), … | 8 bases |
+| āyasmanto | 302 | āyasmā + anto | āyasmā (4.220) | única |
+| mahanto | 288 | ¿? + anto | ma (86), maha (3), mahaṃ (12), mahe (10), mahiṃ (59), maho (3), … | 9 bases |
+| bhagavanto | 229 | ¿? + anto | bhaga (1), bhagavaṃ (1), bhagavā (17.211), bhagā (19) | 4 bases |
+
+### «ito» (4.337 apariciones propias) — masa 4.391 · 11 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| santo | 970 | saṃ + ito | saṃ (145) | única ⚠ |
+| arahanto | 432 | arahaṃ + ito | arahaṃ (754) | única |
+| gaṇhanto | 415 | gaṇhaṃ + ito | gaṇhaṃ (1) | única ⚠ |
+| cittato | 382 | ¿? + ito | citta (145), cittaṃ (11.268) | 2 bases |
+| caranto | 379 | caraṃ + ito | caraṃ (119) | única ⚠ |
+| pucchanto | 378 | pucchaṃ + ito | pucchaṃ (117) | única ⚠ |
+| vasanto | 377 | vasaṃ + ito | vasaṃ (499) | única |
+| jānanto | 367 | jānaṃ + ito | jānaṃ (444) | única |
+| mahanto | 288 | mahaṃ + ito | mahaṃ (12) | única ⚠ |
+| bhagavanto | 229 | bhagavaṃ + ito | bhagavaṃ (1) | única ⚠ |
+| ekantato | 174 | ¿? + ito | ekanta (53), ekantaṃ (102) | 2 bases |
 
 ### «pi» (291 apariciones propias) — masa 4.277 · 11 formas
 
@@ -506,6 +487,15 @@
 | sahajātādhipati | 546 | ¿? + adhipati | sahajāta (817), sahajātaṃ (746), sahajāte (589), sahajāti (2), sahajātiṃ (3), sahajāto (249), … | 7 bases |
 | maggādhipati | 190 | ¿? + adhipati | magga (329), maggaṃ (2.615), magge (876), maggiṃ (5), maggo (2.725), maggā (593), … | 7 bases |
 
+### «vā» (94.815 apariciones propias) — masa 1.355 · 4 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| sīlavā | 536 | ¿? + vā | sīlaṃ (2.410), sīlā (27) | 2 bases |
+| balavā | 396 | ¿? + vā | balaṃ (621), balā (18) | 2 bases |
+| sutavā | 255 | ¿? + vā | sutaṃ (1.760), sutā (122) | 2 bases |
+| antavā | 168 | ¿? + vā | antaṃ (334), antā (68) | 2 bases |
+
 ### «evā» (150 apariciones propias) — masa 1.355 · 4 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -614,13 +604,6 @@
 | dhammiko | 198 | ¿? + ko | dhammiṃ (330), dhammī (51) | 2 bases |
 | pāpako | 182 | ¿? + ko | pāpaṃ (900), pāpā (78) | 2 bases |
 | nāyako | 165 | ¿? + ko | nāyaṃ (529), nāyā (1), yāna (3) | 3 bases |
-
-### «santo» (970 apariciones propias) — masa 942 · 2 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| passanto | 565 | ¿? + santo | pa (46.238), pasu (8), pasū (20) | 3 bases |
-| vasanto | 377 | ¿? + santo | vaṃ (6), vā (94.815) | 2 bases |
 
 ### «antaṃ» (334 apariciones propias) — masa 816 · 4 formas
 
@@ -816,6 +799,12 @@
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
 | sakalaṃ | 380 | ¿? + kalaṃ | saṃ (145), so (42.327), sā (10.054) | 3 bases |
+
+### «santo» (970 apariciones propias) — masa 377 · 1 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| vasanto | 377 | ¿? + santo | vaṃ (6), vā (94.815) | 2 bases |
 
 ### «ananto» (147 apariciones propias) — masa 367 · 1 formas
 

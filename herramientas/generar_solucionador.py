@@ -49,7 +49,10 @@ MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
 VERSION = "1.5"
 FECHA = "2026-08-28"
-NOTA = ("Dos reglas firmadas por el IEBH tras el informe de familias: el "
+NOTA = ("Reglas firmadas por el IEBH sobre pasajes reales de Vedanā: los "
+        "absolutivos en -tvā y -tvāna (indeclinables) nunca se señalan como "
+        "sandhi; casos phusitva, passanto y cetā = ca + etā; con señal "
+        "segura ya no se muestra «candidatos». Y tras el informe de familias: el "
         "RESGUARDO DE LA BASE RESIDUAL —una base candidata debe ser al "
         "menos tan frecuente que la forma entera; corrige el defecto por "
         "el que «ho» (4 apariciones) concedía la unicidad y el patrón "

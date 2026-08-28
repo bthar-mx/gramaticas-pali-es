@@ -1,5 +1,12 @@
 {
  "_que_es": "Casos adjudicados por lectores del solucionador. Decisión del Venerable (briefing 30 §3.5): la herramienta mejora con los fallos que reporten los lectores, y cada fallo es un caso de prueba permanente. Cada caso lleva su fuente y su fecha: es una adjudicación atribuida, no una heurística. El motor los consulta como al banco: un caso con sandhi=true da señal «segura» y pone primera la lectura adjudicada si el motor la produce; uno con sandhi=false es prueba de regresión de que la señal calla. Se comprueban con: node nuestro/js/arnes_casos.js",
+ "no_sandhi": [
+  {
+   "terminaciones": ["tvā", "tvāna"],
+   "fuente": "IEBH, 2026-08-28 · comentario de Vedanā (sesión 32)",
+   "nota": "En palabras del IEBH: «forms ending in tvā and tvāna are absolutives, indeclinable, so they should not be flagged as sandhi». La señal calla en toda voz con esas terminaciones — phusitvā, katvā, disvāna…—; las lecturas que recomponen siguen visibles al pegar la voz sola, como en todo silencio. Un caso adjudicado sandhi=true mandaría sobre esta regla (el caso manda), pero hoy no existe ninguno."
+  }
+ ],
  "patrones": [
   {
    "segunda": "iti",
@@ -100,6 +107,18 @@
    "componentes": "ca + etā",
    "fuente": "IEBH, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā): «yattha cetā nirujjhanti»",
    "nota": "En palabras del IEBH: «in this verse cetā is sandhi ca etā». El motor producía ca + etā (§12) como primera lectura, pero la señal callaba del todo: la detección busca la enclítica como SEGUNDA voz (…ñca, …ti, …pi) y aquí la partícula es la PRIMERA — el punto ciego estructural de tenupasaṅkami, ahora del lado proclítico. La familia entera (cāyaṃ, cassa, cetaṃ, cidaṃ… y las gemelas con na-, sv-, yv-) es candidata a regla de primera voz; no existe todavía mecanismo de patrón por primera voz: decidirlo pide firma."
+  },
+  {
+   "forma": "phusitva",
+   "sandhi": false,
+   "fuente": "IEBH, 2026-08-28 · comentario de Vedanā («Phussa phussa vayaṁ passanti…»)",
+   "nota": "En palabras del IEBH: «phusitva is actually phusitvā, an absolutive» — voz entera, escrita sin la ā final en la fuente pegada (la misma frase trae «phusitvā» bien escrito al lado). La señal proponía phusita + va («posible»); falso: no hay juntura, hay una vocal final abreviada en la transmisión. El motor no corrige la edición ni la entrada: calla."
+  },
+  {
+   "forma": "passanto",
+   "sandhi": false,
+   "fuente": "IEBH, 2026-08-28 · comentario de Vedanā («Phussa phussa vayaṁ passanti…»)",
+   "nota": "En palabras del IEBH: «passanto, present participle, identified as sandhi» — participio presente, voz entera. La señal proponía passa + anto («posible»); falso. Compárese con «navo» y «pajānāti»: la flexión corriente no es juntura. La des-flexión por paradigmas (mapa de la sesión 32, punto 6) es la señal que mataría esta clase entera de falsos candidatos."
   }
  ]
 }

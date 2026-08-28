@@ -263,11 +263,13 @@ def cargar():
     # fuente y fecha, y el motor la consulta como al banco.
     _cache["casos"] = {}
     _cache["patrones"] = []
+    _cache["no_sandhi"] = []
     if os.path.exists(CASOS):
         d_casos = json.load(open(CASOS, encoding="utf-8"))
         _cache["casos"] = {cotejo(c["forma"]): c
                            for c in d_casos.get("casos", [])}
         _cache["patrones"] = d_casos.get("patrones", [])
+        _cache["no_sandhi"] = d_casos.get("no_sandhi", [])
     return _cache
 
 
@@ -838,9 +840,29 @@ def solucionar(voz):
     r = _solucionar(voz)
     if SOLO_CANON:
         _ascender_senal(r)
+        _silenciar_no_sandhi(r)
         _aplicar_caso(r)
         _aplicar_patron(r)
     return r
+
+
+def _silenciar_no_sandhi(r):
+    """Las reglas negativas adjudicadas (casos-reportados.json, `no_sandhi`).
+
+    La primera, del IEBH (2026-08-28): las voces terminadas en -tvā y
+    -tvāna son absolutivos, indeclinables — no se señalan como sandhi. La
+    señal calla; las lecturas que recomponen siguen visibles al pegar la
+    voz sola, como en todo silencio. Va ANTES de `_aplicar_caso`: un caso
+    adjudicado sandhi=true mandaría sobre la regla, como manda sobre todo.
+    """
+    if not r.get("senal"):
+        return
+    c = r["cotejo"]
+    for regla in cargar().get("no_sandhi", []):
+        if any(c.endswith(t) for t in regla.get("terminaciones", [])):
+            r["senal"] = None
+            r["senal_motivo"] = None
+            return
 
 
 def _aplicar_patron(r):

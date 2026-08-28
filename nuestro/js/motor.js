@@ -131,6 +131,7 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella,
     for (const c of ((casos && casos.casos) || []))
         _cache.casos.set(cotejo(c.forma), c);
     _cache.patrones = (casos && casos.patrones) || [];
+    _cache.noSandhi = (casos && casos.no_sandhi) || [];
 }
 
 function esPalabra(t) { return _cache.lexico.has(cotejo(t)); }
@@ -649,9 +650,27 @@ function solucionar(voz) {
     // ni el estado. Números y porqués: `_ascender_senal` del Python.
     const r = _solucionar(voz);
     ascenderSenal(r);
+    silenciarNoSandhi(r);
     aplicarCaso(r);
     aplicarPatron(r);
     return r;
+}
+
+function silenciarNoSandhi(r) {
+    // Las reglas negativas adjudicadas (`no_sandhi` de casos-reportados):
+    // la primera, del IEBH (2026-08-28): -tvā y -tvāna son absolutivos,
+    // indeclinables — la señal calla. Va ANTES de aplicarCaso: un caso
+    // sandhi=true mandaría sobre la regla. Porqués:
+    // `_silenciar_no_sandhi` del Python.
+    if (!r.senal) return;
+    const c = r.cotejo;
+    for (const regla of (_cache.noSandhi || [])) {
+        if ((regla.terminaciones || []).some(t => c.endsWith(t))) {
+            r.senal = null;
+            r.senal_motivo = null;
+            return;
+        }
+    }
 }
 
 function aplicarPatron(r) {
