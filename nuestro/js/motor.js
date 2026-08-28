@@ -676,6 +676,23 @@ function aplicarPatron(r) {
             if (comp.length === 2 && comp[1] === seg && frec(comp[0]))
                 bases.add(comp[0]);
         }
+        // Regla de la clase vocálica, adjudicada por Angel (2026-08-28):
+        // «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti». Ver
+        // `_aplicar_patron` del Python.
+        if (patron.clase_vocal && patron.remanente) {
+            const rem = patron.remanente;
+            const sup = r.cotejo;
+            if (sup.endsWith(rem) && sup.length > rem.length) {
+                const vSup = sup[sup.length - rem.length - 1];
+                const clase = { "a": "a", "ā": "a", "i": "i", "ī": "i",
+                                "u": "u", "ū": "u", "e": "e", "o": "o" };
+                if (vSup in clase) {
+                    bases = new Set([...bases].filter(
+                        b => b && b[b.length - 1] in clase
+                            && clase[b[b.length - 1]] === clase[vSup]));
+                }
+            }
+        }
         // Desempate adjudicado: la base breve frente a su gemela con la
         // vocal final alargada (pabbajjāya / pabbajjāyā) — la larga suele
         // ser el producto del propio sandhi. Ver `_aplicar_patron`.

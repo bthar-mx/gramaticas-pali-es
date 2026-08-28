@@ -3,8 +3,10 @@
  "patrones": [
   {
    "segunda": "iti",
+   "remanente": "ti",
+   "clase_vocal": true,
    "fuente": "Angel, 2026-08-28 · pauta de las enclíticas (SN 1.1, DN 2)",
-   "nota": "La cola de «iti» del discurso directo. Si entre las lecturas verificadas hay exactamente UNA primera voz atestiguada en el canon con «iti» de segunda, ésa se afirma: abhisambuddho + iti. Desempate adjudicado: si las bases atestiguadas son exactamente dos y la segunda es la primera con la vocal final alargada (pabbajjāya / pabbajjāyā), se afirma la BREVE — la larga suele ser el producto del propio sandhi que se analiza—: paṭijānātha + iti, pabbajjāya + iti. Con bases distintas de verdad (ceva: ca, ce y cā) el patrón calla y la duda se declara."
+   "nota": "La cola de «iti» del discurso directo. Si entre las lecturas verificadas hay exactamente UNA primera voz atestiguada en el canon con «iti» de segunda, ésa se afirma: abhisambuddho + iti. Regla de la clase vocálica, adjudicada por Angel el 2026-08-28: «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti» — la vocal que sobrevive ante «ti» conserva la clase de la vocal final de la base (a/ā, i/ī, u/ū, e, o), y las bases de otra clase quedan excluidas; en el corpus, hotīti 7.621, hotūti 213, hotāti 0. Desempate adjudicado: entre la base breve y su gemela alargada (pabbajjāya / pabbajjāyā, hoti / hotī) se afirma la BREVE — la larga suele ser el producto del propio sandhi—. Con bases distintas de verdad el patrón calla y la duda se declara."
   },
   {
    "segunda": "api",
@@ -62,8 +64,9 @@
    "forma": "ceva",
    "sandhi": true,
    "componentes": "ca + eva",
+   "grado": "habitual",
    "fuente": "Angel, 2026-08-28 · DN 2",
-   "nota": "La conjunción con la enclítica, «c’eva … ca». Graficamente también recomponen ce «si» + eva y otras diez cadenas lícitas, y por eso el patrón de unicidad callaba; lo que las descarta no es la frecuencia sino saber pāḷi — ce abre prótasis y no toma eva enclítica aquí, ci no existe suelto—, y ese saber entra como adjudicación."
+   "nota": "Adjudicación HABITUAL, no exclusiva — en palabras de Angel: «ceva could be ca eva or ce eva or ci eva and so on; most of the time is ca eva», y decidir un pasaje concreto pediría leer los Comentarios. Se afirma la lectura habitual y las demás quedan a la vista, plegadas. Distinto del grado exclusivo de hotīti («es sólo hoti + iti»)."
   }
  ]
 }

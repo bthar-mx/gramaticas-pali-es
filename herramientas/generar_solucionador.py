@@ -47,9 +47,15 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.2"
+VERSION = "1.3"
 FECHA = "2026-08-28"
-NOTA = ("Los patrones adjudicados de las enclíticas: cuando una voz termina "
+NOTA = ("La regla de la clase vocálica, adjudicada por Angel: «hotīti es "
+        "sólo hoti + iti y hotūti es sólo hotu + iti» — la vocal que "
+        "sobrevive ante «ti» conserva la clase de la vocal final de la "
+        "base, y las bases de otra clase quedan excluidas de la "
+        "afirmación. Con ella, toda la familia de colas de «iti» se "
+        "afirma sola: hotīti, vuccatīti, bhavissatīti… Antes, en la "
+        "versión 1.2: los patrones adjudicados de las enclíticas: cuando una voz termina "
         "en la cola de «iti» o de «pi» y entre las lecturas verificadas hay "
         "una sola primera voz atestiguada en el canon, esa lectura se afirma "
         "con su fuente — abhisambuddho + iti, ye + api—; con varias bases "

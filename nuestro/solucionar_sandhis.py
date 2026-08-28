@@ -875,6 +875,23 @@ def _aplicar_patron(r):
             comp = [cotejo(x) for x in l.get("componentes", [])]
             if len(comp) == 2 and comp[1] == seg and frec.get(comp[0], 0):
                 bases.add(comp[0])
+        # Regla de la clase vocálica, adjudicada por Angel (2026-08-28):
+        # «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti». La vocal
+        # que sobrevive ante el remanente conserva la clase de la vocal
+        # final de la base (a/ā, i/ī, u/ū, e, o); las bases de otra clase
+        # quedan excluidas de la afirmación (siguen visibles, plegadas). En
+        # el corpus: hotīti 7.621 · hotūti 213 · hotāti 0.
+        if patron.get("clase_vocal") and patron.get("remanente"):
+            rem = patron["remanente"]
+            sup = r["cotejo"]
+            if sup.endswith(rem) and len(sup) > len(rem):
+                v_sup = sup[-len(rem) - 1]
+                clase = {"a": "a", "ā": "a", "i": "i", "ī": "i",
+                         "u": "u", "ū": "u", "e": "e", "o": "o"}
+                if v_sup in clase:
+                    bases = {b for b in bases
+                             if b and b[-1] in clase
+                             and clase[b[-1]] == clase[v_sup]}
         # Desempate adjudicado: dos bases que son la misma voz con la vocal
         # final breve y larga (pabbajjāya / pabbajjāyā) se reducen a la
         # BREVE — la larga suele ser el producto del propio sandhi—. Bases
