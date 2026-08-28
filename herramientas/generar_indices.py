@@ -85,8 +85,7 @@ RECURSOS = [
      "secuencia de aforismos de Kaccāyana explica cada una. Toda lectura se "
      "verifica por recomposición; se afirma una sola cuando hay autoridad "
      "detrás y se declara la duda cuando no la hay. El léxico es el corpus "
-     "del Sexto Concilio, con el DPD de testigo silencioso. Publicado con "
-     "su cobertura medida a la vista."),
+     "del Sexto Concilio. Publicado con su cobertura medida a la vista."),
     ("nombre/", "10 pasos", "Formación del nombre — pācako",
      "La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz "
      "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "
