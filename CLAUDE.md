@@ -10,10 +10,15 @@ estudiantes hispanohablantes de pāḷi con formación budista.
 
 ## Reglas
 
-- **Con Angel se habla en inglés. Todo lo demás va en español**: el sitio, los
-  briefings, los mensajes de commit, los comentarios del código. Una respuesta
-  en el chat es para Angel y va en inglés **entera**, también los bloques que
-  le pases para copiar.
+- **Con Angel se habla en inglés. Todo lo que produce el proyecto va en
+  español.** El criterio es quién lo lee, no dónde aparece:
+  - **Inglés**: todo lo que Claude le dice a Angel en el chat —la respuesta
+    **entera**, incluidas las explicaciones que acompañan a un bloque de
+    código o a una orden para copiar.
+  - **Español**: el sitio, los briefings, los mensajes de commit, los
+    comentarios del código, los `<!-- DUDA: ... -->`. Siguen en español
+    **aunque se le pasen a Angel en el chat para que los copie**: un mensaje
+    de commit es contenido del proyecto, no una frase dirigida a él.
 - **Nada de verbos ingleses conjugados en español** —«commitear», «pushear»,
   «empujado», «mergear», «testear»—. La tabla y el porqué, en
   `comun/convenciones.md` §0.
