@@ -3,12 +3,12 @@
 Entrega del 24 de agosto de 2026, encargo de Ven. Bhikkhu Nandisena, recibida
 como `solucionador-de-sandhis.zip` e incorporada al árbol el 2026-08-28.
 
-<!-- DUDA: falta el nombre del autor de la entrega para darle el crédito
-     completo. Angel debe indicarlo y esta línea se corrige. -->
+**Autor de la entrega: Miguel De Anquín.** Donde este documento dice «el
+colaborador», es él.
 
 ## Qué es suyo, qué es nuestro, qué cambió al incorporarse
 
-**Del colaborador** (todo lo que no se lista abajo): el motor (`nuestro/`),
+**De Miguel De Anquín** (todo lo que no se lista abajo): el motor (`nuestro/`),
 las mediciones, la pantalla, los datos nuevos de `recursos/sandhi/`,
 `recursos/lexico/`, `recursos/corpus/`, `comun/concordancia-sandhi-*.json`,
 `comun/concordancia-tres-numeraciones-sandhi.json`, `fuentes-derivadas/`,
