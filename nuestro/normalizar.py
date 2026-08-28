@@ -35,7 +35,13 @@ import unicodedata
 
 APOSTROFOS = "’'"                 # ’  '
 GUIONES = "-‐‑‒–—−"
-BORRAR = {ord(c): None for c in APOSTROFOS + GUIONES}
+# Comillas de cita de la edición (2026-08-28, instrucción del Venerable):
+# «oghamatarī”ti» es la voz «oghamatarīti» con la comilla de cierre de la
+# cita incrustada. La comilla no es parte de la voz y se ignora al comparar,
+# igual que el apóstrofo. La tipográfica simple de cierre ya cae con los
+# apóstrofos; acá van las dobles y las angulares.
+COMILLAS = "“”„\"«»‹›‘"
+BORRAR = {ord(c): None for c in APOSTROFOS + GUIONES + COMILLAS}
 
 NIGGAHITA = {0x1E41: "ṃ"}              # ṁ → ṃ
 

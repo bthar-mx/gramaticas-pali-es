@@ -297,6 +297,11 @@ def descomposicion(voz):
     return []
 
 
+def nombre_lexico():
+    """El léxico en uso, para que los mensajes digan la verdad (2026-08-28):
+    en modo --solo-canon el DPD no interviene y nombrarlo confundía."""
+    return "del canon (Sexto Concilio)" if SOLO_CANON else "del DPD"
+
 def es_palabra(t):
     return cotejo(t) in cargar()["lexico"]
 
@@ -1127,7 +1132,7 @@ def senal(voz):
     if c.endswith("ti") and len(c) > 3 and c[-3] in "āīū":
         return ("segura", "cola de «iti»: vocal larga antes de «ti»")
     if not es_palabra(voz) and not _compuesto_aparente(c):
-        return ("segura", "la voz no está en el léxico del DPD, y tampoco se "
+        return ("segura", "la voz no está en el léxico " + nombre_lexico() + ", y tampoco se "
                           "parte en dos voces del léxico sin operación")
     return (None, "")
 
@@ -1358,11 +1363,11 @@ def por_que_no(voz, k):
     }
     n_op = sum(1 for n in ORDEN if isinstance(n, int))
     if not entera and not pares:
-        return ("la voz NO está en el léxico del DPD, y ningún corte la parte "
+        return ("la voz NO está en el léxico " + nombre_lexico() + ", y ningún corte la parte "
                 "en dos voces que el léxico reconozca. O la forma está mal "
                 "escrita, o alguna de sus piezas falta en el léxico.", d)
     if not entera:
-        return ("la voz NO está en el léxico del DPD. Hay {0} corte(s) en dos "
+        return ("la voz NO está en el léxico " + nombre_lexico() + ". Hay {0} corte(s) en dos "
                 "voces reales, pero ninguna de las {1} operaciones enunciadas los "
                 "lleva a esta forma. Conviene revisar cómo está escrita antes de "
                 "buscarle una regla.".format(len(pares), n_op), d)
@@ -1412,7 +1417,7 @@ def mostrar(r):
         print("  motivo: {0}".format(r["motivo"]))
     d = r.get("diagnostico")
     if d:
-        print("          · la voz está en el léxico del DPD: {0}".format(
+        print("          · la voz está en el léxico {0}: {1}".format(nombre_lexico(),
             "sí" if d["la_voz_esta_en_el_lexico"] else "no"))
         print("          · cortes en dos voces del léxico: {0}{1}".format(
             d["cortes_en_dos_voces_del_lexico"],
