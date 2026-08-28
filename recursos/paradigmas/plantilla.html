@@ -47,7 +47,9 @@ body{
 
 /* ---------- barra lateral ---------- */
 .sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
-  background:var(--ola-2);border-right:1px solid var(--hair);padding:20px 0 48px}
+  background:var(--ola-2);border-right:1px solid var(--hair);
+  /* Sitio arriba para el ☰ que pliega el índice. */
+  padding:54px 0 48px}
 .sb-sec>summary{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
   text-transform:uppercase;color:var(--haritala);margin:0;padding:9px 18px 7px;
   cursor:pointer;list-style:none;user-select:none}
@@ -67,8 +69,8 @@ body{
 .sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
 .sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
 .sidebar a:hover b,.sidebar a.on b{color:inherit}
-.sb-close{position:absolute;top:14px;right:12px;
-  font-family:var(--mono);font-size:13.5px;line-height:1;padding:7px 10px;
+.sb-close{position:absolute;top:14px;left:14px;
+  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
   background:var(--ola);color:var(--soot);border:1px solid var(--hair);
   border-radius:2px;cursor:pointer}
 .sb-close:hover{color:var(--ink);border-color:var(--soot)}
@@ -84,22 +86,20 @@ body{padding-left:238px}
 body{transition:padding-left .2s ease}
 html.sin-barra body{padding-left:0}
 html.sin-barra .sidebar{transform:translateX(-100%)}
-/* ---------- pestaña para traer de vuelta el índice ---------- */
-/* Al plegar la barra hay que poder devolverla, y buscar un ☰ pequeño entre
-   los demás iconos no es manera. Esta pestaña se queda en el borde
-   izquierdo, justo donde estaba la barra, y sólo se ve cuando está plegada. */
-#volver-barra{position:fixed;left:0;top:50%;transform:translateY(-50%);
-  z-index:56;display:none;align-items:center;gap:7px;
-  writing-mode:vertical-rl;
-  font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.12em;
-  text-transform:uppercase;
+/* ---------- el ☰ que trae de vuelta el índice ---------- */
+/* Al plegar la barra, un ☰ fijo se queda exactamente donde estaba el ☰
+   de su esquina: parece un solo botón aunque sean dos, y se pulsa en el
+   mismo sitio para plegar y para devolver. Sólo se ve cuando la barra
+   está plegada. */
+#volver-barra{position:fixed;left:14px;top:14px;
+  z-index:56;display:none;align-items:center;
+  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
   background:var(--ola-2);color:var(--soot);
-  border:1px solid var(--hair);border-left:0;
-  border-radius:0 3px 3px 0;padding:20px 9px;cursor:pointer;
-  box-shadow:2px 0 10px var(--shadow)}
+  border:1px solid var(--hair);border-radius:2px;cursor:pointer;
+  box-shadow:0 2px 10px var(--shadow)}
 #volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
 #volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-html.sin-barra #volver-barra{display:flex}
+html.sin-barra #volver-barra{display:inline-flex}
 @media (max-width:900px){html.sin-barra #volver-barra{display:none}}
 @media print{#volver-barra{display:none!important}}
 @media (prefers-reduced-motion:reduce){
@@ -138,7 +138,10 @@ h1 .dia{color:var(--haritala)}
   border-radius:999px;padding:4px 10px;position:relative}
 .version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
 /* Con el dedo no hay hover: la clase «on» la pone un toque (ver el guion). */
-.sb-close,#volver-barra,#burger{position:relative}
+/* Ojo: aquí no entran .sb-close ni #volver-barra, que ya están posicionados
+   (absolute/fixed): un position:relative posterior los sacaría de su sitio
+   y los dejaría en la esquina del documento — es lo que pasaba. */
+#burger{position:relative}
 /* Esta página no tiene el motor de globos de Raíces: usa el globo por CSS
    de la insignia de versión, y estos dos controles se suman a él. El
    «title» del navegador es diminuto y no se puede estilar. */
@@ -158,10 +161,9 @@ h1 .dia{color:var(--haritala)}
      En «fixed» se sale de ella y se pone al lado, sobre el texto. */
   position:fixed;left:250px;top:14px;right:auto;bottom:auto;max-width:320px}
 #burger[data-tip]:hover::after{left:0;top:calc(100% + 8px);text-transform:none;font-weight:400}
-/* La pestaña va en vertical; su globo, no. */
+/* El ☰ fijo está en la esquina: su globo, debajo y hacia la derecha. */
 #volver-barra[data-tip]:hover::after{
-  top:50%;left:calc(100% + 10px);transform:translateY(-50%);
-  writing-mode:horizontal-tb;text-transform:none;font-weight:400}
+  top:calc(100% + 8px);left:0;text-transform:none;font-weight:400}
 .version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
 .hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
       border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
@@ -362,10 +364,10 @@ footer a{color:var(--nila)}
 
 <div class="scrim" id="scrim"></div>
 <button id="volver-barra" aria-label="Mostrar el índice"
-  data-tip="Mostrar otra vez el índice al lado del texto.">» Índice</button>
+  data-tip="Mostrar otra vez el índice al lado del texto.">☰</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
-    data-tip="Aparta el índice y el texto ocupa su sitio. Vuelve con la pestaña del borde izquierdo.">☰</button>
+    data-tip="Aparta el índice y el texto ocupa su sitio. El ☰ se queda en su sitio para devolverlo.">☰</button>
   <div class="sb-brand"><b>Paradigmas</b><span class="lbl">Declinación nominal y pronominal</span></div>
   <nav id="sbnav"></nav>
 </aside>
@@ -626,7 +628,7 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
 
 /* ---------- versión ---------- */
 const VERSION = '1.13', VERSION_DATE = '2026-08-28';
-const VERSION_NOTE = 'El índice de la izquierda se pliega con el ☰ de su propia esquina, y vuelve con la pestaña del borde o con el ☰ de la barra de controles; en pantalla ancha el texto ocupa el sitio que deja. Se abre siempre al entrar. Antes, en la versión 1.12: El árbol del IEBH pasa a estar en la cabecera de todas las páginas del sitio, no sólo en las que nombran al instituto: es la marca de quien publica, no un pie de la línea que tiene al lado. Antes, en la versión 1.11: Aparece la marca del Instituto de Estudios Buddhistas Hispano: el árbol bodhi junto a la línea que ya nombra al instituto, y el imagotipo completo en el pie, junto a la licencia. Ambas versiones —granate sobre claro, blanca sobre oscuro— son las del manual de marca del IEBH, sin recolorear ni recortar. El sitio estrena también icono de pestaña. Antes, en la versión 1.10: Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
+const VERSION_NOTE = 'El índice de la izquierda se pliega con el ☰ de su propia esquina, y vuelve con ese mismo ☰, que se queda quieto en su sitio, o con el de la barra de controles; en pantalla ancha el texto ocupa el sitio que deja. Se abre siempre al entrar. Antes, en la versión 1.12: El árbol del IEBH pasa a estar en la cabecera de todas las páginas del sitio, no sólo en las que nombran al instituto: es la marca de quien publica, no un pie de la línea que tiene al lado. Antes, en la versión 1.11: Aparece la marca del Instituto de Estudios Buddhistas Hispano: el árbol bodhi junto a la línea que ya nombra al instituto, y el imagotipo completo en el pie, junto a la licencia. Ambas versiones —granate sobre claro, blanca sobre oscuro— son las del manual de marca del IEBH, sin recolorear ni recortar. El sitio estrena también icono de pestaña. Antes, en la versión 1.10: Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
 (function(){
   const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
            'septiembre','octubre','noviembre','diciembre'];

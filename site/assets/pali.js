@@ -591,9 +591,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ─── Plegar el índice en pantalla ancha (sesión 29) ───────────
   // El ☰ de la barra de kaṇḍas es para el cajón de pantalla estrecha.
-  // En ancha el índice va fijo al lado del texto, y se pliega con su
-  // propio botón; una pestaña en el borde lo devuelve, que es donde se
-  // busca. No se guarda: se abre siempre al entrar.
+  // En ancha el índice va fijo al lado del texto, y se pliega con el ☰
+  // de su esquina superior izquierda; el mismo ☰, fijo en ese punto,
+  // lo devuelve: parece un solo botón aunque sean dos. No se guarda:
+  // se abre siempre al entrar.
   function verToc(oculto) {
     document.documentElement.classList.toggle('sin-toc', oculto);
     var v = document.getElementById('toc-volver');
@@ -606,7 +607,7 @@ document.addEventListener('DOMContentLoaded', function() {
      plegar el índice en todo el sitio. */
   cerrar.textContent = '☰';
   cerrar.setAttribute('aria-label', 'Ocultar el índice');
-  cerrar.setAttribute('data-tip', 'Aparta el índice para leer a todo lo ancho. Vuelve con la pestaña del borde izquierdo.');
+  cerrar.setAttribute('data-tip', 'Aparta el índice para leer a todo lo ancho. El ☰ se queda en su sitio para devolverlo.');
   cerrar.addEventListener('click', function() { verToc(true); });
   toc.style.position = toc.style.position || '';
   toc.insertBefore(cerrar, toc.firstChild);
@@ -614,7 +615,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var volver = document.createElement('button');
   volver.id = 'toc-volver';
   volver.type = 'button';
-  volver.textContent = '» Índice';
+  volver.textContent = '☰';
   volver.setAttribute('aria-label', 'Mostrar el índice');
   volver.setAttribute('data-tip', 'Mostrar otra vez el índice de suttas.');
   volver.addEventListener('click', function() { verToc(false); });
