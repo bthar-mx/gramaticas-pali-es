@@ -1,4 +1,4 @@
-EL PORTE A JAVASCRIPT — ETAPA 1 (briefing sesión 30, §6)
+EL PORTE A JAVASCRIPT — ETAPAS 1 Y 2 (briefing sesión 30, §6)
 
 Núcleo del solucionador de sandhis en JS, medido contra el Python, que queda
 como referencia permanente. Modo: solo-canon (el DPD fuera, decisión del
@@ -9,22 +9,48 @@ Venerable 2026-08-28; la autoridad es Kaccāyana y el texto de la edición).
                   con su enunciado arriba
   derivar.js      porte de herramientas/derivar_secuencias.py — EL VERIFICADOR,
                   del Venerable; se transcribe, no se «mejora»
-  motor.js        porte del núcleo de nuestro/solucionar_sandhis.py — el
-                  vecindario, forward(), proponer(), proponerEnFrase(),
-                  proponerEnMarca(). No lee archivos: recibe los datos por
-                  iniciar(), para servir igual en Node y en el navegador.
-  arnes.js        el arnés de la puerta:  node nuestro/js/arnes.js
+  motor.js        porte de nuestro/solucionar_sandhis.py — el vecindario,
+                  forward(), proponer(), proponerEnFrase(), proponerEnMarca(),
+                  y desde la etapa 2 solucionar() entero: el banco con sus
+                  procedencias, juntarIguales(), los estados con los tres
+                  silencios, señal() y porQueNo(). No lee archivos: recibe
+                  los datos por iniciar(), para servir igual en Node y en el
+                  navegador. La huella del banco la calcula quien carga y la
+                  pasa por iniciar().
+  lexico_fragmentado.js  el léxico del canon con carga bajo demanda (etapa 2):
+                  un objeto con .has() que carga el fragmento de la letra la
+                  primera vez que se consulta. Versión Node; en el navegador
+                  será un fetch con el mismo contrato.
+  arnes.js        la puerta de la etapa 1:  node nuestro/js/arnes.js
+  arnes_corpus.js la puerta de la etapa 2:  node nuestro/js/arnes_corpus.js
 
-  referencia-banco-solo-canon.json — la salida del Python sobre las 266 formas
-  del banco, todas las lecturas con sus pasos, en su orden. La vuelca
-  `python3 nuestro/volcar_referencia.py --solo-canon`. Generada, no fuente:
-  se regenera cuando cambie el motor Python o el banco; nunca se edita a mano.
+Los fragmentos del léxico están en recursos/solucionador/lexico/ (30 archivos
+por letra inicial + indice.json) y los escribe
+`python3 herramientas/generar_lexico_solucionador.py` desde
+recursos/corpus/corpus-formas.json. Los nombres de archivo son ASCII a
+propósito (ā→aa.json): macOS normaliza a NFD y un nombre con diacrítico
+cambia de bytes solo. La tabla letra → archivo va en el índice.
 
-LA PUERTA (pasada 2026-08-28): 218 de 251 medibles en modo solo-canon, y las
-266 formas con lecturas idénticas al Python, secuencia por secuencia. Si el
-arnés no da idéntico, el defecto es del porte, no del Python.
+Las referencias (generadas, nunca editadas a mano):
 
-Lo que NO está en esta etapa: solucionar() con su consulta al banco y sus
-estados (los tres silencios), señal, combinar(), juntura declarada, la
-pantalla. Van con las etapas 2–4. La segmentación con léxico fragmentado
-(etapa 2) parte de motor.iniciar(), que ya recibe el léxico desde afuera.
+  referencia-banco-solo-canon.json — las 266 formas del banco con todas las
+  lecturas y sus pasos, en su orden. La vuelca
+  `python3 nuestro/volcar_referencia.py --solo-canon`.
+  referencia-corpus-{versos,comentario}-solo-canon.json — la medida contra el
+  corpus de `Sandhi`, forma por forma, con categoría, rango y lecturas. Las
+  vuelca `python3 nuestro/volcar_referencia_corpus.py --solo-canon
+  [--comentario]`. (El corte de `Sandhi` no es la verdad: su partición se
+  hizo CON el DPD — la referencia está teñida, briefing 30 §2.)
+
+LAS PUERTAS (pasadas 2026-08-28):
+  Etapa 1 — 218 de 251 medibles del banco, y las 266 formas con lecturas
+  idénticas al Python, secuencia por secuencia.
+  Etapa 2 — 551 de 698 (Therīgāthā) y 6.048 de 7.178 (su comentario) con el
+  léxico fragmentado, y las 10.177 formas idénticas al Python en categoría,
+  rango y lecturas.
+Si un arnés no da idéntico, el defecto es del porte, no del Python.
+
+Lo que NO está todavía: combinar() y juntura declarada, la detección en
+párrafo (etapa 3, rediseño sin DPD), la página del sitio (etapa 4, interfaz
+mínima del §3.4 del briefing 30). La capa --canon del modo DPD no se porta:
+este porte es solo-canon por decisión.

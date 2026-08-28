@@ -1,0 +1,126 @@
+{
+ "origen": "recursos/corpus/corpus-formas.json",
+ "total": 681927,
+ "fragmentos": {
+  "a": {
+   "archivo": "a.json",
+   "formas": 101514
+  },
+  "b": {
+   "archivo": "b.json",
+   "formas": 24425
+  },
+  "c": {
+   "archivo": "c.json",
+   "formas": 20262
+  },
+  "d": {
+   "archivo": "d.json",
+   "formas": 34297
+  },
+  "e": {
+   "archivo": "e.json",
+   "formas": 9075
+  },
+  "g": {
+   "archivo": "g.json",
+   "formas": 15470
+  },
+  "h": {
+   "archivo": "h.json",
+   "formas": 7566
+  },
+  "i": {
+   "archivo": "i.json",
+   "formas": 6612
+  },
+  "j": {
+   "archivo": "j.json",
+   "formas": 9903
+  },
+  "k": {
+   "archivo": "k.json",
+   "formas": 44585
+  },
+  "l": {
+   "archivo": "l.json",
+   "formas": 8779
+  },
+  "m": {
+   "archivo": "m.json",
+   "formas": 30413
+  },
+  "n": {
+   "archivo": "n.json",
+   "formas": 33601
+  },
+  "o": {
+   "archivo": "o.json",
+   "formas": 5691
+  },
+  "p": {
+   "archivo": "p.json",
+   "formas": 87064
+  },
+  "r": {
+   "archivo": "r.json",
+   "formas": 11975
+  },
+  "s": {
+   "archivo": "s.json",
+   "formas": 91388
+  },
+  "t": {
+   "archivo": "t.json",
+   "formas": 24926
+  },
+  "u": {
+   "archivo": "u.json",
+   "formas": 28277
+  },
+  "v": {
+   "archivo": "v.json",
+   "formas": 50478
+  },
+  "y": {
+   "archivo": "y.json",
+   "formas": 9405
+  },
+  "ñ": {
+   "archivo": "ny.json",
+   "formas": 2397
+  },
+  "ā": {
+   "archivo": "aa.json",
+   "formas": 20764
+  },
+  "ī": {
+   "archivo": "ii.json",
+   "formas": 224
+  },
+  "ū": {
+   "archivo": "uu.json",
+   "formas": 546
+  },
+  "ḍ": {
+   "archivo": "dd.json",
+   "formas": 237
+  },
+  "ḷ": {
+   "archivo": "ll.json",
+   "formas": 7
+  },
+  "ṅ": {
+   "archivo": "ng.json",
+   "formas": 9
+  },
+  "ṇ": {
+   "archivo": "nn.json",
+   "formas": 42
+  },
+  "ṭ": {
+   "archivo": "tt.json",
+   "formas": 1995
+  }
+ }
+}

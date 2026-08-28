@@ -27,7 +27,8 @@ const NASALES = "ṅñṇnm";
 const MARCAS = "’'-";
 
 // El estado que en Python vive en `_cache`. Se llena con `iniciar()`.
-const _cache = { lexico: null, nipata: new Set(), lexicoBanco: new Set() };
+const _cache = { lexico: null, nipata: new Set(), lexicoBanco: new Set(),
+                 banco: new Map(), canon: new Set(), huella: null };
 
 function partirComponentes(t) {
     t = (t || "").trim();
@@ -44,17 +45,50 @@ function partirComponentes(t) {
 // —`putha`, `vipali`, `ani`, `chayo`…—. Ese añadido hace circular la medida
 // del banco, y así está dicho en el informe; el número que vale es el del
 // corpus, que estas voces no tocan.
-function iniciar({ formasCanon, reglas, tablas, listas }) {
-    _cache.lexico = new Set();
-    for (const f of formasCanon) _cache.lexico.add(cotejo(f));
+function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella }) {
+    // El léxico base: o una lista de formas crudas (`formasCanon`, se cotejan
+    // acá), o un objeto con `.has()` sobre formas YA cotejadas — el léxico
+    // fragmentado con carga bajo demanda de la etapa 2.
+    let base;
+    if (formasCanon) {
+        base = new Set();
+        for (const f of formasCanon) base.add(cotejo(f));
+    } else {
+        base = lexico;
+    }
 
-    // El banco, sólo para extraer las voces atestiguadas como componente.
-    const entradas = [];
-    for (const c of reglas.ce) entradas.push(c.comp || "");
+    // El índice del banco: cotejo(f) → [{dato, archivo, clave}], en el orden
+    // del Python — primero reglas.json, después las Tablas.
+    _cache.banco = new Map();
+    const meter = (f, entrada) => {
+        const k = cotejo(f);
+        if (!_cache.banco.has(k)) _cache.banco.set(k, []);
+        _cache.banco.get(k).push(entrada);
+    };
+    reglas.ce.forEach((c, i) => meter(c.f, {
+        dato: c, archivo: "recursos/sandhi/reglas.json",
+        clave: `ce[${i}]` }));
     if (tablas) {
-        for (const fila of tablas.filas)
-            for (const s of (fila.secuencias || []))
-                entradas.push(s.forma_inicial || "");
+        tablas.filas.forEach((fila, i) => {
+            (fila.secuencias || []).forEach((s, j) => {
+                const f = s.em || s.forma_inicial;
+                if (f) meter(f, {
+                    dato: s,
+                    archivo: "recursos/sandhi/tablas-nandisena-secuencias.json",
+                    clave: `filas[${i}].secuencias[${j}]` });
+            });
+        });
+    }
+
+    // El segundo léxico: las voces que el propio banco atestigua como
+    // componente y el corpus no trae. Hace circular la medida del banco (así
+    // está dicho en el informe); el número que vale es el del corpus.
+    const entradas = [];
+    for (const lista of _cache.banco.values()) {
+        for (const { dato } of lista) {
+            entradas.push("s" in dato ? (dato.comp || "")
+                                      : (dato.forma_inicial || ""));
+        }
     }
     const extra = new Set();
     for (const comp of entradas) {
@@ -67,10 +101,15 @@ function iniciar({ formasCanon, reglas, tablas, listas }) {
         }
     }
     _cache.lexicoBanco = new Set(
-        [...extra].filter(q => !_cache.lexico.has(q)));
-    for (const q of _cache.lexicoBanco) _cache.lexico.add(q);
+        [...extra].filter(q => !base.has(q)));
+    const lb = _cache.lexicoBanco;
+    _cache.lexico = { has: q => base.has(q) || lb.has(q) };
 
+    // La capa `--canon` del modo DPD queda apagada y vacía: este porte es
+    // solo-canon por decisión del Venerable (2026-08-28).
+    _cache.canon = new Set();
     _cache.nipata = new Set((listas ? listas.nipata : []).map(cotejo));
+    _cache.huella = huella === undefined ? null : huella;
 }
 
 function esPalabra(t) { return _cache.lexico.has(cotejo(t)); }
@@ -322,7 +361,7 @@ function proponer(F, unaVoz = true, compuestos = false) {
         for (const a of A) {
             for (const b of B) {
                 for (const n of ORDEN) {
-                    const k = a + " " + b + " " + String(n)
+                    const k = a + "\u0000" + b + "\u0000" + String(n)
                         + typeof n;
                     if (vistas.has(k)) continue;
                     vistas.add(k);
@@ -404,7 +443,7 @@ function proponerEnMarca(voz) {
     for (const a of A) {
         for (const b of B) {
             for (const n of ORDEN) {
-                const k = a + " " + b + " " + String(n) + typeof n;
+                const k = a + "\u0000" + b + "\u0000" + String(n) + typeof n;
                 if (vistas.has(k)) continue;
                 vistas.add(k);
                 const pasos = forward(n, a, b, F);
@@ -440,9 +479,305 @@ function yuxtaposicion(F) {
     return out;
 }
 
+// ── Resolver: el porte de `solucionar()` ────────────────────────────────
+
+// Pakati es la ausencia de operación: no hay corte que buscar.
+const PAKATI = new Set([23, 24, 30]);
+const N_OP = ORDEN.filter(n => typeof n === "number").length;
+
+function nombreLexico() {
+    // El porte es solo-canon: el DPD no interviene y no se nombra.
+    return "del canon (Sexto Concilio)";
+}
+
+function huellaBanco() {
+    // En Python se calcula acá, leyendo el archivo. El motor JS no lee
+    // archivos: la huella la calcula quien carga (el arnés en Node, el
+    // cargador en el navegador) y la pasa por `iniciar()`.
+    return _cache.huella;
+}
+
+function juntarIguales(lecturas) {
+    // Dos fuentes pueden traer la misma lectura: se muestra una vez, con las
+    // dos procedencias. La clave incluye la cadena, no sólo los componentes
+    // —si difieren en un paso o un aforismo son DOS lecturas y salen las
+    // dos—. El paso «(EM)» no distingue: es la edición moderna, no un
+    // aforismo. Los espacios tampoco.
+    const fusion = new Map();
+    for (const x of lecturas) {
+        const pasosClave = x.pasos.map(
+            p => p.split(/\s+/u).filter(t => t).join(" "));
+        while (pasosClave.length
+               && pasosClave[pasosClave.length - 1].trimEnd().endsWith("(EM)"))
+            pasosClave.pop();
+        const k = cotejo(x.componentes.join(""))
+            + "\u0000" + pasosClave.join("\u0000");
+        if (fusion.has(k)) {
+            const y = fusion.get(k);
+            if (x.origen) {
+                if (!y.tambien_en) y.tambien_en = [];
+                y.tambien_en.push(x.origen);
+            }
+            if (x.procedencia === "firmada") y.procedencia = "firmada";
+        } else {
+            fusion.set(k, x);
+        }
+    }
+    return [...fusion.values()];
+}
+
+function compuestoAparente(c) {
+    // La forma se parte, sin operación, en dos voces del léxico de las que
+    // la segunda NO es una partícula: un compuesto junta dos nombres.
+    const nip = _cache.nipata;
+    for (const [, b] of yuxtaposicion(c)) {
+        const cb = cotejo(b);
+        if (!nip.has(cb) && cb.length >= 3) return true;
+    }
+    return false;
+}
+
+function senal(voz) {
+    // ¿Hay motivo para SOSPECHAR sandhi en esta voz, antes de proponer nada?
+    // Dos señales, las dos medidas. (La del DPD calla en solo-canon.)
+    const c = cotejo(voz);
+    if (descomposicion(voz).length)
+        return ["segura",
+                "el DPD publica su propia descomposición de esta voz"];
+    if (c.endsWith("ti") && c.length > 3 && "āīū".includes(c[c.length - 3]))
+        return ["segura", "cola de «iti»: vocal larga antes de «ti»"];
+    if (!esPalabra(voz) && !compuestoAparente(c))
+        return ["segura", "la voz no está en el léxico " + nombreLexico()
+                + ", y tampoco se parte en dos voces del léxico sin operación"];
+    return [null, ""];
+}
+
+function paresDelLexico(F) {
+    // Los cortes que parten la voz en dos voces que el léxico reconoce.
+    // Filtra exactamente igual que `proponer()`, y por la misma razón.
+    const lex = _cache.lexico;
+    const out = [];
+    for (let i = 1; i < F.length; i++) {
+        const A = [...vecinosA(F.slice(0, i))]
+            .filter(x => lex.has(cotejo(x)) && !esDesinencia(x));
+        if (!A.length) continue;
+        for (const b of [...vecinosB(F.slice(i))]
+            .filter(x => lex.has(cotejo(x)) && !soloVocal(x)
+                && !esDesinencia(x))) {
+            for (const a of A) out.push([a, b]);
+        }
+    }
+    return out;
+}
+
+function porQueNo(voz, k) {
+    // Por qué no se resolvió, dicho en el orden en que sirve. No se propone
+    // una corrección de lo escrito: se informa qué se comprobó.
+    const entera = esPalabra(voz);
+    const pares = paresDelLexico(k);
+    const d = {
+        la_voz_esta_en_el_lexico: entera,
+        cortes_en_dos_voces_del_lexico: pares.length,
+        ejemplos_de_corte: pares.slice(0, 6).map(p => p.join(" + ")),
+        aforismos_probados: ORDEN.filter(n => typeof n === "number"),
+    };
+    if (!entera && !pares.length)
+        return ["la voz NO está en el léxico " + nombreLexico()
+            + ", y ningún corte la parte en dos voces que el léxico "
+            + "reconozca. O la forma está mal escrita, o alguna de sus "
+            + "piezas falta en el léxico.", d];
+    if (!entera)
+        return ["la voz NO está en el léxico " + nombreLexico()
+            + `. Hay ${pares.length} corte(s) en dos voces reales, pero `
+            + `ninguna de las ${N_OP} operaciones enunciadas los lleva a `
+            + "esta forma. Conviene revisar cómo está escrita antes de "
+            + "buscarle una regla.", d];
+    if (!pares.length)
+        return ["la voz está en el léxico como palabra entera, pero ningún "
+            + "corte la parte en dos voces que el léxico reconozca.", d];
+    return [`hay ${pares.length} corte(s) en dos voces del léxico, pero `
+        + `ninguna de las ${N_OP} operaciones enunciadas los lleva a esta `
+        + "forma. Puede que la operación no esté enunciada en el capítulo 1, "
+        + "o que el análisis necesite más de dos piezas.", d];
+}
+
+function solucionar(voz) {
+    const k = cotejo(voz);
+    const r = { escrita: voz, cotejo: k, estado: null, motivo: null,
+                lecturas: [], banco: huellaBanco() };
+    const fichas = voz.trim().split(/\s+/u).filter(t => t);
+    if (fichas.length === 1) {
+        const [s, m] = senal(voz);
+        r.senal = s; r.senal_motivo = m;
+    } else {
+        r.senal = null; r.senal_motivo = "";
+    }
+
+    if (_cache.banco.has(k)) {
+        for (const { dato, archivo, clave } of _cache.banco.get(k)) {
+            let pasos, comp, primerPasoDe, proc, ref, sinOp;
+            if ("s" in dato) {                                // reglas.json
+                pasos = dato.s.slice();
+                comp = partirComponentes(dato.comp || "");
+                primerPasoDe = null;
+                // La etiqueta tiene que ser cierta: «firmada» sólo con la
+                // marca `verificada` del banco.
+                proc = dato.verificada ? "firmada"
+                                       : "del banco, sin comprobar";
+                ref = dato.ref !== undefined ? dato.ref : null;
+                sinOp = Boolean(dato.sin_cambio) || dato.sec === "pakati";
+            } else {                                          // las Tablas
+                pasos = (dato.pasos || []).map(p =>
+                    p.texto + (p.citas && p.citas.length
+                        ? "  (" + p.citas.join(", ") + ")" : ""));
+                const inicial = dato.forma_inicial || "";
+                // La forma de partida es el primer paso; las Tablas la
+                // guardan aparte y arrancan en §10. Sin unificar, la misma
+                // cadena salía dos veces.
+                if (inicial && (!pasos.length
+                    || pasos[0].trimEnd().endsWith(")")))
+                    pasos = [inicial].concat(pasos);
+                comp = partirComponentes(inicial);
+                const p0 = (dato.pasos && dato.pasos.length
+                    ? dato.pasos : [{}])[0];
+                primerPasoDe = p0.forma_de_partida !== undefined
+                    ? p0.forma_de_partida : null;
+                proc = "firmada";
+                ref = dato.referencia !== undefined ? dato.referencia : null;
+                sinOp = !(dato.suttas_que_operan
+                          && dato.suttas_que_operan.length);
+            }
+            // «Sin operación» sólo si ninguna opera: si la cadena cita un
+            // aforismo que no es pakati ni andamiaje (§10, §11), opera.
+            const citados = new Set();
+            for (const m of pasos.join(" ").matchAll(/§\s*(\d+)/gu))
+                citados.add(parseInt(m[1], 10));
+            for (const excl of [...PAKATI, 10, 11]) citados.delete(excl);
+            if (citados.size) sinOp = false;
+            const ultimo = pasos.length
+                ? sinAnotacion(pasos[pasos.length - 1]) : "";
+            let recompone = Boolean(ultimo) && cotejo(ultimo) === k;
+            if (recompone && proc === "del banco, sin comprobar")
+                proc = "del banco, último paso comprobado";
+            r.lecturas.push({
+                componentes: comp, pasos,
+                reconstruida: pasos.length ? pasos[pasos.length - 1] : voz,
+                recompone, procedencia: proc,
+                origen: { archivo, clave }, referencia: ref,
+                sin_operacion: sinOp, primer_paso_de: primerPasoDe,
+            });
+        }
+        r.lecturas = juntarIguales(r.lecturas);
+
+        // Las filas de las Tablas que quedaron mal partidas: al paso pegado
+        // le falta `forma_de_partida`, y una fila pakati legítima tiene un
+        // solo paso — se exige más de uno.
+        for (const x of r.lecturas) {
+            if (!(((x.origen && x.origen.archivo) || "").includes("tablas")))
+                continue;
+            if (x.pasos.length > 1 && !x.primer_paso_de)
+                x.fila_mal_partida = true;
+        }
+        r.banco_mal_partido = r.lecturas
+            .filter(x => x.fila_mal_partida)
+            .map(x => ({ componentes: x.componentes, pasos: x.pasos,
+                         origen: x.origen }));
+        r.lecturas = r.lecturas.filter(x => !x.fila_mal_partida);
+
+        // Lo que no recompone no se publica; se anota aparte para que el
+        // defecto del banco se vea en vez de taparse.
+        r.banco_no_recompone = r.lecturas
+            .filter(x => !x.recompone)
+            .map(x => ({ componentes: x.componentes, pasos: x.pasos,
+                         origen: x.origen }));
+        r.lecturas = r.lecturas.filter(x => x.recompone);
+
+        // Y lo que el motor encuentra además no se esconde: la firmada va
+        // primera, con su procedencia; las demás detrás.
+        const firmadas = r.lecturas.length;
+        r.lecturas = juntarIguales(r.lecturas.concat(proponer(k)));
+        r.lecturas.sort((x, y) => (x.origen ? 0 : 1) - (y.origen ? 0 : 1));
+        r.del_banco = firmadas;
+
+        if (!r.lecturas.length) {
+            r.estado = "no_resuelto";
+            r.motivo = "el banco trae esta forma pero su cadena no la "
+                + "reproduce, y el motor no propone otra";
+        } else if (r.lecturas.every(x => x.sin_operacion)) {
+            r.estado = "sin_sandhi_por_regla";
+        } else if (r.lecturas.length === 1
+                   && r.lecturas[0].procedencia === "firmada") {
+            r.estado = "firmada";
+        } else {
+            r.estado = "candidatos";
+        }
+        return r;
+    }
+
+    if (fichas.length > 1) {
+        r.lecturas = proponerEnFrase(
+            voz.replace(/’/g, "'").replace(/'/g, ""));
+    } else {
+        // La capa `--canon` del modo DPD no existe en este porte: es
+        // solo-canon y `_cache.canon` queda vacío a propósito.
+        const marcadas = [...MARCAS].some(m => voz.includes(m))
+            ? proponerEnMarca(voz) : [];
+        if (marcadas.length && "yuxtaposicion_declarada" in marcadas[0]) {
+            r.estado = "fuera_del_alcance";
+            r.entera = esPalabra(voz);
+            const [a, b] = marcadas[0].yuxtaposicion_declarada;
+            r.motivo = "la marca de la edición separa dos voces del léxico "
+                + `sin ninguna operación —${a} + ${b}—: es un compuesto, `
+                + "y los compuestos están fuera del encargo.";
+            return r;
+        }
+        r.lecturas = marcadas.length ? marcadas : proponer(k);
+        if (!r.lecturas.length) {
+            // Segunda pasada, sólo si la primera no dijo nada: la voz
+            // anterior puede ser un compuesto que el léxico no lista.
+            r.lecturas = proponer(k, true, true);
+        }
+    }
+    r.entera = esPalabra(voz);
+    if (r.lecturas.length) {
+        // «Resuelto» pide un segundo testigo: una sola lectura sin origen
+        // ni testigo no es una resolución, es que no se encontró más.
+        const una = r.lecturas.length === 1 ? r.lecturas[0] : null;
+        r.estado = (una && (una.origen || una.dpd)) ? "resuelto"
+                                                    : "candidatos";
+        return r;
+    }
+
+    // Sin lecturas: los tres silencios, y no se dicen igual.
+    const yux = fichas.length === 1 ? yuxtaposicion(k) : [];
+    if (r.entera) {
+        r.estado = "sin_sandhi";
+        r.motivo = "la voz está entera en el léxico y ninguna de las "
+            + `${N_OP} operaciones enunciadas encuentra un corte que la `
+            + "explique: no hay nada que separar.";
+        return r;
+    }
+    if (yux.length) {
+        r.estado = "fuera_del_alcance";
+        r.motivo = "la forma se parte en dos voces **sin ninguna operación** "
+            + `—${yux[0].join(" + ")}—: es un compuesto, y los compuestos `
+            + "están fuera del encargo.";
+        r.diagnostico = {
+            yuxtaposiciones: yux.slice(0, 6).map(x => x.join(" + ")) };
+        return r;
+    }
+    r.estado = "no_resuelto";
+    const [motivo, diagnostico] = porQueNo(voz, k);
+    r.motivo = motivo;
+    r.diagnostico = diagnostico;
+    return r;
+}
+
 module.exports = {
     iniciar, cotejo, esPalabra, partirComponentes,
     proponer, proponerEnFrase, proponerEnMarca, yuxtaposicion,
     compuestoDelLexico, forward, ORDEN,
+    solucionar, juntarIguales, senal, paresDelLexico, porQueNo,
+    PAKATI,
     _cache,
 };
