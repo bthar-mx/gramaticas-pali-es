@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Solucionador de sandhis · pāḷi</title>
-<meta name="version" content="1.1">
+<meta name="version" content="1.4">
 <meta name="version-date" content="2026-08-28">
 <meta name="description" content="Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces, y qué secuencia de aforismos de Kaccāyana explica cada una. Todo se verifica por recomposición.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,6 +109,8 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
 .boton:hover{filter:brightness(1.08)}
 .boton:disabled{opacity:.5;cursor:default}
 .boton:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+.boton.secundario{background:var(--ola-2);color:var(--soot);border:1px solid var(--hair)}
+.boton.secundario:hover{filter:none;color:var(--ink);border-color:var(--soot)}
 .icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
   color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
 .icon-btn:hover{color:var(--ink);border-color:var(--soot)}
@@ -212,10 +214,15 @@ footer a{color:var(--nila)}
       referencia, el motor reencuentra el análisis firmado en 221 (88 %). Cotejado
       con una partición independiente de la Therīgāthā y su comentario, el punto de
       corte coincide en el 90,7 % de los versos y el 92,5 % de la prosa. La señal
-      que marca voces en un pasaje es deliberadamente prudente: lo marcado como
-      <em>seguro</em> acierta 9 de cada 10 veces, lo marcado como <em>posible</em> avisa que
-      conviene mirar; entre ambos se señalan hoy entre el 46 % y el 56 % de los
-      sandhis presentes. <strong>Lo que no se marca no se pierde: se calla</strong> — pegue la
+      que marca voces en un pasaje es deliberadamente prudente: entre lo <em>seguro</em>
+      y lo <em>posible</em> se señalan hoy el 47 % de los sandhis presentes en el verso y
+      el 57 % en la prosa (medido de nuevo el 28-08-2026, con los patrones
+      adjudicados activos). Lo marcado como <em>seguro</em> acierta una juntura real en
+      8 de cada 10 casos en la prosa; en el verso baja a 6 de cada 10 por un
+      defecto conocido del patrón de «iti» —afirmaba verbos corrientes (hoti,
+      pajānāti) porque una base residual resultaba la única atestiguada—, medido,
+      declarado aquí, y a la espera de la regla adjudicada que lo corrija.
+      <strong>Lo que no se marca no se pierde: se calla</strong> — pegue la
       voz sola y el motor la analiza con todas sus lecturas. Cada fallo que se
       reporte se convierte en caso de prueba permanente.</p>
       <p><strong>El diccionario, de testigo; nunca de autoridad.</strong> El Digital Pāḷi
@@ -234,6 +241,7 @@ footer a{color:var(--nila)}
     <textarea id="texto" placeholder="p. ej. — Evaṃ me sutaṃ… o una voz sola: lokaggo, yassindriyāni, tathūpamaṃ"></textarea>
     <div class="acciones">
       <button class="boton" id="analizar">Analizar</button>
+      <button class="boton secundario" id="limpiar">Limpiar</button>
       <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
       <span class="estado" id="estado"></span>
     </div>
@@ -553,9 +561,11 @@ async function analizar(){
       html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
     }
     html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
-      entre el 46 % y el 56 % de los sandhis presentes, y lo marcado como <em>seguro</em>
-      acierta 9 de cada 10 veces. Lo que calla no se pierde: pegue una voz sola y el
-      motor la analiza con todas sus lecturas.</p>`;
+      el 47 % de los sandhis presentes en el verso y el 57 % en la prosa, y lo marcado
+      como <em>seguro</em> acierta una juntura real en 8 de cada 10 casos de prosa (6 de
+      cada 10 en verso — defecto conocido del patrón de «iti», declarado y en espera
+      de regla). Lo que calla no se pierde: pegue una voz sola y el motor la analiza
+      con todas sus lecturas.</p>`;
   }
   out.innerHTML = html;
   $('estado').textContent = '';
@@ -566,13 +576,23 @@ async function analizar(){
   }
 }
 $('analizar').addEventListener('click', analizar);
+/* Limpiar (pedido de Angel, 2026-08-28): vacía el pasaje y el resultado. */
+$('limpiar').addEventListener('click', () => {
+  $('texto').value = '';
+  $('out').innerHTML = '';
+  $('estado').textContent = '';
+  $('texto').focus();
+});
 $('texto').addEventListener('keydown', e => {
   if(e.key === 'Enter' && (e.ctrlKey || e.metaKey)){ e.preventDefault(); analizar(); }
 });
 
 /* ---------- portada: una secuencia, revelada ---------- */
 (function(){
-  const steps = ['loka aggo','lok a aggo (§10)','lok aggo (§12)','lokaggo (§11)'];
+  /* El mismo ejemplo de portada que /recursos/sandhi/ (pedido de Angel,
+     2026-08-28): la escalera de yassindriyāni, con su forma EM. */
+  const steps = ['yassa indriyāni','yass a indriyāni (§10)','yass indriyāni (§12)',
+                 'yassindriyāni (§11)','yass’ indriyāni (EM)'];
   const el = document.getElementById('hero');
   el.innerHTML = ladder(steps,false).replace(/^<div class="lad">/,'').replace(/<\/div>$/,'');
   const rows = el.querySelectorAll(':scope > div');

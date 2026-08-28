@@ -67,6 +67,26 @@
    "grado": "habitual",
    "fuente": "Angel, 2026-08-28 · DN 2",
    "nota": "Adjudicación HABITUAL, no exclusiva — en palabras de Angel: «ceva could be ca eva or ce eva or ci eva and so on; most of the time is ca eva», y decidir un pasaje concreto pediría leer los Comentarios. Se afirma la lectura habitual y las demás quedan a la vista, plegadas. Distinto del grado exclusivo de hotīti («es sólo hoti + iti»)."
+  },
+  {
+   "forma": "pajānāti",
+   "sandhi": false,
+   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
+   "nota": "En palabras de Angel: «pajānāti is a verb of fifth group kiyādi-gaṇa, not sandhi». Voz entera. El patrón de «iti» la afirmaba como pajāna + iti porque «pajāna» (1 aparición en el canon) resultaba la única base atestiguada — la unicidad concedida por una base residual. El caso apaga la señal; el defecto general del patrón queda medido y espera regla firmada."
+  },
+  {
+   "forma": "vedanānañca",
+   "sandhi": true,
+   "componentes": "vedanānaṃ + ca",
+   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
+   "nota": "Sandhi de niggahīta (§31): la ṃ se asimila en ñ ante c. El motor ya producía esta lectura primera con señal «posible», pero sin autoridad no la afirmaba y declaraba «no sabe» entre 20 lecturas. En palabras de Angel: «this is niggahita sandhi, sandhi 101». La familia entera (…ñca ← …ṃ + ca) es candidata a patrón; ver el informe de familias."
+  },
+  {
+   "forma": "maggañca",
+   "sandhi": true,
+   "componentes": "maggaṃ + ca",
+   "fuente": "Angel, 2026-08-28 · verso «Samāhito sampajāno» (Vedanā)",
+   "nota": "Mismo sandhi de niggahīta (§31) que vedanānañca: maggaṃ + ca. Primera lectura del motor, señal «posible», sin afirmación por falta de autoridad. El caso la afirma; la regla general de la familia espera firma."
   }
  ]
 }

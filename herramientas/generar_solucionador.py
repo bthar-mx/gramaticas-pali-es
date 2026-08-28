@@ -47,9 +47,17 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.3"
+VERSION = "1.4"
 FECHA = "2026-08-28"
-NOTA = ("La regla de la clase vocálica, adjudicada por Angel: «hotīti es "
+NOTA = ("Tres casos adjudicados por Angel sobre el verso «Samāhito "
+        "sampajāno» (Vedanā): pajānāti NO es sandhi (verbo, kiyādi-gaṇa) — "
+        "el patrón de «iti» lo afirmaba por una base residual de 1 "
+        "aparición, defecto medido que espera regla firmada—; vedanānañca "
+        "= vedanānaṃ + ca y maggañca = maggaṃ + ca (sandhi de niggahīta, "
+        "§31), que la señal daba como «posible» sin atreverse a afirmar. "
+        "El ejemplo de la portada es ahora el de la referencia de sandhi "
+        "(yassindriyāni) y hay botón Limpiar. Antes, en la versión 1.3: "
+        "la regla de la clase vocálica, adjudicada por Angel: «hotīti es "
         "sólo hoti + iti y hotūti es sólo hotu + iti» — la vocal que "
         "sobrevive ante «ti» conserva la clase de la vocal final de la "
         "base, y las bases de otra clase quedan excluidas de la "
