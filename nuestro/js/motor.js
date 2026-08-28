@@ -732,7 +732,9 @@ function aplicarCaso(r) {
         }
     }
     r.lecturas = delante.concat(detras);
-    if (!r.senal) {
+    // La adjudicación asciende la señal a «segura» venga de donde venga;
+    // si ya era «segura» por otra vía, el motivo original se conserva.
+    if (r.senal !== "segura") {
         r.senal = "segura";
         r.senal_motivo = "caso adjudicado: " + (caso.fuente || "");
     }

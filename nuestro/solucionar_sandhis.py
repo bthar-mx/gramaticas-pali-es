@@ -945,7 +945,10 @@ def _aplicar_caso(r):
         else:
             detras.append(l)
     r["lecturas"] = delante + detras
-    if not r.get("senal"):
+    # La adjudicación asciende la señal a «segura» venga de donde venga la
+    # señal previa («posible» por frecuencia incluido); si ya era «segura»
+    # por otra vía (banco, iti), el motivo original se conserva.
+    if r.get("senal") != "segura":
         r["senal"] = "segura"
         r["senal_motivo"] = ("caso adjudicado: " + caso.get("fuente", ""))
 
