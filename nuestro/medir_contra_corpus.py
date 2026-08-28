@@ -223,9 +223,13 @@ def main():
     ap.add_argument("--solo-canon", action="store_true", help=(
         "mide con el léxico del corpus del Sexto Concilio, sin DPD "
         "en ninguna capa (decisión del Venerable, 2026-08-28)."))
+    ap.add_argument("--dpd-filtro", action="store_true", help=(
+        "suma el DPD al FILTRO de candidatos dentro de solo-canon: testigo "
+        "silencioso, nunca análisis (decisión de Angel, 2026-08-28)."))
     a = ap.parse_args()
     S.USAR_CANON = a.canon
     S.SOLO_CANON = a.solo_canon
+    S.DPD_FILTRO = a.dpd_filtro
 
     cats = set(a.categorias.split(","))
     archivo = COMENT if a.comentario else VERSOS

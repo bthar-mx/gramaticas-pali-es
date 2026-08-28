@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Solucionador de sandhis · pāḷi</title>
-<meta name="version" content="1.0">
+<meta name="version" content="1.1">
 <meta name="version-date" content="2026-08-28">
 <meta name="description" content="Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces, y qué secuencia de aforismos de Kaccāyana explica cada una. Todo se verifica por recomposición.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -208,15 +208,21 @@ footer a{color:var(--nila)}
       Concilio (681.927 formas de 118 volúmenes); la autoridad gramatical es el
       Sandhi-Kappa de Kaccāyana.</p>
       <p><strong>Las cifras, a la vista.</strong> Sobre las 251 formas medibles del banco de
-      referencia, el motor reencuentra el análisis firmado en 218 (87 %). Cotejado
+      referencia, el motor reencuentra el análisis firmado en 221 (88 %). Cotejado
       con una partición independiente de la Therīgāthā y su comentario, el punto de
-      corte coincide en el 78,9 % de los versos y el 84,3 % de la prosa. La señal
+      corte coincide en el 90,7 % de los versos y el 92,5 % de la prosa. La señal
       que marca voces en un pasaje es deliberadamente prudente: lo marcado como
       <em>seguro</em> acierta 9 de cada 10 veces, lo marcado como <em>posible</em> avisa que
-      conviene mirar; entre ambos se señalan hoy entre el 32 % y el 46 % de los
+      conviene mirar; entre ambos se señalan hoy entre el 46 % y el 56 % de los
       sandhis presentes. <strong>Lo que no se marca no se pierde: se calla</strong> — pegue la
       voz sola y el motor la analiza con todas sus lecturas. Cada fallo que se
       reporte se convierte en caso de prueba permanente.</p>
+      <p><strong>El diccionario, de testigo; nunca de autoridad.</strong> El Digital Pāḷi
+      Dictionary actúa como testigo silencioso de ocurrencia: amplía el filtro de
+      cortes admisibles, ordena candidatos y aviva la señal cuando una voz escrita
+      no figura en él. No decide ningún análisis: toda lectura se verifica
+      recomponiéndola con los aforismos de Kaccāyana, y la autoridad sigue siendo
+      el Sandhi-Kappa, el banco firmado y las adjudicaciones con fuente.</p>
     </details>
   </div>
 </header>
@@ -244,6 +250,10 @@ footer a{color:var(--nila)}
   cambia en cada paso. Cada §N enlaza al aforismo en el
   <a href="../../kaccayana/sandhi/">Sandhi-Kappa</a>; la referencia completa de
   reglas y formas está en <a href="../sandhi/">Sandhi — referencia interactiva</a>.</p>
+  <p><strong>El Digital Pāḷi Dictionary</strong> (DPD, licencia CC BY-NC-SA) se usa como
+  testigo silencioso de ocurrencia — filtro y ordenación de candidatos y señal de
+  detección—, nunca como autoridad ni fuente del análisis mostrado. Donde su
+  influencia se ve, se nombra.</p>
   <p><strong>Fuentes.</strong> Las secuencias firmadas proceden de las <em>Reglas de combinación
   eufónica</em> de Bhikkhu Nandisena y de su traducción del Sandhi-Kappa, con su
   referencia canónica. Las lecturas propuestas por el motor se construyen con los
@@ -294,8 +304,13 @@ function crearLexico(base){
       await Promise.all([...letras]
         .filter(l => indice.fragmentos[l] && !cargados.has(l))
         .map(async l => {
-          cargados.set(l, new Map(
-            await __fetchJson(base + indice.fragmentos[l].archivo)));
+          // Cada entrada es [forma, cuenta] o [forma, cuenta, 1]: la cuenta
+          // (canon) arbitra la frecuencia; el 1 dice que figura en el DPD,
+          // el testigo silencioso. El léxico es la unión canon ∪ DPD.
+          const m = new Map();
+          for(const e of await __fetchJson(base + indice.fragmentos[l].archivo))
+            m.set(e[0], [e[1] || 0, e[2] || 0]);
+          cargados.set(l, m);
         }));
     },
     has(q){
@@ -308,8 +323,15 @@ function crearLexico(base){
     },
     frecuencia(q){
       const m = q && cargados.get(q[0]);
-      return (m && m.get(q)) || 0;
+      const e = m && m.get(q);
+      return e ? e[0] : 0;
     },
+    enDpd(q){
+      const m = q && cargados.get(q[0]);
+      const e = m && m.get(q);
+      return e ? e[1] === 1 : false;
+    },
+    get conDpd(){ return Boolean(indice && indice.con_dpd); },
     get faltantes(){ return faltantes; },
   };
 }
@@ -525,7 +547,7 @@ async function analizar(){
       html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
     }
     html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
-      entre el 32 % y el 46 % de los sandhis presentes, y lo marcado como <em>seguro</em>
+      entre el 46 % y el 56 % de los sandhis presentes, y lo marcado como <em>seguro</em>
       acierta 9 de cada 10 veces. Lo que calla no se pierde: pegue una voz sola y el
       motor la analiza con todas sus lecturas.</p>`;
   }

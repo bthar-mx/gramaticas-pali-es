@@ -23,7 +23,12 @@ import solucionar_sandhis as S                                     # noqa: E402
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dpd-filtro", action="store_true")
+    a = ap.parse_args()
     S.SOLO_CANON = True
+    S.DPD_FILTRO = a.dpd_filtro
     d = json.load(open(S.REGLAS, encoding="utf-8"))
     filas = []
     for c in d["ce"]:

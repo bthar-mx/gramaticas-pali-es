@@ -145,11 +145,21 @@ def medir(archivo, limite=None):
                 return True
         return False
 
+    dic = S.cargar().get("dpd") or set()
+
+    def compuesto_dpd(c):
+        for i in range(2, len(c) - 1):
+            if c[:i] in dic and c[i:] in dic:
+                return True
+        return False
+
     def senales(w):
         voz = w["forma"]
         c = cotejo(voz)
         fuera = not S.es_palabra(voz)
         comp_ap = S._compuesto_aparente(c)
+        fuera_dpd = bool(dic) and c not in dic
+        fdpd_nc = fuera_dpd and not compuesto_dpd(c)
         iti = c.endswith("ti") and len(c) > 3 and c[-3] in "āīū"
         g = grupo_inicial(c)
         r1 = ratio_explica(voz, 1)
@@ -186,6 +196,10 @@ def medir(archivo, limite=None):
             # 2026-08-28): la segunda voz es un verbo, no un nipāta, y la
             # variante nipāta-sola lo calla. ¿Qué cuesta admitir también la
             # sustantiva de 10× y de 100× sin nipāta?
+            ("no está en el DPD (testigo)", fuera_dpd),
+            ("no está en el DPD, ni se parte en dos voces DPD", fdpd_nc),
+            ("BASE, o fuera-DPD-no-compuesto", base or fdpd_nc),
+            ("BASE, o fuera-DPD-nc, o rns1", base or fdpd_nc or rns1),
             ("BASE, o rns1, o sustantiva 10×", base or rns1 or rs10),
             ("BASE, o rns1, o sustantiva 100×",
              base or rns1 or (rs10 and ratio_explica(voz, 100,
@@ -199,10 +213,32 @@ def medir(archivo, limite=None):
              resultado_de(voz).get("senal") in ("segura", "posible")),
         ])
 
+    # ── caché reanudable ────────────────────────────────────────────────
+    # Con el DPD de testigo el léxico crece y la pasada del comentario
+    # supera el tope de tiempo del sandbox: los booleanos de señal por forma
+    # única se guardan y la corrida siguiente retoma donde quedó. La caché
+    # es de cómputo, no de datos: borrarla sólo cuesta tiempo.
+    cache_path = os.environ.get("DETECCION_CACHE")
+    cache = {}
+    if cache_path and os.path.exists(cache_path):
+        cache = json.load(open(cache_path, encoding="utf-8"))
+    nuevos = 0
+
+    def senales_con_cache(w):
+        nonlocal nuevos
+        voz = w["forma"]
+        if voz not in cache:
+            cache[voz] = senales(w)
+            nuevos += 1
+            if cache_path and nuevos % 300 == 0:
+                json.dump(cache, open(cache_path, "w", encoding="utf-8"),
+                          ensure_ascii=False)
+        return cache[voz]
+
     reales = sum(1 for w in P if en_alcance(w))
     cuenta = collections.OrderedDict()
     for w in P:
-        for k, v in senales(w).items():
+        for k, v in senales_con_cache(w).items():
             cu = cuenta.setdefault(k, collections.Counter())
             if not v:
                 continue
@@ -234,6 +270,9 @@ def medir(archivo, limite=None):
     print("  «marca»: cuántas de cada cien palabras se señalan. «sandhi/otra/")
     print("  nada» reparten lo marcado. «recall»: de los sandhis del encargo,")
     print("  cuántos se marcan. Lo que no se marca no se pierde: se calla.")
+    if cache_path:
+        json.dump(cache, open(cache_path, "w", encoding="utf-8"),
+                  ensure_ascii=False)
     return cuenta
 
 
@@ -241,8 +280,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--comentario", action="store_true")
     ap.add_argument("--limite", type=int)
+    ap.add_argument("--dpd-filtro", action="store_true")
     a = ap.parse_args()
     S.SOLO_CANON = True
+    S.DPD_FILTRO = a.dpd_filtro
     medir(M.COMENT if a.comentario else M.VERSOS, a.limite)
     return 0
 

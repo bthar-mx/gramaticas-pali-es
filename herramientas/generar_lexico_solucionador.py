@@ -54,23 +54,41 @@ def nombre(letra):
 
 def main():
     d = json.load(open(CORPUS, encoding="utf-8"))
-    # Cada fragmento lleva [forma, cuenta]: la cuenta agregada por forma de
-    # cotejo es el árbitro de la señal «posible» (etapa 3) y viaja con el
-    # léxico para no pedir un segundo archivo.
+    # Cada fragmento lleva [forma, cuenta] y, desde el testigo del DPD
+    # (decisión de Angel, 2026-08-28), un tercer campo `1` cuando la forma
+    # figura en el diccionario. El léxico publicado es la UNIÓN canon ∪ DPD:
+    # el DPD amplía el filtro de candidatos y da la señal de «no figura en
+    # el diccionario»; la cuenta (canon) sigue arbitrando la señal de
+    # frecuencia. Nada de esto es análisis: la autoridad no cambia.
     frec = {}
     for f, n in d.get("formas", {}).items():
         q = cotejo(f)
         if q:
             frec[q] = frec.get(q, 0) + n
-    formas = sorted(frec)
+    dpd = set()
+    dpd_txt = os.path.join(RAIZ, "recursos", "lexico", "dpd-formas.txt")
+    if os.path.exists(dpd_txt):
+        dpd = {cotejo(x) for x in
+               open(dpd_txt, encoding="utf-8").read().split("\n") if x}
+        dpd.discard("")
+    formas = sorted(set(frec) | dpd)
 
     grupos = {}
     for f in formas:
-        grupos.setdefault(f[0], []).append([f, frec[f]])
+        e = [f, frec.get(f, 0)]
+        if f in dpd:
+            e.append(1)
+        grupos.setdefault(f[0], []).append(e)
 
     os.makedirs(DESTINO, exist_ok=True)
-    indice = {"origen": "recursos/corpus/corpus-formas.json",
-              "total": len(formas), "fragmentos": {}}
+    indice = {"origen": "recursos/corpus/corpus-formas.json"
+                        + (" + recursos/lexico/dpd-formas.txt" if dpd else ""),
+              "total": len(formas),
+              # El cargador sólo enciende el testigo si el índice lo declara:
+              # con fragmentos viejos, «no figura en el DPD» sería verdad de
+              # todo y la señal gritaría en cada palabra.
+              "con_dpd": bool(dpd),
+              "fragmentos": {}}
     usados = {}
     for letra in sorted(grupos):
         arch = nombre(letra) + ".json"

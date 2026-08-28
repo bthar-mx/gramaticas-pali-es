@@ -47,16 +47,21 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.0"
+VERSION = "1.1"
 FECHA = "2026-08-28"
-NOTA = ("Primera versión pública del solucionador. El motor reproduce el "
-        "análisis firmado en 218 de las 251 formas medibles del banco (87 %) "
-        "y coincide con una partición independiente de la Therīgāthā en el "
-        "78,9 % de los versos y el 84,3 % de la prosa del comentario. La "
-        "señal que marca voces en un pasaje encuentra hoy entre el 32 % y el "
-        "46 % de los sandhis presentes; lo que calla sigue consultable voz "
-        "por voz. Motor JavaScript comprobado secuencia por secuencia contra "
-        "la referencia en Python.")
+NOTA = ("El Digital Pāḷi Dictionary entra como testigo silencioso de "
+        "ocurrencia (decisión de Angel, 2026-08-28): amplía el filtro de "
+        "cortes, ordena candidatos y aviva la señal, nunca decide el "
+        "análisis. Con el testigo, el motor reencuentra el análisis firmado "
+        "en 221 de las 251 formas medibles del banco (88 %) y el corte "
+        "coincide con la partición independiente en el 90,7 % de los versos "
+        "y el 92,5 % de la prosa; la señal marca entre el 46 % y el 56 % de "
+        "los sandhis presentes. La caja afirma una sola lectura por sandhi "
+        "cuando hay autoridad detrás —banco firmado o adjudicación con "
+        "fuente— y declara la ignorancia cuando no la hay. Antes, en la "
+        "versión 1.0: primera versión pública, 218/251, 78,9 % y 84,3 %, "
+        "señal del 32-46 %; motor JavaScript comprobado secuencia por "
+        "secuencia contra la referencia en Python.")
 
 PRELUDIO = """\
 /* Mini-require: los módulos de nuestro/js/ tal cual, envueltos. */

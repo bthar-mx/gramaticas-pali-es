@@ -118,6 +118,12 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella,
     // (arnés de la etapa 1) no hay cuentas y la señal «posible» calla.
     _cache.frecuencia = typeof base.frecuencia === "function"
         ? q => base.frecuencia(q) : () => 0;
+    // El testigo del DPD (decisión de Angel, 2026-08-28): sólo se enciende
+    // si el léxico lo declara (`conDpd`) — con fragmentos sin la marca,
+    // «no figura en el DPD» sería verdad de todo. Con un Set de formas
+    // (arnés de la etapa 1) queda apagado, como el Python sin --dpd-filtro.
+    _cache.esDpd = (base.conDpd && typeof base.enDpd === "function")
+        ? q => base.enDpd(q) : null;
     // Los casos adjudicados por lectores: cada fallo reportado, un caso
     // permanente con fuente y fecha (decisión del Venerable, briefing 30
     // §3.5). El motor los consulta como al banco.
@@ -404,10 +410,18 @@ function proponer(F, unaVoz = true, compuestos = false) {
     }
     const nip = _cache.nipata;
     const claveDpd = x => dpd.has(x.componentes.map(cotejo).join("+")) ? 0 : 1;
+    // Con el testigo encendido, una lectura cuyas DOS piezas figuran en el
+    // diccionario va antes que una con piezas que sólo el corpus atestigua:
+    // `na + atthi` antes que `natti + hi`. Ordenación, no análisis.
+    const dic = _cache.esDpd;
+    const claveDic = dic
+        ? (x => x.componentes.every(y => dic(cotejo(y))) ? 0 : 1)
+        : (() => 0);
     const claveNip = x =>
         nip.has(cotejo(x.componentes[x.componentes.length - 1])) ? 0 : 1;
     out.sort((x, y) =>
         (claveDpd(x) - claveDpd(y))
+        || (claveDic(x) - claveDic(y))
         || (claveNip(x) - claveNip(y))
         || cmpStr(String(x.sutta), String(y.sutta))
         || cmpLista(x.componentes, y.componentes));
@@ -687,6 +701,27 @@ function ascenderSenal(r) {
             return;
         }
     }
+    // El testigo del DPD: la voz está escrita pero no figura en el
+    // diccionario ni se parte en dos voces del diccionario sin operación —
+    // lo típico de un producto de sandhi. Números y porqués:
+    // `_ascender_senal` del Python.
+    const dic = _cache.esDpd;
+    if (dic && !dic(r.cotejo) && !compuestoDpd(r.cotejo)) {
+        r.senal = "posible";
+        r.senal_motivo = "la voz no figura en el diccionario (DPD, "
+            + "testigo de ocurrencia) ni se parte en dos "
+            + "voces del diccionario sin operación";
+    }
+}
+
+function compuestoDpd(c) {
+    // ¿Se parte en dos voces del diccionario por simple concatenación?
+    const dic = _cache.esDpd;
+    if (!dic) return false;
+    for (let i = 2; i < c.length - 1; i++) {
+        if (dic(c.slice(0, i)) && dic(c.slice(i))) return true;
+    }
+    return false;
 }
 
 function _solucionar(voz) {

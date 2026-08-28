@@ -80,12 +80,13 @@ RECURSOS = [
      "Las reglas de combinación eufónica y los 51 aforismos del Sandhi-Kappa, "
      "con la derivación paso a paso de cada forma y la concordancia entre "
      "Kaccāyana, Rūpasiddhi y Saddanīti. Buscador que ignora los diacríticos."),
-    ("solucionador/", "87 % del banco", "Solucionador de sandhis",
+    ("solucionador/", "88 % del banco", "Solucionador de sandhis",
      "Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces, y qué "
      "secuencia de aforismos de Kaccāyana explica cada una. Toda lectura se "
-     "verifica por recomposición y se muestran todas las que recomponen, con "
-     "su procedencia; el léxico es el corpus del Sexto Concilio. Publicado "
-     "con su cobertura medida a la vista."),
+     "verifica por recomposición; se afirma una sola cuando hay autoridad "
+     "detrás y se declara la duda cuando no la hay. El léxico es el corpus "
+     "del Sexto Concilio, con el DPD de testigo silencioso. Publicado con "
+     "su cobertura medida a la vista."),
     ("nombre/", "10 pasos", "Formación del nombre — pācako",
      "La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz "
      "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "

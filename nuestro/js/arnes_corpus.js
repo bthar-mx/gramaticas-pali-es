@@ -225,8 +225,7 @@ function main() {
         + `${lexico.fragmentosCargados().sort().join(" ")}`);
     const pasa = resultados.every(r => r.pasa);
     console.log(`\n  PUERTA DE LA ETAPA 2: ${pasa ? "PASA" : "NO PASA"}`
-        + "  (se exige 551/698 y 6048/7178, forma por forma idéntico"
-        + " al Python)");
+        + "  (manda la referencia del Python, forma por forma)");
     return pasa ? 0 : 1;
 }
 

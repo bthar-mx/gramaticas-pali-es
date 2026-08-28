@@ -107,6 +107,15 @@ USAR_CANON = False
 # El modo sin DPD: el léxico es el corpus del Sexto Concilio y nada más.
 # Ver el comentario en cargar(). Se enciende con `--solo-canon`.
 SOLO_CANON = False
+# El DPD como TESTIGO SILENCIOSO dentro del modo solo-canon (decisión de
+# Angel, 2026-08-28, en chat; pendiente de confirmación del Venerable, que
+# lo había apartado en la sesión 30). El papel es el que §9 de las normas
+# del OSBCT siempre permitió: probar si una cadena ocurre, filtrar y
+# ordenar candidatos — NUNCA análisis presentado al lector. La autoridad
+# sigue siendo Kaccāyana y el texto de la edición; toda lectura se verifica
+# por recomposición; donde la influencia del DPD se vea, se atribuye.
+# Se enciende con `--dpd-filtro`, junto con `--solo-canon`.
+DPD_FILTRO = False
 DESCOMP = ruta("recursos", "lexico", "dpd-descomposiciones.tsv")
 
 VOCALES = "aāiīuūeo"
@@ -161,10 +170,22 @@ def cargar():
             q = cotejo(f)
             frec[q] = frec.get(q, 0) + n
         _cache["frecuencia"] = frec
+        # El DPD como testigo silencioso (ver la nota junto a DPD_FILTRO):
+        # sus formas se suman al FILTRO de candidatos —más cortes admisibles,
+        # que la recomposición sigue verificando— y su pertenencia queda
+        # consultable para ordenar y señalar. No es autoridad: es un segundo
+        # testigo de que una cadena es una palabra posible.
+        _cache["dpd"] = set()
+        if DPD_FILTRO and os.path.exists(LEXICO):
+            _cache["dpd"] = {cotejo(x) for x in
+                             open(LEXICO, encoding="utf-8").read().split("\n")
+                             if x}
+            _cache["lexico"] |= _cache["dpd"]
     else:
         _cache["lexico"] = {cotejo(x) for x in
                             open(LEXICO, encoding="utf-8").read().split("\n") if x}
         _cache["frecuencia"] = {}
+        _cache["dpd"] = set()
     # ── El segundo léxico: las voces que el propio banco atestigua ──────
     #
     # 18 de las voces que el Venerable usa como componente en `reglas.json` no
@@ -787,8 +808,16 @@ def proponer(F, una_voz=True, compuestos=False):
             dpd.add((cotejo(d[i]), cotejo(d[i + 1])))
         dpd.add((cotejo(d[0]), cotejo("".join(d[1:]))))
     nip = c["nipata"]
+    # Con el DPD de testigo silencioso, una lectura cuyas DOS piezas figuran
+    # en el diccionario va antes que una con piezas que sólo el corpus
+    # atestigua: `na + atthi` antes que `natti + hi`. Es ordenación, no
+    # análisis: ninguna lectura se pierde. Medido antes de adoptarse (el
+    # número, en el commit que lo trae).
+    dic = c.get("dpd") or set()
     out.sort(key=lambda x: (
         0 if tuple(cotejo(y) for y in x["componentes"]) in dpd else 1,
+        (0 if all(cotejo(y) in dic for y in x["componentes"]) else 1)
+        if dic else 0,
         0 if cotejo(x["componentes"][-1]) in nip else 1,
         str(x["sutta"]), x["componentes"]))
     for x in out:
@@ -913,6 +942,30 @@ def _ascender_senal(r):
                                  "entera, con la segunda en la lista cerrada "
                                  "de nipāta")
             return
+    # El testigo del DPD, cuando está encendido (--dpd-filtro): la voz está
+    # escrita en el canon pero no figura en el diccionario ni se parte en dos
+    # voces del diccionario sin operación — lo típico de un producto de
+    # sandhi. Es el uso que §9 permite (probar si una cadena ocurre), se
+    # atribuye en el motivo, y NO decide el análisis. Medido 2026-08-28:
+    # solo, 76 % de precisión en verso y 45 % en prosa; sumado al nivel
+    # «posible», la señal pasa de 51 %@32 a 57 %@46 en verso y de 66 %@46 a
+    # 60 %@56 en prosa (con juntura real en el 81 % de lo marcado).
+    dic = cargar().get("dpd") or set()
+    if dic and r["cotejo"] not in dic and not _compuesto_dpd(r["cotejo"]):
+        r["senal"] = "posible"
+        r["senal_motivo"] = ("la voz no figura en el diccionario (DPD, "
+                             "testigo de ocurrencia) ni se parte en dos "
+                             "voces del diccionario sin operación")
+        return
+
+
+def _compuesto_dpd(c):
+    """¿Se parte en dos voces del diccionario por simple concatenación?"""
+    dic = cargar().get("dpd") or set()
+    for i in range(2, len(c) - 1):
+        if c[:i] in dic and c[i:] in dic:
+            return True
+    return False
 
 
 def _solucionar(voz):
@@ -1782,9 +1835,13 @@ def main():
     ap.add_argument("--solo-canon", action="store_true", help=(
         "el léxico es el corpus convertido del Sexto Concilio, sin DPD "
         "en ninguna capa (decisión del Venerable, 2026-08-28)."))
+    ap.add_argument("--dpd-filtro", action="store_true", help=(
+        "suma el DPD como testigo silencioso dentro de solo-canon: filtro, "
+        "ordenación y señal, nunca análisis (decisión de Angel, 2026-08-28)."))
     a = ap.parse_args()
     globals()['USAR_CANON'] = a.canon
     globals()['SOLO_CANON'] = a.solo_canon
+    globals()['DPD_FILTRO'] = a.dpd_filtro
     if a.cobertura:
         return cobertura()
     if not a.voz:

@@ -1,114 +1,119 @@
 {
- "origen": "recursos/corpus/corpus-formas.json",
- "total": 681927,
+ "origen": "recursos/corpus/corpus-formas.json + recursos/lexico/dpd-formas.txt",
+ "total": 873596,
+ "con_dpd": true,
  "fragmentos": {
   "a": {
    "archivo": "a.json",
-   "formas": 101514
+   "formas": 135787
   },
   "b": {
    "archivo": "b.json",
-   "formas": 24425
+   "formas": 31636
   },
   "c": {
    "archivo": "c.json",
-   "formas": 20262
+   "formas": 25449
   },
   "d": {
    "archivo": "d.json",
-   "formas": 34297
+   "formas": 43659
   },
   "e": {
    "archivo": "e.json",
-   "formas": 9075
+   "formas": 11283
   },
   "g": {
    "archivo": "g.json",
-   "formas": 15470
+   "formas": 20104
   },
   "h": {
    "archivo": "h.json",
-   "formas": 7566
+   "formas": 9619
   },
   "i": {
    "archivo": "i.json",
-   "formas": 6612
+   "formas": 8135
   },
   "j": {
    "archivo": "j.json",
-   "formas": 9903
+   "formas": 12864
   },
   "k": {
    "archivo": "k.json",
-   "formas": 44585
+   "formas": 56577
   },
   "l": {
    "archivo": "l.json",
-   "formas": 8779
+   "formas": 10960
   },
   "m": {
    "archivo": "m.json",
-   "formas": 30413
+   "formas": 38666
   },
   "n": {
    "archivo": "n.json",
-   "formas": 33601
+   "formas": 42631
   },
   "o": {
    "archivo": "o.json",
-   "formas": 5691
+   "formas": 7807
   },
   "p": {
    "archivo": "p.json",
-   "formas": 87064
+   "formas": 110698
   },
   "r": {
    "archivo": "r.json",
-   "formas": 11975
+   "formas": 15301
   },
   "s": {
    "archivo": "s.json",
-   "formas": 91388
+   "formas": 115795
   },
   "t": {
    "archivo": "t.json",
-   "formas": 24926
+   "formas": 30744
   },
   "u": {
    "archivo": "u.json",
-   "formas": 28277
+   "formas": 35963
   },
   "v": {
    "archivo": "v.json",
-   "formas": 50478
+   "formas": 64703
   },
   "y": {
    "archivo": "y.json",
-   "formas": 9405
+   "formas": 11403
   },
   "ñ": {
    "archivo": "ny.json",
-   "formas": 2397
+   "formas": 2829
   },
   "ā": {
    "archivo": "aa.json",
-   "formas": 20764
+   "formas": 26998
   },
   "ī": {
    "archivo": "ii.json",
-   "formas": 224
+   "formas": 340
   },
   "ū": {
    "archivo": "uu.json",
-   "formas": 546
+   "formas": 718
   },
   "ḍ": {
    "archivo": "dd.json",
-   "formas": 237
+   "formas": 362
   },
   "ḷ": {
    "archivo": "ll.json",
-   "formas": 7
+   "formas": 23
+  },
+  "ṃ": {
+   "archivo": "mm.json",
+   "formas": 1
   },
   "ṅ": {
    "archivo": "ng.json",
@@ -116,11 +121,11 @@
   },
   "ṇ": {
    "archivo": "nn.json",
-   "formas": 42
+   "formas": 91
   },
   "ṭ": {
    "archivo": "tt.json",
-   "formas": 1995
+   "formas": 2441
   }
  }
 }

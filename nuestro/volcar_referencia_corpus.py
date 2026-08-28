@@ -30,9 +30,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--comentario", action="store_true")
     ap.add_argument("--solo-canon", action="store_true")
+    ap.add_argument("--dpd-filtro", action="store_true")
     ap.add_argument("--categorias", default="sandhi")
     a = ap.parse_args()
     S.SOLO_CANON = a.solo_canon
+    S.DPD_FILTRO = a.dpd_filtro
 
     archivo = M.COMENT if a.comentario else M.VERSOS
     cats = set(a.categorias.split(","))
@@ -85,6 +87,7 @@ def main():
     destino = os.path.join(AQUI, "js", nombre)
     json.dump({"archivo": os.path.basename(archivo),
                "modo": "solo-canon" if a.solo_canon else "dpd",
+               "dpd_filtro": a.dpd_filtro,
                "medidas": len(out), "en_alcance": en_alcance,
                "coincide": coincide, "cuenta": dict(cuenta),
                "filas": out},
