@@ -406,25 +406,47 @@ function unaLectura(l){
        + pieLectura(l);
 }
 
+function plegadas(lista, titulo){
+  if(!lista.length) return '';
+  return `<details style="margin-top:10px">
+    <summary class="lbl" style="cursor:pointer;list-style:none">${titulo}</summary>
+    ${lista.map(unaLectura).join('')}
+  </details>`;
+}
+
 function cuerpoResultado(r, esVozSola){
+  /* Instrucción de Angel (2026-08-28): UNA sola lectura por sandhi, y si el
+     motor no sabe cuál es, que lo diga. Se afirma una lectura sólo cuando
+     hay autoridad detrás —firmada en el banco, adjudicada por un lector, o
+     del propio banco—; sin autoridad no se elige: se declara la ignorancia
+     con la cuenta a la vista. Las demás lecturas no se borran —eso sería
+     elegir en silencio—: quedan plegadas, con su título diciendo qué son. */
   let h = '';
   if(esVozSola && r.motivo){
     h += `<p class="motivo">${esc(r.motivo)}</p>`;
   }
   const lect = r.lecturas || [];
   if(!lect.length) return h;
-  /* La primera lectura a la vista; las demás, plegadas. No se elige en
-     silencio: se dicen cuántas hay y se abren con un clic — el sandhi es
-     genuinamente ambiguo y todas las que recomponen se muestran. */
-  h += unaLectura(lect[0]);
-  if(lect.length > 1){
-    h += `<details style="margin-top:10px">
-      <summary class="lbl" style="cursor:pointer;list-style:none">
-        + ${lect.length - 1} lectura${lect.length > 2 ? 's' : ''} más que también
-        recompone${lect.length > 2 ? 'n' : ''} — el orden es de verosimilitud,
-        no de certeza</summary>
-      ${lect.slice(1).map(unaLectura).join('')}
-    </details>`;
+  const l0 = lect[0];
+  const autoridad = l0.adjudicada || l0.procedencia === 'firmada' || l0.origen;
+  if(autoridad){
+    h += unaLectura(l0)
+       + plegadas(lect.slice(1),
+         `otras ${lect.length - 1} lectura${lect.length > 2 ? 's' : ''} que también
+          recompone${lect.length > 2 ? 'n' : ''}, sin firma ni adjudicación`);
+  } else if(lect.length === 1){
+    h += unaLectura(l0)
+       + `<p class="parcial" style="margin-top:8px">Única lectura que recompone.
+          No está firmada en el banco ni adjudicada: tómese como propuesta del
+          motor, no como análisis establecido.</p>`;
+  } else {
+    h += `<p class="motivo"><strong>El motor no sabe cuál es la lectura
+      correcta:</strong> ${lect.length} lecturas recomponen exactamente esta
+      forma y ninguna está firmada en el banco ni adjudicada. No se elige por
+      el lector.</p>`
+       + plegadas(lect,
+         `ver las ${lect.length} lecturas — el orden es de verosimilitud, no
+          de certeza`);
   }
   return h;
 }
