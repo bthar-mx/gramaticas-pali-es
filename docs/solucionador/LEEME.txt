@@ -1,0 +1,70 @@
+SOLUCIONADOR DE SANDHIS
+Encargo de Ven. Bhikkhu Nandisena · entrega del 24 de agosto de 2026
+
+
+PARA VERLO FUNCIONAR
+
+  pantalla.bat          se abre en el navegador; se pega una voz o un texto
+  probar-sandhis.bat    lo mismo desde la consola:  probar-sandhis.bat lokaggo
+
+Hace falta Python 3 instalado. Nada más: no hay que configurar nada, no se
+conecta a internet, y en tiempo de consulta no interviene ningún modelo de
+lenguaje. Es código determinista leyendo un banco congelado.
+
+
+PARA VER LOS NÚMEROS
+
+  probar-cobertura.bat  contra las 266 formas de reglas.json     (4 segundos)
+  probar-corpus.bat     contra la Therīgāthā y su comentario     (100 segundos)
+  congelar.bat          la huella SHA-256 de los 22 archivos que el motor lee
+
+Los tres imprimen su propio resultado, incluido el aviso de circularidad del
+informe de cobertura. Se reproducen en cualquier máquina, sin red.
+
+
+EL ESTADO, EN CUATRO CIFRAS
+
+  contra reglas.json, 251 formas medibles ........ 221   88 %
+  contra las 261 de sandhi-6.html, 209 medibles .. 194   93 %
+  Therīgāthā, 698 sandhis, punto de corte ........ 630   90,3 %
+  su comentario, 7.178 sandhis ................... 6.496 90,5 %
+
+Los dos últimos son acuerdo con el proyecto Sandhi —otro programa—, no con una
+autoridad. Los dos primeros son contra material firmado por usted.
+
+INFORME-AL-VENERABLE.pdf tiene el detalle: qué se pide y dónde está cada cosa,
+qué hizo corregir la medición, qué falta para el modo párrafo, y las consultas
+que esperan su respuesta.
+
+
+LO QUE NO VIENE, Y POR QUÉ
+
+  dpd-descomposiciones.tsv  — 77 MB. Son las 2.058.431 descomposiciones que el
+  propio DPD publica para 852.542 formas, y es lo que subió la detección de
+  sandhis en texto corrido del 27 % al 71–79 %. Sin ese archivo el solucionador
+  funciona igual voz por voz, pero en modo párrafo marca mucho menos.
+
+  Se genera desde el DPD con dos pasos, que están incluidos:
+      exportar-dpd.bat "ruta\a\dpd-mobile.db"
+      preparar-descomposiciones.bat
+  El primero abre la base en sólo lectura y no la toca.
+
+
+UNA COSA QUE NO SE INCORPORÓ, A PROPÓSITO
+
+  concordancia-nandisena-51.json es lo que su página sandhi-6.html trae adentro:
+  los 51 aforismos con las tres numeraciones, sus 41 reglas y sus 261 formas.
+  Está extraído sin editar, con la huella del HTML del que salió, y NO se usa
+  todavía como fuente del motor.
+
+  El motivo está escrito dentro del archivo: sus documentos difieren entre sí en
+  algunos puntos —el número de formas, alguna secuencia, algún aforismo citado—,
+  y decidir cuál gobierna es suyo, no nuestro. El día que lo diga, se incorpora
+  y se vuelve a medir.
+
+
+LA REGLA QUE NO SE NEGOCIA
+
+  Proponer y verificar. Nunca afirmar. Toda cadena que se publica reproduce
+  exactamente la forma de entrada; la que no, se descarta y no se muestra.
+  Comprobado sobre 539.158 lecturas: ninguna falla.

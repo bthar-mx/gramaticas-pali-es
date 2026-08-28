@@ -1,0 +1,319 @@
+{
+ "_meta": {
+  "que_es": "Concordancia Kaccāyana ↔ Rūpasiddhi para el capítulo de Sandhi, 51 entradas.",
+  "de_donde": "Los pares salen de las cabeceras de Thitzana vol. 2 (que da «§ Kaccāyana, § Rūpasiddhi»). Los títulos de la Rūpasiddhi salen de Rupasiddhi-Sandhi.md, que trae los 59 suttas de su capítulo de sandhi, sin huecos.",
+  "advertencia": "NO es el comun/concordancia.json que pide el encargo: eso incluye además la Saddanīti y cubre toda la gramática. Esto es sólo Kaccāyana↔Rūpasiddhi y sólo el capítulo 1.",
+  "fecha": "2026-08-18",
+  "correcciones": 2
+ },
+ "pares": [
+  {
+   "kac": 1,
+   "ru": 1,
+   "kac_titulo": "Attho akkharasannato",
+   "ru_titulo": "Attho akkharasaññāto."
+  },
+  {
+   "kac": 2,
+   "ru": 2,
+   "kac_titulo": "Akkhara’pa’dayo ekacattalisam",
+   "ru_titulo": "Akkharā p' ādayo cattālīsaṃ"
+  },
+  {
+   "kac": 3,
+   "ru": 3,
+   "kac_titulo": "Tattho’danta sara attha",
+   "ru_titulo": "Tatth' odantā sarā aṭṭha"
+  },
+  {
+   "kac": 4,
+   "ru": 4,
+   "kac_titulo": "Lahumatta tayo rasSa",
+   "ru_titulo": "Lahumattā tayo rassā"
+  },
+  {
+   "kac": 5,
+   "ru": 5,
+   "kac_titulo": "Afifie digha",
+   "ru_titulo": "Aññe dīghā"
+  },
+  {
+   "kac": 6,
+   "ru": 8,
+   "kac_titulo": "Sesa byafijand",
+   "ru_titulo": "Sesā byañjanā"
+  },
+  {
+   "kac": 7,
+   "ru": 9,
+   "kac_titulo": "Vagea paficapaficaso ma’nta",
+   "ru_titulo": "Vaggā pañcapañcaso mantā"
+  },
+  {
+   "kac": 8,
+   "ru": 10,
+   "kac_titulo": "Am iti niggahitam’,",
+   "ru_titulo": "Aṃ iti niggahītaṃ"
+  },
+  {
+   "kac": 9,
+   "ru": 11,
+   "kac_titulo": "Parasamanna payoge",
+   "ru_titulo": "Parasamaññā payoge."
+  },
+  {
+   "kac": 10,
+   "ru": 12,
+   "kac_titulo": "Pubba'madhoṭhita'massaraṃ sarena viyojaye",
+   "ru_titulo": "Pubbam adhoṭhitam assaraṃ sarena viyojaye"
+  },
+  {
+   "kac": 11,
+   "ru": 14,
+   "kac_titulo": "Naye param yutte",
+   "ru_titulo": "Naye paraṃ yutte"
+  },
+  {
+   "kac": 12,
+   "ru": 13,
+   "kac_titulo": "Sara sare lopam",
+   "ru_titulo": "Sarā sare lopaṃ"
+  },
+  {
+   "kac": 13,
+   "ru": 15,
+   "kac_titulo": "Va paro asaripa",
+   "ru_titulo": "Vā paro asarūpā"
+  },
+  {
+   "kac": 14,
+   "ru": 16,
+   "kac_titulo": "Kvaca’savannam lutte",
+   "ru_titulo": "Kvac' āsavaṇṇaṃ lutte"
+  },
+  {
+   "kac": 15,
+   "ru": 17,
+   "kac_titulo": "Digham",
+   "ru_titulo": "Dīghaṃ"
+  },
+  {
+   "kac": 16,
+   "ru": 18,
+   "kac_titulo": "Pubbo ca",
+   "ru_titulo": "Pubbo ca"
+  },
+  {
+   "kac": 17,
+   "ru": 19,
+   "kac_titulo": "Ya'me'dantassā'deso",
+   "ru_titulo": "Yam edantass' ādeso"
+  },
+  {
+   "kac": 18,
+   "ru": 20,
+   "kac_titulo": "Va’mo’du’dantanam",
+   "ru_titulo": "Vam od-udantānaṃ"
+  },
+  {
+   "kac": 19,
+   "ru": 22,
+   "kac_titulo": "Sabbo cam ti",
+   "ru_titulo": "Sabbo caṃ ti"
+  },
+  {
+   "kac": 20,
+   "ru": 27,
+   "kac_titulo": "Do dhassa ca",
+   "ru_titulo": "Do dhassa ca"
+  },
+  {
+   "kac": 21,
+   "ru": 21,
+   "kac_titulo": "Ivanno yam nava",
+   "ru_titulo": "Ivaṇṇo yaṃ navā"
+  },
+  {
+   "kac": 22,
+   "ru": 28,
+   "kac_titulo": "Eva’dissa ri pubbo ca rasso",
+   "ru_titulo": "Evādissa ri pubbo ca rasso"
+  },
+  {
+   "kac": 23,
+   "ru": 36,
+   "kac_titulo": "Sara pakati byanjane. (Sara+pakati+byafijane. 3 words]",
+   "ru_titulo": "Sarā pakati byañjane",
+   "correccion": "el OCR de Thitzana daba Rū 26; el texto de la Rūpasiddhi lo desmiente: Rū 26 es «Te na vā ivaṇṇe» y Rū 36 es «Sarā pakati byañjane»"
+  },
+  {
+   "kac": 24,
+   "ru": 35,
+   "kac_titulo": "Sare kvaci",
+   "ru_titulo": "Sare kvaci"
+  },
+  {
+   "kac": 25,
+   "ru": 37,
+   "kac_titulo": "Digham",
+   "ru_titulo": "Dīghaṃ"
+  },
+  {
+   "kac": 26,
+   "ru": 38,
+   "kac_titulo": "Rassam",
+   "ru_titulo": "Rassaṃ"
+  },
+  {
+   "kac": 27,
+   "ru": 39,
+   "kac_titulo": "Lopafi’ca tatra’k4ro",
+   "ru_titulo": "Lopañ ca tatr"
+  },
+  {
+   "kac": 28,
+   "ru": 40,
+   "kac_titulo": "Para dvebhavo thane",
+   "ru_titulo": "Paradvebhāvo ṭhāne"
+  },
+  {
+   "kac": 29,
+   "ru": 42,
+   "kac_titulo": "Vagge ghosa’ghosanam tatiya, pathama",
+   "ru_titulo": "Vagge ghosāghosānaṃ tatiya-paṭhamā"
+  },
+  {
+   "kac": 30,
+   "ru": 58,
+   "kac_titulo": "Aṃ byañjane niggahitaṃ",
+   "ru_titulo": "Aṃ byañjane niggahitaṃ"
+  },
+  {
+   "kac": 31,
+   "ru": 49,
+   "kac_titulo": "Vagga'ntaṃ vā vagge",
+   "ru_titulo": "Vaggantaṃ vā vagge"
+  },
+  {
+   "kac": 32,
+   "ru": 50,
+   "kac_titulo": "E,he fam",
+   "ru_titulo": "E-he ñaṃ"
+  },
+  {
+   "kac": 33,
+   "ru": 51,
+   "kac_titulo": "Sa ye Ca",
+   "ru_titulo": "Sa ye ca",
+   "correccion": "el OCR de Thitzana daba Rū 50; el texto de la Rūpasiddhi lo desmiente: Rū 50 es «E-he ñaṃ» y Rū 51 es «Sa ye ca»"
+  },
+  {
+   "kac": 34,
+   "ru": 52,
+   "kac_titulo": "Ma,d4 sare",
+   "ru_titulo": "Ma-dā sare"
+  },
+  {
+   "kac": 35,
+   "ru": 34,
+   "kac_titulo": "Ya, va, ma, da, na, ta, ra, 14 ca’gama",
+   "ru_titulo": "Ya-va-ma-da-na-ta-ra-lā c' āgamā"
+  },
+  {
+   "kac": 36,
+   "ru": 47,
+   "kac_titulo": "Kvaci o byafijane",
+   "ru_titulo": "Kvaci o byañjane"
+  },
+  {
+   "kac": 37,
+   "ru": 57,
+   "kac_titulo": "Niggahitafi’ca",
+   "ru_titulo": "Niggahitañ ca"
+  },
+  {
+   "kac": 38,
+   "ru": 53,
+   "kac_titulo": "Kvaci lopam",
+   "ru_titulo": "Kvaci lopaṃ"
+  },
+  {
+   "kac": 39,
+   "ru": 54,
+   "kac_titulo": "Byanjane Ca",
+   "ru_titulo": "Byañjane ca"
+  },
+  {
+   "kac": 40,
+   "ru": 55,
+   "kac_titulo": "Paro vA Saro",
+   "ru_titulo": "Paro vā saro"
+  },
+  {
+   "kac": 41,
+   "ru": 56,
+   "kac_titulo": "Byafijano ca visafifiogo",
+   "ru_titulo": "Byañjano ca visaññogo"
+  },
+  {
+   "kac": 42,
+   "ru": 32,
+   "kac_titulo": "Go sare puthassā'gamo kvaci",
+   "ru_titulo": "Go sare puthass' āgamo kvaci"
+  },
+  {
+   "kac": 43,
+   "ru": 33,
+   "kac_titulo": "Passa ca’nto rasso",
+   "ru_titulo": "Pāssa c' anto rasso"
+  },
+  {
+   "kac": 44,
+   "ru": 24,
+   "kac_titulo": "Abbho abhi",
+   "ru_titulo": "Abbho abhi"
+  },
+  {
+   "kac": 45,
+   "ru": 25,
+   "kac_titulo": "Ajjho adhi",
+   "ru_titulo": "Ajjho adhi"
+  },
+  {
+   "kac": 46,
+   "ru": 26,
+   "kac_titulo": "Te na v4 ivanne,",
+   "ru_titulo": "Te na vā ivaṇṇe"
+  },
+  {
+   "kac": 47,
+   "ru": 23,
+   "kac_titulo": "Atissa ca’ntassa",
+   "ru_titulo": "Atissa c' antassa"
+  },
+  {
+   "kac": 48,
+   "ru": 43,
+   "kac_titulo": "Kvaci pati patissa",
+   "ru_titulo": "Kvaci paṭi patissa"
+  },
+  {
+   "kac": 49,
+   "ru": 44,
+   "kac_titulo": "Puthass’u byafijane",
+   "ru_titulo": "Puthass' u byañjane"
+  },
+  {
+   "kac": 50,
+   "ru": 45,
+   "kac_titulo": "O avassa",
+   "ru_titulo": "O avassa"
+  },
+  {
+   "kac": 51,
+   "ru": 59,
+   "kac_titulo": "Anu’paditthanam vuttayogato",
+   "ru_titulo": "Anupadiṭṭhānaṃ vuttayogato"
+  }
+ ]
+}

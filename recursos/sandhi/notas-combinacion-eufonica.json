@@ -1,0 +1,608 @@
+{
+ "origen": "recursos/combinacion-eufonica.md",
+ "definicion": [
+  "Cuando dos letras de una misma voz o de diferentes voces se juntan, de acuerdo al caso, entran en operación las reglas de combinación eufónica ( _sandhi_ ). En general hay tres clases de combinación eufónica: I. Combinación de vocales ( _sara-sandhi_ ), II. Combinación de una vocal y una consonante ( _byañjana-sandhi_ ) y III. Combinación de la _niggahīta_ (ṃ) con una vocal o una consonante ( _niggahīta-sandhi_ ). También hay IV. Casos en que las reglas de combinación eufónica no aplican por diversas razones.",
+  "Las operaciones gramaticales ( _vidhi_ ) que ocurren en la combinación eufónica y también en la formación de nombres y verbos se clasifican en los siguientes grupos:"
+ ],
+ "operaciones": [
+  {
+   "n": 1,
+   "texto": "Elisión ( _lopa_ ): una vocal, una consonante o una sílaba se elide."
+  },
+  {
+   "n": 2,
+   "texto": "Alargamiento ( _dīgha_ ): una vocal se alarga."
+  },
+  {
+   "n": 3,
+   "texto": "Acortamiento ( _rasa_ ): una vocal se acorta."
+  },
+  {
+   "n": 4,
+   "texto": "Substitución ( _ādesa_ ): una vocal o una consonante se substituye por otra."
+  },
+  {
+   "n": 5,
+   "texto": "Inserción ( _āgama_ ): una vocal o una consonante se inserta."
+  },
+  {
+   "n": 6,
+   "texto": "Interdicción ( _paṭisedha_ ): la prohibición de la aplicación de una regla."
+  },
+  {
+   "n": 7,
+   "texto": "Sufijo ( _paccaya_ ): la aplicación de un sufijo."
+  },
+  {
+   "n": 8,
+   "texto": "Inflexión ( _vibhatti_ ): la aplicación de una inflexión nominal o verbal."
+  }
+ ],
+ "notas": [
+  {
+   "n": 1,
+   "forma": "simple",
+   "linea": 247,
+   "texto": "“Asarūpa”, “asavaṇṇa”.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "2",
+    "linea": 231,
+    "sobre": "2. Cuando dos vocales contiguas son disímiles, la segunda a veces se elide."
+   }
+  },
+  {
+   "n": 2,
+   "forma": "bloque",
+   "linea": 249,
+   "texto": "Rū. §15. Éste es un verso mnemotécnico: “Avaṇṇato saro ’dānītīv’-evādiṃ vinā paro; na luppat’ aññato dīgho, ās’-evādī-vivajjito”. Traducción: Después de “a” y “ā” (avaṇṇato), excepto “idāni”, “iti”, “iva”, “eva”, etc., (’dānītīv’-evādiṃ vinā), la vocal siguiente (saro paro) no se elide (na luppati); después de las otras (aññato), la vocal larga (saro dīgho) no se elide (na luppati), excepto “āsi”, “eva”, etc. (ās’-evādī-vivajjito).",
+   "ancla": {
+    "sec": "sara",
+    "regla": "2",
+    "linea": 245,
+    "sobre": "Regla: Después de “a” y “ā” solamente las vocales iniciales de “idāni”, “iti”, “iva”, “eva”, a veces, se eliden. Después"
+   }
+  },
+  {
+   "n": 3,
+   "forma": "simple",
+   "linea": 275,
+   "texto": "La vocal disímil es únicamente “a” y “ā”.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "3",
+    "linea": 251,
+    "sobre": "3. A veces las vocales “i”, “ī” y “u”, “ū”, cuando siguen a una vocal disímil que ha sido elidida, se convierten en “e” "
+   }
+  },
+  {
+   "n": 4,
+   "forma": "bloque",
+   "linea": 277,
+   "texto": "Sin embargo en Nir. §36 y Sad. iii §34, la vocal previa que ha sido elidida no tiene que ser disímil. Ej. “ati + iva me acchariyaṃ” que forma sandhi “ateva me acchariyaṃ” (J. ii 340). Además, Sad. iii §35 y Nir. §36 tienen un aforismo: “Cuando la vocal siguiente ha sido elidida, la vocal precedente se convierte en ‘e’ y ‘o’.” Sad.: “Parasare lutte pubbo saro kvaci asavaṇṇaṃ pappoti”. Ejemplos: “muni + ālayo” = “munelayo”; “rathi + usabho” = “rathesabho”; “su + itthi” = “sotthi”.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "3",
+    "linea": 251,
+    "sobre": "3. A veces las vocales “i”, “ī” y “u”, “ū”, cuando siguen a una vocal disímil que ha sido elidida, se convierten en “e” "
+   }
+  },
+  {
+   "n": 5,
+   "forma": "simple",
+   "linea": 305,
+   "texto": "De acuerdo con Sad. iii §43, esta regla está restringida a las voces “te”, “me”, “pabbate”, “ke” cuando generalmente la vocal siguiente es “a”, la cual opcionalmente se alarga convirtiéndose en “ā”. Ver ejemplos.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "6",
+    "linea": 285,
+    "sobre": "6. A veces cuando una vocal sigue, “e” se convierte en “y”."
+   }
+  },
+  {
+   "n": 6,
+   "forma": "simple",
+   "linea": 307,
+   "texto": "De acuerdo con Sad. iii §44, esta regla aplica sólo para las vocales “o” y “u” que están al final de voces con las siguientes letras: “k”, “kh”, “t”, “th”, “d”, “n”, “y”, “s”, “h”. Rū. §20 dice que “o” sigue sólo a “k”, “kh”, “t”, “y”, “s”.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "7",
+    "linea": 297,
+    "sobre": "7. A veces cuando una vocal sigue, “o” y “u” se convierten en “v”."
+   }
+  },
+  {
+   "n": 7,
+   "forma": "bloque",
+   "linea": 332,
+   "texto": "Ésta es la excepción de la regla anterior, la cual no aplica para “ati”, “pati” y “iti”. La duplicación se realiza mediante una regla posterior.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "9",
+    "linea": 325,
+    "sobre": "9. A veces, cuando una vocal sigue, la sílaba “ti” de “ati”, “pati” y “iti” se convierte en “c” y ésta se duplica."
+   }
+  },
+  {
+   "n": 8,
+   "forma": "bloque",
+   "linea": 354,
+   "texto": "Esta regla aplica sólo cuando “idha” sigue a “eka”. De acuerdo con Kac. §20 también se incluyen otros en esta regla: sādhu + dassanaṃ = sāhu dassanaṃ (Dh. 44); nijaṃ + puttaṃ = niyaṃ puttaṃ (Khp. 11).",
+   "ancla": {
+    "sec": "sara",
+    "regla": "12",
+    "linea": 346,
+    "sobre": "12. A veces, cuando va seguido por una vocal, la sílaba “dha” de “idha”, se convierte en “da”."
+   }
+  },
+  {
+   "n": 9,
+   "forma": "bloque",
+   "linea": 381,
+   "texto": "Se inserta “y” después de “yathā”, “tathā”, etc., cuando las vocales “i” y “e” siguen; y después de “vi” y “pari” cuando una vocal sigue (“a”, “ā”, “u”, “e”, “o”). Se inserta “v” después de “ti”, etc., cuando “a”, “ā” y “u” siguen. Se inserta “m” después de “lahu”, etc., cuando sigue una vocal por razones métricas y otras. Se inserta “d” después del prefijo “u”, y de las partículas “saki”, “kenaci”, “kiñci”, “kismiñci”, “koci”, “sammā”, “yāva”, “tāva”, “puna”, y de los pronombres “ya”, “ta”, “eta”, “sa”, y “atta”; y después de “añña”, “manasā”, “bahu”, “ahu”. Se inserta “n” cuando “āyati”, etc., siguen. Se inserta “t” después de “yasmā”, “tasmā”, “ajja”, etc., y antes de “iha” y “agga”, etc. Se inserta “r” después de “ni”, “du”, “pātu”, “puna”, “dhī”, “pāta”, “catu”, etc., y después de vocales cuando “iva” y “eva” siguen, en este caso, por razones métricas. Se inserta “ḷ” después de “cha” y numerales. Se inserta “g” después de “putha” y “pā”. La explicación anterior se encuentra en Rū. §34. En Sad. iii §56 se incluye también “h”.",
+   "ancla": {
+    "sec": "sara",
+    "regla": "15",
+    "linea": 362,
+    "sobre": "15. A veces, cuando una vocal sigue, se inserta alguna de las siguientes consonantes: “y”, “v”, “m”, “d”, “n”, “t”, “r”,"
+   }
+  },
+  {
+   "n": 10,
+   "forma": "simple",
+   "linea": 443,
+   "texto": "Después de una vocal corta y “ā”, se duplica (dvebhāva): (1) la consonante inicial de los prefijos: “pa”, “pati”, “paṭi”; (2) la consonante inicial de las raíces: “kamu”, “kusa”, “kudha”, “kī”, “gaha”, “juta”, “ñā”, “si”, “su”, “sambhū”, “sara”, “sasa”, “saja”, “khaja”, “kilisa”; (3) la consonante inicial de “tika”, “taya”, “tiṃsa”, “vata”. También se duplica: (4) la consonante final de “vatu”, “vaṭu”, “disa”; (5) la consonante siguiente a los prefijos: “u”, “du”, “ni”; (6) la consonante siguiente a “ta”, “catu”, “cha”, “sa” (que es la substitución de “santa”); (7) la consonante “y”, cuando no está al final de la palabra, después de una vocal larga diferente de “ā”; (8) las substituciones de “ty” (= “c”), “ly” (= “l”), “ny” (= “ñ”), “dy” (= “j”), “ṃy” (= “ñ”), “sy” (= “s”), “thy” (= “ch”), “dhy” (= “jh”), “ṇy” (= “ñ”), y las substituciones del grupo de “k” con “y” (= “k”, etc.), grupo de “c” con “y” (= “c”, etc.), grupo de “ṭ” con “y” (= “ṭ”, etc.), grupo de “p” con “y” (= “p”, etc.); (9) la “s” de “sī” después de “tapa”, etc.; y (10) la consonante inicial de las raíces “ghara”, “jhe”, “dhaṃsu”, “bhamu”, etc., después de una vocal corta por razones de métrica.",
+   "ancla": {
+    "sec": "byanjana",
+    "regla": "4",
+    "linea": 426,
+    "sobre": "4. A veces, después de una vocal, la consonante siguiente se duplica."
+   }
+  },
+  {
+   "n": 11,
+   "forma": "simple",
+   "linea": 445,
+   "texto": "La siguiente es la lista completa de las consonantes compuestas y sus posibles substituciones: ty “ c; ly “ l; ny “ ñ; dy “ j; sy “ s; ky “ k; khy “ kh; gy “ g; ghy “ gh; ṅy “ ṅ; cy “ c; chy “ ch; jy “ j; jhy “ jh; ñy “ ñ; ṭy “ ṭ; ṭhy “ ṭh; ḍy “ ḍ; ḍhy “ ḍh; ṇy “ ñ; thy “ ch; dhy “ jh; py “ p; phy “ ph; by “ b; bhy “ bh; my “ m.",
+   "ancla": {
+    "sec": "byanjana",
+    "regla": "5",
+    "linea": 441,
+    "sobre": "También “sy” y los grupos de “k”, “c”, “ṭ”, “p” con “y” se convierten en “s”, “k”, “c”, “ṭ”, “p” respectivamente. Además"
+   }
+  },
+  {
+   "n": 12,
+   "forma": "bloque",
+   "linea": 468,
+   "texto": "Esta regla se aplica en los siguientes casos: (1) la cuarta consonante de las agrupadas en las raíces “ghara”, etc., después de los prefijos “pa”, “u”, “du”, “ni”, etc.; (2) las substituciones de aquellas consonantes conjuntas que tienen “y” (como “dhy” = “jh”); (3) la segunda consonante después de las vocales cortas y “ā”; (4) la primera consonante de las agrupadas de las raíces “kamu”, “pada”, “ci”, “cara”, “tara” después del prefijo “ni” se duplica en la segunda consonante (ejemplo: ni + √kamu + a + ti “ nikkhamati).",
+   "ancla": {
+    "sec": "byanjana",
+    "regla": "6",
+    "linea": 455,
+    "sobre": "6. A veces, después de una vocal, la segunda y cuarta consonante de las agrupadas se duplican en la primera y tercera de"
+   }
+  },
+  {
+   "n": 13,
+   "forma": "bloque",
+   "linea": 488,
+   "texto": "Rū. §47 dice que la insersión de “o” se aplica después de “atippa” y “para”.",
+   "ancla": {
+    "sec": "byanjana",
+    "regla": "11",
+    "linea": 485,
+    "sobre": "11. A veces, cuando una consonante sigue, hay insersión de la letra “o”."
+   }
+  },
+  {
+   "n": 14,
+   "forma": "bloque",
+   "linea": 509,
+   "texto": "Cuando va seguida por consonantes del grupo de la: (1) “k” se convierte en “ṅ”, (2) “c” se convierte en “ñ”, (3) “ṭ” se convierte en “ṇ”, (4) “t” se convierte en “n”, (5) “p” se convierte en “m”.",
+   "ancla": {
+    "sec": "niggahita",
+    "regla": "1",
+    "linea": 497,
+    "sobre": "1. A veces, cuando va seguida por una consonante agrupada, la “niggahīta” se convierte en en la última consonante del gr"
+   }
+  },
+  {
+   "n": 15,
+   "forma": "bloque",
+   "linea": 531,
+   "texto": "Esta regla aplica sólo para la “niggahīta” del prefijo “saṃ” y la “niggahīta” que va seguida por pronombre “ya”.",
+   "ancla": {
+    "sec": "niggahita",
+    "regla": "4",
+    "linea": 517,
+    "sobre": "4. A veces, cuando “y” sigue, la “niggahīta” junto con “y” se convierte en “ñ”; y ésta se duplica."
+   }
+  },
+  {
+   "n": 16,
+   "forma": "bloque",
+   "linea": 533,
+   "texto": "Se convierte en “d” sólo después de “ya”, “ta” y “eta”.",
+   "ancla": {
+    "sec": "niggahita",
+    "regla": "5",
+    "linea": 523,
+    "sobre": "5. A veces, cuando una vocal sigue, la “niggahīta” se convierte en “m” y “d”."
+   }
+  },
+  {
+   "n": 17,
+   "forma": "bloque",
+   "linea": 555,
+   "texto": "Se elide por razones métricas y para facilitar la pronunciación. Cuando la “niggahīta” se elide, la vocal anterior se elide y se alarga la vocal siguiente que no va seguida por una consonante conjunta.",
+   "ancla": {
+    "sec": "niggahita",
+    "regla": "6",
+    "linea": 535,
+    "sobre": "6. A veces, cuando una vocal sigue, la “niggahīta” se elide."
+   }
+  },
+  {
+   "n": 18,
+   "forma": "bloque",
+   "linea": 557,
+   "texto": "Por razones métricas y para facilitar la pronunciación. Cuando “r” y “h” siguen, la vocal final de prefijo se alarga.",
+   "ancla": {
+    "sec": "niggahita",
+    "regla": "7",
+    "linea": 540,
+    "sobre": "7. A veces, cuando una consonante sigue, la “niggahīta” se elide."
+   }
+  },
+  {
+   "n": 19,
+   "forma": "bloque",
+   "linea": 580,
+   "texto": "Para facilitar la pronunciación.",
+   "ancla": {
+    "sec": "niggahita",
+    "regla": "10",
+    "linea": 559,
+    "sobre": "10. A veces, cuando una vocal o una consonante sigue, se inserta la “niggahīta”."
+   }
+  },
+  {
+   "n": 20,
+   "forma": "bloque",
+   "linea": 582,
+   "texto": "Permanece sin cambios (pakati) significa: (1) no se elide (lopa), (2) no se substituye (ādesa) o (3) no se modifica (vikāra).",
+   "ancla": {
+    "sec": "pakati",
+    "regla": "1",
+    "linea": 572,
+    "sobre": "1. A veces, la vocal que precede, cuando va seguida por una vocal, permanece sin cambios."
+   }
+  },
+  {
+   "n": 21,
+   "forma": "bloque",
+   "linea": 605,
+   "texto": "Aquí “permanece sin cambios” significa: (1) no se alarga, (2) no se acorta, (3) no se elide y (4) no se modifica.",
+   "ancla": {
+    "sec": "pakati",
+    "regla": "2",
+    "linea": 597,
+    "sobre": "2. A veces, la vocal que precede, cuando va seguida por una consonante, permanece sin cambios."
+   }
+  },
+  {
+   "n": 22,
+   "forma": "bloque",
+   "linea": 607,
+   "texto": "Sin cambio significa que no se elide ni se substituye.",
+   "ancla": {
+    "sec": "pakati",
+    "regla": "3",
+    "linea": 601,
+    "sobre": "3. A veces, cuando una consonante sigue, la “niggahīta” permanece sin cambio."
+   }
+  }
+ ],
+ "enunciados": [
+  {
+   "sec": "sara",
+   "regla": "2",
+   "tipo": "alcance",
+   "linea": 245,
+   "texto": "Regla: Después de “a” y “ā” solamente las vocales iniciales de “idāni”, “iti”, “iva”, “eva”, a veces, se eliden. Después de “i”, “ī”, “u”, “ū”, “e” y “o”, excepto cuando “āsi”, “eva”, etc., siguen, las vocales largas a veces se eliden.",
+   "nota": 2
+  },
+  {
+   "sec": "sara",
+   "regla": "9",
+   "tipo": "interdiccion",
+   "linea": 330,
+   "texto": "Excepciones: ati + isigaṇo = atīsigaṇo (Kac. §47); ati + iritaṃ = atīritaṃ (Nd. i 263); iti + iti = itīti (S. I 230); pati + ito = patīto (Rū. §23).",
+   "formas": [
+    {
+     "comp": "ati + isigaṇo",
+     "f": "atīsigaṇo",
+     "ref": "Kac. §47"
+    },
+    {
+     "comp": "ati + iritaṃ",
+     "f": "atīritaṃ",
+     "ref": "Nd. i 263"
+    },
+    {
+     "comp": "iti + iti",
+     "f": "itīti",
+     "ref": "S. I 230"
+    },
+    {
+     "comp": "pati + ito",
+     "f": "patīto",
+     "ref": "Rū. §23"
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "regla": "10",
+   "tipo": "interdiccion",
+   "linea": 338,
+   "texto": "Excepción. A veces cuando va seguido por las vocales “i”, “ī”, el prefijo “abhi” no se convierte en “abbh”. Ejemplo: abhi + icchitaṃ = abhicchitaṃ (Rū. §26).",
+   "formas": [
+    {
+     "comp": "abhi + icchitaṃ",
+     "f": "abhicchitaṃ",
+     "ref": "Rū. §26"
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "regla": "11",
+   "tipo": "interdiccion",
+   "linea": 344,
+   "texto": "Excepción. A veces cuando va seguido por las vocales “i”, “ī”, el prefijo “adhi” no se convierte en “ajjh”. Ejemplo: adhi + īritaṃ = adhīritaṃ (Rū. §26).",
+   "formas": [
+    {
+     "comp": "adhi + īritaṃ",
+     "f": "adhīritaṃ",
+     "ref": "Rū. §26"
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "regla": "3",
+   "tipo": "regla_sin_numerar",
+   "linea": 422,
+   "texto": "Nota: Y también a veces, la “o” de “eta”, cuando va seguida por una vocal, se elide."
+  },
+  {
+   "sec": "byanjana",
+   "regla": "5",
+   "tipo": "alcance",
+   "linea": 441,
+   "texto": "También “sy” y los grupos de “k”, “c”, “ṭ”, “p” con “y” se convierten en “s”, “k”, “c”, “ṭ”, “p” respectivamente. Además, “thy”, “dhy”, “ṇy” se convierten en “ch”, “jh”, “ñ” respectivamente. Y después todas éstas duplican.",
+   "nota": 11
+  },
+  {
+   "sec": "pakati",
+   "regla": "1.1",
+   "tipo": "comentario",
+   "linea": 578,
+   "texto": "En los ejemplos precedentes, “bhikkhave” y “Sāriputta” están en el caso vocativo."
+  },
+  {
+   "sec": "pakati",
+   "regla": "1.2",
+   "tipo": "comentario",
+   "linea": 589,
+   "texto": "En los ejemplos anteriores, “āyasmā”, “eko” y “no” (partícula de negación) terminan en vocales largas y no están formando un compuesto."
+  },
+  {
+   "sec": "pakati",
+   "regla": "1.3",
+   "tipo": "comentario",
+   "linea": 595,
+   "texto": "En los ejemplos, “ajjhabhāsi” y “adāsi” son verbos en tiempo pasado, ambos precedidos por nombres terminados en “i” y “u”."
+  }
+ ],
+ "erratas_del_original": [
+  {
+   "linea": 445,
+   "fragmento": "ty “ c;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ly “ l;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ny “ ñ;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "dy “ j;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "sy “ s;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ky “ k;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "khy “ kh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "gy “ g;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ghy “ gh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ṅy “ ṅ;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "cy “ c;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "chy “ ch;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "jy “ j;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "jhy “ jh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ñy “ ñ;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ṭy “ ṭ;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ṭhy “ ṭh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ḍy “ ḍ;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ḍhy “ ḍh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "ṇy “ ñ;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "thy “ ch;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "dhy “ jh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "py “ p;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "phy “ ph;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "by “ b;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "bhy “ bh;",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 445,
+   "fragmento": "my “ m.",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  },
+  {
+   "linea": 468,
+   "fragmento": "ti “ nikkhamati).",
+   "de": "el documento original",
+   "lectura": "el signo de substitución quedó como comilla de apertura",
+   "apoyo": "la nota 10 usa «=» para la misma relación"
+  }
+ ]
+}

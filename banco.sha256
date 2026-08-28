@@ -1,0 +1,44 @@
+# El banco congelado. Generado por nuestro/congelar.py.
+# Formato sha256sum: se comprueba con `sha256sum -c banco.sha256`.
+# fuente · 49 reglas, 266 formas — no regenerable
+534a7a2eb5221f79b39c99d2b7d7ebb1b09d4be7e405ec90421fd02e4ab600fe  recursos/sandhi/reglas.json
+# salida · 22 notas, 9 enunciados, 6 formas
+c31ef1fbc6393f8b13c8b0038bc42321c4edefefb53f04f3dbabe358117c9965  recursos/sandhi/notas-combinacion-eufonica.json
+# fuente · cotejada contra el PDF el 2026-08-21
+71e3f4a50f5c00b183c30611068a74a5c63b35810d317d0ad7edfa8c4e274b30  recursos/combinacion-eufonica.md
+# fuente · el PDF del Venerable
+5c096eddfae3b345227843b2405089dc508d1370a12b503a3b2bfc8d78ec9ce8  recursos/combinacion-eufonica.pdf
+# fuente · los 51 aforismos traducidos
+2f9d727eb77e5a4dd55e7d8907892138d3f80dbe74472d45bacb4e7be4593181  kaccayana/01-sandhi-kappa.md
+# fuente · los 51 pares Kac ↔ Rū
+86924cd510e657f4897e8c05a8868beedd95035027178c7fd604a955f9d15724  comun/concordancia-sandhi-kac-ru.json
+# fuente · Kac, Rū y Sad para el capítulo
+a7385ab5d68da7692d2b1fe73128a041629e0362f416a55b3e691dc466a491c2  comun/concordancia-tres-numeraciones-sandhi.json
+# fuente · las 41 secuencias del Venerable
+f6c30cf19075b53ada6e4cf6e34e3384babfa3475875e15a0b6146c5c9a15ae7  recursos/sandhi/tablas-sandhi-nandisena.json
+# fuente · 20 upasagga, 221 nipāta
+8c9e064d902e1a93de2a0f29f59316d249a3e1894b372a71eb0d3fab56d0132c  recursos/sandhi/listas-cerradas.json
+# derivado · extracción, no lectura
+e5c4eec03afe0dd55bae16a5d4a791cc7405e438b6856cbc2bac0ffc8eed70fb  fuentes-derivadas/thitzana-sandhi-51-tabla.json
+# salida · las 41 filas en pasos
+80f6d7975f875f9f77b4994c8fd072467c4add3674615f0ccc8fc85f21f21e19  recursos/sandhi/tablas-nandisena-secuencias.json
+# salida · 34 «kasmā?» y 42 ejemplos
+4ee1f40661302c17742da5270bd9d2e65bb23e9d8fbad184c21d6f8bf12920e0  fuentes-derivadas/thitzana-evidencia-negativa.json
+# fuente · 443.740 formas del DPD v0.4.20260728
+17920aea6425f2c398b172079ef249731894bd46ef5f473cdfd6d4b391e31daf  recursos/lexico/dpd-formas.txt
+# salida · la lista cerrada de grupos iniciales
+657521b23f451fa20dc882f3bbfdc043fd317d6925c49deddf480bdb6bd39671  recursos/lexico/grupos-iniciales.json
+# motor · una función por aforismo
+6ad549e1704eec8721f5e6faffca86f57756917cb3ff43b23a22a38f7f0ce6f6  nuestro/operaciones.py
+# motor · el entregable 1
+e650fab9a69debadf883805d654d92c6c0fbfb5fafe90becc85a1aa8ee1c4247  nuestro/solucionar_sandhis.py
+# fuente · el derivador del Venerable — no se toca
+3f7e5c8da512700d14689c9553206f72b8a0d0e3d524e6a0727cf1ec643fc34b  herramientas/derivar_secuencias.py
+# motor · cotejo(): cómo se comparan dos formas
+4e96b71efd891d667d957b94fb7def7b3c04047f356afa74b9d85da336534cdf  nuestro/normalizar.py
+# motor · dónde se busca cada archivo
+6053ea15492d4bca10ec9c0f0faadc1dc0dff3ec6c6045096e8c23f5d9a9d75c  nuestro/rutas.py
+# motor · las glosas de la pantalla
+8c19e41b69352d2a9e65ad66421278bedf4d74c8d7c5755e921aa3c210ebe52d  nuestro/glosas.py
+# motor · el entregable 2, la pantalla
+48f865c4ebcb35d5dd04ddee821e85fe794b01820768ec4cf0dbd465d92d7742  nuestro/pantalla.py

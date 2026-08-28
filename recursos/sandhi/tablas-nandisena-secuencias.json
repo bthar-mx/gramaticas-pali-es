@@ -1,0 +1,2268 @@
+{
+ "origen": "recursos/sandhi/tablas-sandhi-nandisena.json",
+ "procedencia": "firmada por el Venerable Nandisena",
+ "filas": [
+  {
+   "sec": "sara",
+   "n": "1",
+   "aforismo": "Una vocal que precede a otra vocal se elide.",
+   "referencia": "KAC. §12",
+   "referencia_suttas": [
+    12
+   ],
+   "ej_original": "yassa indriyāni yass a indriyāni (§10) yass indriyāni (§12) yassindriyāni (§11) yass’ indriyāni (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "yass a indriyāni",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "yassa indriyāni",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "yass indriyāni",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "yassindriyāni",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "yass’ indriyāni",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "yassa indriyāni",
+     "sin_paso_11": false,
+     "forma_final": "yassindriyāni",
+     "em": "yass’ indriyāni",
+     "suttas_que_operan": [
+      12
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "2",
+   "aforismo": "Cuando dos vocales contiguas son disímiles, opcionalmente la segunda se elide.",
+   "referencia": "KAC. §13",
+   "referencia_suttas": [
+    13
+   ],
+   "ej_original": "pañca indriyāni pañc a indriyāni (§10)20 pañc indriyāni (§12) pañcindriyāni (§11) pañc' indriyāni (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "pañc a indriyāni",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "pañca indriyāni",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "pañc indriyāni",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "pañcindriyāni",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "pañc' indriyāni",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "pañca indriyāni",
+     "sin_paso_11": false,
+     "forma_final": "pañcindriyāni",
+     "em": "pañc' indriyāni",
+     "suttas_que_operan": [
+      12
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "3",
+   "aforismo": "Cuando la vocal precedente ha sido elidida, a veces, la vocal siguiente se alarga.",
+   "referencia": "KAC. §15",
+   "referencia_suttas": [
+    15
+   ],
+   "ej_original": "saddhā idha saddh ā idha (§10) saddh idha (§12) saddh īdha (§15) saddhīdha (§11) saddh’ īdha (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "saddh ā idha",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "saddhā idha",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "saddh idha",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "saddh īdha",
+       "citas": [
+        "§15"
+       ],
+       "suttas": [
+        15
+       ]
+      },
+      {
+       "texto": "saddhīdha",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "saddh’ īdha",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "saddhā idha",
+     "sin_paso_11": false,
+     "forma_final": "saddhīdha",
+     "em": "saddh’ īdha",
+     "suttas_que_operan": [
+      12,
+      15
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "4",
+   "aforismo": "Cuando la vocal siguiente ha sido elidida, a veces, la vocal precedente se alarga.",
+   "referencia": "KAC. §16",
+   "referencia_suttas": [
+    16
+   ],
+   "ej_original": "sādhu iti sādh u iti (§10) sādh u ti (§13) sādh ū ti (§16) sādhūti (§11) sādhū ti (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "sādh u iti",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "sādhu iti",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "sādh u ti",
+       "citas": [
+        "§13"
+       ],
+       "suttas": [
+        13
+       ]
+      },
+      {
+       "texto": "sādh ū ti",
+       "citas": [
+        "§16"
+       ],
+       "suttas": [
+        16
+       ]
+      },
+      {
+       "texto": "sādhūti",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "sādhū ti",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "sādhu iti",
+     "sin_paso_11": false,
+     "forma_final": "sādhūti",
+     "em": "sādhū ti",
+     "suttas_que_operan": [
+      13,
+      16
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "5",
+   "aforismo": "A veces cuando las vocales ‘i’, ‘ī’ y ‘u’, ‘ū’ siguen a una vocal disímil que ha sido elidida, se convierten en ‘e’ y ‘o’ respectivamente.",
+   "referencia": "KAC. §14",
+   "referencia_suttas": [
+    14
+   ],
+   "ej_original": "na upeti n a upeti (§10) n upeti (§12) n opeti (§14) nopeti (§11) n’ opeti (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "n a upeti",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "na upeti",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "n upeti",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "n opeti",
+       "citas": [
+        "§14"
+       ],
+       "suttas": [
+        14
+       ]
+      },
+      {
+       "texto": "nopeti",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "n’ opeti",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "na upeti",
+     "sin_paso_11": false,
+     "forma_final": "nopeti",
+     "em": "n’ opeti",
+     "suttas_que_operan": [
+      12,
+      14
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "6",
+   "aforismo": "Cuando una vocal sigue, a veces ‘e’ se convierte en ‘y’.",
+   "referencia": "KAC. §17",
+   "referencia_suttas": [
+    17
+   ],
+   "ej_original": "me ayaṃ m e ayaṃ (§10) m y ayaṃ (§17) m y āyaṃ (§25) myāyaṃ (§11) my āyaṃ (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "m e ayaṃ",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "me ayaṃ",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "m y ayaṃ",
+       "citas": [
+        "§17"
+       ],
+       "suttas": [
+        17
+       ]
+      },
+      {
+       "texto": "m y āyaṃ",
+       "citas": [
+        "§25"
+       ],
+       "suttas": [
+        25
+       ]
+      },
+      {
+       "texto": "myāyaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "my āyaṃ",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "me ayaṃ",
+     "sin_paso_11": false,
+     "forma_final": "myāyaṃ",
+     "em": "my āyaṃ",
+     "suttas_que_operan": [
+      17,
+      25
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "7",
+   "aforismo": "Cuando una vocal sigue, a veces, ‘o’ y ‘u’ se convierten en ‘v’.",
+   "referencia": "KAC. §18",
+   "referencia_suttas": [
+    18
+   ],
+   "ej_original": "so assa s o assa (§10) s v assa (§18) svassa (§11) sv assa (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "s o assa",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "so assa",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "s v assa",
+       "citas": [
+        "§18"
+       ],
+       "suttas": [
+        18
+       ]
+      },
+      {
+       "texto": "svassa",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "sv assa",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "so assa",
+     "sin_paso_11": false,
+     "forma_final": "svassa",
+     "em": "sv assa",
+     "suttas_que_operan": [
+      18
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "8",
+   "aforismo": "Cuando una vocal sigue, ocasionalmente, ‘i’, ‘ī’ se convierten en ‘y’.",
+   "referencia": "KAC. §21",
+   "referencia_suttas": [
+    21
+   ],
+   "ej_original": "paṭisanthāravutti assa paṭisanthāravutt i assa (§10) paṭisanthāravutt y assa (§21) paṭisanthāravut y assa (por “ca” en §41) paṭisanthāravutyassa (§11) paṭisanthāravuty assa (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "paṭisanthāravutt i assa",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "paṭisanthāravutti assa",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "paṭisanthāravutt y assa",
+       "citas": [
+        "§21"
+       ],
+       "suttas": [
+        21
+       ]
+      },
+      {
+       "texto": "paṭisanthāravut y assa",
+       "citas": [
+        "por “ca” en §41"
+       ],
+       "suttas": [
+        41
+       ]
+      },
+      {
+       "texto": "paṭisanthāravutyassa",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "paṭisanthāravuty assa",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "paṭisanthāravutti assa",
+     "sin_paso_11": false,
+     "forma_final": "paṭisanthāravutyassa",
+     "em": "paṭisanthāravuty assa",
+     "suttas_que_operan": [
+      21,
+      41
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "9",
+   "aforismo": "Cuando una vocal sigue, la sílaba ‘ti’ de ‘ati’, ‘pati’ e ‘iti’ se convierte en ‘c’ y ésta se duplica.",
+   "referencia": "KAC. §19 KAC. §28",
+   "referencia_suttas": [
+    19,
+    28
+   ],
+   "ej_original": "iti etaṃ ic etaṃ (§19) icc etaṃ (§28) iccetaṃ (§11) icc etaṃ (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "iti etaṃ ic etaṃ",
+       "citas": [
+        "§19"
+       ],
+       "suttas": [
+        19
+       ]
+      },
+      {
+       "texto": "icc etaṃ",
+       "citas": [
+        "§28"
+       ],
+       "suttas": [
+        28
+       ]
+      },
+      {
+       "texto": "iccetaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "icc etaṃ",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "iti etaṃ ic etaṃ",
+     "sin_paso_11": false,
+     "forma_final": "iccetaṃ",
+     "em": "icc etaṃ",
+     "suttas_que_operan": [
+      19,
+      28
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "10",
+   "aforismo": "Cuando va seguida por una vocal, a veces, la sílaba ‘dha’ de ‘idha’, se convierte en ‘da’.",
+   "referencia": "KAC. §20",
+   "referencia_suttas": [
+    20
+   ],
+   "ej_original": "idha eva idh a eva (§10) idh eva (§12) idheva (§11) idh' eva (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "idh a eva",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "idha eva",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "idh eva",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "idheva",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "idh' eva",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "idha eva",
+     "sin_paso_11": false,
+     "forma_final": "idheva",
+     "em": "idh' eva",
+     "suttas_que_operan": [
+      12
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "11",
+   "aforismo": "Después de “yathā” y “tathā”, la ‘e’ de “eva” se convierte en ‘ri’.",
+   "referencia": "KAC. §22",
+   "referencia_suttas": [
+    22
+   ],
+   "ej_original": "yathā eva yath ā eva (§10) yath ā riva, yath a riva (§22) yathariva (§11) yatha-r-iva (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "yath ā eva",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "yathā eva",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "yath ā riva, yath a riva",
+       "citas": [
+        "§22"
+       ],
+       "suttas": [
+        22
+       ]
+      },
+      {
+       "texto": "yathariva",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "yatha-r-iva",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "yathā eva",
+     "sin_paso_11": false,
+     "forma_final": "yathariva",
+     "em": "yatha-r-iva",
+     "suttas_que_operan": [
+      22
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "12",
+   "aforismo": "El prefijo ‘abhi’ cuando va seguido por una vocal se sustituye por ‘abbh’.",
+   "referencia": "KAC. §44",
+   "referencia_suttas": [
+    44
+   ],
+   "ej_original": "abhi udīritaṃ abbh udīritaṃ (§44) abbhudīritaṃ (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "abbh udīritaṃ",
+       "citas": [
+        "§44"
+       ],
+       "suttas": [
+        44
+       ],
+       "forma_de_partida": "abhi udīritaṃ"
+      },
+      {
+       "texto": "abbhudīritaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "abhi udīritaṃ",
+     "sin_paso_11": false,
+     "forma_final": "abbhudīritaṃ",
+     "em": null,
+     "suttas_que_operan": [
+      44
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "13",
+   "aforismo": "El prefijo ‘adhi’ cuando va seguido por una vocal se sustituye por ‘ajjh’.",
+   "referencia": "KAC. §45",
+   "referencia_suttas": [
+    45
+   ],
+   "ej_original": "adhi okāse  ajjh okāse (§45) ajjhokāse (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "ajjh okāse",
+       "citas": [
+        "§45"
+       ],
+       "suttas": [
+        45
+       ],
+       "forma_de_partida": "adhi okāse"
+      },
+      {
+       "texto": "ajjhokāse",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "adhi okāse",
+     "sin_paso_11": false,
+     "forma_final": "ajjhokāse",
+     "em": null,
+     "suttas_que_operan": [
+      45
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "sara",
+   "n": "14",
+   "aforismo": "Cuando una vocal sigue, ‘i’, ‘ī’ y ‘u’, ‘ū’, se convierten en ‘ya’ y ‘uva’ respectivamente.",
+   "referencia": "KAC. §70 RŪ. §30",
+   "referencia_suttas": [
+    70,
+    30
+   ],
+   "ej_original": "tiyantaṃ =  ti + antaṃ (‘i’ de ‘ti’ recibe el nombre de ‘jha’ (§58); ‘i’ se sustituye por ‘iya’ (§70); ‘a’ de ‘iya’ se elide (§83)).  bhikkhuvāsane = bhikkhu + āsane (‘u’ de “bhikkhu” recibe el nombre de ‘la’ (§58); ‘u’ se sustituye por ‘uva’(§70); ‘a’ de ‘uva’ se elide (§83)).",
+   "aparte": "no es una secuencia: es prosa que describe dos análisis con §58, §70 y §83, aforismos de fuera del capítulo 1"
+  },
+  {
+   "sec": "sara",
+   "n": "15",
+   "aforismo": "Cuando una vocal sigue, a veces, se inserta alguna de las siguientes consonantes: ‘y’, ‘v’, ‘m’, ‘d’, ‘n’, ‘t’, ‘r’, ‘l’, ‘h’, ‘g’.",
+   "referencia": "KAC. §35",
+   "referencia_suttas": [
+    35
+   ],
+   "ej_original": "na imassa na y imassa (§35) nayimassa (§11) na-y-imassa (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "na y imassa",
+       "citas": [
+        "§35"
+       ],
+       "suttas": [
+        35
+       ],
+       "forma_de_partida": "na imassa"
+      },
+      {
+       "texto": "nayimassa",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "na-y-imassa",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "na imassa",
+     "sin_paso_11": false,
+     "forma_final": "nayimassa",
+     "em": "na-y-imassa",
+     "suttas_que_operan": [
+      35
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "1",
+   "aforismo": "A veces, una vocal, cuando va seguida por una consonante, se alarga.",
+   "referencia": "KAC. §25",
+   "referencia_suttas": [
+    25
+   ],
+   "ej_original": "khanti paramaṃ khantī paramaṃ (§25)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "khanti paramaṃ khantī paramaṃ",
+       "citas": [
+        "§25"
+       ],
+       "suttas": [
+        25
+       ]
+      }
+     ],
+     "forma_inicial": "khanti paramaṃ khantī paramaṃ",
+     "sin_paso_11": true,
+     "forma_final": "khanti paramaṃ khantī paramaṃ",
+     "em": null,
+     "suttas_que_operan": [
+      25
+     ]
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "2",
+   "aforismo": "A veces, una vocal, cuando va seguida por una consonante, se acorta.",
+   "referencia": "KAC. §26",
+   "referencia_suttas": [
+    26
+   ],
+   "ej_original": "bhovādī nāma bhovādi nāma (§26)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "bhovādī nāma bhovādi nāma",
+       "citas": [
+        "§26"
+       ],
+       "suttas": [
+        26
+       ]
+      }
+     ],
+     "forma_inicial": "bhovādī nāma bhovādi nāma",
+     "sin_paso_11": true,
+     "forma_final": "bhovādī nāma bhovādi nāma",
+     "em": null,
+     "suttas_que_operan": [
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "3",
+   "aforismo": "A veces, la “o” de “eta” y “ta”, cuando va seguida por una consonante, se elide.",
+   "referencia": "KAC. §27",
+   "referencia_suttas": [
+    27
+   ],
+   "ej_original": "s o sīlavā (§10) s sīlavā, s a sīlavā (§27) sa sīlavā (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "s o sīlavā",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ]
+      },
+      {
+       "texto": "s sīlavā, s a sīlavā",
+       "citas": [
+        "§27"
+       ],
+       "suttas": [
+        27
+       ]
+      },
+      {
+       "texto": "sa sīlavā",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "s o sīlavā",
+     "sin_paso_11": false,
+     "forma_final": "sa sīlavā",
+     "em": null,
+     "suttas_que_operan": [
+      27
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "4",
+   "aforismo": "A veces, después de una vocal, la consonante siguiente se duplica.",
+   "referencia": "KAC. §28",
+   "referencia_suttas": [
+    28
+   ],
+   "ej_original": "idha pamādo idha ppamādo (§28) idhappamādo (§11) idha ppamādo (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "idha ppamādo",
+       "citas": [
+        "§28"
+       ],
+       "suttas": [
+        28
+       ],
+       "forma_de_partida": "idha pamādo"
+      },
+      {
+       "texto": "idhappamādo",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "idha ppamādo",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "idha pamādo",
+     "sin_paso_11": false,
+     "forma_final": "idhappamādo",
+     "em": "idha ppamādo",
+     "suttas_que_operan": [
+      28
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "5",
+   "aforismo": "A veces, las consonantes conjuntas ‘ty’, ‘ly’, ‘ny’, ‘dy’ se convierten en ‘c’, ‘l’, ‘ñ’, ‘j’ respectivamente y después éstas se duplican.",
+   "referencia": "KAC. §269 RŪ. §41",
+   "referencia_suttas": [
+    269,
+    41
+   ],
+   "ej_original": "jāti + andho jāti + andho (§10) jāty + andho (§21) jāc + andho (§269) jācc + andho (§28) jāccandho (§10)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "jāti + andho",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "jāti + andho",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "jāty + andho",
+       "citas": [
+        "§21"
+       ],
+       "suttas": [
+        21
+       ]
+      },
+      {
+       "texto": "jāc + andho",
+       "citas": [
+        "§269"
+       ],
+       "suttas": [
+        269
+       ]
+      },
+      {
+       "texto": "jācc + andho",
+       "citas": [
+        "§28"
+       ],
+       "suttas": [
+        28
+       ]
+      },
+      {
+       "texto": "jāccandho",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ]
+      }
+     ],
+     "forma_inicial": "jāti + andho",
+     "sin_paso_11": true,
+     "forma_final": "jāccandho",
+     "em": null,
+     "suttas_que_operan": [
+      21,
+      28,
+      269
+     ]
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "6",
+   "aforismo": "A veces, después de una vocal, la segunda y cuarta consonante de las agrupadas se duplican en la primera y tercera de las agrupadas respectivamente.",
+   "referencia": "KAC. §29",
+   "referencia_suttas": [
+    29
+   ],
+   "ej_original": "yatra ṭhitaṃ yatra ṭṭhitaṃ (§29) yatraṭṭhitaṃ (§11) yatra ṭṭhitaṃ (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "yatra ṭṭhitaṃ",
+       "citas": [
+        "§29"
+       ],
+       "suttas": [
+        29
+       ],
+       "forma_de_partida": "yatra ṭhitaṃ"
+      },
+      {
+       "texto": "yatraṭṭhitaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "yatra ṭṭhitaṃ",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "yatra ṭhitaṃ",
+     "sin_paso_11": false,
+     "forma_final": "yatraṭṭhitaṃ",
+     "em": "yatra ṭṭhitaṃ",
+     "suttas_que_operan": [
+      29
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "7",
+   "aforismo": "A veces el prefijo ‘pati’ cuando va seguido por una vocal o una consonante, se convierte en ‘paṭi’.",
+   "referencia": "KAC. §48",
+   "referencia_suttas": [
+    48
+   ],
+   "ej_original": "pati haññati paṭi haññati (§48) paṭihaññati (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "paṭi haññati",
+       "citas": [
+        "§48"
+       ],
+       "suttas": [
+        48
+       ],
+       "forma_de_partida": "pati haññati"
+      },
+      {
+       "texto": "paṭihaññati",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "pati haññati",
+     "sin_paso_11": false,
+     "forma_final": "paṭihaññati",
+     "em": null,
+     "suttas_que_operan": [
+      48
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "8",
+   "aforismo": "Cuando va seguida por una consonante, la vocal final de “putha” se convierte en “u”.",
+   "referencia": "KAC. §49",
+   "referencia_suttas": [
+    49
+   ],
+   "ej_original": "putha jano puth a jano (§10) puth u jano (§49) puth u jjano (§28) puthujjano (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "puth a jano",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "putha jano",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "puth u jano",
+       "citas": [
+        "§49"
+       ],
+       "suttas": [
+        49
+       ]
+      },
+      {
+       "texto": "puth u jjano",
+       "citas": [
+        "§28"
+       ],
+       "suttas": [
+        28
+       ]
+      },
+      {
+       "texto": "puthujjano",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "putha jano",
+     "sin_paso_11": false,
+     "forma_final": "puthujjano",
+     "em": null,
+     "suttas_que_operan": [
+      28,
+      49
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "9",
+   "aforismo": "A veces, cuando va seguido por una consonante, el prefijo ‘ava’ se convierte en ‘o’.",
+   "referencia": "KAC. §50",
+   "referencia_suttas": [
+    50
+   ],
+   "ej_original": "ava naddhā o naddhā (§50) onaddhā (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "o naddhā",
+       "citas": [
+        "§50"
+       ],
+       "suttas": [
+        50
+       ],
+       "forma_de_partida": "ava naddhā"
+      },
+      {
+       "texto": "onaddhā",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "ava naddhā",
+     "sin_paso_11": false,
+     "forma_final": "onaddhā",
+     "em": null,
+     "suttas_que_operan": [
+      50
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "10",
+   "aforismo": "En algunos casos, cuando va seguida por una consonante, la letra ‘o’, la substitución del prefijo ‘ava’, se convierte en ‘u’.",
+   "referencia": "KAC. §79 RŪ. §46",
+   "referencia_suttas": [
+    79,
+    46
+   ],
+   "ej_original": "ava + gate o + gate (§50) u + gate (§79) u + ggate (§28) uggate (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "ava + gate o + gate",
+       "citas": [
+        "§50"
+       ],
+       "suttas": [
+        50
+       ]
+      },
+      {
+       "texto": "u + gate",
+       "citas": [
+        "§79"
+       ],
+       "suttas": [
+        79
+       ]
+      },
+      {
+       "texto": "u + ggate",
+       "citas": [
+        "§28"
+       ],
+       "suttas": [
+        28
+       ]
+      },
+      {
+       "texto": "uggate",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "ava + gate o + gate",
+     "sin_paso_11": false,
+     "forma_final": "uggate",
+     "em": null,
+     "suttas_que_operan": [
+      28,
+      50,
+      79
+     ],
+     "une_bien": false,
+     "une_sin_el_mas": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "11",
+   "aforismo": "A veces, cuando una consonante sigue, hay inserción de la letra ‘o’.",
+   "referencia": "KAC. §36",
+   "referencia_suttas": [
+    36
+   ],
+   "ej_original": "para sahassaṃ par a sahassaṃ (§10) par sahassaṃ (§12) par o sahassaṃ (§36) parosahassaṃ (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "par a sahassaṃ",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "para sahassaṃ",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "par sahassaṃ",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "par o sahassaṃ",
+       "citas": [
+        "§36"
+       ],
+       "suttas": [
+        36
+       ]
+      },
+      {
+       "texto": "parosahassaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "para sahassaṃ",
+     "sin_paso_11": false,
+     "forma_final": "parosahassaṃ",
+     "em": null,
+     "suttas_que_operan": [
+      12,
+      36
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "byanjana",
+   "n": "12",
+   "aforismo": "Cuando hay elisión de la inflexión nominal, la vocal final del grupo de ‘mana’ se convierte en ‘o’.",
+   "referencia": "KAC. §183 RŪ. §48",
+   "referencia_suttas": [
+    183,
+    48
+   ],
+   "ej_original": "mana mayaṃ man a mayaṃ (§10) man o mayaṃ (§183) manomayaṃ (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "man a mayaṃ",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ],
+       "forma_de_partida": "mana mayaṃ",
+       "corte_comprobado": true
+      },
+      {
+       "texto": "man o mayaṃ",
+       "citas": [
+        "§183"
+       ],
+       "suttas": [
+        183
+       ]
+      },
+      {
+       "texto": "manomayaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "mana mayaṃ",
+     "sin_paso_11": false,
+     "forma_final": "manomayaṃ",
+     "em": null,
+     "suttas_que_operan": [
+      183
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "1",
+   "aforismo": "A veces, cuando va seguida por una consonante agrupada, la “niggahīta” se convierte en la última consonante del grupo.",
+   "referencia": "KAC. §31",
+   "referencia_suttas": [
+    31
+   ],
+   "ej_original": "dhammaṃ care dhammañ care (§31) dhammañcare (§11) dhammañ care (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "dhammañ care",
+       "citas": [
+        "§31"
+       ],
+       "suttas": [
+        31
+       ],
+       "forma_de_partida": "dhammaṃ care"
+      },
+      {
+       "texto": "dhammañcare",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "dhammañ care",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "dhammaṃ care",
+     "sin_paso_11": false,
+     "forma_final": "dhammañcare",
+     "em": "dhammañ care",
+     "suttas_que_operan": [
+      31
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "2",
+   "aforismo": "A veces, cuando la consonante ‘l’ sigue, la “niggahīta” del prefijo ‘saṃ’ y del final de “puma” se convierte en ‘l’.",
+   "referencia": "KAC. §31 RŪ. §49",
+   "referencia_suttas": [
+    31,
+    49
+   ],
+   "ej_original": "puggaṃ aṃ puggal aṃ (por “vā” en §31) puggalaṃ (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "puggal aṃ",
+       "citas": [
+        "por “vā” en §31"
+       ],
+       "suttas": [
+        31
+       ],
+       "forma_de_partida": "puggaṃ aṃ"
+      },
+      {
+       "texto": "puggalaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "puggaṃ aṃ",
+     "sin_paso_11": false,
+     "forma_final": "puggalaṃ",
+     "em": null,
+     "suttas_que_operan": [
+      31
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "3",
+   "aforismo": "A veces, cuando “eva” y “hi” siguen, la “niggahīta” se convierte en ‘ñ’; y ésta se duplica cuando va seguida por “eva”.",
+   "referencia": "KAC. §27",
+   "referencia_suttas": [
+    27
+   ],
+   "ej_original": "paccattaṃ eva paccatañ eva (§32) paccataññ eva (§28) paccattaññeva (§11) paccattañ ñeva (EM)  taṃ hi tañ hi (§32) tañhi (§11) tañ hi (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "paccattaṃ eva paccatañ eva",
+       "citas": [
+        "§32"
+       ],
+       "suttas": [
+        32
+       ]
+      },
+      {
+       "texto": "paccataññ eva",
+       "citas": [
+        "§28"
+       ],
+       "suttas": [
+        28
+       ]
+      },
+      {
+       "texto": "paccattaññeva",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "paccattañ ñeva",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "paccattaṃ eva paccatañ eva",
+     "sin_paso_11": false,
+     "forma_final": "paccattaññeva",
+     "em": "paccattañ ñeva",
+     "suttas_que_operan": [
+      28,
+      32
+     ],
+     "une_bien": false,
+     "em_coincide": true
+    },
+    {
+     "pasos": [
+      {
+       "texto": "tañ hi",
+       "citas": [
+        "§32"
+       ],
+       "suttas": [
+        32
+       ],
+       "forma_de_partida": "taṃ hi"
+      },
+      {
+       "texto": "tañhi",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "tañ hi",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "taṃ hi",
+     "sin_paso_11": false,
+     "forma_final": "tañhi",
+     "em": "tañ hi",
+     "suttas_que_operan": [
+      32
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "4",
+   "aforismo": "A veces, cuando ‘y’ sigue, la “niggahīta” junto con ‘y’ se convierte en ‘ñ’; y ésta se duplica.",
+   "referencia": "KAC. §28",
+   "referencia_suttas": [
+    28
+   ],
+   "ej_original": "saṃ yogo sañ ñogo (§33) saññogo (§11) (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "sañ ñogo",
+       "citas": [
+        "§33"
+       ],
+       "suttas": [
+        33
+       ],
+       "forma_de_partida": "saṃ yogo"
+      },
+      {
+       "texto": "saññogo",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "saṃ yogo",
+     "sin_paso_11": false,
+     "forma_final": "saññogo",
+     "em": null,
+     "suttas_que_operan": [
+      33
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "5",
+   "aforismo": "A veces, cuando una vocal sigue, la “niggahīta” se convierte en ‘m’ y ‘d’.",
+   "referencia": "KAC. §34",
+   "referencia_suttas": [
+    34
+   ],
+   "ej_original": "taṃ ahaṃ tam ahaṃ (§34) tamahaṃ (§11) tam ahaṃ (EM)  etaṃ avoca etad avoca (§34) etadavoca (§11) etad avoca (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "tam ahaṃ",
+       "citas": [
+        "§34"
+       ],
+       "suttas": [
+        34
+       ],
+       "forma_de_partida": "taṃ ahaṃ"
+      },
+      {
+       "texto": "tamahaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "tam ahaṃ",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "taṃ ahaṃ",
+     "sin_paso_11": false,
+     "forma_final": "tamahaṃ",
+     "em": "tam ahaṃ",
+     "suttas_que_operan": [
+      34
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    },
+    {
+     "pasos": [
+      {
+       "texto": "etad avoca",
+       "citas": [
+        "§34"
+       ],
+       "suttas": [
+        34
+       ],
+       "forma_de_partida": "etaṃ avoca"
+      },
+      {
+       "texto": "etadavoca",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "etad avoca",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "etaṃ avoca",
+     "sin_paso_11": false,
+     "forma_final": "etadavoca",
+     "em": "etad avoca",
+     "suttas_que_operan": [
+      34
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "6",
+   "aforismo": "A veces, cuando una vocal sigue, la “niggahīta” se elide.",
+   "referencia": "KAC. §38",
+   "referencia_suttas": [
+    38
+   ],
+   "ej_original": "tāsaṃ ahaṃ tāsa ahaṃ (§38) tās a ahaṃ (§10) tās ahaṃ (§12) tās āhaṃ (§15) tāsāhaṃ (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "tāsaṃ ahaṃ tāsa ahaṃ",
+       "citas": [
+        "§38"
+       ],
+       "suttas": [
+        38
+       ]
+      },
+      {
+       "texto": "tās a ahaṃ",
+       "citas": [
+        "§10"
+       ],
+       "suttas": [
+        10
+       ]
+      },
+      {
+       "texto": "tās ahaṃ",
+       "citas": [
+        "§12"
+       ],
+       "suttas": [
+        12
+       ]
+      },
+      {
+       "texto": "tās āhaṃ",
+       "citas": [
+        "§15"
+       ],
+       "suttas": [
+        15
+       ]
+      },
+      {
+       "texto": "tāsāhaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "tāsaṃ ahaṃ tāsa ahaṃ",
+     "sin_paso_11": false,
+     "forma_final": "tāsāhaṃ",
+     "em": null,
+     "suttas_que_operan": [
+      12,
+      15,
+      38
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "7",
+   "aforismo": "A veces, cuando una consonante sigue, la “niggahīta” se elide.",
+   "referencia": "KAC. §39",
+   "referencia_suttas": [
+    39
+   ],
+   "ej_original": "ariyasaccānaṃ dassanaṃ ariyasaccāna dassanaṃ (§39) ariyasaccānadassanaṃ (§11) ariyasaccāna’ dassanaṃ (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "ariyasaccāna dassanaṃ",
+       "citas": [
+        "§39"
+       ],
+       "suttas": [
+        39
+       ],
+       "forma_de_partida": "ariyasaccānaṃ dassanaṃ"
+      },
+      {
+       "texto": "ariyasaccānadassanaṃ",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "ariyasaccāna’ dassanaṃ",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "ariyasaccānaṃ dassanaṃ",
+     "sin_paso_11": false,
+     "forma_final": "ariyasaccānadassanaṃ",
+     "em": "ariyasaccāna’ dassanaṃ",
+     "suttas_que_operan": [
+      39
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "8",
+   "aforismo": "A veces, la vocal después de la “niggahīta” se elide y la “niggahīta” se convierte en la consonante final del grupo correspondiente.",
+   "referencia": "KAC. §40",
+   "referencia_suttas": [
+    40
+   ],
+   "ej_original": "abhinanduṃ iti abhinanduṃ ti (§40)  abhinandun ti (§31) abhinandunti (§11) abhinandun ti (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "abhinanduṃ iti abhinanduṃ ti",
+       "citas": [
+        "§40"
+       ],
+       "suttas": [
+        40
+       ]
+      },
+      {
+       "texto": "abhinandun ti",
+       "citas": [
+        "§31"
+       ],
+       "suttas": [
+        31
+       ]
+      },
+      {
+       "texto": "abhinandunti",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "abhinandun ti",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "abhinanduṃ iti abhinanduṃ ti",
+     "sin_paso_11": false,
+     "forma_final": "abhinandunti",
+     "em": "abhinandun ti",
+     "suttas_que_operan": [
+      31,
+      40
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "9",
+   "aforismo": "A veces, cuando la vocal siguiente a la “niggahīta” se elide, si la consonante siguiente es conjunta, ésta se convierte en no-conjunta.",
+   "referencia": "KAC. §41",
+   "referencia_suttas": [
+    41
+   ],
+   "ej_original": "evaṃ assa evaṃ ssa (§40) evaṃ sa (§41) evaṃsa (§11) evaṃ ’sa (EM)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "evaṃ assa evaṃ ssa",
+       "citas": [
+        "§40"
+       ],
+       "suttas": [
+        40
+       ]
+      },
+      {
+       "texto": "evaṃ sa",
+       "citas": [
+        "§41"
+       ],
+       "suttas": [
+        41
+       ]
+      },
+      {
+       "texto": "evaṃsa",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      },
+      {
+       "texto": "evaṃ ’sa",
+       "citas": [
+        "EM"
+       ],
+       "suttas": []
+      }
+     ],
+     "forma_inicial": "evaṃ assa evaṃ ssa",
+     "sin_paso_11": false,
+     "forma_final": "evaṃsa",
+     "em": "evaṃ ’sa",
+     "suttas_que_operan": [
+      40,
+      41
+     ],
+     "une_bien": true,
+     "em_coincide": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "10",
+   "aforismo": "A veces, cuando una vocal o una consonante sigue, se inserta la “niggahīta”.",
+   "referencia": "KAC. §37",
+   "referencia_suttas": [
+    37
+   ],
+   "ej_original": "cakkhu udapādi cakkhu ṃ udapādi (§37) cakkhuṃ udapādi (§11)  ava siro ava ṃ siro (§37) avaṃsiro (§11)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "cakkhu ṃ udapādi",
+       "citas": [
+        "§37"
+       ],
+       "suttas": [
+        37
+       ],
+       "forma_de_partida": "cakkhu udapādi"
+      },
+      {
+       "texto": "cakkhuṃ udapādi",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "cakkhu udapādi",
+     "sin_paso_11": false,
+     "forma_final": "cakkhuṃ udapādi",
+     "em": null,
+     "suttas_que_operan": [
+      37
+     ],
+     "une_bien": true
+    },
+    {
+     "pasos": [
+      {
+       "texto": "ava ṃ siro",
+       "citas": [
+        "§37"
+       ],
+       "suttas": [
+        37
+       ],
+       "forma_de_partida": "ava siro"
+      },
+      {
+       "texto": "avaṃsiro",
+       "citas": [
+        "§11"
+       ],
+       "suttas": [
+        11
+       ]
+      }
+     ],
+     "forma_inicial": "ava siro",
+     "sin_paso_11": false,
+     "forma_final": "avaṃsiro",
+     "em": null,
+     "suttas_que_operan": [
+      37
+     ],
+     "une_bien": true
+    }
+   ]
+  },
+  {
+   "sec": "niggahita",
+   "n": "11",
+   "aforismo": "A veces hay transposición de las letras ‘r’, ‘h’, ‘n’.",
+   "referencia": "KAC. §51 RŪ §59",
+   "referencia_suttas": [
+    51,
+    59
+   ],
+   "ej_original": "bahvābādho bavhābādho (por “ca” de §20)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "bahvābādho bavhābādho",
+       "citas": [
+        "por “ca” de §20"
+       ],
+       "suttas": [
+        20
+       ]
+      }
+     ],
+     "forma_inicial": "bahvābādho bavhābādho",
+     "sin_paso_11": true,
+     "forma_final": "bahvābādho bavhābādho",
+     "em": null,
+     "suttas_que_operan": [
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "sec": "pakati",
+   "n": "1",
+   "aforismo": "A veces, la vocal que precede, cuando va seguida por una vocal, permanece sin cambios.",
+   "referencia": "KAC. §24",
+   "referencia_suttas": [
+    24
+   ],
+   "ej_original": "bhikkhave evaṃ vadāmi (§24)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "bhikkhave evaṃ vadāmi",
+       "citas": [
+        "§24"
+       ],
+       "suttas": [
+        24
+       ]
+      }
+     ],
+     "forma_inicial": "bhikkhave evaṃ vadāmi",
+     "sin_paso_11": true,
+     "forma_final": "bhikkhave evaṃ vadāmi",
+     "em": null,
+     "suttas_que_operan": [
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "sec": "pakati",
+   "n": "2",
+   "aforismo": "A veces, la vocal que precede, cuando va seguida por una consonante, permanece sin cambios.",
+   "referencia": "KAC. §23",
+   "referencia_suttas": [
+    23
+   ],
+   "ej_original": "manopubbaṅgamā dhammā (§23)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "manopubbaṅgamā dhammā",
+       "citas": [
+        "§23"
+       ],
+       "suttas": [
+        23
+       ]
+      }
+     ],
+     "forma_inicial": "manopubbaṅgamā dhammā",
+     "sin_paso_11": true,
+     "forma_final": "manopubbaṅgamā dhammā",
+     "em": null,
+     "suttas_que_operan": [
+      23
+     ]
+    }
+   ]
+  },
+  {
+   "sec": "pakati",
+   "n": "3",
+   "aforismo": "A veces, cuando una consonante sigue, la “niggahīta” permanece sin cambio.",
+   "referencia": "KAC. §30",
+   "referencia_suttas": [
+    30
+   ],
+   "ej_original": "evaṃ vutte (§30)",
+   "secuencias": [
+    {
+     "pasos": [
+      {
+       "texto": "evaṃ vutte",
+       "citas": [
+        "§30"
+       ],
+       "suttas": [
+        30
+       ]
+      }
+     ],
+     "forma_inicial": "evaṃ vutte",
+     "sin_paso_11": true,
+     "forma_final": "evaṃ vutte",
+     "em": null,
+     "suttas_que_operan": [
+      30
+     ]
+    }
+   ]
+  }
+ ]
+}

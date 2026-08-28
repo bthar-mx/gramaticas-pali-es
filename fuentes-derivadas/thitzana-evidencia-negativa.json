@@ -1,0 +1,783 @@
+{
+ "origen": "fuentes-derivadas/thitzana-sandhi-51-tabla.json",
+ "procedencia": "derivado — OCR y lectura de imagen, sin verificar",
+ "pali_fiable_en": [
+  10,
+  17,
+  30,
+  31,
+  42
+ ],
+ "evidencia_negativa": [
+  {
+   "kac": 11,
+   "ru": 14,
+   "sutta": "Naye paraṃ yutte.",
+   "palabra": "Yutte",
+   "pregunta": "Yutte’ti kasmā?",
+   "explicacion": "Why the word “yutte” is included in Sutta? *Akkocchi maṃ, *avadhi maṃ, *ajini maṃ, *ahāsi me. Akkocchi-(he) reviled. maṃ-me. avadhi-(he) hurt. maṃ-me. ajini(he) conquered. maṃ-me, ahāsi-(he) took me-my (things). Ettha pana yuttaṃ na hoti. Here in this example “Akkocchi maṃ etc.,”, there is no “yutta”, hence no need to re-attach any vowel-less consonant in those phrases. (In such examples, the term “yutte”, as a result, is irrelevant and inapplicable.) Note: Yutta means being appropriate, i.e. the applicability of Sandhi procedure. Kasmā-kiṃ-what+smā-for, ablative case-ending. i.e. Why?. The First Section of Sandhi ends. ## Dutiya Kaṇḍa The Second Section",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 13,
+   "ru": 15,
+   "sutta": "Vā paro asarūpā.",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why the word “Vā” is included in Sutta? *Pañci’ndriyāni. *Taya’ssu dhammā jahitā bhavanti. It is to show that the function of this rule is inapplicable in such instances as “Pañci’ndriyāni, Taya’ssu dhammā jahitā bhavanti etc.” because it is restricted by “vā”",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 14,
+   "ru": 16,
+   "sutta": "Kvacā’savaṇṇaṃ lutte.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? Yassi’ndriyāni. Tathū’pamaṃ dhammavaraṃ adesayi. It is to show that the function of this rule is inapplicable in the examples shown below as implied by the word “kvaci”. * Yassi’ndriyāni. * Tathū’pamaṃ dhammavaraṃ adesayi.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 15,
+   "ru": 17,
+   "sutta": "Dīghaṃ.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in examples shown below as restricted by “kvaci”. * Pañcahu’pāli aṅgehi samannāgato. * Nattha’ññaṃ kiñci.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 16,
+   "ru": 18,
+   "sutta": "Pubbo ca.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some examples shown below as restricted by “kvaci”. * Iti’ssa muhuttam’pi.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 17,
+   "ru": 19,
+   "sutta": "Ya’me’dantassā’deso.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in the examples shown below as restricted by “kvaci”. * Ne’nāgatā. * Iti ne’ttha.",
+   "pali_fiable": true,
+   "procedencia": "lectura de imagen"
+  },
+  {
+   "kac": 18,
+   "ru": 20,
+   "sutta": "Va’mo’du’dantānaṃ.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in such instances of phrase examples as “* cattāro’me bhikkhave dhammā. * kinnumā’va samaṇiyo” etc.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 19,
+   "ru": 22,
+   "sutta": "Sabbo caṃ ti.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in examples shown below as restricted by “kvaci”. * Iti’ssa muhuttam’pi.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 20,
+   "ru": 27,
+   "sutta": "Do dhassa ca.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as restricted by “kvaci”. * Idhe’va maraṇaṃ bhavissati. Caggahaṇena dha-kārassa ha-kārā’deso hoti By means of the word “ca” the consonant “dha” sometimes changes into “ha”. [An additional sub-function applied by force of the word ‘ca’] Functions by “yogavibhāga” (the split-Sutta procedure) Suttavibhāgena bahudhā siyā. By means of splitting multiple partial Suttas such as “To dassa ca” etc., other forms of various morphological changes are made possible. (See examples below shown in bold-letters. This sign > means it becomes. All examples are quite easy to understand. As a matter of fact, these examples are not Sandhi but a kind of word-form changes only) (1) To dassa, The consonant “d” is changed into “t”. yathā? for example, • Sugato-well-gone or the Buddha who speaks only the wholesome, beneficial and truthful words. [Su-well+gato-gone, uttered or said] • Sugato> Sugado. Note: No procedure of separation and combination of Sandhi is needed. The SM of subsequent examples are also the same. Just change into any syllable as required by the enjoined rules. (2) Ṭo tassa. The consonant “t” is changed into “ṭ”. yathā? • Dukkaṭaṃ-a badly done deed. e.g., • Dukkaṭaṃ> Dukkataṃ. [du-badly+kaṭaṃ-done, an improper act] (3) Dho tassa. The consonant “t” is changed into “dh”. yathā? • gandhabbo-a would-be being who is going to be conceived into a would-be mother’s womb. e.g. • Gandhabbo> Gantabbo. [Gan-a derivative of gamu+tabbaa Kita affix] (4) Tro ttassa. The conjunct-consonant “tt” is changed into “tr”. yathā? • Atrajo-self-generated, the child born of oneself, one’s own child. e.g., • Atrajo> Attajo. [Atta-self+jo-born of] (5) Ko gassa. The consonant “g” is changed into “k”. yathā? • Kulūpako-the monk who always used to visit lay people’s home. e.g., • Kulūpako> Kulūpago. [kula-family+upago-approacher] (6) Lo rassa. The consonant “r” is changed into “l”. yathā? • Mahāsālo-the one who has great wealth. e.g., • Mahāsālo> Mahāsāro. [Mahā-great+sāro-wealth] (7) Jo yassa. The consonant “y” is changed into “j”. yathā? • Gavajo-a kind of cattle raised in hilly regions or anything that is a product of cattle such as milk, ghee etc. e.g., • Gavajo> Gavayo. [Gava-cattle+jo-born of, derived from]. (8) Bbo vvassa. The consonant “vv” is changed into “bb”. yathā? • Kubbato-of the one who has done, of doer. e.g., • Ku’bbato> Kuvvato. [Ku<derivative of kara+bbato<anta. See Sutta 127 for “to”] (9) Ko yassa. The consonant “y” is changed into “k”. yathā? • Sake-of one’s own. e.g., • Sake> Saye. (10) Yo jassa. The consonant “j” is changed into “y”. yathā? • Niyaṃputtaṃ-the child born of oneself. e.g., • Niyaṃputtaṃ>Nijaṃputtaṃ (11) Ko tassa. The consonant “t” is changed into “k”. yathā? • niyako-permanent. e.g., • Niyako>Niyato. (12) Cco ttassa. The consonant “tt” is changed into “cc”. yathā? • Bhacco-wage-earning worker, the servant. e.g., • Bhacco>Bhatto. (13) Pho passa. The consonant “p” is changed into “ph”. yathā? • Nipphatti-accomplishment, the act of finishing. e.g., • Nipphatti>Nipatti. (14) Kho kassa. The consonant “k” is changed into “kh”. yathā? • Nikkhamati-(He) goes out, leaves. e.g., • Nikkhamati>Nikkamati. Change the last “k” into “kh”. It becomes Nikkhamati. Icceva’mādī yojetabbā. Other similar examples (like these shown here), should be applied as per these rules. [The split-Sutta functions: 14]",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 21,
+   "ru": 21,
+   "sutta": "Ivaṇṇo yaṃ navā.",
+   "palabra": "Navā",
+   "pregunta": "Navā’ti kasmā?",
+   "explicacion": "Pañcaha’ṅgehi samannāgato. Muttacāgī anu’ddhato. Why is there the word “navā” in Sutta? It is to show that the function of this rule is inapplicable in such instances of phrase examples as “pañcaha’ṅgehi samannāgato, muttacāgī anu’ddhato” and so on as it is being restricted by the word “navā”.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 22,
+   "ru": 28,
+   "sutta": "Evā’dissa ri pubbo ca rasso.",
+   "palabra": "Navā",
+   "pregunta": "Navā’ti kasmā?",
+   "explicacion": "*Yathā eva. *Tathā eva. Why is there the word “navā” in Sutta? It is to show that the function of this Sutta’s rule is inapplicable in such instances of phrase examples as “yathā eva, tathā eva” etc. (There is no Sandhi in the example. Hence, inapplicable. These words are already separate words). The Second Section of Sandhi ends. ## Tatiya Kaṇḍa The Third Section",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 24,
+   "ru": 35,
+   "sutta": "Sare kvaci.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why there is the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in the examples shown below as restricted by the word “kvaci”. * Appassutā’yaṃ puriso. Note: The relevant Sutta for each relevant function is an easy guess work for a keen student. So sometimes it will be intentionally left unexplained.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 25,
+   "ru": 37,
+   "sutta": "Dīghaṃ.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in examples shown below as restricted by “kvaci”. * Idha modati * Pecca modati. Idha-Here in this life. modati-(he) rejoices. Pecca-there in next life. modati-(he) rejoices. * Patilīyati. * Paṭihaññati. Patilīyati-(he) hesitates. Paṭihaññati-(he) is stressed out or hurt. Note: No Sandhi procedure in * examples. This function occurs: (1) where a convenient and easy recitation of a verse is required, (2) and where exact metrical measure of a Pāli verse (gāthā) is needed to be maintained for the smooth versification.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 26,
+   "ru": 38,
+   "sutta": "Rassaṃ.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in such instances of phrase examples shown below as it is being restricted by the word “kvaci”. * Sammā samādhi. * Sāvittī chandaso mukhaṃ. * Upanīyati jīvita’mappa’māyu. dressed to “sāvitrī” is the beginning of vedic hymns (Rig veda III, 62, 10). (c) * Upanīyati jīvitaṃ+appaṃ+āyu Upanīyati-is brought nearer (to death). jīvitaṃ-life. appaṃshort. āyu-age. i.e. Short life and age (of living beings) is brought nearer (to death day by day). Note: This function of Sutta occurs: (1) when preserving exact metrical measure in prosody, (2) where a new syllable is being inserted, (3) in the words with conjunct-consonants. See the examples shown in order of point of occurrence. Please see the underlined short vowels which are made into a Rassa (shortened vowel). (1) Bhovadi Nāma So Hoti (Here “i” is intentionally shortened to preserve the metrical measure of the verse) (2) Samma’dakkhato [Sammā+akkhāto] (Here “a” is intentionally shortened due to an inserted syllable “d”) (3) Parakkamo [Parā+kamo] (Here “a” is intentionally shortened due to the conjunct-consonants “kk”)",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 27,
+   "ru": 39,
+   "sutta": "Lopañ’ca tatrā’kāro.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “Kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some examples shown below as implied by the word “kvaci”. * So muni-that monk. * Eso dhammo padissati. Eso dhammo-That Dhamma. padissati-is clearly seen (that Dhamma is seen clearly). * Na so kāsāva’marahati. Na-does not. so-that person. kāsāvaṃ-the robe. arahati-deserves (to wear). i.e. That person does not deserve (to wear) the robe. Note: There is no Sandhi process occurred in the examples except in the non-example word “kāsāva’marahati”.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 28,
+   "ru": 40,
+   "sutta": "Para dvebhāvo ṭhāne.",
+   "palabra": "Ṭhāne",
+   "pregunta": "Ṭhāne’ti kasmā?",
+   "explicacion": "Why is there the word “ṭhāne” in Sutta? It is to show that the function of this rule is inapplicable in some instances as shown below as they are not the right point for reduplication procedure. * Idha modati, * Pecca modati. (Refer to Sutta 25) Note: No Sandhi process in these examples. Table of Reduplication with Similar Consonants. The Consonants eligible for homogenous reduplication process by the rule of this Sutta No.28, are shown in order of their own grouping. “r, ḷ and h” are inapplicable for reduplication. Though v+v are augmented as “vv”, it usually further changes as “bb”.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 29,
+   "ru": 42,
+   "sutta": "Vagge ghosā’ghosānaṃ tatiya, paṭhamā.",
+   "palabra": "Ṭhāne",
+   "pregunta": "Ṭhāne’ti kasmā?",
+   "explicacion": "Why is there the word “ṭhāne” in Sutta? It is to show that the function of this rule is inapplicable in the example shown below as it is not the due place for this rule. * Idha cetaso daḷhaṃ gaṇhāti thāmasā. Idha-in this noble teaching of Budda. cetaso-of the mind. daḷhaṃ- firmly. gaṇhāti-holds or focuses. thāmasā-by power of. i.e. In this noble teaching of Buddha, (The disciple who is committed) firmly holds his (object of meditation) by power of the concentrated mind. The Third Section of Sandhi ends. ## Catuttha Kaṇḍa The Fourth Section",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 31,
+   "ru": 49,
+   "sutta": "Vagga’ntaṃ vā vagge",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this rule is inapplicable in the examples shown below as restricted by “vā”. TABLE OF VAGGANTA-FUNCTION This table explains how “ṃ” is to be systematically morphed into the respective end-consonants of vagga. Note: The example shown with * mark are not frequently found in the majority of Pāli texts.",
+   "pali_fiable": true,
+   "procedencia": "lectura de imagen"
+  },
+  {
+   "kac": 32,
+   "ru": 50,
+   "sutta": "E,he ñaṃ",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as restricted by the word “vā”. thus. hoti-is. subhāsitaṃ-well-said. i.e. Having known that Dhamma thus, (the word thus said) is well-said.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 33,
+   "ru": 51,
+   "sutta": "Sa ye ca [Sa+ye+ca. 3 words]",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as restricted by “vā”. * Saṃyogo. * Saṃyuttaṃ.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 34,
+   "ru": 52,
+   "sutta": "Ma,dā sare",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this rule is inapplicable in examples shown below as it is restricted by the word “vā”. *Akkocchi maṃ, *avadhi maṃ, *ajini maṃ, *ahāsi me. (Re: Sutta 11)",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 35,
+   "ru": 34,
+   "sutta": "Ya, va, ma, da, na, ta, ra, lā cā’gamā",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this Sutta is inapplicable in some instances shown below as it is restricted by the word “vā”. * Evaṃ mahiddhiyā esā. Evaṃ-thus. mahiddhiyā-is of great power. esā-This condition of having wholesome deeds. i.e. This condition of having wholesome deeds is thus of great power. * Akkocchi maṃ, avadhi maṃ, ajini maṃ, ahāsi me. (Re: Sutta 11) * ajeyyo anugāmiko. ajeyyo-unconquered by enemies. anugāmiko-something which accompanies. Caggahaṇena idhe’va ma-kārassa pa-kāro hoti. By means of the word “ca” in Sutta, the consonant “m” is changed into “p”. Kakārassa ca dakāro hoti. The consonant “k” is changed into “d”. (These also are additional functions applicable through “ca”) Dakārassa ca takāro hoti. The consonant “d” changes into “t”. [Note that this function is similar to the function applied by means of “ca” in Sutta 20. Refer to “to dassa”, the splitSutta function] • Sugato>Sugado-gone well, or the one who speaks good words.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 36,
+   "ru": 47,
+   "sutta": "Kvaci o byañjane",
+   "palabra": null,
+   "pregunta": "Kvacī’ki kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as restricted by “kvaci”.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 37,
+   "ru": 57,
+   "sutta": "Niggahitañ’ca",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this Sutta is inapplicable in some instances shown below as restricted by “kvaci”. * Idhe’va naṃ pasaṃsanti. * Pecca sagge pamodati. Idha eva-even here in this world. naṃ-to that person. pasaṃsanti-(the wise) praise. Pecca-in the next life. sagge-in the heaven. pamodati-(he) rejoices. i.e. Even in this world, the wise praise him. In next life too, he rejoices in the heaven. *Na hi etehi yānehi, gaccheyya agataṃ disaṃ. Na-not. hi-in fact. etehi-by these. yānehi-vehicles, gaccheyya-(one) may go. agataṃ-never gone before. disaṃ-to the direction of Nibbāna. i.e. In fact, one would not reach the never-gone-before direction of Nibbāna by means of these physical vehicles. In the stanza above, there are only two examples: Caggahaṇena vi-saddassa ca pa-kāro hoti. By means of “ca” in the Sutta, “vi” sometimes becomes “pa”.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 38,
+   "ru": 53,
+   "sutta": "Kvaci lopaṃ",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some examples like the one shown below as restricted by the word “kvaci”. * Aha’meva nūna bālo. * Eta’matthaṃ viditvāna.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 39,
+   "ru": 54,
+   "sutta": "Byañjane ca",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some examples shown below as restricted by “kvaci”. (a) * Etaṃ maṅgala’muttamaṃ. (b) * Taṃ vo vadāmi bhaddante. Etaṃ-this. maṅgalaṃ-is blessing. uttamaṃ-the noble. i.e. This is the noble blessing. (b) * Taṃ vo vadāmi bhaddante. [No sandhi] Taṃ-that word. vo-to you. vadāmi-(I) say. bhaddante-your honorable. i.e. Your honorable! I say that to you.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 40,
+   "ru": 55,
+   "sutta": "Paro vā saro",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as restricted by “vā”. * Aha’meva nūna bālo. * Eta’dahosi.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 41,
+   "ru": 56,
+   "sutta": "Byañjano ca visaññogo.",
+   "palabra": "Lutte",
+   "pregunta": "Lutte’ti kasmā?",
+   "explicacion": "Why is there the word “lutte” included in Sutta? It is to show that in the examples below, there is no “Luttaelision procedure” occurred. So, inapplicable for the rule of this Sutta to be applied on them. * Eva’massa. * Vidūna’gga’miti. (2 points) Caggahaṇena tiṇṇaṃ byañjanāna’mantare ye sarūpā, tesam’pi lopo hoti. By means of “ca” included in Sutta, one of similar consonants conjoined in a cluster of three consonants, has to be elided. (See the examples and detailed explanation) Note: Only “gg, and tt”, two similar consonants can be seen in the separation. It will become three when “i” changes into “y” in the morphological procedure as per Sutta 21. Then, one “g” and one “t” has to be elided as per the function of the word “ca” in this Sutta. See SM to understand on how all the necessary procedures are done to complete the word. The Fourth Section of Sandhi ends. ## Pañcama Kaṇḍa The Fifth Section",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 42,
+   "ru": 32,
+   "sutta": "Go sare puthassā’gamo kvaci.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in examples shown below as restricted by “kvaci”. * Putha eva.",
+   "pali_fiable": true,
+   "procedencia": "lectura de imagen"
+  },
+  {
+   "kac": 43,
+   "ru": 33,
+   "sutta": "Pāssa ca’nto rasso.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in the examples shown below as restricted by “kvaci”. * Pā eva vutty’assa.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 46,
+   "ru": 26,
+   "sutta": "Te na vā ivaṇṇe.",
+   "palabra": "Vā",
+   "pregunta": "Vā’ti kasmā?",
+   "explicacion": "Why is there the word “vā” in Sutta? It is to show that the function of this rule is inapplicable in some examples shown below. (a) * Abbhī’ritaṃ-(It is) excessively said. (b) * Ajjhiṇamutto-(He) is very much free from debts.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 47,
+   "ru": 23,
+   "sutta": "Atissa ca’ntassa.",
+   "palabra": "Ivaṇṇe",
+   "pregunta": "Ivaṇṇe’ti kasmā?",
+   "explicacion": "Why is there the word “ ivaṇṇe” in Sutta? It is to show that the function of this rule is inapplicable in examples shown below as there is no “i or ī” after it. * Acca’ntaṃ (In this example, “ti” of “ati” changes into “cca” as there is no “i or ī” behind it, only an “a”)",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 48,
+   "ru": 43,
+   "sutta": "Kvaci paṭi patissa.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as restricted by “kvaci”. * Paccantimesu janapadesu. * Patilīyati. * Patirūpadesavāso ca. Attach “cc” to next “a”. It is done. For (b-c), there is no Sandhi process. Hence, no SM required.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  },
+  {
+   "kac": 50,
+   "ru": 45,
+   "sutta": "O avassa.",
+   "palabra": "Kvacī",
+   "pregunta": "Kvacī’ti kasmā?",
+   "explicacion": "Why is there the word “kvaci” in Sutta? It is to show that the function of this rule is inapplicable in some instances shown below as being restricted by “kvaci”.",
+   "pali_fiable": false,
+   "procedencia": "OCR — no verificado"
+  }
+ ],
+ "material_detector": [
+  {
+   "kac": 11,
+   "n": 1,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "First the initial “a” in front of the plus sign is to be elided as per Sutta 12. It then looks like this: Tatr+abhiratiṃ+iccheyya."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 11,
+   "n": 2,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "Then the next “a” is to be lengthened by procedure as prescribed in Sutta 15. It now becomes > Tatr+ābhiratiṃ+iccheyya."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 11,
+   "n": 3,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "By procedure of this Sutta 11, the vowel-less “r” is then to be attached to next lengthened “ā” > Tatrābhiratiṃ+iccheyya. Now let’s work on the second point of Sandhi:"
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 11,
+   "n": 1,
+   "serie": "byañjana",
+   "particula": null,
+   "formas": [
+    "“ṃ” is to be changed into “m” by the procedure as per Sutta 34. It then becomes > Tatrābhiratim+iccheyya."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 11,
+   "n": 2,
+   "serie": "byañjana",
+   "particula": null,
+   "formas": [
+    "By procedure of this Sutta 11, “m” is to be attached to next vowel “i”. Now finally morphed form is > Tatrābhiratimiccheyya."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 26,
+   "n": 1,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "when preserving exact metrical measure in a Gathā"
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 26,
+   "n": 2,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "where a new syllable is inserted,"
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 26,
+   "n": 3,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "in the instances with conjunct-consonants."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 29,
+   "n": 1,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "If the candidate base word is the second in Vagga group, then, the first dissimilar letter from the same group is to be added to it."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 29,
+   "n": 2,
+   "serie": "sara",
+   "particula": null,
+   "formas": [
+    "If the fourth is the candidate base word, then the third from the group is to be added to it. See all the examples and accompanying tables."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 1,
+   "serie": "sara",
+   "particula": "pa",
+   "formas": [
+    "•Pā’panaṃ> Pa+āpanaṃ-specifically arriving."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 2,
+   "serie": "sara",
+   "particula": "parā",
+   "formas": [
+    "• Parā’yaṇaṃ> Para+āyaṇaṃ-shelter, refuge."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 3,
+   "serie": "sara",
+   "particula": "upa",
+   "formas": [
+    "• Upā’yanaṃ> Upa+āyanaṃ-carrying closely.",
+    "• Upā’hanaṃ> Upa+āhanaṃ-slippers, such as shoes etc,. (MS is the same as foregoing example)"
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 4,
+   "serie": "sara",
+   "particula": "ni",
+   "formas": [
+    "•Nyā’yogo> Ni+ā’yogo-consistent effort.",
+    "• Ni’rupadhi> Ni+upadhi-without Upadhi (base)."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 5,
+   "serie": "sara",
+   "particula": "anu",
+   "formas": [
+    "• Anu’bodho> Anu+bodho-knowledge based on method or inference."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 6,
+   "serie": "sara",
+   "particula": "Du",
+   "formas": [
+    "• Du’vūpasantaṃ> Du+upasantaṃ-bad calm."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 7,
+   "serie": "sara",
+   "particula": "su",
+   "formas": [
+    "• Suv’ūpasantaṃ> Su+upasantaṃ-good calm."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 8,
+   "serie": "sara",
+   "particula": "du",
+   "formas": [
+    "• Dvā’layo> Du+ā’layo-bad base or bad desire."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 9,
+   "serie": "sara",
+   "particula": "su",
+   "formas": [
+    "• Svā’layo> Su+ā’layo-good base, good desire."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 10,
+   "serie": "sara",
+   "particula": "du",
+   "formas": [
+    "• Du’rākhyātaṃ> Du’+ākhyātaṃ-badly said."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 11,
+   "serie": "sara",
+   "particula": "su",
+   "formas": [
+    "• Svā’khyāto > Su+ākhyāto-well said."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 12,
+   "serie": "sara",
+   "particula": "u",
+   "formas": [
+    "• U’dīritaṃ> U+īritaṃ-much said."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 13,
+   "serie": "sara",
+   "particula": "saṃ",
+   "formas": [
+    "• Sa’muddiṭṭhaṃ> Saṃ+uddiṭṭhaṃ-well expounded."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 14,
+   "serie": "sara",
+   "particula": "vi",
+   "formas": [
+    "• Vi’yaggaṃ> Vi+aggaṃ-specially noble."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 15,
+   "serie": "sara",
+   "particula": "vi",
+   "formas": [
+    "• Vi’jjhaggaṃ> Vi+adhi+aggaṃ-especially more noble."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 16,
+   "serie": "sara",
+   "particula": "vi",
+   "formas": [
+    "• Bya’ggaṃ> Vi+aggaṃ-specially noble."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 17,
+   "serie": "sara",
+   "particula": "ava",
+   "formas": [
+    "• Ava’yāgamanaṃ> Ava+āgamanaṃ-badly coming."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 18,
+   "serie": "sara",
+   "particula": "anu",
+   "formas": [
+    "• Anve’ti> Anu+eti-subsequently follows.",
+    "• Anu’paghāto> Ana+upaghāto-unharmed."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 19,
+   "serie": "sara",
+   "particula": "ana or anu",
+   "formas": [
+    "• Ana’cchariyaṃ> Ana+acchariyaṃ-not surprising. Also: Anu+acchariyaṃ-repeatedly surprising. (Please Note: Two possible SS for this word as “ana”"
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 20,
+   "serie": "sara",
+   "particula": "pari",
+   "formas": [
+    "• Pari’yesanā> Pari+esanā-search."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 21,
+   "serie": "sara",
+   "particula": "parā",
+   "formas": [
+    "• Parā’māso> Para+āmāso-repeatedly rubbing and touching something or wrongly holding a view or an idea."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 1,
+   "serie": "byañjana",
+   "particula": "pari",
+   "formas": [
+    "• Pari’ggaho> Pari+gaho-taking possession."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 2,
+   "serie": "byañjana",
+   "particula": "pa",
+   "formas": [
+    "• Pa’ggaho> Pa+gaho-supporting by means of encouragement. etc.",
+    "• Pakkamo> Pa+kamo-leaving away, departure.",
+    "• Parakkamo> Para+kamo-continuous effort."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 3,
+   "serie": "byañjana",
+   "particula": "ni",
+   "formas": [
+    "• Ni’kkamo> Ni+kamo-departure.",
+    "• Ni’kkasāvo> Ni+kasāvo-without taint of defilements.",
+    "• Ni’llayanaṃ> Ni+layanaṃ-hiding."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 4,
+   "serie": "byañjana",
+   "particula": "du",
+   "formas": [
+    "• Du’llayanaṃ> Du+layanaṃ-badly based.",
+    "• Du’bbhikkhaṃ> Du+bhikkhaṃ-famine, scarcity of food."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 5,
+   "serie": "byañjana",
+   "particula": "du",
+   "formas": [
+    "• Du’bbuttaṃ>Du+buttaṃ-badly said."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 6,
+   "serie": "byañjana",
+   "particula": "saṃ",
+   "formas": [
+    "• San’diṭṭhaṃ > Saṃ+diṭṭhaṃ-well seen or to be seen by oneself."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 7,
+   "serie": "byañjana",
+   "particula": "du",
+   "formas": [
+    "• Du’ggaho> Du+gaho-bad taking."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 8,
+   "serie": "byañjana",
+   "particula": "vi",
+   "formas": [
+    "• Vi’ggaho> Vi+gaho-specially taking or dispute."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 9,
+   "serie": "byañjana",
+   "particula": "ni",
+   "formas": [
+    "• Ni’ggato> Ni+gato-leaving."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 10,
+   "serie": "byañjana",
+   "particula": "abhi",
+   "formas": [
+    "• Abhi’kkamo> Abhi+kamo-advancing."
+   ],
+   "pali_fiable": false
+  },
+  {
+   "kac": 51,
+   "n": 11,
+   "serie": "byañjana",
+   "particula": "paṭi",
+   "formas": [
+    "• Paṭi’kkamo> Paṭi+kamo-going backward."
+   ],
+   "pali_fiable": false
+  }
+ ]
+}

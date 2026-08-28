@@ -8,7 +8,13 @@ publicacion_iebh: 20130404-BN-T0019
 basado_en: [Kac., Rū., Sad. iii]
 copyright: "© 2013 Dhammodaya Ediciones / BTM AR / IEBH"
 conversion: pymupdf4llm 1.28.2, header=False footer=False
-estado: sin verificar — requiere cotejo con el PDF
+estado: cotejado contra el PDF el 2026-08-21 — ver cotejo-md-pdf.md
+cotejado_contra: combinacion-eufonica.pdf
+cotejo_pdf_sha256: 5c096eddfae3b345227843b2405089dc508d1370a12b503a3b2bfc8d78ec9ce8
+cotejo_pdf_metadatos: "Pages / Mac OS X 10.8.3 Quartz PDFContext · título combinacion_eufonica · creado 2013-04-07"
+cotejo_resultado: "49/49 enunciados · 22/22 notas · 9/9 enunciados en prosa · definición y 8 operaciones · sin pérdidas"
+correcciones_aplicadas: "los números de sara 1 y 2 en el cuerpo; dos guiones de la nota 2"
+erratas_del_original_no_corregidas: "ati + antaṃ (p. 10) · esa ābhogho (p. 14) · ni + cayo (p. 16) · el signo de substitución de las notas 11 y 12"
 ---
 
 **REGLAS DE COMBINACIÓN EUFÓNICA (** **_SANDHI_ )** 
@@ -153,7 +159,7 @@ Las operaciones gramaticales ( _vidhi_ ) que ocurren en la combinación eufónic
 
 ## **COMBINACIÓN EUFÓNICA DE VOCALES (SARA-SANDHI** ) 
 
-## **Una vocal que precede a otra vocal se elide.** 
+## **1. Una vocal que precede a otra vocal se elide.** 
 
 |**VOCAL**<br>**ANTERIOR**|**VOCAL**<br>**POSTERIOR**|**EJEMPLO**|**SANDHI**|**REFERENCIA**|
 |---|---|---|---|---|
@@ -222,7 +228,7 @@ Las operaciones gramaticales ( _vidhi_ ) que ocurren en la combinación eufónic
 |o|e|taṃ kuto ettha<br>labbhā|taṃ kut’ ettha labbhā|Vin. i 12|
 |o|o|cattāro oghā<br>savanti te|cattār’ oghā savanti te|Sad. iii 14|
 
-## **Cuando dos vocales contiguas son disímiles,**<sup>**1**</sup> **la segunda a veces se elide.** 
+## **2. Cuando dos vocales contiguas son disímiles,**<sup>**1**</sup> **la segunda a veces se elide.** 
 |a|i|yassa idāni|yassa ’dāni|Vin. iii 321|
 |ā|i|chayā iva|chayā ’va|Dhp. 13|
 |ā|e|kathā eva kā|kathā ’va kā|Vis. i 55|
@@ -240,7 +246,7 @@ Regla: Después de “a” y “ā” solamente las vocales iniciales de “idā
 
 1 “Asarūpa”, “asavaṇṇa”. 
 
-> 2 Rū. §15. Éste es un verso mnemotécnico: “Avaṇṇato saro ’dānītīv’-evādiṃ vinā paro; na luppat’ aññato dīgho, ās’evādī-vivajjito”. Traducción: Después de “a” y “ā” (avaṇṇato), excepto “idāni”, “iti”, “iva”, “eva”, etc., (’dānītīv’evādiṃ vinā), la vocal siguiente (saro paro) no se elide (na luppati); después de las otras (aññato), la vocal larga (saro dīgho) no se elide (na luppati), excepto “āsi”, “eva”, etc. (ās’-evādī-vivajjito). 
+> 2 Rū. §15. Éste es un verso mnemotécnico: “Avaṇṇato saro ’dānītīv’-evādiṃ vinā paro; na luppat’ aññato dīgho, ās’-evādī-vivajjito”. Traducción: Después de “a” y “ā” (avaṇṇato), excepto “idāni”, “iti”, “iva”, “eva”, etc., (’dānītīv’-evādiṃ vinā), la vocal siguiente (saro paro) no se elide (na luppati); después de las otras (aññato), la vocal larga (saro dīgho) no se elide (na luppati), excepto “āsi”, “eva”, etc. (ās’-evādī-vivajjito). 
 
 **3. A veces las vocales “i”, “ī” y “u”, “ū”, cuando siguen a una vocal disímil**<sup>**3**</sup> **que ha sido elidida, se convierten en “e” y “o” respectivamente.**<sup>**4**</sup> 
 |a|i|bandhussa iva|bandhusseva|Kac. §14|

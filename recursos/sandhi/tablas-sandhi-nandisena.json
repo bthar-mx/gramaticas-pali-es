@@ -1,0 +1,289 @@
+[
+ {
+  "sec": "SARA-SANDHI",
+  "n": "1",
+  "aforismo": "Una vocal que precede a otra vocal se elide.",
+  "ref": "KAC.  §12",
+  "ej": "yassa indriyāni yass a indriyāni (§10) yass indriyāni (§12) yassindriyāni (§11) yass’ indriyāni (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "2",
+  "aforismo": "Cuando dos vocales contiguas son disímiles, opcionalmente la segunda se elide.",
+  "ref": "KAC.  §13",
+  "ej": "pañca indriyāni pañc a indriyāni (§10)20 pañc indriyāni (§12) pañcindriyāni (§11) pañc' indriyāni (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "3",
+  "aforismo": "Cuando la vocal precedente ha sido elidida, a veces, la vocal siguiente se alarga.",
+  "ref": "KAC.  §15",
+  "ej": "saddhā idha saddh ā idha (§10) saddh idha (§12) saddh īdha (§15) saddhīdha (§11) saddh’ īdha (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "4",
+  "aforismo": "Cuando la vocal siguiente ha sido elidida, a veces, la vocal precedente se alarga.",
+  "ref": "KAC.  §16",
+  "ej": "sādhu iti sādh u iti (§10) sādh u ti (§13) sādh ū ti (§16) sādhūti (§11) sādhū ti (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "5",
+  "aforismo": "A veces cuando las vocales ‘i’, ‘ī’ y ‘u’, ‘ū’ siguen a una vocal disímil que ha sido elidida, se convierten en ‘e’ y ‘o’ respectivamente.",
+  "ref": "KAC.  §14",
+  "ej": "na upeti n a upeti (§10) n upeti (§12) n opeti (§14) nopeti (§11) n’ opeti (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "6",
+  "aforismo": "Cuando una vocal sigue, a veces ‘e’ se convierte en ‘y’.",
+  "ref": "KAC.  §17",
+  "ej": "me ayaṃ m e ayaṃ (§10) m y ayaṃ (§17) m y āyaṃ (§25) myāyaṃ (§11) my āyaṃ (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "7",
+  "aforismo": "Cuando una vocal sigue, a veces, ‘o’ y ‘u’ se convierten en ‘v’.",
+  "ref": "KAC.  §18",
+  "ej": "so assa s o assa (§10) s v assa (§18) svassa (§11) sv assa (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "8",
+  "aforismo": "Cuando una vocal sigue, ocasionalmente, ‘i’, ‘ī’ se convierten en ‘y’.",
+  "ref": "KAC.  §21",
+  "ej": "paṭisanthāravutti assa paṭisanthāravutt i assa (§10) paṭisanthāravutt y assa (§21) paṭisanthāravut y assa (por “ca” en §41) paṭisanthāravutyassa (§11) paṭisanthāravuty assa (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "9",
+  "aforismo": "Cuando una vocal sigue, la sílaba ‘ti’ de ‘ati’, ‘pati’ e ‘iti’ se convierte en ‘c’ y ésta se duplica.",
+  "ref": "KAC.  §19 KAC.  §28",
+  "ej": "iti etaṃ ic etaṃ (§19) icc etaṃ (§28) iccetaṃ (§11) icc etaṃ (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "10",
+  "aforismo": "Cuando va seguida por una vocal, a veces, la sílaba ‘dha’ de ‘idha’, se convierte en ‘da’.",
+  "ref": "KAC.  §20",
+  "ej": "idha eva idh a eva (§10) idh eva (§12) idheva (§11) idh' eva (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "11",
+  "aforismo": "Después de “yathā” y “tathā”, la ‘e’ de “eva” se convierte en ‘ri’.",
+  "ref": "KAC.  §22",
+  "ej": "yathā eva yath ā eva (§10) yath ā riva, yath a riva (§22) yathariva (§11) yatha-r-iva (EM)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "12",
+  "aforismo": "El prefijo ‘abhi’ cuando va seguido por una vocal se sustituye por ‘abbh’.",
+  "ref": "KAC.  §44",
+  "ej": "abhi udīritaṃ abbh udīritaṃ (§44) abbhudīritaṃ (§11)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "13",
+  "aforismo": "El prefijo ‘adhi’ cuando va seguido por una vocal se sustituye por ‘ajjh’.",
+  "ref": "KAC.  §45",
+  "ej": "adhi okāse  ajjh okāse (§45) ajjhokāse (§11)"
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "14",
+  "aforismo": "Cuando una vocal sigue, ‘i’, ‘ī’ y ‘u’, ‘ū’, se convierten en ‘ya’ y ‘uva’ respectivamente.",
+  "ref": "KAC.  §70 RŪ.  §30",
+  "ej": "tiyantaṃ =  ti + antaṃ (‘i’ de ‘ti’ recibe el nombre de ‘jha’ (§58); ‘i’ se sustituye por ‘iya’ (§70); ‘a’ de ‘iya’ se elide (§83)).  bhikkhuvāsane = bhikkhu + āsane (‘u’ de “bhikkhu” recibe el nombre de ‘la’ (§58); ‘u’ se sustituye por ‘uva’(§70); ‘a’ de ‘uva’ se elide (§83))."
+ },
+ {
+  "sec": "SARA-SANDHI",
+  "n": "15",
+  "aforismo": "Cuando una vocal sigue, a veces, se inserta alguna de las siguientes consonantes: ‘y’, ‘v’, ‘m’, ‘d’, ‘n’, ‘t’, ‘r’, ‘l’, ‘h’, ‘g’.",
+  "ref": "KAC.  §35",
+  "ej": "na imassa na y imassa (§35) nayimassa (§11) na-y-imassa (EM)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "1",
+  "aforismo": "A veces, una vocal, cuando va seguida por una consonante, se alarga.",
+  "ref": "KAC.  §25",
+  "ej": "khanti paramaṃ khantī paramaṃ (§25)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "2",
+  "aforismo": "A veces, una vocal, cuando va seguida por una consonante, se acorta.",
+  "ref": "KAC.  §26",
+  "ej": "bhovādī nāma bhovādi nāma (§26)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "3",
+  "aforismo": "A veces, la “o” de “eta” y “ta”, cuando va seguida por una consonante, se elide.",
+  "ref": "KAC.  §27",
+  "ej": "s o sīlavā (§10) s sīlavā, s a sīlavā (§27) sa sīlavā (§11)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "4",
+  "aforismo": "A veces, después de una vocal, la consonante siguiente se duplica.",
+  "ref": "KAC.  §28",
+  "ej": "idha pamādo idha ppamādo (§28) idhappamādo (§11) idha ppamādo (EM)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "5",
+  "aforismo": "A veces, las consonantes conjuntas ‘ty’, ‘ly’, ‘ny’, ‘dy’ se convierten en ‘c’, ‘l’, ‘ñ’, ‘j’ respectivamente y después éstas se duplican.",
+  "ref": "KAC.  §269 RŪ.  §41",
+  "ej": "jāti + andho jāti + andho (§10) jāty + andho (§21) jāc + andho (§269) jācc + andho (§28) jāccandho (§10)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "6",
+  "aforismo": "A veces, después de una vocal, la segunda y cuarta consonante de las agrupadas se duplican en la primera y tercera de las agrupadas respectivamente.",
+  "ref": "KAC.  §29",
+  "ej": "yatra ṭhitaṃ yatra ṭṭhitaṃ (§29) yatraṭṭhitaṃ (§11) yatra ṭṭhitaṃ (EM)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "7",
+  "aforismo": "A veces el prefijo ‘pati’ cuando va seguido por una vocal o una consonante, se convierte en ‘paṭi’.",
+  "ref": "KAC.  §48",
+  "ej": "pati haññati paṭi haññati (§48) paṭihaññati (§11)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "8",
+  "aforismo": "Cuando va seguida por una consonante, la vocal final de “putha” se convierte en “u”.",
+  "ref": "KAC.  §49",
+  "ej": "putha jano puth a jano (§10) puth u jano (§49) puth u jjano (§28) puthujjano (§11)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "9",
+  "aforismo": "A veces, cuando va seguido por una consonante, el prefijo ‘ava’ se convierte en ‘o’.",
+  "ref": "KAC.  §50",
+  "ej": "ava naddhā o naddhā (§50) onaddhā (§11)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "10",
+  "aforismo": "En algunos casos, cuando va seguida por una consonante, la letra ‘o’, la substitución del prefijo ‘ava’, se convierte en ‘u’.",
+  "ref": "KAC.  §79 RŪ. §46",
+  "ej": "ava + gate o + gate (§50) u + gate (§79) u + ggate (§28) uggate (§11)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "11",
+  "aforismo": "A veces, cuando una consonante sigue, hay inserción de la letra ‘o’.",
+  "ref": "KAC.  §36",
+  "ej": "para sahassaṃ par a sahassaṃ (§10) par sahassaṃ (§12) par o sahassaṃ (§36) parosahassaṃ (§11)"
+ },
+ {
+  "sec": "BYAÑJANA-SANDHI",
+  "n": "12",
+  "aforismo": "Cuando hay elisión de la inflexión nominal, la vocal final del grupo de ‘mana’ se convierte en ‘o’.",
+  "ref": "KAC.  §183 RŪ. §48",
+  "ej": "mana mayaṃ man a mayaṃ (§10) man o mayaṃ (§183) manomayaṃ (§11)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "1",
+  "aforismo": "A veces, cuando va seguida por una consonante agrupada, la “niggahīta” se convierte en la última consonante del grupo.",
+  "ref": "KAC.  §31",
+  "ej": "dhammaṃ care dhammañ care (§31) dhammañcare (§11) dhammañ care (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "2",
+  "aforismo": "A veces, cuando la consonante ‘l’ sigue, la “niggahīta” del prefijo ‘saṃ’ y del final de “puma” se convierte en ‘l’.",
+  "ref": "KAC.  §31 RŪ.  §49",
+  "ej": "puggaṃ aṃ puggal aṃ (por “vā” en §31) puggalaṃ (§11)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "3",
+  "aforismo": "A veces, cuando “eva” y “hi” siguen, la “niggahīta” se convierte en ‘ñ’; y ésta se duplica cuando va seguida por “eva”.",
+  "ref": "KAC.  §27",
+  "ej": "paccattaṃ eva paccatañ eva (§32) paccataññ eva (§28) paccattaññeva (§11) paccattañ ñeva (EM)  taṃ hi tañ hi (§32) tañhi (§11) tañ hi (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "4",
+  "aforismo": "A veces, cuando ‘y’ sigue, la “niggahīta” junto con ‘y’ se convierte en ‘ñ’; y ésta se duplica.",
+  "ref": "KAC.  §28",
+  "ej": "saṃ yogo sañ ñogo (§33) saññogo (§11) (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "5",
+  "aforismo": "A veces, cuando una vocal sigue, la “niggahīta” se convierte en ‘m’ y ‘d’.",
+  "ref": "KAC.  §34",
+  "ej": "taṃ ahaṃ tam ahaṃ (§34) tamahaṃ (§11) tam ahaṃ (EM)  etaṃ avoca etad avoca (§34) etadavoca (§11) etad avoca (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "6",
+  "aforismo": "A veces, cuando una vocal sigue, la “niggahīta” se elide.",
+  "ref": "KAC.  §38",
+  "ej": "tāsaṃ ahaṃ tāsa ahaṃ (§38) tās a ahaṃ (§10) tās ahaṃ (§12) tās āhaṃ (§15) tāsāhaṃ (§11)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "7",
+  "aforismo": "A veces, cuando una consonante sigue, la “niggahīta” se elide.",
+  "ref": "KAC.  §39",
+  "ej": "ariyasaccānaṃ dassanaṃ ariyasaccāna dassanaṃ (§39) ariyasaccānadassanaṃ (§11) ariyasaccāna’ dassanaṃ (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "8",
+  "aforismo": "A veces, la vocal después de la “niggahīta” se elide y la “niggahīta” se convierte en la consonante final del grupo correspondiente.",
+  "ref": "KAC.  §40",
+  "ej": "abhinanduṃ iti abhinanduṃ ti (§40)  abhinandun ti (§31) abhinandunti (§11) abhinandun ti (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "9",
+  "aforismo": "A veces, cuando la vocal siguiente a la “niggahīta” se elide, si la consonante siguiente es conjunta, ésta se convierte en no-conjunta.",
+  "ref": "KAC.  §41",
+  "ej": "evaṃ assa evaṃ ssa (§40) evaṃ sa (§41) evaṃsa (§11) evaṃ ’sa (EM)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "10",
+  "aforismo": "A veces, cuando una vocal o una consonante sigue, se inserta la “niggahīta”.",
+  "ref": "KAC.  §37",
+  "ej": "cakkhu udapādi cakkhu ṃ udapādi (§37) cakkhuṃ udapādi (§11)  ava siro ava ṃ siro (§37) avaṃsiro (§11)"
+ },
+ {
+  "sec": "NIGGAHITA-SANDHI",
+  "n": "11",
+  "aforismo": "A veces hay transposición de las letras ‘r’, ‘h’, ‘n’.",
+  "ref": "KAC.  §51 RŪ §59",
+  "ej": "bahvābādho bavhābādho (por “ca” de §20)"
+ },
+ {
+  "sec": "PAKATI-SANDHI",
+  "n": "1",
+  "aforismo": "A veces, la vocal que precede, cuando va seguida por una vocal, permanece sin cambios.",
+  "ref": "KAC.  §24",
+  "ej": "bhikkhave evaṃ vadāmi (§24)"
+ },
+ {
+  "sec": "PAKATI-SANDHI",
+  "n": "2",
+  "aforismo": "A veces, la vocal que precede, cuando va seguida por una consonante, permanece sin cambios.",
+  "ref": "KAC.  §23",
+  "ej": "manopubbaṅgamā dhammā (§23)"
+ },
+ {
+  "sec": "PAKATI-SANDHI",
+  "n": "3",
+  "aforismo": "A veces, cuando una consonante sigue, la “niggahīta” permanece sin cambio.",
+  "ref": "KAC.  §30",
+  "ej": "evaṃ vutte (§30)"
+ }
+]

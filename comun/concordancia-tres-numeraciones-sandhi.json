@@ -1,0 +1,409 @@
+{
+ "_meta": {
+  "que_es": "Las tres numeraciones del capítulo de sandhi: Kaccāyana, Rūpasiddhi y Saddanīti.",
+  "de_donde": "Kac↔Rū de la Suttakkama de Thitzana; el número de Saddanīti es el que la Padarūpasiddhi trae entre paréntesis junto a cada sutta.",
+  "identificacion": "El paréntesis es la Saddanīti. Fijado en el CLAUDE.md del deconstructor y verificado acá: §35 Kaccāyana = Rūpasiddhi 34 = Saddanīti 56.",
+  "cobertura": "Sólo el capítulo 1. Es la tercera columna que le falta a concordancia-kac-ru.json, para los 51 suttas del Sandhi-kappa.",
+  "fecha": "2026-08-19"
+ },
+ "triadas": [
+  {
+   "kac": 2,
+   "ru": 2,
+   "sad": [
+    1,
+    2
+   ],
+   "titulo_rupasiddhi": "Akkharā p' ādayo cattālīsaṃ"
+  },
+  {
+   "kac": 3,
+   "ru": 3,
+   "sad": [
+    3
+   ],
+   "titulo_rupasiddhi": "Tatth' odantā sarā aṭṭha"
+  },
+  {
+   "kac": 4,
+   "ru": 4,
+   "sad": [
+    4
+   ],
+   "titulo_rupasiddhi": "Lahumattā tayo rassā"
+  },
+  {
+   "kac": 5,
+   "ru": 5,
+   "sad": [
+    5
+   ],
+   "titulo_rupasiddhi": "Aññe dīghā"
+  },
+  {
+   "kac": 602,
+   "ru": 6,
+   "sad": [
+    10
+   ],
+   "titulo_rupasiddhi": "Dumhi garu"
+  },
+  {
+   "kac": 603,
+   "ru": 7,
+   "sad": [
+    9
+   ],
+   "titulo_rupasiddhi": "Dīgho ca"
+  },
+  {
+   "kac": 6,
+   "ru": 8,
+   "sad": [
+    6
+   ],
+   "titulo_rupasiddhi": "Sesā byañjanā"
+  },
+  {
+   "kac": 7,
+   "ru": 9,
+   "sad": [
+    7
+   ],
+   "titulo_rupasiddhi": "Vaggā pañcapañcaso mantā"
+  },
+  {
+   "kac": 10,
+   "ru": 12,
+   "sad": [
+    28
+   ],
+   "titulo_rupasiddhi": "Pubbam adhoṭhitam assaraṃ sarena viyojaye"
+  },
+  {
+   "kac": 12,
+   "ru": 13,
+   "sad": [
+    30
+   ],
+   "titulo_rupasiddhi": "Sarā sare lopaṃ"
+  },
+  {
+   "kac": 11,
+   "ru": 14,
+   "sad": [
+    29
+   ],
+   "titulo_rupasiddhi": "Naye paraṃ yutte"
+  },
+  {
+   "kac": 13,
+   "ru": 15,
+   "sad": [
+    31
+   ],
+   "titulo_rupasiddhi": "Vā paro asarūpā"
+  },
+  {
+   "kac": 14,
+   "ru": 16,
+   "sad": [
+    34
+   ],
+   "titulo_rupasiddhi": "Kvac' āsavaṇṇaṃ lutte"
+  },
+  {
+   "kac": 15,
+   "ru": 17,
+   "sad": [
+    36
+   ],
+   "titulo_rupasiddhi": "Dīghaṃ"
+  },
+  {
+   "kac": 16,
+   "ru": 18,
+   "sad": [
+    35
+   ],
+   "titulo_rupasiddhi": "Pubbo ca"
+  },
+  {
+   "kac": 17,
+   "ru": 19,
+   "sad": [
+    43
+   ],
+   "titulo_rupasiddhi": "Yam edantass' ādeso"
+  },
+  {
+   "kac": 18,
+   "ru": 20,
+   "sad": [
+    44
+   ],
+   "titulo_rupasiddhi": "Vam od-udantānaṃ"
+  },
+  {
+   "kac": 21,
+   "ru": 21,
+   "sad": [
+    51
+   ],
+   "titulo_rupasiddhi": "Ivaṇṇo yaṃ navā"
+  },
+  {
+   "kac": 19,
+   "ru": 22,
+   "sad": [
+    46,
+    47
+   ],
+   "titulo_rupasiddhi": "Sabbo caṃ ti"
+  },
+  {
+   "kac": 47,
+   "ru": 23,
+   "sad": [
+    60
+   ],
+   "titulo_rupasiddhi": "Atissa c' antassa"
+  },
+  {
+   "kac": 44,
+   "ru": 24,
+   "sad": [
+    57
+   ],
+   "titulo_rupasiddhi": "Abbho abhi"
+  },
+  {
+   "kac": 45,
+   "ru": 25,
+   "sad": [
+    58
+   ],
+   "titulo_rupasiddhi": "Ajjho adhi"
+  },
+  {
+   "kac": 46,
+   "ru": 26,
+   "sad": [
+    59
+   ],
+   "titulo_rupasiddhi": "Te na vā ivaṇṇe"
+  },
+  {
+   "kac": 20,
+   "ru": 27,
+   "sad": [
+    50
+   ],
+   "titulo_rupasiddhi": "Do dhassa ca"
+  },
+  {
+   "kac": 22,
+   "ru": 28,
+   "sad": [
+    52
+   ],
+   "titulo_rupasiddhi": "Evādissa ri pubbo ca rasso"
+  },
+  {
+   "kac": 58,
+   "ru": 29,
+   "sad": [
+    205
+   ],
+   "titulo_rupasiddhi": "Ivaṇṇ'-uvaṇṇā jha-lā"
+  },
+  {
+   "kac": 70,
+   "ru": 30,
+   "sad": [
+    220
+   ],
+   "titulo_rupasiddhi": "Jha-lānam iy-uvā sare vā"
+  },
+  {
+   "kac": 78,
+   "ru": 31,
+   "sad": [
+    229
+   ],
+   "titulo_rupasiddhi": "O sare ca"
+  },
+  {
+   "kac": 42,
+   "ru": 32,
+   "sad": [
+    53
+   ],
+   "titulo_rupasiddhi": "Go sare puthass' āgamo kvaci"
+  },
+  {
+   "kac": 43,
+   "ru": 33,
+   "sad": [
+    54
+   ],
+   "titulo_rupasiddhi": "Pāssa c' anto rasso"
+  },
+  {
+   "kac": 35,
+   "ru": 34,
+   "sad": [
+    56
+   ],
+   "titulo_rupasiddhi": "Ya-va-ma-da-na-ta-ra-lā c' āgamā"
+  },
+  {
+   "kac": 24,
+   "ru": 35,
+   "sad": [
+    63
+   ],
+   "titulo_rupasiddhi": "Sare kvaci"
+  },
+  {
+   "kac": 23,
+   "ru": 36,
+   "sad": [
+    62
+   ],
+   "titulo_rupasiddhi": "Sarā pakati byañjane"
+  },
+  {
+   "kac": 25,
+   "ru": 37,
+   "sad": [
+    64,
+    71,
+    165
+   ],
+   "titulo_rupasiddhi": "Dīghaṃ"
+  },
+  {
+   "kac": 26,
+   "ru": 38,
+   "sad": [
+    65,
+    179
+   ],
+   "titulo_rupasiddhi": "Rassaṃ"
+  },
+  {
+   "kac": 28,
+   "ru": 40,
+   "sad": [
+    67
+   ],
+   "titulo_rupasiddhi": "Paradvebhāvo ṭhāne"
+  },
+  {
+   "kac": 48,
+   "ru": 43,
+   "sad": [
+    137
+   ],
+   "titulo_rupasiddhi": "Kvaci paṭi patissa"
+  },
+  {
+   "kac": 49,
+   "ru": 44,
+   "sad": [
+    129
+   ],
+   "titulo_rupasiddhi": "Puthass' u byañjane"
+  },
+  {
+   "kac": 50,
+   "ru": 45,
+   "sad": [
+    126
+   ],
+   "titulo_rupasiddhi": "O avassa"
+  },
+  {
+   "kac": 36,
+   "ru": 47,
+   "sad": [
+    130
+   ],
+   "titulo_rupasiddhi": "Kvaci o byañjane"
+  },
+  {
+   "kac": 183,
+   "ru": 48,
+   "sad": [
+    375
+   ],
+   "titulo_rupasiddhi": "Etesam o lope"
+  },
+  {
+   "kac": 32,
+   "ru": 50,
+   "sad": [
+    140
+   ],
+   "titulo_rupasiddhi": "E-he ñaṃ"
+  },
+  {
+   "kac": 33,
+   "ru": 51,
+   "sad": [
+    141
+   ],
+   "titulo_rupasiddhi": "Sa ye ca"
+  },
+  {
+   "kac": 38,
+   "ru": 53,
+   "sad": [
+    147
+   ],
+   "titulo_rupasiddhi": "Kvaci lopaṃ"
+  },
+  {
+   "kac": 39,
+   "ru": 54,
+   "sad": [
+    147
+   ],
+   "titulo_rupasiddhi": "Byañjane ca"
+  },
+  {
+   "kac": 40,
+   "ru": 55,
+   "sad": [
+    148
+   ],
+   "titulo_rupasiddhi": "Paro vā saro"
+  },
+  {
+   "kac": 37,
+   "ru": 57,
+   "sad": [
+    146
+   ],
+   "titulo_rupasiddhi": "Niggahitañ ca"
+  },
+  {
+   "kac": 30,
+   "ru": 58,
+   "sad": [
+    153
+   ],
+   "titulo_rupasiddhi": "Aṃ byañjane niggahitaṃ"
+  },
+  {
+   "kac": 51,
+   "ru": 59,
+   "sad": [
+    150,
+    154
+   ],
+   "titulo_rupasiddhi": "Anupadiṭṭhānaṃ vuttayogato"
+  }
+ ]
+}

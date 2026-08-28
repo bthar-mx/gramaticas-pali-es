@@ -1,0 +1,195 @@
+{
+ "origen": "recursos/lexico/dpd-formas.txt",
+ "formas": 443740,
+ "empiezan_por_vocal": 120323,
+ "atestiguados": {
+  "b": 5371,
+  "bh": 8938,
+  "br": 1198,
+  "by": 1198,
+  "c": 9010,
+  "ch": 2894,
+  "d": 15038,
+  "dh": 5131,
+  "dr": 25,
+  "dv": 1228,
+  "g": 9430,
+  "gh": 1462,
+  "gr": 1,
+  "gv": 3,
+  "h": 4661,
+  "j": 6333,
+  "jh": 570,
+  "jjh": 1,
+  "k": 23540,
+  "kh": 4169,
+  "khv": 7,
+  "khy": 11,
+  "kl": 14,
+  "kr": 62,
+  "kv": 23,
+  "ky": 4,
+  "l": 5167,
+  "m": 19630,
+  "mh": 15,
+  "my": 1,
+  "n": 21694,
+  "nh": 249,
+  "nv": 1,
+  "ny": 9,
+  "p": 54901,
+  "ph": 2153,
+  "pl": 30,
+  "r": 7502,
+  "s": 56680,
+  "sn": 42,
+  "sv": 119,
+  "sy": 37,
+  "t": 11672,
+  "th": 1733,
+  "tv": 45,
+  "ty": 7,
+  "v": 33558,
+  "vy": 297,
+  "y": 4963,
+  "yv": 2,
+  "ñ": 1145,
+  "ḍ": 265,
+  "ḷ": 17,
+  "ṃ": 1,
+  "ṅ": 1,
+  "ṇ": 41,
+  "ṇh": 2,
+  "ṇv": 11,
+  "ṭ": 50,
+  "ṭh": 975
+ },
+ "descartados_por_doble": {
+  "cc": {
+   "formas": 1,
+   "ejemplos": [
+    "cceva"
+   ]
+  },
+  "cch": {
+   "formas": 1,
+   "ejemplos": [
+    "cchaṭṭhatopi"
+   ]
+  },
+  "gg": {
+   "formas": 4,
+   "ejemplos": [
+    "ggahaṇameva",
+    "ggahaṇampi",
+    "ggahaṇanti",
+    "ggahaṇeneva"
+   ]
+  },
+  "jj": {
+   "formas": 1,
+   "ejemplos": [
+    "jju"
+   ]
+  },
+  "kk": {
+   "formas": 1,
+   "ejemplos": [
+    "kkamāti"
+   ]
+  },
+  "kkh": {
+   "formas": 4,
+   "ejemplos": [
+    "kkhamati",
+    "kkhanti",
+    "kkhaṇasmiṃyeva",
+    "kkhiti"
+   ]
+  },
+  "mm": {
+   "formas": 1,
+   "ejemplos": [
+    "mmanussehi"
+   ]
+  },
+  "pp": {
+   "formas": 20,
+   "ejemplos": [
+    "ppa",
+    "ppabhuti",
+    "ppaccanīyepi",
+    "ppaccayehipi",
+    "ppadhānassāti",
+    "ppadhāneti"
+   ]
+  },
+  "ss": {
+   "formas": 15,
+   "ejemplos": [
+    "ssa",
+    "ssakehi",
+    "ssananti",
+    "ssantikeca",
+    "ssantikeva",
+    "ssantuiti"
+   ]
+  },
+  "tt": {
+   "formas": 8,
+   "ejemplos": [
+    "ttaketi",
+    "ttamhi",
+    "ttanamhi",
+    "ttatheva",
+    "ttathāti",
+    "ttattheva"
+   ]
+  },
+  "tth": {
+   "formas": 2,
+   "ejemplos": [
+    "tthutimhi",
+    "tthīti"
+   ]
+  },
+  "vv": {
+   "formas": 1,
+   "ejemplos": [
+    "vvassāti"
+   ]
+  },
+  "yy": {
+   "formas": 11,
+   "ejemplos": [
+    "yya",
+    "yyakārasminti",
+    "yyakāreti",
+    "yyassa",
+    "yyassāti",
+    "yyaṃ"
+   ]
+  },
+  "ññ": {
+   "formas": 6,
+   "ejemplos": [
+    "ññasmimpi",
+    "ññatoti",
+    "ññañca",
+    "ññeca",
+    "ññepi",
+    "ññāṇānīti"
+   ]
+  },
+  "ṭṭh": {
+   "formas": 4,
+   "ejemplos": [
+    "ṭṭhenāti",
+    "ṭṭhitānīti",
+    "ṭṭhitāva",
+    "ṭṭhānañca"
+   ]
+  }
+ },
+ "criterio_del_descarte": "§28 enuncia la duplicación «después de una vocal»; una consonante doble no puede abrir palabra. Las formas que lo hacen son colas de palabras partidas en la tabla del DPD."
+}
