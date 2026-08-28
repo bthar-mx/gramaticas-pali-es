@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Solucionador de sandhis · pāḷi</title>
-<meta name="version" content="1.4">
+<meta name="version" content="1.5">
 <meta name="version-date" content="2026-08-28">
 <meta name="description" content="Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces, y qué secuencia de aforismos de Kaccāyana explica cada una. Todo se verifica por recomposición.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -216,13 +216,11 @@ footer a{color:var(--nila)}
       corte coincide en el 90,7 % de los versos y el 92,5 % de la prosa. La señal
       que marca voces en un pasaje es deliberadamente prudente: entre lo <em>seguro</em>
       y lo <em>posible</em> se señalan hoy el 47 % de los sandhis presentes en el verso y
-      el 57 % en la prosa (medido de nuevo el 28-08-2026, con los patrones
-      adjudicados activos). Lo marcado como <em>seguro</em> acierta una juntura real en
-      8 de cada 10 casos en la prosa; en el verso baja a 6 de cada 10 por un
-      defecto conocido del patrón de «iti» —afirmaba verbos corrientes (hoti,
-      pajānāti) porque una base residual resultaba la única atestiguada—, medido,
-      declarado aquí, y a la espera de la regla adjudicada que lo corrija.
-      <strong>Lo que no se marca no se pierde: se calla</strong> — pegue la
+      el 57 % en la prosa, y lo marcado como <em>seguro</em> acierta una juntura real en
+      9 de cada 10 casos (medido el 28-08-2026, con los patrones adjudicados y el
+      resguardo de la base residual activos — el resguardo corrigió un defecto,
+      medido y declarado ese mismo día, por el que el patrón de «iti» afirmaba
+      verbos corrientes como hoti). <strong>Lo que no se marca no se pierde: se calla</strong> — pegue la
       voz sola y el motor la analiza con todas sus lecturas. Cada fallo que se
       reporte se convierte en caso de prueba permanente.</p>
       <p><strong>El diccionario, de testigo; nunca de autoridad.</strong> El Digital Pāḷi
@@ -562,10 +560,8 @@ async function analizar(){
     }
     html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
       el 47 % de los sandhis presentes en el verso y el 57 % en la prosa, y lo marcado
-      como <em>seguro</em> acierta una juntura real en 8 de cada 10 casos de prosa (6 de
-      cada 10 en verso — defecto conocido del patrón de «iti», declarado y en espera
-      de regla). Lo que calla no se pierde: pegue una voz sola y el motor la analiza
-      con todas sus lecturas.</p>`;
+      como <em>seguro</em> acierta una juntura real en 9 de cada 10 casos. Lo que calla no
+      se pierde: pegue una voz sola y el motor la analiza con todas sus lecturas.</p>`;
   }
   out.innerHTML = html;
   $('estado').textContent = '';

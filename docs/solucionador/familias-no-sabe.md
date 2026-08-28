@@ -10,11 +10,12 @@
 | --- | ---: | ---: | ---: | ---: | ---: |
 | eva (10.291) | 47 | 49.484 | 4 | 0 | 43 |
 | iva (152) | 37 | 45.729 | 3 | 7 | 27 |
-| ca (133.362) | 46 | 18.364 | 41 | 0 | 5 |
+| ati (209) | 35 | 20.745 | 0 | 5 | 30 |
+| iti (8.058) | 34 | 19.240 | 0 | 9 | 25 |
+| eti (210) | 33 | 18.995 | 0 | 9 | 24 |
 | va (323) | 6 | 16.888 | 0 | 3 | 3 |
+| ti (183.581) | 28 | 16.408 | 0 | 23 | 5 |
 | hi (38.054) | 7 | 13.622 | 3 | 0 | 4 |
-| pi (291) | 27 | 13.595 | 7 | 9 | 11 |
-| api (2.250) | 26 | 13.376 | 0 | 0 | 26 |
 | atthi (13.252) | 2 | 12.320 | 0 | 0 | 2 |
 | vā (94.815) | 12 | 5.913 | 0 | 0 | 12 |
 | taṃ (53.782) | 20 | 5.845 | 0 | 0 | 20 |
@@ -22,16 +23,17 @@
 | ito (4.337) | 12 | 4.956 | 3 | 7 | 2 |
 | heva (268) | 5 | 4.804 | 0 | 0 | 5 |
 | evaṃ (46.248) | 5 | 4.777 | 1 | 0 | 4 |
+| pi (291) | 11 | 4.277 | 3 | 6 | 2 |
+| api (2.250) | 9 | 3.861 | 0 | 0 | 9 |
 | etaṃ (5.542) | 13 | 3.773 | 3 | 0 | 10 |
 | nu (7.037) | 2 | 2.556 | 0 | 0 | 2 |
 | anu (430) | 2 | 2.556 | 1 | 0 | 1 |
 | mā (5.814) | 3 | 2.413 | 0 | 0 | 3 |
 | imā (2.417) | 3 | 2.413 | 0 | 0 | 3 |
+| jānāti (3.916) | 3 | 2.045 | 0 | 1 | 2 |
 | attheva (336) | 1 | 1.956 | 0 | 0 | 1 |
 | ettheva (256) | 1 | 1.956 | 0 | 0 | 1 |
-| ati (209) | 2 | 1.750 | 0 | 0 | 2 |
 | deva (1.494) | 3 | 1.720 | 0 | 0 | 3 |
-| cāpi (683) | 1 | 1.442 | 1 | 0 | 0 |
 | atha (19.498) | 5 | 1.432 | 0 | 0 | 5 |
 | etha (288) | 5 | 1.432 | 0 | 0 | 5 |
 | upanissayo (215) | 3 | 1.418 | 0 | 0 | 3 |
@@ -42,8 +44,8 @@
 | atthaṃ (2.979) | 4 | 1.353 | 0 | 0 | 4 |
 | naṃ (6.103) | 5 | 1.345 | 0 | 0 | 5 |
 | no (16.556) | 2 | 1.305 | 0 | 0 | 2 |
+| gaṇhāti (1.558) | 3 | 1.235 | 0 | 1 | 2 |
 | eko (6.308) | 6 | 1.140 | 1 | 0 | 5 |
-| jānāti (3.916) | 1 | 1.104 | 0 | 0 | 1 |
 | vo (2.328) | 3 | 1.101 | 0 | 0 | 3 |
 | uddhaṃ (1.162) | 3 | 1.088 | 0 | 0 | 3 |
 | khaṇe (1.081) | 1 | 1.087 | 0 | 0 | 1 |
@@ -55,15 +57,12 @@
 | antarā (1.173) | 2 | 815 | 0 | 0 | 2 |
 | atthiyā (595) | 1 | 686 | 0 | 0 | 1 |
 | natthiyā (350) | 1 | 686 | 0 | 0 | 1 |
-| athāpi (144) | 1 | 682 | 0 | 0 | 1 |
 | attā (2.212) | 2 | 674 | 0 | 0 | 2 |
 | tā (2.575) | 2 | 674 | 0 | 0 | 2 |
 | navaṃ (212) | 1 | 652 | 1 | 0 | 0 |
-| gaṇhāti (1.558) | 1 | 646 | 0 | 1 | 0 |
 | anatthaṃ (284) | 1 | 632 | 0 | 0 | 1 |
+| etthāti (886) | 1 | 621 | 0 | 0 | 1 |
 | āvuso (6.361) | 2 | 611 | 0 | 0 | 2 |
-| itipi (733) | 1 | 609 | 0 | 0 | 1 |
-| tipi (2.185) | 1 | 609 | 0 | 0 | 1 |
 | idāni (6.242) | 1 | 601 | 0 | 0 | 1 |
 | dāni (1.320) | 1 | 601 | 0 | 0 | 1 |
 | tato (15.092) | 2 | 556 | 0 | 0 | 2 |
@@ -71,20 +70,16 @@
 | tena (21.881) | 2 | 547 | 0 | 0 | 2 |
 | etena (2.432) | 2 | 547 | 2 | 0 | 0 |
 | ayan (285) | 2 | 525 | 0 | 2 | 0 |
-| etthāpi (945) | 2 | 523 | 0 | 0 | 2 |
-| imañca (304) | 2 | 505 | 0 | 0 | 2 |
 | atho (416) | 2 | 501 | 0 | 0 | 2 |
 | tameva (1.153) | 1 | 480 | 0 | 0 | 1 |
-| napi (417) | 1 | 449 | 0 | 1 | 0 |
 | annaṃ (158) | 1 | 447 | 0 | 0 | 1 |
 | ve (824) | 1 | 446 | 0 | 0 | 1 |
 | kathaṃ (8.016) | 1 | 445 | 0 | 0 | 1 |
 | aho (1.325) | 1 | 442 | 0 | 0 | 1 |
 | kiṃ (11.944) | 1 | 441 | 0 | 0 | 1 |
-| sāpi (538) | 1 | 433 | 0 | 0 | 1 |
 | suddhaṃ (234) | 1 | 425 | 0 | 0 | 1 |
 | āma (995) | 2 | 412 | 0 | 0 | 2 |
-| tañca (2.065) | 1 | 383 | 0 | 0 | 1 |
+| yāti (204) | 2 | 398 | 0 | 1 | 1 |
 | attato (518) | 1 | 382 | 0 | 1 | 0 |
 | ādīni (1.404) | 2 | 381 | 0 | 0 | 2 |
 | kalaṃ (149) | 1 | 380 | 0 | 0 | 1 |
@@ -104,18 +99,17 @@
 | assā (341) | 1 | 281 | 0 | 0 | 1 |
 | issā (142) | 1 | 281 | 0 | 0 | 1 |
 | sā (10.054) | 1 | 281 | 0 | 0 | 1 |
-| pañca (8.192) | 1 | 279 | 0 | 1 | 0 |
 | upari (2.245) | 1 | 263 | 0 | 0 | 1 |
 | ehi (839) | 1 | 260 | 0 | 1 | 0 |
 | ekameva (475) | 1 | 259 | 0 | 1 | 0 |
 | asīti (252) | 1 | 245 | 0 | 0 | 1 |
-| iti (8.058) | 1 | 245 | 0 | 1 | 0 |
 | hetu (4.612) | 1 | 245 | 0 | 1 | 0 |
 | nahetu (1.874) | 1 | 245 | 0 | 0 | 1 |
 | upādinnupādāniyo (244) | 1 | 244 | 0 | 0 | 1 |
 | anupādāniyo (201) | 1 | 244 | 0 | 1 | 0 |
 | purejātapaccayā (111) | 1 | 238 | 0 | 0 | 1 |
-| evañca (1.588) | 1 | 207 | 1 | 0 | 0 |
+| assāti (1.030) | 1 | 223 | 0 | 0 | 1 |
+| arati (159) | 1 | 217 | 0 | 0 | 1 |
 | tamevatthaṃ (115) | 1 | 204 | 0 | 0 | 1 |
 
 ## Detalle, familia por familia
@@ -160,25 +154,65 @@
 | sayameva | 964 | sayame + iva | sayame (1) | única ⚠ |
 | ayameva | 949 | ayamā + iva | ayamā (1) | única ⚠ |
 
-### «ca» (133.362 apariciones propias) — masa 18.364 · 46 formas
+### «ati» (209 apariciones propias) — masa 20.745 · 35 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
-| tañca | 2.065 | taṃ + ca | taṃ (53.782) | única |
-| evañca | 1.588 | evaṃ + ca | evaṃ (46.248) | única |
-| yañca | 1.145 | yaṃ + ca | yaṃ (18.517) | única |
-| kathañca | 1.109 | kathaṃ + ca | kathaṃ (8.016) | única |
-| ayañca | 719 | ayaṃ + ca | ayaṃ (23.589) | única |
-| cittasamuṭṭhānañca | 714 | cittasamuṭṭhānaṃ + ca | cittasamuṭṭhānaṃ (1.163) | única |
-| idañca | 685 | idaṃ + ca | idaṃ (17.398) | única |
-| khandhañca | 546 | khandhaṃ + ca | khandhaṃ (1.369) | única |
-| vatthuñca | 519 | vatthuṃ + ca | vatthuṃ (2.071) | única |
-| parañca | 436 | paraṃ + ca | paraṃ (4.183) | única |
-| kiñca | 411 | kiṃ + ca | kiṃ (11.944) | única |
-| cakkhundriyañca | 402 | ¿? + ca | cakkhundriyaña (1), cakkhundriyaṃ (1.338) | 2 bases |
-| cakkhāyatanañca | 384 | cakkhāyatanaṃ + ca | cakkhāyatanaṃ (1.431) | única |
-| cittañca | 383 | cittaṃ + ca | cittaṃ (11.268) | única |
-| katamañca | 335 | katamaṃ + ca | katamaṃ (2.044) | única |
+| jānāti | 3.916 | ¿? + ati | jāna (33), jānaṃ (444), jāne (4), jāni (32), jāniṃ (36), jāno (4), … | 8 bases |
+| gaṇhāti | 1.558 | ¿? + ati | gaṇha (146), gaṇhaṃ (1), gaṇhe (12), gaṇhi (541), gaṇhiṃ (36), gaṇhā (92), … | 7 bases |
+| jāti | 1.536 | ¿? + ati | ja (35), je (50), jiṃ (1) | 3 bases |
+| parijānāti | 1.104 | ¿? + ati | parijānaṃ (46), parijāni (1) | 2 bases |
+| pāpuṇāti | 1.076 | ¿? + ati | pāpuṇa (2), pāpuṇe (20), pāpuṇi (800), pāpuṇiṃ (39), pāpuṇā (1), pāpuṇī (18) | 6 bases |
+| samuṭṭhāti | 913 | ¿? + ati | samuṭṭho (1), samuṭṭhā (1) | 2 bases |
+| pīti | 821 | ¿? + ati | pi (291), pī (4) | 2 bases |
+| bhavati | 732 | ¿? + ati | bha (12), bhava (103), bhavaṃ (1.398), bhave (1.371), bhavi (5), bhaviṃ (2), … | 9 bases |
+| paṭijānāti | 729 | ¿? + ati | paṭijāna (1), paṭijāni (8), paṭijāniṃ (4) | 3 bases |
+| saṅgaṇhāti | 646 | ¿? + ati | saṅgaṇhe (2), saṅgaṇhi (5), saṅgaṇhī (1) | 3 bases |
+| janeti | 640 | jane + ati | jane (226) | única ⚠ |
+| katheti | 640 | kathe + ati | kathe (2) | única ⚠ |
+| suṇāti | 626 | ¿? + ati | suṇa (29), suṇe (17), suṇi (26), suṇiṃ (6), suṇo (3), suṇī (3) | 6 bases |
+| abhāsitthāti | 621 | ¿? + ati | abhāsittha (9), abhāsitthā (1) | 2 bases |
+| vuṭṭhāti | 458 | ¿? + ati | vuṭṭha (3), vuṭṭhaṃ (39), vuṭṭhe (30), vuṭṭhi (46), vuṭṭhiṃ (16), vuṭṭho (16), … | 8 bases |
+
+### «iti» (8.058 apariciones propias) — masa 19.240 · 34 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| jānāti | 3.916 | ¿? + iti | jāna (33), jānā (5) | 2 bases |
+| gaṇhāti | 1.558 | ¿? + iti | gaṇha (146), gaṇhā (92) | 2 bases |
+| jāti | 1.536 | ja + iti | ja (35) | única ⚠ |
+| pāpuṇāti | 1.076 | ¿? + iti | pāpuṇa (2), pāpuṇā (1) | 2 bases |
+| samuṭṭhāti | 913 | samuṭṭhā + iti | samuṭṭhā (1) | única ⚠ |
+| pīti | 821 | ¿? + iti | pa (46.238), paṃ (1), pe (1), pi (291), pu (5), puṃ (6), … | 8 bases |
+| bhavati | 732 | ¿? + iti | bhava (103), bhavaṃ (1.398) | 2 bases |
+| paṭijānāti | 729 | paṭijāna + iti | paṭijāna (1) | única ⚠ |
+| janeti | 640 | ¿? + iti | jana (13), jane (226), janā (860) | 3 bases |
+| katheti | 640 | ¿? + iti | katha (1), kathe (2), kathā (686) | 3 bases |
+| suṇāti | 626 | suṇa + iti | suṇa (29) | única ⚠ |
+| abhāsitthāti | 621 | ¿? + iti | abhāsittha (9), abhāsitthā (1) | 2 bases |
+| vuṭṭhāti | 458 | ¿? + iti | vuṭṭha (3), vuṭṭhā (13) | 2 bases |
+| upaṭṭhāti | 439 | ¿? + iti | upaṭṭha (1), upaṭṭhā (1) | 2 bases |
+| paṭiggaṇhāti | 361 | ¿? + iti | paṭiggaṇha (15), paṭiggaṇhā (7) | 2 bases |
+
+### «eti» (210 apariciones propias) — masa 18.995 · 33 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| jānāti | 3.916 | ¿? + eti | jāna (33), jānā (5) | 2 bases |
+| gaṇhāti | 1.558 | ¿? + eti | gaṇha (146), gaṇhā (92) | 2 bases |
+| jāti | 1.536 | ja + eti | ja (35) | única ⚠ |
+| pāpuṇāti | 1.076 | ¿? + eti | pāpuṇa (2), pāpuṇā (1) | 2 bases |
+| samuṭṭhāti | 913 | samuṭṭhā + eti | samuṭṭhā (1) | única ⚠ |
+| pīti | 821 | ¿? + eti | pi (291), pī (4) | 2 bases |
+| bhavati | 732 | ¿? + eti | bhava (103), bhavaṃ (1.398) | 2 bases |
+| paṭijānāti | 729 | paṭijāna + eti | paṭijāna (1) | única ⚠ |
+| janeti | 640 | ¿? + eti | ja (35), jana (13), janaṃ (281), jane (226), jano (456), janā (860), … | 7 bases |
+| katheti | 640 | ¿? + eti | katha (1), kathaṃ (8.016), kathe (2), kathi (1), kathā (686), kathī (2), … | 7 bases |
+| suṇāti | 626 | suṇa + eti | suṇa (29) | única ⚠ |
+| abhāsitthāti | 621 | ¿? + eti | abhāsittha (9), abhāsitthā (1) | 2 bases |
+| vuṭṭhāti | 458 | ¿? + eti | vuṭṭha (3), vuṭṭhā (13) | 2 bases |
+| upaṭṭhāti | 439 | ¿? + eti | upaṭṭha (1), upaṭṭhā (1) | 2 bases |
+| paṭiggaṇhāti | 361 | ¿? + eti | paṭiggaṇha (15), paṭiggaṇhā (7) | 2 bases |
 
 ### «va» (323 apariciones propias) — masa 16.888 · 6 formas
 
@@ -191,6 +225,26 @@
 | ekova | 317 | ¿? + va | eka (71), eke (826), ekā (1.764), ekī (6) | 4 bases |
 | disvāva | 235 | disva + va | disva (1) | única ⚠ |
 
+### «ti» (183.581 apariciones propias) — masa 16.408 · 28 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| jānāti | 3.916 | jāna + ti | jāna (33) | única ⚠ |
+| gaṇhāti | 1.558 | gaṇha + ti | gaṇha (146) | única ⚠ |
+| jāti | 1.536 | ja + ti | ja (35) | única ⚠ |
+| pāpuṇāti | 1.076 | pāpuṇa + ti | pāpuṇa (2) | única ⚠ |
+| pīti | 821 | pi + ti | pi (291) | única ⚠ |
+| bhavati | 732 | ¿? + ti | bhavaṃ (1.398), bhavā (357) | 2 bases |
+| paṭijānāti | 729 | paṭijāna + ti | paṭijāna (1) | única ⚠ |
+| suṇāti | 626 | suṇa + ti | suṇa (29) | única ⚠ |
+| abhāsitthāti | 621 | abhāsittha + ti | abhāsittha (9) | única ⚠ |
+| vuṭṭhāti | 458 | vuṭṭha + ti | vuṭṭha (3) | única ⚠ |
+| upaṭṭhāti | 439 | upaṭṭha + ti | upaṭṭha (1) | única ⚠ |
+| paṭiggaṇhāti | 361 | paṭiggaṇha + ti | paṭiggaṇha (15) | única ⚠ |
+| arahati | 314 | ¿? + ti | arahaṃ (754), arahā (1.133) | 2 bases |
+| bujjhantīti | 307 | bujjhanti + ti | bujjhanti (32) | única ⚠ |
+| jīvati | 276 | ¿? + ti | jīvaṃ (373), jīvā (38) | 2 bases |
+
 ### «hi» (38.054 apariciones propias) — masa 13.622 · 7 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -202,46 +256,6 @@
 | idañhi | 226 | idaṃ + hi | idaṃ (17.398) | única |
 | yañhi | 203 | yaṃ + hi | yaṃ (18.517) | única |
 | sabbadhi | 181 | ¿? + hi | sabba (167), sabbadā (309), sabbā (1.023) | 3 bases |
-
-### «pi» (291 apariciones propias) — masa 13.595 · 27 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| tipi | 2.185 | ¿? + pi | tiṃ (1), tī (6) | 2 bases |
-| kiñcāpi | 1.442 | kiñca + pi | kiñca (411) | única ⚠ |
-| etthāpi | 945 | ettha + pi | ettha (13.604) | única |
-| idhāpi | 791 | idha + pi | idha (12.309) | única |
-| nāpi | 688 | na + pi | na (138.642) | única |
-| cāpi | 683 | ca + pi | ca (133.362) | única |
-| tathāpi | 682 | ¿? + pi | tahtā (1), tatha (20) | 2 bases |
-| satipi | 609 | ¿? + pi | satiṃ (502), satī (93) | 2 bases |
-| sāpi | 538 | sa + pi | sa (2.132) | única |
-| sabbāpi | 509 | sabba + pi | sabba (167) | única ⚠ |
-| vāpi | 474 | va + pi | va (323) | única ⚠ |
-| punapi | 449 | ¿? + pi | nupa (1), punaṃ (13), punā (13) | 3 bases |
-| tassāpi | 433 | tassa + pi | tassa (32.303) | única |
-| napi | 417 | ¿? + pi | naṃ (6.103), nā (26) | 2 bases |
-| tatthāpi | 350 | tattha + pi | tattha (47.219) | única |
-
-### «api» (2.250 apariciones propias) — masa 13.376 · 26 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| tipi | 2.185 | ¿? + api | ti (183.581), tiṃ (1) | 2 bases |
-| kiñcāpi | 1.442 | ¿? + api | kiñca (411), kiñci (4.297), kiñcā (2), kiñcī (148) | 4 bases |
-| etthāpi | 945 | ¿? + api | ettha (13.604), etthaṃ (1), etthi (1), ettho (2), etthā (48) | 5 bases |
-| idhāpi | 791 | ¿? + api | idha (12.309), idhaṃ (5), idhe (2), idhā (47) | 4 bases |
-| nāpi | 688 | ¿? + api | na (138.642), naṃ (6.103), ne (358), ni (20), no (16.556), nu (7.037), … | 9 bases |
-| cāpi | 683 | ¿? + api | ca (133.362), ce (4.882), ci (29), cu (2), cā (1.652) | 5 bases |
-| tathāpi | 682 | ¿? + api | tatha (20), tathaṃ (115), tathe (1), tatho (50), tathā (13.814) | 5 bases |
-| satipi | 609 | ¿? + api | sati (5.540), satiṃ (502) | 2 bases |
-| sāpi | 538 | ¿? + api | sa (2.132), saṃ (145), se (70), si (2), so (42.327), su (312), … | 9 bases |
-| sabbāpi | 509 | ¿? + api | sabba (167), sabbaṃ (5.812), sabbe (4.496), sabbo (694), sabbā (1.023) | 5 bases |
-| vāpi | 474 | ¿? + api | va (323), vaṃ (6), ve (824), vi (37), vo (2.328), vā (94.815) | 6 bases |
-| punapi | 449 | ¿? + api | pu (5), puna (7.674), punaṃ (13), puno (23), punā (13) | 5 bases |
-| tassāpi | 433 | ¿? + api | tassa (32.303), tassaṃ (224), tasso (2), tassu (1), tassā (4.304) | 5 bases |
-| napi | 417 | ¿? + api | na (138.642), naṃ (6.103), ne (358), ni (20), no (16.556), nu (7.037), … | 9 bases |
-| tatthāpi | 350 | ¿? + api | tattha (47.219), tatthaṃ (7), tatthe (3), tattho (4), tatthā (177) | 5 bases |
 
 ### «atthi» (13.252 apariciones propias) — masa 12.320 · 2 formas
 
@@ -341,6 +355,36 @@
 | nāvaṃ | 273 | ¿? + evaṃ | na (138.642), nā (26) | 2 bases |
 | navaṃ | 212 | ¿? + evaṃ | na (138.642), naṃ (6.103) | 2 bases |
 
+### «pi» (291 apariciones propias) — masa 4.277 · 11 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| nāpi | 688 | na + pi | na (138.642) | única |
+| cāpi | 683 | ca + pi | ca (133.362) | única |
+| sāpi | 538 | sa + pi | sa (2.132) | única |
+| sabbāpi | 509 | sabba + pi | sabba (167) | única ⚠ |
+| vāpi | 474 | va + pi | va (323) | única ⚠ |
+| napi | 417 | ¿? + pi | naṃ (6.103), nā (26) | 2 bases |
+| sahajātavārampi | 246 | sahajātavāra + pi | sahajātavāra (5) | única ⚠ |
+| tadapi | 200 | ¿? + pi | tadaṃ (1), tadā (5.638) | 2 bases |
+| evamidhāpi | 179 | evamidha + pi | evamidha (89) | única ⚠ |
+| satthāpi | 173 | sattha + pi | sattha (6) | única ⚠ |
+| sampayuttavārampi | 170 | sampayuttavāra + pi | sampayuttavāra (4) | única ⚠ |
+
+### «api» (2.250 apariciones propias) — masa 3.861 · 9 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| nāpi | 688 | ¿? + api | na (138.642), naṃ (6.103), ne (358), ni (20), no (16.556), nu (7.037), … | 9 bases |
+| cāpi | 683 | ¿? + api | ca (133.362), ce (4.882), ci (29), cu (2), cā (1.652) | 5 bases |
+| sāpi | 538 | ¿? + api | sa (2.132), saṃ (145), se (70), si (2), so (42.327), su (312), … | 9 bases |
+| sabbāpi | 509 | ¿? + api | sabba (167), sabbaṃ (5.812), sabbe (4.496), sabbo (694), sabbā (1.023) | 5 bases |
+| vāpi | 474 | ¿? + api | va (323), vaṃ (6), ve (824), vi (37), vo (2.328), vā (94.815) | 6 bases |
+| napi | 417 | ¿? + api | na (138.642), naṃ (6.103), ne (358), ni (20), no (16.556), nu (7.037), … | 9 bases |
+| tadapi | 200 | ¿? + api | ta (135), tada (4), tadaṃ (1), tadi (1), tadā (5.638), taṃ (53.782), … | 7 bases |
+| evamidhāpi | 179 | ¿? + api | evamidha (89), evamidhaṃ (1) | 2 bases |
+| satthāpi | 173 | ¿? + api | sattha (6), satthaṃ (287), satthe (58), satthi (3), satthiṃ (15), sattho (50), … | 10 bases |
+
 ### «etaṃ» (5.542 apariciones propias) — masa 3.773 · 13 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -389,6 +433,14 @@
 | cakkhumā | 427 | ¿? + imā | cakkhu (1.098), cakkhuṃ (1.047) | 2 bases |
 | samā | 169 | ¿? + imā | sa (2.132), saṃ (145) | 2 bases |
 
+### «jānāti» (3.916 apariciones propias) — masa 2.045 · 3 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| parijānāti | 1.104 | ¿? + jānāti | parī (2), rapi (1) | 2 bases |
+| paṭijānāti | 729 | ¿? + jānāti | pati (569), paṭī (8) | 2 bases |
+| sañjānāti | 212 | saṃ + jānāti | saṃ (145) | única ⚠ |
+
 ### «attheva» (336 apariciones propias) — masa 1.956 · 1 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -401,13 +453,6 @@
 | --- | ---: | --- | --- | --- |
 | tattheva | 1.956 | ¿? + ettheva | ta (135), taṃ (53.782) | 2 bases |
 
-### «ati» (209 apariciones propias) — masa 1.750 · 2 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| parijānāti | 1.104 | ¿? + ati | parijānaṃ (46), parijāni (1) | 2 bases |
-| saṅgaṇhāti | 646 | ¿? + ati | saṅgaṇhe (2), saṅgaṇhi (5), saṅgaṇhī (1) | 3 bases |
-
 ### «deva» (1.494 apariciones propias) — masa 1.720 · 3 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -415,12 +460,6 @@
 | tadeva | 1.258 | ¿? + deva | taṃ (53.782), tā (2.575) | 2 bases |
 | etadeva | 256 | ¿? + deva | etaṃ (5.542), etā (288) | 2 bases |
 | yadeva | 206 | ¿? + deva | yaṃ (18.517), yā (6.074) | 2 bases |
-
-### «cāpi» (683 apariciones propias) — masa 1.442 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| kiñcāpi | 1.442 | kiṃ + cāpi | kiṃ (11.944) | única |
 
 ### «atha» (19.498 apariciones propias) — masa 1.432 · 5 formas
 
@@ -511,6 +550,14 @@
 | mano | 1.128 | ¿? + no | maṃ (6.780), mā (5.814) | 2 bases |
 | nano | 177 | ¿? + no | naṃ (6.103), nā (26) | 2 bases |
 
+### «gaṇhāti» (1.558 apariciones propias) — masa 1.235 · 3 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| saṅgaṇhāti | 646 | saṃ + gaṇhāti | saṃ (145) | única ⚠ |
+| paṭiggaṇhāti | 361 | ¿? + gaṇhāti | paṭi (151), paṭī (8) | 2 bases |
+| paggaṇhāti | 228 | ¿? + gaṇhāti | pa (46.238), pago (4), pā (13) | 3 bases |
+
 ### «eko» (6.308 apariciones propias) — masa 1.140 · 6 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -521,12 +568,6 @@
 | atheko | 184 | ¿? + eko | at (5), atha (19.498), athe (2), atho (416), athā (5) | 5 bases |
 | pāpako | 182 | ¿? + eko | pāpa (12), pāpaṃ (900) | 2 bases |
 | nāyako | 165 | ¿? + eko | nāya (6), nāyaṃ (529) | 2 bases |
-
-### «jānāti» (3.916 apariciones propias) — masa 1.104 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| parijānāti | 1.104 | ¿? + jānāti | parī (2), rapi (1) | 2 bases |
 
 ### «vo» (2.328 apariciones propias) — masa 1.101 · 3 formas
 
@@ -609,12 +650,6 @@
 | --- | ---: | --- | --- | --- |
 | nonatthiyā | 686 | ¿? + natthiyā | na (138.642), ne (358), ni (20), nu (7.037), nā (26), nī (11), … | 7 bases |
 
-### «athāpi» (144 apariciones propias) — masa 682 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| tathāpi | 682 | ¿? + athāpi | ta (135), taṃ (53.782), te (33.110), ti (183.581), tiṃ (1), to (35), … | 10 bases |
-
 ### «attā» (2.212 apariciones propias) — masa 674 · 2 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -635,17 +670,17 @@
 | --- | ---: | --- | --- | --- |
 | ādīnavaṃ | 652 | ādi + navaṃ | ādi (12.295) | única |
 
-### «gaṇhāti» (1.558 apariciones propias) — masa 646 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| saṅgaṇhāti | 646 | saṃ + gaṇhāti | saṃ (145) | única ⚠ |
-
 ### «anatthaṃ» (284 apariciones propias) — masa 632 · 1 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
 | dassanatthaṃ | 632 | ¿? + anatthaṃ | dassa (5), dassaṃ (10), dassi (1), dassiṃ (5), dassā (1), dassī (4) | 6 bases |
+
+### «etthāti» (886 apariciones propias) — masa 621 · 1 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| abhāsitthāti | 621 | ¿? + etthāti | abhāsi (1.296), abhāsiṃ (24) | 2 bases |
 
 ### «āvuso» (6.361 apariciones propias) — masa 611 · 2 formas
 
@@ -653,18 +688,6 @@
 | --- | ---: | --- | --- | --- |
 | panāvuso | 358 | ¿? + āvuso | pa (46.238), pana (60.799), panaṃ (2), pane (1), panā (750), pā (13) | 6 bases |
 | idhāvuso | 253 | ¿? + āvuso | idha (12.309), idhaṃ (5), idhe (2), idhā (47) | 4 bases |
-
-### «itipi» (733 apariciones propias) — masa 609 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| satipi | 609 | ¿? + itipi | sa (2.132), saṃ (145) | 2 bases |
-
-### «tipi» (2.185 apariciones propias) — masa 609 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| satipi | 609 | ¿? + tipi | saṃ (145), so (42.327), sā (10.054) | 3 bases |
 
 ### «idāni» (6.242 apariciones propias) — masa 601 · 1 formas
 
@@ -712,20 +735,6 @@
 | pācittiyan | 361 | pācitti + ayan | pācitti (2) | única ⚠ |
 | siyan | 164 | si + ayan | si (2) | única ⚠ |
 
-### «etthāpi» (945 apariciones propias) — masa 523 · 2 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| tatthāpi | 350 | ¿? + etthāpi | ta (135), taṃ (53.782) | 2 bases |
-| satthāpi | 173 | ¿? + etthāpi | sa (2.132), saṃ (145) | 2 bases |
-
-### «imañca» (304 apariciones propias) — masa 505 · 2 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| katamañca | 335 | ¿? + imañca | kata (54), kataṃ (5.499) | 2 bases |
-| nāmañca | 170 | ¿? + imañca | na (138.642), nā (26) | 2 bases |
-
 ### «atho» (416 apariciones propias) — masa 501 · 2 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -738,12 +747,6 @@
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
 | vuttameva | 480 | ¿? + tameva | vuti (1), vutā (2) | 2 bases |
-
-### «napi» (417 apariciones propias) — masa 449 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| punapi | 449 | puṃ + napi | puṃ (6) | única ⚠ |
 
 ### «annaṃ» (158 apariciones propias) — masa 447 · 1 formas
 
@@ -775,12 +778,6 @@
 | --- | ---: | --- | --- | --- |
 | sakiṃ | 441 | ¿? + kiṃ | saṃ (145), so (42.327), sā (10.054) | 3 bases |
 
-### «sāpi» (538 apariciones propias) — masa 433 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| tassāpi | 433 | ¿? + sāpi | ta (135), tasa (11), tase (3), tasā (30) | 4 bases |
-
 ### «suddhaṃ» (234 apariciones propias) — masa 425 · 1 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -794,11 +791,12 @@
 | gacchāma | 217 | ¿? + āma | gaccha (874), gacchaṃ (73), gacche (79), gacchi (8), gacchiṃ (8), gaccho (11), … | 7 bases |
 | jānāma | 195 | ¿? + āma | jāna (33), jānaṃ (444), jāne (4), jāni (32), jāniṃ (36), jāno (4), … | 8 bases |
 
-### «tañca» (2.065 apariciones propias) — masa 383 · 1 formas
+### «yāti» (204 apariciones propias) — masa 398 · 2 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
-| cittañca | 383 | ¿? + tañca | ci (29), cite (1), citi (2), cito (453), citā (14) | 5 bases |
+| etāyāti | 232 | eta + yāti | eta (4) | única ⚠ |
+| niyyāti | 166 | ¿? + yāti | ni (20), niyo (1), niyā (1), nī (11) | 4 bases |
 
 ### «attato» (518 apariciones propias) — masa 382 · 1 formas
 
@@ -915,12 +913,6 @@
 | --- | ---: | --- | --- | --- |
 | dukkaṭassā | 281 | ¿? + sā | dukkaṭa (6), dukkaṭasā (1) | 2 bases |
 
-### «pañca» (8.192 apariciones propias) — masa 279 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| rūpañca | 279 | ru + pañca | ru (1) | única ⚠ |
-
 ### «upari» (2.245 apariciones propias) — masa 263 · 1 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
@@ -944,12 +936,6 @@
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
 | caturāsīti | 245 | ¿? + asīti | caturo (271), caturā (7) | 2 bases |
-
-### «iti» (8.058 apariciones propias) — masa 245 · 1 formas
-
-| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
-| --- | ---: | --- | --- | --- |
-| caturāsīti | 245 | caturāsuṃ + iti | caturāsuṃ (3) | única ⚠ |
 
 ### «hetu» (4.612 apariciones propias) — masa 245 · 1 formas
 
@@ -981,11 +967,17 @@
 | --- | ---: | --- | --- | --- |
 | napurejātapaccayā | 238 | ¿? + purejātapaccayā | naṃ (6.103), nā (26) | 2 bases |
 
-### «evañca» (1.588 apariciones propias) — masa 207 · 1 formas
+### «assāti» (1.030 apariciones propias) — masa 223 · 1 formas
 
 | forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
 | --- | ---: | --- | --- | --- |
-| ādīnavañca | 207 | ādīnaṃ + evañca | ādīnaṃ (895) | única |
+| ādikammikassāti | 223 | ¿? + assāti | ādikammike (1), ādikammiko (41), ādikammikā (9) | 3 bases |
+
+### «arati» (159 apariciones propias) — masa 217 · 1 formas
+
+| forma | frec. | lectura candidata | bases atestiguadas | veredicto del mecanismo |
+| --- | ---: | --- | --- | --- |
+| sarati | 217 | ¿? + arati | sa (2.132), saṃ (145), se (70), si (2), so (42.327), su (312), … | 9 bases |
 
 ### «tamevatthaṃ» (115 apariciones propias) — masa 204 · 1 formas
 

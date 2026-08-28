@@ -667,13 +667,20 @@ function aplicarPatron(r) {
     if (lecturas.length && (lecturas[0].adjudicada || lecturas[0].origen))
         return;
     const frec = _cache.frecuencia;
+    const fForma = frec(r.cotejo) || 0;
     for (const patron of (_cache.patrones || [])) {
         const seg = cotejo(patron.segunda || "");
         if (!seg) continue;
+        // El resguardo de la base residual, adjudicado por Angel
+        // (2026-08-28, sesión 32): la base candidata debe ser al menos tan
+        // frecuente como la forma entera — «ho» (4) ya no concede la
+        // unicidad a hoti (59.320), ni una base de 1 aparición la niega.
+        // Porqués completos: `_aplicar_patron` del Python.
         let bases = new Set();
         for (const l of lecturas) {
             const comp = (l.componentes || []).map(cotejo);
-            if (comp.length === 2 && comp[1] === seg && frec(comp[0]))
+            if (comp.length === 2 && comp[1] === seg
+                && (frec(comp[0]) || 0) >= Math.max(fForma, 1))
                 bases.add(comp[0]);
         }
         // Regla de la clase vocálica, adjudicada por Angel (2026-08-28):

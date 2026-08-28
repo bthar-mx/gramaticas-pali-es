@@ -866,14 +866,25 @@ def _aplicar_patron(r):
                      or lecturas[0].get("origen")):
         return
     frec = cargar().get("frecuencia", {})
+    f_forma = frec.get(r["cotejo"], 0)
     for patron in cargar().get("patrones", []):
         seg = cotejo(patron.get("segunda", ""))
         if not seg:
             continue
+        # El resguardo de la base residual, adjudicado por Angel
+        # (2026-08-28, sesión 32): una base candidata debe ser AL MENOS tan
+        # frecuente en el canon como la forma entera. Sin él, «ho» (4
+        # apariciones) concedía la unicidad y el patrón afirmaba hoti
+        # (59.320) como ho + iti — y pajānāti, bhaṇati, vadati, karoti…—;
+        # y del otro lado, una base residual («cakkhundriyaña», 1) negaba
+        # la unicidad a una lectura real. La base residual ni concede ni
+        # bloquea: no cuenta como candidata. Las cuentas de la propia
+        # edición arbitran, como en toda la señal.
         bases = set()
         for l in lecturas:
             comp = [cotejo(x) for x in l.get("componentes", [])]
-            if len(comp) == 2 and comp[1] == seg and frec.get(comp[0], 0):
+            if (len(comp) == 2 and comp[1] == seg
+                    and frec.get(comp[0], 0) >= max(f_forma, 1)):
                 bases.add(comp[0])
         # Regla de la clase vocálica, adjudicada por Angel (2026-08-28):
         # «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti». La vocal

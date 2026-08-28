@@ -2553,11 +2553,11 @@
    "forma": "sevitabbāti",
    "mias": [
     [
-     "sevitabba",
+     "sevitabbā",
      "iti"
     ],
     [
-     "sevitabbā",
+     "sevitabba",
      "iti"
     ],
     [
@@ -7787,6 +7787,14 @@
    "forma": "gacchāhīti",
    "mias": [
     [
+     "gacchāhī",
+     "iti"
+    ],
+    [
+     "gacchāhī",
+     "iti"
+    ],
+    [
      "gacchāhi",
      "iti"
     ],
@@ -7837,14 +7845,6 @@
     [
      "gaṃ",
      "icchāhīti"
-    ],
-    [
-     "gacchāhī",
-     "iti"
-    ],
-    [
-     "gacchāhī",
-     "iti"
     ],
     [
      "gacchāhī",
@@ -7920,7 +7920,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 3
   },
   {
    "forma": "nāhaṃ",
@@ -12011,15 +12011,15 @@
    "forma": "bhikkhunīti",
    "mias": [
     [
-     "bhikkhuni",
-     "iti"
-    ],
-    [
-     "bhikkhuni",
+     "bhikkhunī",
      "iti"
     ],
     [
      "bhikkhunī",
+     "iti"
+    ],
+    [
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -12031,7 +12031,7 @@
      "iti"
     ],
     [
-     "bhikkhunī",
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -12419,10 +12419,6 @@
    "forma": "disvāti",
    "mias": [
     [
-     "disva",
-     "iti"
-    ],
-    [
      "disvā",
      "iti"
     ],
@@ -12461,6 +12457,10 @@
     [
      "diso",
      "ati"
+    ],
+    [
+     "disva",
+     "iti"
     ],
     [
      "disva",
@@ -12504,7 +12504,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "āsinti",
@@ -15335,11 +15335,11 @@
    "forma": "bojjhaṅgāti",
    "mias": [
     [
-     "bojjhaṅga",
+     "bojjhaṅgā",
      "iti"
     ],
     [
-     "bojjhaṅgā",
+     "bojjhaṅga",
      "iti"
     ],
     [
@@ -17126,11 +17126,11 @@
    "forma": "pariyuṭṭhitāti",
    "mias": [
     [
-     "pariyuṭṭhita",
+     "pariyuṭṭhitā",
      "iti"
     ],
     [
-     "pariyuṭṭhitā",
+     "pariyuṭṭhita",
      "iti"
     ],
     [
@@ -27212,15 +27212,23 @@
    "forma": "pūjessāmīti",
    "mias": [
     [
-     "pūjessāmi",
+     "pūjessāmī",
      "iti"
     ],
     [
-     "pūjessāmi",
+     "pūjessāmī",
      "iti"
     ],
     [
      "pūjessāma",
+     "iti"
+    ],
+    [
+     "pūjessāmi",
+     "iti"
+    ],
+    [
+     "pūjessāmi",
      "iti"
     ],
     [
@@ -27276,15 +27284,7 @@
      "essāmīti"
     ],
     [
-     "pūjessāmī",
-     "iti"
-    ],
-    [
      "pūjessāmā",
-     "iti"
-    ],
-    [
-     "pūjessāmī",
      "iti"
     ],
     [
@@ -27321,7 +27321,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 4
   },
   {
    "forma": "bhikkhācāravelāyaṃ",
@@ -52688,11 +52688,11 @@
    "forma": "manasikārāti",
    "mias": [
     [
-     "manasikāra",
+     "manasikārā",
      "iti"
     ],
     [
-     "manasikārā",
+     "manasikāra",
      "iti"
     ],
     [
@@ -53705,15 +53705,15 @@
    "forma": "marissāmīti",
    "mias": [
     [
-     "marissāmi",
-     "iti"
-    ],
-    [
-     "marissāmi",
-     "iti"
-    ],
-    [
      "marissāma",
+     "iti"
+    ],
+    [
+     "marissāmi",
+     "iti"
+    ],
+    [
+     "marissāmi",
      "iti"
     ],
     [
@@ -53822,7 +53822,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "pubbāciṇṇavasena",
@@ -62208,15 +62208,15 @@
    "forma": "marissāmīti",
    "mias": [
     [
-     "marissāmi",
-     "iti"
-    ],
-    [
-     "marissāmi",
-     "iti"
-    ],
-    [
      "marissāma",
+     "iti"
+    ],
+    [
+     "marissāmi",
+     "iti"
+    ],
+    [
+     "marissāmi",
      "iti"
     ],
     [
@@ -62325,7 +62325,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "athassā",
@@ -63273,11 +63273,11 @@
    "forma": "sakkāti",
    "mias": [
     [
-     "sakka",
+     "sakkā",
      "iti"
     ],
     [
-     "sakkā",
+     "sakka",
      "iti"
     ],
     [
@@ -66005,6 +66005,10 @@
    "forma": "vādamaggañca",
    "mias": [
     [
+     "vādamaggaṃ",
+     "ca"
+    ],
+    [
      "vāda",
      "amaggañca"
     ],
@@ -66067,10 +66071,6 @@
     [
      "vādaṃ",
      "maggañca"
-    ],
-    [
-     "vādamaggaṃ",
-     "ca"
     ],
     [
      "vādamagge",
@@ -68029,11 +68029,11 @@
    "forma": "vissajjanāti",
    "mias": [
     [
-     "vissajjana",
+     "vissajjanā",
      "iti"
     ],
     [
-     "vissajjanā",
+     "vissajjana",
      "iti"
     ],
     [
@@ -72125,11 +72125,7 @@
    "forma": "dāsīti",
    "mias": [
     [
-     "dāsi",
-     "iti"
-    ],
-    [
-     "dāsi",
+     "dāsī",
      "iti"
     ],
     [
@@ -72145,6 +72141,10 @@
      "iti"
     ],
     [
+     "dāsi",
+     "iti"
+    ],
+    [
      "dāso",
      "iti"
     ],
@@ -72157,7 +72157,7 @@
      "iti"
     ],
     [
-     "dāsī",
+     "dāsi",
      "iti"
     ],
     [
@@ -74033,11 +74033,11 @@
    "forma": "anattāti",
    "mias": [
     [
-     "anatta",
+     "anattā",
      "iti"
     ],
     [
-     "anattā",
+     "anatta",
      "iti"
     ],
     [
@@ -76566,11 +76566,11 @@
    "forma": "gatāti",
    "mias": [
     [
-     "gata",
+     "gatā",
      "iti"
     ],
     [
-     "gatā",
+     "gata",
      "iti"
     ],
     [
@@ -77134,11 +77134,11 @@
    "forma": "gatāti",
    "mias": [
     [
-     "gata",
+     "gatā",
      "iti"
     ],
     [
-     "gatā",
+     "gata",
      "iti"
     ],
     [
@@ -77273,11 +77273,11 @@
    "forma": "jātāti",
    "mias": [
     [
-     "jāta",
+     "jātā",
      "iti"
     ],
     [
-     "jātā",
+     "jāta",
      "iti"
     ],
     [
@@ -91382,11 +91382,11 @@
    "forma": "aṭṭāti",
    "mias": [
     [
-     "aṭṭa",
+     "aṭṭā",
      "iti"
     ],
     [
-     "aṭṭā",
+     "aṭṭa",
      "iti"
     ],
     [
@@ -91491,7 +91491,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "ādikā",
@@ -92218,15 +92218,15 @@
    "forma": "rūpavatīti",
    "mias": [
     [
-     "rūpavati",
-     "iti"
-    ],
-    [
-     "rūpavati",
+     "rūpavatī",
      "iti"
     ],
     [
      "rūpavatī",
+     "iti"
+    ],
+    [
+     "rūpavati",
      "iti"
     ],
     [
@@ -92238,7 +92238,7 @@
      "iti"
     ],
     [
-     "rūpavatī",
+     "rūpavati",
      "iti"
     ],
     [
@@ -93284,15 +93284,23 @@
    "forma": "passissāmīti",
    "mias": [
     [
-     "passissāmi",
+     "passissāmī",
      "iti"
     ],
     [
-     "passissāmi",
+     "passissāmī",
      "iti"
     ],
     [
      "passissāma",
+     "iti"
+    ],
+    [
+     "passissāmi",
+     "iti"
+    ],
+    [
+     "passissāmi",
      "iti"
     ],
     [
@@ -93340,15 +93348,7 @@
      "essāmīti"
     ],
     [
-     "passissāmī",
-     "iti"
-    ],
-    [
      "passissāmā",
-     "iti"
-    ],
-    [
-     "passissāmī",
      "iti"
     ],
     [
@@ -93405,7 +93405,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 4
   },
   {
    "forma": "adisvā",
@@ -98009,11 +98009,11 @@
    "forma": "khemāti",
    "mias": [
     [
-     "khema",
+     "khemā",
      "iti"
     ],
     [
-     "khemā",
+     "khema",
      "iti"
     ],
     [
@@ -104105,11 +104105,11 @@
    "forma": "khemāti",
    "mias": [
     [
-     "khema",
+     "khemā",
      "iti"
     ],
     [
-     "khemā",
+     "khema",
      "iti"
     ],
     [
@@ -107370,11 +107370,11 @@
    "forma": "pabbajjāti",
    "mias": [
     [
-     "pabbajja",
+     "pabbajjā",
      "iti"
     ],
     [
-     "pabbajjā",
+     "pabbajja",
      "iti"
     ],
     [
@@ -107519,7 +107519,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "ādikā",
@@ -112450,19 +112450,19 @@
    "forma": "kisāgotamīti",
    "mias": [
     [
-     "kisāgotami",
-     "iti"
-    ],
-    [
-     "kisāgotami",
-     "iti"
-    ],
-    [
      "kisāgotamī",
      "iti"
     ],
     [
      "kisāgotamī",
+     "iti"
+    ],
+    [
+     "kisāgotami",
+     "iti"
+    ],
+    [
+     "kisāgotami",
      "iti"
     ],
     [
@@ -120095,16 +120095,16 @@
    "forma": "rukkhasaññañca",
    "mias": [
     [
+     "rukkhasaññaṃ",
+     "ca"
+    ],
+    [
      "rukkhā",
      "saññañca"
     ],
     [
      "rukkhaṃ",
      "saññañca"
-    ],
-    [
-     "rukkhasaññaṃ",
-     "ca"
     ],
     [
      "rukkhasaññaṃ",
@@ -122082,15 +122082,23 @@
    "forma": "gaṇhissāmīti",
    "mias": [
     [
-     "gaṇhissāmi",
+     "gaṇhissāmī",
      "iti"
     ],
     [
-     "gaṇhissāmi",
+     "gaṇhissāmī",
      "iti"
     ],
     [
      "gaṇhissāma",
+     "iti"
+    ],
+    [
+     "gaṇhissāmi",
+     "iti"
+    ],
+    [
+     "gaṇhissāmi",
      "iti"
     ],
     [
@@ -122154,15 +122162,7 @@
      "essāmīti"
     ],
     [
-     "gaṇhissāmī",
-     "iti"
-    ],
-    [
      "gaṇhissāmā",
-     "iti"
-    ],
-    [
-     "gaṇhissāmī",
      "iti"
     ],
     [
@@ -122203,7 +122203,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 4
   },
   {
    "forma": "tasmiṃyeva",
@@ -126790,6 +126790,10 @@
    "forma": "gaṇhātūti",
    "mias": [
     [
+     "gaṇhātū",
+     "iti"
+    ],
+    [
      "gaṇhātu",
      "iti"
     ],
@@ -126871,10 +126875,6 @@
     ],
     [
      "gaṇhātū",
-     "iti"
-    ],
-    [
-     "gaṇhātū",
      "ati"
     ],
     [
@@ -126895,7 +126895,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "ammāti",
@@ -131131,11 +131131,11 @@
    "forma": "katāti",
    "mias": [
     [
-     "kata",
+     "katā",
      "iti"
     ],
     [
-     "katā",
+     "kata",
      "iti"
     ],
     [
@@ -131268,7 +131268,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "carāpethāti",
@@ -133717,11 +133717,11 @@
    "forma": "jātāti",
    "mias": [
     [
-     "jāta",
+     "jātā",
      "iti"
     ],
     [
-     "jātā",
+     "jāta",
      "iti"
     ],
     [
@@ -150248,15 +150248,15 @@
    "forma": "marissāmīti",
    "mias": [
     [
-     "marissāmi",
-     "iti"
-    ],
-    [
-     "marissāmi",
-     "iti"
-    ],
-    [
      "marissāma",
+     "iti"
+    ],
+    [
+     "marissāmi",
+     "iti"
+    ],
+    [
+     "marissāmi",
      "iti"
     ],
     [
@@ -150365,7 +150365,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "sattame",
@@ -155786,11 +155786,11 @@
    "forma": "jātāti",
    "mias": [
     [
-     "jāta",
+     "jātā",
      "iti"
     ],
     [
-     "jātā",
+     "jāta",
      "iti"
     ],
     [
@@ -155937,11 +155937,11 @@
    "forma": "satthāti",
    "mias": [
     [
-     "sattha",
+     "satthā",
      "iti"
     ],
     [
-     "satthā",
+     "sattha",
      "iti"
     ],
     [
@@ -158236,15 +158236,15 @@
    "forma": "nadissāmīti",
    "mias": [
     [
-     "nadissāmi",
-     "iti"
-    ],
-    [
-     "nadissāmi",
-     "iti"
-    ],
-    [
      "nadissāma",
+     "iti"
+    ],
+    [
+     "nadissāmi",
+     "iti"
+    ],
+    [
+     "nadissāmi",
      "iti"
     ],
     [
@@ -158333,7 +158333,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "katapaṭisanthārā",
@@ -158537,11 +158537,11 @@
    "forma": "subhāti",
    "mias": [
     [
-     "subha",
+     "subhā",
      "iti"
     ],
     [
-     "subhā",
+     "subha",
      "iti"
     ],
     [
@@ -158941,16 +158941,16 @@
    "forma": "vibhavajātañca",
    "mias": [
     [
+     "vibhavajātaṃ",
+     "ca"
+    ],
+    [
      "vibhavā",
      "jātañca"
     ],
     [
      "vibhavaṃ",
      "jātañca"
-    ],
-    [
-     "vibhavajātaṃ",
-     "ca"
     ],
     [
      "vibhavajātaṃ",
@@ -159356,11 +159356,11 @@
    "forma": "subhāti",
    "mias": [
     [
-     "subha",
+     "subhā",
      "iti"
     ],
     [
-     "subhā",
+     "subha",
      "iti"
     ],
     [
@@ -175433,10 +175433,6 @@
    "forma": "padālayāti",
    "mias": [
     [
-     "padālayā",
-     "iti"
-    ],
-    [
      "padālaya",
      "iti"
     ],
@@ -175545,6 +175541,10 @@
      "yāti"
     ],
     [
+     "padālayā",
+     "iti"
+    ],
+    [
      "padāla",
      "ayāti"
     ],
@@ -175630,7 +175630,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "gāthamāha",
@@ -176138,10 +176138,6 @@
    "forma": "padālayāti",
    "mias": [
     [
-     "padālayā",
-     "iti"
-    ],
-    [
      "padālaya",
      "iti"
     ],
@@ -176250,6 +176246,10 @@
      "yāti"
     ],
     [
+     "padālayā",
+     "iti"
+    ],
+    [
      "padāla",
      "ayāti"
     ],
@@ -176335,7 +176335,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "saheva",
@@ -177741,11 +177741,11 @@
    "forma": "bojjhaṅgāti",
    "mias": [
     [
-     "bojjhaṅga",
+     "bojjhaṅgā",
      "iti"
     ],
     [
-     "bojjhaṅgā",
+     "bojjhaṅga",
      "iti"
     ],
     [
@@ -178669,11 +178669,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -179146,6 +179146,14 @@
    "forma": "sampādehīti",
    "mias": [
     [
+     "sampādehī",
+     "iti"
+    ],
+    [
+     "sampādehī",
+     "iti"
+    ],
+    [
      "sampādehi",
      "iti"
     ],
@@ -179251,14 +179259,6 @@
     ],
     [
      "sampādehī",
-     "iti"
-    ],
-    [
-     "sampādehī",
-     "iti"
-    ],
-    [
-     "sampādehī",
      "īti"
     ],
     [
@@ -179295,7 +179295,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 3
   },
   {
    "forma": "kāraṇamāha",
@@ -183035,10 +183035,6 @@
    "forma": "yogakkhemamanuttaranti",
    "mias": [
     [
-     "yogakkhemamanuttaraṃ",
-     "iti"
-    ],
-    [
      "yogakkhemaṃ",
      "anuttaranti"
     ],
@@ -183049,6 +183045,10 @@
     [
      "yogakkhemā",
      "anuttaranti"
+    ],
+    [
+     "yogakkhemamanuttaraṃ",
+     "iti"
     ],
     [
      "yogakkhemamanuttaraṃ",
@@ -186315,11 +186315,11 @@
    "forma": "samugghāṭitāti",
    "mias": [
     [
-     "samugghāṭita",
+     "samugghāṭitā",
      "iti"
     ],
     [
-     "samugghāṭitā",
+     "samugghāṭita",
      "iti"
     ],
     [
@@ -187494,11 +187494,11 @@
    "forma": "siyāti",
    "mias": [
     [
-     "siya",
+     "siyā",
      "iti"
     ],
     [
-     "siyā",
+     "siya",
      "iti"
     ],
     [
@@ -189475,10 +189475,6 @@
    "forma": "disvāti",
    "mias": [
     [
-     "disva",
-     "iti"
-    ],
-    [
      "disvā",
      "iti"
     ],
@@ -189517,6 +189513,10 @@
     [
      "diso",
      "ati"
+    ],
+    [
+     "disva",
+     "iti"
     ],
     [
      "disva",
@@ -189560,7 +189560,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "sasantatipariyāpannā",
@@ -189570,11 +189570,11 @@
    "forma": "dukkhāti",
    "mias": [
     [
-     "dukkha",
+     "dukkhā",
      "iti"
     ],
     [
-     "dukkhā",
+     "dukkha",
      "iti"
     ],
     [
@@ -190086,10 +190086,6 @@
    "forma": "disvāti",
    "mias": [
     [
-     "disva",
-     "iti"
-    ],
-    [
      "disvā",
      "iti"
     ],
@@ -190128,6 +190124,10 @@
     [
      "diso",
      "ati"
+    ],
+    [
+     "disva",
+     "iti"
     ],
     [
      "disva",
@@ -190171,7 +190171,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "iminā",
@@ -190827,11 +190827,11 @@
    "forma": "dassitāti",
    "mias": [
     [
-     "dassita",
+     "dassitā",
      "iti"
     ],
     [
-     "dassitā",
+     "dassita",
      "iti"
     ],
     [
@@ -201089,11 +201089,11 @@
    "forma": "bojjhaṅgāti",
    "mias": [
     [
-     "bojjhaṅga",
+     "bojjhaṅgā",
      "iti"
     ],
     [
-     "bojjhaṅgā",
+     "bojjhaṅga",
      "iti"
     ],
     [
@@ -201224,11 +201224,11 @@
    "forma": "bojjhaṅgāti",
    "mias": [
     [
-     "bojjhaṅga",
+     "bojjhaṅgā",
      "iti"
     ],
     [
-     "bojjhaṅgā",
+     "bojjhaṅga",
      "iti"
     ],
     [
@@ -201543,11 +201543,11 @@
    "forma": "desitāti",
    "mias": [
     [
-     "desita",
+     "desitā",
      "iti"
     ],
     [
-     "desitā",
+     "desita",
      "iti"
     ],
     [
@@ -202879,11 +202879,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -202972,7 +202972,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "rāgañca",
@@ -211159,11 +211159,11 @@
    "forma": "vijjāti",
    "mias": [
     [
-     "vijja",
+     "vijjā",
      "iti"
     ],
     [
-     "vijjā",
+     "vijja",
      "iti"
     ],
     [
@@ -216964,11 +216964,11 @@
    "forma": "pabbajitāti",
    "mias": [
     [
-     "pabbajita",
+     "pabbajitā",
      "iti"
     ],
     [
-     "pabbajitā",
+     "pabbajita",
      "iti"
     ],
     [
@@ -222114,11 +222114,11 @@
    "forma": "puthujjanāti",
    "mias": [
     [
-     "puthujjana",
+     "puthujjanā",
      "iti"
     ],
     [
-     "puthujjanā",
+     "puthujjana",
      "iti"
     ],
     [
@@ -224686,15 +224686,15 @@
    "forma": "avasavattinīti",
    "mias": [
     [
-     "avasavattini",
-     "iti"
-    ],
-    [
-     "avasavattini",
+     "avasavattinī",
      "iti"
     ],
     [
      "avasavattinī",
+     "iti"
+    ],
+    [
+     "avasavattini",
      "iti"
     ],
     [
@@ -224702,7 +224702,7 @@
      "iti"
     ],
     [
-     "avasavattinī",
+     "avasavattini",
      "iti"
     ],
     [
@@ -224967,15 +224967,15 @@
    "forma": "avasavattinīti",
    "mias": [
     [
-     "avasavattini",
-     "iti"
-    ],
-    [
-     "avasavattini",
+     "avasavattinī",
      "iti"
     ],
     [
      "avasavattinī",
+     "iti"
+    ],
+    [
+     "avasavattini",
      "iti"
     ],
     [
@@ -224983,7 +224983,7 @@
      "iti"
     ],
     [
-     "avasavattinī",
+     "avasavattini",
      "iti"
     ],
     [
@@ -230341,11 +230341,11 @@
    "forma": "gatāti",
    "mias": [
     [
-     "gata",
+     "gatā",
      "iti"
     ],
     [
-     "gatā",
+     "gata",
      "iti"
     ],
     [
@@ -231938,10 +231938,6 @@
    "forma": "disvāti",
    "mias": [
     [
-     "disva",
-     "iti"
-    ],
-    [
      "disvā",
      "iti"
     ],
@@ -231980,6 +231976,10 @@
     [
      "diso",
      "ati"
+    ],
+    [
+     "disva",
+     "iti"
     ],
     [
      "disva",
@@ -232023,7 +232023,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "yojanā",
@@ -232178,11 +232178,11 @@
    "forma": "gatāti",
    "mias": [
     [
-     "gata",
+     "gatā",
      "iti"
     ],
     [
-     "gatā",
+     "gata",
      "iti"
     ],
     [
@@ -232877,14 +232877,6 @@
    "forma": "kamanusocasīti",
    "mias": [
     [
-     "kamanusocasi",
-     "iti"
-    ],
-    [
-     "kamanusocasi",
-     "iti"
-    ],
-    [
      "kama",
      "anusocasīti"
     ],
@@ -232949,7 +232941,15 @@
      "iti"
     ],
     [
+     "kamanusocasi",
+     "iti"
+    ],
+    [
      "kamanusocasī",
+     "iti"
+    ],
+    [
+     "kamanusocasi",
      "iti"
     ],
     [
@@ -233953,14 +233953,6 @@
    "forma": "kamanusocasīti",
    "mias": [
     [
-     "kamanusocasi",
-     "iti"
-    ],
-    [
-     "kamanusocasi",
-     "iti"
-    ],
-    [
      "kama",
      "anusocasīti"
     ],
@@ -234025,7 +234017,15 @@
      "iti"
     ],
     [
+     "kamanusocasi",
+     "iti"
+    ],
+    [
      "kamanusocasī",
+     "iti"
+    ],
+    [
+     "kamanusocasi",
      "iti"
     ],
     [
@@ -238418,16 +238418,16 @@
    "forma": "navavidhalokuttaradhammañca",
    "mias": [
     [
+     "navavidhalokuttaradhammaṃ",
+     "ca"
+    ],
+    [
      "navavidhā",
      "lokuttaradhammañca"
     ],
     [
      "navavidhaṃ",
      "lokuttaradhammañca"
-    ],
-    [
-     "navavidhalokuttaradhammaṃ",
-     "ca"
     ],
     [
      "navavidhalokuttaradhamme",
@@ -239151,11 +239151,11 @@
    "forma": "manussāti",
    "mias": [
     [
-     "manussa",
+     "manussā",
      "iti"
     ],
     [
-     "manussā",
+     "manussa",
      "iti"
     ],
     [
@@ -239717,11 +239717,11 @@
    "forma": "katāti",
    "mias": [
     [
-     "kata",
+     "katā",
      "iti"
     ],
     [
-     "katā",
+     "kata",
      "iti"
     ],
     [
@@ -239854,7 +239854,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "yojanā",
@@ -241077,11 +241077,11 @@
    "forma": "sukkāti",
    "mias": [
     [
-     "sukka",
+     "sukkā",
      "iti"
     ],
     [
-     "sukkā",
+     "sukka",
      "iti"
     ],
     [
@@ -241426,11 +241426,11 @@
    "forma": "samāhitāti",
    "mias": [
     [
-     "samāhita",
+     "samāhitā",
      "iti"
     ],
     [
-     "samāhitā",
+     "samāhita",
      "iti"
     ],
     [
@@ -243272,11 +243272,11 @@
    "forma": "jānāti",
    "mias": [
     [
-     "jāna",
+     "jānā",
      "iti"
     ],
     [
-     "jānā",
+     "jāna",
      "iti"
     ],
     [
@@ -243921,11 +243921,11 @@
    "forma": "kāmāti",
    "mias": [
     [
-     "kāma",
+     "kāmā",
      "iti"
     ],
     [
-     "kāmā",
+     "kāma",
      "iti"
     ],
     [
@@ -244164,11 +244164,11 @@
    "forma": "khandhāti",
    "mias": [
     [
-     "khandha",
+     "khandhā",
      "iti"
     ],
     [
-     "khandhā",
+     "khandha",
      "iti"
     ],
     [
@@ -245107,11 +245107,7 @@
    "forma": "nandīti",
    "mias": [
     [
-     "nandi",
-     "iti"
-    ],
-    [
-     "nandi",
+     "nandī",
      "iti"
     ],
     [
@@ -245127,6 +245123,10 @@
      "iti"
     ],
     [
+     "nandi",
+     "iti"
+    ],
+    [
      "nando",
      "iti"
     ],
@@ -245135,7 +245135,7 @@
      "iti"
     ],
     [
-     "nandī",
+     "nandi",
      "iti"
     ],
     [
@@ -247619,11 +247619,7 @@
    "forma": "nandīti",
    "mias": [
     [
-     "nandi",
-     "iti"
-    ],
-    [
-     "nandi",
+     "nandī",
      "iti"
     ],
     [
@@ -247639,6 +247635,10 @@
      "iti"
     ],
     [
+     "nandi",
+     "iti"
+    ],
+    [
      "nando",
      "iti"
     ],
@@ -247647,7 +247647,7 @@
      "iti"
     ],
     [
-     "nandī",
+     "nandi",
      "iti"
     ],
     [
@@ -250351,11 +250351,11 @@
    "forma": "dantāti",
    "mias": [
     [
-     "danta",
+     "dantā",
      "iti"
     ],
     [
-     "dantā",
+     "danta",
      "iti"
     ],
     [
@@ -253758,11 +253758,11 @@
    "forma": "āpannāti",
    "mias": [
     [
-     "āpanna",
+     "āpannā",
      "iti"
     ],
     [
-     "āpannā",
+     "āpanna",
      "iti"
     ],
     [
@@ -256243,11 +256243,11 @@
    "forma": "samucchinnāti",
    "mias": [
     [
-     "samucchinna",
+     "samucchinnā",
      "iti"
     ],
     [
-     "samucchinnā",
+     "samucchinna",
      "iti"
     ],
     [
@@ -257039,11 +257039,11 @@
    "forma": "manasikārāti",
    "mias": [
     [
-     "manasikāra",
+     "manasikārā",
      "iti"
     ],
     [
-     "manasikārā",
+     "manasikāra",
      "iti"
     ],
     [
@@ -257467,15 +257467,15 @@
    "forma": "avasavattinīti",
    "mias": [
     [
-     "avasavattini",
-     "iti"
-    ],
-    [
-     "avasavattini",
+     "avasavattinī",
      "iti"
     ],
     [
      "avasavattinī",
+     "iti"
+    ],
+    [
+     "avasavattini",
      "iti"
     ],
     [
@@ -257483,7 +257483,7 @@
      "iti"
     ],
     [
-     "avasavattinī",
+     "avasavattini",
      "iti"
     ],
     [
@@ -260162,11 +260162,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -260255,7 +260255,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "evametaṃ",
@@ -265538,11 +265538,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -265631,7 +265631,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "evametaṃ",
@@ -271187,11 +271187,11 @@
    "forma": "siyāti",
    "mias": [
     [
-     "siya",
+     "siyā",
      "iti"
     ],
     [
-     "siyā",
+     "siya",
      "iti"
     ],
     [
@@ -272107,11 +272107,11 @@
    "forma": "samucchinnāti",
    "mias": [
     [
-     "samucchinna",
+     "samucchinnā",
      "iti"
     ],
     [
-     "samucchinnā",
+     "samucchinna",
      "iti"
     ],
     [
@@ -273786,10 +273786,6 @@
    "forma": "gantvāti",
    "mias": [
     [
-     "gantva",
-     "iti"
-    ],
-    [
      "gantvā",
      "iti"
     ],
@@ -273828,6 +273824,10 @@
     [
      "gantu",
      "ati"
+    ],
+    [
+     "gantva",
+     "iti"
     ],
     [
      "gantva",
@@ -273883,7 +273883,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "mānamadataṇhādīnaṃ",
@@ -276073,16 +276073,16 @@
    "forma": "uppādanirodhañca",
    "mias": [
     [
+     "uppādanirodhaṃ",
+     "ca"
+    ],
+    [
      "uppādā",
      "nirodhañca"
     ],
     [
      "uppādaṃ",
      "nirodhañca"
-    ],
-    [
-     "uppādanirodhaṃ",
-     "ca"
     ],
     [
      "uppādanirodhe",
@@ -282691,11 +282691,11 @@
    "forma": "jiṇṇāti",
    "mias": [
     [
-     "jiṇṇa",
+     "jiṇṇā",
      "iti"
     ],
     [
-     "jiṇṇā",
+     "jiṇṇa",
      "iti"
     ],
     [
@@ -286600,10 +286600,6 @@
    "forma": "vanditvāti",
    "mias": [
     [
-     "vanditva",
-     "iti"
-    ],
-    [
      "vanditvā",
      "iti"
     ],
@@ -286650,6 +286646,10 @@
     [
      "vandī",
      "vāti"
+    ],
+    [
+     "vanditva",
+     "iti"
     ],
     [
      "vanditva",
@@ -286701,7 +286701,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "pañcapatiṭṭhitena",
@@ -287170,10 +287170,6 @@
    "forma": "upasampajjassūti",
    "mias": [
     [
-     "upasampajjassū",
-     "iti"
-    ],
-    [
      "upasampajjassu",
      "iti"
     ],
@@ -287227,6 +287223,10 @@
     ],
     [
      "upasampajjassū",
+     "iti"
+    ],
+    [
+     "upasampajjassū",
      "ati"
     ],
     [
@@ -287255,7 +287255,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "ādikā",
@@ -287265,11 +287265,11 @@
    "forma": "magadhāti",
    "mias": [
     [
-     "magadha",
+     "magadhā",
      "iti"
     ],
     [
-     "magadhā",
+     "magadha",
      "iti"
     ],
     [
@@ -289428,11 +289428,11 @@
    "forma": "āyusaṅkhārāti",
    "mias": [
     [
-     "āyusaṅkhāra",
+     "āyusaṅkhārā",
      "iti"
     ],
     [
-     "āyusaṅkhārā",
+     "āyusaṅkhāra",
      "iti"
     ],
     [
@@ -292805,11 +292805,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -293376,11 +293376,7 @@
    "forma": "anusāsanīti",
    "mias": [
     [
-     "anusāsani",
-     "iti"
-    ],
-    [
-     "anusāsani",
+     "anusāsanī",
      "iti"
     ],
     [
@@ -293396,11 +293392,15 @@
      "iti"
     ],
     [
+     "anusāsani",
+     "iti"
+    ],
+    [
      "anusāsanā",
      "iti"
     ],
     [
-     "anusāsanī",
+     "anusāsani",
      "iti"
     ],
     [
@@ -293865,11 +293865,11 @@
    "forma": "katāti",
    "mias": [
     [
-     "kata",
+     "katā",
      "iti"
     ],
     [
-     "katā",
+     "kata",
      "iti"
     ],
     [
@@ -294002,7 +294002,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "pañcapatiṭṭhitena",
@@ -294165,11 +294165,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -294995,11 +294995,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -295524,11 +295524,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -295617,7 +295617,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "aḍḍhāyeva",
@@ -295943,11 +295943,11 @@
    "forma": "vidhavāti",
    "mias": [
     [
-     "vidhava",
+     "vidhavā",
      "iti"
     ],
     [
-     "vidhavā",
+     "vidhava",
      "iti"
     ],
     [
@@ -298472,11 +298472,11 @@
    "forma": "paridevanāti",
    "mias": [
     [
-     "paridevana",
+     "paridevanā",
      "iti"
     ],
     [
-     "paridevanā",
+     "paridevana",
      "iti"
     ],
     [
@@ -299912,11 +299912,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -300005,7 +300005,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "yassa",
@@ -303889,11 +303889,11 @@
    "forma": "paridevanāti",
    "mias": [
     [
-     "paridevana",
+     "paridevanā",
      "iti"
     ],
     [
-     "paridevanā",
+     "paridevana",
      "iti"
     ],
     [
@@ -304539,11 +304539,11 @@
    "forma": "bhāsitāti",
    "mias": [
     [
-     "bhāsita",
+     "bhāsitā",
      "iti"
     ],
     [
-     "bhāsitā",
+     "bhāsita",
      "iti"
     ],
     [
@@ -305339,11 +305339,11 @@
    "forma": "aṭṭāti",
    "mias": [
     [
-     "aṭṭa",
+     "aṭṭā",
      "iti"
     ],
     [
-     "aṭṭā",
+     "aṭṭa",
      "iti"
     ],
     [
@@ -305448,7 +305448,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "ayameva",
@@ -305509,11 +305509,11 @@
    "forma": "pīḷitāti",
    "mias": [
     [
-     "pīḷita",
+     "pīḷitā",
      "iti"
     ],
     [
-     "pīḷitā",
+     "pīḷita",
      "iti"
     ],
     [
@@ -305600,11 +305600,11 @@
    "forma": "khittacittāti",
    "mias": [
     [
-     "khittacitta",
+     "khittacittā",
      "iti"
     ],
     [
-     "khittacittā",
+     "khittacitta",
      "iti"
     ],
     [
@@ -308639,6 +308639,10 @@
    "forma": "katakiccatañca",
    "mias": [
     [
+     "katakiccataṃ",
+     "ca"
+    ],
+    [
      "katakicca",
      "etañca"
     ],
@@ -308653,10 +308657,6 @@
     [
      "katakiccaṃ",
      "tañca"
-    ],
-    [
-     "katakiccataṃ",
-     "ca"
     ],
     [
      "katakiccato",
@@ -312299,11 +312299,11 @@
    "forma": "jātāti",
    "mias": [
     [
-     "jāta",
+     "jātā",
      "iti"
     ],
     [
-     "jātā",
+     "jāta",
      "iti"
     ],
     [
@@ -312713,11 +312713,11 @@
    "forma": "samannāgatāti",
    "mias": [
     [
-     "samannāgata",
+     "samannāgatā",
      "iti"
     ],
     [
-     "samannāgatā",
+     "samannāgata",
      "iti"
     ],
     [
@@ -340252,15 +340252,15 @@
    "forma": "bhikkhunīti",
    "mias": [
     [
-     "bhikkhuni",
-     "iti"
-    ],
-    [
-     "bhikkhuni",
+     "bhikkhunī",
      "iti"
     ],
     [
      "bhikkhunī",
+     "iti"
+    ],
+    [
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -340272,7 +340272,7 @@
      "iti"
     ],
     [
-     "bhikkhunī",
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -342701,11 +342701,15 @@
    "forma": "sabbassāpi",
    "mias": [
     [
-     "sabbassā",
+     "sabbassa",
      "api"
     ],
     [
      "sabbassa",
+     "api"
+    ],
+    [
+     "sabbassā",
      "api"
     ],
     [
@@ -342714,10 +342718,6 @@
     ],
     [
      "sabbassā",
-     "api"
-    ],
-    [
-     "sabbassa",
      "api"
     ],
     [
@@ -342814,7 +342814,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "jātisaṃsāranti",
@@ -342990,11 +342990,11 @@
    "forma": "upasantāti",
    "mias": [
     [
-     "upasanta",
+     "upasantā",
      "iti"
     ],
     [
-     "upasantā",
+     "upasanta",
      "iti"
     ],
     [
@@ -343123,7 +343123,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "vuttanayameva",
@@ -345285,11 +345285,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -346944,11 +346944,7 @@
    "forma": "anusāsanīti",
    "mias": [
     [
-     "anusāsani",
-     "iti"
-    ],
-    [
-     "anusāsani",
+     "anusāsanī",
      "iti"
     ],
     [
@@ -346964,11 +346960,15 @@
      "iti"
     ],
     [
+     "anusāsani",
+     "iti"
+    ],
+    [
      "anusāsanā",
      "iti"
     ],
     [
-     "anusāsanī",
+     "anusāsani",
      "iti"
     ],
     [
@@ -347898,15 +347898,15 @@
    "forma": "bhikkhunīti",
    "mias": [
     [
-     "bhikkhuni",
-     "iti"
-    ],
-    [
-     "bhikkhuni",
+     "bhikkhunī",
      "iti"
     ],
     [
      "bhikkhunī",
+     "iti"
+    ],
+    [
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -347918,7 +347918,7 @@
      "iti"
     ],
     [
-     "bhikkhunī",
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -349787,11 +349787,11 @@
    "forma": "bahiddhāti",
    "mias": [
     [
-     "bahiddha",
+     "bahiddhā",
      "iti"
     ],
     [
-     "bahiddhā",
+     "bahiddha",
      "iti"
     ],
     [
@@ -350186,19 +350186,15 @@
    "forma": "oḍḍentīti",
    "mias": [
     [
-     "oḍḍenti",
-     "iti"
-    ],
-    [
-     "oḍḍenti",
-     "iti"
-    ],
-    [
      "oḍḍentī",
      "iti"
     ],
     [
      "oḍḍenta",
+     "iti"
+    ],
+    [
+     "oḍḍenti",
      "iti"
     ],
     [
@@ -350215,6 +350211,10 @@
     ],
     [
      "oḍḍentī",
+     "iti"
+    ],
+    [
+     "oḍḍenti",
      "iti"
     ],
     [
@@ -352433,11 +352433,11 @@
    "forma": "samannāgatāti",
    "mias": [
     [
-     "samannāgata",
+     "samannāgatā",
      "iti"
     ],
     [
-     "samannāgatā",
+     "samannāgata",
      "iti"
     ],
     [
@@ -352801,11 +352801,11 @@
    "forma": "samannāgatāti",
    "mias": [
     [
-     "samannāgata",
+     "samannāgatā",
      "iti"
     ],
     [
-     "samannāgatā",
+     "samannāgata",
      "iti"
     ],
     [
@@ -353501,15 +353501,15 @@
    "forma": "rocemīti",
    "mias": [
     [
-     "rocemi",
-     "iti"
-    ],
-    [
-     "rocemi",
-     "iti"
-    ],
-    [
      "rocema",
+     "iti"
+    ],
+    [
+     "rocemi",
+     "iti"
+    ],
+    [
+     "rocemi",
      "iti"
     ],
     [
@@ -353618,7 +353618,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "paribhuñjitabbāti",
@@ -356717,15 +356717,15 @@
    "forma": "rocemīti",
    "mias": [
     [
-     "rocemi",
-     "iti"
-    ],
-    [
-     "rocemi",
-     "iti"
-    ],
-    [
      "rocema",
+     "iti"
+    ],
+    [
+     "rocemi",
+     "iti"
+    ],
+    [
+     "rocemi",
      "iti"
     ],
     [
@@ -356834,7 +356834,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "kāmānañca",
@@ -357827,11 +357827,11 @@
    "forma": "susaṃvutāti",
    "mias": [
     [
-     "susaṃvuta",
+     "susaṃvutā",
      "iti"
     ],
     [
-     "susaṃvutā",
+     "susaṃvuta",
      "iti"
     ],
     [
@@ -359005,11 +359005,11 @@
    "forma": "tāvatiṃsāti",
    "mias": [
     [
-     "tāvatiṃsa",
+     "tāvatiṃsā",
      "iti"
     ],
     [
-     "tāvatiṃsā",
+     "tāvatiṃsa",
      "iti"
     ],
     [
@@ -359444,11 +359444,11 @@
    "forma": "pahaṭṭhāti",
    "mias": [
     [
-     "pahaṭṭha",
+     "pahaṭṭhā",
      "iti"
     ],
     [
-     "pahaṭṭhā",
+     "pahaṭṭha",
      "iti"
     ],
     [
@@ -365612,11 +365612,11 @@
    "forma": "patiṭṭhitāti",
    "mias": [
     [
-     "patiṭṭhita",
+     "patiṭṭhitā",
      "iti"
     ],
     [
-     "patiṭṭhitā",
+     "patiṭṭhita",
      "iti"
     ],
     [
@@ -367749,11 +367749,11 @@
    "forma": "saṅkhārāti",
    "mias": [
     [
-     "saṅkhāra",
+     "saṅkhārā",
      "iti"
     ],
     [
-     "saṅkhārā",
+     "saṅkhāra",
      "iti"
     ],
     [
@@ -367948,11 +367948,11 @@
    "forma": "hīnāti",
    "mias": [
     [
-     "hīna",
+     "hīnā",
      "iti"
     ],
     [
-     "hīnā",
+     "hīna",
      "iti"
     ],
     [
@@ -368101,7 +368101,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "ukkaṭṭhamajjhimāti",
@@ -370393,11 +370393,11 @@
    "forma": "gāthāti",
    "mias": [
     [
-     "gātha",
+     "gāthā",
      "iti"
     ],
     [
-     "gāthā",
+     "gātha",
      "iti"
     ],
     [
@@ -387165,11 +387165,11 @@
    "forma": "mātāti",
    "mias": [
     [
-     "māta",
+     "mātā",
      "iti"
     ],
     [
-     "mātā",
+     "māta",
      "iti"
     ],
     [
@@ -387531,11 +387531,11 @@
    "forma": "mātāti",
    "mias": [
     [
-     "māta",
+     "mātā",
      "iti"
     ],
     [
-     "mātā",
+     "māta",
      "iti"
     ],
     [
@@ -402320,11 +402320,11 @@
    "forma": "upasampadāti",
    "mias": [
     [
-     "upasampada",
+     "upasampadā",
      "iti"
     ],
     [
-     "upasampadā",
+     "upasampada",
      "iti"
     ],
     [
@@ -405820,11 +405820,11 @@
    "forma": "bhāsitāti",
    "mias": [
     [
-     "bhāsita",
+     "bhāsitā",
      "iti"
     ],
     [
-     "bhāsitā",
+     "bhāsita",
      "iti"
     ],
     [
@@ -405999,11 +405999,11 @@
    "forma": "jātāti",
    "mias": [
     [
-     "jāta",
+     "jātā",
      "iti"
     ],
     [
-     "jātā",
+     "jāta",
      "iti"
     ],
     [
@@ -407178,11 +407178,11 @@
    "forma": "kāḷakāti",
    "mias": [
     [
-     "kāḷaka",
+     "kāḷakā",
      "iti"
     ],
     [
-     "kāḷakā",
+     "kāḷaka",
      "iti"
     ],
     [
@@ -413360,11 +413360,11 @@
    "forma": "asitāti",
    "mias": [
     [
-     "asita",
+     "asitā",
      "iti"
     ],
     [
-     "asitā",
+     "asita",
      "iti"
     ],
     [
@@ -422293,11 +422293,11 @@
    "forma": "piyāti",
    "mias": [
     [
-     "piya",
+     "piyā",
      "iti"
     ],
     [
-     "piyā",
+     "piya",
      "iti"
     ],
     [
@@ -422605,11 +422605,11 @@
    "forma": "jātāti",
    "mias": [
     [
-     "jāta",
+     "jātā",
      "iti"
     ],
     [
-     "jātā",
+     "jāta",
      "iti"
     ],
     [
@@ -423438,11 +423438,11 @@
    "forma": "alasāti",
    "mias": [
     [
-     "alasa",
+     "alasā",
      "iti"
     ],
     [
-     "alasā",
+     "alasa",
      "iti"
     ],
     [
@@ -425383,11 +425383,11 @@
    "forma": "alasāti",
    "mias": [
     [
-     "alasa",
+     "alasā",
      "iti"
     ],
     [
-     "alasā",
+     "alasa",
      "iti"
     ],
     [
@@ -426548,11 +426548,11 @@
    "forma": "alasāti",
    "mias": [
     [
-     "alasa",
+     "alasā",
      "iti"
     ],
     [
-     "alasā",
+     "alasa",
      "iti"
     ],
     [
@@ -426961,11 +426961,11 @@
    "forma": "piyāti",
    "mias": [
     [
-     "piya",
+     "piyā",
      "iti"
     ],
     [
-     "piyā",
+     "piya",
      "iti"
     ],
     [
@@ -428808,11 +428808,11 @@
    "forma": "samannāgatāti",
    "mias": [
     [
-     "samannāgata",
+     "samannāgatā",
      "iti"
     ],
     [
-     "samannāgatā",
+     "samannāgata",
      "iti"
     ],
     [
@@ -428955,11 +428955,11 @@
    "forma": "uppannāti",
    "mias": [
     [
-     "uppanna",
+     "uppannā",
      "iti"
     ],
     [
-     "uppannā",
+     "uppanna",
      "iti"
     ],
     [
@@ -429086,11 +429086,11 @@
    "forma": "samannāgatāti",
    "mias": [
     [
-     "samannāgata",
+     "samannāgatā",
      "iti"
     ],
     [
-     "samannāgatā",
+     "samannāgata",
      "iti"
     ],
     [
@@ -431170,11 +431170,11 @@
    "forma": "uddhatāti",
    "mias": [
     [
-     "uddhata",
+     "uddhatā",
      "iti"
     ],
     [
-     "uddhatā",
+     "uddhata",
      "iti"
     ],
     [
@@ -437786,10 +437786,6 @@
    "forma": "chetvāti",
    "mias": [
     [
-     "chetva",
-     "iti"
-    ],
-    [
      "chetvā",
      "iti"
     ],
@@ -437828,6 +437824,10 @@
     [
      "che",
      "vāti"
+    ],
+    [
+     "chetva",
+     "iti"
     ],
     [
      "chetva",
@@ -437871,7 +437871,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "punopahanti",
@@ -440301,11 +440301,11 @@
    "forma": "katāti",
    "mias": [
     [
-     "kata",
+     "katā",
      "iti"
     ],
     [
-     "katā",
+     "kata",
      "iti"
     ],
     [
@@ -440438,7 +440438,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "cāpeti",
@@ -441898,11 +441898,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -441991,7 +441991,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "antodīpeva",
@@ -443513,11 +443513,11 @@
    "forma": "samannāgatāti",
    "mias": [
     [
-     "samannāgata",
+     "samannāgatā",
      "iti"
     ],
     [
-     "samannāgatā",
+     "samannāgata",
      "iti"
     ],
     [
@@ -447368,11 +447368,11 @@
    "forma": "sakkāti",
    "mias": [
     [
-     "sakka",
+     "sakkā",
      "iti"
     ],
     [
-     "sakkā",
+     "sakka",
      "iti"
     ],
     [
@@ -449725,11 +449725,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -450507,11 +450507,11 @@
    "forma": "matāti",
    "mias": [
     [
-     "mata",
+     "matā",
      "iti"
     ],
     [
-     "matā",
+     "mata",
      "iti"
     ],
     [
@@ -459183,15 +459183,15 @@
    "forma": "nadissāmīti",
    "mias": [
     [
-     "nadissāmi",
-     "iti"
-    ],
-    [
-     "nadissāmi",
-     "iti"
-    ],
-    [
      "nadissāma",
+     "iti"
+    ],
+    [
+     "nadissāmi",
+     "iti"
+    ],
+    [
+     "nadissāmi",
      "iti"
     ],
     [
@@ -459280,7 +459280,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "aññābyākaraṇameva",
@@ -461728,11 +461728,11 @@
    "forma": "anāsavāti",
    "mias": [
     [
-     "anāsava",
+     "anāsavā",
      "iti"
     ],
     [
-     "anāsavā",
+     "anāsava",
      "iti"
     ],
     [
@@ -474424,11 +474424,11 @@
    "forma": "āsavāti",
    "mias": [
     [
-     "āsava",
+     "āsavā",
      "iti"
     ],
     [
-     "āsavā",
+     "āsava",
      "iti"
     ],
     [
@@ -475454,11 +475454,11 @@
    "forma": "vantāti",
    "mias": [
     [
-     "vanta",
+     "vantā",
      "iti"
     ],
     [
-     "vantā",
+     "vanta",
      "iti"
     ],
     [
@@ -479324,11 +479324,11 @@
    "forma": "saṃkilesikāti",
    "mias": [
     [
-     "saṃkilesika",
+     "saṃkilesikā",
      "iti"
     ],
     [
-     "saṃkilesikā",
+     "saṃkilesika",
      "iti"
     ],
     [
@@ -482464,11 +482464,11 @@
    "forma": "ṭhitāti",
    "mias": [
     [
-     "ṭhita",
+     "ṭhitā",
      "iti"
     ],
     [
-     "ṭhitā",
+     "ṭhita",
      "iti"
     ],
     [
@@ -482906,10 +482906,6 @@
    "forma": "katvāti",
    "mias": [
     [
-     "katva",
-     "iti"
-    ],
-    [
      "katvā",
      "iti"
     ],
@@ -482964,6 +482960,10 @@
     [
      "kā",
      "vāti"
+    ],
+    [
+     "katva",
+     "iti"
     ],
     [
      "katva",
@@ -483023,7 +483023,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "yathāvuttakāraṇenāti",
@@ -485507,11 +485507,11 @@
    "forma": "pabbajitāti",
    "mias": [
     [
-     "pabbajita",
+     "pabbajitā",
      "iti"
     ],
     [
-     "pabbajitā",
+     "pabbajita",
      "iti"
     ],
     [
@@ -485674,11 +485674,11 @@
    "forma": "pabbajitāti",
    "mias": [
     [
-     "pabbajita",
+     "pabbajitā",
      "iti"
     ],
     [
-     "pabbajitā",
+     "pabbajita",
      "iti"
     ],
     [
@@ -485837,11 +485837,11 @@
    "forma": "saddhāti",
    "mias": [
     [
-     "saddha",
+     "saddhā",
      "iti"
     ],
     [
-     "saddhā",
+     "saddha",
      "iti"
     ],
     [
@@ -491446,11 +491446,11 @@
    "forma": "subhāti",
    "mias": [
     [
-     "subha",
+     "subhā",
      "iti"
     ],
     [
-     "subhā",
+     "subha",
      "iti"
     ],
     [
@@ -491644,11 +491644,11 @@
    "forma": "subhāti",
    "mias": [
     [
-     "subha",
+     "subhā",
      "iti"
     ],
     [
-     "subhā",
+     "subha",
      "iti"
     ],
     [
@@ -491814,11 +491814,11 @@
    "forma": "subhāti",
    "mias": [
     [
-     "subha",
+     "subhā",
      "iti"
     ],
     [
-     "subhā",
+     "subha",
      "iti"
     ],
     [
@@ -492126,11 +492126,11 @@
    "forma": "mayāti",
    "mias": [
     [
-     "maya",
+     "mayā",
      "iti"
     ],
     [
-     "mayā",
+     "maya",
      "iti"
     ],
     [
@@ -496321,11 +496321,11 @@
    "forma": "dumāti",
    "mias": [
     [
-     "duma",
+     "dumā",
      "iti"
     ],
     [
-     "dumā",
+     "duma",
      "iti"
     ],
     [
@@ -507899,11 +507899,11 @@
    "forma": "siyāti",
    "mias": [
     [
-     "siya",
+     "siyā",
      "iti"
     ],
     [
-     "siyā",
+     "siya",
      "iti"
     ],
     [
@@ -509197,11 +509197,11 @@
    "forma": "siyāti",
    "mias": [
     [
-     "siya",
+     "siyā",
      "iti"
     ],
     [
-     "siyā",
+     "siya",
      "iti"
     ],
     [
@@ -510285,11 +510285,11 @@
    "forma": "upaṭṭhitāti",
    "mias": [
     [
-     "upaṭṭhita",
+     "upaṭṭhitā",
      "iti"
     ],
     [
-     "upaṭṭhitā",
+     "upaṭṭhita",
      "iti"
     ],
     [
@@ -510438,11 +510438,11 @@
    "forma": "jāniyāti",
    "mias": [
     [
-     "jāniya",
+     "jāniyā",
      "iti"
     ],
     [
-     "jāniyā",
+     "jāniya",
      "iti"
     ],
     [
@@ -511233,11 +511233,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -511326,7 +511326,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "tantīhīti",
@@ -511700,11 +511700,11 @@
    "forma": "diṭṭhāti",
    "mias": [
     [
-     "diṭṭha",
+     "diṭṭhā",
      "iti"
     ],
     [
-     "diṭṭhā",
+     "diṭṭha",
      "iti"
     ],
     [
@@ -515001,11 +515001,11 @@
    "forma": "ṭhitāti",
    "mias": [
     [
-     "ṭhita",
+     "ṭhitā",
      "iti"
     ],
     [
-     "ṭhitā",
+     "ṭhita",
      "iti"
     ],
     [
@@ -517359,11 +517359,11 @@
    "forma": "vividhāti",
    "mias": [
     [
-     "vividha",
+     "vividhā",
      "iti"
     ],
     [
-     "vividhā",
+     "vividha",
      "iti"
     ],
     [
@@ -520568,15 +520568,15 @@
    "forma": "bhikkhunīti",
    "mias": [
     [
-     "bhikkhuni",
-     "iti"
-    ],
-    [
-     "bhikkhuni",
+     "bhikkhunī",
      "iti"
     ],
     [
      "bhikkhunī",
+     "iti"
+    ],
+    [
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -520588,7 +520588,7 @@
      "iti"
     ],
     [
-     "bhikkhunī",
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -525747,11 +525747,11 @@
    "forma": "mayāti",
    "mias": [
     [
-     "maya",
+     "mayā",
      "iti"
     ],
     [
-     "mayā",
+     "maya",
      "iti"
     ],
     [
@@ -528188,14 +528188,6 @@
    "forma": "ṭhitāsīti",
    "mias": [
     [
-     "ṭhitāsi",
-     "iti"
-    ],
-    [
-     "ṭhitāsi",
-     "iti"
-    ],
-    [
      "ṭhitāsu",
      "iti"
     ],
@@ -528308,7 +528300,15 @@
      "iti"
     ],
     [
+     "ṭhitāsi",
+     "iti"
+    ],
+    [
      "ṭhitāsī",
+     "iti"
+    ],
+    [
+     "ṭhitāsi",
      "iti"
     ],
     [
@@ -528357,7 +528357,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 9
   },
   {
    "forma": "byālikanti",
@@ -529072,11 +529072,11 @@
    "forma": "pabbajitāti",
    "mias": [
     [
-     "pabbajita",
+     "pabbajitā",
      "iti"
     ],
     [
-     "pabbajitā",
+     "pabbajita",
      "iti"
     ],
     [
@@ -529414,11 +529414,11 @@
    "forma": "piyāti",
    "mias": [
     [
-     "piya",
+     "piyā",
      "iti"
     ],
     [
-     "piyā",
+     "piya",
      "iti"
     ],
     [
@@ -529525,11 +529525,11 @@
    "forma": "manāpāti",
    "mias": [
     [
-     "manāpa",
+     "manāpā",
      "iti"
     ],
     [
-     "manāpā",
+     "manāpa",
      "iti"
     ],
     [
@@ -539835,12 +539835,12 @@
    "forma": "pilotikākhaṇḍañca",
    "mias": [
     [
-     "pilotika",
-     "khaṇḍañca"
-    ],
-    [
      "pilotikākhaṇḍaṃ",
      "ca"
+    ],
+    [
+     "pilotika",
+     "khaṇḍañca"
     ],
     [
      "pilotikākhaṇḍaṃ",
@@ -541072,11 +541072,11 @@
    "forma": "vāti",
    "mias": [
     [
-     "va",
+     "vā",
      "iti"
     ],
     [
-     "vā",
+     "va",
      "iti"
     ],
     [
@@ -541165,7 +541165,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "vikappatthe",
@@ -543149,11 +543149,11 @@
    "forma": "pabbajitāti",
    "mias": [
     [
-     "pabbajita",
+     "pabbajitā",
      "iti"
     ],
     [
-     "pabbajitā",
+     "pabbajita",
      "iti"
     ],
     [
@@ -545746,15 +545746,23 @@
    "forma": "dhārayāmīti",
    "mias": [
     [
-     "dhārayāmi",
+     "dhārayāmī",
      "iti"
     ],
     [
-     "dhārayāmi",
+     "dhārayāmī",
      "iti"
     ],
     [
      "dhārayāma",
+     "iti"
+    ],
+    [
+     "dhārayāmi",
+     "iti"
+    ],
+    [
+     "dhārayāmi",
      "iti"
     ],
     [
@@ -545811,14 +545819,6 @@
     ],
     [
      "dhārayāmī",
-     "iti"
-    ],
-    [
-     "dhārayāmī",
-     "iti"
-    ],
-    [
-     "dhārayāmī",
      "īti"
     ],
     [
@@ -545847,7 +545847,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 4
   },
   {
    "forma": "andhovaṭṭoti",
@@ -547657,11 +547657,11 @@
    "forma": "mayāti",
    "mias": [
     [
-     "maya",
+     "mayā",
      "iti"
     ],
     [
-     "mayā",
+     "maya",
      "iti"
     ],
     [
@@ -553429,11 +553429,11 @@
    "forma": "bahussutāti",
    "mias": [
     [
-     "bahussuta",
+     "bahussutā",
      "iti"
     ],
     [
-     "bahussutā",
+     "bahussuta",
      "iti"
     ],
     [
@@ -553558,11 +553558,11 @@
    "forma": "vinītāti",
    "mias": [
     [
-     "vinīta",
+     "vinītā",
      "iti"
     ],
     [
-     "vinītā",
+     "vinīta",
      "iti"
     ],
     [
@@ -553669,11 +553669,11 @@
    "forma": "paññāti",
    "mias": [
     [
-     "pañña",
+     "paññā",
      "iti"
     ],
     [
-     "paññā",
+     "pañña",
      "iti"
     ],
     [
@@ -554322,11 +554322,11 @@
    "forma": "kāmāti",
    "mias": [
     [
-     "kāma",
+     "kāmā",
      "iti"
     ],
     [
-     "kāmā",
+     "kāma",
      "iti"
     ],
     [
@@ -557482,11 +557482,11 @@
    "forma": "nirodhāti",
    "mias": [
     [
-     "nirodha",
+     "nirodhā",
      "iti"
     ],
     [
-     "nirodhā",
+     "nirodha",
      "iti"
     ],
     [
@@ -560400,11 +560400,11 @@
    "forma": "bhogāti",
    "mias": [
     [
-     "bhoga",
+     "bhogā",
      "iti"
     ],
     [
-     "bhogā",
+     "bhoga",
      "iti"
     ],
     [
@@ -564426,11 +564426,11 @@
    "forma": "āgatāti",
    "mias": [
     [
-     "āgata",
+     "āgatā",
      "iti"
     ],
     [
-     "āgatā",
+     "āgata",
      "iti"
     ],
     [
@@ -565680,11 +565680,11 @@
    "forma": "mātāti",
    "mias": [
     [
-     "māta",
+     "mātā",
      "iti"
     ],
     [
-     "mātā",
+     "māta",
      "iti"
     ],
     [
@@ -566643,11 +566643,11 @@
    "forma": "dukkarāti",
    "mias": [
     [
-     "dukkara",
+     "dukkarā",
      "iti"
     ],
     [
-     "dukkarā",
+     "dukkara",
      "iti"
     ],
     [
@@ -567675,11 +567675,11 @@
    "forma": "siyāti",
    "mias": [
     [
-     "siya",
+     "siyā",
      "iti"
     ],
     [
-     "siyā",
+     "siya",
      "iti"
     ],
     [
@@ -571846,11 +571846,11 @@
    "forma": "sukhāti",
    "mias": [
     [
-     "sukha",
+     "sukhā",
      "iti"
     ],
     [
-     "sukhā",
+     "sukha",
      "iti"
     ],
     [
@@ -572645,14 +572645,6 @@
    "forma": "abhinandīti",
    "mias": [
     [
-     "abhinandi",
-     "iti"
-    ],
-    [
-     "abhinandi",
-     "iti"
-    ],
-    [
      "abhinandī",
      "iti"
     ],
@@ -572665,6 +572657,10 @@
      "iti"
     ],
     [
+     "abhinandi",
+     "iti"
+    ],
+    [
      "abhinando",
      "iti"
     ],
@@ -572674,6 +572670,10 @@
     ],
     [
      "abhinandī",
+     "iti"
+    ],
+    [
+     "abhinandi",
      "iti"
     ],
     [
@@ -576498,11 +576498,11 @@
    "forma": "kāmāti",
    "mias": [
     [
-     "kāma",
+     "kāmā",
      "iti"
     ],
     [
-     "kāmā",
+     "kāma",
      "iti"
     ],
     [
@@ -581524,11 +581524,11 @@
    "forma": "ghaṭikāti",
    "mias": [
     [
-     "ghaṭika",
+     "ghaṭikā",
      "iti"
     ],
     [
-     "ghaṭikā",
+     "ghaṭika",
      "iti"
     ],
     [
@@ -586310,11 +586310,11 @@
    "forma": "pariḷāhāti",
    "mias": [
     [
-     "pariḷāha",
+     "pariḷāhā",
      "iti"
     ],
     [
-     "pariḷāhā",
+     "pariḷāha",
      "iti"
     ],
     [
@@ -587994,11 +587994,11 @@
    "forma": "lāmakāti",
    "mias": [
     [
-     "lāmaka",
+     "lāmakā",
      "iti"
     ],
     [
-     "lāmakā",
+     "lāmaka",
      "iti"
     ],
     [
@@ -592173,16 +592173,16 @@
    "forma": "sammāpayogañca",
    "mias": [
     [
+     "sammāpayogaṃ",
+     "ca"
+    ],
+    [
      "sammāpi",
      "ayogañca"
     ],
     [
      "samma",
      "payogañca"
-    ],
-    [
-     "sammāpayogaṃ",
-     "ca"
     ],
     [
      "sammāpayoge",
@@ -601996,10 +601996,6 @@
    "forma": "upasampajjassūti",
    "mias": [
     [
-     "upasampajjassū",
-     "iti"
-    ],
-    [
      "upasampajjassu",
      "iti"
     ],
@@ -602053,6 +602049,10 @@
     ],
     [
      "upasampajjassū",
+     "iti"
+    ],
+    [
+     "upasampajjassū",
      "ati"
     ],
     [
@@ -602081,7 +602081,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "ahosīti",
@@ -602300,15 +602300,15 @@
    "forma": "bhikkhunīti",
    "mias": [
     [
-     "bhikkhuni",
-     "iti"
-    ],
-    [
-     "bhikkhuni",
+     "bhikkhunī",
      "iti"
     ],
     [
      "bhikkhunī",
+     "iti"
+    ],
+    [
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -602320,7 +602320,7 @@
      "iti"
     ],
     [
-     "bhikkhunī",
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -602598,10 +602598,6 @@
      "iti"
     ],
     [
-     "ehibhikkhunī",
-     "iti"
-    ],
-    [
      "ehibhikkhuni",
      "iti"
     ],
@@ -602611,6 +602607,10 @@
     ],
     [
      "ehibhikkhunā",
+     "iti"
+    ],
+    [
+     "ehibhikkhunī",
      "iti"
     ],
     [
@@ -603467,15 +603467,15 @@
    "forma": "bhikkhunīti",
    "mias": [
     [
-     "bhikkhuni",
-     "iti"
-    ],
-    [
-     "bhikkhuni",
+     "bhikkhunī",
      "iti"
     ],
     [
      "bhikkhunī",
+     "iti"
+    ],
+    [
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -603487,7 +603487,7 @@
      "iti"
     ],
     [
-     "bhikkhunī",
+     "bhikkhuni",
      "iti"
     ],
     [
@@ -603733,11 +603733,11 @@
    "forma": "siyāti",
    "mias": [
     [
-     "siya",
+     "siyā",
      "iti"
     ],
     [
-     "siyā",
+     "siya",
      "iti"
     ],
     [
@@ -606675,11 +606675,11 @@
    "forma": "dhīrāti",
    "mias": [
     [
-     "dhīra",
+     "dhīrā",
      "iti"
     ],
     [
-     "dhīrā",
+     "dhīra",
      "iti"
     ],
     [
@@ -607497,14 +607497,6 @@
    "forma": "asīti",
    "mias": [
     [
-     "asi",
-     "iti"
-    ],
-    [
-     "asi",
-     "iti"
-    ],
-    [
      "asī",
      "iti"
     ],
@@ -607514,6 +607506,10 @@
     ],
     [
      "ase",
+     "iti"
+    ],
+    [
+     "asi",
      "iti"
     ],
     [
@@ -607530,6 +607526,10 @@
     ],
     [
      "asī",
+     "iti"
+    ],
+    [
+     "asi",
      "iti"
     ],
     [
@@ -607626,7 +607626,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 4
   },
   {
    "forma": "suññatavimuttādivibhāgena",

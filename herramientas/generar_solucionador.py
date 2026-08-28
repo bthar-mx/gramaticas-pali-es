@@ -47,9 +47,18 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.4"
+VERSION = "1.5"
 FECHA = "2026-08-28"
-NOTA = ("Tres casos adjudicados por Angel sobre el verso «Samāhito "
+NOTA = ("Dos reglas firmadas por Angel tras el informe de familias: el "
+        "RESGUARDO DE LA BASE RESIDUAL —una base candidata debe ser al "
+        "menos tan frecuente que la forma entera; corrige el defecto por "
+        "el que «ho» (4 apariciones) concedía la unicidad y el patrón "
+        "afirmaba hoti (59.320) como ho + iti, y con él pajānāti, "
+        "bhaṇati, vadati…— y el patrón de «ca» (sandhi de niggahīta, "
+        "§31): tañca = taṃ + ca, evañca, yañca, kathañca… Con ambos, lo "
+        "«seguro» acierta juntura real en 9 de cada 10 casos en los dos "
+        "corpus de medida. Antes, en la versión 1.4: "
+        "tres casos adjudicados por Angel sobre el verso «Samāhito "
         "sampajāno» (Vedanā): pajānāti NO es sandhi (verbo, kiyādi-gaṇa) — "
         "el patrón de «iti» lo afirmaba por una base residual de 1 "
         "aparición, defecto medido que espera regla firmada—; vedanānañca "
