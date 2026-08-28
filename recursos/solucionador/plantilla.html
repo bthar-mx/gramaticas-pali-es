@@ -418,9 +418,10 @@ function fichas(texto){
 function pieLectura(l){
   const partes = [];
   if(l.adjudicada) partes.push(`lectura adjudicada · ${esc(l.adjudicada)}`);
+  if(l.patron) partes.push(`patrón adjudicado · ${esc(l.patron)}`);
   if(l.referencia) partes.push(`Referencia: <b>${esc(String(l.referencia))}</b>`);
   partes.push(esc(l.procedencia || ''));
-  const clase = (l.procedencia === 'firmada' || l.adjudicada)
+  const clase = (l.procedencia === 'firmada' || l.adjudicada || l.patron)
     ? 'parcial verif' : 'cita';
   return `<p class="${clase}" style="margin:6px 0 0">${partes.join(' · ')}</p>`;
 }
@@ -454,7 +455,8 @@ function cuerpoResultado(r, esVozSola){
   const lect = r.lecturas || [];
   if(!lect.length) return h;
   const l0 = lect[0];
-  const autoridad = l0.adjudicada || l0.procedencia === 'firmada' || l0.origen;
+  const autoridad = l0.adjudicada || l0.patron
+    || l0.procedencia === 'firmada' || l0.origen;
   if(autoridad){
     h += unaLectura(l0)
        + plegadas(lect.slice(1),

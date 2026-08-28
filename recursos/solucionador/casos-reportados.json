@@ -1,5 +1,17 @@
 {
  "_que_es": "Casos adjudicados por lectores del solucionador. Decisión del Venerable (briefing 30 §3.5): la herramienta mejora con los fallos que reporten los lectores, y cada fallo es un caso de prueba permanente. Cada caso lleva su fuente y su fecha: es una adjudicación atribuida, no una heurística. El motor los consulta como al banco: un caso con sandhi=true da señal «segura» y pone primera la lectura adjudicada si el motor la produce; uno con sandhi=false es prueba de regresión de que la señal calla. Se comprueban con: node nuestro/js/arnes_casos.js",
+ "patrones": [
+  {
+   "segunda": "iti",
+   "fuente": "Angel, 2026-08-28 · pauta de las enclíticas (SN 1.1, DN 2)",
+   "nota": "La cola de «iti» del discurso directo. Si entre las lecturas verificadas hay exactamente UNA primera voz atestiguada en el canon con «iti» de segunda, ésa se afirma: abhisambuddho + iti. Desempate adjudicado: si las bases atestiguadas son exactamente dos y la segunda es la primera con la vocal final alargada (pabbajjāya / pabbajjāyā), se afirma la BREVE — la larga suele ser el producto del propio sandhi que se analiza—: paṭijānātha + iti, pabbajjāya + iti. Con bases distintas de verdad (ceva: ca, ce y cā) el patrón calla y la duda se declara."
+  },
+  {
+   "segunda": "api",
+   "fuente": "Angel, 2026-08-28 · pauta de las enclíticas (DN 2)",
+   "nota": "La cola de «pi» (api con la vocal elidida, §13): yepi = ye + api, tepi = te + api. La lectura con «pi» suelto sería yuxtaposición sin operación y queda fuera del encargo, así que api es la única segunda voz en alcance."
+  }
+ ],
  "casos": [
   {
    "forma": "tenupasaṅkami",
@@ -39,6 +51,12 @@
    "sandhi": false,
    "fuente": "Angel, 2026-08-28 · SN 1.1 Oghataraṇasutta",
    "nota": "Pronombre, voz entera. Mismo defecto del tokenizador."
+  },
+  {
+   "forma": "navo",
+   "sandhi": false,
+   "fuente": "Angel, 2026-08-28 · DN 2",
+   "nota": "«navo ca pabbajjāya»: adjetivo, voz entera. La señal de frecuencia proponía naṃ + vo (§39); falso."
   }
  ]
 }

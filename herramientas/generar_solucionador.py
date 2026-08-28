@@ -47,10 +47,16 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.1"
+VERSION = "1.2"
 FECHA = "2026-08-28"
-NOTA = ("El Digital Pāḷi Dictionary entra como testigo silencioso de "
-        "ocurrencia (decisión de Angel, 2026-08-28): amplía el filtro de "
+NOTA = ("Los patrones adjudicados de las enclíticas: cuando una voz termina "
+        "en la cola de «iti» o de «pi» y entre las lecturas verificadas hay "
+        "una sola primera voz atestiguada en el canon, esa lectura se afirma "
+        "con su fuente — abhisambuddho + iti, ye + api—; con varias bases "
+        "atestiguadas (ceva: ca, ce y cā) la duda se declara. Una "
+        "adjudicación de no-sandhi apaga la señal (caso «navo»). Antes, en "
+        "la versión 1.1: el Digital Pāḷi Dictionary entra como testigo "
+        "silencioso de ocurrencia (decisión de Angel, 2026-08-28): amplía el filtro de "
         "cortes, ordena candidatos y aviva la señal, nunca decide el "
         "análisis. Con el testigo, el motor reencuentra el análisis firmado "
         "en 221 de las 251 formas medibles del banco (88 %) y el corte "

@@ -130,6 +130,7 @@ function iniciar({ formasCanon, lexico, reglas, tablas, listas, huella,
     _cache.casos = new Map();
     for (const c of ((casos && casos.casos) || []))
         _cache.casos.set(cotejo(c.forma), c);
+    _cache.patrones = (casos && casos.patrones) || [];
 }
 
 function esPalabra(t) { return _cache.lexico.has(cotejo(t)); }
@@ -649,7 +650,61 @@ function solucionar(voz) {
     const r = _solucionar(voz);
     ascenderSenal(r);
     aplicarCaso(r);
+    aplicarPatron(r);
     return r;
+}
+
+function aplicarPatron(r) {
+    // Los patrones adjudicados: cola enclítica con base única atestiguada.
+    // Porqués y licencia: `_aplicar_patron` del Python. La unicidad es la
+    // licencia, no la frecuencia; el caso y el banco mandan sobre el patrón.
+    if (r.del_banco
+        || r.escrita.trim().split(/\s+/u).filter(t => t).length !== 1)
+        return;
+    const casoDe = _cache.casos.get(r.cotejo);
+    if (casoDe && !casoDe.sandhi) return;   // adjudicado no-sandhi: calla
+    const lecturas = r.lecturas || [];
+    if (lecturas.length && (lecturas[0].adjudicada || lecturas[0].origen))
+        return;
+    const frec = _cache.frecuencia;
+    for (const patron of (_cache.patrones || [])) {
+        const seg = cotejo(patron.segunda || "");
+        if (!seg) continue;
+        let bases = new Set();
+        for (const l of lecturas) {
+            const comp = (l.componentes || []).map(cotejo);
+            if (comp.length === 2 && comp[1] === seg && frec(comp[0]))
+                bases.add(comp[0]);
+        }
+        // Desempate adjudicado: la base breve frente a su gemela con la
+        // vocal final alargada (pabbajjāya / pabbajjāyā) — la larga suele
+        // ser el producto del propio sandhi. Ver `_aplicar_patron`.
+        if (bases.size === 2) {
+            const par = [...bases].sort();
+            const corta = par[0], larga = par[1];
+            const L = OP.LARGA[corta[corta.length - 1]];
+            if (L && corta.slice(0, -1) + L === larga)
+                bases = new Set([corta]);
+        }
+        if (bases.size !== 1) continue;
+        const base = [...bases][0];
+        const delante = [], detras = [];
+        for (const l of lecturas) {
+            const comp = (l.componentes || []).map(cotejo);
+            if (comp.length === 2 && comp[0] === base && comp[1] === seg) {
+                l.patron = patron.fuente || "";
+                delante.push(l);
+            } else {
+                detras.push(l);
+            }
+        }
+        r.lecturas = delante.concat(detras);
+        r.senal = "segura";
+        r.senal_motivo = `cola de «${seg}»: la única primera voz atestiguada `
+            + `en el canon es «${base}» — patrón adjudicado `
+            + `(${patron.fuente || ""})`;
+        return;
+    }
 }
 
 function aplicarCaso(r) {
@@ -657,7 +712,13 @@ function aplicarCaso(r) {
     // con su fuente, siempre. Porqués y el primer caso (tenupasaṅkami):
     // `_aplicar_caso` del Python.
     const caso = _cache.casos.get(r.cotejo);
-    if (!caso || !caso.sandhi) return;
+    if (!caso) return;
+    if (!caso.sandhi) {
+        // Adjudicado NO-sandhi: la adjudicación manda sobre la heurística y
+        // la señal se apaga (caso «navo», DN 2).
+        if (r.senal) { r.senal = null; r.senal_motivo = ""; }
+        return;
+    }
     const objetivo = partirComponentes(caso.componentes || "").map(cotejo);
     const delante = [], detras = [];
     for (const l of (r.lecturas || [])) {

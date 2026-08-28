@@ -262,10 +262,12 @@ def cargar():
     # caso de prueba permanente. No es heurística: es adjudicación con
     # fuente y fecha, y el motor la consulta como al banco.
     _cache["casos"] = {}
+    _cache["patrones"] = []
     if os.path.exists(CASOS):
         d_casos = json.load(open(CASOS, encoding="utf-8"))
         _cache["casos"] = {cotejo(c["forma"]): c
                            for c in d_casos.get("casos", [])}
+        _cache["patrones"] = d_casos.get("patrones", [])
     return _cache
 
 
@@ -837,7 +839,69 @@ def solucionar(voz):
     if SOLO_CANON:
         _ascender_senal(r)
         _aplicar_caso(r)
+        _aplicar_patron(r)
     return r
+
+
+def _aplicar_patron(r):
+    """Los patrones adjudicados: la cola enclítica con base única atestiguada.
+
+    Observación de Angel (2026-08-28, sobre SN 1.1 y DN 2): las colas de
+    «iti» y «pi» «no son difíciles de detectar con 100 % de exactitud». La
+    regla que lo vuelve mecanismo, adjudicada con su fuente en
+    `casos-reportados.json`: si entre las lecturas verificadas hay
+    EXACTAMENTE UNA primera voz atestiguada en el canon cuya segunda voz es
+    la del patrón, esa lectura se afirma — abhisambuddho + iti, ye + api—.
+    Con más de una base atestiguada (ceva: ca, ce y cā existen las tres) el
+    patrón calla y la duda se declara: la unicidad es la licencia, no la
+    frecuencia. El caso y el banco mandan sobre el patrón.
+    """
+    if r.get("del_banco") or len(r["escrita"].split()) != 1:
+        return
+    caso = cargar()["casos"].get(r["cotejo"])
+    if caso and not caso.get("sandhi"):
+        return                       # adjudicado no-sandhi: el patrón calla
+    lecturas = r.get("lecturas", [])
+    if lecturas and (lecturas[0].get("adjudicada")
+                     or lecturas[0].get("origen")):
+        return
+    frec = cargar().get("frecuencia", {})
+    for patron in cargar().get("patrones", []):
+        seg = cotejo(patron.get("segunda", ""))
+        if not seg:
+            continue
+        bases = set()
+        for l in lecturas:
+            comp = [cotejo(x) for x in l.get("componentes", [])]
+            if len(comp) == 2 and comp[1] == seg and frec.get(comp[0], 0):
+                bases.add(comp[0])
+        # Desempate adjudicado: dos bases que son la misma voz con la vocal
+        # final breve y larga (pabbajjāya / pabbajjāyā) se reducen a la
+        # BREVE — la larga suele ser el producto del propio sandhi—. Bases
+        # distintas de verdad (ca / ce / cā) siguen sin decidirse.
+        if len(bases) == 2:
+            par = sorted(bases)
+            corta, larga = par[0], par[1]
+            if (corta and corta[-1] in LARGA
+                    and corta[:-1] + LARGA[corta[-1]] == larga):
+                bases = {corta}
+        if len(bases) != 1:
+            continue
+        base = next(iter(bases))
+        delante, detras = [], []
+        for l in lecturas:
+            comp = [cotejo(x) for x in l.get("componentes", [])]
+            if comp == [base, seg]:
+                l["patron"] = patron.get("fuente", "")
+                delante.append(l)
+            else:
+                detras.append(l)
+        r["lecturas"] = delante + detras
+        r["senal"] = "segura"
+        r["senal_motivo"] = ("cola de «{0}»: la única primera voz atestiguada "
+                             "en el canon es «{1}» — patrón adjudicado ({2})"
+                             .format(seg, base, patron.get("fuente", "")))
+        return
 
 
 def _aplicar_caso(r):
@@ -861,7 +925,15 @@ def _aplicar_caso(r):
     prevista: cada fallo reportado, un caso permanente.
     """
     caso = cargar()["casos"].get(r["cotejo"])
-    if not caso or not caso.get("sandhi"):
+    if not caso:
+        return
+    if not caso.get("sandhi"):
+        # Adjudicado NO-sandhi: la adjudicación manda sobre la heurística y
+        # la señal se apaga (caso «navo», DN 2). Las lecturas no se tocan:
+        # siguen consultables, sin señal que grite.
+        if r.get("senal"):
+            r["senal"] = None
+            r["senal_motivo"] = ""
         return
     objetivo = [cotejo(x) for x in partir_componentes(caso.get("componentes", ""))]
     delante, detras = [], []
