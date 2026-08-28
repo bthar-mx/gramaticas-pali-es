@@ -220,8 +220,12 @@ def main():
     ap.add_argument("--canon", action="store_true", help=(
         "mide con la capa del canon encendida. Apagada por defecto: "
         "555 de 698 (79,5 %) con ella, 630 (90,3 %) sin ella."))
+    ap.add_argument("--solo-canon", action="store_true", help=(
+        "mide con el léxico del corpus del Sexto Concilio, sin DPD "
+        "en ninguna capa (decisión del Venerable, 2026-08-28)."))
     a = ap.parse_args()
     S.USAR_CANON = a.canon
+    S.SOLO_CANON = a.solo_canon
 
     cats = set(a.categorias.split(","))
     archivo = COMENT if a.comentario else VERSOS

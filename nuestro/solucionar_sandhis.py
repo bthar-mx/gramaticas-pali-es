@@ -103,6 +103,9 @@ CORPUS = ruta("recursos", "corpus", "corpus-formas.json")
 # La capa del canon, apagada. Ver el porqué —y los dos números— en `cargar()`.
 # Se enciende con `--canon`, nunca por el solo hecho de que el archivo exista.
 USAR_CANON = False
+# El modo sin DPD: el léxico es el corpus del Sexto Concilio y nada más.
+# Ver el comentario en cargar(). Se enciende con `--solo-canon`.
+SOLO_CANON = False
 DESCOMP = ruta("recursos", "lexico", "dpd-descomposiciones.tsv")
 
 VOCALES = "aāiīuūeo"
@@ -137,8 +140,21 @@ def cargar():
                         (s, "recursos/sandhi/tablas-nandisena-secuencias.json",
                          "filas[{0}].secuencias[{1}]".format(i, j)))
     _cache["banco"] = banco
-    _cache["lexico"] = {cotejo(x) for x in
-                        open(LEXICO, encoding="utf-8").read().split("\n") if x}
+    # ── SOLO_CANON (añadido 2026-08-28, decisión del Venerable) ─────────
+    #
+    # El DPD se deja de lado: el léxico entero pasa a ser el corpus convertido
+    # del Sexto Concilio (`corpus-formas.json`, generado por
+    # `herramientas/generar_corpus_formas.py`). No es la capa `--canon` de la
+    # entrega de Miguel De Anquín —aquélla proponía con el canon y caía al DPD
+    # si callaba, y su canon salió de la capa de texto cruda de 40 PDF, sin
+    # una sola «ṃ»—. Aquí no hay DPD en ninguna capa, y el canon es el de los
+    # 118 volúmenes convertidos y verificados. Se pide con `--solo-canon`.
+    if SOLO_CANON:
+        _c = json.load(open(CORPUS, encoding="utf-8"))
+        _cache["lexico"] = {cotejo(f) for f in _c.get("formas", {})}
+    else:
+        _cache["lexico"] = {cotejo(x) for x in
+                            open(LEXICO, encoding="utf-8").read().split("\n") if x}
     # ── El segundo léxico: las voces que el propio banco atestigua ──────
     #
     # 18 de las voces que el Venerable usa como componente en `reglas.json` no
@@ -1618,8 +1634,12 @@ def main():
         "usa el canon del Sexto Concilio como primera capa de léxico. "
         "Apagado por defecto: con él el corte cae de 630 de 698 (90,3 %) "
         "a 555 (79,5 %). El porqué, en cargar()."))
+    ap.add_argument("--solo-canon", action="store_true", help=(
+        "el léxico es el corpus convertido del Sexto Concilio, sin DPD "
+        "en ninguna capa (decisión del Venerable, 2026-08-28)."))
     a = ap.parse_args()
     globals()['USAR_CANON'] = a.canon
+    globals()['SOLO_CANON'] = a.solo_canon
     if a.cobertura:
         return cobertura()
     if not a.voz:
