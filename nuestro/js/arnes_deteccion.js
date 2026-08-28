@@ -33,7 +33,7 @@ function main() {
                             "tablas-nandisena-secuencias.json");
     const listas = leerJson("recursos", "sandhi", "listas-cerradas.json");
     const lexico = lexicoFragmentado(
-        path.join(RAIZ, "recursos", "solucionador", "lexico"));
+        path.join(RAIZ, "site", "recursos", "solucionador", "lexico"));
     const referencia = leerJson("nuestro", "js",
                                 "referencia-senal-solo-canon.json");
 

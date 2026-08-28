@@ -1,4 +1,4 @@
-EL PORTE A JAVASCRIPT — ETAPAS 1, 2 Y 3 (briefing sesión 30, §6)
+EL PORTE A JAVASCRIPT — ETAPAS 1 A 4 (briefing sesión 30, §6)
 
 Núcleo del solucionador de sandhis en JS, medido contra el Python, que queda
 como referencia permanente. Modo: solo-canon (el DPD fuera, decisión del
@@ -76,11 +76,24 @@ LAS PUERTAS (pasadas 2026-08-28):
   referencia de `python3 nuestro/volcar_referencia_senal.py`). Este arnés
   encontró un defecto real del porte —la clave del banco de las Tablas era
   forma_inicial donde el Python usa em/forma_final— antes de publicarse.
+  Etapa 4 — LA PÁGINA: /recursos/solucionador/ con la interfaz mínima del
+  §3.4 y la escalera de /recursos/sandhi/, línea a línea. La arma
+  `herramientas/generar_solucionador.py` desde
+  recursos/solucionador/plantilla.html envolviendo los módulos de esta
+  carpeta en un mini-require (nada de empaquetadores; el motor se edita
+  ACÁ y se regenera). Su puerta: `node nuestro/js/arnes_pagina.js` evalúa
+  el <script id="motor"> de la página YA GENERADA —los mismos bytes que
+  ejecuta el navegador— y exige las 266 formas del banco byte-idénticas al
+  Python (referencia de `python3 nuestro/volcar_referencia_pagina.py`).
+  El cargador del navegador (`crearLexico` en la plantilla) precarga los
+  fragmentos por cierre de letras: letras del texto + vocales + y/v cubren
+  todo candidato que el vecindario pueda proponer; el arnés falla si
+  alguna consulta cayó en un fragmento no precargado.
 
 Si un arnés no da idéntico, el defecto es del porte, no del Python.
 
-Lo que NO está todavía: combinar() y juntura declarada, la ampliación del
-banco de pruebas más allá de la Therīgāthā (pide fuente de verdad nueva:
-decisión de Angel), la página del sitio (etapa 4, interfaz mínima del §3.4
-del briefing 30). La capa --canon del modo DPD no se porta: este porte es
+Lo que NO está todavía: combinar() y juntura declarada entre palabras
+escritas (la página analiza voz por voz), la ampliación del banco de
+pruebas más allá de la Therīgāthā (pide fuente de verdad nueva: decisión
+de Angel). La capa --canon del modo DPD no se porta: este porte es
 solo-canon por decisión.

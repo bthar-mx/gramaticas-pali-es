@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Solucionador de sandhis · pāḷi</title>
+<meta name="version" content="1.0">
+<meta name="version-date" content="2026-08-28">
+<meta name="description" content="Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces, y qué secuencia de aforismos de Kaccāyana explica cada una. Todo se verifica por recomposición.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* La paleta, la tipografía y la escalera son las de /recursos/sandhi/, a
+   propósito: la decisión del Venerable (briefing 30 §3.4) pide que la
+   secuencia se muestre exactamente como la muestra esa página. */
+:root{
+  --ola:#E7E3D6;        /* hoja de palma */
+  --ola-2:#F0EDE4;
+  --ink:#171612;        /* tinta de humo */
+  --soot:#4E4839;
+  --hair:#BFB7A0;
+  --haritala:#5C4008;   /* oropimente: corrección */
+  --hover:rgba(255,255,255,.55);
+  --active:rgba(255,255,255,.75);
+  --hl:rgba(92,64,8,.16);
+  --hl-ce:rgba(126,46,35,.14);
+  --chip-k:rgba(39,65,79,.10);
+  --chip-c:rgba(92,64,8,.14);
+  --nila:#27414F;       /* índigo: sección */
+  --rakta:#7E2E23;      /* bermellón: contraejemplo */
+  --shadow:rgba(0,0,0,.05);
+  --serif:"Gentium Book Plus",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html[data-theme=dark]{
+  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
+  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
+  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
+  --hl:rgba(239,193,78,.20); --hl-ce:rgba(240,154,136,.18);
+  --chip-k:rgba(182,216,238,.13); --chip-c:rgba(239,193,78,.15);
+}
+html[data-theme=dark] body{background-image:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ola);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.55;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
+     text-transform:uppercase;color:var(--soot)}
+.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
+  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
+.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
+  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
+html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
+
+header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
+.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
+h1{font-size:clamp(40px,8vw,64px);line-height:.94;margin:0;font-weight:700;letter-spacing:-.02em}
+h1 .dia{color:var(--haritala)}
+.tag{margin:10px 0 0;max-width:44ch;color:var(--soot);font-size:16.5px}
+.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
+  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
+  border-radius:999px;padding:4px 10px;position:relative}
+.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
+.version-badge[data-tip]:hover::after{content:attr(data-tip);
+  position:absolute;top:calc(100% + 8px);left:0;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--sans,sans-serif);
+  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
+  min-width:160px;max-width:min(340px,70vw);z-index:100;
+  box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
+.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
+      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
+.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
+.hero div.on{opacity:1;transition:opacity .5s ease}
+.hero b{font-weight:700;color:var(--haritala)}
+.hero .ref{color:var(--soot);font-size:10.5px}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
+  text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+.revision{margin:20px 0 0;max-width:104ch;font-size:13.5px;line-height:1.55;
+  color:var(--soot);border-left:2px solid var(--haritala);padding-left:13px}
+.revision>summary{cursor:pointer;list-style:none}
+.revision>summary::-webkit-details-marker{display:none}
+.revision>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
+.revision[open]>summary::after{content:' ▾'}
+.revision>summary:hover{color:var(--ink)}
+.revision>p{margin:9px 0 0}
+
+/* ---------- la caja ---------- */
+.consulta{margin:30px 0 8px}
+textarea{width:100%;min-height:110px;resize:vertical;font-family:var(--serif);
+  font-size:17px;line-height:1.6;color:var(--ink);background:var(--ola-2);
+  border:1px solid var(--hair);border-radius:2px;padding:12px 14px}
+textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
+.acciones{display:flex;gap:12px;align-items:center;margin-top:10px;flex-wrap:wrap}
+.boton{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;padding:10px 18px;border:0;border-radius:2px;
+  background:var(--nila);color:var(--ola-2);cursor:pointer}
+.boton:hover{filter:brightness(1.08)}
+.boton:disabled{opacity:.5;cursor:default}
+.boton:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
+  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
+.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
+.estado{font-family:var(--mono);font-size:11px;color:var(--soot)}
+.cuenta-sandhis{font-size:18px;margin:26px 0 4px}
+.cuenta-sandhis b{color:var(--haritala)}
+
+/* ---------- chips de señal ---------- */
+.src{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding:2px 6px;border-radius:2px;white-space:nowrap}
+.src.segura{background:var(--chip-k);color:var(--nila)}
+.src.posible{background:var(--chip-c);color:var(--haritala)}
+
+/* ---------- escalera de secuencia (idéntica a /recursos/sandhi/) ---------- */
+.lad{margin:12px 0 0;font-family:var(--mono);font-size:13.5px;line-height:1.9;
+     border-left:2px solid var(--haritala);padding-left:13px}
+.lad.ce{border-left-color:var(--rakta)}
+.lad div{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.lad .s{white-space:pre-wrap;word-break:break-word}
+.lad b{font-weight:700;color:var(--haritala);background:var(--hl);
+       border-radius:2px;padding:0 1px}
+.lad b.ws{background:none;box-shadow:inset 0 -2px 0 var(--haritala)}
+.lad .ref{font-size:11px;color:var(--soot);white-space:nowrap}
+a.xref,.lad .ref a{color:var(--nila);text-decoration:none;
+  border-bottom:1px dotted currentColor;font-weight:600}
+a.xref:hover,a.xref:focus-visible,.lad .ref a:hover,.lad .ref a:focus-visible{
+  color:var(--haritala)}
+.cita{font-family:var(--mono);font-size:11.5px;color:var(--soot)}
+.cita b{color:var(--nila);font-weight:600}
+.parcial{font-family:var(--mono);font-size:10.5px;color:var(--rakta);letter-spacing:.04em}
+.parcial.verif{color:var(--nila)}
+
+/* ---------- resultados ---------- */
+.forms{border-top:1px solid var(--hair);margin-top:14px}
+details.form{border-bottom:1px solid var(--hair)}
+details.form>summary{
+  list-style:none;cursor:pointer;padding:11px 2px;display:flex;gap:14px;
+  align-items:baseline;justify-content:space-between}
+details.form>summary::-webkit-details-marker{display:none}
+details.form>summary:hover{background:var(--hover)}
+details.form>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
+.fname{font-weight:700;font-size:17.5px}
+.fmeta{font-family:var(--mono);font-size:11px;color:var(--soot);letter-spacing:.05em;text-align:right}
+details.form[open]>summary{background:var(--active)}
+.fbody{padding:2px 2px 18px}
+.motivo{font-size:14.5px;color:var(--soot);margin:6px 0 0}
+.empty{padding:40px 0;text-align:center;color:var(--soot)}
+.empty p{margin:0 0 6px}
+
+footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
+       color:var(--soot);font-size:14px}
+footer a{color:var(--nila)}
+.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
+  font-size:12.5px;line-height:1.65;color:var(--soot)}
+
+#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
+  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
+  opacity:0;pointer-events:none;transform:translateY(6px);
+  transition:opacity .2s,transform .2s,background .12s,color .12s}
+#top-btn.show{opacity:1;pointer-events:auto;transform:none}
+#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
+@media (prefers-reduced-motion:reduce){#top-btn{transition:none}
+  .hero div{opacity:1!important;transition:none!important}}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mast{gap:22px}
+  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
+        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
+  .hero div{justify-content:flex-start}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap mast">
+    <div>
+      <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Kaccāyana · Sandhi-Kappa · Canon del Sexto Concilio</span></div>
+      <h1>Solucionador de sandh<span class="dia">i</span>s</h1>
+      <p class="tag">Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces,
+      y qué secuencia de aforismos de Kaccāyana explica cada una.</p>
+      <span class="version-badge" id="vbadge"></span>
+    </div>
+    <div class="hero" id="hero" aria-hidden="true"></div>
+  </div>
+  <div class="wrap">
+    <details class="revision">
+      <summary>Qué encuentra, qué calla, y con qué cifras — medido antes de publicarse</summary>
+      <p><strong>Proponer y verificar, nunca afirmar.</strong> Cada análisis propone un
+      corte y una cadena de aforismos, la aplica, y sólo se muestra si reproduce
+      exactamente la forma de entrada. Se muestran <em>todas</em> las lecturas que
+      recomponen, no una: el sandhi es genuinamente ambiguo y elegir en silencio
+      sería mentir por omisión. El léxico es el corpus de la edición del Sexto
+      Concilio (681.927 formas de 118 volúmenes); la autoridad gramatical es el
+      Sandhi-Kappa de Kaccāyana.</p>
+      <p><strong>Las cifras, a la vista.</strong> Sobre las 251 formas medibles del banco de
+      referencia, el motor reencuentra el análisis firmado en 218 (87 %). Cotejado
+      con una partición independiente de la Therīgāthā y su comentario, el punto de
+      corte coincide en el 78,9 % de los versos y el 84,3 % de la prosa. La señal
+      que marca voces en un pasaje es deliberadamente prudente: lo marcado como
+      <em>seguro</em> acierta 9 de cada 10 veces, lo marcado como <em>posible</em> avisa que
+      conviene mirar; entre ambos se señalan hoy entre el 32 % y el 46 % de los
+      sandhis presentes. <strong>Lo que no se marca no se pierde: se calla</strong> — pegue la
+      voz sola y el motor la analiza con todas sus lecturas. Cada fallo que se
+      reporte se convierte en caso de prueba permanente.</p>
+    </details>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="consulta">
+    <label class="lbl" for="texto">Pasaje o voz pāḷi</label>
+    <textarea id="texto" placeholder="p. ej. — Evaṃ me sutaṃ… o una voz sola: lokaggo, yassindriyāni, tathūpamaṃ"></textarea>
+    <div class="acciones">
+      <button class="boton" id="analizar">Analizar</button>
+      <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+      <span class="estado" id="estado"></span>
+    </div>
+  </section>
+  <section id="out" aria-live="polite"></section>
+</main>
+
+<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+
+<footer class="wrap">
+  <p class="version-foot" id="vfoot"></p>
+  <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11
+  vuelve a unirlas. Entre esos dos pasos ocurre la operación propiamente dicha.
+  «EM» es la forma de la edición moderna, con apóstrofo. En amarillo, lo que
+  cambia en cada paso. Cada §N enlaza al aforismo en el
+  <a href="../../kaccayana/sandhi/">Sandhi-Kappa</a>; la referencia completa de
+  reglas y formas está en <a href="../sandhi/">Sandhi — referencia interactiva</a>.</p>
+  <p><strong>Fuentes.</strong> Las secuencias firmadas proceden de las <em>Reglas de combinación
+  eufónica</em> de Bhikkhu Nandisena y de su traducción del Sandhi-Kappa, con su
+  referencia canónica. Las lecturas propuestas por el motor se construyen con los
+  aforismos del capítulo y se verifican por recomposición; su procedencia se
+  declara en cada caso. El léxico procede del Chaṭṭhasaṅgītipiṭaka romanizado
+  (canon, aṭṭhakathā y ṭīkā). El léxico ordena y atestigua; <strong>nunca es autoridad
+  del análisis</strong>: la autoridad es Kaccāyana y el texto de la edición.</p>
+  <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
+  Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
+  Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
+</footer>
+
+<script id="motor">
+/* ══ EL MOTOR ══ Este bloque no toca el DOM: el arnés de la etapa 4
+   (nuestro/js/arnes_pagina.js) lo evalúa en Node tal como está publicado y
+   comprueba que sus secuencias sean byte-idénticas a las del Python sobre
+   las 266 formas del banco. Si se edita algo del motor, se edita en
+   nuestro/js/ y se regenera: esta copia la escribe el generador. */
+const DATA = /*__DATOS__*/{}/*__FIN__*/;
+
+/*__MOTOR__*/
+/*__FIN_MOTOR__*/
+
+const MOTOR = __req("motor");
+
+const __fetchJson = (typeof globalThis.__fetchJsonNode === "function")
+  ? globalThis.__fetchJsonNode
+  : (u => fetch(u).then(r => {
+      if(!r.ok) throw new Error(u + ": " + r.status);
+      return r.json();
+    }));
+
+/* El léxico fragmentado, con carga bajo demanda. `preparar(texto)` baja los
+   fragmentos que ese texto puede llegar a consultar: las letras del propio
+   texto en forma de cotejo, más las vocales y la «y»/«v» que el vecindario
+   puede anteponer. Con eso el cierre está demostrado: ningún candidato del
+   motor empieza por una letra fuera de ese conjunto. */
+function crearLexico(base){
+  let indice = null;
+  const cargados = new Map();
+  let faltantes = 0;
+  return {
+    async preparar(texto){
+      if(!indice) indice = await __fetchJson(base + "indice.json");
+      const letras = new Set(MOTOR.cotejo(texto));
+      for(const x of "aāiīuūeoyv") letras.add(x);
+      await Promise.all([...letras]
+        .filter(l => indice.fragmentos[l] && !cargados.has(l))
+        .map(async l => {
+          cargados.set(l, new Map(
+            await __fetchJson(base + indice.fragmentos[l].archivo)));
+        }));
+    },
+    has(q){
+      if(!q) return false;
+      const m = cargados.get(q[0]);
+      if(m) return m.has(q);
+      if(indice && !indice.fragmentos[q[0]]) return false;
+      faltantes++;
+      return false;
+    },
+    frecuencia(q){
+      const m = q && cargados.get(q[0]);
+      return (m && m.get(q)) || 0;
+    },
+    get faltantes(){ return faltantes; },
+  };
+}
+
+const LEXICO = crearLexico("lexico/");
+let __iniciado = false;
+function iniciarMotor(){
+  if(__iniciado) return;
+  MOTOR.iniciar({ lexico: LEXICO, reglas: DATA.reglas, tablas: DATA.tablas,
+                  listas: DATA.listas, huella: DATA.huella });
+  __iniciado = true;
+}
+
+/* Lo que el arnés y la interfaz comparten. */
+const SOLUCIONADOR = {
+  async preparar(texto){ await LEXICO.preparar(texto); iniciarMotor(); },
+  solucionar(voz){ iniciarMotor(); return MOTOR.solucionar(voz); },
+  cotejo: (t) => MOTOR.cotejo(t),
+  lexico: LEXICO,
+  version: DATA.version,
+};
+if (typeof globalThis !== "undefined") globalThis.SOLUCIONADOR = SOLUCIONADOR;
+</script>
+
+<script id="ui">
+/* ══ LA INTERFAZ ══ (la escalera es la de /recursos/sandhi/, línea a línea) */
+const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+function parseStep(raw){
+  const m = /^(.*?)\s*\(([^()]*)\)\s*\.?$/.exec(raw.trim());
+  return m ? {text:m[1].trim(), ref:m[2].trim()} : {text:raw.trim().replace(/\.$/,''), ref:''};
+}
+function delta(a,b){
+  let i=0; while(i<a.length && i<b.length && a[i]===b[i]) i++;
+  let j=0; while(j < a.length-i && j < b.length-i && a[a.length-1-j]===b[b.length-1-j]) j++;
+  return [i, b.length-j];
+}
+function refHTML(ref){
+  if(!ref) return '';
+  return '· ' + esc(ref).replace(/§(\d+)/g, (m,n) =>
+    (+n>=1 && +n<=51) ? `<a class="xref" href="../../kaccayana/sandhi/#s${n}" title="Ver aforismo §${n} en el Sandhi-Kappa">§${n}</a>` : m);
+}
+function ladder(steps, isCE){
+  let out = `<div class="lad${isCE?' ce':''}">`;
+  let prevText = null;
+  steps.forEach(raw => {
+    const {text, ref} = parseStep(raw);
+    let body;
+    if(prevText === null || text === prevText){ body = esc(text); }
+    else {
+      const [i,k] = delta(prevText, text);
+      const mid = text.slice(i,k);
+      const cls = mid.trim() === '' ? ' class="ws"' : '';
+      body = esc(text.slice(0,i)) + (k>i ? `<b${cls}>`+esc(mid)+'</b>' : '') + esc(text.slice(Math.max(i,k)));
+    }
+    out += `<div><span class="s">${body}</span><span class="ref">${refHTML(ref)}</span></div>`;
+    prevText = text;
+  });
+  return out + '</div>';
+}
+
+/* ---------- tokenización ---------- */
+/* Se parte por espacios y se poda la puntuación externa; el apóstrofo y el
+   guion se conservan, que son marcas de juntura de la edición. */
+const PODA = /^[^\wāīūṃṅñṭḍṇḷ’'-]+|[^\wāīūṃṅñṭḍṇḷ’'-]+$/gu;
+function fichas(texto){
+  return texto.split(/\s+/u)
+    .map(t => t.replace(PODA, ''))
+    .filter(t => t && /\p{L}/u.test(t));
+}
+
+/* ---------- procedencia de cada lectura ---------- */
+function pieLectura(l){
+  const partes = [];
+  if(l.referencia) partes.push(`Referencia: <b>${esc(String(l.referencia))}</b>`);
+  partes.push(esc(l.procedencia || ''));
+  const clase = (l.procedencia === 'firmada') ? 'parcial verif' : 'cita';
+  return `<p class="${clase}" style="margin:6px 0 0">${partes.join(' · ')}</p>`;
+}
+
+function cuerpoResultado(r, esVozSola){
+  let h = '';
+  if(esVozSola && r.motivo){
+    h += `<p class="motivo">${esc(r.motivo)}</p>`;
+  }
+  (r.lecturas || []).forEach(l => {
+    const comp = (l.componentes || []).filter(x => x);
+    h += `<p class="lbl" style="margin:14px 0 0">${comp.length ? esc(comp.join(' + ')) : '—'}</p>`
+       + ladder(l.pasos || [], false)
+       + pieLectura(l);
+  });
+  return h;
+}
+
+const CHIP = { segura: '<span class="src segura">señal segura</span>',
+               posible: '<span class="src posible">señal posible</span>' };
+const ESTADOS = {
+  firmada: 'firmada en el banco', candidatos: 'candidatos',
+  resuelto: 'resuelto', sin_sandhi: 'sin sandhi',
+  sin_sandhi_por_regla: 'sin sandhi, por regla (pakati)',
+  fuera_del_alcance: 'compuesto — fuera del encargo',
+  no_resuelto: 'sin resolver',
+};
+
+function tarjeta(voz, r, abierta){
+  const chip = CHIP[r.senal] || '';
+  const n = (r.lecturas || []).length;
+  return `<details class="form"${abierta ? ' open' : ''}>
+    <summary>
+      <span class="fname">${esc(voz)}</span>
+      <span class="fmeta">${chip} ${esc(ESTADOS[r.estado] || r.estado || '')}${
+        n ? ` · ${n} lectura${n>1?'s':''}` : ''}</span>
+    </summary>
+    <div class="fbody">${cuerpoResultado(r, abierta)}</div>
+  </details>`;
+}
+
+/* ---------- analizar ---------- */
+const $ = id => document.getElementById(id);
+const cacheR = new Map();
+function resolver(voz){
+  if(!cacheR.has(voz)){
+    try { cacheR.set(voz, SOLUCIONADOR.solucionar(voz)); }
+    catch(e){ cacheR.set(voz, {estado:'no_resuelto', motivo:'error: '+e.message, lecturas:[]}); }
+  }
+  return cacheR.get(voz);
+}
+
+async function analizar(){
+  const texto = $('texto').value.trim();
+  const out = $('out');
+  if(!texto){ out.innerHTML = ''; return; }
+  const boton = $('analizar');
+  boton.disabled = true;
+  $('estado').textContent = 'cargando el léxico del canon…';
+  try {
+    await SOLUCIONADOR.preparar(texto);
+  } catch(e){
+    $('estado').textContent = '';
+    out.innerHTML = `<div class="empty"><p>No se pudo cargar el léxico: ${esc(e.message)}</p></div>`;
+    boton.disabled = false;
+    return;
+  }
+  $('estado').textContent = 'analizando…';
+  await new Promise(r => setTimeout(r, 20));   // pintar el estado antes del cómputo
+
+  const voces = fichas(texto);
+  let html = '';
+  if(voces.length === 1){
+    /* Una voz sola: el análisis completo, diga lo que diga — los tres
+       silencios se dicen distinto, y ninguno se esconde. */
+    const r = resolver(voces[0]);
+    html = `<p class="cuenta-sandhis">${esc(voces[0])} — ${esc(ESTADOS[r.estado] || r.estado || '')}${
+      r.senal ? ' · ' + (CHIP[r.senal]||'') : ''}</p>`
+      + `<div class="forms">${tarjeta(voces[0], r, true)}</div>`;
+  } else {
+    const marcadas = [];
+    for(const v of voces){
+      const r = resolver(v);
+      if(r.senal) marcadas.push([v, r]);
+    }
+    const seguras = marcadas.filter(([,r]) => r.senal === 'segura').length;
+    const posibles = marcadas.length - seguras;
+    html = `<p class="cuenta-sandhis"><b>${marcadas.length}</b> punto${marcadas.length===1?'':'s'} de sandhi señalado${marcadas.length===1?'':'s'} en ${voces.length} voces — ${seguras} seguro${seguras===1?'':'s'} · ${posibles} posible${posibles===1?'':'s'}</p>`;
+    if(marcadas.length){
+      html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
+    }
+    html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
+      entre el 32 % y el 46 % de los sandhis presentes, y lo marcado como <em>seguro</em>
+      acierta 9 de cada 10 veces. Lo que calla no se pierde: pegue una voz sola y el
+      motor la analiza con todas sus lecturas.</p>`;
+  }
+  out.innerHTML = html;
+  $('estado').textContent = '';
+  boton.disabled = false;
+  if(SOLUCIONADOR.lexico.faltantes){
+    console.warn('léxico: consultas a fragmentos no precargados:',
+                 SOLUCIONADOR.lexico.faltantes);
+  }
+}
+$('analizar').addEventListener('click', analizar);
+$('texto').addEventListener('keydown', e => {
+  if(e.key === 'Enter' && (e.ctrlKey || e.metaKey)){ e.preventDefault(); analizar(); }
+});
+
+/* ---------- portada: una secuencia, revelada ---------- */
+(function(){
+  const steps = ['loka aggo','lok a aggo (§10)','lok aggo (§12)','lokaggo (§11)'];
+  const el = document.getElementById('hero');
+  el.innerHTML = ladder(steps,false).replace(/^<div class="lad">/,'').replace(/<\/div>$/,'');
+  const rows = el.querySelectorAll(':scope > div');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  rows.forEach((r,i) => reduce ? r.classList.add('on') : setTimeout(() => r.classList.add('on'), 260 + i*220));
+})();
+
+/* ---------- versión ---------- */
+(function(){
+  const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+           'septiembre','octubre','noviembre','diciembre'];
+  const [y,m,d] = DATA.fecha.split('-').map(Number);
+  const largo = `${d} de ${M[m-1]} de ${y}`;
+  const tip = `Versión ${DATA.version} · ${largo} · ${DATA.nota}`;
+  const b = document.getElementById('vbadge');
+  b.setAttribute('data-tip', tip); b.setAttribute('aria-label', tip);
+  b.innerHTML = `v${DATA.version}<time datetime="${DATA.fecha}">${DATA.fecha}</time>`;
+  document.getElementById('vfoot').innerHTML =
+    `<strong>Versión ${DATA.version}</strong> — <time datetime="${DATA.fecha}">${largo}</time>. ${esc(DATA.nota)}`;
+})();
+
+/* ---------- tema (clave pali_dark, compartida con el resto del sitio) ---------- */
+const store = {
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+};
+const root = document.documentElement;
+const saved = store.get('pali_dark');
+if(saved === '1' || (saved === null && matchMedia('(prefers-color-scheme: dark)').matches))
+  root.dataset.theme = 'dark';
+document.getElementById('theme').onclick = () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? '' : 'dark';
+  store.set('pali_dark', root.dataset.theme === 'dark' ? '1' : '0');
+};
+
+/* ---------- volver al inicio ---------- */
+const topBtn = document.getElementById('top-btn');
+addEventListener('scroll', () => {
+  topBtn.classList.toggle('show', scrollY > 600);
+}, {passive:true});
+topBtn.addEventListener('click', () => scrollTo({top:0,
+  behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}));
+</script>
+</body>
+</html>

@@ -12,7 +12,9 @@ volúmenes convertidos del OSBCT). Cada forma pasa por `cotejo()` —el léxico
 del motor compara en forma canónica— y se deduplica; cada fragmento va
 ordenado, para que la salida sea determinista y el diff legible.
 
-Salida: `recursos/solucionador/lexico/<letra>.json` + `indice.json`. Los
+Salida: `site/recursos/solucionador/lexico/<letra>.json` + `indice.json` —
+bajo `site/` porque sólo eso se publica (wrangler.jsonc), y la página los
+pide por fetch con la ruta relativa `lexico/`. Los
 nombres de archivo son ASCII a propósito: en macOS el sistema de archivos
 normaliza a NFD y un `ā.json` puede volverse otro byte a byte sin que nadie lo
 toque. La tabla letra → archivo va en el índice; nadie deduce el nombre.
@@ -31,7 +33,7 @@ sys.path.insert(0, os.path.join(RAIZ, "nuestro"))
 from normalizar import cotejo                                      # noqa: E402
 
 CORPUS = os.path.join(RAIZ, "recursos", "corpus", "corpus-formas.json")
-DESTINO = os.path.join(RAIZ, "recursos", "solucionador", "lexico")
+DESTINO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 
 # Letra inicial → nombre de archivo ASCII. La larga y la retrofleja doblan la
 # letra; las nasales con diacrítico van por su clase (ñ→ny, ṅ→ng). No hay

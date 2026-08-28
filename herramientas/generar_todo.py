@@ -68,6 +68,19 @@ def main():
     if os.path.exists(os.path.join(recursos, "nombre", "plantilla.html")):
         fallos += correr("generar_nombre.py")
 
+    # solucionador de sandhis
+    # El léxico fragmentado (20 MB) sólo se rehace si el corpus cambió: en
+    # cada commit sería medio minuto para escribir lo mismo byte a byte.
+    if os.path.exists(os.path.join(recursos, "solucionador", "plantilla.html")):
+        corpus = os.path.join(recursos, "corpus", "corpus-formas.json")
+        indice = os.path.join(RAIZ, "site", "recursos", "solucionador",
+                              "lexico", "indice.json")
+        if os.path.exists(corpus) and (
+                not os.path.exists(indice)
+                or os.path.getmtime(indice) < os.path.getmtime(corpus)):
+            fallos += correr("generar_lexico_solucionador.py")
+        fallos += correr("generar_solucionador.py")
+
     # paradigmas de declinación
     if os.path.exists(os.path.join(recursos, "paradigmas", "plantilla.html")):
         fallos += correr("generar_paradigmas.py")
