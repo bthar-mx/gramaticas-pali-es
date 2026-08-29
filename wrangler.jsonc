@@ -1,10 +1,28 @@
 {
-  // Sitio estático servido por Cloudflare Workers.
-  // Sólo se publica el contenido de site/; el markdown de kaccayana/ y
-  // los documentos de comun/ quedan en el repositorio, fuera del sitio.
+  // Sitio estático servido por Cloudflare Workers, más el worker de
+  // worker/index.js, que sirve site/ tal cual y añade la cola de veredictos
+  // del modo revisión (/api/veredictos). Mientras la cola no esté
+  // configurada, el sitio funciona igual y /api/veredictos responde 503.
+  //
+  // PARA ACTIVAR LA COLA (una sola vez, en la Mac):
+  //   1. npx wrangler kv namespace create VEREDICTOS
+  //   2. descomentar el bloque kv_namespaces de abajo y poner el "id" que
+  //      imprimió el paso 1;
+  //   3. npx wrangler secret put CLAVE_VEREDICTOS
+  //      (la clave que sólo conoce quien recoge la cola);
+  //   4. commit y push.
+  // El resto: docs/solucionador/automatizacion.md.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
+  "main": "worker/index.js",
   "assets": {
-    "directory": "./site"
+    "directory": "./site",
+    "binding": "ASSETS"
   }
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "VEREDICTOS",
+  //     "id": "PONER-ID-AQUI"
+  //   }
+  // ]
 }

@@ -2450,11 +2450,12 @@ function revAcciones(){
       placeholder="Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación.">${esc(REV.obs)}</textarea>
   </div>
   <div class="rev-acciones">
-    <button type="button" class="boton" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}
-      title="${esc(voces)}">Exportar ${n} veredicto${n===1?'':'s'}</button>
+    <button type="button" class="boton" id="rev-enviar"${(n || REV.obs.trim()) ? '' : ' disabled'}
+      title="${esc(voces)}">Enviar ${n} veredicto${n===1?'':'s'} al proyecto</button>
+    <button type="button" class="boton secundario" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>Exportar .md</button>
     <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>Borrar todos</button>
-    <span class="estado">el archivo exportado se incorpora con
-      herramientas/incorporar_adjudicaciones.py — nada se adjudica sin firma</span>
+    <span class="estado" id="rev-estado">enviar deja los veredictos en la cola del
+      proyecto; nada se adjudica sin incorporación y firma</span>
   </div>`;
 }
 async function revFalta(){
@@ -2483,7 +2484,7 @@ function revPoner(voz, dato){
   revGuardar();
   analizar();
 }
-function revExportar(){
+function revMD(){
   const fecha = new Date().toISOString().slice(0, 10);
   const L = [];
   L.push('# Veredictos de revisión — ' + fecha, '');
@@ -2507,13 +2508,39 @@ function revExportar(){
     if(v.nota) L.push('NOTA DEL REVISOR: ' + v.nota);
     L.push('');
   }
-  const texto = L.join('\n') + '\n';
+  return L.join('\n') + '\n';
+}
+function revExportar(){
+  const fecha = new Date().toISOString().slice(0, 10);
+  const texto = revMD();
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([texto], {type: 'text/markdown;charset=utf-8'}));
   a.download = 'veredictos-' + fecha + '.md';
   a.click();
   URL.revokeObjectURL(a.href);
   if(navigator.clipboard) navigator.clipboard.writeText(texto).catch(() => {});
+}
+async function revEnviar(boton){
+  /* La automatización de grado medio (decisión del IEBH, 2026-08-28): el
+     .md queda en la cola del worker (/api/veredictos, KV). De ahí lo
+     recoge herramientas/traer_veredictos.py, que incorpora, verifica y
+     deja el commit listo — la firma sigue siendo la puerta. */
+  const est = document.getElementById('rev-estado');
+  boton.disabled = true;
+  est.textContent = 'enviando…';
+  try {
+    const r = await fetch('api/veredictos', { method: 'POST', body: revMD() });
+    if(r.status === 503){
+      est.textContent = 'la cola no está configurada todavía: use «Exportar .md»';
+    } else if(!r.ok){
+      est.textContent = 'no se pudo enviar (' + r.status + '): use «Exportar .md»';
+    } else {
+      est.textContent = 'enviado — se incorpora con traer_veredictos.py, arneses y firma';
+    }
+  } catch(e){
+    est.textContent = 'sin conexión: use «Exportar .md»';
+  }
+  boton.disabled = false;
 }
 $('revision').addEventListener('click', () => {
   REV.on = !REV.on;
@@ -2550,6 +2577,7 @@ $('out').addEventListener('click', e => {
     return;
   }
   if(e.target.id === 'rev-falta-btn') revFalta();
+  if(e.target.id === 'rev-enviar') revEnviar(e.target);
   if(e.target.id === 'rev-exportar') revExportar();
   if(e.target.id === 'rev-borrar'){
     if(confirm('¿Borrar los ' + REV.v.size + ' veredictos guardados en este navegador?')){
