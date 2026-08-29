@@ -1,5 +1,7 @@
 # La automatización de los veredictos — grado medio
 
+![El camino de un veredicto, del navegador del revisor a la página pública](flujo-veredictos.svg)
+
 *Decisión del IEBH (2026-08-28): los veredictos del modo revisión viajan
 solos hasta una cola del proyecto; la incorporación, los arneses y la firma
 siguen siendo la puerta. El grado completo (que un veredicto se convierta en

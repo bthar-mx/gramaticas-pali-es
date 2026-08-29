@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="p" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#5a5148"/>
+    </marker>
+  </defs>
+  <style>
+    .caja  { fill:#faf6ef; stroke:#5a5148; stroke-width:1.4; }
+    .hito  { fill:#efe7d8; stroke:#8a6d1f; stroke-width:1.6; }
+    .malo  { fill:#f6efe4; stroke:#a8a095; stroke-width:1.2; stroke-dasharray:5 4; }
+    .tit   { font-size:15px; font-weight:bold; fill:#2e2a25; }
+    .txt   { font-size:12.5px; fill:#443f38; }
+    .nota  { font-size:11.5px; font-style:italic; fill:#6b6257; }
+    .fle   { stroke:#5a5148; stroke-width:1.4; fill:none; marker-end:url(#p); }
+    .etq   { font-size:11.5px; fill:#5a5148; }
+  </style>
+
+  <text x="480" y="30" text-anchor="middle" class="tit" font-size="18">El camino de un veredicto — del navegador del revisor a la página pública</text>
+
+  <!-- 1. la página -->
+  <rect class="caja" x="30" y="60" width="270" height="112" rx="6"/>
+  <text x="45" y="84" class="tit">1 · La página, en modo revisión (✎)</text>
+  <text x="45" y="104" class="txt">El revisor marca veredictos sobre cada voz,</text>
+  <text x="45" y="120" class="txt">registra sandhis no detectados (voz = voz + voz)</text>
+  <text x="45" y="136" class="txt">y anota observaciones generales.</text>
+  <text x="45" y="158" class="nota">?revision — pleno · ?revision=estudiante — sin «Enviar»</text>
+
+  <!-- enviar → cola -->
+  <path class="fle" d="M300 100 H 375"/>
+  <text x="337" y="92" text-anchor="middle" class="etq">«Enviar»</text>
+  <rect class="caja" x="380" y="60" width="240" height="112" rx="6"/>
+  <text x="395" y="84" class="tit">2 · La cola del proyecto</text>
+  <text x="395" y="104" class="txt">POST /api/veredictos → Cloudflare KV.</text>
+  <text x="395" y="120" class="txt">Enviar es abierto; LEER y vaciar</text>
+  <text x="395" y="136" class="txt">piden la clave (CLAVE_VEREDICTOS).</text>
+  <text x="395" y="158" class="nota">buzón de 90 días, no archivo</text>
+
+  <!-- estudiante → md → firma -->
+  <path class="fle" d="M165 172 V 232"/>
+  <text x="175" y="205" class="etq">«Exportar .md» (repuesto, y camino del estudiante)</text>
+  <rect class="malo" x="30" y="236" width="270" height="64" rx="6"/>
+  <text x="45" y="260" class="tit" font-size="13.5">El .md viaja a mano</text>
+  <text x="45" y="278" class="txt">el estudiante se lo hace llegar a quien firma,</text>
+  <text x="45" y="293" class="txt">que lo revisa antes de incorporarlo.</text>
+
+  <!-- cola → mac -->
+  <path class="fle" d="M500 172 V 232"/>
+  <text x="510" y="205" class="etq">traer_veredictos.py (con la clave)</text>
+
+  <!-- 3. la mac -->
+  <rect class="hito" x="380" y="236" width="290" height="128" rx="6"/>
+  <text x="395" y="260" class="tit">3 · La Mac de quien firma</text>
+  <text x="395" y="280" class="txt">· guarda el lote en veredictos-recibidos/</text>
+  <text x="395" y="296" class="txt">  (registro permanente)</text>
+  <text x="395" y="312" class="txt">· incorporar_adjudicaciones.py → cada</text>
+  <text x="395" y="328" class="txt">  veredicto, un CASO con fuente y fecha</text>
+  <text x="395" y="348" class="nota">las observaciones no se vuelven casos: se leen,</text>
+  <text x="395" y="361" class="nota">y quien firma decide si paren reglas</text>
+
+  <path class="fle" d="M300 268 H 348 V 268 H 375"/>
+
+  <!-- 4. verificación -->
+  <path class="fle" d="M525 364 V 424"/>
+  <rect class="hito" x="380" y="428" width="290" height="96" rx="6"/>
+  <text x="395" y="452" class="tit">4 · La puerta que no se salta</text>
+  <text x="395" y="472" class="txt">generar_solucionador.py → página nueva</text>
+  <text x="395" y="488" class="txt">CINCO arneses, todos en verde</text>
+  <text x="395" y="504" class="txt">referencias y medición, si la señal cambió</text>
+
+  <!-- 5. commit/deploy -->
+  <path class="fle" d="M670 476 H 730"/>
+  <text x="700" y="468" text-anchor="middle" class="etq">firma</text>
+  <rect class="caja" x="735" y="428" width="195" height="96" rx="6"/>
+  <text x="750" y="452" class="tit">5 · Commit y push</text>
+  <text x="750" y="472" class="txt">git push → despliegue</text>
+  <text x="750" y="488" class="txt">en Cloudflare Workers.</text>
+  <text x="750" y="504" class="txt">La página pública ya responde.</text>
+
+  <!-- vuelta -->
+  <path class="fle" d="M900 428 V 46 H 165 V 54"/>
+  <text x="880" y="270" class="etq" transform="rotate(90 880 270)">la forma responde «sandhi adjudicado»</text>
+
+  <!-- leyenda -->
+  <rect class="caja" x="30" y="428" width="290" height="96" rx="6"/>
+  <text x="45" y="452" class="tit" font-size="13.5">La doctrina, en una línea</text>
+  <text x="45" y="472" class="txt">Nada se adjudica solo: la cola acerca los</text>
+  <text x="45" y="488" class="txt">veredictos, pero la puerta es el incorporador,</text>
+  <text x="45" y="504" class="txt">los arneses y la firma del IEBH.</text>
+</svg>
