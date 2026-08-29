@@ -585,15 +585,6 @@ async function analizar(){
     if(marcadas.length){
       html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
     }
-    if(REV.on){
-      /* En revisión también se muestran las voces calladas: un fallo de la
-         señal es tan reportable como una marca falsa (el caso vedanānañca). */
-      const calladas = voces.filter(v => !resolver(v).senal);
-      if(calladas.length){
-        html += `<p class="lbl" style="margin:22px 0 6px">Las demás voces — la señal calla</p>
-          <div class="forms">${calladas.map(v => tarjeta(v, resolver(v), false)).join('')}</div>`;
-      }
-    }
     html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
       el 47 % de los sandhis presentes en el verso y el 57 % en la prosa, y lo marcado
       como <em>seguro</em> acierta una juntura real en 9 de cada 10 casos. Lo que calla no
@@ -662,12 +653,36 @@ function revBarra(voz, r){
 }
 function revAcciones(){
   const n = REV.v.size;
-  return `<div class="rev-acciones">
-    <button type="button" class="boton" id="rev-exportar"${n ? '' : ' disabled'}>Exportar ${n} veredicto${n===1?'':'s'}</button>
+  const voces = [...REV.v.keys()].join(', ');
+  return `<div class="rev-bar" style="margin-top:18px">
+    <span class="rev-lbl">sandhi no detectado</span>
+    <input type="text" class="rev-otra" id="rev-falta" style="min-width:26ch"
+      placeholder="voz escrita = voz + voz"
+      title="Un sandhi que el solucionador no señaló: la forma tal como está escrita, un «=», y sus componentes. Enter para registrarlo.">
+    <button type="button" class="rev-btn" id="rev-falta-btn">registrar</button>
+  </div>
+  <div class="rev-acciones">
+    <button type="button" class="boton" id="rev-exportar"${n ? '' : ' disabled'}
+      title="${esc(voces)}">Exportar ${n} veredicto${n===1?'':'s'}</button>
     <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>Borrar todos</button>
     <span class="estado">el archivo exportado se incorpora con
       herramientas/incorporar_adjudicaciones.py — nada se adjudica sin firma</span>
   </div>`;
+}
+async function revFalta(){
+  const inp = document.getElementById('rev-falta');
+  const t = (inp.value || '').trim();
+  const m = t.match(/^(\S+)\s*[=:]\s*(.+)$/u);
+  if(!m || !m[2].includes('+')){
+    alert('Formato: la voz escrita, «=», y sus componentes con «+».\nEjemplo:  cetā = ca + etā');
+    return;
+  }
+  const voz = m[1];
+  const comp = m[2].split('+').map(x => x.trim()).filter(x => x).join(' + ');
+  /* La voz puede no estar en el pasaje: cargar sus fragmentos antes de
+     resolverla, para que la señal y la primera lectura salgan bien. */
+  try { await SOLUCIONADOR.preparar(voz); } catch(e){}
+  revPoner(voz, { t: 'otra', comp });
 }
 function revPoner(voz, dato){
   const r = resolver(voz);
@@ -720,6 +735,7 @@ $('out').addEventListener('click', e => {
     else revPoner(voz, { t: que });
     return;
   }
+  if(e.target.id === 'rev-falta-btn') revFalta();
   if(e.target.id === 'rev-exportar') revExportar();
   if(e.target.id === 'rev-borrar'){
     if(confirm('¿Borrar los ' + REV.v.size + ' veredictos guardados en este navegador?')){
@@ -728,7 +744,9 @@ $('out').addEventListener('click', e => {
   }
 });
 $('out').addEventListener('keydown', e => {
-  if(e.key === 'Enter' && e.target.matches('[data-rev-otra]')){
+  if(e.key !== 'Enter') return;
+  if(e.target.id === 'rev-falta'){ e.preventDefault(); revFalta(); return; }
+  if(e.target.matches('[data-rev-otra]')){
     e.preventDefault();
     const comp = e.target.value.trim();
     if(!comp.includes('+')){ alert('Escriba los componentes con «+»: voz + voz'); return; }
