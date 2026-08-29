@@ -1007,12 +1007,18 @@ def _aplicar_caso(r):
         # incorporador promete («quedará registrada aunque el motor no la
         # produzca todavía») y no inventa nada: los componentes son los del
         # caso, la escalera queda vacía hasta que combinar() la derive.
+        # El paréntesis dice el porqué VERDADERO: tres voces piden
+        # combinar(); dos voces que el motor no corta (suññāgāragatovā =
+        # suññāgāragato + vā, pakati §23) no son junturas múltiples y el
+        # rótulo no debe decirlo (2026-08-29).
+        porque = ("junturas múltiples" if len(objetivo) > 2
+                  else "el motor no propone este corte")
         delante = [{"componentes": partir_componentes(
                         caso.get("componentes", "")),
                     "pasos": [],
                     "adjudicada": caso.get("fuente", ""),
                     "pendiente": ("el motor aún no deriva esta lectura "
-                                  "(junturas múltiples)")}]
+                                  "({0})".format(porque))}]
     r["lecturas"] = delante + detras
     # La adjudicación asciende la señal a «segura» venga de donde venga la
     # señal previa («posible» por frecuencia incluido); si ya era «segura»

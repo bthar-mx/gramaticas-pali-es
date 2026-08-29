@@ -785,11 +785,16 @@ function aplicarCaso(r) {
         // El motor no produce (todavía) la lectura adjudicada — casos de
         // TRES voces (idamavocāyasmā). Va primera, sintética, pendiente de
         // derivación. Porqués: `_aplicar_caso` del Python.
+        // El paréntesis dice el porqué VERDADERO: tres voces piden
+        // combinar(); dos voces que el motor no corta (pakati §23) no son
+        // junturas múltiples. Espejo de `_aplicar_caso` (2026-08-29).
+        const porque = objetivo.length > 2
+            ? "junturas múltiples" : "el motor no propone este corte";
         delante.push({
             componentes: partirComponentes(caso.componentes || ""),
             pasos: [],
             adjudicada: caso.fuente || "",
-            pendiente: "el motor aún no deriva esta lectura (junturas múltiples)",
+            pendiente: `el motor aún no deriva esta lectura (${porque})`,
         });
     }
     r.lecturas = delante.concat(detras);
