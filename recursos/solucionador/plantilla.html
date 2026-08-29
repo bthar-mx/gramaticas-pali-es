@@ -164,6 +164,39 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
 .src.segura{background:var(--chip-k);color:var(--nila)}
 .src.posible{background:var(--chip-c);color:var(--haritala)}
 
+/* ---------- el pasaje marcado (pedido del IEBH, 2026-08-29) ----------
+   El pasaje vuelve a aparecer, entero y en cuerpo de lectura, con las voces
+   señaladas marcadas por nivel. NO se colorea dentro del <textarea>: ahí no
+   se puede, y el remedio habitual —una capa espejo debajo— alinea por
+   píxeles y, cuando se desalinea, pinta la palabra de al lado sin avisar.
+   Aquí el color va sobre el texto de verdad, así que no puede mentir.
+
+   Lo que NO lleva marca es tan informativo como lo que la lleva: son las
+   voces sobre las que el motor calla, que es donde mirar para el campo
+   «sandhi no detectado» del modo revisión. */
+.pasaje{margin:18px 0 0;padding:15px 17px;border-radius:3px;
+  background:var(--ola-2);border:1px solid var(--hair);
+  font-family:var(--serif);font-size:17px;line-height:2.05}
+.pasaje mark{background:none;color:inherit;border-radius:2px;padding:1px 3px;
+  cursor:pointer;transition:background .12s}
+.pasaje mark.m-adj{background:var(--chip-k);
+  box-shadow:inset 0 -2px 0 var(--nila)}
+.pasaje mark.m-firme{background:var(--chip-k);
+  box-shadow:inset 0 -1px 0 var(--nila)}
+.pasaje mark.m-pos{background:var(--chip-c);
+  box-shadow:inset 0 -1px 0 var(--haritala)}
+.pasaje mark:hover{background:var(--ola)}
+.pasaje mark:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.pasaje-leyenda{display:flex;gap:16px;flex-wrap:wrap;margin:11px 0 0;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;
+  color:var(--soot)}
+.pasaje-leyenda i{display:inline-block;width:11px;height:11px;
+  margin-right:5px;vertical-align:-1px;border-radius:2px}
+.pasaje-leyenda i.m-adj{background:var(--chip-k);box-shadow:inset 0 -2px 0 var(--nila)}
+.pasaje-leyenda i.m-firme{background:var(--chip-k);box-shadow:inset 0 -1px 0 var(--nila)}
+.pasaje-leyenda i.m-pos{background:var(--chip-c);box-shadow:inset 0 -1px 0 var(--haritala)}
+@media print{.pasaje mark{background:none;box-shadow:inset 0 -1px 0 var(--soot)}}
+
 /* ---------- escalera de secuencia (idéntica a /recursos/sandhi/) ---------- */
 .lad{margin:12px 0 0;font-family:var(--mono);font-size:13.5px;line-height:1.9;
      border-left:2px solid var(--haritala);padding-left:13px}
@@ -565,6 +598,8 @@ const TXT = {
     verlas: n => `ver las ${n} lecturas — el orden es de verosimilitud, no
           de certeza`,
     cargando: 'cargando el léxico del canon…', analizando: 'analizando…',
+    t_ir: 'Ver el análisis de esta voz',
+    sin_marca: 'sin marca: el motor calla',
     b_enlace: 'Enlace', b_copiar: 'Copiar', b_copiado: '✓ ¡Copiado!',
     t_enlace: 'Copiar un enlace que abre el solucionador con esta voz ya analizada',
     t_copiar: 'Copiar este análisis al portapapeles',
@@ -623,6 +658,8 @@ const TXT = {
     verlas: n => `see the ${n} readings — the order is plausibility, not
           certainty`,
     cargando: 'loading the canon lexicon…', analizando: 'analysing…',
+    t_ir: 'See the analysis of this word',
+    sin_marca: 'unmarked: the engine stays silent',
     b_enlace: 'Link', b_copiar: 'Copy', b_copiado: '✓ Copied!',
     t_enlace: 'Copy a link that opens the solver with this word already analysed',
     t_copiar: 'Copy this analysis to the clipboard',
@@ -878,6 +915,47 @@ function textoVoz(voz, r){
   return L.join('\n');
 }
 
+/* ---------- el pasaje marcado (pedido del IEBH, 2026-08-29) ----------
+   Se reconstruye desde el texto ORIGINAL, no desde las fichas: así el
+   espaciado, la puntuación y las mayúsculas quedan como los pegó el lector,
+   y la marca cae sobre la voz y sólo sobre la voz — la puntuación que la
+   rodea se queda fuera. La partición es la misma de fichas(): los espacios
+   separan, y la raya y el guion largo también. */
+function nivelDe(r){
+  if(!r || !r.senal) return null;
+  if(r.senal === 'posible') return 'm-pos';
+  return esAdjudicado(r) ? 'm-adj' : 'm-firme';
+}
+function pasajeMarcado(texto){
+  /* Se parte conservando los separadores, que hay que volver a escribir. */
+  const trozos = texto.split(/(\s+|[–—])/u);
+  let html = '', hubo = false;
+  for(const t of trozos){
+    if(!t) continue;
+    if(/^(\s+|[–—])$/u.test(t)){ html += esc(t); continue; }
+    /* La misma poda de fichas(): lo de fuera es puntuación, no voz. */
+    const nucleo = t.replace(PODA, '');
+    if(!nucleo){ html += esc(t); continue; }
+    const i = t.indexOf(nucleo);
+    const antes = t.slice(0, i), despues = t.slice(i + nucleo.length);
+    const n = nivelDe(resolver(nucleo));
+    if(!n){ html += esc(t); continue; }
+    hubo = true;
+    html += esc(antes)
+      + `<mark class="${n}" tabindex="0" role="button" data-ir="${esc(nucleo)}"`
+      + ` data-tip="${esc(tr('t_ir'))}">${esc(nucleo)}</mark>`
+      + esc(despues);
+  }
+  if(!hubo) return '';
+  return `<div class="pasaje">${html}</div>
+    <div class="pasaje-leyenda">
+      <span><i class="m-adj"></i>${esc(tr('adjudicado'))}</span>
+      <span><i class="m-firme"></i>${esc(tr('firme'))}</span>
+      <span><i class="m-pos"></i>${esc(tr('posible'))}</span>
+      <span>${esc(tr('sin_marca'))}</span>
+    </div>`;
+}
+
 /* ---------- analizar ---------- */
 const $ = id => document.getElementById(id);
 const cacheR = new Map();
@@ -946,6 +1024,8 @@ async function analizar(){
     if(firmes) partes.push(tr('p_firme')(firmes));
     if(posibles) partes.push(tr('p_pos')(posibles));
     html = `<p class="cuenta-sandhis">${tr('cuenta')(total, voces.length)}${partes.length ? ' — ' + partes.join(' · ') : ''}</p>`;
+    /* El pasaje entero, con lo señalado marcado — y lo callado a la vista. */
+    html += pasajeMarcado(texto);
     if(marcadas.length){
       html += `<div class="forms">${marcadas.map(([v,r,n]) => tarjeta(v, r, false, n)).join('')}</div>`;
     }
@@ -1352,6 +1432,33 @@ document.addEventListener('focusout', e => {
   document.getElementById('vfoot').innerHTML =
     `<strong>Versión ${DATA.version}</strong> — <time datetime="${DATA.fecha}">${largo}</time>. ${esc(DATA.nota)}`;
 })();
+
+/* Del pasaje marcado a su tarjeta: abrirla y llevar el ojo hasta ella. Las
+   voces repetidas son UNA tarjeta, así que se busca por la voz en minúscula,
+   que es la clave con la que se dedupe. */
+function irATarjeta(voz){
+  const k = (voz || '').toLowerCase();
+  const d = [...document.querySelectorAll('details.form[data-voz]')]
+    .find(x => (x.dataset.voz || '').toLowerCase() === k);
+  if(!d) return;
+  d.open = true;
+  /* Abrir es lo que importa; llevar el ojo es cortesía. Si el entorno no
+     tiene scrollIntoView, la cortesía se pierde y la tarjeta se abre igual. */
+  try {
+    d.scrollIntoView({block: 'center',
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'instant' : 'smooth'});
+  } catch(e){}
+}
+document.addEventListener('click', e => {
+  const m = e.target.closest('.pasaje mark[data-ir]');
+  if(m) irATarjeta(m.dataset.ir);
+});
+document.addEventListener('keydown', e => {
+  if(e.key !== 'Enter' && e.key !== ' ') return;
+  const m = e.target.closest && e.target.closest('.pasaje mark[data-ir]');
+  if(m){ e.preventDefault(); irATarjeta(m.dataset.ir); }
+});
 
 /* ---------- enlace y copia de cada voz (pedido del IEBH, 2026-08-29) ---- */
 function avisoCopiado(btn){
