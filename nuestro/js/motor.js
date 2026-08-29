@@ -294,6 +294,13 @@ function forward(n, a, b, F) {
         // el par.
         return null;
     }
+    if ((n === 13 || n === 16 || n === "38+13")
+            && !OP.licenciaElisionSiguiente(a, b)) {
+        // §13 es «Vā paro asarūpā»: sólo tras vocal DISÍMIL. Con vocales
+        // de la misma clase manda §12 (+§15) — adjudicación del IEBH,
+        // 2026-08-29, observación sobre assasāmīti.
+        return null;
+    }
     let pasos;
     if (typeof n === "number" && NUEVE_DEL_VENERABLE.has(n)) {
         pasos = D.derivar(n, a + " " + b, F);

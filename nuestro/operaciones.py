@@ -570,6 +570,35 @@ def _sustitucion(a, b, n):
     return raiz, v, LETRA_SUST[n]
 
 
+CLASE_VOCAL = {"a": "a", "ā": "a", "i": "i", "ī": "i", "u": "u", "ū": "u",
+               "e": "e", "o": "o"}
+
+
+def licencia_elision_siguiente(a, b, n=None):
+    """¿Licencia §13 (o su cadena con §16 o §38) la elisión de la vocal
+    siguiente en este par?
+
+    §13 es «Vā paro asarūpā» — la vocal siguiente se elide tras una vocal
+    DISÍMIL (asarūpa)—. Adjudicación del IEBH (2026-08-29, observación
+    sobre assasāmīti): cuando la vocal final y la inicial son de la misma
+    clase (a/ā, i/ī, u/ū, e, o), la que se elide es la PRIMERA —§12, y la
+    superviviente se alarga por §15—; §13 no cubre el par. La propia
+    edición concuerda: tadāhaṃ, migīva y vadhūdaraṃ están bajo «una vocal
+    que precede a otra se elide» (sara-sandhi, regla 1), y la secuencia
+    derivada que los citaba por §13 era nuestra, no suya. Como con §17,
+    §18 y §21: el derivador del Venerable no se toca — se deja de
+    preguntarle por un aforismo cuyo enunciado no cubre el par.
+    """
+    prev = a[:-1] if a and a.endswith("ṃ") else a    # «38+13»: cae la niggahīta
+    if not prev or not b:
+        return True
+    u, v = prev[-1], b[0]
+    if (u in CLASE_VOCAL and v in CLASE_VOCAL
+            and CLASE_VOCAL[u] == CLASE_VOCAL[v]):
+        return False
+    return True
+
+
 def licencia_sustitucion(a, b, n):
     """¿Licencia el aforismo `n` esta sustitución?
 

@@ -519,6 +519,11 @@ def _forward(n, a, b, F):
         # veces «me + ayaṃ», una con referencia falsa. Aquí no se corrige su
         # archivo: se deja de preguntarle por un aforismo que no cubre el par.
         return None
+    if n in (13, 16, "38+13") and not OP.licencia_elision_siguiente(a, b, n):
+        # §13 es «Vā paro asarūpā»: sólo tras vocal DISÍMIL. Con vocales de
+        # la misma clase manda §12 (+§15) — adjudicación del IEBH,
+        # 2026-08-29, observación sobre assasāmīti; ver la licencia.
+        return None
     if n in (12, 13, 15, 16, 17, 18, 21, 28, 35):
         # el verificador de estas nueve es el del Venerable
         pasos = D.derivar(n, a + " " + b, F)

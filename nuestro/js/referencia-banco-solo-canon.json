@@ -160,19 +160,6 @@
     {
      "componentes": [
       "loka",
-      "aggo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "loka aggo",
-      "lok a aggo (§10)",
-      "lok a ggo (§13)",
-      "lokaggo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "loka",
       "uggo"
      ],
      "sutta": 13,
@@ -231,20 +218,6 @@
       "loka aggo (§38)",
       "lok a aggo (§10)",
       "lok aggo (§12)",
-      "lokaggo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokaṃ",
-      "aggo"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "lokaṃ aggo",
-      "loka aggo (§38)",
-      "lok a aggo (§10)",
-      "lok a ggo (§13)",
       "lokaggo (§11)"
      ]
     },
@@ -341,32 +314,6 @@
     },
     {
      "componentes": [
-      "bhavā",
-      "asavo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bhavā asavo",
-      "bhav ā asavo (§10)",
-      "bhav ā savo (§13)",
-      "bhavāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhavā",
-      "āsavo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bhavā āsavo",
-      "bhav ā āsavo (§10)",
-      "bhav ā savo (§13)",
-      "bhavāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "bhava",
       "asavo"
      ],
@@ -432,34 +379,6 @@
       "bhav ā asavo (§10)",
       "bhav asavo (§12)",
       "bhav āsavo (§15)",
-      "bhavāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhava",
-      "asavo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bhava asavo",
-      "bhav a asavo (§10)",
-      "bhav a savo (§13)",
-      "bhav ā savo (§16)",
-      "bhavāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhava",
-      "āsavo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bhava āsavo",
-      "bhav a āsavo (§10)",
-      "bhav a savo (§13)",
-      "bhav ā savo (§16)",
       "bhavāsavo (§11)"
      ]
     },
@@ -766,34 +685,6 @@
     {
      "componentes": [
       "ekenūna",
-      "ani"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "ekenūna ani",
-      "ekenūn a ani (§10)",
-      "ekenūn a ni (§13)",
-      "ekenūn ā ni (§16)",
-      "ekenūnāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ekenūna",
-      "āni"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "ekenūna āni",
-      "ekenūn a āni (§10)",
-      "ekenūn a ni (§13)",
-      "ekenūn ā ni (§16)",
-      "ekenūnāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ekenūna",
       "ni"
      ],
      "sutta": 25,
@@ -927,19 +818,6 @@
      "pasos": [
       "bhave asanā",
       "bhav e asanā (§10)",
-      "bhav e sanā (§13)",
-      "bhavesanā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhave",
-      "esanā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bhave esanā",
-      "bhav e esanā (§10)",
       "bhav e sanā (§13)",
       "bhavesanā (§11)"
      ]
@@ -1089,19 +967,6 @@
     },
     {
      "componentes": [
-      "bhavo",
-      "ogho"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bhavo ogho",
-      "bhav o ogho (§10)",
-      "bhav o gho (§13)",
-      "bhavogho (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "bha",
       "ogho"
      ],
@@ -1170,7 +1035,7 @@
   {
    "f": "tadāhaṃ",
    "comp": "tadā ahaṃ",
-   "kac": 13,
+   "kac": 15,
    "pakati": false,
    "acierta": true,
    "esperados": [
@@ -1244,32 +1109,6 @@
     {
      "componentes": [
       "tadā",
-      "ahaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tadā ahaṃ",
-      "tad ā ahaṃ (§10)",
-      "tad ā haṃ (§13)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tadā",
-      "āhaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tadā āhaṃ",
-      "tad ā āhaṃ (§10)",
-      "tad ā haṃ (§13)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tadā",
       "īhaṃ"
      ],
      "sutta": 13,
@@ -1319,34 +1158,6 @@
       "tad ā ahaṃ (§10)",
       "tad ahaṃ (§12)",
       "tad āhaṃ (§15)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tada",
-      "ahaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tada ahaṃ",
-      "tad a ahaṃ (§10)",
-      "tad a haṃ (§13)",
-      "tad ā haṃ (§16)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tada",
-      "āhaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tada āhaṃ",
-      "tad a āhaṃ (§10)",
-      "tad a haṃ (§13)",
-      "tad ā haṃ (§16)",
       "tadāhaṃ (§11)"
      ]
     },
@@ -1484,32 +1295,6 @@
     },
     {
      "componentes": [
-      "avijjā",
-      "asavo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "avijjā asavo",
-      "avijj ā asavo (§10)",
-      "avijj ā savo (§13)",
-      "avijjāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "avijjā",
-      "āsavo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "avijjā āsavo",
-      "avijj ā āsavo (§10)",
-      "avijj ā savo (§13)",
-      "avijjāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "avijja",
       "asavo"
      ],
@@ -1533,34 +1318,6 @@
       "avijj ā asavo (§10)",
       "avijj asavo (§12)",
       "avijj āsavo (§15)",
-      "avijjāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "avijja",
-      "asavo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "avijja asavo",
-      "avijj a asavo (§10)",
-      "avijj a savo (§13)",
-      "avijj ā savo (§16)",
-      "avijjāsavo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "avijja",
-      "āsavo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "avijja āsavo",
-      "avijj a āsavo (§10)",
-      "avijj a savo (§13)",
-      "avijj ā savo (§16)",
       "avijjāsavo (§11)"
      ]
     },
@@ -1762,32 +1519,6 @@
     },
     {
      "componentes": [
-      "pa",
-      "aññindriya"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "pa aññindriya",
-      "p a aññindriya (§10)",
-      "p a ññindriya (§13)",
-      "paññindriya (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "paññi",
-      "indriya"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "paññi indriya",
-      "paññ i indriya (§10)",
-      "paññ i ndriya (§13)",
-      "paññindriya (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "paññaṃ",
       "indriya"
      ],
@@ -1825,20 +1556,6 @@
       "pu aññindriya (§38)",
       "p u aññindriya (§10)",
       "p aññindriya (§12)",
-      "paññindriya (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "paṃ",
-      "aññindriya"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "paṃ aññindriya",
-      "pa aññindriya (§38)",
-      "p a aññindriya (§10)",
-      "p a ññindriya (§13)",
       "paññindriya (§11)"
      ]
     }
@@ -2332,20 +2049,6 @@
       "labhant atthe (§12)",
       "labhantatthe (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "labhantaṃ",
-      "atthe"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "labhantaṃ atthe",
-      "labhanta atthe (§38)",
-      "labhant a atthe (§10)",
-      "labhant a tthe (§13)",
-      "labhantatthe (§11)"
-     ]
     }
    ]
   },
@@ -2466,38 +2169,12 @@
     {
      "componentes": [
       "aggā",
-      "ahito"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "aggā ahito",
-      "agg ā ahito (§10)",
-      "agg ā hito (§13)",
-      "aggāhito (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "aggā",
       "ohito"
      ],
      "sutta": 13,
      "pasos": [
       "aggā ohito",
       "agg ā ohito (§10)",
-      "agg ā hito (§13)",
-      "aggāhito (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "aggā",
-      "āhito"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "aggā āhito",
-      "agg ā āhito (§10)",
       "agg ā hito (§13)",
       "aggāhito (§11)"
      ]
@@ -2589,40 +2266,12 @@
     {
      "componentes": [
       "agga",
-      "ahito"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "agga ahito",
-      "agg a ahito (§10)",
-      "agg a hito (§13)",
-      "agg ā hito (§16)",
-      "aggāhito (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "agga",
       "ohito"
      ],
      "sutta": 16,
      "pasos": [
       "agga ohito",
       "agg a ohito (§10)",
-      "agg a hito (§13)",
-      "agg ā hito (§16)",
-      "aggāhito (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "agga",
-      "āhito"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "agga āhito",
-      "agg a āhito (§10)",
       "agg a hito (§13)",
       "agg ā hito (§16)",
       "aggāhito (§11)"
@@ -2763,19 +2412,6 @@
     {
      "componentes": [
       "tīṇi",
-      "imāni"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tīṇi imāni",
-      "tīṇ i imāni (§10)",
-      "tīṇ i māni (§13)",
-      "tīṇimāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tīṇi",
       "āmāni"
      ],
      "sutta": 13,
@@ -2884,20 +2520,6 @@
      "pasos": [
       "adhi eritaṃ",
       "adh i eritaṃ (§10)",
-      "adh i ritaṃ (§13)",
-      "adh ī ritaṃ (§16)",
-      "adhīritaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "adhi",
-      "īritaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "adhi īritaṃ",
-      "adh i īritaṃ (§10)",
       "adh i ritaṃ (§13)",
       "adh ī ritaṃ (§16)",
       "adhīritaṃ (§11)"
@@ -3153,19 +2775,6 @@
     {
      "componentes": [
       "he",
-      "etaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "he etaṃ",
-      "h e etaṃ (§10)",
-      "h e taṃ (§13)",
-      "hetaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "he",
       "itaṃ"
      ],
      "sutta": 13,
@@ -3333,19 +2942,6 @@
       "aggī obhāso",
       "agg ī obhāso (§10)",
       "agg obhāso (§12)",
-      "aggobhāso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "aggo",
-      "obhāso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "aggo obhāso",
-      "agg o obhāso (§10)",
-      "agg o bhāso (§13)",
       "aggobhāso (§11)"
      ]
     },
@@ -3521,32 +3117,6 @@
     },
     {
      "componentes": [
-      "tu",
-      "uṇhassa"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tu uṇhassa",
-      "t u uṇhassa (§10)",
-      "t u ṇhassa (§13)",
-      "tuṇhassa (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tuṇha",
-      "assa"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tuṇha assa",
-      "tuṇh a assa (§10)",
-      "tuṇh a ssa (§13)",
-      "tuṇhassa (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "tuṇha",
       "issa"
      ],
@@ -3611,20 +3181,6 @@
       "t uṇhassa (§12)",
       "tuṇhassa (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "tuṃ",
-      "uṇhassa"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "tuṃ uṇhassa",
-      "tu uṇhassa (§38)",
-      "t u uṇhassa (§10)",
-      "t u ṇhassa (§13)",
-      "tuṇhassa (§11)"
-     ]
     }
    ]
   },
@@ -3643,7 +3199,7 @@
   {
    "f": "migīva",
    "comp": "migī iva",
-   "kac": 13,
+   "kac": 15,
    "pakati": false,
    "acierta": true,
    "esperados": [
@@ -3659,19 +3215,6 @@
      "pasos": [
       "migī eva",
       "mig ī eva (§10)",
-      "mig ī va (§13)",
-      "migīva (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "migī",
-      "iva"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "migī iva",
-      "mig ī iva (§10)",
       "mig ī va (§13)",
       "migīva (§11)"
      ]
@@ -3881,19 +3424,6 @@
     },
     {
      "componentes": [
-      "bhikkhunī",
-      "īritaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bhikkhunī īritaṃ",
-      "bhikkhun ī īritaṃ (§10)",
-      "bhikkhun ī ritaṃ (§13)",
-      "bhikkhunīritaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "bhikkhuni",
       "aritaṃ"
      ],
@@ -3915,20 +3445,6 @@
      "pasos": [
       "bhikkhuni eritaṃ",
       "bhikkhun i eritaṃ (§10)",
-      "bhikkhun i ritaṃ (§13)",
-      "bhikkhun ī ritaṃ (§16)",
-      "bhikkhunīritaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhikkhuni",
-      "īritaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bhikkhuni īritaṃ",
-      "bhikkhun i īritaṃ (§10)",
       "bhikkhun i ritaṃ (§13)",
       "bhikkhun ī ritaṃ (§16)",
       "bhikkhunīritaṃ (§11)"
@@ -4343,19 +3859,6 @@
     },
     {
      "componentes": [
-      "bhikkhuno",
-      "ovādo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bhikkhuno ovādo",
-      "bhikkhun o ovādo (§10)",
-      "bhikkhun o vādo (§13)",
-      "bhikkhunovādo (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "bhikkhunova",
       "ado"
      ],
@@ -4371,40 +3874,12 @@
     {
      "componentes": [
       "bhikkhunova",
-      "ado"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bhikkhunova ado",
-      "bhikkhunov a ado (§10)",
-      "bhikkhunov a do (§13)",
-      "bhikkhunov ā do (§16)",
-      "bhikkhunovādo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhikkhunova",
       "udo"
      ],
      "sutta": 16,
      "pasos": [
       "bhikkhunova udo",
       "bhikkhunov a udo (§10)",
-      "bhikkhunov a do (§13)",
-      "bhikkhunov ā do (§16)",
-      "bhikkhunovādo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhikkhunova",
-      "ādo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bhikkhunova ādo",
-      "bhikkhunov a ādo (§10)",
       "bhikkhunov a do (§13)",
       "bhikkhunov ā do (§16)",
       "bhikkhunovādo (§11)"
@@ -4623,20 +4098,6 @@
     {
      "componentes": [
       "ucchaṃ",
-      "aggaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "ucchaṃ aggaṃ",
-      "uccha aggaṃ (§38)",
-      "ucch a aggaṃ (§10)",
-      "ucch a ggaṃ (§13)",
-      "ucchaggaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ucchaṃ",
       "uggaṃ"
      ],
      "sutta": "38+13",
@@ -4748,58 +4209,6 @@
       "dhātū āyatanāni",
       "dhāt ū āyatanāni (§10)",
       "dhāt āyatanāni (§12)",
-      "dhātāyatanāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhātā",
-      "ayatanāni"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhātā ayatanāni",
-      "dhāt ā ayatanāni (§10)",
-      "dhāt ā yatanāni (§13)",
-      "dhātāyatanāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhātā",
-      "āyatanāni"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhātā āyatanāni",
-      "dhāt ā āyatanāni (§10)",
-      "dhāt ā yatanāni (§13)",
-      "dhātāyatanāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhātāyatanā",
-      "ani"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhātāyatanā ani",
-      "dhātāyatan ā ani (§10)",
-      "dhātāyatan ā ni (§13)",
-      "dhātāyatanāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhātāyatanā",
-      "āni"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhātāyatanā āni",
-      "dhātāyatan ā āni (§10)",
-      "dhātāyatan ā ni (§13)",
       "dhātāyatanāni (§11)"
      ]
     },
@@ -5092,19 +4501,6 @@
     },
     {
      "componentes": [
-      "dhāti",
-      "indriyāni"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhāti indriyāni",
-      "dhāt i indriyāni (§10)",
-      "dhāt i ndriyāni (§13)",
-      "dhātindriyāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "dhātī",
       "ndriyāni"
      ],
@@ -5166,20 +4562,6 @@
       "dhātu indriyāni (§38)",
       "dhāt u indriyāni (§10)",
       "dhāt indriyāni (§12)",
-      "dhātindriyāni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhātiṃ",
-      "indriyāni"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "dhātiṃ indriyāni",
-      "dhāti indriyāni (§38)",
-      "dhāt i indriyāni (§10)",
-      "dhāt i ndriyāni (§13)",
       "dhātindriyāni (§11)"
      ]
     },
@@ -5300,19 +4682,6 @@
     },
     {
      "componentes": [
-      "dhātī",
-      "īritā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhātī īritā",
-      "dhāt ī īritā (§10)",
-      "dhāt ī ritā (§13)",
-      "dhātīritā (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "dhāti",
       "eritā"
      ],
@@ -5320,20 +4689,6 @@
      "pasos": [
       "dhāti eritā",
       "dhāt i eritā (§10)",
-      "dhāt i ritā (§13)",
-      "dhāt ī ritā (§16)",
-      "dhātīritā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhāti",
-      "īritā"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "dhāti īritā",
-      "dhāt i īritā (§10)",
       "dhāt i ritā (§13)",
       "dhāt ī ritā (§16)",
       "dhātīritā (§11)"
@@ -5509,19 +4864,6 @@
     },
     {
      "componentes": [
-      "mātu",
-      "upaṭṭhānaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "mātu upaṭṭhānaṃ",
-      "māt u upaṭṭhānaṃ (§10)",
-      "māt u paṭṭhānaṃ (§13)",
-      "mātupaṭṭhānaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "mātū",
       "paṭṭhānaṃ"
      ],
@@ -5688,34 +5030,6 @@
       "dhīt ā urū (§10)",
       "dhīt urū (§12)",
       "dhīt ūrū (§15)",
-      "dhītūrū (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhītu",
-      "urū"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "dhītu urū",
-      "dhīt u urū (§10)",
-      "dhīt u rū (§13)",
-      "dhīt ū rū (§16)",
-      "dhītūrū (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhītu",
-      "ūrū"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "dhītu ūrū",
-      "dhīt u ūrū (§10)",
-      "dhīt u rū (§13)",
-      "dhīt ū rū (§16)",
       "dhītūrū (§11)"
      ]
     },
@@ -6076,19 +5390,6 @@
     },
     {
      "componentes": [
-      "addasa",
-      "asāmikaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "addasa asāmikaṃ",
-      "addas a asāmikaṃ (§10)",
-      "addas a sāmikaṃ (§13)",
-      "addasasāmikaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "addasā",
       "sāmikaṃ"
      ],
@@ -6150,20 +5451,6 @@
       "addasu asāmikaṃ (§38)",
       "addas u asāmikaṃ (§10)",
       "addas asāmikaṃ (§12)",
-      "addasasāmikaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "addasaṃ",
-      "asāmikaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "addasaṃ asāmikaṃ",
-      "addasa asāmikaṃ (§38)",
-      "addas a asāmikaṃ (§10)",
-      "addas a sāmikaṃ (§13)",
       "addasasāmikaṃ (§11)"
      ]
     },
@@ -6252,19 +5539,6 @@
       "je ambādīni",
       "j e ambādīni (§10)",
       "j ambādīni (§12)",
-      "jambādīni (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ja",
-      "ambādīni"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ja ambādīni",
-      "j a ambādīni (§10)",
-      "j a mbādīni (§13)",
       "jambādīni (§11)"
      ]
     },
@@ -6406,7 +5680,7 @@
   {
    "f": "vadhūdaraṃ",
    "comp": "vadhū + udaraṃ",
-   "kac": 13,
+   "kac": 15,
    "pakati": false,
    "acierta": true,
    "esperados": [
@@ -6434,19 +5708,6 @@
      "pasos": [
       "vadhū adaraṃ",
       "vadh ū adaraṃ (§10)",
-      "vadh ū daraṃ (§13)",
-      "vadhūdaraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "vadhū",
-      "udaraṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "vadhū udaraṃ",
-      "vadh ū udaraṃ (§10)",
       "vadh ū daraṃ (§13)",
       "vadhūdaraṃ (§11)"
      ]
@@ -6593,20 +5854,6 @@
     {
      "componentes": [
       "vadhu",
-      "udaraṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "vadhu udaraṃ",
-      "vadh u udaraṃ (§10)",
-      "vadh u daraṃ (§13)",
-      "vadh ū daraṃ (§16)",
-      "vadhūdaraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "vadhu",
       "ādaraṃ"
      ],
      "sutta": 16,
@@ -6734,19 +5981,6 @@
       "sarabhū ūmivego",
       "sarabh ū ūmivego (§10)",
       "sarabh ūmivego (§12)",
-      "sarabhūmivego (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sarabhū",
-      "ūmivego"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sarabhū ūmivego",
-      "sarabh ū ūmivego (§10)",
-      "sarabh ū mivego (§13)",
       "sarabhūmivego (§11)"
      ]
     },
@@ -7055,19 +6289,6 @@
     },
     {
      "componentes": [
-      "ma",
-      "atthi"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ma atthi",
-      "m a atthi (§10)",
-      "m a tthi (§13)",
-      "matthi (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "maṃ",
       "atthi"
      ],
@@ -7077,20 +6298,6 @@
       "ma atthi (§38)",
       "m a atthi (§10)",
       "m atthi (§12)",
-      "matthi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "maṃ",
-      "atthi"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "maṃ atthi",
-      "ma atthi (§38)",
-      "m a atthi (§10)",
-      "m a tthi (§13)",
       "matthi (§11)"
      ]
     },
@@ -7243,19 +6450,6 @@
     {
      "componentes": [
       "mā",
-      "asi"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "mā asi",
-      "m ā asi (§10)",
-      "m ā si (§13)",
-      "māsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "mā",
       "esi"
      ],
      "sutta": 13,
@@ -7275,19 +6469,6 @@
      "pasos": [
       "mā isi",
       "m ā isi (§10)",
-      "m ā si (§13)",
-      "māsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "mā",
-      "āsi"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "mā āsi",
-      "m ā āsi (§10)",
       "m ā si (§13)",
       "māsi (§11)"
      ]
@@ -7379,20 +6560,6 @@
     {
      "componentes": [
       "ma",
-      "asi"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "ma asi",
-      "m a asi (§10)",
-      "m a si (§13)",
-      "m ā si (§16)",
-      "māsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ma",
       "esi"
      ],
      "sutta": 16,
@@ -7413,20 +6580,6 @@
      "pasos": [
       "ma isi",
       "m a isi (§10)",
-      "m a si (§13)",
-      "m ā si (§16)",
-      "māsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ma",
-      "āsi"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "ma āsi",
-      "m a āsi (§10)",
       "m a si (§13)",
       "m ā si (§16)",
       "māsi (§11)"
@@ -7642,19 +6795,6 @@
     },
     {
      "componentes": [
-      "mi",
-      "issaro"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "mi issaro",
-      "m i issaro (§10)",
-      "m i ssaro (§13)",
-      "missaro (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "missā",
       "ro"
      ],
@@ -7708,20 +6848,6 @@
     {
      "componentes": [
       "missaṃ",
-      "aro"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "missaṃ aro",
-      "missa aro (§38)",
-      "miss a aro (§10)",
-      "miss a ro (§13)",
-      "missaro (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "missaṃ",
       "uro"
      ],
      "sutta": "38+13",
@@ -7729,20 +6855,6 @@
       "missaṃ uro",
       "missa uro (§38)",
       "miss a uro (§10)",
-      "miss a ro (§13)",
-      "missaro (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "missaṃ",
-      "āro"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "missaṃ āro",
-      "missa āro (§38)",
-      "miss a āro (§10)",
       "miss a ro (§13)",
       "missaro (§11)"
      ]
@@ -7878,19 +6990,6 @@
     },
     {
      "componentes": [
-      "mī",
-      "īritaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "mī īritaṃ",
-      "m ī īritaṃ (§10)",
-      "m ī ritaṃ (§13)",
-      "mīritaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "mi",
       "aritaṃ"
      ],
@@ -7912,20 +7011,6 @@
      "pasos": [
       "mi eritaṃ",
       "m i eritaṃ (§10)",
-      "m i ritaṃ (§13)",
-      "m ī ritaṃ (§16)",
-      "mīritaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "mi",
-      "īritaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "mi īritaṃ",
-      "m i īritaṃ (§10)",
       "m i ritaṃ (§13)",
       "m ī ritaṃ (§16)",
       "mīritaṃ (§11)"
@@ -8134,20 +7219,6 @@
      "pasos": [
       "mudi eritā",
       "mud i eritā (§10)",
-      "mud i ritā (§13)",
-      "mud ī ritā (§16)",
-      "mudīritā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "mudi",
-      "īritā"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "mudi īritā",
-      "mud i īritā (§10)",
       "mud i ritā (§13)",
       "mud ī ritā (§16)",
       "mudīritā (§11)"
@@ -8676,19 +7747,6 @@
     {
      "componentes": [
       "mo",
-      "okāso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "mo okāso",
-      "m o okāso (§10)",
-      "m o kāso (§13)",
-      "mokāso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "mo",
       "ākāso"
      ],
      "sutta": 13,
@@ -8933,20 +7991,6 @@
     {
      "componentes": [
       "uraṃ",
-      "assa"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "uraṃ assa",
-      "ura assa (§38)",
-      "ur a assa (§10)",
-      "ur a ssa (§13)",
-      "urassa (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "uraṃ",
       "issa"
      ],
      "sutta": "38+13",
@@ -9179,19 +8223,6 @@
     },
     {
      "componentes": [
-      "assa",
-      "adukkho"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "assa adukkho",
-      "ass a adukkho (§10)",
-      "ass a dukkho (§13)",
-      "assadukkho (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "assā",
       "dukkho"
      ],
@@ -9257,20 +8288,6 @@
       "assu adukkho (§38)",
       "ass u adukkho (§10)",
       "ass adukkho (§12)",
-      "assadukkho (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "assaṃ",
-      "adukkho"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "assaṃ adukkho",
-      "assa adukkho (§38)",
-      "ass a adukkho (§10)",
-      "ass a dukkho (§13)",
       "assadukkho (§11)"
      ]
     },
@@ -9475,33 +8492,6 @@
     },
     {
      "componentes": [
-      "esā",
-      "āvuso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "esā āvuso",
-      "es ā āvuso (§10)",
-      "es ā vuso (§13)",
-      "esāvuso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "esa",
-      "āvuso"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "esa āvuso",
-      "es a āvuso (§10)",
-      "es a vuso (§13)",
-      "es ā vuso (§16)",
-      "esāvuso (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "esaṃ",
       "āvuso"
      ],
@@ -9525,19 +8515,6 @@
       "esi āvuso (§38)",
       "es i āvuso (§10)",
       "es āvuso (§12)",
-      "esāvuso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "esā",
-      "avuso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "esā avuso",
-      "es ā avuso (§10)",
-      "es ā vuso (§13)",
       "esāvuso (§11)"
      ]
     },
@@ -9636,20 +8613,6 @@
       "es ū avuso (§10)",
       "es avuso (§12)",
       "es āvuso (§15)",
-      "esāvuso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "esa",
-      "avuso"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "esa avuso",
-      "es a avuso (§10)",
-      "es a vuso (§13)",
-      "es ā vuso (§16)",
       "esāvuso (§11)"
      ]
     },
@@ -9945,19 +8908,6 @@
     },
     {
      "componentes": [
-      "sattu",
-      "upalabbhati"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sattu upalabbhati",
-      "satt u upalabbhati (§10)",
-      "satt u palabbhati (§13)",
-      "sattupalabbhati (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "sattū",
       "palabbhati"
      ],
@@ -10007,20 +8957,6 @@
       "sattu upalabbhati (§38)",
       "satt u upalabbhati (§10)",
       "satt upalabbhati (§12)",
-      "sattupalabbhati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sattuṃ",
-      "upalabbhati"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "sattuṃ upalabbhati",
-      "sattu upalabbhati (§38)",
-      "satt u upalabbhati (§10)",
-      "satt u palabbhati (§13)",
       "sattupalabbhati (§11)"
      ]
     },
@@ -10191,19 +9127,6 @@
     {
      "componentes": [
       "ettha",
-      "alabbhā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ettha alabbhā",
-      "etth a alabbhā (§10)",
-      "etth a labbhā (§13)",
-      "etthalabbhā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ettha",
       "abbhā"
      ],
      "sutta": 35,
@@ -10237,20 +9160,6 @@
       "ettha alabbhā (§38)",
       "etth a alabbhā (§10)",
       "etth alabbhā (§12)",
-      "etthalabbhā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "etthaṃ",
-      "alabbhā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "etthaṃ alabbhā",
-      "ettha alabbhā (§38)",
-      "etth a alabbhā (§10)",
-      "etth a labbhā (§13)",
       "etthalabbhā (§11)"
      ]
     }
@@ -10335,19 +9244,6 @@
     {
      "componentes": [
       "cattāro",
-      "oghā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "cattāro oghā",
-      "cattār o oghā (§10)",
-      "cattār o ghā (§13)",
-      "cattāroghā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "cattāro",
       "āghā"
      ],
      "sutta": 13,
@@ -10419,33 +9315,6 @@
       "oghā āsavanti",
       "ogh ā āsavanti (§10)",
       "ogh āsavanti (§12)",
-      "oghāsavanti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "oghā",
-      "āsavanti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "oghā āsavanti",
-      "ogh ā āsavanti (§10)",
-      "ogh ā savanti (§13)",
-      "oghāsavanti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ogha",
-      "āsavanti"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "ogha āsavanti",
-      "ogh a āsavanti (§10)",
-      "ogh a savanti (§13)",
-      "ogh ā savanti (§16)",
       "oghāsavanti (§11)"
      ]
     },
@@ -10693,19 +9562,6 @@
     },
     {
      "componentes": [
-      "chayā",
-      "ava"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "chayā ava",
-      "chay ā ava (§10)",
-      "chay ā va (§13)",
-      "chayāva (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "chayo",
       "ava"
      ],
@@ -10904,19 +9760,6 @@
     },
     {
      "componentes": [
-      "kathā",
-      "ava"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "kathā ava",
-      "kath ā ava (§10)",
-      "kath ā va (§13)",
-      "kathāva (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "katha",
       "ava"
      ],
@@ -10982,20 +9825,6 @@
       "kath ī ava (§10)",
       "kath ava (§12)",
       "kath āva (§15)",
-      "kathāva (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "katha",
-      "ava"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "katha ava",
-      "kath a ava (§10)",
-      "kath a va (§13)",
-      "kath ā va (§16)",
       "kathāva (§11)"
      ]
     },
@@ -11119,19 +9948,6 @@
     {
      "componentes": [
       "va",
-      "akā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "va akā",
-      "v a akā (§10)",
-      "v a kā (§13)",
-      "vakā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "va",
       "ekā"
      ],
      "sutta": 13,
@@ -11151,19 +9967,6 @@
      "pasos": [
       "va okā",
       "v a okā (§10)",
-      "v a kā (§13)",
-      "vakā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "va",
-      "ākā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "va ākā",
-      "v a ākā (§10)",
       "v a kā (§13)",
       "vakā (§11)"
      ]
@@ -11210,20 +10013,6 @@
     {
      "componentes": [
       "vaṃ",
-      "akā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "vaṃ akā",
-      "va akā (§38)",
-      "v a akā (§10)",
-      "v a kā (§13)",
-      "vakā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "vaṃ",
       "ekā"
      ],
      "sutta": "38+13",
@@ -11245,20 +10034,6 @@
       "vaṃ okā",
       "va okā (§38)",
       "v a okā (§10)",
-      "v a kā (§13)",
-      "vakā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "vaṃ",
-      "ākā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "vaṃ ākā",
-      "va ākā (§38)",
-      "v a ākā (§10)",
       "v a kā (§13)",
       "vakā (§11)"
      ]
@@ -11381,19 +10156,6 @@
     },
     {
      "componentes": [
-      "iti",
-      "issa"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "iti issa",
-      "it i issa (§10)",
-      "it i ssa (§13)",
-      "itissa (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "itī",
       "ssa"
      ],
@@ -11464,19 +10226,6 @@
      "pasos": [
       "assamaṇī esi",
       "assamaṇ ī esi (§10)",
-      "assamaṇ ī si (§13)",
-      "assamaṇīsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "assamaṇī",
-      "isi"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "assamaṇī isi",
-      "assamaṇ ī isi (§10)",
       "assamaṇ ī si (§13)",
       "assamaṇīsi (§11)"
      ]
@@ -11587,20 +10336,6 @@
      "pasos": [
       "assamaṇi esi",
       "assamaṇ i esi (§10)",
-      "assamaṇ i si (§13)",
-      "assamaṇ ī si (§16)",
-      "assamaṇīsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "assamaṇi",
-      "isi"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "assamaṇi isi",
-      "assamaṇ i isi (§10)",
       "assamaṇ i si (§13)",
       "assamaṇ ī si (§16)",
       "assamaṇīsi (§11)"
@@ -12726,20 +11461,6 @@
     {
      "componentes": [
       "upekkhaṃ",
-      "ati"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "upekkhaṃ ati",
-      "upekkha ati (§38)",
-      "upekkh a ati (§10)",
-      "upekkh a ti (§13)",
-      "upekkhati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "upekkhaṃ",
       "eti"
      ],
      "sutta": "38+13",
@@ -12747,20 +11468,6 @@
       "upekkhaṃ eti",
       "upekkha eti (§38)",
       "upekkh a eti (§10)",
-      "upekkh a ti (§13)",
-      "upekkhati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "upekkhaṃ",
-      "āti"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "upekkhaṃ āti",
-      "upekkha āti (§38)",
-      "upekkh a āti (§10)",
       "upekkh a ti (§13)",
       "upekkhati (§11)"
      ]
@@ -13029,19 +11736,6 @@
     {
      "componentes": [
       "jine",
-      "eritaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "jine eritaṃ",
-      "jin e eritaṃ (§10)",
-      "jin e ritaṃ (§13)",
-      "jineritaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "jine",
       "īritaṃ"
      ],
      "sutta": 13,
@@ -13244,19 +11938,6 @@
      "pasos": [
       "no apeti",
       "n o apeti (§10)",
-      "n o peti (§13)",
-      "nopeti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "no",
-      "opeti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "no opeti",
-      "n o opeti (§10)",
       "n o peti (§13)",
       "nopeti (§11)"
      ]
@@ -13682,32 +12363,6 @@
     },
     {
      "componentes": [
-      "tatrā",
-      "ayaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tatrā ayaṃ",
-      "tatr ā ayaṃ (§10)",
-      "tatr ā yaṃ (§13)",
-      "tatrāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tatrā",
-      "āyaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tatrā āyaṃ",
-      "tatr ā āyaṃ (§10)",
-      "tatr ā yaṃ (§13)",
-      "tatrāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "tatra",
       "ayaṃ"
      ],
@@ -13731,34 +12386,6 @@
       "tatr ā ayaṃ (§10)",
       "tatr ayaṃ (§12)",
       "tatr āyaṃ (§15)",
-      "tatrāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tatra",
-      "ayaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tatra ayaṃ",
-      "tatr a ayaṃ (§10)",
-      "tatr a yaṃ (§13)",
-      "tatr ā yaṃ (§16)",
-      "tatrāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tatra",
-      "āyaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tatra āyaṃ",
-      "tatr a āyaṃ (§10)",
-      "tatr a yaṃ (§13)",
-      "tatr ā yaṃ (§16)",
       "tatrāyaṃ (§11)"
      ]
     },
@@ -13834,19 +12461,6 @@
      "pasos": [
       "itarītare ana",
       "itarītar e ana (§10)",
-      "itarītar e na (§13)",
-      "itarītarena (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "itarītare",
-      "ena"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "itarītare ena",
-      "itarītar e ena (§10)",
       "itarītar e na (§13)",
       "itarītarena (§11)"
      ]
@@ -14061,20 +12675,6 @@
     {
      "componentes": [
       "cu",
-      "ubhayaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "cu ubhayaṃ",
-      "c u ubhayaṃ (§10)",
-      "c u bhayaṃ (§13)",
-      "c ū bhayaṃ (§16)",
-      "cūbhayaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "cu",
       "bhayaṃ"
      ],
      "sutta": 25,
@@ -14163,32 +12763,6 @@
     {
      "componentes": [
       "tadā",
-      "ahaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tadā ahaṃ",
-      "tad ā ahaṃ (§10)",
-      "tad ā haṃ (§13)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tadā",
-      "āhaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tadā āhaṃ",
-      "tad ā āhaṃ (§10)",
-      "tad ā haṃ (§13)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tadā",
       "īhaṃ"
      ],
      "sutta": 13,
@@ -14238,34 +12812,6 @@
       "tad ā ahaṃ (§10)",
       "tad ahaṃ (§12)",
       "tad āhaṃ (§15)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tada",
-      "ahaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tada ahaṃ",
-      "tad a ahaṃ (§10)",
-      "tad a haṃ (§13)",
-      "tad ā haṃ (§16)",
-      "tadāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tada",
-      "āhaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tada āhaṃ",
-      "tad a āhaṃ (§10)",
-      "tad a haṃ (§13)",
-      "tad ā haṃ (§16)",
       "tadāhaṃ (§11)"
      ]
     },
@@ -14648,19 +13194,6 @@
    "lecturas": [
     {
      "componentes": [
-      "gacchāmī",
-      "iti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "gacchāmī iti",
-      "gacchām ī iti (§10)",
-      "gacchām ī ti (§13)",
-      "gacchāmīti (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "gacchāma",
       "iti"
      ],
@@ -14712,20 +13245,6 @@
       "gacchām ī iti (§10)",
       "gacchām iti (§12)",
       "gacchām īti (§15)",
-      "gacchāmīti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "gacchāmi",
-      "iti"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "gacchāmi iti",
-      "gacchām i iti (§10)",
-      "gacchām i ti (§13)",
-      "gacchām ī ti (§16)",
       "gacchāmīti (§11)"
      ]
     },
@@ -14836,19 +13355,6 @@
     {
      "componentes": [
       "ga",
-      "acchāmīti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ga acchāmīti",
-      "g a acchāmīti (§10)",
-      "g a cchāmīti (§13)",
-      "gacchāmīti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ga",
       "icchāmīti"
      ],
      "sutta": 13,
@@ -14913,19 +13419,6 @@
     },
     {
      "componentes": [
-      "gacchāmī",
-      "īti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "gacchāmī īti",
-      "gacchām ī īti (§10)",
-      "gacchām ī ti (§13)",
-      "gacchāmīti (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "gaccha",
       "ūmīti"
      ],
@@ -14982,20 +13475,6 @@
     },
     {
      "componentes": [
-      "gacchāmi",
-      "īti"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "gacchāmi īti",
-      "gacchām i īti (§10)",
-      "gacchām i ti (§13)",
-      "gacchām ī ti (§16)",
-      "gacchāmīti (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "gaccha",
       "mīti"
      ],
@@ -15041,20 +13520,6 @@
       "ga acchāmīti (§38)",
       "g a acchāmīti (§10)",
       "g acchāmīti (§12)",
-      "gacchāmīti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "gaṃ",
-      "acchāmīti"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "gaṃ acchāmīti",
-      "ga acchāmīti (§38)",
-      "g a acchāmīti (§10)",
-      "g a cchāmīti (§13)",
       "gacchāmīti (§11)"
      ]
     },
@@ -15222,32 +13687,6 @@
     },
     {
      "componentes": [
-      "bahū",
-      "upakāraṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bahū upakāraṃ",
-      "bah ū upakāraṃ (§10)",
-      "bah ū pakāraṃ (§13)",
-      "bahūpakāraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bahūpa",
-      "akāraṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bahūpa akāraṃ",
-      "bahūp a akāraṃ (§10)",
-      "bahūp a kāraṃ (§13)",
-      "bahūpakāraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "bahūpa",
       "ekāraṃ"
      ],
@@ -15294,19 +13733,6 @@
      "pasos": [
       "bahūpa ukāraṃ",
       "bahūp a ukāraṃ (§10)",
-      "bahūp a kāraṃ (§13)",
-      "bahūpakāraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bahūpa",
-      "ākāraṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bahūpa ākāraṃ",
-      "bahūp a ākāraṃ (§10)",
       "bahūp a kāraṃ (§13)",
       "bahūpakāraṃ (§11)"
      ]
@@ -15411,20 +13837,6 @@
     {
      "componentes": [
       "bahu",
-      "upakāraṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bahu upakāraṃ",
-      "bah u upakāraṃ (§10)",
-      "bah u pakāraṃ (§13)",
-      "bah ū pakāraṃ (§16)",
-      "bahūpakāraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bahu",
       "pakāraṃ"
      ],
      "sutta": 25,
@@ -15499,32 +13911,6 @@
       "sacā āyaṃ",
       "sac ā āyaṃ (§10)",
       "sac āyaṃ (§12)",
-      "sacāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sacā",
-      "ayaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sacā ayaṃ",
-      "sac ā ayaṃ (§10)",
-      "sac ā yaṃ (§13)",
-      "sacāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sacā",
-      "āyaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sacā āyaṃ",
-      "sac ā āyaṃ (§10)",
-      "sac ā yaṃ (§13)",
       "sacāyaṃ (§11)"
      ]
     },
@@ -15642,32 +14028,6 @@
       "appassutā āyaṃ",
       "appassut ā āyaṃ (§10)",
       "appassut āyaṃ (§12)",
-      "appassutāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "appassutā",
-      "ayaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "appassutā ayaṃ",
-      "appassut ā ayaṃ (§10)",
-      "appassut ā yaṃ (§13)",
-      "appassutāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "appassutā",
-      "āyaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "appassutā āyaṃ",
-      "appassut ā āyaṃ (§10)",
-      "appassut ā yaṃ (§13)",
       "appassutāyaṃ (§11)"
      ]
     },
@@ -15913,32 +14273,6 @@
     },
     {
      "componentes": [
-      "lo",
-      "okassāti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "lo okassāti",
-      "l o okassāti (§10)",
-      "l o kassāti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "loka",
-      "assāti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "loka assāti",
-      "lok a assāti (§10)",
-      "lok a ssāti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "loka",
       "issāti"
      ],
@@ -15965,32 +14299,6 @@
     },
     {
      "componentes": [
-      "loka",
-      "āssāti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "loka āssāti",
-      "lok a āssāti (§10)",
-      "lok a ssāti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokassā",
-      "ati"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "lokassā ati",
-      "lokass ā ati (§10)",
-      "lokass ā ti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "lokassā",
       "eti"
      ],
@@ -15998,19 +14306,6 @@
      "pasos": [
       "lokassā eti",
       "lokass ā eti (§10)",
-      "lokass ā ti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokassā",
-      "āti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "lokassā āti",
-      "lokass ā āti (§10)",
       "lokass ā ti (§13)",
       "lokassāti (§11)"
      ]
@@ -16059,40 +14354,12 @@
     {
      "componentes": [
       "lokassa",
-      "ati"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "lokassa ati",
-      "lokass a ati (§10)",
-      "lokass a ti (§13)",
-      "lokass ā ti (§16)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokassa",
       "eti"
      ],
      "sutta": 16,
      "pasos": [
       "lokassa eti",
       "lokass a eti (§10)",
-      "lokass a ti (§13)",
-      "lokass ā ti (§16)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokassa",
-      "āti"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "lokassa āti",
-      "lokass a āti (§10)",
       "lokass a ti (§13)",
       "lokass ā ti (§16)",
       "lokassāti (§11)"
@@ -16167,20 +14434,6 @@
     {
      "componentes": [
       "lokaṃ",
-      "assāti"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "lokaṃ assāti",
-      "loka assāti (§38)",
-      "lok a assāti (§10)",
-      "lok a ssāti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokaṃ",
       "issāti"
      ],
      "sutta": "38+13",
@@ -16202,20 +14455,6 @@
       "lokaṃ ussāti",
       "loka ussāti (§38)",
       "lok a ussāti (§10)",
-      "lok a ssāti (§13)",
-      "lokassāti (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "lokaṃ",
-      "āssāti"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "lokaṃ āssāti",
-      "loka āssāti (§38)",
-      "lok a āssāti (§10)",
       "lok a ssāti (§13)",
       "lokassāti (§11)"
      ]
@@ -17680,32 +15919,6 @@
     },
     {
      "componentes": [
-      "assakā",
-      "ayo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "assakā ayo",
-      "assak ā ayo (§10)",
-      "assak ā yo (§13)",
-      "assakāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "assakā",
-      "āyo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "assakā āyo",
-      "assak ā āyo (§10)",
-      "assak ā yo (§13)",
-      "assakāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "assaka",
       "ayo"
      ],
@@ -17743,34 +15956,6 @@
       "assak ā ayo (§10)",
       "assak ayo (§12)",
       "assak āyo (§15)",
-      "assakāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "assaka",
-      "ayo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "assaka ayo",
-      "assak a ayo (§10)",
-      "assak a yo (§13)",
-      "assak ā yo (§16)",
-      "assakāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "assaka",
-      "āyo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "assaka āyo",
-      "assak a āyo (§10)",
-      "assak a yo (§13)",
-      "assak ā yo (§16)",
       "assakāyo (§11)"
      ]
     },
@@ -17958,19 +16143,6 @@
     {
      "componentes": [
       "kva",
-      "attho"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "kva attho",
-      "kv a attho (§10)",
-      "kv a ttho (§13)",
-      "kvattho (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "kva",
       "ettho"
      ],
      "sutta": 13,
@@ -18054,20 +16226,6 @@
       "kva attho (§38)",
       "kv a attho (§10)",
       "kv attho (§12)",
-      "kvattho (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "kvaṃ",
-      "attho"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "kvaṃ attho",
-      "kva attho (§38)",
-      "kv a attho (§10)",
-      "kv a ttho (§13)",
       "kvattho (§11)"
      ]
     },
@@ -18516,32 +16674,6 @@
       "yvā",
       "ayaṃ"
      ],
-     "sutta": 13,
-     "pasos": [
-      "yvā ayaṃ",
-      "yv ā ayaṃ (§10)",
-      "yv ā yaṃ (§13)",
-      "yvāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yvā",
-      "āyaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "yvā āyaṃ",
-      "yv ā āyaṃ (§10)",
-      "yv ā yaṃ (§13)",
-      "yvāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yvā",
-      "ayaṃ"
-     ],
      "sutta": 15,
      "pasos": [
       "yvā ayaṃ",
@@ -18826,19 +16958,6 @@
     {
      "componentes": [
       "sve",
-      "eva"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sve eva",
-      "sv e eva (§10)",
-      "sv e va (§13)",
-      "sveva (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sve",
       "iva"
      ],
      "sutta": 13,
@@ -18949,20 +17068,6 @@
       "anvaddhaṃ imāsaṃ",
       "anvaddha imāsaṃ (§38)",
       "anvaddh a imāsaṃ (§10)",
-      "anvaddh a māsaṃ (§13)",
-      "anvaddhamāsaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "anvaddhaṃ",
-      "āmāsaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "anvaddhaṃ āmāsaṃ",
-      "anvaddha āmāsaṃ (§38)",
-      "anvaddh a āmāsaṃ (§10)",
       "anvaddh a māsaṃ (§13)",
       "anvaddhamāsaṃ (§11)"
      ]
@@ -19251,38 +17356,12 @@
     {
      "componentes": [
       "svā",
-      "agataṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "svā agataṃ",
-      "sv ā agataṃ (§10)",
-      "sv ā gataṃ (§13)",
-      "svāgataṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "svā",
       "ogataṃ"
      ],
      "sutta": 13,
      "pasos": [
       "svā ogataṃ",
       "sv ā ogataṃ (§10)",
-      "sv ā gataṃ (§13)",
-      "svāgataṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "svā",
-      "āgataṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "svā āgataṃ",
-      "sv ā āgataṃ (§10)",
       "sv ā gataṃ (§13)",
       "svāgataṃ (§11)"
      ]
@@ -19556,20 +17635,6 @@
     {
      "componentes": [
       "dva",
-      "akāro"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "dva akāro",
-      "dv a akāro (§10)",
-      "dv a kāro (§13)",
-      "dv ā kāro (§16)",
-      "dvākāro (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dva",
       "ekāro"
      ],
      "sutta": 16,
@@ -19590,20 +17655,6 @@
      "pasos": [
       "dva okāro",
       "dv a okāro (§10)",
-      "dv a kāro (§13)",
-      "dv ā kāro (§16)",
-      "dvākāro (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dva",
-      "ākāro"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "dva ākāro",
-      "dv a ākāro (§10)",
       "dv a kāro (§13)",
       "dv ā kāro (§16)",
       "dvākāro (§11)"
@@ -19856,19 +17907,6 @@
     {
      "componentes": [
       "bya",
-      "añjanaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "bya añjanaṃ",
-      "by a añjanaṃ (§10)",
-      "by a ñjanaṃ (§13)",
-      "byañjanaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bya",
       "iñjanaṃ"
      ],
      "sutta": 13,
@@ -19957,19 +17995,6 @@
     },
     {
      "componentes": [
-      "icca",
-      "antaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "icca antaṃ",
-      "icc a antaṃ (§10)",
-      "icc a ntaṃ (§13)",
-      "iccantaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "iti",
       "antaṃ"
      ],
@@ -20044,20 +18069,6 @@
       "icca antaṃ (§38)",
       "icc a antaṃ (§10)",
       "icc antaṃ (§12)",
-      "iccantaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "iccaṃ",
-      "antaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "iccaṃ antaṃ",
-      "icca antaṃ (§38)",
-      "icc a antaṃ (§10)",
-      "icc a ntaṃ (§13)",
       "iccantaṃ (§11)"
      ]
     },
@@ -20310,19 +18321,6 @@
     {
      "componentes": [
       "pa",
-      "accayo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "pa accayo",
-      "p a accayo (§10)",
-      "p a ccayo (§13)",
-      "paccayo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "pa",
       "uccayo"
      ],
      "sutta": 13,
@@ -20330,32 +18328,6 @@
       "pa uccayo",
       "p a uccayo (§10)",
       "p a ccayo (§13)",
-      "paccayo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "pacca",
-      "ayo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "pacca ayo",
-      "pacc a ayo (§10)",
-      "pacc a yo (§13)",
-      "paccayo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "pacca",
-      "āyo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "pacca āyo",
-      "pacc a āyo (§10)",
-      "pacc a yo (§13)",
       "paccayo (§11)"
      ]
     },
@@ -20456,20 +18428,6 @@
     {
      "componentes": [
       "paṃ",
-      "accayo"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "paṃ accayo",
-      "pa accayo (§38)",
-      "p a accayo (§10)",
-      "p a ccayo (§13)",
-      "paccayo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "paṃ",
       "uccayo"
      ],
      "sutta": "38+13",
@@ -20529,19 +18487,6 @@
       "iccā assa",
       "icc ā assa (§10)",
       "icc assa (§12)",
-      "iccassa (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "icca",
-      "assa"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "icca assa",
-      "icc a assa (§10)",
-      "icc a ssa (§13)",
       "iccassa (§11)"
      ]
     },
@@ -20621,20 +18566,6 @@
       "icca assa (§38)",
       "icc a assa (§10)",
       "icc assa (§12)",
-      "iccassa (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "iccaṃ",
-      "assa"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "iccaṃ assa",
-      "icca assa (§38)",
-      "icc a assa (§10)",
-      "icc a ssa (§13)",
       "iccassa (§11)"
      ]
     },
@@ -20757,19 +18688,6 @@
     {
      "componentes": [
       "abbhu",
-      "uggato"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "abbhu uggato",
-      "abbh u uggato (§10)",
-      "abbh u ggato (§13)",
-      "abbhuggato (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "abbhu",
       "gato"
      ],
      "sutta": 28,
@@ -20849,20 +18767,6 @@
     },
     {
      "componentes": [
-      "abbhuṃ",
-      "uggato"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "abbhuṃ uggato",
-      "abbhu uggato (§38)",
-      "abbh u uggato (§10)",
-      "abbh u ggato (§13)",
-      "abbhuggato (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "abhi",
       "uggato"
      ],
@@ -20934,19 +18838,6 @@
       "abbhā okāso",
       "abbh ā okāso (§10)",
       "abbh okāso (§12)",
-      "abbhokāso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "abbho",
-      "okāso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "abbho okāso",
-      "abbh o okāso (§10)",
-      "abbh o kāso (§13)",
       "abbhokāso (§11)"
      ]
     },
@@ -21144,32 +19035,6 @@
       "ajjhā agamā",
       "ajjh ā agamā (§10)",
       "ajjh agamā (§12)",
-      "ajjhagamā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ajjha",
-      "agamā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ajjha agamā",
-      "ajjh a agamā (§10)",
-      "ajjh a gamā (§13)",
-      "ajjhagamā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ajjha",
-      "āgamā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ajjha āgamā",
-      "ajjh a āgamā (§10)",
-      "ajjh a gamā (§13)",
       "ajjhagamā (§11)"
      ]
     },
@@ -21812,19 +19677,6 @@
     },
     {
      "componentes": [
-      "nayi",
-      "idaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "nayi idaṃ",
-      "nay i idaṃ (§10)",
-      "nay i daṃ (§13)",
-      "nayidaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "nā",
       "yidaṃ"
      ],
@@ -22267,32 +20119,6 @@
     },
     {
      "componentes": [
-      "viyā",
-      "akāsi"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "viyā akāsi",
-      "viy ā akāsi (§10)",
-      "viy ā kāsi (§13)",
-      "viyākāsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "viyā",
-      "ākāsi"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "viyā ākāsi",
-      "viy ā ākāsi (§10)",
-      "viy ā kāsi (§13)",
-      "viyākāsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "viya",
       "akāsi"
      ],
@@ -22330,34 +20156,6 @@
       "viy ā akāsi (§10)",
       "viy akāsi (§12)",
       "viy ākāsi (§15)",
-      "viyākāsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "viya",
-      "akāsi"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "viya akāsi",
-      "viy a akāsi (§10)",
-      "viy a kāsi (§13)",
-      "viy ā kāsi (§16)",
-      "viyākāsi (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "viya",
-      "ākāsi"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "viya ākāsi",
-      "viy a ākāsi (§10)",
-      "viy a kāsi (§13)",
-      "viy ā kāsi (§16)",
       "viyākāsi (§11)"
      ]
     },
@@ -22530,20 +20328,6 @@
       "pariya anto (§38)",
       "pariy a anto (§10)",
       "pariy anto (§12)",
-      "pariyanto (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "pariyaṃ",
-      "anto"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "pariyaṃ anto",
-      "pariya anto (§38)",
-      "pariy a anto (§10)",
-      "pariy a nto (§13)",
       "pariyanto (§11)"
      ]
     },
@@ -23021,19 +20805,6 @@
     {
      "componentes": [
       "uda",
-      "aggo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "uda aggo",
-      "ud a aggo (§10)",
-      "ud a ggo (§13)",
-      "udaggo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "uda",
       "uggo"
      ],
      "sutta": 13,
@@ -23219,19 +20990,6 @@
       "tasmāti iha",
       "tasmāt i iha (§10)",
       "tasmāt iha (§12)",
-      "tasmātiha (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tasmāti",
-      "iha"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tasmāti iha",
-      "tasmāt i iha (§10)",
-      "tasmāt i ha (§13)",
       "tasmātiha (§11)"
      ]
     },
@@ -23624,19 +21382,6 @@
       "tyāss amittā (§12)",
       "tyāssamittā (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "tyāssa",
-      "amittā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tyāssa amittā",
-      "tyāss a amittā (§10)",
-      "tyāss a mittā (§13)",
-      "tyāssamittā (§11)"
-     ]
     }
    ]
   },
@@ -23725,32 +21470,6 @@
       "yā vāyaṃ",
       "y ā vāyaṃ (§10)",
       "y vāyaṃ (§12)",
-      "yvāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yvā",
-      "ayaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "yvā ayaṃ",
-      "yv ā ayaṃ (§10)",
-      "yv ā yaṃ (§13)",
-      "yvāyaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yvā",
-      "āyaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "yvā āyaṃ",
-      "yv ā āyaṃ (§10)",
-      "yv ā yaṃ (§13)",
       "yvāyaṃ (§11)"
      ]
     },
@@ -23914,19 +21633,6 @@
     },
     {
      "componentes": [
-      "ma",
-      "adhuvā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ma adhuvā",
-      "m a adhuvā (§10)",
-      "m a dhuvā (§13)",
-      "madhuvā (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "madhu",
       "avā"
      ],
@@ -24029,20 +21735,6 @@
       "madhu āvā (§38)",
       "madh u āvā (§10)",
       "madh u vā (§13)",
-      "madhuvā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "maṃ",
-      "adhuvā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "maṃ adhuvā",
-      "ma adhuvā (§38)",
-      "m a adhuvā (§10)",
-      "m a dhuvā (§13)",
       "madhuvā (§11)"
      ]
     },
@@ -24190,20 +21882,6 @@
       "bhovādino āma",
       "bhovādin o āma (§10)",
       "bhovādin āma (§12)",
-      "bhovādināma (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bhovādina",
-      "āma"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "bhovādina āma",
-      "bhovādin a āma (§10)",
-      "bhovādin a ma (§13)",
-      "bhovādin ā ma (§16)",
       "bhovādināma (§11)"
      ]
     },
@@ -24545,19 +22223,6 @@
     },
     {
      "componentes": [
-      "esa",
-      "adhammo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "esa adhammo",
-      "es a adhammo (§10)",
-      "es a dhammo (§13)",
-      "esadhammo (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "esā",
       "dhammo"
      ],
@@ -24607,20 +22272,6 @@
       "esi adhammo (§38)",
       "es i adhammo (§10)",
       "es adhammo (§12)",
-      "esadhammo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "esaṃ",
-      "adhammo"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "esaṃ adhammo",
-      "esa adhammo (§38)",
-      "es a adhammo (§10)",
-      "es a dhammo (§13)",
       "esadhammo (§11)"
      ]
     },
@@ -24766,19 +22417,6 @@
     },
     {
      "componentes": [
-      "sa",
-      "asīlavā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sa asīlavā",
-      "s a asīlavā (§10)",
-      "s a sīlavā (§13)",
-      "sasīlavā (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "sā",
       "sīlavā"
      ],
@@ -24846,20 +22484,6 @@
     {
      "componentes": [
       "sasīlaṃ",
-      "avā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "sasīlaṃ avā",
-      "sasīla avā (§38)",
-      "sasīl a avā (§10)",
-      "sasīl a vā (§13)",
-      "sasīlavā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sasīlaṃ",
       "evā"
      ],
      "sutta": "38+13",
@@ -24868,34 +22492,6 @@
       "sasīla evā (§38)",
       "sasīl a evā (§10)",
       "sasīl a vā (§13)",
-      "sasīlavā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sasīlaṃ",
-      "āvā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "sasīlaṃ āvā",
-      "sasīla āvā (§38)",
-      "sasīl a āvā (§10)",
-      "sasīl a vā (§13)",
-      "sasīlavā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "saṃ",
-      "asīlavā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "saṃ asīlavā",
-      "sa asīlavā (§38)",
-      "s a asīlavā (§10)",
-      "s a sīlavā (§13)",
       "sasīlavā (§11)"
      ]
     },
@@ -25025,19 +22621,6 @@
     },
     {
      "componentes": [
-      "suppa",
-      "āsanno"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "suppa āsanno",
-      "supp a āsanno (§10)",
-      "supp a sanno (§13)",
-      "suppasanno (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "su",
       "pasanno"
      ],
@@ -25045,20 +22628,6 @@
      "pasos": [
       "su pasanno",
       "su ppasanno (§28)",
-      "suppasanno (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "suppaṃ",
-      "āsanno"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "suppaṃ āsanno",
-      "suppa āsanno (§38)",
-      "supp a āsanno (§10)",
-      "supp a sanno (§13)",
       "suppasanno (§11)"
      ]
     },
@@ -25466,34 +23035,6 @@
     {
      "componentes": [
       "ratanattaṃ",
-      "ayaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "ratanattaṃ ayaṃ",
-      "ratanatta ayaṃ (§38)",
-      "ratanatt a ayaṃ (§10)",
-      "ratanatt a yaṃ (§13)",
-      "ratanattayaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ratanattaṃ",
-      "āyaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "ratanattaṃ āyaṃ",
-      "ratanatta āyaṃ (§38)",
-      "ratanatt a āyaṃ (§10)",
-      "ratanatt a yaṃ (§13)",
-      "ratanattayaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ratanattaṃ",
       "yaṃ"
      ],
      "sutta": 39,
@@ -25614,20 +23155,6 @@
       "dukka araṃ (§38)",
       "dukk a araṃ (§10)",
       "dukk araṃ (§12)",
-      "dukkaraṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dukkaṃ",
-      "araṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "dukkaṃ araṃ",
-      "dukka araṃ (§38)",
-      "dukk a araṃ (§10)",
-      "dukk a raṃ (§13)",
       "dukkaraṃ (§11)"
      ]
     },
@@ -25941,32 +23468,6 @@
     },
     {
      "componentes": [
-      "aññā",
-      "ayo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "aññā ayo",
-      "aññ ā ayo (§10)",
-      "aññ ā yo (§13)",
-      "aññāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "aññā",
-      "āyo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "aññā āyo",
-      "aññ ā āyo (§10)",
-      "aññ ā yo (§13)",
-      "aññāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "añña",
       "ayo"
      ],
@@ -26018,34 +23519,6 @@
       "aññ ā ayo (§10)",
       "aññ ayo (§12)",
       "aññ āyo (§15)",
-      "aññāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "añña",
-      "ayo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "añña ayo",
-      "aññ a ayo (§10)",
-      "aññ a yo (§13)",
-      "aññ ā yo (§16)",
-      "aññāyo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "añña",
-      "āyo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "añña āyo",
-      "aññ a āyo (§10)",
-      "aññ a yo (§13)",
-      "aññ ā yo (§16)",
       "aññāyo (§11)"
      ]
     },
@@ -26181,19 +23654,6 @@
     },
     {
      "componentes": [
-      "ya",
-      "ajjevaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ya ajjevaṃ",
-      "y a ajjevaṃ (§10)",
-      "y a jjevaṃ (§13)",
-      "yajjevaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "yaṃ",
       "ajjevaṃ"
      ],
@@ -26203,20 +23663,6 @@
       "ya ajjevaṃ (§38)",
       "y a ajjevaṃ (§10)",
       "y ajjevaṃ (§12)",
-      "yajjevaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yaṃ",
-      "ajjevaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "yaṃ ajjevaṃ",
-      "ya ajjevaṃ (§38)",
-      "y a ajjevaṃ (§10)",
-      "y a jjevaṃ (§13)",
       "yajjevaṃ (§11)"
      ]
     }
@@ -26281,19 +23727,6 @@
       "appā ekacce",
       "app ā ekacce (§10)",
       "app ekacce (§12)",
-      "appekacce (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "appe",
-      "ekacce"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "appe ekacce",
-      "app e ekacce (§10)",
-      "app e kacce (§13)",
       "appekacce (§11)"
      ]
     },
@@ -26568,40 +24001,12 @@
     {
      "componentes": [
       "uddha",
-      "aro"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "uddha aro",
-      "uddh a aro (§10)",
-      "uddh a ro (§13)",
-      "uddh ā ro (§16)",
-      "uddhāro (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "uddha",
       "uro"
      ],
      "sutta": 16,
      "pasos": [
       "uddha uro",
       "uddh a uro (§10)",
-      "uddh a ro (§13)",
-      "uddh ā ro (§16)",
-      "uddhāro (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "uddha",
-      "āro"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "uddha āro",
-      "uddh a āro (§10)",
       "uddh a ro (§13)",
       "uddh ā ro (§16)",
       "uddhāro (§11)"
@@ -26751,20 +24156,6 @@
       "bojjha aṅgo (§38)",
       "bojjh a aṅgo (§10)",
       "bojjh aṅgo (§12)",
-      "bojjhaṅgo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "bojjhaṃ",
-      "aṅgo"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "bojjhaṃ aṅgo",
-      "bojjha aṅgo (§38)",
-      "bojjh a aṅgo (§10)",
-      "bojjh a ṅgo (§13)",
       "bojjhaṅgo (§11)"
      ]
     }
@@ -26925,32 +24316,6 @@
       "taṇhākkha ayo",
       "taṇhākkh a ayo (§10)",
       "taṇhākkh ayo (§12)",
-      "taṇhākkhayo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "taṇhākkha",
-      "ayo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "taṇhākkha ayo",
-      "taṇhākkh a ayo (§10)",
-      "taṇhākkh a yo (§13)",
-      "taṇhākkhayo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "taṇhākkha",
-      "āyo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "taṇhākkha āyo",
-      "taṇhākkh a āyo (§10)",
-      "taṇhākkh a yo (§13)",
       "taṇhākkhayo (§11)"
      ]
     },
@@ -27270,20 +24635,6 @@
       "paṭ aggi (§12)",
       "paṭaggi (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "paṭaṃ",
-      "aggi"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "paṭaṃ aggi",
-      "paṭa aggi (§38)",
-      "paṭ a aggi (§10)",
-      "paṭ a ggi (§13)",
-      "paṭaggi (§11)"
-     ]
     }
    ]
   },
@@ -27465,38 +24816,12 @@
     {
      "componentes": [
       "okā",
-      "aso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "okā aso",
-      "ok ā aso (§10)",
-      "ok ā so (§13)",
-      "okāso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "okā",
       "eso"
      ],
      "sutta": 13,
      "pasos": [
       "okā eso",
       "ok ā eso (§10)",
-      "ok ā so (§13)",
-      "okāso (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "okā",
-      "āso"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "okā āso",
-      "ok ā āso (§10)",
       "ok ā so (§13)",
       "okāso (§11)"
      ]
@@ -27691,38 +25016,12 @@
     {
      "componentes": [
       "ovada",
-      "ati"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ovada ati",
-      "ovad a ati (§10)",
-      "ovad a ti (§13)",
-      "ovadati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ovada",
       "eti"
      ],
      "sutta": 13,
      "pasos": [
       "ovada eti",
       "ovad a eti (§10)",
-      "ovad a ti (§13)",
-      "ovadati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ovada",
-      "āti"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ovada āti",
-      "ovad a āti (§10)",
       "ovad a ti (§13)",
       "ovadati (§11)"
      ]
@@ -27783,20 +25082,6 @@
     {
      "componentes": [
       "ovadaṃ",
-      "ati"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "ovadaṃ ati",
-      "ovada ati (§38)",
-      "ovad a ati (§10)",
-      "ovad a ti (§13)",
-      "ovadati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ovadaṃ",
       "eti"
      ],
      "sutta": "38+13",
@@ -27804,20 +25089,6 @@
       "ovadaṃ eti",
       "ovada eti (§38)",
       "ovad a eti (§10)",
-      "ovad a ti (§13)",
-      "ovadati (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ovadaṃ",
-      "āti"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "ovadaṃ āti",
-      "ovada āti (§38)",
-      "ovad a āti (§10)",
       "ovad a ti (§13)",
       "ovadati (§11)"
      ]
@@ -27927,19 +25198,6 @@
     {
      "componentes": [
       "ugga",
-      "ate"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ugga ate",
-      "ugg a ate (§10)",
-      "ugg a te (§13)",
-      "uggate (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ugga",
       "ete"
      ],
      "sutta": 13,
@@ -27973,20 +25231,6 @@
       "ugga ate (§38)",
       "ugg a ate (§10)",
       "ugg ate (§12)",
-      "uggate (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "uggaṃ",
-      "ate"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "uggaṃ ate",
-      "ugga ate (§38)",
-      "ugg a ate (§10)",
-      "ugg a te (§13)",
       "uggate (§11)"
      ]
     },
@@ -28481,19 +25725,6 @@
     },
     {
      "componentes": [
-      "saṅga",
-      "aho"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "saṅga aho",
-      "saṅg a aho (§10)",
-      "saṅg a ho (§13)",
-      "saṅgaho (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "saṅgaṃ",
       "aho"
      ],
@@ -28503,20 +25734,6 @@
       "saṅga aho (§38)",
       "saṅg a aho (§10)",
       "saṅg aho (§12)",
-      "saṅgaho (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "saṅgaṃ",
-      "aho"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "saṅgaṃ aho",
-      "saṅga aho (§38)",
-      "saṅg a aho (§10)",
-      "saṅg a ho (§13)",
       "saṅgaho (§11)"
      ]
     },
@@ -28804,32 +26021,6 @@
     {
      "componentes": [
       "dha",
-      "ammañca"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dha ammañca",
-      "dh a ammañca (§10)",
-      "dh a mmañca (§13)",
-      "dhammañca (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhamma",
-      "añca"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "dhamma añca",
-      "dhamm a añca (§10)",
-      "dhamm a ñca (§13)",
-      "dhammañca (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dha",
       "mañca"
      ],
      "sutta": 28,
@@ -28889,20 +26080,6 @@
       "dhammi añca (§38)",
       "dhamm i añca (§10)",
       "dhamm añca (§12)",
-      "dhammañca (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "dhammaṃ",
-      "añca"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "dhammaṃ añca",
-      "dhamma añca (§38)",
-      "dhamm a añca (§10)",
-      "dhamm a ñca (§13)",
       "dhammañca (§11)"
      ]
     },
@@ -29414,20 +26591,6 @@
       "sall akkhaṇā (§12)",
       "sallakkhaṇā (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "sallaṃ",
-      "akkhaṇā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "sallaṃ akkhaṇā",
-      "salla akkhaṇā (§38)",
-      "sall a akkhaṇā (§10)",
-      "sall a kkhaṇā (§13)",
-      "sallakkhaṇā (§11)"
-     ]
     }
    ]
   },
@@ -29669,19 +26832,6 @@
     },
     {
      "componentes": [
-      "paccatta",
-      "aññeva"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "paccatta aññeva",
-      "paccatt a aññeva (§10)",
-      "paccatt a ññeva (§13)",
-      "paccattaññeva (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "pacca",
       "taññeva"
      ],
@@ -29740,20 +26890,6 @@
       "paccatta aññeva (§38)",
       "paccatt a aññeva (§10)",
       "paccatt aññeva (§12)",
-      "paccattaññeva (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "paccattaṃ",
-      "aññeva"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "paccattaṃ aññeva",
-      "paccatta aññeva (§38)",
-      "paccatt a aññeva (§10)",
-      "paccatt a ññeva (§13)",
       "paccattaññeva (§11)"
      ]
     },
@@ -29887,19 +27023,6 @@
     },
     {
      "componentes": [
-      "ta",
-      "aññeva"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ta aññeva",
-      "t a aññeva (§10)",
-      "t a ññeva (§13)",
-      "taññeva (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "tā",
       "ññeva"
      ],
@@ -29961,20 +27084,6 @@
       "tu aññeva (§38)",
       "t u aññeva (§10)",
       "t aññeva (§12)",
-      "taññeva (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "taṃ",
-      "aññeva"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "taṃ aññeva",
-      "ta aññeva (§38)",
-      "t a aññeva (§10)",
-      "t a ññeva (§13)",
       "taññeva (§11)"
      ]
     },
@@ -30247,19 +27356,6 @@
     },
     {
      "componentes": [
-      "sa",
-      "aññato"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sa aññato",
-      "s a aññato (§10)",
-      "s a ññato (§13)",
-      "saññato (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "saññā",
       "to"
      ],
@@ -30327,20 +27423,6 @@
     {
      "componentes": [
       "saññaṃ",
-      "ato"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "saññaṃ ato",
-      "sañña ato (§38)",
-      "saññ a ato (§10)",
-      "saññ a to (§13)",
-      "saññato (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "saññaṃ",
       "eto"
      ],
      "sutta": "38+13",
@@ -30377,20 +27459,6 @@
       "sañña uto (§38)",
       "saññ a uto (§10)",
       "saññ a to (§13)",
-      "saññato (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "saṃ",
-      "aññato"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "saṃ aññato",
-      "sa aññato (§38)",
-      "s a aññato (§10)",
-      "s a ññato (§13)",
       "saññato (§11)"
      ]
     },
@@ -30623,32 +27691,6 @@
     {
      "componentes": [
       "tama",
-      "ahaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tama ahaṃ",
-      "tam a ahaṃ (§10)",
-      "tam a haṃ (§13)",
-      "tamahaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tama",
-      "āhaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tama āhaṃ",
-      "tam a āhaṃ (§10)",
-      "tam a haṃ (§13)",
-      "tamahaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tama",
       "īhaṃ"
      ],
      "sutta": 13,
@@ -30739,34 +27781,6 @@
     {
      "componentes": [
       "tamaṃ",
-      "ahaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "tamaṃ ahaṃ",
-      "tama ahaṃ (§38)",
-      "tam a ahaṃ (§10)",
-      "tam a haṃ (§13)",
-      "tamahaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tamaṃ",
-      "āhaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "tamaṃ āhaṃ",
-      "tama āhaṃ (§38)",
-      "tam a āhaṃ (§10)",
-      "tam a haṃ (§13)",
-      "tamahaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tamaṃ",
       "īhaṃ"
      ],
      "sutta": "38+13",
@@ -30838,32 +27852,6 @@
       "yamā āhu",
       "yam ā āhu (§10)",
       "yam āhu (§12)",
-      "yamāhu (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yamā",
-      "ahu"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "yamā ahu",
-      "yam ā ahu (§10)",
-      "yam ā hu (§13)",
-      "yamāhu (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "yamā",
-      "āhu"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "yamā āhu",
-      "yam ā āhu (§10)",
-      "yam ā hu (§13)",
       "yamāhu (§11)"
      ]
     },
@@ -31173,19 +28161,6 @@
     },
     {
      "componentes": [
-      "yada",
-      "aniccaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "yada aniccaṃ",
-      "yad a aniccaṃ (§10)",
-      "yad a niccaṃ (§13)",
-      "yadaniccaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "yaṃ",
       "aniccaṃ"
      ],
@@ -31326,19 +28301,6 @@
     {
      "componentes": [
       "tada",
-      "anattā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tada anattā",
-      "tad a anattā (§10)",
-      "tad a nattā (§13)",
-      "tadanattā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tada",
       "ūnattā"
      ],
      "sutta": 13,
@@ -31346,19 +28308,6 @@
       "tada ūnattā",
       "tad a ūnattā (§10)",
       "tad a nattā (§13)",
-      "tadanattā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tadana",
-      "attā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "tadana attā",
-      "tadan a attā (§10)",
-      "tadan a ttā (§13)",
       "tadanattā (§11)"
      ]
     },
@@ -31497,20 +28446,6 @@
       "tada anattā (§38)",
       "tad a anattā (§10)",
       "tad anattā (§12)",
-      "tadanattā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tadaṃ",
-      "anattā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "tadaṃ anattā",
-      "tada anattā (§38)",
-      "tad a anattā (§10)",
-      "tad a nattā (§13)",
       "tadanattā (§11)"
      ]
     },
@@ -31818,34 +28753,6 @@
     {
      "componentes": [
       "tāsa",
-      "ahaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tāsa ahaṃ",
-      "tās a ahaṃ (§10)",
-      "tās a haṃ (§13)",
-      "tās ā haṃ (§16)",
-      "tāsāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tāsa",
-      "āhaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "tāsa āhaṃ",
-      "tās a āhaṃ (§10)",
-      "tās a haṃ (§13)",
-      "tās ā haṃ (§16)",
-      "tāsāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "tāsa",
       "īhaṃ"
      ],
      "sutta": 16,
@@ -31951,32 +28858,6 @@
     {
      "componentes": [
       "evā",
-      "ahaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "evā ahaṃ",
-      "ev ā ahaṃ (§10)",
-      "ev ā haṃ (§13)",
-      "evāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "evā",
-      "āhaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "evā āhaṃ",
-      "ev ā āhaṃ (§10)",
-      "ev ā haṃ (§13)",
-      "evāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "evā",
       "īhaṃ"
      ],
      "sutta": 13,
@@ -32012,34 +28893,6 @@
       "ev ā ahaṃ (§10)",
       "ev ahaṃ (§12)",
       "ev āhaṃ (§15)",
-      "evāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "eva",
-      "ahaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "eva ahaṃ",
-      "ev a ahaṃ (§10)",
-      "ev a haṃ (§13)",
-      "ev ā haṃ (§16)",
-      "evāhaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "eva",
-      "āhaṃ"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "eva āhaṃ",
-      "ev a āhaṃ (§10)",
-      "ev a haṃ (§13)",
-      "ev ā haṃ (§16)",
       "evāhaṃ (§11)"
      ]
     },
@@ -32335,19 +29188,6 @@
     },
     {
      "componentes": [
-      "ariyasaccāna",
-      "adassanaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ariyasaccāna adassanaṃ",
-      "ariyasaccān a adassanaṃ (§10)",
-      "ariyasaccān a dassanaṃ (§13)",
-      "ariyasaccānadassanaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "ariyasaccā",
       "adassanaṃ"
      ],
@@ -32369,20 +29209,6 @@
       "ariyasaccāna adassanaṃ (§38)",
       "ariyasaccān a adassanaṃ (§10)",
       "ariyasaccān adassanaṃ (§12)",
-      "ariyasaccānadassanaṃ (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "ariyasaccānaṃ",
-      "adassanaṃ"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "ariyasaccānaṃ adassanaṃ",
-      "ariyasaccāna adassanaṃ (§38)",
-      "ariyasaccān a adassanaṃ (§10)",
-      "ariyasaccān a dassanaṃ (§13)",
       "ariyasaccānadassanaṃ (§11)"
      ]
     },
@@ -32564,32 +29390,6 @@
     },
     {
      "componentes": [
-      "sā",
-      "aratto"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sā aratto",
-      "s ā aratto (§10)",
-      "s ā ratto (§13)",
-      "sāratto (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sāra",
-      "atto"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sāra atto",
-      "sār a atto (§10)",
-      "sār a tto (§13)",
-      "sāratto (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "sāra",
       "etto"
      ],
@@ -32729,20 +29529,6 @@
     {
      "componentes": [
       "sa",
-      "aratto"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "sa aratto",
-      "s a aratto (§10)",
-      "s a ratto (§13)",
-      "s ā ratto (§16)",
-      "sāratto (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sa",
       "ratto"
      ],
      "sutta": 25,
@@ -32833,20 +29619,6 @@
     {
      "componentes": [
       "sāraṃ",
-      "atto"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "sāraṃ atto",
-      "sāra atto (§38)",
-      "sār a atto (§10)",
-      "sār a tto (§13)",
-      "sāratto (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sāraṃ",
       "etto"
      ],
      "sutta": "38+13",
@@ -32884,19 +29656,6 @@
     "saṃrāgo"
    ],
    "lecturas": [
-    {
-     "componentes": [
-      "sā",
-      "arāgo"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "sā arāgo",
-      "s ā arāgo (§10)",
-      "s ā rāgo (§13)",
-      "sārāgo (§11)"
-     ]
-    },
     {
      "componentes": [
       "sa",
@@ -33006,20 +29765,6 @@
       "s ū arāgo (§10)",
       "s arāgo (§12)",
       "s ārāgo (§15)",
-      "sārāgo (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "sa",
-      "arāgo"
-     ],
-     "sutta": 16,
-     "pasos": [
-      "sa arāgo",
-      "s a arāgo (§10)",
-      "s a rāgo (§13)",
-      "s ā rāgo (§16)",
       "sārāgo (§11)"
      ]
     },
@@ -33490,19 +30235,6 @@
     },
     {
      "componentes": [
-      "eva",
-      "aṃsa"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "eva aṃsa",
-      "ev a aṃsa (§10)",
-      "ev a ṃsa (§13)",
-      "evaṃsa (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "evṃ",
       "aṃsa"
      ],
@@ -33524,20 +30256,6 @@
       "eva aṃsa (§38)",
       "ev a aṃsa (§10)",
       "ev aṃsa (§12)",
-      "evaṃsa (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "evaṃ",
-      "aṃsa"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "evaṃ aṃsa",
-      "eva aṃsa (§38)",
-      "ev a aṃsa (§10)",
-      "ev a ṃsa (§13)",
       "evaṃsa (§11)"
      ]
     },
@@ -33681,19 +30399,6 @@
     },
     {
      "componentes": [
-      "puppha",
-      "aṃsā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "puppha aṃsā",
-      "pupph a aṃsā (§10)",
-      "pupph a ṃsā (§13)",
-      "pupphaṃsā (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "pupphaṃ",
       "aṃsā"
      ],
@@ -33703,20 +30408,6 @@
       "puppha aṃsā (§38)",
       "pupph a aṃsā (§10)",
       "pupph aṃsā (§12)",
-      "pupphaṃsā (§11)"
-     ]
-    },
-    {
-     "componentes": [
-      "pupphaṃ",
-      "aṃsā"
-     ],
-     "sutta": "38+13",
-     "pasos": [
-      "pupphaṃ aṃsā",
-      "puppha aṃsā (§38)",
-      "pupph a aṃsā (§10)",
-      "pupph a ṃsā (§13)",
       "pupphaṃsā (§11)"
      ]
     },
@@ -33933,19 +30624,6 @@
       "c i daṃ (§13)",
       "cidaṃ (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "ci",
-      "idaṃ"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ci idaṃ",
-      "c i idaṃ (§10)",
-      "c i daṃ (§13)",
-      "cidaṃ (§11)"
-     ]
     }
    ]
   },
@@ -34061,19 +30739,6 @@
     },
     {
      "componentes": [
-      "ana",
-      "abhineyya"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "ana abhineyya",
-      "an a abhineyya (§10)",
-      "an a bhineyya (§13)",
-      "anabhineyya (§11)"
-     ]
-    },
-    {
-     "componentes": [
       "anabhi",
       "āneyya"
      ],
@@ -34182,19 +30847,6 @@
       "āyasm āānando (§12)",
       "āyasmāānando (§11)"
      ]
-    },
-    {
-     "componentes": [
-      "āyasmā",
-      "āānando"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "āyasmā āānando",
-      "āyasm ā āānando (§10)",
-      "āyasm ā ānando (§13)",
-      "āyasmāānando (§11)"
-     ]
     }
    ]
   },
@@ -34265,19 +30917,6 @@
     "manopubbaṅgamādhammā"
    ],
    "lecturas": [
-    {
-     "componentes": [
-      "manopubbaṅgamā",
-      "adhammā"
-     ],
-     "sutta": 13,
-     "pasos": [
-      "manopubbaṅgamā adhammā",
-      "manopubbaṅgam ā adhammā (§10)",
-      "manopubbaṅgam ā dhammā (§13)",
-      "manopubbaṅgamādhammā (§11)"
-     ]
-    },
     {
      "componentes": [
       "manopubbaṅgamā",

@@ -460,6 +460,24 @@ function licenciaSustitucion(a, b, n) {
     return _sustitucion(a, b, n) !== null;
 }
 
+const CLASE_VOCAL = { "a": "a", "ā": "a", "i": "i", "ī": "i",
+                      "u": "u", "ū": "u", "e": "e", "o": "o" };
+
+function licenciaElisionSiguiente(a, b) {
+    // §13 es «Vā paro asarūpā» — la siguiente se elide tras vocal DISÍMIL.
+    // Con vocales de la misma clase (a/ā, i/ī, u/ū, e, o) manda §12 (+§15):
+    // adjudicación del IEBH (2026-08-29, observación sobre assasāmīti). La
+    // propia edición concuerda: tadāhaṃ, migīva y vadhūdaraṃ están bajo
+    // «una vocal que precede a otra se elide». Espejo exacto de
+    // `licencia_elision_siguiente` en operaciones.py.
+    const prev = a && a.endsWith("ṃ") ? a.slice(0, -1) : a;   // «38+13»
+    if (!prev || !b) return true;
+    const u = prev[prev.length - 1], v = b[0];
+    if (u in CLASE_VOCAL && v in CLASE_VOCAL
+            && CLASE_VOCAL[u] === CLASE_VOCAL[v]) return false;
+    return true;
+}
+
 function _cadenaSustAlarga(a, b, F, n) {
     // §17/§18/§21 y después §25. Del banco: «me ayaṃ · m e ayaṃ (§10) ·
     // m y ayaṃ (§17) · m y āyaṃ (§25) · myāyaṃ (§11)».
@@ -532,5 +550,5 @@ const TODAS = new Map([
 module.exports = {
     VOCALES, LARGA, CORTA, VAGGA, SEGUNDA_CUARTA, CONJUNTAS, GRUPO_MANA,
     VOCAL_SUST, LETRA_SUST, TODAS,
-    primeraLetra, licenciaSustitucion, cierre, sep10, cot,
+    primeraLetra, licenciaSustitucion, licenciaElisionSiguiente, cierre, sep10, cot,
 };

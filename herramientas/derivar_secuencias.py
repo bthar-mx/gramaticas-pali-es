@@ -77,9 +77,25 @@ def d_elide_anterior(a, b, atestiguada, n):
                   raiz + b, atestiguada)
 
 
+CLASE_VOCAL = {"a": "a", "ā": "a", "i": "i", "ī": "i", "u": "u", "ū": "u",
+               "e": "e", "o": "o"}
+
+
+def _asarupa(a, b):
+    """§13 es «Vā paro asarūpā»: la siguiente se elide tras vocal DISÍMIL.
+    Con vocales de la misma clase (a/ā, i/ī, u/ū) manda §12 (+§15) —
+    adjudicación del IEBH, 2026-08-29; la propia edición pone tadāhaṃ,
+    migīva y vadhūdaraṃ bajo «una vocal que precede a otra se elide»."""
+    u, v = a[-1], b[0]
+    return not (u in CLASE_VOCAL and v in CLASE_VOCAL
+                and CLASE_VOCAL[u] == CLASE_VOCAL[v])
+
+
 def d_elide_siguiente(a, b, atestiguada, n):
     """§13: se elide la vocal inicial de la segunda voz."""
     if not a or a[-1] not in VOCALES or not b or b[0] not in VOCALES:
+        return None
+    if not _asarupa(a, b):
         return None
     raiz, v = a[:-1], a[-1]
     if not raiz or len(b) < 2:
@@ -109,6 +125,8 @@ def d_alarga_anterior(a, b, atestiguada, n):
     """§16: elidida la siguiente, la anterior se alarga."""
     if not a or a[-1] not in VOCALES or not b or b[0] not in VOCALES:
         return None
+    if not _asarupa(a, b):
+        return None                    # su §13 interno pide vocal disímil
     raiz, v = a[:-1], a[-1]
     if not raiz or v not in LARGA or len(b) < 2:
         return None
