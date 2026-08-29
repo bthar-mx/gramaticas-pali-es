@@ -538,7 +538,7 @@ const TXT = {
     sin_red: 'sin conexión: use «Exportar .md»',
     a_comp: 'Escriba los componentes — con «+» o con espacios: voz + voz',
     a_nota: 'Primero dé el veredicto; la explicación viaja con él.',
-    c_borrar: n => `¿Borrar los ${n} veredictos guardados en este navegador?`,
+    c_borrar: n => `¿Borrar los ${n} veredictos y las observaciones guardados en este navegador?`,
   },
   en: {
     posible: 'possible signal', adjudicado: 'adjudicated sandhi', firme: 'firm prediction',
@@ -590,7 +590,7 @@ const TXT = {
     sin_red: 'offline: use “Export .md”',
     a_comp: 'Type the components — with “+” or with spaces: word + word',
     a_nota: 'Give the verdict first; the explanation travels with it.',
-    c_borrar: n => `Delete the ${n} verdicts saved in this browser?`,
+    c_borrar: n => `Delete the ${n} verdicts and the observations saved in this browser?`,
   },
 };
 const tr = k => (TXT[IDIOMA][k] !== undefined ? TXT[IDIOMA][k] : TXT.es[k]);
@@ -909,7 +909,7 @@ function revAcciones(){
     ${REV.estudiante ? '' : `<button type="button" class="boton" id="rev-enviar"${(n || REV.obs.trim()) ? '' : ' disabled'}
       title="${esc(voces)}">${tr('enviar')(n)}</button>`}
     <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('exportar')}</button>
-    <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>${tr('borrar_todos')}</button>
+    <button type="button" class="boton secundario" id="rev-borrar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('borrar_todos')}</button>
     <span class="estado" id="rev-estado">${tr(REV.estudiante ? 'est_estudiante' : 'est_normal')}</span>
   </div>`;
 }
@@ -1091,7 +1091,12 @@ $('out').addEventListener('click', e => {
   if(e.target.id === 'rev-exportar') revExportar();
   if(e.target.id === 'rev-borrar'){
     if(confirm(tr('c_borrar')(REV.v.size))){
-      REV.v.clear(); revGuardar(); analizar();
+      /* «Borrar todos» también vacía las observaciones (pedido del IEBH,
+         2026-08-29): un texto que quedó de un envío hecho con la página
+         vieja no tiene otra salida a mano. */
+      REV.v.clear(); REV.obs = ''; revGuardar();
+      try { localStorage.setItem('rev-observaciones', ''); } catch(err){}
+      analizar();
     }
   }
 });

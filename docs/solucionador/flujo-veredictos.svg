@@ -24,7 +24,7 @@
 
   <!-- 1 · la página -->
   <rect class="caja" x="60" y="80" width="380" height="158" rx="8"/>
-  <text x="80" y="110" class="tit"><tspan class="num">1&#160;·&#160;</tspan>La página, en modo revisión</text>
+  <circle cx="96" cy="108" r="15" fill="#8a6d1f"/><text x="96" y="114" text-anchor="middle" font-size="16" font-weight="bold" fill="#faf6ef">1</text><text x="120" y="114" class="tit">La página, en modo revisión</text>
   <text x="80" y="136" class="txt">El revisor marca veredictos sobre cada voz,</text>
   <text x="80" y="157" class="txt">registra sandhis no detectados</text>
   <text x="80" y="178" class="txt">(voz escrita = voz + voz) y anota</text>
@@ -37,7 +37,7 @@
 
   <!-- 2 · la cola -->
   <rect class="caja" x="500" y="80" width="360" height="158" rx="8"/>
-  <text x="520" y="110" class="tit"><tspan class="num">2&#160;·&#160;</tspan>La cola del proyecto</text>
+  <circle cx="536" cy="108" r="15" fill="#8a6d1f"/><text x="536" y="114" text-anchor="middle" font-size="16" font-weight="bold" fill="#faf6ef">2</text><text x="560" y="114" class="tit">La cola del proyecto</text>
   <text x="520" y="136" class="txt">POST /api/veredictos → Cloudflare KV.</text>
   <text x="520" y="157" class="txt">Enviar es abierto; leer y vaciar piden</text>
   <text x="520" y="178" class="txt">la clave (CLAVE_VEREDICTOS).</text>
@@ -60,7 +60,7 @@
 
   <!-- 3 · la mac -->
   <rect class="hito" x="500" y="322" width="400" height="186" rx="8"/>
-  <text x="520" y="352" class="tit"><tspan class="num">3&#160;·&#160;</tspan>La Mac de quien firma</text>
+  <circle cx="536" cy="350" r="15" fill="#8a6d1f"/><text x="536" y="356" text-anchor="middle" font-size="16" font-weight="bold" fill="#faf6ef">3</text><text x="560" y="356" class="tit">La Mac de quien firma</text>
   <text x="520" y="378" class="txt">· guarda el lote en veredictos-recibidos/</text>
   <text x="520" y="399" class="txt">  (el registro permanente)</text>
   <text x="520" y="420" class="txt">· incorporar_adjudicaciones.py: cada</text>
@@ -75,7 +75,7 @@
 
   <!-- 4 · la puerta -->
   <rect class="hito" x="500" y="560" width="400" height="150" rx="8"/>
-  <text x="520" y="590" class="tit"><tspan class="num">4&#160;·&#160;</tspan>La puerta que no se salta</text>
+  <circle cx="536" cy="588" r="15" fill="#8a6d1f"/><text x="536" y="594" text-anchor="middle" font-size="16" font-weight="bold" fill="#faf6ef">4</text><text x="560" y="594" class="tit">La puerta que no se salta</text>
   <text x="520" y="616" class="txt">generar_solucionador.py → página nueva;</text>
   <text x="520" y="637" class="txt">los CINCO arneses, todos en verde;</text>
   <text x="520" y="658" class="txt">referencias y medición, si la señal cambió.</text>
@@ -87,11 +87,10 @@
 
   <!-- 5 · commit y push -->
   <rect class="caja" x="960" y="560" width="180" height="150" rx="8"/>
-  <text x="980" y="590" class="tit"><tspan class="num">5&#160;·&#160;</tspan>Commit</text>
-  <text x="980" y="611" class="tit">y push</text>
-  <text x="980" y="637" class="txt">git push despliega</text>
-  <text x="980" y="658" class="txt">en Cloudflare, y la</text>
-  <text x="980" y="679" class="txt">página ya responde.</text>
+  <circle cx="996" cy="588" r="15" fill="#8a6d1f"/><text x="996" y="594" text-anchor="middle" font-size="16" font-weight="bold" fill="#faf6ef">5</text><text x="1016" y="594" class="tit" font-size="16">Commit y push</text>
+  <text x="980" y="624" class="txt">git push despliega</text>
+  <text x="980" y="645" class="txt">en Cloudflare, y la</text>
+  <text x="980" y="666" class="txt">página ya responde.</text>
 
   <!-- la doctrina -->
   <rect class="caja" x="60" y="560" width="380" height="150" rx="8"/>

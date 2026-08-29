@@ -15,7 +15,16 @@ caso publicado sin pasar por la Mac) queda para después, si el uso lo pide.*
    No hace falta clave para enviar: la cola sólo se **lee** con clave, y
    nada de lo enviado toca el proyecto por sí solo. «Exportar .md» sigue
    existiendo como camino manual (y es el repuesto si la cola no responde).
-2. En la Mac, quien firma recoge e incorpora todo con **una orden**:
+2. En la Mac, quien firma corre el ciclo COMPLETO con **una orden**
+   (2026-08-29 — la independencia de quien firma):
+
+       VEREDICTOS_CLAVE=… python3 herramientas/ciclo_veredictos.py
+
+   Recoge e incorpora, re-vierte las referencias que los casos nuevos
+   toquen, regenera la página, corre los cinco arneses y, sólo con todo
+   en verde, hace el commit y el push (que despliega). Ante el primer
+   fallo se detiene sin publicar nada. `--sin-push` deja el commit hecho
+   sin empujarlo. El paso a paso sigue disponible:
 
        VEREDICTOS_CLAVE=… python3 herramientas/traer_veredictos.py
 
