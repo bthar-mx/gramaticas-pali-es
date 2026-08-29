@@ -130,6 +130,9 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
   background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);border-radius:2px}
 .rev-acciones{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0 6px}
 .rev-nota-modo{font-size:13.5px;color:var(--soot);margin:14px 0 0;max-width:88ch}
+.veces{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--nila);
+  background:var(--chip-k);border-radius:9px;padding:1px 7px;vertical-align:2px;
+  cursor:help}
 .cuenta-sandhis{font-size:18px;margin:26px 0 4px}
 .cuenta-sandhis b{color:var(--haritala)}
 
@@ -183,18 +186,19 @@ footer a{color:var(--nila)}
 
 /* ---------- tooltip de aforismo (el de /recursos/sandhi/, agrandado a
    pedido del IEBH, 2026-08-28) ---------- */
-#tip{position:fixed;z-index:200;max-width:460px;pointer-events:none;opacity:0;
+/* Tooltips agrandados otra vez (pedido del IEBH, 2026-08-29). */
+#tip{position:fixed;z-index:200;max-width:560px;pointer-events:none;opacity:0;
   transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
   background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
-  box-shadow:0 8px 26px var(--shadow);padding:14px 17px;font-size:18px;line-height:1.5}
+  box-shadow:0 8px 26px var(--shadow);padding:18px 22px;font-size:21px;line-height:1.55}
 #tip.on{opacity:1;transform:none}
 #tip .th{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
-#tip .tn{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--nila)}
-#tip .tc{font-family:var(--mono);font-size:12px;color:var(--soot)}
+#tip .tn{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--nila)}
+#tip .tc{font-family:var(--mono);font-size:15px;color:var(--soot)}
 #tip .tp{font-style:italic;font-weight:700;margin:0}
-#tip .te{margin:5px 0 0;color:var(--soot);font-size:17px}
-#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--soot);margin:7px 0 0}
-#tip .tk{font-family:var(--mono);font-size:12px;color:var(--haritala);margin:8px 0 0;
+#tip .te{margin:5px 0 0;color:var(--soot);font-size:20px}
+#tip .ts{font-family:var(--mono);font-size:15.5px;color:var(--soot);margin:7px 0 0}
+#tip .tk{font-family:var(--mono);font-size:15px;color:var(--haritala);margin:8px 0 0;
   letter-spacing:.06em;text-transform:uppercase}
 
 /* Inglés a demanda (pedido del IEBH, 2026-08-29), como en /recursos/raices/:
@@ -489,6 +493,7 @@ const TXT = {
     e_sin: 'sin sandhi', e_pakati: 'sin sandhi, por regla (pakati)',
     e_compuesto: 'compuesto — fuera del encargo', e_norec: 'sin resolver',
     lecturas: n => ` · ${n} lectura${n>1?'s':''}`,
+    t_veces: n => `aparece ${n} veces en el pasaje`,
     cuenta: (n, v) => `<b>${n}</b> sandhi${n===1?'':'s'} encontrado${n===1?'':'s'} en ${v} voces`,
     p_adj: n => `${n} adjudicado${n===1?'':'s'}`,
     p_firme: n => `${n} de predicción firme`,
@@ -541,6 +546,7 @@ const TXT = {
     e_sin: 'no sandhi', e_pakati: 'no sandhi, by rule (pakati)',
     e_compuesto: 'compound — outside the brief', e_norec: 'unsolved',
     lecturas: n => ` · ${n} reading${n>1?'s':''}`,
+    t_veces: n => `appears ${n} times in the passage`,
     cuenta: (n, v) => `<b>${n}</b> sandhi${n===1?'':'s'} found in ${v} words`,
     p_adj: n => `${n} adjudicated`,
     p_firme: n => `${n} firm prediction${n===1?'':'s'}`,
@@ -726,16 +732,18 @@ const ESTADOS_CLAVE = {
 const ESTADOS = new Proxy({}, { get: (_, k) =>
   ESTADOS_CLAVE[k] ? tr(ESTADOS_CLAVE[k]) : undefined });
 
-function tarjeta(voz, r, abierta){
+function tarjeta(voz, r, abierta, veces){
   const chip = chipSenal(r);
   const n = (r.lecturas || []).length;
+  const insignia = (veces && veces > 1)
+    ? ` <span class="veces" title="${esc(tr('t_veces')(veces))}">×${veces}</span>` : '';
   /* Con señal segura, «candidatos» sobra: la señal ya afirma (pedido del
      IEBH, 2026-08-28). El estado se muestra sólo cuando dice algo más. */
   const estado = (r.senal === 'segura' && r.estado === 'candidatos')
     ? '' : esc(ESTADOS[r.estado] || r.estado || '');
   return `<details class="form"${abierta ? ' open' : ''} data-voz="${esc(voz)}">
     <summary>
-      <span class="fname">${esc(voz)}</span>
+      <span class="fname">${esc(voz)}${insignia}</span>
       <span class="fmeta">${chip}${estado ? ' ' + estado : ''}${
         (n && r.senal !== 'segura') ? tr('lecturas')(n) : ''}</span>
     </summary>
@@ -785,22 +793,34 @@ async function analizar(){
       r.senal ? (est1 ? ' · ' : ' — ') + chipSenal(r) : ''}</p>`
       + `<div class="forms">${tarjeta(voces[0], r, true)}</div>`;
   } else {
-    const marcadas = [];
+    /* Una voz repetida (thūpañca, tres veces en el reparto de las
+       reliquias) es UNA tarjeta con su cuenta «×3», no tres tarjetas
+       iguales (pedido del IEBH, 2026-08-29). Las cuentas del encabezado
+       siguen siendo por aparición: tres sandhis reales son tres. */
+    const marcadas = [];             // [voz, r, veces]
+    const vistasM = new Map();
     for(const v of voces){
       const r = resolver(v);
-      if(r.senal) marcadas.push([v, r]);
+      if(!r.senal) continue;
+      const k = v.toLowerCase();
+      if(vistasM.has(k)){ vistasM.get(k)[2]++; continue; }
+      const fila = [v, r, 1];
+      vistasM.set(k, fila);
+      marcadas.push(fila);
     }
-    const seguras = marcadas.filter(([,r]) => r.senal === 'segura').length;
-    const posibles = marcadas.length - seguras;
-    const adjudicados = marcadas.filter(([,r]) => esAdjudicado(r)).length;
+    const cuenta = f => marcadas.filter(f).reduce((s, x) => s + x[2], 0);
+    const total = cuenta(() => true);
+    const seguras = cuenta(([,r]) => r.senal === 'segura');
+    const posibles = total - seguras;
+    const adjudicados = cuenta(([,r]) => esAdjudicado(r));
     const firmes = seguras - adjudicados;
     const partes = [];
     if(adjudicados) partes.push(tr('p_adj')(adjudicados));
     if(firmes) partes.push(tr('p_firme')(firmes));
     if(posibles) partes.push(tr('p_pos')(posibles));
-    html = `<p class="cuenta-sandhis">${tr('cuenta')(marcadas.length, voces.length)}${partes.length ? ' — ' + partes.join(' · ') : ''}</p>`;
+    html = `<p class="cuenta-sandhis">${tr('cuenta')(total, voces.length)}${partes.length ? ' — ' + partes.join(' · ') : ''}</p>`;
     if(marcadas.length){
-      html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
+      html += `<div class="forms">${marcadas.map(([v,r,n]) => tarjeta(v, r, false, n)).join('')}</div>`;
     }
     html += `<p class="motivo" style="margin-top:14px">${tr('prudente')}</p>`;
   }
