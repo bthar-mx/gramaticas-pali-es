@@ -44,8 +44,16 @@ async function veredictos(request, env, url) {
     return Response.json({ ok: true, id });
   }
   const clave = url.searchParams.get("clave") || "";
-  if (!env.CLAVE_VEREDICTOS || clave !== env.CLAVE_VEREDICTOS) {
-    return new Response("clave", { status: 403 });
+  // Dos fallos distintos, dos respuestas distintas (2026-08-29: un 403
+  // indistinguible costó una tarde). Decir «no hay clave configurada» no
+  // regala nada a nadie: sin la clave igual no se puede leer ni borrar.
+  if (!env.CLAVE_VEREDICTOS) {
+    return new Response(
+      "el worker desplegado no tiene CLAVE_VEREDICTOS configurada", {
+        status: 503 });
+  }
+  if (clave !== env.CLAVE_VEREDICTOS) {
+    return new Response("la clave no coincide", { status: 403 });
   }
   if (request.method === "GET") {
     const lista = await env.VEREDICTOS.list();
