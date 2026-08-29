@@ -70,13 +70,9 @@ h1 .dia{color:var(--haritala)}
   color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
   border-radius:999px;padding:4px 10px;position:relative}
 .version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-.version-badge[data-tip]:hover::after{content:attr(data-tip);
-  position:absolute;top:calc(100% + 8px);left:0;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
-  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--sans,sans-serif);
-  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
-  min-width:160px;max-width:min(340px,70vw);z-index:100;
-  box-shadow:0 3px 12px rgba(0,0,0,.12)}
+/* La insignia de versión tenía globo propio de CSS (::after). Desde el
+   2026-08-29 pasa por el #tip llano como todo lo demás: un solo motor de
+   globos, un solo tamaño que ajustar. */
 .version-foot{margin-top:10px;font-size:11px;line-height:1.5;color:var(--soot)}
 .hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
       border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
@@ -186,20 +182,33 @@ footer a{color:var(--nila)}
 
 /* ---------- tooltip de aforismo (el de /recursos/sandhi/, agrandado a
    pedido del IEBH, 2026-08-28) ---------- */
-/* Tooltips agrandados otra vez (pedido del IEBH, 2026-08-29). */
-#tip{position:fixed;z-index:200;max-width:560px;pointer-events:none;opacity:0;
+/* 2026-08-29, con la caché ya arreglada y la página VISTA de verdad: el
+   agrandado del 2026-08-29 (560 px · 21 px) se había pedido contra una
+   página vieja, y el aforismo salía demasiado grande. Vuelve al tamaño
+   del 2026-08-28, que es EL MISMO de /recursos/sandhi/ — las dos páginas
+   vuelven a coincidir, que es lo comprobable. */
+#tip{position:fixed;z-index:200;max-width:460px;pointer-events:none;opacity:0;
   transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
   background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
-  box-shadow:0 8px 26px var(--shadow);padding:18px 22px;font-size:21px;line-height:1.55}
+  box-shadow:0 8px 26px var(--shadow);padding:14px 17px;font-size:18px;line-height:1.5}
 #tip.on{opacity:1;transform:none}
 #tip .th{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
-#tip .tn{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--nila)}
-#tip .tc{font-family:var(--mono);font-size:15px;color:var(--soot)}
+#tip .tn{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--nila)}
+#tip .tc{font-family:var(--mono);font-size:12px;color:var(--soot)}
 #tip .tp{font-style:italic;font-weight:700;margin:0}
-#tip .te{margin:5px 0 0;color:var(--soot);font-size:20px}
-#tip .ts{font-family:var(--mono);font-size:15.5px;color:var(--soot);margin:7px 0 0}
-#tip .tk{font-family:var(--mono);font-size:15px;color:var(--haritala);margin:8px 0 0;
+#tip .te{margin:5px 0 0;color:var(--soot);font-size:17px}
+#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--soot);margin:7px 0 0}
+#tip .tk{font-family:var(--mono);font-size:12px;color:var(--haritala);margin:8px 0 0;
   letter-spacing:.06em;text-transform:uppercase}
+
+/* El globo LLANO: el mismo #tip, con texto corrido, para lo que antes
+   llevaba el rótulo NATIVO del navegador (title=) — el ×N, los botones,
+   los campos de la revisión, la insignia de versión. El nativo es
+   minúsculo e inestilizable, y por eso el IEBH lo seguía viendo chico
+   aunque el del aforismo ya fuera grande (2026-08-29). Ahora TODOS los
+   globos de la página son este mismo elemento: uno solo que gobernar. */
+#tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
+#tip.llano p{margin:0}
 
 /* Inglés a demanda (pedido del IEBH, 2026-08-29), como en /recursos/raices/:
    el botón EN alterna el idioma de la interfaz y el navegador lo recuerda.
@@ -320,18 +329,20 @@ body:not(.en) .i-en{display:none}
     <div class="acciones">
       <button class="boton" id="analizar">Analizar</button>
       <button class="boton secundario" id="limpiar">Limpiar</button>
-      <button class="icon-btn" id="revision" hidden aria-label="Modo revisión"
-        title="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
+      <button class="icon-btn" id="revision" hidden
+        aria-label="Modo revisión: marque veredictos y expórtelos para su adjudicación"
+        data-tip="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
       <button class="icon-btn" id="en-btn" aria-pressed="false"
-        title="Interface in English / Interfaz en español">EN</button>
-      <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+        aria-label="Interface in English / Interfaz en español"
+        data-tip="Interface in English / Interfaz en español">EN</button>
+      <button class="icon-btn" id="theme" aria-label="Cambiar tema" data-tip="Claro / oscuro">◐</button>
       <span class="estado" id="estado"></span>
     </div>
   </section>
   <section id="out" aria-live="polite"></section>
 </main>
 
-<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+<button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio">↑</button>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 
 <footer class="wrap">
@@ -2526,7 +2537,7 @@ function tarjeta(voz, r, abierta, veces){
   const chip = chipSenal(r);
   const n = (r.lecturas || []).length;
   const insignia = (veces && veces > 1)
-    ? ` <span class="veces" title="${esc(tr('t_veces')(veces))}">×${veces}</span>` : '';
+    ? ` <span class="veces" data-tip="${esc(tr('t_veces')(veces))}">×${veces}</span>` : '';
   /* Con señal segura, «candidatos» sobra: la señal ya afirma (pedido del
      IEBH, 2026-08-28). El estado se muestra sólo cuando dice algo más. */
   const estado = (r.senal === 'segura' && r.estado === 'candidatos')
@@ -2671,11 +2682,11 @@ function revBarra(voz, r){
     ${comp1.length ? `<button type="button" class="rev-btn${marca('primera')}" data-rev="primera">✓ ${esc(comp1.join(' + '))}</button>` : ''}
     <button type="button" class="rev-btn${marca('no')}" data-rev="no">${tr('no_es')}</button>
     <input type="text" class="rev-otra" data-rev-otra
-      placeholder="${esc(tr('ph_otra'))}" title="${esc(tr('t_otra'))}"
+      placeholder="${esc(tr('ph_otra'))}" data-tip="${esc(tr('t_otra'))}"
       value="${v && v.t === 'otra' ? esc(v.comp) : ''}">
     <input type="text" class="rev-otra" data-rev-nota style="min-width:30ch;flex:1"
       placeholder="${esc(tr('ph_nota'))}"
-      title="${esc(tr('t_nota'))}"
+      data-tip="${esc(tr('t_nota'))}"
       value="${v && v.nota ? esc(v.nota) : ''}">
     ${v ? `<button type="button" class="rev-btn" data-rev="quitar">${tr('quitar')}</button>` : ''}
   </div>`;
@@ -2687,7 +2698,7 @@ function revAcciones(){
     <span class="rev-lbl">${tr('falta_lbl')}</span>
     <input type="text" class="rev-otra" id="rev-falta" style="min-width:26ch"
       placeholder="${esc(tr('ph_falta'))}"
-      title="${esc(tr('t_falta'))}">
+      data-tip="${esc(tr('t_falta'))}">
     <button type="button" class="rev-btn" id="rev-falta-btn">${tr('registrar')}</button>
   </div>
   <div class="rev-bar" style="margin-top:10px;align-items:flex-start">
@@ -2697,7 +2708,7 @@ function revAcciones(){
   </div>
   <div class="rev-acciones">
     ${REV.estudiante ? '' : `<button type="button" class="boton" id="rev-enviar"${(n || REV.obs.trim()) ? '' : ' disabled'}
-      title="${esc(voces)}">${tr('enviar')(n)}</button>`}
+      data-tip="${esc(voces)}">${tr('enviar')(n)}</button>`}
     <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('exportar')}</button>
     <button type="button" class="boton secundario" id="rev-borrar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('borrar_todos')}</button>
     <span class="estado" id="rev-estado">${tr(REV.estudiante ? 'est_estudiante' : 'est_normal')}</span>
@@ -2949,9 +2960,19 @@ function placeTip(el){
   tipEl.style.visibility = '';
 }
 function showTip(el){
-  const n = +el.dataset.goto;
-  if(!SUTTA[n]) return;
-  tipEl.innerHTML = tipHTML(n);
+  /* Dos clases de globo, un solo elemento: el del aforismo (a.xref) y el
+     LLANO (data-tip), que reemplaza al rótulo nativo del navegador. */
+  if(el.dataset.tip !== undefined){
+    const t = el.dataset.tip;
+    if(!t) return;
+    tipEl.classList.add('llano');
+    tipEl.innerHTML = '<p>' + esc(t) + '</p>';
+  } else {
+    const n = +el.dataset.goto;
+    if(!SUTTA[n]) return;
+    tipEl.classList.remove('llano');
+    tipEl.innerHTML = tipHTML(n);
+  }
   tipEl.setAttribute('aria-hidden', 'false');
   placeTip(el);
 }
@@ -2960,19 +2981,23 @@ function hideTip(){
   tipEl.classList.remove('on');
   tipEl.setAttribute('aria-hidden', 'true');
 }
+/* a.xref[data-goto] → aforismo; [data-tip] → llano. El data-tip gana si
+   un elemento llevara los dos (no ocurre hoy, pero el orden es el que
+   showTip() ya supone). */
+const SEL_TIP = 'a.xref[data-goto], [data-tip]';
 document.addEventListener('mouseover', e => {
-  const a = e.target.closest('a.xref[data-goto]');
+  const a = e.target.closest(SEL_TIP);
   if(a){ clearTimeout(tipT); tipT = setTimeout(() => showTip(a), 110); }
 });
 document.addEventListener('mouseout', e => {
-  if(e.target.closest('a.xref[data-goto]')) hideTip();
+  if(e.target.closest(SEL_TIP)) hideTip();
 });
 document.addEventListener('focusin', e => {
-  const a = e.target.closest('a.xref[data-goto]');
+  const a = e.target.closest(SEL_TIP);
   if(a) showTip(a);
 });
 document.addEventListener('focusout', e => {
-  if(e.target.closest('a.xref[data-goto]')) hideTip();
+  if(e.target.closest(SEL_TIP)) hideTip();
 });
 
 /* ---------- portada: una secuencia, revelada ---------- */
