@@ -197,6 +197,13 @@ footer a{color:var(--nila)}
 #tip .tk{font-family:var(--mono);font-size:12px;color:var(--haritala);margin:8px 0 0;
   letter-spacing:.06em;text-transform:uppercase}
 
+/* Inglés a demanda (pedido del IEBH, 2026-08-29), como en /recursos/raices/:
+   el botón EN alterna el idioma de la interfaz y el navegador lo recuerda.
+   Los textos del MOTOR (motivos, procedencias, pasos) siguen en español:
+   son la voz del proyecto y el arnés de la etapa 4 los compara byte a byte. */
+body.en .i-es{display:none}
+body:not(.en) .i-en{display:none}
+
 #top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
   width:38px;height:38px;border-radius:50%;
   border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
@@ -224,13 +231,49 @@ footer a{color:var(--nila)}
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
       <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Kaccāyana · Sandhi-Kappa · Canon del Sexto Concilio</span></div>
       <h1>Solucionador de sandh<span class="dia">i</span>s</h1>
-      <p class="tag">Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces,
+      <p class="tag i-es">Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces,
       y qué secuencia de aforismos de Kaccāyana explica cada una.</p>
+      <p class="tag i-en">Paste a Pāḷi passage: how many sandhis there are, which words
+      they join, and which sequence of Kaccāyana's rules explains each one.</p>
       <span class="version-badge" id="vbadge"></span>
     </div>
     <div class="hero" id="hero" aria-hidden="true"></div>
   </div>
-  <div class="wrap">
+  <div class="wrap i-en">
+    <details class="revision">
+      <summary>What it finds, what it stays silent on, and with what numbers — measured before publishing</summary>
+      <p><strong>Propose and verify, never assert.</strong> Every analysis proposes a
+      cut and a chain of rules, applies it, and is shown only if it reproduces the
+      input form exactly. <em>All</em> the readings that recompose are shown, not
+      one: sandhi is genuinely ambiguous, and choosing silently would be lying by
+      omission. The lexicon is the corpus of the
+      <a href="https://buddha-dhamma.net/" target="_blank" rel="noopener">Sixth
+      Council</a> edition (681,927 forms from 118 volumes); the grammatical
+      authority is Kaccāyana's Sandhi-Kappa.</p>
+      <p><strong>The numbers, in plain sight.</strong> Over the 251 measurable forms of the
+      reference bank, the engine recovers the signed analysis in 221 (88%). Checked
+      against an independent partition of the Therīgāthā and its commentary, the
+      cut point agrees in 90.7% of the verses and 92.5% of the prose. The signal
+      that marks words in a passage is deliberately prudent: between the high tier
+      —<em>adjudicated sandhi</em> (signed bank or adjudicated case: the
+      tradition's own answer, not a prediction) and <em>firm prediction</em> (the
+      adjudicated patterns)— and the <em>possible</em> tier, it currently marks 47%
+      of the sandhis present in verse and 57% in prose, and the high tier hits a
+      real juncture in 9 out of 10 cases (measured 2026-08-28, with the
+      adjudicated patterns and the residual-base safeguard active). <strong>What is not
+      marked is not lost: it stays silent</strong> — paste the word on its own and the
+      engine analyses it with all its readings. Every reported failure becomes a
+      permanent test case. Engine annotations (rule citations, provenance,
+      derivation steps) remain in Spanish: they quote the project's editions.</p>
+      <p><strong>The dictionary as witness; never as authority.</strong> The Digital Pāḷi
+      Dictionary acts as a silent witness of occurrence: it widens the filter of
+      admissible cuts, orders candidates, and sharpens the signal when a written
+      word is absent from it. It decides no analysis: every reading is verified by
+      recomposition with Kaccāyana's rules, and the authority remains the
+      Sandhi-Kappa, the signed bank, and the sourced adjudications.</p>
+    </details>
+  </div>
+  <div class="wrap i-es">
     <details class="revision">
       <summary>Qué encuentra, qué calla, y con qué cifras — medido antes de publicarse</summary>
       <p><strong>Proponer y verificar, nunca afirmar.</strong> Cada análisis propone un
@@ -275,6 +318,8 @@ footer a{color:var(--nila)}
       <button class="boton secundario" id="limpiar">Limpiar</button>
       <button class="icon-btn" id="revision" hidden aria-label="Modo revisión"
         title="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
+      <button class="icon-btn" id="en-btn" aria-pressed="false"
+        title="Interface in English / Interfaz en español">EN</button>
       <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
       <span class="estado" id="estado"></span>
     </div>
@@ -287,6 +332,7 @@ footer a{color:var(--nila)}
 
 <footer class="wrap">
   <p class="version-foot" id="vfoot"></p>
+  <div class="i-es">
   <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11
   vuelve a unirlas. Entre esos dos pasos ocurre la operación propiamente dicha.
   «EM» es la forma de la edición moderna, con apóstrofo. En amarillo, lo que
@@ -305,6 +351,28 @@ footer a{color:var(--nila)}
   <a href="https://buddha-dhamma.net/" target="_blank" rel="noopener">Chaṭṭhasaṅgītipiṭaka
   romanizado</a> (canon, aṭṭhakathā y ṭīkā). El léxico ordena y atestigua; <strong>nunca es autoridad
   del análisis</strong>: la autoridad es Kaccāyana y el texto de la edición.</p>
+  </div>
+  <div class="i-en">
+  <p><strong>How to read a sequence.</strong> §10 separates the consonant from its vowel;
+  §11 joins them again. The operation proper happens between those two steps.
+  “EM” is the modern edition's writing, with the apostrophe. What changes at each
+  step is highlighted. Every §N links to the rule in the
+  <a href="../../kaccayana/sandhi/">Sandhi-Kappa</a>; the full reference of rules
+  and forms is at <a href="../sandhi/">Sandhi — interactive reference</a>. The
+  derivation steps themselves are quoted in Spanish, from the project's editions.</p>
+  <p><strong>The Digital Pāḷi Dictionary</strong> (DPD, CC BY-NC-SA licence) is used as a
+  silent witness of occurrence — filtering and ordering candidates and sharpening
+  the detection signal — never as authority or source of the analysis shown.
+  Wherever its influence is visible, it is named.</p>
+  <p><strong>Sources.</strong> The signed sequences come from Bhikkhu Nandisena's
+  <em>Reglas de combinación eufónica</em> and his translation of the Sandhi-Kappa,
+  with their canonical references. The readings proposed by the engine are built
+  with the chapter's rules and verified by recomposition; their provenance is
+  declared case by case. The lexicon comes from the romanised
+  <a href="https://buddha-dhamma.net/" target="_blank" rel="noopener">Chaṭṭhasaṅgītipiṭaka</a>
+  (canon, aṭṭhakathā and ṭīkā). The lexicon orders and attests; <strong>it is never the
+  authority of the analysis</strong>: the authority is Kaccāyana and the edition's text.</p>
+  </div>
   <p class="licencia"><span class="marca-lockup"></span>Preparado por Miguel De Anquín y
   Bhikkhu Nandisena basándose en el capítulo 1 del Kaccāyana y Rūpasiddhi, y también el
   capítulo correspondiente del Saddanīti Suttamālā.<br>
@@ -2197,6 +2265,120 @@ if (typeof globalThis !== "undefined") globalThis.SOLUCIONADOR = SOLUCIONADOR;
 /* ══ LA INTERFAZ ══ (la escalera es la de /recursos/sandhi/, línea a línea) */
 const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 
+/* ── Inglés a demanda (pedido del IEBH, 2026-08-29) ─────────────────────
+   El botón EN alterna el idioma de la INTERFAZ; los textos del motor
+   (motivos, procedencias, pasos) siguen en español — son la voz del
+   proyecto y el arnés de la etapa 4 los compara byte a byte con el
+   Python. tr(k) busca en el idioma puesto y cae al español. */
+let IDIOMA = 'es';
+try { if(localStorage.getItem('pali_solucionador_en') === '1') IDIOMA = 'en'; } catch(e){}
+const TXT = {
+  es: {
+    posible: 'señal posible', adjudicado: 'sandhi adjudicado', firme: 'predicción firme',
+    e_firmada: 'firmada en el banco', e_candidatos: 'candidatos', e_resuelto: 'resuelto',
+    e_sin: 'sin sandhi', e_pakati: 'sin sandhi, por regla (pakati)',
+    e_compuesto: 'compuesto — fuera del encargo', e_norec: 'sin resolver',
+    lecturas: n => ` · ${n} lectura${n>1?'s':''}`,
+    cuenta: (n, v) => `<b>${n}</b> sandhi${n===1?'':'s'} encontrado${n===1?'':'s'} en ${v} voces`,
+    p_adj: n => `${n} adjudicado${n===1?'':'s'}`,
+    p_firme: n => `${n} de predicción firme`,
+    p_pos: n => `${n} posible${n===1?'':'s'}`,
+    prudente: `La señal es prudente a propósito: marca
+      el 47 % de los sandhis presentes en el verso y el 57 % en la prosa. Lo
+      <em>adjudicado</em> es la respuesta de la tradición, no una predicción; el nivel
+      alto en conjunto (adjudicado y predicción firme) acierta una juntura real en
+      9 de cada 10 casos. Lo que calla no se pierde: pegue una voz sola y el motor
+      la analiza con todas sus lecturas.`,
+    unica: `Única lectura que recompone.
+          No está firmada en el banco ni adjudicada: tómese como propuesta del
+          motor, no como análisis establecido.`,
+    nosabe: n => `<strong>El motor no sabe cuál es la lectura
+      correcta:</strong> ${n} lecturas recomponen exactamente esta
+      forma y ninguna está firmada en el banco ni adjudicada. No se elige por
+      el lector.`,
+    otras: n => `otras ${n} lectura${n > 1 ? 's' : ''} que también
+          recompone${n > 1 ? 'n' : ''}, sin firma ni adjudicación`,
+    verlas: n => `ver las ${n} lecturas — el orden es de verosimilitud, no
+          de certeza`,
+    cargando: 'cargando el léxico del canon…', analizando: 'analizando…',
+    b_analizar: 'Analizar', b_limpiar: 'Limpiar', b_rev: '✎ revisión',
+    lbl_texto: 'Pasaje o voz pāḷi',
+    ph_texto: 'p. ej. — Evaṃ me sutaṃ… o una voz sola: lokaggo, yassindriyāni, tathūpamaṃ',
+    no_es: '✗ no es sandhi', quitar: 'borrar',
+    ph_otra: 'otra lectura: voz + voz', t_otra: 'Escriba los componentes y pulse Enter',
+    ph_nota: 'explicación, si vale para más casos (p. ej.: participio presente, voz entera)',
+    t_nota: 'La explicación viaja con el veredicto: de una explicación así salió la regla de los absolutivos en -tvā/-tvāna',
+    falta_lbl: 'sandhi no detectado', ph_falta: 'voz escrita = voz + voz',
+    t_falta: 'Un sandhi que el solucionador no señaló: la forma tal como está escrita, un «=», y sus componentes. Enter para registrarlo.',
+    registrar: 'registrar', obs_lbl: 'observaciones',
+    ph_obs: 'Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación.',
+    enviar: n => `Enviar ${n} veredicto${n===1?'':'s'} al proyecto`,
+    exportar: 'Exportar .md', borrar_todos: 'Borrar todos',
+    est_normal: 'enviar deja los veredictos en la cola del proyecto; nada se adjudica sin incorporación y firma',
+    est_estudiante: 'modo estudiante: exporte el .md y hágaselo llegar a quien firma — nada se adjudica sin esa revisión',
+    enviando: 'enviando…',
+    sin_cola: 'la cola no está configurada todavía: use «Exportar .md»',
+    no_envio: s => `no se pudo enviar (${s}): use «Exportar .md»`,
+    enviado: 'enviado — se incorpora con traer_veredictos.py, arneses y firma',
+    sin_red: 'sin conexión: use «Exportar .md»',
+    a_comp: 'Escriba los componentes — con «+» o con espacios: voz + voz',
+    a_nota: 'Primero dé el veredicto; la explicación viaja con él.',
+    c_borrar: n => `¿Borrar los ${n} veredictos guardados en este navegador?`,
+  },
+  en: {
+    posible: 'possible signal', adjudicado: 'adjudicated sandhi', firme: 'firm prediction',
+    e_firmada: 'signed in the bank', e_candidatos: 'candidates', e_resuelto: 'solved',
+    e_sin: 'no sandhi', e_pakati: 'no sandhi, by rule (pakati)',
+    e_compuesto: 'compound — outside the brief', e_norec: 'unsolved',
+    lecturas: n => ` · ${n} reading${n>1?'s':''}`,
+    cuenta: (n, v) => `<b>${n}</b> sandhi${n===1?'':'s'} found in ${v} words`,
+    p_adj: n => `${n} adjudicated`,
+    p_firme: n => `${n} firm prediction${n===1?'':'s'}`,
+    p_pos: n => `${n} possible`,
+    prudente: `The signal is prudent on purpose: it marks
+      47% of the sandhis present in verse and 57% in prose. What is
+      <em>adjudicated</em> is the tradition's own answer, not a prediction; the high
+      tier as a whole (adjudicated plus firm prediction) hits a real juncture in
+      9 out of 10 cases. What stays silent is not lost: paste a word on its own
+      and the engine analyses it with all its readings.`,
+    unica: `The only reading that recomposes.
+          It is neither signed in the bank nor adjudicated: take it as the
+          engine's proposal, not as established analysis.`,
+    nosabe: n => `<strong>The engine does not know which reading is
+      correct:</strong> ${n} readings recompose this form exactly and none is
+      signed in the bank or adjudicated. It will not choose for the reader.`,
+    otras: n => `${n} other reading${n > 1 ? 's' : ''} that also
+          recompose${n > 1 ? '' : 's'}, neither signed nor adjudicated`,
+    verlas: n => `see the ${n} readings — the order is plausibility, not
+          certainty`,
+    cargando: 'loading the canon lexicon…', analizando: 'analysing…',
+    b_analizar: 'Analyse', b_limpiar: 'Clear', b_rev: '✎ review',
+    lbl_texto: 'Pāḷi passage or word',
+    ph_texto: 'e.g. — Evaṃ me sutaṃ… or a single word: lokaggo, yassindriyāni, tathūpamaṃ',
+    no_es: '✗ not sandhi', quitar: 'remove',
+    ph_otra: 'another reading: word + word', t_otra: 'Type the components and press Enter',
+    ph_nota: 'explanation, if it holds beyond this case (e.g.: present participle, whole word)',
+    t_nota: 'The explanation travels with the verdict: one such explanation became the signed rule for -tvā/-tvāna absolutives',
+    falta_lbl: 'undetected sandhi', ph_falta: 'written form = word + word',
+    t_falta: 'A sandhi the solver did not flag: the form as written, an “=”, and its components. Press Enter to record it.',
+    registrar: 'record', obs_lbl: 'observations',
+    ph_obs: 'General rules the reviewer sees behind the examples — one such observation (“words in -tvā and -tvāna are absolutives”) became a signed rule. They travel with the export.',
+    enviar: n => `Send ${n} verdict${n===1?'':'s'} to the project`,
+    exportar: 'Export .md', borrar_todos: 'Delete all',
+    est_normal: 'sending leaves the verdicts in the project queue; nothing is adjudicated without incorporation and signature',
+    est_estudiante: 'student mode: export the .md and hand it to the signer — nothing is adjudicated without that review',
+    enviando: 'sending…',
+    sin_cola: 'the queue is not configured yet: use “Export .md”',
+    no_envio: s => `could not send (${s}): use “Export .md”`,
+    enviado: 'sent — it is incorporated with traer_veredictos.py, the harnesses and the signature',
+    sin_red: 'offline: use “Export .md”',
+    a_comp: 'Type the components — with “+” or with spaces: word + word',
+    a_nota: 'Give the verdict first; the explanation travels with it.',
+    c_borrar: n => `Delete the ${n} verdicts saved in this browser?`,
+  },
+};
+const tr = k => (TXT[IDIOMA][k] !== undefined ? TXT[IDIOMA][k] : TXT.es[k]);
+
 function parseStep(raw){
   const m = /^(.*?)\s*\(([^()]*)\)\s*\.?$/.exec(raw.trim());
   return m ? {text:m[1].trim(), ref:m[2].trim()} : {text:raw.trim().replace(/\.$/,''), ref:''};
@@ -2296,21 +2478,13 @@ function cuerpoResultado(r, esVozSola){
        resto queda plegado, nunca borrado. */
     h += unaLectura(l0)
        + (r.senal === 'segura' ? '' : plegadas(lect.slice(1),
-         `otras ${lect.length - 1} lectura${lect.length > 2 ? 's' : ''} que también
-          recompone${lect.length > 2 ? 'n' : ''}, sin firma ni adjudicación`));
+         tr('otras')(lect.length - 1)));
   } else if(lect.length === 1){
     h += unaLectura(l0)
-       + `<p class="parcial" style="margin-top:8px">Única lectura que recompone.
-          No está firmada en el banco ni adjudicada: tómese como propuesta del
-          motor, no como análisis establecido.</p>`;
+       + `<p class="parcial" style="margin-top:8px">${tr('unica')}</p>`;
   } else {
-    h += `<p class="motivo"><strong>El motor no sabe cuál es la lectura
-      correcta:</strong> ${lect.length} lecturas recomponen exactamente esta
-      forma y ninguna está firmada en el banco ni adjudicada. No se elige por
-      el lector.</p>`
-       + plegadas(lect,
-         `ver las ${lect.length} lecturas — el orden es de verosimilitud, no
-          de certeza`);
+    h += `<p class="motivo">${tr('nosabe')(lect.length)}</p>`
+       + plegadas(lect, tr('verlas')(lect.length));
   }
   return h;
 }
@@ -2322,25 +2496,25 @@ function cuerpoResultado(r, esVozSola){
    cuya cifra medida sigue dicha al lado: acierta 9 de cada 10. */
 function chipSenal(r){
   if(r.senal === 'posible')
-    return '<span class="src posible">señal posible</span>';
+    return `<span class="src posible">${tr('posible')}</span>`;
   if(r.senal !== 'segura') return '';
   const l0 = (r.lecturas || [])[0] || {};
   const adjudicado = l0.adjudicada || l0.procedencia === 'firmada' || l0.origen;
   return '<span class="src segura">'
-    + (adjudicado ? 'sandhi adjudicado' : 'predicción firme') + '</span>';
+    + tr(adjudicado ? 'adjudicado' : 'firme') + '</span>';
 }
 function esAdjudicado(r){
   const l0 = ((r || {}).lecturas || [])[0] || {};
   return r.senal === 'segura'
     && !!(l0.adjudicada || l0.procedencia === 'firmada' || l0.origen);
 }
-const ESTADOS = {
-  firmada: 'firmada en el banco', candidatos: 'candidatos',
-  resuelto: 'resuelto', sin_sandhi: 'sin sandhi',
-  sin_sandhi_por_regla: 'sin sandhi, por regla (pakati)',
-  fuera_del_alcance: 'compuesto — fuera del encargo',
-  no_resuelto: 'sin resolver',
+const ESTADOS_CLAVE = {
+  firmada: 'e_firmada', candidatos: 'e_candidatos', resuelto: 'e_resuelto',
+  sin_sandhi: 'e_sin', sin_sandhi_por_regla: 'e_pakati',
+  fuera_del_alcance: 'e_compuesto', no_resuelto: 'e_norec',
 };
+const ESTADOS = new Proxy({}, { get: (_, k) =>
+  ESTADOS_CLAVE[k] ? tr(ESTADOS_CLAVE[k]) : undefined });
 
 function tarjeta(voz, r, abierta){
   const chip = chipSenal(r);
@@ -2353,7 +2527,7 @@ function tarjeta(voz, r, abierta){
     <summary>
       <span class="fname">${esc(voz)}</span>
       <span class="fmeta">${chip}${estado ? ' ' + estado : ''}${
-        (n && r.senal !== 'segura') ? ` · ${n} lectura${n>1?'s':''}` : ''}</span>
+        (n && r.senal !== 'segura') ? tr('lecturas')(n) : ''}</span>
     </summary>
     <div class="fbody">${REV.on ? revBarra(voz, r) : ''}${cuerpoResultado(r, abierta)}</div>
   </details>`;
@@ -2376,7 +2550,7 @@ async function analizar(){
   if(!texto){ out.innerHTML = ''; return; }
   const boton = $('analizar');
   boton.disabled = true;
-  $('estado').textContent = 'cargando el léxico del canon…';
+  $('estado').textContent = tr('cargando');
   try {
     await SOLUCIONADOR.preparar(texto);
   } catch(e){
@@ -2385,7 +2559,7 @@ async function analizar(){
     boton.disabled = false;
     return;
   }
-  $('estado').textContent = 'analizando…';
+  $('estado').textContent = tr('analizando');
   await new Promise(r => setTimeout(r, 20));   // pintar el estado antes del cómputo
 
   const voces = fichas(texto);
@@ -2398,7 +2572,7 @@ async function analizar(){
     const est1 = (r.senal === 'segura' && r.estado === 'candidatos')
       ? '' : esc(ESTADOS[r.estado] || r.estado || '');
     html = `<p class="cuenta-sandhis">${esc(voces[0])}${est1 ? ' — ' + est1 : ''}${
-      r.senal ? (est1 ? ' · ' : ' — ') + (CHIP[r.senal]||'') : ''}</p>`
+      r.senal ? (est1 ? ' · ' : ' — ') + chipSenal(r) : ''}</p>`
       + `<div class="forms">${tarjeta(voces[0], r, true)}</div>`;
   } else {
     const marcadas = [];
@@ -2411,19 +2585,14 @@ async function analizar(){
     const adjudicados = marcadas.filter(([,r]) => esAdjudicado(r)).length;
     const firmes = seguras - adjudicados;
     const partes = [];
-    if(adjudicados) partes.push(`${adjudicados} adjudicado${adjudicados===1?'':'s'}`);
-    if(firmes) partes.push(`${firmes} de predicción firme`);
-    if(posibles) partes.push(`${posibles} posible${posibles===1?'':'s'}`);
-    html = `<p class="cuenta-sandhis"><b>${marcadas.length}</b> sandhi${marcadas.length===1?'':'s'} encontrado${marcadas.length===1?'':'s'} en ${voces.length} voces${partes.length ? ' — ' + partes.join(' · ') : ''}</p>`;
+    if(adjudicados) partes.push(tr('p_adj')(adjudicados));
+    if(firmes) partes.push(tr('p_firme')(firmes));
+    if(posibles) partes.push(tr('p_pos')(posibles));
+    html = `<p class="cuenta-sandhis">${tr('cuenta')(marcadas.length, voces.length)}${partes.length ? ' — ' + partes.join(' · ') : ''}</p>`;
     if(marcadas.length){
       html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
     }
-    html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
-      el 47 % de los sandhis presentes en el verso y el 57 % en la prosa. Lo
-      <em>adjudicado</em> es la respuesta de la tradición, no una predicción; el nivel
-      alto en conjunto (adjudicado y predicción firme) acierta una juntura real en
-      9 de cada 10 casos. Lo que calla no se pierde: pegue una voz sola y el motor
-      la analiza con todas sus lecturas.</p>`;
+    html += `<p class="motivo" style="margin-top:14px">${tr('prudente')}</p>`;
   }
   if(REV.on) html += revAcciones();
   /* Conservar qué tarjetas estaban abiertas: la revisión re-pinta. */
@@ -2478,42 +2647,40 @@ function revBarra(voz, r){
   const comp1 = ((r.lecturas || [])[0] || {}).componentes || [];
   const marca = t => (v && v.t === t) ? ' on' : '';
   return `<div class="rev-bar" data-voz="${esc(voz)}">
-    <span class="rev-lbl">veredicto</span>
+    <span class="rev-lbl">${IDIOMA === 'en' ? 'verdict' : 'veredicto'}</span>
     ${comp1.length ? `<button type="button" class="rev-btn${marca('primera')}" data-rev="primera">✓ ${esc(comp1.join(' + '))}</button>` : ''}
-    <button type="button" class="rev-btn${marca('no')}" data-rev="no">✗ no es sandhi</button>
+    <button type="button" class="rev-btn${marca('no')}" data-rev="no">${tr('no_es')}</button>
     <input type="text" class="rev-otra" data-rev-otra
-      placeholder="otra lectura: voz + voz" title="Escriba los componentes y pulse Enter"
+      placeholder="${esc(tr('ph_otra'))}" title="${esc(tr('t_otra'))}"
       value="${v && v.t === 'otra' ? esc(v.comp) : ''}">
     <input type="text" class="rev-otra" data-rev-nota style="min-width:30ch;flex:1"
-      placeholder="explicación, si vale para más casos (p. ej.: participio presente, voz entera)"
-      title="La explicación viaja con el veredicto: de una explicación así salió la regla de los absolutivos en -tvā/-tvāna"
+      placeholder="${esc(tr('ph_nota'))}"
+      title="${esc(tr('t_nota'))}"
       value="${v && v.nota ? esc(v.nota) : ''}">
-    ${v ? `<button type="button" class="rev-btn" data-rev="quitar" title="Quitar este veredicto">borrar</button>` : ''}
+    ${v ? `<button type="button" class="rev-btn" data-rev="quitar">${tr('quitar')}</button>` : ''}
   </div>`;
 }
 function revAcciones(){
   const n = REV.v.size;
   const voces = [...REV.v.keys()].join(', ');
   return `<div class="rev-bar" style="margin-top:18px">
-    <span class="rev-lbl">sandhi no detectado</span>
+    <span class="rev-lbl">${tr('falta_lbl')}</span>
     <input type="text" class="rev-otra" id="rev-falta" style="min-width:26ch"
-      placeholder="voz escrita = voz + voz"
-      title="Un sandhi que el solucionador no señaló: la forma tal como está escrita, un «=», y sus componentes. Enter para registrarlo.">
-    <button type="button" class="rev-btn" id="rev-falta-btn">registrar</button>
+      placeholder="${esc(tr('ph_falta'))}"
+      title="${esc(tr('t_falta'))}">
+    <button type="button" class="rev-btn" id="rev-falta-btn">${tr('registrar')}</button>
   </div>
   <div class="rev-bar" style="margin-top:10px;align-items:flex-start">
-    <span class="rev-lbl" style="padding-top:7px">observaciones</span>
+    <span class="rev-lbl" style="padding-top:7px">${tr('obs_lbl')}</span>
     <textarea id="rev-obs" class="rev-otra" rows="2" style="flex:1;min-width:32ch;resize:vertical"
-      placeholder="Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación.">${esc(REV.obs)}</textarea>
+      placeholder="${esc(tr('ph_obs'))}">${esc(REV.obs)}</textarea>
   </div>
   <div class="rev-acciones">
     ${REV.estudiante ? '' : `<button type="button" class="boton" id="rev-enviar"${(n || REV.obs.trim()) ? '' : ' disabled'}
-      title="${esc(voces)}">Enviar ${n} veredicto${n===1?'':'s'} al proyecto</button>`}
-    <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>Exportar .md</button>
-    <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>Borrar todos</button>
-    <span class="estado" id="rev-estado">${REV.estudiante
-      ? 'modo estudiante: exporte el .md y hágaselo llegar a quien firma — nada se adjudica sin esa revisión'
-      : 'enviar deja los veredictos en la cola del proyecto; nada se adjudica sin incorporación y firma'}</span>
+      title="${esc(voces)}">${tr('enviar')(n)}</button>`}
+    <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('exportar')}</button>
+    <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>${tr('borrar_todos')}</button>
+    <span class="estado" id="rev-estado">${tr(REV.estudiante ? 'est_estudiante' : 'est_normal')}</span>
   </div>`;
 }
 /* Los componentes se aceptan como los escribe el revisor: con «+» o
@@ -2604,16 +2771,16 @@ async function revEnviar(boton){
      deja el commit listo — la firma sigue siendo la puerta. */
   const est = document.getElementById('rev-estado');
   boton.disabled = true;
-  est.textContent = 'enviando…';
+  est.textContent = tr('enviando');
   try {
     // Absoluta a propósito: la página vive en /recursos/solucionador/ y una
     // ruta relativa iría a /recursos/solucionador/api/veredictos, que el
     // worker no reconoce y los assets responden 404 (pasó el 2026-08-29).
     const r = await fetch('/api/veredictos', { method: 'POST', body: revMD() });
     if(r.status === 503){
-      est.textContent = 'la cola no está configurada todavía: use «Exportar .md»';
+      est.textContent = tr('sin_cola');
     } else if(!r.ok){
-      est.textContent = 'no se pudo enviar (' + r.status + '): use «Exportar .md»';
+      est.textContent = tr('no_envio')(r.status);
     } else {
       /* Enviado con éxito: lo enviado ya vive en la cola del proyecto, así
          que se limpia del navegador — veredictos y observaciones — para
@@ -2626,12 +2793,11 @@ async function revEnviar(boton){
       try { localStorage.setItem('rev-observaciones', ''); } catch(err){}
       if($('texto').value.trim()) analizar();
       const est2 = document.getElementById('rev-estado');
-      if(est2) est2.textContent =
-        'enviado — se incorpora con traer_veredictos.py, arneses y firma';
+      if(est2) est2.textContent = tr('enviado');
       return;
     }
   } catch(e){
-    est.textContent = 'sin conexión: use «Exportar .md»';
+    est.textContent = tr('sin_red');
   }
   boton.disabled = false;
 }
@@ -2694,7 +2860,7 @@ $('out').addEventListener('click', e => {
   if(e.target.id === 'rev-enviar') revEnviar(e.target);
   if(e.target.id === 'rev-exportar') revExportar();
   if(e.target.id === 'rev-borrar'){
-    if(confirm('¿Borrar los ' + REV.v.size + ' veredictos guardados en este navegador?')){
+    if(confirm(tr('c_borrar')(REV.v.size))){
       REV.v.clear(); revGuardar(); analizar();
     }
   }
@@ -2706,7 +2872,7 @@ $('out').addEventListener('keydown', e => {
     e.preventDefault();
     const bar = e.target.closest('.rev-bar');
     const comp = revComponentes(e.target.value.trim());
-    if(!comp){ alert('Escriba los componentes — con «+» o con espacios: voz + voz'); return; }
+    if(!comp){ alert(tr('a_comp')); return; }
     const notaEl = bar.querySelector('[data-rev-nota]');
     const nota = notaEl ? notaEl.value.trim() : '';
     revPoner(bar.dataset.voz, nota ? { t: 'otra', comp, nota } : { t: 'otra', comp });
@@ -2716,7 +2882,7 @@ $('out').addEventListener('keydown', e => {
     e.preventDefault();
     const voz = e.target.closest('.rev-bar').dataset.voz;
     const v = REV.v.get(voz);
-    if(!v){ alert('Primero dé el veredicto; la explicación viaja con él.'); return; }
+    if(!v){ alert(tr('a_nota')); return; }
     v.nota = e.target.value.trim();
     REV.v.set(voz, v); revGuardar(); analizar();
   }
@@ -2809,6 +2975,29 @@ document.addEventListener('focusout', e => {
   b.innerHTML = `v${DATA.version}<time datetime="${DATA.fecha}">${DATA.fecha}</time>`;
   document.getElementById('vfoot').innerHTML =
     `<strong>Versión ${DATA.version}</strong> — <time datetime="${DATA.fecha}">${largo}</time>. ${esc(DATA.nota)}`;
+})();
+
+/* ---------- inglés a demanda (pedido del IEBH, 2026-08-29) ---------- */
+(function(){
+  const b = document.getElementById('en-btn');
+  const aplicar = v => {
+    IDIOMA = v ? 'en' : 'es';
+    document.body.classList.toggle('en', v);
+    b.setAttribute('aria-pressed', v ? 'true' : 'false');
+    b.classList.toggle('on', v);
+    try { localStorage.setItem('pali_solucionador_en', v ? '1' : '0'); } catch(e){}
+    /* Los mandos fijos, en el idioma puesto. */
+    $('analizar').textContent = tr('b_analizar');
+    $('limpiar').textContent = tr('b_limpiar');
+    $('revision').textContent = tr('b_rev');
+    document.querySelector('label[for="texto"]').textContent = tr('lbl_texto');
+    $('texto').placeholder = tr('ph_texto');
+    document.documentElement.lang = v ? 'en' : 'es';
+    /* Lo ya analizado se vuelve a pintar en el idioma nuevo. */
+    if($('texto').value.trim() && typeof analizar === 'function') analizar();
+  };
+  aplicar(IDIOMA === 'en');
+  b.onclick = () => aplicar(IDIOMA !== 'en');
 })();
 
 /* ---------- tema (clave pali_dark, compartida con el resto del sitio) ---------- */
