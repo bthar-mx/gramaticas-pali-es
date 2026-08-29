@@ -710,9 +710,20 @@ async function revFalta(){
   const inp = document.getElementById('rev-falta');
   const t = (inp.value || '').trim();
   const m = t.match(/^(\S+)\s*[=:]\s*(.+)$/u);
+  /* «voz = no» también vale: es el veredicto de no-sandhi, el mismo del
+     botón ✗ de la tarjeta (el IEBH escribió «coraṁ is not sandhi» y el
+     campo sólo sabía de componentes; corregido el mismo día). */
+  if(m && /^(no|no es sandhi|no sandhi|is not sandhi|not sandhi)$/iu.test(m[2].trim())){
+    try { await SOLUCIONADOR.preparar(m[1]); } catch(e){}
+    revPoner(m[1], { t: 'no' });
+    return;
+  }
   const comp = m && revComponentes(m[2]);
   if(!comp){
-    alert('Formato: la voz escrita, «=», y sus componentes — con «+» o con espacios.\nEjemplos:  cetā = ca + etā   ·   yenāyasmā = yena āyasmā');
+    alert('Formato: la voz escrita, «=», y sus componentes — con «+» o con espacios.\n'
+      + 'Ejemplos:  cetā = ca + etā   ·   yenāyasmā = yena āyasmā\n\n'
+      + 'Para decir que una voz MARCADA no es sandhi: el botón «✗ no es sandhi» de su '
+      + 'tarjeta, o aquí:  voz = no');
     return;
   }
   const voz = m[1];
