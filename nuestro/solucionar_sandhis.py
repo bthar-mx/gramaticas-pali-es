@@ -1627,6 +1627,68 @@ def combinar(a, b, escrita_a=None, escrita_b=None):
     return out
 
 
+def combinar_varias(voces, escrita_a=None, escrita_b=None):
+    """Las formas unidas de TRES o más voces, plegando `combinar()`.
+
+    `idamavocāyasmā` = idaṃ + avoca + āyasmā tiene DOS junturas, y el motor
+    propone un solo corte: por eso los tres casos de tres voces adjudicados
+    por el IEBH entraron con la lectura «pendiente de derivación» (mapa de la
+    sesión 32, punto 4). Esto las deriva, y de la única manera que el proyecto
+    admite: **proponiendo y verificando**. Se une la primera con la segunda,
+    cada resultado se verifica por recomposición como siempre, y el que
+    sobrevive se une con la tercera, y otra vez a verificar. La escalera que
+    se devuelve es la concatenación de las escaleras de cada etapa.
+
+    Con dos voces devuelve exactamente lo que `combinar()`, de modo que ésta
+    es su generalización y no un camino aparte.
+
+    **EL LÍMITE, y hay que decirlo antes de que engañe.** Cada etapa pasa por
+    `solucionar()`, que sólo corta cuando **las dos mitades son voces
+    atestiguadas**. La forma intermedia de un plegado no tiene por qué serlo:
+    es el producto de un sandhi, no una palabra que un diccionario liste. El
+    plegado funciona, pues, cuando el intermedio resulta estar atestiguado —
+    `mamañca` lo está, `idamavoca` lo está— y calla cuando no —`idamavocaṃ`,
+    de `idamavocanti` = idaṃ + avocaṃ + iti, no lo está—. No es que falte una
+    regla: es que la puerta de entrada pide dos palabras y aquí una de las dos
+    es un intermedio. Levantar ese límite pide una derivación de una sola
+    pasada sobre las dos junturas, no un plegado; queda anotado y sin fingir.
+
+    Y una segunda advertencia, del mismo temple: **la escalera del plegado es
+    UNA derivación válida, no necesariamente la que firmó el IEBH.** El
+    plegado cierra la primera juntura (§11) antes de abrir la segunda, y la
+    escalera verificada de `mamañceva` —§31 · §10 · §12 · §11 · EM— no la
+    cierra: trata las dos junturas a la vez. Las dos reproducen la forma; se
+    devuelve la del plegado diciendo lo que es.
+    """
+    if len(voces) < 2:
+        return []
+    if len(voces) == 2:
+        return combinar(voces[0], voces[1],
+                        escrita_a=escrita_a, escrita_b=escrita_b)
+    estados = [(voces[0], [])]
+    for i, v in enumerate(voces[1:]):
+        ultima = (i == len(voces) - 2)
+        nuevos = []
+        for forma, pasos in estados:
+            for cand, l in combinar(forma, v,
+                                    escrita_a=escrita_a if not pasos else None,
+                                    escrita_b=escrita_b if ultima else None):
+                p = list(l.get("pasos") or [])
+                # El primer paso de cada etapa repite la superficie con la que
+                # entra; sólo el de la primera etapa dice algo nuevo.
+                nuevos.append((cand, pasos + (p[1:] if pasos else p)))
+        estados = nuevos
+    vistas = {}
+    for cand, pasos in estados:
+        if cand not in vistas or len(pasos) < len(vistas[cand]):
+            vistas[cand] = pasos
+    out = [(c, {"componentes": list(voces), "pasos": p,
+                "procedencia": "derivada por plegado de combinar()"})
+           for c, p in vistas.items()]
+    out.sort(key=lambda x: (len(x[1]["pasos"]), x[0]))
+    return out
+
+
 # Consonantes que **no terminan una voz pāḷi**. De las 443.758 formas del
 # léxico: «ṅ» 0, «ṇ» 0, «k» 0, «g» 0, «j» 0, «p» 0, «b» 0, «ñ» 1, «n» 1, «c» 3,
 # «d» 9, «m» 11. Veinticinco formas en total. Una voz que termina así no es una
