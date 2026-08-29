@@ -155,11 +155,22 @@ def inyectar(plantilla, marca_ini, marca_fin, contenido):
     return plantilla[:m.start()] + contenido + plantilla[m.end():]
 
 
+def suttas_para_tooltip():
+    """Los 51 aforismos para el tooltip de §N — los mismos que muestra
+    /recursos/sandhi/, sin los campos pesados (ex, gloss). Se derivan del
+    capítulo, vía el extractor de generar_sandhi.py: una sola fuente."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import generar_sandhi as GS
+    return [{k: s[k] for k in ("kac", "ru", "sad", "pali", "es", "split")}
+            for s in GS.suttas_desde_markdown()]
+
+
 def main():
     reglas = json.load(open(REGLAS, encoding="utf-8"))
     tablas = json.load(open(TABLAS, encoding="utf-8"))
     listas = json.load(open(LISTAS, encoding="utf-8"))
     datos = {
+        "suttas": suttas_para_tooltip(),
         "version": VERSION, "fecha": FECHA, "nota": NOTA,
         "huella": huella(),
         # El motor sólo consulta `reglas.ce`; el resto del archivo no viaja.

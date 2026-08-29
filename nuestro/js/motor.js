@@ -774,6 +774,17 @@ function aplicarCaso(r) {
             detras.push(l);
         }
     }
+    if (objetivo.length && !delante.length) {
+        // El motor no produce (todavía) la lectura adjudicada — casos de
+        // TRES voces (idamavocāyasmā). Va primera, sintética, pendiente de
+        // derivación. Porqués: `_aplicar_caso` del Python.
+        delante.push({
+            componentes: partirComponentes(caso.componentes || ""),
+            pasos: [],
+            adjudicada: caso.fuente || "",
+            pendiente: "el motor aún no deriva esta lectura (junturas múltiples)",
+        });
+    }
     r.lecturas = delante.concat(detras);
     // La adjudicación asciende la señal a «segura» venga de donde venga;
     // si ya era «segura» por otra vía, el motivo original se conserva.

@@ -7,9 +7,9 @@
  "coincide": 6642,
  "cuenta": {
   "fuera_de_alcance": 2025,
-  "acuerdo": 5504,
+  "acuerdo": 5505,
   "desacuerdo": 464,
-  "corte": 1138,
+  "corte": 1137,
   "silencio": 72
  },
  "filas": [
@@ -577715,7 +577715,8 @@
    "forma": "idamavocanti",
    "mias": [
     [
-     "idamavocaṃ",
+     "idaṃ",
+     "avocaṃ",
      "iti"
     ],
     [
@@ -577741,6 +577742,10 @@
     [
      "idamavoca",
      "ti"
+    ],
+    [
+     "idamavocaṃ",
+     "iti"
     ],
     [
      "idamavocā",
@@ -577799,7 +577804,8 @@
      "īti"
     ]
    ],
-   "categoria": "corte"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "saṃsāroti",

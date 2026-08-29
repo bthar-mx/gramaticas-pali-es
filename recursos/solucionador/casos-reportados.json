@@ -119,6 +119,41 @@
    "sandhi": false,
    "fuente": "IEBH, 2026-08-28 · comentario de Vedanā («Phussa phussa vayaṁ passanti…»)",
    "nota": "En palabras del IEBH: «passanto, present participle, identified as sandhi» — participio presente, voz entera. La señal proponía passa + anto («posible»); falso. Compárese con «navo» y «pajānāti»: la flexión corriente no es juntura. La des-flexión por paradigmas (mapa de la sesión 32, punto 6) es la señal que mataría esta clase entera de falsos candidatos."
+  },
+  {
+   "forma": "idamavoca",
+   "sandhi": true,
+   "componentes": "idaṃ + avoca",
+   "fuente": "IEBH, 2026-08-28 · pasaje de Kassapo devaputto (SN)",
+   "nota": "En palabras del IEBH: «idamavoca = idaṃ avoca. There are many of these in the whole Tipiṭaka». El motor ya producía idaṃ + avoca (§34, la ṃ se hace m ante vocal) como PRIMERA lectura, pero la señal callaba: «avoca» no es nipāta y la capa «posible» no la ve — la misma clase estructural de tenupasaṅkami. La familia entera (§34 con segunda voz corriente: kimahaṃ = kiṃ + ahaṃ, etc.) es candidata a regla firmada; medirla antes de firmarla."
+  },
+  {
+   "forma": "idamavocaṃ",
+   "sandhi": true,
+   "componentes": "idaṃ + avocaṃ",
+   "fuente": "IEBH, 2026-08-28 · serie de idamavoca (SN)",
+   "nota": "De la serie señalada por el IEBH junto a idamavoca. §34; el motor la producía primera con señal «posible»; el caso la afirma."
+  },
+  {
+   "forma": "idamavocuṃ",
+   "sandhi": true,
+   "componentes": "idaṃ + avocuṃ",
+   "fuente": "IEBH, 2026-08-28 · serie de idamavoca (SN)",
+   "nota": "De la serie señalada por el IEBH junto a idamavoca. §34; el motor la producía primera con señal «posible»; el caso la afirma."
+  },
+  {
+   "forma": "idamavocāyasmā",
+   "sandhi": true,
+   "componentes": "idaṃ + avoca + āyasmā",
+   "fuente": "IEBH, 2026-08-28 · serie de idamavoca (SN)",
+   "nota": "En palabras del IEBH: «idamavocāyasmā = idaṃ avoca āyasmā». TRES voces: dos junturas (§34 y elisión ante āyasmā). El motor de hoy propone un solo corte y no puede derivarla — es la mitad que falta del mapa de la sesión 32, punto 4 (combinar())—: el caso da la señal y muestra la lectura adjudicada como pendiente de derivación."
+  },
+  {
+   "forma": "idamavocanti",
+   "sandhi": true,
+   "componentes": "idaṃ + avocaṃ + iti",
+   "fuente": "IEBH, 2026-08-28 · serie de idamavoca (SN)",
+   "nota": "En palabras del IEBH: «idamavocanti = idam avocaṃ iti». TRES voces: §34 (ṃ → m ante vocal) y la cola de «iti» con la ṃ asimilada ante t (§31). Como idamavocāyasmā: el motor de un solo corte no la deriva todavía; el caso da la señal y la lectura adjudicada va primera, pendiente de derivación."
   }
  ]
 }

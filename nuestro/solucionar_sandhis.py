@@ -994,6 +994,20 @@ def _aplicar_caso(r):
             delante.append(l)
         else:
             detras.append(l)
+    if objetivo and not delante:
+        # El motor no produce (todavía) la lectura adjudicada — el caso de
+        # idamavocāyasmā = idaṃ + avoca + āyasmā: TRES voces, y el motor
+        # propone un solo corte. La adjudicación no se esconde: va primera,
+        # sintética, marcada pendiente de derivación. Es lo que el
+        # incorporador promete («quedará registrada aunque el motor no la
+        # produzca todavía») y no inventa nada: los componentes son los del
+        # caso, la escalera queda vacía hasta que combinar() la derive.
+        delante = [{"componentes": partir_componentes(
+                        caso.get("componentes", "")),
+                    "pasos": [],
+                    "adjudicada": caso.get("fuente", ""),
+                    "pendiente": ("el motor aún no deriva esta lectura "
+                                  "(junturas múltiples)")}]
     r["lecturas"] = delante + detras
     # La adjudicación asciende la señal a «segura» venga de donde venga la
     # señal previa («posible» por frecuencia incluido); si ya era «segura»

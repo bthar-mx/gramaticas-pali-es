@@ -181,6 +181,22 @@ footer a{color:var(--nila)}
 .licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
   font-size:12.5px;line-height:1.65;color:var(--soot)}
 
+/* ---------- tooltip de aforismo (el de /recursos/sandhi/, agrandado a
+   pedido del IEBH, 2026-08-28) ---------- */
+#tip{position:fixed;z-index:200;max-width:460px;pointer-events:none;opacity:0;
+  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
+  box-shadow:0 8px 26px var(--shadow);padding:14px 17px;font-size:18px;line-height:1.5}
+#tip.on{opacity:1;transform:none}
+#tip .th{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+#tip .tn{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--nila)}
+#tip .tc{font-family:var(--mono);font-size:12px;color:var(--soot)}
+#tip .tp{font-style:italic;font-weight:700;margin:0}
+#tip .te{margin:5px 0 0;color:var(--soot);font-size:17px}
+#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--soot);margin:7px 0 0}
+#tip .tk{font-family:var(--mono);font-size:12px;color:var(--haritala);margin:8px 0 0;
+  letter-spacing:.06em;text-transform:uppercase}
+
 #top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
   width:38px;height:38px;border-radius:50%;
   border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
@@ -265,6 +281,7 @@ footer a{color:var(--nila)}
 </main>
 
 <button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+<div id="tip" role="tooltip" aria-hidden="true"></div>
 
 <footer class="wrap">
   <p class="version-foot" id="vfoot"></p>
@@ -400,7 +417,7 @@ function delta(a,b){
 function refHTML(ref){
   if(!ref) return '';
   return '· ' + esc(ref).replace(/§(\d+)/g, (m,n) =>
-    (+n>=1 && +n<=51) ? `<a class="xref" href="../../kaccayana/sandhi/#s${n}" title="Ver aforismo §${n} en el Sandhi-Kappa">§${n}</a>` : m);
+    (+n>=1 && +n<=51) ? `<a class="xref" data-goto="${n}" href="../../kaccayana/sandhi/#s${n}">§${n}</a>` : m);
 }
 function ladder(steps, isCE){
   let out = `<div class="lad${isCE?' ce':''}">`;
@@ -441,6 +458,7 @@ function fichas(texto){
 function pieLectura(l){
   const partes = [];
   if(l.adjudicada) partes.push(`lectura adjudicada · ${esc(l.adjudicada)}`);
+  if(l.pendiente) partes.push(esc(l.pendiente));
   if(l.patron) partes.push(`patrón adjudicado · ${esc(l.patron)}`);
   if(l.referencia) partes.push(`Referencia: <b>${esc(String(l.referencia))}</b>`);
   partes.push(esc(l.procedencia || ''));
@@ -628,10 +646,11 @@ $('texto').addEventListener('keydown', e => {
    adjudica solo: el archivo exportado pasa por la firma del IEBH.
    Los veredictos viven en el navegador del revisor (localStorage);
    borrarlos es suyo, no del sitio. */
-const REV = { on: false, v: new Map() };
+const REV = { on: false, v: new Map(), obs: '' };
 try {
   for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
     REV.v.set(k, x);
+  REV.obs = localStorage.getItem('rev-observaciones') || '';
 } catch(e){ /* sin almacenamiento: la revisión vive lo que la página */ }
 function revGuardar(){
   try { localStorage.setItem('rev-veredictos', JSON.stringify([...REV.v])); }
@@ -648,6 +667,10 @@ function revBarra(voz, r){
     <input type="text" class="rev-otra" data-rev-otra
       placeholder="otra lectura: voz + voz" title="Escriba los componentes y pulse Enter"
       value="${v && v.t === 'otra' ? esc(v.comp) : ''}">
+    <input type="text" class="rev-otra" data-rev-nota style="min-width:30ch;flex:1"
+      placeholder="explicación, si vale para más casos (p. ej.: participio presente, voz entera)"
+      title="La explicación viaja con el veredicto: de una explicación así salió la regla de los absolutivos en -tvā/-tvāna"
+      value="${v && v.nota ? esc(v.nota) : ''}">
     ${v ? `<button type="button" class="rev-btn" data-rev="quitar" title="Quitar este veredicto">borrar</button>` : ''}
   </div>`;
 }
@@ -661,8 +684,13 @@ function revAcciones(){
       title="Un sandhi que el solucionador no señaló: la forma tal como está escrita, un «=», y sus componentes. Enter para registrarlo.">
     <button type="button" class="rev-btn" id="rev-falta-btn">registrar</button>
   </div>
+  <div class="rev-bar" style="margin-top:10px;align-items:flex-start">
+    <span class="rev-lbl" style="padding-top:7px">observaciones</span>
+    <textarea id="rev-obs" class="rev-otra" rows="2" style="flex:1;min-width:32ch;resize:vertical"
+      placeholder="Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación.">${esc(REV.obs)}</textarea>
+  </div>
   <div class="rev-acciones">
-    <button type="button" class="boton" id="rev-exportar"${n ? '' : ' disabled'}
+    <button type="button" class="boton" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}
       title="${esc(voces)}">Exportar ${n} veredicto${n===1?'':'s'}</button>
     <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>Borrar todos</button>
     <span class="estado">el archivo exportado se incorpora con
@@ -704,6 +732,11 @@ function revExportar(){
   L.push('    python3 herramientas/incorporar_adjudicaciones.py <este archivo> --fuente "IEBH, ' + fecha + ' · revisión en la página"');
   L.push('    python3 herramientas/generar_solucionador.py');
   L.push('    node nuestro/js/arnes_casos.js', '', '---', '');
+  if(REV.obs.trim()){
+    /* Sin número en el encabezado: el incorporador sólo lee «## N. …»,
+       así que las observaciones nunca se toman por una forma. */
+    L.push('## Observaciones del revisor', '', REV.obs.trim(), '', '---', '');
+  }
   let i = 0;
   for(const [voz, v] of REV.v){
     i += 1;
@@ -711,6 +744,7 @@ function revExportar(){
     if(v.primera) L.push(`- **a)** ${v.primera} — la primera lectura del motor`);
     L.push('');
     L.push('VEREDICTO: ' + (v.t === 'no' ? 'no' : (v.t === 'primera' ? v.primera : v.comp)));
+    if(v.nota) L.push('NOTA DEL REVISOR: ' + v.nota);
     L.push('');
   }
   const texto = L.join('\n') + '\n';
@@ -743,10 +777,16 @@ $('revision').addEventListener('click', () => {
 $('out').addEventListener('click', e => {
   const b = e.target.closest('[data-rev]');
   if(b){
-    const voz = b.closest('.rev-bar').dataset.voz;
+    const bar = b.closest('.rev-bar');
+    const voz = bar.dataset.voz;
     const que = b.dataset.rev;
     if(que === 'quitar'){ REV.v.delete(voz); revGuardar(); analizar(); }
-    else revPoner(voz, { t: que });
+    else {
+      /* La explicación escrita en la misma barra viaja con el veredicto. */
+      const notaEl = bar.querySelector('[data-rev-nota]');
+      const nota = notaEl ? notaEl.value.trim() : '';
+      revPoner(voz, nota ? { t: que, nota } : { t: que });
+    }
     return;
   }
   if(e.target.id === 'rev-falta-btn') revFalta();
@@ -762,10 +802,84 @@ $('out').addEventListener('keydown', e => {
   if(e.target.id === 'rev-falta'){ e.preventDefault(); revFalta(); return; }
   if(e.target.matches('[data-rev-otra]')){
     e.preventDefault();
+    const bar = e.target.closest('.rev-bar');
     const comp = e.target.value.trim();
     if(!comp.includes('+')){ alert('Escriba los componentes con «+»: voz + voz'); return; }
-    revPoner(e.target.closest('.rev-bar').dataset.voz, { t: 'otra', comp });
+    const notaEl = bar.querySelector('[data-rev-nota]');
+    const nota = notaEl ? notaEl.value.trim() : '';
+    revPoner(bar.dataset.voz, nota ? { t: 'otra', comp, nota } : { t: 'otra', comp });
+    return;
   }
+  if(e.target.matches('[data-rev-nota]')){
+    e.preventDefault();
+    const voz = e.target.closest('.rev-bar').dataset.voz;
+    const v = REV.v.get(voz);
+    if(!v){ alert('Primero dé el veredicto; la explicación viaja con él.'); return; }
+    v.nota = e.target.value.trim();
+    REV.v.set(voz, v); revGuardar(); analizar();
+  }
+});
+/* Las observaciones generales del revisor se guardan al escribir. */
+$('out').addEventListener('input', e => {
+  if(e.target.id === 'rev-obs'){
+    REV.obs = e.target.value;
+    try { localStorage.setItem('rev-observaciones', REV.obs); } catch(err){}
+  }
+});
+
+/* ---------- tooltip de aforismo (traído de /recursos/sandhi/, pedido del
+   IEBH, 2026-08-28: los §N sólo tenían el rótulo nativo del navegador,
+   minúsculo e inestilizable) ---------- */
+const SUTTA = {}; (DATA.suttas || []).forEach(s => SUTTA[s.kac] = s);
+const tipEl = document.getElementById('tip');
+let tipT = null;
+function tipHTML(n){
+  const s = SUTTA[n];
+  if(!s) return '';
+  return `<div class="th"><span class="tn">KAC §${s.kac}</span>
+      <span class="tc">RŪ §${s.ru}${s.sad ? ' · SAD §' + s.sad : ''}</span></div>
+    <p class="tp">${esc(s.pali)}</p>
+    <p class="te">${esc(s.es)}</p>
+    ${s.split ? `<p class="ts">[ ${esc(s.split)} ]</p>` : ''}
+    <p class="tk">clic para abrir el aforismo</p>`;
+}
+function placeTip(el){
+  const r = el.getBoundingClientRect();
+  tipEl.style.visibility = 'hidden'; tipEl.classList.add('on');
+  const w = tipEl.offsetWidth, h = tipEl.offsetHeight;
+  let x = r.left, y = r.bottom + 8;
+  if(x + w > innerWidth - 12) x = innerWidth - w - 12;
+  if(x < 12) x = 12;
+  if(y + h > innerHeight - 12) y = r.top - h - 8;
+  if(y < 8) y = 8;
+  tipEl.style.left = x + 'px'; tipEl.style.top = y + 'px';
+  tipEl.style.visibility = '';
+}
+function showTip(el){
+  const n = +el.dataset.goto;
+  if(!SUTTA[n]) return;
+  tipEl.innerHTML = tipHTML(n);
+  tipEl.setAttribute('aria-hidden', 'false');
+  placeTip(el);
+}
+function hideTip(){
+  clearTimeout(tipT);
+  tipEl.classList.remove('on');
+  tipEl.setAttribute('aria-hidden', 'true');
+}
+document.addEventListener('mouseover', e => {
+  const a = e.target.closest('a.xref[data-goto]');
+  if(a){ clearTimeout(tipT); tipT = setTimeout(() => showTip(a), 110); }
+});
+document.addEventListener('mouseout', e => {
+  if(e.target.closest('a.xref[data-goto]')) hideTip();
+});
+document.addEventListener('focusin', e => {
+  const a = e.target.closest('a.xref[data-goto]');
+  if(a) showTip(a);
+});
+document.addEventListener('focusout', e => {
+  if(e.target.closest('a.xref[data-goto]')) hideTip();
 });
 
 /* ---------- portada: una secuencia, revelada ---------- */
