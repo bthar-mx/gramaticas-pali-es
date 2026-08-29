@@ -1,8 +1,8 @@
 {
- "_nota": "BORRADOR. El inglés de la prosa del IEBH en /recursos/paradigmas/: la glosa de cada paradigma, los subtítulos, las familias, las notas de transcripción, el texto de los sufijos y los usos de cada sufijo. Redactado por el chat de la sesión 35 y NO adjudicado: mientras «adjudicado» sea false, generar_paradigmas.py no lo publica y la página muestra el español también en modo inglés. Cotejo lado a lado en docs/paradigmas/ingles-por-adjudicar.md. Las FORMAS pāḷi no están aquí: no se traducen.",
- "adjudicado": false,
- "adjudicado_por": "",
- "fecha": "",
+ "_nota": "El inglés de la prosa del IEBH en /recursos/paradigmas/: la glosa de cada paradigma, los subtítulos, las familias, las notas de transcripción, el texto de los sufijos y los usos de cada sufijo. Redactado por el chat de la sesión 35 y ADJUDICADO por el IEBH ese mismo día. Cotejo lado a lado en docs/paradigmas/ingles-por-adjudicar.md. Las FORMAS pāḷi no están aquí: no se traducen.",
+ "adjudicado": true,
+ "adjudicado_por": "el IEBH",
+ "fecha": "2026-08-29",
  "paradigmas": {
   "M-A1": {
    "paradigma": "purisa (man)"

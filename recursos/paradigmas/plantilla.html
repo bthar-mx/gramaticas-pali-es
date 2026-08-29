@@ -815,20 +815,24 @@ function pintarHero(animar){
 pintarHero(true);
 
 /* ---------- versión ---------- */
-const VERSION = '1.14', VERSION_DATE = '2026-08-29';
-const VERSION_NOTE_EN = 'English on demand: the EN button switches the interface between Spanish '
-  + 'and English, and the browser remembers the choice. The Pāḷi forms are never translated — they '
-  + 'are the object of this page — and the IEBH’s own prose that travels in the data (the gloss '
-  + 'of each paradigm, the family notes, the transcription notes) is still shown in Spanish while it '
-  + 'awaits its English adjudication. The page’s tooltips all pass through one mechanism now, at '
-  + 'a readable size: the browser’s own tiny labels are gone. Earlier version notes are kept in '
-  + 'Spanish.';
-const VERSION_NOTE = 'Inglés a demanda: el botón EN alterna la interfaz entre el español y el '
-  + 'inglés, y el navegador recuerda la elección. Las formas pāḷi no se traducen nunca —son el objeto '
-  + 'de la página— y la prosa del IEBH que viaja en los datos (la glosa de cada paradigma, las '
-  + 'familias, las notas de transcripción) se sigue mostrando en español mientras espera su '
-  + 'adjudicación en inglés. Todos los globos de la página pasan ya por un solo mecanismo y a un '
-  + 'tamaño legible: se acabaron los rótulos diminutos del navegador. Antes, en la versión 1.13: '
+const VERSION = '1.15', VERSION_DATE = '2026-08-29';
+const VERSION_NOTE_EN = 'The page is now entirely in English when the EN button is on: not only the '
+  + 'interface but the IEBH’s own prose — the gloss of each paradigm, the subtitles, the families, '
+  + 'the transcription notes, the suffix text and the use of every suffix — adjudicated by the IEBH '
+  + 'and credited in the footer. The Pāḷi forms are never translated: they are the object of this '
+  + 'page. Nor are the references (§248, Rū. §260), which are the citation and the same in both '
+  + 'languages. The search box now indexes both languages, so «girl» and «niña» both find kaññā. '
+  + 'Earlier version notes are kept in Spanish.';
+const VERSION_NOTE = 'La página entera en inglés con el botón EN: no sólo la interfaz, también la '
+  + 'prosa del IEBH —la glosa de cada paradigma, los subtítulos, las familias, las notas de '
+  + 'transcripción, el texto de los sufijos y el uso de cada uno—, adjudicada por el IEBH y '
+  + 'acreditada en el pie. Las formas pāḷi no se traducen nunca: son el objeto de la página. Las '
+  + 'referencias (§248, Rū. §260) tampoco: son la cita, y es la misma en los dos idiomas. El '
+  + 'buscador indexa ya los dos idiomas, de modo que «girl» y «niña» encuentran las dos kaññā. '
+  + 'Antes, en la versión 1.14: Inglés a demanda: el botón EN alterna la interfaz entre el español '
+  + 'y el inglés, y el navegador recuerda la elección. Todos los globos de la página pasan ya por '
+  + 'un solo mecanismo y a un tamaño legible: se acabaron los rótulos diminutos del navegador. '
+  + 'Antes, en la versión 1.13: '
   + 'El índice de la izquierda se pliega con el ☰ de su propia esquina, y vuelve con ese mismo ☰, que se queda quieto en su sitio, o con el de la barra de controles; en pantalla ancha el texto ocupa el sitio que deja. Se abre siempre al entrar. Antes, en la versión 1.12: El árbol del IEBH pasa a estar en la cabecera de todas las páginas del sitio, no sólo en las que nombran al instituto: es la marca de quien publica, no un pie de la línea que tiene al lado. Antes, en la versión 1.11: Aparece la marca del Instituto de Estudios Buddhistas Hispano: el árbol bodhi junto a la línea que ya nombra al instituto, y el imagotipo completo en el pie, junto a la licencia. Ambas versiones —granate sobre claro, blanca sobre oscuro— son las del manual de marca del IEBH, sin recolorear ni recortar. El sitio estrena también icono de pestaña. Antes, en la versión 1.10: Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
 function pintarVersion(){
   const M = IDIOMA === 'en'

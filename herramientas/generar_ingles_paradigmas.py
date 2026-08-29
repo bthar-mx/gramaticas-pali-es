@@ -52,16 +52,26 @@ def main():
     E = ing["paradigmas"]
     L = []
     A = L.append
-    A("# El inglés de los paradigmas, por adjudicar")
+    firmado = bool(ing.get("adjudicado"))
+    A("# El inglés de los paradigmas" + ("" if firmado else ", por adjudicar"))
     A("")
-    A("*Borrador de la sesión 35 (2026-08-29). El español manda: es lo que")
-    A("transcriben los documentos del IEBH. El inglés de esta columna lo")
-    A("redactó el chat y **no está adjudicado**.*")
+    A("*Redactado en la sesión 35 (2026-08-29). El español manda: es lo que")
+    A("transcriben los documentos del IEBH.*")
     A("")
-    A("Mientras `adjudicado` sea `false` en `recursos/paradigmas/ingles.json`,")
-    A("`generar_paradigmas.py` comprueba el borrador pero **no lo publica**: el")
-    A("modo inglés de la página muestra el español, y el pie en inglés lo dice.")
-    A("Firmarlo es poner `\"adjudicado\": true` con `adjudicado_por` y `fecha`.")
+    if firmado:
+        A("**Adjudicado por {0} el {1}.** El inglés de esta columna es ya el"
+          .format(ing.get("adjudicado_por") or "?", ing.get("fecha") or "?"))
+        A("que publica la página: `generar_paradigmas.py` lo inyecta y el pie")
+        A("en inglés lo acredita. Este documento queda como el cotejo con el")
+        A("que se firmó, y como el sitio donde revisarlo si algo hubiera que")
+        A("enmendar.")
+    else:
+        A("El inglés de esta columna lo redactó el chat y **no está")
+        A("adjudicado**. Mientras `adjudicado` sea `false` en")
+        A("`recursos/paradigmas/ingles.json`, `generar_paradigmas.py` comprueba")
+        A("el borrador pero **no lo publica**: el modo inglés de la página")
+        A("muestra el español, y el pie en inglés lo dice. Firmarlo es poner")
+        A("`\"adjudicado\": true` con `adjudicado_por` y `fecha`.")
     A("")
     A("Las **formas pāḷi no están aquí**: no se traducen, y no hay nada que")
     A("adjudicar en ellas. Lo que sigue es sólo la prosa.")

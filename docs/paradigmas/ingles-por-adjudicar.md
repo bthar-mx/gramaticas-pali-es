@@ -1,13 +1,13 @@
-# El inglés de los paradigmas, por adjudicar
+# El inglés de los paradigmas
 
-*Borrador de la sesión 35 (2026-08-29). El español manda: es lo que
-transcriben los documentos del IEBH. El inglés de esta columna lo
-redactó el chat y **no está adjudicado**.*
+*Redactado en la sesión 35 (2026-08-29). El español manda: es lo que
+transcriben los documentos del IEBH.*
 
-Mientras `adjudicado` sea `false` en `recursos/paradigmas/ingles.json`,
-`generar_paradigmas.py` comprueba el borrador pero **no lo publica**: el
-modo inglés de la página muestra el español, y el pie en inglés lo dice.
-Firmarlo es poner `"adjudicado": true` con `adjudicado_por` y `fecha`.
+**Adjudicado por el IEBH el 2026-08-29.** El inglés de esta columna es ya el
+que publica la página: `generar_paradigmas.py` lo inyecta y el pie
+en inglés lo acredita. Este documento queda como el cotejo con el
+que se firmó, y como el sitio donde revisarlo si algo hubiera que
+enmendar.
 
 Las **formas pāḷi no están aquí**: no se traducen, y no hay nada que
 adjudicar en ellas. Lo que sigue es sólo la prosa.
