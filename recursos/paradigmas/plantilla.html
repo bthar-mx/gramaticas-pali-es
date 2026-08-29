@@ -142,28 +142,12 @@ h1 .dia{color:var(--haritala)}
    (absolute/fixed): un position:relative posterior los sacaría de su sitio
    y los dejaría en la esquina del documento — es lo que pasaba. */
 #burger{position:relative}
-/* Esta página no tiene el motor de globos de Raíces: usa el globo por CSS
-   de la insignia de versión, y estos dos controles se suman a él. El
-   «title» del navegador es diminuto y no se puede estilar. */
-.sb-close[data-tip]:hover::after,
-#volver-barra[data-tip]:hover::after,
-#burger[data-tip]:hover::after,
-.version-badge[data-tip]:hover::after,
-.version-badge[data-tip].on::after{content:attr(data-tip);
-  position:absolute;top:calc(100% + 8px);left:0;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
-  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--serif);
-  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
-  min-width:160px;max-width:min(340px,70vw);z-index:100;
-  box-shadow:0 3px 12px rgba(0,0,0,.12)}
-.sb-close[data-tip]:hover::after{
-  /* Mismo caso que en los capítulos: la barra recorta y el globo no cabe.
-     En «fixed» se sale de ella y se pone al lado, sobre el texto. */
-  position:fixed;left:250px;top:14px;right:auto;bottom:auto;max-width:320px}
-#burger[data-tip]:hover::after{left:0;top:calc(100% + 8px);text-transform:none;font-weight:400}
-/* El ☰ fijo está en la esquina: su globo, debajo y hacia la derecha. */
-#volver-barra[data-tip]:hover::after{
-  top:calc(100% + 8px);left:0;text-transform:none;font-weight:400}
+/* 2026-08-29: esta página tenía DOS motores de globos —el de CSS (::after)
+   para la insignia y los ☰, y el rótulo NATIVO del navegador (title=) para
+   el tema, el ↑, Enlace, Copiar y «doc ↗»—, y el nativo es diminuto e
+   inestilizable. Los dos se pliegan ahora al #tip que la página ya tenía
+   para los suttas y los casos, en su variante LLANA: un solo globo, un solo
+   tamaño que ajustar, y el mismo trato que en el solucionador. */
 .version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
 .hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
       border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
@@ -273,6 +257,21 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 #tip .te{margin:5px 0 0;color:var(--soot);font-size:15px}
 #tip .tk{font-family:var(--mono);font-size:10.5px;color:var(--haritala);margin:8px 0 0;
   letter-spacing:.06em;text-transform:uppercase}
+/* El globo LLANO: el mismo #tip con texto corrido, para lo que antes llevaba
+   el ::after de CSS o el «title» nativo. 15 px — el nativo rondaba los 11. */
+#tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
+#tip.llano p{margin:0}
+
+/* ---------- inglés a demanda (pedido del IEBH, 2026-08-29), como en
+   /recursos/raices/ y en el solucionador: el botón EN alterna el idioma de
+   la interfaz y el navegador lo recuerda (clave pali_paradigmas_en).
+   Las FORMAS no se tocan nunca: son pāḷi, y son el objeto de la página.
+   La prosa del IEBH que viaja en los datos —las glosas de cada paradigma,
+   las familias, las notas de transcripción— espera adjudicación y hasta
+   entonces se muestra en español también en modo inglés. */
+body.en .i-es{display:none}
+body:not(.en) .i-en{display:none}
+.icon-btn.on{background:var(--nila);color:var(--ola-2);border-color:var(--nila)}
 
 /* ---------- volver al inicio (igual que en los capítulos) ---------- */
 #top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
@@ -368,7 +367,7 @@ footer a{color:var(--nila)}
 <aside class="sidebar" id="sidebar" aria-label="Índice">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
     data-tip="Aparta el índice y el texto ocupa su sitio. El ☰ se queda en su sitio para devolverlo.">☰</button>
-  <div class="sb-brand"><b>Paradigmas</b><span class="lbl">Declinación nominal y pronominal</span></div>
+  <div class="sb-brand"><b>Paradigmas</b><span class="lbl i-es">Declinación nominal y pronominal</span><span class="lbl i-en">Nominal and pronominal declension</span></div>
   <nav id="sbnav"></nav>
 </aside>
 
@@ -378,7 +377,8 @@ footer a{color:var(--nila)}
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
       <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
       <h1>Paradigmas de declinaci<span class="dia">ó</span>n</h1>
-      <p class="tag">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
+      <p class="tag i-es">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
+      <p class="tag i-en">The declension tables of the Pāḷi noun and pronoun, with every variant.</p>
       <span class="version-badge" id="vbadge"></span>
     </div>
     <div class="hero" id="hero" aria-hidden="true"></div>
@@ -392,17 +392,21 @@ footer a{color:var(--nila)}
     <span class="filtros tema" id="f-tema" role="group" aria-label="Filtrar por tema"></span>
     <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
       aria-expanded="true">☰</button>
-    <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+    <button class="icon-btn" id="en-btn" aria-pressed="false"
+      aria-label="Interface in English / Interfaz en español"
+      data-tip="Interface in English / Interfaz en español">EN</button>
+    <button class="icon-btn" id="theme" aria-label="Cambiar tema" data-tip="Claro / oscuro">◐</button>
     <span class="count" id="count"></span>
   </div>
 </div>
 
 <main class="wrap" id="out"></main>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
-<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+<button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio">↑</button>
 
 <footer class="wrap">
   <p class="version-foot" id="vfoot"></p>
+  <div class="i-es">
   <p><strong>Fuente.</strong> Los 83 paradigmas proceden de los documentos de declinación preparados por
   Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano, transcritos aquí tal como están,
   con las variantes de cada celda separadas. Las formas entre paréntesis se dan así en el documento.
@@ -416,11 +420,34 @@ footer a{color:var(--nila)}
   <p><strong>Véase también.</strong> El capítulo que prescribe estas inflexiones, en
   <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; la referencia interactiva de
   <a href="../sandhi/">sandhi</a>; y la <a href="../nombre/">formación del nombre</a> paso a paso.</p>
+  </div>
 
-  <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
+  <div class="i-en">
+  <p><strong>Source.</strong> The 83 paradigms come from the declension documents prepared by
+  Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano, transcribed here exactly as they
+  stand, with the variants of each cell separated. Forms in parentheses are given that way in the
+  document. The feminine paradigm of <i>go</i> (F-O) is the same document as the masculine (M-O1).</p>
+  <p><strong>How to read the tables.</strong> The eight rows are the nominal inflections, named by their
+  ordinal with the Pāḷi beside it, as in the translation of Kaccāyana. Hovering over the name of an
+  inflection — or tapping it, on a phone — shows the corresponding grammatical case: first = nominative,
+  second = accusative, third = instrumental, fourth = dative, fifth = ablative, sixth = genitive/possessive,
+  seventh = locative. The vocative (<i>ālapana</i>) has a row of its own; a dash «—» means the paradigm
+  has no such form.</p>
+  <p><strong>See also.</strong> The chapter that prescribes these inflections, in
+  <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; the interactive reference on
+  <a href="../sandhi/">sandhi</a>; and <a href="../nombre/">noun formation</a>, step by step.</p>
+  <p class="parcial"><em>The Pāḷi forms are never translated: they are the object of this page. The
+  glosses of each paradigm, the family notes and the transcription notes are the IEBH's own words and
+  are still in Spanish here, awaiting their English adjudication.</em></p>
+  </div>
+
+  <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</span><span class="i-en">Prepared by Bhikkhu Nandisena<br>
+  This material may be reproduced for personal use and distributed free of charge.<br>
+  Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under licence
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</span></p>
 </footer>
 
 <script>
@@ -440,16 +467,126 @@ const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&g
    entienda— no debe llevarse por delante el pintado de la página. */
 const mq = c => { try{ return !!(window.matchMedia && matchMedia(c).matches); }catch(e){ return false; } };
 
+/* ---------- inglés a demanda: el diccionario de la interfaz ----------
+   Pedido del IEBH (2026-08-29), con el mismo patrón que /recursos/raices/ y
+   el solucionador: bloques duplicados .i-es/.i-en para la prosa, y este
+   diccionario para todo lo que se pinta desde JavaScript.
+
+   Lo que NO está aquí, a propósito:
+   · las FORMAS pāḷi — son el objeto de la página y no se traducen;
+   · el pāḷi de las inflexiones (paṭhamā, ālapana…) — va igual en los dos;
+   · la prosa del IEBH que viaja en los datos (la glosa de cada paradigma,
+     las familias, las notas de transcripción): es suya, y espera su
+     adjudicación en inglés. Hasta entonces se muestra en español, y el pie
+     en inglés lo dice. Mismo criterio que los textos del MOTOR en el
+     solucionador. */
+let IDIOMA = 'es';
+try { if(localStorage.getItem('pali_paradigmas_en') === '1') IDIOMA = 'en'; } catch(e){}
+/* La clase del body, cuanto antes: si esperara al final del guion, la prosa
+   española asomaría un instante antes de dar paso a la inglesa. */
+if(IDIOMA === 'en'){ document.body.classList.add('en'); document.documentElement.lang = 'en'; }
+const TXT = {
+  es: {
+    sb_lbl: 'Declinación nominal y pronominal',
+    ph_buscar: 'Buscar paradigma o forma — «purisa», «rannā», «bhikkhave»…',
+    a_buscar: 'Buscar', a_gen: 'Filtrar por género', a_tema: 'Filtrar por tema',
+    a_indice: 'Mostrar u ocultar el índice', a_tema_btn: 'Cambiar tema',
+    t_tema: 'Claro / oscuro', a_arriba: 'Volver al inicio', t_arriba: 'Volver al inicio',
+    a_mostrar_ind: 'Mostrar el índice', a_ocultar_ind: 'Ocultar el índice',
+    t_mostrar_ind: 'Mostrar otra vez el índice al lado del texto.',
+    t_ocultar_ind: 'Aparta el índice y el texto ocupa su sitio.',
+    t_ocultar_sb: 'Aparta el índice y el texto ocupa su sitio. El ☰ se queda en su sitio para devolverlo.',
+    gens: [['all','Todos'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neutro'],
+           ['pronombre','Pronombres'],['numeral','Numerales'],['sufijos','Sufijos']],
+    tema_lbl: 'Tema',
+    secs: [['masculino','Masculinos','tema nominal masculino'],
+           ['femenino','Femeninos','tema nominal femenino'],
+           ['neutro','Neutros','tema nominal neutro'],
+           ['pronombre','Pronombres','sabbanāma — con género y sin él'],
+           ['numeral','Numerales','pañca, kati'],
+           ['sufijos','Sufijos','vibhatti-paccaya']],
+    columnas: {'singular':'singular', 'plural':'plural',
+               'plural masculino':'plural masculino',
+               'plural femenino':'plural femenino',
+               'plural neutro':'plural neutro'},
+    caso: c => '= caso ' + c,
+    igual: (cod, pal) => `Se declina igual que el masculino:
+      <a href="#${cod}">${pal}</a> — mismo documento.`,
+    igual_txt: q => 'Se declina igual que ' + q + ' (mismo documento).',
+    th_suf: 'uso · ejemplos · sutta',
+    cuenta: (n, t) => `${n} / ${t} entradas`,
+    vacio: q => `Sin resultados para «${q}».`,
+    vacio_lbl: 'Los diacríticos son opcionales: «ranna» encuentra «raññā».',
+    tk_sutta: raton => (raton ? 'clic' : 'toca otra vez') + ' para abrir el sutta',
+    b_enlace: 'Enlace', b_copiar: 'Copiar', b_copiado: '✓ ¡Copiado!',
+    t_enlace: 'Copiar enlace a este paradigma',
+    t_copiar: 'Copiar el paradigma al portapapeles',
+    t_doc: 'Documento de origen (IEBH)',
+    col_infl: 'inflexión',
+    pie_copia: 'Paradigmas de declinación · Instituto de Estudios Buddhistas Hispano',
+    version: 'Versión',
+    hero: [['puriso','primera sg.'],['purisā','primera pl.'],
+           ['purisena','tercera sg.'],['purisehi, purisebhi','tercera pl.'],
+           ['purise, purisasmiṃ, purisamhi','séptima sg.']]
+  },
+  en: {
+    sb_lbl: 'Nominal and pronominal declension',
+    ph_buscar: 'Search a paradigm or a form — «purisa», «rannā», «bhikkhave»…',
+    a_buscar: 'Search', a_gen: 'Filter by gender', a_tema: 'Filter by stem',
+    a_indice: 'Show or hide the index', a_tema_btn: 'Change theme',
+    t_tema: 'Light / dark', a_arriba: 'Back to top', t_arriba: 'Back to top',
+    a_mostrar_ind: 'Show the index', a_ocultar_ind: 'Hide the index',
+    t_mostrar_ind: 'Bring the index back beside the text.',
+    t_ocultar_ind: 'Puts the index aside and the text takes its place.',
+    t_ocultar_sb: 'Puts the index aside and the text takes its place. The ☰ stays where it is to bring it back.',
+    gens: [['all','All'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neuter'],
+           ['pronombre','Pronouns'],['numeral','Numerals'],['sufijos','Suffixes']],
+    tema_lbl: 'Stem',
+    secs: [['masculino','Masculines','masculine nominal stem'],
+           ['femenino','Feminines','feminine nominal stem'],
+           ['neutro','Neuters','neuter nominal stem'],
+           ['pronombre','Pronouns','sabbanāma — with gender and without'],
+           ['numeral','Numerals','pañca, kati'],
+           ['sufijos','Suffixes','vibhatti-paccaya']],
+    columnas: {'singular':'singular', 'plural':'plural',
+               'plural masculino':'masculine plural',
+               'plural femenino':'feminine plural',
+               'plural neutro':'neuter plural'},
+    caso: c => '= ' + c + ' case',
+    igual: (cod, pal) => `Declined exactly like the masculine:
+      <a href="#${cod}">${pal}</a> — same document.`,
+    igual_txt: q => 'Declined exactly like ' + q + ' (same document).',
+    th_suf: 'use · examples · sutta',
+    cuenta: (n, t) => `${n} / ${t} entries`,
+    vacio: q => `No results for «${q}».`,
+    vacio_lbl: 'Diacritics are optional: «ranna» finds «raññā».',
+    tk_sutta: raton => raton ? 'click to open the sutta' : 'tap again to open the sutta',
+    b_enlace: 'Link', b_copiar: 'Copy', b_copiado: '✓ Copied!',
+    t_enlace: 'Copy a link to this paradigm',
+    t_copiar: 'Copy the paradigm to the clipboard',
+    t_doc: 'Source document (IEBH)',
+    col_infl: 'inflection',
+    pie_copia: 'Declension paradigms · Instituto de Estudios Buddhistas Hispano',
+    version: 'Version',
+    hero: [['puriso','first sg.'],['purisā','first pl.'],
+           ['purisena','third sg.'],['purisehi, purisebhi','third pl.'],
+           ['purise, purisasmiṃ, purisamhi','seventh sg.']]
+  }
+};
+const tr = k => (TXT[IDIOMA][k] !== undefined ? TXT[IDIOMA][k] : TXT.es[k]);
+/* Las ocho inflexiones y los ocho casos viajan en los datos; el inglés, al
+   lado, en las mismas listas (inflexiones_en / casos_en). Si faltaran, se
+   cae al español y la página sigue en pie. */
+const infl = i => ((IDIOMA === 'en' && DATA.inflexiones_en) || DATA.inflexiones)[i]
+                  || DATA.inflexiones[i];
+const caso = i => ((IDIOMA === 'en' && DATA.casos_en) || DATA.casos)[i] || DATA.casos[i];
+const columna = c => (tr('columnas')[c] || c);
+
 /* ---------- clasificación ---------- */
-const GENS = [['all','Todos'],['masculino','Masc.'],['femenino','Fem.'],['neutro','Neutro'],
-              ['pronombre','Pronombres'],['numeral','Numerales'],['sufijos','Sufijos']];
-const TEMAS = [['all','Tema'],['a','a'],['ā','ā'],['i','i'],['ī','ī'],['u','u'],['ū','ū'],['o','o']];
-const SECS = [['masculino','Masculinos','tema nominal masculino'],
-              ['femenino','Femeninos','tema nominal femenino'],
-              ['neutro','Neutros','tema nominal neutro'],
-              ['pronombre','Pronombres','sabbanāma — con género y sin él'],
-              ['numeral','Numerales','pañca, kati'],
-              ['sufijos','Sufijos','vibhatti-paccaya']];
+const GENS = () => tr('gens');
+const TEMAS = () => [['all', tr('tema_lbl')],['a','a'],['ā','ā'],['i','i'],['ī','ī'],
+                     ['u','u'],['ū','ū'],['o','o']];
+const SECS = () => tr('secs');
 function genOf(p){
   if(p.genero.startsWith('pronombre')) return 'pronombre';
   return p.genero;                      /* masculino · femenino · neutro · numeral · sufijos */
@@ -500,11 +637,13 @@ function celda(variantes){
   return `<td>${html}</td>`;
 }
 function tabla(p){
-  const head = '<tr><th></th>' + p.columnas.map(c => `<th>${esc(c)}</th>`).join('') + '</tr>';
+  const head = '<tr><th></th>' + p.columnas.map(c => `<th>${esc(columna(c))}</th>`).join('') + '</tr>';
   const filas = p.filas.map((fila,i) => {
-    const [ord, pali] = DATA.inflexiones[i].split(' (');
-    /* El «title» es para el ratón; los data-… los usa el tooltip táctil. */
-    return `<tr><th title="= caso ${esc(DATA.casos[i])}" data-caso="${esc(DATA.casos[i])}"`
+    const [ord, pali] = infl(i).split(' (');
+    /* El caso ya tenía globo propio (data-caso/data-ord) y el «title» nativo
+       encima; desde el 2026-08-29 se queda sólo con el globo, que ahora sale
+       también con el ratón — no sólo con el dedo. */
+    return `<tr><th data-caso="${esc(caso(i))}"`
          + ` data-ord="${esc(ord)}">${esc(ord)} <i>(${esc(pali)}</i></th>`
          + fila.map(celda).join('') + '</tr>';
   }).join('');
@@ -521,8 +660,8 @@ function card(p){
   let cuerpo = '';
   if(p.igual_que){
     const ref = POR_CODIGO[p.igual_que];
-    cuerpo = `<p class="igual">Se declina igual que el masculino:
-      <a href="#${idOf(ref)}">${esc(ref.codigo)} · <i>${esc(ref.paradigma)}</i></a> — mismo documento.</p>`;
+    cuerpo = `<p class="igual">${tr('igual')(idOf(ref),
+      `${esc(ref.codigo)} · <i>${esc(ref.paradigma)}</i>`)}</p>`;
   } else if(p.filas){
     cuerpo = tabla(p);
   } else {
@@ -548,7 +687,7 @@ function card(p){
         <td class="multi">${usos.map(sentido).join('')}</td></tr>`;
     }).join('');
     cuerpo = `<p style="margin:10px 0 0">${hi(p.texto||'')}</p>
-      <table class="tbl suf"><thead><tr><th></th><th>uso · ejemplos · sutta</th></tr></thead>
+      <table class="tbl suf"><thead><tr><th></th><th>${esc(tr('th_suf'))}</th></tr></thead>
       <tbody>${filas}</tbody></table>`;
   }
   const familia = p.familia ? `<p class="familia">${hi(p.familia)}</p>` : '';
@@ -558,11 +697,11 @@ function card(p){
       <span class="cod">${esc(p.codigo)}</span>
       <p class="title">${titulo(p)}</p>
       <span class="meta">${p.subtitulo ? esc(p.subtitulo) + ' · ' : ''}
-        <button class="mini-btn" data-share="${idOf(p)}" title="Copiar enlace a este paradigma">
+        <button class="mini-btn" data-share="${idOf(p)}" data-tip="${esc(tr('t_enlace'))}">
           <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><circle cx="15" cy="5" r="2"/><circle cx="5" cy="10" r="2"/><circle cx="15" cy="15" r="2"/><path d="M7 11l6 3M7 9l6-3"/></svg>
-          Enlace</button>
-        <button class="mini-btn" data-copy="${idOf(p)}" title="Copiar el paradigma al portapapeles">Copiar</button>
-        <a href="${docURL}" target="_blank" rel="noopener" title="Documento de origen (IEBH)">doc ↗</a></span>
+          ${esc(tr('b_enlace'))}</button>
+        <button class="mini-btn" data-copy="${idOf(p)}" data-tip="${esc(tr('t_copiar'))}">${esc(tr('b_copiar'))}</button>
+        <a href="${docURL}" target="_blank" rel="noopener" data-tip="${esc(tr('t_doc'))}">doc ↗</a></span>
     </div>
     ${cuerpo}${familia}${notas}
   </article>`;
@@ -575,23 +714,28 @@ function visible(p){
 }
 function render(){
   let html = '', total = 0;
-  SECS.forEach(([id, nombre, sub]) => {
+  SECS().forEach(([id, nombre, sub]) => {
     const lista = DATA.paradigmas.filter(p => p.gen === id && visible(p));
     if(!lista.length) return;
     total += lista.length;
-    html += `<div class="sec" id="sec-${id}"><h2>${nombre}</h2><span class="lbl">${sub}</span><span class="rule"></span></div>`;
+    html += `<div class="sec" id="sec-${id}"><h2>${esc(nombre)}</h2><span class="lbl">${esc(sub)}</span><span class="rule"></span></div>`;
     html += lista.map(card).join('');
   });
-  cnt.textContent = `${total} / ${DATA.paradigmas.length} entradas`;
-  out.innerHTML = html || `<div class="empty"><p>Sin resultados para «${esc(q)}».</p>
-    <p class="lbl">Los diacríticos son opcionales: «ranna» encuentra «raññā».</p></div>`;
+  cnt.textContent = tr('cuenta')(total, DATA.paradigmas.length);
+  out.innerHTML = html || `<div class="empty"><p>${esc(tr('vacio')(q))}</p>
+    <p class="lbl">${esc(tr('vacio_lbl'))}</p></div>`;
 }
 
 /* ---------- filtros ---------- */
+/* Se pinta cada vez que cambia el idioma; el oyente se pone UNA vez, o cada
+   repintado dejaría un oyente más y un clic haría el trabajo N veces. */
 function botones(cont, defs, get, set, despues){
   const el = document.getElementById(cont);
-  el.innerHTML = defs.map(([v,t],i) =>
-    `<button data-v="${v}" aria-pressed="${i===0}">${t}</button>`).join('');
+  const puesto = get();
+  el.innerHTML = defs.map(([v,t]) =>
+    `<button data-v="${v}" aria-pressed="${v === puesto}">${esc(t)}</button>`).join('');
+  if(el.dataset.atado) return;
+  el.dataset.atado = '1';
   el.addEventListener('click', e => {
     const b = e.target.closest('button'); if(!b) return;
     set(b.dataset.v);
@@ -599,6 +743,10 @@ function botones(cont, defs, get, set, despues){
     render();
     if(despues) despues(b.dataset.v);
   });
+}
+function pintarFiltros(){
+  botones('f-gen',  GENS(),  () => gen,  v => gen = v, sincronizarBarra);
+  botones('f-tema', TEMAS(), () => tema, v => tema = v);
 }
 /* Al filtrar por género, la barra lateral acompaña: se abre esa sección
    (y se cierran las demás); con «Todos» se pliegan todas. */
@@ -609,38 +757,56 @@ function sincronizarBarra(v){
     if(abre) d.scrollIntoView({block:'nearest'});
   });
 }
-botones('f-gen',  GENS,  () => gen,  v => gen = v, sincronizarBarra);
-botones('f-tema', TEMAS, () => tema, v => tema = v);
+pintarFiltros();
 document.getElementById('q').addEventListener('input', e => { q = e.target.value; render(); });
 
 /* ---------- portada: una fila del paradigma, revelada ---------- */
-(function(){
-  const lineas = [['puriso','primera sg.'],['purisā','primera pl.'],
-                  ['purisena','tercera sg.'],['purisehi, purisebhi','tercera pl.'],
-                  ['purise, purisasmiṃ, purisamhi','séptima sg.']];
+function pintarHero(animar){
   const el = document.getElementById('hero');
-  el.innerHTML = lineas.map(([f,r]) =>
-    `<div><b>${f}</b><span class="ref">${r}</span></div>`).join('');
+  el.innerHTML = tr('hero').map(([f,r]) =>
+    `<div><b>${esc(f)}</b><span class="ref">${esc(r)}</span></div>`).join('');
   const rows = el.querySelectorAll(':scope > div');
   const reduce = mq('(prefers-reduced-motion: reduce)');
-  rows.forEach((r,i) => reduce ? r.classList.add('on') : setTimeout(() => r.classList.add('on'), 260 + i*220));
-})();
+  /* Al cambiar de idioma ya se vio la animación: se pinta puesto y ya. */
+  rows.forEach((r,i) => (reduce || !animar)
+    ? r.classList.add('on')
+    : setTimeout(() => r.classList.add('on'), 260 + i*220));
+}
+pintarHero(true);
 
 /* ---------- versión ---------- */
-const VERSION = '1.13', VERSION_DATE = '2026-08-28';
-const VERSION_NOTE = 'El índice de la izquierda se pliega con el ☰ de su propia esquina, y vuelve con ese mismo ☰, que se queda quieto en su sitio, o con el de la barra de controles; en pantalla ancha el texto ocupa el sitio que deja. Se abre siempre al entrar. Antes, en la versión 1.12: El árbol del IEBH pasa a estar en la cabecera de todas las páginas del sitio, no sólo en las que nombran al instituto: es la marca de quien publica, no un pie de la línea que tiene al lado. Antes, en la versión 1.11: Aparece la marca del Instituto de Estudios Buddhistas Hispano: el árbol bodhi junto a la línea que ya nombra al instituto, y el imagotipo completo en el pie, junto a la licencia. Ambas versiones —granate sobre claro, blanca sobre oscuro— son las del manual de marca del IEBH, sin recolorear ni recortar. El sitio estrena también icono de pestaña. Antes, en la versión 1.10: Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
-(function(){
-  const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
-           'septiembre','octubre','noviembre','diciembre'];
+const VERSION = '1.14', VERSION_DATE = '2026-08-29';
+const VERSION_NOTE_EN = 'English on demand: the EN button switches the interface between Spanish '
+  + 'and English, and the browser remembers the choice. The Pāḷi forms are never translated — they '
+  + 'are the object of this page — and the IEBH’s own prose that travels in the data (the gloss '
+  + 'of each paradigm, the family notes, the transcription notes) is still shown in Spanish while it '
+  + 'awaits its English adjudication. The page’s tooltips all pass through one mechanism now, at '
+  + 'a readable size: the browser’s own tiny labels are gone. Earlier version notes are kept in '
+  + 'Spanish.';
+const VERSION_NOTE = 'Inglés a demanda: el botón EN alterna la interfaz entre el español y el '
+  + 'inglés, y el navegador recuerda la elección. Las formas pāḷi no se traducen nunca —son el objeto '
+  + 'de la página— y la prosa del IEBH que viaja en los datos (la glosa de cada paradigma, las '
+  + 'familias, las notas de transcripción) se sigue mostrando en español mientras espera su '
+  + 'adjudicación en inglés. Todos los globos de la página pasan ya por un solo mecanismo y a un '
+  + 'tamaño legible: se acabaron los rótulos diminutos del navegador. Antes, en la versión 1.13: '
+  + 'El índice de la izquierda se pliega con el ☰ de su propia esquina, y vuelve con ese mismo ☰, que se queda quieto en su sitio, o con el de la barra de controles; en pantalla ancha el texto ocupa el sitio que deja. Se abre siempre al entrar. Antes, en la versión 1.12: El árbol del IEBH pasa a estar en la cabecera de todas las páginas del sitio, no sólo en las que nombran al instituto: es la marca de quien publica, no un pie de la línea que tiene al lado. Antes, en la versión 1.11: Aparece la marca del Instituto de Estudios Buddhistas Hispano: el árbol bodhi junto a la línea que ya nombra al instituto, y el imagotipo completo en el pie, junto a la licencia. Ambas versiones —granate sobre claro, blanca sobre oscuro— son las del manual de marca del IEBH, sin recolorear ni recortar. El sitio estrena también icono de pestaña. Antes, en la versión 1.10: Los saltos desde la barra lateral son ya inmediatos: la página mide unos 35.000 px y el desplazamiento animado tardaba segundos en recorrerla. Ahora se anima sólo dentro de dos pantallas de distancia, que es donde ayuda a situarse; más lejos, salta de golpe. Igual el botón «↑». Antes, en la versión 1.9, la página se hizo táctil: los tooltips que antes sólo respondían al cursor —el sutta de cada §N, el caso de cada inflexión, esta misma nota de versión— se abren ahora con un toque, y un segundo toque sobre el §N abre el sutta. Los botones de filtro y demás controles pasan a 44 px en pantallas de dedo. Con ratón no cambia nada. Sin cambios en las formas ni en los textos.';
+function pintarVersion(){
+  const M = IDIOMA === 'en'
+    ? ['January','February','March','April','May','June','July','August',
+       'September','October','November','December']
+    : ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+       'septiembre','octubre','noviembre','diciembre'];
   const [y,m,d] = VERSION_DATE.split('-').map(Number);
-  const largo = `${d} de ${M[m-1]} de ${y}`;
-  const tip = `Versión ${VERSION} · ${largo} · ${VERSION_NOTE}`;
+  const largo = IDIOMA === 'en' ? `${M[m-1]} ${d}, ${y}` : `${d} de ${M[m-1]} de ${y}`;
+  const nota = IDIOMA === 'en' ? VERSION_NOTE_EN : VERSION_NOTE;
+  const tip = `${tr('version')} ${VERSION} · ${largo} · ${nota}`;
   const b = document.getElementById('vbadge');
   b.setAttribute('data-tip', tip); b.setAttribute('aria-label', tip);
   b.innerHTML = `v${VERSION}<time datetime="${VERSION_DATE}">${VERSION_DATE}</time>`;
   document.getElementById('vfoot').innerHTML =
-    `<strong>Versión ${VERSION}</strong> — <time datetime="${VERSION_DATE}">${largo}</time>. ${esc(VERSION_NOTE)}`;
-})();
+    `<strong>${tr('version')} ${VERSION}</strong> — <time datetime="${VERSION_DATE}">${largo}</time>. ${esc(nota)}`;
+}
+pintarVersion();
 
 /* ---------- tema ---------- */
 const store = {
@@ -658,9 +824,9 @@ document.getElementById('theme').onclick = () => {
 };
 
 /* ---------- barra lateral ---------- */
-(function(){
+function pintarBarraLateral(){
   let h = '';
-  SECS.forEach(([id, nombre]) => {
+  SECS().forEach(([id, nombre]) => {
     const lista = DATA.paradigmas.filter(p => p.gen === id);
     if(!lista.length) return;
     let items = '', n = lista.length;
@@ -675,10 +841,11 @@ document.getElementById('theme').onclick = () => {
         return `<a href="#${idOf(p)}" data-goto="${idOf(p)}"><b>${esc(p.codigo)}</b><i>${esc(lema)}</i></a>`;
       }).join('');
     }
-    h += `<details class="sb-sec" data-sec="${id}"><summary>${nombre} · ${n}</summary>${items}</details>`;
+    h += `<details class="sb-sec" data-sec="${id}"><summary>${esc(nombre)} · ${n}</summary>${items}</details>`;
   });
   document.getElementById('sbnav').innerHTML = h;
-})();
+}
+pintarBarraLateral();
 
 const sidebar = document.getElementById('sidebar'), scrim = document.getElementById('scrim');
 const closeSb = () => { sidebar.classList.remove('open'); scrim.classList.remove('on'); };
@@ -692,10 +859,8 @@ function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
   b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
-  b.setAttribute('data-tip', oculta
-    ? 'Mostrar otra vez el índice al lado del texto.'
-    : 'Aparta el índice y el texto ocupa su sitio.');
-  b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  b.setAttribute('data-tip', tr(oculta ? 't_mostrar_ind' : 't_ocultar_ind'));
+  b.setAttribute('aria-label', tr(oculta ? 'a_mostrar_ind' : 'a_ocultar_ind'));
 }
 (function(){
   /* El índice se abre siempre al llegar. Plegarlo es una comodidad del
@@ -784,12 +949,17 @@ function tipHTML(n){
   return `<span class="tn">Nāma-Kappa · §${n}</span>
     <p class="tp">${esc(s.pali)}</p>
     ${s.es ? `<p class="te">${esc(s.es)}</p>` : ''}
-    <p class="tk">${conRaton() ? 'clic' : 'toca otra vez'} para abrir el sutta</p>`;
+    <p class="tk">${esc(tr('tk_sutta')(conRaton()))}</p>`;
 }
-/* Con ratón, el caso lo da el «title» nativo; con el dedo, este tooltip. */
+/* El caso de cada inflexión: el mismo globo con ratón y con el dedo. */
 function casoHTML(th){
   return `<span class="tn">${esc(th.dataset.ord || '')}</span>
-    <p class="te" style="margin:0">= caso ${esc(th.dataset.caso || '')}</p>`;
+    <p class="te" style="margin:0">${esc(tr('caso')(th.dataset.caso || ''))}</p>`;
+}
+/* El globo LLANO: texto corrido, para lo que antes llevaba ::after o title=. */
+function llanoHTML(el){
+  const t = el.getAttribute('data-tip');
+  return t ? '<p>' + esc(t) + '</p>' : '';
 }
 function placeTip(el){
   const r = el.getBoundingClientRect();
@@ -803,14 +973,16 @@ function placeTip(el){
   tip.style.left = x + 'px'; tip.style.top = y + 'px';
   tip.style.visibility = '';
 }
-function pintarTip(el, html){
+function pintarTip(el, html, llano){
   if(!html) return;
+  tip.classList.toggle('llano', !!llano);
   tip.innerHTML = html;
   tip.setAttribute('aria-hidden','false');
   placeTip(el);
   tipDe = el;
 }
 function showTip(el){ pintarTip(el, tipHTML(el.dataset.sutta)); }
+function showLlano(el){ pintarTip(el, llanoHTML(el), true); }
 function hideTip(){
   clearTimeout(tipT);
   tip.classList.remove('on');
@@ -820,22 +992,29 @@ function hideTip(){
 /* Hover y foco: sólo con ratón. En táctil el navegador emula un «mouseover»
    antes del toque, y sin este filtro el tooltip se abriría solo y el primer
    toque ya navegaría. */
+const SEL_TIP = 'a[data-sutta], [data-tip], .tbl tbody th[data-caso]';
+/* Cuál de los tres globos toca, por el elemento. */
+function abrirTip(el){
+  if(el.matches('a[data-sutta]')) showTip(el);
+  else if(el.hasAttribute('data-caso')) pintarTip(el, casoHTML(el));
+  else showLlano(el);
+}
 document.addEventListener('mouseover', e => {
   if(!conRaton()) return;
-  const a = e.target.closest('a[data-sutta]');
+  const a = e.target.closest(SEL_TIP);
   if(!a) return;
   clearTimeout(tipT);
-  tipT = setTimeout(() => showTip(a), 110);
+  tipT = setTimeout(() => abrirTip(a), 110);
 });
 document.addEventListener('mouseout', e => {
-  if(conRaton() && e.target.closest('a[data-sutta]')) hideTip();
+  if(conRaton() && e.target.closest(SEL_TIP)) hideTip();
 });
 document.addEventListener('focusin', e => {
-  const a = e.target.closest('a[data-sutta]');
-  if(a) showTip(a);
+  const a = e.target.closest(SEL_TIP);
+  if(a) abrirTip(a);
 });
 document.addEventListener('focusout', e => {
-  if(e.target.closest('a[data-sutta]')) hideTip();
+  if(e.target.closest(SEL_TIP)) hideTip();
 });
 addEventListener('scroll', hideTip, {passive:true});
 addEventListener('keydown', e => { if(e.key === 'Escape') hideTip(); });
@@ -850,33 +1029,29 @@ document.addEventListener('click', e => {
     showTip(a);
     return;
   }
-  const th = e.target.closest('.tbl tbody th[data-caso]');
-  if(th){
-    if(conRaton()) return;              /* con ratón basta el «title» nativo */
-    if(tipDe === th) hideTip(); else pintarTip(th, casoHTML(th));
+  /* Con el dedo, un toque abre el globo y el siguiente lo cierra — pero SÓLO
+     en lo que no hace nada por sí mismo: el caso de la inflexión y la
+     insignia de versión. Los botones y los enlaces con globo (◐, ↑, EN, ☰,
+     Enlace, Copiar, doc ↗) tienen que seguir obedeciendo al primer toque:
+     un globo no vale un botón que no responde. */
+  const otro = e.target.closest('.tbl tbody th[data-caso], #vbadge');
+  if(otro){
+    if(conRaton()) return;
+    if(tipDe === otro) hideTip(); else abrirTip(otro);
     return;
   }
   if(!e.target.closest('#tip')) hideTip();
 });
 
-/* La insignia de versión abre su nota al tocarla (con ratón, al pasar). */
-(function(){
-  const b = document.getElementById('vbadge');
-  document.addEventListener('click', e => {
-    if(e.target.closest('#vbadge') && !conRaton()) b.classList.toggle('on');
-    else b.classList.remove('on');
-  });
-})();
-
 /* ---------- copiar paradigma y copiar enlace ---------- */
 function textoParadigma(p){
   const L = [`${p.codigo} · ${p.paradigma}${p.subtitulo ? ' — ' + p.subtitulo : ''}`];
   if(p.igual_que){
-    L.push('Se declina igual que ' + p.igual_que + ' (mismo documento).');
+    L.push(tr('igual_txt')(p.igual_que));
   } else if(p.filas){
-    const cab = ['inflexión', ...p.columnas];
+    const cab = [tr('col_infl'), ...p.columnas.map(columna)];
     const filas = p.filas.map((f,i) =>
-      [DATA.inflexiones[i], ...f.map(c => c.length ? c.join(', ') : '—')]);
+      [infl(i), ...f.map(c => c.length ? c.join(', ') : '—')]);
     const anchos = cab.map((c,j) => Math.max(c.length, ...filas.map(r => r[j].length)));
     L.push('', cab.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd());
     filas.forEach(r =>
@@ -888,13 +1063,13 @@ function textoParadigma(p){
         L.push(`${i ? ' '.repeat(d.s.length) : d.s} — ${u.uso} · ${u.ej.join(', ')} (${u.ref})`)));
   }
   if(p.familia) L.push('', p.familia);
-  L.push('', 'Paradigmas de declinación · Instituto de Estudios Buddhistas Hispano',
+  L.push('', tr('pie_copia'),
          location.href.split('#')[0] + '#' + idOf(p));
   return L.join('\n');
 }
 function avisoCopiado(btn){
   const orig = btn.innerHTML;
-  btn.innerHTML = '✓ ¡Copiado!';
+  btn.innerHTML = esc(tr('b_copiado'));
   btn.classList.add('ok');
   setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('ok'); }, 2000);
 }
@@ -931,6 +1106,53 @@ topBtn.addEventListener('click', () => {
     .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
   medir();
   addEventListener('resize', medir);
+})();
+
+/* ---------- inglés a demanda (pedido del IEBH, 2026-08-29) ----------
+   Todo lo que se pinta desde JavaScript se vuelve a pintar; los bloques
+   .i-es/.i-en los cambia el CSS con la clase del body. */
+(function(){
+  const b = document.getElementById('en-btn');
+  const aplicar = (v, primera) => {
+    IDIOMA = v ? 'en' : 'es';
+    document.body.classList.toggle('en', v);
+    document.documentElement.lang = v ? 'en' : 'es';
+    b.setAttribute('aria-pressed', v ? 'true' : 'false');
+    b.classList.toggle('on', v);
+    try { localStorage.setItem('pali_paradigmas_en', v ? '1' : '0'); } catch(e){}
+
+    /* Los mandos fijos */
+    const q = document.getElementById('q');
+    q.placeholder = tr('ph_buscar');
+    q.setAttribute('aria-label', tr('a_buscar'));
+    document.getElementById('f-gen').setAttribute('aria-label', tr('a_gen'));
+    document.getElementById('f-tema').setAttribute('aria-label', tr('a_tema'));
+    const tema = document.getElementById('theme');
+    tema.setAttribute('aria-label', tr('a_tema_btn'));
+    tema.setAttribute('data-tip', tr('t_tema'));
+    const arriba = document.getElementById('top-btn');
+    arriba.setAttribute('aria-label', tr('a_arriba'));
+    arriba.setAttribute('data-tip', tr('t_arriba'));
+    const volver = document.getElementById('volver-barra');
+    volver.setAttribute('aria-label', tr('a_mostrar_ind'));
+    volver.setAttribute('data-tip', tr('t_mostrar_ind'));
+    const cerrar = document.getElementById('sbclose');
+    cerrar.setAttribute('aria-label', tr('a_ocultar_ind'));
+    cerrar.setAttribute('data-tip', tr('t_ocultar_sb'));
+    /* El ☰ de la barra de controles lo rotula pintarBarra(), que sabe si el
+       índice está plegado o no; aquí no se toca. */
+
+    if(primera) return;                 /* al arrancar, cada cosa se pinta sola */
+    /* Lo pintado, otra vez, en el idioma nuevo */
+    pintarFiltros();
+    pintarBarraLateral();
+    pintarHero(false);
+    pintarVersion();
+    pintarBarra(document.documentElement.classList.contains('sin-barra'));
+    render();
+  };
+  aplicar(IDIOMA === 'en', true);
+  b.onclick = () => aplicar(IDIOMA !== 'en', false);
 })();
 
 render();

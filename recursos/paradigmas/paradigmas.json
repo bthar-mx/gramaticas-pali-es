@@ -2,7 +2,9 @@
  "_nota": "Paradigmas de declinación nominal y pronominal, transcritos de los documentos públicos del IEBH (véase indice.json). Las variantes de cada celda van como lista. Las formas entre paréntesis se conservan tal como están en el documento. Una celda [] corresponde al guion del documento (forma inexistente). La transcripción es literal; toda desviación se señala en «notas».",
  "fuente": "https://docs.google.com/document/d/1QfTBtjov4WrEGOLadb9jB5ApFE4Pf7ZGxpEDeT_d21s/edit",
  "inflexiones": ["primera (paṭhamā)", "vocativo (ālapana)", "segunda (dutiyā)", "tercera (tatiyā)", "cuarta (catutthī)", "quinta (pañcamī)", "sexta (chaṭṭhī)", "séptima (sattamī)"],
+ "inflexiones_en": ["first (paṭhamā)", "vocative (ālapana)", "second (dutiyā)", "third (tatiyā)", "fourth (catutthī)", "fifth (pañcamī)", "sixth (chaṭṭhī)", "seventh (sattamī)"],
  "casos": ["nominativo", "vocativo", "acusativo", "instrumental", "dativo", "ablativo", "genitivo/posesivo", "locativo"],
+ "casos_en": ["nominative", "vocative", "accusative", "instrumental", "dative", "ablative", "genitive/possessive", "locative"],
  "paradigmas": [
   {"codigo": "M-A1", "paradigma": "purisa (hombre)", "genero": "masculino", "doc": "1BolMW0t7CS-T54v0tlWfAbG4HsO7L66b4TKhGwNPLps", "titulo_doc": "M-A1—PURISA (hombre)", "columnas": ["singular", "plural"], "filas": [
    [["puriso"], ["purisā"]],
