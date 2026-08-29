@@ -2548,7 +2548,10 @@ async function revEnviar(boton){
   boton.disabled = true;
   est.textContent = 'enviando…';
   try {
-    const r = await fetch('api/veredictos', { method: 'POST', body: revMD() });
+    // Absoluta a propósito: la página vive en /recursos/solucionador/ y una
+    // ruta relativa iría a /recursos/solucionador/api/veredictos, que el
+    // worker no reconoce y los assets responden 404 (pasó el 2026-08-29).
+    const r = await fetch('/api/veredictos', { method: 'POST', body: revMD() });
     if(r.status === 503){
       est.textContent = 'la cola no está configurada todavía: use «Exportar .md»';
     } else if(!r.ok){
