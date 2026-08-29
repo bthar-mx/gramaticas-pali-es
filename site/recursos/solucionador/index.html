@@ -64,7 +64,22 @@ header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
 .mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
 h1{font-size:clamp(40px,8vw,64px);line-height:.94;margin:0;font-weight:700;letter-spacing:-.02em}
 h1 .dia{color:var(--haritala)}
-.tag{margin:10px 0 0;max-width:44ch;color:var(--soot);font-size:16.5px}
+/* 2026-08-29, pedido del IEBH: la cabecera se estaba comiendo la página, y
+   la página es para resolver sandhis. El reclamo y la declaración de método
+   bajan de cuerpo y se apartan del camino; la caja de texto sube. */
+.tag{margin:8px 0 0;max-width:52ch;color:var(--soot);font-size:14px;line-height:1.5}
+/* La declaración de método: a la vista queda la frase que la nombra —
+   «Proponer y verificar, nunca afirmar.»— y el resto se despliega. */
+.lema{margin:10px 0 0;max-width:60ch;font-size:13px;line-height:1.55;
+  color:var(--soot)}
+.lema>summary{cursor:pointer;list-style:none;font-weight:700;color:var(--ink)}
+.lema>summary::-webkit-details-marker{display:none}
+.lema>summary::after{content:' ▸';font-size:10px;color:var(--haritala);
+  font-weight:400}
+.lema[open]>summary::after{content:' ▾'}
+.lema>summary:hover{color:var(--nila)}
+.lema>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.lema>p{margin:7px 0 0}
 .version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
   font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
   color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
@@ -91,6 +106,17 @@ h1 .dia{color:var(--haritala)}
 .revision[open]>summary::after{content:' ▾'}
 .revision>summary:hover{color:var(--ink)}
 .revision>p{margin:9px 0 0}
+/* El pie plegado (pedido del IEBH, 2026-08-29). Hereda el mando de
+   .revision —el ▸/▾ y el filete verde— pero NO su tipografía: dentro va la
+   prosa del pie, que ya tiene la suya y no debe encogerse por estar
+   plegada. El sumario sí va en pequeño: es un mando, no un texto. */
+.pie-notas{margin:0;font-size:inherit;line-height:inherit;color:inherit;
+  border-left:0;padding-left:0}
+.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
+  padding:4px 0;margin-bottom:2px}
+.pie-notas[open]>summary{margin-bottom:10px}
+.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 
 /* ---------- la caja ---------- */
 .consulta{margin:30px 0 8px}
@@ -278,18 +304,24 @@ body:not(.en) .i-en{display:none}
          al pie, junto a «Fuentes», que es donde ya estaba su compañía; y el
          párrafo del DPD se quitó por duplicado — el pie lo dice desde antes,
          y mejor. -->
-    <p class="tag i-es"><strong>Proponer y verificar, nunca afirmar.</strong> Cada
-    análisis propone un corte y una cadena de aforismos, la aplica, y sólo aparece
-    si reproduce <em>exactamente</em> la forma de entrada; se muestran todas las
-    lecturas que recomponen, porque el sandhi es de veras ambiguo y elegir en
-    silencio sería mentir por omisión. Lo que el motor no sabe, lo calla — y las
-    cifras de lo que encuentra y de lo que falla están en el pie.</p>
-    <p class="tag i-en"><strong>Propose and verify, never assert.</strong> Every
-    analysis proposes a cut and a chain of rules, applies it, and appears only if it
-    reproduces the input form <em>exactly</em>; all the readings that recompose are
-    shown, because sandhi is genuinely ambiguous and choosing silently would be
-    lying by omission. What the engine does not know, it leaves unsaid — and the
-    numbers, for what it finds and what it misses, are in the footer.</p>
+    <details class="lema i-es">
+      <summary>Proponer y verificar, nunca afirmar.</summary>
+      <p>Cada análisis propone un corte y una cadena de aforismos, la aplica, y
+      sólo aparece si reproduce <em>exactamente</em> la forma de entrada; se
+      muestran todas las lecturas que recomponen, porque el sandhi es de veras
+      ambiguo y elegir en silencio sería mentir por omisión. Lo que el motor no
+      sabe, lo calla — y las cifras de lo que encuentra y de lo que falla están
+      en el pie.</p>
+    </details>
+    <details class="lema i-en">
+      <summary>Propose and verify, never assert.</summary>
+      <p>Every analysis proposes a cut and a chain of rules, applies it, and
+      appears only if it reproduces the input form <em>exactly</em>; all the
+      readings that recompose are shown, because sandhi is genuinely ambiguous
+      and choosing silently would be lying by omission. What the engine does not
+      know, it leaves unsaid — and the numbers, for what it finds and what it
+      misses, are in the footer.</p>
+    </details>
   </div>
 </header>
 
@@ -317,6 +349,13 @@ body:not(.en) .i-en{display:none}
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 
 <footer class="wrap">
+  <!-- 2026-08-29, pedido del IEBH: el pie abría con la nota de versión y
+       seguía con cuatro párrafos, y eso es mucho pie. Todo eso se pliega
+       aquí dentro; a la vista queda sólo el árbol del IEBH y su crédito,
+       que es lo que el pie de una página del instituto tiene que decir
+       sin que nadie pulse nada. Nada se pierde: está a un clic. -->
+  <details class="revision pie-notas">
+    <summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
   <p class="version-foot" id="vfoot"></p>
   <div class="i-es">
   <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11
@@ -385,6 +424,8 @@ body:not(.en) .i-en{display:none}
   (canon, aṭṭhakathā and ṭīkā). The lexicon orders and attests; <strong>it is never the
   authority of the analysis</strong>: the authority is Kaccāyana and the edition's text.</p>
   </div>
+  </details>
+
   <p class="licencia"><span class="marca-lockup"></span>Preparado por Miguel De Anquín y
   Bhikkhu Nandisena basándose en el capítulo 1 del Kaccāyana y Rūpasiddhi, y también el
   capítulo correspondiente del Saddanīti Suttamālā.<br>
