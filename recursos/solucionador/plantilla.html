@@ -821,7 +821,15 @@ function enlaceVoz(voz){
    cada lectura, que es lo que distingue una afirmación de una conjetura. */
 function textoVoz(voz, r){
   const L = [voz];
-  L.push(`${tr('c_senal')}: ${(SENAL_ROTULO[r.senal] ? tr(SENAL_ROTULO[r.senal]) : (r.senal || '—'))}`);
+  /* El mismo rótulo que la insignia de la tarjeta, y por la misma
+     procedencia: «sandhi adjudicado» sólo cuando hay firma o adjudicación
+     detrás; si no, «predicción firme». No se asciende nada al copiarlo. */
+  const rotulo = r.senal === 'posible' ? tr('posible')
+    : r.senal === 'segura' ? tr(esAdjudicado(r) ? 'adjudicado' : 'firme')
+    : (r.senal || '—');
+  L.push(`${tr('c_senal')}: ${rotulo}`);
+  const est = ESTADOS[r.estado];
+  if(est && !(r.senal === 'segura' && r.estado === 'candidatos')) L.push(est);
   if(r.motivo) L.push(r.motivo);
   const lect = r.lecturas || [];
   if(!lect.length){
@@ -1327,6 +1335,22 @@ document.addEventListener('focusout', e => {
     `<strong>Versión ${DATA.version}</strong> — <time datetime="${DATA.fecha}">${largo}</time>. ${esc(DATA.nota)}`;
 })();
 
+/* ---------- enlace y copia de cada voz (pedido del IEBH, 2026-08-29) ---- */
+function avisoCopiado(btn){
+  const orig = btn.innerHTML;
+  btn.innerHTML = esc(tr('b_copiado'));
+  btn.classList.add('ok');
+  setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('ok'); }, 2000);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('button[data-share], button[data-copy]');
+  if(!b) return;
+  const voz = b.dataset.share || b.dataset.copy;
+  const texto = b.dataset.share ? enlaceVoz(voz) : textoVoz(voz, resolver(voz));
+  if(!navigator.clipboard) return;
+  navigator.clipboard.writeText(texto).then(() => avisoCopiado(b)).catch(() => {});
+});
+
 /* ---------- inglés a demanda (pedido del IEBH, 2026-08-29) ---------- */
 (function(){
   const b = document.getElementById('en-btn');
@@ -1348,6 +1372,22 @@ document.addEventListener('focusout', e => {
   };
   aplicar(IDIOMA === 'en');
   b.onclick = () => aplicar(IDIOMA !== 'en');
+})();
+
+/* Una voz en la URL —…/solucionador/?voz=lokaggo— llega analizada. Es lo que
+   copia el botón «Enlace», y es lo que hace que el enlace valga la pena:
+   quien lo recibe ve la misma escalera, no una caja de texto vacía.
+   VA DESPUÉS del bloque del idioma a propósito: aquél reanaliza lo que
+   hubiera escrito al cambiar de idioma, y si la voz ya estuviera puesta el
+   análisis se haría dos veces. */
+(function(){
+  let voz = '';
+  try { voz = new URLSearchParams(location.search).get('voz') || ''; } catch(e){}
+  if(!voz.trim()) return;
+  $('texto').value = voz.trim();
+  /* analizar() es async y el léxico se pide por fetch: se deja al final de
+     la cola para que el resto de la página esté ya en pie. */
+  setTimeout(() => { if(typeof analizar === 'function') analizar(); }, 0);
 })();
 
 /* ---------- tema (clave pali_dark, compartida con el resto del sitio) ---------- */
