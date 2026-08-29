@@ -43,9 +43,30 @@ INCORPORADOR = os.path.join(RAIZ, "herramientas", "incorporar_adjudicaciones.py"
 
 
 def pedir(url, metodo="GET"):
-    req = urllib.request.Request(url, method=metodo)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode("utf-8"))
+    # El User-Agent identifica al recolector: el de urllib a secas
+    # («Python-urllib/3.9») es de los que el anti-bot del borde de
+    # Cloudflare bloquea con un 403 genérico sin llegar al worker.
+    req = urllib.request.Request(url, method=metodo, headers={
+        "User-Agent": "traer-veredictos/1.0 (gramaticas-pali-es)"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        # Decir QUÉ respondió el servidor, no sólo el número: un 403 del
+        # worker trae «la clave no coincide»; un 403 del borde de
+        # Cloudflare trae una página HTML de bloqueo (2026-08-29).
+        cuerpo = ""
+        try:
+            cuerpo = e.read().decode("utf-8", "replace")[:400]
+        except Exception:                                          # noqa: BLE001
+            pass
+        print("HTTP {0} de {1}".format(e.code, url.split("?")[0]))
+        if cuerpo:
+            print("respuesta del servidor:\n" + cuerpo)
+        if "<html" in cuerpo.lower() or "cloudflare" in cuerpo.lower():
+            print("\n(Esto NO es el worker: es el borde de Cloudflare "
+                  "bloqueando al cliente. Revisar Security → Bots.)")
+        sys.exit(1)
 
 
 def main():
