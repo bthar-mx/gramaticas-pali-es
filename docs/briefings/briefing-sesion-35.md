@@ -151,23 +151,91 @@ descartó por redundante.
 **El cuello de botella del lote 1 no es el archivo: son los 250 veredictos,
 y son del IEBH.** No hay nada que un chat pueda adelantar ahí.
 
-## 6. LO QUE SIGUE (en orden)
+## 6. LAS ADJUDICACIONES DEL CIERRE (2026-08-29, en el chat)
+
+### §34 — APROBADO. Falta implementarlo.
+
+Palabras del IEBH: **«§34 is approved since anytime you find the niggahita
+changed to 'm' before a vowel, it means this rule applies.»**
+
+**La aprobación está dada y el mecanismo NO está escrito.** Es la primera
+tarea del chat siguiente, y no es pequeña, porque §34 **no encaja en el
+mecanismo de patrones que hay**: los tres patrones vigentes (`iti`, `api`,
+`ca`) se declaran por la SEGUNDA voz, y en §34 la segunda voz es cualquiera
+— lo que identifica la clase es **la «m» de la juntura**. Hace falta una
+clase de patrón nueva.
+
+La receta, tal como la simuló `generar_informe_niggahita_m.py` (que es lo
+que se midió y por tanto lo que se firmó):
+
+- candidatas: `base` acabada en ṃ y `seg` tales que
+  `base[:-1] + "m" + seg == forma`, las dos atestiguadas;
+- **el resguardo de siempre**: las dos voces al menos tan frecuentes como la
+  forma entera (`piso = max(frec(forma), 1)`);
+- gemelas (misma base, segundas que sólo difieren en la cantidad de la
+  vocal inicial) → la de inicial BREVE;
+- si queda EXACTAMENTE UNA, se afirma; si no, calla.
+
+Medido antes de firmar: **54 formas afirmables, masa 31.344, y 37 de ellas
+hoy sin señal ninguna** — recall nuevo, no sólo «no sabe» resuelto.
+
+**Cómo se hace el cambio, que es lo que no hay que improvisar:** los arneses
+no llevan cifras a mano, comparan el JS contra una **referencia volcada del
+Python** (`nuestro/js/referencia-*.json`). Así que: cambiar el Python →
+volver a volcar las referencias → espejar el cambio en `nuestro/js/motor.js`
+→ los cinco arneses. Las cifras de `arnes_deteccion` **tienen que moverse**:
+ése es el efecto buscado, y el antes/después es la medición.
+
+### Proclíticos — NO hay regla general, y el IEBH lo zanjó
+
+Palabras del IEBH: **«there is no way to define a general rule»**. Lo que sí
+dio, y queda como caso adjudicado:
+
+- **`svāyaṃ` = so + ayaṃ, SIEMPRE** → caso, grado exclusivo. Ya puesto.
+- **`netaṃ` = na + etaṃ, mayormente** → caso, grado habitual. Ya puesto.
+- **`cetā` = ca + etā, mayormente** → ya era caso desde el 2026-08-28.
+
+Y dio el **criterio** para lo demás: *«sattānaṃ is a noun, caranto is a
+present participle, cittaṃ is a noun. I can almost with 100 % confidence say
+that never caranto = ca + anto.»* Es decir: **si el diccionario da la forma
+entera como palabra con su categoría gramatical, no es sandhi proclítico.**
+
+**Se probó, y el criterio no se puede computar con lo que hay en la
+carpeta.** `es_palabra()` dice «sí» tanto de `sattānaṃ`, `caranto` y
+`cittaṃ` como de `cetā`, `netaṃ` y `svāyaṃ`: el léxico
+(`recursos/lexico/dpd-formas.txt`, 443.740 líneas) es una **lista de formas
+desnuda, sin categoría**, y las formas de sandhi también están atestiguadas
+en él. Lo que el criterio pide es la **categoría gramatical**, y eso vive en
+`dpd-descomposiciones.tsv`, **que no está en la carpeta**.
+
+De modo que la conclusión es limpia y de una sola pieza: **el criterio del
+IEBH es el correcto y es mecanizable, y lo único que le falta es ese
+archivo.** Confirma de paso su instinto: el informe da hoy veredicto «única»
+tanto a `caranto` como a `sattānaṃ` — las dos que él nombró como
+disparates—, que es exactamente lo que su filtro frenaría.
+
+### Las notas de «Angel» — hechas
+
+«Replace Angel with IEBH wherever it appears in all the webpages.» Las tres
+notas de `paradigmas.json` (N-Ā1, #1, Sufijos-Inflexiones) dicen ya «con el
+visto bueno del IEBH». **`site/` no contiene ya ninguna aparición de
+«Angel»** — comprobado con `grep -rl` sobre todo el directorio.
+
+Queda «Angel» en sitios que **no son páginas** y que no se tocaron: los
+comentarios de `nuestro/*.py`, las cabeceras de los tres informes de
+`docs/solucionador/` («los firma Angel»), `comun/guia-de-estilo.md`,
+`comun/convenciones.md` y los borradores de sesión. Si también han de decir
+IEBH, es otra orden y es fácil; no se hizo porque no son páginas.
+
+## 7. LO QUE SIGUE (en orden)
 
 1. **Rotar la clave** (§0).
-2. **La firma de §34** (informe listo: 54 formas, masa 31.344, 37 hoy sin
-   señal) y **el diseño de la regla de proclíticos** (el espejo simple NO es
-   firmable: `sattānaṃ` = so + attānaṃ, `caranto` = ca + anto y `cittaṃ` =
-   ca + ittaṃ se colarían, y el resguardo no los frena). La asimetría que lo
-   explica: **§34 deja huella visible —la «m» en la juntura— y la clase
-   proclítica no la deja**.
-3. **`dpd-descomposiciones.tsv` NO ESTÁ en la carpeta** (sólo
-   `dpd-formas.txt`). Los dos informes dejan la columna del testigo DPD
-   vacía y lo dicen. Ponerlo en `recursos/lexico/` y volver a correrlos
-   puede decidir el punto 2.
-4. **La pasada única de dos junturas** (§4 de este briefing), que es lo que
-   cierra de verdad el punto 4 del mapa 32.
-5. **Las tres notas de «Angel»** (§2).
-6. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD,
+2. **Implementar §34** (§6). Aprobado, medido, con la receta escrita.
+3. **Traer `dpd-descomposiciones.tsv` a `recursos/lexico/`**: desbloquea la
+   columna del testigo en los dos informes Y el criterio de categoría
+   gramatical que el IEBH dio para los proclíticos.
+4. **La pasada única de dos junturas** (§4), que cierra el punto 4 del mapa 32.
+5. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD,
    des-flexión. **Sin empezar.**
 
 ## 7. AVISOS AL CHAT NUEVO
