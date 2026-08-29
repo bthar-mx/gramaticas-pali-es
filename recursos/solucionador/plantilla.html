@@ -673,7 +673,7 @@ $('texto').addEventListener('keydown', e => {
    adjudica solo: el archivo exportado pasa por la firma del IEBH.
    Los veredictos viven en el navegador del revisor (localStorage);
    borrarlos es suyo, no del sitio. */
-const REV = { on: false, v: new Map(), obs: '' };
+const REV = { on: false, v: new Map(), obs: '', estudiante: false };
 try {
   for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
     REV.v.set(k, x);
@@ -717,12 +717,13 @@ function revAcciones(){
       placeholder="Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación.">${esc(REV.obs)}</textarea>
   </div>
   <div class="rev-acciones">
-    <button type="button" class="boton" id="rev-enviar"${(n || REV.obs.trim()) ? '' : ' disabled'}
-      title="${esc(voces)}">Enviar ${n} veredicto${n===1?'':'s'} al proyecto</button>
-    <button type="button" class="boton secundario" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>Exportar .md</button>
+    ${REV.estudiante ? '' : `<button type="button" class="boton" id="rev-enviar"${(n || REV.obs.trim()) ? '' : ' disabled'}
+      title="${esc(voces)}">Enviar ${n} veredicto${n===1?'':'s'} al proyecto</button>`}
+    <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>Exportar .md</button>
     <button type="button" class="boton secundario" id="rev-borrar"${n ? '' : ' disabled'}>Borrar todos</button>
-    <span class="estado" id="rev-estado">enviar deja los veredictos en la cola del
-      proyecto; nada se adjudica sin incorporación y firma</span>
+    <span class="estado" id="rev-estado">${REV.estudiante
+      ? 'modo estudiante: exporte el .md y hágaselo llegar a quien firma — nada se adjudica sin esa revisión'
+      : 'enviar deja los veredictos en la cola del proyecto; nada se adjudica sin incorporación y firma'}</span>
   </div>`;
 }
 /* Los componentes se aceptan como los escribe el revisor: con «+» o
@@ -824,7 +825,20 @@ async function revEnviar(boton){
     } else if(!r.ok){
       est.textContent = 'no se pudo enviar (' + r.status + '): use «Exportar .md»';
     } else {
-      est.textContent = 'enviado — se incorpora con traer_veredictos.py, arneses y firma';
+      /* Enviado con éxito: lo enviado ya vive en la cola del proyecto, así
+         que se limpia del navegador — veredictos y observaciones — para
+         que el revisor empiece el siguiente pasaje en limpio (pedido del
+         IEBH, 2026-08-29: tras enviar, el botón seguía diciendo «Enviar 3
+         veredictos» y las observaciones no se vaciaban). */
+      REV.v.clear();
+      REV.obs = '';
+      revGuardar();
+      try { localStorage.setItem('rev-observaciones', ''); } catch(err){}
+      if($('texto').value.trim()) analizar();
+      const est2 = document.getElementById('rev-estado');
+      if(est2) est2.textContent =
+        'enviado — se incorpora con traer_veredictos.py, arneses y firma';
+      return;
     }
   } catch(e){
     est.textContent = 'sin conexión: use «Exportar .md»';
@@ -842,13 +856,34 @@ $('revision').addEventListener('click', () => {
    real es incorporar_adjudicaciones.py y la firma — esto es discreción,
    para que el lector corriente no vea un mando que no le sirve. */
 (function(){
-  let visto = false;
-  try { visto = localStorage.getItem('rev-habilitado') === '1'; } catch(e){}
-  if(/[?&#]revision\b/u.test(location.search + location.hash)){
-    visto = true;
-    try { localStorage.setItem('rev-habilitado', '1'); } catch(e){}
+  /* La capa del ESTUDIANTE (pedido del IEBH, 2026-08-29): el enlace
+     …/solucionador/?revision=estudiante abre el modo revisión SIN el botón
+     «Enviar» — el estudiante exporta el .md y se lo hace llegar a quien
+     firma, que revisa antes de que nada toque la cola. Es la misma
+     doctrina del propio modo revisión: discreción, no candado — el
+     candado real sigue siendo la incorporación, los arneses y la firma.
+     Un navegador que alguna vez abrió ?revision a secas queda en el modo
+     pleno; el enlace de estudiante nunca lo asciende. */
+  let visto = false, estudiante = false;
+  try {
+    visto = localStorage.getItem('rev-habilitado') === '1';
+    estudiante = localStorage.getItem('rev-estudiante') === '1';
+  } catch(e){}
+  const dondeRev = location.search + location.hash;
+  if(/[?&#]revision=estudiante\b/u.test(dondeRev)){
+    if(!visto){
+      estudiante = true;
+      try { localStorage.setItem('rev-estudiante', '1'); } catch(e){}
+    }
+  } else if(/[?&#]revision\b/u.test(dondeRev)){
+    visto = true; estudiante = false;
+    try {
+      localStorage.setItem('rev-habilitado', '1');
+      localStorage.setItem('rev-estudiante', '');
+    } catch(e){}
   }
-  if(visto) $('revision').hidden = false;
+  REV.estudiante = estudiante && !visto;
+  if(visto || REV.estudiante) $('revision').hidden = false;
 })();
 $('out').addEventListener('click', e => {
   const b = e.target.closest('[data-rev]');
