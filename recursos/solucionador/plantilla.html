@@ -245,9 +245,11 @@ footer a{color:var(--nila)}
       referencia, el motor reencuentra el análisis firmado en 221 (88 %). Cotejado
       con una partición independiente de la Therīgāthā y su comentario, el punto de
       corte coincide en el 90,7 % de los versos y el 92,5 % de la prosa. La señal
-      que marca voces en un pasaje es deliberadamente prudente: entre lo <em>seguro</em>
-      y lo <em>posible</em> se señalan hoy el 47 % de los sandhis presentes en el verso y
-      el 57 % en la prosa, y lo marcado como <em>seguro</em> acierta una juntura real en
+      que marca voces en un pasaje es deliberadamente prudente: entre el nivel alto
+      —<em>sandhi adjudicado</em> (banco firmado o caso adjudicado: la respuesta de la
+      tradición, no una predicción) y <em>predicción firme</em> (los patrones
+      adjudicados)— y lo <em>posible</em> se señalan hoy el 47 % de los sandhis presentes
+      en el verso y el 57 % en la prosa, y el nivel alto acierta una juntura real en
       9 de cada 10 casos (medido el 28-08-2026, con los patrones adjudicados y el
       resguardo de la base residual activos — el resguardo corrigió un defecto,
       medido y declarado ese mismo día, por el que el patrón de «iti» afirmaba
@@ -523,8 +525,25 @@ function cuerpoResultado(r, esVozSola){
   return h;
 }
 
-const CHIP = { segura: '<span class="src segura">señal segura</span>',
-               posible: '<span class="src posible">señal posible</span>' };
+/* El rótulo de la señal, por procedencia (decisión del IEBH, 2026-08-29):
+   «sandhi adjudicado» cuando afirma una AUTORIDAD (banco firmado o caso
+   adjudicado — ahí no hay predicción: es la respuesta de la tradición);
+   «predicción firme» cuando afirma el mecanismo (patrones adjudicados),
+   cuya cifra medida sigue dicha al lado: acierta 9 de cada 10. */
+function chipSenal(r){
+  if(r.senal === 'posible')
+    return '<span class="src posible">señal posible</span>';
+  if(r.senal !== 'segura') return '';
+  const l0 = (r.lecturas || [])[0] || {};
+  const adjudicado = l0.adjudicada || l0.procedencia === 'firmada' || l0.origen;
+  return '<span class="src segura">'
+    + (adjudicado ? 'sandhi adjudicado' : 'predicción firme') + '</span>';
+}
+function esAdjudicado(r){
+  const l0 = ((r || {}).lecturas || [])[0] || {};
+  return r.senal === 'segura'
+    && !!(l0.adjudicada || l0.procedencia === 'firmada' || l0.origen);
+}
 const ESTADOS = {
   firmada: 'firmada en el banco', candidatos: 'candidatos',
   resuelto: 'resuelto', sin_sandhi: 'sin sandhi',
@@ -534,7 +553,7 @@ const ESTADOS = {
 };
 
 function tarjeta(voz, r, abierta){
-  const chip = CHIP[r.senal] || '';
+  const chip = chipSenal(r);
   const n = (r.lecturas || []).length;
   /* Con señal segura, «candidatos» sobra: la señal ya afirma (pedido del
      IEBH, 2026-08-28). El estado se muestra sólo cuando dice algo más. */
@@ -599,14 +618,22 @@ async function analizar(){
     }
     const seguras = marcadas.filter(([,r]) => r.senal === 'segura').length;
     const posibles = marcadas.length - seguras;
-    html = `<p class="cuenta-sandhis"><b>${marcadas.length}</b> sandhi${marcadas.length===1?'':'s'} encontrado${marcadas.length===1?'':'s'} en ${voces.length} voces — ${seguras} seguro${seguras===1?'':'s'} · ${posibles} posible${posibles===1?'':'s'}</p>`;
+    const adjudicados = marcadas.filter(([,r]) => esAdjudicado(r)).length;
+    const firmes = seguras - adjudicados;
+    const partes = [];
+    if(adjudicados) partes.push(`${adjudicados} adjudicado${adjudicados===1?'':'s'}`);
+    if(firmes) partes.push(`${firmes} de predicción firme`);
+    if(posibles) partes.push(`${posibles} posible${posibles===1?'':'s'}`);
+    html = `<p class="cuenta-sandhis"><b>${marcadas.length}</b> sandhi${marcadas.length===1?'':'s'} encontrado${marcadas.length===1?'':'s'} en ${voces.length} voces${partes.length ? ' — ' + partes.join(' · ') : ''}</p>`;
     if(marcadas.length){
       html += `<div class="forms">${marcadas.map(([v,r]) => tarjeta(v, r, false)).join('')}</div>`;
     }
     html += `<p class="motivo" style="margin-top:14px">La señal es prudente a propósito: marca
-      el 47 % de los sandhis presentes en el verso y el 57 % en la prosa, y lo marcado
-      como <em>seguro</em> acierta una juntura real en 9 de cada 10 casos. Lo que calla no
-      se pierde: pegue una voz sola y el motor la analiza con todas sus lecturas.</p>`;
+      el 47 % de los sandhis presentes en el verso y el 57 % en la prosa. Lo
+      <em>adjudicado</em> es la respuesta de la tradición, no una predicción; el nivel
+      alto en conjunto (adjudicado y predicción firme) acierta una juntura real en
+      9 de cada 10 casos. Lo que calla no se pierde: pegue una voz sola y el motor
+      la analiza con todas sus lecturas.</p>`;
   }
   if(REV.on) html += revAcciones();
   /* Conservar qué tarjetas estaban abiertas: la revisión re-pinta. */
