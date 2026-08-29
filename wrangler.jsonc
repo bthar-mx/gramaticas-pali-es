@@ -4,13 +4,10 @@
   // del modo revisión (/api/veredictos). Mientras la cola no esté
   // configurada, el sitio funciona igual y /api/veredictos responde 503.
   //
-  // PARA ACTIVAR LA COLA (una sola vez, en la Mac):
-  //   1. npx wrangler kv namespace create VEREDICTOS
-  //   2. descomentar el bloque kv_namespaces de abajo y poner el "id" que
-  //      imprimió el paso 1;
-  //   3. npx wrangler secret put CLAVE_VEREDICTOS
-  //      (la clave que sólo conoce quien recoge la cola);
-  //   4. commit y push.
+  // La cola quedó activada el 2026-08-28: el KV lo creó el IEBH con
+  //   npx wrangler kv namespace create VEREDICTOS
+  // y la clave de lectura vive como secreto del worker:
+  //   npx wrangler secret put CLAVE_VEREDICTOS
   // El resto: docs/solucionador/automatizacion.md.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
@@ -18,11 +15,11 @@
   "assets": {
     "directory": "./site",
     "binding": "ASSETS"
-  }
-  // "kv_namespaces": [
-  //   {
-  //     "binding": "VEREDICTOS",
-  //     "id": "PONER-ID-AQUI"
-  //   }
-  // ]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "VEREDICTOS",
+      "id": "6510113d133b4f07aaa7f9320e3156fd"
+    }
+  ]
 }
