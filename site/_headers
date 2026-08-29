@@ -1,0 +1,11 @@
+# FUENTE, no salida (como pali.css, pali.js y los SVG de assets): ningún
+# generador escribe este archivo. Cloudflare lo aplica a los assets.
+#
+# «no-cache» NO prohíbe guardar: obliga a REVALIDAR antes de usar lo
+# guardado. Lo no cambiado responde 304 (barato); lo cambiado llega
+# fresco. Puesto el 2026-08-29 porque el navegador del IEBH sirvió tres
+# veces una página vieja después de un despliegue (briefing 32 §3.9 lo
+# dejó ofrecido, sin decisión; la tercera vez decidió).
+
+/*
+  Cache-Control: no-cache

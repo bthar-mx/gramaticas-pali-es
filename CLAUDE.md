@@ -59,9 +59,9 @@ escrito en el briefing se pierde.
 ## Cómo se publica
 
 El markdown es la fuente; el HTML de `site/` es salida generada. **Nunca se
-edita nada dentro de `site/`, con tres excepciones que son fuente y no salida:
-`site/assets/pali.css`, `site/assets/pali.js` y los SVG de la marca en
-`site/assets/`** — ningún generador los escribe. Todo lo demás lo reconstruye
+edita nada dentro de `site/`, con cuatro excepciones que son fuente y no salida:
+`site/assets/pali.css`, `site/assets/pali.js`, los SVG de la marca en
+`site/assets/` y `site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
 entero el hook de pre-commit en cada commit, así que un cambio hecho ahí
 desaparece sin avisar y sin dejar rastro. Lo que se edita está en
 `kaccayana/`, `recursos/`, `comun/` y esos tres archivos de `site/assets/`.
