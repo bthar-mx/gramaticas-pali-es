@@ -698,16 +698,24 @@ function revAcciones(){
       proyecto; nada se adjudica sin incorporación y firma</span>
   </div>`;
 }
+/* Los componentes se aceptan como los escribe el revisor: con «+» o
+   separados por espacios (el IEBH escribió «yen' āyasmā» y el campo lo
+   rechazaba; corregido el mismo día). */
+function revComponentes(t){
+  const partes = (t.includes('+') ? t.split('+') : t.split(/\s+/u))
+    .map(x => x.trim()).filter(x => x);
+  return partes.length >= 2 ? partes.join(' + ') : null;
+}
 async function revFalta(){
   const inp = document.getElementById('rev-falta');
   const t = (inp.value || '').trim();
   const m = t.match(/^(\S+)\s*[=:]\s*(.+)$/u);
-  if(!m || !m[2].includes('+')){
-    alert('Formato: la voz escrita, «=», y sus componentes con «+».\nEjemplo:  cetā = ca + etā');
+  const comp = m && revComponentes(m[2]);
+  if(!comp){
+    alert('Formato: la voz escrita, «=», y sus componentes — con «+» o con espacios.\nEjemplos:  cetā = ca + etā   ·   yenāyasmā = yena āyasmā');
     return;
   }
   const voz = m[1];
-  const comp = m[2].split('+').map(x => x.trim()).filter(x => x).join(' + ');
   /* La voz puede no estar en el pasaje: cargar sus fragmentos antes de
      resolverla, para que la señal y la primera lectura salgan bien. */
   try { await SOLUCIONADOR.preparar(voz); } catch(e){}
@@ -831,8 +839,8 @@ $('out').addEventListener('keydown', e => {
   if(e.target.matches('[data-rev-otra]')){
     e.preventDefault();
     const bar = e.target.closest('.rev-bar');
-    const comp = e.target.value.trim();
-    if(!comp.includes('+')){ alert('Escriba los componentes con «+»: voz + voz'); return; }
+    const comp = revComponentes(e.target.value.trim());
+    if(!comp){ alert('Escriba los componentes — con «+» o con espacios: voz + voz'); return; }
     const notaEl = bar.querySelector('[data-rev-nota]');
     const nota = notaEl ? notaEl.value.trim() : '';
     revPoner(bar.dataset.voz, nota ? { t: 'otra', comp, nota } : { t: 'otra', comp });
