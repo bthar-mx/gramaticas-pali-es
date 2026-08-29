@@ -1,0 +1,538 @@
+{
+ "_nota": "BORRADOR. El inglés de la prosa del IEBH en /recursos/paradigmas/: la glosa de cada paradigma, los subtítulos, las familias, las notas de transcripción, el texto de los sufijos y los usos de cada sufijo. Redactado por el chat de la sesión 35 y NO adjudicado: mientras «adjudicado» sea false, generar_paradigmas.py no lo publica y la página muestra el español también en modo inglés. Cotejo lado a lado en docs/paradigmas/ingles-por-adjudicar.md. Las FORMAS pāḷi no están aquí: no se traducen.",
+ "adjudicado": false,
+ "adjudicado_por": "",
+ "fecha": "",
+ "paradigmas": {
+  "M-A1": {
+   "paradigma": "purisa (man)"
+  },
+  "M-A2": {
+   "paradigma": "mana (mind)"
+  },
+  "M-A3": {
+   "paradigma": "guṇavantu (virtuous)"
+  },
+  "M-A4": {
+   "paradigma": "satimantu (mindful)"
+  },
+  "M-A5": {
+   "paradigma": "gacchanta (going)"
+  },
+  "M-A6": {
+   "paradigma": "bhavanta (venerable)"
+  },
+  "M-A7": {
+   "paradigma": "bhaddanta (venerable)"
+  },
+  "M-A8": {
+   "paradigma": "santa (virtuous, holy)"
+  },
+  "M-A9": {
+   "paradigma": "rāja (king)"
+  },
+  "M-A10": {
+   "paradigma": "brahma (god)"
+  },
+  "M-A11": {
+   "paradigma": "atta (soul, oneself)"
+  },
+  "M-A12": {
+   "paradigma": "sakha (friend)"
+  },
+  "M-A13": {
+   "paradigma": "ātuma (soul, oneself)"
+  },
+  "M-A14": {
+   "paradigma": "puma (male)"
+  },
+  "M-A15": {
+   "paradigma": "yuva (youth)"
+  },
+  "M-Ā1": {
+   "paradigma": "sā (dog)"
+  },
+  "M-I1": {
+   "paradigma": "aggi (fire)"
+  },
+  "M-Ī1": {
+   "paradigma": "daṇḍī (one who has a staff)"
+  },
+  "M-Ī2": {
+   "paradigma": "gāmaṇī (village headman)"
+  },
+  "M-U1": {
+   "paradigma": "bhikkhu (monk)"
+  },
+  "M-U2": {
+   "paradigma": "satthu (teacher)",
+   "notas": [
+    "The document abbreviates «satthārehi, -bhi» in the third and the fifth of the plural; it is transcribed expanded as «satthārehi, satthārebhi»."
+   ]
+  },
+  "M-U3": {
+   "paradigma": "kattu (doer)",
+   "notas": [
+    "The document abbreviates «kattārehi, -bhi» in the third and the fifth of the plural; it is transcribed expanded as «kattārehi, kattārebhi»."
+   ]
+  },
+  "M-U4": {
+   "paradigma": "pitu (father)"
+  },
+  "M-Ū1": {
+   "paradigma": "abhibhū (supreme lord, etc.)"
+  },
+  "M-Ū2": {
+   "paradigma": "sabbaññū (omniscient)"
+  },
+  "M-O1": {
+   "paradigma": "go (ox, cattle)"
+  },
+  "M+1": {
+   "paradigma": "addha (time, road)"
+  },
+  "F-Ā1": {
+   "paradigma": "kaññā (girl)"
+  },
+  "F-Ā1A": {
+   "paradigma": "ammā (mother, daughter, lady)",
+   "notas": [
+    "Note from the document: «This paradigm is similar to the paradigm of kaññā (girl) except in the vocative. Ref. Sad. i 262-3; Rū. §181.»"
+   ]
+  },
+  "F-I1": {
+   "paradigma": "ratti (night)"
+  },
+  "F-Ī1": {
+   "paradigma": "itthī (woman)"
+  },
+  "F-Ī2": {
+   "paradigma": "nadī (river)"
+  },
+  "F-Ī3": {
+   "paradigma": "puthavī (the earth)"
+  },
+  "F-Ī4": {
+   "paradigma": "guṇavatī, guṇavantī (virtuous)"
+  },
+  "F-U1": {
+   "paradigma": "yāgu (rice gruel)"
+  },
+  "F-U2": {
+   "paradigma": "mātu (mother)",
+   "notas": [
+    "In the fifth of the plural the document gives «mātarehi, mātarebhi, mātūhi, mātūbhi,» with a trailing comma; the four forms given are transcribed."
+   ]
+  },
+  "F-Ū2": {
+   "paradigma": "jambū (rose-apple tree)"
+  },
+  "F-O": {
+   "paradigma": "go (cow) — same as the masculine go"
+  },
+  "N-A1": {
+   "paradigma": "citta (consciousness, mind)"
+  },
+  "N-A2": {
+   "paradigma": "kamma (action)"
+  },
+  "N-A3": {
+   "paradigma": "guṇavantu (virtuous)"
+  },
+  "N-A4": {
+   "paradigma": "gacchanta (going)"
+  },
+  "N-Ā1": {
+   "paradigma": "assaddhā (faithless)",
+   "notas": [
+    "The index wrote «asaddhā», with a single s; it is corrected to «assaddhā», as the document, Rūpasiddhi (assaddhāsaddo, in the napuṃsakaliṅga section) and the canon give it, with the approval of the IEBH (session 17). For the same reason «assadhā» (with a single d) is corrected in the first of the plural."
+   ]
+  },
+  "N-I1": {
+   "paradigma": "aṭṭhi (bone)"
+  },
+  "N-Ī1": {
+   "paradigma": "sukhakārī (something that produces pleasure)"
+  },
+  "N-U1": {
+   "paradigma": "āyu (age)"
+  },
+  "N-Ū1": {
+   "paradigma": "gotrabhū (change of lineage)"
+  },
+  "N-O1": {
+   "paradigma": "cittago (owner of spotted cattle)"
+  },
+  "PM1": {
+   "paradigma": "sabba (all)",
+   "subtitulo": "masculine",
+   "familia": "Declined like sabba: katara, katama, ubhaya, itara, añña, aññatara, aññatama."
+  },
+  "PF1": {
+   "paradigma": "sabba (all)",
+   "subtitulo": "feminine",
+   "familia": "The following pronouns have the same declension as sabba: katara, katama, ubhaya, itara, añña, aññatara, aññatama."
+  },
+  "PN1": {
+   "paradigma": "sabba (all)",
+   "subtitulo": "neuter",
+   "familia": "The following pronouns have the same declension as sabba: katara, katama, ubhaya, itara, añña, aññatara, aññatama."
+  },
+  "PM2": {
+   "paradigma": "pubba (previous, etc.)",
+   "subtitulo": "masculine",
+   "familia": "The following pronouns have the same declension as pubba: para, apara, dakkhiṇa, uttara, adhara."
+  },
+  "PF2": {
+   "paradigma": "pubba (previous, etc.)",
+   "subtitulo": "feminine",
+   "familia": "The following pronouns have the same declension as pubba: para, apara, dakkhiṇa, uttara, adhara."
+  },
+  "PN2": {
+   "paradigma": "pubba (previous, etc.)",
+   "subtitulo": "neuter",
+   "familia": "The following pronouns have the same declension as pubba: para, apara, dakkhiṇa, uttara, adhara."
+  },
+  "PM3": {
+   "paradigma": "ya (which, that, etc.)",
+   "subtitulo": "masculine"
+  },
+  "PF3": {
+   "paradigma": "ya (which, that, etc.)",
+   "subtitulo": "feminine"
+  },
+  "PN3": {
+   "paradigma": "ya (which, that, etc.)",
+   "subtitulo": "neuter"
+  },
+  "PM4": {
+   "paradigma": "ta (that)",
+   "subtitulo": "masculine"
+  },
+  "PF4": {
+   "paradigma": "ta (that)",
+   "subtitulo": "feminine"
+  },
+  "PN4": {
+   "paradigma": "ta (that)",
+   "subtitulo": "neuter"
+  },
+  "PM5": {
+   "paradigma": "eta (that, this)",
+   "subtitulo": "masculine"
+  },
+  "PF5": {
+   "paradigma": "eta (that, this)",
+   "subtitulo": "feminine"
+  },
+  "PN5": {
+   "paradigma": "eta (that, this)",
+   "subtitulo": "neuter"
+  },
+  "PM6": {
+   "paradigma": "ima (this)",
+   "subtitulo": "masculine"
+  },
+  "PF6": {
+   "paradigma": "ima (this)",
+   "subtitulo": "feminine"
+  },
+  "PN6": {
+   "paradigma": "ima (this)",
+   "subtitulo": "neuter"
+  },
+  "PM7": {
+   "paradigma": "amu (such and such)",
+   "subtitulo": "masculine"
+  },
+  "PF7": {
+   "paradigma": "amu (such and such)",
+   "subtitulo": "feminine"
+  },
+  "PN7": {
+   "paradigma": "amu (such and such)",
+   "subtitulo": "neuter"
+  },
+  "PM8": {
+   "paradigma": "kim (what? who? which?)",
+   "subtitulo": "masculine"
+  },
+  "PF8": {
+   "paradigma": "kim (what? who? which?)",
+   "subtitulo": "feminine"
+  },
+  "PN8": {
+   "paradigma": "kim (what? who? which?)",
+   "subtitulo": "neuter"
+  },
+  "PM9": {
+   "paradigma": "eka (one, etc.)",
+   "subtitulo": "masculine"
+  },
+  "PF9": {
+   "paradigma": "eka (one, etc.)",
+   "subtitulo": "feminine"
+  },
+  "PN9": {
+   "paradigma": "eka (one, etc.)",
+   "subtitulo": "neuter"
+  },
+  "P10": {
+   "paradigma": "ubho (both)",
+   "subtitulo": "all genders"
+  },
+  "P11": {
+   "paradigma": "dvi (two)",
+   "subtitulo": "all genders"
+  },
+  "P12": {
+   "paradigma": "ti (three)"
+  },
+  "P13": {
+   "paradigma": "catu (four)"
+  },
+  "P14": {
+   "paradigma": "amha (I)",
+   "subtitulo": "noun without gender (aliṅganāma)"
+  },
+  "P15": {
+   "paradigma": "tumha (you)",
+   "subtitulo": "noun without gender (aliṅganāma)"
+  },
+  "#1": {
+   "paradigma": "pañca (five)",
+   "subtitulo": "all genders",
+   "familia": "Similarly declined: cha (6), satta (7), aṭṭha (8), nava (9), dasa (10), ekādasa (11), ekārasa (11), bārasa (12), dvādasa (12), terasa (13), teḷasa (13), cuddasa (14), coddasa (14), catuddasa (14), pannarasa (15), paṇṇarasa (15), soḷasa (16), sattarasa (17), sattadasa (17), aṭṭhārasa (18), aṭṭhādasa (18).",
+   "notas": [
+    "The document writes «pañacahi» in the fifth; a slip for «pañcahi», corrected here with the approval of the IEBH (session 17)."
+   ]
+  },
+  "#2": {
+   "paradigma": "kati (how many?)"
+  },
+  "Sufijos-Inflexiones": {
+   "paradigma": "suffixes that are inflections (vibhatti-paccaya)",
+   "notas": [
+    "Kaccāyana gives ‘to’ only in the sense of the fifth (§248); its uses in the seventh (ādito, majjhato…) and in the third (aniccato, dukkhato…) come from Rūpasiddhi, which obtains them by yogavibhāga — dividing the sutta and taking «Kvaci to» as an independent rule — in the vutti that follows its §265 (Imass’ i thaṃ-dāni-ha-to-dhesu ca).",
+    "The source document writes «sabbatha» in the example of ‘tha’; a slip for «sabbattha» — with the ‘t’ doubled by §28, as Kacc. §249 and Rū. §266 give it — corrected here with the approval of the IEBH (session 17)."
+   ],
+   "texto": "These suffixes have the same form in the three genders and the two numbers (singular and plural). There are fifteen: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ. They are called «inflections» by §247 (Tvādayo vibhattisaññāyo).",
+   "detalle": [
+    {
+     "s": "to",
+     "usos": [
+      {
+       "uso": "fifth (pañcamī) — sometimes",
+       "ej": [
+        "purisato",
+        "kaññato",
+        "cittato",
+        "sabbato",
+        "yato",
+        "tato",
+        "kuto",
+        "ato",
+        "etto",
+        "ito"
+       ]
+      },
+      {
+       "uso": "seventh (sattamī) (place and time), after «ādi» and the like — by yogavibhāga of «Kvaci to» (Rūpasiddhi)",
+       "ej": [
+        "ādito",
+        "majjhato",
+        "ekato",
+        "purato",
+        "pacchato",
+        "passato",
+        "piṭṭhito",
+        "pādato",
+        "sīsato",
+        "aggato",
+        "mūlato",
+        "parato"
+       ]
+      },
+      {
+       "uso": "third (tatiyā), after «anicca» and the like — by the same yogavibhāga (Rūpasiddhi)",
+       "ej": [
+        "aniccato",
+        "dukkhato",
+        "rogato",
+        "gaṇḍato"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "tra",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), after the pronouns",
+       "ej": [
+        "sabbatra (in everything)",
+        "yatra",
+        "tatra"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "tha",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), after the pronouns",
+       "ej": [
+        "sabbattha (in everything)",
+        "yattha",
+        "tattha"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "dā",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) of time, after «kiṃ», «sabba», «añña», «eka», «ya» and «ku»; also after «ta»",
+       "ej": [
+        "kadā (when?)",
+        "sabbadā (always)",
+        "sadā",
+        "aññadā (on another day)",
+        "ekadā (once)",
+        "yadā (when?)",
+        "tadā (then, afterwards, at that time)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "dācanaṃ",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) of time, after «ku» < «kiṃ»",
+       "ej": [
+        "kudācanaṃ (sometimes, at any time)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "dāni",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) of time, after «ta» and «ima»",
+       "ej": [
+        "tadāni (then, afterwards, at that time)",
+        "idāni (now)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "dha",
+     "usos": [
+      {
+       "uso": "seventh (sattamī), after «ima»",
+       "ej": [
+        "idha (here)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "dhi",
+     "usos": [
+      {
+       "uso": "seventh (sattamī), only after «sabba» — sometimes",
+       "ej": [
+        "sabbadhi (in everything)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "dhunā",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) of time, after «ima»",
+       "ej": [
+        "adhunā (now)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "rahi",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) of time, after «ima»",
+       "ej": [
+        "etarahi (now)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "va",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), only after «kiṃ»",
+       "ej": [
+        "kva (where?)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "ha",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), after «ima»",
+       "ej": [
+        "iha (here)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "haṃ",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), after «kiṃ» and «ta»",
+       "ej": [
+        "kuhaṃ (where?)",
+        "tahaṃ (in that, there)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "hiṃ",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), after «kiṃ», «ta» and «ya»",
+       "ej": [
+        "kuhiṃ (where?)",
+        "tahiṃ (in that, there)",
+        "yahiṃ (where)"
+       ]
+      }
+     ]
+    },
+    {
+     "s": "hiñcanaṃ",
+     "usos": [
+      {
+       "uso": "seventh (sattamī) (place and time), after «kiṃ»",
+       "ej": [
+        "kuhiñcanaṃ (where?)"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

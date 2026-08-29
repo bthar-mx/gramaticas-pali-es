@@ -436,9 +436,10 @@ footer a{color:var(--nila)}
   <p><strong>See also.</strong> The chapter that prescribes these inflections, in
   <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; the interactive reference on
   <a href="../sandhi/">sandhi</a>; and <a href="../nombre/">noun formation</a>, step by step.</p>
-  <p class="parcial"><em>The Pāḷi forms are never translated: they are the object of this page. The
-  glosses of each paradigm, the family notes and the transcription notes are the IEBH's own words and
-  are still in Spanish here, awaiting their English adjudication.</em></p>
+  <p class="parcial" id="aviso-ingles"><em>The Pāḷi forms are never translated: they are the object of
+  this page. The glosses of each paradigm, the family notes and the transcription notes are the IEBH's
+  own words and are still in Spanish here, awaiting their English adjudication.</em></p>
+  <p class="parcial" id="credito-ingles" hidden></p>
   </div>
 
   <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Bhikkhu Nandisena<br>
@@ -582,6 +583,36 @@ const infl = i => ((IDIOMA === 'en' && DATA.inflexiones_en) || DATA.inflexiones)
 const caso = i => ((IDIOMA === 'en' && DATA.casos_en) || DATA.casos)[i] || DATA.casos[i];
 const columna = c => (tr('columnas')[c] || c);
 
+/* La prosa del IEBH que viaja en los datos —la glosa de cada paradigma, el
+   subtítulo, la familia, las notas, el texto y los usos de los sufijos— tiene
+   su inglés en DATA.ingles, y sólo llega aquí cuando ESTÁ ADJUDICADO:
+   generar_paradigmas.py no lo incluye mientras el borrador no esté firmado.
+   Si no está, se cae al español, que es lo que el pie en inglés anuncia. */
+const ING = () => (IDIOMA === 'en' && DATA.ingles) || null;
+function pr(p, campo){
+  const t = ING();
+  const e = t && t[p.codigo];
+  const v = e && e[campo];
+  return (v === undefined || v === null || v === '') ? p[campo] : v;
+}
+/* El detalle de los sufijos, casado por el sufijo mismo, no por su orden. */
+function detalleDe(p){
+  const t = ING();
+  const e = t && t[p.codigo];
+  if(!e || !e.detalle) return p.detalle || [];
+  const por = {}; e.detalle.forEach(d => por[d.s] = d);
+  return (p.detalle || []).map(d => {
+    const dn = por[d.s];
+    if(!dn || !dn.usos) return d;
+    const usos = (d.usos || [{uso:d.uso, ej:d.ej, ref:d.ref}]).map((u,i) => {
+      const un = dn.usos[i];
+      /* La REFERENCIA no se traduce: es la cita, y es la misma. */
+      return un ? {uso: un.uso, ej: un.ej || u.ej, ref: u.ref} : u;
+    });
+    return {s: d.s, usos: usos};
+  });
+}
+
 /* ---------- clasificación ---------- */
 const GENS = () => tr('gens');
 const TEMAS = () => [['all', tr('tema_lbl')],['a','a'],['ā','ā'],['i','i'],['ī','ī'],
@@ -604,8 +635,16 @@ DATA.paradigmas.forEach(p => {
   const detalle = (p.detalle||[]).map(d =>
     [d.s, ...(d.usos || [{uso:d.uso, ej:d.ej}]).map(u => u.uso + ' ' + u.ej.join(' '))]
       .join(' ')).join(' ');
+  /* El índice de búsqueda lleva los DOS idiomas: quien lea en inglés escribe
+     «girl» y quien lea en español escribe «niña», y las dos han de encontrar
+     kaññā. El inglés sólo está si se adjudicó. */
+  const e = (DATA.ingles || {})[p.codigo] || {};
+  const detEn = (e.detalle||[]).map(d =>
+    (d.usos||[]).map(u => u.uso + ' ' + (u.ej||[]).join(' ')).join(' ')).join(' ');
   p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
-                p.familia||'', p.texto||'', detalle, formas].join(' '));
+                p.familia||'', p.texto||'', detalle, formas,
+                e.paradigma||'', e.subtitulo||'', e.familia||'', e.texto||'',
+                (e.notas||[]).join(' '), detEn].join(' '));
   p.gen = genOf(p); p.tema = temaOf(p);
 });
 const POR_CODIGO = {}; DATA.paradigmas.forEach(p => POR_CODIGO[p.codigo] = p);
@@ -650,9 +689,10 @@ function tabla(p){
   return `<table class="tbl"><thead>${head}</thead><tbody>${filas}</tbody></table>`;
 }
 function titulo(p){
-  const at = p.paradigma.indexOf(' (');
-  const pali = at < 0 ? p.paradigma : p.paradigma.slice(0, at);
-  const glosa = at < 0 ? '' : ' ' + p.paradigma.slice(at + 1);
+  const texto = pr(p, 'paradigma');
+  const at = texto.indexOf(' (');
+  const pali = at < 0 ? texto : texto.slice(0, at);
+  const glosa = at < 0 ? '' : ' ' + texto.slice(at + 1);
   return `<span class="pali">${hi(pali)}</span><span class="gloss">${hi(glosa)}</span>`;
 }
 function card(p){
@@ -661,7 +701,7 @@ function card(p){
   if(p.igual_que){
     const ref = POR_CODIGO[p.igual_que];
     cuerpo = `<p class="igual">${tr('igual')(idOf(ref),
-      `${esc(ref.codigo)} · <i>${esc(ref.paradigma)}</i>`)}</p>`;
+      `${esc(ref.codigo)} · <i>${esc(pr(ref, 'paradigma'))}</i>`)}</p>`;
   } else if(p.filas){
     cuerpo = tabla(p);
   } else {
@@ -680,23 +720,23 @@ function card(p){
     const sentido = u => `<div class="uso-l"><span class="uso-t">${hi(u.uso)}</span>
       — ${u.ej.map(ejemplo).join('<span class="sep">, </span>')}
       <span class="refs">· ${refURL(u.ref)}</span></div>`;
-    const filas = (p.detalle||[]).map(d => {
+    const filas = detalleDe(p).map(d => {
       const usos = d.usos || [{uso: d.uso, ej: d.ej, ref: d.ref}];
       return `<tr id="suf-${esc(d.s)}">
         <th scope="row">${hi(d.s)}</th>
         <td class="multi">${usos.map(sentido).join('')}</td></tr>`;
     }).join('');
-    cuerpo = `<p style="margin:10px 0 0">${hi(p.texto||'')}</p>
+    cuerpo = `<p style="margin:10px 0 0">${hi(pr(p,'texto')||'')}</p>
       <table class="tbl suf"><thead><tr><th></th><th>${esc(tr('th_suf'))}</th></tr></thead>
       <tbody>${filas}</tbody></table>`;
   }
-  const familia = p.familia ? `<p class="familia">${hi(p.familia)}</p>` : '';
-  const notas = (p.notas||[]).map(n => `<p class="parcial">${esc(n)}</p>`).join('');
+  const familia = p.familia ? `<p class="familia">${hi(pr(p,'familia'))}</p>` : '';
+  const notas = (pr(p,'notas')||[]).map(n => `<p class="parcial">${esc(n)}</p>`).join('');
   return `<article class="card" id="${idOf(p)}">
     <div class="chead">
       <span class="cod">${esc(p.codigo)}</span>
       <p class="title">${titulo(p)}</p>
-      <span class="meta">${p.subtitulo ? esc(p.subtitulo) + ' · ' : ''}
+      <span class="meta">${p.subtitulo ? esc(pr(p,'subtitulo')) + ' · ' : ''}
         <button class="mini-btn" data-share="${idOf(p)}" data-tip="${esc(tr('t_enlace'))}">
           <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><circle cx="15" cy="5" r="2"/><circle cx="5" cy="10" r="2"/><circle cx="15" cy="15" r="2"/><path d="M7 11l6 3M7 9l6-3"/></svg>
           ${esc(tr('b_enlace'))}</button>
@@ -1045,7 +1085,7 @@ document.addEventListener('click', e => {
 
 /* ---------- copiar paradigma y copiar enlace ---------- */
 function textoParadigma(p){
-  const L = [`${p.codigo} · ${p.paradigma}${p.subtitulo ? ' — ' + p.subtitulo : ''}`];
+  const L = [`${p.codigo} · ${pr(p,'paradigma')}${p.subtitulo ? ' — ' + pr(p,'subtitulo') : ''}`];
   if(p.igual_que){
     L.push(tr('igual_txt')(p.igual_que));
   } else if(p.filas){
@@ -1057,12 +1097,12 @@ function textoParadigma(p){
     filas.forEach(r =>
       L.push(r.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd()));
   } else if(p.detalle){
-    L.push(p.texto || '', '');
-    p.detalle.forEach(d =>
+    L.push(pr(p,'texto') || '', '');
+    detalleDe(p).forEach(d =>
       (d.usos || [{uso:d.uso, ej:d.ej, ref:d.ref}]).forEach((u,i) =>
         L.push(`${i ? ' '.repeat(d.s.length) : d.s} — ${u.uso} · ${u.ej.join(', ')} (${u.ref})`)));
   }
-  if(p.familia) L.push('', p.familia);
+  if(p.familia) L.push('', pr(p,'familia'));
   L.push('', tr('pie_copia'),
          location.href.split('#')[0] + '#' + idOf(p));
   return L.join('\n');
@@ -1151,6 +1191,21 @@ topBtn.addEventListener('click', () => {
     pintarBarra(document.documentElement.classList.contains('sin-barra'));
     render();
   };
+  /* El aviso del pie dice la verdad del momento: mientras el inglés de la
+     prosa no esté adjudicado, avisa de que se ve el español; en cuanto lo
+     esté, cede el sitio al crédito de quien lo firmó. */
+  const aviso = document.getElementById('aviso-ingles');
+  const credito = document.getElementById('credito-ingles');
+  if(DATA.ingles){
+    if(aviso) aviso.hidden = true;
+    if(credito){
+      credito.hidden = false;
+      credito.innerHTML = '<em>The Pāḷi forms are never translated: they are the object of this '
+        + 'page. The English of the glosses and notes is the IEBH’s'
+        + (DATA.ingles_por ? ', adjudicated by ' + esc(DATA.ingles_por) : '') + '.</em>';
+    }
+  }
+
   aplicar(IDIOMA === 'en', true);
   b.onclick = () => aplicar(IDIOMA !== 'en', false);
 })();

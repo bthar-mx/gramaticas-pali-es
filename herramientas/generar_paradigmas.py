@@ -33,6 +33,7 @@ from generar_capitulo import parsear, partir_bloques, desescapar  # noqa: E402
 
 DATOS = os.path.join(RAIZ, "recursos", "paradigmas", "paradigmas.json")
 INDICE = os.path.join(RAIZ, "recursos", "paradigmas", "indice.json")
+INGLES = os.path.join(RAIZ, "recursos", "paradigmas", "ingles.json")
 PLANTILLA = os.path.join(RAIZ, "recursos", "paradigmas", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "paradigmas", "index.html")
 MD_NAMA = os.path.join(RAIZ, "kaccayana", "02-nama-kappa.md")
@@ -79,6 +80,57 @@ def suttas_nama(citados):
                 es = _limpiar(lineas[0])
         fuera[str(s["n"])] = {"pali": _limpiar(s["pali"]), "es": es}
     return fuera
+
+
+def verificar_ingles(datos, ing):
+    """El borrador inglés, contra los datos. Devuelve la lista de fallos.
+
+    Se comprueba SIEMPRE, esté adjudicado o no: un borrador que no cuadra con
+    los datos no mejora por esperar, y así el fallo aparece el día que se
+    escribe y no el día que se firma.
+    """
+    fallos = []
+    entradas = ing.get("paradigmas", {})
+    codigos = {p["codigo"] for p in datos["paradigmas"]}
+    for c in sorted(codigos - set(entradas)):
+        fallos.append("inglés: falta la entrada {0}".format(c))
+    for c in sorted(set(entradas) - codigos):
+        fallos.append("inglés: sobra la entrada {0}".format(c))
+    for p in datos["paradigmas"]:
+        c = p["codigo"]
+        e = entradas.get(c)
+        if not e:
+            continue
+        if not (e.get("paradigma") or "").strip():
+            fallos.append("inglés {0}: sin glosa".format(c))
+        # cada campo de prosa que exista en español ha de existir en inglés
+        for campo in ("subtitulo", "familia", "texto"):
+            if p.get(campo) and not (e.get(campo) or "").strip():
+                fallos.append("inglés {0}: falta «{1}»".format(c, campo))
+        if len(e.get("notas") or []) != len(p.get("notas") or []):
+            fallos.append("inglés {0}: {1} notas para {2}".format(
+                c, len(e.get("notas") or []), len(p.get("notas") or [])))
+        if p.get("detalle"):
+            den = {d["s"]: d for d in e.get("detalle") or []}
+            for d in p["detalle"]:
+                usos = d.get("usos") or [d]
+                dn = den.get(d["s"])
+                if not dn:
+                    fallos.append("inglés {0}: falta el sufijo «{1}»".format(
+                        c, d["s"]))
+                    continue
+                if len(dn.get("usos") or []) != len(usos):
+                    fallos.append("inglés {0} «{1}»: {2} usos para {3}".format(
+                        c, d["s"], len(dn.get("usos") or []), len(usos)))
+                    continue
+                for i, u in enumerate(usos):
+                    if len(dn["usos"][i].get("ej") or []) != len(u.get("ej") or []):
+                        fallos.append(
+                            "inglés {0} «{1}» uso {2}: {3} ejemplos para "
+                            "{4}".format(c, d["s"], i,
+                                         len(dn["usos"][i].get("ej") or []),
+                                         len(u.get("ej") or [])))
+    return fallos
 
 
 def verificar(datos, indice):
@@ -129,7 +181,10 @@ def main():
     datos = json.load(open(DATOS, encoding="utf-8"))
     indice = json.load(open(INDICE, encoding="utf-8"))
 
-    fallos = verificar(datos, indice)
+    ing = (json.load(open(INGLES, encoding="utf-8"))
+           if os.path.exists(INGLES) else {})
+
+    fallos = verificar(datos, indice) + verificar_ingles(datos, ing)
     if fallos:
         print("paradigmas.json NO cuadra; no se publica:")
         for f in fallos[:20]:
@@ -137,6 +192,14 @@ def main():
         if len(fallos) > 20:
             print("  … y {0} más".format(len(fallos) - 20))
         return 1
+
+    # El inglés de la prosa del IEBH sólo viaja a la página cuando ESTÁ
+    # ADJUDICADO. Mientras «adjudicado» sea false el borrador se comprueba
+    # pero no se publica, y el modo inglés muestra el español —que es lo que
+    # el pie en inglés de la página dice—. Firmarlo es cambiar un booleano.
+    if ing.get("adjudicado"):
+        datos["ingles"] = ing["paradigmas"]
+        datos["ingles_por"] = ing.get("adjudicado_por", "")
 
     citados = suttas_citados(datos)
     datos["nama"] = suttas_nama(citados)
@@ -170,6 +233,16 @@ def main():
     con_nota = [p["codigo"] for p in entradas if p.get("notas")]
     if con_nota:
         print("  con nota de transcripción: {0}".format(", ".join(con_nota)))
+    if ing:
+        n = len(ing.get("paradigmas", {}))
+        if ing.get("adjudicado"):
+            print("  inglés de la prosa: {0} entradas, ADJUDICADO por {1} "
+                  "({2}) — publicado".format(n, ing.get("adjudicado_por") or "?",
+                                             ing.get("fecha") or "?"))
+        else:
+            print("  inglés de la prosa: {0} entradas redactadas y "
+                  "comprobadas, SIN adjudicar — no se publica (cotejo en "
+                  "docs/paradigmas/ingles-por-adjudicar.md)".format(n))
     return 0
 
 

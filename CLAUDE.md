@@ -317,6 +317,45 @@ sin descifrar. La hoja de cálculo pública de la digitalización sirve de
 cotejo independiente: sus 643 claves coinciden una a una con las
 extraídas del PDF.
 
+## Estado de recursos/paradigmas
+
+La referencia de paradigmas (`/recursos/paradigmas/`, v1.14) son las 84 entradas
+(83 documentos) de declinación nominal y pronominal del IEBH. Se arma con
+`herramientas/generar_paradigmas.py` a partir de `recursos/paradigmas/plantilla.html`
+y tres JSON: `paradigmas.json` (los datos), `indice.json` (el cotejo) e
+`ingles.json` (el borrador inglés de la prosa).
+
+### El inglés va en dos capas, y sólo una está publicada
+
+| Capa | Dónde vive | Estado |
+| --- | --- | --- |
+| La INTERFAZ | `plantilla.html` (bloques `.i-es`/`.i-en` + diccionario `TXT`) y `inflexiones_en`/`casos_en` en `paradigmas.json` | publicada (v1.14) |
+| La PROSA del IEBH | `recursos/paradigmas/ingles.json` | **redactada y SIN adjudicar** |
+
+La prosa son las 84 glosas («purisa (hombre)»), los 32 subtítulos, las 7 familias,
+las 8 notas de transcripción, el texto de los sufijos y los 17 usos con sus
+ejemplos. **Son palabras del IEBH**, así que el borrador no llega a la página
+mientras `"adjudicado"` sea `false`: `generar_paradigmas.py` lo comprueba —campo
+por campo, contra el español— pero no lo inyecta, y el modo inglés muestra el
+español con un aviso en el pie que lo dice. Firmarlo es poner `"adjudicado": true`
+con `adjudicado_por` y `fecha`; entonces el aviso cede el sitio al crédito.
+
+El cotejo lado a lado, para firmar, lo escribe
+
+    python3 herramientas/generar_ingles_paradigmas.py   # → docs/paradigmas/ingles-por-adjudicar.md
+
+Las **formas pāḷi no se traducen nunca**: son el objeto de la página, y no
+aparecen en `ingles.json` siquiera. Las referencias (§248, Rū. §260) tampoco: son
+la cita, y es la misma en los dos idiomas.
+
+### Pendiente, y es del IEBH
+
+`docs/paradigmas/ingles-por-adjudicar.md` §7 señala cuatro puntos, y el cuarto no
+es de traducción: **tres notas publicadas dicen «con el visto bueno de Angel»**
+(N-Ā1, #1 y la segunda de Sufijos-Inflexiones). La regla del proyecto es que la
+atribución pública dice IEBH, nunca «Angel». El inglés ya pone «the IEBH»; el
+español está sin tocar a propósito, porque corregir la edición es decisión suya.
+
 ## Hacia dónde va esto: un solucionador de sandhis
 
 El objetivo a plazo es una herramienta a la que se le pegue un párrafo en
