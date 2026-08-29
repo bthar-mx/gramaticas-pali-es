@@ -122,7 +122,12 @@ chat. Familias que acumulan evidencia:
    columna del testigo DPD y puede decidir la cuestión.
 3. **combinar()** — ya hay TRES casos de tres voces y la escalera
    verificada de mamañceva como banco de prueba.
-4. Los veredictos del lote 1 (`por-adjudicar-lote-1.md`) siguen
+4. **Inglés a demanda en /recursos/paradigmas/** (pedido del IEBH al
+   cierre de la sesión): el mismo patrón que raíces y el solucionador —
+   botón EN, clave propia en localStorage, bloques duplicados para la
+   prosa y diccionario TXT para lo dinámico. Mirar primero cómo está
+   armada esa página (plantilla + generador).
+5. Los veredictos del lote 1 (`por-adjudicar-lote-1.md`) siguen
    esperando; el resto del mapa 33 (§23/pakati sistemático, DPD
    descomposiciones, des-flexión) sin cambios.
 
