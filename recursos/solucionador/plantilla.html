@@ -255,7 +255,7 @@ footer a{color:var(--nila)}
     <div class="acciones">
       <button class="boton" id="analizar">Analizar</button>
       <button class="boton secundario" id="limpiar">Limpiar</button>
-      <button class="icon-btn" id="revision" aria-label="Modo revisión"
+      <button class="icon-btn" id="revision" hidden aria-label="Modo revisión"
         title="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
       <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
       <span class="estado" id="estado"></span>
@@ -726,6 +726,20 @@ $('revision').addEventListener('click', () => {
   $('revision').classList.toggle('on', REV.on);
   if($('texto').value.trim()) analizar();
 });
+/* El botón de revisión sólo se ofrece por enlace: …/solucionador/?revision
+   (decisión del IEBH, 2026-08-28). El navegador que lo abrió una vez lo
+   recuerda. No es un candado criptográfico y no pretende serlo: el candado
+   real es incorporar_adjudicaciones.py y la firma — esto es discreción,
+   para que el lector corriente no vea un mando que no le sirve. */
+(function(){
+  let visto = false;
+  try { visto = localStorage.getItem('rev-habilitado') === '1'; } catch(e){}
+  if(/[?&#]revision\b/u.test(location.search + location.hash)){
+    visto = true;
+    try { localStorage.setItem('rev-habilitado', '1'); } catch(e){}
+  }
+  if(visto) $('revision').hidden = false;
+})();
 $('out').addEventListener('click', e => {
   const b = e.target.closest('[data-rev]');
   if(b){

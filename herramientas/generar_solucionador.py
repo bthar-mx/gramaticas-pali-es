@@ -49,7 +49,8 @@ MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
 VERSION = "1.5"
 FECHA = "2026-08-28"
-NOTA = ("Nuevo MODO REVISIÓN (✎): quien sabe de sandhi marca veredictos "
+NOTA = ("Nuevo MODO REVISIÓN (✎, se ofrece sólo abriendo la página con "
+        "?revision): quien sabe de sandhi marca veredictos "
         "sobre cada voz señalada —la primera lectura es correcta, no es "
         "sandhi, u otra lectura—, registra los sandhis que la señal NO "
         "detectó (voz = voz + voz) y exporta todo en el formato de los "
