@@ -210,6 +210,26 @@ footer a{color:var(--nila)}
 #tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
 #tip.llano p{margin:0}
 
+/* ---------- enlace y copia de cada voz (pedido del IEBH, 2026-08-29) ------
+   Los mismos botones de /recursos/raices/ y /recursos/paradigmas/, y el
+   mismo aspecto, para que la misma cosa se vea igual en las tres páginas. */
+.fbtns{display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  margin:16px 0 0;padding-top:11px;border-top:1px solid var(--hair)}
+.mini-btn{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);
+  font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--soot);background:var(--ola-2);border:1px solid var(--hair);
+  border-radius:2px;padding:5px 9px;cursor:pointer;
+  transition:color .12s,border-color .12s}
+.mini-btn svg{width:12px;height:12px}
+.mini-btn:hover{color:var(--ink);border-color:var(--soot)}
+.mini-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.mini-btn.ok{color:var(--haritala);border-color:var(--haritala)}
+@media print{.fbtns{display:none}}
+@media (max-width:640px){
+  .mini-btn{min-height:38px;padding:9px 12px;font-size:11px}
+  .mini-btn svg{width:14px;height:14px}
+}
+
 /* Inglés a demanda (pedido del IEBH, 2026-08-29), como en /recursos/raices/:
    el botón EN alterna el idioma de la interfaz y el navegador lo recuerda.
    Los textos del MOTOR (motivos, procedencias, pasos) siguen en español:
@@ -527,6 +547,12 @@ const TXT = {
     verlas: n => `ver las ${n} lecturas — el orden es de verosimilitud, no
           de certeza`,
     cargando: 'cargando el léxico del canon…', analizando: 'analizando…',
+    b_enlace: 'Enlace', b_copiar: 'Copiar', b_copiado: '✓ ¡Copiado!',
+    t_enlace: 'Copiar un enlace que abre el solucionador con esta voz ya analizada',
+    t_copiar: 'Copiar este análisis al portapapeles',
+    c_senal: 'señal', c_lectura: 'lectura', c_otras: 'otras lecturas que también recomponen',
+    c_pasos: 'secuencia', c_sinlect: 'sin lectura',
+    pie_copia: 'Solucionador de sandhis · Kaccāyana Pāḷi-Español · Instituto de Estudios Buddhistas Hispano',
     b_analizar: 'Analizar', b_limpiar: 'Limpiar', b_rev: '✎ revisión',
     lbl_texto: 'Pasaje o voz pāḷi',
     ph_texto: 'p. ej. — Evaṃ me sutaṃ… o una voz sola: lokaggo, yassindriyāni, tathūpamaṃ',
@@ -579,6 +605,12 @@ const TXT = {
     verlas: n => `see the ${n} readings — the order is plausibility, not
           certainty`,
     cargando: 'loading the canon lexicon…', analizando: 'analysing…',
+    b_enlace: 'Link', b_copiar: 'Copy', b_copiado: '✓ Copied!',
+    t_enlace: 'Copy a link that opens the solver with this word already analysed',
+    t_copiar: 'Copy this analysis to the clipboard',
+    c_senal: 'signal', c_lectura: 'reading', c_otras: 'other readings that also recompose',
+    c_pasos: 'sequence', c_sinlect: 'no reading',
+    pie_copia: 'Sandhi solver · Kaccāyana Pāḷi-Español · Instituto de Estudios Buddhistas Hispano',
     b_analizar: 'Analyse', b_limpiar: 'Clear', b_rev: '✎ review',
     lbl_texto: 'Pāḷi passage or word',
     ph_texto: 'e.g. — Evaṃ me sutaṃ… or a single word: lokaggo, yassindriyāni, tathūpamaṃ',
@@ -758,8 +790,66 @@ function tarjeta(voz, r, abierta, veces){
       <span class="fmeta">${chip}${estado ? ' ' + estado : ''}${
         (n && r.senal !== 'segura') ? tr('lecturas')(n) : ''}</span>
     </summary>
-    <div class="fbody">${REV.on ? revBarra(voz, r) : ''}${cuerpoResultado(r, abierta)}</div>
+    <div class="fbody">${REV.on ? revBarra(voz, r) : ''}${cuerpoResultado(r, abierta)}
+      ${botonesVoz(voz)}</div>
   </details>`;
+}
+
+/* ---------- enlace y copia de cada voz (pedido del IEBH, 2026-08-29) ------
+   Los mismos dos botones que en /recursos/raices/ y /recursos/paradigmas/.
+   Van DENTRO del cuerpo y no en el <summary>: un clic en el resumen pliega
+   la tarjeta, y un botón que además la cierra es un botón que estorba. */
+function botonesVoz(voz){
+  return `<div class="fbtns">
+    <button type="button" class="mini-btn" data-share="${esc(voz)}" data-tip="${esc(tr('t_enlace'))}">
+      <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><circle cx="15" cy="5" r="2"/><circle cx="5" cy="10" r="2"/><circle cx="15" cy="15" r="2"/><path d="M7 11l6 3M7 9l6-3"/></svg>
+      ${esc(tr('b_enlace'))}</button>
+    <button type="button" class="mini-btn" data-copy="${esc(voz)}" data-tip="${esc(tr('t_copiar'))}">${esc(tr('b_copiar'))}</button>
+  </div>`;
+}
+
+/* El enlace lleva la voz en la URL: al abrirlo, el solucionador la analiza
+   sola. Es reproducible porque el motor es determinista — la misma voz da la
+   misma escalera— y porque una voz sola entra por la rama del «análisis
+   completo», que no esconde ninguno de los tres silencios. */
+function enlaceVoz(voz){
+  const base = location.origin + location.pathname;
+  return base + '?voz=' + encodeURIComponent(voz);
+}
+
+/* El análisis en texto llano, para pegarlo donde sea. Se dice de dónde viene
+   cada lectura, que es lo que distingue una afirmación de una conjetura. */
+function textoVoz(voz, r){
+  const L = [voz];
+  L.push(`${tr('c_senal')}: ${(SENAL_ROTULO[r.senal] ? tr(SENAL_ROTULO[r.senal]) : (r.senal || '—'))}`);
+  if(r.motivo) L.push(r.motivo);
+  const lect = r.lecturas || [];
+  if(!lect.length){
+    L.push('', tr('c_sinlect'));
+  } else {
+    const escribir = (l, rotulo) => {
+      const comp = (l.componentes || []).filter(x => x);
+      L.push('', `${rotulo}: ${comp.length ? comp.join(' + ') : '—'}`);
+      (l.pasos || []).forEach(raw => {
+        const {text, ref} = parseStep(raw);
+        L.push('    ' + text + (ref ? '   (' + ref + ')' : ''));
+      });
+      const pie = [];
+      if(l.adjudicada) pie.push('lectura adjudicada · ' + l.adjudicada);
+      if(l.pendiente) pie.push(l.pendiente);
+      if(l.patron) pie.push('patrón adjudicado · ' + l.patron);
+      if(l.referencia) pie.push('Referencia: ' + l.referencia);
+      if(l.procedencia) pie.push(l.procedencia);
+      if(pie.length) L.push('    ' + pie.join(' · '));
+    };
+    escribir(lect[0], tr('c_lectura'));
+    if(lect.length > 1 && r.senal !== 'segura'){
+      L.push('', tr('c_otras') + ':');
+      lect.slice(1).forEach((l, i) => escribir(l, String(i + 2)));
+    }
+  }
+  L.push('', tr('pie_copia'), enlaceVoz(voz));
+  return L.join('\n');
 }
 
 /* ---------- analizar ---------- */
