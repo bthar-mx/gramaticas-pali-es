@@ -11,6 +11,27 @@ práctica sobre el modo revisión.
 
 ---
 
+## Un testigo nuevo, y es usted mismo
+
+Después de escrito lo que sigue, Angel trajo sus textos bilingües —el
+Mahāsatipaṭṭhāna-sutta y su Vaṇṇanā—. Imprimen el pāḷi con las junturas
+**abiertas**: «Evam eva», «yad idaṃ», «Puna c’ aparaṃ», «sato ’va», donde la
+edición del Sexto Concilio las imprime unidas. **Cada uno de esos espacios es
+una juntura que usted separó a mano**, y unirlas es literal: se quita el
+espacio y sale la forma de la edición.
+
+De los dos textos se extraen **474 junturas distintas, y las 474 están
+atestiguadas en la edición** —60 candidatas que no lo estaban se
+descartaron—. El solucionador señala 381 de ellas y **no ve 93**, entre
+ellas tenāha (6.018), ādimāha (3.961), cettha (2.140), athassa (1.790),
+panassa (1.731), caparaṃ (1.548) y cassa (1.544).
+
+Esto importa para las dos decisiones que siguen por una razón concreta: **el
+DPD callaba sobre 158 de las 419 formas en cuestión**, y su texto no calla.
+Donde el diccionario no podía juzgar, su propia edición ya lo hizo.
+
+---
+
 ## Primera decisión: hasta dónde llega la licencia de §34
 
 ### Dónde quedó
@@ -96,6 +117,23 @@ dos casos que motivaron el piso; los adjudicó nuestro juicio, y su juicio sigue
 haciendo falta —como acaba de verse con ekamante, que el testigo tampoco juzgaba
 y que usted ha resuelto de un golpe—.
 
+### Y lo que dice su propio texto
+
+En los dos textos separados hay **89 junturas de la clase de §34**, y el
+solucionador **no ve 26**:
+
+| forma | apariciones | su corte | qué hace el motor |
+| --- | ---: | --- | --- |
+| ādimāha | 3.961 | ādim \| āha | no la ve |
+| tamenaṃ | 778 | Tam \| enaṃ | no la ve |
+| vuttanayameva | 571 | vuttanayam \| eva | **la lee bien y calla** |
+| pattacīvaramādāya | 467 | pattacīvaram \| ādāya | **la lee bien y calla** |
+
+Las dos últimas son el asunto entero en dos líneas: la primera lectura del
+motor **ya es la correcta** —vuttanayaṃ + eva, pattacīvaraṃ + ādāya— y lo que
+la silencia no es ignorancia sino **el resguardo**. Son lecturas buenas que se
+pierden por prudencia, y ahora se sabe que son buenas porque usted las separó.
+
 ### Lo que se le pide decidir
 
 ¿Sustituir el piso de frecuencia por las tres condiciones? ¿Adoptar sólo la
@@ -155,6 +193,23 @@ soyeva y svassa.
 De modo que la etiqueta sirve de **licencia** —lo que marca, casi con seguridad
 es sandhi— y **no de prueba de verdad**: lo que no marca puede serlo igualmente.
 Usarla como puerta única silenciaría sandhis reales.
+
+### Y aquí su texto es aún más claro
+
+De las formas de esta clase que el mecanismo afirmaría, **usted separa cuatro
+en su propio texto y la página no señala ninguna de las cuatro**:
+
+| forma | apariciones | su corte | qué hace el motor |
+| --- | ---: | --- | --- |
+| cettha | 2.140 | c \| ettha | **sin señal** |
+| cassa | 1.544 | c \| assa | **sin señal** |
+| cetaṃ | 1.038 | c \| etaṃ | **sin señal** |
+| cesa | 162 | c \| esa | **sin señal** |
+
+En las cuatro, la primera lectura del motor es ya la que su corte confirma —ca
++ ettha, ca + assa, ca + etaṃ, ca + esa—: sólo le falta la licencia para
+decirlo. Y hay una quinta donde el motor **se equivoca**: **caparaṃ** (1.548),
+que él lee «capi + araṃ» y usted separa «c | aparaṃ».
 
 ### Lo que se le pide decidir
 
