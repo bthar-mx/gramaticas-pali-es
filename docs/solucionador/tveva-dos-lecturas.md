@@ -67,6 +67,30 @@ la Palabra del Buddha ni en los comentarios.*
 Aggavaṃsa lo dice en voz alta: con «iti» no se forma ese conjunto. La forma
 reducida **tveva** es «itveva» con la ‘i’ inicial ya elidida.
 
+### Cotejado contra Helmer Smith, que es lo que manda el editor
+
+Verificado el 2026-08-30 sobre el PDF de Angel, **Saddanīti III (Suttamālā),
+p. 617** (pág. 24 del PDF). Smith imprime:
+
+> **49 Evass’ ekāre itiss’ aññassa c’ issa vo.** Evasaddassa *e*kāre pare
+> *iti*saddassa aññassa ca saddassa *i*ssa *v*akāro hoti kvaci: “**itv eva**
+> coro asim āvudhañ ca; **vilapatv eva** so dijo; **Isigili tv eva**;
+> **Samantapāsādikā tv eva**”. Kvacī ti kiṃ: *icc eva*.
+
+**Smith trae CUATRO ejemplos donde el texto de Bhaddacak trae uno**, y los dos
+que faltaban son los que deciden: «**Isigili tv eva**» (M III 68) y
+«**Samantapāsādikā tv eva**» son la fórmula del NOMBRE —un nombre seguido de
+«tv eva»—, que es exactamente la construcción de «Aññāsi Koṇḍañño tveva». El
+propio sutta trae el patrón de Angel entre sus ejemplos.
+
+Referencias canónicas que da el aparato de Smith para los cuatro:
+M II 100⁵ = Th 869ᵃ · J III 302² · M III 68⁵⁰ · Sp I 201³⁰, 284²¹.
+
+**Y el aparato responde de paso lo de Kaccāyana.** Smith da la concordancia
+sutta por sutta: `§ 50 Kc 20`, `§ 51 Kc 21` — y **para el § 49 no da ningún
+`Kc`**. Es el testimonio del propio Smith de que Kaccāyana no tiene sutta
+correspondiente, y coincide con la cuenta de §4.
+
 ## 3. La edición del Sexto Concilio confirma la regla, y se midió antes de encontrarla
 
 Sobre `recursos/corpus/corpus-formas.json` (681.927 formas, 8.062.163 fichas,
@@ -129,6 +153,53 @@ con autoridad cada una: «tu + eva» por Kaccāyana §18, «iti + eva» por Sadd
 
 De modo que la página no falla por avería: acierta la mitad de las veces por
 construcción. Es asunto del registro de casos, no del motor.
+
+## 5 bis. POR QUÉ EL VEREDICTO DEL DHAMMACAKKA NO LLEGA A LA PÁGINA
+
+Diagnosticado el 2026-08-30. **Son dos causas, no una**, y la segunda muerde
+aunque se arregle la primera.
+
+**Causa 1 — el veredicto está en la cola, sin incorporar.** El archivo
+`docs/solucionador/veredictos-recibidos/2026-08-30T21-34-35-850Z-12283c58.md`
+trae el veredicto «iti + eva» con su escalera. El ciclo no ha corrido desde
+entonces: el último commit del árbol es el de esta sesión. Nada se ha aplicado
+todavía.
+
+**Causa 2 — la clave del caso es «tveva», y ya está tomada.**
+`incorporar_adjudicaciones.py` busca el caso por la forma (línea 143,
+`por_clave.get(cotejo(forma))`), encuentra el «tveva» adjudicado como
+«tu + eva», compara los componentes, ve que difieren y **se detiene con un
+aviso sin tocar nada**:
+
+    el veredicto de tveva difiere del caso guardado ('iti + eva' frente a
+    'tu + eva'): no se toca nada — decídase a mano
+
+Ese resguardo es correcto y hay que dejarlo: colgar una escalera de unos
+componentes que el revisor no afirmó sería mezclar dos análisis. Pero
+significa que **correr el ciclo no va a cambiar la página**, y que si el
+resguardo no estuviera sería peor: el veredicto nuevo pisaría al viejo y
+entonces «avijjāya tveva» pasaría a leerse «iti + eva», que es falso.
+
+### El arreglo, y lo dice la propia escalera del veredicto
+
+La escalera que escribió Angel no deriva «tveva»: deriva
+**«aññāsikoṇḍaññotveva»**, la voz entera. Y ésa es una forma distinta, está
+atestiguada en la edición —**2 veces**— y **no tiene caso todavía**. Registrado
+bajo esa clave el veredicto entra sin chocar, y «tveva» suelto se queda como
+está para «avijjāya tveva».
+
+Lo mismo vale para el otro ejemplo de Angel: **«avijjāyatveva» existe en la
+edición como voz unida, 14 veces**. De modo que las dos lecturas se pueden
+registrar sin ambigüedad si la clave es la voz unida y no la partícula suelta:
+
+| clave | lectura | autoridad | en el canon |
+| --- | --- | --- | ---: |
+| `aññāsikoṇḍaññotveva` | iti + eva | Saddanīti Suttamālā 49 | 2 |
+| `avijjāyatveva` | tu + eva | Kaccāyana §18 | 14 |
+| `tveva` (suelto) | las dos | — | 727 |
+
+**«tveva» suelto es el que no se puede adjudicar de una vez**, y no por avería:
+porque de veras tiene dos lecturas y la ficha da una. Ése es el punto de §5.
 
 ## 6. Por qué el motor nunca ofreció la lectura citativa
 
