@@ -888,13 +888,31 @@
    "forma": "tadānanda",
    "fuente": "IEBH, 2026-08-30 · revisión en la página",
    "sandhi": true,
-   "componentes": "tadā + ānanda"
+   "componentes": "tadā + ānanda",
+   "escalera_iebh": [
+    "tadā ānanda",
+    "tad ā ānanda (§10)",
+    "tad ānanda (§12)",
+    "tadānanda (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · observaciones del lote 13:46 (verbatim)"
   },
   {
    "forma": "imināpetaṃ",
    "fuente": "IEBH, 2026-08-30 · revisión en la página",
    "sandhi": true,
-   "componentes": "iminā + pi + etaṃ"
+   "componentes": "iminā + api + etaṃ",
+   "nota": "Nota del revisor (verbatim): please note that I made a mistake in the recorded phrase. It should be imināpetaṃ = iminā api etaṃ. — Corrige el veredicto anterior, «iminā + pi + etaṃ», incorporado el 2026-08-30 desde el mismo lote: la enmienda venía en las observaciones, que el incorporador no lee.",
+   "escalera_iebh": [
+    "iminā api etaṃ",
+    "imin ā api etaṃ (§10)",
+    "imin api etaṃ (§12)",
+    "imin āpi etaṃ (§13)",
+    "imin āp i etaṃ (§10)",
+    "imin āp etaṃ (§12)",
+    "imināpetaṃ (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · observaciones del lote 13:46 (verbatim)"
   },
   {
    "forma": "nābhavissa",
@@ -929,7 +947,8 @@
    "forma": "tasmātihānanda",
    "fuente": "IEBH, 2026-08-30 · revisión en la página",
    "sandhi": true,
-   "componentes": "tasmā + tiha + ānanda"
+   "componentes": "tasmā + tiha + ānanda",
+   "nota": "Nota del revisor (verbatim): Include this explanation every time 'tasmātiha' (= tasmā iha) is found. La «t» (§35) se inserta para evitar hiato entre la vocal final de «tasmā» y la vocal inicial de «iha». El indeclinable «iha» tiene el mismo significado que «idha», aquí."
   },
   {
    "forma": "eseva",
