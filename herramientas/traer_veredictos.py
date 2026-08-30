@@ -81,15 +81,23 @@ def main():
         return 2
 
     q = "?clave=" + urllib.parse.quote(a.clave)
-    d = pedir(a.api + q)
+    # «--solo-mirar» sólo necesita el id y la cuenta, y desde el 2026-08-30 el
+    # worker los da con list() a secas: ni un .md viaja por la red. Antes se
+    # descargaba la cola ENTERA para contar apariciones de «VEREDICTO:», que
+    # es lo que hacía lenta una orden que no toca nada.
+    d = pedir(a.api + q + ("&resumen=1" if a.solo_mirar else ""))
     cola = d.get("veredictos", [])
     print("{0} entrada{1} en la cola".format(len(cola), "" if len(cola) == 1 else "s"))
     if not cola:
         return 0
     if a.solo_mirar:
         for e in cola:
-            md = e.get("md") or ""
-            n = md.count("VEREDICTO:")
+            # El worker viejo no conoce «resumen»: si no vino la cuenta, se
+            # saca del .md como siempre. Así la orden funciona contra un
+            # despliegue anterior a este cambio.
+            n = e.get("n")
+            if n is None:
+                n = (e.get("md") or "").count("VEREDICTO:")
             print("  · {0} — {1} veredicto{2}".format(
                 e["id"], n, "" if n == 1 else "s"))
         return 0
