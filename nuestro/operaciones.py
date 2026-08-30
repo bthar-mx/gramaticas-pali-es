@@ -386,10 +386,19 @@ def op_S49(a, b, F):
     #
     # Medido sobre las 681.927 formas de la edición: sin la restricción el
     # sutta gana 248 formas (masa 1.821); con ella, 234 (masa 1.276). Las 14
-    # que quedan fuera son todas falsas —«sveva» leído «si + eva» cuando es
-    # «so + eva» (§18), «dveva» leído «di + eva» cuando es «dve + eva», y
-    # «dvevassasahassāyukā», que es «dve vassasahassāyukā»—, y se apoyan en
-    # voces que la edición trae una o dos veces. Sin la restricción, «sv
+    # que quedan fuera son todas falsas y se apoyan en voces que la edición
+    # trae una o dos veces («si» 2, «di» 1, «esi» 14). Las lecturas VERDADERAS
+    # de esas formas las adjudicó el IEBH el 2026-08-30:
+    #
+    #     sveva   = so + eva    (§18)
+    #     dveva   = dvi + eva   (§12)
+    #     esveva  = eso + eva   (§18)
+    #
+    # <!-- Enmienda del mismo día: aquí decía antes «cuando es dve + eva» y
+    #      «dvevassasahassāyukā, que es dve vassasahassāyukā». Eso era MÍO y
+    #      sin autoridad: la lista de arriba enumeraba correctamente lo que la
+    #      regla ancha generaba de más, pero la glosa de lo que las voces son
+    #      DE VERDAD no me correspondía darla. Lo corrigió Angel. --> Sin la restricción, «sv
     # eva» del banco salía con una octava lectura falsa y arnes.js lo
     # detenía; con ella, los cinco arneses pasan.
     #

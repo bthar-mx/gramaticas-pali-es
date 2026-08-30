@@ -100,9 +100,28 @@ Medido sobre las 681.927 formas:
 | como lo dice el sutta (cualquier 'i' final) | 248 | 1.821 |
 | estrechado a «-ti» | **234** | **1.276** |
 
-Las 14 que caen son todas falsas —«sveva» leído «si + eva» cuando es «so +
-eva», «dveva» leído «di + eva» cuando es «dve + eva»— y se apoyan en voces que
-la edición trae una o dos veces. **Sin la restricción, `arnes.js` se detenía**:
+Las 14 que caen son todas falsas —la regla ancha proponía «si + eva» para
+«sveva», «di + eva» para «dveva», «esi + eva» para «esveva»— y se apoyan en
+voces que la edición trae una o dos veces («si» 2, «di» 1, «esi» 14).
+
+**Las lecturas verdaderas de esas formas las adjudicó Angel el 2026-08-30**, y
+se anotan aquí porque el chat que venga las va a necesitar:
+
+    sveva   = so + eva    (§18)
+    dveva   = dvi + eva   (§12)
+    esveva  = eso + eva   (§18)
+
+<!-- ENMIENDA del mismo día, y es de las que hay que declarar. La lista de
+     lecturas falsas era correcta —es lo que la regla ancha generaba de más—,
+     pero en la primera redacción añadí de mi cosecha «cuando es dve + eva» y
+     «dvevassasahassāyukā, que es dve vassasahassāyukā». Eso no era una medida
+     ni una cita: era una glosa mía sin autoridad, escrita el mismo día en que
+     Angel pidió dejar por escrito que lo teóricamente posible no se publica
+     como si fuera lo que dice el canon. La corrigió él: es «dvi + eva» por
+     §12. Enumerar lo que el motor propone de más es una cosa; decir lo que la
+     voz ES, otra, y la segunda no me toca. -->
+
+**Sin la restricción, `arnes.js` se detenía**:
 la forma `sv eva` del banco salía con una octava lectura falsa. Queda un
 `<!-- DUDA -->` en el código: estrechar el enunciado lo decide el IEBH.
 
@@ -269,6 +288,13 @@ está en **francés**.
 3. **Vigilé un proceso muerto durante varios minutos** con un `pgrep` que
    casaba con el envoltorio del arenal. La comprobación no podía fallar, que
    es la definición de comprobación inútil — briefing 38 §6.3, otra vez.
+4. **Glosé de mi cosecha lo que unas voces «son»** —«dveva … cuando es dve +
+   eva», «dvevassasahassāyukā, que es dve vassasahassāyukā»— dentro de una
+   lista que sí estaba medida. Angel lo corrigió: es **«dvi + eva» por §12**.
+   El fallo no fue la medida sino el resbalón de «esto es lo que el motor
+   propone de más» a «y esto es lo que la voz es», que es adjudicar, y no me
+   toca. Y ocurrió el mismo día en que él pidió poner por escrito justamente
+   eso. Corregido en `nuestro/operaciones.py` y en §2 de aquí.
 
 ## 9. LO QUE SIGUE (en orden)
 
