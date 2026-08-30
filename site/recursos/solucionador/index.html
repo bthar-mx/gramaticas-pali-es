@@ -325,8 +325,12 @@ body:not(.en) .i-en{display:none}
   <div class="wrap mast">
     <div>
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
-      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Kaccāyana · Sandhi-Kappa · Canon del Sexto Concilio</span></div>
-      <h1>Solucionador de sandh<span class="dia">i</span>s</h1>
+      <!-- 2026-08-30, pedido del IEBH: en modo inglés el título es «Sandhi
+           Solver», y el sobretítulo tampoco puede quedarse en español. Van
+           con los mismos .i-es/.i-en que el resto de la interfaz; la letra
+           en color (.dia) se conserva en los dos, sobre la «i» de Sandhi. -->
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl i-es">Kaccāyana · Sandhi-Kappa · Canon del Sexto Concilio</span><span class="lbl i-en">Kaccāyana · Sandhi-Kappa · Sixth Council Canon</span></div>
+      <h1><span class="i-es">Solucionador de sandh<span class="dia">i</span>s</span><span class="i-en">Sandh<span class="dia">i</span> Solver</span></h1>
       <p class="tag i-es">Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces,
       y qué secuencia de aforismos de Kaccāyana explica cada una.</p>
       <p class="tag i-en">Paste a Pāḷi passage: how many sandhis there are, which words
@@ -2423,6 +2427,7 @@ let IDIOMA = 'es';
 try { if(localStorage.getItem('pali_solucionador_en') === '1') IDIOMA = 'en'; } catch(e){}
 const TXT = {
   es: {
+    titulo_doc: 'Solucionador de sandhis · pāḷi',
     posible: 'señal posible', adjudicado: 'sandhi adjudicado', firme: 'predicción firme',
     e_firmada: 'firmada en el banco', e_candidatos: 'candidatos', e_resuelto: 'resuelto',
     e_sin: 'sin sandhi', e_pakati: 'sin sandhi, por regla (pakati)',
@@ -2487,6 +2492,7 @@ const TXT = {
     c_borrar: n => `¿Borrar los ${n} veredictos y las observaciones guardados en este navegador?`,
   },
   en: {
+    titulo_doc: 'Sandhi Solver · pāḷi',
     posible: 'possible signal', adjudicado: 'adjudicated sandhi', firme: 'firm prediction',
     e_firmada: 'signed in the bank', e_candidatos: 'candidates', e_resuelto: 'solved',
     e_sin: 'no sandhi', e_pakati: 'no sandhi, by rule (pakati)',
@@ -3456,6 +3462,9 @@ document.addEventListener('click', e => {
     document.querySelector('label[for="texto"]').textContent = tr('lbl_texto');
     $('texto').placeholder = tr('ph_texto');
     document.documentElement.lang = v ? 'en' : 'es';
+    /* El título de la pestaña también, que es lo primero que se lee al
+       compartir el enlace (2026-08-30, con el título de la cabecera). */
+    document.title = tr('titulo_doc');
     /* Lo ya analizado se vuelve a pintar en el idioma nuevo. */
     if($('texto').value.trim() && typeof analizar === 'function') analizar();
   };
