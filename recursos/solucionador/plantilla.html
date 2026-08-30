@@ -609,6 +609,7 @@ const TXT = {
     cargando: 'cargando el léxico del canon…', analizando: 'analizando…',
     t_ir: 'Ver el análisis de esta voz',
     esc_iebh: 'secuencia escrita por el IEBH — el motor no la deriva ni la ha verificado',
+    esc_derivada: 'secuencia derivada por el motor y verificada por recomposición — no adjudicada',
     sin_marca: 'sin marca: el motor calla',
     b_enlace: 'Enlace', b_copiar: 'Copiar', b_copiado: '✓ ¡Copiado!',
     t_enlace: 'Copiar un enlace que abre el solucionador con esta voz ya analizada',
@@ -673,6 +674,7 @@ const TXT = {
     cargando: 'loading the canon lexicon…', analizando: 'analysing…',
     t_ir: 'See the analysis of this word',
     esc_iebh: 'sequence written by the IEBH — the engine neither derives nor verifies it',
+    esc_derivada: 'sequence derived by the engine and verified by recomposition — not adjudicated',
     sin_marca: 'unmarked: the engine stays silent',
     b_enlace: 'Link', b_copiar: 'Copy', b_copiado: '✓ Copied!',
     t_enlace: 'Copy a link that opens the solver with this word already analysed',
@@ -808,14 +810,24 @@ const CASO_POR_FORMA = {};
 ((DATA.casos || {}).casos || []).forEach(c => {
   if(c && c.forma) CASO_POR_FORMA[claveForma(c.forma)] = c;
 });
+/* Dos escaleras guardadas, y NO se rotulan igual (2026-08-30). La del IEBH
+   la escribió él y el motor no la ha verificado; la derivada la calculó el
+   motor y sólo se guarda si recompone EXACTAMENTE la forma atestiguada.
+   Decir cuál es cuál es la mitad del valor de enseñarlas, así que cada una
+   lleva su rótulo. Si hubiera las dos, manda la del IEBH: es la autoridad. */
 function escaleraIEBH(voz){
   const c = CASO_POR_FORMA[claveForma(voz)];
-  const pasos = c && c.escalera_iebh;
+  if(!c) return '';
+  const suya = c.escalera_iebh && c.escalera_iebh.length;
+  const pasos = suya ? c.escalera_iebh : c.escalera_derivada;
   if(!pasos || !pasos.length) return '';
-  return `<p class="lbl" style="margin:14px 0 0">${esc(tr('esc_iebh'))}</p>`
+  const fuente = suya
+    ? (c.escalera_fuente || c.fuente || '')
+    : (c.escalera_derivada_fuente || '');
+  return `<p class="lbl" style="margin:14px 0 0">${
+      esc(tr(suya ? 'esc_iebh' : 'esc_derivada'))}</p>`
     + ladder(pasos, false)
-    + `<p class="parcial" style="margin:6px 0 0">${
-        esc(c.escalera_fuente || c.fuente || '')}</p>`;
+    + `<p class="parcial" style="margin:6px 0 0">${esc(fuente)}</p>`;
 }
 
 function cuerpoResultado(r, esVozSola, voz){

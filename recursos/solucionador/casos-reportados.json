@@ -948,7 +948,16 @@
    "fuente": "IEBH, 2026-08-30 · revisión en la página",
    "sandhi": true,
    "componentes": "tasmā + tiha + ānanda",
-   "nota": "Nota del revisor (verbatim): Include this explanation every time 'tasmātiha' (= tasmā iha) is found. La «t» (§35) se inserta para evitar hiato entre la vocal final de «tasmā» y la vocal inicial de «iha». El indeclinable «iha» tiene el mismo significado que «idha», aquí."
+   "nota": "Nota del revisor (verbatim): Include this explanation every time 'tasmātiha' (= tasmā iha) is found. La «t» (§35) se inserta para evitar hiato entre la vocal final de «tasmā» y la vocal inicial de «iha». El indeclinable «iha» tiene el mismo significado que «idha», aquí.",
+   "escalera_derivada": [
+    "tasmā iha",
+    "tasmā t iha (§35)",
+    "tasmātiha (§11)",
+    "tasmātih a ānanda (§10)",
+    "tasmātih ānanda (§12)",
+    "tasmātihānanda (§11)"
+   ],
+   "escalera_derivada_fuente": "Derivada por combinar_varias() y verificada por recomposición (2026-08-30): única cadena de las candidatas que reproduce la forma atestiguada. La primera juntura es la que el revisor explica en la nota. Los componentes guardados dicen «tiha»; la derivación arranca de «iha», que es «tiha» sin la «t» de §35 — pendiente de su parecer."
   },
   {
    "forma": "eseva",
