@@ -36,6 +36,21 @@ Exportar en **texto sin formato**, no en Markdown: el Markdown de Google
 escapa caracteres —`[232]` sale como `\[232\]`— y no aporta nada que este
 guion use.
 
+## Y si lo que llega es un PDF
+
+El PDF va **en esta misma carpeta** y se queda quieto: el extractor sólo lee
+`.txt`, y `*.pdf` está en `.gitignore`, de modo que no viaja con el
+repositorio —como los PDF del Saddanīti y del Abhidhāna—.
+
+**Antes de extraer nada, se diagnostica una página.** Es la regla que este
+proyecto aprendió a las malas: el PDF de U Sīlānanda no tenía capa de texto
+utilizable —477 subconjuntos tipográficos y el `/ToUnicode` roto— y hubo que
+escribir un extractor por el contorno de cada glifo. Si la capa de texto
+está limpia, `pdftotext` deja el `.txt` al lado y el extractor lo toma en la
+siguiente corrida; si es un escaneo, se dice ANTES de gastar esfuerzo en
+OCR, que sobre pāḷi romanizado con diacríticos completos es justamente el
+trabajo del que hay que desconfiar.
+
 ## Procedencia y licencia
 
 - **Mahāsatipaṭṭhāna-sutta**, versión bilingüe pāḷi-español. Fuente:
