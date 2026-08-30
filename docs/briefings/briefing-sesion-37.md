@@ -117,10 +117,15 @@ correrlo **por debajo** del piso, que es lo que hace el informe nuevo.
 | segunda voz acabada en partícula ajena | 29 | 4 |
 | **las tres juntas** | **62 → 18** | **199 → 195** |
 
-  Precisión sobre lo adjudicable: **76,2 % → 91,5 %**. «saṃ-» es preverbo y
-  samāgama es compuesto; «maṃ» es el acusativo donde la lectura verdadera
-  lleva «mama»; y el grupo de «-ti» es §34 quitándole formas al patrón de
-  «iti», que ya está firmado (satimantoti es satimanto + iti).
+  Precisión sobre lo adjudicable: **76,2 % → 91,5 %**. Las dos primeras
+  voces se descartan por razones DISTINTAS (precisiones del IEBH,
+  2026-08-30): «saṃ-» es un **prefijo, y se antepone a nombres y a verbos**
+  —antes se decía «preverbo», que es más estrecho—, de modo que samāgama es
+  compuesto; «maṃ» **no es prefijo, es el ACUSATIVO del pronombre «amha»**, y
+  **«mama» es dativo y genitivo de ese mismo pronombre** — las dos son del
+  paradigma de amha, no piezas que se antepongan a nada. El grupo de «-ti»
+  es §34 quitándole formas al patrón de «iti», que ya está firmado
+  (satimantoti es satimanto + iti).
 
 **DOS LÍMITES, declarados en el propio informe y que no hay que perder:**
 

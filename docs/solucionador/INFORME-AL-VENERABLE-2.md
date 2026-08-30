@@ -77,10 +77,14 @@ conservando 195 de las 199 lecturas correctas.
 
 Las tres condiciones tienen razón gramatical, no estadística:
 
-- **«saṃ» y «maṃ» no encabezan una juntura de §34.** «saṃ-» es preverbo, y
-  samāgama es un compuesto, no dos voces; «maṃ» es el acusativo donde la lectura
-  verdadera lleva el genitivo «mama» —el DPD lee mameva como mama + eva, no maṃ +
-  eva—. Estas dos cortan 23 lecturas falsas **sin perder ni una correcta**.
+- **«saṃ» y «maṃ» no encabezan una juntura de §34, y por razones distintas.**
+  «saṃ-» es un **prefijo, y se antepone tanto a nombres como a verbos** —así lo
+  precisa usted—, de modo que samāgama es un compuesto y no dos voces. «maṃ», en
+  cambio, **no es prefijo: es el acusativo del pronombre «amha»**, y la lectura
+  verdadera lleva **«mama», que es dativo y genitivo de ese mismo pronombre** —el
+  DPD lee mameva como mama + eva, no maṃ + eva—. Las dos formas son del paradigma
+  de amha, no piezas que se antepongan a nada. Estas dos primeras voces cortan 23
+  lecturas falsas **sin perder ni una correcta**.
 - **El grupo de «-ti» es §34 quitándole formas al patrón de «iti»**, que ya está
   firmado: satimantoti es satimanto + iti, no satiṃ + antoti.
 - **La tercera** es lo mismo con las partículas que ya tienen patrón propio.

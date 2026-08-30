@@ -40,7 +40,7 @@ La diferencia entre las dos filas es el artefacto «m»/«ṃ»: el DPD escribe 
 
 Sobre lo adjudicable (coincide frente a difiere), la precisión pasa de **76.2 %** a **91.5 %** conservando 195 de las 199 lecturas correctas.
 
-«saṃ» y «maṃ» son el caso limpio: cortan sin coste ninguno. Ni uno ni otro encabeza una juntura de §34 — «saṃ-» es preverbo, y samāgama es un compuesto, no dos voces; «maṃ» es el acusativo donde la lectura verdadera lleva el genitivo «mama». El grupo de «-ti» es §34 quitándole formas al patrón de «iti», que ya está firmado: satimantoti es satimanto + iti, no satiṃ + antoti.
+«saṃ» y «maṃ» son el caso limpio: cortan sin coste ninguno. Ni uno ni otro encabeza una juntura de §34 — «saṃ-» es un prefijo, y se antepone tanto a nombres como a verbos (precisión del IEBH), de modo que samāgama es un compuesto, no dos voces. «maṃ» no es prefijo: es el ACUSATIVO del pronombre «amha», y «mama» —la lectura verdadera— es DATIVO Y GENITIVO de ese mismo pronombre; las dos son del paradigma de amha, no piezas que se antepongan a nada. El grupo de «-ti» es §34 quitándole formas al patrón de «iti», que ya está firmado: satimantoti es satimanto + iti, no satiṃ + antoti.
 
 ## Dos límites de este informe
 

@@ -140,8 +140,16 @@ def dpd_dice(f, afirmada):
 
 # ── las tres firmas candidatas ──────────────────────────────────────────
 def firma_base(x):
-    """La base es «saṃ» o «maṃ»: un preverbo y un acusativo que no encabezan
-    una juntura de §34 (samāgama es compuesto; el genitivo es «mama»)."""
+    """La base es «saṃ» o «maṃ»: ninguna de las dos encabeza una juntura de
+    §34, y por razones distintas.
+
+    Precisiones del IEBH, 2026-08-30:
+      · «saṃ» es un PREFIJO —se antepone a nombres y a verbos—, no un
+        «preverbo», que era lo que decía esta nota y es más estrecho; por eso
+        samāgama es compuesto y no dos voces;
+      · «maṃ» NO es prefijo: es el ACUSATIVO del pronombre «amha», y «mama»
+        —la lectura verdadera de mameva y compañía— es DATIVO Y GENITIVO de
+        ese mismo pronombre. Las dos son del paradigma de amha."""
     return x["par"][0] in ("saṃ", "maṃ")
 
 
@@ -307,9 +315,13 @@ def main():
           "lecturas correctas.\n".format(antes, despues, r_bien,
                                          cuenta_t["coincide"]))
     w("«saṃ» y «maṃ» son el caso limpio: cortan sin coste ninguno. Ni uno "
-      "ni otro encabeza una juntura de §34 — «saṃ-» es preverbo, y "
-      "samāgama es un compuesto, no dos voces; «maṃ» es el acusativo donde "
-      "la lectura verdadera lleva el genitivo «mama». El grupo de «-ti» es "
+      "ni otro encabeza una juntura de §34 — «saṃ-» es un prefijo, y se "
+      "antepone tanto a nombres como a verbos (precisión del IEBH), de modo "
+      "que "
+      "samāgama es un compuesto, no dos voces. «maṃ» no es prefijo: es el "
+      "ACUSATIVO del pronombre «amha», y «mama» —la lectura verdadera— es "
+      "DATIVO Y GENITIVO de ese mismo pronombre; las dos son del paradigma "
+      "de amha, no piezas que se antepongan a nada. El grupo de «-ti» es "
       "§34 quitándole formas al patrón de «iti», que ya está firmado: "
       "satimantoti es satimanto + iti, no satiṃ + antoti.\n")
 
