@@ -724,8 +724,20 @@ function delta(a,b){
   let j=0; while(j < a.length-i && j < b.length-i && a[a.length-1-j]===b[b.length-1-j]) j++;
   return [i, b.length-j];
 }
+/* En esta página «§N» A SECAS significa Kaccāyana, y por eso se enlaza a su
+   sutta. Una cita que NOMBRA otra obra —«Saddanīti Suttamālā §49»— no se
+   enlaza: su §49 es otro sutta y el enlace mandaba al lector al 49 de
+   Kaccāyana, que trata de la vocal final de «putha» y no dice nada de esto.
+   Lo vio Angel el 2026-08-30, el mismo día que entró la primera operación no
+   kaccayaniana del motor.
+
+   Cuando el sitio tenga página propia del Saddanīti, es aquí donde se le
+   pone su enlace; hasta entonces la cita se imprime sin enlazar, que es
+   decir la verdad en vez de mandar a otro sitio. */
+const OTRAS_OBRAS = /Saddanīti|Rūpasiddhi|Moggallāna|Payogasiddhi|Niruttidīpanī|Nyāsa|Mukhamattadīpanī|Thitzana/;
 function refHTML(ref){
   if(!ref) return '';
+  if(OTRAS_OBRAS.test(ref)) return '· ' + esc(ref);
   return '· ' + esc(ref).replace(/§(\d+)/g, (m,n) =>
     (+n>=1 && +n<=51) ? `<a class="xref" data-goto="${n}" href="../../kaccayana/sandhi/#s${n}">§${n}</a>` : m);
 }
