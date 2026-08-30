@@ -342,6 +342,69 @@ def op_31_l(a, b, F):
     return cierre(pasos, nuevo + b, F) or cierre(pasos, nuevo + " " + b, F)
 
 
+def op_S49(a, b, F):
+    """Saddanīti Suttamālā 49 — la 'i' se vuelve 'v' ante la 'e' de «eva».
+
+    **Es la primera operación del motor que NO es de Kaccāyana**, y por eso
+    se cita con su obra entera y no con un «§N» a secas, que en esta página
+    significa Kaccāyana.
+
+        49. Evass' ekāre itiss' aññassa c' issa vo.
+        Evasaddassa ekāre pare itisaddassa aññassa ca saddassa issa vakāro
+        hoti kvaci: «itv eva coro asim āvudhañ ca; vilapatv eva so dijo;
+        Isigili tv eva; Samantapāsādikā tv eva». Kvacī ti kiṃ: icc eva.
+
+    Cotejado contra Helmer Smith, Saddanīti III (Suttamālā), p. 617. Los
+    cuatro ejemplos son suyos; el texto romanizado de Bhaddacak sólo trae el
+    primero. Véase `docs/solucionador/tveva-dos-lecturas.md`.
+
+    Kaccāyana no tiene sutta correspondiente, y no es conjetura: el aparato
+    de Smith da «Kc» para los suttas 50 y 51 y NINGUNO para el 49; y en el
+    texto entero de Kaccāyana y la Rūpasiddhi no aparece «itveva» ni
+    «tveva» ni «tyeva» una sola vez.
+
+    DOS RESTRICCIONES, y las dos son del texto, no prudencia nuestra:
+
+    1. **Sólo ante «eva»**, porque el sutta dice «evassa ekāre» — ante la
+       'e' de la palabra «eva»—. Es lo que impide que esta regla se dispare
+       en cualquier juntura con 'i' final: no es una sustitución general.
+    2. **Sólo 'i', no 'ī'.** El sutta dice «issa», la letra 'i'. Es la misma
+       lectura estricta que el proyecto ya hace con §18, que dice
+       «okāra-ukāra» y por eso no cubre «ū», frente a §21, que dice
+       «ivaṇṇo» —la clase— y por eso sí cubre «ī».
+
+    Y no es sólo de «iti»: el sutta dice «itisaddassa aññassa ca saddassa»
+    —la 'i' de «iti» Y la de otra palabra—, y su propio ejemplo «vilapatv
+    eva» viene de «vilapati», que es verbo, no partícula.
+    """
+    # ALCANCE, y esto es una restricción NUESTRA, no del sutta: se exige que
+    # la primera voz acabe en «-ti». El sutta dice «issa» —la 'i'— y añade
+    # «aññassa ca saddassa» —y la de otra palabra—, de modo que su enunciado
+    # es más ancho. Pero sus CUATRO ejemplos son unánimemente «-ti»: «itv
+    # eva» (iti), «vilapatv eva» (vilapati), y «Isigili tv eva» y
+    # «Samantapāsādikā tv eva», donde la 'i' es la del «ti» citativo.
+    #
+    # Medido sobre las 681.927 formas de la edición: sin la restricción el
+    # sutta gana 248 formas (masa 1.821); con ella, 234 (masa 1.276). Las 14
+    # que quedan fuera son todas falsas —«sveva» leído «si + eva» cuando es
+    # «so + eva» (§18), «dveva» leído «di + eva» cuando es «dve + eva», y
+    # «dvevassasahassāyukā», que es «dve vassasahassāyukā»—, y se apoyan en
+    # voces que la edición trae una o dos veces. Sin la restricción, «sv
+    # eva» del banco salía con una octava lectura falsa y arnes.js lo
+    # detenía; con ella, los cinco arneses pasan.
+    #
+    # <!-- DUDA: estrechar el enunciado es decisión del IEBH, no del motor.
+    #      Si se prefiere el sutta tal como está escrito, quítese la
+    #      condición de «-ti» y acéptese la lectura falsa de «sveva». -->
+    if not a or not a.endswith("ti") or not b.startswith("eva"):
+        return None
+    nuevo = a[:-1] + "v"
+    pasos = ["{0} {1}".format(a, b),
+             "{0} {1} {2} (§10)".format(a[:-1], "i", b),
+             "{0} {1} {2} (Saddanīti Suttamālā §49)".format(a[:-1], "v", b)]
+    return cierre(pasos, nuevo + b, F)
+
+
 def op_35_l(a, b, F):
     """La «ḷ» que se inserta después de «cha».
 
@@ -707,5 +770,7 @@ TODAS.update({"17+25": op_17_25, "18+25": op_18_25, "21+25": op_21_25,
               "35+26": op_35_26})
 TODAS.update({"38+12": op_38_12, "38+13": op_38_13})
 TODAS.update({"31vā": op_31_l, "35nota9": op_35_l})
+# «S49» y no 49: el 49 de este motor es el de KACCĀYANA y está tomado.
+TODAS.update({"S49": op_S49})
 
 

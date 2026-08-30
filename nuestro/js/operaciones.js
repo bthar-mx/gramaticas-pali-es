@@ -282,6 +282,39 @@ function op31L(a, b, F) {
         || cierre(pasos.slice(), nuevo + " " + b, F);
 }
 
+function opS49(a, b, F) {
+    // Saddanīti Suttamālā 49 — la 'i' se vuelve 'v' ante la 'e' de «eva».
+    // PRIMERA operación del motor que NO es de Kaccāyana, y por eso se cita
+    // con su obra entera: aquí «§N» a secas significa Kaccāyana.
+    //
+    //   49. Evass' ekāre itiss' aññassa c' issa vo.
+    //   «itv eva coro asim āvudhañ ca; vilapatv eva so dijo; Isigili tv
+    //   eva; Samantapāsādikā tv eva». Kvacī ti kiṃ: icc eva.
+    //
+    // Cotejado contra Helmer Smith, Saddanīti III (Suttamālā), p. 617.
+    // Kaccāyana no tiene sutta correspondiente: el aparato de Smith da «Kc»
+    // para el 50 y el 51 y ninguno para el 49.
+    //
+    // Dos restricciones, las dos del texto: sólo ante «eva» («evassa
+    // ekāre»), y sólo 'i', no 'ī' («issa», la letra) — la misma lectura
+    // estricta que se hace con §18, que dice «okāra-ukāra» y no cubre «ū».
+    //
+    // Espejo exacto de op_S49 en nuestro/operaciones.py. Si uno cambia,
+    // cambian los dos: los arneses comparan forma por forma.
+    // ALCANCE: se exige que la primera voz acabe en «-ti». Es restricción
+    // NUESTRA, no del sutta —él dice «issa» y «aññassa ca saddassa»—, pero
+    // sus cuatro ejemplos son unánimemente «-ti». Medido: sin ella el sutta
+    // gana 248 formas y con ella 234; las 14 que caen son todas falsas
+    // («sveva» = so + eva, no si + eva). El porqué entero, en el Python.
+    if (!a || !a.endsWith("ti") || !b.startsWith("eva")) return null;
+    const raiz = a.slice(0, -1);
+    const nuevo = raiz + "v";
+    const pasos = [`${a} ${b}`,
+                   `${raiz} i ${b} (§10)`,
+                   `${raiz} v ${b} (Saddanīti Suttamālā §49)`];
+    return cierre(pasos, nuevo + b, F);
+}
+
 function op35L(a, b, F) {
     // La «ḷ» que se inserta después de «cha». §35 no la enumera; la nota 9
     // del documento sí: «Se inserta "ḷ" después de "cha" y numerales.» Se
@@ -545,6 +578,8 @@ const TODAS = new Map([
     ["17+25", op1725], ["18+25", op1825], ["21+25", op2125],
     ["35+26", op3526], ["38+12", op3812], ["38+13", op3813],
     ["31vā", op31L], ["35nota9", op35L],
+    // «S49» y no 49: el 49 de este motor es el de KACCĀYANA y está tomado.
+    ["S49", opS49],
 ]);
 
 module.exports = {
