@@ -1,0 +1,88 @@
+{
+ "ecuaciones": 6,
+ "filas": [
+  {
+   "forma": "ti",
+   "frec": 183581,
+   "ecuacion_iebh": [
+    "iti"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-67-71.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "sāsanan",
+   "frec": 347,
+   "ecuacion_iebh": [
+    "sāsanaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-67-71.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [
+    "sāsana",
+    "an"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "cittassūpasam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "cittassa",
+    "upasamaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-67-71.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "dhammam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "dhammaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-67-71.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "kāmarāgen",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "kāmarāgena"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-67-71.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "nāccharāsaṅghātamattam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "na",
+    "accharāsaṅghātamattaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-67-71.txt",
+   "recompone": true,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  }
+ ]
+}
