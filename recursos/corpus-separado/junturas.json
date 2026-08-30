@@ -1,5 +1,5 @@
 {
- "junturas": 474,
+ "junturas": 525,
  "filas": [
   {
    "forma": "ceva",
@@ -192,6 +192,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tatheva",
+   "frec": 1962,
+   "corte_iebh": [
+    "Tath",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tatha",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "tattheva",
@@ -1022,6 +1038,22 @@
    "componentes_motor": [
     "ayaṃ",
     "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dhammañca",
+   "frec": 431,
+   "corte_iebh": [
+    "Dhammañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "dhammaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -1970,6 +2002,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "khomhi",
+   "frec": 146,
+   "corte_iebh": [
+    "kho",
+    "mhi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "khoma",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "sabbeheva",
    "frec": 142,
    "corte_iebh": [
@@ -2146,6 +2194,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "dosañca",
+   "frec": 116,
+   "corte_iebh": [
+    "dosañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "dosaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "ekāva",
    "frec": 116,
    "corte_iebh": [
@@ -2304,6 +2368,22 @@
     "etesaṃ"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tvamasi",
+   "frec": 94,
+   "corte_iebh": [
+    "tvam",
+    "asi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ta",
+    "vamasi"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "attanova",
@@ -2514,6 +2594,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "camhi",
+   "frec": 70,
+   "corte_iebh": [
+    "c",
+    "amhi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "camu",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "subhanti",
    "frec": 68,
    "corte_iebh": [
@@ -2590,6 +2686,22 @@
    "componentes_motor": [
     "saddaṃ",
     "akāsi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "saṃghañca",
+   "frec": 65,
+   "corte_iebh": [
+    "Saṃghañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "saṃghaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -2770,6 +2882,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "animittañca",
+   "frec": 48,
+   "corte_iebh": [
+    "Animittañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "animittaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dhammamadesesi",
+   "frec": 48,
+   "corte_iebh": [
+    "dhammam",
+    "adesesi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "dhammaṃ",
+    "adesesi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "māhu",
    "frec": 48,
    "corte_iebh": [
@@ -2930,6 +3074,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "pāṭihāriyapakkhañca",
+   "frec": 42,
+   "corte_iebh": [
+    "Pāṭihāriyapakkhañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pāṭihāriyapakkhaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "vayañca",
    "frec": 42,
    "corte_iebh": [
@@ -2954,10 +3114,27 @@
    ],
    "marca": "final consonántica",
    "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
-   "senal": null,
+   "senal": "segura",
    "componentes_motor": [
-    "yama",
-    "picchaṃ"
+    "yaṃ",
+    "api",
+    "icchaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "rāgañca",
+   "frec": 41,
+   "corte_iebh": [
+    "rāgañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "rāgaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -3586,6 +3763,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "avijjañca",
+   "frec": 21,
+   "corte_iebh": [
+    "avijjañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "avijjaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "dukkhasminti",
    "frec": 21,
    "corte_iebh": [
@@ -3634,6 +3827,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "daṇḍamolubbha",
+   "frec": 20,
+   "corte_iebh": [
+    "daṇḍam",
+    "olubbha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "daṇḍaṃ",
+    "olubbha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "kevalañcettha",
    "frec": 20,
    "corte_iebh": [
@@ -3662,6 +3871,22 @@
    "componentes_motor": [
     "nibbānaṃ",
     "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "taṇhamabbuyha",
+   "frec": 20,
+   "corte_iebh": [
+    "taṇham",
+    "abbuyha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "taṇhaṃ",
+    "abbuyha"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -3746,6 +3971,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "pādanti",
+   "frec": 18,
+   "corte_iebh": [
+    "pādan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pādaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "viharitunti",
    "frec": 18,
    "corte_iebh": [
@@ -3790,6 +4031,22 @@
    "componentes_motor": [
     "etasmiṃ",
     "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "saggāpāyañca",
+   "frec": 17,
+   "corte_iebh": [
+    "saggāpāyañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "saggāpāyaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -3902,6 +4159,22 @@
    "componentes_motor": [
     "avimuttaṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "natthidāni",
+   "frec": 15,
+   "corte_iebh": [
+    "natthi",
+    "dāni"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nattha",
+    "idāni"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -4258,6 +4531,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "mānānusayamujjaha",
+   "frec": 12,
+   "corte_iebh": [
+    "mānānusayam",
+    "ujjaha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "mānānusayaṃ",
+    "ujjaha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "oḷārikampi",
    "frec": 12,
    "corte_iebh": [
@@ -4270,6 +4559,22 @@
    "componentes_motor": [
     "oḷārikaṃ",
     "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "antimoyaṃ",
+   "frec": 11,
+   "corte_iebh": [
+    "antimo",
+    "yaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "antimo",
+    "ayaṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -4318,6 +4623,22 @@
    "componentes_motor": [
     "pāṭikaṅkhaṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sītibhūtāmhi",
+   "frec": 11,
+   "corte_iebh": [
+    "sītibhūtā",
+    "mhi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sītibhūtā",
+    "hi"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -4462,6 +4783,22 @@
    "componentes_motor": [
     "niyyānamukhaṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pītāva",
+   "frec": 10,
+   "corte_iebh": [
+    "pītā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pītā",
+    "eva"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -4626,6 +4963,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "khandhāsaṃ",
+   "frec": 9,
+   "corte_iebh": [
+    "khandhā",
+    "saṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "khandha",
+    "saṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "mahaggatanti",
    "frec": 9,
    "corte_iebh": [
@@ -4637,6 +4990,22 @@
    "senal": "segura",
    "componentes_motor": [
     "mahaggataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "muninti",
+   "frec": 9,
+   "corte_iebh": [
+    "Munin",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "muniṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -4722,6 +5091,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "tyamha",
+   "frec": 9,
+   "corte_iebh": [
+    "Ty",
+    "amha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "te",
+    "amha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "vinīlanti",
    "frec": 9,
    "corte_iebh": [
@@ -4749,6 +5134,22 @@
    "senal": "segura",
    "componentes_motor": [
     "asamāhitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "daranti",
+   "frec": 8,
+   "corte_iebh": [
+    "daran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "daraṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -4862,6 +5263,22 @@
    "componentes_motor": [
     "kāyānupassanā",
     "ikārasseva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nibbindahaṃ",
+   "frec": 7,
+   "corte_iebh": [
+    "nibbind",
+    "ahaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nibbindā",
+    "haṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -5090,6 +5507,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "asecanakamojavaṃ",
+   "frec": 6,
+   "corte_iebh": [
+    "asecanakam",
+    "ojavaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "asecanakaṃ",
+    "ojavaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "asubhampi",
    "frec": 6,
    "corte_iebh": [
@@ -5296,6 +5729,22 @@
     "an"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "punarāgami",
+   "frec": 6,
+   "corte_iebh": [
+    "punar",
+    "āgami"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "punare",
+    "āgami"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "sarāganti",
@@ -5650,6 +6099,19 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "kiṃme",
+   "frec": 5,
+   "corte_iebh": [
+    "Kiṃ",
+    "me"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "niratthaṃva",
    "frec": 5,
    "corte_iebh": [
@@ -5810,6 +6272,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "upasantāmhi",
+   "frec": 5,
+   "corte_iebh": [
+    "upasantā",
+    "mhi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upasantā",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "upekkhāva",
    "frec": 5,
    "corte_iebh": [
@@ -5838,6 +6316,22 @@
    "componentes_motor": [
     "vicikicchā",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "virajjahaṃ",
+   "frec": 5,
+   "corte_iebh": [
+    "virajj",
+    "ahaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "virajjaṃ",
+    "haṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -6114,6 +6608,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "lābhinīhaṃ",
+   "frec": 4,
+   "corte_iebh": [
+    "lābhinī",
+    "haṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "lābhini",
+    "haṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "madhurasabhāvañca",
    "frec": 4,
    "corte_iebh": [
@@ -6160,6 +6670,22 @@
     "hī"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nāgamāruhi",
+   "frec": 4,
+   "corte_iebh": [
+    "nāgam",
+    "āruhi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nāgama",
+    "āruhi"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "pahānadassanatthampi",
@@ -6306,6 +6832,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "sītibhūtāmha",
+   "frec": 4,
+   "corte_iebh": [
+    "sītibhūtā",
+    "mha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sītibhūtā",
+    "ha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "uddhaccakukkuccamevetaṃ",
    "frec": 4,
    "corte_iebh": [
@@ -6334,6 +6876,22 @@
    "componentes_motor": [
     "uddhaccakukkuccaṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "valāhakamivaddhagū",
+   "frec": 4,
+   "corte_iebh": [
+    "valāhakam",
+    "iv’addhagū"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "valāhakamiva",
+    "addhagū"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -6398,6 +6956,22 @@
    "componentes_motor": [
     "appana",
     "mattameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "aḍḍhenagghaṃ",
+   "frec": 3,
+   "corte_iebh": [
+    "aḍḍhe",
+    "nagghaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "aḍḍhena",
+    "agghaṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -6482,6 +7056,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "khambhesimattānaṃ",
+   "frec": 3,
+   "corte_iebh": [
+    "khambhesim",
+    "attānaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "khambhesi",
+    "amattānaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kumbhiyanti",
+   "frec": 3,
+   "corte_iebh": [
+    "kumbhiyan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kumbhiyaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "maccumaraṇanti",
    "frec": 3,
    "corte_iebh": [
@@ -6514,6 +7120,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "nikkhipissāmimaṃ",
+   "frec": 3,
+   "corte_iebh": [
+    "Nikkhipissām",
+    "imaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nikkhipissāmi",
+    "imaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "paccayapaccayuppannadhammamattamevetaṃ",
    "frec": 3,
    "corte_iebh": [
@@ -6526,6 +7148,22 @@
    "componentes_motor": [
     "paccayapaccayuppannadhammamatta",
     "evetaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pappotumitthiyā",
+   "frec": 3,
+   "corte_iebh": [
+    "pappotum",
+    "itthiyā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pappotuṃ",
+    "itthiyā"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -6544,6 +7182,22 @@
     "hi"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "piṇḍakanti",
+   "frec": 3,
+   "corte_iebh": [
+    "piṇḍakan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "piṇḍakaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "rucimeva",
@@ -6818,6 +7472,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "aṅkusamādāya",
+   "frec": 2,
+   "corte_iebh": [
+    "aṅkusam",
+    "ādāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "aṅkusaṃ",
+    "ādāya"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "byagghenoruddhamānaso",
    "frec": 2,
    "corte_iebh": [
@@ -6911,6 +7581,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "etamhāḷāhane",
+   "frec": 2,
+   "corte_iebh": [
+    "Etamh",
+    "āḷāhane"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etamhi",
+    "āḷāhane"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "evampī",
    "frec": 2,
    "corte_iebh": [
@@ -6987,6 +7673,22 @@
    "componentes_motor": [
     "jīvitindriyupacchedaṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kamanusocasī",
+   "frec": 2,
+   "corte_iebh": [
+    "kam",
+    "anusocasī"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kama",
+    "anusocasī"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -7071,6 +7773,54 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ogāhamuttiṇṇaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "ogāham",
+    "uttiṇṇaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ogāhaṃ",
+    "uttiṇṇaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paccavekkhassumaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "Paccavekkhassu",
+    "maṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "paccavekkhassu",
+    "imaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "patthehaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "patthe",
+    "haṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "patthe",
+    "ahaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "payojanaparicchedavavatthāpanametaṃ",
    "frec": 2,
    "corte_iebh": [
@@ -7087,6 +7837,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "rukkhamūlamupagamma",
+   "frec": 2,
+   "corte_iebh": [
+    "rukkhamūlam",
+    "upagamma"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "rukkhamūlaṃ",
+    "upagamma"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "satipaṭṭhānabuddhimeva",
    "frec": 2,
    "corte_iebh": [
@@ -7099,6 +7865,38 @@
    "componentes_motor": [
     "satipaṭṭhānabuddhima",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "savāhananti",
+   "frec": 2,
+   "corte_iebh": [
+    "savāhanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "savāhanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "saṃvegamāpādiṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "saṃvegam",
+    "āpādiṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "saṃvegaṃ",
+    "āpādiṃ"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -7227,6 +8025,22 @@
    "componentes_motor": [
     "viññāṇakkhandhā",
     "pariggahova"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yovedi",
+   "frec": 2,
+   "corte_iebh": [
+    "yo",
+    "vedi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "therigatha-I-IV.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yo",
+    "avedi"
    ],
    "acuerdo_segunda_voz": false
   },
