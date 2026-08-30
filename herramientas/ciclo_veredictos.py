@@ -104,12 +104,17 @@ def main():
         "referencia-senal-solo-canon.json", "forma")
     if en_senal:
         print("   tocan la referencia de señal:", ", ".join(sorted(en_senal)))
-        if os.path.exists(CACHE_SENAL):
-            d = json.load(open(CACHE_SENAL, encoding="utf-8"))
-            for f in en_senal:
-                d.pop(f, None)
-            json.dump(d, open(CACHE_SENAL, "w", encoding="utf-8"),
-                      ensure_ascii=False)
+        # Aquí se borraban a mano de la caché las formas recién adjudicadas.
+        # No bastaba: sólo cubría los casos que ENTRABAN POR ESTE CICLO, y un
+        # caso añadido por otro camino —a mano, o desde el chat— dejaba su
+        # entrada rancia. Eso fue exactamente lo que pasó el 2026-08-29 con
+        # «netaṃ» y «svāyaṃ»: la referencia salió diciendo «sin señal» de
+        # dos formas que el motor ya daba por adjudicadas, arnes_deteccion
+        # falló, y el ciclo se detuvo sin publicar DOCE veredictos que ya
+        # estaban incorporados en el árbol. Desde entonces la invalidación
+        # vive en volcar_referencia_senal.py y es por HUELLA del contenido de
+        # casos-reportados.json y reglas.json: cambie quien cambie los casos,
+        # la caché se descarta sola.
         os.makedirs(os.path.dirname(CACHE_SENAL), exist_ok=True)
         correr("Re-vertir la referencia de señal (con caché persistente; "
                "la primera corrida es lenta)",
