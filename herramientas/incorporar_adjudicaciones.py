@@ -40,6 +40,7 @@ import json
 import os
 import re
 import sys
+import textwrap
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "nuestro"))
@@ -112,6 +113,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("lote")
     ap.add_argument("--fuente", default=None)
+    ap.add_argument("--sin-tocar", action="store_true",
+                    help="ensayo: dice qué pasaría y NO escribe nada")
     a = ap.parse_args()
 
     fuente = a.fuente or "Angel · " + os.path.basename(a.lote)
@@ -121,6 +124,12 @@ def main():
     bloques, obs = partir(open(a.lote, encoding="utf-8").read())
 
     nuevos, enriquecidos, saltados, avisos = [], 0, 0, []
+    # Qué le pasó a CADA veredicto, para el resumen del final. Antes esto no
+    # existía: un veredicto declinado sólo dejaba un «aviso» entre otros, y
+    # como declinar NO es un error, traer_veredictos lo borraba igual de la
+    # cola. Así se perdió en silencio el «tveva» del 2026-08-30 y nadie se
+    # enteró hasta que la página siguió diciendo lo de antes.
+    resultados = []
     for b in bloques:
         forma, v = b["forma"], b["veredicto"]
         if not v:
@@ -130,8 +139,12 @@ def main():
                 avisos.append("escalera o nota SIN veredicto en {0}: no se "
                               "incorpora sola — póngase el veredicto o "
                               "hágase a mano".format(forma))
+                resultados.append((forma, "SIN VEREDICTO",
+                                   "trae escalera o nota, pero sin veredicto "
+                                   "no se incorpora"))
             else:
                 saltados += 1
+                resultados.append((forma, "en blanco", ""))
             continue
         # Si el veredicto trae la ecuación entera («hevaṃ = hi evaṃ»), los
         # componentes son lo que sigue al «=»: sin esto, la voz y el signo
@@ -160,6 +173,13 @@ def main():
                         "el veredicto de {0} difiere del caso guardado "
                         "({1!r} frente a {2!r}): no se toca nada — "
                         "decídase a mano".format(forma, dicho, guardado))
+                    resultados.append((
+                        forma, "DECLINADO",
+                        "dice «{0}» y el caso guardado dice «{1}»; la ficha "
+                        "sólo admite UNA lectura por forma. Si las dos son "
+                        "buenas, regístrese bajo la voz unida (así entró "
+                        "«aññāsikoṇḍaññotveva» el 2026-08-30)".format(
+                            dicho, guardado)))
                     continue
             toco = []
             if b["escalera"] and not existente.get("escalera_iebh"):
@@ -179,8 +199,13 @@ def main():
                 avisos.append("ya adjudicada ({0}): se le añade {1} del "
                               "revisor; el veredicto no se toca".format(
                                   forma, " y ".join(toco)))
+                resultados.append((forma, "enriquecido",
+                                   "se le añade " + " y ".join(toco)))
             else:
                 avisos.append("ya adjudicada, no se toca: " + forma)
+                resultados.append((forma, "ya adjudicada",
+                                   "el veredicto coincide con el guardado; "
+                                   "nada que cambiar"))
             continue
         caso = {"forma": forma, "fuente": fuente}
         bajo = v.lower()
@@ -199,6 +224,8 @@ def main():
                 x.strip() for x in v.split("+"))
         else:
             avisos.append("veredicto ilegible en {0}: {1!r}".format(forma, v))
+            resultados.append((forma, "ILEGIBLE",
+                               "no se entiende el veredicto {0!r}".format(v)))
             continue
         if b["nota"] and "nota" not in caso:
             caso["nota"] = "Nota del revisor (verbatim): " + b["nota"]
@@ -208,16 +235,49 @@ def main():
                 fuente + " · escalera del revisor (verbatim)")
         nuevos.append(caso)
         por_clave[cotejo(forma)] = caso
+        resultados.append((forma, "incorporado",
+                           caso.get("componentes", "no sandhi")))
 
-    if nuevos or enriquecidos:
+    if (nuevos or enriquecidos) and not a.sin_tocar:
         d["casos"].extend(nuevos)
         json.dump(d, open(CASOS, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
+    if a.sin_tocar:
+        print("ENSAYO (--sin-tocar): NADA se ha escrito.\n")
     print("{0} casos incorporados · {1} enriquecidos · {2} en blanco · "
           "total {3}".format(len(nuevos), enriquecidos, saltados,
-                             len(d["casos"])))
+                             len(d["casos"]) + (len(nuevos)
+                                                if a.sin_tocar else 0)))
     for x in avisos:
         print("  aviso — " + x)
+
+    # EL RESUMEN, veredicto por veredicto. Va al final y siempre, porque lo
+    # que se necesita saber al terminar es «¿entró o no entró cada uno?», y
+    # eso antes había que deducirlo de los avisos.
+    if resultados:
+        malos = [r for r in resultados if r[1].isupper()]
+        print()
+        print("=" * 72)
+        print("RESUMEN — qué le pasó a cada veredicto")
+        print("=" * 72)
+        for forma, estado, detalle in resultados:
+            marca = "✗" if estado.isupper() else "·"
+            print("  {0} {1:26} {2}".format(marca, forma[:26], estado))
+            if detalle:
+                for linea in textwrap.wrap(detalle, 62):
+                    print("       {0}".format(linea))
+        print("=" * 72)
+        if malos:
+            print("{0} veredicto{1} NO {2}: {3}".format(
+                len(malos), "" if len(malos) == 1 else "s",
+                "entró" if len(malos) == 1 else "entraron",
+                ", ".join(m[0] for m in malos)))
+            print("Un veredicto que no entra NO es un error del guion, de "
+                  "modo que la cola lo da por despachado igual. Si hace "
+                  "falta, vuélvase a emitir corregido.")
+        else:
+            print("Todos los veredictos del lote quedaron atendidos.")
+        print("=" * 72)
     if obs:
         print()
         print("=" * 72)

@@ -31,8 +31,10 @@ import argparse
 import datetime
 import json
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
 import urllib.parse
 import urllib.request
 
@@ -74,6 +76,10 @@ def main():
     ap.add_argument("--clave", default=os.environ.get("VEREDICTOS_CLAVE", ""))
     ap.add_argument("--solo-mirar", action="store_true",
                     help="lista la cola sin guardar, incorporar ni borrar")
+    ap.add_argument("--ensayo", action="store_true",
+                    help="ENSAYO: baja la cola y dice qué pasaría con cada "
+                         "veredicto, sin escribir, sin archivar y sin "
+                         "vaciar la cola")
     ap.add_argument("--api", default=API)
     a = ap.parse_args()
     if not a.clave:
@@ -102,9 +108,35 @@ def main():
                 e["id"], n, "" if n == 1 else "s"))
         return 0
 
-    os.makedirs(DESTINO, exist_ok=True)
     fuente = "IEBH, {0} · revisión en la página".format(
         datetime.date.today().isoformat())
+
+    # ENSAYO: se baja la cola de verdad, pero cada lote va a un archivo
+    # temporal y el incorporador corre con «--sin-tocar». No se archiva en
+    # veredictos-recibidos/, no se escriben casos y NO se borra nada de la
+    # cola. Sirve para ver qué va a pasar antes de gastar la corrida buena:
+    # la cola se vacía al incorporar y el archivo no se vuelve a leer, de
+    # modo que un veredicto mal emitido se gasta sin remedio. Con esto se ve
+    # primero.
+    if a.ensayo:
+        print("\nENSAYO: no se archiva, no se incorpora, la cola NO se "
+              "vacía.")
+        tmp = tempfile.mkdtemp(prefix="ensayo-veredictos-")
+        try:
+            for e in cola:
+                ruta = os.path.join(tmp, e["id"] + ".md")
+                with open(ruta, "w", encoding="utf-8") as f:
+                    f.write(e.get("md") or "")
+                print("\n== {0}".format(e["id"]))
+                subprocess.run([sys.executable, INCORPORADOR, ruta,
+                                "--fuente", fuente, "--sin-tocar"])
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+        print("\nEnsayo terminado. La cola queda intacta; para incorporar "
+              "de verdad, córrase sin «--ensayo».")
+        return 0
+
+    os.makedirs(DESTINO, exist_ok=True)
     incorporados = []
     for e in cola:
         ruta = os.path.join(DESTINO, e["id"] + ".md")
