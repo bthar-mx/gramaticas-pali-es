@@ -133,6 +133,24 @@ def main():
         correr("Re-vertir la referencia del corpus (prosa)",
                [sys.executable, "nuestro/volcar_referencia_corpus.py",
                 "--solo-canon", "--dpd-filtro", "--comentario"])
+    # La referencia de la PÁGINA faltaba aquí, y por eso la puerta de la
+    # etapa 4 se cerró el 2026-08-30 con el lote de 22 adjudicaciones del
+    # IEBH: el caso nuevo «iccassa» cambia la forma del banco «icc assa»
+    # —cotejo() pliega las dos a la misma clave—, la página nueva lo
+    # reflejaba y la referencia, volcada por última vez el 2026-08-29,
+    # no. arnes_pagina comparaba contra un archivo rancio y el ciclo se
+    # detuvo sin publicar 22 veredictos ya incorporados. Es el mismo
+    # defecto que el de «netaṃ» y «svāyaṃ» del 2026-08-29 documentado
+    # arriba, en otra referencia: una adjudicación nueva puede tocar
+    # cualquiera de las cuatro, y sólo tres se re-vertían.
+    en_pagina = nuevas & formas_de_referencia(
+        "referencia-pagina-solo-canon.json", "f")
+    if en_pagina:
+        print("   tocan la referencia de la página:",
+              ", ".join(sorted(en_pagina)))
+        correr("Re-vertir la referencia de la página",
+               [sys.executable, "nuestro/volcar_referencia_pagina.py",
+                "--dpd-filtro"])
 
     # 3 · la página
     correr("La página nueva", [sys.executable,
