@@ -8,28 +8,35 @@ criterio de categoría del IEBH mecanizado por fin, con su límite medido.
 Nada adjudicado: los tres informes preparan, y firmar es del IEBH.***
 
 > **Lo primero que tiene que saber el chat nuevo:** verificar
-> `git log origin/main..main` (al cierre quedaban CUATRO commits sin empujar:
-> los dos informes con el testigo, el informe del sub-piso, el del criterio,
-> y la cabecera en inglés con este briefing). Las reglas de siempre: el Python es la referencia; los CINCO
+> `git log origin/main..main`. Las reglas de siempre: el Python es la referencia; los CINCO
 > arneses mandan; nada se adjudica sin el visto bueno del IEBH; todo se
 > mide antes y después; la atribución pública dice IEBH. Con Angel se habla
 > en inglés; lo del proyecto va en español.
 
-## 0. LA CLAVE — Angel dijo que la rotaba en esta sesión
+## 0. LA CLAVE — ROTADA. Cerrado, y por qué tardó tres sesiones
 
-**Pendiente desde el briefing 35 §0 y arrastrada por el 36.** Angel eligió
-en esta sesión «rotarla ahora»; **al cerrar no consta la confirmación**, así
-que se pregunta otra vez al abrir. Es
-`npx wrangler secret put CLAVE_VEREDICTOS` en la máquina con la sesión de
-wrangler, con un valor nuevo que no se escriba en ninguna parte; el que
-corre el ciclo pasa a usar el valor nuevo en `VEREDICTOS_CLAVE=…`. Para
-comprobar que prendió: correr el ciclo con el valor nuevo, o pedir
-`/api/veredictos?clave=<el viejo>` y ver un 403.
+**HECHO el 2026-08-30.** Angel la rotó con `npx wrangler secret put
+CLAVE_VEREDICTOS` («Success! Uploaded secret»), y quedó comprobada: con el
+valor nuevo, `traer_veredictos.py --solo-mirar` lista la cola. **No hay que
+volver a preguntarlo.**
 
-Contexto que ayuda a decidir, y que en dos briefings no se había dicho: si
-la clave se filtra, **lo peor posible es que alguien lea o vacíe la cola**.
-No puede publicar ni adjudicar: eso sigue pidiendo la Mac, los arneses y la
-firma. Enviar a la cola es abierto a propósito.
+**Por qué se arrastró desde el briefing 35, que es la lección:** el §0 decía
+«rotar con un valor nuevo que no se escriba en ninguna parte» sin decir
+NUNCA qué descalificaba al viejo. Y lo que lo descalificaba es que **el valor
+original lo generó Claude en un chat durante la instalación** — no un
+descuido de Angel, que se limitó a usar la clave que se le dio. Un aviso que
+no dice su razón se lee como una manía y se pospone. El valor nuevo lo
+generó Angel en su Mac con `secrets.token_urlsafe(24)` y no ha pasado por
+ningún chat.
+
+**Regla que queda:** Claude no es fuente de secretos. Si hace falta uno, se
+genera en la máquina de quien lo usa y se pega directo en el `prompt` de
+wrangler, que lo enmascara.
+
+Contexto que en dos briefings no se había dicho, y que dimensiona el asunto:
+si la clave se filtra, **lo peor posible es que alguien lea o vacíe la
+cola**. No puede publicar ni adjudicar: eso sigue pidiendo la Mac, los
+arneses y la firma. Enviar a la cola es abierto a propósito.
 
 ## 1. LA TRAMPA DE LA POBLACIÓN — lo primero que hay que interiorizar
 
@@ -121,14 +128,87 @@ correrlo **por debajo** del piso, que es lo que hace el informe nuevo.
    adjudica los dos casos que fijaron el piso; los adjudicó el juicio de
    Angel y sigue haciendo falta. De las dos correctas que el piso silencia,
    confirma tvamasi y calla sobre ekamante.
-2. **La cuenta no cuadra con el briefing 36 §3**: 385 allí, 441 aquí sin las
-   conocidas. **SIN RECONCILIAR.** Causa probable: la precedencia entre
-   patrones —dentro de `senal()` otro patrón reclama la forma antes y a §34
-   no se le pregunta—, que la receta suelta del informe no modela. **Es una
-   tarea concreta para el chat nuevo.**
+2. ~~La cuenta no cuadra con el briefing 36 §3.~~ **RECONCILIADA EXACTAMENTE
+   el mismo día — ver §3 bis.**
 
 De paso, medido y no supuesto: el artefacto «m»/«ṃ» del cotejo con el DPD
 («sabbam + idaṃ» frente a «sabbaṃ + idaṃ») es de **un caso en 419**.
+
+## 3 bis. 385 CONTRA 441: RECONCILIADO, Y NO QUEDA NADA SIN EXPLICAR
+
+La hipótesis del §3 era la precedencia, y era la correcta. Corriendo el
+camino REAL de `senal()` con `frec_minima` = 0 sobre la referencia:
+
+| | hoy | en el commit de la sesión 36 |
+| --- | ---: | ---: |
+| la receta suelta afirma | 449 | 449 |
+| `senal()` afirma | **384** | **385** |
+| bloqueadas, todas atribuidas | 65 | 64 |
+
+Las 65 se reparten así: **57 las reclama antes otro patrón** (54 el de
+«iti», 3 el del verso), **7 son lecturas ya adjudicadas** y **1 la manda el
+banco**. Ninguna queda sin explicar, y tampoco al revés: no hay ni una forma
+que `senal()` afirme y la receta no.
+
+**La única forma que separa 384 de 385 es `evamayaṃ`**, que no era caso
+cuando se midió en la sesión 36 y sí lo es desde la cola del 2026-08-30. El
+385 del briefing 36 §3 era correcto cuando se tomó.
+
+Medido en un `git worktree` desechable sobre `94bac5e~1`, sin tocar el árbol
+—y allí el testigo del DPD no está, que es justamente el estado de la máquina
+que midió el 385—.
+
+## 3 ter. EL CICLO SE CERRABA CONTRA UN ARCHIVO RANCIO, Y LA COLA IBA DE UNA EN UNA
+
+Dos defectos que salieron del uso real, no de una revisión:
+
+- **`ciclo_veredictos.py` no re-vertía la referencia de la PÁGINA.** El lote
+  de 22 adjudicaciones del 2026-08-30 se detuvo en la etapa 4: el caso nuevo
+  «iccassa» cambia la forma del banco «icc assa» —`cotejo()` pliega las dos
+  a la misma clave—, la página lo reflejaba y la referencia, del 2026-08-29,
+  no. Re-vertía la de señal y las dos del corpus: **tres de cuatro**. Ya son
+  cuatro. Al re-verterla cambió UNA entrada de 266.
+- **El worker leía el KV de una en una.** El GET tenía el `await` DENTRO del
+  bucle, así que el tiempo era la SUMA de las lecturas. Con `Promise.all` es
+  el de la más lenta. Y `--solo-mirar` descargaba todos los `.md` sólo para
+  contar «VEREDICTO:»: la cuenta viaja ya como METADATO del KV y
+  `?resumen=1` la da con `list()` a secas, sin leer un solo valor. De paso,
+  `list()` pagina de 1.000 y el bucle no seguía el cursor — una cola sin
+  vaciar en meses habría devuelto media cola en silencio.
+
+**Pendiente de la misma familia:** la referencia del BANCO podría quedarse
+rancia igual. No se tocó porque no se demostró — la etapa 1 pasó con 266 de
+266—, y este proyecto no arregla por sospecha.
+
+## 3 quater. EL LOTE 1 NO SON 231, SON 69
+
+`por-adjudicar-lote-1.md` se generó el 2026-08-28, antes de que se firmaran
+los patrones y §34. Re-medido contra el motor de hoy, de sus 231 voces sin
+caso:
+
+| | formas | |
+| --- | ---: | --- |
+| ya las afirma un patrón firmado | 144 | el motor las responde solo |
+| señal segura por otra vía | 14 | ver el aviso de abajo |
+| **siguen «posible» — el atasco real** | **69** | masa 52.273 |
+| sin señal ninguna | 4 | dassetvā, kathetvā, uppādetvā, bhāvetvā |
+
+Encabezan las 69: nava (7.423), neva (3.404), tava (2.420), nanu (2.352),
+tatheva (1.962). Las cuatro en «-tvā» son la regla de los absolutivos que el
+propio `traer_veredictos.py` nombra en su cabecera: **una firma cubriría la
+clase entera**, en vez de cuatro casos.
+
+**No hay que rellenar el archivo de 3.852 líneas.** Lo que corresponde es una
+lista corta de esas 69 por el modo revisión de la página, donde los
+veredictos llegan con escalera y por la cola.
+
+**AVISO, y es de los que importan:** de las 14 «segura por otra vía», varias
+son palabras corrientes, no sandhis — `jānāti` (3.916) sale como «jānā +
+iti» y `pīti` (821) como «pa + iti», por la regla de vocal larga ante «ti».
+Es el nivel de PREDICCIÓN FIRME acertando mal, que es justo lo que el IEBH
+señaló con caranto y sattānaṃ. Puede ser el 5-10 % de error ya medido, pero
+es también exactamente lo que cortaría el criterio de categoría del §4. Sin
+medir todavía.
 
 ## 4. EL CRITERIO DEL IEBH, MECANIZADO POR FIN — con su límite
 
@@ -197,17 +277,23 @@ HTML de `site/`. Los CINCO arneses, en verde después del cambio.
 
 ## 6. LO QUE SIGUE (en orden)
 
-1. **Rotar la clave** si no consta (§0 — tres sesiones ya).
-2. **Empujar los tres commits** si no se ha hecho (o el ciclo los lleva con
-   el próximo lote).
+1. ~~Rotar la clave.~~ **HECHA** (§0).
+2. ~~Reconciliar 385 contra 441.~~ **HECHA** (§3 bis).
 3. **Enseñar al IEBH los dos informes nuevos** (§3 y §4): las tres firmas del
    sub-piso, con «saṃ»/«maṃ» que corta 23 falsas a coste cero; y el criterio
    suyo mecanizado, con el aviso de que su forma literal es la peor de las
    dos y de que la etiqueta tiene 50 % de recall. **Ampliar la licencia y
    firmar el criterio son suyos.**
-4. **Reconciliar 385 contra 441** (§3, límite 2): probar si la precedencia
-   entre patrones lo explica. Es acotado y deja el número limpio.
-5. **La pasada única de dos junturas** (briefing 35 §4): cierra el punto 4 del
+4. **La lista corta de las 69** (§3 quater) por el modo revisión, en vez del
+   archivo de 3.852 líneas. Empezando por la regla de los absolutivos en
+   «-tvā», que es UNA firma para cuatro voces.
+5. **Medir el falso «segura» de `jānāti` y `pīti`** (§3 quater): cuánto
+   dispara la regla de vocal larga ante «ti» sobre palabras corrientes, y si
+   el criterio de categoría del §4 lo cortaría. Evidencia, no aplicación.
+6. **La pasada única de dos junturas** (briefing 35 §4): cierra el punto 4 del
    mapa 32 (idamavocanti) y haría innecesarias muchas `escalera_iebh`.
-6. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD en el
+7. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD en el
    motor, des-flexión. **Sin empezar.**
+
+**En la cola al cerrar:** una entrada
+(`2026-08-30T14-18-51-298Z-2efed114`, 1 veredicto), sin recoger.
