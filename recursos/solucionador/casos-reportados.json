@@ -995,6 +995,90 @@
    "forma": "kalaha",
    "fuente": "IEBH, 2026-08-30 · revisión en la página",
    "sandhi": false
+  },
+  {
+   "forma": "dveme",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "dve + ime"
+  },
+  {
+   "forma": "pabbajitena",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "Katamā",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "sammā-ājīvo",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "yampicchaṃ",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "yaṃ + api + icchaṃ"
+  },
+  {
+   "forma": "jātipi",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "jāti + api",
+   "escalera_iebh": [
+    "jāti api",
+    "jāt i api §10",
+    "jāt i pi §13",
+    "jātipi §11"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "jarāpi",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "jarā + api",
+   "escalera_iebh": [
+    "jarā api",
+    "jar ā api §10",
+    "jar ā pi §13",
+    "jarāpi §11"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "byādhipi",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "byādhi + api",
+   "escalera_iebh": [
+    "byādhi + api",
+    "byādh i api §10",
+    "byādh i pi §13",
+    "byādhipi §11"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "maraṇampi",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "maraṇaṃ + api"
+  },
+  {
+   "forma": "tampi",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "taṃ + api"
+  },
+  {
+   "forma": "ayameva",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "ayaṃ + eva"
   }
  ]
 }
