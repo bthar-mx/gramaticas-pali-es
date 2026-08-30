@@ -30,13 +30,17 @@
   --chip-c:rgba(92,64,8,.14);
   --nila:#27414F;       /* índigo: sección */
   --rakta:#7E2E23;      /* bermellón: contraejemplo */
+  --marakata:#2F6B4A;   /* esmeralda: predicción firme (pedido del IEBH,
+                           2026-08-30: el filete de lo firme, de color distinto
+                           al de lo adjudicado, no sólo más fino) */
   --shadow:rgba(0,0,0,.05);
   --serif:"Gentium Book Plus",Georgia,serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 html[data-theme=dark]{
   --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
-  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
+  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --marakata:#8FCCA8;
+  --shadow:rgba(0,0,0,.45);
   --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
   --hl:rgba(239,193,78,.20); --hl-ce:rgba(240,154,136,.18);
   --chip-k:rgba(182,216,238,.13); --chip-c:rgba(239,193,78,.15);
@@ -182,7 +186,7 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
 .pasaje mark.m-adj{background:var(--chip-k);
   box-shadow:inset 0 -2px 0 var(--nila)}
 .pasaje mark.m-firme{background:var(--chip-k);
-  box-shadow:inset 0 -1px 0 var(--nila)}
+  box-shadow:inset 0 -1px 0 var(--marakata)}
 .pasaje mark.m-pos{background:var(--chip-c);
   box-shadow:inset 0 -1px 0 var(--haritala)}
 .pasaje mark:hover{background:var(--ola)}
@@ -193,7 +197,7 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
 .pasaje-leyenda i{display:inline-block;width:11px;height:11px;
   margin-right:5px;vertical-align:-1px;border-radius:2px}
 .pasaje-leyenda i.m-adj{background:var(--chip-k);box-shadow:inset 0 -2px 0 var(--nila)}
-.pasaje-leyenda i.m-firme{background:var(--chip-k);box-shadow:inset 0 -1px 0 var(--nila)}
+.pasaje-leyenda i.m-firme{background:var(--chip-k);box-shadow:inset 0 -1px 0 var(--marakata)}
 .pasaje-leyenda i.m-pos{background:var(--chip-c);box-shadow:inset 0 -1px 0 var(--haritala)}
 @media print{.pasaje mark{background:none;box-shadow:inset 0 -1px 0 var(--soot)}}
 
@@ -738,6 +742,16 @@ function ladder(steps, isCE){
    La raya y el guion largo (– —) separan voces: son puntuación de esas
    ediciones, no la marca de juntura, y «sutaṁ–ekaṁ» debe ser dos voces. */
 const PODA = /^[^\p{L}\p{M}’'-]+|[^\p{L}\p{M}’'-]+$/gu;
+/* La niggahīta del pasaje pegado, a la ṃ de la edición (pedido del IEBH,
+   2026-08-30): el lector de buddha-dhamma.net entrega «ṁ» de punto arriba
+   (U+1E41) al copiar, aunque muestre «ṃ». El MOTOR ya las identifica
+   —cotejo() lo hace desde el caso de «kathaṁ»—, pero el texto VISIBLE (la
+   caja y el pasaje marcado) conservaba la ṁ ajena. Se normaliza el texto
+   mismo: NFC primero, para que la «m + punto arriba» descompuesta llegue a
+   U+1E41 y de ahí a ṃ — el mismo camino que nuestro/normalizar.py. */
+function normalizarNiggahita(t){
+  return t.normalize('NFC').replace(/ṁ/gu, 'ṃ').replace(/Ṁ/gu, 'Ṃ');
+}
 function fichas(texto){
   return texto.replace(/[–—]/gu, ' ').split(/\s+/u)
     .map(t => t.replace(PODA, ''))
@@ -776,12 +790,16 @@ function plegadas(lista, titulo){
    deriva (junturas múltiples, sobre todo). Va SIEMPRE rotulada como suya y
    nunca se confunde con una derivación del motor: el motor no la ha
    verificado, y decirlo es la mitad del valor de mostrarla. */
+/* La clave identifica ṁ y ṃ, como cotejo(): hay casos guardados con la ṁ
+   con que se pegaron (Ekamidāhaṁ, khvāhaṁ…) y desde el 2026-08-30 la voz
+   buscada llega ya con ṃ. Sin esto, la escalera del IEBH no aparecería. */
+const claveForma = v => normalizarNiggahita((v || '')).toLowerCase();
 const CASO_POR_FORMA = {};
 ((DATA.casos || {}).casos || []).forEach(c => {
-  if(c && c.forma) CASO_POR_FORMA[c.forma.toLowerCase()] = c;
+  if(c && c.forma) CASO_POR_FORMA[claveForma(c.forma)] = c;
 });
 function escaleraIEBH(voz){
-  const c = CASO_POR_FORMA[(voz || '').toLowerCase()];
+  const c = CASO_POR_FORMA[claveForma(voz)];
   const pasos = c && c.escalera_iebh;
   if(!pasos || !pasos.length) return '';
   return `<p class="lbl" style="margin:14px 0 0">${esc(tr('esc_iebh'))}</p>`
@@ -949,6 +967,23 @@ function nivelDe(r){
   if(r.senal === 'posible') return 'm-pos';
   return esAdjudicado(r) ? 'm-adj' : 'm-firme';
 }
+/* El globo de cada marca (pedido del IEBH, 2026-08-30): decir qué sandhi es
+   sin obligar a seguir el enlace. Con señal SEGURA van los componentes de la
+   lectura afirmada y su rótulo —el mismo de la tarjeta y por la misma
+   procedencia—; con señal POSIBLE no se elige lectura ninguna: se da la
+   cuenta, que es lo que el motor sabe. El globo no asciende nada, como
+   tampoco lo hace «Copiar». */
+function tipMarca(voz, r){
+  const fin = tr('t_ir');
+  if(r.senal === 'segura'){
+    const l0 = (r.lecturas || [])[0] || {};
+    const comp = (l0.componentes || []).filter(x => x);
+    return voz + (comp.length ? ' = ' + comp.join(' + ') : '')
+      + ' — ' + tr(esAdjudicado(r) ? 'adjudicado' : 'firme') + ' · ' + fin;
+  }
+  const n = (r.lecturas || []).length;
+  return voz + ' — ' + tr('posible') + (n ? tr('lecturas')(n) : '') + ' · ' + fin;
+}
 function pasajeMarcado(texto){
   /* Se parte conservando los separadores, que hay que volver a escribir. */
   const trozos = texto.split(/(\s+|[–—])/u);
@@ -961,12 +996,13 @@ function pasajeMarcado(texto){
     if(!nucleo){ html += esc(t); continue; }
     const i = t.indexOf(nucleo);
     const antes = t.slice(0, i), despues = t.slice(i + nucleo.length);
-    const n = nivelDe(resolver(nucleo));
+    const r = resolver(nucleo);
+    const n = nivelDe(r);
     if(!n){ html += esc(t); continue; }
     hubo = true;
     html += esc(antes)
       + `<mark class="${n}" tabindex="0" role="button" data-ir="${esc(nucleo)}"`
-      + ` data-tip="${esc(tr('t_ir'))}">${esc(nucleo)}</mark>`
+      + ` data-tip="${esc(tipMarca(nucleo, r))}">${esc(nucleo)}</mark>`
       + esc(despues);
   }
   if(!hubo) return '';
@@ -991,7 +1027,13 @@ function resolver(voz){
 }
 
 async function analizar(){
-  const texto = $('texto').value.trim();
+  /* La caja misma se corrige: lo que el lector ve y lo que se analiza son
+     el mismo texto, y las voces que lleguen al modo revisión salen ya con
+     la ṃ de la edición. */
+  const caja = $('texto');
+  const limpio = normalizarNiggahita(caja.value);
+  if(limpio !== caja.value) caja.value = limpio;
+  const texto = caja.value.trim();
   const out = $('out');
   if(!texto){ out.innerHTML = ''; return; }
   const boton = $('analizar');
@@ -1081,6 +1123,16 @@ $('limpiar').addEventListener('click', () => {
 });
 $('texto').addEventListener('keydown', e => {
   if(e.key === 'Enter' && (e.ctrlKey || e.metaKey)){ e.preventDefault(); analizar(); }
+});
+/* Al pegar, la corrección se ve en el acto, sin esperar a «Analizar». Se
+   deja terminar el pegado (setTimeout 0) y se reescribe sólo si cambió,
+   para no mover el cursor en vano. */
+$('texto').addEventListener('paste', () => {
+  setTimeout(() => {
+    const caja = $('texto');
+    const limpio = normalizarNiggahita(caja.value);
+    if(limpio !== caja.value) caja.value = limpio;
+  }, 0);
 });
 
 /* ---------- modo revisión (pedido del IEBH, 2026-08-28) ----------

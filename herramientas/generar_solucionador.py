@@ -47,9 +47,18 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.8"
-FECHA = "2026-08-29"
-NOTA = ("EL PASAJE, MARCADO. Tras analizar, el pasaje vuelve a aparecer "
+VERSION = "1.9"
+FECHA = "2026-08-30"
+NOTA = ("Tres pedidos del IEBH: la «ṁ» de punto arriba con que llegan los "
+        "pasajes copiados del lector de buddha-dhamma.net se corrige a la "
+        "«ṃ» de la edición en la propia caja —el motor ya las identificaba; "
+        "ahora el texto visible también—; cada voz marcada del pasaje dice "
+        "en su globo qué sandhi es —componentes y rótulo, el mismo de la "
+        "tarjeta, sin ascender nada— sin obligar a abrir la tarjeta; y el "
+        "filete de la predicción firme estrena color propio (esmeralda), "
+        "distinto del índigo de lo adjudicado, no sólo más fino. "
+        "Antes, en la versión 1.8: "
+        "EL PASAJE, MARCADO. Tras analizar, el pasaje vuelve a aparecer "
         "entero, en cuerpo de lectura, con cada voz señalada marcada por su "
         "nivel —sandhi adjudicado, predicción firme, señal posible— y un "
         "clic en cualquiera abre su tarjeta. Lo que NO lleva marca dice "
