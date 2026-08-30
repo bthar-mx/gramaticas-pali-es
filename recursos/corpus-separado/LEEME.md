@@ -92,6 +92,16 @@ extractor ya sabía descartar. En el Mahāparinibbāna: 100 llamadas pegadas y
   Nandisena. Recogidos del Drive del proyecto el 2026-08-30, en texto sin
   formato, uno por documento y con el nombre que les da el Venerable.
 
+- **Dhammacakkappavattana-sutta**, versión bilingüe pāḷi-español. Puesto el
+  2026-08-30.
+
+- **Cinco suttas más**, puestos el 2026-08-30: **Anattalakkhaṇa-sutta**,
+  **Pāsarāsi-sutta** (Ariyapariyesana-sutta), **Uppādā-sutta**,
+  **Mahā-Taṇhāsaṅkhaya-sutta** y **Sattasūriya-sutta**, este último con su
+  Comentario y su Sub-Comentario —la primera vez que el corpus separado
+  toca la capa de la Ṭīkā—. Todos editados y traducidos del pāḷi al español
+  por Bhikkhu Nandisena.
+
 Cada texto que se añada aquí lleva su línea en esta lista, con su fuente y
 su licencia. Es material del IEBH: se cita como suyo, y la atribución
 pública dice IEBH.
@@ -122,10 +132,26 @@ Mahāsatipaṭṭhāna, dio 19 junturas —19 atestiguadas, 0 descartadas— y
 encontró cuatro formas frecuentes que el motor no veía: panassa (1.731),
 caparaṃ (1.548), tamenaṃ (778) y yāvadeva (331).
 
-Con el corpus completo (27 textos, 2026-08-30): **1.180 junturas**, las 1.180
-atestiguadas; el motor señala 865 (**73,3 %**) y no ve 315. Y **101
-ecuaciones** —16 junturas y 85 ortográficas—, de las que el motor recompone
-14 de 16 y **acierta los componentes en 0 de 16**.
+Con el corpus al cierre del 2026-08-30 (33 textos): **1.361 junturas**, las
+1.361 atestiguadas; el motor señala 979 (**71,9 %**). Y **101 ecuaciones**
+—16 junturas y 85 ortográficas—, de las que el motor recompone 14 de 16 y
+**acierta los componentes en 0 de 16**.
+
+Y el cotejo del corte del Venerable contra la lectura del motor da **un solo
+fallo con muchas caras**: el motor reconstruye la primera voz con la vocal
+final equivocada cuando esa vocal se pierde en el sandhi, y casi siempre la
+pone en «-a» —hissa «hi»→«ha» (501), tissa «ti»→«ta» (265), yāyaṃ
+«yā»→«ya» (265), yohaṃ «yo»→«ya», yadāhaṃ, tatohaṃ—. Son 34 formas, masa
+1.376. **Cuidado al contarlo**: otras 18 lo parecen y no lo son —natthīti,
+passāmīti, bhikkhūti—, porque ahí el IEBH imprime la vocal alargada ante
+«ti» (§18) y el motor da la breve subyacente, que es lo correcto. El corte
+es de superficie y la lectura es de fondo; confundirlos fabrica fallos que
+no existen.
+
+**Tres artefactos conocidos**, publicados porque la forma unida está
+atestiguada: «ma» (86) de la línea en versalitas «M A», «tiṇṇo» (184) de
+«– | ’tiṇṇo» y «ana» (11) de «’a | -’na’». Sin arreglar, y dichos aquí para
+que no pasen por dato.
 
 Sobre las **4.916 candidatas descartadas**, que asustan al lado de las 78 de
 la primera corrida: son casi todas líneas ESPAÑOLAS que se cuelan por
