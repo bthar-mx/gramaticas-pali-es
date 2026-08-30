@@ -1309,6 +1309,27 @@
     "aññāsikoṇḍaññotveva §11"
    ],
    "escalera_fuente": "IEBH, 2026-08-30 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "tveva",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "ti + eva",
+   "nota": "Nota del revisor (verbatim): La autoridad es Saddanīti Suttamālā 49, «Evass' ekāre itiss' aññassa c' issa vo» — ante la 'e' de «eva», la 'i' de «iti» se sustituye por 'v' —, cotejada contra Helmer Smith, Saddanīti III, p. 617, entre cuyos cuatro ejemplos están «Isigili tv eva» y «Samantapāsādikā tv eva», que son la misma fórmula del nombre que «“Aññāsikoṇḍañño” tveva». Kaccāyana no tiene sutta correspondiente. ADVERTENCIA, y es del proyecto, no del revisor: «tveva» tiene una segunda lectura con autoridad propia, «tu + eva» por Kaccāyana §18, que es la correcta en «avijjāya tveva» (voz unida «avijjāyatveva», 14 veces en la edición). La ficha admite UNA lectura por forma y el motor analiza una voz por vez, sin ver la vecina, de modo que aquí se afirma la citativa y la otra deja de mostrarse. Véase docs/solucionador/tveva-dos-lecturas.md."
+  },
+  {
+   "forma": "avijjāyatveva",
+   "fuente": "IEBH, 2026-08-30 · precisión en la sesión",
+   "sandhi": true,
+   "componentes": "tu + eva",
+   "nota": "Nota del revisor (verbatim): Aquí «tveva» es «tu + eva» por Kaccāyana §18, «Vam od-udantānaṃ» — 'o' y 'u' finales se sustituyen por 'v' ante vocal —, y no la lectura citativa. Es la otra mitad del par que Angel identificó el 2026-08-30: «sabbe kāmā ‘kāmā’ tveva saṅkhaṃ gacchanti» es citativo y «avijjāya tveva» no lo es. La clave es la voz unida porque la ficha admite una lectura por forma y «tveva» suelto está adjudicado como citativo; donde la edición imprime las dos voces separadas, el motor ve «tveva» y dará la citativa, que ahí no corresponde. Véase docs/solucionador/tveva-dos-lecturas.md.",
+   "escalera_iebh": [
+    "avijjāya tu eva",
+    "avijjāya t u eva (§10)",
+    "avijjāya t v eva (§18)",
+    "avijjāyatveva (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · precisión en la sesión · escalera del revisor (verbatim)"
   }
  ]
 }

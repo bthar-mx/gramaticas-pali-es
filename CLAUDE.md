@@ -36,6 +36,36 @@ estudiantes hispanohablantes de pāḷi con formación budista.
   las expansiones morfológicas (pasos de elisión o sustitución que Nandisena no
   menciona). Lo tomado de Ven. A. Thitzana se señala siempre como suyo.
 
+## EL TIPIṬAKA ES LA FUENTE; KACCĀYANA ES LA AUTORIDAD QUE LO EXPLICA
+
+**Pedido de Angel, 2026-08-30, y va aquí arriba porque es criterio, no
+detalle.** Sí, se entiende, y de este modo:
+
+**Una lectura puede ser impecable por las reglas y no ser una lectura.** Que
+una cadena de aforismos recomponga exactamente la forma demuestra que la
+gramática PODRÍA producirla; no demuestra que el Tipiṭaka la diga. La
+gramática explica el texto: no lo autoriza. Cuando las dos cosas no coinciden,
+manda el texto.
+
+De ahí, tres consecuencias que no se negocian:
+
+1. **Recomponer es necesario y no suficiente.** Era el único filtro y no
+   alcanza: «tveva» recomponía por siete caminos y el Tipiṭaka dice uno.
+2. **Que las voces estén atestiguadas TAMPOCO alcanza.** «tvaṃ» aparece 7.857
+   veces en la edición y «tvṃ» una, y aun así «tvaṃ + eva» no es lo que el
+   canon lee en «tveva». Atestiguar la PIEZA no atestigua la JUNTURA.
+3. **Lo teóricamente posible no se publica como si fuera lo que dice el
+   canon.** Antes de enseñar una lectura hay que poder decir dónde la dice el
+   Tipiṭaka, o decir que no se sabe.
+
+<!-- DUDA, y es la que hoy no se puede cerrar aquí: para comprobar que dos
+     voces aparecen JUNTAS en el canon hace falta el TEXTO CORRIDO, y este
+     repositorio sólo tiene `recursos/corpus/corpus-formas.json` — formas con
+     sus cuentas, 681.927 y 8.062.163 fichas, sin contexto—. Con eso se puede
+     contar y no leer. El texto corrido lo tiene el proyecto OSBCT, y hasta
+     que se conecte, la poda de lecturas inverosímiles se hace a mano y por
+     adjudicación, una por una, como se hizo con «tveva» el 2026-08-30. -->
+
 ## Gestión de la sesión
 
 Corresponde a Claude —no a Angel— avisar cuando la conversación se ha alargado
