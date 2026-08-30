@@ -909,9 +909,16 @@ def _patron_niggahita_m(r, patron, frec, f_forma):
     puesto 5.000, hasta donde llegó la medición). Fuera de ahí el resguardo
     se debilita —con la forma rara, el piso de las candidatas cae— y
     aparecían afirmaciones que la medición nunca vio: jātimaraṇā (frec 3)
-    salía como jātiṃ + araṇā siendo el compuesto jāti+maraṇa, y
-    vedhamānehi (7) como vedhaṃ + ānehi siendo el participio vedhamāna.
-    Las formas raras callan hasta que el IEBH amplíe la licencia.
+    salía como jātiṃ + araṇā siendo el compuesto jāti + maraṇā, y
+    vedhamānehi (7) como vedhaṃ + ānehi siendo vedhamāna, compuesto
+    también. Las formas raras callan hasta que el IEBH amplíe la licencia.
+
+    (2026-08-30, enmienda del IEBH: jāti + maraṇā, con ā; y vedhamāna es
+    compuesto, no participio, como decía antes esta nota. Lo mismo corrige
+    el ejemplo que se daba del PRECIO del piso: ekamante NO es una forma
+    correcta silenciada —es compuesta—, de modo que ahí el piso acierta.
+    La correcta que sí calla es tvamasi = tvaṃ + asi, que el testigo del
+    DPD confirma.)
     """
     if f_forma < patron.get("frec_minima", 0):
         return False

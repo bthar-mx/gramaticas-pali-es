@@ -28,12 +28,20 @@ resguardo se debilita y aparecían lecturas falsas que la medición nunca había
 visto:
 
 - **jātimaraṇā** (3 apariciones) salía como «jātiṃ + araṇā», siendo el compuesto
-  jāti + maraṇa;
-- **vedhamānehi** (7) salía como «vedhaṃ + ānehi», siendo el participio
-  vedhamāna.
+  **jāti + maraṇā**;
+- **vedhamānehi** (7) salía como «vedhaṃ + ānehi», siendo **vedhamāna**, que es
+  también un compuesto.
 
 El precio de ese piso es que **también callan formas correctas** por debajo de
-él: ekamante (133) y tvamasi (94), entre otras.
+él: tvamasi (94), que el testigo confirma como tvaṃ + asi, entre otras.
+
+*Nota de enmienda.* Hasta hoy citábamos junto a tvamasi la forma **ekamante**
+(133) como segunda correcta silenciada. **No lo es: usted advierte que es
+compuesta**, de modo que el piso hacía bien en callarla y el ejemplo estaba mal
+elegido. La corrección no mueve ninguna cifra de este informe —el testigo callaba
+sobre ekamante y por eso nunca entró en las 199 confirmadas—, pero sí quita un
+argumento a favor de bajar el piso, y conviene que se sepa antes de decidir. Lo
+mismo vale para vedhamāna, que llamábamos participio.
 
 ### Lo que ahora se ha medido
 
@@ -81,8 +89,8 @@ Las tres condiciones tienen razón gramatical, no estadística:
 
 **El DPD calla sobre jātimaraṇā y sobre vedhamānehi.** El testigo no adjudica los
 dos casos que motivaron el piso; los adjudicó nuestro juicio, y su juicio sigue
-haciendo falta. De las dos formas correctas que el piso silencia, el DPD confirma
-tvamasi y calla sobre ekamante.
+haciendo falta —como acaba de verse con ekamante, que el testigo tampoco juzgaba
+y que usted ha resuelto de un golpe—.
 
 ### Lo que se le pide decidir
 

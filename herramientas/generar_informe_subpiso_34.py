@@ -9,8 +9,9 @@ Qué calla §34 por debajo de su piso, y qué dice el DPD de cada cosa callada.
 El régimen medido de §34 (briefing 36 §3) fijó `frec_minima` = 159 porque
 la medición que licenció el patrón se detuvo en el puesto 5.000 y, por
 debajo, la receta afirmaba en falso: jātimaraṇā (frec 3) como «jātiṃ +
-araṇā» siendo el compuesto jāti+maraṇa, y vedhamānehi (7) como «vedhaṃ +
-ānehi» siendo el participio vedhamāna. Ampliar la licencia es del IEBH, y
+araṇā» siendo el compuesto jāti + maraṇā, y vedhamānehi (7) como «vedhaṃ +
+ānehi» siendo vedhamāna, compuesto también (las dos, enmendadas por el IEBH el
+2026-08-30). Ampliar la licencia es del IEBH, y
 para eso hace falta ver ENTERO lo que el piso calla. Eso mide este informe.
 
 ## La población: la referencia de señal, no un corte por frecuencia
@@ -315,8 +316,12 @@ def main():
     w("## Dos límites de este informe\n")
     w("1. **El DPD calla sobre jātimaraṇā y sobre vedhamānehi.** El testigo "
       "no adjudica los dos casos que motivaron el piso; los adjudicó el "
-      "juicio de Angel, y sigue haciendo falta. De las dos correctas que el "
-      "piso silencia, confirma tvamasi y calla sobre ekamante.")
+      "juicio de Angel, y sigue haciendo falta. La correcta que el piso "
+      "silencia y el testigo confirma es tvamasi = tvaṃ + asi. **Enmienda "
+      "del IEBH (2026-08-30):** ekamante, que se citaba junto a ella como "
+      "segunda correcta silenciada, **es compuesta** — ahí el piso acierta, "
+      "y el ejemplo estaba mal elegido. El testigo callaba sobre ella, de "
+      "modo que nunca entró en las confirmadas y ninguna cifra se mueve.")
     w("2. **La cuenta no cuadra con el briefing 36 §3**, que da 385 "
       "afirmaciones sin piso donde aquí salen {0} descontando las "
       "conocidas. Queda SIN RECONCILIAR; la causa probable es la "

@@ -44,7 +44,7 @@ Sobre lo adjudicable (coincide frente a difiere), la precisión pasa de **76.2 %
 
 ## Dos límites de este informe
 
-1. **El DPD calla sobre jātimaraṇā y sobre vedhamānehi.** El testigo no adjudica los dos casos que motivaron el piso; los adjudicó el juicio de Angel, y sigue haciendo falta. De las dos correctas que el piso silencia, confirma tvamasi y calla sobre ekamante.
+1. **El DPD calla sobre jātimaraṇā y sobre vedhamānehi.** El testigo no adjudica los dos casos que motivaron el piso; los adjudicó el juicio de Angel, y sigue haciendo falta. La correcta que el piso silencia y el testigo confirma es tvamasi = tvaṃ + asi. **Enmienda del IEBH (2026-08-30):** ekamante, que se citaba junto a ella como segunda correcta silenciada, **es compuesta** — ahí el piso acierta, y el ejemplo estaba mal elegido. El testigo callaba sobre ella, de modo que nunca entró en las confirmadas y ninguna cifra se mueve.
 2. **La cuenta no cuadra con el briefing 36 §3**, que da 385 afirmaciones sin piso donde aquí salen 441 descontando las conocidas. Queda SIN RECONCILIAR; la causa probable es la precedencia entre patrones, que esta receta suelta no modela. Se deja dicho, no resuelto.
 
 ## Las falsas, una a una

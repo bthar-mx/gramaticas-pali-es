@@ -126,8 +126,19 @@ correrlo **por debajo** del piso, que es lo que hace el informe nuevo.
 
 1. **El DPD CALLA sobre jātimaraṇā y sobre vedhamānehi.** El testigo no
    adjudica los dos casos que fijaron el piso; los adjudicó el juicio de
-   Angel y sigue haciendo falta. De las dos correctas que el piso silencia,
-   confirma tvamasi y calla sobre ekamante.
+   Angel y sigue haciendo falta. La correcta que el piso silencia y el
+   testigo confirma es **tvamasi = tvaṃ + asi**.
+
+   **ENMIENDA DEL IEBH (2026-08-30), y toca tres archivos:** *jāti + maraṇā*
+   lleva ā; *vedhamāna* es **compuesto**, no participio; y **ekamante, que
+   se citaba desde el briefing 36 §3 como la segunda correcta silenciada por
+   el piso, es COMPUESTA** — de modo que ahí el piso acierta y el ejemplo
+   estaba mal elegido. **Ninguna cifra se mueve**: el testigo callaba sobre
+   ekamante y por eso nunca entró en las 199 confirmadas. Pero quita un
+   argumento a favor de bajar el piso, y así se le ha dicho. Corregido en
+   `solucionar_sandhis.py`, en `generar_informe_subpiso_34.py` y en el
+   informe al Venerable; el briefing 36 se deja como quedó, que es el
+   registro de lo que se creía entonces.
 2. ~~La cuenta no cuadra con el briefing 36 §3.~~ **RECONCILIADA EXACTAMENTE
    el mismo día — ver §3 bis.**
 
