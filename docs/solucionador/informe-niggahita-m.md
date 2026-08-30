@@ -8,84 +8,83 @@
 
 | | |
 | --- | ---: |
-| formas de la clase (sin autoridad previa) | 153 |
-| masa en el canon | 87.038 |
+| formas de la clase (sin autoridad previa) | 99 |
+| masa en el canon | 55.694 |
 | con señal «segura» hoy | 1 |
-| con señal «posible» hoy | 19 |
-| con señal «sin señal» hoy | 133 |
+| con señal «posible» hoy | 2 |
+| con señal «sin señal» hoy | 96 |
 | veredicto «calla (resguardo)» | 99 |
-| veredicto «única» | 54 |
 
-**La firma afirmaría 54 formas (masa 31.344); 37 de ellas HOY no tienen señal** — recall nuevo, no sólo «no sabe» resuelto. Las gemelas cuentan como afirmables sólo si se firma también su desempate.
+**La firma afirmaría 0 formas (masa 0); 0 de ellas HOY no tienen señal** — recall nuevo, no sólo «no sabe» resuelto. Las gemelas cuentan como afirmables sólo si se firma también su desempate.
 
-**El testigo DPD no está disponible en esta máquina** (`dpd-descomposiciones.tsv` vive en la Mac del IEBH): la columna queda vacía. Correr este mismo informe allí la llena.
+El testigo DPD, sobre las afirmables: coincide 0 · difiere 0 · calla 0.
 
 ## Detalle, por frecuencia
 
 | forma | frec. | señal hoy | lecturas de la clase | veredicto | el DPD (testigo) |
 | --- | ---: | --- | --- | --- | --- |
-| samaye | 4.458 | — | saṃ (145) + aye (21) | calla (resguardo) | ausente: — |
-| ādimāha | 3.961 | — | ādiṃ (742) + āha (17.591) | calla (resguardo) | ausente: — |
-| samayena | 3.695 | — | saṃ (145) + ayena (4) | calla (resguardo) | ausente: — |
-| evameva | 3.475 | posible | evaṃ (46.248) + eva (10.291) | única | ausente: — |
-| ekamantaṃ | 3.370 | — | ekaṃ (15.863) + antaṃ (334) | calla (resguardo) | ausente: — |
-| etamatthaṃ | 2.208 | — | etaṃ (5.542) + atthaṃ (2.979) | única | ausente: — |
-| gāthamāha | 2.154 | — | gāthaṃ (775) + āha (17.591) | calla (resguardo) | ausente: — |
-| aññamaññaṃ | 1.632 | — | aññaṃ (4.502) + aññaṃ (4.502) | única | ausente: — |
-| agamāsi | 1.548 | — | agaṃ (5) + āsi (858) | calla (resguardo) | ausente: — |
-| nikkhamitvā | 1.492 | — | nikkhaṃ (14) + itvā (2) | calla (resguardo) | ausente: — |
-| evamāha | 1.455 | — | evaṃ (46.248) + āha (17.591) | única | ausente: — |
-| tameva | 1.153 | posible | taṃ (53.782) + eva (10.291) | única | ausente: — |
-| samayaṃ | 1.105 | — | saṃ (145) + ayaṃ (23.589) | calla (resguardo) | ausente: — |
-| tamatthaṃ | 1.073 | — | taṃ (53.782) + atthaṃ (2.979) | única | ausente: — |
-| aññamaññe | 1.001 | — | aññaṃ (4.502) + aññe (1.436) | única | ausente: — |
-| evamevaṃ | 977 | posible | evaṃ (46.248) + evaṃ (46.248) | única | ausente: — |
-| sayameva | 964 | posible | sayaṃ (2.511) + eva (10.291) | única | ausente: — |
-| ayamettha | 955 | — | ayaṃ (23.589) + ettha (13.604) | única | ausente: — |
-| ayameva | 949 | posible | ayaṃ (23.589) + eva (10.291) | única | ausente: — |
-| samuṭṭhāti | 913 | segura | saṃ (145) + uṭṭhāti (26) | calla (resguardo) | ausente: — |
-| evametaṃ | 895 | — | evaṃ (46.248) + etaṃ (5.542) | única | ausente: — |
-| katamehi | 861 | — | kataṃ (5.499) + ehi (839) | calla (resguardo) | ausente: — |
-| evamettha | 857 | — | evaṃ (46.248) + ettha (13.604) | única | ausente: — |
-| samudayo | 842 | — | saṃ (145) + udayo (67) | calla (resguardo) | ausente: — |
-| samantato | 830 | — | saṃ (145) + antato (24) | calla (resguardo) | ausente: — |
-| antamaso | 780 | — | antaṃ (334) + aso (2) | calla (resguardo) | ausente: — |
-| tamenaṃ | 778 | — | taṃ (53.782) + enaṃ (5) | calla (resguardo) | ausente: — |
-| pacchimānaṃ | 769 | — | pacchiṃ (36) + ānaṃ (2) | calla (resguardo) | ausente: — |
-| katamāni | 766 | — | kataṃ (5.499) + āni (1) | calla (resguardo) | ausente: — |
-| evamassa | 757 | — | evaṃ (46.248) + assa (2.171) | única | ausente: — |
-| pamāṇaṃ | 747 | — | paṃ (1) + āṇaṃ (67) | calla (resguardo) | ausente: — |
-| samaṇā | 745 | — | saṃ (145) + aṇā (1) | calla (resguardo) | ausente: — |
-| idameva | 724 | posible | idaṃ (17.398) + eva (10.291) | única | ausente: — |
-| ahameva | 717 | posible | ahaṃ (9.946) + eva (10.291) | única | ausente: — |
-| samantā | 686 | — | saṃ (145) + antā (68) | calla (resguardo) | ausente: — |
-| sesamettha | 682 | — | sesaṃ (2.283) + ettha (13.604) | única | ausente: — |
-| imamatthaṃ | 656 | — | imaṃ (8.849) + atthaṃ (2.979) | única | ausente: — |
-| ayamattho | 632 | — | ayaṃ (23.589) + attho (24.374) | única | ausente: — |
-| namagge | 632 | — | naṃ (6.103) + agge (201) | calla (resguardo) | ausente: — |
-| adukkhamasukhāya | 625 | — | adukkhaṃ (14) + asukhāya (12) | calla (resguardo) | ausente: — |
-| samanupassati | 607 | — | saṃ (145) + anupassati (173) | calla (resguardo) | ausente: — |
-| uttānameva | 604 | — | uttānaṃ (40) + eva (10.291) | calla (resguardo) | ausente: — |
-| vuttanayameva | 571 | — | vuttanayaṃ (30) + eva (10.291) | calla (resguardo) | ausente: — |
-| evamāhaṃsu | 562 | — | evaṃ (46.248) + āhaṃsu (872) | única | ausente: — |
-| kumāro | 560 | — | kuṃ (4) + āro (2) | calla (resguardo) | ausente: — |
-| khamati | 535 | — | khaṃ (6) + ati (209) | calla (resguardo) | ausente: — |
-| samayo | 518 | — | saṃ (145) + ayo (55) | calla (resguardo) | ausente: — |
-| samādāya | 508 | — | saṃ (145) + ādāya (2.085) | calla (resguardo) | ausente: — |
-| paramatthato | 501 | — | paraṃ (4.183) + atthato (1.761) | única | ausente: — |
-| samattho | 486 | — | saṃ (145) + attho (24.374) | calla (resguardo) | ausente: — |
-| vuttameva | 480 | posible | vuttaṃ (30.952) + eva (10.291) | única | ausente: — |
-| sameti | 479 | — | saṃ (145) + eti (210) | calla (resguardo) | ausente: — |
-| ekameva | 475 | posible | ekaṃ (15.863) + eva (10.291) | única | ausente: — |
-| pattacīvaramādāya | 467 | — | pattacīvaraṃ (397) + ādāya (2.085) | calla (resguardo) | ausente: — |
-| samāpattiṃ | 464 | — | saṃ (145) + āpattiṃ (1.831) | calla (resguardo) | ausente: — |
-| samanantare | 462 | — | saṃ (145) + anantare (1.218) | calla (resguardo) | ausente: — |
-| adukkhamasukhaṃ | 458 | — | adukkhaṃ (14) + asukhaṃ (8) | calla (resguardo) | ausente: — |
-| appamatto | 457 | — | appaṃ (412) + atto (14) | calla (resguardo) | ausente: — |
-| aññamañña | 455 | — | aññaṃ (4.502) + añña (9) | calla (resguardo) | ausente: — |
-| visuddhimagge | 454 | — | visuddhiṃ (110) + agge (201) | calla (resguardo) | ausente: — |
+| samaye | 4.458 | — | saṃ (145) + aye (21) | calla (resguardo) | calla: — |
+| ādimāha | 3.961 | — | ādiṃ (742) + āha (17.591) | calla (resguardo) | aporta: ādiṃ + āha; ādimā + āha; ādi + āha |
+| samayena | 3.695 | — | saṃ (145) + ayena (4) | calla (resguardo) | calla: — |
+| ekamantaṃ | 3.370 | — | ekaṃ (15.863) + antaṃ (334) | calla (resguardo) | calla: — |
+| gāthamāha | 2.154 | — | gāthaṃ (775) + āha (17.591) | calla (resguardo) | aporta: gāthaṃ + āha |
+| agamāsi | 1.548 | — | agaṃ (5) + āsi (858) | calla (resguardo) | calla: — |
+| nikkhamitvā | 1.492 | — | nikkhaṃ (14) + itvā (2) | calla (resguardo) | calla: — |
+| samayaṃ | 1.105 | — | saṃ (145) + ayaṃ (23.589) | calla (resguardo) | calla: — |
+| samuṭṭhāti | 913 | segura | saṃ (145) + uṭṭhāti (26) | calla (resguardo) | calla: — |
+| katamehi | 861 | — | kataṃ (5.499) + ehi (839) | calla (resguardo) | calla: — |
+| samudayo | 842 | — | saṃ (145) + udayo (67) | calla (resguardo) | calla: — |
+| samantato | 830 | — | saṃ (145) + antato (24) | calla (resguardo) | calla: — |
+| antamaso | 780 | — | antaṃ (334) + aso (2) | calla (resguardo) | calla: — |
+| tamenaṃ | 778 | — | taṃ (53.782) + enaṃ (5) | calla (resguardo) | aporta: taṃ + enaṃ |
+| pacchimānaṃ | 769 | — | pacchiṃ (36) + ānaṃ (2) | calla (resguardo) | calla: — |
+| katamāni | 766 | — | kataṃ (5.499) + āni (1) | calla (resguardo) | calla: — |
+| pamāṇaṃ | 747 | — | paṃ (1) + āṇaṃ (67) | calla (resguardo) | calla: — |
+| samaṇā | 745 | — | saṃ (145) + aṇā (1) | calla (resguardo) | calla: — |
+| samantā | 686 | — | saṃ (145) + antā (68) | calla (resguardo) | calla: — |
+| namagge | 632 | — | naṃ (6.103) + agge (201) | calla (resguardo) | aporta: na + magge; nami + agge; namo + agge |
+| adukkhamasukhāya | 625 | — | adukkhaṃ (14) + asukhāya (12) | calla (resguardo) | calla: — |
+| samanupassati | 607 | — | saṃ (145) + anupassati (173) | calla (resguardo) | calla: — |
+| uttānameva | 604 | — | uttānaṃ (40) + eva (10.291) | calla (resguardo) | aporta: uttānaṃ + eva |
+| vuttanayameva | 571 | — | vuttanayaṃ (30) + eva (10.291) | calla (resguardo) | aporta: vuttanayaṃ + eva; vuttanaya + eva |
+| kumāro | 560 | — | kuṃ (4) + āro (2) | calla (resguardo) | calla: — |
+| khamati | 535 | — | khaṃ (6) + ati (209) | calla (resguardo) | calla: — |
+| samayo | 518 | — | saṃ (145) + ayo (55) | calla (resguardo) | calla: — |
+| samādāya | 508 | — | saṃ (145) + ādāya (2.085) | calla (resguardo) | calla: — |
+| samattho | 486 | — | saṃ (145) + attho (24.374) | calla (resguardo) | calla: — |
+| sameti | 479 | — | saṃ (145) + eti (210) | calla (resguardo) | calla: — |
+| pattacīvaramādāya | 467 | — | pattacīvaraṃ (397) + ādāya (2.085) | calla (resguardo) | calla: — |
+| samāpattiṃ | 464 | — | saṃ (145) + āpattiṃ (1.831) | calla (resguardo) | calla: — |
+| samanantare | 462 | — | saṃ (145) + anantare (1.218) | calla (resguardo) | calla: — |
+| adukkhamasukhaṃ | 458 | — | adukkhaṃ (14) + asukhaṃ (8) | calla (resguardo) | calla: — |
+| appamatto | 457 | — | appaṃ (412) + atto (14) | calla (resguardo) | calla: — |
+| aññamañña | 455 | — | aññaṃ (4.502) + añña (9) | calla (resguardo) | calla: — |
+| visuddhimagge | 454 | — | visuddhiṃ (110) + agge (201) | calla (resguardo) | calla: — |
+| samādapeti | 442 | — | saṃ (145) + ādapeti (2) | calla (resguardo) | calla: — |
+| samāpajjitvā | 427 | — | saṃ (145) + āpajjitvā (229) | calla (resguardo) | calla: — |
+| agamaṃsu | 426 | — | agaṃ (5) + aṃsu (7) | calla (resguardo) | calla: — |
+| samāpannassa | 421 | — | saṃ (145) + āpannassa (30) | calla (resguardo) | calla: — |
+| pakkamati | 417 | — | pakkaṃ (119) + ati (209) | calla (resguardo) | calla: — |
+| nipātamattaṃ | 379 | — | nipātaṃ (3) + attaṃ (37) | calla (resguardo) | calla: — |
+| attamanā | 376 | — | attaṃ (37) + anā (1) | calla (resguardo) | calla: — |
+| samāpattiyo | 372 | — | saṃ (145) + āpattiyo (1.714) | calla (resguardo) | calla: — |
+| appamāṇaṃ | 364 | — | appaṃ (412) + āṇaṃ (67) | calla (resguardo) | calla: — |
+| suviññeyyameva | 339 | — | suviññeyyaṃ (22) + eva (10.291) | calla (resguardo) | aporta: suviññeyyaṃ + eva; suviññeyya + eva |
+| samatho | 334 | posible | saṃ (145) + atho (416) | calla (resguardo) | calla: — |
+| samaggā | 321 | — | saṃ (145) + aggā (104) | calla (resguardo) | calla: — |
+| vāyamati | 320 | — | vāyaṃ (101) + ati (209) | calla (resguardo) | calla: — |
+| devānamindo | 314 | — | devānaṃ (1.025) + indo (54) | calla (resguardo) | calla: — |
+| uttānatthameva | 302 | — | uttānatthaṃ (3) + eva (10.291) | calla (resguardo) | calla: — |
+| samatikkamma | 300 | — | saṃ (145) + atikkamma (302) | calla (resguardo) | calla: — |
+| arahattamaggena | 299 | — | arahattaṃ (2.402) + aggena (35) | calla (resguardo) | calla: — |
+| samāpajjati | 293 | — | saṃ (145) + āpajjati (2.412) | calla (resguardo) | calla: — |
+| samāpanno | 289 | — | saṃ (145) + āpanno (607) | calla (resguardo) | calla: — |
+| samānaṃ | 283 | — | saṃ (145) + ānaṃ (2) | calla (resguardo) | calla: — |
+| thinamiddhaṃ | 281 | — | thinaṃ (141) + iddhaṃ (41) | calla (resguardo) | calla: — |
+| aññamaññapaccayā | 276 | — | aññaṃ (4.502) + aññapaccayā (2) | calla (resguardo) | calla: — |
+| samattā | 267 | — | saṃ (145) + attā (2.212) | calla (resguardo) | calla: — |
 
-*…y 93 formas más (--top-formas las lista).*
+*…y 39 formas más (--top-formas las lista).*
 
 ## La medición previa: las respuestas conocidas de la clase
 
@@ -94,11 +93,21 @@
 | forma | conocida | de dónde | el mecanismo habría dicho | ¿acierta? |
 | --- | --- | --- | --- | --- |
 | dhanameva | dhanaṃ + eva | banco | dhanaṃ + eva (única) | sí |
+| dīghamaddhānaṃ | dīghaṃ + addhānaṃ | caso adjudicado | dīghaṃ + addhānaṃ (única) | sí |
+| evamayaṃ | evaṃ + ayaṃ | caso adjudicado | evaṃ + ayaṃ (única) | sí |
+| evametaṃ | evaṃ + etaṃ | caso adjudicado | evaṃ + etaṃ (única) | sí |
+| evameva | evaṃ + eva | caso adjudicado | evaṃ + eva (única) | sí |
+| evamidaṃ | evaṃ + idaṃ | caso adjudicado | evaṃ + idaṃ (única) | sí |
+| evamāha | evaṃ + āha | caso adjudicado | evaṃ + āha (única) | sí |
+| evamāhaṃsu | evaṃ + āhaṃsu | caso adjudicado | evaṃ + āhaṃsu (única) | sí |
+| evamāhu | evaṃ + āhu | caso adjudicado | evaṃ + āhu (única) | sí |
+| evamāhāro | evaṃ + āhāro | caso adjudicado | evaṃ + āhāro (única) | sí |
 | idamavoca | idaṃ + avoca | caso adjudicado | idaṃ + avoca (única) | sí |
 | idamavocaṃ | idaṃ + avocaṃ | caso adjudicado | idaṃ + avocaṃ (única) | sí |
 | idamavocuṃ | idaṃ + avocuṃ | caso adjudicado | idaṃ + avocuṃ (única) | sí |
 | tamahaṃ | taṃ + ahaṃ | banco | taṃ + ahaṃ (única) | sí |
+| uttiṇamakaṃsu | uttiṇaṃ + akaṃsu | caso adjudicado | uttiṇaṃ + akaṃsu (única) | sí |
 | yamāhu | yaṃ + āhu | banco | yaṃ + āhu (única) | sí |
 
-Afirmaría 6 de las 6 conocidas; aciertos 6 de 6.
+Afirmaría 16 de las 16 conocidas; aciertos 16 de 16.
 
