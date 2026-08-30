@@ -1,5 +1,5 @@
 {
- "ecuaciones": 6,
+ "ecuaciones": 20,
  "filas": [
   {
    "forma": "ti",
@@ -12,6 +12,23 @@
    "recompone": false,
    "senal": null,
    "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "nāhaṃ",
+   "frec": 1231,
+   "ecuacion_iebh": [
+    "na",
+    "ahaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "na",
+    "haṃ"
+   ],
    "acuerdo": false
   },
   {
@@ -28,6 +45,142 @@
     "sāsana",
     "an"
    ],
+   "acuerdo": false
+  },
+  {
+   "forma": "haṃ",
+   "frec": 30,
+   "ecuacion_iebh": [
+    "ahaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "sājja",
+   "frec": 20,
+   "ecuacion_iebh": [
+    "sā",
+    "ajja"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": true,
+   "senal": "posible",
+   "componentes_motor": [
+    "sa",
+    "ajja"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "bandhiya",
+   "frec": 5,
+   "ecuacion_iebh": [
+    "bandhitvā"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "bandhi",
+    "aya"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "klesehi",
+   "frec": 3,
+   "ecuacion_iebh": [
+    "kilesehi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ka",
+    "lesehi"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "vanamantaraṃ",
+   "frec": 2,
+   "ecuacion_iebh": [
+    "vanantaraṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "vanā",
+    "mantaraṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "cāri",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "cariṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "cā",
+    "īri"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "mhi",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "amhi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [
+    "ma",
+    "hi"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "pun",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "puna"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "c",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "ca"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
    "acuerdo": false
   },
   {
@@ -58,6 +211,19 @@
    "acuerdo": false
   },
   {
+   "forma": "iv",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "iva"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
    "forma": "kāmarāgen",
    "frec": 0,
    "ecuacion_iebh": [
@@ -80,6 +246,48 @@
    "clase": "juntura",
    "fuente": "therigatha-V-67-71.txt",
    "recompone": true,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "oḍḍiya",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "oḍḍiyitvā"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "oḍḍi",
+    "aya"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "pāsam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "pāsaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "yañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "yaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-72-81.txt",
+   "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
    "acuerdo": false
