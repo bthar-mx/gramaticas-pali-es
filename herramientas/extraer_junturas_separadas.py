@@ -100,6 +100,47 @@ def es_pali(linea):
     return bool(re.search(r"[āīūṃṅñṭḍṇḷ]", linea))
 
 
+# Tres cribas contra la basura, añadidas el 2026-08-30 cuando el
+# Ānāpānassati de la Visuddhimagga trajo INGLÉS al corpus. `es_pali()` sólo
+# sabe descartar el español, de modo que una nota del traductor en inglés
+# entra entera, y en inglés casi toda palabra acaba en consonante: cada
+# espacio parece una juntura. Así llegaron a publicarse «it | I» → *iti*
+# (8.058), «at | the» → *atthe* (1.393) y «can | do» → *cando* (299) — la
+# de «atthe» venía desde la primera corrida—. La atestiguación no las
+# atrapa: la forma unida existe en la edición por pura coincidencia.
+#
+# Las tres son de PAR, no de línea, y ahí está la gracia: filtrar la LÍNEA
+# por palabras inglesas se probó y quitaba junturas de verdad —idheva (876),
+# sabbeva (512), yannūnāhaṃ (242)—, porque los documentos mezclan pāḷi e
+# inglés en el mismo renglón. Mirando el par no se pierde ninguna: medido
+# el 2026-08-30, las tres retiran 19 candidatas atestiguadas y las 19 son
+# basura.
+INGLESAS = set("""
+a an and as at be but by can do for from get got had has have he her him his
+i if in into is it its me my no nor not of on or our out she should so that
+the their them then there they this to too us was we were what when which who
+will with would you your day way
+""".split())
+
+
+def basura(a, b):
+    """¿Es este par un artefacto y no una juntura del Venerable?"""
+    def letras(x):
+        return "".join(c for c in x if c.isalpha())
+    la, lb = letras(a), letras(b)
+    # (1) una mitad sin letras: «– | ’tiṇṇo», de una raya de cita.
+    if not la or not lb:
+        return True
+    # (2) las dos mitades de una sola letra: «M | A» de «M.A. ii 94», y las
+    #     demás siglas de referencia —T.A., D.A., Ps., Vis., Ṭī.—.
+    if len(la) <= 1 and len(lb) <= 1:
+        return True
+    # (3) las dos mitades son palabras inglesas corrientes.
+    if la.lower() in INGLESAS and lb.lower() in INGLESAS:
+        return True
+    return False
+
+
 def junturas_de(texto):
     """Los pares (a, b) que el documento deja abiertos, en orden.
 
@@ -132,12 +173,14 @@ def junturas_de(texto):
                         partido = (izq, der, "apóstrofo")
                     break
             if partido:
-                fuera.append(partido)
+                if not basura(partido[0], partido[1]):
+                    fuera.append(partido)
                 i += 1
                 continue
             if (i + 1 < len(piezas) and a
                     and a[-1] not in FINAL_DE_PALABRA and a[-1].isalpha()):
-                fuera.append((a, piezas[i + 1], "final consonántica"))
+                if not basura(a, piezas[i + 1]):
+                    fuera.append((a, piezas[i + 1], "final consonántica"))
                 i += 2
                 continue
             i += 1

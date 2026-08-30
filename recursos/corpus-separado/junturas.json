@@ -1,5 +1,5 @@
 {
- "junturas": 1361,
+ "junturas": 1669,
  "filas": [
   {
    "forma": "ceva",
@@ -50,6 +50,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "cāti",
+   "frec": 3851,
+   "corte_iebh": [
+    "cā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ca",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "evameva",
    "frec": 3475,
    "corte_iebh": [
@@ -57,7 +73,7 @@
     "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
@@ -69,11 +85,11 @@
    "forma": "neva",
    "frec": 3404,
    "corte_iebh": [
-    "n",
+    "N",
     "eva"
    ],
    "marca": "apóstrofo",
-   "fuente": "Dhammacakkappavattana-Sutta-Pali-Esp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "na",
@@ -89,7 +105,7 @@
     "avoca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "etaṃ",
@@ -169,7 +185,7 @@
     "atthaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "etaṃ",
@@ -249,7 +265,7 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "taṃ",
@@ -281,7 +297,7 @@
     "eva"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "tatha",
@@ -377,7 +393,7 @@
     "upasaṅkami"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "tena",
@@ -421,11 +437,11 @@
    "forma": "evañca",
    "frec": 1588,
    "corte_iebh": [
-    "Evañ",
+    "evañ",
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
@@ -441,7 +457,7 @@
     "aparaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Dutiyasaddhammasammosa-Sutta – Segundo discurso del declive del buen Dhamma.docx.txt",
    "senal": null,
    "componentes_motor": [
     "capi",
@@ -457,7 +473,7 @@
     "assa"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
    "componentes_motor": [
     "ca",
@@ -489,29 +505,13 @@
     "āha"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
     "āha"
    ],
    "acuerdo_segunda_voz": true
-  },
-  {
-   "forma": "atthe",
-   "frec": 1393,
-   "corte_iebh": [
-    "at",
-    "the"
-   ],
-   "marca": "final consonántica",
-   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
-   "senal": null,
-   "componentes_motor": [
-    "atta",
-    "he"
-   ],
-   "acuerdo_segunda_voz": false
   },
   {
    "forma": "evampi",
@@ -585,7 +585,7 @@
     "etaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "pana",
@@ -633,7 +633,7 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "yaṃ",
@@ -697,7 +697,7 @@
     "etaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
    "componentes_motor": [
     "ca",
@@ -729,7 +729,7 @@
     "evaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
@@ -793,7 +793,7 @@
     "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "Dhammacakkappavattana-Sutta-Pali-Esp.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "ayaṃ",
@@ -850,6 +850,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "evamettha",
+   "frec": 857,
+   "corte_iebh": [
+    "evam",
+    "ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "tassattho",
    "frec": 857,
    "corte_iebh": [
@@ -873,7 +889,7 @@
     "pi"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "ahaṃ",
@@ -937,7 +953,7 @@
     "assa"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
@@ -953,7 +969,7 @@
     "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "tvā",
@@ -1113,7 +1129,7 @@
     "āsanā"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": null,
    "componentes_motor": [
     "uṭṭhāya",
@@ -1209,7 +1225,7 @@
     "eva"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
    "componentes_motor": [
     "vivicca",
@@ -1369,13 +1385,29 @@
     "avocuṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "etaṃ",
     "avocuṃ"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evanti",
+   "frec": 516,
+   "corte_iebh": [
+    "evan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "sabbeva",
@@ -1401,7 +1433,7 @@
     "ahaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "PasarasiSuttaAriyapariyesanaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "taṃ",
@@ -1469,6 +1501,22 @@
    "senal": "segura",
    "componentes_motor": [
     "vuttaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "eteneva",
+   "frec": 476,
+   "corte_iebh": [
+    "Eten",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etena",
     "eva"
    ],
    "acuerdo_segunda_voz": true
@@ -1609,7 +1657,7 @@
     "pi"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "tesaṃ",
@@ -1721,7 +1769,7 @@
     "eva"
    ],
    "marca": "apóstrofo",
-   "fuente": "PasarasiSuttaAriyapariyesanaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "pubba",
@@ -1737,7 +1785,7 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "cittaṃ",
@@ -1792,6 +1840,22 @@
     "esa"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sabbesampi",
+   "frec": 379,
+   "corte_iebh": [
+    "sabbesam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sabbesaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "ayamassa",
@@ -1909,11 +1973,11 @@
    "forma": "katamañca",
    "frec": 335,
    "corte_iebh": [
-    "Katamañ",
+    "katamañ",
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "katamaṃ",
@@ -2261,11 +2325,11 @@
    "forma": "pañcime",
    "frec": 282,
    "corte_iebh": [
-    "pañc",
+    "Pañc",
     "ime"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Dutiyasaddhammasammosa-Sutta – Segundo discurso del declive del buen Dhamma.docx.txt",
    "senal": null,
    "componentes_motor": [
     "pañca",
@@ -2366,6 +2430,22 @@
    "componentes_motor": [
     "sandhāya",
     "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "heva",
+   "frec": 268,
+   "corte_iebh": [
+    "h",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ha",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -2546,6 +2626,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "idhāvuso",
+   "frec": 253,
+   "corte_iebh": [
+    "Idh",
+    "āvuso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "idha",
+    "āvuso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "imameva",
    "frec": 253,
    "corte_iebh": [
@@ -2574,6 +2670,38 @@
    "componentes_motor": [
     "evaṃ",
     "attho"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nuttha",
+   "frec": 246,
+   "corte_iebh": [
+    "nu",
+    "ttha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nuti",
+    "tha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sabbametaṃ",
+   "frec": 242,
+   "corte_iebh": [
+    "sabbam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sabbaṃ",
+    "etaṃ"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -2633,7 +2761,7 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "sukhaṃ",
@@ -2770,6 +2898,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "nissaraṇañca",
+   "frec": 217,
+   "corte_iebh": [
+    "nissaraṇañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nissaraṇaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "kenacideva",
    "frec": 216,
    "corte_iebh": [
@@ -2834,14 +2978,30 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ādīnavañca",
+   "frec": 207,
+   "corte_iebh": [
+    "ādīnavañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ādīnavaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "yadeva",
    "frec": 206,
    "corte_iebh": [
-    "yad",
+    "Yad",
     "eva"
    ],
-   "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "yada",
@@ -2882,6 +3042,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "tadapi",
+   "frec": 200,
+   "corte_iebh": [
+    "tad",
+    "api"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tada",
+    "api"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "bhavitabbanti",
    "frec": 198,
    "corte_iebh": [
@@ -2914,6 +3090,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "tadubhayampi",
+   "frec": 197,
+   "corte_iebh": [
+    "tadubhayam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tadubhayaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tassevaṃ",
    "frec": 197,
    "corte_iebh": [
@@ -2937,7 +3129,7 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "viññāṇaṃ",
@@ -2960,6 +3152,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "assādañca",
+   "frec": 190,
+   "corte_iebh": [
+    "assādañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "assādaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "dukkhassantaṃ",
@@ -2994,6 +3202,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "teva",
+   "frec": 187,
+   "corte_iebh": [
+    "T",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ta",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "ṭhānanti",
    "frec": 187,
    "corte_iebh": [
@@ -3022,22 +3246,6 @@
    "componentes_motor": [
     "cittaṃ",
     "api"
-   ],
-   "acuerdo_segunda_voz": false
-  },
-  {
-   "forma": "tiṇṇo",
-   "frec": 184,
-   "corte_iebh": [
-    "–",
-    "‘tiṇṇo"
-   ],
-   "marca": "apóstrofo",
-   "fuente": "PasarasiSuttaAriyapariyesanaSuttaPaliEsp.txt",
-   "senal": null,
-   "componentes_motor": [
-    "tiṇa",
-    "ṇo"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -3085,6 +3293,22 @@
    "senal": "segura",
    "componentes_motor": [
     "aniccaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ekanti",
+   "frec": 179,
+   "corte_iebh": [
+    "ekan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ekaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -3186,6 +3410,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "nāmañca",
+   "frec": 170,
+   "corte_iebh": [
+    "nāmañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nāmaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "khvassa",
    "frec": 167,
    "corte_iebh": [
@@ -3209,7 +3449,7 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "samudayaṃ",
@@ -3282,6 +3522,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "anattāti",
+   "frec": 158,
+   "corte_iebh": [
+    "anattā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "anattā",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "atthaṅgamañca",
    "frec": 158,
    "corte_iebh": [
@@ -3289,11 +3545,43 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
    "componentes_motor": [
     "atthaṅgamaṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "catunnampi",
+   "frec": 158,
+   "corte_iebh": [
+    "catunnam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "catunnaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "panete",
+   "frec": 158,
+   "corte_iebh": [
+    "pan",
+    "ete"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pana",
+    "ete"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -3410,6 +3698,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "evamādīni",
+   "frec": 151,
+   "corte_iebh": [
+    "evam",
+    "ādīni"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "evamādi",
+    "ini"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "ayañhettha",
    "frec": 150,
    "corte_iebh": [
@@ -3440,6 +3744,22 @@
     "ete"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kāyoti",
+   "frec": 147,
+   "corte_iebh": [
+    "‘Kāyo",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kāyo",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "khomhi",
@@ -3497,7 +3817,7 @@
     "eva"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "sabbehi",
@@ -3522,6 +3842,54 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "tayome",
+   "frec": 139,
+   "corte_iebh": [
+    "Tayo",
+    "me"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "taya",
+    "ome"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "taññeva",
+   "frec": 139,
+   "corte_iebh": [
+    "Tañ",
+    "ñeva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "taṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kiñcīti",
+   "frec": 137,
+   "corte_iebh": [
+    "kiñcī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kiñci",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tadāhaṃ",
    "frec": 137,
    "corte_iebh": [
@@ -3538,19 +3906,6 @@
    "acuerdo_segunda_voz": false
   },
   {
-   "forma": "ta",
-   "frec": 135,
-   "corte_iebh": [
-    "T",
-    "A"
-   ],
-   "marca": "final consonántica",
-   "fuente": "therigatha-V-102-106-Soṇātherīgāthāvaṇṇanā.txt",
-   "senal": null,
-   "componentes_motor": [],
-   "acuerdo_segunda_voz": false
-  },
-  {
    "forma": "yassatthāya",
    "frec": 135,
    "corte_iebh": [
@@ -3563,6 +3918,22 @@
    "componentes_motor": [
     "ya",
     "assatthāya"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nupalabbhati",
+   "frec": 134,
+   "corte_iebh": [
+    "n",
+    "upalabbhati"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "nupalabbha",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -3590,13 +3961,29 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "bhikkhusaṃghaṃ",
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kusalanti",
+   "frec": 132,
+   "corte_iebh": [
+    "kusalan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kusalaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "panidaṃ",
@@ -3606,7 +3993,7 @@
     "idaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "Dhammacakkappavattana-Sutta-Pali-Esp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "pana",
@@ -3686,11 +4073,27 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "attānaṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "katihākārehi",
+   "frec": 128,
+   "corte_iebh": [
+    "Katih",
+    "ākārehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "katiha",
+    "ākārehi"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -3741,6 +4144,38 @@
     "eva"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "neso",
+   "frec": 126,
+   "corte_iebh": [
+    "n",
+    "eso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "na",
+    "eso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nimittanti",
+   "frec": 126,
+   "corte_iebh": [
+    "nimittan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nimittaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "nāmanti",
@@ -3855,6 +4290,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "uddhamadho",
+   "frec": 120,
+   "corte_iebh": [
+    "uddham",
+    "adho"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uddhaṃ",
+    "adho"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "dīghamaddhānaṃ",
    "frec": 119,
    "corte_iebh": [
@@ -3862,7 +4313,7 @@
     "addhānaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "dīghaṃ",
@@ -3983,6 +4434,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "tāvettha",
+   "frec": 117,
+   "corte_iebh": [
+    "tāv",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tāva",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "yadaggena",
    "frec": 117,
    "corte_iebh": [
@@ -4011,6 +4478,22 @@
    "componentes_motor": [
     "āgataṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cassā",
+   "frec": 116,
+   "corte_iebh": [
+    "c",
+    "assā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "assā"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -4191,6 +4674,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "saṅgahitāti",
+   "frec": 113,
+   "corte_iebh": [
+    "saṅgahitā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "saṅgahitā",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "etenupāyena",
    "frec": 112,
    "corte_iebh": [
@@ -4221,6 +4720,22 @@
     "māssa"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ujukameva",
+   "frec": 112,
+   "corte_iebh": [
+    "ujukam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ujukaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "yeme",
@@ -4285,6 +4800,22 @@
     "āhu"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "svāyamattho",
+   "frec": 110,
+   "corte_iebh": [
+    "Svāyam",
+    "attho"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "sve",
+    "ayamattho"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "tāvatiṃsamagacchahaṃ",
@@ -4415,6 +4946,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "cāvuso",
+   "frec": 105,
+   "corte_iebh": [
+    "c",
+    "āvuso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ca",
+    "āvuso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "mamanti",
    "frec": 105,
    "corte_iebh": [
@@ -4426,6 +4973,22 @@
    "senal": "segura",
    "componentes_motor": [
     "mamaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "akusalanti",
+   "frec": 104,
+   "corte_iebh": [
+    "akusalan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "akusalaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -4463,6 +5026,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "paneke",
+   "frec": 103,
+   "corte_iebh": [
+    "pan",
+    "eke"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pa",
+    "aneke"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "panāha",
    "frec": 103,
    "corte_iebh": [
@@ -4477,6 +5056,22 @@
     "iha"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "labbhateva",
+   "frec": 102,
+   "corte_iebh": [
+    "labbhat",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "labbhate",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "yatthassa",
@@ -4534,7 +5129,7 @@
     "assa"
    ],
    "marca": "apóstrofo",
-   "fuente": "PasarasiSuttaAriyapariyesanaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
    "componentes_motor": [
     "mama",
@@ -4589,6 +5184,22 @@
     "eva"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "etasseva",
+   "frec": 99,
+   "corte_iebh": [
+    "etass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "padanti",
@@ -4655,6 +5266,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "panāhu",
+   "frec": 97,
+   "corte_iebh": [
+    "pan",
+    "āhu"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pana",
+    "āhu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "viharantīti",
+   "frec": 96,
+   "corte_iebh": [
+    "viharantī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "viharanti",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "cetoparivitakkamaññāya",
    "frec": 94,
    "corte_iebh": [
@@ -4710,7 +5353,7 @@
     "asi"
    ],
    "marca": "final consonántica",
-   "fuente": "therigatha-I-IV.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
    "componentes_motor": [
     "ta",
@@ -4751,6 +5394,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "yantaṃ",
+   "frec": 93,
+   "corte_iebh": [
+    "yan",
+    "taṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ya",
+    "antaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "attanova",
    "frec": 92,
    "corte_iebh": [
@@ -4765,6 +5424,22 @@
     "eva"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "catunnañca",
+   "frec": 92,
+   "corte_iebh": [
+    "catunnañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "catunnaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "pucchatīti",
@@ -4815,6 +5490,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "bhijjatīti",
+   "frec": 90,
+   "corte_iebh": [
+    "bhijjatī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "bhijjati",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "imasmiñca",
    "frec": 90,
    "corte_iebh": [
@@ -4829,6 +5520,22 @@
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paranti",
+   "frec": 90,
+   "corte_iebh": [
+    "paran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paraṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "santanti",
@@ -4854,13 +5561,29 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "Dhammacakkappavattana-Sutta-Pali-Esp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "abhinanduṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "evamidha",
+   "frec": 89,
+   "corte_iebh": [
+    "evam",
+    "idha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "evaṃ",
+    "idha"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "athāyasmā",
@@ -4911,17 +5634,52 @@
    "acuerdo_segunda_voz": false
   },
   {
-   "forma": "ma",
-   "frec": 86,
+   "forma": "ahamasmi",
+   "frec": 85,
    "corte_iebh": [
-    "M",
-    "A"
+    "aham",
+    "asmi"
    ],
    "marca": "final consonántica",
-   "fuente": "PasarasiSuttaAriyapariyesanaSuttaPaliEsp.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
-   "componentes_motor": [],
+   "componentes_motor": [
+    "ahaṃ",
+    "asmi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nevasaññīnāsaññī",
+   "frec": 85,
+   "corte_iebh": [
+    "n",
+    "evasaññīnāsaññī"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nevasaññi",
+    "nāsaññī"
+   ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sarūpeneva",
+   "frec": 85,
+   "corte_iebh": [
+    "sarūpen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sarūpena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "viharāmīti",
@@ -4988,6 +5746,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "sabhāveneva",
+   "frec": 83,
+   "corte_iebh": [
+    "sabhāven",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sabhāvena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "yohaṃ",
    "frec": 83,
    "corte_iebh": [
@@ -5000,6 +5774,22 @@
    "componentes_motor": [
     "ya",
     "haṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "lokañca",
+   "frec": 82,
+   "corte_iebh": [
+    "lokañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "lokaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -5116,19 +5906,6 @@
    "acuerdo_segunda_voz": false
   },
   {
-   "forma": "da",
-   "frec": 78,
-   "corte_iebh": [
-    "D",
-    "A"
-   ],
-   "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
-   "senal": null,
-   "componentes_motor": [],
-   "acuerdo_segunda_voz": false
-  },
-  {
    "forma": "myāyaṃ",
    "frec": 78,
    "corte_iebh": [
@@ -5173,6 +5950,22 @@
    "componentes_motor": [
     "tvaṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "padhānanti",
+   "frec": 75,
+   "corte_iebh": [
+    "Padhānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "padhānaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -5241,6 +6034,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ittheke",
+   "frec": 74,
+   "corte_iebh": [
+    "Itth",
+    "eke"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ittha",
+    "eke"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "osānagāthamāha",
    "frec": 74,
    "corte_iebh": [
@@ -5269,6 +6078,22 @@
    "componentes_motor": [
     "ṭhitā",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tañcassa",
+   "frec": 73,
+   "corte_iebh": [
+    "Tañ",
+    "c’assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "tañca",
+    "assa"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -5321,6 +6146,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "tiṃsampi",
+   "frec": 71,
+   "corte_iebh": [
+    "tiṃsam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "tiṃsaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "amhākañca",
    "frec": 70,
    "corte_iebh": [
@@ -5367,6 +6208,22 @@
     "accayena"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nevatthi",
+   "frec": 70,
+   "corte_iebh": [
+    "N",
+    "ev’atthi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "neva",
+    "atthi"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "tenupasaṅkamiṃ",
@@ -5625,6 +6482,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "vīsampi",
+   "frec": 65,
+   "corte_iebh": [
+    "vīsam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "vīsaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "ayamantimā",
    "frec": 63,
    "corte_iebh": [
@@ -5737,6 +6610,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ceso",
+   "frec": 61,
+   "corte_iebh": [
+    "c",
+    "eso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "eso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "cireneva",
    "frec": 61,
    "corte_iebh": [
@@ -5756,11 +6645,11 @@
    "forma": "yāvañcidaṃ",
    "frec": 61,
    "corte_iebh": [
-    "Yāvañ",
+    "yāvañ",
     "c’idaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "Sattasūriya-Sutta – Pali-Español (incluye Comentario y Sub-Comentario).txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "yāva",
@@ -5781,6 +6670,38 @@
    "senal": "segura",
    "componentes_motor": [
     "nāmarūpaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cetasikañca",
+   "frec": 59,
+   "corte_iebh": [
+    "cetasikañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cetasikaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "lakkhaṇanti",
+   "frec": 59,
+   "corte_iebh": [
+    "lakkhaṇan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "lakkhaṇaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -6043,6 +6964,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "petaṃ",
+   "frec": 56,
+   "corte_iebh": [
+    "p",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pa",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tatrime",
+   "frec": 55,
+   "corte_iebh": [
+    "Tatr",
+    "ime"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "tatra",
+    "ime"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "tenevettha",
    "frec": 55,
    "corte_iebh": [
@@ -6055,6 +7008,22 @@
    "componentes_motor": [
     "teneva",
     "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vuttova",
+   "frec": 55,
+   "corte_iebh": [
+    "vutto",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vutto",
+    "eva"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -6107,6 +7076,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "bhāsitanti",
+   "frec": 53,
+   "corte_iebh": [
+    "bhāsitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "bhāsitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tumhākañca",
    "frec": 53,
    "corte_iebh": [
@@ -6137,6 +7122,22 @@
     "ime"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evamassāyaṃ",
+   "frec": 52,
+   "corte_iebh": [
+    "Evam",
+    "assāyaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "evamassa",
+    "āyaṃ"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "maraṇampi",
@@ -6194,7 +7195,7 @@
     "ñeva"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "paccattaṃ",
@@ -6315,6 +7316,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "aṭṭhahākārehi",
+   "frec": 48,
+   "corte_iebh": [
+    "aṭṭhah",
+    "ākārehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "aṭṭhaha",
+    "ākārehi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "dhammamadesesi",
    "frec": 48,
    "corte_iebh": [
@@ -6418,7 +7435,7 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahā-Taṇhā-SaṅkhayaSuttaPaliEsp.txt",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "upādānaṃ",
@@ -6439,6 +7456,22 @@
    "componentes_motor": [
     "etaṃ",
     "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "imeheva",
+   "frec": 46,
+   "corte_iebh": [
+    "imeh",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "imehi",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -6475,6 +7508,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "somhi",
+   "frec": 46,
+   "corte_iebh": [
+    "so",
+    "mhi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "soma",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tatrassa",
    "frec": 46,
    "corte_iebh": [
@@ -6487,6 +7536,38 @@
    "componentes_motor": [
     "ta",
     "atrassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "upaṭṭhānanti",
+   "frec": 46,
+   "corte_iebh": [
+    "upaṭṭhānan",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "upaṭṭhānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "amutrāsiṃ",
+   "frec": 45,
+   "corte_iebh": [
+    "Amutr",
+    "āsiṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "amu",
+    "utrāsiṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -6588,6 +7669,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "athevaṃ",
+   "frec": 44,
+   "corte_iebh": [
+    "Ath",
+    "evaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "atha",
+    "evaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "aṭṭhakathāyampi",
+   "frec": 44,
+   "corte_iebh": [
+    "aṭṭhakathāyam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "aṭṭhakathāyaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "etenassa",
    "frec": 44,
    "corte_iebh": [
@@ -6636,6 +7749,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "nelā",
+   "frec": 44,
+   "corte_iebh": [
+    "n",
+    "elā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "na",
+    "elā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "sambodhimuttamaṃ",
    "frec": 44,
    "corte_iebh": [
@@ -6682,6 +7811,22 @@
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tamañño",
+   "frec": 44,
+   "corte_iebh": [
+    "Tam",
+    "añño"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ta",
+    "amañño"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "vāyodhātūti",
@@ -6794,6 +7939,22 @@
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samanti",
+   "frec": 42,
+   "corte_iebh": [
+    "Saman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "tissā",
@@ -7149,6 +8310,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "tadāyatanaṃ",
+   "frec": 38,
+   "corte_iebh": [
+    "tad",
+    "āyatanaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tada",
+    "āyatanaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "cakkhuviññāṇanti",
    "frec": 37,
    "corte_iebh": [
@@ -7165,6 +8342,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "kireko",
+   "frec": 37,
+   "corte_iebh": [
+    "kir",
+    "eko"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "kira",
+    "eko"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "maṃsañca",
    "frec": 37,
    "corte_iebh": [
@@ -7177,6 +8370,22 @@
    "componentes_motor": [
     "maṃsaṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "navahākārehi",
+   "frec": 37,
+   "corte_iebh": [
+    "navah",
+    "ākārehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "navaha",
+    "ākārehi"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -7213,17 +8422,20 @@
    "acuerdo_segunda_voz": true
   },
   {
-   "forma": "vi",
+   "forma": "yāvassa",
    "frec": 37,
    "corte_iebh": [
-    "v",
-    "i"
+    "Yāv",
+    "assa"
    ],
-   "marca": "final consonántica",
-   "fuente": "therigatha-VI-151-156-Anopamātherīgāthāvaṇṇanā.txt",
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
-   "componentes_motor": [],
-   "acuerdo_segunda_voz": false
+   "componentes_motor": [
+    "yāva",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "bhavāmahaṃ",
@@ -7242,17 +8454,20 @@
    "acuerdo_segunda_voz": true
   },
   {
-   "forma": "ga",
+   "forma": "ātappamanvāya",
    "frec": 36,
    "corte_iebh": [
-    "g",
-    "A"
+    "ātappam",
+    "anvāya"
    ],
    "marca": "final consonántica",
-   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": null,
-   "componentes_motor": [],
-   "acuerdo_segunda_voz": false
+   "componentes_motor": [
+    "ātappaṃ",
+    "anvāya"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "ariyasaccanti",
@@ -7351,6 +8566,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ādīti",
+   "frec": 35,
+   "corte_iebh": [
+    "ādī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ādi",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "akusalampi",
+   "frec": 34,
+   "corte_iebh": [
+    "akusalam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "akusalaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "bhagavantameva",
    "frec": 34,
    "corte_iebh": [
@@ -7365,6 +8612,22 @@
     "eva"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "mukhanti",
+   "frec": 34,
+   "corte_iebh": [
+    "Mukhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "mukhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "yadariyo",
@@ -7395,6 +8658,22 @@
    "componentes_motor": [
     "gantuṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nevasaññīnāsaññīvādā",
+   "frec": 33,
+   "corte_iebh": [
+    "n",
+    "evasaññīnāsaññīvādā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nevasaññīnāsaññī",
+    "ovādā"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -7607,6 +8886,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "aññeva",
+   "frec": 31,
+   "corte_iebh": [
+    "aññe",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "añña",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cetesu",
+   "frec": 31,
+   "corte_iebh": [
+    "c",
+    "etesu"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "etesu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "chavasarīrassetaṃ",
    "frec": 31,
    "corte_iebh": [
@@ -7651,6 +8962,22 @@
    "componentes_motor": [
     "svāyaṃ",
     "idha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sīghameva",
+   "frec": 31,
+   "corte_iebh": [
+    "sīgham",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sīghaṃ",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -7703,6 +9030,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "araññanti",
+   "frec": 30,
+   "corte_iebh": [
+    "Araññan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "araññaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cetetīti",
+   "frec": 30,
+   "corte_iebh": [
+    "cetetī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ceteti",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "domanassanti",
    "frec": 30,
    "corte_iebh": [
@@ -7751,6 +9110,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "khaṇeneva",
+   "frec": 30,
+   "corte_iebh": [
+    "khaṇen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "khaṇena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "kiñhi",
    "frec": 30,
    "corte_iebh": [
@@ -7763,6 +9138,38 @@
    "componentes_motor": [
     "kiṃ",
     "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "muttova",
+   "frec": 30,
+   "corte_iebh": [
+    "mutto",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "mutto",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "padhānañca",
+   "frec": 30,
+   "corte_iebh": [
+    "padhānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "padhānaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -7826,6 +9233,22 @@
    "senal": "segura",
    "componentes_motor": [
     "vedayāmī",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "adhiṭṭhānanti",
+   "frec": 29,
+   "corte_iebh": [
+    "adhiṭṭhānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "adhiṭṭhānaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -7895,6 +9318,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vacaneneva",
+   "frec": 29,
+   "corte_iebh": [
+    "vacanen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vacanena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "vattumāraddho",
    "frec": 29,
    "corte_iebh": [
@@ -7907,6 +9346,22 @@
    "componentes_motor": [
     "vattuṃ",
     "āraddho"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ādimeva",
+   "frec": 29,
+   "corte_iebh": [
+    "ādim",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ādima",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -7987,6 +9442,22 @@
    "componentes_motor": [
     "purebhattaṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samatthañca",
+   "frec": 28,
+   "corte_iebh": [
+    "samatthañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samatthaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -8087,6 +9558,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ekenākārena",
+   "frec": 27,
+   "corte_iebh": [
+    "eken",
+    "ākārena"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "ekena",
+    "ākārena"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "nagaranti",
    "frec": 27,
    "corte_iebh": [
@@ -8151,6 +9638,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ākāsoti",
+   "frec": 27,
+   "corte_iebh": [
+    "ākāso",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ākāso",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "ekikāva",
    "frec": 26,
    "corte_iebh": [
@@ -8165,6 +9668,38 @@
     "eva"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kimāgamma",
+   "frec": 26,
+   "corte_iebh": [
+    "kim",
+    "āgamma"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "kime",
+    "āgamma"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kimārabbha",
+   "frec": 26,
+   "corte_iebh": [
+    "kim",
+    "ārabbha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "kime",
+    "ārabbha"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "lokiyanti",
@@ -8199,6 +9734,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "anuyogamanvāya",
+   "frec": 25,
+   "corte_iebh": [
+    "anuyogam",
+    "anvāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "anuyogaṃ",
+    "anvāya"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "appamādamanvāya",
+   "frec": 25,
+   "corte_iebh": [
+    "appamādam",
+    "anvāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "apa",
+    "pamādamanvāya"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "atittāva",
    "frec": 25,
    "corte_iebh": [
@@ -8211,6 +9778,22 @@
    "componentes_motor": [
     "atittā",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "evamīdisesu",
+   "frec": 25,
+   "corte_iebh": [
+    "evam",
+    "īdisesu"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "evamīdisa",
+    "esu"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -8263,6 +9846,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "padhānamanvāya",
+   "frec": 25,
+   "corte_iebh": [
+    "padhānam",
+    "anvāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "padhānaṃ",
+    "anvāya"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "pānīyañca",
    "frec": 25,
    "corte_iebh": [
@@ -8279,6 +9878,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "sammāmanasikāramanvāya",
+   "frec": 25,
+   "corte_iebh": [
+    "sammāmanasikāram",
+    "anvāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "sammāmanasikāramana",
+    "vāya"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "sattāhampi",
    "frec": 25,
    "corte_iebh": [
@@ -8291,6 +9906,22 @@
    "componentes_motor": [
     "sattāhaṃ",
     "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vacīsaṅkhāroti",
+   "frec": 25,
+   "corte_iebh": [
+    "vacīsaṅkhāro",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vacīsaṅkhāro",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -8323,6 +9954,22 @@
    "componentes_motor": [
     "yasmiṃ",
     "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "yathāvutteneva",
+   "frec": 25,
+   "corte_iebh": [
+    "yathāvutten",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "yathāvuttena",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -8375,6 +10022,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ekapadampi",
+   "frec": 24,
+   "corte_iebh": [
+    "ekapadam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "ekapadaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "heso",
    "frec": 24,
    "corte_iebh": [
@@ -8389,6 +10052,22 @@
     "eso"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kammaṭṭhānanti",
+   "frec": 24,
+   "corte_iebh": [
+    "kammaṭṭhānan",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kammaṭṭhānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "khettanti",
@@ -8419,6 +10098,54 @@
    "componentes_motor": [
     "pattiko",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tenevākārena",
+   "frec": 24,
+   "corte_iebh": [
+    "ten",
+    "ev’ākārena"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "teneva",
+    "ākārena"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vimokkhantikametaṃ",
+   "frec": 24,
+   "corte_iebh": [
+    "vimokkhantikam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vimokkhanti",
+    "ekametaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "appanāti",
+   "frec": 23,
+   "corte_iebh": [
+    "appanā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "appanā",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -8455,6 +10182,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "evañhissa",
+   "frec": 23,
+   "corte_iebh": [
+    "Evañ",
+    "hi’ssa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "evañhi",
+    "issa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "itarañca",
    "frec": 23,
    "corte_iebh": [
@@ -8485,6 +10228,38 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nevantavā",
+   "frec": 23,
+   "corte_iebh": [
+    "N",
+    "ev’antavā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "neva",
+    "antavā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nimittañca",
+   "frec": 23,
+   "corte_iebh": [
+    "nimittañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nimittaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "thūpañca",
@@ -8551,6 +10326,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "evamevāyaṃ",
+   "frec": 22,
+   "corte_iebh": [
+    "evam",
+    "evāyaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "evameva",
+    "āyaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "kammeneva",
    "frec": 22,
    "corte_iebh": [
@@ -8610,6 +10401,22 @@
    "senal": "segura",
    "componentes_motor": [
     "adhigataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "arūpanti",
+   "frec": 21,
+   "corte_iebh": [
+    "arūpan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "arūpaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -8679,6 +10486,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "paṇītañca",
+   "frec": 21,
+   "corte_iebh": [
+    "paṇītañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paṇītaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "pāsādamāruyha",
    "frec": 21,
    "corte_iebh": [
@@ -8693,6 +10516,22 @@
     "āruyha"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "rukkhamūlanti",
+   "frec": 21,
+   "corte_iebh": [
+    "Rukkhamūlan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "rukkhamūlaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "tiṭṭhatetaṃ",
@@ -8743,20 +10582,20 @@
    "acuerdo_segunda_voz": false
   },
   {
-   "forma": "andhe",
+   "forma": "dasannampi",
    "frec": 20,
    "corte_iebh": [
-    "and",
-    "he"
+    "Dasannam",
+    "pi"
    ],
    "marca": "final consonántica",
-   "fuente": "therigatha-V-102-106-Soṇātherīgāthāvaṇṇanā.txt",
-   "senal": null,
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
    "componentes_motor": [
-    "andu",
-    "he"
+    "dasannaṃ",
+    "api"
    ],
-   "acuerdo_segunda_voz": true
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "daṇḍamolubbha",
@@ -8851,6 +10690,22 @@
    "componentes_motor": [
     "passāma",
     "ahaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "payogañca",
+   "frec": 20,
+   "corte_iebh": [
+    "payogañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "payogaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -8967,6 +10822,54 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "kāyikañca",
+   "frec": 19,
+   "corte_iebh": [
+    "kāyikañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kāyikaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nevasaññīnāsaññiṃ",
+   "frec": 19,
+   "corte_iebh": [
+    "n",
+    "evasaññīnāsaññiṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nevasaññi",
+    "nāsaññiṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukhavihārīti",
+   "frec": 19,
+   "corte_iebh": [
+    "sukhavihārī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sukhavihārī",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tameko",
    "frec": 19,
    "corte_iebh": [
@@ -8979,6 +10882,22 @@
    "componentes_motor": [
     "tama",
     "eko"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tassime",
+   "frec": 19,
+   "corte_iebh": [
+    "Tass",
+    "ime"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "tassa",
+    "ime"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -9138,6 +11057,22 @@
    "senal": "segura",
    "componentes_motor": [
     "maññatha",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pallaṅkanti",
+   "frec": 18,
+   "corte_iebh": [
+    "pallaṅkan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pallaṅkaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -9399,6 +11334,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "pabhassaramidaṃ",
+   "frec": 17,
+   "corte_iebh": [
+    "'pabhassaram",
+    "idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pabhassarā",
+    "midaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "rūpasmimpi",
    "frec": 17,
    "corte_iebh": [
@@ -9490,6 +11441,22 @@
    "senal": "segura",
    "componentes_motor": [
     "upasampadaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "agāranti",
+   "frec": 16,
+   "corte_iebh": [
+    "Agāran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "agāraṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -9799,6 +11766,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "pavattateva",
+   "frec": 15,
+   "corte_iebh": [
+    "pavattat",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pavattata",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "pādakajjhānameva",
    "frec": 15,
    "corte_iebh": [
@@ -9827,6 +11810,22 @@
    "componentes_motor": [
     "rāmassa",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "santañca",
+   "frec": 15,
+   "corte_iebh": [
+    "santañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "santaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -9943,6 +11942,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "atthasaṃhitanti",
+   "frec": 14,
+   "corte_iebh": [
+    "atthasaṃhitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "atthasaṃhitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "ayamānisaṃso",
    "frec": 14,
    "corte_iebh": [
@@ -9971,6 +11986,22 @@
    "componentes_motor": [
     "aṭṭhiṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cattārīsampi",
+   "frec": 14,
+   "corte_iebh": [
+    "cattārīsam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "cattārīsaṃ",
+    "pi"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -10037,6 +12068,38 @@
     "akāsī"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gocarañca",
+   "frec": 14,
+   "corte_iebh": [
+    "gocarañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gocaraṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "idhevāhaṃ",
+   "frec": 14,
+   "corte_iebh": [
+    "Idh",
+    "evāhaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "idheva",
+    "haṃ"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "khaṇḍiccanti",
@@ -10183,6 +12246,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "sabbesaññeva",
+   "frec": 14,
+   "corte_iebh": [
+    "Sabbesañ",
+    "ñeva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sabbesaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "sahassamapi",
    "frec": 14,
    "corte_iebh": [
@@ -10231,6 +12310,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "suññanti",
+   "frec": 14,
+   "corte_iebh": [
+    "Suññan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "suññaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tathevāyaṃ",
    "frec": 14,
    "corte_iebh": [
@@ -10245,6 +12340,22 @@
     "evāyaṃ"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "īdisanti",
+   "frec": 14,
+   "corte_iebh": [
+    "īdisan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "īdisaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "antakiriyāyāti",
@@ -10343,6 +12454,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "etamadhivacanaṃ",
+   "frec": 13,
+   "corte_iebh": [
+    "etam",
+    "adhivacanaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etaṃ",
+    "adhivacanaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "ettheso",
    "frec": 13,
    "corte_iebh": [
@@ -10407,6 +12534,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "nevāyaṃ",
+   "frec": 13,
+   "corte_iebh": [
+    "n",
+    "evāyaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "na",
+    "evāyaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pacchimanti",
+   "frec": 13,
+   "corte_iebh": [
+    "pacchiman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pacchimaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "padhānamanuyuñja",
    "frec": 13,
    "corte_iebh": [
@@ -10435,6 +12594,22 @@
    "componentes_motor": [
     "pana",
     "idha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paritassitavipphanditameva",
+   "frec": 13,
+   "corte_iebh": [
+    "paritassitavipphanditam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "paritassitavipphanditaṃ",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -10583,6 +12758,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "visesamadhigacchati",
+   "frec": 13,
+   "corte_iebh": [
+    "visesam",
+    "adhigacchati"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "visesaṃ",
+    "adhigacchati"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "assāsapassāsānañca",
+   "frec": 12,
+   "corte_iebh": [
+    "assāsapassāsānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "assāsapassāsānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "asātanti",
    "frec": 12,
    "corte_iebh": [
@@ -10594,6 +12801,22 @@
    "senal": "segura",
    "componentes_motor": [
     "asātaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "bhikkhusaṃghañcāti",
+   "frec": 12,
+   "corte_iebh": [
+    "bhikkhusaṃghañ",
+    "cā’ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "bhikkhusaṃghañca",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -10839,6 +13062,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "upaṭṭhānampi",
+   "frec": 12,
+   "corte_iebh": [
+    "upaṭṭhānam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "upaṭṭhānaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "yenime",
    "frec": 12,
    "corte_iebh": [
@@ -11015,6 +13254,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ika",
+   "frec": 11,
+   "corte_iebh": [
+    "I",
+    "Ka"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ī",
+    "ka"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "itthanti",
    "frec": 11,
    "corte_iebh": [
@@ -11101,8 +13356,8 @@
     "pahātabban",
     "ti"
    ],
-   "marca": "apóstrofo",
-   "fuente": "Dhammacakkappavattana-Sutta-Pali-Esp.txt",
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "pahātabbaṃ",
@@ -11239,6 +13494,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vīriyampi",
+   "frec": 11,
+   "corte_iebh": [
+    "vīriyam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vīriyaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yadariyā",
+   "frec": 11,
+   "corte_iebh": [
+    "yad",
+    "ariyā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yada",
+    "ariyā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "anaññanti",
    "frec": 10,
    "corte_iebh": [
@@ -11269,6 +13556,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anārammaṇamekacittassa",
+   "frec": 10,
+   "corte_iebh": [
+    "anārammaṇam",
+    "ekacittassa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "anārammaṇaṃ",
+    "ekacittassa"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "asaṃkiliṭṭhanti",
@@ -11335,6 +13638,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "gacchantānañca",
+   "frec": 10,
+   "corte_iebh": [
+    "gacchantānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gacchantānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "gaṇhitunti",
    "frec": 10,
    "corte_iebh": [
@@ -11397,6 +13716,38 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "maggañāṇañhi",
+   "frec": 10,
+   "corte_iebh": [
+    "maggañāṇañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "maggañāṇaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "majjhañca",
+   "frec": 10,
+   "corte_iebh": [
+    "majjhañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "majjhaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "makkaṭakova",
@@ -11479,6 +13830,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "rukkhamūlañca",
+   "frec": 10,
+   "corte_iebh": [
+    "rukkhamūlañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "rukkhamūlaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "satinti",
+   "frec": 10,
+   "corte_iebh": [
+    "satin",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "satiṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "tamevārammaṇaṃ",
    "frec": 10,
    "corte_iebh": [
@@ -11491,6 +13874,22 @@
    "componentes_motor": [
     "tameva",
     "ārammaṇaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tasmānena",
+   "frec": 10,
+   "corte_iebh": [
+    "Tasmā",
+    "nena"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "tasa",
+    "mānena"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -11509,6 +13908,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uppajjanteva",
+   "frec": 10,
+   "corte_iebh": [
+    "uppajjant",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uppajjanta",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "uppajjeyyunti",
@@ -11543,6 +13958,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "vikkhambhitāneva",
+   "frec": 10,
+   "corte_iebh": [
+    "vikkhambhitān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "vikkhambhitāni",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "vinīlameva",
    "frec": 10,
    "corte_iebh": [
@@ -11571,6 +14002,22 @@
    "componentes_motor": [
     "visa",
     "uddhāsiṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vuṭṭhahissanti",
+   "frec": 10,
+   "corte_iebh": [
+    "vuṭṭhahissan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vuṭṭhahissaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -11671,6 +14118,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "cittañcassa",
+   "frec": 9,
+   "corte_iebh": [
+    "cittañ",
+    "c’assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "cita",
+    "tañcassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "cittañhi",
    "frec": 9,
    "corte_iebh": [
@@ -11751,6 +14214,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "kenākārena",
+   "frec": 9,
+   "corte_iebh": [
+    "ken",
+    "ākārena"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kena",
+    "ākārena"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "khandhāsaṃ",
    "frec": 9,
    "corte_iebh": [
@@ -11799,6 +14278,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "maggañāṇampi",
+   "frec": 9,
+   "corte_iebh": [
+    "maggañāṇam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "maggañāṇaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "mahaggatanti",
    "frec": 9,
    "corte_iebh": [
@@ -11810,6 +14305,22 @@
    "senal": "segura",
    "componentes_motor": [
     "mahaggataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "mukhanimittanti",
+   "frec": 9,
+   "corte_iebh": [
+    "mukhanimittan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "mukhanimittaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -11959,6 +14470,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "sassatisamanti",
+   "frec": 9,
+   "corte_iebh": [
+    "sassatisaman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sassatisamaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "suviññeyyāva",
    "frec": 9,
    "corte_iebh": [
@@ -12039,6 +14566,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "upaṭṭhitassa",
+   "frec": 9,
+   "corte_iebh": [
+    "upaṭṭhit",
+    "assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "upa",
+    "aṭṭhitassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "upekkhanti",
    "frec": 9,
    "corte_iebh": [
@@ -12071,6 +14614,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "āgacchantānañca",
+   "frec": 9,
+   "corte_iebh": [
+    "āgacchantānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "āgacchantānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "ānandanti",
    "frec": 9,
    "corte_iebh": [
@@ -12085,6 +14644,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "adhiṭṭhānasampannañca",
+   "frec": 8,
+   "corte_iebh": [
+    "adhiṭṭhānasampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "adhiṭṭhānasampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "aggiñca",
@@ -12133,6 +14708,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "bījabījameva",
+   "frec": 8,
+   "corte_iebh": [
+    "bījabījam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "bījabījaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "chedananti",
@@ -12519,6 +15110,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ahañce",
+   "frec": 7,
+   "corte_iebh": [
+    "Ahañ",
+    "ce"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ahaṃ",
+    "ce"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "alamidaṃ",
    "frec": 7,
    "corte_iebh": [
@@ -12595,6 +15202,22 @@
    "componentes_motor": [
     "apa",
     "āvuso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ariyaphalañca",
+   "frec": 7,
+   "corte_iebh": [
+    "ariyaphalañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ariyaphalaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -12727,6 +15350,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "nirodhasamāpannānanti",
+   "frec": 7,
+   "corte_iebh": [
+    "nirodhasamāpannānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nirodhasamāpannānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "nīlasāṭakapārutasseva",
    "frec": 7,
    "corte_iebh": [
@@ -12743,6 +15382,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "parivaṭumoti",
+   "frec": 7,
+   "corte_iebh": [
+    "parivaṭumo",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "parivaṭumo",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "pariññātameva",
    "frec": 7,
    "corte_iebh": [
@@ -12755,6 +15410,22 @@
    "componentes_motor": [
     "pariññātaṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paññāsampannañca",
+   "frec": 7,
+   "corte_iebh": [
+    "paññāsampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "paññāsampannaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -12839,6 +15510,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "saddhāsampannañca",
+   "frec": 7,
+   "corte_iebh": [
+    "saddhāsampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "saddhāsampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "samathova",
    "frec": 7,
    "corte_iebh": [
@@ -12871,6 +15558,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "samādhisampannañca",
+   "frec": 7,
+   "corte_iebh": [
+    "samādhisampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "samādhisampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "sannisinnapubbañceva",
    "frec": 7,
    "corte_iebh": [
@@ -12883,6 +15586,70 @@
    "componentes_motor": [
     "sannisinnapubbaṃ",
     "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "satisampannañca",
+   "frec": 7,
+   "corte_iebh": [
+    "satisampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "satisampa",
+    "annañca"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "saṇikameva",
+   "frec": 7,
+   "corte_iebh": [
+    "saṇikam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "saṇikaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "secananti",
+   "frec": 7,
+   "corte_iebh": [
+    "secanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "secanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukhamiti",
+   "frec": 7,
+   "corte_iebh": [
+    "sukham",
+    "iti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sukhaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -12951,6 +15718,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "upacārañca",
+   "frec": 7,
+   "corte_iebh": [
+    "upacārañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "upacāraṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "vikasamānamiva",
    "frec": 7,
    "corte_iebh": [
@@ -13015,6 +15798,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vīriyasampannañca",
+   "frec": 7,
+   "corte_iebh": [
+    "vīriyasampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vīriyasampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "yathāgato",
    "frec": 7,
    "corte_iebh": [
@@ -13059,6 +15858,22 @@
    "componentes_motor": [
     "yathāṭhitā",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yevassa",
+   "frec": 7,
+   "corte_iebh": [
+    "yev",
+    "assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ya",
+    "evassa"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -13127,6 +15942,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "appavattimeva",
+   "frec": 6,
+   "corte_iebh": [
+    "appavattim",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "appavattiṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "arūpāvacarameva",
    "frec": 6,
    "corte_iebh": [
@@ -13157,6 +15988,22 @@
     "ojavaṃ"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "asubhabhāvanānuyogamanuyuttā",
+   "frec": 6,
+   "corte_iebh": [
+    "Asubhabhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "asubhabhāvana",
+    "anuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "asubhampi",
@@ -13207,6 +16054,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ayampana",
+   "frec": 6,
+   "corte_iebh": [
+    "Ayam",
+    "pana"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ayaṃ",
+    "pana"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "bahutaranti",
    "frec": 6,
    "corte_iebh": [
@@ -13237,6 +16100,38 @@
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "bhikkhusaṃghañcā",
+   "frec": 6,
+   "corte_iebh": [
+    "bhikkhusaṃghañ",
+    "cā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "bhikkhusaṃghaṃ",
+    "cā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "bhāvanānuyogamanuyuttā",
+   "frec": 6,
+   "corte_iebh": [
+    "bhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "bhāvana",
+    "anuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "byañjanamevettha",
@@ -13287,6 +16182,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "etenetaṃ",
+   "frec": 6,
+   "corte_iebh": [
+    "eten",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "etena",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gaṇanāvaseneva",
+   "frec": 6,
+   "corte_iebh": [
+    "gaṇanāvasen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "gaṇana",
+    "vaseneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "ghanavinibbhogādidassanatthanti",
    "frec": 6,
    "corte_iebh": [
@@ -13301,6 +16228,22 @@
     "ādidassanatthanti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "imehākārehi",
+   "frec": 6,
+   "corte_iebh": [
+    "imeh",
+    "ākārehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "imehi",
+    "ākārehi"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "jātosi",
@@ -13349,6 +16292,38 @@
     "aparittanti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nevidaṃ",
+   "frec": 6,
+   "corte_iebh": [
+    "n",
+    "ev’idaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "neva",
+    "idaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nimittameva",
+   "frec": 6,
+   "corte_iebh": [
+    "nimittam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nimittaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "nīharantova",
@@ -13415,6 +16390,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "patodañca",
+   "frec": 6,
+   "corte_iebh": [
+    "patodañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "patodaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "paṇidhānamakāsi",
    "frec": 6,
    "corte_iebh": [
@@ -13429,6 +16420,22 @@
     "akāsi"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paṭipadāvisuddhipakkhandañceva",
+   "frec": 6,
+   "corte_iebh": [
+    "paṭipadāvisuddhipakkhandañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paṭipadāvisuddhipakkhandañca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "phalamuttaman",
@@ -13703,6 +16710,54 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "ācariyampi",
+   "frec": 6,
+   "corte_iebh": [
+    "ācariyam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ācariyaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ādikalyāṇañceva",
+   "frec": 6,
+   "corte_iebh": [
+    "ādikalyāṇañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ādikalyāṇañca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ānanti",
+   "frec": 6,
+   "corte_iebh": [
+    "Ānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "āraddhavīriyasseva",
    "frec": 6,
    "corte_iebh": [
@@ -13751,6 +16806,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "amanasikāramattameva",
+   "frec": 5,
+   "corte_iebh": [
+    "amanasikāramattam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "amanasikārā",
+    "mattameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "amatadundubhinti",
    "frec": 5,
    "corte_iebh": [
@@ -13763,6 +16834,22 @@
    "componentes_motor": [
     "amatadundubhiṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anantarasadisameva",
+   "frec": 5,
+   "corte_iebh": [
+    "anantarasadisam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "anantara",
+    "asadisameva"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -13810,6 +16897,22 @@
    "senal": "segura",
    "componentes_motor": [
     "antarahitaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "araññañca",
+   "frec": 5,
+   "corte_iebh": [
+    "araññañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "araññaṃ",
     "ca"
    ],
    "acuerdo_segunda_voz": true
@@ -13879,6 +16982,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "bandheyyevaṃ",
+   "frec": 5,
+   "corte_iebh": [
+    "Bandheyy",
+    "evaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "bandheyya",
+    "evaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "buddhantarampi",
    "frec": 5,
    "corte_iebh": [
@@ -13906,6 +17025,38 @@
    "senal": "segura",
    "componentes_motor": [
     "cakkavattikolāhalaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cevetassa",
+   "frec": 5,
+   "corte_iebh": [
+    "c",
+    "ev’etassa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ceva",
+    "etassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cittasaṅkhāranti",
+   "frec": 5,
+   "corte_iebh": [
+    "cittasaṅkhāran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cittasaṅkhāraṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -14023,6 +17174,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "evamāgato",
+   "frec": 5,
+   "corte_iebh": [
+    "evam",
+    "āgato"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "evaṃ",
+    "āgato"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gaṇetabbanti",
+   "frec": 5,
+   "corte_iebh": [
+    "gaṇetabban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gaṇetabbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "gomayañca",
    "frec": 5,
    "corte_iebh": [
@@ -14099,6 +17282,22 @@
    "componentes_motor": [
     "jātappasāde",
     "āhaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kammaṭṭhānasabhāvūpadhāraṇanti",
+   "frec": 5,
+   "corte_iebh": [
+    "kammaṭṭhānasabhāvūpadhāraṇan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kammaṭṭhānasabhāva",
+    "upadhāraṇanti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -14196,6 +17395,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "lokiyeneva",
+   "frec": 5,
+   "corte_iebh": [
+    "lokiyen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "lokiyena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "natthānanda",
    "frec": 5,
    "corte_iebh": [
@@ -14208,6 +17423,22 @@
    "componentes_motor": [
     "na",
     "atthānanda"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nimittamidaṃ",
+   "frec": 5,
+   "corte_iebh": [
+    "nimittam",
+    "idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "nimittā",
+    "midaṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -14244,6 +17475,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "padumamiva",
+   "frec": 5,
+   "corte_iebh": [
+    "padumam",
+    "iva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "padumaṃ",
+    "iva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "pajaheyyanti",
    "frec": 5,
    "corte_iebh": [
@@ -14258,6 +17505,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pallaṅkamābhujitvā",
+   "frec": 5,
+   "corte_iebh": [
+    "pallaṅkam",
+    "ābhujitvā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pallaṅkaṃ",
+    "ābhujitvā"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "paviṭṭhohaṃ",
@@ -14404,6 +17667,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "samādhisseva",
+   "frec": 5,
+   "corte_iebh": [
+    "samādhiss",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "samādhissa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samāhitameva",
+   "frec": 5,
+   "corte_iebh": [
+    "samāhitam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "samāhitaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "samūhavaseneva",
    "frec": 5,
    "corte_iebh": [
@@ -14436,6 +17731,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "sitāva",
+   "frec": 5,
+   "corte_iebh": [
+    "sitā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sitā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "subhampi",
    "frec": 5,
    "corte_iebh": [
@@ -14466,6 +17777,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukhasampannañca",
+   "frec": 5,
+   "corte_iebh": [
+    "sukhasampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "sukhasampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "sāhanti",
@@ -14548,6 +17875,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "upekkhānubrūhitañca",
+   "frec": 5,
+   "corte_iebh": [
+    "upekkhānubrūhitañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "upekkhānubrūhitaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "upekkhāva",
    "frec": 5,
    "corte_iebh": [
@@ -14612,6 +17955,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vivekapabbhāranti",
+   "frec": 5,
+   "corte_iebh": [
+    "vivekapabbhāran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vivekapabbhāraṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "vuttalakkhaṇova",
    "frec": 5,
    "corte_iebh": [
@@ -14656,6 +18015,22 @@
    "componentes_motor": [
     "vīriyena",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "yehākārehi",
+   "frec": 5,
+   "corte_iebh": [
+    "yeh",
+    "ākārehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "yehi",
+    "ākārehi"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -14788,6 +18163,86 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "antojālīkatāva",
+   "frec": 4,
+   "corte_iebh": [
+    "antojālīkatā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "antojālīkatā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anuyuttāti",
+   "frec": 4,
+   "corte_iebh": [
+    "anuyuttā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "anuyuttā",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "apagatanti",
+   "frec": 4,
+   "corte_iebh": [
+    "apagatan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "apagataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "apariyantoti",
+   "frec": 4,
+   "corte_iebh": [
+    "apariyanto",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "apariyanto",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "apānanti",
+   "frec": 4,
+   "corte_iebh": [
+    "Apānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "apānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "asevihaṃ",
    "frec": 4,
    "corte_iebh": [
@@ -14884,6 +18339,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "bhāventasseva",
+   "frec": 4,
+   "corte_iebh": [
+    "bhāventass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "bhāventassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "bhāvitova",
    "frec": 4,
    "corte_iebh": [
@@ -14943,6 +18414,22 @@
    "senal": "segura",
    "componentes_motor": [
     "cariṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cittasaṅkhārāti",
+   "frec": 4,
+   "corte_iebh": [
+    "cittasaṅkhārā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cittasaṅkhārā",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -15042,6 +18529,22 @@
     "etaṃ"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "gaṇetabbameva",
+   "frec": 4,
+   "corte_iebh": [
+    "gaṇetabbam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "gaṇetabbaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "idamidhādhippetaṃ",
@@ -15172,6 +18675,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "majjhekalyāṇañceva",
+   "frec": 4,
+   "corte_iebh": [
+    "majjhekalyāṇañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "majjhekalyāṇaṃ",
+    "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "mamāha",
    "frec": 4,
    "corte_iebh": [
@@ -15184,6 +18703,22 @@
    "componentes_motor": [
     "mama",
     "iha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "manasikāranti",
+   "frec": 4,
+   "corte_iebh": [
+    "manasikāran",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "manasikāraṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -15202,6 +18737,22 @@
     "āsi"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "navanavameva",
+   "frec": 4,
+   "corte_iebh": [
+    "navanavam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "navanavaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "nhārusambandhanti",
@@ -15284,6 +18835,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "pabbhāranti",
+   "frec": 4,
+   "corte_iebh": [
+    "pabbhāran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pabbhāraṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "pacchinnameva",
    "frec": 4,
    "corte_iebh": [
@@ -15332,6 +18899,54 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "paricchinnameva",
+   "frec": 4,
+   "corte_iebh": [
+    "paricchinnam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paricchinnaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "parisuddhameva",
+   "frec": 4,
+   "corte_iebh": [
+    "parisuddham",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "parisuddhaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pariyosānakalyāṇañceva",
+   "frec": 4,
+   "corte_iebh": [
+    "pariyosānakalyāṇañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pariyosānakalyāṇaṃ",
+    "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "pavapanti",
    "frec": 4,
    "corte_iebh": [
@@ -15346,6 +18961,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pañcahupādānakkhandhehi",
+   "frec": 4,
+   "corte_iebh": [
+    "pañcah",
+    "upādānakkhandhehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pañcahi",
+    "upādānakkhandhehi"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "pettha",
@@ -15408,6 +19039,22 @@
    "componentes_motor": [
     "piyasabhāvaṃ",
     "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pītisampannañca",
+   "frec": 4,
+   "corte_iebh": [
+    "pītisampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pītisampannaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -15508,6 +19155,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "sampajānasseva",
+   "frec": 4,
+   "corte_iebh": [
+    "sampajānass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sampajānassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "samudayampi",
    "frec": 4,
    "corte_iebh": [
@@ -15520,6 +19183,22 @@
    "componentes_motor": [
     "samudayaṃ",
     "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "santañceva",
+   "frec": 4,
+   "corte_iebh": [
+    "santañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "santañca",
+    "eva"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -15600,6 +19279,22 @@
    "componentes_motor": [
     "sukhaṃ",
     "āsīnaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sukhumañca",
+   "frec": 4,
+   "corte_iebh": [
+    "sukhumañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sukhumaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -15712,6 +19407,22 @@
    "componentes_motor": [
     "tama",
     "uyyānaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tassupaṭṭhāti",
+   "frec": 4,
+   "corte_iebh": [
+    "tass",
+    "upaṭṭhāti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tassa",
+    "upaṭṭhāti"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -15844,6 +19555,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "vicārasampannañca",
+   "frec": 4,
+   "corte_iebh": [
+    "vicārasampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vicārasampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "vihārampi",
    "frec": 4,
    "corte_iebh": [
@@ -15892,6 +19619,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vitakkasampannañceva",
+   "frec": 4,
+   "corte_iebh": [
+    "vitakkasampannañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vitakkasampannañcā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "vītadosanti",
    "frec": 4,
    "corte_iebh": [
@@ -15908,6 +19651,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "yathānisinneneva",
+   "frec": 4,
+   "corte_iebh": [
+    "yathānisinnen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "yatha",
+    "nisinneneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "āgaccheyyunti",
    "frec": 4,
    "corte_iebh": [
@@ -15915,7 +19674,7 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "āgaccheyyuṃ",
@@ -15952,6 +19711,38 @@
    "componentes_motor": [
     "amittānaṃ",
     "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "aniccasaññābhāvanānuyogamanuyuttā",
+   "frec": 3,
+   "corte_iebh": [
+    "Aniccasaññābhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "aniccasañña",
+    "bhāvanānuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anupadavaṇṇanānayeneva",
+   "frec": 3,
+   "corte_iebh": [
+    "anupadavaṇṇanānayen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "anupadavaṇṇana",
+    "nayeneva"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -16148,6 +19939,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "cetasikañcā",
+   "frec": 3,
+   "corte_iebh": [
+    "cetasikañ",
+    "cā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "cetasikaṃ",
+    "cā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "cetopariccañāṇañca",
    "frec": 3,
    "corte_iebh": [
@@ -16228,6 +20035,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "dhātucariyānukūlañca",
+   "frec": 3,
+   "corte_iebh": [
+    "dhātucariyānukūlañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dhātucariyānukūlaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "diṭṭhipāsañca",
    "frec": 3,
    "corte_iebh": [
@@ -16304,22 +20127,6 @@
    "componentes_motor": [
     "ghāsacchādanā",
     "mattameva"
-   ],
-   "acuerdo_segunda_voz": false
-  },
-  {
-   "forma": "hada",
-   "frec": 3,
-   "corte_iebh": [
-    "had",
-    "a"
-   ],
-   "marca": "final consonántica",
-   "fuente": "therigatha-VI-157-162-Mahāpajāpatigotamītherīgāthāvaṇṇanā.txt",
-   "senal": "posible",
-   "componentes_motor": [
-    "ha",
-    "uda"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -16484,6 +20291,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "kāyacittānampi",
+   "frec": 3,
+   "corte_iebh": [
+    "kāyacittānam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kāyacittānaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "lakkhaṇasampannañca",
+   "frec": 3,
+   "corte_iebh": [
+    "lakkhaṇasampannañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "lakkhaṇasampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "maccumaraṇanti",
    "frec": 3,
    "corte_iebh": [
@@ -16596,22 +20435,6 @@
    "acuerdo_segunda_voz": true
   },
   {
-   "forma": "ora",
-   "frec": 3,
-   "corte_iebh": [
-    "or",
-    "a"
-   ],
-   "marca": "final consonántica",
-   "fuente": "therigatha-V-082-086-Sundarīnandātherīgāthāvaṇṇanā.txt",
-   "senal": null,
-   "componentes_motor": [
-    "ava",
-    "ra"
-   ],
-   "acuerdo_segunda_voz": false
-  },
-  {
    "forma": "pabhāvitametan",
    "frec": 3,
    "corte_iebh": [
@@ -16704,6 +20527,54 @@
    "componentes_motor": [
     "parisiñcituṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "passasitabbameva",
+   "frec": 3,
+   "corte_iebh": [
+    "passasitabbam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "passasitabbaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pañcabhāganti",
+   "frec": 3,
+   "corte_iebh": [
+    "pañcabhāgan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pañcabhi",
+    "aganti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "paññāpatodañca",
+   "frec": 3,
+   "corte_iebh": [
+    "paññāpatodañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "pañña",
+    "patodañca"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -16816,6 +20687,22 @@
    "componentes_motor": [
     "puttasokena",
     "ahaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "rasmiñca",
+   "frec": 3,
+   "corte_iebh": [
+    "rasmiñ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "rasmiṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -17060,6 +20947,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "susamanti",
+   "frec": 3,
+   "corte_iebh": [
+    "Susaman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "susamaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "sīlavantettha",
    "frec": 3,
    "corte_iebh": [
@@ -17088,6 +20991,54 @@
    "componentes_motor": [
     "sūciṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sūcipāsavedhanampi",
+   "frec": 3,
+   "corte_iebh": [
+    "Sūcipāsavedhanam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sūcipāsavedhanaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tannissayañca",
+   "frec": 3,
+   "corte_iebh": [
+    "tannissayañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tana",
+    "nissayañca"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tatonena",
+   "frec": 3,
+   "corte_iebh": [
+    "Tato",
+    "nena"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "tata",
+    "onena"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -17152,6 +21103,22 @@
    "componentes_motor": [
     "udayantaṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "upakkiliṭṭhanti",
+   "frec": 3,
+   "corte_iebh": [
+    "upakkiliṭṭhan",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "upakkiliṭṭhaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -17332,6 +21299,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vuttānukkameneva",
+   "frec": 3,
+   "corte_iebh": [
+    "vuttānukkamen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vuttānukkamena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "yadicchāmi",
    "frec": 3,
    "corte_iebh": [
@@ -17410,6 +21393,22 @@
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ārammaṇapariggahūpāyañca",
+   "frec": 3,
+   "corte_iebh": [
+    "ārammaṇapariggahūpāyañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ārammaṇapariggahūpāyaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "āḷimpessāmāti",
@@ -17540,6 +21539,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "appanañca",
+   "frec": 2,
+   "corte_iebh": [
+    "appanañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "appanaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "assāsapassāsakāyañceva",
+   "frec": 2,
+   "corte_iebh": [
+    "assāsa-passāsakāyañ",
+    "c'eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "assāsapassāsā",
+    "kāyañceva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "athācariyatthero",
    "frec": 2,
    "corte_iebh": [
@@ -17618,6 +21649,22 @@
     "haṃ"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "bhaṅgābhimukhāvatthāyampi",
+   "frec": 2,
+   "corte_iebh": [
+    "bhaṅgābhimukhāvatthāyam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "bhaṅgābhimukhāvatthā",
+    "āyampi"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "bhogakkhandhañca",
@@ -17757,6 +21804,22 @@
    "componentes_motor": [
     "catusamuṭṭhānikarūpaṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "caṅkamantameva",
+   "frec": 2,
+   "corte_iebh": [
+    "caṅkamantam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "caṅkamantaṃ",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -17937,6 +22000,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "dīghamudakaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "dīgham",
+    "udakaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dīghaṃ",
+    "udakaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "dūtanti",
    "frec": 2,
    "corte_iebh": [
@@ -18113,6 +22192,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "gaṇanabaleneva",
+   "frec": 2,
+   "corte_iebh": [
+    "gaṇanabalen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "gaṇanā",
+    "baleneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "hetupaccayavaseneva",
    "frec": 2,
    "corte_iebh": [
@@ -18161,6 +22256,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ittaramaddhānaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "ittaram",
+    "addhānaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ittaraṃ",
+    "addhānaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "jalāmahaṃ",
    "frec": 2,
    "corte_iebh": [
@@ -18173,6 +22284,22 @@
    "componentes_motor": [
     "jalāma",
     "ahaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "jhānamappetī",
+   "frec": 2,
+   "corte_iebh": [
+    "jhānam",
+    "appetī"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "jhānaṃ",
+    "appetī"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -18369,6 +22496,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "lakkhaṇamidaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "lakkhaṇam",
+    "idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "lakkhaṇā",
+    "midaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "lokapajjotanti",
    "frec": 2,
    "corte_iebh": [
@@ -18399,6 +22542,22 @@
     "eva"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "lokuttarānañca",
+   "frec": 2,
+   "corte_iebh": [
+    "lokuttarānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "lokuttarānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "maggamañjasaṃ",
@@ -18525,6 +22684,22 @@
    "componentes_motor": [
     "nettā",
     "lābhañca"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nevasaññānāsaññāyatanūpago",
+   "frec": 2,
+   "corte_iebh": [
+    "n",
+    "evasaññānāsaññāyatanūpago"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nevasaññānāsaññāyatana",
+    "upago"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -18737,6 +22912,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "pissā",
+   "frec": 2,
+   "corte_iebh": [
+    "pi",
+    "ssā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pa",
+    "issā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "pubbajātimanussaruṃ",
    "frec": 2,
    "corte_iebh": [
@@ -18833,6 +23024,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "rassamudakaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "rassam",
+    "udakaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "rassaṃ",
+    "udakaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "rukkhamūlamupagamma",
    "frec": 2,
    "corte_iebh": [
@@ -18927,6 +23134,22 @@
     "uttama"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "santiṭṭhanāti",
+   "frec": 2,
+   "corte_iebh": [
+    "santiṭṭhanā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "santiṭṭhanā",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "saraṇamattano",
@@ -19105,6 +23328,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "sātisayenettha",
+   "frec": 2,
+   "corte_iebh": [
+    "sātisayen",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": null,
+   "componentes_motor": [
+    "sātisayena",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "sāvatthimuttamaṃ",
    "frec": 2,
    "corte_iebh": [
@@ -19197,6 +23436,38 @@
    "componentes_motor": [
     "tada",
     "āgantvā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tampanetaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "Tam",
+    "pan’etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tama",
+    "panetaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tannissayarūpakāyañca",
+   "frec": 2,
+   "corte_iebh": [
+    "tannissayarūpakāyañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tannissayā",
+    "rūpakāyañca"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -19742,6 +24013,38 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "ānāpānārammaṇābhimukhameva",
+   "frec": 2,
+   "corte_iebh": [
+    "ānāpānārammaṇābhimukham",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ānāpānārammaṇābhimukhaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "āpānanti",
+   "frec": 2,
+   "corte_iebh": [
+    "āpānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "āpānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "ṭhitoyaṃ",
    "frec": 2,
    "corte_iebh": [
@@ -19790,6 +24093,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "accasarāvuso",
+   "frec": 1,
+   "corte_iebh": [
+    "Accasar",
+    "āvuso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷavedalla-Sutta-Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "accasara",
+    "āvuso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "accharāghaṭitamattampi",
    "frec": 1,
    "corte_iebh": [
@@ -19804,6 +24123,22 @@
     "pi"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "adhipaññāsaṅkhātañca",
+   "frec": 1,
+   "corte_iebh": [
+    "adhipaññāsaṅkhātañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "adhipaññāsaṅkhātā",
+    "añca"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "ahampismi",
@@ -19963,6 +24298,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "anuyuñjitabbanti",
+   "frec": 1,
+   "corte_iebh": [
+    "anuyuñjitabban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "anuyuñjitabbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "aparājitanti",
    "frec": 1,
    "corte_iebh": [
@@ -19974,6 +24325,22 @@
    "senal": "segura",
    "componentes_motor": [
     "aparājitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "aphanditanti",
+   "frec": 1,
+   "corte_iebh": [
+    "aphanditan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "aphanditaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
@@ -19993,6 +24360,22 @@
     "iṇaṃ"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "appatiṭṭhāneneva",
+   "frec": 1,
+   "corte_iebh": [
+    "appatiṭṭhānen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "appatiṭṭhānena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "arahattamapāpuṇin",
@@ -20043,18 +24426,34 @@
    "acuerdo_segunda_voz": true
   },
   {
-   "forma": "asan",
+   "forma": "assāsameva",
    "frec": 1,
    "corte_iebh": [
-    "as",
-    "an"
+    "assāsam",
+    "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "therigatha-V-082-086-Sundarīnandātherīgāthāvaṇṇanā.txt",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
    "senal": "posible",
    "componentes_motor": [
-    "asa",
-    "an"
+    "assāsaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "assāsapassāsasamaññameva",
+   "frec": 1,
+   "corte_iebh": [
+    "assāsa-passāsa-samaññam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "assāsapassāsasamaññaṃ",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -20123,6 +24522,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "bhikkhusaṃghamāha",
+   "frec": 1,
+   "corte_iebh": [
+    "bhikkhusaṃgham",
+    "āha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "bhikkhusaṃghaṃ",
+    "āha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "bhojjañca",
    "frec": 1,
    "corte_iebh": [
@@ -20187,18 +24602,18 @@
    "acuerdo_segunda_voz": false
   },
   {
-   "forma": "bya",
+   "forma": "brahmajālanti",
    "frec": 1,
    "corte_iebh": [
-    "by",
-    "a"
+    "brahmajālan",
+    "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
-   "senal": "posible",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
    "componentes_motor": [
-    "ba",
-    "ya"
+    "brahmajālaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -20233,6 +24648,19 @@
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "calayitumasakkuṇeyyo",
+   "frec": 1,
+   "corte_iebh": [
+    "calayitum",
+    "asakkuṇeyyo"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "catukkhattunti",
@@ -20363,18 +24791,34 @@
    "acuerdo_segunda_voz": false
   },
   {
-   "forma": "daya",
+   "forma": "dasalakkhaṇasampannañca",
    "frec": 1,
    "corte_iebh": [
-    "day",
-    "a"
+    "dasalakkhaṇasampannañ",
+    "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
-   "senal": null,
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
    "componentes_motor": [
-    "da",
-    "aya"
+    "dasalakkhaṇasampannaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "diṭṭhijālanti",
+   "frec": 1,
+   "corte_iebh": [
+    "diṭṭhijālan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "diṭṭhijālaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -20507,6 +24951,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "idampanettha",
+   "frec": 1,
+   "corte_iebh": [
+    "Idam",
+    "pan’ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "idaṃ",
+    "panettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "imamevā",
    "frec": 1,
    "corte_iebh": [
@@ -20569,6 +25029,22 @@
     "anuyuñjitabban"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "karuṇābhāvanānuyogamanuyuttā",
+   "frec": 1,
+   "corte_iebh": [
+    "Karuṇābhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "karuṇābhāvana",
+    "anuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "kathañcā",
@@ -20747,6 +25223,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "mettābhāvanānuyogamanuyuttā",
+   "frec": 1,
+   "corte_iebh": [
+    "mettābhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "mettābhāvana",
+    "anuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "muditābhāvanānuyogamanuyuttā",
+   "frec": 1,
+   "corte_iebh": [
+    "Muditābhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "mudita",
+    "bhāvanānuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "muṇḍāva",
    "frec": 1,
    "corte_iebh": [
@@ -20790,6 +25298,54 @@
    "senal": "segura",
    "componentes_motor": [
     "nandakumāraṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nibbidāgahaṇameva",
+   "frec": 1,
+   "corte_iebh": [
+    "nibbidāgahaṇam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "nibbida",
+    "gahaṇameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nibbidāñāṇāneva",
+   "frec": 1,
+   "corte_iebh": [
+    "nibbidāñāṇāne",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nibbida",
+    "ñāṇāneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nirodhupaṭṭhānekattañca",
+   "frec": 1,
+   "corte_iebh": [
+    "Nirodhupaṭṭhānekattañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nirodhupaṭṭhānekattaṃ",
     "ca"
    ],
    "acuerdo_segunda_voz": true
@@ -20859,6 +25415,38 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "nāmakāyeneva",
+   "frec": 1,
+   "corte_iebh": [
+    "nāmakāyen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nāmakāyena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nāmañcā",
+   "frec": 1,
+   "corte_iebh": [
+    "Nāmañ",
+    "cā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": null,
+   "componentes_motor": [
+    "na",
+    "mañcā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "nāsapuṭañca",
    "frec": 1,
    "corte_iebh": [
@@ -20871,6 +25459,22 @@
    "componentes_motor": [
     "nāsapuṭaṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nāvāṭṭhapanamiva",
+   "frec": 1,
+   "corte_iebh": [
+    "nāvāṭṭhapanam",
+    "iva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nāvāṭṭhapaname",
+    "iva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -20939,6 +25543,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "panamha",
+   "frec": 1,
+   "corte_iebh": [
+    "pan",
+    "amha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pana",
+    "ha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "paricāresinti",
    "frec": 1,
    "corte_iebh": [
@@ -20968,6 +25588,19 @@
     "parinibbāna",
     "atthamidaṃ"
    ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "paritassitavipphatameva",
+   "frec": 1,
+   "corte_iebh": [
+    "paritassitavipphatam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [],
    "acuerdo_segunda_voz": false
   },
   {
@@ -21083,6 +25716,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "paṇītametanti",
+   "frec": 1,
+   "corte_iebh": [
+    "paṇītam",
+    "etan’ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paṇītametaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "paṭhamamaggānantarameva",
    "frec": 1,
    "corte_iebh": [
@@ -21195,6 +25844,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "pubbantamārabbha",
+   "frec": 1,
+   "corte_iebh": [
+    "pubbantam",
+    "ārabbha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Brahmajāla-Sutta – Pali-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pubbantaṃ",
+    "ārabbha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "purimasadisamevā",
    "frec": 1,
    "corte_iebh": [
@@ -21207,6 +25872,38 @@
    "componentes_motor": [
     "purimasadisā",
     "mevā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pāḷivaṇṇanānusāreneva",
+   "frec": 1,
+   "corte_iebh": [
+    "Pāḷivaṇṇanānusāren",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pāḷivaṇṇana",
+    "anusāreneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pītisampannañceva",
+   "frec": 1,
+   "corte_iebh": [
+    "pītisampannañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pītisampannañca",
+    "eva"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -21275,6 +25972,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "samathanimittupaṭṭhānekattañca",
+   "frec": 1,
+   "corte_iebh": [
+    "Samathanimittupaṭṭhānekattañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samathanimittupaṭṭhānekattaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "satipaṭṭhānapaṭisaṃyuttameva",
    "frec": 1,
    "corte_iebh": [
@@ -21307,6 +26020,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "saññajañhi",
+   "frec": 1,
+   "corte_iebh": [
+    "Saññajañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "saññajaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "saṅkhārūpasamanti",
    "frec": 1,
    "corte_iebh": [
@@ -21335,6 +26064,38 @@
    "componentes_motor": [
     "subhāramaṇaṃ",
     "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sukhasampannañceva",
+   "frec": 1,
+   "corte_iebh": [
+    "sukhasampannañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sukhasampannañca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukhumataramicchanti",
+   "frec": 1,
+   "corte_iebh": [
+    "sukhumataram",
+    "icchanti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sukhumataraṃ",
+    "icchanti"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -21385,6 +26146,22 @@
     "te"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tatrassā",
+   "frec": 1,
+   "corte_iebh": [
+    "Tatr",
+    "assā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tata",
+    "rassā"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "tenetā",
@@ -21531,6 +26308,70 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "upekkhābhāvanānuyogamanuyuttā",
+   "frec": 1,
+   "corte_iebh": [
+    "Upekkhābhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "upekkha",
+    "bhāvanānuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "upekkhāsampanañceva",
+   "frec": 1,
+   "corte_iebh": [
+    "upekkhāsampanañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upekkhāsampanañca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "upekkhāsampannañceva",
+   "frec": 1,
+   "corte_iebh": [
+    "upekkhāsampannañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upekkhāsampannañcā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uppannanimittampettha",
+   "frec": 1,
+   "corte_iebh": [
+    "uppannanimittam",
+    "p'ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Vis. i 258-284).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uppannanimittampi",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "uppādanirodhañca",
    "frec": 1,
    "corte_iebh": [
@@ -21591,6 +26432,38 @@
    "componentes_motor": [
     "vanamantaraṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vayalakkhaṇupaṭṭhānekattañca",
+   "frec": 1,
+   "corte_iebh": [
+    "Vayalakkhaṇupaṭṭhānekattañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vayalakkhaṇupaṭṭhānekattaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vimānampi",
+   "frec": 1,
+   "corte_iebh": [
+    "vimānam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vimānaṃ",
+    "api"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -21721,6 +26594,70 @@
     "ānañca"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ānāpānassatibhāvanānuyogamanuyuttā",
+   "frec": 1,
+   "corte_iebh": [
+    "ānāpānassatibhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": null,
+   "componentes_motor": [
+    "ānāpānassatī",
+    "bhāvanānuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āraddhacittosmi",
+   "frec": 1,
+   "corte_iebh": [
+    "āraddhacitto",
+    "smi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āraddhacitto",
+    "asmi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āraddhosmi",
+   "frec": 1,
+   "corte_iebh": [
+    "Āraddho",
+    "smi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Ānāpānassati-Sutta (M. iii 123-130).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āraddho",
+    "asmi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ārammaṇādhimuttivimokkhañca",
+   "frec": 1,
+   "corte_iebh": [
+    "ārammaṇādhimuttivimokkhañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Ānāpānassati-Kathā (Ps. 161-198).txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ārammaṇādhimuttivimokkhaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "āḷarasseva",

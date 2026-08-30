@@ -102,6 +102,18 @@ extractor ya sabía descartar. En el Mahāparinibbāna: 100 llamadas pegadas y
   toca la capa de la Ṭīkā—. Todos editados y traducidos del pāḷi al español
   por Bhikkhu Nandisena.
 
+- **Ānāpānassati**, las tres versiones, puestas el 2026-08-30: el **sutta**
+  (M. iii 123-130), la **Kathā del Paṭisambhidāmagga** (Ps. 161-198) y la
+  **Kathā de la Visuddhimagga** (Vis. i 258-284). Esta última no es canon
+  sino tratado, y además trae notas del traductor en inglés: es la que
+  obligó a escribir `basura()` (más abajo).
+
+- **Cuatro más**, el 2026-08-30: **Brahmajāla-sutta**, **Cūḷavedalla-sutta**,
+  **Dutiyasaddhammasammosa-sutta** y **Pañhabyākaraṇa-sutta** (A. i 355).
+  El Brahmajāla aporta 98 junturas él solo; el Pañhabyākaraṇa, por su
+  tamaño, ninguna nueva — y eso también es un dato: el corpus empieza a
+  saturarse en los textos cortos.
+
 Cada texto que se añada aquí lleva su línea en esta lista, con su fuente y
 su licencia. Es material del IEBH: se cita como suyo, y la atribución
 pública dice IEBH.
@@ -132,26 +144,50 @@ Mahāsatipaṭṭhāna, dio 19 junturas —19 atestiguadas, 0 descartadas— y
 encontró cuatro formas frecuentes que el motor no veía: panassa (1.731),
 caparaṃ (1.548), tamenaṃ (778) y yāvadeva (331).
 
-Con el corpus al cierre del 2026-08-30 (33 textos): **1.361 junturas**, las
-1.361 atestiguadas; el motor señala 979 (**71,9 %**). Y **101 ecuaciones**
-—16 junturas y 85 ortográficas—, de las que el motor recompone 14 de 16 y
-**acierta los componentes en 0 de 16**.
+Con el corpus al cierre del 2026-08-30 (**40 textos**): **1.669 junturas**,
+las 1.669 atestiguadas; el motor señala 1.198 (**71,8 %**). Y **101
+ecuaciones** —16 junturas y 85 ortográficas—, de las que el motor recompone
+14 de 16 y **acierta los componentes en 0 de 16**.
 
 Y el cotejo del corte del Venerable contra la lectura del motor da **un solo
 fallo con muchas caras**: el motor reconstruye la primera voz con la vocal
 final equivocada cuando esa vocal se pierde en el sandhi, y casi siempre la
 pone en «-a» —hissa «hi»→«ha» (501), tissa «ti»→«ta» (265), yāyaṃ
-«yā»→«ya» (265), yohaṃ «yo»→«ya», yadāhaṃ, tatohaṃ—. Son 34 formas, masa
-1.376. **Cuidado al contarlo**: otras 18 lo parecen y no lo son —natthīti,
+«yā»→«ya» (265), tayome «tayo»→«taya» (139), yohaṃ, yadāhaṃ, tatohaṃ—. Son
+**39 formas, masa 1.562**, con dos sub-clases: los nominativos en «-o» ante
+«si», «ahaṃ» y «va» leídos como temas en «-a» (katapuññosi, jātosi,
+paviṭṭhohaṃ), y los femeninos en «-ī» leídos breves (lābhinī, vasantī).
+
+**Cuidado al contarlo**: otras **24** lo parecen y no lo son —natthīti,
 passāmīti, bhikkhūti—, porque ahí el IEBH imprime la vocal alargada ante
 «ti» (§18) y el motor da la breve subyacente, que es lo correcto. El corte
 es de superficie y la lectura es de fondo; confundirlos fabrica fallos que
 no existen.
 
-**Tres artefactos conocidos**, publicados porque la forma unida está
-atestiguada: «ma» (86) de la línea en versalitas «M A», «tiṇṇo» (184) de
-«– | ’tiṇṇo» y «ana» (11) de «’a | -’na’». Sin arreglar, y dichos aquí para
-que no pasen por dato.
+## El inglés entró en el corpus, y la atestiguación no lo paraba
+
+`es_pali()` sabe descartar el ESPAÑOL y nada más. El Ānāpānassati de la
+Visuddhimagga trae notas del traductor **en inglés**, y en inglés casi toda
+palabra acaba en consonante: cada espacio parece una juntura. Así se
+publicaron **«it | I» → *iti* (8.058)**, «at | the» → *atthe* (1.393) y
+«can | do» → *cando* (299), más las siglas de referencia «M.A.», «T.A.»,
+«D.A.». La atestiguación no las atrapa: la forma unida existe en la edición
+por pura coincidencia. La de *atthe* venía desde la primera corrida.
+
+`basura()` las criba desde el 2026-08-30, con tres reglas **de PAR, no de
+línea**, y ahí está el punto: filtrar la LÍNEA por palabras inglesas se
+probó y quitaba junturas de verdad —idheva (876), sabbeva (512),
+yannūnāhaṃ (242)—, porque estos documentos mezclan pāḷi e inglés en el
+mismo renglón. Mirando el par no se pierde ninguna.
+
+    (1) una mitad sin letras          «– | ’tiṇṇo»
+    (2) las dos de una sola letra     «M | A», de «M.A. ii 94»
+    (3) las dos son palabras inglesas «at | the», «can | do»
+
+Medido sobre los 40 textos: retira **19 candidatas atestiguadas, y las 19
+son basura**; no añade ninguna. Queda un artefacto conocido sin cribar:
+«ana» (11), de la notación morfológica «’a’ - ’na’» de una «Lista de
+voces».
 
 Sobre las **4.916 candidatas descartadas**, que asustan al lado de las 78 de
 la primera corrida: son casi todas líneas ESPAÑOLAS que se cuelan por
