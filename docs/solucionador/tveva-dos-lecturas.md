@@ -201,6 +201,46 @@ registrar sin ambigüedad si la clave es la voz unida y no la partícula suelta:
 **«tveva» suelto es el que no se puede adjudicar de una vez**, y no por avería:
 porque de veras tiene dos lecturas y la ficha da una. Ése es el punto de §5.
 
+## 5 ter. CÓMO QUEDÓ: sin adjudicar, y las dos lecturas a la vista
+
+**Decisión de Angel, 2026-08-30.** La adjudicación de «tveva» —«tu + eva»,
+firmada por él ese mismo día— **se retira**. No por errónea: es correcta para
+«avijjāya tveva». Se retira porque la ficha afirma UNA lectura y la voz tiene
+DOS, cada una con su autoridad, y el globo de la marca imprime
+`r.lecturas[0]` —la lectura que la adjudicación asciende al primer puesto—.
+Mientras hubiera adjudicación, el pasaje del Dhammacakkappavattana decía
+«tu + eva» con el rótulo de máxima confianza de la página.
+
+Lo medido al retirarla:
+
+    casos              194 → 193
+    señal «segura»   2.300 → 2.299      «tveva» sale del nivel afirmado
+    señal «posible»  2.185 → 2.186      y entra en el de las candidatas
+
+Y «tveva» queda con sus **siete** lecturas, sin que ninguna se afirme:
+
+    tvā + eva · tvā + iva · to + eva · tu + eva · tvṃ + eva · tvaṃ + eva
+    · ti + eva  (Saddanīti Suttamālā §49)
+
+**Es lo que manda CLAUDE.md**: «Devolver todas las derivaciones válidas, no
+una. El sandhi es genuinamente ambiguo… Elegir una en silencio sería mentir
+por omisión.» Aquí la ambigüedad no es del motor: es de la lengua. Quien la
+resuelve es el lector, porque el contexto lo tiene él.
+
+**Lo que esto NO arregla, y hay que decirlo.** El motor analiza una voz por
+vez, sin vecinas: `_aplicar_caso(r)` busca por `r["cotejo"]` y ese registro no
+trae la frase. Por eso no se puede adjudicar «iti + eva» en el primer
+discurso y «tu + eva» en «avijjāya tveva»: no hay dónde escribir «aquí sí,
+allí no». Que la ficha admita varias lecturas con su discriminante sigue
+pendiente, y es cambio de esquema, de análisis y de `arnes_casos` a la vez.
+
+Las dos voces unidas sí conservan su caso, porque ahí no hay ambigüedad:
+
+| clave | lectura | autoridad | en el canon |
+| --- | --- | --- | ---: |
+| `aññāsikoṇḍaññotveva` | iti + eva | Saddanīti Suttamālā 49 | 2 |
+| `avijjāyatveva` | tu + eva | Kaccāyana §18 | 14 (sin caso todavía) |
+
 ## 6. Por qué el motor nunca ofreció la lectura citativa
 
 En `docs/solucionador/por-adjudicar-lote-1.md` §79 el motor propone seis
