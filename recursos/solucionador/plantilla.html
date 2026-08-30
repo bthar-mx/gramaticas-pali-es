@@ -621,7 +621,9 @@ const TXT = {
     falta_lbl: 'sandhi no detectado', ph_falta: 'voz escrita = voz + voz',
     t_falta: 'Un sandhi que el solucionador no señaló: la forma tal como está escrita, un «=», y sus componentes. Enter para registrarlo.',
     registrar: 'registrar', obs_lbl: 'observaciones',
-    ph_obs: 'Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación.',
+    ph_esc: 'escalera, un paso por línea, con su §N — se incorpora verbatim, rotulada como del revisor',
+    t_esc: 'La secuencia tal como la escribe el revisor, un paso por línea. Viaja con el veredicto y se incorpora rotulada como suya —el motor no la deriva ni la verifica—; la página la muestra cuando la lectura afirmada no trae escalera del motor.',
+    ph_obs: 'Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación y quien firma las lee. Los datos de UNA voz —componentes, nota, escalera— van en los campos de su tarjeta, que sí se incorporan solos.',
     enviar: n => `Enviar ${n} veredicto${n===1?'':'s'} al proyecto`,
     exportar: 'Exportar .md', borrar_todos: 'Borrar todos',
     est_normal: 'enviar deja los veredictos en la cola del proyecto; nada se adjudica sin incorporación y firma',
@@ -682,7 +684,9 @@ const TXT = {
     falta_lbl: 'undetected sandhi', ph_falta: 'written form = word + word',
     t_falta: 'A sandhi the solver did not flag: the form as written, an “=”, and its components. Press Enter to record it.',
     registrar: 'record', obs_lbl: 'observations',
-    ph_obs: 'General rules the reviewer sees behind the examples — one such observation (“words in -tvā and -tvāna are absolutives”) became a signed rule. They travel with the export.',
+    ph_esc: 'derivation, one step per line, with its §N — incorporated verbatim, labelled as the reviewer’s',
+    t_esc: 'The sequence exactly as the reviewer writes it, one step per line. It travels with the verdict and is incorporated labelled as theirs — the engine neither derives nor verifies it; the page shows it when the affirmed reading has no engine ladder.',
+    ph_obs: 'General rules the reviewer sees behind the examples — one such observation (“words in -tvā and -tvāna are absolutives”) became a signed rule. They travel with the export and the signer reads them. Data about ONE word — components, note, derivation — goes in its card’s fields, which are incorporated on their own.',
     enviar: n => `Send ${n} verdict${n===1?'':'s'} to the project`,
     exportar: 'Export .md', borrar_todos: 'Delete all',
     est_normal: 'sending leaves the verdicts in the project queue; nothing is adjudicated without incorporation and signature',
@@ -1170,6 +1174,10 @@ function revBarra(voz, r){
       data-tip="${esc(tr('t_nota'))}"
       value="${v && v.nota ? esc(v.nota) : ''}">
     ${v ? `<button type="button" class="rev-btn" data-rev="quitar">${tr('quitar')}</button>` : ''}
+    <textarea class="rev-otra" data-rev-esc rows="2"
+      style="flex:1 1 100%;min-width:32ch;resize:vertical;font-family:var(--mono);font-size:12.5px"
+      placeholder="${esc(tr('ph_esc'))}"
+      data-tip="${esc(tr('t_esc'))}">${v && v.esc ? esc(v.esc) : ''}</textarea>
   </div>`;
 }
 function revAcciones(){
@@ -1262,6 +1270,12 @@ function revMD(){
     L.push('');
     L.push('VEREDICTO: ' + (v.t === 'no' ? 'no' : (v.t === 'primera' ? v.primera : v.comp)));
     if(v.nota) L.push('NOTA DEL REVISOR: ' + v.nota);
+    if(v.esc && v.esc.trim()){
+      /* La escalera del revisor, un paso por línea y sangrada: el
+         incorporador la recoge verbatim como escalera_iebh. */
+      L.push('ESCALERA:');
+      v.esc.split('\n').forEach(s => { if(s.trim()) L.push('    ' + s.trim()); });
+    }
     L.push('');
   }
   return L.join('\n') + '\n';
@@ -1361,10 +1375,15 @@ $('out').addEventListener('click', e => {
     const que = b.dataset.rev;
     if(que === 'quitar'){ REV.v.delete(voz); revGuardar(); analizar(); }
     else {
-      /* La explicación escrita en la misma barra viaja con el veredicto. */
+      /* La explicación y la escalera escritas en la misma barra viajan con
+         el veredicto. */
       const notaEl = bar.querySelector('[data-rev-nota]');
       const nota = notaEl ? notaEl.value.trim() : '';
-      revPoner(voz, nota ? { t: que, nota } : { t: que });
+      const escEl = bar.querySelector('[data-rev-esc]');
+      const dato = { t: que };
+      if(nota) dato.nota = nota;
+      if(escEl && escEl.value.trim()) dato.esc = escEl.value;
+      revPoner(voz, dato);
     }
     return;
   }
@@ -1392,7 +1411,11 @@ $('out').addEventListener('keydown', e => {
     if(!comp){ alert(tr('a_comp')); return; }
     const notaEl = bar.querySelector('[data-rev-nota]');
     const nota = notaEl ? notaEl.value.trim() : '';
-    revPoner(bar.dataset.voz, nota ? { t: 'otra', comp, nota } : { t: 'otra', comp });
+    const escEl = bar.querySelector('[data-rev-esc]');
+    const dato = { t: 'otra', comp };
+    if(nota) dato.nota = nota;
+    if(escEl && escEl.value.trim()) dato.esc = escEl.value;
+    revPoner(bar.dataset.voz, dato);
     return;
   }
   if(e.target.matches('[data-rev-nota]')){
@@ -1409,6 +1432,18 @@ $('out').addEventListener('input', e => {
   if(e.target.id === 'rev-obs'){
     REV.obs = e.target.value;
     try { localStorage.setItem('rev-observaciones', REV.obs); } catch(err){}
+  }
+  /* La escalera se guarda al escribir, SIN re-pintar: re-pintar en cada
+     tecla robaría el foco del área de texto. Si la voz aún no tiene
+     veredicto, el texto queda en el campo y se recoge al marcarlo. */
+  if(e.target.matches('[data-rev-esc]')){
+    const voz = e.target.closest('.rev-bar').dataset.voz;
+    const v = REV.v.get(voz);
+    if(v){
+      const t = e.target.value;
+      if(t.trim()) v.esc = t; else delete v.esc;
+      REV.v.set(voz, v); revGuardar();
+    }
   }
 });
 

@@ -36,10 +36,17 @@ caso publicado sin pasar por la Mac) queda para después, si el uso lo pide.*
    (y referencias/arneses/medición si la señal cambió), commit y push.
    **Nada se adjudica sin ese paso.**
 
-Las **Observaciones del revisor** y las **notas** de cada veredicto no se
-vuelven casos: el incorporador las ignora a propósito. Quedan en los
-archivos recibidos para leerse y, si quien firma lo decide, convertirse en
-reglas generales — como salió la de los absolutivos en -tvā/-tvāna.
+Los datos POR VOZ ya no se pierden (2026-08-30, briefing 35 §6 quater: el
+IEBH daba escaleras en el cuadro de observaciones y se tiraban): la **nota**
+de cada veredicto y la **escalera** de su campo nuevo (un paso por línea)
+se incorporan verbatim al caso — `nota` y `escalera_iebh`, rotuladas como
+del revisor; el motor no las deriva ni las verifica. A un caso ya
+adjudicado se le añaden si le faltan y el veredicto coincide; el veredicto
+mismo nunca se toca. Las **Observaciones del revisor** (el cuadro libre)
+siguen siendo prosa y no se vuelven casos, pero el incorporador las imprime
+enteras con un aviso: quien corre el ciclo las lee en el acto, y si dan
+reglas generales, quien firma decide — como salió la de los absolutivos en
+-tvā/-tvāna.
 
 ## Cómo se activa (una sola vez, en la Mac)
 

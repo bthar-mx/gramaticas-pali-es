@@ -47,9 +47,20 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.9"
+VERSION = "1.10"
 FECHA = "2026-08-30"
-NOTA = ("Tres pedidos del IEBH: la «ṁ» de punto arriba con que llegan los "
+NOTA = ("LAS OBSERVACIONES YA NO SE PIERDEN. Cada tarjeta del modo revisión "
+        "estrena un campo de escalera —un paso por línea, con su §N— que "
+        "viaja con el veredicto y se incorpora verbatim, rotulado como del "
+        "revisor: el motor no la deriva ni la verifica, y la página la "
+        "muestra así. La nota por voz también se incorpora. A un caso ya "
+        "adjudicado, escalera y nota se le añaden si le faltan y su "
+        "veredicto coincide; el veredicto nunca se toca. El cuadro de "
+        "observaciones generales sigue siendo prosa y no se vuelve datos, "
+        "pero el incorporador lo imprime entero con su aviso: ya no puede "
+        "pasar callado. "
+        "Antes, en la versión 1.9: "
+        "Tres pedidos del IEBH: la «ṁ» de punto arriba con que llegan los "
         "pasajes copiados del lector de buddha-dhamma.net se corrige a la "
         "«ṃ» de la edición en la propia caja —el motor ya las identificaba; "
         "ahora el texto visible también—; cada voz marcada del pasaje dice "
