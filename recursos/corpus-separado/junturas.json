@@ -1,6 +1,54 @@
 {
- "junturas": 19,
+ "junturas": 474,
  "filas": [
+  {
+   "forma": "ceva",
+   "frec": 8526,
+   "corte_iebh": [
+    "c",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tenāha",
+   "frec": 6018,
+   "corte_iebh": [
+    "Ten",
+    "āha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tena",
+    "iha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ādimāha",
+   "frec": 3961,
+   "corte_iebh": [
+    "ādim",
+    "āha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ādimā",
+    "iha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
   {
    "forma": "evameva",
    "frec": 3475,
@@ -9,11 +57,107 @@
     "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
     "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "neva",
+   "frec": 3404,
+   "corte_iebh": [
+    "n",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "na",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "eseva",
+   "frec": 3085,
+   "corte_iebh": [
+    "Es",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "eso",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panettha",
+   "frec": 2286,
+   "corte_iebh": [
+    "pan",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pana",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "teneva",
+   "frec": 2147,
+   "corte_iebh": [
+    "ten",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "natthīti",
+   "frec": 2146,
+   "corte_iebh": [
+    "natthī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "natthi",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cettha",
+   "frec": 2140,
+   "corte_iebh": [
+    "c",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "ettha"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -25,11 +169,75 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "taṃ",
     "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttanti",
+   "frec": 2058,
+   "corte_iebh": [
+    "vuttan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vuttaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tattheva",
+   "frec": 1956,
+   "corte_iebh": [
+    "tatth",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tattha",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tasseva",
+   "frec": 1940,
+   "corte_iebh": [
+    "tass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttanayeneva",
+   "frec": 1908,
+   "corte_iebh": [
+    "vuttanayen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vuttanayena",
+    "eva"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -41,13 +249,29 @@
     "pi"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "ayaṃ",
     "api"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "athassa",
+   "frec": 1790,
+   "corte_iebh": [
+    "Ath",
+    "assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "atha",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "panassa",
@@ -57,7 +281,7 @@
     "assa"
    ],
    "marca": "apóstrofo",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": null,
    "componentes_motor": [
     "pa",
@@ -73,11 +297,27 @@
     "idaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "yaṃ",
     "idaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evañca",
+   "frec": 1588,
+   "corte_iebh": [
+    "Evañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "ca"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -89,11 +329,43 @@
     "aparaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": null,
    "componentes_motor": [
     "capi",
     "araṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cassa",
+   "frec": 1544,
+   "corte_iebh": [
+    "c",
+    "assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tampi",
+   "frec": 1533,
+   "corte_iebh": [
+    "tam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "taṃ",
+    "api"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -105,13 +377,93 @@
     "pi"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "evaṃ",
     "api"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "etadahosi",
+   "frec": 1362,
+   "corte_iebh": [
+    "etad",
+    "ahosi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "etaṃ",
+    "ahosi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tadeva",
+   "frec": 1258,
+   "corte_iebh": [
+    "tad",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tada",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panetaṃ",
+   "frec": 1219,
+   "corte_iebh": [
+    "pan",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pana",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tameva",
+   "frec": 1153,
+   "corte_iebh": [
+    "tam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "taṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "yañca",
+   "frec": 1145,
+   "corte_iebh": [
+    "yañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "yaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "kathañca",
@@ -121,13 +473,157 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "kathaṃ",
     "ca"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "yathāha",
+   "frec": 1098,
+   "corte_iebh": [
+    "Yath",
+    "āha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yathā",
+    "iha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cetaṃ",
+   "frec": 1038,
+   "corte_iebh": [
+    "c",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tenevāha",
+   "frec": 981,
+   "corte_iebh": [
+    "ten",
+    "ev’āha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "teneva",
+    "iha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idhekacco",
+   "frec": 964,
+   "corte_iebh": [
+    "idh",
+    "ekacco"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "idha",
+    "ekacco"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayamettha",
+   "frec": 955,
+   "corte_iebh": [
+    "ayam",
+    "ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ayaṃ",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayameva",
+   "frec": 949,
+   "corte_iebh": [
+    "Ayam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ayaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "idampi",
+   "frec": 886,
+   "corte_iebh": [
+    "idam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "idaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idheva",
+   "frec": 876,
+   "corte_iebh": [
+    "idh",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "idha",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "diṭṭheva",
+   "frec": 830,
+   "corte_iebh": [
+    "diṭṭhe",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "diṭṭha",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "tamenaṃ",
@@ -137,11 +633,443 @@
     "enaṃ"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": null,
    "componentes_motor": [
     "tama",
     "enaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evamassa",
+   "frec": 757,
+   "corte_iebh": [
+    "Evam",
+    "assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tveva",
+   "frec": 727,
+   "corte_iebh": [
+    "tv",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tvā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayañca",
+   "frec": 719,
+   "corte_iebh": [
+    "ayañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ayaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sabbampi",
+   "frec": 711,
+   "corte_iebh": [
+    "Sabbam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sabbaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idañca",
+   "frec": 685,
+   "corte_iebh": [
+    "idañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "idaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttañhetaṃ",
+   "frec": 613,
+   "corte_iebh": [
+    "Vuttañ",
+    "h’etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vuttañhi",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sutanti",
+   "frec": 580,
+   "corte_iebh": [
+    "sutan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sutaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tañhi",
+   "frec": 579,
+   "corte_iebh": [
+    "Tañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "taṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vivicceva",
+   "frec": 576,
+   "corte_iebh": [
+    "vivicc",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vivicca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttanayameva",
+   "frec": 571,
+   "corte_iebh": [
+    "vuttanayam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vuttanayaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "hettha",
+   "frec": 544,
+   "corte_iebh": [
+    "h",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ha",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dukkhanti",
+   "frec": 531,
+   "corte_iebh": [
+    "dukkhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "dukkhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "katanti",
+   "frec": 522,
+   "corte_iebh": [
+    "katan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pātova",
+   "frec": 505,
+   "corte_iebh": [
+    "pāto",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pāto",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "hissa",
+   "frec": 501,
+   "corte_iebh": [
+    "hi",
+    "ssa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ha",
+    "issa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "purimanayeneva",
+   "frec": 480,
+   "corte_iebh": [
+    "purimanayen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "purimanayena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttameva",
+   "frec": 480,
+   "corte_iebh": [
+    "vuttam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vuttaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ekameva",
+   "frec": 475,
+   "corte_iebh": [
+    "ekam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ekaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pattacīvaramādāya",
+   "frec": 467,
+   "corte_iebh": [
+    "pattacīvaram",
+    "ādāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pattacīvaraṃ",
+    "ādāya"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tāvadeva",
+   "frec": 466,
+   "corte_iebh": [
+    "tāvad",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tāvade",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttampi",
+   "frec": 462,
+   "corte_iebh": [
+    "Vuttam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vuttaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sveva",
+   "frec": 460,
+   "corte_iebh": [
+    "Sv",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "so",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tenassa",
+   "frec": 434,
+   "corte_iebh": [
+    "ten",
+    "assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tena",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayañhi",
+   "frec": 432,
+   "corte_iebh": [
+    "ayañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ayaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evamādīsu",
+   "frec": 419,
+   "corte_iebh": [
+    "evam",
+    "ādīsu"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "ādīsu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kiñca",
+   "frec": 411,
+   "corte_iebh": [
+    "Kiñ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kiṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evañhi",
+   "frec": 403,
+   "corte_iebh": [
+    "Evañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "hi"
    ],
    "acuerdo_segunda_voz": true
   },
@@ -153,13 +1081,109 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "cittaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cittañca",
+   "frec": 383,
+   "corte_iebh": [
+    "cittañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cittaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panesa",
+   "frec": 379,
+   "corte_iebh": [
+    "pan",
+    "esa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pana",
+    "esa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayamassa",
+   "frec": 376,
+   "corte_iebh": [
+    "ayam",
+    "assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ayaṃ",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "yanti",
+   "frec": 359,
+   "corte_iebh": [
+    "yan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "yaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idamassa",
+   "frec": 348,
+   "corte_iebh": [
+    "idam",
+    "assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "idaṃ",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "katamañca",
+   "frec": 335,
+   "corte_iebh": [
+    "Katamañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "katamaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "yāvadeva",
@@ -169,10 +1193,314 @@
     "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": null,
    "componentes_motor": [
     "yāvade",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "mayampi",
+   "frec": 322,
+   "corte_iebh": [
+    "mayam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "mayaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ekova",
+   "frec": 317,
+   "corte_iebh": [
+    "eko",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "eko",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "rūpanti",
+   "frec": 308,
+   "corte_iebh": [
+    "rūpan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "rūpaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cattārome",
+   "frec": 305,
+   "corte_iebh": [
+    "cattāro",
+    "me"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cattāro",
+    "ime"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "imañca",
+   "frec": 304,
+   "corte_iebh": [
+    "imañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "imaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sukhanti",
+   "frec": 294,
+   "corte_iebh": [
+    "sukhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sukhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yatheva",
+   "frec": 294,
+   "corte_iebh": [
+    "Yath",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "yatha",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tatridaṃ",
+   "frec": 288,
+   "corte_iebh": [
+    "Tatr",
+    "idaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tatra",
+    "idaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "idamavoca",
+   "frec": 286,
+   "corte_iebh": [
+    "Idam",
+    "avoca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "idaṃ",
+    "avoca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panesā",
+   "frec": 286,
+   "corte_iebh": [
+    "pan",
+    "esā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pana",
+    "esā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "etampi",
+   "frec": 284,
+   "corte_iebh": [
+    "etam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "etaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "rūpañca",
+   "frec": 279,
+   "corte_iebh": [
+    "rūpañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "rūpaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ubhayampi",
+   "frec": 276,
+   "corte_iebh": [
+    "ubhayam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ubhayaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kevalañca",
+   "frec": 272,
+   "corte_iebh": [
+    "kevalañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kevalaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sandhāyetaṃ",
+   "frec": 269,
+   "corte_iebh": [
+    "sandhāy",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "sandhāya",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tissa",
+   "frec": 265,
+   "corte_iebh": [
+    "ti",
+    "ssa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ta",
+    "issa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ahanti",
+   "frec": 262,
+   "corte_iebh": [
+    "ahan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ahaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nibbānañca",
+   "frec": 260,
+   "corte_iebh": [
+    "Nibbānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nibbānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "etadeva",
+   "frec": 256,
+   "corte_iebh": [
+    "etad",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "etaṃ",
     "eva"
    ],
    "acuerdo_segunda_voz": true
@@ -185,10 +1513,890 @@
     "eva"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "imaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evamattho",
+   "frec": 248,
+   "corte_iebh": [
+    "evam",
+    "attho"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "evaṃ",
+    "attho"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kathanti",
+   "frec": 240,
+   "corte_iebh": [
+    "kathan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kathaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukhañca",
+   "frec": 231,
+   "corte_iebh": [
+    "sukhañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sukhaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nibbānanti",
+   "frec": 230,
+   "corte_iebh": [
+    "nibbānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nibbānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idañhi",
+   "frec": 226,
+   "corte_iebh": [
+    "idañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "idaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kenaṭṭhena",
+   "frec": 226,
+   "corte_iebh": [
+    "ken",
+    "aṭṭhena"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "kena",
+    "aṭṭhena"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "veditabbanti",
+   "frec": 225,
+   "corte_iebh": [
+    "veditabban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "veditabbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "itthattāyāti",
+   "frec": 204,
+   "corte_iebh": [
+    "itthattāyā",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "itthattāya",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vattabbanti",
+   "frec": 198,
+   "corte_iebh": [
+    "vattabban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vattabbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tassevaṃ",
+   "frec": 197,
+   "corte_iebh": [
+    "Tass",
+    "evaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tassā",
+    "evaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "viññāṇanti",
+   "frec": 194,
+   "corte_iebh": [
+    "viññāṇan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "viññāṇaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nanti",
+   "frec": 193,
+   "corte_iebh": [
+    "nan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "naṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dukkhassantaṃ",
+   "frec": 189,
+   "corte_iebh": [
+    "dukkhass",
+    "antaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dukkhassa",
+    "antaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ṭhānanti",
+   "frec": 187,
+   "corte_iebh": [
+    "ṭhānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ṭhānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cittampi",
+   "frec": 185,
+   "corte_iebh": [
+    "Cittam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cittaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pañcahākārehi",
+   "frec": 183,
+   "corte_iebh": [
+    "pañcah",
+    "ākārehi"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pañcahi",
+    "ākārehi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "aniccanti",
+   "frec": 180,
+   "corte_iebh": [
+    "aniccan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "aniccaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "khvassa",
+   "frec": 167,
+   "corte_iebh": [
+    "khv",
+    "assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kho",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samudayañca",
+   "frec": 167,
+   "corte_iebh": [
+    "samudayañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samudayaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "idametaṃ",
+   "frec": 166,
+   "corte_iebh": [
+    "idam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "idaṃ",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panassā",
+   "frec": 166,
+   "corte_iebh": [
+    "pan",
+    "assā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pa",
+    "anassā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ekappahāreneva",
+   "frec": 164,
+   "corte_iebh": [
+    "ekappahāren",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ekappahārena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cesa",
+   "frec": 162,
+   "corte_iebh": [
+    "c",
+    "esa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ca",
+    "esa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "atthaṅgamañca",
+   "frec": 158,
+   "corte_iebh": [
+    "atthaṅgamañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "atthaṅgamaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cakkhuñca",
+   "frec": 153,
+   "corte_iebh": [
+    "cakkhuñ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cakkhuṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nibbānameva",
+   "frec": 152,
+   "corte_iebh": [
+    "nibbānam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nibbāname",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tvañca",
+   "frec": 152,
+   "corte_iebh": [
+    "tvañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tvaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayañhettha",
+   "frec": 150,
+   "corte_iebh": [
+    "Ayañ",
+    "h’ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ayañhi",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sabbeheva",
+   "frec": 142,
+   "corte_iebh": [
+    "Sabbeh",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sabbehi",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sutvāva",
+   "frec": 131,
+   "corte_iebh": [
+    "sutvā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sutvā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "jātanti",
+   "frec": 129,
+   "corte_iebh": [
+    "jātan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "jātaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "etthesā",
+   "frec": 127,
+   "corte_iebh": [
+    "etth",
+    "esā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "etta",
+    "hesā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kocideva",
+   "frec": 126,
+   "corte_iebh": [
+    "kocid",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "koci",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "nāmanti",
+   "frec": 125,
+   "corte_iebh": [
+    "nāman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nāmaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "gatanti",
+   "frec": 119,
+   "corte_iebh": [
+    "gatan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sarīranti",
+   "frec": 119,
+   "corte_iebh": [
+    "Sarīran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sarīraṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tasmiñca",
+   "frec": 119,
+   "corte_iebh": [
+    "Tasmiñ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tasmiṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sāsananti",
+   "frec": 118,
+   "corte_iebh": [
+    "sāsanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sāsanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āgatameva",
+   "frec": 117,
+   "corte_iebh": [
+    "āgatam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āgataṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ekāva",
+   "frec": 116,
+   "corte_iebh": [
+    "ekā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ekā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukheneva",
+   "frec": 114,
+   "corte_iebh": [
+    "sukhen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sukhena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tasmāssa",
+   "frec": 112,
+   "corte_iebh": [
+    "tasmā",
+    "ssa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tasa",
+    "māssa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tenāhu",
+   "frec": 111,
+   "corte_iebh": [
+    "Ten",
+    "āhu"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tena",
+    "āhu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "imampi",
+   "frec": 106,
+   "corte_iebh": [
+    "imam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "imaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "mamanti",
+   "frec": 105,
+   "corte_iebh": [
+    "maman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "mamaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "panāha",
+   "frec": 103,
+   "corte_iebh": [
+    "pan",
+    "āha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pana",
+    "iha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kāmañcettha",
+   "frec": 101,
+   "corte_iebh": [
+    "Kāmañ",
+    "c’ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kāmañca",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ayamāhāro",
+   "frec": 99,
+   "corte_iebh": [
+    "ayam",
+    "āhāro"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ayaṃ",
+    "āhāro"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evametesaṃ",
+   "frec": 97,
+   "corte_iebh": [
+    "Evam",
+    "etesaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "evaṃ",
+    "etesaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "attanova",
+   "frec": 92,
+   "corte_iebh": [
+    "attano",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "attano",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kevalañhi",
+   "frec": 91,
+   "corte_iebh": [
+    "Kevalañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kevalaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "niccanti",
+   "frec": 91,
+   "corte_iebh": [
+    "niccan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "niccaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "santanti",
+   "frec": 90,
+   "corte_iebh": [
+    "santan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "santaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "abhinandunti",
+   "frec": 89,
+   "corte_iebh": [
+    "abhinandun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "abhinanduṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tāneva",
+   "frec": 88,
+   "corte_iebh": [
+    "tān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tāna",
     "eva"
    ],
    "acuerdo_segunda_voz": true
@@ -201,13 +2409,701 @@
     "va"
    ],
    "marca": "apóstrofo",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "sato",
     "eva"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cetā",
+   "frec": 83,
+   "corte_iebh": [
+    "c",
+    "etā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ca",
+    "etā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tenevassa",
+   "frec": 81,
+   "corte_iebh": [
+    "ten",
+    "ev’assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tena",
+    "evassa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "aṅganti",
+   "frec": 79,
+   "corte_iebh": [
+    "aṅgan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "aṅgaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uddhanti",
+   "frec": 79,
+   "corte_iebh": [
+    "uddhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "uddhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dhiratthu",
+   "frec": 74,
+   "corte_iebh": [
+    "dhir",
+    "atthu"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "dhi",
+    "atthu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vimuttanti",
+   "frec": 73,
+   "corte_iebh": [
+    "Vimuttan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vimuttaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "subhanti",
+   "frec": 68,
+   "corte_iebh": [
+    "subhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "subhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "manañca",
+   "frec": 67,
+   "corte_iebh": [
+    "Manañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "manaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pattanti",
+   "frec": 66,
+   "corte_iebh": [
+    "pattan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pattaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kimassa",
+   "frec": 65,
+   "corte_iebh": [
+    "kim",
+    "assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ka",
+    "imassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "saddamakāsi",
+   "frec": 65,
+   "corte_iebh": [
+    "saddam",
+    "akāsi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "saddaṃ",
+    "akāsi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tenassā",
+   "frec": 59,
+   "corte_iebh": [
+    "ten",
+    "assā"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tena",
+    "assā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vuttasadisameva",
+   "frec": 59,
+   "corte_iebh": [
+    "vuttasadisam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vuttasadisaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cceva",
+   "frec": 58,
+   "corte_iebh": [
+    "cc",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ti",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dukkhasaccanti",
+   "frec": 58,
+   "corte_iebh": [
+    "dukkhasaccan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "dukkhasaccaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kāyanti",
+   "frec": 57,
+   "corte_iebh": [
+    "kāyan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kāyaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tenevettha",
+   "frec": 55,
+   "corte_iebh": [
+    "Ten",
+    "ev’ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "teneva",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cattārova",
+   "frec": 54,
+   "corte_iebh": [
+    "cattāro",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "cattāro",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "maraṇampi",
+   "frec": 52,
+   "corte_iebh": [
+    "maraṇam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "maraṇaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kāyañca",
+   "frec": 51,
+   "corte_iebh": [
+    "Kāyañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kāyaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "natthañño",
+   "frec": 51,
+   "corte_iebh": [
+    "natth",
+    "añño"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "na",
+    "atthañño"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nagarameva",
+   "frec": 49,
+   "corte_iebh": [
+    "nagaram",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nagaraṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "māhu",
+   "frec": 48,
+   "corte_iebh": [
+    "m",
+    "āhu"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ma",
+    "āhu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paṭhamanti",
+   "frec": 48,
+   "corte_iebh": [
+    "paṭhaman",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paṭhamaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yadidanti",
+   "frec": 48,
+   "corte_iebh": [
+    "Yadidan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "yadidaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "etañhi",
+   "frec": 46,
+   "corte_iebh": [
+    "Etañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "muhuttampi",
+   "frec": 46,
+   "corte_iebh": [
+    "muhuttam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "muhuttaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anuttaranti",
+   "frec": 45,
+   "corte_iebh": [
+    "Anuttaran",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "anuttaraṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "etenassa",
+   "frec": 44,
+   "corte_iebh": [
+    "Eten",
+    "assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "etena",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "saṃyojananti",
+   "frec": 44,
+   "corte_iebh": [
+    "saṃyojanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "saṃyojanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sotañca",
+   "frec": 44,
+   "corte_iebh": [
+    "Sotañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sotaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vāyodhātūti",
+   "frec": 44,
+   "corte_iebh": [
+    "vāyodhātū",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vāyodhātu",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vayañca",
+   "frec": 42,
+   "corte_iebh": [
+    "vayañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vayaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "yampicchaṃ",
+   "frec": 42,
+   "corte_iebh": [
+    "yam",
+    "p’icchaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yama",
+    "picchaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "āyatimpi",
+   "frec": 40,
+   "corte_iebh": [
+    "Āyatim",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "āyatiṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ayamevettha",
+   "frec": 39,
+   "corte_iebh": [
+    "ayam",
+    "ev’ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ayameva",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "devalokameva",
+   "frec": 39,
+   "corte_iebh": [
+    "devalokam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "devalokaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "imāneva",
+   "frec": 39,
+   "corte_iebh": [
+    "imān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "imāni",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "satiñca",
+   "frec": 39,
+   "corte_iebh": [
+    "satiñ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "satiṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "seyyathidanti",
+   "frec": 39,
+   "corte_iebh": [
+    "Seyyathidan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "seyyathidaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ñāṇampi",
+   "frec": 39,
+   "corte_iebh": [
+    "ñāṇam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ñāṇaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "gamananti",
+   "frec": 38,
+   "corte_iebh": [
+    "gamanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gamanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "jivhañca",
+   "frec": 38,
+   "corte_iebh": [
+    "Jivhañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "jivhaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "muttanti",
@@ -217,13 +3113,2685 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "muttaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yadariyo",
+   "frec": 34,
+   "corte_iebh": [
+    "yad",
+    "ariyo"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yada",
+    "ariyo"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gantunti",
+   "frec": 33,
+   "corte_iebh": [
+    "gantun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gantuṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "suttamabhāsi",
+   "frec": 33,
+   "corte_iebh": [
+    "suttam",
+    "abhāsi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "suttaṃ",
+    "abhāsi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "upaṭṭhānañceva",
+   "frec": 33,
+   "corte_iebh": [
+    "upaṭṭhānañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upaṭṭhānañca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vedanāva",
+   "frec": 33,
+   "corte_iebh": [
+    "vedanā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vedanā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "asubhanti",
+   "frec": 32,
+   "corte_iebh": [
+    "asubhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asubhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sabbasseva",
+   "frec": 32,
+   "corte_iebh": [
+    "sabbass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sabbassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sahattheneva",
+   "frec": 32,
+   "corte_iebh": [
+    "sahatthen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sahatthena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "chavasarīrassetaṃ",
+   "frec": 31,
+   "corte_iebh": [
+    "chavasarīrass",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "chavasarīrassa",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "svāyamidha",
+   "frec": 31,
+   "corte_iebh": [
+    "Svāyam",
+    "idha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "svāyaṃ",
+    "idha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vedananti",
+   "frec": 31,
+   "corte_iebh": [
+    "vedanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vedanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "domanassanti",
+   "frec": 30,
+   "corte_iebh": [
+    "domanassan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "domanassaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vedayitanti",
+   "frec": 30,
+   "corte_iebh": [
+    "vedayitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vedayitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vedayāmīti",
+   "frec": 30,
+   "corte_iebh": [
+    "vedayāmī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vedayāmī",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ghānañca",
+   "frec": 29,
+   "corte_iebh": [
+    "Ghānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ghānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vattumāraddho",
+   "frec": 29,
+   "corte_iebh": [
+    "vattum",
+    "āraddho"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vattuṃ",
+    "āraddho"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cintesīti",
+   "frec": 28,
+   "corte_iebh": [
+    "cintesī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cintesi",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "karontova",
+   "frec": 28,
+   "corte_iebh": [
+    "karonto",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "karonto",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kāraṇameva",
+   "frec": 28,
+   "corte_iebh": [
+    "kāraṇam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kāraṇaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "purebhattameva",
+   "frec": 28,
+   "corte_iebh": [
+    "purebhattam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "purebhattaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sampadamidaṃ",
+   "frec": 28,
+   "corte_iebh": [
+    "sampadam",
+    "idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "sampadā",
+    "midaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dukkhamaddakkhi",
+   "frec": 27,
+   "corte_iebh": [
+    "dukkham",
+    "addakkhi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "dukkhama",
+    "addakkhi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "satipaṭṭhānanti",
+   "frec": 27,
+   "corte_iebh": [
+    "satipaṭṭhānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "satipaṭṭhānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "lokiyanti",
+   "frec": 26,
+   "corte_iebh": [
+    "lokiyan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "lokiyaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tavatthāya",
+   "frec": 26,
+   "corte_iebh": [
+    "tav",
+    "atthāya"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ta",
+    "avatthāya"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "arūpāvacarañca",
+   "frec": 24,
+   "corte_iebh": [
+    "arūpāvacarañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "arūpāvacaraṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "caparanti",
+   "frec": 24,
+   "corte_iebh": [
+    "caparan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "caparaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "heso",
+   "frec": 24,
+   "corte_iebh": [
+    "h",
+    "eso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ha",
+    "eso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kammeneva",
+   "frec": 22,
+   "corte_iebh": [
+    "kammen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kammena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dukkhasminti",
+   "frec": 21,
+   "corte_iebh": [
+    "dukkhasmin",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "dukkhasmiṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "laddhunti",
+   "frec": 21,
+   "corte_iebh": [
+    "laddhun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "laddhuṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "manāpanti",
+   "frec": 21,
+   "corte_iebh": [
+    "manāpan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "manāpaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kevalañcettha",
+   "frec": 20,
+   "corte_iebh": [
+    "kevalañ",
+    "c’ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kevalañca",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nibbānañhi",
+   "frec": 20,
+   "corte_iebh": [
+    "Nibbānañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nibbānaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vīriyassetaṃ",
+   "frec": 20,
+   "corte_iebh": [
+    "vīriyass",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vīriyassa",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tameko",
+   "frec": 19,
+   "corte_iebh": [
+    "tam",
+    "eko"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tama",
+    "eko"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "uppannānanti",
+   "frec": 19,
+   "corte_iebh": [
+    "Uppannānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "uppannānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cetasikanti",
+   "frec": 18,
+   "corte_iebh": [
+    "Cetasikan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cetasikaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kuhinti",
+   "frec": 18,
+   "corte_iebh": [
+    "kuhin",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kuhiṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "viharitunti",
+   "frec": 18,
+   "corte_iebh": [
+    "viharitun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "viharituṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "asantanti",
+   "frec": 17,
+   "corte_iebh": [
+    "Asantan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asantaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "etasmiñhi",
+   "frec": 17,
+   "corte_iebh": [
+    "Etasmiñ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etasmiṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samāhitanti",
+   "frec": 17,
+   "corte_iebh": [
+    "Samāhitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samāhitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sattānanti",
+   "frec": 17,
+   "corte_iebh": [
+    "sattānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sattānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dhuvanti",
+   "frec": 16,
+   "corte_iebh": [
+    "dhuvan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "dhuvaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "maggānaṭṭhaṅgiko",
+   "frec": 16,
+   "corte_iebh": [
+    "Maggān",
+    "aṭṭhaṅgiko"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "maggāna",
+    "aṭṭhaṅgiko"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panetesu",
+   "frec": 16,
+   "corte_iebh": [
+    "pan",
+    "etesu"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pana",
+    "etesu"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "anuppannānanti",
+   "frec": 15,
+   "corte_iebh": [
+    "Anuppannānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "anuppannānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "avimuttanti",
+   "frec": 15,
+   "corte_iebh": [
+    "Avimuttan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "avimuttaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pādakajjhānameva",
+   "frec": 15,
+   "corte_iebh": [
+    "pādakajjhānam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pādakajjhānaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "abhijjhādomanassanti",
+   "frec": 14,
+   "corte_iebh": [
+    "abhijjhādomanassan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "abhijjhādomanassaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ayamānisaṃso",
+   "frec": 14,
+   "corte_iebh": [
+    "ayam",
+    "ānisaṃso"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ayaṃ",
+    "ānisaṃso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dvipadānañca",
+   "frec": 14,
+   "corte_iebh": [
+    "dvipadānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "dvipadānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evamakāsī",
+   "frec": 14,
+   "corte_iebh": [
+    "evam",
+    "akāsī"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "evame",
+    "akāsī"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "khaṇḍiccanti",
+   "frec": 14,
+   "corte_iebh": [
+    "khaṇḍiccan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "khaṇḍiccaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kusalānanti",
+   "frec": 14,
+   "corte_iebh": [
+    "kusalānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kusalānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kāyova",
+   "frec": 14,
+   "corte_iebh": [
+    "kāyo",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kāyo",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "lokasmiñhi",
+   "frec": 14,
+   "corte_iebh": [
+    "lokasmiñ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "lokasmiṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "okāsova",
+   "frec": 14,
+   "corte_iebh": [
+    "okāso",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "okāso",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pāṇinanti",
+   "frec": 14,
+   "corte_iebh": [
+    "pāṇinan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pāṇinaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sukhumampi",
+   "frec": 14,
+   "corte_iebh": [
+    "sukhumam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sukhumaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tathevāyaṃ",
+   "frec": 14,
+   "corte_iebh": [
+    "Tath",
+    "evāyaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tatha",
+    "evāyaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "appanāva",
+   "frec": 13,
+   "corte_iebh": [
+    "appanā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "appanā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ekattameva",
+   "frec": 13,
+   "corte_iebh": [
+    "ekattam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ekattaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kesādīnañca",
+   "frec": 13,
+   "corte_iebh": [
+    "kesādīnañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kesādīnaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "panidha",
+   "frec": 13,
+   "corte_iebh": [
+    "pan",
+    "idha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pana",
+    "idha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samādhivīriyānañca",
+   "frec": 13,
+   "corte_iebh": [
+    "samādhivīriyānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samādhivīriyānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sātarūpanti",
+   "frec": 13,
+   "corte_iebh": [
+    "sātarūpan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sātarūpaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "asātanti",
+   "frec": 12,
+   "corte_iebh": [
+    "Asātan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asātaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "daḷhanti",
+   "frec": 12,
+   "corte_iebh": [
+    "daḷhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "daḷhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "duvidhañhi",
+   "frec": 12,
+   "corte_iebh": [
+    "duvidhañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "duvidhaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "oḷārikampi",
+   "frec": 12,
+   "corte_iebh": [
+    "oḷārikam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "oḷārikaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "asminti",
+   "frec": 11,
+   "corte_iebh": [
+    "asmin",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asmiṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "evarūpañhi",
+   "frec": 11,
+   "corte_iebh": [
+    "Evarūpañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "evarūpaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pāṭikaṅkhanti",
+   "frec": 11,
+   "corte_iebh": [
+    "Pāṭikaṅkhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "pāṭikaṅkhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vohāramattameva",
+   "frec": 11,
+   "corte_iebh": [
+    "vohāramattam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vohāramattaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "antaradhānanti",
+   "frec": 10,
+   "corte_iebh": [
+    "antaradhānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "antaradhānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "asaṃkiliṭṭhanti",
+   "frec": 10,
+   "corte_iebh": [
+    "asaṃkiliṭṭhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asaṃkiliṭṭhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "bhūtañca",
+   "frec": 10,
+   "corte_iebh": [
+    "bhūtañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "bhūtaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "chaḍḍitanti",
+   "frec": 10,
+   "corte_iebh": [
+    "chaḍḍitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "chaḍḍitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "gaṇhitunti",
+   "frec": 10,
+   "corte_iebh": [
+    "gaṇhitun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "gaṇhituṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "khaṇḍiccādīneva",
+   "frec": 10,
+   "corte_iebh": [
+    "khaṇḍiccādīn",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "khaṇḍiccādīni",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kāyikanti",
+   "frec": 10,
+   "corte_iebh": [
+    "Kāyikan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "kāyikaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "niyyānamukhanti",
+   "frec": 10,
+   "corte_iebh": [
+    "niyyānamukhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "niyyānamukhaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tamevārammaṇaṃ",
+   "frec": 10,
+   "corte_iebh": [
+    "tam",
+    "ev’ārammaṇaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tameva",
+    "ārammaṇaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tāvakālikanti",
+   "frec": 10,
+   "corte_iebh": [
+    "tāvakālikan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tāvakālikaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uppajjeyyunti",
+   "frec": 10,
+   "corte_iebh": [
+    "uppajjeyyun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "uppajjeyyuṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vinīlameva",
+   "frec": 10,
+   "corte_iebh": [
+    "vinīlam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vinīlaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "āraddhavīriyova",
+   "frec": 10,
+   "corte_iebh": [
+    "āraddhavīriyo",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āraddhavīriyo",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cakkhuñceva",
+   "frec": 9,
+   "corte_iebh": [
+    "cakkhuñ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "cakkhuñca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cintesinti",
+   "frec": 9,
+   "corte_iebh": [
+    "cintesin",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "cintesiṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cittañhi",
+   "frec": 9,
+   "corte_iebh": [
+    "Cittañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "cittaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dakkhiṇeyyosi",
+   "frec": 9,
+   "corte_iebh": [
+    "dakkhiṇeyyo",
+    "si"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "dakkhiṇeyya",
+    "osi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idamekassa",
+   "frec": 9,
+   "corte_iebh": [
+    "Idam",
+    "ekassa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "idaṃ",
+    "ekassa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "mahaggatanti",
+   "frec": 9,
+   "corte_iebh": [
+    "Mahaggatan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "mahaggataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "paccavekkhaṇanti",
+   "frec": 9,
+   "corte_iebh": [
+    "paccavekkhaṇan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paccavekkhaṇaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pahīnameva",
+   "frec": 9,
+   "corte_iebh": [
+    "pahīnam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pahīnaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paṭighampi",
+   "frec": 9,
+   "corte_iebh": [
+    "paṭigham",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paṭighaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "phalūpacāreneva",
+   "frec": 9,
+   "corte_iebh": [
+    "phalūpacāren",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "phalūpacārena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samohanti",
+   "frec": 9,
+   "corte_iebh": [
+    "Samohan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samohaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vinīlanti",
+   "frec": 9,
+   "corte_iebh": [
+    "vinīlan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vinīlaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "asamāhitanti",
+   "frec": 8,
+   "corte_iebh": [
+    "Asamāhitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asamāhitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dhātuvaseneva",
+   "frec": 8,
+   "corte_iebh": [
+    "dhātuvasen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dhātuvasena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sayananti",
+   "frec": 8,
+   "corte_iebh": [
+    "sayanan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sayanaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "saṃkhittanti",
+   "frec": 8,
+   "corte_iebh": [
+    "Saṃkhittan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "saṃkhittaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vikkhittanti",
+   "frec": 8,
+   "corte_iebh": [
+    "Vikkhittan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vikkhittaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vītarāganti",
+   "frec": 8,
+   "corte_iebh": [
+    "Vītarāgan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vītarāgaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "abyagganimittanti",
+   "frec": 7,
+   "corte_iebh": [
+    "abyagganimittan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "abyagganimittaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kāyānupassanākārasseva",
+   "frec": 7,
+   "corte_iebh": [
+    "kāyānupassanākārass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kāyānupassanā",
+    "ikārasseva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nīlasāṭakapārutasseva",
+   "frec": 7,
+   "corte_iebh": [
+    "nīlasāṭakapārutass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nīlasāṭakapārutaṃ",
+    "asseva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pariññātameva",
+   "frec": 7,
+   "corte_iebh": [
+    "pariññātam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pariññātaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "pātubhavantāneva",
+   "frec": 7,
+   "corte_iebh": [
+    "pātubhavantān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pātubhava",
+    "antāneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "rūpakkhandhasseva",
+   "frec": 7,
+   "corte_iebh": [
+    "rūpakkhandhass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "rūpakkhandhassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "samathova",
+   "frec": 7,
+   "corte_iebh": [
+    "samatho",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "samatho",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tādisamevā",
+   "frec": 7,
+   "corte_iebh": [
+    "tādisam",
+    "evā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tādisā",
+    "mevā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uddhumātameva",
+   "frec": 7,
+   "corte_iebh": [
+    "uddhumātam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uddhumātaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vikasamānamiva",
+   "frec": 7,
+   "corte_iebh": [
+    "vikasamānam",
+    "iva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vikasamānaṃ",
+    "iva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vipubbameva",
+   "frec": 7,
+   "corte_iebh": [
+    "vipubbam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vipubbaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vipubbanti",
+   "frec": 7,
+   "corte_iebh": [
+    "vipubban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vipubbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yāvadevā",
+   "frec": 7,
+   "corte_iebh": [
+    "Yāvad",
+    "evā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yāvā",
+    "devā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āgantabbanti",
+   "frec": 7,
+   "corte_iebh": [
+    "āgantabban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "āgantabbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "amahaggatanti",
+   "frec": 6,
+   "corte_iebh": [
+    "Amahaggatan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "amahaggataṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "arūpāvacarameva",
+   "frec": 6,
+   "corte_iebh": [
+    "arūpāvacaram",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "arūpāvacaraṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "asubhampi",
+   "frec": 6,
+   "corte_iebh": [
+    "asubham",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asubhaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "atthuddhāranayenetaṃ",
+   "frec": 6,
+   "corte_iebh": [
+    "atthuddhāranayen",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "atthuddhāranayena",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ayamevā",
+   "frec": 6,
+   "corte_iebh": [
+    "Ayam",
+    "evā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ayamā",
+    "evā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "byañjanamevettha",
+   "frec": 6,
+   "corte_iebh": [
+    "byañjanam",
+    "ev’ettha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "byañjanameva",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "cittuppādamatteneva",
+   "frec": 6,
+   "corte_iebh": [
+    "Cittuppādamatten",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "cittuppādā",
+    "matteneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ghanavinibbhogādidassanatthanti",
+   "frec": 6,
+   "corte_iebh": [
+    "Ghanavinibbhogādidassanatthan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ghanavinibbhoga",
+    "ādidassanatthanti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "jātosi",
+   "frec": 6,
+   "corte_iebh": [
+    "jāto",
+    "si"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "jāta",
+    "osi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "labheyyunti",
+   "frec": 6,
+   "corte_iebh": [
+    "labheyyun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "labheyyuṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nīharantova",
+   "frec": 6,
+   "corte_iebh": [
+    "nīharanto",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "nīharanto",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pamādamanvāya",
+   "frec": 6,
+   "corte_iebh": [
+    "pamādam",
+    "anvāya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pamādaṃ",
+    "anvāya"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paripuṇṇāneva",
+   "frec": 6,
+   "corte_iebh": [
+    "paripuṇṇān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paripuṇṇāni",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "parāmasitumpi",
+   "frec": 6,
+   "corte_iebh": [
+    "parāmasitum",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "parāmasituṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "phalamuttaman",
+   "frec": 6,
+   "corte_iebh": [
+    "phalam",
+    "uttaman"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "phalamuttame",
+    "an"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sarāganti",
+   "frec": 6,
+   "corte_iebh": [
+    "sarāgan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sarāgaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "satisambojjhaṅganti",
+   "frec": 6,
+   "corte_iebh": [
+    "Satisambojjhaṅgan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "satisambojjhaṅgaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "satiyārammaṇe",
+   "frec": 6,
+   "corte_iebh": [
+    "satiy",
+    "ārammaṇe"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "satiyo",
+    "ārammaṇe"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "siddhāneva",
+   "frec": 6,
+   "corte_iebh": [
+    "siddhān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "siddhāni",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "uddhumātanti",
+   "frec": 6,
+   "corte_iebh": [
+    "uddhumātan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "uddhumātaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uppathameva",
+   "frec": 6,
+   "corte_iebh": [
+    "uppatham",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uppathaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "utrastamidaṃ",
+   "frec": 6,
+   "corte_iebh": [
+    "utrastam",
+    "idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "utrastā",
+    "midaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vicikicchāsahagatañceva",
+   "frec": 6,
+   "corte_iebh": [
+    "vicikicchāsahagatañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vicikicchāsahagataṃ",
+    "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vītamohanti",
+   "frec": 6,
+   "corte_iebh": [
+    "Vītamohan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vītamohaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āraddhavīriyasseva",
+   "frec": 6,
+   "corte_iebh": [
+    "Āraddhavīriyass",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āraddhavīriyassa",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "anekavārampi",
+   "frec": 5,
+   "corte_iebh": [
+    "anekavāram",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "anekavāraṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ayanamassa",
+   "frec": 5,
+   "corte_iebh": [
+    "ayanam",
+    "assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "ayana",
+    "imassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "aṭṭhicammamatteneva",
+   "frec": 5,
+   "corte_iebh": [
+    "aṭṭhicammamatten",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "aṭṭhicammamattena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "buddhantarampi",
+   "frec": 5,
+   "corte_iebh": [
+    "Buddhantaram",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "buddhantaraṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dasavidhañhi",
+   "frec": 5,
+   "corte_iebh": [
+    "Dasavidhañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dasavidhaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "etassevesa",
+   "frec": 5,
+   "corte_iebh": [
+    "etass",
+    "ev’esa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "etasseva",
+    "esa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "hatthaṭṭhikanti",
+   "frec": 5,
+   "corte_iebh": [
+    "Hatthaṭṭhikan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "hatthaṭṭhikaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "iriyāpathañca",
+   "frec": 5,
+   "corte_iebh": [
+    "iriyāpathañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "iriyāpathaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "jiṇṇabhāvañca",
+   "frec": 5,
+   "corte_iebh": [
+    "jiṇṇabhāvañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "jiṇṇa",
+    "abhāvañca"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kammaṭṭhānañceva",
+   "frec": 5,
+   "corte_iebh": [
+    "kammaṭṭhānañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kammaṭṭhānañca",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kassakaleṇameva",
+   "frec": 5,
+   "corte_iebh": [
+    "Kassakaleṇam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "kassakā",
+    "leṇameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kassaññassa",
+   "frec": 5,
+   "corte_iebh": [
+    "kass",
+    "aññassa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kasa",
+    "saññassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "niratthaṃva",
+   "frec": 5,
+   "corte_iebh": [
+    "niratthaṃ",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "niratthaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pañcakāmaguṇikarāgassetaṃ",
+   "frec": 5,
+   "corte_iebh": [
+    "pañcakāmaguṇikarāgass",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "pañcakāmaguṇikarāgassa",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paṭighārammaṇampi",
+   "frec": 5,
+   "corte_iebh": [
+    "paṭighārammaṇam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paṭigha",
+    "ārammaṇampi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sadosanti",
+   "frec": 5,
+   "corte_iebh": [
+    "Sadosan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sadosaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sampayogaṅgañcassa",
+   "frec": 5,
+   "corte_iebh": [
+    "sampayogaṅgañ",
+    "c’assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sampayogaṅgañca",
+    "assa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "samūhavaseneva",
+   "frec": 5,
+   "corte_iebh": [
+    "samūhavasen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "samūhā",
+    "vaseneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sedamalamakkhitañca",
+   "frec": 5,
+   "corte_iebh": [
+    "sedamalamakkhitañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sedamalamakkhitaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "subhampi",
+   "frec": 5,
+   "corte_iebh": [
+    "subham",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "subhaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "tajjañca",
+   "frec": 5,
+   "corte_iebh": [
+    "tajjañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tajjaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "thinamiddhanti",
@@ -233,13 +5801,125 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "thinamiddhaṃ",
     "iti"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "upekkhāva",
+   "frec": 5,
+   "corte_iebh": [
+    "upekkhā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upekkhā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vicikicchāva",
+   "frec": 5,
+   "corte_iebh": [
+    "vicikicchā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vicikicchā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vuttalakkhaṇova",
+   "frec": 5,
+   "corte_iebh": [
+    "vuttalakkhaṇo",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vuttalakkhaṇa",
+    "va"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vācampi",
+   "frec": 5,
+   "corte_iebh": [
+    "vācam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vācaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vīriyeneva",
+   "frec": 5,
+   "corte_iebh": [
+    "vīriyen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vīriyena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "āraddhavīriyeneva",
+   "frec": 5,
+   "corte_iebh": [
+    "āraddhavīriyen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āraddhavīriyena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ṭhitañca",
+   "frec": 5,
+   "corte_iebh": [
+    "ṭhitañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "ṭhitaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "ṭhitomhī",
@@ -249,11 +5929,219 @@
     "mhī"
    ],
    "marca": "apóstrofo",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "ṭhito",
     "hī"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anekañcassa",
+   "frec": 4,
+   "corte_iebh": [
+    "anekañ",
+    "c’assa"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "anekaṃ",
+    "cassa"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "asubhārammaṇampi",
+   "frec": 4,
+   "corte_iebh": [
+    "asubhārammaṇam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "asubhārammaṇaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "bhastañca",
+   "frec": 4,
+   "corte_iebh": [
+    "bhastañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "bhastaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "bhāvitova",
+   "frec": 4,
+   "corte_iebh": [
+    "bhāvito",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "bhāvito",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ekapaṭivedheneva",
+   "frec": 4,
+   "corte_iebh": [
+    "ekapaṭivedhen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ekapaṭivedhena",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evamassetaṃ",
+   "frec": 4,
+   "corte_iebh": [
+    "Evam",
+    "ass’etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "evamassa",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "idamidhādhippetaṃ",
+   "frec": 4,
+   "corte_iebh": [
+    "Idam",
+    "idhādhippetaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "idaṃ",
+    "idhādhippetaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "idampī",
+   "frec": 4,
+   "corte_iebh": [
+    "Idam",
+    "pī"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "idaṃ",
+    "pī"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "jātidhammānanti",
+   "frec": 4,
+   "corte_iebh": [
+    "Jātidhammānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "jātidhammānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "khajjamānanti",
+   "frec": 4,
+   "corte_iebh": [
+    "Khajjamānan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "khajjamānaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kucchitānañhi",
+   "frec": 4,
+   "corte_iebh": [
+    "Kucchitānañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kucchitānaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "madhurasabhāvañca",
+   "frec": 4,
+   "corte_iebh": [
+    "madhurasabhāvañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "madhurā",
+    "sabhāvañca"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nhārusambandhanti",
+   "frec": 4,
+   "corte_iebh": [
+    "nhārusambandhan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nhārusambandhaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -265,11 +6153,107 @@
     "mhī"
    ],
    "marca": "apóstrofo",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "nisinno",
     "hī"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pahānadassanatthampi",
+   "frec": 4,
+   "corte_iebh": [
+    "pahānadassanattham",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "pahānā",
+    "dassanatthampi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "pettha",
+   "frec": 4,
+   "corte_iebh": [
+    "p",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "petti",
+    "ha"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "piyasabhāvañceva",
+   "frec": 4,
+   "corte_iebh": [
+    "piyasabhāvañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "piyasabhāvaṃ",
+    "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "sabbasaṅgāhikavacanametaṃ",
+   "frec": 4,
+   "corte_iebh": [
+    "sabbasaṅgāhikavacanam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sabbasaṅgāhikā",
+    "vacanametaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "sammutikathāva",
+   "frec": 4,
+   "corte_iebh": [
+    "sammutikathā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "sammutī",
+    "kathāva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "samudayampi",
+   "frec": 4,
+   "corte_iebh": [
+    "Samudayam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samudayaṃ",
+    "api"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -281,11 +6265,59 @@
     "mhī"
    ],
    "marca": "apóstrofo",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "posible",
    "componentes_motor": [
     "sayāno",
     "hī"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "socitattanti",
+   "frec": 4,
+   "corte_iebh": [
+    "socitattan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "socitattaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "suttavaseneva",
+   "frec": 4,
+   "corte_iebh": [
+    "suttavasen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "suttā",
+    "vaseneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uddhaccakukkuccamevetaṃ",
+   "frec": 4,
+   "corte_iebh": [
+    "uddhaccakukkuccam",
+    "ev’etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uddhaccakukkuccameva",
+    "etaṃ"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -297,11 +6329,1256 @@
     "ti"
    ],
    "marca": "final consonántica",
-   "fuente": "mahasatipatthana-pali.txt",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
    "senal": "segura",
    "componentes_motor": [
     "uddhaccakukkuccaṃ",
     "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vattabbatampi",
+   "frec": 4,
+   "corte_iebh": [
+    "vattabbatam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vattabbataṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vītadosanti",
+   "frec": 4,
+   "corte_iebh": [
+    "Vītadosan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vītadosaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āgaccheyyunti",
+   "frec": 4,
+   "corte_iebh": [
+    "āgaccheyyun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "āgaccheyyuṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "appanāmattameva",
+   "frec": 3,
+   "corte_iebh": [
+    "appanāmattam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "appana",
+    "mattameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "aṭṭhipuñjameva",
+   "frec": 3,
+   "corte_iebh": [
+    "aṭṭhipuñjam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "aṭṭhipuñjaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "aṭṭhipuñjova",
+   "frec": 3,
+   "corte_iebh": [
+    "aṭṭhipuñjo",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "aṭṭhipuñjo",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "catubbidhāhārapariññatthañca",
+   "frec": 3,
+   "corte_iebh": [
+    "catubbidhāhārapariññatthañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "catubbidhāhārapariññatthaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "catusaṭṭhibhedampi",
+   "frec": 3,
+   "corte_iebh": [
+    "catusaṭṭhibhedam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "catusaṭṭhī",
+    "bhedampi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ekalakkhaṇova",
+   "frec": 3,
+   "corte_iebh": [
+    "ekalakkhaṇo",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ekalakkhaṇa",
+    "va"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "maccumaraṇanti",
+   "frec": 3,
+   "corte_iebh": [
+    "Maccumaraṇan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "maccu",
+    "amaraṇanti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nibbānavevacanāneva",
+   "frec": 3,
+   "corte_iebh": [
+    "nibbānavevacanān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nibbānā",
+    "vevacanāneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "paccayapaccayuppannadhammamattamevetaṃ",
+   "frec": 3,
+   "corte_iebh": [
+    "paccayapaccayuppannadhammamattam",
+    "ev’etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paccayapaccayuppannadhammamatta",
+    "evetaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paṇītañhi",
+   "frec": 3,
+   "corte_iebh": [
+    "Paṇītañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paṇītaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "rucimeva",
+   "frec": 3,
+   "corte_iebh": [
+    "rucim",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ruciṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "rūpakkhandhapariggahova",
+   "frec": 3,
+   "corte_iebh": [
+    "rūpakkhandha-pariggaho",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "rūpakkhandhā",
+    "pariggahova"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "samaṃsalohitanti",
+   "frec": 3,
+   "corte_iebh": [
+    "Samaṃsalohitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "samaṃsalohitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "samaṇadhammova",
+   "frec": 3,
+   "corte_iebh": [
+    "samaṇadhammo",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "samaṇadhammo",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "satipaṭṭhānabhāvanānuyogamanuyuttā",
+   "frec": 3,
+   "corte_iebh": [
+    "satipaṭṭhānabhāvanānuyogam",
+    "anuyuttā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "satipaṭṭhānabhāvana",
+    "anuyogamanuyuttā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "saññāsaṅkhārakkhandhapariggahampi",
+   "frec": 3,
+   "corte_iebh": [
+    "saññāsaṅkhārakkhandhapariggaham",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "saññāsaṅkhārakkhandhapariggahaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "terovassikāneva",
+   "frec": 3,
+   "corte_iebh": [
+    "terovassikān",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "terovassikāna",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "upamāmattameva",
+   "frec": 3,
+   "corte_iebh": [
+    "upamāmattam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upama",
+    "mattameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "ussannadosañceva",
+   "frec": 3,
+   "corte_iebh": [
+    "ussannadosañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ussannadosaṃ",
+    "ceva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vaṇṇabhaṇanametaṃ",
+   "frec": 3,
+   "corte_iebh": [
+    "vaṇṇabhaṇanam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vaṇṇabhaṇanā",
+    "metaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vaṭṭatāvuso",
+   "frec": 3,
+   "corte_iebh": [
+    "vaṭṭat",
+    "āvuso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vaṭṭate",
+    "āvuso"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vedanākkhandhapariggahova",
+   "frec": 3,
+   "corte_iebh": [
+    "vedanākkhandhapariggaho",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "vedanākkhandhā",
+    "pariggahova"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vipallāsappahānatthameva",
+   "frec": 3,
+   "corte_iebh": [
+    "vipallāsappahānattham",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vipallāsa",
+    "pahānatthameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āgatasarāgādibhedānañca",
+   "frec": 3,
+   "corte_iebh": [
+    "āgatasarāgādibhedānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āgatasarāgādibhedānaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "āneñjasappāyanti",
+   "frec": 3,
+   "corte_iebh": [
+    "Āneñjasappāyan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "āneñjasappāyaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anodissakadisāpharaṇānañhi",
+   "frec": 2,
+   "corte_iebh": [
+    "anodissakadisāpharaṇānañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "anodissakadisāpharaṇānaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "athācariyatthero",
+   "frec": 2,
+   "corte_iebh": [
+    "Ath",
+    "ācariyatthero"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "atha",
+    "ācariyatthero"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "byagghenoruddhamānaso",
+   "frec": 2,
+   "corte_iebh": [
+    "byagghen",
+    "oruddhamānaso"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "caparan",
+   "frec": 2,
+   "corte_iebh": [
+    "c",
+    "aparan"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "caparaṃ",
+    "an"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "catusamuṭṭhānikarūpañca",
+   "frec": 2,
+   "corte_iebh": [
+    "catusamuṭṭhānikarūpañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "catusamuṭṭhānikarūpaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "cittasuttavasenidaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "cittasuttavasen",
+    "idaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "cittasuttā",
+    "vasenidaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "dhammapaṭiggāhakapuggalālapanametaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "dhammapaṭiggāhakapuggalālapanam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dhammapaṭiggāhakapuggalālapanaṃ",
+    "etaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "dukkhasaccañhi",
+   "frec": 2,
+   "corte_iebh": [
+    "Dukkhasaccañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "dukkhasaccaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "evampī",
+   "frec": 2,
+   "corte_iebh": [
+    "Evam",
+    "pī"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "evame",
+    "pī"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gaggaranāḷiñca",
+   "frec": 2,
+   "corte_iebh": [
+    "gaggaranāḷiñ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "gaggaranāḷiṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gahitomhī",
+   "frec": 2,
+   "corte_iebh": [
+    "gahito",
+    "mhī"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "gahito",
+    "hī"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "hetupaccayavaseneva",
+   "frec": 2,
+   "corte_iebh": [
+    "hetupaccayavasen",
+    "eva"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "hetupaccayā",
+    "vaseneva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "jīvitindriyupacchedameva",
+   "frec": 2,
+   "corte_iebh": [
+    "Jīvitindriyupacchedam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "jīvitindriyupacchedaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kammaṭṭhānamanuyuñjantena",
+   "frec": 2,
+   "corte_iebh": [
+    "kammaṭṭhānam",
+    "anuyuñjantena"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kammaṭṭhānaṃ",
+    "anuyuñjantena"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "karajakāyañca",
+   "frec": 2,
+   "corte_iebh": [
+    "karajakāyañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "karajakāyaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "khandhakathāyameva",
+   "frec": 2,
+   "corte_iebh": [
+    "Khandhakathāyam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "khandhakathā",
+    "āyameva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nidassanametaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "nidassanam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "nidassanā",
+    "metaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nimaṃsalohitamakkhitanti",
+   "frec": 2,
+   "corte_iebh": [
+    "Nimaṃsalohitamakkhitan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nimaṃsalohitamakkhitaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "payojanaparicchedavavatthāpanametaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "payojanaparicchedavavatthāpanam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "payojanaparicchedavavatthāpana",
+    "imetaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "satipaṭṭhānabuddhimeva",
+   "frec": 2,
+   "corte_iebh": [
+    "satipaṭṭhānabuddhim",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "satipaṭṭhānabuddhima",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "tumhākamidaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "tumhākam",
+    "idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "tumhākaṃ",
+    "idaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ubbiggidaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "ubbigg",
+    "idaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ubbigga",
+    "idaṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "ucchedadiṭṭhisahagatarāgassetaṃ",
+   "frec": 2,
+   "corte_iebh": [
+    "ucchedadiṭṭhisahagatarāgass",
+    "etaṃ"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "ucchedadiṭṭhisahagatā",
+    "rāgassetaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "uddhaccasahagatañcā",
+   "frec": 2,
+   "corte_iebh": [
+    "uddhaccasahagatañ",
+    "cā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uddhaccasahagataṃ",
+    "cā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vaṇṇabhāsanañhi",
+   "frec": 2,
+   "corte_iebh": [
+    "Vaṇṇabhāsanañ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vaṇṇabhāsanaṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "vaṇṇavikāratañceva",
+   "frec": 2,
+   "corte_iebh": [
+    "vaṇṇavikāratañ",
+    "c’eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vaṇṇavikāraṃ",
+    "etañceva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "vimuttiyanti",
+   "frec": 2,
+   "corte_iebh": [
+    "vimuttiyan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "vimuttiyaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "viññāṇakkhandhapariggahova",
+   "frec": 2,
+   "corte_iebh": [
+    "viññāṇakkhandhapariggaho",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "viññāṇakkhandhā",
+    "pariggahova"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "abhisambhodhiyampi",
+   "frec": 1,
+   "corte_iebh": [
+    "abhisambhodhiyam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "abhisambhodhiyaṃ",
+    "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "anissitova",
+   "frec": 1,
+   "corte_iebh": [
+    "anissito",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "anissito",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "arahattamapāpuṇin",
+   "frec": 1,
+   "corte_iebh": [
+    "arahattam",
+    "apāpuṇin"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "arahattaṃ",
+    "apāpuṇin"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "arūpakammaṭṭhānañcā",
+   "frec": 1,
+   "corte_iebh": [
+    "arūpakammaṭṭhānañ",
+    "cā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "arūpakammaṭṭhānaṃ",
+    "cā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "chinnataṭaṭṭhānamāruyha",
+   "frec": 1,
+   "corte_iebh": [
+    "chinnataṭaṭṭhānam",
+    "āruyha"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "chinnataṭaṭṭhānaṃ",
+    "āruyha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "daharakālasmiñhi",
+   "frec": 1,
+   "corte_iebh": [
+    "Daharakālasmiñ",
+    "hi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "daharakālasmiṃ",
+    "hi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "gaṇamanusāsituṃ",
+   "frec": 1,
+   "corte_iebh": [
+    "gaṇam",
+    "anusāsituṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "gaṇaṃ",
+    "anusāsituṃ"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "imamevā",
+   "frec": 1,
+   "corte_iebh": [
+    "imam",
+    "evā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "imama",
+    "evā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "jhānikāvassa",
+   "frec": 1,
+   "corte_iebh": [
+    "jhānikā",
+    "v’assa"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": null,
+   "componentes_motor": [
+    "jhānikā",
+    "evassa"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "kammaṭṭhānamanuyuñjitabban",
+   "frec": 1,
+   "corte_iebh": [
+    "kammaṭṭhānam",
+    "anuyuñjitabban"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kammaṭṭhānaṃ",
+    "anuyuñjitabban"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kathañcā",
+   "frec": 1,
+   "corte_iebh": [
+    "kathañ",
+    "cā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kathaṃ",
+    "cā"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "kāyayantampi",
+   "frec": 1,
+   "corte_iebh": [
+    "kāyayantam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "kāya",
+    "antampi"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "nāsapuṭañca",
+   "frec": 1,
+   "corte_iebh": [
+    "nāsapuṭañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "nāsapuṭaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "patitañca",
+   "frec": 1,
+   "corte_iebh": [
+    "patitañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "patitaṃ",
+    "ca"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "paṭhamābhinibbattakkhandhānametaṃ",
+   "frec": 1,
+   "corte_iebh": [
+    "paṭhamābhinibbattakkhandhānam",
+    "etaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "paṭhamābhinibbatta",
+    "khandhānametaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "paṭikūlamanasikārapabbanti",
+   "frec": 1,
+   "corte_iebh": [
+    "paṭikūlamanasikārapabban",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "paṭikūlamanasikārapabbaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "purimasadisamevā",
+   "frec": 1,
+   "corte_iebh": [
+    "purimasadisam",
+    "evā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "purimasadisā",
+    "mevā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "satipaṭṭhānapaṭisaṃyuttameva",
+   "frec": 1,
+   "corte_iebh": [
+    "satipaṭṭhānapaṭisaṃyuttam",
+    "eva"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "satipaṭṭhānapaṭisaṃyuttaṃ",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "subhāramaṇampi",
+   "frec": 1,
+   "corte_iebh": [
+    "subhāramaṇam",
+    "pi"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "subhāramaṇaṃ",
+    "pi"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "upādārūpañce",
+   "frec": 1,
+   "corte_iebh": [
+    "upādārūpañ",
+    "ce"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "upādārūpaṃ",
+    "ce"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "uttānatthamevā",
+   "frec": 1,
+   "corte_iebh": [
+    "uttānattham",
+    "evā"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "uttānatthā",
+    "mevā"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "āgatasantādibhedānañca",
+   "frec": 1,
+   "corte_iebh": [
+    "āgatasantādibhedānañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "āgatasantādibhede",
+    "ānañca"
    ],
    "acuerdo_segunda_voz": false
   }
