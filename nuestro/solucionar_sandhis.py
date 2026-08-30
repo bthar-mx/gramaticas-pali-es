@@ -870,6 +870,82 @@ def _silenciar_no_sandhi(r):
             return
 
 
+def _patron_niggahita_m(r, patron, frec, f_forma):
+    """El patrón de §34: niggahīta → m ante vocal, con segunda voz corriente.
+
+    Aprobado por el IEBH el 2026-08-29: «§34 is approved since anytime you
+    find the niggahita changed to 'm' before a vowel, it means this rule
+    applies». A diferencia de los patrones vigentes, que se declaran por la
+    SEGUNDA voz (iti, api, ca), aquí la clase la identifica la «m» de la
+    juntura, y la licencia es la unicidad de la LECTURA de la clase, no la
+    de la base — las dos voces varían.
+
+    La receta, tal como la simuló y midió `generar_informe_niggahita_m.py`
+    (54 formas afirmables, masa 31.344, 37 de ellas sin señal ninguna al
+    medirse — informe-niggahita-m.md):
+
+      · candidatas: lecturas verificadas (base, seg) con base terminada en
+        «ṃ» y seg empezando en vocal cuya superficie es EXACTAMENTE
+        base[:-1] + «m» + seg — §34 puro, sin otra operación—, las dos
+        voces atestiguadas;
+      · el resguardo de siempre, por los DOS lados: cada voz al menos tan
+        frecuente en el canon como la forma entera (piso = max(frec, 1));
+      · gemelas (misma base, segundas que sólo difieren en la cantidad de
+        la vocal inicial: ayaṃ/āyaṃ) → la de inicial BREVE, como en el
+        desempate ya firmado de las bases;
+      · si queda EXACTAMENTE UNA, se afirma; si no, el patrón calla.
+
+    Devuelve True si afirmó (la señal queda «segura» y la lectura primera).
+
+    RÉGIMEN MEDIDO (decisión de Angel, 2026-08-30): el patrón sólo afirma
+    formas cuya frecuencia alcanza `frec_minima` (159: la frecuencia del
+    puesto 5.000, hasta donde llegó la medición). Fuera de ahí el resguardo
+    se debilita —con la forma rara, el piso de las candidatas cae— y
+    aparecían afirmaciones que la medición nunca vio: jātimaraṇā (frec 3)
+    salía como jātiṃ + araṇā siendo el compuesto jāti+maraṇa, y
+    vedhamānehi (7) como vedhaṃ + ānehi siendo el participio vedhamāna.
+    Las formas raras callan hasta que el IEBH amplíe la licencia.
+    """
+    if f_forma < patron.get("frec_minima", 0):
+        return False
+    sup = r["cotejo"]
+    piso = max(f_forma, 1)
+    cand = set()
+    for l in r.get("lecturas", []):
+        comp = [cotejo(x) for x in l.get("componentes", [])]
+        if (len(comp) == 2 and len(comp[0]) >= 2
+                and comp[0].endswith("ṃ")
+                and comp[1][:1] in VOCALES
+                and comp[0][:-1] + "m" + comp[1] == sup
+                and frec.get(comp[0], 0) >= piso
+                and frec.get(comp[1], 0) >= piso):
+            cand.add((comp[0], comp[1]))
+    pares = sorted(cand)
+    if len(pares) == 2:
+        (b1, s1), (b2, s2) = pares
+        if (b1 == b2 and s1 and s2 and s1[1:] == s2[1:]
+                and LARGA.get(s1[:1]) == s2[:1]):
+            pares = [(b1, s1)]
+    if len(pares) != 1:
+        return False
+    base, seg = pares[0]
+    delante, detras = [], []
+    for l in r["lecturas"]:
+        comp = [cotejo(x) for x in l.get("componentes", [])]
+        if comp == [base, seg]:
+            l["patron"] = patron.get("fuente", "")
+            delante.append(l)
+        else:
+            detras.append(l)
+    r["lecturas"] = delante + detras
+    r["senal"] = "segura"
+    r["senal_motivo"] = ("niggahīta → m ante vocal (§34): la única lectura "
+                         "de la clase que pasa el resguardo es «{0} + {1}» "
+                         "— patrón adjudicado ({2})"
+                         .format(base, seg, patron.get("fuente", "")))
+    return True
+
+
 def _aplicar_patron(r):
     """Los patrones adjudicados: la cola enclítica con base única atestiguada.
 
@@ -895,6 +971,12 @@ def _aplicar_patron(r):
     frec = cargar().get("frecuencia", {})
     f_forma = frec.get(r["cotejo"], 0)
     for patron in cargar().get("patrones", []):
+        # La clase de §34 no se declara por la segunda voz sino por la «m»
+        # de la juntura: es otra licencia y va en su propia función.
+        if patron.get("clase") == "niggahita_m":
+            if _patron_niggahita_m(r, patron, frec, f_forma):
+                return
+            continue
         seg = cotejo(patron.get("segunda", ""))
         if not seg:
             continue

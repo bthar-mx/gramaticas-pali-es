@@ -680,6 +680,58 @@ function silenciarNoSandhi(r) {
     }
 }
 
+function patronNiggahitaM(r, patron, frec, fForma) {
+    // El patrón de §34: niggahīta → m ante vocal, con segunda voz corriente.
+    // Aprobado por el IEBH el 2026-08-29. Candidatas: lecturas verificadas
+    // (base, seg) con base en «ṃ», seg en vocal y superficie EXACTAMENTE
+    // base[:-1] + "m" + seg; resguardo por los DOS lados (piso =
+    // max(frec(forma), 1)); gemelas de vocal inicial → la BREVE; si queda
+    // exactamente UNA, se afirma. Receta, medición y porqués:
+    // `_patron_niggahita_m` del Python (informe-niggahita-m.md). Régimen
+    // medido (Angel, 2026-08-30): sólo afirma formas con frecuencia >=
+    // frec_minima; fuera de ahí el resguardo se debilita y la medición no
+    // llegó — porqués en el Python.
+    if (fForma < (patron.frec_minima || 0)) return false;
+    const sup = r.cotejo;
+    const piso = Math.max(fForma, 1);
+    const cand = new Set();
+    for (const l of (r.lecturas || [])) {
+        const comp = (l.componentes || []).map(cotejo);
+        if (comp.length === 2 && comp[0].length >= 2
+            && comp[0].endsWith("ṃ")
+            && OP.VOCALES.includes(comp[1][0] || "")
+            && comp[0].slice(0, -1) + "m" + comp[1] === sup
+            && (frec(comp[0]) || 0) >= piso
+            && (frec(comp[1]) || 0) >= piso)
+            cand.add(comp[0] + " " + comp[1]);
+    }
+    let pares = [...cand].sort().map(x => x.split(" "));
+    if (pares.length === 2) {
+        const [[b1, s1], [b2, s2]] = pares;
+        if (b1 === b2 && s1 && s2 && s1.slice(1) === s2.slice(1)
+            && OP.LARGA[s1[0]] === s2[0])
+            pares = [[b1, s1]];
+    }
+    if (pares.length !== 1) return false;
+    const base = pares[0][0], seg = pares[0][1];
+    const delante = [], detras = [];
+    for (const l of r.lecturas) {
+        const comp = (l.componentes || []).map(cotejo);
+        if (comp.length === 2 && comp[0] === base && comp[1] === seg) {
+            l.patron = patron.fuente || "";
+            delante.push(l);
+        } else {
+            detras.push(l);
+        }
+    }
+    r.lecturas = delante.concat(detras);
+    r.senal = "segura";
+    r.senal_motivo = `niggahīta → m ante vocal (§34): la única lectura de `
+        + `la clase que pasa el resguardo es «${base} + ${seg}» — patrón `
+        + `adjudicado (${patron.fuente || ""})`;
+    return true;
+}
+
 function aplicarPatron(r) {
     // Los patrones adjudicados: cola enclítica con base única atestiguada.
     // Porqués y licencia: `_aplicar_patron` del Python. La unicidad es la
@@ -695,6 +747,13 @@ function aplicarPatron(r) {
     const frec = _cache.frecuencia;
     const fForma = frec(r.cotejo) || 0;
     for (const patron of (_cache.patrones || [])) {
+        // La clase de §34 no se declara por la segunda voz sino por la «m»
+        // de la juntura: otra licencia, otra función. Porqués y receta
+        // medida: `_patron_niggahita_m` del Python.
+        if (patron.clase === "niggahita_m") {
+            if (patronNiggahitaM(r, patron, frec, fForma)) return;
+            continue;
+        }
         const seg = cotejo(patron.segunda || "");
         if (!seg) continue;
         // El resguardo de la base residual, adjudicado por el IEBH

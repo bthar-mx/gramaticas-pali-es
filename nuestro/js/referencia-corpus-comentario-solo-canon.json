@@ -3200,16 +3200,16 @@
    "forma": "ayamettha",
    "mias": [
     [
+     "ayaṃ",
+     "ettha"
+    ],
+    [
      "ayā",
      "mettha"
     ],
     [
      "ā",
      "yamettha"
-    ],
-    [
-     "ayaṃ",
-     "ettha"
     ],
     [
      "aya",
@@ -3237,7 +3237,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "panetaṃ",
@@ -10602,6 +10602,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -10628,10 +10632,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -10679,7 +10679,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "tasmiṃ",
@@ -12437,6 +12437,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -12463,10 +12467,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -12514,7 +12514,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "pabbajitvāti",
@@ -27525,12 +27525,12 @@
    "forma": "sabbametaṃ",
    "mias": [
     [
-     "sabbā",
-     "metaṃ"
-    ],
-    [
      "sabbaṃ",
      "etaṃ"
+    ],
+    [
+     "sabbā",
+     "metaṃ"
     ],
     [
      "sabba",
@@ -27554,7 +27554,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "uposathassidaṃ",
@@ -27759,12 +27759,12 @@
    "forma": "sabbametaṃ",
    "mias": [
     [
-     "sabbā",
-     "metaṃ"
-    ],
-    [
      "sabbaṃ",
      "etaṃ"
+    ],
+    [
+     "sabbā",
+     "metaṃ"
     ],
     [
      "sabba",
@@ -27788,7 +27788,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "uposathassidaṃ",
@@ -27888,12 +27888,12 @@
    "forma": "sabbametaṃ",
    "mias": [
     [
-     "sabbā",
-     "metaṃ"
-    ],
-    [
      "sabbaṃ",
      "etaṃ"
+    ],
+    [
+     "sabbā",
+     "metaṃ"
     ],
     [
      "sabba",
@@ -27917,7 +27917,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "uposathassidaṃ",
@@ -56067,6 +56067,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -56093,10 +56097,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -56144,7 +56144,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "balibhājanaṃ",
@@ -59134,6 +59134,10 @@
    "forma": "tamatthaṃ",
    "mias": [
     [
+     "taṃ",
+     "atthaṃ"
+    ],
+    [
      "tama",
      "itthaṃ"
     ],
@@ -59172,10 +59176,6 @@
     [
      "tama",
      "thaṃ"
-    ],
-    [
-     "taṃ",
-     "atthaṃ"
     ],
     [
      "ta",
@@ -59259,7 +59259,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 1
   },
   {
    "forma": "maddathāti",
@@ -65156,6 +65156,10 @@
    "forma": "tamatthaṃ",
    "mias": [
     [
+     "taṃ",
+     "atthaṃ"
+    ],
+    [
      "tama",
      "itthaṃ"
     ],
@@ -65194,10 +65198,6 @@
     [
      "tama",
      "thaṃ"
-    ],
-    [
-     "taṃ",
-     "atthaṃ"
     ],
     [
      "ta",
@@ -65281,7 +65281,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 1
   },
   {
    "forma": "mamādāya",
@@ -75257,16 +75257,16 @@
    "forma": "imamatthaṃ",
    "mias": [
     [
+     "imaṃ",
+     "atthaṃ"
+    ],
+    [
      "imā",
      "matthaṃ"
     ],
     [
      "ī",
      "mamatthaṃ"
-    ],
-    [
-     "imaṃ",
-     "atthaṃ"
     ],
     [
      "ima",
@@ -75330,7 +75330,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "vassasataṃ",
@@ -83034,6 +83034,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -83060,10 +83064,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -83111,7 +83111,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "athassā",
@@ -94551,16 +94551,16 @@
    "forma": "ayamettha",
    "mias": [
     [
+     "ayaṃ",
+     "ettha"
+    ],
+    [
      "ayā",
      "mettha"
     ],
     [
      "ā",
      "yamettha"
-    ],
-    [
-     "ayaṃ",
-     "ettha"
     ],
     [
      "aya",
@@ -94588,7 +94588,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "panetaṃ",
@@ -111048,12 +111048,12 @@
    "forma": "etamatthaṃ",
    "mias": [
     [
-     "etā",
-     "matthaṃ"
-    ],
-    [
      "etaṃ",
      "atthaṃ"
+    ],
+    [
+     "etā",
+     "matthaṃ"
     ],
     [
      "eta",
@@ -111113,7 +111113,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "jānāpemāti",
@@ -115736,6 +115736,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -115762,10 +115766,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -115813,7 +115813,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "pañcasatā",
@@ -129858,6 +129858,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -129876,10 +129880,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -129915,7 +129915,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "kalahavūpasamatthaṃ",
@@ -142091,6 +142091,10 @@
    "forma": "tamatthaṃ",
    "mias": [
     [
+     "taṃ",
+     "atthaṃ"
+    ],
+    [
      "tama",
      "itthaṃ"
     ],
@@ -142129,10 +142133,6 @@
     [
      "tama",
      "thaṃ"
-    ],
-    [
-     "taṃ",
-     "atthaṃ"
     ],
     [
      "ta",
@@ -142216,7 +142216,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 1
   },
   {
    "forma": "puravareti",
@@ -150439,6 +150439,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -150465,10 +150469,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -150516,7 +150516,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "tenāyaṃ",
@@ -154765,6 +154765,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -154791,10 +154795,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -154842,12 +154842,16 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -154874,10 +154878,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -154925,7 +154925,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "paccabhāsīti",
@@ -156805,6 +156805,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -156831,10 +156835,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -156882,7 +156882,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "ayameva",
@@ -164025,6 +164025,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -164051,10 +164055,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -164102,7 +164102,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "muttāmhi",
@@ -168779,6 +168779,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -168805,10 +168809,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -168856,7 +168856,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "āsinti",
@@ -171508,6 +171508,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -171534,10 +171538,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -171585,7 +171585,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "idameva",
@@ -192505,6 +192505,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -192531,10 +192535,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -192582,7 +192582,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "viharamānāyāti",
@@ -272679,12 +272679,12 @@
    "forma": "sesamettha",
    "mias": [
     [
-     "sesā",
-     "mettha"
-    ],
-    [
      "sesaṃ",
      "ettha"
+    ],
+    [
+     "sesā",
+     "mettha"
     ],
     [
      "sesa",
@@ -272708,7 +272708,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "uttānameva",
@@ -297808,6 +297808,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -297834,10 +297838,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -297885,7 +297885,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "kāmacchandañca",
@@ -298513,6 +298513,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -298539,10 +298543,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -298590,7 +298590,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "anubrūhehīti",
@@ -298970,6 +298970,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -298996,10 +299000,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -299047,7 +299047,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "gamīti",
@@ -322411,6 +322411,10 @@
    "forma": "tamatthaṃ",
    "mias": [
     [
+     "taṃ",
+     "atthaṃ"
+    ],
+    [
      "tama",
      "itthaṃ"
     ],
@@ -322449,10 +322453,6 @@
     [
      "tama",
      "thaṃ"
-    ],
-    [
-     "taṃ",
-     "atthaṃ"
     ],
     [
      "ta",
@@ -322536,7 +322536,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 1
   },
   {
    "forma": "visāradāva",
@@ -322589,12 +322589,12 @@
    "forma": "etamatthaṃ",
    "mias": [
     [
-     "etā",
-     "matthaṃ"
-    ],
-    [
      "etaṃ",
      "atthaṃ"
+    ],
+    [
+     "etā",
+     "matthaṃ"
     ],
     [
      "eta",
@@ -322654,7 +322654,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "vijjatīti",
@@ -322901,12 +322901,12 @@
    "forma": "etamatthaṃ",
    "mias": [
     [
-     "etā",
-     "matthaṃ"
-    ],
-    [
      "etaṃ",
      "atthaṃ"
+    ],
+    [
+     "etā",
+     "matthaṃ"
     ],
     [
      "eta",
@@ -322966,7 +322966,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "meti",
@@ -323094,12 +323094,12 @@
    "forma": "etamatthaṃ",
    "mias": [
     [
-     "etā",
-     "matthaṃ"
-    ],
-    [
      "etaṃ",
      "atthaṃ"
+    ],
+    [
+     "etā",
+     "matthaṃ"
     ],
     [
      "eta",
@@ -323159,7 +323159,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "anallīnāva",
@@ -329426,6 +329426,10 @@
    "forma": "evamādinā",
    "mias": [
     [
+     "evaṃ",
+     "ādinā"
+    ],
+    [
      "evamādi",
      "inā"
     ],
@@ -329444,10 +329448,6 @@
     [
      "evamādī",
      "nā"
-    ],
-    [
-     "evaṃ",
-     "ādinā"
     ],
     [
      "eva",
@@ -335318,6 +335318,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -335344,10 +335348,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -335395,7 +335395,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "bhāvitoti",
@@ -336206,16 +336206,16 @@
    "forma": "imamatthaṃ",
    "mias": [
     [
+     "imaṃ",
+     "atthaṃ"
+    ],
+    [
      "imā",
      "matthaṃ"
     ],
     [
      "ī",
      "mamatthaṃ"
-    ],
-    [
-     "imaṃ",
-     "atthaṃ"
     ],
     [
      "ima",
@@ -336279,7 +336279,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "kalyāṇamittatāti",
@@ -340072,6 +340072,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -340090,10 +340094,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -340129,7 +340129,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "paccūsavelāyaṃ",
@@ -347284,6 +347284,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -347310,10 +347314,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -347361,7 +347361,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "mākāsi",
@@ -350752,6 +350752,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -350778,10 +350782,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -350829,7 +350829,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "gamissantīti",
@@ -353676,6 +353676,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -353702,10 +353706,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -353753,7 +353753,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "mākāsīti",
@@ -353886,6 +353886,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -353912,10 +353916,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -353963,7 +353963,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "sarīrameva",
@@ -365256,6 +365256,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -365274,10 +365278,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -365313,7 +365313,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "sahitāva",
@@ -370074,6 +370074,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -370092,10 +370096,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -370131,7 +370131,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "jātāsi",
@@ -373495,12 +373495,12 @@
    "forma": "sabbametaṃ",
    "mias": [
     [
-     "sabbā",
-     "metaṃ"
-    ],
-    [
      "sabbaṃ",
      "etaṃ"
+    ],
+    [
+     "sabbā",
+     "metaṃ"
     ],
     [
      "sabba",
@@ -373524,7 +373524,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "attanāva",
@@ -376870,6 +376870,10 @@
    "forma": "vuttamatthaṃ",
    "mias": [
     [
+     "vuttaṃ",
+     "atthaṃ"
+    ],
+    [
      "vuttamatta",
      "haṃ"
     ],
@@ -376908,10 +376912,6 @@
     [
      "vuttā",
      "matthaṃ"
-    ],
-    [
-     "vuttaṃ",
-     "atthaṃ"
     ],
     [
      "vutta",
@@ -376987,7 +376987,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 1
   },
   {
    "forma": "kāyakammanti",
@@ -378093,6 +378093,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -378119,10 +378123,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -378170,7 +378170,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "dhārentīti",
@@ -381373,6 +381373,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -381391,10 +381395,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -381430,7 +381430,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "pihayantīti",
@@ -406103,6 +406103,10 @@
    "forma": "vuttamatthaṃ",
    "mias": [
     [
+     "vuttaṃ",
+     "atthaṃ"
+    ],
+    [
      "vuttamatta",
      "haṃ"
     ],
@@ -406141,10 +406145,6 @@
     [
      "vuttā",
      "matthaṃ"
-    ],
-    [
-     "vuttaṃ",
-     "atthaṃ"
     ],
     [
      "vutta",
@@ -406220,7 +406220,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 11
+   "rango": 1
   },
   {
    "forma": "buddhoti",
@@ -416406,6 +416406,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -416424,10 +416428,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -416463,7 +416463,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "tenāha",
@@ -427757,6 +427757,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -427783,10 +427787,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -427834,7 +427834,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "ajjaṭṭhamī",
@@ -444733,6 +444733,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -444759,10 +444763,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -444810,7 +444810,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "tūriyārivāti",
@@ -451284,6 +451284,10 @@
    "forma": "aññamaññaṃ",
    "mias": [
     [
+     "aññaṃ",
+     "aññaṃ"
+    ],
+    [
      "añña",
      "amaññaṃ"
     ],
@@ -451302,10 +451306,6 @@
     [
      "aññā",
      "maññaṃ"
-    ],
-    [
-     "aññaṃ",
-     "aññaṃ"
     ],
     [
      "añña",
@@ -451341,7 +451341,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 6
+   "rango": 1
   },
   {
    "forma": "kateti",
@@ -479172,6 +479172,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -479198,10 +479202,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -479249,7 +479249,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "ekamanāti",
@@ -521228,12 +521228,12 @@
    "forma": "sabbametaṃ",
    "mias": [
     [
-     "sabbā",
-     "metaṃ"
-    ],
-    [
      "sabbaṃ",
      "etaṃ"
+    ],
+    [
+     "sabbā",
+     "metaṃ"
     ],
     [
      "sabba",
@@ -521257,7 +521257,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 2
+   "rango": 1
   },
   {
    "forma": "amatamahānibbānameva",
@@ -525392,6 +525392,10 @@
    "forma": "tameva",
    "mias": [
     [
+     "taṃ",
+     "eva"
+    ],
+    [
      "tama",
      "eva"
     ],
@@ -525418,10 +525422,6 @@
     [
      "tamā",
      "iva"
-    ],
-    [
-     "taṃ",
-     "eva"
     ],
     [
      "ta",
@@ -525469,7 +525469,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "mahiddhikataṃ",
@@ -528694,6 +528694,10 @@
    "forma": "evamādinā",
    "mias": [
     [
+     "evaṃ",
+     "ādinā"
+    ],
+    [
      "evamādi",
      "inā"
     ],
@@ -528712,10 +528716,6 @@
     [
      "evamādī",
      "nā"
-    ],
-    [
-     "evaṃ",
-     "ādinā"
     ],
     [
      "eva",
@@ -535802,16 +535802,16 @@
    "forma": "ayamettha",
    "mias": [
     [
+     "ayaṃ",
+     "ettha"
+    ],
+    [
      "ayā",
      "mettha"
     ],
     [
      "ā",
      "yamettha"
-    ],
-    [
-     "ayaṃ",
-     "ettha"
     ],
     [
      "aya",
@@ -535839,7 +535839,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "vuttanayeneva",
