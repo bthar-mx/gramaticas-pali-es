@@ -2,10 +2,14 @@
 
 *Complementa a los briefings 05–36. Tema de la sesión 37 (2026-08-30, en
 vivo con Angel): **el testigo del DPD deja de estar vacío y se pone a
-trabajar. Los dos informes re-corridos; un informe nuevo del sub-piso de
-§34 que encuentra que lo falso tiene firma y no es la frecuencia; y el
-criterio de categoría del IEBH mecanizado por fin, con su límite medido.
-Nada adjudicado: los tres informes preparan, y firmar es del IEBH.***
+trabajar; y al final del día aparece un testigo mejor, que es el Venerable
+mismo.** Los dos informes re-corridos; un informe nuevo del sub-piso de §34
+que encuentra que lo falso tiene firma y no es la frecuencia; el criterio de
+categoría del IEBH mecanizado por fin, con su límite medido; y **el CORPUS
+SEPARADO (§4 ter), que es lo más importante del día**: los textos bilingües
+del IEBH traen las junturas abiertas y las ecuaciones de sandhi escritas, y
+ya delatan lecturas FALSAS del motor, no sólo silencios. Nada adjudicado:
+todo prepara, y firmar es del IEBH.*
 
 > **Lo primero que tiene que saber el chat nuevo:** verificar
 > `git log origin/main..main`. Las reglas de siempre: el Python es la referencia; los CINCO
@@ -270,6 +274,107 @@ dentro de una interfaz que ya estaba traducida. Ahora van con los mismos
 Se toca **la plantilla**, `recursos/solucionador/plantilla.html`, nunca el
 HTML de `site/`. Los CINCO arneses, en verde después del cambio.
 
+## 4 ter. EL CORPUS SEPARADO — lo más importante del día, y lo más nuevo
+
+Angel trajo los textos bilingües del IEBH (Bhikkhu Nandisena), y con ellos el
+proyecto tiene por primera vez **segmentación de mano del Venerable**, que es
+el dato que CLAUDE.md declara como cuello de botella: «sin saber que lokaggo
+es loka + aggo no hay motor de reglas que valga».
+
+### Dos maneras de leerlos, y la segunda es mejor
+
+**1. Junturas por separación** (`herramientas/extraer_junturas_separadas.py`
+→ `recursos/corpus-separado/junturas.json`). Los textos imprimen el pāḷi con
+las junturas ABIERTAS —«Evam eva», «yad idaṃ», «Puna c’ aparaṃ», «sato ’va»—
+donde la edición las imprime unidas. Unir es literal: fuera el espacio y el
+apóstrofo.
+
+Cómo se distingue de un espacio corriente, que el documento usa igual para
+las dos cosas: el **apóstrofo** es inequívoco; y una palabra pāḷi acaba en
+vocal o en «ṃ», así que una acabada en consonante —evam, yad, kathañ, imam,
+tam, tañ, yāvad, muttan— está a media operación y abre juntura.
+
+**2. Ecuaciones de la «Lista de voces»**
+(`herramientas/extraer_ecuaciones_sandhi.py` → `ecuaciones.json`). Los
+documentos de capítulo de la Therīgāthā traen las formas de sandhi
+**resueltas con un signo igual**: «Nāccharāsaṅghātamattam = na
+accharāsaṅghātamattaṃ». Es mejor evidencia por dos razones: la resolución
+está DICHA y no inferida, y da los componentes **subyacentes** —cittassa +
+upasamaṃ— y no sólo el corte de superficie. Eso es lo que un caso necesita.
+
+### Cómo se verifica cada uno, y NO es lo mismo
+
+- **Junturas**: se publica sólo si la forma UNIDA está atestiguada en la
+  edición. Sobre el Mahāsatipaṭṭhāna dio 474 de 474 y descartó 0, que es la
+  mejor señal de que el método es sano.
+- **Ecuaciones**: la primera versión exigía lo mismo de la forma de la
+  IZQUIERDA y **descartaba todo**, con razón —«Nāccharāsaṅghātamattam» acaba
+  en «m» porque le sigue «pi» y en la edición existe unida a ella—. La
+  izquierda es un fragmento a media operación. Lo correcto: que las voces de
+  la DERECHA estén atestiguadas, y comprobar aparte si el motor RECOMPONE,
+  tolerando la «m» final por «ṃ».
+
+### Lo que lleva encontrado (5 textos, al cierre)
+
+**562 junturas**, las 562 atestiguadas, 78 candidatas descartadas. El motor
+señala 434 (77,2 %) y **no ve 116**. Y 20 ecuaciones, 4 de juntura.
+
+Las que no ve no son menudencias: tenāha (6.018), ādimāha (3.961), cettha
+(2.140), vuttanayeneva (1.908), athassa (1.790), panassa (1.731), caparaṃ
+(1.548), cassa (1.544), cetaṃ (1.038).
+
+**Y hay errores, no sólo silencios:**
+
+| el Venerable | el motor | |
+| --- | --- | --- |
+| caparaṃ = c \| aparaṃ | capi + araṃ | falso |
+| nāhaṃ = na + ahaṃ | na + **haṃ** | segunda voz inexistente, y sin señal |
+| sājja = sā + ajja | **sa** + ajja | vocal breve por larga |
+| tvamasi = tvam \| asi | ta + vamasi | falso |
+| cittassūpasam’ = cittassa + upasamaṃ | — | no lo recompone |
+
+`tvamasi` importa aparte: es una de las dos formas que el informe cita como
+CORRECTAS silenciadas por el piso de §34, y resulta que el motor no sólo la
+calla, la lee mal.
+
+### Lo que esto le hace a las dos decisiones
+
+Las dos del §3 y §4 se apoyaban en el testigo del DPD, que **callaba sobre
+158 de 419**. El texto del Venerable no calla. Separa «c | ettha», «c |
+assa», «c | etaṃ», «c | esa» —las cuatro proclíticas que el mecanismo
+afirmaría y la página no señala— y trae 89 junturas de §34 de las que el
+motor no ve 26, entre ellas dos que **lee bien y calla por el resguardo**
+(vuttanayameva 571, pattacīvaramādāya 467). Todo eso está ya en el informe
+al Venerable.
+
+### Estado y lo que falta
+
+En `recursos/corpus-separado/`: el Mahāsatipaṭṭhāna y su Vaṇṇanā (completos,
+los puso Angel), la Therīgāthā I-IV, y de Pañcakanipāta los versos 67-71 y
+72-81. El `LEEME.md` de la carpeta explica procedencia, licencia y qué hacer
+con un archivo nuevo (nada: se deja el `.txt` crudo).
+
+**Faltan 19 documentos** de los tres capítulos que pidió Angel: Pañcaka 12
+—van 4—, Chakka 8, Sattaka 3. Se recogen del Drive del proyecto abriendo la
+carpeta con el navegador y sacando los `data-id` de las filas, y luego
+`https://docs.google.com/document/d/<id>/export?format=txt`. **Ojo con el
+navegador: la primera llamada de JavaScript tras navegar devuelve la página
+vieja; hay que repetirla.** Los identificadores de los tres capítulos:
+Pañcaka `1TNamf2nmBkvgC2gvrZXWuXvai5btJTLh`, Chakka
+`1ClowIWWdbZuQT0qlhaN1Ij02ExpX6UGj`, Sattaka
+`1hkEsXxKBz3y21RIkPwd-e6ufkTp0btV8`.
+
+**Sin usar todavía**, y está en esos mismos documentos: las citas de
+Kaccāyana atadas a formas concretas (Kac. §45, Rū. 470, Kac. §517), las
+raíces en la convención del proyecto (√gamu, √labha, √visa, √ñā, √disī), el
+análisis morfológico con el nombre del paradigma —que es lo que
+`recursos/paradigmas` cubre— y el aparato de variantes de las notas al pie
+(PTS, Sī, Syā, Ka).
+
+**El PDF del Mahāparinibbāna** está en la carpeta y **diagnostica limpio**:
+122 páginas con capa de texto de verdad y diacríticos correctos, de modo que
+NO hace falta OCR. Sin extraer.
+
 ## 5. AVISOS AL CHAT NUEVO
 
 - **NADA DE ESTA SESIÓN SE HA APLICADO AL MOTOR.** Las tres firmas del §3 y
@@ -300,16 +405,24 @@ HTML de `site/`. Los CINCO arneses, en verde después del cambio.
    suyo mecanizado, con el aviso de que su forma literal es la peor de las
    dos y de que la etiqueta tiene 50 % de recall. **Ampliar la licencia y
    firmar el criterio son suyos.**
-4. **La lista corta de las 69** (§3 quater) por el modo revisión, en vez del
+4. **Terminar el corpus separado** (§4 ter): los 19 documentos que faltan de
+   Pañcaka, Chakka y Sattaka, y extraer el PDF del Mahāparinibbāna, que
+   diagnostica limpio. Es trabajo mecánico y bien definido.
+5. **Los siete arreglos que el corpus ya delata** —caparaṃ, panassa,
+   tamenaṃ, yāvadeva, nāhaṃ, sājja y la familia de `mhī`—: están medidos y
+   **sin registrar**, porque convertirlos en casos es adjudicar.
+6. **La lista corta de las 69** (§3 quater) por el modo revisión, en vez del
    archivo de 3.852 líneas. Empezando por la regla de los absolutivos en
    «-tvā», que es UNA firma para cuatro voces.
-5. **Medir el falso «segura» de `jānāti` y `pīti`** (§3 quater): cuánto
+7. **Medir el falso «segura» de `jānāti` y `pīti`** (§3 quater): cuánto
    dispara la regla de vocal larga ante «ti» sobre palabras corrientes, y si
    el criterio de categoría del §4 lo cortaría. Evidencia, no aplicación.
-6. **La pasada única de dos junturas** (briefing 35 §4): cierra el punto 4 del
+8. **La pasada única de dos junturas** (briefing 35 §4): cierra el punto 4 del
    mapa 32 (idamavocanti) y haría innecesarias muchas `escalera_iebh`.
-7. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD en el
+9. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD en el
    motor, des-flexión. **Sin empezar.**
 
-**En la cola al cerrar:** una entrada
-(`2026-08-30T14-18-51-298Z-2efed114`, 1 veredicto), sin recoger.
+**Lo que el corpus separado desbloquea a plazo**, y conviene no perderlo de
+vista: es la primera vez que se puede medir el recall sobre TEXTO CORRIDO y
+no sobre un banco, y es el material que el solucionador de párrafos
+necesitaba para el problema que CLAUDE.md declara insoluble sin él.
