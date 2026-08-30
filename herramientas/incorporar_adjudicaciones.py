@@ -133,6 +133,13 @@ def main():
             else:
                 saltados += 1
             continue
+        # Si el veredicto trae la ecuación entera («hevaṃ = hi evaṃ»), los
+        # componentes son lo que sigue al «=»: sin esto, la voz y el signo
+        # se tragaban como componentes (pasó el 2026-08-30 con hevaṁ y
+        # tiṇacchadananti, y la lectura adjudicada quedaba sin escalera).
+        # Va ANTES del cotejo con un caso existente, que también lee v.
+        if "=" in v:
+            v = v.split("=", 1)[1].strip()
         existente = por_clave.get(cotejo(forma))
         if existente is not None:
             # El veredicto no se toca. La escalera y la nota se AÑADEN si

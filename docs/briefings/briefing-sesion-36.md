@@ -109,25 +109,54 @@ La firma era del 2026-08-29 (briefing 35 §6); el mecanismo es de hoy.
 - La familia de `etadavocuṁ` (briefing 35 §6 quater) queda cubierta por
   el patrón — dentro del régimen.
 
-## 4. EL TESTIGO DEL DPD — a medias, con el camino despejado
+## 4. EL TESTIGO DEL DPD — HECHO, y con un hallazgo que salvó los arneses
 
-- `recursos/lexico/dpd-descomposiciones.tsv` está **gitignorado** (commit
-  `cd346c6`), como los PDF: no viaja con el repositorio, y la línea evita
-  además que el `git add -A` del ciclo lo cuele en un commit de la cola.
-- **El arenal no puede bajar el archivo**: el proxy deja github.com (las
-  páginas) pero bloquea los hosts de descarga (release-assets, raw,
-  codeload, api). Se le pidió a Angel bajar
-  `dpd-mobile-db.zip` (200 MB, release v0.4.20260728, sha256
-  `9ce57d36…`) y dejarlo en la carpeta.
-- **Cuando esté:** verificar sha256 → extraer en /tmp →
-  `python3 nuestro/exportar_dpd.py <dpd-mobile.db>` →
-  `python3 nuestro/preparar_descomposiciones.py` → queda sólo el tsv
-  final en `recursos/lexico/`. Después: re-correr los dos informes (la
-  columna del testigo se llena) y montar el criterio de categoría
-  gramatical del IEBH para los proclíticos (briefing 35 §6: «si el
-  diccionario da la forma entera como palabra con su categoría, no es
-  sandhi proclítico» — para eso está `dpd-pos.tsv`, que exporta el mismo
-  guion).
+- **`recursos/lexico/dpd-descomposiciones.tsv` está en la carpeta**: 77,2
+  MB, 852.542 formas, del release v0.4.20260728 (sha256 del zip
+  verificada: `9ce57d36…`). Angel bajó el zip (el proxy del arenal deja
+  github.com pero bloquea los hosts de descarga); la cadena fue
+  `exportar_dpd.py` → `preparar_descomposiciones.py`. **Gitignorado**,
+  como los PDF — y para que el `git add -A` del ciclo no lo trague.
+- **EL HALLAZGO: con el TSV presente, el Python de solo-canon divergía
+  del JS publicado.** En `motor.js`, `descomposicion()` devuelve SIEMPRE
+  `[]` («fuera, por decisión del Venerable»); el Python en cambio la
+  consultaba si el archivo existía — señal «segura» por «el DPD publica
+  su propia descomposición» y reordenación de lecturas. La paridad se
+  sostenía POR ACCIDENTE: el archivo no existía en ninguna máquina que
+  volcara referencias. Muestreadas 500 formas de la referencia: **138
+  cambiaban de señal** (sattadhītaro «segura» como sattadhā + itaro…).
+- **Arreglo: en SOLO_CANON los usos de `descomposicion()` que cambian la
+  conducta quedan apagados** (la señal en `senal()` y la ordenación en
+  las propuestas), espejo del JS. El modo de texto entero de la pantalla
+  del IEBH conserva la regla, que ahí está medida (recall 71-79 %). Los
+  informes llaman a `S.descomposicion()` directo y el testigo les
+  funciona igual. Tras el guardia: 0 de 500 difieren.
+- **OJO en la Mac del IEBH:** si él trae su copia del TSV a
+  `recursos/lexico/`, ANTES de este commit su Python también habría
+  divergido. Con el guardia ya da igual dónde esté el archivo.
+- **Pendiente que el TSV desbloquea:** re-correr los dos informes (la
+  columna del testigo se llena; `hay_testigo()` ya da True) y montar el
+  criterio de categoría gramatical del IEBH para los proclíticos
+  (briefing 35 §6) — para eso está `dpd-pos.tsv` (16,6 MB, 555.280
+  pares forma-lema-categoría), que exportó el mismo guion y quedó en la
+  raíz del repositorio, también gitignorado.
+
+## 4 bis. hevaṃ SIN ESCALERA — el «=» tragado, y el arreglo triple
+
+Angel vio que `hevaṃ = hi evaṃ` salía adjudicado SIN secuencia, con la
+escalera correcta derivada tres lecturas más abajo. La causa no era del
+motor: **dos casos se guardaron con la ecuación entera dentro de los
+componentes** —`«hevaṃ + = + hi + evaṃ»` y lo mismo en
+`tiṇacchadana3n”ti`— porque el revisor escribió «voz = componentes» en el
+campo que sólo esperaba componentes, y el separador se lo tragó. La
+lectura adjudicada no casaba con ninguna derivada y quedaba sin pasos.
+
+Arreglo triple, mismo día: los DOS casos corregidos con nota (el
+veredicto era inequívoco en la propia ecuación); `revComponentes()` de la
+página toma lo que sigue al «=» si lo hay; y el incorporador hace lo
+mismo con el `VEREDICTO:` — antes del cotejo con casos existentes, que
+también lee ese texto. `hevaṃ` muestra ya su escalera §10 · §12 · §11
+como adjudicada.
 
 ## 5. AVISOS AL CHAT NUEVO
 
@@ -154,10 +183,11 @@ La firma era del 2026-08-29 (briefing 35 §6); el mecanismo es de hoy.
 ## 6. LO QUE SIGUE (en orden)
 
 1. **Rotar la clave** (§0 — dos sesiones ya).
-2. **Empujar los cuatro commits** si no se ha hecho (o el ciclo de Angel
-   los lleva con el próximo lote).
-3. **Terminar el testigo del DPD** (§4): zip → tsv → informes con la
-   columna llena → criterio de categoría para los proclíticos.
+2. **Empujar los commits** si no se ha hecho (o el ciclo de Angel los
+   lleva con el próximo lote).
+3. **Re-correr los dos informes con el testigo lleno** (§4) y montar el
+   criterio de categoría gramatical para los proclíticos con
+   `dpd-pos.tsv`.
 4. **Enseñar al IEBH el régimen medido de §34** (§3): los dos falsos, el
    piso 159, y lo correcto que calla debajo (ekamante, tvamasi). Ampliar
    la licencia es suyo.

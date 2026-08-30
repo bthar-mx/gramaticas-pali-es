@@ -811,8 +811,15 @@ def proponer(F, una_voz=True, compuestos=False):
     # nuestra: es coincidir con un segundo testigo. Medido sobre la Therīgāthā,
     # de 493 formas que el DPD descompone, las 493 coinciden con el corte del
     # corpus. Después, el orden por nipāta, que ya estaba medido.
+    #
+    # EN SOLO-CANON ESTE TESTIGO CALLA, como en el JS publicado (motor.js:
+    # «Las descomposiciones del DPD: fuera, por decisión del Venerable»;
+    # allí `descomposicion()` devuelve siempre []). Hasta el 2026-08-30 la
+    # paridad se sostenía por accidente —el TSV no existía en ninguna
+    # máquina que volcara referencias— y al traerlo a recursos/lexico/ el
+    # orden de lecturas cambiaba en Python y los arneses habrían caído.
     dpd = set()
-    for d in descomposicion(F):
+    for d in ([] if SOLO_CANON else descomposicion(F)):
         for i in range(len(d) - 1):
             dpd.add((cotejo(d[i]), cotejo(d[i + 1])))
         dpd.add((cotejo(d[0]), cotejo("".join(d[1:]))))
@@ -1552,7 +1559,12 @@ def senal(voz):
         # diciendo dónde está la juntura. En el corpus de medida no aparece
         # (0 %), pero el lector pega texto de cualquier fuente.
         return ("segura", "la edición marcó la juntura: apóstrofo o guion")
-    if descomposicion(voz):
+    if not SOLO_CANON and descomposicion(voz):
+        # En solo-canon el testigo del DPD calla, como en el JS publicado
+        # (motor.js, decisión del Venerable): esta regla es del modo de
+        # texto entero de la pantalla, donde está medida (recall 71-79 %).
+        # Sin el guardia, traer el TSV a recursos/lexico/ ascendía 138 de
+        # 500 formas muestreadas y rompía la paridad con el JS.
         return ("segura", "el DPD publica su propia descomposición de esta voz")
     if c.endswith("ti") and len(c) > 3 and c[-3] in "āīū":
         return ("segura", "cola de «iti»: vocal larga antes de «ti»")

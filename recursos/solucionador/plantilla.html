@@ -1205,8 +1205,13 @@ function revAcciones(){
 }
 /* Los componentes se aceptan como los escribe el revisor: con «+» o
    separados por espacios (el IEBH escribió «yen' āyasmā» y el campo lo
-   rechazaba; corregido el mismo día). */
+   rechazaba; corregido el mismo día). Y si escribe la ecuación entera
+   —«hevaṃ = hi evaṃ»— se toma lo que sigue al «=»: el 2026-08-30 dos
+   casos se guardaron con «voz + = +» dentro de los componentes y la
+   lectura adjudicada quedó sin escalera por no casar con ninguna. */
 function revComponentes(t){
+  const i = t.indexOf('=');
+  if(i !== -1) t = t.slice(i + 1);
   const partes = (t.includes('+') ? t.split('+') : t.split(/\s+/u))
     .map(x => x.trim()).filter(x => x);
   return partes.length >= 2 ? partes.join(' + ') : null;
