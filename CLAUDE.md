@@ -56,6 +56,45 @@ pérdida:
 Un chat nuevo empieza sin memoria de la conversación anterior: lo que no quede
 escrito en el briefing se pierde.
 
+## Cuando llegan veredictos: las escaleras, siempre
+
+**Pedido de Angel, 2026-08-30.** Un veredicto adjudica los COMPONENTES; casi
+nunca trae la ESCALERA. Y un caso sin escalera es media respuesta: la página
+enseña el corte y calla el cómo, que es justo lo que un lector de gramática
+viene a ver.
+
+Así que cada vez que entren veredictos —por la cola, por el modo revisión o
+dichos en la sesión—, **sin que Angel lo pida**:
+
+    python3 herramientas/auditar_derivacion_casos.py
+
+y para cada caso que quede sin derivar, mirar por qué y proponer la
+secuencia. La auditoría ya distingue los tres motivos, y **cada uno pide
+una respuesta distinta**:
+
+| lo que dice la auditoría | qué significa | qué hacer |
+| --- | --- | --- |
+| «el motor corta, pero no ahí» | el motor no propone ese corte | proponer la escalera a mano desde los aforismos |
+| «voz no atestiguada en el léxico» | la primera voz no existe suelta en la edición | buscar una forma hermana que el motor SÍ derive y copiar su forma |
+| escalera vacía y nada más | no ocurre ninguna operación | es **pakati**, y la escalera de un paso es la respuesta correcta |
+
+Reglas que no se saltan, y son las de siempre:
+
+- **Proponer y verificar, nunca afirmar.** Una secuencia sólo vale si
+  `S.combinar(a, b)` la recompone exactamente. `combinar()` devuelve ya la
+  escalera con sus §N y el campo `recompone`; si no recompone, no se publica.
+- **Nunca inventar un paso para tapar un hueco.** Antes de darla por
+  imposible, mirar §51 y el «ca» de §20 (sección «Cómo averiguar qué sutta
+  explica una operación», más abajo), y el capítulo de Thitzana.
+- **La escalera propuesta es una PROPUESTA.** Se le enseña a Angel con su
+  verificación; firmarla es suya. Lo que él escriba a mano entra como
+  `escalera_iebh`, verbatim y rotulada como suya, por
+  `incorporar_adjudicaciones.py`.
+- Si los componentes firmados esconden la operación —`pātur + ahosi` no deja
+  ningún paso que mostrar, mientras que `pātu + ahosi` da «pātu r ahosi
+  (§35)»—, **eso se dice**: es pregunta sobre los componentes, no sobre la
+  escalera, y la decide él.
+
 ## Cómo se publica
 
 El markdown es la fuente; el HTML de `site/` es salida generada. **Nunca se
