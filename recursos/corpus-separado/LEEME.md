@@ -114,6 +114,19 @@ extractor ya sabía descartar. En el Mahāparinibbāna: 100 llamadas pegadas y
   tamaño, ninguna nueva — y eso también es un dato: el corpus empieza a
   saturarse en los textos cortos.
 
+- **Aggañña-sutta** y **Mālukyaputta-sutta** (con su Comentario y su
+  Sub-Comentario), puestos el 2026-08-30. Entre los dos aportan 126
+  junturas, y de las más frecuentes de todo el corpus: ceva (8.526),
+  evameva (3.475), neva (3.404), etadavoca (3.273), yadidaṃ (1.718).
+
+- **Ādittapariyāya-sutta**, el 2026-08-30, y **con otra mano**: traducido
+  del pāḷi al español por **Rutty Bessoudo Salvo**, no por Bhikkhu
+  Nandisena. La separación de junturas sigue la misma convención y las 12
+  que aporta son sanas, pero **el corte no es del Venerable** y la
+  atribución de este texto no dice IEBH. Es el primer texto del corpus con
+  esa procedencia; conviene no perderlo de vista si alguna vez se pesa el
+  corpus por autoridad.
+
 Cada texto que se añada aquí lleva su línea en esta lista, con su fuente y
 su licencia. Es material del IEBH: se cita como suyo, y la atribución
 pública dice IEBH.
@@ -144,8 +157,8 @@ Mahāsatipaṭṭhāna, dio 19 junturas —19 atestiguadas, 0 descartadas— y
 encontró cuatro formas frecuentes que el motor no veía: panassa (1.731),
 caparaṃ (1.548), tamenaṃ (778) y yāvadeva (331).
 
-Con el corpus al cierre del 2026-08-30 (**40 textos**): **1.669 junturas**,
-las 1.669 atestiguadas; el motor señala 1.198 (**71,8 %**). Y **101
+Con el corpus al cierre del 2026-08-30 (**43 textos**): **1.769 junturas**,
+las 1.769 atestiguadas; el motor señala 1.260 (**71,2 %**). Y **101
 ecuaciones** —16 junturas y 85 ortográficas—, de las que el motor recompone
 14 de 16 y **acierta los componentes en 0 de 16**.
 
