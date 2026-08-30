@@ -871,7 +871,12 @@ def _silenciar_no_sandhi(r):
         return
     c = r["cotejo"]
     for regla in cargar().get("no_sandhi", []):
-        if any(c.endswith(t) for t in regla.get("terminaciones", [])):
+        # Por TERMINACIÓN (-tvā, -tvāna: la clase entera) o por FORMA exacta
+        # (pañca: la voz suelta). Las dos hacen falta y no son
+        # intercambiables: una terminación «ñca» callaría la familia entera
+        # de §31, que es justamente la firmada.
+        if (any(c.endswith(t) for t in regla.get("terminaciones", []))
+                or c in {cotejo(f) for f in regla.get("formas", [])}):
             r["senal"] = None
             r["senal_motivo"] = None
             return

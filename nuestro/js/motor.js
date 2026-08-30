@@ -672,7 +672,13 @@ function silenciarNoSandhi(r) {
     if (!r.senal) return;
     const c = r.cotejo;
     for (const regla of (_cache.noSandhi || [])) {
-        if ((regla.terminaciones || []).some(t => c.endsWith(t))) {
+        // Por TERMINACIÓN (-tvā, -tvāna: la clase entera) o por FORMA
+        // exacta (pañca: la voz suelta). Las dos hacen falta y no son
+        // intercambiables: una terminación «ñca» callaría la familia
+        // entera de §31, que es justamente la firmada.
+        const formas = (regla.formas || []).map(f => cotejo(f));
+        if ((regla.terminaciones || []).some(t => c.endsWith(t))
+            || formas.includes(c)) {
             r.senal = null;
             r.senal_motivo = null;
             return;

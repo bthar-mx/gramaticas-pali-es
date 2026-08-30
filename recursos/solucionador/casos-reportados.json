@@ -8,6 +8,13 @@
    ],
    "fuente": "IEBH, 2026-08-28 · comentario de Vedanā (sesión 32)",
    "nota": "En palabras del IEBH: «forms ending in tvā and tvāna are absolutives, indeclinable, so they should not be flagged as sandhi». La señal calla en toda voz con esas terminaciones — phusitvā, katvā, disvāna…—; las lecturas que recomponen siguen visibles al pegar la voz sola, como en todo silencio. Un caso adjudicado sandhi=true mandaría sobre esta regla (el caso manda), pero hoy no existe ninguno."
+  },
+  {
+   "formas": [
+    "pañca"
+   ],
+   "fuente": "IEBH, 2026-08-30 · «con pañca ésa sería la excepción»",
+   "nota": "«Pañca» —cinco— NO es sandhi: no es «paṃ + ca», sino una voz llana. Se escribe como excepción nombrada de la familia de §31 («ñca» = ṃ + ca), que el IEBH firmó el 2026-08-28.\n\nMEDIDO el 2026-08-30, sobre las 9.526 voces del canon acabadas en «ñca» (masa 68.595): el motor afirma 6.061, deja 1.696 en «posible» y calla 1.769. De las diez voces con la SILUETA de pañca —forma frecuente y base rarísima— las otras nueve SÍ son sandhi (ummattikādīnañca = ummattikādīnaṃ + ca, aṭṭhamakañca, sukhatthañca, duvūpasantañca…). Pañca es la única excepción de su forma en todo el canon.\n\nHOY LA REGLA ES INERTE, y conviene decirlo: a pañca ya la calla el resguardo de la base residual —«paṃ» aparece 1 vez y «pañca» 8.192, de modo que «paṃ» no llega a candidata—, y `_silenciar_no_sandhi` sólo actúa donde hay señal. Se escribe para que la excepción esté NOMBRADA y no dependa de un accidente de cuentas: si algún día se ensancha el resguardo, pañca sigue callada por su nombre y no por su aritmética.\n\nY ése es el punto, porque el ensanche está sobre la mesa: quitando el resguardo a esta familia, el patrón afirmaría 315 formas más, y de esas 315 sólo DOS son malas —pañca, y taṃsampayuttakānañca por base residual («taṃsampayuttakānaña», 1)—. Las otras 313 son lecturas correctas que hoy se silencian: kāmarāgānusayañca (622), paṭighānusayañca (602), mānānusayañca (445), assādañca (190)… Ensanchar el resguardo es del IEBH; esta entrada sólo le quita a esa decisión su riesgo más grande."
   }
  ],
  "patrones": [
