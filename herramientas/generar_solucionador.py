@@ -47,9 +47,21 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "1.11"
+VERSION = "1.12"
 FECHA = "2026-08-30"
-NOTA = ("EL PATRÓN DE §34, firmado por el IEBH el 2026-08-29 («anytime you "
+NOTA = ("LO REGISTRADO A MANO YA SE VE. Una voz dada de alta por el campo "
+        "«sandhi no detectado» no aparecía por ninguna parte: la página sólo "
+        "dibuja tarjeta para lo que el motor señala, y una voz registrada a "
+        "mano es, por definición, una sobre la que el motor calla. Se "
+        "guardaba y viajaba en el .md con su veredicto, pero sin tarjeta no "
+        "había campo de nota, ni de escalera, ni botón de borrar, y el "
+        "revisor no podía ver lo que acababa de escribir. Ahora llevan su "
+        "tarjeta, rotulada aparte y a la vista aunque se analice otro "
+        "pasaje. La escalera importa aquí MÁS que en ninguna otra tarjeta, "
+        "no menos: la página enseña una escalera de mano cuando la lectura "
+        "afirmada no trae la del motor, y éstas nunca traen la del motor. "
+        "Antes, en la versión 1.11: "
+        "EL PATRÓN DE §34, firmado por el IEBH el 2026-08-29 («anytime you "
         "find the niggahita changed to 'm' before a vowel, it means this "
         "rule applies»): niggahīta → m ante vocal con segunda voz "
         "corriente — yamahaṃ = yaṃ + ahaṃ, evamassa = evaṃ + assa—. La "

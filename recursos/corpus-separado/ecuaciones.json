@@ -1,5 +1,5 @@
 {
- "ecuaciones": 20,
+ "ecuaciones": 101,
  "filas": [
   {
    "forma": "ti",
@@ -8,10 +8,39 @@
     "iti"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-67-71.txt",
+   "fuente": "therigatha-V-067-071-Aññatarātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "yaṃ",
+   "frec": 18517,
+   "ecuacion_iebh": [
+    "ayaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-157-162-Mahāpajāpatigotamītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "dāni",
+   "frec": 1320,
+   "ecuacion_iebh": [
+    "idāni"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-102-106-Soṇātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "dā",
+    "ini"
+   ],
    "acuerdo": false
   },
   {
@@ -22,12 +51,28 @@
     "ahaṃ"
    ],
    "clase": "juntura",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": true,
    "senal": null,
    "componentes_motor": [
     "na",
     "haṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "pāpuṇi",
+   "frec": 800,
+   "ecuacion_iebh": [
+    "pāpuṇiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "pā",
+    "opuṇi"
    ],
    "acuerdo": false
   },
@@ -38,12 +83,137 @@
     "sāsanaṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-67-71.txt",
+   "fuente": "therigatha-V-067-071-Aññatarātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "posible",
    "componentes_motor": [
     "sāsana",
     "an"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "va",
+   "frec": 323,
+   "ecuacion_iebh": [
+    "iva"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-117-121-Tiṃsamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "vatāyaṃ",
+   "frec": 212,
+   "ecuacion_iebh": [
+    "vata",
+    "ayaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-107-111-Bhaddā-Kuṇḍalakesātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "vata",
+    "āyaṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "saṃ",
+   "frec": 145,
+   "ecuacion_iebh": [
+    "esaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "tassāhaṃ",
+   "frec": 128,
+   "ecuacion_iebh": [
+    "tassā",
+    "ahaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-VI-169-174-Vijayātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "tassa",
+    "haṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "sāhaṃ",
+   "frec": 102,
+   "ecuacion_iebh": [
+    "sā",
+    "ahaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-097-101-Sakulātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "sa",
+    "haṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "bujjhi",
+   "frec": 77,
+   "ecuacion_iebh": [
+    "bujjhiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-092-096-Mittākāḷītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ba",
+    "ujjhi"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "buddhāna",
+   "frec": 59,
+   "ecuacion_iebh": [
+    "buddhānaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-157-162-Mahāpajāpatigotamītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ba",
+    "uddhāna"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "aratī",
+   "frec": 43,
+   "ecuacion_iebh": [
+    "arati"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ara",
+    "ītī"
    ],
    "acuerdo": false
   },
@@ -54,7 +224,7 @@
     "ahaṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [],
@@ -68,12 +238,128 @@
     "ajja"
    ],
    "clase": "juntura",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
    "recompone": true,
    "senal": "posible",
    "componentes_motor": [
     "sa",
     "ajja"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "nādhigacchāmi",
+   "frec": 19,
+   "ecuacion_iebh": [
+    "na",
+    "adhigacchāmi"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "nādhiga",
+    "acchāmi"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "nānutappati",
+   "frec": 17,
+   "ecuacion_iebh": [
+    "na",
+    "anutappati"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-117-121-Tiṃsamattātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "nānutape",
+    "pati"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "carissasī",
+   "frec": 13,
+   "ecuacion_iebh": [
+    "carissasi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [
+    "cari",
+    "sasī"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "purāyaṃ",
+   "frec": 11,
+   "ecuacion_iebh": [
+    "purā",
+    "ayaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-092-096-Mittākāḷītherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "pura",
+    "āyaṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "āsūpasampadā",
+   "frec": 10,
+   "ecuacion_iebh": [
+    "āsi",
+    "upasampadā"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-107-111-Bhaddā-Kuṇḍalakesātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "āsa",
+    "upasampadā"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "antakā",
+   "frec": 9,
+   "ecuacion_iebh": [
+    "antaka"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VII-182-188-Cālātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ana",
+    "takā"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "gacchi",
+   "frec": 8,
+   "ecuacion_iebh": [
+    "āgacchi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ga",
+    "acchi"
    ],
    "acuerdo": false
   },
@@ -84,12 +370,92 @@
     "bandhitvā"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [
     "bandhi",
     "aya"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "namassi",
+   "frec": 5,
+   "ecuacion_iebh": [
+    "namassiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "nama",
+    "assi"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "nānuññāto",
+   "frec": 5,
+   "ecuacion_iebh": [
+    "na",
+    "anuññāto"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "nāna",
+    "uññāto"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "duggatāhaṃ",
+   "frec": 4,
+   "ecuacion_iebh": [
+    "duggatā",
+    "ahaṃ"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-122-126-Candātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": null,
+   "componentes_motor": [
+    "duggata",
+    "haṃ"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "evam",
+   "frec": 4,
+   "ecuacion_iebh": [
+    "evaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-082-086-Sundarīnandātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "tevijjāmhi",
+   "frec": 4,
+   "ecuacion_iebh": [
+    "tevijjā",
+    "amhi"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-122-126-Candātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": "posible",
+   "componentes_motor": [
+    "tevijjā",
+    "hi"
    ],
    "acuerdo": false
   },
@@ -100,7 +466,7 @@
     "kilesehi"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [
@@ -110,13 +476,134 @@
    "acuerdo": false
   },
   {
+   "forma": "munin",
+   "frec": 3,
+   "ecuacion_iebh": [
+    "muniṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "padāliyā",
+   "frec": 3,
+   "ecuacion_iebh": [
+    "padāliya"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-169-174-Vijayātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [
+    "pada",
+    "āliyā"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "padīpasseva",
+   "frec": 3,
+   "ecuacion_iebh": [
+    "padīpassa",
+    "iva"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [
+    "padīpassa",
+    "eva"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "sokāna",
+   "frec": 3,
+   "ecuacion_iebh": [
+    "sokānaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-133-138-Vāseṭṭhītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "soka",
+    "āna"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "tevijjāmha",
+   "frec": 3,
+   "ecuacion_iebh": [
+    "tevijjā",
+    "amha"
+   ],
+   "clase": "juntura",
+   "fuente": "therigatha-V-117-121-Tiṃsamattātherīgāthāvaṇṇanā.txt",
+   "recompone": true,
+   "senal": "posible",
+   "componentes_motor": [
+    "tevijjā",
+    "ha"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "pesayī",
+   "frec": 2,
+   "ecuacion_iebh": [
+    "pesayiṃsu"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-151-156-Anopamātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "pe",
+    "asayī"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "si",
+   "frec": 2,
+   "ecuacion_iebh": [
+    "asi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VII-182-188-Cālātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "tam",
+   "frec": 2,
+   "ecuacion_iebh": [
+    "taṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
    "forma": "vanamantaraṃ",
    "frec": 2,
    "ecuacion_iebh": [
     "vanantaraṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [
@@ -132,7 +619,7 @@
     "cariṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [
@@ -142,13 +629,39 @@
    "acuerdo": false
   },
   {
+   "forma": "dhammañ",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "dhammaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "kim",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "kiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
    "forma": "mhi",
    "frec": 1,
    "ecuacion_iebh": [
     "amhi"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "posible",
    "componentes_motor": [
@@ -164,9 +677,200 @@
     "puna"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "sabbaganthehī",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "sabbaganthehi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-107-111-Bhaddā-Kuṇḍalakesātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "sabbaganthe",
+    "ahī"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "ssa",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "assa"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "sa",
+    "sa"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "tatth",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "tattha"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-145-150-Sujātātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "yath",
+   "frec": 1,
+   "ecuacion_iebh": [
+    "yatha"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "posible",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "abhuñj",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "abhuñjiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-107-111-Bhaddā-Kuṇḍalakesātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "ahañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "ahaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "ajjhattañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "ajjhattaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-082-086-Sundarīnandātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "animittañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "animittaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-102-106-Soṇātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "asevi",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "aseviṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-092-096-Mittākāḷītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [
+    "ase",
+    "āvi"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "avijjañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "avijjaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "ayyāy",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "ayyāya"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-122-126-Candātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "aññañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "aññaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-157-162-Mahāpajāpatigotamītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "bhuñj",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "bhuñjiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "bojjhaṅg",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "bojjhaṅge"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-169-174-Vijayātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
    "componentes_motor": [],
    "acuerdo": false
   },
@@ -177,7 +881,33 @@
     "ca"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "candañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "candaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "cetosamatham",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "cetosamathaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-117-121-Tiṃsamattātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
@@ -191,7 +921,20 @@
     "upasamaṃ"
    ],
    "clase": "juntura",
-   "fuente": "therigatha-V-67-71.txt",
+   "fuente": "therigatha-V-067-071-Aññatarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "ddasāsiṃ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "addasāsiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-133-138-Vāseṭṭhītherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
@@ -204,7 +947,59 @@
     "dhammaṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-67-71.txt",
+   "fuente": "therigatha-V-067-071-Aññatarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "dhanadhaññañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "dhanadhaññaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-097-101-Sakulātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "dhītarañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "dhītaraṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-097-101-Sakulātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "diṭṭh",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "diṭṭhe"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "dukkhass",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "dukkhassa"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
@@ -217,7 +1012,20 @@
     "iva"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "karom",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "karomi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
@@ -230,7 +1038,72 @@
     "kāmarāgena"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-67-71.txt",
+   "fuente": "therigatha-V-067-071-Aññatarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "maggam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "maggaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-097-101-Sakulātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "maggañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "maggaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "nay",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "na"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "nibbind",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "nibbindiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-082-086-Sundarīnandātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "ninnam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "ninnaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
@@ -244,7 +1117,7 @@
     "accharāsaṅghātamattaṃ"
    ],
    "clase": "juntura",
-   "fuente": "therigatha-V-67-71.txt",
+   "fuente": "therigatha-V-067-071-Aññatarātherīgāthāvaṇṇanā.txt",
    "recompone": true,
    "senal": "segura",
    "componentes_motor": [],
@@ -257,7 +1130,7 @@
     "oḍḍiyitvā"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": null,
    "componentes_motor": [
@@ -267,13 +1140,295 @@
    "acuerdo": false
   },
   {
+   "forma": "p",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "pi"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "padam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "padaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-097-101-Sakulātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [
+    "pa",
+    "idam"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "paripucch",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "paripucchiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-169-174-Vijayātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "punar",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "puna"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "puttasoken",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "puttasokena"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-133-138-Vāseṭṭhītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "pādodakañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "pādodakaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
    "forma": "pāsam",
    "frec": 0,
    "ecuacion_iebh": [
     "pāsaṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-072-076-Vimalātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "rattindivam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "rattindivaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-082-086-Sundarīnandātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "sabbasattānam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "sabbasattānaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-157-162-Mahāpajāpatigotamītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [
+    "sabbaso",
+    "attānam"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "sakkāyadiṭṭhim",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "sakkāyadiṭṭhiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "saṃghañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "saṃghaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "suddhim",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "suddhiṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "sūriyañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "sūriyaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-087-091-Nanduttarātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "tat",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "tato"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-127-132-Pañcasatamattātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [
+    "ta",
+    "at"
+   ],
+   "acuerdo": false
+  },
+  {
+   "forma": "tav",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "tava"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-102-106-Soṇātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "tvam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "tvaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "ty",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "te"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-157-162-Mahāpajāpatigotamītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": null,
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "uddhaccañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "uddhaccaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "v",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "iva"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-112-116-Paṭācārātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "vasam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "vasaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-V-092-096-Mittākāḷītherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "vicikicchañ",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "vicikicchaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-163-168-Guttātherīgāthāvaṇṇanā.txt",
+   "recompone": false,
+   "senal": "segura",
+   "componentes_motor": [],
+   "acuerdo": false
+  },
+  {
+   "forma": "yathābhuccam",
+   "frec": 0,
+   "ecuacion_iebh": [
+    "yathābhuccaṃ"
+   ],
+   "clase": "ortográfica",
+   "fuente": "therigatha-VI-139-144-Khemātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],
@@ -286,7 +1441,7 @@
     "yaṃ"
    ],
    "clase": "ortográfica",
-   "fuente": "therigatha-V-72-81.txt",
+   "fuente": "therigatha-V-077-081-Sīhātherīgāthāvaṇṇanā.txt",
    "recompone": false,
    "senal": "segura",
    "componentes_motor": [],

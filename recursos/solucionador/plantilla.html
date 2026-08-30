@@ -627,6 +627,8 @@ const TXT = {
     falta_lbl: 'sandhi no detectado', ph_falta: 'voz escrita = voz + voz',
     t_falta: 'Un sandhi que el solucionador no señaló: la forma tal como está escrita, un «=», y sus componentes. Enter para registrarlo.',
     registrar: 'registrar', obs_lbl: 'observaciones',
+    reg_lbl: 'registradas a mano',
+    t_reg: 'Voces que el solucionador no señaló y que el revisor registró en «sandhi no detectado». Llevan su tarjeta como cualquier otra, y con ella la nota y la escalera: son justamente las voces para las que el motor no deriva ninguna, de modo que la que valga tiene que escribirse aquí. Se quedan a la vista, aunque se analice otro pasaje, hasta enviarlas o borrarlas.',
     ph_esc: 'escalera, un paso por línea, con su §N — se incorpora verbatim, rotulada como del revisor',
     t_esc: 'La secuencia tal como la escribe el revisor, un paso por línea. Viaja con el veredicto y se incorpora rotulada como suya —el motor no la deriva ni la verifica—; la página la muestra cuando la lectura afirmada no trae escalera del motor.',
     ph_obs: 'Reglas generales que el revisor ve detrás de los ejemplos — de una observación así («las voces en -tvā y -tvāna son absolutivos») salió una regla firmada. Viajan con la exportación y quien firma las lee. Los datos de UNA voz —componentes, nota, escalera— van en los campos de su tarjeta, que sí se incorporan solos.',
@@ -692,6 +694,8 @@ const TXT = {
     falta_lbl: 'undetected sandhi', ph_falta: 'written form = word + word',
     t_falta: 'A sandhi the solver did not flag: the form as written, an “=”, and its components. Press Enter to record it.',
     registrar: 'record', obs_lbl: 'observations',
+    reg_lbl: 'recorded by hand',
+    t_reg: 'Words the solver did not flag, recorded by the reviewer under “undetected sandhi”. They get a card like any other, and with it the note and the derivation: these are precisely the words for which the engine derives no ladder, so the right one has to be written here. They stay in view, even when another passage is analysed, until they are sent or deleted.',
     ph_esc: 'derivation, one step per line, with its §N — incorporated verbatim, labelled as the reviewer’s',
     t_esc: 'The sequence exactly as the reviewer writes it, one step per line. It travels with the verdict and is incorporated labelled as theirs — the engine neither derives nor verifies it; the page shows it when the affirmed reading has no engine ladder.',
     ph_obs: 'General rules the reviewer sees behind the examples — one such observation (“words in -tvā and -tvāna are absolutives”) became a signed rule. They travel with the export and the signer reads them. Data about ONE word — components, note, derivation — goes in its card’s fields, which are incorporated on their own.',
@@ -1118,7 +1122,7 @@ async function analizar(){
     }
     html += `<p class="motivo" style="margin-top:14px">${tr('prudente')}</p>`;
   }
-  if(REV.on) html += revAcciones();
+  if(REV.on) html += revRegistradas(texto) + revAcciones();
   /* Conservar qué tarjetas estaban abiertas: la revisión re-pinta. */
   const abiertas = new Set([...out.querySelectorAll('details.form[open]')]
     .map(d => d.dataset.voz));
@@ -1198,6 +1202,35 @@ function revBarra(voz, r){
       data-tip="${esc(tr('t_esc'))}">${v && v.esc ? esc(v.esc) : ''}</textarea>
   </div>`;
 }
+/* Las voces registradas por «sandhi no detectado» (pedido del IEBH,
+   2026-08-30). ANTES no salían por ninguna parte: `analizar()` sólo dibuja
+   tarjeta para lo que el motor señala —«if(!r.senal) continue»— y una voz
+   registrada a mano es, por definición, una sobre la que el motor calla. Se
+   guardaba en REV.v, viajaba en el .md con su VEREDICTO y ahí se acababa:
+   sin tarjeta no había campo de NOTA, ni de ESCALERA, ni botón de «borrar»
+   —sólo «Borrar todos»—, y el revisor no tenía manera de ver lo que acababa
+   de escribir.
+
+   Y la escalera hace más falta aquí que en ninguna otra tarjeta, no menos:
+   `escaleraIEBH()` existe para enseñar una escalera de mano cuando la
+   lectura afirmada no trae la del motor, y estas voces NUNCA traen la del
+   motor. Por eso la respuesta no era una segunda caja debajo del campo, sino
+   la tarjeta entera, que ya tiene los tres campos y el incorporador ya sabe
+   leerlos.
+
+   Se dibujan aparte y rotuladas, no mezcladas con lo señalado en el pasaje,
+   y siguen a la vista aunque se analice otro texto: si desaparecieran al
+   cambiar de pasaje volveríamos al problema de partida. */
+function revRegistradas(texto){
+  const enPasaje = new Set(fichas(texto).map(v => v.toLowerCase()));
+  const sueltas = [...REV.v.keys()].filter(
+    v => REV.v.get(v).falta && !enPasaje.has(v.toLowerCase()));
+  if(!sueltas.length) return '';
+  return `<p class="cuenta-sandhis" style="margin-top:22px"
+      data-tip="${esc(tr('t_reg'))}">${tr('reg_lbl')} · ${sueltas.length}</p>
+    <div class="forms">${
+      sueltas.map(v => tarjeta(v, resolver(v), false)).join('')}</div>`;
+}
 function revAcciones(){
   const n = REV.v.size;
   const voces = [...REV.v.keys()].join(', ');
@@ -1243,7 +1276,8 @@ async function revFalta(){
      campo sólo sabía de componentes; corregido el mismo día). */
   if(m && /^(no|no es sandhi|no sandhi|is not sandhi|not sandhi)$/iu.test(m[2].trim())){
     try { await SOLUCIONADOR.preparar(m[1]); } catch(e){}
-    revPoner(m[1], { t: 'no' });
+    revPoner(m[1], { t: 'no', falta: true });
+    inp.value = '';
     return;
   }
   const comp = m && revComponentes(m[2]);
@@ -1258,7 +1292,10 @@ async function revFalta(){
   /* La voz puede no estar en el pasaje: cargar sus fragmentos antes de
      resolverla, para que la señal y la primera lectura salgan bien. */
   try { await SOLUCIONADOR.preparar(voz); } catch(e){}
-  revPoner(voz, { t: 'otra', comp });
+  revPoner(voz, { t: 'otra', comp, falta: true });
+  /* El campo se vacía al registrar: antes se quedaba con lo escrito y la
+     voz siguiente se tecleaba encima de la anterior. */
+  inp.value = '';
 }
 function revPoner(voz, dato){
   const r = resolver(voz);

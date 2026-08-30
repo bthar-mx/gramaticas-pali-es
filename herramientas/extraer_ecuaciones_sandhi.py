@@ -86,6 +86,29 @@ LINEA = re.compile(
     r"([A-Za-zĀāĪīŪūṂṃṄṅÑñṬṭḌḍṆṇḶḷ" + APOSTROFOS + r"\- ]+?)\s*$")
 
 
+# La entrada de la «Lista de voces» sigue después de la ecuación con el
+# análisis morfológico y la traducción:
+#
+#     Kāmarāgen’ = kāmarāgena, [n., cmp., kāma, sensual, + rāga, pasión, …]
+#
+# La primera versión de este guion saltaba **toda línea con un corchete**, y
+# eso se escribió mirando las MUESTRAS —dos capítulos recortados a mano—,
+# donde las ecuaciones venían limpias. En los 23 documentos completos casi
+# todas las entradas llevan su gloss: de 233 líneas con «=» el filtro dejaba
+# pasar 52, y de las 181 restantes se perdían 9 junturas dichas por el
+# Venerable. La ecuación termina donde empieza el gloss, así que se corta ahí
+# en vez de tirar la línea entera.
+CORTE_GLOSS = re.compile(r"[\[,;]")
+
+
+def recortar(linea):
+    """La ecuación sola: lo que sigue al «=» hasta el gloss."""
+    izq, sep, der = linea.partition("=")
+    if not sep:
+        return linea
+    return izq + "=" + CORTE_GLOSS.split(der, 1)[0]
+
+
 def sin_apostrofos(x):
     for ap in APOSTROFOS:
         x = x.replace(ap, "")
@@ -109,9 +132,9 @@ def main():
         texto = unicodedata.normalize(
             "NFC", open(os.path.join(FUENTES, nombre), encoding="utf-8").read())
         for linea in texto.split("\n"):
-            if "=" not in linea or "[" in linea:
+            if "=" not in linea:
                 continue
-            m = LINEA.match(linea.strip())
+            m = LINEA.match(recortar(linea).strip())
             if not m:
                 continue
             izq_bruto, der_bruto = m.group(1), m.group(2)

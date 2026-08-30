@@ -73,7 +73,14 @@ def limpiar(t):
     """Fuera lo que no es texto pāḷi: números de párrafo, de página, la
     marca de repetición «-pa-», las llamadas de nota y la puntuación."""
     t = unicodedata.normalize("NFC", t)
-    t = re.sub(r"\[\d+\]", " ", t)          # [232], y las llamadas de nota
+    t = t.replace("﻿", "")             # la marca de orden de Google Docs
+    # [232] es página; [1] es nota; [a], [b], [ab] son los anclajes de
+    # comentario que Google Docs exporta. Los tres estorban igual, y los de
+    # LETRA estorban más porque caen justo donde interesa: la voz anotada es
+    # la que tiene sandhi —«cittassūpasam[b][c][d][e][f]’ ajjhagaṃ»—, de modo
+    # que sin quitarlos la juntura se une con basura dentro y no atestigua.
+    # En los 23 capítulos de la Therīgāthā son 1.281 anclajes de letra.
+    t = re.sub(r"\[[0-9a-zA-Z]{1,4}\]", " ", t)
     t = re.sub(r"\b-pa-\b", " ", t)         # la abreviatura de repetición
     t = re.sub(r"^\s*\d+\.\s*", " ", t)     # 373.
     t = t.replace("“", " ").replace("”", " ").replace("«", " ").replace("»", " ")
