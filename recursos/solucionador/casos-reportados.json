@@ -1300,6 +1300,21 @@
    "fuente": "IEBH, 2026-08-30 · precisión en la sesión",
    "sandhi": true,
    "componentes": "tesaṃ + ayaṃ"
+  },
+  {
+   "forma": "aññāsikoṇḍaññotveva",
+   "fuente": "IEBH, 2026-08-30 · revisión en la página",
+   "sandhi": true,
+   "componentes": "iti + eva",
+   "nota": "Nota del revisor (verbatim): I am seeing the \"tveva\" sometimes can mean \"iti eva\" and sometimes can mean \"tu eva\". For example in the following \"sabbe kāmā ‘kāmā’ tveva saṅkhaṃ gacchanti\", \"tveva\" is \"iti eva\" but in \"avijjāya tveva\", \"tveva\" is \"tu eva\". In this case it is \"iti eva\". — La autoridad del paso 'i' → 'v' ante la 'e' de «eva» es Saddanīti Suttamālā 49 «Evass' ekāre itiss' aññassa c' issa vo», cotejada contra Helmer Smith, Saddanīti III, p. 617, que da entre sus cuatro ejemplos «Isigili tv eva» y «Samantapāsādikā tv eva» — la misma fórmula del nombre. Kaccāyana no tiene sutta correspondiente: el aparato de Smith da «Kc» para los suttas 50 y 51 y ninguno para el 49.",
+   "escalera_iebh": [
+    "aññāsikoṇḍañño iti eva",
+    "aññāsikoṇḍaññ o iti eva §10",
+    "aññāsikoṇḍaññ o ti eva §13",
+    "aññāsikoṇḍaññ o tv eva Saddanīti Suttamālā §49",
+    "aññāsikoṇḍaññotveva §11"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-30 · revisión en la página · escalera del revisor (verbatim)"
   }
  ]
 }

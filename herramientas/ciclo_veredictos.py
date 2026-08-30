@@ -35,6 +35,7 @@ import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CASOS = os.path.join(RAIZ, "recursos", "solucionador", "casos-reportados.json")
+COLA = "docs/solucionador/veredictos-recibidos"
 JS = os.path.join(RAIZ, "nuestro", "js")
 ARNESES = ["arnes", "arnes_corpus", "arnes_deteccion", "arnes_pagina",
            "arnes_casos"]
@@ -70,6 +71,44 @@ def formas_de_referencia(nombre, campo):
     return {cotejo(x.get(campo, "")) for x in d.get("filas", [])}
 
 
+def sueltos_de_la_cola():
+    """Los archivos que la cola dejó sin commitear, por su ruta exacta.
+
+    Con `-z` porque estos nombres llevan diacríticos y la salida normal de
+    `git status` los escapa: reconstruirlos de ahí es cómo se cuelan rutas
+    que no existen.
+    """
+    r = subprocess.run(["git", "status", "--porcelain", "-z", "--", COLA],
+                       cwd=RAIZ, capture_output=True, text=True)
+    rutas = []
+    for entrada in r.stdout.split("\0"):
+        if entrada.strip():
+            rutas.append(entrada[3:])
+    return rutas
+
+
+def archivar_cola(porque):
+    """Commitea lo que la cola archivó, y NADA más.
+
+    Estadía por nombre de archivo, uno a uno. No `git add -A`: el ciclo
+    commitea lo que el ciclo escribió, no lo que hubiera en el árbol —que
+    es cómo entraron archivos ajenos en 9ce50c8 y f9ddf33—.
+    """
+    rutas = sueltos_de_la_cola()
+    if not rutas:
+        return
+    print("\n── La cola dejó {0} archivo(s); se archivan para no bloquear "
+          "la corrida siguiente.".format(len(rutas)))
+    hoy = datetime.date.today().isoformat()
+    msg = ("Lote de la cola del {0}, archivado sin incorporar\n\n"
+           "{1}\n\nSe commitea el archivo del lote —y sólo eso— porque si "
+           "queda suelto en el árbol, la comprobación de árbol limpio de la "
+           "corrida siguiente se niega a correr y el ciclo se atasca a sí "
+           "mismo.").format(hoy, porque)
+    correr("Estadiar el archivo de la cola", ["git", "add", "--"] + rutas)
+    correr("Commit del archivo de la cola", ["git", "commit", "-m", msg])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sin-push", action="store_true",
@@ -96,6 +135,16 @@ def main():
     nuevas = formas_de_casos() - antes
     if not nuevas:
         print("\nSin casos nuevos: nada que regenerar ni publicar.")
+        # PERO la cola sí pudo archivar un lote y que el incorporador lo
+        # declinara —por ejemplo cuando el veredicto difiere del caso ya
+        # guardado, que es un resguardo correcto y se queda—. Aquí se salía
+        # sin commitear, y el archivo recién escrito quedaba suelto en el
+        # árbol; entonces la comprobación de árbol limpio de la corrida
+        # SIGUIENTE lo veía y se negaba a correr. El ciclo se atascaba a sí
+        # mismo, y había que desatascarlo a mano: eso fue 92281b1, y otra vez
+        # el 2026-08-30 con «tveva». Se archiva lo archivado y se sigue.
+        archivar_cola("declinado por el incorporador: véase el aviso de "
+                      "arriba; el caso guardado no se tocó")
         return 0
     print("\ncasos nuevos:", ", ".join(sorted(nuevas)))
 
