@@ -564,7 +564,21 @@
    "forma": "Ekamidāhaṁ",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "ekaṃ + idha + ahaṃ"
+   "componentes": "ekaṃ + idha + ahaṃ",
+   "escalera_iebh": [
+    "ekaṃ idha ahaṃ",
+    "ekam idha ahaṃ (§34)",
+    "— y para «idha ahaṃ»:",
+    "idha ahaṃ",
+    "idh a ahaṃ (§10)",
+    "idh ahaṃ (§12)",
+    "ida ahaṃ (§20)",
+    "id a ahaṃ (§10)",
+    "id ahaṃ (§12)",
+    "id āhaṃ (§15)",
+    "idāhaṃ (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-29 · observaciones del lote 22:48 (verbatim)"
   },
   {
    "forma": "balavā",
@@ -595,37 +609,67 @@
    "forma": "yaṁnūnāhaṁ",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "yaṃ + nūna + ahaṃ"
+   "componentes": "yaṃ + nūna + ahaṃ",
+   "escalera_iebh": [
+    "yaṃ nūna ahaṃ",
+    "yaṃ nūn a ahaṃ (§10)",
+    "yaṃ nūn ahaṃ (§12)",
+    "yaṃ nūn āhaṃ (§15)",
+    "yaṃ nūnāhaṃ (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-29 · observaciones del lote 22:48 (verbatim)"
   },
   {
    "forma": "khvāhaṁ",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "kho + ahaṃ"
+   "componentes": "kho + ahaṃ",
+   "escalera_iebh": [
+    "kho ahaṃ",
+    "kh o ahaṃ (§10)",
+    "kh v ahaṃ (§18)",
+    "kh v āhaṃ (§15)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-29 · observaciones del lote 22:48 (verbatim)"
   },
   {
    "forma": "yenāhaṁ",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "yena + ahaṃ"
+   "componentes": "yena + ahaṃ",
+   "nota": "El IEBH: «yenāhaṁ = yena ahaṃ this is easy to do the sequence»."
   },
   {
    "forma": "pāturahosiṁ",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "pātur + ahosiṃ"
+   "componentes": "pātu + ahosiṃ",
+   "escalera_iebh": [
+    "pātu ahosiṃ",
+    "pātur ahosiṃ (§35)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-29 · observaciones del lote 22:48 (verbatim)",
+   "nota": "COMPONENTES CORREGIDOS a mano, 2026-08-29, con las palabras del IEBH en el mismo lote: «pāturahosiṁ = pātu ahosiṃ → pātur ahosiṃ §35». El caso guardaba «pātur + ahosiṃ», que es la voz con la consonante de §35 ya insertada, no la voz subyacente. Mismo arreglo y mismo motivo que tenupasaṅkama. Y el aviso del IEBH, que vale para toda una familia: «take note of this because it happens frequently»."
   },
   {
    "forma": "etadavocuṁ",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "etaṃ + avocuṃ"
+   "componentes": "etaṃ + avocuṃ",
+   "nota": "Pregunta del IEBH en el mismo lote: «I don't understand why you didn't catch this one when we have met etadavoca = etaṃ avoca». La respuesta es §34 con segunda voz corriente: hoy NO es patrón, así que cada forma de la familia hay que adjudicarla una a una — etadavoca, idamavoca, idamavocaṃ, evamāha… Es exactamente lo que la firma de §34 (aprobada el 2026-08-29, sin implementar) viene a resolver de un golpe."
   },
   {
    "forma": "sabbesaṁyeva",
    "fuente": "IEBH, 2026-08-29 · revisión en la página",
    "sandhi": true,
-   "componentes": "sabbesaṁ + yeva"
+   "componentes": "sabbesaṃ + eva",
+   "escalera_iebh": [
+    "sabbesaṃ eva",
+    "sabbesaṃ y eva (§35)",
+    "sabbesaṁyeva (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-08-29 · observaciones del lote 22:48 (verbatim)",
+   "nota": "COMPONENTES CORREGIDOS a mano, 2026-08-29, con las palabras del IEBH en el mismo lote: «sabbesaṁyeva = sabbesaṃ eva → sabbesaṃ y eva §35 → sabbesaṁyeva §11». El caso guardaba «sabbesaṁ + yeva», con la «y» de §35 pegada a la segunda voz. Mismo arreglo y mismo motivo que tenupasaṅkama."
   }
  ]
 }
