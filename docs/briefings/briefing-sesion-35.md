@@ -314,10 +314,13 @@ en `casos-reportados.json`:
 
 - **`escalera_iebh`** (nuevo campo) en Ekamidāhaṁ, yaṁnūnāhaṁ, khvāhaṁ,
   pāturahosiṁ y sabbesaṁyeva — sus escaleras tal como las escribió, con
-  `escalera_fuente`. **El campo se guarda pero la página TODAVÍA NO LO
-  MUESTRA**: la escalera que se pinta sale siempre de `l.pasos`, del motor.
-  Mostrar la del IEBH cuando el motor no deriva es trabajo del chat nuevo, y
-  toca Python **y** JS a la vez (paridad).
+  `escalera_fuente`. **Y la página YA LA MUESTRA** (mismo día): cuando la
+  lectura afirmada no trae escalera —el motor no la deriva— sale la suya,
+  rotulada «secuencia escrita por el IEBH — el motor no la deriva ni la ha
+  verificado», con su procedencia debajo y sus §N enlazando al Sandhi-Kappa.
+  Se hizo **sólo en la plantilla**, leyendo `DATA.casos`: sin tocar el motor,
+  sin cambio de paridad Python/JS y sin mover ningún arnés. Nunca se confunde
+  con una derivación del motor, que es la mitad del valor de mostrarla.
 - **Componentes CORREGIDOS**, con nota, por sus propias palabras del mismo
   lote y con el precedente de `tenupasaṅkama`:
   · `pāturahosiṁ`: era «pātur + ahosiṃ» → **`pātu + ahosiṃ`** (la «r» la pone
@@ -335,8 +338,7 @@ en `casos-reportados.json`:
 1. **Que las observaciones no se pierdan.** O bien `incorporar_adjudicaciones.py`
    las recoge, o bien el modo revisión ofrece un campo de escalera por voz.
    Hoy el único que las lee es quien abra el archivo recibido.
-2. **Mostrar `escalera_iebh`** cuando el motor no derive, marcada como suya y
-   nunca confundida con una derivación del motor.
+2. ~~Mostrar `escalera_iebh`~~ — **hecho el mismo día**, ver arriba.
 
 ## 7. LO QUE SIGUE (en orden)
 
@@ -347,13 +349,13 @@ en `casos-reportados.json`:
 4. **Traer `dpd-descomposiciones.tsv` a `recursos/lexico/`**: desbloquea la
    columna del testigo en los dos informes Y el criterio de categoría
    gramatical que el IEBH dio para los proclíticos.
-5. **Mostrar `escalera_iebh`** cuando el motor no derive (§6 quater).
-6. **La pasada única de dos junturas** (§4), que cierra el punto 4 del mapa 32
-   y con él las formas de tres voces que el plegado no alcanza.
-7. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD,
+5. **La pasada única de dos junturas** (§4), que cierra el punto 4 del mapa 32
+   y con él las formas de tres voces que el plegado no alcanza — y que haría
+   innecesarias muchas `escalera_iebh`.
+6. Resto del mapa 33: §23/pakati sistemático, descomposiciones del DPD,
    des-flexión. **Sin empezar.**
 
-## 7. AVISOS AL CHAT NUEVO
+## 8. AVISOS AL CHAT NUEVO
 
 - **`ciclo_veredictos.py` hace `git add -A`.** Cualquier cosa sin
   confirmar en el árbol se lleva a un commit «Casos de la cola» con el

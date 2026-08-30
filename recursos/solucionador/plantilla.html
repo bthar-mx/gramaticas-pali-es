@@ -599,6 +599,7 @@ const TXT = {
           de certeza`,
     cargando: 'cargando el léxico del canon…', analizando: 'analizando…',
     t_ir: 'Ver el análisis de esta voz',
+    esc_iebh: 'secuencia escrita por el IEBH — el motor no la deriva ni la ha verificado',
     sin_marca: 'sin marca: el motor calla',
     b_enlace: 'Enlace', b_copiar: 'Copiar', b_copiado: '✓ ¡Copiado!',
     t_enlace: 'Copiar un enlace que abre el solucionador con esta voz ya analizada',
@@ -659,6 +660,7 @@ const TXT = {
           certainty`,
     cargando: 'loading the canon lexicon…', analizando: 'analysing…',
     t_ir: 'See the analysis of this word',
+    esc_iebh: 'sequence written by the IEBH — the engine neither derives nor verifies it',
     sin_marca: 'unmarked: the engine stays silent',
     b_enlace: 'Link', b_copiar: 'Copy', b_copiado: '✓ Copied!',
     t_enlace: 'Copy a link that opens the solver with this word already analysed',
@@ -770,7 +772,25 @@ function plegadas(lista, titulo){
   </details>`;
 }
 
-function cuerpoResultado(r, esVozSola){
+/* La escalera que escribió el IEBH a mano, para las formas que el motor no
+   deriva (junturas múltiples, sobre todo). Va SIEMPRE rotulada como suya y
+   nunca se confunde con una derivación del motor: el motor no la ha
+   verificado, y decirlo es la mitad del valor de mostrarla. */
+const CASO_POR_FORMA = {};
+((DATA.casos || {}).casos || []).forEach(c => {
+  if(c && c.forma) CASO_POR_FORMA[c.forma.toLowerCase()] = c;
+});
+function escaleraIEBH(voz){
+  const c = CASO_POR_FORMA[(voz || '').toLowerCase()];
+  const pasos = c && c.escalera_iebh;
+  if(!pasos || !pasos.length) return '';
+  return `<p class="lbl" style="margin:14px 0 0">${esc(tr('esc_iebh'))}</p>`
+    + ladder(pasos, false)
+    + `<p class="parcial" style="margin:6px 0 0">${
+        esc(c.escalera_fuente || c.fuente || '')}</p>`;
+}
+
+function cuerpoResultado(r, esVozSola, voz){
   /* Instrucción del IEBH (2026-08-28): UNA sola lectura por sandhi, y si el
      motor no sabe cuál es, que lo diga. Se afirma una lectura sólo cuando
      hay autoridad detrás —firmada en el banco, adjudicada por un lector, o
@@ -782,7 +802,7 @@ function cuerpoResultado(r, esVozSola){
     h += `<p class="motivo">${esc(r.motivo)}</p>`;
   }
   const lect = r.lecturas || [];
-  if(!lect.length) return h;
+  if(!lect.length) return h + escaleraIEBH(voz);
   const l0 = lect[0];
   const autoridad = l0.adjudicada || l0.patron
     || l0.procedencia === 'firmada' || l0.origen;
@@ -800,6 +820,9 @@ function cuerpoResultado(r, esVozSola){
     h += `<p class="motivo">${tr('nosabe')(lect.length)}</p>`
        + plegadas(lect, tr('verlas')(lect.length));
   }
+  /* Si la lectura afirmada no trae escalera —el motor no la deriva— y el
+     IEBH escribió la suya, ésta es su sitio. */
+  if(!((l0.pasos || []).length)) h += escaleraIEBH(voz);
   return h;
 }
 
@@ -845,7 +868,7 @@ function tarjeta(voz, r, abierta, veces){
       <span class="fmeta">${chip}${estado ? ' ' + estado : ''}${
         (n && r.senal !== 'segura') ? tr('lecturas')(n) : ''}</span>
     </summary>
-    <div class="fbody">${REV.on ? revBarra(voz, r) : ''}${cuerpoResultado(r, abierta)}
+    <div class="fbody">${REV.on ? revBarra(voz, r) : ''}${cuerpoResultado(r, abierta, voz)}
       ${botonesVoz(voz)}</div>
   </details>`;
 }
