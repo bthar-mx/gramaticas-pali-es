@@ -6,3 +6,12 @@ __pycache__/
 
 # caché local de wrangler (contiene el id de cuenta; no viaja)
 .wrangler/
+
+# El testigo del DPD (50–100 MB): se genera de la base del DPD con
+# nuestro/exportar_dpd.py + preparar_descomposiciones.py y no viaja con el
+# repositorio, como los PDF. Los informes dicen cuando falta. Y ojo:
+# ciclo_veredictos.py hace git add -A — sin esta línea, el archivo se
+# colaría en el primer commit de la cola.
+recursos/lexico/dpd-descomposiciones.tsv
+dpd-descomposicion.tsv
+dpd-pos.tsv
