@@ -1,5 +1,5 @@
 {
- "junturas": 1769,
+ "junturas": 1784,
  "filas": [
   {
    "forma": "ceva",
@@ -153,7 +153,7 @@
     "evaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "hi",
@@ -345,7 +345,7 @@
     "eva"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "fuente": "Kappa-Sutta Pali-Español (incluye Comentario).docx.txt",
    "senal": null,
    "componentes_motor": [
     "vuttanayena",
@@ -773,11 +773,11 @@
    "forma": "ayamettha",
    "frec": 955,
    "corte_iebh": [
-    "ayam",
+    "Ayam",
     "ettha"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Vaṇṇanā-PāḷiEspañol.txt",
+   "fuente": "Kappa-Sutta Pali-Español (incluye Comentario).docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "ayaṃ",
@@ -1769,7 +1769,7 @@
     "ca"
    ],
    "marca": "final consonántica",
-   "fuente": "Mahāsatipaṭṭhāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Lokapañha-Sutta – Pali-Español.docx.txt",
    "senal": "segura",
    "componentes_motor": [
     "kiṃ",
@@ -1986,6 +1986,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "lokoti",
+   "frec": 354,
+   "corte_iebh": [
+    "loko",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Lokapañha-Sutta – Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "loko",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "idamassa",
    "frec": 348,
    "corte_iebh": [
@@ -2073,7 +2089,7 @@
     "etaṃ"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
    "senal": null,
    "componentes_motor": [
     "ma",
@@ -2946,6 +2962,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "yampidaṃ",
+   "frec": 219,
+   "corte_iebh": [
+    "yam",
+    "p’idaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Lokapañha-Sutta – Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yampi",
+    "idaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "nissaraṇañca",
    "frec": 217,
    "corte_iebh": [
@@ -3385,7 +3417,7 @@
     "imāni"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Kappa-Sutta Pali-Español (incluye Comentario).docx.txt",
    "senal": null,
    "componentes_motor": [
     "cattāri",
@@ -4418,6 +4450,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "tīṇimāni",
+   "frec": 121,
+   "corte_iebh": [
+    "Tīṇ",
+    "imāni"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Moneyya-Sutta – Pali-Español (incluye Comentario).docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "tīṇi",
+    "imāni"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "lokasminti",
    "frec": 120,
    "corte_iebh": [
@@ -5017,7 +5065,7 @@
     "Ānanda"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
    "senal": null,
    "componentes_motor": [
     "ida",
@@ -9270,6 +9318,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "vuccatānanda",
+   "frec": 32,
+   "corte_iebh": [
+    "vuccat",
+    "Ānanda"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "vuccate",
+    "ānanda"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "aññeva",
    "frec": 31,
    "corte_iebh": [
@@ -9485,7 +9549,7 @@
     "Ānanda"
    ],
    "marca": "apóstrofo",
-   "fuente": "Mahāparinibbāna-Sutta-Pāḷi-Español.txt",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
    "senal": null,
    "componentes_motor": [
     "hānaṃ",
@@ -12262,6 +12326,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "tesamayaṃ",
+   "frec": 16,
+   "corte_iebh": [
+    "Tesam",
+    "ayaṃ"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Moneyya-Sutta – Pali-Español (incluye Comentario).docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "te",
+    "asamayaṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "vihareyyanti",
    "frec": 16,
    "corte_iebh": [
@@ -13622,6 +13702,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "lujjatīti",
+   "frec": 12,
+   "corte_iebh": [
+    "‘Lujjatī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Lokapañha-Sutta – Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "lujjati",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "mānanti",
    "frec": 12,
    "corte_iebh": [
@@ -14738,6 +14834,22 @@
    "componentes_motor": [
     "visa",
     "uddhāsiṃ"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "viññāpesīti",
+   "frec": 10,
+   "corte_iebh": [
+    "viññāpesī",
+    "ti"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "viññāpesi",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -16788,6 +16900,22 @@
     "eva"
    ],
    "acuerdo_segunda_voz": true
+  },
+  {
+   "forma": "arahāva",
+   "frec": 6,
+   "corte_iebh": [
+    "arahā",
+    "va"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Moneyya-Sutta – Pali-Español (incluye Comentario).docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "arahā",
+    "eva"
+   ],
+   "acuerdo_segunda_voz": false
   },
   {
    "forma": "arūpāvacarameva",
@@ -20067,6 +20195,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "sabbappahāyinanti",
+   "frec": 4,
+   "corte_iebh": [
+    "sabbappahāyinan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Moneyya-Sutta – Pali-Español (incluye Comentario).docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "sabbappahāyinaṃ",
+    "iti"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "sabbasaṅgāhikavacanametaṃ",
    "frec": 4,
    "corte_iebh": [
@@ -20483,6 +20627,22 @@
    "acuerdo_segunda_voz": false
   },
   {
+   "forma": "tuyhettha",
+   "frec": 4,
+   "corte_iebh": [
+    "tuyh",
+    "ettha"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
+   "senal": "posible",
+   "componentes_motor": [
+    "tuyha",
+    "ettha"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "uddhaccakukkuccamevetaṃ",
    "frec": 4,
    "corte_iebh": [
@@ -20721,6 +20881,22 @@
     "nisinneneva"
    ],
    "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "yāvatānanda",
+   "frec": 4,
+   "corte_iebh": [
+    "Yāvat",
+    "Ānanda"
+   ],
+   "marca": "apóstrofo",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "yāvati",
+    "ānanda"
+   ],
+   "acuerdo_segunda_voz": true
   },
   {
    "forma": "āgaccheyyunti",
@@ -22479,6 +22655,22 @@
    "componentes_motor": [
     "visesato",
     "eva"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "viññāpetunti",
+   "frec": 3,
+   "corte_iebh": [
+    "viññāpetun",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "viññāpetuṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
@@ -24448,6 +24640,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "saddamanussāveyya",
+   "frec": 2,
+   "corte_iebh": [
+    "saddam",
+    "anussāveyya"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Cūḷanikā-Sutta – Pali-Español.docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "saddaṃ",
+    "anussāveyya"
+   ],
+   "acuerdo_segunda_voz": true
+  },
+  {
    "forma": "santiṭṭhanāti",
    "frec": 2,
    "corte_iebh": [
@@ -25786,6 +25994,22 @@
    "acuerdo_segunda_voz": true
   },
   {
+   "forma": "attahitaparahitañca",
+   "frec": 1,
+   "corte_iebh": [
+    "attahitaparahitañ",
+    "ca"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Moneyya-Sutta – Pali-Español (incluye Comentario).docx.txt",
+   "senal": null,
+   "componentes_motor": [
+    "attahitā",
+    "parahitañca"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
    "forma": "avijahamānāva",
    "frec": 1,
    "corte_iebh": [
@@ -26643,6 +26867,22 @@
    "componentes_motor": [
     "majjhimavayaṃ",
     "api"
+   ],
+   "acuerdo_segunda_voz": false
+  },
+  {
+   "forma": "manomoneyyanti",
+   "frec": 1,
+   "corte_iebh": [
+    "mano-moneyyan",
+    "ti"
+   ],
+   "marca": "final consonántica",
+   "fuente": "Moneyya-Sutta – Pali-Español (incluye Comentario).docx.txt",
+   "senal": "segura",
+   "componentes_motor": [
+    "manomoneyyaṃ",
+    "iti"
    ],
    "acuerdo_segunda_voz": false
   },
