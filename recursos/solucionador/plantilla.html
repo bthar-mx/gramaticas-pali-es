@@ -1728,6 +1728,11 @@ document.addEventListener('click', e => {
     document.body.classList.toggle('en', v);
     b.setAttribute('aria-pressed', v ? 'true' : 'false');
     b.classList.toggle('on', v);
+    /* El rótulo dice A DÓNDE lleva, no dónde se está (2026-08-31, lo vio el
+       IEBH): decía «EN» en los dos estados, de modo que en inglés el mando
+       no anunciaba la vuelta y había que adivinar que era el mismo botón.
+       El aria-label es bilingüe a propósito y sirve para los dos sentidos. */
+    b.textContent = v ? 'ES' : 'EN';
     try { localStorage.setItem('pali_solucionador_en', v ? '1' : '0'); } catch(e){}
     /* Los mandos fijos, en el idioma puesto. */
     $('analizar').textContent = tr('b_analizar');
