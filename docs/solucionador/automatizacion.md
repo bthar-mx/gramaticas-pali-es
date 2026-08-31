@@ -83,14 +83,43 @@ es la diferencia con una contraseña compartida: **se revoca a uno solo**.
 De modo que no hay que cerrar la página: se cierra **el POST**, que es el
 único sitio por donde se entra.
 
+### Dos rutas, porque Access no distingue métodos
+
+**Se aprendió sobre la marcha el mismo 2026-08-31.** Access protege una RUTA,
+y la protege para todos los métodos. Puesto delante de `/api/veredictos`
+pensando en el POST del navegador, dejó fuera también el GET — es decir,
+`traer_veredictos.py`, que corre en la Mac sin sesión y recibía el HTML del
+login en vez del JSON. Con una sola ruta no hay arreglo posible.
+
+De modo que cada puerta lleva la cerradura que le toca:
+
+| ruta | quién pasa | con qué |
+| --- | --- | --- |
+| `POST /api/veredictos` | el navegador del revisor | **identidad** (Access) |
+| `GET/DELETE /api/cola?clave=…` | quien recoge, desde la Mac | **la clave** de siempre |
+| `GET /api/entrar` | el revisor, para iniciar sesión | identidad (Access) |
+
+No es un apaño: al buzón se echa una carta diciendo quién eres, y el buzón se
+abre con llave. Nunca fueron la misma cosa.
+
+`/api/entrar` existe porque la sesión de Access se obtiene visitando una ruta
+protegida, y la página del solucionador **no** lo está ni debe estarlo —el
+estudiante entra sin cuenta—. Sin ella el revisor tendría que visitar a mano
+el endpoint del POST para que le pidieran la contraseña.
+
+**Tiene que ir como SEGUNDO «destination» de la MISMA aplicación de Access.**
+La galleta vale por aplicación: en otra aplicación, iniciar sesión ahí no
+abriría el POST.
+
 ### En el panel de Cloudflare (una sola vez, lo hace Angel)
 
 1. **Zero Trust → Access → Applications → Add an application → Self-hosted.**
    Gratis hasta 50 usuarios.
-2. Dominio: `gramaticas.buddha-dhamma.net`, ruta **`/api/veredictos`**.
-   Conviene añadir una segunda aplicación sobre `/recursos/solucionador/`
-   **sólo si** se quiere que el revisor inicie sesión al abrir la página en vez
-   de al enviar; sin ella el primer envío del día pide la sesión y ya.
+2. Destinations → dos hostnames públicos **en esta misma aplicación**:
+   `gramaticas.buddha-dhamma.net/api/veredictos` y
+   `gramaticas.buddha-dhamma.net/api/entrar`.
+   **No** se protege `/recursos/solucionador/`: la página tiene que seguir
+   abierta para el estudiante, que no necesita cuenta.
 3. **Policy → Allow**, con `Emails` y la lista de quien esté aprobado. Ése es
    el repertorio, y se cambia aquí sin volver a desplegar.
 4. Copiar el **Application Audience (AUD) tag** de la pestaña *Overview*.
@@ -122,7 +151,8 @@ acto deliberado de quien firma, está `--fuente`.
 
     node worker/arnes_identidad.mjs
 
-Doce comprobaciones, sin red: token bueno, sin token, firma de otra clave,
+Dieciocho comprobaciones, sin red — nueve de identidad y seis del reparto
+de rutas, que es lo que impide volver a dejar fuera a quien recoge: token bueno, sin token, firma de otra clave,
 **aud de otra aplicación del mismo equipo** (el descuido clásico), caducado,
 cuerpo manipulado con firma legítima, `alg: none`, la galleta
 `CF_Authorization` —que es como llega de un navegador— y el caso de Access sin

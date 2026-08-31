@@ -39,15 +39,80 @@
    Access, que se edita en el panel sin tocar código ni volver a desplegar.
    Es la diferencia con una contraseña compartida: se revoca a uno solo. */
 
+/* ---- POR QUÉ HAY DOS RUTAS Y NO UNA (2026-08-31, la misma tarde) ----
+
+   Access protege una RUTA, y la protege para TODOS los métodos. Se puso
+   delante de /api/veredictos pensando sólo en el POST del navegador, y con
+   ello quedó fuera también el GET — es decir, traer_veredictos.py, que corre
+   en la Mac sin sesión de navegador y recibía el HTML del login en vez del
+   JSON de la cola. Con una sola ruta no hay manera: Access no distingue
+   métodos.
+
+   De modo que la puerta del navegador y la puerta de quien recoge se separan,
+   y cada una lleva la cerradura que le toca:
+
+     POST   /api/veredictos   ← Access delante: IDENTIDAD (quién deja algo)
+     GET    /api/cola?clave=  ← sin Access: la CLAVE de siempre (quién recoge)
+     DELETE /api/cola?clave=  ← ídem
+     GET    /api/entrar       ← Access delante: sólo sirve para iniciar sesión
+
+   No es un apaño: es la separación correcta. Al buzón se echa una carta
+   diciendo quién eres; el buzón se abre con llave. Son dos cosas distintas y
+   nunca fueron la misma.
+
+   /api/entrar existe porque la sesión de Access se obtiene visitando una ruta
+   protegida, y la página del solucionador NO lo está —ni debe estarlo: el
+   estudiante entra sin cuenta—. Sin ella, el revisor tendría que visitar a
+   mano el endpoint del POST para que le pidieran la contraseña.
+
+   OJO: /api/entrar tiene que estar en la MISMA aplicación de Access que
+   /api/veredictos, como segundo «destination». La galleta de Access vale por
+   aplicación: si fuera otra aplicación, iniciar sesión ahí no abriría el POST. */
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === "/api/veredictos") {
       return veredictos(request, env, url);
     }
+    if (url.pathname === "/api/cola") {
+      return cola(request, env, url);
+    }
+    if (url.pathname === "/api/entrar") {
+      return entrar(request, env);
+    }
     return env.ASSETS.fetch(request);
   },
 };
+
+/* La página de «ya está» tras el login. Si se ve, Access dejó pasar: eso es
+   todo lo que tiene que decir, y lo dice en español como el resto del sitio. */
+async function entrar(request, env) {
+  const ident = await identidad(request, env);
+  const quien = ident.correo
+    ? "Sesión iniciada como <strong>" + esc(ident.correo) + "</strong>."
+    : (ident.configurado
+      ? "No se pudo leer la identidad (" + esc(ident.por || "") + ")."
+      : "Access no está configurado: la cola sigue abierta.");
+  return new Response(
+    "<!doctype html><html lang=es><meta charset=utf-8>"
+    + "<meta name=viewport content='width=device-width,initial-scale=1'>"
+    + "<title>Sesión de revisión</title>"
+    + "<style>body{font:16px/1.6 Georgia,serif;max-width:34em;margin:12vh auto;"
+    + "padding:0 1.5em;color:#2b2b2b;background:#faf8f4}"
+    + "a{color:#6b5b2e}code{background:#efece5;padding:.1em .3em}</style>"
+    + "<h1 style='font-size:1.3em'>Sesión de revisión</h1><p>" + quien + "</p>"
+    + "<p>Ya puede volver al solucionador y pulsar «Enviar». "
+    + "La sesión dura lo que diga la aplicación de Access (24 horas).</p>"
+    + "<p><a href='/recursos/solucionador/'>Volver al solucionador</a></p>",
+    { headers: { "Content-Type": "text/html; charset=utf-8" } },
+  );
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, (c) => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
 
 async function veredictos(request, env, url) {
   if (!env.VEREDICTOS) {
@@ -86,6 +151,21 @@ async function veredictos(request, env, url) {
       metadata: { n, correo: ident.correo || null, cuando: new Date().toISOString() },
     });
     return Response.json({ ok: true, id, correo: ident.correo || null });
+  }
+  // Aquí sólo se DEJA. Leer y vaciar es /api/cola, y por la razón dicha
+  // arriba: Access no distingue métodos y dejaría fuera a quien recoge.
+  return new Response("sólo POST: para leer la cola, /api/cola", {
+    status: 405,
+  });
+}
+
+/* Leer y vaciar la cola. SIN Access delante, a propósito: quien recoge es un
+   guion que corre en la Mac, no un navegador, y no tiene con qué iniciar
+   sesión. La cerradura aquí es la de siempre, CLAVE_VEREDICTOS, que es
+   exactamente la que protegía esto antes del login y no ha cambiado. */
+async function cola(request, env, url) {
+  if (!env.VEREDICTOS) {
+    return new Response("la cola no está configurada", { status: 503 });
   }
   const clave = url.searchParams.get("clave") || "";
   // Dos fallos distintos, dos respuestas distintas (2026-08-29: un 403

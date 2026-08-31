@@ -10,7 +10,7 @@ automatización de grado medio (decisión del IEBH, 2026-08-28).
 
 Qué hace, en orden, y qué NO hace:
 
-  1. GET /api/veredictos con la clave → la cola completa.
+  1. GET /api/cola con la clave → la cola completa.
   2. Guarda cada entrada en docs/solucionador/veredictos-recibidos/,
      que es el registro permanente de lo recibido.
   3. Pasa cada una por herramientas/incorporar_adjudicaciones.py — el
@@ -39,7 +39,12 @@ import urllib.parse
 import urllib.request
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-API = "https://gramaticas.buddha-dhamma.net/api/veredictos"
+# /api/cola, no /api/veredictos (2026-08-31): desde que Access protege el
+# POST, protege esa ruta ENTERA —Access no distingue métodos—, y este guion,
+# que corre en la Mac sin sesión de navegador, recibía el HTML del login en
+# vez del JSON. Leer y vaciar viven ahora en /api/cola, con la clave de
+# siempre; dejar sigue en /api/veredictos, con identidad. Véase worker/index.js.
+API = "https://gramaticas.buddha-dhamma.net/api/cola"
 DESTINO = os.path.join(RAIZ, "docs", "solucionador", "veredictos-recibidos")
 INCORPORADOR = os.path.join(RAIZ, "herramientas", "incorporar_adjudicaciones.py")
 

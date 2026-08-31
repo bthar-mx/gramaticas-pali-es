@@ -638,7 +638,7 @@ const TXT = {
     est_estudiante: 'modo estudiante: exporte el .md y hágaselo llegar a quien firma — nada se adjudica sin esa revisión',
     enviando: 'enviando…',
     sin_cola: 'la cola no está configurada todavía: use «Exportar .md»',
-    sin_sesion: 'hace falta iniciar sesión para enviar: abra la página de nuevo e inicie sesión, o use «Exportar .md» y hágaselo llegar a quien firma',
+    sin_sesion: 'hace falta iniciar sesión para enviar — <a href="/api/entrar" target="_blank" rel="noopener">iniciar sesión</a>, y luego vuelva a pulsar «Enviar». O use «Exportar .md» y hágaselo llegar a quien firma.',
     no_envio: s => `no se pudo enviar (${s}): use «Exportar .md»`,
     enviado: 'enviado — se incorpora con traer_veredictos.py, arneses y firma',
     sin_red: 'sin conexión: use «Exportar .md»',
@@ -706,7 +706,7 @@ const TXT = {
     est_estudiante: 'student mode: export the .md and hand it to the signer — nothing is adjudicated without that review',
     enviando: 'sending…',
     sin_cola: 'the queue is not configured yet: use “Export .md”',
-    sin_sesion: 'you must sign in to send: reload the page and sign in, or use “Export .md” and hand it to the signer',
+    sin_sesion: 'you must sign in to send — <a href="/api/entrar" target="_blank" rel="noopener">sign in</a>, then press “Send” again. Or use “Export .md” and hand it to the signer.',
     no_envio: s => `could not send (${s}): use “Export .md”`,
     enviado: 'sent — it is incorporated with traer_veredictos.py, the harnesses and the signature',
     sin_red: 'offline: use “Export .md”',
@@ -1385,7 +1385,7 @@ async function revEnviar(boton){
     const r = await fetch('/api/veredictos',
       { method: 'POST', body: revMD(), redirect: 'manual' });
     if(r.status === 401 || r.type === 'opaqueredirect' || r.status === 0){
-      est.textContent = tr('sin_sesion');
+      est.innerHTML = tr('sin_sesion');   /* lleva enlace: v. el texto */
     } else if(r.status === 503){
       est.textContent = tr('sin_cola');
     } else if(!r.ok){

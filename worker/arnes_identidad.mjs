@@ -193,6 +193,47 @@ async function main() {
       (await enviar(conAcceso(), t, true)).status === 200);
   }
 
+  /* ---- El reparto de rutas (2026-08-31) ----
+     Access protege una ruta entera, todos los métodos. Por eso dejar y
+     recoger viven en rutas distintas, y eso hay que sujetarlo con pruebas:
+     si alguien volviera a juntarlas, traer_veredictos.py se queda fuera otra
+     vez y no se nota hasta que hace falta la cola. */
+  {
+    const env = conAcceso();
+    const t = await firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: "revisor@ejemplo.org", exp: dentro });
+    await enviar(env, t);   // deja una entrada
+
+    const get = (p) => worker.fetch(
+      new Request("https://ejemplo.org" + p), env);
+
+    comprobar("GET /api/veredictos → 405 (dejar no es recoger)",
+      (await get("/api/veredictos")).status === 405);
+
+    const mala = await get("/api/cola?clave=noesa");
+    comprobar("GET /api/cola con clave mala → 403", mala.status === 403);
+
+    const buena = await get("/api/cola?clave=x");
+    const j = buena.status === 200 ? await buena.json() : null;
+    comprobar("GET /api/cola con la clave → 200", buena.status === 200,
+      "salió " + buena.status);
+    comprobar("y trae la entrada con su correo",
+      j && j.veredictos.length === 1
+        && j.veredictos[0].correo === "revisor@ejemplo.org",
+      JSON.stringify(j));
+
+    const del = await worker.fetch(new Request(
+      "https://ejemplo.org/api/cola?clave=x&id=" + j.veredictos[0].id,
+      { method: "DELETE" }), env);
+    comprobar("DELETE /api/cola con la clave → 200 y vacía",
+      del.status === 200 && env.VEREDICTOS.datos.size === 0);
+
+    // /api/cola NO pide identidad: es la puerta de quien recoge, y quien
+    // recoge no tiene navegador. Si un día pidiera sesión, esto lo canta.
+    comprobar("/api/cola no exige sesión de Access",
+      (await get("/api/cola?clave=x")).status === 200);
+  }
+
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");
   if (fallos) { console.log("HAY FALLOS: " + fallos); process.exit(1); }
   console.log("La identidad se sostiene.");
