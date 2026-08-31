@@ -12,9 +12,11 @@ caso publicado sin pasar por la Mac) queda para después, si el uso lo pide.*
 1. El revisor, en `/recursos/solucionador/?revision`, marca veredictos y
    pulsa **«Enviar N veredictos al proyecto»**. El navegador hace `POST`
    a `/api/veredictos` y el worker guarda el `.md` en la cola (KV, 90 días).
-   No hace falta clave para enviar: la cola sólo se **lee** con clave, y
-   nada de lo enviado toca el proyecto por sí solo. «Exportar .md» sigue
-   existiendo como camino manual (y es el repuesto si la cola no responde).
+   **Desde el 2026-08-31 enviar exige identidad** (Access; v. más abajo), y el
+   correo verificado queda con la entrada. Leer la cola sigue pidiendo la
+   clave, en `/api/cola`, y nada de lo enviado toca el proyecto por sí solo.
+   «Exportar .md» sigue existiendo como camino manual, **sin login ninguno**
+   (y es el repuesto si la cola no responde).
 2. En la Mac, quien firma corre el ciclo COMPLETO con **una orden**
    (2026-08-29 — la independencia de quien firma):
 
