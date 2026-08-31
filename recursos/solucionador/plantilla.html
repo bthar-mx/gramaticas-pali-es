@@ -376,6 +376,9 @@ body:not(.en) .i-en{display:none}
       <button class="icon-btn" id="revision" hidden
         aria-label="Modo revisión: marque veredictos y expórtelos para su adjudicación"
         data-tip="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
+      <button class="icon-btn" id="entrar-btn" hidden
+        aria-label="Iniciar sesión para enviar veredictos"
+        data-tip="Iniciar sesión para enviar veredictos">⇥ entrar</button>
       <button class="icon-btn" id="en-btn" aria-pressed="false"
         aria-label="Interface in English / Interfaz en español"
         data-tip="Interface in English / Interfaz en español">EN</button>
@@ -640,6 +643,8 @@ const TXT = {
     sin_cola: 'la cola no está configurada todavía: use «Exportar .md»',
     no_revisor: 'está identificado, pero el envío a la cola es de los revisores: use «Exportar .md» y hágaselo llegar a quien firma',
     sesion_apr: c => `sesión: ${c} · aprendiz`,
+    b_entrar: '⇥ entrar', b_revisor: '✓ revisor', b_aprendiz: '✓ aprendiz',
+    t_sesion: c => `Sesión iniciada como ${c}. Pulse para revisarla o cambiarla.`,
     entrar: 'iniciar sesión',
     sesion_de: c => `sesión: ${c}`,
     t_entrar: 'Access verifica quién envía. El estudiante no lo necesita: «Exportar .md» funciona sin sesión.',
@@ -713,6 +718,8 @@ const TXT = {
     sin_cola: 'the queue is not configured yet: use “Export .md”',
     no_revisor: 'you are signed in, but sending to the queue is for reviewers: use “Export .md” and hand it to the signer',
     sesion_apr: c => `signed in: ${c} · apprentice`,
+    b_entrar: '⇥ sign in', b_revisor: '✓ reviewer', b_aprendiz: '✓ apprentice',
+    t_sesion: c => `Signed in as ${c}. Click to review or change it.`,
     entrar: 'sign in',
     sesion_de: c => `signed in: ${c}`,
     t_entrar: 'Access verifies who sends. Students do not need it: “Export .md” works with no session.',
@@ -1278,10 +1285,6 @@ function revAcciones(){
       data-tip="${esc(voces)}">${tr('enviar')(n)}</button>`}
     <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('exportar')}</button>
     <button type="button" class="boton secundario" id="rev-borrar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('borrar_todos')}</button>
-    ${REV.estudiante ? '' : `<button type="button" class="boton secundario" id="rev-entrar"
-      data-tip="${esc(tr('t_entrar'))}">${esc(REV.sesion === null ? tr('entrar') : (REV.sesion
-        ? (REV.papel === 'aprendiz' ? tr('sesion_apr')(REV.sesion) : tr('sesion_de')(REV.sesion))
-        : tr('entrar')))}</button>`}
     <span class="estado" id="rev-estado">${tr(REV.estudiante ? 'est_estudiante' : 'est_normal')}</span>
   </div>`;
 }
@@ -1442,6 +1445,25 @@ async function revEnviar(boton){
    lector de la página, que es la gracia. Si algo falla se calla y deja el
    botón como estaba: esto es una comodidad, no una autoridad — quien manda
    sigue siendo el 401 del worker al enviar. */
+/* El botón de sesión vive ARRIBA (pedido de Angel, 2026-08-31), con los
+   demás mandos. Estaba al pie de los resultados, y ahí no aparecía hasta
+   haber analizado algo — justo al revés de cuando hace falta, que es ANTES
+   de ponerse a marcar. Se muestra en cuanto se enciende el modo revisión.
+
+   El rótulo es corto porque la cabecera es estrecha; el correo entero va en
+   el tooltip, que sólo lo ve quien ya tiene esa sesión. */
+function revPintarEntrar(){
+  const b = $('entrar-btn');
+  if(!b) return;
+  b.hidden = !REV.on;
+  const sinSesion = !REV.sesion;
+  b.textContent = sinSesion ? tr('b_entrar')
+    : (REV.papel === 'aprendiz' ? tr('b_aprendiz') : tr('b_revisor'));
+  b.classList.toggle('on', !sinSesion);
+  const t = sinSesion ? tr('t_entrar') : tr('t_sesion')(REV.sesion);
+  b.setAttribute('aria-label', t);
+  b.dataset.tip = t;
+}
 async function revMirarSesion(){
   try {
     const r = await fetch('/api/entrar?json=1', { redirect: 'manual' });
@@ -1455,10 +1477,17 @@ async function revMirarSesion(){
     REV.papel = j.papel || null;
     if(REV.papel === 'aprendiz') REV.estudiante = true;
   } catch(e){ REV.sesion = ''; }
+  revPintarEntrar();
 }
+$('entrar-btn').addEventListener('click', () => {
+  /* Pestaña aparte: el login de Cloudflare no se deja incrustar, y volver
+     aquí con los veredictos intactos es lo que importa. */
+  window.open('/api/entrar', '_blank', 'noopener');
+});
 $('revision').addEventListener('click', () => {
   REV.on = !REV.on;
-  if(REV.on && REV.sesion === null && !REV.estudiante){
+  revPintarEntrar();
+  if(REV.on && REV.sesion === null){
     revMirarSesion().then(() => { if($('texto').value.trim()) analizar(); });
   }
   $('revision').classList.toggle('on', REV.on);
@@ -1539,11 +1568,6 @@ $('out').addEventListener('click', e => {
   if(e.target.id === 'rev-falta-btn') revFalta();
   if(e.target.id === 'rev-enviar') revEnviar(e.target);
   if(e.target.id === 'rev-exportar') revExportar();
-  if(e.target.id === 'rev-entrar'){
-    /* Pestaña aparte: el login de Cloudflare no se deja incrustar, y
-       volver aquí con los veredictos intactos es lo que importa. */
-    window.open('/api/entrar', '_blank', 'noopener');
-  }
   if(e.target.id === 'rev-borrar'){
     if(confirm(tr('c_borrar')(REV.v.size))){
       /* «Borrar todos» también vacía las observaciones (pedido del IEBH,
@@ -1753,6 +1777,7 @@ document.addEventListener('click', e => {
        no anunciaba la vuelta y había que adivinar que era el mismo botón.
        El aria-label es bilingüe a propósito y sirve para los dos sentidos. */
     b.textContent = v ? 'ES' : 'EN';
+    revPintarEntrar();
     try { localStorage.setItem('pali_solucionador_en', v ? '1' : '0'); } catch(e){}
     /* Los mandos fijos, en el idioma puesto. */
     $('analizar').textContent = tr('b_analizar');
