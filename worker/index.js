@@ -89,6 +89,17 @@ export default {
    todo lo que tiene que decir, y lo dice en español como el resto del sitio. */
 async function entrar(request, env) {
   const ident = await identidad(request, env);
+  /* «?json=1» para que la página pregunte si hay sesión sin sacar al lector
+     de donde está. Va en ESTA ruta y no en otra a propósito: Access protege
+     rutas, de modo que compartirla es compartir la protección — sin sesión,
+     Cloudflare responde con su redirección antes de que el worker exista, y
+     eso mismo es la respuesta que la página necesita. */
+  if (new URL(request.url).searchParams.get("json")) {
+    return Response.json(
+      { correo: ident.correo || null, configurado: ident.configurado },
+      { headers: { "Cache-Control": "no-store" } },
+    );
+  }
   const quien = ident.correo
     ? "Sesión iniciada como <strong>" + esc(ident.correo) + "</strong>."
     : (ident.configurado

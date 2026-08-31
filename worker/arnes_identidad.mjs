@@ -283,6 +283,30 @@ async function main() {
       /parece el AUD/.test(txt), txt.slice(0, 120));
   }
 
+  /* ---- /api/entrar, y su variante ?json=1 para el botón (2026-08-31) ---- */
+  {
+    const env = conAcceso();
+    const t = await firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: "revisor@ejemplo.org", exp: dentro });
+    const pedir = (p, tok) => worker.fetch(new Request("https://ejemplo.org" + p,
+      { headers: tok ? { "Cf-Access-Jwt-Assertion": tok } : {} }), env);
+
+    const html = await pedir("/api/entrar", t);
+    const cuerpo = await html.text();
+    comprobar("/api/entrar saluda por el correo",
+      /revisor@ejemplo\.org/.test(cuerpo), cuerpo.slice(0, 90));
+    comprobar("y no se cachea (es un diagnóstico)",
+      /no-store/.test(html.headers.get("Cache-Control") || ""));
+
+    const j = await (await pedir("/api/entrar?json=1", t)).json();
+    comprobar("?json=1 con sesión → el correo",
+      j.correo === "revisor@ejemplo.org", JSON.stringify(j));
+
+    const j2 = await (await pedir("/api/entrar?json=1", null)).json();
+    comprobar("?json=1 sin token → correo null",
+      j2.correo === null, JSON.stringify(j2));
+  }
+
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");
   if (fallos) { console.log("HAY FALLOS: " + fallos); process.exit(1); }
   console.log("La identidad se sostiene.");

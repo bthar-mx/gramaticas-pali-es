@@ -638,6 +638,9 @@ const TXT = {
     est_estudiante: 'modo estudiante: exporte el .md y hágaselo llegar a quien firma — nada se adjudica sin esa revisión',
     enviando: 'enviando…',
     sin_cola: 'la cola no está configurada todavía: use «Exportar .md»',
+    entrar: 'iniciar sesión',
+    sesion_de: c => `sesión: ${c}`,
+    t_entrar: 'Access verifica quién envía. El estudiante no lo necesita: «Exportar .md» funciona sin sesión.',
     sin_sesion: 'hace falta iniciar sesión para enviar — <a href="/api/entrar" target="_blank" rel="noopener">iniciar sesión</a>, y luego vuelva a pulsar «Enviar». O use «Exportar .md» y hágaselo llegar a quien firma.',
     no_envio: s => `no se pudo enviar (${s}): use «Exportar .md»`,
     enviado: 'enviado — se incorpora con traer_veredictos.py, arneses y firma',
@@ -706,6 +709,9 @@ const TXT = {
     est_estudiante: 'student mode: export the .md and hand it to the signer — nothing is adjudicated without that review',
     enviando: 'sending…',
     sin_cola: 'the queue is not configured yet: use “Export .md”',
+    entrar: 'sign in',
+    sesion_de: c => `signed in: ${c}`,
+    t_entrar: 'Access verifies who sends. Students do not need it: “Export .md” works with no session.',
     sin_sesion: 'you must sign in to send — <a href="/api/entrar" target="_blank" rel="noopener">sign in</a>, then press “Send” again. Or use “Export .md” and hand it to the signer.',
     no_envio: s => `could not send (${s}): use “Export .md”`,
     enviado: 'sent — it is incorporated with traer_veredictos.py, the harnesses and the signature',
@@ -1184,7 +1190,10 @@ $('texto').addEventListener('paste', () => {
    adjudica solo: el archivo exportado pasa por la firma del IEBH.
    Los veredictos viven en el navegador del revisor (localStorage);
    borrarlos es suyo, no del sitio. */
-const REV = { on: false, v: new Map(), obs: '', estudiante: false };
+const REV = { on: false, v: new Map(), obs: '', estudiante: false,
+  /* null = no se ha preguntado todavía; '' = sin sesión; 'x@y' = con ella.
+     Se pregunta una vez al encender el modo revisión, no en cada pintada. */
+  sesion: null };
 try {
   for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
     REV.v.set(k, x);
@@ -1265,6 +1274,9 @@ function revAcciones(){
       data-tip="${esc(voces)}">${tr('enviar')(n)}</button>`}
     <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('exportar')}</button>
     <button type="button" class="boton secundario" id="rev-borrar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('borrar_todos')}</button>
+    ${REV.estudiante ? '' : `<button type="button" class="boton secundario" id="rev-entrar"
+      data-tip="${esc(tr('t_entrar'))}">${esc(REV.sesion === null ? tr('entrar')
+        : (REV.sesion ? tr('sesion_de')(REV.sesion) : tr('entrar')))}</button>`}
     <span class="estado" id="rev-estado">${tr(REV.estudiante ? 'est_estudiante' : 'est_normal')}</span>
   </div>`;
 }
@@ -1410,8 +1422,25 @@ async function revEnviar(boton){
   }
   boton.disabled = false;
 }
+/* ¿Hay sesión de Access? Se pregunta a /api/entrar?json=1, que está detrás
+   de Access: sin sesión Cloudflare contesta con su redirección y el fetch la
+   ve como respuesta opaca —status 0—; con sesión llega el JSON. No saca al
+   lector de la página, que es la gracia. Si algo falla se calla y deja el
+   botón como estaba: esto es una comodidad, no una autoridad — quien manda
+   sigue siendo el 401 del worker al enviar. */
+async function revMirarSesion(){
+  try {
+    const r = await fetch('/api/entrar?json=1', { redirect: 'manual' });
+    if(!r.ok || r.type === 'opaqueredirect'){ REV.sesion = ''; return; }
+    const j = await r.json();
+    REV.sesion = j.correo || '';
+  } catch(e){ REV.sesion = ''; }
+}
 $('revision').addEventListener('click', () => {
   REV.on = !REV.on;
+  if(REV.on && REV.sesion === null && !REV.estudiante){
+    revMirarSesion().then(() => { if($('texto').value.trim()) analizar(); });
+  }
   $('revision').classList.toggle('on', REV.on);
   if($('texto').value.trim()) analizar();
 });
@@ -1490,6 +1519,11 @@ $('out').addEventListener('click', e => {
   if(e.target.id === 'rev-falta-btn') revFalta();
   if(e.target.id === 'rev-enviar') revEnviar(e.target);
   if(e.target.id === 'rev-exportar') revExportar();
+  if(e.target.id === 'rev-entrar'){
+    /* Pestaña aparte: el login de Cloudflare no se deja incrustar, y
+       volver aquí con los veredictos intactos es lo que importa. */
+    window.open('/api/entrar', '_blank', 'noopener');
+  }
   if(e.target.id === 'rev-borrar'){
     if(confirm(tr('c_borrar')(REV.v.size))){
       /* «Borrar todos» también vacía las observaciones (pedido del IEBH,
