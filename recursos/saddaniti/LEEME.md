@@ -36,14 +36,90 @@ En el vol. 03: `impresa = pdf + 593`, mientras no haya láminas intercaladas —
 pero **conviene leer el mapa y no fiarse de la resta**, que es justamente para
 lo que está el archivo.
 
+## HAY DOS DIGITALIZACIONES EN ARCHIVE.ORG, NO UNA (sesión 41)
+
+Lo comprobado el 2026-08-31, y cambia lo que decía este archivo:
+
+| familia | identificadores | subida | OCR |
+| --- | --- | --- | --- |
+| la que tenemos | `SaddanitiAggavamsasPaliGrammar01`…`05` | 2016 | **tesseract** |
+| la del ASI | `in.gov.ignca.2699`…`2703` | 2017 | **ABBYY FineReader 11** |
+
+**Los PDF de este repositorio son de la primera**: el md5 del vol. 03,
+`56034d3c734277ab6062385719d80ee5`, es exactamente el del original de
+`SaddanitiAggavamsasPaliGrammar03`.
+
+**Las dos vienen del mismo escaneo físico** —el ejemplar de la Central
+Archaeological Library de Nueva Delhi; nuestro vol. 03 lleva estampado su
+número de acceso, 2701, que es justo el identificador ASI del vol. 3—, de modo
+que **la imagen es la misma y no hay una versión mejor escondida**. Lo que
+cambia entre las dos familias es **sólo el OCR**.
+
+Correspondencia: 2699 = vol. 1 (1928), 2700 = vol. 2, **2701 = vol. 3 (1930)**,
+2702 = vol. 4, 2703 = vol. 5.
+
+## La resolución es el techo, y es bajo
+
+Cada página es **un solo JPEG de unos 545 × 874 píxeles**, sin capa de texto
+(comprobado con `pdfimages -list` y `pdftotext` en los cinco volúmenes). El
+`_jp2.zip` de archive.org —295 MB— **es derivado del PDF**, no un maestro: no
+contiene ni un píxel más. La ficha del ítem dice `ppi: 600` y **es falso**.
+
+A ~8 píxeles por carácter **no hay OCR que distinga `ṭ` de `t` ni `ā` de `a`**.
+El fallo no es de motor: es de píxeles. Se lee a ojo ampliando ×3 o ×10 con
+LANCZOS —así se hizo el capítulo XX entero—, pero no se transcribe a máquina.
+
+## Por qué el OCR de cada familia falla, y en qué se distinguen
+
+**La nuestra (tesseract).** La ficha del ítem lo explica del todo:
+
+    ocr_parameters: -l kir+que+Latin+Cyrillic+Arabic
+    ocr_detected_lang: ky          ocr_invalid_language: pli
+
+archive.org **rechazó «pli» como idioma**, dedujo que el libro era **kirguís** y
+pasó tesseract con modelos cirílico y árabe. De ahí `sakammika` → `ѕакаттіка`:
+literalmente estaba leyendo con un modelo cirílico. El briefing 39 §6 lo midió
+bien; la causa queda ahora nombrada.
+
+**La del ASI (ABBYY).** No mete cirílico —falla en latín—, pero **pierde todos
+los diacríticos** y descuaja los grupos de letras:
+
+    ABBYY:  «bindu niggahitam naraa ti duubabbaip»
+    debe decir: «bindu niggahītaṃ nāma ti daṭṭhabbaṃ»
+
+**Tampoco sirve como texto.** Pero sirve para otra cosa, y no es poco:
+
+## El ABBYY SÍ alcanza el aparato, y sirve de segundo testigo
+
+Donde tesseract no dejó nada legible, ABBYY deja las marcas de concordancia
+reconocibles a pesar del destrozo, **y corroboran por su cuenta las correcciones
+de la sesión 41**:
+
+    ABBYY: «§ J7-IH Kcv Rap n L-e B*-*»        → § 17-18 Kcv 9, Rūp 11
+    ABBYY: «§ 72 Ktv 20 = Sop 27 C<^ 11* ("ca")» → § 72 Kcv 20 = Rūp 27 ("ca")
+    ABBYY: «§ 73—83 Kcv 20»                     → § 73—85 Kcv 20
+
+Es decir: **una fuente independiente lee «Kcv» donde la sesión 40 había leído
+«Kc»**, en los tres sitios que la 41 corrigió a ojo. No adjudica —sigue
+adjudicando el ojo— pero es el segundo testimonio que faltaba.
+
+**Y donde discrepa, pierde.** Da «73—83» y el impreso dice **85**: comprobado
+sobre la imagen nativa ampliada ×10, el dígito tiene la barra plana y el cuenco
+abierto de un 5. Da «23-36» donde el impreso dice **25-26**. De modo que la
+regla de siempre: **el OCR genera y el ojo adjudica**, y ahora con dos
+generadores en vez de uno.
+
 ## Lo que NO se usa, y por qué
 
-**El OCR de archive.org no sirve.** Está medido en el briefing 39 §6: mete
-letras cirílicas dentro de palabras pāḷi (`sakammika` → `ѕакаттіка`), pone
-diéresis por macrón, confunde `t` con `l` de manera sistemática y pierde los
-puntos suscritos. Por eso de cada volumen se guarda **sólo** el `.pdf` liso y
-el mapa de páginas; los formatos `_djvu.txt`, `_hocr`, `_chocr` y `_text.pdf`
-salen todos de la misma pasada y arrastran los mismos defectos.
+De cada volumen se guarda **sólo** el `.pdf` liso y el mapa de páginas. Los
+formatos `_djvu.txt`, `_hocr`, `_chocr`, `_abbyy.gz` y `_text.pdf` **no se
+incorporan como texto** por lo dicho arriba: ninguna de las dos pasadas produce
+pāḷi utilizable. El `_text.pdf` de nuestra familia viene además marcado
+`pdf_degraded: invalid-jp2-headers`.
+
+**Sí vale la pena conservar el `2701_djvu.txt` del ASI como GENERADOR de
+candidatos del aparato**, que es lo que se acaba de demostrar. No está en el
+repositorio; se baja del ítem cuando haga falta.
 
 Sí sirve, y es distinto, pasar tesseract por la **franja del aparato** para
 buscar cadenas latinas y numéricas como «§ 50 Kc 20». El pāḷi sale mal; la

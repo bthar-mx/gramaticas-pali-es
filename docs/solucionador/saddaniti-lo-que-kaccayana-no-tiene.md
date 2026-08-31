@@ -134,6 +134,26 @@ Kaccāyana**.
      halló con el barrido de las primeras y últimas páginas. Mientras tanto,
      «Kcv = Kaccāyana-vutti» es inferencia del § 72, no lectura. -->
 
+**Segundo testigo, hallado el mismo día.** En archive.org hay **dos**
+digitalizaciones del mismo escaneo, y la otra —la del ASI,
+`in.gov.ignca.2701`— está pasada por ABBYY en vez de por el tesseract
+acirílicado que arruinó la nuestra. Su texto tampoco sirve como pāḷi, pero
+**alcanza el aparato, y lee «Kcv» por su cuenta en los tres sitios que este
+documento corrige**:
+
+    ABBYY: «§ J7-IH Kcv Rap n L-e B*-*»          → § 17-18 Kcv 9, Rūp 11
+    ABBYY: «§ 72 Ktv 20 = Sop 27 C<^ 11* ("ca")»  → § 72 Kcv 20 = Rūp 27 ("ca")
+    ABBYY: «§ 73—83 Kcv 20»                       → § 73—85 Kcv 20
+
+De modo que la distinción Kc / Kcv **no es lectura mía solamente**: la hace
+también un OCR que no sabe nada de este proyecto. Lo que sigue sin estar
+adjudicado es **qué obra sea** la Kcv.
+
+**Y donde el ABBYY discrepa, pierde**, que es la regla de siempre: da «73—83»
+y el impreso dice **85** —comprobado sobre la imagen nativa ampliada ×10: el
+dígito tiene la barra plana y el cuenco abierto de un 5—, y da «23-36» donde
+dice «25-26». Detalles en `recursos/saddaniti/LEEME.md`.
+
 **El ojo, además, precisó tres marcas que el OCR daba a medias:** el § 33 es
 «Sd 42²¹—43²¹» y no «Sd (reenvío interno)»; el § 44 va **entre paréntesis**,
 «(Kc 18)», que la 40 no anotaba; y el § 126 va **sin** paréntesis, que la 40
