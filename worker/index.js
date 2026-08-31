@@ -107,6 +107,8 @@ async function entrar(request, env) {
     ? "Sesión iniciada como <strong>" + esc(ident.correo) + "</strong>, con "
       + (papel === "revisor"
         ? "papel de <strong>revisor</strong>: puede enviar a la cola."
+          + " <br><small>Repertorio REVISORES: " + repertorio(env).size
+          + " correo(s).</small>"
         : "papel de <strong>aprendiz</strong>: puede marcar veredictos y "
           + "exportar el .md, pero no enviarlos a la cola."
           + " <br><small>Su correo no figura en el repertorio REVISORES, que "
@@ -126,7 +128,17 @@ async function entrar(request, env) {
     + "<h1 style='font-size:1.3em'>Sesión de revisión</h1><p>" + quien + "</p>"
     + "<p>Ya puede volver al solucionador y pulsar «Enviar». "
     + "La sesión dura lo que diga la aplicación de Access (24 horas).</p>"
-    + "<p><a href='/recursos/solucionador/'>Volver al solucionador</a></p>",
+    + "<p><a href='/recursos/solucionador/'>Volver al solucionador</a>"
+    /* Cerrar sesión lo hace Access, no el worker: la galleta es suya. Se
+       manda al «logout» del equipo, que la borra para TODAS las aplicaciones
+       —es una sola sesión— y devuelve al solucionador (pedido de Angel,
+       2026-08-31: no había manera de salir, y sin ella no se puede probar
+       otro papel sin abrir una ventana privada). */
+    + (ident.configurado
+      ? " &nbsp;·&nbsp; <a href='https://" + esc(dominioDelEquipo(env.ACCESO_EQUIPO))
+        + "/cdn-cgi/access/logout'>Cerrar sesión</a>"
+      : "")
+    + "</p>",
     { headers: {
       "Content-Type": "text/html; charset=utf-8",
       // Esta página es un DIAGNÓSTICO: dice el estado de ahora mismo. Sin
