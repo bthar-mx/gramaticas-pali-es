@@ -242,17 +242,38 @@ async function cola(request, env, url) {
    el aud es el descuido clásico: un token legítimo de otra aplicación del
    mismo Access valdría aquí. */
 
-let CLAVES = null, CLAVES_CUANDO = 0;
+/* La caché va POR DOMINIO, no en una variable suelta. Si ACCESO_EQUIPO
+   cambia, las claves del anterior no valen, y una caché sin llave las serviría
+   igual — con lo cual un dominio mal escrito «funcionaría» mientras durase la
+   hora, que es la peor forma de fallar: la intermitente. */
+const CLAVES = new Map();   // dominio → { keys, cuando }
+
+/* El valor de ACCESO_EQUIPO se escribe a mano en un «wrangler secret put», y
+   lo que sale del panel de Cloudflare es una URL. Pegar
+   «https://holy-term-49b9.cloudflareaccess.com» era lo natural y daba
+   «https://https://…», que falla sin decir por qué (pasó el 2026-08-31).
+   Se admite el dominio con esquema, sin esquema, con barra final o con
+   espacios: es un dominio, y exigir una forma exacta de escribirlo no protege
+   nada — sólo cuesta una tarde. */
+function dominioDelEquipo(v) {
+  return String(v).trim()
+    .replace(/^https?:\/\//i, "")
+    .replace(/\/.*$/, "");
+}
 
 async function clavesDelEquipo(equipo) {
+  const dom = dominioDelEquipo(equipo);
   // Una hora de caché: Access rota las claves, y pedirlas en cada POST sería
   // una llamada de red por veredicto.
-  if (CLAVES && Date.now() - CLAVES_CUANDO < 3600e3) return CLAVES;
-  const r = await fetch("https://" + equipo + "/cdn-cgi/access/certs");
-  if (!r.ok) throw new Error("no se pudieron leer las claves de Access");
-  CLAVES = (await r.json()).keys || [];
-  CLAVES_CUANDO = Date.now();
-  return CLAVES;
+  const y = CLAVES.get(dom);
+  if (y && Date.now() - y.cuando < 3600e3) return y.keys;
+  const r = await fetch("https://" + dom + "/cdn-cgi/access/certs");
+  if (!r.ok) {
+    throw new Error("las claves de " + dom + " respondieron " + r.status);
+  }
+  const keys = (await r.json()).keys || [];
+  CLAVES.set(dom, { keys, cuando: Date.now() });
+  return keys;
 }
 
 function deB64Url(s) {
@@ -292,7 +313,11 @@ async function identidad(request, env) {
   try {
     jwk = (await clavesDelEquipo(equipo)).find((k) => k.kid === cab.kid);
   } catch (e) {
-    return { configurado: true, correo: null, por: "no se pudo consultar Access" };
+    // Con el motivo DENTRO: un «no se pudo» a secas manda a adivinar, y lo
+    // que se adivina mal cuesta más que lo que se lee. Esto sólo lo ve quien
+    // ya pasó por Access, de modo que decirlo no regala nada.
+    return { configurado: true, correo: null,
+             por: "no se pudo consultar Access — " + (e && e.message ? e.message : e) };
   }
   if (!jwk) return { configurado: true, correo: null, por: "kid desconocido" };
   const clave = await crypto.subtle.importKey(

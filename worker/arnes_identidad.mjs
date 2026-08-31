@@ -23,6 +23,18 @@
                                                 abierta como antes, a propósito)
      9. la galleta CF_Authorization    → 200   (el navegador no manda cabecera)
 
+   Y dos grupos más, que no son de identidad sino de las dos trampas en que
+   ya se cayó el mismo día:
+
+    10-15. EL REPARTO DE RUTAS. Access protege una ruta para TODOS los
+           métodos, de modo que dejar (POST /api/veredictos, con identidad) y
+           recoger (GET/DELETE /api/cola, con la clave) tienen que vivir
+           separados. Si alguien los junta otra vez, quien recoge se queda
+           fuera y no se nota hasta que hace falta la cola.
+    16-19. ACCESO_EQUIPO ESCRITO DE LAS CUATRO MANERAS RAZONABLES. El panel
+           da una URL y el secreto quiere un dominio; pegar «https://…» daba
+           «https://https://…» y un fallo mudo. Ahora se admiten las cuatro.
+
    Nada de esto toca la red: el JWKS se sirve de mentira sustituyendo
    globalThis.fetch, y las claves se generan en el momento. */
 
@@ -232,6 +244,26 @@ async function main() {
     // recoge no tiene navegador. Si un día pidiera sesión, esto lo canta.
     comprobar("/api/cola no exige sesión de Access",
       (await get("/api/cola?clave=x")).status === 200);
+  }
+
+  /* ---- ACCESO_EQUIPO escrito de las maneras razonables (2026-08-31) ----
+     El panel da una URL; el secreto quiere un dominio. Pegar la URL entera
+     era lo natural y costó una tarde de «no se pudo consultar Access». Que
+     las cuatro formas funcionen se sujeta aquí. */
+  for (const [comoSeEscribe, valor] of [
+    ["dominio pelado", EQUIPO],
+    ["con https://", "https://" + EQUIPO],
+    ["con https:// y barra", "https://" + EQUIPO + "/"],
+    ["con espacios alrededor", "  " + EQUIPO + "  "],
+  ]) {
+
+    const env = { VEREDICTOS: kvFalso(), ACCESO_EQUIPO: valor,
+                  ACCESO_AUD: AUD, CLAVE_VEREDICTOS: "x" };
+    const t = await firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: "revisor@ejemplo.org", exp: dentro });
+    const r = await enviar(env, t);
+    comprobar("ACCESO_EQUIPO " + comoSeEscribe + " → 200",
+      r.status === 200, "salió " + r.status);
   }
 
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");

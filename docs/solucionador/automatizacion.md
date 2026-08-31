@@ -153,7 +153,7 @@ acto deliberado de quien firma, está `--fuente`.
 
     node worker/arnes_identidad.mjs
 
-Dieciocho comprobaciones, sin red — nueve de identidad y seis del reparto
+Veintidós comprobaciones, sin red — nueve de identidad, seis del reparto
 de rutas, que es lo que impide volver a dejar fuera a quien recoge: token bueno, sin token, firma de otra clave,
 **aud de otra aplicación del mismo equipo** (el descuido clásico), caducado,
 cuerpo manipulado con firma legítima, `alg: none`, la galleta
