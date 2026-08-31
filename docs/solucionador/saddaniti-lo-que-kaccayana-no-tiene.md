@@ -8,6 +8,17 @@ fallos. El sutta 49 se halló persiguiendo un fallo; esto es el barrido.*
 > su procedencia y su estado de comprobación. Decir qué regla explica qué voz
 > es del IEBH, no de este documento.
 
+> **AVISO DE LA SESIÓN 41 (2026-08-31), y hay que leerlo antes que nada.**
+> Las 39 páginas del capítulo están ahora **comprobadas a ojo, una a una**, que
+> era el encargo del §5.1 del briefing 40. **El barrido por OCR de la sesión 40
+> fallaba por los dos lados**, y el hallazgo que encabezaba aquel documento —«§§
+> 73-125: cincuenta y tres suttas seguidos sin ni una marca de Kaccāyana»— **no
+> se sostiene tal como estaba dicho**: el aparato imprime «‖ § 73—85 Kcv 20 ‖».
+> El §3 y el §4 quedan reescritos abajo; el §7 dice el alcance entero de lo que
+> hubo que corregir. Lo que NO cambia es el §4 bis y el §4 ter: las 416
+> discrepancias del motor están medidas contra el banco, no contra el aparato,
+> y ninguna cifra suya se mueve.
+
 ---
 
 ## 1. Lo primero: gramsut genera, Smith decide
@@ -53,41 +64,123 @@ Los paréntesis y el «cf.» marcan correspondencias flojas; la barra sola, la
 firme. **Lo que no lleva marca no tiene sutta correspondiente**, y ésa es la
 señal que se buscaba.
 
-### El capítulo, acotado
+### El capítulo, acotado — **corregido en la 41**
 
 | | |
 | --- | --- |
 | obra | Saddanīti Suttamālā, capítulo 1 (= **XX** en la numeración corrida de Smith) |
-| páginas impresas | **604 – 642** |
-| páginas del PDF, vol. 03 | **11 – 49** |
-| el capítulo XXI empieza en | pág. impresa 643 = pág. 50 del PDF |
+| suttas | **§§ 1 – 191** |
+| páginas impresas | **604 – 641** |
+| páginas del PDF, vol. 03 | **11 – 48** |
+| el capítulo XXI empieza en | **la pág. impresa 641, la misma**, con el § 192 |
+
+La 40 daba 604-642 y decía que el XXI empezaba en la 643. **Las dos cosas son
+falsas, y se ven a ojo.** En la pág. 640 acaba el texto —«Vomissakasandhi-
+vidhānaṃ niṭṭhitaṃ» y la estrofa de cierre—; **arriba de la 641 va el colofón**:
+
+    Iti navaṅge sātthakathe piṭakattaye vyappathagatisu viññūnaṃ
+    kosallatthāya kate saddanītippakaraṇe sandhikappo nāma vīsatimo paricchedo.
+
+y **debajo, en esa misma página**, «XXI.», la estrofa «Ito paraṃ pavakkhāmi
+Nāmakappaṃ hitāvahaṃ…» y el § 192. De donde se sigue una cosa que importa: los
+**§§ 192-195, que la 40 metía en su tramo de huecos «150-195», son ya del
+Nāmakappa** y no pintan nada aquí.
 
 La correspondencia entre página impresa y página del escaneo sale del
 `_page_numbers.json`, y **se comprobó contra el dato conocido**: la sesión 39
 dio la pág. impresa 617 como la 24 del PDF, y el mapa da lo mismo. Los cinco
 volúmenes corren continuos, de la pág. impresa 2 a la 1460.
 
-### Cómo se leyó
+### Cómo se leyó, y por qué hubo que volver a leerlo
 
-Las páginas son imagen pura. Se recorta la franja del aparato y se pasa por
-tesseract:
+La 40 recortaba la franja del aparato y la pasaba por tesseract:
 
     pdftoppm -r 300 -f 11 -l 49 -x 0 -y 1850 -W 1700 -H 820 -png <vol03> a
     tesseract a-024.png - --psm 6
 
-El OCR confunde letras pāḷi, pero **la cadena «§ N Kc M» es dígitos y latín**,
-y sale. Aun así: **el OCR genera y el ojo adjudica.** Comprobadas a ojo sobre
-la imagen: pág. 605 (§§ 3-6), pág. 617 (§§ 50-51, y el hueco del 49), pág. 623
-(sin ninguna marca). La tabla entera, con el estado de cada entrada, en
+**La 41 lo comprobó a ojo, las 39 páginas**, sobre la imagen a 300 dpi, sin
+tesseract de por medio. Ya no queda ninguna entrada en estado «ocr» en
 `comun/concordancia-sadd-kac-sandhi.json`.
 
-## 3. EL HALLAZGO: cincuenta y tres suttas seguidos sin Kaccāyana
+**Y el OCR fallaba por tres sitios, que conviene dejar dichos porque los tres
+son reproducibles:**
 
-Entre el **§ 73 y el § 125** —páginas impresas 621 a 626— el aparato de Smith
-no imprime **ni una sola** marca de Kaccāyana. La pág. 623 se comprobó a ojo y
-en efecto su aparato es todo citas canónicas y variantes, sin concordancia.
+1. **El recorte.** `-y 1850` a 300 dpi es el 70,5% de la altura. En las páginas
+   donde el cuerpo del texto acaba pronto **el aparato empieza por encima de esa
+   línea**, y sus primeras líneas quedaban fuera del recorte. Así se perdió la
+   **página 618 entera** —§§ 52, 53, 54, 55, 56—, y con ella el § 64, el
+   § 73—85, el § 124, los §§ 145-147 y el § 153.
+2. **«Kc» casa dentro de «Kcv».** El aparato distingue las dos obras y el patrón
+   no: cinco marcas que Smith da a la **Kcv** se atribuyeron a Kaccāyana
+   (§§ 17-18, 55, 72, 73—85, 139).
+3. **Y al revés: «Kc» aparece en notas que no son concordancia.** Las págs. 637
+   y 638 citan «Kc 139», «Kc 499», «Kcv 2», «Kcv 159» como notas al pie
+   corrientes. **Sólo cuenta lo que va entre dobles barras.**
 
-Y no es un tramo cualquiera. Leídos los enunciados, es **una serie**:
+### «Kcv» es obra distinta de «Kc», y qué obra sea es una DUDA
+
+En el aparato, «Kcv N» y «Kc N» son cosas distintas y ambas van por número de
+sutta. Lo que apunta a la **Kaccāyana-vutti**: el § 72 imprime «Kcv 20 = Rūp 27
+Cᵉ 11⁸ ("ca")», y Rūp 27 es el correspondiente de Kc 20 en la concordancia que
+este proyecto ya tiene (`CLAUDE.md`: «Kc 20 = Rūp 27»).
+
+**No se adjudica.** Se buscó la lista de siglas de Smith en el material
+preliminar de los vols. 01, 03 y 05 y no apareció. Hasta que aparezca, «Kcv» se
+registra como Kcv y **no se cuenta como correspondencia de sutta de
+Kaccāyana**.
+
+<!-- DUDA: dónde imprime Smith su lista de siglas. Está en alguna parte de la
+     introducción (que va en francés) o en los índices del vol. 04/05, y no se
+     halló con el barrido de las primeras y últimas páginas. Mientras tanto,
+     «Kcv = Kaccāyana-vutti» es inferencia del § 72, no lectura. -->
+
+**El ojo, además, precisó tres marcas que el OCR daba a medias:** el § 33 es
+«Sd 42²¹—43²¹» y no «Sd (reenvío interno)»; el § 44 va **entre paréntesis**,
+«(Kc 18)», que la 40 no anotaba; y el § 126 va **sin** paréntesis, que la 40
+sí anotaba.
+
+## 3. EL HALLAZGO, RECTIFICADO: la serie está en la VUTTI del § 20
+
+*Lo que sigue reemplaza al §3 de la sesión 40, que decía «entre el § 73 y el
+§ 125 el aparato no imprime ni una sola marca de Kaccāyana». Comprobado a ojo,
+**no es así**, y el propio tramo lo desmiente en su primera línea.*
+
+**La pág. 622 imprime, y se ha visto a 300 dpi ampliada:**
+
+    ‖ § 73—85 Kcv 20 ‖
+
+y la 621, dos líneas antes de empezar el tramo:
+
+    ‖ § 69 Sd 372⁹ ‖        ‖ § 72 Kcv 20 = Rūp 27 Cᵉ 11⁸ ("ca") ‖
+
+**De modo que la serie de sustitución de consonantes no es materia que
+Kaccāyana no tenga: es materia que Smith remite a la vutti del sutta 20** —el
+«Do dhassa ca»—, **que es exactamente el suttavibhāga que este proyecto ya
+tiene documentado** en `CLAUDE.md` con sus catorce sub-suttas (*To dassa*,
+*Ṭo tassa*, *Ko gassa*, *Lo rassa*, *Jo yassa*…). Nandisena lo documenta en
+§20 del capítulo, Thitzana lo documenta en su vol. 2, pp. 138-140, y **ahora
+Smith lo documenta por tercera vez y por su lado**, al mandar los §§ 72-85 del
+Saddanīti a la misma vutti.
+
+Es mejor hallazgo que el que se creyó tener: no es una laguna de Kaccāyana, es
+**un tercer testimonio independiente del mecanismo del «ca» de §20**.
+
+### Lo que sí queda, dicho con la cifra correcta
+
+| | la 40 decía | comprobado a ojo |
+| --- | --- | --- |
+| tramo sin marca de **Kc** | §§ 73-125 (53 suttas) | **§§ 69-125 (57 suttas)** |
+| ¿sin ninguna marca? | «ni una sola» | **no**: § 69 Sd, § 72 Kcv, § 73—85 Kcv, § 124 Sd |
+| último Kc antes | — | **§ 68 → Kc 29** (pág. 620) |
+| primer Kc después | — | **§ 126 → Kc 50** (pág. 626) |
+
+O sea que el tramo **empieza antes** de lo que se dijo y **no está mudo**. Sin
+ninguna marca de ninguna clase quedan los **§§ 86-123**, treinta y ocho suttas
+seguidos: el final de la sustitución de consonantes y toda la formación de
+conjuntos.
+
+Y el contenido del tramo, que es lo que se leyó en la 40, sigue siendo el que
+era: **una serie**.
 
 **§§ 73-101 — sustitución de consonante, una por sutta:**
 
@@ -131,24 +224,40 @@ que es lo que manda sobre este párrafo. Lo que vale del hallazgo es el
 inventario: saber que existe y dónde está, para no volver a tropezar con estas
 reglas de una en una.
 
-## 4. Los otros huecos del capítulo
+## 4. Los otros huecos del capítulo — **la lista de la 40 se cae casi entera**
 
-Dentro del tramo de sandhi propiamente dicho, sin marca de Kaccāyana en el
-aparato, y **pendientes de comprobar a ojo**:
+La 40 daba esta lista de huecos «pendientes de comprobar a ojo». Comprobados,
+**la mitad no eran huecos**. Va primero el saldo y después la lista buena.
 
-| suttas | de qué van |
+| lo que la 40 llamaba hueco | comprobado a ojo |
 | --- | --- |
-| 37-39 | conjunto previo y elisión ante 'iva' |
-| 40-42 | «hoti kesañci matena»; 'ayya/añña/aggha/ussa'; 'temepabbatyādīnaṃ' |
-| 45, 47, 48 | 'u' de hetu/dhātu; «itissa tisaddabyañjanopi»; elisión de la 'i' |
-| **49** | **«evassekāre itissaññassa cissa vo»** — comprobado a ojo, sesión 39 |
-| 52-56 | 'eva'→'ri'; 'putha' + agama 'g'; 'pā'; «ossu»; «yavamadanataralahā vā» |
-| 64, 69-71 | alargamiento ante consonante; elisión ante 'y m n r'; «animittopi vā» |
-| 127-128, 131, 134-136 | 'viya'→'byā'; 'vācā'→'byo'; niggahīta en gāthā; conjunto y no conjunto |
-| 143-147, 150-195 | sin leer todavía |
+| 52-56 | **§ 52 Kc 22, § 53 Kc 42, § 54 Kc 43, § 55 Kcv 49, § 56 Kc 35** — la pág. 618 entera se le había escapado |
+| 64 | **§ 64 Kc 25** |
+| 143-147 | **§ 145 Kc 34, § 146 Kc 37, § 147 Kc 38 + 39**; quedan sólo el 143 —entre paréntesis con el 142— y el 144 |
+| 150-195 | **§ 153 Kc 30**; y §§ 192-195 no son de este capítulo |
+| 32, 69, 134 | tienen marca, pero al **Saddanīti mismo**, no a Kaccāyana |
+| 37-42, 45, 47, 48, **49**, 70, 71, 127-128, 131, 135, 136 | **confirmados**: sin ninguna marca |
 
-El **47** merece nombrarse aparte: «itissa tisaddabyañjanopi» es otra vez el
-comportamiento de «iti», que es lo que ocupó la sesión 39.
+**El § 49 sigue en pie**, que era lo que importaba de la sesión 39: la pág. 617
+imprime «‖ § 50 Kc 20 ‖» y «‖ § 51 Kc 21 ‖» y **nada para el 49**, y ahora está
+visto dos veces. El **47** —«itissa tisaddabyañjanopi», otra vez «iti»— también
+se confirma sin marca.
+
+### Los huecos de verdad, comprobados
+
+Sin **ninguna** marca en el aparato, en todo el capítulo: **96 suttas de 191.**
+Por tramos:
+
+    11, 13, 16, 24
+    37-42     conjunto previo, elisión ante 'iva', 'ayya/añña/aggha/ussa'
+    45, 47-49 'u' de hetu/dhātu; «itissa…»; elisión de la 'i'; y el 49
+    70, 71
+    86-123    ← el tramo mudo de verdad: 38 suttas seguidos
+    125, 127, 128, 131, 135, 136, 143, 144
+    150, 151, 154-156, 161-165, 168-191
+
+La tabla entera, entrada por entrada y con su página, en
+`comun/concordancia-sadd-kac-sandhi.json`.
 
 ## 4 bis. LA MEDIDA, y sale que no — al menos aquí
 
@@ -274,6 +383,102 @@ es la única que alcanza a estas 44.998 fichas.
      dos voces a la vez: «panetta+ha» no tiene bien la primera. Puede que sean
      dos hilos y no uno. No lo decido yo. -->
 
+## 4 quater. LOS §§ 143-191, QUE NO SE HABÍAN LEÍDO
+
+*Era el §5.2 del briefing 40. Leídos en la 41 sobre el propio impreso, págs.
+629-640. La 40 pedía «143-195»; el capítulo acaba en el 191, así que son estos.
+Los enunciados no se copian de bhaddacak —licencia CC BY-NC-ND— sino que se
+leen de la edición de Smith, que es la fuente.*
+
+**No es material menor. Es el tramo donde el Saddanīti hace tres cosas que
+Kaccāyana no hace**, y las tres tocan de lleno lo que le falta al motor.
+
+### a) Niggahīta y sandhi corriente (§§ 143-153), casi todo con Kaccāyana
+
+    143 Mo itare                             m ← niggahīta (los otros dos géneros)
+    144 Samāse do tiliṅge                    d ← niggahīta en compuesto
+    145 Sesato mo do ca sare vyañjane vā     [Kc 34]
+    146 Kvaci niggahītāgamo                  [Kc 37]   agama de niggahīta
+    147 Lopaṃ                                [Kc 38+39] elisión del niggahīta
+    148 Paro saro vā                         [Kc 40]   elisión de la vocal siguiente
+    149 Lutte vyañjano visaññogo             [Kc 41]   deshace el conjunto tras elidir
+    150 Niggahītaparo ikāro akāraṃ ukārañ ca makāre
+    151 Akāro ekāraṃ hakāre                  ke 'haṃ · k'ahaṃ
+    152 Sahakassa kassa patimhi niggahītattaṃ    Brahmā Sahampati
+    153 Vyañjane niggahītaṃ aṃ               [Kc 30]
+
+### b) Métrica y eufonía (§§ 154-167), y aquí Kaccāyana ya no acompaña
+
+    154 Pariyādīnaṃ ra-yādivaṇṇassa ya-rādihi vipariyāyo
+        METÁTESIS: pariyudāhāsi > payirudāhāsi; ariyassa > ayirassa;
+        kariyā > kayirā; bahuābādho > bavhābādho; masakā > makasā
+    155 Saṃsadde paralope pubbo dīghaṃ       saṃratto > sāratto, sārāgo, sārambho
+    156 Vāsiṭṭhass' ikāro ettaṃ pāvacane     Vāseṭṭho
+    157 Vaṇṇaniyamo chando, garu-lahuniyamo vutti
+    158 Gāthāsu chanda-m-abhedatthaṃ akkharalopo
+    159 Vuttānurakkhaṇatthaṃ viparītatā
+    160 Sutte sukhuccāraṇatthaṃ akkharalopo viparītatā ca
+    161 Appakkharānaṃ bahuttam aññathattañ ca   dve > duve; taṇhā > tasiṇā
+    162 Bavhakkharānaṃ appattam aññathattañ ca  ācariyaṃ > āceraṃ
+    163 Kvaci sare vyañjane vā odantānaṃ nāmānaṃ akārantattaṃ pakati
+    164 Vuttirakkhaṇe māgame               agama 'm': magga-m-atthi, esa-m aggaṃ
+    165 Mādese akāro dīghaṃ                paññavatām iva, arahatām iva
+    166 Apicass' ilopo passa cattaṃ        api ca > acc  [Kcv]
+    167 Aticcassa vā tilopo                aticca > acc
+    168 Ṭhānantaragati niggahītassa
+
+**La METÁTESIS del § 154 no tiene equivalente en Kaccāyana**, y es una
+operación de otra clase que las del capítulo: no elide, no sustituye, no
+inserta — **reordena**. Un motor que sólo componga y elida no la propone nunca.
+
+### c) Las junturas de partícula, que es donde le duele al motor
+
+    175 Akārañ c' ekār' āgame              haññe eva … kocinaṃ
+    178 Yathā-tathāto aññato vā evass' ekāro ikāraṃ
+        yathā eva > yathar-iva;  tathar-iva;  bhusām iva
+    179 Saññoge vāthavāgame dīgho rassaṃ   pa-g eva itarā pajā; samma-d akkhātā
+    182 Sakissa iss-ā(kāro) sadāgamena āgāmimhi     saki + d + āgāmi > sakadāgāmī
+    183 Patissa pacco saranimittassa vā vyañjananimittassa vā     paccājāto
+    191 Suddhassaramhā itissa issa lopo    elisión de la 'i' de «iti» tras vocal pura
+
+**Los §§ 175, 178 y 179 son tres suttas dedicados a «eva»** — que es la familia
+sin firmar de más masa de `docs/solucionador/familias-no-sabe.md` (49.484
+fichas). **El § 191 es «iti»**, que es lo de la sesión 39. Y el **§ 160**, entre
+sus ejemplos, imprime:
+
+    Samantapāsādikā iti eva  ·  "Samantapāsādikā tv eva"
+
+es decir, **«iti eva» dando «tv eva»**, que es la lectura adjudicada de «tveva»
+(commit `cb9b56d`). **Testimonio, no adjudicación**: se anota para que el IEBH
+decida qué hacer con él, y viene del Saddanīti, no de este documento.
+
+### d) Y LO QUE MÁS IMPORTA: el Saddanīti tiene suttas que PROHÍBEN el sandhi
+
+    185 Yattha sandhite sare na padaṃ sukhuccāraṇīyaṃ, na tattha sarānaṃ sandhi
+        donde unir la vocal deja la palabra incómoda de pronunciar, no hay sandhi
+    186 Yattha sandhito saro atthaṃ dūseti, na tattha sandhi
+        donde la vocal unida ESTROPEA EL SENTIDO, no hay sandhi   («Āyasmā Ānando»)
+    187 Dvīsu padesu na vyañjane sarānaṃ sandhi
+    189 Na suddhassaralopo ādiss' ākāre sarantare vā
+
+Y en el § 168, de su propia mano, la razón: algunas reglas se enuncian
+*aniyamavasena* —sin obligar—, y de ahí *sotūnaṃ sammoho* y *rūpānañ ca
+atippasaṅgo*, «confusión del oyente y **exceso de formas**».
+
+**Eso es, dicho en el siglo XII, el problema del §4 ter de este documento.** El
+motor propone varias lecturas que recomponen todas y no sabe separarlas; el
+Saddanīti sostiene que la juntura se bloquea cuando el resultado no se
+pronuncia bien o **cuando estropea el sentido** — y el sentido no está en las
+reglas: está en la frase. **Es el argumento del §9.8 del briefing 39 dicho por
+la propia autoridad**, y no una analogía forzada: son suttas, no glosa.
+
+Se remata en la pág. 640, cerrando el capítulo, con algo que conviene tener
+delante al leer los §§ 157-167: Aggavaṃsa dice que el Bhagavā **no** altera las
+palabras por métrica ni por comodidad de pronunciación —*na hi Bhagavā chandañ
+ca vuttiñ ca rakkhati*—, que eso es *lokopacāramattavasena*, cosa de autores
+que temen la censura ajena. Es decir: **el propio Saddanīti acota hasta dónde
+llegan sus reglas de eufonía cuando el texto es Buddhavacana.**
+
 ## 5. Lo que falta, en orden
 
 Y el orden cambia por lo que dice el §4 bis.
@@ -283,13 +488,21 @@ Y el orden cambia por lo que dice el §4 bis.
    falte y no lo arregla el orden —está medido en el §4 bis—: pide el texto
    corrido del OSBCT (briefing 39 §9.8) o la ficha de varias lecturas con su
    discriminante (§9.3). **Esto pasa delante de todo lo demás.**
-2. **Comprobar a ojo** los huecos del §4 y el tramo 73-125 página por página.
-   Son 39 páginas; van 3 comprobadas. Sigue valiendo la pena aunque el motor
-   no los necesite hoy: el inventario es lo que evita volver a encontrarlos de
-   uno en uno.
-3. **Leer 143-195**, que no se ha hecho.
-4. **Resolver la discrepancia del § 34**: el OCR lee «Kc 18» y gramsut da k14.
-5. Sólo después, y con el visto bueno del IEBH, plantear si algo entra en el
+2. ~~Comprobar a ojo los huecos del §4 y el tramo 73-125.~~ **HECHO en la 41**:
+   las 39 páginas, una a una. Ya no queda estado «ocr» en la concordancia.
+3. ~~Leer 143-195.~~ **HECHO en la 41**, y son 143-191: §4 quater.
+4. ~~La discrepancia del § 34.~~ **RESUELTA en la 41: «Kc 14».** El aparato lo
+   imprime así en la pág. 613. El OCR leía «Kc 18»; **gramsut tenía razón.**
+   Y conviene apuntar cómo se equivocó el OCR, porque es instructivo: dos
+   páginas más allá, en la 616, el aparato imprime «(Kc 18)» para el § 44.
+5. **Nuevo, y sale del §4 quater:** llevarle al IEBH los §§ 185-186 —los suttas
+   que PROHÍBEN el sandhi cuando el resultado no se pronuncia bien o estropea
+   el sentido— y el § 154, la metátesis, que no tiene equivalente en Kaccāyana.
+   No para meterlos en el motor: para que decida si el criterio de `CLAUDE.md`
+   quiere citarlos, que es autoridad diciendo lo mismo que él dijo.
+6. **Averiguar qué obra es «Kcv»** en las siglas de Smith. Queda como DUDA en
+   el §2. Hasta entonces las cinco marcas Kcv no cuentan como Kaccāyana.
+7. Sólo después, y con el visto bueno del IEBH, plantear si algo entra en el
    motor. Hoy la medida dice que no hace falta.
 
 ## 6. Procedencia
@@ -303,6 +516,46 @@ Y el orden cambia por lo que dice el §4 bis.
   parte III, págs. 604-642, y a él se atribuye.
 - La concordancia de gramsut (`xrefUtil.xrefList`) se usó **sólo como
   generador**, y su fallo en los suttas 9 y 10 queda registrado arriba.
+
+## 7 bis. LO QUE LA 41 TUVO QUE CORREGIR DE LA 40 (principio 5)
+
+*Va aparte y va primero porque es de esta sesión, y porque el defecto no está
+en una cifra suelta: está en el titular.*
+
+1. **El hallazgo que encabezaba este documento no era cierto como estaba
+   dicho.** «Entre el § 73 y el § 125 no hay ni una marca de Kaccāyana» — y el
+   aparato imprime «‖ § 73—85 Kcv 20 ‖» en la primera página del tramo. La 40
+   había comprobado a ojo la pág. 623 y **no la 622**, que es donde estaba la
+   marca. Comprobar una página del tramo y generalizar al tramo es exactamente
+   lo que el propio documento decía que no había que hacer.
+
+2. **El alcance, para que se sepa cuánto hay que desconfiar del barrido de la
+   40**, sobre 39 páginas:
+
+   | | |
+   | --- | ---: |
+   | marcas que el OCR **perdió** | **14** |
+   | marcas que atribuyó a Kaccāyana siendo de la **Kcv** | **5** |
+   | notas de paréntesis mal puestas o mal quitadas | 2 |
+   | discrepancias resueltas (§ 34) | 1 |
+   | límites del capítulo mal | 604-642 → **604-641** |
+   | suttas que no eran del capítulo (§§ 192-195) | 4 |
+
+   Nueve suttas pasan de «hueco» a tener correspondencia de Kaccāyana —52, 53,
+   54, 56, 64, 145, 146, 147, 153— y uno a Kcv (el 55).
+
+3. **La causa material está localizada, y era comprobable en la 40 sin leer
+   nada:** el recorte empezaba en el 70,5% de la altura de la página y el
+   aparato empieza más arriba en cuanto el cuerpo del texto acaba pronto. Una
+   sola página completa mirada de arriba abajo —en vez de la franja recortada—
+   lo habría enseñado. La 40 escribió «el OCR genera y el ojo adjudica» y luego
+   **adjudicó con el recorte del OCR**, que es la misma frase incumplida.
+
+4. **Lo que la 40 hizo bien y conviene no perder de vista:** los §§ 9 y 10 —«Kc
+   605» y «Kc 604», donde gramsut calla— están confirmados a ojo, y el § 49
+   sigue sin marca. Los dos testimonios de la sesión 39 se sostienen. Y el §4
+   bis y el §4 ter, que son las 416 discrepancias del motor, **no dependían del
+   aparato y no se mueven**.
 
 ## 7. LO QUE HAY QUE CORREGIR DE MÍ MISMO (principio 5)
 

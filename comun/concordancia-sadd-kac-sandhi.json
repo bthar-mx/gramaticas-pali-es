@@ -1,98 +1,647 @@
 {
  "_meta": {
   "que_es": "Concordancia Saddanīti Suttamālā ↔ Kaccāyana para el capítulo de sandhi (Suttamālā I = Smith XX), tal como la imprime el APARATO de Helmer Smith al pie de página.",
-  "de_donde": "Saddanīti, ed. Helmer Smith, parte III, págs. impresas 604-642 = páginas 11-49 del PDF del vol. 03. El aparato imprime las correspondencias entre dobles barras, con la forma «|| § 50 Kc 20 ||».",
-  "metodo": "Las páginas son imagen pura. Se recortó la franja inferior con «pdftoppm -r 300 -y 1850 -H 820» y se pasó por tesseract. El OCR GENERA candidatos; NO adjudica. Cada entrada lleva su estado.",
+  "de_donde": "Saddanīti, ed. Helmer Smith, parte III, págs. impresas 604-641 = páginas 11-48 del PDF del vol. 03. El aparato imprime las correspondencias entre dobles barras, con la forma «‖ § 50 Kc 20 ‖».",
+  "metodo": "COMPROBADO A OJO, PÁGINA POR PÁGINA, en la sesión 41: las 39 páginas del capítulo, sobre la imagen a 300 dpi. La sesión 40 lo había leído por OCR y publicado con estado «ocr»; ese barrido tenía errores por los dos lados y están corregidos aquí. Ya no queda ninguna entrada en estado «ocr».",
   "estados": {
-   "vista": "Comprobada a ojo sobre la imagen de la página, no sólo por OCR.",
-   "ocr": "Leída por OCR y no comprobada todavía a ojo. Los números pueden estar mal.",
-   "hueco-ocr": "El OCR no halla marca de concordancia para ese sutta. NO es prueba de que Kaccāyana no lo tenga: es un candidato a comprobar a ojo."
+   "vista": "Comprobada a ojo sobre la imagen de la página. En este archivo lo están TODAS."
   },
-  "advertencia": "La AUSENCIA por OCR no demuestra ausencia. Se demostró en el caso contrario: gramsut no da ninguna correspondencia para los suttas 9 y 10, y Smith imprime «§ 9 Kc 605» y «§ 10 ... Kc 604». La ausencia sólo vale cuando está en estado «vista».",
+  "por_que_fallo_el_ocr_de_la_40": [
+   "1. EL RECORTE. La franja se tomaba con «-y 1850 -H 820» a 300 dpi, o sea desde el 70,5% de la altura. En las páginas donde el cuerpo del texto acaba pronto el aparato empieza por encima de esa línea y sus primeras líneas quedaban fuera. Así se perdió la página 618 ENTERA (§§ 52-56), y con ella el § 64, el § 73—85, el § 124, los §§ 145-147 y el § 153.",
+   "2. «Kc» CASA DENTRO DE «Kcv». El patrón «Kc N» encuentra «Kcv N», y por ahí se atribuyeron a Kaccāyana cinco marcas que el aparato da a la Kcv: §§ 17-18, 55, 72, 73—85 y 139.",
+   "3. Y AL REVÉS: «Kc» APARECE EN NOTAS QUE NO SON CONCORDANCIA. Las págs. 637 y 638 citan «Kc 139», «Kc 499», «Kcv 2», «Kcv 159» como notas al pie corrientes. Sólo cuenta lo que va entre dobles barras."
+  ],
+  "kcv_es_una_DUDA": "«Kcv» es, en el aparato de Smith, obra DISTINTA de «Kc», y se cita también por número de sutta. Lo que apunta a la Kaccāyana-vutti: el § 72 lleva «Kcv 20 = Rūp 27», y Rūp 27 es el correspondiente de Kc 20 según la concordancia del proyecto. NO ESTÁ ADJUDICADO: no se halló la lista de siglas de Smith en el material preliminar de los vols. 01, 03 y 05. Hasta que se halle, «Kcv» se registra como Kcv y NO se cuenta como correspondencia de sutta de Kaccāyana.",
+  "advertencia": "La AUSENCIA de marca no demuestra que Kaccāyana no tenga la regla. Lo demuestra el propio § 73—85, que la 40 dio por hueco y lleva «Kcv 20».",
   "capitulo": {
    "obra": "Saddanīti Suttamālā",
    "capitulo_bhaddacak": 1,
    "capitulo_smith": "XX",
-   "paginas_impresas": [604, 642],
-   "paginas_pdf_vol03": [11, 49],
-   "nota": "El capítulo XXI empieza en la pág. impresa 643 = pág. 50 del PDF. La numeración de Smith corre continua por las tres partes; el vol. 03 del escaneo empieza en la pág. impresa 604 (hoja 10 del _page_numbers.json)."
+   "suttas": [
+    1,
+    191
+   ],
+   "paginas_impresas": [
+    604,
+    641
+   ],
+   "paginas_pdf_vol03": [
+    11,
+    48
+   ],
+   "colofon": "Pág. impresa 641, arriba: «Iti … saddanītippakaraṇe sandhikappo nāma vīsatimo paricchedo». Debajo, en la MISMA página, empieza el capítulo XXI (Nāmakappa) con su estrofa y con el § 192.",
+   "correccion_41": "La 40 daba el capítulo como 604-642 (PDF 11-49) y decía que el XXI empezaba en la pág. 643. Las dos cosas son falsas: el capítulo acaba en la 641, que comparte con el XXI, y los §§ 192-195 —que la 40 metía en su tramo «150-195»— son ya del Nāmakappa."
   },
-  "fecha": "2026-08-30",
-  "sesion": 40
+  "fecha": "2026-08-31",
+  "sesion": 41
  },
  "con_kaccayana": [
-  { "sadd": "1-2",   "kacc": "2",   "pagina": 604, "estado": "ocr" },
-  { "sadd": "3",     "kacc": "3",   "pagina": 605, "estado": "vista" },
-  { "sadd": "4",     "kacc": "4",   "pagina": 605, "estado": "vista" },
-  { "sadd": "5",     "kacc": "5",   "pagina": 605, "estado": "vista", "nota": "«vide Mmd»" },
-  { "sadd": "6",     "kacc": "6",   "pagina": 605, "estado": "vista", "nota": "«Kc 6, Mmd»" },
-  { "sadd": "7",     "kacc": "7",   "pagina": 606, "estado": "ocr" },
-  { "sadd": "8",     "kacc": "8",   "pagina": 606, "estado": "ocr", "nota": "entre paréntesis en el aparato: «(Kc 8)»" },
-  { "sadd": "9",     "kacc": "605", "pagina": 607, "estado": "ocr", "nota": "gramsut no trae esta correspondencia" },
-  { "sadd": "10",    "kacc": "604", "pagina": 607, "estado": "ocr", "nota": "gramsut no trae esta correspondencia" },
-  { "sadd": "12",    "kacc": "4",   "pagina": 607, "estado": "ocr", "nota": "entre paréntesis" },
-  { "sadd": "17-18", "kacc": "9",   "pagina": 608, "estado": "ocr", "nota": "«Kc 9, Rūp 11»" },
-  { "sadd": "25-26", "kacc": "79",  "pagina": 609, "estado": "ocr", "nota": "con «cf.»: correspondencia floja" },
-  { "sadd": "28",    "kacc": "10",  "pagina": 611, "estado": "ocr", "nota": "entre paréntesis" },
-  { "sadd": "29",    "kacc": "11",  "pagina": 611, "estado": "ocr" },
-  { "sadd": "30",    "kacc": "12",  "pagina": 611, "estado": "ocr" },
-  { "sadd": "31",    "kacc": "13",  "pagina": 613, "estado": "ocr" },
-  { "sadd": "34",    "kacc": "18?", "pagina": 613, "estado": "ocr", "nota": "DISCREPANCIA: el OCR lee «Kc 18»; gramsut da k14. Hay que verla a ojo." },
-  { "sadd": "35",    "kacc": "16",  "pagina": 613, "estado": "ocr" },
-  { "sadd": "36",    "kacc": "15",  "pagina": 614, "estado": "ocr" },
-  { "sadd": "43",    "kacc": "17",  "pagina": 615, "estado": "ocr" },
-  { "sadd": "44",    "kacc": "18",  "pagina": 616, "estado": "ocr" },
-  { "sadd": "46",    "kacc": "19",  "pagina": 616, "estado": "ocr" },
-  { "sadd": "50",    "kacc": "20",  "pagina": 617, "estado": "vista" },
-  { "sadd": "51",    "kacc": "21",  "pagina": 617, "estado": "vista" },
-  { "sadd": "57",    "kacc": "44",  "pagina": 619, "estado": "ocr" },
-  { "sadd": "58",    "kacc": "45",  "pagina": 619, "estado": "ocr", "nota": "«infra § 132»" },
-  { "sadd": "59",    "kacc": "46",  "pagina": 619, "estado": "ocr" },
-  { "sadd": "60",    "kacc": "47",  "pagina": 619, "estado": "ocr", "nota": "entre paréntesis" },
-  { "sadd": "62",    "kacc": "23",  "pagina": 619, "estado": "ocr" },
-  { "sadd": "63",    "kacc": "24",  "pagina": 619, "estado": "ocr" },
-  { "sadd": "65",    "kacc": "26",  "pagina": 620, "estado": "ocr" },
-  { "sadd": "66",    "kacc": "27",  "pagina": 620, "estado": "ocr" },
-  { "sadd": "67",    "kacc": "28",  "pagina": 620, "estado": "ocr" },
-  { "sadd": "68",    "kacc": "29",  "pagina": 620, "estado": "ocr" },
-  { "sadd": "72",    "kacc": "20",  "pagina": 621, "estado": "ocr", "nota": "«Kc 20 = Rūp 27»" },
-  { "sadd": "126",   "kacc": "50",  "pagina": 626, "estado": "ocr", "nota": "entre paréntesis" },
-  { "sadd": "129",   "kacc": "49",  "pagina": 626, "estado": "ocr" },
-  { "sadd": "130",   "kacc": "36",  "pagina": 626, "estado": "ocr" },
-  { "sadd": "132",   "kacc": "45",  "pagina": 627, "estado": "ocr", "nota": "«supra § 58»" },
-  { "sadd": "137",   "kacc": "48",  "pagina": 628, "estado": "ocr" },
-  { "sadd": "138",   "kacc": "31",  "pagina": 628, "estado": "ocr" },
-  { "sadd": "139",   "kacc": "31",  "pagina": 629, "estado": "ocr", "nota": "«Kc 31 (\"ca\")»" },
-  { "sadd": "140",   "kacc": "32",  "pagina": 629, "estado": "ocr" },
-  { "sadd": "141",   "kacc": "33",  "pagina": 629, "estado": "ocr" },
-  { "sadd": "142-143","kacc": "34", "pagina": 629, "estado": "ocr" },
-  { "sadd": "148",   "kacc": "40",  "pagina": 630, "estado": "ocr" },
-  { "sadd": "149",   "kacc": "41",  "pagina": 630, "estado": "ocr" }
+  {
+   "sadd": "1-2",
+   "kacc": "2",
+   "pagina": 604,
+   "estado": "vista"
+  },
+  {
+   "sadd": "3",
+   "kacc": "3",
+   "pagina": 605,
+   "estado": "vista"
+  },
+  {
+   "sadd": "4",
+   "kacc": "4",
+   "pagina": 605,
+   "estado": "vista"
+  },
+  {
+   "sadd": "5",
+   "kacc": "5",
+   "pagina": 605,
+   "estado": "vista",
+   "nota": "«Kc 5 (vide Mmd Ce 14²⁵ 15¹²)»"
+  },
+  {
+   "sadd": "6",
+   "kacc": "6",
+   "pagina": 605,
+   "estado": "vista",
+   "nota": "«Kc 6, Mmd Ce 14²⁸»"
+  },
+  {
+   "sadd": "7",
+   "kacc": "7",
+   "pagina": 606,
+   "estado": "vista"
+  },
+  {
+   "sadd": "8",
+   "kacc": "8",
+   "pagina": 606,
+   "estado": "vista",
+   "nota": "entre paréntesis: «(Kc 8)»"
+  },
+  {
+   "sadd": "9",
+   "kacc": "605",
+   "pagina": 607,
+   "estado": "vista",
+   "nota": "gramsut no trae esta correspondencia; comprobado a ojo"
+  },
+  {
+   "sadd": "10",
+   "kacc": "604",
+   "pagina": 607,
+   "estado": "vista",
+   "nota": "«§ 10 pṭ ad Sv I 177², Kc 604»; gramsut no la trae; comprobado a ojo"
+  },
+  {
+   "sadd": "12",
+   "kacc": "4",
+   "pagina": 607,
+   "estado": "vista",
+   "nota": "entre paréntesis: «(Kc 4)»"
+  },
+  {
+   "sadd": "25-26",
+   "kacc": "79",
+   "pagina": 609,
+   "estado": "vista",
+   "nota": "con «cf.»: correspondencia floja. «cf. Kc 79 (Mmd Ce 94⁴⁻¹⁴)»"
+  },
+  {
+   "sadd": "28",
+   "kacc": "10",
+   "pagina": 611,
+   "estado": "vista",
+   "nota": "entre paréntesis"
+  },
+  {
+   "sadd": "29",
+   "kacc": "11",
+   "pagina": 611,
+   "estado": "vista"
+  },
+  {
+   "sadd": "30",
+   "kacc": "12",
+   "pagina": 611,
+   "estado": "vista"
+  },
+  {
+   "sadd": "31",
+   "kacc": "13",
+   "pagina": 613,
+   "estado": "vista"
+  },
+  {
+   "sadd": "34",
+   "kacc": "14",
+   "pagina": 613,
+   "estado": "vista",
+   "nota": "DISCREPANCIA RESUELTA en la sesión 41: el aparato imprime «Kc 14». El OCR de la 40 leyó «Kc 18»; gramsut (k14) tenía razón."
+  },
+  {
+   "sadd": "35",
+   "kacc": "16",
+   "pagina": 613,
+   "estado": "vista"
+  },
+  {
+   "sadd": "36",
+   "kacc": "15",
+   "pagina": 614,
+   "estado": "vista"
+  },
+  {
+   "sadd": "43",
+   "kacc": "17",
+   "pagina": 615,
+   "estado": "vista",
+   "nota": "«§ 43 Kc 17; 615¹⁵ sqq.: Rūp Ce 8²⁴»"
+  },
+  {
+   "sadd": "44",
+   "kacc": "18",
+   "pagina": 616,
+   "estado": "vista",
+   "nota": "entre paréntesis: «(Kc 18)». La 40 no lo anotaba."
+  },
+  {
+   "sadd": "46",
+   "kacc": "19",
+   "pagina": 616,
+   "estado": "vista"
+  },
+  {
+   "sadd": "50",
+   "kacc": "20",
+   "pagina": 617,
+   "estado": "vista"
+  },
+  {
+   "sadd": "51",
+   "kacc": "21",
+   "pagina": 617,
+   "estado": "vista"
+  },
+  {
+   "sadd": "52",
+   "kacc": "22",
+   "pagina": 618,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41: el OCR perdió la página 618 entera"
+  },
+  {
+   "sadd": "53",
+   "kacc": "42",
+   "pagina": 618,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41"
+  },
+  {
+   "sadd": "54",
+   "kacc": "43",
+   "pagina": 618,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41"
+  },
+  {
+   "sadd": "56",
+   "kacc": "35",
+   "pagina": 618,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41"
+  },
+  {
+   "sadd": "57",
+   "kacc": "44",
+   "pagina": 619,
+   "estado": "vista"
+  },
+  {
+   "sadd": "58",
+   "kacc": "45",
+   "pagina": 619,
+   "estado": "vista",
+   "nota": "«infra § 132»"
+  },
+  {
+   "sadd": "59",
+   "kacc": "46",
+   "pagina": 619,
+   "estado": "vista",
+   "nota": "con signo de igualdad: «§ 59 = Kc 46»"
+  },
+  {
+   "sadd": "60",
+   "kacc": "47",
+   "pagina": 619,
+   "estado": "vista",
+   "nota": "entre paréntesis"
+  },
+  {
+   "sadd": "62",
+   "kacc": "23",
+   "pagina": 619,
+   "estado": "vista"
+  },
+  {
+   "sadd": "63",
+   "kacc": "24",
+   "pagina": 619,
+   "estado": "vista"
+  },
+  {
+   "sadd": "64",
+   "kacc": "25",
+   "pagina": 620,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41: la 40 lo tenía por hueco"
+  },
+  {
+   "sadd": "65",
+   "kacc": "26",
+   "pagina": 620,
+   "estado": "vista",
+   "nota": "con signo de igualdad: «§ 65 = Kc 26»"
+  },
+  {
+   "sadd": "66",
+   "kacc": "27",
+   "pagina": 620,
+   "estado": "vista"
+  },
+  {
+   "sadd": "67",
+   "kacc": "28",
+   "pagina": 620,
+   "estado": "vista"
+  },
+  {
+   "sadd": "68",
+   "kacc": "29",
+   "pagina": 620,
+   "estado": "vista"
+  },
+  {
+   "sadd": "126",
+   "kacc": "50",
+   "pagina": 626,
+   "estado": "vista",
+   "nota": "la 40 lo daba entre paréntesis; el aparato lo imprime sin ellos"
+  },
+  {
+   "sadd": "129",
+   "kacc": "49",
+   "pagina": 626,
+   "estado": "vista"
+  },
+  {
+   "sadd": "130",
+   "kacc": "36",
+   "pagina": 626,
+   "estado": "vista"
+  },
+  {
+   "sadd": "132",
+   "kacc": "45",
+   "pagina": 627,
+   "estado": "vista",
+   "nota": "«supra § 58»"
+  },
+  {
+   "sadd": "137",
+   "kacc": "48",
+   "pagina": 628,
+   "estado": "vista"
+  },
+  {
+   "sadd": "138",
+   "kacc": "31",
+   "pagina": 628,
+   "estado": "vista"
+  },
+  {
+   "sadd": "140",
+   "kacc": "32",
+   "pagina": 629,
+   "estado": "vista"
+  },
+  {
+   "sadd": "141",
+   "kacc": "33",
+   "pagina": 629,
+   "estado": "vista"
+  },
+  {
+   "sadd": "142 (143)",
+   "kacc": "34",
+   "pagina": 629,
+   "estado": "vista",
+   "nota": "el aparato imprime «§ 142 (143) Kc 34»: el 143 va entre paréntesis"
+  },
+  {
+   "sadd": "145",
+   "kacc": "34",
+   "pagina": 630,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41. «Kc 34 (sare; vyañjane < Rūp 52 Ce 24¹⁸⁻¹⁹)»"
+  },
+  {
+   "sadd": "146",
+   "kacc": "37",
+   "pagina": 630,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41"
+  },
+  {
+   "sadd": "147",
+   "kacc": "38+39",
+   "pagina": 630,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41: el aparato imprime «Kc 38 + 39»"
+  },
+  {
+   "sadd": "148",
+   "kacc": "40",
+   "pagina": 630,
+   "estado": "vista"
+  },
+  {
+   "sadd": "149",
+   "kacc": "41",
+   "pagina": 630,
+   "estado": "vista"
+  },
+  {
+   "sadd": "153",
+   "kacc": "30",
+   "pagina": 632,
+   "estado": "vista",
+   "nota": "AÑADIDO en la 41: la 40 lo tenía dentro del tramo «150-195» sin leer"
+  }
  ],
+ "con_kaccayana_vutti": {
+  "_nota": "Marcas «Kcv N» del aparato. NO son correspondencia de sutta de Kaccāyana; véase «kcv_es_una_DUDA» en _meta.",
+  "entradas": [
+   {
+    "sadd": "17-18",
+    "kcv": "9",
+    "pagina": 608,
+    "estado": "vista",
+    "nota": "La 40 lo leyó «Kc 9». El aparato imprime «Kcv 9, Rūp 11 Ce 5²⁻⁴»."
+   },
+   {
+    "sadd": "55",
+    "kcv": "49",
+    "pagina": 618,
+    "estado": "vista",
+    "nota": "«Kcv 49 (\"anta\")». Página perdida por el OCR de la 40."
+   },
+   {
+    "sadd": "72",
+    "kcv": "20",
+    "pagina": 621,
+    "estado": "vista",
+    "nota": "La 40 lo leyó «Kc 20». El aparato imprime «Kcv 20 = Rūp 27 Ce 11⁸ (\"ca\")»."
+   },
+   {
+    "sadd": "73-85",
+    "kcv": "20",
+    "pagina": 622,
+    "estado": "vista",
+    "nota": "AÑADIDO en la 41, y es el hallazgo: el aparato imprime «§ 73—85 Kcv 20» para toda la serie de sustitución de consonantes."
+   },
+   {
+    "sadd": "139",
+    "kcv": "31",
+    "pagina": 629,
+    "estado": "vista",
+    "nota": "La 40 lo leyó «Kc 31». El aparato imprime «Kcv 31 (\"ca\")»."
+   }
+  ]
+ },
  "sin_kaccayana_pero_con_otra_obra": [
-  { "sadd": "8a",    "obra": "Rūp 11",        "pagina": 606, "estado": "ocr" },
-  { "sadd": "14-15", "obra": "Rūp 11",        "pagina": 607, "estado": "ocr" },
-  { "sadd": "19-21", "obra": "Sv I 177",      "pagina": 608, "estado": "ocr" },
-  { "sadd": "22",    "obra": "Rūp 5",         "pagina": 608, "estado": "ocr" },
-  { "sadd": "23",    "obra": "Rūp 2, Mmd",    "pagina": 608, "estado": "ocr" },
-  { "sadd": "27",    "obra": "Rūp 11",        "pagina": 610, "estado": "ocr" },
-  { "sadd": "33",    "obra": "Sd (reenvío interno)", "pagina": 613, "estado": "ocr" },
-  { "sadd": "61",    "obra": "Sd 316",        "pagina": 619, "estado": "ocr" },
-  { "sadd": "133",   "obra": "Sd 79",         "pagina": 627, "estado": "ocr" }
+  {
+   "sadd": "8a",
+   "obra": "Rūp 11 Ce 5⁷⁻⁸",
+   "pagina": 606,
+   "estado": "vista"
+  },
+  {
+   "sadd": "14-15",
+   "obra": "Rūp 11 Ce 5² (pṭ ad Sv I 177¹; vide et Uda 312²⁸, Sp ad Vin IV 51³⁰)",
+   "pagina": 607,
+   "estado": "vista"
+  },
+  {
+   "sadd": "19-21",
+   "obra": "Sv I 177³ (pṭ)",
+   "pagina": 608,
+   "estado": "vista"
+  },
+  {
+   "sadd": "22",
+   "obra": "Rūp 5 (Ce 3²⁵⁻²⁹)",
+   "pagina": 608,
+   "estado": "vista"
+  },
+  {
+   "sadd": "23",
+   "obra": "Rūp 2 Ce 2⁶, Mmd 9²⁴",
+   "pagina": 608,
+   "estado": "vista"
+  },
+  {
+   "sadd": "27",
+   "obra": "Rūp 11 (Ce 5¹¹); Nidda (Se) I 3¹⁴ = Ce I 2¹⁹; et supra 15⁹ sqq.",
+   "pagina": 610,
+   "estado": "vista"
+  },
+  {
+   "sadd": "32",
+   "obra": "Sd 43¹⁶, Ja I 190⁸",
+   "pagina": 613,
+   "estado": "vista",
+   "nota": "la 40 lo tenía por hueco"
+  },
+  {
+   "sadd": "33",
+   "obra": "Sd 42²¹—43²¹",
+   "pagina": 613,
+   "estado": "vista",
+   "nota": "la 40 decía «Sd (reenvío interno)»; ahora con la cifra"
+  },
+  {
+   "sadd": "61",
+   "obra": "Sd 316¹⁵⁻²²",
+   "pagina": 619,
+   "estado": "vista"
+  },
+  {
+   "sadd": "69",
+   "obra": "Sd 372⁹",
+   "pagina": 621,
+   "estado": "vista",
+   "nota": "la 40 lo tenía por hueco"
+  },
+  {
+   "sadd": "124",
+   "obra": "Sd 372¹",
+   "pagina": 626,
+   "estado": "vista",
+   "nota": "la 40 lo tenía dentro del tramo 73-125"
+  },
+  {
+   "sadd": "133",
+   "obra": "Sd 79⁹⁻¹⁶",
+   "pagina": 627,
+   "estado": "vista"
+  },
+  {
+   "sadd": "134",
+   "obra": "(Sd 511¹⁸ 513²²)",
+   "pagina": 628,
+   "estado": "vista",
+   "nota": "la 40 lo tenía por hueco"
+  },
+  {
+   "sadd": "152",
+   "obra": "Bva ad Bv 1:1ᵃ (Sahako nāma thero…)",
+   "pagina": 632,
+   "estado": "vista",
+   "nota": "la 40 lo tenía dentro del tramo «150-195»"
+  },
+  {
+   "sadd": "157-160",
+   "obra": "cf. 640⁹⁻¹⁰ (reenvío interno)",
+   "pagina": 632,
+   "estado": "vista"
+  },
+  {
+   "sadd": "158-160",
+   "obra": "cf. 628¹⁻³ (reenvío interno)",
+   "pagina": 632,
+   "estado": "vista"
+  },
+  {
+   "sadd": "166-167",
+   "obra": "vide n. 11 (reenvío interno)",
+   "pagina": 635,
+   "estado": "vista"
+  }
  ],
  "huecos": {
-  "_nota": "Suttas del capítulo para los que el OCR del aparato no halla marca de concordancia. Candidatos a «lo que Kaccāyana no tiene». Cada uno pide comprobación a ojo antes de afirmarse.",
-  "sueltos": [11, 13, 16, 24, 32, 37, 38, 39, 40, 41, 42, 45, 47, 48, 49, 52, 53, 54, 55, 56, 64, 69, 70, 71, 127, 128, 131, 134, 135, 136],
-  "tramos": [
-   { "de": 73, "a": 125, "paginas": [621, 626], "estado": "hueco-ocr",
-     "comprobado_a_ojo": [623],
-     "nota": "Cincuenta y tres suttas seguidos sin una sola marca de Kaccāyana. La pág. 623 se comprobó a ojo y su aparato, en efecto, no lleva ninguna. Es el tramo de la sustitución de consonantes y de los conjuntos." },
-   { "de": 143, "a": 147, "paginas": [629, 630], "estado": "hueco-ocr" },
-   { "de": 150, "a": 195, "paginas": [630, 640], "estado": "hueco-ocr" }
+  "_nota": "Suttas del capítulo (1-191) sin NINGUNA marca en el aparato, comprobado a ojo página por página en la sesión 41.",
+  "sueltos": [
+   11,
+   13,
+   16,
+   24,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   45,
+   47,
+   48,
+   49,
+   70,
+   71,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   119,
+   120,
+   121,
+   122,
+   123,
+   125,
+   127,
+   128,
+   131,
+   135,
+   136,
+   143,
+   144,
+   150,
+   151,
+   154,
+   155,
+   156,
+   161,
+   162,
+   163,
+   164,
+   165,
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189,
+   190,
+   191
   ],
-  "confirmado": [
-   { "sadd": 49, "estado": "vista", "pagina": 617,
-     "nota": "Es el sutta de la sesión 39. Smith da «§ 50 Kc 20» y «§ 51 Kc 21» y NADA para el 49. gramsut coincide: «s49» no aparece en ninguno de sus 803 grupos. Dos testimonios independientes." }
-  ]
+  "racha_sin_kaccayana": {
+   "de": 69,
+   "a": 125,
+   "cuantos": 57,
+   "paginas": [
+    621,
+    626
+   ],
+   "nota": "La racha más larga sin marca de Kc: del § 69 al § 125, cincuenta y siete suttas seguidos. La 40 la dio como «§§ 73-125, cincuenta y tres, sin ni una marca», y las dos mitades del enunciado eran inexactas: empieza antes (el último Kc es el § 68, y el siguiente el § 126) y NO está sin marcas. Dentro de ella el aparato imprime § 69 Sd 372⁹, § 72 Kcv 20, § 73—85 Kcv 20 y § 124 Sd 372¹.",
+   "lo_que_significa": "Smith remite la serie entera de sustitución de consonantes (§§ 73-85) a la Kcv 20, es decir a la vutti del «Do dhassa ca» de Kaccāyana — que es exactamente el suttavibhāga que este proyecto ya tiene documentado en CLAUDE.md con sus catorce sub-suttas. No es materia que Kaccāyana no tenga: es materia que Kaccāyana tiene en la vutti y no como sutta suelto."
+  }
  }
 }
