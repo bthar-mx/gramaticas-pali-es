@@ -1,0 +1,98 @@
+{
+ "_meta": {
+  "que_es": "Concordancia Saddanīti Suttamālā ↔ Kaccāyana para el capítulo de sandhi (Suttamālā I = Smith XX), tal como la imprime el APARATO de Helmer Smith al pie de página.",
+  "de_donde": "Saddanīti, ed. Helmer Smith, parte III, págs. impresas 604-642 = páginas 11-49 del PDF del vol. 03. El aparato imprime las correspondencias entre dobles barras, con la forma «|| § 50 Kc 20 ||».",
+  "metodo": "Las páginas son imagen pura. Se recortó la franja inferior con «pdftoppm -r 300 -y 1850 -H 820» y se pasó por tesseract. El OCR GENERA candidatos; NO adjudica. Cada entrada lleva su estado.",
+  "estados": {
+   "vista": "Comprobada a ojo sobre la imagen de la página, no sólo por OCR.",
+   "ocr": "Leída por OCR y no comprobada todavía a ojo. Los números pueden estar mal.",
+   "hueco-ocr": "El OCR no halla marca de concordancia para ese sutta. NO es prueba de que Kaccāyana no lo tenga: es un candidato a comprobar a ojo."
+  },
+  "advertencia": "La AUSENCIA por OCR no demuestra ausencia. Se demostró en el caso contrario: gramsut no da ninguna correspondencia para los suttas 9 y 10, y Smith imprime «§ 9 Kc 605» y «§ 10 ... Kc 604». La ausencia sólo vale cuando está en estado «vista».",
+  "capitulo": {
+   "obra": "Saddanīti Suttamālā",
+   "capitulo_bhaddacak": 1,
+   "capitulo_smith": "XX",
+   "paginas_impresas": [604, 642],
+   "paginas_pdf_vol03": [11, 49],
+   "nota": "El capítulo XXI empieza en la pág. impresa 643 = pág. 50 del PDF. La numeración de Smith corre continua por las tres partes; el vol. 03 del escaneo empieza en la pág. impresa 604 (hoja 10 del _page_numbers.json)."
+  },
+  "fecha": "2026-08-30",
+  "sesion": 40
+ },
+ "con_kaccayana": [
+  { "sadd": "1-2",   "kacc": "2",   "pagina": 604, "estado": "ocr" },
+  { "sadd": "3",     "kacc": "3",   "pagina": 605, "estado": "vista" },
+  { "sadd": "4",     "kacc": "4",   "pagina": 605, "estado": "vista" },
+  { "sadd": "5",     "kacc": "5",   "pagina": 605, "estado": "vista", "nota": "«vide Mmd»" },
+  { "sadd": "6",     "kacc": "6",   "pagina": 605, "estado": "vista", "nota": "«Kc 6, Mmd»" },
+  { "sadd": "7",     "kacc": "7",   "pagina": 606, "estado": "ocr" },
+  { "sadd": "8",     "kacc": "8",   "pagina": 606, "estado": "ocr", "nota": "entre paréntesis en el aparato: «(Kc 8)»" },
+  { "sadd": "9",     "kacc": "605", "pagina": 607, "estado": "ocr", "nota": "gramsut no trae esta correspondencia" },
+  { "sadd": "10",    "kacc": "604", "pagina": 607, "estado": "ocr", "nota": "gramsut no trae esta correspondencia" },
+  { "sadd": "12",    "kacc": "4",   "pagina": 607, "estado": "ocr", "nota": "entre paréntesis" },
+  { "sadd": "17-18", "kacc": "9",   "pagina": 608, "estado": "ocr", "nota": "«Kc 9, Rūp 11»" },
+  { "sadd": "25-26", "kacc": "79",  "pagina": 609, "estado": "ocr", "nota": "con «cf.»: correspondencia floja" },
+  { "sadd": "28",    "kacc": "10",  "pagina": 611, "estado": "ocr", "nota": "entre paréntesis" },
+  { "sadd": "29",    "kacc": "11",  "pagina": 611, "estado": "ocr" },
+  { "sadd": "30",    "kacc": "12",  "pagina": 611, "estado": "ocr" },
+  { "sadd": "31",    "kacc": "13",  "pagina": 613, "estado": "ocr" },
+  { "sadd": "34",    "kacc": "18?", "pagina": 613, "estado": "ocr", "nota": "DISCREPANCIA: el OCR lee «Kc 18»; gramsut da k14. Hay que verla a ojo." },
+  { "sadd": "35",    "kacc": "16",  "pagina": 613, "estado": "ocr" },
+  { "sadd": "36",    "kacc": "15",  "pagina": 614, "estado": "ocr" },
+  { "sadd": "43",    "kacc": "17",  "pagina": 615, "estado": "ocr" },
+  { "sadd": "44",    "kacc": "18",  "pagina": 616, "estado": "ocr" },
+  { "sadd": "46",    "kacc": "19",  "pagina": 616, "estado": "ocr" },
+  { "sadd": "50",    "kacc": "20",  "pagina": 617, "estado": "vista" },
+  { "sadd": "51",    "kacc": "21",  "pagina": 617, "estado": "vista" },
+  { "sadd": "57",    "kacc": "44",  "pagina": 619, "estado": "ocr" },
+  { "sadd": "58",    "kacc": "45",  "pagina": 619, "estado": "ocr", "nota": "«infra § 132»" },
+  { "sadd": "59",    "kacc": "46",  "pagina": 619, "estado": "ocr" },
+  { "sadd": "60",    "kacc": "47",  "pagina": 619, "estado": "ocr", "nota": "entre paréntesis" },
+  { "sadd": "62",    "kacc": "23",  "pagina": 619, "estado": "ocr" },
+  { "sadd": "63",    "kacc": "24",  "pagina": 619, "estado": "ocr" },
+  { "sadd": "65",    "kacc": "26",  "pagina": 620, "estado": "ocr" },
+  { "sadd": "66",    "kacc": "27",  "pagina": 620, "estado": "ocr" },
+  { "sadd": "67",    "kacc": "28",  "pagina": 620, "estado": "ocr" },
+  { "sadd": "68",    "kacc": "29",  "pagina": 620, "estado": "ocr" },
+  { "sadd": "72",    "kacc": "20",  "pagina": 621, "estado": "ocr", "nota": "«Kc 20 = Rūp 27»" },
+  { "sadd": "126",   "kacc": "50",  "pagina": 626, "estado": "ocr", "nota": "entre paréntesis" },
+  { "sadd": "129",   "kacc": "49",  "pagina": 626, "estado": "ocr" },
+  { "sadd": "130",   "kacc": "36",  "pagina": 626, "estado": "ocr" },
+  { "sadd": "132",   "kacc": "45",  "pagina": 627, "estado": "ocr", "nota": "«supra § 58»" },
+  { "sadd": "137",   "kacc": "48",  "pagina": 628, "estado": "ocr" },
+  { "sadd": "138",   "kacc": "31",  "pagina": 628, "estado": "ocr" },
+  { "sadd": "139",   "kacc": "31",  "pagina": 629, "estado": "ocr", "nota": "«Kc 31 (\"ca\")»" },
+  { "sadd": "140",   "kacc": "32",  "pagina": 629, "estado": "ocr" },
+  { "sadd": "141",   "kacc": "33",  "pagina": 629, "estado": "ocr" },
+  { "sadd": "142-143","kacc": "34", "pagina": 629, "estado": "ocr" },
+  { "sadd": "148",   "kacc": "40",  "pagina": 630, "estado": "ocr" },
+  { "sadd": "149",   "kacc": "41",  "pagina": 630, "estado": "ocr" }
+ ],
+ "sin_kaccayana_pero_con_otra_obra": [
+  { "sadd": "8a",    "obra": "Rūp 11",        "pagina": 606, "estado": "ocr" },
+  { "sadd": "14-15", "obra": "Rūp 11",        "pagina": 607, "estado": "ocr" },
+  { "sadd": "19-21", "obra": "Sv I 177",      "pagina": 608, "estado": "ocr" },
+  { "sadd": "22",    "obra": "Rūp 5",         "pagina": 608, "estado": "ocr" },
+  { "sadd": "23",    "obra": "Rūp 2, Mmd",    "pagina": 608, "estado": "ocr" },
+  { "sadd": "27",    "obra": "Rūp 11",        "pagina": 610, "estado": "ocr" },
+  { "sadd": "33",    "obra": "Sd (reenvío interno)", "pagina": 613, "estado": "ocr" },
+  { "sadd": "61",    "obra": "Sd 316",        "pagina": 619, "estado": "ocr" },
+  { "sadd": "133",   "obra": "Sd 79",         "pagina": 627, "estado": "ocr" }
+ ],
+ "huecos": {
+  "_nota": "Suttas del capítulo para los que el OCR del aparato no halla marca de concordancia. Candidatos a «lo que Kaccāyana no tiene». Cada uno pide comprobación a ojo antes de afirmarse.",
+  "sueltos": [11, 13, 16, 24, 32, 37, 38, 39, 40, 41, 42, 45, 47, 48, 49, 52, 53, 54, 55, 56, 64, 69, 70, 71, 127, 128, 131, 134, 135, 136],
+  "tramos": [
+   { "de": 73, "a": 125, "paginas": [621, 626], "estado": "hueco-ocr",
+     "comprobado_a_ojo": [623],
+     "nota": "Cincuenta y tres suttas seguidos sin una sola marca de Kaccāyana. La pág. 623 se comprobó a ojo y su aparato, en efecto, no lleva ninguna. Es el tramo de la sustitución de consonantes y de los conjuntos." },
+   { "de": 143, "a": 147, "paginas": [629, 630], "estado": "hueco-ocr" },
+   { "de": 150, "a": 195, "paginas": [630, 640], "estado": "hueco-ocr" }
+  ],
+  "confirmado": [
+   { "sadd": 49, "estado": "vista", "pagina": 617,
+     "nota": "Es el sutta de la sesión 39. Smith da «§ 50 Kc 20» y «§ 51 Kc 21» y NADA para el 49. gramsut coincide: «s49» no aparece en ninguno de sus 803 grupos. Dos testimonios independientes." }
+  ]
+ }
+}
