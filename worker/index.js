@@ -374,25 +374,30 @@ function galleta(request, nombre) {
    soltar una dirección, y quien firma siempre puede poner el rótulo después
    con «--fuente». */
 function repertorio(env) {
+  /* Se EXTRAE la dirección con una expresión, en vez de suponer que el trozo
+     es ya un correo limpio. Razón (2026-08-31, y es culpa de cómo lo escribí
+     en las instrucciones): el ejemplo de la documentación iba comentado,
+
+         #  → admin@iebh.org = IEBH
+
+     y pegado tal cual, el «#  → » quedaba pegado a la dirección y no casaba
+     con nadie. Angel se vio de «aprendiz» dos veces por esto. Un repertorio
+     se escribe a mano y a mano se pega mal: lo que hay que hacer es leerlo
+     con tolerancia, no exigir que venga perfecto. */
   const m = new Map();
+  const CORREO = /[^\s<>()[\],;:"']+@[^\s<>()[\],;:"']+\.[^\s<>()[\],;:"']+/g;
   for (const trozo of (env.REVISORES || "").split(/[\n,;]+/)) {
     const t = trozo.trim();
     if (!t) continue;
     const i = t.indexOf("=");
     if (i < 0) {
-      /* Sin «=», el trozo puede traer VARIOS correos separados por espacios:
-         es lo natural al escribirlos de un tirón, y sólo se puede partir por
-         espacios aquí — donde no hay rótulo que partir. Antes se tomaba la
-         línea entera por un correo y no casaba con nadie (2026-08-31: Angel
-         se vio de «aprendiz» estando en el repertorio). */
-      for (const c of t.split(/\s+/)) {
-        if (c) m.set(c.toLowerCase(), "");
-      }
+      // Sin rótulo: todas las direcciones del trozo, vengan como vengan.
+      for (const c of t.match(CORREO) || []) m.set(c.toLowerCase(), "");
       continue;
     }
-    const correo = t.slice(0, i).trim().toLowerCase();
+    const izq = (t.slice(0, i).match(CORREO) || [])[0];
     const rotulo = t.slice(i + 1).trim();
-    if (correo) m.set(correo, rotulo);
+    if (izq) m.set(izq.toLowerCase(), rotulo);
   }
   return m;
 }

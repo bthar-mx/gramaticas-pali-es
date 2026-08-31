@@ -392,6 +392,11 @@ async function main() {
     ["uno por línea", "jefe@ejemplo.org\notro@ejemplo.org"],
     ["con rótulos por línea", "jefe@ejemplo.org = IEBH\notro@ejemplo.org = Otro"],
     ["mezclando rótulo y sueltos", "jefe@ejemplo.org = IEBH\notro@ejemplo.org tercero@ejemplo.org"],
+    // Pegado tal cual desde la documentación, con su «#  → » delante: pasó,
+    // y dos veces (2026-08-31). Un repertorio se escribe a mano.
+    ["pegado con «#  → » de la documentación", "#  → jefe@ejemplo.org = IEBH\n#    otro@ejemplo.org = Otro"],
+    ["con guiones de lista", "- jefe@ejemplo.org = IEBH"],
+    ["entre < >", "<jefe@ejemplo.org>"],
   ]) {
     const env = { VEREDICTOS: kvFalso(), ACCESO_EQUIPO: EQUIPO,
       ACCESO_AUD: AUD, CLAVE_VEREDICTOS: "x", REVISORES: valor };
