@@ -56,6 +56,7 @@ body{
 .wrap{max-width:980px;margin:0 auto;padding:0 22px}
 .lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
      text-transform:uppercase;color:var(--soot)}
+.sesion-arriba{margin-left:14px;vertical-align:middle;position:relative;top:-1px}
 .marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
   background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
 html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
@@ -325,6 +326,14 @@ body:not(.en) .i-en{display:none}
   <div class="wrap mast">
     <div>
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <!-- 2026-08-31, pedido de Angel: el mando de sesión, arriba a la
+           izquierda. Estaba entre los botones de análisis, y ahí se leía como
+           una acción del solucionador cuando no lo es: es de quién eres, no
+           de qué haces con el texto. Aquí, junto al «← Recursos», va con lo
+           que sitúa al lector. -->
+      <button class="icon-btn sesion-arriba" id="entrar-btn" hidden
+        aria-label="Iniciar sesión para enviar veredictos"
+        data-tip="Iniciar sesión para enviar veredictos">⇥ entrar</button>
       <!-- 2026-08-30, pedido del IEBH: en modo inglés el título es «Sandhi
            Solver», y el sobretítulo tampoco puede quedarse en español. Van
            con los mismos .i-es/.i-en que el resto de la interfaz; la letra
@@ -376,9 +385,6 @@ body:not(.en) .i-en{display:none}
       <button class="icon-btn" id="revision" hidden
         aria-label="Modo revisión: marque veredictos y expórtelos para su adjudicación"
         data-tip="Modo revisión: marque veredictos y expórtelos para su adjudicación">✎ revisión</button>
-      <button class="icon-btn" id="entrar-btn" hidden
-        aria-label="Iniciar sesión para enviar veredictos"
-        data-tip="Iniciar sesión para enviar veredictos">⇥ entrar</button>
       <button class="icon-btn" id="en-btn" aria-pressed="false"
         aria-label="Interface in English / Interfaz en español"
         data-tip="Interface in English / Interfaz en español">EN</button>
@@ -1204,7 +1210,9 @@ $('texto').addEventListener('paste', () => {
 const REV = { on: false, v: new Map(), obs: '', estudiante: false,
   /* null = no se ha preguntado todavía; '' = sin sesión; 'x@y' = con ella.
      Se pregunta una vez al encender el modo revisión, no en cada pintada. */
-  sesion: null, papel: null };
+  sesion: null, papel: null,
+  /* ¿esta página ofrece revisión? (se abrió «?revision» alguna vez) */
+  ofrecido: false };
 try {
   for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
     REV.v.set(k, x);
@@ -1455,7 +1463,14 @@ async function revEnviar(boton){
 function revPintarEntrar(){
   const b = $('entrar-btn');
   if(!b) return;
-  b.hidden = !REV.on;
+  /* El mando de sesión se ve desde que la página sabe que aquí hay revisión
+     —o sea, desde que se abrió alguna vez «?revision»—, y NO desde que el
+     modo está encendido: hace falta antes de ponerse a marcar, no después.
+     Y «✎ revisión» sólo aparece CON SESIÓN (pedido de Angel, 2026-08-31):
+     sin identidad el modo no lleva a ninguna parte, porque enviar la exige. */
+  b.hidden = !REV.ofrecido;
+  const r = $('revision');
+  if(r) r.hidden = !(REV.ofrecido && REV.sesion);
   const sinSesion = !REV.sesion;
   b.textContent = sinSesion ? tr('b_entrar')
     : (REV.papel === 'aprendiz' ? tr('b_aprendiz') : tr('b_revisor'));
@@ -1487,9 +1502,6 @@ $('entrar-btn').addEventListener('click', () => {
 $('revision').addEventListener('click', () => {
   REV.on = !REV.on;
   revPintarEntrar();
-  if(REV.on && REV.sesion === null){
-    revMirarSesion().then(() => { if($('texto').value.trim()) analizar(); });
-  }
   $('revision').classList.toggle('on', REV.on);
   if($('texto').value.trim()) analizar();
 });
@@ -1543,7 +1555,11 @@ $('revision').addEventListener('click', () => {
     } catch(e){}
   }
   REV.estudiante = estudiante && !visto;
-  if(visto || REV.estudiante) $('revision').hidden = false;
+  REV.ofrecido = !!(visto || REV.estudiante);
+  revPintarEntrar();
+  /* Se pregunta por la sesión AL CARGAR, no al encender el modo: de ella
+     depende ahora que «✎ revisión» se ofrezca siquiera. */
+  if(REV.ofrecido) revMirarSesion();
 })();
 $('out').addEventListener('click', e => {
   const b = e.target.closest('[data-rev]');
