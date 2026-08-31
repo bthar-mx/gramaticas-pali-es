@@ -42,6 +42,7 @@ import worker from "./index.js";
 
 const EQUIPO = "equipo-de-prueba.cloudflareaccess.com";
 const AUD = "aud-de-esta-aplicacion";
+const AUD_HEX = "cb27b33c1f8526e9b99a2a2adb4d4a1f56163a72b54a5e6809299bbef1633c32";
 
 const b64url = (b) => Buffer.from(b).toString("base64")
   .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
@@ -264,6 +265,22 @@ async function main() {
     const r = await enviar(env, t);
     comprobar("ACCESO_EQUIPO " + comoSeEscribe + " → 200",
       r.status === 200, "salió " + r.status);
+  }
+
+  /* ---- Los dos secretos cambiados (2026-08-31) ----
+     wrangler enmascara lo que se teclea, así que ponerlos al revés no se ve:
+     el síntoma fue un 403 pidiendo las claves a un dominio que era el AUD.
+     Se distinguen por la forma, y el worker tiene que decirlo con nombre. */
+  {
+    const env = { VEREDICTOS: kvFalso(), ACCESO_EQUIPO: AUD_HEX,
+                  ACCESO_AUD: EQUIPO, CLAVE_VEREDICTOS: "x" };
+    const t = await firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: "revisor@ejemplo.org", exp: dentro });
+    const r = await enviar(env, t);
+    const txt = await r.text();
+    comprobar("secretos cambiados → 401", r.status === 401, "salió " + r.status);
+    comprobar("y el mensaje lo dice con nombre",
+      /parece el AUD/.test(txt), txt.slice(0, 120));
   }
 
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");

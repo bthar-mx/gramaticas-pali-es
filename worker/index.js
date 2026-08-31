@@ -105,7 +105,14 @@ async function entrar(request, env) {
     + "<p>Ya puede volver al solucionador y pulsar «Enviar». "
     + "La sesión dura lo que diga la aplicación de Access (24 horas).</p>"
     + "<p><a href='/recursos/solucionador/'>Volver al solucionador</a></p>",
-    { headers: { "Content-Type": "text/html; charset=utf-8" } },
+    { headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      // Esta página es un DIAGNÓSTICO: dice el estado de ahora mismo. Sin
+      // esto el navegador la cachea con su heurística y enseña el estado de
+      // hace un rato — que al depurar es peor que no enseñar nada, porque
+      // parece que un arreglo no ha servido cuando sí ha servido.
+      "Cache-Control": "no-store, must-revalidate",
+    } },
   );
 }
 
@@ -297,6 +304,20 @@ async function identidad(request, env) {
   // Sin configurar: la cola sigue como estaba. Es deliberado — desplegar
   // este worker no debe cerrar la puerta antes de que exista la llave.
   if (!equipo || !aud) return { configurado: false, correo: null };
+  /* Los dos secretos se escriben a ciegas —wrangler enmascara lo que se
+     teclea— y se pusieron cambiados el 2026-08-31: el AUD en ACCESO_EQUIPO.
+     El síntoma era un 403 al pedir las claves, que no dice lo que pasa. Se
+     distinguen por la forma y no cuesta nada mirarla: el equipo es un nombre
+     de máquina, con puntos; el AUD son 64 dígitos hexadecimales y ninguno. */
+  const dom = dominioDelEquipo(equipo);
+  if (!dom.includes(".")) {
+    return { configurado: true, correo: null,
+             por: /^[0-9a-f]{32,}$/i.test(dom)
+               ? "ACCESO_EQUIPO tiene lo que parece el AUD; se esperaba el "
+                 + "dominio del equipo (algo.cloudflareaccess.com). "
+                 + "¿Están cambiados los dos secretos?"
+               : "ACCESO_EQUIPO no parece un dominio: «" + dom + "»" };
+  }
   const tok = request.headers.get("Cf-Access-Jwt-Assertion")
     || galleta(request, "CF_Authorization");
   if (!tok) return { configurado: true, correo: null, por: "sin token" };
