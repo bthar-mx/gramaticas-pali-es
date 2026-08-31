@@ -214,6 +214,66 @@ Que aquí no aparezca un candidato no dice que no aparezca. Y el corte del IEBH
 no es la verdad —lo dice `medir_contra_corpus.py`—: es otro proponente, de modo
 que estas 416 son desacuerdos, no errores demostrados.
 
+## 4 ter. LAS 416, DESPIEZADAS — y una hipótesis mía que no resiste
+
+Deshechas por familias, las 416 no son cuatrocientas cosas: son casi una sola.
+
+**En 296 de 416 —masa 44.998, el 93%— la voz que el texto pone segunda empieza
+por vocal.** «āha», «ettha», «assa», «atthaṃ», «attho», «aparaṃ», «ahaṃ»,
+«etaṃ», «āyasmā», «ādāya», «akāsi», «avoca». Y lo que el motor pone en su lugar
+no es otra partícula: es **otro punto de corte**.
+
+    panettha    2.286   el texto: pana + ettha      el motor: panetta + ha
+    cettha      2.140   el texto: ca + ettha        el motor: cetta + ha
+    athassa     1.790   el texto: atha + assa       el motor: ate + hassa
+    panassa     1.731   el texto: pana + assa       el motor: pa + anassa
+    caparaṃ     1.548   el texto: ca + aparaṃ       el motor: capi + araṃ
+    tassattho     857   el texto: tassa + attho     el motor: ta + assattho
+
+De ellas, 87 (masa 26.445) son además el caso del nipāta del §4 bis. El resto
+no: el motor sencillamente corta en otro sitio.
+
+### La hipótesis, y por qué se cae
+
+Mirando esas primeras voces —«panetta», «cetta», «ate», «capi», «ādimā»— parecen
+fragmentos, no palabras. De ahí la hipótesis: **premiar las lecturas cuya
+primera voz esté atestiguada en la edición.** Medida sobre las 416:
+
+| ¿está atestiguada la primera voz? | junturas | masa |
+| --- | ---: | ---: |
+| la del motor sí, la del texto no | 244 | 25.761 |
+| las dos sí | 91 | 21.582 |
+| ninguna | 74 | 926 |
+| **la del motor no y la del texto sí** | **7** | **170** |
+
+**La hipótesis no sirve, y se cae por los dos lados.** Por abajo: sólo 7
+junturas —masa 170, el 0%— tienen la primera voz del motor sin atestiguar.
+«panetta» y «cetta» ESTÁN en la edición. Por arriba, y es lo que la mata: en
+244 casos la voz atestiguada es la del motor y la que NO lo está es la del
+texto, porque el IEBH escribe la voz elidida de superficie —«pan», «c», «ath»,
+«tass»— y ésas no son formas sueltas de la edición. Premiar la atestiguación
+premiaría al motor contra el texto.
+
+Queda anotada porque la siguiente sesión la va a pensar también, y así no la
+mide dos veces.
+
+### Lo que sí dice el despiece
+
+Tres caminos probados —quitar el nipāta, bajar «iha», premiar la atestiguación—
+y los tres se caen. **No es casualidad ni falta de ingenio: en estas junturas
+varias lecturas recomponen, varias están atestiguadas, y ninguna señal interna
+las separa.** Separarlas pide la frase.
+
+**El despiece, entonces, es un argumento medido para el §9.8 del briefing 39**
+—conectar el texto corrido del OSBCT—: no es una mejora deseable entre otras,
+es la única que alcanza a estas 44.998 fichas.
+
+<!-- DUDA, y hay que decirla: el briefing 38 §9.4 llama a esto «el fallo de la
+     SEGUNDA voz», y para «nāhaṃ» acierta —«na» está bien y falla «haṃ»—. Pero
+     en la masa de estas 416 lo que falla es el PUNTO DE CORTE, y con él las
+     dos voces a la vez: «panetta+ha» no tiene bien la primera. Puede que sean
+     dos hilos y no uno. No lo decido yo. -->
+
 ## 5. Lo que falta, en orden
 
 Y el orden cambia por lo que dice el §4 bis.

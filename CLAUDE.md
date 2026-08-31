@@ -58,13 +58,44 @@ De ahí, tres consecuencias que no se negocian:
    canon.** Antes de enseñar una lectura hay que poder decir dónde la dice el
    Tipiṭaka, o decir que no se sabe.
 
+### DICHO CON SUS PALABRAS, QUE SON MEJORES
+
+**HAY FORMAS DE SANDHI TEÓRICAMENTE PLAUSIBLES QUE SON INVEROSÍMILES EN EL
+TIPIṬAKA.** Angel, 2026-08-30. Plausible por la gramática y ausente del canon
+son cosas distintas, y la segunda manda: **el Tipiṭaka es la fuente; Kaccāyana
+—y el Saddanīti— son la autoridad que lo EXPLICA, no la que lo autoriza.**
+
+### Y NO ES CAUTELA: ES EL ESTADO MEDIDO DEL MOTOR (sesión 40)
+
+Sobre las 2.045 junturas del banco, la lectura del IEBH es la primera del motor
+en 1.618; en **416 no lo es, y esas 416 pesan 48.439 fichas**. En 296 de ellas
+—masa 44.998, el **93%**— lo que el motor hace no es escoger mal la partícula:
+es **cortar la palabra en otro sitio**, y todas las candidatas recomponen.
+
+Se probaron tres maneras de separarlas por señal interna. **Las tres se caen**,
+y están medidas en `docs/solucionador/saddaniti-lo-que-kaccayana-no-tiene.md`:
+
+| lo que se probó | arregla | rompe |
+| --- | ---: | ---: |
+| quitar el criterio de nipāta del desempate | 78 | **940** |
+| bajar «iha», que es quien gana a «āha» | 1 | 0 |
+| premiar que la primera voz esté atestiguada | 7 (masa 170) | premiaría al motor CONTRA el texto en 244 |
+
+En «tenāha» conviven «tena+āha», «tena+iha», «tena+ha» y «tena+aha»: **todas
+recomponen, todas están atestiguadas, y ninguna señal de este repositorio las
+separa.** Por eso la regla de arriba no es higiene doctrinal sino la razón de
+que el trabajo que queda no se pueda terminar con mejores reglas.
+
 <!-- DUDA, y es la que hoy no se puede cerrar aquí: para comprobar que dos
      voces aparecen JUNTAS en el canon hace falta el TEXTO CORRIDO, y este
      repositorio sólo tiene `recursos/corpus/corpus-formas.json` — formas con
      sus cuentas, 681.927 y 8.062.163 fichas, sin contexto—. Con eso se puede
      contar y no leer. El texto corrido lo tiene el proyecto OSBCT, y hasta
      que se conecte, la poda de lecturas inverosímiles se hace a mano y por
-     adjudicación, una por una, como se hizo con «tveva» el 2026-08-30. -->
+     adjudicación, una por una, como se hizo con «tveva» el 2026-08-30.
+     2026-08-30, sesión 40: esa DUDA ya tiene precio. Son 44.998 fichas, y
+     conectar el OSBCT no es una mejora entre otras: es la única que las
+     alcanza. -->
 
 ## Gestión de la sesión
 
