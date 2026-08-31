@@ -380,6 +380,27 @@ async function main() {
         await t("nadie@ejemplo.org"))).status === 403);
   }
 
+  /* ---- CÓMO SE ESCRIBE EL REPERTORIO (2026-08-31) ----
+     Pasó de verdad: Angel figuraba en REVISORES y la página le decía
+     «aprendiz». El parser sólo partía por comas y saltos de línea —para no
+     partir los rótulos, que llevan espacios—, de modo que varios correos
+     escritos SEGUIDOS quedaban en un solo trozo que no casaba con nadie.
+     Se prueban aquí las cinco maneras razonables de escribirlo. */
+  for (const [como, valor] of [
+    ["separados por espacios", "jefe@ejemplo.org otro@ejemplo.org"],
+    ["por comas", "jefe@ejemplo.org, otro@ejemplo.org"],
+    ["uno por línea", "jefe@ejemplo.org\notro@ejemplo.org"],
+    ["con rótulos por línea", "jefe@ejemplo.org = IEBH\notro@ejemplo.org = Otro"],
+    ["mezclando rótulo y sueltos", "jefe@ejemplo.org = IEBH\notro@ejemplo.org tercero@ejemplo.org"],
+  ]) {
+    const env = { VEREDICTOS: kvFalso(), ACCESO_EQUIPO: EQUIPO,
+      ACCESO_AUD: AUD, CLAVE_VEREDICTOS: "x", REVISORES: valor };
+    const t = await firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: "jefe@ejemplo.org", exp: dentro });
+    comprobar("REVISORES " + como + " → el jefe es revisor",
+      (await enviar(env, t)).status === 200);
+  }
+
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");
   if (fallos) { console.log("HAY FALLOS: " + fallos); process.exit(1); }
   console.log("La identidad se sostiene.");

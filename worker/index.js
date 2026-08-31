@@ -108,7 +108,11 @@ async function entrar(request, env) {
       + (papel === "revisor"
         ? "papel de <strong>revisor</strong>: puede enviar a la cola."
         : "papel de <strong>aprendiz</strong>: puede marcar veredictos y "
-          + "exportar el .md, pero no enviarlos a la cola.")
+          + "exportar el .md, pero no enviarlos a la cola."
+          + " <br><small>Su correo no figura en el repertorio REVISORES, que "
+          + "hoy tiene " + repertorio(env).size + " correo(s). Si debería "
+          + "figurar, vuelva a ponerlo con «npx wrangler secret put "
+          + "REVISORES».</small>")
     : (ident.configurado
       ? "No se pudo leer la identidad (" + esc(ident.por || "") + ")."
       : "Access no está configurado: la cola sigue abierta.");
@@ -375,8 +379,19 @@ function repertorio(env) {
     const t = trozo.trim();
     if (!t) continue;
     const i = t.indexOf("=");
-    const correo = (i < 0 ? t : t.slice(0, i)).trim().toLowerCase();
-    const rotulo = i < 0 ? "" : t.slice(i + 1).trim();
+    if (i < 0) {
+      /* Sin «=», el trozo puede traer VARIOS correos separados por espacios:
+         es lo natural al escribirlos de un tirón, y sólo se puede partir por
+         espacios aquí — donde no hay rótulo que partir. Antes se tomaba la
+         línea entera por un correo y no casaba con nadie (2026-08-31: Angel
+         se vio de «aprendiz» estando en el repertorio). */
+      for (const c of t.split(/\s+/)) {
+        if (c) m.set(c.toLowerCase(), "");
+      }
+      continue;
+    }
+    const correo = t.slice(0, i).trim().toLowerCase();
+    const rotulo = t.slice(i + 1).trim();
     if (correo) m.set(correo, rotulo);
   }
   return m;
