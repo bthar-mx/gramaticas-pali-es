@@ -182,7 +182,9 @@ async function veredictos(request, env, url) {
       expirationTtl: 60 * 60 * 24 * 90,
       // «correo: null» dice «esta entrada es anónima», y se distingue de las
       // anteriores al 2026-08-31, que no traen el campo en absoluto.
-      metadata: { n, correo: ident.correo || null, cuando: new Date().toISOString() },
+      metadata: { n, correo: ident.correo || null,
+                  rotulo: ident.correo ? rotuloDe(ident.correo, env) : null,
+                  cuando: new Date().toISOString() },
     });
     return Response.json({ ok: true, id, correo: ident.correo || null });
   }
@@ -245,6 +247,7 @@ async function cola(request, env, url) {
             ? k.metadata.n : contadas.get(k.name),
           // undefined = entrada anterior a la identidad; null = anónima.
           correo: k.metadata ? (k.metadata.correo ?? undefined) : undefined,
+          rotulo: k.metadata ? (k.metadata.rotulo ?? undefined) : undefined,
         })),
       });
     }
@@ -255,6 +258,7 @@ async function cola(request, env, url) {
     const out = await Promise.all(claves.map(async (k) => ({
       id: k.name,
       correo: k.metadata ? (k.metadata.correo ?? undefined) : undefined,
+      rotulo: k.metadata ? (k.metadata.rotulo ?? undefined) : undefined,
       md: await env.VEREDICTOS.get(k.name),
     })));
     return Response.json({ ok: true, veredictos: out });
@@ -350,12 +354,45 @@ function galleta(request, nombre) {
    que había hasta hoy y no se rompe solo por desplegar. El día que se ponga,
    quien no figure baja a aprendiz. */
 
+/* El repertorio se escribe «correo» o «correo=Rótulo público», uno por línea
+   o separados por comas:
+
+       admin@iebh.org = IEBH
+       fulano@ejemplo.org = Ven. Fulano
+       mengano@ejemplo.org
+
+   El RÓTULO es lo que se publicará en la página (decisión de Angel,
+   2026-08-31: nombrar al revisor). El CORREO no se publica nunca — se quitó
+   de ahí esta misma tarde y no vuelve—: queda en el metadato de la cola y en
+   el archivo de veredictos-recibidos/, que no se publican.
+
+   Sin rótulo, la página dirá «revisor verificado» y nada más. Es preferible a
+   soltar una dirección, y quien firma siempre puede poner el rótulo después
+   con «--fuente». */
+function repertorio(env) {
+  const m = new Map();
+  for (const trozo of (env.REVISORES || "").split(/[\n,;]+/)) {
+    const t = trozo.trim();
+    if (!t) continue;
+    const i = t.indexOf("=");
+    const correo = (i < 0 ? t : t.slice(0, i)).trim().toLowerCase();
+    const rotulo = i < 0 ? "" : t.slice(i + 1).trim();
+    if (correo) m.set(correo, rotulo);
+  }
+  return m;
+}
+
 function esRevisor(correo, env) {
   if (!correo) return false;
-  const lista = (env.REVISORES || "").trim();
-  if (!lista) return true;          // sin repertorio, como hasta hoy
-  return lista.toLowerCase().split(/[\s,;]+/).filter(Boolean)
-    .includes(correo.toLowerCase());
+  if (!(env.REVISORES || "").trim()) return true;   // sin repertorio, como antes
+  return repertorio(env).has(correo.toLowerCase());
+}
+
+/* Cómo se le nombra en la página. Nunca el correo. */
+function rotuloDe(correo, env) {
+  if (!correo) return null;
+  const r = repertorio(env).get(correo.toLowerCase());
+  return r || "revisor verificado";
 }
 
 async function identidad(request, env) {

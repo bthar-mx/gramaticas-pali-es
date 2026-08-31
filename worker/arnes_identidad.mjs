@@ -348,6 +348,38 @@ async function main() {
     comprobar("?json=1 dice papel aprendiz", ja.papel === "aprendiz", JSON.stringify(ja));
   }
 
+  /* ---- EL RÓTULO PÚBLICO (2026-08-31, decisión de Angel: nombrar al
+     revisor) ---- Lo que se publica es el rótulo, nunca el correo: la
+     dirección se quitó de la página esta misma tarde y no vuelve. */
+  {
+    const env = { VEREDICTOS: kvFalso(), ACCESO_EQUIPO: EQUIPO,
+      ACCESO_AUD: AUD, CLAVE_VEREDICTOS: "x",
+      REVISORES: "jefe@ejemplo.org = IEBH\nfulano@ejemplo.org = Ven. Fulano\nsinrotulo@ejemplo.org" };
+    const t = (c) => firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: c, exp: dentro });
+    const meta = async (correo) => {
+      const e2 = { ...env, VEREDICTOS: kvFalso() };
+      await enviar(e2, await t(correo));
+      return [...e2.VEREDICTOS.datos.values()][0].meta;
+    };
+    const a = await meta("jefe@ejemplo.org");
+    comprobar("el rótulo del jefe es IEBH", a.rotulo === "IEBH", JSON.stringify(a));
+    const b = await meta("fulano@ejemplo.org");
+    comprobar("el rótulo con nombre se guarda",
+      b.rotulo === "Ven. Fulano", JSON.stringify(b));
+    const c = await meta("sinrotulo@ejemplo.org");
+    comprobar("sin rótulo → «revisor verificado», NUNCA el correo",
+      c.rotulo === "revisor verificado" && !/@/.test(c.rotulo), JSON.stringify(c));
+    comprobar("y el correo sigue guardado aparte, para el registro",
+      c.correo === "sinrotulo@ejemplo.org");
+    comprobar("con rótulo, «=» no rompe el reparto de papeles",
+      (await enviar({ ...env, VEREDICTOS: kvFalso() },
+        await t("fulano@ejemplo.org"))).status === 200);
+    comprobar("y quien no está en el repertorio sigue siendo aprendiz",
+      (await enviar({ ...env, VEREDICTOS: kvFalso() },
+        await t("nadie@ejemplo.org"))).status === 403);
+  }
+
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");
   if (fallos) { console.log("HAY FALLOS: " + fallos); process.exit(1); }
   console.log("La identidad se sostiene.");

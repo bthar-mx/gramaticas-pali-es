@@ -77,32 +77,36 @@ def pedir(url, metodo="GET"):
 
 
 def quien(e):
-    """De quién es una entrada, dicho para leerlo de un vistazo."""
+    """De quién es una entrada, para MIRARLA, no para publicarla."""
     if "correo" not in e:
         return "sin identidad (entrada anterior al 2026-08-31)"
-    return e["correo"] if e.get("correo") else "SIN IDENTIDAD (cola abierta)"
+    if not e.get("correo"):
+        return "SIN IDENTIDAD (cola abierta)"
+    r = (e.get("rotulo") or "").strip()
+    return e["correo"] + (" → «{0}»".format(r) if r else "")
 
 
 def fuente_de(e):
     """La procedencia PUBLICABLE de una entrada.
 
     Ojo con la distinción, que se aprendió por las malas el 2026-08-31: el
-    campo «fuente» SE PINTA EN LA PÁGINA (plantilla.html, l. 842-848). No es
-    un registro interno. De modo que aquí no puede ir el correo de nadie:
-    publicarlo sería soltar una dirección personal en un sitio abierto y,
-    además, saltarse la regla de CLAUDE.md —la atribución pública dice IEBH,
-    nunca «Angel»—.
+    campo «fuente» SE PINTA EN LA PÁGINA (plantilla.html, l. 842-848), y
+    además casos-reportados.json viaja ENTERO, embebido, dentro de la página
+    (generar_solucionador.py l. 273). De modo que aquí no puede ir el correo
+    de nadie: publicarlo sería soltar una dirección personal en un sitio
+    abierto.
 
-    Publicar y registrar son dos cosas distintas:
+    QUÉ SE PUBLICA (decisión de Angel, 2026-08-31: nombrar al revisor):
 
-      · QUIÉN LO MANDÓ  → la cola (metadato del KV), el archivo de
-        veredictos-recibidos/ y el campo «recibido_de». No se publica.
-      · QUIÉN LO FIRMA  → el IEBH, y por eso lo dice la fuente. La firma es
-        el acto de incorporar: nada llega a la página sin que quien firma
-        corra esta orden.
+      · el RÓTULO del repertorio, que el worker guarda con la entrada. El de
+        Angel es «IEBH»; el de otro revisor, el nombre que él le haya puesto.
+      · si el revisor no tiene rótulo, «revisor verificado», nunca el correo.
+      · sin identidad, se dice — y jamás «IEBH».
 
-    Lo que NO se puede volver a hacer es rotular «IEBH» lo que llegó sin
-    identidad. Con Access delante eso ya no pasa; sin él, se dice.
+    QUIÉN LO MANDÓ queda en el metadato de la cola y en la cabecera del
+    archivo de veredictos-recibidos/, que no se publica.
+
+    Y quien firma puede rotular a mano con --fuente, que es acto deliberado.
     """
     hoy = datetime.date.today().isoformat()
     if "correo" not in e:
@@ -111,7 +115,11 @@ def fuente_de(e):
     if not e.get("correo"):
         return ("cola web, SIN IDENTIDAD VERIFICADA, recogida el {0} "
                 "· revisión en la página".format(hoy))
-    return "IEBH, {0} · revisión en la página".format(hoy)
+    rotulo = (e.get("rotulo") or "").strip() or "revisor verificado"
+    if rotulo == "IEBH":
+        return "IEBH, {0} · revisión en la página".format(hoy)
+    return ("{0}, {1} · revisión en la página · incorporado por el IEBH"
+            .format(rotulo, hoy))
 
 
 def main():

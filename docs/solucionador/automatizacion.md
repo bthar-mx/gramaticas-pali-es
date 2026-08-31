@@ -88,12 +88,35 @@ falta que el segundo lo decida el worker.
 | **aprendiz** | sí | sí | **no** — recibe 403 |
 
 El repertorio vive en el secreto **`REVISORES`**, no en el repositorio: ahí los
-correos serían públicos y cambiarlos pediría un despliegue.
+correos serían públicos y cambiarlos pediría un despliegue. Cada entrada es
+`correo` o `correo = Rótulo público`:
 
     npx wrangler secret put REVISORES
-    #  → uno@ejemplo.org, otro@ejemplo.org
+    #  → admin@iebh.org = IEBH
+    #    fulano@ejemplo.org = Ven. Fulano
+    #    mengano@ejemplo.org
 
-Se admiten comas, espacios y saltos de línea, y no distingue mayúsculas.
+Comas o saltos de línea; el correo no distingue mayúsculas.
+
+### El RÓTULO es lo que se publica; el correo, nunca
+
+*Decisión de Angel, 2026-08-31: **nombrar al revisor**.* La página dice quién
+propuso cada lectura, y «IEBH» queda para lo que firma él.
+
+| rótulo del repertorio | lo que sale en la página |
+| --- | --- |
+| `= IEBH` | `IEBH, <fecha> · revisión en la página` |
+| `= Ven. Fulano` | `Ven. Fulano, <fecha> · revisión en la página · incorporado por el IEBH` |
+| sin rótulo | `revisor verificado, <fecha> · … · incorporado por el IEBH` |
+| sin identidad | `SIN IDENTIDAD VERIFICADA` — y jamás «IEBH» |
+
+**El correo no aparece en ninguna de las cuatro**, y no es un descuido evitado
+sino uno cometido y corregido: el 2026-08-31 estuvo a un empujón de publicarse
+seis veces. Queda en el metadato de la cola y en la cabecera del archivo de
+`veredictos-recibidos/`, que no se publican.
+
+El worker calcula el rótulo al encolar y lo guarda con la entrada, de modo que
+el repertorio vive en UN solo sitio: `traer_veredictos.py` no lo repite.
 **Si `REVISORES` no está puesto, toda identidad verificada es revisora**, que
 es lo que había antes: desplegar esto no degrada a nadie por sorpresa.
 
