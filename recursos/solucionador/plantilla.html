@@ -1417,14 +1417,31 @@ $('revision').addEventListener('click', () => {
      doctrina del propio modo revisión: discreción, no candado — el
      candado real sigue siendo la incorporación, los arneses y la firma.
      Un navegador que alguna vez abrió ?revision a secas queda en el modo
-     pleno; el enlace de estudiante nunca lo asciende. */
+     pleno; el enlace de estudiante nunca lo asciende.
+
+     Y LA VUELTA (pedido de Angel, 2026-08-31): …/solucionador/?revision=no
+     borra las dos marcas y vuelve a esconder el botón. Hasta ahora había
+     interruptor de encendido y no de apagado, de modo que un navegador que
+     hubiera abierto ?revision una vez se quedaba con el mando a la vista para
+     siempre, y sólo se quitaba vaciando el almacenamiento a mano. Se admiten
+     «no», «0» y «off» por si se escribe de memoria.
+
+     Ojo con el orden de las tres pruebas: /[?&#]revision\b/ casa también
+     dentro de «?revision=no» —la frontera \b cae entre la «n» y el «=»—, así
+     que la de apagado va PRIMERA y la genérica ÚLTIMA. */
   let visto = false, estudiante = false;
   try {
     visto = localStorage.getItem('rev-habilitado') === '1';
     estudiante = localStorage.getItem('rev-estudiante') === '1';
   } catch(e){}
   const dondeRev = location.search + location.hash;
-  if(/[?&#]revision=estudiante\b/u.test(dondeRev)){
+  if(/[?&#]revision=(?:no|0|off)\b/u.test(dondeRev)){
+    visto = false; estudiante = false;
+    try {
+      localStorage.removeItem('rev-habilitado');
+      localStorage.removeItem('rev-estudiante');
+    } catch(e){}
+  } else if(/[?&#]revision=estudiante\b/u.test(dondeRev)){
     if(!visto){
       estudiante = true;
       try { localStorage.setItem('rev-estudiante', '1'); } catch(e){}
