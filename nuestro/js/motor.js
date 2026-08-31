@@ -694,7 +694,7 @@ function patronNiggahitaM(r, patron, frec, fForma) {
     // max(frec(forma), 1)); gemelas de vocal inicial → la BREVE; si queda
     // exactamente UNA, se afirma. Receta, medición y porqués:
     // `_patron_niggahita_m` del Python (informe-niggahita-m.md). Régimen
-    // medido (Angel, 2026-08-30): sólo afirma formas con frecuencia >=
+    // medido (IEBH, 2026-08-30): sólo afirma formas con frecuencia >=
     // frec_minima; fuera de ahí el resguardo se debilita y la medición no
     // llegó — porqués en el Python.
     if (fForma < (patron.frec_minima || 0)) return false;
