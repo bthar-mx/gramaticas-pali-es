@@ -307,6 +307,47 @@ async function main() {
       j2.correo === null, JSON.stringify(j2));
   }
 
+  /* ---- LOS DOS PAPELES (2026-08-31) ----
+     Access autentica, el worker autoriza. Lo que se sujeta aquí es que el
+     aprendiz NO encola aunque su identidad sea impecable, y que la diferencia
+     se diga con 403 y no con 401: son mensajes distintos y mandarían al
+     aprendiz a iniciar sesión en bucle si se confundieran. */
+  {
+    const t = (correo) => firmar(buenas, "kid-bueno",
+      { aud: [AUD], email: correo, exp: dentro });
+    const conLista = () => ({ VEREDICTOS: kvFalso(), ACCESO_EQUIPO: EQUIPO,
+      ACCESO_AUD: AUD, CLAVE_VEREDICTOS: "x",
+      REVISORES: "jefe@ejemplo.org, otra@ejemplo.org" });
+
+    const env1 = conLista();
+    comprobar("revisor de la lista → 200",
+      (await enviar(env1, await t("jefe@ejemplo.org"))).status === 200);
+
+    const env2 = conLista();
+    const r2 = await enviar(env2, await t("aprendiz@ejemplo.org"));
+    comprobar("aprendiz → 403 (no 401)", r2.status === 403, "salió " + r2.status);
+    comprobar("y no deja nada en la cola", env2.VEREDICTOS.datos.size === 0);
+
+    // Mayúsculas y espacios en el repertorio: es una lista escrita a mano.
+    const env3 = { ...conLista(), REVISORES: "  JEFE@Ejemplo.ORG \n otra@ejemplo.org " };
+    comprobar("el repertorio no distingue mayúsculas ni espacios",
+      (await enviar(env3, await t("jefe@ejemplo.org"))).status === 200);
+
+    // Sin REVISORES: como hasta hoy, toda identidad verificada es revisora.
+    comprobar("sin REVISORES, cualquiera verificado envía",
+      (await enviar(conAcceso(), await t("quien@ejemplo.org"))).status === 200);
+
+    // El papel viaja en el JSON que consulta el botón.
+    const env4 = conLista();
+    const pedir = (correo) => worker.fetch(new Request(
+      "https://ejemplo.org/api/entrar?json=1",
+      { headers: { "Cf-Access-Jwt-Assertion": correo } }), env4);
+    const jr = await (await pedir(await t("jefe@ejemplo.org"))).json();
+    const ja = await (await pedir(await t("aprendiz@ejemplo.org"))).json();
+    comprobar("?json=1 dice papel revisor", jr.papel === "revisor", JSON.stringify(jr));
+    comprobar("?json=1 dice papel aprendiz", ja.papel === "aprendiz", JSON.stringify(ja));
+  }
+
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");
   if (fallos) { console.log("HAY FALLOS: " + fallos); process.exit(1); }
   console.log("La identidad se sostiene.");

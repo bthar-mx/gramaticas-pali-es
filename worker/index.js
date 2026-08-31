@@ -94,14 +94,21 @@ async function entrar(request, env) {
      rutas, de modo que compartirla es compartir la protección — sin sesión,
      Cloudflare responde con su redirección antes de que el worker exista, y
      eso mismo es la respuesta que la página necesita. */
+  const papel = ident.correo
+    ? (esRevisor(ident.correo, env) ? "revisor" : "aprendiz") : null;
   if (new URL(request.url).searchParams.get("json")) {
     return Response.json(
-      { correo: ident.correo || null, configurado: ident.configurado },
+      { correo: ident.correo || null, papel: papel,
+        configurado: ident.configurado },
       { headers: { "Cache-Control": "no-store" } },
     );
   }
   const quien = ident.correo
-    ? "Sesión iniciada como <strong>" + esc(ident.correo) + "</strong>."
+    ? "Sesión iniciada como <strong>" + esc(ident.correo) + "</strong>, con "
+      + (papel === "revisor"
+        ? "papel de <strong>revisor</strong>: puede enviar a la cola."
+        : "papel de <strong>aprendiz</strong>: puede marcar veredictos y "
+          + "exportar el .md, pero no enviarlos a la cola.")
     : (ident.configurado
       ? "No se pudo leer la identidad (" + esc(ident.por || "") + ")."
       : "Access no está configurado: la cola sigue abierta.");
@@ -145,6 +152,15 @@ async function veredictos(request, env, url) {
       return new Response("hace falta iniciar sesión (" + ident.por + ")", {
         status: 401,
       });
+    }
+    // 401 y 403 dicen cosas distintas y la página las distingue: «no sé quién
+    // eres» frente a «sé quién eres y no te toca». Confundirlas mandaría al
+    // aprendiz a iniciar sesión una y otra vez sin que sirviera de nada.
+    if (ident.configurado && !esRevisor(ident.correo, env)) {
+      return new Response(
+        "identificado como " + ident.correo + ", pero el envío a la cola es "
+        + "de los revisores. Use «Exportar .md» y hágaselo llegar a quien firma.",
+        { status: 403 });
     }
     const md = await request.text();
     if (!md || md.length > 65536) {
@@ -308,6 +324,38 @@ function galleta(request, nombre) {
   const c = request.headers.get("Cookie") || "";
   const m = c.match(new RegExp("(?:^|;\\s*)" + nombre + "=([^;]+)"));
   return m ? m[1] : null;
+}
+
+/* ---- LOS DOS PAPELES (pedido de Angel, 2026-08-31) ----
+
+   Access AUTENTICA —dice quién eres— y este worker AUTORIZA —dice qué
+   puedes—. Son dos preguntas y conviene que las conteste cada uno la suya:
+   una política de Access es «pasa» o «no pasa», y aquí hacen falta dos
+   grados sobre la MISMA puerta.
+
+     REVISOR    puede ENVIAR a la cola. Su correo está en REVISORES.
+     APRENDIZ   entra, se identifica, marca veredictos y EXPORTA el .md,
+                pero no encola. Cualquier identidad verificada que no esté
+                en REVISORES.
+
+   El repertorio vive en el secreto REVISORES —correos separados por comas,
+   espacios o saltos de línea—, y no en el repositorio: ahí serían públicos, y
+   además cambiarlo pediría un despliegue. Con «wrangler secret put» se cambia
+   en el acto.
+
+       npx wrangler secret put REVISORES
+       #  → uno@ejemplo.org, otro@ejemplo.org
+
+   SI REVISORES NO ESTÁ PUESTO, toda identidad verificada es revisora: es lo
+   que había hasta hoy y no se rompe solo por desplegar. El día que se ponga,
+   quien no figure baja a aprendiz. */
+
+function esRevisor(correo, env) {
+  if (!correo) return false;
+  const lista = (env.REVISORES || "").trim();
+  if (!lista) return true;          // sin repertorio, como hasta hoy
+  return lista.toLowerCase().split(/[\s,;]+/).filter(Boolean)
+    .includes(correo.toLowerCase());
 }
 
 async function identidad(request, env) {

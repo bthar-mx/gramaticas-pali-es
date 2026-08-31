@@ -638,6 +638,8 @@ const TXT = {
     est_estudiante: 'modo estudiante: exporte el .md y hágaselo llegar a quien firma — nada se adjudica sin esa revisión',
     enviando: 'enviando…',
     sin_cola: 'la cola no está configurada todavía: use «Exportar .md»',
+    no_revisor: 'está identificado, pero el envío a la cola es de los revisores: use «Exportar .md» y hágaselo llegar a quien firma',
+    sesion_apr: c => `sesión: ${c} · aprendiz`,
     entrar: 'iniciar sesión',
     sesion_de: c => `sesión: ${c}`,
     t_entrar: 'Access verifica quién envía. El estudiante no lo necesita: «Exportar .md» funciona sin sesión.',
@@ -709,6 +711,8 @@ const TXT = {
     est_estudiante: 'student mode: export the .md and hand it to the signer — nothing is adjudicated without that review',
     enviando: 'sending…',
     sin_cola: 'the queue is not configured yet: use “Export .md”',
+    no_revisor: 'you are signed in, but sending to the queue is for reviewers: use “Export .md” and hand it to the signer',
+    sesion_apr: c => `signed in: ${c} · apprentice`,
     entrar: 'sign in',
     sesion_de: c => `signed in: ${c}`,
     t_entrar: 'Access verifies who sends. Students do not need it: “Export .md” works with no session.',
@@ -1193,7 +1197,7 @@ $('texto').addEventListener('paste', () => {
 const REV = { on: false, v: new Map(), obs: '', estudiante: false,
   /* null = no se ha preguntado todavía; '' = sin sesión; 'x@y' = con ella.
      Se pregunta una vez al encender el modo revisión, no en cada pintada. */
-  sesion: null };
+  sesion: null, papel: null };
 try {
   for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
     REV.v.set(k, x);
@@ -1275,8 +1279,9 @@ function revAcciones(){
     <button type="button" class="boton${REV.estudiante ? '' : ' secundario'}" id="rev-exportar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('exportar')}</button>
     <button type="button" class="boton secundario" id="rev-borrar"${(n || REV.obs.trim()) ? '' : ' disabled'}>${tr('borrar_todos')}</button>
     ${REV.estudiante ? '' : `<button type="button" class="boton secundario" id="rev-entrar"
-      data-tip="${esc(tr('t_entrar'))}">${esc(REV.sesion === null ? tr('entrar')
-        : (REV.sesion ? tr('sesion_de')(REV.sesion) : tr('entrar')))}</button>`}
+      data-tip="${esc(tr('t_entrar'))}">${esc(REV.sesion === null ? tr('entrar') : (REV.sesion
+        ? (REV.papel === 'aprendiz' ? tr('sesion_apr')(REV.sesion) : tr('sesion_de')(REV.sesion))
+        : tr('entrar')))}</button>`}
     <span class="estado" id="rev-estado">${tr(REV.estudiante ? 'est_estudiante' : 'est_normal')}</span>
   </div>`;
 }
@@ -1396,6 +1401,15 @@ async function revEnviar(boton){
        que pasa de verdad: hay que iniciar sesión. */
     const r = await fetch('/api/veredictos',
       { method: 'POST', body: revMD(), redirect: 'manual' });
+    if(r.status === 403){
+      /* Identificado, pero aprendiz. 401 y 403 dicen cosas distintas: «no sé
+         quién eres» frente a «sé quién eres y no te toca». Se apunta el papel
+         para que la barra deje de ofrecer «Enviar» en la siguiente pintada. */
+      REV.papel = 'aprendiz'; REV.estudiante = true;
+      est.textContent = tr('no_revisor');
+      if($('texto').value.trim()) analizar();
+      return;
+    }
     if(r.status === 401 || r.type === 'opaqueredirect' || r.status === 0){
       est.innerHTML = tr('sin_sesion');   /* lleva enlace: v. el texto */
     } else if(r.status === 503){
@@ -1434,6 +1448,12 @@ async function revMirarSesion(){
     if(!r.ok || r.type === 'opaqueredirect'){ REV.sesion = ''; return; }
     const j = await r.json();
     REV.sesion = j.correo || '';
+    /* El PAPEL lo dice el servidor, no la URL. «?revision=estudiante» sigue
+       existiendo como elección voluntaria —trabajar sin el botón de enviar—,
+       pero la autoridad es ésta: quien no sea revisor no encola aunque se
+       quite el parámetro a mano, porque el que decide es el 403 del worker. */
+    REV.papel = j.papel || null;
+    if(REV.papel === 'aprendiz') REV.estudiante = true;
   } catch(e){ REV.sesion = ''; }
 }
 $('revision').addEventListener('click', () => {

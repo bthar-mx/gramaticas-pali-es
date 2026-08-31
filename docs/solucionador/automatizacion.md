@@ -75,7 +75,41 @@ verificado se guarda con la entrada. La lista de quién puede entrar vive en la
 política de Access —se edita en el panel, sin tocar código ni desplegar—, que
 es la diferencia con una contraseña compartida: **se revoca a uno solo**.
 
-### Los dos papeles, y por qué sólo uno necesita entrar
+### Los dos papeles: REVISOR y APRENDIZ
+
+*Pedido de Angel, 2026-08-31.* **Access AUTENTICA —dice quién eres— y el worker
+AUTORIZA —dice qué puedes—.** Son dos preguntas, y una política de Access sólo
+sabe contestar «pasa» o «no pasa»: para dos grados sobre la misma puerta hace
+falta que el segundo lo decida el worker.
+
+| papel | entra | marca y exporta | **envía a la cola** |
+| --- | --- | --- | --- |
+| **revisor** | sí | sí | **sí** |
+| **aprendiz** | sí | sí | **no** — recibe 403 |
+
+El repertorio vive en el secreto **`REVISORES`**, no en el repositorio: ahí los
+correos serían públicos y cambiarlos pediría un despliegue.
+
+    npx wrangler secret put REVISORES
+    #  → uno@ejemplo.org, otro@ejemplo.org
+
+Se admiten comas, espacios y saltos de línea, y no distingue mayúsculas.
+**Si `REVISORES` no está puesto, toda identidad verificada es revisora**, que
+es lo que había antes: desplegar esto no degrada a nadie por sorpresa.
+
+**En Access se admite a todos —revisores y aprendices— en la misma política.**
+El aprendiz tiene que poder entrar: sin sesión no se le puede distinguir del
+desconocido, y el 403 que le corresponde exige saber ya quién es.
+
+**401 y 403 dicen cosas distintas**, y la página las distingue: «no sé quién
+eres» manda a iniciar sesión; «sé quién eres y no te toca» manda a exportar.
+Confundirlas dejaría al aprendiz iniciando sesión en bucle sin que sirviera.
+
+`?revision=estudiante` sigue existiendo, pero ahora es **elección voluntaria**
+—trabajar sin el botón de enviar—, no una barrera: la autoridad es el 403 del
+worker, que no se esquiva quitando el parámetro de la URL.
+
+### Por qué sólo uno necesita entrar para exportar
 
 | papel | qué hace | ¿login? |
 | --- | --- | --- |
