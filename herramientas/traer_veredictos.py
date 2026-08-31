@@ -84,32 +84,34 @@ def quien(e):
 
 
 def fuente_de(e):
-    """La procedencia de una entrada, SIN suponerla.
+    """La procedencia PUBLICABLE de una entrada.
 
-    Hasta el 2026-08-31 esto rotulaba «IEBH, <fecha>» todo lo que bajara de
-    la cola, y la cola era un buzón anónimo: lo que dejara un desconocido
-    entraba al proyecto con la firma de quien no lo había escrito. Es el
-    principio 4 roto en silencio, que es la peor manera de romperlo.
+    Ojo con la distinción, que se aprendió por las malas el 2026-08-31: el
+    campo «fuente» SE PINTA EN LA PÁGINA (plantilla.html, l. 842-848). No es
+    un registro interno. De modo que aquí no puede ir el correo de nadie:
+    publicarlo sería soltar una dirección personal en un sitio abierto y,
+    además, saltarse la regla de CLAUDE.md —la atribución pública dice IEBH,
+    nunca «Angel»—.
 
-    Ahora la procedencia sale de lo que se sabe, y cuando no se sabe LO DICE:
+    Publicar y registrar son dos cosas distintas:
 
-      · correo verificado por Access → ese correo, marcado como verificado;
-      · «correo: null» → la cola estaba abierta: SIN IDENTIDAD;
-      · sin el campo → entrada anterior a este cambio: sin identidad, y de antes.
+      · QUIÉN LO MANDÓ  → la cola (metadato del KV), el archivo de
+        veredictos-recibidos/ y el campo «recibido_de». No se publica.
+      · QUIÉN LO FIRMA  → el IEBH, y por eso lo dice la fuente. La firma es
+        el acto de incorporar: nada llega a la página sin que quien firma
+        corra esta orden.
 
-    Nunca se vuelve a escribir «IEBH» por omisión. Eso lo pone quien firma,
-    a mano, con --fuente, si decide que le corresponde.
+    Lo que NO se puede volver a hacer es rotular «IEBH» lo que llegó sin
+    identidad. Con Access delante eso ya no pasa; sin él, se dice.
     """
     hoy = datetime.date.today().isoformat()
     if "correo" not in e:
-        return ("cola web, sin identidad, entrada anterior al 2026-08-31, "
+        return ("cola web, SIN IDENTIDAD, entrada anterior al 2026-08-31, "
                 "recogida el {0} · revisión en la página".format(hoy))
-    c = e.get("correo")
-    if not c:
+    if not e.get("correo"):
         return ("cola web, SIN IDENTIDAD VERIFICADA, recogida el {0} "
                 "· revisión en la página".format(hoy))
-    return ("{0} (identidad verificada por Access), recogida el {1} "
-            "· revisión en la página".format(c, hoy))
+    return "IEBH, {0} · revisión en la página".format(hoy)
 
 
 def main():
@@ -186,6 +188,14 @@ def main():
     for e in cola:
         ruta = os.path.join(DESTINO, e["id"] + ".md")
         with open(ruta, "w", encoding="utf-8") as f:
+            # QUIÉN lo mandó se guarda AQUÍ y sólo aquí. En el caso no puede
+            # ir: casos-reportados.json viaja ENTERO, embebido, dentro de la
+            # página publicada (generar_solucionador.py l. 273), de modo que
+            # un correo puesto ahí acaba en el navegador de cualquiera aunque
+            # no se pinte. Esta carpeta no se publica.
+            f.write("<!-- Recogido de la cola el {0}.\n"
+                    "     Identidad: {1} -->\n\n".format(
+                        datetime.date.today().isoformat(), quien(e)))
             f.write(e.get("md") or "")
         print("\n== {0} → {1}".format(e["id"], os.path.relpath(ruta, RAIZ)))
         r = subprocess.run([sys.executable, INCORPORADOR, ruta,
