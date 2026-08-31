@@ -60,10 +60,83 @@ reglas generales, quien firma decide — como salió la de los absolutivos en
 Hasta entonces el sitio funciona igual: `/api/veredictos` responde 503 y el
 botón «Enviar» lo dice y remite a «Exportar .md».
 
+## QUIÉN ENVÍA: el login del modo revisión (2026-08-31)
+
+*Pedido de Angel. Antes de esto la cola era un buzón **anónimo**, y el
+problema no era que entrara basura —eso se ve y se descarta— sino que el
+`.md` exportado trae escrita la orden de incorporación con
+`--fuente "IEBH, …"`. Lo de un desconocido entraba al proyecto **rotulado
+como del IEBH**: el principio 4 roto en silencio, que es la peor manera.*
+
+Ahora enviar exige **identidad verificada por Cloudflare Access**, y el correo
+verificado se guarda con la entrada. La lista de quién puede entrar vive en la
+política de Access —se edita en el panel, sin tocar código ni desplegar—, que
+es la diferencia con una contraseña compartida: **se revoca a uno solo**.
+
+### Los dos papeles, y por qué sólo uno necesita entrar
+
+| papel | qué hace | ¿login? |
+| --- | --- | --- |
+| **estudiante** | marca veredictos y **exporta el .md** | **no**: exportar no toca el servidor, pasa entero en el navegador |
+| **revisor** | además **envía** a la cola | **sí**: enviar es lo único que llega al worker |
+
+De modo que no hay que cerrar la página: se cierra **el POST**, que es el
+único sitio por donde se entra.
+
+### En el panel de Cloudflare (una sola vez, lo hace Angel)
+
+1. **Zero Trust → Access → Applications → Add an application → Self-hosted.**
+   Gratis hasta 50 usuarios.
+2. Dominio: `gramaticas.buddha-dhamma.net`, ruta **`/api/veredictos`**.
+   Conviene añadir una segunda aplicación sobre `/recursos/solucionador/`
+   **sólo si** se quiere que el revisor inicie sesión al abrir la página en vez
+   de al enviar; sin ella el primer envío del día pide la sesión y ya.
+3. **Policy → Allow**, con `Emails` y la lista de quien esté aprobado. Ése es
+   el repertorio, y se cambia aquí sin volver a desplegar.
+4. Copiar el **Application Audience (AUD) tag** de la pestaña *Overview*.
+5. En la Mac:
+
+        npx wrangler secret put ACCESO_EQUIPO
+        #  → mi-equipo.cloudflareaccess.com   (Settings → Custom Pages, o la
+        #    URL de login; es el dominio del EQUIPO, no el del sitio)
+        npx wrangler secret put ACCESO_AUD
+        #  → el AUD tag del paso 4
+        git add -A && git commit && git push
+
+**Mientras esas dos variables no estén puestas, todo sigue exactamente como
+hoy** y la cola acepta envíos anónimos. Es deliberado: desplegar el worker no
+debe cerrar la puerta antes de que exista la llave. Lo único que cambia desde
+ya es que esas entradas quedan marcadas `correo: null` y **`traer_veredictos.py`
+deja de atribuirlas al IEBH**.
+
+### Qué se ve después
+
+    python3 herramientas/traer_veredictos.py --solo-mirar
+      · 2026-09-02T…-a1b2c3d4 — 3 veredictos — revisor@ejemplo.org
+
+y el `--fuente` de cada entrada sale de ahí. Cuando no hay identidad lo dice
+—«SIN IDENTIDAD VERIFICADA»— en vez de suponer. Para rotular a mano, que es
+acto deliberado de quien firma, está `--fuente`.
+
+### El arnés
+
+    node worker/arnes_identidad.mjs
+
+Doce comprobaciones, sin red: token bueno, sin token, firma de otra clave,
+**aud de otra aplicación del mismo equipo** (el descuido clásico), caducado,
+cuerpo manipulado con firma legítima, `alg: none`, la galleta
+`CF_Authorization` —que es como llega de un navegador— y el caso de Access sin
+configurar. Es código de autenticación: el que no se prueba parece bien hasta
+el día que importa.
+
 ## Qué guardar en secreto
 
 La clave (`CLAVE_VEREDICTOS`) sólo la conoce quien recoge. Si se filtrara,
 lo peor posible es que alguien LEA o VACÍE la cola — no puede publicar ni
-adjudicar nada: eso sigue pidiendo la Mac, los arneses y la firma. Enviar a
-la cola es abierto a propósito; una entrada basura se descarta al mirarla
-(y el incorporador la rechaza sola si no trae `VEREDICTO:` legibles).
+adjudicar nada: eso sigue pidiendo la Mac, los arneses y la firma.
+
+**El envío ya no es abierto** desde que Access está configurado (arriba). Y aun
+así la puerta del proyecto es la de siempre: una entrada basura se descarta al
+mirarla, y el incorporador la rechaza sola si no trae `VEREDICTO:` legibles.
+El login dice **quién** dejó algo en el buzón; **nada se adjudica sin la
+firma**, que es lo que no delega ningún candado.

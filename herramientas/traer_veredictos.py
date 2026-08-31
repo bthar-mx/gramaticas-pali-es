@@ -71,6 +71,42 @@ def pedir(url, metodo="GET"):
         sys.exit(1)
 
 
+def quien(e):
+    """De quién es una entrada, dicho para leerlo de un vistazo."""
+    if "correo" not in e:
+        return "sin identidad (entrada anterior al 2026-08-31)"
+    return e["correo"] if e.get("correo") else "SIN IDENTIDAD (cola abierta)"
+
+
+def fuente_de(e):
+    """La procedencia de una entrada, SIN suponerla.
+
+    Hasta el 2026-08-31 esto rotulaba «IEBH, <fecha>» todo lo que bajara de
+    la cola, y la cola era un buzón anónimo: lo que dejara un desconocido
+    entraba al proyecto con la firma de quien no lo había escrito. Es el
+    principio 4 roto en silencio, que es la peor manera de romperlo.
+
+    Ahora la procedencia sale de lo que se sabe, y cuando no se sabe LO DICE:
+
+      · correo verificado por Access → ese correo, marcado como verificado;
+      · «correo: null» → la cola estaba abierta: SIN IDENTIDAD;
+      · sin el campo → entrada anterior a este cambio: sin identidad, y de antes.
+
+    Nunca se vuelve a escribir «IEBH» por omisión. Eso lo pone quien firma,
+    a mano, con --fuente, si decide que le corresponde.
+    """
+    hoy = datetime.date.today().isoformat()
+    if "correo" not in e:
+        return ("cola web, sin identidad, entrada anterior al 2026-08-31, "
+                "recogida el {0} · revisión en la página".format(hoy))
+    c = e.get("correo")
+    if not c:
+        return ("cola web, SIN IDENTIDAD VERIFICADA, recogida el {0} "
+                "· revisión en la página".format(hoy))
+    return ("{0} (identidad verificada por Access), recogida el {1} "
+            "· revisión en la página".format(c, hoy))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--clave", default=os.environ.get("VEREDICTOS_CLAVE", ""))
@@ -81,6 +117,11 @@ def main():
                          "veredicto, sin escribir, sin archivar y sin "
                          "vaciar la cola")
     ap.add_argument("--api", default=API)
+    ap.add_argument("--fuente", default=None,
+                    help="rotula TODAS las entradas con esta procedencia, en "
+                         "vez de deducirla de la identidad verificada. Es un "
+                         "acto deliberado de quien firma: por omisión no se "
+                         "atribuye nada a nadie")
     a = ap.parse_args()
     if not a.clave:
         print("Falta la clave: --clave o VEREDICTOS_CLAVE en el entorno.")
@@ -104,12 +145,10 @@ def main():
             n = e.get("n")
             if n is None:
                 n = (e.get("md") or "").count("VEREDICTO:")
-            print("  · {0} — {1} veredicto{2}".format(
-                e["id"], n, "" if n == 1 else "s"))
+            print("  · {0} — {1} veredicto{2} — {3}".format(
+                e["id"], n, "" if n == 1 else "s", quien(e)))
         return 0
 
-    fuente = "IEBH, {0} · revisión en la página".format(
-        datetime.date.today().isoformat())
 
     # ENSAYO: se baja la cola de verdad, pero cada lote va a un archivo
     # temporal y el incorporador corre con «--sin-tocar». No se archiva en
@@ -129,7 +168,8 @@ def main():
                     f.write(e.get("md") or "")
                 print("\n== {0}".format(e["id"]))
                 subprocess.run([sys.executable, INCORPORADOR, ruta,
-                                "--fuente", fuente, "--sin-tocar"])
+                                "--fuente", a.fuente or fuente_de(e),
+                                "--sin-tocar"])
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
         print("\nEnsayo terminado. La cola queda intacta; para incorporar "
@@ -144,7 +184,7 @@ def main():
             f.write(e.get("md") or "")
         print("\n== {0} → {1}".format(e["id"], os.path.relpath(ruta, RAIZ)))
         r = subprocess.run([sys.executable, INCORPORADOR, ruta,
-                            "--fuente", fuente])
+                            "--fuente", a.fuente or fuente_de(e)])
         if r.returncode == 0:
             incorporados.append(e["id"])
         else:
