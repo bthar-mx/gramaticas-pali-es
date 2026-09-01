@@ -26,11 +26,12 @@ entero, un tramo del Suttamālā leído por primera vez, y un titular rectificad
 | textos del corpus separado | 80 | 80 |
 | junturas distintas | 2.045 | 2.045 |
 | ecuaciones | 141 | 141 |
-| casos adjudicados | 195 | 195 |
+| casos adjudicados | 195 | **218** |
 | señal «segura» / «posible» | 2.300 / 2.185 | 2.300 / 2.185 |
 
-**Ninguna cifra del motor se movió, y está bien que no se moviera:** esta
-sesión no tocó el motor. Tocó una fuente que estaba mal leída.
+**Por la mañana no se movió ninguna cifra del motor, y estuvo bien:** esa
+mitad no lo tocó, tocó una fuente mal leída. **Por la tarde sí**: 23 casos
+nuevos y la versión 2.0. Va todo en la SEGUNDA PARTE, desde el §9.
 
 Lo que sí se movió es la concordancia del Saddanīti:
 
@@ -235,3 +236,173 @@ añadidos de hoy:
   **sólo como generador**, y en el § 34 acertó donde falló el OCR.
 - **Nada se adjudicó en esta sesión.** El inventario del §2 y el del §4 son de
   candidatos y de testimonios; quien adjudica es el IEBH.
+
+
+---
+
+# SEGUNDA PARTE — la tarde del 2026-08-31
+
+*La misma sesión, otra materia. La mañana fue el Saddanīti; la tarde, quién
+puede tocar el proyecto y cómo se le atribuye lo que toca. Entraron 23 casos y
+la versión 2.0.*
+
+## 9. LA COLA YA NO ES ANÓNIMA — y el porqué no era el que parece
+
+Angel preguntó qué pasaría si un desconocido enviara veredictos. Al mirarlo, el
+problema no era el que se supone. Que entre basura se ve y se descarta. Lo
+grave era otro: **el `.md` exportado trae escrita la orden de incorporación con
+`--fuente "IEBH, …"`**, de modo que lo de un desconocido entraba al proyecto
+**rotulado como del IEBH**. El principio 4 roto en silencio, que es la peor
+manera de romperlo.
+
+De ahí todo lo demás. **La arquitectura, en una línea: Access AUTENTICA —dice
+quién eres—, el worker AUTORIZA —dice qué puedes—.**
+
+### Las tres puertas, y por qué son tres
+
+Access protege una RUTA y la protege **para todos los métodos**. Puesto delante
+de `/api/veredictos` pensando sólo en el POST, dejó fuera también el GET: o
+sea, `traer_veredictos.py`, que corre en la Mac sin sesión de navegador. Con
+una sola ruta no hay arreglo.
+
+| ruta | quién pasa | con qué |
+| --- | --- | --- |
+| `POST /api/veredictos` | el navegador del revisor | **identidad** (Access) |
+| `GET/DELETE /api/cola?clave=` | quien recoge, desde la Mac | **la clave** de siempre |
+| `GET /api/entrar` | quien quiera iniciar sesión | identidad (Access) |
+
+Al buzón se echa una carta diciendo quién eres; el buzón se abre con llave.
+Nunca fueron la misma cosa. **`/api/entrar` tiene que ser un segundo
+«destination» de la MISMA aplicación de Access**: la galleta vale por
+aplicación.
+
+### Los dos papeles
+
+| papel | entra | marca y exporta | envía a la cola |
+| --- | --- | --- | --- |
+| **revisor** | sí | sí | **sí** |
+| **aprendiz** | sí | sí | **no** — recibe 403 |
+
+El repertorio vive en el secreto **`REVISORES`**, con rótulo opcional:
+
+    admin@iebh.org = IEBH, admin@iebh.org = IEBH, fulano@ejemplo.org = Ven. Fulano
+
+**Sin `REVISORES` puesto, toda identidad verificada es revisora** (lo de antes;
+desplegar no degrada a nadie). En Access se admite a los DOS papeles en la
+misma política: el aprendiz necesita sesión para que se le pueda distinguir del
+desconocido.
+
+### EL RÓTULO ES LO QUE SE PUBLICA; EL CORREO, NUNCA
+
+Decisión de Angel: **nombrar al revisor**. Pero nombrar no puede ser publicar
+una dirección — y estuvo a un empujón de pasar, seis veces (§11.3).
+
+| rótulo | lo que sale en la página |
+| --- | --- |
+| `= IEBH` | `IEBH, <fecha> · revisión en la página` |
+| `= Ven. Fulano` | `Ven. Fulano, <fecha> · … · incorporado por el IEBH` |
+| sin rótulo | `revisor verificado, …` |
+| sin identidad | `SIN IDENTIDAD VERIFICADA` — **jamás «IEBH»** |
+
+El correo queda en el metadato del KV y en la cabecera del archivo de
+`veredictos-recibidos/`, que no se publican. **El worker calcula el rótulo AL
+ENCOLAR**, de modo que el repertorio vive en un solo sitio.
+
+### La página
+
+`?revision` revela **`⇥ entrar`** (arriba a la derecha); **`✎ revisión` sólo
+aparece CON SESIÓN**, porque sin identidad el modo no lleva a ninguna parte.
+`?revision=no` apaga y olvida. El botón dice el estado: `⇥ entrar`,
+`✓ revisor`, `✓ aprendiz`. Cerrar sesión, en `/api/entrar`.
+
+### El arnés — 49 comprobaciones
+
+    node worker/arnes_identidad.mjs
+
+Es código de autenticación: sin red, con claves generadas al vuelo y un JWKS de
+mentira. Cubre token bueno, sin token, firma de otra clave, **aud de otra
+aplicación del mismo equipo** (el descuido clásico), caducado, cuerpo
+manipulado, `alg: none`, la galleta, el reparto de rutas, las cuatro formas de
+escribir `ACCESO_EQUIPO`, las cinco de escribir `REVISORES` —incluida la de
+pegarla con el `#  → ` de la documentación—, los dos papeles y los rótulos.
+
+## 10. VERSIÓN 2.0, y por qué el número entero
+
+Lo propuso Angel, y no por lo de la tarde. **El 2026-08-30 entró en el motor la
+primera operación que Kaccāyana no enuncia: Saddanīti Suttamālā §49**
+(`62a2a4c`), sin la cual «tveva» no ofrecía su lectura citativa. Hasta entonces
+la herramienta explicaba el canon con UNA gramática; desde entonces, con las
+que hagan falta. Eso cambia lo que la herramienta ES.
+
+Con ello hubo que corregir el sobretítulo, que prometía «aforismos **de
+Kaccāyana**» — y la mañana lo volvió más falso al confirmar a ojo que §49 no
+tiene correspondiente. Ahora dice «de Kaccāyana, y del Saddanīti cuando
+Kaccāyana no la enuncia», en los dos idiomas y en el `<meta description>`.
+
+## 11. LO QUE HAY QUE CORREGIR DE MÍ MISMO (principio 5)
+
+Fue una tarde de errores míos, y casi todos de la misma familia: **construir
+sobre un supuesto sin comprobarlo.**
+
+1. **Access protege métodos, creí.** No: protege rutas enteras. Dejé fuera a
+   `traer_veredictos.py` y no lo vi hasta comprobarlo contra el sitio.
+2. **El correo, en el campo que se publica.** Puse la identidad verificada en
+   `fuente`, que **se pinta en la página** — y `casos-reportados.json` viaja
+   ENTERO, embebido, dentro del HTML. Un empujón más y salían seis direcciones
+   personales. Lo cacé mirando la plantilla antes de regenerar, no por diseño.
+3. **El parser del repertorio, dos veces.** Primero dejó de partir por espacios
+   al admitir rótulos; después no toleraba el `#  → ` de MI PROPIA
+   documentación. Angel se vio de «aprendiz» dos veces figurando en la lista.
+4. **Un ancla de parche se comió un `async`.** Lo cazó la comprobación de
+   sintaxis sobre la página generada, que por eso se hace.
+5. **Y el de siempre:** olvidé re-vertir la referencia de señal tras incorporar
+   y tumbé `arnes_deteccion`. Es el paso 2 de `ciclo_veredictos.py`, que se
+   salta al correr `traer_veredictos.py` a mano. **Úsese el ciclo.**
+
+Lo que salvó las cinco: comprobar contra lo desplegado, y arneses que se
+escriben ANTES de creerse el código.
+
+## 12. LOS 23 CASOS DE LA TARDE
+
+Cinco rescatados del navegador tras el lío del login (`c874dda`), seis por la
+cola ya con identidad (`a11b7bb`), `atthitvevassa` con escalera de Angel que
+cita **Saddanīti §49** (`03c40f1`), diez de un **APRENDIZ en clase**
+(`fef9924`) y `ācikkheyyātha` por la cola con `admin@iebh.org` (`fb6aa5d`).
+
+**Dos del aprendiz corrigen al motor**, que es lo que da valor al ejercicio:
+
+    abhirameyyāmahaṃ   el motor: abhirameyyāma + ahaṃ  →  abhirameyyāmi + ahaṃ
+    dānāhaṃ            el motor: dāna + haṃ            →  dāni + ahaṃ
+
+Y **`caparaṃ` = ca + aparaṃ** zanja una de las 416 discrepancias medidas en la
+40 (masa 1.548). Casos 195 → 218; sin derivar, 19.
+
+## 13. LO QUE TIENE QUE HACER ANGEL
+
+- **`herramientas/comprobar_despliegue.py`** dice si lo de la Mac es ya lo que
+  sirve la web, y distingue «falta el push» de «el despliegue va en camino».
+- **`admin@iebh.org`** funciona; el PIN tardó, no estaba bloqueado.
+- **Pendiente suyo, y sólo suyo:** si entra un revisor que no sea él, decidir
+  su rótulo. Hoy los dos correos llevan `= IEBH` y por eso no se nota.
+- **Ofrecido y sin hacer:** una línea que diga cuánto está adjudicado y cuánto
+  es propuesta del motor. Es la respuesta honesta a la sugerencia de un alumno
+  de poner «beta» — que dice «puede estar mal» sin decir dónde, que es
+  justamente la vaguedad que el proyecto rechaza en todo lo demás.
+
+## 14. LO QUE SIGUE — y no lo cambia nada de hoy
+
+**El camino de fondo, del §6 de la primera parte, sigue intacto**, y la tarde
+no lo ha tocado: lo de hoy es fontanería alrededor del motor, no el motor.
+
+1. **Que el motor sepa decir «no sé cuál»** (39 §9.3). Pequeño, local, sin
+   bloquear, y prerrequisito de todo: hoy devuelve una lista ordenada y la
+   cabeza se toma por respuesta, que es lo que `CLAUDE.md` prohíbe.
+2. **Conectar el texto corrido del OSBCT** (39 §9.8). Lo único que alcanza a
+   las 44.998 fichas — y desde esta mañana con respaldo textual: **Saddanīti
+   §§185-186** dicen que la juntura se decide por el SENTIDO, y el sentido no
+   está en las reglas.
+3. **El índice del Saddanīti**, en paralelo y fuera del camino crítico.
+
+Y el cabo suelto de la mañana: **la auditoría da 19 sin derivar donde el
+briefing 40 §5.8 decía 16**, y ninguno de los nuevos está entre ellos. Alguien
+movió dos y no se sabe quién.
