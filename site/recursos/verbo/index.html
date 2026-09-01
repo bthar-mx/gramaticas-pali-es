@@ -1003,6 +1003,48 @@ const VERSION_DATE = '2026-09-01';
       });
     });
 
+    /* La prosa de los paneles: la introducción, los encabezados y las
+       explicaciones. Hasta ahora el índice sólo tenía formas, lemas y
+       glosas, de modo que buscar una palabra que se está viendo en
+       pantalla —«inflexiones», «conjugación», «aforismo»— no daba nada.
+       Los paneles se pintan cuando se abren, así que aquí se les pide su
+       HTML y se lee en un elemento suelto, sin tocar la página. */
+    const cajon = document.createElement('div');
+    PANELES.forEach(p => {
+      try { cajon.innerHTML = p.pinta(); } catch (e) { return; }
+      cajon.querySelectorAll('h2, h3, h4, p, li, dt, dd, td, th').forEach(el => {
+        /* De cada elemento se indexa SU texto, sin el de los bloques que
+           anida. Un <li> que contiene otra lista —«tres períodos de tiempo
+           (tikāla)» con sus tres tiempos dentro— quedaba fuera si se
+           saltaban los contenedores, y con él las palabras que sólo están
+           en su propia línea. */
+        const propio = el.cloneNode(true);
+        propio.querySelectorAll('li, p, ul, ol, table, dl').forEach(x => x.remove());
+        const t = (propio.textContent || '').replace(/\s+/g, ' ').trim();
+        if (t.length < 12) return;
+        let a = el.id || '';
+        if (!a) {
+          let x = el.parentElement;
+          while (x && !x.id && x !== cajon) x = x.parentElement;
+          a = (x && x.id) ? x.id : '';
+        }
+        fuera.push({t, k: sinDiacriticos(t), panel: p.id, ancla: a,
+                    donde: ui('pestanas', p.id), prosa: true});
+      });
+    });
+    cajon.innerHTML = '';
+
+    /* Lo que se ve fuera de los paneles —la entradilla y el pie— también
+       es texto de la página. */
+    document.querySelectorAll('#entradilla, footer p, .pie-fuente')
+      .forEach(el => {
+        const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+        if (t.length < 12) return;
+        fuera.push({t, k: sinDiacriticos(t), panel: 'introduccion',
+                    ancla: el.id || '', donde: ui('pestanas', 'introduccion'),
+                    prosa: true});
+      });
+
     // una entrada por forma distinta y sitio distinto
     const visto = new Set(); const limpio = [];
     fuera.forEach(x => {
@@ -1011,6 +1053,20 @@ const VERSION_DATE = '2026-09-01';
       visto.add(c); limpio.push(x);
     });
     return limpio;
+  }
+
+  /* De un párrafo largo se enseña sólo el entorno de lo hallado, que es
+     lo que deja ver por qué ha salido. */
+  function fragmento(texto, aguja){
+    const k = sinDiacriticos(texto), i = k.indexOf(aguja);
+    if (i < 0) return esc(texto.slice(0, 110)) + (texto.length > 110 ? '…' : '');
+    const desde = Math.max(0, i - 45);
+    const hasta = Math.min(texto.length, i + aguja.length + 65);
+    return (desde ? '…' : '')
+         + esc(texto.slice(desde, i))
+         + '<mark>' + esc(texto.slice(i, i + aguja.length)) + '</mark>'
+         + esc(texto.slice(i + aguja.length, hasta))
+         + (hasta < texto.length ? '…' : '');
   }
 
   function resaltar(texto, aguja){
@@ -1053,7 +1109,8 @@ const VERSION_DATE = '2026-09-01';
         h += '<p class="res-grupo">' + esc(ui('pestanas', x.panel)) + '</p>';
       }
       h += '<a href="#" data-panel="' + x.panel + '" data-ancla="' + x.ancla + '">'
-         + '<span class="hit">' + resaltar(x.t, aguja) + '</span>'
+         + '<span class="hit">'
+         + (x.prosa ? fragmento(x.t, aguja) : resaltar(x.t, aguja)) + '</span>'
          + '<span class="donde">' + esc(x.donde) + '</span></a>';
     });
     if (hits.length > TOPE)
@@ -1392,8 +1449,10 @@ const VERSION_DATE = '2026-09-01';
     const actual = PANELES.find(p => !document.getElementById('p-' + p.id).hidden);
     pintados = new Set();
     tip.hidden = true;
+    INDICE = null;          // la prosa indexada es la del otro idioma
     pintarPestanas(); pintarIndice(); pintarTextos();
     mostrar(actual ? actual.id : 'introduccion');
+    if ((caja.value || '').trim()) buscar();
   });
 
   pintarPestanas();
