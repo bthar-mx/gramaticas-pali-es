@@ -641,6 +641,19 @@ const VERSION_DATE = '2026-09-01';
       + 'cada operación, y <b>{paradigmas} paradigmas</b> de conjugación.',
     pestanas: {introduccion:'Introducción', inflexiones:'Inflexiones',
                formacion:'Formación', paradigmas:'Paradigmas'},
+    /* Qué hay en cada pestaña. El rótulo solo no lo dice, y son cuatro
+       cosas distintas. Si no está en inglés, ui() devuelve el español:
+       ingles.json lo firma el IEBH y no se rellena aquí. */
+    ayuda: {
+      introduccion: 'Qué es el verbo pāḷi: sus características, los tiempos, '
+        + 'las personas, las voces y los ocho grupos de raíces.',
+      inflexiones: 'Las ocho inflexiones, con su tabla de terminaciones y el '
+        + 'uso de cada una.',
+      formacion: 'De la raíz a la forma acabada, paso a paso, con el aforismo '
+        + 'de Kaccāyana que ampara cada operación.',
+      paradigmas: 'Los paradigmas de conjugación completos, verbo por verbo y '
+        + 'tiempo por tiempo.'
+    },
     cabeceras: {paso:'paso', operaciones:'operaciones gramaticales',
                 autoridad:'autoridad', explicacion:'explicación'},
     titulos: {caracteristicas:'Características del verbo',
@@ -1224,8 +1237,9 @@ const VERSION_DATE = '2026-09-01';
   function pintarPestanas(){
     barra.innerHTML = PANELES.map(p =>
       '<button type="button" role="tab" id="t-' + p.id + '" data-panel="' + p.id + '"'
-      + ' aria-controls="p-' + p.id + '" aria-selected="false">'
-      + esc(ui('pestanas', p.id))
+      + ' aria-controls="p-' + p.id + '" aria-selected="false"'
+      + ' data-tip="' + esc(ui('ayuda', p.id)) + '"'
+      + '>' + esc(ui('pestanas', p.id))
       + (p.cuenta ? '<span class="cuenta">' + p.cuenta + '</span>' : '')
       + '</button>').join('');
   }
@@ -1382,8 +1396,44 @@ const VERSION_DATE = '2026-09-01';
       + '<time datetime="' + VERSION_DATE + '">' + largo + '</time>. ' + esc(nota);
   }
   document.addEventListener('click', ev => {
-    if (!tip.hidden && !ev.target.closest('#tip') && !ev.target.closest('#vbadge'))
+    if (!tip.hidden && !ev.target.closest('#tip') && !ev.target.closest('#vbadge')
+        && !ev.target.closest('[data-tip]'))
       tip.hidden = true;
+  });
+
+  /* ---------- globo de las pestañas ----------
+     Reaprovecha el #tip de la insignia. Con ratón se abre al pasar; con el
+     dedo, al tocar, porque en táctil no hay hover y el primer toque ya
+     cambia de pestaña: por eso se enseña y se va solo. */
+  function globo(el){
+    const t = el.getAttribute('data-tip');
+    if (!t) return;
+    tip.innerHTML = '<b>' + esc(el.textContent.replace(/\s*\d+\s*$/, '').trim())
+                  + '</b> — ' + esc(t);
+    tip.hidden = false;
+    const r = el.getBoundingClientRect();
+    tip.style.top = (r.bottom + 8) + 'px';
+    tip.style.left = Math.max(8, Math.min(r.left, window.innerWidth - 500)) + 'px';
+  }
+  const conRaton = () => window.matchMedia
+    && window.matchMedia('(hover: hover)').matches;
+  document.addEventListener('mouseover', ev => {
+    const el = ev.target.closest('.pestanas [data-tip]');
+    if (el && conRaton()) globo(el);
+  });
+  document.addEventListener('mouseout', ev => {
+    if (ev.target.closest('.pestanas [data-tip]') && conRaton()) tip.hidden = true;
+  });
+  document.addEventListener('focusin', ev => {
+    const el = ev.target.closest('.pestanas [data-tip]');
+    if (el) globo(el);
+  });
+  document.addEventListener('focusout', ev => {
+    if (ev.target.closest('.pestanas [data-tip]')) tip.hidden = true;
+  });
+  document.addEventListener('click', ev => {
+    const el = ev.target.closest('.pestanas [data-tip]');
+    if (el && !conRaton()){ globo(el); setTimeout(() => { tip.hidden = true; }, 2600); }
   });
 
   /* ---------- textos ---------- */
