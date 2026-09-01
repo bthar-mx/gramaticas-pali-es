@@ -367,6 +367,40 @@ function jumpKanda(k) {
 }
 
 // Caja «ir a §…» / filtro por título pāḷi.
+// ─── Plegado de diacríticos para buscar ──────────────────────────
+// Las dos cajas de esta página —el buscador de suttas y el filtro del
+// índice— comparaban el texto tal cual, de modo que «pali» no encontraba
+// «pāḷi», ni «byanjane» a «byañjane», ni «elision» a «elisión». Y los
+// diacríticos pāḷi no se teclean en un teclado corriente, que es
+// justamente cuando hace falta buscar. El resto del sitio ya los ignora.
+var PLIEGA = {'ā':'a','ī':'i','ū':'u','ṃ':'m','ṁ':'m','ñ':'n','ṭ':'t','ḍ':'d',
+              'ṇ':'n','ḷ':'l','ṅ':'n','ṣ':'s','ś':'s','ṛ':'r','ṝ':'r','ḥ':'h',
+              'á':'a','é':'e','í':'i','ó':'o','ú':'u','ü':'u','ô':'o','ý':'y'};
+function plegar(s) {
+  return (s || '').toLowerCase()
+    .replace(/[āīūṃṁñṭḍṇḷṅṣśṛṝḥáéíóúüôý]/g, function(c) { return PLIEGA[c]; })
+    .replace(/[’'‘"“”\u00ab\u00bb.,;:()\[\]§+=¿?—–-]/g, '')
+    .replace(/\s+/g, ' ').trim();
+}
+// El texto plegado de un elemento se calcula una vez y se guarda: en el
+// Nāma son 219 suttas largos y rehacerlo en cada tecla se nota.
+function textoBuscable(el) {
+  if (el._plegado === undefined || el._plegadoDe !== el.textContent.length) {
+    el._plegado = plegar(el.textContent);
+    el._plegadoDe = el.textContent.length;
+  }
+  return el._plegado;
+}
+// Varias palabras: han de estar todas, en cualquier orden.
+function casan(texto, q) {
+  var t = plegar(q).split(' ').filter(Boolean);
+  if (!t.length) return true;
+  for (var i = 0; i < t.length; i++) {
+    if (texto.indexOf(t[i]) < 0) return false;
+  }
+  return true;
+}
+
 function filterToc(q) {
   q = q.trim().toLowerCase();
   var esNum = /^§?\s*\d+$/.test(q);
@@ -383,7 +417,7 @@ function filterToc(q) {
   grupos.forEach(function(g) {
     var hay = false;
     g.querySelectorAll('.toc-item').forEach(function(el) {
-      var ok = el.textContent.toLowerCase().indexOf(q) >= 0;
+      var ok = casan(textoBuscable(el), q);
       el.classList.toggle('toc-hidden', !ok);
       if (ok) hay = true;
     });
@@ -472,7 +506,7 @@ function doSearch(q) {
   var count = 0;
   q = q.trim().toLowerCase();
   cards.forEach(function(card) {
-    if (!q || card.textContent.toLowerCase().indexOf(q) >= 0) {
+    if (!q || casan(textoBuscable(card), q)) {
       card.classList.remove('search-hidden');
       count++;
     } else {
