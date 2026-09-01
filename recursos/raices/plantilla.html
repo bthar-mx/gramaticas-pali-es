@@ -185,6 +185,7 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .tabs button:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 .tabs button span{font-family:var(--serif);font-size:12px;letter-spacing:0;
   text-transform:none;opacity:.75;margin-left:6px}
+.tabs button[data-tip]{cursor:pointer}
 
 /* ---------- letra ---------- */
 .letra{margin:34px 0 2px;display:flex;align-items:baseline;gap:12px;
@@ -498,10 +499,10 @@ footer a{color:var(--nila)}
 
 <div class="wrap">
   <div class="tabs" role="tablist">
-    <button role="tab" id="tab-raices" aria-selected="true" data-tab="raices">Raíces <span id="n-raices"></span></button>
-    <button role="tab" id="tab-significados" aria-selected="false" data-tab="significados">Significados <span id="n-significados"></span></button>
-    <button role="tab" id="tab-dhatupatha" aria-selected="false" data-tab="dhatupatha">Dhātupāṭha <span id="n-dhatupatha"></span></button>
-    <button role="tab" id="tab-dhatumanjusa" aria-selected="false" data-tab="dhatumanjusa">Dhātumañjūsā <span id="n-dhatumanjusa"></span></button>
+    <button role="tab" id="tab-raices" aria-selected="true" data-tab="raices" data-tip="Raíces del Saddanīti|Las 1.698 raíces de la Dhātumālā del Saddanīti, cotejadas por el Ven. U Sīlānanda con las del Pāṇinīya-dhātupāṭha. Es la obra principal de esta página.">Raíces <span id="n-raices"></span></button>
+    <button role="tab" id="tab-significados" aria-selected="false" data-tab="significados" data-tip="Del sentido a la raíz|El índice inverso de la misma obra: 776 significados, y bajo cada uno las raíces que lo expresan. Para cuando se sabe el sentido y se busca la raíz.">Significados <span id="n-significados"></span></button>
+    <button role="tab" id="tab-dhatupatha" aria-selected="false" data-tab="dhatupatha" data-tip="Dhātupāṭha pāḷi|Otra obra: las 639 raíces del Dhātupāṭha en la edición de Andersen y Smith (1921), con sus notas críticas. Su numeración de grupos no es la del Saddanīti.">Dhātupāṭha <span id="n-dhatupatha"></span></button>
+    <button role="tab" id="tab-dhatumanjusa" aria-selected="false" data-tab="dhatumanjusa" data-tip="Dhātumañjūsā|La misma lista de raíces puesta en verso: 154 estrofas en śloka, atribuidas a Sīlavaṃsa. Va como texto, porque en el verso la raíz y su significado están encajados en el metro.">Dhātumañjūsā <span id="n-dhatumanjusa"></span></button>
   </div>
 </div>
 
