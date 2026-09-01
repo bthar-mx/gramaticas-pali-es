@@ -347,25 +347,28 @@
     display:block;font-size:.9rem;color:var(--ink-soft);
     margin:.25rem 0 0;max-width:78ch;
   }
-  /* Los sub-ítems van NUMERADOS, no con topos: el documento se refiere a
+  /* Los sub-ítems van NUMERADOS, no con topos. La clase se llama «subitems»
+     y no «sub» porque «.sub» ya es el subtítulo pequeño en versalitas de esta
+     misma página: llamarla igual ponía toda la lista en mayúsculas y en
+     monoespaciada. El documento se refiere a
      ellos por su número —«4-5 se denominan tiempos no especificados»— y con
      viñetas esa nota no dice nada. Las columnas se llenan hacia abajo y
      luego a la derecha, que es el orden en que se leen. */
-  .caracteristicas ol.sub{
+  .caracteristicas ol.subitems{
     margin:.4rem 0 0;padding-left:1.5rem;
     list-style:decimal;
     columns:2;column-gap:2.2rem;
   }
-  .caracteristicas ol.sub li{
+  .caracteristicas ol.subitems li{
     font-size:.92rem;color:var(--ink-soft);margin:.1rem 0;
     break-inside:avoid;
   }
-  .caracteristicas ol.sub li::marker{
+  .caracteristicas ol.subitems li::marker{
     color:var(--ochre);font-family:"IBM Plex Mono",ui-monospace,monospace;
     font-size:.72em;
   }
-  .caracteristicas ol.sub.larga{columns:1;}
-  @media (max-width:44rem){ .caracteristicas ol.sub{columns:1;} }
+  .caracteristicas ol.subitems.larga{columns:1;}
+  @media (max-width:44rem){ .caracteristicas ol.subitems{columns:1;} }
 
   td.exp{font-size:.87rem;color:var(--ink-soft);line-height:1.55;}
   td.exp ul{margin:0;padding-left:1.1rem;}
@@ -791,7 +794,7 @@ const VERSION_DATE = '2026-09-01';
       if (it.sub && it.sub.length){
         /* los grupos de raíces son líneas largas: a una columna */
         const larga = it.sub.some(x => x.length > 46);
-        h += '<ol class="sub' + (larga ? ' larga' : '') + '">'
+        h += '<ol class="subitems' + (larga ? ' larga' : '') + '">'
            + it.sub.map(x => '<li>' + esc(tr('intro', x)) + '</li>').join('')
            + '</ol>';
       }
