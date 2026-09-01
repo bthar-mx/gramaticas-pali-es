@@ -90,6 +90,13 @@ RECURSOS = [
      "La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz "
      "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "
      "paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa."),
+    ("verbo/", "__VERBO_BADGE__", "El verbo — ākhyāta",
+     "Las ocho inflexiones del verbo pāḷi y los ocho grupos de raíces, la "
+     "derivación paso a paso de cada forma con el aforismo que la ampara —en "
+     "el par Kaccāyana/Rūpasiddhi—, y los paradigmas de conjugación en las "
+     "tres voces. Del documento <i>Verbo</i> de Bhikkhu Nandisena y de sus "
+     "presentaciones de clase; los paradigmas de <i>otros paradigmas</i>, del "
+     "<i>Higher Pali Course</i> del Ven. Buddhadatta Thera."),
     ("paradigmas/", "__PARADIGMAS_BADGE__", "Paradigmas de declinación",
      "Los 83 paradigmas de declinación nominal y pronominal de la lengua "
      "pāḷi, con "
@@ -348,6 +355,20 @@ def indice_kaccayana(pub):
              '  Fuentes y concordancia:\n  {0}.').format(FUENTES))
 
 
+def cuenta_verbo():
+    """(escaleras, paradigmas) de la página del verbo, si ya está armada."""
+    import json
+    ruta = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
+    if not os.path.exists(ruta):
+        return None
+    try:
+        datos = json.load(open(ruta, encoding="utf-8"))
+        from escaleras_verbo import escaleras
+        return len(escaleras()), len(datos["paradigmas"])
+    except Exception:
+        return None
+
+
 def indice_recursos():
     conteo = formas_sandhi()
     badge = "{0} reglas · {1} formas".format(*conteo) if conteo else "sandhi"
@@ -367,11 +388,15 @@ def indice_recursos():
             badge_rai += " · {0} estrofas".format(n_rai[3])
     else:
         badge_rai = "raíces"
+    n_ver = cuenta_verbo()
+    badge_ver = ("{0} derivaciones · {1} paradigmas".format(*n_ver)
+                 if n_ver else "verbo")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
-                 "__RAICES_BADGE__": badge_rai}
+                 "__RAICES_BADGE__": badge_rai, "__VERBO_BADGE__": badge_ver}
     tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc)
                 for href, ins, titulo, desc in RECURSOS
-                if ins != "__RAICES_BADGE__" or n_rai]
+                if (ins != "__RAICES_BADGE__" or n_rai)
+                and (ins != "__VERBO_BADGE__" or n_ver)]
 
     externas = [tarjeta(href, ins, titulo, desc, externo=True)
                 for href, ins, titulo, desc in CORPUS]

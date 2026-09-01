@@ -68,6 +68,14 @@ def main():
     if os.path.exists(os.path.join(recursos, "nombre", "plantilla.html")):
         fallos += correr("generar_nombre.py")
 
+    # el verbo · ākhyāta
+    # El cotejo del inglés se rehace siempre: es lo que Angel firma, y si el
+    # español cambia tiene que verse en el acto qué se queda sin traducir.
+    if os.path.exists(os.path.join(recursos, "verbo", "plantilla.html")):
+        if os.path.exists(os.path.join(recursos, "verbo", "ingles.json")):
+            fallos += correr("generar_ingles_verbo.py")
+        fallos += correr("generar_verbo.py")
+
     # solucionador de sandhis
     # El léxico fragmentado (20 MB) sólo se rehace si el corpus cambió: en
     # cada commit sería medio minuto para escribir lo mismo byte a byte.

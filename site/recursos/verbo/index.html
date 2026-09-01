@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="El verbo pāḷi (ākhyāta): las ocho inflexiones, los ocho grupos de raíces, veintiuna derivaciones paso a paso con el aforismo que ampara cada una, y ciento cinco paradigmas de conjugación.">
+<meta name="version" content="1.0">
+<meta name="version-date" content="2026-09-01">
+<title>El verbo · ākhyāta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1&amp;family=Spectral:ital,wght@0,300;0,400;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+  /* ---------- tokens: claro (hoja de palma) ---------- */
+  :root{
+    --ground:#E9EBE4; --card:#F4F5F0; --ink:#1D2430; --ink-soft:#5C6572;
+    --rule:#C9CDC1; --rule-soft:#DCDFD6; --ochre:#A9660D; --ochre-wash:#F0E4CE;
+    --hover:rgba(255,255,255,.55); --btn-bg:transparent;
+    --aside:#E1E4DA; --sombra:rgba(0,0,0,.13);
+  }
+  :root[data-theme="dark"]{
+    --ground:#171B16; --card:#20251E; --ink:#E8EADF; --ink-soft:#9AA394;
+    --rule:#3B4237; --rule-soft:#2A2F27; --ochre:#DFA23A;
+    --ochre-wash:rgba(223,162,58,.20); --hover:rgba(255,255,255,.035);
+    --btn-bg:transparent; --aside:#1D2219; --sombra:rgba(0,0,0,.45);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#171B16; --card:#20251E; --ink:#E8EADF; --ink-soft:#9AA394;
+      --rule:#3B4237; --rule-soft:#2A2F27; --ochre:#DFA23A;
+      --ochre-wash:rgba(223,162,58,.20); --hover:rgba(255,255,255,.035);
+      --aside:#1D2219; --sombra:rgba(0,0,0,.45);
+    }
+  }
+
+  /* ---------- marca del IEBH ---------- */
+  .marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
+    background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+  :root[data-theme="dark"] .marca-arbol{
+    background-image:url(../../assets/iebh-arbol-blanco.svg)}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .marca-arbol{
+      background-image:url(../../assets/iebh-arbol-blanco.svg)}
+  }
+  .eyebrow-iebh{display:flex;align-items:center;gap:9px;margin:0 0 .35rem}
+  .marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
+    background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
+  :root[data-theme="dark"] .marca-lockup{
+    background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .marca-lockup{
+      background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--ink);
+    font-family:"Spectral",Georgia,serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    transition:background-color .25s ease,color .25s ease;
+  }
+
+  /* La página entera no desborda nunca en horizontal: lo ancho scrollea
+     dentro de su propio contenedor. */
+  body{overflow-x:hidden;}
+
+  /* ---------- pāḷi ----------
+     Fraunces no lleva las combinadas del pāḷi y compone «ākhyāta» con el
+     macron descolocado. Todo lo que sea pāḷi va en Gentium Book Plus, que
+     sí las tiene, aquí y en los encabezados. */
+  .pali{font-family:"Gentium Book Plus",Georgia,serif;
+        font-variation-settings:normal;letter-spacing:0;}
+
+  /* ---------- barra lateral ---------- */
+  .sidebar{
+    position:fixed;left:0;top:0;bottom:0;width:238px;z-index:60;
+    overflow-y:auto;background:var(--aside);
+    border-right:1px solid var(--rule);padding:52px 0 40px;
+    transition:transform .22s ease;
+  }
+  body.sin-indice .sidebar{transform:translateX(-100%);}
+  .sb-close{
+    position:absolute;top:12px;left:12px;background:transparent;
+    border:1px solid var(--rule);border-radius:2px;color:var(--ink-soft);
+    font-size:.85rem;line-height:1;padding:.4rem .55rem;cursor:pointer;
+  }
+  .sb-close:hover{color:var(--ink);border-color:var(--ink-soft);}
+  .sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--rule);
+    margin-bottom:6px;}
+  .sb-brand b{display:block;font-size:1.15rem;letter-spacing:-.01em;
+    margin-bottom:3px;}
+  .sb-brand .lbl{
+    display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-soft);line-height:1.6;
+  }
+  .sb-sec>summary{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.61rem;font-weight:600;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--ochre);
+    padding:.7rem 18px .6rem;cursor:pointer;list-style:none;
+  }
+  .sb-sec>summary::-webkit-details-marker{display:none;}
+  .sb-sec>summary::after{content:' ▸';font-size:.55rem;opacity:.75;}
+  .sb-sec[open]>summary::after{content:' ▾';}
+  .sb-sec>summary:hover{background:var(--hover);}
+  .sb-sec[open]{padding-bottom:8px;}
+  .sidebar a{
+    display:block;padding:.32rem 18px .32rem 26px;
+    font-size:.85rem;color:var(--ink-soft);text-decoration:none;
+    border-left:2px solid transparent;
+  }
+  .sidebar a:hover{background:var(--hover);color:var(--ink);}
+  .sidebar a.on{color:var(--ochre);border-left-color:var(--ochre);}
+  .sidebar a .cnt{opacity:.55;font-size:.75em;margin-left:.35em;}
+
+  .sheet{
+    max-width:66rem;margin:0 auto;
+    padding:clamp(1.25rem,4vw,3.5rem) clamp(1rem,4vw,2.5rem);
+  }
+  .marco{margin-left:238px;transition:margin-left .22s ease;}
+  body.sin-indice .marco{margin-left:0;}
+
+  .volver-sitio{
+    display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;color:var(--ink-soft);text-decoration:none;
+    margin-bottom:1.1rem;opacity:.85;
+  }
+  .volver-sitio:hover{color:var(--ochre);opacity:1;}
+
+  header{display:flex;align-items:flex-start;justify-content:space-between;
+    gap:1.5rem;flex-wrap:wrap;}
+
+  .eyebrow{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.7rem;font-weight:500;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--ochre);margin:0 0 1.1rem;
+  }
+
+  h1{
+    font-family:"Fraunces","Spectral",Georgia,serif;
+    font-variation-settings:"SOFT" 40,"WONK" 1,"opsz" 100;
+    font-weight:600;font-size:clamp(1.9rem,5.4vw,3.3rem);
+    line-height:1.05;letter-spacing:-.015em;margin:0;max-width:24ch;
+  }
+  h1 em{font-style:normal;color:var(--ochre);}
+
+  .controles{display:flex;flex-wrap:wrap;gap:.5rem;align-items:flex-start;}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:.45rem;
+    padding:.5rem .8rem;background:var(--btn-bg);color:var(--ink-soft);
+    border:1px solid var(--rule);border-radius:2px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;
+    cursor:pointer;text-decoration:none;
+    transition:color .2s ease,border-color .2s ease;
+  }
+  .btn:hover{color:var(--ink);border-color:var(--ink-soft);}
+  .btn:focus-visible{outline:2px solid var(--ochre);outline-offset:2px;}
+  .btn .dot{
+    width:.5rem;height:.5rem;border-radius:50%;border:1px solid currentColor;
+    background:linear-gradient(to right,currentColor 50%,transparent 50%);
+  }
+  .btn[aria-pressed="true"]{color:var(--ochre);border-color:var(--ochre);}
+
+  /* insignia de versión, con su nota */
+  #vbadge{cursor:help;gap:.5rem;}
+  #vbadge time{opacity:.62;letter-spacing:.06em;}
+
+  .tip{
+    position:fixed;z-index:90;max-width:30rem;
+    background:var(--card);color:var(--ink);
+    border:1px solid var(--rule);border-radius:2px;
+    box-shadow:0 6px 24px var(--sombra);
+    padding:.85rem 1rem;font-size:.84rem;line-height:1.55;
+  }
+  .tip[hidden]{display:none;}
+
+  .aviso-ingles{
+    border-left:2px solid var(--ochre);padding-left:.9rem;
+    font-size:.83rem;color:var(--ink-soft);margin:1.2rem 0 0;max-width:64ch;
+  }
+
+  .entradilla{
+    margin:clamp(1.4rem,3.5vw,2rem) 0 0;
+    font-size:1.02rem;color:var(--ink-soft);max-width:62ch;
+  }
+  .entradilla b{color:var(--ink);font-weight:600;}
+
+  /* ---------- pestañas ---------- */
+  .pestanas{
+    display:flex;flex-wrap:wrap;
+    margin:clamp(1.6rem,3.5vw,2.2rem) 0 0;
+    border-bottom:1px solid var(--ink);
+  }
+  .pestanas button{
+    appearance:none;background:transparent;border:0;
+    border-bottom:2px solid transparent;margin-bottom:-1px;
+    padding:.7rem 1.05rem;cursor:pointer;color:var(--ink-soft);
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
+  }
+  .pestanas button:hover{color:var(--ink);}
+  .pestanas button[aria-selected="true"]{color:var(--ochre);
+    border-bottom-color:var(--ochre);}
+  .pestanas .cuenta{opacity:.6;margin-left:.4em;}
+
+  .panel{padding-top:clamp(1.4rem,3.5vw,2.2rem);}
+  .panel[hidden]{display:none;}
+
+  h2{
+    font-family:"Fraunces","Spectral",Georgia,serif;
+    font-variation-settings:"SOFT" 40,"WONK" 1;
+    font-weight:600;font-size:1.45rem;line-height:1.18;
+    margin:2.4rem 0 .3rem;letter-spacing:-.01em;scroll-margin-top:1.5rem;
+  }
+  h2:first-child{margin-top:0;}
+
+  .sub{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--ink-soft);margin:0 0 1.1rem;
+  }
+
+  /* el nombre pāḷi de la vibhatti, junto al título castellano */
+  h2 .vibhatti{color:var(--ochre);font-weight:400;font-size:.82em;
+    font-family:"Gentium Book Plus",Georgia,serif;
+    font-variation-settings:normal;letter-spacing:0;}
+
+  .nota-inf{
+    font-size:.85rem;font-style:italic;color:var(--ink-soft);
+    margin:.15rem 0 1rem;
+  }
+
+  /* ---------- tablas ---------- */
+  .envoltura{overflow-x:auto;margin:0 0 2.2rem;-webkit-overflow-scrolling:touch;}
+
+  table{width:100%;border-collapse:collapse;font-size:.94rem;}
+
+  thead th{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.62rem;font-weight:500;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--ink-soft);text-align:left;
+    padding:0 .8rem .65rem;border-bottom:1px solid var(--ink);
+    white-space:nowrap;vertical-align:bottom;
+  }
+  thead th.n,thead th.ref{text-align:right;}
+
+  tbody tr{border-bottom:1px solid var(--rule-soft);}
+  tbody tr:hover{background:var(--hover);}
+  tbody td{padding:.8rem;vertical-align:top;}
+  tbody th{padding:.8rem;text-align:left;font-weight:400;
+    color:var(--ink-soft);font-size:.86rem;vertical-align:top;
+    white-space:nowrap;}
+
+  td.n,th.n{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.76rem;font-variant-numeric:tabular-nums;color:var(--ink-soft);
+    text-align:right;width:2.6rem;white-space:nowrap;
+  }
+
+  .forma{font-family:"Gentium Book Plus",Georgia,serif;font-size:1.06rem;}
+  td.forma{white-space:nowrap;}
+  .forma.destacada{color:var(--ochre);font-weight:700;}
+
+  td.exp{font-size:.87rem;color:var(--ink-soft);line-height:1.55;}
+  td.exp ul{margin:0;padding-left:1.1rem;}
+  td.exp li{margin:.15rem 0;}
+
+  td.ref,th.ref{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.74rem;color:var(--ink-soft);text-align:right;
+    white-space:nowrap;line-height:1.5;
+  }
+
+  a.xref{color:var(--ochre);text-decoration:none;
+    border-bottom:1px solid transparent;}
+  a.xref:hover{border-bottom-color:var(--ochre);}
+  .xref-pend{border-bottom:1px dotted var(--rule);cursor:help;}
+  .ru{opacity:.6;}
+
+  /* ---------- escaleras ---------- */
+  .escalera{
+    background:var(--card);border-top:2px solid var(--ink);
+    border-bottom:1px solid var(--rule);
+    padding:clamp(1rem,2.5vw,1.4rem);margin:0 0 1.5rem;
+    scroll-margin-top:1.5rem;
+  }
+  .escalera > header{
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1rem;
+    margin:0 0 1rem;
+  }
+  .escalera .lema{
+    font-family:"Gentium Book Plus",Georgia,serif;
+    font-size:1.4rem;font-weight:700;line-height:1.1;
+  }
+  .escalera .lema .raiz{color:var(--ochre);font-weight:400;margin-right:.1em;}
+  .escalera .glosa{font-style:italic;color:var(--ink-soft);font-size:.92rem;}
+  .escalera .flecha{color:var(--rule);}
+  .escalera .final{
+    font-family:"Gentium Book Plus",Georgia,serif;
+    font-size:1.4rem;font-weight:700;color:var(--ochre);line-height:1.1;
+  }
+  .escalera .procedencia{
+    margin-left:auto;font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.61rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-soft);text-align:right;
+  }
+  .escalera .queforma{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-soft);margin:-.5rem 0 1rem;
+  }
+
+  tr.propuesta{background:var(--ochre-wash);}
+  .marca-propuesta{
+    display:inline-block;margin-left:.45em;color:var(--ochre);cursor:help;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.62em;
+    letter-spacing:.1em;text-transform:uppercase;vertical-align:.15em;
+  }
+  .marca-corregida{margin-left:.3em;color:var(--ochre);cursor:help;}
+
+  .leyenda{
+    font-size:.84rem;color:var(--ink-soft);
+    border-left:2px solid var(--rule);padding-left:.9rem;margin:0 0 2rem;
+    max-width:66ch;
+  }
+  .leyenda b{color:var(--ink);font-weight:600;}
+
+  /* ---------- paradigmas ----------
+     Las tablas son anchas —cuatro columnas y formas con variantes— así que
+     cada tarjeta scrollea por su cuenta y la rejilla no baja de 27rem. */
+  .rejilla{
+    display:grid;gap:1.3rem;
+    grid-template-columns:repeat(auto-fit,minmax(27rem,1fr));
+    margin:0 0 2.4rem;
+  }
+  .paradigma{
+    background:var(--card);border-top:1px solid var(--ink);
+    padding:1rem 1.1rem 1.15rem;min-width:0;
+  }
+  .paradigma h3{
+    margin:0 0 .1rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.62rem;font-weight:500;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-soft);
+  }
+  .paradigma .tiempo{
+    font-family:"Gentium Book Plus",Georgia,serif;font-size:1.05rem;
+    color:var(--ochre);margin:0 0 .7rem;
+  }
+  .paradigma .envoltura{margin:0;}
+  .paradigma table{font-size:.9rem;}
+  .paradigma tbody td{padding:.38rem .55rem;white-space:nowrap;}
+  .paradigma tbody th{padding:.38rem .3rem .38rem 0;font-size:.7rem;}
+  .paradigma thead th{padding:0 .55rem .45rem;font-size:.54rem;
+    letter-spacing:.1em;}
+
+  .grupo-entrada{
+    font-family:"Gentium Book Plus",Georgia,serif;
+    font-weight:700;font-size:1.35rem;margin:2.4rem 0 .2rem;
+    scroll-margin-top:1.5rem;
+  }
+  .grupo-entrada:first-of-type{margin-top:0;}
+  .grupo-obra{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-soft);margin:0 0 1.1rem;
+  }
+
+  /* ---------- pie ---------- */
+  footer{margin-top:3.2rem;padding-top:1.5rem;border-top:1px solid var(--rule);}
+  footer p{font-size:.86rem;color:var(--ink-soft);max-width:66ch;}
+  .licencia{font-size:.8rem;line-height:1.65;}
+  .licencia a{color:var(--ochre);}
+  .vfoot{font-size:.8rem;}
+  .colofon{
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-soft);margin:1.5rem 0 0;
+  }
+
+  #top-btn{
+    position:fixed;right:1.1rem;bottom:1.1rem;z-index:70;
+    background:var(--card);
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;scroll-behavior:auto!important;}
+  }
+
+  @media print{
+    .sidebar,.controles,.volver-sitio,.pestanas,#top-btn{display:none!important;}
+    .marco{margin-left:0;}
+    .panel[hidden]{display:block!important;}
+    .escalera,.paradigma{break-inside:avoid;}
+  }
+
+  @media (max-width:64rem){
+    .sidebar{transform:translateX(-100%);box-shadow:0 0 40px var(--sombra);}
+    body.con-indice .sidebar{transform:none;}
+    .marco{margin-left:0;}
+  }
+
+  @media (max-width:34rem){
+    .escalera .procedencia{margin-left:0;text-align:left;width:100%;}
+    .rejilla{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<script>/* Tema guardado (clave compartida con el resto del sitio), antes de pintar. */
+try{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.documentElement.setAttribute('data-theme','dark');
+else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
+
+<aside class="sidebar" id="sidebar">
+  <button class="sb-close" id="sbclose" type="button" aria-label="Ocultar el índice">☰</button>
+  <div class="sb-brand">
+    <b id="sb-titulo">El verbo</b>
+    <span class="lbl" id="sb-sub">ākhyāta · Kaccāyana vi</span>
+  </div>
+  <nav id="sbnav"></nav>
+</aside>
+
+<div class="marco">
+<main class="sheet">
+
+  <a class="volver-sitio" href="../" id="volver">← Recursos · Gramáticas Pāḷi</a>
+
+  <header>
+    <div>
+      <div class="eyebrow-iebh"><span class="marca-arbol"></span><p class="eyebrow" id="eyebrow" style="margin:0">Kaccāyana · capítulo vi</p></div>
+      <h1 id="h1"></h1>
+    </div>
+    <div class="controles">
+      <button class="btn" type="button" id="burger" aria-pressed="true">☰&nbsp;<span id="burgerLabel">Índice</span></button>
+      <button class="btn" type="button" id="vbadge"></button>
+      <button class="btn" type="button" id="langToggle"><span id="langLabel">English</span></button>
+      <button class="btn" type="button" id="themeToggle" aria-pressed="false">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="themeLabel">Modo oscuro</span>
+      </button>
+    </div>
+  </header>
+
+  <p class="entradilla" id="entradilla"></p>
+  <p class="aviso-ingles" id="aviso-ingles" hidden></p>
+
+  <div class="pestanas" role="tablist" id="pestanas"></div>
+
+  <section class="panel" id="p-introduccion" role="tabpanel" hidden></section>
+  <section class="panel" id="p-inflexiones" role="tabpanel" hidden></section>
+  <section class="panel" id="p-formacion" role="tabpanel" hidden></section>
+  <section class="panel" id="p-paradigmas" role="tabpanel" hidden></section>
+
+  <footer>
+    <p id="pie-fuente"></p>
+    <p class="vfoot" id="vfoot"></p>
+    <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
+    Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
+    Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.</p>
+
+    <p class="colofon">
+      <span id="colofon-obra">El verbo · ākhyāta</span>
+      <span>Kaccāyana-vyākaraṇa · v1.0 · 2026-09-01</span>
+    </p>
+  </footer>
+
+</main>
+</div>
+
+<button class="btn" type="button" id="top-btn" aria-label="Volver arriba">↑</button>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const DATA = {"fuente":{"titulo":"Verbo (ākhyāta)","autor":"Bhikkhu Nandisena","basado_en":"Rū. pp. 256-33 y Sad. iii pp. 267-311","otros_paradigmas":"The Higher Pali Course for Advanced Students, Ven. Buddhadatta Thera, The Colombo Apothecaries' Co., Ltd., Colombo, Sri Lanka, 1951","revision_original":"2013-04-07","publicacion_iebh":"20130407-BN-T0021","referencias":"Kaccāyana cap. vi; Rūpasiddhi cap. vi; Saddanīti-Suttamālā xv, 811-844"},"usos":[["#","inflexiones verbales  / (ākhyāta vibhatti)","usos"],["1","Presente  / (vattamānā)","Acción en el presente (paccuppanna) / Pasado (atīta); cerca del presente (paccuppanna-samīpe) / Verdades universales"],["2","Imperativo  / (pañcamī)","Orden (āṇatti) / Bendición, deseo (āsiṭṭha) / Indicación de lo que se debería hacer (vidhi) / Invitación (nimantana) / Solicitud (ajjhesanā) / Consentimiento, permiso (anumati) / Aspiración (patthanā) / Tiempo oportuno o adecuado (pattakāla)"],["3","Potencial  / (sattamī)","Consentimiento (anumati) / Suposición (parikappa) / Indicación de lo que se debería hacer (vidhi) / Invitación (nimantana),  / Solicitud, permiso (ajjhesanā) / Aspiración (patthanā) / Tiempo oportuno o adecuado (pattakāla)"],["4","Imperfecto  / (hiyyattanī)","El pasado directamente experimentado (paccakkha)  / El pasado no directamente experimentado (appaccakkha). El pasado expresado por este tiempo verbal es partir de ayer hacia atrás, por esto el nombre hiyyattanī."],["5","Perfecto  / (parokkhā)","Es el pasado indefinido; éste se utiliza para referirse a una acción que no ha sido experimentada por medio de los sentidos (appaccakkha)."],["6","Aoristo  / (ajjatanī)","El pasado directamente experimentado (paccakkha)  / El pasado que no ha sido experimentado directamente (appaccakkha). El pasado expresado por este tiempo verbal es partir de hoy día hacia atrás; de aquí el nombre ajjatanī."],["7","Futuro  / (bhavissantī)","Futuro (anāgata) / Pasado (atīta)"],["8","Condicional  / (kālātipatti)","La no ocurrencia de una acción debido a deficiencia de causas (kāraṇavekalla)  / La no ocurrencia de una acción debido a la existencia de condiciones que impiden su realización"]],"voces":[["#","voces (kāraka)","explicación"],["1","Activa  / (kattu)","el signo de conjugación se inserta entre la raíz y la inflexión verbal.  / utiliza ambos grupos de inflexiones: 1) voz para otra; voz activa o transitiva (parassapada), 2) voz para sí misma, voz media o reflexiva (attanopada)."],["2","Pasiva  / (kamma)","el sufijo ‘ya’ se inserta entre la raíz y la inflexión verbal.  / el signo de conjugación no se inserta entre la raíz y la inflexión verbal. / utiliza ambos grupos de inflexiones: 1) voz para otra; voz activa o transitiva (parassapada), 2) voz para sí misma, voz media o reflexiva (attanopada)"],["3","Impersonal  / (bhāva)","el sufijo ‘ya’ se inserta entre la raíz y la inflexión verbal. / el signo de conjugación no se inserta entre la raíz y la inflexión verbal. / esta voz indica el significado puro de la raíz, es decir: “la acción”. / se conjuga solamente en la primera persona singular."]],"inflexiones":[{"titulo":"presente indicativo","pali":"vattamānā","nota":"","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","ti","anti","te","ante"],["2a (majjhima)","si","tha","se","vhe"],["1a (uttama)","mi","ma","e","mhe"]]},{"titulo":"imperativo","pali":"pañcamī","nota":"","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","tu","antu","taṃ","antaṃ"],["2a (majjhima)","hi","tha","ssu","vho"],["1a (uttama)","mi","ma","e","āmase"]]},{"titulo":"potencial","pali":"sattamī","nota":"","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","eyya","eyyuṃ","etha","eraṃ"],["2a (majjhima)","eyyāsi","eyyātha","etho","eyyāvho"],["1a (uttama)","eyyāmi","eyyāma","eyyaṃ","eyyāmhe"]]},{"titulo":"imperfecto","pali":"hiyyattanī","nota":"inserción de ‘a’ es opcional","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","ā","ū","ttha","tthuṃ"],["2a (majjhima)","o","ttha","se","vhaṃ"],["1a (uttama)","aṃ","mhā","iṃ","mhase"]]},{"titulo":"perfecto","pali":"parokkhā","nota":"","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","a","u","ttha","re"],["2a (majjhima)","e","ttha","tho","vho"],["1a (uttama)","aṃ","mha","iṃ","mhe"]]},{"titulo":"aoristo","pali":"ajjatanī","nota":"inserción de ‘a’ es opcional","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","ī","uṃ","ā","ū"],["2a (majjhima)","o","ttha","se","vhaṃ"],["1a (uttama)","iṃ","mhā","a","mhe"]]},{"titulo":"futuro","pali":"bhavissantī","nota":"","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","ssati","ssanti","ssate","ssante"],["2a (majjhima)","ssasi","ssatha","ssase","ssavhe"],["1a (uttama)","ssāmi","ssāma","ssaṃ","ssāmhe"]]},{"titulo":"condicional","pali":"kālātipatti","nota":"inserción de ‘a’ es opcional","tabla":[["","parassapada","parassapada","attanopada","attanopada"],["persona / (purisa)","singular (ekavacana)","plural (bahuvacana)","singular (ekavacana)","plural (bahuvacana)"],["3a (paṭhama)","ssā","ssaṃsu","ssatha","ssisu"],["2a (majjhima)","sse","ssatha","ssase","ssavhe"],["1a (uttama)","ssaṃ","ssāmhā","ssiṃ","ssāmhase"]]}],"ganas":[["#","grupo / (gaṇa)","signo de conjugación / (vikaraṇa)","explicación"],["1","Grupo que comienza con la raíz “bhū” / (bhūvādi-gaṇa)","a","El signo de conjugación ‘a’ se utiliza solamente en la voz activa (kattu) y únicamente después de las conjugaciones denominadas  sabbadhātuka. / El signo de conjugación ‘a’ se inserta entre la raíz y la inflexión verbal.  / Hay alargamiento (vuddhi) de la primera vocal de la raíz (solamente i → ī; u → ū) cuando ésta no va seguida por una consonante doble.  / Hay cuatro sub-grupos:  (i) savuddhika-bhūvādi, donde hay alargamiento cuando éste es posible y la letra ‘a’ no se elide;  (ii) tudādi, donde no hay alargamiento; (iii) hūvādi, donde hay alargamiento cuando éste es posible y también la letra ‘a’ se elide; (iv) juhotyādi, donde hay duplicación de la primera sílaba de la raíz y elisión del signo de conjugación ‘a’."],["2","Grupo que comienza con la raíz “rudhi” / (rudhādi-gaṇa)","ṃ-a, i, ī, e, o","‘a, i, ī, e, o’ se utilizan solamente en la voz activa. / ‘a, i, ī, e, o’ se insertan entre la raíz y la inflexión verbal. / ‘ṃ’ se inserta después de la primera vocal de la raíz."],["3","Grupo que comienza con la raíz “divu” / (divādi-gaṇa)","ya","‘ya’ se utiliza solamente en la voz activa. / ‘ya’ se inserta entre la raíz y la inflexión verbal. / si la primera vocal de la raíz es  ‘i, ī; u, ū’, no hay alargamiento."],["4","Grupo que comienza con la raíz “su”  / (svādi-gaṇa)","ṇu, ṇā, uṇā","‘ṇu, ṇā,uṇā’ se utilizan solamente en la voz activa. / ‘ṇu, ṇā,uṇā’ se insertan entre la raíz y la inflexión verbal. / ‘ṇu’ se convierte en ‘ṇo’. / cuando se utilizan ‘ṇu’ y ‘ṇā‘  no hay alargamiento (i → ī; u → ū)."],["5","Grupo que comienza con la raíz “kī” / (kiyādi-gaṇa)","nā","después de kī y otras raíces se utiliza ‘nā’ y solamente en la voz activa. / ‘nā, ppa, ṇhā’ se insertan entre la raíz y la inflexión verbal. / cuando se utiliza ‘nā’ no hay alargamiento."],["6","Grupo que comienza con la raíz “gaha”  / (gahādi-gaṇa)","ppa, ṇhā",""],["7","Grupo que comienza con la raíz “tanu” / (tanādi-gaṇa)","o, yira","‘o, yira’ se utilizan solamente en la voz activa. / ‘o, yira’ se insertan entre la raíz y la inflexión verbal. / no hay alargamiento."],["8","Grupo que comienza con la raíz “cura” / (curādi-gaṇa)","ṇe, ṇaya","‘ṇe, ṇaya’ se utilizan solamente en la voz activa. / ‘ṇ’ es un signo que indica fortalecimiento de la primera vocal de la raíz; éste se elide. / ‘e, aya’ se insertan entre la raíz y la inflexión verbal. / hay alargamiento de la primera vocal de la raíz cuando ésta no va seguida por una consonante doble."]],"escaleras":[{"lema":"bhū","glosa":"ser/estar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"bhavati","procedencia":"diapositiva","presentacion":"GP-T - Verbo-I","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"bhū","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"bhū","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal presente indicativo","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"bhū","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":445,"ru":433,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"bho","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":485,"ru":434,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"fortalecer vocal ‘ū’","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"bhava","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":513,"ru":435,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"sustituir ‘o’ por ‘ava’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"bhav","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":83,"ru":67,"href":"../../kaccayana/nama/#s83","titulo":"2-Nāma-Kappa · §83"}],"operacion":"elidir vocal final de ‘bhava’","nota":""},{"n":7,"origen":"diapositiva","prefijo":"","raiz":"bhav","signo":"a","inflexion":"ti","resultado":"bhavati","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"paca","glosa":"cocinar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"pacati","procedencia":"diapositiva","presentacion":"GP-T - Verbo-I","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"paca","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":445,"ru":433,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"","signo":"","inflexion":"","resultado":"pacati","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"gamu","glosa":"ir","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"gacchati","procedencia":"documento","presentacion":"","correcciones":0,"pasos":[{"n":1,"origen":"documento","prefijo":"","raiz":"gamu","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"segun_documento":"424","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":2,"origen":"propuesta","prefijo":"","raiz":"gam","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"segun_documento":"425","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":"El documento no imprime esta forma intermedia: funde esta operación con la siguiente en una sola fila. Se deduce de la regla citada, no de una regla nueva."},{"n":3,"origen":"documento","prefijo":"","raiz":"gam","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"segun_documento":"428","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":4,"origen":"documento","prefijo":"","raiz":"gacch","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":476,"ru":442,"segun_documento":"442","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":5,"origen":"documento","prefijo":"","raiz":"gacch","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":445,"ru":433,"segun_documento":"433","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":6,"origen":"documento","prefijo":"","raiz":"gacch","signo":"a","inflexion":"ti","resultado":"gacchati","autoridades":[{"kacc":11,"ru":14,"segun_documento":"11","mezcla":true,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"tuda","glosa":"oprimir","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"tudati","procedencia":"documento","presentacion":"","correcciones":0,"pasos":[{"n":1,"origen":"documento","prefijo":"","raiz":"tuda","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"segun_documento":"424","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":2,"origen":"propuesta","prefijo":"","raiz":"tud","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"segun_documento":"425","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":"El documento no imprime esta forma intermedia: funde esta operación con la siguiente en una sola fila. Se deduce de la regla citada, no de una regla nueva."},{"n":3,"origen":"documento","prefijo":"","raiz":"tud","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"segun_documento":"428","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":4,"origen":"documento","prefijo":"","raiz":"tud","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":445,"ru":433,"segun_documento":"433","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":5,"origen":"documento","prefijo":"","raiz":"tud","signo":"a","inflexion":"ti","resultado":"tudati","autoridades":[{"kacc":11,"ru":14,"segun_documento":"11","mezcla":true,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"hū","glosa":"ser/estar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"hoti","procedencia":"documento","presentacion":"","correcciones":0,"pasos":[{"n":1,"origen":"documento","prefijo":"","raiz":"hū","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"segun_documento":"424","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":2,"origen":"documento","prefijo":"","raiz":"hū","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"segun_documento":"428","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":3,"origen":"documento","prefijo":"","raiz":"hū","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":445,"ru":433,"segun_documento":"433","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":4,"origen":"documento","prefijo":"","raiz":"hū","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":510,"ru":487,"segun_documento":"487","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":5,"origen":"documento","prefijo":"","raiz":"ho","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":485,"ru":434,"segun_documento":"434","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":6,"origen":"documento","prefijo":"","raiz":"ho","signo":"","inflexion":"ti","resultado":"hoti","autoridades":[{"kacc":11,"ru":14,"segun_documento":"11","mezcla":true,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"hu","glosa":"sacrificar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"juhoti","procedencia":"documento","presentacion":"","correcciones":0,"pasos":[{"n":1,"origen":"documento","prefijo":"","raiz":"hu","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"segun_documento":"424","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":2,"origen":"documento","prefijo":"","raiz":"hu","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"segun_documento":"428","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":3,"origen":"documento","prefijo":"","raiz":"hu","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":445,"ru":433,"segun_documento":"433","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":4,"origen":"documento","prefijo":"hu","raiz":"hu","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":458,"ru":461,"segun_documento":"461","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."},{"kacc":2,"ru":2,"segun_documento":"2","href":"../../kaccayana/sandhi/#s2","titulo":"1-Sandhi-Kappa · §2"}],"operacion":"","nota":""},{"n":5,"origen":"documento","prefijo":"ju","raiz":"hu","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":464,"ru":504,"segun_documento":"504","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":6,"origen":"propuesta","prefijo":"ju","raiz":"hu","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":510,"ru":487,"segun_documento":"487","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":"El documento no imprime esta forma intermedia: funde esta operación con la siguiente en una sola fila. Se deduce de la regla citada, no de una regla nueva."},{"n":7,"origen":"documento","prefijo":"ju","raiz":"ho","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":485,"ru":434,"segun_documento":"434","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":8,"origen":"documento","prefijo":"ju","raiz":"ho","signo":"","inflexion":"ti","resultado":"juhoti","autoridades":[{"kacc":11,"ru":14,"segun_documento":"11","mezcla":true,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"rudhi","glosa":"obstruir","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"rundhati","procedencia":"diapositiva","presentacion":"GP-T - Verbo-X","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"rudhi","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"rudh","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"rudh","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"ruṃdh","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":446,"ru":509,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"rundh","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":31,"ru":49,"href":"../../kaccayana/sandhi/#s31","titulo":"1-Sandhi-Kappa · §31"}],"operacion":"sustituir ‘ṃ’ por ’n’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"rundh","signo":"a","inflexion":"ti","resultado":"rundhati","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"divu","glosa":"jugar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"dibbati","procedencia":"diapositiva","presentacion":"GP-T - Verbo-X","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"divu","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"div","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"div","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"div","signo":"ya","inflexion":"ti","resultado":"","autoridades":[{"kacc":447,"ru":510,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"div","signo":"ya","inflexion":"ti","resultado":"","autoridades":[{"kacc":444,"ru":511,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir ‘y’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"divv","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":28,"ru":40,"href":"../../kaccayana/sandhi/#s28","titulo":"1-Sandhi-Kappa · §28"}],"operacion":"duplicar ‘v’","nota":""},{"n":7,"origen":"diapositiva","prefijo":"","raiz":"dibb","signo":"a","inflexion":"ti","resultado":"","autoridades":[{"kacc":20,"ru":27,"href":"../../kaccayana/sandhi/#s20","titulo":"1-Sandhi-Kappa · §20"}],"operacion":"sustituir ‘v’ por ‘b’","nota":""},{"n":8,"origen":"diapositiva","prefijo":"","raiz":"dibba","signo":"a","inflexion":"ti","resultado":"dibbati","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"su","glosa":"oir/escuchar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"suṇoti","procedencia":"documento","presentacion":"","correcciones":0,"pasos":[{"n":1,"origen":"documento","prefijo":"","raiz":"su","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"segun_documento":"424","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":2,"origen":"documento","prefijo":"","raiz":"su","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"segun_documento":"428","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":3,"origen":"documento","prefijo":"","raiz":"su","signo":"ṇu","inflexion":"ti","resultado":"","autoridades":[{"kacc":448,"ru":512,"segun_documento":"512","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":4,"origen":"documento","prefijo":"","raiz":"su","signo":"ṇo","inflexion":"ti","resultado":"","autoridades":[{"kacc":485,"ru":434,"segun_documento":"434","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":5,"origen":"documento","prefijo":"","raiz":"su","signo":"ṇo","inflexion":"ti","resultado":"suṇoti","autoridades":[{"kacc":11,"ru":14,"segun_documento":"11","mezcla":true,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"su","glosa":"oir/escuchar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"suṇāti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-X","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"su","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"su","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"su","signo":"ṇā","inflexion":"ti","resultado":"","autoridades":[{"kacc":448,"ru":512,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"su","signo":"ṇa","inflexion":"ti","resultado":"suṇāti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"vi-kī","glosa":"vender","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"vikkiṇāti","procedencia":"documento","presentacion":"","correcciones":0,"pasos":[{"n":1,"origen":"documento","prefijo":"vi","raiz":"kī","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"segun_documento":"424","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":2,"origen":"documento","prefijo":"vi","raiz":"kī","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"segun_documento":"428","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":3,"origen":"documento","prefijo":"vi","raiz":"kī","signo":"nā","inflexion":"ti","resultado":"","autoridades":[{"kacc":449,"ru":513,"segun_documento":"513","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":4,"origen":"documento","prefijo":"vi","raiz":"ki","signo":"nā","inflexion":"ti","resultado":"","autoridades":[{"kacc":517,"ru":488,"segun_documento":"488","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":5,"origen":"documento","prefijo":"vi","raiz":"kki","signo":"nā","inflexion":"ti","resultado":"","autoridades":[{"kacc":20,"ru":27,"segun_documento":"27","href":"../../kaccayana/sandhi/#s20","titulo":"1-Sandhi-Kappa · §20"}],"operacion":"","nota":""},{"n":6,"origen":"documento","prefijo":"vi","raiz":"kki","signo":"ṇā","inflexion":"ti","resultado":"","autoridades":[{"kacc":449,"ru":513,"segun_documento":"513","titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"","nota":""},{"n":7,"origen":"documento","prefijo":"vi","raiz":"kki","signo":"ṇā","inflexion":"ti","resultado":"vikkiṇāti","autoridades":[{"kacc":11,"ru":14,"segun_documento":"11","mezcla":true,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"tanu","glosa":"extender","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"tanoti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-XI","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"tanu","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"tan","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"tan","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"tan","signo":"o","inflexion":"ti","resultado":"","autoridades":[{"kacc":451,"ru":520,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"tan","signo":"o","inflexion":"ti","resultado":"tanoti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"cura","glosa":"robar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"coreti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-XII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"cura","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"ṇe","inflexion":"ti","resultado":"","autoridades":[{"kacc":452,"ru":525,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"ṇe","inflexion":"ti","resultado":"","autoridades":[{"kacc":523,"ru":526,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir ‘ṇ’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"cor","signo":"e","inflexion":"ti","resultado":"","autoridades":[{"kacc":483,"ru":527,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"fortalecer la vocal de la raíz","nota":""},{"n":7,"origen":"diapositiva","prefijo":"","raiz":"cor","signo":"e","inflexion":"ti","resultado":"coreti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"cura","glosa":"robar","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"corayati","procedencia":"diapositiva","presentacion":"GP-T - Verbo-XII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"cura","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"ṇaya","inflexion":"ti","resultado":"","autoridades":[{"kacc":452,"ru":525,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"cur","signo":"ṇaya","inflexion":"ti","resultado":"","autoridades":[{"kacc":523,"ru":526,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir ‘ṇ’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"cor","signo":"aya","inflexion":"ti","resultado":"","autoridades":[{"kacc":483,"ru":527,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"fortalecer la vocal de la raíz","nota":""},{"n":7,"origen":"diapositiva","prefijo":"","raiz":"cor","signo":"aya","inflexion":"ti","resultado":"corayati","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"anu-bhū","glosa":"experimentando","formacion":"Formación: voz pasiva, presente indicativo, tercera persona singular","resultado":"anu-bhūyate","procedencia":"diapositiva","presentacion":"GP-T - Verbo-VII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"anu-bhū","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"anu-bhū","signo":"","inflexion":"te","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal presente indicativo","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"anu-bhū","signo":"ya","inflexion":"te","resultado":"","autoridades":[{"kacc":440,"ru":445,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar el sufijo ‘ya’","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"anu-bhū","signo":"ya","inflexion":"te","resultado":"anu-bhūyate","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"paca","glosa":"cocinando","formacion":"Formación: voz pasiva presente indicativo, tercera persona singular","resultado":"paccate","procedencia":"diapositiva","presentacion":"GP-T - Verbo-VII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"paca","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"","inflexion":"te","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"ya","inflexion":"te","resultado":"","autoridades":[{"kacc":440,"ru":445,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar el sufijo ‘ya’","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"pacca","signo":"","inflexion":"te","resultado":"","autoridades":[{"kacc":441,"ru":447,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"asimilación de ‘ya’ con ‘c’ - cya = cca","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"pacca","signo":"","inflexion":"te","resultado":"paccate","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"bhū","glosa":"existiendo/estando","formacion":"Formación: causativo, voz activa, presente indicativo, tercera persona singular","resultado":"bhāvayati bhāveti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-VIII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"bhū","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"bhū","signo":"ṇe/ṇaya","inflexion":"","resultado":"","autoridades":[{"kacc":438,"ru":540,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar sufijos causativos y asignar nombre “kārita”","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"bhū","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":523,"ru":526,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir ‘ṇ’","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"bho","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":483,"ru":527,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"fortalecer vocal ‘ū’","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"bhāva","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":515,"ru":541,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"sustituir ‘o’ por ‘āva’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"bhāv","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":12,"ru":13,"href":"../../kaccayana/sandhi/#s12","titulo":"1-Sandhi-Kappa · §12"}],"operacion":"elidir vocal final","nota":""},{"n":7,"origen":"diapositiva","prefijo":"","raiz":"bhāv","signo":"e/aya","inflexion":"ti","resultado":"","autoridades":[{"kacc":455,"ru":530,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal","nota":""},{"n":8,"origen":"diapositiva","prefijo":"","raiz":"bhāv","signo":"e/aya","inflexion":"ti","resultado":"bhāvayati bhāveti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo causativo","nota":""}]},{"lema":"bhū","glosa":"existiendo/estando","formacion":"Formación: causativo, voz pasiva, presente indicativo, tercera persona singular","resultado":"bhāvīyate","procedencia":"diapositiva","presentacion":"GP-T - Verbo-VIII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"bhū","raiz":"","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"bhū","raiz":"","signo":"ṇe/ṇaya","inflexion":"","resultado":"","autoridades":[{"kacc":438,"ru":540,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar sufijos causativos y asignar nombre “kārita”","nota":""},{"n":3,"origen":"diapositiva","prefijo":"bhū","raiz":"","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":523,"ru":526,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir ‘ṇ’","nota":""},{"n":4,"origen":"diapositiva","prefijo":"bho","raiz":"","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":483,"ru":527,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"fortalecer vocal ‘ū’","nota":""},{"n":5,"origen":"diapositiva","prefijo":"bhāva","raiz":"","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":515,"ru":541,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"sustituir ‘o’ por ‘āva’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"bhāv","raiz":"","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":12,"ru":13,"href":"../../kaccayana/sandhi/#s12","titulo":"1-Sandhi-Kappa · §12"}],"operacion":"elidir vocal final","nota":""},{"n":7,"origen":"diapositiva","prefijo":"bhāv","raiz":"ya","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":440,"ru":445,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar sufijo ‘ya’","nota":""},{"n":8,"origen":"diapositiva","prefijo":"bhāv","raiz":"i ya","signo":"e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":442,"ru":448,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"insertar ‘i’","nota":""},{"n":9,"origen":"diapositiva","prefijo":"bhāv","raiz":"i ya","signo":"e/aya","inflexion":"ti","resultado":"","autoridades":[{"kacc":455,"ru":530,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal","nota":""},{"n":10,"origen":"diapositiva","prefijo":"bhāv","raiz":"","signo":"e/aya","inflexion":"ti","resultado":"bhāvīyate","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo causativo","nota":""}]},{"lema":"paca","glosa":"cocinando","formacion":"Formación: causativo, presente indicativo, tercera persona singular","resultado":"pācāpayati pācāpeti pācayati pāceti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-VIII","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"paca","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"ṇāpe/ṇāpaya ṇe/ṇaya","inflexion":"","resultado":"","autoridades":[{"kacc":438,"ru":540,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar sufijos causativos y asignar nombre “kārita”","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"pac","signo":"āpe/āpaya e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":523,"ru":526,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir ‘ṇ’","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"pāc","signo":"āpe/āpaya e/aya","inflexion":"","resultado":"","autoridades":[{"kacc":483,"ru":527,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"fortalecer la vocal","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"pāc","signo":"āpe/āpaya e/aya","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":7,"origen":"diapositiva","prefijo":"","raiz":"pāc","signo":"āpe/āpaya e/aya","inflexion":"ti","resultado":"pācāpayati pācāpeti pācayati pāceti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo causativo","nota":""}]},{"lema":"kī","glosa":"intercambio/comerciando","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"kiṇāti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-XI","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"kī","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"kī","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"kī","signo":"nā","inflexion":"ti","resultado":"","autoridades":[{"kacc":449,"ru":513,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"ki","signo":"nā","inflexion":"ti","resultado":"","autoridades":[{"kacc":517,"ru":488,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"se acorta la vocal de la raíz","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"ki","signo":"ṇā","inflexion":"ti","resultado":"","autoridades":[{"kacc":449,"ru":513,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"se sustituye ’n’ por ‘ṇ’","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"ki","signo":"ṇā","inflexion":"ti","resultado":"kiṇāti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]},{"lema":"gaha","glosa":"agarrando","formacion":"Formación: presente indicativo, tercera persona singular","resultado":"gaṇhāti","procedencia":"diapositiva","presentacion":"GP-T - Verbo-XI","pasos":[{"n":1,"origen":"diapositiva","prefijo":"","raiz":"gaha","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":457,"ru":424,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar la raíz","nota":""},{"n":2,"origen":"diapositiva","prefijo":"","raiz":"gah","signo":"","inflexion":"","resultado":"","autoridades":[{"kacc":521,"ru":425,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"elidir la vocal final","nota":""},{"n":3,"origen":"diapositiva","prefijo":"","raiz":"gaha","signo":"","inflexion":"ti","resultado":"","autoridades":[{"kacc":414,"ru":428,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar inflexión verbal, presente indicativo","nota":""},{"n":4,"origen":"diapositiva","prefijo":"","raiz":"gaha","signo":"ṇhā","inflexion":"ti","resultado":"","autoridades":[{"kacc":450,"ru":517,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"colocar signo de conjugación","nota":""},{"n":5,"origen":"diapositiva","prefijo":"","raiz":"ga","signo":"ṇhā","inflexion":"ti","resultado":"","autoridades":[{"kacc":490,"ru":518,"titulo":"El Ākhyāta-kappa no está publicado todavía; la referencia se enlazará sola cuando lo esté."}],"operacion":"se elide ‘ha’ de la raíz","nota":""},{"n":6,"origen":"diapositiva","prefijo":"","raiz":"ga","signo":"ṇhā","inflexion":"ti","resultado":"gaṇhāti","autoridades":[{"kacc":11,"ru":14,"href":"../../kaccayana/sandhi/#s11","titulo":"1-Sandhi-Kappa · §11"}],"operacion":"formar el verbo","nota":""}]}],"paradigmas":[{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhavati","bhavanti","bhavate","bhavante"]},{"persona":"2a","formas":["bhavasi","bhavatha","bhavase","bhavavhe"]},{"persona":"1a","formas":["bhavāmi","bhavāma","bhave","bhavāmhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhavatu","bhavantu","bhavataṃ","bhavantaṃ"]},{"persona":"2a","formas":["bhavāhi / bhava","bhavatha","bhavassu","bhavavho"]},{"persona":"1a","formas":["bhavāmi","bhavāma","bhave","bhavāmase"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhaveyya bhave","bhaveyyuṃ","bhavetha","bhaveraṃ"]},{"persona":"2a","formas":["bhaveyyāssi bhave","bhaveyyātha","bhavetho","bhaveyyāvho"]},{"persona":"1a","formas":["bhaveyyāmibhave","bhaveyyāma bhavemu","bhaveyyaṃ bhave","bhaveyyāmhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["abhavā / bhavā","abhavū  bhavū","abhavattha bhavattha","abhavatthuṃ / bhavatthuṃ"]},{"persona":"2a","formas":["abhavo bhavo abhava bhava","abhavattha bhavattha","abhavase bhavase","abhavavhaṃ bhavavhaṃ"]},{"persona":"1a","formas":["abhavaṃ bhavaṃ","abhavamhā bhavamhā","abhaviṃ bhaviṃ","abhavamhase bhavamhase"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"perfecto","tiempo_pali":"parokkhā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["babhūva","babhūvu","babhūvittha","babhūvire"]},{"persona":"2a","formas":["babhūve","babhūvittha","babhūvittho","babhūvivho"]},{"persona":"1a","formas":["babhūvaṃ","babhūvimha","babhūviṃ","babhūvimhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["abhavī bhavī / abhavi bhavi","abhavuṃ bhavuṃ abhaviṃsu bhaviṃsu","abhavā bhavā abhavittha bhavittha","abhavū bhavū"]},{"persona":"2a","formas":["abhavo / bhavo / abhavi / bhavi","abhavittha / bhavittha","abhavise bhavise","abhavivhaṃ / bhavivhaṃ"]},{"persona":"1a","formas":["abhaviṃ / bhaviṃ","abhavimhā bhavimhā abhavimha bhavimha","abhava bhava abhavaṃ bhavaṃ","abhavimhe bhavimhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhavissati","bhavissanti","bhavissate","bhavissante"]},{"persona":"2a","formas":["bhavissasi","bhavissatha","bhavissase","bhavissavhe"]},{"persona":"1a","formas":["bhavissāmi","bhavissāma","bhavissaṃ","bhavissāmhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1a-bhū (ser/estar)","voz":"voz activa","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["abhavissā / bhavissā abhavissa / bhavissa","abhavissaṃsu bhavissaṃsu","abhavissathabhavissatha","abhavissisu / bhavissisu"]},{"persona":"2a","formas":["abhavisse / bhavisse abhavissa bhavissa","abhavissatha bhavissatha","abhavissasebhavissase","abhavissavhe / bhavissavhe"]},{"persona":"1a","formas":["abhavissaṃ bhavissaṃ","abhavissāmhābhavissāmhā,abhavissāmha bhavissāmha","abhavissiṃ bhavissiṃ","abhavissāmhase bhavissāmhase"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"presente","tiempo_pali":"vattamānā","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anubhūyate / anubhūyyate","anubhūyante / anubhūyyante","anubhūyati / anubhūyyati","anubhūyanti / anubhūyyanti"]},{"persona":"2a","formas":["anubhūyase anubhūyyase","anubhūyavhe anubhūyyavhe","anubhūyasi anubhūyyasi","anubhūyatha anubhūyyatha"]},{"persona":"1a","formas":["anubhūye / anubhūyye","anubhūyāmhe / anubhūyyāmhe","anubhūyāmi anubhūyyāmi","anubhūyāma anubhūyyāma"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anubhūyataṃ","anubhūyantaṃ","anubhūyatu anubhūyyatu","anubhūyantu anubhūyyantu"]},{"persona":"2a","formas":["anubhūyassu","anubhūyavho","anubhūyāhi anubhūyyāhi anubhūya anubhūyya","anubhūyatha anubhūyyatha"]},{"persona":"1a","formas":["anubhūye","anubhūyāmase","anubhūyāmi / anubhūyyāmi","anubhūyāma anubhūyyāma"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"potencial","tiempo_pali":"sattamī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anubhūyetha","anubhūyeraṃ","anubhūyeyya","anubhūyeyyuṃ"]},{"persona":"2a","formas":["anubhūyetho","anubhūyeyyāvho","anubhūyeyyāsi","anubhūyeyyatha"]},{"persona":"1a","formas":["anubhūye anubhūyeyyaṃ","anubhūyeyyāmhe","anubhūyeyyāmi","anubhūyeyyāma"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anvabhūyattha anubhūyattha anvabhūyatha anubhūyatha","anvabhūyatthuṃ / anubhūyatthuṃ","anvabhūyā anubhūyā","anvabhūyū / anubhūyū"]},{"persona":"2a","formas":["anvabhūyase anubhūyase","anvabhūyavhaṃ / anubhūyavhaṃ","anvabhūyo anubhūyo","anvabhūyattha anubhūyattha"]},{"persona":"1a","formas":["anvabhūyiṃ anubhūyiṃ","anvabhūyamhase, / anubhūyamhase","anvabhūyaṃ anubhūyaṃ","anvabhūyamhā anubhūyamhā"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"perfecto","tiempo_pali":"parokkhā","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anubabhūvīyittha anubabhūvittha","anubabhūvīyire anubabhūvire","anubabhūvīya / anubabhīva","anubabhūvīyu anubabhūvu"]},{"persona":"2a","formas":["anubabhūvīyitho anubabhūvitho","anubabhūvīyivhoanubabhūvivho","anubhabhūvīye anubabhūve","anubabhūvīyittha anubabhūvittha"]},{"persona":"1a","formas":["anubabhūvīyiṃ, anubabhūviṃ","anubabhūvīyimhe anubabhūvimhe","anubabhūvīyaṃanubabhūvaṃ","anubabhūvīyimha anubabhūvimha"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anvabhūyittha anubhūyittha anvabhavittha anubhavittha anvabhūyā anubhūyā","anvabhūyū anubhūyū / anvabhavū anubhavū","anvabhūyi anubhūyi anvabhūyī anubhūyī","anvabhūyiṃsu anubhūyiṃsu anvabhūyuṃ anubhūyuṃ"]},{"persona":"2a","formas":["anvabhūyise anubhūyise anvabhavise anubhavise","anvabhūyivhaṃ anubhūyivhaṃ anvabhavihaṃ anubhavivhaṃ","anvabhūyi anubhūyi anvabhūyo anubhūyo","anvabhūyittha anubhūyittha"]},{"persona":"1a","formas":["anvabhūya anubhūya anvabhūyaṃ anubhūyaṃ anvabhava anubhava anvabhavaṃ anubhavaṃ","anvabhūyimhe anubhuyimhe anvabhavimhe anubhavimhe","anvabhūyiṃ anubhūyiṃ","anvabhūyimhā anubhūyimhā anvabhūyimha anubhūyimha"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anubhavissate anubhūyissate","anubhavissante anubhūyissante","anubhavissati anubhūyissati","anubhavissanti anubhūyissanti"]},{"persona":"2a","formas":["anubhavissase anubhūyissase","anubhavissavhe anubhūyissavhe","anubhavissasi anubhūyissasi","anubhavissatha anubhūyissatha"]},{"persona":"1a","formas":["anubhavissaṃ anubhūyissaṃ","anubhavissāmhe anubhūyissāmhe","anubhavissāmi, anubhūyissāmi","anubhavissāma anubhūyissāma"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1b-anu-bhū (experimentar)","voz":"voz pasiva","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["anvabhūyissatha anubhūyissatha anvabhavissatha anubhavissatha","anvabhūyissisu anubhūyissisu anvabhavissisu anubhavissisu","anvabhūyissā anubhūyissā anvabhūyissa anubhūyissa anvabhavissā anubhavissā anvabhavissa anubhavissa","anvabhūyissaṃsu anubhūyissaṃsu / anvabhavissaṃsu anubhavissaṃsu"]},{"persona":"2a","formas":["anvabhūyissase anubhūyissase anvabhavissase anubhavissase","anvabhūyissavheanubhūyissavhe anvabhavissavheanvubhavissavhe","anvabhūyisse anubhūyisse anvabhavisse anubhavisse","anvabhūyissatha anubhūyissatha anvabhavissatha anubhavissatha"]},{"persona":"1a","formas":["anvabhūyissiṃ anubhūyissiṃ anvabhavissiṃ anubhavissiṃ","anvabhūyissāmhe,anubhūyissāmhe / anvabhavissāmhe anubhavissāmhe","anvabhūyissaṃ anubhūyissaṃ anvabhavissaṃ anubhavissaṃ","anvabhūyissāmhā anubhūyissāmhā anvabhūyissāmha anubhūyissāmha anvabhavissāmhā anubhavissāmhā anvabhavissāmha anubhavissāmha"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"presente","tiempo_pali":"vattamānā","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhūyate","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhūyataṃ","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"potencial","tiempo_pali":"sattamī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhūyetha","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["anvabhūyattha anubhūyattha","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"perfecto","tiempo_pali":"parokkhā","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["babhūvīyittha babhūvittha","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["abhūyittha abhavittha","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["bhavissate  / bhūyissate","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"1c-bhū (ser/estar)","voz":"voz impersonal","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["attanopada","attanopada","parassapada","parassapada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["abhūyissatha abhavissatha","","",""]},{"persona":"2a","formas":["","","",""]},{"persona":"1a","formas":["","","",""]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["pacati","pacanti","pacate","pacante"]},{"persona":"2a","formas":["pacasi","pacatha","pacase","pacavhe"]},{"persona":"1a","formas":["pacāmi","pacāma","pace","pacāmhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["pacatu","pacantu","pacataṃ","pacantaṃ"]},{"persona":"2a","formas":["pacāhi, paca","pacatha","pacassu","pacavho"]},{"persona":"1a","formas":["pacāmi","pacāma","pace","pacāmase"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["paceyya pace","paceyyuṃ","pacetha","paceraṃ"]},{"persona":"2a","formas":["paceyyāsi pace","paceyyātha","pacetho","paceyyāvho"]},{"persona":"1a","formas":["paceyyāmi pace","paceyyāma","paceyyaṃ pace","paceyyāmhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["apacā / pacā","apacū / pacū","apacattha pacattha","apacatthuṃ pacatthuṃ"]},{"persona":"2a","formas":["apaco / paco","apacattha pacattha","apacase pacase","apacavhaṃ pacavhaṃ"]},{"persona":"1a","formas":["apacaṃ pacaṃ","apacamhā pacamhā","apaciṃ paciṃ","apacamhasepacamhase"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"perfecto","tiempo_pali":"parokkhā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["papaca","papacu","papacittha","papacire"]},{"persona":"2a","formas":["papace","papacittha","papacittho","papacivho"]},{"persona":"1a","formas":["papacaṃ","papacimha","papaciṃ","papacimhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["apacī / pacī / apaci / paci","apacuṃ pacuṃ apaciṃsu paciṃsu","apacā / pacā / apacittha pacittha","apacū / pacū"]},{"persona":"2a","formas":["apaco / paco / apaci / paci","apacittha pacittha","apacise pacise","apacivhaṃ pacivhaṃ"]},{"persona":"1a","formas":["apaciṃ paciṃ","apacimhā pacimhā apacimha pacimha","apaca, paca, apacaṃ, pacaṃ","apacimhe pacimhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["pacissati","pacissanti","pacissate","pacissante"]},{"persona":"2a","formas":["pacissasi","pacissatha","pacissase","pacissavhe"]},{"persona":"1a","formas":["pacissāmi","pacissāma","pacissaṃ","pacissāmhe"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"2a-paca (cocinar)","voz":"voz activa","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["apacissā / pacissā apacissa pacissa","apacissaṃsupacissaṃsu","apacissatha pacissatha","apacissisu pacissisu"]},{"persona":"2a","formas":["apacisse pacisse apacissa pacissa","apacissatha pacissatha","apacissase pacissase","apacissavhe / pacissavhe"]},{"persona":"1a","formas":["apacissaṃ paccisaṃ","apacissāmhāpacissāmhā / apacissāmhapacissāmha","apacissiṃ pacissiṃ","apacissāmhase pacissāmhase"]}],"seccion":"paradigmas de conjugación","obra":"Nandisena, «Verbo»"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["karoti / kubbati","karonti / kubbanti","kurute / kubbate","kubbante"]},{"persona":"2a","formas":["karosi / kubbasi","karotha / kubbatha","kuruse / kubbase","kuruvhe / kubbavhe"]},{"persona":"1a","formas":["karomi / kubbāmi","karoma / kubbāma","kare / kubbe","kurumhe / kubbamhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["karotu / kubbatu","karontu / kubbantu","kurutaṃ / kubbataṃ","kubbantaṃ"]},{"persona":"2a","formas":["karohi / kubbāhi","karotha / kubbatha","karassu / kurussu / kubbassu","kuruvho / kubbavho"]},{"persona":"1a","formas":["karomi / kubbāmi","karoma / kubbāma","kare / kubbe","karomase / kubbāmase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["kare / kareyya / kayirā / kubbe / kubbeyya","kareyyuṃ / kubbeyyuṃ / kayiruṃ","kayirā / kubbetha","kubberaṃ"]},{"persona":"2a","formas":["kareyyāsi / kubbeyyāsi","kareyyātha / kubbeyyātha","kubbetho","kubbeyyavho"]},{"persona":"1a","formas":["kareyyāmi kubbeyyāmi","kareyyeyyāma / kubbeyyāma","kare / kareyyaṃ / kubbeyyaṃ","kareyyāmhe / kubbeyyāmhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["akarā / akā","akarū","akattha","akatthuṃ"]},{"persona":"2a","formas":["akaro","akarattha akattha / akarotha","akuruse","akaravhaṃ"]},{"persona":"1a","formas":["akaraṃ akaṃ","akaramhā akamhā","akariṃ","akaramhase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["akarī / karī / akari / kari / akāsi","akāsuṃ akaṃsu akariṃsu kariṃsu","akarā / akarittha karittha","akarū"]},{"persona":"2a","formas":["akaro / akari / kari","akarittha akāsittha","akarise","akarivhaṃ"]},{"persona":"1a","formas":["akariṃ kariṃ","akarimhā karimhā akarimha karimha","akara","akarimhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["karissati / kāhati / kāhiti","karissanti / kāhanti / kāhinti","karissate / kāhate","karissante / kāhante"]},{"persona":"2a","formas":["karissasi / kāhasi / kāhisi","karissatha / kāhatha","karissase / kāhase","karissavhe / kāhavhe"]},{"persona":"1a","formas":["karissāmi / karissaṃ / kassaṃ / kāhāmi","karissāma / kassāma / kāhāma","karisse / kāhe","karissāmhe / kāhamhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"3-kara (hacer)","voz":"voz activa","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["akarissā / akarissa","akarissaṃsu","akarissatha","akarissiṃsu"]},{"persona":"2a","formas":["akarisse","akarissatha","akarissase","akarissavhe"]},{"persona":"1a","formas":["akarissaṃ","akarissamhā","akarissaṃ","akarissāmhase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["hoti","honti","",""]},{"persona":"2a","formas":["hosi","hotha","",""]},{"persona":"1a","formas":["homi","homa","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["hotu","hontu","",""]},{"persona":"2a","formas":["hohi","hotha","",""]},{"persona":"1a","formas":["homi","homa","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["huveyya heyya","huveyyuṃ / heyyuṃ","huvetha / hetha","huveraṃ / heraṃ"]},{"persona":"2a","formas":["huveyyāsi heyyāsi","huveyyātha / heyyātha","hetho / huvetho","huveyyavho / heyyavho"]},{"persona":"1a","formas":["huveyyāmi heyyāmi","huveyyāma / heyyāma","huveyyaṃ heyyaṃ","huveyyāmhe / heyyāmhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["ahuvā","ahuvū","ahuvattha","ahuvatthuṃ"]},{"persona":"2a","formas":["ahuvo","ahuvattha","ahuvase","ahuvavhaṃ"]},{"persona":"1a","formas":["ahuvaṃ","ahuvamhā","ahuviṃ","ahuvamhase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ahosi / ahu","ahesuṃ ahuṃ","ahuvā","ahuvū"]},{"persona":"2a","formas":["ahuvo / ahosi","ahuvattha / ahosittha","ahuvase","ahuvivhaṃ"]},{"persona":"1a","formas":["ahosiṃ ahuṃ / ahuvāsiṃ","ahumhā ahosimhā","ahuva / ahu","ahuvimhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["hessati / hehiti / hehissati / hohissati","hessanti / hehinti / hehissanti / hohinti","hessate / hehissate / hohissate","hessante / hehissante / hohissante"]},{"persona":"2a","formas":["hessasi / hehisi / hehissasi / hohissasi","hessatha / hehitha / hehissatha / hohissatha","hessase / hehissase / hohissase","hessavhe / hehissavhe / hohissavhe"]},{"persona":"1a","formas":["hessāmi / hehāmi / hehissāmi / hohissāmi","hessāma / hehāma / hehissāma / hohissāma","hessaṃ / hehissaṃ / hohissaṃ","hessāmhe / hehissāmhe / hohissāmhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"4-hū (ser/estar)","voz":"voz activa","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ahuvissā","ahuvissaṃsu","ahuvissatha","ahuvissiṃsu"]},{"persona":"2a","formas":["ahuvisse","ahuvissatha","ahuvissase","ahuvissavhe"]},{"persona":"1a","formas":["ahuvissaṃ","ahuvissamhā","ahuvissaṃ","ahuvissāmhase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"5-asa (ser/estar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["atthi","santi","",""]},{"persona":"2a","formas":["asi","attha","",""]},{"persona":"1a","formas":["amhi / asmi","amha / asma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"5-asa (ser/estar)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["atthu","santu","",""]},{"persona":"2a","formas":["āhi","attha","",""]},{"persona":"1a","formas":["amhi / asmi","amha / asma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"5-asa (ser/estar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["siyā / assa","siyuṃ / assu","",""]},{"persona":"2a","formas":["assa","assatha","",""]},{"persona":"1a","formas":["assāmi","assāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"5-asa (ser/estar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["āsi","āsiṃsu","",""]},{"persona":"2a","formas":["āsi","āsittha","",""]},{"persona":"1a","formas":["āsiṃ","āsimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"6-vada (decir)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["vadati / vadeti / vajjati","vadanti / vadenti / vajjanti","",""]},{"persona":"2a","formas":["vadasi / vadesi / vajjasi","vadatha / vadetha / vajjatha","",""]},{"persona":"1a","formas":["vadāmi / vademi / vajjemi","vadāma / vadema / vajjāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"6-vada (decir)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["vadatu / vadetu / vajjatu","vadantu / vadentu / vajjantu","",""]},{"persona":"2a","formas":["vada / vadāhi / vadehi / vajjāhi","vadatha / vadetha / vajjatha","",""]},{"persona":"1a","formas":["vadāmi / vademi / vajjāmi","vadāma / vadema / vajjāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"6-vada (decir)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["vade / vadeyya / vajje / vajjeyya","vadeyyuṃ / vajjeyyuṃ / vajjuṃ","",""]},{"persona":"2a","formas":["vadeyyāsi / vajjāsi","vadeyyātha / vajjātha","",""]},{"persona":"1a","formas":["vadeyyāmi / vajjāmi","vadeyyāma / vajjāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"6-vada (decir)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["avadi / vadi / avadittha / vadittha","avaduṃ / vaduṃ / avadiṃsu / vadiṃsu","",""]},{"persona":"2a","formas":["avado / vado / avadi / vadi","avadittha / vadittha","",""]},{"persona":"1a","formas":["avadiṃ / vadiṃ","avadimha / vadimha / avadimhā / vadimhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"7-vaca (decir/hablar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["avacā","avacū","avacuttha","avacatthuṃ"]},{"persona":"2a","formas":["avaco","avacuttha","avacase","avacavhaṃ"]},{"persona":"1a","formas":["avacaṃ","avacumhā","avaciṃ","avacāmhase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"7-vaca (decir/hablar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["avacī / avacāsi","avocuṃ / avaciṃsu","avoca","avocu"]},{"persona":"2a","formas":["avoco","avocuttha","avacase","avocivhaṃ"]},{"persona":"1a","formas":["avociṃ","avocumhā","avociṃ","avocimhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"7-vaca (decir/hablar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["vakkhati / vakkhissati","vakkhanti / vakkhissanti","vakkhate / vakkhissate","vakkhante / vakkhissante"]},{"persona":"2a","formas":["vakkhasi / vakkhissasi","vakkhatha / vakkhissatha","vakkhase / vakkhissase","vakkhavhe / vakkhissavhe"]},{"persona":"1a","formas":["vakkhāmi / vakkhissāmi","vakkhāma / vakkhissāma","vakkhaṃ / vakkhissaṃ","vakkhāmhe / vakkhissāmhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["dadāti / deti","dadanti / denti","",""]},{"persona":"2a","formas":["dadāsi / desi","dadātha / detha","",""]},{"persona":"1a","formas":["dadāmi / demi / dammi","dadāma / dema / damma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["dadātu / detu","dadantu / dentu","",""]},{"persona":"2a","formas":["dadāhi / dehi","dadātha / detha","",""]},{"persona":"1a","formas":["dadāmi / demi / dammi","dadāma / dema / damma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["dade / dadeyya / deyya / dajjā / dajjeyya","dadeyyuṃ / dajjeyyuṃ / deyyuṃ / dajjuṃ","dadetha / dajjetha","daderaṃ / dajjeraṃ"]},{"persona":"2a","formas":["dadeyyāsi / deyyāsi / dajjāsi / dajjeyyāsi","dadeyyātha / dajjeyyātha / deyyātha / dajjātha","dadetho / dajjetho","dadeyyavho / dajjavho"]},{"persona":"1a","formas":["dadeyyāmi dajjeyyāmi / dajjāmi","dadeyyāma / dajjeyyāma / dajjāma","dadeyyaṃ / dajjaṃ","dadeyyāmhe / dajjāmhe"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["adadā / adā","adadu / dadu","adadattha / adattha","adadatthuṃ / adatthuṃ"]},{"persona":"2a","formas":["adado / ado","adadattha adattha","adadase","adadavhaṃ"]},{"persona":"1a","formas":["adadaṃ adaṃ","adadamhā adamhā","adadiṃ","adadamhase"]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["adadi / dadi / adāsi","adadiṃsu / dadiṃsu / adaduṃ / daduṃ / adaṃsu","",""]},{"persona":"2a","formas":["adado / dado / adāsi","adadattha / adattha","",""]},{"persona":"1a","formas":["adadiṃ / dadiṃ / adāsiṃ","adadimha / adadimhā / dadimha / dadimhā / adamha / adāsimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["dadissati / dassati","dadissanti / dassanti","",""]},{"persona":"2a","formas":["dadissasi / dassasi","dadissatha / dassatha","",""]},{"persona":"1a","formas":["dadissāmi / dassāmi / dassaṃ","dasissāma / dassāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"8-dā (dar)","voz":"voz activa","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["adadissā / dadissā","adadissaṃsu / dadissaṃsu","",""]},{"persona":"2a","formas":["adadisse / dadisse","adadissatha / dadissatha","",""]},{"persona":"1a","formas":["adadissaṃ / dadissaṃ","adadissamhā / dadissamhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"9-disa (ver)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["passati / dakkhati","passanti / dakkhanti","",""]},{"persona":"2a","formas":["passasi / dakkhasi","passatha / dakkhatha","",""]},{"persona":"1a","formas":["passāmi / dakkhāmi","passāma / dakkhāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"9-disa (ver)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["addasā / addakkhā / apassā / adissā","addakkhu / addakkhuṃ / addasuṃ / apassuṃ","",""]},{"persona":"2a","formas":["addakkho / apasso","addakkhittha / apassittha","",""]},{"persona":"1a","formas":["addakkhaṃ / apassaṃ","addakkhamhā / apassamhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"9-disa (ver)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["apassi / passi / adakkhi / dakkhi / addakkhi / addasāsi","apassiṃsu / passiṃsu / adakkhiṃsu / dakkhiṃsu / addasaṃsu / addasuṃ","",""]},{"persona":"2a","formas":["addakkho / apassi / passi","apassittha / passittha / adakkhittha / dakkhittha","",""]},{"persona":"1a","formas":["apassiṃ / passiṃ / addakkhiṃ / dakkhiṃ / addasaṃ / addasāsiṃ","apassimha / passimha / adakkhimha / dakkhimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"9-disa (ver)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["passissati / dakkhiti / dakkhissati","passissanti / dakkhinti / dakkhissanti","",""]},{"persona":"2a","formas":["passissasi / dakkhisi / dakkhissasi","passissatha / dakkhissatha","",""]},{"persona":"1a","formas":["passissāmi / dakkhissāmi","passissāma / dakkhissāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"10-ñā (comprender)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["jānāti","jānanti","",""]},{"persona":"2a","formas":["jānāsi","jānātha","",""]},{"persona":"1a","formas":["jānāmi","jānāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"10-ñā (comprender)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["jānātu","jānantu","",""]},{"persona":"2a","formas":["jānāhi","jānātha","",""]},{"persona":"1a","formas":["jānāmi","jānāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"10-ñā (comprender)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["jāniyā / jaññā / jāneyya","jāneyyuṃ","",""]},{"persona":"2a","formas":["jāneyyāsi","jāneyyātha","",""]},{"persona":"1a","formas":["jāneyyāmi","jāneyyāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"10-ñā (comprender)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ajāni / jāni / aññasi","ajāniṃsu / jāniṃsu / aññāsuṃ","",""]},{"persona":"2a","formas":["ajāno / jāno","ajānittha / jānittha","",""]},{"persona":"1a","formas":["ajāniṃ / jāniṃ / aññāsiṃ","ajānimha / jānimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"10-ñā (comprender)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["jānissati / ñassati","jānissanti / ñassanti","",""]},{"persona":"2a","formas":["jānissasi / ñassasi","jānissatha / ñassatha","",""]},{"persona":"1a","formas":["jānissāmi / ñassāmi","jānissāma / ñassāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["brūti / bravīti / bruvīti","bruvanti","",""]},{"persona":"2a","formas":["brūsi","brūtha","",""]},{"persona":"1a","formas":["brūmi","brūma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"imperativo","tiempo_pali":"pañcamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bruvatu","bruvantu","",""]},{"persona":"2a","formas":["brūhi","brūtha","",""]},{"persona":"1a","formas":["brūmi","brūma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["bruve / bruveyya","bruveyyuṃ","",""]},{"persona":"2a","formas":["bruveyyāsi","bruveyyātha","",""]},{"persona":"1a","formas":["bruveyyāmi","bruveyyāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["abravā","abravū","",""]},{"persona":"2a","formas":["abravo","abravittha","",""]},{"persona":"1a","formas":["abravaṃ","abravamhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"perfecto","tiempo_pali":"parokkhā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["āha","āhu / āhaṃsu","",""]},{"persona":"2a","formas":["brave","bravittha","",""]},{"persona":"1a","formas":["bravaṃ","bravimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["abravi","abravuṃ","",""]},{"persona":"2a","formas":["abravo","abravittha","",""]},{"persona":"1a","formas":["abraviṃ","abravimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["bravissati","bravissanti","",""]},{"persona":"2a","formas":["bravissasi","bravissatha","",""]},{"persona":"1a","formas":["bravissāmi","bravissāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"11-brū (decir)","voz":"voz activa","tiempo":"condicional","tiempo_pali":"kālātipatti","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["abravissā","abravissaṃsu","",""]},{"persona":"2a","formas":["abravisse","abravissatha","",""]},{"persona":"1a","formas":["abravissaṃ","abravissamhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"12-ṭhā (estar parado)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ṭhāti / tiṭṭhati","ṭhanti / tiṭṭhanti","",""]},{"persona":"2a","formas":["ṭhāsi / tiṭṭhasi","ṭhātha / tiṭṭhatha","",""]},{"persona":"1a","formas":["ṭhāmi / tiṭṭhāmi","ṭhāma / tiṭṭhāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"12-ṭhā (estar parado)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["ṭiṭṭhe / tiṭṭheyya","ṭiṭṭheyyuṃ","",""]},{"persona":"2a","formas":["tiṭṭheyyāsi","tiṭṭheyyātha","",""]},{"persona":"1a","formas":["tiṭṭheyyāmi","tiṭṭheyyāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"12-ṭhā (estar parado)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["aṭṭhāsi","aṭṭhaṃsu","",""]},{"persona":"2a","formas":["aṭṭho / aṭṭhāsi","aṭṭhattha","",""]},{"persona":"1a","formas":["aṭṭhāsiṃ","aṭṭhamha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"12-ṭhā (estar parado)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ṭhassati","ṭhassanti","",""]},{"persona":"2a","formas":["ṭhassasi","ṭhassatha","",""]},{"persona":"1a","formas":["ṭhassāmi","ṭhassāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"13-su (oír/escuchar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["suṇoti / suṇāti","suṇonti / suṇanti","",""]},{"persona":"2a","formas":["suṇosi / suṇāsi / suṇasi","suṇotha / suṇātha / suṇatha","",""]},{"persona":"1a","formas":["suṇomi / suṇāmi","suṇoma / suṇāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"13-su (oír/escuchar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["suṇe / suṇeyya","suṇeyyuṃ","",""]},{"persona":"2a","formas":["suṇeyyāsi","suṇeyyātha","",""]},{"persona":"1a","formas":["suṇeyyāmi","suṇeyyāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"13-su (oír/escuchar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["asuṇi / suṇi / assosi","asuṇiṃsu / suṇiṃsu / assosuṃ","",""]},{"persona":"2a","formas":["asuṇo / suṇo / assosi","asuṇittha / suṇittha / assuttha","",""]},{"persona":"1a","formas":["asuṇiṃ / suṇiṃ / assosiṃ","asuṇimha / suṇimha / assumha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"13-su (oír/escuchar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["suṇissati","suṇissanti","",""]},{"persona":"2a","formas":["suṇissasi","suṇissatha","",""]},{"persona":"1a","formas":["suṇissāmi","suṇissāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"14-gaha (tomar/agarrar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["gaṇhāti","gaṇhanti","",""]},{"persona":"2a","formas":["gaṇhāsi","gaṇhātha","",""]},{"persona":"1a","formas":["gaṇhāmi","gaṇhāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"14-gaha (tomar/agarrar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["agaṇhi / gaṇhi / aggahi / aggahesi","agaṇhiṃsu / gaṇhiṃsu / aggahuṃ / aggahesuṃ","",""]},{"persona":"2a","formas":["agaṇho / gaṇho / aggahi / aggahesi","agaṇhittha / gaṇhittha / aggahittha / aggahesittha","",""]},{"persona":"1a","formas":["agaṇhiṃ / gaṇhiṃ / aggahiṃ / aggahesiṃ","agaṇhimha / gaṇhimha / aggahimha / aggahesimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"14-gaha (tomar/agarrar)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["gaṇhissati","gaṇhissanti","",""]},{"persona":"2a","formas":["gaṇhissasi","gaṇhissatha","",""]},{"persona":"1a","formas":["gaṇhissāmi","gaṇhissāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"15-e (venir)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["eti","enti","",""]},{"persona":"2a","formas":["esi","etha","",""]},{"persona":"1a","formas":["emi","ema","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"15-e (venir)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["eyya","eyyuṃ","",""]},{"persona":"2a","formas":["eyyāsi","eyyātha","",""]},{"persona":"1a","formas":["eyyāmi","eyyāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"15-e (venir)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["essati / ehiti","essanti / ehinti","",""]},{"persona":"2a","formas":["essasi / ehisi","essatha","",""]},{"persona":"1a","formas":["essāmi","essāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"16-hana (matar)","voz":"voz activa","tiempo":"presente","tiempo_pali":"vattamānā","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["hanati / hanti / vadheti / ghāteti","hananti / hanti / vadhenti / ghātenti","",""]},{"persona":"2a","formas":["hanasi / vadhesi / ghātesi","hanatha / vadetha / ghātetha","",""]},{"persona":"1a","formas":["hanāmi / vadhemi / ghātemi","hanāma / vadhema / ghātema","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"16-hana (matar)","voz":"voz activa","tiempo":"potencial","tiempo_pali":"sattamī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["hane / haneyya / haññe / vadheyya / ghāteyya","haneyyuṃ / vadheyyuṃ / ghāteyyuṃ","",""]},{"persona":"2a","formas":["haneyyāsi / vadheyyāsi / ghāteyyāsi","haneyyātha / vadheyyātha / ghāteyyātha","",""]},{"persona":"1a","formas":["haneyyāmi / vadheyyāmi / ghāteyyāmi","haneyyāma / vadheyyāma / ghāteyyāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"16-hana (matar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ahani / hani / avadhi / vadhi / aghātayi / ghātayi","ahaniṃsu / haniṃsu / avadhiṃsu / vadhiṃsu / ghātayiṃsu","",""]},{"persona":"2a","formas":["ahano / hano / ahani / hani / avadho / aghātayo / ghātayo","ahanittha / hanittha / avadhittha / vadhittha / aghātayittha / ghātayittha","",""]},{"persona":"1a","formas":["ahaniṃ / haniṃ / avadihiṃ / vadhiṃ / aghātayiṃ / ghātayiṃ","ahanimha / hanimha / avadhimhā / vadhimhā / aghātayimhā / ghātayimhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"17-hara (llevar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["ahari / hari / ahāsi","ahariṃsu / hariṃsu / ahaṃsu","",""]},{"persona":"2a","formas":["aharo / haro / ahari / hari / ahāsi","aharittha / harittha / ahāsittha","",""]},{"persona":"1a","formas":["ahariṃ / hariṃ / ahāsiṃ","aharimha / harimha / ahāsimha / aharimhā / harimhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"18-labha (obtener)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["alabhi / labhi / alattha","alabhiṃsu / labhiṃsu / alatthuṃ","",""]},{"persona":"2a","formas":["alabhi / labhi","alabhittha / labhittha","",""]},{"persona":"1a","formas":["alabhiṃ / labhiṃ / alatthaṃ","alabhimha / labhimha / alabhimhā / labhimhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"18-labha (obtener)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["labhissati / lacchati","labhissanti / lacchanti","",""]},{"persona":"2a","formas":["labhissasi / lacchasi","labhissatha / lacchatha","",""]},{"persona":"1a","formas":["labhissāmi / lacchāmi","labhissāma / lacchāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"19-upa-pada (nacer, reconectar)","voz":"voz activa","tiempo":"imperfecto","tiempo_pali":"hiyyattanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","Plural","singular","plural"],"filas":[{"persona":"3a","formas":["udapajjā","udapajjū","",""]},{"persona":"2a","formas":["udapajjo","udapajjittha","",""]},{"persona":"1a","formas":["udapajjaṃ","udapajjamhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"19-upa-pada (nacer, reconectar)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["upapajji / udapādi","upapajjiṃsu / udapāduṃ","",""]},{"persona":"2a","formas":["upapajjo / udapādo","upapajjittha / udapādittha","",""]},{"persona":"1a","formas":["upapajjiṃ / udapādiṃ","upapajjimhā / udapādimhā","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"20-vi-hara (morar/vivir)","voz":"voz activa","tiempo":"aoristo","tiempo_pali":"ajjatanī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["vihari / vihāsi","vihariṃsu / vihaṃsu","",""]},{"persona":"2a","formas":["viharo / vihari","viharittha / vihāsittha","",""]},{"persona":"1a","formas":["vihariṃ / vihāsiṃ","viharimha / vihāsimha","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},{"entrada":"20-vi-hara (morar/vivir)","voz":"voz activa","tiempo":"futuro","tiempo_pali":"bhavissantī","padas":["parassapada","parassapada","attanopada","attanopada"],"numeros":["singular","plural","singular","plural"],"filas":[{"persona":"3a","formas":["viharissati / vihassati","viharissanti / vihassanti","",""]},{"persona":"2a","formas":["viharissasi / vihassasi","viharissatha / vihassatha","",""]},{"persona":"1a","formas":["viharissāmi / viharissaṃ / vihassaṃ","viharissāma / vihassāma","",""]}],"seccion":"otros paradigmas","obra":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"}],"ingles":{"adjudicado":true,"adjudicado_por":"IEBH","interfaz":{"titulo":"The <em>verb</em> · <span class=\"pali\">ākhyāta</span>","titulo_llano":"The verb · ākhyāta","eyebrow":"Kaccāyana · chapter vi","volver":"← Resources · Pāḷi Grammars","sb_titulo":"The verb","sb_sub":"ākhyāta · Kaccāyana vi","indice":"Index","arriba":"Back to top","version":"Version","version_nota":"First version of the page. It brings together Bhikkhu Nandisena's «Verbo» document and his thirteen class presentations: 21 derivations with one operation per row, the authority given as the Kaccāyana/Rūpasiddhi pair —which the document did not give— and 105 conjugation paradigms. Rows showing a form the source does not print are marked, and the single corrected erratum says what it was. The Ākhyāta-kappa is not yet published as a chapter, so its §N appear as plain text; they will link themselves once it is.","entradilla":"The eight verbal inflections of Pāḷi, the eight groups of roots, <b>{escaleras} derivations</b> step by step with the aphorism that authorises each operation, and <b>{paradigmas} conjugation paradigms</b>.","pestanas":{"introduccion":"Introduction","inflexiones":"Inflections","formacion":"Formation","paradigmas":"Paradigms"},"cabeceras":{"paso":"step","operaciones":"grammatical operations","autoridad":"authority","explicacion":"explanation"},"titulos":{"usos":"Uses of the verbal inflections","voces":"The three voices","ganas":"The eight groups of roots"},"marcas":{"propuesta":"proposed","segun_documento":"according to the «Verbo» document","segun_diapositiva":"according to {0}"},"leyendas":{"inflexiones":"The eight series of endings. Each in its two groups —<b>parassapada</b>, the word for another, and <b>attanopada</b>, the word for oneself— and its three persons.","formacion":"Each row shows the form <b>resulting</b> from the rule beside it, so that the derivation can be checked line by line. The authority is given as the pair <b>Kaccāyana / Rūpasiddhi</b>: the document cites the second number, and the first is that of the corresponding chapter of Kaccāyana. Rows marked <span class=\"marca-propuesta\">proposed</span> show an intermediate form the source does not print, deduced from the rule cited; the sign ✱ marks a corrected authority, and says how.","paradigmas":"One hundred and five conjugation tables. Those of <b>bhū</b> and <b>paca</b> are from the «Verbo» document; those gathered under <b>other paradigms</b> come from <i>The Higher Pali Course for Advanced Students</i>, by the Venerable Buddhadatta Thera (Colombo, 1951), as the document itself states."},"tema":{"oscuro":"Dark mode","claro":"Light mode"},"pie_aviso":"The English of this page is the interface only. The prose of the IEBH is shown in Spanish until the translation is signed off."},"prosa":{"operaciones":{"colocar la raíz":"place the root","elidir la vocal final":"elide the final vowel","elidir vocal final":"elide the final vowel","elidir vocal final de ‘bhava’":"elide the final vowel of ‘bhava’","colocar inflexión verbal":"place the verbal inflection","colocar inflexión verbal presente indicativo":"place the verbal inflection, present indicative","colocar inflexión verbal, presente indicativo":"place the verbal inflection, present indicative","colocar signo de conjugación":"place the conjugational sign","fortalecer vocal ‘ū’":"strengthen the vowel ‘ū’","fortalecer la vocal":"strengthen the vowel","fortalecer la vocal de la raíz":"strengthen the vowel of the root","sustituir ‘o’ por ‘ava’":"replace ‘o’ with ‘ava’","sustituir ‘o’ por ‘āva’":"replace ‘o’ with ‘āva’","sustituir ‘v’ por ‘b’":"replace ‘v’ with ‘b’","sustituir ‘ṃ’ por ’n’":"replace ‘ṃ’ with ‘n’","se sustituye ’n’ por ‘ṇ’":"‘n’ is replaced by ‘ṇ’","se acorta la vocal de la raíz":"the vowel of the root is shortened","se elide ‘ha’ de la raíz":"‘ha’ of the root is elided","elidir ‘y’":"elide ‘y’","elidir ‘ṇ’":"elide ‘ṇ’","duplicar ‘v’":"double ‘v’","insertar ‘i’":"insert ‘i’","colocar el sufijo ‘ya’":"place the suffix ‘ya’","colocar sufijo ‘ya’":"place the suffix ‘ya’","colocar sufijos causativos y asignar nombre “kārita”":"place the causative suffixes and assign the name “kārita”","asimilación de ‘ya’ con ‘c’ - cya = cca":"assimilation of ‘ya’ with ‘c’ — cya = cca","formar el verbo":"form the verb","formar el verbo causativo":"form the causative verb"},"glosas":{"ser/estar":"to be","existiendo/estando":"existing, being","cocinar":"to cook","cocinando":"cooking","ir":"to go","oprimir":"to press","sacrificar":"to sacrifice","obstruir":"to obstruct","jugar":"to play","oir/escuchar":"to hear, to listen","vender":"to sell","intercambio/comerciando":"exchange, trading","extender":"to extend","robar":"to steal","agarrando":"grasping","experimentando":"experiencing"},"tiempos":{"presente":"present","imperativo":"imperative","potencial":"potential","imperfecto":"imperfect","perfecto":"perfect","aoristo":"aorist","futuro":"future","condicional":"conditional","presente indicativo":"present indicative"},"voces":{"voz activa":"active voice","voz pasiva":"passive voice","voz impersonal":"impersonal voice"},"personas":{"3a":"3rd","2a":"2nd","1a":"1st","persona (purisa)":"person (purisa)"},"numeros":{"singular (ekavacana)":"singular (ekavacana)","plural (bahuvacana)":"plural (bahuvacana)","singular":"singular","plural":"plural","Plural":"Plural"},"formacion":{"Formación: presente indicativo, tercera persona singular":"Formation: present indicative, third person singular","Formación: voz pasiva, presente indicativo, tercera persona singular":"Formation: passive voice, present indicative, third person singular","Formación: voz pasiva presente indicativo, tercera persona singular":"Formation: passive voice, present indicative, third person singular","Formación: causativo, voz activa, presente indicativo, tercera persona singular":"Formation: causative, active voice, present indicative, third person singular","Formación: causativo, voz pasiva, presente indicativo, tercera persona singular":"Formation: causative, passive voice, present indicative, third person singular","Formación: causativo, presente indicativo, tercera persona singular":"Formation: causative, present indicative, third person singular"},"entradas":{"1a-bhū (ser/estar)":"1a-bhū (to be)","1b-anu-bhū (experimentar)":"1b-anu-bhū (to experience)","1c-bhū (ser/estar)":"1c-bhū (to be)","2a-paca (cocinar)":"2a-paca (to cook)","3-kara (hacer)":"3-kara (to do)","4-hū (ser/estar)":"4-hū (to be)","5-asa (ser/estar)":"5-asa (to be)","6-vada (decir)":"6-vada (to say)","7-vaca (decir/hablar)":"7-vaca (to say, to speak)","8-dā (dar)":"8-dā (to give)","9-disa (ver)":"9-disa (to see)","10-ñā (comprender)":"10-ñā (to understand)","11-brū (decir)":"11-brū (to say)","12-ṭhā (estar parado)":"12-ṭhā (to stand)","13-su (oír/escuchar)":"13-su (to hear, to listen)","14-gaha (tomar/agarrar)":"14-gaha (to take, to grasp)","15-e (venir)":"15-e (to come)","16-hana (matar)":"16-hana (to kill)","17-hara (llevar)":"17-hara (to carry)","18-labha (obtener)":"18-labha (to obtain)","19-upa-pada (nacer, reconectar)":"19-upa-pada (to be born, to reconnect)","20-vi-hara (morar/vivir)":"20-vi-hara (to dwell, to live)"},"obras":{"Nandisena, «Verbo»":"Nandisena, «Verbo»","Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951":"Buddhadatta, The Higher Pali Course for Advanced Students, Colombo, 1951"},"notas":{"inserción de ‘a’ es opcional":"insertion of ‘a’ is optional"},"usos":[["#","verbal inflections / (ākhyāta vibhatti)","uses"],["1","Present / (vattamānā)","Action in the present (paccuppanna) / Past (atīta); near the present (paccuppanna-samīpe) / Universal truths"],["2","Imperative / (pañcamī)","Command (āṇatti) / Blessing, wish (āsiṭṭha) / Indication of what should be done (vidhi) / Invitation (nimantana) / Request (ajjhesanā) / Consent, permission (anumati) / Aspiration (patthanā) / Right or suitable time (pattakāla)"],["3","Potential / (sattamī)","Consent (anumati) / Supposition (parikappa) / Indication of what should be done (vidhi) / Invitation (nimantana), / Request, permission (ajjhesanā) / Aspiration (patthanā) / Right or suitable time (pattakāla)"],["4","Imperfect / (hiyyattanī)","The past directly experienced (paccakkha) / The past not directly experienced (appaccakkha). The past expressed by this tense runs from yesterday backwards, and hence the name hiyyattanī."],["5","Perfect / (parokkhā)","The indefinite past; it is used to refer to an action that has not been experienced through the senses (appaccakkha)."],["6","Aorist / (ajjatanī)","The past directly experienced (paccakkha) / The past that has not been directly experienced (appaccakkha). The past expressed by this tense runs from today backwards; hence the name ajjatanī."],["7","Future / (bhavissantī)","Future (anāgata) / Past (atīta)"],["8","Conditional / (kālātipatti)","The non-occurrence of an action owing to a deficiency of causes (kāraṇavekalla) / The non-occurrence of an action owing to the existence of conditions that prevent its realisation"]],"voces_tabla":[["#","voices (kāraka)","explanation"],["1","Active / (kattu)","the conjugational sign is inserted between the root and the verbal inflection. / it uses both groups of inflections: 1) the word for another; active or transitive voice (parassapada), 2) the word for oneself; middle or reflexive voice (attanopada)."],["2","Passive / (kamma)","the suffix ‘ya’ is inserted between the root and the verbal inflection. / the conjugational sign is not inserted between the root and the verbal inflection. / it uses both groups of inflections: 1) the word for another; active or transitive voice (parassapada), 2) the word for oneself; middle or reflexive voice (attanopada)"],["3","Impersonal / (bhāva)","the suffix ‘ya’ is inserted between the root and the verbal inflection. / the conjugational sign is not inserted between the root and the verbal inflection. / this voice indicates the bare meaning of the root, that is: “the action”. / it is conjugated only in the first person singular."]],"ganas":[["#","group / (gaṇa)","conjugational sign / (vikaraṇa)","explanation"],["1","Group beginning with the root “bhū” / (bhūvādi-gaṇa)","a","The conjugational sign ‘a’ is used only in the active voice (kattu) and only after the conjugations called sabbadhātuka. / The conjugational sign ‘a’ is inserted between the root and the verbal inflection. / There is lengthening (vuddhi) of the first vowel of the root (only i → ī; u → ū) when it is not followed by a double consonant. / There are four sub-groups: (i) savuddhika-bhūvādi, where there is lengthening when it is possible and the letter ‘a’ is not elided; (ii) tudādi, where there is no lengthening; (iii) hūvādi, where there is lengthening when it is possible and the letter ‘a’ is also elided; (iv) juhotyādi, where there is reduplication of the first syllable of the root and elision of the conjugational sign ‘a’."],["2","Group beginning with the root “rudhi” / (rudhādi-gaṇa)","ṃ-a, i, ī, e, o","‘a, i, ī, e, o’ are used only in the active voice. / ‘a, i, ī, e, o’ are inserted between the root and the verbal inflection. / ‘ṃ’ is inserted after the first vowel of the root."],["3","Group beginning with the root “divu” / (divādi-gaṇa)","ya","‘ya’ is used only in the active voice. / ‘ya’ is inserted between the root and the verbal inflection. / if the first vowel of the root is ‘i, ī; u, ū’, there is no lengthening."],["4","Group beginning with the root “su” / (svādi-gaṇa)","ṇu, ṇā, uṇā","‘ṇu, ṇā, uṇā’ are used only in the active voice. / ‘ṇu, ṇā, uṇā’ are inserted between the root and the verbal inflection. / ‘ṇu’ becomes ‘ṇo’. / when ‘ṇu’ and ‘ṇā’ are used there is no lengthening (i → ī; u → ū)."],["5","Group beginning with the root “kī” / (kiyādi-gaṇa)","nā","after kī and other roots ‘nā’ is used, and only in the active voice. / ‘nā, ppa, ṇhā’ are inserted between the root and the verbal inflection. / when ‘nā’ is used there is no lengthening."],["6","Group beginning with the root “gaha” / (gahādi-gaṇa)","ppa, ṇhā",""],["7","Group beginning with the root “tanu” / (tanādi-gaṇa)","o, yira","‘o, yira’ are used only in the active voice. / ‘o, yira’ are inserted between the root and the verbal inflection. / there is no lengthening."],["8","Group beginning with the root “cura” / (curādi-gaṇa)","ṇe, ṇaya","‘ṇe, ṇaya’ are used only in the active voice. / ‘ṇ’ is a sign indicating strengthening of the first vowel of the root; it is elided. / ‘e, aya’ are inserted between the root and the verbal inflection. / there is lengthening of the first vowel of the root when it is not followed by a double consonant."]]}}};
+const VERSION = '1.0';
+const VERSION_DATE = '2026-09-01';
+
+(function(){
+  'use strict';
+
+  /* ---------- idioma ----------
+     Dos capas, como en /recursos/paradigmas/: la INTERFAZ inglesa se publica
+     siempre; la PROSA del IEBH sólo llega aquí cuando está adjudicada. Sin
+     adjudicar, el modo inglés muestra el español y lo dice en el pie. */
+
+  const ING = DATA.ingles || {};
+  const PROSA = (ING.adjudicado && ING.prosa) ? ING.prosa : null;
+
+  const UI_ES = {
+    titulo: 'El <em>verbo</em> · <span class="pali">ākhyāta</span>',
+    titulo_llano: 'El verbo · ākhyāta',
+    eyebrow: 'Kaccāyana · capítulo vi',
+    volver: '← Recursos · Gramáticas Pāḷi',
+    sb_titulo: 'El verbo',
+    sb_sub: 'ākhyāta · Kaccāyana vi',
+    indice: 'Índice',
+    arriba: 'Volver arriba',
+    version: 'Versión',
+    entradilla: 'Las ocho inflexiones del verbo pāḷi, los ocho grupos de raíces, '
+      + '<b>{escaleras} derivaciones</b> paso a paso con el aforismo que ampara '
+      + 'cada operación, y <b>{paradigmas} paradigmas</b> de conjugación.',
+    pestanas: {introduccion:'Introducción', inflexiones:'Inflexiones',
+               formacion:'Formación', paradigmas:'Paradigmas'},
+    cabeceras: {paso:'paso', operaciones:'operaciones gramaticales',
+                autoridad:'autoridad', explicacion:'explicación'},
+    titulos: {usos:'Usos de las inflexiones verbales',
+              voces:'Las tres voces', ganas:'Los ocho grupos de raíces'},
+    marcas: {propuesta:'propuesta',
+             segun_documento:'según el documento «Verbo»',
+             segun_diapositiva:'según {0}'},
+    leyendas: {
+      inflexiones: 'Las ocho series de terminaciones. Cada una en sus dos '
+        + 'grupos —<b>parassapada</b>, la voz para otra, y <b>attanopada</b>, '
+        + 'la voz para sí misma— y sus tres personas.',
+      formacion: 'Cada fila muestra la forma <b>resultante</b> de la regla que '
+        + 'la acompaña, de modo que la escalera se puede comprobar línea a '
+        + 'línea. La autoridad se da en el par <b>Kaccāyana / Rūpasiddhi</b>: '
+        + 'el documento cita el segundo número, y el primero es el del '
+        + 'capítulo correspondiente de Kaccāyana. Las filas marcadas '
+        + '<span class="marca-propuesta">propuesta</span> muestran una forma '
+        + 'intermedia que la fuente no imprime, deducida de la regla citada; '
+        + 'el signo ✱ señala una autoridad corregida, y dice en qué.',
+      paradigmas: 'Ciento cinco tablas de conjugación. Las de <b>bhū</b> y '
+        + '<b>paca</b> son del documento «Verbo»; las reunidas bajo <b>otros '
+        + 'paradigmas</b> proceden de <i>The Higher Pali Course for Advanced '
+        + 'Students</i>, del Venerable Buddhadatta Thera (Colombo, 1951), '
+        + 'según dice el propio documento.'
+    },
+    tema: {oscuro:'Modo oscuro', claro:'Modo claro'},
+    version_nota: 'Primera versión de la página. Reúne el documento «Verbo» de '
+      + 'Bhikkhu Nandisena y sus trece presentaciones de clase: 21 derivaciones '
+      + 'con una operación por fila, la autoridad en el par Kaccāyana/Rūpasiddhi '
+      + '—que el documento no daba— y 105 paradigmas de conjugación. Las filas '
+      + 'que muestran una forma que la fuente no imprime van marcadas, y la '
+      + 'única errata corregida dice cuál era. El Ākhyāta-kappa no está '
+      + 'publicado todavía como capítulo, de modo que sus §N salen en texto '
+      + 'plano; se enlazarán solos el día que entre.'
+  };
+
+  let LANG = 'es';
+  try { if (localStorage.getItem('pali_lang') === 'en') LANG = 'en'; } catch(e){}
+
+  function ui(seccion, clave){
+    const fuente = (LANG === 'en' && ING.interfaz) ? ING.interfaz : UI_ES;
+    const bloque = fuente[seccion];
+    const valor = clave == null ? bloque : (bloque || {})[clave];
+    if (valor != null && valor !== '') return valor;
+    const resp = clave == null ? UI_ES[seccion] : (UI_ES[seccion]||{})[clave];
+    return resp != null ? resp : '';
+  }
+
+  /* prosa del IEBH: inglés si está adjudicado, español si no */
+  function tr(seccion, valor){
+    if (LANG !== 'en' || !PROSA) return valor;
+    const tabla = PROSA[seccion];
+    if (!tabla) return valor;
+    const clave = String(valor || '').replace(/ \/ /g, ' ');
+    return tabla[valor] || tabla[clave] || valor;
+  }
+
+  function tabla(clave, español){
+    if (LANG === 'en' && PROSA && PROSA[clave]) return PROSA[clave];
+    return español;
+  }
+
+  const esc = s => String(s == null ? '' : s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+
+  const ranura = s => String(s || '').toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+
+  function multilinea(t){
+    const partes = String(t || '').split(' / ').map(x => x.trim()).filter(Boolean);
+    if (partes.length <= 1) return esc(partes[0] || '');
+    return '<ul>' + partes.map(p => '<li>' + esc(p) + '</li>').join('') + '</ul>';
+  }
+
+  function autoridad(a){
+    const kacc = a.href
+      ? '<a class="xref" href="' + esc(a.href) + '" title="' + esc(a.titulo) + '">§' + a.kacc + '</a>'
+      : '<span class="xref-pend" title="' + esc(a.titulo) + '">§' + a.kacc + '</span>';
+    const corr = a.corregida
+      ? '<span class="marca-corregida" title="' + esc(a.nota) + '">✱</span>' : '';
+    return kacc + '<span class="ru"> / Rū ' + a.ru + '</span>' + corr;
+  }
+
+  function tablaSimple(filas, clases){
+    if (!filas || !filas.length) return '';
+    const cab = filas[0], cuerpo = filas.slice(1);
+    let h = '<div class="envoltura"><table><thead><tr>';
+    cab.forEach((c,i) => {
+      h += '<th class="' + (clases[i]||'') + '">' + esc(String(c).replace(/ \/ /g,' ')) + '</th>';
+    });
+    h += '</tr></thead><tbody>';
+    cuerpo.forEach(fila => {
+      h += '<tr>';
+      fila.forEach((c,i) => {
+        const cl = clases[i] || '';
+        h += '<td class="' + cl + '">'
+           + (cl === 'exp' ? multilinea(c) : esc(String(c).replace(/ \/ /g,' · ')))
+           + '</td>';
+      });
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div>';
+  }
+
+  /* ---------- introducción ---------- */
+  function panelIntroduccion(){
+    let h = '<h2 id="s-usos">' + esc(ui('titulos','usos')) + '</h2>';
+    h += '<p class="sub pali">ākhyāta vibhatti</p>';
+    h += tablaSimple(tabla('usos', DATA.usos), ['n','forma','exp']);
+    h += '<h2 id="s-voces">' + esc(ui('titulos','voces')) + '</h2>';
+    h += '<p class="sub pali">kāraka</p>';
+    h += tablaSimple(tabla('voces_tabla', DATA.voces), ['n','forma','exp']);
+    return h;
+  }
+
+  /* ---------- inflexiones ---------- */
+  function tablaInflexion(inf){
+    const t = inf.tabla;
+    let h = '<div class="envoltura"><table><thead><tr><th></th>';
+    for (let i = 1; i < t[0].length; i++){
+      h += '<th class="pali">' + esc(t[0][i]) + '<br>'
+         + esc(tr('numeros', String(t[1][i]||'').replace(/ \/ /g,' '))) + '</th>';
+    }
+    h += '</tr></thead><tbody>';
+    t.slice(2).forEach(fila => {
+      h += '<tr><th>' + esc(tr('personas', String(fila[0]).replace(/ \/ /g,' '))) + '</th>';
+      fila.slice(1).forEach(c => { h += '<td class="forma">' + esc(c) + '</td>'; });
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div>';
+  }
+
+  function panelInflexiones(){
+    let h = '<p class="leyenda">' + ui('leyendas','inflexiones') + '</p>';
+    DATA.inflexiones.forEach(inf => {
+      h += '<h2 id="i-' + ranura(inf.titulo) + '">'
+         + esc(tr('tiempos', inf.titulo))
+         + (inf.pali ? ' <span class="vibhatti">· ' + esc(inf.pali)
+                     + ' vibhatti</span>' : '')
+         + '</h2>';
+      if (inf.nota) h += '<p class="nota-inf">' + esc(tr('notas', inf.nota)) + '</p>';
+      h += tablaInflexion(inf);
+    });
+    h += '<h2 id="s-ganas">' + esc(ui('titulos','ganas'))
+       + '</h2><p class="sub pali">gaṇa</p>';
+    h += tablaSimple(tabla('ganas', DATA.ganas), ['n','forma','forma','exp']);
+    return h;
+  }
+
+  /* ---------- formación ---------- */
+  function idEscalera(e, i){ return 'e-' + i + '-' + ranura(e.lema); }
+
+  function escalera(e, i){
+    const proc = e.procedencia === 'diapositiva'
+      ? esc(String(ui('marcas','segun_diapositiva')).replace('{0}', e.presentacion))
+      : esc(ui('marcas','segun_documento'));
+    let h = '<article class="escalera" id="' + idEscalera(e,i) + '"><header>';
+    h += '<span class="lema"><span class="raiz">√</span>' + esc(e.lema) + '</span>';
+    if (e.glosa) h += '<span class="glosa">' + esc(tr('glosas', e.glosa)) + '</span>';
+    h += '<span class="flecha">→</span><span class="final">' + esc(e.resultado) + '</span>';
+    h += '<span class="procedencia">' + proc + '</span></header>';
+    if (e.formacion) h += '<p class="queforma">' + esc(tr('formacion', e.formacion)) + '</p>';
+    h += '<div class="envoltura"><table><thead><tr>'
+       + '<th class="n">' + esc(ui('cabeceras','paso')) + '</th>'
+       + '<th>' + esc(ui('cabeceras','operaciones')) + '</th>'
+       + '<th class="ref">' + esc(ui('cabeceras','autoridad')) + '</th>'
+       + '<th>' + esc(ui('cabeceras','explicacion')) + '</th>'
+       + '</tr></thead><tbody>';
+    e.pasos.forEach(p => {
+      const piezas = [p.prefijo, p.raiz, p.signo, p.inflexion].filter(Boolean);
+      const cuerpo = piezas.join(' + ') || '—';
+      const marca = p.origen === 'propuesta'
+        ? '<span class="marca-propuesta" title="' + esc(p.nota) + '">'
+          + esc(ui('marcas','propuesta')) + '</span>' : '';
+      h += '<tr' + (p.origen === 'propuesta' ? ' class="propuesta"' : '') + '>';
+      h += '<td class="n">' + p.n + '</td>';
+      h += '<td class="forma' + (p.resultado ? ' destacada' : '') + '">'
+         + esc(p.resultado || cuerpo) + marca + '</td>';
+      h += '<td class="ref">' + p.autoridades.map(autoridad).join('<br>') + '</td>';
+      h += '<td class="exp">' + esc(tr('operaciones', p.operacion)) + '</td>';
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div></article>';
+  }
+
+  function panelFormacion(){
+    let h = '<p class="leyenda">' + ui('leyendas','formacion') + '</p>';
+    DATA.escaleras.forEach((e,i) => { h += escalera(e,i); });
+    return h;
+  }
+
+  /* ---------- paradigmas ---------- */
+  function paradigma(p){
+    let h = '<div class="paradigma"><h3>' + esc(tr('voces', p.voz)) + '</h3>';
+    h += '<p class="tiempo">' + esc(tr('tiempos', p.tiempo))
+       + (p.tiempo_pali ? ' <span class="ru pali">· ' + esc(p.tiempo_pali) + '</span>' : '')
+       + '</p><div class="envoltura"><table><thead><tr><th></th>';
+    p.padas.forEach((pad,i) => {
+      h += '<th class="pali">' + esc(pad) + '<br>'
+         + esc(tr('numeros', String(p.numeros[i]||'').replace(/ \/ /g,' '))) + '</th>';
+    });
+    h += '</tr></thead><tbody>';
+    p.filas.forEach(fila => {
+      h += '<tr><th>' + esc(tr('personas', String(fila.persona).replace(/ \/ /g,' '))) + '</th>';
+      fila.formas.forEach(f => { h += '<td class="forma">' + esc(f) + '</td>'; });
+      h += '</tr>';
+    });
+    return h + '</tbody></table></div></div>';
+  }
+
+  function gruposParadigmas(){
+    const orden = [], grupos = new Map();
+    DATA.paradigmas.forEach(p => {
+      if (!grupos.has(p.entrada)){ grupos.set(p.entrada, []); orden.push(p.entrada); }
+      grupos.get(p.entrada).push(p);
+    });
+    return orden.map(e => ({entrada:e, rotulo:tr('entradas', e),
+                            lista:grupos.get(e), id:'g-'+ranura(e)}));
+  }
+
+  function panelParadigmas(){
+    let h = '<p class="leyenda">' + ui('leyendas','paradigmas') + '</p>';
+    gruposParadigmas().forEach(g => {
+      h += '<h3 class="grupo-entrada" id="' + g.id + '">' + esc(g.rotulo) + '</h3>';
+      h += '<p class="grupo-obra">' + esc(tr('obras', g.lista[0].obra)) + '</p>';
+      h += '<div class="rejilla">' + g.lista.map(paradigma).join('') + '</div>';
+    });
+    return h;
+  }
+
+  /* ---------- armado ---------- */
+  const PANELES = [
+    {id:'introduccion', cuenta:'', pinta:panelIntroduccion},
+    {id:'inflexiones',  cuenta:DATA.inflexiones.length + ' + 8', pinta:panelInflexiones},
+    {id:'formacion',    cuenta:DATA.escaleras.length, pinta:panelFormacion},
+    {id:'paradigmas',   cuenta:DATA.paradigmas.length, pinta:panelParadigmas}
+  ];
+
+  const barra = document.getElementById('pestanas');
+  function pintarPestanas(){
+    barra.innerHTML = PANELES.map(p =>
+      '<button type="button" role="tab" id="t-' + p.id + '" data-panel="' + p.id + '"'
+      + ' aria-controls="p-' + p.id + '" aria-selected="false">'
+      + esc(ui('pestanas', p.id))
+      + (p.cuenta ? '<span class="cuenta">' + p.cuenta + '</span>' : '')
+      + '</button>').join('');
+  }
+
+  let pintados = new Set();
+
+  function mostrar(id, ancla){
+    PANELES.forEach(p => {
+      const panel = document.getElementById('p-' + p.id);
+      const boton = document.getElementById('t-' + p.id);
+      const activo = p.id === id;
+      if (activo && !pintados.has(p.id)){
+        panel.innerHTML = p.pinta();
+        pintados.add(p.id);
+      }
+      panel.hidden = !activo;
+      if (boton) boton.setAttribute('aria-selected', activo ? 'true' : 'false');
+    });
+    if (ancla){
+      const destino = document.getElementById(ancla);
+      if (destino) destino.scrollIntoView({block:'start', behavior:'smooth'});
+    }
+    marcarIndice(id, ancla);
+  }
+
+  barra.addEventListener('click', ev => {
+    const b = ev.target.closest('button[data-panel]');
+    if (b) mostrar(b.dataset.panel);
+  });
+
+  barra.addEventListener('keydown', ev => {
+    if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
+    const i = PANELES.findIndex(p =>
+      document.getElementById('t-' + p.id).getAttribute('aria-selected') === 'true');
+    const j = (i + (ev.key === 'ArrowRight' ? 1 : -1) + PANELES.length) % PANELES.length;
+    mostrar(PANELES[j].id);
+    document.getElementById('t-' + PANELES[j].id).focus();
+    ev.preventDefault();
+  });
+
+  /* ---------- índice de la izquierda ---------- */
+  const nav = document.getElementById('sbnav');
+
+  function entradasIndice(){
+    return {
+      introduccion: [
+        {ancla:'s-usos',  rotulo:ui('titulos','usos')},
+        {ancla:'s-voces', rotulo:ui('titulos','voces')}
+      ],
+      inflexiones: DATA.inflexiones.map(inf => ({
+        ancla:'i-' + ranura(inf.titulo),
+        rotulo:tr('tiempos', inf.titulo), extra:inf.pali
+      })).concat([{ancla:'s-ganas', rotulo:ui('titulos','ganas')}]),
+      formacion: DATA.escaleras.map((e,i) => ({
+        ancla:idEscalera(e,i), rotulo:e.lema, extra:e.resultado
+      })),
+      paradigmas: gruposParadigmas().map(g => ({
+        ancla:g.id, rotulo:g.rotulo, extra:g.lista.length
+      }))
+    };
+  }
+
+  function pintarIndice(){
+    const ent = entradasIndice();
+    nav.innerHTML = PANELES.map(p => {
+      const items = (ent[p.id] || []).map(x =>
+        '<a href="#" data-panel="' + p.id + '" data-ancla="' + x.ancla + '">'
+        + esc(x.rotulo)
+        + (x.extra ? '<span class="cnt">' + esc(x.extra) + '</span>' : '')
+        + '</a>').join('');
+      return '<details class="sb-sec" data-sec="' + p.id + '"'
+           + (p.id === 'introduccion' ? ' open' : '') + '>'
+           + '<summary>' + esc(ui('pestanas', p.id))
+           + (items ? ' · ' + (ent[p.id]||[]).length : '') + '</summary>'
+           + items + '</details>';
+    }).join('');
+  }
+
+  function marcarIndice(panel, ancla){
+    nav.querySelectorAll('details').forEach(d => {
+      if (d.dataset.sec === panel) d.open = true;
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.classList.toggle('on',
+        a.dataset.panel === panel && (!ancla || a.dataset.ancla === ancla));
+    });
+  }
+
+  nav.addEventListener('click', ev => {
+    const a = ev.target.closest('a[data-panel]');
+    if (!a) return;
+    ev.preventDefault();
+    mostrar(a.dataset.panel, a.dataset.ancla);
+    if (window.matchMedia('(max-width:64rem)').matches)
+      document.body.classList.remove('con-indice');
+  });
+
+  /* plegar y desplegar el índice */
+  const burger = document.getElementById('burger');
+  function alternarIndice(){
+    const estrecho = window.matchMedia('(max-width:64rem)').matches;
+    if (estrecho){
+      document.body.classList.toggle('con-indice');
+      burger.setAttribute('aria-pressed',
+        document.body.classList.contains('con-indice') ? 'true' : 'false');
+    } else {
+      document.body.classList.toggle('sin-indice');
+      burger.setAttribute('aria-pressed',
+        document.body.classList.contains('sin-indice') ? 'false' : 'true');
+    }
+  }
+  burger.addEventListener('click', alternarIndice);
+  document.getElementById('sbclose').addEventListener('click', alternarIndice);
+
+  document.getElementById('top-btn').addEventListener('click', () => {
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- insignia de versión ---------- */
+  const tip = document.getElementById('tip');
+  function pintarVersion(){
+    const M = LANG === 'en'
+      ? ['January','February','March','April','May','June','July','August',
+         'September','October','November','December']
+      : ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+         'septiembre','octubre','noviembre','diciembre'];
+    const p = VERSION_DATE.split('-').map(Number);
+    const largo = LANG === 'en'
+      ? M[p[1]-1] + ' ' + p[2] + ', ' + p[0]
+      : p[2] + ' de ' + M[p[1]-1] + ' de ' + p[0];
+    const nota = ui('version_nota');
+    const b = document.getElementById('vbadge');
+    b.innerHTML = 'v' + VERSION + '<time datetime="' + VERSION_DATE + '">'
+                + VERSION_DATE + '</time>';
+    b.setAttribute('aria-label', ui('version') + ' ' + VERSION + ' · ' + largo);
+    b.onclick = function(){
+      if (!tip.hidden){ tip.hidden = true; return; }
+      tip.innerHTML = '<b>' + esc(ui('version')) + ' ' + VERSION + '</b> — '
+        + '<time datetime="' + VERSION_DATE + '">' + largo + '</time>. '
+        + esc(nota);
+      tip.hidden = false;
+      const r = b.getBoundingClientRect();
+      tip.style.top = (r.bottom + 8) + 'px';
+      tip.style.left = Math.max(8, Math.min(r.left, window.innerWidth - 500)) + 'px';
+    };
+    document.getElementById('vfoot').innerHTML =
+      '<strong>' + esc(ui('version')) + ' ' + VERSION + '</strong> — '
+      + '<time datetime="' + VERSION_DATE + '">' + largo + '</time>. ' + esc(nota);
+  }
+  document.addEventListener('click', ev => {
+    if (!tip.hidden && !ev.target.closest('#tip') && !ev.target.closest('#vbadge'))
+      tip.hidden = true;
+  });
+
+  /* ---------- textos ---------- */
+  const f = DATA.fuente;
+
+  function pintarTextos(){
+    document.documentElement.lang = LANG;
+    document.title = ui('titulo_llano');
+    document.getElementById('h1').innerHTML = ui('titulo');
+    document.getElementById('eyebrow').textContent = ui('eyebrow');
+    document.getElementById('volver').textContent = ui('volver');
+    document.getElementById('sb-titulo').textContent = ui('sb_titulo');
+    document.getElementById('sb-sub').textContent = ui('sb_sub');
+    document.getElementById('burgerLabel').textContent = ui('indice');
+    document.getElementById('top-btn').setAttribute('aria-label', ui('arriba'));
+    document.getElementById('colofon-obra').textContent = ui('titulo_llano');
+    document.getElementById('langLabel').textContent =
+      LANG === 'en' ? 'Español' : 'English';
+
+    document.getElementById('entradilla').innerHTML =
+      String(ui('entradilla'))
+        .replace('{escaleras}', DATA.escaleras.length)
+        .replace('{paradigmas}', DATA.paradigmas.length);
+
+    document.getElementById('pie-fuente').innerHTML = (LANG === 'en')
+      ? ('Based on ' + esc(f.basado_en) + '. References: ' + esc(f.referencias)
+         + '. The paradigms in the <i>other paradigms</i> section come from '
+         + '<i>The Higher Pali Course for Advanced Students</i>, by the Venerable '
+         + 'Buddhadatta Thera (The Colombo Apothecaries’ Co., Ltd., Colombo, Sri '
+         + 'Lanka, 1951). This material was originally prepared in 2013 (IEBH '
+         + 'publication ' + esc(f.publicacion_iebh) + '); it has been edited and '
+         + 'improved in 2026 for publication on this page.')
+      : ('Basado en ' + esc(f.basado_en) + '. Referencias: ' + esc(f.referencias)
+         + '. Los paradigmas de la sección <i>otros paradigmas</i> proceden de '
+         + '<i>The Higher Pali Course for Advanced Students</i>, del Venerable '
+         + 'Buddhadatta Thera (The Colombo Apothecaries’ Co., Ltd., Colombo, Sri '
+         + 'Lanka, 1951). Este material fue preparado originalmente en 2013 '
+         + '(publicación IEBH ' + esc(f.publicacion_iebh) + '); ha sido editado y '
+         + 'mejorado en 2026 con motivo de su publicación en esta página.');
+
+    const aviso = document.getElementById('aviso-ingles');
+    if (LANG === 'en' && !PROSA){
+      aviso.hidden = false;
+      aviso.innerHTML = esc(ui('pie_aviso'));
+    } else if (LANG === 'en' && PROSA && ING.adjudicado_por){
+      aviso.hidden = false;
+      aviso.innerHTML = 'English translation approved by '
+        + esc(ING.adjudicado_por) + '.';
+    } else {
+      aviso.hidden = true;
+    }
+    pintarVersion();
+  }
+
+  document.getElementById('langToggle').addEventListener('click', function(){
+    LANG = (LANG === 'en') ? 'es' : 'en';
+    try { localStorage.setItem('pali_lang', LANG); } catch(e){}
+    const actual = PANELES.find(p => !document.getElementById('p-' + p.id).hidden);
+    pintados = new Set();
+    tip.hidden = true;
+    pintarPestanas(); pintarIndice(); pintarTextos();
+    mostrar(actual ? actual.id : 'introduccion');
+  });
+
+  pintarPestanas();
+  pintarIndice();
+  pintarTextos();
+  const inicial = (location.hash || '').replace('#','');
+  mostrar(PANELES.some(p => p.id === inicial) ? inicial : 'introduccion');
+})();
+
+/* ---------- tema ---------- */
+(function(){
+  var root = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+  var label = document.getElementById('themeLabel');
+  var systemDark = window.matchMedia && matchMedia('(prefers-color-scheme: dark)');
+  function isDark(){
+    var set = root.getAttribute('data-theme');
+    if (set) return set === 'dark';
+    return !!(systemDark && systemDark.matches);
+  }
+  function sync(){
+    var dark = isDark();
+    var en = document.documentElement.lang === 'en';
+    label.textContent = dark ? (en ? 'Light mode' : 'Modo claro')
+                             : (en ? 'Dark mode' : 'Modo oscuro');
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+  }
+  btn.addEventListener('click', function(){
+    var dark = !isDark();
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    try{ localStorage.setItem('pali_dark', dark ? '1' : '0'); }catch(e){}
+    sync();
+  });
+  if (systemDark && systemDark.addEventListener){
+    systemDark.addEventListener('change', function(){
+      if (!root.getAttribute('data-theme')) sync();
+    });
+  }
+  document.getElementById('langToggle').addEventListener('click', function(){
+    setTimeout(sync, 0);
+  });
+  sync();
+})();
+</script>
+</body>
+</html>

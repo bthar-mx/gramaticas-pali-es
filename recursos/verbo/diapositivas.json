@@ -1,0 +1,1800 @@
+{
+ "_nota": "Extraído de las presentaciones por herramientas/extraer_verbo_diapositivas.py. Los PDF no viajan con el repositorio.",
+ "fuente": {
+  "autor": "Bhikkhu Nandisena",
+  "obra": "GP-T · presentaciones de clase sobre el verbo",
+  "presentaciones": 13
+ },
+ "escaleras": [
+  {
+   "lema": "paca",
+   "glosa": "cocinando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-I",
+   "pagina": 24,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "paca",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 445,
+       "ru": 433
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "pacati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "bhū",
+   "glosa": "existiendo/estando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-I",
+   "pagina": 25,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal presente indicativo"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 445,
+       "ru": 433
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "bho",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 485,
+       "ru": 434
+      }
+     ],
+     "operacion": "fortalecer vocal ‘ū’"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "bhava",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 513,
+       "ru": 435
+      }
+     ],
+     "operacion": "sustituir ‘o’ por ‘ava’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "bhav",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 83,
+       "ru": 67
+      }
+     ],
+     "operacion": "elidir vocal final de ‘bhava’"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "bhav",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "bhavati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "bhū",
+   "glosa": "existiendo/estando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-II",
+   "pagina": 11,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal presente indicativo"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 445,
+       "ru": 433
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "bho",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 485,
+       "ru": 434
+      }
+     ],
+     "operacion": "fortalecer vocal ‘ū’"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "bhava",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 513,
+       "ru": 435
+      }
+     ],
+     "operacion": "sustituir ‘o’ por ‘ava’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "bhav",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 83,
+       "ru": 67
+      }
+     ],
+     "operacion": "elidir vocal final de ‘bhava/"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "bhav",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "bhavati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "paca",
+   "glosa": "cocinando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-II",
+   "pagina": 12,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "paca",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 445,
+       "ru": 433
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "pacati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "anu-bhū",
+   "glosa": "experimentando",
+   "formacion": "Formación: voz pasiva, presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-VII",
+   "pagina": 11,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "anu-bhū",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "anu-bhū",
+     "signo": "",
+     "inflexion": "te",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal presente indicativo"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "anu-bhū",
+     "signo": "ya",
+     "inflexion": "te",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 440,
+       "ru": 445
+      }
+     ],
+     "operacion": "colocar el sufijo ‘ya’"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "anu-bhū",
+     "signo": "ya",
+     "inflexion": "te",
+     "resultado": "anu-bhūyate",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "paca",
+   "glosa": "cocinando",
+   "formacion": "Formación: voz pasiva presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-VII",
+   "pagina": 12,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "paca",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "te",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "ya",
+     "inflexion": "te",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 440,
+       "ru": 445
+      }
+     ],
+     "operacion": "colocar el sufijo ‘ya’"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "pacca",
+     "signo": "",
+     "inflexion": "te",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 441,
+       "ru": 447
+      }
+     ],
+     "operacion": "asimilación de ‘ya’ con ‘c’ - cya = cca"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "pacca",
+     "signo": "",
+     "inflexion": "te",
+     "resultado": "paccate",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "bhū",
+   "glosa": "existiendo/estando",
+   "formacion": "Formación: causativo, voz activa, presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-VIII",
+   "pagina": 13,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "ṇe/ṇaya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 438,
+       "ru": 540
+      }
+     ],
+     "operacion": "colocar sufijos causativos y asignar nombre “kārita”"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "bhū",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 523,
+       "ru": 526
+      }
+     ],
+     "operacion": "elidir ‘ṇ’"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "bho",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 483,
+       "ru": 527
+      }
+     ],
+     "operacion": "fortalecer vocal ‘ū’"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "bhāva",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 515,
+       "ru": 541
+      }
+     ],
+     "operacion": "sustituir ‘o’ por ‘āva’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "bhāv",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 12,
+       "ru": 13
+      }
+     ],
+     "operacion": "elidir vocal final"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "bhāv",
+     "signo": "e/aya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 455,
+       "ru": 530
+      }
+     ],
+     "operacion": "colocar inflexión verbal"
+    },
+    {
+     "n": 8,
+     "prefijo": "",
+     "raiz": "bhāv",
+     "signo": "e/aya",
+     "inflexion": "ti",
+     "resultado": "bhāvayati bhāveti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo causativo"
+    }
+   ]
+  },
+  {
+   "lema": "bhū",
+   "glosa": "existiendo/estando",
+   "formacion": "Formación: causativo, voz pasiva, presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-VIII",
+   "pagina": 14,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "bhū",
+     "raiz": "",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "bhū",
+     "raiz": "",
+     "signo": "ṇe/ṇaya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 438,
+       "ru": 540
+      }
+     ],
+     "operacion": "colocar sufijos causativos y asignar nombre “kārita”"
+    },
+    {
+     "n": 3,
+     "prefijo": "bhū",
+     "raiz": "",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 523,
+       "ru": 526
+      }
+     ],
+     "operacion": "elidir ‘ṇ’"
+    },
+    {
+     "n": 4,
+     "prefijo": "bho",
+     "raiz": "",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 483,
+       "ru": 527
+      }
+     ],
+     "operacion": "fortalecer vocal ‘ū’"
+    },
+    {
+     "n": 5,
+     "prefijo": "bhāva",
+     "raiz": "",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 515,
+       "ru": 541
+      }
+     ],
+     "operacion": "sustituir ‘o’ por ‘āva’"
+    },
+    {
+     "n": 6,
+     "prefijo": "bhāv",
+     "raiz": "",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 12,
+       "ru": 13
+      }
+     ],
+     "operacion": "elidir vocal final"
+    },
+    {
+     "n": 7,
+     "prefijo": "bhāv",
+     "raiz": "ya",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 440,
+       "ru": 445
+      }
+     ],
+     "operacion": "colocar sufijo ‘ya’"
+    },
+    {
+     "n": 8,
+     "prefijo": "bhāv",
+     "raiz": "i ya",
+     "signo": "e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 442,
+       "ru": 448
+      }
+     ],
+     "operacion": "insertar ‘i’"
+    },
+    {
+     "n": 9,
+     "prefijo": "bhāv",
+     "raiz": "i ya",
+     "signo": "e/aya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 455,
+       "ru": 530
+      }
+     ],
+     "operacion": "colocar inflexión verbal"
+    },
+    {
+     "n": 10,
+     "prefijo": "bhāv",
+     "raiz": "",
+     "signo": "e/aya",
+     "inflexion": "ti",
+     "resultado": "bhāvīyate",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo causativo"
+    }
+   ]
+  },
+  {
+   "lema": "paca",
+   "glosa": "cocinando",
+   "formacion": "Formación: causativo, presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-VIII",
+   "pagina": 15,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "paca",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "ṇāpe/ṇāpaya ṇe/ṇaya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 438,
+       "ru": 540
+      }
+     ],
+     "operacion": "colocar sufijos causativos y asignar nombre “kārita”"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "pac",
+     "signo": "āpe/āpaya e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 523,
+       "ru": 526
+      }
+     ],
+     "operacion": "elidir ‘ṇ’"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "pāc",
+     "signo": "āpe/āpaya e/aya",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 483,
+       "ru": 527
+      }
+     ],
+     "operacion": "fortalecer la vocal"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "pāc",
+     "signo": "āpe/āpaya e/aya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "pāc",
+     "signo": "āpe/āpaya e/aya",
+     "inflexion": "ti",
+     "resultado": "pācāpayati pācāpeti pācayati pāceti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo causativo"
+    }
+   ]
+  },
+  {
+   "lema": "rudhi",
+   "glosa": "cerrando/cubriendo, etc.",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-X",
+   "pagina": 6,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "rudhi",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "rudh",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "rudh",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "ruṃdh",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 446,
+       "ru": 509
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "rundh",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 31,
+       "ru": 49
+      }
+     ],
+     "operacion": "sustituir ‘ṃ’ por ’n’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "rundh",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "rundhati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "divu",
+   "glosa": "jugando/divirtiendo, etc.",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-X",
+   "pagina": 13,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "divu",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "div",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "div",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "div",
+     "signo": "ya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 447,
+       "ru": 510
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "div",
+     "signo": "ya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 444,
+       "ru": 511
+      }
+     ],
+     "operacion": "elidir ‘y’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "divv",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 28,
+       "ru": 40
+      }
+     ],
+     "operacion": "duplicar ‘v’"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "dibb",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 20,
+       "ru": 27
+      }
+     ],
+     "operacion": "sustituir ‘v’ por ‘b’"
+    },
+    {
+     "n": 8,
+     "prefijo": "",
+     "raiz": "dibba",
+     "signo": "a",
+     "inflexion": "ti",
+     "resultado": "dibbati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "su",
+   "glosa": "oyendo",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-X",
+   "pagina": 20,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "su",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "su",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "su",
+     "signo": "ṇā",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 448,
+       "ru": 512
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "su",
+     "signo": "ṇa",
+     "inflexion": "ti",
+     "resultado": "suṇāti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "kī",
+   "glosa": "intercambio/comerciando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-XI",
+   "pagina": 6,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "kī",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "kī",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "kī",
+     "signo": "nā",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 449,
+       "ru": 513
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "ki",
+     "signo": "nā",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 517,
+       "ru": 488
+      }
+     ],
+     "operacion": "se acorta la vocal de la raíz"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "ki",
+     "signo": "ṇā",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 449,
+       "ru": 513
+      }
+     ],
+     "operacion": "se sustituye ’n’ por ‘ṇ’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "ki",
+     "signo": "ṇā",
+     "inflexion": "ti",
+     "resultado": "kiṇāti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "gaha",
+   "glosa": "agarrando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-XI",
+   "pagina": 14,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "gaha",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "gah",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "gaha",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "gaha",
+     "signo": "ṇhā",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 450,
+       "ru": 517
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "ga",
+     "signo": "ṇhā",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 490,
+       "ru": 518
+      }
+     ],
+     "operacion": "se elide ‘ha’ de la raíz"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "ga",
+     "signo": "ṇhā",
+     "inflexion": "ti",
+     "resultado": "gaṇhāti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "tanu",
+   "glosa": "extendiendo",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-XI",
+   "pagina": 22,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "tanu",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "tan",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "tan",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "tan",
+     "signo": "o",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 451,
+       "ru": 520
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "tan",
+     "signo": "o",
+     "inflexion": "ti",
+     "resultado": "tanoti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "cura",
+   "glosa": "robando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-XII",
+   "pagina": 6,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "cura",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "ṇe",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 452,
+       "ru": 525
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "ṇe",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 523,
+       "ru": 526
+      }
+     ],
+     "operacion": "elidir ‘ṇ’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "cor",
+     "signo": "e",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 483,
+       "ru": 527
+      }
+     ],
+     "operacion": "fortalecer la vocal de la raíz"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "cor",
+     "signo": "e",
+     "inflexion": "ti",
+     "resultado": "coreti",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  },
+  {
+   "lema": "cura",
+   "glosa": "robando",
+   "formacion": "Formación: presente indicativo, tercera persona singular",
+   "fuente": "diapositiva",
+   "presentacion": "GP-T - Verbo-XII",
+   "pagina": 7,
+   "pasos": [
+    {
+     "n": 1,
+     "prefijo": "",
+     "raiz": "cura",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 457,
+       "ru": 424
+      }
+     ],
+     "operacion": "colocar la raíz"
+    },
+    {
+     "n": 2,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "",
+     "inflexion": "",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 521,
+       "ru": 425
+      }
+     ],
+     "operacion": "elidir la vocal final"
+    },
+    {
+     "n": 3,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 414,
+       "ru": 428
+      }
+     ],
+     "operacion": "colocar inflexión verbal, presente indicativo"
+    },
+    {
+     "n": 4,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "ṇaya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 452,
+       "ru": 525
+      }
+     ],
+     "operacion": "colocar signo de conjugación"
+    },
+    {
+     "n": 5,
+     "prefijo": "",
+     "raiz": "cur",
+     "signo": "ṇaya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 523,
+       "ru": 526
+      }
+     ],
+     "operacion": "elidir ‘ṇ’"
+    },
+    {
+     "n": 6,
+     "prefijo": "",
+     "raiz": "cor",
+     "signo": "aya",
+     "inflexion": "ti",
+     "resultado": "",
+     "autoridades": [
+      {
+       "kacc": 483,
+       "ru": 527
+      }
+     ],
+     "operacion": "fortalecer la vocal de la raíz"
+    },
+    {
+     "n": 7,
+     "prefijo": "",
+     "raiz": "cor",
+     "signo": "aya",
+     "inflexion": "ti",
+     "resultado": "corayati",
+     "autoridades": [
+      {
+       "kacc": 11,
+       "ru": 14
+      }
+     ],
+     "operacion": "formar el verbo"
+    }
+   ]
+  }
+ ]
+}
