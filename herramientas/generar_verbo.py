@@ -41,7 +41,7 @@ VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 INGLES = os.path.join(RAIZ, "recursos", "verbo", "ingles.json")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "verbo", "index.html")
 
-VERSION = "1.1"
+VERSION = "1.2"
 VERSION_FECHA = "2026-09-01"
 
 

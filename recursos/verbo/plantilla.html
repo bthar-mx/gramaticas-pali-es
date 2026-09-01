@@ -347,16 +347,25 @@
     display:block;font-size:.9rem;color:var(--ink-soft);
     margin:.25rem 0 0;max-width:78ch;
   }
-  .caracteristicas ul{
-    margin:.4rem 0 0;padding-left:1.1rem;
+  /* Los sub-ítems van NUMERADOS, no con topos: el documento se refiere a
+     ellos por su número —«4-5 se denominan tiempos no especificados»— y con
+     viñetas esa nota no dice nada. Las columnas se llenan hacia abajo y
+     luego a la derecha, que es el orden en que se leen. */
+  .caracteristicas ol.sub{
+    margin:.4rem 0 0;padding-left:1.5rem;
+    list-style:decimal;
     columns:2;column-gap:2.2rem;
   }
-  .caracteristicas ul li{
+  .caracteristicas ol.sub li{
     font-size:.92rem;color:var(--ink-soft);margin:.1rem 0;
     break-inside:avoid;
   }
-  .caracteristicas ul.larga{columns:1;}
-  @media (max-width:44rem){ .caracteristicas ul{columns:1;} }
+  .caracteristicas ol.sub li::marker{
+    color:var(--ochre);font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72em;
+  }
+  .caracteristicas ol.sub.larga{columns:1;}
+  @media (max-width:44rem){ .caracteristicas ol.sub{columns:1;} }
 
   td.exp{font-size:.87rem;color:var(--ink-soft);line-height:1.55;}
   td.exp ul{margin:0;padding-left:1.1rem;}
@@ -672,7 +681,11 @@ const VERSION_DATE = '__VERSION_DATE__';
             hit:'resultado', hits:'resultados',
             nada:'No aparece en la página.',
             mas:'y {0} más; afine la búsqueda.'},
-    version_nota: 'Entra la introducción del documento: las nueve '
+    version_nota: 'Los sub-ítems de la introducción van numerados, no con '
+      + 'topos: el documento se refiere a ellos por su número —«4-5 se '
+      + 'denominan tiempos no especificados»— y con viñetas esa nota no '
+      + 'decía nada. Antes, en la versión 1.1: Entra la introducción del '
+      + 'documento: las nueve '
       + 'características del verbo, los dos grupos de inflexiones, los ocho '
       + 'grupos de raíces y las conjugaciones sabbadhātuka y asabbadhātuka '
       + '—de donde sale la ‘i’ de los causativos—. Hay buscador sobre todas '
@@ -778,9 +791,9 @@ const VERSION_DATE = '__VERSION_DATE__';
       if (it.sub && it.sub.length){
         /* los grupos de raíces son líneas largas: a una columna */
         const larga = it.sub.some(x => x.length > 46);
-        h += '<ul' + (larga ? ' class="larga"' : '') + '>'
+        h += '<ol class="sub' + (larga ? ' larga' : '') + '">'
            + it.sub.map(x => '<li>' + esc(tr('intro', x)) + '</li>').join('')
-           + '</ul>';
+           + '</ol>';
       }
       h += '</li>';
     });
@@ -1142,7 +1155,7 @@ const VERSION_DATE = '__VERSION_DATE__';
   /* ---------- armado ---------- */
   const PANELES = [
     {id:'introduccion', cuenta:'', pinta:panelIntroduccion},
-    {id:'inflexiones',  cuenta:DATA.inflexiones.length + ' + 8', pinta:panelInflexiones},
+    {id:'inflexiones',  cuenta:DATA.inflexiones.length, pinta:panelInflexiones},
     {id:'formacion',    cuenta:DATA.escaleras.length, pinta:panelFormacion},
     {id:'paradigmas',   cuenta:DATA.paradigmas.length, pinta:panelParadigmas}
   ];
@@ -1173,7 +1186,9 @@ const VERSION_DATE = '__VERSION_DATE__';
     });
     if (ancla){
       const destino = document.getElementById(ancla);
-      if (destino) destino.scrollIntoView({block:'start', behavior:'smooth'});
+      /* Salto instantáneo, no animado: la página es larga y el
+         desplazamiento suave tardaba en recorrerla. */
+      if (destino) destino.scrollIntoView({block:'start', behavior:'auto'});
     }
     marcarIndice(id, ancla);
   }
@@ -1224,10 +1239,13 @@ const VERSION_DATE = '__VERSION_DATE__';
         + esc(x.rotulo)
         + (x.extra ? '<span class="cnt">' + esc(x.extra) + '</span>' : '')
         + '</a>').join('');
+      /* La cuenta es la misma que la de la pestaña —ocho inflexiones, no
+         nueve—: las entradas del índice incluyen además la de los gaṇas, y
+         contarlas ahí decía «9 inflexiones», que no es verdad. */
       return '<details class="sb-sec" data-sec="' + p.id + '"'
            + (p.id === 'introduccion' ? ' open' : '') + '>'
            + '<summary>' + esc(ui('pestanas', p.id))
-           + (items ? ' · ' + (ent[p.id]||[]).length : '') + '</summary>'
+           + (p.cuenta ? ' · ' + p.cuenta : '') + '</summary>'
            + items + '</details>';
     }).join('');
   }
@@ -1269,7 +1287,7 @@ const VERSION_DATE = '__VERSION_DATE__';
   document.getElementById('sbclose').addEventListener('click', alternarIndice);
 
   document.getElementById('top-btn').addEventListener('click', () => {
-    window.scrollTo({top:0, behavior:'smooth'});
+    window.scrollTo({top:0, behavior:'auto'});
   });
 
   /* ---------- insignia de versión ---------- */

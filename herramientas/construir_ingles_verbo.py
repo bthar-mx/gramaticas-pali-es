@@ -56,7 +56,12 @@ INTERFAZ = {
     "indice": "Index",
     "arriba": "Back to top",
     "version": "Version",
-    "version_nota": ("The introduction of the document is now on the page: "
+    "version_nota": ("The sub-items of the introduction are numbered rather "
+                     "than bulleted: the document refers to them by number "
+                     "—“4-5 are called unspecified tenses”— and against "
+                     "bullets that note said nothing. Previously, in version "
+                     "1.1: The introduction of the document is now on the "
+                     "page: "
                      "the nine characteristics of the verb, the two groups of "
                      "inflections, the eight groups of roots and the "
                      "sabbadhātuka / asabbadhātuka conjugations — which is "
