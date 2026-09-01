@@ -184,14 +184,57 @@
   }
   .tip[hidden]{display:none;}
 
+  /* ---------- buscador ---------- */
+  .buscador{
+    display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;
+    margin:clamp(1.2rem,3vw,1.6rem) 0 0;
+  }
+  .buscador input{
+    flex:1 1 22rem;min-width:0;
+    padding:.6rem .8rem;background:var(--card);color:var(--ink);
+    border:1px solid var(--rule);border-radius:2px;
+    font-family:"Gentium Book Plus",Georgia,serif;font-size:1rem;
+  }
+  .buscador input:focus-visible{outline:2px solid var(--ochre);
+    outline-offset:1px;border-color:var(--ochre);}
+  .buscador .cuantos{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  .resultados{margin:1.2rem 0 0;}
+  .resultados[hidden]{display:none;}
+  .res-grupo{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.62rem;font-weight:600;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--ochre);
+    margin:1.2rem 0 .5rem;
+  }
+  .res-grupo:first-child{margin-top:0;}
+  .resultados a{
+    display:flex;flex-wrap:wrap;gap:.2rem .7rem;align-items:baseline;
+    padding:.4rem .6rem;text-decoration:none;color:var(--ink);
+    border-bottom:1px solid var(--rule-soft);
+  }
+  .resultados a:hover{background:var(--hover);}
+  .resultados .hit{
+    font-family:"Gentium Book Plus",Georgia,serif;font-size:1.05rem;
+  }
+  .resultados .hit mark{
+    background:var(--ochre-wash);color:inherit;padding:0 .05em;
+  }
+  .resultados .donde{font-size:.82rem;color:var(--ink-soft);}
+  .sin-resultados{font-size:.9rem;color:var(--ink-soft);margin:1rem 0 0;}
+
   .aviso-ingles{
     border-left:2px solid var(--ochre);padding-left:.9rem;
-    font-size:.83rem;color:var(--ink-soft);margin:1.2rem 0 0;max-width:64ch;
+    font-size:.82rem;color:var(--ink-soft);margin:1.2rem 0 0;max-width:82ch;
   }
 
   .entradilla{
     margin:clamp(1.4rem,3.5vw,2rem) 0 0;
-    font-size:1.02rem;color:var(--ink-soft);max-width:62ch;
+    font-size:1rem;color:var(--ink-soft);max-width:72ch;
   }
   .entradilla b{color:var(--ink);font-weight:600;}
 
@@ -271,6 +314,50 @@
   td.forma{white-space:nowrap;}
   .forma.destacada{color:var(--ochre);font-weight:700;}
 
+  /* Las tres tablas de referencia —usos, voces, gaṇas— son de prosa, no de
+     formas: llevan anchos fijos, la cabecera envuelve y el término también.
+     Sin esto la columna de explicación se quedaba en una cinta estrecha
+     mientras la del signo de conjugación se llevaba media tabla. */
+  table.ref-tabla{table-layout:fixed;}
+  table.ref-tabla thead th{white-space:normal;}
+  .termino{
+    font-family:"Gentium Book Plus",Georgia,serif;font-size:1.02rem;
+    white-space:normal;
+  }
+  table.ref-tabla td.exp{font-size:.86rem;}
+  table.ref-tabla td.exp ul{padding-left:1rem;}
+
+  /* ---------- introducción en prosa ---------- */
+  .caracteristicas{margin:0 0 2.4rem;padding:0;list-style:none;
+    counter-reset:carac;}
+  .caracteristicas > li{
+    counter-increment:carac;position:relative;
+    padding:0 0 .1rem 2.4rem;margin:0 0 1.1rem;
+  }
+  .caracteristicas > li::before{
+    content:counter(carac);position:absolute;left:0;top:.15rem;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;color:var(--ochre);
+    font-variant-numeric:tabular-nums;
+  }
+  .caracteristicas > li > b{
+    display:block;font-weight:600;font-size:1.05rem;color:var(--ink);
+  }
+  .caracteristicas .desc{
+    display:block;font-size:.9rem;color:var(--ink-soft);
+    margin:.25rem 0 0;max-width:78ch;
+  }
+  .caracteristicas ul{
+    margin:.4rem 0 0;padding-left:1.1rem;
+    columns:2;column-gap:2.2rem;
+  }
+  .caracteristicas ul li{
+    font-size:.92rem;color:var(--ink-soft);margin:.1rem 0;
+    break-inside:avoid;
+  }
+  .caracteristicas ul.larga{columns:1;}
+  @media (max-width:44rem){ .caracteristicas ul{columns:1;} }
+
   td.exp{font-size:.87rem;color:var(--ink-soft);line-height:1.55;}
   td.exp ul{margin:0;padding-left:1.1rem;}
   td.exp li{margin:.15rem 0;}
@@ -320,6 +407,10 @@
     color:var(--ink-soft);margin:-.5rem 0 1rem;
   }
 
+  /* explicación tomada de las diapositivas, porque el documento no la trae */
+  td.exp.prestada{border-left:2px solid var(--rule);padding-left:.65rem;
+    cursor:help;}
+
   tr.propuesta{background:var(--ochre-wash);}
   .marca-propuesta{
     display:inline-block;margin-left:.45em;color:var(--ochre);cursor:help;
@@ -329,9 +420,9 @@
   .marca-corregida{margin-left:.3em;color:var(--ochre);cursor:help;}
 
   .leyenda{
-    font-size:.84rem;color:var(--ink-soft);
+    font-size:.82rem;color:var(--ink-soft);
     border-left:2px solid var(--rule);padding-left:.9rem;margin:0 0 2rem;
-    max-width:66ch;
+    max-width:82ch;
   }
   .leyenda b{color:var(--ink);font-weight:600;}
 
@@ -456,6 +547,12 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
   <p class="entradilla" id="entradilla"></p>
   <p class="aviso-ingles" id="aviso-ingles" hidden></p>
 
+  <div class="buscador">
+    <input type="search" id="q" autocomplete="off" spellcheck="false">
+    <span class="cuantos" id="cuantos"></span>
+  </div>
+  <div class="resultados" id="resultados" hidden></div>
+
   <div class="pestanas" role="tablist" id="pestanas"></div>
 
   <section class="panel" id="p-introduccion" role="tabpanel" hidden></section>
@@ -516,9 +613,14 @@ const VERSION_DATE = '__VERSION_DATE__';
                formacion:'Formación', paradigmas:'Paradigmas'},
     cabeceras: {paso:'paso', operaciones:'operaciones gramaticales',
                 autoridad:'autoridad', explicacion:'explicación'},
-    titulos: {usos:'Usos de las inflexiones verbales',
+    titulos: {caracteristicas:'Características del verbo',
+              usos:'Usos de las inflexiones verbales',
               voces:'Las tres voces', ganas:'Los ocho grupos de raíces'},
     marcas: {propuesta:'propuesta',
+             prestada:'El documento «Verbo» no trae columna de explicación. '
+                    + 'Ésta es la que las presentaciones dan para esta misma '
+                    + 'regla, y sólo se toma cuando todas la redactan igual y '
+                    + 'sin nombrar ninguna letra.',
              segun_documento:'según el documento «Verbo»',
              segun_diapositiva:'según {0}'},
     leyendas: {
@@ -532,7 +634,9 @@ const VERSION_DATE = '__VERSION_DATE__';
         + 'capítulo correspondiente de Kaccāyana. Las filas marcadas '
         + '<span class="marca-propuesta">propuesta</span> muestran una forma '
         + 'intermedia que la fuente no imprime, deducida de la regla citada; '
-        + 'el signo ✱ señala una autoridad corregida, y dice en qué.',
+        + 'el signo ✱ señala una autoridad corregida, y dice en qué. Las '
+        + 'explicaciones con filete a la izquierda vienen de las '
+        + 'presentaciones: el documento no tiene esa columna.',
       paradigmas: 'Ciento cinco tablas de conjugación. Las de <b>bhū</b> y '
         + '<b>paca</b> son del documento «Verbo»; las reunidas bajo <b>otros '
         + 'paradigmas</b> proceden de <i>The Higher Pali Course for Advanced '
@@ -540,7 +644,19 @@ const VERSION_DATE = '__VERSION_DATE__';
         + 'según dice el propio documento.'
     },
     tema: {oscuro:'Modo oscuro', claro:'Modo claro'},
-    version_nota: 'Primera versión de la página. Reúne el documento «Verbo» de '
+    busca: {placeholder:'Buscar una forma, una raíz, un tiempo…',
+            hit:'resultado', hits:'resultados',
+            nada:'No aparece en la página.',
+            mas:'y {0} más; afine la búsqueda.'},
+    version_nota: 'Entra la introducción del documento: las nueve '
+      + 'características del verbo, los dos grupos de inflexiones, los ocho '
+      + 'grupos de raíces y las conjugaciones sabbadhātuka y asabbadhātuka '
+      + '—de donde sale la ‘i’ de los causativos—. Hay buscador sobre todas '
+      + 'las formas, raíces y tiempos, que ignora los diacríticos. Cada '
+      + 'inflexión lleva ya su nombre pāḷi. Y las escaleras del documento, '
+      + 'que no tienen columna de explicación, toman la de las '
+      + 'presentaciones para la misma regla siempre que sea seguro hacerlo. '
+      + 'Antes, en la versión 1.0: Reúne el documento «Verbo» de '
       + 'Bhikkhu Nandisena y sus trece presentaciones de clase: 21 derivaciones '
       + 'con una operación por fila, la autoridad en el par Kaccāyana/Rūpasiddhi '
       + '—que el documento no daba— y 105 paradigmas de conjugación. Las filas '
@@ -599,10 +715,13 @@ const VERSION_DATE = '__VERSION_DATE__';
     return kacc + '<span class="ru"> / Rū ' + a.ru + '</span>' + corr;
   }
 
-  function tablaSimple(filas, clases){
+  function tablaSimple(filas, clases, anchos){
     if (!filas || !filas.length) return '';
     const cab = filas[0], cuerpo = filas.slice(1);
-    let h = '<div class="envoltura"><table><thead><tr>';
+    let h = '<div class="envoltura"><table class="ref-tabla">';
+    if (anchos) h += '<colgroup>'
+      + anchos.map(a => '<col style="width:' + a + '">').join('') + '</colgroup>';
+    h += '<thead><tr>';
     cab.forEach((c,i) => {
       h += '<th class="' + (clases[i]||'') + '">' + esc(String(c).replace(/ \/ /g,' ')) + '</th>';
     });
@@ -621,13 +740,39 @@ const VERSION_DATE = '__VERSION_DATE__';
   }
 
   /* ---------- introducción ---------- */
+  function panelCaracteristicas(){
+    const intro = DATA.introduccion;
+    if (!intro || !intro.items || !intro.items.length) return '';
+    let h = '<h2 id="s-caracteristicas">' + esc(ui('titulos','caracteristicas'))
+          + '</h2>';
+    h += '<p class="sub pali">ākhyāta</p>';
+    h += '<p class="leyenda">' + esc(tr('intro', intro.entradilla)) + '</p>';
+    h += '<ol class="caracteristicas">';
+    intro.items.forEach(it => {
+      h += '<li><b>' + esc(tr('intro', it.texto)) + '</b>';
+      if (it.nota) h += '<span class="desc">' + esc(tr('intro', it.nota)) + '</span>';
+      if (it.sub && it.sub.length){
+        /* los grupos de raíces son líneas largas: a una columna */
+        const larga = it.sub.some(x => x.length > 46);
+        h += '<ul' + (larga ? ' class="larga"' : '') + '>'
+           + it.sub.map(x => '<li>' + esc(tr('intro', x)) + '</li>').join('')
+           + '</ul>';
+      }
+      h += '</li>';
+    });
+    return h + '</ol>';
+  }
+
   function panelIntroduccion(){
-    let h = '<h2 id="s-usos">' + esc(ui('titulos','usos')) + '</h2>';
+    let h = panelCaracteristicas();
+    h += '<h2 id="s-usos">' + esc(ui('titulos','usos')) + '</h2>';
     h += '<p class="sub pali">ākhyāta vibhatti</p>';
-    h += tablaSimple(tabla('usos', DATA.usos), ['n','forma','exp']);
+    h += tablaSimple(tabla('usos', DATA.usos), ['n','termino','exp'],
+                     ['3.5rem','26%','auto']);
     h += '<h2 id="s-voces">' + esc(ui('titulos','voces')) + '</h2>';
     h += '<p class="sub pali">kāraka</p>';
-    h += tablaSimple(tabla('voces_tabla', DATA.voces), ['n','forma','exp']);
+    h += tablaSimple(tabla('voces_tabla', DATA.voces), ['n','termino','exp'],
+                     ['3.5rem','22%','auto']);
     return h;
   }
 
@@ -661,7 +806,9 @@ const VERSION_DATE = '__VERSION_DATE__';
     });
     h += '<h2 id="s-ganas">' + esc(ui('titulos','ganas'))
        + '</h2><p class="sub pali">gaṇa</p>';
-    h += tablaSimple(tabla('ganas', DATA.ganas), ['n','forma','forma','exp']);
+    h += tablaSimple(tabla('ganas', DATA.ganas),
+                     ['n','termino','termino','exp'],
+                     ['3.5rem','27%','16%','auto']);
     return h;
   }
 
@@ -695,7 +842,10 @@ const VERSION_DATE = '__VERSION_DATE__';
       h += '<td class="forma' + (p.resultado ? ' destacada' : '') + '">'
          + esc(p.resultado || cuerpo) + marca + '</td>';
       h += '<td class="ref">' + p.autoridades.map(autoridad).join('<br>') + '</td>';
-      h += '<td class="exp">' + esc(tr('operaciones', p.operacion)) + '</td>';
+      h += '<td class="exp' + (p.explicacion_prestada ? ' prestada' : '') + '"'
+         + (p.explicacion_prestada
+            ? ' title="' + esc(ui('marcas','prestada')) + '"' : '')
+         + '>' + esc(tr('operaciones', p.operacion)) + '</td>';
       h += '</tr>';
     });
     return h + '</tbody></table></div></article>';
@@ -745,6 +895,123 @@ const VERSION_DATE = '__VERSION_DATE__';
     });
     return h;
   }
+
+  /* ---------- buscador ----------
+     Un índice plano de todo lo buscable: las formas de los 105 paradigmas,
+     las de las 21 escaleras, los lemas, las glosas y los nombres de las
+     inflexiones. Se compara sin diacríticos, como en el resto del sitio. */
+
+  const sinDiacriticos = t => String(t || '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+  let INDICE = null;
+
+  function construirIndice(){
+    const fuera = [];
+    const mete = (texto, panel, ancla, donde) => {
+      const t = String(texto || '').trim();
+      if (!t) return;
+      fuera.push({t, k: sinDiacriticos(t), panel, ancla, donde});
+    };
+
+    DATA.inflexiones.forEach(inf => {
+      const a = 'i-' + ranura(inf.titulo);
+      const d = tr('tiempos', inf.titulo);
+      mete(d, 'inflexiones', a, ui('pestanas','inflexiones'));
+      if (inf.pali) mete(inf.pali, 'inflexiones', a, d);
+      inf.tabla.slice(2).forEach(fila => fila.slice(1).forEach(
+        f => mete(f, 'inflexiones', a, d)));
+    });
+
+    DATA.escaleras.forEach((e,i) => {
+      const a = idEscalera(e,i);
+      const d = '√' + e.lema + ' → ' + e.resultado;
+      mete(e.lema, 'formacion', a, d);
+      mete(e.resultado, 'formacion', a, d);
+      if (e.glosa) mete(tr('glosas', e.glosa), 'formacion', a, d);
+      e.pasos.forEach(p => {
+        [p.prefijo, p.raiz, p.signo, p.inflexion, p.resultado]
+          .forEach(x => mete(x, 'formacion', a, d));
+      });
+    });
+
+    gruposParadigmas().forEach(g => {
+      mete(g.rotulo, 'paradigmas', g.id, ui('pestanas','paradigmas'));
+      g.lista.forEach(p => {
+        const d = g.rotulo + ' · ' + tr('tiempos', p.tiempo);
+        p.filas.forEach(fila => fila.formas.forEach(
+          f => mete(f, 'paradigmas', g.id, d)));
+      });
+    });
+
+    // una entrada por forma distinta y sitio distinto
+    const visto = new Set(); const limpio = [];
+    fuera.forEach(x => {
+      const c = x.k + '|' + x.panel + '|' + x.ancla;
+      if (visto.has(c)) return;
+      visto.add(c); limpio.push(x);
+    });
+    return limpio;
+  }
+
+  function resaltar(texto, aguja){
+    const k = sinDiacriticos(texto), i = k.indexOf(aguja);
+    if (i < 0) return esc(texto);
+    return esc(texto.slice(0,i)) + '<mark>' + esc(texto.slice(i, i+aguja.length))
+         + '</mark>' + esc(texto.slice(i+aguja.length));
+  }
+
+  const caja = document.getElementById('q');
+  const salida = document.getElementById('resultados');
+  const cuantos = document.getElementById('cuantos');
+  const TOPE = 80;
+
+  function buscar(){
+    const bruto = (caja.value || '').trim();
+    const aguja = sinDiacriticos(bruto);
+    if (aguja.length < 2){
+      salida.hidden = true; salida.innerHTML = '';
+      cuantos.textContent = '';
+      return;
+    }
+    if (!INDICE) INDICE = construirIndice();
+    const hits = INDICE.filter(x => x.k.indexOf(aguja) >= 0);
+    // los que empiezan por la aguja, primero
+    hits.sort((a,b) => (a.k.indexOf(aguja) - b.k.indexOf(aguja))
+                    || a.t.localeCompare(b.t));
+    cuantos.textContent = hits.length
+      + ' ' + (hits.length === 1 ? ui('busca','hit') : ui('busca','hits'));
+    if (!hits.length){
+      salida.innerHTML = '<p class="sin-resultados">'
+        + esc(ui('busca','nada')) + '</p>';
+      salida.hidden = false;
+      return;
+    }
+    let h = '', grupo = null;
+    hits.slice(0, TOPE).forEach(x => {
+      if (x.panel !== grupo){
+        grupo = x.panel;
+        h += '<p class="res-grupo">' + esc(ui('pestanas', x.panel)) + '</p>';
+      }
+      h += '<a href="#" data-panel="' + x.panel + '" data-ancla="' + x.ancla + '">'
+         + '<span class="hit">' + resaltar(x.t, aguja) + '</span>'
+         + '<span class="donde">' + esc(x.donde) + '</span></a>';
+    });
+    if (hits.length > TOPE)
+      h += '<p class="sin-resultados">'
+         + esc(String(ui('busca','mas')).replace('{0}', hits.length - TOPE))
+         + '</p>';
+    salida.innerHTML = h;
+    salida.hidden = false;
+  }
+
+  caja.addEventListener('input', buscar);
+  salida.addEventListener('click', ev => {
+    const a = ev.target.closest('a[data-panel]');
+    if (!a) return;
+    ev.preventDefault();
+    mostrar(a.dataset.panel, a.dataset.ancla);
+  });
 
   /* ---------- armado ---------- */
   const PANELES = [
@@ -806,6 +1073,7 @@ const VERSION_DATE = '__VERSION_DATE__';
   function entradasIndice(){
     return {
       introduccion: [
+        {ancla:'s-caracteristicas', rotulo:ui('titulos','caracteristicas')},
         {ancla:'s-usos',  rotulo:ui('titulos','usos')},
         {ancla:'s-voces', rotulo:ui('titulos','voces')}
       ],
@@ -930,6 +1198,10 @@ const VERSION_DATE = '__VERSION_DATE__';
     document.getElementById('colofon-obra').textContent = ui('titulo_llano');
     document.getElementById('langLabel').textContent =
       LANG === 'en' ? 'Español' : 'English';
+    caja.setAttribute('placeholder', ui('busca','placeholder'));
+    caja.setAttribute('aria-label', ui('busca','placeholder'));
+    INDICE = null;
+    if ((caja.value || '').trim()) buscar();
 
     document.getElementById('entradilla').innerHTML =
       String(ui('entradilla'))
@@ -937,7 +1209,8 @@ const VERSION_DATE = '__VERSION_DATE__';
         .replace('{paradigmas}', DATA.paradigmas.length);
 
     document.getElementById('pie-fuente').innerHTML = (LANG === 'en')
-      ? ('Based on ' + esc(f.basado_en) + '. References: ' + esc(f.referencias)
+      ? ('Based on ' + esc(tr('fuente', f.basado_en)) + '. References: '
+         + esc(tr('fuente', f.referencias))
          + '. The paradigms in the <i>other paradigms</i> section come from '
          + '<i>The Higher Pali Course for Advanced Students</i>, by the Venerable '
          + 'Buddhadatta Thera (The Colombo Apothecaries’ Co., Ltd., Colombo, Sri '

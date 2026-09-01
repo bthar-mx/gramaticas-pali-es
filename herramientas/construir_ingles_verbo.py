@@ -56,7 +56,17 @@ INTERFAZ = {
     "indice": "Index",
     "arriba": "Back to top",
     "version": "Version",
-    "version_nota": ("First version of the page. It brings together Bhikkhu "
+    "version_nota": ("The introduction of the document is now on the page: "
+                     "the nine characteristics of the verb, the two groups of "
+                     "inflections, the eight groups of roots and the "
+                     "sabbadhātuka / asabbadhātuka conjugations — which is "
+                     "where the ‘i’ of the causatives comes from. There is a "
+                     "search box over every form, root and tense, ignoring "
+                     "diacritics. Each inflection now carries its Pāḷi name. "
+                     "And the derivations from the document, which had no "
+                     "explanation column, borrow the presentations' wording "
+                     "for the same rule wherever it is safe to do so. "
+                     "Previously, in version 1.0: it brought together Bhikkhu "
                      "Nandisena's «Verbo» document and his thirteen class "
                      "presentations: 21 derivations with one operation per "
                      "row, the authority given as the Kaccāyana/Rūpasiddhi "
@@ -83,12 +93,17 @@ INTERFAZ = {
         "explicacion": "explanation",
     },
     "titulos": {
+        "caracteristicas": "Characteristics of the verb",
         "usos": "Uses of the verbal inflections",
         "voces": "The three voices",
         "ganas": "The eight groups of roots",
     },
     "marcas": {
         "propuesta": "proposed",
+        "prestada": ("The «Verbo» document has no explanation column. This is "
+                     "the one the presentations give for this same rule, and "
+                     "it is borrowed only when they all word it alike and "
+                     "name no letter."),
         "segun_documento": "according to the «Verbo» document",
         "segun_diapositiva": "according to {0}",
     },
@@ -106,7 +121,9 @@ INTERFAZ = {
                       "<span class=\"marca-propuesta\">proposed</span> show an "
                       "intermediate form the source does not print, deduced "
                       "from the rule cited; the sign ✱ marks a corrected "
-                      "authority, and says how."),
+                      "authority, and says how. Explanations with a rule to "
+                      "their left come from the presentations: the document "
+                      "has no such column."),
         "paradigmas": ("One hundred and five conjugation tables. Those of "
                        "<b>bhū</b> and <b>paca</b> are from the «Verbo» "
                        "document; those gathered under <b>other paradigms</b> "
@@ -115,6 +132,13 @@ INTERFAZ = {
                        "(Colombo, 1951), as the document itself states."),
     },
     "tema": {"oscuro": "Dark mode", "claro": "Light mode"},
+    "busca": {
+        "placeholder": "Search a form, a root, a tense…",
+        "hit": "result",
+        "hits": "results",
+        "nada": "It does not appear on this page.",
+        "mas": "and {0} more; narrow the search.",
+    },
     "pie_aviso": ("The English of this page is the interface only. The prose "
                   "of the IEBH is shown in Spanish until the translation is "
                   "signed off."),
@@ -187,6 +211,101 @@ TIEMPOS = {
     "futuro": "future",
     "condicional": "conditional",
     "presente indicativo": "present indicative",
+}
+
+# La introducción del documento: las nueve características del verbo, los dos
+# grupos de inflexiones, los ocho grupos de raíces y las conjugaciones
+# sabbadhātuka y asabbadhātuka. Los nombres pāḷi se conservan entre paréntesis
+# tal como los deja el español; sólo se traduce lo que va fuera.
+INTRO = {
+    "A continuación se indican las características del verbo:":
+        "The characteristics of the verb are as follows:",
+
+    "tres períodos de tiempo (tikāla)": "three time periods (tikāla)",
+    "seis tiempos": "six tenses",
+    "tres personas (tipurisa)": "three persons (tipurisa)",
+    "indica acción (kriyāvācī)": "it indicates action (kriyāvācī)",
+    "tres voces (tikāraka)": "three voices (tikāraka)",
+    "carece de los tres géneros (atiliṅga)":
+        "it lacks the three genders (atiliṅga)",
+    "es de dos clases de acuerdo con el objeto":
+        "it is of two kinds according to the object",
+    "dos números (dvivacana)": "two numbers (dvivacana)",
+    "ocho grupos de inflexiones (vibhatti)":
+        "eight groups of inflections (vibhatti)",
+    "dos grupos de inflexiones": "two groups of inflections",
+    "ocho grupos de raíces": "eight groups of roots",
+    "conjugaciones sabbadhātuka": "sabbadhātuka conjugations",
+    "conjugaciones asabbadhātuka": "asabbadhātuka conjugations",
+
+    "Nota: 4-5 se denominan tiempos no especificados (anutta-kāla), mientras "
+    "que el 6 se considerada como pasado (atīta-kāla).":
+        "Note: 4–5 are called unspecified tenses (anutta-kāla), while 6 is "
+        "regarded as past (atīta-kāla).",
+    "En las conjugaciones que siguen, denominadas “todas las raíces” "
+    "(sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal.":
+        "In the conjugations that follow, called “all roots” (sabbadhātuka), "
+        "‘i’ is not inserted before the verbal inflection suffix.",
+    "En las conjugaciones que siguen, denominadas “no todas las raíces” "
+    "(asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de "
+    "inflexión verbal.":
+        "In the conjugations that follow, called “not all roots” "
+        "(asabbadhātuka), ‘i’ is optionally inserted before the verbal "
+        "inflection suffix.",
+
+    "Pasado (atīta),": "Past (atīta),",
+    "Futuro (anāgata),": "Future (anāgata),",
+    "Presente (paccuppanna).": "Present (paccuppanna).",
+    "Pasado (atīta)": "Past (atīta)",
+    "Futuro (anāgata)": "Future (anāgata)",
+    "Presente (paccuppanna)": "Present (paccuppanna)",
+    "Imperative (āṇatti)": "Imperative (āṇatti)",
+    "Supposition (parikappa)": "Supposition (parikappa)",
+    "Conditional (kālātipatti).": "Conditional (kālātipatti).",
+    "Tercera (paṭhama)": "Third (paṭhama)",
+    "Media (majjhima)": "Middle (majjhima)",
+    "Primera (uttama)": "First (uttama)",
+    "Activa (kattu)": "Active (kattu)",
+    "Pasiva (kamma)": "Passive (kamma)",
+    "Impersonal (bhāva)": "Impersonal (bhāva)",
+    "Transitivo = con objeto (sakammaka)":
+        "Transitive = with object (sakammaka)",
+    "Intransitivo = sin objeto (akammaka)":
+        "Intransitive = without object (akammaka)",
+    "Singular (ekavacana)": "Singular (ekavacana)",
+    "Plural (bahuvacana)": "Plural (bahuvacana)",
+    "Presente (vattamānā)": "Present (vattamānā)",
+    "Imperative (pañcamī)": "Imperative (pañcamī)",
+    "Imperativo (pañcamī)": "Imperative (pañcamī)",
+    "Potencial (sattamī)": "Potential (sattamī)",
+    "Imperfecto (hiyyattanī)": "Imperfect (hiyyattanī)",
+    "Perfecto (parokkhā)": "Perfect (parokkhā)",
+    "Aoristo (ajjatanī)": "Aorist (ajjatanī)",
+    "Futuro (bhavissantī)": "Future (bhavissantī)",
+    "Conditional (kālātipatti)": "Conditional (kālātipatti)",
+    "Voz para otra; voz activa o transitiva (parassapada)":
+        "Word for another; active or transitive voice (parassapada)",
+    "Voz para sí misma, voz media o reflexiva (attanopada)":
+        "Word for oneself; middle or reflexive voice (attanopada)",
+}
+for _raiz, _gana, _signo in [
+        ("bhū", "bhūvādi", "a"), ("rudhi", "rudhādi", "ṃ-a"),
+        ("divu", "divādi", "ya"), ("su", "svādi", "ṇu, ṇā, uṇā"),
+        ("kī", "kiyādi", "nā"), ("gaha", "gahādi", "ppa, ṇhā"),
+        ("tanu", "tanādi", "o, yira"), ("cura", "curādi", "ṇe, naya’.")]:
+    _cierre = "" if _signo.endswith("’.") else "’"
+    _es = (f"Grupo que comienza con la raíz “{_raiz}” ({_gana}-gaṇa) — "
+           f"signo de conjugación ‘{_signo}{_cierre}")
+    _en = (f"Group beginning with the root “{_raiz}” ({_gana}-gaṇa) — "
+           f"conjugational sign ‘{_signo}{_cierre}")
+    INTRO[_es] = _en
+
+# La línea de procedencia del pie. La cita es la misma; sólo cambia la «y».
+FUENTE = {
+    "Rū. pp. 256-33 y Sad. iii pp. 267-311":
+        "Rū. pp. 256-33 and Sad. iii pp. 267-311",
+    "Kaccāyana cap. vi; Rūpasiddhi cap. vi; Saddanīti-Suttamālā xv, 811-844":
+        "Kaccāyana ch. vi; Rūpasiddhi ch. vi; Saddanīti-Suttamālā xv, 811-844",
 }
 
 # Las notas que el documento pone bajo el título de algunas inflexiones.
@@ -395,6 +514,8 @@ def main():
             "entradas": ENTRADAS,
             "obras": OBRAS,
             "notas": NOTAS,
+            "fuente": FUENTE,
+            "intro": INTRO,
             "usos": USOS,
             "voces_tabla": VOCES_TABLA,
             "ganas": GANAS,

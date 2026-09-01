@@ -177,10 +177,45 @@ no «optative».
 El cotejo para firmar, con los cinco puntos que quedan por decidir:
 `docs/verbo/ingles-por-adjudicar.md`.
 
+## 6 bis. LO QUE ENTRÓ DESPUÉS DEL PRIMER COMMIT (v1.1)
+
+El commit `47246b1` publicó la v1.0. Lo que sigue va encima, sin empujar.
+
+1. **La introducción del documento, que se había quedado fuera entera.** El
+   extractor leía tablas y esa parte es prosa: 13 ítems y 45 sub-ítems con
+   las nueve características del verbo, los dos grupos de inflexiones, los
+   ocho grupos de raíces y las conjugaciones **sabbadhātuka** y
+   **asabbadhātuka**. Esta última importa más que las otras: es de donde sale
+   la ‘i’ que los causativos insertan, y la página la usaba sin haberla
+   definido nunca. Lo detectó Angel preguntando por ella.
+2. **Buscador** sobre las ~1.300 formas de los paradigmas y las escaleras,
+   más lemas, glosas y nombres de inflexión. Ignora los diacríticos; el
+   índice se rehace al cambiar de idioma, de modo que busca en la lengua que
+   se está viendo.
+3. **Nombre pāḷi de cada inflexión** junto al castellano, y su nota cuando el
+   documento la trae.
+4. **Explicaciones prestadas de las diapositivas** para las escaleras del
+   documento, que no tienen esa columna. 20 celdas de 31; las 11 restantes se
+   quedan en blanco a propósito. La cautela que las deja vacías vale la pena
+   contarla: Kacc. §485 es la regla general de vuddhi y las diapositivas sólo
+   la usan con «bhū», de modo que su redacción dice «fortalecer vocal ‘ū’»
+   —falsa para «su», que en ese paso hace ṇu → ṇo—; y Kacc. §20, el comodín
+   del «ca», aparece como «sustituir ‘v’ por ‘b’» en «divu» y ampara una
+   duplicación en «vi-kī». Sólo se presta lo puramente estructural.
+5. **Las tres tablas de referencia** llevan anchos fijos: la columna de
+   explicación se quedaba en una cinta estrecha mientras la del signo de
+   conjugación se llevaba media tabla.
+6. **La portada, `/recursos/` y el índice de Kaccāyana, en inglés**, con
+   botón `EN`/`ES` junto al del tema. Las dos lenguas viajan en el HTML
+   —`.i-es` y `.i-en`, con su regla en `site/assets/pali.css`— y sin
+   JavaScript se ve el español. La clave `pali_lang` es la misma que usan las
+   páginas de recurso, así que la elección acompaña al lector por todo el
+   sitio. `generar_indices.py` avisa de lo que se quede sin traducir.
+
 ## 7. POR DÓNDE SIGUE LA 43
 
-1. **Leer el inglés con calma.** Está publicado, pero la traducción se hizo en
-   una tarde; `docs/verbo/ingles-por-adjudicar.md` guarda el cotejo lado a
+1. **Leer el inglés con calma.** Está publicado —el de la página del verbo y
+   el de los tres índices—, pero se hizo en una tarde; `docs/verbo/ingles-por-adjudicar.md` guarda el cotejo lado a
    lado y los cinco puntos donde el inglés se aparta o podría discutirse
    —«potential» por *sattamī*, la glosa de *parassapada/attanopada*, *kāraka*
    por «voz»—.

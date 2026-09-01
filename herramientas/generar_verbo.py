@@ -41,7 +41,7 @@ VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 INGLES = os.path.join(RAIZ, "recursos", "verbo", "ingles.json")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "verbo", "index.html")
 
-VERSION = "1.0"
+VERSION = "1.1"
 VERSION_FECHA = "2026-09-01"
 
 
@@ -82,6 +82,10 @@ def verificar(verbo, escs):
     """Lo que tiene que cuadrar para publicar."""
     fallos = []
 
+    intro = verbo.get("introduccion") or {}
+    if len(intro.get("items", [])) != 13:
+        fallos.append(f"la introducción trae {len(intro.get('items', []))} "
+                      "ítems; deberían ser 13")
     if len(verbo["inflexiones"]) != 8:
         fallos.append(f"{len(verbo['inflexiones'])} tablas de inflexión; "
                       "deberían ser 8")
@@ -150,6 +154,7 @@ def main():
 
     datos = {
         "fuente": verbo["fuente"],
+        "introduccion": verbo.get("introduccion", {}),
         "usos": verbo["usos"],
         "voces": verbo["voces"],
         "inflexiones": verbo["inflexiones"],

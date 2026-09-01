@@ -48,6 +48,11 @@ def españolas(verbo, escs):
                                if p["tiempo"]}
                               | {i["titulo"] for i in verbo["inflexiones"]})
     fuera["voces"] = sorted({p["voz"] for p in verbo["paradigmas"] if p["voz"]})
+    intro = verbo.get("introduccion") or {}
+    cadenas = [intro.get("entradilla", "")]
+    for it in intro.get("items", []):
+        cadenas += [it["texto"], it.get("nota", "")] + it.get("sub", [])
+    fuera["intro"] = sorted({c for c in cadenas if c})
     fuera["personas"] = sorted({f["persona"].replace(" / ", " ")
                                 for p in verbo["paradigmas"]
                                 for f in p["filas"]}

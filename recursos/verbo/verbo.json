@@ -9,6 +9,132 @@
   "publicacion_iebh": "20130407-BN-T0021",
   "referencias": "Kaccāyana cap. vi; Rūpasiddhi cap. vi; Saddanīti-Suttamālā xv, 811-844"
  },
+ "introduccion": {
+  "entradilla": "A continuación se indican las características del verbo:",
+  "items": [
+   {
+    "texto": "tres períodos de tiempo (tikāla)",
+    "nota": "",
+    "sub": [
+     "Pasado (atīta),",
+     "Futuro (anāgata),",
+     "Presente (paccuppanna)."
+    ]
+   },
+   {
+    "texto": "seis tiempos",
+    "nota": "Nota: 4-5 se denominan tiempos no especificados (anutta-kāla), mientras que el 6 se considerada como pasado (atīta-kāla).",
+    "sub": [
+     "Pasado (atīta)",
+     "Futuro (anāgata)",
+     "Presente (paccuppanna)",
+     "Imperative (āṇatti)",
+     "Supposition (parikappa)",
+     "Conditional (kālātipatti)."
+    ]
+   },
+   {
+    "texto": "tres personas (tipurisa)",
+    "nota": "",
+    "sub": [
+     "Tercera (paṭhama)",
+     "Media (majjhima)",
+     "Primera (uttama)"
+    ]
+   },
+   {
+    "texto": "indica acción (kriyāvācī)",
+    "nota": "",
+    "sub": []
+   },
+   {
+    "texto": "tres voces (tikāraka)",
+    "nota": "",
+    "sub": [
+     "Activa (kattu)",
+     "Pasiva (kamma)",
+     "Impersonal (bhāva)"
+    ]
+   },
+   {
+    "texto": "carece de los tres géneros (atiliṅga)",
+    "nota": "",
+    "sub": []
+   },
+   {
+    "texto": "es de dos clases de acuerdo con el objeto",
+    "nota": "",
+    "sub": [
+     "Transitivo = con objeto (sakammaka)",
+     "Intransitivo = sin objeto (akammaka)"
+    ]
+   },
+   {
+    "texto": "dos números (dvivacana)",
+    "nota": "",
+    "sub": [
+     "Singular (ekavacana)",
+     "Plural (bahuvacana)"
+    ]
+   },
+   {
+    "texto": "ocho grupos de inflexiones (vibhatti)",
+    "nota": "",
+    "sub": [
+     "Presente (vattamānā)",
+     "Imperative (pañcamī)",
+     "Potencial (sattamī)",
+     "Imperfecto (hiyyattanī)",
+     "Perfecto (parokkhā)",
+     "Aoristo (ajjatanī)",
+     "Futuro (bhavissantī)",
+     "Conditional (kālātipatti)"
+    ]
+   },
+   {
+    "texto": "dos grupos de inflexiones",
+    "nota": "",
+    "sub": [
+     "Voz para otra; voz activa o transitiva (parassapada)",
+     "Voz para sí misma, voz media o reflexiva (attanopada)"
+    ]
+   },
+   {
+    "texto": "ocho grupos de raíces",
+    "nota": "",
+    "sub": [
+     "Grupo que comienza con la raíz “bhū” (bhūvādi-gaṇa) — signo de conjugación ‘a’",
+     "Grupo que comienza con la raíz “rudhi” (rudhādi-gaṇa) — signo de conjugación ‘ṃ-a’",
+     "Grupo que comienza con la raíz “divu” (divādi-gaṇa) — signo de conjugación ‘ya’",
+     "Grupo que comienza con la raíz “su” (svādi-gaṇa) — signo de conjugación ‘ṇu, ṇā, uṇā’",
+     "Grupo que comienza con la raíz “kī” (kiyādi-gaṇa) — signo de conjugación ‘nā’",
+     "Grupo que comienza con la raíz “gaha” (gahādi-gaṇa) — signo de conjugación ‘ppa, ṇhā’",
+     "Grupo que comienza con la raíz “tanu” (tanādi-gaṇa) — signo de conjugación ‘o, yira’",
+     "Grupo que comienza con la raíz “cura” (curādi-gaṇa) — signo de conjugación ‘ṇe, naya’."
+    ]
+   },
+   {
+    "texto": "conjugaciones sabbadhātuka",
+    "nota": "En las conjugaciones que siguen, denominadas “todas las raíces” (sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal.",
+    "sub": [
+     "Presente (vattamānā)",
+     "Imperativo (pañcamī)",
+     "Potencial (sattamī)",
+     "Imperfecto (hiyyattanī)"
+    ]
+   },
+   {
+    "texto": "conjugaciones asabbadhātuka",
+    "nota": "En las conjugaciones que siguen, denominadas “no todas las raíces” (asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal.",
+    "sub": [
+     "Perfecto (parokkhā)",
+     "Aoristo (ajjatanī)",
+     "Futuro (bhavissantī)",
+     "Conditional (kālātipatti)"
+    ]
+   }
+  ]
+ },
  "usos": [
   [
    "#",

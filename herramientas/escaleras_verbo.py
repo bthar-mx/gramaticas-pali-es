@@ -68,6 +68,66 @@ CORRECCIONES = {
 CELDAS = ("prefijo", "raiz", "signo", "inflexion")
 
 
+# --------------------------------------------------------------------------
+# Explicaciones prestadas de las diapositivas
+# --------------------------------------------------------------------------
+#
+# El documento «Verbo» NO tiene columna de explicación: sus escaleras enseñan
+# el paso y la autoridad y callan el porqué. Las diapositivas sí la traen, y
+# describen la misma regla con las mismas palabras. De ahí se toma, con tres
+# cautelas, porque «la misma regla» no siempre es «la misma operación»:
+#
+# 1. Sólo se presta cuando **todas** las diapositivas redactan esa regla
+#    igual. Kacc. §449 la usa una vez para colocar el signo ‘nā’ y otra para
+#    sustituir ‘n’ por ‘ṇ’ —son dos operaciones—, y Kacc. §483 la redacta
+#    según la vocal de cada raíz. Ésas se dejan vacías.
+# 2. Las diferencias de puntuación no cuentan como redacciones distintas:
+#    «colocar inflexión verbal, presente indicativo» y la misma sin coma son
+#    la misma frase, y se toma la más frecuente.
+# 3. **Nunca se presta una frase que entrecomille una letra o una forma.**
+#    Ésta es la cautela que más recorta, y la que hace falta: Kacc. §485 es
+#    la regla general de vuddhi y las diapositivas sólo la usan con «bhū», de
+#    modo que su redacción dice «fortalecer vocal ‘ū’» —falsa para «su», que
+#    en ese paso hace ṇu → ṇo—. Y Kacc. §20, el comodín del «ca», aparece
+#    como «sustituir ‘v’ por ‘b’» en «divu» y ampara una duplicación en
+#    «vi-kī». Sólo se presta lo puramente estructural: «colocar la raíz»,
+#    «elidir la vocal final», «colocar signo de conjugación», «formar el
+#    verbo». Lo demás se queda en blanco, que es lo honrado.
+#
+# Cada celda prestada queda marcada con `explicacion_prestada`, y la página
+# lo dice.
+
+RE_FORMA_CITADA = re.compile(r"[‘'\"“][^’'\"”]+[’'\"”]")
+
+
+def texto_de_regla(dia):
+    """{(kacc, ru): explicación} de las reglas que las diapositivas redactan
+    siempre igual y sin nombrar una forma concreta."""
+    import collections
+    bruto = collections.defaultdict(collections.Counter)
+    for esc in dia["escaleras"]:
+        for paso in esc["pasos"]:
+            op = (paso.get("operacion") or "").strip()
+            if not op:
+                continue
+            for a in paso["autoridades"]:
+                bruto[(a["kacc"], a["ru"])][op] += 1
+
+    def clave(t):
+        return re.sub(r"[\s,;.]+", " ", t).strip().lower()
+
+    fuera = {}
+    for regla, cuenta in bruto.items():
+        formas = {clave(t) for t in cuenta}
+        if len(formas) != 1:
+            continue                       # cautela 1
+        texto = cuenta.most_common(1)[0][0]   # cautela 2
+        if RE_FORMA_CITADA.search(texto):
+            continue                       # cautela 3
+        fuera[regla] = texto
+    return fuera
+
+
 def normalizar(forma):
     forma = unicodedata.normalize("NFC", forma or "")
     return re.sub(r"[\s'’‘\-]", "", forma).lower()
@@ -96,7 +156,7 @@ def _paso(n, origen, raiz="", signo="", inflexion="", prefijo="",
     return {"n": n, "origen": origen, "prefijo": prefijo, "raiz": raiz,
             "signo": signo, "inflexion": inflexion, "resultado": resultado,
             "autoridades": list(autoridades), "operacion": operacion,
-            "nota": nota}
+            "explicacion_prestada": False, "nota": nota}
 
 
 def corregir(autoridad, final):
@@ -218,6 +278,7 @@ def escaleras(doc=None, dia=None):
     """Las escaleras publicables, en el orden del documento y luego el resto."""
     doc = doc or json.load(open(VERBO, encoding="utf-8"))
     dia = dia or json.load(open(DIAPOS, encoding="utf-8"))
+    reglas = texto_de_regla(dia)
 
     por_forma = {}
     for esc in dia["escaleras"]:
@@ -239,6 +300,19 @@ def escaleras(doc=None, dia=None):
             fuera.append(de_diapositiva(libres[0], lema, glosa))
         else:
             fuera.append(del_documento(esc, impresas))
+
+    # Las escaleras del documento no traen explicación: se presta de las
+    # diapositivas la de cada regla, cuando es segura. Ver texto_de_regla().
+    for e in fuera:
+        for paso in e["pasos"]:
+            if paso.get("operacion"):
+                continue
+            for a in paso["autoridades"]:
+                texto = reglas.get((a["kacc"], a["ru"]))
+                if texto:
+                    paso["operacion"] = texto
+                    paso["explicacion_prestada"] = True
+                    break
 
     # Decisión 3: lo que sólo está en las diapositivas, sin repetir.
     vistas = {(e["lema"], e["resultado"], e["formacion"]) for e in fuera}

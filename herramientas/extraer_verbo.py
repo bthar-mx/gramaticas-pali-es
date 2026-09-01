@@ -105,6 +105,70 @@ def cuerpo(doc):
             yield "tbl", Table(hijo, doc)
 
 
+NS = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+
+
+def nivel(parrafo):
+    """
+    Nivel de lista de un párrafo, o None si no está en ninguna.
+
+    El «ilvl» del documento no es de fiar —los mismos ítems visuales llevan
+    ilvl 2, 4, 5 y hasta 7—, así que sólo se distinguen dos alturas: el 1 es
+    de primer nivel y todo lo demás, sub-ítem.
+    """
+    pPr = parrafo._p.find(NS + "pPr")
+    if pPr is None:
+        return None
+    numPr = pPr.find(NS + "numPr")
+    if numPr is None:
+        return None
+    e = numPr.find(NS + "ilvl")
+    val = e.get(NS + "val") if e is not None else "1"
+    return 1 if val == "1" else 2
+
+
+def introduccion(doc):
+    """
+    La introducción del documento: prosa, no tablas, y por eso se quedaba
+    fuera. Son las nueve características del verbo, los dos grupos de
+    inflexiones, los ocho grupos de raíces y las conjugaciones sabbadhātuka
+    y asabbadhātuka.
+
+    Empieza en el párrafo «A continuación se indican…» y acaba en la primera
+    tabla del documento, que es la de usos.
+    """
+    entradilla, items = "", []
+    empezado = False
+    for clase, obj in cuerpo(doc):
+        if clase == "tbl":
+            break
+        texto = obj.text.strip()
+        if not texto:
+            continue
+        if texto.lower().startswith("a continuación se indican"):
+            entradilla, empezado = texto, True
+            continue
+        if not empezado:
+            continue
+        # El documento separa sus secciones con «* * * * *»: ahí acaba la
+        # introducción, aunque queden párrafos antes de la primera tabla.
+        if set(texto.replace(" ", "")) == {"*"}:
+            break
+        lvl = nivel(obj)
+        if lvl == 1:
+            items.append({"texto": texto, "nota": "", "sub": []})
+        elif lvl == 2 and items:
+            # «Nota: …» va como nota del ítem, no como un punto más de su lista
+            if texto.lower().startswith("nota:"):
+                items[-1]["nota"] = (items[-1]["nota"] + " " + texto).strip()
+            else:
+                items[-1]["sub"].append(texto)
+        elif items and not lvl:
+            # párrafo suelto tras un ítem: es su definición
+            items[-1]["nota"] = (items[-1]["nota"] + " " + texto).strip()
+    return {"entradilla": entradilla, "items": items}
+
+
 def celdas(fila):
     """Texto de cada celda, con los saltos de línea internos como ' / '."""
     return [c.text.strip().replace("\n", " / ").strip() for c in fila.cells]
@@ -342,6 +406,7 @@ def main():
             "referencias": ("Kaccāyana cap. vi; Rūpasiddhi cap. vi; "
                             "Saddanīti-Suttamālā xv, 811-844"),
         },
+        "introduccion": introduccion(doc),
         "usos": tablas[T_USOS],
         "voces": tablas[T_VOCES],
         "inflexiones": [
@@ -366,6 +431,9 @@ def main():
     buddhadatta = sum(1 for p in datos["paradigmas"]
                       if p["obra"].startswith("Buddhadatta"))
     print(f"{os.path.relpath(DESTINO, RAIZ)}")
+    intro = datos["introduccion"]
+    print(f"  introducción         {len(intro['items'])} ítems, "
+          f"{sum(len(i['sub']) for i in intro['items'])} sub-ítems")
     print(f"  escaleras            {len(datos['escaleras'])}")
     print(f"  paradigmas           {len(datos['paradigmas'])}"
           f"  (de ellos {buddhadatta} de Buddhadatta)")

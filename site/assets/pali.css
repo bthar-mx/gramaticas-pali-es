@@ -85,6 +85,26 @@ body.dark { background-image: none; }
   display: flex; align-items: center; justify-content: center;
 }
 
+/* ── Botón de idioma, junto al del tema ──────────────────────────── */
+#lang-btn {
+  position: fixed; bottom: 1.5rem; right: 4.4rem;
+  height: 38px; padding: 0 12px; border-radius: 100px;
+  background: var(--bg2); border: .5px solid var(--border2);
+  color: var(--text);
+  box-shadow: 0 2px 10px rgba(0,0,0,.12);
+  font: 500 11px/1 var(--mono); letter-spacing: .1em; cursor: pointer;
+  z-index: 2000;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Las dos lenguas viajan en el HTML y sólo se enseña una. El español es lo
+   que se ve sin JavaScript, que es lo que debe verse: el sitio es español y
+   el inglés, la cortesía. */
+.i-en { display: none; }
+body.en .i-es { display: none; }
+body.en .i-en { display: inline; }
+body.en li .i-en, body.en p .i-en, body.en .idx-lede .i-en { display: inline; }
+
 /* ── TOC sidebar ─────────────────────────────────────────────────── */
 #toc {
   position: fixed; top: 0; left: 0; bottom: 0;

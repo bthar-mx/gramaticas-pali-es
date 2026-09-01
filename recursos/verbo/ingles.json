@@ -13,7 +13,7 @@
   "indice": "Index",
   "arriba": "Back to top",
   "version": "Version",
-  "version_nota": "First version of the page. It brings together Bhikkhu Nandisena's «Verbo» document and his thirteen class presentations: 21 derivations with one operation per row, the authority given as the Kaccāyana/Rūpasiddhi pair —which the document did not give— and 105 conjugation paradigms. Rows showing a form the source does not print are marked, and the single corrected erratum says what it was. The Ākhyāta-kappa is not yet published as a chapter, so its §N appear as plain text; they will link themselves once it is.",
+  "version_nota": "The introduction of the document is now on the page: the nine characteristics of the verb, the two groups of inflections, the eight groups of roots and the sabbadhātuka / asabbadhātuka conjugations — which is where the ‘i’ of the causatives comes from. There is a search box over every form, root and tense, ignoring diacritics. Each inflection now carries its Pāḷi name. And the derivations from the document, which had no explanation column, borrow the presentations' wording for the same rule wherever it is safe to do so. Previously, in version 1.0: it brought together Bhikkhu Nandisena's «Verbo» document and his thirteen class presentations: 21 derivations with one operation per row, the authority given as the Kaccāyana/Rūpasiddhi pair —which the document did not give— and 105 conjugation paradigms. Rows showing a form the source does not print are marked, and the single corrected erratum says what it was. The Ākhyāta-kappa is not yet published as a chapter, so its §N appear as plain text; they will link themselves once it is.",
   "entradilla": "The eight verbal inflections of Pāḷi, the eight groups of roots, <b>{escaleras} derivations</b> step by step with the aphorism that authorises each operation, and <b>{paradigmas} conjugation paradigms</b>.",
   "pestanas": {
    "introduccion": "Introduction",
@@ -28,23 +28,32 @@
    "explicacion": "explanation"
   },
   "titulos": {
+   "caracteristicas": "Characteristics of the verb",
    "usos": "Uses of the verbal inflections",
    "voces": "The three voices",
    "ganas": "The eight groups of roots"
   },
   "marcas": {
    "propuesta": "proposed",
+   "prestada": "The «Verbo» document has no explanation column. This is the one the presentations give for this same rule, and it is borrowed only when they all word it alike and name no letter.",
    "segun_documento": "according to the «Verbo» document",
    "segun_diapositiva": "according to {0}"
   },
   "leyendas": {
    "inflexiones": "The eight series of endings. Each in its two groups —<b>parassapada</b>, the word for another, and <b>attanopada</b>, the word for oneself— and its three persons.",
-   "formacion": "Each row shows the form <b>resulting</b> from the rule beside it, so that the derivation can be checked line by line. The authority is given as the pair <b>Kaccāyana / Rūpasiddhi</b>: the document cites the second number, and the first is that of the corresponding chapter of Kaccāyana. Rows marked <span class=\"marca-propuesta\">proposed</span> show an intermediate form the source does not print, deduced from the rule cited; the sign ✱ marks a corrected authority, and says how.",
+   "formacion": "Each row shows the form <b>resulting</b> from the rule beside it, so that the derivation can be checked line by line. The authority is given as the pair <b>Kaccāyana / Rūpasiddhi</b>: the document cites the second number, and the first is that of the corresponding chapter of Kaccāyana. Rows marked <span class=\"marca-propuesta\">proposed</span> show an intermediate form the source does not print, deduced from the rule cited; the sign ✱ marks a corrected authority, and says how. Explanations with a rule to their left come from the presentations: the document has no such column.",
    "paradigmas": "One hundred and five conjugation tables. Those of <b>bhū</b> and <b>paca</b> are from the «Verbo» document; those gathered under <b>other paradigms</b> come from <i>The Higher Pali Course for Advanced Students</i>, by the Venerable Buddhadatta Thera (Colombo, 1951), as the document itself states."
   },
   "tema": {
    "oscuro": "Dark mode",
    "claro": "Light mode"
+  },
+  "busca": {
+   "placeholder": "Search a form, a root, a tense…",
+   "hit": "result",
+   "hits": "results",
+   "nada": "It does not appear on this page.",
+   "mas": "and {0} more; narrow the search."
   },
   "pie_aviso": "The English of this page is the interface only. The prose of the IEBH is shown in Spanish until the translation is signed off."
  },
@@ -164,6 +173,67 @@
   },
   "notas": {
    "inserción de ‘a’ es opcional": "insertion of ‘a’ is optional"
+  },
+  "fuente": {
+   "Rū. pp. 256-33 y Sad. iii pp. 267-311": "Rū. pp. 256-33 and Sad. iii pp. 267-311",
+   "Kaccāyana cap. vi; Rūpasiddhi cap. vi; Saddanīti-Suttamālā xv, 811-844": "Kaccāyana ch. vi; Rūpasiddhi ch. vi; Saddanīti-Suttamālā xv, 811-844"
+  },
+  "intro": {
+   "A continuación se indican las características del verbo:": "The characteristics of the verb are as follows:",
+   "tres períodos de tiempo (tikāla)": "three time periods (tikāla)",
+   "seis tiempos": "six tenses",
+   "tres personas (tipurisa)": "three persons (tipurisa)",
+   "indica acción (kriyāvācī)": "it indicates action (kriyāvācī)",
+   "tres voces (tikāraka)": "three voices (tikāraka)",
+   "carece de los tres géneros (atiliṅga)": "it lacks the three genders (atiliṅga)",
+   "es de dos clases de acuerdo con el objeto": "it is of two kinds according to the object",
+   "dos números (dvivacana)": "two numbers (dvivacana)",
+   "ocho grupos de inflexiones (vibhatti)": "eight groups of inflections (vibhatti)",
+   "dos grupos de inflexiones": "two groups of inflections",
+   "ocho grupos de raíces": "eight groups of roots",
+   "conjugaciones sabbadhātuka": "sabbadhātuka conjugations",
+   "conjugaciones asabbadhātuka": "asabbadhātuka conjugations",
+   "Nota: 4-5 se denominan tiempos no especificados (anutta-kāla), mientras que el 6 se considerada como pasado (atīta-kāla).": "Note: 4–5 are called unspecified tenses (anutta-kāla), while 6 is regarded as past (atīta-kāla).",
+   "En las conjugaciones que siguen, denominadas “todas las raíces” (sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal.": "In the conjugations that follow, called “all roots” (sabbadhātuka), ‘i’ is not inserted before the verbal inflection suffix.",
+   "En las conjugaciones que siguen, denominadas “no todas las raíces” (asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal.": "In the conjugations that follow, called “not all roots” (asabbadhātuka), ‘i’ is optionally inserted before the verbal inflection suffix.",
+   "Pasado (atīta),": "Past (atīta),",
+   "Futuro (anāgata),": "Future (anāgata),",
+   "Presente (paccuppanna).": "Present (paccuppanna).",
+   "Pasado (atīta)": "Past (atīta)",
+   "Futuro (anāgata)": "Future (anāgata)",
+   "Presente (paccuppanna)": "Present (paccuppanna)",
+   "Imperative (āṇatti)": "Imperative (āṇatti)",
+   "Supposition (parikappa)": "Supposition (parikappa)",
+   "Conditional (kālātipatti).": "Conditional (kālātipatti).",
+   "Tercera (paṭhama)": "Third (paṭhama)",
+   "Media (majjhima)": "Middle (majjhima)",
+   "Primera (uttama)": "First (uttama)",
+   "Activa (kattu)": "Active (kattu)",
+   "Pasiva (kamma)": "Passive (kamma)",
+   "Impersonal (bhāva)": "Impersonal (bhāva)",
+   "Transitivo = con objeto (sakammaka)": "Transitive = with object (sakammaka)",
+   "Intransitivo = sin objeto (akammaka)": "Intransitive = without object (akammaka)",
+   "Singular (ekavacana)": "Singular (ekavacana)",
+   "Plural (bahuvacana)": "Plural (bahuvacana)",
+   "Presente (vattamānā)": "Present (vattamānā)",
+   "Imperative (pañcamī)": "Imperative (pañcamī)",
+   "Imperativo (pañcamī)": "Imperative (pañcamī)",
+   "Potencial (sattamī)": "Potential (sattamī)",
+   "Imperfecto (hiyyattanī)": "Imperfect (hiyyattanī)",
+   "Perfecto (parokkhā)": "Perfect (parokkhā)",
+   "Aoristo (ajjatanī)": "Aorist (ajjatanī)",
+   "Futuro (bhavissantī)": "Future (bhavissantī)",
+   "Conditional (kālātipatti)": "Conditional (kālātipatti)",
+   "Voz para otra; voz activa o transitiva (parassapada)": "Word for another; active or transitive voice (parassapada)",
+   "Voz para sí misma, voz media o reflexiva (attanopada)": "Word for oneself; middle or reflexive voice (attanopada)",
+   "Grupo que comienza con la raíz “bhū” (bhūvādi-gaṇa) — signo de conjugación ‘a’": "Group beginning with the root “bhū” (bhūvādi-gaṇa) — conjugational sign ‘a’",
+   "Grupo que comienza con la raíz “rudhi” (rudhādi-gaṇa) — signo de conjugación ‘ṃ-a’": "Group beginning with the root “rudhi” (rudhādi-gaṇa) — conjugational sign ‘ṃ-a’",
+   "Grupo que comienza con la raíz “divu” (divādi-gaṇa) — signo de conjugación ‘ya’": "Group beginning with the root “divu” (divādi-gaṇa) — conjugational sign ‘ya’",
+   "Grupo que comienza con la raíz “su” (svādi-gaṇa) — signo de conjugación ‘ṇu, ṇā, uṇā’": "Group beginning with the root “su” (svādi-gaṇa) — conjugational sign ‘ṇu, ṇā, uṇā’",
+   "Grupo que comienza con la raíz “kī” (kiyādi-gaṇa) — signo de conjugación ‘nā’": "Group beginning with the root “kī” (kiyādi-gaṇa) — conjugational sign ‘nā’",
+   "Grupo que comienza con la raíz “gaha” (gahādi-gaṇa) — signo de conjugación ‘ppa, ṇhā’": "Group beginning with the root “gaha” (gahādi-gaṇa) — conjugational sign ‘ppa, ṇhā’",
+   "Grupo que comienza con la raíz “tanu” (tanādi-gaṇa) — signo de conjugación ‘o, yira’": "Group beginning with the root “tanu” (tanādi-gaṇa) — conjugational sign ‘o, yira’",
+   "Grupo que comienza con la raíz “cura” (curādi-gaṇa) — signo de conjugación ‘ṇe, naya’.": "Group beginning with the root “cura” (curādi-gaṇa) — conjugational sign ‘ṇe, naya’."
   },
   "usos": [
    [
