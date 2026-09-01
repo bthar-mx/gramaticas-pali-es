@@ -419,6 +419,24 @@
   }
   .marca-corregida{margin-left:.3em;color:var(--ochre);cursor:help;}
 
+  /* ---------- botones de enlace y copia ---------- */
+  .mini-btn{
+    display:inline-flex;align-items:center;gap:.35rem;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-soft);background:transparent;
+    border:1px solid var(--rule);border-radius:2px;
+    padding:.28rem .55rem;cursor:pointer;line-height:1;
+    transition:color .18s ease,border-color .18s ease;
+  }
+  .mini-btn:hover{color:var(--ink);border-color:var(--ink-soft);}
+  .mini-btn:focus-visible{outline:2px solid var(--ochre);outline-offset:1px;}
+  .mini-btn.ok{color:var(--ochre);border-color:var(--ochre);}
+  .acciones{display:flex;gap:.4rem;margin:.9rem 0 0;}
+  .paradigma .acciones{margin:.7rem 0 0;}
+  @media print{ .mini-btn,.acciones{display:none!important;} }
+  @media (max-width:44rem){ .mini-btn{min-height:34px;padding:.5rem .7rem;} }
+
   .leyenda{
     font-size:.82rem;color:var(--ink-soft);
     border-left:2px solid var(--rule);padding-left:.9rem;margin:0 0 2rem;
@@ -644,6 +662,12 @@ const VERSION_DATE = '__VERSION_DATE__';
         + 'según dice el propio documento.'
     },
     tema: {oscuro:'Modo oscuro', claro:'Modo claro'},
+    acciones: {enlace:'Enlace', copiar:'Copiar', copiado:'✓ ¡Copiado!',
+               t_enlace_esc:'Copiar enlace a esta derivación',
+               t_copiar_esc:'Copiar la derivación al portapapeles',
+               t_enlace_par:'Copiar enlace a este paradigma',
+               t_copiar_par:'Copiar el paradigma al portapapeles',
+               pie:'De «El verbo · ākhyāta», Gramáticas Pāḷi en español (IEBH):'},
     busca: {placeholder:'Buscar una forma, una raíz, un tiempo…',
             hit:'resultado', hits:'resultados',
             nada:'No aparece en la página.',
@@ -848,7 +872,20 @@ const VERSION_DATE = '__VERSION_DATE__';
          + '>' + esc(tr('operaciones', p.operacion)) + '</td>';
       h += '</tr>';
     });
-    return h + '</tbody></table></div></article>';
+    h += '</tbody></table></div>';
+    h += acciones(idEscalera(e,i), 'esc');
+    return h + '</article>';
+  }
+
+  /* los dos botones, comunes a escaleras y paradigmas */
+  function acciones(id, tipo){
+    return '<div class="acciones">'
+      + '<button class="mini-btn" type="button" data-share="' + id + '" '
+      + 'title="' + esc(ui('acciones','t_enlace_' + tipo)) + '">'
+      + esc(ui('acciones','enlace')) + '</button>'
+      + '<button class="mini-btn" type="button" data-copy="' + id + '" '
+      + 'title="' + esc(ui('acciones','t_copiar_' + tipo)) + '">'
+      + esc(ui('acciones','copiar')) + '</button></div>';
   }
 
   function panelFormacion(){
@@ -858,8 +895,13 @@ const VERSION_DATE = '__VERSION_DATE__';
   }
 
   /* ---------- paradigmas ---------- */
+  function idParadigma(p){
+    return 'pd-' + ranura(p.entrada) + '-' + ranura(p.tiempo) + '-'
+         + ranura(p.voz);
+  }
+
   function paradigma(p){
-    let h = '<div class="paradigma"><h3>' + esc(tr('voces', p.voz)) + '</h3>';
+    let h = '<div class="paradigma" id="' + idParadigma(p) + '"><h3>' + esc(tr('voces', p.voz)) + '</h3>';
     h += '<p class="tiempo">' + esc(tr('tiempos', p.tiempo))
        + (p.tiempo_pali ? ' <span class="ru pali">· ' + esc(p.tiempo_pali) + '</span>' : '')
        + '</p><div class="envoltura"><table><thead><tr><th></th>';
@@ -873,7 +915,8 @@ const VERSION_DATE = '__VERSION_DATE__';
       fila.formas.forEach(f => { h += '<td class="forma">' + esc(f) + '</td>'; });
       h += '</tr>';
     });
-    return h + '</tbody></table></div></div>';
+    h += '</tbody></table></div>' + acciones(idParadigma(p), 'par');
+    return h + '</div>';
   }
 
   function gruposParadigmas(){
@@ -1011,6 +1054,89 @@ const VERSION_DATE = '__VERSION_DATE__';
     if (!a) return;
     ev.preventDefault();
     mostrar(a.dataset.panel, a.dataset.ancla);
+  });
+
+  /* ---------- copiar la derivación o el paradigma ----------
+     En texto llano y alineado, que es lo que sirve para pegarlo en un correo
+     o en unos apuntes. Va con su enlace permanente al pie, como en
+     /recursos/paradigmas/. */
+
+  function enColumnas(cabecera, filas){
+    const todas = [cabecera].concat(filas);
+    const anchos = cabecera.map((_, j) =>
+      Math.max.apply(null, todas.map(f => (f[j] || '').length)));
+    return todas.map(f =>
+      f.map((c, j) => (c || '').padEnd(anchos[j])).join('  ').trimEnd());
+  }
+
+  function textoEscalera(e){
+    const L = ['√' + e.lema + (e.glosa ? ' (' + tr('glosas', e.glosa) + ')' : '')
+               + ' → ' + e.resultado];
+    if (e.formacion) L.push(tr('formacion', e.formacion));
+    L.push(e.procedencia === 'diapositiva'
+      ? String(ui('marcas','segun_diapositiva')).replace('{0}', e.presentacion)
+      : ui('marcas','segun_documento'));
+    const cab = [ui('cabeceras','paso'), ui('cabeceras','operaciones'),
+                 ui('cabeceras','autoridad'), ui('cabeceras','explicacion')];
+    const filas = e.pasos.map(p => {
+      const piezas = [p.prefijo, p.raiz, p.signo, p.inflexion].filter(Boolean);
+      const auts = p.autoridades
+        .map(a => '§' + a.kacc + '/Rū ' + a.ru + (a.corregida ? '✱' : ''))
+        .join(' ');
+      return [String(p.n),
+              (p.resultado || piezas.join(' + ') || '—')
+                + (p.origen === 'propuesta'
+                   ? ' [' + ui('marcas','propuesta') + ']' : ''),
+              auts,
+              tr('operaciones', p.operacion)];
+    });
+    L.push('');
+    enColumnas(cab, filas).forEach(x => L.push(x));
+    return L;
+  }
+
+  function textoParadigma(p){
+    const L = [tr('entradas', p.entrada) + ' · ' + tr('voces', p.voz)
+               + ' · ' + tr('tiempos', p.tiempo)
+               + (p.tiempo_pali ? ' (' + p.tiempo_pali + ')' : ''),
+               p.obra, ''];
+    const cab = [''].concat(p.padas.map((pad,i) =>
+      pad + ' ' + tr('numeros', String(p.numeros[i]||'').replace(/ \/ /g,' '))));
+    const filas = p.filas.map(f =>
+      [tr('personas', String(f.persona).replace(/ \/ /g,' '))]
+        .concat(f.formas.map(x => x || '—')));
+    enColumnas(cab, filas).forEach(x => L.push(x));
+    return L;
+  }
+
+  function avisoCopiado(btn){
+    const orig = btn.innerHTML;
+    btn.innerHTML = esc(ui('acciones','copiado'));
+    btn.classList.add('ok');
+    setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('ok'); }, 2000);
+  }
+
+  function enlaceDe(id){ return location.href.split('#')[0] + '#' + id; }
+
+  document.addEventListener('click', ev => {
+    const b = ev.target.closest('button[data-share],button[data-copy]');
+    if (!b) return;
+    const id = b.dataset.share || b.dataset.copy;
+    let texto;
+    if (b.dataset.share){
+      texto = enlaceDe(id);
+    } else {
+      let L = null;
+      DATA.escaleras.forEach((e,i) => { if (idEscalera(e,i) === id) L = textoEscalera(e); });
+      if (!L) DATA.paradigmas.forEach(p => { if (idParadigma(p) === id) L = textoParadigma(p); });
+      if (!L) return;
+      L.push('', ui('acciones','pie'), enlaceDe(id));
+      texto = L.join('\n');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText)
+      navigator.clipboard.writeText(texto).then(() => avisoCopiado(b),
+                                                () => avisoCopiado(b));
+    else avisoCopiado(b);
   });
 
   /* ---------- armado ---------- */
@@ -1252,8 +1378,32 @@ const VERSION_DATE = '__VERSION_DATE__';
   pintarPestanas();
   pintarIndice();
   pintarTextos();
+  /* Un enlace compartido apunta a un ancla —#e-0-bhu, #pd-…—, no a una
+     pestaña: hay que saber en cuál vive para abrirla y luego bajar. */
+  function panelDeAncla(ancla){
+    if (!ancla) return null;
+    if (PANELES.some(p => p.id === ancla)) return ancla;
+    const ent = entradasIndice();
+    for (const id in ent)
+      if (ent[id].some(x => x.ancla === ancla)) return id;
+    if (ancla.indexOf('e-') === 0) return 'formacion';
+    if (ancla.indexOf('pd-') === 0) return 'paradigmas';
+    if (ancla.indexOf('i-') === 0 || ancla === 's-ganas') return 'inflexiones';
+    if (ancla.indexOf('s-') === 0) return 'introduccion';
+    return null;
+  }
+
   const inicial = (location.hash || '').replace('#','');
-  mostrar(PANELES.some(p => p.id === inicial) ? inicial : 'introduccion');
+  const panelInicial = panelDeAncla(inicial);
+  if (panelInicial && panelInicial !== inicial) mostrar(panelInicial, inicial);
+  else mostrar(panelInicial || 'introduccion');
+
+  /* también cuando alguien pega el enlace con la página ya abierta */
+  addEventListener('hashchange', () => {
+    const a = (location.hash || '').replace('#','');
+    const pn = panelDeAncla(a);
+    if (pn) mostrar(pn, pn === a ? null : a);
+  });
 })();
 
 /* ---------- tema ---------- */

@@ -132,6 +132,17 @@ INTERFAZ = {
                        "(Colombo, 1951), as the document itself states."),
     },
     "tema": {"oscuro": "Dark mode", "claro": "Light mode"},
+    "acciones": {
+        "enlace": "Link",
+        "copiar": "Copy",
+        "copiado": "✓ Copied!",
+        "t_enlace_esc": "Copy a link to this derivation",
+        "t_copiar_esc": "Copy the derivation to the clipboard",
+        "t_enlace_par": "Copy a link to this paradigm",
+        "t_copiar_par": "Copy the paradigm to the clipboard",
+        "pie": ("From “The verb · ākhyāta”, Pāḷi Grammars in Spanish "
+                "(IEBH):"),
+    },
     "busca": {
         "placeholder": "Search a form, a root, a tense…",
         "hit": "result",
