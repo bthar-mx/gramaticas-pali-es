@@ -709,6 +709,8 @@ const VERSION_DATE = '__VERSION_DATE__';
     },
     tema: {oscuro:'Modo oscuro', claro:'Modo claro'},
     acciones: {enlace:'Enlace', copiar:'Copiar', copiado:'✓ ¡Copiado!',
+               t_enlace_inf:'Copiar enlace a esta inflexión',
+               t_copiar_inf:'Copiar la tabla de terminaciones al portapapeles',
                t_enlace_esc:'Copiar enlace a esta derivación',
                t_copiar_esc:'Copiar la derivación al portapapeles',
                t_enlace_par:'Copiar enlace a este paradigma',
@@ -886,6 +888,8 @@ const VERSION_DATE = '__VERSION_DATE__';
       ? '<span class="refs">' + trozos.join(' · ') + '</span>' : '';
   }
 
+  function idInflexion(inf){ return 'i-' + ranura(inf.titulo); }
+
   function tablaInflexion(inf){
     const cab = DATA.cabecera_inf;
     let h = '<div class="envoltura"><table><thead><tr><th></th>';
@@ -916,6 +920,7 @@ const VERSION_DATE = '__VERSION_DATE__';
          + inf.usos.map(u => '<li>' + esc(tr('usos_inf', u)) + '</li>').join('')
          + '</ul>';
     }
+    h += acciones(idInflexion(inf), 'inf');
     return h;
   }
 
@@ -1253,6 +1258,34 @@ const VERSION_DATE = '__VERSION_DATE__';
     return L;
   }
 
+  function textoInflexion(inf){
+    const L = [tr('tiempos', inf.titulo) + ' · ' + inf.pali + ' vibhatti', ''];
+    /* En texto llano la cabecera larga —«voz activa o transitiva singular
+       (ekavacana)»— deja la tabla ilegible. Se usa el nombre pāḷi del pada y
+       la abreviatura del número, que es lo que distingue las columnas. */
+    const cab = DATA.cabecera_inf;
+    const cabecera = [''].concat(cab[0].slice(1).map((x,i) => {
+      const pada = (x.match(/\(([^)]*)\)/) || [,x])[1];
+      const num = (cab[1][i + 1] || '').indexOf('sing') === 0 ? 'sg.' : 'pl.';
+      return pada + ' ' + num;
+    }));
+    const filas = inf.filas.map(f =>
+      [tr('personas', f[0])].concat(f.slice(1).map(x => x || '—')));
+    enColumnas(cabecera, filas).forEach(x => L.push(x));
+    (inf.notas || []).forEach(n => {
+      const r = (DATA.refs || {})[n.ref] || {};
+      const cita = [r.kacc ? 'Kacc. §' + r.kacc : '', r.ru ? 'Rū ' + r.ru : '',
+                    r.sad ? 'Sad. ' + r.sad : '', r.nir ? 'Nir. ' + r.nir : '']
+                   .filter(Boolean).join(' · ');
+      L.push('', '· ' + tr('notas', n.texto) + (cita ? '  [' + cita + ']' : ''));
+    });
+    if (inf.usos && inf.usos.length){
+      L.push('', ui('titulos','usos_de') + ':');
+      inf.usos.forEach(u => L.push('  · ' + tr('usos_inf', u)));
+    }
+    return L;
+  }
+
   function textoParadigma(p){
     const L = [tr('entradas', p.entrada) + ' · ' + tr('voces', p.voz)
                + ' · ' + tr('tiempos', p.tiempo)
@@ -1287,6 +1320,7 @@ const VERSION_DATE = '__VERSION_DATE__';
       let L = null;
       DATA.escaleras.forEach((e,i) => { if (idEscalera(e,i) === id) L = textoEscalera(e); });
       if (!L) DATA.paradigmas.forEach(p => { if (idParadigma(p) === id) L = textoParadigma(p); });
+      if (!L) DATA.inflexiones.forEach(f => { if (idInflexion(f) === id) L = textoInflexion(f); });
       if (!L) return;
       L.push('', ui('acciones','pie'), enlaceDe(id));
       texto = L.join('\n');
