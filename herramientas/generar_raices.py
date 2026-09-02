@@ -29,7 +29,10 @@ import sys
 import unicodedata
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
+
 DATOS = os.path.join(RAIZ, "recursos", "raices", "raices.json")
+VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 DHATUPATHA = os.path.join(RAIZ, "recursos", "raices", "dhatupatha.json")
 DP_INGLES = os.path.join(RAIZ, "recursos", "raices", "dhatupatha-ingles.json")
 DHATUMANJUSA = os.path.join(RAIZ, "recursos", "raices", "dhatumanjusa.json")
@@ -220,6 +223,29 @@ def concordar(datos, dp):
     return con, seguras, huerfanas
 
 
+def cifras_del_verbo():
+    """Las del globo del enlace a /verbo/, calculadas y no escritas a mano.
+
+    Cuántas derivaciones y cuántos paradigmas tiene aquella página, y cuántas
+    raíces de ésta se conjugan allí. Sale de la misma función que usa la
+    auditoría, de modo que las dos páginas no puedan contarse distinto. Si el
+    verbo no está extraído todavía, se devuelve None y la barra se publica sin
+    el enlace, igual que se publica sin la pestaña del Dhātupāṭha.
+    """
+    if not os.path.exists(VERBO):
+        return None
+    from auditar_verbo import cobertura
+    from escaleras_verbo import escaleras
+    verbo = json.load(open(VERBO, encoding="utf-8"))
+    escs = escaleras()
+    c = cobertura(verbo, escs)
+    if c is None:
+        return None
+    return {"escaleras": len(escs),
+            "paradigmas": len(verbo.get("paradigmas", [])),
+            "compartidas": c["con_ficha"]}
+
+
 def main():
     if not os.path.exists(DATOS):
         print("Falta {0}. Se obtiene con:".format(os.path.relpath(DATOS, RAIZ)))
@@ -262,6 +288,13 @@ def main():
     else:
         for r in datos["raices"]:
             r["dm"] = []
+
+    verbo = cifras_del_verbo()
+    if verbo is None:
+        print("  aviso — sin recursos/verbo/verbo.json: se publica sin el "
+              "enlace a /recursos/verbo/")
+    else:
+        datos["verbo"] = verbo
 
     plantilla = open(PLANTILLA, encoding="utf-8").read()
     marca = re.search(r'/\*__DATOS__\*/.*?/\*__FIN__\*/', plantilla, re.S)

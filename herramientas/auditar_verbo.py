@@ -321,36 +321,57 @@ def cotejar_gana(verbo, escs):
     return mal
 
 
-def cobertura_raices(verbo, escs):
-    """Cuántos lemas de /verbo/ tienen ficha en /recursos/raices/."""
-    idx = indice_raices()
-    if idx is None:
-        return
+def lemas_del_verbo(verbo, escs):
+    """Los lemas que nombra /verbo/: los de las escaleras y los de las
+    entradas de los paradigmas, sin el número de orden ni la glosa."""
     lemas = {e["lema"] for e in escs}
     for p in verbo.get("paradigmas", []):
         t = re.sub(r"^\d+[a-z]?-", "", p.get("entrada", "")).split("(")[0]
         if t.strip():
             lemas.add(t.strip())
-    hallados, huerfanos = 0, []
+    return lemas
+
+
+def cobertura(verbo, escs):
+    """Qué comparten /verbo/ y /recursos/raices/, en números.
+
+    Lo usan la auditoría y **los dos generadores**: las cifras del globo del
+    enlace cruzado salen de aquí y no se escriben a mano, de modo que se
+    corrigen solas el día que cambie cualquiera de las dos páginas. Devuelve
+    None si no está raices.json, y entonces el enlace no se publica.
+    """
+    idx = indice_raices()
+    if idx is None:
+        return None
+    lemas = lemas_del_verbo(verbo, escs)
+    hallados, huerfanos, homonimos = 0, [], []
     for l in sorted(lemas):
         ents, _ = entradas_de(l, idx)
-        if ents:
-            hallados += 1
-        else:
+        if not ents:
             huerfanos.append(l)
-    print(f"   cobertura para enlazar: {hallados} de {len(lemas)} lemas "
-          "tienen ficha")
-    if huerfanos:
-        print(f"      sin ficha: {', '.join(huerfanos)}")
-    # los lemas que llevan a más de una entrada no se pueden enlazar a una
-    ambiguos = []
-    for l in sorted(lemas):
-        ents, usado = entradas_de(l, idx)
+            continue
+        hallados += 1
+        # un lema con varias fichas no se puede enlazar a una sola
         if len(ents) > 1:
-            ambiguos.append(f"{l}×{len(ents)}")
-    if ambiguos:
-        print(f"      con homónimos, el enlace ha de mostrarlos todos: "
-              f"{', '.join(ambiguos)}")
+            homonimos.append((l, len(ents)))
+    datos = json.load(open(RAICES, encoding="utf-8"))
+    return {"con_ficha": hallados, "lemas": len(lemas),
+            "raices": len(datos.get("raices", [])),
+            "huerfanos": huerfanos, "homonimos": homonimos}
+
+
+def cobertura_raices(verbo, escs):
+    """Cuántos lemas de /verbo/ tienen ficha en /recursos/raices/."""
+    c = cobertura(verbo, escs)
+    if c is None:
+        return
+    print(f"   cobertura para enlazar: {c['con_ficha']} de {c['lemas']} lemas "
+          "tienen ficha")
+    if c["huerfanos"]:
+        print(f"      sin ficha: {', '.join(c['huerfanos'])}")
+    if c["homonimos"]:
+        print("      con homónimos, el enlace ha de mostrarlos todos: "
+              + ", ".join(f"{l}×{n}" for l, n in c["homonimos"]))
 
 
 def main():

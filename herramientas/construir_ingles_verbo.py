@@ -56,7 +56,16 @@ INTERFAZ = {
     "indice": "Index",
     "arriba": "Back to top",
     "version": "Version",
-    "version_nota": ("The eight tables of endings now come from the eight "
+    "version_nota": ("The tab bar now ends with a link to the roots of the "
+                     "Saddanīti. It is not a tab and does not pretend to be "
+                     "one: it sits apart from the group, without the active "
+                     "underline, and carries the ↗ with which the site marks "
+                     "links that leave the page. Its tooltip says what is "
+                     "there and how many of this page's lemmas have an entry; "
+                     "those figures are computed against the other page every "
+                     "time it is published, so they cannot fall out of date. "
+                     "Previously, in version 1.3: "
+                     "The eight tables of endings now come from the eight "
                      "documents of the paradigm index, not from the «Verbo» "
                      "document, which is a reduced version giving a single "
                      "ending per cell. Fifteen alternative forms are restored "
@@ -116,6 +125,16 @@ INTERFAZ = {
                       "operation."),
         "paradigmas": ("The full conjugation paradigms, verb by verb and "
                        "tense by tense."),
+    },
+    # El enlace de salida a /recursos/raices/. Las cifras las pone el
+    # generador. Al lector inglés se le avisa además de que aquella página
+    # todavía no está traducida: es información, no disculpa.
+    "fuera": {
+        "rotulo": "Roots",
+        "tip": ("The {raices} roots of the Saddanīti-dhātumālā, with their "
+                "gaṇa, page, meaning and Sanskrit cognate. Of the {lemas} "
+                "lemmas named on this page, {ficha} have an entry there. "
+                "This link leaves the page, and that page is in Spanish."),
     },
     "cabeceras": {
         "paso": "step",

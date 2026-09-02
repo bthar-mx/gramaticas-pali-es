@@ -32,6 +32,7 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 
+from auditar_verbo import cobertura  # noqa: E402
 from escaleras_verbo import escaleras  # noqa: E402
 from generar_capitulo import CAPITULOS, parsear  # noqa: E402
 from generar_ingles_verbo import comprobar  # noqa: E402
@@ -45,8 +46,8 @@ INGLES = os.path.join(RAIZ, "recursos", "verbo", "ingles.json")
 INFLEXIONES = os.path.join(RAIZ, "recursos", "verbo", "inflexiones.json")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "verbo", "index.html")
 
-VERSION = "1.3"
-VERSION_FECHA = "2026-09-01"
+VERSION = "1.4"
+VERSION_FECHA = "2026-09-02"
 
 
 def mapa_suttas():
@@ -190,8 +191,19 @@ def main():
                   "cadenas; no se inyecta la prosa")
             ing = dict(ing, adjudicado=False)
 
+    # El enlace a /recursos/raices/ que cierra la barra de pestañas. Sus
+    # cifras —cuántas raíces tiene aquella página y cuántos lemas de ésta
+    # tienen ficha allí— las calcula la auditoría, de modo que no queda
+    # ningún número escrito a mano que se pueda quedar viejo. Si no está
+    # raices.json, `cobertura` devuelve None y el enlace no se pinta.
+    cob = cobertura(verbo, escs)
+    if cob is None:
+        print("  aviso — sin recursos/raices/raices.json: se publica sin el "
+              "enlace a /recursos/raices/")
+
     datos = {
         "fuente": verbo["fuente"],
+        "raices": cob,
         "introduccion": verbo.get("introduccion", {}),
         "usos": verbo["usos"],
         "voces": verbo["voces"],

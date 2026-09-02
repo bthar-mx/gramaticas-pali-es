@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Raíces pāḷi · Saddanīti, Dhātupāṭha y Dhātumañjūsā</title>
-<meta name="version" content="1.4">
-<meta name="version-date" content="2026-08-28">
+<meta name="version" content="1.5">
+<meta name="version-date" content="2026-09-02">
 <meta name="description" content="Las 1.698 raíces pāḷi del Saddanīti Dhātumālā comparadas con las del Pāṇinīya-Dhātupāṭha, del libro «Pali Roots in Saddanīti» del Venerable U Sīlānanda, editado por Bhikkhu Nandisena.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -177,7 +177,9 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .icon-btn[aria-pressed=true]{background:var(--nila);color:var(--ola-2);border-color:var(--nila)}
 
 /* ---------- pestañas ---------- */
-.tabs{display:flex;gap:0;border-bottom:1px solid var(--hair);margin:0 0 4px}
+.tabs{display:flex;gap:0;align-items:flex-end;
+  border-bottom:1px solid var(--hair);margin:0 0 4px}
+.tabs .grupo{display:flex}
 .tabs button{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;background:none;border:0;border-bottom:2px solid transparent;
   color:var(--soot);padding:12px 2px;margin-right:26px;cursor:pointer}
@@ -186,6 +188,18 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .tabs button span{font-family:var(--serif);font-size:12px;letter-spacing:0;
   text-transform:none;opacity:.75;margin-left:6px}
 .tabs button[data-tip]{cursor:pointer}
+
+/* El enlace a /verbo/ NO es una pestaña: se va de la página. Las cuatro
+   pestañas son cuatro cuerpos de raíces, y una quinta que navegara fuera
+   rompería lo que aquí significa una pestaña. Va apartada al final, sin el
+   subrayado del activo y con la flecha ↗ de los enlaces salientes. */
+.tabs .fuera{margin-left:auto;align-self:center;padding:12px 0;
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--soot);text-decoration:none;
+  cursor:pointer;white-space:nowrap}
+.tabs .fuera:hover{color:var(--haritala)}
+.tabs .fuera:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.tabs .fuera .flecha{opacity:.65;margin-left:.35em}
 
 /* ---------- letra ---------- */
 .letra{margin:34px 0 2px;display:flex;align-items:baseline;gap:12px;
@@ -498,11 +512,17 @@ footer a{color:var(--nila)}
 </div>
 
 <div class="wrap">
-  <div class="tabs" role="tablist">
+  <!-- El role="tablist" va en el grupo de dentro, no en la barra: ésta lleva
+       además el enlace a /verbo/, que no es una pestaña, y un tablist sólo
+       debe contener pestañas. -->
+  <div class="tabs">
+   <div class="grupo" role="tablist">
     <button role="tab" id="tab-raices" aria-selected="true" data-tab="raices" data-tip="Raíces del Saddanīti|Las 1.698 raíces de la Dhātumālā del Saddanīti, cotejadas por el Ven. U Sīlānanda con las del Pāṇinīya-dhātupāṭha. Es la obra principal de esta página.">Raíces <span id="n-raices"></span></button>
     <button role="tab" id="tab-significados" aria-selected="false" data-tab="significados" data-tip="Del sentido a la raíz|El índice inverso de la misma obra: 776 significados, y bajo cada uno las raíces que lo expresan. Para cuando se sabe el sentido y se busca la raíz.">Significados <span id="n-significados"></span></button>
     <button role="tab" id="tab-dhatupatha" aria-selected="false" data-tab="dhatupatha" data-tip="Dhātupāṭha pāḷi|Otra obra: las 639 raíces del Dhātupāṭha en la edición de Andersen y Smith (1921), con sus notas críticas. Su numeración de grupos no es la del Saddanīti.">Dhātupāṭha <span id="n-dhatupatha"></span></button>
     <button role="tab" id="tab-dhatumanjusa" aria-selected="false" data-tab="dhatumanjusa" data-tip="Dhātumañjūsā|La misma lista de raíces puesta en verso: 154 estrofas en śloka, atribuidas a Sīlavaṃsa. Va como texto, porque en el verso la raíz y su significado están encajados en el metro.">Dhātumañjūsā <span id="n-dhatumanjusa"></span></button>
+   </div>
+   <a class="fuera" id="a-verbo" href="../verbo/" hidden>El verbo <span class="flecha">↗</span></a>
   </div>
 </div>
 
@@ -1162,6 +1182,22 @@ botones('f-skt', [['all','Todas'],['con','Con sánsc.','sólo las que tienen cog
   b.onclick = () => aplicar(!document.body.classList.contains('con-en'));
 })();
 
+/* ---------- enlace a /verbo/ ----------
+   Sus cifras las calcula generar_raices.py contra la propia página del verbo
+   —cuántas derivaciones y paradigmas tiene, y cuántas de estas raíces se
+   conjugan allí—, de modo que el globo se corrige solo cuando aquélla crezca.
+   Si no están, no hay enlace: no se publica un número inventado. */
+(function(){
+  const v = DATA.verbo, a = document.getElementById('a-verbo');
+  if(!v){ a.remove(); return; }
+  a.setAttribute('data-tip', 'El verbo · ākhyāta|La conjugación del verbo '
+    + 'pāḷi: las ocho inflexiones con sus terminaciones, ' + v.escaleras
+    + ' derivaciones paso a paso con el aforismo que ampara cada operación, y '
+    + v.paradigmas + ' paradigmas de conjugación. ' + v.compartidas
+    + ' de las raíces de esta página se conjugan allí. Se sale de esta página.');
+  a.hidden = false;
+})();
+
 /* ---------- cuentas de las pestañas ---------- */
 document.getElementById('n-raices').textContent = DATA.raices.length;
 document.getElementById('n-significados').textContent = DATA.significados.length;
@@ -1179,7 +1215,7 @@ if(DM.length){
 /* ---------- insignia de versión ---------- */
 const VERSION = document.querySelector('meta[name=version]').content;
 const VERSION_DATE = document.querySelector('meta[name="version-date"]').content;
-const VERSION_NOTE = 'El botón que pliega el índice pasa a ser el mismo ☰ en todas las páginas del sitio, en la esquina del propio índice. Antes, en la versión 1.3: El índice de la izquierda se pliega y se despliega, y vuelve a abrirse siempre al entrar: plegarlo es comodidad del momento, no una preferencia guardada. El Dhātupāṭha estrena índice propio, por las nueve secciones de su edición, porque no va en orden alfabético y el índice por letras repetía la misma inicial en cada sección. Antes, en la versión 1.2: Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras. Antes, en la versión 1.1: Se añade el Dhātupāṭha de Andersen y Smith y su concordancia con las raíces del Saddanīti. La 1.0 publicó las 1.698 raíces del Saddanīti-dhātumālā cotejadas con el Pāṇinīya-dhātupāṭha, y su índice inverso de significados.';
+const VERSION_NOTE = 'La barra de pestañas se cierra con un enlace a «El verbo · ākhyāta». No es una pestaña y no lo aparenta: las cuatro pestañas de esta página son cuatro cuerpos de raíces, y una quinta que se fuera de la página rompería lo que aquí significa una pestaña, así que va apartada del grupo, sin el subrayado del activo y con la flecha ↗ de los enlaces salientes. Su globo dice qué hay allí y cuántas de estas raíces se conjugan; esas cifras se calculan contra la otra página cada vez que se publica, de modo que no pueden quedarse viejas. Antes, en la versión 1.4: El botón que pliega el índice pasa a ser el mismo ☰ en todas las páginas del sitio, en la esquina del propio índice. Antes, en la versión 1.3: El índice de la izquierda se pliega y se despliega, y vuelve a abrirse siempre al entrar: plegarlo es comodidad del momento, no una preferencia guardada. El Dhātupāṭha estrena índice propio, por las nueve secciones de su edición, porque no va en orden alfabético y el índice por letras repetía la misma inicial en cada sección. Antes, en la versión 1.2: Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras. Antes, en la versión 1.1: Se añade el Dhātupāṭha de Andersen y Smith y su concordancia con las raíces del Saddanīti. La 1.0 publicó las 1.698 raíces del Saddanīti-dhātumālā cotejadas con el Pāṇinīya-dhātupāṭha, y su índice inverso de significados.';
 (function(){
   const badge = document.getElementById('vbadge');
   const largo = new Date(VERSION_DATE + 'T12:00:00').toLocaleDateString('es',
