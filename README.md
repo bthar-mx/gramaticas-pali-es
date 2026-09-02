@@ -49,6 +49,29 @@ Rutas: `/kaccayana/` índice de la obra, `/kaccayana/sandhi/` capítulo 1.
 Los estilos y la lógica compartidos están en `site/assets/`; cada capítulo
 define sus propios datos en `window.PALI_CAPITULO` antes de cargar `pali.js`.
 
+## Licencia
+
+Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH).
+
+El texto pāḷi, la traducción española y los documentos de este repositorio se
+publican bajo [Creative Commons Atribución-NoComercial-SinDerivadas 4.0
+Internacional](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es)
+(CC BY-NC-ND 4.0). El texto legal completo está en `LICENSE`.
+
+Este material puede ser reproducido para uso personal y distribuido de forma
+gratuita.
+
+Dos precisiones sobre el alcance:
+
+- **Las marcas no van en la licencia.** El logotipo y el nombre del IEBH son
+  marca, y la sección 2(b)(2) de la licencia deja fuera los derechos de marca
+  y de patente. Reproducir el texto no autoriza a usar la marca.
+- **Las obras ajenas conservan la suya.** El Digital Pāḷi Dictionary, que el
+  solucionador consulta como testigo de ocurrencia, se publica bajo
+  CC BY-NC-SA y no cambia de licencia por aparecer aquí. Lo mismo vale para
+  el material tomado de Ven. A. Thitzana, de Rūpasiddhi y del Nyāsa, señalado
+  como suyo en cada caso.
+
 ## Textos relacionados
 
 Corpus del Sexto Concilio: <https://buddha-dhamma.net\> ·
