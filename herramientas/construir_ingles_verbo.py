@@ -91,6 +91,20 @@ INTERFAZ = {
         "formacion": "Formation",
         "paradigmas": "Paradigms",
     },
+    # Qué hay en cada pestaña, para el globo de ayuda. Es interfaz, no prosa
+    # del IEBH: se publica siempre, como los demás rótulos.
+    "ayuda": {
+        "introduccion": ("What the Pāḷi verb is: its characteristics, the "
+                         "tenses, the persons, the voices and the eight root "
+                         "groups."),
+        "inflexiones": ("The eight inflections, with their table of endings "
+                        "and the use of each one."),
+        "formacion": ("From the root to the finished form, step by step, with "
+                      "the aphorism of Kaccāyana that authorises each "
+                      "operation."),
+        "paradigmas": ("The full conjugation paradigms, verb by verb and "
+                       "tense by tense."),
+    },
     "cabeceras": {
         "paso": "step",
         "operaciones": "grammatical operations",
