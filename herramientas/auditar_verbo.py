@@ -25,6 +25,16 @@ Qué comprueba
 3. **Que ninguna forma retroceda** dentro de una escalera: si un paso deshace
    lo que hizo el anterior sin regla que lo explique, se señala.
 4. **Que no queden ligaduras rotas** del PDF («in exión» por «inflexión»).
+5. **Que las ocho tablas de terminaciones** del índice de paradigmas cuadren
+   con las del documento «Verbo» y con las de las diapositivas, casilla a
+   casilla. Se espera que difieran del documento: da una sola terminación por
+   casilla, y ésa fue la errata que costó la v1.3.
+6. **Que el gaṇa que dice /verbo/ sea el que dice /recursos/raices/.** Las dos
+   páginas lo afirman por caminos distintos —una citando el sutta del signo de
+   conjugación, la otra por la referencia del Saddanīti— y nada garantiza que
+   coincidan. Al final se informa además de cuántos lemas tienen ficha en
+   raíces, que es lo que hace falta saber antes de enlazar una página con la
+   otra.
 
 Nada de esto decide: la firma es de Angel. Ver el informe.
 """
@@ -37,10 +47,13 @@ import sys
 import unicodedata
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
+
 VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 INFLEXIONES = os.path.join(RAIZ, "recursos", "verbo", "inflexiones.json")
 PDFS = os.path.join(RAIZ, "docs", "fuentes", "verbo-diapositivas")
 DIAPOS = os.path.join(RAIZ, "recursos", "verbo", "diapositivas.json")
+RAICES = os.path.join(RAIZ, "recursos", "raices", "raices.json")
 
 RE_SUTTA = re.compile(r"\*\*(\d+)\\?\.\s*(\d+)\\?\.\s")
 # Restos de ligadura fi/fl que pdftotext deja al leer estas diapositivas.
@@ -193,6 +206,153 @@ def cotejar_inflexiones(infl, verbo):
     return dif_dia
 
 
+# --------------------------------------------------------------------------
+# El gaṇa, cotejado con /recursos/raices/
+# --------------------------------------------------------------------------
+#
+# Las dos páginas dicen, cada una por su lado, a qué gaṇa pertenece una raíz:
+#
+#   /verbo/  lo dice sin nombrarlo, citando en la escalera el sutta que da el
+#            signo de conjugación de su grupo — «Svādito ṇu-ṇā-uṇā ca» para
+#            «su», Kacc. §448.
+#   /raices/ lo dice con todas las letras, en la referencia del Saddanīti que
+#            acompaña a cada raíz: «IV 219» es gaṇa IV, página 219.
+#
+# Que coincidan no está garantizado por nada: son dos obras distintas leídas
+# por caminos distintos. Por eso se comprueba. Y es el cotejo que hace falta
+# antes de enlazar una página con la otra: enlazar dos fichas que se
+# contradicen sería peor que no enlazarlas.
+#
+# Ni el número de sutta ni el gaṇa se escriben a mano. El sutta se nombra a sí
+# mismo —«Bhūvādito», «Rudhādito»…— y la tabla de los ocho grupos del propio
+# documento «Verbo» fija el orden; de ahí sale el número romano.
+
+ROMANOS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"]
+RE_GANA_TABLA = re.compile(r"\(([a-zāīūṇṭḍṃñḷ]+)ādi-gaṇa\)", re.I)
+RE_SUTTA_GANA = re.compile(r"\*\*(\d+)\\?\.\s*\d+\\?\.\s*"
+                           r"([A-Za-zāīūṇṭḍṃñḷ]+)ādito\b")
+
+
+def mapa_sutta_gana(verbo):
+    """{num_kacc: «IV»} — qué gaṇa implica citar cada sutta de signo."""
+    orden = {}
+    for i, fila in enumerate(verbo.get("ganas", [])[1:]):
+        m = RE_GANA_TABLA.search(" ".join(fila))
+        if m and i < len(ROMANOS):
+            orden[m.group(1).lower()] = ROMANOS[i]
+    fuera = {}
+    for patron in ("kaccayana/*.md", "docs/*.md"):
+        for ruta in sorted(glob.glob(os.path.join(RAIZ, patron))):
+            with open(ruta, encoding="utf-8") as fh:
+                for m in RE_SUTTA_GANA.finditer(fh.read()):
+                    gana = orden.get(m.group(2).lower())
+                    if gana:
+                        fuera.setdefault(int(m.group(1)), gana)
+    return fuera
+
+
+def indice_raices():
+    """{lema normalizado: [entradas]} de recursos/raices/raices.json."""
+    if not os.path.exists(RAICES):
+        return None
+    datos = json.load(open(RAICES, encoding="utf-8"))
+    idx = {}
+    for r in datos.get("raices", []):
+        formas = r["raices"] if isinstance(r["raices"], list) else [r["raices"]]
+        for f in formas:
+            idx.setdefault(normalizar(f), []).append(r)
+    return idx
+
+
+PREFIJOS = ("vi-", "anu-", "upa-", "sam-", "pa-", "ā-")
+
+
+def entradas_de(lema, idx):
+    """Las entradas de raices.json de un lema, probando sin prefijo."""
+    ents = idx.get(normalizar(lema))
+    if ents:
+        return ents, lema
+    for pre in PREFIJOS:
+        if lema.startswith(pre):
+            ents = idx.get(normalizar(lema[len(pre):]))
+            if ents:
+                return ents, lema[len(pre):]
+    return [], lema
+
+
+def cotejar_gana(verbo, escs):
+    """El gaṇa de cada escalera contra el del Saddanīti."""
+    print("\n6. El gaṇa de cada raíz: /verbo/ contra /recursos/raices/")
+    idx = indice_raices()
+    if idx is None:
+        print("   no está recursos/raices/raices.json; no se coteja")
+        return 0
+    suttas = mapa_sutta_gana(verbo)
+    if len(suttas) != 8:
+        print(f"   aviso — se dedujeron {len(suttas)} suttas de signo de "
+              "conjugación; deberían ser 8. No se coteja.")
+        return 0
+
+    ok = mal = sin_gana = sin_entrada = 0
+    for e in escs:
+        gana = None
+        for paso in e["pasos"]:
+            for a in paso["autoridades"]:
+                if a["kacc"] in suttas:
+                    gana = suttas[a["kacc"]]
+        if not gana:
+            sin_gana += 1
+            continue
+        ents, usado = entradas_de(e["lema"], idx)
+        if not ents:
+            print(f"   {e['lema']}: sin entrada en raices.json")
+            sin_entrada += 1
+            continue
+        suyos = {str(r.get("ref") or "").split()[0] for r in ents
+                 if str(r.get("ref") or "").strip()}
+        if gana in suyos:
+            ok += 1
+        else:
+            mal += 1
+            print(f"   ✗ {e['lema']}: /verbo/ dice gaṇa {gana}; el Saddanīti, "
+                  f"{', '.join(sorted(suyos)) or '—'}")
+    print(f"   {ok} coinciden · {mal} discrepan · "
+          f"{sin_entrada} sin entrada · {sin_gana} sin sutta de signo")
+    return mal
+
+
+def cobertura_raices(verbo, escs):
+    """Cuántos lemas de /verbo/ tienen ficha en /recursos/raices/."""
+    idx = indice_raices()
+    if idx is None:
+        return
+    lemas = {e["lema"] for e in escs}
+    for p in verbo.get("paradigmas", []):
+        t = re.sub(r"^\d+[a-z]?-", "", p.get("entrada", "")).split("(")[0]
+        if t.strip():
+            lemas.add(t.strip())
+    hallados, huerfanos = 0, []
+    for l in sorted(lemas):
+        ents, _ = entradas_de(l, idx)
+        if ents:
+            hallados += 1
+        else:
+            huerfanos.append(l)
+    print(f"   cobertura para enlazar: {hallados} de {len(lemas)} lemas "
+          "tienen ficha")
+    if huerfanos:
+        print(f"      sin ficha: {', '.join(huerfanos)}")
+    # los lemas que llevan a más de una entrada no se pueden enlazar a una
+    ambiguos = []
+    for l in sorted(lemas):
+        ents, usado = entradas_de(l, idx)
+        if len(ents) > 1:
+            ambiguos.append(f"{l}×{len(ents)}")
+    if ambiguos:
+        print(f"      con homónimos, el enlace ha de mostrarlos todos: "
+              f"{', '.join(ambiguos)}")
+
+
 def main():
     for ruta in (VERBO, DIAPOS):
         if not os.path.exists(ruta):
@@ -202,6 +362,10 @@ def main():
     dia = json.load(open(DIAPOS, encoding="utf-8"))
     infl = (json.load(open(INFLEXIONES, encoding="utf-8"))
             if os.path.exists(INFLEXIONES) else None)
+    # Las escaleras PUBLICABLES, no las crudas del documento: es lo que la
+    # página enseña y, por tanto, lo que hay que cotejar.
+    from escaleras_verbo import escaleras as _escaleras
+    escs = _escaleras(doc, dia)
     ru2kacc = concordancia()
     problemas = 0
 
@@ -308,6 +472,9 @@ def main():
 
     if infl:
         problemas += cotejar_inflexiones(infl, doc)
+
+    problemas += cotejar_gana(doc, escs)
+    cobertura_raices(doc, escs)
 
     print(f"\n{'sin problemas' if not problemas else f'{problemas} a revisar'}")
     return 0
