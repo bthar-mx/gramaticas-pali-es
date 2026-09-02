@@ -537,7 +537,29 @@
 
   /* ---------- pie ---------- */
   footer{margin-top:3.2rem;padding-top:1.5rem;border-top:1px solid var(--rule);}
-  footer p{font-size:.86rem;color:var(--ink-soft);max-width:66ch;}
+  /* 2026-09-02, pedido del IEBH: la medida del pie era de 66ch y dejaba en
+     blanco media página mientras la nota de fuente y la de versión se
+     estiraban hacia abajo. El pie no es prosa de lectura larga: es
+     referencia, y se consulta de un vistazo. */
+  footer p{font-size:.86rem;color:var(--ink-soft);max-width:104ch;}
+
+  /* El pie plegado, como en el solucionador (pedido del IEBH, 2026-08-29):
+     a la vista queda el crédito del instituto; la fuente y el historial de
+     versiones van a un clic. Nada se pierde ni se quita del buscador: el
+     texto sigue en el documento aunque el pliegue esté cerrado. */
+  .pie-notas{margin:0 0 1.2rem;max-width:104ch;}
+  .pie-notas>summary{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:.68rem;font-weight:600;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--ink-soft);
+    cursor:pointer;list-style:none;padding:.25rem 0;
+  }
+  .pie-notas>summary::-webkit-details-marker{display:none}
+  .pie-notas>summary::after{content:' ▸';color:var(--ochre);}
+  .pie-notas[open]>summary::after{content:' ▾';}
+  .pie-notas[open]>summary{margin-bottom:.6rem;}
+  .pie-notas>summary:hover{color:var(--ink);}
+  .pie-notas>summary:focus-visible{outline:2px solid var(--ochre);outline-offset:2px;}
   .licencia{font-size:.8rem;line-height:1.65;}
   .licencia a{color:var(--ochre);}
   .vfoot{font-size:.8rem;}
@@ -633,8 +655,11 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
   <section class="panel" id="p-paradigmas" role="tabpanel" hidden></section>
 
   <footer>
-    <p id="pie-fuente"></p>
-    <p class="vfoot" id="vfoot"></p>
+    <details class="pie-notas">
+      <summary>Notas, cifras y fuentes</summary>
+      <p id="pie-fuente"></p>
+      <p class="vfoot" id="vfoot"></p>
+    </details>
     <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
     Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
     Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia

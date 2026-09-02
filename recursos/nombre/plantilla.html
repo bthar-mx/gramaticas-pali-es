@@ -459,6 +459,23 @@
 
   footer p{margin:0 0 1rem;}
 
+  /* El pie plegado, como en el solucionador (pedido del IEBH, 2026-08-29):
+     a la vista queda el crédito del instituto; las notas van a un clic.
+     El texto sigue en el documento aunque el pliegue esté cerrado. */
+  .pie-notas{margin:0 0 1rem;}
+  .pie-notas>summary{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:.68rem;font-weight:600;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--ink-soft);
+    cursor:pointer;list-style:none;padding:.25rem 0;
+  }
+  .pie-notas>summary::-webkit-details-marker{display:none}
+  .pie-notas>summary::after{content:' ▸';color:var(--ochre);}
+  .pie-notas[open]>summary::after{content:' ▾';}
+  .pie-notas[open]>summary{margin-bottom:.6rem;}
+  .pie-notas>summary:hover{color:var(--ink);}
+  .pie-notas>summary:focus-visible{outline:2px solid var(--ochre);outline-offset:2px;}
+
   footer p:last-child{margin-bottom:0;}
 
   footer strong{color:var(--ink);font-weight:600;}
@@ -684,6 +701,8 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
   </aside>
 
   <footer>
+    <details class="pie-notas">
+      <summary>Notas, cifras y fuentes</summary>
     <p><strong>Cómo leer la tabla.</strong> Cada fila da la forma tal como queda tras el paso, no la operación en abstracto: en ocre, lo que entra; tachado, lo que se elide. Las dos filas marcadas con punto son las formas reales del recorrido —la base <span class="pali">pācaka</span> y el nombre flexionado <span class="pali">pācako</span>—; las demás son estados intermedios que no se atestiguan por sí solos. La última columna remite al aforismo de Kaccāyana que ampara el paso.</p>
 
     <p><strong>De qué capítulos vienen los aforismos.</strong> La derivación cruza tres capítulos. Los pasos 1–5 —raíz, sufijo <span class="pali">ṇvu</span> y su sustitución— pertenecen al <em>Kibbidhāna-Kappa</em> y al <em>Uṇādi-Kappa</em>, todavía en preparación, de modo que §457, §521, §527, §621 y §622 aparecen aquí sin enlace. Los pasos 6–9 —base, inflexión y elisión— son del <em>Nāma-Kappa</em>, y el paso 10 aplica §11 del <em>Sandhi-Kappa</em>, el aforismo que vuelve a unir la consonante con su vocal.</p>
@@ -692,6 +711,7 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
     <a href="../../kaccayana/nama/">2-Nāma-Kappa</a> y <a href="../../kaccayana/sandhi/">1-Sandhi-Kappa</a>.
     Las reglas de combinación eufónica, con sus 266 formas y sus secuencias, en
     <a href="../sandhi/">Sandhi</a>.</p>
+    </details>
 
     <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
     Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>

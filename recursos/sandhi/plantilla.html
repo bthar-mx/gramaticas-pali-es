@@ -375,6 +375,17 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 .revision>summary:hover{color:var(--ink)}
 .revision>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 .revision>p{margin:9px 0 0}
+/* El pie plegado (pedido del IEBH, 2026-08-29, extendido a esta página el
+   2026-09-02). Hereda el mando de .revision —el ▸/▾— pero NO su tipografía:
+   dentro va la prosa del pie, que ya tiene la suya y no debe encogerse por
+   estar plegada. El sumario sí va en pequeño: es un mando, no un texto. */
+.pie-notas{margin:0;font-size:inherit;line-height:inherit;color:inherit;
+  border-left:0;padding-left:0}
+.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
+  padding:4px 0;margin-bottom:2px}
+.pie-notas[open]>summary{margin-bottom:10px}
+.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -440,6 +451,8 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 <button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
 
 <footer class="wrap">
+  <details class="revision pie-notas">
+    <summary>Notas, cifras y fuentes</summary>
   <p class="version-foot" id="vfoot"></p>
   <p><strong>Fuentes.</strong> Las formas marcadas <span class="src ce">C. eufónica</span> proceden de las <em>Reglas de combinación eufónica</em> de Bhikkhu Nandisena, con su referencia canónica, tal como él las da: componentes y resultado. El documento no da los pasos intermedios. Los que aquí aparecen se calculan según el patrón del aforismo y se comprueban contra la forma atestiguada: si los pasos no la reproducen exactamente, la forma se queda sin secuencia. Nada se da por bueno sin comprobar. Las marcadas <span class="src kac">Kaccāyana</span> vienen con su secuencia tomada del propio Sandhi-kappa (51 aforismos, §1–§51), con la numeración concordante de Rūpasiddhi (RŪ) y Saddanīti Suttamālā (SAD). Las cuatro categorías y los enunciados en español siguen las <em>Reglas de combinación eufónica</em> preparadas por Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano.</p>
   <p><strong>Véase también.</strong> El capítulo completo, con el vutti, las notas del traductor y la
@@ -447,6 +460,7 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   Las reglas y las formas proceden de las <em>Reglas de combinación eufónica</em>
   de Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano.</p>
   <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11 vuelve a unirlas. Entre esos dos pasos ocurre la operación propiamente dicha. «EM» es la forma de la edición moderna, con apóstrofo. En amarillo, lo que cambia en cada paso; en rojo, los contraejemplos, que muestran dónde la regla <em>no</em> se aplica.</p>
+  </details>
 
   <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>

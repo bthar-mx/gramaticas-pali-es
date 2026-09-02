@@ -291,6 +291,20 @@ body:not(.en) .i-en{display:none}
 footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
        color:var(--soot);font-size:14px}
 footer a{color:var(--nila)}
+/* El pie plegado (pedido del IEBH, 2026-08-29, extendido a esta página el
+   2026-09-02): a la vista queda el árbol del IEBH y su crédito; las notas y
+   la nota de versión van a un clic. El sumario va en pequeño porque es un
+   mando, no un texto; la prosa de dentro conserva la suya. */
+.pie-notas{margin:0}
+.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
+  cursor:pointer;list-style:none;padding:4px 0;margin-bottom:2px}
+.pie-notas>summary::-webkit-details-marker{display:none}
+.pie-notas>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
+.pie-notas[open]>summary::after{content:' ▾'}
+.pie-notas[open]>summary{margin-bottom:10px}
+.pie-notas>summary:hover{color:var(--ink)}
+.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 .licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
   font-size:12.5px;line-height:1.65;color:var(--soot)}
 .volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
@@ -405,6 +419,8 @@ footer a{color:var(--nila)}
 <button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio">↑</button>
 
 <footer class="wrap">
+  <details class="pie-notas">
+    <summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
   <p class="version-foot" id="vfoot"></p>
   <div class="i-es">
   <p><strong>Fuente.</strong> Los 83 paradigmas proceden de los documentos de declinación preparados por
@@ -441,6 +457,7 @@ footer a{color:var(--nila)}
   own words and are still in Spanish here, awaiting their English adjudication.</em></p>
   <p class="parcial" id="credito-ingles" hidden></p>
   </div>
+  </details>
 
   <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>

@@ -395,6 +395,20 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
        color:var(--soot);font-size:14px}
 footer a{color:var(--nila)}
+/* El pie plegado (pedido del IEBH, 2026-08-29, extendido a esta página el
+   2026-09-02): a la vista queda el árbol del IEBH y su crédito; las notas y
+   la nota de versión van a un clic. El sumario va en pequeño porque es un
+   mando, no un texto; la prosa de dentro conserva la suya. */
+.pie-notas{margin:0}
+.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
+  cursor:pointer;list-style:none;padding:4px 0;margin-bottom:2px}
+.pie-notas>summary::-webkit-details-marker{display:none}
+.pie-notas>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
+.pie-notas[open]>summary::after{content:' ▾'}
+.pie-notas[open]>summary{margin-bottom:10px}
+.pie-notas>summary:hover{color:var(--ink)}
+.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 .licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
   font-size:12.5px;line-height:1.65;color:var(--soot)}
 .volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
@@ -531,6 +545,8 @@ footer a{color:var(--nila)}
 <button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
 
 <footer class="wrap">
+  <details class="pie-notas">
+    <summary>Notas, cifras y fuentes</summary>
   <p class="version-foot" id="vfoot"></p>
   <p><strong>Fuente.</strong> Las 1.698 raíces proceden de
   <a href="https://drive.google.com/open?id=16neD1t6MKCsHNkf0zbi0zdG6nt7IamQl" rel="noopener" target="_blank"><i>Pali
@@ -607,6 +623,7 @@ footer a{color:var(--nila)}
   Helmer Smith (Copenhague, 1921), en la transcripción de A. Ruiz-Falqués (Taunggyi,
   2019); la traducción inglesa de sus entradas, de la digitalización de Bodhirasa
   Bhikkhu (2019).</p>
+  </details>
 
   <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
