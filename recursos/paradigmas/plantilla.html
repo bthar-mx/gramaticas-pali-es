@@ -641,8 +641,18 @@ DATA.paradigmas.forEach(p => {
   const e = (DATA.ingles || {})[p.codigo] || {};
   const detEn = (e.detalle||[]).map(d =>
     (d.usos||[]).map(u => u.uso + ' ' + (u.ej||[]).join(' ')).join(' ')).join(' ');
+  /* Los nombres de las inflexiones —«paṭhamā», «dutiyā», «ālapana»— son las
+     cabeceras de fila de toda tabla, y son de lo primero que se teclea; sin
+     ellos la búsqueda no daba nada. Los tiene cualquier paradigma con tabla,
+     de modo que buscarlos los devuelve todos: es lo cierto, y mejor que el
+     silencio. Van también los nombres de caso, que es como se pregunta en
+     español: «nominativo», «locativo». */
+  const inflex = (p.filas||[]).length
+    ? [].concat(DATA.inflexiones, DATA.inflexiones_en || [],
+                DATA.casos || [], DATA.casos_en || []).join(' ')
+    : '';
   p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
-                p.familia||'', p.texto||'', detalle, formas,
+                p.familia||'', p.texto||'', detalle, formas, inflex,
                 e.paradigma||'', e.subtitulo||'', e.familia||'', e.texto||'',
                 (e.notas||[]).join(' '), detEn].join(' '));
   p.gen = genOf(p); p.tema = temaOf(p);

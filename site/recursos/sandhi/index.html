@@ -460,6 +460,10 @@ const DATA = {"suttas":[{"kac":1,"ru":1,"sad":null,"pali":"Attho akkharasaññā
 /* ---------- utilities ---------- */
 const FOLD = {'ā':'a','ī':'i','ū':'u','ṃ':'m','ṁ':'m','ñ':'n','ṭ':'t','ḍ':'d','ṇ':'n',
               'ḷ':'l','ṅ':'n','ṣ':'s','ś':'s','é':'e','á':'a','í':'i','ó':'o','ú':'u'};
+/* Envoltorio de matchMedia: un entorno sin él —o una consulta que no
+   entienda— no debe llevarse por delante el pintado de la página. */
+const mq = c => { try{ return !!(window.matchMedia && matchMedia(c).matches); }catch(e){ return false; } };
+
 function fold(s){
   return (s||'').toLowerCase()
     .replace(/[āīūṃṁñṭḍṇḷṅṣśéáíóú]/g, c => FOLD[c])
@@ -722,13 +726,13 @@ document.getElementById('q').addEventListener('input', e => { q = e.target.value
    segundos. A menos de dos pantallas la animación ayuda a situarse. */
 function saltarA(el, block){
   const lejos = Math.abs(el.getBoundingClientRect().top) >= innerHeight * 2;
-  const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const quieto = mq('(prefers-reduced-motion: reduce)');
   el.scrollIntoView({block: block || 'start',
                      behavior: (lejos || quieto) ? 'instant' : 'smooth'});
 }
 function volverArriba(){
   const lejos = scrollY >= innerHeight * 2;
-  const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const quieto = mq('(prefers-reduced-motion: reduce)');
   scrollTo({top:0, behavior: (lejos || quieto) ? 'instant' : 'smooth'});
 }
 document.getElementById('out').addEventListener('click', e => {
@@ -767,7 +771,7 @@ document.addEventListener('click', e => {
   el.innerHTML = ladder(steps,false).replace(/^<div class="lad">/,'').replace(/<\/div>$/,'')
     ;
   const rows = el.querySelectorAll(':scope > div');
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reduce = mq('(prefers-reduced-motion: reduce)');
   rows.forEach((r,i) => reduce ? r.classList.add('on') : setTimeout(() => r.classList.add('on'), 260 + i*220));
 })();
 
@@ -889,7 +893,7 @@ const root = document.documentElement;
 // La preferencia de tema se comparte con el resto del sitio (clave pali_dark)
 const saved = store.get('pali_dark') === '1' ? 'dark'
             : (store.get('pali_dark') === '0' ? 'light' : store.get('sandhi-theme'));
-if(saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches))
+if(saved === 'dark' || (!saved && mq('(prefers-color-scheme: dark)')))
   root.dataset.theme = 'dark';
 document.getElementById('theme').onclick = () => {
   root.dataset.theme = root.dataset.theme === 'dark' ? '' : 'dark';
