@@ -255,7 +255,7 @@ Bloque de licencia, idéntico al de las demás páginas de `recursos/`:
 > Este material puede ser reproducido para uso personal y distribuido de forma
 > gratuita.
 > Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado
-> bajo licencia CC BY-NC-SA 4.0.
+> bajo licencia CC BY-NC-ND 4.0.
 
 **Decidido por Angel (2026-09-01):** todo paradigma tomado de otra obra lleva
 su crédito. La sección *otros paradigmas* —**73 de las 130 tablas**— procede,

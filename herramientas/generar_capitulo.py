@@ -83,8 +83,8 @@ COPYRIGHT = (
     "Este material puede ser reproducido para uso personal y distribuido de "
     "forma gratuita. Copyright © 2026 Instituto de Estudios Buddhistas "
     "Hispano (IEBH). Publicado bajo licencia "
-    '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" '
-    'rel="license">CC BY-NC-SA 4.0</a> · DOI '
+    '<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" '
+    'rel="license">CC BY-NC-ND 4.0</a> · DOI '
     '<a href="https://doi.org/10.5281/zenodo.21948010">'
     "10.5281/zenodo.21948010</a>."
 )
