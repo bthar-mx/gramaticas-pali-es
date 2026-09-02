@@ -1586,6 +1586,28 @@
    "fuente": "IEBH, 2026-09-01 · revisión en la página",
    "sandhi": true,
    "componentes": "diṭṭhe + eva"
+  },
+  {
+   "forma": "ekopi",
+   "fuente": "IEBH, 2026-09-01 · revisión en la página",
+   "sandhi": true,
+   "componentes": "eko + api"
+  },
+  {
+   "forma": "Imepi",
+   "fuente": "IEBH, 2026-09-01 · revisión en la página",
+   "sandhi": true,
+   "componentes": "ime + api"
+  },
+  {
+   "forma": "brahmalokāpi",
+   "fuente": "IEBH, 2026-09-01 · revisión en la página",
+   "sandhi": true,
+   "componentes": "brahmalokā + api",
+   "escalera_iebh": [
+    "brahmalokā api"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-01 · revisión en la página · escalera del revisor (verbatim)"
   }
  ]
 }
