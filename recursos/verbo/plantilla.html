@@ -278,10 +278,30 @@
     font-family:"Gentium Book Plus",Georgia,serif;
     font-variation-settings:normal;letter-spacing:0;}
 
-  .nota-inf{
-    font-size:.85rem;font-style:italic;color:var(--ink-soft);
-    margin:.15rem 0 1rem;
+  /* Las notas de cada inflexión, con su referencia a Kaccāyana, Rūpasiddhi
+     y Saddanīti. Son las que el documento «Verbo» no traía. */
+  .notas-inf{margin:.2rem 0 1.1rem;padding:0;list-style:none;}
+  .notas-inf li{
+    font-size:.86rem;color:var(--ink-soft);line-height:1.55;
+    margin:.25rem 0;padding-left:1.1rem;position:relative;max-width:78ch;
   }
+  .notas-inf li::before{
+    content:"·";position:absolute;left:.25rem;color:var(--ochre);
+  }
+  .usos-inf{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-soft);margin:1rem 0 .1rem;
+  }
+  .notas-inf .refs{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.68rem;letter-spacing:.04em;white-space:nowrap;
+    margin-left:.4em;opacity:.85;
+  }
+  /* La forma alternativa de una casilla: «ī - i». Se separa para que se lea
+     como dos terminaciones y no como una con guion. */
+  .alterna{color:var(--ink-soft);}
+  .alterna::before{content:" / ";color:var(--rule);}
 
   /* ---------- tablas ---------- */
   .envoltura{overflow-x:auto;margin:0 0 2.2rem;-webkit-overflow-scrolling:touch;}
@@ -656,7 +676,8 @@ const VERSION_DATE = '__VERSION_DATE__';
     },
     cabeceras: {paso:'paso', operaciones:'operaciones gramaticales',
                 autoridad:'autoridad', explicacion:'explicación'},
-    titulos: {caracteristicas:'Características del verbo',
+    titulos: {usos_de:'Se usa en los siguientes casos',
+              caracteristicas:'Características del verbo',
               usos:'Usos de las inflexiones verbales',
               voces:'Las tres voces', ganas:'Los ocho grupos de raíces'},
     marcas: {propuesta:'propuesta',
@@ -697,7 +718,16 @@ const VERSION_DATE = '__VERSION_DATE__';
             hit:'resultado', hits:'resultados',
             nada:'No aparece en la página.',
             mas:'y {0} más; afine la búsqueda.'},
-    version_nota: 'Los sub-ítems de la introducción van numerados, no con '
+    version_nota: 'Las ocho tablas de terminaciones salen ya de los ocho '
+      + 'documentos del índice de paradigmas, y no del documento «Verbo», que '
+      + 'es una versión reducida: da una sola terminación por casilla. Entran '
+      + 'quince formas alternativas —«ī - i», «uṃ - iṃsu», «eyya - e», «ssā - '
+      + 'ssa»—, las catorce notas que las explican con sus referencias a '
+      + 'Kaccāyana, Rūpasiddhi y Saddanīti, y los veintisiete casos de uso que '
+      + 'cada documento lista. Nada de esto estaba en la página hasta ahora. '
+      + 'La auditoría coteja desde hoy estas tablas con el documento y con las '
+      + 'presentaciones, cosa que antes no hacía. Antes, en la versión 1.2: '
+      + 'Los sub-ítems de la introducción van numerados, no con '
       + 'topos: el documento se refiere a ellos por su número —«4-5 se '
       + 'denominan tiempos no especificados»— y con viñetas esa nota no '
       + 'decía nada. Antes, en la versión 1.1: Entra la introducción del '
@@ -830,20 +860,63 @@ const VERSION_DATE = '__VERSION_DATE__';
   }
 
   /* ---------- inflexiones ---------- */
+  /* «ī - i» son DOS terminaciones, no una con guion. */
+  function terminacion(celda){
+    const partes = String(celda || '').split(' - ');
+    return partes.map((x,i) => i === 0
+      ? esc(x)
+      : '<span class="alterna">' + esc(x) + '</span>').join('');
+  }
+
+  /* La referencia de una nota: Kacc. §N —enlazado si su capítulo existe—,
+     Rū y Sad. */
+  function referencia(clave){
+    const r = (DATA.refs || {})[clave];
+    if (!r) return '';
+    const trozos = [];
+    if (r.kacc) trozos.push(r.href
+      ? '<a class="xref" href="' + esc(r.href) + '" title="' + esc(r.titulo)
+        + '">Kacc. §' + r.kacc + '</a>'
+      : '<span class="xref-pend" title="' + esc(r.titulo) + '">Kacc. §'
+        + r.kacc + '</span>');
+    if (r.ru) trozos.push('Rū ' + r.ru);
+    if (r.sad) trozos.push('Sad. ' + r.sad);
+    if (r.nir) trozos.push('Nir. ' + r.nir);
+    return trozos.length
+      ? '<span class="refs">' + trozos.join(' · ') + '</span>' : '';
+  }
+
   function tablaInflexion(inf){
-    const t = inf.tabla;
+    const cab = DATA.cabecera_inf;
     let h = '<div class="envoltura"><table><thead><tr><th></th>';
-    for (let i = 1; i < t[0].length; i++){
-      h += '<th class="pali">' + esc(t[0][i]) + '<br>'
-         + esc(tr('numeros', String(t[1][i]||'').replace(/ \/ /g,' '))) + '</th>';
+    for (let i = 1; i < cab[0].length; i++){
+      h += '<th class="pali">' + esc(cab[0][i]) + '<br>'
+         + esc(tr('numeros', cab[1][i])) + '</th>';
     }
     h += '</tr></thead><tbody>';
-    t.slice(2).forEach(fila => {
-      h += '<tr><th>' + esc(tr('personas', String(fila[0]).replace(/ \/ /g,' '))) + '</th>';
-      fila.slice(1).forEach(c => { h += '<td class="forma">' + esc(c) + '</td>'; });
+    inf.filas.forEach(fila => {
+      h += '<tr><th>' + esc(tr('personas', fila[0])) + '</th>';
+      fila.slice(1).forEach(c => {
+        h += '<td class="forma">' + terminacion(c) + '</td>';
+      });
       h += '</tr>';
     });
-    return h + '</tbody></table></div>';
+    h += '</tbody></table></div>';
+    if (inf.notas && inf.notas.length){
+      h += '<ul class="notas-inf">'
+         + inf.notas.map(n => '<li>' + esc(tr('notas', n.texto))
+                            + referencia(n.ref) + '</li>').join('')
+         + '</ul>';
+    }
+    /* Los casos en que se usa esta inflexión, tal como los lista su propio
+       documento. */
+    if (inf.usos && inf.usos.length){
+      h += '<p class="usos-inf">' + esc(ui('titulos','usos_de')) + '</p>'
+         + '<ul class="notas-inf">'
+         + inf.usos.map(u => '<li>' + esc(tr('usos_inf', u)) + '</li>').join('')
+         + '</ul>';
+    }
+    return h;
   }
 
   function panelInflexiones(){
@@ -854,7 +927,6 @@ const VERSION_DATE = '__VERSION_DATE__';
          + (inf.pali ? ' <span class="vibhatti">· ' + esc(inf.pali)
                      + ' vibhatti</span>' : '')
          + '</h2>';
-      if (inf.nota) h += '<p class="nota-inf">' + esc(tr('notas', inf.nota)) + '</p>';
       h += tablaInflexion(inf);
     });
     h += '<h2 id="s-ganas">' + esc(ui('titulos','ganas'))

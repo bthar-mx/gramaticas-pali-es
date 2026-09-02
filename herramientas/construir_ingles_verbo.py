@@ -56,7 +56,19 @@ INTERFAZ = {
     "indice": "Index",
     "arriba": "Back to top",
     "version": "Version",
-    "version_nota": ("The sub-items of the introduction are numbered rather "
+    "version_nota": ("The eight tables of endings now come from the eight "
+                     "documents of the paradigm index, not from the «Verbo» "
+                     "document, which is a reduced version giving a single "
+                     "ending per cell. Fifteen alternative forms are restored "
+                     "—“ī - i”, “uṃ - iṃsu”, “eyya - e”, “ssā - ssa”—, along "
+                     "with the fourteen notes that explain them with their "
+                     "references to Kaccāyana, Rūpasiddhi and Saddanīti, and "
+                     "the twenty-seven uses each document lists. None of this "
+                     "was on the page before. The audit now cross-checks "
+                     "these tables against the document and the "
+                     "presentations, which it did not do before. Previously, "
+                     "in version 1.2: The sub-items of the introduction are "
+                     "numbered rather "
                      "than bulleted: the document refers to them by number "
                      "—“4-5 are called unspecified tenses”— and against "
                      "bullets that note said nothing. Previously, in version "
@@ -112,6 +124,7 @@ INTERFAZ = {
         "explicacion": "explanation",
     },
     "titulos": {
+        "usos_de": "It is used in the following cases",
         "caracteristicas": "Characteristics of the verb",
         "usos": "Uses of the verbal inflections",
         "voces": "The three voices",
@@ -330,6 +343,56 @@ for _raiz, _gana, _signo in [
            f"conjugational sign ‘{_signo}{_cierre}")
     INTRO[_es] = _en
 
+# Los casos de uso que lista cada uno de los ocho documentos.
+USOS_INF = {
+    "Acción en el presente (paccuppanna)":
+        "Action in the present (paccuppanna)",
+    "Pasado (atīta); cercanía del presente (paccuppanna-samīpe)":
+        "Past (atīta); nearness to the present (paccuppanna-samīpe)",
+    "Verdades universales.": "Universal truths.",
+    "Orden (āṇatti)": "Command (āṇatti)",
+    "Bendición, deseo (āsiṭṭha)": "Blessing, wish (āsiṭṭha)",
+    "Indicación de lo que se debería hacer (vidhi)":
+        "Indication of what should be done (vidhi)",
+    "Invitación (nimantana)": "Invitation (nimantana)",
+    "Solicitud (ajjhesanā)": "Request (ajjhesanā)",
+    "Consentimiento, permiso (anumati)": "Consent, permission (anumati)",
+    "Aspiración (patthanā)": "Aspiration (patthanā)",
+    "Tiempo oportuno o adecuado (pattakāla)":
+        "Right or suitable time (pattakāla)",
+    "Consentimiento (anumati)": "Consent (anumati)",
+    "Suposición (parikappa)": "Supposition (parikappa)",
+    "Solicitud, permiso (ajjhesanā)": "Request, permission (ajjhesanā)",
+    "El pasado directamente experimentado (paccakkha)":
+        "The past directly experienced (paccakkha)",
+    "El pasado no directamente experimentado (appaccakkha). El pasado "
+    "expresado por este tiempo verbal es partir de ayer hacia atrás, por esto "
+    "el nombre hiyyattanī.":
+        "The past not directly experienced (appaccakkha). The past expressed "
+        "by this tense runs from yesterday backwards, and hence the name "
+        "hiyyattanī.",
+    "Éste es el pasado indefinido y se utiliza para referirse a una acción que "
+    "no ha sido experimentada por medio de los sentidos (appaccakkha).":
+        "This is the indefinite past, used to refer to an action that has not "
+        "been experienced through the senses (appaccakkha).",
+    "El pasado que no ha sido experimentado directamente (appaccakkha). El "
+    "pasado expresado por este tiempo verbal es a partir de hoy día hacia "
+    "atrás; de aquí el nombre ajjatanī.":
+        "The past that has not been directly experienced (appaccakkha). The "
+        "past expressed by this tense runs from today backwards; hence the "
+        "name ajjatanī.",
+    "Futuro (anāgata)": "Future (anāgata)",
+    "Pasado (atīta)": "Past (atīta)",
+    "La no ocurrencia de una acción debido a deficiencia de causas "
+    "(kāraṇavekalla)":
+        "The non-occurrence of an action owing to a deficiency of causes "
+        "(kāraṇavekalla)",
+    "La no ocurrencia de una acción debido a la existencia de condiciones que "
+    "impiden su realización":
+        "The non-occurrence of an action owing to the existence of conditions "
+        "that prevent its realisation",
+}
+
 # La línea de procedencia del pie. La cita es la misma; sólo cambia la «y».
 FUENTE = {
     "Rū. pp. 256-33 y Sad. iii pp. 267-311":
@@ -339,8 +402,44 @@ FUENTE = {
 }
 
 # Las notas que el documento pone bajo el título de algunas inflexiones.
+# Las notas de las ocho tablas de terminaciones, de los documentos del
+# índice. Los nombres de las terminaciones no se traducen: son las formas.
 NOTAS = {
-    "inserción de ‘a’ es opcional": "insertion of ‘a’ is optional",
+    "La ‘a’ se alarga antes de ‘mi’, ‘ma’ y ‘mhe’. Ej., gacchāmi, voy; "
+    "gacchāma, vamos; gacchāmhe, vamos.":
+        "The ‘a’ is lengthened before ‘mi’, ‘ma’ and ‘mhe’. E.g., gacchāmi, "
+        "I go; gacchāma, we go; gacchāmhe, we go.",
+    "A veces hay sustitución de ‘(a)nti’ y ‘(a)nte’ por ‘re’.":
+        "Sometimes ‘(a)nti’ and ‘(a)nte’ are replaced by ‘re’.",
+    "La ‘a’ se alarga antes de ‘mi’, ‘ma’ y ‘hi’ — a veces se elide ‘hi’. "
+    "Ej., gacchāmi, vaya; gacchāma, vayamos; gacchāhi, ve; gaccha, ve.":
+        "The ‘a’ is lengthened before ‘mi’, ‘ma’ and ‘hi’ — sometimes ‘hi’ is "
+        "elided. E.g., gacchāmi, let me go; gacchāma, let us go; gacchāhi, "
+        "go; gaccha, go.",
+    "En la primera, segunda y tercera persona singular de la voz activa, a "
+    "veces hay sustitución por ‘e’. También en la primera persona singular "
+    "de la voz media/reflexiva, a veces hay sustitución por ‘e’.":
+        "In the first, second and third person singular of the active voice, "
+        "there is sometimes substitution by ‘e’. Also in the first person "
+        "singular of the middle/reflexive voice, there is sometimes "
+        "substitution by ‘e’.",
+    "La inserción del aumento ‘a’ antes de la raíz es opcional.":
+        "The insertion of the augment ‘a’ before the root is optional.",
+    "La inserción de ‘i’ antes de la inflexión verbal es opcional.":
+        "The insertion of ‘i’ before the verbal inflection is optional.",
+    "La inserción de ‘a’ al comienzo de la raíz es opcional.":
+        "The insertion of ‘a’ at the beginning of the root is optional.",
+    "También a veces en la tercera persona del singular hay ‘i’, en la "
+    "primera del plural ‘mha’, y hay sustitución de ‘o’ por ‘i’, ‘ā’ por "
+    "‘ttha’ y ‘a’ por ‘aṃ’.":
+        "Also, sometimes in the third person singular there is ‘i’, in the "
+        "first person plural ‘mha’, and there is substitution of ‘i’ for ‘o’, "
+        "‘ttha’ for ‘ā’ and ‘aṃ’ for ‘a’.",
+    "Y ‘uṃ’ por ‘iṃsu’.": "And ‘iṃsu’ for ‘uṃ’.",
+    "También, a veces, hay acortamiento de la ‘ā’ de ‘ssā’ y ‘ssāmhā’ y "
+    "sustitución de ‘sse’ por ‘ssa’.":
+        "Also, sometimes, the ‘ā’ of ‘ssā’ and ‘ssāmhā’ is shortened, and "
+        "‘ssa’ is substituted for ‘sse’.",
 }
 
 VOCES = {
@@ -387,7 +486,9 @@ OBRAS = {
 
 PERSONAS = {
     "3a": "3rd", "2a": "2nd", "1a": "1st",
-    "persona (purisa)": "person (purisa)",
+    "3a (paṭhama)": "3rd (paṭhama)",
+    "2a (majjhima)": "2nd (majjhima)",
+    "1a (uttama)": "1st (uttama)",
 }
 
 # «Plural» con mayúscula sale de una sola tabla de inflexión del documento;
@@ -544,6 +645,7 @@ def main():
             "entradas": ENTRADAS,
             "obras": OBRAS,
             "notas": NOTAS,
+            "usos_inf": USOS_INF,
             "fuente": FUENTE,
             "intro": INTRO,
             "usos": USOS,

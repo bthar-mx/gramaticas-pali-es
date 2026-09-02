@@ -77,9 +77,11 @@ La terminología sale de la traducción inglesa del Ākhyāta-kappa del propio B
 | voz impersonal | impersonal voice |
 | voz pasiva | passive voice |
 | 1a | 1st |
+| 1a (uttama) | 1st (uttama) |
 | 2a | 2nd |
+| 2a (majjhima) | 2nd (majjhima) |
 | 3a | 3rd |
-| persona (purisa) | person (purisa) |
+| 3a (paṭhama) | 3rd (paṭhama) |
 | Plural | Plural |
 | plural | plural |
 | plural (bahuvacana) | plural (bahuvacana) |

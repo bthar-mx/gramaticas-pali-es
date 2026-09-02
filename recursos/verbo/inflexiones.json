@@ -1,0 +1,406 @@
+{
+ "_nota": "Las ocho tablas de terminaciones, de los ocho documentos de Google enlazados desde el índice de paradigmas de inflexiones verbales. Transcritas verbatim por herramientas/construir_inflexiones.py, que explica en su docstring por qué existen y cómo volver a traerlas.",
+ "fuente": {
+  "autor": "Bhikkhu Nandisena",
+  "obra": "Índice de paradigmas de inflexiones verbales (IEBH)",
+  "indice": "1_UA2LcOlS2ixLCoXfUMDouZBiel2kB8wjcBh2f9sWG0"
+ },
+ "cabecera": [
+  [
+   "",
+   "voz activa o transitiva (parassapada)",
+   "voz activa o transitiva (parassapada)",
+   "voz media o reflexiva (attanopada)",
+   "voz media o reflexiva (attanopada)"
+  ],
+  [
+   "persona (purisa)",
+   "singular (ekavacana)",
+   "plural (bahuvacana)",
+   "singular (ekavacana)",
+   "plural (bahuvacana)"
+  ]
+ ],
+ "refs": {
+  "aumento": {
+   "kacc": 519,
+   "ru": 457,
+   "sad": 1032
+  },
+  "i_opcional": {
+   "kacc": 516,
+   "ru": 466,
+   "sad": 1030
+  },
+  "alarga_a": {
+   "kacc": 478,
+   "ru": 438,
+   "sad": 959
+  },
+  "e_potencial": {
+   "ru": 454,
+   "sad": 1088
+  },
+  "umsu": {
+   "kacc": 504,
+   "ru": 470,
+   "sad": 1016
+  },
+  "resto_aor": {
+   "ru": 469
+  },
+  "re_presente": {
+   "ru": 442,
+   "nir": 570
+  }
+ },
+ "inflexiones": [
+  {
+   "titulo": "presente indicativo",
+   "pali": "vattamānā",
+   "codigo": "PRES",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "ti",
+     "(a)nti",
+     "te",
+     "(a)nte"
+    ],
+    [
+     "2a (majjhima)",
+     "si",
+     "tha",
+     "se",
+     "vhe"
+    ],
+    [
+     "1a (uttama)",
+     "mi",
+     "ma",
+     "e",
+     "mhe"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La ‘a’ se alarga antes de ‘mi’, ‘ma’ y ‘mhe’. Ej., gacchāmi, voy; gacchāma, vamos; gacchāmhe, vamos.",
+     "ref": "alarga_a"
+    },
+    {
+     "texto": "A veces hay sustitución de ‘(a)nti’ y ‘(a)nte’ por ‘re’.",
+     "ref": "re_presente"
+    }
+   ],
+   "doc": "10HTRsYs9p1yxfxUEDWJjjNm0LdbXexPMKPdRxsdhyvw",
+   "usos": [
+    "Acción en el presente (paccuppanna)",
+    "Pasado (atīta); cercanía del presente (paccuppanna-samīpe)",
+    "Verdades universales."
+   ]
+  },
+  {
+   "titulo": "imperativo",
+   "pali": "pañcamī",
+   "codigo": "IMP",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "tu",
+     "antu",
+     "taṃ",
+     "antaṃ"
+    ],
+    [
+     "2a (majjhima)",
+     "hi",
+     "tha",
+     "ssu",
+     "vho"
+    ],
+    [
+     "1a (uttama)",
+     "mi",
+     "ma",
+     "e",
+     "āmase"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La ‘a’ se alarga antes de ‘mi’, ‘ma’ y ‘hi’ — a veces se elide ‘hi’. Ej., gacchāmi, vaya; gacchāma, vayamos; gacchāhi, ve; gaccha, ve.",
+     "ref": "alarga_a"
+    }
+   ],
+   "doc": "1VL6ERDctsuKDbAUV-d83JF8URgZPkpSKFXGwLrrs0oc",
+   "usos": [
+    "Orden (āṇatti)",
+    "Bendición, deseo (āsiṭṭha)",
+    "Indicación de lo que se debería hacer (vidhi)",
+    "Invitación (nimantana)",
+    "Solicitud (ajjhesanā)",
+    "Consentimiento, permiso (anumati)",
+    "Aspiración (patthanā)",
+    "Tiempo oportuno o adecuado (pattakāla)"
+   ]
+  },
+  {
+   "titulo": "potencial",
+   "pali": "sattamī",
+   "codigo": "POT",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "eyya - e",
+     "eyyuṃ",
+     "etha",
+     "eraṃ"
+    ],
+    [
+     "2a (majjhima)",
+     "eyyāsi - e",
+     "eyyātha",
+     "etho",
+     "eyyāvho"
+    ],
+    [
+     "1a (uttama)",
+     "eyyāmi - e",
+     "eyyāma",
+     "eyyaṃ - e",
+     "eyyāmhe"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "En la primera, segunda y tercera persona singular de la voz activa, a veces hay sustitución por ‘e’. También en la primera persona singular de la voz media/reflexiva, a veces hay sustitución por ‘e’.",
+     "ref": "e_potencial"
+    }
+   ],
+   "doc": "1KW3bMgwsTDUil5yW0puhN3_0x1mn9kFwY4Te4BxEMuI",
+   "usos": [
+    "Consentimiento (anumati)",
+    "Suposición (parikappa)",
+    "Indicación de lo que se debería hacer (vidhi)",
+    "Invitación (nimantana)",
+    "Solicitud, permiso (ajjhesanā)",
+    "Aspiración (patthanā)",
+    "Tiempo oportuno o adecuado (pattakāla)"
+   ]
+  },
+  {
+   "titulo": "imperfecto",
+   "pali": "hiyyattanī",
+   "codigo": "IMPERF",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "ā",
+     "ū",
+     "ttha",
+     "tthuṃ"
+    ],
+    [
+     "2a (majjhima)",
+     "o",
+     "ttha",
+     "se",
+     "vhaṃ"
+    ],
+    [
+     "1a (uttama)",
+     "aṃ",
+     "mhā",
+     "iṃ",
+     "mhase"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La inserción del aumento ‘a’ antes de la raíz es opcional.",
+     "ref": "aumento"
+    }
+   ],
+   "doc": "1P7Hhq9ezUskRUbrfhl2Rhk5t5KiIGSx71CoAjFuCfBg",
+   "usos": [
+    "El pasado directamente experimentado (paccakkha)",
+    "El pasado no directamente experimentado (appaccakkha). El pasado expresado por este tiempo verbal es partir de ayer hacia atrás, por esto el nombre hiyyattanī."
+   ]
+  },
+  {
+   "titulo": "perfecto",
+   "pali": "parokkhā",
+   "codigo": "PERF",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "a",
+     "u",
+     "ttha",
+     "re"
+    ],
+    [
+     "2a (majjhima)",
+     "e",
+     "ttha",
+     "tho",
+     "vho"
+    ],
+    [
+     "1a (uttama)",
+     "aṃ",
+     "mha",
+     "iṃ",
+     "mhe"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La inserción de ‘i’ antes de la inflexión verbal es opcional.",
+     "ref": "i_opcional"
+    }
+   ],
+   "doc": "1EC4TJfze-SwvRAVjbAIv0FI96vNrLLyKmFPQZNFR8rM",
+   "usos": [
+    "Éste es el pasado indefinido y se utiliza para referirse a una acción que no ha sido experimentada por medio de los sentidos (appaccakkha)."
+   ]
+  },
+  {
+   "titulo": "aoristo",
+   "pali": "ajjatanī",
+   "codigo": "AOR",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "ī - i",
+     "uṃ - iṃsu",
+     "ā - ttha",
+     "ū"
+    ],
+    [
+     "2a (majjhima)",
+     "o - i",
+     "ttha",
+     "se",
+     "vhaṃ"
+    ],
+    [
+     "1a (uttama)",
+     "iṃ",
+     "mhā - mha",
+     "a - aṃ",
+     "mhe"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La inserción de ‘a’ al comienzo de la raíz es opcional.",
+     "ref": "aumento"
+    },
+    {
+     "texto": "La inserción de ‘i’ antes de la inflexión verbal es opcional.",
+     "ref": "i_opcional"
+    },
+    {
+     "texto": "También a veces en la tercera persona del singular hay ‘i’, en la primera del plural ‘mha’, y hay sustitución de ‘o’ por ‘i’, ‘ā’ por ‘ttha’ y ‘a’ por ‘aṃ’.",
+     "ref": "resto_aor"
+    },
+    {
+     "texto": "Y ‘uṃ’ por ‘iṃsu’.",
+     "ref": "umsu"
+    }
+   ],
+   "doc": "1cMYgtcrbhT5jnS_oKYzjgDoSeij-6KNA6QN4qvMaZqg",
+   "usos": [
+    "El pasado directamente experimentado (paccakkha)",
+    "El pasado que no ha sido experimentado directamente (appaccakkha). El pasado expresado por este tiempo verbal es a partir de hoy día hacia atrás; de aquí el nombre ajjatanī."
+   ]
+  },
+  {
+   "titulo": "futuro",
+   "pali": "bhavissantī",
+   "codigo": "FUT",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "ssati",
+     "ssanti",
+     "ssate",
+     "ssante"
+    ],
+    [
+     "2a (majjhima)",
+     "ssasi",
+     "ssatha",
+     "ssase",
+     "ssavhe"
+    ],
+    [
+     "1a (uttama)",
+     "ssāmi",
+     "ssāma",
+     "ssaṃ",
+     "ssāmhe"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La inserción de ‘i’ antes de la inflexión verbal es opcional.",
+     "ref": "i_opcional"
+    }
+   ],
+   "doc": "10qIRmZZ9d1Qcee40AyBi5OTZw3AZINqFJfh0gIlQuys",
+   "usos": [
+    "Futuro (anāgata)",
+    "Pasado (atīta)"
+   ]
+  },
+  {
+   "titulo": "condicional",
+   "pali": "kālātipatti",
+   "codigo": "COND",
+   "filas": [
+    [
+     "3a (paṭhama)",
+     "ssā - ssa",
+     "ssaṃsu",
+     "ssatha",
+     "ssisu"
+    ],
+    [
+     "2a (majjhima)",
+     "sse - ssa",
+     "ssatha",
+     "ssase",
+     "ssavhe"
+    ],
+    [
+     "1a (uttama)",
+     "ssaṃ",
+     "ssāmhā - ssāmha",
+     "ssiṃ",
+     "ssāmhase"
+    ]
+   ],
+   "notas": [
+    {
+     "texto": "La inserción de ‘a’ al comienzo de la raíz es opcional.",
+     "ref": "aumento"
+    },
+    {
+     "texto": "La inserción de ‘i’ antes de la inflexión verbal es opcional.",
+     "ref": "i_opcional"
+    },
+    {
+     "texto": "También, a veces, hay acortamiento de la ‘ā’ de ‘ssā’ y ‘ssāmhā’ y sustitución de ‘sse’ por ‘ssa’.",
+     "ref": null
+    }
+   ],
+   "doc": "1aj0xwhbEvvI-p79DeqmoQhgk86MKQ7YuFJM4ygi8Yug",
+   "usos": [
+    "La no ocurrencia de una acción debido a deficiencia de causas (kāraṇavekalla)",
+    "La no ocurrencia de una acción debido a la existencia de condiciones que impiden su realización"
+   ]
+  }
+ ]
+}

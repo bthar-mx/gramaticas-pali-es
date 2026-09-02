@@ -33,11 +33,19 @@ from escaleras_verbo import escaleras  # noqa: E402
 
 VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 INGLES = os.path.join(RAIZ, "recursos", "verbo", "ingles.json")
+INFLEXIONES = os.path.join(RAIZ, "recursos", "verbo", "inflexiones.json")
 DESTINO = os.path.join(RAIZ, "docs", "verbo", "ingles-por-adjudicar.md")
+
+
+def _inflexiones():
+    if not os.path.exists(INFLEXIONES):
+        return {"inflexiones": [], "cabecera": [[], []]}
+    return json.load(open(INFLEXIONES, encoding="utf-8"))
 
 
 def españolas(verbo, escs):
     """Las cadenas que la página muestra, por sección."""
+    infl = _inflexiones()
     fuera = {}
     fuera["operaciones"] = sorted({p["operacion"] for e in escs
                                    for p in e["pasos"] if p["operacion"]})
@@ -46,7 +54,7 @@ def españolas(verbo, escs):
                                  if e["formacion"]})
     fuera["tiempos"] = sorted({p["tiempo"] for p in verbo["paradigmas"]
                                if p["tiempo"]}
-                              | {i["titulo"] for i in verbo["inflexiones"]})
+                              | {i["titulo"] for i in infl["inflexiones"]})
     fuera["voces"] = sorted({p["voz"] for p in verbo["paradigmas"] if p["voz"]})
     intro = verbo.get("introduccion") or {}
     cadenas = [intro.get("entradilla", "")]
@@ -56,14 +64,17 @@ def españolas(verbo, escs):
     fuera["personas"] = sorted({f["persona"].replace(" / ", " ")
                                 for p in verbo["paradigmas"]
                                 for f in p["filas"]}
-                               | {t[0].replace(" / ", " ")
-                                  for i in verbo["inflexiones"]
-                                  for t in [i["tabla"][1]]})
+                               | {fila[0] for i in infl["inflexiones"]
+                                  for fila in i["filas"]})
     fuera["numeros"] = sorted({n.replace(" / ", " ")
                                for p in verbo["paradigmas"] for n in p["numeros"]}
-                              | {n.replace(" / ", " ")
-                                 for i in verbo["inflexiones"]
-                                 for n in i["tabla"][1][1:]})
+                              | set(infl["cabecera"][1][1:]))
+    # Las notas de las tablas de terminaciones, que el documento «Verbo» no
+    # traía y sí traen los ocho documentos del índice.
+    fuera["notas"] = sorted({n["texto"] for i in infl["inflexiones"]
+                             for n in i["notas"]})
+    fuera["usos_inf"] = sorted({u for i in infl["inflexiones"]
+                                for u in i.get("usos", [])})
     return fuera
 
 

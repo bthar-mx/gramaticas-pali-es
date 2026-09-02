@@ -39,9 +39,13 @@ from generar_ingles_verbo import comprobar  # noqa: E402
 PLANTILLA = os.path.join(RAIZ, "recursos", "verbo", "plantilla.html")
 VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 INGLES = os.path.join(RAIZ, "recursos", "verbo", "ingles.json")
+# Las tablas de terminaciones NO salen del docx, que es una versión reducida,
+# sino de los ocho documentos del índice de paradigmas. Ver
+# herramientas/construir_inflexiones.py.
+INFLEXIONES = os.path.join(RAIZ, "recursos", "verbo", "inflexiones.json")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "verbo", "index.html")
 
-VERSION = "1.2"
+VERSION = "1.3"
 VERSION_FECHA = "2026-09-01"
 
 
@@ -58,6 +62,29 @@ def mapa_suttas():
     return mapa
 
 
+SIN_CAPITULO = ("El Ākhyāta-kappa no está publicado todavía; la referencia "
+                "se enlazará sola cuando lo esté.")
+
+
+def resolver_refs(datos, mapa):
+    """El §N de Kaccāyana de cada nota de inflexión, enlazado si se puede."""
+    enlazadas = pendientes = 0
+    for ref in (datos.get("refs") or {}).values():
+        n = ref.get("kacc")
+        if not n:
+            continue
+        destino = mapa.get(n)
+        if destino:
+            obra, cap, titulo = destino
+            ref["href"] = f"../../{obra}/{cap}/#s{n}"
+            ref["titulo"] = f"{titulo} · §{n}"
+            enlazadas += 1
+        else:
+            ref["titulo"] = SIN_CAPITULO
+            pendientes += 1
+    return enlazadas, pendientes
+
+
 def resolver(datos, mapa):
     """Añade a cada autoridad su enlace, si el capítulo está publicado."""
     enlazadas = pendientes = 0
@@ -71,14 +98,12 @@ def resolver(datos, mapa):
                     a["titulo"] = f"{titulo} · §{a['kacc']}"
                     enlazadas += 1
                 else:
-                    a["titulo"] = ("El Ākhyāta-kappa no está publicado "
-                                   "todavía; la referencia se enlazará sola "
-                                   "cuando lo esté.")
+                    a["titulo"] = SIN_CAPITULO
                     pendientes += 1
     return enlazadas, pendientes
 
 
-def verificar(verbo, escs):
+def verificar(verbo, infl, escs):
     """Lo que tiene que cuadrar para publicar."""
     fallos = []
 
@@ -86,9 +111,17 @@ def verificar(verbo, escs):
     if len(intro.get("items", [])) != 13:
         fallos.append(f"la introducción trae {len(intro.get('items', []))} "
                       "ítems; deberían ser 13")
-    if len(verbo["inflexiones"]) != 8:
-        fallos.append(f"{len(verbo['inflexiones'])} tablas de inflexión; "
+    if len(infl["inflexiones"]) != 8:
+        fallos.append(f"{len(infl['inflexiones'])} tablas de inflexión; "
                       "deberían ser 8")
+    for i in infl["inflexiones"]:
+        if len(i["filas"]) != 3:
+            fallos.append(f"inflexión «{i['titulo']}»: {len(i['filas'])} "
+                          "personas, deberían ser 3")
+        for nota in i["notas"]:
+            if nota["ref"] and nota["ref"] not in infl["refs"]:
+                fallos.append(f"inflexión «{i['titulo']}»: referencia "
+                              f"«{nota['ref']}» desconocida")
     if len(verbo["ganas"]) != 9:
         fallos.append(f"la tabla de gaṇas trae {len(verbo['ganas'])} filas; "
                       "deberían ser 9 (cabecera + 8 grupos)")
@@ -128,9 +161,14 @@ def main():
         return 1
 
     verbo = json.load(open(VERBO, encoding="utf-8"))
+    if not os.path.exists(INFLEXIONES):
+        print(f"falta {os.path.relpath(INFLEXIONES, RAIZ)}. Ejecutar antes "
+              "construir_inflexiones.py.")
+        return 1
+    infl = json.load(open(INFLEXIONES, encoding="utf-8"))
     escs = escaleras()
 
-    fallos = verificar(verbo, escs)
+    fallos = verificar(verbo, infl, escs)
     if fallos:
         print("Los datos del verbo NO cuadran; no se publica:")
         for f in fallos[:20]:
@@ -157,7 +195,9 @@ def main():
         "introduccion": verbo.get("introduccion", {}),
         "usos": verbo["usos"],
         "voces": verbo["voces"],
-        "inflexiones": verbo["inflexiones"],
+        "inflexiones": infl["inflexiones"],
+        "cabecera_inf": infl["cabecera"],
+        "refs": infl["refs"],
         "ganas": verbo["ganas"],
         "escaleras": escs,
         "paradigmas": verbo["paradigmas"],
@@ -170,7 +210,11 @@ def main():
         }
         if ing.get("adjudicado"):
             datos["ingles"]["prosa"] = ing["prosa"]
-    enlazadas, pendientes = resolver(datos, mapa_suttas())
+    mapa = mapa_suttas()
+    enlazadas, pendientes = resolver(datos, mapa)
+    a2, p2 = resolver_refs(datos, mapa)
+    enlazadas += a2
+    pendientes += p2
 
     plantilla = open(PLANTILLA, encoding="utf-8").read()
     marca = re.search(r"/\*__DATOS__\*/.*?/\*__FIN__\*/", plantilla, re.S)
@@ -198,6 +242,11 @@ def main():
           f"{propuestas} filas propuestas)")
     print(f"  paradigmas  {len(verbo['paradigmas'])}  "
           f"({buddhadatta} de Buddhadatta)")
+    alternas = sum(1 for i in infl["inflexiones"] for fila in i["filas"]
+                   for c in fila[1:] if " - " in c or "(" in c)
+    print(f"  inflexiones {len(infl['inflexiones'])}  "
+          f"({alternas} casillas con forma alternativa, "
+          f"{sum(len(i['notas']) for i in infl['inflexiones'])} notas)")
     print(f"  §N          {enlazadas} enlazados, {pendientes} sin capítulo "
           "publicado")
     if ing:

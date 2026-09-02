@@ -38,6 +38,8 @@ import unicodedata
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
+INFLEXIONES = os.path.join(RAIZ, "recursos", "verbo", "inflexiones.json")
+PDFS = os.path.join(RAIZ, "docs", "fuentes", "verbo-diapositivas")
 DIAPOS = os.path.join(RAIZ, "recursos", "verbo", "diapositivas.json")
 
 RE_SUTTA = re.compile(r"\*\*(\d+)\\?\.\s*(\d+)\\?\.\s")
@@ -78,6 +80,119 @@ def pares(datos, donde):
                        f"{paso['n']}")
 
 
+# --------------------------------------------------------------------------
+# Las tablas de terminaciones, cotejadas con las otras dos fuentes
+# --------------------------------------------------------------------------
+#
+# Esto es lo que faltaba y por lo que la página publicó, hasta la v1.2, las
+# terminaciones del documento «Verbo» —una sola por casilla— en vez de las
+# del índice de paradigmas, que trae las alternativas. La auditoría cotejaba
+# las escaleras y no estas tablas.
+
+RE_FILA_DIAPO = re.compile(r"^\s*(tercera|segunda|primera)\s+(.*)$", re.I)
+PERSONAS_DIAPO = {"tercera": 0, "segunda": 1, "primera": 2}
+
+
+def normaliza_term(t):
+    """«Ā -TTHA» y «ā - ttha» son la misma casilla."""
+    t = unicodedata.normalize("NFC", str(t or "")).lower()
+    t = re.sub(r"\s*-\s*", " - ", t)
+    return re.sub(r"[\s()]+", "", t)
+
+
+def tablas_de_diapositivas():
+    """
+    Las tablas de terminaciones que imprimen las presentaciones.
+
+    Se reconocen por sus tres filas «tercera / segunda / primera», que en las
+    diapositivas van en versalitas. Devuelve {pali: [[4 casillas] x 3]}.
+    """
+    import glob
+    import shutil
+    import subprocess
+
+    if not shutil.which("pdftotext"):
+        return {}
+    fuera = {}
+    for pdf in sorted(glob.glob(os.path.join(PDFS, "*.pdf"))):
+        salida = subprocess.run(["pdftotext", "-layout", pdf, "-"],
+                                capture_output=True, text=True)
+        if salida.returncode != 0:
+            continue
+        lineas = salida.stdout.split("\n")
+        for i, linea in enumerate(lineas):
+            m = re.search(r"\((VATTAMĀNĀ|PAÑCAMĪ|SATTAMĪ|HIYYATTANĪ|PAROKKHĀ|"
+                          r"AJJATANĪ|BHAVISSANTĪ|KĀLĀTIPATTI)\)", linea, re.I)
+            if not m:
+                continue
+            pali = m.group(1).lower()
+            # La tabla es la que sigue INMEDIATAMENTE al nombre pāḷi, y se
+            # corta en cuanto aparece otro nombre pāḷi: si se barren treinta
+            # líneas a ciegas se recogen las filas de la tabla siguiente y se
+            # coteja «vattamānā» contra las terminaciones del imperfecto.
+            filas = [None, None, None]
+            for l in lineas[i + 1:i + 26]:
+                if re.search(r"\((VATTAMĀNĀ|PAÑCAMĪ|SATTAMĪ|HIYYATTANĪ|"
+                             r"PAROKKHĀ|AJJATANĪ|BHAVISSANTĪ|KĀLĀTIPATTI)\)",
+                             l, re.I):
+                    break
+                f = RE_FILA_DIAPO.match(l)
+                if not f:
+                    continue
+                celdas = re.split(r"\s{2,}", f.group(2).strip())
+                celdas = [c for c in celdas if c.strip()]
+                persona = PERSONAS_DIAPO[f.group(1).lower()]
+                if len(celdas) == 4 and filas[persona] is None:
+                    filas[persona] = celdas
+            if all(filas):
+                fuera.setdefault(pali, filas)
+    return fuera
+
+
+def cotejar_inflexiones(infl, verbo):
+    """Las ocho tablas contra el documento «Verbo» y contra las diapositivas."""
+    print("\n5. Tablas de terminaciones: índice contra documento y "
+          "diapositivas")
+    diapos = tablas_de_diapositivas()
+    por_pali_doc = {}
+    for i in verbo.get("inflexiones", []):
+        if isinstance(i, dict) and i.get("pali"):
+            por_pali_doc[i["pali"].lower()] = i.get("tabla", [])[2:]
+
+    dif_doc = dif_dia = comparadas = 0
+    for inf in infl["inflexiones"]:
+        pali = inf["pali"].lower()
+        bueno = [f[1:] for f in inf["filas"]]
+
+        doc = por_pali_doc.get(pali)
+        if doc:
+            comparadas += 1
+            for j, fila in enumerate(bueno):
+                for k, celda in enumerate(fila):
+                    otra = doc[j][k + 1] if k + 1 < len(doc[j]) else ""
+                    if normaliza_term(celda) != normaliza_term(otra):
+                        print(f"   {pali} · fila {j + 1} col {k + 1}: "
+                              f"índice «{celda}» ≠ documento «{otra}»")
+                        dif_doc += 1
+
+        dia = diapos.get(pali)
+        if dia:
+            for j, fila in enumerate(bueno):
+                for k, celda in enumerate(fila):
+                    otra = dia[j][k] if k < len(dia[j]) else ""
+                    if normaliza_term(celda) != normaliza_term(otra):
+                        print(f"   {pali} · fila {j + 1} col {k + 1}: "
+                              f"índice «{celda}» ≠ diapositiva «{otra}»")
+                        dif_dia += 1
+
+    print(f"   {comparadas} tablas cotejadas con el documento · "
+          f"{len(diapos)} halladas en las diapositivas")
+    print(f"   difieren del documento: {dif_doc}  "
+          f"(esperado: el documento da una sola forma por casilla)")
+    print(f"   difieren de las diapositivas: {dif_dia}")
+    return dif_dia
+
+
 def main():
     for ruta in (VERBO, DIAPOS):
         if not os.path.exists(ruta):
@@ -85,6 +200,8 @@ def main():
                      "extraer_verbo.py y extraer_verbo_diapositivas.py.")
     doc = json.load(open(VERBO, encoding="utf-8"))
     dia = json.load(open(DIAPOS, encoding="utf-8"))
+    infl = (json.load(open(INFLEXIONES, encoding="utf-8"))
+            if os.path.exists(INFLEXIONES) else None)
     ru2kacc = concordancia()
     problemas = 0
 
@@ -188,6 +305,9 @@ def main():
                 rotas += 1
     print(f"   {rotas} restos")
     problemas += rotas
+
+    if infl:
+        problemas += cotejar_inflexiones(infl, doc)
 
     print(f"\n{'sin problemas' if not problemas else f'{problemas} a revisar'}")
     return 0
