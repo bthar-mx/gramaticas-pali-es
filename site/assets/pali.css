@@ -965,6 +965,17 @@ body.dark .idx-badge { background: var(--green-bg); color: var(--green); }
 }
 .idx-foot a { color: var(--accent); }
 body.dark .idx-foot a { color: var(--accent-mid); }
+/* La atribución de los índices (pedido del IEBH, 2026-09-02). La portada,
+   /kaccayana/ y /recursos/ llevaban la marca y el enlace al repositorio,
+   pero no decían bajo qué licencia se publican. Va separada del renglón de
+   enlaces por un filete fino: es la nota legal, no una remisión más.
+   Aquí no se nombra a Bhikkhu Nandisena: estas tres páginas son navegación
+   escrita por el instituto, no su traducción. */
+.idx-licencia {
+  margin: 1.1rem 0 0; padding-top: .9rem;
+  border-top: .5px solid var(--border);
+  font-size: .78rem; line-height: 1.65; color: var(--text3);
+}
 .idx-back { display: inline-block; font: 400 12px/1 var(--mono); color: var(--text3); text-decoration: none; margin-bottom: 2rem; }
 .idx-back:hover { color: var(--accent); }
 

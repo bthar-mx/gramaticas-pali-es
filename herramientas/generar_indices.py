@@ -336,6 +336,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <div class="idx-foot">
 <span class="marca-lockup"></span>
 {pie}
+<p class="idx-licencia"><span class="i-es">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
 </div>
 
 </main>
