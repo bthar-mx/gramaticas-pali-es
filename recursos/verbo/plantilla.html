@@ -281,9 +281,12 @@
   /* Las notas de cada inflexión, con su referencia a Kaccāyana, Rūpasiddhi
      y Saddanīti. Son las que el documento «Verbo» no traía. */
   .notas-inf{margin:.2rem 0 1.1rem;padding:0;list-style:none;}
+  /* Las notas y los casos de uso son letra menuda de línea larga, como el
+     pie: a 78ch quedaban en una columna estrecha al lado de una tabla que
+     ocupa todo el ancho. */
   .notas-inf li{
-    font-size:.86rem;color:var(--ink-soft);line-height:1.55;
-    margin:.25rem 0;padding-left:1.1rem;position:relative;max-width:78ch;
+    font-size:.8rem;color:var(--ink-soft);line-height:1.6;
+    margin:.25rem 0;padding-left:1.1rem;position:relative;max-width:112ch;
   }
   .notas-inf li::before{
     content:"·";position:absolute;left:.25rem;color:var(--ochre);
@@ -295,7 +298,7 @@
   }
   .notas-inf .refs{
     font-family:"IBM Plex Mono",ui-monospace,monospace;
-    font-size:.68rem;letter-spacing:.04em;white-space:nowrap;
+    font-size:.66rem;letter-spacing:.04em;white-space:nowrap;
     margin-left:.4em;opacity:.85;
   }
   /* La forma alternativa de una casilla: «ī - i». Se separa para que se lea
