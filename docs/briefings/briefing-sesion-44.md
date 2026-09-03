@@ -18,9 +18,10 @@ texto de ninguna gramática ni el motor.*
 > | licencia | **CC BY-NC-ND 4.0** |
 > | archivo | `bthar-mx/gramaticas-pali-es-v2.0.0.zip` |
 >
-> **Queda una cosa por vigilar y está en §7 bis: la pestaña GitHub de Zenodo
-> dice «Connect», como si el enlace se hubiera soltado.** No impidió esta
-> entrega, pero podría impedir la siguiente.
+> **No queda nada pendiente de esta sesión.** El enlace de GitHub en Zenodo se
+> soltó justo después de archivar y se volvió a conectar en el acto: los dos
+> repositorios de `bthar-mx` están habilitados y encendidos. El detalle, en
+> §7 bis.
 >
 > **Y la regla que gobernó la sesión, que es la de siempre:** proponer y
 > verificar, nunca afirmar. Se aplicó a la revisión visual y **cazó dos errores
@@ -263,15 +264,27 @@ público:
   GitHub emite más de un evento por Release y Zenodo responde 409 al duplicado.
   **La primera entrega sí funcionó**, y el registro lo demuestra.
 
-**Y una que SÍ hay que mirar antes de la próxima entrega:**
+**Y una que hubo que arreglar, resuelta el mismo día:**
 
-- **La pestaña GitHub de Zenodo muestra «Connect»**, como si la cuenta ya no
-  estuviera enlazada, y `/account/settings/github/repository/...` devolvió un
-  error 500. La sesión de Zenodo está abierta (`admin@iebh.org`), de modo que no
-  es un cierre de sesión. No afectó a esta entrega —el archivado ya había
-  ocurrido—, pero **si el enlace está realmente suelto, la 2.1.0 no se
-  archivará**. Antes de la próxima: entrar en Zenodo → GitHub, pulsar «Connect»
-  si sigue así, y **Sync now**.
+- **El enlace de GitHub se soltó justo después de archivar.** La pestaña GitHub
+  de Zenodo pasó a mostrar «Connect» y
+  `/account/settings/github/repository/...` devolvió un error 500, con la sesión
+  de Zenodo abierta (`admin@iebh.org`): no era un cierre de sesión. **No afectó
+  a la 2.0.0** —el archivado ya había ocurrido—, pero habría impedido archivar
+  la siguiente. Angel volvió a conectar, y quedó así:
+
+      Enabled Repositories
+        bthar-mx/OSBCT              DOI 10.5281/zenodo.21967270   ON
+        bthar-mx/gramaticas-pali-es DOI 10.5281/zenodo.22263057   ON
+
+  Dos señales de que el enlace está sano y no sólo presente: el repositorio
+  figura ya con el nombre **`bthar-mx`** —no con el viejo—, y **lleva su
+  insignia DOI**, que según la propia guía de Zenodo sólo aparece después de la
+  primera entrega archivada.
+
+  **Conviene comprobarlo antes de cada entrega**, porque se soltó solo una vez y
+  puede volver a hacerlo, y el síntoma no se nota hasta que una versión no se
+  archiva.
 
 Después conviene mirar tres cosas, por este orden:
 
@@ -299,9 +312,9 @@ proceso vivo ni es la cola de veredictos; es esto.
 
 ## 9. LO QUE QUEDA ABIERTO
 
-1. **El enlace de GitHub en Zenodo, que dice «Connect».** §7 bis. Es lo único
-   que puede impedir que la próxima entrega se archive, y se comprueba en un
-   minuto.
+1. **Comprobar el enlace de GitHub en Zenodo antes de cada entrega.** §7 bis. No
+   es un pendiente sino una costumbre nueva: se soltó una vez y el síntoma no se
+   nota hasta que una versión no se archiva.
 2. **`upload_type` sigue en `publication` / `book`**, ya archivado así en la
    2.0.0. Si se cambia, será desde la 2.1.0 en adelante; las versiones
    depositadas no se editan, por la misma razón que no se editó la licencia de
