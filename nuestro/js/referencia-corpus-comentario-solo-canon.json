@@ -4,11 +4,11 @@
  "dpd_filtro": true,
  "medidas": 9203,
  "en_alcance": 7178,
- "coincide": 6642,
+ "coincide": 6644,
  "cuenta": {
   "fuera_de_alcance": 2025,
-  "acuerdo": 5505,
-  "desacuerdo": 464,
+  "acuerdo": 5507,
+  "desacuerdo": 462,
   "corte": 1137,
   "silencio": 72
  },
@@ -98041,6 +98041,11 @@
    "forma": "tatthevantaradhāyi",
    "mias": [
     [
+     "tattha",
+     "eva",
+     "antaradhāyi"
+    ],
+    [
      "tattheva",
      "antaradhāyi"
     ],
@@ -98057,7 +98062,8 @@
      "antaradhāyi"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "satimatīti",
@@ -216783,6 +216789,11 @@
    "forma": "tatthevantaradhāyi",
    "mias": [
     [
+     "tattha",
+     "eva",
+     "antaradhāyi"
+    ],
+    [
      "tattheva",
      "antaradhāyi"
     ],
@@ -216799,7 +216810,8 @@
      "antaradhāyi"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "phalasamāpattisukhena",
