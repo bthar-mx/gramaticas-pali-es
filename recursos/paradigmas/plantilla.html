@@ -325,7 +325,10 @@ footer a{color:var(--nila)}
   .hero div{justify-content:flex-start}
   .bar .wrap{gap:9px}
   .count{width:100%}
-  .meta{margin-left:0;width:100%}
+  /* La tabla ya rodaba sola; quien empujaba la página de lado era esta fila:
+     «Copiar» y «doc ↗» iban en una línea que no se parte, y llegaba a 459 px
+     en una pantalla de 375. Se le permite pasar a la línea siguiente. */
+  .meta{margin-left:0;width:100%;flex-wrap:wrap;white-space:normal}
   .tbl{display:block;overflow-x:auto}
 }
 

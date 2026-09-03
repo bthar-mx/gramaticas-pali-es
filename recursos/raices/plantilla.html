@@ -131,6 +131,15 @@ h1 .dia{color:var(--haritala)}
 /* El crédito del cotejo, en la propia entradilla. */
 .tag .por{color:var(--haritala);font-size:15px}
 @media (max-width:640px){.obras{font-size:10.5px}.obras i{font-size:13.5px}}
+/* En un teléfono las cuatro pestañas más el enlace a /verbo/ miden 542 px y
+   empujaban la página entera de lado. Se hace rodar la tira, no se parte en
+   dos filas: partirla dejaría «El verbo ↗» debajo de las pestañas, y ahí
+   parecería la quinta, que es justo lo que la nota de abajo evita. */
+@media (max-width:640px){
+  .tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs .grupo{flex:0 0 auto}
+}
 .version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
   font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
   color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);

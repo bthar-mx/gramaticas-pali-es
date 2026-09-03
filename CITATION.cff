@@ -1,21 +1,27 @@
 cff-version: 1.2.0
-title: "Kaccāyana-vyākaraṇa — traducción española"
+title: "Kaccāyana-byākaraṇa — traducción española"
 message: "Si usa esta traducción, por favor cítela con estos metadatos."
 type: dataset
 abstract: >-
-  Traducción española del Kaccāyana-vyākaraṇa, la gramática clásica más
+  Traducción española del Kaccāyana-byākaraṇa, la gramática clásica más
   antigua de la lengua pāḷi, con el texto pāḷi completo, análisis morfológico
   de los ejemplos, notas, glosario terminológico y concordancia con el
-  Padarūpasiddhi y el Saddanīti-Suttamālā. La versión 1.1.0 comprende los tres
+  Padarūpasiddhi y el Saddanīti-Suttamālā. La gramática comprende los tres
   primeros capítulos completos, 315 suttas: Sandhi-kappa (§1–§51), Nāma-kappa
-  (§52–§270) y Kāraka-kappa (§271–§315). Restituye además, desde la edición
-  base y verificado por reconstrucción, lo que la conversión a texto había
-  perdido: los tres capítulos quedan con 222 referencias canónicas y 990
-  tramos de la negrita con que Nandisena señala, dentro del vutti, las letras
-  que cada sutta nombra. Edición base: la traducción de Bhikkhu
-  Nandisena (ITBMU); referencias secundarias: Ven. A. Thitzana, Rūpasiddhi y
-  el Nyāsa-Pāḷi. Un proyecto del Instituto de Estudios Buddhistas Hispano
-  (IEBH).
+  (§52–§270) y Kāraka-kappa (§271–§315), con las 222 referencias canónicas y
+  los 990 tramos de la negrita con que Nandisena señala, dentro del vutti, las
+  letras que cada sutta nombra, restituidos desde la edición base y
+  verificados por reconstrucción. La versión 2.0.0 añade el aparato de
+  referencia: las 1.698 raíces del Saddanīti-dhātumālā en la edición del
+  Venerable U Sīlānanda, con las 643 entradas del Dhātupāṭha y las 154
+  estrofas de la Dhātumañjūsā; 84 paradigmas de declinación; las 49 reglas de
+  combinación eufónica con 266 formas atestiguadas y su secuencia de
+  formación; el verbo (ākhyāta) con 105 paradigmas; y un solucionador de
+  sandhis que propone los cortes y verifica cada propuesta recomponiéndola,
+  con 262 casos adjudicados por el IEBH. Edición base: la traducción de
+  Bhikkhu Nandisena (ITBMU); referencias secundarias: Ven. A. Thitzana,
+  Rūpasiddhi y el Nyāsa-Pāḷi. Las obras ajenas conservan su propia licencia.
+  Un proyecto del Instituto de Estudios Buddhistas Hispano (IEBH).
 authors:
   - name: "Instituto de Estudios Buddhistas Hispano (IEBH)"
 keywords:
@@ -29,8 +35,8 @@ keywords:
 url: "https://gramaticas.buddha-dhamma.net"
 repository-code: "https://github.com/bthar-mx/gramaticas-pali-es"
 license: CC-BY-NC-ND-4.0
-version: "1.1.0"
-date-released: "2026-08-21"
+version: "2.0.0"
+date-released: "2026-09-02"
 doi: "10.5281/zenodo.21948010"
 identifiers:
   - type: doi

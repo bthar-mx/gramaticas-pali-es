@@ -17,19 +17,25 @@
   :root{
     --ground:#E9EBE4; --card:#F4F5F0; --ink:#1D2430; --ink-soft:#5C6572;
     --rule:#C9CDC1; --rule-soft:#DCDFD6; --ochre:#A9660D; --ochre-wash:#F0E4CE;
+    /* El ocre claro vale para filetes y adornos, pero como TEXTO chico se
+       queda en 3,55 sobre el fondo de la barra, por debajo del 4,5 que pide
+       la WCAG AA. Los rótulos de las pestañas usan esta variante más oscura
+       (4,96 sobre la barra, 5,31 sobre el fondo). En oscuro no hace falta:
+       el ocre de ese tema ya da 6,67. */
+    --ochre-text:#8A5209;
     --hover:rgba(255,255,255,.55); --btn-bg:transparent;
     --aside:#E1E4DA; --sombra:rgba(0,0,0,.13);
   }
   :root[data-theme="dark"]{
     --ground:#171B16; --card:#20251E; --ink:#E8EADF; --ink-soft:#9AA394;
-    --rule:#3B4237; --rule-soft:#2A2F27; --ochre:#DFA23A;
+    --rule:#3B4237; --rule-soft:#2A2F27; --ochre:#DFA23A; --ochre-text:#DFA23A;
     --ochre-wash:rgba(223,162,58,.20); --hover:rgba(255,255,255,.035);
     --btn-bg:transparent; --aside:#1D2219; --sombra:rgba(0,0,0,.45);
   }
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
       --ground:#171B16; --card:#20251E; --ink:#E8EADF; --ink-soft:#9AA394;
-      --rule:#3B4237; --rule-soft:#2A2F27; --ochre:#DFA23A;
+      --rule:#3B4237; --rule-soft:#2A2F27; --ochre:#DFA23A; --ochre-text:#DFA23A;
       --ochre-wash:rgba(223,162,58,.20); --hover:rgba(255,255,255,.035);
       --aside:#1D2219; --sombra:rgba(0,0,0,.45);
     }
@@ -104,7 +110,7 @@
   .sb-sec>summary{
     font-family:"IBM Plex Mono",ui-monospace,monospace;
     font-size:.61rem;font-weight:600;letter-spacing:.15em;
-    text-transform:uppercase;color:var(--ochre);
+    text-transform:uppercase;color:var(--ochre-text);
     padding:.7rem 18px .6rem;cursor:pointer;list-style:none;
   }
   .sb-sec>summary::-webkit-details-marker{display:none;}
