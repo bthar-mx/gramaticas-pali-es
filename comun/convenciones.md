@@ -39,7 +39,7 @@ del propio registro. Escrito aquí, deja de depender de que alguien lo recuerde.
 
 ## 2. Numeración de suttas
 
-- Edición base: Kaccāyana-vyākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).
+- Edición base: Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).
   La numeración de suttas de este repositorio sigue esta edición.
   <!-- PENDIENTE: precisar año / versión exacta que se está usando -->
 - **Numeración triple**, tal como la presenta Nandisena:

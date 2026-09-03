@@ -547,10 +547,10 @@ def indice_kaccayana(pub):
             'La más antigua de las gramáticas pāḷi conservadas. Ocho '
             'capítulos (<i>kappa</i>), cada uno dividido en secciones '
             '(<i>kaṇḍa</i>). Edición base de esta traducción: '
-            'Kaccāyana-vyākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).',
+            'Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).',
             'The oldest of the surviving Pāḷi grammars. Eight chapters '
             '(<i>kappa</i>), each divided into sections (<i>kaṇḍa</i>). Base '
-            'edition of this translation: Kaccāyana-vyākaraṇa, ed. and trans. '
+            'edition of this translation: Kaccāyana-byākaraṇa, ed. and trans. '
             'Bhikkhu U Nandisena (ITBMU).') + '</p>\n\n'
         '<h2>' + bi('Capítulos') + '</h2>\n{0}\n\n'
         '<h2>' + bi('Sobre la numeración') + '</h2>\n'

@@ -11,7 +11,7 @@ Un proyecto del Instituto de Estudios Buddhistas Hispano (IEBH).
 
 | Ruta         | Contenido                                                      |
 | ------------ | -------------------------------------------------------------- |
-| `kaccayana/` | Kaccāyana-vyākaraṇa — texto pāḷi y traducción española          |
+| `kaccayana/` | Kaccāyana-byākaraṇa — texto pāḷi y traducción española          |
 | `comun/`     | glosario, convenciones, guía de estilo y concordancia          |
 | `site/`      | sitio publicado (HTML) — **salida**, no fuente                 |
 

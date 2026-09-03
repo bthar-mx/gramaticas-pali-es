@@ -7,10 +7,12 @@ reescribe la descripción del depósito, el título pasa a
 **Kaccāyana-byākaraṇa** y se prepara la versión **2.0.0**. No se ha tocado el
 texto de ninguna gramática ni el motor.*
 
-> **Lo primero que tiene que saber el chat nuevo:** el trabajo está hecho y
-> **commitido en `886b319`, pero NO empujado**. El entorno de Claude no tiene la
-> clave SSH de Angel. **La versión no está publicada hasta que Angel empuje.**
-> Las dos órdenes que faltan están en §7, y son dos.
+> **Lo primero que tiene que saber el chat nuevo:** `main` está empujado y
+> desplegado hasta `1035d7c` —Angel empujó desde su Mac; los tres arreglos se
+> comprobaron ya **en el sitio en vivo**—. Falta un commit, `3d62d4b`, y **falta
+> la etiqueta `v2.0.0`, que es la que acuña el DOI**. El entorno de Claude no
+> tiene la clave SSH de Angel y no puede empujar. Las órdenes que faltan están
+> en §7.
 >
 > **Y la regla que gobernó la sesión, que es la de siempre:** proponer y
 > verificar, nunca afirmar. Se aplicó a la revisión visual y **cazó dos errores
@@ -25,7 +27,8 @@ texto de ninguna gramática ni el motor.*
 | descripción del depósito | los tres capítulos | **+ el aparato de referencia** |
 | revisión visual de los pliegues | sin hacer | **hecha, 9 páginas × 3 modos** |
 | enganche de Zenodo | sin comprobar | **comprobado, intacto** |
-| estado | | **commitido, SIN empujar** |
+| «vyākaraṇa» en el repositorio | 9 apariciones | **0: todas a «byākaraṇa»** |
+| estado | | **`main` desplegado; falta la etiqueta** |
 
 ## 1. ZENODO: EL ENGANCHE ESTÁ BIEN, Y SE CIERRA EL PUNTO 2 DEL BRIEFING 43
 
@@ -137,26 +140,37 @@ dejarlo dicho para que nadie lo tome por errata: el Nyāsa escribe
 línea 25), la Rūpasiddhi trae *Byākaraṇam adhīte veyyākaraṇiko*, y el índice
 del sitio ya decía **Kaccāyana-Byākaraṇaṃ**.
 
-### PENDIENTE, Y ES DECISIÓN DE ANGEL
+### Y NO ERA SÓLO CONSISTENCIA: LAS CITAS ESTABAN MAL
 
-**El resto del repositorio sigue diciendo «vyākaraṇa».** No se tocó nada más
-que el depósito, porque cambiarlo en bloque va contra la regla de no alterar
-más de lo pedido. Los sitios son ocho:
+Angel pidió corregirlo en el resto del repositorio. Antes de hacerlo se miró
+una cosa que no era obvia: **cinco de las nueve apariciones no eran el nombre
+que el proyecto le da a la obra, sino la CITA BIBLIOGRÁFICA de la edición
+base** —«Kaccāyana-vyākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU)»—. Una
+cita nombra la fuente como la fuente se titula, así que cambiarla habría sido
+citar mal a Nandisena… **si su edición dijera «vyākaraṇa».**
 
-| Archivo | Qué dice |
+No lo dice. **`docs/1. Sandhi-Kappa.md`, línea 1, el documento de la edición
+base, abre con `**KACCĀYANA-BYĀKARAṆAṂ**`.** De modo que la cita era la
+equivocada desde el principio, y corregirla no es armonizar: es dejar de
+atribuirle a la edición base un título que no usa.
+
+Las nueve apariciones, en siete archivos, quedan en «byākaraṇa»:
+
+| Archivo | Qué era |
 | --- | --- |
-| `comun/convenciones.md:42` | edición base |
-| `comun/concordancia.json:3` | edición base |
+| `comun/convenciones.md:42` | cita de la edición base |
+| `comun/concordancia.json:3` | cita de la edición base |
+| `recursos/sandhi/suttavibhaga.json:3` | cita de la fuente |
+| `herramientas/generar_indices.py:550,553` | «cómo citar», es y en |
 | `README.md:14` | tabla de carpetas |
-| `recursos/sandhi/suttavibhaga.json:3` | fuente |
-| `recursos/nombre/plantilla.html:723` | **pie visible** |
-| `recursos/verbo/plantilla.html:676` | **pie visible** |
-| `herramientas/generar_indices.py:550,553` | cómo citar (es/en) |
-| `.zenodo.json` y `CITATION.cff` | la palabra clave `vyākaraṇa` |
+| `recursos/nombre/plantilla.html:723` | pie visible |
+| `recursos/verbo/plantilla.html:676` | pie visible |
 
-Los dos pies y el «cómo citar» son **visibles al lector**, de modo que hoy el
-depósito dirá *byākaraṇa* y el pie de dos páginas *vyākaraṇa*. Es la
-inconsistencia más urgente de la lista.
+**Una cosa se hizo de más, y se dice:** en las palabras clave de `.zenodo.json`
+y `CITATION.cff` se puso «byākaraṇa» **y se conservó «vyākaraṇa»** junto a
+ella. Una palabra clave no nombra la obra, sirve para encontrarla, y la grafía
+con *v* es la corriente en la bibliografía occidental. Si Angel prefiere una
+sola, se quita.
 
 ## 6. LA DESCRIPCIÓN DEL DEPÓSITO
 
@@ -186,15 +200,19 @@ de empujar la etiqueta**, no después.
 
 ## 7. LO QUE FALTA, Y SON DOS ÓRDENES
 
-El commit `886b319` y la etiqueta anotada `v2.0.0` **están hechos en la copia de
-trabajo de Angel**. No están en GitHub: el entorno de Claude no tiene su clave
-SSH, y el intento devolvió `Host key verification failed`.
+**`main` ya está empujado y desplegado hasta `1035d7c`.** Angel lo empujó desde
+su Mac durante la sesión, y los tres arreglos se comprobaron **en el sitio en
+vivo**: `--ochre-text` llega como `#8A5209` y los rótulos del verbo miden 4,96.
+
+Falta el commit `3d62d4b` —el de «byākaraṇa»— y **la etiqueta `v2.0.0`**, que
+está anotada y apunta a él. El entorno de Claude no tiene la clave SSH de
+Angel; el intento devolvió `Host key verification failed`.
 
     git push origin main
     git push origin v2.0.0
 
-La primera despliega el sitio en Cloudflare con los tres arreglos. La segunda es
-la que dispara el webhook y acuña el DOI. **Con la segunda no hay marcha atrás.**
+La primera despliega el cambio de título. La segunda dispara el webhook y acuña
+el DOI. **Con la segunda no hay marcha atrás.**
 
 Después conviene mirar tres cosas, por este orden:
 
@@ -222,11 +240,12 @@ proceso vivo ni es la cola de veredictos; es esto.
 
 ## 9. LO QUE QUEDA ABIERTO
 
-1. **Empujar.** §7. Es lo único que separa a 2.0.0 de estar publicada.
-2. **«vyākaraṇa» en el resto del repositorio.** §5, ocho sitios, dos de ellos
-   visibles al lector.
-3. **Los dos puntos del depósito sin respuesta expresa:** el párrafo del motor y
+1. **Empujar el commit `3d62d4b` y la etiqueta `v2.0.0`.** §7. Es lo único que
+   separa a 2.0.0 de estar publicada.
+2. **Los dos puntos del depósito sin respuesta expresa:** el párrafo del motor y
    `upload_type`. §6. **Antes de empujar la etiqueta.**
+3. **La palabra clave doble**, `byākaraṇa` y `vyākaraṇa`. §5, al final: se
+   conservaron las dos a propósito, y basta decirlo para dejar una.
 4. **Abrir el pliegue cuando la búsqueda cae dentro.** Ofrecido en la 43, sigue
    sin hacer.
 5. **El filete de `.idx-licencia` a 0,5 px.** §4, visto y no tocado.
