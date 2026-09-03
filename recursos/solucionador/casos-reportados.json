@@ -1744,6 +1744,27 @@
    "fuente": "IEBH, 2026-09-02 · revisión en la página",
    "sandhi": true,
    "componentes": "abhāsittha + iti"
+  },
+  {
+   "forma": "sugatīsuyeva",
+   "fuente": "IEBH, 2026-09-03 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "sugatīsu + eva"
+  },
+  {
+   "forma": "Guttātissā",
+   "fuente": "IEBH, 2026-09-03 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "guttā + iti + assā",
+   "escalera_iebh": [
+    "guttā iti assā",
+    "gutt ā iti assā (§10)",
+    "gutt ā ti assā (§13)",
+    "gutt ā t i assā (§10)",
+    "gutt ā t i ssā (§13)",
+    "guttātissā (§11)"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-03 · revisión del lote de un estudiante · escalera del revisor (verbatim)"
   }
  ]
 }
