@@ -1,0 +1,82 @@
+{
+"_nota": "Cosecha de terminología gramatical del «Diplomado en Lengua Pāḷi I» del IEBH, en Moodle (iebh.net, curso 4). Instructor: Dr. Aleix Ruiz Falqués. Se recorrieron los 30 PDF del curso —28 dossieres de Material de estudio/lectura, el Currículum y el Vocabulario de las clases 1 a 10— extrayendo su capa de texto con pdf.js dentro del propio navegador, con la sesión de Angel. NO se descargó ningún archivo ni se guarda aquí su contenido: sólo los términos y la línea en que aparecen. Las 22 Presentaciones no se recorrieron: repiten en diapositivas el contenido de los dossieres.",
+
+"fuente": {
+  "curso": "Diplomado en Lengua Pāḷi I",
+  "sede": "Instituto de Estudios Buddhistas Hispano (IEBH) — iebh.net",
+  "instructor": "Dr. Aleix Ruiz Falqués",
+  "estructura": "3 módulos, 30 clases; 28 dossieres, 22 presentaciones",
+  "curso_iniciado": "14 de octubre de 2021",
+  "fecha_de_la_cosecha": "2026-09-03",
+  "nota": "Es una TERCERA voz, distinta de la de Bhikkhu Nandisena: no debe darse por supuesto que use el mismo castellano que el Glosario, y de hecho no siempre lo hace."
+},
+
+"_leyenda": {
+  "nuevo": "El término no está ni en el Glosario de Nandisena ni en el Conspectus de Smith ni en comun/glosario.md.",
+  "variante": "El término está, pero el Diplomado usa otra forma del lema.",
+  "divergente": "El mismo término, con equivalencia castellana distinta de la del Glosario o de la fijada en el repositorio."
+},
+
+"nuevos": [
+  {"pali": "kammaṇi", "es_diplomado": "voz pasiva", "clase": "Currículum", "clase_de": "nuevo",
+   "nota": "El Glosario de Nandisena da «kamma-kāraka» para «voz pasiva»; «kammaṇi» —locativo de kamma, el término pāṇineo— no está en él."},
+  {"pali": "itthambhūtalakkhaṇa", "es_diplomado": "adverbial de modo", "clase": "Módulo I - Clase 4", "clase_de": "nuevo",
+   "nota": "Nandisena tiene «itthambhūta-vacana», y lo define como «ablativo de similitud», que no es lo mismo. Conviene decidir si son dos términos o dos lecturas de uno."},
+  {"pali": "saddasamāsa", "es_diplomado": "compuesto de palabras", "clase": "Módulo III - Clase 21", "clase_de": "nuevo"},
+  {"pali": "āmantanā", "es_diplomado": "invitación no optativa", "clase": "Módulo II - Clase 19", "clase_de": "nuevo",
+   "nota": "En el dossier está impreso «āmaṇtanā», con ṇ, que no es forma pāḷi posible; se recoge como āmantanā y queda la duda de la errata. Nandisena tiene «nimantana», que el propio dossier usa aparte para «invitación optativa»."},
+  {"pali": "arahasattīsu", "es_diplomado": "posibilidad / capacidad", "clase": "Módulo II - Clase 19", "clase_de": "nuevo",
+   "nota": "Locativo de un dvanda araha+satti, «en el sentido de aptitud y capacidad». No figura en ninguna de las dos fuentes."},
+  {"pali": "mūlabhāsā", "es_diplomado": "lengua raíz", "clase": "Módulo I - Clase 1", "clase_de": "nuevo",
+   "nota": "Término de la discusión sobre el māgadhī, no de la descripción gramatical; se anota por si interesa."}
+],
+
+"variantes": [
+  {"pali_diplomado": "kattā", "pali_glosario": "kattu", "es": "agente",
+   "nota": "El Diplomado cita el nominativo; Nandisena lemmatiza en tema. Misma palabra."},
+  {"pali_diplomado": "ajjhiṭṭha", "pali_glosario": "ajjhesanā", "es_diplomado": "petición",
+   "es_glosario": "consentimiento; permiso",
+   "nota": "Dos formas —participio y sustantivo— y DOS SENTIDOS distintos para el mismo uso del optativo. No es sólo variante de lema."},
+  {"pali_diplomado": "nimantaṇā", "pali_glosario": "nimantana", "es_diplomado": "invitación optativa",
+   "nota": "«nimantaṇā» con ṇ es imposible en pāḷi tras «ma»; parece errata del dossier."},
+  {"pali_diplomado": "niggahīta", "pali_glosario": "niggahita", "es": "—",
+   "nota": "comun/glosario.md escribe «niggahita» sin macrón. Nandisena registra las dos y remite de niggahita a niggahīta. El Diplomado usa niggahīta. Conviene unificar en el repositorio."},
+  {"pali_diplomado": "patthanā", "pali_glosario": "patthanā", "es_diplomado": "deseo; resolución",
+   "es_glosario": "aspiración",
+   "nota": "Mismo lema, tres castellanos entre las dos obras."}
+],
+
+"divergentes": [
+  {"pali": "lahu", "diplomado": "breve", "nandisena": "leve. Igual que rassa, corta.",
+   "repositorio": "leve", "smith_fr": "une tranche légère",
+   "gravedad": "alta",
+   "nota": "comun/glosario.md fija «leve» y PROHÍBE expresamente «breve» —esa prohibición se puso para rassa—. El Diplomado llama «Breves» a las vocales lahu. Es el choque terminológico más directo que ha salido del cotejo."},
+  {"pali": "garu", "diplomado": "—", "nandisena": "(sílaba) fuerte",
+   "propuesta_conspectus": "pesada", "smith_fr": "une tranche lourde",
+   "gravedad": "media",
+   "nota": "Tres palabras para lo mismo: fuerte (Nandisena), pesada (propuesta desde Smith), lourde (Smith). Manda Nandisena si se adopta su castellano."},
+  {"pali": "guṇa", "diplomado": "grado pleno", "nandisena": "fortalecimiento de la vocal",
+   "propuesta_conspectus": "refuerzo apofónico de primer grado", "smith_fr": "renforcement apophonique : 1er degré",
+   "gravedad": "media",
+   "nota": "El «Grado Cero / guṇa (Grado pleno) / vuddhi (Grado aumentado)» del Diplomado es la nomenclatura indoeuropeísta corriente y es la más clara de las tres."},
+  {"pali": "vuddhi", "diplomado": "grado aumentado", "nandisena": "incremento; vocal fortalecida o que ha sido alargada",
+   "propuesta_conspectus": "refuerzo apofónico de segundo grado", "smith_fr": "renforcement apophonique : 2ème degré",
+   "gravedad": "media"},
+  {"pali": "āgama", "diplomado": "aumento; consonante epentética", "nandisena": "inserción; inclusión de una vocal o consonante; aumento",
+   "propuesta_conspectus": "el fonema de transición", "smith_fr": "le phonème de transition",
+   "gravedad": "media",
+   "nota": "Nandisena cubre los dos sentidos del Diplomado. La propuesta hecha desde Smith es más estrecha que ambos y conviene ensancharla."}
+],
+
+"coincidencias_que_confirman": [
+  {"que": "Los cinco lugares de articulación", "detalle": "kaṇṭhaja, tāluja, muddhaja, dantaja, oṭṭhaja y nāsika salen en el Diplomado (Módulo I, Clase 1) exactamente con las series de consonantes que da Smith en el Conspectus, p. 1106. Confirma la transcripción del escaneo por una fuente independiente."},
+  {"que": "sakammaka / akammaka", "detalle": "«transitivos / intransitivos» en el Diplomado y en Nandisena."},
+  {"que": "kammakāraka / kattukāraka", "detalle": "«voz pasiva / voz activa» en el Diplomado y en Nandisena, con las mismas palabras."},
+  {"que": "attanopada / parassapada", "detalle": "«pasiva-media / voz activa» en el Diplomado; concuerda con Nandisena."},
+  {"que": "dīgha", "detalle": "«largas» en el Diplomado; concuerda con lo fijado en el repositorio."}
+],
+
+"terminos_del_curso_ya_en_el_glosario": 86,
+"formas_pali_con_diacritico_no_reconocidas": 1590,
+"nota_sobre_las_1590": "Casi todas son vocabulario y formas flexionadas de los ejercicios —dhammaṃ, gāmaṃ, bhagavā—, no terminología. Se dejan fuera a propósito: lo que interesa aquí es cómo el curso NOMBRA las cosas de la gramática, no qué palabras usa para practicar."
+}

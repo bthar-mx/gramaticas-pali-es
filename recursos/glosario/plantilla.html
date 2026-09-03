@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Glosario gramatical pāḷi · Conspectus Terminorum del Saddanīti</title>
+<meta name="version" content="0.1">
+<meta name="version-date" content="2026-09-03">
+<meta name="description" content="Terminología gramatical pāḷi en español e inglés, a partir del Conspectus Terminorum (saññāmātikā) de la edición del Saddanīti de Helmer Smith, y de la lista normativa de este repositorio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ola:#E7E3D6; --ola-2:#F0EDE4; --ink:#171612; --soot:#4E4839; --hair:#BFB7A0;
+  --haritala:#5C4008; --hover:rgba(255,255,255,.55); --active:rgba(255,255,255,.75);
+  --hl:rgba(92,64,8,.16); --chip-k:rgba(39,65,79,.10);
+  --nila:#27414F; --rakta:#7E2E23; --shadow:rgba(0,0,0,.05);
+  --serif:"Gentium Book Plus",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html[data-theme=dark]{
+  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
+  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
+  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
+  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
+}
+html[data-theme=dark] body{background-image:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--ola);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.55;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+a{color:var(--nila)}
+
+/* ---------- barra lateral ---------- */
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
+  background:var(--ola-2);border-right:1px solid var(--hair);padding:54px 0 48px}
+.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:10px}
+.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
+.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5;color:var(--soot);
+  text-transform:uppercase}
+.sb-tit{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--haritala);padding:12px 18px 6px}
+.secs a{display:block;padding:5px 18px;font-size:14px;color:var(--ink);
+  text-decoration:none;border-left:2px solid transparent}
+.secs a:hover{background:var(--hover);border-left-color:var(--haritala)}
+.secs a span{float:right;font-family:var(--mono);font-size:10.5px;color:var(--soot)}
+.sb-nota{padding:12px 18px 0;font-size:12.5px;line-height:1.6;color:var(--soot);
+  border-top:1px solid var(--hair);margin-top:10px}
+.sb-close{position:absolute;top:14px;left:14px;background:transparent;border:0;
+  font-size:17px;color:var(--soot);cursor:pointer}
+body.sin-barra .sidebar{display:none}
+body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
+body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:238px}
+#volver-barra{position:fixed;top:10px;left:12px;z-index:70;display:none;
+  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
+  font-size:16px;color:var(--soot);cursor:pointer;padding:3px 8px}
+body.sin-barra #volver-barra{display:block}
+
+/* ---------- cabecera ---------- */
+header{border-bottom:1px solid var(--hair);background:var(--ola-2)}
+.mast{padding:30px 22px 26px}
+.volver-sitio{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+  text-decoration:none;color:var(--soot)}
+.volver-sitio:hover{color:var(--nila)}
+.eyebrow-iebh{display:flex;align-items:center;gap:7px;margin:12px 0 10px}
+.marca-arbol{width:16px;height:16px;background:url(../../assets/iebh-arbol.svg) center/contain no-repeat;
+  display:inline-block;flex:0 0 16px}
+html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
+.eyebrow-iebh .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--soot)}
+h1{margin:0;font-size:38px;line-height:1.1;letter-spacing:-.015em;font-weight:700}
+h1 .dia{color:var(--haritala)}
+.obras{margin:6px 0 0;font-size:15px;color:var(--soot)}
+.tag{margin:12px 0 0;max-width:62ch;font-size:15.5px;color:var(--soot)}
+.version-badge{display:inline-block;margin-top:14px;font-family:var(--mono);
+  font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--soot);
+  border:1px solid var(--hair);border-radius:2px;padding:3px 8px}
+
+/* ---------- el aviso, que es la pieza importante ---------- */
+.aviso{margin:0;border-bottom:1px solid var(--hair);
+  background:linear-gradient(0deg,var(--hl),var(--hl)),var(--ola)}
+.aviso .wrap{padding:14px 22px}
+.aviso p{margin:0;max-width:74ch;font-size:14.5px;line-height:1.6}
+.aviso b{color:var(--haritala)}
+
+/* ---------- barra de mandos ---------- */
+.bar{position:sticky;top:0;z-index:50;background:var(--ola-2);
+  border-bottom:1px solid var(--hair);box-shadow:0 1px 4px var(--shadow)}
+.bar .wrap{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:9px 22px}
+#q{flex:1 1 260px;min-width:190px;font-family:var(--serif);font-size:15px;
+  padding:6px 10px;background:var(--ola);color:var(--ink);
+  border:1px solid var(--hair);border-radius:3px}
+#q:focus{outline:2px solid var(--haritala);outline-offset:-1px}
+.icon-btn,.filtros button{font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.06em;padding:5px 9px;background:var(--ola);color:var(--soot);
+  border:1px solid var(--hair);border-radius:3px;cursor:pointer}
+.icon-btn:hover,.filtros button:hover{color:var(--ink);border-color:var(--soot)}
+.icon-btn[aria-pressed=true],.filtros button[aria-pressed=true]{
+  background:var(--hl);color:var(--haritala);border-color:var(--haritala)}
+.count{font-family:var(--mono);font-size:11px;color:var(--soot);margin-left:auto}
+
+.tabs{display:flex;gap:6px;padding:14px 0 0}
+.tabs button{font-family:var(--serif);font-size:16px;padding:7px 14px;
+  background:transparent;color:var(--soot);border:1px solid transparent;
+  border-bottom:0;border-radius:3px 3px 0 0;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--ola-2);color:var(--ink);
+  border-color:var(--hair);font-weight:700}
+.tabs button span{font-family:var(--mono);font-size:10.5px;color:var(--soot)}
+
+/* ---------- las fichas ---------- */
+main{padding-top:8px;padding-bottom:60px}
+h2.sec{font-size:13px;font-family:var(--mono);letter-spacing:.13em;
+  text-transform:uppercase;color:var(--haritala);margin:34px 0 4px;
+  padding-bottom:6px;border-bottom:1px solid var(--hair)}
+h2.sec small{float:right;font-size:10.5px;color:var(--soot);letter-spacing:.06em}
+.t{padding:11px 0 10px;border-bottom:1px solid var(--hair);
+  display:grid;grid-template-columns:minmax(150px,15.5em) 1fr;gap:4px 20px}
+.t:hover{background:var(--hover)}
+.lema{font-weight:700;font-style:italic;font-size:18px;line-height:1.3;
+  overflow-wrap:anywhere}
+.lema .ep{display:block;font-family:var(--mono);font-style:normal;font-weight:600;
+  font-size:9.5px;letter-spacing:.08em;color:var(--soot);margin-top:3px}
+.lema .var{display:block;font-size:13px;font-weight:400;color:var(--soot);
+  margin-top:4px;line-height:1.45}
+.gl{margin:0}
+.gl dt{display:none}
+.gl .fr{color:var(--soot);font-style:italic}
+.gl .fr::before{content:"fr ";font-family:var(--mono);font-style:normal;
+  font-size:9.5px;letter-spacing:.1em;color:var(--hair);margin-right:5px}
+.gl .es::before{content:"es ";font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.1em;color:var(--hair);margin-right:5px}
+.gl .en::before{content:"en ";font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.1em;color:var(--hair);margin-right:5px}
+.gl div{margin:1px 0}
+.gl .en{color:var(--nila)}
+.nota{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--soot)}
+.nota b{color:var(--ink)}
+.marca{display:inline-block;font-family:var(--mono);font-size:9px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;padding:1px 5px;border-radius:2px;
+  margin-right:6px;vertical-align:1px}
+.m-conflicto{background:rgba(126,46,35,.14);color:var(--rakta)}
+.m-duda{background:var(--chip-k);color:var(--nila)}
+.m-norma{background:var(--hl);color:var(--haritala)}
+.puente{margin-top:7px;padding:7px 10px;border-left:2px solid var(--haritala);
+  background:var(--hover);border-radius:0 2px 2px 0;color:var(--ink)}
+.fijado{font-family:var(--mono);font-size:10px;color:var(--soot);letter-spacing:.05em}
+.vacio{padding:40px 0;color:var(--soot);font-style:italic}
+mark{background:var(--hl);color:inherit;border-radius:2px}
+
+footer{border-top:1px solid var(--hair);background:var(--ola-2);padding:26px 22px 50px;
+  font-size:14px;color:var(--soot)}
+footer h3{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--haritala);margin:20px 0 6px}
+footer p{max-width:74ch;line-height:1.65}
+footer code{font-family:var(--mono);font-size:12.5px}
+#top-btn{position:fixed;right:18px;bottom:18px;z-index:55;background:var(--ola-2);
+  border:1px solid var(--hair);border-radius:3px;color:var(--soot);cursor:pointer;
+  font-size:15px;padding:5px 10px;display:none}
+#top-btn.on{display:block}
+
+@media(max-width:900px){
+  body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
+  body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:22px}
+  .sidebar{display:none}
+  #volver-barra{display:none}
+  .t{grid-template-columns:1fr;gap:3px}
+  h1{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<button id="volver-barra" aria-label="Mostrar el índice">☰</button>
+<aside class="sidebar" id="sidebar" aria-label="Índice de secciones">
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice">☰</button>
+  <div class="sb-brand"><b>Glosario gramatical</b><span class="lbl">Saddanīti · Kaccāyana</span></div>
+  <div class="sb-tit" id="secs-tit">Secciones</div>
+  <div class="secs" id="secs"></div>
+  <p class="sb-nota" id="sb-nota"></p>
+</aside>
+
+<header>
+  <div class="wrap mast">
+    <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+    <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
+    <h1>Glosario gramatical p<span class="dia">ā</span>ḷi</h1>
+    <p class="obras"><i>Glosario de términos gramaticales de la lengua pali</i> · <i>Conspectus Terminorum</i> (saññāmātikā)</p>
+    <p class="tag">La terminología con que las gramáticas clásicas hablan de sí mismas.
+    Reúne dos obras: el <b>Glosario</b> de <b>Bhikkhu Nandisena</b> (IEBH, 2013), que define
+    cada término en español y lo remite a Kaccāyana, Rūpasiddhi, Saddanīti y
+    Niruttidīpanī; y el <b>Conspectus Terminorum</b> que <b>Helmer Smith</b> puso al
+    final de su edición del <i>Saddanīti</i>, donde cada voz lleva su definición en
+    francés dentro de una terminología ordenada por materias.</p>
+    <span class="version-badge" id="vbadge"></span>
+  </div>
+</header>
+
+<div class="aviso"><div class="wrap">
+  <p id="aviso-txt"></p>
+</div></div>
+
+<div class="bar">
+  <div class="wrap">
+    <input type="search" id="q" placeholder="Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…" aria-label="Buscar">
+    <button class="icon-btn" id="b-fr" aria-pressed="true" title="Mostrar el francés de Smith">FR</button>
+    <button class="icon-btn" id="b-en" aria-pressed="true" title="Mostrar el inglés">EN</button>
+    <button class="icon-btn" id="b-marcas" aria-pressed="false" title="Sólo las entradas con conflicto o duda">⚑</button>
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice" aria-expanded="true">☰</button>
+    <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-nandisena" aria-selected="true" data-tab="nandisena">Glosario · Nandisena <span id="n-nandisena"></span></button>
+    <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus">Conspectus · Smith <span id="n-conspectus"></span></button>
+    <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo">Normativos <span id="n-normativo"></span></button>
+  </div>
+</div>
+
+<main class="wrap" id="out"></main>
+<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+
+<footer class="wrap">
+  <h3>Las dos obras</h3>
+  <p><b>Glosario de términos gramaticales de la lengua pali.</b> Material
+  preparado por <b>Bhikkhu Nandisena</b>. Dhammodaya Ediciones · Buddhismo
+  Theravada México AR. · Instituto de Estudios Buddhistas Hispano (IEBH),
+  2013. Última revisión, 7 de abril de 2013; publicación IEBH
+  20130407-BN-T0022. © 2013. Puede reproducirse para uso personal y sólo
+  distribuirse en forma gratuita. <b>Las definiciones en español son suyas y
+  se reproducen literalmente</b>; sus referencias a Kaccāyana, Rūpasiddhi,
+  Saddanīti, Niruttidīpanī y Payogasiddhi van con cada entrada.</p>
+
+  <p><b>Conspectus Terminorum</b> (saññāmātikā). <i>Saddanīti. La grammaire
+  palie d'Aggavaṃsa</i>, texto establecido por <b>Helmer Smith</b>, IV:
+  <i>Tables</i>, 1<sup>e</sup> partie, sección E, pp. 1105-1148 (Lund,
+  C. W. K. Gleerup, 1949). El escaneo no tiene capa de texto y ningún OCR lo
+  lee: la transcripción se hizo leyendo la imagen página a página. El campo
+  <span class="fijado">fr</span> reproduce la glosa de Smith tal como está
+  impresa. Smith remite, a su vez, a Jhalakīkar, Pāṭhak y Chitrāo, Renou y la
+  <i>Durghaṭavṛtti</i>.</p>
+
+  <h3>No son testigos independientes</h3>
+  <p>Conviene no leer la coincidencia entre las dos obras como una
+  confirmación cruzada. En su propia lista de referencias, Nandisena declara
+  haber consultado los volúmenes de tablas e índices de Smith y dice que le ha
+  sido <b>«muy útil su "Conspectus Terminorum", un glosario de los términos
+  gramaticales»</b>. Cuando las dos dicen lo mismo, lo probable es filiación;
+  cuando difieren, ahí sí hay algo que mirar.</p>
+
+  <h3>La lista normativa</h3>
+  <p><code>comun/glosario.md</code> no es una obra de nadie: es la lista
+  interna de este repositorio, donde se anota qué palabra castellana se ha
+  fijado para cada término al ir traduciendo, y por qué. Manda sobre cualquier
+  propuesta de esta página; donde no coincide con Smith, la ficha lo señala.</p>
+
+  <h3>Qué está adjudicado y qué no</h3>
+  <p>El español de Nandisena lo firma él. El de la lista normativa lo fijó el
+  IEBH. <b>Todo lo demás —el español y el inglés de las entradas del
+  Conspectus, y el inglés en general— es propuesta del traductor, y no está
+  adjudicado.</b> Se publica marcado para que pueda revisarse, no como
+  terminología establecida.</p>
+
+  <h3>Cómo se regenera</h3>
+  <p><code>python3 herramientas/extraer_glosario_nandisena.py &lt;pdf&gt;</code><br>
+  <code>python3 herramientas/generar_glosario.py</code></p>
+  <p class="fijado" id="vfoot"></p>
+</footer>
+
+<script>
+const DATA = /*__DATOS__*/{}/*__FIN__*/;
+
+const $ = s => document.querySelector(s);
+const out = $('#out');
+let tab = 'nandisena', verFR = true, verEN = true, soloMarcas = false, q = '';
+
+/* ---------- tema ---------- */
+(function(){
+  const g = localStorage.getItem('tema');
+  if (g) document.documentElement.dataset.theme = g;
+  else if (matchMedia('(prefers-color-scheme:dark)').matches)
+    document.documentElement.dataset.theme = 'dark';
+})();
+$('#theme').onclick = () => {
+  const d = document.documentElement.dataset.theme === 'dark';
+  document.documentElement.dataset.theme = d ? 'light' : 'dark';
+  localStorage.setItem('tema', d ? 'light' : 'dark');
+};
+
+/* ---------- cabecera y aviso ---------- */
+$('#vbadge').textContent = 'v' + DATA.version + ' · ' + DATA.estado;
+$('#vfoot').textContent = 'Versión ' + DATA.version + ' · ' + DATA.estado;
+$('#aviso-txt').innerHTML =
+  '<b>Léase con esto delante.</b> El español del <i>Glosario</i> es de <b>Bhikkhu ' +
+  'Nandisena</b> y va literal; el francés del <i>Conspectus</i> es de <b>Helmer ' +
+  'Smith</b> y va literal. Lo que se añade aquí —el español y el inglés de las ' +
+  'entradas del Conspectus, y el inglés en general— es <b>propuesta del traductor</b>, ' +
+  'no terminología adjudicada por el IEBH. ' +
+  'Y las dos obras no son testigos independientes: en su propia bibliografía ' +
+  'Nandisena declara que le fue «muy útil» el Conspectus de Smith.';
+$('#sb-nota').textContent = DATA.plan;
+
+/* ---------- utilidades ---------- */
+const sinDia = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function resalta(txt){
+  if (!q || !txt) return escapa(txt||'');
+  const t = escapa(txt), r = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');
+  return sinDia(txt).includes(sinDia(q)) ? t.replace(r,'<mark>$1</mark>') : t;
+}
+const escapa = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+function casa(t){
+  if (!q) return true;
+  const campos = [t.pali, t.fr, t.es, t.en, t.epigrafe, t.nota, t.conflicto, t.duda,
+                  t.errata, t.remite_a, t.fijado_en,
+                  (t.variantes||[]).join(' '), (t.refs||[]).join(' '),
+                  (t.nandisena||[]).map(g => (g.es||'') + ' ' + g.pali).join(' ')].join(' ');
+  return sinDia(campos).includes(sinDia(q));
+}
+
+/* ---------- pintar ---------- */
+function ficha(t, tipo){
+  const esNorma = tipo === 'normativo', esNand = tipo === 'nandisena';
+  const marcas =
+    (t.conflicto ? '<span class="marca m-conflicto">difiere de la norma</span>' : '') +
+    (t.duda ? '<span class="marca m-duda">por cotejar</span>' : '') +
+    (t.errata ? '<span class="marca m-duda">errata del impreso</span>' : '') +
+    (esNorma ? '<span class="marca m-norma">español fijado</span>' : '') +
+    (esNand ? '<span class="marca m-norma">español de Nandisena</span>' : '');
+  const ep = esNorma ? (t.fijado_en ? escapa(t.fijado_en) : '')
+           : esNand  ? ('Glosario, p. ' + t.pagina + (t.homonimo ? ' · ' + t.homonimo : ''))
+           : (t.epigrafe + ' · Smith p. ' + t.pagina);
+  const vars = (t.variantes && t.variantes.length)
+    ? '<span class="var">también: <i>' + t.variantes.map(escapa).join('</i>, <i>') + '</i></span>' : '';
+  const refs = (t.refs && t.refs.length)
+    ? '<span class="var">' + t.refs.map(escapa).join(' · ') + '</span>' : '';
+  const glosas =
+    (!esNorma && !esNand && verFR && t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
+    (t.remite_a ? '<div class="es">v. <i>' + escapa(t.remite_a) + '</i></div>' : '') +
+    (t.es ? '<div class="es">' + resalta(t.es) + '</div>' : '') +
+    (esNand && !t.es && !t.remite_a
+       ? '<div class="es" style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</div>' : '') +
+    (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '');
+  // El puente: cuando un término del Conspectus tiene entrada en el Glosario,
+  // se enseña el español de Nandisena junto al francés de Smith. Es el caso
+  // que hace útil tener las dos obras en una página.
+  const puente = (t.nandisena || []).map(g =>
+    '<p class="nota puente"><span class="marca m-norma">Nandisena</span>' +
+    (g.es ? escapa(g.es) : 'v. ' + escapa(g.remite_a || '')) +
+    (g.refs && g.refs.length ? ' <span class="fijado">' + g.refs.map(escapa).join(' · ') + '</span>' : '') +
+    '</p>').join('');
+  const notas = [t.nota, t.conflicto, t.duda, t.errata,
+                 t.ref_smith ? 'Smith remite a ' + t.ref_smith + '.' : '',
+                 t.ref_interna ? 'Ver ' + t.ref_interna + '.' : '']
+    .filter(Boolean).map(escapa).join(' ');
+  return '<div class="t">' +
+    '<div class="lema">' + (t.sin_lema ? '<span style="color:var(--soot)">—</span>' : resalta(t.pali)) +
+      '<span class="ep">' + ep + '</span>' + vars + refs + '</div>' +
+    '<div><div class="gl">' + glosas + '</div>' + puente +
+      (marcas || notas ? '<p class="nota">' + marcas + notas + '</p>' : '') +
+    '</div></div>';
+}
+
+function pinta(){
+  const fuente = tab === 'conspectus' ? DATA.conspectus
+               : tab === 'nandisena'  ? DATA.nandisena
+               : DATA.normativo;
+  const lista = fuente.filter(casa)
+    .filter(t => !soloMarcas || t.conflicto || t.duda || t.errata);
+
+  $('#count').textContent = lista.length + (lista.length === 1 ? ' término' : ' términos');
+
+  if (!lista.length){ out.innerHTML = '<p class="vacio">Nada con eso.</p>'; $('#secs').innerHTML=''; return; }
+
+  if (tab !== 'conspectus'){
+    // Nandisena y la lista normativa van por orden alfabético pāḷi, que es
+    // el que traen ya del generador; se agrupan por inicial.
+    const grupos = new Map();
+    for (const t of lista){
+      const ini = (t.pali || '—').normalize('NFC')[0].toLowerCase();
+      if (!grupos.has(ini)) grupos.set(ini, []);
+      grupos.get(ini).push(t);
+    }
+    let html = '', indice = '';
+    for (const [ini, ts] of grupos){
+      const id = 'l' + ini.codePointAt(0);
+      html += '<h2 class="sec" id="' + id + '">' + escapa(ini.toUpperCase()) +
+              '<small>' + ts.length + '</small></h2>' + ts.map(t => ficha(t, tab)).join('');
+      indice += '<a href="#' + id + '">' + escapa(ini.toUpperCase()) +
+                '<span>' + ts.length + '</span></a>';
+    }
+    out.innerHTML = html;
+    $('#secs').innerHTML = indice;
+    return;
+  }
+
+  const grupos = new Map();
+  for (const t of lista){
+    const raiz = t.epigrafe.split('.').slice(0,2).join('.');
+    if (!grupos.has(raiz)) grupos.set(raiz, []);
+    grupos.get(raiz).push(t);
+  }
+  let html = '', indice = '';
+  for (const [raiz, ts] of grupos){
+    const tit = DATA.secciones[raiz] || DATA.secciones[raiz.split('.')[0]] || 'Sin sección';
+    const id = 'e' + raiz.replace(/\./g,'-');
+    html += '<h2 class="sec" id="' + id + '">' + raiz + ' · ' + escapa(tit) +
+            '<small>' + ts.length + '</small></h2>' + ts.map(t => ficha(t, 'conspectus')).join('');
+    indice += '<a href="#' + id + '">' + raiz + ' · ' + escapa(tit) +
+              '<span>' + ts.length + '</span></a>';
+  }
+  out.innerHTML = html;
+  $('#secs').innerHTML = indice;
+}
+
+/* ---------- mandos ---------- */
+$('#n-nandisena').textContent = DATA.nandisena.length;
+$('#n-conspectus').textContent = DATA.conspectus.length;
+$('#n-normativo').textContent = DATA.normativo.length;
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
+  tab = b.dataset.tab;
+  $('#secs-tit').textContent = tab === 'conspectus' ? 'Secciones' : 'Por inicial';
+  pinta();
+});
+$('#q').oninput = e => { q = e.target.value.trim(); pinta(); };
+function alterna(btn, set){
+  btn.onclick = () => {
+    const v = btn.getAttribute('aria-pressed') !== 'true';
+    btn.setAttribute('aria-pressed', v); set(v); pinta();
+  };
+}
+alterna($('#b-fr'), v => verFR = v);
+alterna($('#b-en'), v => verEN = v);
+alterna($('#b-marcas'), v => soloMarcas = v);
+
+const plegar = v => document.body.classList.toggle('sin-barra', v);
+$('#burger').onclick = () => {
+  const v = !document.body.classList.contains('sin-barra');
+  plegar(v); $('#burger').setAttribute('aria-expanded', !v);
+};
+$('#sbclose').onclick = () => { plegar(true); $('#burger').setAttribute('aria-expanded', false); };
+$('#volver-barra').onclick = () => { plegar(false); $('#burger').setAttribute('aria-expanded', true); };
+
+const top = $('#top-btn');
+top.onclick = () => scrollTo({top:0});
+addEventListener('scroll', () => top.classList.toggle('on', scrollY > 600));
+
+pinta();
+</script>
+</body>
+</html>

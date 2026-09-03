@@ -1,0 +1,423 @@
+{
+ "pagina": 1124,
+ "terminos": [
+  {
+   "pali": "yuttattha",
+   "fr": "le sémantème complexe qu'est le samāsa",
+   "es": "el semantema complejo que es el samāsa",
+   "en": "the complex sememe that the samāsa is",
+   "epigrafe": "5.2.0",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Abre 5.2.0, el análisis del compuesto por sus componentes. Smith enumera los tipos de componente: nāma, upasagga, nipāta, rūḷhināma."
+  },
+  {
+   "pali": "rūḷhināma",
+   "fr": "parmi les composants (de type nāma, upasagga, nipāta, rūḷhināma)",
+   "es": "entre los componentes (de tipo nāma, upasagga, nipāta, rūḷhināma)",
+   "en": "among the components (of the type nāma, upasagga, nipāta, rūḷhināma)",
+   "epigrafe": "5.2.0",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "El nombre convencional, el que vale por uso y no por etimología. Cierra la lista de los cuatro tipos de componente."
+  },
+  {
+   "pali": "pubbapada",
+   "fr": "on distingue le premier terme (α)",
+   "es": "se distingue el primer término (α)",
+   "en": "one distinguishes the first term (α)",
+   "epigrafe": "5.2.0",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Smith rotula los dos miembros con α y β, y con esas letras griegas organiza todo el capítulo del compuesto."
+  },
+  {
+   "pali": "uttarapada",
+   "fr": "et le second terme (β)",
+   "es": "y el segundo término (β)",
+   "en": "and the second term (β)",
+   "epigrafe": "5.2.0",
+   "pagina": 1124,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "padhānatta",
+   "fr": "selon la prédominance du sens attha de l'un ou de l'autre",
+   "es": "según la predominancia del sentido attha de uno o de otro",
+   "en": "according to the predominance of the attha of one or the other",
+   "epigrafe": "5.2.0",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "variantes": [
+    "padhāna",
+    "upasajjanibhūta"
+   ],
+   "nota": "Smith añade «(v. padhāna : upasajjanibhūta)», el par de lo principal y lo subordinado, que es el criterio con que reparte 5.2.1 (manda α), 5.2.2 (manda β) y el bahubbīhi (manda una palabra de fuera)."
+  },
+  {
+   "pali": "aññapada",
+   "fr": "leur subordination à un mot (γ) qui se trouve en dehors du composé",
+   "es": "su subordinación a una palabra (γ) que está fuera del compuesto",
+   "en": "their subordination to a word (γ) outside the compound",
+   "epigrafe": "5.2.0",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "La tercera posibilidad, con su letra γ: el compuesto cuyo sentido apunta a algo que no está en él. Es el bahubbīhi, aunque Smith no lo nombre todavía."
+  },
+  {
+   "pali": "pubbapadatthapadhāna",
+   "fr": "c'est α qui domine",
+   "es": "es α el que domina",
+   "en": "it is α that dominates",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "avyayībhāva",
+   "fr": "le composé adverbial, à forme neutre, et dont α est un mot invariable",
+   "es": "el compuesto adverbial, de forma neutra, y cuyo α es una palabra invariable",
+   "en": "the adverbial compound, neuter in form, whose α is an indeclinable",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_smith": "746,3—17",
+   "variantes": [
+    "asaṃkhya",
+    "avyaya"
+   ],
+   "ref_interna": "4.1",
+   "nota": "Smith imprime ⟨asaṃkhya⟩ entre paréntesis angulares, con la terminología de Moggallāna, y luego avyaya. Ya lo anunció en 4.1 (p. 1116). Nandisena escribe abyayībhāva: «compuesto adverbial. El primer miembro es un indeclinable y el segundo un sustantivo»."
+  },
+  {
+   "pali": "abhāva",
+   "fr": "ici les préverbes servent à marquer : absence (manque)",
+   "es": "aquí los preverbios sirven para marcar: ausencia (falta)",
+   "en": "here the preverbs serve to mark: absence (lack)",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.1",
+   "nota": "Abre la lista de lo que el preverbio marca cuando es el α de un avyayībhāva. Smith remite a 4.1, donde están los veinte preverbios con sus sentidos."
+  },
+  {
+   "pali": "pacchāattha",
+   "fr": "postériorité",
+   "es": "posterioridad",
+   "en": "posteriority",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.1.1",
+   "nota": "En 4.1.1 (p. 1117) Smith lo dio entre paréntesis junto a anugata, como matiz de anu. Aquí lo imprime sin guión."
+  },
+  {
+   "pali": "yogyatā",
+   "fr": "conformité",
+   "es": "conformidad",
+   "en": "conformity",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.2.3.2",
+   "nota": "cf. padatthānativatti (yoggatā), 4.2.3.2 (p. 1119): allí Smith lo escribe con doble g, aquí con una sola y sánscrita, yogyatā."
+  },
+  {
+   "pali": "ănupubbī",
+   "fr": "succession (à tour de rôle)",
+   "es": "sucesión (por turno)",
+   "en": "succession (by turns)",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "variantes": [
+    "anupubba"
+   ],
+   "nota": "IMPORTANTE PARA LEER LAS BREVES DE SMITH. Aquí Smith imprime en la misma línea «ănupubbī, anupubba»: la primera con BREVE sobre la a, la segunda sin nada. Comprobado a 400 dpi, y el contraste con el macrón de mariyādā y samīpattha en las líneas vecinas es nítido. La forma corriente es ānupubbī, con vuddhi de anu-; la breve marca, pues, que esa vocal —larga en la forma familiar— va aquí BREVE. Eso explica de una vez las otras tres breves del Conspectus transcritas hasta ahora: sădisa por sādisa (4.1.1, p. 1117), păpuṇīyate por pāpuṇīyate (5.1.1.2, p. 1121) y nănāpadānaṃ por nānā- (5.2, p. 1123). No son erratas ni ruido del escaneo: son la marca de cantidad de Smith, y la pareja ănupubbī / anupubba de esta línea es la prueba, porque sólo lleva breve la voz donde el uso pide larga."
+  },
+  {
+   "pali": "anupubba",
+   "fr": "succession (à tour de rôle)",
+   "es": "sucesión (por turno)",
+   "en": "succession (by turns)",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Smith lo imprime sin breve, junto a ănupubbī. V. la nota de esa entrada."
+  },
+  {
+   "pali": "paṭiloma",
+   "fr": "sens contraire",
+   "es": "sentido contrario",
+   "en": "opposite sense",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.1.1",
+   "nota": "En 4.1.1 (p. 1117) era «contrarier», matiz de paṭigata."
+  },
+  {
+   "pali": "adhikicca-pavatti",
+   "fr": "activité (existence) dans un domaine défini",
+   "es": "actividad (existencia) en un dominio definido",
+   "en": "activity (existence) within a defined domain",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Smith lo imprime con guión y partido de línea."
+  },
+  {
+   "pali": "abhividhi",
+   "fr": "limite inclusive ou exclusive",
+   "es": "límite inclusivo o exclusivo",
+   "en": "inclusive or exclusive limit",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "variantes": [
+    "mariyādā"
+   ],
+   "ref_interna": "5.1.1.5",
+   "nota": "El mismo par que en 5.1.1.5 (p. 1122), a propósito del apādāna, y Smith remite allí expresamente."
+  },
+  {
+   "pali": "samiddhi",
+   "fr": "abondance",
+   "es": "abundancia",
+   "en": "abundance",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "variantes": [
+    "sampannattha"
+   ],
+   "ref_interna": "4.1.1",
+   "nota": "Smith añade «(cf. sampannattha)». En 4.1.1 (p. 1117) samiddhi era «bien-être», matiz de sam."
+  },
+  {
+   "pali": "asamiddhi",
+   "fr": "pénurie",
+   "es": "penuria",
+   "en": "want",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.1.2"
+  },
+  {
+   "pali": "samīpattha",
+   "fr": "proximité",
+   "es": "proximidad",
+   "en": "proximity",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "adhikatattha",
+   "fr": "sujet (d'un discours)",
+   "es": "asunto (de un discurso)",
+   "en": "subject (of a discourse)",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "cf. adhikārantara, 4.2.3.1 (p. 1119): el adhikāra es el encabezamiento que rige un tramo."
+  },
+  {
+   "pali": "vicchā",
+   "fr": "sens distributif",
+   "es": "sentido distributivo",
+   "en": "distributive sense",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.3",
+   "nota": "Smith lo trae DOS VECES en este epígrafe: primero cierra con él la lista de los preverbios («sens distributif vicchā») y luego reaparece en la de las partículas («distribution vicchā»). Van juntas las dos apariciones para no repetir lema. Lema con i BREVE, corregido por Angel: a 400 dpi la tilde de la i y el macrón no se distinguen con seguridad en este escaneo, y la primera transcripción leyó «vicchā». cf. vicchāyoge, 4.3 (p. 1120)."
+  },
+  {
+   "pali": "paṭipāṭi",
+   "fr": "les particules représentent les idées de : succession",
+   "es": "las partículas representan las ideas de: sucesión",
+   "en": "the particles represent the ideas of: succession",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.2",
+   "nota": "Segunda lista del epígrafe: lo que marca el α cuando es partícula y no preverbio. Smith remite a 4.2."
+  },
+  {
+   "pali": "padatthānatikkama",
+   "fr": "conformité avec qch",
+   "es": "conformidad con algo",
+   "en": "conformity with something",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.2.3.2",
+   "nota": "«No traspasar el fundamento». En 4.2.3.2 (p. 1119) Smith glosó igual, «conformité avec qch», el término vecino padatthānativatti."
+  },
+  {
+   "pali": "pariccheda",
+   "fr": "délimitation",
+   "es": "delimitación",
+   "en": "delimitation",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "4.2.3.2",
+   "nota": "Tercera aparición: «limiter (préciser)» en 4.1.2 (p. 1117), «délimitation» en 4.2.3.2 (p. 1119) y aquí."
+  },
+  {
+   "pali": "parabhāga",
+   "fr": "«au delà de»",
+   "es": "«más allá de»",
+   "en": "«beyond»",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sākallattha",
+   "fr": "«y compris»",
+   "es": "«incluido»",
+   "en": "«including»",
+   "epigrafe": "5.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_smith": "777,1—778,22",
+   "variantes": [
+    "sākalya",
+    "antavacana",
+    "apubbācarima"
+   ],
+   "nota": "Smith imprime «(sākalya; cf. antavacana, apubbācarima)» y remite a 777,1—778,22 para el detalle. apubbācarima —«ni antes ni después»— es el término con que la gramática dice la simultaneidad. Cierra 5.2.1."
+  },
+  {
+   "pali": "uttarapadatthapadhāna",
+   "fr": "c'est β qui domine",
+   "es": "es β el que domina",
+   "en": "it is β that dominates",
+   "epigrafe": "5.2.2",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "5.2.2.3",
+   "nota": "Smith añade «(v. 5.2.2.3!)», con signo de admiración: allí hay algo que matiza esta regla."
+  },
+  {
+   "pali": "tappurisa",
+   "fr": "le composé de subordination",
+   "es": "el compuesto de subordinación",
+   "en": "the compound of subordination",
+   "epigrafe": "5.2.2",
+   "pagina": 1124,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "suddhatappurisa",
+   "fr": "le tappurisa propre",
+   "es": "el tappurisa propio",
+   "en": "the tappurisa proper",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "variantes": [
+    "amādi"
+   ],
+   "nota": "α hace de uno de los seis casos oblicuos, que Smith nombra con la fórmula ⟨amādi⟩ entre paréntesis angulares —«am y los siguientes», por la desinencia de acusativo—, con la terminología de Moggallāna."
+  },
+  {
+   "pali": "dutiyātappurisa",
+   "fr": "α étant fonction de l'un des six cas obliques",
+   "es": "siendo α función de uno de los seis casos oblicuos",
+   "en": "α standing for one of the six oblique cases",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_interna": "5.2.2.4",
+   "nota": "Smith añade «(5.2.2.4!)», otra vez con admiración."
+  },
+  {
+   "pali": "tatiyātappurisa",
+   "fr": "α étant fonction de l'un des six cas obliques",
+   "es": "siendo α función de uno de los seis casos oblicuos",
+   "en": "α standing for one of the six oblique cases",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Smith imprime puntos suspensivos entre éste y el chaṭṭhītappurisa: la serie del cuarto y el quinto caso queda sobrentendida."
+  },
+  {
+   "pali": "chaṭṭhītappurisa",
+   "fr": "α étant fonction de l'un des six cas obliques",
+   "es": "siendo α función de uno de los seis casos oblicuos",
+   "en": "α standing for one of the six oblique cases",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_smith": "758,18—759,4",
+   "ref_interna": "5.2.3",
+   "nota": "Smith da dos variedades, dukkaramagga- y durājānamagga-, y remite a 5.2.3. Al final del epígrafe vuelve sobre él: el paṭhamātappurisa sirve también para el chaṭṭhītappurisa invertido."
+  },
+  {
+   "pali": "dukkaramagga-",
+   "fr": "variétés",
+   "es": "variedades",
+   "en": "varieties",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Abreviado por dukkaramagga-tappurisa: «camino difícil de hacer»."
+  },
+  {
+   "pali": "durājānamagga",
+   "fr": "variétés",
+   "es": "variedades",
+   "en": "varieties",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "«Camino difícil de conocer». Smith lo imprime entero, sin el guión que lleva el anterior."
+  },
+  {
+   "pali": "sattamītappurisa",
+   "fr": "α étant fonction de l'un des six cas obliques",
+   "es": "siendo α función de uno de los seis casos oblicuos",
+   "en": "α standing for one of the six oblique cases",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Cierra la serie de los casos oblicuos."
+  },
+  {
+   "pali": "itilopa",
+   "fr": "en admettant l'ellipse de iti après α",
+   "es": "admitiendo la elipsis de iti tras α",
+   "en": "admitting the ellipsis of iti after α",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_smith": "758,3—17"
+  },
+  {
+   "pali": "paṭhamātappurisa",
+   "fr": "un paṭhamātappurisa, terme qui sert aussi pour le chaṭṭhītappurisa inverti",
+   "es": "un paṭhamātappurisa, término que sirve también para el chaṭṭhītappurisa invertido",
+   "en": "a paṭhamātappurisa, a term also used for the inverted chaṭṭhītappurisa",
+   "epigrafe": "5.2.2.1",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "ref_smith": "758,18—759,4",
+   "nota": "El tappurisa de primer caso, que sólo existe si se admite la elipsis de iti; y que además hace de rótulo para el genitivo con los miembros trocados."
+  },
+  {
+   "pali": "kammadhārayatappurisa",
+   "fr": "le composé attributif",
+   "es": "el compuesto atributivo",
+   "en": "the attributive compound",
+   "epigrafe": "5.2.2.2",
+   "pagina": 1124,
+   "fuente": "conspectus",
+   "nota": "Smith lo imprime entre paréntesis y la línea se corta al pie de la página en «kam-»: la voz pāḷi que él prefiere —kammadhāraya— y su tratamiento siguen en la p. 1125."
+  }
+ ]
+}

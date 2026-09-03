@@ -1,0 +1,5648 @@
+{
+ "_nota": "«Glosario de términos gramaticales de la lengua pali», material preparado por Bhikkhu Nandisena. El español es SUYO y se reproduce literalmente; no se retoca. Extraído de la capa de texto del PDF con herramientas/extraer_glosario_nandisena.py.",
+ "fuente": {
+  "titulo": "Glosario de términos gramaticales de la lengua pali",
+  "autor": "Bhikkhu Nandisena",
+  "editorial": "Dhammodaya Ediciones · Buddhismo Theravada México AR. · Instituto de Estudios Buddhistas Hispano (IEBH)",
+  "anyo": 2013,
+  "revision": "domingo, 7 de abril de 2013",
+  "publicacion_iebh": "20130407-BN-T0022",
+  "copyright": "© 2013 Dhammodaya Ediciones, Buddhismo Theravada México AR., IEBH",
+  "licencia": "Puede reproducirse para uso personal; sólo puede distribuirse en forma gratuita.",
+  "nota": "En su propia lista de referencias, Nandisena declara haber consultado los volúmenes de tablas e índices que Helmer Smith preparó del Saddanīti y dice que le ha sido «muy útil su \"Conspectus Terminorum\", un glosario de los términos gramaticales». Las dos fuentes de esta página, por tanto, no son independientes: la segunda está detrás de la primera."
+ },
+ "obras": {
+  "Kac.": "Kaccāyana-byākaraṇa",
+  "Rū.": "Padarūpasiddhi",
+  "Sad.": "Saddanīti",
+  "Nir.": "Niruttidīpanī",
+  "Pay.": "Payogasiddhi",
+  "KhpA.": "Khuddakapāṭha-aṭṭhakathā",
+  "Mogg.": "Moggallāna",
+  "IP": "Introduction to Pali (Warder)",
+  "PEG": "Pali-English Technical Glossary (Ñāṇamoli)",
+  "Monier": "A Sanskrit-English Dictionary",
+  "NPC": "New Pali Course (Buddhadatta)",
+  "Smith": "Saddanīti, ed. Helmer Smith"
+ },
+ "notas_al_pie": [
+  {
+   "pagina": 3,
+   "texto": "1 Monier 20."
+  },
+  {
+   "pagina": 7,
+   "texto": "2 IP 171 3 PEG 129. 4 PEG 123."
+  },
+  {
+   "pagina": 8,
+   "texto": "5 PEG 129. 6 PEG 130."
+  },
+  {
+   "pagina": 9,
+   "texto": "7 El orden de los prefijos en Rū. 126 es el siguiente: pa, parā, ni, nī, u, du, saṃ, vi, ava, anu, pari, adhi, abhi, pati, su, ā, ati, api, apa, upa. En Sad. 361 es el siguiente: ā, u, ati, pati, pa, pari, ava, parā, adhi, abhi, anu, upa, apa, api, saṃ, vi, ni, nī, su, du. Aquí se han ordenado de acuerdo con Rū."
+  },
+  {
+   "pagina": 12,
+   "texto": "8 Éste es un término tomado del sánscrito y aparentemente no usado en las gramáticas de la Lengua Pali. Usado en Introduction to Pali, Warder, p. 12; Pali-English Technical Glossary, Bhikkhu Ñāṇamoli, p. 130. 9 Smith: \"guṇipada\"."
+  },
+  {
+   "pagina": 13,
+   "texto": "10 IP 301."
+  },
+  {
+   "pagina": 18,
+   "texto": "11 PEG 124. 12 IP 71. 13 PEG 131."
+  },
+  {
+   "pagina": 19,
+   "texto": "14 \"Kātabbopadesa\" (Sad. iii §880). 15 PEG 125. 16 IP p. 7; NPC i 3. 17 IP 288."
+  },
+  {
+   "pagina": 22,
+   "texto": "18 IP. 116. 19 PEG 132."
+  },
+  {
+   "pagina": 23,
+   "texto": "20 IP 46. 21 NPC ii 65."
+  },
+  {
+   "pagina": 24,
+   "texto": "22 IP 8."
+  },
+  {
+   "pagina": 25,
+   "texto": "23 IP 60. 24 IP 118."
+  },
+  {
+   "pagina": 26,
+   "texto": "25 PEG 133."
+  },
+  {
+   "pagina": 27,
+   "texto": "26 PEG 133; Monier 1030."
+  },
+  {
+   "pagina": 30,
+   "texto": "27 PEG 134."
+  },
+  {
+   "pagina": 31,
+   "texto": "28 NPC ii 139."
+  }
+ ],
+ "entradas": [
+  {
+   "pali": "akathitakamma",
+   "homonimo": null,
+   "es": "lit., objeto no hablado; objeto indirecto. Se refiere al objeto secundario cuando el verbo tiene dos objetos (dvikammaka). Ej., en la oración, \"Bhagavā bhikkhū etad avoca\", el Sublime dijo esto a los bhikkhus, \"bhikkhū\" se denomina akathitakamma, objeto indirecto y \"etad\", esto, kathitakamma, objeto directo.",
+   "refs": [
+    "Rū. §285"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akamma",
+   "remite_a": "akammaka",
+   "es": null,
+   "refs": [],
+   "pagina": 2
+  },
+  {
+   "pali": "akammaka",
+   "homonimo": null,
+   "es": "intransitivo; sin objeto; kamma en las gramáticas antiguas se usa para referirse al objeto del verbo. Véase también sakammaka; dvikammaka.",
+   "refs": [
+    "Rū. 336"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akāra",
+   "homonimo": null,
+   "es": "la letra 'a'.",
+   "refs": [
+    "Kac. §113"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkhara",
+   "homonimo": null,
+   "es": "fonema; letra; sílaba. Hay 41 letras en el alfabeto pali. Las vocales son 8: 'a', 'ā', 'i', 'ī', 'u' 'ū', 'e', 'o'. Y las consonantes 33: 'k', 'kh', 'g', 'gh', 'ṅ'; 'c', 'ch', 'j', 'jh', 'ñ'; 'ṭ', 'ṭh', 'ḍ', 'ḍh', 'ṇ'; 't', 'th', 'd', 'dh', 'n'; 'p', 'ph', 'b', 'bh', 'm'; 'y', 'r', 'l', 'v', 's', 'h', 'ḷ', 'ṃ'.",
+   "refs": [
+    "Kac. §2"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkhara-cintaka",
+   "homonimo": null,
+   "es": "gramático; lit., uno que piensa letras.",
+   "refs": [
+    "KhpA. 8"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkhara-lopa",
+   "homonimo": null,
+   "es": "elisión de la letra.",
+   "refs": [
+    "Rū. §51"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkhara-kosalla",
+   "homonimo": null,
+   "es": "habilidad con letras; maestría con letras.",
+   "refs": [
+    "Kac. §1"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkharappayoga",
+   "homonimo": null,
+   "es": "relacionado con letras; ejemplo.",
+   "refs": [
+    "Kac. §277"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkhara-vipatti",
+   "homonimo": null,
+   "es": "deletreo erróneo; perversión del significado; error en el uso de letras.",
+   "refs": [
+    "Kac. §1"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akkhara-vipallāsa",
+   "homonimo": null,
+   "es": "permutación de letras.",
+   "refs": [
+    "Sad. i 271"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "akhinimīlana",
+   "homonimo": null,
+   "es": "parpadeo. La unidad de medida de las vocales cortas, \"a\", \"i\", \"u\". Véase también accharāsaṅghāta.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "aghosa",
+   "homonimo": null,
+   "es": "sorda; (consonante) sorda. Hay once consonantes sordas: 'k', 'kh'; 'c', 'ch'; 'ṭ', 'ṭh'; 't', 'th'; 'p', 'ph'; 's'. Cf. ghosa.",
+   "refs": [
+    "Sad. §17"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "accantasaṃyoga",
+   "homonimo": null,
+   "es": "conexión total de tiempo o espacio. Ej., \"māsaṃ adhīte\", estudia por todo un mes.",
+   "refs": [
+    "Kac. §298"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "acchandānukkhaṇa",
+   "homonimo": null,
+   "es": "lit., sin proteger la métrica; sin considerar la métrica.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "accharāsaṅghāta",
+   "homonimo": null,
+   "es": "chasquido de dedos. Esto es considerado como una unidad de medida (mattā). Véase también akkhinimīlana.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "ajjatanī",
+   "homonimo": null,
+   "es": "el aoristo en la Lengua Pali; pasado. Se usa para expresar (1) el pasado directamente experimentado (paccakkha) y (2) el pasado que no ha sido experimentado directamente (appaccakkha). El pasado expresado por este tiempo verbal es partir de hoy día hacia atrás; de aquí el nombre \"ajjatanī\".",
+   "refs": [
+    "Rū. §468"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "ajjhesanā",
+   "homonimo": null,
+   "es": "consentimiento; permiso. Uno de los usos del verbo imperativo (pañcamī) y potencial (sattamī).",
+   "refs": [],
+   "pagina": 2
+  },
+  {
+   "pali": "aññattha",
+   "homonimo": null,
+   "es": "lit., otro significado. Una de las funciones de la partícula \"na\" cuando forma un compuesto con otra palabra. Ej., \"a-byākata\", no declarado.",
+   "refs": [
+    "Rū. §344"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "aññapada",
+   "homonimo": null,
+   "es": "lit., otra palabra. Término técnico usado para referirse a \"ya\", \"ta\", \"eta\" y \"ima\". Estos pronombres se usan en la resolución (viggaha) de los compuestos relativos (bahubbīhi). Ej., \"chinno hattho yassa so ti chinnahattho\", mano cortada de éste, él es (un hombre de) mano cortada. En este ejemplo, \"yassa\" se denomina \"aññapada\" y se utiliza para resolver el compuesto.",
+   "refs": [
+    "Kac. §328",
+    "Rū. §352",
+    "Nir. 247"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "aññapadattha-padhāna",
+   "homonimo": null,
+   "es": "tipo de compuesto donde otra palabra es predominante. Pertenece al grupo de compuestos relativos (bahubbīhi). V. aññapada.",
+   "refs": [
+    "Nir. 241"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "aḍḍhamattā",
+   "homonimo": null,
+   "es": "media unidad de medida; media mora. V. mattā y accharāsaṅghāta.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "atagguṇasaṃviññāṇa",
+   "homonimo": null,
+   "es": "tipo de compuesto relativo (bahubbīhi) donde lo que califica al significado no se trae cuando se trae el significado de la otra palabra (aññapada). Lo que califica al significado no está incluido en el significado de la otra palabra. Ej., \"bahudhanaṃ ānaya\", traiga (al hombre de) mucha riqueza. Aquí, lo que califica, mucha riqueza, no se trae cuando se trae al hombre. Es opuesto a tagguṇasaṃviññāṇa.",
+   "refs": [
+    "Rū. §352"
+   ],
+   "pagina": 2
+  },
+  {
+   "pali": "atidesa",
+   "homonimo": null,
+   "es": "extensión del significado.",
+   "refs": [
+    "Rū. §120"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "atippasaṅga",
+   "homonimo": null,
+   "es": "sobre aplicación; sobre uso.",
+   "refs": [
+    "Rū. §68"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "atīta-kāla",
+   "homonimo": null,
+   "es": "tiempo pasado; uno de los tiempos verbales. En Rūpasiddhi se lo menciona como sinónimo del tiempo aoristo (ajjatanī).",
+   "refs": [
+    "Rū. 281"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "attanopada",
+   "homonimo": null,
+   "es": "voz media o reflexiva (lit. palabra para sí misma); uno de los dos grupos de inflexiones verbales (ākhyāta-vibhatti). El otro grupo se denomina parassapada.",
+   "refs": [
+    "Rū. §446"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "attha",
+   "homonimo": null,
+   "es": "significado.",
+   "refs": [
+    "Kac. §1"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "atthantaraviññāpanatthaṃ",
+   "homonimo": null,
+   "es": "para hacer conocer otro significado.",
+   "refs": [
+    "Rū. §49"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "attha-pūraṇa",
+   "homonimo": null,
+   "es": "lit., que completa o llena el significado; una clase de partículas (nipāta). Esta clase de partículas denota el significado que ya ha sido denotado por otra(s) palabra(s), pero el mismo se vuelve un poco más explícito. Ej., cuando se dice \"khattiyo brāhmaṇo vesso suddo\", guerrero, brahmán, comerciante y siervo, sin la partícula \"ca\", y \"khattiyo ca brāhmaṇo ca vesso ca suddo ca\", ambas oraciones tiene el mismo significado, pero la utilización de la partícula \"ca\" hace un poco más explícito el significado. Este tipo de partículas puede estar asociado con una inflexión determinada (vibhattiyutta) o disociado de inflexión (avibhattiyutta). V. también pūraṇattha y pada-pūraṇa.",
+   "refs": [
+    "Rū. 132, Sad. iii 375"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "atthasambandha",
+   "homonimo": null,
+   "es": "unidad de significado; conexión de significado.",
+   "refs": [
+    "Sad. i 48"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "atthyattha",
+   "homonimo": null,
+   "es": "v. atthyattha-taddhita",
+   "refs": [],
+   "pagina": 3
+  },
+  {
+   "pali": "atthyattha-taddhita",
+   "homonimo": null,
+   "es": "sufijos secundarios (taddhita) que denotan posesión (dotado con). Estos sufijos son derivativos secundarios y pertenecen a la categoría sāmañña- taddhita , derivativo secundario general. Los siguientes sufijos pertenecen a esta categoría: ava, ala, ila, ika, ī, vī, ssī, vantu, mantu, a, tara, tama.",
+   "refs": [
+    "Pay. 205"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "adassana",
+   "homonimo": null,
+   "es": "lit., que no se ve; ausencia. Es un término usado para definir lopa, elisión.",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "adhikaraṇa",
+   "homonimo": 1,
+   "es": "el séptimo caso; el caso locativo. V. kāraka.",
+   "refs": [
+    "Rū. §320"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "adhikaraṇa",
+   "homonimo": 2,
+   "es": "relación; relación de palabras en una oración, entre las cuales hay concordancia ya sea como adjetivo y sustantivo, como sujeto y predicado o como dos sustantivos en aposición.",
+   "refs": [
+    "Rū. §339"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "adhikāra",
+   "homonimo": null,
+   "es": "relación de influencia; autoridad; regla general. Una regla que tiene influencia sobre un cierto número de reglas siguientes se denomina anu-vutti. Hay tres tipos de relación de influencia: (1) movimiento de león (sīha-gatika), (2) movimiento de rana (maṇḍūka-gatika) y (3) que sigue el orden (yathānupubbika).",
+   "refs": [
+    "Rū. §60"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "adhikāratthaṃ",
+   "homonimo": null,
+   "es": "con el propósito de que sea una regla general.",
+   "refs": [
+    "Kac. §60"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "adhikāra",
+   "homonimo": null,
+   "es": "aforismo regulativo, que tiene aplicación general. V. sutta.",
+   "refs": [],
+   "pagina": 3
+  },
+  {
+   "pali": "anabhihita-kamma",
+   "homonimo": null,
+   "es": "objeto no indicado. Es sinónimo de avutta-kamma.",
+   "refs": [
+    "Rū. 285"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "anāgata-kāla",
+   "homonimo": null,
+   "es": "tiempo futuro.",
+   "refs": [
+    "Nir. §601"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "anādara",
+   "homonimo": null,
+   "es": "desconsiderar. Genitivo absoluto. Ej. \"rudato dārakassa pabbaji\", (el padre) renunció a pesar de que su hijo lloraba. Aquí el padre desconsideró (anādara) el hecho de que su hijo lloraba (rudato dārakassa) y renunció (pabbaji).",
+   "refs": [
+    "Kac. §305"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "aniṭṭhappasaṅga",
+   "homonimo": null,
+   "es": "inclusión de lo no deseado.",
+   "refs": [
+    "Rū. §42"
+   ],
+   "pagina": 3
+  },
+  {
+   "pali": "aniyamita",
+   "homonimo": null,
+   "es": "pronombre relativo.",
+   "refs": [],
+   "pagina": 3
+  },
+  {
+   "pali": "aniyamuddesa",
+   "homonimo": null,
+   "es": "la cláusula relativa, también denominada \"cláusula subordinada\".",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anukaḍḍhana",
+   "homonimo": null,
+   "es": "referencia previa; atracción gramatical; arrastre. Este término generalmente se usa para traer de un aforismo anterior ciertos términos necesarios al aforismo en cuestión.",
+   "refs": [
+    "Rū. §18"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anukaḍḍhanatthaṃ",
+   "homonimo": null,
+   "es": "con el propósito de traer o arrastrar.",
+   "refs": [
+    "Rū. §18"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anukaraṇa",
+   "homonimo": null,
+   "es": "semejanza, similitud. \"Ati- upasaggānukaraṇa\", semejante a la preposición \"ati\".",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anuccāraṇa",
+   "homonimo": null,
+   "es": "sin pronunciación; no- pronunciación. V. lopa.",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anuttasamuccaya",
+   "homonimo": null,
+   "es": "agrupación o colección no mencionada.",
+   "refs": [
+    "Rū. §23"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anunāsika",
+   "homonimo": null,
+   "es": "nasal; pronunciada a través de la nariz.",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anupadiṭṭha",
+   "homonimo": null,
+   "es": "no especificado; no indicado.",
+   "refs": [
+    "Kac. §51"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anupadiṭṭhāna",
+   "homonimo": null,
+   "es": "lugar no especificado. V. anupadiṭṭha",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anubandha",
+   "homonimo": null,
+   "es": "letra indicativa; se usa para indicar operaciones gramaticales tales como el fortalecimiento de una vocal corta.",
+   "refs": [
+    "Rū. §553"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anumati",
+   "homonimo": null,
+   "es": "concesión; consentimiento; permiso. Uno de los usos del verbo imperativo (pañcamī) y potencial (sattamī).",
+   "refs": [
+    "Rū. §454"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anuvattati",
+   "homonimo": null,
+   "es": "verbo usado en las gramáticas antiguas para indicar la continuación de una regla previa; que continúa de una regla anterior. También anuvattate.",
+   "refs": [
+    "Rū. §18"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anuvattate",
+   "homonimo": null,
+   "es": "v. anuvattati",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anuvattana-vutti",
+   "homonimo": null,
+   "es": "palabra o término proveniente de aforismos anteriores.",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anu-vutti",
+   "homonimo": null,
+   "es": "regla o aforismo que tiene influencia sobre un cierto número de reglas siguientes.",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anussāra",
+   "homonimo": null,
+   "es": "la \"niggahīta\"; la letra 'ṃ\".",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anekattha",
+   "homonimo": null,
+   "es": "que tiene varios significados; sufijos de derivación secundaria que denotan diversos significados. Pertenecen a la categoría de los derivativos secundarios generales (sāmañña- taddhita). Los siguientes sufijos pertenecen a esta categoría: (ṇ)ika, (ṇ)a, ima, iya, tā, ālu, ka, maya.",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "anekavacana",
+   "homonimo": null,
+   "es": "plural. Es sinónimo de bahuvacana.",
+   "refs": [
+    "Nir. §61"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "antaṭṭha",
+   "homonimo": null,
+   "es": "semivocal; lit., las letras al final (de las agrupadas): 'y', 'r', 'l', 'v'. Están ubicadas entre las consonantes y las vocales.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anvattha",
+   "homonimo": null,
+   "es": "que sigue el significado; de acuerdo con el verdadero significado. Cf. con ruḷhī.",
+   "refs": [
+    "Rū. 198"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "anvācaya",
+   "homonimo": null,
+   "es": "que conecta una acción secundaria con la acción principal; coordinación de dos actividades; una de las funciones de la partícula \"ca\". Ej., \"dānañ ca dehi, sīlañ ca rakkhāhi\", dé limosna y protega los preceptos. Sad., explica este uso de \"ca\" como la esfera de acciones separadas (bhinnakiriyāvisaya).",
+   "refs": [
+    "Rū. 132"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "apaccattha",
+   "homonimo": null,
+   "es": "sufijos que denotan linaje. Pertenecen a la categoría de los derivativos secundarios generales (sāmañña-taddhita). Los siguientes sufijos pertenecen a esta categoría: (ṇ)a, (ṇ)āyana, (ṇ)āna, (ṇ)eyya, (ṇ)ava, (ṇ)era.",
+   "refs": [
+    "Rū. §368"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "apaccattha-taddhita",
+   "homonimo": null,
+   "es": "v. apaccattha",
+   "refs": [],
+   "pagina": 4
+  },
+  {
+   "pali": "apavāda",
+   "homonimo": null,
+   "es": "prevención; excepción. Es el opuesto de ussagga (Mogp. 242). De acuerdo con Monier 52, es \"un regla especial que tiene precedencia sobre una regla general\".",
+   "refs": [
+    "Rū. §57"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "apādāna",
+   "homonimo": null,
+   "es": "el quinto caso; el caso ablativo. Véase kāraka.",
+   "refs": [
+    "Kac. §295"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "apekkhākaraṇattha",
+   "homonimo": null,
+   "es": "con el propósito de referir (a las palabras mencionadas anteriormente).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "appaccakkha",
+   "homonimo": null,
+   "es": "lit., que no es perceptible a través de los sentidos; que no ha sido experimentado; uno de los usos de los tiempos verbales ajjatanī, hiyyattanī y parokkhā",
+   "refs": [
+    "Rū. §456"
+   ],
+   "pagina": 4
+  },
+  {
+   "pali": "appadhānaliṅga",
+   "homonimo": null,
+   "es": "adjetivo (tema subordinado).",
+   "refs": [
+    "Sad. i 308"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "appasiddha",
+   "homonimo": null,
+   "es": "no evidente; inexistente. \"Akāranto itthiliṅgasaddo appasiddho\", las voce(s) femenina(s) terminada(s) en 'a' son no evidente(s).",
+   "refs": [
+    "Rū. §175"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "aphuṭṭha",
+   "homonimo": null,
+   "es": "no oclusivo. De acuerdo con Sad. §16 este término se usa para referirse a las consonantes no aspiradas (sithila).",
+   "refs": [],
+   "pagina": 5
+  },
+  {
+   "pali": "abbhāsa",
+   "homonimo": null,
+   "es": "la primera sílaba de una raíz reduplicada. Ej., en \"dadāti\", (él/ella) da, la raíz es \"dā\", dar, la cual se reduplica y la vocal se acorta. La primera sílaba \"da\" se denomina \"abbhāsa\".",
+   "refs": [
+    "Kac. §459"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abyatta-sadda",
+   "homonimo": null,
+   "es": "sonido inarticulado.",
+   "refs": [
+    "Sad. ii 182"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abyaya",
+   "homonimo": null,
+   "es": "indeclinable. Se denominan indeclinables porque no están sujetos a cambios; son inmodificables; no presentan diferencia en cuanto a género (liṅga), número (saṅkhyā) e inflexión (vibhatti). Hay 6 clases de indeclinables: (1) prefijos (upasagga), (2) partículas (nipāta), (3) palabras terminadas en sufijos que son inflexiones (vibhatti-paccaya-pada), (4) compuestos adverviales (abyayībhāva-samāsa), (5) palabras terminadas en sufijos secundarios indeclinables (abyaya-taddhita-pada)y (6) palabras terminadas en los sufijos \"tvā\", etc. (tvādi-paccayanta- pada).",
+   "refs": [
+    "Rū. 136",
+    "Nir. 154"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abyaya-taddhita",
+   "homonimo": null,
+   "es": "numerales indeclinables y derivativos secundarios adverbiales. Los siguientes sufijos pertenecen a esta categoría: kkhattuṃ, dhā, so, thā, thaṃ, tana, tra, ttha, hiṃ, haṃ, dā, dāni, dācanaṃ, ha, dha.",
+   "refs": [
+    "Rū. §254"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abyayībhāva",
+   "homonimo": null,
+   "es": "Compuesto adverbial. El primer miembro de este compuesto es un indeclinable y el segundo miembro es un sustantivo. Generalmente este tipo de compuesto tiene la terminación neutra singular. Ej., \"nagarassa + upa\" = \"upanagaraṃ\" (cerca de la ciudad). También abyayībhāva-samāsa.",
+   "refs": [],
+   "pagina": 5
+  },
+  {
+   "pali": "abyayībhāva-samāsa",
+   "homonimo": null,
+   "es": "compuesto adverbial. V. abyayībhāva.",
+   "refs": [
+    "Rū. 127"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abhidhā",
+   "homonimo": null,
+   "es": "v. abhidhāna",
+   "refs": [],
+   "pagina": 5
+  },
+  {
+   "pali": "abhidhāna",
+   "homonimo": null,
+   "es": "apelación; nombre (lit. aquello que dice).",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abhidheyya",
+   "homonimo": null,
+   "es": "el significado expresado por un compuesto relativo (babubbīhi). Ej., el compuesto \"āgatasamaṇo\", lit., monje venido, cuando es un compuesto relativo significa algo diferente que sus componentes; en este ejemplo, \"saṃghārāmo\", monasterio de la Orden. Entonces, \"āgatasamaṇo\", significa: el monasterio de la orden a donde el monje ha venido. El compuesto \"saṃghārāmo\" se denomina \"abhidheyya\", el significado expresado por el compuesto relativo \"āgatasamaṇo\".",
+   "refs": [
+    "Rū. §352"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abhidheyyaliṅga",
+   "homonimo": null,
+   "es": "sustantivo.",
+   "refs": [
+    "Sad. i 325"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abhidheyyaliṅgavacana",
+   "homonimo": null,
+   "es": "que tiene el (mismo) número y género que la voz que se denota. Ésta es una de las características de los compuestos relativos (bahubbīhi). El compuesto \"āgatasamaṇo\", tiene el mismo número (singular) y género (masculino) que \"saṃghārāmo\", la voz que el compuesto denota.",
+   "refs": [
+    "Rū. §352"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "abhihita-kamma",
+   "homonimo": null,
+   "es": "objeto indicado. Es sinónimo de vutta-kamma.",
+   "refs": [
+    "Rū. §285"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "amādi-tappurisa",
+   "homonimo": null,
+   "es": "nombre para todos los compuestos determinativos (tappurisa) excepto los compuestos numéricos (digu) y adjetivos (kammadhāraya). Cf. ubhe-tappurisa.",
+   "refs": [
+    "Kac. §327, Nir. 231"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "amādipara-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto determinativo que tiene como último miembro una voz que termina en \"aṃ\", etc.",
+   "refs": [
+    "Rū. §351"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "ayuttattha-samāsa",
+   "homonimo": null,
+   "es": "tipo de compuesto cuyos miembros no están ligados en significado. Ej., \"apunageyyā gāthā\", un verso no pronunciado de nuevo; \"alavaṇbhojī\", que no come sal. En estos compuestos, la partícula de negación no está ligada en significado con el miembro siguiente sino con el último miembro del compuesto.",
+   "refs": [
+    "Rū. §347"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "alutta-samāsa",
+   "homonimo": null,
+   "es": "tipo de compuesto donde la terminación del primer miembro no se elide. Ej. \"pabhaṅ karoti\" = \"pabhaṅkaro\", haciendo luz, el sol.",
+   "refs": [
+    "Rū. §331"
+   ],
+   "pagina": 5
+  },
+  {
+   "pali": "alopa-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto determinativo donde la terminación del primer miembro no se elide. V. alutta-samāsa.",
+   "refs": [
+    "Rū. §351"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avagga",
+   "homonimo": null,
+   "es": "consonantes no agrupadas: 'y', 'r', 'l', 'v', 's', 'h', 'ḷ'.",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "avaṇṇa",
+   "homonimo": null,
+   "es": "las letras 'a' y ā'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avadhāraṇapubbapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el primer miembro restringe al segundo miembro. Ej., \"guṇo eva dhanaṃ\" = \"guṇadhanaṃ\", rico en virtud; lit., la virtud en si misma es (su) riqueza.",
+   "refs": [
+    "Rū. 183"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avayava",
+   "homonimo": null,
+   "es": "parte; constituyente; uno de los dos usos del genitivo (genitivo partitivo). Ej., \"brāhmaṇānaṃ so paṇḍito\", él es sabio entre los brahmanes.",
+   "refs": [
+    "Rū. §283"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avibhattiyutta",
+   "homonimo": null,
+   "es": "no asociado con inflexión. Se refiere a una clase de partículas (nipāta) que no está asociada con ninguna inflexión. V. attha- pūraṇa.",
+   "refs": [
+    "Rū. 132"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avivaṭa",
+   "homonimo": null,
+   "es": "(boca) no completamente abierta; se refiere a la forma de pronunciar la letra 'ṃ'.",
+   "refs": [
+    "Rū. §10"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avutta-kattu",
+   "homonimo": null,
+   "es": "lit., subjeto no mencionado. Ej., en \"ahinā daṭṭho naro\", hombre mordido por una serpiente, \"ahinā\" se denomina \"avutta-kattā\". V. vutta-kattu.",
+   "refs": [],
+   "pagina": 6,
+   "errata": "En el impreso falta la coma que separa el lema: dice «avutta-kattu lit., …». Se restituye la coma; el texto va intacto."
+  },
+  {
+   "pali": "avutta-kamma",
+   "homonimo": null,
+   "es": "lit., objeto no mencionado. Ej., en \"puriso rūpaṃ passati\", el hombre ve una forma, \"rūpaṃ\", forma, se denomina \"avutta- kamma\". Es sinónimo de anabhihita-kamma. Cf. vutta-kamma.",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "avuddhika",
+   "homonimo": null,
+   "es": "fortalecimiento débil o nulo de la raíz; referencia a un sub-grupo de raíces donde no se fortalece la primera vocal de la raíz.",
+   "refs": [
+    "Rū. §508"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "avyatta-sadda",
+   "homonimo": null,
+   "es": "sonido inarticulado. También abyatta-sadda .",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "avyaya",
+   "homonimo": null,
+   "es": "v. abyaya",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "avyaya-taddhita",
+   "homonimo": null,
+   "es": "v. abyaya-taddhita",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "avyayībhāva",
+   "homonimo": null,
+   "es": "v. abyayībhāva",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "avyayībhāva-samāsa",
+   "homonimo": null,
+   "es": "v. abyayībhāva",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "asaṃyoga",
+   "homonimo": null,
+   "es": "(consonante) no conjunta; consonante simple. También asaññoga. Cf. saṃyoga.",
+   "refs": [
+    "Rū. §53"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "asaññoga",
+   "homonimo": null,
+   "es": "v. asaṃyoga",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "asabba-dhātuka",
+   "homonimo": null,
+   "es": "este término se refiere a aquellas conjugaciones donde opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal. Éstas son las siguientes: 1) Perfecto (parokkhā), 2) aoristo (ajjatanī), 3) futuro (bhavissantī), 4) conditional (kālātipatti).",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "asamāhāra-digu",
+   "homonimo": null,
+   "es": "Compuesto numérico determinativo no-colectivo. Este tipo de compuesto no expresa la totalidad sino los objetos individualmente. El primer miembro es un numeral. Tiene terminación plural. Ej., \"tayo + bhavā\" = \"tibhavā\" (los tres planos de existencia).",
+   "refs": [
+    "Rū. §350"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "asamāhāra-dvanda",
+   "homonimo": null,
+   "es": "compuesto copulativo individual. Este tipo de compuesto no expresa la totalidad sino los objetos individualmente. Tiene terminación plural. Ej., \"samaṇā ca brāhamaṇā ca\" = \"samaṇabrāhmaṇā\" (monjes y brahmanes).",
+   "refs": [],
+   "pagina": 6
+  },
+  {
+   "pali": "asarūpa",
+   "homonimo": null,
+   "es": "disímil. Las vocales 'a' y 'ā' son sarūpa, similares; también 'i', 'ī'; 'u', 'ū'. Por lo tanto 'a' es disímil de 'i', 'ī', 'u, 'ū', 'e', 'o'. Cf. sarūpa. Ver asavaṇṇa.",
+   "refs": [
+    "Kac. §13"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "asavaṇṇa",
+   "homonimo": null,
+   "es": "sin letra similar; disímil. Las vocales 'a', 'ā'; 'i', 'ī'; 'u', 'ū' son savaṇṇa, con letra similar; las vocales 'e' y 'o' son asavaṇṇa, sin letra similar.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "assapada-viggaha",
+   "homonimo": null,
+   "es": "tipo de compuesto cuya resolución no es por medio de sus propias palabras, sino por medio de otras palabras. Ej., el compuesto \"upa-nagaraṃ\", cerca de la ciudad, se explica como \"nagarassa samīpaṃ\". Otro ej., \"paccate pāko\", cocinando (paccate) significa cocinando (pāko). En este caso \"pāko\", derivativo primario (kita) usado como nombre verbal (bhāva-sadhāna), se explica usando un verbo (paccate). El opuesto es sapada-viggaha.",
+   "refs": [
+    "Rū. 177"
+   ],
+   "pagina": 6
+  },
+  {
+   "pali": "assutālāpa",
+   "homonimo": null,
+   "es": "uno que nunca ha escuchado lenguaje humano.",
+   "refs": [
+    "Rū. §60"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ākāra",
+   "homonimo": null,
+   "es": "la letra 'ā'.",
+   "refs": [
+    "Kac. §113"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ākhyāta",
+   "homonimo": null,
+   "es": "verbo.",
+   "refs": [
+    "Kac. §215"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ākhyāta-vibhatti",
+   "homonimo": null,
+   "es": "inflexión verbal; terminación de verbos. El grupo de inflexiones verbales comienza con 'ti' (tyādayo).",
+   "refs": [
+    "Rū. 257"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "āgama",
+   "homonimo": null,
+   "es": "inserción; inclusión de de una vocal o consonante; aumento.",
+   "refs": [
+    "Kac. §42"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "āṇatti",
+   "homonimo": null,
+   "es": "orden; precepto; requerimiento. Uno de los usos del verbo imperativo (pañcamī).",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "ādesa",
+   "homonimo": null,
+   "es": "substituto; substitución.",
+   "refs": [
+    "Kac. §17"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ādesi",
+   "homonimo": null,
+   "es": "aquello que se substituye. Véase ādesiṭṭhāna.",
+   "refs": [
+    "Rū. §19"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ādesiṭṭhāna",
+   "homonimo": null,
+   "es": "lugar de substitución; letra que se substituye. Ej. en \"me ayaṃ\" = \"my ayaṃ\". La letra 'e' en \"me\", se denomina ādesi, la forma original, lo que se substituye. La letra 'y' se denomina ādesa, el substituto.",
+   "refs": [
+    "Rū. §19"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ādhāra",
+   "homonimo": null,
+   "es": "locativo; apoyo; contenedor, receptáculo, base.",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "āmeḍita",
+   "homonimo": null,
+   "es": "repetición. Se usa para dar énfasis (muy), distribución (con pronombres e indeclinables) o para expresar emoción intensa.",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "ālapana",
+   "homonimo": null,
+   "es": "el vocativo; dirigirse a alguien; decir mirando a la otra persona. También sambodhana.",
+   "refs": [
+    "Kac. §57"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ālapana-vacana",
+   "homonimo": null,
+   "es": "El caso vocativo. También ālapana.",
+   "refs": [
+    "Sad. i 233"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "āsiṭṭha",
+   "homonimo": null,
+   "es": "bendición; deseo. Uno de los usos del verbo imperativo (pañcamī).",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "ikāra",
+   "homonimo": null,
+   "es": "La letra 'i'.",
+   "refs": [
+    "Rū. § 132"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "itaritara",
+   "homonimo": null,
+   "es": "compuesto copulativo (dvanda) con terminación plural.",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "itarītarayoga",
+   "homonimo": null,
+   "es": "conexión mutua; una de las funciones de la partícula \"ca\". Ej.,\" cando ca sūriyo ca\", la luna y el sol.",
+   "refs": [
+    "Rū. 132"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "itthambhūta-vacana",
+   "homonimo": null,
+   "es": "ablativo de similitud.",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "itthambhūtākkhyānatthe upayogavacanaṃ",
+   "homonimo": null,
+   "es": "acusativo de especificación de estado. Ej., en la frase: \"Taṃ kho pana bhagavantaṃ evaṃ kalyāṇo kittisaddo abbhuggato\", \"taṃ kho pana bhagavantaṃ\" es acusativo de especificación de estado.",
+   "refs": [
+    "DA. i 133"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "itthiliṅga",
+   "homonimo": null,
+   "es": "género femenino. V. liṅga 1 .",
+   "refs": [
+    "Rū. 81"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "itthiliṅga-rūpa",
+   "homonimo": null,
+   "es": "forma en género femenino; tema nominal en género femenino.",
+   "refs": [
+    "Sad. i 271"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ivaṇṇa",
+   "homonimo": null,
+   "es": "las letras 'i' y 'ī'.",
+   "refs": [
+    "Kac. §21, 58"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "īkāra",
+   "homonimo": null,
+   "es": "la letra 'ī'.",
+   "refs": [
+    "Kac. §113"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "īsaṃphuṭṭha",
+   "homonimo": null,
+   "es": "las letras 'y', 'r', 'l', 'v'. Semivocal (lit. poco contacto; producida con poco contacto).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "ukāra",
+   "homonimo": null,
+   "es": "la letra 'u'.",
+   "refs": [
+    "Rū. §197"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "uccāraṇa",
+   "homonimo": null,
+   "es": "pronunciación.",
+   "refs": [],
+   "pagina": 7
+  },
+  {
+   "pali": "uccāraṇattha",
+   "homonimo": null,
+   "es": "útil para la pronunciación, necesaria para la pronunciación. La letra 'a' en los alfabetos pali birmano, etc., es necesaria para la pronunciación de las consonantes; la letra 'a' está incluida en la representación de cada una de las consonantes.",
+   "refs": [
+    "Rū. §8"
+   ],
+   "pagina": 7
+  },
+  {
+   "pali": "uttama-purisa",
+   "homonimo": null,
+   "es": "la primera persona (\"ahaṃ\", yo, \"mayaṃ\", nosotros); lit. la persona más importante.",
+   "refs": [
+    "Kac. §412"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "uttaratra",
+   "homonimo": null,
+   "es": "más adelante; abajo (en un libro o manuscrito).",
+   "refs": [
+    "Rū. §18"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "uttara-padattha-padhāna",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el último miembro es predominante. Puede ser un compuesto adjetivo (kammadhāraya), numérico (digu) o determinativo (tappurisa).",
+   "refs": [
+    "Nir. 237"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "udāharaṇa",
+   "homonimo": null,
+   "es": "ejemplo.",
+   "refs": [
+    "Sad. ii 38"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upakaraṇa-saññā",
+   "homonimo": null,
+   "es": "término útil; término técnico accesorio. Ej., lopa, elisión; āgama, inserción; etc.",
+   "refs": [
+    "Sad. iii 9-10"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upakaraṇa-saññā-vidhāna",
+   "homonimo": null,
+   "es": "asignación de términos accesorios.",
+   "refs": [
+    "Sad. iii 9"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upacāra",
+   "homonimo": null,
+   "es": "figura retórica; metáfora.",
+   "refs": [],
+   "pagina": 8
+  },
+  {
+   "pali": "upaññāsa",
+   "homonimo": null,
+   "es": "exordio; parte introductoria de un tratado o discurso. Uno de los usos de la partícula 'ca'. También vākyārambha.",
+   "refs": [
+    "VinṬ. i 26"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upadha",
+   "homonimo": null,
+   "es": "nombre de la penúltima letra de una palabra. Ej., la raíz \"gaha\" se divide en dos sílabas \"ga\" y \"ha\", la letra \"a\" de \"ga\" se denomina \"upadha\".",
+   "refs": [
+    "Rū. §569"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upapada",
+   "homonimo": null,
+   "es": "palabra adyacente, palabra cercana, palabra precedente. La definición de este término (Rū §46) es \"upoccāritaṃ padaṃ, upapadaṃ\", \"upapada\" es la palabra que se pronuncia contiguamente. Ej., en el compuesto \"kumbha- kāro\", \"kumbha\", vasija de agua, se denomina upapada, palabra adyacente. También upapada- samāsa y kitanta-samāsa.",
+   "refs": [
+    "Kac. §79"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upapada-tappurisa",
+   "homonimo": null,
+   "es": "compuesto verbal determinativo dependiente. Ej. \"kumbha-kāro\", fabricante de vasijas de agua.",
+   "refs": [],
+   "pagina": 8
+  },
+  {
+   "pali": "upapada-samāsa",
+   "homonimo": null,
+   "es": "v. upapada-tappurisa",
+   "refs": [],
+   "pagina": 8
+  },
+  {
+   "pali": "upamāna",
+   "homonimo": null,
+   "es": "símil; comparación. Como término técnico significa aquello con lo que la otra cosa se compara. En \"saṅkho viya paṇḍaro\", blanco como una concha, \"saṅkho\", concha, se denomina \"upamāna\" y \"paṇḍaro\", blanco, se denomina upameyya, lo que se compara.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upamāna-pubbapada",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Tiene como primer miembro una palabra de comparación. Este compuesto está en la primera y sexta inflexión. Ej., \"kāko viya suro ayaṃ iti kākasuro\", éste es audaz como un cuervo, entonces se llama \"audaz como un cuervo\".",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upamānuttarapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el último miembro es una analogía del primer miembro. Ej., \"muni- sīho\" = \"sīho viya muni\", sabio como un león, león sabio, epíteto del Buddha.",
+   "refs": [
+    "Rū. 183, 186"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upameyya",
+   "homonimo": null,
+   "es": "aquello que se compara. Ver ejemplo en upamāna.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upayoga",
+   "homonimo": null,
+   "es": "el segundo caso; el caso acusativo. Véase también upayoga-vacana, kāraka.",
+   "refs": [
+    "Sad. i 84"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upayoga-vacana",
+   "homonimo": null,
+   "es": "el caso acusativo; el segundo caso. También upayoga.",
+   "refs": [
+    "Sad. i 84"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upasa",
+   "homonimo": null,
+   "es": "vocal prefijo; vocal usada como prefijo.",
+   "refs": [],
+   "pagina": 8
+  },
+  {
+   "pali": "upasagga",
+   "homonimo": null,
+   "es": "prefijo. Los prefijos se anteponen a las raíces, verbos y derivados. Tienen 3 funciones: (1) cambiar, (2) conformar y (3) modificar. Ejemplos: (1) \"gacchati\", él/ella va. Si se le coloca el prefijo ā, \"ā-gacchati\", él/ella viene. En este caso el significado es el opuesto; (2) \"tiṭṭho\", estar parado. Si se le coloca el prefijo pati, \"pati-tiṭṭho\", estar parado. En este caso no se modifica el significado; (3) \"harati\", él / ella lleva. Si se le coloca el prefijo pa, \"paharati\", él / ella golpea. En este caso se modifica el significado. Hay veinte prefijos: 7 pa, parā, ni, nī, u, du, saṃ, vi, ava, anu, pari, adhi, abhi, pati, su, ā, ati, api, apa, upa.",
+   "refs": [
+    "Rū. §282"
+   ],
+   "pagina": 8
+  },
+  {
+   "pali": "upasaggānukaraṇa",
+   "homonimo": null,
+   "es": "semejanza con el prefijo; que se asemeja a un prefijo.",
+   "refs": [
+    "Rū. §23"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "ubhaya-padattha-padhāna",
+   "homonimo": null,
+   "es": "tipo de compuesto agregativo (dvanda) donde ambos miembros son predominantes.",
+   "refs": [
+    "Rū. 208"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "ubhe-tappurisa",
+   "homonimo": null,
+   "es": "nombre dado a los compuestos numéricos (digu) y adjetivos (kammadhāraya). Cf. amādi-tappurisa.",
+   "refs": [
+    "Kac. §326"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "uvaṇṇa",
+   "homonimo": null,
+   "es": "las letras 'u' y 'ū'.",
+   "refs": [
+    "Kac. §58"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "ūkāra",
+   "homonimo": null,
+   "es": "La letra 'ū'.",
+   "refs": [
+    "Rū. 463"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "ekapadasaṃyoga",
+   "homonimo": null,
+   "es": "una consonante conjunta que pertenece a la misma palabra que la vocal anterior. Ej., en \"ettha\", aquí, la consonante conjunta 'tth' pertenece a la misma palabra que la previa vocal 'e'. Cp. con nānapadasaṃyoga.",
+   "refs": [
+    "Nir. 3"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "ekamattā",
+   "homonimo": null,
+   "es": "una unidad de medida; una mora (vocales 'a', 'i', 'u'). También rassa, corta. Véase mattā y accharāsaṅghāta.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "eka-vacana",
+   "homonimo": null,
+   "es": "singular.",
+   "refs": [
+    "Rū. §63"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "ekāra",
+   "homonimo": null,
+   "es": "la letra 'e'.",
+   "refs": [
+    "Kac. §170",
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "okāsa",
+   "homonimo": null,
+   "es": "el séptimo caso; el caso locativo. Ver también kāraka.",
+   "refs": [
+    "Rū. §94"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "okāsa-kāraka",
+   "homonimo": null,
+   "es": "el caso locativo.",
+   "refs": [
+    "Rū. §94"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "okāra",
+   "homonimo": null,
+   "es": "la letra 'o'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "oṭṭha",
+   "homonimo": null,
+   "es": "labio; los labios.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "oṭṭhaja",
+   "homonimo": null,
+   "es": "(sonido) producido en los labios; labial. Las labiales son 'u', 'ū'; 'p', 'ph'; 'b', 'bh'; 'm'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "opasilesikādhāra",
+   "homonimo": null,
+   "es": "locativo de contacto. Ej., en \"mañce sayati\", duerme en la cama, \"mañce\", en la cama, se denomina \"opasilesikādhāra\".",
+   "refs": [
+    "Nir. §323"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "orasa",
+   "homonimo": null,
+   "es": "(sonido) producido en el pecho; pulmonar. Se refiere a la letra 'h' cuando está asociada con alguna de las nasales ('ṅ', 'ñ', 'ṇ', 'n', 'm') o con 'y', 'r', 'l', 'v'. De lo contrario la letra 'h' es gutural.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kakāra",
+   "homonimo": null,
+   "es": "la letra 'k'.",
+   "refs": [
+    "Kac. §617"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kaṇṭha",
+   "homonimo": null,
+   "es": "la garganta. Uno de los seis lugares de articulación (ṭhāna).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kaṇṭhaja",
+   "homonimo": null,
+   "es": "(sonido) producido en la garganta; gutural. Las guturales son 'a', 'ā'; 'k', 'kh'; 'g', 'gh'; 'ṅ'; 'h'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kaṇṭha-tāluja",
+   "homonimo": null,
+   "es": "la letra 'e'; producida en la garganta y el paladar; gutural-palatal.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kaṇṭhoṭṭhaja",
+   "homonimo": null,
+   "es": "la letra 'o'; producida en la garganta y los labios; gutural-labial.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kattu",
+   "homonimo": null,
+   "es": "agente o sujeto.",
+   "refs": [
+    "Kac. §277"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kattu-kāraka",
+   "homonimo": null,
+   "es": "voz activa.",
+   "refs": [
+    "Rū. 296"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kathitakamma",
+   "homonimo": null,
+   "es": "lit., objeto dicho; objeto directo. Se refiere al objeto primario. Cuando el verbo tiene dos objetos (dvikammaka). Ej., en la oración, \"Bhagavā bhikkhū etad avoca\", el Sublime dijo esto a los bhikkhus, \"etad\", esto, se denomina kathitakamma, objeto directo, y \"bhikkhū\", akathitakamma, objeto indirecto.",
+   "refs": [
+    "Rū. §285"
+   ],
+   "pagina": 9
+  },
+  {
+   "pali": "kamma",
+   "homonimo": null,
+   "es": "objeto; aquello que recibe la acción de un verbo activo (el objeto directo).",
+   "refs": [
+    "Ru. §310"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kamma-kāraka",
+   "homonimo": null,
+   "es": "voz pasiva.",
+   "refs": [
+    "Sad. i 13"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kammadhāraya",
+   "homonimo": null,
+   "es": "compuesto adjetivo donde se combinan un adjetivo y un sustantivo. Hay nueve clases: (1) visesanapubbapada, (2) visesanuttarapada, (3) visesanobhayapada, (4) upamānuttarapada, (5) sambhāvanāpubbapada, (6) avadhāraṇapubbapada, (7) nanipātapubbapada, (8) kupubbapada, (9) pādipubbapada.",
+   "refs": [
+    "Rū. 183"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kammapada",
+   "homonimo": null,
+   "es": "palabra pasiva; voz pasiva.",
+   "refs": [
+    "Sad. i 11"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kammappavacanīya",
+   "homonimo": null,
+   "es": "nombre de ciertos prefijos (pari, pati, anu, abhi). La terminación de estos prefijos es en la segunda inflexión (acusativo) aunque el significado puede ser en la sexta inflexión (genitivo), séptima (locativo), etc. La definición de este término es \"kammaṃ kiriyaṃ pavuttavanto ti kammappavacanīya\", aquellos que han indicado acción se denominan \"kammappavacanīya\". Esto significa que estos prefijos ya no indican la acción e indican otra cosa: (1) marca (lakkhaṇa), (2) conexión (sahattha), (3) inferior (hina). Ej., (1) \"pabbajitam anu pabbajiṃsu\", renunciaron en imitación del renunciante (Buddha); (2) \"nadim anu avasiṭṭhā Bārāṇasī\", Varanasi está situada a lo largo del río; (3) \"anu Sāriputtaṃ paññavā\", el sabio es inferior a Sāriputta.",
+   "refs": [
+    "Kac. §299, Rū. §299"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "karaṇa",
+   "homonimo": 1,
+   "es": "el tercer caso; el caso instrumental. También denominado tatiyā, karaṇa-vacana, sahayoga.",
+   "refs": [
+    "Kac. §310"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "karaṇa",
+   "homonimo": 2,
+   "es": "instrumento de articulación; órgano de articulación. Los instrumentos de articulación son cuatro: (1) el medio de la lengua (jivhāmajjha), para las palatales; (2) el arco de la lengua (jivhopagga), para las cerebrales; (3) la punta de la lengua (jivhāgga), para las dentales; y (4) el lugar propio (sakaṭṭhāna).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "karaṇa-vacana",
+   "homonimo": null,
+   "es": "el caso instrumental. Véase karaṇa.",
+   "refs": [
+    "Rū. §12"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "ka-vagga",
+   "homonimo": null,
+   "es": "el grupo de 5 consonantes: 'k', 'kh', 'g', 'gh', 'ṅ'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kāraka",
+   "homonimo": null,
+   "es": "aquello que realiza la acción. La habilidad de realizar una acción. Caso; sintaxis. En las gramáticas antiguas hay seis: (1) kattu-kāraka, (2) kamma-kāraka, (3) karaṇa-kāraka, (4) sampadāna-kāraka, (5) apādāna-kāraka, (6) okāsa-kāraka. Tanto en pali como en sánscrito el genitivo no se denomina \"kāraka\". Para que un componente de la oración se denomine \"kāraka\" debe tener una conexión directa con el verbo o la acción. En las oraciones, \"puriso gacchati\", el hombre va, y \"gāmaṃ gacchati\", va al poblado, tanto \"puriso\" como \"gāmaṃ\" están en conexión con el verbo y por lo tanto son \"kāraka\". Pero en la oración \"purisassa gāmaṃ gacchati\", va al poblado del hombre, la voz genitiva \"purisassa\", no está en conexión con el verbo y por lo tanto no se considera como \"kāraka\". En las gramáticas antiguas después se asignan inflexiones nominales (nāma-vibhatti) a las seis \"kārakas\". Las inflexiones nominales o casos son ocho: (1) nominativo (paṭhamā, paccatta), (2) acusativo (dutiyā, upayoga) (3a) ablativo de agente, (tatiyā) (3b) ablativo de instrumento (karaṇa), (4) dativo (catutthī, sampadāna), (5) ablativo (pañcamī, nissakka, apādāna), (6) posesivo o genitivo (caṭṭhī, sāmī), (7) locativo (sattamī, bhumma, adhikaraṇa), (8) vocativo (ālapana).",
+   "refs": [
+    "Kac. §271"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kāraṇa",
+   "homonimo": null,
+   "es": "partícula causal. Ej., \"hi\", porque; \"tasmā\", por lo tanto.",
+   "refs": [],
+   "pagina": 10
+  },
+  {
+   "pali": "kāraṇa-vekalla",
+   "homonimo": null,
+   "es": "deficiencia de causas; uno de los usos del tiempo verbal kālātipatti.",
+   "refs": [
+    "Rū. §474"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kārita",
+   "homonimo": null,
+   "es": "causativo. Hay 4 sufijos causales: e, aya, āpe, āpaya.",
+   "refs": [],
+   "pagina": 10
+  },
+  {
+   "pali": "kāriya",
+   "homonimo": null,
+   "es": "la operación gramatical que hay que realizar; substitución; cambio. Ver ejemplos en kāriyī.",
+   "refs": [
+    "Kac. §164",
+    "Rū. §209"
+   ],
+   "pagina": 10
+  },
+  {
+   "pali": "kāriyī",
+   "homonimo": null,
+   "es": "Aquello a lo que se le realiza cierto tipo de operación gramatical. En el aforismo \"s' o\" (Kac. §104), la terminación 'si' se sustituye por 'o'. Aquí 'si' se denomina kāriyī y 'o' kāriya. En el aforismo \"sarā sare lopaṃ\", vocales se eliden debido a una vocal posterior, (Kac. §12), \"sarā\" (vocales) se denomina kāriyī, \"sare\" (debido a una vocal posterior) se denomina nimitta, y 'lopaṃ' (elisión) se denomina kāriya.",
+   "refs": [
+    "Rū. §66"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kāla",
+   "homonimo": null,
+   "es": "tiempo; duración; medida. Hay 3 tiempos verbales: (1) tiempo pasado (atīta-kāla), (2) tiempo futuro (anāgata-kāla) y (3) tiempo presente (paccuppanna-kāla).",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kālātipatti",
+   "homonimo": null,
+   "es": "condicional, tiempo verbal condicional. Expresa futuro con relación a algo que es pasado; y una acción incapaz de ser realizada debido a cierta dificultad durante su ejecución. Se usa para expresar (1) la no ocurrencia de una acción debido a deficiencia de causas (kāraṇavekalla) y (2) la no ocurrencia de una acción debido a la existencia de condiciones que impiden su realización. (viruddhapaccayūpanipāta).",
+   "refs": [
+    "Rū. §474"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kālabyavadhāna",
+   "homonimo": null,
+   "es": "intervención de un periodo de tiempo (métrica). Por ej., en el verso: \"Sabbe saṅkhārā aniccā ti, yadā paññāya passati; atha nibbindati dukkhe, esa maggo visuddhiyā\" (Dh. 277); no hay combinación eufónica (sandhi), entre \"passati\" y \"atha\" debido a la intervención de un periodo de tiempo (\"atha\" pertenece a la línea (pada) siguiente de \"passati\"). V. byavadhāna.",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kiṃ udāharaṇa",
+   "homonimo": null,
+   "es": "ejemplo opuesto; excepción de la regla. Véase sutta.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kita",
+   "homonimo": null,
+   "es": "nombre de los sufijos usados para formar derivativos primarios (kitaka). Los siguiente sufijos pertenecen a esta categoría: nta, māna, ta, tavantu, tāvī, na, (ṇ)a, a, aka, ana, āvī, tu, (ṇ)ī, ra, tuṃ, tave, tvā, tvāna, tūna, ya, tya.",
+   "refs": [
+    "Kac. §546"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kitanta-samāsa",
+   "homonimo": null,
+   "es": "un tipo de compuesto que tiene \"kita\", un derivativo primario, como último miembro. Estos compuestos son fijos (nicca- samāsa), es decir, sus miembros no pueden ser separados. Ej., \"kumbhakāro\", alfarero.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kicca",
+   "homonimo": null,
+   "es": "clase de sufijos que se usa para formar derivativos primarios (kitaka). Son participios pasivos. Los siguientes sufijos pertenecen a esta categoría: tabba, anīya, (ṇ)ya, (ṇ)iya, tayya, icca. Las palabras formadas con estos sufijos se denominan participios futuros o participios potenciales pasivos.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kitaka",
+   "homonimo": null,
+   "es": "derivativo primario. Éstos se forman directamente de las raíces insertando cierta clase de sufijos denominados kita.",
+   "refs": [
+    "Nir. §714"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kitaka-nāma",
+   "homonimo": null,
+   "es": "nombres primarios. Nombres formados usando los sufijos primarios kita.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kiyādigaṇa",
+   "homonimo": null,
+   "es": "quinto grupo conjugación; grupo de raíces que comienzan con \"kī\". El signo de esta conjugación es 'ṇā'. Las raíces en este grupo no son numerosas, totalizando poco más de 30.",
+   "refs": [
+    "Sad. ii 247"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kiriya",
+   "homonimo": null,
+   "es": "acción. También kriyā y kiriyā.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kiriya-visesa",
+   "homonimo": null,
+   "es": "adverbio; calificador de la acción.",
+   "refs": [
+    "VinṬ. ii 262"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kiriya-visesana",
+   "homonimo": null,
+   "es": "v. kiriya-visesa",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kupubbapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el primer miembro es 'ku'. Ej., \"ku\" + \"putto\" = \"kuputto\" (mal hijo).",
+   "refs": [
+    "Rū. 183"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kriyā",
+   "homonimo": 1,
+   "es": "predicado.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kriyā",
+   "homonimo": 2,
+   "es": "v. kiriya",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "kriyā-nāma",
+   "homonimo": null,
+   "es": "nombre-acción. Ej., \"pācako\", cocinando, cocinero.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kriyā-pada",
+   "homonimo": null,
+   "es": "lit., palabra-acción; verbo. Es un sinónimo de ākhyāta, verbo.",
+   "refs": [
+    "Rū. 257"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "kvaci",
+   "homonimo": null,
+   "es": "opcionalmente; a veces. Término usado frecuentemente en los aforismos (sutta) para indicar que la regla tiene excepciones o sólo aplica en algunos casos. También navā y vā.",
+   "refs": [],
+   "pagina": 11
+  },
+  {
+   "pali": "khakāra",
+   "homonimo": null,
+   "es": "la letra 'kh'.",
+   "refs": [
+    "Rū. §632"
+   ],
+   "pagina": 11
+  },
+  {
+   "pali": "gakāra",
+   "homonimo": null,
+   "es": "la letra 'g'.",
+   "refs": [
+    "Rū. §577"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "gajja",
+   "homonimo": null,
+   "es": "prosa. Opuesto de pajja, poesía.",
+   "refs": [
+    "Rū. §556"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "gaṇa",
+   "homonimo": null,
+   "es": "grupo; grupo de raíces. También dhātugaṇa.",
+   "refs": [
+    "Sad. ii 211"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "gamaka",
+   "homonimo": null,
+   "es": "la habilidad de expresar el significado.",
+   "refs": [
+    "Kac. §328"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "garu",
+   "homonimo": null,
+   "es": "(sílaba) fuerte. Las sílabas con una vocal larga, las sílabas con la \"niggahīta\" y las sílabas con una vocal corta seguidas por una consonante doble son fuertes. Ej., \"saṃsāra', ciclo de renacimientos; \"datvā\". En el primer ejemplo, 'saṃ' es una sílaba fuerte (garu) y también 'sā'. En el segundo ejemplo, 'dat' y 'vā' son fuertes. Veáse dīgha, larga.",
+   "refs": [
+    "Kac. §602",
+    "Rū. §6-7"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "garu-saññā",
+   "homonimo": null,
+   "es": "el término \"garu\".",
+   "refs": [
+    "Rū. §6"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "gahādigaṇa",
+   "homonimo": null,
+   "es": "grupo de raíces que comienza con la raíz \"gaha\". Los signos de conjugación (vikaraṇa) son 'ppa' y 'ṇhā'. En algunas gramáticas éste es un grupo individual (el sexto) mientras que en otras se incluye en otros grupos.",
+   "refs": [
+    "Sad. ii 256"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "gāthā",
+   "homonimo": null,
+   "es": "verso; estrofa.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "gāthā-pada",
+   "homonimo": null,
+   "es": "línea de un verso; estrofa.",
+   "refs": [
+    "Sad. i 57"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "guṇa",
+   "homonimo": null,
+   "es": "fortalecimiento de la vocal.",
+   "refs": [],
+   "pagina": 12
+  },
+  {
+   "pali": "guṇa-nāma",
+   "homonimo": null,
+   "es": "adjetivo. Los adjetivos se declinan como los nombres con los que deben concordar en género, número y caso. También appadhānaliṅga, tema subordinado; vāccaliṅga, tema atributivo; y visesana, atributo distintivo.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "guṇīpada",
+   "homonimo": null,
+   "es": "sustantivo.",
+   "refs": [
+    "Sad. i 325"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "ghakāra",
+   "homonimo": null,
+   "es": "la letra 'gh'.",
+   "refs": [],
+   "pagina": 12
+  },
+  {
+   "pali": "ghosa",
+   "homonimo": null,
+   "es": "(consonante) sonora. Hay 21 consonantes sonoras: 'g', 'gh', 'ṅ'; 'j', 'jh', 'ñ'; 'ḍ', 'ḍh', 'ṇ'; 'd', 'dh', 'n'; 'b', 'bh', 'm'; 'y', 'r', 'l', 'v', 'h', 'ḷ'. De acuerdo con Sad. iii §18, los gramáticos de la Lengua Sánscrita consideran a la \"niggahīta\" como sonora, pero los gramáticos de la Lengua Pali consideran que ésta no pertenece ni al grupo de las sonoras ni al grupo de las sordas.",
+   "refs": [
+    "Kac. §9",
+    "Sad. §18"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "ṅakāra",
+   "homonimo": null,
+   "es": "la letra 'ṅ'.",
+   "refs": [
+    "Mog. 58"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "cakāra",
+   "homonimo": null,
+   "es": "la letra 'c'.",
+   "refs": [
+    "Kac. §618"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "catutthī",
+   "homonimo": null,
+   "es": "el cuarto caso; el caso dativo. También sampadāna.",
+   "refs": [
+    "Rū. §85"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "catutthī-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto dependiente determinativo donde el primer miembro tiene la cuarta inflexión. Ej., \"saṃghassa\" + \"bhattaṃ\" = \"saṃghabhattaṃ\", arroz para la Orden.",
+   "refs": [
+    "Rū. 194-5"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "catupadavibhāga",
+   "homonimo": null,
+   "es": "las cuatro partes del lenguaje. V. vācogadhapada.",
+   "refs": [
+    "Sad. iii 358"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "ca-vagga",
+   "homonimo": null,
+   "es": "el grupo de 5 consonantes: 'c', 'ch', 'j', 'jh', 'ñ'.",
+   "refs": [],
+   "pagina": 12
+  },
+  {
+   "pali": "cuṇṇiya",
+   "homonimo": null,
+   "es": "prosa.",
+   "refs": [
+    "Sad. i 252"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "cuṇṇiyapada",
+   "homonimo": null,
+   "es": "prosa.",
+   "refs": [
+    "Sad. i 174"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "curādigaṇa",
+   "homonimo": null,
+   "es": "el octavo grupo de raíces; grupo de raíces que comienza con la raíz \"cura\". Los signos de esta conjugación (vikaraṇa) son 'ṇe' y 'ṇaya'. La consonante inicial 'ṇ' indica fortalecimiento de la vocal de la primera sílaba de la raíz si ésta no es larga o si no está seguida por dos consonantes.",
+   "refs": [
+    "Sad. ii 278"
+   ],
+   "pagina": 12
+  },
+  {
+   "pali": "chakāra",
+   "homonimo": null,
+   "es": "la letra 'ch'.",
+   "refs": [
+    "Rū. §554"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "chaṭṭhī",
+   "homonimo": null,
+   "es": "el sexto caso; el caso genitivo (posesivo). También sāmī.",
+   "refs": [
+    "Rū. §92"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "chaṭṭhī-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto dependiente determinativo donde el primer miembro está en la sexta inflexión. Es el más común entre los compuestos dependientes determinativos. Ej., \"rañño\" + \"putto\" = \"rājaputto\", hijo del rey.",
+   "refs": [
+    "Rū. 196-7"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "chanda",
+   "homonimo": null,
+   "es": "métrica; prosodia.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "chandānurakkhaṇa",
+   "homonimo": null,
+   "es": "lit., protección de la métrica; respetar la métrica.",
+   "refs": [
+    "Rū. §38"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jakāra",
+   "homonimo": null,
+   "es": "la letra 'j'.",
+   "refs": [
+    "Rū. §188"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jāti",
+   "homonimo": null,
+   "es": "especie; categoría; clase.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jivhāgga",
+   "homonimo": null,
+   "es": "la punta de la lengua. Uno de los cuatro instrumentos de articulación. Véase karaṇa 2 .",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jivhāmajjha",
+   "homonimo": null,
+   "es": "el medio de la lengua. Uno de los cuatro instrumentos de articulación. Véase karaṇa 2 .",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jivhopagga",
+   "homonimo": null,
+   "es": "el arco de la lengua. Uno de los cuatro instrumentos de articulación. Véase karaṇa 2 .",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jhakāra",
+   "homonimo": null,
+   "es": "la letra 'jh'.",
+   "refs": [
+    "Rū. §509"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "jha-saññā",
+   "homonimo": null,
+   "es": "el símbolo 'jha'; el nombre 'jha'; se usa en las gramáticas antiguas para designar temas nominales (liṅga) masculinos y neutros terminados en 'i', 'ī', verbos terminados en 'i', 'ī\", y parte media del tema nominal en 'i', 'ī'.",
+   "refs": [
+    "Rū. §29"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ñakāra",
+   "homonimo": null,
+   "es": "la letra 'ñ'.",
+   "refs": [
+    "Rū. §194"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭakāra",
+   "homonimo": null,
+   "es": "la letra 'ṭ'.",
+   "refs": [],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭa-vagga",
+   "homonimo": null,
+   "es": "el grupo de 5 consonantes: 'ṭ', 'ṭh', 'ḍ', 'ḍh', 'ṇ'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭhakāra",
+   "homonimo": null,
+   "es": "la letra 'ṭh'.",
+   "refs": [],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭhāna",
+   "homonimo": 1,
+   "es": "lugar; lugar de articulación. Hay seis lugares de articulación: (1) la garganta (kaṇṭha), (2) el paladar (tālu), (3) la cabeza (muddha), (4) los dientes (danta), (5) los labios (oṭṭha) y (6) la nariz (nāsika).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭhāna",
+   "homonimo": 2,
+   "es": "orden de las palabras en la oración; posición.",
+   "refs": [],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭhānantaragati",
+   "homonimo": null,
+   "es": "desplazamiento; separación.",
+   "refs": [
+    "Sad. iii §168"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ṭhānāsanna",
+   "homonimo": null,
+   "es": "proximidad del lugar de articulación.",
+   "refs": [
+    "Rū. §16"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ḍakāra",
+   "homonimo": null,
+   "es": "la letra 'ḍ'.",
+   "refs": [
+    "Rū. §615"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ḍhakāra",
+   "homonimo": null,
+   "es": "la letra 'ḍha'.",
+   "refs": [
+    "Kac. §612"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "ṇakāra",
+   "homonimo": null,
+   "es": "la letra 'ṇ'.",
+   "refs": [
+    "Rū. §363"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "takāra",
+   "homonimo": null,
+   "es": "la letra 't'.",
+   "refs": [
+    "Kac. §35"
+   ],
+   "pagina": 13
+  },
+  {
+   "pali": "tagguṇasaṃviññāṇa",
+   "homonimo": null,
+   "es": "tipo de compuesto relativo (bahubbīhi) donde lo que califica al significado se trae cuando se trae el significado de la otra palabra (aññapada). Lo que califica al significado está incluido en el significado de la otra palabra. Ej., \"lambakaṇṇaṃ ānaya\", traiga (al hombre que tiene) oreja larga. Aquí, lo que califica, oreja larga, se trae cuando se trae al hombre. Es opuesto de atagguṇasaṃviññāṇa.",
+   "refs": [
+    "Rū. §352"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tatiyā",
+   "homonimo": null,
+   "es": "el tercer caso; el caso instrumental. También karaṇa.",
+   "refs": [
+    "Kac. §286, Rū. §83"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tatiyā-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto dependiente determinativo donde el primer miembro está en la tercera inflexión. Ej., \"Buddhena\" + \"desito\" = \"Buddhadesito\", predicado por el Buddha.",
+   "refs": [
+    "Rū. 194"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "taddhita",
+   "homonimo": null,
+   "es": "derivativo secundario. No se deriva directamente de la raíz sino de un derivativo primario, kitaka.",
+   "refs": [
+    "Kac. 183"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "taddhita-nāma",
+   "homonimo": null,
+   "es": "nombre secundario; un nombre que es un derivativo secundario.",
+   "refs": [
+    "Sad. i 3"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tanādigaṇa",
+   "homonimo": null,
+   "es": "el séptimo grupo de raíces; grupo de raíces que comienza con la raíz \"tanu\". Los signos de esta conjugación (vikaraṇa) son 'o', 'yira'.",
+   "refs": [
+    "Sad. ii 261"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tappurisa",
+   "homonimo": null,
+   "es": "compuesto dependiente determinativo donde el primer miembro es un sustantivo, en cualquier inflexión menos la primera (del nominativo o el vocativo), explicando o determinando el segundo miembro. Hay seis clases: (1) en la segunda inflexión (dutiyā- tappurisa), (2) en la tercera inflexión (tatiyā- tappurisa), (3) en la cuarta inflexión (catutthī- tappurisa), (4) en la quinta inflexión (pañcamī- tappurisa), (5) en la sexta inflexión (chaṭṭhī- tappurisa) y (6) en la séptima inflexión (sattamī- tappurisa).",
+   "refs": [
+    "Rū. 192"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "ta-vagga",
+   "homonimo": null,
+   "es": "El grupo de 5 consonantes: 't', 'th', 'd', 'dh', 'n'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tālu",
+   "homonimo": null,
+   "es": "el paladar.",
+   "refs": [
+    "Rū §2"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tāluja",
+   "homonimo": null,
+   "es": "producida en el paladar; palatal. Las palatales son 'i', 'ī'; 'c', 'ch'; 'j', 'jh'; 'ñ'; 'y'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tipada",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Consiste en 3 miembros. Ej., \"sīhassa pubbaddhaṃ viya kāyo assa iti sīhapubbaddhakāyo\", su cuerpo es como la parte anterior de un león, por lo tanto se llama uno cuyo cuerpo es como la parte anterior de un león. Este compuesto relativo está formado por 3 miembros: (1) \"sīha\", león, (2) \"pubbaddha\", parte anterior, y (3) \"kāya\", cuerpo.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tīṇi-liṅgāni",
+   "homonimo": null,
+   "es": "los tres géneros: (1) masculino (pulliṅga), (2) femenino (itthiliṅga) y (3) neutro (napuṃsakaliṅga).",
+   "refs": [],
+   "pagina": 14
+  },
+  {
+   "pali": "tumanta",
+   "homonimo": null,
+   "es": "lit., que temina en \"tuṃ\"; el infinitivo.",
+   "refs": [
+    "Sad. i 411"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tumanta-pada",
+   "homonimo": null,
+   "es": "voces que terminan en \"tuṃ\"; voces en infinitivo.",
+   "refs": [
+    "Sad. i 411"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tumicchattha",
+   "homonimo": null,
+   "es": "desiderativo. Esta conjugación se usa para expresar el deseo de realizar una acción. La raíz se reduplica y el sufijo 'sa' se agrega para formar el tema el cuál recibe las terminaciones de la primera conjugación.",
+   "refs": [
+    "Rū. §534"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tulyādhikaraṇa",
+   "homonimo": null,
+   "es": "relación de concordancia. Todos los compuestos adjetivos (kammadhāraya) son tulyādhikaraṇa. También samānādhikaraṇa.",
+   "refs": [
+    "Rū. §339"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tulyādhikaraṇa-bahubbīhi",
+   "homonimo": null,
+   "es": "tipo de compuesto relativo donde sus miembros están en la misma inflexión.",
+   "refs": [
+    "Kac., §328, Rū. §339"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "tyādi",
+   "homonimo": null,
+   "es": "lit., aquellos que comienzan en 'ti'. Nombre dado a las inflexiones verbales (ākhyāta- vibhatti). V. vibhatti. Cf. syādi.",
+   "refs": [
+    "Sad. iii §198-9"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "thakāra",
+   "homonimo": null,
+   "es": "la letra 'th'.",
+   "refs": [],
+   "pagina": 14
+  },
+  {
+   "pali": "dakāra",
+   "homonimo": null,
+   "es": "la letra 'd'.",
+   "refs": [
+    "Kac. §379"
+   ],
+   "pagina": 14
+  },
+  {
+   "pali": "danta",
+   "homonimo": null,
+   "es": "diente; uno de los 6 lugares de articulación (ṭhāna 1 ).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dantaja",
+   "homonimo": null,
+   "es": "producida en los dientes; dental. Las dentales son 't', 'th', 'd', 'dh'; 'n'; 'l'; 's'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dantoṭṭhaja",
+   "homonimo": null,
+   "es": "dentolabial; dental-labial; la letra 'v'. (Rū. §2).",
+   "refs": [],
+   "pagina": 15
+  },
+  {
+   "pali": "dabba",
+   "homonimo": null,
+   "es": "sustancia; entidad. Una de las tres propiedades del tema (liṅgattha).",
+   "refs": [],
+   "pagina": 15
+  },
+  {
+   "pali": "dabbābhidhāna",
+   "homonimo": null,
+   "es": "apelación que denota entidad o sustancia. Es sinónimo de nāma.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "digu",
+   "homonimo": null,
+   "es": "compuesto numérico determinativo. Esta clase de compuesto puede ser incluido en el compuesto adjetivo (kammadhāraya). Hay dos clases: (1) colectivo (samāhāra-digu) y (2) no- colectivo (asamāhāra-digu).",
+   "refs": [
+    "Rū. 177"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "diyaḍḍhamatta",
+   "homonimo": null,
+   "es": "una unidad y media de medida; una mora y media.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "divādigaṇa",
+   "homonimo": null,
+   "es": "el tercer grupo de raíces; grupo de raíces que comienza con la raíz \"divu\". El signo de esta conjugación (vikaraṇa) es 'ya'.",
+   "refs": [
+    "Sad. ii 219"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "disantarāḷattha",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Se refiere a los puntos intermedios de la brújula. Ej., \"pubbassā ca dakkhiṇassā ca disāya yad anarāḷaṃ sā 'yaṃ pubbadakkhiṇā vidisā\", aquello que está entre la dirección este y sur, ésta es la dirección intermedia del sureste.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dīgha",
+   "homonimo": null,
+   "es": "(vocal) larga. Hay 5 vocales largas: 'ā', 'ī', 'ū', 'e', 'o'.",
+   "refs": [
+    "Kac. §5"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dutiyā",
+   "homonimo": null,
+   "es": "el segundo caso; el caso acusativo. También upayoga. Véase kāraka.",
+   "refs": [
+    "Kac. §297"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dutiyā-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto determinativo donde el primer miembro está la segunda inflexión. Ej., \"gāmaṃ\" + \"gato\" = \"gāmagato\", que ha ido al poblado.",
+   "refs": [
+    "Rū. 192"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dvanda",
+   "homonimo": null,
+   "es": "compuesto copulativo o agregativo. Dos o más nombres asociados con la conjunción 'ca' (y) pueden unirse eliminando las conjunciones. Hay dos clases: (1) colectivo (samāhāra-dvanda) y (2) individual (asamāhāra-dvanda).",
+   "refs": [],
+   "pagina": 15
+  },
+  {
+   "pali": "dvikammaka",
+   "homonimo": null,
+   "es": "(verbo) bitransitivo; verbo que tiene dos objetos. Son bitransitivos los verbos preguntar (pucchati) y traer o llevar (āharati, harati), etc. Ej., \"Bhagavantaṃ pañhaṃ pucchati\", le hace una pregunta al Sublime; aquí pregunta (pañhaṃ) y Sublime (Bhagavantaṃ) están en la segunda inflexión y son objetos (kamma) del verbo. También sakammaka.",
+   "refs": [
+    "Rū. §491"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dvipada-tulyādhikaraṇa",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Consiste en dos miembros que se refieren a la misma cosa y están en la misma inflexión. Hay 6 clases de este compuesto.",
+   "refs": [
+    "Rū. 199"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dvipada-bhinnādhikaraṇa",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Consiste en dos miembros los cuales antes de formar el compuesto tienen diferentes inflexiones. Ej., \"chattaṃ pāṇimhi assa iti chattapāṇi puriso\", hay una sombrilla en su mano, entonces es un hombre con una sombrilla en su mano. Aquí, \"chatta\", sombrilla y \"pāṇi\", mano, antes de formar el compuesto tienen diferentes inflexiones.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dvimattā",
+   "homonimo": null,
+   "es": "dos unidades de medida; dos moras (las vocales 'ā', 'ī', 'ū', 'e', 'o'). También dīgha, larga. Véase mattā y accharāsaṅghāta.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dvibhāva",
+   "homonimo": null,
+   "es": "v. dvebhāva .",
+   "refs": [],
+   "pagina": 15
+  },
+  {
+   "pali": "dvebhāva",
+   "homonimo": null,
+   "es": "lit., estado de dos; duplicación de una consonante cuando va precedida por una vocal o en otros casos. Ej. \"idha\" + \"pamādo\" = \"idha ppamādo\", aquí negligencia. También dvibhāva.",
+   "refs": [
+    "Kac. §28, Rū. §40"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dhakāra",
+   "homonimo": null,
+   "es": "la letra 'dh'.",
+   "refs": [
+    "Rū. §607"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dhanita",
+   "homonimo": null,
+   "es": "(consonante) aspirada. Las segundas y cuartas letras de cada grupo son aspiradas: 'kh', 'gh'; 'ch', 'jh'; 'ṭh', 'ḍh'; 'th', 'dh'; 'ph', 'bh'. Cf. sithila.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 15
+  },
+  {
+   "pali": "dhātu",
+   "homonimo": null,
+   "es": "significa un elemento esencial y básico de la palabra. Se define como aquello que ‘mantiene’ su propio significado y también el significado de otros. Dado que la raíz es un elemento esencial y básico de la palabra, la mayoría de las voces en pali y también en sánscrito están formadas de una raíz y un sufijo (paccaya). La palabra \"dhātu\" está formada a partir de la raíz ‘dhā’ y el sufijo ‘tu’. Las voces \"pacati\", \"paccati\", \"pacīyate\", \"pacita\", \"pakka\", \"pacituṃ\", \"pacitvā\", \"pacanta\", \"pacamana\", todas estas voces están formadas a partir de la raíz \"paca\", cocinar, con diferentes sufijos y terminaciones. Hay más de 1700 raíces que se dividen en ocho grupos de conjugación: (1) bhūvādigaṇa, grupo que comienza con la raíz \"bhū\", (2) rudhādigaṇa, grupo que comienza con la raíz \"rudhi\", (3) divādigaṇa, grupo que comienza con la raíz \"divu\", (4) svādigaṇa, grupo que comienza con la raíz \"su\", (5) kiyādigaṇa, grupo que comienza con la raíz \"kī\", (6) gahādigaṇa, grupo que comienza con la raíz \"gaha\", (7) tanādigaṇa, grupo que comienza con la raíz \"tanu\" y (8) curādigaṇa, grupo que comienza con la raíz \"cura\".",
+   "refs": [
+    "Sad. i 2"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "dhātugaṇa",
+   "homonimo": null,
+   "es": "grupo de raíces. V. dhātu.",
+   "refs": [],
+   "pagina": 16
+  },
+  {
+   "pali": "dhāturūpakasadda",
+   "homonimo": null,
+   "es": "denominativo; lit., voz usada como raíz. Ej., la voz \"pabbata\", montaña, con el sufijo \"āya\" y la terminación verbal \"ti\", forman el verbo \"pabbatāyati\", se comporta como una montaña.",
+   "refs": [
+    "Sad. ii 371"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "nakāra",
+   "homonimo": null,
+   "es": "la letra 'n'.",
+   "refs": [
+    "Kac. §617"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "nanipāta-pubbapada",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Tiene la partícula \"na\" como primer miembro. Ej., \"natthi etassa puttā ti aputtako\", no tiene hijos, entonces es (un hombre) sin hijos.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "nanipātapubbapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el primer miembro es la partícula 'na', no. Esta partícula de negación se reemplaza por 'a' antes de una consonante y por 'an' antes de una vocal. Ej., \"na\" + \"kusala\" = \"akusala\", no sano, insano; \"na\" + \"ariyo\" = \"anariyo\", no noble, innoble.",
+   "refs": [
+    "Rū. 189"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "napuṃsakaliṅga",
+   "homonimo": null,
+   "es": "neutro; género neutro. Uno de los tres géneros. V. liṅga 1 .",
+   "refs": [
+    "Rū. 92"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "navā",
+   "homonimo": null,
+   "es": "no siempre; opcionalmente; a veces. Término usado frecuentemente en los aforismos (sutta) para indicar que la regla tiene excepciones o aplica sólo en algunos casos. También se usa kvaci y vā.",
+   "refs": [
+    "Kac. §21"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "nānapadasaṃyoga",
+   "homonimo": null,
+   "es": "una consonante conjunta que pertenece a un palabra diferente que la vocal previa. Ej., en \"putto ty āhaṃ mahārāja\", gran rey, yo tengo un hijo, la consonante conjunta 'ty' pertenece a una palabra diferente que la vocal previa. Cf. con ekapadasaṃyoga.",
+   "refs": [],
+   "pagina": 16
+  },
+  {
+   "pali": "nāma",
+   "homonimo": null,
+   "es": "nombre. Este término incluye tanto los sustantivos como los adjetivos. Se denomina \"nāma\" porque (1) se inclina hacia el significado y (2) hace que los significados se inclinen hacia él mismo. Hay cinco clases de nombres: (1) sustantivos y nombres propios (nāma-nāma), (2) pronombres (sabba-nāma), (3) nombres compuestos (samāsa-nāma), (4) nombres secundarios o derivativos secundarios (taddhita- nāma) y (5) nombres primarios o derivativos primarios (kitaka-nāma). Los nombres son aquellos que terminan con la inflexión 'si' y otras (syādi). Se denomina nombre porque: 1) se inclina hacia el significado y 2) hace que el significado se incline hacia él mismo. Es de dos clases: (1) literal, que está de acuerdo o que sigue el significado (anvattha) y (2) de acuerdo al uso (ruḷhī). La mayoría de los nombres propios se incluyen en la segunda clase. Es de tres clases: (1) masculino (pulliṅga), (2) femenino (itthiliṅga) y (3) neutro (napuṃsakaliṅga). (Rū. 41) Cada nombre (nāma) tiene cinco componentes: (1) habilidad (satti, sakattha), (2) substancia (dabba), (3) género (liṅga), (4) número (saṅkhyā) y (5) caso (kāraka).",
+   "refs": [],
+   "pagina": 16
+  },
+  {
+   "pali": "nāma-nāma",
+   "homonimo": null,
+   "es": "sustantivo; nombre propio.",
+   "refs": [
+    "Sad. i 4"
+   ],
+   "pagina": 16
+  },
+  {
+   "pali": "nāmabyapadesa",
+   "homonimo": null,
+   "es": "que se considera como nombre (nāma); algo que se considera como nombre.",
+   "refs": [
+    "Rū. §176"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "nāma-vibhatti",
+   "homonimo": null,
+   "es": "inflexión nominal; terminación que se le coloca a los temas nominales. Son aquellas que comienzan con 'si' (syādayo).",
+   "refs": [
+    "Sad. i 208"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "nāmika",
+   "homonimo": null,
+   "es": "que pertenece al nombre.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "nāsika",
+   "homonimo": null,
+   "es": "la nariz; nasal.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "nāsikaṭṭhānaja",
+   "homonimo": null,
+   "es": "producida en la nariz; nasal. La 'ṃ'. Las letras 'ṅ', 'ñ', 'ṇ', 'n', 'm'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "niggahita",
+   "homonimo": null,
+   "es": "v. niggahīta",
+   "refs": [],
+   "pagina": 17
+  },
+  {
+   "pali": "niggahīta",
+   "homonimo": null,
+   "es": "la consonante nasal 'ṃ'.",
+   "refs": [
+    "Kac. §8, Rū. §10"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "niggahīta-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica de 'ṃ' con una vocal o una consonante. Ej., en \"taṃ ṭhānaṃ\", ese lugar, la 'ṃ' de \"taṃ\" se convierte en \"taṇ\", \"taṇ ṭhānaṃ\" (Rū §49).",
+   "refs": [],
+   "pagina": 17
+  },
+  {
+   "pali": "nicca-samāsa",
+   "homonimo": null,
+   "es": "lit. \"siempre compuesto\"; esto significa que los miembros del compuesto no pueden ser separados y seguir teniendo el mismo significado. Este término se utiliza para designar al compuesto adverbial (abyayībhāva-samāsa). Ej., \"upa-nagaraṃ\", cerca de la ciudad; este significado se obtiene solamente cuando los dos componentes (\"upa\" y \"nagara\") se unen para formar un compuesto; no es posible lograr este significado separando los dos miembros como \"upa nagaraṃ\" o \"nagaraṃ upa\". Para expresar ese significado (cerca de la ciudad) se debe usar otra voz diferente a la usada en el compuesto; \"upanagaraṃ\" se define como \"nagarassa samīpaṃ\". En este caso \"samīpaṃ\", cerca, es la otra voz.",
+   "refs": [],
+   "pagina": 17
+  },
+  {
+   "pali": "niddhāraṇa",
+   "homonimo": null,
+   "es": "selección; la acción de seleccionar. Ej., \"kaṇhā gāvīnaṃ sampannakīratamā\", entre las vacas, la vaca negra es la que tiene más leche.",
+   "refs": [
+    "Kac. §304, Rū. §322"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "niddhāraṇīya",
+   "homonimo": null,
+   "es": "aquello que se selecciona. La vaca negra del ejemplo dado en niddhāraṇa se denomina \"niddhāraṇiya\".",
+   "refs": [
+    "Nir. 228"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "niddhāraṇa-samudaya",
+   "homonimo": null,
+   "es": "el todo de donde algo se selecciona (aquí normalmente se aplica la sexta o séptima inflexión plural). Ver ejemplo en niddhāraṇa.",
+   "refs": [],
+   "pagina": 17
+  },
+  {
+   "pali": "niddhāraṇa-hetu",
+   "homonimo": null,
+   "es": "la razón o causa para seleccionar algo.",
+   "refs": [],
+   "pagina": 17
+  },
+  {
+   "pali": "nipāta",
+   "homonimo": null,
+   "es": "partícula. Las partículas no denotan substancia. Tienen la función de adverbios, conjunciones, interjecciones, partículas afirmativas y negativas. Hay aproximadamente 220 partículas en la Lengua Pali. La partículas se dividen en dos grupos: (1) aquellas que completan o agregan el significado (attha-pūraṇa) y (2) aquellas que son expletivos (pada-pūraṇa); es decir, no agregan signficado. El primer grupo de partículas puede estar asociado con una inflexión determinada (vibhattiyutta) o disociado de inflexión (avibhattiyutta). Hay numerosas partículas. Algunos ejemplos, \"ca\", \"na\", \"kho\", \"evaṃ\".",
+   "refs": [
+    "Rū. 132, Sad. iii 369-391"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "nibbacana",
+   "homonimo": null,
+   "es": "forma derivativa; derivación.",
+   "refs": [
+    "Sad. i 87"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "nimantana",
+   "homonimo": null,
+   "es": "uno de los usos del verbo imperativo (pañcamī) y potencial (sattamī).",
+   "refs": [],
+   "pagina": 17
+  },
+  {
+   "pali": "nimitta",
+   "homonimo": null,
+   "es": "signo; causa. Hay dos clases: (1) causa en la séptima inflexión (sattamī-nimitta) y (2) causa en la quinta inflexión (pañcamī-nimitta). Por ejemplo en el aforismo \"sarā sare lopaṃ\", vocales se eliden debido a una vocal posterior; \"sare\", está en la séptima inflexión y se denomina \"sattamī- nimitta\". En el aforismo, \"vā paro asarūpā\", opcionalmente, la siguiente (se elide) debido a una vocal anterior disímil, \"asarūpā\", está en la quinta inflexión y se denomina \"pañcamī-nimitta\".",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 17
+  },
+  {
+   "pali": "niyamita",
+   "homonimo": null,
+   "es": "pronombre demostrativo. Ej., el pronombre \"ta\" (eso).",
+   "refs": [],
+   "pagina": 18
+  },
+  {
+   "pali": "niyamato paṭiniddesa",
+   "homonimo": null,
+   "es": "voz demostrativa.",
+   "refs": [],
+   "pagina": 18
+  },
+  {
+   "pali": "nivattana",
+   "homonimo": null,
+   "es": "prevención; parar; suspención. Ver ejemplo en nivattanatthaṃ.",
+   "refs": [
+    "Rū. §67"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nivattanatthaṃ",
+   "homonimo": null,
+   "es": "con el propósito de prevenir o evitar. \"Saralopa-nivattanatthaṃ\", con el propósito de evitar la elisión de la vocal.",
+   "refs": [
+    "Rū. §67"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nisedha",
+   "homonimo": null,
+   "es": "prohibición; interdicción.",
+   "refs": [
+    "Rū. 40"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nissaka",
+   "homonimo": null,
+   "es": "el quinto caso; el caso ablativo. El ablativo de separación. También nissaka-vacana. Véase kāraka.",
+   "refs": [
+    "Rū. 176"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nissaka-vacana",
+   "homonimo": null,
+   "es": "v. nissaka",
+   "refs": [],
+   "pagina": 18
+  },
+  {
+   "pali": "nissaññoga",
+   "homonimo": null,
+   "es": "(consonante) no conjunta.",
+   "refs": [
+    "Sad. iii §789"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nissaññoga-pada",
+   "homonimo": null,
+   "es": "palabra sin consonante conjunta",
+   "refs": [
+    "Sad. iii §789"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nissaya",
+   "homonimo": null,
+   "es": "aquello en lo que algo depende o se apoya. Las vocales (sara) son \"nissaya\" porque las consonantes dependen de ellas para su pronunciación.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nissita",
+   "homonimo": null,
+   "es": "dependiente. Las consonantes se denominan \"nissita\" porque dependen de las vocales para su pronunciación.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "nissita-vacana",
+   "homonimo": null,
+   "es": "locución dependiente.",
+   "refs": [
+    "VisṬ. i 47"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pakati",
+   "homonimo": null,
+   "es": "(forma) original o natural; tema; base. Es sinónimo de liṅga 2 . Puede significar la base nominal o la base verbal. También pakatirūpa, forma original. Pakati-sandhi, combinación eufónica natural; significa los casos en que no aplican las reglas de sandhi.",
+   "refs": [
+    "Kac. §23, Rū. §35, 60"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pakati-ṭṭhapana",
+   "homonimo": null,
+   "es": "establecer o formar la base o tema. Éste es el paso anterior a la colocación de las terminaciones o inflexiones (vibhatti).",
+   "refs": [
+    "Rū. §60"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pakati-rūpa",
+   "homonimo": null,
+   "es": "forma original; forma natural.",
+   "refs": [
+    "Kac. §23, Rū. §36"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pakati-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica natural. En este tipo de sandhi no se aplican las reglas de combinación eufónica. Ej., \"bhikkhave evaṃ vadāmi\", bhikkhus, dijo así, la vocal final de \"bhikkhave\" no se elide, no obstante que está seguida por otra vocal.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pakāra",
+   "homonimo": null,
+   "es": "la letra 'p'.",
+   "refs": [
+    "Kac. §35-36"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pakkhipana-vutti",
+   "homonimo": null,
+   "es": "palabra insertada.",
+   "refs": [],
+   "pagina": 18
+  },
+  {
+   "pali": "paccakkha",
+   "homonimo": null,
+   "es": "lit., que es perceptible a través de los sentidos; que ha sido experimentado; uno de los usos del tiempo verbal ajjatanī y hiyyattanī.",
+   "refs": [
+    "Rū. §456"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "paccatta",
+   "homonimo": null,
+   "es": "el primer caso, el caso nominativo. También paṭhamā y paccatta-vacana.",
+   "refs": [
+    "Sad. i 83"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "paccatta-vacana",
+   "homonimo": null,
+   "es": "v. paccatta",
+   "refs": [],
+   "pagina": 18
+  },
+  {
+   "pali": "paccaya",
+   "homonimo": null,
+   "es": "sufijo; afijo.También puede significar las terminaciones nominales (nāma-vibhatti) y terminaciones verbales (ākhyāta-vibhatti).",
+   "refs": [
+    "Rū. §67"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "paccuppana",
+   "homonimo": null,
+   "es": "presente.",
+   "refs": [],
+   "pagina": 18
+  },
+  {
+   "pali": "paccuppanna-kāla",
+   "homonimo": null,
+   "es": "tiempo presente.",
+   "refs": [
+    "Rū. 256"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pajja",
+   "homonimo": null,
+   "es": "verso; poesía. Opuesto de gajja, prosa.",
+   "refs": [
+    "Rū. §556"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pañcamī",
+   "homonimo": 1,
+   "es": "imperativo; grupo de inflexiones verbales. Se usa para expresar (1) orden (āṇatti), (2) bendición, deseo (āsiṭṭha), (3) indicación de lo que se debería hacer 14 (vidhi), (4) invitación (nimantana), (5) solicitud (ajjhesanā), (6) consentimiento, permiso (anumati), (7) aspiración (patthanā), (8) tiempo oportuno o adecuado (pattakāla).",
+   "refs": [
+    "Rū. §451"
+   ],
+   "pagina": 18
+  },
+  {
+   "pali": "pañcamī",
+   "homonimo": 2,
+   "es": "el quinto caso; el caso ablativo. También nissaka y apādāna. Véase kāraka.",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "pañcamī-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto determinativo donde el primer miembro está en la quinta inflexión. Ej., \"rukkhā\" + \"patito\" = \"rukkhapatito\", caído del árbol.",
+   "refs": [
+    "Rū. 195-6"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pañcamī-nimitta",
+   "homonimo": null,
+   "es": "causa de elisión en la quinta inflexión. V. nimitta.",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "paṭisedha",
+   "homonimo": null,
+   "es": "negación; partícula de negación. Se refiere a la partículas \"na\", \"no\", \"mā\".",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "paṭhamā",
+   "homonimo": null,
+   "es": "el primer caso; el caso nominativo. También paccatta.",
+   "refs": [
+    "Kac. §284"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "paṭhama-purisa",
+   "homonimo": null,
+   "es": "lit., primera persona; pero en pali corresponde a la la tercera persona (\"so\", él, \"sā\", ella; \"te\", ellos, \"tā\", \"tāyo\", ellas).",
+   "refs": [
+    "Kac. §410"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pattakāla",
+   "homonimo": null,
+   "es": "tiempo oportuno o adecuado. Uno de los usos del verbo imperativo (pañcamī) y potencial (sattamī).",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "patthanā",
+   "homonimo": null,
+   "es": "aspiración; Uno de los usos del verbo imperativo (pañcamī) y potencial (sattamī).",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "pada",
+   "homonimo": null,
+   "es": "palabra; voz; sílaba; frase; oración; línea de un verso. Aquellos que terminan con inflexión (vibhatti) se denominan \"pada\". De acuerdo con esta definición, \"pada\" significa tanto el nombre (nāma) como el verbo (ākhyāta). Cf. liṅga 2 .",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "padaccheda",
+   "homonimo": null,
+   "es": "contracción; elisión de una palabra.",
+   "refs": [
+    "Sad. i 246"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-jāti",
+   "homonimo": null,
+   "es": "clases de palabras. Hay cuatro: (1) nombre (nāma), (2) verbo (ākhyāta), (3) prefijo (upasagga) y (4) indeclinable (nipāta).",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-pūraṇa",
+   "homonimo": null,
+   "es": "lit., que llena la palabra; expletivo; tipo de partícula (nipāta) que no agrega significado. Ej., la partícula \"vata\" puede ser usado como expletivo aparte de sus otros usos. Cf. attha-pūraṇa.",
+   "refs": [
+    "Rū. 132"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-lopa",
+   "homonimo": null,
+   "es": "Elisión de la palabra.",
+   "refs": [
+    "Nir. 17"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-viggaha",
+   "homonimo": null,
+   "es": "separación y análisis de una palabra; resolución de un compuestos en sus partes.",
+   "refs": [
+    "Rū. 177"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-vibhāga",
+   "homonimo": null,
+   "es": "división de palabras. Catupada- vibhāga, las cuatro partes del lenguaje. V. vācogadhapada.",
+   "refs": [
+    "Sad. iii 358"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-saṅkhepa",
+   "homonimo": null,
+   "es": "abreviación de palabras. Es la definición de \"samāsa\", compuesto.",
+   "refs": [
+    "Rū. §331"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica entre palabras; sandhi externo en oposición al sandhi interno o sandhi dentro de una palabra, vaṇṇa- sandhi.",
+   "refs": [
+    "Sad. ii 78"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-samūha",
+   "homonimo": null,
+   "es": "agrupamiento de palabras.",
+   "refs": [
+    "Pay. 85"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "pada-siddhi",
+   "homonimo": null,
+   "es": "formación de la palabra.",
+   "refs": [
+    "Sad. i 220"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "padesapariyosāna",
+   "homonimo": null,
+   "es": "17 Extensión limitada. Véase vākya, oración.",
+   "refs": [],
+   "pagina": 19
+  },
+  {
+   "pali": "padhānaliṅga",
+   "homonimo": null,
+   "es": "sustantivo; tema principal.",
+   "refs": [
+    "Sad. i 325"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "payatana",
+   "homonimo": null,
+   "es": "esfuerzo; manera de articulación.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "payoga",
+   "homonimo": null,
+   "es": "uso; usanza; ocasión. Ej., \"payoge sati\", cuando hay ocasión. También viniyoga.",
+   "refs": [
+    "Kac. §9"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "payojana",
+   "homonimo": null,
+   "es": "aplicación; uso; necesidad.",
+   "refs": [
+    "Rū. §1"
+   ],
+   "pagina": 19
+  },
+  {
+   "pali": "paranaya",
+   "homonimo": null,
+   "es": "lit., traer hacia la siguiente. Este término se usa para indicar que una consonante desprovista de una vocal se debe desplazar hacia la letra siguiente. Ej., en \"paññā indriyaṃ\", la facultad de la sabiduría, de acuerdo con una de las reglas de combinación eufónica la \"ā\" se elide; el resultado es el siguiente: \"paññ indriyaṃ\". El término \"paranaya\" indica que hay que mover la consonante desprovista de vocal hacia la letra siguiente: \"paññindriyaṃ\".",
+   "refs": [
+    "Rū. §14"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "para-rūpa",
+   "homonimo": null,
+   "es": "la forma siguiente; el elemento siguiente; la letra que sigue. Cf. pubba-rūpa.",
+   "refs": [
+    "Nir. §45"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "parasamaññā",
+   "homonimo": null,
+   "es": "término gramatical dado o expuesto en otras obras (tratados sánscritos).",
+   "refs": [
+    "Rū. 6"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "parassapada",
+   "homonimo": null,
+   "es": "lit., voz para otra; voz activa o transitiva; uno de los grupos de inflexiones verbales (ākhyāta-vibhatti). Es otro se denomina attanopada.",
+   "refs": [
+    "Rū. §430"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "parikappa",
+   "homonimo": null,
+   "es": "suposición; supuesto; Uno de los usos del verbo imperativo (pañcamī) y potencial (sattamī).",
+   "refs": [
+    "Rū. §320"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "paribhāsa",
+   "homonimo": null,
+   "es": "regla; máxima; regla gramatical.",
+   "refs": [
+    "Rū. §10"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "paribhāsa-sutta",
+   "homonimo": null,
+   "es": "aforismo general que explica la correcta interpretación o aplicación de otras regla. V. sutta.",
+   "refs": [],
+   "pagina": 20
+  },
+  {
+   "pali": "pariyāya",
+   "homonimo": null,
+   "es": "metáfora; lenguaje figurado; sinónimo. También saddapariyāya.",
+   "refs": [
+    "Rū. §21"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pariyudāsa",
+   "homonimo": null,
+   "es": "lit., rechazar el significado del último miembro del compuesto después de tomar lo que es similar; una de las funciones de la partícula \"na\" cuando forma un compuesto con otras palabras. Indica similitud. Ej., \"a-brāhmaṇa\", como un brahmán; \"an-assa\", como un caballo (= burro, mula).",
+   "refs": [
+    "Rū. §344"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "parokkhā",
+   "homonimo": null,
+   "es": "tiempo perfecto; pasado indefinido; se utiliza para referirse a una acción que no ha sido experimentada por medio de los sentidos (appaccakkha).",
+   "refs": [
+    "Rū. §459"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pa-vagga",
+   "homonimo": null,
+   "es": "El grupo de 5 consonantes: 'p', 'ph', 'b', 'bh', 'm'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pasajjappaṭisedha",
+   "homonimo": null,
+   "es": "lit., impedir después de alcanzar; una de las funciones de la partícula \"na\" cuando forma un compuesto con otras palabras. Indica la inexistencia del último miembro del compuesto. Ej., \"a-sūriya-passā rājadārā, las esposas del rey no ven el sol.",
+   "refs": [
+    "Rū. §344"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pa-saññā",
+   "homonimo": null,
+   "es": "el símbolo 'pa'; el nombre 'pa'; se usa en las gramáticas antiguas para designar temas nominales (liṅga) femeninos terminados terminados en 'i', 'ī' y 'u', 'ū'.",
+   "refs": [
+    "Kac. §59"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pāṭipadika",
+   "homonimo": null,
+   "es": "tema; base; es sinónimo de liṅga 2 .",
+   "refs": [
+    "Rū. §61"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pāda",
+   "homonimo": null,
+   "es": "línea de un verso. V. pada",
+   "refs": [],
+   "pagina": 20
+  },
+  {
+   "pali": "pādipubbapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto adjetivo donde el primer miembro es el prefijo 'pa' y otros. Ej., \"abhi\" + \"dhamma\" = \"abhidhamma\".",
+   "refs": [
+    "Rū. §183"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pāḷi",
+   "homonimo": null,
+   "es": "línea; nombre de la lengua sagrada del Buddhismo Therāvada; Texto (en contraposición con Comentario, Aṭṭhakathā). No obstante que la lengua que ahora encontramos en la literatura del Buddhismo Theravāda se denomina \"pāḷi\", este nombre nunca fue usado ni en los Textos ni en los Comentarios ni en los Subcomentarios para referirse a esta lengua. Los nombres usados los siguientes: (1) Ariyaka (Vin. i 33, Vin.A. i 220), Lengua de los Nobles; (2) Dhammanirutti y Sabhāvanirutti (Vbh. 307, VbhA. 370-1), Lengua del Dhamma y Lengua de la realidad última; (3) Māgadhabhāsa (VinA. i 220), Lengua de Māgadha; (4) Māgadhikā bhāsā (PsA. i 5), Lengua de Māgadha; (5) Tantibhāsā (DhA. i 2), Lengua de los Textos; (6) Mūlabhāsā (PsA. i 5), Lengua raíz; (7) Pakatibhāsā (Vajirabuddhi Ṭikā 291), Lengua natural.",
+   "refs": [],
+   "pagina": 20
+  },
+  {
+   "pali": "pucchana",
+   "homonimo": null,
+   "es": "preguntando; inquiriendo; uno de los usos de las partículas (nipāta).",
+   "refs": [],
+   "pagina": 20
+  },
+  {
+   "pali": "puthuvacana",
+   "homonimo": null,
+   "es": "plural. Es sinónimo de bahuvacana.",
+   "refs": [
+    "Sad. i 23"
+   ],
+   "pagina": 20
+  },
+  {
+   "pali": "pubbakāla",
+   "homonimo": null,
+   "es": "lit. tiempo pasado; pero es usado para indicar una acción pasada en relación al acción principal de la oración. Gerundio. Los tres sufijos: \"tuna\", \"tvāna\" y \"tvā\", generalmente se usan para indicar una acción previa a la acción principal de la oración donde el sujeto de la acción principal y de la acción previa es el mismo. Pero de acuerdo con Sad. §1150-6 hay varios usos del gerundio. (1) Indica una acción previa a la acción principal de la oración (pubba-kāla). Ej., habiendo realizado (kātuna) el trabajo (kammaṃ), (él) se va (gacchati). (2) Para indicar una acción posterior (apara-kāla). Ej., (él) entra (pavisati) y cierra (āvaritvā) la puerta (dvāraṃ). (3) Para indicar un mismo tiempo (samāna-kala). Ej., este sol (ayaṃ divākaro) ha salido (udito) destruyendo (nihantvāna) la obscuridad (andhakāraṃ). Es decir, a medida que el sol sale, éste va destruyendo la obscuridad. (4) Para indicar una marca o punto de referencia (lakkhaṇa). Ej., habiendo escuchado (sutvā), (nosotros) conoceremos (jānissāma). Es decir, cuando escuchemos, (nosotros) conoceremos. (5) Para indicar causa (hetu). Ej., \"sutvāna assa etad ahosi\", porque escuchó, se le ocurrió éste (pensamiento). Es sinónimo de pubbakiriya y pubbakriyā.",
+   "refs": [
+    "Kac. §564, Rū. §640, Sad. §1150-6"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "pubbakiriya",
+   "homonimo": null,
+   "es": "gerundio; indeclinable usado para expresar una acción que precede (pubba) la acción (kiriya) del verbo principal de la oración.",
+   "refs": [
+    "Mogp. 63"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "pubbakriyā",
+   "homonimo": null,
+   "es": "mismo significado que pubbakiriya .",
+   "refs": [
+    "Rū. §640"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "pubbapadattha-padhāna",
+   "homonimo": null,
+   "es": "tipo de compuesto adverbial (abyayībhāva) donde el primer miembro es predominante.",
+   "refs": [
+    "Nir. §336"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "pubba-rūpa",
+   "homonimo": null,
+   "es": "la forma anterior; el elemento anterior; la letra anterior.",
+   "refs": [
+    "Kac. §443, Rū. §449, Nir. §44"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "purisa",
+   "homonimo": null,
+   "es": "persona. Hay tres personas: (1) tercera persona (paṭhama-purisa), (\"so\", él, \"sā\", ella; \"te\", ellos, \"tā\", \"tāyo\", ellas), (2) persona media (majjhima-purisa) (\"tvaṃ\", tú, \"tumhe\", vosotros) y (3) primera persona (uttama-purisa) (\"ahaṃ\", yo,\"mayaṃ\", nosotros).",
+   "refs": [
+    "Kac. §410-412"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "pulliṅga",
+   "homonimo": null,
+   "es": "género masculino. V. liṅga 1 .",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "pūraṇattha",
+   "homonimo": null,
+   "es": "clase de partícula (nipāta) utilizada para llenar (pūraṇa). Es de dos tipos: (1) que llena el significado (attha-pūraṇa) y (2) que llena la palabra, es decir, un expletivo, (pada-pūraṇa). (Rū. 132, Sad. iii 375) peyyāla (pa) , término usado para indicar que un pasaje ha sido omitido. En la edición del Sexto Concilio, la abreviatura usada para indicar que un pasaje ha sido omitido es \"pa\", en otras ediciones es \"pe\".",
+   "refs": [
+    "Sad. i 86"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "phakāra",
+   "homonimo": null,
+   "es": "la letra 'ph'.",
+   "refs": [
+    "Kac. §352"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "phuṭṭha",
+   "homonimo": null,
+   "es": "oclusivo. Término usado para referirse a las consonantes agrupadas (vagga); las 25 consonantes desde 'k' hasta 'm'. De acuerdo con Sad. iii §16, el término \"phuṭṭha\" para referirse a las consonantes agrupadas (vagga) corresponde al uso de los gramáticos de la Lengua Sánscrita mientras que entre los gramáticos de la Lengua Pali, \"phuṭṭha\" se refiere a las consonantes aspiradas (dhanita) y \"aphuṭṭha\" a las consonantes sin aspiración (sithila). No obstante esto Rū. §2 usa \"phuṭṭha\" para referirse a las consonantes agrupadas.",
+   "refs": [],
+   "pagina": 21
+  },
+  {
+   "pali": "bakāra",
+   "homonimo": null,
+   "es": "la letra 'b'.",
+   "refs": [
+    "Rū. §464"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "bahubbīhi-samāsa",
+   "homonimo": null,
+   "es": "compuesto relativo que denota algo diferente de lo que cada unos de sus miembros representan. Ej., \"bahu\" + \"vīhi\" = \"bahubbīhi\", (lugar donde hay) mucho grano = país o región. Hay 9 clases: (1) dvipada- tulyādhikaraṇa, (2) dvipada-bhinnādhikaraṇa, (3) tipada, (4) nanipāta-pubbapada, (5) saha- pubbapada, (6) upamāna-pubbapada, (7) saṅkhyobhayapada, (8) disantarāḷattha, (9) byatihāralakkhaṇa.",
+   "refs": [
+    "Rū. 199, §352"
+   ],
+   "pagina": 21
+  },
+  {
+   "pali": "bahu-vacana",
+   "homonimo": null,
+   "es": "lit., voz de muchos; plural.",
+   "refs": [
+    "Rū. §63"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bindu",
+   "homonimo": null,
+   "es": "el punto arriba; la representación de la niggahīta; número 1 seguido de 49 cifras",
+   "refs": [
+    "Rū. §10"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "byañjana",
+   "homonimo": null,
+   "es": "consonante. También vyañjana. (Kac. §6).",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "byañjana-nimitta",
+   "homonimo": null,
+   "es": "lit., causa consonante; una consonante es la causa para la aplicación de una regla de combinación eufónica (sandhi). Cf. sara- nimitta.",
+   "refs": [
+    "Sad. iii §183"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "byañjana-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica de una vocal con una consonante. Ej., en \"khantī paramaṃ tapo titikkhā\" (Dh. 41), la paciencia es la práctica ascética superior, la ultima vocal de \"khanti\", paciencia, está seguida por una consonante y alarga por razones métricas. V. sandhi .",
+   "refs": [
+    "Rū. 24"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "byatireka",
+   "homonimo": null,
+   "es": "distinción; contraste; negación.",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "byatihāralakkhaṇa",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Indica una acción recíproca. Ej., \"daṇḍehi ca daṇḍehi ca paharitvā idaṃ yuddhaṃ pavattati ti daṇḍādaṇḍi\", una pelea donde se golpean mutuamente con palos, se denomina \"daṇḍādaṇḍi\", palos con palos.",
+   "refs": [
+    "Rū.§356"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "byavadhāna",
+   "homonimo": null,
+   "es": "intervención; interposición. Ver vaṇṇabyavadhāna y kālabyavadhāna.",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "byāpikādhāra",
+   "homonimo": null,
+   "es": "locativo de contacto absoluto. Ej., \"tilesu telaṃ\", aceite en las semillas de ajonjolí.",
+   "refs": [
+    "Nir. §323"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhakāra",
+   "homonimo": null,
+   "es": "la letra 'bh'.",
+   "refs": [
+    "Rū. §553"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhavissantī",
+   "homonimo": null,
+   "es": "tiempo verbal futuro.",
+   "refs": [
+    "Rū. §472"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhāṇavāra",
+   "homonimo": null,
+   "es": "sección de los Textos que contiene 8,000 sílabas; capítulo.",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "bhāva",
+   "homonimo": null,
+   "es": "estado; condición; cierta clase de nombre verbal; nombre abstracto; impersonal.",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "bhāva-taddhita",
+   "homonimo": null,
+   "es": "derivativo secundario de estado. Estos sufijos denotan estado, naturaleza, cualidad del ser. Los siguientes sufijos pertenecen a esta categoría: 'tā', 'tta', 'ttana', '(ṇ)ya' y '(ṇ)a'.",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "bhāva-napuṃsaka",
+   "homonimo": null,
+   "es": "adverbio; neutro de estado; impersonal neutro.",
+   "refs": [
+    "Sad. i 408"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhāvena bhāvalakkhaṇa-bhummaṃ",
+   "homonimo": null,
+   "es": "locativo absoluto.",
+   "refs": [
+    "Sad. i 50"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhāsitapumitthī",
+   "homonimo": null,
+   "es": "una voz femenina que ha indicado género masculino en el pasado.",
+   "refs": [
+    "Kac. §331, Rū. §353"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhinnakiriyāvisaya",
+   "homonimo": null,
+   "es": "la esfera de acciones separadas. V. anvācaya.",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "bhinnādhikaraṇanimitta",
+   "homonimo": null,
+   "es": "que tiene diferente causa de ser o existir.",
+   "refs": [
+    "Rū. §339"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhinnādhikaraṇa-bahubbīhi",
+   "homonimo": null,
+   "es": "clase de compuesto relativo donde sus miembros no refieren a la misma cosa y no están en la misma inflexión.",
+   "refs": [
+    "Kac. §328"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhumma",
+   "homonimo": null,
+   "es": "el séptimo caso; el caso locativo. También bhumma-vacana. Véase kāraka.",
+   "refs": [
+    "Sad. i 84"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "bhumma-vacana",
+   "homonimo": null,
+   "es": "v. bhumma",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "bhūvādigaṇa",
+   "homonimo": null,
+   "es": "el primer grupo de raíces; grupo de raíces que comienza con la raíz \"bhū\". El signo de conjugación es 'a'.",
+   "refs": [
+    "Sad. ii 137"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "makāra",
+   "homonimo": null,
+   "es": "la letra 'm'.",
+   "refs": [
+    "Kac. §35"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "majjhima-purisa",
+   "homonimo": null,
+   "es": "persona media (\"tvaṃ\", tú, \"tumhe\", vosotros).",
+   "refs": [
+    "Kac. §411"
+   ],
+   "pagina": 22
+  },
+  {
+   "pali": "matantara",
+   "homonimo": null,
+   "es": "otra opinión; otro punto de vista. \"Garūnaṃ matantare\", en otra opinión de los maestros. (Sad. iii 100).",
+   "refs": [],
+   "pagina": 22
+  },
+  {
+   "pali": "mattā",
+   "homonimo": null,
+   "es": "duración; unidad de medida; una mora o instante prosódico. Hay 3 clases: (1), una mora (ekamattā; rassa), las vocales cortas 'a', 'i', 'u'; (2) dos moras (dvimattā; dīgha), las vocales largas 'ā', 'ī', 'ū', 'e', 'o'; y (3) media mora (aḍḍhamattā), las consonantes.",
+   "refs": [
+    "Rū. §4"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "mattā-bheda",
+   "homonimo": null,
+   "es": "variación en la medida. Ej., \"khanti\", paciencia, y \"khantī\". Ambas voces tienen el mismo significado pero hay variación en la medida. V. sadda-bheda.",
+   "refs": [
+    "Sad. iii 418-422"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "maṇḍūkagatika",
+   "homonimo": null,
+   "es": "yendo o moviéndose como una rana. Un tipo de regla general (adhikāra) cuyo dominio es hacia adelante.",
+   "refs": [
+    "Rū. §60"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "missa-kiriya",
+   "homonimo": null,
+   "es": "participio presente. Es activo y se forma agregando los sufijos 'nta' y 'māna'. Indica una acción que ocurre simultáneamente (missa) con la acción (kiriya) principal de la oración.",
+   "refs": [],
+   "pagina": 23
+  },
+  {
+   "pali": "missaka-samāsa",
+   "homonimo": null,
+   "es": "compuesto mixto. Ej., (a) \"surā ca narā ca\" (dvanda), (b) \"suranarehi mahito\" (tatiyā-tappurisa) = \"sura-nara-mahito\", honrado por divinidades y hombres.",
+   "refs": [],
+   "pagina": 23
+  },
+  {
+   "pali": "muddha",
+   "homonimo": null,
+   "es": "la cabeza; tope.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "muddhaja",
+   "homonimo": null,
+   "es": "producida en el tope; cerebral. Las cerebrales son 'ṭ', 'ṭh', 'ḍ', 'ḍh', 'ṇ'; 'r'; 'ḷ'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "mūla-sañña",
+   "homonimo": null,
+   "es": "términos básicos; términos fundamentales de gramática. Ej., términos como akkhara, letra; sara, vocal, vagga, agrupada, etc. Cf. con upakaraṇa-saññā.",
+   "refs": [
+    "Sad. iii 7"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "mūla-saññā-vidhāna",
+   "homonimo": null,
+   "es": "asignación o exposición de términos básicos.",
+   "refs": [
+    "Sad. iii 2-7"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "yakāra",
+   "homonimo": null,
+   "es": "la letra 'y'.",
+   "refs": [
+    "Kac. §35"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "yathānupubbika",
+   "homonimo": null,
+   "es": "siguiendo el orden. Tipo de regla general. Los otros dos son yendo como león (sīhagatika), hacia adelante y hacia atrás; y yendo como rana (maṇḍūkagatika), solamente hacia adelante.",
+   "refs": [
+    "Rū. §60"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "yuttattha",
+   "homonimo": null,
+   "es": "grupo de palabras que tienen significado conexo. Es un término técnico que se usa para designar (1) compuestos, (2) derivativos secundarios y (3) los sufijos \"āya\", etc.",
+   "refs": [
+    "Rū. §331"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "yoga",
+   "homonimo": null,
+   "es": "regla gramatical; aforismo; conexión; conexión de voces. También sutta.",
+   "refs": [
+    "Rū. §52"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "yogavibhāga",
+   "homonimo": null,
+   "es": "la separación de una regla gramatical en dos (haciendo dos reglas de una).",
+   "refs": [
+    "Rū. §52"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "rakāra",
+   "homonimo": null,
+   "es": "la letra 'r'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "rassa",
+   "homonimo": null,
+   "es": "(vocal) corta; acortamiento. Las vocales cortas son 'a', 'i', 'u'. A veces, las vocales 'e' y 'o' antes de una consonante doble o conjunta se pronuncian como cortas. En prosodia (chanda) una sílaba con una vocal corta que no va seguida por una consonante doble es corta (rasa) y también se denomina leve (lahu).",
+   "refs": [
+    "Kac. §4, Rū. §4-5"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "rudhādigaṇa",
+   "homonimo": null,
+   "es": "segundo grupo de raíces; grupo de raíces que comienza con la raíz \"rudhi\". El signo de conjugación es 'ṃ-a'; la 'ṃ' se inserta después de la primera sílaba. V. dhātu.",
+   "refs": [
+    "Sad. ii 232"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "rūpa",
+   "homonimo": null,
+   "es": "forma; el tema nominal o el tema verbal. (Rū. §15).",
+   "refs": [],
+   "pagina": 23
+  },
+  {
+   "pali": "ruḷhī",
+   "homonimo": null,
+   "es": "usanza; uso corriente; significado convencional, popular (opuesto de yoga y anvattha). También rūḷhi.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "rūḷhi",
+   "homonimo": null,
+   "es": "v. ruḷhī",
+   "refs": [],
+   "pagina": 23
+  },
+  {
+   "pali": "rūḷhī",
+   "homonimo": null,
+   "es": "v. ruḷhī",
+   "refs": [],
+   "pagina": 23
+  },
+  {
+   "pali": "rūḷhī-bheda",
+   "homonimo": null,
+   "es": "variación en el uso; diferencia en el significado corrientebb. V. sadda-bheda.",
+   "refs": [
+    "Sad. iii 425"
+   ],
+   "pagina": 23
+  },
+  {
+   "pali": "lakāra",
+   "homonimo": 1,
+   "es": "la letra 'l'.",
+   "refs": [
+    "Kac. §35"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "lakāra",
+   "homonimo": 2,
+   "es": "tiempos verbales.",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "la-saññā",
+   "homonimo": null,
+   "es": "el símbolo 'la'; el nombre 'la'; se usa en las gramáticas antiguas para designar temas nominales (liṅga) masculinos y neutros terminados en 'u', 'ū', verbos terminados en 'u', 'ū\", y parte media del tema nominal en 'u', 'ū'.",
+   "refs": [
+    "Rū. §29"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "lahu",
+   "homonimo": null,
+   "es": "leve. Igual que rassa, corta. Las vocales leves son 'a', 'i', 'u'. Una sílaba con una vocal corta y seguida por no más de una consonante es considerada corta (lahu). Ej., \"vana\", bosque. Lahumattā, vocal de medida leve.",
+   "refs": [
+    "Kac. §4"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "lahumattā",
+   "homonimo": null,
+   "es": "vocal de medida leve. Se refiere a la vocales 'a', 'i', 'u'. Véase lahu and rassa.",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "liṅga",
+   "homonimo": 1,
+   "es": "género. Hay 3 géneros: (1) masculino (pulliṅga), (2) femenino (itthiliṅga) y (3) neutro (napuṃsakaliṅga).",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "liṅga",
+   "homonimo": 2,
+   "es": "base; tema; tema nominal. Se define como aquello que posee significado excluyendo la raíz (dhātu), el sufijo (paccaya) y la inflexión (vibhatti). También pāṭipadika.",
+   "refs": [
+    "Rū §11"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "liṅgattha",
+   "homonimo": null,
+   "es": "propiedades del tema. Hay 3 propiedades del tema: (1) habilidad (satti; sakattha), (2) sustancia (dabba) y (3) tema (liṅga).",
+   "refs": [
+    "Rū. 137"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "liṅga-vipallāsa",
+   "homonimo": null,
+   "es": "cambio de género; (Sad. i 114).",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "lopa",
+   "homonimo": null,
+   "es": "elisión; no pronunciación. También anuccārana y adassana.",
+   "refs": [
+    "Kac. §12"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vakāra",
+   "homonimo": null,
+   "es": "la letra 'v'.",
+   "refs": [
+    "Kac. §35"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vagga",
+   "homonimo": null,
+   "es": "grupo; las consonantes agrupadas. Las consonantes agrupadas son 25. Hay cinco grupos: el grupo de la 'k' (ka-vagga), el grupo de la 'c' (ca-vagga), el grupo de la 'ṭ' (ṭa-vagga), el grupo de la 't' (ta-vagga) y el grupo de la 'p' (pa- vagga).",
+   "refs": [
+    "Kac. §7, Rū. §9"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vagganta",
+   "homonimo": null,
+   "es": "la letra final de cada vagga o grupo de consonantes. Hay 5, una para cada grupo: 'ṅ', 'ñ', 'ṇ', 'n', 'm'.",
+   "refs": [
+    "Kac. §31, Rū. §49"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vacana",
+   "homonimo": 1,
+   "es": "voz; palabra; expresión; término.",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "vacana",
+   "homonimo": 2,
+   "es": "número. En eka-vacana, singular; bahu- vacana, plural.",
+   "refs": [
+    "Kac. §1"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vaṇṇa",
+   "homonimo": null,
+   "es": "letra; sonido; fonema; vocal. Avaṇṇa, las vocales 'a', 'ā'; ivaṇṇa, las vocales 'i', 'ī'; uvaṇṇa, las vocales 'u', 'ū'. Véase savaṇṇa, asavaṇṇa, akkhara.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vaṇṇa-bheda",
+   "homonimo": null,
+   "es": "variación en las letras. V. sadda- bheda.",
+   "refs": [
+    "Sad. iii 422-424"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vaṇṇabyavadhāna",
+   "homonimo": null,
+   "es": "interposición de una letra. Ej., en \"sakiṃ eva\", solamente una vez, debido a que la letra 'ṃ' se interpone entre 'i' y 'e' no hay sandhi.",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vaṇṇavyavadhāna",
+   "homonimo": null,
+   "es": "v. vaṇṇabyavadhāna",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "vaṇṇa-sandhi",
+   "homonimo": null,
+   "es": "lit., combinación eufónica de letras; sandhi interno; sandhi dentro de la palabra en oposición con el sandhi entre palabras, pada- sandhi.",
+   "refs": [
+    "Sad. ii 78"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vaṇṇa-samudāya",
+   "homonimo": null,
+   "es": "agrupación de letras.",
+   "refs": [
+    "Sad. i 61"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vattamānakāla",
+   "homonimo": null,
+   "es": "tiempo presente.",
+   "refs": [],
+   "pagina": 24
+  },
+  {
+   "pali": "vattamānā",
+   "homonimo": null,
+   "es": "(tiempo) presente; uno de los tiempos verbales. Se una para expresar (1) la acción el presente y (2) la acción pasada cercana al presente.",
+   "refs": [
+    "Rū. §426"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vavatthita",
+   "homonimo": null,
+   "es": "separación. Ej., \"Anāthapiṇḍikassa ārāme\", en el monasterio de Anāthapiṇḍika; aquí ambas voces se pronuncian separadas. Cf. sambandha.",
+   "refs": [
+    "Sad. iii §20"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vavatthita-vibhāsa",
+   "homonimo": null,
+   "es": "una alternativa determinada. Generalmente la partícula \"vā\" se usa para significar que una regla es optional. Cuando \"vā\" es \"vavatthita-vibhāsa\", las excepciones a la regla están predeterminadas. Por ejemplo, la letra 'ṃ' cuando va seguida por 'e' o 'h' se cambia a 'ñ' (Kac §32). Sin embargo este cambio aplica solamente para la letra 'e' de 'eva' y la letra 'h' de 'hi'.",
+   "refs": [
+    "Rū. §15"
+   ],
+   "pagina": 24
+  },
+  {
+   "pali": "vā",
+   "homonimo": null,
+   "es": "opcionalmente; a veces. Término usado frecuentemente en los aforismos (sutta) para indicar que la regla tiene excepciones o aplica sólo en algunos casos. Véase kvaci y navā.",
+   "refs": [
+    "Kac. §13"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vākya",
+   "homonimo": null,
+   "es": "oración; frase. Es el opuesto de samāsa, compuesto. Ej., el compuesto \"upanagaraṃ\", cerca de la ciudad, se resuelve por medio de la oración \"nagarassa samīpaṃ\"; la cual se denomina \"vākya\".",
+   "refs": [
+    "Rū. §331"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vākyārambha",
+   "homonimo": null,
+   "es": "comienzo de la oración. V. upaññāsa",
+   "refs": [],
+   "pagina": 25
+  },
+  {
+   "pali": "vācogadhapada",
+   "homonimo": null,
+   "es": "parte del lenguaje. Hay 4 partes del lenguaje: (1) nombre (nāma), (2) verbo (ākhyāta), (3) prefijo (upasagga) y (4) partícula (nipāta).",
+   "refs": [
+    "Sad. iii 358"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vāccaliṅga",
+   "homonimo": null,
+   "es": "adjetivo.",
+   "refs": [
+    "Sad. i 341"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vikappa",
+   "homonimo": null,
+   "es": "opción o alternativa. Permitir que una regla sea observada o no a voluntad. (Rū. §9, 49).",
+   "refs": [],
+   "pagina": 25
+  },
+  {
+   "pali": "vikappana",
+   "homonimo": null,
+   "es": "disyuntivo; 24 opción, alternativa.",
+   "refs": [
+    "Kac. §70"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vikappena",
+   "homonimo": null,
+   "es": "opcionalmente.",
+   "refs": [
+    "Rū. 73"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vikappa-samāhāra",
+   "homonimo": null,
+   "es": "clase de compuesto copulativo (dvanda) ya sea con terminación singular o plural.",
+   "refs": [
+    "Nir. 254-5"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vikaraṇa",
+   "homonimo": null,
+   "es": "signo de conjugación; término para el sufijo que se inserta entre la raíz y la terminación.",
+   "refs": [
+    "Sad. i 2-4"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vikāra",
+   "homonimo": null,
+   "es": "cambio; alteración; modificación reversión.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "viggaha",
+   "homonimo": null,
+   "es": "resolución de una palabra en sus elementos constituyentes; análisis. Resolución de un compuesto en sus partes constituyentes.",
+   "refs": [
+    "Kac. §533"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "viggaha-vākyā",
+   "homonimo": null,
+   "es": "análisis de la oración.",
+   "refs": [
+    "VinṬ. ii 324"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vicchā",
+   "homonimo": null,
+   "es": "repetición; sucesión. La repetición de palabras con el propósito de expresar una acción continua o sucesiva. Lit., cubrir, esparcirse. Ej., \"game game\", en cada poblado.",
+   "refs": [
+    "Rū. 135, Nir. §55"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vijjhantara",
+   "homonimo": null,
+   "es": "(vidhi + antara); otra regla.",
+   "refs": [
+    "Rū. §49"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vidhāna",
+   "homonimo": null,
+   "es": "enumeración; asignación; arreglo; proceso; precepto; regla.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vidhi",
+   "homonimo": null,
+   "es": "una regla o instrucción gramatical; indicación de lo que se debería hacer (en los tiempos verbales imperativo, pañcamī, y potencial, sattamī); operación gramatical. Hay 8 clases: (1) e lisión (lopa), una vocal, una consonante o una sílaba se elide; (2) alargamiento (dīgha), una vocal se alarga; (3) acortamiento (rasa), una vocal se acorta; (4) substitución (ādesa), una vocal o una consonante se substituye por otra; (5) insersión (āgama), una vocal o una consonante se inserta; (6) interdicción (paṭisedha), la prohibición de la aplicación de una regla; (7) sufijo (paccaya), la aplicación de un sufijo; (8) inflexión (vibhatti): la aplicación de una inflexión nominal (nāma-vibhatti) o verbal (ākhyāta- vibhatti).",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vidhi-sutta",
+   "homonimo": null,
+   "es": "aforismo con instrucciones gramaticales. Hay 8 tipos de vidhi. V. sutta.",
+   "refs": [],
+   "pagina": 25
+  },
+  {
+   "pali": "vināsa",
+   "homonimo": null,
+   "es": "lit., destrucción; pérdida; es sinónimo de lopa, elisión.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "viniyoga",
+   "homonimo": null,
+   "es": "uso, usanza, aplicación. Sinónimo de payoga.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "viparīta",
+   "homonimo": null,
+   "es": "cambio; reversión; transformación. Nombre dado a la letra \"o\" que es la transformación del prefijo \"ava\" y a la letra \"u\" que es la transformación de la letra \"o\". Ej., en \"ava-gacchati, va abajo, el prefijo \"ava\" se convierte en \"o\" (o-gacchati) y después ésta se convierte en \"u\" (u-gacchati);",
+   "refs": [
+    "Kac. §79, Rū. §45-46, Sad. iii §25-26"
+   ],
+   "pagina": 25
+  },
+  {
+   "pali": "vipariṇāma",
+   "homonimo": null,
+   "es": "cambio, reversión.",
+   "refs": [
+    "Rū. §39"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vipariyaya",
+   "homonimo": null,
+   "es": "cambio, reversión; transposición.",
+   "refs": [
+    "Rū. 40"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vipariyāya",
+   "homonimo": null,
+   "es": "igual que vipariyaya.",
+   "refs": [
+    "Nir. §650"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vibhatti",
+   "homonimo": null,
+   "es": "inflexión; terminación. Se denominan \"vibhatti\" porque diferencian el significado del tema nominal o la base (liṅga 2 ) de acuerdo al caso y número (singular o plural). Hay dos clases: (1) inflexión nominal (nāma-vibhatti) e (2) inflexión verbal (ākhyāta-vibhatti). El grupo de inflexiones nominales recibe el nombre de syādi, aquellas que comienzan en 'si', mientras que el grupo de las inflexiones verbales recibe el nombre tyādi, aquellas que comienzan en 'ti'.",
+   "refs": [
+    "Kac. §54, Rū. 137"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vibhattiyutta",
+   "homonimo": null,
+   "es": "asociado con inflexión. Se refiere a una clase de partícula (nipāta) que está asociada con una inflexión nominal determinada. V. attha- pūraṇa.",
+   "refs": [
+    "Rū. 132"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vibhatti-lopa",
+   "homonimo": null,
+   "es": "elisión de la inflexión.",
+   "refs": [
+    "Rū. §23"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vibhatti-lopābhāva",
+   "homonimo": null,
+   "es": "inexistencia de elisión de la inflexión.",
+   "refs": [
+    "Rū. 23"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vibhatti-vipariṇāma",
+   "homonimo": null,
+   "es": "cambio o reversión de inflexión.",
+   "refs": [
+    "Rū. §14"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vibhāsa",
+   "homonimo": null,
+   "es": "alternativa. V. vavatthita-vibhāsa, alternativa determinada.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "viyatti-vāca",
+   "homonimo": null,
+   "es": "lenguaje articulado.",
+   "refs": [
+    "Sad. ii 31"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "viyoga",
+   "homonimo": null,
+   "es": "disociación; separación de una consonante conjunta (saṃyoga). V. visaññoga.",
+   "refs": [
+    "Sad. iii §24"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "virudhattha",
+   "homonimo": null,
+   "es": "lit., que tiene el significado opuesto. Una de las funciones de la partícula \"na\" cuando forma un compuesto con otras palabras. Ej., \"a- kusala\", insano, tiene el significado opuesto de \"kusala\", sano.",
+   "refs": [
+    "Rū. §344"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "viruddhapaccayūpanipāta",
+   "homonimo": null,
+   "es": "ocurrencia de condiciones adversas; uno de los usos del tiempo verbal kālātipatti.",
+   "refs": [
+    "Rū. §474"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vivaṭa",
+   "homonimo": null,
+   "es": "abierta. Todas las vocales excepto 'a' y las consonantes 's' y 'h' son \"vivaṭa\", abiertas.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vivaṭatta",
+   "homonimo": null,
+   "es": "condición de abierta.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "visaññoga",
+   "homonimo": null,
+   "es": "disociación; consonante simple; opuesto de una consonante conjunta (saṃyoga).",
+   "refs": [
+    "Kac. §41, Rū. §56"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "visesa",
+   "homonimo": null,
+   "es": "distinción; especificación; diferencia.",
+   "refs": [],
+   "pagina": 26
+  },
+  {
+   "pali": "visesana",
+   "homonimo": null,
+   "es": "adjetivo; atributo; distinción; calificación.",
+   "refs": [
+    "Rū. §300"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "visesanaparapada-kammadhāraya",
+   "homonimo": null,
+   "es": "v. visesanuttarapada-kammadhāraya",
+   "refs": [],
+   "pagina": 26
+  },
+  {
+   "pali": "visesanapubbapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde la palabra que califica (adjetivo) se coloca primero. Ej., \"mahanto puriso\" = \"mahāpuriso\", gran hombre. Aquí \"mahā\" califica al segundo miembro del compuesto, \"puriso\".",
+   "refs": [
+    "Rū. 183"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "visesanuttarapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el miembro que califica (adjetivo) se coloca al final. Ej., \"Sāriputto ca so thero\" = \"Sāriputtatthera\", el monje Sāriputta. Este compuesto también se denomina visesanaparapada-kammadhāraya.",
+   "refs": [
+    "Rū. 186"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "visesanobhayapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde ambos miembros son determinados (se refieren al mismo objeto). Ej., \"sītañ ca taṃ uṇhañ ca\" = \"sītuṇhaṃ\", (algo que es) frío y caliente. La diferencia entre este tipo de compuesto y el compuesto copulativo (dvanda) es que en este último cada miembro se toma individualmente. Ej., \"sītañ ca uṇhañ ca\" = \"sītuṇhaṃ\", frío y calor.",
+   "refs": [
+    "Rū. 186"
+   ],
+   "pagina": 26
+  },
+  {
+   "pali": "vutta-kattu",
+   "homonimo": null,
+   "es": "lit., sujeto mencionado. La habilidad del sujeto (kattu) es denotada (vutta) por la inflexión del verbo. Ej., en \"puriso maggaṃ gacchati\", el hombre va por el camino, \"puriso\" se denomina \"vutta-kattu\". Cf. avutta-kattu.",
+   "refs": [],
+   "pagina": 26
+  },
+  {
+   "pali": "vutta-kamma",
+   "homonimo": null,
+   "es": "lit., objeto mencionado. Ej., en \"ahinā daṭṭho naro\", hombre mordido por una serpiente, \"naro\", hombre, se denomina \"vutta- kamma\". Es sinónimo de abhihita-kamma. Cf. avutta-kamma.",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vuttayoga",
+   "homonimo": null,
+   "es": "el aforismo mencionado; regla mencionada anteriormente.",
+   "refs": [
+    "Kac. §51, Rū. §59"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "vuttarūpa",
+   "homonimo": null,
+   "es": "la forma mencionada anteriormente.",
+   "refs": [
+    "Kac. §46"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "vutta-sandhi",
+   "homonimo": null,
+   "es": "la combinación eufónica en la poesía con el propósito de proteger la métrica y la combinación eufónica en la prosa con el propósito de facilitar la pronunciación se denomina \"vutta- sandhi\". Es sinónimo de sādhāraṇa-sandhi. (Sad. iii 34).",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vutti",
+   "homonimo": null,
+   "es": "explicación. Hay tres clases: (1) explicación o palabra del aforismo (sutta-vutti), (2) palabra proveniente de aforismos anteriores (anuvattana- vutti) y (3) palabra insertada (pakkhipana-vutti).",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vuddhi",
+   "homonimo": null,
+   "es": "incremento; vocal fortalecida o que ha sido alargada.",
+   "refs": [
+    "Rū. §364"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "veyyākaraṇa",
+   "homonimo": null,
+   "es": "gramático; explicación; exégesis.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "veyyākarane adhīta",
+   "homonimo": null,
+   "es": "uno entendido en explicaciones; gramático.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "vomissa-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica mixta. En este tipo de sandhi se mezclan vocales y consonantes.",
+   "refs": [
+    "Sad. iii 34"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "vohāra",
+   "homonimo": null,
+   "es": "uso corriente; lenguaje usual; convención.",
+   "refs": [
+    "Rū. §579"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "vyañjana",
+   "homonimo": null,
+   "es": "v. byañjana",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vyañjana-nimitta",
+   "homonimo": null,
+   "es": "v. byañjana-nimitta",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vyatireka",
+   "homonimo": null,
+   "es": "v. byatireka",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vyavadhāna",
+   "homonimo": null,
+   "es": "v. byavadhāna",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "vyāpikādhāra",
+   "homonimo": null,
+   "es": "v. byāpikādhāra",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "saṃkhyā",
+   "homonimo": null,
+   "es": "v. saṅkhyā",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "saṃyoga",
+   "homonimo": null,
+   "es": "consonante conjunta. La definición de este término es \"sarānantaritāni byañjanāni saṃyogo\", las consonantes que no tienen vocales en el medio (entre ellas) se denominan conjuntas. Ej., en \"cakka\", rueda, las dos 'k' se denominan \"saṃyoga\". También saññoga.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "saṃyogekadesa",
+   "homonimo": null,
+   "es": "una parte de una consonante conjunta.",
+   "refs": [
+    "Rū. §56"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "saṃvuta",
+   "homonimo": null,
+   "es": "cerrada; la letra 'a'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakaṭṭhānakaraṇa",
+   "homonimo": null,
+   "es": "el instrumento de articulación es su propio lugar. Esto es (1) la garganta (kaṇṭha), (2) los labios (oṭṭha) y (3) la nariz (nāsika).",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakaṭṭhānaja",
+   "homonimo": null,
+   "es": "(sonido) producido en su propio lugar. Se refiere a las siguientes consonantes: 'ṅ', 'ñ', 'ṇ', 'n', 'm'. También nāsikaṭṭhānaja.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakattha",
+   "homonimo": null,
+   "es": "v. satti",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "sakammaka",
+   "homonimo": null,
+   "es": "lit., con objeto; verbo transitivo. V. dvikammaka.",
+   "refs": [
+    "Sad. i 15"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakāra",
+   "homonimo": null,
+   "es": "la letra 's'.",
+   "refs": [
+    "Rū. §41"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakkata",
+   "homonimo": null,
+   "es": "sánscrito.",
+   "refs": [
+    "Kac. §9"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakkata-gantha",
+   "homonimo": null,
+   "es": "libro sánscrito; obra escrita en sánscrito.",
+   "refs": [
+    "Kac. §9"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "sakkata-bhāsa",
+   "homonimo": null,
+   "es": "la lengua Sánscrita.",
+   "refs": [
+    "Sad. i 76"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "saṅkhā",
+   "homonimo": null,
+   "es": "v. saṅkhyā",
+   "refs": [],
+   "pagina": 27
+  },
+  {
+   "pali": "saṅkhyā",
+   "homonimo": null,
+   "es": "número (sinónimo de vacana 2 ); numeral; cálculo. Hay cinco clases de números: (1) número mixto (missaka-saṅkhyā), este tipo de número se obtiene por medio de la adición, ej., \"ekādasa\", once, \"dvādasa\", doce; (2) número multiplicativo (guṇita-saṅkyā), este tipo de número se obtiene por medio de la multiplicación, ej., \"dvisataṃ\", doscientos; (3) número agregativo (sambandha- saṅkyā), ej., \"aṭṭhasaṭṭhi-satasahassaṃ\", 168,000; en este ej., \"aṭṭhasaṭṭhi\", 68, es un número mixto que se obtiene por medio de la adición, mientras que \"satasahassaṃ\", 100, 000, es un número multiplicativo. En este caso, \"saṭṭhi\", 60, se multiplica por \"sahassaṃ\", 1,000 (=60,000), y también \"aṭṭha\", 8, se multiplica \"sahassaṃ\", 1,000 (=8,000), y cada uno de estos totales se suman a \"satasahassaṃ\", 100, 000 (100,000 + 60,000 + 8,000 = 168,000). (4) Número símbolo (saṅketa-saṅkyā), ej., el voz \"canda\", luna, puede significar el número uno porque hay una sola luna en el mundo; la voz \"māsa\", mes, puede significar el número doce porque hay doce meses en el año. (5) Número múltiple (aneka-saṅkyā), ej., \"sahassaraṃsi\", que tiene miles de (muchos) rayos, el sol; \"sahassa\", mil, en este compuesto tiene el significado de muchos. El género y número sigue la siguiente explicación: (1) desde \"dvi\", 2, hasta \"aṭṭhārasa\", 18, tienen los tres genéros y son plural; (2) \"vīsati\", 20, hasta \"navuti\", 90, son femeninos y singular; (4) \"sataṃ\", 100, \"sahassaṃ\", 1000, son neutros y singular; (4) desde \"koṭi\", 10 7 (= 10,000,000), hasta \"akkhobhiṇī\", 10 42 , son femeninos y singular; (5) el resto de los números hasta \"asaṅkheyyaṃ\", 10 140 , son neutros y singular.",
+   "refs": [
+    "Kac. §571"
+   ],
+   "pagina": 27
+  },
+  {
+   "pali": "saṅkhyā-taddhita",
+   "homonimo": null,
+   "es": "derivativo numérico. Pertenece al grupo de derivativos secundarios generales (sāmañña-taddhita). Corresponden a esta categoría los siguientes sufijos: ma, tiya, ttha, ī, ka.",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "saṅkhyāpūraṇa",
+   "homonimo": null,
+   "es": "número ordinal.",
+   "refs": [
+    "Rū. §406"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saṅkhyāppadhāna",
+   "homonimo": null,
+   "es": "número cardinal usado como sustantivo. Ej., \"bhikkhūnaṃ ekūnavīsati tiṭṭhati\", diecinueve bhikkhus están parados; aquí el número es predominante. Cf. saṅkhyeyyappadhāna. (Rū. §412; Sad. i 400).",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "saṅkhyāvacana",
+   "homonimo": null,
+   "es": "número cardinal.",
+   "refs": [
+    "Rū. §226"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saṅkhyeyyappadhāna",
+   "homonimo": null,
+   "es": "número cardinal usado como adjetivo. Ej., \"ekūnavīsati bhikkhavo tiṭṭhanti\", diecinueve bhikkhus están parados; aquí lo que se cuenta, es decir, los bhikkhus, es predominante. (Rū. §412; Sad. i 400).",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "saṅkhyobhayapada",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). En este compuesto los miembros son numerales.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saññā",
+   "homonimo": null,
+   "es": "término; término técnico; nombre.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saññā-vidhāna",
+   "homonimo": null,
+   "es": "asignación de términos.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saññā-sada",
+   "homonimo": null,
+   "es": "(1) uso; se refiere a una palabra que ha adquirido un signficado diferente. Ej., \"kaṇhasappa\", significa una cobra y no una serpiente negra como los miembros del compuesto indican. (2) Nombre propio. Ej., \"Candādevī\".",
+   "refs": [
+    "Rū. §341, 343"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saññā-sutta",
+   "homonimo": null,
+   "es": "aforismo que explica el significado de un término técnico. V. sutta.",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "saññoga",
+   "homonimo": null,
+   "es": "consonante conjunta. V. saṃyoga.",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "sattamī",
+   "homonimo": 1,
+   "es": "el potencial; tiempo verbal potencial. Se utiliza para expresar (1) consentimiento (anumati), (2) suposición (parikappa), (3) indicación de lo que se debería hacer (vidhi), (4) invitación (nimantana), (5) solicitud, permiso (ajjhesanā), (6) aspiración (patthanā), (7) tiempo oportuno o adecuado (pattakāla).",
+   "refs": [
+    "Rū. §454"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "sattamī",
+   "homonimo": 2,
+   "es": "el séptimo caso; el caso locativo. También bhumma, adhikaraṇa y okāsa. Véase kāraka.",
+   "refs": [
+    "Kac. §302"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "sattamī-tappurisa",
+   "homonimo": null,
+   "es": "tipo de compuesto dependiente determinativo donde el primer miembro está en el caso locativo. Ej., \"araññe + vāso\" = \"araññavāso\", que reside en el bosque; uno que reside en el bosque.",
+   "refs": [
+    "Rū. 197-8"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "sattamī-nimitta",
+   "homonimo": null,
+   "es": "causa de elisión en la séptima inflexión. V. nimitta.",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "satti",
+   "homonimo": null,
+   "es": "habilidad. Una de las tres propiedades del tema (liṅgattha). También sakattha.",
+   "refs": [],
+   "pagina": 28
+  },
+  {
+   "pali": "sadda",
+   "homonimo": null,
+   "es": "sonido; palabra; voz.",
+   "refs": [
+    "Kac. §19"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "saddattha",
+   "homonimo": null,
+   "es": "significado de una voz.",
+   "refs": [
+    "Rū. §283"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "sadda-pariyāya",
+   "homonimo": null,
+   "es": "sinónimo. V. pariyāya.",
+   "refs": [
+    "Rū. §21"
+   ],
+   "pagina": 28
+  },
+  {
+   "pali": "sadda-bheda",
+   "homonimo": null,
+   "es": "variación en los sonidos; diferencia en las voces o palabras. Es de 3 tipos: (1) variación en la medida (mattā-bheda), (2) variación en las letras (vaṇṇa-bheda) y (3) variación en el uso (rūḷhī-bheda).",
+   "refs": [
+    "Sad. iii 418"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sadda-lakkhaṇa",
+   "homonimo": null,
+   "es": "tratado gramatical.",
+   "refs": [
+    "Rū. 2"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "saddappavatti",
+   "homonimo": null,
+   "es": "ocurrencia de palabras. En la máxima \"vatticchānupubbikā saddappavatti\", la ocurrencia de palabras es de acuerdo con el deseo del que habla.",
+   "refs": [
+    "Rū. §64"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sadda-sattha",
+   "homonimo": null,
+   "es": "gramática; lit., ciencia de las palabras.",
+   "refs": [
+    "Sad. i 123"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sadda-siddhi",
+   "homonimo": null,
+   "es": "formación de voces; establecimiento de las palabras.",
+   "refs": [
+    "Sad. ii 135"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "saddānusāsana",
+   "homonimo": null,
+   "es": "gramática; lit., instrucción en sonidos.",
+   "refs": [],
+   "pagina": 29
+  },
+  {
+   "pali": "sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica. De acuerdo con la gramática Rūpasiddhi hay 4 clases de combinación eufónica: (1) sandhi de vocales (sara-sandhi), (2) sandhi natural (pakati- sandhi), (3) combinación de una vocal y una consonante (byañjana-sandhi) y (4) combinación de 'ṃ' con una vocal o una consonante (niggahīta- sandhi).",
+   "refs": [
+    "Rū. 2-35"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sandhicchārahita",
+   "homonimo": null,
+   "es": "sin deseo de (realizar) combinación eufónica. También sandhicchārahitaṭṭhāna.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sandhicchārahitaṭṭhāna",
+   "homonimo": null,
+   "es": "en un lugar donde no se desea realizar sandhi.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sandhija",
+   "homonimo": null,
+   "es": "creado o producido por la combinación eufónica. Ej., en \"odanta\", que termina en 'o', la letra 'd' se ha insertado para evitar la colisión de dos vocales. Se dice que 'd' es, producida por la combinación eufónica (sandhija).",
+   "refs": [
+    "Rū. §3"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "sapada-viggaha",
+   "homonimo": null,
+   "es": "resolución usando el mismo tipo de palabra. Ej., \"pacanaṃ pāko\", cocinando (pacanaṃ) significa cocinando (pāko). En este ejemplo, se utilizan el mismo tipo de palabra, un derivado primario (kita), para explicar \"pāko\". Opuesto de assapada-viggaha. (Kac. §529).",
+   "refs": [],
+   "pagina": 29
+  },
+  {
+   "pali": "sabba-dhātuka",
+   "homonimo": null,
+   "es": "este término se refiere a aquellas conjugaciones que no insertan ‘i’ antes del sufijo de la inflexión verbal. Éstas son las siguientes: 1) Presente (vattamānā), 2) imperativo (pañcamī), 3) potencial (sattamī), 4) imperfecto (hiyyattanī).",
+   "refs": [],
+   "pagina": 29
+  },
+  {
+   "pali": "sabba-nāma",
+   "homonimo": null,
+   "es": "pronombre. Los pronombres se convierten en adjetivos cuando califican a nombres. Hay 27 pronombres clasificados en 5 grupos de acuerdo a su similitud en declinación: (i) sabba, katara, katama, ubhaya, itara, añña, aññatara, aññatama; (ii) pubba, para, apara, dakkhiṇa, uttara, adhara; (iii) ya, ta, eta, ima, amu, kim; (iv) eka, ubha, dvi, ti, catu; (v) tumha, amha.",
+   "refs": [
+    "Rū. 97"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "samaññā",
+   "homonimo": null,
+   "es": "Nombre; término; designación.",
+   "refs": [
+    "Kac. §9"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "samāna-suti",
+   "homonimo": null,
+   "es": "que tiene el mismo sonido; homónimo.",
+   "refs": [
+    "Sad. i 52"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "samānādhikaraṇa",
+   "homonimo": null,
+   "es": "v. tulyādhikaraṇa .",
+   "refs": [],
+   "pagina": 29
+  },
+  {
+   "pali": "samāsa",
+   "homonimo": null,
+   "es": "compuesto. La combinación de dos o más voces que forman una unidad gramatical. Un compuesto en una abreviación de palabras. La característica de un compuesto es obtener un único significado de aquellas palabras que tienen diferentes significados. Hay seis clases: 1) compuesto adjetivo (kammadhāraya), (2) compuesto numérico determinativo (digu), (3) compuesto dependiente determinativo (tappurisa), (4) compuesto copulativo (dvanda), (5) compuesto adverbial (abyayībhāva) y (6) compuesto relativo (bahubbīhi).",
+   "refs": [
+    "Rū. 176, §331"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "samāsa-nāma",
+   "homonimo": null,
+   "es": "nombre compuesto. V. nāma.",
+   "refs": [
+    "Sad. i 3"
+   ],
+   "pagina": 29
+  },
+  {
+   "pali": "samāsanta",
+   "homonimo": null,
+   "es": "lit., al final del compuesto; se refiere a una voz que puede ocurrir sólo al final de un compuesto. Ésta es una voz que no puede ocurrir en forma independiente fuera del compuesto. Ej., \"kammaṃ + karo\" = \"kammakaro\", que hace una acción, trabajador. Aquí el primer miembro, \"kammaṃ\", se denomina upapada, voz precedente; y el último miembro, \"karo\", se denomina samāsanta.",
+   "refs": [],
+   "pagina": 29
+  },
+  {
+   "pali": "samāhāra-digu",
+   "homonimo": null,
+   "es": "compuesto determinativo numérico colectivo. Este tipo de compuesto expresa la totalidad y tiene terminación singular neutra. El primer miembro es un numeral. Ej., \"tayo + lokā\" = \"tilokaṃ\", los tres planos colectivamente.",
+   "refs": [
+    "Nir. §359"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "samāhāra-dvanda",
+   "homonimo": null,
+   "es": "compuesto copulativo colectivo. Expresa la totalidad y tiene terminación singular neutra. Ej., \"gītañ ca vāditañ ca\" = \"gītavāditaṃ\", canción y música.",
+   "refs": [
+    "Rū. §207"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "samuccaya",
+   "homonimo": null,
+   "es": "colección; acumulación; uno de los usos de la partícula \"ca\", y.",
+   "refs": [],
+   "pagina": 30
+  },
+  {
+   "pali": "sampadāna",
+   "homonimo": null,
+   "es": "el cuarto caso; el caso dativo. También catutthī y sampadāna-vacana. Véase kāraka.",
+   "refs": [
+    "Kac. §276"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sampadāna-vacana",
+   "homonimo": null,
+   "es": "v. sampadāna",
+   "refs": [],
+   "pagina": 30
+  },
+  {
+   "pali": "sampiṇḍana",
+   "homonimo": null,
+   "es": "combinación; agrupamiento. Uno de los usos de la partícula \"ca', y.",
+   "refs": [],
+   "pagina": 30
+  },
+  {
+   "pali": "sambaddha",
+   "homonimo": null,
+   "es": "v. sambandha",
+   "refs": [],
+   "pagina": 30
+  },
+  {
+   "pali": "sambandha",
+   "homonimo": null,
+   "es": "conexión; construcción genitiva. La conexión de una voz con la siguiente después de realizar sandhi. Ej., \"Anāthapiṇḍikassārāme\". Aquí se ha elidido la 'a' final de \"Anāthapiṇḍikassa\" y después se ha conectado esta voz con la siguiente. Cf. vavatthita.",
+   "refs": [
+    "Rū. §316",
+    "Sad. iii §20"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sambandhī-sadda",
+   "homonimo": null,
+   "es": "voz que tiene relación. Ej. \"Devadattassa garu-kulaṃ\", la familia del maestro de Devadatta. Aquí, \"garu\", maestro, está en relación tanto con \"Devadatta\" como con \"kulaṃ\", familia.",
+   "refs": [],
+   "pagina": 30
+  },
+  {
+   "pali": "sambodhana",
+   "homonimo": null,
+   "es": "lit., hacer que alguien conozca (causativo); vocativo; el caso vocativo. Es sinónimo de ālapana.",
+   "refs": [
+    "Rū. §70"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sambhāvanāpubbapada-kammadhāraya",
+   "homonimo": null,
+   "es": "tipo de compuesto donde el primer miembro indica el origen del segundo miembro. Ej., \"dhammo iti buddhi\" = \"dhammabuddhi\", conocimiento originado del dhamma.",
+   "refs": [
+    "Rū. §187"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sara",
+   "homonimo": null,
+   "es": "vocal; sonido. Hay 8 vocales: 'a', 'ā'; 'i', 'ī'; 'u', 'ū'; 'e', 'o'. V. nissaya.",
+   "refs": [
+    "Kac. §3, Rū. §3"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sara-nimitta",
+   "homonimo": null,
+   "es": "lit., causa vocal; la vocal es la causa para la aplicación de una regla de combinación eufónica (sandhi). Cf. byañjana- nimitta.",
+   "refs": [
+    "Sad. iii §183"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sarānuga",
+   "homonimo": null,
+   "es": "la letra 'ṃ'. Lit., que sigue a la vocal; se refiere a la niggahīta que sigue a las vocales cortas en 'aṃ', 'iṃ', 'uṃ'.",
+   "refs": [
+    "Rū. §10"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sara-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica de vocales. Ej., \"paññā + indriya\" = \"paññindriya\", facultad de la sabiduría. Aquí la última vocal de la primera palabra se elide por estar seguida por una vocal. V. sandhi.",
+   "refs": [
+    "Rū. 7-21"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sarūpa",
+   "homonimo": null,
+   "es": "Similar. Véase también asarūpa, disímil.",
+   "refs": [
+    "Rū. §15"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "savaṇṇa",
+   "homonimo": null,
+   "es": "aquellas que poseen una letra similar. Se refiere a las siguientes vocales: 'a', 'ā'; 'i', 'ī'; 'u', 'ū'. En cambio, 'e' y 'o' se denominan asavaṇṇa, disímiles. También sarūpa.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sasaññoga",
+   "homonimo": null,
+   "es": "con consonante conjunta. En la expresión \"byañjano sasaññogo\", sílaba con una consontante conjunta.",
+   "refs": [
+    "Kac. §41, Rū. 56"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "saha-pubbapada",
+   "homonimo": null,
+   "es": "una de las 9 clases de compuestos relativos (bahubbīhi). Tiene la partícula \"saha\" como primer miembro. Este tipo de compuesto tiene la primera inflexión. Ej., \"saha hetunā yo vattate ti sahetuko\", aquello que surge con una raíz se denomina con raíz.",
+   "refs": [
+    "Rū. §356"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sahayoga",
+   "homonimo": null,
+   "es": "el caso instrumental. Ver karaṇa.",
+   "refs": [
+    "Rū. §12"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sādhana-siddhi",
+   "homonimo": null,
+   "es": "derivación de una voz.",
+   "refs": [],
+   "pagina": 30
+  },
+  {
+   "pali": "sādhāraṇa-sandhi",
+   "homonimo": null,
+   "es": "combinación eufónica general. En este tipo de sandhi se incluye la combinación de vocales, consonantes y la \"niggahīta\", y operaciones gramaticales de substitución (ādesa), elisión (lopa), reversión (viparīta), etc.. Es sinónimo de vomissa-sandhi.",
+   "refs": [
+    "Sad. iii 34"
+   ],
+   "pagina": 30
+  },
+  {
+   "pali": "sānunāsika",
+   "homonimo": null,
+   "es": "vocal nasalizada; la pronunciación de las vocales cortas 'a', 'i', 'u' seguidas por la \"niggahīta\": 'aṃ', 'iṃ', 'uṃ'.",
+   "refs": [
+    "Sad. iii §8"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sāmañña",
+   "homonimo": null,
+   "es": "nombre; designación; nombre común. Ej., \"rukkho\", árbol.",
+   "refs": [
+    "Rū. 41"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sāmañña-taddhita",
+   "homonimo": null,
+   "es": "derivativo secundario general. Hay 4 clases: (1) sufijos que denotan linaje (apaccattha), 2) sufijos con diversos significados (anekattha), (3) sufijos que denotan posesión (atthyattha) y (4) sufijos que denotan números (saṅkhyā).",
+   "refs": [],
+   "pagina": 31
+  },
+  {
+   "pali": "sāmi-vacana",
+   "homonimo": null,
+   "es": "v. sāmī",
+   "refs": [],
+   "pagina": 31
+  },
+  {
+   "pali": "sāmī",
+   "homonimo": null,
+   "es": "el sexto caso; el caso genitivo. También chaṭṭhī y sāmi-vacana.",
+   "refs": [
+    "Kac. §283"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sāmīpikādhāra",
+   "homonimo": null,
+   "es": "locativo de proximidad. Ej., \"Sāvatthiyaṃ viharati\", vive cerca de Sāvatthī.",
+   "refs": [
+    "Nir. §323"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sikkhā-vidhāna",
+   "homonimo": null,
+   "es": "reglas de pronunciación; ortoepía; ortología.",
+   "refs": [
+    "Sad. iii 8-9"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sithila",
+   "homonimo": null,
+   "es": "sin aspiración. Las siguientes consonantes son no aspiradas: 'k', 'g'; 'c', 'j'; 'ṭ', 'ḍ'; 't', 'd'; 'p', 'b'. Cf. dhanita.",
+   "refs": [
+    "Rū. §11"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "siliṭṭha-kathana",
+   "homonimo": null,
+   "es": "lenguaje fácil; facilidad de pronunciación.",
+   "refs": [
+    "Rū. §13"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "siloka",
+   "homonimo": null,
+   "es": "verso; estrofa.",
+   "refs": [
+    "Sad. i 55"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sīha-gatika",
+   "homonimo": null,
+   "es": "yendo o moviéndose como león. Un tipo de regla general (adhikāra) cuyo dominio se extiende hacia atrás y hacia adelante.",
+   "refs": [
+    "Rū. §60"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sukhuccāraṇa",
+   "homonimo": null,
+   "es": "facilidad de pronunciación; eufonía.",
+   "refs": [
+    "Rū. §35"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sukhuccāraṇattha",
+   "homonimo": null,
+   "es": "para facilitar la pronunciación.",
+   "refs": [
+    "Rū. §51"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "suddhassara",
+   "homonimo": null,
+   "es": "vocal libre; vocal separada.",
+   "refs": [
+    "Sad. ii 7"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "suddhassara-dhātu",
+   "homonimo": null,
+   "es": "raíz que consiste solamente en una vocal. Ej., la raíz \"i\" que tiene el significado de ir.",
+   "refs": [
+    "Sad. ii1-9"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "suti",
+   "homonimo": null,
+   "es": "sonoridad; sonido; evento acústico. Puede ser ghosa, sonora, o aghosa, sorda. \"Vāsuti\", la partícula 'vā'.",
+   "refs": [
+    "Rū. §2"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "suti-sāmañña",
+   "homonimo": null,
+   "es": "",
+   "refs": [
+    "Sad. i 167"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sutta",
+   "homonimo": null,
+   "es": "aforismo; regla gramatical. Hay 4 clases de aforismos: (1) aforismo que explica el significado de un término técnico (saññā-sutta), (2) aforismo general que explica la correcta interpretación o aplicación de otras regla (paribhāsa-sutta), (3) aforismo regulativo, que tiene aplicación general, (adhikāra-sutta) y (4) aforismo con instrucciones gramaticales (vidhi-sutta) como p. ej., la inserción o la substitución de una letra. Hay ocho clases de vidhi-sutta. V. vidhi.",
+   "refs": [
+    "Rū. §63"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "sutta-vutti",
+   "homonimo": null,
+   "es": "palabra del aforismo.",
+   "refs": [],
+   "pagina": 31
+  },
+  {
+   "pali": "suddha-kattu",
+   "homonimo": null,
+   "es": "el sujeto puro. Ej., \"puriso rūpaṃ passati\", el hombre ve una forma, \"puriso\", hombre, se denomina \"suddha-kattu\", sujeto puro, en oposición a hetu-kattu, sujeto causativo.",
+   "refs": [
+    "Rū. §294"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "syādi",
+   "homonimo": null,
+   "es": "lit., aquellos que comienzan en 'si'. Nombre dado a las inflexiones nominales (nāma-vibhatti). V. vibhatti. Cf. tyādi.",
+   "refs": [
+    "Sad. iii §198-9"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "svādigaṇa",
+   "homonimo": null,
+   "es": "cuarto grupo de conjugación; grupo de raíces que comienza con la raíz \"su\". Los signos de conjugación son 'ṇu', 'ṇā' y 'uṇā'.",
+   "refs": [
+    "Sad. ii 241"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "hakāra",
+   "homonimo": null,
+   "es": "la letra 'h'.",
+   "refs": [
+    "Rū. §27"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "hiyyattanī",
+   "homonimo": null,
+   "es": "imperfecto; uno de los tiempos verbales que se usa para expresar (1) el pasado directamente experimentado (paccakkha) y (2) el pasado no directamente experimentado (appaccakkha). El pasado expresado por este tiempo verbal es partir de ayer hacia atrás; de aquí el nombre \"hiyyattanī\".",
+   "refs": [
+    "Kac. §418, Rū. 455-8"
+   ],
+   "pagina": 31
+  },
+  {
+   "pali": "hetu-kattu",
+   "homonimo": null,
+   "es": "el agente o sujeto de un verbo causativo. En el ej., \"so puriso taṃ purisaṃ kammaṃ kāreti\", este hombre hace que ese hombre haga el trabajo, \"puriso\" se denomina \"hetu-kattu\", sujeto causativo en oposicióna",
+   "refs": [],
+   "pagina": 31
+  },
+  {
+   "pali": "suddha-kattu",
+   "homonimo": null,
+   "es": "sujeto puro.",
+   "refs": [
+    "Rū. §294"
+   ],
+   "pagina": 32
+  },
+  {
+   "pali": "ḷakāra",
+   "homonimo": null,
+   "es": "la letra 'ḷ'.",
+   "refs": [
+    "Rū. §684"
+   ],
+   "pagina": 32
+  }
+ ]
+}

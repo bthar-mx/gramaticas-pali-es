@@ -1,0 +1,485 @@
+{
+ "pagina": 1106,
+ "terminos": [
+  {
+   "pali": "jivhagga",
+   "fr": "la pointe de la langue",
+   "es": "la punta de la lengua",
+   "en": "the tip of the tongue",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "jivhopagga",
+   "fr": "la couronne de la langue",
+   "es": "la corona de la lengua",
+   "en": "the blade of the tongue",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "jivhāmajjha",
+   "fr": "le dos de la langue",
+   "es": "el dorso de la lengua",
+   "en": "the back of the tongue",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "ṭhāna",
+   "fr": "des régions («points») d'articulation",
+   "es": "las regiones («puntos») de articulación",
+   "en": "the regions («points») of articulation",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "(C). Smith enumera: kaṇṭha, tālu, muddhan, danta, oṭṭha, nāsikā, uras."
+  },
+  {
+   "pali": "kaṇṭhaja",
+   "fr": "les gutturales (⊃ vélaires)",
+   "es": "las guturales (⊃ velares)",
+   "en": "the gutturals (⊃ velars)",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "tāluja",
+   "fr": "les palatales",
+   "es": "las palatales",
+   "en": "the palatals",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "muddhaja",
+   "fr": "les cacuminales («cérébrales»)",
+   "es": "las cacuminales («cerebrales»)",
+   "en": "the cacuminals («cerebrals»)",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "La denominación moderna corriente es «retroflejas»; Smith conserva la decimonónica."
+  },
+  {
+   "pali": "dantaja",
+   "fr": "les dentales",
+   "es": "las dentales",
+   "en": "the dentals",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "oṭṭhaja",
+   "fr": "les labiales",
+   "es": "las labiales",
+   "en": "the labials",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "nāsikaṭṭhānaja",
+   "fr": "les nasales",
+   "es": "las nasales",
+   "en": "the nasals",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "urasija",
+   "fr": "la laryngale",
+   "es": "la laríngea",
+   "en": "the laryngeal",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "variantes": [
+    "orasa"
+   ]
+  },
+  {
+   "pali": "kaṇṭhatāluja",
+   "fr": "la vélo-palatale",
+   "es": "la velo-palatal",
+   "en": "the velo-palatal",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "kaṇṭhoṭṭhaja",
+   "fr": "la vélo-labiale",
+   "es": "la velo-labial",
+   "en": "the velo-labial",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "dantoṭṭhaja",
+   "fr": "la denti-labiale",
+   "es": "la dentilabial",
+   "en": "the denti-labial",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "akkharavipallāsa",
+   "fr": "permutation de syllabes (phonèmes)",
+   "es": "permutación de sílabas (fonemas)",
+   "en": "permutation of syllables (phonemes)",
+   "epigrafe": "1.1.1",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sara",
+   "fr": "voyelle",
+   "es": "vocal",
+   "en": "vowel",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "Homónimo: en 1.3.1.2 sara vale «intonation»."
+  },
+  {
+   "pali": "rassa",
+   "fr": "brève (à une more)",
+   "es": "corta (de una mora)",
+   "en": "short (of one mora)",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "conflicto": "comun/glosario.md fija «corta» y prohíbe expresamente «breve»; Smith dice «brève». Se traduce por la norma del repositorio, no calcando el francés."
+  },
+  {
+   "pali": "sabhāvarassatā",
+   "fr": "abrègement rythmique",
+   "es": "abreviación rítmica",
+   "en": "rhythmic shortening",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vuttirassatā",
+   "fr": "abrègement métrique",
+   "es": "abreviación métrica",
+   "en": "metrical shortening",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "ref_smith": "15,28"
+  },
+  {
+   "pali": "dīgha",
+   "fr": "longue (à deux mores)",
+   "es": "larga (de dos moras)",
+   "en": "long (of two morae)",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sabhāvadīghatā",
+   "fr": "allongement rythmique",
+   "es": "alargamiento rítmico",
+   "en": "rhythmic lengthening",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "chandadīghatā",
+   "fr": "allongement métrique",
+   "es": "alargamiento métrico",
+   "en": "metrical lengthening",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "variantes": [
+    "ādi-dīgha",
+    "majjhe-dīgha",
+    "uttara-dīgha"
+   ],
+   "ref_smith": "621,13"
+  },
+  {
+   "pali": "pluta",
+   "fr": "la voyelle à trois mores",
+   "es": "la vocal de tres moras",
+   "en": "the vowel of three morae",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "Smith: «on n'admet pas» — el pāḷi no la admite; el término es sánscrito, de ahí los corchetes suyos. Sí registra dūraṭṭhass' ālapane (90,10—92,9) «en saluant de loin», cf. āyatassara."
+  },
+  {
+   "pali": "dūraṭṭhassa ālapana",
+   "fr": "en saluant de loin",
+   "es": "al saludar de lejos",
+   "en": "hailing from afar",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "ref_smith": "90,10—92,9"
+  },
+  {
+   "pali": "savaṇṇa",
+   "fr": "sont homorganes",
+   "es": "homorgánicas",
+   "en": "homorganic",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "variantes": [
+    "sarūpa"
+   ],
+   "nota": "a—ā (avaṇṇa), i—ī (ivaṇṇa), u—ū (uvaṇṇa)."
+  },
+  {
+   "pali": "avaṇṇa",
+   "fr": "a—ā",
+   "es": "las letras ‘a’ y ‘ā’",
+   "en": "the letters ‘a’ and ‘ā’",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "Coincide con la definición fijada en comun/glosario.md (Nāma §244)."
+  },
+  {
+   "pali": "ivaṇṇa",
+   "fr": "i—ī",
+   "es": "las letras ‘i’ e ‘ī’",
+   "en": "the letters ‘i’ and ‘ī’",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "uvaṇṇa",
+   "fr": "u—ū",
+   "es": "las letras ‘u’ y ‘ū’",
+   "en": "the letters ‘u’ and ‘ū’",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "asavaṇṇa",
+   "fr": "sont dépourvues d'homorganes",
+   "es": "carentes de homorgánica",
+   "en": "having no homorganic counterpart",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "Las vocales e—o."
+  },
+  {
+   "pali": "rassā va vattabbā",
+   "fr": "doivent être prononcées comme des brèves",
+   "es": "deben pronunciarse como cortas",
+   "en": "must be pronounced as short",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "saññogapubba",
+   "fr": "devant groupe",
+   "es": "ante grupo consonántico",
+   "en": "before a consonant cluster",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "variantes": [
+    "saññogapara"
+   ]
+  },
+  {
+   "pali": "kvaci",
+   "fr": "sous certaines conditions",
+   "es": "a veces",
+   "en": "sometimes",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "conflicto": "El repositorio fija «a veces» / «sometimes» (comun/terminologia-particulas.md). Smith, en este pasaje concreto, lo lee como «sous certaines conditions» (ĕttha, pero cē tvaṃ)."
+  },
+  {
+   "pali": "viparītatā",
+   "fr": "l'alternance ava : o : ū",
+   "es": "la alternancia ava : o : ū",
+   "en": "the alternation ava : o : ū",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "mattābheda",
+   "fr": "l'alternance quantitative",
+   "es": "la alternancia cuantitativa",
+   "en": "quantitative alternation",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "ref_smith": "921,1—922,7"
+  },
+  {
+   "pali": "vaṇṇabheda",
+   "fr": "l'alternance phonétique (en général)",
+   "es": "la alternancia fonética (en general)",
+   "en": "phonetic alternation (in general)",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "ref_smith": "922,8—32"
+  },
+  {
+   "pali": "guṇa",
+   "fr": "renforcement apophonique : 1er degré",
+   "es": "refuerzo apofónico de primer grado",
+   "en": "apophonic strengthening, first degree",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vuddhi",
+   "fr": "renforcement apophonique : 2ème degré",
+   "es": "refuerzo apofónico de segundo grado",
+   "en": "apophonic strengthening, second degree",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sānunāsika",
+   "fr": "voyelle accompagnée de nasalité",
+   "es": "vocal acompañada de nasalidad",
+   "en": "vowel accompanied by nasality",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "suddha(ssara)",
+   "fr": "isolée",
+   "es": "aislada",
+   "en": "isolated",
+   "epigrafe": "1.1.2",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "cf. vimutta (1.2.1)."
+  },
+  {
+   "pali": "vyañjana",
+   "fr": "les consonnes",
+   "es": "las consonantes",
+   "en": "the consonants",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "aḍḍhamatta",
+   "fr": "la valeur d'une demi-more",
+   "es": "el valor de media mora",
+   "en": "the value of half a mora",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "nissita",
+   "fr": "censées s'appuyer",
+   "es": "que se apoyan",
+   "en": "held to lean on",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "nissaya",
+   "fr": "leurs supports",
+   "es": "sus soportes",
+   "en": "their supports",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus",
+   "nota": "⊃ las vocales."
+  },
+  {
+   "pali": "aghosa",
+   "fr": "sourdes",
+   "es": "sordas",
+   "en": "voiceless",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "ghosavat",
+   "fr": "sonores",
+   "es": "sonoras",
+   "en": "voiced",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "dhanita",
+   "fr": "aspirées",
+   "es": "aspiradas",
+   "en": "aspirated",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sithila",
+   "fr": "non aspirées",
+   "es": "no aspiradas",
+   "en": "unaspirated",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "phuṭṭha",
+   "fr": "à occlusion",
+   "es": "con oclusión",
+   "en": "with closure",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "isakaṃ phuṭṭha",
+   "fr": "à occlusion imparfaite",
+   "es": "con oclusión imperfecta",
+   "en": "with imperfect closure",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "aphuṭṭha",
+   "fr": "sans occlusion",
+   "es": "sin oclusión",
+   "en": "without closure",
+   "epigrafe": "1.1.3",
+   "pagina": 1106,
+   "fuente": "conspectus"
+  }
+ ]
+}

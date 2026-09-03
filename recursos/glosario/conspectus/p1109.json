@@ -1,0 +1,58 @@
+{
+ "pagina": 1109,
+ "terminos": [
+
+{"pali": "ākhyāta", "fr": "Le verbe", "es": "el verbo", "en": "the verb", "epigrafe": "2", "pagina": 1109, "fuente": "conspectus", "variantes": ["ākhyātika", "kiriyāpada"], "ref_smith": "10,34—35", "nota": "Encabeza toda la sección 2. Nandisena y el Diplomado coinciden en «verbo»."},
+
+{"pali": "dhātu", "fr": "racine", "es": "raíz", "en": "root", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus", "nota": "Smith la define como «élément primaire», distinta (A) de la palabra flexionada pada y (B) del morfema paccaya."},
+{"pali": "pada", "fr": "le mot fléchi (à suffixe tyādi ou syādi)", "es": "la palabra flexionada (con sufijo tyādi o syādi)", "en": "the inflected word (with a tyādi or syādi suffix)", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "paccaya", "fr": "le morphème («formans»)", "es": "el morfema («formante»)", "en": "the morpheme («formans»)", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus", "nota": "Smith: añadido a una raíz, a un tema liṅga o a una onomatopeya anukaraṇa. Remite a su Index D."},
+{"pali": "anukaraṇa", "fr": "onomatopée", "es": "onomatopeya", "en": "onomatopoeia", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "kit", "fr": "[morphème] pour le nom", "es": "[morfema] para el nombre", "en": "[morpheme] for the noun", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus", "ref_interna": "3.1"},
+{"pali": "vikaraṇapaccaya", "fr": "[morphème] pour le verbe", "es": "[morfema] para el verbo", "en": "[morpheme] for the verb", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus", "ref_interna": "2.2"},
+{"pali": "novikaraṇapaccaya", "fr": "[morphème verbal] sans caractéristique", "es": "[morfema verbal] sin característica", "en": "[verbal morpheme] without a class-sign", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "akārāgama", "fr": "l'augment", "es": "el aumento", "en": "the augment", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus", "nota": "El Diplomado del IEBH llama «aumento» a āgama a secas (Módulo II, Clase 14)."},
+{"pali": "abbhāsa", "fr": "le redoublement", "es": "la reduplicación", "en": "reduplication", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "niggahītāgama", "fr": "la nasale infixée", "es": "la nasal infijada", "en": "the infixed nasal", "epigrafe": "2.1", "pagina": 1109, "fuente": "conspectus"},
+
+{"pali": "suddhassara", "fr": "racine formée d'une seule voyelle", "es": "raíz formada por una sola vocal", "en": "root consisting of a single vowel", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "Smith da el ejemplo «i». Nandisena: «suddhassara-dhātu, raíz que consiste solamente en una vocal» (Sad. ii 1-9)."},
+{"pali": "anekakkhara", "fr": "polysyllabe", "es": "polisílaba", "en": "polysyllabic", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "Contando el exponente anubandha: gam-u, silok-a, jāgar-a, rudh-i. La monosílaba, en cambio, Smith la ejemplifica con «pā» sin darle nombre pāḷi."},
+{"pali": "anubandha", "fr": "l'exposant", "es": "el exponente", "en": "the indicatory letter", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "aluttanta", "fr": "réellement dissyllabe", "es": "realmente bisílaba", "en": "genuinely disyllabic", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "Ejemplos de Smith: omā, cine."},
+{"pali": "asaññoganta", "fr": "à consonne finale simple", "es": "de consonante final simple", "en": "ending in a single consonant", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "Salvo el exponente; ejemplo kar-a."},
+{"pali": "saññoganta", "fr": "à groupe final", "es": "de grupo consonántico final", "en": "ending in a consonant cluster", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "Smith lo marca con asterisco —forma reconstruida, no atestiguada— y ejemplifica con cint-a."},
+{"pali": "dhātu(s)sara", "fr": "voyelle radicale", "es": "vocal radical", "en": "root vowel", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "dhātvanta(kkhara)", "fr": "(consonne) finale", "es": "(consonante) final [de la raíz]", "en": "final (consonant) [of the root]", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "upadhā", "fr": "pénultième", "es": "penúltima", "en": "penultimate", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "ādesa", "fr": "substitut (thème supplétif)", "es": "sustituto (tema supletivo)", "en": "substitute (suppletive stem)", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "En 1.2.3 el mismo ādesa vale «la substitution». Aquí es el tema que suple, no la operación."},
+{"pali": "dhātuddāna", "fr": "agrégat de racines", "es": "agregado de raíces", "en": "aggregate of roots", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "ref_smith": "573,13—586,2; 664,14—15"},
+{"pali": "dhātumaya", "fr": "de nature verbale", "es": "de naturaleza verbal", "en": "of verbal nature", "epigrafe": "2.1.1", "pagina": 1109, "fuente": "conspectus", "nota": "Como -kara, -ja en los upapadasamāsa.", "ref_interna": "5.2.2.4"},
+
+{"pali": "parassa-bhāsā", "fr": "racine à voix active", "es": "raíz de voz activa", "en": "root of active voice", "epigrafe": "2.1.2", "pagina": 1109, "fuente": "conspectus", "nota": "El Diplomado del IEBH usa parassapada para «voz activa»; Nandisena, kattu-kāraka."},
+{"pali": "attano-bhāsā", "fr": "racine à voix moyenne", "es": "raíz de voz media", "en": "root of middle voice", "epigrafe": "2.1.2", "pagina": 1109, "fuente": "conspectus", "nota": "El Diplomado usa attanopada y lo traduce «pasiva-media»."},
+{"pali": "ubhayato-bhāsā", "fr": "à double voix", "es": "de doble voz", "en": "of both voices", "epigrafe": "2.1.2", "pagina": 1109, "fuente": "conspectus", "ref_interna": "2.2.3"},
+{"pali": "sakamma(ka)", "fr": "transitive", "es": "transitiva", "en": "transitive", "epigrafe": "2.1.2", "pagina": 1109, "fuente": "conspectus", "nota": "Nandisena y el Diplomado coinciden: «transitivo»."},
+{"pali": "akamma(ka)", "fr": "intransitive", "es": "intransitiva", "en": "intransitive", "epigrafe": "2.1.2", "pagina": 1109, "fuente": "conspectus"},
+
+{"pali": "dhātvattha", "fr": "le sens de la racine", "es": "el sentido de la raíz", "en": "the meaning of the root", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus", "nota": "Smith: es un estado bhāva o una actividad kiriyā —como sattā, gati, sadda… avagāhana, upasevā, seḷana—."},
+{"pali": "bhāva", "fr": "un état", "es": "un estado", "en": "a state", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus", "nota": "El Diplomado: «El verbo suele expresar acción (kiriyā) o estado (bhāva)», con las mismas dos palabras que Smith."},
+{"pali": "kiriyā", "fr": "une activité", "es": "una actividad", "en": "an activity", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus", "nota": "Nandisena: «acción. También kriyā y kiriyā». El Diplomado: «acción»."},
+{"pali": "atthātisayayoga", "fr": "s'élargit [le sens]", "es": "se amplía [el sentido]", "en": "the meaning is extended", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "anekatthā hi dhātavo", "fr": "varie [le sens]", "es": "«pues las raíces tienen muchos sentidos»", "en": "«for roots have many meanings»", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus", "nota": "Smith lo cita entrecomillado, como adagio de los gramáticos."},
+{"pali": "upasagga", "fr": "un préverbe", "es": "un preverbio", "en": "a preverb", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus", "conflicto": "comun/glosario.md fija «prefijo» (Nāma §221) y enumera los veinte. Smith dice «préverbe», y el Diplomado del IEBH también usa «preverbio». Son la misma cosa con dos nombres; hay que decidir cuál manda.", "ref_interna": "4.1.1—4.1.3"},
+{"pali": "visesakara", "fr": "déterminant une nuance", "es": "que determina un matiz", "en": "determining a nuance", "epigrafe": "2.1.3", "pagina": 1109, "fuente": "conspectus", "variantes": ["jotaka"]},
+
+{"pali": "vikaraṇa", "fr": "caractéristique (de thème verbal)", "es": "característica (de tema verbal)", "en": "class-sign (of the verbal stem)", "epigrafe": "2.2", "pagina": 1109, "fuente": "conspectus", "variantes": ["novikaraṇa"]},
+
+{"pali": "dhātugaṇa", "fr": "l'ensemble des racines", "es": "el conjunto de las raíces", "en": "the body of roots", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus", "nota": "Smith cita «bhūvādayo dhātavo». Se divide en ocho clases según la característica del presente primario."},
+{"pali": "aṭṭhavidhā dhātugaṇā", "fr": "huit classes [de racines]", "es": "ocho clases [de raíces]", "en": "eight classes [of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus", "nota": "bhuvādi, rudhādi, divādi, svādi, kiyādi, gahādi, tanādi, curādi. Nandisena las registra una a una: bhūvādigaṇa, rudhādigaṇa, divādigaṇa, svādigaṇa, kiyādigaṇa, gahādigaṇa, tanādigaṇa, curādigaṇa."},
+{"pali": "bhuvādi", "fr": "[1re classe de racines]", "es": "[1.ª clase de raíces]", "en": "[1st class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "rudhādi", "fr": "[2e classe de racines]", "es": "[2.ª clase de raíces]", "en": "[2nd class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "divādi", "fr": "[3e classe de racines]", "es": "[3.ª clase de raíces]", "en": "[3rd class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "svādi", "fr": "[4e classe de racines]", "es": "[4.ª clase de raíces]", "en": "[4th class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "kiyādi", "fr": "[5e classe de racines]", "es": "[5.ª clase de raíces]", "en": "[5th class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "gahādi", "fr": "[6e classe de racines]", "es": "[6.ª clase de raíces]", "en": "[6th class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "tanādi", "fr": "[7e classe de racines]", "es": "[7.ª clase de raíces]", "en": "[7th class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"},
+{"pali": "curādi", "fr": "[8e classe de racines]", "es": "[8.ª clase de raíces]", "en": "[8th class of roots]", "epigrafe": "2.2.1", "pagina": 1109, "fuente": "conspectus"}
+
+]}

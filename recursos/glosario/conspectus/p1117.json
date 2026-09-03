@@ -1,0 +1,656 @@
+{
+ "pagina": 1117,
+ "terminos": [
+  {
+   "pali": "upagama",
+   "fr": "s'approcher [upa]",
+   "es": "acercarse [upa]",
+   "en": "to approach [upa]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sigue la lista de sentidos locales de los preverbios abierta en 4.1.1 (p. 1116). Lo que Smith pone entre corchetes es la forma SÁNSCRITA del preverbio, como ya avisó en 4.1 («en sanskrit [prādi]»): de ahí [prati], [niḥ], [pra], [parā], [duḥ] por paṭi, ni(r), pa, parā, du."
+  },
+  {
+   "pali": "samīpa",
+   "fr": "s'approcher [upa]",
+   "es": "acercarse [upa]",
+   "en": "to approach [upa]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sădisa",
+   "fr": "ressembler",
+   "es": "asemejarse",
+   "en": "to resemble",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Smith lo trae dos veces en este epígrafe: como sentido derivado de upa («ressembler») y entre paréntesis junto a paṭinidhi, como matiz de prati. Aquí van juntas las dos apariciones para no repetir lema. — Lo imprime con BREVE sobre la a, no con macrón, donde el uso conoce también sādisa. El sentido de esa breve lo fija la p. 1124: en 5.2.1 Smith imprime en una misma línea «ănupubbī, anupubba», y sólo la lleva la voz cuya forma corriente tiene la vocal LARGA. Es su marca de cantidad, no una errata ni ruido del escaneo."
+  },
+  {
+   "pali": "yutti",
+   "fr": "être de mise",
+   "es": "ser procedente",
+   "en": "to be fitting",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "variantes": [
+    "upapatti"
+   ],
+   "nota": "Smith imprime «être de mise (upapatti) yutti»: upapatti va entre paréntesis, como término equivalente."
+  },
+  {
+   "pali": "apagata",
+   "fr": "s'éloigner [apa]",
+   "es": "alejarse [apa]",
+   "en": "to move away [apa]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vajjana",
+   "fr": "éviter",
+   "es": "evitar",
+   "en": "to avoid",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Entre paréntesis en Smith, como matiz de apagata."
+  },
+  {
+   "pali": "padussana",
+   "fr": "offenser",
+   "es": "ofender",
+   "en": "to offend",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de apa, a partir de apagata."
+  },
+  {
+   "pali": "abhimukhībhāva",
+   "fr": "aller au devant de [abhi]",
+   "es": "ir al encuentro de [abhi]",
+   "en": "to go to meet [abhi]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vandana",
+   "fr": "saluer",
+   "es": "saludar",
+   "en": "to salute",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de abhi."
+  },
+  {
+   "pali": "sāruppa",
+   "fr": "être convenable (agréable)",
+   "es": "ser conveniente (grato)",
+   "en": "to be suitable (agreeable)",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "paṭigata",
+   "fr": "rencontrer [prati]",
+   "es": "encontrarse con [prati]",
+   "en": "to meet [prati]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "El corchete trae la forma sánscrita prati; el preverbio pāḷi es paṭi."
+  },
+  {
+   "pali": "paṭiloma",
+   "fr": "contrarier",
+   "es": "contrariar",
+   "en": "to run counter to",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Entre paréntesis en Smith, como matiz de paṭigata."
+  },
+  {
+   "pali": "paṭisedha",
+   "fr": "nier",
+   "es": "negar",
+   "en": "to negate",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Aquí es un sentido del preverbio paṭi. Nandisena lo define por su lado como «negación; partícula de negación», y lo refiere a na, no y mā: no habla de lo mismo."
+  },
+  {
+   "pali": "nivattana",
+   "fr": "retourner",
+   "es": "volverse",
+   "en": "to turn back",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "conflicto": "Divergencia con Nandisena, que da «prevención; parar; suspensión» —el sentido de detener— mientras que Smith lee «retourner», volverse o devolver, que es lo que pide el paṭinidhi que sigue."
+  },
+  {
+   "pali": "paṭinidhi",
+   "fr": "équivaloir",
+   "es": "equivaler",
+   "en": "to be equivalent",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "variantes": [
+    "sădisa"
+   ],
+   "nota": "Smith añade «(sădisa)» entre paréntesis. El sustituto o representante: lo que hace las veces de otra cosa."
+  },
+  {
+   "pali": "paṭikaraṇa",
+   "fr": "compenser (remédier)",
+   "es": "compensar (remediar)",
+   "en": "to compensate (to remedy)",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "anugata",
+   "fr": "suivre [anu]",
+   "es": "seguir [anu]",
+   "en": "to follow [anu]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "variantes": [
+    "pacchā-attha"
+   ],
+   "nota": "Smith añade «(pacchā-attha)», el sentido de posterioridad."
+  },
+  {
+   "pali": "hīna",
+   "fr": "être inférieur",
+   "es": "ser inferior",
+   "en": "to be inferior",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de anu."
+  },
+  {
+   "pali": "anupacchinna",
+   "fr": "persister",
+   "es": "persistir",
+   "en": "to persist",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Literalmente «no interrumpido»."
+  },
+  {
+   "pali": "samodhāna",
+   "fr": "réunir [sam]",
+   "es": "reunir [sam]",
+   "en": "to bring together [sam]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Primero de los cuatro términos del sentido local de sam: samodhāna, saṃkhepa, saṃgata, saṃgaha."
+  },
+  {
+   "pali": "saṃkhepa",
+   "fr": "réunir [sam]",
+   "es": "reunir [sam]",
+   "en": "to bring together [sam]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Smith imprime ṃ ante oclusiva gutural, no ṅ: saṃkhepa, saṃgata, saṃgaha. Se respeta su grafía."
+  },
+  {
+   "pali": "saṃgata",
+   "fr": "réunir [sam]",
+   "es": "reunir [sam]",
+   "en": "to bring together [sam]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "saṃgaha",
+   "fr": "réunir [sam]",
+   "es": "reunir [sam]",
+   "en": "to bring together [sam]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "pidhāna",
+   "fr": "couvrir",
+   "es": "cubrir",
+   "en": "to cover",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "ref_smith": "Abh 1183",
+   "nota": "Smith añade entre corchetes «cf. saṃvaraṇa [(a)pi] Abh 1183»: el mismo sentido lo da api, y así vuelve a salir en 4.1.2."
+  },
+  {
+   "pali": "sama",
+   "fr": "idées de : égalité",
+   "es": "ideas de: igualdad",
+   "en": "ideas of: equality",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de sam, con sammā y samiddhi."
+  },
+  {
+   "pali": "sammā",
+   "fr": "exactitude",
+   "es": "exactitud",
+   "en": "exactness",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "samiddhi",
+   "fr": "bien-être",
+   "es": "bienestar",
+   "en": "well-being",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "viyoga",
+   "fr": "séparer [vi]",
+   "es": "separar [vi]",
+   "en": "to separate [vi]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "conflicto": "Homónimo. El viyoga de Nandisena es fonético —«disociación; separación de una consonante conjunta (saṃyoga)», v. visaññoga—; el de Smith es el sentido local del preverbio vi."
+  },
+  {
+   "pali": "visesa",
+   "fr": "différencier",
+   "es": "diferenciar",
+   "en": "to differentiate",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "ref_interna": "4.1",
+   "nota": "Sentido derivado de vi. Nandisena: «distinción; especificación; diferencia». cf. viseseti, 4.1 (p. 1116), y visesakara, 2.1.3 (p. 1109)."
+  },
+  {
+   "pali": "vividha",
+   "fr": "idées de : diversité",
+   "es": "ideas de: diversidad",
+   "en": "ideas of: diversity",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "viruddha",
+   "fr": "opposition",
+   "es": "oposición",
+   "en": "opposition",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vigata",
+   "fr": "privation («sans»)",
+   "es": "privación («sin»)",
+   "en": "privation («without»)",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "virūpa",
+   "fr": "laideur",
+   "es": "fealdad",
+   "en": "ugliness",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Entre paréntesis en Smith, como caso de la privación que expresa vi. cf. virūpatā, 4.1.2."
+  },
+  {
+   "pali": "gati",
+   "fr": "(s'en) aller [parā]",
+   "es": "irse [parā]",
+   "en": "to go away [parā]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "parihāni",
+   "fr": "(se) perdre",
+   "es": "perderse",
+   "en": "to be lost",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de parā."
+  },
+  {
+   "pali": "kaliggaha",
+   "fr": "perdre au jeu",
+   "es": "perder al juego",
+   "en": "to lose at play",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Literalmente «la toma del kali», la tirada perdedora del dado; su contrario es kaṭaggaha."
+  },
+  {
+   "pali": "atikkanta",
+   "fr": "outrepasser [ati]",
+   "es": "traspasar [ati]",
+   "en": "to go beyond [ati]",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "atikkamana",
+   "fr": "surpasser",
+   "es": "sobrepasar",
+   "en": "to surpass",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "atisaya",
+   "fr": "idées d'excès",
+   "es": "ideas de exceso",
+   "en": "ideas of excess",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "bhusattha",
+   "fr": "et d'intensité",
+   "es": "y de intensidad",
+   "en": "and of intensity",
+   "epigrafe": "4.1.1",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "bhusa + attha, «el sentido de bhusa», intensamente. Cierra los sentidos de ati."
+  },
+  {
+   "pali": "samantato-bhāva",
+   "fr": "entourer [pari]",
+   "es": "rodear [pari]",
+   "en": "to surround [pari]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Abre el segundo tramo de la lista de sentidos de los preverbios: pari, niḥ, pra, ni, api, su y duḥ. Smith lo imprime con guión."
+  },
+  {
+   "pali": "āliṅgana",
+   "fr": "embrasser",
+   "es": "abrazar",
+   "en": "to embrace",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "variantes": [
+    "parissajana"
+   ],
+   "nota": "Smith añade «(cf. parissajana)»."
+  },
+  {
+   "pali": "pariccheda",
+   "fr": "limiter (préciser)",
+   "es": "delimitar (precisar)",
+   "en": "to delimit (to specify)",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "nikkhanta",
+   "fr": "sortir [niḥ]",
+   "es": "salir [niḥ]",
+   "en": "to go out [niḥ]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "El corchete trae la forma sánscrita niḥ; el preverbio pāḷi es ni(r)."
+  },
+  {
+   "pali": "nīharaṇa",
+   "fr": "sortir [niḥ]",
+   "es": "salir [niḥ]",
+   "en": "to go out [niḥ]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "duda": "La cantidad de la i NO es legible en este escaneo: a 400 dpi la tilde de una i breve y el macrón de una ī ocupan el mismo blanco y no se distinguen (lo mismo que llevó a leer mal vicchā, 4.3 y 5.2.1). Se transcribe nīharaṇa porque es la forma corriente, de nīharati, pero la lectura viene de la lengua y no de la imagen, y queda por cotejar sobre papel."
+  },
+  {
+   "pali": "pātukamma",
+   "fr": "produire",
+   "es": "producir",
+   "en": "to produce",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de ni(r): hacer aparecer, sacar a la luz. cf. pātur ahosi."
+  },
+  {
+   "pali": "abhāva",
+   "fr": "l'idée de privation («sans»)",
+   "es": "la idea de privación («sin»)",
+   "en": "the idea of privation («without»)",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Smith lo trae dos veces en este epígrafe: aquí como sentido privativo de ni(r), y al final de la página entre los sentidos de duḥ, donde lo glosa «inexistence». Van juntas las dos apariciones para no repetir lema."
+  },
+  {
+   "pali": "niggata",
+   "fr": "l'idée de privation («sans»)",
+   "es": "la idea de privación («sin»)",
+   "en": "the idea of privation («without»)",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "padhāna",
+   "fr": "(ressortir) [pra] > dominer",
+   "es": "(resaltar) [pra] > dominar",
+   "en": "(to stand out) [pra] > to dominate",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Aquí Smith no da término pāḷi para el sentido local —imprime «(ressortir)» entre paréntesis y pasa directamente al signo «>»—, de modo que la primera voz de pa/pra es ya la derivada."
+  },
+  {
+   "pali": "issara",
+   "fr": "dominer",
+   "es": "dominar",
+   "en": "to dominate",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "El mismo issara sale en 4.1.1 (p. 1116) entre los sentidos de adhi. Smith lo repite aquí para pa/pra."
+  },
+  {
+   "pali": "sandana",
+   "fr": "prendre sa source",
+   "es": "tener su origen",
+   "en": "to take its source",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "abhinipphanna",
+   "fr": "être achevé",
+   "es": "estar consumado",
+   "en": "to be accomplished",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "antopavesana",
+   "fr": "(r)entrer [ni]",
+   "es": "entrar [ni]",
+   "en": "to enter [ni]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Literalmente «entrada dentro»."
+  },
+  {
+   "pali": "cheka",
+   "fr": "les idées de : habileté",
+   "es": "las ideas de: destreza",
+   "en": "the ideas of: skill",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Sentido derivado de ni, con upamā y upadhāraṇa."
+  },
+  {
+   "pali": "upamā",
+   "fr": "comparaison",
+   "es": "comparación",
+   "en": "comparison",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "ref_interna": "3.2.1",
+   "nota": "En 3.2.1 (p. 1113) Smith ya la registró como «la ressemblance», a propósito del taddhita; aquí es uno de los sentidos de ni."
+  },
+  {
+   "pali": "upadhāraṇa",
+   "fr": "observation (attention)",
+   "es": "observación (atención)",
+   "en": "observation (attention)",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "saṃvaraṇa",
+   "fr": "couvrir [api]",
+   "es": "cubrir [api]",
+   "en": "to cover [api]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "ref_smith": "cf. 392,16",
+   "ref_interna": "4.1.1",
+   "nota": "Smith remite a «réunir» más arriba (4.1.1), donde ya lo citó junto a pidhāna con la referencia Abh 1183."
+  },
+  {
+   "pali": "sobhaṇa",
+   "fr": "bien [su]",
+   "es": "bien [su]",
+   "en": "well [su]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Smith imprime una sola línea para los dos preverbios: «bien, mal [su, duḥ] : sobhaṇa, sukha, suṭṭhugata, sammāgata, respectivement : asobhaṇa, kucchita (+ laideur virūpatā, pénurie asamiddhi, peine [difficulté] kiccha, inexistence abhāva)». Aquí se reparte el «respectivement» entre las fichas —«bien» a las cuatro primeras, «mal» a las siguientes—, que es la única intervención editorial de la página. Y cierra con un aviso que conviene no perder: «aucun exemple ici, ni dans la Rūpasiddhi, d'un emploi vraiment préverbal de su-, du-» — ni aquí ni en la Rūpasiddhi hay ejemplo de un empleo verdaderamente preverbal de su- y du-."
+  },
+  {
+   "pali": "sukha",
+   "fr": "bien [su]",
+   "es": "bien [su]",
+   "en": "well [su]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "suṭṭhugata",
+   "fr": "bien [su]",
+   "es": "bien [su]",
+   "en": "well [su]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sammāgata",
+   "fr": "bien [su]",
+   "es": "bien [su]",
+   "en": "well [su]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "asobhaṇa",
+   "fr": "mal [duḥ]",
+   "es": "mal [duḥ]",
+   "en": "ill [duḥ]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "El corchete trae la forma sánscrita duḥ; el preverbio pāḷi es du(r)."
+  },
+  {
+   "pali": "kucchita",
+   "fr": "mal [duḥ]",
+   "es": "mal [duḥ]",
+   "en": "ill [duḥ]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "virūpatā",
+   "fr": "laideur",
+   "es": "fealdad",
+   "en": "ugliness",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Smith la introduce con el signo «+», que en esta entrada añade los matices ulteriores de duḥ. cf. virūpa, 4.1.1."
+  },
+  {
+   "pali": "asamiddhi",
+   "fr": "pénurie",
+   "es": "penuria",
+   "en": "want",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus",
+   "nota": "Lo contrario de samiddhi, 4.1.1."
+  },
+  {
+   "pali": "kiccha",
+   "fr": "peine [difficulté]",
+   "es": "penalidad [dificultad]",
+   "en": "hardship [difficulty]",
+   "epigrafe": "4.1.2",
+   "pagina": 1117,
+   "fuente": "conspectus"
+  }
+ ]
+}

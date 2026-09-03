@@ -1,0 +1,436 @@
+{
+ "pagina": 1107,
+ "terminos": [
+  {
+   "pali": "vagga",
+   "fr": "les occlusives, à savoir les cinq séries",
+   "es": "las oclusivas, es decir las cinco series",
+   "en": "the stops, that is, the five series",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "nota": "(Da). De ka-vagga a pa-vagga. comun/glosario.md fija vaggā = «agrupadas» (Sandhi §7)."
+  },
+  {
+   "pali": "paṭhama",
+   "fr": "une ténue",
+   "es": "una tenue (sorda no aspirada)",
+   "en": "a tenuis (voiceless unaspirated)",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "dutiya",
+   "fr": "une ténue aspirée",
+   "es": "una tenue aspirada (sorda aspirada)",
+   "en": "an aspirated tenuis (voiceless aspirate)",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "tatiya",
+   "fr": "une moyenne",
+   "es": "una media (sonora no aspirada)",
+   "en": "a media (voiced unaspirated)",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "catuttha",
+   "fr": "une moyenne aspirée",
+   "es": "una media aspirada (sonora aspirada)",
+   "en": "an aspirated media (voiced aspirate)",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vagganta",
+   "fr": "une nasale",
+   "es": "una nasal",
+   "en": "a nasal",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "vaggapañcama"
+   ],
+   "ref_smith": "Rūp 2,18"
+  },
+  {
+   "pali": "antaṭṭha",
+   "fr": "les semi-voyelles ya-ra-la-va",
+   "es": "las semivocales ya-ra-la-va",
+   "en": "the semivowels ya-ra-la-va",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "nota": "(Db—e). Smith: «en ajoutant ḷ, ḷh»."
+  },
+  {
+   "pali": "sa-kāra",
+   "fr": "la sifflante",
+   "es": "la sibilante",
+   "en": "the sibilant",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "ha-kāra",
+   "fr": "l'aspiration [sonore]",
+   "es": "la aspiración [sonora]",
+   "en": "the [voiced] aspiration",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "608,8"
+  },
+  {
+   "pali": "niggahīta",
+   "fr": "la résonance nasale",
+   "es": "sin traducir",
+   "en": "left untranslated",
+   "epigrafe": "1.1.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "bindu"
+   ],
+   "nota": "Smith añade [anusvāra 606,27] y remite a sānunāsika 1.1.2. comun/glosario.md manda dejarlo sin traducir; la glosa de Smith es «la résonance nasale»."
+  },
+  {
+   "pali": "(sassara-)vaṇṇasamudāya",
+   "fr": "une unité primaire",
+   "es": "una unidad primaria",
+   "en": "a primary unit",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vākya",
+   "fr": "un syntagme",
+   "es": "un sintagma",
+   "en": "a syntagm",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "38,32—40,3"
+  },
+  {
+   "pali": "sarūpena tiṭṭhanti",
+   "fr": "restent tels quels",
+   "es": "permanecen tal cual",
+   "en": "remain as they are",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vimutta",
+   "fr": "à l'état délié",
+   "es": "en estado suelto",
+   "en": "in an unbound state",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "vissaṭṭha"
+   ]
+  },
+  {
+   "pali": "vavatthita",
+   "fr": "isolé",
+   "es": "aislado",
+   "en": "isolated",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sandhiyyanti",
+   "fr": "se combinent",
+   "es": "se combinan",
+   "en": "are combined",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "sambaddha",
+    "ghaṭana",
+    "sandhita",
+    "saṃhitā(pada)"
+   ],
+   "ref_smith": "917,25"
+  },
+  {
+   "pali": "vaṇṇasandhi",
+   "fr": "sandhi interne",
+   "es": "combinación eufónica interna",
+   "en": "internal sandhi",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "nota": "comun/glosario.md fija sandhi = «combinación eufónica» (Sandhi §10)."
+  },
+  {
+   "pali": "padasandhi",
+   "fr": "sandhi externe",
+   "es": "combinación eufónica externa",
+   "en": "external sandhi",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sarasandhi",
+   "fr": "sandhi vocalique",
+   "es": "combinación eufónica vocálica",
+   "en": "vowel sandhi",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vyañjanasandhi",
+   "fr": "sandhi entre consonnes",
+   "es": "combinación eufónica entre consonantes",
+   "en": "consonant sandhi",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vomissasandhi",
+   "fr": "sandhi mixte",
+   "es": "combinación eufónica mixta",
+   "en": "mixed sandhi",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sādhāraṇasandhi",
+   "fr": "sandhi général",
+   "es": "combinación eufónica general",
+   "en": "general sandhi",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vuttasandhi",
+   "fr": "l'euphonie versificatoire et rhétorique",
+   "es": "la eufonía versificatoria y retórica",
+   "en": "versificatory and rhetorical euphony",
+   "epigrafe": "1.2.1",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "627,26—628,5"
+  },
+  {
+   "pali": "saññoga",
+   "fr": "le groupe de deux consonnes combinées",
+   "es": "el grupo de dos consonantes combinadas",
+   "en": "the cluster of two combined consonants",
+   "epigrafe": "1.2.2",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "nota": "Raramente de tres (Smith, 625,13—15)."
+  },
+  {
+   "pali": "saññutta",
+   "fr": "consonnes combinées",
+   "es": "consonantes combinadas",
+   "en": "combined consonants",
+   "epigrafe": "1.2.2",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "viyoga",
+   "fr": "dissociation",
+   "es": "disociación",
+   "en": "dissociation",
+   "epigrafe": "1.2.2",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "visaññoga"
+   ]
+  },
+  {
+   "pali": "vyāsarūpa",
+   "fr": "formes diérétiques",
+   "es": "formas dieréticas",
+   "en": "diaeretic forms",
+   "epigrafe": "1.2.2",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "asaññoga",
+   "fr": "à éléments libres",
+   "es": "de elementos libres",
+   "en": "with free elements",
+   "epigrafe": "1.2.2",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "nissaññoga",
+   "fr": "dégagés",
+   "es": "desligados",
+   "en": "released",
+   "epigrafe": "1.2.2",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "akkharānaṃ sannipāto",
+   "fr": "le conflit des phonèmes",
+   "es": "el encuentro de los fonemas",
+   "en": "the meeting of phonemes",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "nota": "Smith lo entrecomilla por ser cita del texto, y lo vierte «conflit». La voz pāḷi sannipāta es «concurso, encuentro», sin la idea de pugna: se propone «encuentro» y la palabra de Smith se conserva en la glosa francesa."
+  },
+  {
+   "pali": "pubbarūpa",
+   "fr": "un élément antérieur",
+   "es": "un elemento anterior",
+   "en": "a preceding element",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "pararūpa",
+   "fr": "un élément ultérieur",
+   "es": "un elemento posterior",
+   "en": "a following element",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "nimitta",
+   "fr": "la cause directe",
+   "es": "la causa directa",
+   "en": "the direct cause",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "saranimitta",
+    "vyañjananimitta"
+   ]
+  },
+  {
+   "pali": "āgama",
+   "fr": "le phonème de transition",
+   "es": "el fonema de transición",
+   "en": "the transitional phoneme",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "āgamakkhara"
+   ]
+  },
+  {
+   "pali": "paranayana",
+   "fr": "l'avancement",
+   "es": "el avance",
+   "en": "the advancement",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "611,13—17"
+  },
+  {
+   "pali": "ṭhānantaragati",
+   "fr": "le déplacement",
+   "es": "el desplazamiento",
+   "en": "the displacement",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "(vaṇṇa)vikāra(tā)",
+   "fr": "la modification",
+   "es": "la modificación",
+   "en": "the modification",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vipariyāya",
+   "fr": "l'interversion (plutôt métathèse)",
+   "es": "la interversión (más bien metátesis)",
+   "en": "interversion (rather, metathesis)",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "632,13—17"
+  },
+  {
+   "pali": "ādesa",
+   "fr": "la substitution",
+   "es": "la sustitución",
+   "en": "the substitution",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sabhāgatta",
+   "fr": "l'assimilation",
+   "es": "la asimilación",
+   "en": "the assimilation",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "626,1"
+  },
+  {
+   "pali": "dvitta",
+   "fr": "la gémination",
+   "es": "la geminación",
+   "en": "the gemination",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "variantes": [
+    "dvebhāva"
+   ],
+   "nota": "cf. yuga; Smith remite a 628,11—19 para la geminación y la simplificación metri causa."
+  },
+  {
+   "pali": "lopa",
+   "fr": "la chute ou «l'élision»",
+   "es": "la caída o «elisión»",
+   "en": "the loss or «elision»",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus",
+   "ref_smith": "630,21—632,7"
+  },
+  {
+   "pali": "akkharalopa",
+   "fr": "haplologie — soit superposition syllabique, soit hapaxépie à distance",
+   "es": "haplología — sea superposición silábica, sea hapaxepia a distancia",
+   "en": "haplology — either syllabic superposition or hapaxepy at a distance",
+   "epigrafe": "1.2.3",
+   "pagina": 1107,
+   "fuente": "conspectus"
+  }
+ ]
+}

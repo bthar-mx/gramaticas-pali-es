@@ -1,0 +1,416 @@
+{
+ "pagina": 1108,
+ "terminos": [
+  {
+   "pali": "dvisandhitisaṃkhepa",
+   "fr": "le sandhi au deuxième degré",
+   "es": "la combinación eufónica de segundo grado",
+   "en": "second-degree sandhi",
+   "epigrafe": "1.2.3",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "ref_smith": "632,23—28"
+  },
+  {
+   "pali": "mattā",
+   "fr": "une more",
+   "es": "una mora",
+   "en": "a mora",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "ref_smith": "605,18—21",
+   "nota": "cf. lahugarubhāva; remite a 1.1.2 y 1.1.3."
+  },
+  {
+   "pali": "lahu",
+   "fr": "une tranche légère",
+   "es": "leve",
+   "en": "light",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "nota": "comun/glosario.md fija «leve» (Sandhi §4). Smith: «une tranche légère», de una mora."
+  },
+  {
+   "pali": "garu",
+   "fr": "une tranche lourde",
+   "es": "pesada",
+   "en": "heavy",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "nota": "Dos moras."
+  },
+  {
+   "pali": "vutti",
+   "fr": "rythme (quantitatif)",
+   "es": "ritmo (cuantitativo)",
+   "en": "rhythm (quantitative)",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "nota": "Smith: vutti = lahugaruniyama. Cuidado: no es la vutti «glosa en prosa del sutta» del Kaccāyana."
+  },
+  {
+   "pali": "lahugaruniyama",
+   "fr": "rythme (quantitatif)",
+   "es": "regulación de leves y pesadas",
+   "en": "regulation of light and heavy",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "vuttirakkhaṇatthaṃ",
+   "fr": "«pour le rythme»",
+   "es": "«por el ritmo»",
+   "en": "«for the rhythm»",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "vuttānurakkhaṇatthaṃ"
+   ],
+   "ref_smith": "634,4—9"
+  },
+  {
+   "pali": "bavhakkharānaṃ appattaṃ",
+   "fr": "réduction du mot long",
+   "es": "reducción de la palabra larga",
+   "en": "reduction of the long word",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "appakkharānaṃ bahuttaṃ",
+   "fr": "extension du mot bref",
+   "es": "extensión de la palabra corta",
+   "en": "extension of the short word",
+   "epigrafe": "1.3.1.1",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "uccāraṇa",
+   "fr": "prononciation",
+   "es": "pronunciación",
+   "en": "pronunciation",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "uccāreti",
+    "paṭhati"
+   ],
+   "nota": "Epígrafe: Récitation (débit)."
+  },
+  {
+   "pali": "sukhuccāraṇīya",
+   "fr": "facile (agréable) à prononcer",
+   "es": "fácil (grato) de pronunciar",
+   "en": "easy (pleasant) to pronounce",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sukkhuccāraṇatthaṃ",
+   "fr": "«pour l'euphonie»",
+   "es": "«por la eufonía»",
+   "en": "«for euphony»",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "duda": "Se transcribe como está impreso. Comprobado a ×2,3 sobre la imagen nativa: el impreso dice «sukkhuccāraṇatthaṃ», con kkh, y no «sukhuccāraṇatthaṃ», que es lo que pide sukha- y lo que da la línea anterior (sukhuccāraṇīya). Parece errata de la edición, pero corregir a Smith es decisión de Angel: aquí va su lectura."
+  },
+  {
+   "pali": "vatta",
+   "fr": "mesure, mouvement propre à chaque genre littéraire",
+   "es": "medida, movimiento propio de cada género literario",
+   "en": "measure, movement proper to each literary genre",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "gāthāvatta",
+    "Suttantavatta",
+    "taraṅga-vatta",
+    "taraṅgabheda-vatta",
+    "galita-vatta"
+   ],
+   "ref_smith": "633,4 n. 1"
+  },
+  {
+   "pali": "naṭṭhappayoga",
+   "fr": "étant obsolètes",
+   "es": "en desuso",
+   "en": "obsolete",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "ref_smith": "Spṭ ad Vin II 108,21"
+  },
+  {
+   "pali": "sarabhañña",
+   "fr": "psalmodie (recommandée par le Maître)",
+   "es": "salmodia (recomendada por el Maestro)",
+   "en": "chanting (recommended by the Teacher)",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "sara",
+   "fr": "intonation",
+   "es": "entonación",
+   "en": "intonation",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "nota": "Homónimo: en 1.1.2 sara vale «voyelle»."
+  },
+  {
+   "pali": "āyatako gītassaro",
+   "fr": "l'intonation de cantilène (des brahmanes)",
+   "es": "la entonación de cantilena (de los brahmanes)",
+   "en": "the drawn-out singing intonation (of the brahmins)",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "nota": "Smith: «on n'admet pas» — no se admite."
+  },
+  {
+   "pali": "cheda",
+   "fr": "pause",
+   "es": "pausa",
+   "en": "pause",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "(isakaṃ) vicchindati",
+   "fr": "faire une (petite) pause",
+   "es": "hacer una (breve) pausa",
+   "en": "to make a (slight) pause",
+   "epigrafe": "1.3.1.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "ref_interna": "6.1.3.1"
+  },
+  {
+   "pali": "chandoviciti(sattha)",
+   "fr": "Métrique",
+   "es": "métrica",
+   "en": "metrics",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "chandas",
+   "fr": "mètre («syllabique»)",
+   "es": "metro («silábico»)",
+   "en": "metre («syllabic»)",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "nota": "Smith: chandas = vaṇṇaniyama."
+  },
+  {
+   "pali": "vaṇṇaniyama",
+   "fr": "mètre («syllabique»)",
+   "es": "regulación de las sílabas",
+   "en": "regulation of syllables",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "chandasampatti",
+   "fr": "perfection métrique",
+   "es": "perfección métrica",
+   "en": "metrical perfection",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "chandobhaṅga",
+   "fr": "faute métrique",
+   "es": "falta métrica",
+   "en": "metrical fault",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "chandohāni"
+   ]
+  },
+  {
+   "pali": "chandānurakkhaṇatthaṃ",
+   "fr": "«pour le mètre»",
+   "es": "«por el metro»",
+   "en": "«for the metre»",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "chandorakkhāya",
+    "gāthābandhasukhattaṃ"
+   ],
+   "ref_smith": "632,23"
+  },
+  {
+   "pali": "pajja",
+   "fr": "la poésie (strophique gāthāpadabaddha)",
+   "es": "la poesía (estrófica, gāthāpadabaddha)",
+   "en": "poetry (strophic, gāthāpadabaddha)",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "gajja",
+   "fr": "la prose",
+   "es": "la prosa",
+   "en": "prose",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "cuṇṇiyapadāni"
+   ]
+  },
+  {
+   "pali": "geyya",
+   "fr": "le genre mixte",
+   "es": "el género mixto",
+   "en": "the mixed genre",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "kaccha",
+   "fr": "le style des commentaires",
+   "es": "el estilo de los comentarios",
+   "en": "the style of the commentaries",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "gāthā",
+   "fr": "strophe (siloka)",
+   "es": "estrofa (siloka)",
+   "en": "stanza (siloka)",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "gāthāpada",
+   "fr": "(ligne de) vers",
+   "es": "(línea de) verso",
+   "en": "(line of) verse",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "pāda",
+    "paṭhama-pāda",
+    "catuttha-pāda"
+   ]
+  },
+  {
+   "pali": "chappadā gāthā",
+   "fr": "strophe à six lignes",
+   "es": "estrofa de seis líneas",
+   "en": "six-line stanza",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "visamagāthāpadadvayaṃ",
+   "fr": "«deux lignes irrégulières»",
+   "es": "«dos líneas irregulares»",
+   "en": "«two irregular lines»",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "ref_smith": "Pj II 404,8"
+  },
+  {
+   "pali": "adhikakkhara(pāda)",
+   "fr": "(ligne) à excédent",
+   "es": "(línea) con exceso de sílabas",
+   "en": "(line) with excess syllables",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "variantes": [
+    "accākkhara"
+   ]
+  },
+  {
+   "pali": "ūnakkhara(pāda)",
+   "fr": "à déficit",
+   "es": "con déficit de sílabas",
+   "en": "with deficient syllables",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "akkharasaṃkanti",
+   "fr": "enjambement de syllabe",
+   "es": "encabalgamiento de sílaba",
+   "en": "syllable enjambment",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "padasaṃkanti",
+   "fr": "enjambement de mot",
+   "es": "encabalgamiento de palabra",
+   "en": "word enjambment",
+   "epigrafe": "1.3.2",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "alaṃkāra",
+   "fr": "Ornements de forme [śabdālaṃkāra]",
+   "es": "ornamentos de forma [śabdālaṃkāra]",
+   "en": "ornaments of form [śabdālaṃkāra]",
+   "epigrafe": "1.3.3",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "yamaka",
+   "fr": "rime",
+   "es": "rima",
+   "en": "rhyme",
+   "epigrafe": "1.3.3",
+   "pagina": 1108,
+   "fuente": "conspectus"
+  },
+  {
+   "pali": "anuprāsa",
+   "fr": "assonance-allitération",
+   "es": "asonancia-aliteración",
+   "en": "assonance-alliteration",
+   "epigrafe": "1.3.3",
+   "pagina": 1108,
+   "fuente": "conspectus",
+   "ref_smith": "364 n. e",
+   "nota": "Smith lo da entre corchetes por ser voz sánscrita. La entrada continúa en p. 1109."
+  }
+ ]
+}

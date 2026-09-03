@@ -110,6 +110,10 @@ def main():
     if os.path.exists(os.path.join(recursos, "raices", "raices.json")):
         fallos += correr("generar_raices.py")
 
+    # glosario de terminología gramatical
+    if os.path.exists(os.path.join(recursos, "glosario", "plantilla.html")):
+        fallos += correr("generar_glosario.py")
+
     # las tres páginas de índice — al final, porque cuentan lo ya generado
     fallos += correr("generar_indices.py")
 

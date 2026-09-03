@@ -1,0 +1,55 @@
+{
+ "pagina": 1111,
+ "terminos": [
+
+{"pali": "sampucchana", "fr": "modus deliberativus", "es": "modo deliberativo", "en": "deliberative mood", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "vidhi", "fr": "précepte (règle, commandement)", "es": "precepto (regla, mandato)", "en": "precept (rule, command)", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus", "nota": "El Diplomado del IEBH lo traduce «orden»; Nandisena tiene además «vidhi-sutta». Smith lo lee como precepto o regla."},
+{"pali": "pesa", "fr": "incitation", "es": "incitación", "en": "incitement", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "atisagga", "fr": "autorisation", "es": "autorización", "en": "permission", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "pattakāla", "fr": "opportunité («voici le moment de…»)", "es": "oportunidad («he aquí el momento de…»)", "en": "opportunity («now is the time to…»)", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus", "ref_interna": "3.1.2"},
+{"pali": "anumati", "fr": "concession", "es": "concesión", "en": "concession", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus", "nota": "(C. optativo.) El Diplomado lo traduce «permiso»; Smith, «concession». Nandisena registra ajjhesanā como «consentimiento; permiso»."},
+{"pali": "parikappa", "fr": "supposition", "es": "suposición", "en": "supposition", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus", "nota": "El Diplomado: «duda, reflexión»."},
+{"pali": "araha", "fr": "qualification", "es": "aptitud", "en": "fitness", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus", "variantes": ["satti"], "nota": "El «arahasattīsu» que el Diplomado glosa «posibilidad/capacidad» es el locativo dual de este par araha + satti: no era, por tanto, término ausente de Smith, sino la misma pareja en otro caso."},
+{"pali": "satti", "fr": "qualification", "es": "capacidad", "en": "ability", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus", "nota": "Nandisena tiene «sakattha, satti»."},
+{"pali": "yaṃ", "fr": "dans une subordonnée, avec optatif, après kāla, samaya, velā", "es": "en subordinada, con optativo, tras kāla, samaya, velā", "en": "in a subordinate clause, with the optative, after kāla, samaya, velā", "epigrafe": "2.2.3.3", "pagina": 1111, "fuente": "conspectus"},
+
+{"pali": "tyādi", "fr": "flexion verbale", "es": "flexión verbal", "en": "verbal inflection", "epigrafe": "2.3", "pagina": 1111, "fuente": "conspectus", "nota": "Smith añade entre corchetes el sánscrito [tiṅ]. Nandisena: «tyādi, lit., aquellos que comienzan en ti; las inflexiones verbales»."},
+{"pali": "vibhatti", "fr": "flexion verbale", "es": "inflexión", "en": "inflection", "epigrafe": "2.3", "pagina": 1111, "fuente": "conspectus", "ref_interna": "3.3", "nota": "comun/glosario.md fija «inflexión» —antes «inflexión nominal», acortado en la sesión 09—."},
+{"pali": "vibhattissara", "fr": "voyelle désinentielle", "es": "vocal desinencial", "en": "the vowel of the ending", "epigrafe": "2.3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "kiriyāpadamālā", "fr": "paradigme verbal", "es": "paradigma verbal", "en": "verbal paradigm", "epigrafe": "2.3", "pagina": 1111, "fuente": "conspectus", "ref_smith": "25,24—30,23; 821,15—822,6"},
+
+{"pali": "avyattaliṅga", "fr": "le verbum finitum est [sans genre]", "es": "el verbo conjugado carece de género", "en": "the finite verb has no gender", "epigrafe": "2.3.1", "pagina": 1111, "fuente": "conspectus", "ref_interna": "3.3.1"},
+
+{"pali": "vacana", "fr": "nombre", "es": "número", "en": "number", "epigrafe": "2.3.2", "pagina": 1111, "fuente": "conspectus", "ref_interna": "3.3.2", "nota": "Nandisena registra vacana como «palabra, discurso» y también los vacana de caso —paccatta-vacana, karaṇa-vacana…—; aquí es el número gramatical."},
+{"pali": "abhedasaṃkha", "fr": "le verbe s'accordant avec ses kāraka —agent ou «objet»— tandis que l'action kiriyā est une", "es": "el verbo concuerda con sus kāraka —agente u «objeto»—, mientras que la acción kiriyā es una", "en": "the verb agrees with its kāraka —agent or «object»— while the action kiriyā is single", "epigrafe": "2.3.2", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "vacanavipallāsa", "fr": "permutation de nombre", "es": "permutación de número", "en": "permutation of number", "epigrafe": "2.3.2", "pagina": 1111, "fuente": "conspectus"},
+
+{"pali": "purisa", "fr": "personne", "es": "persona", "en": "person", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus", "ref_interna": "3.0.3"},
+{"pali": "uttamapurisa", "fr": "1re personne", "es": "primera persona", "en": "first person", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus", "nota": "Ojo con el nombre: uttama es «la última» en el orden pāḷi y «la primera» en el nuestro."},
+{"pali": "majjhimapurisa", "fr": "2e personne", "es": "segunda persona", "en": "second person", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "paṭhamapurisa", "fr": "3e personne", "es": "tercera persona", "en": "third person", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus", "nota": "Nandisena lo explica: «lit., primera persona; pero en pali corresponde a la tercera persona» (Kac. §410). El orden pāḷi es paṭhama-majjhima-uttama, el inverso del nuestro."},
+{"pali": "ekābhidhāne", "fr": "c'est toujours la personne ultérieure qui l'emporte quand on parle de plus d'une personne", "es": "cuando se habla de más de una persona, manda siempre la posterior", "en": "when more than one person is spoken of, the later one always prevails", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "vacanasaṅgaha", "fr": "homonymie de désinences personnelles", "es": "homonimia de las desinencias personales", "en": "homonymy of the personal endings", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus", "ref_smith": "45,8—48,24"},
+{"pali": "purisavipallāsa", "fr": "permutation de personne", "es": "permutación de persona", "en": "permutation of person", "epigrafe": "2.3.3", "pagina": 1111, "fuente": "conspectus"},
+
+{"pali": "nāma", "fr": "Le nom", "es": "el nombre", "en": "the noun", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "variantes": ["nāmikapada"], "nota": "Encabeza la sección 3."},
+{"pali": "pāṭipadika", "fr": "le thème nominal", "es": "el tema nominal", "en": "the nominal stem", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "variantes": ["liṅga"], "nota": "comun/glosario.md fija para liṅga «según contexto: base, género o forma final» (Nāma §53). Aquí es «tema»."},
+{"pali": "anvattha", "fr": "rationnel", "es": "racional", "en": "rational", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "nota": "Desde el punto de vista de la procedencia del nombre."},
+{"pali": "neruttika", "fr": "étymologique", "es": "etimológico", "en": "etymological", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "nota": "Según el niruttinaya.", "ref_interna": "7.1.2.2"},
+{"pali": "rūḷhika", "fr": "acquis par l'usage", "es": "adquirido por el uso", "en": "acquired by usage", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "variantes": ["rūḷhisadda"], "nota": "Nandisena tiene rūḷhi y rūḷhī, y también rūḷhi-bheda."},
+{"pali": "anukaraṇanāma", "fr": "imitatif", "es": "imitativo", "en": "imitative", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "yādicchaka", "fr": "amené par le hasard", "es": "traído por el azar", "en": "brought about by chance", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "nemittika", "fr": "amené par une cause particulière", "es": "traído por una causa particular", "en": "brought about by a particular cause", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "guṇanāma", "fr": "indication d'une qualité", "es": "indicación de una cualidad", "en": "indication of a quality", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "nota": "Nandisena: «guṇa-nāma»."},
+{"pali": "liṅgika", "fr": "indication d'une caractéristique (extérieure)", "es": "indicación de una característica (exterior)", "en": "indication of an (outward) characteristic", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "āvatthika", "fr": "indication d'un état (d'âge)", "es": "indicación de un estado (de edad)", "en": "indication of a state (of age)", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+
+{"pali": "saññā", "fr": "en tant que terme reçu ou nom propre", "es": "en cuanto término recibido o nombre propio", "en": "as a received term or proper name", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "nota": "comun/glosario.md fija «nombre / denominación» (Sandhi §1)."},
+{"pali": "samaññānāma", "fr": "conventionnel", "es": "convencional", "en": "conventional", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "kittima", "fr": "imposé", "es": "impuesto", "en": "imposed", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "kārima", "fr": "artificiel", "es": "artificial", "en": "artificial", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "opacārima", "fr": "métonymique", "es": "metonímico", "en": "metonymic", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus"},
+{"pali": "opapātika", "fr": "«apparitionnel»", "es": "«aparicional»", "en": "«apparitional»", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "nota": "Smith lo entrecomilla."},
+{"pali": "nāmanāma", "fr": "le nom type", "es": "el nombre tipo", "en": "the generic noun", "epigrafe": "3", "pagina": 1111, "fuente": "conspectus", "nota": "cf. suddhanāma. Nandisena: «nāma-nāma»."}
+
+]}
