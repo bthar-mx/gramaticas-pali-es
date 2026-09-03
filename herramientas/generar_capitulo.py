@@ -65,6 +65,7 @@ CAPITULOS = {
         "num": 2,
         "titulo_pali": "2-Nāma-Kappa",
         "titulo_es": "2-Capítulo del Nombre",
+        "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
         "version": "1.2",
@@ -75,6 +76,14 @@ CAPITULOS = {
                         "del vutti, ambas tomadas de la edición base y "
                         "verificadas por reconstrucción. La sigla de cada "
                         "referencia se desata al pasar el cursor.",
+        "version_en": "1.0",
+        "version_fecha_en": "2026-09-03",
+        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+                           "translation with the apparatus of the Spanish "
+                           "edition (formation of every example with its "
+                           "suttas, word-count breakdowns after Thitzana, "
+                           "glossary tooltips) and a fixed glossary for the "
+                           "technical terms.",
     },
     "03-karaka-kappa": {
         "slug": "karaka",
@@ -84,6 +93,7 @@ CAPITULOS = {
         "num": 3,
         "titulo_pali": "3-Kāraka-Kappa",
         "titulo_es": "3-Capítulo de casos gramaticales",
+        "titulo_en": "3-Case Chapter",
         "anterior": "2-Nāma-Kappa",
         "siguiente": "4-Samāsa-Kappa",     # en preparación: botón inactivo
         "version": "1.1",
@@ -93,6 +103,14 @@ CAPITULOS = {
                         "la negrita del vutti cotejada con el PDF de la "
                         "edición base (74 tramos, 14 nuevos). La sigla de "
                         "cada referencia se desata al pasar el cursor.",
+        "version_en": "1.0",
+        "version_fecha_en": "2026-09-03",
+        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+                           "translation with the apparatus of the Spanish "
+                           "edition (numbered examples with the word "
+                           "under study in bold, word-count breakdowns "
+                           "after Thitzana, references and notes) and the "
+                           "fixed glossary for the technical terms.",
     },
 }
 

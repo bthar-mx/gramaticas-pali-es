@@ -7,6 +7,17 @@ Se ha tocado `kaccayana/01-sandhi-kappa.md`, `comun/guia-de-estilo.md` y
 `herramientas/generar_capitulo.py`; se ha regenerado `site/` con
 `generar_todo.py`. **Nada está confirmado en git:** Angel revisa y confirma.*
 
+> **ESTADO AL CIERRE (se actualiza abajo, en §6 bis):** Sandhi inglés
+> publicado por Angel (v1.0, en línea). **Nāma inglés escrito entero y
+> generado** (`kaccayana/02-nama-kappa.en.md`, 219 suttas, 75 notas →
+> `site/en/kaccayana/nama/`), cotejado por guion contra el español (219/219
+> cabeceras, 597/597 líneas de ejemplo con los mismos § y componentes, 75
+> notas en el mismo orden, cero español), **sin revisar por Angel**. **Kāraka
+> inglés escrito entero y generado** (`kaccayana/03-karaka-kappa.en.md`, 45
+> suttas, 55 notas → `site/en/kaccayana/karaka/`), cotejado igual (45/45,
+> 296/296, 110 marcas, cero español), **sin revisar por Angel**. Detalle y
+> lo que queda: §6 bis.
+>
 > **Lo primero que tiene que saber el chat nuevo: la edición inglesa del
 > Sandhi-Kappa ESTÁ ESCRITA Y GENERADA, y no está revisada por Angel.**
 > `kaccayana/01-sandhi-kappa.en.md` (51 suttas, 35 notas) →
@@ -193,4 +204,73 @@ inglés nace en v1.0.
 | `comun/guia-de-estilo.md` §9 | la edición inglesa, lo práctico |
 | `CLAUDE.md` | «La edición inglesa» y la orden de generación |
 | `site/en/kaccayana/sandhi/index.html` | la página inglesa |
+| `site/**` | regenerado |
+
+## 6 bis. ESTADO AL CIERRE: LOS TRES CAPÍTULOS EN INGLÉS
+
+*Escrito al final de la sesión, con Angel fuera. Es lo que el chat nuevo
+tiene que leer primero.*
+
+| Capítulo | Maestro | Suttas / notas | Página | Estado |
+| --- | --- | ---: | --- | --- |
+| Sandhi | `kaccayana/01-sandhi-kappa.en.md` | 51 / 35 | `site/en/kaccayana/sandhi/` | **publicado por Angel (v1.0, en línea)**; sin revisar |
+| Nāma | `kaccayana/02-nama-kappa.en.md` | 219 / 75 | `site/en/kaccayana/nama/` | escrito y generado; **sin revisar, sin confirmar en git** |
+| Kāraka | `kaccayana/03-karaka-kappa.en.md` | 45 / 55 | `site/en/kaccayana/karaka/` | escrito y generado; **sin revisar, sin confirmar en git** |
+
+Los tres se generan con `generar_todo.py` (que regenera después el español
+para que el botón EN/ES y el `hreflang` salgan en las dos páginas). En
+`CAPITULOS` los tres llevan `titulo_en`, `version_en` 1.0,
+`version_fecha_en` 2026-09-03 y `version_nota_en`.
+
+### Cómo se escribieron Nāma y Kāraka
+
+El mismo método que el Sandhi (§3 bis): **la estructura es la del maestro
+español, línea a línea** —cabeceras con desglose de Thitzana, bloque pāḷi
+idéntico, ejemplos numerados con la palabra en negrita, la misma cita §N en
+cada paso, notas en el mismo orden—, y **el texto inglés es el del Venerable
+Nandisena donde lo hay** (`/tmp/nama_en.txt`, `/tmp/karaka_en.md`, extraídos
+de sus PDF; no están en el repositorio). Donde el español tradujo lo que él
+dejó sin traducir, el inglés sigue al español; donde el español amplió, el
+inglés sigue al español. Registro de desviaciones: memorando
+`docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md`, **§6**.
+
+### Cotejo por guion (lo único que garantiza que no falte nada)
+
+| Comprobación | Nāma | Kāraka |
+| --- | --- | --- |
+| cabeceras `**N. R. sutta (Sad).** [desglose, n]` iguales al español | 219/219 | 45/45 |
+| líneas pāḷi (vutti y ejemplos sin traducir) iguales al español | todas salvo las dos estrofas de §185, que llevan traducción | todas |
+| líneas de ejemplo numeradas con la misma negrita y los mismos §N | 597/597 | 296/296 |
+| marcas `[^n]` en el mismo orden | 75 | 110 (55 notas) |
+| palabras españolas sueltas en el inglés | 0 | 0 |
+
+El guion no está guardado como herramienta: son diez líneas de Python
+(cabeceras por regex `^\*\*\d+\\\. `, negritas por línea numerada, marcas
+`\[\^\d+\]`). Si conviene repetirlo, se reescribe en un minuto.
+
+### Lo que Angel tiene que decidir o revisar
+
+1. **Leer las dos páginas nuevas** (`site/en/kaccayana/nama/`,
+   `site/en/kaccayana/karaka/`) y el §6 del memorando. Lo que corrija va en
+   el `.en.md`; se regenera con `generar_todo.py`.
+2. **Confirmar en git** los tres maestros `.en.md`, `generar_capitulo.py`,
+   `generar_todo.py`, `pali.js`, la guía, `CLAUDE.md`, el memorando y este
+   briefing. El hook regenera `site/`.
+3. Las decisiones de §3 que siguen abiertas: dónde va el apéndice del
+   Venerable (*ca*; *kvaci / vā / navā / vibhāsā*) en las dos ediciones; los
+   números de estrofa de Pind en las siglas.
+4. Una de Kāraka que es suya: la nota 53 del español dice «Nandisena no
+   traduce el título de este sutta; la traducción es nuestra» (§314). En su
+   PDF inglés tampoco hay glosa del sutta §314; el inglés lleva la del IEBH,
+   traducida del español, y la nota lo dice igual.
+
+### Archivos de esta segunda parte
+
+| Archivo | Qué |
+| --- | --- |
+| `kaccayana/02-nama-kappa.en.md` | Nāma inglés entero (6.223 líneas, las mismas que el español) |
+| `kaccayana/03-karaka-kappa.en.md` | Kāraka inglés entero (1.803 líneas, las mismas que el español) |
+| `herramientas/generar_capitulo.py` | `version_en` de nama y karaka |
+| `docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md` §6 | registro de Nāma y Kāraka |
+| `site/en/kaccayana/nama/`, `site/en/kaccayana/karaka/` | las páginas |
 | `site/**` | regenerado |
