@@ -7,12 +7,20 @@ reescribe la descripción del depósito, el título pasa a
 **Kaccāyana-byākaraṇa** y se prepara la versión **2.0.0**. No se ha tocado el
 texto de ninguna gramática ni el motor.*
 
-> **Lo primero que tiene que saber el chat nuevo:** `main` está empujado y
-> desplegado hasta `1035d7c` —Angel empujó desde su Mac; los tres arreglos se
-> comprobaron ya **en el sitio en vivo**—. Falta un commit, `3d62d4b`, y **falta
-> la etiqueta `v2.0.0`, que es la que acuña el DOI**. El entorno de Claude no
-> tiene la clave SSH de Angel y no puede empujar. Las órdenes que faltan están
-> en §7.
+> **Lo primero que tiene que saber el chat nuevo: la 2.0.0 ESTÁ PUBLICADA.**
+> Angel etiquetó y publicó la entrega en GitHub, Zenodo la archivó, y el DOI de
+> concepto `10.5281/zenodo.21948010` resuelve ya a la versión nueva:
+>
+> | | |
+> | --- | --- |
+> | DOI de la 2.0.0 | `10.5281/zenodo.22263057` |
+> | título | Kaccāyana-byākaraṇa — traducción española |
+> | licencia | **CC BY-NC-ND 4.0** |
+> | archivo | `bthar-mx/gramaticas-pali-es-v2.0.0.zip` |
+>
+> **Queda una cosa por vigilar y está en §7 bis: la pestaña GitHub de Zenodo
+> dice «Connect», como si el enlace se hubiera soltado.** No impidió esta
+> entrega, pero podría impedir la siguiente.
 >
 > **Y la regla que gobernó la sesión, que es la de siempre:** proponer y
 > verificar, nunca afirmar. Se aplicó a la revisión visual y **cazó dos errores
@@ -211,8 +219,59 @@ Angel; el intento devolvió `Host key verification failed`.
     git push origin main
     git push origin v2.0.0
 
-La primera despliega el cambio de título. La segunda dispara el webhook y acuña
-el DOI. **Con la segunda no hay marcha atrás.**
+### DOS COSAS QUE SALIERON MAL, Y LA SEGUNDA ERA UN ERROR MÍO
+
+**1. La etiqueta remota se adelantó.** Angel tiene `push.followTags`, de modo
+que su `git push origin main` subió también `v2.0.0` tal como estaba entonces
+—apuntando a `1035d7c`—, un commit por detrás. El segundo intento lo rechazó
+GitHub con «tag already exists». Se arregló borrando la remota y volviendo a
+subirla:
+
+    git push origin :refs/tags/v2.0.0
+    git push origin v2.0.0
+
+**2. Empujar la etiqueta NO archiva nada, y yo dije que sí.** El webhook escucha
+el evento `release`, y GitHub lo emite cuando se **publica una Release**, no
+cuando se empuja una etiqueta. Por eso el hook seguía diciendo «never been
+triggered» después del `git push` de la etiqueta. Lo que dispara Zenodo es:
+
+    gh release create v2.0.0 --verify-tag \
+      --title "v2.0.0 — La gramática con su aparato de referencia" \
+      --notes-file docs/zenodo/notas-release-v2.0.0.md
+
+**Ésa es la orden irreversible**, no el `git push` de la etiqueta.
+
+## 7 bis. CÓMO QUEDÓ, Y LA SEÑAL QUE HAY QUE VIGILAR
+
+Publicada la Release, Zenodo archivó en el acto. Comprobado en el registro
+público:
+
+- El DOI de concepto `10.5281/zenodo.21948010` resuelve a la **2.0.0**.
+- Las tres versiones cuelgan del mismo registro: 2.0.0 (`22263057`), 1.1.0
+  (`22037060`), 1.0.0 (`21948011`). **El traslado a `bthar-mx` no partió la
+  serie**, que era el miedo del briefing 43.
+- El zip pasa a llamarse **`bthar-mx/gramaticas-pali-es-v2.0.0.zip`** y el campo
+  «Repository URL» dice ya `github.com/bthar-mx/gramaticas-pali-es`: se
+  corrigieron solos al archivar.
+- Licencia **CC BY-NC-ND 4.0** y título con **byākaraṇa**.
+- La descripción nueva llegó entera: se comprueban en la página tanto las 1.698
+  raíces como el párrafo de las 2.045 junturas.
+
+**Dos señales que NO son fallos:**
+
+- El hook dice «Last delivery was not successful. Invalid HTTP Response: 409».
+  GitHub emite más de un evento por Release y Zenodo responde 409 al duplicado.
+  **La primera entrega sí funcionó**, y el registro lo demuestra.
+
+**Y una que SÍ hay que mirar antes de la próxima entrega:**
+
+- **La pestaña GitHub de Zenodo muestra «Connect»**, como si la cuenta ya no
+  estuviera enlazada, y `/account/settings/github/repository/...` devolvió un
+  error 500. La sesión de Zenodo está abierta (`admin@iebh.org`), de modo que no
+  es un cierre de sesión. No afectó a esta entrega —el archivado ya había
+  ocurrido—, pero **si el enlace está realmente suelto, la 2.1.0 no se
+  archivará**. Antes de la próxima: entrar en Zenodo → GitHub, pulsar «Connect»
+  si sigue así, y **Sync now**.
 
 Después conviene mirar tres cosas, por este orden:
 
@@ -240,10 +299,13 @@ proceso vivo ni es la cola de veredictos; es esto.
 
 ## 9. LO QUE QUEDA ABIERTO
 
-1. **Empujar el commit `3d62d4b` y la etiqueta `v2.0.0`.** §7. Es lo único que
-   separa a 2.0.0 de estar publicada.
-2. **Los dos puntos del depósito sin respuesta expresa:** el párrafo del motor y
-   `upload_type`. §6. **Antes de empujar la etiqueta.**
+1. **El enlace de GitHub en Zenodo, que dice «Connect».** §7 bis. Es lo único
+   que puede impedir que la próxima entrega se archive, y se comprueba en un
+   minuto.
+2. **`upload_type` sigue en `publication` / `book`**, ya archivado así en la
+   2.0.0. Si se cambia, será desde la 2.1.0 en adelante; las versiones
+   depositadas no se editan, por la misma razón que no se editó la licencia de
+   las anteriores.
 3. **La palabra clave doble**, `byākaraṇa` y `vyākaraṇa`. §5, al final: se
    conservaron las dos a propósito, y basta decirlo para dejar una.
 4. **Abrir el pliegue cuando la búsqueda cae dentro.** Ofrecido en la 43, sigue
