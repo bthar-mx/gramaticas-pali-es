@@ -4,8 +4,13 @@
 Genera el HTML de un capítulo a partir de su markdown.
 
     python3 herramientas/generar_capitulo.py kaccayana/01-sandhi-kappa.md
+    python3 herramientas/generar_capitulo.py kaccayana/01-sandhi-kappa.en.md
 
 La fuente es el markdown; el HTML es salida y no debe editarse a mano.
+Un maestro `NN-nombre.en.md` es la edición inglesa del mismo capítulo: usa
+los mismos metadatos de CAPITULOS (más `titulo_en`), las cadenas de
+IDIOMAS["en"], y se publica en site/en/<obra>/<slug>/. Las dos páginas se
+enlazan entre sí (botón EN/ES y `hreflang`) sólo si la otra existe.
 Los estilos y la lógica son compartidos (site/assets/); este script sólo
 produce la estructura del capítulo.
 """
@@ -29,15 +34,28 @@ CAPITULOS = {
         "num": 1,
         "titulo_pali": "1-Sandhi-Kappa",
         "titulo_es": "1-Capítulo de Sandhi",
+        "titulo_en": "1-Sandhi Chapter",
         "anterior": None,
         "siguiente": "2-Nāma-Kappa",
-        "version": "1.4",
-        "version_fecha": "2026-08-20",
-        "version_nota": "Restituida desde el PDF de la edición base la "
-                        "negrita que Nandisena pone dentro del vutti (100 "
-                        "tramos): las letras que el propio sutta nombra. Las "
-                        "referencias canónicas desatan la sigla al pasar el "
-                        "cursor. Bloque pāḷi a 16 px y tinta plena.",
+        "version": "1.5",
+        "version_fecha": "2026-09-03",
+        "version_nota": "Las citas canónicas pasan de las notas al pie al "
+                        "bloque pāḷi, en línea y con la forma de la edición "
+                        "base (Khu. i, 67), como en Nāma y Kāraka; repuestas "
+                        "las que faltaban (§20, §36). Repuestos el "
+                        "contraejemplo «upanīyati» de §26 con su nota y las "
+                        "notas de variante de Nandisena (§1, §7, §28, §35, "
+                        "§51). Corregidas seis erratas (§15–16, §31, §32, "
+                        "§41 y el emergente de kvaci). Edición inglesa "
+                        "paralela en /en/.",
+        "version_en": "1.0",
+        "version_fecha_en": "2026-09-03",
+        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+                           "translation with the apparatus of the Spanish "
+                           "edition (formation sequences, counter-examples, "
+                           "word-count breakdowns after Thitzana, glossary "
+                           "tooltips) and a fixed glossary for the technical "
+                           "terms.",
     },
     "02-nama-kappa": {
         "slug": "nama",
@@ -77,6 +95,152 @@ CAPITULOS = {
                         "cada referencia se desata al pasar el cursor.",
     },
 }
+
+# ── Idiomas ────────────────────────────────────────────────────────────
+# Todo lo que la página dice por su cuenta (no el texto del capítulo) sale de
+# aquí. La edición inglesa es decisión de Angel (sesión 45), con permiso del
+# Venerable Nandisena: su inglés donde lo hay, el aparato del español encima.
+IDIOMAS = {
+    "es": {
+        "lang": "es",
+        "raiz": "../../",
+        "obra_sub": None,                     # el de CAPITULOS
+        "kandas": ["Primera sección", "Segunda sección", "Tercera sección",
+                   "Cuarta sección", "Quinta sección", "Sexta sección",
+                   "Séptima sección", "Octava sección"],
+        "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                  "julio", "agosto", "septiembre", "octubre", "noviembre",
+                  "diciembre"],
+        "fecha": "{d} de {mes} de {a}",
+        "version": "Versión",
+        "voz": ("voz", "voces"),
+        "kacc_sutta": "Kaccāyana Sutta",
+        "rup_sutta": "Rūpasiddhi Sutta",
+        "sadd_sutta": "Saddanīti-Suttamālā Sutta",
+        "tomo_pag": "{obra} · tomo {tomo}, página {pag}",
+        "mostrar_mas": "Mostrar más (formación, etc.)",
+        "ver_notas": "Ver notas",
+        "estudiado": "Estudiado",
+        "marcar_estudiado": "Marcar como estudiado",
+        "enlace": "Enlace",
+        "copiar_enlace": "Copiar enlace a este sutta",
+        "copiar": "Copiar §",
+        "copiar_sutta": "Copiar sutta al portapapeles",
+        "inicio": "Inicio ↑",
+        "volver_inicio": "Volver al inicio",
+        "versos": "Versos introductorios",
+        "cap_anterior": "Capítulo anterior",
+        "cap_siguiente": "Capítulo siguiente",
+        "introduccion": "Introducción",
+        "capitulo_de": "Capítulo {n} de 8",
+        "toc_aria": "Ir a un sutta o filtrar por título",
+        "toc_placeholder": "Ir a §… / filtrar",
+        "toc_label": "Tabla de contenidos",
+        "kanda_ir": "Ir a la {es} ({pali}, §{a}–§{b})",
+        "kanda_aria": "Ir al sutta número…",
+        "kanda_label": "Kaṇḍa:",
+        "modo_oscuro": "Alternar modo oscuro",
+        "modo_oscuro_t": "Modo oscuro/claro",
+        "edicion": "Edición bilingüe Pāḷi–Español",
+        "secciones": ("sección", "secciones"),
+        "buscar": "Buscar sutta (pāḷi o español)…",
+        "imprimir": "Imprimir / PDF",
+        "expandir": "Expandir todo",
+        "colapsar": "Colapsar todo",
+        "reducir": "Reducir texto",
+        "aumentar": "Aumentar texto",
+        "estudiados": "estudiados",
+        "estudiados_t": "Suttas estudiados",
+        "pie_ayuda": "Pasa el cursor sobre los términos pāḷi o los superíndices "
+                     "numéricos para ver su significado. Expande «Ver notas» "
+                     "para leer las notas completas.",
+        "lang_btn": "EN",
+        "lang_btn_aria": "View this chapter in English",
+        # cadenas que usa pali.js
+        "js": {
+            "estudiados": "estudiados", "abiertos": "abiertos",
+            "ocultar_notas": "Ocultar notas", "ver_notas": "Ver notas",
+            "ocultar": "Ocultar", "mostrar_mas": "Mostrar más (formación, etc.)",
+            "encontrados": "sutta(s) encontrado(s)", "copiado": "✓ Copiado",
+            "copiar": "Copiar §",
+        },
+    },
+    "en": {
+        "lang": "en",
+        "raiz": "../../../",
+        "obra_sub": "Kaccāyana's Grammar",
+        "kandas": ["First section", "Second section", "Third section",
+                   "Fourth section", "Fifth section", "Sixth section",
+                   "Seventh section", "Eighth section"],
+        "meses": ["January", "February", "March", "April", "May", "June",
+                  "July", "August", "September", "October", "November",
+                  "December"],
+        "fecha": "{d} {mes} {a}",
+        "version": "Version",
+        "voz": ("word", "words"),
+        "kacc_sutta": "Kaccāyana Sutta",
+        "rup_sutta": "Rūpasiddhi Sutta",
+        "sadd_sutta": "Saddanīti-Suttamālā Sutta",
+        "tomo_pag": "{obra} · vol. {tomo}, p. {pag}",
+        "mostrar_mas": "Show more (formation, etc.)",
+        "ver_notas": "Show notes",
+        "estudiado": "Studied",
+        "marcar_estudiado": "Mark as studied",
+        "enlace": "Link",
+        "copiar_enlace": "Copy link to this sutta",
+        "copiar": "Copy §",
+        "copiar_sutta": "Copy sutta to clipboard",
+        "inicio": "Top ↑",
+        "volver_inicio": "Back to top",
+        "versos": "Introductory verses",
+        "cap_anterior": "Previous chapter",
+        "cap_siguiente": "Next chapter",
+        "introduccion": "Introduction",
+        "capitulo_de": "Chapter {n} of 8",
+        "toc_aria": "Go to a sutta or filter by title",
+        "toc_placeholder": "Go to §… / filter",
+        "toc_label": "Contents",
+        "kanda_ir": "Go to the {es} ({pali}, §{a}–§{b})",
+        "kanda_aria": "Go to sutta number…",
+        "kanda_label": "Kaṇḍa:",
+        "modo_oscuro": "Toggle dark mode",
+        "modo_oscuro_t": "Dark/light mode",
+        "edicion": "Bilingual Pāḷi–English edition",
+        "secciones": ("section", "sections"),
+        "buscar": "Search sutta (Pāḷi or English)…",
+        "imprimir": "Print / PDF",
+        "expandir": "Expand all",
+        "colapsar": "Collapse all",
+        "reducir": "Smaller text",
+        "aumentar": "Larger text",
+        "estudiados": "studied",
+        "estudiados_t": "Suttas studied",
+        "pie_ayuda": "Hover over the Pāḷi terms or the numeric superscripts to "
+                     "see their meaning. Expand “Show notes” to read the full "
+                     "notes.",
+        "lang_btn": "ES",
+        "lang_btn_aria": "Ver este capítulo en español",
+        "js": {
+            "estudiados": "studied", "abiertos": "open",
+            "ocultar_notas": "Hide notes", "ver_notas": "Show notes",
+            "ocultar": "Hide", "mostrar_mas": "Show more (formation, etc.)",
+            "encontrados": "sutta(s) found", "copiado": "✓ Copied",
+            "copiar": "Copy §",
+        },
+    },
+}
+L = IDIOMAS["es"]          # el idioma en curso; main() lo fija
+
+COPYRIGHT_EN = (
+    "Pāḷi text and English translation by Bhikkhu U Nandisena (ITBMU); "
+    "edition, apparatus and glossary by the Instituto de Estudios Buddhistas "
+    "Hispano (IEBH). This material may be reproduced for personal use and "
+    "distributed free of charge. Copyright © 2026 IEBH. Published under "
+    '<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" '
+    'rel="license">CC BY-NC-ND 4.0</a> · DOI '
+    '<a href="https://doi.org/10.5281/zenodo.21948010">'
+    "10.5281/zenodo.21948010</a>."
+)
 
 COPYRIGHT = (
     "Edición del texto en pāḷi y traducción al español por Bhikkhu Nandisena. "
@@ -123,7 +287,7 @@ def kanda_pali(k):
 
 
 def kanda_es(k):
-    return KANDAS_ES[indice_kanda(k)]
+    return L["kandas"][indice_kanda(k)]
 
 
 # ── Utilidades de texto ─────────────────────────────────────────────────
@@ -249,6 +413,10 @@ ABREVIATURAS = {
     "SA":           "Saṃyutta-nikāya-aṭṭhakathā",
     "AA":           "Aṅguttara-nikāya-aṭṭhakathā",
     "DhA":          "Dhammapada-aṭṭhakathā",
+    "JA":           "Jātaka-aṭṭhakathā",
+    "VinA":         "Vinaya-aṭṭhakathā",
+    "AbhiA":        "Abhidhamma-aṭṭhakathā",
+    "SuttanipātaA": "Suttanipāta-aṭṭhakathā",
     "UdānaA":       "Udāna-aṭṭhakathā",
     "PetavatthuA":  "Petavatthu-aṭṭhakathā",
     "Sad":          "Saddanīti",
@@ -279,9 +447,9 @@ def citas_canonicas(t):
         cuerpo = m.group("cuerpo").strip()
         simple = RE_CITA_SIMPLE.match(cuerpo)
         if simple:
-            glosa = "{0} · tomo {1}, página {2}".format(
-                ABREVIATURAS[simple.group("sigla")],
-                simple.group("tomo").lower(), simple.group("pag"))
+            glosa = L["tomo_pag"].format(
+                obra=ABREVIATURAS[simple.group("sigla")],
+                tomo=simple.group("tomo").lower(), pag=simple.group("pag"))
         else:
             vistas, obras = set(), []
             for s in RE_SIGLA_EN_CITA.findall(cuerpo):
@@ -320,8 +488,8 @@ def leer_notas(lineas):
 
 RE_CIERRE_PALI = re.compile(r'^\*\*(Iti\s+.+?kaṇḍo)\.?\*\*$')
 RE_FIN_PALI = re.compile(r'^\*\*(.+?[Nn]iṭṭhito)\.?\*\*$')
-RE_FIN_ES = re.compile(r'^\*\*(Fin del capítulo.+?)\.?\*\*$')
-RE_CIERRE_ES = re.compile(r'^\*\*(Así termina la .+?)\.?\*\*$')
+RE_FIN_ES = re.compile(r'^\*\*((?:Fin del capítulo|End of the .+? [Cc]hapter).*?)\.?\*\*$')
+RE_CIERRE_ES = re.compile(r'^\*\*((?:Así termina la|Thus ends the) .+?)\.?\*\*$')
 
 
 def separar_cierre(cuerpo):
@@ -505,10 +673,12 @@ def parrafos(lineas, notas, clase="rest-para"):
             out.append('<div class="formation-title"><strong>{0}</strong></div>'
                        .format(inline(mt.group(1), notas)))
             continue
-        me = re.match(r'^(Secuencia|Ejemplos?[^:]*|Contraejemplos?[^:]*):\s*$', t)
+        me = re.match(r'^(Secuencia|Ejemplos?[^:]*|Contraejemplos?[^:]*'
+                      r'|Sequence|Examples?[^:]*|Counter-examples?[^:]*):\s*$', t)
         if me:
             volcar_buf()
-            ejemplos[0] = me.group(1).startswith(("Ejemplo", "Contraejemplo"))
+            ejemplos[0] = me.group(1).startswith(
+                ("Ejemplo", "Contraejemplo", "Example", "Counter-example"))
             out.append('<div class="section-label">{0}</div>'
                        .format(inline(desescapar(me.group(0).rstrip(":")), notas)))
             continue
@@ -585,10 +755,10 @@ def render_sutta(s, notas):
             'onclick="toggleSeq(\'{0}seq\', this)">'
             '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
             '<path d="M4 6h12M4 10h8M4 14h10"></path></svg>\n'
-            '        Mostrar más (formación, etc.)\n      </button>\n'
+            '        {2}\n      </button>\n'
             '<div class="collapsible-content" id="{0}seq">'
             '<div class="rest-content">{1}</div></div>\n'
-        ).format(sid, cuerpo)
+        ).format(sid, cuerpo, L["mostrar_mas"])
 
     # notas al pie usadas en este sutta (primero las del encabezado)
     usadas = []
@@ -611,30 +781,31 @@ def render_sutta(s, notas):
             'onclick="toggleSeq(\'{0}fn\', this)">'
             '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
             '<path d="M4 6h12M4 10h8M4 14h10"></path></svg>\n'
-            '        Ver notas ({1})\n      </button>\n'
+            '        {3} ({1})\n      </button>\n'
             '<div class="collapsible-content" id="{0}fn">'
             '<div class="fn-block">{2}</div></div>\n'
-        ).format(sid, len(usadas), items)
+        ).format(sid, len(usadas), items, L["ver_notas"])
 
     desglose_html = ""
     if s["desglose"]:
-        voces = "{0} {1}".format(s["voces"], "voz" if s["voces"] == 1 else "voces")
+        voces = "{0} {1}".format(s["voces"], L["voz"][0] if s["voces"] == 1 else L["voz"][1])
         desglose_html = '<div class="sutta-breakdown">[{0} = {1}]</div>'.format(
             escapar_html(s["desglose"]), voces)
 
     ref = ('<span class="sutta-ref">'
            '<span class="ref-tip"><span class="ref-tip-term">{0}</span>'
-           '<span class="ref-tip-box">Kaccāyana Sutta</span></span>. '
+           '<span class="ref-tip-box">{3}</span></span>. '
            '<span class="ref-tip"><span class="ref-tip-term">{1}</span>'
-           '<span class="ref-tip-box">Rūpasiddhi Sutta{2}</span></span>.</span>'
-           ).format(n, s["rup"], "s" if "," in s["rup"] else "")
+           '<span class="ref-tip-box">{4}{2}</span></span>.</span>'
+           ).format(n, s["rup"], "s" if "," in s["rup"] else "",
+                    L["kacc_sutta"], L["rup_sutta"])
 
     sadd_html = ""
     if s["sadd"]:
         sadd_html = (' <span class="sutta-ref-num"><span class="ref-tip">'
                      '<span class="ref-tip-term">({0})</span>'
-                     '<span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span>'
-                     '</span></span>').format(", ".join(s["sadd"]))
+                     '<span class="ref-tip-box">{1}</span>'
+                     '</span></span>').format(", ".join(s["sadd"]), L["sadd_sutta"])
     if s["notas_hdr"]:
         sadd_html += marcar_notas(
             "".join("[^{0}]".format(k) for k in s["notas_hdr"]), notas)
@@ -650,43 +821,35 @@ def render_sutta(s, notas):
         'viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>\n'
         '</div>\n'
         '<div class="sutta-body">\n{palib}{gloss}{vutti}{resto}{notas}'
-        '<div class="sutta-footer">\n'
-        '<span class="done-wrap" onclick="toggleDone(\'{sid}\')" title="Marcar como estudiado">\n'
-        '<span class="done-cb" id="cb-{sid}"></span>\n'
-        '<span class="done-label">Estudiado</span>\n</span>\n'
-        '<button class="share-btn" onclick="shareSutta(\'{sid}\')" title="Copiar enlace a este sutta">\n'
-        '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
-        '<circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle>'
-        '<circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>\n'
-        '          Enlace\n        </button>\n'
-        '<button class="copy-btn" onclick="copySutta(\'{sid}\')" title="Copiar sutta al portapapeles">Copiar §</button>\n'
-        '<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">\n'
-        '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
-        '<path d="M10 15V5M5 10l5-5 5 5"></path></svg>\n'
-        '          Inicio ↑\n        </button>\n'
-        '</div>\n</div>\n</div>\n'
-    ).format(sid=sid, ref=ref, sadd=sadd_html,
+        '{pie}'
+        '</div>\n</div>\n'
+    ).format(sid=sid, ref=ref, sadd=sadd_html, pie=pie_tarjeta(sid),
              pali=marcar_notas(escapar_html(s["pali_notas"]), notas),
              desglose=desglose_html, palib=pali_html, gloss=gloss_html,
              vutti=vutti_html, resto=resto_html, notas=notas_html)
 
 
-PIE_TARJETA = (
-    '<div class="sutta-footer">\n'
-    '<span class="done-wrap" onclick="toggleDone(\'{sid}\')" title="Marcar como estudiado">\n'
-    '<span class="done-cb" id="cb-{sid}"></span>\n'
-    '<span class="done-label">Estudiado</span>\n</span>\n'
-    '<button class="share-btn" onclick="shareSutta(\'{sid}\')" title="Copiar enlace a este sutta">\n'
-    '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
-    '<circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle>'
-    '<circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>\n'
-    '          Enlace\n        </button>\n'
-    '<button class="copy-btn" onclick="copySutta(\'{sid}\')" title="Copiar sutta al portapapeles">Copiar §</button>\n'
-    '<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">\n'
-    '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
-    '<path d="M10 15V5M5 10l5-5 5 5"></path></svg>\n'
-    '          Inicio ↑\n        </button>\n'
-    '</div>\n')
+def pie_tarjeta(sid):
+    return (
+        '<div class="sutta-footer">\n'
+        '<span class="done-wrap" onclick="toggleDone(\'{sid}\')" title="{marcar}">\n'
+        '<span class="done-cb" id="cb-{sid}"></span>\n'
+        '<span class="done-label">{estudiado}</span>\n</span>\n'
+        '<button class="share-btn" onclick="shareSutta(\'{sid}\')" title="{copiar_enlace}">\n'
+        '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
+        '<circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle>'
+        '<circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>\n'
+        '          {enlace}\n        </button>\n'
+        '<button class="copy-btn" onclick="copySutta(\'{sid}\')" title="{copiar_sutta}">{copiar}</button>\n'
+        '<button class="back-top-btn" onclick="volverArriba()" title="{volver}">\n'
+        '<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20">'
+        '<path d="M10 15V5M5 10l5-5 5 5"></path></svg>\n'
+        '          {inicio}\n        </button>\n'
+        '</div>\n').format(
+            sid=sid, marcar=L["marcar_estudiado"], estudiado=L["estudiado"],
+            copiar_enlace=L["copiar_enlace"], enlace=L["enlace"],
+            copiar_sutta=L["copiar_sutta"], copiar=L["copiar"],
+            volver=L["volver_inicio"], inicio=L["inicio"])
 
 
 def render_intro(versos, notas):
@@ -702,26 +865,34 @@ def render_intro(versos, notas):
         '<div class="sutta-card" id="intro">'
         '<div class="sutta-header" onclick="toggleCard(\'intro\')" role="button" tabindex="0">'
         '<div class="sutta-meta"><div class="sutta-ref-line">'
-        '<span class="sutta-pali-title">Versos introductorios</span></div></div>'
+        '<span class="sutta-pali-title">{2}</span></div></div>'
         '<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" '
         'viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg></div>'
         '<div class="sutta-body"><div class="intro-block">{0}</div>\n{1}</div>\n</div>\n'
-    ).format("".join(bloques), PIE_TARJETA.format(sid="intro"))
+    ).format("".join(bloques), pie_tarjeta("intro"), L["versos"])
 
 
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 
 
+def datos_version(meta):
+    """(versión, fecha, nota) del idioma en curso; en inglés, las claves _en."""
+    if L["lang"] == "en":
+        return (meta.get("version_en"), meta.get("version_fecha_en"),
+                meta.get("version_nota_en"))
+    return meta.get("version"), meta.get("version_fecha"), meta.get("version_nota")
+
+
 def insignia_version(meta):
     """Insignia de versión en la cabecera, con la nota como título emergente."""
-    v, f = meta.get("version"), meta.get("version_fecha")
+    v, f, nota = datos_version(meta)
     if not v or not f:
         return ""
     a, m, d = (int(x) for x in f.split("-"))
-    largo = "{0} de {1} de {2}".format(d, MESES[m - 1], a)
-    titulo = "Versión {0} · {1}{2}".format(
-        v, largo, " · " + meta["version_nota"] if meta.get("version_nota") else "")
+    largo = L["fecha"].format(d=d, mes=L["meses"][m - 1], a=a)
+    titulo = "{3} {0} · {1}{2}".format(
+        v, largo, " · " + nota if nota else "", L["version"])
     return ('<span aria-label="{0}" class="version-badge" data-tip="{0}">'
             'v{1}<time datetime="{2}">{2}</time></span>').format(
         escapar_html(titulo), v, f)
@@ -755,15 +926,14 @@ def barra_capitulos(meta):
     def buscar(titulo):
         for clave, m in CAPITULOS.items():
             if m["titulo_pali"] == titulo:
-                destino = os.path.join(RAIZ, "site", m["obra_slug"], m["slug"],
-                                       "index.html")
+                destino = ruta_salida(m)
                 return m, os.path.exists(destino)
         return None, False
 
     def boton(titulo, etiqueta, flecha, lado):
         if not titulo:
             cuerpo = ('<span><span class="chapter-nav-label">{0}</span>'
-                      'Introducción</span>').format(etiqueta)
+                      '{1}</span>').format(etiqueta, L["introduccion"])
             return '<button class="chapter-nav-btn disabled">{0}</button>'.format(
                 flecha + cuerpo if lado == "izq" else cuerpo + flecha)
         m, existe = buscar(titulo)
@@ -783,21 +953,21 @@ def barra_capitulos(meta):
     return (
         '<div class="chapter-nav">\n{0}\n'
         '<div class="chapter-nav-title"><strong>{1}</strong><br/>'
-        '<span style="font-size:11px">Capítulo {2} de 8</span></div>\n{3}\n</div>\n'
-    ).format(boton(meta.get("anterior"), "Capítulo anterior", izq, "izq"),
-             escapar_html(meta["titulo_pali"]), meta["num"],
-             boton(meta.get("siguiente"), "Capítulo siguiente", der, "der"))
+        '<span style="font-size:11px">{2}</span></div>\n{3}\n</div>\n'
+    ).format(boton(meta.get("anterior"), L["cap_anterior"], izq, "izq"),
+             escapar_html(meta["titulo_pali"]), L["capitulo_de"].format(n=meta["num"]),
+             boton(meta.get("siguiente"), L["cap_siguiente"], der, "der"))
 
 
 def version_pie(meta):
-    v, f = meta.get("version"), meta.get("version_fecha")
+    v, f, nota = datos_version(meta)
     if not v or not f:
         return ""
     a, m, d = (int(x) for x in f.split("-"))
-    largo = "{0} de {1} de {2}".format(d, MESES[m - 1], a)
-    nota = " " + meta["version_nota"] if meta.get("version_nota") else ""
-    return ('<p class="version-foot">Versión {0} — <time datetime="{1}">{2}'
-            '</time>.{3}</p>').format(v, f, largo, escapar_html(nota))
+    largo = L["fecha"].format(d=d, mes=L["meses"][m - 1], a=a)
+    nota = " " + nota if nota else ""
+    return ('<p class="version-foot">{4} {0} — <time datetime="{1}">{2}'
+            '</time>.{3}</p>').format(v, f, largo, escapar_html(nota), L["version"])
 
 
 def rangos_kanda(suttas):
@@ -815,10 +985,10 @@ def render_toc(suttas, meta):
     partes = ['<p class="toc-title">{0}</p>'.format(meta["titulo_pali"])]
     partes.append(
         '<div class="toc-jump-wrap">'
-        '<input aria-label="Ir a un sutta o filtrar por título" '
+        '<input aria-label="{0}" '
         'class="toc-jump" id="toc-jump" oninput="filterToc(this.value)" '
-        'onkeydown="tocJumpKey(event)" placeholder="Ir a §… / filtrar" '
-        'type="search"/></div>')
+        'onkeydown="tocJumpKey(event)" placeholder="{1}" '
+        'type="search"/></div>'.format(L["toc_aria"], L["toc_placeholder"]))
     kanda = None
     for s in suttas:
         if s["kanda"] != kanda:
@@ -854,15 +1024,15 @@ def render_kanda_nav(suttas):
             'onclick="jumpKanda({0})" data-tip="{1}">'
             '{2}</button>'.format(
                 k,
-                "Ir a la {0} ({1}, §{2}–§{3})".format(
-                    kanda_es(k).lower(), kanda_pali(k), a, b),
+                L["kanda_ir"].format(
+                    es=kanda_es(k).lower(), pali=kanda_pali(k), a=a, b=b),
                 kanda_pali(k).split("-")[0]))
     return ('<div class="kanda-nav" id="kanda-nav">'
-            '<span class="kanda-nav-label">Kaṇḍa:</span>{0}'
-            '<input aria-label="Ir al sutta número…" class="kanda-jump" '
+            '<span class="kanda-nav-label">{1}</span>{0}'
+            '<input aria-label="{2}" class="kanda-jump" '
             'id="kanda-jump" onkeydown="kandaJumpKey(event)" '
             'placeholder="§…" type="search"/></div>'
-            .format("".join(botones)))
+            .format("".join(botones), L["kanda_label"], L["kanda_aria"]))
 
 
 def version_assets():
@@ -899,27 +1069,72 @@ def render(cap, meta, notas):
             cuerpo.append(cierre_kanda(s["cierre"]))
     cuerpo.append('</div>\n')
 
+    es_en = L["lang"] == "en"
+    obra_sub = L["obra_sub"] or meta["obra_sub"]
+    titulo_es = meta.get("titulo_en", meta["titulo_es"]) if es_en else meta["titulo_es"]
+    raiz = L["raiz"]
+    # la otra lengua, sólo si su página existe
+    otra = IDIOMAS["es" if es_en else "en"]
+    otra_ruta = ruta_salida(meta, otra)
+    alt_html = lang_btn = ""
+    if os.path.exists(otra_ruta):
+        alt_url = "/{0}{1}/{2}/".format(
+            "" if es_en else "en/", meta["obra_slug"], meta["slug"])
+        alt_html = ('<link href="{0}" hreflang="{1}" rel="alternate"/>'
+                    .format(alt_url, otra["lang"]))
+        lang_btn = ('<a aria-label="{2}" href="{0}" id="lang-btn" '
+                    'onclick="try{{localStorage.setItem(\'pali_lang\',\'{1}\')}}'
+                    'catch(e){{}};this.href=\'{0}\'+location.hash">{3}</a>'
+                    .format(alt_url, otra["lang"], L["lang_btn_aria"], L["lang_btn"]))
+        # La elección viaja con el lector (clave «pali_lang», la misma de la
+        # portada y los recursos): si eligió la otra lengua, se le lleva a la
+        # otra página, con su ancla. Pulsar el botón cambia la elección.
+        lang_btn += ('<script>try{{if(localStorage.getItem(\'pali_lang\')===\'{1}\')'
+                     'location.replace(\'{0}\'+location.hash)}}catch(e){{}}</script>'
+                     .format(alt_url, otra["lang"]))
     return PLANTILLA.format(
-        obra=meta["obra"], obra_sub=meta["obra_sub"],
+        lang=L["lang"], raiz=raiz, alt=alt_html, lang_btn=lang_btn,
+        volver=raiz + meta["obra_slug"] + "/" if es_en else "../",
+        obra=meta["obra"], obra_sub=obra_sub,
         obra_display=marcar_diacriticos(escapar_html(meta["obra"])),
         insignia=insignia_version(meta),
         fin_capitulo=cierre_capitulo(),
         barra_capitulos=barra_capitulos(meta),
-        copyright=COPYRIGHT,
+        copyright=COPYRIGHT_EN if es_en else COPYRIGHT,
         version_pie=version_pie(meta),
         primero=min(s["n"] for s in suttas), ultimo=max(s["n"] for s in suttas),
-        version=meta.get("version", ""), version_fecha=meta.get("version_fecha", ""),
-        titulo_pali=meta["titulo_pali"], titulo_es=meta["titulo_es"],
+        version=datos_version(meta)[0] or "", version_fecha=datos_version(meta)[1] or "",
+        titulo_pali=meta["titulo_pali"], titulo_es=titulo_es,
         total=total, nk=nk,
-        nk_txt="{0} {1}".format(nk, "sección" if nk == 1 else "secciones"),
+        nk_txt="{0} {1}".format(nk, L["secciones"][0] if nk == 1 else L["secciones"][1]),
+        edicion=L["edicion"], buscar=L["buscar"], imprimir=L["imprimir"],
+        expandir=L["expandir"], colapsar=L["colapsar"], reducir=L["reducir"],
+        aumentar=L["aumentar"], estudiados=L["estudiados"],
+        estudiados_t=L["estudiados_t"], pie_ayuda=L["pie_ayuda"],
+        modo_oscuro=L["modo_oscuro"], modo_oscuro_t=L["modo_oscuro_t"],
+        volver_inicio=L["volver_inicio"], toc_label=L["toc_label"],
+        js_textos=json.dumps(L["js"], ensure_ascii=False),
         toc=render_toc(suttas, meta),
         kanda_nav=render_kanda_nav(suttas),
         assets_v=version_assets(),
         cuerpo="".join(cuerpo),
-        done_key="{0}_{1}_done".format(meta["obra_slug"], meta["slug"]),
-        cap_id="{0}-{1}".format(meta["obra_slug"], meta["slug"]),
-        epub="{0}-{1}.epub".format(meta["obra"].split("-")[0], meta["titulo_pali"]),
+        done_key="{0}_{1}{2}_done".format(meta["obra_slug"], meta["slug"],
+                                         "_en" if es_en else ""),
+        cap_id="{0}-{1}{2}".format(meta["obra_slug"], meta["slug"],
+                                  "-en" if es_en else ""),
+        epub="{0}-{1}{2}.epub".format(meta["obra"].split("-")[0],
+                                     meta["titulo_pali"], "-en" if es_en else ""),
     )
+
+
+def ruta_salida(meta, idioma=None):
+    """site/<obra>/<slug>/index.html, o site/en/<obra>/<slug>/ en inglés."""
+    idioma = idioma or L
+    partes = [RAIZ, "site"]
+    if idioma["lang"] != "es":
+        partes.append(idioma["lang"])
+    partes += [meta["obra_slug"], meta["slug"], "index.html"]
+    return os.path.join(*partes)
 
 
 def cierre_capitulo():
@@ -951,18 +1166,19 @@ def cierre_kanda(c):
 
 
 PLANTILLA = '''<!DOCTYPE html>
-<html lang="es">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+{alt}
 <title>{obra} · {titulo_pali}</title>
 <meta content="{version}" name="version"/>
 <meta content="{version_fecha}" name="version-date"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/pali.css?v={assets_v}" rel="stylesheet"/>
+<link href="{raiz}assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
 <body>
 <script>/* Tema guardado (clave compartida con /recursos/sandhi/), antes de pintar. */
@@ -971,45 +1187,45 @@ if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
 document.body.classList.add('dark');}}catch(e){{}}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
-<button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
-<button aria-label="Volver al inicio" id="top-btn" onclick="volverArriba()" title="Volver al inicio">↑</button>
-<nav aria-label="Tabla de contenidos" id="toc">
+<button aria-label="{modo_oscuro}" id="dark-btn" onclick="toggleDark()" title="{modo_oscuro_t}">🌓</button>
+{lang_btn}
+<button aria-label="{volver_inicio}" id="top-btn" onclick="volverArriba()" title="{volver_inicio}">↑</button>
+<nav aria-label="{toc_label}" id="toc">
 {toc}
 </nav>
 <div id="main">
 <div id="inner">
 <div class="page-hdr">
-<a class="idx-back" href="../">← {obra}</a>
+<a class="idx-back" href="{volver}">← {obra}</a>
 <div class="hdr-marca"><span class="marca-arbol"></span></div>
 <div class="hdr-grammar">{obra_display}</div>
 <div class="hdr-sub">{obra_sub}</div>
 <div class="hdr-chapter">{titulo_pali} · {titulo_es}</div>
-<div class="hdr-meta">Edición bilingüe Pāḷi–Español · {total} suttas · {nk_txt}{insignia}</div>
+<div class="hdr-meta">{edicion} · {total} suttas · {nk_txt}{insignia}</div>
 </div>
 <div class="search-wrap">
-<input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="Buscar sutta (pāḷi o español)…" type="search"/>
+<input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="{buscar}" type="search"/>
 <svg class="search-icon" fill="none" height="14" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20" width="14"><circle cx="8" cy="8" r="5"></circle><path d="M13 13l4 4"></path></svg>
 <div id="search-count"></div>
 </div>
 {barra_capitulos}
 <div class="controls">
-<button class="ctrl-btn" onclick="window.print()">Imprimir / PDF</button>
+<button class="ctrl-btn" onclick="window.print()">{imprimir}</button>
 <div class="ctrl-sep"></div>
-<button class="ctrl-btn" onclick="expandAll()">Expandir todo</button>
-<button class="ctrl-btn" onclick="collapseAll()">Colapsar todo</button>
+<button class="ctrl-btn" onclick="expandAll()">{expandir}</button>
+<button class="ctrl-btn" onclick="collapseAll()">{colapsar}</button>
 <div class="ctrl-sep"></div>
-<button class="ctrl-btn" onclick="changeFont(-1)" title="Reducir texto">A−</button>
+<button class="ctrl-btn" onclick="changeFont(-1)" title="{reducir}">A−</button>
 <span id="font-lbl">100%</span>
-<button class="ctrl-btn" onclick="changeFont(1)" title="Aumentar texto">A+</button>
-<span class="done-count" id="done-count" title="Suttas estudiados">0 / {total} estudiados</span>
+<button class="ctrl-btn" onclick="changeFont(1)" title="{aumentar}">A+</button>
+<span class="done-count" id="done-count" title="{estudiados_t}">0 / {total} {estudiados}</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
 </div>
 {kanda_nav}{cuerpo}{fin_capitulo}
 <div class="footer-box">
 <div class="footer-box-main">
 <strong>{obra}</strong> — {titulo_pali} · {total} suttas (§{primero}–§{ultimo}).
-Pasa el cursor sobre los términos pāḷi o los superíndices numéricos para ver
-su significado. Expande «Ver notas» para leer las notas completas.
+{pie_ayuda}
 </div>
 <div class="footer-box-copy">
 <span class="marca-lockup"></span>
@@ -1026,11 +1242,13 @@ window.PALI_CAPITULO = {{
   obraSubtitulo: '{obra_sub}',
   capituloPali:  '{titulo_pali}',
   capituloEs:    '{titulo_es}',
-  epubNombre:    '{epub}'
+  epubNombre:    '{epub}',
+  idioma:        '{lang}',
+  textos:        {js_textos}
 }};
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="../../assets/pali.js?v={assets_v}"></script>
+<script src="{raiz}assets/pali.js?v={assets_v}"></script>
 </body>
 </html>
 '''
@@ -1040,8 +1258,11 @@ def main():
     if len(sys.argv) < 2:
         print(__doc__)
         return 1
+    global L
     ruta = sys.argv[1]
     clave = os.path.splitext(os.path.basename(ruta))[0]
+    if clave.endswith(".en"):
+        clave, L = clave[:-3], IDIOMAS["en"]
     if clave not in CAPITULOS:
         print("No hay metadatos para '{0}'. Añádelos en CAPITULOS.".format(clave))
         return 1
@@ -1061,7 +1282,7 @@ def main():
     cap = parsear(ruta_abs)
     html = render(cap, meta, cap["notas"])
 
-    destino = os.path.join(RAIZ, "site", meta["obra_slug"], meta["slug"], "index.html")
+    destino = ruta_salida(meta)
     os.makedirs(os.path.dirname(destino), exist_ok=True)
     with open(destino, "w", encoding="utf-8") as f:
         f.write(html)

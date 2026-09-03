@@ -173,6 +173,12 @@ Cada `git push` a `main` despliega en
     # capítulo de una gramática
     python3 herramientas/generar_capitulo.py kaccayana/02-nama-kappa.md
 
+    # su edición inglesa, si existe el maestro paralelo NN-nombre.en.md
+    # (sesión 45: sale en site/en/<obra>/<slug>/, con botón EN/ES y hreflang;
+    #  generar_todo.py lo hace solo, y regenera el español después para que
+    #  las dos páginas se vean)
+    python3 herramientas/generar_capitulo.py kaccayana/01-sandhi-kappa.en.md
+
     # documento en prosa (reglas, glosarios, tablas)
     python3 herramientas/generar_recurso.py recursos/<archivo>.md
 
@@ -188,6 +194,22 @@ nueva del repositorio hay que instalarlo una vez con
 
 Detalles del formato del markdown y de lo que el generador deduce solo:
 `comun/convenciones.md`, secciones 2, 3, 3 bis y 3 ter.
+
+## La edición inglesa (sesión 45)
+
+Con permiso del Venerable Nandisena. **Su inglés donde lo hay; donde no
+tradujo, se traduce siguiendo al español; donde el español amplió los
+ejemplos, el inglés sigue al español; glosario inglés fijo** (memorando
+`docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md`, §2; registro de
+desviaciones, §5). Un maestro por capítulo, `kaccayana/NN-nombre.en.md`, con
+la misma estructura que el español; las cadenas de la página salen de
+`IDIOMAS` en `generar_capitulo.py`. Reglas que no se saltan: la glosa del
+sutta lleva corchetes como el español, pero «follows» (locativo) y «after»
+(ablativo) van sin corchetes (`comun/convenciones.md` §1 bis); *Gaṇa* = «the
+noble Order»; *ṭhāne* en singular; *kvaci / vā / navā* = sometimes /
+optionally / occasionally; las funciones de «ca» con los nombres del
+Venerable (dragging, collecting, accumulating, delimiting, smoothness of
+speech), que están en su apéndice, `docs/fuentes/nandisena-apendice-sandhi-en.md`.
 
 ## Estado de recursos/sandhi
 

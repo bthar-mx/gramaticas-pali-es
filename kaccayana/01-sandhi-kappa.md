@@ -12,14 +12,14 @@
 
 1) Seṭṭhaṃ tilokamahitaṃ abhivandiy’ aggaṃ,  
     Buddhañ ca Dhammam amalaṃ Gaṇam uttamañ ca,  
-    Satthussa tassa vacanatthavaraṃ subuddhuṃ,  
-    Vakkhāmi suttahitam ettha Susandhikappaṃ.  
+    Satthussa tassa vacanatthavaraṃ subuddhuṃ,[^1]  
+    Vakkhāmi suttahitam ettha Susandhikappaṃ.[^2]  
    Habiendo saludado al excelente Buddha, el sumo, honrado por los tres mundos, junto con el puro Dhamma y la noble Orden, expondré aquí el buen capítulo sobre Sandhi, que es beneficioso para la Palabra del Buddha, a fin de comprender bien el noble significado de la Palabra del Maestro.  
 2) Seyyaṃ jineritanayena budhā labhanti,  
     Tañ cāpi tassa vacanatthasubodhanena,  
     Atthañ ca akkharapadesu amohabhāvā,  
     Seyyatthiko padam ato vividhaṃ suṇeyya.  
-   Los sabios alcanzan lo mejor[^1] por medio del camino expuesto por el Victorioso; ese camino lo alcanzan conociendo bien el significado de Su Palabra; el significado lo logran debido a la ausencia de confusión en el sentido de las letras y palabras. Por lo tanto, que aquel que desea lo mejor escuche las diversas \[letras y\] palabras.
+   Los sabios alcanzan lo mejor[^3] por medio del camino expuesto por el Victorioso; ese camino lo alcanzan conociendo bien el significado de Su Palabra; el significado lo logran debido a la ausencia de confusión en el sentido de las letras y palabras. Por lo tanto, que aquel que desea lo mejor escuche las diversas \[letras y\] palabras.
 
 **1\. 1\. Attho akkharasaññāto.** \[Attho \+ akkharasaññāto, 2\]
 
@@ -49,7 +49,7 @@ Y estas letras, que son cuarenta y una comenzando con ‘a’, son de gran utili
 
 ¿Cuáles son éstas? a ā i ī u ū e o; ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma; ya ra la va sa ha ḷa aṃ. Estas se llaman “letras”.
 
-¿Cuál es el beneficio de eso \[de llamarlas “letras”\]? \[Es beneficioso en suttas como\] “Attho akkharasaññāto” (§1).[^2]
+¿Cuál es el beneficio de eso \[de llamarlas “letras”\]? \[Es beneficioso en suttas como\] “Attho akkharasaññāto” (§1).[^4]
 
 ---
 
@@ -135,7 +135,7 @@ Excluyendo las ocho vocales, las letras restantes, que comienzan con ‘ka’ y 
 
 **7\. 9\. Vaggā pañcapañcaso mantā (7).** \[Vaggā \+ pañcapañcaso \+ ma-antā, 3\]
 
-Tesaṃ kho byañjanānaṃ **k**akārādayo makārantā pañcapañcaso akkharavanto {vaggā|agrupadas (grupos de cinco)} nāma honti.
+Tesaṃ kho byañjanānaṃ **k**akārādayo makārantā pañcapañcaso akkharavanto[^5] {vaggā|agrupadas (grupos de cinco)} nāma honti.
 
 Taṃ yathā? ka kha ga gha ṅa; ca cha ja jha ña; ṭa ṭha ḍa ḍha ṇa; ta tha da dha na; pa pha ba bha ma. Iti **vaggā** nāma.
 
@@ -193,13 +193,13 @@ Entre ellas, las “sonoras” son: ga gha ṅa; ja jha ña; ḍa ḍha ṇa; da
 
 Tattha sandhiṃ kattukāmo pubbabyañjanaṃ adhoṭhitaṃ assaraṃ katvā sarañ ca upari katvā sarena viyojaye.
 
-Tatr āyam ādi.[^3]
+Tatr āyam ādi (Khu. i, 67).
 
 ---
 
 Se debería separar de la vocal a la \[consonante\] anterior, que yace debajo, desprovista de vocal.
 
-Aquí, quien desea realizar la combinación eufónica \[sandhi\] debe, haciendo que la consonante previa, que yace debajo, quede desprovista de vocal, y colocando la vocal encima, separar la consonante de la vocal.[^4]
+Aquí, quien desea realizar la combinación eufónica \[sandhi\] debe, haciendo que la consonante previa, que yace debajo, quede desprovista de vocal, y colocando la vocal encima, separar la consonante de la vocal.[^6]
 
 \[Con la frase\] “tatr āyam ādi” \[comienzan los ejemplos\].
 
@@ -219,9 +219,9 @@ Cuando sea apropiado, se debería trasladar \[la consonante\] a la \[letra\] sig
 
 Se debería, en efecto, trasladar a la letra siguiente la consonante desprovista de vocal que yace debajo, cuando sea apropiado.
 
-Ejemplo: “Tatrābhiratim iccheyya”.[^5]
+Ejemplo: “Tatrābhiratim iccheyya”.
 
-¿Por qué \[se dice\] “cuando sea apropiado” (yutte)? \[Por ejemplo, en\] “Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me”,[^6] aquí, sin embargo, no es apropiado \[el traslado\].[^7]
+¿Por qué \[se dice\] “cuando sea apropiado” (yutte)? \[Por ejemplo, en\] “Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me”, aquí, sin embargo, no es apropiado \[el traslado\].[^7]
 
 ---
 
@@ -236,13 +236,13 @@ Ejemplo: “Tatrābhiratim iccheyya”.[^5]
 
 Sarā kho sare pare {lopaṃ|elisión} papponti.
 
-Yass’ indriyāni samathaṅgatāni,[^8] no h’ etaṃ bhante,[^9] samet’ āyasmā saṃghena.[^10]
+Yass’ indriyāni samathaṅgatāni (Khu. i, 27, 358), no h’ etaṃ bhante (Vin. iii, 19), samet’ āyasmā saṃghena (Vin. i, 265).
 
 ---
 
-Las vocales se eliden cuando una vocal \[sigue\].
+Las vocales se eliden cuando una vocal sigue.
 
-Cuando una vocal sigue, las vocales se eliden.[^11]
+Cuando una vocal sigue, las vocales se eliden.[^8]
 
 Ejemplos: “Yass’ indriyāni samathaṅgatāni”, “no h’ etaṃ bhante”, “samet’ āyasmā saṃghena”.
 
@@ -265,7 +265,7 @@ Secuencia:
 3. tatr abhiratimiccheyya (§12)  
 4. tatr ābhiratimiccheyya (§15)  
 5. tatrābhiratimiccheyya (§11)  
-6. tatrābhiratim iccheyya (EM)[^12]
+6. tatrābhiratim iccheyya (EM)[^9]
 
 **Yass’ indriyāni***.* Para formar esta palabra, primero se debe escribir como “yassa indriyāni”.
 
@@ -303,17 +303,17 @@ Secuencia:
 
 Saramhā asarūpā paro saro {lopaṃ|elisión} pappoti vā.
 
-Cattāro ’me bhikkhave dhammā,[^13] kinnu ’mā ’va samaṇiyo.[^14]
+Cattāro ’me bhikkhave dhammā (A. i, 311), kinnu ’mā ’va samaṇiyo (Vin. iii, 304).
 
-**Vā** ti kasmā? Pañc’ indriyāni,[^15] tay’ assu dhammā jahitā bhavanti.[^16]
+**Vā** ti kasmā? Pañc’ indriyāni (Abhi. iii, 1), tay’ assu dhammā jahitā bhavanti (Khu. i, 6).
 
 ---
 
 Opcionalmente, \[se elide\] la \[vocal\] siguiente después de \[una vocal\] disímil.
 
-Opcionalmente, la vocal que sigue a una vocal disímil se elide.[^17]
+Opcionalmente, la vocal que sigue a una vocal disímil se elide.[^10]
 
-Ejemplos: “Cattāro ’me bhikkhave dhammā”,[^18] “kinnu ’mā ’va samaṇiyo”.[^19]
+Ejemplos: “Cattāro ’me bhikkhave dhammā”, “kinnu ’mā ’va samaṇiyo”.
 
 ¿Por qué se dice “opcionalmente” (vā)? \[Para evitar la elisión de la vocal siguiente, como en los siguientes ejemplos\] “Pañc’ indriyāni”; “tay’ assu dhammā jahitā bhavanti” \[aunque caen dentro del alcance de este sutta\].
 
@@ -348,7 +348,7 @@ Contra ejemplos:
 Secuencia:
 
 1. pañca indriyāni  
-2. pañc a indriyāni (§10)[^20]  
+2. pañc a indriyāni (§10)[^11]  
 3. pañc indriyāni (§12)   
 4. pañcindriyāni (§11)  
 5. pañc' indriyāni (EM)
@@ -367,11 +367,11 @@ Secuencia:
 
 **14\. 16\. Kvac’ āsavaṇṇaṃ lutte (34).** \[Kvaci \+ a-savaṇṇaṃ \+ lutte, 3\]
 
-Saro kho paro pubbasare lutte {kvaci|a veces / ocasionalmente} asavaṇṇaṃ pappoti.
+Saro kho paro pubbasare lutte {kvaci|a veces} asavaṇṇaṃ pappoti.
 
-Saṅkyaṃ n’ opeti vedagū,[^21] bandhusseva samāgamo.
+Saṅkyaṃ n’ opeti vedagū (S. 408), bandhusseva samāgamo.
 
-**Kvacī** ti kasmā? Yass’ indriyāni,[^22] tathūpamaṃ dhammavaraṃ adesayi.[^23]
+**Kvacī** ti kasmā? Yass’ indriyāni (Khu. i, 27, 358), tathūpamaṃ dhammavaraṃ adesayi (Khu. i, 7, 314).
 
 ---
 
@@ -436,11 +436,11 @@ Secuencia:
 
 **15\. 17\. Dīghaṃ (36).** \[Dīghaṃ, 1\]
 
-Saro kho paro pubbasare lutte {kvaci|a veces / ocasionalmente} {dīghaṃ|largo / se alarga} pappoti.
+Saro kho paro pubbasare lutte {kvaci|a veces} {dīghaṃ|largo / se alarga} pappoti.
 
-Saddhīdha vittaṃ purisassa seṭṭhaṃ,[^24] anāgārehi cūbhayaṃ.[^25]
+Saddh’ īdha vittaṃ purisassa seṭṭhaṃ (Khu. i, 306), anāgārehi c’ ūbhayaṃ (Khu. i, 71, 376).
 
-**Kvacī** ti kasmā? Pañcah’ Upāli aṅgehi samannāgato,[^26] natth’ aññaṃ kiñci.
+**Kvacī** ti kasmā? Pañcah’ Upāli aṅgehi samannāgato (Vin. v, 342), natth’ aññaṃ kiñci.
 
 ---
 
@@ -448,13 +448,13 @@ Larga.
 
 Cuando la vocal anterior ha sido elidida, a veces, la vocal siguiente se vuelve larga.
 
-Ejemplos: “Saddhīdha vittaṃ purisassa seṭṭhaṃ”, “anāgārehi c’ ūbhayaṃ”.
+Ejemplos: “Saddh’ īdha vittaṃ purisassa seṭṭhaṃ”, “anāgārehi c’ ūbhayaṃ”.
 
 ---
 
 Ejemplos \[con secuencia de formación\]:
 
-**Saddhīdha**
+**Saddh’ īdha**
 
 Secuencia:
 
@@ -463,9 +463,9 @@ Secuencia:
 3. saddh idha (§12)   
 4. saddh īdha (§15)   
 5. saddhīdha (§11)   
-6. saddhīdha (EM)
+6. saddh’ īdha (EM)
 
-**Cūbhayaṃ**
+**C’ ūbhayaṃ**
 
 Secuencia:
 
@@ -474,7 +474,7 @@ Secuencia:
 3. c ubhayaṃ (§12)   
 4. c ūbhayaṃ (§15)   
 5. cūbhayaṃ (§11)   
-6. cūbhayaṃ (EM)
+6. c’ ūbhayaṃ (EM)
 
 ---
 
@@ -508,25 +508,25 @@ Secuencia:
 
 **16\. 18\. Pubbo ca (35).** \[Pubbo \+ ca, 2\]
 
-Pubbo ca saro parasaralope kate {kvaci|a veces / ocasionalmente} {dīghaṃ|largo / se alarga} pappoti.
+Pubbo ca saro parasaralope kate {kvaci|a veces} {dīghaṃ|largo / se alarga} pappoti.
 
-Kiṃ sū ’dha vittaṃ purisassa seṭṭhaṃ,[^27] sādhū ti paṭissuṇitvā.[^28]
+Kiṃ sū ’dha vittaṃ purisassa seṭṭhaṃ (Khu. i, 306), sādhū ti paṭissuṇitvā (DhA. i, 30).
 
-Kvacī ti kasmā? Iti ’ssa muhuttam pi.[^29]
+Kvacī ti kasmā? Iti ’ssa muhuttam pi (Vin. ii, 196).
 
 ---
 
-Y la anterior.[^30]
+Y la anterior.[^12]
 
 Cuando la vocal siguiente ha sido elidida, a veces, la vocal anterior se vuelve larga.
 
-Ejemplos: “Kiṃ sūdha vittaṃ purisassa seṭṭhaṃ”, “sādhū ti paṭissuṇitvā”.
+Ejemplos: “Kiṃ sū ’dha vittaṃ purisassa seṭṭhaṃ”, “sādhū ti paṭissuṇitvā”.
 
 ---
 
 Ejemplos \[con secuencia de formación\]:
 
-**Kiṃ sūdha**
+**Kiṃ sū ’dha**
 
 Secuencia:
 
@@ -570,9 +570,9 @@ Secuencia:
 
 **17\. 19\. Yam edantass’ ādeso (43).** \[Yaṃ \+ e-antassa \+ ādeso, 3\]
 
-**E**kārassa antabhūtassa sare pare {kvaci|a veces / ocasionalmente} **ya**kārādeso hoti.
+**E**kārassa antabhūtassa sare pare {kvaci|a veces} **ya**kārādeso hoti.
 
-Adhigato kho my āyaṃ dhammo,[^31] ty āhaṃ evaṃ vadeyyaṃ,[^32] ty āssa pahīnā honti.[^33]
+Adhigato kho my āyaṃ dhammo (Vin. iii, 5), ty āhaṃ evaṃ vadeyyaṃ (M. i, 16), ty āssa (A. i, 153) pahīnā honti.
 
 **Kvacī** ti kasmā? ne ’nāgatā, iti n’ ettha.
 
@@ -640,11 +640,11 @@ Secuencia:
 
 **18\. 20\. Vam od-udantānaṃ (44).** \[Vaṃ \+ o-u-dantānaṃ, 2\]
 
-**O**kār’-**u**kārānaṃ antabhūtānaṃ sare pare {kvaci|a veces / ocasionalmente} **va**kārādeso hoti.
+**O**kār’-**u**kārānaṃ antabhūtānaṃ sare pare {kvaci|a veces} **va**kārādeso hoti.
 
-Attha khv assa,[^34] sv assa hoti, bahv ābādho,[^35] vatthv ettha vihitaṃ niccaṃ, cakkhv āpātham āgacchati.
+Attha khv assa (M. i, 243), sv assa hoti, bahv ābādho (S. i, 94), vatthv ettha vihitaṃ niccaṃ, cakkhv āpātham āgacchati.
 
-**Kvacī** ti kasmā? Cattāro ’me bhikkhave dhammā,[^36] kinnu ’mā ’va samaṇiyo.[^37]
+**Kvacī** ti kasmā? Cattāro ’me bhikkhave dhammā (A. i, 311), kinnu ’mā ’va samaṇiyo (Vin. ii, 304).
 
 ---
 
@@ -740,11 +740,11 @@ Secuencia:
 
 **19\. 22\. Sabbo caṃ ti (46, 47).** \[Sabbo \+ ca \+ ti, 3\]
 
-Sabbo icc eso **ti**saddo byañjano sare pare {kvaci|a veces / ocasionalmente} **ca**kāraṃ pappoti.
+Sabbo icc eso **ti**saddo byañjano sare pare {kvaci|a veces} **ca**kāraṃ pappoti.
 
-Icc etaṃ kusalaṃ,[^38] icc assa vacanīyaṃ,[^39] paccuttaritvā,[^40] paccāharati.[^41]
+Icc etaṃ kusalaṃ (Vin. i, 265), icc assa vacanīyaṃ (D. ii, 47), paccuttaritvā (JA. vi, 94), paccāharati (Vin. i, 204).
 
-Kvacī ti kasmā? Iti ’ssa muhuttam pi.[^42]
+Kvacī ti kasmā? Iti ’ssa muhuttam pi (Vin. ii, 196).
 
 ---
 
@@ -815,17 +815,17 @@ Secuencia:
 
 **20\. 27\. Do dhassa ca (50).** \[Do \+ dhassa \+ ca, 3\]
 
-**Dha** icc etassa sare pare {kvaci|a veces / ocasionalmente} **da**kārādeso hoti.
+**Dha** icc etassa sare pare {kvaci|a veces} **da**kārādeso hoti.
 
-Ekam idāhaṃ bhikkhave samayaṃ.[^43]
+Ekam idāhaṃ bhikkhave samayaṃ (M. i, 401).
 
-**Kvacī** ti kasmā? Idh’ eva maraṇaṃ bhavissati.[^44]
+**Kvacī** ti kasmā? Idh’ eva maraṇaṃ bhavissati (Vin. i, 15).
 
 ---
 
 Y, ‘da’ de ‘dha’.
 
-Cuando sigue una vocal, a veces, “dha” también[^45] es sustituido por ‘da’.
+Cuando sigue una vocal, a veces, “dha” también[^13] es sustituido por ‘da’.
 
 Ejemplo: “Ekam idāhaṃ bhikkhave samayaṃ”.
 
@@ -868,9 +868,9 @@ Secuencia:
 
 **Extensión por “ca” (acumulación):**
 
-Caggahaṇena dhakārassa hakārādeso hoti. Sāhu dassanam ariyānaṃ.[^46]
+Caggahaṇena dhakārassa hakārādeso hoti. Sāhu dassanam ariyānaṃ (Khu. i, 34).
 
-Por la fuerza de “ca”,[^47] hay también sustitución de ‘dha’ por ‘ha’, \[como en\] “sāhu dassanam ariyānaṃ”.
+Por la fuerza de “ca”,[^14] hay también sustitución de ‘dha’ por ‘ha’, \[como en\] “sāhu dassanam ariyānaṃ”.
 
 Ejemplo:
 
@@ -886,7 +886,7 @@ Secuencia:
 
 **Extensión por división del sutta (Suttavibhāgena):**
 
-Suttavibhāgena bahudhā siyā: To dassa, yathā? Sugato. Ṭo tassa, yathā? Dukkaṭaṃ. Dho tassa, yathā? Gandhabbo. Tro ttassa, yathā? Atrajo. Ko gassa, yathā? Kulūpako. Lo rassa, yathā? Mahāsālo. Jo yassa, yathā? Gavajo. Bbo vvassa, yathā? Kubbato. Ko yassa, yathā? Sake. Yo jassa, yathā? Niyaṃ puttaṃ. Ko tassa, yathā? Niyako. Cco ttassa, yathā? Bhacco. Pho passa, yathā? Nipphatti. Kho kassa, yathā? Nikkhamati. Icc evamādī yojetabbā.
+Suttavibhāgena bahudhā siyā: To dassa, yathā? Sugato (Vin. i, 1). Ṭo tassa, yathā? Dukkaṭaṃ (Vin. v, 262). Dho tassa, yathā? Gandhabbo (M. i, 332). Tro ttassa, yathā? Atrajo (Vin. iii, 428). Ko gassa, yathā? Kulūpako (Vin. i, 192). Lo rassa, yathā? Mahāsālo (D. ii, 121). Jo yassa, yathā? Gavajo (Khu. v, 283). Bbo vvassa, yathā? Kubbato (Khu. v, 95). Ko yassa, yathā? Sake (Khu. vi, 325). Yo jassa, yathā? Niyaṃ puttaṃ (Khu. i, 11, 301). Ko tassa, yathā? Niyako. Cco ttassa, yathā? Bhacco. Pho passa, yathā? Nipphatti. Kho kassa, yathā? Nikkhamati. Icc evamādī yojetabbā.
 
 Dividiendo el sutta \[en reglas similares\], podría haber numerosas aplicaciones: ‘d’ cambia a ‘t’, como en “Sugato” (Sugado → Sugato); ‘t’ a ‘ṭ’, como en “dukkaṭaṃ” (dukkataṃ → dukkaṭaṃ); ‘t’ a ‘dh’, como en “gandhabbo” (gantabbo → gandhabbo); ‘tt’ a ‘tr’, como en “atrajo” (attajo → atrajo); ‘g’ a ‘k’, como en “kulūpako” (kulūpago → kulūpako); ‘r’ a ‘l’, como en “mahāsālo” (mahāsāro → mahāsālo); ‘y’ a ‘j’, como en “gavajo” (gavayo → gavajo); ‘vv’ a ‘bb’, como en “kubbato” (kuvvato → kubbato); ‘y’ a ‘k’, como en “sake” (saye → sake); ‘j’ a ‘y’, como en “niyaṃ” (nijaṃ → niyaṃ); ‘t’ a ‘k’, como en “niyako” (niyato → niyako); ‘tt’ a ‘cc’, como en “bhacco” (bhatto → bhacco); ‘p’ a ‘ph’, como en “nipphatti” (nippatti → nipphatti); ‘k’ a ‘kh’, como en “nikkhamati” (nikkamati → nikkhamati). Deben formarse otros ejemplos similares a estos.
 
@@ -896,9 +896,9 @@ Dividiendo el sutta \[en reglas similares\], podría haber numerosas aplicacione
 
 Pubbo **i**vaṇṇo sare pare **ya**kāraṃ pappoti navā.
 
-Paṭisanthāravuty assa,[^48] sabbā vity ānubhūyate.
+Paṭisanthāravuty assa (Khu. i, 67), sabbā vity ānubhūyate.
 
-**Navā** ti kasmā? Pañcah' aṅgehi samannāgato,[^49] muttacāgī anuddhato.
+**Navā** ti kasmā? Pañcah' aṅgehi samannāgato (Vin. v, 343), muttacāgī anuddhato.
 
 ---
 
@@ -961,13 +961,13 @@ En el ejemplo “muttacāgī anuddhato”, existe la posibilidad de que ‘ī’
 
 Saramhā parassa evassa **e**kārassa ādissa **ri**kāro hoti, pubbo ca saro rasso hoti navā.
 
-Yatha-r-iva[^50] vasudhātalañ ca sabbaṃ, tatha-r-iva guṇavā supūjaniyo.
+Yatha-r-iva (D. i, 85) vasudhātalañ ca sabbaṃ, tatha-r-iva guṇavā supūjaniyo.
 
 **Navā** ti kasmā? Yathā eva, tathā eva.
 
 ---
 
-Del comienzo de “eva”, ‘ri’, y la anterior,[^51] corta.
+Del comienzo de “eva”, ‘ri’, y la anterior,[^15] corta.
 
 Después de una vocal, hay sustitución de la letra ‘e’, que es el comienzo de “eva”, por la sílaba ‘ri’, y la vocal anterior, ocasionalmente, se vuelve corta.
 
@@ -1014,7 +1014,7 @@ Secuencia:
 
 Sarā kho byañjane pare pakatirūpāni honti.
 
-Manopubbaṅgamā dhammā,[^52] pamādo maccuno padaṃ,[^53] tiṇṇo pāraṅgato ahu.[^54]
+Manopubbaṅgamā dhammā (Khu. i, 13), pamādo maccuno padaṃ (Khu. i, 16), tiṇṇo pāraṅgato ahu (Khu. i, 72).
 
 ---
 
@@ -1022,7 +1022,7 @@ Cuando una consonante sigue, \[las vocales mantienen su forma\] original.
 
 Cuando una consonante sigue, las vocales retienen su forma original.
 
-Ejemplos: “Manopubbaṅgamā dhammā”, “pamādo maccuno padaṃ”, “tiṇṇo pāraṅgato ahu”.[^55]
+Ejemplos: “Manopubbaṅgamā dhammā”, “pamādo maccuno padaṃ”, “tiṇṇo pāraṅgato ahu”.[^16]
 
 ---
 
@@ -1038,11 +1038,11 @@ Explicación de los ejemplos:
 
 **24\. 35\. Sare kvaci (63).** \[Sare \+ kvaci, 2\]
 
-Sarā kho sare pare {kvaci|a veces / ocasionalmente} pakatirūpāni honti.
+Sarā kho sare pare {kvaci|a veces} pakatirūpāni honti.
 
-Ko imaṃ pathaviṃ vicessati.[^56]
+Ko imaṃ pathaviṃ vicessati (Khu. i, 19).
 
-Kvacī ti kasmā? Appassut’ āyaṃ puriso.[^57]
+Kvacī ti kasmā? Appassut’ āyaṃ puriso (Khu. i, 36).
 
 ---
 
@@ -1079,11 +1079,11 @@ Secuencia:
 
 **25\. 37\. Dīghaṃ (64, 71, 165).** \[Dīghaṃ, 1\]
 
-Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} {dīghaṃ|largo / se alarga} papponti.
+Sarā kho byañjane pare {kvaci|a veces} {dīghaṃ|largo / se alarga} papponti.
 
-Sammā dhammaṃ vipassato,[^58] evaṃ gāme munī care,[^59] khantī paramaṃ tapo titikkhā.[^60]
+Sammā dhammaṃ vipassato (Khu. i, 67), evaṃ gāme munī care (Khu. i, 20), khantī paramaṃ tapo titikkhā (D. ii, 42).
 
-**Kvacī** ti kasmā? Idha modati pecca modati,[^61] patilīyati,[^62] paṭihaññati.[^63]
+**Kvacī** ti kasmā? Idha modati pecca modati (Khu. i, 15), patilīyati (A. ii, 434), paṭihaññati (Vin. iv, 292).
 
 ---
 
@@ -1136,11 +1136,11 @@ Contraejemplos:
 
 **26\. 38\. Rassaṃ (65, 179).** \[Rassaṃ, 1\]
 
-Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} rassaṃ papponti.
+Sarā kho byañjane pare {kvaci|a veces} rassaṃ papponti.
 
-Bhovādi nāma so hoti,[^64] yathā bhāvi guṇena so.
+Bhovādi nāma so hoti (Khu. i, 71), yathā bhāvi guṇena so.
 
-**Kvacī** ti kasmā? Sammā samādhi,[^65] sāvittī chandaso mukhaṃ, upanīyati jīvitam appam āyu.[^66]
+**Kvacī** ti kasmā? Sammā samādhi (Vin. iii, 14), sāvittī chandaso mukhaṃ, upanīyati jīvitam appam āyu (S. i, 2).
 
 ---
 
@@ -1178,19 +1178,21 @@ Contraejemplos:
 
 “Sammā samādhi.” Aquí, y en el siguiente contraejemplo, “sāvittī chandaso”, las vocales finales no se vuelven cortas.
 
+“Upanīyati.” Aquí la ‘ī’ de “upanīyati” no se vuelve corta.[^17]
+
 ---
 
 **27\. 39\. Lopañ ca tatrākāro (66, 163-4).** \[Lopaṃ \+ ca \+ tatra \+ a-kāro, 4\]
 
-Sarā kho byañjane pare {kvaci|a veces / ocasionalmente} {lopaṃ|elisión} papponti, tatra ca lope kate **a**kārāgamo hoti.
+Sarā kho byañjane pare {kvaci|a veces} {lopaṃ|elisión} papponti, tatra ca lope kate **a**kārāgamo hoti.
 
-Sa sīlavā,[^67] sa paññavā,[^68] esa dhammo sanantano,[^69] sa ve kasāvam arahati,[^70] sa mānakāmo pi bhaveyya, sa ve muni jātibhayaṃ adassi.
+Sa sīlavā (Khu. i, 25), sa paññavā (Khu. i, 25), esa dhammo sanantano (Khu. i, 14), sa ve kasāvam arahati (Khu. i, 14), sa mānakāmo pi bhaveyya, sa ve muni jātibhayaṃ adassi.
 
-**Kvacī** ti kasmā? So muni,[^71] eso dhammo padissati, na so kāsāvam arahati.[^72]
+**Kvacī** ti kasmā? So muni (Khu. i, 52), eso dhammo padissati, na so kāsāvam arahati (Khu. i, 14).
 
 ---
 
-Elisión, y[^73] allí, la letra ‘a’.
+Elisión, y[^18] allí, la letra ‘a’.
 
 Cuando una consonante sigue, a veces, las vocales se eliden, y allí, donde se ha producido la elisión, se inserta la letra ‘a’.
 
@@ -1267,13 +1269,13 @@ Contraejemplos:
 
 Saramhā parassa byañjanassa {dvebhāvo|duplicación} hoti {ṭhāne|en el lugar apropiado}.
 
-Idha ppamādo, purisassa jantuno, pabbajjaṃ kittayissāmi,[^74] cātuddasiṃ,[^75] pañcaddasiṃ,[^76] abhikkantataro cando.
+Idha ppamādo, purisassa jantuno, pabbajjaṃ kittayissāmi (Khu. i, 340), cātuddasiṃ (A. i, 142), pañcaddasiṃ (A. i, 142), abhikkantataro cando.
 
-**Ṭhāne** ti kasmā? Idha modati pecca modati.[^77]
+**Ṭhāne** ti kasmā? Idha modati pecca modati (Khu. i, 15).
 
 ---
 
-Duplicación de la siguiente en el lugar apropiado.[^78]
+Duplicación de la siguiente en el lugar apropiado.[^19]
 
 Después de una vocal, hay duplicación de la consonante siguiente, en el lugar apropiado.
 
@@ -1305,8 +1307,8 @@ Secuencia:
 Secuencia:
 
 1. cātu dasiṃ  
-    cātu ddasiṃ (§28)  
-    cātuddasiṃ (§11)
+2. cātu ddasiṃ (§28)  
+3. cātuddasiṃ (§11)
 
 **Pañcaddasiṃ**
 
@@ -1334,7 +1336,7 @@ Secuencia:
 
 Vagge kho pubbesaṃ byañjanānaṃ ghosāghosabhūtānaṃ saramhā yathāsaṅkhyaṃ tatiyapaṭhamakkharā dvebhāvaṃ gacchanti {ṭhāne|en el lugar apropiado}.
 
-Es’ eva ca jjhānapphalo, yatra ṭṭhitaṃ na ppasaheyya maccu,[^79] sele yathā pabbatamuddhani ṭṭhito,[^80] cattāri ṭṭhānāni naro pamatto.[^81]
+Es’ eva ca jjhānapphalo, yatra ṭṭhitaṃ na ppasaheyya maccu (Khu. i, 32), sele yathā pabbatamuddhani ṭṭhito (Vin. iii, 6), cattāri ṭṭhānāni naro pamatto (Khu. i, 57).
 
 **Ṭhāne** ti kasmā? Idha cetaso daḷhaṃ gaṇhāti thāmasā.
 
@@ -1342,7 +1344,7 @@ Es’ eva ca jjhānapphalo, yatra ṭṭhitaṃ na ppasaheyya maccu,[^79] sele y
 
 En las agrupadas, la primera y la tercera, de las sordas y sonoras.
 
-En el lugar apropiado, la primera y la tercera letra se duplican como \[la primera-segunda y la tercera-cuarta letra\][^82] respectivamente de ese grupo, cuando van precedidas de una vocal.
+En el lugar apropiado, la primera y la tercera letra se duplican como \[la primera-segunda y la tercera-cuarta letra\][^20] respectivamente de ese grupo, cuando van precedidas de una vocal.
 
 Ejemplos: “Es’ eva ca jjhānapphalo”, “yatra ṭṭhitaṃ na ppasaheyya maccu”, “sele yathā pabbatamuddhani ṭṭhito”, “cattāri ṭṭhānāni naro pamatto”.
 
@@ -1356,7 +1358,7 @@ Secuencia:
 
 1. ca jhānapphalo  
 2. ca jjhānapphalo (§29)   
-3. cajjhānapphalo (§11)[^83]  
+3. cajjhānapphalo (§11)[^21]  
 4. ca jjhānapphalo (EM)
 
 **Yatra ṭṭhitaṃ**
@@ -1409,13 +1411,13 @@ Contraejemplo:
 
 Niggahitaṃ kho byañjane pare aṃ iti hoti.
 
-Evaṃ vutte,[^84] taṃ sādhū ti paṭissuṇitvā.[^85]
+Evaṃ vutte (Vin. i, 7), taṃ sādhū ti paṭissuṇitvā (DhA. i, 30).
 
 ---
 
 Cuando una consonante sigue, el niggahita ‘ṃ’.
 
-Cuando una consonante sigue, el niggahita se vuelve ‘ṃ’.[^86]
+Cuando una consonante sigue, el niggahita se vuelve ‘ṃ’.[^22]
 
 Ejemplos: “Evaṃ vutte”, “taṃ sādhū ti paṭissuṇitvā”.
 
@@ -1436,13 +1438,13 @@ Vaggabhūte byañjane pare {niggahitaṃ|niggahita (nasalización)} kho vagganta
 Tan niccutaṃ, dhammañ care sucaritaṃ (Khu. i, 39), cirappavāsiṃ purisaṃ (Khu. i, 45).  
  Santan tassa manaṃ hoti (Khu. i, 27), taṅ kāruṇikaṃ, evaṅ kho bhikkhave sikkhitabbaṃ.
 
-Vāggahaṇena niggahitaṃ kho lakārādeso hoti. Puggalaṃ.[^87]
+Vāggahaṇena niggahitaṃ kho lakārādeso hoti. Puggalaṃ.[^23]
 
 **Vā** ti kasmā? Na taṃ kammaṃ kataṃ sādhu (Khu. i, 23).
 
 ---
 
-Opcionalmente, cuando una \[consonante\] agrupada \[sigue\], la final del grupo.
+Opcionalmente, cuando una \[consonante\] agrupada sigue, la final del grupo.
 
 Cuando una consonante agrupada sigue, el niggahita, opcionalmente, se vuelve la letra final del grupo correspondiente.
 
@@ -1462,13 +1464,13 @@ Ejemplos \[con secuencia de formación\]:
 
 **Taṅ kāruṇikaṃ**: taṃ kāruṇikaṃ; taṅ kāruṇikaṃ (§31); taṅkāruṇikaṃ (§11); taṅ kāruṇikaṃ (EM).
 
-**Evaṅ kho: evaṃ kho**; evaṅ kho (§31); evaṅkho (§11); evaṅkho (EM).
+**Evaṅ kho: evaṃ kho**; evaṅ kho (§31); evaṅkho (§11); evaṅ kho (EM).
 
 ---
 
 **Extensión por “vā” (opcional):** Por la fuerza de “opcionalmente”, hay también sustitución del niggahita por ‘l’.
 
-**Puggalaṃ**: puggaṃ aṃ; puggal aṃ (por “vā” en §31); puggalaṃ (§11).[^88]
+**Puggalaṃ**: puggaṃ aṃ; puggal aṃ (por “vā” en §31); puggalaṃ (§11).[^24]
 
 ---
 
@@ -1480,15 +1482,15 @@ Ejemplos \[con secuencia de formación\]:
 
 **E**kāra-**ha**kāre pare {niggahitaṃ|niggahita (nasalización)} kho **ña**kāraṃ pappoti vā.
 
-Paccattañ ñeva parinibbāyissāmi,[^89] tañ ñev' ettha paṭipucchissāmi,[^90] evañ hi vo bhikkhave sikkhitabbaṃ.[^91] Tañ hi tassa musā hoti.[^92]
+Paccattañ ñeva parinibbāyissāmi (M. i, 318), tañ ñev' ettha paṭipucchissāmi (D. i, 57), evañ hi vo bhikkhave sikkhitabbaṃ (M. i, 171). Tañ hi tassa musā hoti (Khu. i, 396).
 
-**Vā** ti kasmā? Evam etaṃ abhiññāya,[^93] evaṃ hoti subhāsitaṃ.
+**Vā** ti kasmā? Evam etaṃ abhiññāya (Khu. i, 447), evaṃ hoti subhāsitaṃ.
 
 ---
 
 Cuando ‘e’ y ‘h’, ‘ñ’.
 
-Cuando las letras ‘e’ y ‘h’ siguen, el niggahita, opcionalmente, se vuelve ‘ñ’.[^94]
+Cuando las letras ‘e’ y ‘h’ siguen, el niggahita, opcionalmente, se vuelve ‘ñ’.[^25]
 
 Ejemplos: “Paccattañ ñeva parinibbāyissāmi”, “tañ ñev' ettha paṭipucchissāmi”, “evañ hi vo bhikkhave sikkhitabbaṃ”, “tañ hi tassa musā hoti”.
 
@@ -1496,7 +1498,7 @@ Ejemplos: “Paccattañ ñeva parinibbāyissāmi”, “tañ ñev' ettha paṭip
 
 Ejemplos \[con secuencia de formación\]:
 
-**Paccattañ ñeva**: paccattaṃ eva; paccatañ eva (§32); paccataññ eva (§28); paccattaññeva (§11); paccattañ ñeva (EM).
+**Paccattañ ñeva**: paccattaṃ eva; paccattañ eva (§32); paccattaññ eva (§28); paccattaññeva (§11); paccattañ ñeva (EM).
 
 **Tañ ñev’ ettha**: taṃ evettha; tañ ev’ ettha (§32); taññ ev’ ettha (§28); taññevettha (§11); tañ ñev’ ettha (EM).
 
@@ -1558,9 +1560,9 @@ Contraejemplos:
 
 Niggahitassa kho sare pare **ma**kāra-**da**kārādesā honti vā.
 
-Tam ahaṃ brūmi brāhmaṇaṃ,[^95] etad avoca satthā.[^96]
+Tam ahaṃ brūmi brāhmaṇaṃ (Khu. i, 68), etad avoca satthā (S. i, 222).
 
-**Vā** ti kasmā? Akkocchi maṃ avadhi maṃ,[^97] ajini maṃ ahāsi me.[^98]
+**Vā** ti kasmā? Akkocchi maṃ avadhi maṃ (Khu. i, 13), ajini maṃ ahāsi me (Khu. i, 13).
 
 ---
 
@@ -1596,15 +1598,15 @@ Contraejemplos:
 
 Sare pare **ya**kāro **va**kāro **ma**kāro **da**kāro **na**kāro **ta**kāro **ra**kāro **la**kāro ime {āgamā|letra insertada} honti vā.
 
-Na-y-imassa vijjā,[^99] yatha-y-idaṃ cittaṃ.[^100] Migī bhantā-v-udikkhati,[^101] sittā te lahu-m-essati,[^102] asittā te garu-m-essati. Asso bhadro kasā-m-iva,[^103] samma-d-aññā vimuttānaṃ.[^104] Manasā-d-aññā vimuttānaṃ, atta-d-attham abhiññāya.[^105] Ciraṃ-n-āyati, ito-n-āyati. Yasmā-t-iha bhikkhave, tasmā-t-iha bhikkhave,[^106] ajja-t-agge[^107] pāṇupetaṃ. Sabbhi-r-eva samāsetha,[^108] āragge-r-iva sāsapo,[^109] sāsapo-r-iva āraggā.[^110] Cha-ḷ-abhiññā,[^111] sa-ḷ-āyatanaṃ.[^112]
+Na-y-imassa vijjā (Khu. v, 74), yatha-y-idaṃ cittaṃ (A. i, 4). Migī bhantā-v-udikkhati (Khu. vi, 40), sittā te lahu-m-essati (Khu. i, 66), asittā te garu-m-essati. Asso bhadro kasā-m-iva (Khu. i, 34), samma-d-aññā vimuttānaṃ (Khu. i, 21). Manasā-d-aññā vimuttānaṃ, atta-d-attham abhiññāya (Khu. i, 38). Ciraṃ-n-āyati, ito-n-āyati. Yasmā-t-iha bhikkhave, tasmā-t-iha bhikkhave (S. i, 267), ajja-t-agge (D. i, 80) pāṇupetaṃ. Sabbhi-r-eva samāsetha (S. i, 16), āragge-r-iva sāsapo (Khu. i, 71),[^26] sāsapo-r-iva āraggā (Khu. i, 71). Cha-ḷ-abhiññā (Khu. iv, 322), sa-ḷ-āyatanaṃ (Vin. iii, 1).
 
-Vā ti kasmā? Evaṃ mahiddhiyā esā, akkocchi maṃ avadhi maṃ,[^113] ajini maṃ ahāsi me,[^114] ajeyyo anugāmiko.[^115]
+Vā ti kasmā? Evaṃ mahiddhiyā esā, akkocchi maṃ avadhi maṃ (Khu. i, 13), ajini maṃ ahāsi me (Khu. i, 13), ajeyyo anugāmiko (Khu. i, 10).
 
-**Ca**ggahaṇena idh’ eva **ma**kārassa **pa**kāro hoti. Cirappavāsiṃ purisaṃ.[^116]
+**Ca**ggahaṇena idh’ eva **ma**kārassa **pa**kāro hoti. Cirappavāsiṃ purisaṃ (Khu. i, 45).
 
-**Ka**kārassa ca **da**kāro hoti. Sadatthapasuto siyā.[^117]
+**Ka**kārassa ca **da**kāro hoti. Sadatthapasuto siyā (Khu. i, 38).
 
-**Da**kārassa ca **ta**kāro hoti. Sugato.[^118]
+**Da**kārassa ca **ta**kāro hoti. Sugato (Vin. i, 1).
 
 ---
 
@@ -1620,7 +1622,7 @@ Ejemplos \[con secuencia de formación\]:
 
 **Na-y-imassa**: na imassa; na y imassa (§35); nayimassa (§11); na-y-imassa (EM).
 
-**Yatha-y-idaṃ**: yathā idaṃ; yathā y idaṃ (§35); yatha y idaṃ (§26); yathayidaṃ (§11); yatha-y-idaṃ (EM).[^119]
+**Yatha-y-idaṃ**: yathā idaṃ; yathā y idaṃ (§35); yatha y idaṃ (§26); yathayidaṃ (§11); yatha-y-idaṃ (EM).[^27]
 
 **Bhantā-v-udikkhati**, **lahu-m-essati**, **garu-m-essati**, **kasā-m-iva**: la formación es similar a los anteriores.
 
@@ -1654,11 +1656,11 @@ Contraejemplos:
 
 **36\. 47\. Kvaci o byañjane (130).** \[Kvaci \+ o \+ byañjane, 3\]
 
-Byañjane pare {kvaci|a veces / ocasionalmente} **o**kārāgamo hoti.
+Byañjane pare {kvaci|a veces} **o**kārāgamo hoti.
 
-Atippago kho tāva Sāvatthiyaṃ piṇḍāya carituṃ. Parosahassaṃ.[^120]
+Atippago kho tāva Sāvatthiyaṃ piṇḍāya carituṃ (A. iii, 424). Parosahassaṃ (S. i, 194).
 
-Kvacī ti kasmā? Etha passath’ imaṃ lokaṃ,[^121] andhībhūto ayaṃ loko.[^122]
+Kvacī ti kasmā? Etha passath’ imaṃ lokaṃ (Khu. i, 39), andhībhūto ayaṃ loko (Khu. i, 39).
 
 ---
 
@@ -1684,7 +1686,7 @@ Contraejemplos:
 
 **Etha passath’ imaṃ lokaṃ***.*
 
-**Andhībhūto ayaṃ**.[^123]
+**Andhībhūto ayaṃ**.[^28]
 
 ---
 
@@ -1692,17 +1694,17 @@ Contraejemplos:
 
 Niggahitañ c’ āgamo hoti sare vā byañjane vā pare kvaci.
 
-Cakkhuṃ udapādi,[^124] avaṃsiro,[^125] yāvañ c’ idha bhikkhave purimaṃ jātiṃ sarāmi, aṇuṃthūlāni sabbaso,[^126] manopubbaṅgamā dhammā.[^127]
+Cakkhuṃ udapādi (Vin. iii, 15), avaṃsiro (Khu. v, 230), yāvañ c’ idha bhikkhave purimaṃ jātiṃ sarāmi, aṇuṃthūlāni sabbaso (Khu. i, 54), manopubbaṅgamā dhammā (Khu. i, 13).
 
-Kvacī ti kasmā? Idh’ eva naṃ pasaṃsanti, pecca sagge pamodati;[^128] na hi etehi yānehi, gaccheyya agataṃ disaṃ.[^129]
+Kvacī ti kasmā? Idh’ eva naṃ pasaṃsanti, pecca sagge pamodati (Khu. vi, 82; A. i, 311); na hi etehi yānehi, gaccheyya agataṃ disaṃ (Khu. i, 59).
 
-Caggahaṇena visaddassa ca pakāro hoti. Pacessati, vicessati vā.[^130]
+Caggahaṇena visaddassa ca pakāro hoti. Pacessati, vicessati vā (Khu. i, 19).
 
 ---
 
 Y el niggahita.
 
-Cuando una vocal o una consonante sigue, a veces, hay inserción del niggahita.[^131]
+Cuando una vocal o una consonante sigue, a veces, hay inserción del niggahita.[^29]
 
 Ejemplos: “Cakkhuṃ udapādi”, “avaṃsiro”, “yāvañ c’ idha bhikkhave purimaṃ jātiṃ sarāmi”, “aṇuṃthūlāni sabbaso”, “manopubbaṅgamā dhammā”.
 
@@ -1716,7 +1718,7 @@ Ejemplos \[con secuencia de formación\]:
 
 **Yāvañ c’ idha**: yāva ca idha; yāva c a idha (§10); yāva c idha (§12); yāva ṃ c idha (§37); yāva ñ c idha (§31); yāvañcidha (§11); yāvañ c’ idha (EM).
 
-Purimaṃ jātiṃ.[^132]
+Purimaṃ jātiṃ.[^30]
 
 **Aṇuṃthūlāni**: aṇu thūlāni; aṇu ṃ thūlāni (§37); aṇuṃthūlāni (§11).
 
@@ -1730,7 +1732,7 @@ Purimaṃ jātiṃ.[^132]
 
 Contraejemplos:
 
-**Idh’ eva**: idha eva; idh a eva (§10); idh eva (§12); idheva (§11); idh’ eva (EM).[^133]
+**Idh’ eva**: idha eva; idh a eva (§10); idh eva (§12); idheva (§11); idh’ eva (EM).[^31]
 
 **Pecca sagge***.*
 
@@ -1746,9 +1748,9 @@ Contraejemplos:
 
 Niggahitaṃ kho sare pare kvaci lopaṃ pappoti.
 
-Tāsāhaṃ santike,[^134] vidūn' aggam iti.
+Tāsāhaṃ santike (Vin. ii, 303), vidūn' aggam iti.
 
-**Kvacī** ti kasmā? Aham eva nūna bālo etam atthaṃ viditvāna.[^135]
+**Kvacī** ti kasmā? Aham eva nūna bālo etam atthaṃ viditvāna (Vin. iii, 2).
 
 ---
 
@@ -1772,7 +1774,7 @@ Ejemplos \[con secuencia de formación\]:
 
 Contraejemplos:
 
-**Aham eva**.[^136]
+**Aham eva**.[^32]
 
 **Etam atthaṃ***.*
 
@@ -1782,13 +1784,13 @@ Contraejemplos:
 
 Niggahitaṃ kho byañjane pare kvaci lopaṃ pappoti.
 
-Ariyasaccāna’ dassanaṃ,[^137] etaṃ buddhāna’ sāsanaṃ.[^138]
+Ariyasaccāna’ dassanaṃ (Khu. i, 4), etaṃ buddhāna’ sāsanaṃ (Khu. i, 41).
 
-Kvacī ti kasmā? Etaṃ maṅgalam uttamaṃ,[^139] taṃ vo vadāmi bhaddante.[^140]
+Kvacī ti kasmā? Etaṃ maṅgalam uttamaṃ (Khu. i, 3), taṃ vo vadāmi bhaddante (Khu. v, 168).
 
 ---
 
-Y cuando una consonante \[sigue\].
+Y cuando una consonante sigue.
 
 Cuando una consonante sigue, a veces, el niggahita se elide.
 
@@ -1818,9 +1820,9 @@ Contraejemplos:
 
 Niggahitamhā paro saro lopaṃ pappoti vā.
 
-Bhāsitaṃ abhinandun ti;[^141] uttattaṃ ’va, yathābījaṃ ’va, yathādhaññaṃ ’va.
+Bhāsitaṃ abhinandun ti (D. i, 43); uttattaṃ ’va, yathābījaṃ ’va, yathādhaññaṃ ’va.
 
-**Vā** ti kasmā? Aham eva nūna bālo, etad ahosi.[^142]
+**Vā** ti kasmā? Aham eva nūna bālo, etad ahosi (Vin. i, 13).
 
 ---
 
@@ -1860,11 +1862,11 @@ Contraejemplos:
 
 Niggahitamhā parasmiṃ sare lutte yadi byañjano sasaññogo visaññogo hoti.
 
-Evaṃ ’sa te āsavā,[^143] pupphaṃ ’sā uppajji.[^144]
+Evaṃ ’sa te āsavā (M. i, 13), pupphaṃ ’sā uppajji (Vin. i, 21).
 
-Lutte ti kasmā? Evam assa,[^145] vidhūn' aggam iti.
+Lutte ti kasmā? Evam assa (Vin. i, 265), vidūn' aggam iti.
 
-Caggahaṇena tiṇṇaṃ byañjanānam antare ye sarūpā, tesam pi lopo hoti. Agyāgāraṃ;[^146] paṭisanthāravuty assa.[^147]
+Caggahaṇena tiṇṇaṃ byañjanānam antare ye sarūpā, tesam pi lopo hoti. Agyāgāraṃ (Vin. ii, 145); paṭisanthāravuty assa (Khu. i, 67).
 
 ---
 
@@ -1884,7 +1886,7 @@ Ejemplos \[con secuencia de formación\]:
 
 ---
 
-¿Por qué se dice “cuando \[la vocal\] ha sido elidida” (*lutte*)? \[Para evitar la aplicación de esta regla en los siguientes ejemplos\] “Evam assa”, “vidhūn’ aggam iti”.
+¿Por qué se dice “cuando \[la vocal\] ha sido elidida” (*lutte*)? \[Para evitar la aplicación de esta regla en los siguientes ejemplos\] “Evam assa”, “vidūn’ aggam iti”.
 
 ---
 
@@ -1892,7 +1894,7 @@ Contraejemplos:
 
 **Evam assa**. En este y en el siguiente ejemplo no hay elisión de la vocal que sigue al niggahita. Dado que no se eliden las ‘a’ de “assa” y “aggaṃ”, las consonantes conjuntas ‘ss’ y ‘gg no se simplifican en ‘s’ y ‘g’ respectivamente.
 
-**Vidhūn’ aggam***.*
+**Vidūn’ aggam***.*
 
 ---
 
@@ -1913,7 +1915,7 @@ Contraejemplos:
 
 **42\. 32\. Go sare puthass’ āgamo kvaci (53).** \[Go \+ sare \+ putha-ssa \+ āgamo \+ kvaci, 5\]
 
-**Putha** icc etassa ante sare pare {kvaci|a veces / ocasionalmente} **ga**kārāgamo hoti.
+**Putha** icc etassa ante sare pare {kvaci|a veces} **ga**kārāgamo hoti.
 
 Puthag eva.
 
@@ -1935,11 +1937,11 @@ Ejemplo \[con secuencia de formación\]:
 
 **43\. 33\. Pāssa c’ anto rasso (54).** \[Pā-ssa \+ ca \+ anto \+ rasso, 4\]
 
-**Pā** icc etassa ante sare pare {kvaci|a veces / ocasionalmente} **ga**kārāgamo hoti, anto ca saro rasso hoti.
+**Pā** icc etassa ante sare pare {kvaci|a veces} **ga**kārāgamo hoti, anto ca saro rasso hoti.
 
-Pag eva[^148] vutyassa.
+Pag eva (Khu. v, 111) vutyassa.
 
-**Kvacī** ti kasmā? Pā eva[^149] vutyassa.
+**Kvacī** ti kasmā? Pā eva (Vin. iv, 476) vutyassa.
 
 ---
 
@@ -1971,7 +1973,7 @@ Contraejemplo:
 
 **Abhi** icc etassa sare pare **abbhā**deso hoti.
 
-Abbhudīritaṃ, abbhuggacchati.[^150]
+Abbhudīritaṃ, abbhuggacchati (M. i, 177).
 
 ---
 
@@ -1995,7 +1997,7 @@ Ejemplos \[con secuencia de formación\]:
 
 **Adhi** icc etassa sare pare **ajjhā**deso hoti.
 
-Ajjhokāse,[^151] ajjhāgamā.
+Ajjhokāse (Vin. ii, 58), ajjhāgamā.
 
 ---
 
@@ -2025,7 +2027,7 @@ Abhicchitaṃ, adhīritaṃ.
 
 ---
 
-Opcionalmente, cuando ‘i’ e ‘ī’ \[siguen\], estos no \[se aplican\].
+Opcionalmente, cuando ‘i’ e ‘ī’ siguen, estos no \[se aplican\].
 
 Cuando las letras ‘i’ e ‘ī’ siguen, ‘abhi’ y ‘adhi’, opcionalmente, no son sustituidos por las formas mencionadas: ‘abbh’ y ‘ajjh’.
 
@@ -2059,7 +2061,7 @@ Contraejemplos:
 
 Atīsigaṇo, atīritaṃ.
 
-Ivaṇṇe ti kasmā? Accantaṃ.[^152]
+Ivaṇṇe ti kasmā? Accantaṃ (VinA. i, 1).
 
 ---
 
@@ -2091,11 +2093,11 @@ Contraejemplo:
 
 **48\. 43\. Kvaci paṭi patissa (137).** \[Kvaci \+ paṭi \+ patissa, 3\]
 
-**Pati** icc etassa sare vā byañjane vā pare {kvaci|a veces / ocasionalmente} **paṭi-**ādeso hoti.
+**Pati** icc etassa sare vā byañjane vā pare {kvaci|a veces} **paṭi-**ādeso hoti.
 
-Paṭaggi[^153] dātabbo, paṭihaññati.[^154]
+Paṭaggi (Vin. iv, 279) dātabbo, paṭihaññati (Vin. iv, 292).
 
-**Kvacī** ti kasmā? Paccantimesu janapadesu,[^155] patilīyati,[^156] patirūpadesavāso ca.[^157]
+**Kvacī** ti kasmā? Paccantimesu janapadesu (Vin. iii, 287), patilīyati (A. ii, 434), patirūpadesavāso ca (Khu. i, 4).
 
 ---
 
@@ -2133,7 +2135,7 @@ Contraejemplos:
 
 **Putha** icc etassa anto saro byañjane pare **u**kāro hoti. 
 
-Puthujjano,[^158] puthubhūtaṃ.[^159] **Anta**ggahaṇena aputhassāpi sare pare antassa **u**kāro hoti. Manuññaṃ.[^160]
+Puthujjano (D. i, 3), puthubhūtaṃ (D. ii, 89). **Anta**ggahaṇena aputhassāpi sare pare antassa **u**kāro hoti. Manuññaṃ (Khu. ii, 119).
 
 ---
 
@@ -2161,11 +2163,11 @@ Ejemplos \[con secuencia de formación\]:
 
 **50\. 45\. O avassa (126).** \[O \+ avassa, 2\]
 
-**Ava** icc etassa byañjane pare {kvaci|a veces / ocasionalmente} **o**kāro hoti. 
+**Ava** icc etassa byañjane pare {kvaci|a veces} **o**kāro hoti. 
 
-Andhakārena onaddhā.[^161] 
+Andhakārena onaddhā (Khu. i, 35). 
 
-**Kvacī** ti kasmā? Avasussatu me sarīre maṃsalohitaṃ.[^162]
+**Kvacī** ti kasmā? Avasussatu me sarīre maṃsalohitaṃ (M. ii, 146).
 
 ---
 
@@ -2193,11 +2195,11 @@ Contraejemplo:
 
 **51\. 59\. Anupadiṭṭhānaṃ vuttayogato (150, 154).** \[An-upadiṭṭhānaṃ \+ vutta-yogato, 2\]
 
-Anupadiṭṭhānaṃ upasagganipātānaṃ sarasandhīhi byañjanasandhīhi vuttasandhīhi ca yathāyogaṃ yojetabbaṃ. 
+Anupadiṭṭhānaṃ upasagganipātānaṃ sarasandhīhi byañjanasandhīhi vuttasandhīhi[^33] ca yathāyogaṃ yojetabbaṃ.
 
-Pāpanaṃ,[^163] parāyaṇaṃ,[^164] upāyanaṃ, upāhanaṃ,[^165] nyāyogo, nirupadhi,[^166] anubodho,[^167] duvūpasantaṃ, suvūpasantaṃ, dvālayo, svālayo, durākhyātaṃ, svākhyāto, udīritaṃ, [^168] samuddiṭṭhaṃ, viyaggaṃ, vijjhaggaṃ, byaggaṃ, avayāgamanaṃ, anveti,[^169] anūpaghāto,[^170] anacchariyaṃ,[^171] pariyesanā,[^172] parāmāso.[^173] Evaṃ sare ca honti. 
+Pāpanaṃ (AbhiA. ii, 466), parāyaṇaṃ (Khu. i, 335), upāyanaṃ, upāhanaṃ (Vin. iii, 272), nyāyogo, nirupadhi (Khu. i, 148), anubodho (AbhiA. i, 296), duvūpasantaṃ, suvūpasantaṃ, dvālayo, svālayo, durākhyātaṃ, svākhyāto, udīritaṃ (Khu. i, 131), samuddiṭṭhaṃ, viyaggaṃ, vijjhaggaṃ, byaggaṃ, avayāgamanaṃ, anveti (Khu. i, 13), anūpaghāto (Khu. i, 41), anacchariyaṃ (Vin. iv, 39), pariyesanā (A. i, 570), parāmāso (Abhi. i, 93). Evaṃ sare ca honti. 
 
-Pariggaho,[^174] paggaho,[^175] pakkamo, parakkamo,[^176] nikkamo,[^177] nikkasāvo, nillayanaṃ, dullayanaṃ, dubbhikkhaṃ,[^178] dubbuttaṃ, sandiṭṭhaṃ,[^179] duggaho, viggaho,[^180] niggato,[^181] abhikkamo,[^182] paṭikkamo.[^183] Evaṃ byañjane ca. Sesā sabbe yojetabbā.
+Pariggaho (D. ii, 50), paggaho (Khu. ix, 291), pakkamo, parakkamo (Abhi. i, 92), nikkamo (Abhi. i, 93), nikkasāvo, nillayanaṃ, dullayanaṃ, dubbhikkhaṃ (Vin. i, 8), dubbuttaṃ, sandiṭṭhaṃ (Vin. i, 112), duggaho, viggaho (D. i, 223), niggato (SuttanipātaA. ii, 208), abhikkamo (M. iii, 302), paṭikkamo (Khu. vi, 171). Evaṃ byañjane ca. Sesā sabbe yojetabbā.
 
 ---
 
@@ -2219,7 +2221,7 @@ Secuencias de formación \[en el caso de vocales\]:
 
 **Pāpanaṃ**: pa āpanaṃ; p a āpanaṃ (§10); p āpanaṃ (§12); pāpanaṃ (§11).
 
-**Parāyaṇaṃ**: parā ayanaṃ; par ā ayanaṃ (§10); par ayanaṃ (§12); par āyanaṃ (§15); par āyaṇaṃ (“ca” en §20); parāyaṇaṃ (§11).[^184]
+**Parāyaṇaṃ**: parā ayanaṃ; par ā ayanaṃ (§10); par ayanaṃ (§12); par āyanaṃ (§15); par āyaṇaṃ (“ca” en §20); parāyaṇaṃ (§11).[^34]
 
 **Upāyanaṃ**: upa ayanaṃ; up a ayanaṃ (§10); up ayanaṃ (§12); up āyanaṃ (§15); upāyanaṃ (§11).
 
@@ -2259,7 +2261,7 @@ Secuencias de formación \[en el caso de vocales\]:
 
 **Anūpaghāto**: anu upaghāto; an upaghāto (§12); an ūpaghāto (§15); anūpaghāto (§11).
 
-**Anacchariyaṃ**: anu acchariyaṃ; an acchariyaṃ (§12); anacchariyaṃ (§11).[^185]
+**Anacchariyaṃ**: anu acchariyaṃ; an acchariyaṃ (§12); anacchariyaṃ (§11).[^35]
 
 **Pariyesanā**: pari esanā; pari y esanā (§35); pariyesanā (§11).
 
@@ -2311,372 +2313,72 @@ Secuencias de formación \[en caso de consonantes\]:
 
 **Fin del capítulo de Sandhi**
 
-[^1]:  “Lo mejor” (*seyyaṃ*) se refiere a los nueve estados supramundanos (*nava lokuttaradhammā*).
+[^1]:  Suboddhuṃ (K-PTS).
 
-[^2]:  Es decir, sabemos que “akkhara” en el primer sutta se refiere a las cuarenta y un letras.
+[^2]:  Estrofa en metro *vasantatilakā*.
 
-[^3]:  Dh. 67\.
+[^3]:  “Lo mejor” (*seyyaṃ*) se refiere a los nueve estados supramundanos (*nava lokuttaradhammā*).
 
-[^4]:  “Debajo” significa a la izquierda, y “encima” significa a la derecha. Lo que ya se había leído se denominaba antiguamente “debajo”, y lo que aún no se había leído, pero estaba por leerse, se denominaba “encima”. Véase §13 para la formación formal de esta voz.
+[^4]:  Es decir, sabemos que “akkhara” en el primer sutta se refiere a las cuarenta y un letras.
 
-[^5]:  Dh. 26\.
+[^5]:  Pañcapañca-akkharavanto (K).
 
-[^6]:  Dh. 13\.
+[^6]:  “Debajo” significa a la izquierda, y “encima” significa a la derecha. Lo que ya se había leído se denominaba antiguamente “debajo”, y lo que aún no se había leído, pero estaba por leerse, se denominaba “encima”. Véase §12 para la formación formal de esta voz.
 
-[^7]:  Véase §13 para la formación completa de la palabra. Cuando hay razón para unir las palabras \[mediante combinación eufónica\], el estudiante debería combinar la consonante que carece de vocal y que yace a la izquierda, con la vocal que le sigue. En el ejemplo “Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me”, *niggahita* (ṃ), que es una consonante, no debería combinarse con la vocal siguiente ‘a’, porque no es un lugar apropiado para la combinación. Para mostrar esto, se menciona la palabra “yutte” en el sutta.
+[^7]:  Véase §12 para la formación completa de la palabra. Cuando hay razón para unir las palabras \[mediante combinación eufónica\], el estudiante debería combinar la consonante que carece de vocal y que yace a la izquierda, con la vocal que le sigue. En el ejemplo “Akkocchi maṃ avadhi maṃ, ajini maṃ ahāsi me”, *niggahita* (ṃ), que es una consonante, no debería combinarse con la vocal siguiente ‘a’, porque no es un lugar apropiado para la combinación. Para mostrar esto, se menciona la palabra “yutte” en el sutta.
 
-[^8]:  Dh. 27\.
+[^8]:  Las vocales se eliden a causa de \[otra\] vocal.
 
-[^9]:  Vin. iii, 19\.
+[^9]:  Ésta es la forma moderna de editar. E: Edición. M: Moderna.
 
-[^10]:  Vin. i, 265\.
+[^10]:  “Disímil” (*asarūpa*) significa disímil en el lugar de articulación. Se dice que las vocales ‘a’ y ‘ā’ son “similares” (*sarūpa*) porque se pronuncian en la garganta (*kaṇṭha*); ‘i’ e ‘ī’ son similares, pronunciándose en el paladar blando con la parte media de la lengua en proximidad al paladar, y así sucesivamente. Pero se dice que ‘a’ e ‘i’ son disímiles porque se pronuncian en lugares de articulación diferentes.
 
-[^11]:  Las vocales se eliden a causa de \[otra\] vocal.
+[^11]:  Aunque la ‘i’ podría elidirse por el §13, aquí no se hace, porque el sutta dice “opcionalmente”.
 
-[^12]:  Ésta es la forma moderna de editar. E: Edición. M: Moderna.
+[^12]:  La partícula “ca” aquí funciona como “arrastre restrictivo” (*anukaḍḍhana*): arrastra los términos “lutte” (del §13) y “dīghaṃ” (del §15) hasta este sutta, pero impide que continúen aplicándose a los suttas posteriores.
 
-[^13]:  A. i, 311\.
+[^13]:  Debido a “ca” en el sutta.
 
-[^14]:  Vin. iii, 304\.
+[^14]:  "Por la fuerza de “ca”. Aquí, “ca” indica que esta regla tiene otras aplicaciones, tales como la sustitución de ‘ha’ por ‘dha’. Esta es precisamente la función de “acumulación” (*samuccaya*) que vimos en nuestra tabla de referencia: “ca” indica una adición a lo ya enunciado.
 
-[^15]:  Dhk. 1\.
+[^15]:  La partícula “ca” aquí funciona como “recolección” (*sampiṇḍana*): conecta la segunda cláusula (“y la vocal anterior se vuelve corta”) sin añadir significado adicional, de forma similar a la conjunción “y” en español.
 
-[^16]:  Sn. 313; Khp. 6\.
+[^16]:  En Khu. i, 72 (Dhp 414) se lee “tiṇṇo pāraṅgato jhāyī”.
 
-[^17]:  “Disímil” (*asarūpa*) significa disímil en el lugar de articulación. Se dice que las vocales ‘a’ y ‘ā’ son “similares” (*sarūpa*) porque se pronuncian en la garganta (*kaṇṭha*); ‘i’ e ‘ī’ son similares, pronunciándose en el paladar blando con la parte media de la lengua en proximidad al paladar, y así sucesivamente. Pero se dice que ‘a’ e ‘i’ son disímiles porque se pronuncian en lugares de articulación diferentes.
+[^17]:  Parece que este no es un ejemplo satisfactorio.
 
-[^18]:  A. i, 311\.
+[^18]:  La partícula “ca” aquí funciona como “recolección” (sampiṇḍana): conecta la segunda cláusula (la inserción de ‘a’ en el lugar de la elisión) sin añadir significado adicional, similar a la conjunción “y” en español.
 
-[^19]:  Vin. iii, 304\.
+[^19]:  Nandisena: «Aunque “ṭhāne” está en locativo singular y debería traducirse “en un lugar apropiado”, preferimos traducirlo “en lugares apropiados”». Esta traducción conserva el singular del pāḷi por decisión del IEBH.
 
-[^20]:  Aunque la ‘i’ podría elidirse por el §13, aquí no se hace, porque el sutta dice “opcionalmente”.
+[^20]:  Esto significa que la segunda letra se duplica como primera-segunda, y la cuarta se duplica como tercera-cuarta.
 
-[^21]:  S. ii 408\.
+[^21]:  “Jhānapphalo” también puede servir de ejemplo: jhānapphalo; jhāna phalo; jhāna pphalo (§29); jhānapphalo (§11).
 
-[^22]:  Dh. 27\.
+[^22]:  De acuerdo con este sutta, el niggahita (‘ṃ’) permanece sin cambios cuando va seguido de una consonante.
 
-[^23]:  Khp. 7, Sn. 314\.
+[^23]:  Véase Rū. §49; Sad. §139; Mo. iii 56; Bā. §41.
 
-[^24]:  Sn. 306\.
+[^24]:  Según *Nyāsa*. Sin embargo, este no es un ejemplo satisfactorio.
 
-[^25]:  Dh. 71, Sn. 376\.
+[^25]:  La partícula “vā” en este sutta se usa para indicar una alternativa fija (*vavatthitavibhāsā*): el cambio de ‘ṃ’ a ‘ñ’ se aplica únicamente cuando va seguido de “eva” y “hi”.
 
-[^26]:  Vin. v 342\.
+[^26]:  Āragge (K).
 
-[^27]:  Sn. 306\.
+[^27]:  La formación de los demás ejemplos es similar a “na-y-imassa” y “yatha-y-idaṃ”.
 
-[^28]:  DhA. i, 30\.
+[^28]:  El contraejemplo correcto es “andhībhūto ayaṃ” y no “ayaṃ loko”. Véase *Kaccāyana Bhāsāṭīkā*.
 
-[^29]:  Vin. ii 196\.
+[^29]:  La partícula “ca” aquí funciona como “arrastre hacia este sutta” (anukaḍḍhana): arrastra el niggahita de los suttas anteriores hasta este sutta, indicando que también el niggahita puede funcionar como inserción.
 
-[^30]:  La partícula “ca” aquí funciona como “arrastre restrictivo” (*anukaḍḍhana*): arrastra los términos “lutte” (del §13) y “dīghaṃ” (del §15) hasta este sutta, pero impide que continúen aplicándose a los suttas posteriores.
+[^30]:  Este ejemplo es problemático. Véase *Kaccāyana Bhāsāṭīkā.*
 
-[^31]:  Vin. iii 5\.
+[^31]:  En este y en los siguientes ejemplos no hay inserción del niggahita.
 
-[^32]:  M. i, 16\.
+[^32]:  En este y en el siguiente ejemplo no hay inserción del niggahita.
 
-[^33]:  A. i, 153\.
+[^33]:  Vuttehi sarasandhīhi (K).
 
-[^34]:  M. i, 243\.
+[^34]:  Algunos maestros separan esto como “paraṃ ayanaṃ”.
 
-[^35]:  S. i, 94\.
-
-[^36]:  A. i, 311\.
-
-[^37]:  Vin. ii, 304\.
-
-[^38]:  Vin. i 265\.
-
-[^39]:  D. ii, 47\.
-
-[^40]:  J.A. vi 94\.
-
-[^41]:  Vin. i 204\.
-
-[^42]:  Vin. ii 196\.
-
-[^43]:  M. i 401\.
-
-[^44]:  Vin. i 15\.
-
-[^45]:  Debido a “ca” en el sutta.
-
-[^46]:  Khu. i, 34\.
-
-[^47]:  "Por la fuerza de “ca”. Aquí, “ca” indica que esta regla tiene otras aplicaciones, tales como la sustitución de ‘ha’ por ‘dha’. Esta es precisamente la función de “acumulación” (*samuccaya*) que vimos en nuestra tabla de referencia: “ca” indica una adición a lo ya enunciado.
-
-[^48]:  Dh. 67\.
-
-[^49]:  Vin. v 343\.
-
-[^50]:  D. i, 85\.
-
-[^51]:  La partícula “ca” aquí funciona como “recolección” (*sampiṇḍana*): conecta la segunda cláusula (“y la vocal anterior se vuelve corta”) sin añadir significado adicional, de forma similar a la conjunción “y” en español.
-
-[^52]:  Dh. 13\.
-
-[^53]:  Dh. 16\.
-
-[^54]:  Khu. i, 72\.
-
-[^55]:  Dh. 72 tiene “tiṇṇo pāraṅgato jhāyī”.
-
-[^56]:  Dh. 19\.
-
-[^57]:  Dh. 36\.
-
-[^58]:  Dh. 67\.
-
-[^59]:  Dh. 20\.
-
-[^60]:  Dh. 41\.
-
-[^61]:  Dh. 15\.
-
-[^62]:  A. ii, 434\.
-
-[^63]:  Vin. iv 292\.
-
-[^64]:  Khu. i, 71\.
-
-[^65]:  Vin. iii 14\.
-
-[^66]:  S. i, 2\.
-
-[^67]:  Dh. 25\.
-
-[^68]:  Dh. 25\.
-
-[^69]:  Dh. 14\.
-
-[^70]:  Dh. 14\.
-
-[^71]:  Dh. 52\.
-
-[^72]:  Dh. 14\.
-
-[^73]:  La partícula “ca” aquí funciona como “recolección” (sampiṇḍana): conecta la segunda cláusula (la inserción de ‘a’ en el lugar de la elisión) sin añadir significado adicional, similar a la conjunción “y” en español.
-
-[^74]:  Sn. 340\.
-
-[^75]:  A. i 142\.
-
-[^76]:  A. i 142\.
-
-[^77]:  Dh. 15\.
-
-[^78]:  
-
-[^79]:  Dh. 32\.
-
-[^80]:  Vin. iii 6\.
-
-[^81]:  Dh. 57\.
-
-[^82]:  Esto significa que la segunda letra se duplica como primera-segunda, y la cuarta se duplica como tercera-cuarta.
-
-[^83]:  “Jhānapphalo” también puede servir de ejemplo: jhānapphalo; jhāna phalo; jhāna pphalo (§29); jhānapphalo (§11).
-
-[^84]:  Vin. i 7\.
-
-[^85]:  Dh.A. i 30\.
-
-[^86]:  De acuerdo con este sutta, el niggahita (‘ṃ’) permanece sin cambios cuando va seguido de una consonante.
-
-[^87]:  Véase Rū. §49; Sad. §139; Mo. iii 56; Bā. §41.
-
-[^88]:  Según *Nyāsa*. Sin embargo, este no es un ejemplo satisfactorio.
-
-[^89]:  M. i 318\.
-
-[^90]:  D. i 57\.
-
-[^91]:  M. i 171\.
-
-[^92]:  Sn. 396\.
-
-[^93]:  Sn. 447\.
-
-[^94]:  La partícula “vā” en este sutta se usa para indicar una alternativa fija (*vavatthitavibhāsā*): el cambio de ‘ṃ’ a ‘ñ’ se aplica únicamente cuando va seguido de “eva” y “hi”.
-
-[^95]:  Dh. 68\.
-
-[^96]:  S. i 222\.
-
-[^97]:  Dh. 13\.
-
-[^98]:  Dh. 13\.
-
-[^99]:  J. i 74\.
-
-[^100]:  A. i 4\.
-
-[^101]:  J. ii 40\.
-
-[^102]:  Dh. 66\.
-
-[^103]:  Dh. 34\.
-
-[^104]:  Dh. 21\.
-
-[^105]:  Dh. 38\.
-
-[^106]:  S. i 267\.
-
-[^107]:  D. i 80\.
-
-[^108]:  S. i, 16\.
-
-[^109]:  Dh. 71\.
-
-[^110]:  Dh. 71\.
-
-[^111]:  Bv. 322\.
-
-[^112]:  Vin. iii 1\.
-
-[^113]:  Dh. 13
-
-[^114]:  Dh. 13\. 
-
-[^115]:  Khp. 10\.
-
-[^116]:  Dh. 45\.
-
-[^117]:  Dh. 38\.
-
-[^118]:  Vin. i 1\.
-
-[^119]:  La formación de los demás ejemplos es similar a “na-y-imassa” y “yatha-y-idaṃ”.
-
-[^120]:  S. i 194\.
-
-[^121]:  Dh. 39\.
-
-[^122]:  Dh. 39\.
-
-[^123]:  El contraejemplo correcto es “andhībhūto ayaṃ” y no “ayaṃ loko”. Véase *Kaccāyana Bhāsāṭīkā*.
-
-[^124]:  Vin. ii, 15\.
-
-[^125]:  J. i 230\.
-
-[^126]:  Dh. 51\.
-
-[^127]:  Dh. 13\.
-
-[^128]:  J. ii 82; A. i 311\.
-
-[^129]:  Dh. 59\.
-
-[^130]:  Dh. 19\.
-
-[^131]:  La partícula “ca” aquí funciona como “arrastre hacia este sutta” (anukaḍḍhana): arrastra el niggahita de los suttas anteriores hasta este sutta, indicando que también el niggahita puede funcionar como inserción.
-
-[^132]:  Este ejemplo es problemático. Véase *Kaccāyana Bhāsāṭīkā.*
-
-[^133]:  En este y en los siguientes ejemplos no hay inserción del niggahita.
-
-[^134]:  Vin. ii 303\.
-
-[^135]:  Vin. iii 2\.
-
-[^136]:  En este y en el siguiente ejemplo no hay inserción del niggahita.
-
-[^137]:  Khp. 4\.
-
-[^138]:  Dh. 41\.
-
-[^139]:  Khp. 3\.
-
-[^140]:  J. i 168\.
-
-[^141]:  D. i 43\.
-
-[^142]:  Vin. i 13\.
-
-[^143]:  M. i 13\.
-
-[^144]:  Vin. i 21\.
-
-[^145]:  Vin. i 265\.
-
-[^146]:  Vin. ii 145\.
-
-[^147]:  Dh. 67\.
-
-[^148]:  J. i 111\.
-
-[^149]:  Vin. iv 476\.
-
-[^150]:  M. i 177\.
-
-[^151]:  Vin. ii 58\.
-
-[^152]:  VinA. i 1\.
-
-[^153]:  Vin. iv 279\.
-
-[^154]:  Vin. iv 292\.
-
-[^155]:  Vin. iii 287\.
-
-[^156]:  A. ii 434\.
-
-[^157]:  Khp. 4\.
-
-[^158]:  D. i 3\.
-
-[^159]:  D. ii, 89\.
-
-[^160]:  Vv. 119\.
-
-[^161]:  Dh. 35\.
-
-[^162]:  M. ii 146\.
-
-[^163]:  Vbh.A. 466\.
-
-[^164]:  Sn. 335\.
-
-[^165]:  Vin. iii 272\.
-
-[^166]:  Ud. 148\.
-
-[^167]:  Dhs.A. 296\.
-
-[^168]:  Ud. 131\.
-
-[^169]:  Dh. 13\.
-
-[^170]:  Dh. 41\.
-
-[^171]:  Vin. iv 39\.
-
-[^172]:  A. i 570\.
-
-[^173]:  Dhs. 93\.
-
-[^174]:  D. ii, 50\.
-
-[^175]:  Ps. 291\.
-
-[^176]:  Dhs. 92\.
-
-[^177]:  Dhs. 93\.
-
-[^178]:  Vin. i 8\.
-
-[^179]:  Vin. i 112\.
-
-[^180]:  D. i 223\.
-
-[^181]:  Sn.A. ii 208\.
-
-[^182]:  M. iii 302\.
-
-[^183]:  J. ii 171\.
-
-[^184]:  Algunos maestros separan esto como “paraṃ ayanaṃ”.
-
-[^185]:  Véase también *Nyāsa*.
+[^35]:  Véase también *Nyāsa*.

@@ -37,6 +37,17 @@ del propio registro. Escrito aquí, deja de depender de que alguien lo recuerde.
 - Equivalencia española entre paréntesis la primera vez:
   *kāraka* (relación sintáctica).
 
+## 1 bis. Locativo y ablativo en la glosa del sutta (sesión 45)
+
+En la glosa de un sutta, **el locativo pāḷi significa «sigue»** (*sare* =
+«cuando una vocal sigue») **y el ablativo, «después»** (*saramhā* = «después
+de una vocal»). Son el sentido del caso, no un añadido del traductor, y por
+eso **van sin corchetes**: «Las vocales se eliden cuando una vocal sigue»,
+no «cuando una vocal [sigue]». Los corchetes se reservan para lo que el
+sutta no dice —el sustantivo suplido, el verbo suplido—. Decisión de Angel,
+2026-09-03; vale para el español y para la edición inglesa («when a vowel
+follows», «after a vowel»).
+
 ## 2. Numeración de suttas
 
 - Edición base: Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).

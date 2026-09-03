@@ -46,6 +46,16 @@ def main():
         if os.path.exists(md):
             fallos += correr("generar_capitulo.py",
                              os.path.join(meta["obra_slug"], clave + ".md"))
+        # edición inglesa del mismo capítulo, si existe (sesión 45). Va
+        # después del español y se genera dos veces: la primera crea la
+        # página inglesa; la segunda pasada del español (abajo) ya la ve y
+        # pone el botón EN/ES y el `hreflang` en las dos.
+        md_en = os.path.join(RAIZ, meta["obra_slug"], clave + ".en.md")
+        if os.path.exists(md_en):
+            fallos += correr("generar_capitulo.py",
+                             os.path.join(meta["obra_slug"], clave + ".en.md"))
+            fallos += correr("generar_capitulo.py",
+                             os.path.join(meta["obra_slug"], clave + ".md"))
 
     # documentos en prosa
     #

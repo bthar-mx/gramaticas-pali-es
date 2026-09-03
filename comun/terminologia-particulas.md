@@ -11,7 +11,7 @@
 
 > *'Kvaci' 'navā' ca ekatthā, yebhuyyen' ekarūpakā,*
 > *'Vā' 'vibhāsā' samānatthā, pāyen' obhayarūpakā.*
-> (*Kaccāyanavaṇṇanā*.)
+> (*Kaccāyanavaṇṇanā* 31.)
 
 *'Kvaci' y 'navā' tienen un (el mismo) significado; generalmente tienen o muestran una sola forma. 'Vā' y 'vibhāsā' tienen el mismo significado; generalmente tienen o muestran dos formas.*
 
@@ -22,7 +22,7 @@
 | Pāḷi | Función | Equivalente en español | Ejemplos | Referencia |
 |---|---|---|---|---|
 | **kvaci** | Aplicación poco frecuente; solo una forma resultante (sin alternativa) | **"a veces"** | *yassindriyāni, tathūpamaṃ, yassadāni, saṇṇāiti, chāyāva, mātupaṭṭhānaṃ, madhūdakam* (casos donde la regla del §14 *no* se aplica) | *Kaccāyana Bhāsāṭīkā* |
-| **navā** | Sinónimo funcional de *kvaci*; también una sola forma resultante | **"ocasionalmente"** | *n+upeti → nopeti* (no se admite la forma alternativa *nupeti*); *Ivaṇṇo yaṃ navā* (§21) | *(no especificada en el texto compartido)* |
+| **navā** | Sinónimo funcional de *kvaci*; también una sola forma resultante | **"ocasionalmente"** | *n+upeti → nopeti* (no se admite la forma alternativa *nupeti*); *Ivaṇṇo yaṃ navā* (§21) | *Kaccāyanavaṇṇanā* 31 |
 | **vā** | Dos formas posibles (con y sin la aplicación) | **"opcionalmente"** | *tanniccutaṃ / tan niccutaṃ* | *Kaccāyanavaṇṇanā* (verso citado) |
 | **vibhāsā** | Sinónimo funcional de *vā*; también dos formas posibles | **"facultativamente"** | *dhammañcare / dhammaṃ care* | *Kaccāyanavaṇṇanā* (verso citado) |
 

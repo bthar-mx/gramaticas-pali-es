@@ -55,6 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ─── Feature 3: Completion checkboxes with localStorage ──────────────
 var CAP = window.PALI_CAPITULO || {};
+// Cadenas de la interfaz: las da el generador (IDIOMAS en generar_capitulo.py)
+// según el idioma de la página; sin ellas, español.
+var T = CAP.textos || {
+  estudiados: 'estudiados', abiertos: 'abiertos',
+  ocultar_notas: 'Ocultar notas', ver_notas: 'Ver notas',
+  ocultar: 'Ocultar', mostrar_mas: 'Mostrar más (formación, etc.)',
+  encontrados: 'sutta(s) encontrado(s)', copiado: '✓ Copiado', copiar: 'Copiar §'
+};
 var DONE_KEY = CAP.doneKey || 'pali_done';
 
 function loadDone() {
@@ -90,7 +98,7 @@ function renderDone() {
   });
   // Update counter
   var counter = document.getElementById('done-count');
-  if (counter) counter.textContent = done.length + ' / ' + total + ' estudiados';
+  if (counter) counter.textContent = done.length + ' / ' + total + ' ' + T.estudiados;
   // Update progress badge to show completion
   var badge = document.getElementById('pbadge');
   if (badge && done.length > 0) {
@@ -328,7 +336,7 @@ function refreshProgress() {
   document.getElementById('pbar').style.width = pct + '%';
   document.getElementById('pbadge').textContent = visited.size + ' / ' + total + ' §';
   var lbl = document.getElementById('open-count');
-  if (lbl) lbl.textContent = open > 0 ? open + ' / ' + total + ' abiertos' : '';
+  if (lbl) lbl.textContent = open > 0 ? open + ' / ' + total + ' ' + T.abiertos : '';
 }
 
 // ─── TOC active ──────────────────────────────────────────────────
@@ -492,9 +500,9 @@ function toggleSeq(seqId, btn) {
       var type = btn.getAttribute('data-type');
       if (type === 'fn') {
         var n = btn.getAttribute('data-count') || '';
-        btn.childNodes[i].nodeValue = open ? ' Ocultar notas' : (' Ver notas (' + n + ')');
+        btn.childNodes[i].nodeValue = open ? ' ' + T.ocultar_notas : (' ' + T.ver_notas + ' (' + n + ')');
       } else {
-        btn.childNodes[i].nodeValue = open ? ' Ocultar' : ' Mostrar más (formación, etc.)';
+        btn.childNodes[i].nodeValue = open ? ' ' + T.ocultar : ' ' + T.mostrar_mas;
       }
     }
   }
@@ -514,7 +522,7 @@ function doSearch(q) {
     }
   });
   var el = document.getElementById('search-count');
-  if (el) el.textContent = q ? (count + ' sutta(s) encontrado(s)') : '';
+  if (el) el.textContent = q ? (count + ' ' + T.encontrados) : '';
 }
 
 // ─── Font size ───────────────────────────────────────────────────
@@ -547,9 +555,9 @@ function copySutta(id) {
   navigator.clipboard.writeText(text).then(function() {
     var btn = card.querySelector('.copy-btn');
     if (!btn) return;
-    btn.textContent = '✓ Copiado';
+    btn.textContent = T.copiado;
     btn.classList.add('copied');
-    setTimeout(function() { btn.textContent = 'Copiar §'; btn.classList.remove('copied'); }, 2000);
+    setTimeout(function() { btn.textContent = T.copiar; btn.classList.remove('copied'); }, 2000);
   });
 }
 

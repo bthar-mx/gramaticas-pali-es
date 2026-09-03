@@ -163,6 +163,8 @@ expresa de Angel.
 | Sutta | Nandisena | Corregido a | Sesión |
 | ----- | --------- | ----------- | ------ |
 | Kāraka §275 | jātaka | **jātakā** | 23 |
+| Sandhi, nota 2 (invocación) | Vasantilaka Gāthā | **estrofa en metro *vasantatilakā*** | 45 |
+| Sandhi, notas 6 y 7 (§10, §11) | «See §13 for formal formation of the word» | **Véase §12**: la formación está impresa bajo Kacc. §12 (= Rū. 13) | 45 |
 
 En §275 la lista de los nueve aṅgas aparece dos veces —bajo `Pañhe` y bajo
 `Kathane`— y la edición base imprimía *jātakā* en la primera y *jātaka* en
@@ -171,6 +173,40 @@ modo que las dos citas `(Khu. vii, 111; VinA. i, 22; DA. i, 24)` han dejado
 de tener ancla única: están puestas y verificadas, pero una pasada futura de
 `restituir_citas.py --base` volvería a darlas por pendientes. No es un
 error: es el emparejador negándose a elegir, que es lo que debe hacer.
+
+### 5.1 sexies. El Sandhi-Kappa, unificado con los capítulos 2 y 3 (sesión 45)
+
+El Sandhi-Kappa, anterior a la regla de §5, llevaba las citas en **notas al
+pie** y con las siglas del documento español del Venerable (*Reglas de
+combinación eufónica*, 2013): `Dh. 67`, `Sn. 306`, `Khp. 6`, `J. i 74`,
+`Ud. 148`, `Vv. 119`, `Bv. 322`, `Dhk. 1`, `Dhs. 93`, `Ps. 291`, `Vbh.A. 466`.
+Son las mismas citas que la edición base imprime como `Khu. i, 67`, etc.:
+**el número es en ambos sistemas la página de la edición birmana**, no el
+número de estrofa — `Dh. 67` es Dhp 375, no Dhp 67 —, sólo que el siglum
+español desata el tomo del Khuddaka en la obra concreta.
+
+Por decisión de Angel (2026-09-03), el Sandhi-Kappa sigue ahora la misma
+regla que Nāma y Kāraka: **la cita va en línea, en el bloque pāḷi, tal como
+la imprime la edición base** (`Yass’ indriyāni samathaṅgatāni (Khu. i, 27,
+358), …`), y las citas que estaban en líneas españolas se retiran. Se
+cotejaron una a una contra el PDF de Nandisena (cap. 1, 48 pp.). Cambios
+respecto de lo que había:
+
+- `Vi. iv, 292` (§25, errata de la edición base) → `Vin. iv, 292`.
+- `Aṅ. i, 311` (§37) → `A. i, 311`, sigla normalizada.
+- `S. 408` (§14) se conserva tal cual: la edición base no da tomo.
+- Repuestas las citas que faltaban: las diez del *suttavibhāga* de §20 y
+  `(A. iii, 424)` en §36.
+- La sigla `khu.` en minúscula de §24 → `Khu.`.
+
+`ABREVIATURAS` gana `JA`, `VinA`, `AbhiA` y `SuttanipātaA`.
+
+Las citas de `recursos/sandhi/reglas.json` proceden del documento español
+del Venerable y conservan su siglum (`Dh. 67`); son la misma página birmana.
+
+<!-- DUDA: ¿conviene añadir en el emergente el número de estrofa (Dhp 375)
+     verificado contra Pind (PTS)? Exige comprobar ~110 citas una a una; no
+     se ha hecho. Angel decide si vale la pena. -->
 
 ### 5.2 Presentación
 
@@ -356,3 +392,37 @@ Al final de cada capítulo:
 ---
 
 *Documento de referencia de estilo y formato — Proyecto "Kaccāyana Pāḷi-Español"*
+
+---
+
+## 9. La edición inglesa (sesión 45)
+
+Decidida por Angel el 2026-09-03 con permiso del Venerable Nandisena. Lo
+normativo está en `CLAUDE.md` («La edición inglesa») y en
+`comun/convenciones.md` §1 bis; aquí, lo práctico.
+
+- **Maestro paralelo:** `kaccayana/NN-nombre.en.md`, misma estructura que el
+  español bloque a bloque —pāḷi, glosa, vutti, secuencias, notas— de modo
+  que un guion pueda cotejarlos (el de la sesión 45 comprobó: 51 cabeceras
+  iguales, 51 bloques pāḷi iguales, 394 líneas de secuencia iguales salvo
+  «(EM)» → «(ME)», 35 notas en el mismo orden).
+- **Lo que cambia respecto del español, y sólo eso:** la prosa. El pāḷi, las
+  citas, las secuencias y los desgloses son los mismos.
+- **Rótulos ingleses** (los reconoce el generador): `Sequence:`,
+  `Examples [with formation sequence]:`, `Counter-example(s):`, `(ME)` por
+  «(EM)», `Extension by “ca” (accumulating):`, «Thus ends the … section of the
+  chapter on sandhi», «End of the Sandhi Chapter».
+- **Glosas emergentes** `{término|glosa}` en inglés; los 23 términos del Sandhi
+  y su inglés están en el memorando, §2.6 y en el propio maestro.
+- **Versión propia:** `version_en`, `version_fecha_en`, `version_nota_en` en
+  `CAPITULOS`; la inglesa del Sandhi nace en 1.0.
+- **Dónde se publica:** `site/en/kaccayana/sandhi/`. El botón EN/ES de cada
+  página lleva a la otra conservando el ancla `#sN`, y guarda la elección en
+  `pali_lang`, la misma clave de la portada; una página que encuentra en esa
+  clave la otra lengua **redirige** a la otra página. `hreflang` en las dos.
+- **Créditos del pie inglés:** «Pāḷi text and English translation by Bhikkhu
+  U Nandisena (ITBMU); edition, apparatus and glossary by the IEBH».
+- **El apéndice del Venerable** (aplicaciones de «ca»; *kvaci, vā, navā,
+  vibhāsā*) está verbatim en `docs/fuentes/nandisena-apendice-sandhi-en.md`
+  y todavía no se publica en ninguna de las dos ediciones.
+
