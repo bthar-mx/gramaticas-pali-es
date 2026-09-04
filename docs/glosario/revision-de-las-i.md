@@ -468,6 +468,182 @@ normalizó en silencio—.
 
 ---
 
+## 4 quater. La colación sigue por la p. 1118, y encuentra que el escaneo mentía
+
+*Sesión 55. Método y regla, los mismos: hoja = página impresa − 1104,
+`pdfimages -j`, y **una lectura sólo se afirma si hay control en la misma
+página**. **Ninguna ficha ha cambiado de lema.***
+
+| pág. | fichas | hallazgos | estado |
+| ---: | ---: | ---: | --- |
+| 1118 | 41 | 1 + 1 aviso | una `duda` |
+| 1119 | 45 | 0 nuevos | una vieja confirmada |
+| 1120 | 39 | 2 | dos `duda` |
+| 1121 | 46 | 1 + 2 avisos | una `duda` (sobre una duda vieja) |
+| 1122 | 32 | 0 | limpia |
+| 1123 | 30 | 2 | dos `duda` |
+
+**Van 19 páginas de 44.**
+
+### 4 quater.0 LO PRIMERO, PORQUE CAMBIA EL MÉTODO: hay breves que no existen
+
+El hallazgo mayor de la tanda no es una lectura: es que **el escaneo de 400 dpi
+con el que se trabajaba ha producido BREVES QUE EL EJEMPLAR NO TIENE.** Dos, y
+las dos sostenían razonamientos publicados:
+
+| dónde | la ficha dice | el ejemplar da |
+| --- | --- | --- |
+| `kiriyāpatti` 5.1.1.2 (p. 1121) | `păpuṇīyate`, con breve | **`pāpuṇīyate`, con macrón** |
+| `samāsa` 5.2 (p. 1123), nota | `nănāpadānaṃ`, con breve | **`nānāpadānaṃ`, macrón en las tres aes** |
+
+Y lo importante es **cómo se ha comprobado**, porque el procedimiento sirve de
+aquí en adelante: **calibrando contra una breve que el propio proyecto tiene por
+atestiguada, sobre este mismo ejemplar.** El `să-` de `să-disa` (4.1.1,
+p. 1117) es, a ×18, un trazo **fino, curvo, abierto y levantado, con blanco
+dentro**. El macrón es una **losa horizontal, negra, maciza, recta y sin
+blanco**. Puestos uno al lado del otro no se parecen en nada. Las marcas de
+`pāpuṇīyate` y de `nānāpadānaṃ` son losas, y además son indistinguibles de la
+`ī` de la sílaba siguiente de su propia palabra.
+
+**Lo que sí sobrevive**, y conviene decirlo con la misma claridad: el
+`ā̆nupubbī` de 5.2.1 (p. 1124) **lleva anceps de verdad**, y en este ejemplar se
+ve entero a ×4 —barra de macrón con la cazoleta encima, las dos superpuestas—,
+con el `anupubba` de dos palabras después, sin marca ninguna, de control. Y el
+`să-disa` de la p. 1117 es breve limpia.
+
+De modo que **el ejemplar distingue sin esfuerzo cuatro cosas** —macrón, breve,
+anceps y punto suscrito— donde el escaneo antiguo confundía dos. Esto refuerza
+la propuesta del §5.8: **el barrido de las 44 páginas ya no es sólo para
+encontrar signos perdidos, sino para desmentir los inventados.**
+
+### 4 quater.1 `vīcchāyoge` (4.3, p. 1120): la razón por la que se fijó el lema ha dejado de valer
+
+La ficha da `vicchāyoge` con i breve, y su nota explica por qué: Angel lo
+corrigió porque «a 400 dpi la tilde de la i y el macrón no se distinguen con
+seguridad **en este escaneo**». En el ejemplar sí se distinguen: **Smith imprime
+`vīcchāyoge`, con Ī LARGA**, a ×5, barra plana que desborda la letra por los dos
+lados, del mismo trazo que la ā de la sílaba `-chā-` dos letras después. Y el
+control de breve está en la **línea inmediatamente siguiente**:
+`itthambhūtakkhāna`, cuyas dos íes llevan punto redondo mientras su ū y su ā
+llevan barra.
+
+Concuerda con el §2.5 —las cuatro apariciones de `vicchā` salieron con
+macrón— y con las **dos `vīcchā` de la p. 1124**, que en esta misma tanda se
+han visto de paso, las dos con su barra. Ficha marcada, lema intacto.
+
+### 4 quater.2 `āmantaṇa` (5.1.0, p. 1120): la tercera del grupo, y una cuarta de regalo
+
+Es la que el briefing 54 §2 dejaba pendiente. **Smith imprime `āmantaṇa`, con Ṇ
+RETROFLEJA**, y aquí el caso queda cerrado con tres controles a ×6-7:
+
+| | |
+| --- | --- |
+| interno | la propia palabra tiene DOS enes y sólo la segunda lleva punto |
+| externo negativo | `puggalālapana`, en la línea INMEDIATAMENTE siguiente, n limpia |
+| externo positivo | `bhāvalakkhaṇa`, cuatro líneas más abajo, punto de ṇ idéntico |
+
+Y hay **una cuarta aparición, no prevista**: en la p. 1123, línea 3, Smith
+escribe `l'āmantaṇa 5.1.0` remitiendo a esta misma sección, otra vez con ṇ y
+otra vez con el control interno de las dos enes. Van, pues, **cuatro
+apariciones en tres páginas —1110, 1120, 1123— y las cuatro con ṇ.**
+
+**Lo delicado sigue siendo la nota publicada**, que dice «Smith da āmantana, que
+es la forma posible»: es lo contrario de lo que imprime. Y conviene ver que el
+Diplomado tampoco coincide con Smith aunque los dos lleven ṇ: el Diplomado
+escribe `āmaṇtanā`, con la ṇ en la primera sílaba y ā final; Smith, `āmantaṇa`.
+**No se ha corregido nada.** Las tres fichas del grupo se deciden juntas.
+
+### 4 quater.3 `alutta⟨vibhattika⟩samāsa` (5.2, p. 1123): un paréntesis que atribuye
+
+Clase nueva, y no es diacrítica. **Smith imprime paréntesis ANGULARES** —dos
+trazos rectos en punta— y la ficha los pone REDONDOS. El control está a cinco
+líneas y es perfecto: el `⟨vutti⟩)` de la entrada `samāsa`, donde los dos signos
+van pegados y la punta y el arco se ven uno junto al otro sin aumento.
+
+Por la regla del propio proyecto —sesión 47 §4, matizada en la 48 §3—, **los
+angulares garantizan a Moggallāna**. Convertirlos en redondos borra la
+atribución: `vibhattika` dejaría de constar como término de Moggallāna.
+
+Y rompe la pauta del corpus: **52 lemas llevan paréntesis redondos y ninguno
+angulares**; cuando el término va en ⟨⟩ la práctica constante ha sido dejar el
+lema desnudo y decirlo en la nota. Éste es el único que mete el paréntesis
+dentro, y encima le cambia la clase.
+
+### 4 quater.4 El signo `ɔ:` de Smith, que la transcripción da como `⊃`
+
+En la p. 1118 (`satva ɔ: dabba`) y en la p. 1119 (`[cf. ākāṅkṣā] ɔ:`) lo que
+Smith imprime es **una c invertida seguida de dos puntos**: una letra de cuerpo
+pequeño, redonda, abierta a la izquierda y de la altura de la x. La
+transcripción lo da como **`⊃`**, el signo matemático de inclusión, que es de
+otro trazo y de otro cuerpo.
+
+**No es un desliz de una ficha: son 40 fichas de 21 páginas**, y en varias de
+ellas dentro del campo `fr`, que va literal —`kaṇṭhaja` (1106), `ussukkana`
+(1119), `āmantana` (1120), `paccattakaraṇa` (1121)…—. Es, pues, una convención
+de la transcripción. **No se afirma aquí qué significa el signo** —eso lo dice
+el prefacio de Smith, no la imagen—, sólo que lo impreso no es el glifo que se
+pone. La `duda` va en `satva`.
+
+### 4 quater.5 Las dos omisiones de la p. 1121, y la de la p. 1118
+
+- **`karaṇavacana`** (5.1.1.3): Smith lo imprime en redonda, como término, con
+  su propia remisión —«les emplois du 3ème cas tatiyā, karaṇavacana (3.3.3)»—, y
+  **no tiene ficha en ninguna página del Conspectus.** Es del peso de
+  `chandadīghatā` (p. 1108). **No se ha creado.**
+- **`tatiyā`**, en la misma frase: está lematizado en 3.3.3 (p. 1115) y aquí no
+  tiene ficha. Es un repetido, y los repetidos se recogen —`sara`, `īsakaṃ`—;
+  pero aquí Smith lo usa como simple remisión, de modo que pesa menos.
+- **`casaddattha`** (4.2.1, p. 1118): va entre paréntesis ANGULARES —«samuccaya
+  ⟨: casaddattha III, 23⟩»— y sólo consta en la nota de `samuccaya`, mientras
+  que en esa misma página `pasajjapaṭisedha` y `pariyudāsa`, también angulares,
+  sí tienen tratamiento de lema y de variante. La inconsistencia es de la misma
+  página.
+
+### 4 quater.6 Lo que se comprobó sin novedad, y dos alarmas que no lo eran
+
+- **p. 1118, 41 fichas.** Todos los lemas cuadran con la plancha, con control en
+  la página: `accana`, `ādāna` y `pūjana` con n dental limpia en la misma línea;
+  `pūraṇa` con su punto frente al `vikappana` de la línea de encima;
+  `(h)alaṃ` con su ṃ; `sadisattha` **sin breve**, con el `vā` de la línea de
+  encima de control — de modo que la breve del `sădisa` de la p. 1117 es
+  anomalía suya y no norma.
+- **p. 1119, 45 fichas, ningún hallazgo nuevo**, y una duda vieja que el
+  ejemplar confirma: **`avadhārana`** (4.2.3.2) se lee con **n dental**, con el
+  `daḷhīkaraṇa` de la línea de encima y el `avaṭṭhāna` de la misma línea de
+  control. La disparidad está en la edición, no en el escaneo, como pasó con el
+  `sukkhuccāraṇatthaṃ` de la p. 1108.
+- **p. 1119, y el `īsakaṃ` que refuerza el §5.7.** Aquí Smith lo imprime **con
+  macrón** —control en la misma línea: `asaṃghāṭa` y `apattabhāve`— y **la ficha
+  de esta página ya lo da largo**. De modo que las de las pp. 1106 y 1108, que
+  lo dan breve, se apartan a la vez de la plancha, de la lengua y **de su propia
+  hermana**. Tres testigos.
+- **p. 1120, `aṭṭhamī` con ī bien visible**, con `paṭhamā` de control en la misma
+  línea. No prueba la hoja floja de la p. 1116 (§4 ter.6), pero enseña la norma
+  de Smith donde la imagen sí decide.
+- **Dos manchas que parecían signos.** Sobre la ā final de `āsiṃsā` (p. 1119) y
+  la de `kiriyā` (p. 1120) hay un trazo fino e inclinado pegado al extremo
+  derecho del macrón. **No es anceps —no hay cazoleta— ni circunflejo —no hay
+  dos astas en ángulo—**, y el control lo da la propia línea: `patthanā` en la
+  p. 1119 y `paṭhamā` en la p. 1120 llevan la barra limpia. Que es mota, y no
+  signo, lo dice la p. 1121: allí `dvikammikā kiriyā` trae **las dos aes finales
+  con la barra limpia**, y `kiriyāpatti (kiriyāya …)` otras dos. **Nada tocado**;
+  queda anotado porque la mancha reaparecerá.
+- **El circunflejo se recoge más veces de lo que decía el briefing 54.** Aquél
+  contaba **una** sola forma con circunflejo en las 1.878 fichas
+  (`tatrâyaṃ gāthā`, p. 1148), y es cierto **de los lemas**; pero dentro de las
+  notas hay al menos dos más, y las dos correctas: `karmaṇâbhipraiti` en
+  `sampadāna` (5.1.1.4, p. 1122) y `samāhārâsamāhāradiguvasena` en `digu`
+  (5.2.2.3, p. 1125). El signo se ve y se recoge; lo que falla es el paso al
+  lema, como ya mostraban `tassêdaṃ` y `nâvisada`.
+- **p. 1122, 32 fichas, página limpia.** Se miró en particular `sāmīpika`
+  (5.1.1.6), que sale **con ī**, y en la p. 1123 `samīpa-` (5.1.2) y en la
+  p. 1124 `samīpattha`, las tres con barra: respaldan otra vez la decisión del
+  §5.5 sobre el `samipa` de la p. 1117 como anomalía del impreso.
+- **p. 1123, y el `asukhuccāraṇa` de 5.2**, con **kh simple**, que vuelve a dejar
+  solo al `sukkhuccāraṇatthaṃ` de la p. 1108 (§4 ter.5).
+
+---
+
 ## 5. Qué se pide a Angel
 
 **Resuelto todo en la propia sesión 53.** Queda constancia de lo decidido:
@@ -533,3 +709,35 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
     cuatro del punto 9.
 16. **Las ocho del §4** siguen sin cotejar, y ahora entran en la colación general
     de las 44 páginas, que es la que Angel ha pedido.
+
+**Y lo que añade la sesión 55 (§4 quater). Va lo primero lo que más pesa:**
+
+17. **LAS BREVES INVENTADAS**, §4 quater.0. El escaneo de 400 dpi dio dos breves
+    que el ejemplar no tiene: `păpuṇīyate` (5.1.1.2, p. 1121) y el
+    `nănāpadānaṃ` de la nota de `samāsa` (5.2, p. 1123). Las dos son macrón. Y
+    las dos sostenían razonamientos publicados: la nota de `pāpanīya` se levanta
+    sobre el contraste con la primera, y la nota de `nānānāma` (5.2.5, p. 1126)
+    sobre la segunda. **Las verdaderas sí resisten** —`să-disa` y el anceps de
+    `ā̆nupubbī`—. **Esto reabre el punto 8 y el 13 con más razón que antes:** el
+    barrido de las 44 páginas ya no es sólo para encontrar lo perdido, sino para
+    desmentir lo inventado.
+18. **`vīcchāyoge`** (4.3, p. 1120), §4 quater.1. **Toca un lema que Angel
+    fijó**, y por eso va con cuidado: se fijó breve porque el escaneo no
+    decidía, y el ejemplar decide —ī larga, con la línea siguiente de control—.
+    Ficha marcada, lema intacto.
+19. **`āmantaṇa`** (5.1.0, p. 1120), §4 quater.2. La tercera del grupo del punto
+    11, ahora verificada con tres controles, más **una cuarta aparición** en la
+    p. 1123. Cuatro veces con ṇ en tres páginas. Se decide con el punto 11, y con
+    ellas qué se hace con la nota publicada que dice lo contrario.
+20. **`alutta⟨vibhattika⟩samāsa`** (5.2, p. 1123), §4 quater.3. Clase nueva: no
+    es un diacrítico, es un paréntesis, y en Smith el angular **atribuye a
+    Moggallāna**. La ficha lo da redondo, y es el único lema del corpus que mete
+    el paréntesis dentro.
+21. **El signo `ɔ:`**, §4 quater.4. La transcripción lo da como `⊃` en **40
+    fichas de 21 páginas**, varias dentro del campo `fr`, que va literal. Dejarlo,
+    cambiarlo, o explicarlo una vez.
+22. **Tres omisiones más**, §4 quater.5: **`karaṇavacana`** (p. 1121), que no
+    tiene ficha en ninguna página y es del peso de `chandadīghatā`; `tatiyā` en
+    la misma frase, que sí la tiene en la p. 1115; y **`casaddattha`** (p. 1118),
+    angular y sólo en nota, mientras `pasajjapaṭisedha` y `pariyudāsa`, angulares
+    de la misma página, sí son lema y variante. Nada creado.
