@@ -6,7 +6,7 @@ Si hay conflicto entre este archivo y `comun/convenciones.md`, manda
 ## Qué es este repositorio
 
 Traducciones al español de gramáticas clásicas pāḷi. Público lector:
-estudiantes hispanohablantes de pāḷi con formación budista.
+estudiantes hispanohablantes de pāḷi con formación buddhista.
 
 ## Reglas
 
