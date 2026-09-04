@@ -194,6 +194,29 @@ h1 .dia{color:var(--haritala)}
 [data-tip]{cursor:help}
 button[data-tip]{cursor:pointer}
 
+/* ---------- prosa en dos idiomas ----------
+   Mismo mecanismo que /recursos/paradigmas/: dos bloques, y el botón ES/EN
+   enseña uno. Vale para el pie, donde la nota biográfica y los créditos van
+   en los dos idiomas. */
+body.en .i-es{display:none}
+body:not(.en) .i-en{display:none}
+
+/* La nota sobre Helmer Smith. Va plegada dentro del pie: quien lea el
+   glosario no la necesita, y quien pinche su nombre sí. */
+.bio{margin:10px 0 0;padding:12px 14px;border-left:2px solid var(--haritala);
+  background:var(--hover);border-radius:0 2px 2px 0}
+.bio > summary{font-family:var(--mono);font-size:10.5px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--haritala);
+  cursor:pointer;list-style:none}
+.bio > summary::-webkit-details-marker{display:none}
+.bio > summary::after{content:' ▸';font-size:10px}
+.bio[open] > summary::after{content:' ▾'}
+.bio[open] > summary{margin-bottom:8px}
+.bio p{margin:0 0 8px}
+.bio p:last-child{margin-bottom:0}
+.bio .fuente{font-size:12px;color:var(--soot);border-top:1px solid var(--hair);
+  padding-top:8px;margin-top:10px}
+
 /* ---------- las fichas ---------- */
 main{padding-top:8px;padding-bottom:60px}
 h2.sec{font-size:13px;font-family:var(--mono);letter-spacing:.13em;
@@ -414,12 +437,114 @@ footer code{font-family:var(--mono);font-size:11.5px}
   Saddanīti, Niruttidīpanī y Payogasiddhi van con cada entrada.</p>
 
   <p><b>Conspectus Terminorum</b> (saññāmātikā). <i>Saddanīti. La grammaire
-  palie d'Aggavaṃsa</i>, texto establecido por <b>Helmer Smith</b>, IV:
+  palie d'Aggavaṃsa</i>, texto establecido por
+  <b><a href="#bio-smith" id="ir-bio-smith">Helmer Smith</a></b>, IV:
   <i>Tables</i>, 1<sup>e</sup> partie, sección E, pp. 1105-1148 (Lund,
   C. W. K. Gleerup, 1949). El escaneo no tiene capa de texto y ningún OCR lo
   lee: la transcripción se hizo leyendo la imagen página a página. Smith
   remite, a su vez, a Jhalakīkar, Pāṭhak y Chitrāo, Renou y la
   <i>Durghaṭavṛtti</i>.</p>
+
+  <!-- La nota es original, redactada a partir de los HECHOS del obituario
+       que Hans Hendriksen firmó en 1960 —los hechos no son de nadie—, y NO
+       una traducción de su texto, que sigue en derechos. Se le cita y se
+       enlaza, que es lo que corresponde. -->
+  <details class="bio" id="bio-smith">
+    <summary><span class="i-es">Quién fue Helmer Smith (1882-1956)</span><span class="i-en">Who Helmer Smith was (1882-1956)</span></summary>
+
+    <div class="i-es">
+    <p><b>Helmer Smith</b> (Estocolmo, 26 de abril de 1882 — 9 de enero de
+    1956) fue uno de los grandes filólogos del pāḷi. Se licenció en Uppsala en
+    1908, fue docente de Filología India en Lund desde 1921 y catedrático de
+    Filología Comparada y Sánscrito en Uppsala desde 1936. Recibió el
+    doctorado honoris causa por Lund en 1925 y fue miembro de honor de la
+    Société asiatique de París, miembro extranjero de la Real Academia Danesa
+    de Ciencias y Letras, y —distinción que, ya anciano, le dio una
+    satisfacción particular— miembro de honor de la Royal Asiatic Society de
+    Ceilán en 1949.</p>
+
+    <p>Con Dines Andersen editó el <i>Sutta-nipāta</i> (1913) y, en 1921, dos
+    obras gramaticales breves que este sitio publica en
+    <a href="../raices/">Raíces</a>: el <b>Dhātupāṭha</b> y la
+    <b>Dhātumañjūsā</b>. En 1924 los dos emprendieron <i>A Critical Pāli
+    Dictionary</i>. Suya en solitario es la <i>Paramatthajotikā</i> en cuatro
+    volúmenes (1915-1918) y, sobre todo, la <b>edición monumental del
+    <i>Saddanīti</i></b>, cuyo primer volumen apareció en 1928: el texto ocupa
+    tres volúmenes y 928 páginas, y a ellos añadió concordancias con Aggavaṃsa
+    y los demás gramáticos pāḷi, índices de palabras y de citas, y el
+    <i>Conspectus Terminorum</i> que esta página recoge.</p>
+
+    <p>De ese <i>Conspectus</i> escribió Hendriksen algo que conviene tener
+    delante al leerlo: que <b>no es una lista sino una exposición sistemática
+    y detallada de las doctrinas de los gramáticos pāḷi</b>, notable por su
+    penetración y su precisión, y que su carácter «escapa fácilmente a la
+    atención, porque el autor, con su modestia característica, lo ha
+    camuflado muy bien»; debería tenerse, dice, por introducción
+    indispensable para quien estudie a los gramáticos indios.</p>
+
+    <p>Leía sánscrito, pāḷi y prácrito, y estudió cingalés, hindi, tamil y
+    birmano; era además buen clasicista y conocía bien el nórdico antiguo.
+    Sus ediciones se apoyan no sólo en manuscritos, sino en textos paralelos
+    y comentarios en pāḷi, cingalés y birmano, con la métrica como control
+    añadido. Su prosa es elegante y comprimida hasta lo difícil. Fue
+    epistológrafo prodigioso, y buena parte de sus ideas llegó a sus colegas
+    por carta antes que por imprenta.</p>
+    </div>
+
+    <div class="i-en">
+    <p><b>Helmer Smith</b> (Stockholm, 26 April 1882 — 9 January 1956) was one
+    of the great philologists of Pāḷi. He took his degree at Uppsala in 1908,
+    became Reader in Indian Philology at Lund in 1921 and Professor of
+    Comparative Philology and Sanskrit at Uppsala in 1936. Lund gave him an
+    honorary doctorate in 1925; he was an honorary member of the Société
+    asiatique of Paris, a foreign member of the Royal Danish Academy of
+    Sciences and Letters, and — an honour that in his old age gave him
+    particular satisfaction — an honorary member of the Royal Asiatic Society
+    of Ceylon in 1949.</p>
+
+    <p>With Dines Andersen he edited the <i>Sutta-nipāta</i> (1913) and, in
+    1921, the two short grammatical works this site publishes under
+    <a href="../raices/">Roots</a>: the <b>Dhātupāṭha</b> and the
+    <b>Dhātumañjūsā</b>. In 1924 the two of them began <i>A Critical Pāli
+    Dictionary</i>. His alone are the <i>Paramatthajotikā</i> in four volumes
+    (1915-1918) and, above all, the <b>monumental edition of the
+    <i>Saddanīti</i></b>, whose first volume appeared in 1928: the text runs
+    to three volumes and 928 pages, to which he added concordances to
+    Aggavaṃsa and the other Pāḷi grammarians, indexes of words and of
+    quotations, and the <i>Conspectus Terminorum</i> gathered on this page.</p>
+
+    <p>Of that <i>Conspectus</i> Hendriksen wrote something worth keeping in
+    mind while reading it: that <b>it is not a list but a detailed systematic
+    account of the doctrines of the Pāḷi grammarians</b>, remarkable for its
+    penetration and precision, whose character «will easily escape notice,
+    since the author with characteristic modesty has camouflaged it so well»,
+    and which ought to be considered an indispensable introduction for anyone
+    studying the Indian grammarians.</p>
+
+    <p>He read Sanskrit, Pāḷi and Prākrit widely, and studied Sinhalese,
+    Hindi, Tamil and Burmese; he was besides an excellent classicist with a
+    good knowledge of Old Norse. His editions rest not only on manuscripts
+    but on parallel texts and commentaries in Pāḷi, Sinhalese and Burmese,
+    with metrical study as a further control. His prose is elegant and
+    compressed to the point of difficulty. He was a prodigious
+    letter-writer, and a good part of his thinking reached his colleagues by
+    post before it reached print.</p>
+    </div>
+
+    <p class="fuente"><span class="i-es">Redactado a partir del obituario de
+    <b>Hans Hendriksen</b> (12 de abril de 1960), <i>A Critical Pāli
+    Dictionary</i> II, pp. V-VIII, con la bibliografía que compiló la Sra.
+    Ellen Smith. No es una traducción de ese texto, que sigue en derechos:
+    <a href="https://cpd.uni-koeln.de/intro/helmer_smith_obituary" rel="noopener" target="_blank">puede
+    leerse entero en el sitio del <i>Critical Pāli Dictionary</i></a> de la
+    Universidad de Colonia.</span><span class="i-en">Written from the obituary
+    by <b>Hans Hendriksen</b> (12 April 1960), <i>A Critical Pāli
+    Dictionary</i> II, pp. V-VIII, with the bibliography compiled by Mrs Ellen
+    Smith. It is not a translation of that text, which remains in copyright:
+    <a href="https://cpd.uni-koeln.de/intro/helmer_smith_obituary" rel="noopener" target="_blank">it
+    can be read in full at the <i>Critical Pāli Dictionary</i> site</a> of the
+    University of Cologne.</span></p>
+  </details>
 
   <p><b>El francés de Smith no se enseña en la página</b>, que se lee en
   español o en inglés. Pero no se ha perdido: la glosa francesa sigue
@@ -932,6 +1057,8 @@ alterna($('#b-marcas'), v => soloMarcas = v);
 /* ES y EN se turnan, no se suman: pulsar uno apaga el otro. */
 function ponIdioma(v){
   idioma = v;
+  // La clase del <body> conmuta la prosa de dos idiomas del pie.
+  document.body.classList.toggle('en', v === 'en');
   $('#b-es').setAttribute('aria-pressed', v === 'es');
   $('#b-en').setAttribute('aria-pressed', v === 'en');
   pinta();
@@ -1080,6 +1207,19 @@ document.addEventListener('click', e => {
   else { e.preventDefault(); abrirTip(el); }
 }, true);
 addEventListener('scroll', cerrarTip, {passive:true});
+
+/* El nombre de Smith, en la ficha de su obra, abre su nota biográfica: un
+   ancla a un <details> cerrado no hace nada por sí sola. */
+(function(){
+  const enlace = document.getElementById('ir-bio-smith');
+  const bio = document.getElementById('bio-smith');
+  if (!enlace || !bio) return;
+  enlace.addEventListener('click', e => {
+    e.preventDefault();
+    bio.open = true;
+    saltarA(bio);
+  });
+})();
 
 rotulaBarra();
 pinta();
