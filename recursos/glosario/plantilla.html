@@ -172,6 +172,28 @@ h1 .dia{color:var(--haritala)}
   border-color:var(--hair);font-weight:700}
 .tabs button span{font-family:var(--mono);font-size:10.5px;color:var(--soot)}
 
+/* ---------- globos ----------
+   El «title» nativo del navegador se dibuja al tamaño que decide el sistema
+   —diminuto—, y no hay CSS que lo cambie. De modo que aquí va el mismo
+   motor de globos de /recursos/raices/ y /recursos/paradigmas/: 14px sobre
+   el papel de la página, con su título en versales, y colocado para que no
+   se salga por ningún borde. Se abre con el cursor, con el foco del teclado
+   y, en táctil, con el primer toque. */
+#tip{position:fixed;z-index:200;max-width:min(420px,86vw);pointer-events:none;opacity:0;
+  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  border-radius:3px;box-shadow:0 8px 26px var(--shadow);
+  padding:10px 13px;font:400 14px/1.5 var(--serif)}
+#tip.on{opacity:1;transform:none}
+#tip b{display:block;font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--haritala);
+  margin-bottom:4px}
+#tip i{color:var(--soot)}
+@media (prefers-reduced-motion:reduce){#tip{transition:none}}
+@media print{#tip{display:none}}
+[data-tip]{cursor:help}
+button[data-tip]{cursor:pointer}
+
 /* ---------- las fichas ---------- */
 main{padding-top:8px;padding-bottom:60px}
 h2.sec{font-size:13px;font-family:var(--mono);letter-spacing:.13em;
@@ -327,39 +349,40 @@ footer code{font-family:var(--mono);font-size:11.5px}
 <div class="bar">
   <div class="wrap">
     <input type="search" id="q" placeholder="Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…" aria-label="Buscar"
-      title="Busca a la vez en el lema, en el francés de Smith, en el español, en el inglés, en el epígrafe y en las notas. Se puede escribir sin diacríticos: «nibbana» encuentra nibbāna.">
+      data-tip="Buscar|Busca a la vez en el lema, en el francés de Smith, en el español, en el inglés, en el epígrafe y en las notas. Se puede escribir sin diacríticos: «nibbana» encuentra nibbāna.">
     <button class="icon-btn" id="b-nand" aria-pressed="true"
-      title="GLOSARIO DE NANDISENA — Enciende y apaga la capa del Glosario de Bhikkhu Nandisena (IEBH, 2013), cuyo español es el firmado. Al apagarla, los lemas que sólo trae él salen de la lista.">GLOS</button>
+      data-tip="Glosario de Nandisena|Enciende y apaga la capa del Glosario de Bhikkhu Nandisena (IEBH, 2013), cuyo español es el firmado. Al apagarla, los lemas que sólo trae él salen de la lista.">GLOS</button>
     <button class="icon-btn" id="b-smith" aria-pressed="true"
-      title="CONSPECTUS DE SMITH — Enciende y apaga las capas del Conspectus Terminorum de Helmer Smith (1949). Un lema puede traer varias: Smith reparte algunos términos por sus epígrafes, y kicca sale seis veces con seis sentidos.">CONSP</button>
+      data-tip="Conspectus de Smith|Enciende y apaga las capas del Conspectus Terminorum de Helmer Smith (1949). Un lema puede traer varias: Smith reparte algunos términos por sus epígrafes, y kicca sale seis veces con seis sentidos.">CONSP</button>
     <span class="idioma" role="group" aria-label="Idioma de las glosas">
       <button class="icon-btn" id="b-es" aria-pressed="true"
-        title="ESPAÑOL — El español de Nandisena y el de la lista normativa son los firmados; el de las entradas del Conspectus es propuesta del traductor. El francés de Smith se enseña siempre: es la única fuente literal que la página tiene de él.">ES</button>
+        data-tip="Español|El español de Nandisena y el de la lista normativa son los firmados; el de las entradas del Conspectus es propuesta del traductor. El francés de Smith no se enseña, pero sigue guardado y entra en el buscador.">ES</button>
       <button class="icon-btn" id="b-en" aria-pressed="false"
-        title="INGLÉS — Enseña el inglés DONDE LO HAY y el español donde no. Las 649 entradas de Nandisena no tienen inglés, y el de Smith es propuesta del traductor, no terminología adjudicada por el IEBH. El rótulo «es» o «en» de cada línea dice cuál se está leyendo.">EN</button>
+        data-tip="Inglés|Enseña el inglés DONDE LO HAY y el español donde no. Las 649 entradas de Nandisena no tienen inglés, y el de Smith es propuesta del traductor, no terminología adjudicada por el IEBH. El rótulo «es» o «en» de cada línea dice cuál se está leyendo.">EN</button>
     </span>
     <button class="icon-btn" id="b-marcas" aria-pressed="false"
-      title="SÓLO LO MARCADO — Deja a la vista las entradas con «difiere de la norma», «por cotejar» o «errata del impreso»: lo que está pendiente de decidir sobre la lectura del impreso.">⚑</button>
+      data-tip="Sólo lo marcado|Deja a la vista las entradas con «difiere de la norma», «por cotejar» o «errata del impreso»: lo que está pendiente de decidir sobre la lectura del impreso.">⚑</button>
     <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice" aria-expanded="true"
-      title="Aparta el índice de la izquierda y el texto ocupa su sitio. Vuelve con el mismo botón.">☰</button>
-    <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
-    <span class="count" id="count" title="Cuántas entradas quedan a la vista con lo que hay filtrado ahora mismo."></span>
+      data-tip="Índice|Aparta el índice de la izquierda y el texto ocupa su sitio. Vuelve con el mismo botón.">☰</button>
+    <button class="icon-btn" id="theme" aria-label="Cambiar tema" data-tip="Tema|Alterna entre el papel claro y el oscuro.">◐</button>
+    <span class="count" id="count" data-tip="Cuenta|Cuántas entradas quedan a la vista con lo que hay filtrado ahora mismo."></span>
   </div>
 </div>
 
 <div class="wrap tabs-wrap">
   <div class="tabs" role="tablist">
     <button role="tab" id="tab-alfa" aria-selected="true" data-tab="alfa"
-      title="ALFABÉTICO — Las dos obras y la lista normativa en un solo orden alfabético pāḷi, con UNA FICHA POR LEMA: dentro van, por este orden, lo que fija la lista normativa, el español firmado de Nandisena y los sentidos de Smith, cada uno con su epígrafe y su página. Es la vista que permite ver las dos obras sobre la misma palabra.">Alfabético · las tres fuentes <span id="n-alfa"></span></button>
+      data-tip="Alfabético|Las dos obras y la lista normativa en un solo orden alfabético pāḷi, con UNA FICHA POR LEMA: dentro van, por este orden, lo que fija la lista normativa, el español firmado de Nandisena y los sentidos de Smith, cada uno con su epígrafe y su página. Es la vista que permite ver las dos obras sobre la misma palabra.">Alfabético · las tres fuentes <span id="n-alfa"></span></button>
     <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus"
-      title="POR MATERIAS — El Conspectus Terminorum en el orden en que Helmer Smith lo dispuso, que es lo que lo hace un Conspectus: fonética, verbo, nombre, invariables, sintaxis, semántica e instrumental filológico. El índice de la izquierda pasa a ser su plan.">Por materias · Smith <span id="n-conspectus"></span></button>
+      data-tip="Por materias|El Conspectus Terminorum en el orden en que Helmer Smith lo dispuso, que es lo que lo hace un Conspectus: fonética, verbo, nombre, invariables, sintaxis, semántica e instrumental filológico. El índice de la izquierda pasa a ser su plan.">Por materias · Smith <span id="n-conspectus"></span></button>
     <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo"
-      title="NORMATIVOS — La lista interna de este repositorio (comun/glosario.md): qué palabra castellana se ha fijado para cada término al ir traduciendo, y por qué. No es obra de nadie, y manda sobre cualquier propuesta de esta página.">Normativos <span id="n-normativo"></span></button>
+      data-tip="Normativos|La lista interna de este repositorio (comun/glosario.md): qué palabra castellana se ha fijado para cada término al ir traduciendo, y por qué. No es obra de nadie, y manda sobre cualquier propuesta de esta página.">Normativos <span id="n-normativo"></span></button>
   </div>
 </div>
 
 <main class="wrap" id="out"></main>
-<button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+<div id="tip" role="tooltip" aria-hidden="true"></div>
+<button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio|Sube al principio de la lista.">↑</button>
 
 <footer class="wrap">
   <details class="pie-notas">
@@ -394,10 +417,18 @@ footer code{font-family:var(--mono);font-size:11.5px}
   palie d'Aggavaṃsa</i>, texto establecido por <b>Helmer Smith</b>, IV:
   <i>Tables</i>, 1<sup>e</sup> partie, sección E, pp. 1105-1148 (Lund,
   C. W. K. Gleerup, 1949). El escaneo no tiene capa de texto y ningún OCR lo
-  lee: la transcripción se hizo leyendo la imagen página a página. El campo
-  <span class="fijado">fr</span> reproduce la glosa de Smith tal como está
-  impresa. Smith remite, a su vez, a Jhalakīkar, Pāṭhak y Chitrāo, Renou y la
+  lee: la transcripción se hizo leyendo la imagen página a página. Smith
+  remite, a su vez, a Jhalakīkar, Pāṭhak y Chitrāo, Renou y la
   <i>Durghaṭavṛtti</i>.</p>
+
+  <p><b>El francés de Smith no se enseña en la página</b>, que se lee en
+  español o en inglés. Pero no se ha perdido: la glosa francesa sigue
+  guardada, tal como está impresa, en
+  <code>recursos/glosario/conspectus/</code>, entra en el buscador —de modo
+  que una palabra francesa encuentra su término—, y es sobre ella sobre la
+  que se hace la colación página a página contra el ejemplar del
+  <i>Saddanīti</i>. Es la única fuente literal que esta página tiene de
+  Smith, y por eso se conserva aunque no se muestre.</p>
 
   <h3>No son testigos independientes</h3>
   <p>Conviene no leer la coincidencia entre las dos obras como una
@@ -553,7 +584,6 @@ function ficha(t, tipo){
   const refs = (t.refs && t.refs.length)
     ? '<span class="var">' + t.refs.map(escapa).join(' · ') + '</span>' : '';
   const glosas =
-    (!esNorma && !esNand && t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
     (t.remite_a ? '<div class="es">v. <i>' + escapa(t.remite_a) + '</i></div>' : '') +
     sentido(t) +
     (esNand && !t.es && !t.remite_a
@@ -606,7 +636,7 @@ function marcadoGrupo(gr){
    —obra, epígrafe, sección y página— se lee al pasar por encima, aquí y en
    el nombre de la obra que va bajo el lema. */
 function marca(clase, texto, tip){
-  return '<span class="capa-tag ' + clase + '" title="' + escapa(tip) + '">' +
+  return '<span class="capa-tag ' + clase + '" data-tip="' + escapa(tip) + '">' +
     escapa(texto) + '</span>';
 }
 /* ---------- enlaces entre fichas ----------
@@ -638,14 +668,14 @@ function enlaceTermino(nom, etiqueta){
   const txt = escapa(etiqueta == null ? nom : etiqueta);
   if (!gr) return txt;
   const g = glosaBreve(gr);
-  const tip = gr.p + (g ? ' — ' + g : '') + ' · Ir a su ficha.';
+  const tip = gr.p + '|' + (g ? g + ' · ' : '') + 'Pulse para ir a su ficha.';
   return '<a class="xref" href="#g-' + escapa(gr.id) + '" data-xref="' +
-    escapa(gr.id) + '" title="' + escapa(tip.slice(0, 400)) + '">' + txt + '</a>';
+    escapa(gr.id) + '" data-tip="' + escapa(tip.slice(0, 400)) + '">' + txt + '</a>';
 }
 
 function capaNorma(t){
   const notas = [t.nota, t.conflicto].filter(Boolean).map(escapa).join(' ');
-  const tip = 'Lista normativa del repositorio (comun/glosario.md): el español '
+  const tip = 'Norma del repositorio|Lista normativa (comun/glosario.md): el español '
     + 'fijado para este término al ir traduciendo. Manda sobre cualquier propuesta '
     + 'de esta página.' + (t.fijado_en ? ' Fijado en ' + t.fijado_en + '.' : '');
   return '<div class="capa capa-norma">' +
@@ -658,8 +688,8 @@ function capaNand(t){
   const cuerpo = t.es ? resalta(t.es)
     : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
     : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
-  const tip = 'Glosario de términos gramaticales de la lengua pali, de Bhikkhu '
-    + 'Nandisena (IEBH, 2013), p. ' + t.pagina
+  const tip = 'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la '
+    + 'lengua pali (IEBH, 2013), p. ' + t.pagina
     + (t.homonimo ? ', homónimo ' + t.homonimo : '')
     + '. Su español es el firmado y se reproduce literalmente.';
   return '<div class="capa capa-nand">' +
@@ -682,13 +712,16 @@ function capaSmith(t){
   // El epígrafe se queda a la vista, y no es adorno: es lo único que
   // distingue los seis sentidos que Smith le da a «kicca». Lo demás
   // —sección y página— va al globo.
-  const tip = 'Conspectus Terminorum de Helmer Smith (1949), epígrafe '
-    + t.epigrafe + (sec ? ' · ' + sec : '') + ' · p. ' + t.pagina
+  const tip = 'Conspectus ' + t.epigrafe + '|' + (sec ? sec + ' · ' : '')
+    + 'Conspectus Terminorum de Helmer Smith (1949), p. ' + t.pagina
     + '. El francés es suyo y va literal; el español y el inglés son '
     + 'propuesta del traductor.';
+  /* El francés de Smith NO se enseña (decisión de Angel, sesión 55): la
+     página se lee en español o en inglés. El campo sigue en los datos, va
+     en el buscador y es sobre el que se hace la colación contra la plancha
+     —de ahí que no se haya borrado de ningún archivo—, pero no se pinta. */
   return '<div class="capa capa-smith">' +
     '<div class="gl">' + marca('tag-smith', t.epigrafe, tip) +
-      (t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
       sentido(t) + vars +
     '</div>' + (marcas || notas ? '<p class="nota">' + marcas + notas + '</p>' : '') + '</div>';
 }
@@ -698,18 +731,18 @@ function fichaGrupo(gr){
      globo que dice qué es y por dónde anda: páginas de Nandisena, epígrafes
      y páginas de Smith. Así el rótulo no hace falta encima de cada glosa. */
   const obras = [];
-  if (nG) obras.push('<span title="' + escapa(
-      'Lista normativa del repositorio (comun/glosario.md): el español fijado ' +
+  if (nG) obras.push('<span data-tip="' + escapa(
+      'Norma del repositorio|Lista normativa del repositorio (comun/glosario.md): el español fijado ' +
       'para este término al ir traduciendo. No es obra de nadie, y manda sobre ' +
       'cualquier propuesta de esta página.') + '">norma</span>');
-  if (nN) obras.push('<span title="' + escapa(
-      'Glosario de términos gramaticales de la lengua pali, de Bhikkhu Nandisena ' +
+  if (nN) obras.push('<span data-tip="' + escapa(
+      'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la lengua pali, de Bhikkhu Nandisena ' +
       '(IEBH, 2013). Su español es el firmado y va literal. ' +
       (nN === 1 ? 'Entrada en la p. ' : nN + ' entradas, en las pp. ') +
       (gr.n || []).map(i => DATA.nandisena[i].pagina).join(', ') + '.') + '">Glosario' +
       (nN > 1 ? ' ×' + nN : '') + '</span>');
-  if (nC) obras.push('<span title="' + escapa(
-      'Conspectus Terminorum de Helmer Smith (Saddanīti IV, 1949). Su francés va ' +
+  if (nC) obras.push('<span data-tip="' + escapa(
+      'Conspectus de Helmer Smith|Conspectus Terminorum de Helmer Smith (Saddanīti IV, 1949). Su francés va ' +
       'literal; el español y el inglés son propuesta del traductor. ' +
       (nC === 1 ? 'Epígrafe ' : nC + ' sentidos, en los epígrafes ') +
       (gr.c || []).map(i => DATA.conspectus[i].epigrafe + ' (p. ' +
@@ -799,7 +832,8 @@ function porInicial(lista, comoFicha){
                      : 'Nada por ' + l + ' en lo que hay filtrado');
     return '<a href="#' + idDe(l) + '" data-ir="' + idDe(l) + '"' +
            (n ? '' : ' class="vacia" aria-disabled="true"') +
-           ' title="' + escapa(t) + '">' + escapa(l) + '<em>' + n + '</em></a>';
+           ' data-tip="' + escapa(l) + '|' + escapa(t) + '">' + escapa(l) +
+           '<em>' + n + '</em></a>';
   }).join('') + sueltas.map(l =>
     '<a href="#' + idDe(l) + '" data-ir="' + idDe(l) + '">' + escapa(l) +
     '<em>' + grupos.get(l).length + '</em></a>').join('');
@@ -985,6 +1019,73 @@ addEventListener('scroll', () => btnTop.classList.toggle('on', scrollY > 600), {
   medir();
   addEventListener('resize', medir);
 })();
+
+
+/* ---------- globos ---------- */
+/* Mismo motor que /recursos/raices/: el «title» nativo no se puede
+   agrandar. El texto puede llevar un título antes de «|». */
+const tip = document.getElementById('tip');
+let tipT = null, tipDe = null;
+const conRaton = () => !mq('(pointer:coarse)');
+function colocarTip(el){
+  const r = el.getBoundingClientRect();
+  tip.style.visibility = 'hidden';
+  tip.classList.add('on');
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = r.left, y = r.bottom + 8;
+  if (x + w > innerWidth - 12) x = innerWidth - w - 12;
+  if (x < 12) x = 12;
+  if (y + h > innerHeight - 12) y = r.top - h - 8;
+  if (y < 8) y = 8;
+  tip.style.left = x + 'px';
+  tip.style.top = y + 'px';
+  tip.style.visibility = '';
+}
+function abrirTip(el){
+  const bruto = el.getAttribute('data-tip');
+  if (!bruto) return;
+  const corte = bruto.indexOf('|');
+  const titulo = corte < 0 ? '' : bruto.slice(0, corte);
+  const cuerpo = corte < 0 ? bruto : bruto.slice(corte + 1);
+  tip.innerHTML = (titulo ? '<b>' + escapa(titulo) + '</b>' : '') + escapa(cuerpo);
+  tip.setAttribute('aria-hidden', 'false');
+  colocarTip(el);
+  tipDe = el;
+}
+function cerrarTip(){
+  clearTimeout(tipT);
+  tip.classList.remove('on');
+  tip.setAttribute('aria-hidden', 'true');
+  tipDe = null;
+}
+document.addEventListener('mouseover', e => {
+  if (!conRaton()) return;
+  const el = e.target.closest('[data-tip]');
+  if (!el || el === tipDe) return;
+  clearTimeout(tipT);
+  tipT = setTimeout(() => abrirTip(el), 90);
+});
+document.addEventListener('mouseout', e => {
+  if (conRaton() && e.target.closest('[data-tip]')) cerrarTip();
+});
+document.addEventListener('focusin', e => {
+  const el = e.target.closest('[data-tip]');
+  if (el) abrirTip(el);
+});
+document.addEventListener('focusout', e => {
+  if (e.target.closest('[data-tip]')) cerrarTip();
+});
+/* Con el dedo: el primer toque enseña el globo; si el elemento además hace
+   algo —un botón, una letra del índice—, el segundo toque lo hace. */
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-tip]');
+  if (!el){ cerrarTip(); return; }
+  if (conRaton()) return;
+  if (tipDe === el){ cerrarTip(); return; }
+  if (el.tagName === 'BUTTON' && !el.disabled) abrirTip(el);
+  else { e.preventDefault(); abrirTip(el); }
+}, true);
+addEventListener('scroll', cerrarTip, {passive:true});
 
 rotulaBarra();
 pinta();
