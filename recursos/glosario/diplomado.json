@@ -1,5 +1,5 @@
 {
-"_nota": "Cosecha de terminología gramatical del «Diplomado en Lengua Pāḷi I» del IEBH, en Moodle (iebh.net, curso 4). Instructor: Dr. Aleix Ruiz Falqués. Se recorrieron los 30 PDF del curso —28 dossieres de Material de estudio/lectura, el Currículum y el Vocabulario de las clases 1 a 10— extrayendo su capa de texto con pdf.js dentro del propio navegador, con la sesión de Angel. NO se descargó ningún archivo ni se guarda aquí su contenido: sólo los términos y la línea en que aparecen. Las 22 Presentaciones no se recorrieron: repiten en diapositivas el contenido de los dossieres.",
+"_nota": "Cosecha de terminología gramatical del «Diplomado en Lengua Pāḷi I» del IEBH, en Moodle (iebh.net, curso 4). Instructor: Dr. Aleix Ruiz Falqués. Se recorrieron los 30 PDF del curso —28 dossieres de Material de estudio/lectura, el Currículum y el Vocabulario de las clases 1 a 10— extrayendo su capa de texto con pdf.js dentro del propio navegador, con la sesión de Angel. NO se descargó ningún archivo ni se guarda aquí su contenido: sólo los términos y la línea en que aparecen. Las 22 Presentaciones no se recorrieron: repiten en diapositivas el contenido de los dossieres. El cotejo se hizo primero contra un Conspectus de CUATRO páginas y se rehízo entero en la sesión 53 contra las 44; ver _cotejo.",
 
 "fuente": {
   "curso": "Diplomado en Lengua Pāḷi I",
@@ -11,6 +11,14 @@
   "nota": "Es una TERCERA voz, distinta de la de Bhikkhu Nandisena: no debe darse por supuesto que use el mismo castellano que el Glosario, y de hecho no siempre lo hace."
 },
 
+"_cotejo": {
+  "rehecho": "2026-09-04, sesión 53",
+  "contra": "las 44 páginas del Conspectus (1.878 términos), las 649 entradas de Nandisena y las 53 de comun/glosario.md",
+  "por_que": "El cotejo original corrió contra cuatro páginas y dio por «ausentes de Smith» tres términos que estaban en la p. 1110. El briefing 46 §6 lo dejó anotado y pidió rehacerlo al completar el Conspectus.",
+  "metodo": "Cada lema del Diplomado se buscó en las tres fuentes por coincidencia exacta, por coincidencia sin diacríticos (para pillar n/ṇ, i/ī, u/ū), como miembro de un lema compuesto y dentro de las glosas y notas de las fichas. Lo que cambió de estado se comprobó además sobre el ejemplar de Angel, recursos/saddaniti/conspectus-ejemplar-angel.pdf (hoja = página impresa − 1104, extraída con pdfimages -j).",
+  "resultado": "De los seis «nuevos», sobreviven DOS. Cuatro caen: dos son variantes de lema y dos estaban en Smith tal cual. Las cinco variantes y las cinco divergencias se sostienen, y aparecen TRES divergencias más que el cotejo de cuatro páginas no podía ver. Queda abierta una duda de lectura, en dudas_de_lectura."
+},
+
 "_leyenda": {
   "nuevo": "El término no está ni en el Glosario de Nandisena ni en el Conspectus de Smith ni en comun/glosario.md.",
   "variante": "El término está, pero el Diplomado usa otra forma del lema.",
@@ -19,64 +27,112 @@
 
 "nuevos": [
   {"pali": "kammaṇi", "es_diplomado": "voz pasiva", "clase": "Currículum", "clase_de": "nuevo",
-   "nota": "El Glosario de Nandisena da «kamma-kāraka» para «voz pasiva»; «kammaṇi» —locativo de kamma, el término pāṇineo— no está en él."},
-  {"pali": "itthambhūtalakkhaṇa", "es_diplomado": "adverbial de modo", "clase": "Módulo I - Clase 4", "clase_de": "nuevo",
-   "nota": "Nandisena tiene «itthambhūta-vacana», y lo define como «ablativo de similitud», que no es lo mismo. Conviene decidir si son dos términos o dos lecturas de uno."},
-  {"pali": "saddasamāsa", "es_diplomado": "compuesto de palabras", "clase": "Módulo III - Clase 21", "clase_de": "nuevo"},
-  {"pali": "āmantanā", "es_diplomado": "invitación no optativa", "clase": "Módulo II - Clase 19", "clase_de": "nuevo",
-   "nota": "En el dossier está impreso «āmaṇtanā», con ṇ, que no es forma pāḷi posible; se recoge como āmantanā y queda la duda de la errata. Nandisena tiene «nimantana», que el propio dossier usa aparte para «invitación optativa»."},
-  {"pali": "arahasattīsu", "es_diplomado": "posibilidad / capacidad", "clase": "Módulo II - Clase 19", "clase_de": "nuevo",
-   "nota": "Locativo de un dvanda araha+satti, «en el sentido de aptitud y capacidad». No figura en ninguna de las dos fuentes."},
-  {"pali": "mūlabhāsā", "es_diplomado": "lengua raíz", "clase": "Módulo I - Clase 1", "clase_de": "nuevo",
-   "nota": "Término de la discusión sobre el māgadhī, no de la descripción gramatical; se anota por si interesa."}
+   "comprobado_contra_44_paginas": true,
+   "nota": "El Glosario de Nandisena da «kamma-kāraka» para «voz pasiva»; «kammaṇi» —locativo de kamma, el término pāṇineo— no está en él. Tampoco en las 44 páginas del Conspectus: la única aparición de la cadena en todo el archivo es la nota de la ficha de kammuno kiriyāpadaṃ (2.2.2, p. 1110), que es donde se registró esta misma observación. Smith da una TERCERA formulación, kammuno kiriyāpadaṃ, «tema secundario: pasivo»."},
+  {"pali": "saddasamāsa", "es_diplomado": "compuesto de palabras", "clase": "Módulo III - Clase 21", "clase_de": "nuevo",
+   "comprobado_contra_44_paginas": true,
+   "nota": "Sigue siendo nuevo, y el campo es rico, que es lo que da peso a la ausencia: el Conspectus lematiza samāsa, asamāsa, alutta(vibhattika)samāsa, luttasamāsa, niccasamāsa, upapadasamāsa, samāsanta, samāsavidhi, āmreḍitasamāsa, samāsabala y samāsarūpakālaṃkāra; Nandisena tiene otra docena. Ninguna de las dos obras nombra este compuesto."}
+],
+
+"caen_del_cotejo_de_cuatro_paginas": [
+  {"pali": "āmantanā", "es_diplomado": "invitación no optativa", "clase": "Módulo II - Clase 19",
+   "era": "nuevo", "pasa_a": "variante",
+   "donde_esta_en_smith": ["2.2.3.3, p. 1110", "5.1.0, p. 1120"],
+   "verificado_en_plancha": true,
+   "nota": "Es el TERCERO de los términos que el cotejo de cuatro páginas dio por ausentes y estaba en la p. 1110, junto a ajjhiṭṭha y nimantana. El briefing 46 corrigió aquellos dos y éste se quedó donde estaba. Ver además dudas_de_lectura: sobre el ejemplar de Angel Smith no imprime lo que las fichas transcriben."},
+  {"pali": "itthambhūtalakkhaṇa", "es_diplomado": "adverbial de modo", "clase": "Módulo I - Clase 4",
+   "era": "nuevo", "pasa_a": "variante",
+   "donde_esta_en_smith": ["4.3, p. 1120 (itthambhūtakkhāna)", "5.1.1.3, p. 1121 (itthambhūta-, abreviado por itthambhūta-karaṇa)"],
+   "verificado_en_plancha": true,
+   "nota": "Y el hallazgo no es sólo que estuviera: la nota vieja dejaba sin decidir si el itthambhūta-vacana de Nandisena, «ablativo de similitud», era el mismo término. Smith lo decide. En 5.1.1.3, que es el instrumental karaṇa, rotula itthambhūta- con el latín «modi» —el instrumental de modo—, que es exactamente el «adverbial de modo» del Diplomado. Comprobado verbatim sobre la plancha: «respectus visesana-, modi itthambhūta-, sociativus sah'attha-». Smith y el Diplomado dicen lo mismo; el «ablativo» de Nandisena queda aparte."},
+  {"pali": "arahasattīsu", "es_diplomado": "posibilidad / capacidad", "clase": "Módulo II - Clase 19",
+   "era": "nuevo", "pasa_a": "ya estaba en Smith",
+   "donde_esta_en_smith": ["2.2.3.3, p. 1111 (araha, satti)"],
+   "verificado_en_plancha": true,
+   "nota": "Locativo dual del par araha + satti. Smith los trae sueltos y seguidos, en el grupo (C. optativo): «qualification araha, satti». No era término ausente, sino la misma pareja en otro caso. La ficha de araha (p. 1111) ya lo decía."},
+  {"pali": "mūlabhāsā", "es_diplomado": "lengua raíz", "clase": "Módulo I - Clase 1",
+   "era": "nuevo", "pasa_a": "ya estaba en Smith",
+   "donde_esta_en_smith": ["5.3.3.2, p. 1131"],
+   "verificado_en_plancha": true,
+   "nota": "Lema entero del Conspectus, con la misma glosa: «primordiale mūlabhāsā». La cosecha lo anotó «por si interesa», por ser de la discusión sobre el māgadhī y no de la descripción gramatical; y es precisamente ahí donde Smith lo pone, en la sección de la lengua del canon."}
 ],
 
 "variantes": [
   {"pali_diplomado": "kattā", "pali_glosario": "kattu", "es": "agente",
-   "nota": "El Diplomado cita el nominativo; Nandisena lemmatiza en tema. Misma palabra."},
+   "nota": "El Diplomado cita el nominativo; Nandisena lemmatiza en tema. Misma palabra. Y el Conspectus completo añade que Smith usa LOS DOS temas: kattar en 3.1.3 (p. 1113) y kattu- en 5.1.1.3 (p. 1121), donde la ficha advierte que ahí sí escribe la forma en -u."},
   {"pali_diplomado": "ajjhiṭṭha", "pali_glosario": "ajjhesanā", "es_diplomado": "petición",
    "es_glosario": "consentimiento; permiso",
-   "nota": "Dos formas —participio y sustantivo— y DOS SENTIDOS distintos para el mismo uso del optativo. No es sólo variante de lema."},
+   "nota": "Dos formas —participio y sustantivo— y DOS SENTIDOS distintos para el mismo uso del optativo. No es sólo variante de lema. Con las 44 páginas se ve de qué lado cae Smith: 2.2.3.3 (p. 1110) glosa ajjhiṭṭha «requête», que es la «petición» del Diplomado. Nandisena queda solo con «consentimiento; permiso»."},
   {"pali_diplomado": "nimantaṇā", "pali_glosario": "nimantana", "es_diplomado": "invitación optativa",
-   "nota": "«nimantaṇā» con ṇ es imposible en pāḷi tras «ma»; parece errata del dossier."},
+   "nota": "«nimantaṇā» con ṇ es imposible en pāḷi tras «ma»; parece errata del dossier. PERO ver dudas_de_lectura: sobre el ejemplar de Angel, Smith imprime nimantaṇa —con ṇ en el sufijo, no tras la m—, de modo que la ṇ del dossier deja de ser sencillamente inexplicable."},
+  {"pali_diplomado": "āmantanā", "pali_glosario": "āmantana", "es_diplomado": "invitación no optativa",
+   "nota": "Entra aquí desde «nuevos» al rehacer el cotejo. En el dossier está impreso «āmaṇtanā», con ṇ tras la a, que no es forma pāḷi posible. Smith lo trae dos veces —2.2.3.3 (p. 1110) «invitation à choisir» y 5.1.0 (p. 1120), donde cita la definición pāḷi «yam ālapati»—. Sobre la lectura del sufijo, ver dudas_de_lectura."},
+  {"pali_diplomado": "itthambhūtalakkhaṇa", "pali_glosario": "itthambhūta-", "es_diplomado": "adverbial de modo",
+   "es_smith": "modi (5.1.1.3, p. 1121); «par rapport à qui on est ainsi» (itthambhūtakkhāna, 4.3, p. 1120)",
+   "nota": "Entra aquí desde «nuevos» al rehacer el cotejo. Ver caen_del_cotejo_de_cuatro_paginas."},
   {"pali_diplomado": "niggahīta", "pali_glosario": "niggahita", "es": "—",
-   "nota": "comun/glosario.md escribe «niggahita» sin macrón. Nandisena registra las dos y remite de niggahita a niggahīta. El Diplomado usa niggahīta. Conviene unificar en el repositorio."},
+   "nota": "comun/glosario.md escribe «niggahita» sin macrón. Nandisena registra las dos y remite de niggahita a niggahīta. El Diplomado usa niggahīta. Y el Conspectus también: 1.1.3 (p. 1107) lematiza niggahīta, y la ficha de akkhara (p. 1105) lo repite dentro de la cita. Dos fuentes con macrón frente a la norma interna sin él. Conviene unificar en el repositorio; la decisión sigue siendo de Angel."},
   {"pali_diplomado": "patthanā", "pali_glosario": "patthanā", "es_diplomado": "deseo; resolución",
    "es_glosario": "aspiración",
-   "nota": "Mismo lema, tres castellanos entre las dos obras."}
+   "nota": "Mismo lema, y ya no son tres castellanos sino cuatro: Smith glosa «prière» en las dos apariciones —2.2.3.3 (p. 1110) y 4.2.3.2 (p. 1119)—, que las fichas vierten «ruego» y «plegaria»."}
 ],
 
 "divergentes": [
   {"pali": "lahu", "diplomado": "breve", "nandisena": "leve. Igual que rassa, corta.",
    "repositorio": "leve", "smith_fr": "une tranche légère",
    "gravedad": "alta",
-   "nota": "comun/glosario.md fija «leve» y PROHÍBE expresamente «breve» —esa prohibición se puso para rassa—. El Diplomado llama «Breves» a las vocales lahu. Es el choque terminológico más directo que ha salido del cotejo."},
+   "nota": "comun/glosario.md fija «leve» y PROHÍBE expresamente «breve» —esa prohibición se puso para rassa—. El Diplomado llama «Breves» a las vocales lahu. Es el choque terminológico más directo que ha salido del cotejo. Y el Conspectus completo le da a la norma un argumento que antes no tenía: Smith SEPARA los dos términos y los pone en secciones distintas. En 1.1.2 (p. 1106) rassa es «brève (à une more)», cantidad de la VOCAL, junto a dīgha «longue (à deux mores)»; en 1.3.1.1 (p. 1108), ya en prosodia, lahu es «une tranche légère» y garu «une tranche lourde», peso de la SÍLABA, con lahugaruniyama «rythme (quantitatif)» encima. Nandisena los iguala; Smith no. La prohibición del repositorio queda respaldada por la edición base, no sólo por criterio interno."},
   {"pali": "garu", "diplomado": "—", "nandisena": "(sílaba) fuerte",
    "propuesta_conspectus": "pesada", "smith_fr": "une tranche lourde",
    "gravedad": "media",
-   "nota": "Tres palabras para lo mismo: fuerte (Nandisena), pesada (propuesta desde Smith), lourde (Smith). Manda Nandisena si se adopta su castellano."},
+   "nota": "Tres palabras para lo mismo: fuerte (Nandisena), pesada (propuesta desde Smith), lourde (Smith). Manda Nandisena si se adopta su castellano. Con las 44 páginas se ve además que garu es POLISÉMICO dentro del propio Smith, que es el patrón del briefing 52 §6: la sílaba pesada en 1.3.1.1 (p. 1108), y los maestros de peso en garu(kāra) 3.3.2 (p. 1115, «pluriel de respect»), 5.3.3.3 (p. 1133) y 7.1.3.3 (p. 1143, «ceux qui font autorité»), más ganthagarutā «pesadez del libro» en 7.3.1 (p. 1144). La divergencia con el Diplomado toca sólo al primero."},
   {"pali": "guṇa", "diplomado": "grado pleno", "nandisena": "fortalecimiento de la vocal",
    "propuesta_conspectus": "refuerzo apofónico de primer grado", "smith_fr": "renforcement apophonique : 1er degré",
    "gravedad": "media",
-   "nota": "El «Grado Cero / guṇa (Grado pleno) / vuddhi (Grado aumentado)» del Diplomado es la nomenclatura indoeuropeísta corriente y es la más clara de las tres."},
+   "nota": "El «Grado Cero / guṇa (Grado pleno) / vuddhi (Grado aumentado)» del Diplomado es la nomenclatura indoeuropeísta corriente y es la más clara de las tres. También aquí hay polisemia en Smith: el refuerzo apofónico en 1.1.2 (p. 1106), y la CUALIDAD en 5.1.0 (p. 1120, «ou une qualité») y en 6.1.1.1 (p. 1135, «la qualité guṇa et l'acte kiriyā», segundo miembro de la tríada del atthaniddesa). El choque terminológico es sólo con el primero."},
   {"pali": "vuddhi", "diplomado": "grado aumentado", "nandisena": "incremento; vocal fortalecida o que ha sido alargada",
    "propuesta_conspectus": "refuerzo apofónico de segundo grado", "smith_fr": "renforcement apophonique : 2ème degré",
-   "gravedad": "media"},
+   "gravedad": "media",
+   "nota": "Una sola entrada en las 44 páginas, 1.1.2 (p. 1106): aquí no hay polisemia que deshacer. El término reaparece dentro de otras ocho fichas, siempre como la operación —nepātika con e por vuddhi de ni-, opasaggika con o por vuddhi de u-—, nunca con otro valor."},
   {"pali": "āgama", "diplomado": "aumento; consonante epentética", "nandisena": "inserción; inclusión de una vocal o consonante; aumento",
    "propuesta_conspectus": "el fonema de transición", "smith_fr": "le phonème de transition",
    "gravedad": "media",
-   "nota": "Nandisena cubre los dos sentidos del Diplomado. La propuesta hecha desde Smith es más estrecha que ambos y conviene ensancharla."}
+   "nota": "Nandisena cubre los dos sentidos del Diplomado. La propuesta hecha desde Smith es más estrecha que ambos y conviene ensancharla — y con las 44 páginas eso deja de ser conjetura y pasa a ser inventario. Smith lematiza āgama CUATRO veces, con TRES valores: (1) el fonema de transición, 1.2.3 (p. 1107), con āgamakkhara al lado; (2) la tradición transmitida, 5.3.3.1 (p. 1130, dentro de pāvacana) y 7.1.1.1 (p. 1140, junto a āgata); (3) la adición de un fonema como una de las operaciones que un precepto regula, 7.3.2.1 (p. 1145). Más los compuestos akārāgama y niggahītāgama (2.1, p. 1109), vaṇṇāgama (7.2.1, p. 1143) y el yathāgamaṃ de 7.3.2.3 (p. 1146), que es otra vez la tradición. La decisión sigue abierta desde la sesión 46."},
+  {"pali": "upasagga", "diplomado": "preverbio", "nandisena": "prefijo",
+   "repositorio": "prefijo (Nāma §221)", "smith_fr": "préverbe",
+   "gravedad": "alta",
+   "nuevo_en_el_cotejo_de_44": true,
+   "nota": "DIVERGENCIA NUEVA, que las cuatro páginas no podían ver. Está anotada en la ficha de pādipubbapada (5.2.2.2, p. 1125): Smith traduce upasagga por «préverbe», no por «préfixe». De modo que aquí la edición base y el Diplomado dicen lo mismo CONTRA la norma del repositorio, que fija «prefijo». Es el caso simétrico del de lahu, donde Smith respaldaba la norma; conviene mirarlos juntos. Decisión de Angel."},
+  {"pali": "kāraka", "diplomado": "el que hace una acción", "nandisena": "—",
+   "repositorio": "relación sintáctica", "smith_fr": "—",
+   "gravedad": "media",
+   "nuevo_en_el_cotejo_de_44": true,
+   "nota": "DIVERGENCIA NUEVA, anotada en la ficha de bhāvasādhana (3.1.3, p. 1113): comun/glosario.md fija kāraka «relación sintáctica»; el Diplomado usa kāraka para «el que hace una acción», que es el agente. Son dos sentidos de la misma palabra —la relación y el término que la contrae—, no una traducción peor: por eso conviene decir cuál se fija y no corregir al curso."},
+  {"pali": "vidhi", "diplomado": "orden", "nandisena": "vidhi; también vidhi-sutta",
+   "smith_fr": "précepte (règle, commandement)",
+   "gravedad": "media",
+   "nuevo_en_el_cotejo_de_44": true,
+   "nota": "DIVERGENCIA NUEVA, anotada en la ficha de vidhi (2.2.3.3, p. 1111) y comprobada sobre la plancha: Smith lee vidhi como «précepte (règle, commandement)», es decir precepto o regla, y para la ORDEN del imperativo usa otra palabra en la misma lista, āṇatti («ordre», cf. niyoga). El Diplomado llama «orden» a vidhi. Tres nombres repartidos de otro modo entre las dos fuentes."}
 ],
 
 "coincidencias_que_confirman": [
-  {"que": "Los cinco lugares de articulación", "detalle": "kaṇṭhaja, tāluja, muddhaja, dantaja, oṭṭhaja y nāsika salen en el Diplomado (Módulo I, Clase 1) exactamente con las series de consonantes que da Smith en el Conspectus, p. 1106. Confirma la transcripción del escaneo por una fuente independiente."},
-  {"que": "sakammaka / akammaka", "detalle": "«transitivos / intransitivos» en el Diplomado y en Nandisena."},
-  {"que": "kammakāraka / kattukāraka", "detalle": "«voz pasiva / voz activa» en el Diplomado y en Nandisena, con las mismas palabras."},
-  {"que": "attanopada / parassapada", "detalle": "«pasiva-media / voz activa» en el Diplomado; concuerda con Nandisena."},
-  {"que": "dīgha", "detalle": "«largas» en el Diplomado; concuerda con lo fijado en el repositorio."}
+  {"que": "Los cinco lugares de articulación", "detalle": "kaṇṭhaja, tāluja, muddhaja, dantaja, oṭṭhaja y nāsikaṭṭhānaja salen en el Diplomado (Módulo I, Clase 1) con las mismas series de consonantes que Nandisena, y con los mismos cinco lemas que Smith lematiza en el Conspectus, p. 1106, más las tres mixtas kaṇṭhatāluja, kaṇṭhoṭṭhaja y dantoṭṭhaja. Confirma la transcripción del escaneo por una fuente independiente. Precisión al rehacer el cotejo: las SERIES de consonantes vienen de Nandisena y del Diplomado; Smith no las imprime, sólo nombra las clases."},
+  {"que": "sakammaka / akammaka", "detalle": "«transitivos / intransitivos» en el Diplomado y en Nandisena, y Smith lematiza sakamma(ka) «transitive» y akamma(ka) «intransitive» en 2.1.2 (p. 1109), con los paréntesis que él imprime. Coincidencia de las tres fuentes."},
+  {"que": "kammakāraka / kattukāraka", "detalle": "«voz pasiva / voz activa» en el Diplomado y en Nandisena, con las mismas palabras. Precisión al rehacer el cotejo: NO es coincidencia de tres. Ninguno de los dos lemas está en las 44 páginas del Conspectus; Smith dice kammuno kiriyāpadaṃ (2.2.2, p. 1110) y parassa-bhāsā / attano-bhāsā (2.1.2, p. 1109)."},
+  {"que": "attanopada / parassapada", "detalle": "Smith lematiza attano-pada «moyenne» y parassa-pada «active» en 2.2.3 (p. 1110), y añade el par pubbachakka : parachakka. Precisión al rehacer el cotejo: la concordancia con Nandisena («voz media o reflexiva» / «voz activa») es buena, pero el Diplomado dice «pasiva-media», y ese «pasiva-» no lo dicen ni Nandisena ni Smith."},
+  {"que": "dīgha", "detalle": "«largas» en el Diplomado; concuerda con lo fijado en el repositorio y con Smith, «longue (à deux mores)», 1.1.2 (p. 1106)."},
+  {"que": "bhāva y kiriyā", "detalle": "El Diplomado —«el verbo suele expresar acción (kiriyā) o estado (bhāva)»— usa las mismas dos palabras que Smith en 2.1.3 (p. 1109). Anotado en las fichas de bhāva y kiriyā."}
+],
+
+"dudas_de_lectura": [
+  {"lema_en_las_fichas": ["āmantana (2.2.3.3, p. 1110)", "āmantana (5.1.0, p. 1120)", "nimantana (2.2.3.3, p. 1110)"],
+   "lo_que_se_ve_en_el_ejemplar_de_angel": "āmantaṇa, āmantaṇa, nimantaṇa — con Ṇ RETROFLEJA en el sufijo",
+   "abierta": true,
+   "nota": "Sale al comprobar sobre la plancha la caída de «āmantanā» de la lista de nuevos. Las tres fichas transcriben n dental y la de la p. 1110 dice «Smith confirma la lectura correcta: āmantana», que es justo lo que sobre este ejemplar no hace. El control es interno y no deja margen: en «nimantaṇa» hay TRES enes y sólo la última lleva punto; en «āmantaṇa», dos y sólo la segunda. En la misma p. 1110 āṇatti da el control de ṇ, con punto de idéntica forma y altura; en la misma p. 1120, antojappana y puggalālapana dan el control de -ana dental, sin punto. Y son dos páginas distintas con la misma lectura, de modo que no puede ser mota de la plancha. NO SE HA TOCADO NINGUNA FICHA: es cuestión de transcripción y la decide Angel. Nótese que si Smith imprime ṇ, la ṇ del dossier del Diplomado —que la pone tras la a, «āmaṇtanā»— deja de ser sencillamente inexplicable, aunque siga estando en un sitio imposible."}
 ],
 
 "terminos_del_curso_ya_en_el_glosario": 86,
+"nota_sobre_los_86": "Cifra de la cosecha original, medida contra el Glosario de Nandisena. No se ha vuelto a calcular al rehacer el cotejo: la cosecha en bruto no se guardó —sólo los términos de este archivo—, así que el número no es reproducible desde el repositorio. Si vuelve a hacer falta, hay que repetir la extracción en Moodle.",
 "formas_pali_con_diacritico_no_reconocidas": 1590,
 "nota_sobre_las_1590": "Casi todas son vocabulario y formas flexionadas de los ejercicios —dhammaṃ, gāmaṃ, bhagavā—, no terminología. Se dejan fuera a propósito: lo que interesa aquí es cómo el curso NOMBRA las cosas de la gramática, no qué palabras usa para practicar."
 }

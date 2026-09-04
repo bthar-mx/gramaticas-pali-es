@@ -33,7 +33,7 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *lahu* | leve | | Sandhi, §4 |
 | *dīgha* | larga | | Sandhi, §5 |
 | *vaggā* | agrupadas | | Sandhi, §7 |
-| *niggahita* | sin traducir | | Sandhi, §8 |
+| *niggahita* / *niggahīta* | sin traducir | **Las dos grafías son buenas, y se cita la fuente de la que se toma cada una.** *niggahita*: Kaccāyana en la edición del Sexto Concilio. *niggahīta*: la Rūpasiddhi, el Kaccāyana de la PTS y el Saddanīti de Smith —Conspectus 1.1.3, p. 1107, con macrón comprobado sobre el ejemplar de Angel, con el *bindu* de la misma línea como control—. Nandisena lematiza *niggahīta* y remite a él desde *niggahita*. Decisión de Angel, sesión 53. | Sandhi, §8 |
 | *liṅga* | según contexto: «base», «género» o «forma final» | | Nāma, §53 |
 | *kimatthaṃ* | ¿Cuál es la finalidad de decir…? | | Nāma, §57 |
 | *kvattho* | ¿Cuál es la utilidad del nombre…? | | Sandhi, §2 |
