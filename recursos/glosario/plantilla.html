@@ -727,27 +727,21 @@ function capaSmith(t){
 }
 function fichaGrupo(gr){
   const nC = (gr.c || []).length, nN = (gr.n || []).length, nG = (gr.g || []).length;
-  /* El nombre de cada obra, bajo el lema y en el color de acento, con el
-     globo que dice qué es y por dónde anda: páginas de Nandisena, epígrafes
-     y páginas de Smith. Así el rótulo no hace falta encima de cada glosa. */
+  /* El nombre de cada obra, bajo el lema y en el color de acento. Su globo
+     DICE QUÉ OBRA ES Y NADA MÁS: una línea. El epígrafe, la página y la
+     advertencia de qué va literal y qué es propuesta están a un palmo, en
+     el globo de la ficha de cada capa, que es donde corresponden; repetirlo
+     aquí hacía un párrafo de cuatro líneas para decir «Conspectus». */
   const obras = [];
   if (nG) obras.push('<span data-tip="' + escapa(
-      'Norma del repositorio|Lista normativa del repositorio (comun/glosario.md): el español fijado ' +
-      'para este término al ir traduciendo. No es obra de nadie, y manda sobre ' +
-      'cualquier propuesta de esta página.') + '">norma</span>');
+      'Norma del repositorio|Lista normativa de este repositorio (comun/glosario.md).')
+      + '">norma</span>');
   if (nN) obras.push('<span data-tip="' + escapa(
-      'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la lengua pali, de Bhikkhu Nandisena ' +
-      '(IEBH, 2013). Su español es el firmado y va literal. ' +
-      (nN === 1 ? 'Entrada en la p. ' : nN + ' entradas, en las pp. ') +
-      (gr.n || []).map(i => DATA.nandisena[i].pagina).join(', ') + '.') + '">Glosario' +
-      (nN > 1 ? ' ×' + nN : '') + '</span>');
+      'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la lengua pali '
+      + '(IEBH, 2013).') + '">Glosario' + (nN > 1 ? ' ×' + nN : '') + '</span>');
   if (nC) obras.push('<span data-tip="' + escapa(
-      'Conspectus de Helmer Smith|Conspectus Terminorum de Helmer Smith (Saddanīti IV, 1949). Su francés va ' +
-      'literal; el español y el inglés son propuesta del traductor. ' +
-      (nC === 1 ? 'Epígrafe ' : nC + ' sentidos, en los epígrafes ') +
-      (gr.c || []).map(i => DATA.conspectus[i].epigrafe + ' (p. ' +
-        DATA.conspectus[i].pagina + ')').join(', ') + '.') + '">Conspectus' +
-      (nC > 1 ? ' ×' + nC : '') + '</span>');
+      'Conspectus de Helmer Smith|Conspectus Terminorum de Helmer Smith (Saddanīti IV, 1949).')
+      + '">Conspectus' + (nC > 1 ? ' ×' + nC : '') + '</span>');
   const grafias = gr.gr
     ? '<span class="grafias">' + gr.gr.map(g =>
         '<i>' + escapa(g[0]) + '</i> <em>' + escapa(g[1]) + '</em>').join(' · ') + '</span>'
