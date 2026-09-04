@@ -383,9 +383,9 @@ footer code{font-family:var(--mono);font-size:11.5px}
       data-tip="Conspectus de Smith|Enciende y apaga las capas del Conspectus Terminorum de Helmer Smith (1949). Un lema puede traer varias: Smith reparte algunos términos por sus epígrafes, y kicca sale seis veces con seis sentidos.">CONSP</button>
     <span class="idioma" role="group" aria-label="Idioma de las glosas">
       <button class="icon-btn" id="b-es" aria-pressed="true"
-        data-tip="Español|El español de Nandisena y el de la lista normativa son los firmados; el de las entradas del Conspectus es propuesta del traductor. El francés de Smith no se enseña, pero sigue guardado y entra en el buscador.">ES</button>
+        data-tip="Español|Enseña el español. El de Nandisena y el de la norma son los firmados; el de Smith es propuesta del traductor.">ES</button>
       <button class="icon-btn" id="b-en" aria-pressed="false"
-        data-tip="Inglés|Enseña el inglés DONDE LO HAY y el español donde no. De las 649 entradas de Nandisena tienen inglés publicado las de las tandas que el IEBH ha adjudicado —se redacta por tandas y cada una se firma—; las demás enseñan el español. El de Smith es propuesta del traductor, no terminología adjudicada por el IEBH. El rótulo «es» o «en» de cada línea dice cuál se está leyendo.">EN</button>
+        data-tip="Inglés|Enseña el inglés donde lo hay —las tandas de Nandisena adjudicadas por el IEBH— y el español donde no. El rótulo «es» / «en» de cada línea dice cuál se lee.">EN</button>
     </span>
     <button class="icon-btn" id="b-marcas" aria-pressed="false"
       data-tip="Sólo lo marcado|Deja a la vista las entradas con «difiere de la norma», «por cotejar» o «errata del impreso»: lo que está pendiente de decidir sobre la lectura del impreso.">⚑</button>
@@ -399,11 +399,14 @@ footer code{font-family:var(--mono);font-size:11.5px}
 <div class="wrap tabs-wrap">
   <div class="tabs" role="tablist">
     <button role="tab" id="tab-alfa" aria-selected="true" data-tab="alfa"
-      data-tip="Alfabético|Las dos obras y la lista normativa en un solo orden alfabético pāḷi, con UNA FICHA POR LEMA: dentro van, por este orden, lo que fija la lista normativa, el español firmado de Nandisena y los sentidos de Smith, cada uno con su epígrafe y su página. Es la vista que permite ver las dos obras sobre la misma palabra.">Alfabético · las tres fuentes <span id="n-alfa"></span></button>
+      data-tip="Alfabético|Las dos obras y la lista normativa en un solo orden alfabético pāḷi, con UNA FICHA POR LEMA: dentro van, por este orden, lo que fija la lista normativa, el español firmado de Nandisena y los sentidos de Smith, cada uno con su epígrafe y su página. Es la vista que permite ver las dos obras sobre la misma palabra."
+      data-tip-en="Alphabetical|Both works and the normative list in a single Pāḷi alphabetical order, ONE ENTRY PER LEMMA: inside, in this order, what the normative list fixes, Nandisena's signed Spanish and Smith's senses, each with its section and page. It is the view that shows both works on the same word."><span class="i-es">Alfabético · las tres fuentes</span><span class="i-en">Alphabetical · the three sources</span> <span id="n-alfa"></span></button>
     <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus"
-      data-tip="Por materias|El Conspectus Terminorum en el orden en que Helmer Smith lo dispuso, que es lo que lo hace un Conspectus: fonética, verbo, nombre, invariables, sintaxis, semántica e instrumental filológico. El índice de la izquierda pasa a ser su plan.">Por materias · Smith <span id="n-conspectus"></span></button>
+      data-tip="Por materias|El Conspectus Terminorum en el orden en que Helmer Smith lo dispuso, que es lo que lo hace un Conspectus: fonética, verbo, nombre, invariables, sintaxis, semántica e instrumental filológico. El índice de la izquierda pasa a ser su plan."
+      data-tip-en="By subject|The Conspectus Terminorum in the order Helmer Smith gave it, which is what makes it a Conspectus: phonetics, verb, noun, indeclinables, syntax, semantics and philological apparatus. The index on the left becomes his plan."><span class="i-es">Por materias · Smith</span><span class="i-en">By subject · Smith</span> <span id="n-conspectus"></span></button>
     <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo"
-      data-tip="Normativos|La lista interna de este repositorio (comun/glosario.md): qué palabra castellana se ha fijado para cada término al ir traduciendo, y por qué. No es obra de nadie, y manda sobre cualquier propuesta de esta página.">Normativos <span id="n-normativo"></span></button>
+      data-tip="Normativos|La lista interna de este repositorio (comun/glosario.md): qué palabra castellana se ha fijado para cada término al ir traduciendo, y por qué. No es obra de nadie, y manda sobre cualquier propuesta de esta página."
+      data-tip-en="Normative|The internal list of this repository (comun/glosario.md): which Spanish word has been fixed for each term while translating, and why. It is nobody's work, and it prevails over any proposal on this page."><span class="i-es">Normativos</span><span class="i-en">Normative</span> <span id="n-normativo"></span></button>
   </div>
 </div>
 
@@ -803,6 +806,45 @@ function enlaceTermino(nom, etiqueta){
     escapa(gr.id) + '" data-tip="' + escapa(tip.slice(0, 400)) + '">' + txt + '</a>';
 }
 
+/* Los «Véase también kāraka», «V. lopa», «Cf. ghosa», «See also …», «También
+   sambodhana», «Es sinónimo de vutta-kamma» y los tecnicismos entre paréntesis
+   —«(dvikammaka)», «(bahubbīhi)»— del texto de Nandisena se convierten en
+   enlaces a su ficha CUANDO EL LEMA EXISTE en la página; si no existe, el
+   texto queda como está. Se enlaza sobre el texto crudo y se escapa después,
+   trozo a trozo, para que el resaltado de la búsqueda siga funcionando. */
+const RE_REMISION = /\b(V[ée]ase(?: también)?|Ver(?: también)?|V\.(?: también)?|Cf\.(?: con)?|See(?: also)?|Es sinónimo de|It is a synonym of|Es opuesto a|It is the opposite of|El opuesto es|The opposite is|También|Also)\s+([^.:()]+?)(?=\s*[.:)]|$)/g;
+const RE_PAREN = /\(([a-zA-ZāīūṅñṭḍṇḷṃĀĪŪṄÑṬḌṆḶṂ][a-zA-ZāīūṅñṭḍṇḷṃĀĪŪṄÑṬḌṆḶṂ\-]*)\)/g;
+function enlazaLista(lista){
+  // «sakammaka; dvikammaka», «attha- pūraṇa y pada-pūraṇa», «X, Y and Z»
+  return lista.split(/(\s*[,;]\s*|\s+(?:y|e|and|o|or)\s+)/).map(p => {
+    let nom = p.trim();
+    if (!nom || /^[,;]$|^(y|e|and|o|or)$/.test(nom)) return resalta(p);
+    // «V. ejemplo en upamāna», «V. denominado tatiyā», «V. liṅga 2»: se
+    // enlaza la voz, y el número de homónimo va en la ficha agrupada.
+    nom = nom.replace(/^(?:ejemplos? en|denominado|se usa|y|e|o|and|or)\s+/, '').replace(/\s+\d$/, '');
+    return IDX.has(clave(nom)) ? enlaceTermino(nom, p) : resalta(p);
+  }).join('');
+}
+function enlazaGlosa(txt){
+  if (!txt) return '';
+  txt = String(txt);
+  let out = '', ult = 0;
+  const trozos = [];
+  for (const m of txt.matchAll(RE_REMISION)) trozos.push([m.index, m.index + m[0].length, m]);
+  for (const m of txt.matchAll(RE_PAREN)) {
+    if (!trozos.some(([a,b]) => m.index >= a && m.index < b)) trozos.push([m.index, m.index + m[0].length, m]);
+  }
+  trozos.sort((a,b) => a[0]-b[0]);
+  for (const [a, b, m] of trozos){
+    if (a < ult) continue;
+    out += resalta(txt.slice(ult, a));
+    if (m[2] !== undefined) out += resalta(m[1] + ' ') + enlazaLista(m[2]);
+    else out += '(' + (IDX.has(clave(m[1])) ? enlaceTermino(m[1]) : resalta(m[1])) + ')';
+    ult = b;
+  }
+  return out + resalta(txt.slice(ult));
+}
+
 function capaNorma(t){
   const notas = [t.nota, t.conflicto].filter(Boolean).map(escapa).join(' ');
   const tip = 'Norma del repositorio|Lista normativa (comun/glosario.md): el español '
@@ -819,8 +861,8 @@ function capaNand(t){
      adjudicado (generar_glosario.py no lo inyecta antes); si viene y el
      lector está en EN, se enseña él, rotulado «en». Si no, el español. */
   const enIngles = idioma === 'en' && t.en;
-  const cuerpo = enIngles ? resalta(t.en)
-    : t.es ? resalta(t.es)
+  const cuerpo = enIngles ? enlazaGlosa(t.en)
+    : t.es ? enlazaGlosa(t.es)
     : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
     : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
   const tip = 'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la '
@@ -1079,6 +1121,11 @@ function ponIdioma(v){
   idioma = v;
   // La clase del <body> conmuta la prosa de dos idiomas del pie.
   document.body.classList.toggle('en', v === 'en');
+  // Los globos con versión inglesa (data-tip-en) la enseñan en modo EN.
+  for (const el of document.querySelectorAll('[data-tip-en]')){
+    if (!el.dataset.tipEs) el.dataset.tipEs = el.dataset.tip;
+    el.dataset.tip = v === 'en' ? el.dataset.tipEn : el.dataset.tipEs;
+  }
   $('#b-es').setAttribute('aria-pressed', v === 'es');
   $('#b-en').setAttribute('aria-pressed', v === 'en');
   pinta();

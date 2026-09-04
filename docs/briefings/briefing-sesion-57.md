@@ -129,6 +129,27 @@ traducibles.
 
 ---
 
+## 3 ter. Dos retoques de la página, pedidos por el IEBH en esta sesión
+
+- **Las remisiones del texto de Nandisena son ahora enlaces.** «Ver también
+  kāraka», «V. lopa», «Cf. ghosa», «See also …», «También sambodhana», «Es
+  sinónimo de vutta-kamma» y los tecnicismos entre paréntesis —«(dvikammaka)»,
+  «(bahubbīhi)»— llevan a su ficha CUANDO EL LEMA EXISTE en la página
+  (`enlazaGlosa()` en `plantilla.html`, sobre `capaNand`). Quita el
+  número de homónimo («V. liṅga 2») y los prefijos «ejemplo en», «denominado»,
+  «se usa». Resultado: **441 enlaces en 233 fichas**, con el resaltado de la
+  búsqueda intacto. Quedan sin enlace, porque no hay lema: `akkhinimīlana`
+  (el impreso lematiza akhinimīlana), `anuccārana` (sic), y las remisiones
+  a palabras españolas («corta», «larga», «forma original», «oración»).
+- **Los globos de ES y EN, a una línea.** Decían todo el razonamiento; ahora
+  dicen qué enseña cada botón y de quién es el texto.
+- **Las pestañas cambian de idioma con EN**: «Alphabetical · the three
+  sources», «By subject · Smith», «Normative», y sus globos también. El
+  mecanismo es general: cualquier elemento con `data-tip-en` enseña esa
+  versión en modo EN (`ponIdioma()`); las etiquetas van en `.i-es`/`.i-en`.
+
+---
+
 ## 4. El nombre propio → «IEBH»: lo que la sesión 56 dejó
 
 La sustitución de la sesión 56 fue sensible a mayúsculas y dejó **34
