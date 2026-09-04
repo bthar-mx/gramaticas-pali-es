@@ -140,7 +140,7 @@ donde cambia la fuente** —`yathāsaṅkyaṃ` por *yathāsaṅkhyaṃ*, `etess
 *etassa*—. Emparejar con tolerancia sería invitar a la corrupción silenciosa
 en pāḷi. Se informa, no se coloca a ojo.
 
-## 4. LO QUE ANGEL DECIDIÓ HOY
+## 4. LO QUE EL IEBH DECIDIÓ HOY
 
 - **`Saṃ-sāsv iti`**: manda el maestro, no la división `Saṃ-sāsvī ti` de
   Nandisena. Vale para toda su clase. Es la única divergencia de división

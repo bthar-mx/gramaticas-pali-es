@@ -197,7 +197,7 @@ Cada tanda trae su §6. Lo que conviene mirar junto:
   mayor, conviene fijarlo).
 - *payoge sati* reapareció (§637) con el valor ya fijado en §604.
 
-## 8. DECISIONES QUE ESPERAN A ANGEL
+## 8. DECISIONES QUE ESPERAN A IEBH
 
 1. **Las dieciocho erratas pāḷi/formato del §3** y las del inglés
    (mahāli/bhaddāli en particular).

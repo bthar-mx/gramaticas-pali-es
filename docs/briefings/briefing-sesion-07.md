@@ -61,7 +61,7 @@ Ya tabuladas en sesión 06 y verificadas como aplicadas: §213, §217, §220 (so
    dobles: «“tu” (§205)» (antes «el ‘tu’»). **Abierto:** si se pasa al formato
    pleno de arrastre «(“tu” en §205)» en §74, §75 y §78.
 
-## 4. DECISIONES PUNTUALES DE ANGEL
+## 4. DECISIONES PUNTUALES DEL IEBH
 
 - **§237, sā:** desglose fijado SIN cita para ta → sa:
   «**Sā** = ta + si (“ta” se sustituye por “sa”; se inserta ‘ā’ tras “sa”

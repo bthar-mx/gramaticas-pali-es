@@ -31,7 +31,7 @@ método para saber el estado del repositorio sin riesgo del `index.lock`.
 Versiones publicadas: **paradigmas v1.12, sandhi v3.8** — sin cambio, sus
 páginas no se movieron ni un byte (ya estaban en hoja de palma).
 
-## 2. LAS CINCO DECISIONES, TOMADAS POR ANGEL
+## 2. LAS CINCO DECISIONES, TOMADAS POR IEBH
 
 Las cuatro «sin decidir» de 7 bis más los pesos de la sección 4 del
 briefing 19. Quedan así, con el contraste medido:

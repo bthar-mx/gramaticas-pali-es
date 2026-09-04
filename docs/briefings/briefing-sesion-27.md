@@ -181,7 +181,7 @@ conviene mirar junto:
 - La serie **-āgama** suma *ikārāgama* y *yakārāgama* (§605–§606) a la
   entrada única propuesta en la sesión 26 §6.
 
-## 8. DECISIONES QUE ESPERAN A ANGEL
+## 8. DECISIONES QUE ESPERAN A IEBH
 
 El §8 de cada tanda las lista. Lo gordo, en orden de consecuencia:
 

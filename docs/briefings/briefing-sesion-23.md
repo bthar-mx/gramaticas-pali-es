@@ -81,7 +81,7 @@ Actualiza el JSON al aplicar. Sin eso la operación no sería idempotente: las
 resueltas seguirían figurando como pendientes y una segunda pasada las
 insertaría por duplicado.
 
-## 3. LO QUE ANGEL DECIDIÓ
+## 3. LO QUE EL IEBH DECIDIÓ
 
 - **§132, y con él el criterio de las demás.** Las tres `(DA. i, 58)` sobre
   `Duve samaṇā / Duve brāhmaṇā / Duve janā` van **las tres**: poner sólo la

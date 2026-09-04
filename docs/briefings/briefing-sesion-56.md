@@ -3,7 +3,7 @@
 **Fecha:** 2026-09-04. Tres frentes: **la primera tanda del inglés del
 Glosario de Nandisena** (65 entradas, sin adjudicar), **la colación del
 Conspectus** de la p. 1124 a la 1129 (van 25 de 44), y **la sustitución de
-«Angel» por «IEBH»** en todo lo que produce el proyecto.
+el nombre propio por «IEBH»** en todo lo que produce el proyecto.
 
 Este briefing supone leídos los de las sesiones 46 a 55. El registro de la
 colación, página por página, está en `docs/glosario/revision-de-las-i.md`,
@@ -92,16 +92,16 @@ barrido sólo de paréntesis (§5.23 de la revisión).
 
 ---
 
-## 4. «Angel» → «IEBH», hecho
+## 4. Nombre propio → «IEBH», hecho
 
-Pedido de Angel en esta sesión. **779 apariciones en 70 archivos** de
+Pedido del IEBH en esta sesión. **779 apariciones en 70 archivos** de
 `recursos/`, `comun/`, `docs/` (briefings incluidos) y `herramientas/`, con
 las preposiciones ajustadas: «ejemplar del IEBH», «al IEBH», «lo decide IEBH»,
 «El IEBH» a principio de frase, «the IEBH» en el inglés. `CLAUDE.md` es la
 única excepción y lo dice. El nombre de archivo
 `conspectus-ejemplar-angel.pdf` no se ha tocado: está en su disco y no viaja.
 Con esto quedan corregidas las tres notas de paradigmas que decían «con el
-visto bueno de Angel».
+visto bueno del IEBH».
 
 ---
 
@@ -110,7 +110,7 @@ visto bueno de Angel».
 - **La tarjeta del glosario en `/recursos/`**, que faltaba. `generar_indices.py`
   la arma con insignia calculada de los datos («649 entradas · 1.878
   términos»), ES/EN.
-- **GLOS / CONSP**: Angel los veía no responder. En código conmutan bien
+- **GLOS / CONSP**: el IEBH los veía no responder. En código conmutan bien
   (jsdom: 1.984 → 1.637 → 1.984; 1.984 → 665 → 1.984). Lo que pasaba es que
   **están desactivados a propósito en las pestañas Conspectus y Norma** y nada
   lo enseñaba. Ahora el desactivado se ve —atenuado y tachado— y el globo dice
@@ -125,14 +125,14 @@ visto bueno de Angel».
 
 ## 6. Lo que el chat que siga tiene que hacer
 
-1. **Esperar el veredicto de Angel sobre la tanda 1** antes de escribir más
+1. **Esperar el veredicto del IEBH sobre la tanda 1** antes de escribir más
    inglés; cuando llegue, aplicarlo a `ingles.json` y seguir por
    `apaccattha-taddhita`, en tandas de ~60, con el mismo patrón.
 2. **Seguir la colación por la p. 1130** hasta la 1148, con la clase nueva en
    la cabeza: **mirar los paréntesis**, no sólo las cantidades. Reglas sin
    cambio: control en la misma página, ningún lema se toca, `duda` a lo que
    baile, anotar en `revision-de-las-i.md` (§4 sexies).
-3. Si Angel lo aprueba (§5.23 b), **barrido de paréntesis en las pp. 1105-1122**:
+3. Si el IEBH lo aprueba (§5.23 b), **barrido de paréntesis en las pp. 1105-1122**:
    es rápido, porque sólo se buscan ⟨ ⟩ junto a voces pāḷi cortas.
 4. Y al terminar cualquier cosa:
 
@@ -162,4 +162,4 @@ visto bueno de Angel».
 | lemas de la vista alfabética | 1.984 |
 | fichas con `duda` | **74** (62 al abrir) |
 | lemas cambiados en esta sesión | **0** |
-| «Angel» en lo que produce el proyecto | **0** (779 sustituidas) |
+| el nombre propio en lo que produce el proyecto | **0** (779 sustituidas) |

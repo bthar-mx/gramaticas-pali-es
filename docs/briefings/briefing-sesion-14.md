@@ -21,7 +21,7 @@ toca** los archivos del capítulo 4 (`sesion-13-*`, `capitulo-04-*`).*
   tablas de referencias retiradas y las variantes de Pind. La copia
   `borradores/3-Kāraka-Kappa-revA.md` es idéntica al maestro.
 
-## 2. FALLOS DE ANGEL EN LA SESIÓN 12 (ya aplicados; valen como convención)
+## 2. FALLOS DEL IEBH EN LA SESIÓN 12 (ya aplicados; valen como convención)
 
 1. **Los ocho nombres kāraka se TRADUCEN** en la prosa (novedad frente al
    Nāma): apādāna=ablativo, sampadāna=dativo, okāsa=locativo,

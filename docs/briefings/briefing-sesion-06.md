@@ -41,7 +41,7 @@ AMBOS, y además los dos borradores citados abajo.*
   resto.** Tras la revisión: montar `kaccayana/02-nama-kappa.md` para el
   generador (ver §11 del briefing-05) y los pendientes de §10 del briefing-05.
 
-## 1 bis. REVISIÓN DE ANGEL DEL QUINTO KAṆḌA (parcial, en curso)
+## 1 bis. REVISIÓN DEL IEBH DEL QUINTO KAṆḌA (parcial, en curso)
 
 - **Errata APROBADA:** §270 desglose «§245» → **§145**. (Las de §269 Rūp
   «401»→41 y §257 Sad «(503)»→(505) siguen pendientes de confirmación.)

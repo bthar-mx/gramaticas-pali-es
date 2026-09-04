@@ -26,7 +26,7 @@ ningún archivo del capítulo 3.*
   fórmulas de cierre (del 4 y las del 3, aún provisionales ambas);
   después, pasos de publicación de `CLAUDE.md`.
 
-## 2. DECISIONES DE ANGEL EN ESTA SESIÓN (aplicadas en todo el capítulo)
+## 2. DECISIONES DEL IEBH EN ESTA SESIÓN (aplicadas en todo el capítulo)
 
 1. **Terminología de samāsa, modelo kāraka** (pāḷi sin traducir + glosa
    española entre paréntesis en la primera aparición): samāsa (compuesto),

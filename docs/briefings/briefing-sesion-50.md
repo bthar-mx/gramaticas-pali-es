@@ -29,7 +29,7 @@ Con esto queda entera la sección 6.1 (la palabra y su sentido) y casi entera la
 
 ---
 
-## 2. LA FUENTE DE IMAGEN HA CAMBIADO: EL EJEMPLAR DE ANGEL
+## 2. LA FUENTE DE IMAGEN HA CAMBIADO: EL EJEMPLAR DEL IEBH
 
 `recursos/saddaniti/conspectus-ejemplar-angel.pdf`, 44 fotogramas, las páginas
 **1105-1148** completas, una por fotograma y en orden, cortadas justo donde
@@ -82,7 +82,7 @@ este archivo reescala mal, porque las cajas de página no son uniformes.
 
 ---
 
-## 3. LO QUE ANGEL DECIDIÓ, Y LO QUE QUEDA DICHO PARA QUE NO SE PIERDA
+## 3. LO QUE EL IEBH DECIDIÓ, Y LO QUE QUEDA DICHO PARA QUE NO SE PIERDA
 
 ### 3.1 `vicchā` se queda con i breve. Y el impreso dice `vīcchā`
 

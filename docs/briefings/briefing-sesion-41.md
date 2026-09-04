@@ -377,7 +377,7 @@ cita **Saddanīti §49** (`03c40f1`), diez de un **APRENDIZ en clase**
 Y **`caparaṃ` = ca + aparaṃ** zanja una de las 416 discrepancias medidas en la
 40 (masa 1.548). Casos 195 → 218; sin derivar, 19.
 
-## 13. LO QUE TIENE QUE HACER ANGEL
+## 13. LO QUE TIENE QUE HACER IEBH
 
 - **`herramientas/comprobar_despliegue.py`** dice si lo de la Mac es ya lo que
   sirve la web, y distingue «falta el push» de «el despliegue va en camino».

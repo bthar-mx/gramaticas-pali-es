@@ -102,7 +102,7 @@ aunque siga en un sitio imposible.
 
 ---
 
-## 4. CINCO VEREDICTOS DE ANGEL, YA APLICADOS
+## 4. CINCO VEREDICTOS DEL IEBH, YA APLICADOS
 
 Todos suyos, todos de esta sesión, todos escritos ya en los datos.
 

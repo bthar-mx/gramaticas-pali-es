@@ -73,7 +73,7 @@ la diapositiva. Comprobado contra el texto del sutta en las dos fuentes.
 documento base lee Rū 513. Queda dar cuenta a Bhikkhu Nandisena, por cortesía,
 no como condición.
 
-## 4. LAS CINCO DECISIONES DE ANGEL (2026-09-01)
+## 4. LAS CINCO DECISIONES DEL IEBH (2026-09-01)
 
 1. **Se publica el par `Kacc/Rū`**, como hacen las presentaciones.
 2. **`suṇāti` se corrige** a Kacc. §448 / Rū 512, con la nota.

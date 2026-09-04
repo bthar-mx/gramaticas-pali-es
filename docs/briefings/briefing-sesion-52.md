@@ -32,7 +32,7 @@ pp. 1105-1148 (el Conspectus gramatical entero)"`.
 
 ---
 
-## 2. UN HALLAZGO QUE CORRIGE A LA SESIÓN 47, Y ES DECISIÓN DE ANGEL
+## 2. UN HALLAZGO QUE CORRIGE A LA SESIÓN 47, Y ES DECISIÓN DEL IEBH
 
 La sesión 47 §2.2 estableció que Smith imprime a veces una **breve** sobre una
 vocal, que las cuatro apariciones caen donde la forma corriente tiene vocal

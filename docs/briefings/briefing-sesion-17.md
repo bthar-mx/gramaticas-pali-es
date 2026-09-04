@@ -56,7 +56,7 @@ Decisiones de estilo del IEBH (permanentes):
 - La comunicación con Claude es **en inglés**; el producto, en español
   (nada de «commiteado» en los mensajes al IEBH).
 
-## 3. CORRECCIONES APROBADAS POR ANGEL EN ESTA SESIÓN
+## 3. CORRECCIONES APROBADAS POR IEBH EN ESTA SESIÓN
 
 | Dónde | Antes | Después |
 | ----- | ----- | ------- |

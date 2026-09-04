@@ -105,7 +105,7 @@ Añadir al emergente el número de estrofa verificado contra Pind (PTS) —
 bien son ~110 comprobaciones una a una. Queda como DUDA en la guía §5.1
 sexies. El IEBH decide si vale la pena.
 
-## 3. DECISIONES QUE ESPERAN A ANGEL
+## 3. DECISIONES QUE ESPERAN A IEBH
 
 Ninguna bloquea lo confirmado; todas afectan a la edición inglesa o a una
 nota del español.

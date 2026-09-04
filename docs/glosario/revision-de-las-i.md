@@ -766,6 +766,170 @@ corriente. La partición sigue sin decidirse: el guión está al final de línea
 
 ---
 
+## 4 sexies. La colación termina: pp. 1130-1148, y lo que se cae ahora son las OMISIONES
+
+*Sesión 57. Método y regla, los mismos: hoja = página impresa − 1104,
+`pdfimages -j`, lectura entera a ×0,75, confirmación a ×3-×16 **siempre con
+control en la misma página**, y la clase nueva de la sesión 56 en la cabeza:
+mirar los paréntesis. **Ninguna ficha ha cambiado de lema.***
+
+| pág. | fichas | hallazgos | estado |
+| ---: | ---: | ---: | --- |
+| 1130 | 49 | 2 | dos `duda` |
+| 1131 | 37 | 1 | dos `duda` (un angular, dos fichas) |
+| 1132 | 48 | 2 | dos `duda` nuevas, una vieja ampliada |
+| 1133 | 46 | 0 | limpia; una omisión |
+| 1134 | 69 | 0 | limpia |
+| 1135 | 36 | 0 | limpia |
+| 1136 | 31 | 1 | una `duda` vieja ampliada **contra lo que decía**; una omisión |
+| 1137 | 30 | 0 | limpia |
+| 1138 | 35 | 2 | dos `duda` nuevas, una vieja ampliada; una omisión |
+| 1139 | 49 | 0 | limpia |
+| 1140 | 85 | 1 | una `duda` (errata de imprenta) |
+| 1141 | 51 | 0 | limpia |
+| 1142 | 75 | 0 | limpia |
+| 1143 | 50 | 0 | limpia |
+| 1144 | 37 | 0 | limpia; una omisión |
+| 1145 | 31 | 0 | limpia; **la omisión mayor** |
+| 1146 | 55 | 0 | limpia |
+| 1147 | 45 | 0 | limpia |
+| 1148 | 16 | 0 | limpia |
+
+**Van 44 páginas de 44. La colación contra la plancha está hecha.** Diecinueve
+páginas, 875 fichas, nueve `duda` nuevas y tres ampliadas; y una clase de
+hallazgo que las tandas anteriores no habían medido: **cinco pasajes de Smith
+que no están en ninguna ficha ni nota**, uno de ellos de ocho líneas.
+
+### 4 sexies.0 LO PRIMERO: una duda «comprobada sobre el ejemplar» que decía lo contrario del ejemplar
+
+`aparadipanā` (6.1.1.3, p. 1136). La duda publicada afirma, como tercera
+cosa, que «Smith imprime aparadipanā y dipanā con i BREVE las dos veces …
+comprobado a ×8 sobre el ejemplar del IEBH … el signo es un punto redondo».
+**No es así.** A ×12 sobre la hoja 32 el signo sobre la i de «aparadīpanā» es
+una barra plana que desborda la letra, del mismo trazo que la ā final; y la
+línea siguiente da el control más limpio que cabe pedir: en «purimatthassa
+dīpanā» la i de *purimatthassa* lleva punto redondo y la de *dīpanā* lleva
+barra. **Las dos son ī**, que es lo que pide *dīpeti* y lo que la ficha
+`-dīpana` de la p. 1132 ya transcribía; la incoherencia que la duda señalaba
+entre las dos páginas no existía.
+
+Es del género de las breves inventadas de la sesión 55 (§4 quater.0), y pesa
+más: aquéllas venían del escaneo de 400 dpi; ésta se dio por comprobada sobre
+el mismo ejemplar que ahora la desmiente. De ahí una regla que conviene fijar:
+**«comprobado en el ejemplar» sin decir a qué aumento y con qué control no
+vale como comprobación.** Y de ahí la sospecha sobre su vecina:
+
+`visesaniya` (6.2.1, p. 1138) tiene una duda con la misma frase —«sobre la i
+hay un punto redondo»—. A ×16 el signo sobre la i de *-ni-* es más ancho que
+los puntos de las dos íes anteriores de la misma palabra y tiene aspecto de
+barra corta; pero la hoja 34 es la de menor resolución de la tanda (1.796 px)
+y **no se afirma**. Se dice sólo que el «punto redondo» no está garantizado.
+Pide una segunda fotografía o la plancha.
+
+### 4 sexies.1 Dos angulares más, y uno de ellos con la sigla de Moggallāna dentro
+
+- **`kaṇḍa` / `pakaraṇa`** (5.3.3.1, p. 1131): la plancha imprime «kaṇḍa
+  ⟨Mg⟩», angular, con «(Kc)» y «(… Sd)» redondos en la misma frase. La ficha
+  da «(Mg)». Es el caso más limpio de la regla de la sesión 47 §4: Smith le
+  pone la marca de Moggallāna hasta a la sigla.
+- **`saddalakkhaṇa` / `akkharasamaya`** (5.3.3.3, p. 1132): «(ib. 5.1; 5.2
+  ⟨5.3 … 5.4.14⟩)», angular dentro de redondo, los dos cierres pegados. Si el
+  angular atribuye a Moggallāna, Index A 5.3-5.4.14 serían su gramática y su
+  escuela; se puede comprobar en el Index A y no se ha hecho.
+
+Con los ocho de la sesión 56 y el `alutta⟨vibhattika⟩samāsa` de la 55 van
+**once angulares aplanados**. Los demás angulares de estas diecinueve páginas
+—⟨vivacchā⟩, ⟨ākatigaṇa⟩, ⟨yogavibhāga⟩, ⟨ou la légèreté lāghava⟩, ⟨I 17—20⟩,
+⟨I 14⟩, ⟨I 1—12 Saññādhikāra⟩, ⟨I 13—25 Paribhāsāyo⟩, ⟨paṭisedha⟩, ⟨apavāda⟩,
+⟨bādhati⟩, ⟨cf. bāhulaka⟩, ⟨antaraṅga : bahiraṅga⟩, ⟨dvinnaṃ … ppasaṅge⟩,
+⟨Pañcikā⟩, y el «⟨= pada-» de la p. 1137— estaban bien transcritos: el
+patrón de la sesión 56 se sostiene, y en la sección 7 la transcripción los
+había mirado con más cuidado.
+
+### 4 sexies.2 Dos lecturas contra la ficha
+
+- **`pāḷi`** (5.3.3.1, p. 1130): la plancha imprime «tantī, pāḷī
+  (pāḷidhamma)», ī larga en el lema y control en la misma línea —la i de
+  *pāḷidhamma* con punto—. Smith declina *tantī* y *pāḷī* juntos como
+  femeninos en -ī. La ficha lematiza `pāḷi`, que es la forma corriente y la de
+  Nandisena. Del género de `vīcchā`: lo decide el IEBH.
+- **`sarūpānam akkharānaṃ ekaseso`** (6.2.3, p. 1138): la plancha imprime
+  «sarūpānaṃ akkharānaṃ» con punto bajo las dos ṃ, idénticos a ×5. La ficha
+  lematiza *sarūpānam* con m, y su nota afirma que Smith imprime m y ṃ en la
+  misma línea. No en el ejemplar. Afecta también al campo `fr` de `ekasesa`.
+
+### 4 sexies.3 Una referencia mal leída, y la fuente lo confirma
+
+**`upānīya`** (5.3.2.3, p. 1130): la ficha y su `ref_smith` dicen «919,16»;
+la plancha imprime «(919,10)». El control interno es el 6 de «16,3» dos
+líneas más arriba, con lazo y cola, frente al 0 cerrado. Y el control externo
+es decisivo: la línea 10 de la p. 919 del vol. III (hoja 326 del escaneo del
+repositorio) es «Idam p' ettha sallakkhetabbaṃ: tisso kathā: vādo jappo
+vitaṇḍā ti», exactamente donde acaba la lista de las tantiyutti y empiezan
+las tres kathā, que es lo que Smith está citando; la línea 16 no viene al
+caso. Lema y `ref_smith` intactos.
+
+Del mismo pasaje sale, de regalo, un apoyo al punto 26: **las líneas 25-27 de
+esa p. 919 imprimen `sādhanīya` con ī tres veces**, como el Conspectus en la
+p. 1129.
+
+### 4 sexies.4 Una errata de imprenta
+
+**`nipphajjate`** (7.1.2.1, p. 1140): la plancha imprime «nipphajjəte», con
+un tipo vuelto —una e girada, que se lee ə— en el lugar de la a; a ×6 es
+inequívoco, y las a de «produit» y de «nipphanna» en la misma línea hacen de
+control. La ficha normaliza en silencio a la forma buena. Queda constancia.
+
+### 4 sexies.5 Lo que NO está en ninguna ficha: cinco omisiones
+
+Es la clase que esta tanda ha medido y las anteriores no. Ninguna lleva voz
+pāḷi lematizable, salvo la última, y por eso pasaron; pero cuatro llevan
+remisiones internas y referencias que se pierden. **Nada creado**; la decisión
+de si entran, y como qué, es del IEBH (punto 9 del §5, ampliado):
+
+| pág. | lo que falta | entre qué fichas |
+| ---: | --- | --- |
+| 1133 | «(E) On trouve parfois des adaptations de passages sanskrits (37,21—22; 289,25, 26; 325,19).» — el quinto apartado A-E de 5.3.3.3 | `Mahābodhivaṃsa` … `payoga(racanā)` |
+| 1136 | «le moyen-indien homilétique, contemporain d'une vigoureuse tradition sanskrite, maintient, grâce au système des binômes (5.3.1; 6.1.1.3—6.1.2.1), …» | `samānaniddesa` … `ekasuti(ka)` |
+| 1138 | «à savoir : l'infinitif 3.1.1. C, le participe du présent 3.1.1. A, et l'absolutif 3.1.1. B (pour «l'enchaînement» v. 5.3.1)» | `yaṃ` … `punarutti(dosa)` |
+| 1144 | «(p. ex. ekāro 628,6, saro 776,8, attanopadāni 835,16), le signifiant (p. ex. bhū 3,26 scil. vattati, paṭhamā 713,29 scil. hoti, ṇo 783,19, cf. āsaddo … pavattati 880,23)» — siete referencias y el subvalor «le signifiant» del nominativo | `nāma` … `ādesa` |
+| 1145 | **ocho líneas**: «compris … (p. ex. ssena 841,6 scil. saddhiṃ, kakārāgamena 838,24 scil. saha, cf. sa- 832,15—25); — (4) dat., aucun emploi technique; — (5) abl. = après … (phonème, racine, thème) ⟨I 15⟩ (p. ex. asarūpā 613,7, ismā 613,16, yehi … tehi 864,22 scil. para-, jhamhā 674,17, paccayato 804,14, nāmato 822,23, manuto 783,32, dhātuliṅgānukaraṇehi 822,7)»; y dentro de (6) y (7): «l'unité dont un élément est modifié (p. ex. idhassa 617,18 ɔ: idhasaddassa, paṭipadāya 636,25; brūno 876,25 ɔ: brūdhātussa)», «(7) loc. le signifié (p. ex. itthiyaṃ 642,25 ɔ: itthiliṅge vattabbe, saññāyaṃ 844,23 scil. abhidheyyāyaṃ, cf. abhidhātabbe 648,8, sattāyaṃ … seḷane 3,26 … 569,16)» y, tras ⟨I 14⟩, «(p. ex. vyañjane 626,3 scil. pare, ṇānubandhe (sare) 644,13, patimhi 632,11)» | `vikāra` (p. 1144) … `ṭhānin`; `ṭhānin` … `āgamin`; `upapada` … `visaya` |
+
+La de la p. 1145 es la que pesa: **tres casos enteros del cuadro (C) de 7.3.1
+—instrumental, dativo, ablativo—, un angular ⟨I 15⟩ y una veintena de
+referencias**; y el cuadro de los casos es, por su propia nota, «lo más
+notable de la página» 1144. La transcripción salta de «(3) instr. = y» a «(6)
+gén.» sin dejar rastro.
+
+### 4 sexies.6 Lo que se comprobó sin novedad
+
+Se anota lo que decide algo, no todo lo que cuadra:
+
+- **Sogatamata** con o y **tathāgatādāya** letra por letra (p. 1130): las dos
+  dudas viejas se sostienen; la plancha imprime lo que la ficha dice.
+- **Magadha** sin macrón (p. 1131), **lokanīti-** con ī+i (p. 1132),
+  **vaṃśa-** con ś y **gæṭapada** con æ (p. 1132), **vibhatyanta :
+  avibhatyanta** con una t las dos (p. 1134), **asamānapavattinimitta** con una
+  p (p. 1137), **pṛṣodarādi** con ṛ (p. 1141), **tatrâyaṃ** con circunflejo
+  (p. 1148): todas las dudas de esa clase, respaldadas.
+- **`mahāṭīkā`** (p. 1132): «2.8.1,1» con coma final, descendente visible; la
+  transcripción acertó. Duda ampliada, no quitada.
+- **`vīcchā`** (6.1.3.1, p. 1137), con ī: **quinta aparición**, con las de
+  1120, 1124 ×2 y 1127. La duda de esa ficha cuenta cuatro porque no sabía de
+  la 1127.
+- **`vaṇṇavipariyā̆ya`** (p. 1143): el anceps se ve, macrón con cazoleta.
+  Respalda el punto 8.
+- **El circunflejo** no vuelve a aparecer en estas páginas fuera de
+  `tatrâyaṃ`, ni el anceps fuera de `vaṇṇavipariyā̆ya`.
+- **La hoja 34 (p. 1138)** es la más floja, 1.796 px, y la 36 (p. 1140) tiene
+  la cabecera algo desenfocada; ninguna de las dos impidió leer los paréntesis.
+- **Los cinco corchetes anómalos** de la sección 7 están impresos como dicen
+  sus dudas.
+- **Las siglas** Mg-pp, Kcv, Mmd, Nir-p, Kāt, mṭ: impresas como se
+  transcribieron.
+
+---
+
 ## 5. Qué se pide al IEBH
 
 **Resuelto todo en la propia sesión 53.** Queda constancia de lo decidido:
@@ -881,4 +1045,39 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
     8; y pide reescribir la nota, que hoy enseña un razonamiento desmentido.
 26. **`upasajjanībhūta`** (variante de `padhānatta`, p. 1124), §4 quinquies.3,
     y **`sādhanīya-`** (p. 1129), §4 quinquies.4: dos íes largas donde la ficha
-    tiene breve, la segunda cerrando la mitad de una duda vieja.
+    tiene breve, la segunda cerrando la mitad de una duda vieja. *Sesión 57:*
+    la fuente misma imprime `sādhanīya` con ī tres veces en Sd III 919,25-27.
+
+**Y lo que añade la sesión 57 (§4 sexies), con la colación ya completa:**
+
+27. **`aparadipanā`** (p. 1136), §4 sexies.0. **La duda publicada afirma lo
+    contrario de lo que imprime la plancha**, y lo afirma «comprobado a ×8
+    sobre el ejemplar». Es ī: aparadīpanā, dīpanā, con control en la misma
+    línea. Pide (a) el lema, y (b) una regla: «comprobado en el ejemplar» sin
+    aumento ni control no cuenta.
+28. **`visesaniya`** (p. 1138), §4 sexies.0. Misma frase en su duda, «punto
+    redondo»; la hoja no decide y no se afirma, pero el punto no está
+    garantizado. Pide segunda fotografía, o la plancha.
+29. **`kaṇḍa` ⟨Mg⟩** (p. 1131) y **`saddalakkhaṇa` ⟨5.3 … 5.4.14⟩** (p. 1132),
+    §4 sexies.1: dos angulares más, once en total. Se suman al punto 23 (a).
+    Y una pregunta que sale del segundo: si Index A 5.3-5.4.14 es la escuela de
+    Moggallāna, cosa que se comprueba en el Index A.
+30. **`pāḷi` → plancha `pāḷī`** (p. 1130), §4 sexies.2. Del género de `vīcchā`
+    (puntos 18 y 24): Smith imprime la ī, la lengua y Nandisena dan la breve.
+    Se decide con ellos.
+31. **`sarūpānam akkharānaṃ ekaseso` → plancha `sarūpānaṃ`** (p. 1138), §4
+    sexies.2. Lema y nota afirman una m que el ejemplar no tiene.
+32. **`upānīya` 919,16 → plancha 919,10** (p. 1130), §4 sexies.3. Aquí no hay
+    nada que decidir salvo autorizar la corrección: el control externo es la
+    propia p. 919. Es el único caso de la tanda en que se pide tocar un campo,
+    y es `ref_smith`, no el lema.
+33. **`nipphajjate`** (p. 1140), §4 sexies.4: tipo vuelto en la plancha,
+    «nipphajjəte». ¿Se deja la normalización muda, o se dice en la nota?
+34. **LAS CINCO OMISIONES**, §4 sexies.5, y sobre todo **las ocho líneas de
+    la p. 1145** con los casos (3)-(5) del cuadro de 7.3.1. Amplía el punto 9:
+    ¿entran, y como qué —fichas nuevas, o nota de `nāma` (p. 1144)—? Y con
+    ellas la pregunta de método: **las 25 páginas anteriores no se miraron
+    buscando omisiones de prosa sin voz pāḷi**; las de esta tanda salieron al
+    leer la página entera contra la lista de fichas. Un barrido de esa clase
+    sobre las pp. 1105-1129 es más lento que el de paréntesis (§5.23 b) y
+    también es propuesta, no hecho.

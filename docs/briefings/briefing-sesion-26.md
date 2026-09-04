@@ -170,7 +170,7 @@ mirar junto:
 - *abbhāsa*, *vikaraṇa*, *kārita*, *paribhāsa*, *yogavibhāga*,
   *sādhana*, *dhātvanta*, *tulyādhikaraṇa* (ya fijado en la sesión 13).
 
-## 7. DECISIONES QUE ESPERAN A ANGEL
+## 7. DECISIONES QUE ESPERAN A IEBH
 
 El §8 de cada tanda las lista. Lo gordo, en orden de consecuencia:
 

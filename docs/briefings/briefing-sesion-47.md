@@ -30,7 +30,7 @@ kam-»: **la 1125 empieza por el kammadhāraya**.
 
 ---
 
-## 2. LO QUE ANGEL CORRIGIÓ, Y LO QUE SE APRENDE DE ELLO
+## 2. LO QUE IEBH CORRIGIÓ, Y LO QUE SE APRENDE DE ELLO
 
 ### 2.1 «vicchā» va con i BREVE, y la lección es general
 

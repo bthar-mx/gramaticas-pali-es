@@ -82,7 +82,7 @@ aparece como término técnico en los capítulos).
   commit usada: IEBH \<admin@iebh.org\>.
 - Commits de la sesión: 2256d28 (decisiones + briefing-09), 329857f
   (arrastre «tu»), ca58ffa (cajón ☰), 03af531 (glosario), más el de este
-  briefing. **PUSH PENDIENTE DE ANGEL** — el entorno de Claude no tiene
+  briefing. **PUSH PENDIENTE DEL IEBH** — el entorno de Claude no tiene
   credenciales de GitHub: `cd ~/Documents/gramaticas-pali-es && git push`.
 
 ## 7. PENDIENTES QUE QUEDAN

@@ -40,7 +40,7 @@ continúa con §301–§315.*
 - **El archivo del Saddanīti en la carpeta de conocimiento está vacío**
   (678 líneas en blanco): los números Sad solo se cotejan vía Pind.
 
-## 3. DECISIONES DE ANGEL EN ESTA SESIÓN
+## 3. DECISIONES DEL IEBH EN ESTA SESIÓN
 
 1. **bhayaṃ** = «peligro o temor», espejando el orden de Nandisena en cada
    aparición («danger or fear» / «fear/danger»).

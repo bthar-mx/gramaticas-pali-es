@@ -16,7 +16,7 @@ otra máquina, se vuelven a bajar de archive.org** con los identificadores
 `SaddanitiAggavamsasPaliGrammar01` … `05`. Los `.paginas.json` sí viajan, que
 es lo que permite citar por página impresa sin tener el escaneo delante.
 
-## EL CONSPECTUS DEL EJEMPLAR DE ANGEL (sesión 50)
+## EL CONSPECTUS DEL EJEMPLAR DEL IEBH (sesión 50)
 
 `conspectus-ejemplar-angel.pdf`, 44 páginas, las **1105-1148** completas, una
 por fotograma y en orden, hechas con un iPhone el 2026-09-04. Es la sección E
