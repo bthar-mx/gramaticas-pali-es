@@ -262,15 +262,34 @@ def main():
     # luego Nandisena, que es la edición base, y por último Smith—, y cuando
     # el grupo trae más de una grafía se enseñan TODAS con su fuente: la
     # divergencia es dato, no ruido.
+    # OJO CON LA CLAVE, que es donde estuvo el error. El cotejo entre obras
+    # se hace por lema DESNUDO —sin diacríticos—, y para casar a Nandisena
+    # con Smith está bien: es lo que encuentra niggahita / niggahīta. Pero
+    # como clave de FUSIÓN es demasiado ancha y junta palabras distintas:
+    # pada con pāda, karaṇa con kāraṇa, akāra con ākāra, y los cuatro
+    # nombres de letra nakāra, ñakāra, ṅakāra y ṇakāra en una sola ficha.
+    # Eran 42 grupos, y ahí la tilde no es una variante: es la palabra.
+    #
+    # De modo que se funde sólo lo que difiere en guiones, paréntesis,
+    # apóstrofos o espacios —akkhara-lopa = akkharalopa, suddha(ssara) =
+    # suddhassara—, y las grafías que difieren en LETRA O DIACRÍTICO se
+    # quedan en fichas aparte, enlazadas entre sí con un «véase también».
+    # Decidir si dos de ésas son la misma palabra es de Angel, no del
+    # generador: es justamente lo que la colación viene decidiendo caso por
+    # caso.
+    def clave_fusion(s):
+        s = unicodedata.normalize("NFC", (s or "")).lower()
+        return re.sub(r"[^0-9a-zāīūṅñṭḍṇḷṃ]", "", s)
+
     grupos = {}
     for i, t in enumerate(conspectus):
-        grupos.setdefault(desnudo(t["pali"]), {"c": [], "n": [], "g": []})["c"].append(i)
+        grupos.setdefault(clave_fusion(t["pali"]), {"c": [], "n": [], "g": []})["c"].append(i)
     for i, e in enumerate(nand["entradas"]):
-        grupos.setdefault(desnudo(e["pali"]), {"c": [], "n": [], "g": []})["n"].append(i)
+        grupos.setdefault(clave_fusion(e["pali"]), {"c": [], "n": [], "g": []})["n"].append(i)
     for i, e in enumerate(normativo):
         if e["sin_lema"]:
             continue
-        grupos.setdefault(desnudo(e["pali"]), {"c": [], "n": [], "g": []})["g"].append(i)
+        grupos.setdefault(clave_fusion(e["pali"]), {"c": [], "n": [], "g": []})["g"].append(i)
 
     agrupado = []
     for clave, ix in grupos.items():
@@ -286,13 +305,29 @@ def main():
             if p not in vistas:
                 vistas.add(p)
                 unicas.append([p, f])
-        entrada = {"p": unicas[0][0], "c": ix["c"], "n": ix["n"], "g": ix["g"]}
+        entrada = {"id": clave, "p": unicas[0][0],
+                   "c": ix["c"], "n": ix["n"], "g": ix["g"]}
         if len(unicas) > 1:
             entrada["gr"] = unicas
         agrupado.append(entrada)
     agrupado.sort(key=lambda e: clave_pali(e["p"]))
 
     con_varias_grafias = sum(1 for e in agrupado if "gr" in e)
+
+    # «Véase también»: las fichas que sólo se distinguen por un diacrítico o
+    # por una letra. Antes se fundían en silencio; ahora se enlazan, que es
+    # lo que permite ver a la vez el niggahita de Nandisena y el niggahīta
+    # de Smith sin afirmar que son la misma palabra.
+    por_desnudo = {}
+    for e in agrupado:
+        por_desnudo.setdefault(desnudo(e["p"]), []).append(e)
+    con_vease = 0
+    for hermanas in por_desnudo.values():
+        if len(hermanas) < 2:
+            continue
+        con_vease += len(hermanas)
+        for e in hermanas:
+            e["v"] = [o["id"] for o in hermanas if o is not e]
 
     hechas = sorted({t["pagina"] for t in conspectus})
     faltan = PAGINAS[1] - PAGINAS[0] + 1 - len(hechas)
@@ -345,7 +380,8 @@ def main():
     print("  Conspectus, {0}: {1} páginas de {2} ({3}-{4})".format(
         datos["estado"], len(paginas), total_paginas, paginas[0], paginas[-1]))
     print("  vista alfabética: {0} lemas de las tres fuentes en una sola lista; "
-          "{1} traen más de una grafía".format(len(agrupado), con_varias_grafias))
+          "{1} traen más de una grafía y {2} llevan «véase también» hacia una "
+          "grafía vecina".format(len(agrupado), con_varias_grafias, con_vease))
     if nand["entradas"]:
         pct = 100.0 * en_ambas / len(conspectus)
         print("  en las dos fuentes: {0} de los {1} términos del Conspectus "

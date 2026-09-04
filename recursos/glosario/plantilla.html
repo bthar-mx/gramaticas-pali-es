@@ -220,20 +220,39 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
    Nandisena, y al final los sentidos de Smith, uno por epígrafe. */
 .capa{padding:6px 0 5px;border-top:1px dotted var(--hair)}
 .capa:first-child{border-top:0;padding-top:1px}
-.capa-tit{display:block;font-family:var(--mono);font-size:9px;font-weight:600;
-  letter-spacing:.09em;text-transform:uppercase;color:var(--soot);margin-bottom:2px}
-.capa-norma .capa-tit{color:var(--haritala)}
-.capa-nand .capa-tit{color:var(--haritala)}
-.capa-smith .capa-tit{color:var(--soot)}
-.capa-smith .capa-tit b{color:var(--nila);font-weight:600}
+/* La marca de la capa: una o dos palabras, no una línea en versales. El
+   subrayado punteado avisa de que lleva globo, que es donde está el resto
+   —obra, sección, página—. */
+.capa-tag{float:left;margin:2px 8px 0 0;font-family:var(--mono);font-size:9px;
+  font-weight:600;letter-spacing:.07em;line-height:1.4;padding:1px 5px;
+  border-radius:2px;cursor:help;white-space:nowrap;
+  text-decoration:underline dotted;text-underline-offset:2px}
+.tag-norma{background:var(--hl);color:var(--haritala)}
+.tag-nand{background:var(--hl);color:var(--haritala)}
+.tag-smith{background:var(--chip-k);color:var(--nila)}
+.capa .gl{overflow:hidden}
 .lema .obras{display:block;font-family:var(--mono);font-style:normal;font-weight:400;
-  font-size:9.5px;letter-spacing:.06em;color:var(--soot);margin-top:4px}
+  font-size:9.5px;letter-spacing:.06em;color:var(--haritala);margin-top:4px}
+.lema .obras span{cursor:help;text-decoration:underline dotted;text-underline-offset:2px}
+.lema .obras span:hover{color:var(--nila)}
 /* Las 132 entradas cuyas fuentes no escriben igual el lema. La divergencia
    es dato —niggahita / niggahīta, karaṇa / kāraṇa—, así que se enseña
    entera y con el nombre de quien escribe cada cosa. */
 .grafias{display:block;font-size:12.5px;font-weight:400;font-style:normal;
   color:var(--soot);margin-top:4px;line-height:1.5}
 .grafias i{font-style:italic;color:var(--ink)}
+/* Enlaces entre fichas: se ven como enlaces, pero discretos, porque en
+   una lista de 1.984 lemas un enlace llamativo por línea es ruido. */
+.xref{color:var(--nila);text-decoration:underline dotted;text-underline-offset:2px;
+  cursor:pointer}
+.xref:hover{text-decoration-style:solid;background:var(--hl)}
+.vease{margin:6px 0 0;font-size:12.5px;color:var(--soot);font-style:italic}
+.vease .xref{font-style:normal}
+/* Al llegar por un enlace, la ficha se señala un momento: en una lista
+   tan larga, sin esto uno no sabe dónde ha caído. */
+.t.destacada{background:var(--hl);transition:background .5s}
+@media (prefers-reduced-motion:reduce){.t.destacada{transition:none}}
+.t{scroll-margin-top:var(--barra,64px)}
 .grafias em{font-style:normal;font-family:var(--mono);font-size:9px;
   letter-spacing:.06em}
 .fijado{font-family:var(--mono);font-size:10px;color:var(--soot);letter-spacing:.05em}
@@ -283,7 +302,13 @@ footer code{font-family:var(--mono);font-size:11.5px}
 <button id="volver-barra" aria-label="Mostrar el índice">☰</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice de secciones">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice">☰</button>
-  <div class="sb-brand"><b>Glosario gramatical</b><span class="lbl">Saddanīti · Kaccāyana</span></div>
+  <!-- Las cuatro obras a las que remiten las entradas, con Kaccāyana
+       delante por ser la gramática que este repositorio traduce. Son las
+       mismas que nombra la presentación del pie, y las que Nandisena cita
+       en el grueso de sus referencias: Rū. 298 veces, Kac. 94, Sad. 85,
+       Nir. 18. Payogasiddhi, con dos, se queda fuera del rótulo y consta
+       en el pie. -->
+  <div class="sb-brand"><b>Glosario gramatical</b><span class="lbl">Kaccāyana · Rūpasiddhi · Saddanīti · Niruttidīpanī</span></div>
   <div class="sb-tit" id="secs-tit">Secciones</div>
   <nav class="secs" id="secs" aria-label="Ir a una sección"></nav>
   <p class="sb-nota" id="sb-nota"></p>
@@ -301,23 +326,35 @@ footer code{font-family:var(--mono);font-size:11.5px}
 
 <div class="bar">
   <div class="wrap">
-    <input type="search" id="q" placeholder="Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…" aria-label="Buscar">
-    <button class="icon-btn" id="b-nand" aria-pressed="true" title="Mostrar la capa del Glosario de Nandisena">GLOS</button>
-    <button class="icon-btn" id="b-smith" aria-pressed="true" title="Mostrar las capas del Conspectus de Smith">CONSP</button>
-    <button class="icon-btn" id="b-fr" aria-pressed="true" title="Mostrar el francés de Smith">FR</button>
-    <button class="icon-btn" id="b-en" aria-pressed="true" title="Mostrar el inglés">EN</button>
-    <button class="icon-btn" id="b-marcas" aria-pressed="false" title="Sólo las entradas con conflicto o duda">⚑</button>
-    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice" aria-expanded="true">☰</button>
+    <input type="search" id="q" placeholder="Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…" aria-label="Buscar"
+      title="Busca a la vez en el lema, en el francés de Smith, en el español, en el inglés, en el epígrafe y en las notas. Se puede escribir sin diacríticos: «nibbana» encuentra nibbāna.">
+    <button class="icon-btn" id="b-nand" aria-pressed="true"
+      title="GLOSARIO DE NANDISENA — Enciende y apaga la capa del Glosario de Bhikkhu Nandisena (IEBH, 2013), cuyo español es el firmado. Al apagarla, los lemas que sólo trae él salen de la lista.">GLOS</button>
+    <button class="icon-btn" id="b-smith" aria-pressed="true"
+      title="CONSPECTUS DE SMITH — Enciende y apaga las capas del Conspectus Terminorum de Helmer Smith (1949). Un lema puede traer varias: Smith reparte algunos términos por sus epígrafes, y kicca sale seis veces con seis sentidos.">CONSP</button>
+    <span class="idioma" role="group" aria-label="Idioma de las glosas">
+      <button class="icon-btn" id="b-es" aria-pressed="true"
+        title="ESPAÑOL — El español de Nandisena y el de la lista normativa son los firmados; el de las entradas del Conspectus es propuesta del traductor. El francés de Smith se enseña siempre: es la única fuente literal que la página tiene de él.">ES</button>
+      <button class="icon-btn" id="b-en" aria-pressed="false"
+        title="INGLÉS — Enseña el inglés DONDE LO HAY y el español donde no. Las 649 entradas de Nandisena no tienen inglés, y el de Smith es propuesta del traductor, no terminología adjudicada por el IEBH. El rótulo «es» o «en» de cada línea dice cuál se está leyendo.">EN</button>
+    </span>
+    <button class="icon-btn" id="b-marcas" aria-pressed="false"
+      title="SÓLO LO MARCADO — Deja a la vista las entradas con «difiere de la norma», «por cotejar» o «errata del impreso»: lo que está pendiente de decidir sobre la lectura del impreso.">⚑</button>
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice" aria-expanded="true"
+      title="Aparta el índice de la izquierda y el texto ocupa su sitio. Vuelve con el mismo botón.">☰</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
-    <span class="count" id="count"></span>
+    <span class="count" id="count" title="Cuántas entradas quedan a la vista con lo que hay filtrado ahora mismo."></span>
   </div>
 </div>
 
 <div class="wrap tabs-wrap">
   <div class="tabs" role="tablist">
-    <button role="tab" id="tab-alfa" aria-selected="true" data-tab="alfa" title="Las dos obras y la lista normativa en un solo orden alfabético, una ficha por lema">Alfabético · las tres fuentes <span id="n-alfa"></span></button>
-    <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus" title="El Conspectus como Smith lo ordenó: por materias">Por materias · Smith <span id="n-conspectus"></span></button>
-    <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo" title="La lista interna del repositorio">Normativos <span id="n-normativo"></span></button>
+    <button role="tab" id="tab-alfa" aria-selected="true" data-tab="alfa"
+      title="ALFABÉTICO — Las dos obras y la lista normativa en un solo orden alfabético pāḷi, con UNA FICHA POR LEMA: dentro van, por este orden, lo que fija la lista normativa, el español firmado de Nandisena y los sentidos de Smith, cada uno con su epígrafe y su página. Es la vista que permite ver las dos obras sobre la misma palabra.">Alfabético · las tres fuentes <span id="n-alfa"></span></button>
+    <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus"
+      title="POR MATERIAS — El Conspectus Terminorum en el orden en que Helmer Smith lo dispuso, que es lo que lo hace un Conspectus: fonética, verbo, nombre, invariables, sintaxis, semántica e instrumental filológico. El índice de la izquierda pasa a ser su plan.">Por materias · Smith <span id="n-conspectus"></span></button>
+    <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo"
+      title="NORMATIVOS — La lista interna de este repositorio (comun/glosario.md): qué palabra castellana se ha fijado para cada término al ir traduciendo, y por qué. No es obra de nadie, y manda sobre cualquier propuesta de esta página.">Normativos <span id="n-normativo"></span></button>
   </div>
 </div>
 
@@ -402,9 +439,6 @@ footer code{font-family:var(--mono);font-size:11.5px}
   paréntesis. <b>Son editoriales, no de Smith</b>, y se cambian en
   <code>recursos/glosario/conspectus.json</code> sin tocar ningún dato.</p>
 
-  <h3>Cómo se regenera</h3>
-  <p><code>python3 herramientas/extraer_glosario_nandisena.py &lt;pdf&gt;</code><br>
-  <code>python3 herramientas/generar_glosario.py</code></p>
   <p class="fijado" id="vfoot"></p>
   </details>
 
@@ -420,7 +454,24 @@ const DATA = /*__DATOS__*/{}/*__FIN__*/;
 
 const $ = s => document.querySelector(s);
 const out = $('#out');
-let tab = 'alfa', verFR = true, verEN = true, soloMarcas = false, q = '';
+/* El francés ya no se puede apagar, y por eso no tiene botón: NO es una
+   traducción más, es la glosa de Smith tal como está impresa —la única
+   fuente literal que esta página tiene del Conspectus—. El español y el
+   inglés de esas entradas son propuesta del traductor; esconder el
+   original y dejar la propuesta sería enseñar lo menos firme.
+
+   ES y EN no se suman: se turnan. Apiladas, las tres líneas hacían de
+   cada ficha un bloque que había que leer entero para encontrar la que
+   uno buscaba. Ahora se lee en un idioma.
+
+   Con una salvedad que importa, y es la razón de que EN no esconda sin
+   más el español: las 649 entradas de Nandisena NO TIENEN INGLÉS —su
+   español es el firmado, y es lo mejor que hay en la página—, y de los
+   1.878 términos de Smith el inglés es propuesta sin adjudicar. De modo
+   que en modo EN se enseña el inglés DONDE LO HAY y el español donde no,
+   y el rótulo «es» de la propia línea dice cuál se está leyendo. Es lo
+   que ya hace /recursos/paradigmas/ con su prosa sin adjudicar. */
+let tab = 'alfa', idioma = 'es', soloMarcas = false, q = '';
 /* En vez de partir la página en una pestaña por obra —que devolvería el
    problema que la vista alfabética resuelve, leer una obra sin la otra al
    lado—, las dos capas se apagan y se encienden sobre la MISMA ficha. Se
@@ -476,6 +527,15 @@ function casa(t){
   return sinDia(campos).includes(sinDia(q));
 }
 
+
+/* La línea de sentido, según el idioma. Devuelve '' si no hay ninguna. */
+function sentido(t){
+  if (idioma === 'en' && t.en) return '<div class="en">' + resalta(t.en) + '</div>';
+  if (t.es) return '<div class="es">' + resalta(t.es) + '</div>';
+  if (t.en) return '<div class="en">' + resalta(t.en) + '</div>';
+  return '';
+}
+
 /* ---------- pintar ---------- */
 function ficha(t, tipo){
   const esNorma = tipo === 'normativo', esNand = tipo === 'nandisena';
@@ -493,12 +553,11 @@ function ficha(t, tipo){
   const refs = (t.refs && t.refs.length)
     ? '<span class="var">' + t.refs.map(escapa).join(' · ') + '</span>' : '';
   const glosas =
-    (!esNorma && !esNand && verFR && t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
+    (!esNorma && !esNand && t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
     (t.remite_a ? '<div class="es">v. <i>' + escapa(t.remite_a) + '</i></div>' : '') +
-    (t.es ? '<div class="es">' + resalta(t.es) + '</div>' : '') +
+    sentido(t) +
     (esNand && !t.es && !t.remite_a
-       ? '<div class="es" style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</div>' : '') +
-    (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '');
+       ? '<div class="es" style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</div>' : '');
   // El puente: cuando un término del Conspectus tiene entrada en el Glosario,
   // se enseña el español de Nandisena junto al francés de Smith. Es el caso
   // que hace útil tener las dos obras en una página.
@@ -540,24 +599,72 @@ function casaGrupo(gr){
 function marcadoGrupo(gr){
   return miembros(gr).some(t => t.conflicto || t.duda || t.errata);
 }
+/* El rótulo de cada capa era una línea entera en versales que repetía lo
+   que la columna de la izquierda ya dice —«Glosario», «Conspectus»—, y a
+   una ficha con seis sentidos de Smith le metía seis líneas de ruido. Se
+   reduce a una FICHA de una o dos palabras, y lo que decía la línea entera
+   —obra, epígrafe, sección y página— se lee al pasar por encima, aquí y en
+   el nombre de la obra que va bajo el lema. */
+function marca(clase, texto, tip){
+  return '<span class="capa-tag ' + clase + '" title="' + escapa(tip) + '">' +
+    escapa(texto) + '</span>';
+}
+/* ---------- enlaces entre fichas ----------
+   Sólo se enlaza lo que viene en un CAMPO, no lo que aparece suelto en la
+   prosa de una nota: adivinar qué palabra de una nota es un término y a qué
+   ficha apunta produciría enlaces falsos, y aquí un enlace falso es una
+   afirmación falsa. Se enlazan, pues, el «v.» de Nandisena (remite_a), las
+   variantes que Smith imprime entre paréntesis, y el «véase también» entre
+   grafías vecinas. El globo adelanta la glosa de destino. */
+const clave = s => String(s == null ? '' : s).normalize('NFC').toLowerCase()
+  .replace(/[^0-9a-zāīūṅñṭḍṇḷṃ]/g, '');
+const IDX = new Map();
+for (const gr of DATA.agrupado){
+  const nombres = gr.gr ? gr.gr.map(x => x[0]) : [gr.p];
+  for (const nom of nombres){
+    const k = clave(nom);
+    if (k && !IDX.has(k)) IDX.set(k, gr);
+  }
+}
+function glosaBreve(gr){
+  const m = miembros(gr);
+  for (const t of m) if (t.es) return t.es;
+  for (const t of m) if (t.fr) return t.fr;
+  for (const t of m) if (t.en) return t.en;
+  return '';
+}
+function enlaceTermino(nom, etiqueta){
+  const gr = IDX.get(clave(nom));
+  const txt = escapa(etiqueta == null ? nom : etiqueta);
+  if (!gr) return txt;
+  const g = glosaBreve(gr);
+  const tip = gr.p + (g ? ' — ' + g : '') + ' · Ir a su ficha.';
+  return '<a class="xref" href="#g-' + escapa(gr.id) + '" data-xref="' +
+    escapa(gr.id) + '" title="' + escapa(tip.slice(0, 400)) + '">' + txt + '</a>';
+}
+
 function capaNorma(t){
   const notas = [t.nota, t.conflicto].filter(Boolean).map(escapa).join(' ');
-  return '<div class="capa capa-norma"><span class="capa-tit">Español fijado · ' +
-    'comun/glosario.md' + (t.fijado_en ? ' · ' + escapa(t.fijado_en) : '') + '</span>' +
-    '<div class="gl">' + (t.es ? '<div class="es">' + resalta(t.es) + '</div>' : '') +
-      (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '') + '</div>' +
+  const tip = 'Lista normativa del repositorio (comun/glosario.md): el español '
+    + 'fijado para este término al ir traduciendo. Manda sobre cualquier propuesta '
+    + 'de esta página.' + (t.fijado_en ? ' Fijado en ' + t.fijado_en + '.' : '');
+  return '<div class="capa capa-norma">' +
+    '<div class="gl">' + marca('tag-norma', 'norma', tip) + sentido(t) + '</div>' +
     (notas ? '<p class="nota">' + notas + '</p>' : '') + '</div>';
 }
 function capaNand(t){
   const refs = (t.refs && t.refs.length)
     ? ' <span class="fijado">' + t.refs.map(escapa).join(' · ') + '</span>' : '';
   const cuerpo = t.es ? resalta(t.es)
-    : t.remite_a ? 'v. <i>' + escapa(t.remite_a) + '</i>'
+    : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
     : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
-  return '<div class="capa capa-nand"><span class="capa-tit">Glosario de Nandisena · p. ' +
-    escapa(String(t.pagina)) + (t.homonimo ? ' · ' + escapa(t.homonimo) : '') + '</span>' +
-    '<div class="gl"><div class="es">' + cuerpo + refs + '</div>' +
-      (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '') + '</div></div>';
+  const tip = 'Glosario de términos gramaticales de la lengua pali, de Bhikkhu '
+    + 'Nandisena (IEBH, 2013), p. ' + t.pagina
+    + (t.homonimo ? ', homónimo ' + t.homonimo : '')
+    + '. Su español es el firmado y se reproduce literalmente.';
+  return '<div class="capa capa-nand">' +
+    '<div class="gl">' + marca('tag-nand', 'Glosario', tip) +
+    '<div class="es">' + cuerpo + refs + '</div></div></div>';
 }
 function capaSmith(t){
   const marcas =
@@ -570,22 +677,44 @@ function capaSmith(t){
     .filter(Boolean).map(escapa).join(' ');
   const vars = (t.variantes && t.variantes.length)
     ? '<div class="es" style="color:var(--soot)">también: <i>' +
-      t.variantes.map(escapa).join('</i>, <i>') + '</i></div>' : '';
+      t.variantes.map(v => enlaceTermino(v)).join('</i>, <i>') + '</i></div>' : '';
   const sec = DATA.secciones[t.epigrafe.split('.').slice(0,2).join('.')] || '';
-  return '<div class="capa capa-smith"><span class="capa-tit"><b>' + escapa(t.epigrafe) +
-    '</b> ' + escapa(sec) + ' · Smith p. ' + escapa(String(t.pagina)) + '</span>' +
-    '<div class="gl">' +
-      (verFR && t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
-      (t.es ? '<div class="es">' + resalta(t.es) + '</div>' : '') +
-      (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '') + vars +
+  // El epígrafe se queda a la vista, y no es adorno: es lo único que
+  // distingue los seis sentidos que Smith le da a «kicca». Lo demás
+  // —sección y página— va al globo.
+  const tip = 'Conspectus Terminorum de Helmer Smith (1949), epígrafe '
+    + t.epigrafe + (sec ? ' · ' + sec : '') + ' · p. ' + t.pagina
+    + '. El francés es suyo y va literal; el español y el inglés son '
+    + 'propuesta del traductor.';
+  return '<div class="capa capa-smith">' +
+    '<div class="gl">' + marca('tag-smith', t.epigrafe, tip) +
+      (t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
+      sentido(t) + vars +
     '</div>' + (marcas || notas ? '<p class="nota">' + marcas + notas + '</p>' : '') + '</div>';
 }
 function fichaGrupo(gr){
   const nC = (gr.c || []).length, nN = (gr.n || []).length, nG = (gr.g || []).length;
+  /* El nombre de cada obra, bajo el lema y en el color de acento, con el
+     globo que dice qué es y por dónde anda: páginas de Nandisena, epígrafes
+     y páginas de Smith. Así el rótulo no hace falta encima de cada glosa. */
   const obras = [];
-  if (nG) obras.push('norma');
-  if (nN) obras.push('Glosario' + (nN > 1 ? ' ×' + nN : ''));
-  if (nC) obras.push('Conspectus' + (nC > 1 ? ' ×' + nC : ''));
+  if (nG) obras.push('<span title="' + escapa(
+      'Lista normativa del repositorio (comun/glosario.md): el español fijado ' +
+      'para este término al ir traduciendo. No es obra de nadie, y manda sobre ' +
+      'cualquier propuesta de esta página.') + '">norma</span>');
+  if (nN) obras.push('<span title="' + escapa(
+      'Glosario de términos gramaticales de la lengua pali, de Bhikkhu Nandisena ' +
+      '(IEBH, 2013). Su español es el firmado y va literal. ' +
+      (nN === 1 ? 'Entrada en la p. ' : nN + ' entradas, en las pp. ') +
+      (gr.n || []).map(i => DATA.nandisena[i].pagina).join(', ') + '.') + '">Glosario' +
+      (nN > 1 ? ' ×' + nN : '') + '</span>');
+  if (nC) obras.push('<span title="' + escapa(
+      'Conspectus Terminorum de Helmer Smith (Saddanīti IV, 1949). Su francés va ' +
+      'literal; el español y el inglés son propuesta del traductor. ' +
+      (nC === 1 ? 'Epígrafe ' : nC + ' sentidos, en los epígrafes ') +
+      (gr.c || []).map(i => DATA.conspectus[i].epigrafe + ' (p. ' +
+        DATA.conspectus[i].pagina + ')').join(', ') + '.') + '">Conspectus' +
+      (nC > 1 ? ' ×' + nC : '') + '</span>');
   const grafias = gr.gr
     ? '<span class="grafias">' + gr.gr.map(g =>
         '<i>' + escapa(g[0]) + '</i> <em>' + escapa(g[1]) + '</em>').join(' · ') + '</span>'
@@ -594,10 +723,18 @@ function fichaGrupo(gr){
     (gr.g || []).map(i => capaNorma(DATA.normativo[i])).join('') +
     (verNand  ? (gr.n || []).map(i => capaNand(DATA.nandisena[i])).join('') : '') +
     (verSmith ? (gr.c || []).map(i => capaSmith(DATA.conspectus[i])).join('') : '');
-  return '<div class="t">' +
+  /* Las grafías vecinas —niggahita / niggahīta, pada / pāda— van
+     enlazadas, no fundidas: decir que son la misma palabra es una
+     decisión editorial, y ésa no la toma el generador. */
+  const vease = (gr.v && gr.v.length)
+    ? '<p class="vease">véase también ' + gr.v.map(id => {
+        const o = DATA.agrupado.find(x => x.id === id);
+        return o ? enlaceTermino(o.p) : '';
+      }).filter(Boolean).join(', ') + '</p>' : '';
+  return '<div class="t" id="g-' + escapa(gr.id) + '">' +
     '<div class="lema">' + resalta(gr.p) +
       '<span class="obras">' + obras.join(' · ') + '</span>' + grafias + '</div>' +
-    '<div>' + capas + '</div></div>';
+    '<div>' + capas + vease + '</div></div>';
 }
 // Con una obra apagada, los lemas que sólo ella trae no se quedan como
 // fichas huecas: salen de la lista, y la cuenta lo dice.
@@ -656,8 +793,10 @@ function porInicial(lista, comoFicha){
   $('#secs').innerHTML = ALFABETO.map(l => {
     const n = (grupos.get(l) || []).length;
     const t = n ? l + ': ' + n + (n === 1 ? ' lema' : ' lemas') + ' a la vista'
-                : (SIN_INICIAL.includes(l) ? 'Ninguna palabra pāḷi empieza por ' + l
-                                           : 'Nada por ' + l + ' en lo que hay filtrado');
+                : (SIN_INICIAL.includes(l)
+                     ? 'Ninguna palabra pāḷi empieza por ' + l + '; sólo aparece como '
+                       + 'nombre de la letra (' + l + 'akāra), y aquí no hay ninguno a la vista'
+                     : 'Nada por ' + l + ' en lo que hay filtrado');
     return '<a href="#' + idDe(l) + '" data-ir="' + idDe(l) + '"' +
            (n ? '' : ' class="vacia" aria-disabled="true"') +
            ' title="' + escapa(t) + '">' + escapa(l) + '<em>' + n + '</em></a>';
@@ -735,7 +874,8 @@ const NOTA_ABC = 'Las letras siguen el orden del alfabeto pāḷi, no el latino:
   'Los dígrafos aspirados cuentan como una letra, de modo que «kh» no va bajo ' +
   '«k». El número es cuántos lemas empiezan por esa letra en lo que hay a la ' +
   'vista; una letra en trazo discontinuo no tiene ninguno. Ninguna palabra ' +
-  'pāḷi empieza por ṅ, ṇ ni ḷ.';
+  'pāḷi empieza por ṅ, ṇ ni ḷ: si aquí tienen entrada es porque el glosario ' +
+  'nombra las letras mismas —ṅakāra, ṇakāra, ḷakāra—.';
 function rotulaBarra(){
   $('#secs-tit').textContent = tab === 'conspectus' ? 'El plan de Smith' : 'Por inicial';
   $('#sb-nota').textContent = tab === 'conspectus' ? DATA.plan : NOTA_ABC;
@@ -759,9 +899,17 @@ function alterna(btn, set){
 }
 alterna($('#b-nand'), v => verNand = v);
 alterna($('#b-smith'), v => verSmith = v);
-alterna($('#b-fr'), v => verFR = v);
-alterna($('#b-en'), v => verEN = v);
 alterna($('#b-marcas'), v => soloMarcas = v);
+
+/* ES y EN se turnan, no se suman: pulsar uno apaga el otro. */
+function ponIdioma(v){
+  idioma = v;
+  $('#b-es').setAttribute('aria-pressed', v === 'es');
+  $('#b-en').setAttribute('aria-pressed', v === 'en');
+  pinta();
+}
+$('#b-es').onclick = () => ponIdioma('es');
+$('#b-en').onclick = () => ponIdioma('en');
 
 const plegar = v => document.body.classList.toggle('sin-barra', v);
 $('#burger').onclick = () => {
@@ -783,6 +931,33 @@ function saltarA(el){
   const suave = cerca && !mq('(prefers-reduced-motion: reduce)');
   el.scrollIntoView({block:'start', behavior: suave ? 'smooth' : 'instant'});
 }
+/* Un enlace entre fichas puede apuntar a una que el buscador o un filtro
+   tengan escondida. En ese caso se limpia lo que la esconde y se vuelve a
+   pintar antes de saltar, que es lo que hace /recursos/paradigmas/. */
+out.addEventListener('click', e => {
+  const a = e.target.closest('a[data-xref]');
+  if (!a) return;
+  e.preventDefault();
+  const id = 'g-' + a.dataset.xref;
+  if (!document.getElementById(id)){
+    if (tab !== 'alfa'){
+      tab = 'alfa';
+      document.querySelectorAll('.tabs button').forEach(
+        x => x.setAttribute('aria-selected', x.dataset.tab === 'alfa'));
+      $('#b-nand').disabled = false; $('#b-smith').disabled = false;
+      rotulaBarra();
+    }
+    q = ''; $('#q').value = '';
+    if (soloMarcas){ soloMarcas = false; $('#b-marcas').setAttribute('aria-pressed', false); }
+    if (!verNand){ verNand = true; $('#b-nand').setAttribute('aria-pressed', true); }
+    if (!verSmith){ verSmith = true; $('#b-smith').setAttribute('aria-pressed', true); }
+    pinta();
+  }
+  const el = document.getElementById(id);
+  if (el){ saltarA(el); el.classList.add('destacada');
+           setTimeout(() => el.classList.remove('destacada'), 1600); }
+});
+
 $('#secs').addEventListener('click', e => {
   const a = e.target.closest('a[data-ir]');
   if (!a) return;
