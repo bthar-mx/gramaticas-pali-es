@@ -274,20 +274,32 @@ def main():
 
     # ---- el inglés del Glosario de Nandisena ---------------------------
     # recursos/glosario/ingles.json. Se comprueba siempre; se INYECTA sólo
-    # si está adjudicado, porque son palabras del IEBH. Hasta entonces el
-    # modo inglés de la página enseña el español y lo dice.
+    # lo adjudicado, porque son palabras del IEBH. La adjudicación va POR
+    # TANDA (sesión 57): cada entrada dice «tanda»: N, y se publica si
+    # ing["tanda"][N]["adjudicado"] es true. Una entrada sin «tanda» sigue
+    # el «adjudicado» general del archivo. Las demás quedan redactadas y
+    # sin publicar: el modo inglés enseña ahí el español y lo dice.
     ing_nand = {"adjudicado": False, "entradas": {}}
     nand_en_total = 0
+    nand_en_adjudicadas = 0
     if os.path.exists(INGLES_NANDISENA) and nand["entradas"]:
         ing_nand = json.load(open(INGLES_NANDISENA, encoding="utf-8"))
         f2, a2, borr = verificar_ingles_nandisena(nand["entradas"], ing_nand)
         fallos += f2
         avisos += a2
         nand_en_total = len(borr)
-        if ing_nand.get("adjudicado"):
-            for clave, e in zip(claves_nandisena(nand["entradas"]), nand["entradas"]):
-                if clave in borr:
-                    e["en"] = borr[clave]["en"]
+        tandas = ing_nand.get("tanda", {})
+
+        def adjudicada(b):
+            t = b.get("tanda")
+            if t is None:
+                return bool(ing_nand.get("adjudicado"))
+            return bool(tandas.get(str(t), {}).get("adjudicado"))
+
+        for clave, e in zip(claves_nandisena(nand["entradas"]), nand["entradas"]):
+            if clave in borr and adjudicada(borr[clave]):
+                e["en"] = borr[clave]["en"]
+                nand_en_adjudicadas += 1
 
     if fallos:
         print("No se publica. {0} fallo(s):".format(len(fallos)))
@@ -433,6 +445,8 @@ def main():
             "adjudicado_por": ing_nand.get("adjudicado_por"),
             "fecha": ing_nand.get("fecha"),
             "redactadas": nand_en_total,
+            "adjudicadas": nand_en_adjudicadas,
+            "total": len(nand["entradas"]),
         },
         "agrupado": agrupado,
         "conspectus": conspectus,
@@ -484,17 +498,13 @@ def main():
     if not salida["ingles_adjudicado"]:
         print("  el inglés de las entradas normativas va SIN adjudicar: la "
               "página lo advierte")
-    if nand["entradas"]:
-        if nand_en_total and not ing_nand.get("adjudicado"):
-            print("  inglés del Glosario de Nandisena: {0} de {1} entradas "
-                  "redactadas, SIN adjudicar: comprobadas y no publicadas "
-                  "(docs/glosario/ingles-por-adjudicar.md)".format(
-                      nand_en_total, len(nand["entradas"])))
-        elif nand_en_total:
-            print("  inglés del Glosario de Nandisena: {0} de {1} entradas, "
-                  "adjudicado por {2} ({3})".format(
-                      nand_en_total, len(nand["entradas"]),
-                      ing_nand.get("adjudicado_por"), ing_nand.get("fecha")))
+    if nand["entradas"] and nand_en_total:
+        print("  inglés del Glosario de Nandisena: {0} de {1} entradas redactadas; "
+              "{2} PUBLICADAS (tandas adjudicadas por {3}) y {4} sin adjudicar, "
+              "comprobadas y no publicadas (docs/glosario/ingles-por-adjudicar.md)"
+              .format(nand_en_total, len(nand["entradas"]), nand_en_adjudicadas,
+                      ing_nand.get("adjudicado_por") or "—",
+                      nand_en_total - nand_en_adjudicadas))
     return 0
 
 

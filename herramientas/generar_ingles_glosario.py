@@ -78,23 +78,31 @@ def main():
              "`recursos/glosario/ingles.json` (el borrador). No se edita a mano: se "
              "corrige el JSON y se vuelve a escribir.*")
     L.append("")
-    if ing.get("adjudicado"):
-        L.append("**Adjudicado por {0} el {1}.** El inglés de esta columna es ya el que "
-                 "publica la página.".format(ing.get("adjudicado_por"), ing.get("fecha")))
-    else:
-        L.append("**SIN ADJUDICAR.** `generar_glosario.py` comprueba estas entradas contra "
-                 "el español —clave, ejemplos citados, NFC— pero no las inyecta: el modo "
-                 "inglés de la página enseña el español y lo dice. Firmarlo es poner "
-                 "`\"adjudicado\": true` en `ingles.json`, con `adjudicado_por` y `fecha`.")
+    # La adjudicación va POR TANDA (sesión 57): lo que se publica es lo
+    # que el IEBH ha firmado tanda a tanda; lo demás se comprueba y espera.
+    firmadas = sorted(n for n, t in tandas.items() if t.get("adjudicado"))
+    pendientes = sorted(n for n, t in tandas.items() if not t.get("adjudicado"))
+    if firmadas:
+        L.append("**Adjudicadas por el IEBH las tandas {0}.** El inglés de esas entradas es "
+                 "ya el que publica la página.".format(", ".join(firmadas)))
+    if pendientes:
+        L.append("**SIN ADJUDICAR las tandas {0}.** `generar_glosario.py` comprueba esas "
+                 "entradas contra el español —clave, ejemplos citados, NFC— pero no las "
+                 "inyecta: el modo inglés de la página enseña ahí el español. Firmar una "
+                 "tanda es poner `\"adjudicado\": true` en su entrada de `tanda` en "
+                 "`ingles.json`, con `adjudicado_por` y `fecha`.".format(", ".join(pendientes)))
     L.append("")
     L.append("**{0} de {1} entradas redactadas** ({2} traducibles; las {3} restantes "
              "son remisiones o no tienen definición en el impreso).".format(
                  hechas, total, traducibles, total - traducibles))
     L.append("")
     for n, t in sorted(tandas.items()):
-        L.append("- Tanda {0}: {1} → {2} (pp. {3}), {4} entradas, {5}.".format(
+        estado = ("adjudicada por {0} el {1}".format(t.get("adjudicado_por"), t.get("fecha"))
+                  if t.get("adjudicado") else "SIN ADJUDICAR")
+        L.append("- Tanda {0}: {1} → {2} (pp. {3}), {4} entradas, {5} — **{6}**{7}".format(
             n, t.get("desde"), t.get("hasta"), t.get("paginas"),
-            t.get("entradas"), t.get("redactada")))
+            t.get("entradas"), t.get("redactada"), estado,
+            ". " + t["veredicto"] if t.get("veredicto") else "."))
     L.append("")
     L.append("## 1. La prelación de fuentes, y cuántas entradas salen de cada una")
     L.append("")
@@ -125,8 +133,8 @@ def main():
     L.append("La columna «término» es la palabra inglesa del lema y de dónde sale. "
              "Las entradas con **nota** piden decisión y se repiten en el §3.")
     L.append("")
-    L.append("| # | lema (p.) | español (manda) | inglés (borrador) | término · fuente |")
-    L.append("| ---: | --- | --- | --- | --- |")
+    L.append("| # | tanda | lema (p.) | español (manda) | inglés | término · fuente |")
+    L.append("| ---: | :---: | --- | --- | --- | --- |")
     notas = []
     i = 0
     for clave, e in zip(claves, entradas):
@@ -141,14 +149,19 @@ def main():
         term = celda(b.get("termino") or "")
         fuente = celda(b.get("fuente") or "")
         marca = " ⚑" if b.get("nota") else ""
-        L.append("| {0} | {1} | {2} | {3} | {4} — {5}{6} |".format(
-            i, lema_celda, celda(e.get("es")), celda(b.get("en")),
+        nt = b.get("tanda")
+        firmada = bool(tandas.get(str(nt), {}).get("adjudicado")) if nt is not None else bool(ing.get("adjudicado"))
+        L.append("| {0} | {1} | {2} | {3} | {4} | {5} — {6}{7} |".format(
+            i, "{0} {1}".format(nt if nt is not None else "—", "✓" if firmada else "…"),
+            lema_celda, celda(e.get("es")), celda(b.get("en")),
             term, fuente, marca))
         if b.get("nota"):
-            notas.append((i, clave, b["nota"]))
+            notas.append((i, clave, b["nota"], firmada))
     L.append("")
     L.append("## 3. Lo que pide decisión")
     L.append("")
+    abiertas = [n for n in notas if not n[3]]
+    cerradas = [n for n in notas if n[3]]
     if not notas:
         L.append("Ninguna entrada lleva nota.")
     else:
@@ -157,8 +170,17 @@ def main():
                  "sigue siempre al Glosario**; lo que se decide aquí es si el inglés "
                  "publicado debe apartarse de él, y en qué.")
         L.append("")
-        for k, (i, clave, nota) in enumerate(notas, 1):
+        if not abiertas:
+            L.append("Ninguna nota pendiente: las tandas redactadas están adjudicadas.")
+            L.append("")
+        for k, (i, clave, nota, _) in enumerate(abiertas, 1):
             L.append("{0}. **{1}** (#{2}): {3}".format(k, clave, i, nota))
+        if cerradas:
+            L.append("")
+            L.append("### Notas de tandas ya adjudicadas (resueltas con la tanda; quedan de constancia)")
+            L.append("")
+            for k, (i, clave, nota, _) in enumerate(cerradas, 1):
+                L.append("{0}. **{1}** (#{2}): {3}".format(k, clave, i, nota))
     L.append("")
     L.append("## 4. Lo que falta")
     L.append("")

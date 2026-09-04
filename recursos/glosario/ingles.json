@@ -1,5 +1,5 @@
 {
- "_nota": "El inglés del «Glosario de términos gramaticales de la lengua pali» de Bhikkhu Nandisena (recursos/glosario/nandisena.json). El español manda: es el suyo, y el inglés de cada entrada lo traduce entero, definición y ejemplos, sin añadir ni quitar. NO llega a la página mientras «adjudicado» sea false: generar_glosario.py lo comprueba entrada por entrada contra el español, pero no lo inyecta. Firmarlo es poner adjudicado=true con adjudicado_por y fecha. Cotejo lado a lado, con la fuente de cada término, en docs/glosario/ingles-por-adjudicar.md.",
+ "_nota": "El inglés del «Glosario de términos gramaticales de la lengua pali» de Bhikkhu Nandisena (recursos/glosario/nandisena.json). El español manda: es el suyo, y el inglés de cada entrada lo traduce entero, definición y ejemplos, sin añadir ni quitar. NO llega a la página mientras «adjudicado» sea false: generar_glosario.py lo comprueba entrada por entrada contra el español, pero no lo inyecta. La adjudicación va POR TANDA: cada tanda lleva su «adjudicado», «adjudicado_por» y «fecha», y cada entrada dice de qué tanda es; generar_glosario.py inyecta sólo las entradas de tandas adjudicadas. El «adjudicado» de arriba resume: true si alguna tanda lo está. Cotejo lado a lado, con la fuente de cada término, en docs/glosario/ingles-por-adjudicar.md.",
  "_clave": "La clave es el lema tal como lo imprime el Glosario. Cuando el mismo lema tiene más de una entrada —los homónimos «adhikaraṇa 1 / 2» y el «adhikāra» que sale dos veces sin número— la clave lleva «|N», con N el ordinal de aparición en nandisena.json (1, 2…). Las remisiones («akamma → v. akammaka») no tienen entrada aquí: no hay nada que traducir.",
  "_prelacion": [
   "N-EN: el inglés del propio Nandisena — el Sandhi-kappa inglés (kaccayana/01-sandhi-kappa.en.md y el memo docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md §2), su apéndice sobre «ca», y sus traducciones inglesas de Taddhita, Ākhyāta, Kibbidhāna y Uṇādi (docs/5 - …, 6 - …, 7- …, 8 - …).",
@@ -8,349 +8,841 @@
   "traducción: cuando ninguna de las tres da el término, se traduce el español de Nandisena y se dice."
  ],
  "_campos": "«en» es la entrada entera en inglés. «termino» es la palabra o palabras inglesas del término principal, y «fuente» de dónde sale, con su lugar. «nota» avisa de lo que IEBH tiene que decidir: cuando una fuente de más autoridad dice otra cosa que el español del Glosario, o cuando el término choca con lo fijado en comun/glosario.md o en recursos/glosario/glosario-ingles.json.",
- "adjudicado": false,
- "adjudicado_por": null,
- "fecha": null,
- "tanda": {"1": {"desde": "akathitakamma", "hasta": "apaccattha", "paginas": "2-4", "entradas": 65, "redactada": "2026-09-04, sesión 56"}},
+ "adjudicado": true,
+ "adjudicado_por": "IEBH",
+ "fecha": "2026-09-04",
+ "tanda": {
+  "1": {
+   "desde": "akathitakamma",
+   "hasta": "apaccattha",
+   "paginas": "2-4",
+   "entradas": 65,
+   "redactada": "2026-09-04, sesión 56",
+   "adjudicado": true,
+   "adjudicado_por": "IEBH",
+   "fecha": "2026-09-04",
+   "veredicto": "Las 14 notas del §3 del cotejo, tal como estaban redactadas: se publica el borrador sin cambios (sesión 57)."
+  },
+  "2": {
+   "desde": "apaccattha-taddhita",
+   "hasta": "itarītarayoga",
+   "paginas": "4-7",
+   "entradas": 64,
+   "redactada": "2026-09-04, sesión 57",
+   "adjudicado": false,
+   "adjudicado_por": null,
+   "fecha": null
+  }
+ },
  "entradas": {
   "akathitakamma": {
    "en": "lit., unspoken object; indirect object. It refers to the secondary object when the verb has two objects (dvikammaka). E.g., in the sentence \"Bhagavā bhikkhū etad avoca\", the Blessed One said this to the bhikkhus, \"bhikkhū\" is called akathitakamma, indirect object, and \"etad\", this, kathitakamma, direct object.",
    "termino": "indirect object",
    "fuente": "traducción",
-   "nota": "«el Sublime» se da como «the Blessed One», que es el inglés del propio Nandisena para Bhagavā (Ākhyāta, §415 y passim; invocación del Sandhi inglés)."
+   "nota": "«el Sublime» se da como «the Blessed One», que es el inglés del propio Nandisena para Bhagavā (Ākhyāta, §415 y passim; invocación del Sandhi inglés).",
+   "tanda": 1
   },
   "akammaka": {
    "en": "intransitive; without object; kamma in the ancient grammars is used to refer to the object of the verb. See also sakammaka; dvikammaka.",
    "termino": "intransitive",
-   "fuente": "Ñāṇamoli, pp. 8 y 13 («intransitive», «intransitive verb»)"
+   "fuente": "Ñāṇamoli, pp. 8 y 13 («intransitive», «intransitive verb»)",
+   "tanda": 1
   },
   "akāra": {
    "en": "the letter 'a'.",
    "termino": "the letter 'a'",
-   "fuente": "N-EN, Taddhita §405 («‘A’ is the letter ‘a’ (akāro)»)"
+   "fuente": "N-EN, Taddhita §405 («‘A’ is the letter ‘a’ (akāro)»)",
+   "tanda": 1
   },
   "akkhara": {
    "en": "phoneme; letter; syllable. There are 41 letters in the Pāḷi alphabet. The vowels are 8: 'a', 'ā', 'i', 'ī', 'u' 'ū', 'e', 'o'. And the consonants 33: 'k', 'kh', 'g', 'gh', 'ṅ'; 'c', 'ch', 'j', 'jh', 'ñ'; 'ṭ', 'ṭh', 'ḍ', 'ḍh', 'ṇ'; 't', 'th', 'd', 'dh', 'n'; 'p', 'ph', 'b', 'bh', 'm'; 'y', 'r', 'l', 'v', 's', 'h', 'ḷ', 'ṃ'.",
    "termino": "letter",
-   "fuente": "N-EN, Sandhi §1-2 («letters»; memo §2.1)"
+   "fuente": "N-EN, Sandhi §1-2 («letters»; memo §2.1)",
+   "tanda": 1
   },
   "akkhara-cintaka": {
    "en": "grammarian; lit., one who thinks letters.",
    "termino": "grammarian",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "akkhara-lopa": {
    "en": "elision of a letter.",
    "termino": "elision",
-   "fuente": "N-EN, Sandhi §12 («elision»); Ñāṇamoli p. 5 coincide"
+   "fuente": "N-EN, Sandhi §12 («elision»); Ñāṇamoli p. 5 coincide",
+   "tanda": 1
   },
   "akkhara-kosalla": {
    "en": "skillfulness with letters; mastery of letters.",
    "termino": "skillfulness with letters",
-   "fuente": "N-EN, Sandhi §1, glosa de «akkharakosallaṃ»"
+   "fuente": "N-EN, Sandhi §1, glosa de «akkharakosallaṃ»",
+   "tanda": 1
   },
   "akkharappayoga": {
    "en": "related to letters; example.",
    "termino": "related to letters",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "akkhara-vipatti": {
    "en": "misspelling; perversion of the meaning; error in the use of letters.",
    "termino": "misspelling",
    "fuente": "traducción del español del Glosario",
-   "nota": "N-EN, Sandhi §1, glosa «akkharavipattiyaṃ» como «deformity of letters». El Glosario español no dice eso («deletreo erróneo»), y aquí se sigue al Glosario; IEBH decide si el inglés debe alinear con el Sandhi inglés."
+   "nota": "N-EN, Sandhi §1, glosa «akkharavipattiyaṃ» como «deformity of letters». El Glosario español no dice eso («deletreo erróneo»), y aquí se sigue al Glosario; IEBH decide si el inglés debe alinear con el Sandhi inglés.",
+   "tanda": 1
   },
   "akkhara-vipallāsa": {
    "en": "permutation of letters.",
    "termino": "permutation of letters",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "akhinimīlana": {
    "en": "blink of an eye. The unit of measure of the short vowels, \"a\", \"i\", \"u\". See also accharāsaṅghāta.",
    "termino": "blink of an eye",
    "fuente": "traducción",
-   "nota": "El lema impreso es «akhinimīlana» y la remisión desde accharāsaṅghāta dice «akkhinimīlana». No se toca: es del impreso."
+   "nota": "El lema impreso es «akhinimīlana» y la remisión desde accharāsaṅghāta dice «akkhinimīlana». No se toca: es del impreso.",
+   "tanda": 1
   },
   "aghosa": {
    "en": "voiceless; voiceless (consonant). There are eleven voiceless consonants: 'k', 'kh'; 'c', 'ch'; 'ṭ', 'ṭh'; 't', 'th'; 'p', 'ph'; 's'. Cf. ghosa.",
    "termino": "voiceless",
    "fuente": "N-EN, Sandhi §9 («voiced / voiceless»; memo §2.1)",
-   "nota": "Ñāṇamoli p. 5 da «surd, unvoiced»; manda N-EN."
+   "nota": "Ñāṇamoli p. 5 da «surd, unvoiced»; manda N-EN.",
+   "tanda": 1
   },
   "accantasaṃyoga": {
    "en": "total connection of time or space. E.g., \"māsaṃ adhīte\", he studies for a whole month.",
    "termino": "total connection",
    "fuente": "traducción",
-   "nota": "Ñāṇamoli p. 13 da «direct governance (of acc. by transitive verb)», que es otra definición, no otra palabra. Se sigue al Glosario."
+   "nota": "Ñāṇamoli p. 13 da «direct governance (of acc. by transitive verb)», que es otra definición, no otra palabra. Se sigue al Glosario.",
+   "tanda": 1
   },
   "acchandānukkhaṇa": {
    "en": "lit., without protecting the metre; without regard to the metre.",
    "termino": "without regard to the metre",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "accharāsaṅghāta": {
    "en": "snap of the fingers. This is considered a unit of measure (mattā). See also akkhinimīlana.",
    "termino": "snap of the fingers",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "ajjatanī": {
    "en": "the aorist in the Pāḷi language; past. It is used to express (1) the past directly experienced (paccakkha) and (2) the past not directly experienced (appaccakkha). The past expressed by this tense runs from today backwards; hence the name \"ajjatanī\".",
    "termino": "aorist",
-   "fuente": "IEBH, recursos/verbo/ingles.json («Aorist (ajjatanī)», «The past directly experienced (paccakkha)», «The past not directly experienced (appaccakkha)»); Ñāṇamoli pp. 7 y 13 coincide"
+   "fuente": "IEBH, recursos/verbo/ingles.json («Aorist (ajjatanī)», «The past directly experienced (paccakkha)», «The past not directly experienced (appaccakkha)»); Ñāṇamoli pp. 7 y 13 coincide",
+   "tanda": 1
   },
   "ajjhesanā": {
    "en": "consent; permission. One of the uses of the imperative (pañcamī) and potential (sattamī) verb.",
    "termino": "consent; permission",
    "fuente": "traducción del español del Glosario",
-   "nota": "DUDA para IEBH: la página del verbo, ya adjudicada por el IEBH, da «Request (ajjhesanā)» / «Request, permission», y reserva «consent» para anumati. El Glosario español dice «consentimiento; permiso» para las dos. Se traduce lo que dice el Glosario; la discrepancia es de las fuentes, no de la traducción."
+   "nota": "DUDA para IEBH: la página del verbo, ya adjudicada por el IEBH, da «Request (ajjhesanā)» / «Request, permission», y reserva «consent» para anumati. El Glosario español dice «consentimiento; permiso» para las dos. Se traduce lo que dice el Glosario; la discrepancia es de las fuentes, no de la traducción.",
+   "tanda": 1
   },
   "aññattha": {
    "en": "lit., another meaning. One of the functions of the particle \"na\" when it forms a compound with another word. E.g., \"a-byākata\", undeclared.",
    "termino": "another meaning",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "aññapada": {
    "en": "lit., another word. Technical term used to refer to \"ya\", \"ta\", \"eta\" and \"ima\". These pronouns are used in the resolution (viggaha) of relative compounds (bahubbīhi). E.g., \"chinno hattho yassa so ti chinnahattho\", cut is the hand of this one, he is (a man with a) cut hand. In this example, \"yassa\" is called \"aññapada\" and it is used to resolve the compound.",
    "termino": "another word",
-   "fuente": "traducción; «relative compound» para bahubbīhi es de Ñāṇamoli pp. 11 y 17 y de glosario-ingles.json (propuesta)"
+   "fuente": "traducción; «relative compound» para bahubbīhi es de Ñāṇamoli pp. 11 y 17 y de glosario-ingles.json (propuesta)",
+   "tanda": 1
   },
   "aññapadattha-padhāna": {
    "en": "type of compound in which another word is predominant. It belongs to the group of relative compounds (bahubbīhi). See aññapada.",
    "termino": "compound in which another word is predominant",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "aḍḍhamattā": {
    "en": "half a unit of measure; half a mora. See mattā and accharāsaṅghāta.",
    "termino": "half a mora",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "atagguṇasaṃviññāṇa": {
    "en": "type of relative compound (bahubbīhi) in which what qualifies the meaning is not brought along when the meaning of the other word (aññapada) is brought. What qualifies the meaning is not included in the meaning of the other word. E.g., \"bahudhanaṃ ānaya\", bring (the man of) much wealth. Here, what qualifies, much wealth, is not brought when the man is brought. It is the opposite of tagguṇasaṃviññāṇa.",
    "termino": "(relative compound) in which the qualifier is not brought along",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "atidesa": {
    "en": "extension of meaning.",
    "termino": "extension of meaning",
-   "fuente": "Ñāṇamoli p. 13"
+   "fuente": "Ñāṇamoli p. 13",
+   "tanda": 1
   },
   "atippasaṅga": {
    "en": "over-application; over-use.",
    "termino": "over-application",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "atīta-kāla": {
    "en": "past tense; one of the verbal tenses. In the Rūpasiddhi it is mentioned as a synonym of the aorist tense (ajjatanī).",
    "termino": "past tense",
-   "fuente": "IEBH, recursos/verbo/ingles.json («Past (atīta)»); Ñāṇamoli p. 7 coincide"
+   "fuente": "IEBH, recursos/verbo/ingles.json («Past (atīta)»); Ñāṇamoli p. 7 coincide",
+   "tanda": 1
   },
   "attanopada": {
    "en": "middle or reflexive voice (lit. word for oneself); one of the two groups of verbal inflections (ākhyāta-vibhatti). The other group is called parassapada.",
    "termino": "middle or reflexive voice",
-   "fuente": "IEBH, recursos/verbo/ingles.json («Word for oneself; middle or reflexive voice (attanopada)»); N-EN Ākhyāta §407 escribe «word for itself»; Ñāṇamoli p. 8 coincide"
+   "fuente": "IEBH, recursos/verbo/ingles.json («Word for oneself; middle or reflexive voice (attanopada)»); N-EN Ākhyāta §407 escribe «word for itself»; Ñāṇamoli p. 8 coincide",
+   "tanda": 1
   },
   "attha": {
    "en": "meaning.",
    "termino": "meaning",
-   "fuente": "N-EN, passim («in this meaning», Taddhita §344)"
+   "fuente": "N-EN, passim («in this meaning», Taddhita §344)",
+   "tanda": 1
   },
   "atthantaraviññāpanatthaṃ": {
    "en": "in order to make known another meaning.",
    "termino": "in order to make known another meaning",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "attha-pūraṇa": {
    "en": "lit., that completes or fills the meaning; a class of particles (nipāta). This class of particles denotes a meaning that has already been denoted by another word (or words), but it becomes a little more explicit. E.g., when one says \"khattiyo brāhmaṇo vesso suddo\", warrior, brahmin, merchant and servant, without the particle \"ca\", and \"khattiyo ca brāhmaṇo ca vesso ca suddo ca\", both sentences have the same meaning, but the use of the particle \"ca\" makes the meaning a little more explicit. This type of particle may be associated with a given inflection (vibhattiyutta) or dissociated from inflection (avibhattiyutta). See also pūraṇattha and pada-pūraṇa.",
    "termino": "that completes the meaning",
-   "fuente": "traducción; «particle» para nipāta es N-EN, Sandhi §51 (memo §2.1)"
+   "fuente": "traducción; «particle» para nipāta es N-EN, Sandhi §51 (memo §2.1)",
+   "tanda": 1
   },
   "atthasambandha": {
    "en": "unity of meaning; connection of meaning.",
    "termino": "connection of meaning",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "atthyattha": {
    "en": "see atthyattha-taddhita",
    "termino": "—",
-   "fuente": "remisión"
+   "fuente": "remisión",
+   "tanda": 1
   },
   "atthyattha-taddhita": {
    "en": "secondary suffixes (taddhita) denoting possession (endowed with). These suffixes are secondary derivatives and belong to the category sāmañña-taddhita, general secondary derivative. The following suffixes belong to this category: ava, ala, ila, ika, ī, vī, ssī, vantu, mantu, a, tara, tama.",
    "termino": "secondary derivative (denoting possession)",
    "fuente": "N-EN, título del capítulo 5 («Secondary Derivative Chapter»); Ñāṇamoli p. 11 («general secondary derivative» para sāmaññataddhita, «denoting endowment, possession» para atthyattha)",
-   "nota": "glosario-ingles.json (propuesta sin adjudicar) da taddhita → «nominal derivative». N-EN dice «secondary derivative» y aquí manda N-EN; convendría alinear la propuesta."
+   "nota": "glosario-ingles.json (propuesta sin adjudicar) da taddhita → «nominal derivative». N-EN dice «secondary derivative» y aquí manda N-EN; convendría alinear la propuesta.",
+   "tanda": 1
   },
   "adassana": {
    "en": "lit., not being seen; absence. It is a term used to define lopa, elision.",
    "termino": "absence",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "adhikaraṇa|1": {
    "en": "the seventh case; the locative case. See kāraka.",
    "termino": "locative",
-   "fuente": "IEBH, recursos/paradigmas/paradigmas.json, casos_en («locative»); Ñāṇamoli p. 13 («one kind of locative»)"
+   "fuente": "IEBH, recursos/paradigmas/paradigmas.json, casos_en («locative»); Ñāṇamoli p. 13 («one kind of locative»)",
+   "tanda": 1
   },
   "adhikaraṇa|2": {
    "en": "relation; relation of words in a sentence between which there is agreement, either as adjective and noun, as subject and predicate, or as two nouns in apposition.",
    "termino": "relation",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "adhikāra|1": {
    "en": "relation of influence; authority; general rule. A rule that has influence over a certain number of following rules is called anu-vutti. There are three types of relation of influence: (1) lion's movement (sīha-gatika), (2) frog's movement (maṇḍūka-gatika) and (3) following the order (yathānupubbika).",
    "termino": "general rule",
    "fuente": "traducción del español del Glosario",
-   "nota": "comun/glosario.md fija adhikāra → «aforismo regulativo» (Nāma §52) y glosario-ingles.json propone «governing aphorism». Esta entrada del Glosario define otra cosa —la relación de influencia— y se traduce tal cual; la segunda entrada, abajo, es la que casa con la norma."
+   "nota": "comun/glosario.md fija adhikāra → «aforismo regulativo» (Nāma §52) y glosario-ingles.json propone «governing aphorism». Esta entrada del Glosario define otra cosa —la relación de influencia— y se traduce tal cual; la segunda entrada, abajo, es la que casa con la norma.",
+   "tanda": 1
   },
   "adhikāratthaṃ": {
    "en": "for the purpose of being a general rule.",
    "termino": "for the purpose of being a general rule",
    "fuente": "traducción",
-   "nota": "N-EN, Ākhyāta §413 («Kāle» icc’ etaṃ adhikāratthaṃ veditabbaṃ): «It should be understood that “kāla” (time) is for the sake of following.» El Venerable traduce adhikāra por «following» en ese pasaje."
+   "nota": "N-EN, Ākhyāta §413 («Kāle» icc’ etaṃ adhikāratthaṃ veditabbaṃ): «It should be understood that “kāla” (time) is for the sake of following.» El Venerable traduce adhikāra por «following» en ese pasaje.",
+   "tanda": 1
   },
   "adhikāra|2": {
    "en": "governing aphorism, of general application. See sutta.",
    "termino": "governing aphorism",
-   "fuente": "glosario-ingles.json (propuesta sin adjudicar) para la norma «aforismo regulativo»"
+   "fuente": "glosario-ingles.json (propuesta sin adjudicar) para la norma «aforismo regulativo»",
+   "tanda": 1
   },
   "anabhihita-kamma": {
    "en": "object not indicated. It is a synonym of avutta-kamma.",
    "termino": "object not indicated",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anāgata-kāla": {
    "en": "future tense.",
    "termino": "future tense",
-   "fuente": "IEBH, recursos/verbo/ingles.json («Future (anāgata)»); Ñāṇamoli p. 7 coincide"
+   "fuente": "IEBH, recursos/verbo/ingles.json («Future (anāgata)»); Ñāṇamoli p. 7 coincide",
+   "tanda": 1
   },
   "anādara": {
    "en": "disregard. Genitive absolute. E.g. \"rudato dārakassa pabbaji\", (the father) went forth although his son was crying. Here the father disregarded (anādara) the fact that his son was crying (rudato dārakassa) and went forth (pabbaji).",
    "termino": "disregard",
    "fuente": "traducción",
-   "nota": "«renunció» (pabbaji) se da como «went forth», que es lo usual en inglés para pabbajati; si IEBH prefiere el calco «renounced», se cambia."
+   "nota": "«renunció» (pabbaji) se da como «went forth», que es lo usual en inglés para pabbajati; si IEBH prefiere el calco «renounced», se cambia.",
+   "tanda": 1
   },
   "aniṭṭhappasaṅga": {
    "en": "inclusion of what is not desired.",
    "termino": "inclusion of what is not desired",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "aniyamita": {
    "en": "relative pronoun.",
    "termino": "relative pronoun",
-   "fuente": "Ñāṇamoli pp. 6 y 13"
+   "fuente": "Ñāṇamoli pp. 6 y 13",
+   "tanda": 1
   },
   "aniyamuddesa": {
    "en": "the relative clause, also called \"subordinate clause\".",
    "termino": "relative clause",
-   "fuente": "Ñāṇamoli p. 13"
+   "fuente": "Ñāṇamoli p. 13",
+   "tanda": 1
   },
   "anukaḍḍhana": {
    "en": "previous reference; grammatical attraction; dragging. This term is generally used to bring certain necessary terms from a previous aphorism into the aphorism in question.",
    "termino": "dragging",
-   "fuente": "N-EN, apéndice sobre «ca» (docs/fuentes/nandisena-apendice-sandhi-en.md) y Sandhi inglés, notas 12 y 29"
+   "fuente": "N-EN, apéndice sobre «ca» (docs/fuentes/nandisena-apendice-sandhi-en.md) y Sandhi inglés, notas 12 y 29",
+   "tanda": 1
   },
   "anukaḍḍhanatthaṃ": {
    "en": "for the purpose of bringing or dragging.",
    "termino": "for the purpose of dragging",
-   "fuente": "N-EN («dragging»), como la anterior"
+   "fuente": "N-EN («dragging»), como la anterior",
+   "tanda": 1
   },
   "anukaraṇa": {
    "en": "resemblance, similarity. \"Ati- upasaggānukaraṇa\", resembling the preposition \"ati\".",
    "termino": "resemblance",
    "fuente": "traducción",
-   "nota": "El Glosario dice «preposición» para upasagga; la norma (comun/glosario.md) y N-EN §51 dicen «prefijo / prefix». Se traduce lo que dice el Glosario."
+   "nota": "El Glosario dice «preposición» para upasagga; la norma (comun/glosario.md) y N-EN §51 dicen «prefijo / prefix». Se traduce lo que dice el Glosario.",
+   "tanda": 1
   },
   "anuccāraṇa": {
    "en": "non-pronunciation; not pronouncing. See lopa.",
    "termino": "non-pronunciation",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anuttasamuccaya": {
    "en": "unmentioned grouping or collection.",
    "termino": "unmentioned grouping",
    "fuente": "traducción",
-   "nota": "Para samuccaya solo, N-EN (apéndice) dice «accumulating» y Ñāṇamoli p. 9 «conjunction (ca)». El Glosario español da «agrupación o colección», y se sigue al Glosario."
+   "nota": "Para samuccaya solo, N-EN (apéndice) dice «accumulating» y Ñāṇamoli p. 9 «conjunction (ca)». El Glosario español da «agrupación o colección», y se sigue al Glosario.",
+   "tanda": 1
   },
   "anunāsika": {
    "en": "nasal; pronounced through the nose.",
    "termino": "nasal",
-   "fuente": "Ñāṇamoli p. 5"
+   "fuente": "Ñāṇamoli p. 5",
+   "tanda": 1
   },
   "anupadiṭṭha": {
    "en": "unspecified; not indicated.",
    "termino": "unspecified",
    "fuente": "traducción",
-   "nota": "N-EN, Sandhi §51, traduce «Anupadiṭṭhānaṃ» por «Of those that have not been shown» / «whose formations have not been shown». Es la misma idea con otra palabra; IEBH decide si el término va «not shown»."
+   "nota": "N-EN, Sandhi §51, traduce «Anupadiṭṭhānaṃ» por «Of those that have not been shown» / «whose formations have not been shown». Es la misma idea con otra palabra; IEBH decide si el término va «not shown».",
+   "tanda": 1
   },
   "anupadiṭṭhāna": {
    "en": "unspecified place. See anupadiṭṭha",
    "termino": "unspecified place",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anubandha": {
    "en": "indicatory letter; it is used to indicate grammatical operations such as the strengthening of a short vowel.",
    "termino": "indicatory letter",
-   "fuente": "N-EN, Taddhita §353 («the indicatory letter ‘ṇ’») y Ākhyāta, verso de apertura («elisions and indicatory letters»)"
+   "fuente": "N-EN, Taddhita §353 («the indicatory letter ‘ṇ’») y Ākhyāta, verso de apertura («elisions and indicatory letters»)",
+   "tanda": 1
   },
   "anumati": {
    "en": "concession; consent; permission. One of the uses of the imperative (pañcamī) and potential (sattamī) verb.",
    "termino": "consent; permission",
-   "fuente": "IEBH, recursos/verbo/ingles.json («Consent, permission (anumati)»)"
+   "fuente": "IEBH, recursos/verbo/ingles.json («Consent, permission (anumati)»)",
+   "tanda": 1
   },
   "anuvattati": {
    "en": "verb used in the ancient grammars to indicate the continuation of a previous rule; that continues from a previous rule. Also anuvattate.",
    "termino": "continues (from a previous rule)",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anuvattate": {
    "en": "see anuvattati",
    "termino": "—",
-   "fuente": "remisión"
+   "fuente": "remisión",
+   "tanda": 1
   },
   "anuvattana-vutti": {
    "en": "word or term coming from previous aphorisms.",
    "termino": "term coming from previous aphorisms",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anu-vutti": {
    "en": "rule or aphorism that has influence over a certain number of following rules.",
    "termino": "rule that has influence over the following rules",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anussāra": {
    "en": "the \"niggahīta\"; the letter 'ṃ'.",
    "termino": "niggahīta",
-   "fuente": "N-EN deja niggahita sin traducir (Sandhi §8; memo §2.1); Ñāṇamoli p. 13 («the letter ṁ, the nasal»)"
+   "fuente": "N-EN deja niggahita sin traducir (Sandhi §8; memo §2.1); Ñāṇamoli p. 13 («the letter ṁ, the nasal»)",
+   "tanda": 1
   },
   "anekattha": {
    "en": "having several meanings; secondary derivation suffixes denoting various meanings. They belong to the category of general secondary derivatives (sāmañña-taddhita). The following suffixes belong to this category: (ṇ)ika, (ṇ)a, ima, iya, tā, ālu, ka, maya.",
    "termino": "having several meanings",
-   "fuente": "Ñāṇamoli p. 11 («of various meanings»); «general secondary derivative» p. 11"
+   "fuente": "Ñāṇamoli p. 11 («of various meanings»); «general secondary derivative» p. 11",
+   "tanda": 1
   },
   "anekavacana": {
    "en": "plural. It is a synonym of bahuvacana.",
    "termino": "plural",
-   "fuente": "IEBH, recursos/verbo/ingles.json (plural)"
+   "fuente": "IEBH, recursos/verbo/ingles.json (plural)",
+   "tanda": 1
   },
   "antaṭṭha": {
    "en": "semivowel; lit., the letters at the end (of the grouped ones): 'y', 'r', 'l', 'v'. They are placed between the consonants and the vowels.",
    "termino": "semivowel",
-   "fuente": "Ñāṇamoli p. 4 («semi-vowel»)"
+   "fuente": "Ñāṇamoli p. 4 («semi-vowel»)",
+   "tanda": 1
   },
   "anvattha": {
    "en": "that follows the meaning; in accordance with the true meaning. Cf. ruḷhī.",
    "termino": "that follows the meaning",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "anvācaya": {
    "en": "that connects a secondary action with the main action; coordination of two activities; one of the functions of the particle \"ca\". E.g., \"dānañ ca dehi, sīlañ ca rakkhāhi\", give alms and keep the precepts. Sad. explains this use of \"ca\" as the sphere of separate actions (bhinnakiriyāvisaya).",
    "termino": "coordination of two activities",
-   "fuente": "traducción"
+   "fuente": "traducción",
+   "tanda": 1
   },
   "apaccattha": {
    "en": "suffixes denoting lineage. They belong to the category of general secondary derivatives (sāmañña-taddhita). The following suffixes belong to this category: (ṇ)a, (ṇ)āyana, (ṇ)āna, (ṇ)eyya, (ṇ)ava, (ṇ)era.",
    "termino": "(suffixes denoting) lineage",
    "fuente": "traducción del español del Glosario",
-   "nota": "N-EN, Taddhita §344, traduce apacca por «offspring» («In the offspring there is ‘ṇa’»). El Glosario español dice «linaje»; se sigue al Glosario y se deja constancia."
+   "nota": "N-EN, Taddhita §344, traduce apacca por «offspring» («In the offspring there is ‘ṇa’»). El Glosario español dice «linaje»; se sigue al Glosario y se deja constancia.",
+   "tanda": 1
+  },
+  "apaccattha-taddhita": {
+   "en": "see apaccattha",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "apavāda": {
+   "en": "prevention; exception. It is the opposite of ussagga (Mogp. 242). According to Monier 52, it is \"a special rule that takes precedence over a general rule\".",
+   "termino": "exception",
+   "fuente": "traducción",
+   "nota": "Ñāṇamoli no lo registra. El Conspectus de Smith (7.3.2.1, p. 1146) da «une exception ⟨apavāda⟩» frente a «l'énoncé positif [utsarga]», que coincide con el Glosario.",
+   "tanda": 2
+  },
+  "apādāna": {
+   "en": "the fifth case; the ablative case. See kāraka.",
+   "termino": "ablative",
+   "fuente": "IEBH, recursos/paradigmas/paradigmas.json, casos_en («ablative»); Ñāṇamoli p. 7 («ablative (pañcamī: fifth)») coincide",
+   "tanda": 2
+  },
+  "apekkhākaraṇattha": {
+   "en": "for the purpose of referring (to the words mentioned before).",
+   "termino": "for the purpose of referring",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "appaccakkha": {
+   "en": "lit., that is not perceptible through the senses; that has not been experienced; one of the uses of the verbal tenses ajjatanī, hiyyattanī and parokkhā",
+   "termino": "not directly experienced",
+   "fuente": "IEBH, recursos/verbo/ingles.json («The past not directly experienced (appaccakkha)»)",
+   "nota": "El Glosario español cierra la entrada sin punto final; se reproduce así.",
+   "tanda": 2
+  },
+  "appadhānaliṅga": {
+   "en": "adjective (subordinate stem).",
+   "termino": "adjective",
+   "fuente": "Ñāṇamoli p. 6 («adjective (whose gender does not predominate)»)",
+   "tanda": 2
+  },
+  "appasiddha": {
+   "en": "not evident; non-existent. \"Akāranto itthiliṅgasaddo appasiddho\", the feminine word(s) ending in 'a' are not evident.",
+   "termino": "not evident",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "aphuṭṭha": {
+   "en": "non-occlusive. According to Sad. §16 this term is used to refer to the unaspirated consonants (sithila).",
+   "termino": "non-occlusive",
+   "fuente": "traducción",
+   "nota": "Ñāṇamoli p. 4 da «unaspirate» para sithila, que coincide con el Glosario.",
+   "tanda": 2
+  },
+  "abbhāsa": {
+   "en": "the first syllable of a reduplicated root. E.g., in \"dadāti\", (he/she) gives, the root is \"dā\", to give, which is reduplicated, and the vowel is shortened. The first syllable \"da\" is called \"abbhāsa\".",
+   "termino": "first syllable of a reduplicated root",
+   "fuente": "N-EN, Ākhyāta («The previous (syllable) of the reduplicated root it is called “abbhāsa”»; «abbhāsa (previous reduplicated syllables)»)",
+   "tanda": 2
+  },
+  "abyatta-sadda": {
+   "en": "inarticulate sound.",
+   "termino": "inarticulate sound",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "abyaya": {
+   "en": "indeclinable. They are called indeclinables because they are not subject to changes; they are unmodifiable; they show no difference as to gender (liṅga), number (saṅkhyā) and inflection (vibhatti). There are 6 classes of indeclinables: (1) prefixes (upasagga), (2) particles (nipāta), (3) words ending in suffixes that are inflections (vibhatti-paccaya-pada), (4) adverbial compounds (abyayībhāva-samāsa), (5) words ending in indeclinable secondary suffixes (abyaya-taddhita-pada) and (6) words ending in the suffixes \"tvā\", etc. (tvādi-paccayanta-pada).",
+   "termino": "indeclinable",
+   "fuente": "Ñāṇamoli p. 6 («indeclinable», bajo avyaya); «prefixes and particles» es N-EN, Sandhi §51",
+   "nota": "El español imprime «adverviales» y «pada)y»; se traduce «adverbial» y se separa el paréntesis, que son erratas de composición y no de contenido.",
+   "tanda": 2
+  },
+  "abyaya-taddhita": {
+   "en": "indeclinable numerals and adverbial secondary derivatives. The following suffixes belong to this category: kkhattuṃ, dhā, so, thā, thaṃ, tana, tra, ttha, hiṃ, haṃ, dā, dāni, dācanaṃ, ha, dha.",
+   "termino": "indeclinable numerals and adverbial secondary derivatives",
+   "fuente": "Ñāṇamoli pp. 11 y 13 («indeclinable numerals and adverbs», bajo avyayataddhita); «secondary derivative» es N-EN, título del capítulo 5",
+   "tanda": 2
+  },
+  "abyayībhāva": {
+   "en": "Adverbial compound. The first member of this compound is an indeclinable and the second member is a noun. Generally this type of compound has the neuter singular ending. E.g., \"nagarassa + upa\" = \"upanagaraṃ\" (near the city). Also abyayībhāva-samāsa.",
+   "termino": "adverbial compound",
+   "fuente": "N-EN, Kibbidhāna («by way of adverbial compounds, secondary derivatives and verbs», glosando abyayībhāvasamāsataddhitākhyātato); Ñāṇamoli pp. 11 y 13 coincide",
+   "tanda": 2
+  },
+  "abyayībhāva-samāsa": {
+   "en": "adverbial compound. See abyayībhāva.",
+   "termino": "adverbial compound",
+   "fuente": "N-EN, Kibbidhāna, como la anterior",
+   "tanda": 2
+  },
+  "abhidhā": {
+   "en": "see abhidhāna",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "abhidhāna": {
+   "en": "appellation; name (lit. that which says).",
+   "termino": "appellation; name",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "abhidheyya": {
+   "en": "the meaning expressed by a relative compound (bahubbīhi). E.g., the compound \"āgatasamaṇo\", lit., a monk having come, when it is a relative compound means something different from its components; in this example, \"saṃghārāmo\", monastery of the Order. Thus \"āgatasamaṇo\" means: the monastery of the Order to which the monk has come. The compound \"saṃghārāmo\" is called \"abhidheyya\", the meaning expressed by the relative compound \"āgatasamaṇo\".",
+   "termino": "meaning expressed (by a relative compound)",
+   "fuente": "traducción; «relative compound» para bahubbīhi es de Ñāṇamoli pp. 11 y 17 y de glosario-ingles.json",
+   "nota": "El español imprime «babubbīhi»; se traduce bahubbīhi, que es errata de composición. Y CHOCA CON SMITH: en el Conspectus (6.0.3, p. 1134) abhidheyya es el Significado en general, «le Signifié», y la ficha de allí ya lo marca como conflicto. Se traduce lo que dice el Glosario.",
+   "tanda": 2
+  },
+  "abhidheyyaliṅga": {
+   "en": "noun.",
+   "termino": "noun",
+   "fuente": "traducción",
+   "nota": "Ñāṇamoli p. 6 da «noun (whose gender predominates)» bajo padhānaliṅga, no bajo abhidheyyaliṅga. Se sigue al Glosario.",
+   "tanda": 2
+  },
+  "abhidheyyaliṅgavacana": {
+   "en": "having the (same) number and gender as the word denoted. This is one of the characteristics of relative compounds (bahubbīhi). The compound \"āgatasamaṇo\" has the same number (singular) and gender (masculine) as \"saṃghārāmo\", the word the compound denotes.",
+   "termino": "having the same number and gender as the word denoted",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "abhihita-kamma": {
+   "en": "indicated object. It is a synonym of vutta-kamma.",
+   "termino": "indicated object",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "amādi-tappurisa": {
+   "en": "name for all the determinative compounds (tappurisa) except the numerical (digu) and adjectival (kammadhāraya) compounds. Cf. ubhe-tappurisa.",
+   "termino": "determinative compound (beginning with aṃ, etc.)",
+   "fuente": "traducción; «determinative compound» para tappurisa, «numerical» para digu y «adjectival compound» para kammadhāraya son de Ñāṇamoli pp. 10, 14 y 16",
+   "nota": "Ñāṇamoli traduce tappurisa por «dependent determinative compound»; el Glosario español dice sólo «determinativo» y se sigue al Glosario. Smith imprime «⟨amādi⟩» angular en la p. 1124 (sesión 56).",
+   "tanda": 2
+  },
+  "amādipara-tappurisa": {
+   "en": "type of determinative compound whose last member is a word ending in \"aṃ\", etc.",
+   "termino": "determinative compound whose last member ends in aṃ, etc.",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "ayuttattha-samāsa": {
+   "en": "type of compound whose members are not linked in meaning. E.g., \"apunageyyā gāthā\", a verse not recited again; \"alavaṇbhojī\", one who does not eat salt. In these compounds the negative particle is not linked in meaning with the following member but with the last member of the compound.",
+   "termino": "compound whose members are not linked in meaning",
+   "fuente": "traducción",
+   "nota": "El español imprime «alavaṇbhojī», sin la a de lavaṇa; se reproduce tal cual porque es el ejemplo del impreso y no se enmienda.",
+   "tanda": 2
+  },
+  "alutta-samāsa": {
+   "en": "type of compound in which the ending of the first member is not elided. E.g. \"pabhaṅ karoti\" = \"pabhaṅkaro\", making light, the sun.",
+   "termino": "compound with the ending not elided",
+   "fuente": "glosario-ingles.json (propuesta sin adjudicar): «compound with the [inflection] not elided»",
+   "nota": "Smith lematiza «alutta⟨vibhattika⟩samāsa» (5.2, p. 1123) con el angular de Moggallāna: revisión-de-las-i.md §5.20.",
+   "tanda": 2
+  },
+  "alopa-tappurisa": {
+   "en": "type of determinative compound in which the ending of the first member is not elided. See alutta-samāsa.",
+   "termino": "determinative compound with the ending not elided",
+   "fuente": "traducción, como alutta-samāsa",
+   "tanda": 2
+  },
+  "avagga": {
+   "en": "non-grouped consonants: 'y', 'r', 'l', 'v', 's', 'h', 'ḷ'.",
+   "termino": "non-grouped (consonants)",
+   "fuente": "N-EN, Sandhi §7 («grouped» para vagga; memo §2.1)",
+   "tanda": 2
+  },
+  "avaṇṇa": {
+   "en": "the letters 'a' and 'ā'.",
+   "termino": "the letters 'a' and 'ā'",
+   "fuente": "glosario-ingles.json (propuesta sin adjudicar), idéntica; N-EN Taddhita §405 da «the letter ‘a’» para akāra",
+   "nota": "El español imprime «ā'» sin la comilla de apertura; se cierra en inglés, que es errata de composición.",
+   "tanda": 2
+  },
+  "avadhāraṇapubbapada-kammadhāraya": {
+   "en": "type of compound in which the first member restricts the second member. E.g., \"guṇo eva dhanaṃ\" = \"guṇadhanaṃ\", rich in virtue; lit., virtue itself is (his) wealth.",
+   "termino": "adjectival compound whose first member restricts",
+   "fuente": "traducción; «adjectival compound» para kammadhāraya es de Ñāṇamoli pp. 10 y 14; «limiting (avadhāraṇa)» es N-EN, Kibbidhāna, y «to restrict» glosario-ingles.json",
+   "tanda": 2
+  },
+  "avayava": {
+   "en": "part; constituent; one of the two uses of the genitive (partitive genitive). E.g., \"brāhmaṇānaṃ so paṇḍito\", he is wise among the brahmins.",
+   "termino": "part; constituent",
+   "fuente": "Ñāṇamoli p. 13 («constituent of compound»)",
+   "nota": "Ñāṇamoli lo registra sólo como constituyente de compuesto; el Glosario lo da como uso del genitivo. Se sigue al Glosario.",
+   "tanda": 2
+  },
+  "avibhattiyutta": {
+   "en": "not associated with inflection. It refers to a class of particles (nipāta) that is not associated with any inflection. See attha-pūraṇa.",
+   "termino": "not associated with inflection",
+   "fuente": "traducción; «inflection» para vibhatti es glosario-ingles.json y la página del verbo (IEBH)",
+   "tanda": 2
+  },
+  "avivaṭa": {
+   "en": "(mouth) not fully open; it refers to the way of pronouncing the letter 'ṃ'.",
+   "termino": "not fully open",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "avutta-kattu": {
+   "en": "lit., unmentioned agent. E.g., in \"ahinā daṭṭho naro\", a man bitten by a snake, \"ahinā\" is called \"avutta-kattā\". See vutta-kattu.",
+   "termino": "unmentioned agent",
+   "fuente": "traducción",
+   "nota": "El español dice «subjeto no mencionado» (sic, por «sujeto»). Se traduce «agent» y no «subject» porque kattu es el agente de la construcción pasiva —«ahinā» es el instrumental—, y así lo entiende Ñāṇamoli p. 8 (kattukāraka, «active voice»). Si el IEBH prefiere el calco «subject», se cambia.",
+   "tanda": 2
+  },
+  "avutta-kamma": {
+   "en": "lit., unmentioned object. E.g., in \"puriso rūpaṃ passati\", the man sees a form, \"rūpaṃ\", form, is called \"avutta-kamma\". It is a synonym of anabhihita-kamma. Cf. vutta-kamma.",
+   "termino": "unmentioned object",
+   "fuente": "traducción, como anabhihita-kamma («object not indicated», tanda 1)",
+   "tanda": 2
+  },
+  "avuddhika": {
+   "en": "weak or no strengthening of the root; it refers to a sub-group of roots in which the first vowel of the root is not strengthened.",
+   "termino": "weak or no strengthening",
+   "fuente": "Ñāṇamoli p. 13 («weak strengthening of root in vowel gradation»); «strengthening (vuddhi)» es N-EN, Taddhita §353 y Kibbidhāna",
+   "tanda": 2
+  },
+  "avyatta-sadda": {
+   "en": "inarticulate sound. Also abyatta-sadda.",
+   "termino": "inarticulate sound",
+   "fuente": "traducción, como abyatta-sadda",
+   "nota": "El español imprime «abyatta-sadda .» con espacio antes del punto; se cierra.",
+   "tanda": 2
+  },
+  "avyaya": {
+   "en": "see abyaya",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "avyaya-taddhita": {
+   "en": "see abyaya-taddhita",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "avyayībhāva": {
+   "en": "see abyayībhāva",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "avyayībhāva-samāsa": {
+   "en": "see abyayībhāva",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "asaṃyoga": {
+   "en": "non-conjunct (consonant); simple consonant. Also asaññoga. Cf. saṃyoga.",
+   "termino": "non-conjunct (consonant)",
+   "fuente": "N-EN, Sandhi §41 («conjunct consonant» para saṃyoga; memo §2.1) y Kibbidhāna §973 («of not a conjunct consonant», glosando asaṃyogantassa)",
+   "tanda": 2
+  },
+  "asaññoga": {
+   "en": "see asaṃyoga",
+   "termino": "—",
+   "fuente": "remisión",
+   "tanda": 2
+  },
+  "asabba-dhātuka": {
+   "en": "this term refers to those conjugations in which 'i' is optionally inserted before the verbal inflection suffix. They are the following: 1) perfect (parokkhā), 2) aorist (ajjatanī), 3) future (bhavissantī), 4) conditional (kālātipatti).",
+   "termino": "asabbadhātuka (conjugations in which 'i' is optionally inserted)",
+   "fuente": "IEBH, recursos/verbo/ingles.json («In the conjugations that follow, called “not all roots” (asabbadhātuka), ‘i’ is optionally inserted before the verbal inflection suffix»); los cuatro tiempos, IEBH, misma página",
+   "nota": "El español escribe «conditional» en inglés y «Perfecto» con mayúscula; se normaliza. La página del verbo, ya adjudicada, traduce el nombre como «not all roots»; el Glosario no lo traduce y aquí tampoco.",
+   "tanda": 2
+  },
+  "asamāhāra-digu": {
+   "en": "Non-collective numerical determinative compound. This type of compound does not express the totality but the objects individually. The first member is a numeral. It has plural ending. E.g., \"tayo + bhavā\" = \"tibhavā\" (the three planes of existence).",
+   "termino": "non-collective numerical determinative compound",
+   "fuente": "Ñāṇamoli pp. 10 y 16 («numerical determinative compound» para digu; «individual plural termination» para asamāhāra)",
+   "tanda": 2
+  },
+  "asamāhāra-dvanda": {
+   "en": "individual copulative compound. This type of compound does not express the totality but the objects individually. It has plural ending. E.g., \"samaṇā ca brāhamaṇā ca\" = \"samaṇabrāhmaṇā\" (monks and brahmins).",
+   "termino": "individual copulative compound",
+   "fuente": "Ñāṇamoli pp. 10 y 16 («copulative compound» para dvanda) y glosario-ingles.json (propuesta), idéntica; «individual» es Ñāṇamoli p. 10",
+   "nota": "El español imprime «brāhamaṇā» en el ejemplo, errata de composición que el compuesto de al lado (samaṇabrāhmaṇā) delata; se reproduce tal cual, como alavaṇbhojī en ayuttattha-samāsa, porque el ejemplo es del impreso y no se enmienda.",
+   "tanda": 2
+  },
+  "asarūpa": {
+   "en": "dissimilar. The vowels 'a' and 'ā' are sarūpa, similar; likewise 'i', 'ī'; 'u', 'ū'. Therefore 'a' is dissimilar from 'i', 'ī', 'u', 'ū', 'e', 'o'. Cf. sarūpa. See asavaṇṇa.",
+   "termino": "dissimilar",
+   "fuente": "N-EN, Sandhi §13 y nota 19 («similar / dissimilar»; memo §2.1)",
+   "nota": "El español imprime «'u, 'ū'» con una comilla de menos; se cierra.",
+   "tanda": 2
+  },
+  "asavaṇṇa": {
+   "en": "without a similar letter; dissimilar. The vowels 'a', 'ā'; 'i', 'ī'; 'u', 'ū' are savaṇṇa, with a similar letter; the vowels 'e' and 'o' are asavaṇṇa, without a similar letter.",
+   "termino": "dissimilar",
+   "fuente": "N-EN, Sandhi §14 («dissimilar»; memo §2.1, que avisa de que N-EN usa la misma palabra para asarūpa y asavaṇṇa)",
+   "tanda": 2
+  },
+  "assapada-viggaha": {
+   "en": "type of compound whose resolution is not by means of its own words but by means of other words. E.g., the compound \"upa-nagaraṃ\", near the city, is explained as \"nagarassa samīpaṃ\". Another e.g., \"paccate pāko\", cooking (paccate) means cooking (pāko). In this case \"pāko\", a primary derivative (kita) used as a verbal noun (bhāva-sādhana), is explained by using a verb (paccate). The opposite is sapada-viggaha.",
+   "termino": "compound resolved by means of other words",
+   "fuente": "traducción; «verbal noun» y «definition by way of state (bhāvasādhana)» son de Ñāṇamoli pp. 12, 15 y 17",
+   "nota": "El español imprime «bhāva-sadhāna» (sic, por sādhana); se traduce bhāva-sādhana.",
+   "tanda": 2
+  },
+  "assutālāpa": {
+   "en": "one who has never heard human language.",
+   "termino": "one who has never heard human language",
+   "fuente": "traducción",
+   "tanda": 2
+  },
+  "ākāra": {
+   "en": "the letter 'ā'.",
+   "termino": "the letter 'ā'",
+   "fuente": "N-EN, Taddhita §405, como akāra (tanda 1)",
+   "tanda": 2
+  },
+  "ākhyāta": {
+   "en": "verb.",
+   "termino": "verb",
+   "fuente": "IEBH, recursos/verbo/ingles.json («The verb · ākhyāta»); N-EN, Kibbidhāna («verbs») y Ñāṇamoli p. 4 coinciden",
+   "tanda": 2
+  },
+  "ākhyāta-vibhatti": {
+   "en": "verbal inflection; verb ending. The group of verbal inflections begins with 'ti' (tyādayo).",
+   "termino": "verbal inflection",
+   "fuente": "IEBH, recursos/verbo/ingles.json («verbal inflections (ākhyāta vibhatti)»)",
+   "tanda": 2
+  },
+  "āgama": {
+   "en": "insertion; inclusion of a vowel or consonant; augment.",
+   "termino": "insertion",
+   "fuente": "N-EN, Sandhi §35-37 («insertion»; memo §2.1) y Kibbidhāna («insertion (āgama)»)",
+   "nota": "El español imprime «inclusión de de una vocal»; se quita la repetición. Y el Conspectus de Smith usa āgama TAMBIÉN por «tradición» (5.3.3.1, 7.1.1.1): las fichas de allí lo marcan como conflicto y piden ensanchar esta entrada; la decisión sigue siendo del IEBH.",
+   "tanda": 2
+  },
+  "āṇatti": {
+   "en": "command; precept; requirement. One of the uses of the imperative (pañcamī) verb.",
+   "termino": "command",
+   "fuente": "IEBH, recursos/verbo/ingles.json («Command (āṇatti)»)",
+   "tanda": 2
+  },
+  "ādesa": {
+   "en": "substitute; substitution.",
+   "termino": "substitute; substitution",
+   "fuente": "N-EN, Sandhi §17 y §44 («substitution», «is substituted by»; memo §2.1)",
+   "tanda": 2
+  },
+  "ādesi": {
+   "en": "that which is substituted. See ādesiṭṭhāna.",
+   "termino": "that which is substituted",
+   "fuente": "traducción, sobre «substitution» de N-EN",
+   "tanda": 2
+  },
+  "ādesiṭṭhāna": {
+   "en": "place of substitution; letter that is substituted. E.g. in \"me ayaṃ\" = \"my ayaṃ\". The letter 'e' in \"me\" is called ādesi, the original form, that which is substituted. The letter 'y' is called ādesa, the substitute.",
+   "termino": "place of substitution",
+   "fuente": "traducción, sobre «substitution» de N-EN",
+   "nota": "El ejemplo «me ayaṃ» = «my ayaṃ» va como lo imprime el Glosario, con la forma intermedia y no la juntura myāyaṃ.",
+   "tanda": 2
+  },
+  "ādhāra": {
+   "en": "locative; support; container, receptacle, base.",
+   "termino": "locative; support",
+   "fuente": "Ñāṇamoli pp. 7 y 14 («locative case, support»)",
+   "tanda": 2
+  },
+  "āmeḍita": {
+   "en": "repetition. It is used to give emphasis (very), distribution (with pronouns and indeclinables) or to express intense emotion.",
+   "termino": "repetition",
+   "fuente": "traducción",
+   "nota": "Smith lo imprime «āmeṇḍita» con ṇ (6.1.3.1, p. 1137) y «[āmreḍitasamāsa]» entre corchetes (5.2.5, p. 1126); el Glosario da āmeḍita con ḍ. Es grafía, no término; no se toca.",
+   "tanda": 2
+  },
+  "ālapana": {
+   "en": "the vocative; addressing someone; speaking while looking at the other person. Also sambodhana.",
+   "termino": "vocative",
+   "fuente": "IEBH, recursos/paradigmas/paradigmas.json, inflexiones_en («vocative (ālapana)»); glosario-ingles.json y Ñāṇamoli p. 7 coinciden",
+   "tanda": 2
+  },
+  "ālapana-vacana": {
+   "en": "The vocative case. Also ālapana.",
+   "termino": "vocative case",
+   "fuente": "IEBH, como la anterior; Ñāṇamoli p. 14 («vocative case»)",
+   "tanda": 2
+  },
+  "āsiṭṭha": {
+   "en": "blessing; wish. One of the uses of the imperative (pañcamī) verb.",
+   "termino": "blessing; wish",
+   "fuente": "IEBH, recursos/verbo/ingles.json («Blessing, wish (āsiṭṭha)»)",
+   "tanda": 2
+  },
+  "ikāra": {
+   "en": "The letter 'i'.",
+   "termino": "the letter 'i'",
+   "fuente": "N-EN, Taddhita §405, como akāra (tanda 1)",
+   "tanda": 2
+  },
+  "itaritara": {
+   "en": "copulative compound (dvanda) with plural ending.",
+   "termino": "copulative compound with plural ending",
+   "fuente": "Ñāṇamoli p. 14 («dvanda with plural ending»); «copulative compound» pp. 10 y 16",
+   "tanda": 2
+  },
+  "itarītarayoga": {
+   "en": "mutual connection; one of the functions of the particle \"ca\". E.g., \" cando ca sūriyo ca\", the moon and the sun.",
+   "termino": "mutual connection",
+   "fuente": "traducción",
+   "nota": "N-EN, en su apéndice sobre «ca», no nombra itarītarayoga entre las funciones (dragging, collecting, accumulating, delimiting, smoothness of speech): es la lista de la Rūpasiddhi, no la de Kaccāyana. El español imprime «Ej.,\" cando» con el espacio dentro de la comilla; se reproduce tal cual, que es lo que el generador comprueba.",
+   "tanda": 2
   }
  }
 }

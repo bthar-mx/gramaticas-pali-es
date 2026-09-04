@@ -1,9 +1,9 @@
 # Briefing de la sesión 57 — LA COLACIÓN TERMINA (44 DE 44), Y LO QUE SE CAE SON LAS OMISIONES
 
-**Fecha:** 2026-09-04. Un frente de trabajo, dos en espera: **la colación del
-Conspectus de la p. 1130 a la 1148**, que cierra las 44 páginas; el inglés
-del Glosario (tanda 1) y los puntos 17-26 de la revisión siguen esperando
-veredicto del IEBH y no se han tocado. Además, el remate de la sustitución
+**Fecha:** 2026-09-04. Dos frentes: **la colación del Conspectus de la p. 1130
+a la 1148**, que cierra las 44 páginas, y **el inglés del Glosario**: la
+tanda 1 adjudicada y publicada, la tanda 2 (64 entradas) redactada y en
+espera. Los puntos 17-26 de la revisión siguen esperando veredicto. Además, el remate de la sustitución
 del nombre propio por «IEBH», que la sesión 56 dejó a medias.
 
 Este briefing supone leídos los de las sesiones 46 a 56. El registro de la
@@ -91,12 +91,39 @@ página— y dos cosas nuevas que salen de esta tanda:
 
 ---
 
-## 3. Lo que espera al IEBH, sin tocar
+## 3. El inglés del Glosario: la tanda 1 se publica, la tanda 2 espera
 
-- **El inglés del Glosario, tanda 1** (65 entradas, `recursos/glosario/ingles.json`,
-  `"adjudicado": false`): las 14 notas del §3 de
-  `docs/glosario/ingles-por-adjudicar.md` siguen sin veredicto. No se ha
-  escrito más inglés; la siguiente entrada sigue siendo `apaccattha-taddhita`.
+**Veredicto del IEBH, en esta sesión:** la tanda 1 se publica tal como estaba
+redactada, las 14 notas incluidas. Y de ahí un cambio de mecánica que
+conviene saber:
+
+- **La adjudicación va POR TANDA.** `ingles.json` lleva en cada `tanda[N]`
+  su `adjudicado`, `adjudicado_por`, `fecha` y `veredicto`, y cada entrada
+  dice `"tanda": N`. `generar_glosario.py` inyecta sólo las entradas de
+  tandas adjudicadas; las demás se comprueban y no se publican. El
+  `adjudicado` general del archivo resume (true si alguna tanda lo está).
+  El cotejo `ingles-por-adjudicar.md` lleva ahora una columna «tanda» con
+  ✓/…, y su §3 separa las notas pendientes de las ya resueltas.
+- **Tanda 1: 65 entradas, publicadas.** En modo EN la página enseña 65
+  fichas de Nandisena en inglés y 584 en español (jsdom, 0 errores).
+- **Tanda 2: `apaccattha-taddhita` → `itarītarayoga` (pp. 4-7), 64
+  entradas, SIN adjudicar**, con 21 notas en el §3 del cotejo. Prelación:
+  11 N-EN · 9 IEBH · 9 Ñāṇamoli · 2 propuesta · 26 traducción · 7
+  remisiones. Lo que más pesa de sus notas: (a) **avutta-kattu**, el español
+  dice «subjeto» y se traduce «agent», no «subject», porque kattu es el
+  agente de la pasiva; (b) **abhidheyya** y **āgama** chocan con Smith, y
+  las fichas del Conspectus ya lo marcan; (c) seis erratas de composición
+  del impreso —«adverviales», «babubbīhi», «bhāva-sadhāna», «de de», una
+  comilla de menos, un espacio de más— que el inglés corrige y anota, y dos
+  que NO corrige porque están dentro de un ejemplo citado y el generador
+  los coteja literalmente: «alavaṇbhojī» y «brāhamaṇā».
+
+**Siguiente entrada: la que sigue a `itarītarayoga` (p. 7).** Quedan 518
+traducibles.
+
+## 3 bis. Lo que espera al IEBH, sin tocar
+
+- **La tanda 2** del inglés: sus 21 notas, y la firma.
 - **Los puntos 17-26** de `revision-de-las-i.md` §5, más los **27-34** de
   esta sesión.
 
@@ -117,10 +144,13 @@ viaja, y `CLAUDE.md`, que es la excepción declarada.
 
 ## 5. Lo que el chat que siga tiene que hacer
 
-1. **Esperar el veredicto del IEBH sobre la tanda 1 del inglés** antes de
-   escribir más; cuando llegue, aplicarlo a `ingles.json` y seguir por
-   `apaccattha-taddhita`, en tandas de ~60, con el mismo patrón y la misma
-   prelación (N-EN › IEBH › Ñāṇamoli › propuesta › traducción).
+1. **Esperar el veredicto del IEBH sobre la tanda 2 del inglés** antes de
+   escribir más; cuando llegue, ponerlo en `tanda["2"]` de `ingles.json`
+   (`adjudicado`, `adjudicado_por`, `fecha`, `veredicto`), aplicar lo que
+   cambie a las entradas, y seguir por la entrada que sigue a
+   `itarītarayoga`, en tandas de ~60, con el mismo patrón y la misma
+   prelación (N-EN › IEBH › Ñāṇamoli › propuesta › traducción). Cada entrada
+   nueva lleva `"tanda": 3`.
 2. **Esperar los veredictos de los puntos 17-34** y aplicarlos; el 32
    (`upānīya` → 919,10) es el único que toca un campo.
 3. **Si el IEBH lo aprueba**: (a) el barrido de paréntesis en las pp.
@@ -159,7 +189,7 @@ viaja, y `CLAUDE.md`, que es la excepción declarada.
 | --- | --- |
 | **páginas COLACIONADAS contra la plancha** | **44 de 44** |
 | términos del Conspectus | 1.878 |
-| entradas de Nandisena | 649 · español completo · inglés 65 redactadas, 0 adjudicadas |
+| entradas de Nandisena | 649 · español completo · **inglés 129 redactadas, 65 publicadas** (tanda 1 adjudicada; tanda 2 en espera) |
 | lemas de la vista alfabética | 1.984 |
 | fichas con `duda` | **83** (74 al abrir) |
 | angulares aplanados encontrados | 11 |
