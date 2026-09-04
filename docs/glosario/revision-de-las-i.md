@@ -259,6 +259,7 @@ baila lleva `duda` y espera a Angel.*
 | 1107 | 43 | 1 | una `duda` nueva |
 | 1108 | 40 | 1 + 2 avisos | una `duda` nueva; una vieja confirmada |
 | 1109 | 46 | 0 | limpia |
+| 1110 | 49 | 1 (dos fichas) | dos `duda` nuevas |
 | 1117 | 66 | 1 | resuelto (§4.5) |
 
 ### 4 ter.1 `īsakaṃ`, y son DOS páginas: el hallazgo mayor de la tanda
@@ -339,11 +340,39 @@ sobre el ejemplar, y con el control en la línea de encima, que imprime
 edición, no en el escaneo.** La duda sigue abierta porque corregir a Smith es
 de Angel; lo que se cierra es la sospecha de que fuera artefacto.
 
+### 4 ter.5 bis La p. 1110 cierra la duda de lectura del §3 del briefing 53
+
+`nimantaṇa` y `āmantaṇa` (2.2.3.3). **Smith imprime Ṇ RETROFLEJA en el
+sufijo**, y esta vez está verificado en la propia colación, no de paso:
+
+| | |
+| --- | --- |
+| control interno | `nimantaṇa` tiene TRES enes y sólo la última lleva punto; `āmantaṇa`, dos y sólo la segunda |
+| control externo, misma página | `patthanā` en la línea de encima, n dental limpia; `āṇatti` dos líneas arriba, punto de ṇ de idéntica forma y altura |
+| a qué escala | ×14 |
+
+Las dos fichas transcriben n dental y **las dos llevan ya `duda`**; los lemas
+siguen intactos. Falta la tercera, el `āmantana` de 5.1.0 (p. 1120), que se
+verá al llegar a esa página.
+
+Lo delicado está en la nota de `āmantana`, que dice **«Smith confirma la
+lectura correcta: āmantana»** — que es justamente lo que Smith no hace. **La
+nota no se ha corregido**: está publicada, se le señala a Angel en la `duda`, y
+qué se hace con ella lo decide él.
+
 ### 4 ter.6 Lo que se comprobó sin novedad
 
 - **p. 1107, 43 fichas, ninguna discrepancia** fuera del anceps: el
   `niggahīta` de 1.1.3 se ve con su macrón y con el `(bindu)` de al lado
   haciendo de control, tal como la sesión 53 lo dejó escrito.
+- **p. 1110, y tres controles que valen para casos ya cerrados.** En 2.2.3.2
+  Smith imprime `samīpamhi` y `samīpe` **con ī larga**, y `hiyyo pabhuti`
+  **con i breve**, las tres en dos líneas seguidas. Es decir: la breve del
+  `samipa` de la p. 1117 y la larga del `akārappabhutī` de la p. 1105 son
+  anomalías del impreso frente a su propia norma, y las dos decisiones de Angel
+  —recoger las dos lecturas allí, mantener el lema aquí— quedan respaldadas por
+  el propio Smith. Las 49 fichas de la página cuadran salvo las dos del §4
+  ter.5 bis.
 - **p. 1109, 46 fichas, página limpia.** Se miró en particular la lista de las
   ocho clases de raíces, porque Smith escribe **`bhūvādayo dhātavo`** con ū
   larga en la cita y **`bhuvādi`** con u breve en la enumeración: la ficha da
@@ -398,5 +427,9 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
 10. **`dūraṭṭhassa ālapana`** (p. 1106), §4 ter.3: la plancha da
     `dūraṭṭhass' ālapane`. Es cuestión de criterio de lematización, no de
     lectura, y el criterio no es hoy uniforme.
-11. **Las ocho del §4** siguen sin cotejar, y ahora entran en la colación general
+11. **`nimantaṇa` y `āmantaṇa`** (2.2.3.3, p. 1110), §4 ter.5 bis. La ṇ
+    retrofleja de Smith, ya verificada con control interno y externo. Dos fichas
+    marcadas, lemas intactos, y una nota publicada que afirma lo contrario de lo
+    que dice la plancha, sin corregir.
+12. **Las ocho del §4** siguen sin cotejar, y ahora entran en la colación general
     de las 44 páginas, que es la que Angel ha pedido.
