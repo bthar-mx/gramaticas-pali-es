@@ -1729,6 +1729,30 @@ const VERSION_DATE = '__VERSION_DATE__';
   if (panelInicial && panelInicial !== inicial) mostrar(panelInicial, inicial);
   else mostrar(panelInicial || 'introduccion');
 
+  /* Los paneles se pintaban al pulsarlos por primera vez, y el de paradigmas
+     y el de formación son grandes: entre el clic en el índice y el texto en
+     pantalla mediaba la construcción entera del panel, que se nota. Se
+     pintan ahora en los huecos que deja el navegador, después de que la
+     página esté puesta, de modo que el primer clic ya encuentra el panel
+     hecho y el salto es inmediato. Sigue siendo perezoso: si alguien pulsa
+     antes de que le toque el turno, mostrar() lo pinta y esto no repite. */
+  (function(){
+    const cola = PANELES.map(p => p.id).filter(id => !pintados.has(id));
+    const hueco = window.requestIdleCallback || (f => setTimeout(() => f(), 200));
+    (function siguiente(){
+      const id = cola.shift();
+      if (!id) return;
+      hueco(() => {
+        if (!pintados.has(id)){
+          const panel = document.getElementById('p-' + id);
+          const p = PANELES.find(x => x.id === id);
+          if (panel && p){ panel.innerHTML = p.pinta(); pintados.add(id); }
+        }
+        siguiente();
+      }, {timeout: 2000});
+    })();
+  })();
+
   /* también cuando alguien pega el enlace con la página ya abierta */
   addEventListener('hashchange', () => {
     const a = (location.hash || '').replace('#','');

@@ -260,6 +260,7 @@ def main():
         "estado": estado,
         "fuentes": datos["fuentes"],
         "secciones": datos["secciones"],
+        "partes": datos.get("partes", {}),
         "plan": datos["plan_de_smith"],
         "ingles_adjudicado": bool(ing.get("adjudicado")),
         "ingles_adjudicado_por": ing.get("adjudicado_por"),
