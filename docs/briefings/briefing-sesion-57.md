@@ -148,6 +148,52 @@ traducibles.
   mecanismo es general: cualquier elemento con `data-tip-en` enseña esa
   versión en modo EN (`ponIdioma()`); las etiquetas van en `.i-es`/`.i-en`.
 
+- **Las notas largas van plegadas.** Toda nota de más de 260 caracteres
+  —colaciones, dudas, conflictos— se pliega a dos líneas con un «más ▾»
+  (`notaPlegable()`); si la búsqueda casa dentro, se pinta desplegada. 488
+  de 1.565 notas quedan plegadas.
+
+---
+
+## 3 quater. La cosecha de términos que faltan, y su formulario
+
+Pedido del IEBH en esta sesión: buscar en **Kaccāyana** (los ocho capítulos,
+trad. Nandisena), **Rūpasiddhi** (siete capítulos), **Nyāsa** (texto pāḷi
+completo, OCR) y **Thitzana** (cuerpo e índice del vol. 2) los términos
+gramaticales que ninguna de las tres fuentes del glosario tiene como lema
+(2.195 claves con variantes).
+
+- **Cómo se hizo.** Tres pasadas automáticas —índice de Thitzana; pāḷi
+  entre paréntesis tras vocabulario gramatical español en Nandisena;
+  palabras con sufijo técnico (-saññā, -vibhatti, -paccaya, -lopa, -āgama…)
+  en las cuatro obras, con desinencia recortada— y después **curación a
+  mano**, porque el OCR del Nyāsa pega palabras y las pasadas devuelven
+  ejemplos, no términos. Los sufijos salieron de los vuttis
+  («**ṇeyya**paccayo hoti…»). Cada candidato se comprobó atestiguado por
+  conteo en las cuatro obras. Guion: `herramientas/cosechar_terminos_faltantes.py`
+  (documenta la lista; las cifras vienen de la sesión).
+- **Resultado: 125 filas** en `docs/glosario/terminos-faltantes.json` —
+  **51 términos**, **70 sufijos** sin lema (ṇa, ṇika, tā, vī, kvi, tuṃ, yu,
+  ṇya, ṇāpaya…) y **4 designaciones** de Kaccāyana (gha, jha, la, ga; pa ya
+  estaba)—, cada una con ES y EN propuestos, comentario, referencia y
+  apariciones por obra. Los de más peso: **sādhana** (Thitzana 379 veces),
+  **saralopa**, **savibhatti**, **dhātvanta**, **asaṃyoganta**, **adhikicca**,
+  **saddūpapada**, **napuṃsaka**, **manogaṇa** (cuyo inglés ya estaba
+  propuesto sin lema), **akatarassa** (la norma tiene katarassa).
+- **El formulario**: `docs/glosario/terminos-faltantes.html`, local, lo arma
+  `herramientas/generar_terminos_faltantes.py`. Columnas: término, fuentes,
+  ES y EN propuestos, comentario, acepta/rechaza, su ES, su EN, su nota.
+  Guarda en localStorage; «Exportar» descarga
+  `veredictos-terminos-faltantes.json`, «Copiar» lo pone en el portapapeles.
+- **La vuelta**: `herramientas/incorporar_terminos_faltantes.py` lee los
+  veredictos y mete lo aceptado en `comun/glosario.md` (fila al final de la
+  tabla, «Fijado en: cosecha s. 57») y en `glosario-ingles.json`; luego
+  `generar_todo.py`. Probado en copia: idempotente, no repite lemas.
+- **Lo que NO se ha hecho**: no se han creado lemas; los sentidos de los
+  sufijos salen del vutti donde se introducen y piden confirmación; el
+  sentido de `yoganta` está por confirmar; Warder no se ha mirado (imagen
+  sin texto, sesión 55).
+
 ---
 
 ## 4. El nombre propio → «IEBH»: lo que la sesión 56 dejó
@@ -178,10 +224,14 @@ viaja, y `CLAUDE.md`, que es la excepción declarada.
    1105-1122 (§5.23 b), que es rápido; (b) el barrido de omisiones de prosa en
    las pp. 1105-1129 (§5.34), que no lo es tanto; (c) mirar en el Index A qué
    son 5.3-5.4.14 (§5.29).
-4. **La colación está hecha.** Lo que sigue del plan del briefing 54 §7 son
+4. **Cuando lleguen los veredictos del formulario** (`docs/glosario/veredictos-terminos-faltantes.json`
+   o pegados en el chat): `python3 herramientas/incorporar_terminos_faltantes.py`,
+   `generar_todo.py`, y comprobar en la página que los lemas nuevos
+   aparecen en Normativos y en la vista alfabética.
+5. **La colación está hecha.** Lo que sigue del plan del briefing 54 §7 son
    el análisis de las dos fuentes (61 `conflicto`) y las referencias
    `ref_smith` sin verificar.
-5. Y al terminar cualquier cosa:
+6. Y al terminar cualquier cosa:
 
        python3 herramientas/generar_todo.py
 

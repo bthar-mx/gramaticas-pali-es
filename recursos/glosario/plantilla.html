@@ -251,6 +251,13 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
 .gl div{margin:1px 0}
 .gl .en{color:var(--nila)}
 .nota{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--soot)}
+/* Las notas largas —colaciones, dudas, conflictos— van plegadas a dos líneas
+   con un «más» al final (pedido del IEBH, sesión 57); pulsar despliega. Si la
+   búsqueda casa dentro de la nota, se pinta desplegada para que el resaltado
+   se vea. */
+.nota.plegada .cuerpo{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nota .mas{display:inline-block;margin-top:2px;padding:0 6px;border:1px solid var(--line,#8886);border-radius:4px;font:inherit;font-size:12px;color:var(--soot);background:transparent;cursor:pointer}
+.nota .mas:hover{color:var(--ink,inherit)}
 .nota b{color:var(--ink)}
 .marca{display:inline-block;font-family:var(--mono);font-size:9px;font-weight:700;
   letter-spacing:.1em;text-transform:uppercase;padding:1px 5px;border-radius:2px;
@@ -737,7 +744,7 @@ function ficha(t, tipo){
     '<div class="lema">' + (t.sin_lema ? '<span style="color:var(--soot)">—</span>' : resalta(t.pali)) +
       '<span class="ep">' + ep + '</span>' + vars + refs + '</div>' +
     '<div><div class="gl">' + glosas + '</div>' + puente +
-      (marcas || notas ? '<p class="nota">' + marcas + notas + '</p>' : '') +
+      (marcas || notas ? notaPlegable(marcas + notas, notas) : '') +
     '</div></div>';
 }
 
@@ -845,6 +852,23 @@ function enlazaGlosa(txt){
   return out + resalta(txt.slice(ult));
 }
 
+/* Nota plegable: por encima de UMBRAL_NOTA caracteres se pliega a dos líneas
+   y se añade el botón; el texto sigue entero en el HTML (y en el buscador). */
+const UMBRAL_NOTA = 260;
+function notaPlegable(html, textoPlano){
+  if (!html) return '';
+  const largo = (textoPlano || html.replace(/<[^>]+>/g, '')).length;
+  const casaQ = q && textoPlano && sinDia(textoPlano).includes(sinDia(q));
+  if (largo <= UMBRAL_NOTA || casaQ) return '<p class="nota">' + html + '</p>';
+  return '<p class="nota plegada"><span class="cuerpo">' + html + '</span>' +
+    '<button type="button" class="mas" aria-expanded="false" title="Desplegar la nota entera">más ▾</button></p>';
+}
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('.nota .mas'); if (!b) return;
+  const p = b.closest('.nota'); const abierta = p.classList.toggle('plegada');
+  b.textContent = abierta ? 'más ▾' : 'menos ▴'; b.setAttribute('aria-expanded', String(!abierta));
+});
+
 function capaNorma(t){
   const notas = [t.nota, t.conflicto].filter(Boolean).map(escapa).join(' ');
   const tip = 'Norma del repositorio|Lista normativa (comun/glosario.md): el español '
@@ -852,7 +876,7 @@ function capaNorma(t){
     + 'de esta página.' + (t.fijado_en ? ' Fijado en ' + t.fijado_en + '.' : '');
   return '<div class="capa capa-norma">' +
     '<div class="gl">' + marca('tag-norma', 'norma', tip) + sentido(t) + '</div>' +
-    (notas ? '<p class="nota">' + notas + '</p>' : '') + '</div>';
+    (notas ? notaPlegable(notas, notas) : '') + '</div>';
 }
 function capaNand(t){
   const refs = (t.refs && t.refs.length)
@@ -902,7 +926,7 @@ function capaSmith(t){
   return '<div class="capa capa-smith">' +
     '<div class="gl">' + marca('tag-smith', t.epigrafe, tip) +
       sentido(t) + vars +
-    '</div>' + (marcas || notas ? '<p class="nota">' + marcas + notas + '</p>' : '') + '</div>';
+    '</div>' + (marcas || notas ? notaPlegable(marcas + notas, notas) : '') + '</div>';
 }
 function fichaGrupo(gr){
   const nC = (gr.c || []).length, nN = (gr.n || []).length, nG = (gr.g || []).length;
