@@ -1,0 +1,556 @@
+{
+ "pagina": 1132,
+ "terminos": [
+  {
+   "pali": "lokiyamahājana",
+   "fr": "au courant de l'usage vohāra du monde lokiyamahājana (cf. lokavohāra, lokikappayoga)",
+   "es": "al corriente del uso vohāra del mundo lokiyamahājana (cf. lokavohāra, lokikappayoga)",
+   "en": "conversant with the usage vohāra of the world lokiyamahājana (cf. lokavohāra, lokikappayoga)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.2",
+   "nota": "«La gran gente del mundo», el común de los seglares. Smith parte la palabra ENTRE PÁGINAS: «lokiyama-» al pie de la p. 1131 y «hājana» al abrir la 1132. La ficha vive aquí, donde la palabra se completa, y cierra la frase que empezó en vohāra (p. 1131)."
+  },
+  {
+   "pali": "lokavohāra",
+   "fr": "(cf. lokavohāra, lokikappayoga)",
+   "es": "(cf. lokavohāra, lokikappayoga)",
+   "en": "(cf. lokavohāra, lokikappayoga)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.2",
+   "nota": "«El uso del mundo», el habla corriente. Es el vohāra de la p. 1131 con loka- delante, y hace pareja con el ariyavohāra de allí: el trato de los nobles frente al del mundo."
+  },
+  {
+   "pali": "lokikappayoga",
+   "fr": "(cf. lokavohāra, lokikappayoga)",
+   "es": "(cf. lokavohāra, lokikappayoga)",
+   "en": "(cf. lokavohāra, lokikappayoga)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«El empleo propio de lo mundano»: lokika + payoga. Segundo sinónimo del habla común, junto a lokavohāra."
+  },
+  {
+   "pali": "saddabheda",
+   "fr": "mais la distinction (saddabheda, v. aussi 127,33—129,6) reste nette entre le Pali (cf. lokanīti-vidhura) et le non-Pali amāgadhika",
+   "es": "pero la distinción (saddabheda, v. también 127,33—129,6) sigue siendo neta entre el Pali (cf. lokanīti-vidhura) y el no-Pali amāgadhika",
+   "en": "but the distinction (saddabheda, see also 127,33—129,6) remains sharp between Pali (cf. lokanīti-vidhura) and non-Pali amāgadhika",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "127,33—129,6",
+   "conflicto": "Los dos hablan de saddabheda y no hablan de lo mismo. En Smith es el CORTE entre el pāḷi y el no-pāḷi, la línea que separa una lengua de otra; en Nandisena es una tripartición interna de la variación de la palabra —«variación en los sonidos… es de 3 tipos: mattā-bheda, vaṇṇa-bheda y rūḷhī-bheda»—, que se da DENTRO de la lengua. De propina, el tercer tipo de Nandisena, rūḷhī-bheda, usa la misma rūḷhi que Smith trae en 6.0.1 (p. 1133).",
+   "nota": "«La diferencia de palabra»: el criterio por el que una voz es pāḷi o no lo es. VERIFICADO CONTRA LA FUENTE: la p. 127 del vol. I tiene 33 líneas de texto y la 33 es la última, «padesaṃ sakkaccaṃ gahetvā jānitabbā. Buddhavacanasmiṃ», que abre la frase; el pasaje se cierra en la línea 6 de la p. 129, «garatare nibbānatitthūpage” ti», final de la estrofa citada. La referencia cae exactamente donde Smith dice. De propina, el pasaje trae en sus primeras líneas akkharacintakānaṃ, saddasattham y pāḷinayā, que son las voces que él glosa en esta misma página."
+  },
+  {
+   "pali": "lokanīti-vidhura",
+   "fr": "reste nette entre le Pali (cf. lokanīti-vidhura)",
+   "es": "sigue siendo neta entre el Pali (cf. lokanīti-vidhura)",
+   "en": "remains sharp between Pali (cf. lokanīti-vidhura)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "lokanītividhura"
+   ],
+   "ref_smith": "129,4",
+   "nota": "«Ajeno a la norma del mundo». Se transcribe con el guión que Smith imprime. VERIFICADO CONTRA LA FUENTE, y por partida doble: la voz está en la línea 4 de la p. 129 del vol. I —«yebhuyyena hi lokanītividhurā pāṭhe nayā vijjare»—, que es justo el pasaje que él acaba de citar, y allí, en cuerpo de texto y no en el cuerpo diminuto del Conspectus, la ī LARGA se lee sin discusión, por contraste con las i breves de la misma palabra. Es la manera limpia de resolver una ī: no forzando la imagen del Conspectus, sino leyéndola en la página a la que él remite. El lema es, pues, lokanīti, el mismo -nīti de Saddanīti."
+  },
+  {
+   "pali": "amāgadhika",
+   "fr": "et le non-Pali amāgadhika",
+   "es": "y el no-Pali amāgadhika",
+   "en": "and non-Pali amāgadhika",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.2",
+   "nota": "«Lo no magadhense»: la negación del Māgadhikā bhāsā de la p. 1131. Smith lo usa como el nombre técnico de todo lo que queda fuera de la lengua del canon."
+  },
+  {
+   "pali": "sakkaṭabhāsā",
+   "fr": "notamment le sanskrit sakkaṭabhāsā (cf. sakkaṭagantha)",
+   "es": "en particular el sánscrito sakkaṭabhāsā (cf. sakkaṭagantha)",
+   "en": "notably Sanskrit sakkaṭabhāsā (cf. sakkaṭagantha)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«La lengua sánscrita», con la forma pāḷi sakkaṭa- (no sakkata-): comprobada la ṭ retrofleja a 400 dpi. El primer ejemplo de amāgadhika."
+  },
+  {
+   "pali": "sakkaṭagantha",
+   "fr": "(cf. sakkaṭagantha)",
+   "es": "(cf. sakkaṭagantha)",
+   "en": "(cf. sakkaṭagantha)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "«El libro sánscrito». El gantha de la p. 1131 era la unidad métrica de 32 sílabas; aquí vale «obra, libro», que es su otro oficio."
+  },
+  {
+   "pali": "kavi",
+   "fr": "cultivé par les poètes kavi",
+   "es": "cultivado por los poetas kavi",
+   "en": "cultivated by the poets kavi",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«Poeta». Abre la serie de los tres oficios que Smith adjudica al sánscrito: cultivado por poetas, enseñado por gramáticos, transmitido por la gramática."
+  },
+  {
+   "pali": "veyyākaraṇa",
+   "fr": "enseigné par les grammairiens veyyākaraṇa, akkharacintaka, saddasatthavidū",
+   "es": "enseñado por los gramáticos veyyākaraṇa, akkharacintaka, saddasatthavidū",
+   "en": "taught by the grammarians veyyākaraṇa, akkharacintaka, saddasatthavidū",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "«Gramático», la PERSONA. Ojo, porque el mismo veyyākaraṇa es uno de los nueve aṅga de la p. 1131, donde nombra un GÉNERO, la exposición en prosa. El cotejo con Nandisena lo confirma: su entrada registra los dos valores, «gramático; explicación; exégesis», de modo que la ambigüedad no es de esta página sino del término. Y ojo también con la pareja de esta misma línea: veyyākaraṇa es quien enseña, vyākaraṇa —unas palabras más abajo— es la disciplina. Smith usa las dos formas en la misma frase y no son intercambiables. Cabecera de la serie de los tres nombres del gramático."
+  },
+  {
+   "pali": "akkharacintaka",
+   "fr": "enseigné par les grammairiens … akkharacintaka",
+   "es": "enseñado por los gramáticos … akkharacintaka",
+   "en": "taught by the grammarians … akkharacintaka",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "129,1",
+   "nota": "«El que reflexiona sobre las letras». Segundo nombre del gramático. Está atestiguado en el pasaje que Smith cita cuatro líneas antes: «akkharacintakānaṃ ñāṇacakkhusammuyhanaṭṭhānabhūtā» (Sad. 129,1), donde son ellos los que se desorientan."
+  },
+  {
+   "pali": "saddasatthavidū",
+   "fr": "enseigné par les grammairiens … saddasatthavidū (cf. vedavidū maîtres de prātiśākhya?)",
+   "es": "enseñado por los gramáticos … saddasatthavidū (cf. vedavidū, maestros de prātiśākhya?)",
+   "en": "taught by the grammarians … saddasatthavidū (cf. vedavidū, masters of prātiśākhya?)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«El conocedor de la ciencia de la palabra». Tercer nombre del gramático, y el que da pie a la comparación con el vedavidū."
+  },
+  {
+   "pali": "vedavidū",
+   "fr": "(cf. vedavidū maîtres de prātiśākhya?)",
+   "es": "(cf. vedavidū, maestros de prātiśākhya?)",
+   "en": "(cf. vedavidū, masters of prātiśākhya?)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«El conocedor del Veda». El signo de interrogación es de Smith y es suyo el reparo: propone, sin afirmarlo, que los vedavidū del texto pāḷi sean los maestros de los prātiśākhya védicos. Se conserva la interrogación."
+  },
+  {
+   "pali": "prātiśākhya",
+   "fr": "maîtres de prātiśākhya?",
+   "es": "maestros de prātiśākhya?",
+   "en": "masters of prātiśākhya?",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "duda": "Es forma SÁNSCRITA —prāti-, con el grupo pr que el pāḷi no tiene, y ś palatal—, y Smith declaró en 4.1 que los corchetes traen el sánscrito, como hace con [āmreḍitasamāsa], [udātta] y [śāstra]. Aquí no los pone. Es el mismo caso que el anuprāsa de 5.3.1 (p. 1127) y que el vaṃśa- de esta misma página: tres sánscritos sin corchete en cuatro páginas. Puede que la convención de los corchetes no sea tan firme como parecía. Queda anotado, no corregido.",
+   "nota": "Los tratados fonéticos de cada escuela védica, que describen la recitación del texto sagrado. Smith los trae como el paralelo indio de la gramática pāḷi."
+  },
+  {
+   "pali": "saddasattha",
+   "fr": "et transmis par la grammaire saddasattha (saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "es": "y transmitido por la gramática saddasattha (saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "en": "and handed down by grammar saddasattha (saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 6.5.1—6.5.3",
+   "nota": "«La ciencia de la palabra», la gramática como disciplina. Cabecera de la terna de sus nombres, y cierra 5.3.3.2. Está en el pasaje citado: «jānantā api saddasattham akhilaṃ muyhanti pāṭhakkame» (Sad. 129,2-3)."
+  },
+  {
+   "pali": "saddalakkhaṇa",
+   "fr": "(saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "es": "(saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "en": "(saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«La caracterización de la palabra». Segundo nombre de la gramática. Reaparece en 5.3.3.3, unas líneas más abajo, y allí no nombra la disciplina sino a quien la practica hoy: son dos fichas y dos oficios."
+  },
+  {
+   "pali": "vyākaraṇa",
+   "fr": "(saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "es": "(saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "en": "(saddalakkhaṇa, vyākaraṇa; Index A 6.5.1—6.5.3)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "veyyākaraṇa"
+   ],
+   "nota": "«Análisis, gramática», la DISCIPLINA, con la forma sánscrita vyākaraṇa y no la pāḷi veyyākaraṇa. Smith imprime las dos en la misma frase y con oficios distintos —veyyākaraṇa el gramático, vyākaraṇa la gramática—, de modo que la diferencia de forma es deliberada."
+  },
+  {
+   "pali": "(sammukha)sāvaka",
+   "fr": "Outre les ouvrages attribués aux disciples immédiats (sammukha)sāvaka et reçus dans le Canon (Index A 2.5.11; 2.5.12)",
+   "es": "Aparte de las obras atribuidas a los discípulos inmediatos (sammukha)sāvaka y recibidas en el Canon (Index A 2.5.11; 2.5.12)",
+   "en": "Besides the works ascribed to the immediate disciples (sammukha)sāvaka and received into the Canon (Index A 2.5.11; 2.5.12)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 2.5.11; 2.5.12",
+   "variantes": [
+    "sammukhasāvaka",
+    "sāvaka"
+   ],
+   "nota": "ABRE 5.3.3.3, que es el epígrafe de los comentarios y de la literatura posterior al canon. Se transcribe con el paréntesis pegado, como está impreso: recoge sāvaka y sammukhasāvaka. «Discípulo de viva voz», el que oyó al Buddha en persona. cf. sāvaka en 5.3.3.2 (p. 1131), donde era el discípulo sin más."
+  },
+  {
+   "pali": "mūlasaṅgīti",
+   "fr": "ou admis dès le premier Concile mūlasaṅgīti (ib. 2.7.2)",
+   "es": "o admitidas ya desde el primer Concilio mūlasaṅgīti (ib. 2.7.2)",
+   "en": "or admitted at the first Council mūlasaṅgīti (ib. 2.7.2)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "ib. 2.7.2",
+   "ref_interna": "5.3.3.1",
+   "nota": "«La recitación primera»: el concilio de Rājagaha. La ī de -gīti se transcribe por la lengua, no por la imagen —saṅgīti es la forma corriente—; el criterio es el de la sesión 47. cf. saṅgīti y las tres kathā de 5.3.3.1 (p. 1130)."
+  },
+  {
+   "pali": "potthakārohasaṅgīti",
+   "fr": "certains textes (ib 2.6; 4.1.1) antérieurs à l'Assemblée de codification potthakārohasaṅgīti",
+   "es": "ciertos textos (ib 2.6; 4.1.1) anteriores a la Asamblea de codificación potthakārohasaṅgīti",
+   "en": "certain texts (ib 2.6; 4.1.1) earlier than the Assembly of codification potthakārohasaṅgīti",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "ib 2.6; 4.1.1",
+   "nota": "«La recitación de la subida al libro»: el concilio en que el canon se puso por escrito, en Ceilán. Nótese que aquí Smith escribe «ib» SIN punto, y con punto en las demás remisiones de la página; se transcribe como está impreso. El verbo āropeti es el mismo del tantiṃ āropeti de la p. 1131: allí se sube al texto, aquí al libro."
+  },
+  {
+   "pali": "Sīhaḷaṭṭhakathā",
+   "fr": "ou du moins à la transposition du Commentaire proto-singalais Sīhaḷaṭṭhakathā du Mahāvihāra",
+   "es": "o al menos a la trasposición del Comentario protosingalés Sīhaḷaṭṭhakathā del Mahāvihāra",
+   "en": "or at least than the transposition of the proto-Sinhalese Commentary Sīhaḷaṭṭhakathā of the Mahāvihāra",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«El comentario cingalés»: el cuerpo de comentario en singalés antiguo que Buddhaghosa vertió al pāḷi y que no se ha conservado. Va con mayúscula, como está impreso."
+  },
+  {
+   "pali": "tantinayānukūlā bhāsā",
+   "fr": "dans une langue conforme à celle du Canon tantinayānukūlā bhāsā (tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "es": "a una lengua conforme a la del Canon tantinayānukūlā bhāsā (tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "en": "into a language conforming to that of the Canon tantinayānukūlā bhāsā (tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "tantinayānukūla"
+   ],
+   "ref_interna": "5.3.3.1",
+   "nota": "Se transcribe en DOS PALABRAS y en femenino, como está impreso. «La lengua acorde con el método del texto». El tanti es el del tantiṃ āropeti y el tantī ṭhapitā de la p. 1131. Cabecera de la serie de los cuatro nombres de esa conformidad."
+  },
+  {
+   "pali": "tantinayānugā",
+   "fr": "(tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "es": "(tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "en": "(tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "tantinayānuga"
+   ],
+   "nota": "«Que sigue el método del texto». Va en femenino, concordando con bhāsā, como está impreso."
+  },
+  {
+   "pali": "pāḷinayānurūpā",
+   "fr": "(tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "es": "(tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "en": "(tantinayānugā, pāḷinayānurūpā; cf. pāvacanānukūla)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "pāḷinayānurūpa"
+   ],
+   "ref_smith": "129,2",
+   "nota": "«Conforme al método del pāḷi», en femenino como las anteriores. Aquí pāḷi es el TEXTO canónico, con diacríticos, según la distinción que Smith mantiene desde la p. 1130. La expresión pāḷinaya está atestiguada en el pasaje que él cita: «pāḷinayā vividhā dissanti» (Sad. 129,2)."
+  },
+  {
+   "pali": "pāvacanānukūla",
+   "fr": "(cf. pāvacanānukūla)",
+   "es": "(cf. pāvacanānukūla)",
+   "en": "(cf. pāvacanānukūla)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«Conforme a la palabra proclamada». Cuarto nombre de la serie, y el único que Smith trae con «cf.», es decir, no como sinónimo pleno sino como voz vecina."
+  },
+  {
+   "pali": "(saddhamma)neruttika",
+   "fr": "les premiers grammairiens Palis (saddhamma)neruttika, niruttaññū, sāsanika (Index A 5.0.1 … 5.0.4)",
+   "es": "los primeros gramáticos palis (saddhamma)neruttika, niruttaññū, sāsanika (Index A 5.0.1 … 5.0.4)",
+   "en": "the first Pali grammarians (saddhamma)neruttika, niruttaññū, sāsanika (Index A 5.0.1 … 5.0.4)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 5.0.1 … 5.0.4",
+   "variantes": [
+    "saddhammaneruttika",
+    "neruttika"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge neruttika y saddhammaneruttika. «El etimólogo», el que domina la nirutti. Cabecera de la serie de los tres nombres del primer gramático pāḷi."
+  },
+  {
+   "pali": "niruttaññū",
+   "fr": "(saddhamma)neruttika, niruttaññū, sāsanika",
+   "es": "(saddhamma)neruttika, niruttaññū, sāsanika",
+   "en": "(saddhamma)neruttika, niruttaññū, sāsanika",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«El que sabe de nirutti». Segundo nombre de la serie. La nirutti es la de Māgadhikā nirutti en la p. 1131."
+  },
+  {
+   "pali": "sāsanika",
+   "fr": "(saddhamma)neruttika, niruttaññū, sāsanika",
+   "es": "(saddhamma)neruttika, niruttaññū, sāsanika",
+   "en": "(saddhamma)neruttika, niruttaññū, sāsanika",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "«El hombre de la Enseñanza». Tercer nombre de la serie. Es el adjetivo del sāsana de 5.3.3.1 (p. 1130), y hace pareja con el sāsanayutti de la p. 1131."
+  },
+  {
+   "pali": "saddalakkhaṇa",
+   "fr": "et les représentants de la grammaire actuelle saddalakkhaṇa, akkharasamaya (ib. 5.1; 5.2 (5.3 … 5.4.14))",
+   "es": "y los representantes de la gramática actual saddalakkhaṇa, akkharasamaya (ib. 5.1; 5.2 (5.3 … 5.4.14))",
+   "en": "and the representatives of present-day grammar saddalakkhaṇa, akkharasamaya (ib. 5.1; 5.2 (5.3 … 5.4.14))",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "ib. 5.1; 5.2 (5.3 … 5.4.14)",
+   "nota": "Segunda aparición en esta misma página: en 5.3.3.2, unas líneas más arriba, saddalakkhaṇa era uno de los nombres de la GRAMÁTICA; aquí nombra la OBRA gramatical de la época. Smith reparte el mismo término entre dos epígrafes seguidos y con dos valores; conviene no fundirlos."
+  },
+  {
+   "pali": "akkharasamaya",
+   "fr": "la grammaire actuelle saddalakkhaṇa, akkharasamaya",
+   "es": "la gramática actual saddalakkhaṇa, akkharasamaya",
+   "en": "present-day grammar saddalakkhaṇa, akkharasamaya",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«La convención de las letras», es decir, el arte de escribir y, por extensión, la gramática. Segundo nombre de la obra gramatical actual."
+  },
+  {
+   "pali": "(porāṇ)aṭṭhakathā",
+   "fr": "— (A) des commentaires (porāṇ)aṭṭhakathā, attha(saṃ)vaṇṇanā (Index A 1.1,1 … 3.7,1 plus 2.8.1; v. aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "es": "— (A) de los comentarios (porāṇ)aṭṭhakathā, attha(saṃ)vaṇṇanā (Index A 1.1,1 … 3.7,1 más 2.8.1; v. aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "en": "— (A) with the commentaries (porāṇ)aṭṭhakathā, attha(saṃ)vaṇṇanā (Index A 1.1,1 … 3.7,1 plus 2.8.1; see aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 1.1,1 … 3.7,1 plus 2.8.1",
+   "variantes": [
+    "aṭṭhakathā",
+    "porāṇaṭṭhakathā"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge aṭṭhakathā y porāṇaṭṭhakathā, «el comentario antiguo». Abre la letra (A) de las tres con que Smith reparte la literatura exegética. Ojo con la puntuación de sus remisiones: escribe «1.1,1» y «3.7,1» con COMA antes de la última cifra, y «2.8.1» con punto; la coma marca la capa comentarial dentro de la obra, y reaparece en las remisiones de las ṭīkā."
+  },
+  {
+   "pali": "attha(saṃ)vaṇṇanā",
+   "fr": "des commentaires (porāṇ)aṭṭhakathā, attha(saṃ)vaṇṇanā",
+   "es": "de los comentarios (porāṇ)aṭṭhakathā, attha(saṃ)vaṇṇanā",
+   "en": "with the commentaries (porāṇ)aṭṭhakathā, attha(saṃ)vaṇṇanā",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "atthavaṇṇanā",
+    "atthasaṃvaṇṇanā"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge atthavaṇṇanā y atthasaṃvaṇṇanā, «la exposición del sentido». Segundo nombre del comentario."
+  },
+  {
+   "pali": "aṭṭhakathātanti",
+   "fr": "(v. aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "es": "(v. aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "en": "(see aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.2",
+   "nota": "«El texto del comentario»: el tanti aplicado, no ya al canon, sino al comentario mismo. Es el término de la p. 1131 —tantiṃ āropeti, tantī ṭhapitā— trasladado un escalón más abajo en la jerarquía de los textos."
+  },
+  {
+   "pali": "aṭṭhakathāpāṭha",
+   "fr": "(v. aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "es": "(v. aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "en": "(see aṭṭhakathātanti, aṭṭhakathāpāṭha)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«La lectura del comentario»: el pāṭha, la lección de un pasaje tal como se lee. La palabra sale en el verso que Smith cita, «muyhanti pāṭhakkame» (Sad. 129,3)."
+  },
+  {
+   "pali": "pāḷinayaññū",
+   "fr": "dont les auteurs passent pour connaître à fond le système linguistique du Canon : pāḷinayaññū",
+   "es": "cuyos autores pasan por conocer a fondo el sistema lingüístico del Canon: pāḷinayaññū",
+   "en": "whose authors are held to know thoroughly the linguistic system of the Canon: pāḷinayaññū",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«El que sabe el método del pāḷi». Smith parte la palabra de línea, «pāḷi-/nayaññū». Es la contrapartida del niruttaññū de más arriba, y la razón por la que el comentario tiene autoridad en materia de lengua."
+  },
+  {
+   "pali": "ṭīkā",
+   "fr": "— (B) des sous-commentaires ṭīkā (éclaircissements du sens qui se dérobe līnattha-pakāsana, -dīpana)",
+   "es": "— (B) de los subcomentarios ṭīkā (esclarecimientos del sentido que se esconde līnattha-pakāsana, -dīpana)",
+   "en": "— (B) with the sub-commentaries ṭīkā (elucidations of the hidden sense līnattha-pakāsana, -dīpana)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«Subcomentario». Abre la letra (B), y es la cabecera de toda la serie de las ṭīkā que ocupa el resto de la página: porāṇaṭīkā, mūlaṭīkā, mahāṭīkā, anuṭīkā, (abhi)navaṭīkā."
+  },
+  {
+   "pali": "līnattha-pakāsana",
+   "fr": "(éclaircissements du sens qui se dérobe līnattha-pakāsana, -dīpana)",
+   "es": "(esclarecimientos del sentido que se esconde līnattha-pakāsana, -dīpana)",
+   "en": "(elucidations of the hidden sense līnattha-pakāsana, -dīpana)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "līnatthapakāsana"
+   ],
+   "nota": "«El que hace patente el sentido escondido»: es el título que llevan de hecho varias ṭīkā del canon. Se transcribe con el guión que Smith imprime. Las dos ī largas se leen por la lengua —līna «adherido, escondido», dīpana «iluminar»—, no por la imagen, según el criterio de la sesión 47."
+  },
+  {
+   "pali": "-dīpana",
+   "fr": "(… līnattha-pakāsana, -dīpana)",
+   "es": "(… līnattha-pakāsana, -dīpana)",
+   "en": "(… līnattha-pakāsana, -dīpana)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "līnatthadīpana"
+   ],
+   "nota": "Se transcribe ABREVIADO, como está impreso. Es el mismo procedimiento de las series de 5.1.1.3 y 5.2.3 —«kattu-», «tappurisagabbha-»—, pero al revés: allí Smith abrevia el SEGUNDO miembro y deja el guión a la derecha; aquí abrevia el PRIMERO y el guión queda a la izquierda. Es el primer lema del Conspectus con guión inicial. Desplegado, līnatthadīpana."
+  },
+  {
+   "pali": "porāṇaṭīkā",
+   "fr": "à savoir les porāṇaṭīkā (ib. 1.2,11; 2.1,11 … 2.4,11)",
+   "es": "a saber, las porāṇaṭīkā (ib. 1.2,11; 2.1,11 … 2.4,11)",
+   "en": "namely the porāṇaṭīkā (ib. 1.2,11; 2.1,11 … 2.4,11)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "ib. 1.2,11; 2.1,11 … 2.4,11",
+   "nota": "«La ṭīkā antigua». En las remisiones de esta serie el «,11» es la capa del subcomentario dentro de la obra: 1.2,11 es la ṭīkā de 1.2. Smith usa la coma para ese escalón y el punto para los demás."
+  },
+  {
+   "pali": "mūlaṭīkā",
+   "fr": "les mūlaṭīkā (ib. 3.1,11 … 3.7,11)",
+   "es": "las mūlaṭīkā (ib. 3.1,11 … 3.7,11)",
+   "en": "the mūlaṭīkā (ib. 3.1,11 … 3.7,11)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "ib. 3.1,11 … 3.7,11",
+   "nota": "«La ṭīkā de la raíz», la que comenta directamente el comentario. Las remisiones caen todas en el 3, que es el Abhidhamma."
+  },
+  {
+   "pali": "mahāṭīkā",
+   "fr": "et une mahāṭīkā (ib. 2.8.1,1)",
+   "es": "y una mahāṭīkā (ib. 2.8.1,1)",
+   "en": "and one mahāṭīkā (ib. 2.8.1,1)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "ib. 2.8.1,1",
+   "duda": "El tercer separador de la remisión no se decide sobre la imagen: a 400 dpi «2.8.1,1» y «2.8.1.1» dan la misma mancha. Se transcribe con coma porque es lo que hace el resto de la serie —1.2,11, 3.1,11— donde la coma introduce la capa comentarial, y porque el comentario al que remite, «plus 2.8.1», se acaba de citar con puntos. Queda para cotejar.",
+   "nota": "«La gran ṭīkā», y Smith subraya que es UNA sola: la Paramatthamañjūsā al Visuddhimagga."
+  },
+  {
+   "pali": "anuṭīkā",
+   "fr": "tandis que les anuṭīkā, les (abhi)navaṭīkā",
+   "es": "mientras que las anuṭīkā, las (abhi)navaṭīkā",
+   "en": "whereas the anuṭīkā, the (abhi)navaṭīkā",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "«La ṭīkā subsiguiente», la que comenta a otra ṭīkā. Abre la lista de lo que Smith deja FUERA: desde aquí y hasta el final de la página, todo lo enumerado «n'ont rien à voir ici»."
+  },
+  {
+   "pali": "(abhi)navaṭīkā",
+   "fr": "les (abhi)navaṭīkā",
+   "es": "las (abhi)navaṭīkā",
+   "en": "the (abhi)navaṭīkā",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "variantes": [
+    "navaṭīkā",
+    "abhinavaṭīkā"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge navaṭīkā y abhinavaṭīkā, «la ṭīkā nueva»."
+  },
+  {
+   "pali": "gaṇṭhipadavivaraṇa",
+   "fr": "les élucidations de passages et de mots difficiles gaṇṭhipadavivaraṇa (gæṭapada; Spṭ ad Sp 1,6)",
+   "es": "las elucidaciones de pasajes y de palabras difíciles gaṇṭhipadavivaraṇa (gæṭapada; Spṭ ad Sp 1,6)",
+   "en": "the elucidations of difficult passages and words gaṇṭhipadavivaraṇa (gæṭapada; Spṭ ad Sp 1,6)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "Spṭ ad Sp 1,6",
+   "nota": "«La explicación de los pasajes anudados»: gaṇṭhi es el nudo, y de ahí el pasaje que se resiste. Comprobada a 400 dpi la ṇ de gaṇṭhi- y las dos ṇ de -vivaraṇa."
+  },
+  {
+   "pali": "gæṭapada",
+   "fr": "(gæṭapada; Spṭ ad Sp 1,6)",
+   "es": "(gæṭapada; Spṭ ad Sp 1,6)",
+   "en": "(gæṭapada; Spṭ ad Sp 1,6)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "NO ES PĀḶI: es la forma SINGALESA del mismo nombre, y por eso lleva æ, letra que el pāḷi no tiene. Comprobada a 400 dpi. Smith empareja el término pāḷi con el singalés sin decir que cambia de lengua, igual que hará dos líneas más abajo con sannaya y nissaya."
+  },
+  {
+   "pali": "Mahābodhivaṃśaparikathā",
+   "fr": "un commentaire singalais comme la Mahābodhivaṃśaparikathā (Index A 4.1.3,(2)",
+   "es": "un comentario singalés como la Mahābodhivaṃśaparikathā (Index A 4.1.3,(2)",
+   "en": "a Sinhalese commentary such as the Mahābodhivaṃśaparikathā (Index A 4.1.3,(2)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 4.1.3,(2)",
+   "duda": "Smith imprime vaṃśa- con Ś PALATAL SÁNSCRITA, no el vaṃsa- pāḷi que pediría el título de la obra (Mahābodhivaṃsa). Comprobado a 400 dpi: el acento sobre la s se ve limpio, y contrasta con las s de las palabras vecinas. Y va sin corchetes, como el prātiśākhya de esta misma página y el anuprāsa de la p. 1127, contra la convención que él mismo declaró en 4.1. Puede ser deliberado —el título singalés— o errata. Se transcribe como está impreso.",
+   "nota": "«La disquisición sobre el Mahābodhivaṃsa». Smith parte la palabra de línea, «Mahābodhi-/vaṃśaparikathā». Nótese también que la remisión abre paréntesis y no lo cierra: «(Index A 4.1.3,(2),». Se transcribe así."
+  },
+  {
+   "pali": "sannaya",
+   "fr": "les paraphrases commentées — singalaises : sannaya, birmanes : nissaya — n'ont rien à voir ici",
+   "es": "las paráfrasis comentadas —singalesas: sannaya, birmanas: nissaya— nada tienen que ver aquí",
+   "en": "the annotated paraphrases — Sinhalese: sannaya, Burmese: nissaya — have no place here",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "nota": "NO ES PĀḶI: es la palabra SINGALESA para la paráfrasis palabra a palabra de un texto pāḷi. Smith la empareja con su equivalente birmano, y descarta las dos: son ayudas de lectura, no obras de gramática."
+  },
+  {
+   "pali": "nissaya",
+   "fr": "birmanes : nissaya — n'ont rien à voir ici",
+   "es": "birmanas: nissaya— nada tienen que ver aquí",
+   "en": "Burmese: nissaya — have no place here",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1132,
+   "fuente": "conspectus",
+   "conflicto": "Homónimo, y de los que engañan. Aquí nissaya es el GÉNERO birmano de paráfrasis; el nissaya de Nandisena es fonético: «aquello en lo que algo se apoya. Las vocales (sara) son nissaya porque las consonantes dependen de ellas para su pronunciación». Un lector de gramática tomará el segundo sin dudarlo.",
+   "nota": "La paráfrasis birmana, gemela del sannaya singalés. El término sí es pāḷi de forma —nissaya, «apoyo»—, pero aquí nombra un género birmano. Cierra la página; la frase sigue en la p. 1133."
+  }
+ ]
+}

@@ -1,0 +1,767 @@
+{
+ "pagina": 1134,
+ "terminos": [
+  {
+   "pali": "akkhara",
+   "fr": "Selon 604,28—605,6, la matière sonore (les 41 akkhara, 1.1.1) suffit aux sens conventionnels les plus nuancés et les plus abstrus atisukhumagambhīrasaṃketa",
+   "es": "Según 604,28—605,6, la materia sonora (los 41 akkhara, 1.1.1) basta para los sentidos convencionales más matizados y más recónditos atisukhumagambhīrasaṃketa",
+   "en": "According to 604,28—605,6, the sound material (the 41 akkhara, 1.1.1) suffices for the most nuanced and most abstruse conventional senses atisukhumagambhīrasaṃketa",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "604,28—605,6",
+   "ref_interna": "1.1.1",
+   "nota": "Segunda aparición del término con este valor —el fonema-sílaba de 1.1.1—, ahora como punto de partida de la semántica. VERIFICADO CONTRA LA FUENTE: la línea 24 de la p. 604 del vol. III dice «Te akārappabhutī ekacattālīsa saddā akkharā ca nāma bhavanti», los cuarenta y un sonidos que Smith cuenta; el pasaje que él acota empieza en la línea 28, «ime pana vaṇṇā saṃ-[khāra…]», y se cierra en la línea 6 de la p. 605, «abhidheyyam pi patvā na khīyantī ti attho ti». Las dos puntas caen exactamente donde dice. Y el cotejo con Nandisena cierra el círculo: su entrada de akkhara cuenta también CUARENTA Y UNO —«hay 41 letras en el alfabeto pali», 8 vocales y 33 consonantes—, de modo que la cifra de Smith, la del texto de Aggavaṃsa y la del IEBH coinciden."
+  },
+  {
+   "pali": "atisukhumagambhīrasaṃketa",
+   "fr": "suffit aux sens conventionnels les plus nuancés et les plus abstrus atisukhumagambhīrasaṃketa",
+   "es": "basta para los sentidos convencionales más matizados y más recónditos atisukhumagambhīrasaṃketa",
+   "en": "suffices for the most nuanced and most abstruse conventional senses atisukhumagambhīrasaṃketa",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "605,1",
+   "variantes": [
+    "atisukhumagambhīrasaṃketesu"
+   ],
+   "ref_interna": "6.0.1",
+   "nota": "«Convención sutilísima y honda». VERIFICADO CONTRA LA FUENTE: está en la línea 1 de la p. 605 del vol. III, en locativo plural —«atisukhumagambhīrasaṃketesu parivattamānā pi»—, dentro del tramo que Smith acota. Es el saṃketa de 6.0.1 (p. 1133) llevado a su caso extremo: aun para lo más sutil bastan los cuarenta y un sonidos."
+  },
+  {
+   "pali": "ñeyyapatha",
+   "fr": "capable d'exprimer les cinq catégories connaissables ñeyyapatha : le réalisé saṃkhāra, l'évolué vikāra, les caractéristiques lakkhaṇa, le nibbāna (étant a-saṃkhata et [a-lakṣaṇa]), le concept paññatti",
+   "es": "capaz de expresar las cinco categorías cognoscibles ñeyyapatha: lo realizado saṃkhāra, lo evolucionado vikāra, las características lakkhaṇa, el nibbāna (que es a-saṃkhata y [a-lakṣaṇa]), el concepto paññatti",
+   "en": "able to express the five knowable categories ñeyyapatha: the realised saṃkhāra, the evolved vikāra, the characteristics lakkhaṇa, nibbāna (being a-saṃkhata and [a-lakṣaṇa]), the concept paññatti",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "604,29—30",
+   "variantes": [
+    "ñeyyapathesu"
+   ],
+   "nota": "«Las vías de lo cognoscible»: los cinco géneros de cosa que una palabra puede nombrar. VERIFICADO CONTRA LA FUENTE, y de un golpe con toda la serie: las líneas 29-30 de la p. 604 del vol. III dicen «saṃkhāra-vikāra-lakkhaṇa-nibbāna-paññattisaṃkhātesu pañcasu ñeyyapathesu vattamānā», que es exactamente la lista de Smith y en el mismo orden. Cabecera de las cinco fichas que siguen."
+  },
+  {
+   "pali": "saṃkhāra",
+   "fr": "le réalisé saṃkhāra",
+   "es": "lo realizado saṃkhāra",
+   "en": "the realised saṃkhāra",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "Primera de las cinco categorías. Smith escribe saṃkhāra con ṃ y no saṅkhāra con ṅ, como escribe saṃketa y saṃkhata: es su norma en toda la sección, y se transcribe como está impreso."
+  },
+  {
+   "pali": "vikāra",
+   "fr": "l'évolué vikāra",
+   "es": "lo evolucionado vikāra",
+   "en": "the evolved vikāra",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "1.2.3",
+   "conflicto": "Homónimo. Aquí vikāra es una CATEGORÍA de lo cognoscible, lo derivado de los elementos, en la serie de los cinco ñeyyapatha; el vikāra de 1.2.3 (p. 1107) y el de Nandisena es la ALTERACIÓN fonética: «cambio; alteración; modificación». En un libro de gramática el lector tomará el segundo, y aquí Smith habla del primero.",
+   "nota": "Segunda categoría. Mismo término, dos planos: el fonético y el ontológico."
+  },
+  {
+   "pali": "lakkhaṇa",
+   "fr": "les caractéristiques lakkhaṇa",
+   "es": "las características lakkhaṇa",
+   "en": "the characteristics lakkhaṇa",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "Tercera categoría: los rasgos —nacer, envejecer, perecer— que se predican de lo compuesto. Nada que ver aquí con el lakkhaṇa de saddalakkhaṇa (pp. 1132-1133), que es la caracterización gramatical."
+  },
+  {
+   "pali": "nibbāna",
+   "fr": "le nibbāna (étant a-saṃkhata et [a-lakṣaṇa])",
+   "es": "el nibbāna (que es a-saṃkhata y [a-lakṣaṇa])",
+   "en": "nibbāna (being a-saṃkhata and [a-lakṣaṇa])",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "Cuarta categoría, y la única que Smith glosa: es lo cognoscible que no es ni saṃkhāra ni lakkhaṇa, y por eso lo define por dos negaciones."
+  },
+  {
+   "pali": "a-saṃkhata",
+   "fr": "(étant a-saṃkhata et [a-lakṣaṇa])",
+   "es": "(que es a-saṃkhata y [a-lakṣaṇa])",
+   "en": "(being a-saṃkhata and [a-lakṣaṇa])",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "asaṃkhata"
+   ],
+   "nota": "«No compuesto». Se transcribe con el guión que Smith imprime para destacar la negación, y con la ṃ de su norma."
+  },
+  {
+   "pali": "a-lakṣaṇa",
+   "fr": "(étant a-saṃkhata et [a-lakṣaṇa])",
+   "es": "(que es a-saṃkhata y [a-lakṣaṇa])",
+   "en": "(being a-saṃkhata and [a-lakṣaṇa])",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "alakṣaṇa"
+   ],
+   "nota": "SÁNSCRITO entre corchetes, con ṣ retrofleja: «sin característica». Smith empareja la voz pāḷi atestiguada con la sánscrita que NO lo está, y por eso sólo la segunda va entre corchetes. Comprobada la ṣ a 400 dpi."
+  },
+  {
+   "pali": "paññatti",
+   "fr": "le concept paññatti",
+   "es": "el concepto paññatti",
+   "en": "the concept paññatti",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.2.1",
+   "nota": "Quinta y última categoría: lo que sólo existe como designación. Tercera aparición del término —la institución del nombre en 5.3.2.1 (p. 1128), la designación del mundo en 6.0.1 (p. 1133)— y aquí el concepto como género de lo cognoscible. Reaparece aún en 6.0.3, unas líneas más abajo, entre los nombres del hecho lingüístico."
+  },
+  {
+   "pali": "atyantābhāva",
+   "fr": "et elle confère à l'inexistant [voire à l'atyantābhāva] une existence fictive",
+   "es": "y confiere a lo inexistente [incluso al atyantābhāva] una existencia ficticia",
+   "en": "and it confers on the non-existent [even on the atyantābhāva] a fictitious existence",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "SÁNSCRITO entre corchetes: «la inexistencia absoluta», el término de la escolástica india para lo que no puede existir en ningún tiempo. El «voire» es de Smith: no sólo lo que de hecho no existe, sino incluso lo que no podría."
+  },
+  {
+   "pali": "asantaṃ santaṃ va kappīyati",
+   "fr": "une existence fictive : asantaṃ santaṃ va kappīyati 691,29—32",
+   "es": "una existencia ficticia: asantaṃ santaṃ va kappīyati 691,29—32",
+   "en": "a fictitious existence: asantaṃ santaṃ va kappīyati 691,29—32",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "691,29—32",
+   "nota": "Se transcribe la EXPRESIÓN ENTERA, como está impresa: «lo que no es se concibe como si fuese». VERIFICADO CONTRA LA FUENTE, y resulta ser algo más que una cita: la línea 29 de la p. 691 del vol. III es el SUTTA 549 entero, «Asantaṃ santaṃ va kappīyati, tañ ca», y las líneas 30-32 traen su vutti con los cinco ejemplos clásicos de lo imposible —«saññogo jāyati, abhāvo hoti, sasavisāṇaṃ tiṭṭhati, udumbarapupphaṃ vikasati, vañjhāputto dhāvati»: el cuerno de liebre, la flor del higo, el hijo de la estéril—. La referencia cae exactamente donde Smith dice."
+  },
+  {
+   "pali": "vatticchā",
+   "fr": "En somme, la volonté du sujet parlant vatticchā, vattum icchā ⟨vivacchā⟩ préside au choix du signifiant saddapaṭipatti (105,33)",
+   "es": "En suma, la voluntad del sujeto hablante vatticchā, vattum icchā ⟨vivacchā⟩ preside la elección del significante saddapaṭipatti (105,33)",
+   "en": "In sum, the will of the speaking subject vatticchā, vattum icchā ⟨vivacchā⟩ governs the choice of the signifier saddapaṭipatti (105,33)",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "105,33",
+   "nota": "«El querer decir»: vattu + icchā. Cabecera de la terna con que Smith nombra la intención del hablante, que es lo que cierra 6.0.2 y la tesis del epígrafe: entre la materia sonora y el sentido decide la voluntad de quien habla."
+  },
+  {
+   "pali": "vattum icchā",
+   "fr": "vatticchā, vattum icchā ⟨vivacchā⟩",
+   "es": "vatticchā, vattum icchā ⟨vivacchā⟩",
+   "en": "vatticchā, vattum icchā ⟨vivacchā⟩",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "Se transcribe en DOS PALABRAS, como está impreso: es la forma sin componer de vatticchā, «el deseo de decir», con el infinitivo suelto."
+  },
+  {
+   "pali": "vivacchā",
+   "fr": "⟨vivacchā⟩",
+   "es": "⟨vivacchā⟩",
+   "en": "⟨vivacchā⟩",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "ENTRE PARÉNTESIS ANGULARES, de modo que es TERMINOLOGÍA DE MOGGALLĀNA: la regla de la sesión 47 vale en esta dirección sin reservas. Es el desiderativo de vac-, «el querer decir», dicho con una sola palabra donde Aggavaṃsa necesita dos. Nada que ver con la vicchā de 5.2.1 (p. 1124), que es el valor distributivo."
+  },
+  {
+   "pali": "saddapaṭipatti",
+   "fr": "préside au choix du signifiant saddapaṭipatti (105,33)",
+   "es": "preside la elección del significante saddapaṭipatti (105,33)",
+   "en": "governs the choice of the signifier saddapaṭipatti (105,33)",
+   "epigrafe": "6.0.2",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "105,33",
+   "nota": "«El proceder de la palabra»: cómo se llega a emplear un sonido y no otro. Cierra 6.0.2. La referencia va leída de la imagen y no se ha cotejado."
+  },
+  {
+   "pali": "mukhyavasena",
+   "fr": "Soit en fonction propre mukhyavasena, soit en fonction dérivée (métonymique) upacāravasena, le Signifié abhidheyya",
+   "es": "Sea en función propia mukhyavasena, sea en función derivada (metonímica) upacāravasena, el Significado abhidheyya",
+   "en": "Whether in its proper function mukhyavasena or in a derived (metonymic) function upacāravasena, the Signified abhidheyya",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "mukhya"
+   ],
+   "nota": "ABRE 6.0.3, que es donde Smith monta el par significante/significado. Se transcribe en INSTRUMENTAL, como está impreso: «por vía de lo principal», es decir, en sentido recto. La forma mukhya es sánscrita de aspecto; el pāḷi corriente diría mukha-."
+  },
+  {
+   "pali": "upacāravasena",
+   "fr": "soit en fonction dérivée (métonymique) upacāravasena",
+   "es": "sea en función derivada (metonímica) upacāravasena",
+   "en": "or in a derived (metonymic) function upacāravasena",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "upacāra"
+   ],
+   "nota": "Se transcribe en instrumental, como está impreso: «por vía de traslación». El upacāra es el uso figurado, y Smith lo glosa «métonymique»: es el término que gobernará todo 6.3, los tropos, todavía sin transcribir."
+  },
+  {
+   "pali": "abhidheyya",
+   "fr": "le Signifié abhidheyya — tel qu'il se présente à l'esprit upaṭṭhāti (paṭibhāti) ⊃: est compris ñāyati, viññāyati (cf. atthāvabodha) ou sous-entendu gamyate",
+   "es": "el Significado abhidheyya —tal como se presenta a la mente upaṭṭhāti (paṭibhāti) ⊃: se comprende ñāyati, viññāyati (cf. atthāvabodha) o se sobreentiende gamyate",
+   "en": "the Signified abhidheyya — as it presents itself to the mind upaṭṭhāti (paṭibhāti) ⊃: is understood ñāyati, viññāyati (cf. atthāvabodha) or implied gamyate",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "605,6",
+   "ref_interna": "6.0.1",
+   "conflicto": "Los dos definen abhidheyya y no con el mismo alcance. En Smith es el SIGNIFICADO en general, una de las dos mitades del par semántico; en Nandisena es un tecnicismo estrecho del compuesto: «el significado expresado por un compuesto relativo (bahubbīhi)», con el ejemplo de āgatasamaṇo. Quien venga de la morfología leerá lo segundo donde Smith dice lo primero.",
+   "nota": "«Lo que ha de ser denotado», el SIGNIFICADO. Smith lo escribe con mayúscula, y con mayúscula el Signifiant que le corresponde: está montando el par a la europea, y la elección es suya y no de Aggavaṃsa. Está atestiguado en la p. 605 del vol. III, línea 6, «abhidheyyam pi patvā na khīyantī ti attho ti», que es justamente donde acaba el pasaje citado en 6.0.2. cf. abhidheyyattha en 6.0.1 (p. 1133)."
+  },
+  {
+   "pali": "upaṭṭhāti",
+   "fr": "tel qu'il se présente à l'esprit upaṭṭhāti (paṭibhāti)",
+   "es": "tal como se presenta a la mente upaṭṭhāti (paṭibhāti)",
+   "en": "as it presents itself to the mind upaṭṭhāti (paṭibhāti)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "Se transcribe en 3.ª persona, como está impreso: «se presenta, comparece». Cabecera de la serie de los cinco verbos con que Smith describe cómo el significado llega a la mente."
+  },
+  {
+   "pali": "paṭibhāti",
+   "fr": "upaṭṭhāti (paṭibhāti)",
+   "es": "upaṭṭhāti (paṭibhāti)",
+   "en": "upaṭṭhāti (paṭibhāti)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Se le ocurre, le viene a las mientes». Smith parte la palabra de línea, «paṭi-/bhāti»."
+  },
+  {
+   "pali": "ñāyati",
+   "fr": "⊃: est compris ñāyati, viññāyati (cf. atthāvabodha)",
+   "es": "⊃: se comprende ñāyati, viññāyati (cf. atthāvabodha)",
+   "en": "⊃: is understood ñāyati, viññāyati (cf. atthāvabodha)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Se conoce», pasivo. El signo ⊃ es el «es decir» de Smith, otra vez con dos puntos, «⊃:», como en las pp. 1131 y 1133: son ya tres apariciones seguidas de esa forma reforzada."
+  },
+  {
+   "pali": "viññāyati",
+   "fr": "est compris ñāyati, viññāyati (cf. atthāvabodha)",
+   "es": "se comprende ñāyati, viññāyati (cf. atthāvabodha)",
+   "en": "is understood ñāyati, viññāyati (cf. atthāvabodha)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Se entiende», pasivo con vi-, un grado más preciso que ñāyati."
+  },
+  {
+   "pali": "atthāvabodha",
+   "fr": "(cf. atthāvabodha)",
+   "es": "(cf. atthāvabodha)",
+   "en": "(cf. atthāvabodha)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«La comprensión del sentido»: el nombre de acción de los dos verbos anteriores."
+  },
+  {
+   "pali": "gamyate",
+   "fr": "ou sous-entendu gamyate",
+   "es": "o se sobreentiende gamyate",
+   "en": "or implied gamyate",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "duda": "Es forma SÁNSCRITA —pasivo en -yate, que el pāḷi hace -īyati, gamīyati—, y va SIN corchetes, contra la convención que Smith declaró en 4.1. Es el cuarto caso en tres páginas, con prātiśākhya y vaṃśa- (p. 1132) y anuprāsa (p. 1127). Se transcribe como está impreso.",
+   "nota": "«Se sobreentiende», el término técnico de la gramática india para lo que la frase implica sin decirlo. Cierra la serie de los cinco verbos."
+  },
+  {
+   "pali": "abhidhāna",
+   "fr": "a pour corrélatif le Signifiant abhidhāna, énonçant le sens (attha)bodhaka, (attha)pakāsaka, vācaka (cf. vācin, atthavat), gamaka, atthajotaka",
+   "es": "tiene por correlato el Significante abhidhāna, que enuncia el sentido (attha)bodhaka, (attha)pakāsaka, vācaka (cf. vācin, atthavat), gamaka, atthajotaka",
+   "en": "has as its correlate the Signifier abhidhāna, expressing the sense (attha)bodhaka, (attha)pakāsaka, vācaka (cf. vācin, atthavat), gamaka, atthajotaka",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.3",
+   "nota": "«La denominación», el SIGNIFICANTE, con mayúscula en Smith como su correlato abhidheyya. Es el abhidhāna del abhisaṃkhatābhidhāna de 5.3.3.3 (p. 1133). Cabecera de la serie de los seis adjetivos que dicen lo que hace el significante."
+  },
+  {
+   "pali": "(attha)bodhaka",
+   "fr": "énonçant le sens (attha)bodhaka, (attha)pakāsaka",
+   "es": "que enuncia el sentido (attha)bodhaka, (attha)pakāsaka",
+   "en": "expressing the sense (attha)bodhaka, (attha)pakāsaka",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "bodhaka",
+    "atthabodhaka"
+   ],
+   "ref_smith": "37,21",
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge bodhaka y atthabodhaka, «el que hace entender (el sentido)». La forma compuesta está atestiguada en el verso que Smith cita en la p. 1133: «saddā n' ev' atthabodhakā» (Sad. 37,21)."
+  },
+  {
+   "pali": "(attha)pakāsaka",
+   "fr": "(attha)bodhaka, (attha)pakāsaka, vācaka",
+   "es": "(attha)bodhaka, (attha)pakāsaka, vācaka",
+   "en": "(attha)bodhaka, (attha)pakāsaka, vācaka",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "pakāsaka",
+    "atthapakāsaka"
+   ],
+   "ref_smith": "37,22",
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge pakāsaka y atthapakāsaka, «el que manifiesta (el sentido)». Smith parte la palabra de línea, «(attha)pakā-/saka». Está en la segunda mitad del mismo verso: «attha te aññātā pakāsakā» (Sad. 37,22)."
+  },
+  {
+   "pali": "vācaka",
+   "fr": "vācaka (cf. vācin, atthavat)",
+   "es": "vācaka (cf. vācin, atthavat)",
+   "en": "vācaka (cf. vācin, atthavat)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El que dice», el denotativo. Es el término de la escolástica india para el significante frente a lo vācya."
+  },
+  {
+   "pali": "vācin",
+   "fr": "(cf. vācin, atthavat)",
+   "es": "(cf. vācin, atthavat)",
+   "en": "(cf. vācin, atthavat)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.1.1.1",
+   "nota": "Se cita el TEMA en -in, y Smith imprime la n final EN CURSIVA dentro de la palabra redonda, que es su manera de marcar que ahí acaba el tema y no la forma. Hace lo mismo en atthavat, dos palabras después. Es la costumbre que ya se vio en kattar (5.1.1.1) y en sotar (5.3.3.3, p. 1133): Smith cita en tema, no en nominativo."
+  },
+  {
+   "pali": "atthavat",
+   "fr": "(cf. vācin, atthavat)",
+   "es": "(cf. vācin, atthavat)",
+   "en": "(cf. vācin, atthavat)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Provisto de sentido». Tema en -vant, con la t final en cursiva por la misma razón que la n de vācin."
+  },
+  {
+   "pali": "gamaka",
+   "fr": "gamaka, atthajotaka",
+   "es": "gamaka, atthajotaka",
+   "en": "gamaka, atthajotaka",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El que hace llegar (al sentido)»: el correlato activo del gamyate de más arriba."
+  },
+  {
+   "pali": "atthajotaka",
+   "fr": "gamaka, atthajotaka, ou indiquant une nuance (atthavisesa)jotaka",
+   "es": "gamaka, atthajotaka, o que indica un matiz (atthavisesa)jotaka",
+   "en": "gamaka, atthajotaka, or indicating a nuance (atthavisesa)jotaka",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El que ilumina el sentido». Cierra la serie de los seis, y reaparece en 6.1.1.1, al pie de esta misma página, aplicado al pada."
+  },
+  {
+   "pali": "(atthavisesa)jotaka",
+   "fr": "ou indiquant une nuance (atthavisesa)jotaka",
+   "es": "o que indica un matiz (atthavisesa)jotaka",
+   "en": "or indicating a nuance (atthavisesa)jotaka",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "jotaka",
+    "atthavisesajotaka"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge jotaka y atthavisesajotaka, «el que ilumina un matiz de sentido». La diferencia con atthajotaka es de alcance: uno da el sentido, otro lo matiza."
+  },
+  {
+   "pali": "attha",
+   "fr": "— au Sens attha (pour «l'intention» bhāva, adhippāya v. 127,33—129,6) correspond l'Expression vyañjana",
+   "es": "— al Sentido attha (para «la intención» bhāva, adhippāya v. 127,33—129,6) corresponde la Expresión vyañjana",
+   "en": "— to the Sense attha (for «the intention» bhāva, adhippāya see 127,33—129,6) corresponds the Expression vyañjana",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "127,33—129,6",
+   "nota": "«El sentido», con mayúscula en Smith. Abre el segundo par del epígrafe, attha : vyañjana, que es el propiamente pāḷi —el primero, abhidheyya : abhidhāna, era escolástico— y el que la tradición resume en «según el espíritu y la letra». VERIFICADO CONTRA LA FUENTE: es la misma referencia que Smith da en 5.3.3.2 (p. 1132) para el saddabheda, y allí quedó comprobada línea a línea sobre las pp. 127-129 del vol. I. Que la use dos veces, para el corte pāḷi/no-pāḷi y para el par sentido/expresión, dice cuánto pesa ese pasaje en su lectura."
+  },
+  {
+   "pali": "bhāva",
+   "fr": "(pour «l'intention» bhāva, adhippāya v. 127,33—129,6)",
+   "es": "(para «la intención» bhāva, adhippāya v. 127,33—129,6)",
+   "en": "(for «the intention» bhāva, adhippāya see 127,33—129,6)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "conflicto": "Homónimo, y de los serios en una gramática. Aquí bhāva es la INTENCIÓN del hablante; el bhāva de Nandisena es morfológico: «estado; condición; cierta clase de nombre verbal; nombre abstracto; impersonal». Es el bhāva de la voz impersonal y del abstracto en -tā, que ningún lector de gramática dejará de suponer.",
+   "nota": "«Lo que se quiere decir». Las comillas de «l'intention» son de Smith."
+  },
+  {
+   "pali": "adhippāya",
+   "fr": "«l'intention» bhāva, adhippāya",
+   "es": "«la intención» bhāva, adhippāya",
+   "en": "«the intention» bhāva, adhippāya",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El propósito, la intención»: el término técnico para lo que el hablante quiere decir, frente a lo que la palabra dice. Enlaza con la vatticchā de 6.0.2."
+  },
+  {
+   "pali": "vyañjana",
+   "fr": "correspond l'Expression vyañjana (v. atthavisesa : vyañjanavisesa)",
+   "es": "corresponde la Expresión vyañjana (v. atthavisesa : vyañjanavisesa)",
+   "en": "corresponds the Expression vyañjana (see atthavisesa : vyañjanavisesa)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "1.1",
+   "conflicto": "Homónimo, y de los gordos en una gramática. Aquí vyañjana es la EXPRESIÓN, la letra frente al espíritu; el byañjana de 1.1 y el de Nandisena es la CONSONANTE. Es el mismo par de trampas que sutta y vagga: los dos sentidos son de manual y el lector desprevenido tomará el fonético. Nótese además que Smith escribe aquí la forma sánscritizante vy- y no la pāḷi by-.",
+   "nota": "«La expresión», con mayúscula en Smith. Cabecera de las once fichas del par attha : vyañjana que siguen."
+  },
+  {
+   "pali": "atthavisesa",
+   "fr": "(v. atthavisesa : vyañjanavisesa)",
+   "es": "(v. atthavisesa : vyañjanavisesa)",
+   "en": "(see atthavisesa : vyañjanavisesa)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El matiz de sentido». Smith parte la palabra de línea, «attha-/visesa». Primero de los cinco pares en que declina la oposición; los dos puntos que los separan son suyos y valen «frente a»."
+  },
+  {
+   "pali": "vyañjanavisesa",
+   "fr": "atthavisesa : vyañjanavisesa",
+   "es": "atthavisesa : vyañjanavisesa",
+   "en": "atthavisesa : vyañjanavisesa",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El matiz de expresión», contrapuesto al anterior."
+  },
+  {
+   "pali": "atthato",
+   "fr": "«selon l'esprit et la lettre» atthato : vyañjanato, ganthato, pariyattito, cf. atthato : dhammato",
+   "es": "«según el espíritu y la letra» atthato: vyañjanato, ganthato, pariyattito, cf. atthato: dhammato",
+   "en": "«according to spirit and letter» atthato : vyañjanato, ganthato, pariyattito, cf. atthato : dhammato",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "Se transcribe en ABLATIVO ADVERBIAL, como está impreso: «por el sentido». Smith lo usa como primer miembro de DOS pares distintos —contra vyañjanato y contra dhammato—, y por eso la ficha es una sola. Las comillas de «selon l'esprit et la lettre» son suyas: está traduciendo la fórmula, no citándola."
+  },
+  {
+   "pali": "vyañjanato",
+   "fr": "atthato : vyañjanato, ganthato, pariyattito",
+   "es": "atthato: vyañjanato, ganthato, pariyattito",
+   "en": "atthato : vyañjanato, ganthato, pariyattito",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "En ablativo adverbial, como está impreso: «por la expresión, por la letra»."
+  },
+  {
+   "pali": "ganthato",
+   "fr": "atthato : vyañjanato, ganthato, pariyattito",
+   "es": "atthato: vyañjanato, ganthato, pariyattito",
+   "en": "atthato : vyañjanato, ganthato, pariyattito",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "En ablativo adverbial: «por el texto escrito». Tercer oficio de gantha en cuatro páginas: la unidad métrica de 32 sílabas en 5.3.3.1 (p. 1131), el libro en sakkaṭagantha (p. 1132) y aquí la letra material de la obra."
+  },
+  {
+   "pali": "pariyattito",
+   "fr": "atthato : vyañjanato, ganthato, pariyattito",
+   "es": "atthato: vyañjanato, ganthato, pariyattito",
+   "en": "atthato : vyañjanato, ganthato, pariyattito",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "En ablativo adverbial: «por la letra aprendida de memoria». La pariyatti es la del pariyattisāsana de 5.3.3.1 (p. 1130), el canon en cuanto texto que se recita."
+  },
+  {
+   "pali": "dhammato",
+   "fr": "cf. atthato : dhammato, attharasa : dhammarasa",
+   "es": "cf. atthato: dhammato, attharasa: dhammarasa",
+   "en": "cf. atthato : dhammato, attharasa : dhammarasa",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "En ablativo adverbial: «por la doctrina». Segundo par, y desplaza la oposición: frente al sentido no está ya la letra sino la Enseñanza, de modo que attha vale aquí «lo que quiere decir» y dhamma «lo que enseña»."
+  },
+  {
+   "pali": "attharasa",
+   "fr": "attharasa : dhammarasa, atthasabhāga : vyañjanasabhāga",
+   "es": "attharasa: dhammarasa, atthasabhāga: vyañjanasabhāga",
+   "en": "attharasa : dhammarasa, atthasabhāga : vyañjanasabhāga",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El sabor del sentido»: rasa, el gusto que deja un texto. Tercer par de la serie."
+  },
+  {
+   "pali": "dhammarasa",
+   "fr": "attharasa : dhammarasa",
+   "es": "attharasa: dhammarasa",
+   "en": "attharasa : dhammarasa",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El sabor de la doctrina», contrapuesto al anterior."
+  },
+  {
+   "pali": "atthasabhāga",
+   "fr": "atthasabhāga : vyañjanasabhāga",
+   "es": "atthasabhāga: vyañjanasabhāga",
+   "en": "atthasabhāga : vyañjanasabhāga",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Lo que comparte el sentido»: dos pasajes que coinciden en lo que dicen. Cuarto y último par de la serie."
+  },
+  {
+   "pali": "vyañjanasabhāga",
+   "fr": "atthasabhāga : vyañjanasabhāga)",
+   "es": "atthasabhāga: vyañjanasabhāga)",
+   "en": "atthasabhāga : vyañjanasabhāga)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Lo que comparte la expresión»: dos pasajes que coinciden en cómo lo dicen. Cierra la serie de los pares."
+  },
+  {
+   "pali": "padavyañjanāni",
+   "fr": "l'expression (v. aussi padavyañjanāni) est un fait linguistique (phonique) sadda",
+   "es": "la expresión (v. también padavyañjanāni) es un hecho lingüístico (fónico) sadda",
+   "en": "the expression (see also padavyañjanāni) is a linguistic (phonic) fact sadda",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "variantes": [
+    "padavyañjana"
+   ],
+   "nota": "Se transcribe en PLURAL NEUTRO, como está impreso: «las palabras y las letras», la fórmula con que el canon nombra la forma verbal de un texto. Smith parte la palabra de línea, «pa-/davyañjanāni»."
+  },
+  {
+   "pali": "sadda",
+   "fr": "est un fait linguistique (phonique) sadda (vacana, vācā), vyappatha, viññatti (etc., As 324,19—325,7), vohāra, paññatti (Ppa 171,8—176,15), abhilāpa",
+   "es": "es un hecho lingüístico (fónico) sadda (vacana, vācā), vyappatha, viññatti (etc., As 324,19—325,7), vohāra, paññatti (Ppa 171,8—176,15), abhilāpa",
+   "en": "is a linguistic (phonic) fact sadda (vacana, vācā), vyappatha, viññatti (etc., As 324,19—325,7), vohāra, paññatti (Ppa 171,8—176,15), abhilāpa",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "As 324,19—325,7; Ppa 171,8—176,15",
+   "nota": "«El sonido, la palabra». Cabecera de la serie de los siete nombres del hecho lingüístico, que cierra 6.0.3. Nótese que As es el Atthasālinī y Ppa el Puggalapaññatti-aṭṭhakathā, ediciones de la PTS que no están en el repositorio: esas dos referencias no se han cotejado."
+  },
+  {
+   "pali": "vacana",
+   "fr": "sadda (vacana, vācā), vyappatha",
+   "es": "sadda (vacana, vācā), vyappatha",
+   "en": "sadda (vacana, vācā), vyappatha",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "6.0.1",
+   "conflicto": "Homónimo, y Nandisena lo tiene DESDOBLADO en dos entradas, de modo que la página las enseña las dos: «voz; palabra; expresión; término», que es lo que dice Smith, y «número. En eka-vacana, singular; bahu-vacana, plural», que no lo es. El segundo es el vacana de todos los paradigmas, y el que un lector de gramática dará por descontado.",
+   "nota": "«La expresión, el decir». Es el vacana del vacanattha de 6.0.1 (p. 1133), aquí suelto."
+  },
+  {
+   "pali": "vācā",
+   "fr": "sadda (vacana, vācā)",
+   "es": "sadda (vacana, vācā)",
+   "en": "sadda (vacana, vācā)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El habla», la palabra hablada. Tercero de la serie."
+  },
+  {
+   "pali": "vyappatha",
+   "fr": "(vacana, vācā), vyappatha, viññatti",
+   "es": "(vacana, vācā), vyappatha, viññatti",
+   "en": "(vacana, vācā), vyappatha, viññatti",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«La vía de la palabra, el modo de hablar»: el término del Abhidhamma para el habla como camino de acción. Smith escribe vy- y no by-, como en vyañjana."
+  },
+  {
+   "pali": "viññatti",
+   "fr": "vyappatha, viññatti (etc., As 324,19—325,7)",
+   "es": "vyappatha, viññatti (etc., As 324,19—325,7)",
+   "en": "vyappatha, viññatti (etc., As 324,19—325,7)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "As 324,19—325,7",
+   "nota": "«La intimación»: el término del Abhidhamma para el gesto o el sonido con que se da a entender algo —vacīviññatti, la intimación vocal—. Es de los pocos de la serie que tiene sitio propio en la lista de los dhamma."
+  },
+  {
+   "pali": "vohāra",
+   "fr": "vohāra, paññatti (Ppa 171,8—176,15), abhilāpa",
+   "es": "vohāra, paññatti (Ppa 171,8—176,15), abhilāpa",
+   "en": "vohāra, paññatti (Ppa 171,8—176,15), abhilāpa",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.2",
+   "nota": "CUARTA aparición del término, y el cuarto valor: el habla noble y la del mundo en 5.3.3.2 (p. 1131), el uso corriente en la p. 1132, el uso lingüístico establecido en 6.0.1 (p. 1133) y aquí, sin más, el hecho de hablar. Es el término más resbaladizo de esta parte del Conspectus."
+  },
+  {
+   "pali": "paññatti",
+   "fr": "vohāra, paññatti (Ppa 171,8—176,15)",
+   "es": "vohāra, paññatti (Ppa 171,8—176,15)",
+   "en": "vohāra, paññatti (Ppa 171,8—176,15)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "Ppa 171,8—176,15",
+   "nota": "Segunda aparición en esta página: en 6.0.2 paññatti era el concepto como categoría de lo cognoscible; aquí es la designación como hecho de habla. Smith le da la referencia más larga de la serie, ocho páginas del comentario al Puggalapaññatti, que es donde la escolástica desmenuza el término."
+  },
+  {
+   "pali": "abhilāpa",
+   "fr": "abhilāpa (ce dernier terme plutôt dépréciatif)",
+   "es": "abhilāpa (este último término más bien despectivo)",
+   "en": "abhilāpa (this last term rather depreciative)",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«El habla, el parloteo». Cierra la serie de los siete, y el paréntesis es de Smith: advierte que la palabra no es neutra, que arrastra un matiz de charla vana."
+  },
+  {
+   "pali": "vyāpāra",
+   "fr": "c'est à peine si on peut relever ici le «fonctionnement» vyāpāra et la «puissance» satti du sadda",
+   "es": "apenas se puede señalar aquí el «funcionamiento» vyāpāra y la «potencia» satti del sadda",
+   "en": "one can hardly point here to the «functioning» vyāpāra and the «power» satti of the sadda",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«La operación, el funcionamiento». Las comillas son de Smith, y también la reserva: dice que estos dos términos, capitales en la filosofía del lenguaje india, apenas asoman en la Saddanīti. Es una observación sobre lo que la obra NO tiene."
+  },
+  {
+   "pali": "satti",
+   "fr": "et la «puissance» satti du sadda, [aucune mention du sphoṭa]",
+   "es": "y la «potencia» satti del sadda, [ninguna mención del sphoṭa]",
+   "en": "and the «power» satti of the sadda, [no mention of the sphoṭa]",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "conflicto": "Homónimo. Aquí satti es la POTENCIA significativa de la palabra, la śakti de los filósofos del lenguaje indios; el satti de Nandisena es un tecnicismo del tema nominal: «habilidad. Una de las tres propiedades del tema (liṅgattha). También sakattha». Son dos casillas distintas de la doctrina.",
+   "nota": "«La potencia, la capacidad»: la fuerza por la que una palabra significa. Es la śakti de los gramáticos sánscritos, en forma pāḷi."
+  },
+  {
+   "pali": "sphoṭa",
+   "fr": "[aucune mention du sphoṭa]",
+   "es": "[ninguna mención del sphoṭa]",
+   "en": "[no mention of the sphoṭa]",
+   "epigrafe": "6.0.3",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "SÁNSCRITO entre corchetes, y es una AUSENCIA, no un término de la obra: el sphoṭa de Bhartṛhari, el significado que estalla entero al oír la palabra, es la gran doctrina de la filosofía del lenguaje india, y Smith hace constar que la Saddanīti no la menciona jamás. Cierra 6.0.3, y todo el corchete es suyo. Comprobada la ṣ y la ṭ a 400 dpi."
+  },
+  {
+   "pali": "akkhara",
+   "fr": "Parmi les faits linguistiques la syllabe-phonème akkhara n'a qu'un rapport indirect avec la sémantique 907,7—13, 910,18—24",
+   "es": "Entre los hechos lingüísticos la sílaba-fonema akkhara no tiene sino una relación indirecta con la semántica 907,7—13, 910,18—24",
+   "en": "Among linguistic facts the syllable-phoneme akkhara has but an indirect bearing on semantics 907,7—13, 910,18—24",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_smith": "907,7—13, 910,18—24",
+   "ref_interna": "1.1.1",
+   "nota": "ABRE 6.1.1.1. Es el mismo akkhara de 6.0.2 y de 1.1.1, y aquí Smith lo despacha: la sílaba-fonema no significa por sí, y por eso la semántica empieza de veras en el pada. Las dos referencias van leídas de la imagen y no se han cotejado."
+  },
+  {
+   "pali": "pada",
+   "fr": "est signifiant d'abord le mot pada, agrégat de phonèmes akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya, indiquant un sens atthajotaka, à désinence (casuelle, personnelle) ou sans désinence vibhatyanta : avibhatyanta",
+   "es": "es significante en primer lugar la palabra pada, agregado de fonemas akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya, que indica un sentido atthajotaka, con desinencia (casual, personal) o sin desinencia vibhatyanta: avibhatyanta",
+   "en": "significant in the first place is the word pada, an aggregate of phonemes akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya, indicating a sense atthajotaka, with a (case or personal) ending or without one vibhatyanta : avibhatyanta",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "«La palabra», y aquí sí la palabra: no el verso de 5.3.3.1 (p. 1131) ni el miembro de compuesto de 5.2.0. Es la primera unidad que significa, y Smith le da de golpe su definición entera: agregado de fonemas, portador de sentido, con desinencia o sin ella. Cabecera de las siete fichas que cierran la página. Y DEL COTEJO CON NANDISENA SALE UNA DIVERGENCIA DE FONDO, no de palabra: él define pada por la desinencia —«aquellos que terminan con inflexión (vibhatti) se denominan pada»—, de modo que sin vibhatti no hay pada; Smith admite las dos cosas, «à désinence… ou sans désinence», y por eso su definición necesita el par vibhatyanta : avibhatyanta que cierra la página. Los dos describen la misma unidad y no le ponen la misma frontera. Queda anotado, sin tocar ninguna de las dos definiciones."
+  },
+  {
+   "pali": "akkharasamūha",
+   "fr": "agrégat de phonèmes akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya",
+   "es": "agregado de fonemas akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya",
+   "en": "aggregate of phonemes akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Conjunto de fonemas». Primero de los tres nombres del agregado. Smith parte la palabra de línea, «akkharasamū-/ha»."
+  },
+  {
+   "pali": "akkharapiṇḍa",
+   "fr": "akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya",
+   "es": "akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya",
+   "en": "akkharasamūha, akkharapiṇḍa, vaṇṇasamudāya",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "nota": "«Bola de fonemas»: piṇḍa es el amasijo, la masa que se hace con la mano. La imagen es más física que la de samūha."
+  },
+  {
+   "pali": "vaṇṇasamudāya",
+   "fr": "akkharapiṇḍa, vaṇṇasamudāya",
+   "es": "akkharapiṇḍa, vaṇṇasamudāya",
+   "en": "akkharapiṇḍa, vaṇṇasamudāya",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "1.2.1",
+   "nota": "«Reunión de sonidos». Smith parte la palabra de línea, «vaṇṇasamud-/āya». Aquí usa vaṇṇa donde en los dos anteriores usaba akkhara: son los dos nombres del fonema, y la p. 604 del vol. III los hace equivaler expresamente. cf. (sassara-)vaṇṇasamudāya en 1.2.1 (p. 1107)."
+  },
+  {
+   "pali": "atthajotaka",
+   "fr": "indiquant un sens atthajotaka",
+   "es": "que indica un sentido atthajotaka",
+   "en": "indicating a sense atthajotaka",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "ref_interna": "6.0.3",
+   "nota": "Segunda aparición en esta página: en 6.0.3 el atthajotaka era el significante en general; aquí es el rasgo que define al pada frente al akkhara. Ésa es justamente la diferencia entre las dos unidades."
+  },
+  {
+   "pali": "vibhatyanta",
+   "fr": "à désinence (casuelle, personnelle) ou sans désinence vibhatyanta : avibhatyanta",
+   "es": "con desinencia (casual, personal) o sin desinencia vibhatyanta: avibhatyanta",
+   "en": "with a (case or personal) ending or without one vibhatyanta : avibhatyanta",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "duda": "Smith imprime vibhatyanta, con UNA sola t y con y de transición, que es el tratamiento SÁNSCRITO de vibhakti + anta; la forma pāḷi esperable sería vibhattyanta o vibhattanta, con la doble tt de vibhatti. Comprobado a 400 dpi en las dos voces de la línea, que llevan las dos una sola t. Puede ser deliberado —Smith sanscritiza también en vyañjana, vyappatha y mukhyavasena en esta misma página— o errata. Se transcribe como está impreso.",
+   "nota": "«Terminado en desinencia»: el pada que lleva marca de caso o de persona. La página se corta aquí y la frase sigue en la p. 1135."
+  },
+  {
+   "pali": "avibhatyanta",
+   "fr": "vibhatyanta : avibhatyanta,",
+   "es": "vibhatyanta: avibhatyanta,",
+   "en": "vibhatyanta : avibhatyanta,",
+   "epigrafe": "6.1.1.1",
+   "pagina": 1134,
+   "fuente": "conspectus",
+   "duda": "Misma cuestión que en vibhatyanta: una sola t donde el pāḷi pediría tt. Comprobado a 400 dpi.",
+   "nota": "«No terminado en desinencia»: el pada sin marca, el indeclinable. Cierra la p. 1134."
+  }
+ ]
+}

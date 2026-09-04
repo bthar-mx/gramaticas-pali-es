@@ -1,0 +1,529 @@
+{
+ "pagina": 1133,
+ "terminos": [
+  {
+   "pali": "pakaraṇa",
+   "fr": "— (C) des compendia ou traités systématiques pakaraṇa (ib. 1.3.1 … 1.3.4; [2.7.2]; 3.8.1 … 3.8.8; 5.1)",
+   "es": "— (C) de los compendios o tratados sistemáticos pakaraṇa (ib. 1.3.1 … 1.3.4; [2.7.2]; 3.8.1 … 3.8.8; 5.1)",
+   "en": "— (C) with the compendia or systematic treatises pakaraṇa (ib. 1.3.1 … 1.3.4; [2.7.2]; 3.8.1 … 3.8.8; 5.1)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "ib. 1.3.1 … 1.3.4; [2.7.2]; 3.8.1 … 3.8.8; 5.1",
+   "ref_interna": "5.3.3.1",
+   "nota": "TERCERA aparición del término: el libro del Abhidhamma en 5.3.2.1 (p. 1128), la obra postcanónica con sus tres divisiones en 5.3.3.1 (p. 1131) y aquí el tratado sistemático, letra (C) de la exégesis. Smith pone [2.7.2] entre corchetes en medio de una lista de remisiones que no los llevan; aquí los corchetes no traen sánscrito sino que marcan un caso aparte dentro de la serie."
+  },
+  {
+   "pali": "porāṇā",
+   "fr": "dont les auteurs, aussi bien que ceux de A—B, sont désignés comme : les anciens porāṇā",
+   "es": "cuyos autores, tanto como los de A—B, se designan como: los antiguos porāṇā",
+   "en": "whose authors, like those of A—B, are designated as: the ancients porāṇā",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "porāṇa"
+   ],
+   "ref_smith": "37,20",
+   "nota": "Se transcribe en PLURAL, como está impreso. «Los antiguos»: la manera en que el comentario cita a sus predecesores sin nombrarlos. Cabecera de la serie de los cinco modos de designar a un autor anterior, que ocupa el resto de la letra (C). La fórmula está atestiguada en el pasaje que Smith cita en esta página: «vuttaṃ h' etaṃ porāṇehi» (Sad. 37,20)."
+  },
+  {
+   "pali": "ācariyā",
+   "fr": "les maîtres ācariyā (pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "es": "los maestros ācariyā (pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "en": "the masters ācariyā (pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "ācariya"
+   ],
+   "nota": "Se transcribe en PLURAL, como está impreso. Segundo modo de designación, y cabecera a su vez de las tres variantes que Smith mete entre paréntesis."
+  },
+  {
+   "pali": "pubbācariyā",
+   "fr": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "es": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "en": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "pubbācariya"
+   ],
+   "nota": "«Los maestros de antes». En plural, como está impreso."
+  },
+  {
+   "pali": "pubbācariyasīhā",
+   "fr": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "es": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "en": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "pubbācariyasīha"
+   ],
+   "nota": "«Los leones entre los maestros de antes»: sīha, el león, como epíteto de excelencia. En plural, como está impreso. La ī de -sīhā se lee por la lengua, no por la imagen, según el criterio de la sesión 47."
+  },
+  {
+   "pali": "pubbaviññū",
+   "fr": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "es": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "en": "(pubbācariyā, pubbācariyasīhā, pubbaviññū, etc.)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«Los entendidos de antes». El viññū de esta serie reaparece unas líneas más abajo, entre los destinatarios de los ejemplos de Aggavaṃsa."
+  },
+  {
+   "pali": "garū",
+   "fr": "ceux qui font autorité garū",
+   "es": "los que tienen autoridad garū",
+   "en": "those who carry authority garū",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "garu"
+   ],
+   "ref_interna": "1.3.1",
+   "conflicto": "Homónimo, y de los que engañan en un libro de métrica. Aquí garū son los MAESTROS de autoridad; el garu de 1.3.1 (p. 1108), y el de Nandisena, es la sílaba PESADA —«(sílaba) fuerte»—. Nada tienen que ver, y sólo el plural en -ū distingue a uno del otro en la página.",
+   "nota": "Se transcribe en PLURAL, como está impreso. Tercer modo de designación."
+  },
+  {
+   "pali": "keci",
+   "fr": "et — par politesse, en présentant une opinion divergente — «quelques uns» keci",
+   "es": "y —por cortesía, al presentar una opinión divergente— «algunos» keci",
+   "en": "and — out of politeness, when presenting a divergent opinion — «some» keci",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«Algunos». Cierra la serie, y la observación de Smith es fina: el indefinido no es vaguedad sino cortesía, la manera de discrepar sin nombrar a nadie. Las comillas de «quelques uns» son suyas."
+  },
+  {
+   "pali": "sakkaṭabhāsāto nayaṃ gahetvā vuttāni",
+   "fr": "— (D) C'est surtout pour y relever des sanskritismes sakkaṭabhāsāto nayaṃ gahetvā vuttāni",
+   "es": "— (D) Es sobre todo para señalar en ellos sanscritismos sakkaṭabhāsāto nayaṃ gahetvā vuttāni",
+   "en": "— (D) It is above all to point out Sanskritisms in them sakkaṭabhāsāto nayaṃ gahetvā vuttāni",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "sakkaṭabhāsā"
+   ],
+   "nota": "Se transcribe la EXPRESIÓN ENTERA, como está impresa: «[cosas] dichas tomando el método de la lengua sánscrita». Smith parte la palabra de línea, «sakka-/ṭabhāsāto». El sakkaṭabhāsā es el de 5.3.3.2 (p. 1132), aquí en ablativo. Abre la letra (D)."
+  },
+  {
+   "pali": "abhisaṃkhatābhidhāna",
+   "fr": "ou pour dénoncer des tours forcés (cf. abhisaṃkhatābhidhāna 6.1.2.2)",
+   "es": "o para denunciar giros forzados (cf. abhisaṃkhatābhidhāna 6.1.2.2)",
+   "en": "or to denounce forced turns of phrase (cf. abhisaṃkhatābhidhāna 6.1.2.2)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_interna": "6.1.2.2",
+   "nota": "«La denominación fabricada»: la expresión amañada, la que se ha construido a la fuerza. Smith remite a 6.1.2.2, que cae en la semántica y todavía no está transcrito."
+  },
+  {
+   "pali": "Mahābodhivaṃsa",
+   "fr": "que l'on cite un texte comme le Mahābodhivaṃsa (Index A 4.1.3)",
+   "es": "que se cita un texto como el Mahābodhivaṃsa (Index A 4.1.3)",
+   "en": "that a text such as the Mahābodhivaṃsa (Index A 4.1.3) is cited",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 4.1.3",
+   "nota": "COTEJO INTERNO, y vale para la ficha de la página anterior: aquí Smith escribe vaṃsa con S NORMAL, y en la p. 1132, a diez líneas de distancia, escribió Mahābodhivaṃśaparikathā con ś palatal sánscrita. Comprobadas las dos a 400 dpi. La misma obra, dos grafías; queda anotado, no corregido, y la duda de la p. 1132 se mantiene."
+  },
+  {
+   "pali": "kavi",
+   "fr": "ou les poètes savants kavi, kabbakāraka (cf. kavisamaya; (porāṇa)kaviracanā, ci-dessus p. 1016)",
+   "es": "o los poetas doctos kavi, kabbakāraka (cf. kavisamaya; (porāṇa)kaviracanā, más arriba p. 1016)",
+   "en": "or the learned poets kavi, kabbakāraka (cf. kavisamaya; (porāṇa)kaviracanā, above p. 1016)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "ci-dessus p. 1016",
+   "ref_interna": "5.3.3.2",
+   "nota": "Segunda aparición: en 5.3.3.2 (p. 1132) el kavi era quien cultivaba el sánscrito; aquí es el poeta docto a quien se cita para señalar un sanscritismo. Cabecera de la serie de los cuatro términos de la poesía."
+  },
+  {
+   "pali": "kabbakāraka",
+   "fr": "les poètes savants kavi, kabbakāraka",
+   "es": "los poetas doctos kavi, kabbakāraka",
+   "en": "the learned poets kavi, kabbakāraka",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«El hacedor de poema»: kabba es la forma pāḷi del sánscrito kāvya."
+  },
+  {
+   "pali": "kavisamaya",
+   "fr": "(cf. kavisamaya; (porāṇa)kaviracanā, ci-dessus p. 1016)",
+   "es": "(cf. kavisamaya; (porāṇa)kaviracanā, más arriba p. 1016)",
+   "en": "(cf. kavisamaya; (porāṇa)kaviracanā, above p. 1016)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«La convención de los poetas»: el repertorio de licencias y tópicos que la poesía se permite. Nótese que el samaya de este compuesto anticipa el saṃketa que abre 6.0.1 unas líneas más abajo: los dos son la convención, uno la de los poetas y otro la del mundo."
+  },
+  {
+   "pali": "(porāṇa)kaviracanā",
+   "fr": "((porāṇa)kaviracanā, ci-dessus p. 1016)",
+   "es": "((porāṇa)kaviracanā, más arriba p. 1016)",
+   "en": "((porāṇa)kaviracanā, above p. 1016)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "kaviracanā",
+    "porāṇakaviracanā"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge kaviracanā y porāṇakaviracanā, «la composición de los poetas (antiguos)». El racanā de este compuesto vuelve dos líneas más abajo en payoga(racanā)."
+  },
+  {
+   "pali": "payoga(racanā)",
+   "fr": "Enfin, Aggavaṃsa propose des exemples de son cru payoga(racanā) afin d'entraîner ses élèves",
+   "es": "Por fin, Aggavaṃsa propone ejemplos de su cosecha payoga(racanā) para adiestrar a sus alumnos",
+   "en": "Finally, Aggavaṃsa offers examples of his own devising payoga(racanā) in order to train his pupils",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "payoga",
+    "payogaracanā"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge payoga y payogaracanā, «la composición de ejemplos». Es la única vez en el epígrafe en que Smith habla del propio Aggavaṃsa como autor de sus ejemplos, y no como transmisor."
+  },
+  {
+   "pali": "sotūnaṃ",
+   "fr": "afin d'entraîner ses élèves (intelligents, curieux de Pali) : sotūnaṃ (viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "es": "para adiestrar a sus alumnos (inteligentes, curiosos de Pali): sotūnaṃ (viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "en": "in order to train his pupils (intelligent, eager for Pali): sotūnaṃ (viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "sotar"
+   ],
+   "ref_interna": "5.1.1.1",
+   "nota": "Se transcribe en GENITIVO PLURAL, como está impreso: «de los oyentes». El tema es sotar, y Smith lo cita en -ar cuando lo cita suelto, según la costumbre suya que la ficha de kattar (5.1.1.1) advierte. Cabecera de la serie de los tres nombres del alumno."
+  },
+  {
+   "pali": "viññūnaṃ",
+   "fr": "(viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "es": "(viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "en": "(viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "viññū"
+   ],
+   "nota": "Se transcribe en genitivo plural, como está impreso: «de los entendidos». Es el mismo viññū del pubbaviññū de unas líneas antes, ahora aplicado a los alumnos y no a los antiguos."
+  },
+  {
+   "pali": "āgamikānaṃ",
+   "fr": "(viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "es": "(viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "en": "(viññūnaṃ, āgamikānaṃ, cf. adandhajātika)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "āgamika"
+   ],
+   "ref_interna": "5.3.3.1",
+   "nota": "Se transcribe en genitivo plural, como está impreso: «de los versados en la tradición». El āgama de este derivado es el de 5.3.3.1 (p. 1130), la tradición transmitida, y no el fonema de transición de 1.2 — es el segundo pasaje que apoya ensanchar la entrada de āgama, decisión que sigue abierta."
+  },
+  {
+   "pali": "adandhajātika",
+   "fr": "(cf. adandhajātika)",
+   "es": "(cf. adandhajātika)",
+   "en": "(cf. adandhajātika)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«De índole no torpe»: dandha es el lerdo, el lento de entendederas, y aquí se niega. Es la glosa pāḷi del «intelligents» de Smith."
+  },
+  {
+   "pali": "kosallajananatthaṃ",
+   "fr": "kosallajananatthaṃ (buddhivijambhanatthaṃ)",
+   "es": "kosallajananatthaṃ (buddhivijambhanatthaṃ)",
+   "en": "kosallajananatthaṃ (buddhivijambhanatthaṃ)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "Se transcribe en ACUSATIVO ADVERBIAL, como está impreso: «para engendrar destreza». Es la fórmula con que la propia Saddanīti declara para qué sirven sus ejemplos. Cierra 5.3.3.3."
+  },
+  {
+   "pali": "buddhivijambhanatthaṃ",
+   "fr": "(buddhivijambhanatthaṃ)",
+   "es": "(buddhivijambhanatthaṃ)",
+   "en": "(buddhivijambhanatthaṃ)",
+   "epigrafe": "5.3.3.3",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«Para el despertar de la inteligencia»: vijambhana es el desperezarse, y de ahí el despliegue. Smith parte la palabra de línea, «bud-/dhivijambhanatthaṃ». Segunda fórmula, entre paréntesis."
+  },
+  {
+   "pali": "paramattha",
+   "fr": "Étant données les deux vérités : absolue paramattha et relative [vyavahārasatya] sammuti(attha)",
+   "es": "Dadas las dos verdades: absoluta paramattha y relativa [vyavahārasatya] sammuti(attha)",
+   "en": "Given the two truths: absolute paramattha and relative [vyavahārasatya] sammuti(attha)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "ABRE LA SEMÁNTICA, que es la sección 6 del plan de Smith y empieza aquí. «El sentido último», la verdad de lo real. Nótese que Smith arranca la semántica por la doctrina de las dos verdades, y no por la lexicografía: para él el problema del significado es de entrada un problema de convención."
+  },
+  {
+   "pali": "sammuti(attha)",
+   "fr": "et relative [vyavahārasatya] sammuti(attha)",
+   "es": "y relativa [vyavahārasatya] sammuti(attha)",
+   "en": "and relative [vyavahārasatya] sammuti(attha)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "sammuti",
+    "sammutiattha"
+   ],
+   "nota": "Se transcribe con el paréntesis pegado, como está impreso: recoge sammuti y sammutiattha, «lo convenido, el sentido convencional». Es la contrapartida de paramattha, y la palabra sobre la que gira todo el epígrafe. Reaparece suelta, sin paréntesis, ocho líneas más abajo."
+  },
+  {
+   "pali": "vyavahārasatya",
+   "fr": "relative [vyavahārasatya]",
+   "es": "relativa [vyavahārasatya]",
+   "en": "relative [vyavahārasatya]",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "SÁNSCRITO, y esta vez SÍ entre corchetes, según la convención que Smith declaró en 4.1: «la verdad del uso corriente». Contrasta con el prātiśākhya de la p. 1132 y con el vaṃśa- de la misma, que van sin ellos."
+  },
+  {
+   "pali": "sammati",
+   "fr": "celle-ci [sammati × saṃvṛti] s'identifie, au point de vue sémasiologique, avec la convention saṃketa",
+   "es": "ésta [sammati × saṃvṛti] se identifica, desde el punto de vista semasiológico, con la convención saṃketa",
+   "en": "the latter [sammati × saṃvṛti] is identified, from the semasiological point of view, with the convention saṃketa",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "Forma con -a- frente al sammuti de la línea anterior; Smith la enfrenta a su correspondiente sánscrito con un signo × que no explica y que se conserva. Lo que el × marca, a la vista del contexto, es que las dos voces se corresponden pero no derivan una de otra: sammati responde a sammati, no a saṃvṛti. El signo queda registrado sin interpretar, como el ‖ de 5.3.2.3 (p. 1129)."
+  },
+  {
+   "pali": "saṃvṛti",
+   "fr": "[sammati × saṃvṛti]",
+   "es": "[sammati × saṃvṛti]",
+   "en": "[sammati × saṃvṛti]",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "SÁNSCRITO entre corchetes, con la ṛ vocálica que el pāḷi no tiene: es el saṃvṛti-satya de la escolástica indio-budista, la verdad de superficie. Comprobada la ṛ a 400 dpi."
+  },
+  {
+   "pali": "saṃketa",
+   "fr": "avec la convention saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "es": "con la convención saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "en": "with the convention saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«La convención», el pacto tácito que une una palabra con su sentido. Smith lo glosa CON UNA PALABRA GRIEGA, συνθήκη, y es la primera vez que echa mano del griego en lo transcrito: se conserva tal cual. Cabecera de la serie de los cuatro nombres de la convención."
+  },
+  {
+   "pali": "lokasammuti",
+   "fr": "saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "es": "saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "en": "saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«Lo convenido por el mundo». Segundo nombre de la convención, y el primero de los dos que Smith forma con loka-."
+  },
+  {
+   "pali": "lokavohāra",
+   "fr": "saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "es": "saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "en": "saṃketa (συνθήκη), lokasammuti, lokavohāra, sammutiattha",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.2",
+   "nota": "Segunda aparición: en 5.3.3.2 (p. 1132) el lokavohāra era el habla corriente frente a la del canon; aquí es uno de los nombres de la convención semántica. Smith parte la palabra de línea, «loka-/vohāra»."
+  },
+  {
+   "pali": "sammutiattha",
+   "fr": "lokavohāra, sammutiattha (samaññā, Kva 35,3—7 v. l. < M III 230,21 ⊃: lokasamaññā, lokapaññatti, Ps)",
+   "es": "lokavohāra, sammutiattha (samaññā, Kva 35,3—7 v. l. < M III 230,21 ⊃: lokasamaññā, lokapaññatti, Ps)",
+   "en": "lokavohāra, sammutiattha (samaññā, Kva 35,3—7 v. l. < M III 230,21 ⊃: lokasamaññā, lokapaññatti, Ps)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "Kva 35,3—7 v. l. < M III 230,21",
+   "nota": "«El sentido convencional», ahora suelto y sin el paréntesis con que salió al abrirse el epígrafe. Cuarto nombre de la convención."
+  },
+  {
+   "pali": "samaññā",
+   "fr": "(samaññā, Kva 35,3—7 v. l. < M III 230,21 ⊃: lokasamaññā, lokapaññatti, Ps)",
+   "es": "(samaññā, Kva 35,3—7 v. l. < M III 230,21 ⊃: lokasamaññā, lokapaññatti, Ps)",
+   "en": "(samaññā, Kva 35,3—7 v. l. < M III 230,21 ⊃: lokasamaññā, lokapaññatti, Ps)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "Kva 35,3—7 v. l. < M III 230,21",
+   "nota": "«La denominación común», el nombre que todos dan a una cosa. AVISO SOBRE EL COTEJO AUTOMÁTICO: la página engancha aquí DOS entradas de Nandisena, samaññā y sāmañña, porque casa por lema desnudo; la primera es la misma palabra, la segunda no —sāmañña es «lo genérico»— y sólo coincide al quitarle los macrones. El signo ⊃ es el «es decir» de Smith, otra vez con dos puntos, «⊃:», como en la p. 1131. Nótese que Kva es el Kathāvatthu y M el Majjhima, no la Saddanīti: son referencias a ediciones de la PTS, que no están en el repositorio y no se han cotejado."
+  },
+  {
+   "pali": "lokasamaññā",
+   "fr": "⊃: lokasamaññā, lokapaññatti, Ps",
+   "es": "⊃: lokasamaññā, lokapaññatti, Ps",
+   "en": "⊃: lokasamaññā, lokapaññatti, Ps",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«La denominación común del mundo»."
+  },
+  {
+   "pali": "lokapaññatti",
+   "fr": "⊃: lokasamaññā, lokapaññatti, Ps",
+   "es": "⊃: lokasamaññā, lokapaññatti, Ps",
+   "en": "⊃: lokasamaññā, lokapaññatti, Ps",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.2.1",
+   "nota": "«La designación del mundo». La paññatti de 5.3.2.1 (p. 1128) era la institución de un nombre dentro del texto; aquí es la del habla común."
+  },
+  {
+   "pali": "payoga",
+   "fr": "et, à l'examen des emplois payoga des mots en usage vohārūpagā saddā (cf. vohārapatha)",
+   "es": "y, al examinar los empleos payoga de las palabras en uso vohārūpagā saddā (cf. vohārapatha)",
+   "en": "and, on examining the uses payoga of the words in currency vohārūpagā saddā (cf. vohārapatha)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "Segunda aparición en esta página: arriba, en 5.3.3.3, payoga(racanā) era la composición de ejemplos; aquí payoga es el EMPLEO efectivo de una palabra, que es el dato del que la semántica parte."
+  },
+  {
+   "pali": "vohārūpagā saddā",
+   "fr": "des mots en usage vohārūpagā saddā (cf. vohārapatha)",
+   "es": "de las palabras en uso vohārūpagā saddā (cf. vohārapatha)",
+   "en": "of the words in currency vohārūpagā saddā (cf. vohārapatha)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "variantes": [
+    "vohārūpaga"
+   ],
+   "nota": "Se transcribe en DOS PALABRAS y en plural, como está impreso: «las palabras que han entrado en el uso». Tercer valor de vohāra en tres páginas: el habla noble y la del mundo en la 1131, el uso corriente en la 1132, y aquí el uso lingüístico establecido."
+  },
+  {
+   "pali": "vohārapatha",
+   "fr": "(cf. vohārapatha)",
+   "es": "(cf. vohārapatha)",
+   "en": "(cf. vohārapatha)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«La vía del uso»: el camino por el que una palabra llega a usarse así y no de otro modo."
+  },
+  {
+   "pali": "lokasaṃketarūḷha",
+   "fr": "c'est le sens établi par convention (et partant traditionnel) lokasaṃketarūḷha (cf. rūḷhi = usage établi)",
+   "es": "es el sentido establecido por convención (y por tanto tradicional) lokasaṃketarūḷha (cf. rūḷhi = uso establecido)",
+   "en": "it is the sense established by convention (and hence traditional) lokasaṃketarūḷha (cf. rūḷhi = established usage)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«Asentado en la convención del mundo». Aquí está la tesis del epígrafe: entre el sentido que da la convención y el que da el análisis gramatical, manda el primero."
+  },
+  {
+   "pali": "rūḷhi",
+   "fr": "(cf. rūḷhi = usage établi)",
+   "es": "(cf. rūḷhi = uso establecido)",
+   "en": "(cf. rūḷhi = established usage)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "35,2",
+   "nota": "«Lo asentado, el uso hecho»: el sentido que una palabra tiene por costumbre y no por etimología. VERIFICADO CONTRA LA FUENTE de rebote: el término está en la línea 2 de la p. 35 del vol. I, «aparo rūḷhisaddo sati pi visesasaddatte», que es la página que Smith cita al cerrar el epígrafe. El signo = es suyo. EL COTEJO CON NANDISENA CONFIRMA Y AÑADE: define ruḷhī como «usanza; uso corriente; significado convencional, popular (opuesto de yoga y anvattha)», es decir, exactamente lo que Smith dice, y encima da la oposición técnica que a él le falta. Ojo con la grafía: su lema de cabecera es ruḷhī, con u breve e ī larga, y remite a él desde rūḷhi y rūḷhī; Smith imprime rūḷhi. No se corrige ninguna de las dos."
+  },
+  {
+   "pali": "saṃketanirūḷha",
+   "fr": "saṃketanirūḷha, abhidheyyattha qui l'emporte sur la signification dérivée de l'analyse grammaticale seule",
+   "es": "saṃketanirūḷha, abhidheyyattha, que prevalece sobre la significación derivada del solo análisis gramatical",
+   "en": "saṃketanirūḷha, abhidheyyattha, which prevails over the meaning derived from grammatical analysis alone",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«Firmemente asentado en la convención»: el mismo rūḷha de la voz anterior, reforzado con ni-."
+  },
+  {
+   "pali": "abhidheyyattha",
+   "fr": "abhidheyyattha qui l'emporte sur la signification dérivée de l'analyse grammaticale seule (vacanattha), nibbacanattha",
+   "es": "abhidheyyattha, que prevalece sobre la significación derivada del solo análisis gramatical (vacanattha), nibbacanattha",
+   "en": "abhidheyyattha, which prevails over the meaning derived from grammatical analysis alone (vacanattha), nibbacanattha",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«El sentido que ha de decirse»: lo que la palabra denota de hecho, frente a lo que su forma daría de sí. Es el término técnico de la tesis, y el que Smith opone a vacanattha y nibbacanattha."
+  },
+  {
+   "pali": "vacanattha",
+   "fr": "la signification dérivée de l'analyse grammaticale seule (vacanattha), nibbacanattha",
+   "es": "la significación derivada del solo análisis gramatical (vacanattha), nibbacanattha",
+   "en": "the meaning derived from grammatical analysis alone (vacanattha), nibbacanattha",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«El sentido de la expresión», el que se obtiene deshaciendo el compuesto o la derivación. Es lo que la gramática puede dar por sí sola, y según este epígrafe no basta."
+  },
+  {
+   "pali": "nibbacanattha",
+   "fr": "(vacanattha), nibbacanattha",
+   "es": "(vacanattha), nibbacanattha",
+   "en": "(vacanattha), nibbacanattha",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "nota": "«El sentido etimológico»: nibbacana es la explicación de la palabra por su raíz, el nirvacana sánscrito. Segundo nombre de lo que el análisis gramatical da y la convención desborda."
+  },
+  {
+   "pali": "gahitapubbasaṃketa",
+   "fr": "aussi faut-il, qu'on soit d'avance au courant de cette convention gahitapubbasaṃketa",
+   "es": "por eso hace falta estar de antemano al corriente de esa convención gahitapubbasaṃketa",
+   "en": "hence one must be acquainted beforehand with that convention gahitapubbasaṃketa",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "37,19",
+   "nota": "«Aquel por quien la convención ha sido captada de antemano». Smith parte la palabra de línea, «gahitapubbasaṃ-/keta». VERIFICADO CONTRA LA FUENTE: la voz está en la línea 19 de la p. 37 del vol. I, «so ca gahitapubbasaṃketassa attha-sambandhādisu aññatarasmiṃ ñāte yeva hoti», dentro del tramo 37,15—22 que él cita al cerrar el epígrafe."
+  },
+  {
+   "pali": "visayattaṃ āpannā",
+   "fr": "c. à d. que les mots et leur sens soient devenus objet (de la pensée) visayattaṃ āpannā",
+   "es": "es decir, que las palabras y su sentido hayan llegado a ser objeto (del pensamiento) visayattaṃ āpannā",
+   "en": "that is, that the words and their sense have become object (of thought) visayattaṃ āpannā",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "37,21",
+   "variantes": [
+    "visayattaṃ anāpannā"
+   ],
+   "nota": "Se transcribe la EXPRESIÓN ENTERA, como está impresa. VERIFICADO CONTRA LA FUENTE, y con un matiz que conviene saber: el verso de la p. 37 del vol. I, línea 21, dice la frase EN NEGATIVO —«visayattaṃ anāpannā saddā n' ev' atthabodhakā», las palabras que no han llegado a ser objeto no hacen entender el sentido—, y Smith la enuncia en positivo porque está dando la condición, no la cita. La forma negada va en variantes."
+  },
+  {
+   "pali": "tabbisayaṃ buddhiṃ uppādeti",
+   "fr": "pour que tel mot évoque la représentation de telle idée tabbisayaṃ buddhiṃ uppādeti (35,3; 37,15—22)",
+   "es": "para que tal palabra evoque la representación de tal idea tabbisayaṃ buddhiṃ uppādeti (35,3; 37,15—22)",
+   "en": "so that a given word may evoke the representation of a given idea tabbisayaṃ buddhiṃ uppādeti (35,3; 37,15—22)",
+   "epigrafe": "6.0.1",
+   "pagina": 1133,
+   "fuente": "conspectus",
+   "ref_smith": "35,3; 37,15—22",
+   "nota": "Se transcribe la EXPRESIÓN ENTERA, en tres palabras y con el verbo en 3.ª persona, como está impresa: «hace surgir un conocimiento que tiene eso por objeto». VERIFICADO CONTRA LA FUENTE: la línea 3 de la p. 35 del vol. I dice «sutisāmaññato tabbisayaṃ buddhiṃ n' uppādeti vinā atthappakaraṇa-saddantarābhisambandhena» —otra vez en negativo, como el verso de la 37—, y el tramo 37,15—22 contiene gahitapubbasaṃketa (l. 19) y la estrofa de visayattaṃ (l. 21-22). Las dos referencias caen exactamente donde Smith dice. Cierra 6.0.1."
+  }
+ ]
+}
