@@ -448,9 +448,11 @@ $('#burger').onclick = () => {
 $('#sbclose').onclick = () => { plegar(true); $('#burger').setAttribute('aria-expanded', false); };
 $('#volver-barra').onclick = () => { plegar(false); $('#burger').setAttribute('aria-expanded', true); };
 
-const top = $('#top-btn');
-top.onclick = () => scrollTo({top:0});
-addEventListener('scroll', () => top.classList.toggle('on', scrollY > 600));
+// No llamarlo «top»: window.top ya existe y un const con ese nombre en el
+// ámbito del script lanza SyntaxError, que impide ejecutar TODO el guion.
+const btnTop = $('#top-btn');
+btnTop.onclick = () => scrollTo({top:0});
+addEventListener('scroll', () => btnTop.classList.toggle('on', scrollY > 600));
 
 pinta();
 </script>
