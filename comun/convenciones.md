@@ -23,7 +23,7 @@ push»—; lo que no se hace es conjugarlo.
 | parchear | corregir; aplicar un parche |
 | testear | probar; comprobar |
 
-**Por qué está escrito aquí y no sólo dicho.** Angel lo había advertido en
+**Por qué está escrito aquí y no sólo dicho.** IEBH lo había advertido en
 sesiones anteriores y volvió a salir en la 24. La causa es mecánica: un chat
 nuevo no recuerda ninguna conversación, sólo lee el repositorio, y este
 documento no lo recogía. Lo que sí leía eran los briefings 10 a 22, donde
@@ -44,7 +44,7 @@ En la glosa de un sutta, **el locativo pāḷi significa «sigue»** (*sare* =
 de una vocal»). Son el sentido del caso, no un añadido del traductor, y por
 eso **van sin corchetes**: «Las vocales se eliden cuando una vocal sigue»,
 no «cuando una vocal [sigue]». Los corchetes se reservan para lo que el
-sutta no dice —el sustantivo suplido, el verbo suplido—. Decisión de Angel,
+sutta no dice —el sustantivo suplido, el verbo suplido—. Decisión del IEBH,
 2026-09-03; vale para el español y para la edición inglesa («when a vowel
 follows», «after a vowel»).
 

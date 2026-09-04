@@ -1,6 +1,6 @@
 # La regla de primera voz — los proclíticos de la clase de «cetā»
 
-*Generado por `herramientas/generar_informe_procliticas.py` — modo de la página (solo-canon + dpd-filtro), las 5.000 formas más frecuentes del canon; puñado medido: ca, na, so, yo. Banco, casos y formas ya afirmadas por una autoridad, descontados de la tabla y contrastados aparte en la medición. Este informe PREPARA la firma; no adjudica nada: la regla, el puñado, su grado y sus resguardos los firma Angel.*
+*Generado por `herramientas/generar_informe_procliticas.py` — modo de la página (solo-canon + dpd-filtro), las 5.000 formas más frecuentes del canon; puñado medido: ca, na, so, yo. Banco, casos y formas ya afirmadas por una autoridad, descontados de la tabla y contrastados aparte en la medición. Este informe PREPARA la firma; no adjudica nada: la regla, el puñado, su grado y sus resguardos los firma IEBH.*
 
 **La clase.** Primera voz proclítica ante vocal: cetā = ca + etā, netaṃ = na + etaṃ, svāyaṃ = so + ayaṃ, yvāyaṃ = yo + ayaṃ. Los patrones vigentes se licencian por la segunda voz; el mecanismo espejo que aquí se simula se licencia por la primera, con el resguardo reflejado sobre la segunda (segunda ≥ forma). Otras primeras candidatas (su-, …) se miden con `--primas`. El DPD figura como TESTIGO, nunca como autoridad.
 

@@ -2,7 +2,7 @@
      Origen: un APRENDIZ, en clase. El aprendiz no encola —el worker le
      responde 403—, de modo que exportó el .md y se lo hizo llegar a
      quien firma: es el camino previsto para su papel, no un rodeo.
-     Angel los revisó y los ADOPTA: por eso la fuente dice IEBH. -->
+     El IEBH los revisó y los ADOPTA: por eso la fuente dice IEBH. -->
 
 # Veredictos de revisión — 2026-08-31
 

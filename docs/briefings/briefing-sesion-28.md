@@ -9,7 +9,7 @@ pendientes (capítulos 5, 6 y 7, que siguen en sus propios chats).*
 > **Lo primero que tiene que saber el chat nuevo:** el Uṇādi está
 > traducido en borrador completo —los 50 suttas, la cabecera y las tres
 > fórmulas de cierre (kaṇḍa, kappa y tratado)— y espera la revisión de
-> Angel, que revisará las cuatro tandas juntas. Las cinco tandas del
+> IEBH, que revisará las cuatro tandas juntas. Las cinco tandas del
 > capítulo 7 (sesión 27) también esperan la suya. Nada de esto está
 > montado.
 
@@ -21,20 +21,20 @@ HEAD: **`69673a6a`** («kibbidhāna: fuentes del capítulo 7 y borradores
 de la sesión 27 (§524–§623); regex de referencias del verificador;
 briefing de la sesión»). Comprobado sin ejecutar git, leyendo
 `.git/refs/heads/main` y `.git/logs/HEAD` como texto. Con ese commit
-Angel confirmó los nueve archivos del briefing 27 §1.
+El IEBH confirmó los nueve archivos del briefing 27 §1.
 
 **Seis archivos nuevos sin confirmar**, todos de esta sesión:
 
 | Archivo | Qué es |
 | --- | --- |
-| `docs/8 - Uṇādi-Kappa-Kaccāyana.md` | Fuente Nandisena, cap. 8. Subida de Angel al chat; **md5 `bcee096f4f5390e0799331a3fa8a9601`, idéntico** al original. 769 líneas, 50 suttas, 49 notas |
+| `docs/8 - Uṇādi-Kappa-Kaccāyana.md` | Fuente Nandisena, cap. 8. Subida del IEBH al chat; **md5 `bcee096f4f5390e0799331a3fa8a9601`, idéntico** al original. 769 líneas, 50 suttas, 49 notas |
 | `docs/borradores/sesion-28-suttas-624-638.md` | Tanda 1 — cabecera del capítulo + §624–§638 |
 | `docs/borradores/sesion-28-suttas-639-649.md` | Tanda 2 — §639–§649 |
 | `docs/borradores/sesion-28-suttas-650-661.md` | Tanda 3 — §650–§661 (el grupo temporal del futuro) |
 | `docs/borradores/sesion-28-suttas-662-673.md` | Tanda 4 — §662–§673, cierre del capítulo y de la obra |
 | `docs/briefings/briefing-sesion-28.md` | Este archivo |
 
-Confirmarlos y publicarlos corresponde a Angel.
+Confirmarlos y publicarlos corresponde al IEBH.
 
 ## 2. EL UṆĀDI, TRADUCIDO EN BORRADOR
 
@@ -43,7 +43,7 @@ según su propio cierre, un solo kaṇḍo — el sexto del Kibbidhāna), 49
 notas al pie de Nandisena. Tandas de **15/11/12/12**, cortadas por peso
 (los suttas-lista §638, §641, §643, §656, §663, §665 y §673 son
 enormes) y manteniendo junto el grupo del futuro (§650–§655); plan
-aprobado por Angel antes de empezar. Formato idéntico a los borradores
+aprobado por IEBH antes de empezar. Formato idéntico a los borradores
 de la sesión 27.
 
 **Los dos desfases de numeración, comprobados en los 50 suttas:**
@@ -160,7 +160,7 @@ el PDF.
    capítulo 8**: su diccionario acaba en `524: 7`, de modo que un
    borrador `sesion-NN-suttas-624-…` caería en la fuente del 7. No se
    tocó el script (todo se corrió con fuente explícita); añadir
-   `624: 8` queda propuesto para Angel.
+   `624: 8` queda propuesto para IEBH.
 
 ## 6. SIGLAS Y FORMAS NUEVAS PARA EL REPERTORIO DEL EMPAREJADOR
 
@@ -228,7 +228,7 @@ Cada tanda trae su §6. Lo que conviene mirar junto:
 1. Leer este briefing y `comun/convenciones.md` §0, que es normativo.
 2. **Las fuentes del capítulo 8 ya están en `docs/`** con md5
    comprobado (§1). No hay que pedir nada.
-3. **La revisión de las cuatro tandas es de Angel** y se hará junta;
+3. **La revisión de las cuatro tandas es del IEBH** y se hará junta;
    también sigue pendiente la de las cinco tandas de la sesión 27.
    Hasta entonces no se montan capítulos ni se tocan los borradores.
 4. Si lo que toca es **montar**, el orden es 5 → 6 → 7 → 8 (cada
@@ -246,7 +246,7 @@ Cada tanda trae su §6. Lo que conviene mirar junto:
 ## 10. RECORDATORIOS QUE NO CAMBIAN
 
 Los del §10 del briefing 27, íntegros: nada de git desde el sandbox (ni
-`status`); con Angel en inglés, **la respuesta entera, también los
+`status`); con IEBH en inglés, **la respuesta entera, también los
 bloques para copiar**; el producto en español; nada de calcos —
 `comun/convenciones.md` §0; los PDF no viven en el repositorio; todo
 cambio del emparejador corre contra los capítulos publicados; nada se

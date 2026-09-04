@@ -9,7 +9,7 @@ Conspectus transcritas. **Lo que hay que hacer:** seguir por la página 1116.
 
 ## 1. Qué es esto y de dónde sale
 
-Angel pidió reunir los términos gramaticales pāḷi de dos obras y traducirlos
+El IEBH pidió reunir los términos gramaticales pāḷi de dos obras y traducirlos
 al español y al inglés, tomando como base el glosario que ya existía, y
 cotejarlos después con el Diplomado en Pāḷi del IEBH del Dr. Aleix Ruiz-Falqués. Las fuentes son **dos, y las dos
 son principales** —esto lo corrigió él expresamente, porque el primer intento
@@ -70,7 +70,7 @@ que él mismo declara en la p. 1105:
 | 7.1 – 7.3 | instrumental filológico | pendiente |
 | 8.1 – 8.9 | **Conspectus Terminorum (Metricorum)**, pp. 1149-1172 | **fuera de alcance por ahora** |
 
-Angel decidió: **el gramatical primero (1105-1148), el métrico después**, como
+El IEBH decidió: **el gramatical primero (1105-1148), el métrico después**, como
 pieza aparte.
 
 ### Cómo se transcribe
@@ -95,19 +95,19 @@ Cada entrada lleva: `pali`, `fr` (**verbatim de Smith**), `es` y `en`
 1. **El español de Nandisena es suyo y va literal.** No se retoca.
 2. **El francés de Smith va literal**, con su cursiva deshecha.
 3. **El español y el inglés que añadimos son PROPUESTA**, no adjudicados por
-   el IEBH, y la página lo dice en la cabecera y en cada ficha. Angel eligió
+   el IEBH, y la página lo dice en la cabecera y en cada ficha. El IEBH eligió
    publicar con el aviso visible, no esperar a la firma.
 4. **`comun/glosario.md` manda** sobre cualquier propuesta. Donde Smith no
    coincide, la ficha lo marca «difiere de la norma».
 5. **Una página, un archivo**; el estado lo calcula el generador.
 6. La tarjeta de `/recursos/` **todavía no se ha puesto**: la página existe
-   pero no está enlazada. Ponerla cuando Angel dé el visto bueno
+   pero no está enlazada. Ponerla cuando IEBH dé el visto bueno
    (`herramientas/generar_indices.py`, lista de tarjetas, y también su copia
    inglesa).
 
 ---
 
-## 5. Lo que hay que enseñarle a Angel para que decida
+## 5. Lo que hay que enseñarle al IEBH para que decida
 
 ### 5.1 Choques terminológicos vivos
 
@@ -156,7 +156,7 @@ siguiente **sin sangrar**, y el trozo final acaba publicándose como un
 
 Se recorrieron **los 30 PDF** del curso (28 dossieres + Currículum +
 Vocabulario) extrayendo su capa de texto **con pdf.js dentro del navegador**,
-en la sesión de Angel. **No se descargó nada** ni se guarda el contenido: sólo
+en la sesión del IEBH. **No se descargó nada** ni se guarda el contenido: sólo
 términos y la línea de contexto. Las 22 Presentaciones no se recorrieron
 —repiten los dossieres en diapositivas—.
 

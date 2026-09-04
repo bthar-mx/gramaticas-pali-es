@@ -6,9 +6,9 @@ líneas 14305 ss.); desgloses según Thitzana. Referencias bibliográficas
 retiradas y registradas al final (briefing-05 §7.9). Las erratas se
 presentan con la lectura literal en el cuerpo y la propuesta en las NOTAS
 DE TRABAJO (briefing-05 §3.1). El compuesto de cada ejemplo va en
-**negrita** (decisión de Angel, sesión 13, análogo del kāraka del capítulo
+**negrita** (decisión del IEBH, sesión 13, análogo del kāraka del capítulo
 3). Términos de samāsa: nombre pāḷi sin traducir con glosa española entre
-paréntesis en su primera aparición (decisión de Angel, sesión 13): samāsa
+paréntesis en su primera aparición (decisión del IEBH, sesión 13): samāsa
 (compuesto), abyayībhāva (compuesto adverbial), kammadhāraya (compuesto
 adjetival), digu (compuesto numeral), tappurisa (compuesto determinativo);
 dvanda y bahubbīhi conservan sus traducciones fijadas «compuesto
@@ -432,7 +432,7 @@ Ejemplos:
 
 [^7]: Nota al pie: Gaddabhaṇḍo kapītano (Abhidhana. 562-Gāthā), kapi calane, tano, dīgho āgamassa. Kandarālo, pilakkho pi (Dhāna-Ṭi. 375). Kapitthana (Sī. Moga. iii, 19). Kapitthanāti pilakkhā (JA. ii, 403) nigrodhā ca kapitthanā (Khu. v, 90; vi, 353, 354, 361). “Kapittho” ti pāṭho pi pāvacane atthi, tathā pi so idha nādhippeto. Ambā kapitthā panasā (Khu. vi, 339), ambā jambū kapitthā ca (Khu. vi, 343). Kabiṭṭho ca kapitthotha (Abhidhāna. 551-Gāthā).
 
-[^18]: Nota del traductor: En la fuente, la sección de las criaturas pequeñas conserva solo el rótulo “khuddajantukatthe”; el pāḷi de sus ejemplos falta (la traducción inglesa existe y se ha traducido en el bloque español). Pind (su 324) lee: ḍaṃsañ ca makasañ ca ḍaṃsamakasaṃ; kunthañ ca kipillikañ ca kunthakipillikaṃ; kīṭañ ca siriñ ca sapañ ca kīṭasirisapaṃ. Obsérvese que el inglés de Nandisena supone la lectura kīṭasarīsapaṃ (no kīṭasirisapaṃ). Restauración pendiente de la decisión de Angel.
+[^18]: Nota del traductor: En la fuente, la sección de las criaturas pequeñas conserva solo el rótulo “khuddajantukatthe”; el pāḷi de sus ejemplos falta (la traducción inglesa existe y se ha traducido en el bloque español). Pind (su 324) lee: ḍaṃsañ ca makasañ ca ḍaṃsamakasaṃ; kunthañ ca kipillikañ ca kunthakipillikaṃ; kīṭañ ca siriñ ca sapañ ca kīṭasirisapaṃ. Obsérvese que el inglés de Nandisena supone la lectura kīṭasarīsapaṃ (no kīṭasirisapaṃ). Restauración pendiente de la decisión del IEBH.
 
 ---
 
@@ -442,7 +442,7 @@ Ejemplos:
 
 | Sutta | Nandisena dice | Propuesta | Evidencia |
 |---|---|---|---|
-| §317 (vutti) | *samāsa-taddhit’-**ākyāta**-kitakānaṃ* (y su glosa «(ākyāta)») | *ākhyāta* | Pind lee *ākhyāta*; el propio capítulo 6 de Kaccāyana se llama Ākhyāta-kappa. OJO: Nandisena es consistente (pāḷi y glosa), de modo que podría ser lectura de su edición; Angel decide |
+| §317 (vutti) | *samāsa-taddhit’-**ākyāta**-kitakānaṃ* (y su glosa «(ākyāta)») | *ākhyāta* | Pind lee *ākhyāta*; el propio capítulo 6 de Kaccāyana se llama Ākhyāta-kappa. OJO: Nandisena es consistente (pāḷi y glosa), de modo que podría ser lectura de su edición; IEBH decide |
 | §317 (ejemplos) | ***amantandado*** | *amataṃdado* | Su propia traducción («giver of the Deathless»); Pind *amataṃdado* (S. i, 32); la referencia que él mismo imprime (S. i, 29) es al epíteto amataṃdado |
 | §319 (vutti) | ***Upassagga**-nipātapubbako* | *Upasagga-* | Su propio título escribe *Upasagga-*; Pind ídem; geminada sin justificación |
 | §322 (tūriyaṅga) | *daddari ca ḍiṇḍimo ca **daddariḍiṇḍaṃ*** | *daddariḍiṇḍimaṃ* | Su propio nibbacana da los miembros daddari + ḍiṇḍima; sus dos variantes en la nota al pie 4 terminan en -imaṃ; Pind *daddarideṇḍimaṃ* |
@@ -453,7 +453,7 @@ Ejemplos:
 - **§322, sección khuddajantukatthe:** el rótulo «**khuddajantukatthe**» está,
   pero el pāḷi de sus ejemplos falta (la traducción inglesa existe: «fly and
   mosquito», etc.). Es el mismo fenómeno que §277 Tadatthe. Restauración
-  propuesta desde Pind en la nota 18. **Angel decide.** Ojo a la divergencia
+  propuesta desde Pind en la nota 18. **el IEBH decide.** Ojo a la divergencia
   kīṭasarīsapaṃ (inglés de Nandisena) / kīṭasirisapaṃ (Pind).
 - **§322, título:** «khuddajantuka- vividhaviruddha-» traía guion + espacio
   (artefacto de salto de línea del OCR, como §277); **unido ya en el cuerpo**,
@@ -602,7 +602,7 @@ en §327. Tal como Nandisena las imprime.)
 samāsa (compuesto) · tappurisa (compuesto determinativo) · kammadhāraya
 (compuesto adjetival) · digu (compuesto numeral) · abyayībhāva (compuesto
 adverbial) — los cinco sin traducir con glosa, kāraka-style, **fijados por
-Angel en la sesión 13** · tulyādhikaraṇa = «que se refieren a la misma
+El IEBH en la sesión 13** · tulyādhikaraṇa = «que se refieren a la misma
 cosa» (en prosa, con el pāḷi entre paréntesis en su primera aparición) ·
 yuttattha = «significado conectado» (ver DUDA) · gahapatika = «cabeza de
 familia» · vasala = «paria» · kitaka = «derivado primario» (ver DUDA) ·

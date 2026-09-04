@@ -4,7 +4,7 @@
 `/recursos/raices/`**, con las raíces del Saddanīti, el Dhātupāṭha y la
 Dhātumañjūsā. No se tocó ningún capítulo, ni el Kaccāyana, ni los
 borradores de las sesiones 27 y 28, que siguen esperando la revisión de
-Angel en sus propios chats.*
+El IEBH en sus propios chats.*
 
 > **Lo primero que tiene que saber el chat nuevo:** el recurso está
 > **publicado y en línea** (v1.3), y todo lo de esta sesión está
@@ -70,7 +70,7 @@ Sīlānanda.
 
 Durante media sesión lo tuve mal: llamé a la obra «Pali Roots in
 Comparison» —que es el título de la **sección** de la p. 57, no del
-libro— y di a Nandisena por autor. Angel lo corrigió. Está arreglado en
+libro— y di a Nandisena por autor. El IEBH lo corrigió. Está arreglado en
 la página, los metadatos, los JSON y los guiones.
 
 Enlace al libro, en los créditos:
@@ -78,7 +78,7 @@ Enlace al libro, en los créditos:
 
 **Sobre la licencia.** La página de copyright del libro dice «All
 rights reserved. Please do not reproduce ... without written permission
-from the Publisher». Lo puse en el pie; Angel decidió volver a la nota
+from the Publisher». Lo puse en el pie; IEBH decidió volver a la nota
 habitual del IEBH (CC BY-NC-SA 4.0), que es la que hay ahora. Queda
 anotado aquí por si alguna vez hace falta revisarlo. Los créditos a U
 Sīlānanda y el enlace sí se mantienen.

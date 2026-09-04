@@ -105,7 +105,7 @@ al repositorio, pero **no decían bajo qué licencia se publican**. Ahora sí, e
 adelante. El estilo es `.idx-licencia`, en `site/assets/pali.css`, que es fuente
 y no salida.
 
-**No se nombra a Bhikkhu Nandisena en esas tres páginas.** Decisión de Angel: son
+**No se nombra a Bhikkhu Nandisena en esas tres páginas.** Decisión del IEBH: son
 navegación escrita por el instituto —recuentos, descripciones, texto de las
 tarjetas—, no su traducción. Dicen sólo:
 
@@ -139,7 +139,7 @@ dicen todavía *Attribution Non Commercial Share Alike 4.0*:
 | 1.1.0 | `10.5281/zenodo.22037060` | 21-ago-2026 |
 | 1.0.0 | `10.5281/zenodo.21948011` | 15-ago-2026 |
 
-**Adjudicado por Angel: no se editan.** El razonamiento, que conviene no volver a
+**Adjudicado por IEBH: no se editan.** El razonamiento, que conviene no volver a
 discutir desde cero: **una licencia CC es irrevocable**. Quien obtuvo la 1.0.0 o
 la 1.1.0 bajo CC BY-NC-SA conserva esos derechos para siempre, y editar los
 metadatos de Zenodo no se los quita — sólo haría que el registro dijera que se
@@ -189,10 +189,10 @@ decían. **`bthar-mx` es correcto en todas partes**: en `CITATION.cff`, en el
 1. **El número de versión.** `.zenodo.json` y `CITATION.cff` dicen `1.1.0`, que es
    justamente la versión publicada bajo la licencia **vieja**. Tal como están,
    atribuyen CC BY-NC-ND a una entrega que no salió con ella. Hay que subirlo
-   cuando esto se publique como versión. **Lo decide Angel.**
+   cuando esto se publique como versión. **Lo decide IEBH.**
 2. **El enganche de Zenodo con GitHub.** El zip depositado se llama
    `admin-iebh/gramaticas-pali-es-v1.1.0.zip` y el registro da como repositorio
-   `github.com/admin-iebh/gramaticas-pali-es`, pero Angel empuja a `bthar-mx`. O
+   `github.com/admin-iebh/gramaticas-pali-es`, pero IEBH empuja a `bthar-mx`. O
    son dos repositorios, o hubo un traslado y el webhook se quedó en el viejo. **Si
    el enganche está en `admin-iebh` y la publicación sale de `bthar-mx`, la próxima
    versión puede no archivarse, y la licencia nueva no llegaría nunca a Zenodo.**

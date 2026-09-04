@@ -204,7 +204,7 @@ def clave_forma(t):
 
 
 def secuencias_verificadas():
-    """Las secuencias del markdown del capítulo: obra de Angel, ya revisadas.
+    """Las secuencias del markdown del capítulo: obra del IEBH, ya revisadas.
 
     Son las únicas secuencias con procedencia. Se adjuntan a la forma del
     documento cuando coinciden; para las demás no se inventa ninguna.

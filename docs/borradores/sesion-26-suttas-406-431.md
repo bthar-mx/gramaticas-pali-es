@@ -646,7 +646,7 @@ lecturas pāḷi quedan literales.
    “hiyyattanī”?», que su propio pāḷi sí trae. Es el único de los ocho
    suttas de listas (§423–§430) al que le falta. Se tradujo desde el
    pāḷi, por paralelismo con los otros siete. Marcado con `<!-- DUDA -->`
-   en el cuerpo: **Angel decide si se conserva o se suprime.**
+   en el cuerpo: **el IEBH decide si se conserva o se suprime.**
 3. **§410, inglés.** Traduce «paṭhamo» como «the first (person)» y «the
    first person», cuando su propio §408 establece paṭhamapurisa = tercera
    persona. Se siguió §408 (ver §3.1).
@@ -673,7 +673,7 @@ lecturas pāḷi quedan literales.
    **sin traducir** en todo el tramo, dando la equivalencia una sola vez,
    en §408, que es donde él la da: «(tercera persona)», «(persona
    media)», «(primera persona)». Es lo que pide la regla de términos
-   técnicos de `CLAUDE.md`, y evita propagar la incoherencia. **Angel
+   técnicos de `CLAUDE.md`, y evita propagar la incoherencia. **el IEBH
    decide.**
 2. **Los nombres de los ocho tiempos.** *Vattamānā*, *pañcamī*,
    *sattamī*, *parokkhā*, *hiyyattanī*, *ajjatanī*, *bhavissantī* y
@@ -811,7 +811,7 @@ ninguna. Ninguna sigla nueva que añadir al repertorio del emparejador.
   hiyyattanī = «the past perfect», ajjatanī = Aorist, bhavissantī = the
   future. **Ojo:** las de parokkhā y hiyyattanī están intercambiadas
   respecto del uso habitual (parokkhā es el perfecto y hiyyattanī el
-  imperfecto). Razón de más para no incorporarlas sin decisión de Angel.
+  imperfecto). Razón de más para no incorporarlas sin decisión del IEBH.
 - Su **nota 30** a §431: al llamarse «sabbadhātuka» estas cuatro, las
   otras cuatro —parokkhā, ajjatanī, bhavissantī, kālātipatti— quedan
   siendo «asabbadhātuka»; remite a §§516–519.
@@ -827,7 +827,7 @@ ninguna. Ninguna sigla nueva que añadir al repertorio del emparejador.
   «riya» (§2.6).
 - Sus «Summary» didácticos y sus tablas de conjugación (l. 19266 ss.).
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. Las erratas del §1, en particular «māyogā» (§420), «ssasa» (§429) y
    «asabbadhātumhi» (§431), que son las tres del pāḷi con consecuencia

@@ -14,7 +14,7 @@ los CINCO briefings; para traducción siguen mandando el 05 y el 07.*
   OSBCT. Metadatos: título «Kaccāyana-vyākaraṇa — traducción española»;
   creador IEBH; **Bhikkhu Nandisena (ITBMU) como contributor**, con su papel
   de traductor de la edición base explicado en la descripción; licencia
-  **CC BY-NC-SA 4.0** (decisión de Angel); `upload_type` publication/book
+  **CC BY-NC-SA 4.0** (decisión del IEBH); `upload_type` publication/book
   (no dataset como el OSBCT: es una traducción); idioma spa.
 - **Release v1.0.0 publicada** (tag + release en GitHub) y archivada por
   Zenodo: **DOI 10.5281/zenodo.21948011**. El DOI está en `CITATION.cff`
@@ -33,7 +33,7 @@ los CINCO briefings; para traducción siguen mandando el 05 y el 07.*
 2. **§83 (glosa, briefing-08 §5.5):** `‘aṃ,` → `‘aṃ’,` (faltaba la comilla de
    cierre). Errata confirmada contra la vutti contigua.
 3. **«inflexión nominal» → «inflexión»** y «inflexiones nominales» →
-   «inflexiones», GLOBAL (35 casos). Decidido por Angel. El glosario registra
+   «inflexiones», GLOBAL (35 casos). Decidido por IEBH. El glosario registra
    *vibhatti* = «inflexión» (antes «inflexión nominal»).
 4. **§237, ejemplo Sā** (ver §3 de este briefing): ahora cita §174.
 
@@ -76,7 +76,7 @@ ejemplos femeninos pasan inadvertidos.
   `[^n]` (briefing-08 §5.3 — CERRADO; preservan el origen según
   briefing-05 §7.8).
 
-## 5. INTERFAZ (sesión de ajustes en vivo con Angel)
+## 5. INTERFAZ (sesión de ajustes en vivo con IEBH)
 
 - **Insignias de versión:** Nāma **v1.1 · 2026-08-15** (nota: cambios de esta
   sesión); Sandhi **v1.3 · 2026-08-15** (nota: mejoras compartidas 08–09).
@@ -103,16 +103,16 @@ Comprobado en el HTML generado: 219 tarjetas; §185 con sus dos versos pāda a
 pāda; anclas de nota en encabezados de §191, §215, §233; dobles bloques de
 ejemplos en §197, §214, §227, §228 (§229 tiene UNO en el maestro, con
 sub-lista anidada — no es regresión); 53 enlaces al Sandhi; tooltips; huella
-de assets; EPUB; §77 entero. **Queda para los ojos de Angel:** modo oscuro,
+de assets; EPUB; §77 entero. **Queda para los ojos del IEBH:** modo oscuro,
 impresión, EPUB visual, nav fija, TOC — más lo nuevo de §5 de este briefing.
 
-## 7. PENDIENTES QUE QUEDAN (cola de Angel)
+## 7. PENDIENTES QUE QUEDAN (cola del IEBH)
 
 1. **Decisiones de traducción** (batch listo para presentar): §185 cuarto
    pāda (briefing-05 §10.2.1); §184 nota al pie 57; [^41]/§204 (candidata a
    supresión por el criterio de §203).
 2. **Arrastre pleno «(“tu” en §205)»** en §74, §75, §78 (briefing-07 §3.8).
-3. **Cajón TOC móvil (☰)** — solo si Angel lo echa de menos tras usar la
+3. **Cajón TOC móvil (☰)** — solo si IEBH lo echa de menos tras usar la
    página en el teléfono (briefing-08 §5.6).
 4. **§238 nota 77** — sigue necesitando el PDF del Nāma de Nandisena, que
    NO está en la carpeta de conocimiento.
@@ -135,4 +135,4 @@ impresión, EPUB visual, nav fija, TOC — más lo nuevo de §5 de este briefing
 ---
 
 *Preparado al cierre de la sesión 09. La sesión 10 empieza con las decisiones
-de traducción pendientes (§7.1) o donde Angel disponga.*
+de traducción pendientes (§7.1) o donde IEBH disponga.*

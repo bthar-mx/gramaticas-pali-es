@@ -7,7 +7,7 @@ capítulos 5 y 6, que sigue en sus propios chats.*
 
 > **Lo primero que tiene que saber el chat nuevo:** el Kibbidhāna está
 > traducido en borrador completo —los 100 suttas y los cuatro versos
-> iniciales— y espera la revisión de Angel, que revisará las cinco tandas
+> iniciales— y espera la revisión del IEBH, que revisará las cinco tandas
 > juntas. Los capítulos 5 (Taddhita) y 6 (Ākhyāta) siguen esperando la
 > suya. Ninguno de los tres está montado.
 
@@ -26,7 +26,7 @@ sesión:
 
 | Archivo | Qué es |
 | --- | --- |
-| `docs/7- Kibbidhāna-Kappa-Kaccāyana.md` | Fuente Nandisena, cap. 7. Subida de Angel al chat; **md5 `e79457f262df4db4541960f841d8e4bc`, idéntico** al original |
+| `docs/7- Kibbidhāna-Kappa-Kaccāyana.md` | Fuente Nandisena, cap. 7. Subida del IEBH al chat; **md5 `e79457f262df4db4541960f841d8e4bc`, idéntico** al original |
 | `docs/7- Kibbidhāna-Rūpasiddhi.md` | Rūpasiddhi, Kibbidhāna-kaṇḍa (con su Uṇādi y el nigamana), para cotejo. **md5 `a92fe15a8af836ded177df14c0984f15`, idéntico**. Ojo: su nota final 439 avisa en español de que el tramo último «todavía no [ha] sido editado» |
 | `docs/borradores/sesion-27-suttas-524-549.md` | Tanda 1 — versos + primera sección entera |
 | `docs/borradores/sesion-27-suttas-550-570.md` | Tanda 2 — segunda sección entera |
@@ -36,14 +36,14 @@ sesión:
 | `herramientas/verificar_borrador.py` | **Modificado**: el regex de referencias acepta ahora volumen romano opcional («KhuA. 109») y Ṭ/guion en la sigla («Sārattha-Ṭīkā ii, 329»). Cambio comentado en el propio script |
 | `docs/briefings/briefing-sesion-27.md` | Este archivo |
 
-Confirmarlos y publicarlos corresponde a Angel.
+Confirmarlos y publicarlos corresponde al IEBH.
 
 ## 2. EL KIBBIDHĀNA, TRADUCIDO EN BORRADOR
 
 100 suttas (§524–§623), **cinco kaṇḍas** (no cuatro como el Ākhyāta),
 cuatro versos iniciales (K/Kh/G/Gh), 50 notas al pie de Nandisena. Tandas
 de 26/21/19/17/17 **cortadas exactamente por las fronteras de kaṇḍa**,
-plan aprobado por Angel antes de empezar. Formato idéntico a los
+plan aprobado por IEBH antes de empezar. Formato idéntico a los
 borradores de las sesiones 25 y 26.
 
 **Los dos desfases de numeración, comprobados en los 100 suttas:**
@@ -206,7 +206,7 @@ El §8 de cada tanda las lista. Lo gordo, en orden de consecuencia:
 1. Leer este briefing y `comun/convenciones.md` §0, que es normativo.
 2. **Las fuentes del capítulo 7 ya están en `docs/`**, con md5
    comprobado (§1). No hay que pedir nada.
-3. **La revisión de las cinco tandas es de Angel** y se hará junta;
+3. **La revisión de las cinco tandas es del IEBH** y se hará junta;
    hasta entonces no se montan capítulos ni se tocan los borradores.
 4. Si lo que toca es **montar**, el orden es 5 → 6 → 7 (cada `CAPITULOS`
    necesita al anterior), y antes hay que resolver §5.1 (las «Note») y,
@@ -217,13 +217,13 @@ El §8 de cada tanda las lista. Lo gordo, en orden de consecuencia:
    `docs/7- Kibbidhāna-Rūpasiddhi.md` (su Kibbidhāna acaba en la línea
    1290; siguen su Uṇādi y el nigamana).
 6. **El capítulo 8 (Uṇādi, §624–§673) no tiene fuente** en `docs/`. Si
-   Angel quiere seguir por ahí, pedirle la subida al chat y copiar con
+   IEBH quiere seguir por ahí, pedirle la subida al chat y copiar con
    md5, como se hizo aquí. Y llegará con la decisión §8.3 pendiente.
 
 ## 10. RECORDATORIOS QUE NO CAMBIAN
 
 Los del §10 del briefing 26, íntegros: nada de git desde el sandbox (ni
-`status`); con Angel en inglés, **la respuesta entera, también los
+`status`); con IEBH en inglés, **la respuesta entera, también los
 bloques para copiar**; el producto en español; nada de calcos —
 `comun/convenciones.md` §0; los PDF no viven en el repositorio; todo
 cambio del emparejador corre contra los capítulos publicados;

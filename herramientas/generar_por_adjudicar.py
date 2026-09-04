@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Genera el lote de formas por adjudicar (decisión de Angel, 2026-08-28:
+Genera el lote de formas por adjudicar (decisión del IEBH, 2026-08-28:
 «adjudication now»).
 
     python3 herramientas/generar_por_adjudicar.py            # lote de 250

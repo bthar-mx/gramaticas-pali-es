@@ -1,7 +1,7 @@
 # Kāraka-Kappa (capítulo 3) — documento de trabajo completo, §271–§315
 
 *Montaje de los tres borradores de las sesiones 11–12 para la revisión del
-español por Angel: §271–§285 (tanda 1), §286–§300 (tanda 2) y §301–§315
+español por IEBH: §271–§285 (tanda 1), §286–§300 (tanda 2) y §301–§315
 (tanda 3). Base: Bhikkhu Nandisena; pāḷi cotejado con Pind (sus 273–317) y
 desgloses con Thitzana. Formato de trabajo: bloque «Ejemplos:» con el
 kāraka en **negrita** y traducción entre paréntesis; lecturas literales en
@@ -977,7 +977,7 @@ Ejemplos:
 
 [^34]: Nota del traductor: Nandisena escribe aquí «Here I did not translate the sutta» (aquí no traduje el sutta). La glosa española del título es nuestra, construida desde el pāḷi y su propia traducción de la vutti.
 
-[^35]: Nota del traductor: El pāḷi de la sección “Tadatthe” falta en el documento de Nandisena (la traducción inglesa sí está). Según Pind (su 279) y la edición birmana, el pasaje es: «Tadatthe: Ūnassa paripūriyā [taṃ cīvaraṃ nikkhipitabbaṃ]. Buddhassa atthāya, Dhammassa atthāya, Saṃghassa atthāya jīvitaṃ pariccajāmi icc evamādi.» Angel decide si se restituye en el bloque pāḷi.
+[^35]: Nota del traductor: El pāḷi de la sección “Tadatthe” falta en el documento de Nandisena (la traducción inglesa sí está). Según Pind (su 279) y la edición birmana, el pasaje es: «Tadatthe: Ūnassa paripūriyā [taṃ cīvaraṃ nikkhipitabbaṃ]. Buddhassa atthāya, Dhammassa atthāya, Saṃghassa atthāya jīvitaṃ pariccajāmi icc evamādi.» IEBH decide si se restituye en el bloque pāḷi.
 
 [^36]: Nota al pie: Pakkhanti (K).
 
@@ -989,7 +989,7 @@ Ejemplos:
 
 [^40]: Nota al pie: Paṭivīso ca koṭṭhāso (Abhidhā. 485-gāthā). (“Paṭivīsa” es una porción.)
 
-[^41]: Nota del traductor: La traducción inglesa de Nandisena dice «In the property of the stem» (en la propiedad de la base). Traducimos “attha” por «significado», como en el resto del proyecto; Angel decide si se prefiere calcar «propiedad».
+[^41]: Nota del traductor: La traducción inglesa de Nandisena dice «In the property of the stem» (en la propiedad de la base). Traducimos “attha” por «significado», como en el resto del proyecto; IEBH decide si se prefiere calcar «propiedad».
 ---
 
 **286. 291. Karaṇe tatiyā (591).** [Karaṇe + tatiyā = 2 voces]
@@ -1725,7 +1725,7 @@ cada tanda remiten a esa numeración original.
 
 - **§277, sección Tadatthe:** el rótulo «**Tadatthe**» está pero su pāḷi falta
   (la traducción inglesa existe). Restauración propuesta desde Pind/Be en la
-  nota 35. **Angel decide.**
+  nota 35. **el IEBH decide.**
 - **Numeración de notas:** las notas al pie 1–28 conservan la numeración de
   Nandisena; sus 29–33 pasan aquí a 36–40 (las 34, 35 y 41 son del traductor).
 
@@ -1749,7 +1749,7 @@ cada tanda remiten a esa numeración original.
 ### T1.4 Variantes de Pind registradas (no erratas; manda Nandisena)
 
 §271: Pind da Sadd §§555–56 (Nandisena: 555, 557 — se sigue a Nandisena por
-decisión de Angel, sesión 11). §272: Pind *achinnappabhavo*, *kunadiyo*,
+decisión del IEBH, sesión 11). §272: Pind *achinnappabhavo*, *kunadiyo*,
 *phalaṃ deti* (Nandisena *dānaṃ*), añade *nānākulaṃ nānākulena vā*. §274:
 Pind ejemplo *Jetavane antarahito* (Be = Nandisena). §275: Pind título
 *āra[ti]ppayoga* y *addhakālānimmāna*; *Avīcito* (Nandisena *Avicito*);
@@ -1965,12 +1965,12 @@ calificativo» · accantasaṃyoga = «conjunción constante» · maṃsodana =
 - **§315, desglose:** Thitzana cuenta 3 voces porque su título trae «ca»
   («Maṇḍitu’ssukkesu tatiyā ca», como Rūpasiddhi/Saddanīti; en Pind, CeEe
   añaden *ca* y Mmd lo omite). El título de Nandisena no trae «ca», de
-  modo que el desglose impreso es de 2 voces. **Angel decide** si se
+  modo que el desglose impreso es de 2 voces. **el IEBH decide** si se
   registra en nota.
 - **Fórmulas de cierre del capítulo (provisionales):** «Así termina el
   capítulo de los kārakas, sexta sección del capítulo de nombres.» y «Fin
   del capítulo de los kārakas.» Su inglés dice «the case chapter» («el
-  capítulo de los casos»). Pendiente del briefing-11 §6.3; **Angel
+  capítulo de los casos»). Pendiente del briefing-11 §6.3; **el IEBH
   decide**.
 
 ### T3.3 Variantes de Pind registradas (no erratas; manda Nandisena)

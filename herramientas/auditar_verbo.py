@@ -36,7 +36,7 @@ Qué comprueba
    raíces, que es lo que hace falta saber antes de enlazar una página con la
    otra.
 
-Nada de esto decide: la firma es de Angel. Ver el informe.
+Nada de esto decide: la firma es del IEBH. Ver el informe.
 """
 
 import glob

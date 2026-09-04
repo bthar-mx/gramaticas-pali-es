@@ -3,7 +3,7 @@
 *Complementa a los briefings 05–16. La sesión 17 ejecutó el trabajo abierto de
 la sesión 16: trajo los 83 documentos de paradigmas, construyó
 `paradigmas.json`, publicó `/recursos/paradigmas/` (v1.0 → v1.8 en la misma
-sesión, con la revisión de Angel en vivo), cotejó todo contra el documento
+sesión, con la revisión del IEBH en vivo), cotejó todo contra el documento
 maestro de Nandisena y resolvió varias erratas y una duda de fuentes.*
 
 ---
@@ -28,10 +28,10 @@ Al cierre quedaban commits sin `git push`; el push despliega en
 
 ### docs/nombres.docx — ¡leer esto!
 
-Angel facilitó su **documento maestro completo** de los paradigmas (el origen
+El IEBH facilitó su **documento maestro completo** de los paradigmas (el origen
 de los Google Docs, última revisión 2014, licencia CC BY-NC-**ND**). Está en
 `docs/nombres.docx` y **NO debe entrar en el repositorio público** — decisión
-explícita de Angel. Está excluido en `.git/info/exclude` (exclusión local:
+explícita del IEBH. Está excluido en `.git/info/exclude` (exclusión local:
 un clon nuevo no la hereda; rehacerla con
 `echo "docs/nombres.docx" >> .git/info/exclude`).
 
@@ -47,14 +47,14 @@ capítulos, y un enlace `doc ↗` al Google Doc de origen. Las referencias §N
 de la tabla de sufijos llevan el **tooltip grande** de sandhi con el sutta
 entero, que `generar_paradigmas.py` extrae del Nāma-Kappa publicado.
 
-Decisiones de estilo de Angel (permanentes):
+Decisiones de estilo del IEBH (permanentes):
 
 - **Formas de las tablas en redonda**; cursiva sólo para lemas y pāḷi
   corrido. Lemas en **cursiva minúscula** (convención académica).
 - **No segmentar las desinencias** (nada de purisa·ssa): se presenta al
   modo tradicional, la vibhatti unida a su base.
 - La comunicación con Claude es **en inglés**; el producto, en español
-  (nada de «commiteado» en los mensajes a Angel).
+  (nada de «commiteado» en los mensajes al IEBH).
 
 ## 3. CORRECCIONES APROBADAS POR ANGEL EN ESTA SESIÓN
 
@@ -125,7 +125,7 @@ pronombres y pañca) y las **partículas vocativas en negrita**.
 3. Opcionales sugeridos y no pedidos: comparación de dos paradigmas lado a
    lado, salto a la celda que coincide al buscar, conmutador ordinal ↔ caso
    latino, casilla «Estudiado» como en los capítulos.
-4. Incorporar del maestro las listas «De similar declinación» (si Angel
+4. Incorporar del maestro las listas «De similar declinación» (si IEBH
    quiere).
 
 ## 8. MÓVIL Y TABLET — estado honesto
@@ -146,4 +146,4 @@ navega; y agrandar las zonas de toque en pantallas estrechas. Pendiente.
   Thitzana va al revés.
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta.
 - Nada se añade, quita ni cambia respecto de la edición base sin avisar y
-  sin que Angel decida.
+  sin que IEBH decida.

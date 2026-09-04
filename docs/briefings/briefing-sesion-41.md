@@ -11,10 +11,10 @@ entero, un tramo del Suttamālā leído por primera vez, y un titular rectificad
 > `git log origin/main..main` **en el momento** — el ciclo empuja solo. Las
 > reglas de siempre: el Python es la referencia; los CINCO arneses mandan, y
 > **uno a uno**; nada se adjudica sin el visto bueno del IEBH; todo se mide
-> antes y después; la atribución pública dice IEBH. Con Angel se habla en
+> antes y después; la atribución pública dice IEBH. Con IEBH se habla en
 > inglés; lo del proyecto va en español.
 > **Y el criterio que manda sobre todo**, ya en `CLAUDE.md` con las palabras de
-> Angel: hay formas de sandhi teóricamente plausibles que son inverosímiles en
+> IEBH: hay formas de sandhi teóricamente plausibles que son inverosímiles en
 > el Tipiṭaka. Recomponer no basta. Atestiguar la pieza no atestigua la juntura.
 > **Esta sesión le encontró respaldo textual** — véase §4 —, pero *respaldo* no
 > es *adjudicación*, y quien adjudica es él.
@@ -248,7 +248,7 @@ la versión 2.0.*
 
 ## 9. LA COLA YA NO ES ANÓNIMA — y el porqué no era el que parece
 
-Angel preguntó qué pasaría si un desconocido enviara veredictos. Al mirarlo, el
+El IEBH preguntó qué pasaría si un desconocido enviara veredictos. Al mirarlo, el
 problema no era el que se supone. Que entre basura se ve y se descarta. Lo
 grave era otro: **el `.md` exportado trae escrita la orden de incorporación con
 `--fuente "IEBH, …"`**, de modo que lo de un desconocido entraba al proyecto
@@ -294,7 +294,7 @@ desconocido.
 
 ### EL RÓTULO ES LO QUE SE PUBLICA; EL CORREO, NUNCA
 
-Decisión de Angel: **nombrar al revisor**. Pero nombrar no puede ser publicar
+Decisión del IEBH: **nombrar al revisor**. Pero nombrar no puede ser publicar
 una dirección — y estuvo a un empujón de pasar, seis veces (§11.3).
 
 | rótulo | lo que sale en la página |
@@ -328,7 +328,7 @@ pegarla con el `#  → ` de la documentación—, los dos papeles y los rótulos
 
 ## 10. VERSIÓN 2.0, y por qué el número entero
 
-Lo propuso Angel, y no por lo de la tarde. **El 2026-08-30 entró en el motor la
+Lo propuso IEBH, y no por lo de la tarde. **El 2026-08-30 entró en el motor la
 primera operación que Kaccāyana no enuncia: Saddanīti Suttamālā §49**
 (`62a2a4c`), sin la cual «tveva» no ofrecía su lectura citativa. Hasta entonces
 la herramienta explicaba el canon con UNA gramática; desde entonces, con las
@@ -352,7 +352,7 @@ sobre un supuesto sin comprobarlo.**
    personales. Lo cacé mirando la plantilla antes de regenerar, no por diseño.
 3. **El parser del repertorio, dos veces.** Primero dejó de partir por espacios
    al admitir rótulos; después no toleraba el `#  → ` de MI PROPIA
-   documentación. Angel se vio de «aprendiz» dos veces figurando en la lista.
+   documentación. El IEBH se vio de «aprendiz» dos veces figurando en la lista.
 4. **Un ancla de parche se comió un `async`.** Lo cazó la comprobación de
    sintaxis sobre la página generada, que por eso se hace.
 5. **Y el de siempre:** olvidé re-vertir la referencia de señal tras incorporar
@@ -365,7 +365,7 @@ escriben ANTES de creerse el código.
 ## 12. LOS 23 CASOS DE LA TARDE
 
 Cinco rescatados del navegador tras el lío del login (`c874dda`), seis por la
-cola ya con identidad (`a11b7bb`), `atthitvevassa` con escalera de Angel que
+cola ya con identidad (`a11b7bb`), `atthitvevassa` con escalera del IEBH que
 cita **Saddanīti §49** (`03c40f1`), diez de un **APRENDIZ en clase**
 (`fef9924`) y `ācikkheyyātha` por la cola con `admin@iebh.org` (`fb6aa5d`).
 

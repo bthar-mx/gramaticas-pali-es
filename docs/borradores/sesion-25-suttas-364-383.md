@@ -541,7 +541,7 @@ del propio Nandisena.
   (títulos de §373 y §381, vuttis de §373–§375, §381–§383) y
   «saṅk**hy**ānaṃ» (vutti de §379). Pind y Thitzana escriben siempre
   «saṅkhyā». Se conserva la grafía literal de cada sitio; unificar es
-  decisión de Angel (§8.2).
+  decisión del IEBH (§8.2).
 - **Numeración:** Nandisena §364–§383 = Pind 366–385.
 
 ### 5. Referencias bibliográficas retiradas del cuerpo
@@ -624,7 +624,7 @@ capítulo.
 - **§377:** su nota sobre la ausencia de correspondencia en el
   Rūpasiddhi.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. Las erratas de §1 (cuerpo literal ↔ corrección), en particular las dos
    del vutti de §368.

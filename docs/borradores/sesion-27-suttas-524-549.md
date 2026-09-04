@@ -706,7 +706,7 @@ Nandisena, más una de puntuación (§538) y un residuo tipográfico (§528).
    referente: en el Ākhyāta, *bhāva* califica desinencias verbales usadas
    impersonalmente; aquí, *bhāva-sādhana* es el nombre de acción que el
    sufijo kicca forma. El propio Nandisena cambia de «impersonal» (cap. 6)
-   a «verbal noun» (cap. 7). **Angel decide** si se mantienen las dos
+   a «verbal noun» (cap. 7). **el IEBH decide** si se mantienen las dos
    traducciones con nota o se unifica.
 2. **El encabezado del capítulo.** Su inglés dice «Primary Derivative
    Chapter»; se tradujo «Capítulo de los derivados primarios». La tarjeta
@@ -715,7 +715,7 @@ Nandisena, más una de puntuación (§538) y un residuo tipográfico (§528).
 3. **§525 y §537: los viggahas quedan sin traducir en el inglés.** Nandisena
    imprime «[The following are proper names]» y repite el bloque pāḷi tal
    cual. Se respetó (los desgloses son formulares: «[él] doma al enemigo,
-   por eso [se llama] Arindamo», etc.). Cabría nota del traductor si Angel
+   por eso [se llama] Arindamo», etc.). Cabría nota del traductor si IEBH
    quiere darlos.
 4. **§537 dice «Same examples as sutta 525», pero no es exacto**: el pāḷi
    añade «Pabhaṃ karotī ti Pabhaṅkaro, Bhagavā», que no está en §525, y la
@@ -938,7 +938,7 @@ o sobrante en una de las dos); y la de Vessantaro es «Khu. iv, 39» en
 - Su resumen de §539 (qué elide exactamente la regla: el final de la raíz
   y la ‘ra’ del morfema).
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las tres erratas pāḷi de la tanda** (§1): §538 «āññāya» → «aññāya»,
    §548 «etasv» → «etesv», §539 «rakārādī» → «rakārādi»; y las dos

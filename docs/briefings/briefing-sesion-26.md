@@ -6,7 +6,7 @@ emparejador ni ningún capítulo publicado.*
 
 > **Lo primero que tiene que saber el chat nuevo:** el Ākhyāta está
 > traducido en borrador completo —los 118 suttas— y espera la revisión de
-> Angel. El capítulo 5 (Taddhita) sigue esperando la suya, en su propio
+> IEBH. El capítulo 5 (Taddhita) sigue esperando la suya, en su propio
 > chat. Ninguno de los dos está montado.
 
 ---
@@ -24,7 +24,7 @@ pendientes.
 
 | Archivo | Qué es |
 | --- | --- |
-| `docs/6 - Ākhyāta-Kaccāyana.md` | Fuente Nandisena, cap. 6. Subida de Angel al chat; **md5 `5c528464…aee85`, idéntico** al original |
+| `docs/6 - Ākhyāta-Kaccāyana.md` | Fuente Nandisena, cap. 6. Subida del IEBH al chat; **md5 `5c528464…aee85`, idéntico** al original |
 | `docs/6. Ākhyāta-Rūpasiddhi.md` | Rūpasiddhi cap. 6, para cotejo. **md5 `3667daec…64fbe`, idéntico** |
 | `docs/borradores/sesion-26-suttas-406-431.md` | Tanda 1 — primera sección entera |
 | `docs/borradores/sesion-26-suttas-432-444.md` | Tanda 2 — segunda sección, primera mitad |
@@ -36,7 +36,7 @@ pendientes.
 | `herramientas/verificar_estructura.py` | Numeración triple, números del Saddanīti y llamadas de nota |
 | `docs/briefings/briefing-sesion-26.md` | Este archivo |
 
-Confirmarlos y publicarlos corresponde a Angel.
+Confirmarlos y publicarlos corresponde al IEBH.
 
 ## 2. EL ĀKHYĀTA, TRADUCIDO EN BORRADOR
 
@@ -149,7 +149,7 @@ Salieron de este capítulo y no existían en los anteriores:
 ## 6. TÉRMINOS PARA EL GLOSARIO
 
 Cada tanda trae su §6 de propuestas. **Ninguna está aún en
-`comun/glosario.md`**: entran cuando Angel las apruebe. Lo que conviene
+`comun/glosario.md`**: entran cuando IEBH las apruebe. Lo que conviene
 mirar junto:
 
 - **Tres términos reutilizados con otro referente**, que el lector que
@@ -219,7 +219,7 @@ siguiente:** sigue en el chat de la sesión 25.
    comprobado. No hay que pedir nada.
 3. **El capítulo 7 (Kibbidhāna) no tiene fuente** ni en `docs/` ni en el
    proyecto de claude.ai —sólo el comentario,
-   `docs/fuentes/nyasa/Nyasa-07-kibbidhana.md`—. Si Angel quiere
+   `docs/fuentes/nyasa/Nyasa-07-kibbidhana.md`—. Si IEBH quiere
    seguir por ahí, hay que pedirle la subida al chat, que es el canal
    byte a byte, y copiarla con md5 como se hizo aquí.
 4. Si lo que toca es **montar** el capítulo 6, el paso «Capítulo nuevo:
@@ -232,7 +232,7 @@ siguiente:** sigue en el chat de la sesión 25.
 ## 10. RECORDATORIOS QUE NO CAMBIAN
 
 Los del §7 del briefing 25, íntegros: nada de git desde el sandbox (ni
-`status`); con Angel en inglés, **la respuesta entera, también los
+`status`); con IEBH en inglés, **la respuesta entera, también los
 bloques para copiar**; el producto en español; nada de calcos
 («commitear», «empujado») — `comun/convenciones.md` §0; los PDF no viven
 en el repositorio; todo cambio del emparejador corre contra los dos

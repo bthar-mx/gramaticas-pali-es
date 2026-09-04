@@ -101,7 +101,7 @@ El Sandhi-Kappa nunca las perdió: es anterior a aquella decisión.
 
 ### 5.1 bis. Dónde va la cita, y cuántas (sesión 23)
 
-Dos reglas, decididas por Angel sobre el caso de §132, donde Nandisena pone
+Dos reglas, decididas por IEBH sobre el caso de §132, donde Nandisena pone
 `(DA. i, 58)` tres veces sobre `Duve samaṇā / Duve brāhmaṇā / Duve janā`:
 
 1. **Se repite la cita en cada ejemplo atestiguado**, aunque sea la misma
@@ -158,7 +158,7 @@ No se corrige nada: se le enseñan al emparejador (`VARIANTES` en
 
 Distintas de la tabla anterior: allí el maestro ya traía la lectura buena y
 sólo había que enseñársela al emparejador. Aquí **se corrige**, por decisión
-expresa de Angel.
+expresa del IEBH.
 
 | Sutta | Nandisena | Corregido a | Sesión |
 | ----- | --------- | ----------- | ------ |
@@ -185,7 +185,7 @@ Son las mismas citas que la edición base imprime como `Khu. i, 67`, etc.:
 número de estrofa — `Dh. 67` es Dhp 375, no Dhp 67 —, sólo que el siglum
 español desata el tomo del Khuddaka en la obra concreta.
 
-Por decisión de Angel (2026-09-03), el Sandhi-Kappa sigue ahora la misma
+Por decisión del IEBH (2026-09-03), el Sandhi-Kappa sigue ahora la misma
 regla que Nāma y Kāraka: **la cita va en línea, en el bloque pāḷi, tal como
 la imprime la edición base** (`Yass’ indriyāni samathaṅgatāni (Khu. i, 27,
 358), …`), y las citas que estaban en líneas españolas se retiran. Se
@@ -206,7 +206,7 @@ del Venerable y conservan su siglum (`Dh. 67`); son la misma página birmana.
 
 <!-- DUDA: ¿conviene añadir en el emergente el número de estrofa (Dhp 375)
      verificado contra Pind (PTS)? Exige comprobar ~110 citas una a una; no
-     se ha hecho. Angel decide si vale la pena. -->
+     se ha hecho. El IEBH decide si vale la pena. -->
 
 ### 5.2 Presentación
 
@@ -291,7 +291,7 @@ Aparte había 18 líneas del Nāma con una divergencia de fondo, no de
 extracción: Nandisena divide `Saṃ-sāsvī ti kimatthaṃ?` donde el maestro lee
 `Saṃ-sāsv iti kimatthaṃ?`.
 
-**Manda el maestro: se escribe `Saṃ-sāsv iti`** (Angel, sesión 22). Vale
+**Manda el maestro: se escribe `Saṃ-sāsv iti`** (el IEBH, sesión 22). Vale
 para todas las de su clase —`Ekavacanesv iti`, `Vibhattādesesv iti`— y es
 la única divergencia de división registrada frente a la edición base.
 
@@ -397,7 +397,7 @@ Al final de cada capítulo:
 
 ## 9. La edición inglesa (sesión 45)
 
-Decidida por Angel el 2026-09-03 con permiso del Venerable Nandisena. Lo
+Decidida por IEBH el 2026-09-03 con permiso del Venerable Nandisena. Lo
 normativo está en `CLAUDE.md` («La edición inglesa») y en
 `comun/convenciones.md` §1 bis; aquí, lo práctico.
 

@@ -13,7 +13,7 @@ Los casos pasaron de 54 a 99 en el día.*
 > mandan (`arnes.js`, `arnes_corpus.js`, `arnes_deteccion.js`,
 > `arnes_pagina.js`, `arnes_casos.js`); nada se adjudica sin el visto
 > bueno del IEBH; todo se mide antes y después; la atribución pública
-> dice IEBH, nunca «Angel». Con Angel se habla en inglés; lo del proyecto
+> dice IEBH, nunca «el IEBH». Con IEBH se habla en inglés; lo del proyecto
 > va en español.
 
 ## 0. AVISO QUE NO PUEDE ESPERAR
@@ -78,7 +78,7 @@ El buscador indexa los dos idiomas — «girl» y «niña» encuentran kaññā.
 
 ### Pendiente, y es del IEBH
 
-**Tres notas publicadas dicen «con el visto bueno de Angel»** — N-Ā1, #1 y la
+**Tres notas publicadas dicen «con el visto bueno del IEBH»** — N-Ā1, #1 y la
 segunda de Sufijos-Inflexiones. La regla del proyecto es que la atribución
 pública dice IEBH. El inglés ya pone «with the approval of the IEBH»; el
 español está **sin tocar a propósito**, porque corregir la edición es
@@ -215,16 +215,16 @@ archivo.** Confirma de paso su instinto: el informe da hoy veredicto «única»
 tanto a `caranto` como a `sattānaṃ` — las dos que él nombró como
 disparates—, que es exactamente lo que su filtro frenaría.
 
-### Las notas de «Angel» — hechas
+### Las notas de «el IEBH» — hechas
 
-«Replace Angel with IEBH wherever it appears in all the webpages.» Las tres
+«Replace IEBH with IEBH wherever it appears in all the webpages.» Las tres
 notas de `paradigmas.json` (N-Ā1, #1, Sufijos-Inflexiones) dicen ya «con el
 visto bueno del IEBH». **`site/` no contiene ya ninguna aparición de
-«Angel»** — comprobado con `grep -rl` sobre todo el directorio.
+«el IEBH»** — comprobado con `grep -rl` sobre todo el directorio.
 
-Queda «Angel» en sitios que **no son páginas** y que no se tocaron: los
+Queda «el IEBH» en sitios que **no son páginas** y que no se tocaron: los
 comentarios de `nuestro/*.py`, las cabeceras de los tres informes de
-`docs/solucionador/` («los firma Angel»), `comun/guia-de-estilo.md`,
+`docs/solucionador/` («los firma IEBH»), `comun/guia-de-estilo.md`,
 `comun/convenciones.md` y los borradores de sesión. Si también han de decir
 IEBH, es otra orden y es fácil; no se hizo porque no son páginas.
 

@@ -12,7 +12,7 @@ Hace dos cosas:
    sobre —inglés sin español al que corresponder— también, porque suele
    significar que la fuente cambió y el borrador se quedó atrás.
 2. **Escribe `docs/verbo/ingles-por-adjudicar.md`**, el cotejo lado a lado con
-   el que Angel firma. Firmarlo es poner `"adjudicado": true` en
+   el que IEBH firma. Firmarlo es poner `"adjudicado": true` en
    `recursos/verbo/ingles.json`, con `adjudicado_por` y `fecha`; entonces
    `generar_verbo.py` inyecta la prosa y el aviso del pie cede el sitio al
    crédito.

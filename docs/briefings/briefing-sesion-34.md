@@ -14,7 +14,7 @@ estudiante, y la independencia de quien firma
 > (`arnes.js`, `arnes_corpus.js`, `arnes_deteccion.js`,
 > `arnes_pagina.js`, `arnes_casos.js`); nada se adjudica sin el visto
 > bueno del IEBH; todo se mide antes y después; la atribución pública
-> dice IEBH, nunca «Angel». Con Angel se habla en inglés; lo del
+> dice IEBH, nunca «el IEBH». Con IEBH se habla en inglés; lo del
 > proyecto va en español.
 
 ## 1. EL MOTOR (v1.6)

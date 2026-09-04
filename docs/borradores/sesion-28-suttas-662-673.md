@@ -540,7 +540,7 @@ A., cotejar con el PDF); y en las notas al pie, dos siglas nuevas:
   traducción.
 - Sus «Nigama-gāthāyo» propias (versos de cierre del traductor).
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las cinco erratas pāḷi del §1** (aggaḷhaṃ, yatha, dha, kucchikabban,
    himsatī) y las del inglés — en especial **mahāli/bhaddāli** (§669),

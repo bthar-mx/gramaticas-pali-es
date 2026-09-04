@@ -25,7 +25,7 @@ Seis páginas nuevas, 234 términos, de 1.644 a **1.878**. El generador ya no di
 
 **La p. 1148 es el final.** El bloque de 7.3.3.3 ocupa el tercio superior y ahí
 mismo arranca la **sección 8, el Conspectus métrico (pp. 1148-1172)**, que queda
-**fuera de alcance por decisión de Angel en la sesión 46**: «el gramatical
+**fuera de alcance por decisión del IEBH en la sesión 46**: «el gramatical
 primero (1105-1148), el métrico después, como pieza aparte». La ficha de
 `tatrâyaṃ gāthā` lo dice y `conspectus.json` queda con `"estado": "completo —
 pp. 1105-1148 (el Conspectus gramatical entero)"`.
@@ -40,7 +40,7 @@ larga —`să­disa`, `păpuṇīyate`, `nănāpadānaṃ`, `ănupubbī`— y qu
 marca deliberada de cantidad BREVE. Sobre el escaneo de archive.org era lo único
 que podía verse.
 
-**Sobre el ejemplar de Angel no es una breve: son DOS signos superpuestos, un
+**Sobre el ejemplar del IEBH no es una breve: son DOS signos superpuestos, un
 MACRÓN con una BREVE encima.**
 
 | dónde | comprobado | qué se ve |
@@ -55,7 +55,7 @@ cae siempre donde la forma corriente es larga porque el texto trae las dos
 cantidades, no porque Smith esté declarando que allí es breve.
 
 **LAS CUATRO FICHAS DE LA SESIÓN 47 NO SE HAN TOCADO.** Lo cuenta la ficha nueva
-de `vaṇṇavipariyāya` (p. 1143), en su campo `duda`. Si Angel quiere que las
+de `vaṇṇavipariyāya` (p. 1143), en su campo `duda`. Si IEBH quiere que las
 cuatro lo digan, es un añadido corto; si prefiere que se transcriba el signo en
 el lema, es otra decisión y más larga.
 
@@ -314,11 +314,11 @@ El trabajo cambia de naturaleza. Por orden de urgencia:
    páginas y ya falló una vez, dando por «ausentes de Smith» tres términos que
    estaban en la p. 1110. **Ahora sí se puede correr**, y es el primer trabajo
    de la sesión que siga. `diplomado.json` está en su sitio.
-2. **`.gitignore` y el PDF de Angel.** Sigue sin resolverse y sigue siendo lo
+2. **`.gitignore` y el PDF del IEBH.** Sigue sin resolverse y sigue siendo lo
    único irrecuperable: `conspectus-ejemplar-angel.pdf` vive sólo en su disco.
    Ver briefing 50 §2.
 3. **Las fichas que saben menos de lo que las sesiones 50-52 averiguaron**, todas
-   en páginas ya revisadas y todas pendientes de que Angel mande tocarlas:
+   en páginas ya revisadas y todas pendientes de que IEBH mande tocarlas:
    - las CUATRO de la breve/anceps: `să­disa` (4.1.1), `păpuṇīyate` (5.1.1.2),
      `nănāpadānaṃ` (5.2), `ănupubbī` (5.2.1) — §2 de este briefing;
    - `vicchā` en las pp. 1120 y 1124 (briefing 50 §3.1);
@@ -328,21 +328,21 @@ El trabajo cambia de naturaleza. Por orden de urgencia:
    - `aparadipanā` (p. 1136) y `visesaniya` (p. 1138), con siete controles en
      contra (§5);
    - `avadhārana` en la p. 1119, con tres testimonios en contra (§5).
-4. **Repasar las ī de las 44 páginas** con el ejemplar de Angel. Las **49 fichas
+4. **Repasar las ī de las 44 páginas** con el ejemplar del IEBH. Las **49 fichas
    con `duda`** son el índice de por dónde empezar.
 5. **La tarjeta de `/recursos/`**: la página existe y no está enlazada. Falta el
-   visto bueno de Angel (`herramientas/generar_indices.py` y su copia inglesa).
+   visto bueno del IEBH (`herramientas/generar_indices.py` y su copia inglesa).
    **Ahora que el Conspectus está completo, tiene más sentido que nunca.**
-6. **El Conspectus MÉTRICO (8.1-8.9, pp. 1148-1172)**, si Angel lo quiere. Son 24
+6. **El Conspectus MÉTRICO (8.1-8.9, pp. 1148-1172)**, si IEBH lo quiere. Son 24
    páginas y empiezan a mitad de la 1148. Decisión suya, y el briefing 46 la dejó
    para «después».
 7. **El guion `herramientas/pagina_saddaniti.py`** sigue esperando el visto bueno
    desde el briefing 49 §2.
 8. **`mṭ`, `Nir-p`, `Mg-pp`, `Kcv` y `Mmd`** siguen sin desarrollar (§3).
-9. Las decisiones de Angel que siguen abiertas: **lahu**,
+9. Las decisiones del IEBH que siguen abiertas: **lahu**,
    **niggahita/niggahīta**, **ensanchar āgama** —y la sesión 52 da el CUARTO y el
    QUINTO argumento, los dos en la misma sección: en 7.3.2.1 (p. 1145) āgama es
    la adición de un fonema y en 7.3.2.3 (p. 1146), dentro de `yathāgamaṃ`, es la
    tradición—, el `sukkhuccāraṇatthaṃ` de la p. 1108, el `saddhammaniti` de la
    p. 1131, el `tathāgatādāya` de la p. 1130, y las tres notas de paradigmas que
-   dicen «con el visto bueno de Angel» donde la norma pide «el IEBH».
+   dicen «con el visto bueno del IEBH» donde la norma pide «el IEBH».

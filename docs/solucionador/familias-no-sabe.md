@@ -1,6 +1,6 @@
 # Las familias que siguen en «no sabe», por segunda voz candidata
 
-*Generado por `herramientas/generar_informe_familias.py` — modo de la página (solo-canon + dpd-filtro), las 5.000 formas más frecuentes del canon; banco, casos y patrones vigentes descontados. Este informe PREPARA la firma de los próximos patrones; no adjudica nada: la regla, su grado y su resguardo los firma Angel.*
+*Generado por `herramientas/generar_informe_familias.py` — modo de la página (solo-canon + dpd-filtro), las 5.000 formas más frecuentes del canon; banco, casos y patrones vigentes descontados. Este informe PREPARA la firma de los próximos patrones; no adjudica nada: la regla, su grado y su resguardo los firma IEBH.*
 
 **Cómo leerlo.** Cada familia es una segunda voz candidata; su masa es la suma de frecuencias en el canon de las formas marcadas que ninguna autoridad afirma. «única» = el mecanismo vigente (base única atestiguada) la afirmaría con solo firmar la familia; «única ⚠» = la afirmaría, pero la base es menos frecuente que la forma entera — la firma del defecto de pajānāti—; «n bases» = el patrón callaría. Si una familia trae muchas ⚠, conviene firmarla CON el resguardo de frecuencia (base ≥ forma), que está medido y espera decisión. Las segundas voces con menos de 100 apariciones propias no forman familia aquí: una segunda de 1 aparición es la misma base residual del defecto de pajānāti, vista del otro lado (--min-seg las recupera).
 

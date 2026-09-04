@@ -5,7 +5,7 @@ publicación `20130407-BN-T0021`) contra las trece presentaciones
 `GP-T - Verbo-I` … `GP-T - Verbo-XII` exportadas a PDF.
 
 **Nada de lo que sigue está corregido.** Son propuestas y dudas; la firma es
-de Angel.
+del IEBH.
 
 ## 0. Resumen
 
@@ -47,7 +47,7 @@ Las presentaciones citan siempre el par `Kacc/Rū`, y son coherentes: de los 30
 pares distintos que aparecen en las trece —107 citas— **ninguno discrepa** de
 la concordancia deducida de `kaccayana/*.md` y `docs/*.md`.
 
-**Decidido por Angel (2026-09-01):** se publica el par `Kacc/Rū`, como hacen
+**Decidido por IEBH (2026-09-01):** se publica el par `Kacc/Rū`, como hacen
 las presentaciones. La numeración normativa del repositorio es la de
 Kaccāyana; la de Rūpasiddhi va al lado porque es la que trae el documento.
 
@@ -67,7 +67,7 @@ cita —correctamente— en la escalera de `10-vi-kī`.
 La primera tabla de `9-su` (ṇu → suṇoti) cita Rū 512, que sí es correcta. El
 error afecta sólo a la segunda.
 
-**Adjudicado por Angel (2026-09-01): Kacc. §448 / Rū 512.** Verificado contra
+**Adjudicado por IEBH (2026-09-01): Kacc. §448 / Rū 512.** Verificado contra
 el texto del sutta, no sólo contra la diapositiva. La corrección se señala en
 la página: el documento base cita Rū 513, y ahí se dice.
 
@@ -112,7 +112,7 @@ el último paso de elisión y el de formación** del verbo (de ahí las celdas c
 dos números: «67, 11», «433, 11», «49, 11»…), mientras que las presentaciones
 los separan. Por eso «bhū» tiene 6 filas en el documento y 7 en la diapositiva.
 
-**Decidido por Angel (2026-09-01): una operación por fila**, como en las
+**Decidido por IEBH (2026-09-01): una operación por fila**, como en las
 diapositivas. Cada fila muestra la forma **resultante** de la regla que se cita
 a su lado, de modo que la escalera se puede comprobar línea a línea. Es la
 misma convención que ya usan las escaleras de sandhi del repositorio.
@@ -166,19 +166,19 @@ signo de conjugación y el fortalecimiento de la vocal ocurren juntos y sin
 forma intermedia impresa. Separarlos obliga a proponer una forma —`hū + ti`—
 que ninguna de las dos fuentes imprime.
 
-**Decidido por Angel (2026-09-01): se separan**, imprimiendo «hū + ti», y la
+**Decidido por IEBH (2026-09-01): se separan**, imprimiendo «hū + ti», y la
 fila añadida se rotula como en «bhū». No es inventar un paso: Rū 487 = Kacc.
 §510 *Lopañ c' ettam akāro* elide el signo de conjugación, de modo que de «hū +
 a + ti» no puede salir otra cosa que «hū + ti»; después Rū 434 = Kacc. §485
 *Aññesu ca* fortalece ū → o. La forma intermedia es aritmética de la regla
 citada, no una regla nueva.
 
-**Decidido por Angel (2026-09-01):** se publica tal cual, con nota de que
+**Decidido por IEBH (2026-09-01):** se publica tal cual, con nota de que
 ninguna segunda fuente la corrobora. Rū 434 = Kacc. §485 *Aññesu ca* es la
 regla general de vuddhi y ṇu → ṇo es un fortalecimiento, de modo que la cita
 es coherente; sencillamente no hay segundo testigo.
 
-**Decidido por Angel (2026-09-01):** sí se incorpora, **siempre que no esté ya
+**Decidido por IEBH (2026-09-01):** sí se incorpora, **siempre que no esté ya
 en el documento «Verbo»**. Es del mismo autor. Cada escalera traída de las
 diapositivas se rotula con la presentación de la que sale.
 
@@ -202,7 +202,7 @@ El propio colofón advierte que el material «no ha sido editado todavía».
    perfecto; `5-asa` termina en el imperfecto; `7-vaca` sin presente,
    imperativo ni potencial; `9-disa`, `12-ṭhā`, `13-su`, `14-gaha`, `15-e`,
    `16-hana`, `17-hara`, `18-labha`, `19-upa-pada` y `20-vi-hara`
-   incompletos. **Aplazado por Angel (2026-09-01):** no se toca por ahora; los
+   incompletos. **Aplazado por IEBH (2026-09-01):** no se toca por ahora; los
    paradigmas se publican con los tiempos que traen.
 4. El colofón remite a «el siguiente archivo» para la lista de referencias, y
    ese archivo no acompaña al documento. La diapositiva 2 de `Verbo-I` da
@@ -219,7 +219,7 @@ más que salieron al automatizarlo:
 1. **La diapositiva de «gaha» retrocede.** El paso 2 elide la vocal final y
    deja «gah»; el paso 3 vuelve a imprimir «gaha». Una de las dos filas está
    mal, y no hay en el documento escalera de gahādi con que cotejarla.
-   **Decidido por Angel (2026-09-01):** se publica la escalera con la duda a
+   **Decidido por IEBH (2026-09-01):** se publica la escalera con la duda a
    la vista. Kacc. §490 *halopo ṇhāmhi* elide «ha» ante ‘ṇhā’, de modo que en
    el paso 5 la raíz tiene que ser todavía «gaha»: la fila sospechosa es la
    2. Se publica porque es la ÚNICA escalera de gahādi que existe, y porque la
@@ -229,7 +229,7 @@ más que salieron al automatizarlo:
    «rudhi» en la diapositiva. La tabla de los ocho grupos del propio documento
    dice «rudhādi-gaṇa» y «grupo que comienza con la raíz "rudhi"», de modo que
    las dos formas están en él.
-   **Decidido por Angel (2026-09-01): «rudhi».** Lo zanja el propio
+   **Decidido por IEBH (2026-09-01): «rudhi».** Lo zanja el propio
    repositorio: `recursos/raices/raices.json` trae las dos como raíces
    DISTINTAS — «rudhi», gaṇa II, «cerrar; cubrir; prevenir, obstruir», que es
    el rudhādi-gaṇa y justo la glosa del documento; y «rudha», gaṇa III,
@@ -257,7 +257,7 @@ Bloque de licencia, idéntico al de las demás páginas de `recursos/`:
 > Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado
 > bajo licencia CC BY-NC-ND 4.0.
 
-**Decidido por Angel (2026-09-01):** todo paradigma tomado de otra obra lleva
+**Decidido por IEBH (2026-09-01):** todo paradigma tomado de otra obra lleva
 su crédito. La sección *otros paradigmas* —**73 de las 130 tablas**— procede,
 según la nota al pie 2 y el colofón, de *The Higher Pali Course for Advanced
 Students*, del Venerable Buddhadatta Thera, publicado por The Colombo
@@ -265,7 +265,7 @@ Apothecaries' Co., Ltd., Colombo, Sri Lanka, 1951, y así se cita. La misma
 regla se aplica a cualquier otro paradigma de procedencia ajena que aparezca al
 seguir trabajando.
 
-**Decidido por Angel (2026-09-01):** se hace constar que el material se creó
+**Decidido por IEBH (2026-09-01):** se hace constar que el material se creó
 en 2013 y se editó y mejoró en 2026 al preparar la página. Redacción propuesta
 para el pie, a continuación del bloque de licencia:
 

@@ -7,7 +7,7 @@ Arma las escaleras publicables del verbo a partir de las dos fuentes.
 
 Lo importa `generar_verbo.py`; suelto sirve para verlas antes de maquetar.
 
-Aquí viven las cinco decisiones que Angel firmó el 1-sep-2026, y no en el
+Aquí viven las cinco decisiones que IEBH firmó el 1-sep-2026, y no en el
 maquetado, para que se puedan leer y discutir sin abrir el HTML. Están en
 `docs/verbo/escaleras-por-adjudicar.md` con su porqué; en resumen:
 

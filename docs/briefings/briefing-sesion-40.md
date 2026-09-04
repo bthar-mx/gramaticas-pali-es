@@ -10,9 +10,9 @@ comparador y cifras.*
 > `git log origin/main..main`. Las reglas de siempre: el Python es la
 > referencia; los CINCO arneses mandan, y **uno a uno**; nada se adjudica sin
 > el visto bueno del IEBH; todo se mide antes y después; la atribución pública
-> dice IEBH. Con Angel se habla en inglés; lo del proyecto va en español.
+> dice IEBH. Con IEBH se habla en inglés; lo del proyecto va en español.
 > **Y el criterio que manda sobre todo, ya en `CLAUDE.md` con las palabras de
-> Angel:** hay formas de sandhi teóricamente plausibles que son inverosímiles
+> IEBH:** hay formas de sandhi teóricamente plausibles que son inverosímiles
 > en el Tipiṭaka. Recomponer no basta. Atestiguar la pieza no atestigua la
 > juntura.
 
@@ -126,7 +126,7 @@ la única que alcanza a esas 44.998 fichas**, y ahora ese pendiente lleva cifra.
    los conjuntos «porque es el que más probablemente gane una regla». Era una
    corazonada con cara de pronóstico; de los 416, cero son de conjunto.
 3. **Busqué el briefing en el repositorio equivocado.** Empecé por `OSBCT`,
-   que es el otro proyecto de Angel. El briefing vive aquí. Cuesta poco decirlo
+   que es el otro proyecto del IEBH. El briefing vive aquí. Cuesta poco decirlo
    y evita el mismo minuto perdido mañana.
 
 ## 5. LO QUE SIGUE (en orden)

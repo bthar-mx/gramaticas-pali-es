@@ -1,17 +1,17 @@
 # Kaccāyana Pāḷi-Español: Briefing de la Sesión 39
 
 *Complementa a los briefings 05–38. Tema de la sesión 39 (2026-08-30, en vivo
-con Angel, la misma tarde que la 37 y la 38): **el Saddanīti entra en el
+con IEBH, la misma tarde que la 37 y la 38): **el Saddanīti entra en el
 proyecto**. Empezó como un trabajo mecánico —traer los documentos de capítulo
 de la Therīgāthā— y terminó con la primera operación no kaccayaniana del
-motor, una fuente nueva, y un criterio que Angel pidió poner por escrito y que
+motor, una fuente nueva, y un criterio que IEBH pidió poner por escrito y que
 manda sobre todo lo demás.*
 
 > **Lo primero que tiene que saber el chat nuevo:** verificar
 > `git log origin/main..main`. Las reglas de siempre: el Python es la
 > referencia; los CINCO arneses mandan; nada se adjudica sin el visto bueno
 > del IEBH; todo se mide antes y después; la atribución pública dice IEBH.
-> Con Angel se habla en inglés; lo del proyecto va en español.
+> Con IEBH se habla en inglés; lo del proyecto va en español.
 > **Y la nueva de esta sesión, ya en CLAUDE.md**: el Tipiṭaka es la fuente y
 > Kaccāyana la autoridad que lo explica. Recomponer no basta.
 
@@ -28,7 +28,7 @@ manda sobre todo lo demás.*
 Once commits, de `804fff4` a `b33d0d5`. **Ninguno empujado por este chat**;
 comprobar si el ciclo los empujó.
 
-## 1. EL CRITERIO QUE MANDA SOBRE TODO — pedido de Angel
+## 1. EL CRITERIO QUE MANDA SOBRE TODO — pedido del IEBH
 
 Está en `CLAUDE.md`, en su propia sección, y no es un detalle de esta sesión:
 es cómo se decide de aquí en adelante.
@@ -53,7 +53,7 @@ criterio en un filtro automático en vez de una poda a mano.**
 
 ## 2. SADDANĪTI SUTTAMĀLĀ 49 — la primera operación no kaccayaniana
 
-Angel observó que «tveva» significa a veces «iti eva» y a veces «tu eva»:
+El IEBH observó que «tveva» significa a veces «iti eva» y a veces «tu eva»:
 citativo en «sabbe kāmā ‘kāmā’ tveva saṅkhaṃ gacchanti» y en «“Aññāsikoṇḍañño”
 tveva» del Dhammacakkappavattana; «tu eva» en «avijjāya tveva». Para el
 segundo hay Kaccāyana §18; para el primero no encontraba autoridad. **La hay:**
@@ -104,7 +104,7 @@ Las 14 que caen son todas falsas —la regla ancha proponía «si + eva» para
 «sveva», «di + eva» para «dveva», «esi + eva» para «esveva»— y se apoyan en
 voces que la edición trae una o dos veces («si» 2, «di» 1, «esi» 14).
 
-**Las lecturas verdaderas de esas formas las adjudicó Angel el 2026-08-30**, y
+**Las lecturas verdaderas de esas formas las adjudicó IEBH el 2026-08-30**, y
 se anotan aquí porque el chat que venga las va a necesitar:
 
     sveva   = so + eva    (§18)
@@ -116,7 +116,7 @@ se anotan aquí porque el chat que venga las va a necesitar:
      pero en la primera redacción añadí de mi cosecha «cuando es dve + eva» y
      «dvevassasahassāyukā, que es dve vassasahassāyukā». Eso no era una medida
      ni una cita: era una glosa mía sin autoridad, escrita el mismo día en que
-     Angel pidió dejar por escrito que lo teóricamente posible no se publica
+     IEBH pidió dejar por escrito que lo teóricamente posible no se publica
      como si fuera lo que dice el canon. La corrigió él: es «dvi + eva» por
      §12. Enumerar lo que el motor propone de más es una cosa; decir lo que la
      voz ES, otra, y la segunda no me toca. -->
@@ -129,7 +129,7 @@ Lo que SÍ entra son los citativos, que es lo que se buscaba: `subhantveva`
 (subhanti + eva), `rūpantveva`, `dhammakathikotveva`, `samaṇotveva`,
 `aṅgantveva` — la fórmula del nombre y de la cuenta.
 
-## 3. «tveva»: TRES decisiones en un día, y las tres son de Angel
+## 3. «tveva»: TRES decisiones en un día, y las tres son del IEBH
 
 | | qué | commit |
 | --- | --- | --- |
@@ -178,7 +178,7 @@ VEREDICTO—, con el porqué y una línea que nombra los que no entraron.
 El segundo baja la cola de verdad, la pasa por el incorporador en modo ensayo
 con archivos temporales, y NO archiva, NO incorpora y NO vacía la cola. Hace
 falta porque **la corrida buena es irreversible**: la cola se vacía al
-incorporar y el archivo no se vuelve a leer. La orden de Angel no cambia
+incorporar y el archivo no se vuelve a leer. La orden del IEBH no cambia
 —`ciclo_veredictos.py` sigue siendo la misma—; el ensayo es opcional.
 
 **Sigue sin hacer**, y es de la misma familia: el `git add -A` de la línea 172
@@ -190,7 +190,7 @@ diagnosticar, de modo que el arreglo no es el mismo.
 ## 5. THERĪGĀTHĀ I-IV, y dos correcciones al mapa del briefing 38
 
 Entraron los 32 documentos de capítulo de Ekaka, Duka, Tika y Catukka —versos
-1 a 66— más el Mahānidāna-sutta que aportó Angel. Los 32 traen «Lista de
+1 a 66— más el Mahānidāna-sutta que aportó IEBH. Los 32 traen «Lista de
 voces», que es lo que los hace fuente de ecuaciones.
 
 **Las ecuaciones nuevas caen sobre el diagnóstico del briefing 38 §1** y son
@@ -226,7 +226,7 @@ estorba —las junturas se deduplican— pero está superado.
 
 ## 6. FUENTES NUEVAS, registradas en `comun/fuentes-externas.md`
 
-**bhaddacak.github.io/grammarbooks** (lo encontró Angel). Trae el **Saddanīti
+**bhaddacak.github.io/grammarbooks** (lo encontró IEBH). Trae el **Saddanīti
 entero** —Suttamālā con sus 1.347 suttas, Dhātumālā, Padamālā—, Moggallāna,
 Payogasiddhi, Niruttidīpanī, Rūpasiddhi y un buscador de suttas entre obras.
 Es lo que resolvió la pregunta del día. **Dos advertencias que no son
@@ -290,7 +290,7 @@ está en **francés**.
    es la definición de comprobación inútil — briefing 38 §6.3, otra vez.
 4. **Glosé de mi cosecha lo que unas voces «son»** —«dveva … cuando es dve +
    eva», «dvevassasahassāyukā, que es dve vassasahassāyukā»— dentro de una
-   lista que sí estaba medida. Angel lo corrigió: es **«dvi + eva» por §12**.
+   lista que sí estaba medida. El IEBH lo corrigió: es **«dvi + eva» por §12**.
    El fallo no fue la medida sino el resbalón de «esto es lo que el motor
    propone de más» a «y esto es lo que la voz es», que es adjudicar, y no me
    toca. Y ocurrió el mismo día en que él pidió poner por escrito justamente
@@ -298,7 +298,7 @@ está en **francés**.
 
 ## 9. LO QUE SIGUE (en orden)
 
-1. **Trabajar con el Saddanīti**, que es donde se quedó la sesión. Angel iba a
+1. **Trabajar con el Saddanīti**, que es donde se quedó la sesión. El IEBH iba a
    traer los volúmenes de archive.org (5 de 6, en varios formatos): el `.pdf`
    liso y el `_page_numbers.json` de cada uno. Con la Suttamālā buscable en
    bhaddacak y el Smith para cotejar, **lo que se abre es buscar las OTRAS
@@ -327,9 +327,9 @@ está en **francés**.
   cotejado contra la edición de Helmer Smith. En la página se imprime
   «Saddanīti Suttamālā §49» **sin enlace**, porque el sitio no tiene página de
   esa obra: enlazarlo mandaba al lector al §49 de Kaccāyana, que trata de la
-  vocal final de «putha». Lo vio Angel y está arreglado en `b33d0d5`; cuando
+  vocal final de «putha». Lo vio IEBH y está arreglado en `b33d0d5`; cuando
   haya página del Saddanīti, el enlace se pone en `refHTML()`.
-- **Las tres decisiones sobre «tveva» son de Angel**, del mismo día, y las
+- **Las tres decisiones sobre «tveva» son del IEBH**, del mismo día, y las
   tres están escritas con su fecha. La retirada de la adjudicación de la
   mañana no fue una corrección de un error suyo: «tu + eva» es correcta para
   «avijjāya tveva», y por eso volvió, bajo la voz unida.

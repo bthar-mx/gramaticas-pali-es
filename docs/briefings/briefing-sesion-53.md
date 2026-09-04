@@ -22,7 +22,7 @@ ficha ya discuta la cantidad, que Nandisena escriba distinto, que un sufijo
 exija ī— y una normalización muda no da ninguna: la forma que la ficha da es la
 buena. **Sólo la plancha lo dice.**
 
-Angel decidió (sesión 53) **colacionar las 44 páginas**, no sólo las 31 que se
+El IEBH decidió (sesión 53) **colacionar las 44 páginas**, no sólo las 31 que se
 transcribieron antes de que existiera su ejemplar, «to include everything».
 Ése es el trabajo del chat que siga.
 
@@ -57,7 +57,7 @@ Smith y el curso dicen lo mismo; el ablativo de Nandisena queda aparte.
 - **`upasagga`** — `comun/glosario.md` fija «prefijo» (Nāma §221), el Diplomado
   dice «preverbio» y **Smith dice «préverbe»** (ficha `pādipubbapada`, 5.2.2.2,
   p. 1125). Edición base y curso juntos CONTRA la norma del repositorio.
-  Gravedad alta. **Decisión de Angel, abierta.**
+  Gravedad alta. **Decisión del IEBH, abierta.**
 - **`kāraka`** — la norma fija «relación sintáctica»; el Diplomado lo usa para
   el agente (ficha `bhāvasādhana`, 3.1.3, p. 1113).
 - **`vidhi`** — el Diplomado «orden»; Smith «précepte (règle, commandement)», y
@@ -120,7 +120,7 @@ Todos suyos, todos de esta sesión, todos escritos ya en los datos.
 
 Dudas: **49 → 48** (se cerraron dos, se abrió una nueva, la de la p. 1105).
 
-### La precisión de Angel sobre `samīpattha`, que conviene no perder
+### La precisión del IEBH sobre `samīpattha`, que conviene no perder
 
 **`samīpattha` es `samīpa` «proximidad» + `attha` «sentido».** De modo que el
 control de la p. 1124 no es una palabra parecida sino **el mismo morfema**,
@@ -140,7 +140,7 @@ convierte el caso en una inconsistencia interna documentada, del género del
 entera, sacar la lista de fichas de `recursos/glosario/conspectus/pNNNN.json`, y
 recorrerlas contra lo impreso, ampliando a ×7 u ×8 lo que baile.
 
-**La regla, que es de Angel y no se salta: una lectura sólo se afirma si hay
+**La regla, que es del IEBH y no se salta: una lectura sólo se afirma si hay
 control en la MISMA página** —una i breve conocida y una ī larga conocida, en el
 mismo cuerpo—. Sin control, no se afirma. Las anomalías de Smith se miden contra
 su propia norma, no contra la gramática.
@@ -167,7 +167,7 @@ pierde nada.
 
 Otra vez la ficha da la forma corriente —`pabhuti`, sáns. *prabhṛti*— donde
 Smith imprime otra cosa, y otra vez sin nota. **Se le ha puesto `duda`; el lema
-no se ha tocado.** Falta que Angel diga si se le aplica el criterio de `samīpa`
+no se ha tocado.** Falta que IEBH diga si se le aplica el criterio de `samīpa`
 y `guṇipada` —las dos lecturas con su fuente— o algún otro.
 
 Comprobado sin novedad en esta página: `(cittaja-)sadda`, `vaṇṇattam upagato
@@ -185,7 +185,7 @@ Cada página, tres cosas:
 
 1. colacionar los lemas contra la plancha, con control en la misma página;
 2. **no tocar ningún lema**: lo que baile se marca con `duda` y se le enseña a
-   Angel, que decide;
+   IEBH, que decide;
 3. anotar el resultado en `docs/glosario/revision-de-las-i.md`, que es donde va
    el registro.
 
@@ -217,7 +217,7 @@ listados en `docs/glosario/revision-de-las-i.md` §4.
 
 ## 7. Cuánto queda, medido
 
-Angel lo preguntó y conviene que no se pierda la cuenta.
+El IEBH lo preguntó y conviene que no se pierda la cuenta.
 
 | parte | tamaño | estimación |
 | --- | --- | --- |

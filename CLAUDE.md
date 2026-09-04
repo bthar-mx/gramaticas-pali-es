@@ -470,13 +470,16 @@ Las **formas pāḷi no se traducen nunca**: son el objeto de la página, y no
 aparecen en `ingles.json` siquiera. Las referencias (§248, Rū. §260) tampoco: son
 la cita, y es la misma en los dos idiomas.
 
-### Pendiente, y es del IEBH
+### La atribución pública dice IEBH, nunca «Angel» (resuelto, sesión 56)
 
-`docs/paradigmas/ingles-por-adjudicar.md` §7 señala cuatro puntos, y el cuarto no
-es de traducción: **tres notas publicadas dicen «con el visto bueno de Angel»**
-(N-Ā1, #1 y la segunda de Sufijos-Inflexiones). La regla del proyecto es que la
-atribución pública dice IEBH, nunca «Angel». El inglés ya pone «the IEBH»; el
-español está sin tocar a propósito, porque corregir la edición es decisión suya.
+Pedido de Angel, 2026-09-04: **«Angel» se sustituye por «IEBH» en todo lo que
+produce el proyecto** —datos que llegan al sitio, `comun/`, `docs/` con los
+briefings, y los comentarios de `herramientas/`—. Hecho en la sesión 56 (779
+apariciones, 70 archivos), con las preposiciones ajustadas («ejemplar del
+IEBH», «lo decide IEBH»). Las tres notas de paradigmas que decían «con el visto
+bueno de Angel» quedaron corregidas con ello. **Este archivo es la única
+excepción**: sus instrucciones de trabajo siguen nombrando a Angel. Lo que se
+escriba de aquí en adelante nace ya con IEBH.
 
 ## Hacia dónde va esto: un solucionador de sandhis
 

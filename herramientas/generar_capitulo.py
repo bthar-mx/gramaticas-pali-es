@@ -116,7 +116,7 @@ CAPITULOS = {
 
 # ── Idiomas ────────────────────────────────────────────────────────────
 # Todo lo que la página dice por su cuenta (no el texto del capítulo) sale de
-# aquí. La edición inglesa es decisión de Angel (sesión 45), con permiso del
+# aquí. La edición inglesa es decisión del IEBH (sesión 45), con permiso del
 # Venerable Nandisena: su inglés donde lo hay, el aparato del español encima.
 IDIOMAS = {
     "es": {

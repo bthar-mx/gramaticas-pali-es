@@ -1,15 +1,15 @@
 # «tveva» tiene dos lecturas, y las dos tienen autoridad
 
-*Registrado el 2026-08-30, a pedido de Angel, durante la sesión 39.*
+*Registrado el 2026-08-30, a pedido del IEBH, durante la sesión 39.*
 
 > **Resultado, por delante:** la autoridad que faltaba **existe**, y no está en
 > Kaccāyana sino en el **Saddanīti Suttamālā, sutta 49**, que enuncia la regla
 > y da «itveva» como su propio ejemplo. Kaccāyana —§51 incluido—, la Rūpasiddhi
 > y el Nyāsa no la tienen.
 
-## 1. Lo que observa Angel — es suyo, no del proyecto
+## 1. Lo que observa IEBH — es suyo, no del proyecto
 
-**Angel, 2026-08-30:**
+**El IEBH, 2026-08-30:**
 
 > «tveva» a veces puede significar «iti eva» y a veces puede significar «tu
 > eva». Por ejemplo en «sabbe kāmā ‘kāmā’ tveva saṅkhaṃ gacchanti», «tveva»
@@ -21,7 +21,7 @@ La observación es suya y la atribución también. Lo que sigue es del proyecto.
 
 ### El ejemplo que lo cierra, y es del Dhammacakkappavattana
 
-**Angel, 2026-08-30, adjudicado en el solucionador:**
+**El IEBH, 2026-08-30, adjudicado en el solucionador:**
 
 > En la frase «**Aññāsi Koṇḍañño**» **tveva** del Dhammacakkappavattana-Sutta,
 > «tveva» = «iti eva».
@@ -33,7 +33,7 @@ exclama, y de ahí, *iti eva*, «justamente por eso \[por esa expresión\]», le
 queda el nombre **Aññāsi-Koṇḍañña**. Leerlo como «tu + eva», «pero ciertamente»,
 dejaría el pasaje sin explicar de dónde sale el nombre.
 
-De modo que el pasaje donde Angel notó el problema es también el que lo
+De modo que el pasaje donde IEBH notó el problema es también el que lo
 demuestra, y cae bajo el sutta 49 del Saddanīti que se transcribe abajo.
 
 ## 2. LA AUTORIDAD: Saddanīti Suttamālā 49
@@ -52,7 +52,7 @@ asimāvudhañ ca». ¿Por qué «a veces»? \[Por\] «icceva».
 
 Es decir: la regla nombra **«iti» expresamente**, da **«itveva»** como
 ejemplo, y explica con «kvaci» por qué la otra salida —«icceva»— también
-existe. Es exactamente lo que Angel buscaba.
+existe. Es exactamente lo que IEBH buscaba.
 
 Y el sutta inmediatamente anterior dice por qué la salida NO es con ‘y’:
 
@@ -69,7 +69,7 @@ reducida **tveva** es «itveva» con la ‘i’ inicial ya elidida.
 
 ### Cotejado contra Helmer Smith, que es lo que manda el editor
 
-Verificado el 2026-08-30 sobre el PDF de Angel, **Saddanīti III (Suttamālā),
+Verificado el 2026-08-30 sobre el PDF del IEBH, **Saddanīti III (Suttamālā),
 p. 617** (pág. 24 del PDF). Smith imprime:
 
 > **49 Evass’ ekāre itiss’ aññassa c’ issa vo.** Evasaddassa *e*kāre pare
@@ -81,7 +81,7 @@ p. 617** (pág. 24 del PDF). Smith imprime:
 que faltaban son los que deciden: «**Isigili tv eva**» (M III 68) y
 «**Samantapāsādikā tv eva**» son la fórmula del NOMBRE —un nombre seguido de
 «tv eva»—, que es exactamente la construcción de «Aññāsi Koṇḍañño tveva». El
-propio sutta trae el patrón de Angel entre sus ejemplos.
+propio sutta trae el patrón del IEBH entre sus ejemplos.
 
 Referencias canónicas que da el aparato de Smith para los cuatro:
 M II 100⁵ = Th 869ᵃ · J III 302² · M III 68⁵⁰ · Sp I 201³⁰, 284²¹.
@@ -125,7 +125,7 @@ proyecto llama verificar en vez de afirmar.
 - **Kaccāyana §51** no la da. §51 es de *upasagga* y *nipāta*, y sus secuencias
   mandan la ‘i’ a ‘y’ (**Nyāyogo**: ni āyogo · ny āyogo §21) y la ‘u’ a ‘v’
   (**Dvālayo**: du ālayo · dv ālayo §18). No hay ningún paso ‘y’ → ‘v’ en todo
-  el sutta. Angel preguntó por §51 y la respuesta es no.
+  el sutta. El IEBH preguntó por §51 y la respuesta es no.
 - **La Rūpasiddhi** tampoco: cero.
 - **El Nyāsa no está callado, pero no trata esto.** Sus doce «tveva» son todos
   «bhavatu/hotu + eva» (bhavatvevaṃ, hotveva) y sus seis «tyeva» son todos
@@ -136,7 +136,7 @@ proyecto llama verificar en vez de afirmar.
      saddassa» — la ‘i’ de «iti» Y la de otra palabra. Si «aññassa saddassa»
      alcanza a cualquier voz acabada en ‘i’, entonces «bhavati + eva» también
      podría dar «bhavatveva», y los doce «tveva» del Nyāsa dejarían de ser
-     prueba de «bhavatu». No cambia la respuesta a Angel; sí cambiaría el
+     prueba de «bhavatu». No cambia la respuesta al IEBH; sí cambiaría el
      análisis de esas doce. Lo decide el IEBH. -->
 
 ## 5. El caso adjudicado no puede expresar dos lecturas
@@ -182,13 +182,13 @@ entonces «avijjāya tveva» pasaría a leerse «iti + eva», que es falso.
 
 ### El arreglo, y lo dice la propia escalera del veredicto
 
-La escalera que escribió Angel no deriva «tveva»: deriva
+La escalera que escribió IEBH no deriva «tveva»: deriva
 **«aññāsikoṇḍaññotveva»**, la voz entera. Y ésa es una forma distinta, está
 atestiguada en la edición —**2 veces**— y **no tiene caso todavía**. Registrado
 bajo esa clave el veredicto entra sin chocar, y «tveva» suelto se queda como
 está para «avijjāya tveva».
 
-Lo mismo vale para el otro ejemplo de Angel: **«avijjāyatveva» existe en la
+Lo mismo vale para el otro ejemplo del IEBH: **«avijjāyatveva» existe en la
 edición como voz unida, 14 veces**. De modo que las dos lecturas se pueden
 registrar sin ambigüedad si la clave es la voz unida y no la partícula suelta:
 
@@ -203,7 +203,7 @@ porque de veras tiene dos lecturas y la ficha da una. Ése es el punto de §5.
 
 ## 5 ter. CÓMO QUEDÓ: sin adjudicar, y las dos lecturas a la vista
 
-**Decisión de Angel, 2026-08-30.** La adjudicación de «tveva» —«tu + eva»,
+**Decisión del IEBH, 2026-08-30.** La adjudicación de «tveva» —«tu + eva»,
 firmada por él ese mismo día— **se retira**. No por errónea: es correcta para
 «avijjāya tveva». Se retira porque la ficha afirma UNA lectura y la voz tiene
 DOS, cada una con su autoridad, y el globo de la marca imprime
@@ -267,7 +267,7 @@ Consultadas en el repositorio: Kaccāyana §§10, 11, 12, 15, 18, 20, 21, 23, 41
 la edición del Sexto Concilio por formas y cuentas
 (`recursos/corpus/corpus-formas.json`).
 
-**Fuente nueva, que Angel encontró el 2026-08-30:**
+**Fuente nueva, que IEBH encontró el 2026-08-30:**
 <https://bhaddacak.github.io/grammarbooks> — Kaccāyana, Rūpasiddhi, Moggallāna,
 Payogasiddhi, Niruttidīpanī, **Saddanīti (Padamālā, Dhātumālā y Suttamālā)**,
 Abhidhānappadīpikā, y un buscador de suttas que relaciona las obras entre sí

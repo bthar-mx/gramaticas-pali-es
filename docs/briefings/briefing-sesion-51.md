@@ -5,7 +5,7 @@
 
 Este briefing supone leídos los de las sesiones 46 a 50, que siguen vigentes en
 todo lo que no se corrija aquí. **Y lo de la sesión 50 §2 es ahora la práctica
-normal: se lee sobre el ejemplar de Angel.**
+normal: se lee sobre el ejemplar del IEBH.**
 
 ---
 
@@ -310,7 +310,7 @@ briefing 49 §5. La ficha lo advierte. **No se ha tocado `desnudo()`.**
 
 ## 8. Cómo se sigue, en concreto
 
-    # la página impresa N del ejemplar de Angel (hoja = N − 1104)
+    # la página impresa N del ejemplar del IEBH (hoja = N − 1104)
     pdfimages -j -f $((N-1104)) -l $((N-1104)) \
       recursos/saddaniti/conspectus-ejemplar-angel.pdf /tmp/p
 
@@ -321,7 +321,7 @@ briefing 49 §5. La ficha lo advierte. **No se ha tocado `desnudo()`.**
 
 Lo que funcionó esta sesión, además de lo del briefing 50 §8:
 
-1. **Bandas de unas 200-230 px a escala 1,5-1,7×** sobre el ejemplar de Angel.
+1. **Bandas de unas 200-230 px a escala 1,5-1,7×** sobre el ejemplar del IEBH.
    Con esta imagen no hace falta bajar a línea por línea salvo para una
    cantidad vocálica concreta.
 2. **Buscar el control en la misma página, no en otra.** El `visesaniya` de la
@@ -338,12 +338,12 @@ Lo que funcionó esta sesión, además de lo del briefing 50 §8:
 
 ## 9. Lo que sigue pendiente, y no se ha tocado
 
-1. **`.gitignore` y el PDF de Angel.** Sigue siendo lo más urgente, porque es lo
+1. **`.gitignore` y el PDF del IEBH.** Sigue siendo lo más urgente, porque es lo
    único irrecuperable: ver briefing 50 §2. Decisión suya.
 2. **Rehacer el cotejo con el Diplomado cuando estén las 44 páginas.** Faltan
    seis. **No debe correrse hasta el final.**
 3. **Las fichas que saben menos de lo que la sesión ha averiguado**, y que sólo
-   Angel puede mandar actualizar:
+   IEBH puede mandar actualizar:
    - `vicchā` en las pp. 1120 y 1124 (briefing 50 §3.1);
    - `antojappana, ns` en la p. 1120 (briefing 50 §3.2), que ahora tiene además
      la definición del propio Smith en la p. 930;
@@ -352,20 +352,20 @@ Lo que funcionó esta sesión, además de lo del briefing 50 §8:
      pista y sin cerrar;
    - `aparadipanā` en la p. 1136 y `visesaniya` en la p. 1138, que §5 deja con
      tres controles en contra.
-4. **Repasar las ī de las páginas 1105-1134** con el ejemplar de Angel. Las 35
+4. **Repasar las ī de las páginas 1105-1134** con el ejemplar del IEBH. Las 35
    fichas con `duda` son el punto de partida.
 5. **La tarjeta de `/recursos/`**: la página existe y no está enlazada. Falta el
-   visto bueno de Angel.
+   visto bueno del IEBH.
 6. **El guion `herramientas/pagina_saddaniti.py`** sigue a la espera del visto
    bueno, desde el briefing 49 §2.
 7. **`mṭ` sigue sin desarrollar** (p. 1136). No está en la lista de la p. 930.
-8. Las decisiones de Angel que siguen abiertas: **lahu**,
+8. Las decisiones del IEBH que siguen abiertas: **lahu**,
    **niggahita/niggahīta**, **ensanchar āgama** —y esta sesión da un TERCER
    argumento, el más claro: en 7.1.1.1 (p. 1140) āgama glosa a āgata, «de
    tradición»—, el `sukkhuccāraṇatthaṃ` de la p. 1108, el `avadhārana` de la
    p. 1119, el `saddhammaniti` de la p. 1131 —que la p. 1141 vuelve a rozar, con
    su `nīti` de ī larga—, el `tathāgatādāya` de la p. 1130, y las tres notas de
-   paradigmas que dicen «con el visto bueno de Angel» donde la norma pide «el
+   paradigmas que dicen «con el visto bueno del IEBH» donde la norma pide «el
    IEBH».
 
 ---

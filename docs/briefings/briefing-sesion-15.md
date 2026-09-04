@@ -38,7 +38,7 @@ así que el script no las convierte ni renumera: sólo comprueba que anclas
 y definiciones casen, y aborta si aparece una nota en prosa inesperada.
 
 **El corte del tercer bloque retrocede al rótulo de entrada** (decisión de
-Angel, sesión 14). Regla: se corta en el primer «Ejemplos:», y se
+El IEBH, sesión 14). Regla: se corta en el primer «Ejemplos:», y se
 retrocede un párrafo si el anterior acaba en «:» o es «¿Cómo qué?». Afecta
 a cinco suttas —§271, §272 («¿Cómo qué?»), §275, §277, §278 («Primero,
 (1) …:»)— y deja el bloque español en glosa + vutti en todo el capítulo.
@@ -66,7 +66,7 @@ Los otros 40 salen igual que con la regla del Nāma.
 
 ## 4. CINCO ARREGLOS DE MAQUETACIÓN QUE AFECTAN A LOS TRES CAPÍTULOS
 
-Salieron de la revisión visual de Angel sobre el capítulo nuevo, pero
+Salieron de la revisión visual del IEBH sobre el capítulo nuevo, pero
 ninguno era exclusivo de él. Ninguno toca el texto traducido.
 
 | Arreglo | Sandhi | Nāma | Kāraka |
@@ -105,9 +105,9 @@ ninguno era exclusivo de él. Ninguno toca el texto traducido.
 §277, segundo pāda del verso: `Vuttaṃ ‘kamman ti vuccati.` →
 **`Vuttaṃ ‘kamman’ ti vuccati.`** La comilla de apertura no cerraba,
 frente a `sa ‘kattā’ ti` del primer pāda y `‘sampadānaṃ’ vijāniyā` del
-cuarto. Autorizado por Angel; `revisar.py` queda limpio.
+cuarto. Autorizado por IEBH; `revisar.py` queda limpio.
 
-**El verso de §277 sigue sin modo verso** (decisión de Angel): su segundo
+**El verso de §277 sigue sin modo verso** (decisión del IEBH): su segundo
 pāda acaba en punto y el criterio del generador pide coma en todas las
 líneas menos la última. Ahora al menos es un párrafo aparte, gracias al
 arreglo 4.1. Si se quisiera pāda a pāda, hay que relajar el criterio y
@@ -120,15 +120,15 @@ poner un guardia para que «icc evamādi.» no se tome por la traducción.
 - **Restitución de referencias canónicas** de los tres capítulos: las del
   Kāraka están tabuladas en las NOTAS DE TRABAJO de
   `borradores/sesion-11-suttas-271-285.md` (§5), `-286-300.md` (§4) y
-  `-301-315.md`. Angel dará la orden.
+  `-301-315.md`. El IEBH dará la orden.
 - **Volcado al glosario** de los términos del capítulo 3 con las
   traducciones falladas (ablativo, dativo, okāsa=locativo, karaṇa=
   instrumental, kamma=objeto, kattā=sujeto/agente, hetu=causa,
   sāmī=posesivo) y de los del 4 cuando se revise.
 - «¿Como qué?» sin tilde en §53 del Nāma publicado, frente a «¿Cómo qué?»
-  del Kāraka: si Angel quiere retroactividad, es un cambio al maestro del
+  del Kāraka: si IEBH quiere retroactividad, es un cambio al maestro del
   Nāma (no se ha pedido).
-- Si Angel quiere `<u>` para el kāraka en lugar de negrita, es cambio del
+- Si IEBH quiere `<u>` para el kāraka en lugar de negrita, es cambio del
   generador.
 - Revisión del capítulo 4 (hilo propio, briefing-13).
 - A plazo: el solucionador de sandhis (CLAUDE.md).

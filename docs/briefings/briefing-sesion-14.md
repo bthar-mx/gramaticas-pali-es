@@ -11,7 +11,7 @@ toca** los archivos del capítulo 4 (`sesion-13-*`, `capitulo-04-*`).*
 
 - **Maestro definitivo: `docs/3. Kāraka-Kappa.md`** (§271–§315, 45 suttas,
   un kaṇḍa, **55 notas al pie** numeradas 1–55 en orden de aparición).
-  Angel lo revisó entero en la sesión 12; se le aplicaron tres tandas de
+  El IEBH lo revisó entero en la sesión 12; se le aplicaron tres tandas de
   correcciones (A: errores; B: 10 fallos de coherencia; C: 9 consultas),
   todas verificadas por script (notas emparejadas, secuencia continua,
   cero comillas rectas, sin dígitos huérfanos).
@@ -32,13 +32,13 @@ toca** los archivos del capítulo 4 (`sesion-13-*`, `capitulo-04-*`).*
    [glosa española del sutta citado]». Ocho notas de política con la
    fórmula «A partir de ahora el término “X” se traduce como “Y”.»
 2. **«¿Cómo qué?» con tilde** (ojo: el Nāma publicado usa «¿Como qué?» en
-   §53 — si Angel quiere retroactividad, es un cambio al maestro del Nāma;
+   §53 — si IEBH quiere retroactividad, es un cambio al maestro del Nāma;
    no se ha pedido).
 3. **«Sangha» en el español** (el pāḷi conserva saṃgha-).
 4. gāma = «poblado» · appāṇini = «ser no sintiente» · bandhana (§275) =
    «confinamiento» · kimatthaṃ cita «“pāḷi” (español)».
 5. **Erratas**: todas las aprobadas están aplicadas; *Sattamīvibhatyatthaṃ*
-   (§274) y *asaho* (§272) se CONSERVAN por cotejo de Angel con la edición
+   (§274) y *asaho* (§272) se CONSERVAN por cotejo del IEBH con la edición
    del Sexto Concilio (Pind lee distinto; no corregir).
 6. **Notas al pie con prefijo** «Nota al pie:» (de Nandisena) / «Nota del
    traductor:» (nuestras), como el Nāma.
@@ -47,7 +47,7 @@ toca** los archivos del capítulo 4 (`sesion-13-*`, `capitulo-04-*`).*
    de nombres.**» / «**Kāraka-kappo niṭṭhito**» / «**Fin del capítulo de
    casos gramaticales**». La fórmula española YA casa con `RE_CIERRE_ES`.
 8. La nota de referencia «Vin. i 304» se retiró: **las referencias
-   canónicas se tratarán todas juntas, más adelante** (decisión de Angel).
+   canónicas se tratarán todas juntas, más adelante** (decisión del IEBH).
 
 ## 3. TAREA DE ESTA SESIÓN: PASOS DE PUBLICACIÓN (CLAUDE.md «Capítulo nuevo»)
 
@@ -66,7 +66,7 @@ toca** los archivos del capítulo 4 (`sesion-13-*`, `capitulo-04-*`).*
 3. **Ojo con dos rasgos del maestro** al convertir: (a) el verso de §277
    va en el bloque pāḷi con pādas línea a línea, pero su 2.ª línea acaba en
    punto — comprobar si dispara o no el modo verso del generador y decidir
-   con Angel; (b) los suttas largos (§275, §277) tienen VARIOS bloques
+   con IEBH; (b) los suttas largos (§275, §277) tienen VARIOS bloques
    «Ejemplos:» con rótulos de sección numerados (1)–(22) — verificar cómo
    los digiere el generador antes de publicar.
 4. **`CAPITULOS`**: entrada 03 (slug, títulos «Kāraka-Kappa» / «Capítulo de
@@ -79,19 +79,19 @@ toca** los archivos del capítulo 4 (`sesion-13-*`, `capitulo-04-*`).*
    referencias «Rū./Sad./Mog.» de las notas NO deben enlazarse; las citas
    internas §271–§315 y las cruzadas al Sandhi/Nāma sí (vía concordancia).
 8. Ejecutar `generar_todo.py`, revisar avisos, verificación visual, commit
-   (el hook regenera `site/`), push de Angel.
+   (el hook regenera `site/`), push del IEBH.
 
 ## 4. PENDIENTES QUE NO SON DE ESTA SESIÓN (no perder)
 
 - **Restitución de referencias canónicas** de los tres capítulos: las del
   Kāraka están tabuladas en las NOTAS DE TRABAJO de
   `borradores/sesion-11-suttas-271-285.md` (§5), `-286-300.md` (§4) y
-  `-301-315.md`. Angel dará la orden («Then we will deal with the
+  `-301-315.md`. El IEBH dará la orden («Then we will deal with the
   references»).
 - **Volcado al glosario** de los términos del capítulo 3 (listas §6/§5 de
   los borradores) con las traducciones FALLADAS (ablativo, dativo, etc.) y
   de los del capítulo 4 cuando se revise.
-- Si Angel quiere `<u>` (subrayado) para el kāraka en el sitio en lugar de
+- Si IEBH quiere `<u>` (subrayado) para el kāraka en el sitio en lugar de
   negrita, es cambio del generador (lo pidió una vez; quedó en negrita).
 - Revisión del capítulo 4 (hilo propio, briefing-13).
 - A plazo: el solucionador de sandhis (CLAUDE.md).

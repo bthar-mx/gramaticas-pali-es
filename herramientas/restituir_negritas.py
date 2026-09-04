@@ -102,7 +102,7 @@ RE_SALTABLE = re.compile(
 # La única divergencia de división registrada del proyecto (sesión 22, y
 # «vale para toda su clase»): en el locativo ante «iti», Nandisena contrae
 # —«Yosvī ti», «Sesesū ti»— y el maestro escribe la forma suelta, «Yosv
-# iti». Angel decidió que manda el maestro.
+# iti». El IEBH decidió que manda el maestro.
 #
 # La negrita del PDF cubre el lemma contraído, «**Yosvī** ti», de modo que
 # sin bridge ninguna de estas líneas encuentra su sitio: son la mayor parte
@@ -113,7 +113,7 @@ RE_SALTABLE = re.compile(
 # como `VARIANTES` en `restituir_citas.py`. Lo que no encaje en ella sigue
 # informándose como ausente.
 #
-# **La negrita acaba en el locativo, no dentro de «iti»** (Angel, sesión
+# **La negrita acaba en el locativo, no dentro de «iti»** (el IEBH, sesión
 # 23). En el PDF la 'ī' de «Yosvī» es la 'i' de «iti» absorbida por la
 # contracción, así que al deshacerla esa letra vuelve a «iti» y sale de la
 # negrita: lo que el sutta nombra es «yosu», no «yosv i».

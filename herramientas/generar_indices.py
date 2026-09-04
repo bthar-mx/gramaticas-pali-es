@@ -18,7 +18,9 @@ la tarjeta se actualizan solos. Un capítulo cuyo .md no exista todavía sale
 como «prevista», sin enlace.
 """
 
+import json
 import os
+import re
 import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -103,6 +105,14 @@ RECURSOS = [
      "todas las variantes de cada forma: nombres por género y tema, "
      "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
      "ignora los diacríticos y filtros por género y por tema."),
+    ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
+     "Los términos técnicos de la gramática pāḷi en una sola lista "
+     "alfabética, con tres capas por lema: el <i>Glosario de términos "
+     "gramaticales de la lengua pali</i> de Bhikkhu Nandisena (IEBH, 2013), "
+     "el <i>Conspectus Terminorum</i> de Helmer Smith (<i>Saddanīti</i> IV) "
+     "en colación página a página sobre la plancha, y la terminología fijada en estas "
+     "traducciones. Buscador que ignora los diacríticos e índice por el "
+     "alfabeto pāḷi."),
     ("raices/", "__RAICES_BADGE__", "Raíces pāḷi comparadas con las sánscritas",
      "Las raíces de la <i>Dhātumālā</i> del <i>Saddanīti</i> con su "
      "significado en español y en inglés, la raíz sánscrita correspondiente "
@@ -252,6 +262,21 @@ EN = {
         "every variant of each form: nouns by gender and stem, pronouns, "
         "numerals and the suffixes that are inflections. Search ignores "
         "diacritics, with filters by gender and by stem.",
+    "Glosario de terminología gramatical": "Glossary of grammatical terminology",
+    "Los términos técnicos de la gramática pāḷi en una sola lista "
+    "alfabética, con tres capas por lema: el <i>Glosario de términos "
+    "gramaticales de la lengua pali</i> de Bhikkhu Nandisena (IEBH, 2013), "
+    "el <i>Conspectus Terminorum</i> de Helmer Smith (<i>Saddanīti</i> IV) "
+    "en colación página a página sobre la plancha, y la terminología fijada en estas "
+    "traducciones. Buscador que ignora los diacríticos e índice por el "
+    "alfabeto pāḷi.":
+        "The technical terms of Pāḷi grammar in a single alphabetical list, "
+        "with three layers per lemma: Bhikkhu Nandisena's <i>Glosario de "
+        "términos gramaticales de la lengua pali</i> (IEBH, 2013), Helmer "
+        "Smith's <i>Conspectus Terminorum</i> (<i>Saddanīti</i> IV), being collated "
+        "page by page against the printed text, and the terminology fixed in these "
+        "translations. Search ignores diacritics, with an index in the Pāḷi "
+        "alphabet.",
     "Raíces pāḷi comparadas con las sánscritas":
         "Pāḷi roots compared with the Sanskrit ones",
     "Las raíces de la <i>Dhātumālā</i> del <i>Saddanīti</i> con su "
@@ -590,6 +615,26 @@ def indice_kaccayana(pub):
              + '\n  {0}.').format(FUENTES))
 
 
+def cuenta_glosario():
+    """(entradas de Nandisena, términos de Smith) para la insignia, si la
+    página del glosario está armada; None si no."""
+    base = os.path.join(RAIZ, "recursos", "glosario")
+    nand = os.path.join(base, "nandisena.json")
+    pags = os.path.join(base, "conspectus")
+    if not (os.path.exists(nand) and os.path.isdir(pags)):
+        return None
+    try:
+        n = len(json.load(open(nand, encoding="utf-8"))["entradas"])
+        c = 0
+        for nombre in os.listdir(pags):
+            if re.fullmatch(r"p\d{4}\.json", nombre):
+                c += len(json.load(open(os.path.join(pags, nombre),
+                                        encoding="utf-8"))["terminos"])
+        return n, c
+    except (OSError, ValueError, KeyError):
+        return None
+
+
 def cuenta_verbo():
     """(escaleras, paradigmas) de la página del verbo, si ya está armada."""
     import json
@@ -635,7 +680,12 @@ def indice_recursos():
     badge_ver = (bi("{0} derivaciones · {1} paradigmas".format(*n_ver),
                     "{0} derivations · {1} paradigms".format(*n_ver))
                  if n_ver else "verbo")
+    n_glo = cuenta_glosario()
+    badge_glo = (bi("{0} entradas · {1} términos".format(miles(n_glo[0]), miles(n_glo[1])),
+                    "{0} entries · {1} terms".format("{0:,}".format(n_glo[0]), "{0:,}".format(n_glo[1])))
+                 if n_glo else "glosario")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
+                 "__GLOSARIO_BADGE__": badge_glo,
                  "__RAICES_BADGE__": badge_rai, "__VERBO_BADGE__": badge_ver,
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
                                               "88 % of the bench"),
@@ -643,7 +693,8 @@ def indice_recursos():
     tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc)
                 for href, ins, titulo, desc in RECURSOS
                 if (ins != "__RAICES_BADGE__" or n_rai)
-                and (ins != "__VERBO_BADGE__" or n_ver)]
+                and (ins != "__VERBO_BADGE__" or n_ver)
+                and (ins != "__GLOSARIO_BADGE__" or n_glo)]
 
     externas = [tarjeta(href, ins, titulo, desc, externo=True)
                 for href, ins, titulo, desc in CORPUS]

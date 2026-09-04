@@ -19,6 +19,9 @@ DOS FUENTES PRINCIPALES, Y UNA TERCERA INTERNA.
      marcha al traducir. Es interna, no una obra.
 
   recursos/glosario/glosario-ingles.json  la propuesta inglesa para la lista 3
+  recursos/glosario/ingles.json           el inglés del Glosario de Nandisena
+                                          (lista 1): se comprueba siempre y se
+                                          publica sólo con «adjudicado»: true
   recursos/glosario/plantilla.html        el maquetado y la lógica
 
 y escribe site/recursos/glosario/index.html.
@@ -29,7 +32,7 @@ Conspectus de Smith. La coincidencia entre las dos, por tanto, no es un cotejo
 de testigos separados; es filiación.
 
 QUÉ ESTÁ ADJUDICADO. El español de Nandisena lo firma él. El español de
-comun/glosario.md lo fijó Angel. Todo lo demás —el español y el inglés de las
+comun/glosario.md lo fijó IEBH. Todo lo demás —el español y el inglés de las
 entradas del Conspectus, y el inglés de las otras dos— es PROPUESTA del
 traductor, y la página lo dice en su cabecera y en cada ficha.
 
@@ -54,6 +57,7 @@ DATOS = os.path.join(RAIZ, "recursos", "glosario", "conspectus.json")
 PAGINAS_DIR = os.path.join(RAIZ, "recursos", "glosario", "conspectus")
 DIPLOMADO = os.path.join(RAIZ, "recursos", "glosario", "diplomado.json")
 INGLES = os.path.join(RAIZ, "recursos", "glosario", "glosario-ingles.json")
+INGLES_NANDISENA = os.path.join(RAIZ, "recursos", "glosario", "ingles.json")
 PLANTILLA = os.path.join(RAIZ, "recursos", "glosario", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "glosario", "index.html")
 
@@ -170,6 +174,66 @@ def verificar(conspectus, normativo, ingles):
     return fallos, avisos
 
 
+def claves_nandisena(entradas):
+    """La clave de cada entrada del Glosario en ingles.json: el lema tal
+    cual, y «lema|N» cuando el mismo lema tiene más de una entrada (los
+    homónimos «adhikaraṇa 1 / 2» y el «adhikāra» que sale dos veces sin
+    número). N es el ordinal de aparición, de 1 en adelante."""
+    cuenta = {}
+    for e in entradas:
+        cuenta[e["pali"]] = cuenta.get(e["pali"], 0) + 1
+    visto = {}
+    claves = []
+    for e in entradas:
+        if cuenta[e["pali"]] > 1:
+            visto[e["pali"]] = visto.get(e["pali"], 0) + 1
+            claves.append("{0}|{1}".format(e["pali"], visto[e["pali"]]))
+        else:
+            claves.append(e["pali"])
+    return claves
+
+
+def verificar_ingles_nandisena(entradas, ing):
+    """Comprueba el borrador inglés del Glosario de Nandisena entrada por
+    entrada contra el español, y devuelve (fallos, avisos, mapa), donde mapa
+    va de la clave a la entrada del borrador. No decide si se publica: eso
+    lo dice «adjudicado», y lo aplica main()."""
+    fallos, avisos = [], []
+    borr = ing.get("entradas", {})
+    claves = claves_nandisena(entradas)
+    por_clave = dict(zip(claves, entradas))
+
+    sobran = [k for k in borr if k not in por_clave]
+    if sobran:
+        fallos.append("ingles.json tiene claves que no están en nandisena.json: "
+                      + ", ".join(sobran[:12]))
+    for k, b in borr.items():
+        e = por_clave.get(k)
+        if e is None:
+            continue
+        if not isinstance(b, dict) or not (b.get("en") or "").strip():
+            fallos.append("{0}: la entrada inglesa está vacía".format(k))
+            continue
+        if e.get("remite_a"):
+            fallos.append("{0}: es una remisión («v. {1}») y no se traduce"
+                          .format(k, e["remite_a"]))
+        if not e.get("es"):
+            fallos.append("{0}: no tiene español que traducir".format(k))
+        if not b.get("fuente"):
+            avisos.append("{0}: sin «fuente» del término".format(k))
+        for campo in ("en", "termino", "fuente", "nota"):
+            v = b.get(campo)
+            if isinstance(v, str) and unicodedata.normalize("NFC", v) != v:
+                fallos.append("{0}: «{1}» no está en NFC".format(k, campo))
+        # Lo que el español cita entre comillas —los ejemplos pāḷi— tiene
+        # que estar en el inglés: la traducción no quita ejemplos.
+        citas_es = re.findall(r'"([^"]{2,})"', e["es"])
+        for c in citas_es:
+            if re.search(r"[āīūṃṅñṭḍṇḷ]", c) and c not in b["en"]:
+                avisos.append("{0}: el inglés no trae el ejemplo «{1}»".format(k, c))
+    return fallos, avisos, {k: borr[k] for k in borr if k in por_clave}
+
+
 def main():
     for ruta in (NORMATIVO, DATOS, INGLES, PLANTILLA):
         if not os.path.exists(ruta):
@@ -207,6 +271,24 @@ def main():
         n["en_adjudicado"] = bool(ing.get("adjudicado"))
 
     fallos, avisos = verificar(conspectus, normativo, mapa_en)
+
+    # ---- el inglés del Glosario de Nandisena ---------------------------
+    # recursos/glosario/ingles.json. Se comprueba siempre; se INYECTA sólo
+    # si está adjudicado, porque son palabras del IEBH. Hasta entonces el
+    # modo inglés de la página enseña el español y lo dice.
+    ing_nand = {"adjudicado": False, "entradas": {}}
+    nand_en_total = 0
+    if os.path.exists(INGLES_NANDISENA) and nand["entradas"]:
+        ing_nand = json.load(open(INGLES_NANDISENA, encoding="utf-8"))
+        f2, a2, borr = verificar_ingles_nandisena(nand["entradas"], ing_nand)
+        fallos += f2
+        avisos += a2
+        nand_en_total = len(borr)
+        if ing_nand.get("adjudicado"):
+            for clave, e in zip(claves_nandisena(nand["entradas"]), nand["entradas"]):
+                if clave in borr:
+                    e["en"] = borr[clave]["en"]
+
     if fallos:
         print("No se publica. {0} fallo(s):".format(len(fallos)))
         for f in fallos[:40]:
@@ -274,7 +356,7 @@ def main():
     # apóstrofos o espacios —akkhara-lopa = akkharalopa, suddha(ssara) =
     # suddhassara—, y las grafías que difieren en LETRA O DIACRÍTICO se
     # quedan en fichas aparte, enlazadas entre sí con un «véase también».
-    # Decidir si dos de ésas son la misma palabra es de Angel, no del
+    # Decidir si dos de ésas son la misma palabra es del IEBH, no del
     # generador: es justamente lo que la colación viene decidiendo caso por
     # caso.
     def clave_fusion(s):
@@ -346,6 +428,12 @@ def main():
         "plan": datos["plan_de_smith"],
         "ingles_adjudicado": bool(ing.get("adjudicado")),
         "ingles_adjudicado_por": ing.get("adjudicado_por"),
+        "nandisena_en": {
+            "adjudicado": bool(ing_nand.get("adjudicado")),
+            "adjudicado_por": ing_nand.get("adjudicado_por"),
+            "fecha": ing_nand.get("fecha"),
+            "redactadas": nand_en_total,
+        },
         "agrupado": agrupado,
         "conspectus": conspectus,
         "normativo": normativo,
@@ -396,6 +484,17 @@ def main():
     if not salida["ingles_adjudicado"]:
         print("  el inglés de las entradas normativas va SIN adjudicar: la "
               "página lo advierte")
+    if nand["entradas"]:
+        if nand_en_total and not ing_nand.get("adjudicado"):
+            print("  inglés del Glosario de Nandisena: {0} de {1} entradas "
+                  "redactadas, SIN adjudicar: comprobadas y no publicadas "
+                  "(docs/glosario/ingles-por-adjudicar.md)".format(
+                      nand_en_total, len(nand["entradas"])))
+        elif nand_en_total:
+            print("  inglés del Glosario de Nandisena: {0} de {1} entradas, "
+                  "adjudicado por {2} ({3})".format(
+                      nand_en_total, len(nand["entradas"]),
+                      ing_nand.get("adjudicado_por"), ing_nand.get("fecha")))
     return 0
 
 

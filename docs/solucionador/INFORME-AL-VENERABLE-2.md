@@ -13,7 +13,7 @@ práctica sobre el modo revisión.
 
 ## Un testigo nuevo, y es usted mismo
 
-Después de escrito lo que sigue, Angel trajo sus textos bilingües —el
+Después de escrito lo que sigue, IEBH trajo sus textos bilingües —el
 Mahāsatipaṭṭhāna-sutta y su Vaṇṇanā—. Imprimen el pāḷi con las junturas
 **abiertas**: «Evam eva», «yad idaṃ», «Puna c’ aparaṃ», «sato ’va», donde la
 edición del Sexto Concilio las imprime unidas. **Cada uno de esos espacios es

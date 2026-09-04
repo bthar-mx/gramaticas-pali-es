@@ -162,6 +162,10 @@ h1 .dia{color:var(--haritala)}
 .icon-btn:hover,.filtros button:hover{color:var(--ink);border-color:var(--soot)}
 .icon-btn[aria-pressed=true],.filtros button[aria-pressed=true]{
   background:var(--hl);color:var(--haritala);border-color:var(--haritala)}
+/* GLOS y CONSP sólo actúan en la vista alfabética: en las otras dos se
+   desactivan, y hasta ahora no se veía —parecían vivos y no respondían—. */
+.icon-btn:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.icon-btn:disabled:hover{color:var(--soot);border-color:var(--hair)}
 .count{font-family:var(--mono);font-size:11px;color:var(--soot);margin-left:auto}
 
 .tabs{display:flex;gap:6px;padding:14px 0 0}
@@ -381,7 +385,7 @@ footer code{font-family:var(--mono);font-size:11.5px}
       <button class="icon-btn" id="b-es" aria-pressed="true"
         data-tip="Español|El español de Nandisena y el de la lista normativa son los firmados; el de las entradas del Conspectus es propuesta del traductor. El francés de Smith no se enseña, pero sigue guardado y entra en el buscador.">ES</button>
       <button class="icon-btn" id="b-en" aria-pressed="false"
-        data-tip="Inglés|Enseña el inglés DONDE LO HAY y el español donde no. Las 649 entradas de Nandisena no tienen inglés, y el de Smith es propuesta del traductor, no terminología adjudicada por el IEBH. El rótulo «es» o «en» de cada línea dice cuál se está leyendo.">EN</button>
+        data-tip="Inglés|Enseña el inglés DONDE LO HAY y el español donde no. Las 649 entradas de Nandisena no tienen todavía inglés publicado —se está redactando y lo firma el IEBH—, y el de Smith es propuesta del traductor, no terminología adjudicada por el IEBH. El rótulo «es» o «en» de cada línea dice cuál se está leyendo.">EN</button>
     </span>
     <button class="icon-btn" id="b-marcas" aria-pressed="false"
       data-tip="Sólo lo marcado|Deja a la vista las entradas con «difiere de la norma», «por cotejar» o «errata del impreso»: lo que está pendiente de decidir sobre la lectura del impreso.">⚑</button>
@@ -810,16 +814,23 @@ function capaNorma(t){
 function capaNand(t){
   const refs = (t.refs && t.refs.length)
     ? ' <span class="fijado">' + t.refs.map(escapa).join(' · ') + '</span>' : '';
-  const cuerpo = t.es ? resalta(t.es)
+  /* El inglés de la entrada sólo viaja en el JSON cuando el IEBH lo ha
+     adjudicado (generar_glosario.py no lo inyecta antes); si viene y el
+     lector está en EN, se enseña él, rotulado «en». Si no, el español. */
+  const enIngles = idioma === 'en' && t.en;
+  const cuerpo = enIngles ? resalta(t.en)
+    : t.es ? resalta(t.es)
     : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
     : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
   const tip = 'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la '
     + 'lengua pali (IEBH, 2013), p. ' + t.pagina
     + (t.homonimo ? ', homónimo ' + t.homonimo : '')
-    + '. Su español es el firmado y se reproduce literalmente.';
+    + (enIngles
+        ? '. Inglés adjudicado por ' + (DATA.nandisena_en && DATA.nandisena_en.adjudicado_por || 'el IEBH') + '; el español es el firmado.'
+        : '. Su español es el firmado y se reproduce literalmente.');
   return '<div class="capa capa-nand">' +
     '<div class="gl">' + marca('tag-nand', 'Glosario', tip) +
-    '<div class="es">' + cuerpo + refs + '</div></div></div>';
+    '<div class="' + (enIngles ? 'en' : 'es') + '">' + cuerpo + refs + '</div></div></div>';
 }
 function capaSmith(t){
   const marcas =
@@ -841,7 +852,7 @@ function capaSmith(t){
     + 'Conspectus Terminorum de Helmer Smith (1949), p. ' + t.pagina
     + '. El francés es suyo y va literal; el español y el inglés son '
     + 'propuesta del traductor.';
-  /* El francés de Smith NO se enseña (decisión de Angel, sesión 55): la
+  /* El francés de Smith NO se enseña (decisión del IEBH, sesión 55): la
      página se lee en español o en inglés. El campo sigue en los datos, va
      en el buscador y es sobre el que se hace la colación contra la plancha
      —de ahí que no se haya borrado de ningún archivo—, pero no se pinta. */
@@ -1040,6 +1051,14 @@ document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
   const soloAlfa = tab !== 'alfa';
   $('#b-nand').disabled = soloAlfa;
   $('#b-smith').disabled = soloAlfa;
+  // Y se dice en el globo por qué no responden.
+  for (const id of ['#b-nand', '#b-smith']){
+    const b = $(id);
+    if (!b.dataset.tipVivo) b.dataset.tipVivo = b.getAttribute('data-tip');
+    b.setAttribute('data-tip', soloAlfa
+      ? b.dataset.tipVivo.split('|')[0] + '|Sólo actúa en la vista alfabética, que es la que enseña las capas de las dos obras. En esta pestaña no hace nada.'
+      : b.dataset.tipVivo);
+  }
   rotulaBarra();
   pinta();
 });

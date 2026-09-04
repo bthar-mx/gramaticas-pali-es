@@ -331,7 +331,7 @@ body:not(.en) .i-en{display:none}
   <div class="wrap mast">
     <div>
       <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
-      <!-- 2026-08-31, pedido de Angel: el mando de sesión, arriba a la
+      <!-- 2026-08-31, pedido del IEBH: el mando de sesión, arriba a la
            DERECHA de la cabecera. Estaba entre los botones de análisis, y ahí
            se leía como una acción del solucionador cuando no lo es: dice quién
            eres, no qué hacer con el texto. Junto al «← Recursos» tapaba el
@@ -1460,7 +1460,7 @@ async function revEnviar(boton){
    lector de la página, que es la gracia. Si algo falla se calla y deja el
    botón como estaba: esto es una comodidad, no una autoridad — quien manda
    sigue siendo el 401 del worker al enviar. */
-/* El botón de sesión vive ARRIBA (pedido de Angel, 2026-08-31), con los
+/* El botón de sesión vive ARRIBA (pedido del IEBH, 2026-08-31), con los
    demás mandos. Estaba al pie de los resultados, y ahí no aparecía hasta
    haber analizado algo — justo al revés de cuando hace falta, que es ANTES
    de ponerse a marcar. Se muestra en cuanto se enciende el modo revisión.
@@ -1473,7 +1473,7 @@ function revPintarEntrar(){
   /* El mando de sesión se ve desde que la página sabe que aquí hay revisión
      —o sea, desde que se abrió alguna vez «?revision»—, y NO desde que el
      modo está encendido: hace falta antes de ponerse a marcar, no después.
-     Y «✎ revisión» sólo aparece CON SESIÓN (pedido de Angel, 2026-08-31):
+     Y «✎ revisión» sólo aparece CON SESIÓN (pedido del IEBH, 2026-08-31):
      sin identidad el modo no lleva a ninguna parte, porque enviar la exige. */
   b.hidden = !REV.ofrecido;
   const r = $('revision');

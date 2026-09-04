@@ -27,19 +27,19 @@ Los tres commits de las sesiones 23-24 están publicados y el sitio desplegado.
 No queda nada por confirmar.
 
 *(Este apartado se escribió primero dando `08b061f` y una lista de archivos sin
-confirmar, porque Angel se fue a mediodía y yo no ejecuto git. A su vuelta los
+confirmar, porque IEBH se fue a mediodía y yo no ejecuto git. A su vuelta los
 confirmó y los publicó. Se corrige aquí mismo antes de cerrar — que es justo el
 fallo que la sesión 23 cometió y que el §8 de abajo manda no repetir.)*
 
 ## 2. LA UNIFICACIÓN `Xsv ti` → `Xsv iti` (mañana)
 
-Decisión de Angel, §6.1 de la 23. **Eran doce, no trece**: §222 ya lo había
+Decisión del IEBH, §6.1 de la 23. **Eran doce, no trece**: §222 ya lo había
 arreglado `b426955`. Ver la enmienda del briefing 23 para el detalle; lo que
 importa aquí es que **desbloqueó siete lemas** por la tarde.
 
 ## 3. LA NEGRITA, CON EL PDF DELANTE
 
-Angel subió los PDF del Nāma y del Kāraka. **El Kāraka estaba ya completo**: 0
+El IEBH subió los PDF del Nāma y del Kāraka. **El Kāraka estaba ya completo**: 0
 tramos nuevos, 74 ya puestos, y sus 15 ausentes son compuestos con guion
 partidos por el salto de línea físico, nada recuperable. Sirvió toda la tarde
 de **control de no-regresión**, y ganó su sueldo: ver §4.
@@ -87,7 +87,7 @@ maestro: `evamādīto` frente a `evamādito`. Leído sin más parecería una pé
 de transcripción por nuestra parte. **No lo es: el propio PDF imprime
 `evamādito` cuatro veces y `evamādīto` una**, justo ahí. El maestro sigue a la
 mayoría y se queda como está. Singleton de la edición base, de la clase de
-`brāhamaṇā` (sesión 23). Decisión de Angel: a `VARIANTES`, sin tocar el pāḷi.
+`brāhamaṇā` (sesión 23). Decisión del IEBH: a `VARIANTES`, sin tocar el pāḷi.
 
 ### 3.3 `MINIMO`: un suelo que ya no defendía nada
 
@@ -167,7 +167,7 @@ la corta queda con un solo sitio. Prototipado y medido en el Nāma:
 
 **No se ha implementado.** Es un cambio estructural del emparejador, no un
 arreglo puntual: gana nueve y crea seis ausentes nuevas, y las nueve habría que
-cotejarlas una a una. Angel estaba fuera y esto pide su visto bueno. El
+cotejarlas una a una. El IEBH estaba fuera y esto pide su visto bueno. El
 prototipo no tocó el código.
 
 ## 5. LOS DOS QUE QUEDAN
@@ -195,7 +195,7 @@ existe.
 
 ## 7. LO QUE SIGUE ABIERTO
 
-1. **§4.2, longest-first** — decisión de Angel, medida y lista.
+1. **§4.2, longest-first** — decisión del IEBH, medida y lista.
 2. **§70**, la coma.
 3. **32 ausentes y 18 ambiguas** en el Nāma que no son lemas `kimatthaṃ`. Tres
    de las ausentes son prosa inglesa y **deben** seguir ausentes. Quince son
@@ -225,7 +225,7 @@ existe.
 
 - **Ninguna orden de git desde el sandbox, ni siquiera `status`.** Leer
   `.git/refs/heads/main`, `.git/logs/HEAD` y `.git/index` como archivos.
-- **Con Angel se habla en inglés**; el producto —sitio, mensajes de commit,
+- **Con IEBH se habla en inglés**; el producto —sitio, mensajes de commit,
   comentarios del código, estos briefings— va en español. Una respuesta en el
   chat va en inglés **entera**, también los bloques que se le pasen para
   copiar. En la 24 se le entregó en español el texto para el chat siguiente:
@@ -237,7 +237,7 @@ existe.
   siguen ahí no son estilo de la casa, son el error que se venía copiando de
   sesión en sesión. No imitarlos.
 - **Los PDF no viven en el repositorio** (`.gitignore`: `*.pdf`). Sin ellos no
-  se puede repetir la restitución de negritas. Hay que pedírselos a Angel.
+  se puede repetir la restitución de negritas. Hay que pedírselos al IEBH.
 - **Todo cambio del emparejador se corre contra los dos capítulos.** Ver §4.1.
 - **`reconstrucción: OK` no dice que la negrita esté bien puesta**, sólo que no
   se ha estropeado el texto. Lo primero se comprueba con los ojos.

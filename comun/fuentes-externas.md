@@ -13,7 +13,7 @@ autoridad de «tveva» que faltaba. Véase `docs/solucionador/tveva-dos-lecturas
 
 <https://bhaddacak.github.io/grammarbooks>
 
-Lo encontró Angel el 2026-08-30. Es la fuente que resolvió la pregunta de
+Lo encontró IEBH el 2026-08-30. Es la fuente que resolvió la pregunta de
 «tveva», y trae obras que el proyecto no tenía de ninguna otra manera.
 
 ### Qué contiene
@@ -63,7 +63,7 @@ pako.
 
 ## 2. Saddanīti de Helmer Smith en PDF — la edición para citar
 
-En poder de Angel. Comprobado el 2026-08-30 sobre
+En poder del IEBH. Comprobado el 2026-08-30 sobre
 «Saddaníti - Aggavamsa's Pali Grammar Suttamālā.pdf», 340 páginas, 23 MB.
 
 ### Estado del archivo: imagen pura, y no importa tanto como parece
@@ -116,7 +116,7 @@ La página impresa **no** coincide con la del PDF: en este volumen la impresa
 partes del Saddanīti, y el Suttamālā empieza pasada la 600).
 
 **Los PDF no viajan con el repositorio**: `*.pdf` está en `.gitignore`, como los
-del Saddanīti y el Abhidhāna. Se quedan en la carpeta de Angel.
+del Saddanīti y el Abhidhāna. Se quedan en la carpeta del IEBH.
 
 ---
 

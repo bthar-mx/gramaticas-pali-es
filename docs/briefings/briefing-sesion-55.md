@@ -16,7 +16,7 @@ de la colación, página por página, está en `docs/glosario/revision-de-las-i.
 EXISTEN.** Dos, encontradas en esta tanda, y las dos sostenían razonamientos ya
 publicados:
 
-| dónde | la ficha dice | el ejemplar de Angel da |
+| dónde | la ficha dice | el ejemplar del IEBH da |
 | --- | --- | --- |
 | `kiriyāpatti` 5.1.1.2 (p. 1121) | `păpuṇīyate`, con breve | **`pāpuṇīyate`, con macrón** |
 | `samāsa` 5.2 (p. 1123), nota | `nănāpadānaṃ`, con breve | **`nānāpadānaṃ`, macrón en las tres aes** |
@@ -52,7 +52,7 @@ puntos **17 a 22**.
 
 Los de más peso, además de las breves del §1:
 
-- **`vīcchāyoge`** (4.3, p. 1120). Toca un lema que **Angel fijó**, y por eso va
+- **`vīcchāyoge`** (4.3, p. 1120). Toca un lema que **el IEBH fijó**, y por eso va
   con cuidado: se fijó breve porque el escaneo no decidía, y el ejemplar decide
   —ī larga, con `itthambhūtakkhāna` en la línea siguiente de control—.
 - **`āmantaṇa`** (5.1.0, p. 1120). La tercera del grupo de la p. 1110, ahora con
@@ -86,11 +86,11 @@ por lema DESNUDO, sin diacríticos, y eso juntaba palabras distintas: `pada` con
 `ṅakāra`, `ṇakāra` en una sola ficha. Ahora se funde sólo lo que difiere en
 guiones, paréntesis o espacios, y **las grafías que difieren en letra o
 diacrítico van en fichas aparte enlazadas con «véase también»** (87 entradas).
-Decidir si dos de ésas son la misma palabra es de Angel, no del generador.
+Decidir si dos de ésas son la misma palabra es del IEBH, no del generador.
 
 ### 3.2 Lo demás de la página
 
-- El **francés de Smith no se enseña** (decisión de Angel). Sigue en los datos,
+- El **francés de Smith no se enseña** (decisión del IEBH). Sigue en los datos,
   entra en el buscador, y es sobre él sobre el que se colaciona.
 - **ES y EN se turnan**, no se suman. Y EN no esconde sin más el español: las
   649 entradas de Nandisena **no tienen inglés**, así que se enseña el inglés
@@ -171,7 +171,7 @@ con `recursos/glosario/ingles.json` (`"adjudicado": false`) y la hoja
 generador lo verificará campo por campo pero **no lo inyectará** mientras
 `adjudicado` sea `false`.
 
-**Falta además** que Angel apruebe la línea de crédito a Ñāṇamoli y Ānandajoti
+**Falta además** que IEBH apruebe la línea de crédito a Ñāṇamoli y Ānandajoti
 si su terminología alimenta el inglés publicado.
 
 ---
@@ -181,7 +181,7 @@ si su terminología alimenta el inglés publicado.
 Por este orden:
 
 1. **La primera tanda del inglés** (§5): 60 entradas, `ingles.json`, la hoja de
-   adjudicación, y el generador cableado sin publicar. Enseñárselo a Angel antes
+   adjudicación, y el generador cableado sin publicar. Enseñárselo al IEBH antes
    de seguir con las 589 restantes.
 2. **Seguir la colación por la p. 1124** y en orden hasta la 1148. Las reglas no
    cambian: control en la misma página, **ningún lema se toca**, lo que baile

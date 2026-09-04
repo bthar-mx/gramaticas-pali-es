@@ -1,13 +1,13 @@
 # Kaccāyana Pāḷi-Español: Briefing de la Sesión 32
 
 *Complementa a los briefings 05–31. Tema único: **el solucionador publicado y
-afinado en vivo con Angel** — el DPD de testigo, los casos y patrones
+afinado en vivo con IEBH** — el DPD de testigo, los casos y patrones
 adjudicados, la regla de la clase vocálica — y **el mapa de lo que sigue**.*
 
 > **Lo primero que tiene que saber el chat nuevo:** el solucionador está
-> publicado en `/recursos/solucionador/` (v1.3) y se afinó con Angel
+> publicado en `/recursos/solucionador/` (v1.3) y se afinó con IEBH
 > adjudicando en vivo sobre SN 1.1 y DN 2. Todo confirmado en commits y
-> **empujado por Angel** (verificar `git log origin/main..main` por si queda
+> **empujado por IEBH** (verificar `git log origin/main..main` por si queda
 > algo). Antes de tocar nada: leer este briefing, `nuestro/js/LEEME.txt` y
 > los briefings 30–31. Las reglas de siempre: el Python es la referencia; los
 > arneses mandan; nada se adjudica sin fuente; toda mejora se mide antes y
@@ -48,7 +48,7 @@ los corpus de medida: 2.228 formas únicas. Cinco arneses: etapas 1–4 +
    conserva la clase de la final de la base); desempate breve/larga. El caso
    y el banco mandan sobre el patrón. Todo se atribuye en pantalla.
 
-El DPD es **testigo silencioso** (decisión de Angel 2026-08-28, briefing 31
+El DPD es **testigo silencioso** (decisión del IEBH 2026-08-28, briefing 31
 §5 bis 4; pendiente de confirmación del Venerable): filtro, ordenación,
 señal; nunca análisis; atribuido en el pie de la página.
 
@@ -62,21 +62,21 @@ En orden de rendimiento por esfuerzo, con el dueño de cada pieza:
    formas únicas. Correr `medir_deteccion_canon.py` en el modo vigente y
    poner los números verdaderos — la honestidad también obliga cuando el
    número mejoró.
-2. **Los veredictos del lote 1** *(Angel, un rato con lápiz)*.
+2. **Los veredictos del lote 1** *(el IEBH, un rato con lápiz)*.
    `docs/solucionador/por-adjudicar-lote-1.md`; ahora puede marcar además el
    grado (habitual/exclusivo) escribiéndolo en el veredicto — y generar el
    lote 2 filtrando lo que los patrones ya afirman
    (`generar_por_adjudicar.py` conviene que salte lo ya afirmado).
-3. **Más reglas de patrón, firmadas en tanda** *(Angel decide, Claude
+3. **Más reglas de patrón, firmadas en tanda** *(el IEBH decide, Claude
    prepara)*. Generar un informe de las familias que siguen en «no sabe»,
    agrupadas por segunda voz candidata (eva, iva, ahaṃ, api residual, ettha…)
-   y ordenadas por masa en el canon, para que Angel firme las siguientes 3-5
+   y ordenadas por masa en el canon, para que IEBH firme las siguientes 3-5
    reglas de una sentada, como firmó la de «iti».
 4. **Las junturas ENTRE palabras escritas** *(Claude, acotado)*. Portar
    `combinar()` y `juntura_declarada`: «vuttanayam eva», «catukkhattun ti»,
    el «ti» suelto. Hoy la página analiza voz por voz y esas junturas ni se
    miran. Es la mitad que falta de la detección en párrafo.
-5. **`dpd-descomposiciones.tsv`** *(Angel, en su Mac)*. Bajar `dpd-mobile.db`
+5. **`dpd-descomposiciones.tsv`** *(el IEBH, en su Mac)*. Bajar `dpd-mobile.db`
    y correr `nuestro/exportar_dpd.py` + `preparar_descomposiciones.py`. Con
    él, la capa de detección del DPD (71-79 % de recall) se vuelve medible en
    modo testigo — la mayor subida de recall disponible sin gramática nueva.
@@ -87,13 +87,13 @@ En orden de rendimiento por esfuerzo, con el dueño de cada pieza:
    es la señal que mata a los candidatos tipo sāvatthiyaṃ y encoge las
    listas por gramática, no por estadística. Con el capítulo 2 de Kaccāyana
    y Rūpasiddhi (y el Nyāsa) esto se vuelve doctrina del proyecto, no
-   heurística. Es lo que Angel señaló: con lo que ya hay, esto ayuda mucho.
+   heurística. Es lo que IEBH señaló: con lo que ya hay, esto ayuda mucho.
 7. **El banco de pasajes adjudicados** *(conjunto)*. SN 1.1 y DN 2 ya están
    adjudicados de facto en esta conversación; convertirlos en corpus de
    prueba propio (formas + veredictos + arnés) empieza la ampliación del
    banco más allá de la Therīgāthā que el briefing 30 dejó pendiente — con
-   fuente de verdad de Angel, no fabricada.
-8. **El nivel del pasaje** *(futuro, del Venerable/Angel)*. Los casos
+   fuente de verdad del IEBH, no fabricada.
+8. **El nivel del pasaje** *(futuro, del Venerable/IEBH)*. Los casos
    habituales (ceva) sólo se deciden por ocurrencia leyendo los Comentarios.
    Cuando haya pasajes leídos, cabe una capa de contexto; sin eso, la página
    afirma lo habitual y muestra el resto — que es lo correcto hoy.

@@ -1058,7 +1058,7 @@ Fin del capítulo de compuestos.
 
 [^6]: Nota al pie: Phālapājanaṃ (K).
 
-[^7]: Nota del traductor: En la fuente, la sección de las criaturas pequeñas conserva solo el rótulo “khuddajantukatthe”; el pāḷi de sus ejemplos falta (la traducción inglesa existe y se ha traducido en el bloque español). Pind (su 324) lee: ḍaṃsañ ca makasañ ca ḍaṃsamakasaṃ; kunthañ ca kipillikañ ca kunthakipillikaṃ; kīṭañ ca siriñ ca sapañ ca kīṭasirisapaṃ. Obsérvese que el inglés de Nandisena supone la lectura kīṭasarīsapaṃ (no kīṭasirisapaṃ). Restauración pendiente de la decisión de Angel.
+[^7]: Nota del traductor: En la fuente, la sección de las criaturas pequeñas conserva solo el rótulo “khuddajantukatthe”; el pāḷi de sus ejemplos falta (la traducción inglesa existe y se ha traducido en el bloque español). Pind (su 324) lee: ḍaṃsañ ca makasañ ca ḍaṃsamakasaṃ; kunthañ ca kipillikañ ca kunthakipillikaṃ; kīṭañ ca siriñ ca sapañ ca kīṭasirisapaṃ. Obsérvese que el inglés de Nandisena supone la lectura kīṭasarīsapaṃ (no kīṭasirisapaṃ). Restauración pendiente de la decisión del IEBH.
 
 [^8]: Nota al pie: Gaddabhaṇḍo kapītano (Abhidhana. 562-Gāthā), kapi calane, tano, dīgho āgamassa. Kandarālo, pilakkho pi (Dhāna-Ṭi. 375). Kapitthana (Sī. Moga. iii, 19). Kapitthanāti pilakkhā (JA. ii, 403) nigrodhā ca kapitthanā (Khu. v, 90; vi, 353, 354, 361). “Kapittho” ti pāṭho pi pāvacane atthi, tathā pi so idha nādhippeto. Ambā kapitthā panasā (Khu. vi, 339), ambā jambū kapitthā ca (Khu. vi, 343). Kabiṭṭho ca kapitthotha (Abhidhāna. 551-Gāthā).
 
@@ -1078,7 +1078,7 @@ Fin del capítulo de compuestos.
 
 [^16]: Nota al pie: Daṃjānī (K).
 
-[^17]: Nota del traductor: El desglose sigue el título de Nandisena (“tudaṃ-jāni”, 3 voces). Thitzana desglosa [Jāyāya + tu + daṃ-jāni + patimhi = 4 voces], leyendo “tu” como partícula y ‘daṃ’ y ‘jāni’ como los sustitutos; el título de Pind imprime “jāyāya tu daṃ jāni patimhi” y su ejemplo es tudampati; el Abhidhānappadīpikā 242 conoce “dampati”, y las propias notas al pie 15 (“Daṃjānī”, K) y 16 (“Dampatī”, Sī/k) de Nandisena registran lecturas con ‘daṃ’. La vutti y el ejemplo de Nandisena (“tudaṃ jāni icc ete ādesā”; Tudaṃpatī) leen en cambio “tudaṃ” como sustituto. Angel decide.
+[^17]: Nota del traductor: El desglose sigue el título de Nandisena (“tudaṃ-jāni”, 3 voces). Thitzana desglosa [Jāyāya + tu + daṃ-jāni + patimhi = 4 voces], leyendo “tu” como partícula y ‘daṃ’ y ‘jāni’ como los sustitutos; el título de Pind imprime “jāyāya tu daṃ jāni patimhi” y su ejemplo es tudampati; el Abhidhānappadīpikā 242 conoce “dampati”, y las propias notas al pie 15 (“Daṃjānī”, K) y 16 (“Dampatī”, Sī/k) de Nandisena registran lecturas con ‘daṃ’. La vutti y el ejemplo de Nandisena (“tudaṃ jāni icc ete ādesā”; Tudaṃpatī) leen en cambio “tudaṃ” como sustituto. El IEBH decide.
 
 [^18]: Nota al pie: Dampatī (Sī/k).
 
@@ -1118,7 +1118,7 @@ Fin del capítulo de compuestos.
 
 | Sutta | Nandisena dice | Propuesta | Evidencia |
 |---|---|---|---|
-| §317 (vutti) | *samāsa-taddhit’-**ākyāta**-kitakānaṃ* (y su glosa «(ākyāta)») | *ākhyāta* | Pind lee *ākhyāta*; el propio capítulo 6 de Kaccāyana se llama Ākhyāta-kappa. OJO: Nandisena es consistente (pāḷi y glosa), de modo que podría ser lectura de su edición; Angel decide |
+| §317 (vutti) | *samāsa-taddhit’-**ākyāta**-kitakānaṃ* (y su glosa «(ākyāta)») | *ākhyāta* | Pind lee *ākhyāta*; el propio capítulo 6 de Kaccāyana se llama Ākhyāta-kappa. OJO: Nandisena es consistente (pāḷi y glosa), de modo que podría ser lectura de su edición; IEBH decide |
 | §317 (ejemplos) | ***amantandado*** | *amataṃdado* | Su propia traducción («giver of the Deathless»); Pind *amataṃdado* (S. i, 32); la referencia que él mismo imprime (S. i, 29) es al epíteto amataṃdado |
 | §319 (vutti) | ***Upassagga**-nipātapubbako* | *Upasagga-* | Su propio título escribe *Upasagga-*; Pind ídem; geminada sin justificación |
 | §322 (tūriyaṅga) | *daddari ca ḍiṇḍimo ca **daddariḍiṇḍaṃ*** | *daddariḍiṇḍimaṃ* | Su propio nibbacana da los miembros daddari + ḍiṇḍima; sus dos variantes en la nota al pie 4 terminan en -imaṃ; Pind *daddarideṇḍimaṃ* |
@@ -1129,7 +1129,7 @@ Fin del capítulo de compuestos.
 - **§322, sección khuddajantukatthe:** el rótulo «**khuddajantukatthe**» está,
   pero el pāḷi de sus ejemplos falta (la traducción inglesa existe: «fly and
   mosquito», etc.). Es el mismo fenómeno que §277 Tadatthe. Restauración
-  propuesta desde Pind en la nota 18. **Angel decide.** Ojo a la divergencia
+  propuesta desde Pind en la nota 18. **el IEBH decide.** Ojo a la divergencia
   kīṭasarīsapaṃ (inglés de Nandisena) / kīṭasirisapaṃ (Pind).
 - **§322, título:** «khuddajantuka- vividhaviruddha-» traía guion + espacio
   (artefacto de salto de línea del OCR, como §277); **unido ya en el cuerpo**,
@@ -1278,7 +1278,7 @@ en §327. Tal como Nandisena las imprime.)
 samāsa (compuesto) · tappurisa (compuesto determinativo) · kammadhāraya
 (compuesto adjetival) · digu (compuesto numeral) · abyayībhāva (compuesto
 adverbial) — los cinco sin traducir con glosa, kāraka-style, **fijados por
-Angel en la sesión 13** · tulyādhikaraṇa = «que se refieren a la misma
+El IEBH en la sesión 13** · tulyādhikaraṇa = «que se refieren a la misma
 cosa» (en prosa, con el pāḷi entre paréntesis en su primera aparición) ·
 yuttattha = «significado conectado» (ver DUDA) · gahapatika = «cabeza de
 familia» · vasala = «paria» · kitaka = «derivado primario» (ver DUDA) ·
@@ -1428,7 +1428,7 @@ aclaratorio la primera vez).
 | §329 (vutti) | *samucccayo* (tres c) | *samuccayo* | Su propio título; Pind |
 | §330 (nota al pie 11) | *Hentañ ca taṃ puññañ cā ti* | *Mahantañ ca…* | El pasaje que la nota comenta dice *Mahantañ*; ‘Hentañ’ no existe. Probable OCR |
 
-### 2. Desgloses con divergencia entre fuentes (Angel decide)
+### 2. Desgloses con divergencia entre fuentes (el IEBH decide)
 
 - **§331:** Thitzana cuenta **6 voces** y separa [Itthiyaṁ + bhāsitapumā +
   itthī + pumā + iva + ce]; se imprimió [Itthiyaṃ + bhāsitapuma + itthī +
@@ -1468,7 +1468,7 @@ aclaratorio la primera vez).
 - **Fórmulas de cierre (provisionales):** «Así termina el capítulo de
   compuestos, séptima sección del capítulo de nombres.» y «Fin del
   capítulo de compuestos.» Espejan las provisionales del Kāraka (sesión
-  12). **Angel decide** (pendiente también allí).
+  12). **el IEBH decide** (pendiente también allí).
 
 ### 4. Variantes de Pind registradas (no erratas; manda Nandisena)
 

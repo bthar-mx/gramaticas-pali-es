@@ -17,7 +17,7 @@ puede escribir en `.git` desde la sesión). Los cuatro borradores de
 
 ## 2. RECURSO NUEVO: `/recursos/nombre/` (formación del nombre · pācako)
 
-Angel trajo un HTML suyo con la derivación de *pācako* en diez pasos. Se
+El IEBH trajo un HTML suyo con la derivación de *pācako* en diez pasos. Se
 adaptó a las convenciones del sitio y se publicó.
 
 - Fuente: `recursos/nombre/plantilla.html`; generador
@@ -40,7 +40,7 @@ adaptó a las convenciones del sitio y se publicó.
 ## 3. LICENCIA IEBH
 
 Bloque `.licencia` al pie de `/recursos/sandhi/` y `/recursos/nombre/`:
-«Preparado por Bhikkhu Nandisena · … · CC BY-NC-SA 4.0». Angel confirmó que
+«Preparado por Bhikkhu Nandisena · … · CC BY-NC-SA 4.0». El IEBH confirmó que
 la autoría de la derivación de *pācako* es de Nandisena.
 
 **Ortografía fijada: «Instituto de Estudios Buddhistas Hispano»**, con dos
@@ -70,7 +70,7 @@ clase esté puesta antes de pintar y no haya fogonazo blanco al cargar.
 
 Contraste medido tras el arreglo: todo AA o AA-grande en oscuro. Los dos
 valores flojos que quedan son de **modo claro** y son previos —
-`.idx-card.pend` lleva además `opacity:.55`—. Angel no pidió tocarlos.
+`.idx-card.pend` lleva además `opacity:.55`—. El IEBH no pidió tocarlos.
 
 ### `herramientas/generar_indices.py` (nuevo)
 
@@ -88,7 +88,7 @@ rango de suttas y las kaṇḍas de cada capítulo publicado; si falta, avisa.
 
 ### Retirada de `/recursos/combinacion-eufonica/`
 
-La referencia interactiva de sandhi lo reemplaza. Decisión de Angel:
+La referencia interactiva de sandhi lo reemplaza. Decisión del IEBH:
 **despublicar la página, conservar el markdown**. `recursos/combinacion-eufonica.md`
 sigue donde estaba porque `reconstruir_sandhi.py` lo lee para rehacer
 `reglas.json`; se excluye de la generación mediante `SIN_PUBLICAR` en
@@ -160,7 +160,7 @@ ordinal con el pāḷi al lado, no por caso latino, igual que `CLAUDE.md`
    prohíben descargar con curl o python.
 2. Volcarlos a `recursos/paradigmas/paradigmas.json`, con las variantes de
    cada celda **como lista, no como cadena separada por comas**.
-3. **Lo que Angel pidió al cierre: tablas muy cuidadas y un índice o tabla
+3. **Lo que IEBH pidió al cierre: tablas muy cuidadas y un índice o tabla
    de contenidos para navegarlas.** El modelo natural es
    `/recursos/sandhi/`: barra fija, buscador que ignora diacríticos,
    filtros por género y por tema, y `#top-btn`. Página en

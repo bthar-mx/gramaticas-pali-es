@@ -1,4 +1,4 @@
-# BORRADOR — §247–§270, Pañcama Kaṇḍa (pendiente de aprobación de Angel)
+# BORRADOR — §247–§270, Pañcama Kaṇḍa (pendiente de aprobación del IEBH)
 
 *Sesión 06. Quinta y última sección del Nāma-kappa. Traducido de Nandisena
 (líneas 2591–2809), cotejado con Thitzana (líneas 11502–11983) y Pind
@@ -498,7 +498,7 @@ Nota del traductor: en el desglose de mayā Nandisena cita “§245”; el sutta
 
 # NOTAS DE TRABAJO (no forman parte de la traducción)
 
-## Erratas nuevas propuestas (Angel decide)
+## Erratas nuevas propuestas (el IEBH decide)
 
 | Ubicación | Nandisena dice | Propuesta | Motivo |
 |---|---|---|---|
@@ -507,7 +507,7 @@ Nota del traductor: en el desglose de mayā Nandisena cita “§245”; el sutta
 | §257 (encabezado) | número Saddanīti “(503)” | **(505)** | (503) ya es el de §254; Pind da Sadd §505 para este sutta |
 | §252 (desglose) | “kuhim” | kuhiṃ | Sus propios ejemplos (OCR del niggahita) |
 
-## Divergencias del inglés de Nandisena resueltas desde el pāḷi (Angel decide)
+## Divergencias del inglés de Nandisena resueltas desde el pāḷi (el IEBH decide)
 
 1. **§256.** *Adhikāratthaṃ veditabbaṃ* → «Se debe entender que “kāle” tiene
    valor de aforismo regulativo» (término fijado *adhikāra*). El inglés de

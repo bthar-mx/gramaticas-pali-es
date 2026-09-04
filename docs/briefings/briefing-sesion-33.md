@@ -12,7 +12,7 @@ tanda grande de casos adjudicados sobre pasajes reales.*
 > CINCO arneses mandan (`arnes.js`, `arnes_corpus.js`, `arnes_deteccion.js`,
 > `arnes_pagina.js`, `arnes_casos.js`); nada se adjudica sin el visto bueno
 > del IEBH; todo se mide antes y después. La atribución pública dice
-> **IEBH**, nunca «Angel» (pedido del 2026-08-28; los briefings y el git
+> **IEBH**, nunca «el IEBH» (pedido del 2026-08-28; los briefings y el git
 > conservan la procedencia interna).
 
 ## 1. EL MOTOR, AL CIERRE (v1.5)

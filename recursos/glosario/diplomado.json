@@ -1,5 +1,5 @@
 {
-"_nota": "Cosecha de terminología gramatical del «Diplomado en Lengua Pāḷi I» del IEBH, en Moodle (iebh.net, curso 4). Instructor: Dr. Aleix Ruiz-Falqués. Se recorrieron los 30 PDF del curso —28 dossieres de Material de estudio/lectura, el Currículum y el Vocabulario de las clases 1 a 10— extrayendo su capa de texto con pdf.js dentro del propio navegador, con la sesión de Angel. NO se descargó ningún archivo ni se guarda aquí su contenido: sólo los términos y la línea en que aparecen. Las 22 Presentaciones no se recorrieron: repiten en diapositivas el contenido de los dossieres. El cotejo se hizo primero contra un Conspectus de CUATRO páginas y se rehízo entero en la sesión 53 contra las 44; ver _cotejo.",
+"_nota": "Cosecha de terminología gramatical del «Diplomado en Lengua Pāḷi I» del IEBH, en Moodle (iebh.net, curso 4). Instructor: Dr. Aleix Ruiz-Falqués. Se recorrieron los 30 PDF del curso —28 dossieres de Material de estudio/lectura, el Currículum y el Vocabulario de las clases 1 a 10— extrayendo su capa de texto con pdf.js dentro del propio navegador, con la sesión del IEBH. NO se descargó ningún archivo ni se guarda aquí su contenido: sólo los términos y la línea en que aparecen. Las 22 Presentaciones no se recorrieron: repiten en diapositivas el contenido de los dossieres. El cotejo se hizo primero contra un Conspectus de CUATRO páginas y se rehízo entero en la sesión 53 contra las 44; ver _cotejo.",
 
 "fuente": {
   "curso": "Diplomado en Lengua Pāḷi I",
@@ -15,7 +15,7 @@
   "rehecho": "2026-09-04, sesión 53",
   "contra": "las 44 páginas del Conspectus (1.878 términos), las 649 entradas de Nandisena y las 53 de comun/glosario.md",
   "por_que": "El cotejo original corrió contra cuatro páginas y dio por «ausentes de Smith» tres términos que estaban en la p. 1110. El briefing 46 §6 lo dejó anotado y pidió rehacerlo al completar el Conspectus.",
-  "metodo": "Cada lema del Diplomado se buscó en las tres fuentes por coincidencia exacta, por coincidencia sin diacríticos (para pillar n/ṇ, i/ī, u/ū), como miembro de un lema compuesto y dentro de las glosas y notas de las fichas. Lo que cambió de estado se comprobó además sobre el ejemplar de Angel, recursos/saddaniti/conspectus-ejemplar-angel.pdf (hoja = página impresa − 1104, extraída con pdfimages -j).",
+  "metodo": "Cada lema del Diplomado se buscó en las tres fuentes por coincidencia exacta, por coincidencia sin diacríticos (para pillar n/ṇ, i/ī, u/ū), como miembro de un lema compuesto y dentro de las glosas y notas de las fichas. Lo que cambió de estado se comprobó además sobre el ejemplar del IEBH, recursos/saddaniti/conspectus-ejemplar-angel.pdf (hoja = página impresa − 1104, extraída con pdfimages -j).",
   "resultado": "De los seis «nuevos», sobreviven DOS. Cuatro caen: dos son variantes de lema y dos estaban en Smith tal cual. Las cinco variantes y las cinco divergencias se sostienen, y aparecen TRES divergencias más que el cotejo de cuatro páginas no podía ver. Queda abierta una duda de lectura, en dudas_de_lectura."
 },
 
@@ -39,7 +39,7 @@
    "era": "nuevo", "pasa_a": "variante",
    "donde_esta_en_smith": ["2.2.3.3, p. 1110", "5.1.0, p. 1120"],
    "verificado_en_plancha": true,
-   "nota": "Es el TERCERO de los términos que el cotejo de cuatro páginas dio por ausentes y estaba en la p. 1110, junto a ajjhiṭṭha y nimantana. El briefing 46 corrigió aquellos dos y éste se quedó donde estaba. Ver además dudas_de_lectura: sobre el ejemplar de Angel Smith no imprime lo que las fichas transcriben."},
+   "nota": "Es el TERCERO de los términos que el cotejo de cuatro páginas dio por ausentes y estaba en la p. 1110, junto a ajjhiṭṭha y nimantana. El briefing 46 corrigió aquellos dos y éste se quedó donde estaba. Ver además dudas_de_lectura: sobre el ejemplar del IEBH Smith no imprime lo que las fichas transcriben."},
   {"pali": "itthambhūtalakkhaṇa", "es_diplomado": "adverbial de modo", "clase": "Módulo I - Clase 4",
    "era": "nuevo", "pasa_a": "variante",
    "donde_esta_en_smith": ["4.3, p. 1120 (itthambhūtakkhāna)", "5.1.1.3, p. 1121 (itthambhūta-, abreviado por itthambhūta-karaṇa)"],
@@ -64,14 +64,14 @@
    "es_glosario": "consentimiento; permiso",
    "nota": "Dos formas —participio y sustantivo— y DOS SENTIDOS distintos para el mismo uso del optativo. No es sólo variante de lema. Con las 44 páginas se ve de qué lado cae Smith: 2.2.3.3 (p. 1110) glosa ajjhiṭṭha «requête», que es la «petición» del Diplomado. Nandisena queda solo con «consentimiento; permiso»."},
   {"pali_diplomado": "nimantaṇā", "pali_glosario": "nimantana", "es_diplomado": "invitación optativa",
-   "nota": "«nimantaṇā» con ṇ es imposible en pāḷi tras «ma»; parece errata del dossier. PERO ver dudas_de_lectura: sobre el ejemplar de Angel, Smith imprime nimantaṇa —con ṇ en el sufijo, no tras la m—, de modo que la ṇ del dossier deja de ser sencillamente inexplicable."},
+   "nota": "«nimantaṇā» con ṇ es imposible en pāḷi tras «ma»; parece errata del dossier. PERO ver dudas_de_lectura: sobre el ejemplar del IEBH, Smith imprime nimantaṇa —con ṇ en el sufijo, no tras la m—, de modo que la ṇ del dossier deja de ser sencillamente inexplicable."},
   {"pali_diplomado": "āmantanā", "pali_glosario": "āmantana", "es_diplomado": "invitación no optativa",
    "nota": "Entra aquí desde «nuevos» al rehacer el cotejo. En el dossier está impreso «āmaṇtanā», con ṇ tras la a, que no es forma pāḷi posible. Smith lo trae dos veces —2.2.3.3 (p. 1110) «invitation à choisir» y 5.1.0 (p. 1120), donde cita la definición pāḷi «yam ālapati»—. Sobre la lectura del sufijo, ver dudas_de_lectura."},
   {"pali_diplomado": "itthambhūtalakkhaṇa", "pali_glosario": "itthambhūta-", "es_diplomado": "adverbial de modo",
    "es_smith": "modi (5.1.1.3, p. 1121); «par rapport à qui on est ainsi» (itthambhūtakkhāna, 4.3, p. 1120)",
    "nota": "Entra aquí desde «nuevos» al rehacer el cotejo. Ver caen_del_cotejo_de_cuatro_paginas."},
   {"pali_diplomado": "niggahīta", "pali_glosario": "niggahita", "es": "—",
-   "nota": "comun/glosario.md escribe «niggahita» sin macrón. Nandisena registra las dos y remite de niggahita a niggahīta. El Diplomado usa niggahīta. Y el Conspectus también: 1.1.3 (p. 1107) lematiza niggahīta, y la ficha de akkhara (p. 1105) lo repite dentro de la cita. Dos fuentes con macrón frente a la norma interna sin él. Conviene unificar en el repositorio; la decisión sigue siendo de Angel."},
+   "nota": "comun/glosario.md escribe «niggahita» sin macrón. Nandisena registra las dos y remite de niggahita a niggahīta. El Diplomado usa niggahīta. Y el Conspectus también: 1.1.3 (p. 1107) lematiza niggahīta, y la ficha de akkhara (p. 1105) lo repite dentro de la cita. Dos fuentes con macrón frente a la norma interna sin él. Conviene unificar en el repositorio; la decisión sigue siendo del IEBH."},
   {"pali_diplomado": "patthanā", "pali_glosario": "patthanā", "es_diplomado": "deseo; resolución",
    "es_glosario": "aspiración",
    "nota": "Mismo lema, y ya no son tres castellanos sino cuatro: Smith glosa «prière» en las dos apariciones —2.2.3.3 (p. 1110) y 4.2.3.2 (p. 1119)—, que las fichas vierten «ruego» y «plegaria»."}
@@ -102,7 +102,7 @@
    "repositorio": "prefijo (Nāma §221)", "smith_fr": "préverbe",
    "gravedad": "alta",
    "nuevo_en_el_cotejo_de_44": true,
-   "nota": "DIVERGENCIA NUEVA, que las cuatro páginas no podían ver. Está anotada en la ficha de pādipubbapada (5.2.2.2, p. 1125): Smith traduce upasagga por «préverbe», no por «préfixe». De modo que aquí la edición base y el Diplomado dicen lo mismo CONTRA la norma del repositorio, que fija «prefijo». Es el caso simétrico del de lahu, donde Smith respaldaba la norma; conviene mirarlos juntos. Decisión de Angel."},
+   "nota": "DIVERGENCIA NUEVA, que las cuatro páginas no podían ver. Está anotada en la ficha de pādipubbapada (5.2.2.2, p. 1125): Smith traduce upasagga por «préverbe», no por «préfixe». De modo que aquí la edición base y el Diplomado dicen lo mismo CONTRA la norma del repositorio, que fija «prefijo». Es el caso simétrico del de lahu, donde Smith respaldaba la norma; conviene mirarlos juntos. Decisión del IEBH."},
   {"pali": "kāraka", "diplomado": "el que hace una acción", "nandisena": "—",
    "repositorio": "relación sintáctica", "smith_fr": "—",
    "gravedad": "media",
@@ -128,7 +128,7 @@
   {"lema_en_las_fichas": ["āmantana (2.2.3.3, p. 1110)", "āmantana (5.1.0, p. 1120)", "nimantana (2.2.3.3, p. 1110)"],
    "lo_que_se_ve_en_el_ejemplar_de_angel": "āmantaṇa, āmantaṇa, nimantaṇa — con Ṇ RETROFLEJA en el sufijo",
    "abierta": true,
-   "nota": "Sale al comprobar sobre la plancha la caída de «āmantanā» de la lista de nuevos. Las tres fichas transcriben n dental y la de la p. 1110 dice «Smith confirma la lectura correcta: āmantana», que es justo lo que sobre este ejemplar no hace. El control es interno y no deja margen: en «nimantaṇa» hay TRES enes y sólo la última lleva punto; en «āmantaṇa», dos y sólo la segunda. En la misma p. 1110 āṇatti da el control de ṇ, con punto de idéntica forma y altura; en la misma p. 1120, antojappana y puggalālapana dan el control de -ana dental, sin punto. Y son dos páginas distintas con la misma lectura, de modo que no puede ser mota de la plancha. NO SE HA TOCADO NINGUNA FICHA: es cuestión de transcripción y la decide Angel. Nótese que si Smith imprime ṇ, la ṇ del dossier del Diplomado —que la pone tras la a, «āmaṇtanā»— deja de ser sencillamente inexplicable, aunque siga estando en un sitio imposible."}
+   "nota": "Sale al comprobar sobre la plancha la caída de «āmantanā» de la lista de nuevos. Las tres fichas transcriben n dental y la de la p. 1110 dice «Smith confirma la lectura correcta: āmantana», que es justo lo que sobre este ejemplar no hace. El control es interno y no deja margen: en «nimantaṇa» hay TRES enes y sólo la última lleva punto; en «āmantaṇa», dos y sólo la segunda. En la misma p. 1110 āṇatti da el control de ṇ, con punto de idéntica forma y altura; en la misma p. 1120, antojappana y puggalālapana dan el control de -ana dental, sin punto. Y son dos páginas distintas con la misma lectura, de modo que no puede ser mota de la plancha. NO SE HA TOCADO NINGUNA FICHA: es cuestión de transcripción y la decide IEBH. Nótese que si Smith imprime ṇ, la ṇ del dossier del Diplomado —que la pone tras la a, «āmaṇtanā»— deja de ser sencillamente inexplicable, aunque siga estando en un sitio imposible."}
 ],
 
 "terminos_del_curso_ya_en_el_glosario": 86,

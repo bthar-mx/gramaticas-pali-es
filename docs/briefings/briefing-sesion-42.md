@@ -8,16 +8,16 @@ solucionador ni el corpus. Al cerrar, **la página está hecha y publicada en el
 
 > **Lo primero que tiene que saber el chat nuevo:** leer
 > `docs/verbo/escaleras-por-adjudicar.md` **antes que nada**. Es el informe de
-> cotejo, y lleva las NUEVE decisiones que Angel firmó el 1 de septiembre.
+> cotejo, y lleva las NUEVE decisiones que IEBH firmó el 1 de septiembre.
 > No queda en él ninguna duda abierta; lo único a medias es el inglés. Las reglas de siempre: nada se adjudica sin
-> el visto bueno del IEBH; la atribución pública dice IEBH; con Angel se habla
+> el visto bueno del IEBH; la atribución pública dice IEBH; con IEBH se habla
 > en inglés y lo del proyecto va en español.
 >
 > **Y el criterio de esta sesión, que es el de siempre con otra ropa:** una
 > escalera que recompone no es todavía una escalera atestiguada. Aquí el
 > problema no ha sido el motor sino **dos fuentes del mismo autor que no dicen
 > lo mismo**, y la respuesta ha sido la de siempre: cotejar, medir, y dejar la
-> firma a Angel.
+> firma al IEBH.
 
 ## 0. EL ESTADO, EN CIFRAS
 
@@ -69,7 +69,7 @@ Kacc. §449 *Kiyādito nā*, la regla del grupo de «kī». `su` es svādi: le
 corresponde **Kacc. §448 / Rū 512** *Svādito ṇu-ṇā-uṇā ca*, que es lo que dice
 la diapositiva. Comprobado contra el texto del sutta en las dos fuentes.
 
-**Adjudicado por Angel: Kacc. §448 / Rū 512**, señalando en la página que el
+**Adjudicado por IEBH: Kacc. §448 / Rū 512**, señalando en la página que el
 documento base lee Rū 513. Queda dar cuenta a Bhikkhu Nandisena, por cortesía,
 no como condición.
 
@@ -88,13 +88,13 @@ no como condición.
    2026 al preparar la página.
 
 Atribución, idéntica a la de las demás páginas de `recursos/`, más el crédito
-que Angel pidió: **todo paradigma tomado de otra obra lleva el suyo**. Los 73
+que IEBH pidió: **todo paradigma tomado de otra obra lleva el suyo**. Los 73
 de *otros paradigmas* son de *The Higher Pali Course for Advanced Students*,
 Ven. Buddhadatta Thera, Colombo Apothecaries', 1951.
 
 ## 5. LAS CUATRO DECISIONES DE LA TARDE
 
-Salieron al automatizar el cotejo, y Angel las firmó el mismo día. **El
+Salieron al automatizar el cotejo, y IEBH las firmó el mismo día. **El
 informe no tiene ya ningún `<!-- DUDA -->` abierto.**
 
 1. **«hū» y «hu»: se separan**, imprimiendo la forma intermedia. No es
@@ -156,7 +156,7 @@ solos el día que entre `kaccayana/06-akhyata-kappa.md`.
 ### El inglés, entero y publicado
 
 Dos capas, como en `/recursos/paradigmas/`: **interfaz** y **prosa del IEBH**.
-La diferencia es que aquí la prosa **está adjudicada y se publica** —Angel lo
+La diferencia es que aquí la prosa **está adjudicada y se publica** —IEBH lo
 pidió el 1-sep-2026—, de modo que el botón EN cambia la página entera y el pie
 dice «English translation approved by IEBH».
 
@@ -187,7 +187,7 @@ El commit `47246b1` publicó la v1.0. Lo que sigue va encima, sin empujar.
    ocho grupos de raíces y las conjugaciones **sabbadhātuka** y
    **asabbadhātuka**. Esta última importa más que las otras: es de donde sale
    la ‘i’ que los causativos insertan, y la página la usaba sin haberla
-   definido nunca. Lo detectó Angel preguntando por ella.
+   definido nunca. Lo detectó IEBH preguntando por ella.
 2. **Buscador** sobre las ~1.300 formas de los paradigmas y las escaleras,
    más lemas, glosas y nombres de inflexión. Ignora los diacríticos; el
    índice se rehace al cambiar de idioma, de modo que busca en la lengua que
@@ -224,8 +224,8 @@ El commit `47246b1` publicó la v1.0. Lo que sigue va encima, sin empujar.
 3. Las escaleras del documento **no traen explicación** —el docx no tiene esa
    columna—, de modo que 6 de las 21 enseñan el paso y la autoridad y callan
    el porqué. Las diapositivas sí la traen, y la misma regla se explica
-   siempre igual: se podría rellenar desde ellas. **Es decisión de Angel**, no
+   siempre igual: se podría rellenar desde ellas. **Es decisión del IEBH**, no
    se ha hecho.
 
 **Nada se ha empujado.** El trabajo está en el árbol, sin commit, para que
-Angel lo revise antes.
+El IEBH lo revise antes.

@@ -15,7 +15,7 @@ El último commit sigue siendo `b787aec`, el del cierre de la sesión 18. Todo l
 de esta sesión está **en el árbol de trabajo, sin añadir ni commitear**. Claude
 no ejecutó ninguna orden de git (ver sección 5).
 
-Las órdenes quedaron entregadas a Angel:
+Las órdenes quedaron entregadas al IEBH:
 
     git add site/assets/pali.css herramientas/generar_capitulo.py \
             herramientas/generar_indices.py herramientas/generar_recurso.py \
@@ -23,7 +23,7 @@ Las órdenes quedaron entregadas a Angel:
     git commit -m "tipografía: Gentium Book Plus en todo el proyecto; cuerpo de capítulo a 16px/1.6"
 
 **Si el chat nuevo empieza y `git log` sigue en `b787aec`, lo primero es
-preguntar a Angel si quiere commitear antes de seguir.** Si ya está commiteado,
+preguntar al IEBH si quiere commitear antes de seguir.** Si ya está commiteado,
 esta sección se puede dar por cerrada.
 
 Versiones publicadas: **paradigmas v1.12**, **sandhi v3.8** —sin cambio, y con
@@ -143,7 +143,7 @@ deja ~3,3 px de aire y la glosa a `1.6` sólo 2,2 px, de modo que **el bloque
 más importante de la página iba a ser el más apretado**. Igualar el aire del
 vutti a 16 px pide 1,67; se redondeó a `1.7`. Ver sección 7 ter.
 
-Decidido por Angel sobre estos números. **Falta mirarlo en el navegador**: los
+Decidido por IEBH sobre estos números. **Falta mirarlo en el navegador**: los
 demás tamaños que cuelgan de `--serif` (14 px del `.pali-block`, 13,5, 13)
 encogen ese mismo 15 % y no se tocaron. Si al verlo el conjunto pide una subida
 uniforme, es una decisión de diseño aparte y hay que tomarla entera, no rule a
@@ -151,7 +151,7 @@ rule.
 
 ## 4. PENDIENTE DECIDIDO A MEDIAS: LOS PESOS 500 Y 600
 
-Gentium Book Plus **sólo tiene 400 y 700**. No hay 500 ni 600. Angel eligió
+Gentium Book Plus **sólo tiene 400 y 700**. No hay 500 ni 600. El IEBH eligió
 —expresamente— dejarlo como está y mirarlo en el navegador, sin cambiar nada a
 ciegas. Lo que va a pasar al verlo:
 
@@ -168,7 +168,7 @@ CSS deja de pedir pesos que la tipografía no tiene—. **Sin decidir.**
 
 ## 5. GIT: LA REGLA SE ENDURECIÓ
 
-El briefing 18 permitía `git log` y `git show`. **Angel lo cerró del todo esta
+El briefing 18 permitía `git log` y `git show`. **el IEBH lo cerró del todo esta
 sesión: ninguna orden de git desde el sandbox, ni siquiera `status`.** Deja un
 `.git/index.lock` de cero bytes que él tiene que borrar a mano y que hace
 fallar sus commits.
@@ -198,7 +198,7 @@ El método que funcionó, por si sirve de patrón:
 
 Lo que sigue sin poder comprobarse aquí: cualquier cosa de maquetación. No hay
 navegador en el sandbox. El cuerpo a 16 px, el interlineado y los pesos los
-tiene que mirar Angel.
+tiene que mirar IEBH.
 
 ## 7. LO QUE QUEDA ABIERTO
 
@@ -213,7 +213,7 @@ En orden de tamaño, de menor a mayor:
    real son los 17 caracteres de `buddha-dhamma.net`; bajar de ahí pide dominio
    nuevo de pago. Si el sitio responde en dos nombres, uno canónico y el otro
    301. **Quedó pendiente que Claude mire qué dominios cortos están libres**, si
-   Angel quiere ese camino.
+   IEBH quiere ese camino.
 4. **Proponer y verificar las 2379 desinencias** de
    `recursos/paradigmas/paradigmas.json` contra los suttas del Nāma-Kappa:
    derivar de base + sutta y conservar sólo lo que reproduce exactamente la
@@ -243,7 +243,7 @@ Lo que dicen los archivos, que es lo que vale:
 Es decir: **capítulos 1, 2 y 3 traducidos y publicados; 4 a 8 sin publicar.**
 El Nāma-Kappa está entero, no parado en §203.
 
-**Lo que NO se sabe y hay que preguntar a Angel:** cuál es el siguiente
+**Lo que NO se sabe y hay que preguntar al IEBH:** cuál es el siguiente
 capítulo a traducir. El 4 (Samāsa) es el que tocaría por orden, pero tanto
 `CLAUDE.md` como `memory.md` advierten de que **el capítulo 4 vive en otro hilo
 de revisión y no se deben tocar esos archivos**. No se ha inventado aquí una
@@ -254,14 +254,14 @@ buenas cosas que dejaron de serlo hace catorce briefings.
 
 ## 7 bis. MODO CLARO: DECIDIDO, SIN EMPEZAR
 
-**Angel ha decidido llevar los capítulos y los índices a la paleta «hoja de
+**El IEBH ha decidido llevar los capítulos y los índices a la paleta «hoja de
 palma» que ya usan `/recursos/sandhi/` y `/recursos/paradigmas/`.** Se decidió
 al final de la sesión 19 y **no se ha tocado ni una línea**. Es el trabajo con
 el que debe empezar el chat siguiente.
 
 ### De dónde salió
 
-De mirar `wisprflow.ai` —Angel lo guardó completo y se leyó su hoja de estilo
+De mirar `wisprflow.ai` —IEBH lo guardó completo y se leyó su hoja de estilo
 real, no una impresión—. Lo que se sacó de ahí, por si hace falta volver:
 
 | Suyo | Valor |
@@ -377,7 +377,7 @@ para `--bg3`: `#F6F4EC` (ink encima 16,44:1), `#EFEBDE` (15,18:1), `#DCD7C7`
 - por `pali.css`: los 3 capítulos y los 3 índices → **es donde está el trabajo**
 - `/recursos/sandhi/` y `/recursos/paradigmas/`: **ya están** — a lo sumo el
   grosor del filete y el interletraje de los titulares
-- `/recursos/nombre/`: **fuera de esta pasada, por decisión de Angel.** Es
+- `/recursos/nombre/`: **fuera de esta pasada, por decisión del IEBH.** Es
   página publicada y viva (ficha normal en el índice de recursos, la genera
   `generar_nombre.py`), pero es autónoma, no carga `pali.css`, está a 25° en
   los verdes con tinta azulada `#1D2430` y lleva tipografías propias
@@ -389,7 +389,7 @@ para `--bg3`: `#F6F4EC` (ink encima 16,44:1), `#EFEBDE` (15,18:1), `#DCD7C7`
 Igual que la tipografía (sección 6), porque sigue sin haber navegador:
 md5 de las nueve páginas antes y después, invariancia del bloque `const DATA`,
 recuento de suttas, y **contraste calculado de cada par nuevo**. Lo que no se
-puede comprobar aquí y tiene que mirar Angel: si el campo más oscuro cansa en
+puede comprobar aquí y tiene que mirar IEBH: si el campo más oscuro cansa en
 lecturas largas, y si el degradado radial funciona en páginas de 35.000 px.
 
 **Y una consecuencia gratis:** la sección 4 de este briefing —los pesos 500 y
@@ -399,7 +399,7 @@ que no usa el peso como recurso en los titulares: `font-weight:400` y
 
 ## 7 ter. LO QUE SE VIO EN EL NAVEGADOR AL CIERRE
 
-Angel miró el capítulo de Sandhi ya con Gentium y mandó dos capturas: la página
+El IEBH miró el capítulo de Sandhi ya con Gentium y mandó dos capturas: la página
 plegada y §12–§13 desplegados. Es la única comprobación visual que existe de
 todo lo de hoy, así que conviene no perderla.
 
@@ -435,7 +435,7 @@ subir toda la escalera ese mismo 7 %:
 | `.intro-trans` | 13,5 | 14,5 |
 
 **Es una decisión editorial, no tipográfica** —cuál de los dos textos manda en
-la página—, y por eso se deja para Angel. No tocarla sin que él lo diga.
+la página—, y por eso se deja para IEBH. No tocarla sin que él lo diga.
 
 ### El interlineado: corregido a 1.7, y todavía sin ver del todo
 
@@ -478,10 +478,10 @@ hacer una sola cosa, es ésa.
 
 ## 8. SIGUE SIN RESOLVER: EL PERMISO DE LA MARCA
 
-Se arrastra desde la sesión 18 y no se tocó hoy. Se le señaló a Angel, dos
+Se arrastra desde la sesión 18 y no se tocó hoy. Se le señaló al IEBH, dos
 veces, que un logotipo es marca registrada, que la licencia CC BY-NC-SA cubre
 el texto y no la marca, y que un logotipo en la cabecera se lee como
-«publicación del IEBH». **Angel no ha dicho si el Venerable lo sabe.** Está
+«publicación del IEBH». **el IEBH no ha dicho si el Venerable lo sabe.** Está
 publicado. Si la respuesta resultara ser que no, se deshace con `git revert` de
 `776c81f` y `79ba7c3`.
 
@@ -495,5 +495,5 @@ publicado. Si la respuesta resultara ser que no, se deshace con `git revert` de
   va al revés.
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta.
 - Nada se añade, quita ni cambia respecto de la edición base sin avisar y sin
-  que Angel decida.
-- Con Angel se habla en inglés; el producto va en español.
+  que IEBH decida.
+- Con IEBH se habla en inglés; el producto va en español.

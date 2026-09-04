@@ -1,7 +1,7 @@
 # Kaccāyana Pāḷi-Español: Briefing de la Sesión 38
 
 *Complementa a los briefings 05–37. Tema de la sesión 38 (2026-08-30, en vivo
-con Angel, la misma tarde que la 37): **el corpus separado deja de ser una
+con IEBH, la misma tarde que la 37): **el corpus separado deja de ser una
 muestra y se vuelve un instrumento** —de 5 textos a 47, de 562 junturas a
 1.784— y, al volverse instrumento, empieza a decir cosas sobre el motor que
 ninguna otra fuente decía. Al final del día hay UN diagnóstico, no una lista
@@ -13,9 +13,9 @@ del tipo «cambió el dato».*
 > `git log origin/main..main`. Las reglas de siempre: el Python es la
 > referencia; los CINCO arneses mandan; nada se adjudica sin el visto bueno
 > del IEBH; todo se mide antes y después; la atribución pública dice IEBH.
-> Con Angel se habla en inglés; lo del proyecto va en español.
+> Con IEBH se habla en inglés; lo del proyecto va en español.
 > **Y una nueva, en CLAUDE.md**: cuando lleguen veredictos, las escaleras se
-> proponen solas, sin que Angel lo pida.
+> proponen solas, sin que IEBH lo pida.
 
 ## 0. EL ESTADO, EN CUATRO CIFRAS
 
@@ -123,7 +123,7 @@ su riesgo mayor.
 
 ## 4. EL SOLUCIONADOR 1.12: LO REGISTRADO A MANO YA SE VE
 
-Pedido de Angel. Una voz dada de alta por el campo «sandhi no detectado» no
+Pedido del IEBH. Una voz dada de alta por el campo «sandhi no detectado» no
 aparecía por ninguna parte: `analizar()` sólo dibuja tarjeta para lo que el
 motor señala —`if(!r.senal) continue`— y una voz registrada a mano es, por
 definición, una sobre la que el motor calla. Se guardaba y viajaba en el .md
@@ -135,13 +135,13 @@ pasaje. **La escalera importa ahí MÁS que en ninguna otra tarjeta, no
 menos**: `escaleraIEBH()` existe para enseñar una escalera de mano cuando la
 lectura afirmada no trae la del motor, y éstas nunca traen la del motor.
 
-Y una precisión que Angel pidió expresamente: **el cuadro de «observaciones»
+Y una precisión que IEBH pidió expresamente: **el cuadro de «observaciones»
 NO se volvió el campo de escalera**, y a propósito. La escalera es dato de
 UNA voz y vive en su tarjeta; las observaciones son prosa sobre MUCHAS y
 siguen sin volverse datos. Juntarlas habría convertido prosa en dato, que es
 lo único que ese cuadro tiene documentado no hacer.
 
-## 5. LAS ESCALERAS PENDIENTES — lo que Angel preguntó al cerrar
+## 5. LAS ESCALERAS PENDIENTES — lo que IEBH preguntó al cerrar
 
 `auditar_derivacion_casos.py` sobre los 193 casos. Tres del lote del día
 quedan sin escalera, **por tres motivos distintos**, y ninguno se resuelve
@@ -165,7 +165,7 @@ igual:
   decide el IEBH.**
 
 Y la regla nueva de CLAUDE.md, sección «Cuando llegan veredictos»: esto se
-hace **solo**, cada vez que entren veredictos, sin que Angel lo pida.
+hace **solo**, cada vez que entren veredictos, sin que IEBH lo pida.
 
 ## 6. LO QUE HAY QUE CORREGIR DE MÍ MISMO
 
@@ -177,13 +177,13 @@ Principio 5, y son tres en un día:
    calla por 1 contra 8.192, que no es por los pelos.
 2. **El commit c8843b1 dice «siete textos» y metió NUEVE.** Un
    `git add -- recursos/corpus-separado/` mío barrió **Aggañña-sutta** y
-   **Mālukyaputta-sutta**, que Angel había dejado en la carpeta mientras yo
+   **Mālukyaputta-sutta**, que IEBH había dejado en la carpeta mientras yo
    trabajaba — el mismo `git add -A` que yo le achacaba al ciclo. Enmendado
    en fb6f788; aportan 126 junturas, las más frecuentes del corpus.
 3. **El commit d425df6 dice «los CINCO arneses en verde» y no lo estaban.**
    `arnes_corpus` había dado NO PASA en esa misma corrida y yo commiteé
    igual, porque mi cadena de shell sólo miraba el último arnés. Re-corridos
-   después, los cinco pasan; el fallo era una carrera con el ciclo de Angel,
+   después, los cinco pasan; el fallo era una carrera con el ciclo del IEBH,
    que estaba reescribiendo `referencia-senal-solo-canon.json` mientras el
    arnés lo leía. **La afirmación era falsa cuando la hice.**
 
@@ -200,7 +200,7 @@ y barrido en el commit. Así entraron mis archivos en 9ce50c8 y f9ddf33.
 hacer: es la tubería de la firma y la toca el IEBH.
 
 Efecto secundario a tener presente: **añadir textos y correr el ciclo compiten
-por el árbol limpio.** Mientras Angel deja archivos, el ciclo no corre.
+por el árbol limpio.** Mientras IEBH deja archivos, el ciclo no corre.
 
 ## 8. AVISOS AL CHAT NUEVO
 

@@ -767,9 +767,9 @@ desde la tanda 1.
   pa + kamu), que ilumina la serie pakkanto/vibbhanto/saṅkanto.
 - El aparato de Pind a §571 (su nota larga con la Kacc-vaṇṇanā entera) y
   su juicio sobre §586 («clearly defective»), que valdrían para una nota
-  del traductor si Angel la quiere.
+  del traductor si IEBH la quiere.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las erratas pāḷi de la tanda** (§1): §573 «Sakāranata» → «Sakāranta»,
    el «26» de §583, §587 «timhī» → «timhi», y la minúscula de

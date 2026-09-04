@@ -8,7 +8,7 @@ Escribe el borrador inglés de la página del verbo.
 Produce `recursos/verbo/ingles.json`. La INTERFAZ se publica siempre; la PROSA
 —palabras del IEBH— sólo llega a la página cuando `"adjudicado"` es `true`,
 igual que en `recursos/paradigmas/ingles.json`. **Está en `true` desde el
-1-sep-2026, por encargo de Angel.** Volver a `false` basta para que la página
+1-sep-2026, por encargo del IEBH.** Volver a `false` basta para que la página
 en inglés muestre otra vez el español con su aviso: no hay que tocar nada más.
 
 La terminología no se inventa: sale de la propia traducción inglesa que

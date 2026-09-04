@@ -26,7 +26,7 @@ por capítulos, verificada byte a byte contra el master).
 | ākhayā takappe | ākhyātakappe | 1 | colofón mal partido |
 | Colofones fusionados (Samattomukhamatta°, °kappedutiyo, dutiyoparicchedo, catutthoparicchedo, paṭhamoparicchedo, tatiyoparicchedo, aṭṭhamoparicchedo, dīpaniyaṃnāmakappe, °kitabbidhānakappe°, namakappe→nāmakappe, katabbidhāna→kitabbidhāna) | separados / normalizados | 18 | espaciado de colofones; sólo fórmulas fijas |
 
-## 3. Zona gris — NO corregido; pendiente de decisión de Angel
+## 3. Zona gris — NO corregido; pendiente de decisión del IEBH
 
 - **§12 (comentario):** «a ca ā ca i ca ī ca e cā ti *viggataṃ* katvā» — se esperaría *viggahaṃ* (análisis del compuesto). Posible errata; posible lectura de la edición.
 - **§12 (comentario):** «kasmī sarā ti vuttan?» — se esperaría *kasmā*.

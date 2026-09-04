@@ -79,7 +79,7 @@ def main():
         fallos += correr("generar_nombre.py")
 
     # el verbo · ākhyāta
-    # El cotejo del inglés se rehace siempre: es lo que Angel firma, y si el
+    # El cotejo del inglés se rehace siempre: es lo que IEBH firma, y si el
     # español cambia tiene que verse en el acto qué se queda sin traducir.
     if os.path.exists(os.path.join(recursos, "verbo", "plantilla.html")):
         if os.path.exists(os.path.join(recursos, "verbo", "ingles.json")):
@@ -111,7 +111,11 @@ def main():
         fallos += correr("generar_raices.py")
 
     # glosario de terminología gramatical
+    # El cotejo del inglés del Glosario de Nandisena se rehace siempre, como
+    # el del verbo: es lo que el IEBH firma.
     if os.path.exists(os.path.join(recursos, "glosario", "plantilla.html")):
+        if os.path.exists(os.path.join(recursos, "glosario", "ingles.json")):
+            fallos += correr("generar_ingles_glosario.py")
         fallos += correr("generar_glosario.py")
 
     # las tres páginas de índice — al final, porque cuentan lo ya generado

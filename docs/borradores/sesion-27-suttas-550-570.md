@@ -661,7 +661,7 @@ de §562 va después del signo de interrogación («…arahati? (Khu. i,
 - Su desglose de §560, que trata «īsaṁ, du, su» como partículas upasagga
   y nipāta antepuestas.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las dos erratas pāḷi de la tanda** (§1): §564 «amutro» → «amutra» y
    la ‘s’ de «(s1138)» en §551; más las palabras pegadas de §552

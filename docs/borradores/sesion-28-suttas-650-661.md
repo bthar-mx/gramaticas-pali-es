@@ -455,7 +455,7 @@ proyecto); la pareja «Abh./Abhi. i, 157» dentro del mismo sutta (§656);
 - Su explicación de §653: el dativo en «āya» como infinitivo de
   finalidad.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las cuatro erratas pāḷi del §1** (ghin, passāvi/paṭṭhāyi,
    Kriyāyaṃ, vacitabbban) y las del inglés.

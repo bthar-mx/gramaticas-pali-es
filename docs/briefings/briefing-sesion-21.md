@@ -64,7 +64,7 @@ dice «…y escaneo 1933 comprimido» y **el PDF no entró**. La causa es
 `.git/index`: aparecen los nueve `.md` y los tres `.py`, y **no aparece el
 PDF**. Coherente con el tamaño: `.git` ocupa 15 MB y el árbol de trabajo 61 MB.
 
-**Consecuencia práctica: el escaneo existe sólo en la máquina de Angel.** Quien
+**Consecuencia práctica: el escaneo existe sólo en la máquina del IEBH.** Quien
 clone el repositorio no lo tendrá, por mucho que este briefing y el mensaje del
 commit lo nombren.
 
@@ -118,7 +118,7 @@ No se dio nada por bueno de oídas:
 `Nyasa_errata.md` §2. La limpieza mecánica de formato (§1) no altera el texto
 pāḷi.
 
-### Zona gris: NO corregido, pendiente de Angel
+### Zona gris: NO corregido, pendiente del IEBH
 
 `Nyasa_errata.md` §3. Lo que hay que saber antes de usar el Nyāsa para algo:
 
@@ -146,7 +146,7 @@ pāḷi.
 ### Regla de uso, igual que Thitzana y Rūpasiddhi
 
 **Todo material tomado del Nyāsa se señala como suyo** antes de incorporarlo,
-para que Angel decida y se dé el crédito. Y la transcripción **lleva ruido de
+para que IEBH decida y se dé el crédito. Y la transcripción **lleva ruido de
 OCR: no se cita textualmente sin verificar**, como avisan las cabeceras de los
 propios extractos. El escaneo de 1933 es el árbitro de lecturas.
 
@@ -188,7 +188,7 @@ responder.
 **Pero los borradores llevaban al final una sección `NOTAS DE TRABAJO` que el
 capítulo, por ser texto limpio, no podía recoger**, y ahí sí había cosas vivas
 —sobre todo diecisiete apartados de Thitzana ofrecidos y no incluidos, marcados
-«recuperable si Angel lo quiere», que no constaban en ningún otro sitio—.
+«recuperable si IEBH lo quiere», que no constaban en ningún otro sitio—.
 
 Todo eso se ha volcado a **`docs/notas-de-trabajo-nama.md`**, ya en el
 repositorio y bajo control de versiones. Los borradores originales pueden
@@ -214,12 +214,12 @@ los tres capítulos publicados o sólo al Nāma.
 
 Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
 
-1. **Angel mira la paleta «hoja de palma» en el navegador.** Lo que la
+1. **el IEBH mira la paleta «hoja de palma» en el navegador.** Lo que la
    aritmética no puede decir: si el campo más oscuro cansa en lecturas largas,
    si el degradado radial funciona en páginas de ~35.000 px, y cómo quedan los
    titulares serif a 400 con interletraje −.03em.
 2. **La escalera de tamaños serif** (briefing 19, §7 ter) — **decisión
-   editorial de Angel, intacta**: el pāḷi queda visiblemente por debajo de su
+   editorial del IEBH, intacta**: el pāḷi queda visiblemente por debajo de su
    traducción; propuesta de +1 px en toda la escalera. **No tocar sin que él lo
    diga.** Falta también la captura de una glosa de dos o tres líneas para ver
    el interlineado 1.7 directamente.
@@ -251,7 +251,7 @@ Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
 ## 4. RECORDATORIOS QUE NO CAMBIAN
 
 - **Ninguna orden de git desde el sandbox, ni siquiera `status`** — deja un
-  `.git/index.lock` que Angel borra a mano. Para saber el estado del
+  `.git/index.lock` que IEBH borra a mano. Para saber el estado del
   repositorio: leer `.git/refs/heads/main`, `.git/logs/HEAD` y `.git/index`
   como archivos. Con eso se averigua el hash, el mensaje y qué está indexado,
   que es cuanto hace falta.
@@ -260,5 +260,5 @@ Se repite entero porque nada de esto se tocó hoy. Orden del briefing 20, §5:
 - Lo tomado de Thitzana, Rūpasiddhi **o Nyāsa** se señala como suyo; la flecha
   de Thitzana va al revés.
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta. Nada se añade, quita ni
-  cambia respecto de la edición base sin que Angel decida.
-- Con Angel se habla en inglés; el producto va en español.
+  cambia respecto de la edición base sin que IEBH decida.
+- Con IEBH se habla en inglés; el producto va en español.

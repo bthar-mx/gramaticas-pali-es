@@ -5,7 +5,7 @@
 
     python3 herramientas/comprobar_despliegue.py
 
-Pedido de Angel, 2026-08-31: «¿hay manera simple de saber cuándo el push ya ha
+Pedido del IEBH, 2026-08-31: «¿hay manera simple de saber cuándo el push ya ha
 cambiado la página?». La hay, y no es mirar la versión: la versión cambia una
 vez cada muchos empujones, de modo que sirve para las veces en que no hace
 falta y calla justo cuando sí.

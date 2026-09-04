@@ -66,12 +66,12 @@ proyecto (`.../docs/`), no en el repositorio. El repositorio
 
 ### 3.1 Fidelidad a Nandisena
 - **NUNCA añadir, omitir o cambiar nada** más allá de lo que está estrictamente en el texto
-  de Nandisena sin informar explícitamente a Angel y dejarle decidir.
+  de Nandisena sin informar explícitamente al IEBH y dejarle decidir.
 - Leer el texto de Nandisena **párrafo por párrafo, línea por línea**, antes de presentar
   cada sutta.
 - Nunca enmendar en silencio, ni siquiera una errata evidente: presentarla y señalarla.
   **La errata se presenta con la lectura literal de Nandisena en el cuerpo del sutta** y la
-  enmienda propuesta en nota aparte; Angel decide y entrega la versión corregida.
+  enmienda propuesta en nota aparte; IEBH decide y entrega la versión corregida.
 
 ### 3.2 Material de Thitzana
 - **SIEMPRE informar explícitamente** cuando se toma algo de Thitzana. Ver §7.8.
@@ -79,7 +79,7 @@ proyecto (`.../docs/`), no en el repositorio. El repositorio
 ### 3.3 Incertidumbre — REGLA REFORZADA
 - Si no se sabe qué sutta prescribe un paso, **decirlo explícitamente**.
 - **Distinguir siempre** lo verificado contra las fuentes de lo afirmado de memoria.
-- **Antes de objetar una lectura de Angel, consultar el comentario y las fuentes.**
+- **Antes de objetar una lectura del IEBH, consultar el comentario y las fuentes.**
 - **Buscar antes de rendirse.** En §200 seis formas mostraban una 'a' breve que el sutta no
   explicaba; Thitzana solo decía «note that "ā" is shortened in some words», sin citar
   sutta. La respuesta estaba en **§209** (*Pitādīnam asimhi*), nueve suttas más adelante.
@@ -377,7 +377,7 @@ concreta a la que corresponden.
 - Ejemplos en los *kimatthaṃ*: sin cursiva, sin comillas dobles.
 - Traducciones de citas pāḷi: inmediatamente después, entre paréntesis.
 - Cierre de sección: *"Así termina la [ordinal] sección del capítulo de Nāma."*
-- Variantes textuales de Nandisena: **se conservan**, salvo verificación y orden de Angel.
+- Variantes textuales de Nandisena: **se conservan**, salvo verificación y orden del IEBH.
 - **Números de Saddanīti:** el guion indica **rango** (`390-1` = 390–391; `385-8` =
   385–388). La coma indica **lista** de números distintos (`(1, 2)` en §2). Hay suttas
   **sin** número de Saddanīti (§192); es normal.
@@ -446,18 +446,18 @@ Reincorporar todas las retiradas, recuperándolas del archivo de Nandisena:
 ### 10.2 Cuestiones abiertas
 1. **§185, cuarto pāda del primer verso.** *Sataṃ saddhammam aññāya, seyyo hoti na
    pāpiyo.* Objeción no resuelta: *aññāya* es absolutivo y no puede ser sujeto de *hoti*;
-   *seyyo*/*pāpiyo* son comparativos, no superlativos. **Angel debe decidir.**
+   *seyyo*/*pāpiyo* son comparativos, no superlativos. **el IEBH debe decidir.**
 2. **§184, nota al pie 57** de Nandisena (*"This should not be here…"*). Decidir si se
    recupera bajo "Nota al pie:".
 3. ***vikappana* / *vikappena***: confirmar "alternativa" / "alternativamente".
-4. **Forma *-sū ti* — SIN DECIDIR.** Angel fijó `-svī ti` → `-sv iti` (ver 10.3), pero
+4. **Forma *-sū ti* — SIN DECIDIR.** IEBH fijó `-svī ti` → `-sv iti` (ver 10.3), pero
    Nandisena usa además `-sū ti`, sandhi distinto del mismo *-su + iti*, donde Pind
    también escribe `-sv iti`. Afecta a **§169, §187** (aprobados), **§198** (dejado como
    Nandisena) y **§222** (por llegar). Decidir si se normaliza igual.
 5. **Comillas de *'ādi'* en §6.1.** Fijadas las dobles para partículas citadas como
    palabra ("ca", "tu"); queda por decidir si *ādiggahaṇena* → "Al tomar "ādi"".
 6. **Glosas de Thitzana ofrecidas y no incluidas:** §188 (significados españoles de los
-   ejemplos) y §202 (el "ca" admite *dhītu*). Recuperables si Angel las quiere.
+   ejemplos) y §202 (el "ca" admite *dhītu*). Recuperables si IEBH las quiere.
 
 ### 10.3 Ajustes retroactivos al documento maestro / HTML
 
@@ -502,7 +502,7 @@ Siguiendo el modelo del Sandhi-kappa.
 
 El capítulo se publica desde `kaccayana/02-nama-kappa.md` mediante
 `herramientas/generar_capitulo.py`. La entrada `02-nama-kappa` **ya existe** en el
-diccionario `CAPITULOS`. El archivo del capítulo **todavía no existe**: Angel prefiere
+diccionario `CAPITULOS`. El archivo del capítulo **todavía no existe**: el IEBH prefiere
 entregarlo al terminar el capítulo, no sutta a sutta.
 
 ### Diferencias entre el formato de trabajo y el que el generador acepta
@@ -518,7 +518,7 @@ entregarlo al terminar el capítulo, no sutta a sutta.
 ### Conflictos abiertos con el generador
 
 1. **Los versos se aplanan.** La disposición pāda por pāda de §7.7 no sobrevive y la
-   traducción española queda absorbida en el párrafo pāḷi. Afecta a §185. **Angel debe
+   traducción española queda absorbida en el párrafo pāḷi. Afecta a §185. **el IEBH debe
    decidir** entre cambiar §7.7 o añadir un modo verso al generador.
 2. **Dos bloques `Ejemplos:` en un mismo sutta.** §197 los necesita (la vutti principal y
    la cláusula de "tu" tienen ejemplos propios), pero el generador solo formatea uno.

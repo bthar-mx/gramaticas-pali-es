@@ -44,7 +44,7 @@ afirmaría, y el acuerdo se cuenta. Al final, las respuestas CONOCIDAS
 con lo que el mecanismo habría dicho: ésa es la medición previa.
 
 El informe PREPARA; no adjudica nada. La regla, su grado y sus resguardos
-los firma Angel. Una forma puede aparecer también en el informe de
+los firma IEBH. Una forma puede aparecer también en el informe de
 familias por segunda voz (tameva está aquí por «taṃ + eva» y allá en la
 familia «eva»): son cortes distintos del mismo «no sabe».
 
@@ -236,7 +236,7 @@ def main():
       "canon; banco, casos y formas ya afirmadas por una autoridad, "
       "descontados de la tabla y contrastados aparte en la medición. Este "
       "informe PREPARA la firma; no adjudica nada: la regla, su grado y sus "
-      "resguardos los firma Angel.*\n".format(num(a.n)))
+      "resguardos los firma IEBH.*\n".format(num(a.n)))
     w("**La clase.** Niggahīta → m ante vocal (§34), con la segunda voz "
       "corriente: idamavoca = idaṃ + avoca, kimahaṃ = kiṃ + ahaṃ. Hoy sólo "
       "la ven los casos adjudicados. Cuenta como lectura de la clase la "

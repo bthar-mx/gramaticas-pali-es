@@ -618,7 +618,7 @@ título va literal y el desglose es de Thitzana.
    que explican paso a paso la formación de *jigucchati*, *tikicchati*,
    *jighacchati* y *titikkhati*. **No tienen equivalente pāḷi**: son
    suyas como traductor. Se tradujeron y se dejaron en el cuerpo, como
-   «Nota:», que es donde él las pone. **Angel decide** si van al cuerpo,
+   «Nota:», que es donde él las pone. **el IEBH decide** si van al cuerpo,
    a pie de página o fuera. Son las primeras del capítulo de esta clase.
 2. **§458 no reduplica «bubbhukkhati» sino «bubhukkhati».** Con una sola
    ‘b’, y lo mismo en §461, §465 y §473. Es decir: **el propio Nandisena
@@ -640,7 +640,7 @@ título va literal y el desglose es de Thitzana.
    variante de Syā sobre el anuvatti del «vā» con el contraejemplo
    «viññāyati» de Sī y Sad. y una explicación de cuándo se aplica cada
    sustitución. Se dejó **en pāḷi, sin traducir**, como Nandisena la
-   imprime. **Angel decide** si se traduce.
+   imprime. **el IEBH decide** si se traduce.
 6. **§476, «Agacchā / Agacchī».** Nandisena alarga las vocales
    (agacchā, agamā, agacchī, agamī) donde Pind las deja breves (agaccha,
    agamā, agacchi, agami). Se conservó su lectura.
@@ -790,7 +790,7 @@ vuelven a aparecer (§5 de la tanda anterior).
   entre las tres sustituciones. Nandisena los da en fila.
 - Su nota de que la «jā» sólo se aplica cuando el sufijo es ‘nā’.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **La errata de §470: «Ṇāssa» → «Ñāssa»**, en el título y en la vutti.
    Es la de mayor alcance de todo lo visto hasta ahora, porque deja el

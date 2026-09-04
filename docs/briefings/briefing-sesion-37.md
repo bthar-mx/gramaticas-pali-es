@@ -1,7 +1,7 @@
 # Kaccāyana Pāḷi-Español: Briefing de la Sesión 37
 
 *Complementa a los briefings 05–36. Tema de la sesión 37 (2026-08-30, en
-vivo con Angel): **el testigo del DPD deja de estar vacío y se pone a
+vivo con IEBH): **el testigo del DPD deja de estar vacío y se pone a
 trabajar; y al final del día aparece un testigo mejor, que es el Venerable
 mismo.** Los dos informes re-corridos; un informe nuevo del sub-piso de §34
 que encuentra que lo falso tiene firma y no es la frecuencia; el criterio de
@@ -14,12 +14,12 @@ todo prepara, y firmar es del IEBH.*
 > **Lo primero que tiene que saber el chat nuevo:** verificar
 > `git log origin/main..main`. Las reglas de siempre: el Python es la referencia; los CINCO
 > arneses mandan; nada se adjudica sin el visto bueno del IEBH; todo se
-> mide antes y después; la atribución pública dice IEBH. Con Angel se habla
+> mide antes y después; la atribución pública dice IEBH. Con IEBH se habla
 > en inglés; lo del proyecto va en español.
 
 ## 0. LA CLAVE — ROTADA. Cerrado, y por qué tardó tres sesiones
 
-**HECHO el 2026-08-30.** Angel la rotó con `npx wrangler secret put
+**HECHO el 2026-08-30.** IEBH la rotó con `npx wrangler secret put
 CLAVE_VEREDICTOS` («Success! Uploaded secret»), y quedó comprobada: con el
 valor nuevo, `traer_veredictos.py --solo-mirar` lista la cola. **No hay que
 volver a preguntarlo.**
@@ -28,9 +28,9 @@ volver a preguntarlo.**
 «rotar con un valor nuevo que no se escriba en ninguna parte» sin decir
 NUNCA qué descalificaba al viejo. Y lo que lo descalificaba es que **el valor
 original lo generó Claude en un chat durante la instalación** — no un
-descuido de Angel, que se limitó a usar la clave que se le dio. Un aviso que
+descuido del IEBH, que se limitó a usar la clave que se le dio. Un aviso que
 no dice su razón se lee como una manía y se pospone. El valor nuevo lo
-generó Angel en su Mac con `secrets.token_urlsafe(24)` y no ha pasado por
+generó IEBH en su Mac con `secrets.token_urlsafe(24)` y no ha pasado por
 ningún chat.
 
 **Regla que queda:** Claude no es fuente de secretos. Si hace falta uno, se
@@ -135,7 +135,7 @@ correrlo **por debajo** del piso, que es lo que hace el informe nuevo.
 
 1. **El DPD CALLA sobre jātimaraṇā y sobre vedhamānehi.** El testigo no
    adjudica los dos casos que fijaron el piso; los adjudicó el juicio de
-   Angel y sigue haciendo falta. La correcta que el piso silencia y el
+   IEBH y sigue haciendo falta. La correcta que el piso silencia y el
    testigo confirma es **tvamasi = tvaṃ + asi**.
 
    **ENMIENDA DEL IEBH (2026-08-30), y toca tres archivos:** *jāti + maraṇā*
@@ -276,7 +276,7 @@ HTML de `site/`. Los CINCO arneses, en verde después del cambio.
 
 ## 4 ter. EL CORPUS SEPARADO — lo más importante del día, y lo más nuevo
 
-Angel trajo los textos bilingües del IEBH (Bhikkhu Nandisena), y con ellos el
+El IEBH trajo los textos bilingües del IEBH (Bhikkhu Nandisena), y con ellos el
 proyecto tiene por primera vez **segmentación de mano del Venerable**, que es
 el dato que CLAUDE.md declara como cuello de botella: «sin saber que lokaggo
 es loka + aggo no hay motor de reglas que valga».
@@ -350,11 +350,11 @@ al Venerable.
 ### Estado y lo que falta
 
 En `recursos/corpus-separado/`: el Mahāsatipaṭṭhāna y su Vaṇṇanā (completos,
-los puso Angel), la Therīgāthā I-IV, y de Pañcakanipāta los versos 67-71 y
+los puso IEBH), la Therīgāthā I-IV, y de Pañcakanipāta los versos 67-71 y
 72-81. El `LEEME.md` de la carpeta explica procedencia, licencia y qué hacer
 con un archivo nuevo (nada: se deja el `.txt` crudo).
 
-**Faltan 19 documentos** de los tres capítulos que pidió Angel: Pañcaka 12
+**Faltan 19 documentos** de los tres capítulos que pidió IEBH: Pañcaka 12
 —van 4—, Chakka 8, Sattaka 3. Se recogen del Drive del proyecto abriendo la
 carpeta con el navegador y sacando los `data-id` de las filas, y luego
 `https://docs.google.com/document/d/<id>/export?format=txt`. **Ojo con el
@@ -379,7 +379,7 @@ NO hace falta OCR. Sin extraer.
 
 - **NADA DE ESTA SESIÓN SE HA APLICADO AL MOTOR.** Las tres firmas del §3 y
   el criterio del §4 son candidatas medidas. Ampliar la licencia de §34 y
-  firmar el criterio **son del IEBH**. Decisión de Angel en esta sesión:
+  firmar el criterio **son del IEBH**. Decisión del IEBH en esta sesión:
   «evidence only».
 - **El arenal corta cada llamada de bash a los ~165-180 s**, sea cual sea el
   `timeout_ms` que se pida: un bucle de tres pasadas en una sola llamada se

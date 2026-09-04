@@ -7,7 +7,7 @@ un segundo hilo, la negrita del vutti, que quedó a medias. No se tradujo ni un
 sutta nuevo; no se tocó el capítulo 4.*
 
 > **Lo primero que tiene que saber el chat nuevo:** doce de las quince citas
-> están puestas y verificadas, y §66 —lo que Angel preguntaba— quedó resuelto.
+> están puestas y verificadas, y §66 —lo que IEBH preguntaba— quedó resuelto.
 > Lo que queda abierto es **la negrita de los 26 lemas restantes**, que ya no
 > depende de ninguna decisión sino de volver a tener delante el PDF del Nāma.
 
@@ -112,7 +112,7 @@ pendientes. No es un error: es el emparejador negándose a elegir.
 
 ## 5. LA NEGRITA DEL VUTTI: HILO ABIERTO
 
-Angel vio que en §66 `Saṃsāsv` y `Ekavacanesv` no van en negrita y pidió
+El IEBH vio que en §66 `Saṃsāsv` y `Ekavacanesv` no van en negrita y pidió
 mirar cuántas más había. La fórmula `X (i)ti kimatthaṃ` sale **194 veces**:
 189 en el Nāma, 5 en el Kāraka, 0 en el Sandhi. **Treinta y cuatro no
 llevaban negrita, todas en el Nāma.**
@@ -127,7 +127,7 @@ El PDF imprime **siempre** el locativo contraído:
     PDF       **Yosvī** ti kimatthaṃ?      **Sesesū** ti kimatthaṃ?
     maestro     Yosv iti kimatthaṃ?          Sesesv iti kimatthaṃ?
 
-Es la divergencia de división que Angel ya había decidido en la 22 («manda
+Es la divergencia de división que IEBH ya había decidido en la 22 («manda
 el maestro… vale para toda su clase»), y por eso esas líneas no encontraban
 sitio. Se añadió a `restituir_negritas.py` un `redividir()` que reescribe la
 línea del PDF a la división del maestro.
@@ -135,7 +135,7 @@ línea del PDF a la división del maestro.
 **Ojo con la dirección de la 'ī'.** La `ī` de `Yosvī` **es** la `i` de `iti`
 absorbida por la contracción: al deshacerla, esa letra vuelve a `iti` y sale
 de la negrita. Lo que el sutta nombra es `yosu`, no `yosv i`. Se hizo mal
-primero —`**Yosv i**ti`— y Angel lo corrigió.
+primero —`**Yosv i**ti`— y IEBH lo corrigió.
 
 ### Lo que se arregló
 
@@ -148,7 +148,7 @@ primero —`**Yosv i**ti`— y Angel lo corrigió.
   Además hacía **fallar la reconstrucción** de `restituir_negritas.py`, que
   quedó otra vez en OK al corregirlo.
 
-### §66, que es lo que Angel preguntaba: **resuelto** en `b426955`
+### §66, que es lo que IEBH preguntaba: **resuelto** en `b426955`
 
 *(Este apartado se titulaba «Lo que NO se arregló: §66» y daba 30 lemas
 pendientes y dos bloqueos vivos. Lo escribí antes del último commit. Lo que
@@ -192,7 +192,7 @@ pendiente.
 
 1. **Unificar `Xsv ti` → `Xsv iti`: HECHO.** Eran **doce**, no trece —§88 ×2,
    §89, §92, §93, §96, §97, §127, §132, §133, §147, §155—; §222 ya lo había
-   arreglado `b426955`. Angel lo decidió al abrir la sesión 24.
+   arreglado `b426955`. El IEBH lo decidió al abrir la sesión 24.
 
    El maestro tenía ahí una forma que no es ni la de Nandisena (`Yosvī ti`) ni
    la decidida (`Yosv iti`): le falta la `i` entera, y así **no se puede leer**
@@ -249,7 +249,7 @@ pendiente.
 ### Cerrado
 
 - Las quince citas del §6.1 de la 22: doce puestas, tres explicadas arriba.
-- **El color de la negrita de los ejemplos**: Angel preguntó si convenía
+- **El color de la negrita de los ejemplos**: el IEBH preguntó si convenía
   darles también oropimente. **No.** El amarillo entró por un problema
   óptico concreto —irradiación, Gentium sin peso intermedio, y lo marcado
   suele ser una sola letra—, y en las listas de ejemplos la negrita son
@@ -262,7 +262,7 @@ pendiente.
 
 - **Ninguna orden de git desde el sandbox, ni siquiera `status`.** Leer
   `.git/refs/heads/main`, `.git/logs/HEAD` y `.git/index` como archivos.
-- **Con Angel se habla en inglés**; el producto —sitio, mensajes de commit,
+- **Con IEBH se habla en inglés**; el producto —sitio, mensajes de commit,
   comentarios del código, estos briefings— va en español. Se me olvidó a
   mitad de la sesión y tuvo que recordármelo.
 - **Los maestros de los capítulos 2 y 3 están en `docs/`**, no en
@@ -275,7 +275,7 @@ pendiente.
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta.
 - **Proponer y verificar, nunca afirmar.** Las dos veces que esta sesión se
   salió de ahí —la colocación a final de frase, la negrita comiéndose la
-  `i`— las cazó Angel, no la máquina.
+  `i`— las cazó IEBH, no la máquina.
 - **El briefing se escribe cuando ya no se va a tocar nada más.** `CLAUDE.md`
   pide que esté escrito y guardado antes de cerrar; éste lo estuvo *demasiado*
   antes, y dio por abierto lo que el commit siguiente cerró. Un briefing que

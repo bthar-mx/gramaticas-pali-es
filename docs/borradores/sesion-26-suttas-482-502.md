@@ -484,7 +484,7 @@ La primera cambia la palabra; la segunda es tipográfica.
 6. **§496.** Su inglés traduce sólo «Who are you Sir?», sin dar la
    correspondencia palabra a palabra que sí da en otros suttas. Se
    tradujo «¿quién eres tú, señor?». *Mārisa* es tratamiento entre
-   iguales, más «amigo» que «señor»; Thitzana lo glosa «friend». **Angel
+   iguales, más «amigo» que «señor»; Thitzana lo glosa «friend». **el IEBH
    decide.**
 7. **§499 y §500.** Su inglés agrupa «(I) give (dajjāmi, dadāmi)» y «(he)
    should give (dajjeyya, dadeyya)» —es decir, cruza las dos parejas del
@@ -648,7 +648,7 @@ interior, §3.2) y la de §483 («M.i,» sin espacio, §1).
   los textos canónicos —dato que explica por qué Nandisena no les pone
   referencia y sí se la pone a los contraejemplos—.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **La errata de §483: «kāriye» → «kārite».** Título, inglés, Pind y
    Thitzana, los cuatro contra ella.

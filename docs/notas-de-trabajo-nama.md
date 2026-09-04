@@ -10,7 +10,7 @@ agosto, 22:09). Esto conserva lo que **no** pasó al capítulo publicado.*
 `NOTAS DE TRABAJO (no forman parte de la traducción)` con material que el
 capítulo, por ser texto limpio, no podía recoger. Casi todo se resolvió y se
 aplicó antes de borrarlos —está comprobado abajo—, pero **una parte seguía
-esperando decisión de Angel, y al borrarse los archivos esa decisión dejó de
+esperando decisión del IEBH, y al borrarse los archivos esa decisión dejó de
 poder tomarse sin que nadie se enterara.** Ahora está bajo control de versiones.
 
 ---
@@ -19,8 +19,8 @@ poder tomarse sin que nadie se enterara.** Ahora está bajo control de versiones
 
 ### 1.1 Material de Thitzana ofrecido y NO incluido
 
-Diecisiete apartados que se ofrecieron a Angel y quedaron fuera, marcados en su
-día como **«recuperable si Angel lo quiere»**. No constan en ningún otro sitio
+Diecisiete apartados que se ofrecieron al IEBH y quedaron fuera, marcados en su
+día como **«recuperable si IEBH lo quiere»**. No constan en ningún otro sitio
 del proyecto. Si se incorpora algo de aquí, **se señala como de Thitzana**,
 según la regla de siempre.
 
@@ -107,7 +107,7 @@ niccadīpana— **están todos** en el glosario.
 ### 1.4 Decisiones marcadas «Confirmar» cuya respuesta no consta
 
 Se aplicaron en el texto, pero en los borradores seguían pidiendo
-confirmación expresa. Si Angel las dio, no quedó escrito:
+confirmación expresa. Si IEBH las dio, no quedó escrito:
 
 - **§243.** Nandisena escribe «‘si’ is elided by §220» aunque ‘si’ ya recibió
   el nombre ‘ga’; en §220 su propio desglose dice «‘ga’ is elided». Se conservó
@@ -116,7 +116,7 @@ confirmación expresa. Si Angel las dio, no quedó escrito:
   operación. Confirmar fórmula.
 - **§270, attanā.** La sustitución smā → nā la prescribe §214 directamente; se
   citó §270 con «véase también §214». Confirmar.
-- **§204, notas al pie 63 y 64.** La 64 repite en contenido la 62 que Angel
+- **§204, notas al pie 63 y 64.** La 64 repite en contenido la 62 que IEBH
   suprimió en §203; la 63 es información nueva. Decidir si se conservan una,
   ambas o ninguna.
 - **Cierre de capítulo.** «Termina el capítulo de Nāma.» (*Nāmakappo

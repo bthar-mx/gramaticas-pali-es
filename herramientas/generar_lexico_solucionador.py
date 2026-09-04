@@ -55,7 +55,7 @@ def nombre(letra):
 def main():
     d = json.load(open(CORPUS, encoding="utf-8"))
     # Cada fragmento lleva [forma, cuenta] y, desde el testigo del DPD
-    # (decisión de Angel, 2026-08-28), un tercer campo `1` cuando la forma
+    # (decisión del IEBH, 2026-08-28), un tercer campo `1` cuando la forma
     # figura en el diccionario. El léxico publicado es la UNIÓN canon ∪ DPD:
     # el DPD amplía el filtro de candidatos y da la señal de «no figura en
     # el diccionario»; la cuenta (canon) sigue arbitrando la señal de

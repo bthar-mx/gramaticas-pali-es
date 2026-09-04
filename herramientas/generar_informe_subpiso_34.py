@@ -50,7 +50,7 @@ Son CANDIDATAS que el informe prepara; no se aplican a nada.
 
 1. **El DPD calla sobre jātimaraṇā y sobre vedhamānehi.** El testigo no
    puede adjudicar los dos casos que motivaron el piso; los adjudicó el
-   juicio de Angel, y sigue haciendo falta.
+   juicio del IEBH, y sigue haciendo falta.
 2. **La cuenta no cuadra con el briefing 36 §3**, que da 385 afirmaciones
    sin piso donde aquí salen 441 (sin contar las conocidas). Queda SIN
    RECONCILIAR. La causa probable es la precedencia entre patrones —dentro
@@ -328,7 +328,7 @@ def main():
     w("## Dos límites de este informe\n")
     w("1. **El DPD calla sobre jātimaraṇā y sobre vedhamānehi.** El testigo "
       "no adjudica los dos casos que motivaron el piso; los adjudicó el "
-      "juicio de Angel, y sigue haciendo falta. La correcta que el piso "
+      "juicio del IEBH, y sigue haciendo falta. La correcta que el piso "
       "silencia y el testigo confirma es tvamasi = tvaṃ + asi. **Enmienda "
       "del IEBH (2026-08-30):** ekamante, que se citaba junto a ella como "
       "segunda correcta silenciada, **es compuesta** — ahí el piso acierta, "

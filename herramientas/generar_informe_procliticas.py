@@ -51,7 +51,7 @@ contrastan una a una con lo que el mecanismo habría dicho: ésa es la
 medición previa.
 
 El informe PREPARA; no adjudica nada. La regla, el puñado de primeras
-voces, su grado y sus resguardos los firma Angel. Una forma puede
+voces, su grado y sus resguardos los firma IEBH. Una forma puede
 aparecer también en el informe de familias por segunda voz (ceva está
 aquí por «ca + eva» y allá en la familia «eva», donde el patrón de
 segunda voz callaba por tres bases): son cortes distintos del mismo
@@ -252,7 +252,7 @@ def main():
       "del canon; puñado medido: {1}. Banco, casos y formas ya afirmadas "
       "por una autoridad, descontados de la tabla y contrastados aparte en "
       "la medición. Este informe PREPARA la firma; no adjudica nada: la "
-      "regla, el puñado, su grado y sus resguardos los firma Angel.*\n"
+      "regla, el puñado, su grado y sus resguardos los firma IEBH.*\n"
       .format(num(a.n), ", ".join(primas)))
     w("**La clase.** Primera voz proclítica ante vocal: cetā = ca + etā, "
       "netaṃ = na + etaṃ, svāyaṃ = so + ayaṃ, yvāyaṃ = yo + ayaṃ. Los "

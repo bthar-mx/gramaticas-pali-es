@@ -9,7 +9,7 @@ capítulo 3 queda en el chat de la sesión 12, que sigue abierto.***
 
 ---
 
-## 1. DIVISIÓN DEL TRABAJO ENTRE DOS CHATS (decisión de Angel)
+## 1. DIVISIÓN DEL TRABAJO ENTRE DOS CHATS (decisión del IEBH)
 
 - **Chat de la sesión 12 (abierto):** ahí se hará, más adelante, la revisión
   del español del capítulo 3 y sus pasos de publicación. Ese chat conserva
@@ -27,14 +27,14 @@ capítulo 3 queda en el chat de la sesión 12, que sigue abierto.***
 - Tres borradores de origen: `sesion-11-suttas-271-285.md`, `-286-300.md`,
   `-301-315.md`, cada uno con sus NOTAS DE TRABAJO (erratas propuestas,
   DUDAs, variantes de Pind, referencias retiradas, glosario propuesto).
-- **Pendiente de Angel (en el chat viejo):** revisión del español; fallo de
+- **Pendiente del IEBH (en el chat viejo):** revisión del español; fallo de
   erratas y DUDAs; fórmulas de cierre del capítulo; después, pasos de
   publicación de `CLAUDE.md` (incluida la regex para «88, 308»).
 
 ## 3. CAPÍTULO 4: FUENTES Y LOCALIZACIONES EXACTAS
 
 - **Base:** `4 - Samāsa-Kaccāyana.md` (carpeta de conocimiento; subido por
-  Angel al cierre de la sesión 12). 707 líneas. **§316 empieza en la línea
+  IEBH al cierre de la sesión 12). 707 líneas. **§316 empieza en la línea
   9; §316–§343 = 28 suttas, un solo kaṇḍa** (el *séptimo* del Nāma:
   Samāsa-kappa). **17 notas al pie** ([^1]–[^17]) al final del archivo.
   Mismo formato que el del Kāraka: encabezado `**NNN\. RR\. Título** (Sad)`,
@@ -83,17 +83,17 @@ capítulo 3 queda en el chat de la sesión 12, que sigue abierto.***
   «compuesto relativo»; dvanda/dvandaṭṭha = «compuesto copulativo» / «en un
   compuesto copulativo»; alutta-samāsa = «compuesto con [inflexión] no
   elidida»; upapada = «miembro precedente».
-- **Por fijar con Angel al empezar** (proponer, no improvisar): samāsa,
+- **Por fijar con IEBH al empezar** (proponer, no improvisar): samāsa,
   tappurisa, kammadhāraya, digu, abyayībhāvo, tulyādhikaraṇa,
   aññapadattha — ¿se dejan sin traducir con glosa, como los kārakas?
   Consultar `comun/glosario.md` antes.
-- **Bloque «Ejemplos:»:** en el capítulo 3, Angel pidió el kāraka del
+- **Bloque «Ejemplos:»:** en el capítulo 3, IEBH pidió el kāraka del
   ejemplo en **negrita**. Para el capítulo 4 el análogo natural sería
-  resaltar el compuesto (o sus miembros). **Preguntar a Angel qué quiere
+  resaltar el compuesto (o sus miembros). **Preguntar al IEBH qué quiere
   en negrita antes de la primera tanda.**
-- Trabajo en tandas sin aprobación sutta a sutta; Angel revisa el español
+- Trabajo en tandas sin aprobación sutta a sutta; IEBH revisa el español
   al final del capítulo. Proponer la partición de las 28 + §328 grande
-  (p. ej. §316–§327, §328, §329–§343) y que Angel decida.
+  (p. ej. §316–§327, §328, §329–§343) y que IEBH decida.
 - Conversación de trabajo en inglés; traducción en español formal.
 - Borradores del capítulo 4 en `docs/borradores/sesion-13-suttas-NNN-NNN.md`.
 
@@ -107,7 +107,7 @@ capítulo 3 queda en el chat de la sesión 12, que sigue abierto.***
 3. Abrir `4 - Samāsa-Kaccāyana.md` y leer §316–§320 para calibrar el
    formato del OCR; localizar los mismos suttas en Pind (desde su 318,
    línea ~3507) y Thitzana (línea 14305 ss.).
-4. Plantear a Angel las preguntas de la sección 5 (negrita de los ejemplos,
+4. Plantear al IEBH las preguntas de la sección 5 (negrita de los ejemplos,
    términos de samāsa, partición en tandas) y empezar con **§316. 331.
    Nāmānaṃ samāso yuttattho (675)**.
 

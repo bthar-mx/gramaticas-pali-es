@@ -553,7 +553,7 @@ junto a la «M. i, 141, 143» del capítulo 6 (briefing 26 §7.8). §610,
   numeración), con la fórmula «Kibbidhānasuttaṁ niṭṭhitaṁ» tras su
   §623 en la sección romanizada.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **La errata pāḷi de §612** (lema «Ḍhakāre» ausente) y el doble
    espacio de §618.

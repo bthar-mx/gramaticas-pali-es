@@ -1,6 +1,6 @@
 # La familia de §34 con segunda voz corriente — la clase de «idamavoca»
 
-*Generado por `herramientas/generar_informe_niggahita_m.py` — modo de la página (solo-canon + dpd-filtro), las 5.000 formas más frecuentes del canon; banco, casos y formas ya afirmadas por una autoridad, descontados de la tabla y contrastados aparte en la medición. Este informe PREPARA la firma; no adjudica nada: la regla, su grado y sus resguardos los firma Angel.*
+*Generado por `herramientas/generar_informe_niggahita_m.py` — modo de la página (solo-canon + dpd-filtro), las 5.000 formas más frecuentes del canon; banco, casos y formas ya afirmadas por una autoridad, descontados de la tabla y contrastados aparte en la medición. Este informe PREPARA la firma; no adjudica nada: la regla, su grado y sus resguardos los firma IEBH.*
 
 **La clase.** Niggahīta → m ante vocal (§34), con la segunda voz corriente: idamavoca = idaṃ + avoca, kimahaṃ = kiṃ + ahaṃ. Hoy sólo la ven los casos adjudicados. Cuenta como lectura de la clase la verificada cuya superficie es exactamente base[:-1] + «m» + segunda, con las dos voces atestiguadas. El DPD figura como TESTIGO (su descomposición publicada, cotejada), nunca como autoridad.
 

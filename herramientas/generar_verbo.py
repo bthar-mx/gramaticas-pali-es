@@ -10,7 +10,7 @@ Junta cuatro cosas:
   recursos/verbo/plantilla.html      maquetado y lógica
   recursos/verbo/verbo.json          el documento «Verbo» de Nandisena
   recursos/verbo/diapositivas.json   las escaleras de las presentaciones
-  herramientas/escaleras_verbo.py    las decisiones de Angel, en un sitio
+  herramientas/escaleras_verbo.py    las decisiones del IEBH, en un sitio
 
 y escribe site/recursos/verbo/index.html.
 

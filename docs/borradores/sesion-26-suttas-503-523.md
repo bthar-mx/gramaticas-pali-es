@@ -580,7 +580,7 @@ tres fuentes independientes cada una.
    «hiyyatanī (imperfect)»—. **Es el único sitio del capítulo donde
    Nandisena los glosa**, y contradice el criterio de la primera tanda
    (§3.2 de aquélla), donde se decidió no glosarlos porque él no lo
-   hace. Se tradujo la nota tal cual, con sus glosas. **Angel decide** si
+   hace. Se tradujo la nota tal cual, con sus glosas. **el IEBH decide** si
    eso reabre la cuestión de glosarlos también en §423–§430. Nótese que
    su «hiyyatanī» va aquí con una sola ‘y’ y que llama «potential» a la
    sattamī, distinto de Thitzana.
@@ -732,7 +732,7 @@ conversión. **«DAA.» (§522) es sigla nueva**, ya señalada por la sesión
 - Su nota a §523 sobre el alcance de «kārita».
 - Su segunda traducción del verso final.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las dos erratas pāḷi de la tanda**: §509 «Ṇā» → «Ñā» (gemela de la
    de §470) y §519 «ākārāgamo» → «akārāgamo».
@@ -753,7 +753,7 @@ conversión. **«DAA.» (§522) es sigla nueva**, ya señalada por la sesión
 
 Las seis tandas cubren los 118 suttas, §406–§523. Con el capítulo
 traducido en borrador, el paso «Capítulo nuevo: qué hace falta» de
-`CLAUDE.md` queda **entero por delante** y **después** de que Angel
+`CLAUDE.md` queda **entero por delante** y **después** de que IEBH
 revise:
 
 1. El markdown definitivo en `kaccayana/06-akhyata-kappa.md`, refundiendo

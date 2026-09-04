@@ -394,7 +394,7 @@ Ejemplos:
 * Mathurāya āgato **māthuro** (venido de Mathurā).
 * Kattikāya niyutto māso **Kattiko** (el mes en conjunción con la constelación *Kattikā*). Así: **Māgasiro**, **Phusso**, **Māgho**, **Phagguno**, **Citto**, **Vesākho**, **Jeṭṭho**, **Āsaḷho**, **Sāvaṇo**, **Bhaddo**, **Assayujo**.
 
-[Verso:] Cuando hay un sufijo con la [letra] indicadora ‘ṇ’ (paccaye saṇakārake), no (na) hay fortalecimiento (vuddhi) de “nīla” (azul), “pīta” (amarillo) y otros (nīlapītādo); [se conserva] la letra ‘ph’ de la palabra “phussa”, y de “sirasa” se debe decir (vade) “siro” [como en Māgasiro].<!-- DUDA: Nandisena traduce «one should not say (na vade) “sirasa” (sirasaṃ) of “siro”», arrastrando el «na» del primer pāda también a «vade» e invirtiendo qué forma se dice. El pāḷi «“siro” ti sirasaṃ vade» parece decir más bien que “sirasa” se enuncia como “siro”. Se traduce el sentido (Māgasiro, no Māgasirasa), que es el mismo en ambas lecturas, pero la construcción queda por confirmar con el PDF y con Angel. -->
+[Verso:] Cuando hay un sufijo con la [letra] indicadora ‘ṇ’ (paccaye saṇakārake), no (na) hay fortalecimiento (vuddhi) de “nīla” (azul), “pīta” (amarillo) y otros (nīlapītādo); [se conserva] la letra ‘ph’ de la palabra “phussa”, y de “sirasa” se debe decir (vade) “siro” [como en Māgasiro].<!-- DUDA: Nandisena traduce «one should not say (na vade) “sirasa” (sirasaṃ) of “siro”», arrastrando el «na» del primer pāda también a «vade» e invirtiendo qué forma se dice. El pāḷi «“siro” ti sirasaṃ vade» parece decir más bien que “sirasa” se enuncia como “siro”. Se traduce el sentido (Māgasiro, no Māgasirasa), que es el mismo en ambas lecturas, pero la construcción queda por confirmar con el PDF y con IEBH. -->
 
 * Sikkhānaṃ samūho **sikkho** (el conjunto de entrenamientos). Bhikkhānaṃ samūho **bhikkho** (el conjunto de comida de limosna). Así: **kāpoto** (el conjunto de palomas), **māyūro** (el conjunto de pavos reales), **kokilo** (el conjunto de cucos).
 * Buddho assa devatā **buddho** (aquel cuya deidad es el Buddha). Así: **bhaddo**, **māro**, **māhindo**, **vessavaṇo**, **yāmo**, **somo**, **nārāyaṇo**.
@@ -730,7 +730,7 @@ Ejemplos:
 | §353 (inglés) | «kappino» | **kappimo** | Su propio pāḷi dice «kappimo»; el inglés cambia la ‘m’ |
 | §360 (vutti) | «**ttana**paccaya hoti» | **ttana**paccayo hoti | Concordancia; cf. todos los demás «paccayo hoti» |
 
-Las cuatro primeras están en el cuerpo con la lectura literal; se corrigen sólo si Angel lo aprueba (y las referencias van ya normalizadas en la tabla del §4 de estas notas, señaladas allí).
+Las cuatro primeras están en el cuerpo con la lectura literal; se corrigen sólo si IEBH lo aprueba (y las referencias van ya normalizadas en la tabla del §4 de estas notas, señaladas allí).
 
 ### 2. Divergencias del inglés resueltas desde el pāḷi
 
@@ -836,7 +836,7 @@ Las cuatro primeras están en el cuerpo con la lectura literal; se corrigen sól
 
 - *apacca* = «descendiente» (todo el primer tramo del capítulo).
 - *gottagaṇa* = «grupo de clanes» (§345, §346).
-- *samūha* = «conjunto» (§352, §354, §355). **Ojo:** *samuccaya* ya está propuesto como «colección» en el borrador del Samāsa (sesión 13 §6); distinguirlos evita que dos términos técnicos compartan traducción. Angel decide.
+- *samūha* = «conjunto» (§352, §354, §355). **Ojo:** *samuccaya* ya está propuesto como «colección» en el borrador del Samāsa (sesión 13 §6); distinguirlos evita que dos términos técnicos compartan traducción. El IEBH decide.
 - *sippa* = «destreza» (§351; «skill» en Nandisena).
 - *bhaṇḍa* = «mercancía» (§351).
 - *jīvikā* = «sustento» (§351).
@@ -858,7 +858,7 @@ Las cuatro primeras están en el cuerpo con la lectura literal; se corrigen sól
 - **§344–§363:** sus «Summary» didácticos por sutta, y las glosas inglesas de cada nombre propio (quién era cada clan).
 - **§359:** su desglose de *tabbahula* (ta + bahula) con la geminación de ‘b’.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. Las cuatro erratas de §1 (cuerpo literal ↔ corrección).
 2. La DUDA del verso de §352.

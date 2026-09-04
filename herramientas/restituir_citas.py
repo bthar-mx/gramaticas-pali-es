@@ -66,7 +66,7 @@ RE_HDR_ESP = re.compile(r'^\*\*(\d{2,3})\\\.\s')
 RE_PALABRA = re.compile(r"[^\s;,.!?()\[\]]+")
 
 
-# Erratas de la edición base que el español ya trae corregidas (Angel,
+# Erratas de la edición base que el español ya trae corregidas (el IEBH,
 # sesión 22). No se corrige nada: se le enseñan al emparejador para que la
 # cita encuentre su sitio pese a la errata.
 VARIANTES = {

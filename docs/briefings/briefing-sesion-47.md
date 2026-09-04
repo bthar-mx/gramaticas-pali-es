@@ -34,7 +34,7 @@ kam-»: **la 1125 empieza por el kammadhāraya**.
 
 ### 2.1 «vicchā» va con i BREVE, y la lección es general
 
-Angel lo dijo así, y tenía razón: **el lema es vicchā con i**. La transcripción
+El IEBH lo dijo así, y tenía razón: **el lema es vicchā con i**. La transcripción
 había leído «vīcchā». El error estaba en dos sitios y los dos van corregidos:
 
 - `p1120.json` — **vicchāyoge** (4.3), antes «vīcchāyoge»
@@ -93,7 +93,7 @@ breve y un macrón se distinguen bien; sobre la `i`, no.
   `asukhuccāraṇa`, con **kh simple**. Eso respalda que el `sukkhuccāraṇatthaṃ`
   con kkh de la p. 1108 —ya marcado «por cotejar» en la sesión 46— es errata de
   la edición y no una forma alternativa. **Corregirla sigue siendo decisión de
-  Angel**; la ficha de 1108 no se ha tocado.
+  IEBH**; la ficha de 1108 no se ha tocado.
 - **kammappavacanīya**: Smith nombra **tres** (pati, pari, abhi); Nandisena,
   **cuatro** (pari, pati, anu, abhi). Anotado en las dos fichas (4.1 y 4.3).
 - **`ns`**: en 5.1.0 (p. 1120), tras `antojappana`, Smith pone un «ns» sin
@@ -190,14 +190,14 @@ recortar, en vez de tantear coordenadas.
    se ha vuelto a correr**, y no debe correrse hasta el final.
 2. **Repasar las ī de las páginas 1105-1115** con el criterio de §2.1.
 3. **La tarjeta de `/recursos/`**: la página existe y no está enlazada. Falta el
-   visto bueno de Angel (`herramientas/generar_indices.py`, y su copia inglesa).
+   visto bueno del IEBH (`herramientas/generar_indices.py`, y su copia inglesa).
 4. **`conspectus.json` dice `"estado": "piloto — pp. 1105-1108"`**, que está
    viejo. No estorba —el generador calcula el estado real y lo sobreescribe en
    la salida— pero conviene ponerlo al día.
-5. Las decisiones de Angel que siguen abiertas desde la sesión 46: **lahu**
+5. Las decisiones del IEBH que siguen abiertas desde la sesión 46: **lahu**
    («leve» frente al «breve» del Diplomado), **niggahita/niggahīta**, ensanchar
    **āgama**, y las tres notas de paradigmas que dicen «con el visto bueno de
-   Angel» donde la norma pide «el IEBH».
+   IEBH» donde la norma pide «el IEBH».
 
 ---
 

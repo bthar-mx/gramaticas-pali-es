@@ -1,6 +1,6 @@
 # Veredictos de revisión — 2026-08-30 (lote hecho a mano en la sesión)
 
-*El veredicto es de Angel y se emitió el 2026-08-30 desde el modo revisión de
+*El veredicto es del IEBH y se emitió el 2026-08-30 desde el modo revisión de
 `/recursos/solucionador/`, en el archivo
 `veredictos-recibidos/2026-08-30T21-34-35-850Z-12283c58.md`, bajo la clave
 «tveva». El incorporador lo declinó con razón —«tveva» ya estaba adjudicado

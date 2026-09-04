@@ -2,7 +2,7 @@
 
 *Complementa a `briefing-sesion-05.md` (vigente para reglas y terminología) y
 `briefing-sesion-06.md`. Esta sesión hizo la revisión completa del documento
-maestro del Nāma-kappa (§52–§270) y aplicó, con aprobación expresa de Angel,
+maestro del Nāma-kappa (§52–§270) y aplicó, con aprobación expresa del IEBH,
 todas las correcciones que se listan abajo. El chat nuevo debe leer los TRES
 briefings.*
 
@@ -11,13 +11,13 @@ briefings.*
 ## 1. ESTADO AL CIERRE DE LA SESIÓN 07
 
 - **El documento maestro corregido está en `docs/2. Nāma-Kappa.md`** (en el
-  repositorio). Sustituye al .md que Angel exportó del Google Doc; 220+ líneas
+  repositorio). Sustituye al .md que IEBH exportó del Google Doc; 220+ líneas
   corregidas, verificación final limpia (0 comillas rectas, 0 superíndices
   huérfanos, 219 encabezados uniformes).
 - Las notas de trabajo de los tres borradores de la sesión 06 quedan
   **liquidadas**: cada punto fue aceptado, corregido o registrado aquí.
 - **Siguiente paso:** montar `kaccayana/02-nama-kappa.md` en el formato del
-  generador (briefing-05 §11) y resolver con Angel los conflictos del
+  generador (briefing-05 §11) y resolver con IEBH los conflictos del
   generador (ver §6).
 
 ## 2. ERRATAS NUEVAS APROBADAS (añadir a la tabla §4 del briefing-05)
@@ -36,7 +36,7 @@ briefings.*
 Ya tabuladas en sesión 06 y verificadas como aplicadas: §213, §217, §220 (so ×3),
 §234, §246, §252 (kuhiṃ), §270 (§145).
 
-## 3. CONVENCIONES FIJADAS EN ESTA SESIÓN (Angel decidió)
+## 3. CONVENCIONES FIJADAS EN ESTA SESIÓN (el IEBH decidió)
 
 1. **Encabezados de sutta SIN §** (como en el Sandhi-kappa): `**158\. 143\. …**`.
    El símbolo § se mantiene en todas las referencias dentro del texto.
@@ -78,7 +78,7 @@ Ya tabuladas en sesión 06 y verificadas como aplicadas: §213, §217, §220 (so
   confirmados.
 - **Título del documento:** «2-NĀMA-KAPPA / 2-CAPÍTULO DE NOMBRES».
 
-## 5. PENDIENTES ABIERTOS (cola de Angel)
+## 5. PENDIENTES ABIERTOS (cola del IEBH)
 
 1. **[^41] de §204** (= nota 64 de Nandisena, paráfrasis como la 62 suprimida
    en §203): candidata a supresión por el criterio de §203. **Sin decidir.**
@@ -93,7 +93,7 @@ Ya tabuladas en sesión 06 y verificadas como aplicadas: §213, §217, §220 (so
 7. Volcar el resto de la tabla 6.1 del briefing-05 a `comun/glosario.md`
    (esta sesión volcó los términos nuevos; ver abajo).
 
-## 6. MONTAJE Y VERSIÓN EN LÍNEA (decidido con Angel al cierre de la sesión)
+## 6. MONTAJE Y VERSIÓN EN LÍNEA (decidido con IEBH al cierre de la sesión)
 
 **Diseño decidido: UNA sola página** (como /kaccayana/sandhi/), optimizada:
 
@@ -116,7 +116,7 @@ definiciones al final; TRES bloques por sutta (pāḷi / español / ejemplos).
 Conviene hacerla con un script (proponer y verificar: recomponer y comparar
 contra el maestro), no a mano.
 
-**Pendiente al abrir la sesión 08:** Angel adjuntará `1. Sandhi-Kappa.md`
+**Pendiente al abrir la sesión 08:** IEBH adjuntará `1. Sandhi-Kappa.md`
 (maestro del capítulo 1) para archivarlo en `docs/` junto al del Nāma
 (la carpeta de conocimiento es de solo lectura para el shell).
 

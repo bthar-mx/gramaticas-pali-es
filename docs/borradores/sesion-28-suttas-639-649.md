@@ -295,7 +295,7 @@ Y las **sólo del inglés** (corregidas en la traducción):
    corresponda», igual que en §644 y §656 (ver glosario propuesto, §6).
 3. **§641, «attendant (upāsako)»**: se siguió su inglés («asistente»),
    aunque en el resto del proyecto upāsaka es el discípulo laico.
-   Registrado por si Angel prefiere unificar.
+   Registrado por si IEBH prefiere unificar.
 
 ### 3. Zona gris (registrado por si se revisa)
 
@@ -476,7 +476,7 @@ repertorio:** «**ItA.** 278» y «**MndA.** 231» **sin volumen** (y
 - Sus notas a §647–§649: suna/taruṇa/yuva son pāṭipadikas con ‘si’
   nominativo, no raíces.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las cuatro erratas pāḷi del §1** (ti de §639, yathasaṅkhyaṃ ×2,
    akarāṇī, suṇatī) y el paréntesis doble de §643.

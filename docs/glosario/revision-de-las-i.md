@@ -1,8 +1,8 @@
-# La revisión de las ī sobre el ejemplar de Angel
+# La revisión de las ī sobre el ejemplar del IEBH
 
 *Sesión 53. Es el punto 4 del §9 del briefing 52. **Ninguna ficha se ha
 tocado.** Lo que sigue es lo que se ve en la plancha, con su control, para que
-Angel decida caso por caso.*
+El IEBH decida caso por caso.*
 
 ---
 
@@ -13,7 +13,7 @@ una ī: a 400 dpi los dos signos ocupan el mismo blanco. De ahí la regla de la
 sesión 47 —«donde la imagen no decide, decide la lengua»— y de ahí las dudas
 que varias fichas dejaron abiertas *expresamente para cotejar sobre papel*.
 
-El ejemplar de Angel sí decide. Extraído con
+El ejemplar del IEBH sí decide. Extraído con
 
     pdfimages -j -f N -l N recursos/saddaniti/conspectus-ejemplar-angel.pdf salida
 
@@ -22,7 +22,7 @@ El ejemplar de Angel sí decide. Extraído con
 redondo y se apoya sobre la letra; el macrón es una barra horizontal plana que
 la desborda por los dos lados.**
 
-La regla que se ha seguido, que es la de Angel: **una lectura sólo se afirma si
+La regla que se ha seguido, que es la del IEBH: **una lectura sólo se afirma si
 hay control en la MISMA página** —una i breve conocida y una ī larga conocida,
 en el mismo cuerpo de letra—. Sin control, no se afirma. Las anomalías de Smith
 se miden contra su propia norma, no contra la gramática.
@@ -114,7 +114,7 @@ El recuento queda así:
 | Diplomado en Pāḷi del IEBH (Dr. Aleix Ruiz-Falqués) | **niggahīta** |
 | `comun/glosario.md` | niggahita |
 
-Tres a uno, y las tres con macrón. **La decisión sigue siendo de Angel**
+Tres a uno, y las tres con macrón. **La decisión sigue siendo del IEBH**
 (briefing 52 §9.9), pero ya no está repartida.
 
 ### 2.5 `vīcchā` y `ā̆nupubbī` — **confirmación independiente, no hallazgo**
@@ -151,7 +151,7 @@ ficha AVISA de que no está segura. Aquí no hay aviso: la ficha afirma una
 lectura que la plancha no da, y no queda rastro de que se haya decidido nada.
 Va contra la regla de `CLAUDE.md`: «Nunca añadir, quitar ni cambiar nada más
 allá de lo que da estrictamente la edición base sin avisar explícitamente y
-dejar que Angel decida.»
+dejar que IEBH decida.»
 
 Nótese además que **Smith no es consistente consigo mismo**: en 5.2.1 (p. 1124)
 imprime `samīpattha` CON macrón —la propia ficha de `ănupubbī` lo usa como
@@ -190,7 +190,7 @@ páginas más.
 
 Eso no es un reproche a la transcripción, que en 1.878 fichas y 44 páginas es de
 una fidelidad notable. Es una consecuencia de haber trabajado sobre un escaneo
-que en este punto concreto no daba la información, y de que el ejemplar de Angel
+que en este punto concreto no daba la información, y de que el ejemplar del IEBH
 sí la dé.
 
 ---
@@ -214,7 +214,7 @@ Ocho lemas, todos con la plancha ya disponible:
 
 ## 4 bis. La colación empieza, y la p. 1105 da la segunda
 
-Angel decidió (sesión 53) **colacionar las 44 páginas**, no sólo las 31 que se
+El IEBH decidió (sesión 53) **colacionar las 44 páginas**, no sólo las 31 que se
 transcribieron a ciegas. La primera es la p. 1105, y sus 22 fichas están
 cotejadas contra la plancha.
 
@@ -230,7 +230,7 @@ cotejadas contra la plancha.
 Otra vez la ficha da la forma corriente —`pabhuti`, del sánscrito *prabhṛti*—
 donde Smith imprime otra cosa, y otra vez sin decir que se haya decidido nada.
 
-**RESUELTO (Angel, sesión 53): «akārappabhuti» es la lectura correcta.** El
+**RESUELTO (el IEBH, sesión 53): «akārappabhuti» es la lectura correcta.** El
 lema queda como estaba, la `duda` pasa a `nota` y la nota recoge lo que la
 plancha imprime, con su control. Véase el §5.6.
 
@@ -250,7 +250,7 @@ suprimido en el lema.
 *Sesión 53, segunda tanda. Método y regla, los del §0 y el §4 bis: hoja =
 página impresa − 1104, `pdfimages -j`, y **una lectura sólo se afirma si hay
 control en la misma página**. **Ninguna ficha ha cambiado de lema.** Lo que
-baila lleva `duda` y espera a Angel.*
+baila lleva `duda` y espera al IEBH.*
 
 | pág. | fichas | hallazgos | estado |
 | ---: | ---: | ---: | --- |
@@ -319,7 +319,7 @@ las tres glosas (fr, es, en).
   intercaladas en la `nota` de la ficha vecina —así se hizo con `upapatti`,
   `pacchā-attha` y `parissajana`—; aquí no están ni como ficha ni como nota.
   Cabrían en las notas de `rassa` y de `dīgha`. **No se ha añadido nada**:
-  añadir es decisión de Angel.
+  añadir es decisión del IEBH.
 - **`dūraṭṭhassa ālapana`** (1.1.2): la plancha imprime **`dūraṭṭhass' ālapane`**
   —con elisión y en locativo—, y la ficha lematiza deshaciendo las dos cosas.
   No es error, es criterio; pero conviene saber que **el criterio no es
@@ -346,7 +346,7 @@ trae **kkh** donde `sukha-` pide **kh**, y lo dejaba para cotejar. Cotejado
 sobre el ejemplar, y con el control en la línea de encima, que imprime
 `sukhuccāraṇīya` con kh simple y con ī larga: **la disparidad está en la
 edición, no en el escaneo.** La duda sigue abierta porque corregir a Smith es
-de Angel; lo que se cierra es la sospecha de que fuera artefacto.
+del IEBH; lo que se cierra es la sospecha de que fuera artefacto.
 
 ### 4 ter.5 bis La p. 1110 cierra la duda de lectura del §3 del briefing 53
 
@@ -365,7 +365,7 @@ verá al llegar a esa página.
 
 Lo delicado está en la nota de `āmantana`, que dice **«Smith confirma la
 lectura correcta: āmantana»** — que es justamente lo que Smith no hace. **La
-nota no se ha corregido**: está publicada, se le señala a Angel en la `duda`, y
+nota no se ha corregido**: está publicada, se le señala al IEBH en la `duda`, y
 qué se hace con ella lo decide él.
 
 ### 4 ter.5 ter Un tercer género de hallazgo: los signos que no son cantidad
@@ -456,7 +456,7 @@ normalizó en silencio—.
   Smith imprime `samīpamhi` y `samīpe` **con ī larga**, y `hiyyo pabhuti`
   **con i breve**, las tres en dos líneas seguidas. Es decir: la breve del
   `samipa` de la p. 1117 y la larga del `akārappabhutī` de la p. 1105 son
-  anomalías del impreso frente a su propia norma, y las dos decisiones de Angel
+  anomalías del impreso frente a su propia norma, y las dos decisiones del IEBH
   —recoger las dos lecturas allí, mantener el lema aquí— quedan respaldadas por
   el propio Smith. Las 49 fichas de la página cuadran salvo las dos del §4
   ter.5 bis.
@@ -518,7 +518,7 @@ encontrar signos perdidos, sino para desmentir los inventados.**
 
 ### 4 quater.1 `vīcchāyoge` (4.3, p. 1120): la razón por la que se fijó el lema ha dejado de valer
 
-La ficha da `vicchāyoge` con i breve, y su nota explica por qué: Angel lo
+La ficha da `vicchāyoge` con i breve, y su nota explica por qué: el IEBH lo
 corrigió porque «a 400 dpi la tilde de la i y el macrón no se distinguen con
 seguridad **en este escaneo**». En el ejemplar sí se distinguen: **Smith imprime
 `vīcchāyoge`, con Ī LARGA**, a ×5, barra plana que desborda la letra por los dos
@@ -642,9 +642,131 @@ pone. La `duda` va en `satva`.
 - **p. 1123, y el `asukhuccāraṇa` de 5.2**, con **kh simple**, que vuelve a dejar
   solo al `sukkhuccāraṇatthaṃ` de la p. 1108 (§4 ter.5).
 
+## 4 quinquies. La colación sigue por la p. 1124, y lo que se cae ahora son los paréntesis
+
+*Sesión 56. Método y regla, los mismos: hoja = página impresa − 1104,
+`pdfimages -j`, y **una lectura sólo se afirma si hay control en la misma
+página**. **Ninguna ficha ha cambiado de lema.***
+
+| pág. | fichas | hallazgos | estado |
+| ---: | ---: | ---: | --- |
+| 1124 | 38 | 3 | tres `duda` |
+| 1125 | 39 | 4 | cuatro `duda` |
+| 1126 | 33 | 3 | tres `duda` |
+| 1127 | 27 | 2 | dos `duda` |
+| 1128 | 26 | 0 | limpia |
+| 1129 | 50 | 1 (cierra media duda vieja) | una `duda` ampliada |
+
+**Van 25 páginas de 44.**
+
+### 4 quinquies.0 LO PRIMERO: el escaneo aplanaba los paréntesis angulares
+
+El hallazgo de la tanda no es de cantidad vocálica: es de **paréntesis**. En
+tres páginas seguidas —1125, 1126, 1127— la plancha imprime **ocho paréntesis
+ANGULARES ⟨ ⟩ que la transcripción dio por REDONDOS**, y en cuatro de ellos la
+nota de la ficha afirma expresamente que son redondos, «comprobado a 400 dpi»:
+
+| pág. | ficha | lo impreso | control en la misma página |
+| ---: | --- | --- | --- |
+| 1125 | `visesana` / `visessa` | ⟨visesana et visessa⟩ | «(attributif, appositionnel)», línea siguiente |
+| 1125 | `digu` | digu ⟨saṃ-khyādi⟩ | «(digutappurisa)», **misma línea, dos palabras antes** |
+| 1125 | `nicca` | ⟨vutti yeva III 10⟩ | «(5.2.2.1)», línea de encima |
+| 1125 | `bahubbīhi` | bahubbīhi ⟨aññatthe⟩ | «(γ)» y «(tag-guṇa)», líneas siguientes |
+| 1126 | `vyatihāralakkhaṇa` | ⟨vītihāre⟩ | «intermédiaire)», línea de encima |
+| 1126 | `dvanda` | dvanda ⟨cattha⟩ | «(sauf isosyllabie)», dos líneas después |
+| 1126 | `āmreḍitasamāsa` | ⟨dve, I 54⟩ | «(αα = αβ», línea siguiente |
+| 1127 | `turita` | turita ⟨sambhama⟩ | «acchar(iy)a», línea siguiente |
+
+Y el patrón de lo que sí salió bien dice dónde fallaba el escaneo: los
+angulares que encierran **texto francés largo** —⟨ennemis naturels
+niccaverin⟩ en la 1126, ⟨: casaddattha III, 23⟩ en la 1118— se transcribieron
+angulares; los que encierran **una sola voz pāḷi corta** salieron redondos. A
+400 dpi la punta de un angular de cuerpo pequeño se redondea; en el ejemplar,
+a ×3, punta y arco no se confunden.
+
+**Por qué pesa.** Por la regla de la sesión 47 §4, el angular es la marca con
+que Smith atribuye a Moggallāna. Ocho términos —visesana, visessa, saṃkhyādi,
+vutti yeva, aññatthe, vītihāre, cattha, sambhama— **han perdido esa
+atribución en la transcripción**, y en un caso el redondo dejó sin interpretar
+una cita que con el angular se interpreta sola: ⟨dve, I 54⟩ es libro y sutta
+de Moggallāna, como «III 10» y «III, 23», que era justamente lo que la nota de
+`āmreḍitasamāsa` sospechaba y no se atrevía a afirmar.
+
+**Y lo que implica hacia atrás:** las 19 páginas anteriores se colacionaron
+mirando cantidades, ṇ y signos de cantidad; **los paréntesis no se miraron
+como clase hasta la p. 1123** (`alutta⟨vibhattika⟩samāsa`, §4 quater.3). Las
+pp. 1105-1122 pueden esconder más angulares aplanados. Va al §5 como
+propuesta, no como hecho.
+
+### 4 quinquies.1 `vīcchā`, cuatro veces en tres páginas
+
+`vicchā` (5.2.1, p. 1124) y `vicchā` (5.2.5, p. 1127) llevan i breve en la
+ficha, fijada por IEBH con la misma razón que `vicchāyoge` (§4 quater.1): a
+400 dpi no se distinguía. En el ejemplar se distingue en las tres apariciones
+nuevas —dos en la p. 1124, una en la 1127—, a ×4 barra plana idéntica a la ā
+final de la propia palabra, y con control de breve en la misma línea
+(`pariccheda` en la 1124, `atisaya` en la 1127). **Cuatro apariciones, cuatro
+con ī.** Lemas sin tocar: los fijó IEBH. Se deciden con el punto 18.
+
+### 4 quinquies.2 `ā̆nupubbī` (5.2.1, p. 1124): la nota se ha quedado sin dos de sus tres apoyos
+
+La ficha da breve, `ănupubbī`, y su nota —«IMPORTANTE PARA LEER LAS BREVES DE
+SMITH»— explica las breves del Conspectus a partir de esta pareja `ănupubbī /
+anupubba`, y las extiende a `păpuṇīyate` (p. 1121) y `nănāpadānaṃ` (p. 1123).
+Pero la sesión 55 mostró que esas dos son macrones del ejemplar (§4 quater.0),
+y el ejemplar muestra aquí, a ×4, **un anceps de verdad: barra de macrón con
+la cazoleta encima**, con `anupubba` dos palabras después, sin marca, de
+control. La nota se sostiene sólo en `să-disa` (p. 1117), que sí es breve
+limpia. Lema sin tocar; va con el punto 8, el signo de anceps.
+
+### 4 quinquies.3 `upasajjanībhūta` (5.2.0, p. 1124), en una variante
+
+La variante que la ficha de `padhānatta` da como `upasajjanibhūta` la imprime
+Smith `upasajjanībhūta`, ī larga a ×4, del trazo de la ū siguiente y de la ā
+de `padhāna` dos palabras antes; control de breve dentro de la propia palabra,
+los puntos de las dos jotas. Variante sin tocar.
+
+### 4 quinquies.4 `sādhanīya-` (5.3.2.3, p. 1129): media duda vieja se cierra
+
+La duda de la ficha tenía dos partes: la partición del guión de fin de línea y
+la cantidad de la i de `sādhaniya-`. **La segunda se decide**: el ejemplar
+imprime `sādhanīya-` con ī larga, barra del mismo trazo que la ā inicial, y de
+control la i con punto de «application» en la línea de debajo. Es la forma
+corriente. La partición sigue sin decidirse: el guión está al final de línea.
+
+### 4 quinquies.5 Lo que se comprobó sin novedad
+
+- **p. 1124, lo demás**: `avyayībhāva` con ī, ⟨asaṃkhya⟩ angular bien
+  transcrito, `samīpattha` con ī (respalda §5.5), `chaṭṭhītappurisa` y
+  `sattamī-tappurisa` con ī, `dukkaramagga-` con guión y `durājānamagga` sin
+  él, `paṭhamātappurisa`, `⟨amādi⟩` angular bien transcrito, `(5.2.2.4!)` y
+  `(v. 5.2.2.3!)` con sus admiraciones.
+- **p. 1125**: `755,11—15` se lee ahora directamente y confirma lo que la nota
+  de `nicca` resolvió mirando el vol. III; `tag-guṇa` con guión; los cuatro
+  `-gabbha-` abreviados con guión final; `avadhāraṇapubbapada` con ṇ.
+- **p. 1126**: ⟨vyadhi-karaṇa-⟩ angular bien transcrito; `nānānāma` sin breve;
+  ⟨ennemis naturels niccaverin⟩ angular bien transcrito; los CORCHETES de
+  [āmreḍitasamāsa … udātta]; `yog-gaṅga` y `khudda-jantuka` partidos de línea
+  como dice la nota. La hoja está algo más floja de foco que las vecinas, pero
+  decide.
+- **p. 1127**: el `¹` volado de `hāsa`; `acchar(iy)a` con los redondos dentro;
+  «4.2. 1 Da» con ese espaciado; `guṇavācakassa`, `kiriyāpadassa`,
+  `dviruttavasena` en los casos en que están impresos; `(vācāsiliṭṭhatā …,
+  siliṭṭhaṃ vacanaṃ)` redondos.
+- **p. 1128, limpia.** Es la hoja de menor resolución de la tanda —1.656 px de
+  ancho— y no habría decidido una cantidad fina; no hizo falta: todos los
+  paréntesis son redondos y todos los lemas cuadran, incluidos `kāraṇa-pucchā`
+  con ṇ, `vinītavatthu` con ī, `(paṭhama-)paññatti` con el paréntesis pegado, y
+  las tres `… pucchā` en dos palabras.
+- **p. 1129**: los dos `‖` tras `hāra` y `naya` están impresos así, dos barras
+  verticales, y siguen sin interpretarse; `upanaya(na)` con los redondos
+  dentro; `protasis¹` y `protasis²`; `pañcāvayavaṃ vākyaṃ` y `battiṃsa
+  tantiyuttiyo` en dos palabras; `[śāstra]` con corchetes; `hetuattha` sin
+  resolver el hiato; `diṭṭhanta` con ṭṭh.
+
 ---
 
-## 5. Qué se pide a Angel
+## 5. Qué se pide al IEBH
 
 **Resuelto todo en la propia sesión 53.** Queda constancia de lo decidido:
 
@@ -662,13 +784,13 @@ pone. La `duda` va en `satva`.
    cerrada, y corregidas también las siete citas de la grafía vieja en las
    fichas vecinas. Cierra un pendiente del §9.9 del briefing 52.
 5. **`samīpa`** (p. 1117): **las dos lecturas, con su fuente.** Y con una
-   precisión de Angel que hace el control mucho más fuerte de lo que esta nota
+   precisión del IEBH que hace el control mucho más fuerte de lo que esta nota
    suponía: **`samīpattha` es `samīpa` + `attha`**, de modo que lo de la
    p. 1124 no es una palabra parecida sino el mismo morfema escrito con ī larga
    por el propio Smith.
 
 6. **`akārappabhuti`** (1.1.1, p. 1105), §4 bis: **«akārappabhuti» es la
-   lectura correcta** (Angel, sesión 53). No se le aplica el criterio de
+   lectura correcta** (el IEBH, sesión 53). No se le aplica el criterio de
    `samīpa` ni el de `guṇipada`: el lema queda con i breve, la duda se cierra y
    **la nota deja constancia de que la plancha imprime `akārappabhutī`**, con su
    control. La ī del impreso queda, pues, como anomalía suya, del género del
@@ -686,7 +808,7 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
    signo?** Va perdido dos veces en dos páginas seguidas.
 9. **Cuatro omisiones y un «(ns)»**, §§4 ter.3 y 4 ter.4: `ekamatta` y
    `dvimatta` (p. 1106), `chandadīghatā` (p. 1108) y el «(ns)» de `yamaka`. No
-   se ha añadido ni una línea; hace falta que Angel diga si entran, y como qué.
+   se ha añadido ni una línea; hace falta que IEBH diga si entran, y como qué.
 10. **`dūraṭṭhassa ālapana`** (p. 1106), §4 ter.3: la plancha da
     `dūraṭṭhass' ālapane`. Es cuestión de criterio de lematización, no de
     lectura, y el criterio no es hoy uniforme.
@@ -708,7 +830,7 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
     distinta de la que tiene en la p. 1111. Es la omisión de más peso de las
     cuatro del punto 9.
 16. **Las ocho del §4** siguen sin cotejar, y ahora entran en la colación general
-    de las 44 páginas, que es la que Angel ha pedido.
+    de las 44 páginas, que es la que IEBH ha pedido.
 
 **Y lo que añade la sesión 55 (§4 quater). Va lo primero lo que más pesa:**
 
@@ -721,7 +843,7 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
     `ā̆nupubbī`—. **Esto reabre el punto 8 y el 13 con más razón que antes:** el
     barrido de las 44 páginas ya no es sólo para encontrar lo perdido, sino para
     desmentir lo inventado.
-18. **`vīcchāyoge`** (4.3, p. 1120), §4 quater.1. **Toca un lema que Angel
+18. **`vīcchāyoge`** (4.3, p. 1120), §4 quater.1. **Toca un lema que IEBH
     fijó**, y por eso va con cuidado: se fijó breve porque el escaneo no
     decidía, y el ejemplar decide —ī larga, con la línea siguiente de control—.
     Ficha marcada, lema intacto.
@@ -741,3 +863,22 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
     la misma frase, que sí la tiene en la p. 1115; y **`casaddattha`** (p. 1118),
     angular y sólo en nota, mientras `pasajjapaṭisedha` y `pariyudāsa`, angulares
     de la misma página, sí son lema y variante. Nada creado.
+
+**Y lo que añade la sesión 56 (§4 quinquies):**
+
+23. **LOS PARÉNTESIS ANGULARES APLANADOS**, §4 quinquies.0. Ocho en tres
+    páginas (1125-1127), cuatro de ellos contra lo que la nota de la ficha
+    afirma expresamente. Cada uno es una atribución a Moggallāna perdida.
+    Tres decisiones: (a) qué se hace con las ocho fichas —campo `fr` y nota—;
+    (b) **si se vuelve sobre las pp. 1105-1122 mirando sólo paréntesis**, que
+    es un barrido rápido; (c) si con ⟨dve, I 54⟩ angular se da por resuelta la
+    cita de `āmreḍitasamāsa` como Moggallāna I 54. Se suma al punto 20.
+24. **`vīcchā` ×2 (p. 1124) y ×1 (p. 1127)**, §4 quinquies.1. Con
+    `vīcchāyoge` (punto 18), cuatro apariciones y las cuatro con ī en el
+    ejemplar. Los cuatro lemas los fijó IEBH; se deciden juntos.
+25. **`ā̆nupubbī`** (p. 1124), §4 quinquies.2. Anceps de verdad, y la nota que
+    lo explicaba como breve ha perdido dos de sus tres apoyos. Va con el punto
+    8; y pide reescribir la nota, que hoy enseña un razonamiento desmentido.
+26. **`upasajjanībhūta`** (variante de `padhānatta`, p. 1124), §4 quinquies.3,
+    y **`sādhanīya-`** (p. 1129), §4 quinquies.4: dos íes largas donde la ficha
+    tiene breve, la segunda cerrando la mitad de una duda vieja.

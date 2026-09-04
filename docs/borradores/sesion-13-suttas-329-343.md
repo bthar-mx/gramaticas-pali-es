@@ -423,7 +423,7 @@ Fin del capítulo de compuestos.
 
 [^17]: Nota al pie: Según este sutta, la terminación ‘aṃ’ puede significar cualquiera de las otras inflexiones.
 
-[^19]: Nota del traductor: El desglose sigue el título de Nandisena (“tudaṃ-jāni”, 3 voces). Thitzana desglosa [Jāyāya + tu + daṃ-jāni + patimhi = 4 voces], leyendo “tu” como partícula y ‘daṃ’ y ‘jāni’ como los sustitutos; el título de Pind imprime “jāyāya tu daṃ jāni patimhi” y su ejemplo es tudampati; el Abhidhānappadīpikā 242 conoce “dampati”, y las propias notas al pie 15 (“Daṃjānī”, K) y 16 (“Dampatī”, Sī/k) de Nandisena registran lecturas con ‘daṃ’. La vutti y el ejemplo de Nandisena (“tudaṃ jāni icc ete ādesā”; Tudaṃpatī) leen en cambio “tudaṃ” como sustituto. Angel decide.
+[^19]: Nota del traductor: El desglose sigue el título de Nandisena (“tudaṃ-jāni”, 3 voces). Thitzana desglosa [Jāyāya + tu + daṃ-jāni + patimhi = 4 voces], leyendo “tu” como partícula y ‘daṃ’ y ‘jāni’ como los sustitutos; el título de Pind imprime “jāyāya tu daṃ jāni patimhi” y su ejemplo es tudampati; el Abhidhānappadīpikā 242 conoce “dampati”, y las propias notas al pie 15 (“Daṃjānī”, K) y 16 (“Dampatī”, Sī/k) de Nandisena registran lecturas con ‘daṃ’. La vutti y el ejemplo de Nandisena (“tudaṃ jāni icc ete ādesā”; Tudaṃpatī) leen en cambio “tudaṃ” como sustituto. El IEBH decide.
 
 ---
 
@@ -436,7 +436,7 @@ Fin del capítulo de compuestos.
 | §329 (vutti) | *samucccayo* (tres c) | *samuccayo* | Su propio título; Pind |
 | §330 (nota al pie 11) | *Hentañ ca taṃ puññañ cā ti* | *Mahantañ ca…* | El pasaje que la nota comenta dice *Mahantañ*; ‘Hentañ’ no existe. Probable OCR |
 
-### 2. Desgloses con divergencia entre fuentes (Angel decide)
+### 2. Desgloses con divergencia entre fuentes (el IEBH decide)
 
 - **§331:** Thitzana cuenta **6 voces** y separa [Itthiyaṁ + bhāsitapumā +
   itthī + pumā + iva + ce]; se imprimió [Itthiyaṃ + bhāsitapuma + itthī +
@@ -476,7 +476,7 @@ Fin del capítulo de compuestos.
 - **Fórmulas de cierre (provisionales):** «Así termina el capítulo de
   compuestos, séptima sección del capítulo de nombres.» y «Fin del
   capítulo de compuestos.» Espejan las provisionales del Kāraka (sesión
-  12). **Angel decide** (pendiente también allí).
+  12). **el IEBH decide** (pendiente también allí).
 
 ### 4. Variantes de Pind registradas (no erratas; manda Nandisena)
 

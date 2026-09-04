@@ -3,7 +3,7 @@
 *Complementa a los briefings 05–19. Sesión de una sola cosa: se hizo entera la
 sección 7 bis del briefing 19 —la paleta «hoja de palma» en los tres capítulos
 y las tres páginas de índice—, con las cinco decisiones que estaban sin tomar,
-ya tomadas por Angel. No se tocó ni una forma pāḷi ni ningún tamaño de la
+ya tomadas por IEBH. No se tocó ni una forma pāḷi ni ningún tamaño de la
 escalera serif (7 ter del briefing 19, que sigue abierta).*
 
 ---
@@ -17,7 +17,7 @@ Commiteado y desplegado:
   `herramientas/generar_indices.py` y las seis páginas regeneradas.
 
 **Sin commitear al escribir esto:** la corrección de `CLAUDE.md` (sección 5) y
-este briefing. Las órdenes entregadas a Angel:
+este briefing. Las órdenes entregadas al IEBH:
 
     git add CLAUDE.md docs/briefings/briefing-sesion-20.md
     git commit -m "CLAUDE.md: pali.css, pali.js y SVG de la marca son fuente; briefing sesión 20"
@@ -145,12 +145,12 @@ y los SVG de la marca. Venía arrastrándose desde el briefing 18.
 
 Lo primero de la próxima sesión, **en este orden**:
 
-1. **Angel mira la paleta en el navegador.** Las tres cosas que la aritmética
+1. **el IEBH mira la paleta en el navegador.** Las tres cosas que la aritmética
    no puede decir: si el campo más oscuro cansa en lecturas largas, si el
    degradado radial funciona en páginas de ~35.000 px, y cómo quedan los
    titulares serif a 400 con interletraje −.03em. Lo que chirríe, se ajusta.
 2. **La escalera de tamaños serif** (7 ter del briefing 19) — decisión
-   editorial de Angel, intacta: el pāḷi queda visiblemente por debajo de su
+   editorial del IEBH, intacta: el pāḷi queda visiblemente por debajo de su
    traducción; propuesta +1 px en toda la escalera. **No tocar sin que él lo
    diga.** Falta también la captura de una glosa de dos o tres líneas para
    ver el 1.7 directamente.
@@ -160,9 +160,9 @@ Lo primero de la próxima sesión, **en este orden**:
    decidir: `mānā`, `gāmanino`, `sakkhe`, la coma de `mātūbhi`. Candidato a
    sesión entera y en limpio.
 4. URL más corta (configuración de Cloudflare; Claude puede mirar dominios
-   libres si Angel quiere).
+   libres si IEBH quiere).
 5. `recursos/nombre/`: rediseño con la paleta nueva delante — fuera de la
-   pasada de hoy por decisión de Angel.
+   pasada de hoy por decisión del IEBH.
 6. Las listas «De similar declinación»; los opcionales nunca pedidos.
 7. **El permiso de la marca (briefing 19, §8): sigue sin respuesta.** Si
    resultara que el Venerable no lo sabe, `git revert` de `776c81f` y
@@ -175,19 +175,19 @@ Lo primero de la próxima sesión, **en este orden**:
 Se redactó la versión puesta al día (14 briefings de atraso: capítulos 1–3
 completos y publicados, tipografía, paleta, reglas duras, pendientes). El
 archivo del proyecto es de sólo lectura desde Cowork, así que se le entregó a
-Angel como archivo para pegarlo en el proyecto de claude.ai. **Comprobar en
+El IEBH como archivo para pegarlo en el proyecto de claude.ai. **Comprobar en
 la próxima sesión si ya está pegado**; si no, el memory.md viejo sigue
 diciendo que el Nāma-Kappa está parado en §203, que es falso.
 
 ## 6. RECORDATORIOS QUE NO CAMBIAN
 
 - **Ninguna orden de git desde el sandbox, ni siquiera `status`** — deja un
-  `.git/index.lock` que Angel borra a mano. Estado del repo: leer
+  `.git/index.lock` que IEBH borra a mano. Estado del repo: leer
   `.git/refs/heads/main` y `.git/logs/HEAD` como texto.
 - Nada se edita dentro de `site/` salvo `pali.css`, `pali.js` y los SVG de la
   marca (ya lo dice `CLAUDE.md` desde hoy).
 - Lo tomado de Thitzana o Rūpasiddhi se señala como suyo; la flecha de
   Thitzana va al revés.
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta. Nada se añade, quita
-  ni cambia respecto de la edición base sin que Angel decida.
-- Con Angel se habla en inglés; el producto va en español.
+  ni cambia respecto de la edición base sin que IEBH decida.
+- Con IEBH se habla en inglés; el producto va en español.

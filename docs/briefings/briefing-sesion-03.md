@@ -31,7 +31,7 @@
 ## 3. REGLAS DE TRABAJO CRÍTICAS (OBLIGATORIAS)
 
 ### 3.1 Fidelidad a Nandisena
-- **NUNCA añadir, omitir o cambiar nada** más allá de lo que está estrictamente en el texto de Nandisena sin informar explícitamente a Angel y dejarle decidir.
+- **NUNCA añadir, omitir o cambiar nada** más allá de lo que está estrictamente en el texto de Nandisena sin informar explícitamente al IEBH y dejarle decidir.
 - Leer el texto de Nandisena **párrafo por párrafo, línea por línea**, antes de presentar cada sutta.
 - Si algo no está en Nandisena, informar explícitamente: *"Esto no está en Nandisena — ¿desea incluirlo?"*
 
@@ -44,7 +44,7 @@
 - **NUNCA presentar análisis morfológicos inciertos como si fueran correctos.**
 
 ### 3.4 Análisis morfológico más allá de Nandisena
-- Cuando se expande el análisis (pasos de elisión, sustitución, etc. que Nandisena no menciona), **informar siempre** a Angel.
+- Cuando se expande el análisis (pasos de elisión, sustitución, etc. que Nandisena no menciona), **informar siempre** al IEBH.
 - Nandisena suele desglosar **solo un ejemplo** por sutta; los desgloses adicionales son expansión y deben señalarse.
 
 ### 3.5 Texto pāḷi

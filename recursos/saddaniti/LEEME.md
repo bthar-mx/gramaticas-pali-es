@@ -9,7 +9,7 @@ carpeta de descargas.
 | --- | --- | --- |
 | `saddaniti-smith-NN.pdf` | el escaneo, imagen pura | **no** — `.gitignore` excluye `*.pdf` |
 | `saddaniti-smith-NN.paginas.json` | mapa hoja del escaneo → página impresa | **sí** |
-| `conspectus-ejemplar-angel.pdf` | el Conspectus fotografiado del ejemplar de Angel | **no** — y esto es un problema, ver abajo |
+| `conspectus-ejemplar-angel.pdf` | el Conspectus fotografiado del ejemplar del IEBH | **no** — y esto es un problema, ver abajo |
 
 Los PDF no viajan, como los demás PDF del repositorio. **Si hacen falta en
 otra máquina, se vuelven a bajar de archive.org** con los identificadores
@@ -33,7 +33,7 @@ el punto de la i de `pariccheda` y la barra de la i de `vīcchā` se distinguen
 en la misma línea.
 
 **PERO NO VIAJA, y a diferencia de los otros no se puede volver a bajar de
-ninguna parte**: sale del ejemplar de Angel. `.gitignore` excluye `*.pdf` y
+ninguna parte**: sale del ejemplar del IEBH. `.gitignore` excluye `*.pdf` y
 esa línea no se ha tocado —es decisión suya si quiere una excepción para este
 archivo—. Mientras tanto, existe sólo en su disco.
 
@@ -176,4 +176,4 @@ redistribuir los escaneos hay que verificarlo. Consultarlos y citarlos, sí.
 <!-- DUDA: la copia de junio que estaba en descargas con el nombre
      «…Suttamālā.pdf» es, por md5, el mismo archivo que el vol. 03
      (56034d3c734277ab6062385719d80ee5). Se dejó donde estaba; si se quiere,
-     se borra, pero borrar archivos de Angel no me toca decidirlo. -->
+     se borra, pero borrar archivos del IEBH no me toca decidirlo. -->

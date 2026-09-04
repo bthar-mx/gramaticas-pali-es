@@ -21,7 +21,7 @@ ningún archivo del capítulo 3.*
   - `docs/borradores/sesion-13-suttas-328.md` (tanda 2: §328 solo)
   - `docs/borradores/sesion-13-suttas-329-343.md` (tanda 3, con las
     fórmulas de cierre provisionales)
-- **Pendiente de Angel:** revisión del español del capítulo completo;
+- **Pendiente del IEBH:** revisión del español del capítulo completo;
   fallo de erratas, DUDAs y divergencias de desglose (§331, §339, §340);
   fórmulas de cierre (del 4 y las del 3, aún provisionales ambas);
   después, pasos de publicación de `CLAUDE.md`.
@@ -37,7 +37,7 @@ ningún archivo del capítulo 3.*
    “dvanda” (compuesto copulativo)». En prosa corrida, «en un compuesto
    copulativo» (dvande) sigue la traducción fijada. tulyādhikaraṇa y
    aññapadattha se traducen en prosa con el pāḷi entre paréntesis la
-   primera vez. **Pendiente: volcar al glosario cuando Angel revise.**
+   primera vez. **Pendiente: volcar al glosario cuando IEBH revise.**
 2. **Negrita en «Ejemplos:»: solo el compuesto resultante**, no sus
    miembros (análogo del kāraka del capítulo 3).
 3. **División en tres tandas: §316–§327 / §328 / §329–§343.**
@@ -62,7 +62,7 @@ ningún archivo del capítulo 3.*
 - **Guion+espacio del OCR unidos en el cuerpo** (registrados): título y
   vutti de §322; dos rótulos largos de §328.
 
-## 4. ERRATAS PROPUESTAS (cuerpo con lectura literal; Angel falla)
+## 4. ERRATAS PROPUESTAS (cuerpo con lectura literal; IEBH falla)
 
 Tanda 1: §317 *ākyāta*→*ākhyāta* (él es consistente; cautela), §317
 *amantandado*→*amataṃdado*, §319 *Upassagga-*→*Upasagga-*, §322
@@ -74,7 +74,7 @@ Tanda 1: §317 *ākyāta*→*ākhyāta* (él es consistente; cautela), §317
 §329 *samucccayo*→*samuccayo*, nota 11 *Hentañ*→*Mahantañ*. Evidencias en
 las tablas §1 de cada tanda.
 
-## 5. DIVERGENCIAS DE DESGLOSE Y LECTURA (Angel decide)
+## 5. DIVERGENCIAS DE DESGLOSE Y LECTURA (el IEBH decide)
 
 - **§331:** Thitzana cuenta 6 voces separando bhāsitapumā + itthī (él
   restituye con ā); Nandisena hifena bhāsitapum’-itthī. Impreso: 6 voces
@@ -109,7 +109,7 @@ Capítulo montado: 1–19 en orden de aparición (mapeo en §0 de sus notas).
 De Nandisena: sus 1–17 (los diecisiete caen en este capítulo). Del
 traductor: la 7 (pāḷi faltante de §322) y la 17 (desglose de §339).
 
-## 8. TÉRMINOS PROPUESTOS PARA EL GLOSARIO (cuando Angel apruebe)
+## 8. TÉRMINOS PROPUESTOS PARA EL GLOSARIO (cuando IEBH apruebe)
 
 Los cinco nombres de compuesto fijados (§2.1) + yuttattha («significado
 conectado»), tulyādhikaraṇa, aññapadattha, bhāsitapuma,
@@ -127,7 +127,7 @@ más los menores listados en el §6 de cada tanda.
    notas usan la numeración antigua; manda el mapeo §0 del montado).
 3. **NO tocar** los archivos del capítulo 3 (`sesion-11-*`,
    `capitulo-03-*`): su revisión sigue en el chat de la sesión 12.
-4. Angel dirige la revisión del español y va fallando erratas, DUDAs y
+4. El IEBH dirige la revisión del español y va fallando erratas, DUDAs y
    las tres divergencias de desglose (§331, §339, §340); las decisiones
    se aplican al archivo montado.
 5. Tras la revisión: fórmulas de cierre definitivas, volcado del
@@ -142,4 +142,4 @@ más los menores listados en el §6 de cada tanda.
 ---
 
 *Preparado al cierre de la sesión 13, con el capítulo 4 completo en
-borrador. La sesión 14 empieza con la revisión de Angel.*
+borrador. La sesión 14 empieza con la revisión del IEBH.*

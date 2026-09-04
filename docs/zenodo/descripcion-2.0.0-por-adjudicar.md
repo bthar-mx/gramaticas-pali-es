@@ -1,7 +1,7 @@
 # Descripción del depósito 2.0.0 — POR ADJUDICAR
 
 *Borrador para la sesión 44. **No está incorporado a `.zenodo.json` ni a
-`CITATION.cff`.** Lo firma Angel; hasta entonces, los dos archivos siguen
+`CITATION.cff`.** Lo firma IEBH; hasta entonces, los dos archivos siguen
 diciendo lo que decían.*
 
 ## 0. Por qué se reescribe
@@ -98,7 +98,7 @@ descripción es, además, lo que un lector ve en la página del registro.
 | 262 casos adjudicados | `casos-reportados.json` | sí |
 | 2.045 junturas · 1.618 · 416 · 296 | `CLAUDE.md`, §«el estado medido del motor» | sí |
 
-## 3. Tres decisiones que son de Angel, no mías
+## 3. Tres decisiones que son del IEBH, no mías
 
 1. **El título.** El depósito se llama *«Kaccāyana-vyākaraṇa — traducción
    española»*. Sigue siendo exacto —la traducción es la espina dorsal y el DOI

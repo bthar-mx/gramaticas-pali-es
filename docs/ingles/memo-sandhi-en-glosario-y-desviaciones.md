@@ -1,7 +1,7 @@
 # Kaccāyana in English — Sandhi-Kappa pilot
 ## Working glossary and register of deviations from Bhikkhu U Nandisena's English
 
-Draft 1 · 2026-09-03. Sections 1–4 were the proposal; the decisions Angel took the same day are marked inline, and §5 is the register of what the English page actually carries.
+Draft 1 · 2026-09-03. Sections 1–4 were the proposal; the decisions IEBH took the same day are marked inline, and §5 is the register of what the English page actually carries.
 
 Sources compared: Nandisena, *Kaccāyana Byākaraṇaṃ, 1-Sandhi-Kappa* (English, 48 pp., project PDF) — "N-EN"; the published Spanish chapter, `gramaticas.buddha-dhamma.net/kaccayana/sandhi/`, version 1.4 (2026-08-20) — "ES"; the project Markdown draft `1. Sandhi-Kappa.md`; Pind, *Kaccāyana and Kaccāyanavutti* (PTS) for readings and canonical loci; Thitzana Vol. 2 for the word-count breakdowns.
 
@@ -40,9 +40,9 @@ Column "N-EN" = how Nandisena actually renders the term in the Sandhi chapter, w
 | ādesa | substitution; "is substituted by" (§17, §44) | sustitución; "se sustituye por" | substitution; "is substituted by" | — |
 | dvebhāva | doubling (§28) | duplicación | doubling | — |
 | sarūpa / asarūpa | similar / dissimilar (§13 + fn 19) | similar / disímil | similar / dissimilar | — |
-| savaṇṇa / asavaṇṇa | "dissimilar" (§14) | disímil | dissimilar | **Flag:** N-EN uses "dissimilar" for both *asarūpa* (§13) and *asavaṇṇa* (§14). ES does the same. Acceptable, but a one-line footnote distinguishing the two (*asarūpa* = different place of articulation, per N-EN fn 19; *asavaṇṇa* = of a different vowel class) may be worth adding — Angel to decide. |
+| savaṇṇa / asavaṇṇa | "dissimilar" (§14) | disímil | dissimilar | **Flag:** N-EN uses "dissimilar" for both *asarūpa* (§13) and *asavaṇṇa* (§14). ES does the same. Acceptable, but a one-line footnote distinguishing the two (*asarūpa* = different place of articulation, per N-EN fn 19; *asavaṇṇa* = of a different vowel class) may be worth adding — the IEBH to decide. |
 | pakati | original form(s) (§23–24) | forma original | original form | ES locked list has *pakati* → "natural" for later chapters; Sandhi uses "forma original". Keep N-EN here. |
-| ṭhāna / ṭhāne | "in appropriate places" (§28–29, with fn 23 explaining his preference for the plural) | en el lugar apropiado (singular) | **in the appropriate place** (singular, parallel to ES) | Decided by Angel, 2026-09-03: singular in both languages. N-EN fn 23 is kept in both, followed by the sentence that the IEBH edition keeps the Pāḷi singular. Registered deviation. |
+| ṭhāna / ṭhāne | "in appropriate places" (§28–29, with fn 23 explaining his preference for the plural) | en el lugar apropiado (singular) | **in the appropriate place** (singular, parallel to ES) | Decided by the IEBH, 2026-09-03: singular in both languages. N-EN fn 23 is kept in both, followed by the sentence that the IEBH edition keeps the Pāḷi singular. Registered deviation. |
 | saṃyoga | conjunct consonant (§41) | consonante conjunta | conjunct consonant | — |
 | upasagga, nipāta | prefixes and particles (§51) | prefijos y partículas | prefixes and particles | — |
 | suttantesu | in the Discourses (§1–2) | en los Discursos | in the Discourses | — |
@@ -79,7 +79,7 @@ Column "N-EN" = how Nandisena actually renders the term in the Sandhi chapter, w
 | antaggahaṇena | "By taking 'anta'" (§49) | por la fuerza de "anta" | By taking "anta" |
 | suttavibhāgena | "By breaking the Sutta (here, making similar suttas)" (§20) | dividiendo el sutta [en reglas similares] | By dividing the sutta [into similar rules] — *deviation, see §4.2* |
 
-*Source for this table: the Venerable's appendix to his chapter 1, supplied by Angel 2026-09-03 and kept verbatim in `docs/fuentes/nandisena-apendice-sandhi-en.md`. It is his text and goes into the EN edition as is (ṁ normalized to ṃ). The `ca` footnotes in the Spanish Sandhi (§16, §20, §22, §27, §37) derive from it.*
+*Source for this table: the Venerable's appendix to his chapter 1, supplied by the IEBH 2026-09-03 and kept verbatim in `docs/fuentes/nandisena-apendice-sandhi-en.md`. It is his text and goes into the EN edition as is (ṁ normalized to ṃ). The `ca` footnotes in the Spanish Sandhi (§16, §20, §22, §27, §37) derive from it.*
 
 ### 2.4 Formulae
 
@@ -99,7 +99,7 @@ Column "N-EN" = how Nandisena actually renders the term in the Sandhi chapter, w
 |---|---|---|---|---|
 | Jina | the Victorious One | el Victorioso | the Victorious One | — |
 | Buddha | Buddha | Buddha | Buddha | — |
-| Gaṇa | "the noble Sangha" | la noble Orden | **the noble Order** | Decided by Angel, 2026-09-03: "Order", parallel to ES. Deviation from N-EN wording, to be registered in the EN page. |
+| Gaṇa | "the noble Sangha" | la noble Orden | **the noble Order** | Decided by the IEBH, 2026-09-03: "Order", parallel to ES. Deviation from N-EN wording, to be registered in the EN page. |
 | Satthu vacana | the Word of the Teacher | la Palabra del Maestro | the Word of the Teacher | — |
 | seyya | the best (fn 3: "the nine supramundane states") | lo mejor (fn: nava lokuttaradhammā) | the best | ES fn adds the Pāḷi *nava lokuttaradhammā*; carry into EN fn. |
 
@@ -142,10 +142,10 @@ Each item states what N-EN has, what the English page would carry, and whether t
 | §51 | Pāḷi list "anupaghāto" but sequence "Anūpaghāto" | anūpaghāto (Pind: anūpaghāto [Dhp 185]) | ES ok |
 | §41 | "vidhūn' aggam iti" (twice) | **vidūn'** — Pind §38 and §41 both *vidūn' aggaṃ*; N-EN §38 itself has *vidūn'* | **ES fix** (ES copies *vidhūn'* in §41) |
 | §19 | counter-example last step "iti 'assa (ME)" | "iti 'ssa (ME)" | ES ok |
-| §31 | Pāḷi "Tan niccutaṃ" vs sequence "Tan nicuttaṃ" | niccutaṃ (both places) | ES ok. Decided by Angel 2026-09-03: the Burmese reading *niccutaṃ* (also in the Venerable's appendix), no note on PTS *nibbutaṃ*. |
+| §31 | Pāḷi "Tan niccutaṃ" vs sequence "Tan nicuttaṃ" | niccutaṃ (both places) | ES ok. Decided by the IEBH 2026-09-03: the Burmese reading *niccutaṃ* (also in the Venerable's appendix), no note on PTS *nibbutaṃ*. |
 | §32 | "paccatañ eva (§32)" | paccattañ eva | **ES fix** |
 | §31 | "Evaṅ kho: … evaṅkho (§11); evaṅkho (ME)" | last step should be "evaṅ kho (ME)" (cf. every other ME step) | **ES fix** |
-| §10 fn 14, §11 fn 16 | "See §13 for formal formation of the word" | **DUDA:** the formation is printed under Kacc. §12 (Rūp. 13). Either "§13" is the Rūpasiddhi number or a slip for §12. ES site has §13, ES draft had §12. Angel to decide; I lean §12. | pending |
+| §10 fn 14, §11 fn 16 | "See §13 for formal formation of the word" | **DUDA:** the formation is printed under Kacc. §12 (Rūp. 13). Either "§13" is the Rūpasiddhi number or a slip for §12. ES site has §13, ES draft had §12. the IEBH to decide; I lean §12. | pending |
 | §2 sutta | "Akkharā pādayo" | Akkharā p' ādayo (Pind; ES ok) | ES ok |
 | §1 vutti | "Sabbavacanānam attho" | Sabbavacanānaṃ | ES ok |
 | §9 | "ga gha ṅ;" | ga gha ṅa | ES ok |
@@ -160,13 +160,13 @@ Each item states what N-EN has, what the English page would carry, and whether t
 
 ### 3.2 Wording changes to N-EN (each one to be approved)
 
-1. **Sutta glosses.** N-EN gives deliberately telegraphic glosses that mirror the sūtra ("When a vowel, vowels elision." §12; "Long." §15; "And the previous." §16). ES expands them with brackets ("Las vocales se eliden cuando una vocal [sigue]"). **Decided by Angel, 2026-09-03: (b)** — the English glosses take the same bracketed expansions as the Spanish, for intelligibility; N-EN's words are kept and the additions go in square brackets, so the reader sees what is his and what is ours. Every expanded gloss is a registered deviation. The vutti line below the gloss stays N-EN. **Rule for the brackets (Angel, 2026-09-03; convenciones §1 bis):** a Pāḷi locative in the sutta means "follows" and an ablative means "after"; those words render the case and go **without** brackets ("When a vowel follows", "after a vowel"). Brackets are only for words the sutta does not contain (a supplied noun or verb). The Spanish Sandhi was aligned to this in §12, §31, §39, §46.
-2. §20 "By breaking the Sutta (here, making similar suttas)" → "By dividing the sutta [into similar rules]" (ES parallel). Or keep. Angel.
+1. **Sutta glosses.** N-EN gives deliberately telegraphic glosses that mirror the sūtra ("When a vowel, vowels elision." §12; "Long." §15; "And the previous." §16). ES expands them with brackets ("Las vocales se eliden cuando una vocal [sigue]"). **Decided by the IEBH, 2026-09-03: (b)** — the English glosses take the same bracketed expansions as the Spanish, for intelligibility; N-EN's words are kept and the additions go in square brackets, so the reader sees what is his and what is ours. Every expanded gloss is a registered deviation. The vutti line below the gloss stays N-EN. **Rule for the brackets (el IEBH, 2026-09-03; convenciones §1 bis):** a Pāḷi locative in the sutta means "follows" and an ablative means "after"; those words render the case and go **without** brackets ("When a vowel follows", "after a vowel"). Brackets are only for words the sutta does not contain (a supplied noun or verb). The Spanish Sandhi was aligned to this in §12, §31, §39, §46.
+2. §20 "By breaking the Sutta (here, making similar suttas)" → "By dividing the sutta [into similar rules]" (ES parallel). Or keep. El IEBH.
 3. §20, §35, §37, §41, §49: ES adds bold headers "Extensión por 'ca' (acumulación)" etc. EN adds the same headers (2.6). Pure apparatus; N-EN text under them unchanged.
 4. §12, §23, §25 etc.: N-EN lists "Examples." then bare word lists; ES adds "Ejemplos [con secuencia de formación]" and numbered steps. EN follows ES layout, N-EN steps verbatim.
-5. §32 "Tañ ñev' ettha: taṃ evettha" → "taṃ eva ettha" (ES expands the first step; clearer). Angel.
+5. §32 "Tañ ñev' ettha: taṃ evettha" → "taṃ eva ettha" (ES expands the first step; clearer). El IEBH.
 6. §27 N-EN "Sa ve. Same as before." → ES "Sa ve muni jātibhayaṃ adassi: igual que el cuarto." EN: "Sa ve muni jātibhayaṃ adassi: same as the fourth."
-7. §29 vutti: N-EN "the first and third letters become the double of the second and fourth letters [voiceless and voiced] respectively" — ES rewrote as "se duplican como [la primera-segunda y la tercera-cuarta letra]" using N-EN fn 24. Keep N-EN sentence + fn 24 in EN; the ES rewrite stays ES-only unless Angel wants them parallel.
+7. §29 vutti: N-EN "the first and third letters become the double of the second and fourth letters [voiceless and voiced] respectively" — ES rewrote as "se duplican como [la primera-segunda y la tercera-cuarta letra]" using N-EN fn 24. Keep N-EN sentence + fn 24 in EN; the ES rewrite stays ES-only unless the IEBH wants them parallel.
 8. §41 vutti "if the syllable has a conjunct consonant, it becomes single consonant" → "…it becomes a single consonant" (article only).
 9. §12 vutti fn 17 "Vowels become elided because of a vowel" — keep as N-EN's footnote.
 
@@ -175,7 +175,7 @@ Each item states what N-EN has, what the English page would carry, and whether t
 | Item | Source | Where |
 |---|---|---|
 | Word-count breakdowns "[… = N words]" on all 51 suttas | Thitzana Vol. 2 | header line |
-| Functions of *ca* footnotes: §16 (anukaḍḍhana, restrictive), §20 (samuccaya), §22 (sampiṇḍana), §27 (sampiṇḍana), §37 (anukaḍḍhana) | **Nandisena's own appendix page** at the end of his chapter 1 (applications of *ca*; *kvaci / vā / navā / vibhāsā*), per Angel 2026-09-03 — not a project addition. The page is absent from the project's PDF slice; the English original is needed for the EN edition. | fn |
+| Functions of *ca* footnotes: §16 (anukaḍḍhana, restrictive), §20 (samuccaya), §22 (sampiṇḍana), §27 (sampiṇḍana), §37 (anukaḍḍhana) | **Nandisena's own appendix page** at the end of his chapter 1 (applications of *ca*; *kvaci / vā / navā / vibhāsā*), per IEBH 2026-09-03 — not a project addition. The page is absent from the project's PDF slice; the English original is needed for the EN edition. | fn |
 | §20 fn "Debido a 'ca' en el sutta" on "también" | project | fn |
 | §1 fn: Pāḷi name *nava lokuttaradhammā* added to N-EN fn 3 | project | fn |
 | §23 fn 55 "Dh. 72 tiene 'tiṇṇo pāraṅgato jhāyī'" | project textual note | fn |
@@ -184,13 +184,13 @@ Each item states what N-EN has, what the English page would carry, and whether t
 | "Extension by…" headers | project | header |
 | Kacc./Rūp./Sadd. number tooltips | project | header |
 
-### 3.4 Omissions in ES relative to N-EN (to restore in EN; Angel to decide for ES)
+### 3.4 Omissions in ES relative to N-EN (to restore in EN; the IEBH to decide for ES)
 
 | § | N-EN content missing in ES |
 |---|---|
 | §26 | Counter-example "Upanī yati. Here the 'ī' of upanīyati does not become short." **and** N-EN fn 22 "It seems that this is not a satisfactory example." ES stops at "sāvittī chandaso". |
 | §1 fn 1 | "Suboddhuṃ (K-PTS)" — variant reading |
-| §1 fn 2 | "Vasantilaka Gāthā" — metre identification. Corrected to *vasantatilakā* in both languages (Angel, 2026-09-03; guía §5.1 quinquies). |
+| §1 fn 2 | "Vasantilaka Gāthā" — metre identification. Corrected to *vasantatilakā* in both languages (el IEBH, 2026-09-03; guía §5.1 quinquies). |
 | §7 fn 10 | "Pañcapañca-akkharavanto (K)" — variant |
 | §35 fn 31 | "Āragge (K)" — variant |
 | §51 fn 42 | "Vuttehi sarasandhīhi (K)" — variant |
@@ -216,7 +216,7 @@ N-EN cites the Burmese (Chaṭṭha Saṅgāyana) edition by **volume and page**
 
 Some 100 footnotes are affected. Additionally §11 and §31 still show "Khu. i, …" in the Pāḷi line (12 occurrences on the page), so the ES is internally mixed.
 
-**Done (Angel, 2026-09-03):** option (a). The Spanish Sandhi now carries the base edition's citations inline in the Pāḷi block, exactly as Nāma and Kāraka do (guía de estilo §5.1 sexies); the English page inherits the same. Adding verified verse numbers (Dhp 375) to the tooltip remains an open offer — ~110 lookups against Pind, not yet done.
+**Done (el IEBH, 2026-09-03):** option (a). The Spanish Sandhi now carries the base edition's citations inline in the Pāḷi block, exactly as Nāma and Kāraka do (guía de estilo §5.1 sexies); the English page inherits the same. Adding verified verse numbers (Dhp 375) to the tooltip remains an open offer — ~110 lookups against Pind, not yet done.
 
 ### 3.6 Spanish forms that depart from N-EN and Pind (ES errata, unrelated to EN but found here)
 
@@ -235,7 +235,7 @@ Some 100 footnotes are affected. Additionally §11 and §31 still show "Khu. i, 
 
 ## 4. Proposed sequence of work
 
-1. Angel rules on the open decisions: 2.1 *Gaṇa*, *ṭhāne*; 3.2 item 1 (gloss policy) and items 2, 5; 3.4 (restore variant notes in ES?); 3.5 (reference policy); 3.6 fixes to ES.
+1. El IEBH rules on the open decisions: 2.1 *Gaṇa*, *ṭhāne*; 3.2 item 1 (gloss policy) and items 2, 5; 3.4 (restore variant notes in ES?); 3.5 (reference policy); 3.6 fixes to ES.
 2. Generator: language parameter, chrome strings (2.6), `hreflang`, EN/ES button on chapter pages preserving `#sN`, `<html lang="en">`.
 3. `sandhi.en.md` built from N-EN text + apparatus, one sutta at a time, approval per sutta as for Spanish. Fast where N-EN is sound; the sequences are copy-through.
 4. Verification pass: every § in every sequence checked against the sutta it names (as done above for §51 *vijjhaggaṃ*), every ME step compared to the Pāḷi line.
@@ -249,7 +249,7 @@ Some 100 footnotes are affected. Additionally §11 and §31 still show "Khu. i, 
 
 ## 5. Register of deviations in `kaccayana/01-sandhi-kappa.en.md` as built (2026-09-03, session 45)
 
-Base: N-EN verbatim. Everything below is where the English page differs from his printed text; each item follows a decision recorded above or the Spanish edition, as Angel instructed ("where the Spanish expanded, follow the Spanish").
+Base: N-EN verbatim. Everything below is where the English page differs from his printed text; each item follows a decision recorded above or the Spanish edition, as IEBH instructed ("where the Spanish expanded, follow the Spanish").
 
 **Decided terms.** Verse (a): "the noble Sangha" → "the noble Order". §28–29 and the *ṭhāne* tooltip: "in appropriate places" → "in the appropriate place" (singular); his fn 23 kept as fn 19 with the IEBH sentence. Functions of *ca* named as in his appendix (dragging, collecting, accumulating, delimiting).
 
@@ -267,7 +267,7 @@ Base: N-EN verbatim. Everything below is where the English page differs from his
 
 ## 6. Register of deviations in `02-nama-kappa.en.md` and `03-karaka-kappa.en.md` as built (2026-09-03, session 45, second part)
 
-Same base and same rule as §5: N-EN verbatim; the Spanish master gives the structure; where the Spanish translated what N-EN left untranslated, or expanded, the English follows the Spanish. Both chapters were written whole, without sutta-by-sutta approval, as Angel authorised; **neither is reviewed**.
+Same base and same rule as §5: N-EN verbatim; the Spanish master gives the structure; where the Spanish translated what N-EN left untranslated, or expanded, the English follows the Spanish. Both chapters were written whole, without sutta-by-sutta approval, as IEBH authorised; **neither is reviewed**.
 
 ### 6.1 Nāma-Kappa (219 suttas, 75 notes)
 

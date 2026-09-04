@@ -1,4 +1,4 @@
-# BORRADOR — §211–§246, Catuttha Kaṇḍa (pendiente de aprobación de Angel)
+# BORRADOR — §211–§246, Catuttha Kaṇḍa (pendiente de aprobación del IEBH)
 
 *Sesión 06. Cuarta sección completa del Nāma-kappa. Traducido de Nandisena
 (líneas 2215–2590), cotejado con Thitzana (líneas 10097–11496) y Pind
@@ -881,7 +881,7 @@ Nota del traductor: en el desglose Nandisena escribe “by this sutta ‘a’ is
 
 # NOTAS DE TRABAJO (no forman parte de la traducción)
 
-## Erratas nuevas propuestas (para la tabla §4 del briefing; Angel decide)
+## Erratas nuevas propuestas (para la tabla §4 del briefing; IEBH decide)
 
 | Ubicación | Nandisena dice | Propuesta | Motivo |
 |---|---|---|---|
@@ -909,7 +909,7 @@ Nota del traductor: en el desglose Nandisena escribe “by this sutta ‘a’ is
    nadī. La propia nota dice que “anadādi” son palabras «en ‘u’ y ‘o’», lectura
    extraña (¿‘i’ y ‘u’?); por cotejar con el PDF.
 
-## Decisiones que corresponden a Angel
+## Decisiones que corresponden al IEBH
 
 1. **§221/§235, avadhāraṇa.** Se tradujo con la fórmula fijada «para restringir
    [el alcance de este sutta]»; Nandisena escribe “for emphasis”. Confirmar.
@@ -954,7 +954,7 @@ Nota del traductor: en el desglose Nandisena escribe “by this sutta ‘a’ is
   da solo en nota como ausentes de las versiones birmana y cingalesa. Nandisena
   §244–§246 = Pind 246–248.
 
-## Material de Thitzana ofrecido y NO incluido (recuperable si Angel lo quiere)
+## Material de Thitzana ofrecido y NO incluido (recuperable si IEBH lo quiere)
 
 - §220: nota larga sobre la invisibilidad de ‘si’ y tabla de «huellas» de las
   vibhattis.

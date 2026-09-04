@@ -93,12 +93,12 @@ el español. No existía porque **el español ya había corregido a Nandisena**:
 | §277 | bhi**kh**ave | bhikkhave |
 | §290 | sam**y**ena | samayena |
 
-Angel confirmó las tres lecturas del maestro. **No se corrigió nada**: se le
+El IEBH confirmó las tres lecturas del maestro. **No se corrigió nada**: se le
 enseñaron al emparejador (`VARIANTES` en `restituir_citas.py`).
 
 ## 3. LA NEGRITA DEL VUTTI (no estaba previsto)
 
-Angel se fijó en que Nandisena imprime en negrita, **dentro del vutti**, las
+El IEBH se fijó en que Nandisena imprime en negrita, **dentro del vutti**, las
 letras o sílabas que el propio sutta nombra:
 
     §237  Itthiyam ato āpaccayo
@@ -109,7 +109,7 @@ aforismo. **Se había perdido entera**: los `.md` de Nandisena no tienen ni
 una marca. Sobrevive sólo en los PDF, donde la negrita es una fuente aparte
 (`Times-Bold`) y `pdftohtml -xml` la devuelve etiquetada.
 
-`herramientas/restituir_negritas.py`. Angel subió los tres PDF.
+`herramientas/restituir_negritas.py`. El IEBH subió los tres PDF.
 
 | Capítulo | Tramos | Líneas rechazadas |
 | -------- | -----: | ----------------: |
@@ -192,7 +192,7 @@ Estaban marcados «por cotejar con el PDF» en
    `recursos/paradigmas/paradigmas.json` contra los suttas del Nāma.
    Sacaría las cuatro erratas sin decidir: `mānā`, `gāmanino`, `sakkhe`, la
    coma de `mātūbhi`. **Candidato a sesión entera y en limpio.**
-7. **El escaneo del Nyāsa (54 MB)**: Angel se inclina por Release, no repo.
+7. **El escaneo del Nyāsa (54 MB)**: el IEBH se inclina por Release, no repo.
    Sigue sin hacerse, y el original de 357 MB también.
 8. **`docs/fuentes/nyasa/` no está en `CLAUDE.md`.** Sigue pendiente.
 9. **`pañcamī / sattamī` no llegó a `comun/glosario.md`.**
@@ -229,4 +229,4 @@ Estaban marcados «por cotejar con el PDF» en
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta.
 - **El DOI del pie y de `CITATION.cff` es el de concepto** (`21948010`), no
   el de una versión. Resuelve siempre a la más reciente. No «corregirlo».
-- Con Angel se habla en inglés; el producto va en español.
+- Con IEBH se habla en inglés; el producto va en español.

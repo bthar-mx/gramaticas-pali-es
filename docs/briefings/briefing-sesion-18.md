@@ -113,9 +113,9 @@ para los titulares: el cambio no añade ninguna petición.
 
 ## 3. PERMISO DE LA MARCA — SIN RESOLVER
 
-Se le señaló a Angel, dos veces, que un logotipo es una marca registrada y que
+Se le señaló al IEBH, dos veces, que un logotipo es una marca registrada y que
 la licencia CC BY-NC-SA cubre el texto, no la marca; y que un logotipo en la
-cabecera se lee como «publicación del IEBH». **Angel no ha dicho si el
+cabecera se lee como «publicación del IEBH». **el IEBH no ha dicho si el
 Venerable lo sabe.** Está publicado. Si la respuesta resultara ser que no, se
 deshace con `git revert` de `776c81f` y `79ba7c3`.
 
@@ -123,12 +123,12 @@ deshace con `git revert` de `776c81f` y `79ba7c3`.
 
 Claude **no puede escribir en `.git`** desde su entorno. Peor: `git status` y
 `git add` refrescan el índice y dejan un `.git/index.lock` de cero bytes que
-tampoco puede borrar, y entonces los `git commit` de Angel fallan con «Another
+tampoco puede borrar, y entonces los `git commit` del IEBH fallan con «Another
 git process seems to be running». Pasó dos veces esta sesión.
 
 **Regla para el chat nuevo: no ejecutar ninguna orden de git desde el sandbox,
 ni siquiera `status`.** Sólo `git log` y `git show`, que no tocan el índice.
-Los commits los hace Angel; Claude le entrega las órdenes escritas. Si aparece
+Los commits los hace IEBH; Claude le entrega las órdenes escritas. Si aparece
 el bloqueo: `pgrep -l git` (los `gitstatusd` son del prompt de zsh y no
 cuentan) y luego `rm -f .git/index.lock`.
 
@@ -144,7 +144,7 @@ filtros y la búsqueda sin diacríticos siguen funcionando.
 
 Lo que jsdom **no** puede comprobar, porque no maqueta: el umbral de los
 saltos (`getBoundingClientRect` devuelve ceros) y cualquier cosa de CSS. Eso
-lo mira Angel en el navegador.
+lo mira IEBH en el navegador.
 
 Comprobación que sí conviene repetir tras cualquier cambio de plantilla:
 
@@ -158,7 +158,7 @@ en sandhi). Si cambia sin haber tocado el JSON, algo va mal.
 
 ### a) Tipografía — DECIDIDO: Gentium Book Plus
 
-**Angel ha decidido unificar todo el proyecto en Gentium Book Plus.** Noto
+**El IEBH ha decidido unificar todo el proyecto en Gentium Book Plus.** Noto
 Serif desaparece del cuerpo de texto. Es trabajo del chat siguiente y aún no
 está hecho.
 
@@ -207,7 +207,7 @@ nombre que ya tenga un CNAME.
   301 (Redirect Rule de Cloudflare, sin código), o los buscadores indexan los
   dos y reparten el peso del sitio.
 
-Quedó pendiente que Claude mire qué dominios cortos están libres, si Angel
+Quedó pendiente que Claude mire qué dominios cortos están libres, si IEBH
 quiere ese camino.
 
 ## 7. TRABAJO ABIERTO QUE VIENE DE ANTES
@@ -235,5 +235,5 @@ gordo:
   Thitzana va al revés.
 - Ante duda, `<!-- DUDA: … -->` y decirlo en voz alta.
 - Nada se añade, quita ni cambia respecto de la edición base sin avisar y sin
-  que Angel decida.
-- Con Angel se habla en inglés; el producto va en español.
+  que IEBH decida.
+- Con IEBH se habla en inglés; el producto va en español.

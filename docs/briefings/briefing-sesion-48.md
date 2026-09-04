@@ -109,7 +109,7 @@ Moggallāna es la CITA por libro y sutta —III 10, I 54, y el ⟨casaddattha II
   Aquí el punto suscrito se ve limpio a 400 dpi. En 4.2.3.2 (p. 1119) Smith
   imprimía `avadhārana` con n dental, contra la regla de la ṇ tras r, y aquella
   ficha lo dejó con `duda`. **Esta página es cotejo interno a favor de que la de
-  la 1119 sea errata de la edición.** Corregirla sigue siendo decisión de Angel;
+  la 1119 sea errata de la edición.** Corregirla sigue siendo decisión del IEBH;
   la ficha de 1119 no se ha tocado. Es el mismo tipo de hallazgo que el
   `asukhuccāraṇa` de la sesión 47.
 - **`sogatamata` con o (5.3.3.1, p. 1130)**, en la misma serie y una línea
@@ -213,7 +213,7 @@ recortadas, y las trampas saltan a la vista.
 - **La ī de `vicchā` se dejó ver.** En 5.2.5 (p. 1127), en la línea «la valeur
   distributive vicchā», el signo sobre la i es un cuadrado corto y el de la ā
   final una regla que desborda la letra, y a 400 dpi se ven uno al lado del
-  otro. Confirma lo que Angel fijó en la sesión 47. **Pero la regla general no
+  otro. Confirma lo que IEBH fijó en la sesión 47. **Pero la regla general no
   cambia:** donde la imagen no decide, decide la lengua, y se dice.
 
 ---
@@ -248,16 +248,16 @@ una lista impresa antes.
 2. **Repasar las ī de las páginas 1105-1115** con el criterio de la sesión 47.
    Sigue pendiente.
 3. **La tarjeta de `/recursos/`**: la página existe y no está enlazada. Falta el
-   visto bueno de Angel (`herramientas/generar_indices.py`, y su copia inglesa).
+   visto bueno del IEBH (`herramientas/generar_indices.py`, y su copia inglesa).
 4. **`conspectus.json`: hecho.** El campo `"estado"` decía «piloto — pp.
    1105-1108» y ahora dice «en curso — pp. 1105-1131». (El generador lo calcula
    y lo sobreescribe en la salida de todos modos.)
-5. Las decisiones de Angel que siguen abiertas: **lahu** («leve» frente al
+5. Las decisiones del IEBH que siguen abiertas: **lahu** («leve» frente al
    «breve» del Diplomado), **niggahita/niggahīta**, **ensanchar āgama** —y esta
    sesión da un argumento más: en 5.3.3.1 (p. 1130) āgama es la tradición
    transmitida, no un fonema—, el `sukkhuccāraṇatthaṃ` de la p. 1108, el
    `avadhārana` de la p. 1119, y las tres notas de paradigmas que dicen «con el
-   visto bueno de Angel» donde la norma pide «el IEBH».
+   visto bueno del IEBH» donde la norma pide «el IEBH».
 
 ---
 

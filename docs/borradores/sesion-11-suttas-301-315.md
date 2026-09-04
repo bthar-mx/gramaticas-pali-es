@@ -425,12 +425,12 @@ Fin del capítulo de los kārakas.
 - **§315, desglose:** Thitzana cuenta 3 voces porque su título trae «ca»
   («Maṇḍitu’ssukkesu tatiyā ca», como Rūpasiddhi/Saddanīti; en Pind, CeEe
   añaden *ca* y Mmd lo omite). El título de Nandisena no trae «ca», de
-  modo que el desglose impreso es de 2 voces. **Angel decide** si se
+  modo que el desglose impreso es de 2 voces. **el IEBH decide** si se
   registra en nota.
 - **Fórmulas de cierre del capítulo (provisionales):** «Así termina el
   capítulo de los kārakas, sexta sección del capítulo de nombres.» y «Fin
   del capítulo de los kārakas.» Su inglés dice «the case chapter» («el
-  capítulo de los casos»). Pendiente del briefing-11 §6.3; **Angel
+  capítulo de los casos»). Pendiente del briefing-11 §6.3; **el IEBH
   decide**.
 
 ### 3. Variantes de Pind registradas (no erratas; manda Nandisena)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 El informe de las familias que siguen en «no sabe», para firmar patrones
-en tanda (mapa de la sesión 32, punto 3; lo pidió Angel el 2026-08-28).
+en tanda (mapa de la sesión 32, punto 3; lo pidió IEBH el 2026-08-28).
 
     python3 herramientas/generar_informe_familias.py               # top 5000
     python3 herramientas/generar_informe_familias.py --n 8000
@@ -18,7 +18,7 @@ Cada forma se asigna a la familia de la SEGUNDA VOZ de sus lecturas
 verificadas de dos componentes (una forma puede caer en varias familias);
 las familias se ordenan por MASA en el canon (suma de frecuencias de sus
 formas). Para cada familia se simula qué haría el mecanismo vigente de los
-patrones —la base única atestiguada— si Angel firmara esa segunda voz:
+patrones —la base única atestiguada— si IEBH firmara esa segunda voz:
 
   · «única»   — exactamente una base atestiguada: el patrón la afirmaría.
   · «única ⚠» — única, pero la base es MENOS frecuente que la forma entera:
@@ -29,7 +29,7 @@ patrones —la base única atestiguada— si Angel firmara esa segunda voz:
   · «n bases» — varias bases atestiguadas: el patrón callaría (la unicidad
                 es la licencia).
 
-El informe PREPARA; no adjudica nada. La regla la firma Angel, con grado y
+El informe PREPARA; no adjudica nada. La regla la firma IEBH, con grado y
 resguardo si lo decide, y se incorpora a `casos-reportados.json` (patrones).
 
 Salida: docs/solucionador/familias-no-sabe.md
@@ -162,7 +162,7 @@ def main():
       "página (solo-canon + dpd-filtro), las {0} formas más frecuentes del "
       "canon; banco, casos y patrones vigentes descontados. Este informe "
       "PREPARA la firma de los próximos patrones; no adjudica nada: la regla, "
-      "su grado y su resguardo los firma Angel.*\n".format(num(a.n)))
+      "su grado y su resguardo los firma IEBH.*\n".format(num(a.n)))
     w("**Cómo leerlo.** Cada familia es una segunda voz candidata; su masa es "
       "la suma de frecuencias en el canon de las formas marcadas que ninguna "
       "autoridad afirma. «única» = el mecanismo vigente (base única "

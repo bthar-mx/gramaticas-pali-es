@@ -96,10 +96,10 @@ def fuente_de(e):
     de nadie: publicarlo sería soltar una dirección personal en un sitio
     abierto.
 
-    QUÉ SE PUBLICA (decisión de Angel, 2026-08-31: nombrar al revisor):
+    QUÉ SE PUBLICA (decisión del IEBH, 2026-08-31: nombrar al revisor):
 
       · el RÓTULO del repertorio, que el worker guarda con la entrada. El de
-        Angel es «IEBH»; el de otro revisor, el nombre que él le haya puesto.
+        IEBH es «IEBH»; el de otro revisor, el nombre que él le haya puesto.
       · si el revisor no tiene rótulo, «revisor verificado», nunca el correo.
       · sin identidad, se dice — y jamás «IEBH».
 

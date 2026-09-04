@@ -8,7 +8,7 @@ motor a JavaScript** para publicarlo en el sitio.*
 > **Lo primero que tiene que saber el chat nuevo:** el solucionador está
 > **incorporado, medido y funcionando en local** (`python3
 > nuestro/pantalla.py` → `http://127.0.0.1:8731/`). Todo está confirmado en
-> commits; **falta el `git push`, que hace Angel desde su Mac** (la caja de
+> commits; **falta el `git push`, que hace IEBH desde su Mac** (la caja de
 > Claude no tiene llave SSH). El trabajo de la sesión 31 es la **etapa 1 del
 > porte a JS** (§6). Antes de tocar nada: leer este briefing entero,
 > `docs/solucionador/PROCEDENCIA.md` y `docs/solucionador/INFORME-AL-VENERABLE.md`.
@@ -27,7 +27,7 @@ Siete commits de esta sesión, en orden:
 | `670f88c` | **El canon como léxico, sin DPD**: generador, `--solo-canon`, medición |
 | `6f59d54` | Las comillas de cita no son parte de la voz; mensajes con su léxico |
 
-Árbol limpio. **Pendiente de push por Angel.** Dos bloqueos de git
+Árbol limpio. **Pendiente de push por IEBH.** Dos bloqueos de git
 (`index.lock`, `HEAD.lock`) se limpiaron con el permiso de borrado de la
 carpeta; si reaparecen, es el mismo caso.
 
@@ -53,7 +53,7 @@ carpeta; si reaparecen, es el mismo caso.
   `python3 nuestro/congelar.py` comprueba; `--escribir` recongela.
 - `docs/solucionador/` — PROCEDENCIA.md (quién hizo qué),
   INFORME-AL-VENERABLE.md (las **8 consultas** que esperan el fallo de
-  Angel), LEEME.txt.
+  IEBH), LEEME.txt.
 
 ## 3. LAS DECISIONES DEL VENERABLE EN ESTA SESIÓN
 
@@ -88,20 +88,20 @@ Se reproducen con `--cobertura`, `nuestro/medir_contra_corpus.py` y
 dejar estos números iguales o mejores, y toda mejora se mide antes y
 después.** La caída del corpus en solo-canon está teñida (§2): cuánto es
 error real sólo lo dirá leer los desacuerdos contra la página impresa —
-muestreo ofrecido a Angel, sin respuesta aún.
+muestreo ofrecido al IEBH, sin respuesta aún.
 
 ## 5. ERRATAS Y CABOS SUELTOS
 
 - **«cakkhudnriyaṃ», una vez en `22AbhiT01`** (OSBCT): licencia una lectura
   falsa por §51. Cotejar contra la página impresa — errata del impreso o
   defecto de conversión. Es asunto del OSBCT, no de este repo.
-- Las **8 consultas** del INFORME esperan el fallo de Angel (byañjana 3.1,
+- Las **8 consultas** del INFORME esperan el fallo del IEBH (byañjana 3.1,
   cinco formas de interdicción, erratas del PDF, la privativa `na`…).
 - `medir_deteccion.py` importa un módulo `grupos_iniciales` que la entrega
   no trajo (defecto registrado en PROCEDENCIA; no afecta a nada de arriba).
 - `fuentes-derivadas/concordancia-nandisena-51.json` viene de `sandhi-6.html`
   v1.0 (08-10); la página viva es v3.8. **No es fuente del motor** hasta que
-  Angel falle las diferencias.
+  IEBH falle las diferencias.
 - El modo párrafo detecta menos sin `dpd-descomposiciones.tsv` (77 MB, no
   vino) — pero con el DPD apartado, la detección en párrafo debe rediseñarse
   sobre el canon (etapa 3 del porte, no de la etapa 1).
@@ -135,8 +135,8 @@ léxico jamás aparece como autoridad en la salida.
 
 ## 7. LO QUE NO SE HIZO
 
-- El push (Angel, desde su Mac).
-- El default `--solo-canon` (decisión de Angel pendiente).
+- El push (el IEBH, desde su Mac).
+- El default `--solo-canon` (decisión del IEBH pendiente).
 - La muestra de desacuerdos para adjudicar contra la página impresa.
 - Todo el porte a JS (§6).
 - La ampliación del banco de pruebas al canon entero.

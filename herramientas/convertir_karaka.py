@@ -10,7 +10,7 @@ Modelo: `herramientas/convertir_nama.py` (sesión 08).
      ejemplos. El corte va en el primer rótulo «Ejemplo(s)…:» (o primera
      viñeta), y se retrocede un párrafo si el inmediatamente anterior es
      un rótulo de entrada —acaba en «:» o es «¿Cómo qué?»—, de modo que
-     el rótulo viaje con sus propios ejemplos (decisión de Angel,
+     el rótulo viaje con sus propios ejemplos (decisión del IEBH,
      sesión 14; afecta a §271, §272, §275, §277 y §278). El bloque
      español queda así siempre en glosa + vutti.
      Todo lo que sigue al corte (kimatthaṃ incluido) va al tercer bloque,

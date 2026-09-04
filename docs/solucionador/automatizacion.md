@@ -64,7 +64,7 @@ botón «Enviar» lo dice y remite a «Exportar .md».
 
 ## QUIÉN ENVÍA: el login del modo revisión (2026-08-31)
 
-*Pedido de Angel. Antes de esto la cola era un buzón **anónimo**, y el
+*Pedido del IEBH. Antes de esto la cola era un buzón **anónimo**, y el
 problema no era que entrara basura —eso se ve y se descarta— sino que el
 `.md` exportado trae escrita la orden de incorporación con
 `--fuente "IEBH, …"`. Lo de un desconocido entraba al proyecto **rotulado
@@ -77,7 +77,7 @@ es la diferencia con una contraseña compartida: **se revoca a uno solo**.
 
 ### Los dos papeles: REVISOR y APRENDIZ
 
-*Pedido de Angel, 2026-08-31.* **Access AUTENTICA —dice quién eres— y el worker
+*Pedido del IEBH, 2026-08-31.* **Access AUTENTICA —dice quién eres— y el worker
 AUTORIZA —dice qué puedes—.** Son dos preguntas, y una política de Access sólo
 sabe contestar «pasa» o «no pasa»: para dos grados sobre la misma puerta hace
 falta que el segundo lo decida el worker.
@@ -100,7 +100,7 @@ Comas o saltos de línea; el correo no distingue mayúsculas.
 
 ### El RÓTULO es lo que se publica; el correo, nunca
 
-*Decisión de Angel, 2026-08-31: **nombrar al revisor**.* La página dice quién
+*Decisión del IEBH, 2026-08-31: **nombrar al revisor**.* La página dice quién
 propuso cada lectura, y «IEBH» queda para lo que firma él.
 
 | rótulo del repertorio | lo que sale en la página |
@@ -170,7 +170,7 @@ el endpoint del POST para que le pidieran la contraseña.
 La galleta vale por aplicación: en otra aplicación, iniciar sesión ahí no
 abriría el POST.
 
-### En el panel de Cloudflare (una sola vez, lo hace Angel)
+### En el panel de Cloudflare (una sola vez, lo hace IEBH)
 
 1. **Zero Trust → Access → Applications → Add an application → Self-hosted.**
    Gratis hasta 50 usuarios.

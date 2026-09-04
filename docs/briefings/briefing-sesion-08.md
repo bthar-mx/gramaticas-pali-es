@@ -30,7 +30,7 @@ de escribir. Transformaciones:
 1. Desglose `\= N voces]` → `, N]` (219).
 2. Tercer bloque: `---` insertado ante el primer rótulo «Ejemplo(s)…:» o
    viñeta; **todo lo que sigue (kimatthaṃ incluido) va al tercer bloque, en
-   el orden del maestro** (decisión de Angel en esta sesión). 199 suttas con
+   el orden del maestro** (decisión del IEBH en esta sesión). 199 suttas con
    tercer bloque; sin él: §52–§56, §58–§61, §63, §131, §183, §256, §261–§267
    (sus ejemplos en prosa quedan visibles, como en el cap. 1).
 3. Viñetas `*` → listas numeradas (243 listas, 677 ítems; la lista ya
@@ -44,7 +44,7 @@ de escribir. Transformaciones:
 
 **AVISO: §77 carece en el maestro del `---` entre pāḷi y español** (único
 sutta). El convertidor lo inserta en el archivo generado; el maestro NO se
-tocó. **Angel debe decidir si se corrige el maestro.**
+tocó. **el IEBH debe decidir si se corrige el maestro.**
 
 ## 3. CAMBIOS AL GENERADOR (generar_capitulo.py)
 
@@ -58,7 +58,7 @@ tocó. **Angel debe decidir si se corrige el maestro.**
 - `RE_FIN_PALI` acepta «Niṭṭhito» con mayúscula («Nāmakappo Niṭṭhito»).
 - **«Kac. §N» se enlaza** (obra propia); antes caía en la heurística de otras
   obras.
-- **Enlaces entre capítulos** (aprobado por Angel): un §N de un capítulo ya
+- **Enlaces entre capítulos** (aprobado por IEBH): un §N de un capítulo ya
   publicado enlaza a su página vía `comun/concordancia.json`
   (p. ej. §20 → `../sandhi/#s20`; 53 enlaces en el Nāma). §404/§638
   (numeración de Thitzana / capítulos sin traducir) quedan sin enlazar solos.
@@ -78,7 +78,7 @@ En `site/assets/pali.css` y `pali.js` (compartidos por todos los capítulos):
 4. Mini-navegación fija de kaṇḍas (`.kanda-nav`, sticky) con resaltado por
    scroll; los encabezados de kaṇḍa llevan `id="kanda-N"`.
 
-**Ajustes tras la primera revisión de Angel en vivo (misma sesión):**
+**Ajustes tras la primera revisión del IEBH en vivo (misma sesión):**
 
 - Corregido `desescapar`: los escapes `\=` y `\!` de la exportación quedaban
   visibles en los ejemplos (627 casos).
@@ -87,7 +87,7 @@ En `site/assets/pali.css` y `pali.js` (compartidos por todos los capítulos):
 - **Botón flotante «↑»** (abajo a la derecha, aparece tras bajar 600 px) para
   volver al inicio; el «Inicio ↑» del pie de cada sutta se conserva. Colocado
   ENCIMA del conmutador 🌓 (compartían esquina y quedaba oculto).
-- **Tooltips en las referencias §N** (idea de Angel): al pasar el cursor,
+- **Tooltips en las referencias §N** (idea del IEBH): al pasar el cursor,
   «§N · título pāḷi — glosa» (en las citas al Sandhi: título y capítulo), con
   la caja estilada del sitio (12,5 px), vía `data-tip` + CSS `::after`, sin
   DOM extra. El clic navega como siempre.
@@ -109,17 +109,17 @@ En `site/assets/pali.css` y `pali.js` (compartidos por todos los capítulos):
 3. **Notas convertidas:** ¿mantener o quitar los prefijos «Nota:» dentro de
    las definiciones? ¿Anclas bien situadas? (16 casos; tabla en el chat de
    la sesión 08 y en la salida de convertir_nama.py.)
-4. **PRIMERA TAREA DE LA SESIÓN 09 (decidido con Angel):** versionado y DOI
+4. **PRIMERA TAREA DE LA SESIÓN 09 (decidido con IEBH):** versionado y DOI
    como en el OSBCT, sin cambiar el hosting: (a) crear `CITATION.cff` y
    `.zenodo.json` (título, Bhikkhu Nandisena como traductor de la edición
    base, IEBH, licencia); (b) dejar preparados los comandos de la primera
    release (`git tag v1.0.0` = Sandhi + Nāma completos, release en GitHub);
-   (c) Angel activa el repositorio en Zenodo (Settings → GitHub, con su
+   (c) IEBH activa el repositorio en Zenodo (Settings → GitHub, con su
    cuenta) ANTES de publicar la release, para que Zenodo emita el DOI.
 5. **Errata candidata:** §83, glosa del maestro (línea 802): «‘aṃ,» sin
    comilla de cierre («Cuando siguen ‘aṃ, una sustitución…»). Cotejar y, si
    procede, corregir maestro + regenerar con convertir_nama.py.
-6. **Idea pendiente de decisión:** en móvil (<1100 px) no hay TOC; si Angel
+6. **Idea pendiente de decisión:** en móvil (<1100 px) no hay TOC; si IEBH
    echa de menos una lista ojeable de suttas, hacer un cajón deslizante (☰)
    con el mismo TOC, en vez de resucitar las pastillas.
 7. Siguen abiertos los pendientes del briefing-07 §5 (no se tocaron):

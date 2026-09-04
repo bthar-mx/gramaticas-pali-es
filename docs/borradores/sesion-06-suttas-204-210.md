@@ -1,4 +1,4 @@
-# BORRADOR — §204–§210 (pendiente de aprobación de Angel)
+# BORRADOR — §204–§210 (pendiente de aprobación del IEBH)
 
 *Sesión 06. Cierre del tatiyo kaṇḍa. Traducido de Nandisena (líneas 2140–2214),
 cotejado con Thitzana (líneas 9966–10091) y Pind (líneas 2126–2185).
@@ -196,9 +196,9 @@ Ejemplos:
 
 # NOTAS DE TRABAJO (no forman parte de la traducción)
 
-## Decisiones que corresponden a Angel
+## Decisiones que corresponden al IEBH
 
-1. **§204, notas al pie 63 y 64.** La 64 es idéntica en contenido a la 62 que Angel
+1. **§204, notas al pie 63 y 64.** La 64 es idéntica en contenido a la 62 que IEBH
    suprimió en §203; la 63 («Hay un solo ejemplo…») es información nueva. Decidir si
    se conservan una, ambas o ninguna.
 2. **§205, línea inglesa única.** Nandisena imprime una sola línea inglesa («After
@@ -248,7 +248,7 @@ Ejemplos:
 | §205 | Caturo janā | Khu. i, 336 |
 | §209 | Mātito / pitito | D. i, 106 / D. i, 106 |
 
-## Material de Thitzana ofrecido y NO incluido (recuperable si Angel lo quiere)
+## Material de Thitzana ofrecido y NO incluido (recuperable si IEBH lo quiere)
 
 - §209: nota sobre el alcance (yo, aṃ, nā, hi, naṃ, smā, su tras pitu, mātu, bhātu,
   dhītu), análisis de *asimhi* (na + si + smiṃ) y remisión a su sutta 248 para el

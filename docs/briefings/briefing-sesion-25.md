@@ -5,9 +5,9 @@ traducido entero en borrador** (§344–§405, tres tandas). No se tocó el
 emparejador de negritas; la decisión aprobada sobre él está en §4.*
 
 > **Lo primero que tiene que saber el chat nuevo:** el Taddhita está
-> traducido en borrador completo y espera la revisión de Angel. El
+> traducido en borrador completo y espera la revisión del IEBH. El
 > capítulo 6 (Ākhyāta) **no tiene fuente en el repositorio ni en el
-> proyecto**: lo primero es pedírsela a Angel. La revisión del capítulo 5
+> proyecto**: lo primero es pedírsela al IEBH. La revisión del capítulo 5
 > continuará en el chat de la sesión 25, que queda abierto.
 
 ---
@@ -24,18 +24,18 @@ registrado aquí.
 
 | Archivo | Qué es |
 | --- | --- |
-| `docs/5 - Taddhita-Kaccāyana.md` | Fuente Nandisena, cap. 5. Copiada de la subida de Angel al chat; **md5 idéntico** al original |
+| `docs/5 - Taddhita-Kaccāyana.md` | Fuente Nandisena, cap. 5. Copiada de la subida del IEBH al chat; **md5 idéntico** al original |
 | `docs/5. Taddhita-Rūpasiddhi.md` | Rūpasiddhi cap. 5, para cotejo. Ídem |
 | `docs/borradores/sesion-25-suttas-344-363.md` | Primera tanda |
 | `docs/borradores/sesion-25-suttas-364-383.md` | Segunda tanda |
 | `docs/borradores/sesion-25-suttas-384-405.md` | Tercera tanda, con fórmulas de cierre provisionales |
 
-Confirmarlos y publicarlos corresponde a Angel.
+Confirmarlos y publicarlos corresponde al IEBH.
 
 ## 2. EL TADDHITA, TRADUCIDO EN BORRADOR
 
 62 suttas (§344–§405), un solo kaṇḍa (el octavo del Nāma). Tandas de
-20/20/22 decididas por Angel. Formato idéntico a los borradores del
+20/20/22 decididas por IEBH. Formato idéntico a los borradores del
 Samāsa (sesiones 11 y 13): desgloses según Thitzana, pāḷi cotejado con
 Pind (desfase +2: Nandisena §344–§405 = Pind 346–407, comprobado en todo
 el capítulo), referencias canónicas retiradas del cuerpo y tabuladas al
@@ -55,7 +55,7 @@ TRABAJO, notas al pie 1–44 de Nandisena más la 45 del traductor.
   carácter que las VARIANTES del emparejador documentan. **Ningún
   borrador de fuente se da por bueno sin esta comprobación.**
 
-**Decisiones que esperan a Angel** (el §8 de cada borrador las lista; lo
+**Decisiones que esperan al IEBH** (el §8 de cada borrador las lista; lo
 gordo): erratas literales (Vesamitttī §344, evamādisto/honti §368,
 nava §390, pacccaye §400, vuddhī §405…); la DUDA del verso de §352 («na
 vade»); samūha «conjunto» frente a samuccaya «colección»; el Rūpasiddhi
@@ -79,11 +79,11 @@ Cada borrador trae su §5/§6 de términos propuestos (apacca, gottagaṇa,
 samūha, sippa, bhāva, visesa, tad ass’ atthi, saṅkhyāpūraṇa, ekasesa,
 gaṇana, nipātana, pakāravacana, sabbanāma, asaṃyoganta, y el juego
 cerrado vuddhi/lopa/āgama/vikāra/viparīta/ādesa, entre otros). **Ninguno
-está aún en `comun/glosario.md`**: entran cuando Angel los apruebe.
+está aún en `comun/glosario.md`**: entran cuando IEBH los apruebe.
 
 ## 4. EL EMPAREJADOR: APROBADO Y NO IMPLEMENTADO
 
-Angel aprobó §4.2 del briefing 24 (longest-first) **con puerta de
+El IEBH aprobó §4.2 del briefing 24 (longest-first) **con puerta de
 superconjunto**: el conjunto de líneas colocadas tras el cambio debe
 contener al de ahora —no basta que suba la cuenta—; si alguna línea hoy
 colocada deserta, parar y mirarla antes de seguir. Corre contra los dos
@@ -122,12 +122,12 @@ chat nuevo**.
 
 1. **La fuente no existe** ni en `docs/` ni en el proyecto de claude.ai
    (sólo está `docs/fuentes/nyasa/Nyasa-06-akhyata.md`, que es el
-   comentario, no la base). Pedir a Angel el capítulo 6 de Nandisena — y
+   comentario, no la base). Pedir al IEBH el capítulo 6 de Nandisena — y
    el de la Rūpasiddhi si quiere cotejo — **subidos al chat**, que es el
    canal byte a byte; copiarlos a `docs/` con md5, como en §2.
 2. Leer primero este briefing; `comun/convenciones.md` §0 es normativo.
 3. Formato y flujo: los tres borradores de la sesión 25 son la plantilla
-   —tandas acordadas con Angel, desgloses de Thitzana, cotejo con Pind
+   —tandas acordadas con IEBH, desgloses de Thitzana, cotejo con Pind
    (localizar el desfase de numeración para el Ākhyāta), referencias a
    tabla, erratas literales, verificación mecánica de cada párrafo pāḷi.
 4. En Thitzana (vol. 2) y Pind los capítulos de Ākhyāta se localizan con
@@ -138,7 +138,7 @@ chat nuevo**.
 ## 7. RECORDATORIOS QUE NO CAMBIAN
 
 Los del §8 del briefing 24, íntegros: nada de git desde el sandbox (ni
-`status`); con Angel en inglés, **la respuesta entera, también los
+`status`); con IEBH en inglés, **la respuesta entera, también los
 bloques para copiar**; el producto en español; nada de calcos
 («commitear», «empujado») — `comun/convenciones.md` §0; los PDF no viven
 en el repositorio; todo cambio del emparejador corre contra los dos

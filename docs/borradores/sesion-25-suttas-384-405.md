@@ -687,7 +687,7 @@ Y así deben formarse los demás [casos].
 
 [^44]: Nota al pie: Cātuvejjiko (K).
 
-[^45]: Nota del traductor: Nandisena imprime aquí «\[Sutta has not been translated\]»: el título de §401 es el único del capítulo sin traducción inglesa. La traducción española del título es nuestra, hecha desde el pāḷi con apoyo en su propia traducción de la vutti. Angel decide si se conserva o se marca de otro modo.
+[^45]: Nota del traductor: Nandisena imprime aquí «\[Sutta has not been translated\]»: el título de §401 es el único del capítulo sin traducción inglesa. La traducción española del título es nuestra, hecha desde el pāḷi con apoyo en su propia traducción de la vutti. El IEBH decide si se conserva o se marca de otro modo.
 
 ---
 
@@ -879,7 +879,7 @@ sin punto de §400: ninguna la reconocería el `RE_SALTABLE` actual.
   Nandisena).
 - Sus «Summary» didácticos por sutta.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. Las erratas de §1, en particular «nava» (§390), «pacccaye» (§400) y
    «vuddhī» (§405, título).
@@ -892,7 +892,7 @@ sin punto de §400: ninguna la reconocería el `RE_SALTABLE` actual.
 5. La entrada del capítulo en `CAPITULOS` de `generar_capitulo.py`, en
    `comun/concordancia.json` y en la tarjeta del índice: todo el paso
    «Capítulo nuevo: qué hace falta» de `CLAUDE.md` queda para cuando
-   Angel apruebe el texto.
+   IEBH apruebe el texto.
 6. Pendientes heredados de las tandas 1–2: las cuatro erratas de la
    primera, la DUDA del verso de §352, samūha/samuccaya, el «0» de §377,
    saṅkyā/saṅkhyā, y las siglas nuevas (DAA, Mhvs, Sārattha-Ṭīkā, Abh,

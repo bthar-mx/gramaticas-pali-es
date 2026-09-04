@@ -571,7 +571,7 @@ imprime, sin unificar.
 - Sus tablas de los siete gaṇas con sus vikaraṇa, que es exactamente el
   cuadro que este tramo pide y que Nandisena no da.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. La errata pāḷi de §453: «labhante» → «labbhante». Es la única de
    lectura en toda la tanda, y las tres fuentes coinciden contra

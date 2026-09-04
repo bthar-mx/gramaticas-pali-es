@@ -575,10 +575,10 @@ citada por sección, no por sutta). §§602–604 no llevan referencias.
 - Su desglose de §601, que lee «nāmaṃ’vā’» como nāmaṃ + iva y «ātave»
   como a + tave (privativa): la excepción como negación morfológica.
 - La observación de Pind a §591 (goghātako como derivado de ‘ṇvu’) y su
-  conjetura a §605 (janitabbaṃ por jānitabbaṃ), por si Angel quiere
+  conjetura a §605 (janitabbaṃ por jānitabbaṃ), por si IEBH quiere
   notas del traductor.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **La errata pāḷi de §592** («dhātusa» → «dhātussa») y los dos
    artefactos de conversión (§601 espacio tras guion; §604 negrita

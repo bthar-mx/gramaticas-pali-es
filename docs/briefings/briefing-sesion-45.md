@@ -5,28 +5,28 @@ edición inglesa de Kaccāyana y, de paso, tres arreglos al Sandhi-Kappa
 español**. El Venerable Nandisena ha dado su permiso para la edición inglesa.
 Se ha tocado `kaccayana/01-sandhi-kappa.md`, `comun/guia-de-estilo.md` y
 `herramientas/generar_capitulo.py`; se ha regenerado `site/` con
-`generar_todo.py`. **Nada está confirmado en git:** Angel revisa y confirma.*
+`generar_todo.py`. **Nada está confirmado en git:** IEBH revisa y confirma.*
 
 > **ESTADO AL CIERRE (se actualiza abajo, en §6 bis):** Sandhi inglés
-> publicado por Angel (v1.0, en línea). **Nāma inglés escrito entero y
+> publicado por IEBH (v1.0, en línea). **Nāma inglés escrito entero y
 > generado** (`kaccayana/02-nama-kappa.en.md`, 219 suttas, 75 notas →
 > `site/en/kaccayana/nama/`), cotejado por guion contra el español (219/219
 > cabeceras, 597/597 líneas de ejemplo con los mismos § y componentes, 75
-> notas en el mismo orden, cero español), **sin revisar por Angel**. **Kāraka
+> notas en el mismo orden, cero español), **sin revisar por IEBH**. **Kāraka
 > inglés escrito entero y generado** (`kaccayana/03-karaka-kappa.en.md`, 45
 > suttas, 55 notas → `site/en/kaccayana/karaka/`), cotejado igual (45/45,
-> 296/296, 110 marcas, cero español), **sin revisar por Angel**. Detalle y
+> 296/296, 110 marcas, cero español), **sin revisar por IEBH**. Detalle y
 > lo que queda: §6 bis.
 >
 > **Lo primero que tiene que saber el chat nuevo: la edición inglesa del
-> Sandhi-Kappa ESTÁ ESCRITA Y GENERADA, y no está revisada por Angel.**
+> Sandhi-Kappa ESTÁ ESCRITA Y GENERADA, y no está revisada por IEBH.**
 > `kaccayana/01-sandhi-kappa.en.md` (51 suttas, 35 notas) →
 > `site/en/kaccayana/sandhi/index.html`, con botón EN/ES y `hreflang` en las
-> dos páginas. Angel autorizó escribirla entera sin aprobación sutta a sutta
+> dos páginas. El IEBH autorizó escribirla entera sin aprobación sutta a sutta
 > y revisarla después (2026-09-03, antes de salir). El registro de lo que se
 > desvía del inglés impreso de Nandisena está en
 > `docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md`, §5. **Nada está
-> confirmado en git.** Lo que Angel tiene que hacer al volver: leer la página
+> confirmado en git.** Lo que IEBH tiene que hacer al volver: leer la página
 > inglesa en `site/en/kaccayana/sandhi/` (o desplegarla), revisar el diff, y
 > confirmar o corregir.
 
@@ -44,7 +44,7 @@ Se ha tocado `kaccayana/01-sandhi-kappa.md`, `comun/guia-de-estilo.md` y
 
 ## 1. LA EDICIÓN INGLESA: QUÉ ES Y QUÉ NO ES
 
-Angel lo precisó en la sesión, y conviene dejarlo con sus palabras porque
+El IEBH lo precisó en la sesión, y conviene dejarlo con sus palabras porque
 acota el trabajo:
 
 1. **No es una reescritura.** Donde Nandisena tradujo, su inglés se queda.
@@ -61,7 +61,7 @@ acota el trabajo:
    de «ca» y de *kvaci, vā, navā, vibhāsā*. `comun/terminologia-particulas.md`
    sale de ahí. **Esa página no está en el PDF que tiene el proyecto** (48
    pp., termina en «End of the Sandhi Chapter»): hace falta el original
-   inglés para la edición inglesa. **Pedírselo a Angel.**
+   inglés para la edición inglesa. **Pedírselo al IEBH.**
 
 Lo técnico, decidido en la conversación previa y sin ejecutar: páginas
 paralelas (`/en/kaccayana/sandhi/`) generadas de un markdown paralelo
@@ -103,7 +103,7 @@ documento español del Venerable, y estaba en el proyecto.
 Añadir al emergente el número de estrofa verificado contra Pind (PTS) —
 «Dhp 375» junto a «Khu. i, 67». Un intento automático dio ruido; hacerlo
 bien son ~110 comprobaciones una a una. Queda como DUDA en la guía §5.1
-sexies. Angel decide si vale la pena.
+sexies. El IEBH decide si vale la pena.
 
 ## 3. DECISIONES QUE ESPERAN A ANGEL
 
@@ -112,18 +112,18 @@ nota del español.
 
 | # | Cuestión | Dónde |
 | --- | --- | --- |
-| 1 | ~~*Gaṇa*~~ **Decidido: «the noble Order»**, paralelo al español (Angel, 2026-09-03). | memorando §2.5 |
-| 2 | *ṭhāne*: Nandisena traduce en plural y lo justifica en su nota 23; el español eligió el singular. La nota se ha repuesto en §28 (n. 19) con la frase «Esta traducción conserva el singular del pāḷi». **Decidido: se mantiene el singular** en los dos idiomas (Angel, 2026-09-03); la nota 19 dice ahora «por decisión del IEBH». | §28, n. 19 |
-| 3 | **Decidido: §12** en los dos idiomas (Angel, 2026-09-03). Corregido en las notas 6 y 7 y registrado en guía §5.1 quinquies. | §10–11 |
-| 4 | **Decidido: *vasantatilakā*** (Angel, 2026-09-03). Registrado en guía §5.1 quinquies como corrección a la edición base. | §1, n. 2 |
-| 5 | **Decidido: con corchetes, como el español**, para que se entienda (Angel, 2026-09-03). Las palabras de Nandisena se conservan; lo añadido va entre corchetes. | memorando §3.2 |
-| 5 bis | **Regla de los corchetes** (Angel, 2026-09-03): el locativo del sutta significa «sigue» y el ablativo «después»; son el sentido del caso y van **sin** corchetes. Escrita en `comun/convenciones.md` §1 bis; aplicada al español en §12, §31, §39 y §46. | convenciones §1 bis |
-| 6 | **Decidido: *niccutaṃ***, la lectura birmana, sin nota (Angel, 2026-09-03). | §31 |
-| 7 | **Entregada** por Angel en la sesión y guardada verbatim en `docs/fuentes/nandisena-apendice-sandhi-en.md`. Da los nombres ingleses del Venerable para las funciones de «ca» (*dragging, collecting, accumulating, delimiting, smoothness of speech*), que sustituyen a los propuestos en el memorando §2.3, y la cita *Kaccāyanavaṇṇanā* 31, añadida a `comun/terminologia-particulas.md`. | §1.5 |
+| 1 | ~~*Gaṇa*~~ **Decidido: «the noble Order»**, paralelo al español (el IEBH, 2026-09-03). | memorando §2.5 |
+| 2 | *ṭhāne*: Nandisena traduce en plural y lo justifica en su nota 23; el español eligió el singular. La nota se ha repuesto en §28 (n. 19) con la frase «Esta traducción conserva el singular del pāḷi». **Decidido: se mantiene el singular** en los dos idiomas (el IEBH, 2026-09-03); la nota 19 dice ahora «por decisión del IEBH». | §28, n. 19 |
+| 3 | **Decidido: §12** en los dos idiomas (el IEBH, 2026-09-03). Corregido en las notas 6 y 7 y registrado en guía §5.1 quinquies. | §10–11 |
+| 4 | **Decidido: *vasantatilakā*** (el IEBH, 2026-09-03). Registrado en guía §5.1 quinquies como corrección a la edición base. | §1, n. 2 |
+| 5 | **Decidido: con corchetes, como el español**, para que se entienda (el IEBH, 2026-09-03). Las palabras de Nandisena se conservan; lo añadido va entre corchetes. | memorando §3.2 |
+| 5 bis | **Regla de los corchetes** (el IEBH, 2026-09-03): el locativo del sutta significa «sigue» y el ablativo «después»; son el sentido del caso y van **sin** corchetes. Escrita en `comun/convenciones.md` §1 bis; aplicada al español en §12, §31, §39 y §46. | convenciones §1 bis |
+| 6 | **Decidido: *niccutaṃ***, la lectura birmana, sin nota (el IEBH, 2026-09-03). | §31 |
+| 7 | **Entregada** por IEBH en la sesión y guardada verbatim en `docs/fuentes/nandisena-apendice-sandhi-en.md`. Da los nombres ingleses del Venerable para las funciones de «ca» (*dragging, collecting, accumulating, delimiting, smoothness of speech*), que sustituyen a los propuestos en el memorando §2.3, y la cita *Kaccāyanavaṇṇanā* 31, añadida a `comun/terminologia-particulas.md`. | §1.5 |
 
 ## 3 bis. LA PÁGINA INGLESA: CÓMO SE HIZO
 
-Decisiones de Angel antes de salir: capítulo entero de una vez, revisión
+Decisiones del IEBH antes de salir: capítulo entero de una vez, revisión
 después; URL `/en/kaccayana/sandhi/`; crédito «English translation by Bhikkhu
 U Nandisena (ITBMU); edition, apparatus and glossary by the IEBH»; generador y
 botón EN/ES ahora.
@@ -176,13 +176,13 @@ inglés nace en v1.0.
 
 ## 5. CÓMO SEGUIR
 
-0. **Angel revisa la página inglesa entera** y el registro §5 del memorando.
+0. **el IEBH revisa la página inglesa entera** y el registro §5 del memorando.
    Lo que corrija, en `01-sandhi-kappa.en.md`; se regenera con
    `generar_todo.py`.
 
-1. Angel revisa el diff de `kaccayana/01-sandhi-kappa.md` (las 156 citas en
+1. El IEBH revisa el diff de `kaccayana/01-sandhi-kappa.md` (las 156 citas en
    línea, las 6 reposiciones, las 6 erratas) y confirma.
-2. Angel resuelve la tabla de §3 y entrega la página del Venerable (§1.5).
+2. El IEBH resuelve la tabla de §3 y entrega la página del Venerable (§1.5).
 3. Con eso: glosario inglés cerrado → `sandhi.en.md`, un sutta cada vez,
    como siempre → generador con idioma → botón EN/ES.
 
@@ -208,12 +208,12 @@ inglés nace en v1.0.
 
 ## 6 bis. ESTADO AL CIERRE: LOS TRES CAPÍTULOS EN INGLÉS
 
-*Escrito al final de la sesión, con Angel fuera. Es lo que el chat nuevo
+*Escrito al final de la sesión, con IEBH fuera. Es lo que el chat nuevo
 tiene que leer primero.*
 
 | Capítulo | Maestro | Suttas / notas | Página | Estado |
 | --- | --- | ---: | --- | --- |
-| Sandhi | `kaccayana/01-sandhi-kappa.en.md` | 51 / 35 | `site/en/kaccayana/sandhi/` | **publicado por Angel (v1.0, en línea)**; sin revisar |
+| Sandhi | `kaccayana/01-sandhi-kappa.en.md` | 51 / 35 | `site/en/kaccayana/sandhi/` | **publicado por IEBH (v1.0, en línea)**; sin revisar |
 | Nāma | `kaccayana/02-nama-kappa.en.md` | 219 / 75 | `site/en/kaccayana/nama/` | escrito y generado; **sin revisar, sin confirmar en git** |
 | Kāraka | `kaccayana/03-karaka-kappa.en.md` | 45 / 55 | `site/en/kaccayana/karaka/` | escrito y generado; **sin revisar, sin confirmar en git** |
 
@@ -248,7 +248,7 @@ El guion no está guardado como herramienta: son diez líneas de Python
 (cabeceras por regex `^\*\*\d+\\\. `, negritas por línea numerada, marcas
 `\[\^\d+\]`). Si conviene repetirlo, se reescribe en un minuto.
 
-### Lo que Angel tiene que decidir o revisar
+### Lo que IEBH tiene que decidir o revisar
 
 1. **Leer las dos páginas nuevas** (`site/en/kaccayana/nama/`,
    `site/en/kaccayana/karaka/`) y el §6 del memorando. Lo que corrija va en

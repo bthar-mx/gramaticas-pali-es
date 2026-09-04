@@ -8,7 +8,7 @@ reescribe la descripción del depósito, el título pasa a
 texto de ninguna gramática ni el motor.*
 
 > **Lo primero que tiene que saber el chat nuevo: la 2.0.0 ESTÁ PUBLICADA.**
-> Angel etiquetó y publicó la entrega en GitHub, Zenodo la archivó, y el DOI de
+> IEBH etiquetó y publicó la entrega en GitHub, Zenodo la archivó, y el DOI de
 > concepto `10.5281/zenodo.21948010` resuelve ya a la versión nueva:
 >
 > | | |
@@ -42,8 +42,8 @@ texto de ninguna gramática ni el motor.*
 ## 1. ZENODO: EL ENGANCHE ESTÁ BIEN, Y SE CIERRA EL PUNTO 2 DEL BRIEFING 43
 
 El miedo del briefing 43 —que el webhook se hubiera quedado en `admin-iebh`
-mientras Angel empuja a `bthar-mx`, y que la próxima versión no se archivara—
-**no se cumple**. Lo comprobado, con la sesión de Angel abierta:
+mientras IEBH empuja a `bthar-mx`, y que la próxima versión no se archivara—
+**no se cumple**. Lo comprobado, con la sesión del IEBH abierta:
 
 - En `bthar-mx/gramaticas-pali-es` → Settings → Webhooks hay un hook vivo a
   `https://zenodo.org/api/hooks/receivers/github/events/`, evento `release`,
@@ -72,7 +72,7 @@ organización no aparecen en la lista sin ese permiso, y aparecen los dos de
 disparado nunca. La etiqueta `v2.0.0` es esa prueba. Si falla, falla a la vista
 y en el acto.
 
-**Angel sincronizó Zenodo durante la sesión** («Sync now»), de modo que ese paso
+**El IEBH sincronizó Zenodo durante la sesión** («Sync now»), de modo que ese paso
 está hecho.
 
 ## 2. LA REVISIÓN VISUAL: LOS PLIEGUES ESTÁN BIEN
@@ -140,7 +140,7 @@ decisión de diseño, no defecto, y no se pidió.
 
 ## 5. EL TÍTULO: «BYĀKARAṆA»
 
-Decisión de Angel. Cambia en `.zenodo.json` y en `CITATION.cff`, título y
+Decisión del IEBH. Cambia en `.zenodo.json` y en `CITATION.cff`, título y
 primera línea de la descripción.
 
 **La lectura tiene apoyo en las fuentes del propio repositorio**, y conviene
@@ -151,7 +151,7 @@ del sitio ya decía **Kaccāyana-Byākaraṇaṃ**.
 
 ### Y NO ERA SÓLO CONSISTENCIA: LAS CITAS ESTABAN MAL
 
-Angel pidió corregirlo en el resto del repositorio. Antes de hacerlo se miró
+El IEBH pidió corregirlo en el resto del repositorio. Antes de hacerlo se miró
 una cosa que no era obvia: **cinco de las nueve apariciones no eran el nombre
 que el proyecto le da a la obra, sino la CITA BIBLIOGRÁFICA de la edición
 base** —«Kaccāyana-vyākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU)»—. Una
@@ -178,7 +178,7 @@ Las nueve apariciones, en siete archivos, quedan en «byākaraṇa»:
 **Una cosa se hizo de más, y se dice:** en las palabras clave de `.zenodo.json`
 y `CITATION.cff` se puso «byākaraṇa» **y se conservó «vyākaraṇa»** junto a
 ella. Una palabra clave no nombra la obra, sirve para encontrarla, y la grafía
-con *v* es la corriente en la bibliografía occidental. Si Angel prefiere una
+con *v* es la corriente en la bibliografía occidental. Si IEBH prefiere una
 sola, se quita.
 
 ## 6. LA DESCRIPCIÓN DEL DEPÓSITO
@@ -193,7 +193,7 @@ El borrador cotejado está en `docs/zenodo/descripcion-2.0.0-por-adjudicar.md`,
 con **una tabla que traza cada cifra al archivo del que sale**. Ya está
 incorporado a los dos archivos de metadatos.
 
-**Dos puntos del borrador quedaron sin respuesta expresa de Angel**, y se
+**Dos puntos del borrador quedaron sin respuesta expresa del IEBH**, y se
 publicaron con lo que el borrador proponía por defecto:
 
 1. **El párrafo de lo que el motor NO resuelve** —1.618 de 2.045 junturas— va
@@ -204,25 +204,25 @@ publicaron con lo que el borrador proponía por defecto:
    depósito mixto. **No se tocó**: cambiarlo altera cómo se cita la obra y cómo
    la indexa OpenAIRE.
 
-Si Angel quiere cualquiera de las dos cosas distinta, **hay que cambiarla antes
+Si IEBH quiere cualquiera de las dos cosas distinta, **hay que cambiarla antes
 de empujar la etiqueta**, no después.
 
 ## 7. LO QUE FALTA, Y SON DOS ÓRDENES
 
-**`main` ya está empujado y desplegado hasta `1035d7c`.** Angel lo empujó desde
+**`main` ya está empujado y desplegado hasta `1035d7c`.** IEBH lo empujó desde
 su Mac durante la sesión, y los tres arreglos se comprobaron **en el sitio en
 vivo**: `--ochre-text` llega como `#8A5209` y los rótulos del verbo miden 4,96.
 
 Falta el commit `3d62d4b` —el de «byākaraṇa»— y **la etiqueta `v2.0.0`**, que
 está anotada y apunta a él. El entorno de Claude no tiene la clave SSH de
-Angel; el intento devolvió `Host key verification failed`.
+El IEBH; el intento devolvió `Host key verification failed`.
 
     git push origin main
     git push origin v2.0.0
 
 ### DOS COSAS QUE SALIERON MAL, Y LA SEGUNDA ERA UN ERROR MÍO
 
-**1. La etiqueta remota se adelantó.** Angel tiene `push.followTags`, de modo
+**1. La etiqueta remota se adelantó.** IEBH tiene `push.followTags`, de modo
 que su `git push origin main` subió también `v2.0.0` tal como estaba entonces
 —apuntando a `1035d7c`—, un commit por detrás. El segundo intento lo rechazó
 GitHub con «tag already exists». Se arregló borrando la remota y volviendo a
@@ -271,7 +271,7 @@ público:
   `/account/settings/github/repository/...` devolvió un error 500, con la sesión
   de Zenodo abierta (`admin@iebh.org`): no era un cierre de sesión. **No afectó
   a la 2.0.0** —el archivado ya había ocurrido—, pero habría impedido archivar
-  la siguiente. Angel volvió a conectar, y quedó así:
+  la siguiente. El IEBH volvió a conectar, y quedó así:
 
       Enabled Repositories
         bthar-mx/OSBCT              DOI 10.5281/zenodo.21967270   ON

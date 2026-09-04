@@ -373,7 +373,7 @@ de la sesión 27):
 | Sutta | Su inglés | Debería | Qué se hizo |
 |---|---|---|---|
 | §625 | «cook (pacito)» | cooked | Se tradujo «cocinado» |
-| §625 | falta el par «sayitaṃ sayanaṃ bhavatā» en la lista de objeto (el pāḷi lo trae) | «slept (sayitaṃ) bed (sayanaṃ)» | Se tradujo sin añadirlo; queda a decisión de Angel |
+| §625 | falta el par «sayitaṃ sayanaṃ bhavatā» en la lista de objeto (el pāḷi lo trae) | «slept (sayitaṃ) bed (sayanaṃ)» | Se tradujo sin añadirlo; queda a decisión del IEBH |
 | §626 | «Devadatta (Devadatta)» | (Devadatto) | Se escribió la forma pāḷi correcta |
 | §628 | «something that tames» para samatho (sameti) | something that calms | Se tradujo «lo que apacigua»; «doma» queda para damatho |
 | §632 | «a dart (alyaṃ, kalyaṃ, salyaṃ)» — «dardo» aplicado a los tres | wet / healthy / dart | Se tradujo mojado / sano / dardo, como sus propios allaṃ / kallaṃ / sallaṃ |
@@ -598,7 +598,7 @@ i, 226» / §631 «Abhi. i, 226»).
 - Su nota a §638: «hana» pasa a «vadha» (por su §592) antes de formar
   vajjhā.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **Las cuatro erratas pāḷi del §1** (etanā §628, Yāṇa-lāṇā §633,
    ajjheyaṃ §635, minúsculas de devadatto §626) y las del inglés,

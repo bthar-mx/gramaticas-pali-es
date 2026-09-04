@@ -65,7 +65,7 @@ añadido al repositorio fuera de las tres páginas:
     python3 herramientas/pagina_saddaniti.py --tabla    # los tramos
 
 No calcula nada: lee la correspondencia del escaneo y escribe la orden de
-`pdftoppm` lista para copiar. **Si Angel prefiere no tenerlo en
+`pdftoppm` lista para copiar. **Si IEBH prefiere no tenerlo en
 `herramientas/`, se quita y no se pierde nada**: la tabla de arriba basta.
 
 ---
@@ -105,7 +105,7 @@ De modo que la regla de la sesión 47 gana una salida que no tenía:
 quedó abierta en la sesión 48 por la misma razón. Allí Smith no da referencia,
 así que la salida no sirve; pero **la 1132 imprime `lokanīti` con macrón claro
 en su cita**, lo que es un argumento más —no una prueba— a favor de
-`saddhammanīti`. **La ficha de la 1131 no se ha tocado.** Es decisión de Angel.
+`saddhammanīti`. **La ficha de la 1131 no se ha tocado.** Es decisión del IEBH.
 
 Las demás referencias de estas páginas —a la PTS (Kva, M, As, Ppa, Sp, Vin) o
 sin cotejar (105,33; 907,7—13; 910,18—24; 325,19; p. 1016)— van leídas de la
@@ -295,19 +295,19 @@ Lo que funcionó esta sesión, y conviene repetir:
    —y ahora también con la salida de §3: mirar la página citada—. Sigue
    pendiente.
 3. **La tarjeta de `/recursos/`**: la página existe y no está enlazada. Falta
-   el visto bueno de Angel (`herramientas/generar_indices.py`, y su copia
+   el visto bueno del IEBH (`herramientas/generar_indices.py`, y su copia
    inglesa).
 4. **El guion `herramientas/pagina_saddaniti.py` es nuevo** y está a la espera
-   del visto bueno de Angel, como se dice en §2.
+   del visto bueno del IEBH, como se dice en §2.
 5. **Buscar la lista de siglas de Smith** en los preliminares del vol. 01, para
    cerrar el `ns` de §4.
-6. Las decisiones de Angel que siguen abiertas: **lahu** («leve» frente al
+6. Las decisiones del IEBH que siguen abiertas: **lahu** («leve» frente al
    «breve» del Diplomado), **niggahita/niggahīta**, **ensanchar āgama** —y esta
    sesión da un tercer argumento: el `āgamikānaṃ` de 5.3.3.3 (p. 1133) es «los
    versados en la tradición», no un fonema—, el `sukkhuccāraṇatthaṃ` de la
    p. 1108, el `avadhārana` de la p. 1119, el `saddhammaniti` de la p. 1131
    (ver §3), y las tres notas de paradigmas que dicen «con el visto bueno de
-   Angel» donde la norma pide «el IEBH».
+   IEBH» donde la norma pide «el IEBH».
 
 ---
 

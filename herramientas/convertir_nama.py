@@ -9,7 +9,7 @@ Convierte el maestro `docs/2. Nāma-Kappa.md` al formato del generador
      ejemplos (primer rótulo «Ejemplo(s)…:» exento, primera viñeta, o rótulo
      «Ejemplos:» pegado al final de la vutti, que pasa a línea propia).
      Todo lo que sigue (kimatthaṃ incluido) queda en el tercer bloque,
-     en el orden del maestro (decisión de Angel, sesión 08).
+     en el orden del maestro (decisión del IEBH, sesión 08).
   3. Ejemplos con asterisco → lista numerada `1.`, `2.`, …
   4. Notas en prosa («Nota:», «Nota al pie:», «Nota del traductor…:») →
      notas al pie `[^n]` ancladas + definición al final; renumeración

@@ -17,7 +17,7 @@ continúa con §301–§315.*
   - `docs/borradores/sesion-11-suttas-271-285.md` (tanda 1)
   - `docs/borradores/sesion-11-suttas-286-300.md` (tanda 2)
 - **FALTA la tanda 3: §301–§315.** Ésa es la primera tarea de la sesión 12.
-- **Angel revisará el español AL FINAL del capítulo**, cuando se le entregue
+- **el IEBH revisará el español AL FINAL del capítulo**, cuando se le entregue
   el .md completo — NO sutta a sutta. Las decisiones pendientes (ver §6)
   esperan a esa revisión; mientras tanto se presentan lecturas literales.
 - Los pasos de publicación de `CLAUDE.md` («Capítulo nuevo: qué hace falta»)
@@ -53,7 +53,7 @@ continúa con §301–§315.*
    aunque Pind dé 555–56).
 6. **Bloque «Ejemplos:» en cada sutta** (petición expresa): lista con
    asterisco, **el kāraka del ejemplo en negrita**, traducción española
-   entre paréntesis inmediatamente después. Angel pidió «subrayado»; se usa
+   entre paréntesis inmediatamente después. El IEBH pidió «subrayado»; se usa
    negrita porque el subrayado no sobrevive la exportación a markdown — si
    lo quiere en el sitio, habrá que añadir `<u>` al generador (fase HTML).
 7. La división del trabajo del capítulo: **tres tandas de 15** (271–285,
@@ -123,16 +123,16 @@ continúa con §301–§315.*
    medio; §303 y §306 tienen listas dobles (chaṭṭhī ca sattamī ca), §307 el
    espacio raro «( 589)» a normalizar/flagear, §308–§315 mezclan casos.
 2. **Al terminar la tanda 3:** montar el capítulo completo en un solo .md
-   de trabajo y entregarlo a Angel, que hará ENTONCES su revisión del
+   de trabajo y entregarlo al IEBH, que hará ENTONCES su revisión del
    español y fallará las erratas, las DUDAs y los cuatro grupos de
    decisiones pendientes (erratas / Tadatthe / DUDAs / glosa de §277).
 3. Tras la revisión: pasos de publicación de `CLAUDE.md` (markdown en
    `kaccayana/03-karaka-kappa.md`, entrada en `CAPITULOS`, regex del
    generador para «88, 308», concordancia.json, tarjeta del índice).
-   Fórmulas de cierre del capítulo por decidir con Angel (es «sexto kaṇḍo
+   Fórmulas de cierre del capítulo por decidir con IEBH (es «sexto kaṇḍo
    del nāma-kappa» y a la vez fin del Kāraka-kappa).
 4. Glosario: volcar los términos propuestos en las notas de trabajo de los
-   borradores (§6 tanda 1, §5 tanda 2) cuando Angel los apruebe.
+   borradores (§6 tanda 1, §5 tanda 2) cuando IEBH los apruebe.
 5. Siguen vivos los pendientes heredados del briefing-10 §7 (push/revisión
    visual si quedara algo, y a plazo el solucionador de sandhis).
 
@@ -147,7 +147,7 @@ continúa con §301–§315.*
   `docs/borradores/sesion-11-suttas-301-315.md` (o sesion-12; da igual el
   nombre, que quede junto a los otros).
 - Presentar lecturas literales; erratas y DUDAs a las notas de trabajo; no
-  esperar aprobaciones sutta a sutta (Angel revisa al final).
+  esperar aprobaciones sutta a sutta (el IEBH revisa al final).
 - La conversación de trabajo, en inglés; la traducción, en español formal.
 
 ---

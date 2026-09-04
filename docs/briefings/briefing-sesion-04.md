@@ -51,7 +51,7 @@ Los suttas de Nandisena están en el .md por número de línea; buscar con el pa
 
 ### 3.1 Fidelidad a Nandisena
 - **NUNCA añadir, omitir o cambiar nada** más allá de lo que está estrictamente en el texto
-  de Nandisena sin informar explícitamente a Angel y dejarle decidir.
+  de Nandisena sin informar explícitamente al IEBH y dejarle decidir.
 - Leer el texto de Nandisena **párrafo por párrafo, línea por línea**, antes de presentar
   cada sutta.
 - Nunca enmendar en silencio, ni siquiera una errata evidente: presentarla y señalarla.
@@ -64,8 +64,8 @@ Los suttas de Nandisena están en el .md por número de línea; buscar con el pa
 - Si no se sabe qué sutta prescribe un paso, **decirlo explícitamente**.
 - **Distinguir siempre** lo verificado contra las fuentes del proyecto de lo afirmado de
   memoria. Marcar lo segundo como tal. Esta regla se incumplió en la sesión anterior y
-  Angel lo señaló: no repetirlo.
-- **Antes de objetar una lectura de Angel, consultar el comentario y las fuentes.** Una
+  IEBH lo señaló: no repetirlo.
+- **Antes de objetar una lectura del IEBH, consultar el comentario y las fuentes.** Una
   objeción no verificada le hace perder el tiempo.
 
 ### 3.4 Análisis morfológico más allá de Nandisena
@@ -91,7 +91,7 @@ Verificadas y aprobadas. Aplicarlas siempre:
 | §174 (*eso*) | "'si' se elide (§220)" | 'si' → 'o' (**§104**); 'a' se elide (**§83**) | §220 no aplica donde §104 ya opera; la elisión simple daría *esa*, no *eso* |
 | §176 (*assa*) | "se inserta 's' (§63)" | se inserta 's' (**§61**) | §63 es *Et'-imāsam i*; §61 es *Sāgamo se* |
 | §177 (*assa*) | "se inserta 's' (§63)" | se inserta 's' (**§61**) | Misma errata |
-| §185 (verso Dhp 151) | *rajaṃ upeti* (pādas b y c) | ***jaraṃ upeti*** | Verificado por Angel. Coincide con Thitzana, con Dhp 151 y con la ed. PTS; *jaraṃ* hace juego con *jīranti* del pāda a |
+| §185 (verso Dhp 151) | *rajaṃ upeti* (pādas b y c) | ***jaraṃ upeti*** | Verificado por IEBH. Coincide con Thitzana, con Dhp 151 y con la ed. PTS; *jaraṃ* hace juego con *jīranti* del pāda a |
 | §186 (vutti) | *gachantādīnaṃ* | ***gacchantādīnaṃ*** | Falta una 'c'. El propio título y Thitzana leen *gacchantādīnaṃ* |
 
 ### NO son erratas — no "corregir"
@@ -181,7 +181,7 @@ honti* → "se sustituye por", aunque el paso aparezca en un desglose. En §183,
 | *puna ... ggahaṇena* | **"Tomando '[X]' de nuevo"** (corrige "Al tomar") | §184 |
 | *sakāra* (en §185) | **'sa'**, no 's' | §185 |
 
-**Sobre *santa* → "santo".** Razón editorial de Angel: reivindicar para el Buddha —que
+**Sobre *santa* → "santo".** Razón editorial del IEBH: reivindicar para el Buddha —que
 vivió unos 600 años antes de Cristo— un término que le pertenece. Coincide con Thitzana
 ("santa = saint") y con el comentario, que glosa *santo* como ***buddhādayo*** ("los
 Buddhas y demás"): el referente son los despiertos, no simplemente la gente de bien.
@@ -321,7 +321,7 @@ Las notas van **ancladas con superíndice** en la palabra concreta a la que corr
 - Nombres de los pares de inflexiones: "el primer par", "el segundo par".
 - Cierre de sección: *"Así termina la [ordinal] sección del capítulo de Nāma."* (centrado,
   atenuado, sin cursiva).
-- Variantes textuales de Nandisena: **se conservan**, salvo que Angel verifique y ordene
+- Variantes textuales de Nandisena: **se conservan**, salvo que IEBH verifique y ordene
   enmendar (como en §185).
 
 ---
@@ -374,7 +374,7 @@ conserva íntegras. Retiradas hasta ahora:
    pāpiyo.* Traducción actual: "[porque] comprender el buen Dhamma de los santos, es lo
    mejor, no lo peor." Objeción planteada y **no resuelta**: *aññāya* es absolutivo, luego
    no puede funcionar como sujeto de *hoti*; y *seyyo*/*pāpiyo* son comparativos, no
-   superlativos. **Angel debe decidir.** Antes de insistir, consultar el comentario.
+   superlativos. **el IEBH debe decidir.** Antes de insistir, consultar el comentario.
 2. **§184, nota al pie 57** de Nandisena: *"This should not be here. Nyāsa also does not
    comment on it."* Quedó fuera. Decidir si se recupera bajo "Nota al pie:".
 3. ***vikappana* / *vikappena***: confirmar "alternativa" / "alternativamente".
@@ -395,7 +395,7 @@ Siguiendo el modelo de `Kaccayana_Sandhi_Kappa_v15.html`.
 
 El capítulo se publica desde `kaccayana/02-nama-kappa.md` mediante
 `herramientas/generar_capitulo.py`. La entrada `02-nama-kappa` **ya existe** en el
-diccionario `CAPITULOS`. El archivo del capítulo **todavía no existe**: Angel prefiere
+diccionario `CAPITULOS`. El archivo del capítulo **todavía no existe**: el IEBH prefiere
 entregarlo al terminar el capítulo, no sutta a sutta.
 
 **Se hizo un piloto con §183–§187** (copia desechable del repositorio; nada se tocó).
@@ -423,7 +423,7 @@ Hay que decidir entre:
 1. cambiar la convención §7.7 (renunciar a la disposición en pādas), o
 2. añadir un modo verso al generador.
 
-**Angel debe decidir.** Afecta a §185 y a cualquier sutta con verso.
+**El IEBH debe decidir.** Afecta a §185 y a cualquier sutta con verso.
 
 ### No es problema
 El aviso de referencias §N sin enlazar (§83, §99, §104, §127, §181, §220) solo se debe a

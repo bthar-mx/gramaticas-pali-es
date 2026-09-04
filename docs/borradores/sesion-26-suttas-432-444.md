@@ -510,7 +510,7 @@ se confirma, el segundo número de este sutta debe entrar como 362.
    Sus pasos 4–5 de *jigucchati*, 4–5 de *tikicchati* y 4–6 de
    *vīmaṃsati* **no llevan referencia de sutta**: se dejaron como están,
    sin inventar la regla que falta (`CLAUDE.md`: proponer y verificar,
-   nunca afirmar). **Angel decide** si se buscan o se dejan mudos.
+   nunca afirmar). **el IEBH decide** si se buscan o se dejan mudos.
 3. **§438, «Atthaggahaṇena alapaccayo hoti. Jotalati.»** Pind lo recoge
    sólo en aparato: lo añaden Be, Ce y Ee, y el Kaccāyana-niddesa dice
    expresamente que **no está en el texto antiguo** de Kaccāyana, sino
@@ -662,7 +662,7 @@ que no se unificó nada.
 - Sus «Summary» por sutta y su tratamiento del causativo en §438, mucho
   más extenso que la vutti.
 
-### 8. Decisiones que esperan a Angel
+### 8. Decisiones que esperan al IEBH
 
 1. **La numeración de §432**: Rū 462 → 362 (§1 y §4). Es la única errata
    del capítulo que, de confirmarse, obliga a tocar

@@ -1,6 +1,6 @@
 # Apéndice al capítulo 1 (Sandhi-Kappa) de la edición inglesa de Bhikkhu U Nandisena
 
-Texto original inglés del Venerable, tal como lo copió Angel el 2026-09-03
+Texto original inglés del Venerable, tal como lo copió IEBH el 2026-09-03
 (sesión 45). **No está en el PDF de 48 páginas que tiene el proyecto.** Es la
 fuente de `comun/terminologia-particulas.md` y de las notas sobre «ca» y
 sobre las partículas del Sandhi-Kappa español. Se conserva verbatim,

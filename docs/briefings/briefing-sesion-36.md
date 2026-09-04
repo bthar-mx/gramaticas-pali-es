@@ -1,7 +1,7 @@
 # Kaccāyana Pāḷi-Español: Briefing de la Sesión 36
 
 *Complementa a los briefings 05–35. Tema de la sesión 36 (2026-08-30, en
-vivo con Angel): **la ṁ pegada se corrige a ṃ; el globo de cada marca; el
+vivo con IEBH): **la ṁ pegada se corrige a ṃ; el globo de cada marca; el
 filete esmeralda; las observaciones del revisor ya no se pierden (v1.10);
 y §34 implementado dentro del RÉGIMEN MEDIDO, que es el hallazgo de la
 sesión.** Página en v1.11.*
@@ -11,7 +11,7 @@ sesión.** Página en v1.11.*
 > empujar: v1.9, v1.10, §34 y el gitignore del DPD). Las reglas de
 > siempre: el Python es la referencia; los CINCO arneses mandan; nada se
 > adjudica sin el visto bueno del IEBH; todo se mide antes y después; la
-> atribución pública dice IEBH. Con Angel se habla en inglés; lo del
+> atribución pública dice IEBH. Con IEBH se habla en inglés; lo del
 > proyecto va en español.
 
 ## 0. LA CLAVE, TODAVÍA
@@ -94,7 +94,7 @@ La firma era del 2026-08-29 (briefing 35 §6); el mecanismo es de hoy.
   ānehi» —siendo el participio vedhamāna—. Con la forma rara, el piso de
   las candidatas cae y el resguardo se debilita: un régimen que la
   medición nunca cubrió.
-- **Decisión de Angel (2026-08-30): el patrón lleva `frec_minima` =
+- **Decisión del IEBH (2026-08-30): el patrón lleva `frec_minima` =
   159** —la frecuencia del puesto 5.000, hasta donde llegó el informe— y
   fuera de ese régimen calla. Quedan **25** afirmaciones (18 antes mudas,
   7 antes posibles), cero falsas conocidas. **El precio:** formas
@@ -113,7 +113,7 @@ La firma era del 2026-08-29 (briefing 35 §6); el mecanismo es de hoy.
 
 - **`recursos/lexico/dpd-descomposiciones.tsv` está en la carpeta**: 77,2
   MB, 852.542 formas, del release v0.4.20260728 (sha256 del zip
-  verificada: `9ce57d36…`). Angel bajó el zip (el proxy del arenal deja
+  verificada: `9ce57d36…`). El IEBH bajó el zip (el proxy del arenal deja
   github.com pero bloquea los hosts de descarga); la cadena fue
   `exportar_dpd.py` → `preparar_descomposiciones.py`. **Gitignorado**,
   como los PDF — y para que el `git add -A` del ciclo no lo trague.
@@ -143,7 +143,7 @@ La firma era del 2026-08-29 (briefing 35 §6); el mecanismo es de hoy.
 
 ## 4 bis. hevaṃ SIN ESCALERA — el «=» tragado, y el arreglo triple
 
-Angel vio que `hevaṃ = hi evaṃ` salía adjudicado SIN secuencia, con la
+El IEBH vio que `hevaṃ = hi evaṃ` salía adjudicado SIN secuencia, con la
 escalera correcta derivada tres lecturas más abajo. La causa no era del
 motor: **dos casos se guardaron con la ecuación entera dentro de los
 componentes** —`«hevaṃ + = + hi + evaṃ»` y lo mismo en
@@ -160,7 +160,7 @@ como adjudicada.
 
 ## 5. AVISOS AL CHAT NUEVO
 
-- **El ciclo YA se negó una vez con razón**: Angel lo corrió con el §34 a
+- **El ciclo YA se negó una vez con razón**: el IEBH lo corrió con el §34 a
   medias en el árbol y el ciclo se detuvo («El árbol tiene cambios sin
   commit»). Es la conducta correcta; no «arreglarla». Coordinarse: nada
   a medias en el árbol cuando él corre el ciclo.
@@ -183,7 +183,7 @@ como adjudicada.
 ## 6. LO QUE SIGUE (en orden)
 
 1. **Rotar la clave** (§0 — dos sesiones ya).
-2. **Empujar los commits** si no se ha hecho (o el ciclo de Angel los
+2. **Empujar los commits** si no se ha hecho (o el ciclo del IEBH los
    lleva con el próximo lote).
 3. **Re-correr los dos informes con el testigo lleno** (§4) y montar el
    criterio de categoría gramatical para los proclíticos con

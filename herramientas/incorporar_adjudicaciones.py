@@ -5,7 +5,7 @@ Incorpora los veredictos de un lote de adjudicación a
 `recursos/solucionador/casos-reportados.json`.
 
     python3 herramientas/incorporar_adjudicaciones.py docs/solucionador/por-adjudicar-lote-1.md
-    python3 herramientas/incorporar_adjudicaciones.py ... --fuente "Angel, 2026-08-29 · lote 1"
+    python3 herramientas/incorporar_adjudicaciones.py ... --fuente "IEBH, 2026-08-29 · lote 1"
 
 Lee las líneas `VEREDICTO:` del lote. Acepta: una letra (`a`, `b`…) que
 señala la lectura listada; `no` (no es sandhi); `compuesto` (fuera del
@@ -117,7 +117,7 @@ def main():
                     help="ensayo: dice qué pasaría y NO escribe nada")
     a = ap.parse_args()
 
-    fuente = a.fuente or "Angel · " + os.path.basename(a.lote)
+    fuente = a.fuente or "IEBH · " + os.path.basename(a.lote)
     d = json.load(open(CASOS, encoding="utf-8"))
     por_clave = {cotejo(c["forma"]): c for c in d["casos"]}
 

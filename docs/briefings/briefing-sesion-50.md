@@ -5,7 +5,7 @@
 
 Este briefing supone leídos los de las sesiones 46, 47, 48 y 49, que siguen
 vigentes en todo lo que no se corrija aquí. **Y lo que aquí se corrige no es un
-detalle: a mitad de sesión Angel fotografió su propio ejemplar del Conspectus y
+detalle: a mitad de sesión IEBH fotografió su propio ejemplar del Conspectus y
 la fuente de imagen ha cambiado. Ver §2, que es lo primero que hay que leer.**
 
 ---
@@ -69,7 +69,7 @@ fotograma**, y es la única indicación que hizo falta.
 
 `.gitignore` excluye `*.pdf` y **esa línea no se ha tocado**. Pero este archivo
 no es como los otros: los cinco volúmenes se vuelven a bajar de archive.org, y
-éste **sale del ejemplar de Angel y no existe en ninguna otra parte**. Ahora
+éste **sale del ejemplar del IEBH y no existe en ninguna otra parte**. Ahora
 mismo vive sólo en su disco. **Es decisión suya** si quiere una excepción en
 `.gitignore`. Queda anotado en `recursos/saddaniti/LEEME.md`, con la orden de
 extracción:
@@ -92,7 +92,7 @@ cuatro llevan macrón**, y en la p. 1124 el contraste es interno y decisivo: en
 la misma línea, la i de `pariccheda` es un punto redondo y la de `vīcchā` una
 barra horizontal, a ×8.
 
-**Angel resolvió: `vicchā` es la lectura correcta.** Y tiene la lengua de su
+**El IEBH resolvió: `vicchā` es la lectura correcta.** Y tiene la lengua de su
 parte —el pāḷi abrevia ante grupo consonántico, de modo que el *vīpsā* sánscrito
 da *vicchā*— y también a Nandisena, cuyo lema de cabecera es `vicchā`. Lo más
 probable es que Smith arrastre la ī del sánscrito, como hace en `vibhatyanta`,
@@ -157,7 +157,7 @@ las líneas 1-6 de esa página son la fuente de todo 6.1.1.1: allí están tambi
 p. 1134.
 
 **La ficha de la 1134 no se ha tocado.** Lo cuenta la de `vyañjana` (6.2.1,
-p. 1137). Decidir si la 1134 se anota es de Angel.
+p. 1137). Decidir si la 1134 se anota es del IEBH.
 
 ### El «v. cependant» de la p. 1136, explicado
 
@@ -170,7 +170,7 @@ vevacanasadda». No es una remisión de apoyo sino una objeción a sí mismo.
 
 ## 5. Erratas y rarezas nuevas, ninguna corregida por cuenta propia
 
-Todas comprobadas sobre el ejemplar de Angel, que es lo que las hace afirmables.
+Todas comprobadas sobre el ejemplar del IEBH, que es lo que las hace afirmables.
 
 - **`aparadipanā` y `dipanā` con i BREVE (6.1.1.3, p. 1136)**, dos veces en dos
   líneas, donde el pāḷi pide `dīpanā`, de *dīpeti*. A ×8 el signo es un punto
@@ -303,7 +303,7 @@ ficha, sin tocar ninguna de las dos definiciones.
 
 ## 8. Cómo se sigue, en concreto
 
-    # la página impresa N del ejemplar de Angel (hoja = N − 1104)
+    # la página impresa N del ejemplar del IEBH (hoja = N − 1104)
     pdfimages -j -f $((N-1104)) -l $((N-1104)) \
       recursos/saddaniti/conspectus-ejemplar-angel.pdf /tmp/p
 
@@ -315,7 +315,7 @@ ficha, sin tocar ninguna de las dos definiciones.
 Lo que funcionó esta sesión:
 
 1. **Leer la página entera en 6-7 bandas horizontales** sobre la imagen nueva,
-   a escala 1,5-1,6×. Con el ejemplar de Angel esto basta para casi todo; con el
+   a escala 1,5-1,6×. Con el ejemplar del IEBH esto basta para casi todo; con el
    escaneo de archive.org había que bajar además a línea por línea.
 2. **Para una cantidad vocálica o un punto suscrito, recortar la palabra sola y
    ampliar ×8**, y —esto es lo que decide— **buscar en la MISMA LÍNEA una letra
@@ -325,36 +325,36 @@ Lo que funcionó esta sesión:
    subíndice suele dar la fuente entera de lo que Smith resume: la p. 32 explicó
    6.1.3.1, la p. 911 explicó 6.1.1.1 y de paso resolvió el `vibhatyanta` de la
    1134.
-4. **No usar `pdftoppm` sobre el PDF de Angel**: las cajas de página no son
+4. **No usar `pdftoppm` sobre el PDF del IEBH**: las cajas de página no son
    uniformes y reescala mal. `pdfimages -j` da el JPEG nativo al instante.
 
 ---
 
 ## 9. Lo que sigue pendiente, y no se ha tocado
 
-1. **`.gitignore` y el PDF de Angel.** Es lo más urgente de esta lista, porque
+1. **`.gitignore` y el PDF del IEBH.** Es lo más urgente de esta lista, porque
    es lo único irrecuperable: ver §2. Decisión suya.
 2. **Rehacer el cotejo con el Diplomado cuando estén las 44 páginas.** Sin
    cambios desde la sesión 46. **No debe correrse hasta el final.**
 3. **Repasar las ī de las páginas 1105-1115** —y ahora también las de 1116-1134,
-   con el ejemplar de Angel delante, que es lo que hace la revisión posible—.
+   con el ejemplar del IEBH delante, que es lo que hace la revisión posible—.
    Las 27 fichas con `duda` son el punto de partida y están todas marcadas.
 4. **Las tres fichas que la sesión 50 deja SABIENDO más de lo que dicen**, y que
-   sólo Angel puede mandar actualizar: `vicchā` en las pp. 1120 y 1124 (§3.1),
+   sólo IEBH puede mandar actualizar: `vicchā` en las pp. 1120 y 1124 (§3.1),
    `antojappana, ns` en la p. 1120 (§3.2) y `vibhatyanta : avibhatyanta` en la
    p. 1134 (§4).
 5. **La tarjeta de `/recursos/`**: la página existe y no está enlazada. Falta el
-   visto bueno de Angel (`herramientas/generar_indices.py`, y su copia inglesa).
+   visto bueno del IEBH (`herramientas/generar_indices.py`, y su copia inglesa).
 6. **El guion `herramientas/pagina_saddaniti.py`** sigue a la espera del visto
    bueno, como decía el briefing 49 §2.
 7. **Buscar la lista de siglas de Smith** en los preliminares del vol. 01, para
    cerrar `mṭ` y confirmar `ns` documentalmente.
-8. Las decisiones de Angel que siguen abiertas: **lahu** («leve» frente al
+8. Las decisiones del IEBH que siguen abiertas: **lahu** («leve» frente al
    «breve» del Diplomado), **niggahita/niggahīta**, **ensanchar āgama**, el
    `sukkhuccāraṇatthaṃ` de la p. 1108, el `avadhārana` de la p. 1119, el
    `saddhammaniti` de la p. 1131, el `tathāgatādāya` de la p. 1130 —que ahora SÍ
    se puede cotejar contra su ejemplar— y las tres notas de paradigmas que dicen
-   «con el visto bueno de Angel» donde la norma pide «el IEBH».
+   «con el visto bueno del IEBH» donde la norma pide «el IEBH».
 
 ---
 
@@ -370,5 +370,5 @@ Lo que funcionó esta sesión:
 | fichas con `conflicto` | 40 (eran 29) |
 | fichas con `duda` | 27 (eran 18) |
 | referencias verificadas contra la fuente | 6 nuevas, ninguna corregida |
-| lecturas corregidas por el ejemplar de Angel | 2 (`139,16`, `685,20`) |
-| dudas cerradas por el ejemplar de Angel | 4 |
+| lecturas corregidas por el ejemplar del IEBH | 2 (`139,16`, `685,20`) |
+| dudas cerradas por el ejemplar del IEBH | 4 |

@@ -33,7 +33,7 @@ modo que sí se recoge cuando se ve; y en la p. 1115 **la nota de la ficha vecin
 escribe `nâvisada` bien, con circunflejo, mientras el lema lo convierte en
 macrón**. El signo se vio al transcribir y se perdió al lematizar.
 
-De ahí **la propuesta que espera decisión de Angel: barrer las 44 páginas
+De ahí **la propuesta que espera decisión del IEBH: barrer las 44 páginas
 buscando anceps y circunflejos**, en vez de esperar a que la colación llegue a
 cada uno. Es un barrido de imagen, no de texto, porque el dato no está en los
 datos.
@@ -56,7 +56,7 @@ el `āmantana` de 5.1.0 (p. 1120)**, que sale al colacionar esa página.
 
 **Lo delicado**: la nota publicada de `āmantana` dice «Smith confirma la lectura
 correcta: āmantana», que es lo contrario de lo que imprime. **No se ha
-corregido** —corregir lo publicado es de Angel—; queda señalado en la `duda`.
+corregido** —corregir lo publicado es del IEBH—; queda señalado en la `duda`.
 
 ---
 
@@ -91,7 +91,7 @@ Dos lecciones que conviene no perder:
 
 | pág. | fichas | hallazgos | estado |
 | ---: | ---: | ---: | --- |
-| 1105 | 22 | 1 | resuelto por Angel |
+| 1105 | 22 | 1 | resuelto por IEBH |
 | 1106 | 50 | 2 + 2 avisos | dos `duda` |
 | 1107 | 43 | 1 | una `duda` |
 | 1108 | 40 | 1 + 2 avisos | una `duda`; una vieja confirmada |
@@ -103,7 +103,7 @@ Dos lecciones que conviene no perder:
 | 1114 | 49 | 1 | una `duda` |
 | 1115 | 38 | 2 | dos `duda` |
 | 1116 | 34 | 0 | limpia |
-| 1117 | 66 | 1 | resuelto por Angel |
+| 1117 | 66 | 1 | resuelto por IEBH |
 
 **Proporción real: unos 0,8 hallazgos por página**, cerca de la que el §3.2 de
 `revision-de-las-i.md` aventuraba. Cinco páginas de trece salen limpias.
@@ -125,7 +125,7 @@ correcto está en la `nota` y la normalización en el lema.
 
 ---
 
-## 5. Lo que espera decisión de Angel
+## 5. Lo que espera decisión del IEBH
 
 Todo está listado en `docs/glosario/revision-de-las-i.md` §5, puntos 7 a 15. En
 resumen:
@@ -157,7 +157,7 @@ Cada página, tres cosas, que son las del §6 del briefing 53 y no cambian:
 
 1. colacionar los lemas contra la plancha, **con control en la misma página**;
 2. **no tocar ningún lema**: lo que baile se marca con `duda` y se le enseña a
-   Angel;
+   IEBH;
 3. anotar el resultado en `docs/glosario/revision-de-las-i.md`.
 
 Y al terminar:
@@ -191,7 +191,7 @@ Y al terminar:
 
 **No ejecutar `git status` desde el entorno Linux de Claude sobre este
 repositorio**: crea `.git/index.lock` y no puede borrarlo por permisos del
-montaje, y el siguiente `git commit` de Angel falla. Si hace falta mirar el
+montaje, y el siguiente `git commit` del IEBH falla. Si hace falta mirar el
 estado, `git --no-optional-locks status --porcelain`, que no toma el bloqueo.
 `git log` y leer `.git/refs/` son seguros.
 

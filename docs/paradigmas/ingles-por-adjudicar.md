@@ -199,12 +199,12 @@ adjudicar en ellas. Lo que sigue es sólo la prosa.
 
 **N-Ā1**
 
-- ES — El índice escribía «asaddhā», con una sola s; se corrige a «assaddhā», como dan el documento, Rūpasiddhi (assaddhāsaddo, sección del napuṃsakaliṅga) y el canon, con el visto bueno de Angel (sesión 17). Por lo mismo se corrige «assadhā» (con una sola d) en la primera del plural.
+- ES — El índice escribía «asaddhā», con una sola s; se corrige a «assaddhā», como dan el documento, Rūpasiddhi (assaddhāsaddo, sección del napuṃsakaliṅga) y el canon, con el visto bueno del IEBH (sesión 17). Por lo mismo se corrige «assadhā» (con una sola d) en la primera del plural.
 - EN — The index wrote «asaddhā», with a single s; it is corrected to «assaddhā», as the document, Rūpasiddhi (assaddhāsaddo, in the napuṃsakaliṅga section) and the canon give it, with the approval of the IEBH (session 17). For the same reason «assadhā» (with a single d) is corrected in the first of the plural.
 
 **#1**
 
-- ES — El documento escribe «pañacahi» en la quinta; errata por «pañcahi», corregida aquí con el visto bueno de Angel (sesión 17).
+- ES — El documento escribe «pañacahi» en la quinta; errata por «pañcahi», corregida aquí con el visto bueno del IEBH (sesión 17).
 - EN — The document writes «pañacahi» in the fifth; a slip for «pañcahi», corrected here with the approval of the IEBH (session 17).
 
 **Sufijos-Inflexiones**
@@ -212,7 +212,7 @@ adjudicar en ellas. Lo que sigue es sólo la prosa.
 - ES — Kaccāyana da ‘to’ sólo en el sentido de la quinta (§248); sus usos en la séptima (ādito, majjhato…) y en la tercera (aniccato, dukkhato…) proceden de Rūpasiddhi, que los obtiene por yogavibhāga —dividir el sutta y tomar «Kvaci to» como regla independiente— en el vutti que sigue a su §265 (Imass’ i thaṃ-dāni-ha-to-dhesu ca).
 - EN — Kaccāyana gives ‘to’ only in the sense of the fifth (§248); its uses in the seventh (ādito, majjhato…) and in the third (aniccato, dukkhato…) come from Rūpasiddhi, which obtains them by yogavibhāga — dividing the sutta and taking «Kvaci to» as an independent rule — in the vutti that follows its §265 (Imass’ i thaṃ-dāni-ha-to-dhesu ca).
 
-- ES — El documento de origen escribe «sabbatha» en el ejemplo de ‘tha’; errata por «sabbattha» —con la ‘t’ duplicada por §28, como dan Kacc. §249 y Rū. §266—, corregida aquí con el visto bueno de Angel (sesión 17).
+- ES — El documento de origen escribe «sabbatha» en el ejemplo de ‘tha’; errata por «sabbattha» —con la ‘t’ duplicada por §28, como dan Kacc. §249 y Rū. §266—, corregida aquí con el visto bueno del IEBH (sesión 17).
 - EN — The source document writes «sabbatha» in the example of ‘tha’; a slip for «sabbattha» — with the ‘t’ doubled by §28, as Kacc. §249 and Rū. §266 give it — corrected here with the approval of the IEBH (session 17).
 
 ## 5. El texto de los sufijos
@@ -358,9 +358,9 @@ Cuatro sitios donde el borrador tomó una decisión y no una traducción:
    dan las dos «sabba (all)»; «ta (ese)» y «ta (esa)», las dos «ta
    (that)». El subtítulo —masculine, feminine, neuter— sigue
    distinguiéndolas, así que no se pierde nada en la página.
-4. **«con el visto bueno de Angel»** aparece en TRES notas publicadas
+4. **«con el visto bueno del IEBH»** aparece en TRES notas publicadas
    (N-Ā1, #1 y la segunda de Sufijos-Inflexiones). La regla del
-   proyecto es que la atribución pública dice IEBH, nunca «Angel»: el
+   proyecto es que la atribución pública dice IEBH, nunca «el IEBH»: el
    inglés pone «with the approval of the IEBH», y **el español habría
    que corregirlo igual**. No se ha tocado: es la edición, y la decisión
    es del IEBH.

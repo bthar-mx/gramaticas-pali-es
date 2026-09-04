@@ -1,6 +1,6 @@
 # Veredictos de revisión — 2026-08-30 (lote hecho a mano en la sesión)
 
-*Pedido de Angel, 2026-08-30, al ver «tveva» sin adjudicar y con siete
+*Pedido del IEBH, 2026-08-30, al ver «tveva» sin adjudicar y con siete
 lecturas: «We do not need the 7 readings just one. ti + eva». Se adjudica la
 lectura citativa, que es la del primer discurso.*
 
@@ -20,7 +20,7 @@ NOTA DEL REVISOR: La autoridad es Saddanīti Suttamālā 49, «Evass' ekāre iti
 
 ## Observaciones del revisor
 
-La decisión de enseñar una sola lectura la tomó Angel a la vista de las
+La decisión de enseñar una sola lectura la tomó IEBH a la vista de las
 siete: el lector de gramática viene a ver la respuesta de la tradición, y
 «señal posible · 7 lecturas» no se la da. El coste queda escrito en la nota
 de la tarjeta y en el documento, para que nadie lo descubra por sorpresa.
