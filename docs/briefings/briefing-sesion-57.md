@@ -172,8 +172,8 @@ gramaticales que ninguna de las tres fuentes del glosario tiene como lema
   («**ṇeyya**paccayo hoti…»). Cada candidato se comprobó atestiguado por
   conteo en las cuatro obras. Guion: `herramientas/cosechar_terminos_faltantes.py`
   (documenta la lista; las cifras vienen de la sesión).
-- **Resultado: 125 filas** en `docs/glosario/terminos-faltantes.json` —
-  **51 términos**, **70 sufijos** sin lema (ṇa, ṇika, tā, vī, kvi, tuṃ, yu,
+- **Resultado: 138 filas** (125 de la primera pasada y 13 de la segunda, sobre la Rūpasiddhi: anuttakāla, uttakāla, saṅkhyāna, saṅkhyeyya, akārita, sakārita, payujjamāna, appayujjamāna, -ggahaṇa, kriyālakkhaṇa, bahuvacananiddesa, āsīsana, tappakativacana) en `docs/glosario/terminos-faltantes.json` —
+  **64 términos**, **70 sufijos** sin lema (ṇa, ṇika, tā, vī, kvi, tuṃ, yu,
   ṇya, ṇāpaya…) y **4 designaciones** de Kaccāyana (gha, jha, la, ga; pa ya
   estaba)—, cada una con ES y EN propuestos, comentario, referencia y
   apariciones por obra. Los de más peso: **sādhana** (Thitzana 379 veces),

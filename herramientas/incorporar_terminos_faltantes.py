@@ -93,6 +93,15 @@ def main():
     json.dump(ing, open(INGLES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     open(INGLES, "a", encoding="utf-8").write("\n")
     print("Incorporados {0}: {1}".format(len(puestos), ", ".join(puestos)))
+    # Las notas del IEBH en las filas aceptadas se enseñan aquí para que se
+    # lean antes de dar el trabajo por hecho: pueden pedir un cambio que el
+    # guion no sabe hacer («mejor X en inglés»).
+    con_nota = [(k, vd["nota"]) for k, vd in veredictos.items()
+                if vd.get("veredicto") == "acepta" and (vd.get("nota") or "").strip()]
+    if con_nota:
+        print("NOTAS DEL IEBH en filas aceptadas, léanse ({0}):".format(len(con_nota)))
+        for k, n in con_nota:
+            print("  · {0}: {1}".format(k, n.strip()))
     if saltados:
         print("Ya estaban en comun/glosario.md y se saltaron: " + ", ".join(saltados))
     print("Ahora: python3 herramientas/generar_todo.py")

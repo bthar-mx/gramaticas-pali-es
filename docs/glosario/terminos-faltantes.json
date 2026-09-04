@@ -1633,5 +1633,194 @@
   "fuentes": {
    "Nāma": 1
   }
+ },
+ {
+  "id": "anuttakāla",
+  "termino": "anuttakāla",
+  "tipo": "término",
+  "es": "(en) tiempo no especificado",
+  "en": "(in) unspecified time",
+  "comentario": "Rū. Ākhyāta: «anu samīpe uttakālo anuttakālo»; condición del optativo (sattamī) y del imperativo. El glosario tiene anuttakālika (Smith), no el sustantivo. Segunda pasada, Rūpasiddhi.",
+  "ref": "Rū. ad Kacc. §… (Sattamī); Kacc. Ākhyāta",
+  "fuentes": {
+   "Kacc": 8,
+   "Rūp": 6,
+   "Nyāsa": 7,
+   "Thitz": 5
+  }
+ },
+ {
+  "id": "uttakāla",
+  "termino": "uttakāla",
+  "tipo": "término",
+  "es": "tiempo especificado; tiempo (ya) enunciado",
+  "en": "stated time; specified time",
+  "comentario": "Pareja de anuttakāla («vutta-kāla», con la elisión de la v- propia de la Rūpasiddhi). 50 apariciones. Segunda pasada.",
+  "ref": "Rū. Ākhyāta",
+  "fuentes": {
+   "Kacc": 15,
+   "Rūp": 10,
+   "Nyāsa": 15,
+   "Thitz": 10
+  }
+ },
+ {
+  "id": "saṅkhyāna",
+  "termino": "saṅkhyāna",
+  "tipo": "término",
+  "es": "el contar; la cuenta (frente a saṅkhyeyya, lo contado)",
+  "en": "counting (as opposed to saṅkhyeyya, the thing counted)",
+  "comentario": "Rū. Taddhita: «te ca saṅkhyāne, saṅkhyeyye ca vattante»: el numeral como cuenta y el numeral como cosa contada. El glosario tiene saṅkhyā y saṅkhyeyyappadhāna (Smith), no la pareja. Segunda pasada.",
+  "ref": "Rū. Taddhita (saṅkhyā)",
+  "fuentes": {
+   "Kacc": 22,
+   "Rūp": 27,
+   "Nyāsa": 15,
+   "Thitz": 24
+  }
+ },
+ {
+  "id": "saṅkhyeyya",
+  "termino": "saṅkhyeyya",
+  "tipo": "término",
+  "es": "lo contado; lo numerable",
+  "en": "the thing counted; the numerable",
+  "comentario": "Pareja de saṅkhyāna. Segunda pasada.",
+  "ref": "Rū. Taddhita",
+  "fuentes": {
+   "Kacc": 3,
+   "Rūp": 4,
+   "Thitz": 2
+  }
+ },
+ {
+  "id": "akārita",
+  "termino": "akārita",
+  "tipo": "término",
+  "es": "(raíz) sin causativo; no causativizada",
+  "en": "(root) without causative",
+  "comentario": "Kacc. Ākhyāta / Kibbidhāna: «sakāritehi ca dhātūhi», «akāritesu». kārita sí está. Segunda pasada.",
+  "ref": "Kacc. Ākhyāta, Kibbidhāna",
+  "fuentes": {
+   "Kacc": 13,
+   "Rūp": 11,
+   "Nyāsa": 23,
+   "Thitz": 4
+  }
+ },
+ {
+  "id": "sakārita",
+  "termino": "sakārita",
+  "tipo": "término",
+  "es": "(raíz) con causativo; causativizada",
+  "en": "(root) with causative",
+  "comentario": "Pareja de la anterior. Segunda pasada.",
+  "ref": "Kacc. Kibbidhāna",
+  "fuentes": {
+   "Kacc": 10,
+   "Rūp": 8,
+   "Nyāsa": 8,
+   "Thitz": 4
+  }
+ },
+ {
+  "id": "payujjamāna",
+  "termino": "payujjamāna",
+  "tipo": "término",
+  "es": "(sujeto) empleado; expreso en la oración",
+  "en": "(subject) employed; expressed in the sentence",
+  "comentario": "Kacc. §… «tumhe majjhimo»: «tumhasadde payujjamāne pi appayujjamāne pi»: la persona verbal vale tanto si el pronombre se expresa como si se calla. 78 apariciones. Segunda pasada.",
+  "ref": "Kacc. Ākhyāta (purisa)",
+  "fuentes": {
+   "Kacc": 25,
+   "Rūp": 12,
+   "Nyāsa": 22,
+   "Thitz": 19
+  }
+ },
+ {
+  "id": "appayujjamāna",
+  "termino": "appayujjamāna",
+  "tipo": "término",
+  "es": "(sujeto) no empleado; tácito",
+  "en": "(subject) not employed; unexpressed",
+  "comentario": "Pareja de payujjamāna. Segunda pasada.",
+  "ref": "Kacc. Ākhyāta",
+  "fuentes": {
+   "Kacc": 11,
+   "Rūp": 5,
+   "Nyāsa": 3,
+   "Thitz": 6
+  }
+ },
+ {
+  "id": "-ggahaṇa (caggahaṇa, vāggahaṇa)",
+  "termino": "-ggahaṇa (caggahaṇa, vāggahaṇa)",
+  "tipo": "término",
+  "es": "la mención de «ca» / de «vā» (en el aforismo); «por la mención de ca…»",
+  "en": "the mention of «ca» / «vā» (in the sutta); «by the mention of ca…»",
+  "comentario": "Fórmula del comentario: «caggahaṇena» = por la mención de la partícula ca se arrastran otras funciones. 379 y 299 apariciones. La norma ya tiene «ādiggahaṇena» y «puna … ggahaṇena» como fórmulas; falta el término. Segunda pasada.",
+  "ref": "Kacc. §… vuttis; Nyāsa passim",
+  "fuentes": {
+   "Kacc": 57,
+   "Rūp": 2,
+   "Nyāsa": 551,
+   "Thitz": 68
+  }
+ },
+ {
+  "id": "kriyālakkhaṇa",
+  "termino": "kriyālakkhaṇa",
+  "tipo": "término",
+  "es": "que tiene la acción por característica (definición del verbo)",
+  "en": "having action as its characteristic (definition of the verb)",
+  "comentario": "Rū. Ākhyāta: «kālakārakapurisa-kriyālakkhaṇam ākhyātikan ti». Segunda pasada.",
+  "ref": "Rū. Ākhyāta, inicio",
+  "fuentes": {
+   "Kacc": 2,
+   "Rūp": 2
+  }
+ },
+ {
+  "id": "bahuvacananiddesa",
+  "termino": "bahuvacananiddesa",
+  "tipo": "término",
+  "es": "indicación en plural (en el aforismo, para abarcar más de un caso)",
+  "en": "plural statement (in the sutta, to cover more than one case)",
+  "comentario": "Rū.: «“tappaccayesū” ti bahuvacananiddesena tuṃ-tvādīsu pi». niddesa sí está. Segunda pasada.",
+  "ref": "Rū. Kibbidhāna",
+  "fuentes": {
+   "Kacc": 2,
+   "Rūp": 2,
+   "Nyāsa": 2
+  }
+ },
+ {
+  "id": "āsīsana",
+  "termino": "āsīsana",
+  "tipo": "término",
+  "es": "deseo; bendición (sentido del imperativo)",
+  "en": "wishing; blessing (sense of the imperative)",
+  "comentario": "Rū.: «āsīsanam āsiṭṭho». āsiṭṭha ya está (tanda 2 del inglés). Segunda pasada.",
+  "ref": "Rū. Ākhyāta",
+  "fuentes": {
+   "Kacc": 2,
+   "Rūp": 3
+  }
+ },
+ {
+  "id": "tappakativacana",
+  "termino": "tappakativacana",
+  "tipo": "término",
+  "es": "expresión de «hecho de eso» (sentido del sufijo maya)",
+  "en": "expression of «made of that» (sense of the suffix maya)",
+  "comentario": "Rū. Taddhita: «tappakatiyā vacanaṃ kathanaṃ tappakativacanaṃ». El glosario tiene tappakata (Smith); tappakati va en esta lista. Segunda pasada.",
+  "ref": "Kacc. Taddhita (maya)",
+  "fuentes": {
+   "Kacc": 5,
+   "Rūp": 3,
+   "Nyāsa": 1,
+   "Thitz": 3
+  }
  }
 ]
