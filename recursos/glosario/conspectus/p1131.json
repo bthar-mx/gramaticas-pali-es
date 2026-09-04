@@ -1,0 +1,418 @@
+{
+ "pagina": 1131,
+ "terminos": [
+  {
+   "pali": "suttavibhaṅga",
+   "fr": "les sikkhāpada (5.3.2.1) du Vinaya (Index A 1) sont contenus dans le Pātimokkha (développé en suttavibhaṅga) et dans les Khandhaka (Mahāvagga, Cūḷavagga) auxquels est venu s'ajouter le Parivāra ceylanais",
+   "es": "los sikkhāpada (5.3.2.1) del Vinaya (Index A 1) están contenidos en el Pātimokkha (desarrollado en suttavibhaṅga) y en los Khandhaka (Mahāvagga, Cūḷavagga), a los que ha venido a añadirse el Parivāra ceilanés",
+   "en": "the sikkhāpada (5.3.2.1) of the Vinaya (Index A 1) are contained in the Pātimokkha (developed in the suttavibhaṅga) and in the Khandhaka (Mahāvagga, Cūḷavagga), to which the Ceylonese Parivāra came to be added",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.2.1",
+   "nota": "La frase empieza al pie de la p. 1130. Smith pasa aquí de los nombres del canon a sus divisiones, piṭaka por piṭaka. El suttavibhaṅga es el desarrollo comentado de cada regla del Pātimokkha, y ya salió en 5.3.2.1 (p. 1128) con el nombre de sikkhāpadavibhaṅga."
+  },
+  {
+   "pali": "sutta",
+   "fr": "les sermons sutta (pariyāya) du Suttanta (Index A 2), en cinq nikāya",
+   "es": "los sermones sutta (pariyāya) del Suttanta (Index A 2), en cinco nikāya",
+   "en": "the discourses sutta (pariyāya) of the Suttanta (Index A 2), in five nikāya",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "variantes": [
+    "pariyāya"
+   ],
+   "ref_interna": "5.3.2.1",
+   "nota": "Segunda aparición: en 5.3.2.1 (p. 1128) sutta era el sermón como marco textual. Smith añade pariyāya entre paréntesis, «la exposición», que es como el canon suele nombrar un discurso por su tema."
+  },
+  {
+   "pali": "nikāya",
+   "fr": "en cinq nikāya, se divisent en vagga, paññāsaka, saṃyutta, nipāta",
+   "es": "en cinco nikāya, se dividen en vagga, paññāsaka, saṃyutta, nipāta",
+   "en": "in five nikāya, divided into vagga, paññāsaka, saṃyutta, nipāta",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Colección». Cabecera de la serie de las cuatro divisiones internas que siguen."
+  },
+  {
+   "pali": "vagga",
+   "fr": "se divisent en vagga",
+   "es": "se dividen en vagga",
+   "en": "divided into vagga",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "conflicto": "Homónimo, y de los más engañosos que han salido, porque los dos sentidos son de manual. Aquí vagga es la SECCIÓN de un nikāya; el vagga de Nandisena es fonético: «grupo; las consonantes agrupadas… son 25, en cinco grupos». En una gramática pāḷi vagga es casi siempre lo segundo, y aquí es lo primero.",
+   "nota": "«Sección, capítulo»."
+  },
+  {
+   "pali": "paññāsaka",
+   "fr": "se divisent en … paññāsaka",
+   "es": "se dividen en … paññāsaka",
+   "en": "divided into … paññāsaka",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Cincuentena»: el grupo de cincuenta suttas, división propia del Majjhima."
+  },
+  {
+   "pali": "saṃyutta",
+   "fr": "se divisent en … saṃyutta",
+   "es": "se dividen en … saṃyutta",
+   "en": "divided into … saṃyutta",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Agrupado»: la sección temática que da nombre al Saṃyutta-nikāya."
+  },
+  {
+   "pali": "nipāta",
+   "fr": "se divisent en … nipāta",
+   "es": "se dividen en … nipāta",
+   "en": "divided into … nipāta",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "conflicto": "Homónimo. Aquí nipāta es la SECCIÓN NUMÉRICA del Aṅguttara —«el de los unos», «el de los doses»—; el nipāta de Nandisena, y el de 4.2 de este mismo Conspectus, es la PARTÍCULA: «no denotan substancia; tienen la función de adverbios, conjunciones…». Son dos términos con la misma forma.",
+   "nota": "La división por número de términos, propia del Aṅguttara-nikāya y del Suttanipāta."
+  },
+  {
+   "pali": "khuddakāni",
+   "fr": "enfin le Suttanta comprend des textes autonomes khuddakāni (Index A 2.5.1 … 2.5.15)",
+   "es": "por fin el Suttanta comprende textos autónomos khuddakāni (Index A 2.5.1 … 2.5.15)",
+   "en": "finally the Suttanta comprises independent texts khuddakāni (Index A 2.5.1 … 2.5.15)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "Index A 2.5.1 … 2.5.15",
+   "variantes": [
+    "khuddaka"
+   ],
+   "nota": "Se transcribe en PLURAL NEUTRO, como está impreso: «los menores», los libros del Khuddaka-nikāya. Smith parte la palabra de línea, «khudda-/kāni»."
+  },
+  {
+   "pali": "mātikā",
+   "fr": "les définitions, subdivisions, etc., de l'Abhidhamma (ib. 3.1 … 3.7) s'alignent selon les registres mātikā (5.3.2.1)",
+   "es": "las definiciones, subdivisiones, etc., del Abhidhamma (ib. 3.1 … 3.7) se alinean según los registros mātikā (5.3.2.1)",
+   "en": "the definitions, subdivisions, etc., of the Abhidhamma (ib. 3.1 … 3.7) are ordered according to the registers mātikā (5.3.2.1)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.2.1",
+   "nota": "Segunda aparición: la mātikā de 5.3.2.1 (p. 1128) como armazón de los siete libros, ahora como principio de ordenación de sus contenidos."
+  },
+  {
+   "pali": "pakaraṇa",
+   "fr": "les pakaraṇa (5.3.3.3. C), etc., se divisent p. ex. en kappa (Kc), pariccheda (Vm, Mhv, Abhidh-av, Sd), kaṇḍa (Mg)",
+   "es": "los pakaraṇa (5.3.3.3. C), etc., se dividen p. ej. en kappa (Kc), pariccheda (Vm, Mhv, Abhidh-av, Sd), kaṇḍa (Mg)",
+   "en": "the pakaraṇa (5.3.3.3. C), etc., are divided e.g. into kappa (Kc), pariccheda (Vm, Mhv, Abhidh-av, Sd), kaṇḍa (Mg)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.3",
+   "nota": "Segunda aparición: en 5.3.2.1 (p. 1128) el pakaraṇa era el libro del Abhidhamma; aquí es la obra postcanónica, con sus tres modos de dividirse y con las siglas de las obras que usan cada uno."
+  },
+  {
+   "pali": "kappa",
+   "fr": "se divisent p. ex. en kappa (Kc)",
+   "es": "se dividen p. ej. en kappa (Kc)",
+   "en": "divided e.g. into kappa (Kc)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "IMPORTANTE PARA ESTE REPOSITORIO: la sigla Kc es Kaccāyana, y kappa es precisamente el nombre que da a sus capítulos —sandhikappa, nāmakappa—. Aquí Smith documenta que ésa es la división propia de esa obra, frente al pariccheda de otras. Nada que ver con kappa «eón» ni con el kappa de la métrica."
+  },
+  {
+   "pali": "pariccheda",
+   "fr": "pariccheda (Vm, Mhv, Abhidh-av, Sd)",
+   "es": "pariccheda (Vm, Mhv, Abhidh-av, Sd)",
+   "en": "pariccheda (Vm, Mhv, Abhidh-av, Sd)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.2.1",
+   "nota": "CUARTA aparición del término: «limitar (precisar)» en 4.1.2 (p. 1117), «délimitation» en 4.2.3.2 (p. 1119) y en 5.2.1 (p. 1124), y aquí el capítulo de una obra —el Visuddhimagga, el Mahāvaṃsa, el Abhidhammāvatāra y la Saddanīti dividen así—. Sd es la propia Saddanīti."
+  },
+  {
+   "pali": "kaṇḍa",
+   "fr": "kaṇḍa (Mg)",
+   "es": "kaṇḍa (Mg)",
+   "en": "kaṇḍa (Mg)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Tramo, sección». Mg es Moggallāna, cuya gramática divide en kaṇḍa; Kaccāyana, en kappa. La diferencia es de escuela."
+  },
+  {
+   "pali": "aṅga",
+   "fr": "tandis que les neuf aṅga (Sp 28,4—7) sont des genres plutôt que des cadres",
+   "es": "mientras que los nueve aṅga (Sp 28,4—7) son géneros más que marcos",
+   "en": "whereas the nine aṅga (Sp 28,4—7) are genres rather than frames",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "Sp 28,4—7",
+   "nota": "Los nueve «miembros» de la palabra del Buddha —sutta, geyya, veyyākaraṇa, gāthā, udāna, itivuttaka, jātaka, abbhutadhamma, vedalla—. La distinción de Smith es fina y vale la pena retenerla: son clases de texto, no unidades de división."
+  },
+  {
+   "pali": "bhāṇavāra",
+   "fr": "le bhāṇavāra (= 8000 syllabes) est une unité numérique (= 250 gantha; 1 gantha = 1 gāthā = 4 pada; 1 pada = 8 akkhara); les 22 chapitres du Dīpavaṃsa s'appellent pourtant bhāṇavāra",
+   "es": "el bhāṇavāra (= 8000 sílabas) es una unidad numérica (= 250 gantha; 1 gantha = 1 gāthā = 4 pada; 1 pada = 8 akkhara); los 22 capítulos del Dīpavaṃsa se llaman, sin embargo, bhāṇavāra",
+   "en": "the bhāṇavāra (= 8000 syllables) is a numerical unit (= 250 gantha; 1 gantha = 1 gāthā = 4 pada; 1 pada = 8 akkhara); the 22 chapters of the Dīpavaṃsa are nevertheless called bhāṇavāra",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Turno de recitación». Smith da la cuenta entera y añade el «pourtant»: el Dīpavaṃsa usa la palabra como nombre de capítulo, contra su sentido de medida."
+  },
+  {
+   "pali": "gantha",
+   "fr": "(= 250 gantha; 1 gantha = 1 gāthā = 4 pada)",
+   "es": "(= 250 gantha; 1 gantha = 1 gāthā = 4 pada)",
+   "en": "(= 250 gantha; 1 gantha = 1 gāthā = 4 pada)",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Nudo, atadura», y de ahí la unidad de texto de 32 sílabas, el śloka indio. Smith lo iguala a la gāthā."
+  },
+  {
+   "pali": "gāthā",
+   "fr": "1 gantha = 1 gāthā = 4 pada",
+   "es": "1 gantha = 1 gāthā = 4 pada",
+   "en": "1 gantha = 1 gāthā = 4 pada",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "La estrofa, de cuatro pādas."
+  },
+  {
+   "pali": "pada",
+   "fr": "1 gāthā = 4 pada; 1 pada = 8 akkhara",
+   "es": "1 gāthā = 4 pada; 1 pada = 8 akkhara",
+   "en": "1 gāthā = 4 pada; 1 pada = 8 akkhara",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.2.2",
+   "nota": "Aquí pada es el VERSO, el cuarto de estrofa, no la palabra de 5.3.2.2 (p. 1129) ni el miembro del compuesto de 5.2.0. Nótese que Smith lo escribe pada, sin macrón, donde la métrica suele imprimir pāda."
+  },
+  {
+   "pali": "akkhara",
+   "fr": "1 pada = 8 akkhara",
+   "es": "1 pada = 8 akkhara",
+   "en": "1 pada = 8 akkhara",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.2.2",
+   "nota": "Aquí la sílaba como unidad de cuenta, tercer oficio del término: el fonema en 1.1, el mínimo de expresión en 5.3.2.2 (p. 1129) y la sílaba métrica aquí."
+  },
+  {
+   "pali": "peyyāla",
+   "fr": "pour le système d'abrègement peyyāla v. 683,25 … 684,12—685,2",
+   "es": "para el sistema de abreviación peyyāla v. 683,25 … 684,12—685,2",
+   "en": "for the system of abridgement peyyāla see 683,25 … 684,12—685,2",
+   "epigrafe": "5.3.3.1",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "683,25 … 684,12—685,2",
+   "nota": "El «etcétera» del canon: la fórmula con que el texto indica que un pasaje se repite sin escribirlo. Cierra 5.3.3.1."
+  },
+  {
+   "pali": "bhāsā",
+   "fr": "A l'exclusion de toute autre langue connue bhāsā (Vibha 387,23—388,14; Spṭ ad Sp 127,13; pṭ ad Sv 176,24—177,7)",
+   "es": "Con exclusión de toda otra lengua conocida bhāsā (Vibha 387,23—388,14; Spṭ ad Sp 127,13; pṭ ad Sv 176,24—177,7)",
+   "en": "To the exclusion of every other known language bhāsā (Vibha 387,23—388,14; Spṭ ad Sp 127,13; pṭ ad Sv 176,24—177,7)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "Vibha 387,23—388,14; Spṭ ad Sp 127,13; pṭ ad Sv 176,24—177,7",
+   "nota": "ABRE 5.3.3.2, la lengua del canon, y es el epígrafe más doctrinal de los transcritos hasta ahora: qué lengua es el pāḷi según la tradición."
+  },
+  {
+   "pali": "tantiṃ āropeti",
+   "fr": "le Bouddha formule textuellement tantiṃ āropeti (cf. tantī ṭhapitā; pāḷim-ārūḷha) sa prédication",
+   "es": "el Buddha formula textualmente tantiṃ āropeti (cf. tantī ṭhapitā; pāḷim-ārūḷha) su predicación",
+   "en": "the Buddha formulates his preaching textually tantiṃ āropeti (cf. tantī ṭhapitā; pāḷim-ārūḷha)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "variantes": [
+    "tantī ṭhapitā",
+    "pāḷim-ārūḷha"
+   ],
+   "nota": "Se transcribe en DOS PALABRAS y con el verbo en 3.ª persona, como está impreso: «pone en texto». Smith da otras dos maneras de decirlo, la segunda con el guión que él imprime, pāḷim-ārūḷha, «subido al texto». cf. tantī y pāḷi en 5.3.3.1 (p. 1130), y ārope- reaparece unas líneas más abajo en āropetuṃ."
+  },
+  {
+   "pali": "Magadha(vohāra)",
+   "fr": "sa prédication en «Pali» Magadha(vohāra)",
+   "es": "su predicación en «Pali» Magadha(vohāra)",
+   "en": "his preaching in «Pali» Magadha(vohāra)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "variantes": [
+    "magadhavohāra"
+   ],
+   "nota": "Se transcribe como está impreso, con «(vohāra)» entre paréntesis pegado. La a inicial va SIN macrón —comprobado a 400 dpi—, de modo que es Magadha, el país, y no el adjetivo Māgadha. Nótese además que Smith escribe «Pali» entre comillas y sin diacríticos, a la europea, mientras que la voz pāḷi con diacríticos, en 5.3.3.1 (p. 1130), nombra el texto canónico. Son dos usos distintos y él los distingue tipográficamente."
+  },
+  {
+   "pali": "Māgadhikā bhāsā",
+   "fr": "Māgadhikā bhāsā (Māgadhikā nirutti, cf. sāsanayutti, saddhammaniti)",
+   "es": "Māgadhikā bhāsā (Māgadhikā nirutti, cf. sāsanayutti, saddhammaniti)",
+   "en": "Māgadhikā bhāsā (Māgadhikā nirutti, cf. sāsanayutti, saddhammaniti)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "variantes": [
+    "Māgadhikā nirutti"
+   ],
+   "nota": "Se transcribe en DOS PALABRAS, como está impreso. «La lengua magadhense». Aquí sí lleva macrón, a diferencia del Magadha(vohāra) de la línea anterior."
+  },
+  {
+   "pali": "sāsanayutti",
+   "fr": "(cf. sāsanayutti, saddhammaniti)",
+   "es": "(cf. sāsanayutti, saddhammaniti)",
+   "en": "(cf. sāsanayutti, saddhammaniti)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Lo conforme a la Enseñanza»: otro nombre de la lengua del canon, por lo que dice y no por dónde se habla."
+  },
+  {
+   "pali": "saddhammaniti",
+   "fr": "(cf. sāsanayutti, saddhammaniti)",
+   "es": "(cf. sāsanayutti, saddhammaniti)",
+   "en": "(cf. sāsanayutti, saddhammaniti)",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "duda": "La i de -niti va sin macrón en el impreso, y la regla de la sesión 47 dice que la cantidad de una i no se afirma desde la imagen. Aquí la lengua tampoco decide con seguridad: la forma que cabría esperar es saddhammanīti, «guía del Dhamma verdadero», con el mismo -nīti de Saddanīti, la obra que se está indizando. Se transcribe como se lee y queda para cotejar.",
+   "nota": "Tercer nombre de la lengua del canon en esta serie, junto a sāsanayutti."
+  },
+  {
+   "pali": "ariyavohāra",
+   "fr": "langue noble ariyavohāra",
+   "es": "lengua noble ariyavohāra",
+   "en": "noble speech ariyavohāra",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«El habla de los nobles». cf. vohāra, unas líneas más abajo, donde es el uso corriente del mundo: el mismo término con los dos valores."
+  },
+  {
+   "pali": "mūlabhāsā",
+   "fr": "primordiale mūlabhāsā",
+   "es": "primordial mūlabhāsā",
+   "en": "primordial mūlabhāsā",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«La lengua raíz»: la tesis tradicional de que el māgadhī es la lengua original de los seres."
+  },
+  {
+   "pali": "sabhāvanirutti",
+   "fr": "ou «naturelle» sabhāvanirutti",
+   "es": "o «natural» sabhāvanirutti",
+   "en": "or «natural» sabhāvanirutti",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«El habla conforme a la naturaleza propia». Las comillas de «naturelle» son de Smith, y marcan que la califica él, no que la suscriba."
+  },
+  {
+   "pali": "chandaso … āropetuṃ",
+   "fr": "tout en réprouvant le projet (Vin II 139,11; Sp) d'astreindre ces textes à des règles orthoépiques pour la récitation : chandaso (⊃: vācanāmaggaṃ) āropetuṃ, «comme le Veda (est fixé) en langue sanskrite»",
+   "es": "reprobando al mismo tiempo el propósito (Vin II 139,11; Sp) de someter esos textos a reglas ortoépicas para la recitación: chandaso (⊃: vācanāmaggaṃ) āropetuṃ, «como el Veda (está fijado) en lengua sánscrita»",
+   "en": "while reproving the project (Vin II 139,11; Sp) of subjecting these texts to orthoepic rules for recitation: chandaso (⊃: vācanāmaggaṃ) āropetuṃ, «as the Veda (is fixed) in the Sanskrit tongue»",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "Vin II 139,11",
+   "variantes": [
+    "vācanāmaggaṃ",
+    "chandaso"
+   ],
+   "nota": "El pasaje célebre del Vinaya en que el Buddha rechaza que su palabra se ponga en verso védico. El signo ⊃ es el «es decir» de Smith, y aquí lo imprime seguido de dos puntos, «⊃:», glosando chandaso por vācanāmaggaṃ, «el modo de recitar»."
+  },
+  {
+   "pali": "brahmassara",
+   "fr": "le Bouddha, à la voix de Brahma brahmassara (v. 604,1—7; Sv 450,30, 640,29—641,5), se servant du vocabulaire tout prêt",
+   "es": "el Buddha, de voz de Brahma brahmassara (v. 604,1—7; Sv 450,30, 640,29—641,5), sirviéndose del vocabulario ya hecho",
+   "en": "the Buddha, of Brahmā's voice brahmassara (see 604,1—7; Sv 450,30, 640,29—641,5), using the ready-made vocabulary",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "604,1—7; Sv 450,30, 640,29—641,5",
+   "nota": "Una de las treinta y dos marcas del gran hombre. De aquí cuelga la caracterización del habla del Buddha que ocupa el resto de la página."
+  },
+  {
+   "pali": "nipphanna",
+   "fr": "se servant du vocabulaire tout prêt nipphanna",
+   "es": "sirviéndose del vocabulario ya hecho nipphanna",
+   "en": "using the ready-made vocabulary nipphanna",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Producido, acabado»: el Buddha no inventa palabras, usa las que la lengua ya tiene."
+  },
+  {
+   "pali": "niratthaka",
+   "fr": "n'énonce rien qui soit oiseux niratthaka",
+   "es": "no enuncia nada ocioso niratthaka",
+   "en": "utters nothing idle niratthaka",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«Sin sentido, sin provecho»."
+  },
+  {
+   "pali": "apanetabba",
+   "fr": "ou à retrancher apanetabba",
+   "es": "o que haya de suprimirse apanetabba",
+   "en": "or to be struck out apanetabba",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_interna": "5.3.3.1",
+   "nota": "Segunda aparición del término: en 5.3.3.1 (p. 1130) estaba en la cita sobre los redactores del concilio, «apanetabbaṃ … apanayiṃsu». Allí en acusativo, aquí en el tema."
+  },
+  {
+   "pali": "khalita",
+   "fr": "ne se laissant jamais entraîner à des lapsus (khalita) par le torrent du discours : na desanāsote patati",
+   "es": "sin dejarse arrastrar nunca a lapsus (khalita) por el torrente del discurso: na desanāsote patati",
+   "en": "never letting himself be carried into slips (khalita) by the torrent of discourse: na desanāsote patati",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "variantes": [
+    "na desanāsote patati"
+   ],
+   "ref_interna": "5.3.2.3",
+   "nota": "«Tropiezo». cf. niggahaṭṭhāna en 5.3.2.3 (p. 1130), el desliz que da pie a la censura. La frase pāḷi —«no cae en la corriente de la exposición»— es la imagen con que la tradición dice que al Buddha no se le va la lengua."
+  },
+  {
+   "pali": "sāvaka",
+   "fr": "peu soucieux des règles métriques, etc. (1.3.2; v. 842,28—843,25), il est pourtant, comme aussi ses disciples sāvaka, au courant de l'usage",
+   "es": "poco cuidadoso de las reglas métricas, etc. (1.3.2; v. 842,28—843,25), está, sin embargo, como también sus discípulos sāvaka, al corriente del uso",
+   "en": "little concerned with metrical rules, etc. (1.3.2; see 842,28—843,25), he is nevertheless, like his disciples sāvaka, conversant with usage",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "ref_smith": "842,28—843,25",
+   "ref_interna": "1.3.2",
+   "nota": "«Oyente». Smith remite a 1.3.2, la métrica, transcrito en la sesión 46."
+  },
+  {
+   "pali": "vohāra",
+   "fr": "au courant de l'usage vohāra du monde",
+   "es": "al corriente del uso vohāra del mundo",
+   "en": "conversant with the usage vohāra of the world",
+   "epigrafe": "5.3.3.2",
+   "pagina": 1131,
+   "fuente": "conspectus",
+   "nota": "«El uso, el trato corriente». Es el mismo vohāra del ariyavohāra y del Magadha(vohāra) de más arriba, pero aquí vale el habla ordinaria del mundo, no la noble. La página se corta en «du monde lokiyama-», y sigue en la p. 1132."
+  }
+ ]
+}
