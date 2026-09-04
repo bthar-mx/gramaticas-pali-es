@@ -1,0 +1,514 @@
+{
+  "pagina": 1147,
+  "terminos": [
+    {
+      "pali": "antaraṅga",
+      "fr": "si deux règles également pertinentes (et dont les domaines d'application ne sont pas différenciés en «central» ou «périphérique» ⟨antaraṅga : bahiraṅga⟩) se disputent le même domaine",
+      "es": "si dos reglas igualmente pertinentes (y cuyos dominios de aplicación no se diferencian en «central» o «periférico» ⟨antaraṅga: bahiraṅga⟩) se disputan el mismo dominio",
+      "en": "if two equally pertinent rules (whose domains of application are not differentiated into “central” or “peripheral” ⟨antaraṅga : bahiraṅga⟩) contend for the same domain",
+      "epigrafe": "7.3.2.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«De miembro interior»: la regla que opera sobre lo más próximo al núcleo de la palabra, y que por eso se aplica antes. Es el antaraṅga de Pāṇini, uno de los principios de resolución de conflictos más conocidos de la gramática india. VA ENTRE PARÉNTESIS ANGULARES: es de Moggallāna. Cierra 7.3.2.3 con el caso que la escala de opcionalidad no resuelve — dos reglas que valen a la vez. Nandisena no registra ni antaraṅga ni bahiraṅga, de modo que en este punto el Conspectus es la única de las dos fuentes que lo trae."
+    },
+    {
+      "pali": "bahiraṅga",
+      "fr": "en «central» ou «périphérique» ⟨antaraṅga : bahiraṅga⟩) se disputent le même domaine ⟨dvinnaṃ sāvakāsānam ekattha ppasaṅge⟩",
+      "es": "en «central» o «periférico» ⟨antaraṅga: bahiraṅga⟩) se disputan el mismo dominio ⟨dvinnaṃ sāvakāsānam ekattha ppasaṅge⟩",
+      "en": "into “central” or “peripheral” ⟨antaraṅga : bahiraṅga⟩) contend for the same domain ⟨dvinnaṃ sāvakāsānam ekattha ppasaṅge⟩",
+      "epigrafe": "7.3.2.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«De miembro exterior»: la regla que opera más lejos del núcleo, y que cede ante la interior. Entre paréntesis angulares, de Moggallāna. El principio es que gana la más íntima, y su enunciado clásico es «antaraṅgaṃ balavat»."
+    },
+    {
+      "pali": "dvinnaṃ sāvakāsānam ekattha ppasaṅge",
+      "fr": "se disputent le même domaine ⟨dvinnaṃ sāvakāsānam ekattha ppasaṅge⟩, ce conflit vippaṭisedha (cf. vippaṭisiddha) est soumis à l'interprétation méthodique",
+      "es": "se disputan el mismo dominio ⟨dvinnaṃ sāvakāsānam ekattha ppasaṅge⟩, ese conflicto vippaṭisedha (cf. vippaṭisiddha) queda sometido a la interpretación metódica",
+      "en": "contend for the same domain ⟨dvinnaṃ sāvakāsānam ekattha ppasaṅge⟩, this conflict vippaṭisedha (cf. vippaṭisiddha) is subjected to methodical interpretation",
+      "epigrafe": "7.3.2.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "Expresión de varias palabras, entre paréntesis angulares y por tanto de Moggallāna: «cuando dos reglas que tienen ocasión coinciden en un mismo lugar». Es el enunciado técnico del conflicto de reglas, con la geminación de la p tras ekattha, como está impreso."
+    },
+    {
+      "pali": "vippaṭisedha",
+      "fr": "ce conflit vippaṭisedha (cf. vippaṭisiddha) est soumis à l'interprétation méthodique, toute contradiction véritable étant étrangère aux sutta",
+      "es": "ese conflicto vippaṭisedha (cf. vippaṭisiddha) queda sometido a la interpretación metódica, siendo toda contradicción verdadera ajena a los sutta",
+      "en": "this conflict vippaṭisedha (cf. vippaṭisiddha) is subjected to methodical interpretation, all true contradiction being foreign to the sutta",
+      "epigrafe": "7.3.2.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.3.2.1",
+      "nota": "«Conflicto de prohibiciones»: el vipratiṣedha de Pāṇini, el choque de dos reglas. Lleva el paṭisedha de 7.3.2.1 (p. 1146) con vi- de separación. Y LA TESIS QUE SIGUE ES DE FONDO: para la tradición, una contradicción verdadera es imposible en los aforismos, de modo que todo conflicto es aparente y se resuelve interpretando. Es el mismo axioma que gobierna la exégesis del canon."
+    },
+    {
+      "pali": "vippaṭisiddha",
+      "fr": "vippaṭisedha (cf. vippaṭisiddha) est soumis à l'interprétation méthodique",
+      "es": "vippaṭisedha (cf. vippaṭisiddha) queda sometido a la interpretación metódica",
+      "en": "vippaṭisedha (cf. vippaṭisiddha) is subjected to methodical interpretation",
+      "epigrafe": "7.3.2.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«En conflicto»: el participio, dicho de las dos reglas que chocan. Y la frase se cierra con una observación de historia que conviene retener: Aggavaṃsa comenta él mismo sus propios aforismos «comme l'a fait Candragomin et comme le fera Moggallāna», es decir que se sitúa en una cadena de gramáticos que se autocomentan, con el budista sánscrito Candragomin por delante y Moggallāna por detrás."
+    },
+    {
+      "pali": "avuttika",
+      "fr": "De rares sutta se présentant sans commentaire avuttika, la plupart d'entre eux sont commentés savuttika",
+      "es": "Raros sutta se presentan sin comentario avuttika; la mayoría van comentados savuttika",
+      "en": "Rare sutta appear without commentary avuttika; most of them are commented savuttika",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Sin vutti»: el aforismo que va solo. Abre 7.3.3.1, LA SECCIÓN QUE MÁS DIRECTAMENTE TOCA EL TRABAJO DIARIO DE ESTE REPOSITORIO, porque describe la anatomía del comentario que acompaña a cada sutta de Kaccāyana: qué partes tiene, en qué orden y con qué fórmulas."
+    },
+    {
+      "pali": "savuttika",
+      "fr": "la plupart d'entre eux sont commentés savuttika; et au commentaire vutti, qui se passe ici de Ñāsa, ⟨Pañcikā⟩, s'ajoute, le cas échéant, une note additionnelle anuvutti",
+      "es": "la mayoría van comentados savuttika; y al comentario vutti, que aquí prescinde del Ñāsa, ⟨Pañcikā⟩, se añade, llegado el caso, una nota adicional anuvutti",
+      "en": "most of them are commented savuttika; and to the commentary vutti, which here dispenses with the Ñāsa, ⟨Pañcikā⟩, is added, if need be, an additional note anuvutti",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Con vutti»: el aforismo acompañado de su comentario, que es el caso normal. La pareja avuttika / savuttika es la que un editor necesita para clasificar los suttas de una gramática."
+    },
+    {
+      "pali": "vutti",
+      "fr": "et au commentaire vutti, qui se passe ici de Ñāsa, ⟨Pañcikā⟩, s'ajoute, le cas échéant, une note additionnelle anuvutti",
+      "es": "y al comentario vutti, que aquí prescinde del Ñāsa, ⟨Pañcikā⟩, se añade, llegado el caso, una nota adicional anuvutti",
+      "en": "and to the commentary vutti, which here dispenses with the Ñāsa, ⟨Pañcikā⟩, is added, if need be, an additional note anuvutti",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.2.3",
+      "nota": "Segunda aparición: en 7.2.3 (p. 1143) el vutti era donde se reservaba lo que el sutta calla, por ser gūḷhaninnaya; aquí es el objeto de estudio. La observación de Smith es de historia textual: la Saddanīti «se pasa sin» el Ñāsa —el Mukhamattadīpanī de Vimalabuddhi, el gran comentario de Kaccāyana—, y sin la Pañcikā de Moggallāna, que va entre angulares porque es de esa escuela. Es decir que Aggavaṃsa se comenta a sí mismo. Y Nandisena da lo que a Smith le falta aquí: «explicación. Hay TRES clases: (1) explicación o palabra del aforismo (sutta-vutti), (2) palabra proveniente de aforismos anteriores…». Smith reparte el comentario en vutti y anuvutti; Nandisena lo reparte en tres por otro criterio."
+    },
+    {
+      "pali": "anuvutti",
+      "fr": "s'ajoute, le cas échéant, une note additionnelle anuvutti révélant les intentions de l'auteur adhippāyaviññāpikā",
+      "es": "se añade, llegado el caso, una nota adicional anuvutti que revela las intenciones del autor adhippāyaviññāpikā",
+      "en": "is added, if need be, an additional note anuvutti revealing the author's intentions adhippāyaviññāpikā",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Comentario ulterior»: la nota que sigue al vutti. Con el anu- de anuvattati y anukaḍḍhana de 7.3.2.1 (p. 1146): siempre lo que viene detrás y continúa.",
+      "conflicto": "SEGUNDA DIVERGENCIA DE FONDO. Para Smith la anuvutti es la NOTA ADICIONAL que sigue al vutti y revela las intenciones del autor. Nandisena define anu-vutti como «regla o aforismo que tiene influencia sobre un cierto número de reglas siguientes», que es literalmente la definición que él mismo da de adhikāra. De modo que para uno es un género comentarial y para el otro un mecanismo de alcance de la regla. No se ha tocado ninguna de las dos definiciones."
+    },
+    {
+      "pali": "adhippāyaviññāpikā",
+      "fr": "une note additionnelle anuvutti révélant les intentions de l'auteur adhippāyaviññāpikā; l'interprétation — on met en relief ulliṅgeti le lemme ulliṅgapada [pratīka]",
+      "es": "una nota adicional anuvutti que revela las intenciones del autor adhippāyaviññāpikā; la interpretación — se destaca ulliṅgeti el lema ulliṅgapada [pratīka]",
+      "en": "an additional note anuvutti revealing the author's intentions adhippāyaviññāpikā; the interpretation — one highlights ulliṅgeti the lemma ulliṅgapada [pratīka]",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "6.1.3.2",
+      "nota": "«Que da a conocer la intención»: dicho de la anuvutti, y en femenino porque concuerda con ella. El adhippāya es el de 6.1.3.2 (p. 1137), donde Smith lo glosaba «⊃: analyses»: la intención de un texto es, para el gramático, el análisis que lo explica."
+    },
+    {
+      "pali": "ulliṅgeti",
+      "fr": "on met en relief ulliṅgeti le lemme ulliṅgapada [pratīka] en l'introduisant par tatra, tattha, (tesu), ettha",
+      "es": "se destaca ulliṅgeti el lema ulliṅgapada [pratīka] introduciéndolo por tatra, tattha, (tesu), ettha",
+      "en": "one highlights ulliṅgeti the lemma ulliṅgapada [pratīka] introducing it by tatra, tattha, (tesu), ettha",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Señala, destaca»: el verbo de aislar del aforismo la palabra que se va a comentar. ES LA OPERACIÓN QUE ABRE CADA VUTTI, y por tanto lo primero que hace el comentario de cada sutta del Sandhi-kappa."
+    },
+    {
+      "pali": "ulliṅgapada",
+      "fr": "le lemme ulliṅgapada [pratīka] en l'introduisant par tatra, tattha, (tesu), ettha, et en le séparant, par (i)ti ou nāma",
+      "es": "el lema ulliṅgapada [pratīka] introduciéndolo por tatra, tattha, (tesu), ettha, y separándolo por (i)ti o nāma",
+      "en": "the lemma ulliṅgapada [pratīka] introducing it by tatra, tattha, (tesu), ettha, and separating it by (i)ti or nāma",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Palabra destacada»: el LEMA, la palabra del aforismo que el comentario recorta para glosarla. Es exactamente lo que en las traducciones de este repositorio va en negrita al abrir el desglose de un sutta."
+    },
+    {
+      "pali": "pratīka",
+      "fr": "le lemme ulliṅgapada [pratīka]",
+      "es": "el lema ulliṅgapada [pratīka]",
+      "en": "the lemma ulliṅgapada [pratīka]",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "Sánscrito y entre corchetes, como manda 4.1: el pratīka es el término de la filología india para la palabra que un comentario cita antes de explicarla, y es el que la indología europea ha adoptado. Aquí el corchete hace lo que la convención dice."
+    },
+    {
+      "pali": "tatra",
+      "fr": "en l'introduisant par tatra, tattha, (tesu), ettha, et en le séparant, par (i)ti ou nāma, de la glose atthavākya",
+      "es": "introduciéndolo por tatra, tattha, (tesu), ettha, y separándolo por (i)ti o nāma de la glosa atthavākya",
+      "en": "introducing it by tatra, tattha, (tesu), ettha, and separating it by (i)ti or nāma from the gloss atthavākya",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "duda": "El sufijo -tra es SÁNSCRITO —la forma pāḷi es tattha, que Smith pone justo al lado— y aquí va SIN corchetes. Es el mismo caso que el uttaratra de 7.0.3 (p. 1140), y con él van diez sánscritos sin corchete en el material transcrito. Se transcribe como está impreso.",
+      "nota": "«Allí»: primera de las cuatro partículas con que el comentario introduce el lema. Son las que en el Sandhi-kappa abren la glosa —«Tattha…»— y aquí quedan registradas como fórmula."
+    },
+    {
+      "pali": "tattha",
+      "fr": "par tatra, tattha, (tesu), ettha, et en le séparant, par (i)ti ou nāma",
+      "es": "por tatra, tattha, (tesu), ettha, y separándolo por (i)ti o nāma",
+      "en": "by tatra, tattha, (tesu), ettha, and separating it by (i)ti or nāma",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.3.1",
+      "nota": "«Allí»: la forma pāḷi, y la más frecuente de las cuatro. Es el mismo tattha del «tattha siyā» de 7.1.3.1 (p. 1142), la fórmula de objeción: la misma partícula abre la glosa y abre la disputa."
+    },
+    {
+      "pali": "tesu",
+      "fr": "tatra, tattha, (tesu), ettha, et en le séparant",
+      "es": "tatra, tattha, (tesu), ettha, y separándolo",
+      "en": "tatra, tattha, (tesu), ettha, and separating it",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Entre ésos»: locativo plural del pronombre, para cuando el aforismo trae varios términos y el comentario va a tomar uno. Smith lo pone entre paréntesis porque es la variante menos usada de las cuatro."
+    },
+    {
+      "pali": "ettha",
+      "fr": "tattha, (tesu), ettha, et en le séparant, par (i)ti ou nāma, de la glose atthavākya",
+      "es": "tattha, (tesu), ettha, y separándolo por (i)ti o nāma de la glosa atthavākya",
+      "en": "tattha, (tesu), ettha, and separating it by (i)ti or nāma from the gloss atthavākya",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.3.1",
+      "nota": "«Aquí»: la cuarta, y la que en 7.1.3.1 (p. 1142) daba «ettha siyā» y «etthāha». Cierra el grupo."
+    },
+    {
+      "pali": "(i)ti",
+      "fr": "et en le séparant, par (i)ti ou nāma, de la glose atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "es": "y separándolo por (i)ti o nāma de la glosa atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "en": "and separating it by (i)ti or nāma from the gloss atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "6.2.2",
+      "variantes": [
+        "ti",
+        "iti"
+      ],
+      "nota": "Paréntesis dentro de palabra, que en Smith es abreviatura: recoge «ti» e «iti», y las dos van en variantes. Es la partícula de cita de 6.2.2 (p. 1138), aquí en su oficio de CERRAR EL LEMA: «X ti» significa «la palabra X», y lo que viene detrás es la glosa. Es el signo de puntuación de una lengua que no tenía comillas."
+    },
+    {
+      "pali": "nāma",
+      "fr": "par (i)ti ou nāma, de la glose atthavākya, atthakathana, atthavivaraṇa",
+      "es": "por (i)ti o nāma de la glosa atthavākya, atthakathana, atthavivaraṇa",
+      "en": "by (i)ti or nāma from the gloss atthavākya, atthakathana, atthavivaraṇa",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.3.1",
+      "nota": "Quinta aparición del lema y quinto uso. En 7.3.1 (p. 1144) nāma era la partícula con que un aforismo bautiza un término; aquí es la que cierra el lema en el comentario. Los dos usos son el mismo mecanismo —«X nāma» = «lo llamado X»— visto en el sutta y en el vutti."
+    },
+    {
+      "pali": "atthavākya",
+      "fr": "de la glose atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "es": "de la glosa atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "en": "from the gloss atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "6.2.1",
+      "nota": "«Frase de sentido»: primero de los tres nombres de la glosa. El vākya es el de 6.2.1 (p. 1137-1138), la unidad que sirve a la vez de sintagma y de frase."
+    },
+    {
+      "pali": "atthakathana",
+      "fr": "atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "es": "atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "en": "atthavākya, atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti)",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "5.3.3.3",
+      "nota": "«Exposición del sentido»: segundo nombre. Es de la misma formación que aṭṭhakathā, el comentario canónico, y que el attha(saṃ)vaṇṇanā que la sesión 49 registró en 5.3.3.3 (p. 1132)."
+    },
+    {
+      "pali": "atthavivaraṇa",
+      "fr": "atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti) — consiste en ceci que, d'abord, on va prendre āneti dans un aphorisme précédent les termes sous-entendus",
+      "es": "atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti) — consiste en que, primero, se va a tomar āneti de un aforismo precedente los términos sobrentendidos",
+      "en": "atthakathana, atthavivaraṇa (cf. saṃvaṇṇeti) — consists in this, that first one fetches āneti from a preceding aphorism the understood terms",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Desenvolvimiento del sentido»: tercer nombre de la glosa, y el más gráfico —vivaraṇa es abrir lo que está cerrado—."
+    },
+    {
+      "pali": "saṃvaṇṇeti",
+      "fr": "atthavivaraṇa (cf. saṃvaṇṇeti) — consiste en ceci que, d'abord, on va prendre āneti dans un aphorisme précédent",
+      "es": "atthavivaraṇa (cf. saṃvaṇṇeti) — consiste en que, primero, se va a tomar āneti de un aforismo precedente",
+      "en": "atthavivaraṇa (cf. saṃvaṇṇeti) — consists in this, that first one fetches āneti from a preceding aphorism",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "5.3.3.3",
+      "nota": "«Comenta, expone»: el verbo del que sale saṃvaṇṇanā, el género comentarial de 5.3.3.3 (p. 1132). Smith escribe saṃvaṇṇeti con ṃ, como es su norma."
+    },
+    {
+      "pali": "āneti",
+      "fr": "on va prendre āneti dans un aphorisme précédent les termes sous-entendus (p. ex. 745,15 : vibhattilope liṅgassa pakati) et on les construit yojeti, (abhi)sambandhati avec l'énoncé minimum",
+      "es": "se va a tomar āneti de un aforismo precedente los términos sobrentendidos (p. ej. 745,15: vibhattilope liṅgassa pakati) y se construyen yojeti, (abhi)sambandhati con el enunciado mínimo",
+      "en": "one fetches āneti from a preceding aphorism the understood terms (e.g. 745,15 : vibhattilope liṅgassa pakati) and construes them yojeti, (abhi)sambandhati with the minimal statement",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_smith": "745,15",
+      "ref_interna": "6.2.3",
+      "nota": "«Trae, hace venir». Segunda aparición: en 6.2.3 (p. 1138) era el tercero de los verbos de suplir lo elidido, con ajjhāharati y āharati; aquí es la PRIMERA de las tres operaciones del vutti — traer del aforismo anterior lo que éste calla. Es la anuvṛtti en acto, y el ejemplo que Smith da, «vibhattilope liṅgassa pakati», es de los que este repositorio traduce. La referencia no se ha cotejado."
+    },
+    {
+      "pali": "yojeti",
+      "fr": "et on les construit yojeti, (abhi)sambandhati avec l'énoncé minimum (p. ex. 745,21 : kvaci vyañjanantassa, où le deuxième terme évince [nivartayati] le sarantassa de 745,15)",
+      "es": "y se construyen yojeti, (abhi)sambandhati con el enunciado mínimo (p. ej. 745,21: kvaci vyañjanantassa, donde el segundo término desaloja [nivartayati] el sarantassa de 745,15)",
+      "en": "and construes them yojeti, (abhi)sambandhati with the minimal statement (e.g. 745,21 : kvaci vyañjanantassa, where the second term ousts [nivartayati] the sarantassa of 745,15)",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_smith": "745,21",
+      "ref_interna": "6.2.1",
+      "nota": "«Construye, ensambla»: SEGUNDA operación del vutti. Es el verbo de la yojanā de 6.2.1 (p. 1138) y el de la fórmula «Icc evamādī yojetabbā» que cierra la lista de §20 del Sandhi-kappa. La referencia no se ha cotejado."
+    },
+    {
+      "pali": "(abhi)sambandhati",
+      "fr": "yojeti, (abhi)sambandhati avec l'énoncé minimum",
+      "es": "yojeti, (abhi)sambandhati con el enunciado mínimo",
+      "en": "yojeti, (abhi)sambandhati with the minimal statement",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "variantes": [
+        "sambandhati",
+        "abhisambandhati"
+      ],
+      "ref_interna": "6.1.3.1",
+      "nota": "Paréntesis dentro de palabra: recoge sambandhati y abhisambandhati, y las dos van en variantes. «Enlaza»: el segundo verbo de construir, y el del saddantarābhisambandha de 6.1.3.1 (p. 1137)."
+    },
+    {
+      "pali": "nivartayati",
+      "fr": "où le deuxième terme évince [nivartayati] le sarantassa de 745,15); ensuite, l'exemple udāharaṇa, mūlodāharaṇa",
+      "es": "donde el segundo término desaloja [nivartayati] el sarantassa de 745,15); después, el ejemplo udāharaṇa, mūlodāharaṇa",
+      "en": "where the second term ousts [nivartayati] the sarantassa of 745,15); then, the example udāharaṇa, mūlodāharaṇa",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_smith": "745,15",
+      "ref_interna": "7.3.2.1",
+      "nota": "Segunda aparición: en 7.3.2.1 (p. 1146) Smith remitía a este epígrafe al dar el sánscrito nivartayati como equivalente de nivattati, y aquí está el lugar prometido. Sánscrito y entre corchetes, como allí. Lo que describe es la operación inversa del āneti: un término del aforismo nuevo expulsa al que se venía arrastrando del anterior. La referencia no se ha cotejado."
+    },
+    {
+      "pali": "udāharaṇa",
+      "fr": "ensuite, l'exemple udāharaṇa, mūlodāharaṇa (cf. udāharati, udāhaṭa) est soumis à l'examen critique [parīkṣā]",
+      "es": "después, el ejemplo udāharaṇa, mūlodāharaṇa (cf. udāharati, udāhaṭa) queda sometido al examen crítico [parīkṣā]",
+      "en": "then, the example udāharaṇa, mūlodāharaṇa (cf. udāharati, udāhaṭa) is subjected to critical examination [parīkṣā]",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.1.1",
+      "nota": "«Ejemplo». Segunda aparición: en 7.1.1.1 (p. 1140) era el nombre de acción de udāharati entre los términos de la autoridad textual; aquí es la TERCERA operación del vutti, y la que el lector reconoce enseguida — los ejemplos que en este repositorio siguen a cada regla del Sandhi-kappa."
+    },
+    {
+      "pali": "mūlodāharaṇa",
+      "fr": "l'exemple udāharaṇa, mūlodāharaṇa (cf. udāharati, udāhaṭa) est soumis à l'examen critique [parīkṣā]",
+      "es": "el ejemplo udāharaṇa, mūlodāharaṇa (cf. udāharati, udāhaṭa) queda sometido al examen crítico [parīkṣā]",
+      "en": "the example udāharaṇa, mūlodāharaṇa (cf. udāharati, udāhaṭa) is subjected to critical examination [parīkṣā]",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.3.1",
+      "nota": "«Ejemplo fundamental»: el ejemplo principal, frente al contraejemplo que viene después. Lleva el mūla de la mūlasaññā de 7.3.1 (p. 1144). La serie mūlodāharaṇa / paccudāharaṇa / kimudāharaṇa es la tríada completa del ejemplo en el comentario."
+    },
+    {
+      "pali": "udāharati",
+      "fr": "(cf. udāharati, udāhaṭa) est soumis à l'examen critique [parīkṣā]",
+      "es": "(cf. udāharati, udāhaṭa) queda sometido al examen crítico [parīkṣā]",
+      "en": "(cf. udāharati, udāhaṭa) is subjected to critical examination [parīkṣā]",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Aduce, cita»: el verbo del que salen udāharaṇa y udāhaṭa. Es literalmente «traer arriba», y de ahí el ejemplo como algo que se levanta a la vista."
+    },
+    {
+      "pali": "udāhaṭa",
+      "fr": "(cf. udāharati, udāhaṭa) est soumis à l'examen critique [parīkṣā] et confronté avec le contre-exemple paccudāharaṇa",
+      "es": "(cf. udāharati, udāhaṭa) queda sometido al examen crítico [parīkṣā] y confrontado con el contraejemplo paccudāharaṇa",
+      "en": "(cf. udāharati, udāhaṭa) is subjected to critical examination [parīkṣā] and confronted with the counter-example paccudāharaṇa",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.1.1",
+      "nota": "«Aducido»: el participio, segunda aparición tras 7.1.1.1 (p. 1140), donde eran los ejemplos «allégués par les grammairiens»."
+    },
+    {
+      "pali": "parīkṣā",
+      "fr": "est soumis à l'examen critique [parīkṣā] et confronté avec le contre-exemple paccudāharaṇa, distinct du kimudāharaṇa",
+      "es": "queda sometido al examen crítico [parīkṣā] y confrontado con el contraejemplo paccudāharaṇa, distinto del kimudāharaṇa",
+      "en": "is subjected to critical examination [parīkṣā] and confronted with the counter-example paccudāharaṇa, distinct from the kimudāharaṇa",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.3.1",
+      "nota": "Sánscrito y entre corchetes, como en 7.1.3.1 (p. 1141), donde abría la sección del examen crítico. Aquí vuelve como cuarta operación del vutti: el ejemplo no se da y se calla, se somete a prueba."
+    },
+    {
+      "pali": "paccudāharaṇa",
+      "fr": "confronté avec le contre-exemple paccudāharaṇa, distinct du kimudāharaṇa, lequel fait partie de la réponse aux formules kimatthaṃ …",
+      "es": "confrontado con el contraejemplo paccudāharaṇa, distinto del kimudāharaṇa, el cual forma parte de la respuesta a las fórmulas kimatthaṃ …",
+      "en": "confronted with the counter-example paccudāharaṇa, distinct from the kimudāharaṇa, which forms part of the answer to the formulas kimatthaṃ …",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Contraejemplo»: el caso en que la regla NO se aplica, y que sirve para delimitarla. Es el pratyudāharaṇa de la tradición sánscrita, y en el Sandhi-kappa es lo que se aduce tras un «na tu» o similar. Smith insiste en que no se confunda con el siguiente."
+    },
+    {
+      "pali": "kimudāharaṇa",
+      "fr": "distinct du kimudāharaṇa, lequel fait partie de la réponse aux formules kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "es": "distinto del kimudāharaṇa, el cual forma parte de la respuesta a las fórmulas kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "en": "distinct from the kimudāharaṇa, which forms part of the answer to the formulas kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "nota": "«Ejemplo del ¿para qué?»: el que se aduce al responder por qué el aforismo dice tal palabra. No es un contraejemplo sino la ilustración de un ñāpaka —el recurso de 7.1.3.3 (p. 1142) por el que lo que parece sobrar está diciendo algo—. Cabecera de las cuatro fórmulas de pregunta que siguen.",
+      "conflicto": "DIVERGENCIA DE FONDO, Y ES DE LAS QUE IMPORTAN. Smith distingue expresamente el kimudāharaṇa del paccudāharaṇa —«distinct du kimudāharaṇa»— y hace del primero la ilustración de un «¿para qué?», no un contraejemplo. Nandisena define kiṃ-udāharaṇa como «ejemplo OPUESTO; excepción de la regla», que es justamente lo que Smith llama paccudāharaṇa. Los dos describen la misma pieza del comentario y no le dan la misma función. No se ha tocado ninguna de las dos definiciones."
+    },
+    {
+      "pali": "kimatthaṃ",
+      "fr": "la réponse aux formules kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho, qui servent d'amorces à la discussion détaillée des éléments du sutta;",
+      "es": "la respuesta a las fórmulas kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho, que sirven de arranque a la discusión detallada de los elementos del sutta;",
+      "en": "the answer to the formulas kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho, which serve as openings for the detailed discussion of the sutta's elements;",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "variantes": [
+        "kimattha"
+      ],
+      "nota": "«¿Para qué?»: acusativo adverbial, como está impreso; el tema va en variantes. Primera de las cuatro fórmulas con que el comentario se interroga a sí mismo sobre cada palabra del aforismo. Son el motor del vutti: la glosa no expone, pregunta y responde."
+    },
+    {
+      "pali": "(vā ti) kiṃ",
+      "fr": "kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "es": "kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "en": "kimatthaṃ …, (vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.3.2.3",
+      "variantes": [
+        "kiṃ"
+      ],
+      "nota": "«¿Qué es vā?»: segunda fórmula, y Smith la ilustra con la partícula vā, que es la marca de opcionalidad de 7.3.2.3 (p. 1146). Es decir que el comentario se pregunta expresamente por qué el aforismo lleva un vā, que es la pregunta que este repositorio se hace ante cada regla facultativa."
+    },
+    {
+      "pali": "(kvacī ti) kasmā",
+      "fr": "(vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "es": "(vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "en": "(vā ti) kiṃ, (kvacī ti) kasmā, (anena) kv attho",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.3.2.3",
+      "variantes": [
+        "kasmā"
+      ],
+      "nota": "«¿Por qué kvaci?»: tercera fórmula, con la otra marca de opcionalidad. El kvacī del ejemplo lleva ī larga por sandhi ante iti, como está impreso. Que las dos fórmulas ilustradas sean precisamente vā y kvaci dice cuánto pesaban esas dos partículas en la práctica del comentario."
+    },
+    {
+      "pali": "(anena) kv attho",
+      "fr": "(kvacī ti) kasmā, (anena) kv attho, qui servent d'amorces à la discussion détaillée des éléments du sutta;",
+      "es": "(kvacī ti) kasmā, (anena) kv attho, que sirven de arranque a la discusión detallada de los elementos del sutta;",
+      "en": "(kvacī ti) kasmā, (anena) kv attho, which serve as openings for the detailed discussion of the sutta's elements;",
+      "epigrafe": "7.3.3.1",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "variantes": [
+        "kv attho"
+      ],
+      "nota": "«¿Qué sentido tiene (con esto)?»: cuarta y última fórmula. Nótese kv por kva ante vocal, como está impreso. Cierra 7.3.3.1 y con ella la anatomía del comentario: destacar el lema, glosarlo, traer lo sobrentendido, construirlo, ejemplificar, contraejemplificar y preguntarse por cada palabra."
+    },
+    {
+      "pali": "udāharaṇa",
+      "fr": "l'udāharaṇa, suivi (du résultat) de l'examen critique savinicchaya, s'identifie avec l'application pratique payoga 7.1.1.1",
+      "es": "el udāharaṇa, seguido (del resultado) del examen crítico savinicchaya, se identifica con la aplicación práctica payoga 7.1.1.1",
+      "en": "the udāharaṇa, followed (by the result) of the critical examination savinicchaya, is identified with the practical application payoga 7.1.1.1",
+      "epigrafe": "7.3.3.2",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.1.1; 7.3.3.1",
+      "nota": "Tercera aparición, y aquí con una tesis: el ejemplo, una vez examinado, ES la aplicación práctica. Con lo cual se cierra el círculo de toda la sección 7: el payoga de 7.1.1.1 (p. 1140), que era el ejemplo aducido como testimonio, resulta ser lo mismo que el udāharaṇa del comentario. La prueba textual y la ilustración didáctica son la misma cosa."
+    },
+    {
+      "pali": "savinicchaya",
+      "fr": "suivi (du résultat) de l'examen critique savinicchaya, s'identifie avec l'application pratique payoga 7.1.1.1",
+      "es": "seguido (del resultado) del examen crítico savinicchaya, se identifica con la aplicación práctica payoga 7.1.1.1",
+      "en": "followed (by the result) of the critical examination savinicchaya, is identified with the practical application payoga 7.1.1.1",
+      "epigrafe": "7.3.3.2",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.1.3.1",
+      "nota": "«Con su decisión»: segunda aparición, tras 7.1.3.1 (p. 1142), donde salía junto a vinicchaya entre los fines del debate. Dicho de un ejemplo, significa que viene con el veredicto puesto."
+    },
+    {
+      "pali": "payoga",
+      "fr": "s'identifie avec l'application pratique payoga 7.1.1.1; parfois on pourrait produire encore des exemples : aññāni (scil. padāni, payogāni) pi yojetabbāni; cf. 922,7, 32;",
+      "es": "se identifica con la aplicación práctica payoga 7.1.1.1; a veces se podrían aducir aún más ejemplos: aññāni (scil. padāni, payogāni) pi yojetabbāni; cf. 922,7, 32;",
+      "en": "is identified with the practical application payoga 7.1.1.1; sometimes one could produce yet more examples: aññāni (scil. padāni, payogāni) pi yojetabbāni; cf. 922,7, 32;",
+      "epigrafe": "7.3.3.2",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_smith": "922,7; 922,32",
+      "ref_interna": "7.1.1.1",
+      "nota": "Segunda aparición, con el mismo valor de 7.1.1.1 (p. 1140). Las referencias no se han cotejado."
+    },
+    {
+      "pali": "aññāni pi yojetabbāni",
+      "fr": "aññāni (scil. padāni, payogāni) pi yojetabbāni; cf. 922,7, 32;",
+      "es": "aññāni (scil. padāni, payogāni) pi yojetabbāni; cf. 922,7, 32;",
+      "en": "aññāni (scil. padāni, payogāni) pi yojetabbāni; cf. 922,7, 32;",
+      "epigrafe": "7.3.3.2",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_smith": "922,7; 922,32",
+      "nota": "Expresión de varias palabras: «también han de construirse los demás». Es la fórmula con que el comentario cierra una lista de ejemplos dejándola abierta, y ES LA MISMA QUE CIERRA LA LISTA DE §20 DEL SANDHI-KAPPA —«Icc evamādī yojetabbā»—, que CLAUDE.md cita como lo que ampara las sustituciones no enumeradas. Aquí queda registrada como recurso general del vutti, con su yojetabba de yojeti. Cierra 7.3.3.2."
+    },
+    {
+      "pali": "sallakkhitabbaṃ",
+      "fr": "on introduit une remarque par sallakkhitabbaṃ, un complément (à la règle lakkhaṇa) par upalakkhaṇīyaṃ,",
+      "es": "se introduce una observación con sallakkhitabbaṃ, un complemento (a la regla lakkhaṇa) con upalakkhaṇīyaṃ,",
+      "en": "one introduces a remark by sallakkhitabbaṃ, a supplement (to the rule lakkhaṇa) by upalakkhaṇīyaṃ,",
+      "epigrafe": "7.3.3.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "variantes": [
+        "sallakkhitabba"
+      ],
+      "nota": "«Ha de observarse»: participio de obligación en acusativo adverbial, como está impreso; el tema va en variantes. Abre 7.3.3.3, que es la última sección del Conspectus gramatical y trata de las fórmulas con que el comentario añade lo que no cabía en el aforismo."
+    },
+    {
+      "pali": "lakkhaṇa",
+      "fr": "un complément (à la règle lakkhaṇa) par upalakkhaṇīyaṃ,",
+      "es": "un complemento (a la regla lakkhaṇa) con upalakkhaṇīyaṃ,",
+      "en": "a supplement (to the rule lakkhaṇa) by upalakkhaṇīyaṃ,",
+      "epigrafe": "7.3.3.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "7.2.1",
+      "nota": "Cuarta aparición del lema. Aquí es la REGLA, el valor que Smith definió en 7.2.1 (p. 1143) como «la description du fait linguistique», y va en el paréntesis sólo para explicar el upa- del término siguiente."
+    },
+    {
+      "pali": "upalakkhaṇīyaṃ",
+      "fr": "un complément (à la règle lakkhaṇa) par upalakkhaṇīyaṃ,",
+      "es": "un complemento (a la regla lakkhaṇa) con upalakkhaṇīyaṃ,",
+      "en": "a supplement (to the rule lakkhaṇa) by upalakkhaṇīyaṃ,",
+      "epigrafe": "7.3.3.3",
+      "pagina": 1147,
+      "fuente": "conspectus",
+      "ref_interna": "6.2.1",
+      "variantes": [
+        "upalakkhaṇīya"
+      ],
+      "nota": "«Ha de observarse además»: acusativo adverbial, como está impreso; el tema va en variantes. La fórmula con que el comentario añade a la regla lo que ésta no dice. Y ES EL SEXTO -anīya CON ī LARGA del material transcrito —tras cintanīya, pūjanīya, anupala(b)bhanīya (p. 1140), duppariharaṇīya (p. 1142) y nibbacanīya (p. 1143)—, de modo que el visesaniya de 6.2.1 (p. 1138) queda como excepción única entre siete. La ficha de la p. 1138 no se ha tocado. La página se corta aquí y sigue en la 1148."
+    }
+  ]
+}

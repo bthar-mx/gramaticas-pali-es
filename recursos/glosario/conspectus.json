@@ -1,39 +1,39 @@
 {
- "_nota": "Este archivo trae SÓLO el Conspectus Terminorum (saññāmātikā) de la sección E del vol. IV de la edición de Helmer Smith del Saddanīti, pp. 1105-1148, transcrito a ojo del escaneo. La otra fuente principal de la página —el «Glosario de términos gramaticales de la lengua pali» de Bhikkhu Nandisena, IEBH 2013— va en nandisena.json, y la lista normativa interna del repositorio, en comun/glosario.md. El campo «fr» es la glosa de Smith VERBATIM, en su francés y con su cursiva deshecha; los campos «es» y «en» son PROPUESTA del traductor de este repositorio, no adjudicada por el IEBH. Donde Nandisena tiene entrada para el mismo término, generar_glosario.py la engancha a la ficha: su español es el firmado, y la propuesta queda al lado para poder compararlas. Los diacríticos van en NFC.",
- "version": "0.1",
- "estado": "en curso — pp. 1105-1134 de 1105-1148",
- "fuentes": {
-  "conspectus": {
-   "obra": "Saddanīti. La grammaire palie d'Aggavaṃsa",
-   "parte": "IV. Tables, 1e partie — E. Conspectus Terminorum (saññāmātikā)",
-   "editor": "Helmer Smith",
-   "editorial": "C. W. K. Gleerup, Lund",
-   "anyo": 1949,
-   "paginas": "1105-1148",
-   "idioma_de_las_glosas": "francés",
-   "nota": "El escaneo no tiene capa de texto y ningún OCR lo lee (ver recursos/saddaniti/LEEME.md): la transcripción se hizo leyendo la imagen. Smith remite en su encabezado a Jhalakīkar, Nyāyakośa² (1928); Pāṭhak y Chitrāo, Mahābhāṣya-śabdakośa (1927); L. Renou, Terminologie grammaticale du Sanskrit I-III (1942); y La Durghaṭavṛtti de Śaraṇadeva I (1940)."
+  "_nota": "Este archivo trae SÓLO el Conspectus Terminorum (saññāmātikā) de la sección E del vol. IV de la edición de Helmer Smith del Saddanīti, pp. 1105-1148, transcrito a ojo del escaneo. La otra fuente principal de la página —el «Glosario de términos gramaticales de la lengua pali» de Bhikkhu Nandisena, IEBH 2013— va en nandisena.json, y la lista normativa interna del repositorio, en comun/glosario.md. El campo «fr» es la glosa de Smith VERBATIM, en su francés y con su cursiva deshecha; los campos «es» y «en» son PROPUESTA del traductor de este repositorio, no adjudicada por el IEBH. Donde Nandisena tiene entrada para el mismo término, generar_glosario.py la engancha a la ficha: su español es el firmado, y la propuesta queda al lado para poder compararlas. Los diacríticos van en NFC.",
+  "version": "0.1",
+  "estado": "completo — pp. 1105-1148 (el Conspectus gramatical entero)",
+  "fuentes": {
+    "conspectus": {
+      "obra": "Saddanīti. La grammaire palie d'Aggavaṃsa",
+      "parte": "IV. Tables, 1e partie — E. Conspectus Terminorum (saññāmātikā)",
+      "editor": "Helmer Smith",
+      "editorial": "C. W. K. Gleerup, Lund",
+      "anyo": 1949,
+      "paginas": "1105-1148",
+      "idioma_de_las_glosas": "francés",
+      "nota": "El escaneo no tiene capa de texto y ningún OCR lo lee (ver recursos/saddaniti/LEEME.md): la transcripción se hizo leyendo la imagen. Smith remite en su encabezado a Jhalakīkar, Nyāyakośa² (1928); Pāṭhak y Chitrāo, Mahābhāṣya-śabdakośa (1927); L. Renou, Terminologie grammaticale du Sanskrit I-III (1942); y La Durghaṭavṛtti de Śaraṇadeva I (1940)."
+    },
+    "glosario": {
+      "obra": "comun/glosario.md",
+      "nota": "Lista normativa del repositorio. Su español es la traducción fijada y manda sobre cualquier propuesta de esta página."
+    }
   },
-  "glosario": {
-   "obra": "comun/glosario.md",
-   "nota": "Lista normativa del repositorio. Su español es la traducción fijada y manda sobre cualquier propuesta de esta página."
-  }
- },
- "secciones": {
-  "—": "Preliminares",
-  "1": "Fonética",
-  "1.1": "Fonética — los fonemas",
-  "1.2": "Fonética — el encuentro de fonemas (sandhi)",
-  "1.3": "Fonética — procedimientos de estilización: prosodia y métrica",
-  "2": "Morfología — el verbo",
-  "3": "Morfología",
-  "4": "Morfología",
-  "5": "Sintaxis",
-  "5.3": "Sintaxis — procedimientos de estilización: la frase y los marcos",
-  "6": "Semántica",
-  "6.3": "Semántica — procedimientos de estilización: tropos y figuras",
-  "7": "Instrumental filológico",
-  "8": "Apéndice — nomenclatura chāndasa (métrica)"
- },
- "plan_de_smith": "Smith declara su reparto en p. 1105: fonética 1.1-1.3, morfología 2.1-4.3, sintaxis 5.1-5.3, semántica 6.1-6.3, instrumental filológico 7.1-7.3 y, en apéndice, nomenclatura chāndasa 8.1-8.9, reservando los epígrafes 1.3, 5.3 y 6.3 a los procedimientos de estilización. Dice presentar la terminología de Aggavaṃsa y la de Moggallāna —ésta entre paréntesis angulares: '⟨bhūta⟩'.",
- "_nota_estructura": "Los términos ya no van aquí: cada página del Conspectus tiene su archivo en recursos/glosario/conspectus/pNNNN.json, y generar_glosario.py los junta. Se hizo así porque son 44 páginas y unas 1.500 entradas: un solo archivo obligaba a reescribirlo entero para añadir una página."
+  "secciones": {
+    "—": "Preliminares",
+    "1": "Fonética",
+    "1.1": "Fonética — los fonemas",
+    "1.2": "Fonética — el encuentro de fonemas (sandhi)",
+    "1.3": "Fonética — procedimientos de estilización: prosodia y métrica",
+    "2": "Morfología — el verbo",
+    "3": "Morfología",
+    "4": "Morfología",
+    "5": "Sintaxis",
+    "5.3": "Sintaxis — procedimientos de estilización: la frase y los marcos",
+    "6": "Semántica",
+    "6.3": "Semántica — procedimientos de estilización: tropos y figuras",
+    "7": "Instrumental filológico",
+    "8": "Apéndice — nomenclatura chāndasa (métrica)"
+  },
+  "plan_de_smith": "Smith declara su reparto en p. 1105: fonética 1.1-1.3, morfología 2.1-4.3, sintaxis 5.1-5.3, semántica 6.1-6.3, instrumental filológico 7.1-7.3 y, en apéndice, nomenclatura chāndasa 8.1-8.9, reservando los epígrafes 1.3, 5.3 y 6.3 a los procedimientos de estilización. Dice presentar la terminología de Aggavaṃsa y la de Moggallāna —ésta entre paréntesis angulares: '⟨bhūta⟩'.",
+  "_nota_estructura": "Los términos ya no van aquí: cada página del Conspectus tiene su archivo en recursos/glosario/conspectus/pNNNN.json, y generar_glosario.py los junta. Se hizo así porque son 44 páginas y unas 1.500 entradas: un solo archivo obligaba a reescribirlo entero para añadir una página."
 }
