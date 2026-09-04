@@ -75,25 +75,37 @@ a{color:var(--nila)}
 .secs a span{float:right;font-family:var(--mono);font-size:10px;color:var(--soot);
   margin-left:6px}
 
-/* La vista alfabética son treinta y tantas iniciales. En una columna
-   ocupaban toda la barra y había que desplazarla para ver la «s»; en
-   rejilla caben de una vez y se pulsa la que se quiera sin buscar. */
-.inis{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));
-  gap:3px;padding:4px 14px 0}
-.inis a{display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:5px 2px;font-size:15px;color:var(--ink);text-decoration:none;
-  border:1px solid var(--hair);border-radius:2px;line-height:1.1}
-.inis a:hover{background:var(--hover);border-color:var(--haritala);color:var(--haritala)}
-.inis a.on{background:var(--hl);border-color:var(--haritala);color:var(--haritala)}
-.inis a em{font-family:var(--mono);font-style:normal;font-size:8.5px;color:var(--soot)}
+/* La rejilla de iniciales, la misma de /recursos/raices/. El alfabeto pāḷi
+   ENTERO y en su orden —vocales, guturales, palatales, cerebrales,
+   dentales, labiales y el resto—, no sólo las letras que hoy tienen
+   entradas: así el índice no cambia de forma al filtrar, y una letra vacía
+   se ve vacía en vez de desaparecer. Las que no tienen nada van en trazo
+   discontinuo y no se pueden pulsar. */
+.inis{display:flex;flex-wrap:wrap;gap:3px;padding:0 14px 12px}
+.inis a{font-family:var(--serif);font-size:15px;font-weight:700;font-style:italic;
+  min-width:34px;padding:4px 4px 3px;background:var(--ola);color:var(--ink);
+  border:1px solid var(--hair);border-radius:2px;line-height:1.1;
+  text-align:center;text-decoration:none}
+.inis a:hover{border-color:var(--soot);color:var(--nila)}
+.inis a.on{border-color:var(--haritala);color:var(--haritala);background:var(--hl)}
+.inis a.vacia{opacity:.42;cursor:default;background:transparent;border-style:dashed;
+  pointer-events:none}
+.inis a em{display:block;font-family:var(--mono);font-style:normal;
+  font-size:8px;font-weight:600;color:var(--soot);letter-spacing:0}
 .inis a:hover em,.inis a.on em{color:inherit}
+@media(pointer:coarse){.inis a{min-width:44px;min-height:44px;font-size:17px}}
 
 .sb-nota{padding:12px 18px 0;font-size:12px;line-height:1.55;color:var(--soot);
   border-top:1px solid var(--hair);margin-top:12px}
 .sb-close{position:absolute;top:14px;left:14px;background:transparent;border:0;
   font-size:17px;color:var(--soot);cursor:pointer}
 body.sin-barra .sidebar{display:none}
+/* Ojo con la lista: la fila de pestañas va en un .wrap suelto y NO estaba
+   aquí, de modo que la barra lateral se le echaba encima y tapaba la
+   primera pestaña. Cualquier bloque de ancho completo que se añada tiene
+   que entrar en esta regla. */
 body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
+body:not(.sin-barra) .tabs-wrap,
 body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:238px}
 #volver-barra{position:fixed;top:10px;left:12px;z-index:70;display:none;
   background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
@@ -199,6 +211,31 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
 .m-norma{background:var(--hl);color:var(--haritala)}
 .puente{margin-top:7px;padding:7px 10px;border-left:2px solid var(--haritala);
   background:var(--hover);border-radius:0 2px 2px 0;color:var(--ink)}
+
+/* ---------- la vista alfabética: una ficha por lema, en capas ----------
+   Las dos obras y la lista normativa caen en la misma entrada, cada una en
+   su capa y rotulada, porque lo que hace útil tener las tres en una página
+   es poder verlas sobre la MISMA palabra. El orden de las capas es el de
+   autoridad: primero lo fijado por el IEBH, luego el español firmado de
+   Nandisena, y al final los sentidos de Smith, uno por epígrafe. */
+.capa{padding:6px 0 5px;border-top:1px dotted var(--hair)}
+.capa:first-child{border-top:0;padding-top:1px}
+.capa-tit{display:block;font-family:var(--mono);font-size:9px;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--soot);margin-bottom:2px}
+.capa-norma .capa-tit{color:var(--haritala)}
+.capa-nand .capa-tit{color:var(--haritala)}
+.capa-smith .capa-tit{color:var(--soot)}
+.capa-smith .capa-tit b{color:var(--nila);font-weight:600}
+.lema .obras{display:block;font-family:var(--mono);font-style:normal;font-weight:400;
+  font-size:9.5px;letter-spacing:.06em;color:var(--soot);margin-top:4px}
+/* Las 132 entradas cuyas fuentes no escriben igual el lema. La divergencia
+   es dato —niggahita / niggahīta, karaṇa / kāraṇa—, así que se enseña
+   entera y con el nombre de quien escribe cada cosa. */
+.grafias{display:block;font-size:12.5px;font-weight:400;font-style:normal;
+  color:var(--soot);margin-top:4px;line-height:1.5}
+.grafias i{font-style:italic;color:var(--ink)}
+.grafias em{font-style:normal;font-family:var(--mono);font-size:9px;
+  letter-spacing:.06em}
 .fijado{font-family:var(--mono);font-size:10px;color:var(--soot);letter-spacing:.05em}
 .vacio{padding:40px 0;color:var(--soot);font-style:italic}
 mark{background:var(--hl);color:inherit;border-radius:2px}
@@ -232,6 +269,7 @@ footer code{font-family:var(--mono);font-size:11.5px}
 
 @media(max-width:900px){
   body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
+  body:not(.sin-barra) .tabs-wrap,
   body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:22px}
   .sidebar{display:none}
   #volver-barra{display:none}
@@ -264,6 +302,8 @@ footer code{font-family:var(--mono);font-size:11.5px}
 <div class="bar">
   <div class="wrap">
     <input type="search" id="q" placeholder="Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…" aria-label="Buscar">
+    <button class="icon-btn" id="b-nand" aria-pressed="true" title="Mostrar la capa del Glosario de Nandisena">GLOS</button>
+    <button class="icon-btn" id="b-smith" aria-pressed="true" title="Mostrar las capas del Conspectus de Smith">CONSP</button>
     <button class="icon-btn" id="b-fr" aria-pressed="true" title="Mostrar el francés de Smith">FR</button>
     <button class="icon-btn" id="b-en" aria-pressed="true" title="Mostrar el inglés">EN</button>
     <button class="icon-btn" id="b-marcas" aria-pressed="false" title="Sólo las entradas con conflicto o duda">⚑</button>
@@ -273,11 +313,11 @@ footer code{font-family:var(--mono);font-size:11.5px}
   </div>
 </div>
 
-<div class="wrap">
+<div class="wrap tabs-wrap">
   <div class="tabs" role="tablist">
-    <button role="tab" id="tab-nandisena" aria-selected="true" data-tab="nandisena">Glosario · Nandisena <span id="n-nandisena"></span></button>
-    <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus">Conspectus · Smith <span id="n-conspectus"></span></button>
-    <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo">Normativos <span id="n-normativo"></span></button>
+    <button role="tab" id="tab-alfa" aria-selected="true" data-tab="alfa" title="Las dos obras y la lista normativa en un solo orden alfabético, una ficha por lema">Alfabético · las tres fuentes <span id="n-alfa"></span></button>
+    <button role="tab" id="tab-conspectus" aria-selected="false" data-tab="conspectus" title="El Conspectus como Smith lo ordenó: por materias">Por materias · Smith <span id="n-conspectus"></span></button>
+    <button role="tab" id="tab-normativo" aria-selected="false" data-tab="normativo" title="La lista interna del repositorio">Normativos <span id="n-normativo"></span></button>
   </div>
 </div>
 
@@ -336,6 +376,23 @@ footer code{font-family:var(--mono);font-size:11.5px}
   fijado para cada término al ir traduciendo, y por qué. Manda sobre cualquier
   propuesta de esta página; donde no coincide con Smith, la ficha lo señala.</p>
 
+  <h3>Cómo está ordenada</h3>
+  <p>La vista de entrada es <b>alfabética y reúne las tres fuentes</b>: cada
+  lema aparece una sola vez y dentro van, por este orden, lo que fija
+  <code>comun/glosario.md</code>, el español firmado de Nandisena y los
+  sentidos de Smith, uno por epígrafe con su página. Son <b>1.939 lemas</b>;
+  296 están en las dos obras. Se agrupan por el lema desnudo —sin
+  diacríticos ni guiones—, de modo que <i>akkhara-lopa</i> y
+  <i>akkharalopa</i> caen juntos; <b>en 132 entradas las fuentes no escriben
+  igual el lema</b>, y entonces se enseñan todas las grafías con el nombre de
+  quien escribe cada una, porque la divergencia es dato. Los botones
+  <span class="fijado">GLOS</span> y <span class="fijado">CONSP</span> apagan
+  una obra u otra sin salir de la lista.</p>
+  <p>La segunda vista, <b>Por materias</b>, devuelve el Conspectus al orden en
+  que Smith lo dispuso, que es lo que lo hace un <i>Conspectus</i>: 1.878
+  términos repartidos en sus siete partes. La tercera es la lista normativa
+  del repositorio.</p>
+
   <h3>Los rótulos de las secciones</h3>
   <p>Smith numera sus epígrafes —1.1, 2.2, 5.3…— pero <b>no les pone
   título</b>: los seis bloques grandes los declara en la p. 1105 y cada
@@ -363,7 +420,13 @@ const DATA = /*__DATOS__*/{}/*__FIN__*/;
 
 const $ = s => document.querySelector(s);
 const out = $('#out');
-let tab = 'nandisena', verFR = true, verEN = true, soloMarcas = false, q = '';
+let tab = 'alfa', verFR = true, verEN = true, soloMarcas = false, q = '';
+/* En vez de partir la página en una pestaña por obra —que devolvería el
+   problema que la vista alfabética resuelve, leer una obra sin la otra al
+   lado—, las dos capas se apagan y se encienden sobre la MISMA ficha. Se
+   puede leer sólo a Nandisena, sólo a Smith, o los dos, sin perder el lema
+   de vista ni cambiar de lista. */
+let verNand = true, verSmith = true;
 
 /* ---------- tema ---------- */
 /* Con try/catch: en navegación privada, o con los datos de sitio
@@ -388,17 +451,21 @@ $('#theme').onclick = () => {
 /* ---------- cabecera y aviso ---------- */
 $('#vbadge').textContent = 'v' + DATA.version + ' · ' + DATA.estado;
 $('#vfoot').textContent = 'Versión ' + DATA.version + ' · ' + DATA.estado;
-$('#sb-nota').textContent = DATA.plan;
 const mq = s => matchMedia(s).matches;
 
 /* ---------- utilidades ---------- */
-const sinDia = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const sinDia = s => String(s == null ? '' : s)
+  .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function resalta(txt){
   if (!q || !txt) return escapa(txt||'');
   const t = escapa(txt), r = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');
   return sinDia(txt).includes(sinDia(q)) ? t.replace(r,'<mark>$1</mark>') : t;
 }
-const escapa = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+// String() y no (s||''): el «homonimo» de 18 entradas de Nandisena es un
+// NÚMERO, y un número no tiene .replace — un TypeError aquí no rompe una
+// ficha, rompe el pintado entero.
+const escapa = s => String(s == null ? '' : s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
 function casa(t){
   if (!q) return true;
@@ -452,10 +519,164 @@ function ficha(t, tipo){
     '</div></div>';
 }
 
+/* ---------- la ficha alfabética, en capas ----------
+   Un lema, una ficha, y dentro las tres fuentes rotuladas: la lista
+   normativa, el español firmado de Nandisena y los sentidos de Smith, uno
+   por epígrafe. Hay 204 lemas que Smith reparte en varios epígrafes —kicca
+   sale seis veces, con seis glosas distintas—, y en una lista plana salían
+   como seis fichas seguidas casi idénticas; aquí van dentro de una, cada
+   una con su epígrafe y su página, que es lo que las distingue. */
+function miembros(gr){
+  return [].concat(
+    (gr.g || []).map(i => DATA.normativo[i]),
+    (gr.n || []).map(i => DATA.nandisena[i]),
+    (gr.c || []).map(i => DATA.conspectus[i]));
+}
+function casaGrupo(gr){
+  if (!q) return true;
+  if (sinDia(gr.p).includes(sinDia(q))) return true;
+  return miembros(gr).some(casa);
+}
+function marcadoGrupo(gr){
+  return miembros(gr).some(t => t.conflicto || t.duda || t.errata);
+}
+function capaNorma(t){
+  const notas = [t.nota, t.conflicto].filter(Boolean).map(escapa).join(' ');
+  return '<div class="capa capa-norma"><span class="capa-tit">Español fijado · ' +
+    'comun/glosario.md' + (t.fijado_en ? ' · ' + escapa(t.fijado_en) : '') + '</span>' +
+    '<div class="gl">' + (t.es ? '<div class="es">' + resalta(t.es) + '</div>' : '') +
+      (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '') + '</div>' +
+    (notas ? '<p class="nota">' + notas + '</p>' : '') + '</div>';
+}
+function capaNand(t){
+  const refs = (t.refs && t.refs.length)
+    ? ' <span class="fijado">' + t.refs.map(escapa).join(' · ') + '</span>' : '';
+  const cuerpo = t.es ? resalta(t.es)
+    : t.remite_a ? 'v. <i>' + escapa(t.remite_a) + '</i>'
+    : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
+  return '<div class="capa capa-nand"><span class="capa-tit">Glosario de Nandisena · p. ' +
+    escapa(String(t.pagina)) + (t.homonimo ? ' · ' + escapa(t.homonimo) : '') + '</span>' +
+    '<div class="gl"><div class="es">' + cuerpo + refs + '</div>' +
+      (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '') + '</div></div>';
+}
+function capaSmith(t){
+  const marcas =
+    (t.conflicto ? '<span class="marca m-conflicto">difiere de la norma</span>' : '') +
+    (t.duda ? '<span class="marca m-duda">por cotejar</span>' : '') +
+    (t.errata ? '<span class="marca m-duda">errata del impreso</span>' : '');
+  const notas = [t.nota, t.conflicto, t.duda, t.errata,
+                 t.ref_smith ? 'Smith remite a ' + t.ref_smith + '.' : '',
+                 t.ref_interna ? 'Ver ' + t.ref_interna + '.' : '']
+    .filter(Boolean).map(escapa).join(' ');
+  const vars = (t.variantes && t.variantes.length)
+    ? '<div class="es" style="color:var(--soot)">también: <i>' +
+      t.variantes.map(escapa).join('</i>, <i>') + '</i></div>' : '';
+  const sec = DATA.secciones[t.epigrafe.split('.').slice(0,2).join('.')] || '';
+  return '<div class="capa capa-smith"><span class="capa-tit"><b>' + escapa(t.epigrafe) +
+    '</b> ' + escapa(sec) + ' · Smith p. ' + escapa(String(t.pagina)) + '</span>' +
+    '<div class="gl">' +
+      (verFR && t.fr ? '<div class="fr">' + resalta(t.fr) + '</div>' : '') +
+      (t.es ? '<div class="es">' + resalta(t.es) + '</div>' : '') +
+      (verEN && t.en ? '<div class="en">' + resalta(t.en) + '</div>' : '') + vars +
+    '</div>' + (marcas || notas ? '<p class="nota">' + marcas + notas + '</p>' : '') + '</div>';
+}
+function fichaGrupo(gr){
+  const nC = (gr.c || []).length, nN = (gr.n || []).length, nG = (gr.g || []).length;
+  const obras = [];
+  if (nG) obras.push('norma');
+  if (nN) obras.push('Glosario' + (nN > 1 ? ' ×' + nN : ''));
+  if (nC) obras.push('Conspectus' + (nC > 1 ? ' ×' + nC : ''));
+  const grafias = gr.gr
+    ? '<span class="grafias">' + gr.gr.map(g =>
+        '<i>' + escapa(g[0]) + '</i> <em>' + escapa(g[1]) + '</em>').join(' · ') + '</span>'
+    : '';
+  const capas =
+    (gr.g || []).map(i => capaNorma(DATA.normativo[i])).join('') +
+    (verNand  ? (gr.n || []).map(i => capaNand(DATA.nandisena[i])).join('') : '') +
+    (verSmith ? (gr.c || []).map(i => capaSmith(DATA.conspectus[i])).join('') : '');
+  return '<div class="t">' +
+    '<div class="lema">' + resalta(gr.p) +
+      '<span class="obras">' + obras.join(' · ') + '</span>' + grafias + '</div>' +
+    '<div>' + capas + '</div></div>';
+}
+// Con una obra apagada, los lemas que sólo ella trae no se quedan como
+// fichas huecas: salen de la lista, y la cuenta lo dice.
+const visibleGrupo = gr => (gr.g || []).length
+  || (verNand && (gr.n || []).length) || (verSmith && (gr.c || []).length);
+
+/* El alfabeto pāḷi, que no es el latino. El índice enseña las 40 letras
+   siempre, en este orden, y no sólo las que hoy tienen entradas: así no
+   cambia de forma al filtrar. Es el mismo criterio de /recursos/raices/. */
+const ALFABETO = ['a','ā','i','ī','u','ū','e','o',
+                  'k','kh','g','gh','ṅ', 'c','ch','j','jh','ñ',
+                  'ṭ','ṭh','ḍ','ḍh','ṇ', 't','th','d','dh','n',
+                  'p','ph','b','bh','m', 'y','r','l','ḷ','v','s','h'];
+// Ninguna palabra pāḷi empieza por estas: van siempre vacías, y el índice
+// lo dice en su nota para que no parezca que falta algo.
+const SIN_INICIAL = ['ṅ','ṇ','ḷ'];
+
+function porInicial(lista, comoFicha){
+  // Dos cosas. Primera: se tiran los signos de delante, porque el
+  // generador ordena por clave_pali, que los ignora — «(h)alaṃ» va entre
+  // las haches y no en una sección de paréntesis al final; si aquí no se
+  // tirasen, el orden de la lista y las cabeceras dejarían de coincidir.
+  // Segunda: los dígrafos aspirados son UNA letra del alfabeto pāḷi, de
+  // modo que «kh» no va bajo «k»; se prueba el par antes que la suelta.
+  const inicialDe = s => {
+    const p = String(s || '—').normalize('NFC').toLowerCase()
+      .replace(/^[^a-zāīūṅñṭḍṇḷṃ]+/, '');
+    if (!p) return '—';
+    const par = p.slice(0,2);
+    return ALFABETO.includes(par) ? par : p[0];
+  };
+  const grupos = new Map();
+  for (const t of lista){
+    const ini = inicialDe(t.pali || t.p);
+    if (!grupos.has(ini)) grupos.set(ini, []);
+    grupos.get(ini).push(t);
+  }
+  const idDe = l => 'L-' + l;
+  let html = '';
+  for (const l of ALFABETO){
+    const ts = grupos.get(l);
+    if (!ts) continue;
+    html += '<h2 class="sec" id="' + idDe(l) + '">' + escapa(l) +
+            '<small>' + ts.length + '</small></h2>' + ts.map(comoFicha).join('');
+  }
+  // Lo que no empieza por letra del alfabeto —los pocos lemas que abren con
+  // paréntesis o apóstrofo— no se pierde: va al final, en su propia sección.
+  const sueltas = [...grupos.keys()].filter(l => !ALFABETO.includes(l));
+  for (const l of sueltas){
+    const ts = grupos.get(l);
+    html += '<h2 class="sec" id="' + idDe(l) + '">' + escapa(l) +
+            '<small>' + ts.length + '</small></h2>' + ts.map(comoFicha).join('');
+  }
+  out.innerHTML = html;
+  $('#secs').className = 'inis';
+  $('#secs').innerHTML = ALFABETO.map(l => {
+    const n = (grupos.get(l) || []).length;
+    const t = n ? l + ': ' + n + (n === 1 ? ' lema' : ' lemas') + ' a la vista'
+                : (SIN_INICIAL.includes(l) ? 'Ninguna palabra pāḷi empieza por ' + l
+                                           : 'Nada por ' + l + ' en lo que hay filtrado');
+    return '<a href="#' + idDe(l) + '" data-ir="' + idDe(l) + '"' +
+           (n ? '' : ' class="vacia" aria-disabled="true"') +
+           ' title="' + escapa(t) + '">' + escapa(l) + '<em>' + n + '</em></a>';
+  }).join('') + sueltas.map(l =>
+    '<a href="#' + idDe(l) + '" data-ir="' + idDe(l) + '">' + escapa(l) +
+    '<em>' + grupos.get(l).length + '</em></a>').join('');
+}
+
 function pinta(){
-  const fuente = tab === 'conspectus' ? DATA.conspectus
-               : tab === 'nandisena'  ? DATA.nandisena
-               : DATA.normativo;
+  if (tab === 'alfa'){
+    const lista = DATA.agrupado.filter(visibleGrupo).filter(casaGrupo)
+      .filter(gr => !soloMarcas || marcadoGrupo(gr));
+    $('#count').textContent = lista.length + (lista.length === 1 ? ' lema' : ' lemas');
+    if (!lista.length){ out.innerHTML = '<p class="vacio">Nada con eso.</p>'; $('#secs').innerHTML=''; return; }
+    porInicial(lista, fichaGrupo);
+    return;
+  }
+
+  const fuente = tab === 'conspectus' ? DATA.conspectus : DATA.normativo;
   const lista = fuente.filter(casa)
     .filter(t => !soloMarcas || t.conflicto || t.duda || t.errata);
 
@@ -464,27 +685,7 @@ function pinta(){
   if (!lista.length){ out.innerHTML = '<p class="vacio">Nada con eso.</p>'; $('#secs').innerHTML=''; return; }
 
   if (tab !== 'conspectus'){
-    // Nandisena y la lista normativa van por orden alfabético pāḷi, que es
-    // el que traen ya del generador; se agrupan por inicial.
-    const grupos = new Map();
-    for (const t of lista){
-      const ini = (t.pali || '—').normalize('NFC')[0].toLowerCase();
-      if (!grupos.has(ini)) grupos.set(ini, []);
-      grupos.get(ini).push(t);
-    }
-    let html = '', indice = '';
-    for (const [ini, ts] of grupos){
-      const id = 'l' + ini.codePointAt(0);
-      html += '<h2 class="sec" id="' + id + '">' + escapa(ini.toUpperCase()) +
-              '<small>' + ts.length + '</small></h2>' + ts.map(t => ficha(t, tab)).join('');
-      // Rejilla de iniciales: treinta y tantas letras en una columna
-      // obligaban a desplazar la barra para llegar a la «s».
-      indice += '<a href="#' + id + '" data-ir="' + id + '">' + escapa(ini.toUpperCase()) +
-                '<em>' + ts.length + '</em></a>';
-    }
-    out.innerHTML = html;
-    $('#secs').className = 'inis';
-    $('#secs').innerHTML = indice;
+    porInicial(lista, t => ficha(t, tab));
     return;
   }
 
@@ -525,13 +726,28 @@ function pinta(){
 }
 
 /* ---------- mandos ---------- */
-$('#n-nandisena').textContent = DATA.nandisena.length;
+$('#n-alfa').textContent = DATA.agrupado.length;
 $('#n-conspectus').textContent = DATA.conspectus.length;
 $('#n-normativo').textContent = DATA.normativo.length;
+
+const NOTA_ABC = 'Las letras siguen el orden del alfabeto pāḷi, no el latino: ' +
+  'vocales, guturales, palatales, cerebrales, dentales, labiales y el resto. ' +
+  'Los dígrafos aspirados cuentan como una letra, de modo que «kh» no va bajo ' +
+  '«k». El número es cuántos lemas empiezan por esa letra en lo que hay a la ' +
+  'vista; una letra en trazo discontinuo no tiene ninguno. Ninguna palabra ' +
+  'pāḷi empieza por ṅ, ṇ ni ḷ.';
+function rotulaBarra(){
+  $('#secs-tit').textContent = tab === 'conspectus' ? 'El plan de Smith' : 'Por inicial';
+  $('#sb-nota').textContent = tab === 'conspectus' ? DATA.plan : NOTA_ABC;
+}
 document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
   document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
   tab = b.dataset.tab;
-  $('#secs-tit').textContent = tab === 'conspectus' ? 'Secciones' : 'Por inicial';
+  // Las capas sólo existen en la vista alfabética; en las otras dos estorban.
+  const soloAlfa = tab !== 'alfa';
+  $('#b-nand').disabled = soloAlfa;
+  $('#b-smith').disabled = soloAlfa;
+  rotulaBarra();
   pinta();
 });
 $('#q').oninput = e => { q = e.target.value.trim(); pinta(); };
@@ -541,6 +757,8 @@ function alterna(btn, set){
     btn.setAttribute('aria-pressed', v); set(v); pinta();
   };
 }
+alterna($('#b-nand'), v => verNand = v);
+alterna($('#b-smith'), v => verSmith = v);
 alterna($('#b-fr'), v => verFR = v);
 alterna($('#b-en'), v => verEN = v);
 alterna($('#b-marcas'), v => soloMarcas = v);
@@ -593,6 +811,7 @@ addEventListener('scroll', () => btnTop.classList.toggle('on', scrollY > 600), {
   addEventListener('resize', medir);
 })();
 
+rotulaBarra();
 pinta();
 </script>
 </body>

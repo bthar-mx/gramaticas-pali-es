@@ -247,6 +247,53 @@ def main():
                                "remite_a": g.get("remite_a")}
                               for g in gemelas]
 
+    # ---- la vista alfabética única -------------------------------------
+    # Las dos obras y la lista normativa, en un solo orden alfabético pāḷi y
+    # UNA FICHA POR LEMA. Se agrupa por el mismo lema desnudo con que se
+    # cotejan más arriba, de modo que «akkhara-lopa» y «akkharalopa» caen
+    # juntos, y con ellos las 132 parejas cuya grafía no coincide — que son
+    # justamente las que conviene ver de una vez.
+    #
+    # Aquí NO van los datos, sino los ÍNDICES a las tres listas que ya
+    # viajan en el JSON: repetir los objetos doblaría el peso de la página.
+    # El orden es el del alfabeto pāḷi, no el latino.
+    #
+    # El lema que se enseña sale por prelación —la lista normativa manda,
+    # luego Nandisena, que es la edición base, y por último Smith—, y cuando
+    # el grupo trae más de una grafía se enseñan TODAS con su fuente: la
+    # divergencia es dato, no ruido.
+    grupos = {}
+    for i, t in enumerate(conspectus):
+        grupos.setdefault(desnudo(t["pali"]), {"c": [], "n": [], "g": []})["c"].append(i)
+    for i, e in enumerate(nand["entradas"]):
+        grupos.setdefault(desnudo(e["pali"]), {"c": [], "n": [], "g": []})["n"].append(i)
+    for i, e in enumerate(normativo):
+        if e["sin_lema"]:
+            continue
+        grupos.setdefault(desnudo(e["pali"]), {"c": [], "n": [], "g": []})["g"].append(i)
+
+    agrupado = []
+    for clave, ix in grupos.items():
+        grafias = []
+        for i in ix["g"]:
+            grafias.append([normativo[i]["pali"], "norma"])
+        for i in ix["n"]:
+            grafias.append([nand["entradas"][i]["pali"], "Nandisena"])
+        for i in ix["c"]:
+            grafias.append([conspectus[i]["pali"], "Smith"])
+        vistas, unicas = set(), []
+        for p, f in grafias:
+            if p not in vistas:
+                vistas.add(p)
+                unicas.append([p, f])
+        entrada = {"p": unicas[0][0], "c": ix["c"], "n": ix["n"], "g": ix["g"]}
+        if len(unicas) > 1:
+            entrada["gr"] = unicas
+        agrupado.append(entrada)
+    agrupado.sort(key=lambda e: clave_pali(e["p"]))
+
+    con_varias_grafias = sum(1 for e in agrupado if "gr" in e)
+
     hechas = sorted({t["pagina"] for t in conspectus})
     faltan = PAGINAS[1] - PAGINAS[0] + 1 - len(hechas)
     estado = ("completo" if not faltan else
@@ -264,6 +311,7 @@ def main():
         "plan": datos["plan_de_smith"],
         "ingles_adjudicado": bool(ing.get("adjudicado")),
         "ingles_adjudicado_por": ing.get("adjudicado_por"),
+        "agrupado": agrupado,
         "conspectus": conspectus,
         "normativo": normativo,
         "nandisena": nand["entradas"],
@@ -296,6 +344,8 @@ def main():
               os.path.relpath(DESTINO, RAIZ), len(html) // 1024))
     print("  Conspectus, {0}: {1} páginas de {2} ({3}-{4})".format(
         datos["estado"], len(paginas), total_paginas, paginas[0], paginas[-1]))
+    print("  vista alfabética: {0} lemas de las tres fuentes en una sola lista; "
+          "{1} traen más de una grafía".format(len(agrupado), con_varias_grafias))
     if nand["entradas"]:
         pct = 100.0 * en_ambas / len(conspectus)
         print("  en las dos fuentes: {0} de los {1} términos del Conspectus "
