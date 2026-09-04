@@ -11,7 +11,7 @@ Conspectus transcritas. **Lo que hay que hacer:** seguir por la página 1116.
 
 Angel pidió reunir los términos gramaticales pāḷi de dos obras y traducirlos
 al español y al inglés, tomando como base el glosario que ya existía, y
-cotejarlos después con el Diplomado del IEBH. Las fuentes son **dos, y las dos
+cotejarlos después con el Diplomado en Pāḷi del IEBH del Dr. Aleix Ruiz-Falqués. Las fuentes son **dos, y las dos
 son principales** —esto lo corrigió él expresamente, porque el primer intento
 daba a Smith el papel principal y relegaba a Nandisena—:
 
@@ -20,7 +20,7 @@ daba a Smith el papel principal y relegaba a Nandisena—:
 | `nandisena` | **Glosario de términos gramaticales de la lengua pali**, Bhikkhu Nandisena, IEBH / Dhammodaya, 2013, rev. 7-IV-2013, publicación 20130407-BN-T0022 | 649 entradas con definición **en español** y referencia a Kac., Rū., Sad., Nir. | `recursos/glosario/nandisena.json` |
 | `conspectus` | **Conspectus Terminorum** (saññāmātikā), sección E del vol. IV de la edición de **Helmer Smith** del Saddanīti, pp. 1105-1148 (Lund, Gleerup, 1949) | definición **en francés**, dentro de una terminología ordenada por materias | `recursos/glosario/conspectus/pNNNN.json` |
 | `glosario` | `comun/glosario.md` | la lista **normativa interna**: qué castellano se ha fijado. No es obra de nadie. | ya existía |
-| `diplomado` | **Diplomado en Lengua Pāḷi I** del IEBH (Moodle, curso 4), instructor **Dr. Aleix Ruiz Falqués** | tercera voz: términos nuevos y equivalencias divergentes | `recursos/glosario/diplomado.json` |
+| `diplomado` | **Diplomado en Lengua Pāḷi I** del IEBH (Moodle, curso 4), instructor **Dr. Aleix Ruiz-Falqués** | tercera voz: términos nuevos y equivalencias divergentes | `recursos/glosario/diplomado.json` |
 
 ### LAS DOS FUENTES NO SON TESTIGOS INDEPENDIENTES
 
@@ -152,7 +152,7 @@ siguiente **sin sangrar**, y el trozo final acaba publicándose como un
 
 ---
 
-## 6. El Diplomado del IEBH: qué se hizo y qué queda
+## 6. El Diplomado en Pāḷi del IEBH del Dr. Aleix Ruiz-Falqués: qué se hizo y qué queda
 
 Se recorrieron **los 30 PDF** del curso (28 dossieres + Currículum +
 Vocabulario) extrayendo su capa de texto **con pdf.js dentro del navegador**,

@@ -111,7 +111,7 @@ El recuento queda así:
 | --- | --- |
 | Smith, Conspectus 1.1.3 | **niggahīta** |
 | Nandisena (lema de cabecera; remite ahí desde niggahita) | **niggahīta** |
-| Diplomado del IEBH | **niggahīta** |
+| Diplomado en Pāḷi del IEBH (Dr. Aleix Ruiz-Falqués) | **niggahīta** |
 | `comun/glosario.md` | niggahita |
 
 Tres a uno, y las tres con macrón. **La decisión sigue siendo de Angel**
