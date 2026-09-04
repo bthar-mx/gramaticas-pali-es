@@ -260,7 +260,15 @@ baila lleva `duda` y espera a Angel.*
 | 1108 | 40 | 1 + 2 avisos | una `duda` nueva; una vieja confirmada |
 | 1109 | 46 | 0 | limpia |
 | 1110 | 49 | 1 (dos fichas) | dos `duda` nuevas |
+| 1111 | 43 | 0 | limpia |
+| 1112 | 44 | 1 + 2 avisos | una `duda` nueva |
+| 1113 | 33 | 0 | limpia |
+| 1114 | 49 | 1 | una `duda` nueva |
+| 1115 | 38 | 2 | dos `duda` nuevas |
+| 1116 | 34 | 0 | limpia |
 | 1117 | 66 | 1 | resuelto (§4.5) |
+
+**Van 13 páginas de 44**, y son las trece primeras seguidas más la 1117.
 
 ### 4 ter.1 `īsakaṃ`, y son DOS páginas: el hallazgo mayor de la tanda
 
@@ -360,11 +368,90 @@ lectura correcta: āmantana»** — que es justamente lo que Smith no hace. **La
 nota no se ha corregido**: está publicada, se le señala a Angel en la `duda`, y
 qué se hace con ella lo decide él.
 
+### 4 ter.5 ter Un tercer género de hallazgo: los signos que no son cantidad
+
+Las pp. 1114 y 1115 sacan algo que hasta ahora no había salido. No es una i por
+una ī: es **el circunflejo de Smith**, que marca la vocal nacida de una
+contracción y que la transcripción aplana.
+
+| pág. | ficha | plancha | ficha |
+| ---: | --- | --- | --- |
+| 1114 | variante de `tassa santakaṃ` (3.2.2) | **`tassêdaṃ`** (tassa + idaṃ) | `tassedaṃ` |
+| 1115 | lema de 3.3.1 | **`nâvisada`** (na + avisada) | `nāvisada` |
+
+El de la p. 1115 es el más elocuente, porque **se contradice con la ficha de al
+lado**: la `nota` de `napuṃsakaliṅga`, que cita la misma expresión, escribe
+«n' eva-visada-nâvisada» **con circunflejo**. Es decir que el signo se vio al
+transcribir y se perdió sólo al fijar el lema, donde además se convirtió en
+macrón, que es otra cosa.
+
+Y que no es criterio deliberado lo dice el recuento: **en las 1.878 fichas hay
+UNA sola forma con circunflejo**, el `tatrâyaṃ gāthā` de 7.3.3.1 (p. 1148). La
+transcripción sí lo recoge cuando lo ve.
+
+Sumado a los dos anceps del §4 ter.2, son ya **cuatro signos aplanados en cinco
+páginas**, y todos de la misma clase: diacríticos que no dicen cantidad sino
+que dicen *de dónde sale la vocal*. Conviene barrer las 44 páginas buscando
+circunflejos y anceps a la vez.
+
+### 4 ter.5 quater Y la p. 1115 repite el patrón del `avadhārana`
+
+`ārammanabheda` (3.3.2). **Smith imprime N DENTAL** —comprobado a ×12, sin
+punto y con el blanco limpio bajo la letra—; la ficha da `ārammaṇabheda`, con ṇ
+retrofleja, que es la forma corriente.
+
+El control es del propio Smith y está **en la línea siguiente**: ahí imprime
+`puthuārammaṇa` con la ṇ claramente punteada. La misma voz, la misma frase, dos
+grafías. Y es la segunda grafía, la retrofleja, la que la `nota` de la ficha
+recoge —de modo que, otra vez, el dato correcto está en la nota y la
+normalización, en el lema—.
+
+Es exactamente el caso del `avadhārana` de 4.2.3.2 (p. 1119) frente a los tres
+`avadhāraṇa`: inconsistencia de Smith consigo mismo. La diferencia sigue siendo
+la de siempre —aquélla se transcribió como está impresa y se marcó; ésta se
+normalizó en silencio—.
+
 ### 4 ter.6 Lo que se comprobó sin novedad
 
 - **p. 1107, 43 fichas, ninguna discrepancia** fuera del anceps: el
   `niggahīta` de 1.1.3 se ve con su macrón y con el `(bindu)` de al lado
   haciendo de control, tal como la sesión 53 lo dejó escrito.
+- **p. 1112, `tassīla`, que es hermano de `īsakaṃ`.** La ficha de 3.1.1 da
+  `tassila` con i breve, y la plancha imprime **`tassīla`** con macrón, con el
+  control tres palabras después en la misma línea: la ā de `tassādhukārin` es
+  una barra del mismo trazo y la i de -rin es un punto redondo. Como en
+  `īsakaṃ`, la transcripción no normaliza a Smith sino que se aparta también de
+  la forma corriente, que es taṃ + **sīla**. Lleva `duda`; la nota de
+  `vattamāna` repite la misma grafía breve.
+- **p. 1112, y una omisión con más peso que las anteriores.** En 3.0.2 la
+  plancha imprime «adjectif vāccaliṅga, appadhānaliṅga, **guṇanāma**», y
+  `guṇanāma` no tiene ficha en esta página. No es un repetido inocuo: en la
+  p. 1111 el término está lematizado con OTRA glosa —«indication d'une
+  qualité», clase de nombre por su procedencia—, mientras que aquí es sinónimo
+  de «adjectif». Se pierde, pues, un sentido distinto, como si a `sara` se le
+  hubiera dado una sola ficha. **No se ha creado nada.**
+- **p. 1111, y una alarma que no lo era.** El `araha` de 2.2.3.3 lleva encima
+  una mancha que a primera vista parece macrón. No lo es: a ×18 es un grumo
+  estrecho e inclinado, pegado al asta de la h, y el control de la línea de
+  encima —el `pattakāla` de la misma página, a la misma escala— muestra el
+  macrón como lo que es, una barra plana ancha que desborda la letra por los dos
+  lados. **La ficha acierta y no se ha tocado.** Queda anotado porque la mancha
+  volverá a aparecer si alguien recorre la página deprisa.
+- **p. 1116, un caso que la plancha NO decide.** El vocativo de 3.3.3 se
+  transcribe `aṭṭhamī` con ī. La hoja de esta página está escaneada más floja
+  que las vecinas —1.688 px de ancho frente a los 1.908 de la p. 1115— y a ×12
+  la marca sobre la i final no se separa de un punto grueso con la seguridad que
+  esta revisión exige. **No se afirma nada**: la lectura de la ficha se sostiene
+  por la serie de la p. 1115, donde `catutthī`, `pañcamī`, `chaṭṭhī` y `sattamī`
+  llevan las cuatro su macrón, pero eso es la lengua y no la imagen. Si alguna
+  vez hay que zanjarlo, hará falta otra reproducción de esa hoja.
+- **p. 1114 y p. 1112, dos lematizaciones que deshacen lo impreso.** Smith
+  imprime ⟨`anvādese`⟩ en 3.0.3 (p. 1112) y la ficha lematiza `anvādesa`; es el
+  mismo criterio que convirtió `dūraṭṭhass' ālapane` en `dūraṭṭhassa ālapana`
+  (§4 ter.3). No es error, pero conviene que el criterio se fije de una vez.
+- **p. 1113 y p. 1116, dos remisiones de Smith que no se recogen**: «quant aux
+  taddhita invariables v. 3.3.3 (803,22 … 806,8)» en 3.2 (p. 1113). Son
+  referencias, no términos.
 - **p. 1110, y tres controles que valen para casos ya cerrados.** En 2.2.3.2
   Smith imprime `samīpamhi` y `samīpe` **con ī larga**, y `hiyyo pabhuti`
   **con i breve**, las tres en dos líneas seguidas. Es decir: la breve del
@@ -431,5 +518,18 @@ Lo que queda abierto es lo nuevo, y sale todo de la colación (§4 ter):
     retrofleja de Smith, ya verificada con control interno y externo. Dos fichas
     marcadas, lemas intactos, y una nota publicada que afirma lo contrario de lo
     que dice la plancha, sin corregir.
-12. **Las ocho del §4** siguen sin cotejar, y ahora entran en la colación general
+12. **`tassīla`** (3.1.1, p. 1112), §4 ter.6. Mismo caso que `īsakaṃ` y con el
+    control en la misma línea. Ficha marcada, lema intacto.
+13. **El circunflejo de Smith**, §4 ter.5 ter: `tassêdaṃ` (p. 1114) y
+    `nâvisada` (p. 1115), los dos aplanados, el segundo además contra lo que
+    dice la nota de su ficha vecina. Con los dos anceps, van cuatro signos de
+    esta clase en cinco páginas, y con ellos la pregunta: **¿se barren las 44
+    páginas buscando circunflejos y anceps?**
+14. **`ārammanabheda`** (3.3.2, p. 1115), §4 ter.5 quater. N dental en el
+    impreso, ṇ retrofleja en la ficha, y `puthuārammaṇa` en la línea siguiente
+    haciendo de control. Del género del `avadhārana` de la p. 1119.
+15. **`guṇanāma` de 3.0.2** (p. 1112), §4 ter.6: sin ficha, y con una glosa
+    distinta de la que tiene en la p. 1111. Es la omisión de más peso de las
+    cuatro del punto 9.
+16. **Las ocho del §4** siguen sin cotejar, y ahora entran en la colación general
     de las 44 páginas, que es la que Angel ha pedido.
