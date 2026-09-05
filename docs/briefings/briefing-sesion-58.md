@@ -143,3 +143,10 @@ Las del briefing 57: `git --no-optional-locks status --porcelain`, nada de
 | enlaces en la capa de Nandisena | **637** en 324 fichas |
 | términos nuevos con sutta localizado | 118 de 118 |
 | sufijos de la cosecha en la norma | 0 (decisión del IEBH: más adelante) |
+
+## 6. Versión
+
+El glosario pasa de **v0.1 a v1.0** (`recursos/glosario/conspectus.json`,
+campo `version`, y las `<meta>` de la plantilla): el Conspectus colacionado
+entero, Nandisena completo, 171 normativos con sus suttas, enlaces cruzados.
+Lo que viene —el inglés de Nandisena por tandas, los sufijos— son 1.x.
