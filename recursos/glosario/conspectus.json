@@ -1,6 +1,6 @@
 {
   "_nota": "Este archivo trae SÓLO el Conspectus Terminorum (saññāmātikā) de la sección E del vol. IV de la edición de Helmer Smith del Saddanīti, pp. 1105-1148, transcrito a ojo del escaneo. La otra fuente principal de la página —el «Glosario de términos gramaticales de la lengua pali» de Bhikkhu Nandisena, IEBH 2013— va en nandisena.json, y la lista normativa interna del repositorio, en comun/glosario.md. El campo «fr» es la glosa de Smith VERBATIM, en su francés y con su cursiva deshecha; los campos «es» y «en» son PROPUESTA del traductor de este repositorio, no adjudicada por el IEBH. Donde Nandisena tiene entrada para el mismo término, generar_glosario.py la engancha a la ficha: su español es el firmado, y la propuesta queda al lado para poder compararlas. Los diacríticos van en NFC.",
-  "version": "0.1",
+  "version": "1.0",
   "estado": "completo — pp. 1105-1148 (el Conspectus gramatical entero)",
   "fuentes": {
     "conspectus": {
