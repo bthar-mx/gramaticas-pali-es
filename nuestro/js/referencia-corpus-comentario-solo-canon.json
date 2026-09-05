@@ -232219,6 +232219,10 @@
    "forma": "kinnu",
    "mias": [
     [
+     "kinnu:kiṃ",
+     "nu"
+    ],
+    [
      "kina",
      "nu"
     ],
@@ -232260,7 +232264,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 7
+   "rango": 8
   },
   {
    "forma": "yobbaññaṃ",
@@ -311304,6 +311308,10 @@
    "forma": "kinnu",
    "mias": [
     [
+     "kinnu:kiṃ",
+     "nu"
+    ],
+    [
      "kina",
      "nu"
     ],
@@ -311345,7 +311353,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 7
+   "rango": 8
   },
   {
    "forma": "rocesīti",
@@ -311833,11 +311841,15 @@
    "forma": "paribhuñjitabbāti",
    "mias": [
     [
-     "paribhuñjitabba",
+     "paribhuñjitabbāti:paribhuñjitabbā",
      "iti"
     ],
     [
      "paribhuñjitabbā",
+     "iti"
+    ],
+    [
+     "paribhuñjitabba",
      "iti"
     ],
     [
@@ -311910,11 +311922,15 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 1
+   "rango": 2
   },
   {
    "forma": "kinnu",
    "mias": [
+    [
+     "kinnu:kiṃ",
+     "nu"
+    ],
     [
      "kina",
      "nu"
@@ -311957,7 +311973,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 7
+   "rango": 8
   },
   {
    "forma": "māhu",
