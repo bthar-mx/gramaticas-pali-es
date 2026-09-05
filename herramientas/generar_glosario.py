@@ -115,11 +115,22 @@ def leer_normativo(ruta):
         limpio = re.sub(r"[*_]", "", lema).strip()
         es_limpio = re.sub(r"\*\*(.+?)\*\*", r"\1", es).replace("\\[", "[").replace("\\]", "]")
         nota = re.sub(r"\*\*(.+?)\*\*", r"\1", nota).replace("\\[", "[").replace("\\]", "]")
+        # «Fijado en» puede llevar, tras una raya, las referencias por sutta
+        # («cosecha s. 57, IEBH 2026-09-05 — Kacc. §291 · Nyāsa §286, §291»);
+        # van aparte, para que la ficha las enseñe como enseña las de Nandisena.
+        refs = []
+        if " — " in fijado:
+            fijado, tras = fijado.split(" — ", 1)
+            if not tras.startswith("sin sutta"):
+                refs = [r.strip() for r in tras.split(" · ") if r.strip()]
+            else:
+                fijado = fijado + " — " + tras
         entradas.append({
             "pali": limpio,
             "es": es_limpio,
             "nota": nota or None,
             "fijado_en": fijado or None,
+            "refs": refs,
             "fuente": "glosario",
             "sin_lema": sin_lema,
         })

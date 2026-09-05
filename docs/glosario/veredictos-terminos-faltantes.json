@@ -1,0 +1,828 @@
+{
+ "fecha": "2026-09-05",
+ "adjudicado_por": "IEBH",
+ "veredictos": {
+  "sādhana": {
+   "veredicto": "acepta",
+   "es": "sādhana; modo; modo de formación (de un derivado primario)",
+   "en": "",
+   "nota": ""
+  },
+  "saralopa": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "savibhatti": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "avibhatti": {
+   "veredicto": "acepta",
+   "es": "sin inflexión; sin desinencia",
+   "en": "",
+   "nota": ""
+  },
+  "asaṃyoganta": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "saṃyoganta": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "dhātvanta": {
+   "veredicto": "acepta",
+   "es": "(letra/sílaba) al final de la raíz",
+   "en": "(letter/sylllable) at the end of a root",
+   "nota": ""
+  },
+  "dhātvantalopa": {
+   "veredicto": "acepta",
+   "es": "elisión de la (letra/sílaba) al final de la raíz",
+   "en": "elision of the (letter/syllable that stands at the) end of the root",
+   "nota": ""
+  },
+  "pakatibhāva": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "pubbasara": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "parasara": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "parakkhara": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "napuṃsaka": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "adhikicca": {
+   "veredicto": "acepta",
+   "es": "tomando como regla regente",
+   "en": "",
+   "nota": ""
+  },
+  "anuvatti": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "antalopa": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "appayoga": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "niddiṭṭha": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "byākaraṇa": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "guṇavacana": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "ādivuddhi": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "suttavibhāga": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "akatarassa": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "jinavacanayutta": {
+   "veredicto": "acepta",
+   "es": "conforme a la palabra del Victorioso (Buddha)",
+   "en": "",
+   "nota": ""
+  },
+  "kāranta": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "tabbiparīta": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "aññapadattha": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "aṅgavikāra": {
+   "veredicto": "acepta",
+   "es": "modificación de un miembro (del cuerpo) ",
+   "en": "",
+   "nota": ""
+  },
+  "tappakati": {
+   "veredicto": "acepta",
+   "es": "hecho de eso",
+   "en": "",
+   "nota": ""
+  },
+  "dhātupaccaya": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "manogaṇa": {
+   "veredicto": "acepta",
+   "es": "el grupo «mano»",
+   "en": "",
+   "nota": ""
+  },
+  "ghaṭādi": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "tunādi": {
+   "veredicto": "acepta",
+   "es": "los sufijos 'tuna', 'tvāna', 'tvā'",
+   "en": "",
+   "nota": ""
+  },
+  "tvādi": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "saddūpapada": {
+   "veredicto": "acepta",
+   "es": "lit., palabra cercana; [compuesto cuyo] miembro precedente es una palabra",
+   "en": "lit., near-by word; having a word as the preceding member",
+   "nota": ""
+  },
+  "sambandhī": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "hetvattha": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "karaṇattha": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "byāpika": {
+   "veredicto": "acepta",
+   "es": "(locativo) que abarca; permeante; extensible",
+   "en": "",
+   "nota": ""
+  },
+  "ubhayattha": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "bhāvakamma": {
+   "veredicto": "acepta",
+   "es": "(en la voz) impersonal y pasiva",
+   "en": "(in) the impersonal and the passive voice",
+   "nota": ""
+  },
+  "tija-gupa-kita-māna": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "catukka": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sabbattha": {
+   "veredicto": "acepta",
+   "es": "en todos los casos; en todas partes",
+   "en": "",
+   "nota": ""
+  },
+  "ikārāgama": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sāgama": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "māgama": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "rāgama": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "okārāgama": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "ṇāpaya": {
+   "veredicto": "acepta",
+   "es": "el sufijo causativo 'ṇāpaya'",
+   "en": "the causative suffix 'ṇāpaya'",
+   "nota": ""
+  },
+  "gha (saññā)": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": "gha-saññā"
+  },
+  "jha (saññā)": {
+   "veredicto": "acepta",
+   "es": "la designación «jha» (temas masculinos y neutros en -i, -ī)",
+   "en": "the designation «jha» (masculine and neuter bases ending in 'i', 'ī')",
+   "nota": "jha-saññā"
+  },
+  "la (saññā)": {
+   "veredicto": "acepta",
+   "es": "la designación «la» (temas  masculinos y neutros en u, -ū)",
+   "en": "the designation «la» (masculine and neuter bases ending in ‘u’ ‘ū’)",
+   "nota": "la-saññā"
+  },
+  "ga (saññā)": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇeyya": {
+   "veredicto": "rechaza",
+   "es": "el sufijo 'ṇeyya' — linaje",
+   "en": "the suffix 'ṇeyya' — linaje",
+   "nota": ""
+  },
+  "sufijo ṇi": {
+   "veredicto": "rechaza",
+   "es": "el sufijo 'ṇi' — linaje",
+   "en": "the suffix 'ṇi' — linaje",
+   "nota": ""
+  },
+  "sufijo ṇava": {
+   "veredicto": "rechaza",
+   "es": "el sufijo 'ṇava' — linaje",
+   "en": "the suffix 'ṇava' — linaje",
+   "nota": ""
+  },
+  "sufijo ṇera": {
+   "veredicto": "rechaza",
+   "es": "el sufijo 'ṇera' — linaje",
+   "en": "the suffix 'ṇera' — linaje",
+   "nota": ""
+  },
+  "sufijo ṇika": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo tā": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo iya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo la": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ttana": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo kaṇ": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo vī": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo so": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo sī": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ra": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo vantu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo mantu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇa": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo maya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ma": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ī": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo tiya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ka": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo dhā": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo thā": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo thaṃ": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo āya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo īya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇaya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo nā": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo sa": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo cha": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo kha": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ppa": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo kvi": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ramma": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo yu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo rū": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇuka": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo teyya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ricca": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo i": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ririya": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ta": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ina": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo tuṃ": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ratthu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ritu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo rātu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo tuka": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ika": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo kāra": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo kta": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo man": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇī": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo āni": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṇitta": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo tha": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ala": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ama": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo īvara": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ūra": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ṭha": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ntu": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo va": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ā": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo to": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "sufijo ye": {
+   "veredicto": "rechaza",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "anuttakāla": {
+   "veredicto": "acepta",
+   "es": "tiempo no especificado",
+   "en": "unspecified time",
+   "nota": ""
+  },
+  "uttakāla": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "saṅkhyāna": {
+   "veredicto": "acepta",
+   "es": "el contar; la cuenta (en contraste a \"saṅkhyeyya\", lo contado)",
+   "en": "counting (as opposed to \"saṅkhyeyya\", the thing counted)",
+   "nota": ""
+  },
+  "saṅkhyeyya": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "akārita": {
+   "veredicto": "acepta",
+   "es": "(raíz) sin causativo",
+   "en": "",
+   "nota": ""
+  },
+  "sakārita": {
+   "veredicto": "acepta",
+   "es": "(raíz) con causativo",
+   "en": "",
+   "nota": ""
+  },
+  "payujjamāna": {
+   "veredicto": "acepta",
+   "es": "(sujeto) empleado; expresado en la oración",
+   "en": "",
+   "nota": ""
+  },
+  "appayujjamāna": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "-ggahaṇa (caggahaṇa, vāggahaṇa)": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "kriyālakkhaṇa": {
+   "veredicto": "acepta",
+   "es": "que tiene la acción como característica (definición del verbo)",
+   "en": "",
+   "nota": ""
+  },
+  "bahuvacananiddesa": {
+   "veredicto": "acepta",
+   "es": "",
+   "en": "",
+   "nota": ""
+  },
+  "āsīsana": {
+   "veredicto": "acepta",
+   "es": "deseo; bendición (un uso del imperativo)",
+   "en": "wishing; blessing (a use of the imperative)",
+   "nota": ""
+  },
+  "tappakativacana": {
+   "veredicto": "acepta",
+   "es": "expresión de «hecho de eso» (sentido del sufijo 'maya')",
+   "en": "expression of «made of that» (sense of the suffix 'maya')",
+   "nota": ""
+  }
+ }
+}

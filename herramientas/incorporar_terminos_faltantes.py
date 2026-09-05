@@ -11,7 +11,10 @@ docs/glosario/terminos-faltantes.html. Por cada término ACEPTADO:
 
   · añade una fila al final de la tabla de comun/glosario.md, con el español
     del IEBH si lo escribió y el propuesto si no, la nota, y en «Fijado en»
-    «cosecha s. 57» más la referencia;
+    «cosecha s. 57» y, tras una raya, los suttas donde el término aparece en
+    Kaccāyana, la Rūpasiddhi y el Nyāsa, buscados por referenciar_terminos.py
+    (si no se encuentra en ninguno, se deja la referencia propuesta por la
+    cosecha, marcada como tal);
   · añade la clave a recursos/glosario/glosario-ingles.json con el inglés del
     IEBH si lo escribió y el propuesto si no.
 
@@ -20,6 +23,8 @@ lema ya está en comun/glosario.md, avisa y lo salta. Después hay que correr
 generar_todo.py, que es quien los publica en la página del glosario.
 """
 import json, os, re, sys, unicodedata
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import referenciar_terminos as REF
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COSECHA = os.path.join(RAIZ, "docs", "glosario", "terminos-faltantes.json")
@@ -53,7 +58,7 @@ def main():
              for m in re.finditer(r"^\|\s*(\*[^|]+\*)\s*\|", norma, flags=re.M))
     ing = json.load(open(INGLES, encoding="utf-8"))
 
-    filas, puestos, saltados = [], [], []
+    filas, puestos, saltados, sin_sutta = [], [], [], []
     for clave, vd in veredictos.items():
         if vd.get("veredicto") != "acepta" or clave not in cosecha:
             continue
@@ -69,7 +74,11 @@ def main():
         fuentes = " · ".join("{0} {1}".format(k, n) for k, n in (d.get("fuentes") or {}).items())
         celda_nota = nota or d.get("comentario", "")
         celda_nota = celda_nota.replace("|", "／").replace("\n", " ")
-        fijado = "cosecha s. 57, {0} {1}".format(quien, fecha).strip() + (" — " + ref.replace("|", "／") if ref else "")
+        hallado = REF.formatear(REF.buscar(d["termino"], d["tipo"]))
+        if not hallado:
+            sin_sutta.append(lema)
+            hallado = "sin sutta localizado; la cosecha proponía: " + ref.replace("|", "／") if ref else "sin sutta localizado"
+        fijado = "cosecha s. 57, {0} {1}".format(quien, fecha).strip() + " — " + hallado
         filas.append("| *{0}* | {1} | {2} | {3} |".format(
             lema, es.replace("|", "／"), celda_nota, fijado))
         ing["ingles"][lema] = en
@@ -102,6 +111,8 @@ def main():
         print("NOTAS DEL IEBH en filas aceptadas, léanse ({0}):".format(len(con_nota)))
         for k, n in con_nota:
             print("  · {0}: {1}".format(k, n.strip()))
+    if sin_sutta:
+        print("SIN SUTTA LOCALIZADO en Kacc./Rū./Nyāsa (queda la referencia de la cosecha): " + ", ".join(sin_sutta))
     if saltados:
         print("Ya estaban en comun/glosario.md y se saltaron: " + ", ".join(saltados))
     print("Ahora: python3 herramientas/generar_todo.py")
