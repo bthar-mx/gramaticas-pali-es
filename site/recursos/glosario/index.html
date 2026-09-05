@@ -780,12 +780,13 @@ function marca(clase, texto, tip){
     escapa(texto) + '</span>';
 }
 /* ---------- enlaces entre fichas ----------
-   Sólo se enlaza lo que viene en un CAMPO, no lo que aparece suelto en la
-   prosa de una nota: adivinar qué palabra de una nota es un término y a qué
+   Se enlazan el «v.» de Nandisena (remite_a), las variantes que Smith
+   imprime entre paréntesis, el «véase también» entre grafías vecinas y, en
+   el texto de Nandisena, las remisiones y los lemas sueltos con las cautelas
+   que se dicen en enlazaGlosa(). En las NOTAS (colaciones, dudas, conflictos)
+   no se enlaza nada: adivinar qué palabra de una nota es un término y a qué
    ficha apunta produciría enlaces falsos, y aquí un enlace falso es una
-   afirmación falsa. Se enlazan, pues, el «v.» de Nandisena (remite_a), las
-   variantes que Smith imprime entre paréntesis, y el «véase también» entre
-   grafías vecinas. El globo adelanta la glosa de destino. */
+   afirmación falsa. El globo adelanta la glosa de destino. */
 const clave = s => String(s == null ? '' : s).normalize('NFC').toLowerCase()
   .replace(/[^0-9a-zāīūṅñṭḍṇḷṃ]/g, '');
 const IDX = new Map();
@@ -832,20 +833,60 @@ function enlazaLista(lista){
     return IDX.has(clave(nom)) ? enlaceTermino(nom, p) : resalta(p);
   }).join('');
 }
-function enlazaGlosa(txt){
+/* Y los lemas SUELTOS en la prosa de Nandisena (pedido del IEBH, sesión 58):
+   «…en oposición al sandhi interno, vaṇṇa-sandhi» enlaza vaṇṇa-sandhi aunque
+   no lo preceda ningún «V.». Para que un enlace suelto no sea una afirmación
+   falsa, se enlaza sólo lo que cumple TODO esto:
+   - la voz existe como lema en la página (IDX);
+   - lleva diacrítico o guion, o tiene cuatro letras o más: así quedan fuera
+     «a», «no», «ca», «na», «hi», «tu», «iti», que son lemas de Smith y a la
+     vez preposiciones y partículas del español o de los ejemplos;
+   - no está entre comillas: lo entrecomillado son ejemplos citados
+     («khattiyo ca brāhmaṇo ca»), no menciones del término;
+   - no empieza por mayúscula (Dhamma, Aṭṭhakathā, Mūlabhāsā: nombres, no
+     términos) ni está en la lista de palabras corrientes de abajo;
+   - no es el propio lema de la ficha.
+   El guion admite el espacio que deja la composición del impreso
+   («avutta- kamma», «vaṇṇa- sandhi»). */
+const L_PALI = 'a-zA-ZāīūṅñṭḍṇḷṃĀĪŪṄÑṬḌṆḶṂ';
+const RE_SUELTO = new RegExp('(?<![' + L_PALI + '\\-])[' + L_PALI + ']+(?:-\\s?[' + L_PALI + ']+)*(?![' + L_PALI + '])', 'g');
+const RE_COMILLAS = /"[^"]*"|“[^”]*”|'[^']*'|‘[^’]*’/g;
+const NO_SUELTO = new Set(['dhamma', 'buddha', 'āharati', 'tiṭṭhati', 'pavattati']);
+function sueltoEnlazable(w, propio){
+  if (/^[A-ZĀĪŪṄÑṬḌṆḶṂ]/.test(w)) return false;
+  if (!(/[āīūṅñṭḍṇḷṃ-]/.test(w) || w.length >= 4)) return false;
+  const k = clave(w);
+  return IDX.has(k) && !NO_SUELTO.has(k) && k !== propio;
+}
+function enlazaGlosa(txt, propio){
   if (!txt) return '';
   txt = String(txt);
+  propio = clave(propio || '');
   let out = '', ult = 0;
   const trozos = [];
+  const dentro = (i) => trozos.some(([a,b]) => i >= a && i < b);
   for (const m of txt.matchAll(RE_REMISION)) trozos.push([m.index, m.index + m[0].length, m]);
   for (const m of txt.matchAll(RE_PAREN)) {
-    if (!trozos.some(([a,b]) => m.index >= a && m.index < b)) trozos.push([m.index, m.index + m[0].length, m]);
+    if (!dentro(m.index)) trozos.push([m.index, m.index + m[0].length, m]);
+  }
+  const comillas = [...txt.matchAll(RE_COMILLAS)].map(m => [m.index, m.index + m[0].length]);
+  // Un lema suelto se enlaza en su PRIMERA mención dentro de la glosa; «sandhi»
+  // tres veces en la ficha de pada-sandhi era un enlace y dos repeticiones.
+  const vistos = new Set();
+  for (const m of txt.matchAll(RE_SUELTO)) {
+    if (dentro(m.index) || comillas.some(([a,b]) => m.index >= a && m.index < b)) continue;
+    if (!sueltoEnlazable(m[0], propio)) continue;
+    const k = clave(m[0]);
+    if (vistos.has(k)) continue;
+    vistos.add(k);
+    trozos.push([m.index, m.index + m[0].length, {suelto: m[0]}]);
   }
   trozos.sort((a,b) => a[0]-b[0]);
   for (const [a, b, m] of trozos){
     if (a < ult) continue;
     out += resalta(txt.slice(ult, a));
-    if (m[2] !== undefined) out += resalta(m[1] + ' ') + enlazaLista(m[2]);
+    if (m.suelto !== undefined) out += enlaceTermino(m.suelto, m.suelto);
+    else if (m[2] !== undefined) out += resalta(m[1] + ' ') + enlazaLista(m[2]);
     else out += '(' + (IDX.has(clave(m[1])) ? enlaceTermino(m[1]) : resalta(m[1])) + ')';
     ult = b;
   }
@@ -885,8 +926,8 @@ function capaNand(t){
      adjudicado (generar_glosario.py no lo inyecta antes); si viene y el
      lector está en EN, se enseña él, rotulado «en». Si no, el español. */
   const enIngles = idioma === 'en' && t.en;
-  const cuerpo = enIngles ? enlazaGlosa(t.en)
-    : t.es ? enlazaGlosa(t.es)
+  const cuerpo = enIngles ? enlazaGlosa(t.en, t.pali)
+    : t.es ? enlazaGlosa(t.es, t.pali)
     : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
     : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
   const tip = 'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la '
