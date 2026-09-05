@@ -678,6 +678,10 @@ const mq = s => matchMedia(s).matches;
 /* ---------- utilidades ---------- */
 const sinDia = s => String(s == null ? '' : s)
   .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+/* Para el LEMA, además, sin guiones ni espacios: «gasañña» encuentra
+   «ga-saññā» y «vannasandhi» encuentra «vaṇṇa-sandhi» aunque Smith no
+   trajera la variante sin guion. */
+const compacta = s => sinDia(s).replace(/[-‑\s]/g, '');
 function resalta(txt){
   if (!q || !txt) return escapa(txt||'');
   const t = escapa(txt), r = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');
@@ -695,7 +699,7 @@ function casa(t){
                   t.errata, t.remite_a, t.fijado_en,
                   (t.variantes||[]).join(' '), (t.refs||[]).join(' '),
                   (t.nandisena||[]).map(g => (g.es||'') + ' ' + g.pali).join(' ')].join(' ');
-  return sinDia(campos).includes(sinDia(q));
+  return sinDia(campos).includes(sinDia(q)) || compacta(t.pali).includes(compacta(q));
 }
 
 
@@ -763,7 +767,7 @@ function miembros(gr){
 }
 function casaGrupo(gr){
   if (!q) return true;
-  if (sinDia(gr.p).includes(sinDia(q))) return true;
+  if (sinDia(gr.p).includes(sinDia(q)) || compacta(gr.p).includes(compacta(q))) return true;
   return miembros(gr).some(casa);
 }
 function marcadoGrupo(gr){
