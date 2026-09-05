@@ -45,8 +45,10 @@ retoques a mano después:
 
 - **gha, jha, la → `gha-saññā`, `jha-saññā`, `la-saññā`**, que es lo que el
   IEBH escribió en la nota del veredicto; la nota de la fila recupera el
-  comentario de la cosecha y lo dice. **`ga` quedó como `ga`** porque su
-  veredicto no traía nota: decide el IEBH si va `ga-saññā` por coherencia.
+  comentario de la cosecha y lo dice. `ga` fue también **`ga-saññā`**, por
+  coherencia, tras preguntarlo el IEBH al buscar «gasaññā».
+- **El buscador casa el lema sin guiones ni espacios** (`compacta()`):
+  «gasañña» encuentra `ga-saññā`, «vannasandhi» encuentra `vaṇṇa-sandhi`.
 - Los ES del IEBH donde los escribió; el propuesto donde no.
 
 Cifras: normativos **53 → 120**; lemas de la vista alfabética **1.984 →
@@ -93,7 +95,7 @@ separa en `refs` y la ficha las enseña en gris tras el sentido, como las
 
 1. Lo del briefing 57 §5 que no se ha tocado: tanda 2 del inglés, puntos
    17-34, barridos §5.23 b y §5.34.
-2. Si el IEBH pide `ga-saññā`, o quita suttas de las designaciones: editar
+2. Si el IEBH quita suttas de las designaciones: editar
    la fila en `comun/glosario.md` (y la clave en `glosario-ingles.json` si
    cambia el lema), `generar_todo.py`.
 3. Los 70 sufijos: esperar a que el IEBH diga cómo quiere que entren.
