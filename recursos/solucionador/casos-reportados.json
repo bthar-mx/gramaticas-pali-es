@@ -1776,7 +1776,131 @@
    "forma": "tatthevantaradhāyi",
    "fuente": "IEBH, 2026-09-03 · revisión del lote de un estudiante",
    "sandhi": true,
-   "componentes": "tattha + eva + antaradhāyi"
+   "componentes": "tattha + eva + antaradhāyi",
+   "nota": "Nota del revisor (verbatim): falta la sequencia a este sandhi adjudicado"
+  },
+  {
+   "forma": "orako",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "cirasseva",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "cirassa + eva"
+  },
+  {
+   "forma": "Cālaṃ",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "athassa",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "atha + assa"
+  },
+  {
+   "forma": "upaṭṭhapetvānāti-ādikā",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "upaṭṭhapetvānāti-ādikā: upaṭṭhapetvāna + iti + ādikā",
+   "escalera_iebh": [
+    "upaṭṭhapetvāna iti ādikā"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-05 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "Cālāti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "cālā + iti"
+  },
+  {
+   "forma": "Upacālāti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "upacālā + iti"
+  },
+  {
+   "forma": "Sīsūpacālāti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "sīsūpacālā + iti"
+  },
+  {
+   "forma": "tissopi",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "tisso + api"
+  },
+  {
+   "forma": "puttānampi",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "puttānaṃ + api"
+  },
+  {
+   "forma": "idameva",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "idaṃ + eva"
+  },
+  {
+   "forma": "Sīsūpacāle”ti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "sīsūpacāle + iti"
+  },
+  {
+   "forma": "pabbajī”ti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "pabbaji + iti"
+  },
+  {
+   "forma": "pabbajito”ti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "pabbajito + iti"
+  },
+  {
+   "forma": "etadavocā”ti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "etaṃ + avoca + iti",
+   "escalera_iebh": [
+    "etaṃ avoca iti"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-05 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "vicchinditukāmo",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false,
+   "nota": "Nota del revisor (verbatim): es sandhi interno"
+  },
+  {
+   "forma": "muṇḍāsī”ti-ādiṃ",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "muṇḍāsī”ti-ādiṃ: muṇḍā + asi + iti + ādiṃ",
+   "escalera_iebh": [
+    "muṇḍā asi iti ādiṃ"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-05 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "katakiccabhāvavibhāvanena",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "visayātikkamaṃ",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false,
+   "nota": "Nota del revisor (verbatim): es sandhi interno"
   }
  ]
 }
