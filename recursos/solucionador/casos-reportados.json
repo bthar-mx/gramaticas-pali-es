@@ -1901,6 +1901,85 @@
    "fuente": "IEBH, 2026-09-05 · revisión en la página",
    "sandhi": false,
    "nota": "Nota del revisor (verbatim): es sandhi interno"
+  },
+  {
+   "forma": "vatthuhi",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "vuttameva",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "vuttaṃ + eva"
+  },
+  {
+   "forma": "sativepullappattiyā",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "paññāvepullappattiyā",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "Buddhādīhi",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "Kinnu",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "kinnu: kiṃ + nu",
+   "escalera_iebh": [
+    "kiṃ nu",
+    "kin nu §31",
+    "kinnu §11"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-05 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "rocesī”ti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "rocesi + iti"
+  },
+  {
+   "forma": "upahāretukāmena",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": false
+  },
+  {
+   "forma": "rocemī”ti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "rocema + iti"
+  },
+  {
+   "forma": "kāmāpi",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "kāma + api",
+   "escalera_iebh": [
+    "kāmā api",
+    "kām ā api §10",
+    "kām api §12",
+    "kām āpi §15",
+    "kāmāpi §11"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-05 · revisión en la página · escalera del revisor (verbatim)"
+  },
+  {
+   "forma": "paribhuñjitabbāti",
+   "fuente": "IEBH, 2026-09-05 · revisión en la página",
+   "sandhi": true,
+   "componentes": "paribhuñjitabbāti: paribhuñjitabbā + iti",
+   "escalera_iebh": [
+    "paribhuñjitabbā iti"
+   ],
+   "escalera_fuente": "IEBH, 2026-09-05 · revisión en la página · escalera del revisor (verbatim)"
   }
  ]
 }
