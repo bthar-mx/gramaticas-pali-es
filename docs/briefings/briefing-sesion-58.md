@@ -91,6 +91,18 @@ separa en `refs` y la ficha las enseña en gris tras el sentido, como las
   los capítulos 1-4, basta añadirlos a `RU` y volver a correr
   `incorporar_…` sobre una copia limpia, o `referenciar_terminos.py` a mano.
 
+## 3 bis. Una fuente nueva: el Niruttidīpanī de Ledi Sayadaw
+
+El IEBH aportó el *Niruttidīpanīpāṭha* (ed. VRI, 311 pp.), comentario a
+Moggallāna. Texto extraído en `docs/fuentes/niruttidipani/Niruttidipani-patha.md`
+(páginas «[p. N]»; el PDF no viaja). Barrido de términos contra los 2.049
+lemas y la cosecha: **unos 50 candidatos nuevos**, curados y con glosa
+propuesta, en `docs/glosario/niruttidipani-terminos-candidatos.md`. Lo
+distintivo: las ocho clases de sandhi de Moggallāna (…dvibhāva, vipallāsa),
+las tres raíces (pakati-, vikati-, nāma-dhātu), los tres agentes (sayaṃ-,
+payojaka-, kamma-kattā), **mahāvutti** (138 veces), los ocho sentidos del
+taddhita y los ocho visesavidhāna del compuesto. Esperan veredicto.
+
 ## 4. Lo que el chat que siga tiene que hacer
 
 1. Lo del briefing 57 §5 que no se ha tocado: tanda 2 del inglés, puntos
@@ -98,8 +110,12 @@ separa en `refs` y la ficha las enseña en gris tras el sentido, como las
 2. Si el IEBH quita suttas de las designaciones: editar
    la fila en `comun/glosario.md` (y la clave en `glosario-ingles.json` si
    cambia el lema), `generar_todo.py`.
-3. Los 70 sufijos: esperar a que el IEBH diga cómo quiere que entren.
-4. Comprobación de siempre con jsdom (briefing 57 §5.6); las cuentas ahora
+3. Si el IEBH acepta candidatos del Niruttidīpanī: meterlos en
+   `terminos-faltantes.json` con `"fuente": "Niruttidīpanī"`, regenerar el
+   formulario y seguir el mismo camino; añadir el libro a
+   `referenciar_terminos.py` (cabecera «NNN. Aforismo [ka. …]»).
+4. Los 70 sufijos: esperar a que el IEBH diga cómo quiere que entren.
+5. Comprobación de siempre con jsdom (briefing 57 §5.6); las cuentas ahora
    son **2.049** lemas y **120** normativos.
 
 ### Advertencias operativas que no cambian
