@@ -337,10 +337,17 @@ footer code{font-family:var(--mono);font-size:11.5px}
 .pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 .licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
   font-size:12.5px;line-height:1.65;color:var(--soot)}
-#top-btn{position:fixed;right:18px;bottom:18px;z-index:55;background:var(--ola-2);
-  border:1px solid var(--hair);border-radius:3px;color:var(--soot);cursor:pointer;
-  font-size:15px;padding:5px 10px;display:none}
-#top-btn.on{display:block}
+/* El botón de subir: el mismo círculo que en /recursos/sandhi/ y el
+   solucionador (pedido del IEBH, sesión 58). */
+#top-btn{position:fixed;right:22px;bottom:22px;z-index:55;
+  width:38px;height:38px;border-radius:50%;padding:0;
+  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
+  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25);
+  opacity:0;pointer-events:none;transform:translateY(6px);
+  transition:opacity .2s,transform .2s,background .12s,color .12s}
+#top-btn.on{opacity:1;pointer-events:auto;transform:none}
+#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
+@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
 
 @media(max-width:900px){
   body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
