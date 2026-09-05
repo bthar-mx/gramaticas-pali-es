@@ -124,6 +124,57 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *bahuvacananiddesa* | indicación en plural (en el aforismo, para abarcar más de un caso) | Rū.: «“tappaccayesū” ti bahuvacananiddesena tuṃ-tvādīsu pi». niddesa sí está. Segunda pasada. | cosecha s. 57, IEBH 2026-09-05 — Rū. §533, §582 · Nyāsa §87, §267 |
 | *āsīsana* | deseo; bendición (un uso del imperativo) | Rū.: «āsīsanam āsiṭṭho». āsiṭṭha ya está (tanda 2 del inglés). Segunda pasada. | cosecha s. 57, IEBH 2026-09-05 — Rū. §451 |
 | *tappakativacana* | expresión de «hecho de eso» (sentido del sufijo 'maya') | Rū. Taddhita: «tappakatiyā vacanaṃ kathanaṃ tappakativacanaṃ». El glosario tiene tappakata (Smith); tappakati va en esta lista. Segunda pasada. | cosecha s. 57, IEBH 2026-09-05 — Kacc. §372 · Rū. §385 · Nyāsa §183 |
+| *saṅketa* | signo convencional; letra del aforismo que no forma parte de la forma (anubandha) | «Saṅketo nāvayavonubandho» (§23): «yo vaṇṇo payogassa avayavo na hoti, suttesu saṅketamatto hoti, so anubandho». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §281, §316, §317 · Nirutti. §12, §23, §25, §305, §563, §641 |
+| *lahusaññā* | designación breve (jha, la, pa, gha, ga) | «Lahusaññārāsi: Jho, lo, po, gho, go». Pareja de garusaññā, que ya es lema. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §8, §12 |
+| *byañjanavutti* | articulación de las consonantes (ṭhāna, karaṇa, payatana) | «Byañjanavuttirāsi: Ṭhānaṃ, karaṇaṃ, payatanaṃ». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §8 |
+| *sandhividhāna* | las operaciones de sandhi (las ocho clases de Moggallāna) | «Lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §12, §219 · Nirutti. §25, §60 |
+| *vipallāsa* | metátesis; inversión del orden de las letras | «Padakkharānaṃ pubbāparavipariyāyo vipallāso» (p. 30). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §533 · Nyāsa §267 · Nirutti. §25, §39, §44, §57, §58, §59 (y 8 más) |
+| *vipallāsa-sandhi* | sandhi por metátesis | Sección Vipallāsasandhi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §57 |
+| *dvibhāva-sandhi* | sandhi por reduplicación | «Dvibhāvo tividho»: byañjanadvitta, vibhatyantapadadvitta y la reduplicación de la raíz. dvibhāva ya es lema. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §52, §57 |
+| *byañjanadvitta* | geminación de consonante (pakkamo, parakkamo) | Primera clase del dvibhāva. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §52 |
+| *ādesa-sandhi* | sandhi por sustitución | Sección Ādesasandhi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §36, §42, §49 |
+| *āgama-sandhi* | sandhi por inserción | Sección Āgamasandhi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §424 · Nirutti. §49, §52 |
+| *vuddhi-sandhi* | sandhi por fortalecimiento | Sección Vuddhirāsi: «Atha vuddhisandhi dīpiyate». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §35 |
+| *pubbalopa* | elisión de la (vocal) precedente | «pubbalope sampatte paralopo okāsaṃ labhati». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §514, §613, §616 · Nirutti. §22, §26, §619, §626 |
+| *paralopa* | elisión de la (vocal) siguiente | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §470, §478, §613, §631, §675 · Nirutti. §22, §27, §624 |
+| *dīghavidhi* | regla de alargamiento (por metro, por inserción, por comodidad de pronunciación o de comprensión) | «dīghavidhi nāma gāthāvasena vā āgamavasena vā vacanasukhavasena vā buddhisukhavasena vā hoti». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §25 · Nirutti. §35 |
+| *vacanasukha* | comodidad de pronunciación (motivo del alargamiento) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §35 |
+| *buddhisukha* | comodidad de comprensión (motivo del alargamiento) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §35, §38 |
+| *mahāvutti* | «la gran regla»: el sutta comodín de Moggallāna por el que se explican las formas no previstas (nipātana) | «Mahāvuttisuttamidaṃ … iminā nipātanena sijjhanti». 138 veces «mahāvuttinā». Es el §51 de Kaccāyana en Moggallāna. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §387, §388 · Nirutti. §33, §42, §45, §46, §49, §51 (y 106 más) |
+| *sayaṃkattā* | agente por sí mismo (el que hace la acción) | «kattā tividho sayaṃkattā, payojakakattā, kammakattāti» (p. 100). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §305 |
+| *payojakakattā* | agente causante (el que hace hacer) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §305 |
+| *kammakattā* | agente-objeto: el objeto que se presenta como agente («kammaṃ karīyati») | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §424, §444, §447, Kibbidhāna (introducción), Ākhyāta (introducción) · Nyāsa §282, §457, Kibbidhana (introducción) · Nirutti. §305, §574, §627, §663 |
+| *pakatidhātu* | raíz primitiva (bhū, hū, gamu, paca) | «Sā pakatidhātu, vikatidhātu, nāmadhātuvasena tividhā» (p. 184). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §560, §561 |
+| *vikatidhātu* | raíz derivada (desiderativa, intensiva: titikkha, bubhukkha) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §560, §561, §730 |
+| *nāmadhātu* | raíz denominativa (puttīya, pabbatāya) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §317 · Nirutti. §293, §546, §560, §561, §704, §714 |
+| *itthipaccaya* | sufijo femenino (ā, ī, inī…) | Sección Itthipaccayarāsi (§70 «Itthiyamatvā»). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §69, §70, §81, §362 |
+| *vibhattipaccayanta* | (palabra) terminada en sufijo con valor de inflexión (to, tra, dhā…) | «vibhattiṭṭhāne ṭhitā paccayā». | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §274, §287, §364 |
+| *upasaggapada* | palabra-prefijo (una de las seis clases de indeclinable) | «Chabbidhāni abyayapadāni upasaggapadaṃ, nipātapadaṃ…» (p. 88). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §51 · Nirutti. §287, §288, §332 |
+| *nipātapada* | palabra-partícula (una de las seis clases de indeclinable) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §60, §287, §288, §297, §332, §388 |
+| *tvādipaccayanta* | (indeclinable) terminado en tvā, etc. | Ídem. tvādi entró en la sesión 58. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §287, §288 |
+| *napuṃsakekatta* | (el compuesto) en neutro singular | Primero de los ocho visesavidhāna del compuesto (p. 137). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §351, §358, §359 |
+| *samāsantarassa* | abreviación de la vocal final del compuesto | Segundo visesavidhāna. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §358, §359, §361 |
+| *pumbhāvātidesa* | tratamiento del femenino como masculino dentro del compuesto | Tercero; «Itthiyaṃ bhāsitapumitthī pumāvekatthe» (§362). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §358, §361, §362, §364 |
+| *nānādesa* | sustituciones varias (en el compuesto) | Sexto visesavidhāna. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §358, §377, §409, §429 |
+| *vāccattha* | sentido expresado (por la construcción), frente a abhidheyyattha | «samāsapadassa attho duvidho vāccattho, abhidheyyattho cāti» (p. 131). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §356, §565, §569, §717 |
+| *ekatthasaññā* | designación «ekattha» (unidad de sentido del compuesto) | ekattha ya es lema. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §332, §345, §412 |
+| *asaṅkhyekattha* | ekattha sin numeral (el abyayībhāva) | p. 117. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §332, §336, §337, §338, §344 |
+| *apacca* | descendiente (primer sentido del taddhita) | «Ṇo vāpacce» (§430); sección Apaccarāsi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Kacc. §83, §277, §308, §343, §344, §345 (y 31 más) · Rū. §361, §362, §363, §365, §366, §367 (y 15 más), Taddhita (introducción) · Nyāsa §2, §6, §10, §20, §22, §23 (y 213 más), Taddhita (introducción) · Nirutti. §42, §44, §45, §59, §70, §149 (y 113 más) |
+| *assatthi* | «eso hay en esto»: posesión (taddhita mantu, vantu, ī) | «Tametthassatthīti mantu» (§472). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Kacc. §323, §353 · Rū. §397, §405, §423, §429 · Nyāsa §58, §93, §109, §122, §124, §164 (y 25 más) · Nirutti. §33, §92, §358, §429, §471, §472 (y 2 más), Niruttidipani-patha.md (introducción) |
+| *parimāṇa* | medida (sentido del taddhita) | Uno de los ocho sentidos del taddhita (p. 154). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Kacc. §351 · Rū. §375, §377, §384, §417, §563, §666 (y 1 más) · Nyāsa §48, §274, §284, §301, Sandhi (introducción) · Nirutti. §57, §289, §317, §358, §429, §484 (y 13 más) |
+| *nānātta* | diversidad (sentido del taddhita; también saddanānātta) | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §51, §356 · Nirutti. §305, §308, §320, §322, §327, §346 (y 4 más) |
+| *abhūtatabbhāva* | «llegar a ser lo que no era» (karoti/bhavati con ī: bhasmīkaroti) | «Abhūtatabbhāve karāsabhūyoge vikārācī» (§549). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §548, §549 |
+| *niddiṭṭhapaccaya* | sufijos ya enunciados (que se reutilizan en otro sentido) | «Pubbe niddiṭṭhā ṇādayo paccayā…» (§551 «Aññasmiṃ»). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §550, §552 |
+| *āvuddhi* | fortalecimiento en ā | «a, yuvaṇṇānaṃ ā, e, ovuddhiyo honti» (p. 154). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nyāsa §356, §532, §606, Taddhita (introducción) · Nirutti. §431, §604, §642, §650, §763 |
+| *ovuddhi* | fortalecimiento en o | Ídem. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Rū. §375 · Nyāsa §68, §349, §356, §415, §423, §483 (y 1 más) · Nirutti. §432, §552, §565, §640, §716, §719 (y 1 más) |
+| *gaṇanapatha* | sistema de numeración (unidad, decena, centena…) | pp. 152-153. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §429 |
+| *sabbaliṅga* | (forma) válida para todo género | p. 75. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §225, §330, §336, §353 |
+| *samānaliṅga* | del mismo género (que su abhidheyya) | p. 258. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §717 |
+| *vikati* | modificación; forma derivada | pp. 40, 184 (vikatidhātu). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Kacc. §68, §351, §389, §645 · Rū. §374, §375, §385, §413 · Nyāsa §68, §166, §184, §284, §291, §316 (y 3 más) · Nirutti. §94, §291, §311, §535, §536, §537 (y 4 más) |
+| *visaṃyoga* | (forma) sin consonante conjunta | Sección Visaṃyogarūparāsi (Kitakaṇḍa). | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §714, §729, §751, §752 |
+| *sasaṃyoga* | (forma) con consonante conjunta | Sección Sasaṃyoganādesarāsi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §729, §732, §752, §753 |
+| *dhātvantavikāra* | alteración de la final de la raíz | Sección; dhātvanta entró en la sesión 58. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §714, §733 |
+| *paccayavikāra* | alteración del sufijo | Sección Paccayavikārarāsi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §733, §763 |
 
 ## En discusión
 

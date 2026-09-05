@@ -14,6 +14,9 @@ Obras y de dónde salen:
           «**NNN. RRR. …**»: el primer número es el de Kaccāyana.
   Rū.     la Rūpasiddhi, capítulos 5-7 (docs/). Cabecera «**NNN. …**».
   Nyāsa   el texto pāḷi completo (docs/fuentes/nyasa/), cabecera «( NNN )».
+  Nirutti. el Niruttidīpanī de Ledi Sayadaw (docs/fuentes/niruttidipani/),
+          numeración propia de Moggallāna (1-810), cabecera «NNN. Aforismo
+          [ka. …]». Cada sutta imprime su equivalencia con Kaccāyana.
 
 Se busca el TEMA (sin desinencia) como subcadena, sin distinguir mayúsculas,
 en todo el bloque del sutta —aforismo, vutti, ejemplos y traducción—; los
@@ -43,6 +46,9 @@ RU = [
     ("docs/7- Kibbidhāna-Rūpasiddhi.md"),
 ]
 NYASA = sorted(glob.glob(os.path.join(RAIZ, "docs", "fuentes", "nyasa", "Nyasa-0[1-8]-*.md")))
+
+NIRUTTI = os.path.join(RAIZ, "docs", "fuentes", "niruttidipani", "Niruttidipani-patha.md")
+RE_NIRUTTI = re.compile(r"^\s*(\d{1,3})\.\s+[A-ZĀĪŪṄÑṬḌṆḶ]")
 
 RE_KACC = re.compile(r"^\s*\**(\d{1,3})\\?\.\s*\d{1,3}\\?\.\s*\**\s*\S")
 RE_RU = re.compile(r"^\s*\**(\d{3})\**\\?\.\s*\**\s*\S")
@@ -98,13 +104,15 @@ _CORPUS = None
 def corpus():
     global _CORPUS
     if _CORPUS is None:
-        _CORPUS = {"Kacc.": {}, "Rū.": {}, "Nyāsa": {}}
+        _CORPUS = {"Kacc.": {}, "Rū.": {}, "Nyāsa": {}, "Nirutti.": {}}
         for r in KACC:
             _CORPUS["Kacc."].update(_bloques(os.path.join(RAIZ, r), RE_KACC))
         for r in RU:
             _CORPUS["Rū."].update(_bloques(os.path.join(RAIZ, r), RE_RU))
         for r in NYASA:
             _CORPUS["Nyāsa"].update(_bloques(r, RE_NYASA))
+        if os.path.exists(NIRUTTI):
+            _CORPUS["Nirutti."].update(_bloques(NIRUTTI, RE_NIRUTTI))
         # De cada sutta se guardan el aforismo (primera línea, con los
         # guiones vueltos espacios: «jha-lā» son dos designaciones) y el
         # bloque entero sin guiones, para la subcadena.
@@ -168,7 +176,7 @@ def buscar(termino, tipo="término"):
 def formatear(hallado, maximo=6):
     """«Kacc. §525, §526 · Nyāsa §525, §526, §540 (y 6 más)»."""
     partes = []
-    for obra in ("Kacc.", "Rū.", "Nyāsa"):
+    for obra in ("Kacc.", "Rū.", "Nyāsa", "Nirutti."):
         nums = hallado.get(obra)
         if not nums:
             continue

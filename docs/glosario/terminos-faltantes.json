@@ -1822,5 +1822,668 @@
    "Nyāsa": 1,
    "Thitz": 3
   }
+ },
+ {
+  "id": "saṅketa",
+  "termino": "saṅketa",
+  "tipo": "término",
+  "es": "signo convencional; letra del aforismo que no forma parte de la forma (anubandha)",
+  "en": "conventional marker (a letter of the sutta that is not part of the form)",
+  "comentario": "«Saṅketo nāvayavonubandho» (§23): «yo vaṇṇo payogassa avayavo na hoti, suttesu saṅketamatto hoti, so anubandho».",
+  "ref": "Nirutti. p. 4",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "lahusaññā",
+  "termino": "lahusaññā",
+  "tipo": "término",
+  "es": "designación breve (jha, la, pa, gha, ga)",
+  "en": "short technical name",
+  "comentario": "«Lahusaññārāsi: Jho, lo, po, gho, go». Pareja de garusaññā, que ya es lema.",
+  "ref": "Nirutti. p. 3",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "byañjanavutti",
+  "termino": "byañjanavutti",
+  "tipo": "término",
+  "es": "articulación de las consonantes (ṭhāna, karaṇa, payatana)",
+  "en": "articulation of consonants",
+  "comentario": "«Byañjanavuttirāsi: Ṭhānaṃ, karaṇaṃ, payatanaṃ».",
+  "ref": "Nirutti. p. 2",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "sandhividhāna",
+  "termino": "sandhividhāna",
+  "tipo": "término",
+  "es": "las operaciones de sandhi (las ocho clases de Moggallāna)",
+  "en": "the sandhi operations",
+  "comentario": "«Lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso».",
+  "ref": "Nirutti. p. 6",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vipallāsa",
+  "termino": "vipallāsa",
+  "tipo": "término",
+  "es": "metátesis; inversión del orden de las letras",
+  "en": "metathesis",
+  "comentario": "«Padakkharānaṃ pubbāparavipariyāyo vipallāso» (p. 30).",
+  "ref": "Nirutti. p. 6",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vipallāsa-sandhi",
+  "termino": "vipallāsa-sandhi",
+  "tipo": "término",
+  "es": "sandhi por metátesis",
+  "en": "metathesis sandhi",
+  "comentario": "Sección Vipallāsasandhi.",
+  "ref": "Nirutti. p. 30",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "dvibhāva-sandhi",
+  "termino": "dvibhāva-sandhi",
+  "tipo": "término",
+  "es": "sandhi por reduplicación",
+  "en": "doubling sandhi",
+  "comentario": "«Dvibhāvo tividho»: byañjanadvitta, vibhatyantapadadvitta y la reduplicación de la raíz. dvibhāva ya es lema.",
+  "ref": "Nirutti. p. 25",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "byañjanadvitta",
+  "termino": "byañjanadvitta",
+  "tipo": "término",
+  "es": "geminación de consonante (pakkamo, parakkamo)",
+  "en": "consonant doubling",
+  "comentario": "Primera clase del dvibhāva.",
+  "ref": "Nirutti. p. 25",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "ādesa-sandhi",
+  "termino": "ādesa-sandhi",
+  "tipo": "término",
+  "es": "sandhi por sustitución",
+  "en": "substitution sandhi",
+  "comentario": "Sección Ādesasandhi.",
+  "ref": "Nirutti. p. 12",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "āgama-sandhi",
+  "termino": "āgama-sandhi",
+  "tipo": "término",
+  "es": "sandhi por inserción",
+  "en": "insertion sandhi",
+  "comentario": "Sección Āgamasandhi.",
+  "ref": "Nirutti. p. 22",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vuddhi-sandhi",
+  "termino": "vuddhi-sandhi",
+  "tipo": "término",
+  "es": "sandhi por fortalecimiento",
+  "en": "strengthening sandhi",
+  "comentario": "Sección Vuddhirāsi: «Atha vuddhisandhi dīpiyate».",
+  "ref": "Nirutti. p. 12",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "pubbalopa",
+  "termino": "pubbalopa",
+  "tipo": "término",
+  "es": "elisión de la (vocal) precedente",
+  "en": "elision of the preceding (vowel)",
+  "comentario": "«pubbalope sampatte paralopo okāsaṃ labhati».",
+  "ref": "Nirutti. p. 5",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "paralopa",
+  "termino": "paralopa",
+  "tipo": "término",
+  "es": "elisión de la (vocal) siguiente",
+  "en": "elision of the following (vowel)",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 5",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "dīghavidhi",
+  "termino": "dīghavidhi",
+  "tipo": "término",
+  "es": "regla de alargamiento (por metro, por inserción, por comodidad de pronunciación o de comprensión)",
+  "en": "lengthening rule",
+  "comentario": "«dīghavidhi nāma gāthāvasena vā āgamavasena vā vacanasukhavasena vā buddhisukhavasena vā hoti».",
+  "ref": "Nirutti. p. 11",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vacanasukha",
+  "termino": "vacanasukha",
+  "tipo": "término",
+  "es": "comodidad de pronunciación (motivo del alargamiento)",
+  "en": "ease of utterance",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 11",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "buddhisukha",
+  "termino": "buddhisukha",
+  "tipo": "término",
+  "es": "comodidad de comprensión (motivo del alargamiento)",
+  "en": "ease of understanding",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 11",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "mahāvutti",
+  "termino": "mahāvutti",
+  "tipo": "término",
+  "es": "«la gran regla»: el sutta comodín de Moggallāna por el que se explican las formas no previstas (nipātana)",
+  "en": "the great rule (Moggallāna’s catch-all sutta)",
+  "comentario": "«Mahāvuttisuttamidaṃ … iminā nipātanena sijjhanti». 138 veces «mahāvuttinā». Es el §51 de Kaccāyana en Moggallāna.",
+  "ref": "Nirutti. p. 9",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "sayaṃkattā",
+  "termino": "sayaṃkattā",
+  "tipo": "término",
+  "es": "agente por sí mismo (el que hace la acción)",
+  "en": "agent proper",
+  "comentario": "«kattā tividho sayaṃkattā, payojakakattā, kammakattāti» (p. 100).",
+  "ref": "Nirutti. p. 100",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "payojakakattā",
+  "termino": "payojakakattā",
+  "tipo": "término",
+  "es": "agente causante (el que hace hacer)",
+  "en": "causative agent",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 100",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "kammakattā",
+  "termino": "kammakattā",
+  "tipo": "término",
+  "es": "agente-objeto: el objeto que se presenta como agente («kammaṃ karīyati»)",
+  "en": "object-agent",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 100",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "pakatidhātu",
+  "termino": "pakatidhātu",
+  "tipo": "término",
+  "es": "raíz primitiva (bhū, hū, gamu, paca)",
+  "en": "primary root",
+  "comentario": "«Sā pakatidhātu, vikatidhātu, nāmadhātuvasena tividhā» (p. 184).",
+  "ref": "Nirutti. p. 184",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vikatidhātu",
+  "termino": "vikatidhātu",
+  "tipo": "término",
+  "es": "raíz derivada (desiderativa, intensiva: titikkha, bubhukkha)",
+  "en": "derived root",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 184",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "nāmadhātu",
+  "termino": "nāmadhātu",
+  "tipo": "término",
+  "es": "raíz denominativa (puttīya, pabbatāya)",
+  "en": "denominative root",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 184",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "itthipaccaya",
+  "termino": "itthipaccaya",
+  "tipo": "término",
+  "es": "sufijo femenino (ā, ī, inī…)",
+  "en": "feminine suffix",
+  "comentario": "Sección Itthipaccayarāsi (§70 «Itthiyamatvā»).",
+  "ref": "Nirutti. p. 33",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vibhattipaccayanta",
+  "termino": "vibhattipaccayanta",
+  "tipo": "término",
+  "es": "(palabra) terminada en sufijo con valor de inflexión (to, tra, dhā…)",
+  "en": "(word) ending in a case-like suffix",
+  "comentario": "«vibhattiṭṭhāne ṭhitā paccayā».",
+  "ref": "Nirutti. p. 85",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "upasaggapada",
+  "termino": "upasaggapada",
+  "tipo": "término",
+  "es": "palabra-prefijo (una de las seis clases de indeclinable)",
+  "en": "prefix-word",
+  "comentario": "«Chabbidhāni abyayapadāni upasaggapadaṃ, nipātapadaṃ…» (p. 88).",
+  "ref": "Nirutti. p. 88",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "nipātapada",
+  "termino": "nipātapada",
+  "tipo": "término",
+  "es": "palabra-partícula (una de las seis clases de indeclinable)",
+  "en": "particle-word",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 32",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "tvādipaccayanta",
+  "termino": "tvādipaccayanta",
+  "tipo": "término",
+  "es": "(indeclinable) terminado en tvā, etc.",
+  "en": "(indeclinable) ending in tvā etc.",
+  "comentario": "Ídem. tvādi entró en la sesión 58.",
+  "ref": "Nirutti. p. 88",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "napuṃsakekatta",
+  "termino": "napuṃsakekatta",
+  "tipo": "término",
+  "es": "(el compuesto) en neutro singular",
+  "en": "neuter singular (of the compound)",
+  "comentario": "Primero de los ocho visesavidhāna del compuesto (p. 137).",
+  "ref": "Nirutti. p. 129",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "samāsantarassa",
+  "termino": "samāsantarassa",
+  "tipo": "término",
+  "es": "abreviación de la vocal final del compuesto",
+  "en": "shortening of the compound-final vowel",
+  "comentario": "Segundo visesavidhāna.",
+  "ref": "Nirutti. p. 137",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "pumbhāvātidesa",
+  "termino": "pumbhāvātidesa",
+  "tipo": "término",
+  "es": "tratamiento del femenino como masculino dentro del compuesto",
+  "en": "treatment (of the feminine) as masculine",
+  "comentario": "Tercero; «Itthiyaṃ bhāsitapumitthī pumāvekatthe» (§362).",
+  "ref": "Nirutti. p. 137",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "nānādesa",
+  "termino": "nānādesa",
+  "tipo": "término",
+  "es": "sustituciones varias (en el compuesto)",
+  "en": "miscellaneous substitutions",
+  "comentario": "Sexto visesavidhāna.",
+  "ref": "Nirutti. p. 137",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vāccattha",
+  "termino": "vāccattha",
+  "tipo": "término",
+  "es": "sentido expresado (por la construcción), frente a abhidheyyattha",
+  "en": "expressed meaning",
+  "comentario": "«samāsapadassa attho duvidho vāccattho, abhidheyyattho cāti» (p. 131).",
+  "ref": "Nirutti. p. 131",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "ekatthasaññā",
+  "termino": "ekatthasaññā",
+  "tipo": "término",
+  "es": "designación «ekattha» (unidad de sentido del compuesto)",
+  "en": "the ekattha designation",
+  "comentario": "ekattha ya es lema.",
+  "ref": "Nirutti. p. 117",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "asaṅkhyekattha",
+  "termino": "asaṅkhyekattha",
+  "tipo": "término",
+  "es": "ekattha sin numeral (el abyayībhāva)",
+  "en": "non-numerical ekattha",
+  "comentario": "p. 117.",
+  "ref": "Nirutti. p. 117",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "apacca",
+  "termino": "apacca",
+  "tipo": "término",
+  "es": "descendiente (primer sentido del taddhita)",
+  "en": "offspring (taddhita sense)",
+  "comentario": "«Ṇo vāpacce» (§430); sección Apaccarāsi.",
+  "ref": "Nirutti. p. 154",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "assatthi",
+  "termino": "assatthi",
+  "tipo": "término",
+  "es": "«eso hay en esto»: posesión (taddhita mantu, vantu, ī)",
+  "en": "possession («that is in this»)",
+  "comentario": "«Tametthassatthīti mantu» (§472).",
+  "ref": "Nirutti. p. 154",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "parimāṇa",
+  "termino": "parimāṇa",
+  "tipo": "término",
+  "es": "medida (sentido del taddhita)",
+  "en": "measure (taddhita sense)",
+  "comentario": "Uno de los ocho sentidos del taddhita (p. 154).",
+  "ref": "Nirutti. p. 154",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "nānātta",
+  "termino": "nānātta",
+  "tipo": "término",
+  "es": "diversidad (sentido del taddhita; también saddanānātta)",
+  "en": "diversity",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 154",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "abhūtatabbhāva",
+  "termino": "abhūtatabbhāva",
+  "tipo": "término",
+  "es": "«llegar a ser lo que no era» (karoti/bhavati con ī: bhasmīkaroti)",
+  "en": "becoming what one was not",
+  "comentario": "«Abhūtatabbhāve karāsabhūyoge vikārācī» (§549).",
+  "ref": "Nirutti. p. 179",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "niddiṭṭhapaccaya",
+  "termino": "niddiṭṭhapaccaya",
+  "tipo": "término",
+  "es": "sufijos ya enunciados (que se reutilizan en otro sentido)",
+  "en": "previously stated suffixes",
+  "comentario": "«Pubbe niddiṭṭhā ṇādayo paccayā…» (§551 «Aññasmiṃ»).",
+  "ref": "Nirutti. p. 180",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "āvuddhi",
+  "termino": "āvuddhi",
+  "tipo": "término",
+  "es": "fortalecimiento en ā",
+  "en": "strengthening to ā",
+  "comentario": "«a, yuvaṇṇānaṃ ā, e, ovuddhiyo honti» (p. 154).",
+  "ref": "Nirutti. p. 154",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "ovuddhi",
+  "termino": "ovuddhi",
+  "tipo": "término",
+  "es": "fortalecimiento en o",
+  "en": "strengthening to o",
+  "comentario": "Ídem.",
+  "ref": "Nirutti. p. 154",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "gaṇanapatha",
+  "termino": "gaṇanapatha",
+  "tipo": "término",
+  "es": "sistema de numeración (unidad, decena, centena…)",
+  "en": "numeration system",
+  "comentario": "pp. 152-153.",
+  "ref": "Nirutti. p. 152",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "sabbaliṅga",
+  "termino": "sabbaliṅga",
+  "tipo": "término",
+  "es": "(forma) válida para todo género",
+  "en": "of all genders",
+  "comentario": "p. 75.",
+  "ref": "Nirutti. p. 75",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "samānaliṅga",
+  "termino": "samānaliṅga",
+  "tipo": "término",
+  "es": "del mismo género (que su abhidheyya)",
+  "en": "of the same gender",
+  "comentario": "p. 258.",
+  "ref": "Nirutti. p. 258",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "vikati",
+  "termino": "vikati",
+  "tipo": "término",
+  "es": "modificación; forma derivada",
+  "en": "modification; derived form",
+  "comentario": "pp. 40, 184 (vikatidhātu).",
+  "ref": "Nirutti. p. 40",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "visaṃyoga",
+  "termino": "visaṃyoga",
+  "tipo": "término",
+  "es": "(forma) sin consonante conjunta",
+  "en": "without a conjunct consonant",
+  "comentario": "Sección Visaṃyogarūparāsi (Kitakaṇḍa).",
+  "ref": "Nirutti. p. 257",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "sasaṃyoga",
+  "termino": "sasaṃyoga",
+  "tipo": "término",
+  "es": "(forma) con consonante conjunta",
+  "en": "with a conjunct consonant",
+  "comentario": "Sección Sasaṃyoganādesarāsi.",
+  "ref": "Nirutti. p. 275",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "dhātvantavikāra",
+  "termino": "dhātvantavikāra",
+  "tipo": "término",
+  "es": "alteración de la final de la raíz",
+  "en": "change of the root-final",
+  "comentario": "Sección; dhātvanta entró en la sesión 58.",
+  "ref": "Nirutti. p. 257",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
+ },
+ {
+  "id": "paccayavikāra",
+  "termino": "paccayavikāra",
+  "tipo": "término",
+  "es": "alteración del sufijo",
+  "en": "change of the suffix",
+  "comentario": "Sección Paccayavikārarāsi.",
+  "ref": "Nirutti. p. 267",
+  "fuentes": {
+   "Nirutti": 0
+  },
+  "cosecha": "Niruttidīpanī, s. 58"
  }
 ]

@@ -78,7 +78,7 @@ def main():
         if not hallado:
             sin_sutta.append(lema)
             hallado = "sin sutta localizado; la cosecha proponía: " + ref.replace("|", "／") if ref else "sin sutta localizado"
-        fijado = "cosecha s. 57, {0} {1}".format(quien, fecha).strip() + " — " + hallado
+        fijado = "cosecha {0}, {1} {2}".format(d.get("cosecha", "s. 57"), quien, fecha).strip() + " — " + hallado
         filas.append("| *{0}* | {1} | {2} | {3} |".format(
             lema, es.replace("|", "／"), celda_nota, fijado))
         ing["ingles"][lema] = en
