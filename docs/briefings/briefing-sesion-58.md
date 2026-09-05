@@ -101,7 +101,19 @@ propuesta, en `docs/glosario/niruttidipani-terminos-candidatos.md`. Lo
 distintivo: las ocho clases de sandhi de Moggallāna (…dvibhāva, vipallāsa),
 las tres raíces (pakati-, vikati-, nāma-dhātu), los tres agentes (sayaṃ-,
 payojaka-, kamma-kattā), **mahāvutti** (138 veces), los ocho sentidos del
-taddhita y los ocho visesavidhāna del compuesto. Esperan veredicto.
+taddhita y los ocho visesavidhāna del compuesto.
+
+**El IEBH los aceptó en la sesión**: 51 lemas (la tabla del documento
+menos los siete «paṭhamā-vibhatti…sattamī-vibhatti» y «evuddhi»), con las
+glosas propuestas tal cual. Entraron por el mismo camino: filas añadidas a
+`terminos-faltantes.json` con `"cosecha": "Niruttidīpanī, s. 58"`,
+veredictos en `docs/glosario/veredictos-niruttidipani.json`,
+`incorporar_terminos_faltantes.py` (ahora lee el campo `cosecha` para la
+celda «Fijado en»). `referenciar_terminos.py` tiene el libro como cuarta
+obra, **Nirutti.**, con la numeración de Moggallāna (804 suttas de 810), así
+que cada fila nueva lleva sus suttas en las cuatro obras. **Las 67 filas de
+la cosecha 57 NO se retocaron** con referencias al Niruttidīpanī: son filas
+publicadas, y se hace si el IEBH lo pide (basta volver a calcularlas).
 
 ## 4. Lo que el chat que siga tiene que hacer
 
@@ -110,13 +122,12 @@ taddhita y los ocho visesavidhāna del compuesto. Esperan veredicto.
 2. Si el IEBH quita suttas de las designaciones: editar
    la fila en `comun/glosario.md` (y la clave en `glosario-ingles.json` si
    cambia el lema), `generar_todo.py`.
-3. Si el IEBH acepta candidatos del Niruttidīpanī: meterlos en
-   `terminos-faltantes.json` con `"fuente": "Niruttidīpanī"`, regenerar el
-   formulario y seguir el mismo camino; añadir el libro a
-   `referenciar_terminos.py` (cabecera «NNN. Aforismo [ka. …]»).
+3. Si el IEBH quiere referencias «Nirutti.» también en las 67 filas de la
+   cosecha 57: recalcularlas con `referenciar_terminos.py` y reescribir la
+   celda «Fijado en» de cada una.
 4. Los 70 sufijos: esperar a que el IEBH diga cómo quiere que entren.
 5. Comprobación de siempre con jsdom (briefing 57 §5.6); las cuentas ahora
-   son **2.049** lemas y **120** normativos.
+   son **2.100** lemas y **171** normativos.
 
 ### Advertencias operativas que no cambian
 
@@ -127,8 +138,8 @@ Las del briefing 57: `git --no-optional-locks status --porcelain`, nada de
 
 | | |
 | --- | --- |
-| normativos | **120** (53 al abrir) |
-| lemas de la vista alfabética | **2.049** |
+| normativos | **171** (53 al abrir: 67 de la cosecha 57 + 51 del Niruttidīpanī) |
+| lemas de la vista alfabética | **2.100** |
 | enlaces en la capa de Nandisena | **637** en 324 fichas |
-| términos nuevos con sutta localizado | 67 de 67 |
+| términos nuevos con sutta localizado | 118 de 118 |
 | sufijos de la cosecha en la norma | 0 (decisión del IEBH: más adelante) |
