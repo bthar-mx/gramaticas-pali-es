@@ -915,8 +915,12 @@ function capaNorma(t){
   const tip = 'Norma del repositorio|Lista normativa (comun/glosario.md): el español '
     + 'fijado para este término al ir traduciendo. Manda sobre cualquier propuesta '
     + 'de esta página.' + (t.fijado_en ? ' Fijado en ' + t.fijado_en + '.' : '');
+  /* Las referencias por sutta (cosecha s. 57: Kacc., Rū., Nyāsa) van como
+     las de Nandisena, en gris tras el sentido. */
+  const refs = (t.refs && t.refs.length)
+    ? '<div class="es"><span class="fijado">' + t.refs.map(escapa).join(' · ') + '</span></div>' : '';
   return '<div class="capa capa-norma">' +
-    '<div class="gl">' + marca('tag-norma', 'norma', tip) + sentido(t) + '</div>' +
+    '<div class="gl">' + marca('tag-norma', 'norma', tip) + sentido(t) + refs + '</div>' +
     (notas ? notaPlegable(notas, notas) : '') + '</div>';
 }
 function capaNand(t){
