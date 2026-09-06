@@ -444,6 +444,7 @@ def main():
     salida = {
         "nota": datos["_nota"],
         "version": datos["version"],
+        "version_fecha": datos.get("version_fecha", ""),
         "estado": estado,
         "fuentes": datos["fuentes"],
         "secciones": datos["secciones"],
