@@ -174,3 +174,20 @@ los enlaces a `../nama/#s165` y `#s167`, los cuatro cierres y §328 entero
   propuesta inglesa en `glosario-ingles.json` (cola de la tanda 2 del
   inglés, briefing 57 §3 bis).
 
+## 9. Edición inglesa del capítulo 4 (`kaccayana/04-samasa-kappa.en.md`)
+
+Pedido del IEBH al cierre: el inglés como en los tres primeros capítulos.
+Hecho con la regla de la sesión 45: el inglés de Nandisena verbatim (su
+archivo, en la carpeta de conocimiento del proyecto), la estructura del
+maestro español encima, y lo que el español añadió, traducido siguiéndolo.
+Cotejo por guion contra el español: 28/28 cabeceras, 28/28 bloques pāḷi
+idénticos, mismos ejemplos numerados y mismas negritas, mismos 20 rótulos de
+formación, 21 notas en el mismo orden, mismas anclas. `revisar.py` limpio;
+genera `site/en/kaccayana/samasa/` con hreflang en las dos direcciones y los
+enlaces a `../nama/#s165`, `#s167`. `version_en` 1.0 (2026-09-06). El
+registro de desviaciones está en el memorando
+`docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md` §7 (los nombres de
+los compuestos con el modelo kāraka, tulyādhikaraṇa espejado, lo que no es
+de Nandisena, las erratas del PDF corregidas). **Sin revisar**, como el Nāma
+y el Kāraka ingleses.
+
