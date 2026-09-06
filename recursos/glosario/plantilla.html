@@ -10,7 +10,7 @@
 <meta name="description" content="Terminología gramatical pāḷi en español e inglés, a partir del Conspectus Terminorum (saññāmātikā) de la edición del Saddanīti de Helmer Smith, y de la lista normativa de este repositorio.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:wght@500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ola:#E7E3D6; --ola-2:#F0EDE4; --ink:#171612; --soot:#4E4839; --hair:#BFB7A0;
@@ -19,6 +19,7 @@
   --nila:#27414F; --rakta:#7E2E23; --shadow:rgba(0,0,0,.05);
   --serif:"Gentium Book Plus",Georgia,serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pali:"IBM Plex Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 html[data-theme=dark]{
   --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
@@ -299,7 +300,11 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
 .grafias i{font-style:italic;color:var(--ink)}
 /* Enlaces entre fichas: se ven como enlaces, pero discretos, porque en
    una lista de 1.984 lemas un enlace llamativo por línea es ruido. */
-i.pl{font-style:italic}
+/* El pāḷi suelto en las glosas va en OTRA LETRA, no en cursiva: con casi
+   toda glosa llena de pāḷi, la cursiva era ruido y peleaba con el subrayado
+   del enlace. Una sans (IBM Plex Sans) sobre la serif del cuerpo separa las
+   dos lenguas al ojo sin gritar (decisión del IEBH, sesión 58). */
+i.pl{font-style:normal;font-family:var(--pali);font-weight:500;font-size:.93em;letter-spacing:.005em}
 .xref{color:var(--nila);text-decoration:underline dotted;text-underline-offset:2px;
   cursor:pointer}
 .xref:hover{text-decoration-style:solid;background:var(--hl)}
