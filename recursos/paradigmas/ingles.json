@@ -533,6 +533,33 @@
      ]
     }
    ]
+  },
+  "#3": {
+   "paradigma": "the cardinal numerals (saṅkhyā)",
+   "subtitulo": "classes, gender and number, declension, list",
+   "parrafos": [
+    "Number (saṅkhyā) is of five kinds: (1) mixed number (missaka-saṅkhyā), obtained by addition: ekādasa, eleven, dvādasa, twelve; (2) multiplicative number (guṇita-saṅkhyā), obtained by multiplication: dvisataṃ, two hundred; (3) aggregative number (sambandha-saṅkhyā): aṭṭhasaṭṭhi-satasahassaṃ, 168,000, where aṭṭhasaṭṭhi, 68, is a mixed number and satasahassaṃ, 100,000, a multiplicative one —saṭṭhi, 60, and aṭṭha, 8, are multiplied by sahassaṃ, 1,000, and the totals are added to satasahassaṃ: 100,000 + 60,000 + 8,000—; (4) symbolic number (saṅketa-saṅkhyā): the word canda, moon, can mean the number one because there is only one moon in the world; the word māsa, month, the number twelve because there are twelve months in the year; (5) multiple number (aneka-saṅkhyā): sahassaraṃsi, having thousands of (many) rays, the sun; sahassa, a thousand, means many in this compound.",
+    "By gender and number (Kacc. §571): from dvi (2) to aṭṭhārasa (18) they have the three genders and are plural; from vīsati (20) to navuti (90) they are feminine singular; from sataṃ (100) to sahassaṃ (1,000), neuter singular; from koṭi (10⁷) to akkhobhiṇī (10⁴²), feminine singular; the rest, up to asaṅkheyyaṃ (10¹⁴⁰), neuter singular.",
+    "Declension. The numerals {{PM9|eka}} (1), {{P11|dvi}} (2), {{P12|ti}} (3), {{P13|catu}} (4) and {{#1|pañca}} (5) have their own paradigm. Eka, declined in the three genders in singular and plural, is singular only when it means the number; besides the numeral one it means «alone», «a certain», etc. Dvi has one paradigm for the three genders; ti and catu, a different one for each gender. From cha (6) to aṭṭhādasa (18) they have one paradigm for the three genders and are declined like {{#1|pañca}}. From ekūnavīsati (19) to navanavuti (99) they are feminine singular: those ending in «i» are declined like vīsati ({{F-I1|ratti}}); those ending in «aṃ», like vīsaṃ. From sata (100) to sahassa (1,000), and all the numerals in between, are declined like sata ({{N-A1|citta}}). Koṭi (10⁷), pakoṭi (10¹⁴), koṭippakoṭi (10²¹) and akkhobhiṇī (10⁴²) are declined like vīsati; bindu (10⁴⁹) is declined like cakkhu ({{N-U1|āyu}}) in the singular only and without vocative; the rest, from abbuda (10⁵⁶), like sata.",
+    "There are two ways of representing the numeral: (1) the counting (saṅkhyāna): bhikkhūnaṃ ekūnavīsati tiṭṭhati, nineteen of the bhikkhus are standing —ekūnavīsati, the subject, is singular and the verb is singular, tiṭṭhati; Spanish requires the plural—; (2) what is counted (saṅkhyeyya): ekūnavīsati bhikkhavo tiṭṭhanti, nineteen bhikkhus are standing.",
+    "Although the numerals from twenty on are singular, when there is division into groups the plural is used: dve vīsatiyo, two twenties (40); dve satāni, two hundreds (200); bahūni satāni, many hundreds; dve sahassāni, two thousands (2,000); bahūni sahassāni, many thousands."
+   ],
+   "notas": [
+    "Material prepared by Bhikkhu Nandisena on chapters II and V of Kaccāyana, II and V of the Rūpasiddhi and XXIV of the Saddanīti-Suttamālā; not yet edited (last revision, 3 June 2021; IEBH publication 20160331-BN-T0052). The document writes «Aṭthasataṃ» (800); a slip for «aṭṭhasataṃ», corrected here with the approval of the IEBH (session 58). The powers of ten, printed without superscript in the document (107, 1014…), are restored.",
+    "Nahutaṃ (10,000) can also mean 10²⁸."
+   ]
+  },
+  "#4": {
+   "paradigma": "the ordinal numerals",
+   "subtitulo": "formation, declension, list",
+   "parrafos": [
+    "The ordinals are declined in the three genders. They are formed by adding the suffix «ma» to the cardinals: pañcamo, fifth; the feminine, with the inflections «ā» and «ī»: pañcamā, pañcamī, fifth; the neuter, with «ṃ»: pañcamaṃ jhānaṃ, fifth jhāna.",
+    "After dvi (2) and ti (3) the suffix «tiya» is added: dutiyo, second; tatiyo, third; feminine dutiyā, tatiyā; neuter dutiyaṃ, tatiyaṃ. After catu (4) and cha (6), the suffix «ṭha»: catuttho, fourth; chaṭṭho, sixth (also chaṭṭhamo); feminine catutthī, catutthā; chaṭṭhī, chaṭṭhā; neuter catutthaṃ jhānaṃ, fourth jhāna; chaṭṭhaṃ.",
+    "Masculine ordinals are declined like {{M-A1|purisa}}; feminines in «ā», like {{F-Ā1|kaññā}}, and those ending in «ī», like {{F-Ī1|itthī}}; neuters, like {{N-A1|citta}}."
+   ],
+   "notas": [
+    "From the same «Numerales» document by Bhikkhu Nandisena. The document writes «Paṭhamam (n)» —a slip for «paṭhamaṃ»— and «catutthaṃ jhānaṃ, quinta jhāna» —for «cuarta»—; both corrected here with the approval of the IEBH (session 58). Empty cells are those the document does not give; from the 23rd on it gives only the masculine."
+   ]
   }
  }
 }
