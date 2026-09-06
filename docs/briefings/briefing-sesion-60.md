@@ -3,9 +3,9 @@
 **Fecha:** 2026-09-06. El capítulo 4 (§316–§343, 28 suttas, séptima sección
 del Nāma-kappa) queda montado y generado en `site/kaccayana/samasa/`, con las
 99 referencias canónicas de la edición base restituidas por reconstrucción y
-el glosario al día con la terminología fallada en la revisión. **Falta el
-commit y el push**, que son del IEBH (ver §7: hay un `index.lock` que hay que
-borrar antes).
+el glosario al día con la terminología fallada en la revisión. Publicado:
+commit e994b9f y push del IEBH; release **v2.1.0** en GitHub; en Zenodo,
+DOI de la versión **10.5281/zenodo.22557794** (ver §8).
 
 Este briefing supone leídos el 59 (revisión del capítulo 4) y el 58. Lo que
 sigue pendiente de las sesiones 57–58 (tanda 2 del inglés, puntos 17–34 de la
@@ -156,3 +156,21 @@ commit de todos modos). Mensaje propuesto:
 Después del push, comprobar en <https://gramaticas.buddha-dhamma.net/kaccayana/samasa/>
 los enlaces a `../nama/#s165` y `#s167`, los cuatro cierres y §328 entero
 (los 20 rótulos de formación).
+
+## 8. Release y Zenodo (hechos en la sesión, en el navegador)
+
+- GitHub: release `v2.1.0` sobre `main` (41b6360, que incluye el arreglo de
+  la insignia: el `filter` del hover creaba un contexto de apilamiento y el
+  globo quedaba bajo la caja de búsqueda; ahora `z-index:100` en el hover).
+- Zenodo acuñó el registro 22557794 por el webhook, pero **con los metadatos
+  de `.zenodo.json`, que seguían en 2.0.0** (Zenodo prefiere ese archivo al
+  `CITATION.cff`). Se editó el registro publicado a mano —versión 2.1.0 y
+  descripción con los cuatro capítulos— y se corrigió `.zenodo.json` para
+  la próxima. **Regla que queda: cada versión toca `CITATION.cff` Y
+  `.zenodo.json`.**
+- `CITATION.cff` lleva ya el DOI de la versión. Este commit (`.zenodo.json`,
+  `CITATION.cff`, briefing) está hecho en local: **falta el push**.
+- Aviso del hook al commit: los 23 términos nuevos del glosario no tienen
+  propuesta inglesa en `glosario-ingles.json` (cola de la tanda 2 del
+  inglés, briefing 57 §3 bis).
+
