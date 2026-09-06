@@ -47,20 +47,28 @@ CAPITULOS = {
              "docs/2. Nāma-Kappa.md", 52, 270),
     "karaka": ("3 - Kāraka-Kappa–Kaccāyana.md",
                "docs/3. Kāraka-Kappa.md", 271, 315),
+    # Sesión 60: el maestro del Samāsa no lleva escapes de exportación, y
+    # la edición base se le pasa reducida a encabezados y líneas con cita
+    # («4 - Samāsa-Kaccāyana (citas).md»), con «Khi. iii, 373» → «Khu.»
+    # (fallo del IEBH, briefing 59 §5.1) y sin los «\)» del markdown.
+    "samasa": ("4 - Samāsa-Kaccāyana (citas).md",
+               "docs/4. Samāsa-Kappa.md", 316, 343),
 }
 
 PROPUESTA = "docs/fuentes/citas-canonicas.json"
 
-SIGLAS = ("Khu|Vin|Abhi|DhA|DA|MA|SA|AA|UdānaA|PetavatthuA|Mog\\.-pañcikā"
-          "|Sad|D|M|A|S|J")
+SIGLAS = ("Khu|Vin|Abhi|AbhA|DhA|DA|MA|SA|AA|JA|VinA|VimānaA|UdānaA"
+          "|PetavatthuA|Vism|Mog\\.-pañcikā|Sad|D|M|A|S|J")
 
-# (Khu. i, 336) — sigla conocida, tomo en romanos, y lo que siga.
-RE_CITA = re.compile(r'\((?:' + SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*?\)')
+# (Khu. i, 336) — sigla conocida, tomo en romanos, y lo que siga. Desde la
+# sesión 60 también sin tomo —(VimānaA. 262)—, que el Samāsa tiene una.
+RE_CITA = re.compile(r'\((?:' + SIGLAS + r')\.?\s*(?:[ivxlIVXL]+\s*,\s*)?'
+                     r'\d[^()]*?\)')
 
 # Encabezado de sutta: «52. 60. Título» en la base, «**52\. 60\. Título»
 # en el maestro español.
 RE_HDR_BASE = re.compile(r'^\s*\*{0,2}(\d{2,3})\\?\.\s+[\d, ]+\\?\.\s+\**\S')
-RE_HDR_ESP = re.compile(r'^\*\*(\d{2,3})\\\.\s')
+RE_HDR_ESP = re.compile(r'^\*\*(\d{2,3})\\?\.\s')   # con o sin escape
 
 # Caracteres que no deben cortar un ancla por la izquierda.
 RE_PALABRA = re.compile(r"[^\s;,.!?()\[\]]+")
@@ -382,6 +390,8 @@ def main():
                          "citas-canonicas.json, sin la edición base")
     ap.add_argument("--aplicar", action="store_true",
                     help="escribir los maestros (sin esto no toca nada)")
+    ap.add_argument("--solo", help="tratar un solo capítulo (nama, karaka, "
+                                   "samasa); el JSON conserva los demás")
     args = ap.parse_args()
 
     if not args.base and not args.pendientes:
@@ -395,6 +405,8 @@ def main():
     algo_mal = False
 
     for nombre, (arch_base, maestro, desde, hasta) in CAPITULOS.items():
+        if args.solo and nombre != args.solo:
+            continue
         ruta_base = os.path.join(os.path.expanduser(args.base), arch_base)
         ruta_esp = os.path.join(RAIZ, maestro)
         if not os.path.exists(ruta_base):
@@ -442,6 +454,14 @@ def main():
 
     ruta_prop = os.path.join(RAIZ, PROPUESTA)
     os.makedirs(os.path.dirname(ruta_prop), exist_ok=True)
+    if args.solo and os.path.exists(ruta_prop):
+        # Un capítulo solo: se funde con lo ya guardado de los demás.
+        with open(ruta_prop, encoding="utf-8") as f:
+            previo = json.load(f)
+        previo["informe"] = [x for x in previo["informe"]
+                             if x["capitulo"] != args.solo] + informe
+        previo["citas"].update(propuesta)
+        informe, propuesta = previo["informe"], previo["citas"]
     with open(ruta_prop, "w", encoding="utf-8") as f:
         json.dump({"informe": informe, "citas": propuesta}, f,
                   ensure_ascii=False, indent=1)

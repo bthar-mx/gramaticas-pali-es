@@ -95,7 +95,7 @@ CAPITULOS = {
         "titulo_es": "3-Capítulo de casos gramaticales",
         "titulo_en": "3-Case Chapter",
         "anterior": "2-Nāma-Kappa",
-        "siguiente": "4-Samāsa-Kappa",     # en preparación: botón inactivo
+        "siguiente": "4-Samāsa-Kappa",
         "version": "1.1",
         "version_fecha": "2026-08-20",
         "version_nota": "Restituidas 96 referencias canónicas que la fase de "
@@ -111,6 +111,25 @@ CAPITULOS = {
                            "under study in bold, word-count breakdowns "
                            "after Thitzana, references and notes) and the "
                            "fixed glossary for the technical terms.",
+    },
+    "04-samasa-kappa": {
+        "slug": "samasa",
+        "obra": "Kaccāyana-Byākaraṇaṃ",
+        "obra_sub": "Gramática de Kaccāyana",
+        "obra_slug": "kaccayana",
+        "num": 4,
+        "titulo_pali": "4-Samāsa-Kappa",
+        "titulo_es": "4-Capítulo de compuestos",
+        "titulo_en": "4-Compound Chapter",
+        "anterior": "3-Kāraka-Kappa",
+        "siguiente": "5-Taddhita-Kappa",   # en preparación: botón inactivo
+        "version": "1.0",
+        "version_fecha": "2026-09-06",
+        "version_nota": "Primera edición: §316–§343, los 28 suttas del "
+                        "Samāsa-kappa (séptima sección del Nāma-kappa), "
+                        "revisados por el IEBH, con las 99 referencias "
+                        "canónicas de la edición base restituidas por "
+                        "reconstrucción y las 21 notas de Nandisena.",
     },
 }
 
@@ -434,7 +453,12 @@ ABREVIATURAS = {
     "JA":           "Jātaka-aṭṭhakathā",
     "VinA":         "Vinaya-aṭṭhakathā",
     "AbhiA":        "Abhidhamma-aṭṭhakathā",
+    "AbhA":         "Abhidhamma-aṭṭhakathā",       # así en el Samāsa (§322)
     "SuttanipātaA": "Suttanipāta-aṭṭhakathā",
+    "SuttanipataA": "Suttanipāta-aṭṭhakathā",      # sin diacrítico, Samāsa §322
+    "VimānaA":      "Vimānavatthu-aṭṭhakathā",
+    "Vism":         "Visuddhimagga",
+    "Visuddhi":     "Visuddhimagga",               # nota 3 del Samāsa
     "UdānaA":       "Udāna-aṭṭhakathā",
     "PetavatthuA":  "Petavatthu-aṭṭhakathā",
     "Sad":          "Saddanīti",
@@ -444,8 +468,11 @@ ABREVIATURAS = {
 # (Khu. i, 336) — una o varias siglas conocidas seguidas de tomo y página.
 _SIGLAS = "|".join(re.escape(k) for k in
                    sorted(ABREVIATURAS, key=len, reverse=True))
+# El tomo puede faltar —(VimānaA. 262), Samāsa §328—: entonces se exige que
+# lo que siga a la sigla empiece por cifra, para no confundir una sigla con
+# una palabra.
 RE_CITA = re.compile(
-    r'\((?P<cuerpo>(?:' + _SIGLAS + r')\.?\s*[ivxlIVXL]+\s*,[^()]*?)\)')
+    r'\((?P<cuerpo>(?:' + _SIGLAS + r')\.?\s*(?:[ivxlIVXL]+\s*,|(?=\d))[^()]*?)\)')
 RE_SIGLA_EN_CITA = re.compile(r'\b(' + _SIGLAS + r')\.')
 RE_CITA_SIMPLE = re.compile(
     r'^(?P<sigla>' + _SIGLAS + r')\.?\s*(?P<tomo>[ivxlIVXL]+)\s*,\s*'
@@ -507,7 +534,7 @@ def leer_notas(lineas):
 RE_CIERRE_PALI = re.compile(r'^\*\*(Iti\s+.+?kaṇḍo)\.?\*\*$')
 RE_FIN_PALI = re.compile(r'^\*\*(.+?[Nn]iṭṭhito)\.?\*\*$')
 RE_FIN_ES = re.compile(r'^\*\*((?:Fin del capítulo|End of the .+? [Cc]hapter).*?)\.?\*\*$')
-RE_CIERRE_ES = re.compile(r'^\*\*((?:Así termina la|Thus ends the) .+?)\.?\*\*$')
+RE_CIERRE_ES = re.compile(r'^\*\*((?:Así termina (?:la|el)|Thus ends the) .+?)\.?\*\*$')
 
 
 def separar_cierre(cuerpo):
@@ -685,7 +712,10 @@ def parrafos(lineas, notas, clase="rest-para"):
             gap[0] = False
             continue
         volcar_lista()
-        mt = re.match(r'^\*\*(.+?)\*\*$', t)
+        # Los rótulos de derivación de §328 del Samāsa llevan los dos puntos
+        # fuera de la negrita («**Nigrodhassa parimaṇḍalo …**:»); cuentan
+        # igual como título de formación.
+        mt = re.match(r'^\*\*(.+?)\*\*:?$', t)
         if mt:
             volcar_buf()
             out.append('<div class="formation-title"><strong>{0}</strong></div>'
