@@ -106,6 +106,20 @@ body.dark { background-image: none; }
 #lang-btn .lang-cur { background: var(--accent); color: var(--bg); }
 #lang-btn:hover .lang-seg:not(.lang-cur) { background: var(--accent-bg); color: var(--text); }
 #lang-btn:focus-visible { outline: 2px solid var(--accent-mid); outline-offset: 2px; }
+/* Globo legible al pasar el cursor («Ver este capítulo en español» / «View
+   this chapter in English»), hacia arriba y pegado a la derecha, que el
+   mando está en la esquina inferior derecha. Mismo dibujo que los demás
+   emergentes; el filter del hover no lo encierra porque el mando lleva
+   z-index propio. */
+#lang-btn[data-tip]:hover::after {
+  content: attr(data-tip);
+  position: absolute; bottom: calc(100% + 10px); right: 0;
+  background: var(--bg2); color: var(--text);
+  border: .5px solid var(--border2); border-radius: var(--r);
+  padding: 7px 11px; font: 12.5px/1.4 var(--sans);
+  letter-spacing: normal; white-space: nowrap;
+  box-shadow: 0 3px 12px rgba(0,0,0,.12); pointer-events: none;
+}
 
 /* Las dos lenguas viajan en el HTML y sólo se enseña una. El español es lo
    que se ve sin JavaScript, que es lo que debe verse: el sitio es español y

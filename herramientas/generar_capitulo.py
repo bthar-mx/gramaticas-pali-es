@@ -1143,7 +1143,7 @@ def render(cap, meta, notas):
         # Conmutador de dos segmentos, ES | EN: el de la lengua en curso va
         # relleno y el otro es el destino (sesión 60; antes era una pastilla
         # con sólo la sigla de la otra lengua).
-        lang_btn = ('<a aria-label="{2}" href="{0}" id="lang-btn" '
+        lang_btn = ('<a aria-label="{2}" data-tip="{2}" href="{0}" id="lang-btn" '
                     'onclick="try{{localStorage.setItem(\'pali_lang\',\'{1}\')}}'
                     'catch(e){{}};this.href=\'{0}\'+location.hash">'
                     '<span class="lang-seg{4}">ES</span>'
