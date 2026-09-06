@@ -910,7 +910,10 @@ body.dark .chapter-end-es { color: #C9C2B0; }
   color:var(--accent);background:var(--accent-bg);border:1px solid var(--accent-mid);
   border-radius:999px;padding:5px 10px;cursor:help;white-space:nowrap;
   text-decoration:none;display:inline-flex;align-items:center;gap:6px;vertical-align:middle}
-.version-badge:hover{filter:brightness(.94)}
+/* El filter crea un contexto de apilamiento y encerraba dentro el globo
+   (z-index 100), que quedaba bajo la caja de búsqueda (sesión 60); el
+   z-index en la insignia lo saca. */
+.version-badge:hover{filter:brightness(.94);z-index:100}
 .version-badge time{font-variant-numeric:tabular-nums;opacity:.85}
 .hdr-meta .version-badge{margin-left:10px}
 .version-foot{margin-top:10px;font-size:12px;color:var(--text3)}
