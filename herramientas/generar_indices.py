@@ -407,6 +407,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
     sES.classList.toggle('lang-cur', !en);
     sEN.classList.toggle('lang-cur', en);
     l.setAttribute('aria-label', en ? 'Ver en español' : 'View in English');
+    l.setAttribute('data-tip', en ? 'Ver en español' : 'View in English');
   }}
   try {{ if (localStorage.getItem('pali_lang') === 'en') document.body.classList.add('en'); }} catch (e) {{}}
   l.onclick = function () {{

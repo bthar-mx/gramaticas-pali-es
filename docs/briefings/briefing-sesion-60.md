@@ -202,7 +202,10 @@ las páginas de capítulo lo pinta `generar_capitulo.py` (sigue siendo un
 enlace a la otra página, con el ancla); en los índices, el JS de
 `generar_indices.py`. Estilos en `site/assets/pali.css` (más la variante
 compacta bajo 720 px). Los recursos (solucionador, verbo…) tienen su propio
-botón `#en-btn` y no se han tocado.
+botón `#en-btn` y no se han tocado. Lleva globo al pasar el cursor
+(`data-tip` = el mismo texto del `aria-label`: «View this chapter in
+English» / «Ver este capítulo en español»; en los índices, «View in English»
+/ «Ver en español»), hacia arriba y alineado a la derecha.
 
 ## 11. Despliegue: el push de 6b5ee49 no desplegó solo
 
