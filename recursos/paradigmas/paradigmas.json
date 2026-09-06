@@ -7415,89 +7415,103 @@
    "lista": {
     "columnas": [
      "número",
-     "formas"
+     "formas",
+     "se declina como"
     ],
     "filas": [
      [
       "1",
       [
        "eka"
-      ]
+      ],
+      "{{PM9|eka}} (m.), {{PF9|eka}} (f.), {{PN9|eka}} (n.)"
      ],
      [
       "2",
       [
        "dvi"
-      ]
+      ],
+      "{{P11|dvi}}"
      ],
      [
       "3",
       [
        "ti"
-      ]
+      ],
+      "{{P12|ti}}"
      ],
      [
       "4",
       [
        "catu"
-      ]
+      ],
+      "{{P13|catu}}"
      ],
      [
       "5",
       [
        "pañca"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "6",
       [
        "cha"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "7",
       [
        "satta"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "8",
       [
        "aṭṭha"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "9",
       [
        "nava"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "10",
       [
        "dasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "11",
       [
        "ekādasa",
        "ekārasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "12",
       [
        "dvādasa",
        "bārasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "13",
       [
        "terasa",
        "teḷasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "14",
@@ -7505,7 +7519,8 @@
        "cuddasa",
        "catuddasa",
        "coddasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "15",
@@ -7513,48 +7528,55 @@
        "pannarasa",
        "paṇṇarasa",
        "pañcadasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "16",
       [
        "soḷasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "17",
       [
        "sattarasa",
        "sattadasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "18",
       [
        "aṭṭhārasa",
        "aṭṭhādasa"
-      ]
+      ],
+      "{{#1|pañca}}"
      ],
      [
       "19",
       [
        "ekūnavīsati",
        "ekūnavīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "20",
       [
        "vīsati",
        "vīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "21",
       [
        "ekavīsati",
        "ekavīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "22",
@@ -7563,21 +7585,24 @@
        "dvāvīsaṃ",
        "bāvīsati",
        "bāvīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "23",
       [
        "tevīsati",
        "tevīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "24",
       [
        "catuvīsati",
        "catuvīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "25",
@@ -7586,49 +7611,56 @@
        "pañcavīsaṃ",
        "paṇṇavīsati",
        "paṇṇavīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "26",
       [
        "chabbīsati",
        "chabbīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "27",
       [
        "sattavīsati",
        "sattavīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "28",
       [
        "aṭṭhavīsati",
        "aṭṭhavīsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "29",
       [
        "ekūnatiṃsati",
        "ekūnatiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "30",
       [
        "tiṃsati",
        "tiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "31",
       [
        "ekatiṃsati",
        "ekatiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "32",
@@ -7636,35 +7668,40 @@
        "dvattiṃsati",
        "dvattiṃsaṃ",
        "bāttiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "33",
       [
        "tettiṃsati",
        "tettiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "34",
       [
        "catutiṃsaṃ",
        "catuttiṃsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "35",
       [
        "pañcatiṃsati",
        "pañcatiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "36",
       [
        "chattiṃsati",
        "chattiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "37",
@@ -7672,7 +7709,8 @@
        "sattatiṃsati",
        "sattatiṃsaṃ",
        "sattattiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "38",
@@ -7680,13 +7718,15 @@
        "aṭṭhatiṃsati",
        "aṭṭhatiṃsaṃ",
        "aṭṭhattiṃsaṃ"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "39",
       [
        "ekūnacattālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "40",
@@ -7697,7 +7737,8 @@
        "tālīsaṃ",
        "cuttālīsaṃ",
        "cottālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "41",
@@ -7705,74 +7746,85 @@
        "ekacattārīsa",
        "ekacattārīsā",
        "ekacattālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "42",
       [
        "dvācattālīsaṃ",
        "bācattālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "43",
       [
        "tecattālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "44",
       [
        "catucattālīsaṃ",
        "catucattārīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "45",
       [
        "pañcacattālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "46",
       [
        "chacattālīsaṃ",
        "chacattārīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "47",
       [
        "sattacattālīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "48",
       [
        "aṭṭhacattālīsaṃ",
        "aṭṭhacattārīsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "49",
       [
        "ekūnapaññāsaṃ",
        "ekūnapaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "50",
       [
        "paññāsaṃ",
        "paṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "51",
       [
        "ekapaññāsaṃ",
        "ekapaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "52",
@@ -7781,28 +7833,32 @@
        "dvipaññāsaṃ",
        "dvepaññāsaṃ",
        "dvepaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "53",
       [
        "tepaññāsaṃ",
        "tepaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "54",
       [
        "catupaññāsaṃ",
        "catupaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "55",
       [
        "pañcapaññāsaṃ",
        "pañcapaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "56",
@@ -7810,39 +7866,45 @@
        "chapaññāsaṃ",
        "chapaṇṇāsaṃ",
        "chappaññāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "57",
       [
        "sattapaññāsaṃ",
        "sattapaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "58",
       [
        "aṭṭhapaññāsaṃ",
        "aṭṭhapaṇṇāsaṃ"
-      ]
+      ],
+      "las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "59",
       [
        "ekūnasaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "60",
       [
        "saṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "61",
       [
        "ekasaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "62",
@@ -7851,63 +7913,73 @@
        "dvesaṭṭhi",
        "dvisaṭṭhi",
        "bāsaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "63",
       [
        "tesaṭṭhi",
        "tisaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "64",
       [
        "catusaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "65",
       [
        "pañcasaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "66",
       [
        "chasaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "67",
       [
        "sattasaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "68",
       [
        "aṭṭhasaṭṭhi"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "69",
       [
        "ekūnasattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "70",
       [
        "sattati",
        "sattari"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "71",
       [
        "ekasattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "72",
@@ -7917,123 +7989,143 @@
        "dvāsattari",
        "dvisattari",
        "disattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "73",
       [
        "tesattati",
        "tisattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "74",
       [
        "catusattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "75",
       [
        "pañcasattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "76",
       [
        "chasattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "77",
       [
        "sattasattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "78",
       [
        "aṭṭhasattati"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "79",
       [
        "ekūnāsīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "80",
       [
        "asīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "81",
       [
        "ekāsīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "82",
       [
        "dvāsīti",
        "dve-asīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "83",
       [
        "te-asīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "84",
       [
        "caturāsīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "85",
       [
        "pañcāsīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "86",
       [
        "cha-asīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "87",
       [
        "sattāsīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "88",
       [
        "aṭṭhāsīti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "89",
       [
        "ekūnanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "90",
       [
        "navuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "91",
       [
        "ekanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "92",
@@ -8041,300 +8133,349 @@
        "dvānavuti",
        "dvenavuti",
        "dvinavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "93",
       [
        "tenavuti",
        "tinavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "94",
       [
        "catunavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "95",
       [
        "pañcanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "96",
       [
        "channavuti",
        "chanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "97",
       [
        "sattanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "98",
       [
        "aṭṭhanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati)"
      ],
      [
       "99",
       [
        "ekūnasataṃ",
        "navanavuti"
-      ]
+      ],
+      "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "100",
       [
        "sataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "200",
       [
        "dvisataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "300",
       [
        "tisataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "400",
       [
        "catusataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "500",
       [
        "pañcasataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "600",
       [
        "chasataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "700",
       [
        "sattasataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "800",
       [
        "aṭṭhasataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "900",
       [
        "navasataṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "1.000",
       [
        "sahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "2.000",
       [
        "dvisahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "3.000",
       [
        "tisahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "4.000",
       [
        "catusahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "5.000",
       [
        "pañcasahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "6.000",
       [
        "chasahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "7.000",
       [
        "sattasahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "8.000",
       [
        "aṭṭhasahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "9.000",
       [
        "navasahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10.000",
       [
        "dasasahassaṃ",
        "nahutaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "100.000",
       [
        "satasahassaṃ",
        "lakkhaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "1.000.000",
       [
        "dasasatasahassaṃ"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁷ (10.000.000)",
       [
        "koṭi"
-      ]
+      ],
+      "{{F-I1|ratti}} (como vīsati)"
      ],
      [
       "10¹⁴",
       [
        "pakoṭi"
-      ]
+      ],
+      "{{F-I1|ratti}} (como vīsati)"
      ],
      [
       "10²¹",
       [
        "koṭippakoṭi"
-      ]
+      ],
+      "{{F-I1|ratti}} (como vīsati)"
      ],
      [
       "10²⁸",
       [
        "nahuta"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10³⁵",
       [
        "ninnahuta"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁴²",
       [
        "akkhobhiṇī"
-      ]
+      ],
+      "{{F-I1|ratti}} (como vīsati)"
      ],
      [
       "10⁴⁹",
       [
        "bindu"
-      ]
+      ],
+      "{{N-U1|āyu}} (como cakkhu), sólo singular y sin vocativo"
      ],
      [
       "10⁵⁶",
       [
        "abbuda"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁶³",
       [
        "nirabbuda"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁷⁰",
       [
        "ahaha"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁷⁷",
       [
        "ababa"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁸⁴",
       [
        "aṭaṭa"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁹¹",
       [
        "sogandhika"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10⁹⁸",
       [
        "uppala"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10¹⁰⁵",
       [
        "kumuda"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10¹¹²",
       [
        "puṇḍarīka"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10¹¹⁹",
       [
        "paduma"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10¹²⁶",
       [
        "kathāna"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10¹³³",
       [
        "mahākathāna"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ],
      [
       "10¹⁴⁰",
       [
        "asaṅkheyya"
-      ]
+      ],
+      "{{N-A1|citta}} (como sata)"
      ]
     ]
    },
@@ -8360,7 +8501,8 @@
      "ordinal",
      "masculino",
      "femenino",
-     "neutro"
+     "neutro",
+     "se declina como"
     ],
     "filas": [
      [
@@ -8373,7 +8515,8 @@
       ],
       [
        "paṭhamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "2.º",
@@ -8385,7 +8528,8 @@
       ],
       [
        "dutiyaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "3.º",
@@ -8397,7 +8541,8 @@
       ],
       [
        "tatiyaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "4.º",
@@ -8410,7 +8555,8 @@
       ],
       [
        "catutthaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "5.º",
@@ -8423,7 +8569,8 @@
       ],
       [
        "pañcamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "6.º",
@@ -8436,7 +8583,8 @@
       ],
       [
        "chaṭṭhaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "7.º",
@@ -8449,7 +8597,8 @@
       ],
       [
        "sattamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "8.º",
@@ -8462,7 +8611,8 @@
       ],
       [
        "aṭṭhamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "9.º",
@@ -8475,7 +8625,8 @@
       ],
       [
        "navamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "10.º",
@@ -8488,7 +8639,8 @@
       ],
       [
        "dasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "11.º",
@@ -8501,7 +8653,8 @@
       ],
       [
        "ekādasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "12.º",
@@ -8515,7 +8668,8 @@
       ],
       [
        "dvādasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "13.º",
@@ -8529,7 +8683,8 @@
       ],
       [
        "terasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "14.º",
@@ -8543,7 +8698,8 @@
       ],
       [
        "cuddasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "15.º",
@@ -8559,7 +8715,8 @@
       [
        "pannarasamaṃ",
        "pañcadasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "16.º",
@@ -8572,7 +8729,8 @@
       ],
       [
        "soḷasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "17.º",
@@ -8583,7 +8741,8 @@
       [],
       [
        "sattarasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "18.º",
@@ -8595,7 +8754,8 @@
       ],
       [
        "aṭṭhārasamaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "19.º",
@@ -8605,7 +8765,8 @@
       [],
       [
        "ekūnavīsatimaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "20.º",
@@ -8617,7 +8778,8 @@
       ],
       [
        "vīsatimaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "21.º",
@@ -8629,7 +8791,8 @@
       ],
       [
        "ekavīsatimaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "22.º",
@@ -8643,7 +8806,8 @@
       [
        "bāvīsatimaṃ",
        "dvāvīsatimaṃ"
-      ]
+      ],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "23.º",
@@ -8651,7 +8815,8 @@
        "tevīsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "24.º",
@@ -8659,7 +8824,8 @@
        "catuvīsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "25.º",
@@ -8668,7 +8834,8 @@
        "pañcavīsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "26.º",
@@ -8676,7 +8843,8 @@
        "chabbīsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "27.º",
@@ -8684,7 +8852,8 @@
        "sattavīsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "28.º",
@@ -8692,7 +8861,8 @@
        "aṭṭhavīsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "29.º",
@@ -8700,7 +8870,8 @@
        "ekūnatiṃsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "30.º",
@@ -8708,7 +8879,8 @@
        "tiṃsatimo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ],
      [
       "40.º",
@@ -8716,7 +8888,8 @@
        "cattālīsamo"
       ],
       [],
-      []
+      [],
+      "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
      ]
     ]
    },

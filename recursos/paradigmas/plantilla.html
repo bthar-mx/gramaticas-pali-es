@@ -243,6 +243,8 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 .prosa a.xp:hover{border-bottom-style:solid}
 .tbl.lista{margin-top:12px}
 .tbl.lista tbody th{font-family:var(--mono);font-weight:500;font-size:12.5px;white-space:nowrap}
+.tbl.lista td.como{font-size:13px;color:var(--soot)}
+.tbl.lista td.como a.xp{color:var(--nila);text-decoration:none;border-bottom:1px dotted var(--nila)}
 .familia{margin:10px 0 0;font-size:14.5px;color:var(--soot)}
 .familia b{color:var(--ink);font-weight:600}
 .parcial{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;color:var(--soot);
@@ -575,6 +577,8 @@ const TXT = {
            ['numeral','Numerals','pañca, kati'],
            ['sufijos','Suffixes','vibhatti-paccaya']],
     columnas: {'singular':'singular', 'plural':'plural',
+               'número':'number', 'formas':'forms', 'se declina como':'declined like',
+               'ordinal':'ordinal', 'masculino':'masculine', 'femenino':'feminine', 'neutro':'neuter',
                'plural masculino':'masculine plural',
                'plural femenino':'feminine plural',
                'plural neutro':'neuter plural'},
@@ -677,7 +681,7 @@ DATA.paradigmas.forEach(p => {
                 DATA.casos || [], DATA.casos_en || []).join(' ')
     : '';
   const parrafos = (p.parrafos||[]).concat((e.parrafos||[])).join(' ');
-  const lista = p.lista ? p.lista.filas.map(f => f.map(c => Array.isArray(c) ? c.join(' ') : c).join(' ')).join(' ') : '';
+  const lista = p.lista ? p.lista.filas.map(f => f.map(c => Array.isArray(c) ? c.join(' ') : String(c).replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1')).join(' ')).join(' ') : '';
   p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
                 p.familia||'', p.texto||'', detalle, formas, inflex, parrafos, lista,
                 e.paradigma||'', e.subtitulo||'', e.familia||'', e.texto||'',
@@ -758,7 +762,8 @@ function card(p){
     const parrafos = (pr(p,'parrafos')||[]).map(t => `<p class="prosa">${prosa(t)}</p>`).join('');
     const head = '<tr>' + p.lista.columnas.map(c => `<th>${esc(columna(c))}</th>`).join('') + '</tr>';
     const filas = p.lista.filas.map(f =>
-      `<tr><th scope="row">${hi(f[0])}</th>` + f.slice(1).map(celda).join('') + '</tr>').join('');
+      `<tr><th scope="row">${hi(f[0])}</th>` + f.slice(1).map(c =>
+        typeof c === 'string' ? `<td class="como">${prosa(c)}</td>` : celda(c)).join('') + '</tr>').join('');
     cuerpo = parrafos + `<table class="tbl lista"><thead>${head}</thead><tbody>${filas}</tbody></table>`;
   } else {
     /* Sólo las referencias desnudas «§N» apuntan al Nāma-Kappa; las de otras
@@ -1160,7 +1165,8 @@ function textoParadigma(p){
     (pr(p,'parrafos')||[]).forEach(t => L.push('', t.replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1')));
     L.push('');
     const cab = p.lista.columnas.map(columna);
-    const filas = p.lista.filas.map(f => [f[0], ...f.slice(1).map(c => c.length ? c.join(', ') : '—')]);
+    const filas = p.lista.filas.map(f => [f[0], ...f.slice(1).map(c =>
+      typeof c === 'string' ? c.replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1') : (c.length ? c.join(', ') : '—'))]);
     const anchos = cab.map((c,j) => Math.max(c.length, ...filas.map(r => r[j].length)));
     L.push(cab.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd());
     filas.forEach(r => L.push(r.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd()));
