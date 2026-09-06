@@ -110,6 +110,44 @@ ORDINALES = [
 ]
 
 
+def como_cardinal(n, fs):
+    """Con qué paradigma se declina cada cardinal, según el documento:
+    enlace {{CÓDIGO|voz}} a la ficha. Devuelve una cadena para la columna
+    «se declina como»."""
+    try:
+        v = int(n.replace(".", ""))
+    except ValueError:
+        v = None
+    if v == 1:
+        return "{{PM9|eka}} (m.), {{PF9|eka}} (f.), {{PN9|eka}} (n.)"
+    if v == 2:
+        return "{{P11|dvi}}"
+    if v == 3:
+        return "{{P12|ti}}"
+    if v == 4:
+        return "{{P13|catu}}"
+    if v is not None and 5 <= v <= 18:
+        return "{{#1|pañca}}"
+    if v is not None and 19 <= v <= 99:
+        partes = []
+        if any(f.endswith("i") for f in fs):
+            partes.append("en «i»: {{F-I1|ratti}} (como vīsati)")
+        if any(f.endswith("aṃ") or f.endswith("ā") or f.endswith("a") for f in fs):
+            partes.append("las demás: como vīsaṃ (el documento no remite a ficha)")
+        return "; ".join(partes)
+    if v is not None and 100 <= v <= 1000000:
+        return "{{N-A1|citta}} (como sata)"
+    # potencias de diez
+    if fs and fs[0] in ("koṭi", "pakoṭi", "koṭippakoṭi", "akkhobhiṇī"):
+        return "{{F-I1|ratti}} (como vīsati)"
+    if fs and fs[0] == "bindu":
+        return "{{N-U1|āyu}} (como cakkhu), sólo singular y sin vocativo"
+    return "{{N-A1|citta}} (como sata)"
+
+
+COMO_ORDINAL = "m. {{M-A1|purisa}}; f. en «ā» {{F-Ā1|kaññā}}, en «ī» {{F-Ī1|itthī}}; n. {{N-A1|citta}}"
+
+
 def formas(s):
     """«Ekādasa, ekārasa» → ['ekādasa', 'ekārasa'] (la mayúscula es del
     documento, que numera la lista; el paradigma va en minúscula)."""
@@ -170,21 +208,26 @@ def guardar(nombre, datos):
 def main():
     d = cargar("paradigmas.json")
     if any(p["codigo"] in ("#3", "#4") for p in d["paradigmas"]):
-        print("#3 y #4 ya están; nada que hacer.")
-        return 0
+        if "--rehacer" not in sys.argv:
+            print("#3 y #4 ya están; nada que hacer (--rehacer para reescribirlas).")
+            return 0
+        d["paradigmas"] = [p for p in d["paradigmas"] if p["codigo"] not in ("#3", "#4")]
+        ix = cargar("indice.json")
+        ix["entradas"] = [e for e in ix["entradas"] if e["codigo"] not in ("#3", "#4")]
+        guardar("indice.json", ix)
     e3 = {"codigo": "#3", "paradigma": "los numerales cardinales (saṅkhyā)", "genero": "numeral",
           "doc": DOC, "titulo_doc": "NUMERALES",
           "subtitulo": "clases, género y número, declinación, lista",
           "parrafos": ES_3,
-          "lista": {"columnas": ["número", "formas"],
-                    "filas": [[n, formas(f)] for n, f in CARDINALES]},
+          "lista": {"columnas": ["número", "formas", "se declina como"],
+                    "filas": [[n, formas(f), como_cardinal(n, formas(f))] for n, f in CARDINALES]},
           "notas": NOTAS_3}
     e4 = {"codigo": "#4", "paradigma": "los numerales ordinales", "genero": "numeral",
           "doc": DOC, "titulo_doc": "NUMERALES",
           "subtitulo": "formación, declinación, lista",
           "parrafos": ES_4,
-          "lista": {"columnas": ["ordinal", "masculino", "femenino", "neutro"],
-                    "filas": [[n, formas(m), formas(f), formas(x)] for n, m, f, x in ORDINALES]},
+          "lista": {"columnas": ["ordinal", "masculino", "femenino", "neutro", "se declina como"],
+                    "filas": [[n, formas(m), formas(f), formas(x), COMO_ORDINAL] for n, m, f, x in ORDINALES]},
           "notas": NOTAS_4}
     i = next(k for k, p in enumerate(d["paradigmas"]) if p["codigo"] == "#2")
     d["paradigmas"][i + 1:i + 1] = [e3, e4]
