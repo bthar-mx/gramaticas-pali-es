@@ -239,11 +239,14 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 
 /* ---------- notas de la tarjeta ---------- */
 .prosa{margin:10px 0 0;font-size:15px;line-height:1.55}
+i.pl{font-style:italic}
 .prosa a.xp{color:var(--nila);text-decoration:none;border-bottom:1px dotted var(--nila)}
 .prosa a.xp:hover{border-bottom-style:solid}
 .tbl.lista{margin-top:12px}
 .tbl.lista tbody th{font-family:var(--mono);font-weight:500;font-size:12.5px;white-space:nowrap}
 .tbl.lista td.como{font-size:13px;color:var(--soot)}
+a.doc-forma{font-size:11px;margin-left:2px;color:var(--soot);text-decoration:none;vertical-align:super}
+a.doc-forma:hover{color:var(--nila)}
 .tbl.lista td.como a.xp{color:var(--nila);text-decoration:none;border-bottom:1px dotted var(--nila)}
 .familia{margin:10px 0 0;font-size:14.5px;color:var(--soot)}
 .familia b{color:var(--ink);font-weight:600}
@@ -533,6 +536,7 @@ const TXT = {
            ['pronombre','Pronombres','sabbanāma — con género y sin él'],
            ['numeral','Numerales','pañca, kati'],
            ['sufijos','Sufijos','vibhatti-paccaya']],
+    t_doc_forma: 'La declinación de esta forma, en el Google Doc del IEBH',
     columnas: {'singular':'singular', 'plural':'plural',
                'plural masculino':'plural masculino',
                'plural femenino':'plural femenino',
@@ -576,6 +580,7 @@ const TXT = {
            ['pronombre','Pronouns','sabbanāma — with gender and without'],
            ['numeral','Numerals','pañca, kati'],
            ['sufijos','Suffixes','vibhatti-paccaya']],
+    t_doc_forma: 'The declension of this form, in the IEBH’s Google Doc',
     columnas: {'singular':'singular', 'plural':'plural',
                'número':'number', 'formas':'forms', 'se declina como':'declined like',
                'ordinal':'ordinal', 'masculino':'masculine', 'femenino':'feminine', 'neutro':'neuter',
@@ -681,7 +686,7 @@ DATA.paradigmas.forEach(p => {
                 DATA.casos || [], DATA.casos_en || []).join(' ')
     : '';
   const parrafos = (p.parrafos||[]).concat((e.parrafos||[])).join(' ');
-  const lista = p.lista ? p.lista.filas.map(f => f.map(c => Array.isArray(c) ? c.join(' ') : String(c).replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1')).join(' ')).join(' ') : '';
+  const lista = p.lista ? p.lista.filas.map(f => f.map(c => Array.isArray(c) ? c.map(v => v && v.f || v).join(' ') : String(c).replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1')).join(' ')).join(' ') : '';
   p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
                 p.familia||'', p.texto||'', detalle, formas, inflex, parrafos, lista,
                 e.paradigma||'', e.subtitulo||'', e.familia||'', e.texto||'',
@@ -711,9 +716,15 @@ function hi(text){
 /* ---------- render ---------- */
 function celda(variantes){
   if(!variantes.length) return '<td class="nada">—</td>';
-  const html = variantes.map(v => /^\(.*\)$/.test(v)
-      ? `<span class="rara">${hi(v)}</span>` : hi(v))
-    .join('<span class="sep">, </span>');
+  /* Una variante puede venir como {f, doc}: la forma con el Google Doc de
+     su declinación (las listas de numerales, del 1 al 23). Se pinta la
+     forma y, pegado, un «↗» al documento. */
+  const html = variantes.map(v => {
+    if(v && typeof v === 'object'){
+      return hi(v.f) + `<a class="doc-forma" href="https://docs.google.com/document/d/${esc(v.doc)}/edit" target="_blank" rel="noopener" data-tip="${esc(tr('t_doc_forma'))}">↗</a>`;
+    }
+    return /^\(.*\)$/.test(v) ? `<span class="rara">${hi(v)}</span>` : hi(v);
+  }).join('<span class="sep">, </span>');
   return `<td>${html}</td>`;
 }
 function tabla(p){
@@ -736,12 +747,46 @@ function titulo(p){
   const glosa = at < 0 ? '' : ' ' + texto.slice(at + 1);
   return `<span class="pali">${hi(pali)}</span><span class="gloss">${hi(glosa)}</span>`;
 }
+/* Las voces pāḷi sueltas en la prosa del IEBH van en cursiva (pedido del
+   IEBH, sesión 58): es pāḷi lo que lleva diacrítico o lo que es una forma
+   de las tablas de esta página de cuatro letras o más (más eka, dvi, cha,
+   sata, kati, que son cortas y numerales). Lo entrecomillado —«…», "…",
+   '…'— y lo que empieza por mayúscula se deja en redonda. */
+const FORMAS_PALI = new Set();
+DATA.paradigmas.forEach(p => {
+  (p.filas||[]).forEach(f => f.forEach(c => c.forEach(v => FORMAS_PALI.add(v.toLowerCase().replace(/^\(|\)$/g,'')))));
+  if(p.lista) p.lista.filas.forEach(f => f.slice(1).forEach(c => Array.isArray(c) && c.forEach(v => FORMAS_PALI.add((v && v.f || v).toLowerCase()))));
+  FORMAS_PALI.add(p.paradigma.split(' (')[0].split(',')[0].trim().toLowerCase());
+});
+['eka','dvi','cha','sata','kati'].forEach(w => FORMAS_PALI.add(w));
+const NO_PALI = new Set(['eso','mano','me','no','se','te','ti','ya','yo']);
+const RE_TOKEN = /[a-zāīūṅñṭḍṇḷṃA-ZĀĪŪṄÑṬḌṆḶṂ]+(?:-[a-zāīūṅñṭḍṇḷṃ]+)*/g;
+const RE_CITA = /«[^»]*»|"[^"]*"|'[^']*'|‘[^’]*’|“[^”]*”/g;
+function esPali(w){
+  if(/^[A-ZĀĪŪṄÑṬḌṆḶṂ]/.test(w)) return false;
+  const k = w.toLowerCase();
+  if(NO_PALI.has(k)) return false;
+  if(/[āīūṅñṭḍṇḷṃ]/.test(w)) return true;
+  return FORMAS_PALI.has(k) && (k.replace(/-/g,'').length >= 4 || ['eka','dvi','cha'].includes(k));
+}
+function hiPali(t){
+  t = String(t);
+  const citas = [...t.matchAll(RE_CITA)].map(m => [m.index, m.index + m[0].length]);
+  let out = '', ult = 0;
+  for(const m of t.matchAll(RE_TOKEN)){
+    if(citas.some(([a,b]) => m.index >= a && m.index < b) || !esPali(m[0])) continue;
+    out += hi(t.slice(ult, m.index)) + '<i class="pl">' + hi(m[0]) + '</i>';
+    ult = m.index + m[0].length;
+  }
+  return out + hi(t.slice(ult));
+}
 /* Un párrafo del IEBH con enlaces {{CÓDIGO|texto}} a otras fichas; lo que
-   no es enlace pasa por hi() para que el resaltado de la búsqueda siga. */
+   no es enlace pasa por hiPali() para que el resaltado de la búsqueda siga
+   y el pāḷi vaya en cursiva. */
 function prosa(t){
   return String(t).split(/(\{\{[^}]+\}\})/).map(tr => {
     const m = /^\{\{([^|]+)\|([^}]+)\}\}$/.exec(tr);
-    if(!m) return hi(tr);
+    if(!m) return hiPali(tr);
     const ref = POR_CODIGO[m[1]];
     return ref ? `<a class="xp" href="#${idOf(ref)}" data-goto="${idOf(ref)}"><i>${hi(m[2])}</i></a>` : hi(m[2]);
   }).join('');
@@ -778,7 +823,7 @@ function card(p){
       const m = /^(.*?)\s*\((.+)\)$/.exec(x);
       return m ? `${hi(m[1])} <span class="g">(${hi(m[2])})</span>` : hi(x);
     };
-    const sentido = u => `<div class="uso-l"><span class="uso-t">${hi(u.uso)}</span>
+    const sentido = u => `<div class="uso-l"><span class="uso-t">${hiPali(u.uso)}</span>
       — ${u.ej.map(ejemplo).join('<span class="sep">, </span>')}
       <span class="refs">· ${refURL(u.ref)}</span></div>`;
     const filas = detalleDe(p).map(d => {
@@ -787,12 +832,12 @@ function card(p){
         <th scope="row">${hi(d.s)}</th>
         <td class="multi">${usos.map(sentido).join('')}</td></tr>`;
     }).join('');
-    cuerpo = `<p style="margin:10px 0 0">${hi(pr(p,'texto')||'')}</p>
+    cuerpo = `<p style="margin:10px 0 0">${hiPali(pr(p,'texto')||'')}</p>
       <table class="tbl suf"><thead><tr><th></th><th>${esc(tr('th_suf'))}</th></tr></thead>
       <tbody>${filas}</tbody></table>`;
   }
-  const familia = p.familia ? `<p class="familia">${hi(pr(p,'familia'))}</p>` : '';
-  const notas = (pr(p,'notas')||[]).map(n => `<p class="parcial">${esc(n)}</p>`).join('');
+  const familia = p.familia ? `<p class="familia">${hiPali(pr(p,'familia'))}</p>` : '';
+  const notas = (pr(p,'notas')||[]).map(n => `<p class="parcial">${hiPali(n)}</p>`).join('');
   return `<article class="card" id="${idOf(p)}">
     <div class="chead">
       <span class="cod">${esc(p.codigo)}</span>
@@ -1166,7 +1211,7 @@ function textoParadigma(p){
     L.push('');
     const cab = p.lista.columnas.map(columna);
     const filas = p.lista.filas.map(f => [f[0], ...f.slice(1).map(c =>
-      typeof c === 'string' ? c.replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1') : (c.length ? c.join(', ') : '—'))]);
+      typeof c === 'string' ? c.replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1') : (c.length ? c.map(v => v && v.f || v).join(', ') : '—'))]);
     const anchos = cab.map((c,j) => Math.max(c.length, ...filas.map(r => r[j].length)));
     L.push(cab.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd());
     filas.forEach(r => L.push(r.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd()));

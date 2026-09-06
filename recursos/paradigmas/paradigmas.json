@@ -7422,177 +7422,294 @@
      [
       "1",
       [
-       "eka"
+       {
+        "f": "eka",
+        "doc": "1rY7T9gPAYuXAIkDeyeiQ7l4bAG-_yQJjIiKaHfU6_sY"
+       }
       ],
       "{{PM9|eka}} (m.), {{PF9|eka}} (f.), {{PN9|eka}} (n.)"
      ],
      [
       "2",
       [
-       "dvi"
+       {
+        "f": "dvi",
+        "doc": "1tU05EaRBZgnxjQXUKAlGRH4J2IsRyI3Oq0aRZijL2Fk"
+       }
       ],
       "{{P11|dvi}}"
      ],
      [
       "3",
       [
-       "ti"
+       {
+        "f": "ti",
+        "doc": "13zcVImCEt3KTqeo_a9CxKcf_O809nE3N-Rt0vbpOEP0"
+       }
       ],
       "{{P12|ti}}"
      ],
      [
       "4",
       [
-       "catu"
+       {
+        "f": "catu",
+        "doc": "1a-ZtgzLfeAawNYtE3zbrjHAQQfHUB7cPTXXIT5FXqD4"
+       }
       ],
       "{{P13|catu}}"
      ],
      [
       "5",
       [
-       "pañca"
+       {
+        "f": "pañca",
+        "doc": "1_y7oJsSj-FA2fQl_0scvFj0iMBCbSAY6TUNKX829GBM"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "6",
       [
-       "cha"
+       {
+        "f": "cha",
+        "doc": "1a02bs1oeYsCFyKmxADGzVVq1g9gLDYDK3FvIupn-yN8"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "7",
       [
-       "satta"
+       {
+        "f": "satta",
+        "doc": "1b0szgHowttlvx0jPfuIZG9PWcRQ8cBZtQAOR_dZvNuk"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "8",
       [
-       "aṭṭha"
+       {
+        "f": "aṭṭha",
+        "doc": "1VWB_XZmD7fZH1u_J2wDM2ERs8zo0RezVGeb1-iW_EC8"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "9",
       [
-       "nava"
+       {
+        "f": "nava",
+        "doc": "16C4QAhn5i1eay8AsPqVqRHnSMNY5XENoKAu5OXorw5w"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "10",
       [
-       "dasa"
+       {
+        "f": "dasa",
+        "doc": "1s8YuccLVDzjNwypUAAGhriryfAzPwjPYyODQs8NRJz0"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "11",
       [
-       "ekādasa",
-       "ekārasa"
+       {
+        "f": "ekādasa",
+        "doc": "14FAeatj13TAnWHBXokiunhbfXBTcbBFewIHPP9esYF8"
+       },
+       {
+        "f": "ekārasa",
+        "doc": "1AlH1QyuemvcADo8_ftchOavbGspmKfMlZiwu-cv77Po"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "12",
       [
-       "dvādasa",
-       "bārasa"
+       {
+        "f": "dvādasa",
+        "doc": "146A1b--cqd7eRqRF4BDqdUhGPtFrPA6w9QyB8vFVS2o"
+       },
+       {
+        "f": "bārasa",
+        "doc": "1AbJ50NiHArn5i8WoNp2rA_cUWYTdVdvPKE24TvSq6ZM"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "13",
       [
-       "terasa",
-       "teḷasa"
+       {
+        "f": "terasa",
+        "doc": "1WQg2Z24Ud3MKKnw-QkWhFTI6TXYok4Szytf6yA2FoWs"
+       },
+       {
+        "f": "teḷasa",
+        "doc": "1CP-QDqXtpzcOhcp_5yixEwwK6Jo42adh4_45BDna_Ro"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "14",
       [
-       "cuddasa",
-       "catuddasa",
-       "coddasa"
+       {
+        "f": "cuddasa",
+        "doc": "1NLsNPWITQfCffSVIeUw_h6NOa-QdHyNFT0rq4RZVijk"
+       },
+       {
+        "f": "catuddasa",
+        "doc": "1N8PR6mvRLmKh-HkiCejDqZa_ZLZJ_5Ti2gQVsvYaibM"
+       },
+       {
+        "f": "coddasa",
+        "doc": "1pXk7hGG25Kt9oHUjF3lLg-dnZkSu-LmAi0RzIDQCDT4"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "15",
       [
-       "pannarasa",
-       "paṇṇarasa",
-       "pañcadasa"
+       {
+        "f": "pannarasa",
+        "doc": "11Rt78DxgHk6vapJXyM4zWerorVl-fKrm_lGgpFqKIng"
+       },
+       {
+        "f": "paṇṇarasa",
+        "doc": "1q2MZOxVMXHbKiWm99uNOJnl2qPr2cgkGCRpTqieZNfA"
+       },
+       {
+        "f": "pañcadasa",
+        "doc": "1R4X3R5nGH8e3jB8MselhPnykniY46lkOFpWtYPRyW8s"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "16",
       [
-       "soḷasa"
+       {
+        "f": "soḷasa",
+        "doc": "1eqwrLkpekMhn5X8_uo76k4QOK-uSf-s2nSrgbivQ8Gg"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "17",
       [
-       "sattarasa",
-       "sattadasa"
+       {
+        "f": "sattarasa",
+        "doc": "1q2qw7tZr6tfOIrkgFimqSL0g952ie922g-x55aIb1cw"
+       },
+       {
+        "f": "sattadasa",
+        "doc": "1beOEkk1JP-v9y-k1B_3VayZ9Zh7RYVNf6s5hjSvNFQA"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "18",
       [
-       "aṭṭhārasa",
-       "aṭṭhādasa"
+       {
+        "f": "aṭṭhārasa",
+        "doc": "1TRyeHCTviYmRqygmU1hmxdBW8p--MJzXPpePK76JAks"
+       },
+       {
+        "f": "aṭṭhādasa",
+        "doc": "1js3Q_q9hzlCEV951hPQViJCjDSx7mWwFJIJweJBzlKE"
+       }
       ],
       "{{#1|pañca}}"
      ],
      [
       "19",
       [
-       "ekūnavīsati",
-       "ekūnavīsaṃ"
+       {
+        "f": "ekūnavīsati",
+        "doc": "1wRgnudOVgK9UzsHlFE6pUlo9GypYtU6iUMymbncait4"
+       },
+       {
+        "f": "ekūnavīsaṃ",
+        "doc": "1YhxfuQ765jZSncWL3fCZbNg2-c6kUCQKgrpeXB-ZAdo"
+       }
       ],
       "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "20",
       [
-       "vīsati",
-       "vīsaṃ"
+       {
+        "f": "vīsati",
+        "doc": "1G5eYOCSnLmw6MOPq3bi82r-C4P4p6KGbs8p5dV3jnSo"
+       },
+       {
+        "f": "vīsaṃ",
+        "doc": "1Awv67jbhrIoXyig63yOHVOpEE1MrOPEykCpqdZ0syAY"
+       }
       ],
       "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "21",
       [
-       "ekavīsati",
-       "ekavīsaṃ"
+       {
+        "f": "ekavīsati",
+        "doc": "1narkGVbdV_jVRVRNv1qFHvZHVcWFa9CXUj5hYUBlmt0"
+       },
+       {
+        "f": "ekavīsaṃ",
+        "doc": "1g-o1E-QZsGD53yYfufEcQxLZHGi0yyLjF-lk2oSaHK0"
+       }
       ],
       "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "22",
       [
-       "dvāvīsati",
-       "dvāvīsaṃ",
-       "bāvīsati",
-       "bāvīsaṃ"
+       {
+        "f": "dvāvīsati",
+        "doc": "1cWSB9lTY2I5GiG-ofH-ru3HwzsIzZC_KarDRyQ5Kx4s"
+       },
+       {
+        "f": "dvāvīsaṃ",
+        "doc": "1Se98vloyxQQI6IsAPL0W_0-20Q1B0DmNih9f81KfQzA"
+       },
+       {
+        "f": "bāvīsati",
+        "doc": "1yh9ovnGrmxECq68P2LpGrCJ5RmuGqg5PcDAavaKcUEM"
+       },
+       {
+        "f": "bāvīsaṃ",
+        "doc": "1__bBNB96Q7alczNEGLGDZIQm6gU2HUOCoHxNLlcAkrY"
+       }
       ],
       "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],
      [
       "23",
       [
-       "tevīsati",
-       "tevīsaṃ"
+       {
+        "f": "tevīsati",
+        "doc": "1mBRyDwjTU0Eb1C9KKvPIo_I_Tb_GBD1iDAFwo4WHncY"
+       },
+       {
+        "f": "tevīsaṃ",
+        "doc": "1cNsEAeXJBjxosVi4gdcjVfVjPucaCdtL-GuIbWGwETA"
+       }
       ],
       "en «i»: {{F-I1|ratti}} (como vīsati); las demás: como vīsaṃ (el documento no remite a ficha)"
      ],

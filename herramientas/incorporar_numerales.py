@@ -110,6 +110,39 @@ ORDINALES = [
 ]
 
 
+# Los documentos de declinación que el documento «Numerales» enlaza en cada
+# forma (Google Docs del IEBH), del 1 al 23; a partir del 24 el documento no
+# enlaza nada («el resto de las declinaciones hasta 99 son similares»).
+DOCS_FORMA = {
+ "eka": "1rY7T9gPAYuXAIkDeyeiQ7l4bAG-_yQJjIiKaHfU6_sY", "dvi": "1tU05EaRBZgnxjQXUKAlGRH4J2IsRyI3Oq0aRZijL2Fk",
+ "ti": "13zcVImCEt3KTqeo_a9CxKcf_O809nE3N-Rt0vbpOEP0", "catu": "1a-ZtgzLfeAawNYtE3zbrjHAQQfHUB7cPTXXIT5FXqD4",
+ "pañca": "1_y7oJsSj-FA2fQl_0scvFj0iMBCbSAY6TUNKX829GBM", "cha": "1a02bs1oeYsCFyKmxADGzVVq1g9gLDYDK3FvIupn-yN8",
+ "satta": "1b0szgHowttlvx0jPfuIZG9PWcRQ8cBZtQAOR_dZvNuk", "aṭṭha": "1VWB_XZmD7fZH1u_J2wDM2ERs8zo0RezVGeb1-iW_EC8",
+ "nava": "16C4QAhn5i1eay8AsPqVqRHnSMNY5XENoKAu5OXorw5w", "dasa": "1s8YuccLVDzjNwypUAAGhriryfAzPwjPYyODQs8NRJz0",
+ "ekādasa": "14FAeatj13TAnWHBXokiunhbfXBTcbBFewIHPP9esYF8", "ekārasa": "1AlH1QyuemvcADo8_ftchOavbGspmKfMlZiwu-cv77Po",
+ "dvādasa": "146A1b--cqd7eRqRF4BDqdUhGPtFrPA6w9QyB8vFVS2o", "bārasa": "1AbJ50NiHArn5i8WoNp2rA_cUWYTdVdvPKE24TvSq6ZM",
+ "terasa": "1WQg2Z24Ud3MKKnw-QkWhFTI6TXYok4Szytf6yA2FoWs", "teḷasa": "1CP-QDqXtpzcOhcp_5yixEwwK6Jo42adh4_45BDna_Ro",
+ "cuddasa": "1NLsNPWITQfCffSVIeUw_h6NOa-QdHyNFT0rq4RZVijk", "catuddasa": "1N8PR6mvRLmKh-HkiCejDqZa_ZLZJ_5Ti2gQVsvYaibM",
+ "coddasa": "1pXk7hGG25Kt9oHUjF3lLg-dnZkSu-LmAi0RzIDQCDT4",
+ "pannarasa": "11Rt78DxgHk6vapJXyM4zWerorVl-fKrm_lGgpFqKIng", "paṇṇarasa": "1q2MZOxVMXHbKiWm99uNOJnl2qPr2cgkGCRpTqieZNfA",
+ "pañcadasa": "1R4X3R5nGH8e3jB8MselhPnykniY46lkOFpWtYPRyW8s", "soḷasa": "1eqwrLkpekMhn5X8_uo76k4QOK-uSf-s2nSrgbivQ8Gg",
+ "sattarasa": "1q2qw7tZr6tfOIrkgFimqSL0g952ie922g-x55aIb1cw", "sattadasa": "1beOEkk1JP-v9y-k1B_3VayZ9Zh7RYVNf6s5hjSvNFQA",
+ "aṭṭhārasa": "1TRyeHCTviYmRqygmU1hmxdBW8p--MJzXPpePK76JAks", "aṭṭhādasa": "1js3Q_q9hzlCEV951hPQViJCjDSx7mWwFJIJweJBzlKE",
+ "ekūnavīsati": "1wRgnudOVgK9UzsHlFE6pUlo9GypYtU6iUMymbncait4", "ekūnavīsaṃ": "1YhxfuQ765jZSncWL3fCZbNg2-c6kUCQKgrpeXB-ZAdo",
+ "vīsati": "1G5eYOCSnLmw6MOPq3bi82r-C4P4p6KGbs8p5dV3jnSo", "vīsaṃ": "1Awv67jbhrIoXyig63yOHVOpEE1MrOPEykCpqdZ0syAY",
+ "ekavīsati": "1narkGVbdV_jVRVRNv1qFHvZHVcWFa9CXUj5hYUBlmt0", "ekavīsaṃ": "1g-o1E-QZsGD53yYfufEcQxLZHGi0yyLjF-lk2oSaHK0",
+ "dvāvīsati": "1cWSB9lTY2I5GiG-ofH-ru3HwzsIzZC_KarDRyQ5Kx4s", "dvāvīsaṃ": "1Se98vloyxQQI6IsAPL0W_0-20Q1B0DmNih9f81KfQzA",
+ "bāvīsati": "1yh9ovnGrmxECq68P2LpGrCJ5RmuGqg5PcDAavaKcUEM", "bāvīsaṃ": "1__bBNB96Q7alczNEGLGDZIQm6gU2HUOCoHxNLlcAkrY",
+ "tevīsati": "1mBRyDwjTU0Eb1C9KKvPIo_I_Tb_GBD1iDAFwo4WHncY", "tevīsaṃ": "1cNsEAeXJBjxosVi4gdcjVfVjPucaCdtL-GuIbWGwETA",
+}
+
+
+def con_docs(fs):
+    """Las formas con su documento de declinación, si el documento lo
+    enlaza: [{'f': 'vīsati', 'doc': '…'}, …]; sin documento, la cadena."""
+    return [{"f": f, "doc": DOCS_FORMA[f]} if f in DOCS_FORMA else f for f in fs]
+
+
 def como_cardinal(n, fs):
     """Con qué paradigma se declina cada cardinal, según el documento:
     enlace {{CÓDIGO|voz}} a la ficha. Devuelve una cadena para la columna
@@ -220,7 +253,7 @@ def main():
           "subtitulo": "clases, género y número, declinación, lista",
           "parrafos": ES_3,
           "lista": {"columnas": ["número", "formas", "se declina como"],
-                    "filas": [[n, formas(f), como_cardinal(n, formas(f))] for n, f in CARDINALES]},
+                    "filas": [[n, con_docs(formas(f)), como_cardinal(n, formas(f))] for n, f in CARDINALES]},
           "notas": NOTAS_3}
     e4 = {"codigo": "#4", "paradigma": "los numerales ordinales", "genero": "numeral",
           "doc": DOC, "titulo_doc": "NUMERALES",
