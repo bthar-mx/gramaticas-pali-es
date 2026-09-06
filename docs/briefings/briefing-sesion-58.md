@@ -174,3 +174,28 @@ Lo que viene —el inglés de Nandisena por tandas, los sufijos— son 1.x.
   contracciones, **dhātu** masculino, una ficha de **adjetivo** (dīgha),
   arahanta/mahanta, y notas sobre el compuesto en rāja/sakha/atta. El Nyāsa
   no declina nada. Decide el IEBH.
+
+## 8. Comillas, cursivas y los documentos de cada numeral (2026-09-06)
+
+- **Comillas** (guía de estilo §4: dobles para palabras, simples para letras,
+  sílabas, prefijos y sufijos): 28 sustituciones en el español firmado de
+  Nandisena (`nandisena.json`) y 5 en su inglés (`ingles.json`): 'a', 'i',
+  'u', 'o', 'ā', 'aṃ', 'ga', 'ha', 'da', 'abhi', 'ati', 'ava', 'ku', 'upa',
+  'āya', 'ti', 'tvā', 'tuna', 'tvāna', 'tuṃ'. Las partículas (na, ca, vā,
+  mā, no, hi), los pronombres (so, sā, te, ya, ta) y las raíces (dā, su, kī,
+  i) siguen entre dobles: son palabras. Hecho por pedido del IEBH sobre
+  texto firmado. **Pendiente de decidir**: las notas de `/recursos/sandhi/`
+  citan formas y letras con «…» (guillemets), una tercera convención.
+- **El pāḷi en cursiva**: en el glosario, toda voz pāḷi suelta en las glosas
+  (Nandisena, Smith, norma, puente) va en `<i class="pl">`, y enlaza si es
+  lema (`claseSuelto()` en `plantilla.html`: diacrítico, o lema de ≥4
+  letras; «mata» excluido; mayúsculas y entrecomillados en redonda; las
+  marcas «(A)», «(B)» de Smith ya no enlazan al lema «a»). 3.947 cursivas,
+  2.509 enlaces, 0 errores. En paradigmas, `hiPali()` hace lo mismo sobre
+  párrafos, familias, notas y usos, con las formas de la propia página como
+  léxico. **Sin hacer** en sandhi, verbo, raíces, nombre y solucionador:
+  hay que mirar cada plantilla; sus textos son sobre todo tablas.
+- **Los Google Docs de cada numeral**: el documento «Numerales» enlaza del 1
+  al 23 (39 formas) su propio documento de declinación; van en #3 como
+  `{f, doc}` en cada forma y la ficha pinta un «↗» tras la forma
+  (`DOCS_FORMA` en `incorporar_numerales.py`; `celda()` en la plantilla).

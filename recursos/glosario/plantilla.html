@@ -299,6 +299,7 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
 .grafias i{font-style:italic;color:var(--ink)}
 /* Enlaces entre fichas: se ven como enlaces, pero discretos, porque en
    una lista de 1.984 lemas un enlace llamativo por línea es ruido. */
+i.pl{font-style:italic}
 .xref{color:var(--nila);text-decoration:underline dotted;text-underline-offset:2px;
   cursor:pointer}
 .xref:hover{text-decoration-style:solid;background:var(--hl)}
@@ -711,10 +712,14 @@ function casa(t){
 
 
 /* La línea de sentido, según el idioma. Devuelve '' si no hay ninguna. */
+/* Las glosas de Smith y de la norma pasan también por enlazaGlosa(): las
+   voces pāḷi sueltas quedan en cursiva y, si son lema, enlazan (pedido del
+   IEBH, sesión 58: «el semantema complejo que es el samāsa» leía el pāḷi
+   como si fuera español). */
 function sentido(t){
-  if (idioma === 'en' && t.en) return '<div class="en">' + resalta(t.en) + '</div>';
-  if (t.es) return '<div class="es">' + resalta(t.es) + '</div>';
-  if (t.en) return '<div class="en">' + resalta(t.en) + '</div>';
+  if (idioma === 'en' && t.en) return '<div class="en">' + enlazaGlosa(t.en, t.pali) + '</div>';
+  if (t.es) return '<div class="es">' + enlazaGlosa(t.es, t.pali) + '</div>';
+  if (t.en) return '<div class="en">' + enlazaGlosa(t.en, t.pali) + '</div>';
   return '';
 }
 
@@ -744,7 +749,7 @@ function ficha(t, tipo){
   // que hace útil tener las dos obras en una página.
   const puente = (t.nandisena || []).map(g =>
     '<p class="nota puente"><span class="marca m-norma">Nandisena</span>' +
-    (g.es ? escapa(g.es) : 'v. ' + escapa(g.remite_a || '')) +
+    (g.es ? enlazaGlosa(g.es, g.pali) : 'v. ' + escapa(g.remite_a || '')) +
     (g.refs && g.refs.length ? ' <span class="fijado">' + g.refs.map(escapa).join(' · ') + '</span>' : '') +
     '</p>').join('');
   const notas = [t.nota, t.conflicto, t.duda, t.errata,
@@ -822,7 +827,7 @@ function enlaceTermino(nom, etiqueta){
   const g = glosaBreve(gr);
   const tip = gr.p + '|' + (g ? g + ' · ' : '') + 'Pulse para ir a su ficha.';
   return '<a class="xref" href="#g-' + escapa(gr.id) + '" data-xref="' +
-    escapa(gr.id) + '" data-tip="' + escapa(tip.slice(0, 400)) + '">' + txt + '</a>';
+    escapa(gr.id) + '" data-tip="' + escapa(tip.slice(0, 400)) + '"><i class="pl">' + txt + '</i></a>';
 }
 
 /* Los «Véase también kāraka», «V. lopa», «Cf. ghosa», «See also …», «También
@@ -863,12 +868,23 @@ const L_PALI = 'a-zA-ZāīūṅñṭḍṇḷṃĀĪŪṄÑṬḌṆḶṂ';
 const RE_SUELTO = new RegExp('(?<![' + L_PALI + '\\-])[' + L_PALI + ']+(?:-\\s?[' + L_PALI + ']+)*(?![' + L_PALI + '])', 'g');
 const RE_COMILLAS = /"[^"]*"|“[^”]*”|'[^']*'|‘[^’]*’/g;
 const NO_SUELTO = new Set(['dhamma', 'buddha', 'āharati', 'tiṭṭhati', 'pavattati']);
-function sueltoEnlazable(w, propio){
-  if (/^[A-ZĀĪŪṄÑṬḌṆḶṂ]/.test(w)) return false;
-  if (!(/[āīūṅñṭḍṇḷṃ-]/.test(w) || w.length >= 4)) return false;
+/* Qué es una voz suelta: 'enlace' si es lema enlazable; 'pali' si es pāḷi
+   pero no enlaza (no es lema, o es el propio lema, o está en NO_SUELTO) y
+   va en cursiva; null si es español, inglés o francés. Es pāḷi lo que lleva
+   diacrítico, o lo que es lema de cuatro letras o más sin diacrítico
+   (sandhi, samāsa, kamma); «mata», que es lema y palabra española, se
+   excluye a mano. Las mayúsculas (Kaccāyana, Buddha) van en redonda. */
+const NO_PALI = new Set(['mata']);
+function claseSuelto(w, propio){
+  if (/^[A-ZĀĪŪṄÑṬḌṆḶṂ]/.test(w)) return null;
   const k = clave(w);
-  return IDX.has(k) && !NO_SUELTO.has(k) && k !== propio;
+  const dia = /[āīūṅñṭḍṇḷṃ]/.test(w);
+  const lema = IDX.has(k) && !NO_PALI.has(k) && (dia || /-/.test(w) || w.replace(/-/g, '').length >= 4);
+  if (lema && !NO_SUELTO.has(k) && k !== propio) return 'enlace';
+  if (lema || (dia && w.replace(/-/g, '').length >= 2)) return 'pali';
+  return null;
 }
+function sueltoEnlazable(w, propio){ return claseSuelto(w, propio) === 'enlace'; }
 function enlazaGlosa(txt, propio){
   if (!txt) return '';
   txt = String(txt);
@@ -886,19 +902,25 @@ function enlazaGlosa(txt, propio){
   const vistos = new Set();
   for (const m of txt.matchAll(RE_SUELTO)) {
     if (dentro(m.index) || comillas.some(([a,b]) => m.index >= a && m.index < b)) continue;
-    if (!sueltoEnlazable(m[0], propio)) continue;
+    const cl = claseSuelto(m[0], propio);
+    if (!cl) continue;
     const k = clave(m[0]);
-    if (vistos.has(k)) continue;
-    vistos.add(k);
-    trozos.push([m.index, m.index + m[0].length, {suelto: m[0]}]);
+    if (cl === 'enlace' && !vistos.has(k)) {
+      vistos.add(k);
+      trozos.push([m.index, m.index + m[0].length, {suelto: m[0]}]);
+    } else {
+      trozos.push([m.index, m.index + m[0].length, {pali: m[0]}]);
+    }
   }
   trozos.sort((a,b) => a[0]-b[0]);
   for (const [a, b, m] of trozos){
     if (a < ult) continue;
     out += resalta(txt.slice(ult, a));
     if (m.suelto !== undefined) out += enlaceTermino(m.suelto, m.suelto);
+    else if (m.pali !== undefined) out += '<i class="pl">' + resalta(m.pali) + '</i>';
     else if (m[2] !== undefined) out += resalta(m[1] + ' ') + enlazaLista(m[2]);
-    else out += '(' + (IDX.has(clave(m[1])) ? enlaceTermino(m[1]) : resalta(m[1])) + ')';
+    /* «(A)», «(B)», «(E)» son las marcas de Smith, no el lema «a». */
+    else out += '(' + (IDX.has(clave(m[1])) && !/^[A-ZĀĪŪṄÑṬḌṆḶṂ]$/.test(m[1]) ? enlaceTermino(m[1]) : resalta(m[1])) + ')';
     ult = b;
   }
   return out + resalta(txt.slice(ult));
