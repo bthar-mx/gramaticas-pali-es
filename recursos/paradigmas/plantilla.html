@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
-<meta name="version" content="1.13">
-<meta name="version-date" content="2026-08-24">
+<meta name="version" content="1.16">
+<meta name="version-date" content="2026-09-05">
 <meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -238,6 +238,11 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   box-shadow:inset 0 -1px 0 var(--haritala)}
 
 /* ---------- notas de la tarjeta ---------- */
+.prosa{margin:10px 0 0;font-size:15px;line-height:1.55}
+.prosa a.xp{color:var(--nila);text-decoration:none;border-bottom:1px dotted var(--nila)}
+.prosa a.xp:hover{border-bottom-style:solid}
+.tbl.lista{margin-top:12px}
+.tbl.lista tbody th{font-family:var(--mono);font-weight:500;font-size:12.5px;white-space:nowrap}
 .familia{margin:10px 0 0;font-size:14.5px;color:var(--soot)}
 .familia b{color:var(--ink);font-weight:600}
 .parcial{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;color:var(--soot);
@@ -671,8 +676,10 @@ DATA.paradigmas.forEach(p => {
     ? [].concat(DATA.inflexiones, DATA.inflexiones_en || [],
                 DATA.casos || [], DATA.casos_en || []).join(' ')
     : '';
+  const parrafos = (p.parrafos||[]).concat((e.parrafos||[])).join(' ');
+  const lista = p.lista ? p.lista.filas.map(f => f.map(c => Array.isArray(c) ? c.join(' ') : c).join(' ')).join(' ') : '';
   p.hay = fold([p.codigo, p.paradigma, p.titulo_doc||'', p.subtitulo||'',
-                p.familia||'', p.texto||'', detalle, formas, inflex,
+                p.familia||'', p.texto||'', detalle, formas, inflex, parrafos, lista,
                 e.paradigma||'', e.subtitulo||'', e.familia||'', e.texto||'',
                 (e.notas||[]).join(' '), detEn].join(' '));
   p.gen = genOf(p); p.tema = temaOf(p);
@@ -725,6 +732,16 @@ function titulo(p){
   const glosa = at < 0 ? '' : ' ' + texto.slice(at + 1);
   return `<span class="pali">${hi(pali)}</span><span class="gloss">${hi(glosa)}</span>`;
 }
+/* Un párrafo del IEBH con enlaces {{CÓDIGO|texto}} a otras fichas; lo que
+   no es enlace pasa por hi() para que el resaltado de la búsqueda siga. */
+function prosa(t){
+  return String(t).split(/(\{\{[^}]+\}\})/).map(tr => {
+    const m = /^\{\{([^|]+)\|([^}]+)\}\}$/.exec(tr);
+    if(!m) return hi(tr);
+    const ref = POR_CODIGO[m[1]];
+    return ref ? `<a class="xp" href="#${idOf(ref)}" data-goto="${idOf(ref)}"><i>${hi(m[2])}</i></a>` : hi(m[2]);
+  }).join('');
+}
 function card(p){
   const docURL = `https://docs.google.com/document/d/${p.doc}/edit`;
   let cuerpo = '';
@@ -734,6 +751,15 @@ function card(p){
       `${esc(ref.codigo)} · <i>${esc(pr(ref, 'paradigma'))}</i>`)}</p>`;
   } else if(p.filas){
     cuerpo = tabla(p);
+  } else if(p.lista){
+    /* Prosa más lista (los numerales, sesión 58): los párrafos del IEBH con
+       enlaces {{CÓDIGO|texto}} a los paradigmas que nombran, y una tabla
+       cuya primera columna es el rótulo (el número, el ordinal). */
+    const parrafos = (pr(p,'parrafos')||[]).map(t => `<p class="prosa">${prosa(t)}</p>`).join('');
+    const head = '<tr>' + p.lista.columnas.map(c => `<th>${esc(columna(c))}</th>`).join('') + '</tr>';
+    const filas = p.lista.filas.map(f =>
+      `<tr><th scope="row">${hi(f[0])}</th>` + f.slice(1).map(celda).join('') + '</tr>').join('');
+    cuerpo = parrafos + `<table class="tbl lista"><thead>${head}</thead><tbody>${filas}</tbody></table>`;
   } else {
     /* Sólo las referencias desnudas «§N» apuntan al Nāma-Kappa; las de otras
        obras (Rū. §N) se dejan sin enlazar, como en los capítulos. */
@@ -845,15 +871,15 @@ function pintarHero(animar){
 pintarHero(true);
 
 /* ---------- versión ---------- */
-const VERSION = '1.15', VERSION_DATE = '2026-08-29';
-const VERSION_NOTE_EN = 'The page is now entirely in English when the EN button is on: not only the '
+const VERSION = '1.16', VERSION_DATE = '2026-09-05';
+const VERSION_NOTE_EN = 'Two numeral cards, #3 the cardinals and #4 the ordinals, with the text of Bhikkhu Nandisena’s «Numerales» document: the five kinds of number, gender and number by range, what is declined like what —each paradigm named links to its card— and the full lists, from eka to asaṅkheyya (10¹⁴⁰) and from first to fortieth. Earlier, in version 1.15: The page is now entirely in English when the EN button is on: not only the '
   + 'interface but the IEBH’s own prose — the gloss of each paradigm, the subtitles, the families, '
   + 'the transcription notes, the suffix text and the use of every suffix — adjudicated by the IEBH '
   + 'and credited in the footer. The Pāḷi forms are never translated: they are the object of this '
   + 'page. Nor are the references (§248, Rū. §260), which are the citation and the same in both '
   + 'languages. The search box now indexes both languages, so «girl» and «niña» both find kaññā. '
   + 'Earlier version notes are kept in Spanish.';
-const VERSION_NOTE = 'La página entera en inglés con el botón EN: no sólo la interfaz, también la '
+const VERSION_NOTE = 'Dos fichas de numerales, #3 los cardinales y #4 los ordinales, con el texto del documento «Numerales» de Bhikkhu Nandisena: las cinco clases de número, el género y el número de cada tramo, qué se declina como qué —cada paradigma nombrado enlaza a su ficha— y las listas completas, de eka a asaṅkheyya (10¹⁴⁰) y del primero al cuadragésimo. Antes, en la versión 1.15: La página entera en inglés con el botón EN: no sólo la interfaz, también la '
   + 'prosa del IEBH —la glosa de cada paradigma, los subtítulos, las familias, las notas de '
   + 'transcripción, el texto de los sufijos y el uso de cada uno—, adjudicada por el IEBH y '
   + 'acreditada en el pie. Las formas pāḷi no se traducen nunca: son el objeto de la página. Las '
@@ -1130,6 +1156,14 @@ function textoParadigma(p){
     L.push('', cab.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd());
     filas.forEach(r =>
       L.push(r.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd()));
+  } else if(p.lista){
+    (pr(p,'parrafos')||[]).forEach(t => L.push('', t.replace(/\{\{[^|]+\|([^}]+)\}\}/g, '$1')));
+    L.push('');
+    const cab = p.lista.columnas.map(columna);
+    const filas = p.lista.filas.map(f => [f[0], ...f.slice(1).map(c => c.length ? c.join(', ') : '—')]);
+    const anchos = cab.map((c,j) => Math.max(c.length, ...filas.map(r => r[j].length)));
+    L.push(cab.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd());
+    filas.forEach(r => L.push(r.map((c,j) => c.padEnd(anchos[j])).join('  ').trimEnd()));
   } else if(p.detalle){
     L.push(pr(p,'texto') || '', '');
     detalleDe(p).forEach(d =>

@@ -107,6 +107,9 @@ def verificar_ingles(datos, ing):
         for campo in ("subtitulo", "familia", "texto"):
             if p.get(campo) and not (e.get(campo) or "").strip():
                 fallos.append("inglés {0}: falta «{1}»".format(c, campo))
+        if len(e.get("parrafos") or []) != len(p.get("parrafos") or []):
+            fallos.append("inglés {0}: {1} párrafos para {2}".format(
+                c, len(e.get("parrafos") or []), len(p.get("parrafos") or [])))
         if len(e.get("notas") or []) != len(p.get("notas") or []):
             fallos.append("inglés {0}: {1} notas para {2}".format(
                 c, len(e.get("notas") or []), len(p.get("notas") or [])))

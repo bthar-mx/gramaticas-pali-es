@@ -150,3 +150,27 @@ El glosario pasa de **v0.1 a v1.0** (`recursos/glosario/conspectus.json`,
 campo `version`, y las `<meta>` de la plantilla): el Conspectus colacionado
 entero, Nandisena completo, 171 normativos con sus suttas, enlaces cruzados.
 Lo que viene —el inglés de Nandisena por tandas, los sufijos— son 1.x.
+
+## 7. Numerales en paradigmas, y el barrido de paradigmas en otras fuentes
+
+- **Paradigmas v1.16**: dos fichas nuevas bajo Numerales, **#3 los cardinales**
+  y **#4 los ordinales**, con la prosa del documento «Numerales» de Bhikkhu
+  Nandisena (Google Doc `1kJVYCgqN51glznKyy-eV3CZvh14THpi5QcvGyDW1MZI`) y las
+  listas completas (140 cardinales hasta 10¹⁴⁰; 31 ordinales). Nuevo tipo de
+  ficha: `parrafos` (prosa con enlaces `{{CÓDIGO|texto}}` a otras fichas) +
+  `lista` ({columnas, filas}); lo pinta `prosa()` y la rama `p.lista` de
+  `card()` en `plantilla.html`; búsqueda, copia y barra lateral lo saben.
+  Guion: `herramientas/incorporar_numerales.py` (idempotente). Tres erratas
+  del documento corregidas con el visto bueno del IEBH y dichas en las notas
+  (Aṭthasataṃ, Paṭhamam, «quinta» por cuarta). **Ojo**: `ingles.json` está
+  ADJUDICADO en bloque (2026-08-29), así que el inglés de #3 y #4 —borrador
+  del traductor— se publica como si estuviera firmado; el IEBH debe leerlo
+  (`docs/paradigmas/ingles-por-adjudicar.md` no lo separa).
+- **Dos fuentes nuevas en texto**: `docs/fuentes/saddaniti/Saddaniti-padamala.md`
+  (VRI, 176 pp.) y el Niruttidīpanī ya dicho. Barrido de tablas de
+  declinación en Padamālā, Nyāsa y Niruttidīpanī contra los 84 documentos:
+  `docs/paradigmas/paradigmas-en-otras-fuentes.md`. Lo que falta en la
+  página: los **monosílabos** (thī, dhī, bhū, kha, go…), **bodhi/nābhi** con
+  contracciones, **dhātu** masculino, una ficha de **adjetivo** (dīgha),
+  arahanta/mahanta, y notas sobre el compuesto en rāja/sakha/atta. El Nyāsa
+  no declina nada. Decide el IEBH.
