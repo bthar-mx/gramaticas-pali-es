@@ -191,3 +191,16 @@ los compuestos con el modelo kāraka, tulyādhikaraṇa espejado, lo que no es
 de Nandisena, las erratas del PDF corregidas). **Sin revisar**, como el Nāma
 y el Kāraka ingleses.
 
+## 10. Conmutador de idioma ES | EN
+
+Pedido del IEBH: un botón más cuidado que la pastilla con la sigla suelta
+(que además salía subrayada, como enlace que es). Ahora es un conmutador de
+dos segmentos junto al botón del tema: `#lang-btn` con dos `span.lang-seg`,
+el de la lengua en curso relleno con el acento (`lang-cur`) y el otro como
+destino; sin subrayado; el otro segmento se ilumina al pasar el cursor. En
+las páginas de capítulo lo pinta `generar_capitulo.py` (sigue siendo un
+enlace a la otra página, con el ancla); en los índices, el JS de
+`generar_indices.py`. Estilos en `site/assets/pali.css` (más la variante
+compacta bajo 720 px). Los recursos (solucionador, verbo…) tienen su propio
+botón `#en-btn` y no se han tocado.
+

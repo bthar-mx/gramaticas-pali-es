@@ -394,11 +394,18 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
   var TITULOS = {{ es: {titulo_json}, en: {lang_en_json} }};
   var l = document.createElement('button');
   l.id = 'lang-btn'; l.type = 'button';
+  /* Dos segmentos, ES | EN: el de la lengua en curso va relleno (sesión
+     60; mismo dibujo que en las páginas de capítulo). */
+  var sES = document.createElement('span'), sEN = document.createElement('span');
+  sES.className = sEN.className = 'lang-seg';
+  sES.textContent = 'ES'; sEN.textContent = 'EN';
+  l.appendChild(sES); l.appendChild(sEN);
   function pinta() {{
     var en = document.body.classList.contains('en');
     document.documentElement.lang = en ? 'en' : 'es';
     document.title = en ? TITULOS.en : TITULOS.es;
-    l.textContent = en ? 'ES' : 'EN';
+    sES.classList.toggle('lang-cur', !en);
+    sEN.classList.toggle('lang-cur', en);
     l.setAttribute('aria-label', en ? 'Ver en español' : 'View in English');
   }}
   try {{ if (localStorage.getItem('pali_lang') === 'en') document.body.classList.add('en'); }} catch (e) {{}}

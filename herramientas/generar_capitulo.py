@@ -1140,10 +1140,17 @@ def render(cap, meta, notas):
             "" if es_en else "en/", meta["obra_slug"], meta["slug"])
         alt_html = ('<link href="{0}" hreflang="{1}" rel="alternate"/>'
                     .format(alt_url, otra["lang"]))
+        # Conmutador de dos segmentos, ES | EN: el de la lengua en curso va
+        # relleno y el otro es el destino (sesión 60; antes era una pastilla
+        # con sólo la sigla de la otra lengua).
         lang_btn = ('<a aria-label="{2}" href="{0}" id="lang-btn" '
                     'onclick="try{{localStorage.setItem(\'pali_lang\',\'{1}\')}}'
-                    'catch(e){{}};this.href=\'{0}\'+location.hash">{3}</a>'
-                    .format(alt_url, otra["lang"], L["lang_btn_aria"], L["lang_btn"]))
+                    'catch(e){{}};this.href=\'{0}\'+location.hash">'
+                    '<span class="lang-seg{4}">ES</span>'
+                    '<span class="lang-seg{5}">EN</span></a>'
+                    .format(alt_url, otra["lang"], L["lang_btn_aria"], L["lang_btn"],
+                            " lang-cur" if L["lang"] == "es" else "",
+                            " lang-cur" if L["lang"] == "en" else ""))
         # La elección viaja con el lector (clave «pali_lang», la misma de la
         # portada y los recursos): si eligió la otra lengua, se le lleva a la
         # otra página, con su ancla. Pulsar el botón cambia la elección.
