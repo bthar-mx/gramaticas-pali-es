@@ -5,7 +5,7 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | Pāḷi | Español | Nota | Fijado en |
 | ---- | ------- | ---- | --------- |
 | — | **secuencia** | La cadena de pasos de una operación de sandhi (`loka aggo → lok a aggo → lokaggo`). **No** «derivación»: en gramática pāḷi la derivación es la formación de palabras — *taddhita*, *kita* —, y usar la misma palabra para las dos cosas confunde al lector. | /recursos/sandhi/ v1.6 |
-| *taddhita* | derivado nominal | Aquí sí «derivación», en su sentido propio. | Índice de Kaccāyana |
+| *taddhita* | derivado secundario | Aquí sí «derivación», en su sentido propio. Antes «derivado nominal»; corregido por el IEBH en la revisión del Samāsa (§317: «samāsa-taddhit’-ākhyāta-kitakānaṃ»), en pareja con kitaka = derivado primario. | Índice de Kaccāyana; Samāsa, IEBH sesión 59 — Kacc. §317 |
 | *ālapana* | vocativo | | Nāma, §193 (vía §57) |
 | *upapada* | miembro precedente | | Nāma, §79 |
 | *parapada* | miembro siguiente | Correlato de *upapada*. | Nāma, §222 |
@@ -175,6 +175,31 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *sasaṃyoga* | (forma) con consonante conjunta | Sección Sasaṃyoganādesarāsi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §729, §732, §752, §753 |
 | *dhātvantavikāra* | alteración de la final de la raíz | Sección; dhātvanta entró en la sesión 58. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §714, §733 |
 | *paccayavikāra* | alteración del sufijo | Sección Paccayavikārarāsi. | cosecha Niruttidīpanī, s. 58, IEBH 2026-09-05 — Nirutti. §733, §763 |
+| *samāsa* | compuesto | Pāḷi sin traducir con la glosa entre paréntesis en la primera aparición, modelo kāraka: «recibe el nombre “samāsa” (compuesto)». En prosa corrida, «compuesto». | Samāsa, IEBH sesión 59 — Kacc. §316 |
+| *abyayībhāva* | compuesto adverbial | Modelo kāraka: «“abyayībhāva” (compuesto adverbial)». Nandisena: adverbial compound. | Samāsa, IEBH sesión 59 — Kacc. §319 |
+| *kammadhāraya* | compuesto adjetivo | **No «adjetival»** (fallo del IEBH, sesión 59). Modelo kāraka: «“kammadhāraya” (compuesto adjetivo)». | Samāsa, IEBH sesión 59 — Kacc. §324 |
+| *digu* | compuesto numérico | **No «numeral»** (fallo del IEBH, sesión 59). Modelo kāraka: «“digu” (compuesto numérico)». | Samāsa, IEBH sesión 59 — Kacc. §325 |
+| *tappurisa* | compuesto determinativo | Modelo kāraka: «“tappurisa” (compuesto determinativo)». | Samāsa, IEBH sesión 59 — Kacc. §326 |
+| *kitaka* | derivado primario | Pareja de taddhita = derivado secundario. | Samāsa, IEBH sesión 59 — Kacc. §317 |
+| *yuttattha* | significado conectado | Nota 1 del Samāsa: dos significados, (1) el significado conectado y (2) las palabras que tienen sus significados conectados. | Samāsa, IEBH sesión 59 — Kacc. §316 |
+| *tulyādhikaraṇa* | que se refiere a la misma cosa / misma localización / mismo locus | Espeja el inglés de Nandisena en cada pasaje: «misma cosa» (§324), «misma localización» (§328), «mismo locus» (§330–§332). Decisión del IEBH, sesión 59; el pāḷi entre paréntesis la primera vez. | Samāsa, IEBH sesión 59 — Kacc. §324, §328, §330 |
+| *tulyādhikaraṇabahubbīhi* / *bhinnādhikaraṇabahubbīhi* | compuesto relativo que tiene / que no tiene la misma localización | Las dos clases de bahubbīhi de §328. | Samāsa, IEBH sesión 59 — Kacc. §328 |
+| *-gabbha* | que contiene un … | «dvanda-kammadhāraya-gabbho»: que contiene un compuesto copulativo y un compuesto adjetivo. | Samāsa, IEBH sesión 59 — Kacc. §328 |
+| *bhāsitapuma* | que indicó masculino [en el pasado] |  | Samāsa, IEBH sesión 59 — Kacc. §331 |
+| *samuccaya* | colección | «Nāmānaṃ samuccayo dvando». | Samāsa, IEBH sesión 59 — Kacc. §329 |
+| *brāhmaṇa* | brahmán (pl. brahmanes) |  | Samāsa, IEBH sesión 59 — Kacc. §316 |
+| *khattiya* | noble | khattiyakaññā = «muchacha noble». | Samāsa, IEBH sesión 59 — Kacc. §324 |
+| *gahapatika* | dueño de casa | Antes propuesto «cabeza de familia» (sesión 13); fallado «dueño de casa». | Samāsa, IEBH sesión 59 — Kacc. §316 |
+| *vasala* | paria |  | Samāsa, IEBH sesión 59 — Kacc. §326 |
+| *samatha* | tranquilidad |  | Samāsa, IEBH sesión 59 — Kacc. §322 |
+| *vipassanā* | introspección |  | Samāsa, IEBH sesión 59 — Kacc. §322 |
+| *makuṭa* | cubrecabezas |  | Samāsa, IEBH sesión 59 — Kacc. §328 |
+| *kūṭa* | cúspide |  | Samāsa, IEBH sesión 59 — Kacc. §328 |
+| *pañcavassa* | cinco temporadas de lluvias |  | Samāsa, IEBH sesión 59 — Kacc. §326 |
+| *pūḷī* | manojo |  | Samāsa, IEBH sesión 59 — Kacc. §326 |
+| *hīna* | inferior |  | Samāsa, IEBH sesión 59 — Kacc. §323 |
+| — | **Éste / Ésta** (demostrativos con tilde) | Uso del IEBH en el Samāsa («Éste es un compuesto relativo…»); no se regulariza a la ortografía sin tilde. | Samāsa, IEBH sesión 59 — Kacc. §328 |
+| — | **Y** para el «ca» en las glosas de título | «Y las inflexiones de esos se eliden» (§317), «Y hay la forma natural…» (§318). | Samāsa, IEBH sesión 59 — Kacc. §317 |
 
 ## En discusión
 

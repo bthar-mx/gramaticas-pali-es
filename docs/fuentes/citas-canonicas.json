@@ -13,6 +13,13 @@
    "aplicadas": 97,
    "pendientes": 2,
    "reconstruccion": true
+  },
+  {
+   "capitulo": "samasa",
+   "detectadas": 99,
+   "aplicadas": 99,
+   "pendientes": 0,
+   "reconstruccion": true
   }
  ],
  "citas": {
@@ -1170,6 +1177,506 @@
      "motivo": "sin ancla única en su sutta"
     }
    ]
+  },
+  "samasa": {
+   "aplicadas": [
+    {
+     "sutta": 316,
+     "ancla": "kathinadussaṃ",
+     "cita": "(Vin. iii, 352)"
+    },
+    {
+     "sutta": 316,
+     "ancla": "kathinadussaṃ āgantukabhattaṃ",
+     "cita": "(Vin. iii, 460)"
+    },
+    {
+     "sutta": 316,
+     "ancla": "kathinadussaṃ āgantukabhattaṃ jīvitindriyaṃ",
+     "cita": "(Abhi. i, 20, 168)"
+    },
+    {
+     "sutta": 316,
+     "ancla": "kathinadussaṃ āgantukabhattaṃ jīvitindriyaṃ samaṇabrāhmaṇā",
+     "cita": "(D. i, 6; M. i, 114-5)"
+    },
+    {
+     "sutta": 316,
+     "ancla": "kabhattaṃ jīvitindriyaṃ samaṇabrāhmaṇā sāriputtamoggallānā",
+     "cita": "(Vin. iii, 50; M. ii, 119)"
+    },
+    {
+     "sutta": 316,
+     "ancla": "samaṇabrāhmaṇā sāriputtamoggallānā brāhmaṇagahapatikā",
+     "cita": "(A. i, 386; ii, 26)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "kathinadussaṃ",
+     "cita": "(Vin. iii, 352)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "kathinadussaṃ āgantukabhattaṃ",
+     "cita": "(Vin. iii, 460)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "vāsiṭṭho",
+     "cita": "(D. iii, 66; M. ii, 407)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "vāsiṭṭho venateyyo",
+     "cita": "(Khu. v, 204)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "vāsiṭṭho venateyyo caggahaṇam avadhāraṇatthaṃ pabhaṅkaro",
+     "cita": "(Khu. i, 430)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "venateyyo caggahaṇam avadhāraṇatthaṃ pabhaṅkaro amantandado",
+     "cita": "(S. i, 29)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "venateyyo caggahaṇam avadhāraṇatthaṃ pabhaṅkaro amantandado medhaṅkaro",
+     "cita": "(Khu. iv, 381)"
+    },
+    {
+     "sutta": 317,
+     "ancla": "caggahaṇam avadhāraṇatthaṃ pabhaṅkaro amantandado medhaṅkaro dīpaṅkaro",
+     "cita": "(Khu. iv, 323-381)"
+    },
+    {
+     "sutta": 318,
+     "ancla": "cakkhusotaṃ",
+     "cita": "(Khu. i, 211)"
+    },
+    {
+     "sutta": 318,
+     "ancla": "cakkhusotaṃ mukhanāsikaṃ rājaputto",
+     "cita": "(Khu. iii, 205)"
+    },
+    {
+     "sutta": 318,
+     "ancla": "cakkhusotaṃ mukhanāsikaṃ rājaputto rājapuriso",
+     "cita": "(A. i, 170)"
+    },
+    {
+     "sutta": 319,
+     "ancla": "abhāvo nimmakasaṃ vuḍḍhānaṃ paṭipāṭi yathāvuḍḍhaṃ",
+     "cita": "(VinA. i, 10)"
+    },
+    {
+     "sutta": 319,
+     "ancla": "yathāvuḍḍhaṃ ye ye vuḍḍhā vā yathāvuḍḍhaṃ",
+     "cita": "(VinA. i, 10)"
+    },
+    {
+     "sutta": 319,
+     "ancla": "vā yathāvuḍḍhaṃ jīvassa yattako paricchedo yāvajīvaṃ",
+     "cita": "(Vin. i, 27; iii, 63)"
+    },
+    {
+     "sutta": 319,
+     "ancla": "adhikicca pavattanti te dhammā ti adhicittaṃ",
+     "cita": "(Vin. iii, 278; A. i, 232)"
+    },
+    {
+     "sutta": 319,
+     "ancla": "dhammā ti adhicittaṃ pabbatassa tiro tiropabbataṃ",
+     "cita": "(D. i, 73; M. i, 41; A. i, 170)"
+    },
+    {
+     "sutta": 321,
+     "ancla": "tayo siṅgā tisiṅgaṃ catasso disā catuddisaṃ",
+     "cita": "(D. i, 243)"
+    },
+    {
+     "sutta": 321,
+     "ancla": "catasso disā catuddisaṃ pañca indriyāni pañcindriyaṃ",
+     "cita": "(A. i, 468)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "yathā cakkhu ca sotañ ca cakkhusotaṃ",
+     "cita": "(Khu. i, 211)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "pāṇyaṅgatthe saṅkho ca paṇavo ca saṅkhapaṇavaṃ",
+     "cita": "(D. i, 75)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "saṅkhapaṇavaṃ gītañ ca vāditañ ca gītavāditaṃ",
+     "cita": "(D. i, 5)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "tūriyaṅgatthe phālo ca pācanañ ca phālapācanaṃ",
+     "cita": "(S. i, 175; Khu. i, 291; SuttanipataA. 132)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "yugañ ca naṅgalañ ca yuganaṅgalaṃ",
+     "cita": "(S. i, 175; Khu. i, 291; SuttanipataA. 132)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "yoggaṅgatthe asi ca cammañ ca asicammaṃ",
+     "cita": "(M. i, 121; A. ii, 82)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "asicammaṃ dhanu ca kalāpo ca dhanukalāpaṃ",
+     "cita": "(M. i, 121; A. ii, 82)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "ahi ca nakulo ca ahinakulaṃ",
+     "cita": "(DhA. i, 32)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "biḷāramūsikaṃ kāko ca ulūko ca kākolūkaṃ",
+     "cita": "(DhA. i, 32)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "vividhaviruddhatthe sīlañ ca paññāṇañ ca sīlapaññāṇaṃ",
+     "cita": "(A. ii, 26)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "sīlapaññāṇaṃ samatho ca vipassanā ca samathavipassanaṃ",
+     "cita": "(AbhA. i, 240)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "samathavipassanaṃ vijjā ca caraṇañ ca vijjācaraṇaṃ",
+     "cita": "(A. ii, 2)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "kimatthaṃ dāsī ca dāso ca dāsidāsaṃ",
+     "cita": "(D. i, 5; M. ii, 366; Khu. vii, 37)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "itthipumaṃ patto ca cīvarañ ca pattacīvaraṃ",
+     "cita": "(Vin. i, 11; iii, 130)"
+    },
+    {
+     "sutta": 322,
+     "ancla": "pattacīvaraṃ chattañ ca upāhanā ca chattupāhanaṃ",
+     "cita": "(Vin. ii, 451; DhA. i, 241)"
+    },
+    {
+     "sutta": 323,
+     "ancla": "ajo ca eḷako ca ajeḷakaṃ ajeḷakā",
+     "cita": "(D. i, 5; M. i, 217; A. i, 351)"
+    },
+    {
+     "sutta": 323,
+     "ancla": "vā hiraññañ ca suvaṇṇañ ca hiraññasuvaṇṇaṃ",
+     "cita": "(D. i, 108; M. ii, 258)"
+    },
+    {
+     "sutta": 323,
+     "ancla": "kimatthaṃ sāvajjañ ca anavajjañ ca sāvajjānavajjaṃ",
+     "cita": "(A. i, 126)"
+    },
+    {
+     "sutta": 323,
+     "ancla": "vā hīnañ ca paṇītañ ca hīnapaṇītaṃ",
+     "cita": "(A. i, 126)"
+    },
+    {
+     "sutta": 323,
+     "ancla": "vā kaṇho ca sukko ca kaṇhasukkaṃ",
+     "cita": "(A. i, 553)"
+    },
+    {
+     "sutta": 324,
+     "ancla": "ca so puriso cā ti mahāpuriso",
+     "cita": "(A. i, 346; Khu. i, 64)"
+    },
+    {
+     "sutta": 324,
+     "ancla": "ca so sappo cā ti kaṇhasappo",
+     "cita": "(Vin. i, 24)"
+    },
+    {
+     "sutta": 324,
+     "ancla": "ca sā kaññā cā ti khattiyakaññā",
+     "cita": "(M. i, 122; A. i, 526)"
+    },
+    {
+     "sutta": 325,
+     "ancla": "tayo daṇḍā tidaṇḍaṃ catasso disā catuddisaṃ",
+     "cita": "(D. i, 234)"
+    },
+    {
+     "sutta": 325,
+     "ancla": "catasso disā catuddisaṃ pañca indriyāni pañcindriyaṃ",
+     "cita": "(A. i, 468)"
+    },
+    {
+     "sutta": 326,
+     "ancla": "na brāhmaṇo abrāhmaṇo",
+     "cita": "(D. iii, 67)"
+    },
+    {
+     "sutta": 326,
+     "ancla": "na vasalo avasalo na bhikkhu abhikkhu",
+     "cita": "(Vin. ii, 412)"
+    },
+    {
+     "sutta": 327,
+     "ancla": "bhūmiṃ gato bhūmigato",
+     "cita": "(M. ii, 258; S. i, 102)"
+    },
+    {
+     "sutta": 327,
+     "ancla": "issarena kataṃ issarakataṃ sallena viddho sallaviddho",
+     "cita": "(M. ii, 92; Khu. vii, 4)"
+    },
+    {
+     "sutta": 327,
+     "ancla": "sallena viddho sallaviddho kathinassa dussaṃ kathinadussaṃ",
+     "cita": "(Vin. iii, 352)"
+    },
+    {
+     "sutta": 327,
+     "ancla": "kathinassa dussaṃ kathinadussaṃ āgantukassa bhattaṃ āgantukabhattaṃ",
+     "cita": "(Vin. iii, 406)"
+    },
+    {
+     "sutta": 327,
+     "ancla": "corā bhayaṃ corabhayaṃ rañño putto rājaputto",
+     "cita": "(D. i, 49; Khu. iii, 205)"
+    },
+    {
+     "sutta": 327,
+     "ancla": "dhaññānaṃ rāsi dhaññarāsi rūpe saññā rūpasaññā",
+     "cita": "(A. iii, 211)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "indriyāni anena samaṇena so 'yaṃ jitindriyo",
+     "cita": "(VimānaA. 262)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "parimaṇḍalo yassa rājakumārassa so 'yaṃ nigrodhaparimaṇḍalo",
+     "cita": "(D. ii, 15; DA. ii, 40; D. iii, 118)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "bhūto yo bhagavā so 'yaṃ cakkhubhūto",
+     "cita": "(M. i, 157; MA. i, 380)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "vaṇṇo yassa bhagavato so 'yaṃ suvaṇṇavaṇṇo",
+     "cita": "(D. ii, 15; DA. ii, 38; JA. i, 79)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "saro yassa bhagavato so 'yaṃ brahmassaro",
+     "cita": "(D. ii, 16; DA. ii, 42)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "catasso disā yassa so 'yaṃ catuddiso",
+     "cita": "(A. ii, 119; Khu. i, 286)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "dasa balāni yassa so 'yaṃ dasabalo",
+     "cita": "(Khu. iii, 373)"
+    },
+    {
+     "sutta": 328,
+     "ancla": "ñāṇaṃ yassa tathāgatassa so 'yaṃ anantañāṇo",
+     "cita": "(Khu. iii, 373)"
+    },
+    {
+     "sutta": 329,
+     "ancla": "candimā ca sūriyo ca candimasūriyā",
+     "cita": "(D. i, 226; ii, 255; iii, 71; M. i, 404; A. i, 306)"
+    },
+    {
+     "sutta": 329,
+     "ancla": "candimasūriyā samaṇo ca brāhmaṇo ca samaṇabrāhmaṇā",
+     "cita": "(A. i, 363; DA. i, 95)"
+    },
+    {
+     "sutta": 329,
+     "ancla": "samaṇabrāhmaṇā sāriputto ca moggallāno ca sāriputtamoggallānā",
+     "cita": "(Vin. iii, 50; M. ii, 119)"
+    },
+    {
+     "sutta": 329,
+     "ancla": "sāriputtamoggallānā brāhmaṇo ca gahapatiko ca brāhmaṇagahapatikā",
+     "cita": "(D. i, 104; M. i, 354)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca so puriso cā ti mahāpuriso",
+     "cita": "(D. iii, 118; A. i, 346; A. ii, 349; Khu. i, 64)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca sā devī cā ti mahādevī",
+     "cita": "(JA. i, 483)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca taṃ balañ cā ti mahābalaṃ",
+     "cita": "(Khu. iii, 55)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca so nāgo cā ti mahānāgo",
+     "cita": "(D. ii, 207)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca sā nadī cā ti mahānadī",
+     "cita": "(A. ii, 474; S. iii, 44)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca taṃ dhanañ cā ti mahādhanaṃ",
+     "cita": "(DhA. i, 151)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca so puñño cā ti mahāpuñño",
+     "cita": "(Vin. i, 55)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ca taṃ phalañ cā ti mahapphalaṃ",
+     "cita": "(A. i, 161)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "taṃ phalañ cā ti mahapphalaṃ mahabbalaṃ",
+     "cita": "(Khu. iii, 55)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "cā ti mahapphalaṃ mahabbalaṃ evaṃ mahaddhanaṃ",
+     "cita": "(Khu. iii, 49)"
+    },
+    {
+     "sutta": 330,
+     "ancla": "ti mahapphalaṃ mahabbalaṃ evaṃ mahaddhanaṃ mahabbhayaṃ",
+     "cita": "(Khu. i, 395)"
+    },
+    {
+     "sutta": 332,
+     "ancla": "brāhmaṇadārikā khattiyakaññā",
+     "cita": "(M. i, 122; A. i, 526)"
+    },
+    {
+     "sutta": 332,
+     "ancla": "brāhmaṇadārikā khattiyakaññā khattiyakumārikā",
+     "cita": "(JA. i, 489)"
+    },
+    {
+     "sutta": 333,
+     "ancla": "na brāhmaṇo abrāhmaṇo",
+     "cita": "(D. iii, 67)"
+    },
+    {
+     "sutta": 333,
+     "ancla": "na brāhmaṇo abrāhmaṇo avasalo abhikkhu",
+     "cita": "(Vin. ii, 412)"
+    },
+    {
+     "sutta": 334,
+     "ancla": "na asso anasso anissaro",
+     "cita": "(VinA. i, 339)"
+    },
+    {
+     "sutta": 334,
+     "ancla": "na asso anasso anissaro anariyo",
+     "cita": "(Vin. iii, 14)"
+    },
+    {
+     "sutta": 336,
+     "ancla": "anappakatthesu pi kvaci kā hoti kāpurisā",
+     "cita": "(Khu. ii, 157; PetavatthuA. 117)"
+    },
+    {
+     "sutta": 337,
+     "ancla": "devānaṃ rājā devarājo devarājā",
+     "cita": "(S. i, 236-7)"
+    },
+    {
+     "sutta": 337,
+     "ancla": "sakhā devasakho devasakhā pañca ahāni pañcāhaṃ",
+     "cita": "(Vin. iv, 112)"
+    },
+    {
+     "sutta": 337,
+     "ancla": "devasakho devasakhā pañca ahāni pañcāhaṃ sattāhaṃ",
+     "cita": "(M. ii, 242; Khu. i, 87)"
+    },
+    {
+     "sutta": 337,
+     "ancla": "pañca ahāni pañcāhaṃ sattāhaṃ pañcagavaṃ chattupāhanaṃ",
+     "cita": "(Vin. ii, 451)"
+    },
+    {
+     "sutta": 337,
+     "ancla": "haṃ sattāhaṃ pañcagavaṃ chattupāhanaṃ upasaradaṃ visālakkho",
+     "cita": "(Khu. vi, 241)"
+    },
+    {
+     "sutta": 341,
+     "ancla": "adhicittaṃ",
+     "cita": "(Vin. iii, 278; A. i, 232, 238)"
+    },
+    {
+     "sutta": 341,
+     "ancla": "adhicittaṃ yathāvuḍḍhaṃ",
+     "cita": "(JA. i, 234; VinA. i, 10)"
+    },
+    {
+     "sutta": 341,
+     "ancla": "adhicittaṃ yathāvuḍḍhaṃ upakumbhaṃ yāvajīvaṃ",
+     "cita": "(Vin. i, 27; iii, 63, 133)"
+    },
+    {
+     "sutta": 341,
+     "ancla": "yathāvuḍḍhaṃ upakumbhaṃ yāvajīvaṃ tiropabbataṃ",
+     "cita": "(D. i, 73; M. i, 41; A. i, 170)"
+    },
+    {
+     "sutta": 341,
+     "ancla": "upakumbhaṃ yāvajīvaṃ tiropabbataṃ tiropākāraṃ",
+     "cita": "(Vin. ii, 348)"
+    },
+    {
+     "sutta": 341,
+     "ancla": "ajīvaṃ tiropabbataṃ tiropākāraṃ tirokuṭṭaṃ",
+     "cita": "(D. i, 74; A. i, 170)"
+    },
+    {
+     "sutta": 343,
+     "ancla": "adhitthi",
+     "cita": "(Vism. i, 344)"
+    }
+   ],
+   "pendientes": []
   }
  }
 }

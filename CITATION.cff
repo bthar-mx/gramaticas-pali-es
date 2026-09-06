@@ -6,12 +6,14 @@ abstract: >-
   Traducción española del Kaccāyana-byākaraṇa, la gramática clásica más
   antigua de la lengua pāḷi, con el texto pāḷi completo, análisis morfológico
   de los ejemplos, notas, glosario terminológico y concordancia con el
-  Padarūpasiddhi y el Saddanīti-Suttamālā. La gramática comprende los tres
-  primeros capítulos completos, 315 suttas: Sandhi-kappa (§1–§51), Nāma-kappa
-  (§52–§270) y Kāraka-kappa (§271–§315), con las 222 referencias canónicas y
-  los 990 tramos de la negrita con que Nandisena señala, dentro del vutti, las
-  letras que cada sutta nombra, restituidos desde la edición base y
-  verificados por reconstrucción. La versión 2.0.0 añade el aparato de
+  Padarūpasiddhi y el Saddanīti-Suttamālā. La gramática comprende los cuatro
+  primeros capítulos completos, 343 suttas: Sandhi-kappa (§1–§51), Nāma-kappa
+  (§52–§270), Kāraka-kappa (§271–§315) y Samāsa-kappa (§316–§343), con las
+  321 referencias canónicas y los 990 tramos de la negrita con que Nandisena
+  señala, dentro del vutti, las letras que cada sutta nombra, restituidos
+  desde la edición base y verificados por reconstrucción. La versión 2.1.0
+  añade el Samāsa-kappa, el capítulo de los compuestos, revisado por el IEBH
+  y con su terminología fijada en el glosario. La versión 2.0.0 añadió el aparato de
   referencia: las 1.698 raíces del Saddanīti-dhātumālā en la edición del
   Venerable U Sīlānanda, con las 643 entradas del Dhātupāṭha y las 154
   estrofas de la Dhātumañjūsā; 84 paradigmas de declinación; las 49 reglas de
@@ -36,8 +38,8 @@ keywords:
 url: "https://gramaticas.buddha-dhamma.net"
 repository-code: "https://github.com/bthar-mx/gramaticas-pali-es"
 license: CC-BY-NC-ND-4.0
-version: "2.0.0"
-date-released: "2026-09-02"
+version: "2.1.0"
+date-released: "2026-09-06"
 doi: "10.5281/zenodo.21948010"
 identifiers:
   - type: doi

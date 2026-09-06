@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+
+<title>Kaccāyana-Byākaraṇaṃ · 4-Samāsa-Kappa</title>
+<meta content="1.0" name="version"/>
+<meta content="2026-09-06" name="version-date"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/pali.css?v=b28c26b1" rel="stylesheet"/>
+</head>
+<body>
+<script>/* Tema guardado (clave compartida con /recursos/sandhi/), antes de pintar. */
+try{var _d=localStorage.getItem('pali_dark');
+if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
+document.body.classList.add('dark');}catch(e){}</script>
+<div id="pbar-wrap"><div id="pbar"></div></div>
+<div id="pbadge"></div>
+<button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
+
+<button aria-label="Volver al inicio" id="top-btn" onclick="volverArriba()" title="Volver al inicio">↑</button>
+<nav aria-label="Tabla de contenidos" id="toc">
+<p class="toc-title">4-Samāsa-Kappa</p><div class="toc-jump-wrap"><input aria-label="Ir a un sutta o filtrar por título" class="toc-jump" id="toc-jump" oninput="filterToc(this.value)" onkeydown="tocJumpKey(event)" placeholder="Ir a §… / filtrar" type="search"/></div><div class="toc-group" id="tocg-1"><button class="toc-kanda toc-kanda-btn" onclick="toggleTocGroup(1)"><span class="toc-caret">▸</span><span>Sattama-Kaṇḍa</span><span class="toc-kanda-range">§316–§343</span></button><div class="toc-group-items"><a class="toc-item" id="toc-s316" onclick="jumpTo('s316')">§316 Nāmānaṃ samāso yuttattho</a><a class="toc-item" id="toc-s317" onclick="jumpTo('s317')">§317 Tesaṃ vibhattiyo lopā ca</a><a class="toc-item" id="toc-s318" onclick="jumpTo('s318')">§318 Pakati c’ assa sarantassa</a><a class="toc-item" id="toc-s319" onclick="jumpTo('s319')">§319 Upasagga-nipātapubbako a…</a><a class="toc-item" id="toc-s320" onclick="jumpTo('s320')">§320 So napuṃsakaliṅgo</a><a class="toc-item" id="toc-s321" onclick="jumpTo('s321')">§321 Diguss’ ekattaṃ</a><a class="toc-item" id="toc-s322" onclick="jumpTo('s322')">§322 Tathā dvande pāṇitūriyay…</a><a class="toc-item" id="toc-s323" onclick="jumpTo('s323')">§323 Vibhāsā rukkha-tiṇa-pasu…</a><a class="toc-item" id="toc-s324" onclick="jumpTo('s324')">§324 Dvipade tulyādhikaraṇe k…</a><a class="toc-item" id="toc-s325" onclick="jumpTo('s325')">§325 Saṅkhyāpubbo digu</a><a class="toc-item" id="toc-s326" onclick="jumpTo('s326')">§326 Ubhe tappurisā</a><a class="toc-item" id="toc-s327" onclick="jumpTo('s327')">§327 Amādayo parapadebhi</a><a class="toc-item" id="toc-s328" onclick="jumpTo('s328')">§328 Aññapadatthesu bahubbīhi</a><a class="toc-item" id="toc-s329" onclick="jumpTo('s329')">§329 Nāmānaṃ samuccayo dvando</a><a class="toc-item" id="toc-s330" onclick="jumpTo('s330')">§330 Mahataṃ mahā tulyādhikar…</a><a class="toc-item" id="toc-s331" onclick="jumpTo('s331')">§331 Itthiyaṃ bhāsitapum’-itt…</a><a class="toc-item" id="toc-s332" onclick="jumpTo('s332')">§332 Kammadhārayasaññe ca</a><a class="toc-item" id="toc-s333" onclick="jumpTo('s333')">§333 Attaṃ nassa tappurise</a><a class="toc-item" id="toc-s334" onclick="jumpTo('s334')">§334 Sare an</a><a class="toc-item" id="toc-s335" onclick="jumpTo('s335')">§335 Kad kussa</a><a class="toc-item" id="toc-s336" onclick="jumpTo('s336')">§336 Kā ’ppatthesu ca</a><a class="toc-item" id="toc-s337" onclick="jumpTo('s337')">§337 Kvaci samāsantagatānam a…</a><a class="toc-item" id="toc-s338" onclick="jumpTo('s338')">§338 Nadimhā ca</a><a class="toc-item" id="toc-s339" onclick="jumpTo('s339')">§339 Jāyāya tudaṃ-jāni</a><a class="toc-item" id="toc-s340" onclick="jumpTo('s340')">§340 Dhanumh’ ā ca</a><a class="toc-item" id="toc-s341" onclick="jumpTo('s341')">§341 Aṃ vibhattīnam akārantā…</a><a class="toc-item" id="toc-s342" onclick="jumpTo('s342')">§342 Saro rasso napuṃsake</a><a class="toc-item" id="toc-s343" onclick="jumpTo('s343')">§343 Aññasmā lopo ca</a></div></div>
+</nav>
+<div id="main">
+<div id="inner">
+<div class="page-hdr">
+<a class="idx-back" href="../">← Kaccāyana-Byākaraṇaṃ</a>
+<div class="hdr-marca"><span class="marca-arbol"></span></div>
+<div class="hdr-grammar">Kacc<span class="dia">ā</span>yana-By<span class="dia">ā</span>kara<span class="dia">ṇ</span>a<span class="dia">ṃ</span></div>
+<div class="hdr-sub">Gramática de Kaccāyana</div>
+<div class="hdr-chapter">4-Samāsa-Kappa · 4-Capítulo de compuestos</div>
+<div class="hdr-meta">Edición bilingüe Pāḷi–Español · 28 suttas · 1 sección<span aria-label="Versión 1.0 · 6 de septiembre de 2026 · Primera edición: §316–§343, los 28 suttas del Samāsa-kappa (séptima sección del Nāma-kappa), revisados por el IEBH, con las 99 referencias canónicas de la edición base restituidas por reconstrucción y las 21 notas de Nandisena." class="version-badge" data-tip="Versión 1.0 · 6 de septiembre de 2026 · Primera edición: §316–§343, los 28 suttas del Samāsa-kappa (séptima sección del Nāma-kappa), revisados por el IEBH, con las 99 referencias canónicas de la edición base restituidas por reconstrucción y las 21 notas de Nandisena.">v1.0<time datetime="2026-09-06">2026-09-06</time></span></div>
+</div>
+<div class="search-wrap">
+<input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="Buscar sutta (pāḷi o español)…" type="search"/>
+<svg class="search-icon" fill="none" height="14" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20" width="14"><circle cx="8" cy="8" r="5"></circle><path d="M13 13l4 4"></path></svg>
+<div id="search-count"></div>
+</div>
+<div class="chapter-nav">
+<a class="chapter-nav-btn" href="../karaka/"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M12 5l-5 5 5 5"></path></svg><span><span class="chapter-nav-label">Capítulo anterior</span>3-Kāraka-Kappa</span></a>
+<div class="chapter-nav-title"><strong>4-Samāsa-Kappa</strong><br/><span style="font-size:11px">Capítulo 4 de 8</span></div>
+<button class="chapter-nav-btn disabled"><span><span class="chapter-nav-label">Capítulo siguiente</span>5-Taddhita-Kappa</span><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M8 5l5 5-5 5"></path></svg></button>
+</div>
+
+<div class="controls">
+<button class="ctrl-btn" onclick="window.print()">Imprimir / PDF</button>
+<div class="ctrl-sep"></div>
+<button class="ctrl-btn" onclick="expandAll()">Expandir todo</button>
+<button class="ctrl-btn" onclick="collapseAll()">Colapsar todo</button>
+<div class="ctrl-sep"></div>
+<button class="ctrl-btn" onclick="changeFont(-1)" title="Reducir texto">A−</button>
+<span id="font-lbl">100%</span>
+<button class="ctrl-btn" onclick="changeFont(1)" title="Aumentar texto">A+</button>
+<span class="done-count" id="done-count" title="Suttas estudiados">0 / 28 estudiados</span>
+<button class="epub-btn" onclick="exportEpub()">EPUB</button>
+</div>
+<div class="kanda-nav" id="kanda-nav"><span class="kanda-nav-label">Kaṇḍa:</span><button aria-label="Ir a la séptima sección (Sattama-Kaṇḍa, §316–§343)" class="kanda-nav-btn" id="knav-1" onclick="jumpKanda(1)" data-tip="Ir a la séptima sección (Sattama-Kaṇḍa, §316–§343)">Sattama</button><input aria-label="Ir al sutta número…" class="kanda-jump" id="kanda-jump" onkeydown="kandaJumpKey(event)" placeholder="§…" type="search"/></div><div class="kanda-section">
+<div class="kanda-heading" id="kanda-1">Sattama-Kaṇḍa<span class="kanda-es">· Séptima sección</span></div>
+<div class="sutta-card" id="s316">
+<div class="sutta-header" onclick="toggleCard('s316')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">316</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">331</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Nāmānaṃ samāso yuttattho <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(675)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Nāmānaṃ + samāso + yuttattho = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Tesaṃ nāmānaṃ payujjamānapadatthānaṃ yo yuttattho, so samāsasañño hoti.</p><p class="pali-para">Kathinadussaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 352)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 352</span></span>; āgantukabhattaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 460)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 460</span></span>; jīvitindriyaṃ <span class="ref-tip"><span class="cita-term">(Abhi. i, 20, 168)</span><span class="ref-tip-box">Abhidhamma-piṭaka</span></span>; samaṇabrāhmaṇā <span class="ref-tip"><span class="cita-term">(D. i, 6; M. i, 114-5)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya</span></span>; Sāriputtamoggallānā <span class="ref-tip"><span class="cita-term">(Vin. iii, 50; M. ii, 119)</span><span class="ref-tip-box">Vinaya-piṭaka · Majjhima-nikāya</span></span>; brāhmaṇagahapatikā <span class="ref-tip"><span class="cita-term">(A. i, 386; ii, 26)</span><span class="ref-tip-box">Aṅguttara-nikāya</span></span>.</p><p class="pali-para"><strong>Nāmānam</strong> iti kimatthaṃ? Devadatto pacati. Yaññadatto pacati.</p><p class="pali-para"><strong>Yuttattho</strong> ti kimatthaṃ? Bhaṭo rañño; putto Devadattassa.</p><p class="pali-para"><strong>Samāsa</strong> icc anena kvattho? Kvaci samāsantagatānam akāranto.</p></div><div class="gloss">El significado conectado de nombres [recibe el nombre] “samāsa” (compuesto).</div><div class="vutti">El significado conectado<span class="fn-tip"><span class="fn-sup">1</span><span class="fn-tip-box">Aquí “yuttattha” tiene dos significados: (1) el significado conectado y (2) las palabras que tienen sus significados conectados.</span></span> de esos nombres que tienen las palabras y los significados conectados: ese recibe el nombre “samāsa” (compuesto).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s316seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s316seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Kathinadussaṃ</strong> (tela para Kathina).</li><li><strong>Āgantukabhattaṃ</strong> (comida para el huésped).</li><li><strong>Jīvitindriyaṃ</strong> (facultad vital).</li><li><strong>Samaṇabrāhmaṇā</strong> (ascetas y brahmanes).</li><li><strong>Sāriputtamoggallānā</strong> (Sāriputta y Moggallāna).</li><li><strong>Brāhmaṇagahapatikā</strong> (brahmanes y dueños de casa).</li></ol><p class="rest-para">¿Cuál es la finalidad de decir “nāmānaṃ” (de nombres)? Para impedir la formación de compuestos con los que no son nombres, como en los siguientes ejemplos: Devadatto pacati (Devadatta cocina). Yaññadatto pacati (Yaññadatta cocina).</p><p class="rest-para">¿Cuál es la finalidad de decir “yuttattho” (significado conectado)? Para impedir la formación de compuestos cuando las palabras no están conectadas en significado, como en los siguientes ejemplos: Bhaṭo rañño (soldado del rey); putto Devadattassa (hijo de Devadatta).</p><p class="rest-para">¿Cuál es la utilidad del nombre “samāsa” (compuesto)? Para el uso del nombre “samāsa” en el sutta “Kvaci samāsantagatānam akāranto” (<a class="sutta-xref" href="#s337" onclick="jumpOpen('s337')" data-tip="§337 · Kvaci samāsantagatānam akāranto — A veces hay ‘a’ de la vocal final de los que están al final de un compuesto.">§337</a>). A veces hay ‘a’ de la vocal final [de los nombres] que están al final de un compuesto.</p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s316fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s316fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">1</span><span class="fn-text">Aquí “yuttattha” tiene dos significados: (1) el significado conectado y (2) las palabras que tienen sus significados conectados.</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s316')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s316"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s316')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s316')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s317">
+<div class="sutta-header" onclick="toggleCard('s317')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">317</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">332</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Tesaṃ vibhattiyo lopā ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(676-7)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Tesaṃ + vibhattiyo + lopā + ca = 4 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Tesaṃ yuttatthānaṃ samāsānaṃ vibhattiyo lopā ca honti.</p><p class="pali-para">Kathinadussaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 352)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 352</span></span>; āgantukabhattaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 460)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 460</span></span>.</p><p class="pali-para"><strong>Tesaṃ</strong>gahaṇena samāsa-taddhit’-ākhyāta-kitakānaṃ vibhatti-paccaya-pad’-akkhar’-āgamā ca lopā honti.<span class="fn-tip"><span class="fn-sup">2</span><span class="fn-tip-box">Vibhatti -pa- gamānañ ca lopā honti (Sī, K).</span></span> Vāsiṭṭho <span class="ref-tip"><span class="cita-term">(D. iii, 66; M. ii, 407)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya</span></span>; venateyyo <span class="ref-tip"><span class="cita-term">(Khu. v, 204)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo v, página 204</span></span>.</p><p class="pali-para"><strong>Ca</strong>ggahaṇam avadhāraṇatthaṃ. Pabhaṅkaro <span class="ref-tip"><span class="cita-term">(Khu. i, 430)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 430</span></span>; amantandado <span class="ref-tip"><span class="cita-term">(S. i, 29)</span><span class="ref-tip-box">Saṃyutta-nikāya · tomo i, página 29</span></span>; Medhaṅkaro <span class="ref-tip"><span class="cita-term">(Khu. iv, 381)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iv, página 381</span></span>; Dīpaṅkaro <span class="ref-tip"><span class="cita-term">(Khu. iv, 323-381)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iv, página 323-381</span></span>.</p></div><div class="gloss">Y las inflexiones de esos se eliden.</div><div class="vutti">Y las inflexiones de esos compuestos que tienen el significado conectado se eliden.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s317seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s317seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Kathinadussaṃ</strong> (una tela para el Kathina).</li><li><strong>Āgantukabhattaṃ</strong> (una comida para el huésped).</li></ol><p class="rest-para">Al tomar “tesaṃ”, también se eliden las inflexiones (vibhatti), los sufijos (paccaya), las palabras (pada), las sílabas (akkhara) y las inserciones (āgama) de los compuestos (samāsa), los derivados secundarios (taddhita), los verbos (ākhyāta) y los derivados primarios (kitaka).</p><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Vāsiṭṭho</strong>.</li><li><strong>Venateyyo</strong>.</li></ol><p class="rest-para">El tomar “ca” es para restringir [el alcance de este sutta].</p><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Pabhaṅkaro</strong> (hacedor de luz (el sol)).</li><li><strong>Amantandado</strong> (dador de lo Inmortal).</li><li><strong>Medhaṅkaro</strong>.</li><li><strong>Dīpaṅkaro</strong>.</li></ol></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s317fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s317fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">2</span><span class="fn-text">Vibhatti -pa- gamānañ ca lopā honti (Sī, K).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s317')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s317"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s317')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s317')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s318">
+<div class="sutta-header" onclick="toggleCard('s318')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">318</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">333</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Pakati c’ assa sarantassa <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(693)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Pakati + ca + assa + sarantassa = 4 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Luttāsu vibhattīsu assa sarantassa liṅgassa pakatirūpāni honti.</p><p class="pali-para">Cakkhusotaṃ <span class="ref-tip"><span class="cita-term">(Khu. i, 211)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 211</span></span>; mukhanāsikaṃ; rājaputto <span class="ref-tip"><span class="cita-term">(Khu. iii, 205)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iii, página 205</span></span>; rājapuriso <span class="ref-tip"><span class="cita-term">(A. i, 170)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 170</span></span>.</p></div><div class="gloss">Y hay la forma natural de los que terminan en vocal.</div><div class="vutti">Cuando las inflexiones de esa base que termina en vocal se han elidido, permanecen las formas naturales.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s318seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s318seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Cakkhusotaṃ</strong> (ojo y oído).</li><li><strong>Mukhanāsikaṃ</strong> (boca y nariz).</li><li><strong>Rājaputto</strong> (hijo del rey).</li><li><strong>Rājapuriso</strong> (hombre del rey).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s318')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s318"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s318')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s318')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s319">
+<div class="sutta-header" onclick="toggleCard('s319')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">319</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">330</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Upasagga-nipātapubbako abyayībhāvo <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(696)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Upasagga-nipātapubbako + abyayībhāvo = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Upasagga-nipāta</strong>pubbako samāso <strong>abyayībhāva</strong>sañño hoti.</p><p class="pali-para">Nagarassa samīpe pavattati kathā iti upanagaraṃ; darathānaṃ abhāvo niddarathaṃ; makasānaṃ<span class="fn-tip"><span class="fn-sup">3</span><span class="fn-tip-box">Makasā ti sabbam akkhikā <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(MA. i, 360)</span><span class="ref-tip-box">Majjhima-nikāya-aṭṭhakathā · tomo i, página 360</span></span></span><span class="ref-tip-box">Majjhima-nikāya-aṭṭhakathā · tomo i, página 360</span></span>. Andhamakasā <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(Khu. i, 282)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 282</span></span></span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 282</span></span>. Makasā ti makasā yeva <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(SuttanipātaA. i, 30; Visuddhi. i, 30)</span><span class="ref-tip-box">Suttanipāta-aṭṭhakathā · Visuddhimagga</span></span></span><span class="ref-tip-box">Suttanipāta-aṭṭhakathā · Visuddhimagga</span></span>.</span></span> abhāvo nimmakasaṃ; vuḍḍhānaṃ paṭipāṭi yathāvuḍḍhaṃ <span class="ref-tip"><span class="cita-term">(VinA. i, 10)</span><span class="ref-tip-box">Vinaya-aṭṭhakathā · tomo i, página 10</span></span>; ye ye vuḍḍhā vā yathāvuḍḍhaṃ <span class="ref-tip"><span class="cita-term">(VinA. i, 10)</span><span class="ref-tip-box">Vinaya-aṭṭhakathā · tomo i, página 10</span></span>; jīvassa yattako paricchedo yāvajīvaṃ <span class="ref-tip"><span class="cita-term">(Vin. i, 27; iii, 63)</span><span class="ref-tip-box">Vinaya-piṭaka</span></span>; cittam adhikicca pavattanti te dhammā ti adhicittaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 278; A. i, 232)</span><span class="ref-tip-box">Vinaya-piṭaka · Aṅguttara-nikāya</span></span>; pabbatassa tiro tiropabbataṃ <span class="ref-tip"><span class="cita-term">(D. i, 73; M. i, 41; A. i, 170)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya · Aṅguttara-nikāya</span></span>; sotassa pati pavattati nāvā iti patisotaṃ; pāsādassa anto antopāsādaṃ.</p><p class="pali-para"><strong>Abyayībhāvam</strong> icc anena kvattho? Aṃvibhattīnam akārantā abyayībhāvā.</p></div><div class="gloss">Ese que tiene delante un prefijo o una partícula es un “abyayībhāva” (compuesto adverbial).<span class="fn-tip"><span class="fn-sup">4</span><span class="fn-tip-box">“Abyayībhāva” significa devenir como un indeclinable (abyaya).</span></span></div><div class="vutti">El compuesto que tiene delante un prefijo o una partícula recibe el nombre “abyayībhāva” (compuesto adverbial).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s319seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s319seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Nagarassa samīpe pavattati kathā iti <strong>upanagaraṃ</strong> (la conversación que surge cerca de la ciudad).</li><li>Darathānaṃ abhāvo <strong>niddarathaṃ</strong> (ausencia de aflicción).</li><li>Makasānaṃ abhāvo <strong>nimmakasaṃ</strong> (ausencia de mosquitos).</li><li>Vuḍḍhānaṃ paṭipāṭi <strong>yathāvuḍḍhaṃ</strong> (según el orden de los mayores, según la antigüedad).</li><li>Ye ye vuḍḍhā vā <strong>yathāvuḍḍhaṃ</strong> (o cualesquiera que sean los mayores, [según ellos]).</li><li>Jīvassa yattako paricchedo <strong>yāvajīvaṃ</strong> (hasta donde llega la vida).</li><li>Cittam adhikicca pavattanti te dhammā ti <strong>adhicittaṃ</strong> (esos dhammas que existen con referencia a la mente).</li><li>Pabbatassa tiro <strong>tiropabbataṃ</strong> (a través de la montaña).</li><li>Sotassa pati pavattati nāvā iti <strong>patisotaṃ</strong> (el barco que va contra la corriente).</li><li>Pāsādassa anto <strong>antopāsādaṃ</strong> (dentro de la mansión).</li></ol><p class="rest-para">¿Cuál es la utilidad del nombre “abyayībhāva” (compuesto adverbial)? Para el uso del nombre “abyayībhāva” en el sutta “Aṃvibhattīnam akārantā abyayībhāvā” (<a class="sutta-xref" href="#s341" onclick="jumpOpen('s341')" data-tip="§341 · Aṃ vibhattīnam akārantā abyayībhāvā — Después de un compuesto adverbial que termina en ‘a’, las inflexiones devienen ‘aṃ’.">§341</a>). Después de un compuesto adverbial que termina en ‘a’, las inflexiones devienen ‘aṃ’.</p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="2" onclick="toggleSeq('s319fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (2)
+      </button>
+<div class="collapsible-content" id="s319fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">3</span><span class="fn-text">Makasā ti sabbam akkhikā <span class="ref-tip"><span class="cita-term">(MA. i, 360)</span><span class="ref-tip-box">Majjhima-nikāya-aṭṭhakathā · tomo i, página 360</span></span>. Andhamakasā <span class="ref-tip"><span class="cita-term">(Khu. i, 282)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 282</span></span>. Makasā ti makasā yeva <span class="ref-tip"><span class="cita-term">(SuttanipātaA. i, 30; Visuddhi. i, 30)</span><span class="ref-tip-box">Suttanipāta-aṭṭhakathā · Visuddhimagga</span></span>.</span></div><div class="fn-item"><span class="fn-num">4</span><span class="fn-text">“Abyayībhāva” significa devenir como un indeclinable (abyaya).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s319')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s319"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s319')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s319')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s320">
+<div class="sutta-header" onclick="toggleCard('s320')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">320</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">335</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">So napuṃsakaliṅgo <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(698)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[So + napuṃsakaliṅgo = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">So abyayībhāvasamāso napuṃsakaliṅgo ’va daṭṭhabbo.</p><p class="pali-para">Kumārīsu adhikicca pavattati kathā iti adhikumāri; vadhuyā samīpe pavattati kathā iti upavadhu; gaṅgāya samīpe pavattati kathā iti upagaṅgaṃ; maṇikāya samīpe pavattati kathā iti upamaṇikaṃ.</p></div><div class="gloss">Éste tiene el género neutro.</div><div class="vutti">Ese compuesto adverbial se debe considerar como [perteneciente] al género neutro.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s320seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s320seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Kumārīsu adhikicca pavattati kathā iti <strong>adhikumāri</strong> (la conversación que surge con referencia a las doncellas).</li><li>Vadhuyā samīpe pavattati kathā iti <strong>upavadhu</strong> (la conversación que surge cerca de la nuera).</li><li>Gaṅgāya samīpe pavattati kathā iti <strong>upagaṅgaṃ</strong> (la conversación que surge cerca del Ganges).</li><li>Maṇikāya samīpe pavattati kathā iti <strong>upamaṇikaṃ</strong> (la conversación que surge cerca de la vasija grande).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s320')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s320"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s320')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s320')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s321">
+<div class="sutta-header" onclick="toggleCard('s321')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">321</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">349</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Diguss’ ekattaṃ <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(699)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Digussa + ekattaṃ = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Digussa samāsassa ekattaṃ hoti, napuṃsakaliṅgattañ ca.</p><p class="pali-para">Tayo lokā tilokaṃ; tayo daṇḍā tidaṇḍaṃ; tīṇi nayanāni tinayanaṃ; tayo siṅgā tisiṅgaṃ. Catasso disā catuddisaṃ <span class="ref-tip"><span class="cita-term">(D. i, 243)</span><span class="ref-tip-box">Dīgha-nikāya · tomo i, página 243</span></span>; pañca indriyāni pañcindriyaṃ <span class="ref-tip"><span class="cita-term">(A. i, 468)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 468</span></span>.</p></div><div class="gloss">Hay el estado de uno de un “digu” (compuesto numérico).</div><div class="vutti">Hay el estado de uno (singular) de un compuesto “digu” (compuesto numérico) y el estado del género neutro.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s321seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s321seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Tayo lokā <strong>tilokaṃ</strong> (tres mundos).</li><li>Tayo daṇḍā <strong>tidaṇḍaṃ</strong> (tres bastones).</li><li>Tīṇi nayanāni <strong>tinayanaṃ</strong> (tres ojos).</li><li>Tayo siṅgā <strong>tisiṅgaṃ</strong> (tres cuernos).</li><li>Catasso disā <strong>catuddisaṃ</strong> (cuatro direcciones).</li><li>Pañca indriyāni <strong>pañcindriyaṃ</strong> (cinco facultades).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s321')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s321"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s321')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s321')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s322">
+<div class="sutta-header" onclick="toggleCard('s322')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">322</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">359</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(700)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Tathā + dvande + pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgattha-ādīnaṃ + ca = 4 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Tathā dvande samāse <strong>pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgattha</strong> icc evamādīnaṃ ekattaṃ hoti, napuṃsakaliṅgattañ ca.</p><p class="pali-para">Taṃ yathā? Cakkhu ca sotañ ca cakkhusotaṃ <span class="ref-tip"><span class="cita-term">(Khu. i, 211)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 211</span></span>; mukhañ ca nāsikā ca mukhanāsikaṃ; chavi ca maṃsañ ca lohitañ ca chavimaṃsalohitaṃ. Evaṃ <strong>pāṇyaṅgatthe</strong>.</p><p class="pali-para">Saṅkho ca paṇavo ca saṅkhapaṇavaṃ <span class="ref-tip"><span class="cita-term">(D. i, 75)</span><span class="ref-tip-box">Dīgha-nikāya · tomo i, página 75</span></span>; gītañ ca vāditañ ca gītavāditaṃ <span class="ref-tip"><span class="cita-term">(D. i, 5)</span><span class="ref-tip-box">Dīgha-nikāya · tomo i, página 5</span></span>; daddari ca ḍiṇḍimo ca daddariḍiṇḍimaṃ.<span class="fn-tip"><span class="fn-sup">5</span><span class="fn-tip-box">Daddaridindimaṃ (Sad.). Daddarideṇḍimaṃ (Sī).</span></span> Evaṃ <strong>tūriyaṅgatthe</strong>.</p><p class="pali-para">Phālo ca pācanañ ca phālapācanaṃ <span class="ref-tip"><span class="cita-term">(S. i, 175; Khu. i, 291; SuttanipataA. 132)</span><span class="ref-tip-box">Saṃyutta-nikāya · Khuddaka-nikāya · Suttanipāta-aṭṭhakathā</span></span>;<span class="fn-tip"><span class="fn-sup">6</span><span class="fn-tip-box">Phālapājanaṃ (K).</span></span> yugañ ca naṅgalañ ca yuganaṅgalaṃ <span class="ref-tip"><span class="cita-term">(S. i, 175; Khu. i, 291; SuttanipataA. 132)</span><span class="ref-tip-box">Saṃyutta-nikāya · Khuddaka-nikāya · Suttanipāta-aṭṭhakathā</span></span>.<span class="fn-tip"><span class="fn-sup">7</span><span class="fn-tip-box">Phālapājanaṃ (K).</span></span> Evaṃ <strong>yoggaṅgatthe</strong>.</p><p class="pali-para">Asi ca cammañ ca asicammaṃ <span class="ref-tip"><span class="cita-term">(M. i, 121; A. ii, 82)</span><span class="ref-tip-box">Majjhima-nikāya · Aṅguttara-nikāya</span></span>; dhanu ca kalāpo ca dhanukalāpaṃ <span class="ref-tip"><span class="cita-term">(M. i, 121; A. ii, 82)</span><span class="ref-tip-box">Majjhima-nikāya · Aṅguttara-nikāya</span></span>; hatthī ca asso ca hatthi-assaṃ; ratho ca pattiko ca rathapattikaṃ. Evaṃ <strong>senaṅgatthe</strong>.</p><p class="pali-para">Ḍaṃsā ca makasā ca ḍaṃsamakasaṃ, kuntho ca kipilliko ca kunthakipillikaṃ, kīṭo ca sarīsapo ca kīṭasarīsapaṃ. Evaṃ <strong>khuddajantukatthe</strong>.</p><p class="pali-para">Ahi ca nakulo ca ahinakulaṃ <span class="ref-tip"><span class="cita-term">(DhA. i, 32)</span><span class="ref-tip-box">Dhammapada-aṭṭhakathā · tomo i, página 32</span></span>; biḷāro ca mūsiko ca biḷāramūsikaṃ; kāko ca ulūko ca kākolūkaṃ <span class="ref-tip"><span class="cita-term">(DhA. i, 32)</span><span class="ref-tip-box">Dhammapada-aṭṭhakathā · tomo i, página 32</span></span>. Evaṃ <strong>vividhaviruddhatthe</strong>.</p><p class="pali-para">Sīlañ ca paññāṇañ ca sīlapaññāṇaṃ <span class="ref-tip"><span class="cita-term">(A. ii, 26)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo ii, página 26</span></span>; samatho ca vipassanā ca samathavipassanaṃ <span class="ref-tip"><span class="cita-term">(AbhA. i, 240)</span><span class="ref-tip-box">Abhidhamma-aṭṭhakathā · tomo i, página 240</span></span>; vijjā ca caraṇañ ca vijjācaraṇaṃ <span class="ref-tip"><span class="cita-term">(A. ii, 2)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo ii, página 2</span></span>. Evaṃ <strong>visabhāgatthe</strong>.</p><p class="pali-para"><strong>Ādiggahaṇaṃ</strong> kimatthaṃ? Dāsī ca dāso ca dāsidāsaṃ <span class="ref-tip"><span class="cita-term">(D. i, 5; M. ii, 366; Khu. vii, 37)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya · Khuddaka-nikāya</span></span>; itthī ca pumā ca itthipumaṃ; patto ca cīvarañ ca pattacīvaraṃ <span class="ref-tip"><span class="cita-term">(Vin. i, 11; iii, 130)</span><span class="ref-tip-box">Vinaya-piṭaka</span></span>; chattañ ca upāhanā ca chattupāhanaṃ <span class="ref-tip"><span class="cita-term">(Vin. ii, 451; DhA. i, 241)</span><span class="ref-tip-box">Vinaya-piṭaka · Dhammapada-aṭṭhakathā</span></span>; tikañ ca catukkañ ca tikacatukkaṃ; veno ca rathakāro ca venarathakāraṃ; sākuṇiko ca māgaviko ca sākuṇikamāgavikaṃ; dīgho ca majjhimo ca dīghamajjhimaṃ icc evamādi.</p></div><div class="gloss">Asimismo, en un compuesto copulativo (dvanda) hay también [singular y género neutro] de las partes de los seres (pāṇi-aṅga), los instrumentos musicales (tūriya-aṅga), las partes de un vehículo (yogga-aṅga), las partes de un ejército (senaṅga), las criaturas pequeñas (khuddajantuka), los diversos enemigos (vividhaviruddha), el significado opuesto (visabhāgattha), etcétera (ādi).</div><div class="vutti">Asimismo, en un compuesto copulativo hay singular y género neutro de las partes de los seres, los instrumentos musicales, las partes de un vehículo, las partes de un ejército, las criaturas pequeñas, los diversos enemigos y el significado opuesto, etcétera.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s322seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s322seq"><div class="rest-content"><p class="rest-para">¿Cómo qué?</p><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Cakkhu ca sotañ ca <strong>cakkhusotaṃ</strong> (ojo y oído).</li><li>Mukhañ ca nāsikā ca <strong>mukhanāsikaṃ</strong> (boca y nariz).</li><li>Chavi ca maṃsañ ca lohitañ ca <strong>chavimaṃsalohitaṃ</strong> (piel, carne y sangre).</li></ol><p class="rest-para">Así en el significado de partes de los seres.</p><ol class="seq-list seq-ejemplos"><li>Saṅkho ca paṇavo ca <strong>saṅkhapaṇavaṃ</strong> (concha y tambor pequeño).</li><li>Gītañ ca vāditañ ca <strong>gītavāditaṃ</strong> (canto y música instrumental).</li><li>Daddari ca ḍiṇḍimo ca <strong>daddariḍiṇḍimaṃ</strong> (tambores).</li></ol><p class="rest-para">Así en el significado de instrumentos musicales.</p><ol class="seq-list seq-ejemplos"><li>Phālo ca pācanañ ca <strong>phālapācanaṃ</strong> (reja de arado y aguijada).</li><li>Yugañ ca naṅgalañ ca <strong>yuganaṅgalaṃ</strong> (yugo y arado).</li></ol><p class="rest-para">Así en el significado de partes de un vehículo.</p><ol class="seq-list seq-ejemplos"><li>Asi ca cammañ ca <strong>asicammaṃ</strong> (espada y escudo).</li><li>Dhanu ca kalāpo ca <strong>dhanukalāpaṃ</strong> (arco y carcaj).</li><li>Hatthī ca asso ca <strong>hatthi-assaṃ</strong> (elefante y caballo).</li><li>Ratho ca pattiko ca <strong>rathapattikaṃ</strong> (carro y soldado).</li></ol><p class="rest-para">Así en el significado de partes de un ejército.</p><ol class="seq-list seq-ejemplos"><li>Daṃsā ca makasā ca <strong>daṃsamakasaṃ</strong> (mosca y mosquito).</li><li>Kuntho ca kipilliko ca <strong>kunthakipillikaṃ</strong> (hormiga y hormiga blanca).</li><li>Kīṭo ca sarīsapo ca <strong>kīṭasarīsapaṃ</strong> (polilla y serpiente).</li></ol><p class="rest-para">Así en el significado de criaturas pequeñas.</p><ol class="seq-list seq-ejemplos"><li>Ahi ca nakulo ca <strong>ahinakulaṃ</strong> (serpiente y mangosta).</li><li>Biḷāro ca mūsiko ca <strong>biḷāramūsikaṃ</strong> (gato y ratón).</li><li>Kāko ca ulūko ca <strong>kākolūkaṃ</strong> (cuervo y búho).</li></ol><p class="rest-para">Así en el significado de diversos enemigos.</p><ol class="seq-list seq-ejemplos"><li>Sīlañ ca paññāṇañ ca <strong>sīlapaññāṇaṃ</strong> (virtud y sabiduría).</li><li>Samatho ca vipassanā ca <strong>samathavipassanaṃ</strong> (tranquilidad e introspección).</li><li>Vijjā ca caraṇañ ca <strong>vijjācaraṇaṃ</strong> (visión y conducta).</li></ol><p class="rest-para">Así en el significado de opuestos.</p><p class="rest-para">¿Cuál es la finalidad de tomar “ādi” (etcétera)? Para incluir los siguientes: Dāsī ca dāso ca <strong>dāsidāsaṃ</strong> (esclava y esclavo); itthī ca pumā ca <strong>itthipumaṃ</strong> (mujer y hombre); patto ca cīvarañ ca <strong>pattacīvaraṃ</strong> (cuenco y túnica); chattañ ca upāhanā ca <strong>chattupāhanaṃ</strong> (sombrilla y sandalias); tikañ ca catukkañ ca <strong>tikacatukkaṃ</strong> (tríada y tétrada); veno ca rathakāro ca <strong>venarathakāraṃ</strong> (tejedor de bambú y constructor de carros); sākuṇiko ca māgaviko ca <strong>sākuṇikamāgavikaṃ</strong> (pajarero y cazador); dīgho ca majjhimo ca <strong>dīghamajjhimaṃ</strong> (largo y mediano), etcétera.</p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="3" onclick="toggleSeq('s322fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (3)
+      </button>
+<div class="collapsible-content" id="s322fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">5</span><span class="fn-text">Daddaridindimaṃ (Sad.). Daddarideṇḍimaṃ (Sī).</span></div><div class="fn-item"><span class="fn-num">6</span><span class="fn-text">Phālapājanaṃ (K).</span></div><div class="fn-item"><span class="fn-num">7</span><span class="fn-text">Phālapājanaṃ (K).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s322')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s322"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s322')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s322')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s323">
+<div class="sutta-header" onclick="toggleCard('s323')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">323</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">360</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(701)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Vibhāsā + rukkha-tiṇa-pasu-dhana-dhañña-janapada-ādīnaṃ + ca = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Rukkha tiṇa pasu dhana dhañña janapada</strong> icc evamādīnaṃ vibhāsā ekattaṃ hoti, napuṃsakaliṅgattañ ca dvande samāse.</p><p class="pali-para">Assattho ca kapītano<span class="fn-tip"><span class="fn-sup">8</span><span class="fn-tip-box">Gaddabhaṇḍo kapītano (Abhidhana. 562-Gāthā), kapi calane, tano, dīgho āgamassa. Kandarālo, pilakkho pi (Dhāna-Ṭi. 375). Kapitthana (Sī. Moga. iii, 19). Kapitthanāti pilakkhā <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(JA. ii, 403)</span><span class="ref-tip-box">Jātaka-aṭṭhakathā · tomo ii, página 403</span></span></span><span class="ref-tip-box">Jātaka-aṭṭhakathā · tomo ii, página 403</span></span> nigrodhā ca kapitthanā <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(Khu. v, 90; vi, 353, 354, 361)</span><span class="ref-tip-box">Khuddaka-nikāya</span></span></span><span class="ref-tip-box">Khuddaka-nikāya</span></span>. “Kapittho” ti pāṭho pi pāvacane atthi, tathā pi so idha nādhippeto. Ambā kapitthā panasā <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(Khu. vi, 339)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 339</span></span></span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 339</span></span>, ambā jambū kapitthā ca <span class="ref-tip"><span class="cita-term"><span class="ref-tip"><span class="cita-term">(Khu. vi, 343)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 343</span></span></span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 343</span></span>. Kabiṭṭho ca kapitthotha (Abhidhāna. 551-Gāthā).</span></span> ca assatthakapītanaṃ, assatthakapītanā vā. Usīrañ ca bīraṇañ ca usīrabīraṇaṃ, usīrabīraṇā vā. Ajo ca eḷako ca ajeḷakaṃ, ajeḷakā <span class="ref-tip"><span class="cita-term">(D. i, 5; M. i, 217; A. i, 351)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya · Aṅguttara-nikāya</span></span> vā. Hiraññañ ca suvaṇṇañ ca hiraññasuvaṇṇaṃ <span class="ref-tip"><span class="cita-term">(D. i, 108; M. ii, 258)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya</span></span>, hiraññasuvaṇṇā vā. Sāli ca yavo ca sāliyavaṃ, sāliyavā vā. Kāsī ca Kosalā ca Kāsikosalaṃ, Kāsikosalā vā.</p><p class="pali-para"><strong>Ādi</strong>ggahaṇaṃ kimatthaṃ? Sāvajjañ ca anavajjañ ca sāvajjānavajjaṃ <span class="ref-tip"><span class="cita-term">(A. i, 126)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 126</span></span>, sāvajjānavajjā vā. Hīnañ ca paṇītañ ca hīnapaṇītaṃ <span class="ref-tip"><span class="cita-term">(A. i, 126)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 126</span></span>, hīnapaṇītā vā. Kaṇho ca sukko ca kaṇhasukkaṃ <span class="ref-tip"><span class="cita-term">(A. i, 553)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 553</span></span>, kaṇhasukkā vā.</p></div><div class="gloss">Y facultativamente de “rukkha” (árbol), “tiṇa” (hierba), “pasu” (animal), “dhana” (riqueza), “dhañña” (grano), “janapada” (distrito), etcétera.</div><div class="vutti">En un compuesto copulativo, [las palabras] “rukkha” (árbol), “tiṇa” (hierba), “pasu” (animal), “dhana” (riqueza), “dhañña” (grano), “janapada” (distrito), etc., facultativamente son singulares y neutras.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s323seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s323seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Assattho ca kapītano ca <strong>assatthakapītanaṃ</strong>, <strong>assatthakapītanā</strong> vā (baniano y manzano de madera).</li><li>Usīrañ ca bīraṇañ ca <strong>usīrabīraṇaṃ</strong>, <strong>usīrabīraṇā</strong> vā (raíz fragante y hierba).</li><li>Ajo ca eḷako ca <strong>ajeḷakaṃ</strong>, <strong>ajeḷakā</strong> vā (cabra y cabra salvaje).</li><li>Hiraññañ ca suvaṇṇañ ca <strong>hiraññasuvaṇṇaṃ</strong>, <strong>hiraññasuvaṇṇā</strong> vā (plata y oro).</li><li>Sāli ca yavo ca <strong>sāliyavaṃ</strong>, <strong>sāliyavā</strong> vā (arroz y cebada).</li><li>Kāsī ca Kosalā ca <strong>Kāsikosalaṃ</strong>, <strong>Kāsikosalā</strong> vā (Kāsī y Kosalā).</li></ol><p class="rest-para">¿Cuál es la finalidad de tomar “ādi”? Para permitir la aplicación de esta regla en otros casos: Sāvajjañ ca anavajjañ ca <strong>sāvajjānavajjaṃ</strong>, <strong>sāvajjānavajjā</strong> vā (con falta y sin falta); hīnañ ca paṇītañ ca <strong>hīnapaṇītaṃ</strong>, <strong>hīnapaṇītā</strong> vā (inferior y excelente); kaṇho ca sukko ca <strong>kaṇhasukkaṃ</strong>, <strong>kaṇhasukkā</strong> vā (negro y blanco).</p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s323fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s323fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">8</span><span class="fn-text">Gaddabhaṇḍo kapītano (Abhidhana. 562-Gāthā), kapi calane, tano, dīgho āgamassa. Kandarālo, pilakkho pi (Dhāna-Ṭi. 375). Kapitthana (Sī. Moga. iii, 19). Kapitthanāti pilakkhā <span class="ref-tip"><span class="cita-term">(JA. ii, 403)</span><span class="ref-tip-box">Jātaka-aṭṭhakathā · tomo ii, página 403</span></span> nigrodhā ca kapitthanā <span class="ref-tip"><span class="cita-term">(Khu. v, 90; vi, 353, 354, 361)</span><span class="ref-tip-box">Khuddaka-nikāya</span></span>. “Kapittho” ti pāṭho pi pāvacane atthi, tathā pi so idha nādhippeto. Ambā kapitthā panasā <span class="ref-tip"><span class="cita-term">(Khu. vi, 339)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 339</span></span>, ambā jambū kapitthā ca <span class="ref-tip"><span class="cita-term">(Khu. vi, 343)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 343</span></span>. Kabiṭṭho ca kapitthotha (Abhidhāna. 551-Gāthā).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s323')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s323"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s323')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s323')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s324">
+<div class="sutta-header" onclick="toggleCard('s324')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">324</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">339</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Dvipade tulyādhikaraṇe kammadhārayo <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(702)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Dvipade + tulyādhikaraṇe + kammadhārayo = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Dve padāni tulyādhikaraṇāni yadā samasyante, tadā so samāso <strong>kammadhāraya</strong>sañño hoti.</p><p class="pali-para">Mahanto ca so puriso cā ti mahāpuriso <span class="ref-tip"><span class="cita-term">(A. i, 346; Khu. i, 64)</span><span class="ref-tip-box">Aṅguttara-nikāya · Khuddaka-nikāya</span></span>; kaṇho ca so sappo cā ti kaṇhasappo <span class="ref-tip"><span class="cita-term">(Vin. i, 24)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo i, página 24</span></span>; nīlañ ca taṃ uppalañ cā ti nīluppalaṃ; lohitañ ca taṃ candanañ cā ti lohitacandanaṃ; brāhmaṇī ca sā dārikā cā ti brāhmaṇadārikā; khattiyā ca sā kaññā cā ti khattiyakaññā <span class="ref-tip"><span class="cita-term">(M. i, 122; A. i, 526)</span><span class="ref-tip-box">Majjhima-nikāya · Aṅguttara-nikāya</span></span>.</p><p class="pali-para"><strong>Kammadhāraya</strong> icc anena kvattho? Kammadhārayasaññe ca.</p></div><div class="gloss">Cuando dos palabras que se refieren a la misma cosa [forman un compuesto], hay un “kammadhāraya” (compuesto adjetivo).</div><div class="vutti">Cuando dos palabras que se refieren a la misma cosa (tulyādhikaraṇa) forman un compuesto, entonces ese compuesto recibe el nombre “kammadhāraya” (compuesto adjetivo).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s324seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s324seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Mahanto ca so puriso cā ti <strong>mahāpuriso</strong> (gran hombre).</li><li>Kaṇho ca so sappo cā ti <strong>kaṇhasappo</strong> (serpiente negra (cobra)).</li><li>Nīlañ ca taṃ uppalañ cā ti <strong>nīluppalaṃ</strong> (lirio azul).</li><li>Lohitañ ca taṃ candanañ cā ti <strong>lohitacandanaṃ</strong> (sándalo rojo).</li><li>Brāhmaṇī ca sā dārikā cā ti <strong>brāhmaṇadārikā</strong> (muchacha brahmán).</li><li>Khattiyā ca sā kaññā cā ti <strong>khattiyakaññā</strong> (muchacha noble).</li></ol><p class="rest-para">¿Cuál es la utilidad del nombre “kammadhāraya” (compuesto adjetivo)? Para el uso del nombre “kammadhāraya” en el sutta “Kammadhārayasaññe ca” (<a class="sutta-xref" href="#s332" onclick="jumpOpen('s332')" data-tip="§332 · Kammadhārayasaññe ca — Y en un compuesto adjetivo.">§332</a>). Y en un compuesto adjetivo.</p></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s324')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s324"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s324')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s324')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s325">
+<div class="sutta-header" onclick="toggleCard('s325')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">325</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">348</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Saṅkhyāpubbo digu <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(703)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Saṅkhyāpubbo + digu = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Saṅkhyāpubbo kammadhārayasamāso <strong>digu</strong>sañño hoti.</p><p class="pali-para">Tīṇi malāni timalaṃ; tīṇi phalāni tiphalaṃ; tayo lokā tilokaṃ; tayo daṇḍā tidaṇḍaṃ; catasso disā catuddisaṃ <span class="ref-tip"><span class="cita-term">(D. i, 234)</span><span class="ref-tip-box">Dīgha-nikāya · tomo i, página 234</span></span>; pañca indriyāni pañcindriyaṃ <span class="ref-tip"><span class="cita-term">(A. i, 468)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 468</span></span>; satta Godāvariyo sattagodāvaraṃ.</p><p class="pali-para"><strong>Digu</strong> icc anena kvattho? Diguss’ ekattaṃ.</p></div><div class="gloss">[El compuesto adjetivo] que tiene un numeral como primer miembro es un “digu” (compuesto numérico).</div><div class="vutti">El compuesto adjetivo que tiene un numeral como primer miembro recibe el nombre “digu” (compuesto numérico).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s325seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s325seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Tīṇi malāni <strong>timalaṃ</strong> (tres impurezas).</li><li>Tīṇi phalāni <strong>tiphalaṃ</strong> (tres frutos).</li><li>Tayo lokā <strong>tilokaṃ</strong> (tres mundos).</li><li>Tayo daṇḍā <strong>tidaṇḍaṃ</strong> (tres bastones).</li><li>Catasso disā <strong>catuddisaṃ</strong> (cuatro direcciones).</li><li>Pañca indriyāni <strong>pañcindriyaṃ</strong> (cinco facultades).</li><li>Satta Godāvariyo <strong>sattagodāvaraṃ</strong> (los siete ríos Godāvarī).</li></ol><p class="rest-para">¿Cuál es la utilidad del nombre “digu” (compuesto numérico)? Para el uso del nombre “digu” en el sutta “Diguss’ ekattaṃ” (<a class="sutta-xref" href="#s321" onclick="jumpOpen('s321')" data-tip="§321 · Diguss’ ekattaṃ — Hay el estado de uno de un “digu” (compuesto numérico).">§321</a>). Hay el estado de uno de un compuesto numérico.</p></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s325')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s325"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s325')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s325')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s326">
+<div class="sutta-header" onclick="toggleCard('s326')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">326</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">341</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Ubhe tappurisā <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(707)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Ubhe + tappurisā = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Ubhe digukammadhārayasamāsā <strong>tappurisa</strong>saññā honti.</p><p class="pali-para">Na brāhmaṇo abrāhmaṇo <span class="ref-tip"><span class="cita-term">(D. iii, 67)</span><span class="ref-tip-box">Dīgha-nikāya · tomo iii, página 67</span></span>; na vasalo avasalo; na bhikkhu abhikkhu <span class="ref-tip"><span class="cita-term">(Vin. ii, 412)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo ii, página 412</span></span>; na pañcavassaṃ apañcavassaṃ; na pañcapūlī apañcapūlī; na sattagodāvaraṃ asattagodāvaraṃ; na dasagavaṃ adasagavaṃ; na pañcagavaṃ apañcagavaṃ.</p><p class="pali-para"><strong>Tappurisa</strong> icc anena kvattho? Attaṃ n’ assa tappurise.</p></div><div class="gloss">Ambos son “tappurisa” (compuestos determinativos).</div><div class="vutti">Ambos, el compuesto numérico y el compuesto adjetivo, reciben el nombre “tappurisa” (compuesto determinativo).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s326seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s326seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Na brāhmaṇo <strong>abrāhmaṇo</strong> (no brahmán).</li><li>Na vasalo <strong>avasalo</strong> (no paria).</li><li>Na bhikkhu <strong>abhikkhu</strong> (no bhikkhu).</li><li>Na pañcavassaṃ <strong>apañcavassaṃ</strong> (no cinco temporadas de lluvias).</li><li>Na pañcapūlī <strong>apañcapūlī</strong> (no cinco manojos).</li><li>Na sattagodāvaraṃ <strong>asattagodāvaraṃ</strong> (no siete ríos Godāvarī).</li><li>Na dasagavaṃ <strong>adasagavaṃ</strong> (no diez vacas).</li><li>Na pañcagavaṃ <strong>apañcagavaṃ</strong> (no cinco vacas).</li></ol><p class="rest-para">¿Cuál es la utilidad del nombre “tappurisa” (compuesto determinativo)? Para el uso del nombre “tappurisa” en el sutta “Attaṃ n’ assa tappurise” (<a class="sutta-xref" href="#s333" onclick="jumpOpen('s333')" data-tip="§333 · Attaṃ nassa tappurise — En un compuesto determinativo, hay ‘a’ de “na”.">§333</a>). En un compuesto determinativo hay ‘a’ de “na”.</p></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s326')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s326"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s326')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s326')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s327">
+<div class="sutta-header" onclick="toggleCard('s327')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">327</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">351</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Amādayo parapadebhi <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(704)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Aṃ-ādayo + parapadebhi = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Tā <strong>am</strong>ādayo nāmehi parapadebhi yadā samasyante, tadā so samāso <strong>tappurisa</strong>sañño hoti.</p><p class="pali-para">Bhūmiṃ gato bhūmigato <span class="ref-tip"><span class="cita-term">(M. ii, 258; S. i, 102)</span><span class="ref-tip-box">Majjhima-nikāya · Saṃyutta-nikāya</span></span>; sabbarattiṃ sobhaṇo sabbarattisobhaṇo; apāyaṃ gato apāyagato; issarena kataṃ issarakataṃ; sallena viddho sallaviddho <span class="ref-tip"><span class="cita-term">(M. ii, 92; Khu. vii, 4)</span><span class="ref-tip-box">Majjhima-nikāya · Khuddaka-nikāya</span></span>; kathinassa dussaṃ kathinadussaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 352)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 352</span></span>; āgantukassa bhattaṃ āgantukabhattaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 406)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 406</span></span>; methunā apeto methunāpeto; corā bhayaṃ corabhayaṃ; rañño putto rājaputto <span class="ref-tip"><span class="cita-term">(D. i, 49; Khu. iii, 205)</span><span class="ref-tip-box">Dīgha-nikāya · Khuddaka-nikāya</span></span>; Dhaññānaṃ rāsi dhaññarāsi; rūpe saññā rūpasaññā <span class="ref-tip"><span class="cita-term">(A. iii, 211)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo iii, página 211</span></span>; saṃsāre dukkhaṃ saṃsāradukkhaṃ.</p></div><div class="gloss">‘Aṃ’, etc., con los nombres siguientes.</div><div class="vutti">Cuando las [inflexiones] ‘aṃ’, etc., forman un compuesto con los nombres [que son] miembros siguientes, entonces ese compuesto recibe el nombre “tappurisa” (compuesto determinativo).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s327seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s327seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Bhūmiṃ gato <strong>bhūmigato</strong> (ido a la tierra).</li><li>Sabbarattiṃ sobhaṇo <strong>sabbarattisobhaṇo</strong> (hermoso durante toda la noche).</li><li>Apāyaṃ gato <strong>apāyagato</strong> (ido al infierno).</li><li>Issarena kataṃ <strong>issarakataṃ</strong> (hecho por el creador).</li><li>Sallena viddho <strong>sallaviddho</strong> (atravesado por una flecha).</li><li>Kathinassa dussaṃ <strong>kathinadussaṃ</strong> (una tela para Kathina).</li><li>Āgantukassa bhattaṃ <strong>āgantukabhattaṃ</strong> (una comida para el huésped).</li><li>Methunā apeto <strong>methunāpeto</strong> (el que se abstiene de la relación sexual).</li><li>Corā bhayaṃ <strong>corabhayaṃ</strong> (temor o peligro del ladrón).</li><li>Rañño putto <strong>rājaputto</strong> (hijo del rey).</li><li>Dhaññānaṃ rāsi <strong>dhaññarāsi</strong> (un montón de grano).</li><li>Rūpe saññā <strong>rūpasaññā</strong> (percepción en la forma).</li><li>Saṃsāre dukkhaṃ <strong>saṃsāradukkhaṃ</strong> (el sufrimiento en el ciclo de renacimientos).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s327')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s327"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s327')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s327')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s328">
+<div class="sutta-header" onclick="toggleCard('s328')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">328</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">352</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Aññapadatthesu bahubbīhi <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(708)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Aññapada-atthesu + bahubbīhi = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Aññesaṃ padānaṃ atthesu dve nāmāni, bahūni nāmāni yadā samasyante, tadā so samāso <strong>bahubbīhi</strong>sañño hoti.</p><p class="pali-para">Āgatā samaṇā imaṃ saṃghārāmaṃ so ’yaṃ āgatasamaṇo, saṃghārāmo. Jitāni indriyāni anena samaṇena so ’yaṃ jitindriyo <span class="ref-tip"><span class="cita-term">(VimānaA. 262)</span><span class="ref-tip-box">Vimānavatthu-aṭṭhakathā</span></span>, samaṇo. Dinno suṅkho yassa rañño so ’yaṃ dinnasuṅkho, rājā. Niggatā janā asmā gāmā so ’yaṃ niggatajano, gāmo. Chinno hattho yassa purisassa so ’yaṃ chinnahattho, puriso. Sampannāni sassāni yasmiṃ janapade so ’yaṃ sampannasasso, janapado.</p><p class="pali-para">Nigrodhassa parimaṇḍalo nigrodhaparimaṇḍalo, nigrodhaparimaṇḍalo iva parimaṇḍalo yo rājakumāro so ’yaṃ nigrodhaparimaṇḍalo. Atha vā nigrodhaparimaṇḍalo iva parimaṇḍalo yassa rājakumārassa so ’yaṃ nigrodhaparimaṇḍalo <span class="ref-tip"><span class="cita-term">(D. ii, 15; DA. ii, 40; D. iii, 118)</span><span class="ref-tip-box">Dīgha-nikāya · Dīgha-nikāya-aṭṭhakathā</span></span>, rājakumāro.</p><p class="pali-para">Cakkhuno bhūto cakkhubhūto, cakkhubhūto iva bhūto yo Bhagavā so ’yaṃ cakkhubhūto <span class="ref-tip"><span class="cita-term">(M. i, 157; MA. i, 380)</span><span class="ref-tip-box">Majjhima-nikāya · Majjhima-nikāya-aṭṭhakathā</span></span>, Bhagavā.</p><p class="pali-para">Suvaṇṇassa vaṇṇo suvaṇṇavaṇṇo, suvaṇṇavaṇṇo viya vaṇṇo yassa Bhagavato so ’yaṃ suvaṇṇavaṇṇo <span class="ref-tip"><span class="cita-term">(D. ii, 15; DA. ii, 38; JA. i, 79)</span><span class="ref-tip-box">Dīgha-nikāya · Dīgha-nikāya-aṭṭhakathā · Jātaka-aṭṭhakathā</span></span>, Bhagavā.</p><p class="pali-para">Brahmuno saro brahmassaro, brahmassaro viya saro yassa Bhagavato so ’yaṃ brahmassaro <span class="ref-tip"><span class="cita-term">(D. ii, 16; DA. ii, 42)</span><span class="ref-tip-box">Dīgha-nikāya · Dīgha-nikāya-aṭṭhakathā</span></span>, Bhagavā.</p><p class="pali-para"><strong>Sayaṃ-patita-paṇṇa-puppha-phala-vāyu-toy’-āhārā</strong> ti<span class="fn-tip"><span class="fn-sup">9</span><span class="fn-tip-box">Sīhaḷakaccāyanapotthakesu “sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā” ti payogato paṭṭhāya kevalaṃ samāsapadāni yeva dissanti, na paṇṇañcātyādīni nibbacanāni. En los libros cingaleses del Kaccāyana, desde el ejemplo “sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā” en adelante solo aparecen las palabras compuestas; no los análisis (nibbacana) como “paṇṇañ ca”, etc.</span></span> paṇṇañ ca pupphañ ca phalañ ca paṇṇapupphaphalāni, sayam eva patitāni sayaṃpatitāni, sayaṃpatitāni ca tāni paṇṇapupphaphalāni ceti sayaṃpatitapaṇṇapupphaphalāni, vāyu ca toyañ ca vāyutoyāni, sayaṃpatitapaṇṇapupphaphalāni ca vāyutoyāni ca, sayaṃpatitapaṇṇapupphaphalavāyutoyāni, sayaṃpatitapaṇṇapupphaphalavāyutoyāni āhārā yesaṃ te sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā, isayo. Yam ettha vattabbaṃ, taṃ heṭṭhā vuttam eva. Ayaṃ pana dvanda-kammadhāraya-gabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para">Atha vā: Sayaṃpatitapaṇṇapupphaphalavāyutoyehi āhārā yesaṃ te sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā. Ayaṃ pana bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Nānā-duma-patita-puppha-vāsita-sānū</strong> ti nānā pakārā dumā nānādumā, nānādumehi patitāni nānādumapatitāni, nānādumapatitāni ca tāni pupphāni ceti nānādumapatitapupphāni, nānādumapatitapupphehi vāsitā nānādumapatitapupphavāsitā, nānādumapatitapupphavāsitā sānū yassa pabbatarājassa so ’yaṃ nānādumapatitapupphavāsitasānu, pabbatarājā. Ayaṃ pana kammadhārayatappurisagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para">Atha vā: Vāsitā sānū vāsitasānu; sāpekkhatte sati pi gamakattā<span class="fn-tip"><span class="fn-sup">10</span><span class="fn-tip-box">Gammakattā (K).</span></span> samāso. Nānādumapatitapupphehi vāsitasānū yassa pabbatarājassa so ’yaṃ nānādumapatitapupphavāsitasānu, pabbatarājā. Ayaṃ pana bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Byālamb’-ambu-dhara-bindu-cumbita-kūṭo</strong> ti ambuṃ dhāretī ti ambudharo, ko so? Pajjunno. Vividhā ālambo byālambo, byālambo ca so ambudharo cā ti byālambambudharo, byālambambudharassa bindū byālambambudharabindū, byālambambudharabindūhi cumbito byālambambudharabinducumbito, byālambambudharabinducumbito kūṭo yassa pabbatarājassa so ’yaṃ byālambambudharabinducumbitakūṭo. Ayaṃ pana kammadhārayatappurisagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para">Atha vā: Cumbito kūṭo cumbitakūṭo, sāpekkhatte sati pi gamakattā samāso. Byālambambudharabindūhi cumbitakūṭo yassa pabbatarājassa so ’yaṃ byālambambudharabinducumbitakūṭo. Ayaṃ pana bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Amita-bala-parakkama-jutī</strong> ti na mitā amitā, balañ ca parakkamo ca juti ca balaparakkamajutiyo, amitā balaparakkamajutiyo yassa so ’yaṃ amitabalaparakkamajuti. Ayaṃ pana kammadhāraya-dvandagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Pīṇor’-akkh’-aṃsa-bāhū</strong> ti uro ca akkhañ ca aṃso ca bāhu ca urakkhaṃsabāhavo, pīṇā urakkhaṃsabāhavo yassa Bhagavato so ’yaṃ pīṇorakkhaṃsabāhu. Ayaṃ pana dvandagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Pīṇa-gaṇḍa-vadana-than’-ūru-jaghanā</strong> ti gaṇḍo ca vadanañ ca thano ca ūru ca jaghanañ ca gaṇḍavadanathanūrujaghanā, pīṇā gaṇḍavadanathanūrujaghanā yassā sā ’yaṃ pīṇagaṇḍavadanathanūrujaghanā. Ayam pi dvandagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Pavara-surāsura-garuḍa-manuja-bhujaga-gandhabba-makuṭa-kūṭa-cumbita-sela-saṃghaṭṭita-caraṇo</strong> ti surā ca asurā ca garuḍā ca manujā ca bhujagā ca gandhabbā ca surāsuragaruḍamanujabhujagagandhabbā, pavarā ca te surāsuragaruḍamanujabhujagagandhabbā ceti pavarasurāsuragaruḍamanujabhujagagandhabbā, pavarasurāsuragaruḍamanujabhujagagandhabbānaṃ makuṭāni pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭāni, pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭānaṃ kūṭāni pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭāni, pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭesu cumbitā pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitā, pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitā ca te selā cā ti pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselā, pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselehi saṃghaṭṭitā pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitā, pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitā caraṇā yassa tathāgatassa so ’yaṃ pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitacaraṇo, tathāgato. Ayaṃ pana dvandakammadhārayatappurisagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para">Atha vā: Saṃghaṭṭitā caraṇā saṃghaṭṭitacaraṇā, sāpekkhatte sati pi gamakattā samāso. Pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselehi saṃghaṭṭitacaraṇā yassa tathāgatassa so ’yaṃ pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitacaraṇo. Ayaṃ pana bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Catuddiso</strong> ti catasso disā yassa so ’yaṃ catuddiso <span class="ref-tip"><span class="cita-term">(A. ii, 119; Khu. i, 286)</span><span class="ref-tip-box">Aṅguttara-nikāya · Khuddaka-nikāya</span></span>, Bhagavā.</p><p class="pali-para"><strong>Pañcakkhū</strong> ti pañca cakkhūni yassa tathāgatassa so ’yaṃ pañcacakkhu, Tathāgato.</p><p class="pali-para"><strong>Dasabalo</strong> ti dasa balāni yassa so ’yaṃ dasabalo <span class="ref-tip"><span class="cita-term">(Khu. iii, 373)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iii, página 373</span></span>, Bhagavā.</p><p class="pali-para"><strong>Anantañāṇo</strong> ti n’ assa anto anantaṃ, anantaṃ ñāṇaṃ yassa tathāgatassa so ’yaṃ anantañāṇo <span class="ref-tip"><span class="cita-term">(Khu. iii, 373)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iii, página 373</span></span>, Tathāgato.</p><p class="pali-para"><strong>Amita-ghana-sarīro</strong> ti na mitaṃ amitaṃ, ghanaṃ eva sarīraṃ ghanasarīraṃ, amitaṃ ghanasarīraṃ yassa tathāgatassa so ’yaṃ amitaghanasarīro, Tathāgato.</p><p class="pali-para"><strong>Amita-bala-parakkama-patto</strong> ti na mitā amitā, balañ ca parakkamo ca balaparakkamā, amitā eva balaparakkamā amitabalaparakkamā, amitabalaparakkamā pattā yena so ’yaṃ amitabalaparakkamapatto, Bhagavā. Ayaṃ pana kammadhārayadvandagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Matta-bhamara-gaṇa-cumbita-vikasita-puppha-valli-nāgarukkhopasobhita-kandaro</strong> ti mattā eva bhamarā mattabhamarā, mattabhamarānaṃ gaṇā mattabhamaragaṇā, mattabhamaragaṇehi cumbitāni mattabhamaragaṇacumbitāni, vikasitāni eva pupphāni vikasitapupphāni, mattabhamaragaṇacumbitāni vikasitapupphāni yesaṃ te ti mattabhamaragaṇacumbitavikasitapupphā, valli ca nāgarukkho ca vallināgarukkhā, mattabhamaragaṇacumbitavikasitapupphā ca te vallināgarukkhā ceti mattabhamaragaṇacumbitavikasitapupphavallināgarukkhā, mattabhamaragaṇacumbitavikasitapupphavallināgarukkhehi upasobhitāni mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitāni, mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitāni kandarāni yassa pabbatarājassa so ’yaṃ mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitakandaro, pabbatarājā. Ayaṃ pana dvandakammadhārayatappurisagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para">Atha vā: Upasobhitāni kandarāni upasobhitakandarāni, sāpekkhatte sati pi gamakattā samāso. Mattabhamaragaṇacumbitavikasitapupphavallināgarukkhehi upasobhitakandarāni yassa pabbatarājassa so ’yaṃ mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitakandaro, pabbatarājā. Ayaṃ pana bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Nānā-rukkha-tiṇa-patita-pupphopasobhita-kandaro</strong> ti rukkho ca tiṇañ ca rukkhatiṇāni, nānā pakārāni eva rukkhatiṇāni nānārukkhatiṇāni, nānārukkhatiṇehi patitāni nānārukkhatiṇapatitāni, nānārukkhatiṇapatitāni ca tāni pupphāni ceti nānārukkhatiṇapatitapupphāni, nānārukkhatiṇapatitapupphehi upasobhitāni nānārukkhatiṇapatitapupphopasobhitāni, nānārukkhatiṇapatitapupphopasobhitāni kandarāni yassa pabbatarājassa so ’yaṃ nānārukkhatiṇapatitapupphopasobhitakandaro, pabbatarājā. Ayaṃ pana dvandakammadhārayatappurisagabbho tulyādhikaraṇabahubbīhi.</p><p class="pali-para">Atha vā: Upasobhitāni eva kandarāni upasobhitakandarāni (sāpekkhatte sati pi gamakattā samāso). Nānārukkhatiṇapatitapupphehi upasobhitakandarāni yassa pabbatarājassa so ’yaṃ nānārukkhatiṇapatitapupphopasobhitakandaro, pabbatarājā. Ayaṃ pana bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Nānā-musala-phāla-pabbata-taru-kaliṅgara-sara-dhanu-gad’-āsi-tomara-hatthā</strong> ti musalo ca phālo ca pabbato ca taru ca kaliṅgaro ca saro ca dhanu ca gadā ca asi ca tomaro ca musalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā, nānā pakārā eva musalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā nānāmusalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā, nānāmusalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā hatthesu yesaṃ te nānāmusalaphālapabbatatarukaliṅgarasaradhanugadāsitomarahatthā. Ayaṃ pana dvandakammadhārayagabbho bhinnādhikaraṇabahubbīhi.</p><p class="pali-para"><strong>Bahubbīhi</strong> icc anena kvattho? Bahubbīhimhi ca.</p></div><div class="gloss">En los significados de otras palabras hay un “bahubbīhi” (compuesto relativo).</div><div class="vutti">Cuando dos nombres o muchos nombres se componen en los significados de otras palabras,<span class="fn-tip"><span class="fn-sup">11</span><span class="fn-tip-box">Las otras palabras son “ya”, “ta”, “eta” e “ima”.</span></span> entonces ese compuesto recibe el nombre “bahubbīhi” (compuesto relativo).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s328seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s328seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Āgatā samaṇā imaṃ saṃghārāmaṃ so ’yaṃ <strong>āgatasamaṇo</strong>, saṃghārāmo (los ascetas han venido a este monasterio del Saṃgha; ese es “āgatasamaṇo” [adonde han venido los ascetas], el monasterio del Saṃgha [es lo que se quiere decir]).</li><li>Jitāni indriyāni anena samaṇena so ’yaṃ <strong>jitindriyo</strong>, samaṇo (las facultades han sido dominadas por este asceta; ese es “jitindriyo” [uno cuyas facultades están dominadas], el asceta [es lo que se quiere decir]).</li><li>Dinno suṅkho yassa rañño so ’yaṃ <strong>dinnasuṅkho</strong>, rājā (el impuesto es dado a ese rey; ese es “dinnasuṅkho” [a quien se da el impuesto], el rey [es lo que se quiere decir]).</li><li>Niggatā janā asmā gāmā so ’yaṃ <strong>niggatajano</strong>, gāmo (la gente ha salido de esta aldea; esa es “niggatajano” [de donde ha salido la gente], la aldea [es lo que se quiere decir]).</li><li>Chinno hattho yassa purisassa so ’yaṃ <strong>chinnahattho</strong>, puriso (la mano de ese hombre ha sido cortada; ese es “chinnahattho” [uno cuya mano ha sido cortada], el hombre [es lo que se quiere decir]).</li><li>Sampannāni sassāni yasmiṃ janapade so ’yaṃ <strong>sampannasasso</strong>, janapado (los granos abundan en ese distrito; ese es “sampannasasso” [lugar donde abundan los granos], el distrito [es lo que se quiere decir]).</li></ol><div class="formation-title"><strong>Nigrodhassa parimaṇḍalo nigrodhaparimaṇḍalo</strong></div><p class="rest-para">La circunferencia (parimaṇḍalo) del baniano (nigrodhassa) [se llama] circunferencia del baniano (nigrodhaparimaṇḍalo). El príncipe (yo rājakumāro) cuya circunferencia (parimaṇḍalo) es como (iva) la circunferencia del baniano (nigrodhaparimaṇḍalo), ese es “nigrodhaparimaṇḍalo” [uno cuya circunferencia es como la del baniano].</p><p class="rest-para">O bien (atha vā): las proporciones (parimaṇḍalo) de ese príncipe (yassa rājakumārassa) son como (iva) la circunferencia del baniano (nigrodhaparimaṇḍalo); ese es “nigrodhaparimaṇḍalo”, el príncipe [es lo que se quiere decir].</p><div class="formation-title"><strong>Cakkhuno bhūto cakkhubhūto</strong></div><p class="rest-para">El ser (bhūto) del ojo (cakkhuno) [se llama] cakkhubhūto. Este Bienaventurado (yo Bhagavā) es un ser (bhūto) que es como (iva) el ojo (cakkhubhūto); ese es “cakkhubhūto” [ese que es como el ojo], el Bienaventurado [es lo que se quiere decir].</p><div class="formation-title"><strong>Suvaṇṇassa vaṇṇo suvaṇṇavaṇṇo</strong></div><p class="rest-para">El color (vaṇṇo) del oro (suvaṇṇassa) [se llama] color dorado (suvaṇṇavaṇṇo). La tez (vaṇṇo) de este Bienaventurado (yassa Bhagavato) es como (viya) el color dorado (suvaṇṇavaṇṇo); ese es “suvaṇṇavaṇṇo” [uno cuya tez es como el color dorado], el Bienaventurado [es lo que se quiere decir].</p><div class="formation-title"><strong>Brahmuno saro brahmassaro</strong></div><p class="rest-para">La voz (saro) de Brahmā (brahmuno) [se llama] voz de Brahmā (brahmassaro). La voz (saro) de este Bienaventurado (yassa Bhagavato) es como (viya) la voz de Brahmā (brahmassaro); ese es “brahmassaro” [uno cuya voz es como la de Brahmā], el Bienaventurado [es lo que se quiere decir].</p><div class="formation-title"><strong>Sayaṃ-patita-paṇṇa-puppha-phala-vāyu-toy’-āhārā</strong></div><p class="rest-para">Y hoja (paṇṇañ ca) y flor (pupphañ ca) y fruto (phalañ ca) [se llaman] hojas, flores y frutos (paṇṇapupphaphalāni). [dvanda-samāsa]</p><p class="rest-para">Caídos (patitāni) por sí mismos (sayam eva), caídos por sí mismos (sayaṃpatitāni). [kammadhāraya-samāsa]</p><p class="rest-para">Caídos por sí mismos (sayaṃpatitāni) y (ca) esos (tāni) [son] hojas, flores y frutos (paṇṇapupphaphalāni ca), así (iti) [se llaman] hojas, flores y frutos caídos por sí mismos (sayaṃpatitapaṇṇapupphaphalāni). [kammadhāraya-samāsa]</p><p class="rest-para">Y aire (vāyu ca) y agua (toyañ ca) [se llaman] aire y agua (vāyutoyāni). [dvanda-samāsa]</p><p class="rest-para">Y hojas, flores y frutos caídos por sí mismos (sayaṃpatitapaṇṇapupphaphalāni ca) y aire y agua (vāyutoyāni ca), así (iti) [se llaman] hojas, flores y frutos caídos por sí mismos y aire y agua (sayaṃpatitapaṇṇapupphaphalavāyutoyāni). [dvanda-samāsa]</p><p class="rest-para">Aquellos cuyo alimento es (āhārā yesaṃ) hojas, flores y frutos caídos por sí mismos y el aire y el agua (sayaṃpatitapaṇṇapupphaphalavāyutoyāni), esos (te) [se llaman] los que tienen por alimento hojas, flores y frutos caídos por sí mismos y aire y agua (sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā). Los sabios (isayo) [es lo que se quiere decir].</p><p class="rest-para">Lo que se ha de decir aquí (yam ettha vattabbaṃ), ya se ha dicho abajo (en realidad, arriba) (taṃ heṭṭhā vuttam eva).</p><p class="rest-para">Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto copulativo y un compuesto adjetivo (dvanda-kammadhāraya-gabbho).</p><p class="rest-para">O bien (atha vā): aquellos cuyo alimento es (āhārā yesaṃ) por medio de hojas, flores y frutos caídos por sí mismos y el aire y el agua (sayaṃpatitapaṇṇapupphaphalavāyutoyehi), esos (te) [se llaman] los que tienen por alimento hojas, flores y frutos caídos por sí mismos y aire y agua (sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā). Éste es (ayaṃ pana) un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi).</p><div class="formation-title"><strong>Nānā-duma-patita-puppha-vāsita-sānū</strong></div><p class="rest-para">Diferentes (nānā), [es decir,] varios (pakārā) árboles (dumā) [se llaman] varios árboles (nānādumā). [kammadhāraya-samāsa]</p><p class="rest-para">Caídas (patitāni) de varios árboles (nānādumehi) [se llama] caídas de varios árboles (nānādumapatitāni). [tappurisa-samāsa]</p><p class="rest-para">Y caídas de varios árboles (nānādumapatitāni ca) y esas flores (tāni pupphāni ca), así (iti) [se llaman] flores caídas de varios árboles (nānādumapatitapupphāni). [kammadhāraya-samāsa]</p><p class="rest-para">Perfumados (vāsitā) por las flores caídas de varios árboles (nānādumapatitapupphehi) [se llama] perfumados por las flores caídas de varios árboles (nānādumapatitapupphavāsitā). [tappurisa-samāsa]</p><p class="rest-para">Los valles (sānū) perfumados por las flores caídas de varios árboles (nānādumapatitapupphavāsitā) de ese rey de las montañas (yassa pabbatarājassa), ese es (so ’yaṃ) [el que tiene] valles perfumados por las flores caídas de varios árboles (nānādumapatitapupphavāsitasānu), el rey de las montañas [es lo que se quiere decir].</p><p class="rest-para">Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto adjetivo y un compuesto determinativo (kammadhāraya-tappurisagabbho).</p><p class="rest-para">O bien (atha vā): valles (sānū) perfumados (vāsitā) [se llaman] valles perfumados (vāsitasānū). [kammadhāraya-samāsa] Aunque está mirando a otro lugar (sāpekkhatte sati pi), porque puede transmitir el significado (gamakattā), es un compuesto (samāso). Los valles perfumados (vāsitasānū) por las flores caídas de varios árboles (nānādumapatitapupphehi) de ese rey de las montañas (yassa pabbatarājassa), ese es uno que tiene valles perfumados por las flores caídas de varios árboles (nānādumapatitapupphavāsitasānu), el rey de las montañas [es lo que se quiere decir].</p><p class="rest-para">Éste es un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi).</p><div class="formation-title"><strong>Byālamb’-ambu-dhara-bindu-cumbita-kūṭo</strong></div><p class="rest-para">Sostiene (dhāreti) el agua (ambuṃ), así (iti) [se llama] el que sostiene el agua (ambudharo, la nube de lluvia). ¿Quién es ese (ko so)? Pajjunna. [tappurisa-samāsa]</p><p class="rest-para">Colgante (ālambo) de diversas maneras (vividhā) [se llama] colgante de diversas maneras (byālambo). [kammadhāraya-samāsa]</p><p class="rest-para">Y colgante de diversas maneras (byālambo ca) y esa [es] nube de lluvia (so ambudharo ca), así (iti) [se llama] nube de lluvia colgante de diversas maneras (byālambambudharo). [kammadhāraya-samāsa]</p><p class="rest-para">Las gotas (bindū) de la nube de lluvia colgante de diversas maneras (byālambambudharassa) [se llaman] gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabindū). [tappurisa-samāsa]</p><p class="rest-para">Besado (cumbito) por las gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabindūhi) [se llama] besado por las gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabinducumbito). [tappurisa-samāsa]</p><p class="rest-para">El pico (kūṭo) besado por las gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabinducumbito) de ese rey de las montañas (yassa pabbatarājassa), ese es (so ’yaṃ) [el que tiene] un pico besado por las gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabinducumbitakūṭo), el rey de las montañas [es lo que se quiere decir]. Éste es un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto adjetivo y un compuesto determinativo (kammadhārayatappurisagabbho).</p><p class="rest-para">O bien (atha vā): pico (kūṭo) besado (cumbito) [se llama] pico besado (cumbitakūṭo). [kammadhāraya-samāsa] Aunque está mirando a otro lugar (sāpekkhatte sati pi), porque puede transmitir el significado (gamakattā), es un compuesto (samāso). El pico besado (cumbitakūṭo) por las gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabindūhi) de ese rey de las montañas, ese es [uno que tiene] un pico besado por las gotas de la nube de lluvia colgante de diversas maneras (byālambambudharabinducumbitakūṭo), el rey de las montañas [es lo que se quiere decir]. Este es un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi).</p><div class="formation-title"><strong>Amita-bala-parakkama-jutī</strong></div><p class="rest-para">No (na) medidos (mitā) [se llama] inconmensurables (amitā). [kammadhāraya-samāsa]</p><p class="rest-para">Y fuerza (balañ ca) y energía (parakkamo ca) y resplandor (juti ca) [se llaman] fuerza, energía y resplandor (balaparakkamajutiyo). [dvanda-samāsa]</p><p class="rest-para">Inconmensurables (amitā) fuerza, energía y resplandor (balaparakkamajutiyo) de ese (yassa), ese es (so ’yaṃ) [uno que tiene] fuerza, energía y resplandor inconmensurables (amitabalaparakkamajuti). Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto adjetivo y un compuesto copulativo (kammadhāraya-dvandagabbho).</p><div class="formation-title"><strong>Pīṇor’-akkh’-aṃsa-bāhū</strong></div><p class="rest-para">Y pecho (uro ca) y clavícula (akkhañ ca) y hombro (aṃso ca) y brazos (bāhu ca) [se llaman] pecho, clavícula, hombro y brazos (urakkhaṃsabāhavo). [dvanda-samāsa]</p><p class="rest-para">Llenos (pīṇā) el pecho, la clavícula, el hombro y los brazos (urakkhaṃsabāhavo) de este Bienaventurado (yassa Bhagavato), ese es (so ’yaṃ) [uno que tiene] pecho, clavícula, hombro y brazos llenos (pīṇorakkhaṃsabāhu), el Bienaventurado [es lo que se quiere decir]. Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto copulativo (dvandagabbho).</p><div class="formation-title"><strong>Pīṇa-gaṇḍa-vadana-than’-ūru-jaghanā</strong></div><p class="rest-para">Y mejillas (gaṇḍo ca) y boca (vadanañ ca) y senos (thano ca) y muslos (ūru ca) y caderas (jaghanañ ca) [se llaman] mejillas, boca, senos, muslos y caderas (gaṇḍavadanathanūrujaghanā). [dvanda-samāsa]</p><p class="rest-para">Llenas (pīṇā) las mejillas, la boca, los senos, los muslos y las caderas (gaṇḍavadanathanūrujaghanā) de esa (yassā), esa es (sā ’yaṃ) [una que tiene] mejillas, boca, senos, muslos y caderas llenas (pīṇagaṇḍavadanathanūrujaghanā). Éste también (ayam pi) es un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto copulativo (dvandagabbho).</p><div class="formation-title"><strong>Pavara-surāsura-garuḍa-manuja-bhujaga-gandhabba-makuṭa-kūṭa-cumbita-sela-saṃghaṭṭita-caraṇo</strong></div><p class="rest-para">Y devas (surā ca) y titanes (asurā ca) y garuḍas (garuḍā ca) y seres humanos (manujā ca) y serpientes divinas (bhujagā ca) y gandhabbas (gandhabbā ca) [se llaman] devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (surāsuragaruḍamanujabhujagagandhabbā). [dvanda-samāsa]</p><p class="rest-para">Y nobles (pavarā ca) ellos [son] (te) devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (surāsuragaruḍamanujabhujagagandhabbā ca), así (iti) [se llaman] nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbā). [kammadhāraya-samāsa]</p><p class="rest-para">Los cubrecabezas (makuṭāni) de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbānaṃ) [se llaman] cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭāni). [tappurisa-samāsa]</p><p class="rest-para">Las cúspides (kūṭāni) de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭānaṃ) [se llaman] cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭāni). [tappurisa-samāsa]</p><p class="rest-para">Besadas (cumbitā) en (por) las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭesu) [se llama] besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitā). [tappurisa-samāsa]</p><p class="rest-para">Besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas y (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitā) ellas [son] (te) rocas (selā ca), así (iti) [se llaman] rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselā). [kammadhāraya-samāsa]</p><p class="rest-para">Tocados (saṃghaṭṭitā) por las rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagandhabbamakuṭakūṭacumbitaselehi) [se llama] tocados por las rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitā). [tappurisa-samāsa]</p><p class="rest-para">Los pies (caraṇā) tocados por las rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitā) de ese Tathāgata (yassa tathāgatassa), ese es (so ’yaṃ) [uno cuyos] pies son tocados por las rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitacaraṇo), el Tathāgata [es lo que se quiere decir]. Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto copulativo, un compuesto adjetivo y un compuesto determinativo (dvandakammadhārayatappurisagabbho).</p><p class="rest-para">O bien (atha vā): pies (caraṇā) tocados (saṃghaṭṭitā) [se llaman] pies tocados (saṃghaṭṭitacaraṇā). [kammadhāraya-samāsa] Aunque está mirando a otro lugar (sāpekkhatte sati pi), porque puede transmitir el significado (gamakattā), es un compuesto (samāso). Los pies tocados (saṃghaṭṭitacaraṇā) por las rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselehi) de ese Tathāgata (yassa tathāgatassa), ese es [uno cuyos] pies son tocados por las rocas besadas por las cúspides de los cubrecabezas de los nobles devas, titanes, garuḍas, seres humanos, serpientes divinas y gandhabbas (pavarasurāsuragaruḍamanujabhujagagandhabbamakuṭakūṭacumbitaselasaṃghaṭṭitacaraṇo), el Tathāgata [es lo que se quiere decir]. Éste es un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi).</p><div class="formation-title"><strong>Catuddiso</strong></div><p class="rest-para">Las cuatro (catasso) direcciones (disā) de ese (yassa), ese es (so ’yaṃ) [uno que tiene] las cuatro direcciones (catuddiso), el Bienaventurado [es lo que se quiere decir].</p><div class="formation-title"><strong>Pañcacakkhu</strong></div><p class="rest-para">Los cinco (pañca) ojos (cakkhūni) de ese Tathāgata (yassa tathāgatassa), ese es (so ’yaṃ) [uno que tiene] los cinco ojos (pañcacakkhu), el Tathāgata [es lo que se quiere decir].</p><div class="formation-title"><strong>Dasabalo</strong></div><p class="rest-para">Los diez (dasa) poderes (balāni) de ese (yassa), ese es (so ’yaṃ) [uno que tiene] los diez poderes (dasabalo), el Bienaventurado [es lo que se quiere decir].</p><div class="formation-title"><strong>Anantañāṇo</strong></div><p class="rest-para">No (na) límite (anto) de este (assa), ilimitado (anantaṃ). [kammadhāraya-samāsa]</p><p class="rest-para">Ilimitado (anantaṃ) el entendimiento (ñāṇaṃ) de ese Tathāgata (yassa tathāgatassa), ese es (so ’yaṃ) [uno cuyo] entendimiento es ilimitado (anantañāṇo), el Tathāgata [es lo que se quiere decir].</p><div class="formation-title"><strong>Amitaghanasarīro</strong></div><p class="rest-para">No (na) medido (mitaṃ), inconmensurable (amitaṃ). [kammadhāraya-samāsa]</p><p class="rest-para">Sólido en sí (ghanaṃ eva) el cuerpo (sarīraṃ) [se llama] cuerpo sólido (ghanasarīraṃ). [kammadhāraya-samāsa]</p><p class="rest-para">Inconmensurable (amitaṃ) el cuerpo sólido (ghanasarīraṃ) de ese Tathāgata (yassa tathāgatassa), ese es (so ’yaṃ) [uno que tiene] un cuerpo sólido inconmensurable (amitaghanasarīro), el Tathāgata [es lo que se quiere decir].</p><div class="formation-title"><strong>Amitabalaparakkamapatto</strong></div><p class="rest-para">No (na) medidos (mitā) [se llama] inconmensurables (amitā). [kammadhāraya-samāsa]</p><p class="rest-para">Y fuerza (balañ ca) y esfuerzo (parakkamo ca) [se llaman] fuerza y esfuerzo (balaparakkamā). [dvanda-samāsa]</p><p class="rest-para">Inconmensurables en sí (amitā eva) la fuerza y el esfuerzo (balaparakkamā) [se llaman] fuerza y esfuerzo inconmensurables (amitabalaparakkamā). [kammadhāraya-samāsa]</p><p class="rest-para">Fuerza y esfuerzo inconmensurables (amitabalaparakkamā) alcanzados (pattā) por ese (yena), ese es (so ’yaṃ) [uno que ha] alcanzado fuerza y esfuerzo inconmensurables (amitabalaparakkamapatto), el Bienaventurado [es lo que se quiere decir]. Éste es un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto adjetivo y un compuesto copulativo (kammadhāraya-dvandagabbho).</p><div class="formation-title"><strong>Matta-bhamara-gaṇa-cumbita-vikasita-puppha-valli-nāgarukkhopasobhita-kandaro</strong></div><p class="rest-para">Embriagadas en sí (mattā eva) las abejas (bhamarā) [se llaman] abejas embriagadas (mattabhamarā). [kammadhāraya-samāsa]</p><p class="rest-para">Los enjambres (gaṇā) de abejas embriagadas (mattabhamarānaṃ) [se llaman] enjambres de abejas embriagadas (mattabhamaragaṇā). [tappurisa-samāsa]</p><p class="rest-para">Besadas (cumbitāni) por los enjambres de abejas embriagadas (mattabhamaragaṇehi) [se llama] besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitāni). [tappurisa-samāsa]</p><p class="rest-para">Abiertas en sí (vikasitāni eva) las flores (pupphāni) [se llaman] flores abiertas (vikasitapupphāni). [tappurisa-samāsa]</p><p class="rest-para">Las flores abiertas (vikasitapupphāni) besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitāni) de esos (yesaṃ), esos [se llaman] (te) [esos que tienen] flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphā). [bahubbīhi-samāsa]</p><p class="rest-para">Y enredadera (valli ca) y árbol de madera de hierro (nāgarukkho ca) [se llaman] enredaderas y árboles de madera de hierro (vallināgarukkhā).</p><p class="rest-para">Con flores abiertas besadas por los enjambres de abejas embriagadas y (mattabhamaragaṇacumbitavikasitapupphā ca) ellos [son] (te) enredaderas y árboles de madera de hierro (vallināgarukkhā ca), así (iti) [se llaman] enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhā). [kammadhāraya-samāsa]</p><p class="rest-para">Embellecidas (upasobhitāni) por las enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhehi) [se llama] embellecidas por las enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitāni). [tappurisa-samāsa]</p><p class="rest-para">Las cuevas (kandarāni) embellecidas por las enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitāni) de ese rey de las montañas (yassa pabbatarājassa), ese es (so ’yaṃ) [uno que tiene] cuevas embellecidas por las enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitakandaro), el rey de las montañas [es lo que se quiere decir]. Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto copulativo, un compuesto adjetivo y un compuesto determinativo (dvanda-kammadhāraya-tappurisagabbho).</p><p class="rest-para">O bien (atha vā): cuevas (kandarāni) embellecidas (upasobhitāni) [se llaman] cuevas embellecidas (upasobhitakandarāni). [kammadhāraya-samāsa] Aunque está mirando a otro lugar (sāpekkhatte sati pi), porque puede transmitir el significado (gamakattā), es un compuesto (samāso). Las cuevas embellecidas (upasobhitakandarāni) por las enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhehi) de ese rey de las montañas (yassa pabbatarājassa), ese es [uno que tiene] cuevas embellecidas por las enredaderas y árboles de madera de hierro que tienen flores abiertas besadas por los enjambres de abejas embriagadas (mattabhamaragaṇacumbitavikasitapupphavallināgarukkhopasobhitakandaro), el rey de las montañas [es lo que se quiere decir]. Éste es un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi).</p><div class="formation-title"><strong>Nānā-rukkha-tiṇa-patita-pupphopasobhita-kandaro</strong></div><p class="rest-para">Y árbol (rukkho ca) y arbusto (tiṇañ ca) [se llaman] árboles y arbustos (rukkhatiṇāni). [dvanda-samāsa]</p><p class="rest-para">Diferentes (nānā), [es decir,] varios en sí (pakārāni eva) los árboles y arbustos (rukkhatiṇāni) [se llaman] varios árboles y arbustos (nānārukkhatiṇāni). [kammadhāraya-samāsa]</p><p class="rest-para">Caídas (patitāni) de varios árboles y arbustos (nānārukkhatiṇehi) [se llama] caídas de varios árboles y arbustos (nānārukkhatiṇapatitāni). [tappurisa-samāsa]</p><p class="rest-para">Caídas de varios árboles y arbustos y (nānārukkhatiṇapatitāni ca) esas [son] flores (tāni pupphāni ca), así (iti) [se llaman] flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphāni). [kammadhāraya-samāsa]</p><p class="rest-para">Embellecidas (upasobhitāni) por las flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphehi) [se llama] embellecidas por las flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphopasobhitāni). [tappurisa-samāsa]</p><p class="rest-para">Las cuevas (kandarāni) embellecidas por las flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphopasobhitāni) de ese rey de las montañas (yassa pabbatarājassa), ese es (so ’yaṃ) [uno que tiene] cuevas embellecidas por las flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphopasobhitakandaro), el rey de las montañas [es lo que se quiere decir]. Éste es (ayaṃ pana) un compuesto relativo que tiene la misma localización (tulyādhikaraṇabahubbīhi) y que contiene un compuesto copulativo, un compuesto adjetivo y un compuesto determinativo (dvanda-kammadhāraya-tappurisagabbho).</p><p class="rest-para">O bien (atha vā): cuevas embellecidas en sí (upasobhitāni eva kandarāni) [se llaman] cuevas embellecidas (upasobhitakandarāni). [kammadhāraya-samāsa] Aunque está mirando a otro lugar (sāpekkhatte sati pi), porque puede transmitir el significado (gamakattā), es un compuesto (samāso). Las cuevas embellecidas (upasobhitakandarāni) por las flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphehi) de ese rey de las montañas, ese es [el que tiene] cuevas embellecidas por las flores caídas de varios árboles y arbustos (nānārukkhatiṇapatitapupphopasobhitakandaro), el rey de las montañas [es lo que se quiere decir]. Éste es un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi).</p><div class="formation-title"><strong>Nānā-musala-phāla-pabbata-taru-kaliṅgara-sara-dhanu-gad’-āsi-tomara-hatthā</strong></div><p class="rest-para">Y mazo (musalo ca) y reja de arado (phālo ca) y montaña (pabbato ca) y árbol (taru ca) y tronco (kaliṅgaro ca) y flecha (saro ca) y arco (dhanu ca) y barra de hierro (gadā ca) y espada (asi ca) y lanza (tomaro ca) [se llaman] mazos, rejas de arado, montañas, árboles, troncos, flechas, arcos, barras de hierro, espadas y lanzas (musalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā). [dvanda-samāsa]</p><p class="rest-para">Diferentes (nānā), [es decir,] muchos en sí (pakārā eva) los mazos, rejas de arado, montañas, árboles, troncos, flechas, arcos, barras de hierro, espadas y lanzas (musalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā) [se llaman] muchos mazos, rejas de arado, montañas, árboles, troncos, flechas, arcos, barras de hierro, espadas y lanzas (nānāmusalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā). [kammadhāraya-samāsa]</p><p class="rest-para">Muchos mazos, rejas de arado, montañas, árboles, troncos, flechas, arcos, barras de hierro, espadas y lanzas (nānāmusalaphālapabbatatarukaliṅgarasaradhanugadāsitomarā) en las manos (hatthesu) de esos (yesaṃ), esos [se llaman] (te) [esos que tienen] muchos mazos, rejas de arado, montañas, árboles, troncos, flechas, arcos, barras de hierro, espadas y lanzas en sus manos (nānāmusalaphālapabbatatarukaliṅgarasaradhanugadāsitomarahatthā). Éste es (ayaṃ pana) un compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi) y que contiene un compuesto copulativo y un compuesto adjetivo (dvandakammadhārayagabbho).</p><p class="rest-para">¿Cuál es la utilidad del nombre “bahubbīhi” (compuesto relativo)? Para el uso del nombre “bahubbīhi” en el sutta “Bahubbīhimhi ca” (<a class="sutta-xref" href="../nama/#s167" data-tip="§167 · Bahubbīhimhi ca (2-Nāma-Kappa)">§167</a>). Y en un compuesto relativo.</p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="3" onclick="toggleSeq('s328fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (3)
+      </button>
+<div class="collapsible-content" id="s328fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">9</span><span class="fn-text">Sīhaḷakaccāyanapotthakesu “sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā” ti payogato paṭṭhāya kevalaṃ samāsapadāni yeva dissanti, na paṇṇañcātyādīni nibbacanāni. En los libros cingaleses del Kaccāyana, desde el ejemplo “sayaṃpatitapaṇṇapupphaphalavāyutoyāhārā” en adelante solo aparecen las palabras compuestas; no los análisis (nibbacana) como “paṇṇañ ca”, etc.</span></div><div class="fn-item"><span class="fn-num">10</span><span class="fn-text">Gammakattā (K).</span></div><div class="fn-item"><span class="fn-num">11</span><span class="fn-text">Las otras palabras son “ya”, “ta”, “eta” e “ima”.</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s328')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s328"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s328')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s328')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s329">
+<div class="sutta-header" onclick="toggleCard('s329')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">329</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">357</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Nāmānaṃ samuccayo dvando <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(709)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Nāmānaṃ + samuccayo + dvando = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Nāmānaṃ ekavibhattikānaṃ yo samuccayo, so dvandasañño hoti.</p><p class="pali-para">Candimā ca sūriyo ca candimasūriyā <span class="ref-tip"><span class="cita-term">(D. i, 226; ii, 255; iii, 71; M. i, 404; A. i, 306)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya · Aṅguttara-nikāya</span></span>; samaṇo ca brāhmaṇo ca samaṇabrāhmaṇā <span class="ref-tip"><span class="cita-term">(A. i, 363; DA. i, 95)</span><span class="ref-tip-box">Aṅguttara-nikāya · Dīgha-nikāya-aṭṭhakathā</span></span>; Sāriputto ca Moggallāno ca Sāriputtamoggallānā <span class="ref-tip"><span class="cita-term">(Vin. iii, 50; M. ii, 119)</span><span class="ref-tip-box">Vinaya-piṭaka · Majjhima-nikāya</span></span>; brāhmaṇo ca gahapatiko ca brāhmaṇagahapatikā <span class="ref-tip"><span class="cita-term">(D. i, 104; M. i, 354)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya</span></span>; Yamo ca Varuṇo ca Yamavaruṇā; Kuvero ca Vāsavo ca Kuveravāsavā.</p><p class="pali-para"><strong>Dvanda</strong> icc anena kvattho? Dvandaṭṭhā vā.</p></div><div class="gloss">Una colección de nombres [recibe el nombre] “dvanda” (compuesto copulativo).</div><div class="vutti">La colección de nombres que tienen la misma inflexión recibe el nombre “dvanda” (compuesto copulativo).</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s329seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s329seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Candimā ca sūriyo ca <strong>candimasūriyā</strong> (la luna y el sol).</li><li>Samaṇo ca brāhmaṇo ca <strong>samaṇabrāhmaṇā</strong> (ascetas y brahmanes).</li><li>Sāriputto ca Moggallāno ca <strong>Sāriputtamoggallānā</strong> (Sāriputta y Moggallāna).</li><li>Brāhmaṇo ca gahapatiko ca <strong>brāhmaṇagahapatikā</strong> (brahmanes y dueños de casa).</li><li>Yamo ca Varuṇo ca <strong>Yamavaruṇā</strong> (Yama (el rey de la Muerte) y Varuṇa).</li><li>Kuvero ca Vāsavo ca <strong>Kuveravāsavā</strong> (Kuvera y Vāsava).</li></ol><p class="rest-para">¿Cuál es la utilidad del nombre “dvanda” (compuesto copulativo)? Para el uso del nombre “dvanda” en el sutta “Dvandaṭṭhā vā” (<a class="sutta-xref" href="../nama/#s165" data-tip="§165 · Dvandaṭṭhā vā (2-Nāma-Kappa)">§165</a>). Opcionalmente, en un compuesto copulativo.</p></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s329')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s329"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s329')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s329')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s330">
+<div class="sutta-header" onclick="toggleCard('s330')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">330</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">340</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Mahataṃ mahā tulyādhikaraṇe pade <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(710)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Mahataṃ + mahā + tulyādhikaraṇe + pade = 4 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Tesaṃ <strong>mahanta</strong>saddānaṃ <strong>mahā-</strong>ādeso hoti tulyādhikaraṇe pade.</p><p class="pali-para">Mahanto ca so puriso cā ti mahāpuriso <span class="ref-tip"><span class="cita-term">(D. iii, 118; A. i, 346; A. ii, 349; Khu. i, 64)</span><span class="ref-tip-box">Dīgha-nikāya · Aṅguttara-nikāya · Khuddaka-nikāya</span></span>; mahantī ca sā devī cā ti mahādevī <span class="ref-tip"><span class="cita-term">(JA. i, 483)</span><span class="ref-tip-box">Jātaka-aṭṭhakathā · tomo i, página 483</span></span>; mahantañ ca taṃ balañ cā ti mahābalaṃ <span class="ref-tip"><span class="cita-term">(Khu. iii, 55)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iii, página 55</span></span>; mahanto ca so nāgo cā ti mahānāgo <span class="ref-tip"><span class="cita-term">(D. ii, 207)</span><span class="ref-tip-box">Dīgha-nikāya · tomo ii, página 207</span></span>; mahanto ca so yaso cā ti mahāyaso; mahantañ ca taṃ padumavanañ cā ti mahāpadumavanaṃ; mahantī ca sā nadī cā ti mahānadī <span class="ref-tip"><span class="cita-term">(A. ii, 474; S. iii, 44)</span><span class="ref-tip-box">Aṅguttara-nikāya · Saṃyutta-nikāya</span></span>; mahanto ca so maṇi cā ti mahāmaṇi; mahanto ca so gahapatiko cā ti mahāgahapatiko; mahantañ ca taṃ dhanañ cā ti mahādhanaṃ <span class="ref-tip"><span class="cita-term">(DhA. i, 151)</span><span class="ref-tip-box">Dhammapada-aṭṭhakathā · tomo i, página 151</span></span>; mahanto ca so puñño cā ti mahāpuñño <span class="ref-tip"><span class="cita-term">(Vin. i, 55)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo i, página 55</span></span>.<span class="fn-tip"><span class="fn-sup">12</span><span class="fn-tip-box">“Hentañ ca taṃ puññañ cā ti mahāpuññan” ti payogo va sundaro.</span></span></p><p class="pali-para"><strong>Bahuvacanaggahaṇena</strong> kvaci <strong>mahanta</strong>saddassa <strong>mah</strong>ādeso hoti. Mahantañ ca taṃ phalañ cā ti mahapphalaṃ <span class="ref-tip"><span class="cita-term">(A. i, 161)</span><span class="ref-tip-box">Aṅguttara-nikāya · tomo i, página 161</span></span>; mahabbalaṃ <span class="ref-tip"><span class="cita-term">(Khu. iii, 55)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iii, página 55</span></span>. Evaṃ mahaddhanaṃ <span class="ref-tip"><span class="cita-term">(Khu. iii, 49)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo iii, página 49</span></span>; mahabbhayaṃ <span class="ref-tip"><span class="cita-term">(Khu. i, 395)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo i, página 395</span></span>.</p></div><div class="gloss">Cuando hay una palabra que tiene el mismo locus, hay “mahā” de [las voces] “mahanta”.</div><div class="vutti">Cuando una palabra tiene el mismo locus (tulyādhikaraṇa), hay sustitución por “mahā” de las voces “mahanta”.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s330seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s330seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Mahanto ca so puriso cā ti <strong>mahāpuriso</strong> (gran hombre).</li><li>Mahantī ca sā devī cā ti <strong>mahādevī</strong> (gran reina).</li><li>Mahantañ ca taṃ balañ cā ti <strong>mahābalaṃ</strong> (gran fuerza).</li><li>Mahanto ca so nāgo cā ti <strong>mahānāgo</strong> (gran serpiente).</li><li>Mahanto ca so yaso cā ti <strong>mahāyaso</strong> (gran fama).</li><li>Mahantañ ca taṃ padumavanañ cā ti <strong>mahāpadumavanaṃ</strong> (gran bosque de lotos).</li><li>Mahantī ca sā nadī cā ti <strong>mahānadī</strong> (gran río).</li><li>Mahanto ca so maṇi cā ti <strong>mahāmaṇi</strong> (gran gema).</li><li>Mahanto ca so gahapatiko cā ti <strong>mahāgahapatiko</strong> (gran dueño de casa).</li><li>Mahantañ ca taṃ dhanañ cā ti <strong>mahādhanaṃ</strong> (gran riqueza).</li><li>Mahanto ca so puñño cā ti <strong>mahāpuñño</strong> (gran mérito).</li></ol><p class="rest-para">A veces, al tomar el plural,<span class="fn-tip"><span class="fn-sup">13</span><span class="fn-tip-box">El sutta dice “mahataṃ”, sexta inflexión plural (genitivo plural), en lugar de “mahato”, sexta inflexión singular.</span></span> la palabra “mahanta” se sustituye por “maha”.</p><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Mahantañ ca taṃ phalañ cā ti <strong>mahapphalaṃ</strong> (gran fruto).</li><li>Mahantañ ca taṃ balañ cā ti <strong>mahabbalaṃ</strong> (gran fuerza).</li></ol><p class="rest-para">Así:</p><ol class="seq-list seq-ejemplos"><li>Mahantañ ca taṃ dhanañ cā ti <strong>mahaddhanaṃ</strong> (gran riqueza).</li><li>Mahantañ ca taṃ bhayañ cā ti <strong>mahabbhayaṃ</strong> (gran temor o peligro).</li></ol></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="2" onclick="toggleSeq('s330fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (2)
+      </button>
+<div class="collapsible-content" id="s330fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">12</span><span class="fn-text">“Hentañ ca taṃ puññañ cā ti mahāpuññan” ti payogo va sundaro.</span></div><div class="fn-item"><span class="fn-num">13</span><span class="fn-text">El sutta dice “mahataṃ”, sexta inflexión plural (genitivo plural), en lugar de “mahato”, sexta inflexión singular.</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s330')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s330"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s330')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s330')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s331">
+<div class="sutta-header" onclick="toggleCard('s331')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">331</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">353</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Itthiyaṃ bhāsitapum’-itthī pumā ’va ce <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(714-5)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Itthiyaṃ + bhāsita-puma-itthī + pumā + iva + ce = 5 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Itthiyaṃ tulyādhikaraṇe pade ce bhāsitapumitthī pumā ’va daṭṭhabbā.</p><p class="pali-para">Dīghā jaṅghā yassa so ’yaṃ dīghajaṅgho; kalyāṇabhariyo; pahūtapañño.</p><p class="pali-para"><strong>Bhāsitapum</strong>eti kimatthaṃ? Brāhmaṇabandhu ca sā bhariyā cā ti brāhmaṇabandhubhariyā.<span class="fn-tip"><span class="fn-sup">14</span><span class="fn-tip-box">Udāharaṇam idaṃ vicāretabbaṃ. Brahmabandhū ca sā bhariyā cā ti brahmabandhubhariyā, saddhādhanaṃ, paññārataṃ (Sī). Este ejemplo debe ser examinado.</span></span></p></div><div class="gloss">En el femenino, si un femenino indicó masculino, [se debe considerar] como masculino.</div><div class="vutti">Cuando hay una palabra que tiene el mismo locus en el femenino, si es un femenino que indicó masculino [en el pasado], se debe considerar como masculino.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s331seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s331seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Dīghā jaṅghā yassa so ’yaṃ <strong>dīghajaṅgho</strong> (las piernas de ese [hombre] son largas; ese es “dīghajaṅgho” [uno que tiene piernas largas]).</li><li>Kalyāṇā bhariyā yassa so ’yaṃ <strong>kalyāṇabhariyo</strong> ([uno que tiene] una buena esposa).</li><li>Pahūtā paññā yassa so ’yaṃ <strong>pahūtapañño</strong> ([uno que tiene] mucha sabiduría).</li></ol><p class="rest-para">¿Cuál es la finalidad de decir “bhāsitapuma” (que indicó masculino)? Para impedir la operación de esta regla cuando no indicó masculino en el pasado: Brāhmaṇabandhu ca sā bhariyā cā ti brāhmaṇabandhubhariyā (pariente del brahmán y ella es esposa, así [se llama] esposa que es pariente de un brahmán).<span class="fn-tip"><span class="fn-sup">15</span><span class="fn-tip-box">En Rū. §354 se da otro ejemplo, “saddhādhuro” (fundamento de la fe); aquí “saddhā” es siempre femenino: nunca indicó masculino en el pasado.</span></span></p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="2" onclick="toggleSeq('s331fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (2)
+      </button>
+<div class="collapsible-content" id="s331fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">14</span><span class="fn-text">Udāharaṇam idaṃ vicāretabbaṃ. Brahmabandhū ca sā bhariyā cā ti brahmabandhubhariyā, saddhādhanaṃ, paññārataṃ (Sī). Este ejemplo debe ser examinado.</span></div><div class="fn-item"><span class="fn-num">15</span><span class="fn-text">En Rū. §354 se da otro ejemplo, “saddhādhuro” (fundamento de la fe); aquí “saddhā” es siempre femenino: nunca indicó masculino en el pasado.</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s331')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s331"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s331')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s331')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s332">
+<div class="sutta-header" onclick="toggleCard('s332')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">332</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">343</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Kammadhārayasaññe ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(716)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Kammadhārayasaññe + ca = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Kammadhārayasaññe ca samāse itthiyaṃ tulyādhikaraṇe pade pubbe bhāsitapumitthī ce, pumā ’va daṭṭhabbā.</p><p class="pali-para">Brāhmaṇadārikā; khattiyakaññā <span class="ref-tip"><span class="cita-term">(M. i, 122; A. i, 526)</span><span class="ref-tip-box">Majjhima-nikāya · Aṅguttara-nikāya</span></span>; khattiyakumārikā <span class="ref-tip"><span class="cita-term">(JA. i, 489)</span><span class="ref-tip-box">Jātaka-aṭṭhakathā · tomo i, página 489</span></span>.</p><p class="pali-para"><strong>Bhāsitapum</strong>eti kimatthaṃ? Khattiyabandhudārikā; brāhmaṇabandhudārikā.</p></div><div class="gloss">Y en un compuesto adjetivo.</div><div class="vutti">Y cuando hay una palabra que tiene el mismo locus en el femenino en un compuesto adjetivo, si la [palabra] anterior es un femenino que indicó masculino [en el pasado], se debe considerar como masculino.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s332seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s332seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Brāhmaṇadārikā</strong> (muchacha brahmán).</li><li><strong>Khattiyakaññā</strong> (muchacha noble).</li><li><strong>Khattiyakumārikā</strong> (doncella noble).</li></ol><p class="rest-para">¿Cuál es la finalidad de decir “bhāsitapuma” (que indicó masculino)? Para impedir la operación de esta regla cuando no indicó masculino en el pasado, como “khattiyabandhudārikā” (muchacha que es pariente de un noble); “brāhmaṇabandhudārikā” (muchacha que es pariente de un brahmán).<span class="fn-tip"><span class="fn-sup">16</span><span class="fn-tip-box">Rū. §343 da un ejemplo diferente, “Gaṅgānadī” (el río Ganges).</span></span></p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s332fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s332fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">16</span><span class="fn-text">Rū. §343 da un ejemplo diferente, “Gaṅgānadī” (el río Ganges).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s332')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s332"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s332')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s332')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s333">
+<div class="sutta-header" onclick="toggleCard('s333')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">333</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">344</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Attaṃ nassa tappurise <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(717)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Attaṃ + nassa + tappurise = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Na</strong>ssa padassa tappurise uttarapade <strong>a</strong>ttaṃ hoti.</p><p class="pali-para">Na brāhmaṇo abrāhmaṇo <span class="ref-tip"><span class="cita-term">(D. iii, 67)</span><span class="ref-tip-box">Dīgha-nikāya · tomo iii, página 67</span></span>; avasalo; abhikkhu <span class="ref-tip"><span class="cita-term">(Vin. ii, 412)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo ii, página 412</span></span>; apañcavassaṃ; apañcagavaṃ.</p></div><div class="gloss">En un compuesto determinativo, hay ‘a’ de “na”.</div><div class="vutti">Cuando hay una palabra que sigue en un compuesto determinativo, hay ‘a’ de “na”.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s333seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s333seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Na brāhmaṇo <strong>abrāhmaṇo</strong> (no brahmán).</li><li>Na vasalo <strong>avasalo</strong> (no paria).</li><li>Na bhikkhu <strong>abhikkhu</strong> (no bhikkhu).</li><li>Na pañcavassaṃ <strong>apañcavassaṃ</strong> (no cinco temporadas de lluvias).</li><li>Na pañcagavaṃ <strong>apañcagavaṃ</strong> (no cinco vacas).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s333')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s333"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s333')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s333')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s334">
+<div class="sutta-header" onclick="toggleCard('s334')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">334</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">345</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Sare an <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(718)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Sare + an = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Na</strong>ssa padassa tappurise <strong>an</strong>ādeso hoti sare pare.</p><p class="pali-para">Na asso anasso; anissaro <span class="ref-tip"><span class="cita-term">(VinA. i, 339)</span><span class="ref-tip-box">Vinaya-aṭṭhakathā · tomo i, página 339</span></span>; anariyo <span class="ref-tip"><span class="cita-term">(Vin. iii, 14)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iii, página 14</span></span>.</p></div><div class="gloss">Cuando sigue una vocal, hay ‘an’.</div><div class="vutti">Cuando sigue una vocal en un compuesto determinativo, la palabra “na” se sustituye por ‘an’.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s334seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s334seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Na asso <strong>anasso</strong> (no caballo, un mulo).</li><li>Na issaro <strong>anissaro</strong> (no creador).</li><li>Na ariyo <strong>anariyo</strong> (no noble).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s334')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s334"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s334')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s334')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s335">
+<div class="sutta-header" onclick="toggleCard('s335')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">335</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">346</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Kad kussa <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(719)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Kad + kussa = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Ku</strong> icc etassa <strong>kad</strong> hoti sare pare.</p><p class="pali-para">Kucchitaṃ annaṃ kadannaṃ; kucchitaṃ asanaṃ kadasanaṃ.</p><p class="pali-para"><strong>Sare</strong> ti kimatthaṃ? Kucchitā dārā yesaṃ (apuññakārānaṃ) te hontī ti kudārā; kujanā. Evaṃ kuputtā, kugehā, kuvatthā, kudāsā.</p></div><div class="gloss">Hay ‘kad’ de ‘ku’.</div><div class="vutti">Cuando sigue una vocal, ‘ku’ deviene ‘kad’.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s335seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s335seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Kucchitaṃ annaṃ <strong>kadannaṃ</strong> (mala comida).</li><li>Kucchitaṃ asanaṃ <strong>kadasanaṃ</strong> (mal alimento).</li></ol><p class="rest-para">¿Cuál es la finalidad de decir “sare” (cuando sigue una vocal)? [Este sutta no se aplica cuando no sigue una vocal, como en los siguientes ejemplos:]</p><p class="rest-para">Malas (kucchitā) esposas (dārā) de esos (yesaṃ) de los que hacen demérito (apuññakārānaṃ) esos (te) son (honti) así (iti) esos que tienen malas esposas (kudārā); malas personas (kujanā). Así, esos que tienen malos hijos (kuputtā), esos que tienen malas casas (kugehā), esos que tienen malas ropas (kuvatthā), esos que tienen malas esclavas (kudāsā).</p></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s335')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s335"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s335')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s335')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s336">
+<div class="sutta-header" onclick="toggleCard('s336')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">336</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">347</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Kā ’ppatthesu ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(720)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Kā + appa-atthesu + ca = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Ku</strong> icc etassa <strong>kā</strong> hoti appatthesu ca.</p><p class="pali-para">Kālavaṇaṃ; kāpupphaṃ.</p><p class="pali-para"><strong>Bahuvacana</strong>ggahaṇaṃ kimatthaṃ? <strong>Ku</strong> icc etassa anappakatthesu pi kvaci <strong>kā</strong> hoti. Kāpurisā <span class="ref-tip"><span class="cita-term">(Khu. ii, 157; PetavatthuA. 117)</span><span class="ref-tip-box">Khuddaka-nikāya · Petavatthu-aṭṭhakathā</span></span>.</p></div><div class="gloss">Y en los significados de pocos, hay ‘kā’.</div><div class="vutti">Y en los significados de poco, hay ‘kā’ de ‘ku’.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s336seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s336seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Kālavaṇaṃ</strong> (poca sal).</li><li><strong>Kāpupphaṃ</strong> (poca flor (pocas flores)).</li></ol><p class="rest-para">¿Cuál es la finalidad de tomar “bahuvacana” (plural)? A veces, también en significados distintos de poco hay ‘kā’ de ‘ku’. Kāpurisā (malos hombres).</p></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s336')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s336"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s336')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s336')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s337">
+<div class="sutta-header" onclick="toggleCard('s337')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">337</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">350</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Kvaci samāsantagatānam akāranto <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(722)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Kvaci + samāsa-antagatānaṃ + akāro + anto = 4 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Samā</strong>santagatānaṃ nāmānam anto saro kvaci <strong>a</strong>kāro hoti.</p><p class="pali-para">Devānaṃ rājā devarājo, devarājā <span class="ref-tip"><span class="cita-term">(S. i, 236-7)</span><span class="ref-tip-box">Saṃyutta-nikāya · tomo i, página 236-7</span></span>; devānaṃ sakhā devasakho, devasakhā; pañca ahāni pañcāhaṃ <span class="ref-tip"><span class="cita-term">(Vin. iv, 112)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo iv, página 112</span></span>, sattāhaṃ <span class="ref-tip"><span class="cita-term">(M. ii, 242; Khu. i, 87)</span><span class="ref-tip-box">Majjhima-nikāya · Khuddaka-nikāya</span></span>, pañcagavaṃ; chattupāhanaṃ <span class="ref-tip"><span class="cita-term">(Vin. ii, 451)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo ii, página 451</span></span>; upasaradaṃ; visālakkho <span class="ref-tip"><span class="cita-term">(Khu. vi, 241)</span><span class="ref-tip-box">Khuddaka-nikāya · tomo vi, página 241</span></span>; vimukho.</p><p class="pali-para"><strong>Kāra</strong>ggahaṇaṃ kimatthaṃ? <strong>Ā</strong>kāranta-<strong>i</strong>kārantā<span class="fn-tip"><span class="fn-sup">17</span><span class="fn-tip-box">Ākārikārā (Sā).</span></span> ca honti. Paccakkhā dhammā yassa so ’yan ti paccakkhadhammā, surabhino gandho surabhigandhi; sundaro gandho sugandhi; pūtino gandho pūtigandhi; kucchito gandho kugandhi; duṭṭhu gandho yassa so ’yan ti duggandhi; pūti eva gandho pūtigandhi.</p><p class="pali-para"><strong>Nadī</strong>antā ca <strong>kattu</strong>antā ca <strong>ka</strong>paccayo hoti samāsante.</p><p class="pali-para">Bahū nadiyo yasmiṃ so ’yaṃ bahunadiko, janapado. Bahavo kattāro yassa so ’yaṃ bahukattuko, puriso.</p></div><div class="gloss">A veces hay ‘a’ de la vocal final de los que están al final de un compuesto.</div><div class="vutti">A veces, la vocal final de los nombres que están al final de un compuesto deviene ‘a’.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s337seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s337seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Devānaṃ rājā <strong>devarājo</strong>, <strong>devarājā</strong> (rey de los devas).</li><li>Devānaṃ sakhā <strong>devasakho</strong>, <strong>devasakhā</strong> (amigo de los devas).</li><li>Pañca ahāni <strong>pañcāhaṃ</strong> (cinco días).</li><li><strong>Sattāhaṃ</strong> (siete días).</li><li><strong>Pañcagavaṃ</strong> (cinco vacas).</li><li><strong>Chattupāhanaṃ</strong> (sombrilla y sandalias).</li><li><strong>Upasaradaṃ</strong> (cerca del otoño).</li><li><strong>Visālakkho</strong> ([el que tiene] ojos grandes).</li><li><strong>Vimukho</strong> ([el que tiene] el rostro deforme).</li></ol><p class="rest-para">¿Cuál es la finalidad de tomar “kāra” [por qué dice “akāranto” en lugar de “a-anto”]? Para permitir las sustituciones por ‘ā’ e ‘i’.</p><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Paccakkhā dhammā yassa so ’yan ti <strong>paccakkhadhammā</strong> ([uno que tiene] Dhammas realizados).</li><li>Surabhino gandho <strong>surabhigandhi</strong> (perfume de una flor fragante).</li><li>Sundaro gandho <strong>sugandhi</strong> (buen olor).</li><li>Pūtino gandho <strong>pūtigandhi</strong> (olor a podrido).</li><li>Kucchito gandho <strong>kugandhi</strong> (mal olor).</li><li>Duṭṭhu gandho yassa so ’yan ti <strong>duggandhi</strong> ([uno que tiene] mal olor).</li><li>Pūti eva gandho <strong>pūtigandhi</strong> (olor podrido).</li></ol><p class="rest-para">Hay el sufijo ‘ka’ al final del compuesto de los que tienen “nadī” como último miembro y de los que tienen “kattu” como último miembro.</p><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Bahū nadiyo yasmiṃ so ’yaṃ <strong>bahunadiko</strong>, janapado (muchos ríos en ese; ese es “bahunadiko” [el que tiene muchos ríos], un distrito [es lo que se quiere decir]).</li><li>Bahavo kattāro yassa so ’yaṃ <strong>bahukattuko</strong>, puriso (muchos ayudantes de ese; ese es “bahukattuko” [uno que tiene muchos ayudantes], una persona [es lo que se quiere decir]).</li></ol></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s337fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s337fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">17</span><span class="fn-text">Ākārikārā (Sā).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s337')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s337"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s337')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s337')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s338">
+<div class="sutta-header" onclick="toggleCard('s338')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">338</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">356</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Nadimhā ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(725)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Nadimhā + ca = 2 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Nadi</strong>mhā ca <strong>ka</strong>paccayo hoti samāsante.</p><p class="pali-para">Bahū nadiyo yasmiṃ so ’yan ti bahunadiko. Bahū kantiyo yassa so ’yan ti bahukantiko. Bahunāriko.</p></div><div class="gloss">Y después de “nadī”.<span class="fn-tip"><span class="fn-sup">18</span><span class="fn-tip-box">Aquí “nadī” significa las palabras que terminan en ‘ī’ y ‘ū’ en el género femenino.</span></span></div><div class="vutti">Y al final de un compuesto, después de “nadī”, hay el sufijo ‘ka’.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s338seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s338seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Bahū nadiyo yasmiṃ so ’yan ti <strong>bahunadiko</strong> (hay muchos ríos en éste, éste es [un lugar que tiene] muchos ríos).</li><li>Bahū kantiyo yassa so ’yan ti <strong>bahukantiko</strong> (hay muchos encantos de éste, éste es [uno que tiene] muchos encantos).</li><li>Bahū nārikā yassa so ’yan ti <strong>bahunāriko</strong> (hay muchas mujeres de éste, éste es [uno que tiene] muchas mujeres).</li></ol></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s338fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s338fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">18</span><span class="fn-text">Aquí “nadī” significa las palabras que terminan en ‘ī’ y ‘ū’ en el género femenino.</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s338')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s338"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s338')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s338')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s339">
+<div class="sutta-header" onclick="toggleCard('s339')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">339</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">358</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Jāyāya tudaṃ-jāni<span class="fn-tip"><span class="fn-sup">19</span><span class="fn-tip-box">Daṃjānī (K).</span></span></span></div>
+<div class="sutta-breakdown">[Jāyāya + tudaṃ-jāni + patimhi = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Jāyā</strong> icc etāya <strong>tudaṃ jāni</strong> icc ete ādesā honti <strong>pati</strong>mhi pare.</p><p class="pali-para">Tudaṃpatī,<span class="fn-tip"><span class="fn-sup">20</span><span class="fn-tip-box">Dampatī (Sī/k).</span></span> jānipatī.</p></div><div class="gloss">Cuando sigue “pati”, hay “tudaṃ” y “jāni” de “jāyā”.</div><div class="vutti">Cuando sigue “pati”, hay estas sustituciones de “jāyā”: “tudaṃ” y “jāni”.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s339seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s339seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Tudaṃpatī</strong> (esposa y esposo).</li><li><strong>Jānipatī</strong> (esposa y esposo).</li></ol></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="2" onclick="toggleSeq('s339fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (2)
+      </button>
+<div class="collapsible-content" id="s339fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">19</span><span class="fn-text">Daṃjānī (K).</span></div><div class="fn-item"><span class="fn-num">20</span><span class="fn-text">Dampatī (Sī/k).</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s339')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s339"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s339')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s339')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s340">
+<div class="sutta-header" onclick="toggleCard('s340')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">340</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">355</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Dhanumh’ ā ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(732)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Dhanumhā + ā + ca = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para"><strong>Dhanu</strong>mhā ca <strong>ā</strong>paccayo hoti samāsante.</p><p class="pali-para">Gāṇḍīvo dhanu yassa so ’yaṃ gāṇḍīvadhanvā.</p></div><div class="gloss">Y hay ‘ā’ después de “dhanu”.</div><div class="vutti">Al final de un compuesto, hay el sufijo ‘ā’ después de “dhanu”.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s340seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s340seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Gāṇḍīvo dhanu yassa so ’yaṃ <strong>gāṇḍīvadhanvā</strong> (el arco de ese es de junturas; ese es “gāṇḍīvadhanvā” [uno que tiene un arco con muchas junturas]).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s340')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s340"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s340')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s340')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s341">
+<div class="sutta-header" onclick="toggleCard('s341')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">341</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">336</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Aṃ vibhattīnam akārantā abyayībhāvā <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(733)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Aṃ + vibhattīnaṃ + akārantā + abyayībhāvā = 4 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Tasmā <strong>a</strong>kārantā abyayībhāvasamāsā parāsaṃ vibhattīnaṃ kvaci <strong>aṃ</strong> hoti.</p><p class="pali-para">Adhicittaṃ <span class="ref-tip"><span class="cita-term">(Vin. iii, 278; A. i, 232, 238)</span><span class="ref-tip-box">Vinaya-piṭaka · Aṅguttara-nikāya</span></span>; yathāvuḍḍhaṃ <span class="ref-tip"><span class="cita-term">(JA. i, 234; VinA. i, 10)</span><span class="ref-tip-box">Jātaka-aṭṭhakathā · Vinaya-aṭṭhakathā</span></span>; upakumbhaṃ; yāvajīvaṃ <span class="ref-tip"><span class="cita-term">(Vin. i, 27; iii, 63, 133)</span><span class="ref-tip-box">Vinaya-piṭaka</span></span>; tiropabbataṃ <span class="ref-tip"><span class="cita-term">(D. i, 73; M. i, 41; A. i, 170)</span><span class="ref-tip-box">Dīgha-nikāya · Majjhima-nikāya · Aṅguttara-nikāya</span></span>; tiropākāraṃ <span class="ref-tip"><span class="cita-term">(Vin. ii, 348)</span><span class="ref-tip-box">Vinaya-piṭaka · tomo ii, página 348</span></span>; tirokuṭṭaṃ <span class="ref-tip"><span class="cita-term">(D. i, 74; A. i, 170)</span><span class="ref-tip-box">Dīgha-nikāya · Aṅguttara-nikāya</span></span>; antopāsādaṃ.</p><p class="pali-para"><strong>Kvacī</strong> ti kimatthaṃ? Adhicittassa bhikkhuno.</p></div><div class="gloss">Después de un compuesto adverbial que termina en ‘a’, las inflexiones devienen ‘aṃ’.</div><div class="vutti">A veces, después de un compuesto adverbial que termina en ‘a’, las inflexiones siguientes devienen ‘aṃ’.<span class="fn-tip"><span class="fn-sup">21</span><span class="fn-tip-box">De acuerdo con este sutta la terminación ‘aṃ’ puede significar cualquiera de las otras inflexiones.</span></span></div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s341seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s341seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Adhicittaṃ</strong> (mente superior).</li><li><strong>Yathāvuḍḍhaṃ</strong> (según la antigüedad).</li><li><strong>Upakumbhaṃ</strong> (la conversación que surgió cerca de la vasija de agua).</li><li><strong>Yāvajīvaṃ</strong> (mientras dure la vida).</li><li><strong>Tiropabbataṃ</strong> (a través de la montaña).</li><li><strong>Tiropākāraṃ</strong> (a través del muro circundante).</li><li><strong>Tirokuṭṭaṃ</strong> (más allá del muro).</li><li><strong>Antopāsādaṃ</strong> (dentro de la mansión).</li></ol><p class="rest-para">¿Cuál es la finalidad de decir “kvaci” (a veces)? [Para permitir excepciones a este sutta, como en:] De la mente superior (adhicittassa) del bhikkhu (bhikkhuno).</p></div></div>
+<hr class="divider"/><button class="collapsible-btn" data-type="fn" data-count="1" onclick="toggleSeq('s341fn', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Ver notas (1)
+      </button>
+<div class="collapsible-content" id="s341fn"><div class="fn-block"><div class="fn-item"><span class="fn-num">21</span><span class="fn-text">De acuerdo con este sutta la terminación ‘aṃ’ puede significar cualquiera de las otras inflexiones.</span></div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s341')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s341"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s341')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s341')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s342">
+<div class="sutta-header" onclick="toggleCard('s342')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">342</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">337</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Saro rasso napuṃsake <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(734)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Saro + rasso + napuṃsake = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Napuṃsake vattamānassa abyayībhāvasamāsassa liṅgassa saro rasso hoti.</p><p class="pali-para">Kumārīsu adhikicca pavattati kathā iti adhikumāri. Upavadhu; upagaṅgaṃ; upamaṇikaṃ.</p></div><div class="gloss">En el neutro hay vocal corta.</div><div class="vutti">La vocal de la base del compuesto adverbial que está en [género] neutro se acorta.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s342seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s342seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li>Kumārīsu adhikicca pavattati kathā iti <strong>adhikumāri</strong> (la conversación que surge con referencia a las doncellas).</li><li><strong>Upavadhu</strong> (la conversación que surge cerca de la nuera).</li><li><strong>Upagaṅgaṃ</strong> (la conversación que surge cerca del Ganges).</li><li><strong>Upamaṇikaṃ</strong> (la conversación que surge cerca de la vasija grande).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s342')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s342"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s342')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s342')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="sutta-card" id="s343">
+<div class="sutta-header" onclick="toggleCard('s343')" role="button" tabindex="0">
+<div class="sutta-meta">
+<div class="sutta-ref-line"><span class="sutta-ref"><span class="ref-tip"><span class="ref-tip-term">343</span><span class="ref-tip-box">Kaccāyana Sutta</span></span>. <span class="ref-tip"><span class="ref-tip-term">338</span><span class="ref-tip-box">Rūpasiddhi Sutta</span></span>.</span><span class="sutta-pali-title">Aññasmā lopo ca <span class="sutta-ref-num"><span class="ref-tip"><span class="ref-tip-term">(735)</span><span class="ref-tip-box">Saddanīti-Suttamālā Sutta</span></span></span></span></div>
+<div class="sutta-breakdown">[Aññasmā + lopo + ca = 3 voces]</div>
+</div>
+<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>
+</div>
+<div class="sutta-body">
+<div class="pali-block"><p class="pali-para">Aññasmā abyayībhāvasamāsā anakārantā parāsaṃ vibhattīnaṃ lopo ca hoti.</p><p class="pali-para">Adhitthi <span class="ref-tip"><span class="cita-term">(Vism. i, 344)</span><span class="ref-tip-box">Visuddhimagga · tomo i, página 344</span></span>, adhikumāri, upavadhu.</p></div><div class="gloss">Y hay elisión después de otros.</div><div class="vutti">Y hay elisión de las inflexiones siguientes después de otros compuestos adverbiales que no terminan en ‘a’.</div><hr class="divider"/><button class="collapsible-btn" data-type="rest" onclick="toggleSeq('s343seq', this)"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M4 6h12M4 10h8M4 14h10"></path></svg>
+        Mostrar más (formación, etc.)
+      </button>
+<div class="collapsible-content" id="s343seq"><div class="rest-content"><div class="section-label">Ejemplos</div><ol class="seq-list seq-ejemplos"><li><strong>Adhitthi</strong> (la conversación que surge con referencia a una mujer).</li><li><strong>Adhikumāri</strong> (la conversación que surge con referencia a las doncellas).</li><li><strong>Upavadhu</strong> (la conversación que surge cerca de la nuera).</li></ol></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('s343')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-s343"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('s343')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('s343')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="kanda-end"><div class="kanda-end-pali">Iti nāma-kappe samāsa-kappo sattamo kaṇḍo</div><div class="kanda-end-es">Así termina el capítulo de compuestos, séptima sección del capítulo de nombres</div></div>
+</div>
+<div class="chapter-end"><div class="chapter-end-pali">Samāsa-kappo niṭṭhito</div><div class="chapter-end-es">Fin del capítulo de compuestos</div></div>
+
+<div class="footer-box">
+<div class="footer-box-main">
+<strong>Kaccāyana-Byākaraṇaṃ</strong> — 4-Samāsa-Kappa · 28 suttas (§316–§343).
+Pasa el cursor sobre los términos pāḷi o los superíndices numéricos para ver su significado. Expande «Ver notas» para leer las notas completas.
+</div>
+<div class="footer-box-copy">
+<span class="marca-lockup"></span>
+Edición del texto en pāḷi y traducción al español por Bhikkhu Nandisena. Este material puede ser reproducido para uso personal y distribuido de forma gratuita. Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license">CC BY-NC-ND 4.0</a> · DOI <a href="https://doi.org/10.5281/zenodo.21948010">10.5281/zenodo.21948010</a>.
+<p class="version-foot">Versión 1.0 — <time datetime="2026-09-06">6 de septiembre de 2026</time>. Primera edición: §316–§343, los 28 suttas del Samāsa-kappa (séptima sección del Nāma-kappa), revisados por el IEBH, con las 99 referencias canónicas de la edición base restituidas por reconstrucción y las 21 notas de Nandisena.</p></div>
+</div>
+</div>
+</div>
+<script>
+window.PALI_CAPITULO = {
+  id:            'kaccayana-samasa',
+  doneKey:       'kaccayana_samasa_done',
+  obra:          'Kaccāyana-Byākaraṇaṃ',
+  obraSubtitulo: 'Gramática de Kaccāyana',
+  capituloPali:  '4-Samāsa-Kappa',
+  capituloEs:    '4-Capítulo de compuestos',
+  epubNombre:    'Kaccāyana-4-Samāsa-Kappa.epub',
+  idioma:        'es',
+  textos:        {"estudiados": "estudiados", "abiertos": "abiertos", "ocultar_notas": "Ocultar notas", "ver_notas": "Ver notas", "ocultar": "Ocultar", "mostrar_mas": "Mostrar más (formación, etc.)", "encontrados": "sutta(s) encontrado(s)", "copiado": "✓ Copiado", "copiar": "Copiar §"}
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="../../assets/pali.js?v=b28c26b1"></script>
+</body>
+</html>

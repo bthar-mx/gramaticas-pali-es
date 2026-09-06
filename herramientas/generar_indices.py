@@ -41,9 +41,12 @@ CAPITULOS_KACC = [
     (3, "Kāraka-Kappa", "03-karaka-kappa",
      "Capítulo de casos gramaticales — las relaciones sintácticas y las "
      "inflexiones que las expresan."),
-    (4, "Samāsa-Kappa", "04-samasa-kappa", "Capítulo de los compuestos."),
+    (4, "Samāsa-Kappa", "04-samasa-kappa",
+     "Capítulo de compuestos — las seis clases de compuesto nominal "
+     "(abyayībhāva, dvanda, kammadhāraya, digu, tappurisa, bahubbīhi) y "
+     "sus reglas de formación."),
     (5, "Taddhita-Kappa", "05-taddhita-kappa",
-     "Capítulo de los derivados nominales."),
+     "Capítulo de los derivados secundarios."),
     (6, "Ākhyāta-Kappa", "06-akhyata-kappa", "Capítulo del verbo."),
     (7, "Kibbidhāna-Kappa", "07-kibbidhana-kappa",
      "Capítulo de los sufijos primarios."),
@@ -56,6 +59,7 @@ DETALLE = {
     1: "§1–§51, en cinco kaṇḍas.",
     2: "§52–§270, en cinco kaṇḍas.",
     3: "§271–§315, sexta sección del Nāma-kappa.",
+    4: "§316–§343, séptima sección del Nāma-kappa.",
 }
 
 OBRAS = [
@@ -194,9 +198,16 @@ EN = {
     "inflexiones que las expresan.":
         "Chapter on grammatical cases — the syntactic relations and the "
         "inflections that express them.",
-    "Capítulo de los compuestos.": "Chapter on compounds.",
-    "Capítulo de los derivados nominales.":
-        "Chapter on nominal derivatives.",
+    "Capítulo de compuestos — las seis clases de compuesto nominal "
+    "(abyayībhāva, dvanda, kammadhāraya, digu, tappurisa, bahubbīhi) y "
+    "sus reglas de formación.":
+        "Chapter on compounds — the six kinds of nominal compound "
+        "(abyayībhāva, dvanda, kammadhāraya, digu, tappurisa, bahubbīhi) "
+        "and the rules that form them.",
+    "§316–§343, séptima sección del Nāma-kappa.":
+        "§316–§343, seventh section of the Nāma-kappa.",
+    "Capítulo de los derivados secundarios.":
+        "Chapter on secondary derivatives.",
     "Capítulo del verbo.": "Chapter on the verb.",
     "Capítulo de los sufijos primarios.": "Chapter on primary suffixes.",
     "Capítulo de los sufijos <i>uṇādi</i>.":
