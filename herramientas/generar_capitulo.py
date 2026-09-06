@@ -130,6 +130,16 @@ CAPITULOS = {
                         "revisados por el IEBH, con las 99 referencias "
                         "canónicas de la edición base restituidas por "
                         "reconstrucción y las 21 notas de Nandisena.",
+        "version_en": "1.0",
+        "version_fecha_en": "2026-09-06",
+        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+                           "translation with the apparatus of the Spanish "
+                           "edition (numbered examples with the compound "
+                           "in bold, the analyses of §328 as formation "
+                           "titles, word-count breakdowns after Thitzana, "
+                           "the 99 canonical references and the 21 notes) "
+                           "and the fixed glossary for the names of the "
+                           "compounds.",
     },
 }
 
