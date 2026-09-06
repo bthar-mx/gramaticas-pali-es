@@ -9,7 +9,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="../assets/pali.css?v=af596593" rel="stylesheet"/>
+<link href="../assets/pali.css?v=6da18653" rel="stylesheet"/>
 </head>
 <body>
 <script>/* Tema guardado, antes de pintar. */
@@ -113,11 +113,18 @@ document.body.classList.add('dark');}catch(e){}</script>
   var TITULOS = { es: "Kaccāyana-Byākaraṇaṃ · Gramáticas Pāḷi en español", en: "Kaccāyana-Byākaraṇaṃ · Pāḷi Grammars in Spanish" };
   var l = document.createElement('button');
   l.id = 'lang-btn'; l.type = 'button';
+  /* Dos segmentos, ES | EN: el de la lengua en curso va relleno (sesión
+     60; mismo dibujo que en las páginas de capítulo). */
+  var sES = document.createElement('span'), sEN = document.createElement('span');
+  sES.className = sEN.className = 'lang-seg';
+  sES.textContent = 'ES'; sEN.textContent = 'EN';
+  l.appendChild(sES); l.appendChild(sEN);
   function pinta() {
     var en = document.body.classList.contains('en');
     document.documentElement.lang = en ? 'en' : 'es';
     document.title = en ? TITULOS.en : TITULOS.es;
-    l.textContent = en ? 'ES' : 'EN';
+    sES.classList.toggle('lang-cur', !en);
+    sEN.classList.toggle('lang-cur', en);
     l.setAttribute('aria-label', en ? 'Ver en español' : 'View in English');
   }
   try { if (localStorage.getItem('pali_lang') === 'en') document.body.classList.add('en'); } catch (e) {}
