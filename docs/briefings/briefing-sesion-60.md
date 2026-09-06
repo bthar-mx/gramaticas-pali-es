@@ -204,3 +204,13 @@ enlace a la otra página, con el ancla); en los índices, el JS de
 compacta bajo 720 px). Los recursos (solucionador, verbo…) tienen su propio
 botón `#en-btn` y no se han tocado.
 
+## 11. Despliegue: el push de 6b5ee49 no desplegó solo
+
+El push del IEBH llegó a GitHub (el «remote rejected» fue un segundo push
+que corrió contra el primero, ya aceptado), pero el sitio se quedó en
+41b6360: `/en/kaccayana/samasa/` daba 404 y no había conmutador. Se desplegó
+a mano con `npx wrangler deploy` (versión 22306a47) y quedó todo en línea.
+Si vuelve a pasar, mirar la conexión con GitHub del worker en el panel de
+Cloudflare; `herramientas/comprobar_despliegue.py --todo` dice si lo de la
+Mac coincide con lo servido.
+
