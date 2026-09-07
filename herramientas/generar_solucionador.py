@@ -47,9 +47,27 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "2.0"
-FECHA = "2026-08-31"
-NOTA = ("EL MOTOR YA NO ES SÓLO KACCĀYANA, y por eso cambia el número entero. "
+VERSION = "2.1"
+FECHA = "2026-09-07"
+NOTA = ("LO REGISTRADO A MANO YA SE VE SIEMPRE. La 1.12 dio esto por hecho y "
+        "lo cumplía a medias: el bloque de registradas preguntaba «¿está en "
+        "el pasaje?» cuando la pregunta era «¿ya tiene tarjeta?». Las dos "
+        "sólo coinciden si todo lo del pasaje recibe tarjeta, y no es así, "
+        "porque la página sólo la da a lo que el motor señala. De modo que "
+        "una voz presente en el pasaje y no señalada —el caso mismo para el "
+        "que existe la caja: un sandhi que se ve leyendo y que el motor se "
+        "saltó— no recibía tarjeta por ningún lado, y sin tarjeta no hay "
+        "campo de nota, ni de escalera, ni botón de borrar: el veredicto "
+        "viajaba al .md solo. LO ENCONTRÓ UN ESTUDIANTE LEYENDO EL CÓDIGO, "
+        "después de que dos lotes suyos salieran así y de escribir a mano en "
+        "el archivo exportado las escaleras que la página no le pedía. Con "
+        "ello, el .md dice ahora de dónde sale cada veredicto: de la tarjeta "
+        "del solucionador o de la caja del revisor, que antes no se "
+        "distinguía. Las cuentas del encabezado no cambian —lo registrado a "
+        "mano sigue fuera de ellas—, porque miden al detector y no al "
+        "revisor. "
+        "Antes, en la 2.0: EL MOTOR YA NO ES SÓLO KACCĀYANA, y por eso "
+        "cambió el número entero. "
         "El 2026-08-30 entró en él la primera operación que Kaccāyana no "
         "enuncia: SADDANĪTI SUTTAMĀLĀ §49 —«evassekāre itissaññassa cissa "
         "vo»—, sin la cual «tveva» no ofrecía su lectura citativa. Hasta "
@@ -64,13 +82,14 @@ NOTA = ("EL MOTOR YA NO ES SÓLO KACCĀYANA, y por eso cambia el número entero.
         "juntura. Del 2026-08-31: enviar a la cola pide identidad verificada, "
         "con dos papeles —revisor y aprendiz—, de modo que cada veredicto "
         "sabe de quién viene y la atribución deja de suponerse. "
-        "Antes, en la versión 1.12: LO REGISTRADO A MANO YA SE VE. Una voz "
-        "dada de alta por el campo «sandhi no detectado» no aparecía por "
-        "ninguna parte, porque la página sólo dibuja tarjeta para lo que el "
-        "motor señala y una voz registrada a mano es, por definición, una "
-        "sobre la que el motor calla. Ahora llevan su tarjeta, rotulada "
+        "Y en la 1.12: LO REGISTRADO A MANO SE EMPEZÓ A VER. Una voz dada de "
+        "alta por el campo «sandhi no detectado» no aparecía por ninguna "
+        "parte, porque la página sólo dibuja tarjeta para lo que el motor "
+        "señala y una voz registrada a mano es, por definición, una sobre la "
+        "que el motor calla. Desde entonces llevan su tarjeta, rotulada "
         "aparte y a la vista aunque se analice otro pasaje, con su campo de "
-        "nota y de escalera.")
+        "nota y de escalera — pero sólo las que NO estaban en el pasaje "
+        "analizado, que es la mitad que faltaba y que corrige la 2.1.")
 
 PRELUDIO = """\
 /* Mini-require: los módulos de nuestro/js/ tal cual, envueltos. */
