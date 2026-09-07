@@ -1175,7 +1175,10 @@ def render(cap, meta, notas):
         # La elección viaja con el lector (clave «pali_lang», la misma de la
         # portada y los recursos): si eligió la otra lengua, se le lleva a la
         # otra página, con su ancla. Pulsar el botón cambia la elección.
-        lang_script = ('<script>try{{if(localStorage.getItem(\'pali_lang\')===\'{1}\')'
+        # Y si no ha elegido todavía, `paliLang()` mira la lengua del
+        # navegador, de modo que a quien tiene el sistema en inglés se le
+        # abre la edición inglesa sin que tenga que pedirla (sesión 63).
+        lang_script = ('<script>try{{if(paliLang()===\'{1}\')'
                        'location.replace(\'{0}\'+location.hash)}}catch(e){{}}</script>'
                        .format(alt_url, otra["lang"]))
     return PLANTILLA.format(
@@ -1200,17 +1203,25 @@ def render(cap, meta, notas):
         estudiados_t=L["estudiados_t"], pie_ayuda=L["pie_ayuda"],
         modo_oscuro=L["modo_oscuro"], modo_oscuro_t=L["modo_oscuro_t"],
         volver_inicio=L["volver_inicio"], toc_label=L["toc_label"],
-        js_textos=json.dumps(L["js"], ensure_ascii=False),
+        js_capitulo=json.dumps({
+            "id": "{0}-{1}{2}".format(meta["obra_slug"], meta["slug"],
+                                      "-en" if es_en else ""),
+            "doneKey": "{0}_{1}{2}_done".format(meta["obra_slug"], meta["slug"],
+                                                "_en" if es_en else ""),
+            "obra": meta["obra"],
+            "obraSubtitulo": obra_sub,
+            "capituloPali": meta["titulo_pali"],
+            "capituloEs": titulo_es,
+            "epubNombre": "{0}-{1}{2}.epub".format(
+                meta["obra"].split("-")[0], meta["titulo_pali"],
+                "-en" if es_en else ""),
+            "idioma": L["lang"],
+            "textos": L["js"],
+        }, ensure_ascii=False, indent=2),
         toc=render_toc(suttas, meta),
         kanda_nav=render_kanda_nav(suttas),
         assets_v=version_assets(),
         cuerpo="".join(cuerpo),
-        done_key="{0}_{1}{2}_done".format(meta["obra_slug"], meta["slug"],
-                                         "_en" if es_en else ""),
-        cap_id="{0}-{1}{2}".format(meta["obra_slug"], meta["slug"],
-                                  "-en" if es_en else ""),
-        epub="{0}-{1}{2}.epub".format(meta["obra"].split("-")[0],
-                                     meta["titulo_pali"], "-en" if es_en else ""),
     )
 
 
@@ -1271,7 +1282,17 @@ PLANTILLA = '''<!DOCTYPE html>
 <script>/* Tema guardado (clave compartida con /recursos/sandhi/), antes de pintar. */
 try{{var _d=localStorage.getItem('pali_dark');
 if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
-document.body.classList.add('dark');}}catch(e){{}}</script>
+document.body.classList.add('dark');}}catch(e){{}}
+/* Lengua de arranque, la misma función en todo el sitio (sesión 63): manda
+   la elección del lector si la hizo, y si no la hizo manda la lengua de su
+   navegador, que es la de su sistema operativo. Aquí decide además a cuál de
+   las dos páginas —ésta o su hermana— se le lleva; el conmutador ES|EN sigue
+   estando, y pulsarlo guarda la elección, que a partir de entonces manda. */
+function paliLang(){{var g=null;
+try{{g=localStorage.getItem('pali_lang');}}catch(e){{}}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\\b/i.test(n)?'en':'es';}}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="{modo_oscuro}" id="dark-btn" onclick="toggleDark()" title="{modo_oscuro_t}">🌓</button>
@@ -1322,17 +1343,13 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 </div>
 </div>
 <script>
-window.PALI_CAPITULO = {{
-  id:            '{cap_id}',
-  doneKey:       '{done_key}',
-  obra:          '{obra}',
-  obraSubtitulo: '{obra_sub}',
-  capituloPali:  '{titulo_pali}',
-  capituloEs:    '{titulo_es}',
-  epubNombre:    '{epub}',
-  idioma:        '{lang}',
-  textos:        {js_textos}
-}};
+/* Va como JSON y no como literales entre comillas simples: el subtítulo
+   inglés de la obra es «Kaccāyana's Grammar», y ese apóstrofo cerraba la
+   cadena y rompía el bloque entero, de modo que en las cuatro páginas
+   inglesas `window.PALI_CAPITULO` no llegaba a existir y pali.js caía en
+   sus cadenas españolas de reserva —el contador decía «estudiados»—
+   (sesión 63). Con json.dumps no vuelve a pasar con ningún carácter. */
+window.PALI_CAPITULO = {js_capitulo};
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="{raiz}assets/pali.js?v={assets_v}"></script>

@@ -326,11 +326,21 @@ body:not(.en) .i-en{display:none}
 </style>
 </head>
 <body>
+<script>/* Lengua de arranque, y es la misma función en todo el sitio (sesión
+   63): manda la elección del lector si la hizo, y si no la hizo manda la
+   lengua de su navegador, que es la de su sistema operativo. El español es
+   el que queda por defecto, que es la lengua del proyecto, y a él van a
+   parar las lenguas que no son el inglés. */
+function paliLang(){var g=null;
+try{g=localStorage.getItem('pali_lang');}catch(e){}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\b/i.test(n)?'en':'es';}</script>
 
 <header>
   <div class="wrap mast">
     <div>
-      <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <a class="volver-sitio" href="../"><span class="i-es">← Recursos · Gramáticas Pāḷi</span><span class="i-en">← Resources · Pāḷi Grammars</span></a>
       <!-- 2026-08-31, pedido del IEBH: el mando de sesión, arriba a la
            DERECHA de la cabecera. Estaba entre los botones de análisis, y ahí
            se leía como una acción del solucionador cuando no lo es: dice quién
@@ -483,12 +493,20 @@ body:not(.en) .i-en{display:none}
   </div>
   </details>
 
-  <p class="licencia"><span class="marca-lockup"></span>Preparado por Miguel De Anquín y
+  <!-- La fórmula inglesa de la licencia es la que ya usan las páginas de
+       capítulo (COPYRIGHT_EN en generar_capitulo.py), para que el sitio diga
+       lo mismo en los dos sitios. -->
+  <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Miguel De Anquín y
   Bhikkhu Nandisena basándose en el capítulo 1 del Kaccāyana y Rūpasiddhi, y también el
   capítulo correspondiente del Saddanīti Suttamālā.<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</p>
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Prepared by Miguel De Anquín and
+  Bhikkhu Nandisena on the basis of chapter 1 of the Kaccāyana and the Rūpasiddhi, and of the
+  corresponding chapter of the Saddanīti Suttamālā.<br>
+  This material may be reproduced for personal use and distributed free of charge.<br>
+  Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
 </footer>
 
 <script id="motor">
@@ -590,8 +608,7 @@ const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&g
    (motivos, procedencias, pasos) siguen en español — son la voz del
    proyecto y el arnés de la etapa 4 los compara byte a byte con el
    Python. tr(k) busca en el idioma puesto y cae al español. */
-let IDIOMA = 'es';
-try { if(localStorage.getItem('pali_solucionador_en') === '1') IDIOMA = 'en'; } catch(e){}
+let IDIOMA = paliLang();
 const TXT = {
   es: {
     titulo_doc: 'Solucionador de sandhis · pāḷi',
@@ -1835,7 +1852,7 @@ document.addEventListener('click', e => {
        El aria-label es bilingüe a propósito y sirve para los dos sentidos. */
     b.textContent = v ? 'ES' : 'EN';
     revPintarEntrar();
-    try { localStorage.setItem('pali_solucionador_en', v ? '1' : '0'); } catch(e){}
+    try { localStorage.setItem('pali_lang', v ? 'en' : 'es'); } catch(e){}
     /* Los mandos fijos, en el idioma puesto. */
     $('analizar').textContent = tr('b_analizar');
     $('limpiar').textContent = tr('b_limpiar');
