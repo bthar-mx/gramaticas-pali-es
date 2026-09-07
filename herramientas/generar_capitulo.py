@@ -68,9 +68,13 @@ CAPITULOS = {
         "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.4",
+        "version": "1.5",
         "version_fecha": "2026-09-07",
-        "version_nota": "Completada la formación de «tassā», «yassā» y "
+        "version_nota": "En «svāgataṃ» (§71) la vocal que se elide es la de "
+                        "‘va’, no la de ‘ya’: ‘ya’ es de «agyāgāraṃ», la "
+                        "derivación vecina, y en «su + āgataṃ» no hay ninguna. "
+                        "Antes, en la versión 1.4: completada la formación de "
+                        "«tassā», «yassā» y "
                         "«sabbassā» (§66), que no mostraban el paso por el "
                         "cual ‘sa’ se sustituye por ‘sā’ (§179) y daban "
                         "«tassa» en vez de «tassā»; sus hermanas «tassaṃ», "

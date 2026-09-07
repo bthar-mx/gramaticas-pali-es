@@ -488,7 +488,7 @@ Cuando sigue una vocal, ‘jha’ y ‘la’ se sustituyen por ‘ya’ y ‘va�
 Ejemplos:
 
 1. **Agyāgāraṃ** \= aggi \+ āgāraṃ (‘i’ de “aggi” recibe el nombre de ‘jha’ (§58); ‘i’ se sustituye por ‘ya’ (§71); ‘a’ de ‘ya’ se elide (§83); ‘g’ de “aggi” también se elide (§41)).  
-2. **Svāgataṃ** \= su \+ āgataṃ (‘u’ recibe el nombre de ‘la’ (§58); ‘u’ se sustituye por ‘va’ (§71); ‘a’ de ‘ya’ se elide (§83)).  
+2. **Svāgataṃ** \= su \+ āgataṃ (‘u’ recibe el nombre de ‘la’ (§58); ‘u’ se sustituye por ‘va’ (§71); ‘a’ de ‘va’ se elide (§83)).  
 3. El procedimiento de formación del resto de los ejemplos es similar al anterior.
 
 “Ca” se usa en el sentido de adición (*sampiṇḍana*).[^12]
