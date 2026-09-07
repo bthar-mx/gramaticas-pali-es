@@ -451,7 +451,7 @@ Vā ti vikappanatthaṃ? Ikārassa ayādeso hoti. Vatthuttayaṃ.
 
 When a vowel follows, optionally, \[there are\] ‘iya’ and ‘uva’ of ‘jha’ and ‘la’.
 
-Optionally, when a vowel follows, ‘jha’ and ‘la’ are substituted by ‘iya’ and ‘uva’ respectively. i ī — iya u ū — uva 
+Optionally, when a vowel follows, ‘jha’ and ‘la’ are substituted by ‘iya’ and ‘uva’ respectively.[^11]
 
 ---
 
@@ -491,7 +491,7 @@ Examples:
 2. **Svāgataṃ** \= su \+ āgataṃ (‘u’ is named ‘la’ (§58); ‘u’ is substituted by ‘va’ (§71); ‘a’ of ‘va’ is elided (§83)).  
 3. The formation of the rest of the examples is similar to the previous ones.
 
-“Ca” is used in the meaning of collecting (*sampiṇḍana*).[^11]
+“Ca” is used in the meaning of collecting (*sampiṇḍana*).[^12]
 
 ---
 
@@ -552,7 +552,7 @@ Gāvena, gāvā, gāve, gāvesu.
 
 ---
 
-And when \[any of the three\][^12] ‘yo’ follow.
+And when \[any of the three\][^13] ‘yo’ follow.
 
 When \[any of the three\] ‘yo’ follow, ‘o’ of “go” is substituted by ‘āva’.
 
@@ -719,13 +719,13 @@ Uggate sūriye; uggacchati; uggahetvā.
 
 And when \[‘ava’\] is the preceding member (*upapada*) and a consonant follows, \[there is\] reversion of that.
 
-When the word ‘ava’ is the preceding member (*upapada*) and a consonant follows, ‘o’ of ‘ava’ is reversed \[into ‘u’\].[^13]
+When the word ‘ava’ is the preceding member (*upapada*) and a consonant follows, ‘o’ of ‘ava’ is reversed \[into ‘u’\].[^14]
 
 ---
 
 Example:
 
-1. **Uggate** \= ava \+ gate (‘ava’ is substituted by ‘o’ (§50); then ‘o’ becomes ‘u’ (§79); ‘g’ of “gate” is doubled (§20)).[^14]
+1. **Uggate** \= ava \+ gate (‘ava’ is substituted by ‘o’ (§50); then ‘o’ becomes ‘u’ (§79); ‘g’ of “gate” is doubled (§20)).[^15]
 
 “Ca” is for \[delimiting the application of\] this rule, \[which does not apply in\] avasāne, avakiraṇe, avakirati.
 
@@ -825,7 +825,7 @@ What is the purpose of saying “‘aṃ’ and ‘ma’”? \[This sutta does n
 
 What is the purpose of saying “after ‘jha’, ‘la’ and ‘pa’”? \[This sutta does not apply when there is no ‘jha’, ‘la’ or ‘pa’, such as in\] sukhaṃ, dukkhaṃ.
 
-Taking again “jha-la-pehi” is to prevent “vā” from following up to here.[^15] Examples: aggiṃ, paṭuṃ, buddhiṃ, vadhuṃ.
+Taking again “jha-la-pehi” is to prevent “vā” from following up to here.[^16] Examples: aggiṃ, paṭuṃ, buddhiṃ, vadhuṃ.
 
 ---
 
@@ -848,7 +848,7 @@ Purisaṃ, purise, pāpaṃ, pāpe, pāpiyo, pāpiṭṭho.
 
 When ‘aṃ’, a substitution, a suffix, etc., follow, \[there is\] elision of the vowel; when there is elision of the vowel, \[the remaining vowel remains\] natural.
 
-When \[the inflection\] ‘aṃ’, a substitution, a suffix, etc., follow, there is elision of the vowel; and when there is elision of the vowel, \[the remaining vowel\] remains natural.[^16][^17]
+When \[the inflection\] ‘aṃ’, a substitution, a suffix, etc., follow, there is elision of the vowel; and when there is elision of the vowel, \[the remaining vowel\] remains natural.[^17][^18]
 
 ---
 
@@ -857,7 +857,7 @@ Examples:
 1. **Purisaṃ** \= purisa \+ aṃ (because of ‘aṃ’, there is elision of the vowel ‘a’ of “purisa” (§83); ‘a’ of ‘aṃ’ does not change (§83)).  
 2. **Pāpiyo** \= pāpa \+ iya (‘a’ of “pāpa” is elided (§83); ‘i’ of ‘iya’ does not change (§83)).
 
-What is the purpose of saying “when ‘aṃ’, a substitution, a suffix, etc., \[follow\]”? \[This sutta does not apply when that does not happen, such as in\] “Appamādo amataṃ padaṃ”.[^18]
+What is the purpose of saying “when ‘aṃ’, a substitution, a suffix, etc., \[follow\]”? \[This sutta does not apply when that does not happen, such as in\] “Appamādo amataṃ padaṃ”.[^19]
 
 What is the purpose of saying “when there is elision of the vowel”? \[This sutta does not apply when there is no vowel to elide, such as in\] purisassa, daṇḍinaṃ.
 
@@ -868,7 +868,7 @@ Examples:
 1. **Bhikkhunī** \= bhikkhu \+ inī (here ‘i’ of ‘inī’ is elided (§13)).  
 2. **Gahapatānī** \= gahapati \+ inī (‘i’ of ‘pati’ is substituted by ‘a’ (§91); ‘i’ of ‘inī’ is elided (§13); ‘a’ becomes ‘ā’ (§16)).
 
-Taking again “pakati”, there is also sandhi: seyyo, seṭṭho, jeyyo, jeṭṭho.[^19]
+Taking again “pakati”, there is also sandhi: seyyo, seṭṭho, jeyyo, jeṭṭho.[^20]
 
 ---
 
@@ -936,7 +936,7 @@ Examples:
 
 1. **Itthī** \= itthī \+ si (‘ī’ is not shortened; ‘si’ is elided (§220)).
 
-What is the purpose of saying “when ‘si’ \[follows\]”? \[This sutta does not apply when ‘si’ does not follow, such as in\] “bhoti itthi”, etc.[^20]
+What is the purpose of saying “when ‘si’ \[follows\]”? \[This sutta does not apply when ‘si’ does not follow, such as in\] “bhoti itthi”, etc.[^21]
 
 Example:
 
@@ -971,7 +971,7 @@ Examples:
 1. **Ubhinnaṃ** \= ubha \+ naṃ (‘naṃ’ is substituted by ‘innaṃ’ (§86); ‘a’ of “ubha” is elided (§83)).  
 2. **Duvinnaṃ** \= dvi \+ naṃ (‘naṃ’ is substituted by ‘innaṃ’ (§86); by “ca” (§132) “dvi” is substituted by “duvi”; ‘i’ of “duvi” is elided (§83)).
 
-What is the purpose of saying “after ‘ubha’ and others”? \[This sutta does not apply when there is no “ubha” and others, such as in\] ubhayesaṃ.[^21]
+What is the purpose of saying “after ‘ubha’ and others”? \[This sutta does not apply when there is no “ubha” and others, such as in\] ubhayesaṃ.[^22]
 
 ---
 
@@ -1096,7 +1096,7 @@ What is the purpose of saying “of ‘pañca’ and others”? \[This sutta doe
 Example:
 
 1. **Catassannaṃ** \= catu \+ naṃ (‘ssa’ is inserted; ‘u’ becomes ‘a’ (§90)).  
-2. **Tissannaṃ** \= ti \+ naṃ (‘ssa’ is inserted (§90); ‘n’ is doubled (§28)).[^22]
+2. **Tissannaṃ** \= ti \+ naṃ (‘ssa’ is inserted (§90); ‘n’ is doubled (§28)).[^23]
 
 ---
 
@@ -1252,7 +1252,7 @@ Aggayo, munayo, isayo (Khu. ii, 88), gahapatayo (Khu. vi, 423).
 
 When ‘yo’ follows, ‘jha’ not shortened \[becomes ‘a’\].
 
-When ‘yo’ follows, ‘jha’, which has not been shortened,[^23] becomes ‘a’.
+When ‘yo’ follows, ‘jha’, which has not been shortened,[^24] becomes ‘a’.
 
 ---
 
@@ -1386,7 +1386,7 @@ When “ta” and “ima” become ‘a’, ‘smā’ and ‘smiṃ’ are not 
 Examples:
 
 1. **Asmā** \= ta \+ smā (‘ta’ becomes ‘a’ (§176); ‘smā’ does not become ‘mhā’ (§100)).  
-2. **Asmiṃ** \= ta \+ smiṃ (‘ta’ becomes ‘a’ (§176); ‘smiṃ’ does not become ‘mhi’ (§100)).[^24]
+2. **Asmiṃ** \= ta \+ smiṃ (‘ta’ becomes ‘a’ (§176); ‘smiṃ’ does not become ‘mhi’ (§100)).[^25]
 
 Examples:
 
@@ -1457,7 +1457,7 @@ Example:
 
 **Sabbe** \= sabba \+ yo (here ‘a’ does not become ‘e’; rather, ‘yo’ becomes ‘e’ by §164).
 
-“Ca” is for dragging.[^25]
+“Ca” is for dragging.[^26]
 
 ---
 
@@ -1668,15 +1668,15 @@ By taking ‘tu’, there is also substitution by ‘atthaṃ’.
 
 Example:
 
-1. **Atthatthaṃ**[^26] \= attha \+ sa (by ‘tu’ of this sutta, ‘sa’ is substituted by ‘atthaṃ’ (§109); ‘a’ is elided (§83)).  
-2. **Hitatthaṃ**[^27] \= hita \+ sa (by ‘tu’ of this sutta, ‘sa’ is substituted by ‘atthaṃ’ (§109); ‘a’ is elided (§83)).  
-3. **Sukhatthaṃ**[^28] \= sukha \+ sa (by ‘tu’ of this sutta, ‘sa’ is substituted by ‘atthaṃ’ (§109); ‘a’ is elided (§83)).
+1. **Atthatthaṃ**[^27] \= attha \+ sa (by ‘tu’ of this sutta, ‘sa’ is substituted by ‘atthaṃ’ (§109); ‘a’ is elided (§83)).  
+2. **Hitatthaṃ**[^28] \= hita \+ sa (by ‘tu’ of this sutta, ‘sa’ is substituted by ‘atthaṃ’ (§109); ‘a’ is elided (§83)).  
+3. **Sukhatthaṃ**[^29] \= sukha \+ sa (by ‘tu’ of this sutta, ‘sa’ is substituted by ‘atthaṃ’ (§109); ‘a’ is elided (§83)).
 
 ---
 
 **110\. 201\. Tayo n’ eva ca sabbanāmehi (281).** \[Tayo \+ na \+ eva \+ ca \+ sabbanāmehi, 5\]
 
-Tehi sabbanāmehi akārantehi smā smiṃ sa icc etesaṃ[^29] tayo ā-e-āyādesā n’ eva honti. 
+Tehi sabbanāmehi akārantehi smā smiṃ sa icc etesaṃ[^30] tayo ā-e-āyādesā n’ eva honti. 
 
 Sabbasmā, sabbasmiṃ, sabbassa. Yasmā, yasmiṃ, yassa. Tasmā, tasmiṃ, tassa. Kasmā, kasmiṃ, kassa. Imasmā, imasmiṃ, imassa. 
 
@@ -2275,7 +2275,7 @@ What is the purpose of saying “in the neuter”? \[This sutta does not apply w
 
 A numeral that is feminine, masculine and neuter.
 
-“A numeral that is feminine, masculine and neuter”, this should be understood as a governing aphorism (adhikāra-sutta).[^30] 
+“A numeral that is feminine, masculine and neuter”, this should be understood as a governing aphorism (adhikāra-sutta).[^31] 
 
 ---
 
@@ -2355,7 +2355,7 @@ Pañca, pañca; cha, cha; satta, satta; aṭṭha, aṭṭha; nava, nava; dasa, 
 
 The letter ‘a’ of “pañca”, etc.
 
-When ‘yo’ follows, the end vowel together with the inflection, of the numerals “pañca”, etc., which are feminine, masculine and neuter, is substituted by the letter ‘a’.[^31]
+When ‘yo’ follows, the end vowel together with the inflection, of the numerals “pañca”, etc., which are feminine, masculine and neuter, is substituted by the letter ‘a’.[^32]
 
 ---
 
@@ -2616,7 +2616,7 @@ Examples:
 
 What is the purpose of saying “occasionally”? \[To exclude the cases in which this rule does not apply, such as in\] taṃ, maṃ passati.
 
-“Ca” is for dragging.[^32]
+“Ca” is for dragging.[^33]
 
 ---
 
@@ -2689,7 +2689,7 @@ Tuṭṭho ’smi vo bhikkhave pakatiyā (Khu. vi, 89); satthā no Bhagavā anup
 
 After a word, when the second, fourth and sixth \[inflections\] follow, “vo” and “no”.
 
-Occasionally, when the second, fourth and sixth inflections in the plural follow, the whole words “tumha” and “amha”, when they come after a word, together with the inflections, are substituted by “vo” and “no” respectively.[^33]
+Occasionally, when the second, fourth and sixth inflections in the plural follow, the whole words “tumha” and “amha”, when they come after a word, together with the inflections, are substituted by “vo” and “no” respectively.[^34]
 
 ---
 
@@ -2998,7 +2998,7 @@ Example:
 
 1. **Pumānehi** \= puma \+ hi (‘a’ of “puma” is substituted by ‘āne’ (§157)).
 
-What is the purpose of taking “vibhatti” again? To prevent the inclusion of “savibhatti”[^34] in this sutta. Example: pumānehi.
+What is the purpose of taking “vibhatti” again? To prevent the inclusion of “savibhatti”[^35] in this sutta. Example: pumānehi.
 
 By taking “ca”, when the inflections ‘si’, ‘yo’, ‘aṃ’ and ‘yo’ follow, the end vowel of “maghava”, “yuva”, etc., is substituted by ‘āna’. And when the inflections ‘sa’ and ‘smā’ follow, the \[end\] vowel of “puma”, “kamma” and “thāma” is substituted by the letter ‘u’.
 
@@ -3032,7 +3032,7 @@ Optionally, when the inflection ‘su’ follows, the end vowel of “puma” is
 Example:
 
 1. **Pumāsu** \= puma \+ su (‘a’ of “puma” is substituted by ‘ā’ (§158)).  
-2. **Pumesu[^35]** \= puma \+ su (‘a’ of “puma” is substituted by ‘e’ (§101)).
+2. **Pumesu[^36]** \= puma \+ su (‘a’ of “puma” is substituted by ‘e’ (§101)).
 
 ---
 
@@ -3057,7 +3057,7 @@ Examples:
 1. **Pumānā** \= puma \+ nā (‘a’ of “puma” is substituted by ‘ā’ (§159)).  
 2. **Pumunā** \= puma \+ nā (‘a’ of “puma” is substituted by ‘u’ (§159)).
 
-The taking of “ca” is for dragging.[^36]
+The taking of “ca” is for dragging.[^37]
 
 ---
 
@@ -3783,7 +3783,7 @@ When there is elision, \[there is\] ‘o’ of these.
 
 When the inflection is elided, the end \[vowel\] of the group “mano” and others becomes ‘o’.
 
-This example will be given in Chapter 5.[^37]
+This example will be given in Chapter 5.[^38]
 
 What is the purpose of taking “ādi”? The end \[vowel\] of other words becomes ‘o’. Āposamena, vāyosamena.
 
@@ -3817,7 +3817,7 @@ Examples:
 
 What is the purpose of saying “optionally”? \[To allow exceptions to this sutta, such as in:\] Manena, tejena, yasena.
 
-What is the purpose of saying “when there is a vowel”? \[This sutta does not apply when the vowel substitution of the inflection does not take place, such as in:\] Mano, tejo, yaso.[^38]
+What is the purpose of saying “when there is a vowel”? \[This sutta does not apply when the vowel substitution of the inflection does not take place, such as in:\] Mano, tejo, yaso.[^39]
 
 By taking “ādi” again, ‘s’ is also inserted when other suffixes follow. Mānasikaṃ, vācasikaṃ.
 
@@ -3839,7 +3839,7 @@ Atho sarīram pi jaraṃ upeti,
 Satañ ca dhammo na jaraṃ upeti,   
 Santo have sabbhi pavedayanti (Khu. i, 36).
 
-The well-adorned chariots of kings wear out, and the body too comes to old age. But the Dhamma of the good does not come to old age; this the good proclaim among the good.[^39]
+The well-adorned chariots of kings wear out, and the body too comes to old age. But the Dhamma of the good does not come to old age; this the good proclaim among the good.[^40]
 
 Sabbhūto (being good), sabbhāvo (state/condition of the good). 
 
@@ -3861,7 +3861,7 @@ Examples:
 
 What is the purpose of saying “when ‘bh’ follows”? \[This sutta does not apply when ‘bh’ does not follow, such as in:\] Santehi pūjito Bhagavā.
 
-The taking of “ca” is, sometimes, for the substitution by ‘sa’ alone to take place.[^40] Sakkāro, sakkato.
+The taking of “ca” is, sometimes, for the substitution by ‘sa’ alone to take place.[^41] Sakkāro, sakkato.
 
 ---
 
@@ -4010,7 +4010,7 @@ Examples:
 
 ---
 
-**191\. 130\. Sakhato[^41] c’ āyo no (394).** \[Sakhato \+ ca \+ āyo-no, 3\]
+**191\. 130\. Sakhato[^42] c’ āyo no (394).** \[Sakhato \+ ca \+ āyo-no, 3\]
 
 Tasmā **sakha**to ca **yo**naṃ **āyo**-**no**-ādesā honti. 
 
@@ -4057,7 +4057,7 @@ Examples:
 
 Tasmā **brahma**to **ga**ssa ca **e**kāro hoti. 
 
-He brahme.[^42]
+He brahme.[^43]
 
 ---
 
@@ -4182,7 +4182,7 @@ Tassa **brahma** saddassa anto **u**ttam āpajjate **sa nā** icc etesu.
 
 Brahmuno, brahmunā. 
 
-**Sa-nāsv** iti kimatthaṃ? Brahmā.[^43]
+**Sa-nāsv** iti kimatthaṃ? Brahmā.[^44]
 
 ---
 
@@ -4235,7 +4235,7 @@ What is the purpose of saying “when ‘si’ follows”? \[This sutta does not
 
 Satthāraṃ, pitaraṃ, mātaraṃ, bhātaraṃ, kattāraṃ, satthārehi, pitarehi, mātarehi, bhātarehi, kattārehi. 
 
-**Aññesv** iti kimatthaṃ? Satthā, pitā, mātā, bhātā, kattā.[^44]
+**Aññesv** iti kimatthaṃ? Satthā, pitā, mātā, bhātā, kattā.[^45]
 
 ---
 
@@ -4388,7 +4388,7 @@ Examples:
   * **Gantu** \= gantu \+ sa (‘u’ of “gantu” becomes ‘u’ (§204); ‘sa’ is elided (§204)).  
   * **Dātu** \= dātu \+ sa (‘u’ of “dātu” becomes ‘u’ (§204); ‘sa’ is elided (§204)).
 
-What is the purpose of the repetition of this sutta? To fix the change of ‘u’ into ‘u’.[^45] Sakkamandhātu.
+What is the purpose of the repetition of this sutta? To fix the change of ‘u’ into ‘u’.[^46] Sakkamandhātu.
 
 The taking of “ca” is for the inclusion of the second \[meaning\].
 
@@ -4419,7 +4419,7 @@ Examples:
 5. **Kattāro** \= kattu \+ yo (‘u’ of “kattu” becomes ‘āra’ (§200); ‘yo’ is substituted by ‘o’ (§205); ‘a’ is elided (§83)).  
 6. **Vattāro** \= vattu \+ yo (‘u’ of “vattu” becomes ‘āra’ (§200); ‘yo’ is substituted by ‘o’ (§205); ‘a’ is elided (§83)).
 
-By taking “tu”, also after other words ‘yo’ becomes ‘o’. Caturo janā, gāvo, ubho, purisā.[^46]
+By taking “tu”, also after other words ‘yo’ becomes ‘o’. Caturo janā, gāvo, ubho, purisā.[^47]
 
 ---
 
@@ -4603,9 +4603,9 @@ Examples:
 
 What is the purpose of saying “the end of ‘atta’”? \[This sutta does not apply when there is no “atta”, such as in:\] rājehi, rājebhi.
 
-What is the purpose of saying “when ‘hi’ follows”? \[This sutta does not apply when ‘hi’ does not follow, such as in:\] attano.[^47]
+What is the purpose of saying “when ‘hi’ follows”? \[This sutta does not apply when ‘hi’ does not follow, such as in:\] attano.[^48]
 
-By the expression that indicates a state, “anattaṃ”, the word “atta” is substituted by “saka” when all the inflections follow. Sako, sakā, sakaṃ, sake.[^48]
+By the expression that indicates a state, “anattaṃ”, the word “atta” is substituted by “saka” when all the inflections follow. Sako, sakā, sakaṃ, sake.[^49]
 
 ---
 
@@ -4674,7 +4674,7 @@ Examples:
 
 ---
 
-**215\. 141\. Jha-lato ca (442).**[^49] \[Jha-lato \+ ca, 2\]
+**215\. 141\. Jha-lato ca (442).**[^50] \[Jha-lato \+ ca, 2\]
 
 **Jha la** icc etehi **smā**vacanassa **nā** hoti. 
 
@@ -4817,7 +4817,7 @@ Bhoti itthi, sā itthī. Bho daṇḍi, so daṇḍī. Bho sattha, so satthā. B
 
 After the remaining ones, ‘ga’ and ‘si’ are also elided.
 
-After the remaining bases that have been shown,[^50] ‘ga’ and ‘si’ are elided.
+After the remaining bases that have been shown,[^51] ‘ga’ and ‘si’ are elided.
 
 ---
 
@@ -4860,7 +4860,7 @@ Examples:
 2. **Tumhe pan’ āvuso** (and you, friends?)  
 3. **Padaso dhammaṃ vāceyya** (he should have the Dhamma recited word by word)   
 4. **Vihāraṃ sve upagaccheyya** (he should approach the monastery tomorrow).  
-5. **Āvuso** \= āvuso \+ si (‘si’ is elided (§221)).[^51]
+5. **Āvuso** \= āvuso \+ si (‘si’ is elided (§221)).[^52]
 
 The twenty prefixes are the following: pa, parā, ni, nī, u, du, saṃ, vi, ava, anu, pari, adhi, abhi, pati, su, ā, ati, api, apa, upa. \[Examples:\] Pahāro, parābhavo, nihāro, nīhāro, uhāro, duhāro, saṃhāro, vihāro, avahāro, anuhāro, parihāro, adhihāro, abhihāro, patihāro, suhāro, āhāro, atihāro, apihāro, apahāro, upahāro. 
 
@@ -4886,7 +4886,7 @@ Pulliṅgaṃ, pumbhāvo, puṅkokilo.
 
 In the compounds of “puma”, when \[the word\] “liṅga”, etc.
 
-In the compounds, when \[the words\] “liṅga”, etc., are the following member,[^52] the end \[vowel\] of “puma” is elided.
+In the compounds, when \[the words\] “liṅga”, etc., are the following member,[^53] the end \[vowel\] of “puma” is elided.
 
 ---
 
@@ -5025,7 +5025,7 @@ What is the purpose of saying “that has been shortened”? \[This sutta does n
 
 Kva gato ’si tvaṃ Devānaṃpiyatissa. 
 
-**Ca**ggahaṇena a**va**paccaye pare pi **ko** ca hoti. Ko taṃ ninditum arahati (Khu. i, 47); kathaṃ bodhayituṃ dhammaṃ.[^53] 
+**Ca**ggahaṇena a**va**paccaye pare pi **ko** ca hoti. Ko taṃ ninditum arahati (Khu. i, 47); kathaṃ bodhayituṃ dhammaṃ.[^54] 
 
 **Ve** ti kimatthaṃ? Kuto āgato ’si tvaṃ.
 
@@ -5112,7 +5112,7 @@ Examples:
   * **Kaṃ** \= kiṃ \+ aṃ (“kiṃ” is substituted by “ka” (§229); ‘a’ is elided (§83)).  
   * **Kathaṃ** \= kiṃ \+ thaṃ (“kiṃ” is substituted by “ka” (§229)).
 
-The taking of “ca” is for dragging.[^54]
+The taking of “ca” is for dragging.[^55]
 
 ---
 
@@ -5138,7 +5138,7 @@ Examples:
 2. **Kuto** \= kiṃ \+ to (“kiṃ” is substituted by “ku” (§230)).  
 3. **Kuttha** \= kiṃ \+ tha (“kiṃ” is substituted by “ku” (§230); ‘t’ is doubled (§28)).
 
-The taking of “ca” is for dragging.[^55]
+The taking of “ca” is for dragging.[^56]
 
 ---
 
@@ -5185,7 +5185,7 @@ Examples:
 
 ---
 
-**233\. 264\. E to-thesu ca.**[^56] \[E \+ to-thesu \+ ca, 3\]
+**233\. 264\. E to-thesu ca.**[^57] \[E \+ to-thesu \+ ca, 3\]
 
 Sabbassa **eta**saddassa **e**kāro hoti vā **to tha** icc etesu. 
 
@@ -5212,7 +5212,7 @@ Examples:
 
 **Ima**saddassa sabbass’ eva **i**kāro hoti **thaṃ dāni ha to dha** icc etesu. 
 
-Itthaṃ, idāni, iha, ito, idha.[^57]
+Itthaṃ, idāni, iha, ito, idha.[^58]
 
 ---
 
@@ -5304,13 +5304,13 @@ Examples:
 
 **Nadā**dito vā a**nadā**dito vā itthiyaṃ vattamānāya **ī-**paccayo hoti. 
 
-Nadī, mahī, kumārī, taruṇī, sakhī, itthī.[^58]
+Nadī, mahī, kumārī, taruṇī, sakhī, itthī.[^59]
 
 ---
 
 Optionally, after “nada”, etc., \[there is\] ‘ī’.
 
-Optionally, in the feminine, after “nada”, etc., and after the words which are not “nadādi”,[^59] there is the suffix ‘ī’.
+Optionally, in the feminine, after “nada”, etc., and after the words which are not “nadādi”,[^60] there is the suffix ‘ī’.
 
 ---
 
@@ -5327,7 +5327,7 @@ Examples:
 
 **239\. 190\. Ṇava-ṇika-ṇeyya-ṇa-ntūhi (468).** \[Ṇava-ṇika-ṇeyya-ṇa-ntūhi, 1\]
 
-**Ṇava ṇika ṇeyya ṇa ntu** icc etehi[^60] itthiyaṃ vattamānehi **ī-**paccayo hoti. 
+**Ṇava ṇika ṇeyya ṇa ntu** icc etehi[^61] itthiyaṃ vattamānehi **ī-**paccayo hoti. 
 
 Māṇavī, paṇḍavī, nāvikī, venateyyī, kunteyyī, gotamī, guṇavatī, sāmāvatī.
 
@@ -5380,7 +5380,7 @@ Examples:
 
 **241\. 191\. Ntussa tam īkāre** (471). \[Ntussa \+ taṃ \+ īkāre, 3\]
 
-Sabbass’ eva **ntu**paccayassa **ta**kāro[^61] hoti vā **ī**kāre pare. 
+Sabbass’ eva **ntu**paccayassa **ta**kāro[^62] hoti vā **ī**kāre pare. 
 
 Guṇavatī, guṇavantī; kulavatī, kulavantī; satimatī, satimantī; mahatī, mahantī; gottamatī, gottamantī.
 
@@ -5409,7 +5409,7 @@ Examples:
 
 **242\. 192\. Bhavato bhoto** (472). \[Bhavato \+ bhoto, 2\]
 
-Sabbass’ eva **bhavanta**saddassa **bhotā**deso hoti **ī**kāre itthigate[^62] pare. 
+Sabbass’ eva **bhavanta**saddassa **bhotā**deso hoti **ī**kāre itthigate[^63] pare. 
 
 Bhoti ayye (Vin. ii, 280), bhoti kaññe, bhoti Kharādiye (Khu. v, 4).
 
@@ -5434,7 +5434,7 @@ Sabbass’ eva **bhavanta**saddassa **bho-**ādeso hoti **ge** pare.
 
 Bho purisa, bho aggi, bho rāja, bho sattha, bho daṇḍi, bho sayambhu. 
 
-**Ge** ti kimatthaṃ? Bhavatā, bhavaṃ.[^63] 
+**Ge** ti kimatthaṃ? Bhavatā, bhavaṃ.[^64] 
 
 **Tu**ggahaṇena aññasmim pi vacane sabbassa **bhavanta**saddassa **bhonta bhante bhonto** **bhadde bhotā bhoto** icc ete ādesā honti. Bhonta, bhante, bhonto, bhadde, bhotā, bhoto.
 
@@ -5567,7 +5567,7 @@ Examples:
 9. **Tadā** \= ta \+ dā.  
 10. **Kadā** \= kiṃ \+ dā (“kiṃ” is substituted by “ka” (“ca” of §227)).  
 11. **Idha** \= ima \+ dha (“ima” is substituted by ‘i’ (§234)).  
-12. **Idāni** \= ima \+ dāni (“ima” is substituted by ‘i’ (§234)).[^64]
+12. **Idāni** \= ima \+ dāni (“ima” is substituted by ‘i’ (§234)).[^65]
 
 ---
 
@@ -5769,7 +5769,7 @@ Examples:
 
 In time.
 
-It should be understood that “kāle” has the value of a governing aphorism.[^65]
+It should be understood that “kāle” has the value of a governing aphorism.[^66]
 
 ---
 
@@ -5878,7 +5878,7 @@ Bāhussaccaṃ (Khu. i, 4); paṇḍiccaṃ (Abhi. iii, 128); vepullaṃ (Abhi. 
 
 And when ‘ya’ follows, ‘a’ and ‘ā’ are elided.
 
-When the suffix ‘ya’ follows, the letters ‘a’ and ‘ā’ are elided.[^66]
+When the suffix ‘ya’ follows, the letters ‘a’ and ‘ā’ are elided.[^67]
 
 ---
 
@@ -5892,7 +5892,7 @@ Jeyyo, jeṭṭho (D. ii, 13).
 
 When ‘iya’ and ‘iṭṭha’ follow, \[there is\] ‘jo’ of “vuḍḍha”.
 
-When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “vuḍḍha” is substituted by “jo”.[^67]
+When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “vuḍḍha” is substituted by “jo”.[^68]
 
 ---
 
@@ -5906,7 +5906,7 @@ Seyyo (A. i, 130), seṭṭho (D. ii, 13), jeyyo, jeṭṭho (D. ii, 13).
 
 And \[there is\] ‘sa’ of “pasattha”.
 
-When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “pasattha” is substituted by “sa”, and \[there is\] also the substitution “ja”.[^68]
+When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “pasattha” is substituted by “sa”, and \[there is\] also the substitution “ja”.[^69]
 
 ---
 
@@ -5920,7 +5920,7 @@ Nediyo, nediṭṭho.
 
 “Neda” of “antika”.
 
-When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “antika” is substituted by “neda”.[^69]
+When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “antika” is substituted by “neda”.[^70]
 
 ---
 
@@ -5934,7 +5934,7 @@ Sādhiyo, sādhiṭṭho.
 
 “Sādha” of “bāḷha”.
 
-When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “bāḷha” is substituted by “sādha”.[^70]
+When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “bāḷha” is substituted by “sādha”.[^71]
 
 ---
 
@@ -5948,7 +5948,7 @@ Kaṇiyo, kaṇiṭṭho.
 
 “Kaṇ” of “appa”.
 
-When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “appa” is substituted by “kaṇ”.[^71]
+When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “appa” is substituted by “kaṇ”.[^72]
 
 ---
 
@@ -5964,7 +5964,7 @@ Caggahaṇam anukaḍḍhanatthaṃ.
 
 And of “yuva”.
 
-When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “yuva” is substituted by “kaṇ”.[^72]
+When the suffixes ‘iya’ and ‘iṭṭha’ follow, the whole word “yuva” is substituted by “kaṇ”.[^73]
 
 The taking of “ca” is for the dragging of the word “kaṇ”.
 
@@ -5991,7 +5991,7 @@ Examples:
 3. **Satiyo** \= satimantu \+ iya \+ si (“mantu” is elided (§268); ‘i’ is elided (§83); ‘si’ is substituted by ‘o’ (§104)).  
 4. **Satiṭṭho** \= satimantu \+ iṭṭha \+ si (“mantu” is elided (§268); ‘i’ is elided (§83); ‘si’ is substituted by ‘o’ (§104)).  
 5. **Medhiyo** \= medhāvī \+ iya \+ si (“vī” is elided (§268); ‘ā’ is elided (§83); ‘si’ is substituted by ‘o’ (§104)).  
-6. **Medhiṭṭho** \= medhāvī \+ iṭṭha \+ si (“vī” is elided (§268); ‘ā’ is elided (§83); ‘si’ is substituted by ‘o’ (§104)).[^73]
+6. **Medhiṭṭho** \= medhāvī \+ iṭṭha \+ si (“vī” is elided (§268); ‘ā’ is elided (§83); ‘si’ is substituted by ‘o’ (§104)).[^74]
 
 ---
 
@@ -6026,9 +6026,9 @@ What is the purpose of saying “which have ‘ya’”? \[This sutta does not a
 
 What is the purpose of saying “the letters ‘t’, ‘l’, ‘ṇ’ and ‘d’”? \[This sutta does not apply when there are none of these letters, such as in:\] Ālasyaṃ, ārogyaṃ.
 
-What is the purpose of saying “consonants”?[^74] \[This sutta does not apply when there are no consonants, such as in:\] Maccunā.
+What is the purpose of saying “consonants”?[^75] \[This sutta does not apply when there are no consonants, such as in:\] Maccunā.
 
-What is the purpose of taking ‘kāra’? To make known the substitution of the letter ‘ya’ by the letter ‘ma’, such as in: Opammaṃ.[^75]
+What is the purpose of taking ‘kāra’? To make known the substitution of the letter ‘ya’ by the letter ‘ma’, such as in: Opammaṃ.[^76]
 
 ---
 
@@ -6092,119 +6092,119 @@ What is the purpose of saying “after these”? \[This sutta does not apply whe
 
 [^10]:  ‘Saṃ’ and ‘sā’ are substitutions of the inflections ‘smiṃ’ and ‘sa’ respectively, after pronouns named ‘gha’ and ‘pa’ (see §179). This sutta prescribes the additional insertion of ‘s’ before those substitutions.
 
-[^11]:  “Ca” means here *sampiṇḍana* (collecting), since both this sutta and §70 have a similar function: in §70, ‘jha’ and ‘la’ are substituted by ‘iya’ and ‘uva’; in this sutta, by ‘ya’ and ‘va’. The “ca” gathers both operations as a set. Ref. Ven. A. Thitzana.
+[^11]:  i ī → iya; u ū → uva
 
-[^12]:  First plural inflection, second plural inflection and vocative plural.
+[^12]:  “Ca” means here *sampiṇḍana* (collecting), since both this sutta and §70 have a similar function: in §70, ‘jha’ and ‘la’ are substituted by ‘iya’ and ‘uva’; in this sutta, by ‘ya’ and ‘va’. The “ca” gathers both operations as a set. Ref. Ven. A. Thitzana.
 
-[^13]:  ‘Ava’ is one of the twenty prefixes (*upasagga*). The term “viparīta” –change, reversion; transformation– is the name given to the letter ‘o’ which is the transformation of the prefix ‘ava’, and to the letter ‘u’ which is the transformation of the letter ‘o’. E.g., in “ava-gacchati”, he goes down, the prefix ‘ava’ becomes ‘o’ (*o-gacchati*) and afterwards this becomes ‘u’ (*u-gacchati*); (Kac. §79, Rū. §45-46, Sad. iii §25-26).
+[^13]:  First plural inflection, second plural inflection and vocative plural.
 
-[^14]:  Note: both changes, ‘ava’ → ‘o’ and ‘o’ → ‘u’, are called *viparīta* (transformation).
+[^14]:  ‘Ava’ is one of the twenty prefixes (*upasagga*). The term “viparīta” –change, reversion; transformation– is the name given to the letter ‘o’ which is the transformation of the prefix ‘ava’, and to the letter ‘u’ which is the transformation of the letter ‘o’. E.g., in “ava-gacchati”, he goes down, the prefix ‘ava’ becomes ‘o’ (*o-gacchati*) and afterwards this becomes ‘u’ (*u-gacchati*); (Kac. §79, Rū. §45-46, Sad. iii §25-26).
 
-[^15]:  To prevent the application of the optional rule (*vibhāsa-nivattana*) here.
+[^15]:  Note: both changes, ‘ava’ → ‘o’ and ‘o’ → ‘u’, are called *viparīta* (transformation).
 
-[^16]:  “Remains natural” (*pakati*) means that the vowel does not change.
+[^16]:  To prevent the application of the optional rule (*vibhāsa-nivattana*) here.
 
-[^17]:  Note: “Remains natural” (*pakati*) means that the vowel does not change.
+[^17]:  “Remains natural” (*pakati*) means that the vowel does not change.
 
-[^18]:  Note: Here the initial ‘a’ of “amataṃ” is not the inflection ‘aṃ’, nor a substitution, nor a suffix; therefore this rule does not operate.
+[^18]:  Note: “Remains natural” (*pakati*) means that the vowel does not change.
 
-[^19]:  The procedure of euphonic combination involves substituting ‘i’ by ‘e’ and doubling ‘y’.
+[^19]:  Note: Here the initial ‘a’ of “amataṃ” is not the inflection ‘aṃ’, nor a substitution, nor a suffix; therefore this rule does not operate.
 
-[^20]:  These examples do not correspond to the first inflection ‘si’ but to the ‘si’ of the vocative.
+[^20]:  The procedure of euphonic combination involves substituting ‘i’ by ‘e’ and doubling ‘y’.
 
-[^21]:  Here the word is “ubhaya”.
+[^21]:  These examples do not correspond to the first inflection ‘si’ but to the ‘si’ of the vocative.
 
-[^22]:  Note: In the sutta it is said “pañcādīnam attaṃ” and not “pañcādīnam a”. “Attaṃ” \= state of ‘a’; thus “attaṃ” is called *bhāvaniddesa* (an expression that indicates a state). The expression that indicates a state has the purpose of inserting ‘ssa’ and changing ‘u’ into ‘a’.
+[^22]:  Here the word is “ubhaya”.
 
-[^23]:  “Akatarasso”, lit., which has not been made short, means that it is naturally short. This sutta applies to the first plural inflection (‘yo’), to the vocative plural (‘yo’) and to the second plural inflection (‘yo’).
+[^23]:  Note: In the sutta it is said “pañcādīnam attaṃ” and not “pañcādīnam a”. “Attaṃ” \= state of ‘a’; thus “attaṃ” is called *bhāvaniddesa* (an expression that indicates a state). The expression that indicates a state has the purpose of inserting ‘ssa’ and changing ‘u’ into ‘a’.
 
-[^24]:  Note: “asmā” and “asmiṃ” can also be formed from “ima”. In that case §177 applies.
+[^24]:  “Akatarasso”, lit., which has not been made short, means that it is naturally short. This sutta applies to the first plural inflection (‘yo’), to the vocative plural (‘yo’) and to the second plural inflection (‘yo’).
 
-[^25]:  Here “ca” brings the procedure of changing ‘a’ into ‘e’ from the previous sutta.
+[^25]:  Note: “asmā” and “asmiṃ” can also be formed from “ima”. In that case §177 applies.
 
-[^26]:  For the benefit. 
+[^26]:  Here “ca” brings the procedure of changing ‘a’ into ‘e’ from the previous sutta.
 
-[^27]:  For the welfare.
+[^27]:  For the benefit. 
 
-[^28]:  For the happiness.
+[^28]:  For the welfare.
 
-[^29]:  Smā smiṃ sa ekavacana icc’ etesaṃ (K).
+[^29]:  For the happiness.
 
-[^30]:  This sutta is dragged and has influence over the three following suttas: §132-§133-§134.
+[^30]:  Smā smiṃ sa ekavacana icc’ etesaṃ (K).
 
-[^31]:  This sutta serves to prevent the operation of §107.
+[^31]:  This sutta is dragged and has influence over the three following suttas: §132-§133-§134.
 
-[^32]:  To bring the word “aṃmhi” from the previous sutta.
+[^32]:  This sutta serves to prevent the operation of §107.
 
-[^33]:  “Vo” and “no” cannot come at the beginning of a sentence.
+[^33]:  To bring the word “aṃmhi” from the previous sutta.
 
-[^34]:  This means that, unlike the previous suttas, in this sutta only the end vowel of “puma” is substituted.
+[^34]:  “Vo” and “no” cannot come at the beginning of a sentence.
 
-[^35]:  This is the normal form.
+[^35]:  This means that, unlike the previous suttas, in this sutta only the end vowel of “puma” is substituted.
 
-[^36]:  It is for the dragging of ‘ā’. ‘U’ is the primary substitution of this sutta; ‘ā’ is dragged from the previous sutta.
+[^36]:  This is the normal form.
 
-[^37]:  *Taddhita-Kappa*.
+[^37]:  It is for the dragging of ‘ā’. ‘U’ is the primary substitution of this sutta; ‘ā’ is dragged from the previous sutta.
 
-[^38]:  This should not be here. The Nyāsa does not comment on it either.
+[^38]:  *Taddhita-Kappa*.
 
-[^39]:  Dhp verse 151\.
+[^39]:  This should not be here. The Nyāsa does not comment on it either.
 
-[^40]:  “Ca” is for the substitution by ‘sa’ and not ‘b’.
+[^40]:  Dhp verse 151\.
 
-[^41]:  Sakhāto (Sī).
+[^41]:  “Ca” is for the substitution by ‘sa’ and not ‘b’.
 
-[^42]:  Translator's note: In the example *he brahme*, *he* is a vocative particle associated with *brahme*. It is that function that invokes the application of ‘ga’, since §57 (Ālapane si gasañño) assigns it to ‘si’ only in the vocative.
+[^42]:  Sakhāto (Sī).
 
-[^43]:  With respect to this, in the Sinhalese manuscript the reading is found “uttam iti bhāvaniddeso katthaci abhāvaṃ dasseti, brahmassa” (‘uttaṃ’ is an expression that indicates a state \[and\] shows that in some cases \[the operation\] does not take place \[such as in\] brahmassa).
+[^43]:  Translator's note: In the example *he brahme*, *he* is a vocative particle associated with *brahme*. It is that function that invokes the application of ‘ga’, since §57 (Ālapane si gasañño) assigns it to ‘si’ only in the vocative.
 
-[^44]:  With respect to this, in the Sinhalese manuscript the reading is found “ārattaggahaṇena katthaci aniyamaṃ dasseti, satthussa, pitussa, mātussa, bhātussā” (by taking ‘āratta’ it is shown that in some cases \[the application\] is not fixed \[such as in\] satthussa, pitussa, mātussa, bhātussā).
+[^44]:  With respect to this, in the Sinhalese manuscript the reading is found “uttam iti bhāvaniddeso katthaci abhāvaṃ dasseti, brahmassa” (‘uttaṃ’ is an expression that indicates a state \[and\] shows that in some cases \[the operation\] does not take place \[such as in\] brahmassa).
 
-[^45]:  There is only one example of “sakkamandhātu” with ‘sa’.
+[^45]:  With respect to this, in the Sinhalese manuscript the reading is found “ārattaggahaṇena katthaci aniyamaṃ dasseti, satthussa, pitussa, mātussa, bhātussā” (by taking ‘āratta’ it is shown that in some cases \[the application\] is not fixed \[such as in\] satthussa, pitussa, mātussa, bhātussā).
 
-[^46]:  Ubho purisā, najjo (Sī).
+[^46]:  There is only one example of “sakkamandhātu” with ‘sa’.
 
-[^47]:  Attanā (Sī).
+[^47]:  Ubho purisā, najjo (Sī).
 
-[^48]:  Sakārādeso (K).
+[^48]:  Attanā (Sī).
 
-[^49]:  Caggahaṇaṃ kvaci nivattanatthaṃ (Rū.), caggahaṇaṃ tadanukaḍḍhanatthaṃ (Nyā.) (The taking of “ca” is for excluding “kvaci” (Rū.); the taking of “ca” is for the dragging of that (Nyā.)).
+[^49]:  Sakārādeso (K).
 
-[^50]:  Those shown by the suttas “Si ’ṃ” (§219), “S’ o” (§104), “Sy ā ca” (§189), “Sakhato gass’ e vā” (§113) and “Ghat’ e ca” (§114) are called here “sesa” \[remaining\].
+[^50]:  Caggahaṇaṃ kvaci nivattanatthaṃ (Rū.), caggahaṇaṃ tadanukaḍḍhanatthaṃ (Nyā.) (The taking of “ca” is for excluding “kvaci” (Rū.); the taking of “ca” is for the dragging of that (Nyā.)).
 
-[^51]:  Note: This rule is to be employed after the twenty prefixes, ‘pa’, etc., and the particles, ‘yathā’, etc.
+[^51]:  Those shown by the suttas “Si ’ṃ” (§219), “S’ o” (§104), “Sy ā ca” (§189), “Sakhato gass’ e vā” (§113) and “Ghat’ e ca” (§114) are called here “sesa” \[remaining\].
 
-[^52]:  Parapadesu pi.
+[^52]:  Note: This rule is to be employed after the twenty prefixes, ‘pa’, etc., and the particles, ‘yathā’, etc.
 
-[^53]:  Bodhesi tvaṃ (Sī).
+[^53]:  Parapadesu pi.
 
-[^54]:  It is for the dragging of “ka”.
+[^54]:  Bodhesi tvaṃ (Sī).
 
-[^55]:  It is for the dragging of “kissa” and “ku”.
+[^55]:  It is for the dragging of “ka”.
 
-[^56]:  Etothesu vā (Sī).
+[^56]:  It is for the dragging of “kissa” and “ku”.
 
-[^57]:  Ito paraṃ “cassaddaggahaṇam avadhāraṇatthan” ti pāṭo sīhaḷapotthake dissati. Padarūpasiddhiṭīkāyaṃ pana “caggahaṇaṃ sabbaggahaṇ’ ānukaḍḍhanatthan” ti vuttaṃ. (With respect to this, in the Sinhalese book the reading appears “the taking of the word ‘ca’ is for restricting”. But in the ṭīkā of the Padarūpasiddhi it is said “the taking of ‘ca’ is for the dragging of the taking of ‘sabba’”.)
+[^57]:  Etothesu vā (Sī).
 
-[^58]:  Ito paraṃ “hatthī” ti udāharaṇaṃ katthaci dissati, taṃ na yuttaṃ itthiyaṃ “hatthinī” ti padass’ eva diṭṭhattā. (With respect to this, in some places the example “hatthī” appears; it is not appropriate, because in the feminine only the word “hatthinī” is found.)
+[^58]:  Ito paraṃ “cassaddaggahaṇam avadhāraṇatthan” ti pāṭo sīhaḷapotthake dissati. Padarūpasiddhiṭīkāyaṃ pana “caggahaṇaṃ sabbaggahaṇ’ ānukaḍḍhanatthan” ti vuttaṃ. (With respect to this, in the Sinhalese book the reading appears “the taking of the word ‘ca’ is for restricting”. But in the ṭīkā of the Padarūpasiddhi it is said “the taking of ‘ca’ is for the dragging of the taking of ‘sabba’”.)
 
-[^59]:  “Nadādi” are the words ending in ‘a’, like “nada”; “anadādi” are the words ending in ‘u’ and ‘o’ which do not belong to “nadādi”.
+[^59]:  Ito paraṃ “hatthī” ti udāharaṇaṃ katthaci dissati, taṃ na yuttaṃ itthiyaṃ “hatthinī” ti padass’ eva diṭṭhattā. (With respect to this, in some places the example “hatthī” appears; it is not appropriate, because in the feminine only the word “hatthinī” is found.)
 
-[^60]:  Ṇavaṇikaṇeyyaṇantupaccayantehi (Rū).
+[^60]:  “Nadādi” are the words ending in ‘a’, like “nada”; “anadādi” are the words ending in ‘u’ and ‘o’ which do not belong to “nadādi”.
 
-[^61]:  To ādeso (K).
+[^61]:  Ṇavaṇikaṇeyyaṇantupaccayantehi (Rū).
 
-[^62]:  Itthiyaṃ kate (Sī).
+[^62]:  To ādeso (K).
 
-[^63]:  Bhavato (Sī).
+[^63]:  Itthiyaṃ kate (Sī).
 
-[^64]:  Note: According to this sutta, these suffixes are to be regarded as inflections.
+[^64]:  Bhavato (Sī).
 
-[^65]:  This adhikāra sutta has influence from §257 to §259.
+[^65]:  Note: According to this sutta, these suffixes are to be regarded as inflections.
 
-[^66]:  Note: The examples here are of the taddhita suffix ‘ṇya’. See §269.
+[^66]:  This adhikāra sutta has influence from §257 to §259.
 
-[^67]:  Note: The examples here are of the taddhita suffixes ‘iya’ and ‘iṭṭha’.
+[^67]:  Note: The examples here are of the taddhita suffix ‘ṇya’. See §269.
 
 [^68]:  Note: The examples here are of the taddhita suffixes ‘iya’ and ‘iṭṭha’.
 
@@ -6218,6 +6218,8 @@ What is the purpose of saying “after these”? \[This sutta does not apply whe
 
 [^73]:  Note: The examples here are of the taddhita suffixes ‘iya’ and ‘iṭṭha’.
 
-[^74]:  There are two explanations here, one by the Nyāsa and the other by the Rūpasiddhi. The Nyāsa says that after “musa pāṇacāge” there is the suffix ‘tyu’. By §638 the end of the root, ‘sa’, and ‘u’ of ‘mu’ are elided.
+[^74]:  Note: The examples here are of the taddhita suffixes ‘iya’ and ‘iṭṭha’.
 
-[^75]:  Translator's note (Ven. A. Thitzana): These forms are abstract nouns formed with the taddhita suffix ṇya, “the state of being X”, and their full derivation is shared between this chapter and the taddhita one. Take paṇḍiccaṃ as a model. (1) ṇya is added to the base (Thitzana's sutta 360): paṇḍita \+ ṇya. (2) ‘ṇ’ of the suffix is elided (his sutta 396): paṇḍita \+ ya. (3) The end vowel of the base is elided before ‘ya’ (§261): paṇḍit \+ ya. (4) The consonant, together with ‘y’, becomes the corresponding one according to this sutta —‘t’ into ‘c’, ‘l’ into ‘l’, ‘ṇ’ into ‘ñ’, ‘d’ into ‘j’—: paṇḍic°. (5) The resulting consonant is doubled (§28): paṇḍicca. (6) The vowel of the base receives vuddhi (his sutta 400): ‘u’ becomes ‘o’ in kosallaṃ and sohajjaṃ; ‘i’ becomes ‘e’ in vepullaṃ and nepuññaṃ; ‘a’ is lengthened in kāruññaṃ and sāmaññaṃ (in bāhussaccaṃ, on the other hand, ‘u’ of “suta” becomes ‘a’; Nandisena cites §404). (7) Finally, being neuter, ‘si’ is substituted by ‘aṃ’ (§219) and the end ‘a’ is elided (§83): paṇḍiccaṃ. The bases of the eight examples: bāhussuta → bāhussaccaṃ; paṇḍita → paṇḍiccaṃ; vipula → vepullaṃ; karuṇā → kāruññaṃ; kusala → kosallaṃ; nipuṇa → nepuññaṃ; samaṇa —or samāna— → sāmaññaṃ; suhada → sohajjaṃ. In opammaṃ (upamā \+ ṇya) ‘y’ is substituted by ‘m’, according to the fourth kimatthaṃ of this sutta, with ‘u’ become ‘o’.
+[^75]:  There are two explanations here, one by the Nyāsa and the other by the Rūpasiddhi. The Nyāsa says that after “musa pāṇacāge” there is the suffix ‘tyu’. By §638 the end of the root, ‘sa’, and ‘u’ of ‘mu’ are elided.
+
+[^76]:  Translator's note (Ven. A. Thitzana): These forms are abstract nouns formed with the taddhita suffix ṇya, “the state of being X”, and their full derivation is shared between this chapter and the taddhita one. Take paṇḍiccaṃ as a model. (1) ṇya is added to the base (Thitzana's sutta 360): paṇḍita \+ ṇya. (2) ‘ṇ’ of the suffix is elided (his sutta 396): paṇḍita \+ ya. (3) The end vowel of the base is elided before ‘ya’ (§261): paṇḍit \+ ya. (4) The consonant, together with ‘y’, becomes the corresponding one according to this sutta —‘t’ into ‘c’, ‘l’ into ‘l’, ‘ṇ’ into ‘ñ’, ‘d’ into ‘j’—: paṇḍic°. (5) The resulting consonant is doubled (§28): paṇḍicca. (6) The vowel of the base receives vuddhi (his sutta 400): ‘u’ becomes ‘o’ in kosallaṃ and sohajjaṃ; ‘i’ becomes ‘e’ in vepullaṃ and nepuññaṃ; ‘a’ is lengthened in kāruññaṃ and sāmaññaṃ (in bāhussaccaṃ, on the other hand, ‘u’ of “suta” becomes ‘a’; Nandisena cites §404). (7) Finally, being neuter, ‘si’ is substituted by ‘aṃ’ (§219) and the end ‘a’ is elided (§83): paṇḍiccaṃ. The bases of the eight examples: bāhussuta → bāhussaccaṃ; paṇḍita → paṇḍiccaṃ; vipula → vepullaṃ; karuṇā → kāruññaṃ; kusala → kosallaṃ; nipuṇa → nepuññaṃ; samaṇa —or samāna— → sāmaññaṃ; suhada → sohajjaṃ. In opammaṃ (upamā \+ ṇya) ‘y’ is substituted by ‘m’, according to the fourth kimatthaṃ of this sutta, with ‘u’ become ‘o’.
