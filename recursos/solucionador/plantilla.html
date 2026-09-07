@@ -1122,6 +1122,17 @@ async function analizar(){
 
   const voces = fichas(texto);
   let html = '';
+  /* Qué voces reciben tarjeta en esta pasada. Es lo que `revRegistradas()`
+     necesita saber, y ANTES preguntaba otra cosa: miraba si la voz estaba en
+     el pasaje. No es lo mismo, y la diferencia dejaba fuera justo el caso
+     para el que existe la caja de «sandhi no detectado» — una voz que está
+     en el pasaje y que el motor no señala. Ésa no entraba en `marcadas`
+     —«if(!r.senal) continue»— ni en el bloque de registradas —estaba en el
+     pasaje—, de modo que no recibía tarjeta por ningún lado, y sin tarjeta
+     no hay campo de nota ni de escalera ni botón de borrar: el veredicto
+     viajaba al .md solo, que es como llegaron los lotes del estudiante del
+     2026-09-03 y del 2026-09-06. Lo detectó él leyendo el código. */
+  const dibujadas = new Set();
   if(voces.length === 1){
     /* Una voz sola: el análisis completo, diga lo que diga — los tres
        silencios se dicen distinto, y ninguno se esconde. */
@@ -1132,6 +1143,7 @@ async function analizar(){
     html = `<p class="cuenta-sandhis">${esc(voces[0])}${est1 ? ' — ' + est1 : ''}${
       r.senal ? (est1 ? ' · ' : ' — ') + chipSenal(r) : ''}</p>`
       + `<div class="forms">${tarjeta(voces[0], r, true)}</div>`;
+    dibujadas.add(voces[0].toLowerCase());
   } else {
     /* Una voz repetida (thūpañca, tres veces en el reparto de las
        reliquias) es UNA tarjeta con su cuenta «×3», no tres tarjetas
@@ -1164,9 +1176,10 @@ async function analizar(){
     if(marcadas.length){
       html += `<div class="forms">${marcadas.map(([v,r,n]) => tarjeta(v, r, false, n)).join('')}</div>`;
     }
+    for(const [v] of marcadas) dibujadas.add(v.toLowerCase());
     html += `<p class="motivo" style="margin-top:14px">${tr('prudente')}</p>`;
   }
-  if(REV.on) html += revRegistradas(texto) + revAcciones();
+  if(REV.on) html += revRegistradas(dibujadas) + revAcciones();
   /* Conservar qué tarjetas estaban abiertas: la revisión re-pinta. */
   const abiertas = new Set([...out.querySelectorAll('details.form[open]')]
     .map(d => d.dataset.voz));
@@ -1269,11 +1282,26 @@ function revBarra(voz, r){
 
    Se dibujan aparte y rotuladas, no mezcladas con lo señalado en el pasaje,
    y siguen a la vista aunque se analice otro texto: si desaparecieran al
-   cambiar de pasaje volveríamos al problema de partida. */
-function revRegistradas(texto){
-  const enPasaje = new Set(fichas(texto).map(v => v.toLowerCase()));
+   cambiar de pasaje volveríamos al problema de partida.
+
+   ESTO ARREGLABA LA MITAD, y la mitad que menos falta hacía (2026-09-07). El
+   filtro preguntaba «¿está en el pasaje?» cuando lo que quería preguntar era
+   «¿ya tiene tarjeta?». Las dos coinciden sólo si todo lo del pasaje recibe
+   tarjeta, y no es así: `analizar()` sólo la da a lo señalado. De modo que
+   una voz registrada a mano Y presente en el pasaje —que es exactamente el
+   caso para el que sirve la caja: un sandhi que se ve leyendo y que el motor
+   se saltó— caía entre las dos condiciones y seguía sin tarjeta. Ahora se
+   recibe el conjunto de las voces ya dibujadas y se pregunta por él, que era
+   la pregunta desde el principio. No se dibuja dos veces nada: si el motor
+   la señaló, su tarjeta ya está arriba.
+
+   La cuenta del encabezado NO se toca: estas voces siguen fuera de
+   `marcadas`, que es de donde salen «marca N de cada 100», las seguras y las
+   posibles. Esos números miden al detector, y meterles lo que registra el
+   revisor los estropearía. */
+function revRegistradas(dibujadas){
   const sueltas = [...REV.v.keys()].filter(
-    v => REV.v.get(v).falta && !enPasaje.has(v.toLowerCase()));
+    v => REV.v.get(v).falta && !dibujadas.has(v.toLowerCase()));
   if(!sueltas.length) return '';
   return `<p class="cuenta-sandhis" style="margin-top:22px"
       data-tip="${esc(tr('t_reg'))}">${tr('reg_lbl')} · ${sueltas.length}</p>
@@ -1374,7 +1402,13 @@ function revMD(){
   let i = 0;
   for(const [voz, v] of REV.v){
     i += 1;
-    L.push(`## ${i}. ${voz}  ·  señal ${v.senal || 'ninguna'}  ·  revisado en la página`);
+    /* De dónde salió el veredicto. Sin esto, una voz escrita en «sandhi no
+       detectado» —sobre la que el motor calla, y que puede ni estar en el
+       pasaje— llegaba al .md indistinguible de una adjudicada sobre la
+       tarjeta que el propio solucionador propuso. El incorporador sólo pide
+       «## N. forma ·», de modo que lo que siga es libre. */
+    L.push(`## ${i}. ${voz}  ·  señal ${v.senal || 'ninguna'}  ·  ${
+      v.falta ? 'registrada a mano por el revisor' : 'revisado en la página'}`);
     if(v.primera) L.push(`- **a)** ${v.primera} — la primera lectura del motor`);
     L.push('');
     L.push('VEREDICTO: ' + (v.t === 'no' ? 'no' : (v.t === 'primera' ? v.primera : v.comp)));
