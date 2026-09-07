@@ -609,6 +609,16 @@
 </style>
 </head>
 <body>
+<script>/* Lengua de arranque, y es la misma función en todo el sitio (sesión
+   63): manda la elección del lector si la hizo, y si no la hizo manda la
+   lengua de su navegador, que es la de su sistema operativo. El español es
+   el que queda por defecto, que es la lengua del proyecto, y a él van a
+   parar las lenguas que no son el inglés. */
+function paliLang(){var g=null;
+try{g=localStorage.getItem('pali_lang');}catch(e){}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\b/i.test(n)?'en':'es';}</script>
 <script>/* Tema guardado (clave compartida con el resto del sitio), antes de pintar. */
 try{var _d=localStorage.getItem('pali_dark');
 if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
@@ -825,8 +835,7 @@ const VERSION_DATE = '__VERSION_DATE__';
       + 'plano; se enlazarán solos el día que entre.'
   };
 
-  let LANG = 'es';
-  try { if (localStorage.getItem('pali_lang') === 'en') LANG = 'en'; } catch(e){}
+  let LANG = paliLang();
 
   function ui(seccion, clave){
     const fuente = (LANG === 'en' && ING.interfaz) ? ING.interfaz : UI_ES;

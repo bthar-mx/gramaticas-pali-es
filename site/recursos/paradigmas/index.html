@@ -387,6 +387,16 @@ footer a{color:var(--nila)}
 </style>
 </head>
 <body>
+<script>/* Lengua de arranque, y es la misma función en todo el sitio (sesión
+   63): manda la elección del lector si la hizo, y si no la hizo manda la
+   lengua de su navegador, que es la de su sistema operativo. El español es
+   el que queda por defecto, que es la lengua del proyecto, y a él van a
+   parar las lenguas que no son el inglés. */
+function paliLang(){var g=null;
+try{g=localStorage.getItem('pali_lang');}catch(e){}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\b/i.test(n)?'en':'es';}</script>
 
 <div class="scrim" id="scrim"></div>
 <button id="volver-barra" aria-label="Mostrar el índice"
@@ -401,9 +411,9 @@ footer a{color:var(--nila)}
 <header>
   <div class="wrap mast">
     <div>
-      <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+      <a class="volver-sitio" href="../"><span class="i-es">← Recursos · Gramáticas Pāḷi</span><span class="i-en">← Resources · Pāḷi Grammars</span></a>
       <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
-      <h1>Paradigmas de declinaci<span class="dia">ó</span>n</h1>
+      <h1><span class="i-es">Paradigmas de declinaci<span class="dia">ó</span>n</span><span class="i-en">Declension paradigms</span></h1>
       <p class="tag i-es">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
       <p class="tag i-en">The declension tables of the Pāḷi noun and pronoun, with every variant.</p>
       <span class="version-badge" id="vbadge"></span>
@@ -511,13 +521,13 @@ const mq = c => { try{ return !!(window.matchMedia && matchMedia(c).matches); }c
      adjudicación en inglés. Hasta entonces se muestra en español, y el pie
      en inglés lo dice. Mismo criterio que los textos del MOTOR en el
      solucionador. */
-let IDIOMA = 'es';
-try { if(localStorage.getItem('pali_paradigmas_en') === '1') IDIOMA = 'en'; } catch(e){}
+let IDIOMA = paliLang();
 /* La clase del body, cuanto antes: si esperara al final del guion, la prosa
    española asomaría un instante antes de dar paso a la inglesa. */
 if(IDIOMA === 'en'){ document.body.classList.add('en'); document.documentElement.lang = 'en'; }
 const TXT = {
   es: {
+    titulo: 'Paradigmas · Declinación nominal y pronominal en pāḷi',
     sb_lbl: 'Declinación nominal y pronominal',
     ph_buscar: 'Buscar paradigma o forma — «purisa», «rannā», «bhikkhave»…',
     a_buscar: 'Buscar', a_gen: 'Filtrar por género', a_tema: 'Filtrar por tema',
@@ -562,6 +572,7 @@ const TXT = {
            ['purise, purisasmiṃ, purisamhi','séptima sg.']]
   },
   en: {
+    titulo: 'Paradigms · Nominal and pronominal declension in Pāḷi',
     sb_lbl: 'Nominal and pronominal declension',
     ph_buscar: 'Search a paradigm or a form — «purisa», «rannā», «bhikkhave»…',
     a_buscar: 'Search', a_gen: 'Filter by gender', a_tema: 'Filter by stem',
@@ -1278,7 +1289,8 @@ topBtn.addEventListener('click', () => {
     document.documentElement.lang = v ? 'en' : 'es';
     b.setAttribute('aria-pressed', v ? 'true' : 'false');
     b.classList.toggle('on', v);
-    try { localStorage.setItem('pali_paradigmas_en', v ? '1' : '0'); } catch(e){}
+    try { localStorage.setItem('pali_lang', v ? 'en' : 'es'); } catch(e){}
+    document.title = tr('titulo');
 
     /* Los mandos fijos */
     const q = document.getElementById('q');

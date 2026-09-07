@@ -473,6 +473,16 @@ footer a{color:var(--nila)}
 </style>
 </head>
 <body>
+<script>/* Lengua de arranque, y es la misma función en todo el sitio (sesión
+   63): manda la elección del lector si la hizo, y si no la hizo manda la
+   lengua de su navegador, que es la de su sistema operativo. El español es
+   el que queda por defecto, que es la lengua del proyecto, y a él van a
+   parar las lenguas que no son el inglés. */
+function paliLang(){var g=null;
+try{g=localStorage.getItem('pali_lang');}catch(e){}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\b/i.test(n)?'en':'es';}</script>
 
 <div class="scrim" id="scrim"></div>
 <button id="volver-barra" aria-label="Mostrar el índice"

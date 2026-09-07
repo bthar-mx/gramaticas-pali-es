@@ -363,7 +363,17 @@ PAGINA = """<!DOCTYPE html>
 <script>/* Tema guardado, antes de pintar. */
 try{{var _d=localStorage.getItem('pali_dark');
 if(_d==='1'||(_d===null&&matchMedia('(prefers-color-scheme: dark)').matches))
-document.body.classList.add('dark');}}catch(e){{}}</script>
+document.body.classList.add('dark');}}catch(e){{}}
+/* Lengua de arranque, antes de pintar y con el mismo criterio en todo el
+   sitio (sesión 63). Manda la elección del lector si la hizo; si no la hizo,
+   manda la lengua de su navegador, que es la de su sistema operativo. El
+   español es el que queda por defecto: es la lengua del proyecto, y a ella
+   van a parar las lenguas que no son el inglés. */
+function paliLang(){{var g=null;
+try{{g=localStorage.getItem('pali_lang');}}catch(e){{}}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\\b/i.test(n)?'en':'es';}}</script>
 <main class="idx">
 {volver}
 <p class="idx-eyebrow"><span class="marca-arbol"></span>{eyebrow}</p>
@@ -390,8 +400,13 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
   document.body.appendChild(b);
 
   /* Idioma. La clave «pali_lang» es la misma que usan las páginas de
-     recurso, de modo que la elección viaja con el lector por todo el sitio. */
+     recurso, de modo que la elección viaja con el lector por todo el sitio.
+     Y `paliLang()` —definida en la cabecera, antes de que se pinte nada— da
+     la lengua de arranque: la elegida si la hay, y si no la del navegador,
+     que es la del sistema operativo del lector. */
   var TITULOS = {{ es: {titulo_json}, en: {lang_en_json} }};
+  var DESCRIPCIONES = {{ es: {descripcion_json}, en: {descripcion_en_json} }};
+  var META_DESC = document.querySelector('meta[name="description"]');
   var l = document.createElement('button');
   l.id = 'lang-btn'; l.type = 'button';
   /* Dos segmentos, ES | EN: el de la lengua en curso va relleno (sesión
@@ -404,12 +419,13 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
     var en = document.body.classList.contains('en');
     document.documentElement.lang = en ? 'en' : 'es';
     document.title = en ? TITULOS.en : TITULOS.es;
+    if (META_DESC) {{ META_DESC.content = en ? DESCRIPCIONES.en : DESCRIPCIONES.es; }}
     sES.classList.toggle('lang-cur', !en);
     sEN.classList.toggle('lang-cur', en);
     l.setAttribute('aria-label', en ? 'Ver en español' : 'View in English');
     l.setAttribute('data-tip', en ? 'Ver en español' : 'View in English');
   }}
-  try {{ if (localStorage.getItem('pali_lang') === 'en') document.body.classList.add('en'); }} catch (e) {{}}
+  if (paliLang() === 'en') {{ document.body.classList.add('en'); }}
   l.onclick = function () {{
     document.body.classList.toggle('en');
     try {{ localStorage.setItem('pali_lang', document.body.classList.contains('en') ? 'en' : 'es'); }} catch (e) {{}}
@@ -561,6 +577,8 @@ def portada(pub):
         raiz="", volver="",
         eyebrow="Instituto de Estudios Buddhistas Hispano",
         lang_en="Pāḷi Grammars in English",
+        descripcion_en="English translations of the classical grammars of the "
+                       "Pāḷi language. Instituto de Estudios Buddhistas Hispano.",
         # El inglés es el mismo que ya llevaba `lang_en` para la pestaña del
         # navegador, de modo que el título de la página y el de la pestaña
         # dicen lo mismo.
@@ -632,6 +650,8 @@ def indice_kaccayana(pub):
         volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Gramática de Kaccāyana"),
         lang_en="Kaccāyana-Byākaraṇaṃ · Pāḷi Grammars in English",
+        descripcion_en="English translation of Kaccāyana's grammar, chapter "
+                       "by chapter.",
         h1='Kacc<span class="dia">ā</span>yana-By<span class="dia">ā</span>'
            'kara<span class="dia">ṇ</span>a<span class="dia">ṃ</span>',
         cuerpo=cuerpo,
@@ -747,6 +767,8 @@ def indice_recursos():
         volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Material de apoyo"),
         lang_en="Resources · Pāḷi Grammars in English",
+        descripcion_en="Reference material for the study of Pāḷi grammar: "
+                       "rules, tables and glossaries.",
         h1=bi("Recursos"),
         cuerpo=cuerpo,
         pie="  {0} {1}.".format(bi("Fuentes:", "Sources:"), FUENTES))
@@ -756,8 +778,12 @@ def pagina(**kw):
     """PAGINA con los dos títulos ya serializados para el botón de idioma."""
     import json as _json
     kw.setdefault("lang_en", kw["titulo"])
+    kw.setdefault("descripcion_en", kw["descripcion"])
     kw["titulo_json"] = _json.dumps(kw["titulo"], ensure_ascii=False)
     kw["lang_en_json"] = _json.dumps(kw.pop("lang_en"), ensure_ascii=False)
+    kw["descripcion_json"] = _json.dumps(kw["descripcion"], ensure_ascii=False)
+    kw["descripcion_en_json"] = _json.dumps(kw.pop("descripcion_en"),
+                                            ensure_ascii=False)
     return PAGINA.format(**kw)
 
 

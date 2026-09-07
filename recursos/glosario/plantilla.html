@@ -367,6 +367,16 @@ footer code{font-family:var(--mono);font-size:11.5px}
 </style>
 </head>
 <body>
+<script>/* Lengua de arranque, y es la misma función en todo el sitio (sesión
+   63): manda la elección del lector si la hizo, y si no la hizo manda la
+   lengua de su navegador, que es la de su sistema operativo. El español es
+   el que queda por defecto, que es la lengua del proyecto, y a él van a
+   parar las lenguas que no son el inglés. */
+function paliLang(){var g=null;
+try{g=localStorage.getItem('pali_lang');}catch(e){}
+if(g==='en'||g==='es')return g;
+var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+return /^en\b/i.test(n)?'en':'es';}</script>
 
 <button id="volver-barra" aria-label="Mostrar el índice">☰</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice de secciones">
@@ -385,9 +395,11 @@ footer code{font-family:var(--mono);font-size:11.5px}
 
 <header>
   <div class="wrap mast">
-    <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+    <a class="volver-sitio" href="../"><span class="i-es">← Recursos · Gramáticas Pāḷi</span><span class="i-en">← Resources · Pāḷi Grammars</span></a>
     <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
-    <h1>Glosario gramatical p<span class="dia">ā</span>ḷi</h1>
+    <h1><span class="i-es">Glosario gramatical p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi grammatical glossary</span></h1>
+    <!-- El título del glosario de Nandisena no se traduce: es el título de
+         una obra publicada en español, y se cita como se llama. -->
     <p class="obras"><i>Glosario de términos gramaticales de la lengua pali</i> · <i>Conspectus Terminorum</i> (saññāmātikā)</p>
     <span class="version-badge" id="vbadge"></span>
   </div>
@@ -655,7 +667,7 @@ const out = $('#out');
    que en modo EN se enseña el inglés DONDE LO HAY y el español donde no,
    y el rótulo «es» de la propia línea dice cuál se está leyendo. Es lo
    que ya hace /recursos/paradigmas/ con su prosa sin adjudicar. */
-let tab = 'alfa', idioma = 'es', soloMarcas = false, q = '';
+let tab = 'alfa', idioma = paliLang(), soloMarcas = false, q = '';
 /* En vez de partir la página en una pestaña por obra —que devolvería el
    problema que la vista alfabética resuelve, leer una obra sin la otra al
    lado—, las dos capas se apagan y se encienden sobre la MISMA ficha. Se
@@ -1185,16 +1197,38 @@ $('#n-alfa').textContent = DATA.agrupado.length;
 $('#n-conspectus').textContent = DATA.conspectus.length;
 $('#n-normativo').textContent = DATA.normativo.length;
 
-const NOTA_ABC = 'Las letras siguen el orden del alfabeto pāḷi, no el latino: ' +
-  'vocales, guturales, palatales, cerebrales, dentales, labiales y el resto. ' +
-  'Los dígrafos aspirados cuentan como una letra, de modo que «kh» no va bajo ' +
-  '«k». El número es cuántos lemas empiezan por esa letra en lo que hay a la ' +
-  'vista; una letra en trazo discontinuo no tiene ninguno. Ninguna palabra ' +
-  'pāḷi empieza por ṅ, ṇ ni ḷ: si aquí tienen entrada es porque el glosario ' +
-  'nombra las letras mismas —ṅakāra, ṇakāra, ḷakāra—.';
+/* Las cadenas que se pintan desde JavaScript, en los dos idiomas. La prosa
+   que viaja en los datos —el plan de Smith, las glosas— no está aquí: es
+   material de las fuentes y se muestra como está. */
+const TITULOS = {
+  es: 'Glosario gramatical pāḷi · Conspectus Terminorum del Saddanīti',
+  en: 'Pāḷi grammatical glossary · Conspectus Terminorum of the Saddanīti'
+};
+const NOTA_ABC = {
+  es: 'Las letras siguen el orden del alfabeto pāḷi, no el latino: ' +
+    'vocales, guturales, palatales, cerebrales, dentales, labiales y el resto. ' +
+    'Los dígrafos aspirados cuentan como una letra, de modo que «kh» no va bajo ' +
+    '«k». El número es cuántos lemas empiezan por esa letra en lo que hay a la ' +
+    'vista; una letra en trazo discontinuo no tiene ninguno. Ninguna palabra ' +
+    'pāḷi empieza por ṅ, ṇ ni ḷ: si aquí tienen entrada es porque el glosario ' +
+    'nombra las letras mismas —ṅakāra, ṇakāra, ḷakāra—.',
+  en: 'The letters follow the order of the Pāḷi alphabet, not the Latin one: ' +
+    'vowels, gutturals, palatals, cerebrals, dentals, labials and the rest. ' +
+    'The aspirated digraphs count as one letter, so that “kh” does not go under ' +
+    '“k”. The number is how many lemmas begin with that letter in what is on ' +
+    'view; a letter in a dashed outline has none. No Pāḷi word begins with ' +
+    'ṅ, ṇ or ḷ: if they have an entry here it is because the glossary names ' +
+    'the letters themselves —ṅakāra, ṇakāra, ḷakāra—.'
+};
+const ROT_BARRA = {
+  es: { plan: 'El plan de Smith', abc: 'Por inicial' },
+  en: { plan: 'Smith’s plan',     abc: 'By initial'  }
+};
 function rotulaBarra(){
-  $('#secs-tit').textContent = tab === 'conspectus' ? 'El plan de Smith' : 'Por inicial';
-  $('#sb-nota').textContent = tab === 'conspectus' ? DATA.plan : NOTA_ABC;
+  const r = ROT_BARRA[idioma] || ROT_BARRA.es;
+  $('#secs-tit').textContent = tab === 'conspectus' ? r.plan : r.abc;
+  $('#sb-nota').textContent = tab === 'conspectus' ? DATA.plan
+                                                  : (NOTA_ABC[idioma] || NOTA_ABC.es);
 }
 document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
   document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
@@ -1228,6 +1262,11 @@ alterna($('#b-marcas'), v => soloMarcas = v);
 /* ES y EN se turnan, no se suman: pulsar uno apaga el otro. */
 function ponIdioma(v){
   idioma = v;
+  // La elección se guarda con la clave común del sitio, de modo que viaja
+  // con el lector a las demás páginas (sesión 63).
+  guardar('pali_lang', v);
+  document.documentElement.lang = v;
+  document.title = TITULOS[v] || TITULOS.es;
   // La clase del <body> conmuta la prosa de dos idiomas del pie.
   document.body.classList.toggle('en', v === 'en');
   // Los globos con versión inglesa (data-tip-en) la enseñan en modo EN.
@@ -1241,6 +1280,10 @@ function ponIdioma(v){
 }
 $('#b-es').onclick = () => ponIdioma('es');
 $('#b-en').onclick = () => ponIdioma('en');
+/* Y se aplica la lengua de arranque, que ya trae `idioma`: sin esta llamada
+   la página nacía en español aunque el lector hubiera elegido inglés en otra
+   página del sitio (sesión 63). */
+ponIdioma(idioma);
 
 const plegar = v => document.body.classList.toggle('sin-barra', v);
 $('#burger').onclick = () => {
