@@ -468,18 +468,18 @@ extraídas del PDF.
 
 ## Estado de recursos/paradigmas
 
-La referencia de paradigmas (`/recursos/paradigmas/`, v1.14) son las 84 entradas
+La referencia de paradigmas (`/recursos/paradigmas/`, v1.18) son las 84 entradas
 (83 documentos) de declinación nominal y pronominal del IEBH. Se arma con
 `herramientas/generar_paradigmas.py` a partir de `recursos/paradigmas/plantilla.html`
 y tres JSON: `paradigmas.json` (los datos), `indice.json` (el cotejo) e
-`ingles.json` (el borrador inglés de la prosa).
+`ingles.json` (el inglés de la prosa).
 
-### El inglés va en dos capas, y sólo una está publicada
+### El inglés va en dos capas, y las dos están publicadas
 
 | Capa | Dónde vive | Estado |
 | --- | --- | --- |
-| La INTERFAZ | `plantilla.html` (bloques `.i-es`/`.i-en` + diccionario `TXT`) y `inflexiones_en`/`casos_en` en `paradigmas.json` | publicada (v1.14) |
-| La PROSA del IEBH | `recursos/paradigmas/ingles.json` | **redactada y SIN adjudicar** |
+| La INTERFAZ | `plantilla.html` (bloques `.i-es`/`.i-en` + diccionario `TXT`) y `inflexiones_en`/`casos_en` en `paradigmas.json` | publicada desde v1.14 |
+| La PROSA del IEBH | `recursos/paradigmas/ingles.json` | **adjudicada por el IEBH el 2026-08-29; publicada desde v1.15** |
 
 La prosa son las 84 glosas («purisa (hombre)»), los 32 subtítulos, las 7 familias,
 las 8 notas de transcripción, el texto de los sufijos y los 17 usos con sus
@@ -487,7 +487,11 @@ ejemplos. **Son palabras del IEBH**, así que el borrador no llega a la página
 mientras `"adjudicado"` sea `false`: `generar_paradigmas.py` lo comprueba —campo
 por campo, contra el español— pero no lo inyecta, y el modo inglés muestra el
 español con un aviso en el pie que lo dice. Firmarlo es poner `"adjudicado": true`
-con `adjudicado_por` y `fecha`; entonces el aviso cede el sitio al crédito.
+con `adjudicado_por` y `fecha`; entonces el aviso cede el sitio al crédito. **Eso
+ya ocurrió**, de modo que la firma es de 2026-08-29 y cubre lo que había ese día:
+lo que se añada después a `ingles.json` —una nota nueva, una glosa retocada—
+entra bajo una firma que no lo ha visto, y **eso se le dice a Angel al añadirlo**,
+para que decida si vale o si espera adjudicación aparte.
 
 El cotejo lado a lado, para firmar, lo escribe
 
