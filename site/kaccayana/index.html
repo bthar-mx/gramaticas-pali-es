@@ -9,7 +9,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="../assets/pali.css?v=87f8290a" rel="stylesheet"/>
+<link href="../assets/pali.css?v=df2d6448" rel="stylesheet"/>
 </head>
 <body>
 <script>/* Tema guardado, antes de pintar. */
@@ -135,7 +135,10 @@ document.body.classList.add('dark');}catch(e){}</script>
     pinta();
   };
   pinta();
-  document.body.appendChild(l);
+  /* Arriba, a la derecha de la línea de la marca: flotando abajo tapaba
+     el texto (sesión 60). */
+  var eb = document.querySelector('.idx-eyebrow');
+  if (eb) { eb.appendChild(l); } else { document.body.appendChild(l); }
 })();
 </script>
 </body>
