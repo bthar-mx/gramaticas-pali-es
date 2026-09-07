@@ -6092,7 +6092,7 @@ What is the purpose of saying “after these”? \[This sutta does not apply whe
 
 [^10]:  ‘Saṃ’ and ‘sā’ are substitutions of the inflections ‘smiṃ’ and ‘sa’ respectively, after pronouns named ‘gha’ and ‘pa’ (see §179). This sutta prescribes the additional insertion of ‘s’ before those substitutions.
 
-[^11]:  i ī → iya; u ū → uva
+[^11]:  Note: i ī → iya; u ū → uva
 
 [^12]:  “Ca” means here *sampiṇḍana* (collecting), since both this sutta and §70 have a similar function: in §70, ‘jha’ and ‘la’ are substituted by ‘iya’ and ‘uva’; in this sutta, by ‘ya’ and ‘va’. The “ca” gathers both operations as a set. Ref. Ven. A. Thitzana.
 
