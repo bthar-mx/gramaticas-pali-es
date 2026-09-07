@@ -18,17 +18,31 @@ del conversor.
 
 ---
 
-## Estado: seis correcciones redactadas, sin firmar
+## Estado: siete correcciones adjudicadas
 
-De lo que sigue hay ya **seis** escritas en el maestro y **sin adjudicar**: las
-tres erratas tipográficas del §1 y las tres cadenas de §66 del §2.2. Están sin
-publicar —el capítulo sigue en v1.3 (es) y v1.1 (en)—, y se deshacen enteras
-con `git checkout` mientras no se firmen.
+Publicadas en v1.4 (es) y v1.2 (en): las tres erratas tipográficas del §1 y las
+tres cadenas de §66 del §2.2. En **v1.5 (es)**, una séptima, que no salió del
+guion sino del ojo de IEBH:
 
-Con ellas, la recomposición pasa de 571 a **577 de 608**, y quedan 16 cadenas
-que no dan el lema. El informe `.txt` de al lado está regenerado, de modo que
-ya refleja las seis; las cifras del apartado siguiente son las de antes, que
-son las que motivaron cada propuesta.
+**«Svāgataṃ» (§71), línea 469 del maestro.** Decía `‘a’ de ‘ya’ se elide
+(§83)`, y en `su + āgataṃ` no hay ninguna ‘ya’: la ‘u’ se había sustituido por
+‘va’. El ‘ya’ es de «agyāgāraṃ», la derivación de la línea de encima, de la
+que se copió el paso. El inglés ya decía ‘va’, de modo que la corrección
+acerca las dos ediciones —la inglesa se queda en v1.2, que no cambia—.
+
+**El guion no la cazaba, y ahora sí.** La cadena recomponía igual, porque al
+no encontrar ‘ya’ se buscaba la ‘a’ sin alcance y aparecía la de «āgataṃ». De
+ahí sale la comprobación **3 bis**: un segmento citado entre comillas SIMPLES
+tiene que estar en la forma en ese punto. La distinción entre las dos comillas
+es del propio texto —‘ya’ es un segmento, “aggi” es el tema, que puede haberse
+transformado ya— y se midió antes de fiarse de ella: en las 608 derivaciones
+daba **una** ausencia de segmento, ésta, y ninguna falsa. Queda congelada en
+`--autoprueba`.
+
+Con las siete, la recomposición pasa de 571 a **577 de 608**, y quedan 16
+cadenas que no dan el lema. El informe `.txt` de al lado está regenerado; las
+cifras del apartado siguiente son las de antes, que son las que motivaron cada
+propuesta.
 
 ---
 

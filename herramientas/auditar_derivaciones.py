@@ -16,7 +16,7 @@ en prosa de la forma
                ‘i’ de “ādi” recibe el nombre de ‘jha’ (§58);
                ‘aṃ’ se convierte en ‘ṃ’ (§82))
 
-Hace cinco comprobaciones, de menor a mayor coste:
+Hace seis comprobaciones, de menor a mayor coste:
 
   0. TIPOGRAFÍA   — comillas simples o dobles sin cerrar dentro de un paso.
   1. SIN CITA     — pasos que no citan ningún §N.
@@ -30,6 +30,11 @@ Hace cinco comprobaciones, de menor a mayor coste:
                     sutta se lee de su propia traducción castellana en este
                     mismo archivo; para §1-§51 se toma la tabla revisada a
                     mano de `auditar_secuencias.py`.
+  3 bis. ALCANCE  — un segmento citado entre comillas SIMPLES tiene que estar
+                    en la forma en ese punto. «‘a’ de ‘ya’ se elide» en
+                    «svāgataṃ», que tiene ‘va’ y no ‘ya’, es el paso copiado
+                    de la derivación vecina. Los temas entre comillas dobles
+                    no cuentan: pueden haberse transformado ya.
   4. RECOMPOSICIÓN — se aplica la cadena a los componentes y se compara con
                     el lema. Es la que caza «ādi + smiṃ → ādaṃ» sin juicio
                     ninguno.
@@ -483,19 +488,43 @@ def aplicar(partes, accion, args, alias=None):
     return None
 
 
+CON_ALCANCE = ("sustitucion", "elision", "acortamiento", "alargamiento",
+               "duplicacion")
+
+
+def comilla_de(texto, pieza):
+    """Con qué comilla se cita `pieza` dentro del paso: ‘ (segmento) o “ (tema)."""
+    m = re.search(r"(.)" + re.escape(pieza) + r"[’”]", texto)
+    return m.group(1) if m else "?"
+
+
 def recomponer(der):
-    """Aplica la cadena. Devuelve (estado, resultados, motivo)."""
+    """Aplica la cadena. Devuelve (estado, resultados, motivo, ausencias).
+
+    `ausencias` recoge los pasos que nombran un alcance que no está en la
+    forma en ese punto. La distinción entre las dos comillas es del propio
+    texto y vale: ‘ya’ es un SEGMENTO, y si no está es que el paso habla de
+    otra derivación —«‘a’ de ‘ya’ se elide» en «svāgataṃ», que no tiene
+    ‘ya’ sino ‘va’—; “aggi” es el TEMA, y puede haberse transformado ya, de
+    modo que su ausencia es normal y no se cuenta.
+    """
     estados = [[nfc(c) for c in der["componentes"]]]
     ilustrativa = False
     alias = {}
+    ausencias = []
     for paso in der["pasos"]:
         clase, accion, args, negado, t = leer_paso(paso)
         if negado:
             ilustrativa = True
         if accion is None:
-            return "no simulable", [], "paso no implementado: «{0}»".format(t)
+            return "no simulable", [], "paso no implementado: «{0}»".format(t), ausencias
         if clase == "nombre" and args and args[0] and args[-1]:
             alias[nfc(args[-1]).lower()] = nfc(args[0])
+        if accion in CON_ALCANCE and len(args) > 1 and args[1]:
+            alc = nfc(args[1])
+            if not any(alc in "".join(e) for e in estados):
+                ausencias.append({"alcance": args[1], "paso": t,
+                                  "comilla": comilla_de(t, args[1])})
         nuevos, vistos = [], set()
         for e in estados:
             salidas = aplicar(e, accion, args, alias)
@@ -510,15 +539,16 @@ def recomponer(der):
                     vistos.add(clave)
                     nuevos.append(s)
         if not nuevos:
-            return "no simulable", [], "no se localiza el operando: «{0}»".format(t)
+            return ("no simulable", [],
+                    "no se localiza el operando: «{0}»".format(t), ausencias)
         estados = nuevos[:TOPE_ESTADOS]
         if len(nuevos) > TOPE_ESTADOS:
-            return "no simulable", [], "demasiadas lecturas del operando"
+            return "no simulable", [], "demasiadas lecturas del operando", ausencias
     resultados = sorted({"".join(e) for e in estados})
     metas = {desnudar(l) for l in der["lemas"]}
     if any(desnudar(r) in metas for r in resultados):
-        return "recompone", resultados, ""
-    return ("ilustrativa" if ilustrativa else "no recompone"), resultados, ""
+        return "recompone", resultados, "", ausencias
+    return ("ilustrativa" if ilustrativa else "no recompone"), resultados, "", ausencias
 
 
 # ── Comprobaciones ──────────────────────────────────────────────────────
@@ -670,8 +700,14 @@ def comprobar(ruta, cuales):
     if "recomposicion" in cuales:
         cuenta = Counter()
         for d in derivaciones:
-            estado, resultados, motivo = recomponer(d)
+            estado, resultados, motivo, ausencias = recomponer(d)
             cuenta[estado] += 1
+            for au in ausencias:
+                destino = "ausente" if au["comilla"] == "‘" else "ausente_tema"
+                avisos[destino].append({
+                    "linea": d["linea"], "sutta": d["sutta"],
+                    "lema": d["lemas"][0], "componentes": " + ".join(d["componentes"]),
+                    "alcance": au["alcance"], "paso": au["paso"]})
             if estado in ("no recompone", "no simulable", "ilustrativa"):
                 avisos[estado].append({
                     "linea": d["linea"], "sutta": d["sutta"],
@@ -779,6 +815,30 @@ def informar(inf, avisos, detalle):
                 x["hace"], x["cita"], ", ".join(x["esperado"]) or "—"))
             print()
 
+    if avisos["ausente"]:
+        total += len(avisos["ausente"])
+        encabezado("3 bis · EL PASO NOMBRA UN SEGMENTO QUE NO ESTÁ — {0} pasos".format(
+            len(avisos["ausente"])))
+        print("  Un segmento entre comillas simples tiene que estar en la forma")
+        print("  en ese punto. Si no está, el paso habla de otra derivación —y")
+        print("  suele ser la vecina, de la que se copió.")
+        print()
+        for x in avisos["ausente"]:
+            print("  §{0} · {1} = {2} (línea {3})".format(
+                x["sutta"], x["lema"], x["componentes"], x["linea"]))
+            print("      {0} — no hay ‘{1}’".format(x["paso"], x["alcance"]))
+            print()
+
+    if detalle and avisos["ausente_tema"]:
+        encabezado("3 ter · EL PASO NOMBRA UN TEMA YA TRANSFORMADO — {0} pasos".format(
+            len(avisos["ausente_tema"])))
+        print("  Informativo: “aggi” ya no está entero cuando el paso lo nombra,")
+        print("  y eso es normal. No se cuenta como candidato.")
+        print()
+        for x in avisos["ausente_tema"]:
+            print("  §{0} · {1} (línea {2}): {3} — no hay “{4}”".format(
+                x["sutta"], x["lema"], x["linea"], x["paso"], x["alcance"]))
+
     if avisos["no recompone"]:
         total += len(avisos["no recompone"])
         encabezado("4 · LA CADENA NO DA EL LEMA — {0} derivaciones".format(
@@ -852,19 +912,42 @@ AUTOPRUEBA = [
      ["‘ntu’ junto con la inflexión ‘smiṃ’ se sustituye por ‘ti’ (§127)"]),
 ]
 
+# El alcance ausente no se ve en el estado —«svāgataṃ» recomponía igual, y por
+# eso se coló—, así que se prueba aparte: cuántos segmentos ausentes esperamos.
+AUTOPRUEBA_ALCANCE = [
+    ("svāgataṃ, como estaba antes de la sesión 62", 1, ["Svāgataṃ"],
+     ["su", "āgataṃ"],
+     ["‘u’ recibe el nombre de ‘la’ (§58)", "‘u’ se sustituye por ‘va’ (§71)",
+      "‘a’ de ‘ya’ se elide (§83)"]),
+    ("svāgataṃ, ya corregida", 0, ["Svāgataṃ"], ["su", "āgataṃ"],
+     ["‘u’ recibe el nombre de ‘la’ (§58)", "‘u’ se sustituye por ‘va’ (§71)",
+      "‘a’ de ‘va’ se elide (§83)"]),
+]
+
+
+TOTAL_PRUEBAS = len(AUTOPRUEBA) + len(AUTOPRUEBA_ALCANCE)
+
 
 def autoprueba():
     fallos = 0
     for nombre, espera, lemas, comp, pasos in AUTOPRUEBA:
-        estado, da, motivo = recomponer(
+        estado, da, motivo, _ = recomponer(
             {"lemas": lemas, "componentes": comp, "pasos": pasos})
         bien = estado == espera
         fallos += 0 if bien else 1
         print("  {0} {1} — se esperaba «{2}», da «{3}» {4}".format(
             "ok  " if bien else "FALLA", nombre, espera, estado,
             "→ " + ", ".join(da) if da else motivo))
+    for nombre, espera, lemas, comp, pasos in AUTOPRUEBA_ALCANCE:
+        _, _, _, ausencias = recomponer(
+            {"lemas": lemas, "componentes": comp, "pasos": pasos})
+        hay = len([a for a in ausencias if a["comilla"] == "‘"])
+        bien = hay == espera
+        fallos += 0 if bien else 1
+        print("  {0} {1} — se esperaban {2} segmento(s) ausente(s), hay {3}".format(
+            "ok  " if bien else "FALLA", nombre, espera, hay))
     print()
-    print("Autoprueba: {0} de {1}".format(len(AUTOPRUEBA) - fallos, len(AUTOPRUEBA)))
+    print("Autoprueba: {0} de {1}".format(TOTAL_PRUEBAS - fallos, TOTAL_PRUEBAS))
     return 1 if fallos else 0
 
 
