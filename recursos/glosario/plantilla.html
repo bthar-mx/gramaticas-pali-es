@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 <title>Glosario gramatical pāḷi · Conspectus Terminorum del Saddanīti</title>
-<meta name="version" content="1.1">
-<meta name="version-date" content="2026-09-06">
+<meta name="version" content="1.2">
+<meta name="version-date" content="2026-09-07">
 <meta name="description" content="Terminología gramatical pāḷi en español e inglés, a partir del Conspectus Terminorum (saññāmātikā) de la edición del Saddanīti de Helmer Smith, y de la lista normativa de este repositorio.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -448,7 +448,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 
 <footer class="wrap">
   <details class="pie-notas">
-    <summary>Qué es esta página · notas y fuentes</summary>
+    <summary><span class="i-es">Qué es esta página · notas y fuentes</span><span class="i-en">What this page is · notes and sources</span></summary>
 
   <p>La terminología con que las gramáticas clásicas hablan de sí mismas.
   Reúne dos obras: el <b>Glosario</b> de <b>Bhikkhu Nandisena</b> (IEBH, 2013), que define
@@ -698,8 +698,23 @@ $('#theme').onclick = () => {
 /* ---------- cabecera y aviso ---------- */
 /* La insignia lleva la versión y su fecha (pedido del IEBH, sesión 58),
    como en /recursos/paradigmas/; el estado va al pie. */
-$('#vbadge').textContent = 'v' + DATA.version + (DATA.version_fecha ? ' · ' + DATA.version_fecha : '') + ' · ' + DATA.estado;
-$('#vfoot').textContent = 'Versión ' + DATA.version + (DATA.version_fecha ? ' (' + DATA.version_fecha + ')' : '') + ' · ' + DATA.estado;
+/* La insignia se repinta al conmutar la lengua: «Versión» y el estado
+   —«completo» / «en curso»— iban fijos en español (sesión 63). El estado
+   lo calcula generar_glosario.py, de modo que aquí se traduce el que hay. */
+const ESTADO_EN = {'completo': 'complete'};
+function estadoTr(){
+  const e = DATA.estado || '';
+  if (idioma !== 'en') return e;
+  if (ESTADO_EN[e]) return ESTADO_EN[e];
+  const m = e.match(/^en curso — (\d+) de (\d+) páginas$/);
+  return m ? `in progress — ${m[1]} of ${m[2]} pages` : e;
+}
+function pintarVersion(){
+  const v = 'Versión', vEn = 'Version';
+  $('#vbadge').textContent = 'v' + DATA.version + (DATA.version_fecha ? ' · ' + DATA.version_fecha : '') + ' · ' + estadoTr();
+  $('#vfoot').textContent = (idioma === 'en' ? vEn : v) + ' ' + DATA.version + (DATA.version_fecha ? ' (' + DATA.version_fecha + ')' : '') + ' · ' + estadoTr();
+}
+pintarVersion();
 const mq = s => matchMedia(s).matches;
 
 /* ---------- utilidades ---------- */
@@ -1200,6 +1215,10 @@ $('#n-normativo').textContent = DATA.normativo.length;
 /* Las cadenas que se pintan desde JavaScript, en los dos idiomas. La prosa
    que viaja en los datos —el plan de Smith, las glosas— no está aquí: es
    material de las fuentes y se muestra como está. */
+const PLACEHOLDER = {
+  es: 'Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…',
+  en: 'Search term, gloss or heading — “sandhi”, “vowel”, “1.1.2”, “metre”…'
+};
 const TITULOS = {
   es: 'Glosario gramatical pāḷi · Conspectus Terminorum del Saddanīti',
   en: 'Pāḷi grammatical glossary · Conspectus Terminorum of the Saddanīti'
@@ -1274,6 +1293,8 @@ function ponIdioma(v){
     if (!el.dataset.tipEs) el.dataset.tipEs = el.dataset.tip;
     el.dataset.tip = v === 'en' ? el.dataset.tipEn : el.dataset.tipEs;
   }
+  $('#q').placeholder = PLACEHOLDER[v] || PLACEHOLDER.es;
+  if (typeof pintarVersion === 'function') pintarVersion();
   $('#b-es').setAttribute('aria-pressed', v === 'es');
   $('#b-en').setAttribute('aria-pressed', v === 'en');
   pinta();

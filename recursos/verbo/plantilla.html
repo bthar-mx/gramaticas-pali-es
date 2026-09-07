@@ -676,7 +676,7 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
 
   <footer>
     <details class="pie-notas">
-      <summary>Notas, cifras y fuentes</summary>
+      <summary id="pie-sum">Notas, cifras y fuentes</summary>
       <p id="pie-fuente"></p>
       <p class="vfoot" id="vfoot"></p>
     </details>
@@ -718,6 +718,7 @@ const VERSION_DATE = '__VERSION_DATE__';
     titulo_llano: 'El verbo · ākhyāta',
     eyebrow: 'Kaccāyana · capítulo vi',
     volver: '← Recursos · Gramáticas Pāḷi',
+    pie_sum: 'Notas, cifras y fuentes',
     sb_titulo: 'El verbo',
     sb_sub: 'ākhyāta · Kaccāyana vi',
     indice: 'Índice',
@@ -1659,6 +1660,7 @@ const VERSION_DATE = '__VERSION_DATE__';
     document.getElementById('h1').innerHTML = ui('titulo');
     document.getElementById('eyebrow').textContent = ui('eyebrow');
     document.getElementById('volver').textContent = ui('volver');
+    document.getElementById('pie-sum').textContent = ui('pie_sum');
     document.getElementById('sb-titulo').textContent = ui('sb_titulo');
     document.getElementById('sb-sub').textContent = ui('sb_sub');
     document.getElementById('burgerLabel').textContent = ui('indice');

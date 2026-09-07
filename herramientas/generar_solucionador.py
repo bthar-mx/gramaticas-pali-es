@@ -47,9 +47,9 @@ LEXICO = os.path.join(RAIZ, "site", "recursos", "solucionador", "lexico")
 # Los módulos del motor, en orden de dependencia (motor requiere a los tres).
 MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
-VERSION = "2.1"
+VERSION = "2.2"
 FECHA = "2026-09-07"
-NOTA = ("LO REGISTRADO A MANO YA SE VE SIEMPRE. La 1.12 dio esto por hecho y "
+NOTA = ("EL PIE Y EL ENLACE DE VUELTA YA HABLAN INGLÉS. Eran lo último que se quedaba en español con el botón EN puesto; van ahora en los dos idiomas, y la fórmula de la licencia es la misma que usan las páginas de capítulo. La lengua de arranque la pone el sistema del lector mientras no elija, y su elección viaja al resto del sitio. Antes, en la 2.1: LO REGISTRADO A MANO YA SE VE SIEMPRE. La 1.12 dio esto por hecho y "
         "lo cumplía a medias: el bloque de registradas preguntaba «¿está en "
         "el pasaje?» cuando la pregunta era «¿ya tiene tarjeta?». Las dos "
         "sólo coinciden si todo lo del pasaje recibe tarjeta, y no es así, "

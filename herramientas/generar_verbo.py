@@ -46,8 +46,8 @@ INGLES = os.path.join(RAIZ, "recursos", "verbo", "ingles.json")
 INFLEXIONES = os.path.join(RAIZ, "recursos", "verbo", "inflexiones.json")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "verbo", "index.html")
 
-VERSION = "1.4"
-VERSION_FECHA = "2026-09-02"
+VERSION = "1.5"
+VERSION_FECHA = "2026-09-07"
 
 
 def mapa_suttas():
