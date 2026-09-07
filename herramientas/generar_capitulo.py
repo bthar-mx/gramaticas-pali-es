@@ -68,22 +68,28 @@ CAPITULOS = {
         "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.2",
-        "version_fecha": "2026-08-20",
-        "version_nota": "Restituidas 118 referencias canónicas que la fase de "
-                        "traducción había retirado (briefings 04–05, §10.1) y "
-                        "806 tramos de la negrita que Nandisena pone dentro "
-                        "del vutti, ambas tomadas de la edición base y "
-                        "verificadas por reconstrucción. La sigla de cada "
-                        "referencia se desata al pasar el cursor.",
-        "version_en": "1.0",
-        "version_fecha_en": "2026-09-03",
-        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
-                           "translation with the apparatus of the Spanish "
-                           "edition (formation of every example with its "
-                           "suttas, word-count breakdowns after Thitzana, "
-                           "glossary tooltips) and a fixed glossary for the "
-                           "technical terms.",
+        "version": "1.3",
+        "version_fecha": "2026-09-07",
+        "version_nota": "Corregida la formación de la inflexión ‘aṃ’ tras "
+                        "‘jha’, ‘la’ y ‘pa’: «ādiṃ» y «Bārāṇasiṃ» (§69) e "
+                        "«itthiṃ» (§223) se nasalizan por §82, no por la "
+                        "elisión de la vocal del tema (§83) ni por §13, que "
+                        "daban «ādaṃ» y explicaban dos veces la misma forma; "
+                        "«ratto» (§69) cita ya el §83 que elide su ‘i’. En "
+                        "§72, la vocal que sustituye a ‘smā’ es ‘ā’, no ‘a’. "
+                        "En §70, la correspondencia de ‘jha’ y ‘la’ con ‘iya’ "
+                        "y ‘uva’ pasa a nota al pie.",
+        "version_en": "1.1",
+        "version_fecha_en": "2026-09-07",
+        "version_nota_en": "Corrected the formation of the inflection ‘aṃ’ "
+                           "after ‘jha’, ‘la’ and ‘pa’: «ādiṃ» and "
+                           "«Bārāṇasiṃ» (§69) and «itthiṃ» (§223) are "
+                           "nasalised by §82, not by the elision of the stem "
+                           "vowel (§83) nor by §13, which gave «ādaṃ» and "
+                           "explained the same form twice; «ratto» (§69) now "
+                           "cites the §83 that elides its ‘i’. In §70, the "
+                           "correspondence of ‘jha’ and ‘la’ with ‘iya’ and "
+                           "‘uva’ moves to a footnote.",
     },
     "03-karaka-kappa": {
         "slug": "karaka",
