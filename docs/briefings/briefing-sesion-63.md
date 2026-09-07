@@ -160,7 +160,7 @@ olvida esa preferencia la primera vez que entre.
 
 ---
 
-## 4. LAS FUGAS DE ESPAÑOL, CERRADAS — MENOS UNA
+## 4. LAS FUGAS DE ESPAÑOL, CERRADAS
 
 Auditado el sitio entero en modo inglés, página por página. Estaban limpias la
 portada, `/kaccayana/`, `/recursos/` y `/recursos/verbo/`. Lo demás:
@@ -182,38 +182,107 @@ DESTINO —«View in English» en la página española, «Ver este capítulo en
 español» en la inglesa—, y es a propósito: es el criterio de la sesión 60 y el
 de Wikipedia. Se deja como está.
 
-### 4 bis. LO QUE FALTA: `/recursos/raices/` ENTERA
+### 4 bis. `/recursos/raices/`: EL BOTÓN «EN» ERA OTRA COSA
 
-**Su botón «EN» nunca fue un conmutador de idioma.** Lo único que hace es
-**añadir** la glosa inglesa junto a la española (clase `con-en`); el título, el
+**Su botón «EN» nunca fue un conmutador de idioma.** Lo único que hacía era
+**añadir** la glosa inglesa bajo la española (clase `con-en`); el título, el
 `h1`, la entradilla, la barra lateral, las pestañas, los filtros, las etiquetas
-de fila y el contador **siguen en español**. Es la página que Angel estaba
+de fila y el contador se quedaban en español. Era la página que Angel estaba
 mirando cuando lo dijo.
 
-**No se ha tocado**, y a propósito: es una página de otro tamaño. Medido, lo
-que pide son **51 cadenas distintas en JavaScript** —globos de cada gaṇa, de
-cada referencia, las marcas DP y DM, «sin separar», «reparto deducido», las
-tablas de plural `['raíz','raíces','ninguna raíz']`, los cuatro buscadores— más
-**nueve párrafos de prosa del pie** («Fuente», «Cómo leer las referencias», «El
-Dhātupāṭha», «La Dhātumañjūsā», «Los significados del Dhātupāṭha», «Cómo
-buscar», «Véase también», «Créditos» y el de la edición). Hacerlo a medias en
-una página cuyo valor es la precisión sería peor que no hacerlo.
+**Hecha en esta sesión, y con la decisión de IEBH (2026-09-07): en modo inglés
+la glosa española se esconde.** Los dos glosarios se turnan en vez de sumarse,
+que es lo que significa un conmutador de lengua y lo que ya hacían paradigmas y
+el solucionador. Con ello la glosa inglesa deja de ir en cursiva y más pequeña
+—era la secundaria— y se compone como la española: en su modo, cada una es la
+principal.
 
-Lo que sí queda puesto es **el cableado**: `paliLang()` ya está en su plantilla,
-lista para cuando se le ponga el diccionario `TXT` y los bloques `.i-es`/`.i-en`,
-con el patrón que ya usan paradigmas y el solucionador.
+Lo traducido: las **51 cadenas de JavaScript** al diccionario `TXT` con su
+`tr()` —globos de gaṇa y de referencia, marcas DP y DM, «sin separar»,
+«reparto deducido», las cuatro cajas de búsqueda, las tablas de plural, el
+contador— y los **nueve párrafos del pie** en bloques `.i-es`/`.i-en`
+(«Fuente», «Cómo leer las referencias», «El Dhātupāṭha», «La Dhātumañjūsā»,
+«Los significados del Dhātupāṭha», «Cómo buscar», «Véase también»,
+«Créditos» y el de la edición), más la licencia con la fórmula de
+`COPYRIGHT_EN`.
 
-**Y hay una decisión de diseño que tomar antes de escribir nada**, porque hoy
-el botón hace otra cosa: cuando «EN» pase a ser lengua, ¿el modo inglés
-**esconde** la glosa española —que es lo que significa un conmutador de
-lengua, y lo que hacen las demás páginas— o se conserva la vista de las dos a
-la vez, que hoy existe y es útil para cotejar? Si se quiere conservar,
-hacen falta tres estados y no dos.
+**Lo que NO se traduce, y es el criterio de siempre:** las formas pāḷi y
+sánscritas, que son el objeto de la página; las glosas pāḷi
+(*kuṭilagatiyaṃ*, *gatyatthe*); las referencias (I 12, X 371), que son la
+cita; y el español de U Sīlānanda y el inglés de la digitalización, que son
+las FUENTES y se enseñan como están.
 
-**Recordatorio de siempre:** el inglés nuevo que salga de ahí es **propuesta**,
-y lo adjudica IEBH, como el de `ingles.json`.
+**Dos errores de oficio que salieron al hacerlo**, y quedan arreglados:
 
----
+- `botones()` **añadía un oyente en cada llamada**. Como ahora la fila de
+  filtros se redibuja al cambiar de lengua, habrían quedado dos escuchando y
+  `render()` habría corrido por duplicado. Se pone una sola vez.
+- `botones()` **no conservaba el filtro puesto**: al conmutar la lengua los
+  filtros volvían a «todas» sin que nadie los tocara. Ahora recibe el valor en
+  curso. Comprobado: con «Con sánsc.» puesto, cambiar de lengua pasa de «1517
+  de 1698 raíces» a «1517 of 1698 roots» y el botón sigue marcado.
+
+**El inglés nuevo de esta página es PROPUESTA**, y lo adjudica IEBH como el de
+`ingles.json`.
+
+### 4 ter. UNA ENTRADA NUEVA BAJO UNA FIRMA QUE NO LA HA VISTO
+
+El pie de `/recursos/verbo/` decía «Notas, cifras y fuentes» también en
+inglés. Arreglarlo pedía una cadena nueva, `pie_sum`, en
+`recursos/verbo/ingles.json` — y **ese archivo está adjudicado por IEBH**
+(`"adjudicado": true`). De modo que, como manda `CLAUDE.md`, se dice: la
+cadena **«Notes, numbers and sources»** entra bajo una firma que no la ha
+visto. Decide IEBH si vale o si espera adjudicación aparte.
+
+### 4 ter bis. LAS VERSIONES, QUE SE HABÍAN OLVIDADO
+
+Lo vio Angel: la página de raíces cambiaba entera y seguía diciendo v1.5. Y no
+era sólo ella — **ninguna de las páginas tocadas se había subido de versión**.
+Corregido:
+
+| Página | Versión | Dónde vive el número |
+| --- | --- | --- |
+| raíces | 1.5 → **1.6** | `<meta>` de la plantilla |
+| glosario | 1.1 → **1.2** | `recursos/glosario/conspectus.json`, **no** el `<meta>` |
+| solucionador | 2.1 → **2.2** | `VERSION` en `generar_solucionador.py` |
+| verbo | 1.4 → **1.5** | `VERSION` en `generar_verbo.py` |
+| paradigmas | **1.18**, ya puesta | `const VERSION` dentro de la plantilla |
+
+**Cuidado con el glosario**: su `<meta name="version">` NO es lo que se
+publica —lo que manda es `conspectus.json`—, de modo que cambiar el `<meta>` no
+hace nada. Se cambian los dos para que no se contradigan.
+
+Y las insignias iban en español pasara lo que pasara. Ahora se repintan con la
+lengua:
+
+- **raíces** tenía `toLocaleDateString('es')` fijo, que habría dado el mes en
+  español en la página inglesa; se compone a mano con la tabla de meses, como
+  en paradigmas. Y estrena `VERSION_NOTE_EN`.
+- **glosario** decía «Versión» y el estado «completo» en inglés; ahora
+  «Version» y «complete», y «en curso — N de M páginas» → «in progress — N of
+  M pages».
+
+**Una trampa de JavaScript, por si se repite:** `aplicarIdioma()` corre al
+arrancar ANTES de que se declaren `VERSION` y `VERSION_DATE`, que son `const`,
+y tocarlas en su zona muerta lanza — `typeof` tampoco salva de ella. Hace falta
+un testigo declarado con `var`, que sí se iza inicializado: `versionLista`.
+
+### 4 quater. LAS COMPROBACIONES
+
+Con jsdom sobre las páginas ya generadas, en los dos idiomas:
+
+- las cinco páginas con conmutador —raíces, glosario, paradigmas,
+  solucionador, verbo— **no dejan ni una cadena española a la vista** en modo
+  inglés (título, `h1`, entradilla, enlace de vuelta, índice, pestañas,
+  filtros, buscador, contador, `summary` del pie y licencia);
+- el conmutador de raíces funciona **en caliente**, no sólo al cargar: cambia
+  título, clase del `body`, contador, rótulos y filtros, guarda en
+  `pali_lang`, y vuelve;
+- las 1.698 glosas llevan las dos lenguas en el marcado y las esconde el CSS,
+  de modo que no se pierde nada al conmutar;
+- `paliLang()` está en **todas** las páginas menos `/recursos/sandhi/` y
+  `/recursos/nombre/`, que no tienen conmutador;
+- los ocho `window.PALI_CAPITULO` son JSON válido.
 
 ## 5. QUÉ ESTÁ TOCADO Y SIN COMMIT
 
@@ -234,7 +303,11 @@ Fuentes tocadas:
 - `recursos/solucionador/plantilla.html` — `paliLang()`, `pali_lang`, pie y
   enlace de vuelta bilingües
 - `recursos/verbo/plantilla.html` — `paliLang()`
-- `recursos/raices/plantilla.html` — sólo `paliLang()`, sin usar todavía
+- `recursos/raices/plantilla.html` — la página entera: `paliLang()`, el
+  diccionario `TXT` con `tr()`, el pie y la prosa en `.i-es`/`.i-en`, el
+  conmutador de lengua y las dos correcciones de `botones()`
+- `recursos/verbo/ingles.json` — cadena nueva `pie_sum`, **bajo firma que no
+  la ha visto** (§4 ter)
 
 Más `site/` entero, que lo regenera el hook.
 
@@ -248,9 +321,15 @@ partirlo a mano.
 
 1. **Firmar o corregir §268** (§1), que es media hora y cierra seis
    derivaciones.
-2. **Decidir los tres estados de raíces** (§4 bis) y traducirla.
+2. **Adjudicar el inglés nuevo**: la página de raíces entera (§4 bis) y la
+   cadena `pie_sum` del verbo (§4 ter).
 3. Los candidatos del capítulo 2 que quedan, por orden de señal, tal como los
    dejó el briefing 62 §4: «Puthabyā» (§72), «Itthi» (§85), «Kva»,
    «Daṇḍi», «Catassannaṃ», «Pulliṅgaṃ», «Bāhussaccaṃ».
 4. `/recursos/sandhi/` y `/recursos/nombre/` no tienen conmutador ninguno.
-   Angel los dejó fuera del encargo de esta sesión.
+   Angel los dejó fuera del encargo de esta sesión, y son las dos únicas
+   páginas del sitio que siguen siendo sólo españolas.
+5. Los 21 términos ingleses que IEBH pasó para `glosario-ingles.json` quedaron
+   a medias: mapeados a sus claves exactas y con la adjudicación por tandas
+   decidida, pero **sin escribir**, y con tres glosas por resolver
+   —`pañcavassa`, `-gabbha`, `makuṭa`— más `pūḷī` y `hīna`, que no llegaron.
