@@ -66,7 +66,7 @@ OBRAS = [
     ("kaccayana/", "Kacc<span class=\"dia\">ā</span>yana-By<span class=\"dia\">ā"
      "</span>kara<span class=\"dia\">ṇ</span>a<span class=\"dia\">ṃ</span>",
      "Gramática de Kaccāyana. La más antigua de las gramáticas pāḷi. "
-     "Edición base: Bhikkhu U Nandisena (ITBMU)."),
+     "Edición base: Bhikkhu Nandisena."),
     (None, "Nyāsa",
      "Atribuido a Vimalabuddhi (siglo XI), y llamado también "
      "<i>Mukhamattadīpanī</i>. El comentario clásico de la gramática de "
@@ -164,9 +164,9 @@ EN = {
     "prevista": "planned",
 
     "Gramática de Kaccāyana. La más antigua de las gramáticas pāḷi. "
-    "Edición base: Bhikkhu U Nandisena (ITBMU).":
+    "Edición base: Bhikkhu Nandisena.":
         "Kaccāyana's grammar, the oldest of the Pāḷi grammars. Base edition: "
-        "Bhikkhu U Nandisena (ITBMU).",
+        "Bhikkhu Nandisena.",
     "Atribuido a Vimalabuddhi (siglo XI), y llamado también "
     "<i>Mukhamattadīpanī</i>. El comentario clásico de la gramática de "
     "Kaccāyana: recorre los aforismos uno a uno y suple lo que la brevedad "
@@ -599,11 +599,11 @@ def indice_kaccayana(pub):
             'La más antigua de las gramáticas pāḷi conservadas. Ocho '
             'capítulos (<i>kappa</i>), cada uno dividido en secciones '
             '(<i>kaṇḍa</i>). Edición base de esta traducción: '
-            'Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).',
+            'Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu Nandisena.',
             'The oldest of the surviving Pāḷi grammars. Eight chapters '
             '(<i>kappa</i>), each divided into sections (<i>kaṇḍa</i>). Base '
             'edition of this translation: Kaccāyana-byākaraṇa, ed. and trans. '
-            'Bhikkhu U Nandisena (ITBMU).') + '</p>\n\n'
+            'Bhikkhu Nandisena.') + '</p>\n\n'
         '<h2>' + bi('Capítulos') + '</h2>\n{0}\n\n'
         '<h2>' + bi('Sobre la numeración') + '</h2>\n'
         '<p class="idx-lede">' + bi(

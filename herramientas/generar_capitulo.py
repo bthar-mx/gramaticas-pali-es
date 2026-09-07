@@ -50,7 +50,7 @@ CAPITULOS = {
                         "paralela en /en/.",
         "version_en": "1.0",
         "version_fecha_en": "2026-09-03",
-        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+        "version_nota_en": "First English edition: Bhikkhu Nandisena's "
                            "translation with the apparatus of the Spanish "
                            "edition (formation sequences, counter-examples, "
                            "word-count breakdowns after Thitzana, glossary "
@@ -123,7 +123,7 @@ CAPITULOS = {
                         "cada referencia se desata al pasar el cursor.",
         "version_en": "1.0",
         "version_fecha_en": "2026-09-03",
-        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+        "version_nota_en": "First English edition: Bhikkhu Nandisena's "
                            "translation with the apparatus of the Spanish "
                            "edition (numbered examples with the word "
                            "under study in bold, word-count breakdowns "
@@ -150,7 +150,7 @@ CAPITULOS = {
                         "reconstrucción y las 21 notas de Nandisena.",
         "version_en": "1.0",
         "version_fecha_en": "2026-09-06",
-        "version_nota_en": "First English edition: Bhikkhu U Nandisena's "
+        "version_nota_en": "First English edition: Bhikkhu Nandisena's "
                            "translation with the apparatus of the Spanish "
                            "edition (numbered examples with the compound "
                            "in bold, the analyses of §328 as formation "
@@ -297,7 +297,7 @@ IDIOMAS = {
 L = IDIOMAS["es"]          # el idioma en curso; main() lo fija
 
 COPYRIGHT_EN = (
-    "Pāḷi text and English translation by Bhikkhu U Nandisena (ITBMU); "
+    "Pāḷi text and English translation by Bhikkhu Nandisena; "
     "edition, apparatus and glossary by the Instituto de Estudios Buddhistas "
     "Hispano (IEBH). This material may be reproduced for personal use and "
     "distributed free of charge. Copyright © 2026 IEBH. Published under "
