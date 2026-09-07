@@ -166,7 +166,7 @@ entero el hook de pre-commit en cada commit, así que un cambio hecho ahí
 desaparece sin avisar y sin dejar rastro. Lo que se edita está en
 `kaccayana/`, `recursos/`, `comun/` y esos tres archivos de `site/assets/`.
 
-### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 59)
+### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
 
 Los capítulos 2, 3 y 4 en español son **salida**, no fuente: los rehace
 `herramientas/convertir_<obra>.py` a partir de su maestro de `docs/`, y el hook
