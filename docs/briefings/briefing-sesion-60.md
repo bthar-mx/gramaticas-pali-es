@@ -202,8 +202,10 @@ otro segmento se ilumina al pasar el cursor; globo legible (`data-tip` = el
 español»; en los índices «View in English» / «Ver en español»).
 
 **Dónde va (segundo fallo del IEBH):** flotando abajo a la derecha, junto al
-tema, tapaba el texto. En los capítulos vive ahora **en la barra de mandos,
-a la derecha del EPUB** (`margin-left:auto`), y lo pinta
+tema, tapaba el texto; en la barra de mandos saltaba de línea. En los
+capítulos vive ahora **en la línea de la cabecera, tras la insignia de
+versión** («Edición bilingüe Pāḷi–Español · 28 suttas · 1 sección · v1.0 ·
+ES | EN»), y lo pinta
 `generar_capitulo.py` (sigue siendo un enlace a la otra página, con el
 ancla; el `<script>` de redirección quedó aparte, `lang_script`). En los
 índices, **al final de la línea de la marca** (`.idx-eyebrow`, ahora flex),

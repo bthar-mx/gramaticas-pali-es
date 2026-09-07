@@ -1142,8 +1142,10 @@ def render(cap, meta, notas):
                     .format(alt_url, otra["lang"]))
         # Conmutador de dos segmentos, ES | EN: el de la lengua en curso va
         # relleno y el otro es el destino (sesión 60; antes era una pastilla
-        # con sólo la sigla de la otra lengua). Va en la barra de mandos, a
-        # la derecha del EPUB: flotando abajo tapaba el texto.
+        # con sólo la sigla de la otra lengua). Va en la línea de la
+        # cabecera, tras la insignia de versión («Edición bilingüe …»):
+        # flotando abajo tapaba el texto, y en la barra de mandos saltaba
+        # de línea.
         lang_btn = ('<a aria-label="{2}" data-tip="{2}" href="{0}" id="lang-btn" '
                     'onclick="try{{localStorage.setItem(\'pali_lang\',\'{1}\')}}'
                     'catch(e){{}};this.href=\'{0}\'+location.hash">'
@@ -1268,7 +1270,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <div class="hdr-grammar">{obra_display}</div>
 <div class="hdr-sub">{obra_sub}</div>
 <div class="hdr-chapter">{titulo_pali} · {titulo_es}</div>
-<div class="hdr-meta">{edicion} · {total} suttas · {nk_txt}{insignia}</div>
+<div class="hdr-meta">{edicion} · {total} suttas · {nk_txt}{insignia}{lang_btn}</div>
 </div>
 <div class="search-wrap">
 <input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="{buscar}" type="search"/>
@@ -1287,7 +1289,6 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <button class="ctrl-btn" onclick="changeFont(1)" title="{aumentar}">A+</button>
 <span class="done-count" id="done-count" title="{estudiados_t}">0 / {total} {estudiados}</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
-{lang_btn}
 </div>
 {kanda_nav}{cuerpo}{fin_capitulo}
 <div class="footer-box">
