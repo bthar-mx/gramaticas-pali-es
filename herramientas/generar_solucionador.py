@@ -49,6 +49,13 @@ MODULOS = ["normalizar", "operaciones", "derivar", "motor"]
 
 VERSION = "2.2"
 FECHA = "2026-09-07"
+NOTA_EN = ("THE FOOTER AND THE BACK LINK NOW SPEAK ENGLISH. They were the last "
+           "things left in Spanish with the EN button on; they now go in both "
+           "languages, and the wording of the licence is the same one the chapter "
+           "pages use. The starting language is set by the reader's system until "
+           "they choose, and their choice travels to the rest of the site. Earlier "
+           "versions of this page are described in the Spanish note.")
+
 NOTA = ("EL PIE Y EL ENLACE DE VUELTA YA HABLAN INGLÉS. Eran lo último que se quedaba en español con el botón EN puesto; van ahora en los dos idiomas, y la fórmula de la licencia es la misma que usan las páginas de capítulo. La lengua de arranque la pone el sistema del lector mientras no elija, y su elección viaja al resto del sitio. Antes, en la 2.1: LO REGISTRADO A MANO YA SE VE SIEMPRE. La 1.12 dio esto por hecho y "
         "lo cumplía a medias: el bloque de registradas preguntaba «¿está en "
         "el pasaje?» cuando la pregunta era «¿ya tiene tarjeta?». Las dos "
@@ -159,7 +166,7 @@ def main():
     listas = json.load(open(LISTAS, encoding="utf-8"))
     datos = {
         "suttas": suttas_para_tooltip(),
-        "version": VERSION, "fecha": FECHA, "nota": NOTA,
+        "version": VERSION, "fecha": FECHA, "nota": NOTA, "nota_en": NOTA_EN,
         "huella": huella(),
         # El motor sólo consulta `reglas.ce`; el resto del archivo no viaja.
         "reglas": {"ce": reglas["ce"]},

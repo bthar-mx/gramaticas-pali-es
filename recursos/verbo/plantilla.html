@@ -680,10 +680,10 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
       <p id="pie-fuente"></p>
       <p class="vfoot" id="vfoot"></p>
     </details>
-    <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
+    <p class="licencia" id="licencia"><span class="marca-lockup"></span><span id="licencia-txt">Preparado por Bhikkhu Nandisena<br>
     Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
     Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</p>
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
 
     <p class="colofon">
       <span id="colofon-obra">El verbo · ākhyāta</span>
@@ -719,6 +719,7 @@ const VERSION_DATE = '__VERSION_DATE__';
     eyebrow: 'Kaccāyana · capítulo vi',
     volver: '← Recursos · Gramáticas Pāḷi',
     pie_sum: 'Notas, cifras y fuentes',
+    licencia: 'Preparado por Bhikkhu Nandisena<br>Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.',
     sb_titulo: 'El verbo',
     sb_sub: 'ākhyāta · Kaccāyana vi',
     indice: 'Índice',
@@ -1661,6 +1662,7 @@ const VERSION_DATE = '__VERSION_DATE__';
     document.getElementById('eyebrow').textContent = ui('eyebrow');
     document.getElementById('volver').textContent = ui('volver');
     document.getElementById('pie-sum').textContent = ui('pie_sum');
+    document.getElementById('licencia-txt').innerHTML = ui('licencia');
     document.getElementById('sb-titulo').textContent = ui('sb_titulo');
     document.getElementById('sb-sub').textContent = ui('sb_sub');
     document.getElementById('burgerLabel').textContent = ui('indice');

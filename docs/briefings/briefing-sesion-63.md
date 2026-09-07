@@ -267,6 +267,51 @@ arrancar ANTES de que se declaren `VERSION` y `VERSION_DATE`, que son `const`,
 y tocarlas en su zona muerta lanza — `typeof` tampoco salva de ella. Hace falta
 un testigo declarado con `var`, que sí se iza inicializado: `versionLista`.
 
+### 4 ter ter. LA PÁGINA EN BLANCO, Y POR QUÉ NO LA CAZÓ LA PRUEBA
+
+Lo vio Angel: pulsar «EN» en raíces dejaba la **página entera en blanco**.
+
+**La causa, y es un choque de nombres.** La clase de la lengua en el `<body>`
+es `en` — la misma que la de la glosa inglesa. De modo que un
+
+    .en{display:none}
+
+suelto no le daba sólo a las glosas: le daba también al propio
+`<body class="en">`, y la página desaparecía. `body.en .en{display:block}` no
+lo salvaba, porque sólo alcanza a los descendientes, no al elemento que lleva
+la clase.
+
+**El arreglo:** las dos glosas se seleccionan siempre dentro de `#out`, que es
+donde las pinta el guion, y nunca por la clase a secas. De paso se quitó el
+`.en{display:block}` de `@media print`, que forzaba la glosa inglesa en papel
+—tenía sentido cuando el botón sólo la AÑADÍA— y que le pegaba al `<body>`
+por lo mismo.
+
+**Cuidado si se repite:** en glosario, paradigmas y el solucionador no pasa
+porque allí la prosa va en `.i-es`/`.i-en`, que no chocan con la clase del
+`body`. Raíces era la única que usaba `.es`/`.en` a secas.
+
+#### Y la prueba estaba mintiendo
+
+Peor que el error: **el arnés de jsdom no lo cazó, y no podía**. Miraba
+`textContent`, que no sabe nada de CSS; una página con `display:none` tiene
+todo su texto igual. Ahora mira `getComputedStyle(body).display` y la
+cantidad de texto, que es lo que distingue una página de una página en blanco.
+
+Y había un segundo fallo, más tonto y más peligroso: el arnés inyectaba su
+guion sustituyendo **el primer `<body>` del archivo** — que desde este mismo
+commit aparece antes dentro de un comentario del CSS. De modo que
+`pali_lang` no se ponía nunca, jsdom dice `en-US`, y **todo lo que creía estar
+midiendo en español lo medía en inglés**. Ahora inyecta tras `</head>\n<body>`.
+
+Con las dos correcciones, la prueba encontró **tres fugas más** que la versión
+floja daba por limpias: la licencia del glosario, la licencia del verbo y la
+nota de versión del solucionador. Las tres, arregladas.
+
+**La lección, que es la del §2 otra vez:** una prueba que pasa no dice que la
+página esté bien; dice que la prueba pasa. Conviene preguntarse qué es lo que
+NO está mirando.
+
 ### 4 quater. LAS COMPROBACIONES
 
 Con jsdom sobre las páginas ya generadas, en los dos idiomas:
