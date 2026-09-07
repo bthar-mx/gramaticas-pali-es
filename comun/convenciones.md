@@ -50,7 +50,7 @@ follows», «after a vowel»).
 
 ## 2. Numeración de suttas
 
-- Edición base: Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu U Nandisena (ITBMU).
+- Edición base: Kaccāyana-byākaraṇa, ed. y trad. Bhikkhu Nandisena.
   La numeración de suttas de este repositorio sigue esta edición.
   <!-- PENDIENTE: precisar año / versión exacta que se está usando -->
 - **Numeración triple**, tal como la presenta Nandisena:
