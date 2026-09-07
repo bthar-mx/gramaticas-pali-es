@@ -418,7 +418,7 @@ Opcionalmente, la voz ‘smiṃ’ después de “ādi” se sustituye por ‘a�
 
 Ejemplos:
 
-1. **Ādiṃ** \= ādi \+ smiṃ (‘smiṃ’ se sustituye por ‘aṃ’ (§69); ‘i’ de “ādi” se elide (§83)).  
+1. **Ādiṃ** \= ādi \+ smiṃ (‘smiṃ’ se sustituye por ‘aṃ’ (§69); ‘i’ de “ādi” recibe el nombre de ‘jha’ (§58); ‘aṃ’ se convierte en ‘ṃ’ (§82)).  
 2. **Ādo** \= ādi \+ smiṃ (‘smiṃ’ se sustituye por ‘o’ (§69); ‘i’ de “ādi” se elide (§83)).
 
 ¿Cuál es la finalidad de decir “opcionalmente”? \[Este sutta no se aplica en:\] ādismiṃ, ādimhi nāthaṃ namassitvāna (habiendo rendido homenaje al Señor, en el principio).
@@ -428,8 +428,8 @@ Y por la inclusión de “ca”, también después de otras palabras ‘smiṃ�
 Ejemplos:
 
 1. **Divā** \= divā \+ smiṃ (‘smiṃ’ se sustituye por ‘ā’ (§69); ‘ā’ de “divā” se elide (§83)).  
-2. **Ratto** \= ratti \+ smiṃ (‘smiṃ’ se sustituye por ‘o’ (§69); ‘i’ de “ratti” se elide).  
-3. **Bārāṇasiṃ** \= Bārāṇasī \+ smiṃ (‘smiṃ’ se sustituye por ‘aṃ’ (§69); ‘a’ de ‘aṃ’ se elide).
+2. **Ratto** \= ratti \+ smiṃ (‘smiṃ’ se sustituye por ‘o’ (§69); ‘i’ de “ratti” se elide (§83)).  
+3. **Bārāṇasiṃ** \= Bārāṇasī \+ smiṃ (‘smiṃ’ se sustituye por ‘aṃ’ (§69); ‘ī’ de “Bārāṇasī” se acorta (§84); ‘aṃ’ se convierte en ‘ṃ’ (§82)).
 
 “Divā ca ratto ca haranti ye baliṃ” (aquellos que en el día y en la noche traen ofrendas). “Bārāṇasiṃ ahu rājā” (había un rey en Varanasi).
 
@@ -4923,7 +4923,7 @@ Opcionalmente, tras ‘ī’ llamada ‘pa’, ‘aṃ’ deviene ‘yaṃ’.
 Ejemplos:
 
 1. **Itthiyaṃ** \= itthī \+ aṃ (‘ī’ recibe el nombre ‘pa’ (§59); ‘aṃ’ se sustituye por ‘yaṃ’ (§223); ‘ī’ se acorta (§84)).  
-2. **Itthiṃ** \= itthī \+ aṃ (‘ī’ se acorta (§84); ‘a’ de ‘aṃ’ se elide (§13)).
+2. **Itthiṃ** \= itthī \+ aṃ (‘ī’ de “itthī” se acorta (§84); ‘aṃ’ se convierte en ‘ṃ’ (§82)).
 
 ¿Cuál es la finalidad de decir “llamada ‘pa’”? \[Este sutta no se aplica cuando no hay ‘pa’, como en:\] daṇḍinaṃ, bhoginaṃ.
 
