@@ -560,9 +560,14 @@ def portada(pub):
                     "lengua pāḷi. Instituto de Estudios Buddhistas Hispano.",
         raiz="", volver="",
         eyebrow="Instituto de Estudios Buddhistas Hispano",
-        lang_en="Pāḷi Grammars in Spanish",
-        h1='Gramáticas P<span class="dia">ā</span><span class="dia">ḷ</span>i '
-           'en español',
+        lang_en="Pāḷi Grammars in English",
+        # El inglés es el mismo que ya llevaba `lang_en` para la pestaña del
+        # navegador, de modo que el título de la página y el de la pestaña
+        # dicen lo mismo.
+        h1=bi('Gramáticas P<span class="dia">ā</span><span class="dia">ḷ</span>i '
+              'en español',
+              'P<span class="dia">ā</span><span class="dia">ḷ</span>i '
+              'Grammars in English'),
         cuerpo=cuerpo,
         pie=(bi('Textos relacionados: corpus del Sexto Concilio en',
                 'Related texts: the Sixth Council corpus at')
@@ -626,7 +631,7 @@ def indice_kaccayana(pub):
         raiz="../",
         volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Gramática de Kaccāyana"),
-        lang_en="Kaccāyana-Byākaraṇaṃ · Pāḷi Grammars in Spanish",
+        lang_en="Kaccāyana-Byākaraṇaṃ · Pāḷi Grammars in English",
         h1='Kacc<span class="dia">ā</span>yana-By<span class="dia">ā</span>'
            'kara<span class="dia">ṇ</span>a<span class="dia">ṃ</span>',
         cuerpo=cuerpo,
@@ -741,7 +746,7 @@ def indice_recursos():
         raiz="../",
         volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Material de apoyo"),
-        lang_en="Resources · Pāḷi Grammars in Spanish",
+        lang_en="Resources · Pāḷi Grammars in English",
         h1=bi("Recursos"),
         cuerpo=cuerpo,
         pie="  {0} {1}.".format(bi("Fuentes:", "Sources:"), FUENTES))
