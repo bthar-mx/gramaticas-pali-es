@@ -9018,11 +9018,11 @@
    "forma": "antakāti",
    "mias": [
     [
-     "antaka",
+     "antakā",
      "iti"
     ],
     [
-     "antakā",
+     "antaka",
      "iti"
     ],
     [
@@ -9297,11 +9297,11 @@
    "forma": "antakāti",
    "mias": [
     [
-     "antaka",
+     "antakā",
      "iti"
     ],
     [
-     "antakā",
+     "antaka",
      "iti"
     ],
     [
@@ -20709,6 +20709,10 @@
    "forma": "muṇḍāsi",
    "mias": [
     [
+     "muṇḍā",
+     "asi"
+    ],
+    [
      "muṇḍa",
      "āsi"
     ],
@@ -20750,10 +20754,6 @@
     ],
     [
      "muṇḍo",
-     "asi"
-    ],
-    [
-     "muṇḍā",
      "asi"
     ],
     [
@@ -20794,11 +20794,15 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 12
+   "rango": 1
   },
   {
    "forma": "kimidaṃ",
    "mias": [
+    [
+     "kiṃ",
+     "idaṃ"
+    ],
     [
      "kime",
      "idaṃ"
@@ -20826,10 +20830,6 @@
     [
      "kī",
      "midaṃ"
-    ],
-    [
-     "kiṃ",
-     "idaṃ"
     ],
     [
      "ki",
@@ -20861,7 +20861,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 8
+   "rango": 1
   },
   {
    "forma": "dhammamadesesi",
@@ -24059,11 +24059,11 @@
    "forma": "antakāti",
    "mias": [
     [
-     "antaka",
+     "antakā",
      "iti"
     ],
     [
-     "antakā",
+     "antaka",
      "iti"
     ],
     [
