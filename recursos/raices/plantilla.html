@@ -786,6 +786,8 @@ const TXT = {
   es: {
     doc_titulo: 'Raíces pāḷi · Saddanīti, Dhātupāṭha y Dhātumañjūsā',
     hero_alt: 'Raíces pāḷi · Instituto de Estudios Buddhistas Hispano',
+    hero: [['paca','cocinar'],['gamu','ir'],['ñā','conocer'],
+           ['bhū','ser, existir'],['kara','hacer'],['dhara','sostener']],
     abc_tit: 'Saddanīti por inicial',
     version: 'Versión',
     grupo: 'Grupo', del: 'del', signo: 'signo',
@@ -852,6 +854,8 @@ const TXT = {
   en: {
     doc_titulo: 'Pāḷi roots · Saddanīti, Dhātupāṭha and Dhātumañjūsā',
     hero_alt: 'Pāḷi roots · Instituto de Estudios Buddhistas Hispano',
+    hero: [['paca','to cook'],['gamu','to go'],['ñā','to know'],
+           ['bhū','to be, to exist'],['kara','to do'],['dhara','to hold']],
     abc_tit: 'Saddanīti by initial',
     version: 'Version',
     grupo: 'Group', del: 'of the', signo: 'sign',
@@ -920,7 +924,7 @@ const tr = k => (TXT[IDIOMA][k] !== undefined ? TXT[IDIOMA][k] : TXT.es[k]);
 /* Testigo de que la insignia de versión ya puede pintarse: al arrancar,
    aplicarIdioma() corre ANTES de que se declaren VERSION y VERSION_DATE,
    y tocarlas en su zona muerta lanza. Va con var, que sí se iza. */
-var versionLista = false;
+var versionLista = false, heroListo = false;
 
 /* ---------- utilidades ---------- */
 const FOLD = {'ā':'a','ī':'i','ū':'u','ṃ':'m','ṁ':'m','ñ':'n','ṭ':'t','ḍ':'d','ṇ':'n',
@@ -1519,6 +1523,7 @@ function aplicarIdioma(v){
   botones('f-skt', [['all',tr('skt_todas')],['con',tr('skt_con'),tr('t_skt_con')],
                     ['sin',tr('skt_sin'),tr('t_skt_sin')]], v2 => { skt = v2; }, skt);
   if (versionLista) pintarVersion();
+  if (heroListo) pintarHero(false);
   render();
 }
 document.getElementById('en-btn').onclick = () => {
@@ -1793,20 +1798,25 @@ topBtn.addEventListener('click', () => {
   addEventListener('resize', medir);
 })();
 
-/* ---------- el desfile de la cabecera ---------- */
-(function(){
-  const lineas = [['paca','cocinar'],['gamu','ir'],['ñā','conocer'],
-                  ['bhū','ser, existir'],['kara','hacer'],['dhara','sostener']];
+/* ---------- el desfile de la cabecera ----------
+   Las raíces son pāḷi y no se tocan; lo que cambia de lengua es la glosa.
+   Al repintar por conmutar la lengua NO se vuelve a animar: la entrada
+   escalonada es para quien llega a la página, no un parpadeo cada vez que
+   se pulsa el botón (sesión 63). */
+function pintarHero(animar){
   const el = document.getElementById('hero');
-  el.innerHTML = lineas.map(([r,g]) =>
-    `<div><b>${r}</b><span class="ref">${g}</span></div>`).join('');
+  if(!el) return;
+  el.innerHTML = tr('hero').map(([r,g]) =>
+    `<div><b>${r}</b><span class="ref">${esc(g)}</span></div>`).join('');
   const filas = el.querySelectorAll(':scope > div');
-  if(mq('(prefers-reduced-motion: reduce)')){
+  if(!animar || mq('(prefers-reduced-motion: reduce)')){
     filas.forEach(f => f.classList.add('on'));
     return;
   }
   filas.forEach((f,i) => setTimeout(() => f.classList.add('on'), 220 + i * 260));
-})();
+}
+heroListo = true;
+pintarHero(true);
 
 /* ---------- arranque ---------- */
 cambiarPestanya('raices');
