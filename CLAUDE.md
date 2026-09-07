@@ -166,6 +166,33 @@ entero el hook de pre-commit en cada commit, así que un cambio hecho ahí
 desaparece sin avisar y sin dejar rastro. Lo que se edita está en
 `kaccayana/`, `recursos/`, `comun/` y esos tres archivos de `site/assets/`.
 
+### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 59)
+
+Los capítulos 2, 3 y 4 en español son **salida**, no fuente: los rehace
+`herramientas/convertir_<obra>.py` a partir de su maestro de `docs/`, y el hook
+de pre-commit ejecuta **todos** los `convertir_*.py` antes de generar el sitio.
+Un cambio hecho en el archivo de `kaccayana/` sobrevive en el disco, sobrevive
+a la regeneración del sitio —y lo revierte el hook en el momento del commit, de
+modo que el commit sale sin él y sin avisar.
+
+| Capítulo | Se edita aquí | Lo genera |
+| --- | --- | --- |
+| 2 · Nāma | `docs/2. Nāma-Kappa.md` | `convertir_nama.py` |
+| 3 · Kāraka | `docs/3. Kāraka-Kappa.md` | `convertir_karaka.py` |
+| 4 · Samāsa | `docs/4. Samāsa-Kappa.md` | `convertir_samasa.py` |
+
+El capítulo 1 (Sandhi) no tiene conversor: `kaccayana/01-sandhi-kappa.md` es su
+fuente y se edita ahí. **Los maestros ingleses `NN-nombre.en.md` tampoco tienen
+conversor**: los cuatro se editan directamente en `kaccayana/`.
+
+Consecuencia para las notas al pie: en los tres capítulos convertidos **no se
+numeran a mano**. En el maestro se escribe la nota en prosa —`… texto. Nota:
+…` en la misma línea, o un párrafo propio que empiece por `Nota:`, `Nota al
+pie:` o `Nota del traductor…:`— y el conversor coloca el ancla `[^n]` y
+renumera todas en orden de aparición. La definición conserva el rótulo
+(`[^11]:  Nota: …`); el inglés, que sí se numera a mano, lo acompaña con
+`Note: …` para que las dos ediciones digan lo mismo.
+
 Cada `git push` a `main` despliega en
 <https://gramaticas.buddha-dhamma.net> (Cloudflare Workers, ver
 `wrangler.jsonc`).
