@@ -8743,6 +8743,10 @@
    "forma": "māhu",
    "mias": [
     [
+     "mā",
+     "ahu"
+    ],
+    [
      "ma",
      "āhu"
     ],
@@ -8780,10 +8784,6 @@
     ],
     [
      "mo",
-     "ahu"
-    ],
-    [
-     "mā",
      "ahu"
     ],
     [
@@ -8804,7 +8804,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 7
+   "rango": 1
   },
   {
    "forma": "pacchānutāpinī",
@@ -8959,6 +8959,10 @@
    "forma": "tvamasi",
    "mias": [
     [
+     "tvaṃ",
+     "asi"
+    ],
+    [
      "ta",
      "vamasi"
     ],
@@ -8995,10 +8999,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -9012,7 +9012,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "antakāti",
@@ -9238,6 +9238,10 @@
    "forma": "tvamasi",
    "mias": [
     [
+     "tvaṃ",
+     "asi"
+    ],
+    [
      "ta",
      "vamasi"
     ],
@@ -9274,10 +9278,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -9291,7 +9291,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "antakāti",
@@ -15207,6 +15207,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -15240,10 +15244,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -15307,7 +15307,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "tevijjāmhi",
@@ -16997,6 +16997,10 @@
    "forma": "tvamasi",
    "mias": [
     [
+     "tvaṃ",
+     "asi"
+    ],
+    [
      "ta",
      "vamasi"
     ],
@@ -17033,10 +17037,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -17050,7 +17050,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "yathābhuccamajānantā",
@@ -19854,6 +19854,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -19887,10 +19891,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -19954,7 +19954,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "purime",
@@ -20296,6 +20296,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -20329,10 +20333,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -20396,7 +20396,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "purime",
@@ -20922,6 +20922,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -20955,10 +20959,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -21022,11 +21022,15 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "tvamasi",
    "mias": [
+    [
+     "tvaṃ",
+     "asi"
+    ],
     [
      "ta",
      "vamasi"
@@ -21064,10 +21068,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -21081,7 +21081,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "kinnu",
@@ -21138,6 +21138,10 @@
    "forma": "māhu",
    "mias": [
     [
+     "mā",
+     "ahu"
+    ],
+    [
      "ma",
      "āhu"
     ],
@@ -21175,10 +21179,6 @@
     ],
     [
      "mo",
-     "ahu"
-    ],
-    [
-     "mā",
      "ahu"
     ],
     [
@@ -21199,7 +21199,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 7
+   "rango": 1
   },
   {
    "forma": "pacchānutāpinī",
@@ -21302,6 +21302,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -21335,10 +21339,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -21402,11 +21402,15 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "tvamasi",
    "mias": [
+    [
+     "tvaṃ",
+     "asi"
+    ],
     [
      "ta",
      "vamasi"
@@ -21444,10 +21448,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -21461,7 +21461,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "sīlasampannā",
@@ -21835,6 +21835,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -21868,10 +21872,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -21935,11 +21935,15 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "tvamasi",
    "mias": [
+    [
+     "tvaṃ",
+     "asi"
+    ],
     [
      "ta",
      "vamasi"
@@ -21977,10 +21981,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -21994,7 +21994,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "chinnasaṃsayā",
@@ -22193,6 +22193,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -22226,10 +22230,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -22293,7 +22293,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "dhammasaṃvegamāpādiṃ",
@@ -24000,6 +24000,10 @@
    "forma": "tvamasi",
    "mias": [
     [
+     "tvaṃ",
+     "asi"
+    ],
+    [
      "ta",
      "vamasi"
     ],
@@ -24036,10 +24040,6 @@
      "masi"
     ],
     [
-     "tvaṃ",
-     "asi"
-    ],
-    [
      "tvā",
      "asi"
     ],
@@ -24053,7 +24053,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "antakāti",
@@ -28374,6 +28374,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -28407,10 +28411,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -28474,7 +28474,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "padakkhiṇañca",
@@ -39551,6 +39551,10 @@
    "mias": [
     [
      "tassa",
+     "ahaṃ"
+    ],
+    [
+     "tassa",
      "haṃ"
     ],
     [
@@ -39584,10 +39588,6 @@
     [
      "tassā",
      "ūhaṃ"
-    ],
-    [
-     "tassa",
-     "ahaṃ"
     ],
     [
      "tassā",
@@ -39651,7 +39651,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 10
+   "rango": 1
   },
   {
    "forma": "viddesanamakāsiṃ",
