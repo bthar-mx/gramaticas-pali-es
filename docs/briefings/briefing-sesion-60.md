@@ -195,17 +195,21 @@ y el Kāraka ingleses.
 
 Pedido del IEBH: un botón más cuidado que la pastilla con la sigla suelta
 (que además salía subrayada, como enlace que es). Ahora es un conmutador de
-dos segmentos junto al botón del tema: `#lang-btn` con dos `span.lang-seg`,
-el de la lengua en curso relleno con el acento (`lang-cur`) y el otro como
-destino; sin subrayado; el otro segmento se ilumina al pasar el cursor. En
-las páginas de capítulo lo pinta `generar_capitulo.py` (sigue siendo un
-enlace a la otra página, con el ancla); en los índices, el JS de
-`generar_indices.py`. Estilos en `site/assets/pali.css` (más la variante
-compacta bajo 720 px). Los recursos (solucionador, verbo…) tienen su propio
-botón `#en-btn` y no se han tocado. Lleva globo al pasar el cursor
-(`data-tip` = el mismo texto del `aria-label`: «View this chapter in
-English» / «Ver este capítulo en español»; en los índices, «View in English»
-/ «Ver en español»), hacia arriba y alineado a la derecha.
+dos segmentos: `#lang-btn` con dos `span.lang-seg`, el de la lengua en curso
+relleno con el acento (`lang-cur`) y el otro como destino; sin subrayado; el
+otro segmento se ilumina al pasar el cursor; globo legible (`data-tip` = el
+`aria-label`: «View this chapter in English» / «Ver este capítulo en
+español»; en los índices «View in English» / «Ver en español»).
+
+**Dónde va (segundo fallo del IEBH):** flotando abajo a la derecha, junto al
+tema, tapaba el texto. En los capítulos vive ahora **en la barra de mandos,
+a la derecha del EPUB** (`margin-left:auto`), y lo pinta
+`generar_capitulo.py` (sigue siendo un enlace a la otra página, con el
+ancla; el `<script>` de redirección quedó aparte, `lang_script`). En los
+índices, **al final de la línea de la marca** (`.idx-eyebrow`, ahora flex),
+por el JS de `generar_indices.py`. Estilos en `site/assets/pali.css`. Los
+recursos (solucionador, verbo…) tienen su propio botón `#en-btn` y no se han
+tocado.
 
 ## 11. Despliegue: el push de 6b5ee49 no desplegó solo
 

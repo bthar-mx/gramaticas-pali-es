@@ -416,7 +416,10 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
     pinta();
   }};
   pinta();
-  document.body.appendChild(l);
+  /* Arriba, a la derecha de la línea de la marca: flotando abajo tapaba
+     el texto (sesión 60). */
+  var eb = document.querySelector('.idx-eyebrow');
+  if (eb) {{ eb.appendChild(l); }} else {{ document.body.appendChild(l); }}
 }})();
 </script>
 </body>

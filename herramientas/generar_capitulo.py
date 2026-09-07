@@ -1134,7 +1134,7 @@ def render(cap, meta, notas):
     # la otra lengua, sólo si su página existe
     otra = IDIOMAS["es" if es_en else "en"]
     otra_ruta = ruta_salida(meta, otra)
-    alt_html = lang_btn = ""
+    alt_html = lang_btn = lang_script = ""
     if os.path.exists(otra_ruta):
         alt_url = "/{0}{1}/{2}/".format(
             "" if es_en else "en/", meta["obra_slug"], meta["slug"])
@@ -1142,7 +1142,8 @@ def render(cap, meta, notas):
                     .format(alt_url, otra["lang"]))
         # Conmutador de dos segmentos, ES | EN: el de la lengua en curso va
         # relleno y el otro es el destino (sesión 60; antes era una pastilla
-        # con sólo la sigla de la otra lengua).
+        # con sólo la sigla de la otra lengua). Va en la barra de mandos, a
+        # la derecha del EPUB: flotando abajo tapaba el texto.
         lang_btn = ('<a aria-label="{2}" data-tip="{2}" href="{0}" id="lang-btn" '
                     'onclick="try{{localStorage.setItem(\'pali_lang\',\'{1}\')}}'
                     'catch(e){{}};this.href=\'{0}\'+location.hash">'
@@ -1154,11 +1155,12 @@ def render(cap, meta, notas):
         # La elección viaja con el lector (clave «pali_lang», la misma de la
         # portada y los recursos): si eligió la otra lengua, se le lleva a la
         # otra página, con su ancla. Pulsar el botón cambia la elección.
-        lang_btn += ('<script>try{{if(localStorage.getItem(\'pali_lang\')===\'{1}\')'
-                     'location.replace(\'{0}\'+location.hash)}}catch(e){{}}</script>'
-                     .format(alt_url, otra["lang"]))
+        lang_script = ('<script>try{{if(localStorage.getItem(\'pali_lang\')===\'{1}\')'
+                       'location.replace(\'{0}\'+location.hash)}}catch(e){{}}</script>'
+                       .format(alt_url, otra["lang"]))
     return PLANTILLA.format(
         lang=L["lang"], raiz=raiz, alt=alt_html, lang_btn=lang_btn,
+        lang_script=lang_script,
         volver=raiz + meta["obra_slug"] + "/" if es_en else "../",
         obra=meta["obra"], obra_sub=obra_sub,
         obra_display=marcar_diacriticos(escapar_html(meta["obra"])),
@@ -1253,7 +1255,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="{modo_oscuro}" id="dark-btn" onclick="toggleDark()" title="{modo_oscuro_t}">🌓</button>
-{lang_btn}
+{lang_script}
 <button aria-label="{volver_inicio}" id="top-btn" onclick="volverArriba()" title="{volver_inicio}">↑</button>
 <nav aria-label="{toc_label}" id="toc">
 {toc}
@@ -1285,6 +1287,7 @@ document.body.classList.add('dark');}}catch(e){{}}</script>
 <button class="ctrl-btn" onclick="changeFont(1)" title="{aumentar}">A+</button>
 <span class="done-count" id="done-count" title="{estudiados_t}">0 / {total} {estudiados}</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
+{lang_btn}
 </div>
 {kanda_nav}{cuerpo}{fin_capitulo}
 <div class="footer-box">

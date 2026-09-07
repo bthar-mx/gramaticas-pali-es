@@ -85,35 +85,32 @@ body.dark { background-image: none; }
   display: flex; align-items: center; justify-content: center;
 }
 
-/* ── Conmutador de idioma, junto al del tema ─────────────────────
-   Dos segmentos, ES | EN: el de la lengua en curso va relleno con el
-   acento; el otro es el destino. Sin subrayado, que es un enlace. */
+/* ── Conmutador de idioma ES | EN ────────────────────────────────
+   Dos segmentos: el de la lengua en curso va relleno con el acento; el
+   otro es el destino. En los capítulos vive en la barra de mandos, a la
+   derecha del EPUB; en los índices, al final de la línea de la marca.
+   (Antes flotaba abajo a la derecha, junto al tema, y tapaba el texto.) */
 #lang-btn {
-  position: fixed; bottom: 1.5rem; right: 4.4rem;
-  height: 38px; padding: 3px; border-radius: 100px;
+  position: relative; margin-left: auto;
+  height: 28px; padding: 2px; border-radius: 100px;
   background: var(--bg2); border: .5px solid var(--border2);
   color: var(--text3); text-decoration: none;
-  box-shadow: 0 2px 10px rgba(0,0,0,.12);
   font: 600 11px/1 var(--mono); letter-spacing: .08em; cursor: pointer;
-  z-index: 2000;
-  display: flex; align-items: center; gap: 2px;
+  display: inline-flex; align-items: center; gap: 2px; flex: none;
 }
 #lang-btn .lang-seg {
   display: flex; align-items: center; justify-content: center;
-  height: 100%; padding: 0 10px; border-radius: 100px;
+  height: 100%; padding: 0 9px; border-radius: 100px;
   transition: background .15s, color .15s;
 }
 #lang-btn .lang-cur { background: var(--accent); color: var(--bg); }
 #lang-btn:hover .lang-seg:not(.lang-cur) { background: var(--accent-bg); color: var(--text); }
 #lang-btn:focus-visible { outline: 2px solid var(--accent-mid); outline-offset: 2px; }
 /* Globo legible al pasar el cursor («Ver este capítulo en español» / «View
-   this chapter in English»), hacia arriba y pegado a la derecha, que el
-   mando está en la esquina inferior derecha. Mismo dibujo que los demás
-   emergentes; el filter del hover no lo encierra porque el mando lleva
-   z-index propio. */
+   this chapter in English»), hacia abajo y pegado a la derecha. */
 #lang-btn[data-tip]:hover::after {
   content: attr(data-tip);
-  position: absolute; bottom: calc(100% + 10px); right: 0;
+  position: absolute; top: calc(100% + 8px); right: 0; z-index: 100;
   background: var(--bg2); color: var(--text);
   border: .5px solid var(--border2); border-radius: var(--r);
   padding: 7px 11px; font: 12.5px/1.4 var(--sans);
@@ -759,7 +756,7 @@ body.dark .pali-block strong { color: var(--haritala); }
   .nav-pills { gap: 3px; }
   .nav-btn { padding: 3px 7px; font-size: 11px; }
   #dark-btn { width: 32px; height: 32px; font-size: 15px; bottom: 1rem; right: 1rem; }
-  #lang-btn { height: 32px; bottom: 1rem; right: 3.6rem; font-size: 10px; }
+  #lang-btn { height: 26px; font-size: 10px; }
   #lang-btn .lang-seg { padding: 0 8px; }
   #top-btn { width: 32px; height: 32px; font-size: 14px; bottom: calc(1rem + 42px); right: 1rem; }
   #pbadge { right: 46px; }
@@ -953,7 +950,9 @@ body.dark .chapter-end-es { color: #C9C2B0; }
 .idx-eyebrow {
   font: 500 11px/1 var(--mono); letter-spacing: .09em;
   text-transform: uppercase; color: var(--text3); margin-bottom: 1.1rem;
+  display: flex; align-items: center;   /* el conmutador ES | EN va al final */
 }
+.idx-eyebrow #lang-btn { text-transform: none; }
 .idx h1 {
   font-family: var(--serif); font-weight: 400; letter-spacing: -.03em;
   font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.2; margin-bottom: .5rem;

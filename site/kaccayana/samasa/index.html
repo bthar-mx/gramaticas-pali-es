@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/pali.css?v=87f8290a" rel="stylesheet"/>
+<link href="../../assets/pali.css?v=df2d6448" rel="stylesheet"/>
 </head>
 <body>
 <script>/* Tema guardado (clave compartida con /recursos/sandhi/), antes de pintar. */
@@ -21,7 +21,7 @@ document.body.classList.add('dark');}catch(e){}</script>
 <div id="pbar-wrap"><div id="pbar"></div></div>
 <div id="pbadge"></div>
 <button aria-label="Alternar modo oscuro" id="dark-btn" onclick="toggleDark()" title="Modo oscuro/claro">🌓</button>
-<a aria-label="View this chapter in English" data-tip="View this chapter in English" href="/en/kaccayana/samasa/" id="lang-btn" onclick="try{localStorage.setItem('pali_lang','en')}catch(e){};this.href='/en/kaccayana/samasa/'+location.hash"><span class="lang-seg lang-cur">ES</span><span class="lang-seg">EN</span></a><script>try{if(localStorage.getItem('pali_lang')==='en')location.replace('/en/kaccayana/samasa/'+location.hash)}catch(e){}</script>
+<script>try{if(localStorage.getItem('pali_lang')==='en')location.replace('/en/kaccayana/samasa/'+location.hash)}catch(e){}</script>
 <button aria-label="Volver al inicio" id="top-btn" onclick="volverArriba()" title="Volver al inicio">↑</button>
 <nav aria-label="Tabla de contenidos" id="toc">
 <p class="toc-title">4-Samāsa-Kappa</p><div class="toc-jump-wrap"><input aria-label="Ir a un sutta o filtrar por título" class="toc-jump" id="toc-jump" oninput="filterToc(this.value)" onkeydown="tocJumpKey(event)" placeholder="Ir a §… / filtrar" type="search"/></div><div class="toc-group" id="tocg-1"><button class="toc-kanda toc-kanda-btn" onclick="toggleTocGroup(1)"><span class="toc-caret">▸</span><span>Sattama-Kaṇḍa</span><span class="toc-kanda-range">§316–§343</span></button><div class="toc-group-items"><a class="toc-item" id="toc-s316" onclick="jumpTo('s316')">§316 Nāmānaṃ samāso yuttattho</a><a class="toc-item" id="toc-s317" onclick="jumpTo('s317')">§317 Tesaṃ vibhattiyo lopā ca</a><a class="toc-item" id="toc-s318" onclick="jumpTo('s318')">§318 Pakati c’ assa sarantassa</a><a class="toc-item" id="toc-s319" onclick="jumpTo('s319')">§319 Upasagga-nipātapubbako a…</a><a class="toc-item" id="toc-s320" onclick="jumpTo('s320')">§320 So napuṃsakaliṅgo</a><a class="toc-item" id="toc-s321" onclick="jumpTo('s321')">§321 Diguss’ ekattaṃ</a><a class="toc-item" id="toc-s322" onclick="jumpTo('s322')">§322 Tathā dvande pāṇitūriyay…</a><a class="toc-item" id="toc-s323" onclick="jumpTo('s323')">§323 Vibhāsā rukkha-tiṇa-pasu…</a><a class="toc-item" id="toc-s324" onclick="jumpTo('s324')">§324 Dvipade tulyādhikaraṇe k…</a><a class="toc-item" id="toc-s325" onclick="jumpTo('s325')">§325 Saṅkhyāpubbo digu</a><a class="toc-item" id="toc-s326" onclick="jumpTo('s326')">§326 Ubhe tappurisā</a><a class="toc-item" id="toc-s327" onclick="jumpTo('s327')">§327 Amādayo parapadebhi</a><a class="toc-item" id="toc-s328" onclick="jumpTo('s328')">§328 Aññapadatthesu bahubbīhi</a><a class="toc-item" id="toc-s329" onclick="jumpTo('s329')">§329 Nāmānaṃ samuccayo dvando</a><a class="toc-item" id="toc-s330" onclick="jumpTo('s330')">§330 Mahataṃ mahā tulyādhikar…</a><a class="toc-item" id="toc-s331" onclick="jumpTo('s331')">§331 Itthiyaṃ bhāsitapum’-itt…</a><a class="toc-item" id="toc-s332" onclick="jumpTo('s332')">§332 Kammadhārayasaññe ca</a><a class="toc-item" id="toc-s333" onclick="jumpTo('s333')">§333 Attaṃ nassa tappurise</a><a class="toc-item" id="toc-s334" onclick="jumpTo('s334')">§334 Sare an</a><a class="toc-item" id="toc-s335" onclick="jumpTo('s335')">§335 Kad kussa</a><a class="toc-item" id="toc-s336" onclick="jumpTo('s336')">§336 Kā ’ppatthesu ca</a><a class="toc-item" id="toc-s337" onclick="jumpTo('s337')">§337 Kvaci samāsantagatānam a…</a><a class="toc-item" id="toc-s338" onclick="jumpTo('s338')">§338 Nadimhā ca</a><a class="toc-item" id="toc-s339" onclick="jumpTo('s339')">§339 Jāyāya tudaṃ-jāni</a><a class="toc-item" id="toc-s340" onclick="jumpTo('s340')">§340 Dhanumh’ ā ca</a><a class="toc-item" id="toc-s341" onclick="jumpTo('s341')">§341 Aṃ vibhattīnam akārantā…</a><a class="toc-item" id="toc-s342" onclick="jumpTo('s342')">§342 Saro rasso napuṃsake</a><a class="toc-item" id="toc-s343" onclick="jumpTo('s343')">§343 Aññasmā lopo ca</a></div></div>
@@ -58,6 +58,7 @@ document.body.classList.add('dark');}catch(e){}</script>
 <button class="ctrl-btn" onclick="changeFont(1)" title="Aumentar texto">A+</button>
 <span class="done-count" id="done-count" title="Suttas estudiados">0 / 28 estudiados</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
+<a aria-label="View this chapter in English" data-tip="View this chapter in English" href="/en/kaccayana/samasa/" id="lang-btn" onclick="try{localStorage.setItem('pali_lang','en')}catch(e){};this.href='/en/kaccayana/samasa/'+location.hash"><span class="lang-seg lang-cur">ES</span><span class="lang-seg">EN</span></a>
 </div>
 <div class="kanda-nav" id="kanda-nav"><span class="kanda-nav-label">Kaṇḍa:</span><button aria-label="Ir a la séptima sección (Sattama-Kaṇḍa, §316–§343)" class="kanda-nav-btn" id="knav-1" onclick="jumpKanda(1)" data-tip="Ir a la séptima sección (Sattama-Kaṇḍa, §316–§343)">Sattama</button><input aria-label="Ir al sutta número…" class="kanda-jump" id="kanda-jump" onkeydown="kandaJumpKey(event)" placeholder="§…" type="search"/></div><div class="kanda-section">
 <div class="kanda-heading" id="kanda-1">Sattama-Kaṇḍa<span class="kanda-es">· Séptima sección</span></div>
@@ -983,6 +984,6 @@ window.PALI_CAPITULO = {
 };
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="../../assets/pali.js?v=87f8290a"></script>
+<script src="../../assets/pali.js?v=df2d6448"></script>
 </body>
 </html>
