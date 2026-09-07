@@ -542,7 +542,7 @@ def portada(pub):
             'Traducciones al español de las gramáticas clásicas pāḷi, con '
             'glosario terminológico común y concordancia entre las obras. '
             'Un término pāḷi se traduce siempre igual en todas ellas.',
-            'Spanish translations of the classical Pāḷi grammars, with a '
+            'English translations of the classical Pāḷi grammars, with a '
             'shared terminological glossary and a concordance between the '
             'works. A Pāḷi term is always translated the same way in all of '
             'them.') + '</p>\n\n'
