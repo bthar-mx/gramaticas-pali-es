@@ -540,6 +540,37 @@ componentes, las 164 secuencias del capítulo y los 101 `[SM]` de Thitzana.
 La pregunta con la que se evalúa cualquier versión es «¿recupera la respuesta
 conocida?», y se puede responder con números.
 
+## Auditar las derivaciones de un capítulo (sesión 62)
+
+`herramientas/auditar_derivaciones.py` es el equivalente nominal de
+`auditar_secuencias.py`: lee las derivaciones paso a paso de un capítulo
+—`**Ādiṃ** = ādi + smiṃ (…)`— y hace cinco comprobaciones: comillas sin
+cerrar, pasos sin §N, cadenas divergentes para los mismos componentes, clase
+de operación contra el sutta citado, y **recomposición**, que aplica la
+cadena y la compara con el lema. Esa última es la que caza «ādi + smiṃ →
+ādaṃ» sin juicio ninguno.
+
+    python3 herramientas/auditar_derivaciones.py                 # capítulo 2
+    python3 herramientas/auditar_derivaciones.py --detalle
+    python3 herramientas/auditar_derivaciones.py --autoprueba
+    python3 herramientas/auditar_derivaciones.py kaccayana/05-....md
+
+Toma el capítulo como argumento porque los capítulos 5-8 vendrán llenos de
+derivaciones; medido, el aparato paso a paso existe hoy **sólo en el 2** (el
+3 y el 4 tienen cero, y el 1 va por `auditar_secuencias.py`).
+
+Lo que no hace, y lo dice él mismo: no decide cuál de varios suttas correctos
+es la mejor cita, no firma nada, y **donde un tipo de paso no está
+implementado lo declara** en vez de dejarlo pasar. Una derivación que no
+recompone es un candidato, no un error probado: la comprobación prueba todas
+las lecturas del operando y sólo marca cuando **ninguna** da el lema.
+
+Estado del capítulo 2 (sesión 62): 571 de 608 derivaciones recomponen; 68
+candidatos, triados en `docs/capitulo-2/auditoria-derivaciones.md`, con el
+informe crudo al lado en `.txt`. **Ninguno está firmado.** Y la corrección va
+en `docs/2. Nāma-Kappa.md`, que es la fuente; el guion lo recuerda al
+arrancar.
+
 ## Capítulo nuevo: qué hace falta
 
 1. El markdown en `kaccayana/NN-nombre-kappa.md`, con el mismo formato que

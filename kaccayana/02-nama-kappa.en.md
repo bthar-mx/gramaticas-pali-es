@@ -326,11 +326,11 @@ When ‘saṃ’ and ‘sā’, which are substitutions of the singular inflecti
 Examples:
 
 1. **Tassaṃ** \= tā \+ smiṃ (‘smiṃ’ is substituted by ‘saṃ’ (§179); ‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “tā” is shortened (§66)).  
-2. **Tassā** \= tā \+ sa (‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “tā” is shortened (§66))  
+2. **Tassā** \= tā \+ sa (‘sa’ is substituted by ‘sā’ (§179); ‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “tā” is shortened (§66)).  
 3. **Yassaṃ** \= yā \+ smiṃ (‘smiṃ’ is substituted by ‘saṃ’ (§179); ‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “yā” is shortened (§66)).  
-4. **Yassā** \= yā \+ sa (‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “yā” is shortened (§66))   
+4. **Yassā** \= yā \+ sa (‘sa’ is substituted by ‘sā’ (§179); ‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “yā” is shortened (§66)).   
 5. **Sabbassaṃ** \= sabbā \+ smiṃ (‘smiṃ’ is substituted by ‘saṃ’ (§179); ‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “sabbā” is shortened (§66)).  
-6. **Sabbassā** \= sabbā \+ sa (‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “sabbā” is shortened (§66))
+6. **Sabbassā** \= sabbā \+ sa (‘sa’ is substituted by ‘sā’ (§179); ‘s’ is inserted (§62); ‘ā’ is named ‘gha’ (§60); ‘ā’ of “sabbā” is shortened (§66)).
 
 What is the purpose of saying “‘saṃ’ and ‘sā’”? \[This sutta does not apply when there is no ‘saṃ’ or ‘sā’, such as in\] tāya, sabbāya.
 
