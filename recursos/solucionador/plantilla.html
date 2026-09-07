@@ -609,9 +609,12 @@ const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&g
    proyecto y el arnés de la etapa 4 los compara byte a byte con el
    Python. tr(k) busca en el idioma puesto y cae al español. */
 let IDIOMA = paliLang();
+/* Testigo: aplicarIdioma corre antes de que DATA y pintarVersion existan. */
+var versionLista = false;
 const TXT = {
   es: {
     titulo_doc: 'Solucionador de sandhis · pāḷi',
+    version: 'Versión',
     posible: 'señal posible', adjudicado: 'sandhi adjudicado', firme: 'predicción firme',
     e_firmada: 'firmada en el banco', e_candidatos: 'candidatos', e_resuelto: 'resuelto',
     e_sin: 'sin sandhi', e_pakati: 'sin sandhi, por regla (pakati)',
@@ -688,6 +691,7 @@ const TXT = {
   },
   en: {
     titulo_doc: 'Sandhi Solver · pāḷi',
+    version: 'Version',
     posible: 'possible signal', adjudicado: 'adjudicated sandhi', firme: 'firm prediction',
     e_firmada: 'signed in the bank', e_candidatos: 'candidates', e_resuelto: 'solved',
     e_sin: 'no sandhi', e_pakati: 'no sandhi, by rule (pakati)',
@@ -1782,18 +1786,24 @@ document.addEventListener('focusout', e => {
 })();
 
 /* ---------- versión ---------- */
-(function(){
-  const M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
-           'septiembre','octubre','noviembre','diciembre'];
+function pintarVersion(){
+  const M = IDIOMA === 'en'
+    ? ['January','February','March','April','May','June','July','August',
+       'September','October','November','December']
+    : ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+       'septiembre','octubre','noviembre','diciembre'];
   const [y,m,d] = DATA.fecha.split('-').map(Number);
-  const largo = `${d} de ${M[m-1]} de ${y}`;
-  const tip = `Versión ${DATA.version} · ${largo} · ${DATA.nota}`;
+  const largo = IDIOMA === 'en' ? `${M[m-1]} ${d}, ${y}` : `${d} de ${M[m-1]} de ${y}`;
+  const nota = (IDIOMA === 'en' && DATA.nota_en) ? DATA.nota_en : DATA.nota;
+  const tip = `${tr('version')} ${DATA.version} · ${largo} · ${nota}`;
   const b = document.getElementById('vbadge');
   b.setAttribute('data-tip', tip); b.setAttribute('aria-label', tip);
   b.innerHTML = `v${DATA.version}<time datetime="${DATA.fecha}">${DATA.fecha}</time>`;
   document.getElementById('vfoot').innerHTML =
-    `<strong>Versión ${DATA.version}</strong> — <time datetime="${DATA.fecha}">${largo}</time>. ${esc(DATA.nota)}`;
-})();
+    `<strong>${tr('version')} ${DATA.version}</strong> — <time datetime="${DATA.fecha}">${largo}</time>. ${esc(nota)}`;
+}
+versionLista = true;
+pintarVersion();
 
 /* Del pasaje marcado a su tarjeta: abrirla y llevar el ojo hasta ella. Las
    voces repetidas son UNA tarjeta, así que se busca por la voz en minúscula,
@@ -1863,6 +1873,7 @@ document.addEventListener('click', e => {
     /* El título de la pestaña también, que es lo primero que se lee al
        compartir el enlace (2026-08-30, con el título de la cabecera). */
     document.title = tr('titulo_doc');
+    if (versionLista) pintarVersion();
     /* Lo ya analizado se vuelve a pintar en el idioma nuevo. */
     if($('texto').value.trim() && typeof analizar === 'function') analizar();
   };

@@ -258,10 +258,15 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
    botón EN AÑADÍA el inglés debajo del español —de ahí que fuera más pequeño
    y en cursiva—; ahora es un conmutador de lengua y se turnan, de modo que
    los dos se ven igual: cada uno es, en su modo, la glosa principal. */
-.es{color:var(--soot);font-size:15.5px}
-.en{color:var(--soot);font-size:15.5px;display:none}
-body.en .en{display:block}
-body.en .es{display:none}
+/* OJO CON EL NOMBRE: la clase de la lengua en el <body> es «en», la misma
+   que la de la glosa inglesa. Un `.en{display:none}` suelto le da también al
+   propio <body> y la página entera desaparece en blanco al conmutar (sesión
+   63). Por eso las dos glosas se seleccionan SIEMPRE dentro de #out, que es
+   donde las pinta el guion, y nunca por la clase a secas. */
+#out .es{color:var(--soot);font-size:15.5px}
+#out .en{color:var(--soot);font-size:15.5px;display:none}
+body.en #out .en{display:block}
+body.en #out .es{display:none}
 /* Y la prosa de la página, que va duplicada en el marcado. */
 body.en .i-es{display:none}
 body:not(.en) .i-en{display:none}
@@ -475,7 +480,10 @@ footer a{color:var(--nila)}
   body{background:#fff;color:#000;padding-left:0}
   .sidebar{display:none}
   .fila{break-inside:avoid}
-  .en{display:block}
+  /* Al imprimir NO se fuerza ya la glosa inglesa: cuando el botón sólo la
+     añadía tenía sentido sacar las dos en papel, pero desde que las lenguas
+     se turnan (sesión 63) el papel debe decir lo que dice la pantalla. Y un
+     `.en` a secas le pegaba además al propio <body class="en">. */
   a{color:#000;text-decoration:none}
 }
 </style>
