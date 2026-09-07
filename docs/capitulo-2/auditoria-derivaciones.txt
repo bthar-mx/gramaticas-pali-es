@@ -1,0 +1,528 @@
+02-nama-kappa.md · 219 suttas (§52-§270) · 608 derivaciones · 1343 pasos
+AVISO: este archivo es SALIDA. Lo que se corrija va en
+       «docs/2. Nāma-Kappa.md», que es lo que lee convertir_nama.py.
+       Un cambio hecho aquí lo revierte el hook de pre-commit,
+       en el momento del commit y sin avisar.
+
+  citas a suttas de otros capítulos, sin clasificar: §404×3
+  suttas de este capítulo cuya traducción no deja leer la clase: §79, §90, §93, §95, §187, §237, §238, §239, §240, §270
+
+  recomposición: 577 recomponen · 16 no recomponen · 10 ilustrativas · 5 no simulables
+
+1 · PASOS SIN §N — 12 pasos
+───────────────────────────
+  §67 · Catassannaṃ (línea 374)
+      por “ca” de este sutta se inserta ‘ssa’
+  §67 · Tissannaṃ (línea 375)
+      por “ca” de este sutta se inserta ‘ssa’
+  §70 · Vatthuttayaṃ (línea 468)
+      por “vā” de este sutta, ‘i’ de ‘ti’ se sustituye por ‘aya’
+  §70 · Vatthuttayaṃ (línea 468)
+      ‘si’ se sustituye por ‘aṃ’
+  §85 · Itthī (línea 937)
+      ‘ī’ no se acorta
+  §89 · Bhikkhunaṃ (línea 1065)
+      aquí ‘u’ no se alarga
+  §90 · Catassannaṃ (línea 1098)
+      se inserta ‘ssa’
+  §96 · Daṇḍino (línea 1270)
+      por lo tanto este sutta no opera
+  §116 · Sayambhuvo (línea 1874)
+      como ‘ū’ ha sido acortada, este sutta no opera
+  §155 · He pumāno (línea 2953)
+      vocativo plural
+  §167 · Piyapubbāya (línea 3292)
+      aquí ‘smiṃ’ no se convierte en ‘saṃ’ o ‘sā’
+  §250 · Sabbasmiṃ (línea 5645)
+      forma con la inflexión regular, permitida por “a veces”
+
+2 · MISMOS COMPONENTES, CADENAS DISTINTAS — 31 formas
+─────────────────────────────────────────────────────
+  No todas son erratas: dos suttas pueden ilustrar aspectos
+  distintos de la misma forma. Cada una hay que mirarla.
+
+  Attanā
+      §214 (línea 4666): atta + smā
+          · ‘smā’ se sustituye por ‘nā’ (§214)
+      §270 (línea 6057): atta + smā
+          · ‘smā’ se debe considerar como ‘nā’ (§270)
+          · véase también §214
+
+  Attā
+      §189 (línea 3982): atta + si
+          · ‘si’ se sustituye por ‘ā’ (§189)
+          · ‘a’ de “atta” se elide (§83)
+      §246 (línea 5527): atta + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘a’ se convierte en ‘ā’ (§244)
+          · ‘si’ se elide (§220)
+
+  Bhikkhave
+      §97 (línea 1298): bhikkhu + yo
+          · ‘u’ de “bhikkhu” recibe el nombre de ‘la’ (§58)
+          · ‘yo’ se sustituye por ‘ve’ (§116)
+          · ‘u’, que no ha sido acortada, se convierte en ‘a’ (§97)
+      §116 (línea 1866): bhikkhu + yo
+          · ‘u’ recibe el nombre de ‘la’ (§58)
+          · ‘yo’ se sustituye por ‘ve’ (§116)
+          · ‘u’, que no ha sido acortada, se convierte en ‘a’ (§97)
+
+  Bhikkhavo
+      §97 (línea 1299): bhikkhu + yo
+          · ‘u’ de “bhikkhu” recibe el nombre de ‘la’ (§58)
+          · ‘yo’ se sustituye por ‘vo’ (§119)
+          · ‘u’, que no ha sido acortada, se convierte en ‘a’ (§97)
+      §116 (línea 1867): bhikkhu + yo
+          · ‘u’ recibe el nombre de ‘la’ (§58)
+          · ‘yo’ se sustituye por ‘vo’ (§116)
+          · ‘u’, que no ha sido acortada, se convierte en ‘a’ (§97)
+      §119 (línea 1960): bhikkhu + yo
+          · ‘u’ recibe el nombre de ‘la’ (§58)
+          · ‘u’ se convierte en ‘a’ (§97)
+          · ‘yo’ se sustituye por ‘vo’ (§119)
+
+  Catassannaṃ
+      §67 (línea 374): catu + naṃ
+          · ‘u’ de “catu” (§404) se sustituye por ‘a’
+          · por “ca” de este sutta se inserta ‘ssa’
+      §90 (línea 1098): catu + naṃ
+          · se inserta ‘ssa’
+          · ‘u’ se convierte en ‘a’ (§90)
+
+  Daṇḍi
+      §220 (línea 4828): daṇḍī + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘ī’ recibe el nombre ‘jha’ (§58)
+          · ‘ī’ se acorta (§245)
+          · ‘ga’ se elide (§220)
+      §245 (línea 5501): daṇḍī + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘ī’ recibe el nombre ‘jha’ (§58)
+          · ‘ī’ se acorta (§245)
+          · ‘si’ se elide (§220)
+
+  Daṇḍino
+      §96 (línea 1270): daṇḍī + yo
+          · ‘ī’ de “daṇḍī” se acorta (§84)
+          · por lo tanto este sutta no opera
+      §225 (línea 4985): daṇḍī + yo
+          · ‘ī’ recibe el nombre ‘jha’ (§58)
+          · ‘ī’ se acorta (§84)
+          · ‘yo’ se sustituye por ‘no’ (§225)
+
+  Etissaṃ
+      §62 (línea 225): etā + smiṃ
+          · ‘ā’ de “etā” se sustituye por ‘i’ (§63)
+          · ‘smiṃ’ se sustituye por ‘saṃ’ (§179)
+          · se inserta ‘s’ (§62)
+      §180 (línea 3713): etā + smiṃ
+          · ‘ā’ de “etā” recibe el nombre ‘gha’ (§60)
+          · ‘smiṃ’ no se convierte en ‘āya’ ni en ‘yā’ (§180)
+          · ‘smiṃ’ se convierte en ‘saṃ’ (§179)
+          · se inserta ‘s’ (§62)
+          · ‘ā’ de “etā” se convierte en ‘i’ (§63)
+
+  Gahapatānī
+      §83 (línea 869): gahapati + inī
+          · ‘i’ de ‘pati’ se sustituye por ‘a’ (§91)
+          · ‘i’ de ‘inī’ se elide (§13)
+          · ‘a’ se convierte en ‘ā’ (§16)
+      §91 (línea 1121): gahapati + inī
+          · ‘i’ de “gahapati” se convierte en ‘a’ (§91)
+          · ‘i’ de ‘inī’ se elide (§13)
+          · ‘a’ se alarga (§16)
+
+  Guṇavaṃ
+      §125 (línea 2136): guṇavantu + si
+          · ‘ntu’ junto con la inflexión ‘si’ se sustituye por ‘aṃ’ (§125)
+          · ‘a’ se elide (§83)
+      §126 (línea 2160): guṇavantu + si
+          · ‘si’ recibe el nombre de ‘ga’ (§57)
+          · ‘ntu’ junto con la inflexión ‘si’ se sustituye por ‘aṃ’ (§126)
+          · ‘a’ se elide (§83)
+
+  Itthi
+      §85 (línea 943): itthī + si
+          · ‘si’ recibe el nombre de ‘gha’ (§57)
+          · ‘ī’ se acorta (§245)
+          · ‘si’ se elide (§220)
+      §220 (línea 4826): itthī + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘ī’ recibe el nombre ‘pa’ (§59)
+          · ‘ī’ se acorta (§245)
+          · ‘ga’ se elide (§220)
+      §245 (línea 5503): itthī + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘ī’ recibe el nombre ‘pa’ (§59)
+          · ‘ī’ se acorta (§245)
+          · ‘si’ se elide (§220)
+
+  Kathaṃ
+      §227 (línea 5053): kiṃ + thaṃ
+          · “kiṃ” se sustituye por “ka” (“ca” en §227)
+      §229 (línea 5113): kiṃ + thaṃ
+          · “kiṃ” se sustituye por “ka” (§229)
+
+  Ko
+      §227 (línea 5052): kiṃ + si
+          · “kiṃ” se sustituye por “ka” (“ca” en §227)
+          · ‘si’ se sustituye por ‘o’ (§104)
+      §229 (línea 5111): kiṃ + si
+          · “kiṃ” se sustituye por “ka” (§229)
+          · ‘si’ se sustituye por ‘o’ (§104)
+
+  Kva
+      §227 (línea 5044): kiṃ + va
+          · “kiṃ” se sustituye por “ka” (§227)
+          · ‘a’ se elide (§404)
+      §251 (línea 5667): kiṃ + va
+          · ‘va’ se usa con el significado de la séptima inflexión (§251)
+          · “kiṃ” se sustituye por “ka” (§227)
+          · ‘a’ se elide (§83)
+
+  Maṃ
+      §143 (línea 2588): amha + aṃ
+          · “amha” junto con la inflexión ‘aṃ’ se sustituye por “maṃ” (§143)
+      §149 (línea 2783): amha + aṃ
+          · aquí “amha” junto con la inflexión ‘aṃ’ no se sustituye por “me”, sino que se sustituye por “maṃ” (§143)
+
+  Mātā
+      §199 (línea 4224): mātu + si
+          · ‘u’ se convierte en ‘ā’ (§199)
+          · ‘si’ se elide (§199)
+      §244 (línea 5480): mātu + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘u’ de “mātu” se convierte en ‘ā’ (§244)
+          · ‘si’ se elide (§220)
+
+  Pitā
+      §199 (línea 4223): pitu + si
+          · ‘u’ se convierte en ‘ā’ (§199)
+          · ‘si’ se elide (§199)
+      §244 (línea 5479): pitu + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘u’ de “pitu” se convierte en ‘ā’ (§244)
+          · ‘si’ se elide (§220)
+
+  Pulliṅgaṃ
+      §82 (línea 822): puma + liṅgaṃ
+          · ‘ma’ de “puma” se convierte en ‘ṃ’ (§82)
+          · ‘ṃ’ se convierte en ‘l’ (§31)
+          · ‘l’ se duplica (§28)
+      §222 (línea 4895): puma + liṅgaṃ
+          · ‘a’ de “puma” se elide (§222)
+          · ‘m’ se sustituye por ‘ṃ’ (§82)
+          · ‘ṃ’ se sustituye por ‘l’ (“vā” en §31)
+
+  Rāja
+      §220 (línea 4832): rāja + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘a’ se convierte en ‘ā’ (§244)
+          · ‘ā’ se acorta (§246)
+          · ‘ga’ se elide (§220)
+      §246 (línea 5524): rāja + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘a’ se convierte en ‘ā’ (§244)
+          · ‘ā’ se acorta (§246)
+          · ‘si’ se elide (§220)
+
+  Rājā
+      §189 (línea 3984): rāja + si
+          · ‘si’ se sustituye por ‘ā’ (§189)
+          · ‘a’ de “rāja” se elide (§83)
+      §220 (línea 4833): rāja + si
+          · ‘si’ se sustituye por ‘ā’ (§189)
+          · ‘a’ se elide (§83)
+      §244 (líneas 5478, 5525): rāja + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘a’ se convierte en ‘ā’ (§244)
+          · ‘si’ se elide (§220)
+
+  Sabbassaṃ
+      §66 (línea 332): sabbā + smiṃ
+          · ‘smiṃ’ se sustituye por ‘saṃ’ (§179)
+          · se inserta ‘s’ (§62)
+          · ‘ā’ recibe el nombre de ‘gha’ (§60)
+          · ‘ā’ de “sabbā” se acorta (§66)
+      §179 (línea 3685): sabbā + smiṃ
+          · ‘ā’ de “sabbā” recibe el nombre ‘gha’ (§60)
+          · ‘smiṃ’ se convierte en ‘saṃ’ (§179)
+          · se inserta ‘s’ (§62)
+          · ‘ā’ se acorta (§66)
+
+  Sabbe
+      §102 (línea 1458): sabba + yo
+          · aquí ‘a’ no se convierte en ‘e’, sino que ‘yo’ se convierte en ‘e’ por §164
+      §164 (línea 3212): sabba + yo
+          · ‘yo’ se convierte en ‘e’ (§164)
+          · ‘a’ se elide (§83)
+
+  Sabbesaṃ
+      §102 (línea 1447): sabba + naṃ
+          · ‘a’ se convierte en ‘e’ (§102)
+          · ‘naṃ’ se sustituye por ‘saṃ’ (§168)
+      §168 (línea 3322): sabba + naṃ
+          · ‘naṃ’ se convierte en ‘saṃ’ (§168)
+          · ‘a’ de “sabba” se sustituye por ‘e’ (§102)
+
+  Sakha
+      §113 (línea 1789): sakha + si
+          · ‘si’ recibe el nombre de ‘ga’ (§57)
+          · ‘ga’ se sustituye por ‘a’ (§113)
+          · ‘a’ se elide (§83)
+      §246 (línea 5528): sakha + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘a’ se convierte en ‘ā’ (§244)
+          · ‘ā’ se acorta (§246)
+          · ‘si’ se elide (§220)
+
+  Sakhā
+      §189 (línea 3983): sakha + si
+          · ‘si’ se sustituye por ‘ā’ (§189)
+          · ‘a’ de “sakha” se elide (§83)
+      §246 (línea 5529): sakha + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘a’ se convierte en ‘ā’ (§244)
+          · ‘si’ se elide (§220)
+
+  Sattha
+      §220 (línea 4830): satthu + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘u’ de “satthu” se convierte en ‘ā’ (§244)
+          · ‘ā’ se acorta (§246)
+          · ‘ga’ se elide (§220)
+      §246 (línea 5530): satthu + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘u’ de “satthu” se convierte en ‘ā’ (§244)
+          · ‘ā’ se acorta (§246)
+          · ‘si’ se elide (§220)
+
+  Satthā
+      §199 (línea 4222): satthu + si
+          · ‘u’ se convierte en ‘ā’ (§199)
+          · ‘si’ se elide (§199)
+      §220 (línea 4831): satthu + si
+          · ‘u’ de “satthu” se convierte en ‘ā’ (§199)
+          · ‘si’ se elide (§199)
+      §244 (líneas 5481, 5531): satthu + si
+          · ‘si’ recibe el nombre ‘ga’ (§57)
+          · ‘u’ de “satthu” se convierte en ‘ā’ (§244)
+          · ‘si’ se elide (§220)
+
+  Tayi
+      §139 (línea 2479): tumha + smiṃ
+          · “tumha” junto con la inflexión ‘smiṃ’ se sustituye por “tayi” (§139)
+      §210 (línea 4566): tumha + smiṃ
+          · “tumha” junto con la inflexión se sustituye por “tayi” (§139)
+
+  Tayā
+      §145 (línea 2641): tumha + nā
+          · “tumha” junto con la inflexión ‘nā’ se sustituye por “tayā” (§145)
+      §210 (línea 4564): tumha + nā
+          · “tumha” junto con la inflexión se sustituye por “tayā” (§145)
+
+  Taṃ
+      §143 (línea 2587): tumha + aṃ
+          · “tumha” junto con la inflexión ‘aṃ’ se sustituye por “taṃ” (§143)
+      §149 (línea 2782): tumha + aṃ
+          · aquí “tumha” junto con la inflexión ‘aṃ’ no se sustituye por “te”, sino que se sustituye por “taṃ” (§143)
+
+  Tissannaṃ
+      §67 (línea 375): ti + naṃ
+          · por “ca” de este sutta se inserta ‘ssa’
+      §90 (línea 1099): ti + naṃ
+          · se inserta ‘ssa’ (§90)
+          · ‘n’ se duplica (§28)
+
+
+2 bis · MISMO LEMA, COMPONENTES DISTINTOS — 35 formas
+─────────────────────────────────────────────────────
+  Informativo: «asmiṃ» de “ta” y «asmiṃ» de “ima” son dos
+  derivaciones legítimas, no una divergencia.
+
+  Asmiṃ: §100 ta + smiṃ | §100 ima + smiṃ
+  Asmā: §100 ta + smā | §100 ima + smā
+  Assa: §176 ta + sa | §177 ima + sa
+  Assaṃ: §176 tā + smiṃ | §177 imā + smiṃ
+  Assā: §176 tā + sa | §177 imā + sa
+  Bhikkhunī: §83 bhikkhu + inī | §240 bhikkhu + si
+  Brahmunā: §198 brahma + nā | §270 brahma + smā
+  Gahapatānī: §83 gahapati + inī | §240 gahapati + si
+  Gavaṃ: §75 go + aṃ | §77 go + naṃ
+  Guṇavatā: §127 guṇavantu + nā | §270 guṇavantu + smā
+  Itthiyaṃ: §216 itthī + smiṃ | §223 itthī + aṃ
+  Itthī: §84 itthī + si | §118 itthī + yo | §238 itthi + si
+  Kaññāya: §111 kaññā + nā | §216 kaññā + smiṃ
+  Kaṃ: §219 ka + si | §229 kiṃ + aṃ
+  Maghavānā: §157 maghava + yo | §160 maghava + nā
+  Mamaṃ: §120 amha + sa | §144 amha + aṃ
+  Mayā: §145 amha + nā | §270 amha + smā
+  Me: §148 amha + sa | §150 amha + nā
+  No: §147 amha + yo | §147 amha + naṃ | §151 amha + hi
+  Pitarā: §207 pitu + nā | §270 pitu + smā
+  Pumunā: §157 puma + smā | §159 puma + nā
+  Purise: §107 purisa + ni | §108 purisa + smiṃ
+  Purisā: §107 purisa + yo | §108 purisa + smā | §244 purisa + si
+  Rattiyā: §112 ratti + nā | §216 ratti + smiṃ
+  Raññā: §137 rāja + nā | §270 rāja + smā
+  Sakhinā: §194 sakha + nā | §270 sakha + smā
+  Satthārā: §207 satthu + nā | §270 satthu + smā
+  Tayā: §145 tumha + nā | §270 tumha + smā
+  Taṃ: §143 tumha + aṃ | §219 ta + si
+  Te: §148 tumha + sa | §150 tumha + nā | §164 ta + yo
+  Tumhaṃ: §162 tumha + yo | §163 tumha + sa
+  Tumhākaṃ: §161 tumha + naṃ | §162 tumha + yo
+  Tuvaṃ: §140 tumha + si | §146 tumha + aṃ
+  Tvaṃ: §140 tumha + si | §146 tumha + aṃ
+  Vo: §147 tumha + yo | §147 tumha + naṃ | §151 tumha + hi
+
+3 · LA CLASE DEL PASO NO ES LA DEL SUTTA — 4 pasos
+──────────────────────────────────────────────────
+  §20 citado en §79 · Uggate (línea 728)
+      ‘g’ de “gate” se duplica
+      el paso hace: duplicación   ·   §20 hace: sustitución
+
+  §28 citado en §81 · Gunnaṃ (línea 793)
+      se inserta ‘n’
+      el paso hace: inserción   ·   §28 hace: duplicación
+
+  §89 citado en §92 · Guṇavantesu (línea 1151)
+      ‘a’ se convierte en ‘e’
+      el paso hace: sustitución   ·   §89 hace: alargamiento
+
+  §63 citado en §167 · Dakkhiṇapubbassaṃ (línea 3298)
+      se inserta ‘s’
+      el paso hace: inserción   ·   §63 hace: sustitución
+
+
+4 · LA CADENA NO DA EL LEMA — 16 derivaciones
+─────────────────────────────────────────────
+  Es la comprobación que caza «ādi + smiṃ → ādaṃ». Candidatos,
+  no errores probados.
+
+  §67 · Catassannaṃ = catu + naṃ (línea 374)
+      · ‘u’ de “catu” (§404) se sustituye por ‘a’
+      · por “ca” de este sutta se inserta ‘ssa’
+      da: catassanaṃ
+
+  §67 · Tissannaṃ = ti + naṃ (línea 375)
+      · por “ca” de este sutta se inserta ‘ssa’
+      da: tissanaṃ
+
+  §70 · Vatthuttayaṃ = vatthutti + si (línea 468)
+      · por “vā” de este sutta, ‘i’ de ‘ti’ se sustituye por ‘aya’
+      · ‘si’ se sustituye por ‘aṃ’
+      da: vatthuttayaaṃ
+
+  §72 · Puthabyā = puthavī + smā (línea 516)
+      · ‘ī’ de “puthavī” recibe el nombre de ‘pa’ (§59)
+      · ‘smā’ se sustituye por ‘ā’ (§68)
+      · ‘ī’ se sustituye por ‘ya’ (§72)
+      · ‘v’ se sustituye por ‘b’ (§20)
+      da: puthabyaā
+
+  §77 · Gavaṃ = go + naṃ (línea 670)
+      · ‘naṃ’ se sustituye por ‘aṃ’ (§77)
+      · ‘o’ de “go” se sustituye por ‘ava’ (§77)
+      da: gavaaṃ
+
+  §82 · Pulliṅgaṃ = puma + liṅgaṃ (línea 822)
+      · ‘ma’ de “puma” se convierte en ‘ṃ’ (§82)
+      · ‘ṃ’ se convierte en ‘l’ (§31)
+      · ‘l’ se duplica (§28)
+      da: pullliṅgaṃ, puṃliṅgall, puṃlliṅgal
+
+  §90 · Catassannaṃ = catu + naṃ (línea 1098)
+      · se inserta ‘ssa’
+      · ‘u’ se convierte en ‘a’ (§90)
+      da: catassanaṃ
+
+  §227 · Ko = kiṃ + si (línea 5052)
+      · “kiṃ” se sustituye por “ka” (“ca” en §227)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: kao
+
+  §229 · Ko = kiṃ + si (línea 5111)
+      · “kiṃ” se sustituye por “ka” (§229)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: kao
+
+  §268 · Guṇiyo = guṇavantu + iya + si (línea 5988)
+      · “vantu” se elide (§268)
+      · ‘a’ se elide (§83)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: guṇaiyo, guṇiyao
+
+  §268 · Guṇiṭṭho = guṇavantu + iṭṭha + si (línea 5989)
+      · “vantu” se elide (§268)
+      · ‘a’ se elide (§83)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: guṇaiṭṭho, guṇiṭṭhao
+
+  §268 · Satiyo = satimantu + iya + si (línea 5990)
+      · “mantu” se elide (§268)
+      · ‘i’ se elide (§83)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: satiyao
+
+  §268 · Satiṭṭho = satimantu + iṭṭha + si (línea 5991)
+      · “mantu” se elide (§268)
+      · ‘i’ se elide (§83)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: satiṭṭhao
+
+  §268 · Medhiyo = medhāvī + iya + si (línea 5992)
+      · “vī” se elide (§268)
+      · ‘ā’ se elide (§83)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: medhiyao
+
+  §268 · Medhiṭṭho = medhāvī + iṭṭha + si (línea 5993)
+      · “vī” se elide (§268)
+      · ‘ā’ se elide (§83)
+      · ‘si’ se sustituye por ‘o’ (§104)
+      da: medhiṭṭhao
+
+  §269 · Bāhussaccaṃ = bāhussuta + ya (línea 6022)
+      · la última ‘a’ se elide (§261)
+      · ‘t’ junto con ‘y’ se convierte en ‘c’ (§269)
+      · ‘c’ se duplica (§28)
+      · ‘u’ se convierte en ‘a’ (§404)
+      da: bāhassucc, bāhassucca, bāhussacc, bāhussacca
+
+
+4 bis · CADENAS ILUSTRATIVAS QUE NO DAN EL LEMA — 10
+────────────────────────────────────────────────────
+  Llevan una negación («no cambia», «este sutta no opera»): la
+  cadena enseña lo que NO pasa, y no se espera que recomponga.
+
+  §83 · Pāpiyo = pāpa + iya (línea 858) → pāpiya
+  §96 · Daṇḍino = daṇḍī + yo (línea 1270) → daṇḍiyo
+  §97 · Bhikkhave = bhikkhu + yo (línea 1298) → bhikkhuve
+  §97 · Bhikkhavo = bhikkhu + yo (línea 1299) → bhikkhuvo
+  §102 · Sabbe = sabba + yo (línea 1458) → sabbayo
+  §116 · Bhikkhave = bhikkhu + yo (línea 1866) → bhikkhuve
+  §116 · Bhikkhavo = bhikkhu + yo (línea 1867) → bhikkhuvo
+  §149 · Taṃ = tumha + aṃ (línea 2782) → tumhaaṃ
+  §149 · Maṃ = amha + aṃ (línea 2783) → amhaaṃ
+  §166 · Pubbāparānaṃ = pubbāpara + naṃ (línea 3270) → pubbāparanaṃ
+
+4 ter · NO SIMULABLE — 5 derivaciones
+─────────────────────────────────────
+  El guion no las juzga: dice por qué no ha podido.
+      paso no implementado: 3
+      no se localiza el operando: 2
+
+  §155 · He pumāno = puma + yo (línea 2953)
+      paso no implementado: «vocativo plural»
+  §177 · Assaṃ = imā + smiṃ (línea 3614)
+      no se localiza el operando: «“ima” se convierte en “a”»
+  §177 · Assā = imā + sa (línea 3615)
+      no se localiza el operando: «“ima” se convierte en “a”»
+  §250 · Sabbasmiṃ = sabba + smiṃ (línea 5645)
+      paso no implementado: «forma con la inflexión regular, permitida por “a veces”»
+  §270 · Attanā = atta + smā (línea 6057)
+      paso no implementado: «véase también §214»
+
+63 candidatos en total. Ninguno está firmado: cada uno se le
+enseña al IEBH con su evidencia y su corrección propuesta.
