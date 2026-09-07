@@ -87,12 +87,13 @@ body.dark { background-image: none; }
 
 /* ── Conmutador de idioma ES | EN ────────────────────────────────
    Dos segmentos: el de la lengua en curso va relleno con el acento; el
-   otro es el destino. En los capítulos vive en la barra de mandos, a la
-   derecha del EPUB; en los índices, al final de la línea de la marca.
+   otro es el destino. En los capítulos vive en la línea de la cabecera,
+   tras la insignia de versión; en los índices, al final de la línea de la
+   marca.
    (Antes flotaba abajo a la derecha, junto al tema, y tapaba el texto.) */
 #lang-btn {
-  position: relative; margin-left: auto;
-  height: 28px; padding: 2px; border-radius: 100px;
+  position: relative; margin-left: 10px; vertical-align: middle;
+  height: 26px; padding: 2px; border-radius: 100px;
   background: var(--bg2); border: .5px solid var(--border2);
   color: var(--text3); text-decoration: none;
   font: 600 11px/1 var(--mono); letter-spacing: .08em; cursor: pointer;
@@ -104,6 +105,7 @@ body.dark { background-image: none; }
   transition: background .15s, color .15s;
 }
 #lang-btn .lang-cur { background: var(--accent); color: var(--bg); }
+.idx-eyebrow #lang-btn { margin-left: auto; }
 #lang-btn:hover .lang-seg:not(.lang-cur) { background: var(--accent-bg); color: var(--text); }
 #lang-btn:focus-visible { outline: 2px solid var(--accent-mid); outline-offset: 2px; }
 /* Globo legible al pasar el cursor («Ver este capítulo en español» / «View
