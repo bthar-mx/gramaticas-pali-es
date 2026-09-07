@@ -418,7 +418,7 @@ Optionally, the inflection ‘smiṃ’ after “ādi” is substituted by ‘a�
 
 Examples:
 
-1. **Ādiṃ** \= ādi \+ smiṃ (‘smiṃ’ is substituted by ‘aṃ’ (§69); ‘i’ of “ādi” is elided (§83)).  
+1. **Ādiṃ** \= ādi \+ smiṃ (‘smiṃ’ is substituted by ‘aṃ’ (§69); ‘i’ of “ādi” is named ‘jha’ (§58); ‘aṃ’ becomes ‘ṃ’ (§82)).  
 2. **Ādo** \= ādi \+ smiṃ (‘smiṃ’ is substituted by ‘o’ (§69); ‘i’ of “ādi” is elided (§83)).
 
 What is the purpose of saying “optionally”? \[This sutta does not apply in:\] ādismiṃ, ādimhi nāthaṃ namassitvāna (having paid homage to the Lord, in the beginning).
@@ -428,8 +428,8 @@ And by taking “ca”, also after other words ‘smiṃ’ is substituted by �
 Examples:
 
 1. **Divā** \= divā \+ smiṃ (‘smiṃ’ is substituted by ‘ā’ (§69); ‘ā’ of “divā” is elided (§83)).  
-2. **Ratto** \= ratti \+ smiṃ (‘smiṃ’ is substituted by ‘o’ (§69); ‘i’ of “ratti” is elided).  
-3. **Bārāṇasiṃ** \= Bārāṇasī \+ smiṃ (‘smiṃ’ is substituted by ‘aṃ’ (§69); ‘a’ of ‘aṃ’ is elided).
+2. **Ratto** \= ratti \+ smiṃ (‘smiṃ’ is substituted by ‘o’ (§69); ‘i’ of “ratti” is elided (§83)).  
+3. **Bārāṇasiṃ** \= Bārāṇasī \+ smiṃ (‘smiṃ’ is substituted by ‘aṃ’ (§69); ‘ī’ of “Bārāṇasī” is shortened (§84); ‘aṃ’ becomes ‘ṃ’ (§82)).
 
 “Divā ca ratto ca haranti ye baliṃ” (those who by day and by night bring offerings). “Bārāṇasiṃ ahu rājā” (there was a king in Vārāṇasī).
 
@@ -4923,7 +4923,7 @@ Optionally, after ‘ī’ named ‘pa’, ‘aṃ’ becomes ‘yaṃ’.
 Examples:
 
 1. **Itthiyaṃ** \= itthī \+ aṃ (‘ī’ is named ‘pa’ (§59); ‘aṃ’ is substituted by ‘yaṃ’ (§223); ‘ī’ is shortened (§84)).  
-2. **Itthiṃ** \= itthī \+ aṃ (‘ī’ is shortened (§84); ‘a’ of ‘aṃ’ is elided (§13)).
+2. **Itthiṃ** \= itthī \+ aṃ (‘ī’ of “itthī” is shortened (§84); ‘aṃ’ becomes ‘ṃ’ (§82)).
 
 What is the purpose of saying “named ‘pa’”? \[This sutta does not apply when there is no ‘pa’, such as in:\] daṇḍinaṃ, bhoginaṃ.
 
