@@ -68,28 +68,36 @@ CAPITULOS = {
         "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.3",
+        "version": "1.4",
         "version_fecha": "2026-09-07",
-        "version_nota": "Corregida la formación de la inflexión ‘aṃ’ tras "
-                        "‘jha’, ‘la’ y ‘pa’: «ādiṃ» y «Bārāṇasiṃ» (§69) e "
-                        "«itthiṃ» (§223) se nasalizan por §82, no por la "
-                        "elisión de la vocal del tema (§83) ni por §13, que "
-                        "daban «ādaṃ» y explicaban dos veces la misma forma; "
-                        "«ratto» (§69) cita ya el §83 que elide su ‘i’. En "
-                        "§72, la vocal que sustituye a ‘smā’ es ‘ā’, no ‘a’. "
-                        "En §70, la correspondencia de ‘jha’ y ‘la’ con ‘iya’ "
-                        "y ‘uva’ pasa a nota al pie.",
-        "version_en": "1.1",
+        "version_nota": "Completada la formación de «tassā», «yassā» y "
+                        "«sabbassā» (§66), que no mostraban el paso por el "
+                        "cual ‘sa’ se sustituye por ‘sā’ (§179) y daban "
+                        "«tassa» en vez de «tassā»; sus hermanas «tassaṃ», "
+                        "«yassaṃ» y «sabbassaṃ» ya citaban §179, y también lo "
+                        "hace «tissā» (§64). Corregidas tres comillas sin "
+                        "cerrar en las derivaciones de «tissā» (§64), «bhuvi» "
+                        "(§78) y «sabbassaṃ» (§179). Antes, en la versión 1.3: "
+                        "corregida la formación de la inflexión ‘aṃ’ tras "
+                        "‘jha’, ‘la’ y ‘pa’ —«ādiṃ» y «Bārāṇasiṃ» (§69) e "
+                        "«itthiṃ» (§223) se nasalizan por §82—; en §72, la "
+                        "vocal que sustituye a ‘smā’ es ‘ā’, no ‘a’; en §70, "
+                        "la correspondencia de ‘jha’ y ‘la’ con ‘iya’ y ‘uva’ "
+                        "pasa a nota al pie.",
+        "version_en": "1.2",
         "version_fecha_en": "2026-09-07",
-        "version_nota_en": "Corrected the formation of the inflection ‘aṃ’ "
-                           "after ‘jha’, ‘la’ and ‘pa’: «ādiṃ» and "
-                           "«Bārāṇasiṃ» (§69) and «itthiṃ» (§223) are "
-                           "nasalised by §82, not by the elision of the stem "
-                           "vowel (§83) nor by §13, which gave «ādaṃ» and "
-                           "explained the same form twice; «ratto» (§69) now "
-                           "cites the §83 that elides its ‘i’. In §70, the "
-                           "correspondence of ‘jha’ and ‘la’ with ‘iya’ and "
-                           "‘uva’ moves to a footnote.",
+        "version_nota_en": "Completed the formation of «tassā», «yassā» and "
+                           "«sabbassā» (§66), which did not show the step by "
+                           "which ‘sa’ is substituted by ‘sā’ (§179) and gave "
+                           "«tassa» instead of «tassā»; their siblings "
+                           "«tassaṃ», «yassaṃ» and «sabbassaṃ» already cited "
+                           "§179, and so does «tissā» (§64). Previously, in "
+                           "version 1.1: corrected the formation of the "
+                           "inflection ‘aṃ’ after ‘jha’, ‘la’ and ‘pa’ — "
+                           "«ādiṃ» and «Bārāṇasiṃ» (§69) and «itthiṃ» (§223) "
+                           "are nasalised by §82 —; in §70, the correspondence "
+                           "of ‘jha’ and ‘la’ with ‘iya’ and ‘uva’ moves to a "
+                           "footnote.",
     },
     "03-karaka-kappa": {
         "slug": "karaka",
