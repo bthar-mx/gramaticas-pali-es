@@ -275,7 +275,7 @@ Opcionalmente, cuando siguen ‘saṃ’ y ‘sā’ que son sustituciones de la
 Ejemplos:
 
 1. **Tissaṃ** \= tā \+ smiṃ (‘smiṃ’ se sustituye por ‘saṃ’ (§179); ‘ā’ de “tā” se sustituye por ‘i’ (§64) y se inserta ‘s’ (§62)).  
-2. **Tissā** \= tā \+ sa (‘sa’ se sustituye por ‘sā’ (§179); ‘ā’ de “tā” se sustituye por ‘i (§64) y se inserta ‘s’ (§62)).
+2. **Tissā** \= tā \+ sa (‘sa’ se sustituye por ‘sā’ (§179); ‘ā’ de “tā” se sustituye por ‘i’ (§64) y se inserta ‘s’ (§62)).
 
 ---
 
@@ -326,11 +326,11 @@ Cuando siguen ‘saṃ’ y ‘sā’ que son sustituciones de las inflexiones s
 Ejemplos:
 
 1. **Tassaṃ** \= tā \+ smiṃ (‘smiṃ’ se sustituye por ‘saṃ’ (§179); se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “tā” se acorta (§66)).  
-2. **Tassā** \= tā \+ sa (se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “tā” se acorta (§66))  
+2. **Tassā** \= tā \+ sa (‘sa’ se sustituye por ‘sā’ (§179); se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “tā” se acorta (§66)).  
 3. **Yassaṃ** \= yā \+ smiṃ (‘smiṃ’ se sustituye por ‘saṃ’ (§179); se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “yā” se acorta  (§66)).  
-4. **Yassā** \= yā \+ sa (se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “yā” se acorta (§66))   
+4. **Yassā** \= yā \+ sa (‘sa’ se sustituye por ‘sā’ (§179); se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “yā” se acorta (§66)).   
 5. **Sabbassaṃ** \= sabbā \+ smiṃ (‘smiṃ’ se sustituye por ‘saṃ’ (§179); se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “sabbā” se acorta (§66)).  
-6. **Sabbassā** \= sabbā \+ sa (se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “sabbā” se acorta (§66))
+6. **Sabbassā** \= sabbā \+ sa (‘sa’ se sustituye por ‘sā’ (§179); se inserta ‘s’ (§62); ‘ā’ recibe el nombre de ‘gha’ (§60); ‘ā’ de “sabbā” se acorta (§66)).
 
 ¿Cuál es la finalidad de decir “‘saṃ’ y ‘sā’”? \[Este sutta no se aplica cuando no hay ‘saṃ’ ni ‘sā’, como en\] tāya, sabbāya.
 
@@ -699,7 +699,7 @@ Y por la inclusión de “ca”, cuando siguen ‘smiṃ’ y ‘yo’, a veces,
 
 Ejemplos:
 
-1. **Bhuvi** \= bhū \+ smiṃ (por “ca” de este sutta, ū’ de “bhū” se sustituye por ‘uva’ (§78); por “tato” del §206 ‘smiṃ’ se sustituye por ‘i’; ‘a’ de ‘uva’ se elide (§12)).  
+1. **Bhuvi** \= bhū \+ smiṃ (por “ca” de este sutta, ‘ū’ de “bhū” se sustituye por ‘uva’ (§78); por “tato” del §206 ‘smiṃ’ se sustituye por ‘i’; ‘a’ de ‘uva’ se elide (§12)).  
 2. **Pasavo** \= pasu \+ yo (por “ca” de este sutta, ‘u’ de “pasu” se sustituye por ‘ava’ (§78); ‘yo’ se sustituye por ‘o’ (“tu” en §205); ‘a’ de ‘ava’ se elide (§12)).  
 3. **Caturo** \= catu \+ yo (por “ca” de este sutta, ‘u’ se sustituye por ‘ura’ (§78); ‘yo’ se sustituye por ‘o’ (“tu” en §205); ‘a’ de ‘ura’ se elide (§12)).
 
@@ -3682,7 +3682,7 @@ Opcionalmente, tras todos los pronombres nombrados ‘gha’ y ‘pa’, ‘smi�
 
 Ejemplo:
 
-1. **Sabbassaṃ** \= sabbā \+ smiṃ (‘ā’ de “sabbā” recibe el nombre ‘gha’ (§60); ‘smiṃ’ se convierte en ‘saṃ’ (§179); se inserta ‘s’ (§62); ‘ā se acorta (§66)).
+1. **Sabbassaṃ** \= sabbā \+ smiṃ (‘ā’ de “sabbā” recibe el nombre ‘gha’ (§60); ‘smiṃ’ se convierte en ‘saṃ’ (§179); se inserta ‘s’ (§62); ‘ā’ se acorta (§66)).
 
 ¿Cuál es la finalidad de decir “tras los pronombres”? \[Este sutta no se aplica cuando no hay pronombres, como en:\] Itthiyaṃ, itthiyā.
 
