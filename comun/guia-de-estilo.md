@@ -1,12 +1,12 @@
 # Kaccāyana Pāḷi-Español: Guía de estilo y formato del proyecto
 
-*Documento de referencia — convenciones establecidas durante la traducción del capítulo 1-Sandhi-Kappa, basado en U Nandisena (ITBMU), con cotejo de Ven. A. Thitzana (Vol. 2) y Rūpasiddhi.*
+*Documento de referencia — convenciones establecidas durante la traducción del capítulo 1-Sandhi-Kappa, basado en Bhikkhu Nandisena, con cotejo de Ven. A. Thitzana (Vol. 2) y Rūpasiddhi.*
 
 ---
 
 ## 1. Idioma de trabajo
 
-- **Conversación/discusión técnica:** inglés (para evitar doble traducción pāli → inglés → español al cotejar con la edición de U Nandisena).
+- **Conversación/discusión técnica:** inglés (para evitar doble traducción pāli → inglés → español al cotejar con la edición de Bhikkhu Nandisena).
 - **Entrega final (la traducción):** español.
 - El usuario puede cambiar de idioma libremente; Claude responde en el idioma que mejor convenga al contexto.
 
@@ -421,7 +421,7 @@ normativo está en `CLAUDE.md` («La edición inglesa») y en
   `pali_lang`, la misma clave de la portada; una página que encuentra en esa
   clave la otra lengua **redirige** a la otra página. `hreflang` en las dos.
 - **Créditos del pie inglés:** «Pāḷi text and English translation by Bhikkhu
-  U Nandisena (ITBMU); edition, apparatus and glossary by the IEBH».
+  Nandisena; edition, apparatus and glossary by the IEBH».
 - **El apéndice del Venerable** (aplicaciones de «ca»; *kvaci, vā, navā,
   vibhāsā*) está verbatim en `docs/fuentes/nandisena-apendice-sandhi-en.md`
   y todavía no se publica en ninguna de las dos ediciones.
