@@ -5548,7 +5548,7 @@ Sabbato, yato, tato, kuto, ato, ito, sabbadā, yadā, tadā, kadā, idha, idāni
 
 ---
 
-Those beginning with ‘tvā’ are named “inflections”.
+Those beginning with ‘to’ are named “inflections”.
 
 The suffixes beginning with ‘to’ are \[called\] ‘tvādi’. These suffixes ‘tvādi’ are to be regarded as “inflections”.
 

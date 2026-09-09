@@ -68,9 +68,13 @@ CAPITULOS = {
         "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.5",
-        "version_fecha": "2026-09-07",
-        "version_nota": "En «svāgataṃ» (§71) la vocal que se elide es la de "
+        "version": "1.6",
+        "version_fecha": "2026-09-08",
+        "version_nota": "En la glosa de §247, los sufijos comienzan con "
+                        "‘to’, no con ‘tvā’, conforme a la propia vutti "
+                        "(To ādi yesaṃ paccayānaṃ). "
+                        "Antes, en la versión 1.5: "
+                        "en «svāgataṃ» (§71) la vocal que se elide es la de "
                         "‘va’, no la de ‘ya’: ‘ya’ es de «agyāgāraṃ», la "
                         "derivación vecina, y en «su + āgataṃ» no hay ninguna. "
                         "Antes, en la versión 1.4: completada la formación de "
@@ -88,9 +92,13 @@ CAPITULOS = {
                         "vocal que sustituye a ‘smā’ es ‘ā’, no ‘a’; en §70, "
                         "la correspondencia de ‘jha’ y ‘la’ con ‘iya’ y ‘uva’ "
                         "pasa a nota al pie.",
-        "version_en": "1.2",
-        "version_fecha_en": "2026-09-07",
-        "version_nota_en": "Completed the formation of «tassā», «yassā» and "
+        "version_en": "1.3",
+        "version_fecha_en": "2026-09-08",
+        "version_nota_en": "In the gloss of §247, the suffixes begin with "
+                           "‘to’, not with ‘tvā’, as the vutti itself states "
+                           "(To ādi yesaṃ paccayānaṃ). "
+                           "Previously, in version 1.2: "
+                           "completed the formation of «tassā», «yassā» and "
                            "«sabbassā» (§66), which did not show the step by "
                            "which ‘sa’ is substituted by ‘sā’ (§179) and gave "
                            "«tassa» instead of «tassā»; their siblings "
