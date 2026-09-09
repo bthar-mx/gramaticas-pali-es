@@ -5548,7 +5548,7 @@ Sabbato, yato, tato, kuto, ato, ito, sabbadā, yadā, tadā, kadā, idha, idāni
 
 ---
 
-Los que comienzan con ‘tvā’ se llaman “inflexiones”.
+Los que comienzan con ‘to’ se llaman “inflexiones”.
 
 Los sufijos que comienzan con ‘to’ son \[llamados\] ‘tvādi’. Estos sufijos ‘tvādi’ se deben considerar “inflexiones”.
 
