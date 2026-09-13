@@ -1371,9 +1371,9 @@ Cuddasa (D. i, 50; M. ii, 187), coddasa, catuddasa.
 
 ---
 
-Ocasionalmente, \[hay\] elisión de ‘tu’, que es la parte siguiente de “catu”, y también \[hay\] ‘cu’ y ‘co’ de ‘ca’ que es la parte inicial de la palabra.
+\[Hay\] elisión de ‘tu’ del miembro precedente “catu”, y también, ocasionalmente, \[hay\] ‘cu’ y ‘co’ de ‘ca’, que está al comienzo del miembro siguiente.
 
-Hay elisión de la \[sílaba\] ‘tu’ de “catu” cuando éste es la parte siguiente de numerales, y también, ocasionalmente, la letra ‘ca’, que es la parte inicial, se sustituye por ‘cu’ y ‘co’.
+En numerales hay elisión de ‘tu’ que es parte del miembro precedente “catu”, y también, ocasionalmente, la letra ‘ca’, que está al comienzo del miembro siguiente, se sustituye por ‘cu’ y ‘co’.
 
 ---
 
@@ -1381,7 +1381,7 @@ Ejemplos:
 
 1. **Cuddasa**, **coddasa**, **catuddasa** (catorce).
 
-Al tomar “api”, ocasionalmente, hay elisión de la letra ‘ca’, que es la parte inicial de la palabra, aunque no haya miembro precedente, y también hay ‘cu’ y ‘co’ de ‘ca’.
+Al tomar “api”, ocasionalmente, aunque no es el miembro precedente, hay elisión de la letra ‘ca’, que es el comienzo de la palabra, y también hay ‘cu’ y ‘co’ de ‘ca’.
 
 Ejemplos:
 
