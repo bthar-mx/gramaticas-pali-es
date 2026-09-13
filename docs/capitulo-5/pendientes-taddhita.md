@@ -30,9 +30,12 @@ Nandisena) y verificadas línea a línea. Lo de abajo es lo que quedó
   `comun/glosario.md`.
 - **samūha** «conjunto» frente a **samuccaya** «colección» (heredado de
   la sesión 25; samuccaya ya está fijado por el Samāsa).
-- La grafía **saṅkyā / saṅkhyā** vacila en la propia fuente (títulos de
-  §373/§381 frente a vuttis de §379/§385/§395). Hoy el maestro conserva
-  cada literal. ¿Se unifica? ¿En qué dirección?
+- La grafía **saṅkyā / saṅkhyā** — **RESUELTO EL 2026-09-13**: el IEBH
+  unificó a «saṅkhyā» (con ‘h’) en las dos ediciones, el glosario y la
+  concordancia (23 sustituciones por edición). La fuente imprime
+  «saṅkyā» en los títulos de §373/§381 y en varias vuttis: es corrección
+  del IEBH sobre la base impresa, como «Vesamittī», y queda registrada
+  aquí. El maestro archivado `docs/5 - Taddhita-Kaccāyana.md` no se toca.
 
 ## 2. §390, upapada — RESUELTO EL 2026-09-13 POR EL IEBH
 
