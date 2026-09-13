@@ -398,7 +398,7 @@ Ejemplos:
   \[Verso:\] 
 
   Cuando hay un sufijo con la letra \[indicativa\] ‘ṇ’ (paccaye saṇakārake), no (na) hay fortalecimiento (vuddhi) de “nīla” (azul), “pīta” (amarillo) y otros (nīlapītādo); \[no hay fortalecimiento de la ‘u’ después de\] la letra ‘ph’ de la palabra “phussa”, y no se debe decir (na vade) “sirasa” (sirasaṃ)[^10] de “siro” \[como en Māgasiro\].  
-1. Sikkhānaṃ samūho: **sikkho** (conjunto de entrenamientos). Bhikkhānaṃ samūho:  **bhikkho** (conjunto de comida obtenida). Así: kapotānaṃ samūho: **kāpoto** (conjunto de palomas), mayūrānaṃ samūho: **māyūro** (conjunto de pavos reales), kokilānaṃ samūho: **kokilo** (el conjunto de cucos).  
+1. Sikkhānaṃ samūho: **sikkho** (agregación de entrenamientos). Bhikkhānaṃ samūho:  **bhikkho** (agregación de comida obtenida). Así: kapotānaṃ samūho: **kāpoto** (agregación de palomas), mayūrānaṃ samūho: **māyūro** (agregación de pavos reales), kokilānaṃ samūho: **kokilo** (la agregación de cucos).  
 2. Buddho assa devatā: **buddho** (ese cuya deidad es el Buddha). Así: Bhaddo assa devatā: **Bhaddo** (ese cuya deidad es Bhadda); Māro assa devatā: **Māro** (ese cuya deidad es Māra); Mahindo assa devatā: **Māhindo** (ese cuya deidad es Mahinda); Vessavaṇo assa devatā: **Vessavaṇo** (ese cuya deidad es Vessavaṇa); Yamo assa devatā: **Yāmo** (ese cuya deidad es Yama); Somo assa devatā: **Somo** (ese cuya deidad es Soma); Nārāyaṇo assa devatā: **Nārāyaṇo** (ese cuya deidad es Nārāyaṇa).  
 3. Saṃvaccharam adhīte: **saṃvaccharo** (uno que estudia durante un año). Así: muhuttaṃ adhīte: **mohutto** (uno que estudia durante un momento); nimittaṃ adhīte: **nemitto** (uno que estudia los signos/presagios); aṅgavijjaṃ adhīte: **aṅgavijjo** (uno que estudia la ciencia de los miembros); byākaraṇaṃ adhīte: **veyyākaraṇo** (el gramático); chandaṃ adhīte: **chando** (uno que estudia prosodia); Bhassaṃ adhīte: **bhāsso** (uno que estudia el libro Bhāssa), Candaṃ adhīte: **cando** (uno que estudia el libro Canda).  
 4. Vasādānaṃ visayo deso: **vāsādo** (la región que es dominio de los leones). Así: kumbhānaṃ visayo deso: **kumbho** (la región que es dominio de vasijas); sakuntānaṃ visayo deso: **sākunto** (la región que es dominio de aves); atisārānaṃ visayo deso: **ātisāro**.  
@@ -466,21 +466,21 @@ Rājaputtānaṃ samūho rājaputtako. Evaṃ rājaputto, mānussako, mānusso, 
 
 ---
 
-En el significado de conjunto, \[hay\] ‘kaṇ’ y ‘ṇa’.
+En el significado de agregación, \[hay\] ‘kaṇ’ y ‘ṇa’.
 
-En el significado de conjunto (samūha), hay los sufijos ‘kaṇ’ y ‘ṇa’.
+En el significado de agregación (samūha), hay los sufijos ‘kaṇ’ y ‘ṇa’.
 
 ---
 
 Ejemplos:
 
-1. Rājaputtānaṃ samūho **rājaputtako**, **rājaputto** (conjunto de príncipes).
+1. Rājaputtānaṃ samūho **rājaputtako**, **rājaputto** (agregación de príncipes).
 
 Así:
 
-1. **mānussako**, **mānusso** (conjunto de humanos).  
-2. **māyūrako**, **māyūro** (conjunto de pavos reales).  
-3. **māhiṃsako**, **māhiṃso** (conjunto de búfalos).
+1. **mānussako**, **mānusso** (agregación de humanos).  
+2. **māyūrako**, **māyūro** (agregación de pavos reales).  
+3. **māhiṃsako**, **māhiṃso** (agregación de búfalos).
 
 ---
 
@@ -494,20 +494,20 @@ Gāmānaṃ samūho gāmatā. Evaṃ janatā (Khu. ii, 174; BuA. 228), bandhutā
 
 Tras “gāma” (poblado), “jana” (gente), “bandhu” (pariente), “sahāya” (compañero) y otros, \[hay\] ‘tā’.
 
-En el significado de conjunto, tras “gāma” (poblado), “jana” (gente), “bandhu” (pariente), “sahāya” (compañero) y otros, hay el sufijo ‘tā’.
+En el significado de agregación, tras “gāma” (poblado), “jana” (gente), “bandhu” (pariente), “sahāya” (compañero) y otros, hay el sufijo ‘tā’.
 
 ---
 
 Ejemplos:
 
-1. Gāmānaṃ samūho **gāmatā** (conjunto de poblados).
+1. Gāmānaṃ samūho **gāmatā** (agregación de poblados).
 
 Así:
 
-1. **janatā** (conjunto de gente).  
-2. **bandhutā** (conjunto de parientes).  
-3. **sahāyatā** (conjunto de compañeros).  
-4. **nagaratā** (conjunto de ciudades).
+1. **janatā** (agregación de gente).  
+2. **bandhutā** (agregación de parientes).  
+3. **sahāyatā** (agregación de compañeros).  
+4. **nagaratā** (agregación de ciudades).
 
 ---
 
@@ -1345,9 +1345,9 @@ Vīsaṃ (D. i, 12; M. i, 101), tiṃsaṃ (D. i, 12; M. ii, 301), cattālīsa�
 
 ---
 
-En numerales, cuando sigue ‘yo’, \[hay\] ‘vī’, ‘ti’, ‘cattāra’, ‘paññā’, ‘cha’, ‘satta’, ‘asa’ y ‘nava’ de dos diez, tres diez, cuatro diez, cinco diez, seis diez, siete diez, ocho diez y nueve diez \[respectivamente\], y de ‘yo’ \[hay\] ‘īsaṃ’, ‘āsaṃ’, ‘ṭhi’, ‘ri’, ‘ti’, ‘īti’ y ‘uti’.
+En la enumeración,[^29] cuando sigue ‘yo’, \[hay\] ‘vī’, ‘ti’, ‘cattāra’, ‘paññā’, ‘cha’, ‘satta’, ‘asa’ y ‘nava’ de dos diez, tres diez, cuatro diez, cinco diez, seis diez, siete diez, ocho diez y nueve diez \[respectivamente\], y de ‘yo’ \[hay\] ‘īsaṃ’, ‘āsaṃ’, ‘ṭhi’, ‘ri’, ‘ti’, ‘īti’ y ‘uti’.
 
-En numerales (gaṇana), cuando sigue \[la inflexión\] ‘yo’ –no una sola vez–, tras hacerse que permanezca uno solo (ekasesa) de esos con la misma forma, hay respectivamente las siguientes sustituciones del grupo de dos diez, del grupo de tres diez, del grupo de cuatro diez, del grupo de cinco diez, del grupo de seis diez, del grupo de siete diez, del grupo de ocho diez y del grupo de nueve diez: ‘vī’, ‘ti’, ‘cattāra’, ‘paññā’, ‘cha’, ‘satta’, ‘asa’, ‘nava’; y de \[la inflexión\] ‘yo’ hay las siguientes sustituciones: ‘īsaṃ’, ‘āsaṃ’, ‘ṭhi’, ‘ri’, ‘ti’, ‘īti’, ‘uti’; después, de nuevo, se concluyen \[estas formas\].
+En la enumeración (gaṇana), cuando sigue \[la inflexión\] ‘yo’ –no una sola vez–, tras hacerse que permanezca uno solo (ekasesa) de esos con la misma forma, hay respectivamente las siguientes sustituciones del grupo de dos diez, del grupo de tres diez, del grupo de cuatro diez, del grupo de cinco diez, del grupo de seis diez, del grupo de siete diez, del grupo de ocho diez y del grupo de nueve diez: ‘vī’, ‘ti’, ‘cattāra’, ‘paññā’, ‘cha’, ‘satta’, ‘asa’, ‘nava’; y de \[la inflexión\] ‘yo’ hay las siguientes sustituciones: ‘īsaṃ’, ‘āsaṃ’, ‘ṭhi’, ‘ri’, ‘ti’, ‘īti’, ‘uti’; después, de nuevo, se concluyen \[estas formas\].
 
 ---
 
@@ -1357,7 +1357,7 @@ Ejemplos:
 
 ¿Cuál es la finalidad de decir “asakiṃ” (no una sola vez)? \[Para excluir casos como\]: **dasa** (diez), donde \[la decena\] ocurre una sola vez.
 
-¿Cuál es la finalidad de decir “gaṇane” (en numerales)? \[Para excluir casos como\]: dasadasakā purisā (hombres que tienen diez decenas \[de años\]) \[que no es enumeración pura\].
+¿Cuál es la finalidad de decir “gaṇane” (en la enumeración)? \[Para excluir casos como\]: dasadasakā purisā (hombres que tienen diez decenas \[de años\]) \[que no es enumeración pura\].
 
 ---
 
@@ -1367,13 +1367,13 @@ Ejemplos:
 
 Cuddasa (D. i, 50; M. ii, 187), coddasa, catuddasa.
 
-**Apiggahaṇena** anupapadassā pi padādi-**ca**kārassa[^29] lopo hoti navā, **ca**ssa **cu co** pi honti. Tālīsaṃ, cattālīsaṃ (D. i, 12), cuttālīsaṃ, cottālīsaṃ.
+**Apiggahaṇena** anupapadassā pi padādi-**ca**kārassa[^30] lopo hoti navā, **ca**ssa **cu co** pi honti. Tālīsaṃ, cattālīsaṃ (D. i, 12), cuttālīsaṃ, cottālīsaṃ.
 
 ---
 
 \[Hay\] elisión de ‘tu’ del miembro precedente “catu”, y también, ocasionalmente, \[hay\] ‘cu’ y ‘co’ de ‘ca’, que está al comienzo del miembro siguiente.
 
-En numerales hay elisión de ‘tu’ que es parte del miembro precedente “catu”, y también, ocasionalmente, la letra ‘ca’, que está al comienzo del miembro siguiente, se sustituye por ‘cu’ y ‘co’.
+En la enumeración hay elisión de ‘tu’ que es parte del miembro precedente “catu”, y también, ocasionalmente, la letra ‘ca’, que está al comienzo del miembro siguiente, se sustituye por ‘cu’ y ‘co’.
 
 ---
 
@@ -1391,19 +1391,19 @@ Ejemplos:
 
 **391\. 423\. Yad anupapannā nipātanā sijjhanti (830).** \[Yaṃ \+ anupapannā \+ nipātanā \+ sijjhanti, 4\]
 
-Ye saddā aniddiṭṭhalakkhaṇā[^30] akkhara-pada-byañjanato, itthi-puma-napuṃsakaliṅgato, nām’-upasagga-nipātato, abyayībhāvasamāsa-taddhit’-ākhyātato,[^31] gaṇana-saṅkhyā-kāla-kāraka-ppayoga-saññāto, sandhi-pakati-vuddhi-lop’-āgama-vikāra-viparītato, vibhattivibhajanato ca, te nipātanā sijjhanti.
+Ye saddā aniddiṭṭhalakkhaṇā[^31] akkhara-pada-byañjanato, itthi-puma-napuṃsakaliṅgato, nām’-upasagga-nipātato, abyayībhāvasamāsa-taddhit’-ākhyātato,[^32] gaṇana-saṅkhyā-kāla-kāraka-ppayoga-saññāto, sandhi-pakati-vuddhi-lop’-āgama-vikāra-viparītato, vibhattivibhajanato ca, te nipātanā sijjhanti.
 
 ---
 
-Esas \[palabras\] no mencionadas[^32] se realizan por medio de este \[sutta\].
+Esas \[palabras\] no mencionadas[^33] se realizan por medio de este \[sutta\].
 
-Aquellas palabras cuyos aforismos no han sido mostrados –(1) por medio de letras, palabras y consonantes; (2) por medio de género femenino, masculino y neutro; (3) por medio de nombres, prefijos y partículas; (4) por medio de compuestos adverbiales (abyayībhāva-samāsa), derivados secundarios (taddhita) y verbos (ākhyāta); (5) por medio de conteo (gaṇana), número (saṅkhyā), tiempo (kāla), caso (kāraka), ejemplo (payoga) y denominación (saññā); (6) por medio de sandhi, forma natural (pakati), fortalecimiento (vuddhi), elisión (lopa), inserción (āgama), cambio (vikāra) e inversión (viparīta); (7) y por medio de la división de las inflexiones–, esas se realizan por medio de este sutta (nipātana).
+Aquellas palabras cuyos aforismos no han sido mostrados –(1) por medio de letras, palabras y consonantes; (2) por medio de género femenino, masculino y neutro; (3) por medio de nombres, prefijos y partículas; (4) por medio de compuestos adverbiales (abyayībhāva-samāsa), derivados secundarios (taddhita) y verbos (ākhyāta); (5) por medio de enumeración (gaṇana), número (saṅkhyā), tiempo (kāla), caso (kāraka), ejemplo (payoga) y denominación (saññā); (6) por medio de sandhi, forma natural (pakati), fortalecimiento (vuddhi), elisión (lopa), inserción (āgama), cambio (vikāra) e inversión (viparīta); (7) y por medio de la división de las inflexiones–, esas se realizan por medio de este sutta (nipātana).
 
 ---
 
 **392\. 418\. Dvādito ko ’nekatthe ca (831).** \[Dvi-ādito \+ ko \+ aneka-atthe \+ ca, 4\]
 
-**Dvi** icc evamādito **ka**paccayo hoti anekatthe ca, nipātanā[^33] sijjhanti.
+**Dvi** icc evamādito **ka**paccayo hoti anekatthe ca, nipātanā[^34] sijjhanti.
 
 Satassa dvikaṃ dvisataṃ, satassa tikaṃ tisataṃ, satassa catukkaṃ catusataṃ, satassa pañcakaṃ pañcasataṃ, satassa chakkaṃ chasataṃ, satassa sattakaṃ sattasataṃ, satassa aṭṭhakaṃ aṭṭhasataṃ, satassa navakaṃ navasataṃ, satassa dasakaṃ dasasataṃ, sahassaṃ (JA. i, 138) hoti.
 
@@ -1411,7 +1411,7 @@ Satassa dvikaṃ dvisataṃ, satassa tikaṃ tisataṃ, satassa catukkaṃ catus
 
 Y en el significado de multiplicidad, \[hay\] ‘ka’ tras “dvi” y otros.
 
-Y en el significado de multiplicidad (aneka), hay el sufijo ‘ka’ tras “dvi” (dos) y otros; se realizan por el sutta “nipātanā”.[^34]
+Y en el significado de multiplicidad (aneka), hay el sufijo ‘ka’ tras “dvi” (dos) y otros; se realizan por el sutta “nipātanā”.[^35]
 
 ---
 
@@ -1453,9 +1453,9 @@ Y \[las formas\] de “dvika” (grupo de dos) y otros, y de las palabras que si
 
 ---
 
-**394\. 416\. Yāva taduttari**[^35] **dasaguṇitañ ca (833).** \[Yāva \+ taṃ-uttari \+ dasaguṇitaṃ \+ ca, 4\]
+**394\. 416\. Yāva taduttari**[^36] **dasaguṇitañ ca (833).** \[Yāva \+ taṃ-uttari \+ dasaguṇitaṃ \+ ca, 4\]
 
-Yāva tāsaṃ saṅkhyānaṃ uttari[^36] dasaguṇitañ ca kātabbaṃ.
+Yāva tāsaṃ saṅkhyānaṃ uttari[^37] dasaguṇitañ ca kātabbaṃ.
 
 Taṃ yathā? Dasassa gaṇanassa dasaguṇitaṃ katvā sataṃ (D. i, 12-3) hoti, satassa dasaguṇitaṃ katvā sahassaṃ (JA. i, 138) hoti, sahassassa dasaguṇitaṃ katvā dasasahassaṃ hoti, dasasahassassa dasaguṇitaṃ katvā satasahassaṃ (D. i, 12-3) hoti, satasahassassa dasaguṇitaṃ katvā dasasatasahassaṃ hoti, dasasatasahassassa dasaguṇitaṃ katvā koṭi (Khu. iv, 305) hoti, koṭisatasahassassa sataguṇitaṃ katvā pakoṭi (AA. iii, 329) hoti. Evaṃ sesā pi yojetabbā.
 
@@ -1475,7 +1475,7 @@ Y hasta donde llega \[la numeración\], más allá de aquellos números debe hac
 
 **395\. 417\. Sakanāmehi (833).** \[Sakanāmehi, 1\]
 
-Yāsaṃ pana saṅkhyānaṃ aniddiṭṭhanām adheyyānaṃ[^37] sakehi sakehi nāmehi nippajjante.
+Yāsaṃ pana saṅkhyānaṃ aniddiṭṭhanām adheyyānaṃ[^38] sakehi sakehi nāmehi nippajjante.
 
 Satasahassānaṃ sataṃ koṭi (Khu. iv, 305), koṭisatasahassānaṃ sataṃ pakoṭi, pakoṭisatasahassānaṃ sataṃ koṭipakoṭi (AA. iii, 329), koṭipakoṭisatasahassānaṃ sataṃ nahutaṃ (AA. iii, 329), nahutasatasahassānaṃ sataṃ ninnahutaṃ (AA. iii, 329), ninnahutasatasahassānaṃ sataṃ akkhobhiṇī (Khu. vi, 77), tathā bindhu, abbudaṃ (S. i, 153; A. iii, 396; AA. iii, 329), nirabbudaṃ (S. i, 153; A. iii, 396; AA. iii, 329), ahahaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), ababaṃ (S. i, 153; A. iii, 396; AA. iii, 329), aṭaṭaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), sogandhikaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), uppalaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), kumudaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), padumaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), puṇḍarikaṃ (S. i, 154; A. iii, 396; Khu. i, 381-piṭṭhesu pi passitabbaṃ), kathānaṃ, mahākathānaṃ, asaṅkheyyaṃ (JA. i, 36).
 
@@ -1568,7 +1568,7 @@ Sabbanāmehi pakāravacanatthe **thā**paccayo hoti.
 
 So pakāro tathā, taṃ pakāraṃ tathā, tena pakārena tathā, tassa pakārassa tathā, tasmā pakārā tathā, tassa pakārassa tathā, tasmiṃ pakāre tathā (M. i, 157; ii, 23). Evaṃ yathā (M. i, 157; ii, 23), sabbathā (M. ii, 27), aññathā (Vin. i, 116), itarathā (VinA. i, 230).
 
-**Tuggahaṇaṃ** kimatthaṃ? **Thatthā[^38]** paccayo hoti. So pakāro tathatthā.[^39] Evaṃ yathatthā, sabbathatthā, aññathatthā, itarathatthā.
+**Tuggahaṇaṃ** kimatthaṃ? **Thatthā[^39]** paccayo hoti. So pakāro tathatthā.[^40] Evaṃ yathatthā, sabbathatthā, aññathatthā, itarathatthā.
 
 ---
 
@@ -1650,11 +1650,11 @@ Ejemplos:
 
 **I u** icc etesaṃ ādibhūtānaṃ mā vuddhi hoti, tesu ca **e-o**vuddhāgamo hoti ṭhāne.
 
-Byākaraṇam adhīte veyyākaraṇiko (D. i, 82; DA. i, 220-Sad. sutta 850), nyāyam adhīte neyyāyiko, Byāvacchassa apaccaṃ Beyyāvaccho,[^40] dvāre niyutto dovāriko (A. ii, 481-Sad. sutta 854).
+Byākaraṇam adhīte veyyākaraṇiko (D. i, 82; DA. i, 220-Sad. sutta 850), nyāyam adhīte neyyāyiko, Byāvacchassa apaccaṃ Beyyāvaccho,[^41] dvāre niyutto dovāriko (A. ii, 481-Sad. sutta 854).
 
 ---
 
-Que no haya \[fortalecimiento\] de ‘i’ y ‘u’; en el lugar \[apropiado hay\] la inserción.[^41]
+Que no haya \[fortalecimiento\] de ‘i’ y ‘u’; en el lugar \[apropiado hay\] la inserción.[^42]
 
 Que no haya fortalecimiento de ‘i’ y ‘u’ cuando están al inicio; y en esos \[casos\], en el lugar apropiado, hay la inserción de los fortalecimientos ‘e’ y ‘o’.
 
@@ -1673,11 +1673,11 @@ Ejemplos:
 
 **I u** icc etesaṃ **ā**ttañ ca hoti, **ri**kārāgamo ca ṭhāne.
 
-Isissa bhāvo ārisyaṃ,[^42] iṇassa bhāvo āṇyaṃ, usabhassa bhāvo āsabhaṃ (S. i, 265), ujuno bhāvo ajjavaṃ[^43] (A. i, 93), icc evamādī yojetabbā.
+Isissa bhāvo ārisyaṃ,[^43] iṇassa bhāvo āṇyaṃ, usabhassa bhāvo āsabhaṃ (S. i, 265), ujuno bhāvo ajjavaṃ[^44] (A. i, 93), icc evamādī yojetabbā.
 
 **Yūnam** iti kimatthaṃ? Apāyesu jāto āpāyiko (Khu. i, 203).
 
-**Ṭhāne** ti kimatthaṃ? Vematiko (Vin. iv, 142), opanayiko,[^44] opamāyiko, opāyiko (Vin. iii, 57).
+**Ṭhāne** ti kimatthaṃ? Vematiko (Vin. iv, 142), opanayiko,[^45] opamāyiko, opāyiko (Vin. iii, 57).
 
 ---
 
@@ -1714,7 +1714,7 @@ Kvaci ādi-majjha-uttara icc etesaṃ dīgha-rassā honti paccayesu ca apaccayes
 
 **Ādirasso** tāva: Pageva (M. i, 188) icc evamādi.
 
-**Majjherasso** tāva: Sumedhaso (Khu. i, 17) suvaṇṇadharehi[^45] icc evamādi.
+**Majjherasso** tāva: Sumedhaso (Khu. i, 17) suvaṇṇadharehi[^46] icc evamādi.
 
 **Uttararasso** tāva: Bhovādi nāma so hoti (Khu. i, 70), yathābhāvi guṇena so icc evamādi. Aññe pi yathājinavacanānuparodhena yojetabbā.
 
@@ -1744,7 +1744,7 @@ Al tomar “ca”, se recoge el significado “también sin sufijos (apaccayesu 
 
 **404\. 370\. Tesu vuddhi-lopāgama-vikāra-viparītādesā ca (859).** \[Tesu \+ vuddhi-lopa-āgama-vikāra-viparīta-ādesā \+ ca, 3\]
 
-Tesu ādi-majjh’-uttaresu yathājinavacanānuparodhena[^46] kvaci vuddhi hoti, kvaci lopo hoti, kvaci āgamo hoti, kvaci vikāro hoti, kvaci viparīto hoti, kvaci ādeso hoti.
+Tesu ādi-majjh’-uttaresu yathājinavacanānuparodhena[^47] kvaci vuddhi hoti, kvaci lopo hoti, kvaci āgamo hoti, kvaci vikāro hoti, kvaci viparīto hoti, kvaci ādeso hoti.
 
 **Ādivuddhi** tāva: Ābhidhammiko, Venateyyo icc evamādi.
 
@@ -1766,7 +1766,7 @@ Tesu ādi-majjh’-uttaresu yathājinavacanānuparodhena[^46] kvaci vuddhi hoti,
 
 **Ādivikāro** tāva: Ārisyaṃ, āṇyaṃ, āsabhaṃ, ajjavaṃ icc evamādi.
 
-**Majjhevikāro** tāva: Varārisyaṃ, parārisyaṃ[^47] icc evamādi.
+**Majjhevikāro** tāva: Varārisyaṃ, parārisyaṃ[^48] icc evamādi.
 
 **Uttaravikāro** tāva: Yāni, tāni, sukhāni icc evamādi.
 
@@ -1774,7 +1774,7 @@ Tesu ādi-majjh’-uttaresu yathājinavacanānuparodhena[^46] kvaci vuddhi hoti,
 
 **Majjheviparīto** tāva: Samuggacchati, samuggate sūriye icc evamādi.
 
-**Uttaraviparīto** tāva: Digu, diguṇaṃ[^48] (Vin. iii, 402) icc evamādi.
+**Uttaraviparīto** tāva: Digu, diguṇaṃ[^49] (Vin. iii, 402) icc evamādi.
 
 **Ādi-ādeso** tāva: Yūnaṃ icc evamādi.
 
@@ -1828,11 +1828,11 @@ Primero, **fortalecimiento inicial**: **Ābhidhammiko**, **Venateyyo**, etcéter
 
 **405\. 365\. A-y-uvaṇṇānañ c’ ā-y-o vuddhi (860).** \[A-yu-vaṇṇānaṃ \+ ca \+ āyo \+ vuddhi, 4\]
 
-**A** iti akāro, **i ī** iti **i**vaṇṇo, **u ū** iti **u**vaṇṇo, tesaṃ **a**kāra-**i**vaṇṇ’-**u**vaṇṇānaṃ **ā-e-o**vuddhiyo honti yathāsaṅkhyaṃ, **ā-ī-ū**vuddhi ca.[^49]
+**A** iti akāro, **i ī** iti **i**vaṇṇo, **u ū** iti **u**vaṇṇo, tesaṃ **a**kāra-**i**vaṇṇ’-**u**vaṇṇānaṃ **ā-e-o**vuddhiyo honti yathāsaṅkhyaṃ, **ā-ī-ū**vuddhi ca.[^50]
 
 Ābhidhammiko, Venateyyo, oḷumpiko.
 
-Pana **vuddhi**ggahaṇaṃ kimatthaṃ? Uttarapadavuddhibhāvatthaṃ, Aṅgamagadhehi āgatā ti Aṅgamāgadhikā (Vin. iii, 37). Nigamajanapadesu jātā ti negamajānapadā. Purimajanapadesu jātā ti porimajānapadā.[^50] Sattāhe niyutto ti sattāhikā.[^51] Catuvijje niyutto ti cātuvijjikā[^52] icc evamādī yojetabbā.
+Pana **vuddhi**ggahaṇaṃ kimatthaṃ? Uttarapadavuddhibhāvatthaṃ, Aṅgamagadhehi āgatā ti Aṅgamāgadhikā (Vin. iii, 37). Nigamajanapadesu jātā ti negamajānapadā. Purimajanapadesu jātā ti porimajānapadā.[^51] Sattāhe niyutto ti sattāhikā.[^52] Catuvijje niyutto ti cātuvijjikā[^53] icc evamādī yojetabbā.
 
 **Vuddhi** icc anena kvattho? Vuddhādisarassa vā ’saṃyogantassa saṇe ca.
 
@@ -1929,50 +1929,52 @@ Y así deben formarse los demás \[casos\].
 
 [^28]:  Hatthiassarathapattikaṃ (K).
 
-[^29]:  Uttarapadādicakārassa (K). Padādicakārassa (Rū).
+[^29]:  *Gaṇana* se traduce en este capítulo como “enumeración”; según el contexto puede traducirse también como “numeral”, “conteo”, etc.
 
-[^30]:  Aniṭṭhaṅgatā (K). 
+[^30]:  Uttarapadādicakārassa (K). Padādicakārassa (Rū).
 
-[^31]:  Samāsataddhitādito (Rū). Abyayībhāvādisamāsataddhitato (Sad.).
+[^31]:  Aniṭṭhaṅgatā (K). 
 
-[^32]:  Esas palabras que no se pueden formar por medio de otros aforismos.
+[^32]:  Samāsataddhitādito (Rū). Abyayībhāvādisamāsataddhitato (Sad.).
 
-[^33]:  Te nipātanā (Sī).
+[^33]:  Esas palabras que no se pueden formar por medio de otros aforismos.
 
-[^34]:  El sutta anterior, §391, es uno de los cuatro suttas universales de la gramática de Kaccāyana.
+[^34]:  Te nipātanā (Sī).
 
-[^35]:  Uttariṃ (Sī).
+[^35]:  El sutta anterior, §391, es uno de los cuatro suttas universales de la gramática de Kaccāyana.
 
 [^36]:  Uttariṃ (Sī).
 
-[^37]:  Aniddiṭṭhanām adheyyānaṃ rūpāni (Sī).
+[^37]:  Uttariṃ (Sī).
 
-[^38]:  Tatthā (Sad.).
+[^38]:  Aniddiṭṭhanām adheyyānaṃ rūpāni (Sī).
 
-[^39]:  So viya pakāro tathattā (Sī).
+[^39]:  Tatthā (Sad.).
 
-[^40]:  Byāvacchassa apaccaṃ veyyāvaccho (Sad. sutta 853). Byāvaccassa apaccaṃ veyyāvacco (Sī).
+[^40]:  So viya pakāro tathattā (Sī).
 
-[^41]:  El título de este sutta es el único que Nandisena deja sin traducir («\[Sutta has not been translated\]»); la traducción española es del IEBH, hecha desde el pāḷi con apoyo en su traducción inglesa de la vutti.
+[^41]:  Byāvacchassa apaccaṃ veyyāvaccho (Sad. sutta 853). Byāvaccassa apaccaṃ veyyāvacco (Sī).
 
-[^42]:  Ārissaṃ (Sī).
+[^42]:  El título de este sutta es el único que Nandisena deja sin traducir («\[Sutta has not been translated\]»); la traducción española es del IEBH, hecha desde el pāḷi con apoyo en su traducción inglesa de la vutti.
 
-[^43]:  Ājjavaṃ (K). Ujuno bhāvo ajjavaṃ, pa, saṃyoge ādirassattaṅ ca (Rū. 380). Sogatamatavasena pana “ujuno bhāvo ajjavo” ti ākāro rassam āpajjati, so ca saddapulliṅgattaṃ yebhuyyena (Sad. 857).
+[^43]:  Ārissaṃ (Sī).
 
-[^44]:  Opanayiko va opaneyyiko (Sad. 237-piṭṭhe).
+[^44]:  Ājjavaṃ (K). Ujuno bhāvo ajjavaṃ, pa, saṃyoge ādirassattaṅ ca (Rū. 380). Sogatamatavasena pana “ujuno bhāvo ajjavo” ti ākāro rassam āpajjati, so ca saddapulliṅgattaṃ yebhuyyena (Sad. 857).
 
-[^45]:  Suvaṇṇadharāhi (K).
+[^45]:  Opanayiko va opaneyyiko (Sad. 237-piṭṭhe).
 
-[^46]:  Jinavacanānuparodhena (Sī).
+[^46]:  Suvaṇṇadharāhi (K).
 
-[^47]:  Varārissaṃ, parārissaṃ (Sī). 
+[^47]:  Jinavacanānuparodhena (Sī).
 
-[^48]:  Digu digunaṃ (Sī).
+[^48]:  Varārissaṃ, parārissaṃ (Sī). 
 
-[^49]:  “Ā-ī-ūvuddhi cā” ti pāṭho sīhaḷapotthake natthi, tatthā pi tattha “oḷumpiko” ti padassa pacchā “a i u iti avuddhi. Abhidhammiko, vinateyyo, uḷumpiko” ti pāṭho atthi. Padarūpasiddhiyam pi “casaddaggahaṇam avuddhi sampiṇḍanatthaṃ, avadhāraṇatthaṃ vā” ti vuttaṃ.
+[^49]:  Digu digunaṃ (Sī).
 
-[^50]:  Purījanapadesu jātā porījānapadā (Sī).
+[^50]:  “Ā-ī-ūvuddhi cā” ti pāṭho sīhaḷapotthake natthi, tatthā pi tattha “oḷumpiko” ti padassa pacchā “a i u iti avuddhi. Abhidhammiko, vinateyyo, uḷumpiko” ti pāṭho atthi. Padarūpasiddhiyam pi “casaddaggahaṇam avuddhi sampiṇḍanatthaṃ, avadhāraṇatthaṃ vā” ti vuttaṃ.
 
-[^51]:  Sattāhiko (K).
+[^51]:  Purījanapadesu jātā porījānapadā (Sī).
 
-[^52]:  Cātuvejjiko (K).
+[^52]:  Sattāhiko (K).
+
+[^53]:  Cātuvejjiko (K).
