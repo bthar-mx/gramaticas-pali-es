@@ -65,12 +65,21 @@ gaṇana del mismo día dice «En la enumeración».)
 
 ## 4. Notas de otros tratados — RESUELTO EL 2026-09-13
 
-El IEBH aprobó traducirlas. Las cinco discursivas llevan ahora el pāḷi
-íntegro seguido de la traducción entre paréntesis (modelo del Samāsa),
-en las dos ediciones: **13** (Rū, §353), **18** (Mog, §356), **27** (Rū
-y juicio editorial, §386), **45** (Rū y Sad, §402), **51** (lectura
-cingalesa, §405) — numeración tras la inserción de la nota 2. Las
-variantes puras («Pattaṅgaṃ (Sī)») quedan en pāḷi, como en el Nāma.
+El IEBH aprobó traducirlas, **con el alcance acotado ese mismo día: se
+traducen los pasajes de otros tratados, no las lecturas variantes.** Las
+cinco discursivas llevan el pāḷi íntegro seguido de la traducción entre
+paréntesis (modelo del Samāsa), en las dos ediciones: **13** (Rū, §353)
+y **18** (Mog, §356), que son pasajes íntegros y van traducidos enteros;
+**27** (§386), **45** (§402) y **51** (§405), que son mixtos y llevan el
+paréntesis rotulado —«Traducción del pasaje del Rūpasiddhi…»— porque en
+ellos las variantes (K), (Sī, K) y la lectura cingalesa **quedan sin
+traducir**. Numeración tras la inserción de la nota 2. Las variantes
+puras («Pattaṅgaṃ (Sī)») quedan en pāḷi, como en el Nāma.
+
+*Nota de criterio:* en la **27** se tradujo también la observación final
+de Nandisena sobre que la lectura del Padarūpasiddhi es la mejor. No es
+una variante ni un pasaje ajeno, sino su juicio editorial; se incluyó por
+ser información sustantiva para el lector. Decir si se deja o se retira.
 
 ## 5. Referencias reinyectadas: siglas literales
 
