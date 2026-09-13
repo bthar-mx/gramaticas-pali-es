@@ -185,6 +185,15 @@ CAPITULOS = {
                         "revisados por el IEBH, con las 248 referencias "
                         "canónicas de la edición base restituidas por "
                         "reconstrucción y las 52 notas.",
+        "version_en": "1.0",
+        "version_fecha_en": "2026-09-13",
+        "version_nota_en": "First English edition: Bhikkhu Nandisena's "
+                           "translation with the apparatus of the Spanish "
+                           "edition (numbered examples with the derived "
+                           "form in bold, word-count breakdowns after "
+                           "Thitzana, the 248 canonical references and "
+                           "the 52 notes) and the fixed glossary for the "
+                           "technical terms.",
     },
 }
 

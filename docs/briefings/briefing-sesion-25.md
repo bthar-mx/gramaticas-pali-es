@@ -193,3 +193,16 @@ sesión 25 ya entraron por otras vías (apacca, assatthi, parimāṇa;
 taddhita = «derivado secundario» quedó fijado en la sesión 59); la
 lista definitiva se compila contra el glosario de hoy, no contra las
 tablas de agosto.
+
+**Hecho más tarde ese mismo día:** (1) **glosario**: 25 entradas nuevas
+del Taddhita en `comun/glosario.md` (221 normativos), con tres puntos en
+«En discusión» (gaṇana, niyutta, tappakativacana); gaṇana y samūha
+esperan al IEBH. (2) **Edición inglesa**: `kaccayana/05-taddhita-kappa.en.md`,
+construida por sustitución sobre el capítulo español publicado —pāḷi,
+desgloses y referencias idénticos byte a byte, comprobado por multiconjunto
+de voces pāḷi por sutta—, N-EN literal como base y el registro de
+desviaciones en el §8 del memo de inglés
+(`docs/ingles/memo-sandhi-en-glosario-y-desviaciones.md`). Publicada en
+`/en/kaccayana/taddhita/` con el botón EN/ES; paridad de la página
+comprobada (419 referencias, 52 notas, 95 listas en ambas). Sin revisar
+por el IEBH, como los capítulos 2–4.
