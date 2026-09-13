@@ -25,11 +25,15 @@ Nandisena) y verificadas línea a línea. Lo de abajo es lo que quedó
 
 ## 1. Terminología por unificar (glosario)
 
-- **gaṇana** aparece de tres maneras: «numerales» (§389), «conteo»
-  (§391), «enumeración» (§389 kimatthaṃ, §393). Elegir una y fijarla en
-  `comun/glosario.md`.
-- **samūha** «conjunto» frente a **samuccaya** «colección» (heredado de
-  la sesión 25; samuccaya ya está fijado por el Samāsa).
+- **gaṇana** — **RESUELTO EL 2026-09-13**: el IEBH unificó a
+  «enumeración» en las dos ediciones (§389–§391), con nota del traductor
+  en la primera aparición de la obra (§389, nota 29: «según el contexto
+  puede traducirse también como “numeral”, “conteo”, etc.») y entrada en
+  `comun/glosario.md`. Las notas 29–52 pasaron a 30–53.
+- **samūha** — **RESUELTO EL 2026-09-13**: el IEBH unificó a
+  «agregación» (EN «aggregation») en las dos ediciones (§352, §354,
+  §355), en pareja con samuccaya = «colección», y con entrada en el
+  glosario. Con esto el §1 queda cerrado entero.
 - La grafía **saṅkyā / saṅkhyā** — **RESUELTO EL 2026-09-13**: el IEBH
   unificó a «saṅkhyā» (con ‘h’) en las dos ediciones, el glosario y la
   concordancia (23 sustituciones por edición). La fuente imprime
@@ -43,9 +47,8 @@ El IEBH reescribió el título, la vutti y el pasaje de «api»: «catu» es el
 **miembro precedente** y el ‘ca’ «está al comienzo del **miembro
 siguiente**», es decir, la lectura de Nandisena («uttarapadādi-»), con la
 variante del Rūpasiddhi visible en la nota 30. Aplicado en las dos
-ediciones. De paso, la vutti dice ahora «En numerales» para gaṇana, lo
-que inclina la unificación pendiente del §1 hacia «numerales» (§391
-«conteo» y §393 «enumeración» siguen sin tocar, a la espera del IEBH).
+ediciones. (La vutti decía entonces «En numerales»; con la unificación de
+gaṇana del mismo día dice «En la enumeración».)
 
 ## 3. Glosas que son interpretación del IEBH (confirmar)
 
@@ -63,8 +66,8 @@ Propuesta del 13-09: las variantes puras —«Pattaṅgaṃ (Sī)»— quedan en
 pāḷi como en el Nāma; las discursivas se dan en pāḷi íntegro seguido de
 traducción entre paréntesis (modelo de los borradores del Samāsa).
 Candidatas (numeración del maestro de hoy): **12** (Rū, §353), **17**
-(Mog, §356), **26** (Rū y juicio editorial, §386), **43** (Rū y Sad,
-§402), **49** (lectura cingalesa, §405). Falta el visto bueno del IEBH y
+(Mog, §356), **26** (Rū y juicio editorial, §386), **44** (Rū y Sad,
+§402), **50** (lectura cingalesa, §405). Falta el visto bueno del IEBH y
 las traducciones mismas.
 
 ## 5. Referencias reinyectadas: siglas literales
@@ -78,7 +81,7 @@ tabla de erratas de la sesión 25 propone normalizarlas (A., Vin., VinA.);
 decide el IEBH. Sea cual sea la decisión, estas siglas faltan en el
 `_SIGLAS` del emparejador para cuando se restituya la negrita.
 
-## 6. Nota 34: enlace de Google Docs — RESUELTO EL 2026-09-13
+## 6. Nota 34 (hoy 35): enlace de Google Docs — RESUELTO EL 2026-09-13
 
 La nota enlazaba a un documento privado de Google, que no puede salir
 al sitio. El 13-09 se dejó la frase sin enlace y con «§391» enlazable
