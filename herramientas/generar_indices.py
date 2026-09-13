@@ -207,6 +207,8 @@ EN = {
         "and the rules that form them.",
     "§316–§343, séptima sección del Nāma-kappa.":
         "§316–§343, seventh section of the Nāma-kappa.",
+    "§344–§405, octava sección del Nāma-kappa.":
+        "§344–§405, eighth section of the Nāma-kappa.",
     "Capítulo de los derivados secundarios.":
         "Chapter on secondary derivatives.",
     "Capítulo del verbo.": "Chapter on the verb.",

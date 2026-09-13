@@ -201,6 +201,38 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | — | **Éste / Ésta** (demostrativos con tilde) | Uso del IEBH en el Samāsa («Éste es un compuesto relativo…»); no se regulariza a la ortografía sin tilde. | Samāsa, IEBH sesión 59 — Kacc. §328 |
 | — | **Y** para el «ca» en las glosas de título | «Y las inflexiones de esos se eliden» (§317), «Y hay la forma natural…» (§318). | Samāsa, IEBH sesión 59 — Kacc. §317 |
 
+| *gottagaṇa* | grupo de clanes | | Taddhita, IEBH 2026-09-13 — Kacc. §345, §346 |
+| *sippa* | habilidad | «Vīṇā assa sippaṃ veṇiko» (su habilidad es el laúd: laudista). | Taddhita, IEBH 2026-09-13 — Kacc. §351 |
+| *bhaṇḍa* | mercancía | | Taddhita, IEBH 2026-09-13 — Kacc. §351 |
+| *jīvikā* | sustento | | Taddhita, IEBH 2026-09-13 — Kacc. §351 |
+| *sannidhāna* | ubicación; ubicado en | «Sarīre sannidhānā vedanā sārīrikā». | Taddhita, IEBH 2026-09-13 — Kacc. §351 |
+| *upamā* | comparación | Upamatthe: «en el significado de comparación». | Taddhita, IEBH 2026-09-13 — Kacc. §357 |
+| *tannissita* | que depende de eso | | Taddhita, IEBH 2026-09-13 — Kacc. §358 |
+| *tabbahula* | abundancia de eso | | Taddhita, IEBH 2026-09-13 — Kacc. §359 |
+| *bhāva* | estado | Coherente con bhāvaniddesa («expresión que indica estado»). | Taddhita, IEBH 2026-09-13 — Kacc. §360–§362 |
+| *visesa* | distinción | | Taddhita, IEBH 2026-09-13 — Kacc. §363 |
+| *ṭhāna* | según contexto: «causa» (sentido del taddhita) o «lugar (apropiado)» | «Causa» en §356 y §358 («madanassa ṭhānaṃ madaniyaṃ»), siguiendo el inglés de Nandisena («cause»); «en el lugar apropiado» (ṭhāne) en §401–§402. Como liṅga, decide el contexto. | Taddhita, IEBH 2026-09-13 — Kacc. §356 |
+| *saṅkyāpūraṇa* | ordinal | Lit. «que completa el número» (nota 22 del capítulo). La fuente vacila entre «saṅkyā» y «saṅkhyā»; ver `docs/capitulo-5/pendientes-taddhita.md` §1. | Taddhita, IEBH 2026-09-13 — Kacc. §373 |
+| *pūraṇa / pūraṇī* | compleción; la que completa | Femenino en los días lunares: «ekādasannaṃ pūraṇī ekādasī». | Taddhita, IEBH 2026-09-13 — Kacc. §373, §375 |
+| *ekasesa* | queda uno solo | «Puriso ca puriso ca purisā». | Taddhita, IEBH 2026-09-13 — Kacc. §388, §389 |
+| *nipātana* | sin traducir: la formación directa por sutta comodín | Uno de los «cuatro suttas universales» (nota 34 del Taddhita); cf. §51 del Sandhi. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §392 |
+| *aneka* | multiplicidad | Anekatthe: «en el significado de multiplicidad». | Taddhita, IEBH 2026-09-13 — Kacc. §392 |
+| *vibhāga* | división | | Taddhita, IEBH 2026-09-13 — Kacc. §397 |
+| *pakāravacana* | expresión de modo | | Taddhita, IEBH 2026-09-13 — Kacc. §398, §399 |
+| *saṇakāraka* | con la letra indicativa ‘ṇ’ | «Paccaye saṇakārake» (verso de §352). | Taddhita, IEBH 2026-09-13 — Kacc. §352, §400 |
+| *vuddhi* | fortalecimiento | Juego cerrado de §391 y §404 (con lopa, āgama, vikāra, viparīta, ādesa); «strengthening» en N-EN. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404, §405 |
+| *lopa* | elisión | Del juego de §404; «elision» en N-EN. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
+| *āgama* | inserción | Del juego de §404; «insertion» en N-EN; coherente con ikārāgama, sāgama, etc. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
+| *vikāra* | cambio | Del juego de §404; «change» en N-EN. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
+| *viparīta* | inversión | Del juego de §404; «reversing» en N-EN. La inversión es fonética (uggate sūriye), no semántica. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
+| *ādesa* | sustitución | Del juego de §404; «substitution» en N-EN; coherente con ādesa-sandhi. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
+
 ## En discusión
 
--
+- **gaṇana** («numerales» / «conteo» / «enumeración») y **samūha**
+  frente a **samuccaya**: ver `docs/capitulo-5/pendientes-taddhita.md` §1.
+- **niyutta** vacila en el Taddhita entre «ocupado en» (§351) y
+  «dedicado a» (§353, §399); unificar con el IEBH.
+- **tappakativacana**: la entrada de la cosecha s. 57 dice «hecho de
+  eso»; el capítulo publicado dice «expresión de la naturaleza de eso»
+  con la nota 21 («Hecho de/con eso») como puente. Armonizar.
