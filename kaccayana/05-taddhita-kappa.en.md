@@ -803,7 +803,7 @@ Examples:
 Likewise:
 
 1. Kuñjo yassa atthi, tasmiṃ vā vijjatī ti **kuñjaro** (there is a big jaw of/in it, or [a big jaw] exists in it: an elephant).
-2. Muggā yassa atthi, tasmiṃ vā vijjatī ti **muggaro** (there are green peas of/in him, or [green peas] exist in him: one who has green peas).
+2. Muggā yassa santi, tasmiṃ vā vijjantī ti **muggaro** (there are green peas of/in him, or [green peas] exist in him: one who has green peas).
 3. Mukhaṃ yassa atthi, tasmiṃ vā vijjatī ti **mukharo** (there is a mouth of/in him, or [a mouth] exists in him: a talkative one).
 4. Susī yassa atthi, tasmiṃ vā vijjatī ti **susiro** (there is a hole of/in it, or [a hole] exists in it: that which has a hole).
 5. Sīsaṃ yassa atthi, tasmiṃ vā vijjatī ti **sīsaro** (there is a head of/in him: one who has a head), suko yassa atthi, tasmiṃ vā vijjatī ti **sukaro** (there is an arrow of/in him: one who has arrows), suṅko yassa atthi, tasmiṃ vā vijjatī ti **suṅkaro** (there is tax of/in him: one who has taxes/a ruler).

@@ -58,8 +58,10 @@ gaṇana del mismo día dice «En la enumeración».)
 - §389: dasadasakā — **RESUELTO EL 2026-09-13**: el IEBH fijó «(hombres
   que tienen diez décadas)», sin el añadido «[de años]», en las dos
   ediciones.
-- §367: el viggaha «Muggā yassa **atthi** … vijjatī» lleva sujeto plural;
-  el inglés de Nandisena imprime *santi / vijjanti*.
+- §367: muggaro — **RESUELTO EL 2026-09-13**: el IEBH fijó el viggaha en
+  plural, «Muggā yassa santi, tasmiṃ vā vijjantī ti», como imprime el
+  inglés de Nandisena. Aplicado en las dos ediciones. Del §3 sólo queda
+  la glosa «familia» de §349.
 
 ## 4. Notas de otros tratados: ¿traducirlas?
 
