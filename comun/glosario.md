@@ -212,7 +212,7 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *bhāva* | estado | Coherente con bhāvaniddesa («expresión que indica estado»). | Taddhita, IEBH 2026-09-13 — Kacc. §360–§362 |
 | *visesa* | distinción | | Taddhita, IEBH 2026-09-13 — Kacc. §363 |
 | *ṭhāna* | según contexto: «causa» (sentido del taddhita) o «lugar (apropiado)» | «Causa» en §356 y §358 («madanassa ṭhānaṃ madaniyaṃ»), siguiendo el inglés de Nandisena («cause»); «en el lugar apropiado» (ṭhāne) en §401–§402. Como liṅga, decide el contexto. | Taddhita, IEBH 2026-09-13 — Kacc. §356 |
-| *saṅkyāpūraṇa* | ordinal | Lit. «que completa el número» (nota 22 del capítulo). La fuente vacila entre «saṅkyā» y «saṅkhyā»; ver `docs/capitulo-5/pendientes-taddhita.md` §1. | Taddhita, IEBH 2026-09-13 — Kacc. §373 |
+| *saṅkhyāpūraṇa* | ordinal | Lit. «que completa el número» (nota 22 del capítulo). La fuente vacila entre «saṅkyā» y «saṅkhyā»; el IEBH unificó a «saṅkhyā» el 2026-09-13. | Taddhita, IEBH 2026-09-13 — Kacc. §373 |
 | *pūraṇa / pūraṇī* | compleción; la que completa | Femenino en los días lunares: «ekādasannaṃ pūraṇī ekādasī». | Taddhita, IEBH 2026-09-13 — Kacc. §373, §375 |
 | *ekasesa* | queda uno solo | «Puriso ca puriso ca purisā». | Taddhita, IEBH 2026-09-13 — Kacc. §388, §389 |
 | *nipātana* | sin traducir: la formación directa por sutta comodín | Uno de los «cuatro suttas universales» (nota 34 del Taddhita); cf. §51 del Sandhi. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §392 |

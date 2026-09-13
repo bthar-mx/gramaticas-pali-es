@@ -946,9 +946,9 @@ Likewise:
 
 ---
 
-**373\. 406\. Saṅkyāpūraṇe mo (802).** \[Saṅkyāpūraṇe \+ mo, 2\]
+**373\. 406\. Saṅkhyāpūraṇe mo (802).** \[Saṅkhyāpūraṇe \+ mo, 2\]
 
-Saṅkyāpūraṇatthe **ma**paccayo hoti.
+Saṅkhyāpūraṇatthe **ma**paccayo hoti.
 
 Pañcannaṃ pūraṇo pañcamo (A. i, 9). Evaṃ sattamo (A. i, 12), aṭṭhamo (A. i, 14), navamo (A. i, 16), dasamo (A. i, 19).
 
@@ -975,7 +975,7 @@ Likewise:
 
 **374\. 408\. Sa chassa vā (804).** \[Sa \+ chassa \+ vā, 3\]
 
-**Cha**ssa **sa**kārādeso hoti vā saṅkyāpūraṇatthe.
+**Cha**ssa **sa**kārādeso hoti vā saṅkhyāpūraṇatthe.
 
 Channaṃ pūraṇo saṭṭho, chaṭṭho (A. i, 10) vā.
 
@@ -995,7 +995,7 @@ Examples:
 
 **375\. 412\. Ekādito dasass’ ī (805).** \[Eka-ādito \+ dasassa \+ ī, 3\]
 
-**Ekā**dito **dasa**ssa ante **ī**paccayo hoti vā saṅkyāpūraṇatthe.
+**Ekā**dito **dasa**ssa ante **ī**paccayo hoti vā saṅkhyāpūraṇatthe.
 
 Eko ca dasa ca ekādasa, ekādasannaṃ pūraṇī ekādasī. Pañca ca dasa ca pañcadasa, pañcadasannaṃ pūraṇī pañcadasī (A. i, 142-3). Cattāro ca dasa ca catuddasa, catuddasannaṃ pūraṇī cātuddasī (A. i, 142-3).
 
@@ -1041,7 +1041,7 @@ Examples:
 
 **377\. 0\. Ante niggahitañ ca (807).** \[Ante \+ niggahitaṃ \+ ca, 3\]
 
-Tāsaṃ saṅkyānaṃ ante niggahitāgamo hoti.
+Tāsaṃ saṅkhyānaṃ ante niggahitāgamo hoti.
 
 Pañcadasiṃ (A. i, 142), cātuddasiṃ (A. i, 142).
 
@@ -1061,7 +1061,7 @@ Examples:
 
 **378\. 414\. Ti ca (808).** \[Ti \+ ca, 2\]
 
-Tāsaṃ saṅkyānaṃ ante **ti**kārāgamo hoti.
+Tāsaṃ saṅkhyānaṃ ante **ti**kārāgamo hoti.
 
 Vīsati (M. ii, 257), tiṃsati.
 
@@ -1130,13 +1130,13 @@ Examples:
 
 ---
 
-**381\. 254\. Ekādito dassa**[^23] **ra saṅkyāne (812).** \[Eka-ādito \+ dassa \+ ra \+ saṅkyāne, 4\]
+**381\. 254\. Ekādito dassa**[^23] **ra saṅkhyāne (812).** \[Eka-ādito \+ dassa \+ ra \+ saṅkhyāne, 4\]
 
-**Ekā**dito **dasa**ssa **da**kārassa **ra**kāro hoti vā saṅkyāne.
+**Ekā**dito **dasa**ssa **da**kārassa **ra**kāro hoti vā saṅkhyāne.
 
 Ekārasa, ekādasa; bārasa, dvādasa.
 
-**Saṅkyāne** ti kimatthaṃ? Dvādasāyatanāni.
+**Saṅkhyāne** ti kimatthaṃ? Dvādasāyatanāni.
 
 ---
 
@@ -1151,19 +1151,19 @@ Examples:
 1. **Ekārasa**, **ekādasa** (eleven).
 2. **Bārasa**, **dvādasa** (twelve).
 
-What is the purpose of saying “saṅkyāne” (in the numbers)? [To prevent the operation of this rule in cases like] “dvādasāyatanāni” (the twelve spheres), [which is not pure numeration].
+What is the purpose of saying “saṅkhyāne” (in the numbers)? [To prevent the operation of this rule in cases like] “dvādasāyatanāni” (the twelve spheres), [which is not pure numeration].
 
 ---
 
 **382\. 259\. Aṭṭhādito ca (813).** \[Aṭṭha-ādito \+ ca, 2\]
 
-**Aṭṭha** icc evamādito ca **dasa**saddassa **da**kārassa **ra**kārādeso hoti vā saṅkyāne.
+**Aṭṭha** icc evamādito ca **dasa**saddassa **da**kārassa **ra**kārādeso hoti vā saṅkhyāne.
 
 Aṭṭhārasa (Abh. ii, 92), aṭṭhadasa.
 
 **Aṭṭhādito** ti kimatthaṃ? Pañcadasa, soḷasa (Abh. ii, 93).[^24]
 
-**Saṅkyāne** ti kimatthaṃ? Aṭṭhadasiko.
+**Saṅkhyāne** ti kimatthaṃ? Aṭṭhadasiko.
 
 ---
 
@@ -1179,17 +1179,17 @@ Examples:
 
 What is the purpose of saying “aṭṭhādito” (after “aṭṭha” and others)? [To prevent the operation of this rule in cases like] “pañcadasa” (fifteen) and “soḷasa” (sixteen), [which do not follow “aṭṭha” and others].
 
-What is the purpose of saying “saṅkyāne” (in the numbers)? [To prevent the operation of this rule in cases like] “aṭṭhadasiko” (the house that has eighteen posts), [which is not pure numeration].
+What is the purpose of saying “saṅkhyāne” (in the numbers)? [To prevent the operation of this rule in cases like] “aṭṭhadasiko” (the house that has eighteen posts), [which is not pure numeration].
 
 ---
 
 **383\. 253\. Dv’-ek’-aṭṭhānam ākāro vā (815).** \[Dvi-eka-aṭṭhānaṃ \+ ākāro \+ vā, 3\]
 
-**Dvi eka aṭṭha** icc etesam anto **ā**kāro hoti vā saṅkyāne.
+**Dvi eka aṭṭha** icc etesam anto **ā**kāro hoti vā saṅkhyāne.
 
 Dvādasa (Abh. ii, 74), ekādasa (Abh. ii, 76), aṭṭhārasa (Abh. ii, 92).
 
-**Saṅkyāne** ti kimatthaṃ? Dvidanto, ekadanto,[^25] ekacchanno, aṭṭhatthambho.
+**Saṅkhyāne** ti kimatthaṃ? Dvidanto, ekadanto,[^25] ekacchanno, aṭṭhatthambho.
 
 ---
 
@@ -1203,13 +1203,13 @@ Examples:
 
 1. **Dvādasa** (twelve), **ekādasa** (eleven), **aṭṭhārasa** (eighteen).
 
-What is the purpose of saying “saṅkyāne” (in the numbers)? [To prevent the operation of this rule in cases like] “dvidanto” (the one with two tusks), “ekadanto” (the one with one tusk), “ekacchanno” (the one with one roof), “aṭṭhatthambho” (the one with eight posts), [which are not pure numeration].
+What is the purpose of saying “saṅkhyāne” (in the numbers)? [To prevent the operation of this rule in cases like] “dvidanto” (the one with two tusks), “ekadanto” (the one with one tusk), “ekacchanno” (the one with one roof), “aṭṭhatthambho” (the one with eight posts), [which are not pure numeration].
 
 ---
 
 **384\. 407\. Catu-cchehi tha ṭhā (816).** \[Catu-cchehi \+ tha-ṭhā, 2\]
 
-**Catu** **cha** icc etehi **tha** **ṭha** icc ete paccayā honti saṅkyāpūraṇatthe.
+**Catu** **cha** icc etehi **tha** **ṭha** icc ete paccayā honti saṅkhyāpūraṇatthe.
 
 Catuttho (Khu. ix, 51), chaṭṭho (Khu. ix, 55).
 
@@ -1391,7 +1391,7 @@ Examples:
 
 **391\. 423\. Yad anupapannā nipātanā sijjhanti (830).** \[Yaṃ \+ anupapannā \+ nipātanā \+ sijjhanti, 4\]
 
-Ye saddā aniddiṭṭhalakkhaṇā[^30] akkhara-pada-byañjanato, itthi-puma-napuṃsakaliṅgato, nām’-upasagga-nipātato, abyayībhāvasamāsa-taddhit’-ākhyātato,[^31] gaṇana-saṅkyā-kāla-kāraka-ppayoga-saññāto, sandhi-pakati-vuddhi-lop’-āgama-vikāra-viparītato, vibhattivibhajanato ca, te nipātanā sijjhanti.
+Ye saddā aniddiṭṭhalakkhaṇā[^30] akkhara-pada-byañjanato, itthi-puma-napuṃsakaliṅgato, nām’-upasagga-nipātato, abyayībhāvasamāsa-taddhit’-ākhyātato,[^31] gaṇana-saṅkhyā-kāla-kāraka-ppayoga-saññāto, sandhi-pakati-vuddhi-lop’-āgama-vikāra-viparītato, vibhattivibhajanato ca, te nipātanā sijjhanti.
 
 ---
 
@@ -1435,7 +1435,7 @@ Gaṇane pariyāpannassa **dasa**dasakassa **sataṃ** hoti, **sata**dasakassa *
 
 Sataṃ (D. i, 12-3), sahassaṃ (JA. i, 138).
 
-Dvikādīnaṃ taduttarapadānañ ca nippajjante yathāsaṅkyaṃ. Satassa dvikaṃ (tad idaṃ hoti) dvisataṃ. Evaṃ tisataṃ, catusataṃ, pañcasataṃ, chasataṃ, sattasataṃ, aṭṭhasataṃ, navasataṃ, dasasataṃ, sahassaṃ hoti.
+Dvikādīnaṃ taduttarapadānañ ca nippajjante yathāsaṅkhyaṃ. Satassa dvikaṃ (tad idaṃ hoti) dvisataṃ. Evaṃ tisataṃ, catusataṃ, pañcasataṃ, chasataṃ, sattasataṃ, aṭṭhasataṃ, navasataṃ, dasasataṃ, sahassaṃ hoti.
 
 ---
 
@@ -1455,7 +1455,7 @@ And [the forms] of “dvika” (group of two) and others, and of the words that 
 
 **394\. 416\. Yāva taduttari**[^35] **dasaguṇitañ ca (833).** \[Yāva \+ taṃ-uttari \+ dasaguṇitaṃ \+ ca, 4\]
 
-Yāva tāsaṃ saṅkyānaṃ uttari[^36] dasaguṇitañ ca kātabbaṃ.
+Yāva tāsaṃ saṅkhyānaṃ uttari[^36] dasaguṇitañ ca kātabbaṃ.
 
 Taṃ yathā? Dasassa gaṇanassa dasaguṇitaṃ katvā sataṃ (D. i, 12-3) hoti, satassa dasaguṇitaṃ katvā sahassaṃ (JA. i, 138) hoti, sahassassa dasaguṇitaṃ katvā dasasahassaṃ hoti, dasasahassassa dasaguṇitaṃ katvā satasahassaṃ (D. i, 12-3) hoti, satasahassassa dasaguṇitaṃ katvā dasasatasahassaṃ hoti, dasasatasahassassa dasaguṇitaṃ katvā koṭi (Khu. iv, 305) hoti, koṭisatasahassassa sataguṇitaṃ katvā pakoṭi (AA. iii, 329) hoti. Evaṃ sesā pi yojetabbā.
 
@@ -1915,7 +1915,7 @@ What is the use of the name “vuddhi”? [To employ it in suttas like] “Vuddh
 
 [^21]:  Made of/with that.
 
-[^22]:  Saṅkyāpūraṇa: “that which completes the number”.
+[^22]:  Saṅkhyāpūraṇa: “that which completes the number”.
 
 [^23]:  Dasa (Sī, K).
 
