@@ -213,12 +213,12 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *bhāva* | estado | Coherente con bhāvaniddesa («expresión que indica estado»). | Taddhita, IEBH 2026-09-13 — Kacc. §360–§362 |
 | *visesa* | distinción | | Taddhita, IEBH 2026-09-13 — Kacc. §363 |
 | *ṭhāna* | según contexto: «causa» (sentido del taddhita) o «lugar (apropiado)» | «Causa» en §356 y §358 («madanassa ṭhānaṃ madaniyaṃ»), siguiendo el inglés de Nandisena («cause»); «en el lugar apropiado» (ṭhāne) en §401–§402. Como liṅga, decide el contexto. | Taddhita, IEBH 2026-09-13 — Kacc. §356 |
-| *saṅkhyāpūraṇa* | ordinal | Lit. «que completa el número» (nota 22 del capítulo). La fuente vacila entre «saṅkyā» y «saṅkhyā»; el IEBH unificó a «saṅkhyā» el 2026-09-13. | Taddhita, IEBH 2026-09-13 — Kacc. §373 |
+| *saṅkhyāpūraṇa* | ordinal | Lit. «que completa el número» (nota 23 del capítulo). La fuente vacila entre «saṅkyā» y «saṅkhyā»; el IEBH unificó a «saṅkhyā» el 2026-09-13. | Taddhita, IEBH 2026-09-13 — Kacc. §373 |
 | *pūraṇa / pūraṇī* | compleción; la que completa | Femenino en los días lunares: «ekādasannaṃ pūraṇī ekādasī». | Taddhita, IEBH 2026-09-13 — Kacc. §373, §375 |
 | *ekasesa* | queda uno solo | «Puriso ca puriso ca purisā». | Taddhita, IEBH 2026-09-13 — Kacc. §388, §389 |
 | *nipātana* | sin traducir: la formación directa por sutta comodín | Uno de los «cuatro suttas universales» (nota 34 del Taddhita); cf. §51 del Sandhi. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §392 |
 | *aneka* | multiplicidad | Anekatthe: «en el significado de multiplicidad». | Taddhita, IEBH 2026-09-13 — Kacc. §392 |
-| *gaṇana* | enumeración | Según el contexto también «numeral», «conteo» (nota del traductor 29 en §389 del Taddhita, primera aparición del término en la obra). | Taddhita, IEBH 2026-09-13 — Kacc. §389, §390, §391, §393, §394 |
+| *gaṇana* | enumeración | Según el contexto también «numeral», «conteo» (nota del traductor 30 en §389 del Taddhita, primera aparición del término en la obra). | Taddhita, IEBH 2026-09-13 — Kacc. §389, §390, §391, §393, §394 |
 | *vibhāga* | división | | Taddhita, IEBH 2026-09-13 — Kacc. §397 |
 | *pakāravacana* | expresión de modo | | Taddhita, IEBH 2026-09-13 — Kacc. §398, §399 |
 | *saṇakāraka* | con la letra indicativa ‘ṇ’ | «Paccaye saṇakārake» (verso de §352). | Taddhita, IEBH 2026-09-13 — Kacc. §352, §400 |
