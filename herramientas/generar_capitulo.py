@@ -178,22 +178,30 @@ CAPITULOS = {
         "titulo_en": "5-Secondary Derivative Chapter",
         "anterior": "4-Samāsa-Kappa",
         "siguiente": "6-Ākhyāta-Kappa",   # en preparación: botón inactivo
-        "version": "1.0",
+        "version": "1.1",
         "version_fecha": "2026-09-13",
         "version_nota": "Primera edición: §344–§405, los 62 suttas del "
                         "Taddhita-kappa (octava sección del Nāma-kappa), "
-                        "revisados por el IEBH, con las 248 referencias "
-                        "canónicas de la edición base restituidas por "
-                        "reconstrucción y las 52 notas.",
-        "version_en": "1.0",
+                        "con las 248 referencias canónicas de la edición "
+                        "base restituidas por reconstrucción y las 54 "
+                        "notas. La 1.1 recoge la revisión del IEBH: "
+                        "terminología unificada —gaṇana «enumeración», "
+                        "samūha «agregación», la grafía «saṅkhyā»—, §390 "
+                        "releído según Nandisena (miembro precedente y "
+                        "siguiente), y notas nuevas del traductor en §349 "
+                        "y §389, con los pasajes de otros tratados "
+                        "traducidos.",
+        "version_en": "1.1",
         "version_fecha_en": "2026-09-13",
         "version_nota_en": "First English edition: Bhikkhu Nandisena's "
                            "translation with the apparatus of the Spanish "
                            "edition (numbered examples with the derived "
                            "form in bold, word-count breakdowns after "
                            "Thitzana, the 248 canonical references and "
-                           "the 52 notes) and the fixed glossary for the "
-                           "technical terms.",
+                           "the 54 notes) and the fixed glossary for the "
+                           "technical terms. Version 1.1 carries the "
+                           "IEBH's review, in step with the Spanish "
+                           "edition.",
     },
 }
 
