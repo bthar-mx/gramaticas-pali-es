@@ -1925,7 +1925,7 @@ What is the use of the name “vuddhi”? [To employ it in suttas like] “Vuddh
 
 [^26]:  Dvidaṇḍo, ekadaṇḍo (K).
 
-[^27]:  Dudi-ādesā honti. Durattaṃ, dirattaṃ (K). Dutiādesā honti. durattaṃ, tirattaṃ (Sī, K). Apiggahaṇena aññatthā pi dvisaddassa duādeso hoti, ca-saddena di ca. Dve rattiyo durattaṃ, duvidhaṃ, duvaṅgaṃ, dirattaṃ, diguṇaṃ, digu (Rū). Tesu padarūpasiddhipāṭṭho va sundaro. Tena saṃsanditvā ayam pi Kaccāyanavuttipāṭho visodhito. (There are the substitutions ‘du’ and ‘di’: durattaṃ, dirattaṃ (K). There are the substitutions ‘du’ and ‘ti’: durattaṃ, tirattaṃ (Sī, K). By taking “api”, “dvi” is substituted by ‘du’ also elsewhere, and with the word “ca”, also by ‘di’: dve rattiyo → durattaṃ, duvidhaṃ, duvaṅgaṃ, dirattaṃ, diguṇaṃ, digu (Rū). Of these, the reading of the Padarūpasiddhi is the best; collated with it, this reading of the Kaccāyanavutti has also been emended.)
+[^27]:  Dudi-ādesā honti. Durattaṃ, dirattaṃ (K). Dutiādesā honti. durattaṃ, tirattaṃ (Sī, K). Apiggahaṇena aññatthā pi dvisaddassa duādeso hoti, ca-saddena di ca. Dve rattiyo durattaṃ, duvidhaṃ, duvaṅgaṃ, dirattaṃ, diguṇaṃ, digu (Rū). Tesu padarūpasiddhipāṭṭho va sundaro. Tena saṃsanditvā ayam pi Kaccāyanavuttipāṭho visodhito. (Translation of the Rūpasiddhi passage and of the closing remark: By taking “api”, “dvi” is substituted by ‘du’ also elsewhere, and with the word “ca”, also by ‘di’: dve rattiyo → durattaṃ, duvidhaṃ, duvaṅgaṃ, dirattaṃ, diguṇaṃ, digu (Rū). Of those [readings], that of the Padarūpasiddhi is the best; collated with it, this reading of the Kaccāyanavutti has also been emended.)
 
 [^28]:  If one adds a half it becomes four.
 
@@ -1961,7 +1961,7 @@ What is the use of the name “vuddhi”? [To employ it in suttas like] “Vuddh
 
 [^44]:  Ārissaṃ (Sī).
 
-[^45]:  Ājjavaṃ (K). Ujuno bhāvo ajjavaṃ, pa, saṃyoge ādirassattaṅ ca (Rū. 380). Sogatamatavasena pana “ujuno bhāvo ajjavo” ti ākāro rassam āpajjati, so ca saddapulliṅgattaṃ yebhuyyena (Sad. 857). (Ājjavaṃ (K). “The state of the straight is ajjavaṃ” —etc.—, and before a conjunct [consonant] there is also shortening of the initial [vowel] (Rū. 380). According to the Buddhist (sogata) doctrine, in “ujuno bhāvo ajjavo” the [vowel] ‘ā’ is shortened, and that [word] is generally of masculine gender (Sad. 857).)
+[^45]:  Ājjavaṃ (K). Ujuno bhāvo ajjavaṃ, pa, saṃyoge ādirassattaṅ ca (Rū. 380). Sogatamatavasena pana “ujuno bhāvo ajjavo” ti ākāro rassam āpajjati, so ca saddapulliṅgattaṃ yebhuyyena (Sad. 857). (Translation of the Rūpasiddhi and Saddanīti passages: “The state of the straight is ajjavaṃ” —etc.—, and before a conjunct [consonant] there is also shortening of the initial [vowel] (Rū. 380). According to the Buddhist (sogata) doctrine, in “ujuno bhāvo ajjavo” the [vowel] ‘ā’ is shortened, and that [word] is generally of masculine gender (Sad. 857).)
 
 [^46]:  Opanayiko va opaneyyiko (Sad. 237-piṭṭhe).
 
@@ -1973,7 +1973,7 @@ What is the use of the name “vuddhi”? [To employ it in suttas like] “Vuddh
 
 [^50]:  Digu digunaṃ (Sī).
 
-[^51]:  “Ā-ī-ūvuddhi cā” ti pāṭho sīhaḷapotthake natthi, tatthā pi tattha “oḷumpiko” ti padassa pacchā “a i u iti avuddhi. Abhidhammiko, vinateyyo, uḷumpiko” ti pāṭho atthi. Padarūpasiddhiyam pi “casaddaggahaṇam avuddhi sampiṇḍanatthaṃ, avadhāraṇatthaṃ vā” ti vuttaṃ. (The reading “ā-ī-ūvuddhi ca” is not in the Sinhalese book; there, after the word “oḷumpiko”, stands the reading “‘a’, ‘i’, ‘u’ are non-vuddhi: abhidhammiko, vinateyyo, uḷumpiko”. In the Padarūpasiddhi it is also said: “the mention of the word ‘ca’ is for collecting (sampiṇḍana) the non-vuddhi, or for delimiting (avadhāraṇa)”.)
+[^51]:  “Ā-ī-ūvuddhi cā” ti pāṭho sīhaḷapotthake natthi, tatthā pi tattha “oḷumpiko” ti padassa pacchā “a i u iti avuddhi. Abhidhammiko, vinateyyo, uḷumpiko” ti pāṭho atthi. Padarūpasiddhiyam pi “casaddaggahaṇam avuddhi sampiṇḍanatthaṃ, avadhāraṇatthaṃ vā” ti vuttaṃ. (Translation of the Padarūpasiddhi passage: In the Padarūpasiddhi it is also said: “the mention of the word ‘ca’ is for collecting (sampiṇḍana) the non-vuddhi, or for delimiting (avadhāraṇa)”.)
 
 [^52]:  Purījanapadesu jātā porījānapadā (Sī).
 
