@@ -206,3 +206,50 @@ desviaciones en el §8 del memo de inglés
 `/en/kaccayana/taddhita/` con el botón EN/ES; paridad de la página
 comprobada (419 referencias, 52 notas, 95 listas en ambas). Sin revisar
 por el IEBH, como los capítulos 2–4.
+
+---
+
+## 9. CIERRE DEL 2026-09-13: LA REVISIÓN DEL CAPÍTULO 5, APLICADA
+
+Tras montar el capítulo, el IEBH fue resolviendo en la misma sesión casi
+todo lo que quedaba pendiente. Aplicado en **las dos ediciones**, con
+recomposición byte a byte del conversor y regeneración tras cada cambio:
+
+- **§390** reescrito por el IEBH: «catu» es el *miembro precedente*, el
+  ‘ca’ está al comienzo del *miembro siguiente* (lectura de Nandisena).
+- **Grafía**: «saṅkyā» → **saṅkhyā** (23 sustituciones por edición),
+  también en glosario y concordancia. Corrección sobre la base impresa.
+- **gaṇana** → **«enumeración»**, con nota del traductor en la primera
+  aparición de la obra (§389): «según el contexto, también “numeral”,
+  “conteo”, etc.».
+- **samūha** → **«agregación»** (EN «aggregation»), en pareja con
+  samuccaya = «colección».
+- **§389** «(hombres que tienen diez décadas)», sin «[de años]».
+- **§367** viggaha en plural: «Muggā yassa santi, tasmiṃ vā vijjantī ti».
+- **§349**: «familia» confirmado —el neutro remite a *kula*—, con nota
+  del traductor (nota 2; el resto corrió a 3–54).
+- **Notas de otros tratados traducidas**, con el alcance acotado por el
+  IEBH: **se traducen los pasajes de otros tratados, no las lecturas
+  variantes**; las notas mixtas llevan el paréntesis rotulado.
+
+**Glosario**: 25 términos del capítulo, más gaṇana y samūha (223
+normativos). En discusión quedan *niyutta* y *tappakativacana*.
+
+**Edición inglesa** del capítulo publicada en `/en/kaccayana/taddhita/`,
+construida por sustitución sobre el español —pāḷi y referencias
+idénticos byte a byte— y **sin revisar**, como los capítulos 2–4. Su
+registro de desviaciones está en el §8 del memo de inglés.
+
+**Lo que queda del capítulo 5** está en
+`docs/capitulo-5/pendientes-taddhita.md`: las siglas literales (§5), el
+documento de los cuatro suttas universales (§6), el «0» del Rūpasiddhi
+en §377 (§7), y una pregunta de criterio sobre la nota 27.
+
+**Versión**: el capítulo pasó a **1.1** en las dos ediciones al cerrar la
+revisión (la 1.0 fue el montaje de esa misma mañana; su nota decía 52
+notas y ya son 54). La nota de versión resume lo que la 1.1 recoge.
+
+**Estado**: todo confirmado y publicado por el IEBH; el sitio sirve las
+dos ediciones al día. El capítulo 6 (Ākhyāta) sigue como dice el §6 de
+este briefing: chat nuevo, fuente por subir.
+
