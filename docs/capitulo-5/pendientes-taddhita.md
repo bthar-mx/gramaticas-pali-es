@@ -34,16 +34,15 @@ Nandisena) y verificadas línea a línea. Lo de abajo es lo que quedó
   §373/§381 frente a vuttis de §379/§385/§395). Hoy el maestro conserva
   cada literal. ¿Se unifica? ¿En qué dirección?
 
-## 2. §390, upapada — PROBABLE ERRATA DE TRADUCCIÓN
+## 2. §390, upapada — RESUELTO EL 2026-09-13 POR EL IEBH
 
-El título español dice que ‘tu’ se elide de «catu» como «la parte
-**siguiente**», pero *upapada* está fijado en el glosario como «miembro
-**precedente**», y en cuddasa/catuddasa «catu» precede. Además, la
-traducción del ‘ca’ como «parte inicial **de la palabra**» (sin «del
-miembro siguiente») coincide con la variante del Rūpasiddhi que registra
-la propia nota 30 («Padādicakārassa (Rū)»), no con el texto de Nandisena
-(«uttarapadādi-»). Si el IEBH mantiene esa lectura, merece nota que lo
-diga; si fue descuido, corregir a «miembro precedente».
+El IEBH reescribió el título, la vutti y el pasaje de «api»: «catu» es el
+**miembro precedente** y el ‘ca’ «está al comienzo del **miembro
+siguiente**», es decir, la lectura de Nandisena («uttarapadādi-»), con la
+variante del Rūpasiddhi visible en la nota 30. Aplicado en las dos
+ediciones. De paso, la vutti dice ahora «En numerales» para gaṇana, lo
+que inclina la unificación pendiente del §1 hacia «numerales» (§391
+«conteo» y §393 «enumeración» siguen sin tocar, a la espera del IEBH).
 
 ## 3. Glosas que son interpretación del IEBH (confirmar)
 
