@@ -147,3 +147,49 @@ nada se edita en `site/` salvo `pali.css`, `pali.js` y los SVG; lo de
 Thitzana se señala como suyo y su flecha va al revés; ante duda,
 `<!-- DUDA -->`; **proponer y verificar, nunca afirmar**; el briefing se
 escribe cuando ya no se va a tocar nada más.
+
+---
+
+## 8. CONTINUACIÓN DEL 2026-09-13: EL CAPÍTULO 5, MONTADO
+
+La revisión del IEBH volvió como `5-Taddhita-Kappa.md` (subida al chat,
+byte a byte) y esta continuación de la sesión la dejó en el sitio:
+
+1. **Maestro**: `docs/5. Taddhita-Kappa.md` = revisión del IEBH +
+   correcciones mecánicas aprobadas ese día + **248 referencias
+   canónicas reinyectadas** desde la fuente Nandisena (literales) y
+   verificadas línea a línea (207 líneas pāḷi, 0 sin casar). El pāḷi se
+   comprobó mecánicamente contra la fuente con las correcciones
+   aceptadas como únicas diferencias admitidas.
+2. **Conversor**: `herramientas/convertir_taddhita.py`, calco del de
+   Samāsa; recomposición byte a byte OK; 62 suttas, 52 notas, 58 con
+   tercer bloque (§391, §394, §403 y §404 quedan en dos, que es su
+   naturaleza), 95 listas.
+3. **Montaje**: entrada `05-taddhita-kappa` en `CAPITULOS`,
+   `DETALLE[5]` en `generar_indices.py`, capítulo 5 en
+   `comun/concordancia.json` (62 suttas; el Rūpasiddhi de §377 va como
+   `0`, literal). `generar_todo.py` en verde: 5 de 8 capítulos, 405
+   suttas; la tarjeta del índice quedó viva sola.
+4. **Sin edición inglesa**: el aviso «sin inglés (1)» del índice es el
+   esperado; el capítulo 5 no tiene maestro `.en.md` todavía.
+
+**Las decisiones pendientes de la revisión viven en
+`docs/capitulo-5/pendientes-taddhita.md`** (gaṇana en tres formas, el
+upapada de §390 —probable errata—, las glosas «familia», las siglas
+literales reinyectadas, el «0» de §377, las notas de otros tratados por
+traducir). La nota 34 perdió su enlace privado de Google (decisión de
+esta sesión, registrada allí).
+
+**Avería heredada, no de este capítulo**: cuando una nota al pie
+contiene una referencia §N, el generador la enlaza también dentro del
+atributo `data-tip` y anida un `<a>` dentro de otro (malforma el
+atributo). Ya ocurre en el Nāma (12 casos) y en el Sandhi (5); el
+Taddhita añade 1 (nota 34). Arreglarlo es cosa de
+`generar_capitulo.py`, no de los maestros.
+
+**El glosario del capítulo 5 sigue pendiente** (decisión del IEBH:
+primero el sitio, después el glosario). Ojo: varias propuestas de la
+sesión 25 ya entraron por otras vías (apacca, assatthi, parimāṇa;
+taddhita = «derivado secundario» quedó fijado en la sesión 59); la
+lista definitiva se compila contra el glosario de hoy, no contra las
+tablas de agosto.
