@@ -60,6 +60,7 @@ DETALLE = {
     2: "§52–§270, en cinco kaṇḍas.",
     3: "§271–§315, sexta sección del Nāma-kappa.",
     4: "§316–§343, séptima sección del Nāma-kappa.",
+    5: "§344–§405, octava sección del Nāma-kappa.",
 }
 
 OBRAS = [

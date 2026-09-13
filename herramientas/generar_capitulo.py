@@ -148,7 +148,7 @@ CAPITULOS = {
         "titulo_es": "4-Capítulo de compuestos",
         "titulo_en": "4-Compound Chapter",
         "anterior": "3-Kāraka-Kappa",
-        "siguiente": "5-Taddhita-Kappa",   # en preparación: botón inactivo
+        "siguiente": "5-Taddhita-Kappa",
         "version": "1.0",
         "version_fecha": "2026-09-06",
         "version_nota": "Primera edición: §316–§343, los 28 suttas del "
@@ -166,6 +166,25 @@ CAPITULOS = {
                            "the 99 canonical references and the 21 notes) "
                            "and the fixed glossary for the names of the "
                            "compounds.",
+    },
+    "05-taddhita-kappa": {
+        "slug": "taddhita",
+        "obra": "Kaccāyana-Byākaraṇaṃ",
+        "obra_sub": "Gramática de Kaccāyana",
+        "obra_slug": "kaccayana",
+        "num": 5,
+        "titulo_pali": "5-Taddhita-Kappa",
+        "titulo_es": "5-Capítulo de derivados secundarios",
+        "titulo_en": "5-Secondary Derivative Chapter",
+        "anterior": "4-Samāsa-Kappa",
+        "siguiente": "6-Ākhyāta-Kappa",   # en preparación: botón inactivo
+        "version": "1.0",
+        "version_fecha": "2026-09-13",
+        "version_nota": "Primera edición: §344–§405, los 62 suttas del "
+                        "Taddhita-kappa (octava sección del Nāma-kappa), "
+                        "revisados por el IEBH, con las 248 referencias "
+                        "canónicas de la edición base restituidas por "
+                        "reconstrucción y las 52 notas.",
     },
 }
 
