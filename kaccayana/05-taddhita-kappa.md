@@ -803,7 +803,7 @@ Ejemplos:
 Así:
 
 1. Kuñjo yassa atthi, tasmiṃ vā vijjatī ti **kuñjaro** (hay gran mandíbula de/en ese, o en ese existe \[gran mandíbula\]: el elefante).  
-2. Muggā yassa atthi, tasmiṃ vā vijjatī ti **muggaro** (hay guisantes de/en ese, o en ese hay \[guisantes\]: uno que tiene guisantes).  
+2. Muggā yassa santi, tasmiṃ vā vijjantī ti **muggaro** (hay guisantes de/en ese, o en ese hay \[guisantes\]: uno que tiene guisantes).  
 3. Mukhaṃ yassa atthi, tasmiṃ vā vijjatī ti **mukharo** (hay boca de/en ese, o en ese existe \[boca\]: el locuaz).  
 4. Susī yassa atthi, tasmiṃ vā vijjatī ti **susiro** (hay agujero de/en ese, o en ese existe \[agujero\]: eso que tiene un agujero).  
 5. Sīsaṃ yassa atthi, tasmiṃ vā vijjatī ti **sīsaro** (hay cabeza de/en ese, o en ese hay \[cabeza\]: uno que tiene cabeza), suko yassa atthi, tasmiṃ vā vijjatī ti **sukaro** (hay flecha de/en ese, o en ese hay \[flecha\]: uno que tiene flechas), suṅko yassa atthi, tasmiṃ vā vijjatī ti **suṅkaro** (hay de/en ese impuesto, o en ese hay \[impuesto\]: uno que tiene impuestos/rey/gobernante).  
