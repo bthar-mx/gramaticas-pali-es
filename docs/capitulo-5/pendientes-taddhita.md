@@ -55,8 +55,9 @@ gaṇana del mismo día dice «En la enumeración».)
 - §349: **sāmaṇeraṃ** «(familia de la novicia)» y **nāḷikeraṃ**
   «(familia del cocotero)» — Nandisena no glosa el neutro; «familia» no
   tiene fuente que lo respalde.
-- §389: «dasadasakā purisā (hombres que tienen diez decenas **[de
-  años]**)» — el inglés dice sólo «ten decads».
+- §389: dasadasakā — **RESUELTO EL 2026-09-13**: el IEBH fijó «(hombres
+  que tienen diez décadas)», sin el añadido «[de años]», en las dos
+  ediciones.
 - §367: el viggaha «Muggā yassa **atthi** … vijjatī» lleva sujeto plural;
   el inglés de Nandisena imprime *santi / vijjanti*.
 

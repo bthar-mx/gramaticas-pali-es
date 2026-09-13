@@ -1357,7 +1357,7 @@ Examples:
 
 What is the purpose of saying “asakiṃ” (not once only)? [To prevent the operation of this rule in cases like]: **dasa** (ten), where [the ten] occurs once only.
 
-What is the purpose of saying “gaṇane” (in the enumeration)? [To prevent the operation of this rule in cases like]: dasadasakā purisā (men who have ten decades [of years]), [which is not pure numeration].
+What is the purpose of saying “gaṇane” (in the enumeration)? [To prevent the operation of this rule in cases like]: dasadasakā purisā (men who have ten decades), [which is not pure numeration].
 
 ---
 
