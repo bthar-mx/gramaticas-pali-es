@@ -2732,6 +2732,65 @@
    "fuente": "IEBH, 2026-09-08 · revisión en la página",
    "sandhi": true,
    "componentes": "vā + iti"
+  },
+  {
+   "forma": "tassattho",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "tassa + attho"
+  },
+  {
+   "forma": "tenevāha",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "tena + eva + āha",
+   "nota": "Nota del revisor (verbatim): El motor no la señala y propone «teneva + iha». Compárese con «tenāha» = tena + āha, adjudicada el 2026-09-07."
+  },
+  {
+   "forma": "kāmasukhamanubhūtan”ti",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "kāmasukhaṃ + anubhūtaṃ + iti",
+   "nota": "Nota del revisor (verbatim): Son tres voces y dos junturas. El estudiante envió «kāmasukhaṃ + anubhūtanti», que recompone y cuya segunda voz está atestiguada, pero esconde la segunda juntura: «anubhūtanti» es a su vez «anubhūtaṃ + iti» (§40 · §31 · §11)."
+  },
+  {
+   "forma": "cettha",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "ca + ettha"
+  },
+  {
+   "forma": "yāvadeva",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "yāva + eva",
+   "nota": "Nota del revisor (verbatim): El motor no la señala y propone «yāvade + eva», que no es voz. La juntura es la 'd' insertada de §35 —«Ya-va-ma-da-na-ta-ra-lā c' āgamā»—, de modo que la secuencia es de dos pasos: «yāva d eva (§35); yāvadeva (§11)». Es el ejemplo más claro del capítulo de unos componentes que dejan ver la operación."
+  },
+  {
+   "forma": "pākaṭoyamatthoti",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "pākaṭo + ayaṃ + attho + iti",
+   "nota": "Nota del revisor (verbatim): Cuatro voces y tres junturas; el motor corta en dos, «pākaṭoyamattho + iti». Sólo la primera juntura se verifica sola —pākaṭo + ayaṃ → pākaṭoyaṃ, §10 · §13 · §11—: el plegado de las cuatro no recompone porque los intermedios «pākaṭoyaṃ» y «pākaṭoyamattho» no están atestiguados sueltos, que es el límite documentado de combinar_varias()."
+  },
+  {
+   "forma": "jātasseva",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "jātassa + eva"
+  },
+  {
+   "forma": "yattakānatthā",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": true,
+   "componentes": "yattakā + anatthā",
+   "nota": "Nota del revisor (verbatim): Las dos lecturas recomponen —«yattakāni + atthā», que es la del motor, y ésta—, de modo que ninguna regla las separa. Lo decide la edición, que imprime «yattakā’natthā»: el apóstrofo está donde la SEGUNDA voz perdió su vocal, y eso apunta a «anatthā». La marca del editor es el testigo, no el aforismo."
+  },
+  {
+   "forma": "hatthapādānachedanaṃ",
+   "fuente": "IEBH, 2026-09-14 · revisión del lote de un estudiante",
+   "sandhi": false,
+   "nota": "Nota del revisor (verbatim): No es juntura sino compuesto."
   }
  ]
 }
