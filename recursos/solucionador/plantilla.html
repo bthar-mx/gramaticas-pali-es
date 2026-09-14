@@ -1252,16 +1252,49 @@ const REV = { on: false, v: new Map(), obs: '', estudiante: false,
   /* null = no se ha preguntado todavía; '' = sin sesión; 'x@y' = con ella.
      Se pregunta una vez al encender el modo revisión, no en cada pintada. */
   sesion: null, papel: null,
+  /* número → texto del pasaje analizado. Cada veredicto guarda su número. */
+  pasajes: new Map(),
   /* ¿esta página ofrece revisión? (se abrió «?revision» alguna vez) */
   ofrecido: false };
 try {
   for(const [k, x] of JSON.parse(localStorage.getItem('rev-veredictos') || '[]'))
     REV.v.set(k, x);
+  for(const [k, x] of JSON.parse(localStorage.getItem('rev-pasajes') || '[]'))
+    REV.pasajes.set(Number(k), x);
   REV.obs = localStorage.getItem('rev-observaciones') || '';
 } catch(e){ /* sin almacenamiento: la revisión vive lo que la página */ }
 function revGuardar(){
   try { localStorage.setItem('rev-veredictos', JSON.stringify([...REV.v])); }
   catch(e){}
+  try { localStorage.setItem('rev-pasajes', JSON.stringify([...REV.pasajes])); }
+  catch(e){}
+}
+/* EL PASAJE VIAJA CON EL VEREDICTO (2026-09-14).
+
+   El .md no decía de qué texto salía cada veredicto, y la página lo tenía
+   delante: el pasaje está en la caja cuando se adjudica. Reconstruirlo
+   después cuesta caro —tres lotes seguidos hubo que rastrearlos a mano
+   contra el corpus, y dos no se recuperaron enteros—, y no siempre se puede:
+   el repositorio tiene listas de formas, no el texto corrido de los
+   comentarios.
+
+   Se guarda POR VEREDICTO y no «lo que haya ahora en la caja», porque el
+   tablero sobrevive al cambio de pasaje a propósito: un solo envío puede
+   abarcar varios —uno de los lotes abarcó cuatro— y sellar a los antiguos el
+   texto de hoy sería equivocarse con aplomo, que es peor que callar. Cada
+   ficha se queda con el suyo, igual que ya se queda con la señal y con la
+   primera lectura del día en que se registró.
+
+   Los textos distintos se guardan UNA vez en `REV.pasajes` y la ficha
+   apunta al número, de modo que veinte veredictos de un pasaje no lo copian
+   veinte veces. */
+function revPasaje(texto){
+  const t = (texto || '').trim();
+  if(!t) return null;
+  for(const [id, x] of REV.pasajes) if(x === t) return id;
+  const id = REV.pasajes.size + 1;
+  REV.pasajes.set(id, t);
+  return id;
 }
 function revBarra(voz, r){
   const v = REV.v.get(voz);
@@ -1398,9 +1431,13 @@ async function revFalta(){
 function revPoner(voz, dato){
   const r = resolver(voz);
   const l0 = (r.lecturas || [])[0] || {};
+  const caja = document.getElementById('texto');
   REV.v.set(voz, Object.assign({
     senal: r.senal || null,
     primera: (l0.componentes || []).join(' + '),
+    /* El pasaje del día, como la señal y la primera lectura: lo que la
+       página sabía cuando se adjudicó, no lo que sepa al exportar. */
+    pasaje: revPasaje(caja && caja.value),
     fecha: new Date().toISOString().slice(0, 10),
   }, dato));
   revGuardar();
@@ -1415,6 +1452,22 @@ function revMD(){
   L.push('    python3 herramientas/incorporar_adjudicaciones.py <este archivo> --fuente "IEBH, ' + fecha + ' · revisión en la página"');
   L.push('    python3 herramientas/generar_solucionador.py');
   L.push('    node nuestro/js/arnes_casos.js', '', '---', '');
+  /* Los pasajes, ANTES del primer veredicto y antes de las observaciones.
+     El sitio no es capricho: `partir()` del incorporador descarta cuanto
+     precede al primer «## N.» —«if cur is None: continue»— y «## Pasajes»
+     no casa con `^## \d+\.`, de modo que aquí no estorba. Puesto DESPUÉS,
+     sus líneas sangradas se leerían como pasos de la escalera del último
+     veredicto. */
+  const usados = new Set();
+  for(const [, v] of REV.v) if(v.pasaje) usados.add(v.pasaje);
+  if(usados.size){
+    L.push('## Pasajes analizados', '');
+    for(const [id, t] of REV.pasajes){
+      if(!usados.has(id)) continue;
+      L.push(`**Pasaje ${id}.**`, '', t, '');
+    }
+    L.push('---', '');
+  }
   if(REV.obs.trim()){
     /* Sin número en el encabezado: el incorporador sólo lee «## N. …»,
        así que las observaciones nunca se toman por una forma. */
@@ -1429,7 +1482,8 @@ function revMD(){
        tarjeta que el propio solucionador propuso. El incorporador sólo pide
        «## N. forma ·», de modo que lo que siga es libre. */
     L.push(`## ${i}. ${voz}  ·  señal ${v.senal || 'ninguna'}  ·  ${
-      v.falta ? 'registrada a mano por el revisor' : 'revisado en la página'}`);
+      v.falta ? 'registrada a mano por el revisor' : 'revisado en la página'}${
+      v.pasaje ? '  ·  pasaje ' + v.pasaje : ''}`);
     if(v.primera) L.push(`- **a)** ${v.primera} — la primera lectura del motor`);
     L.push('');
     L.push('VEREDICTO: ' + (v.t === 'no' ? 'no' : (v.t === 'primera' ? v.primera : v.comp)));
@@ -1496,6 +1550,7 @@ async function revEnviar(boton){
          IEBH, 2026-08-29: tras enviar, el botón seguía diciendo «Enviar 3
          veredictos» y las observaciones no se vaciaban). */
       REV.v.clear();
+      REV.pasajes.clear();
       REV.obs = '';
       revGuardar();
       try { localStorage.setItem('rev-observaciones', ''); } catch(err){}
@@ -1651,7 +1706,7 @@ $('out').addEventListener('click', e => {
       /* «Borrar todos» también vacía las observaciones (pedido del IEBH,
          2026-08-29): un texto que quedó de un envío hecho con la página
          vieja no tiene otra salida a mano. */
-      REV.v.clear(); REV.obs = ''; revGuardar();
+      REV.v.clear(); REV.pasajes.clear(); REV.obs = ''; revGuardar();
       try { localStorage.setItem('rev-observaciones', ''); } catch(err){}
       analizar();
     }
