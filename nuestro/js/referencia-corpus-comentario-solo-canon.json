@@ -4,12 +4,12 @@
  "dpd_filtro": true,
  "medidas": 9203,
  "en_alcance": 7178,
- "coincide": 6644,
+ "coincide": 6649,
  "cuenta": {
   "fuera_de_alcance": 2025,
-  "acuerdo": 5507,
-  "desacuerdo": 462,
-  "corte": 1137,
+  "acuerdo": 5513,
+  "desacuerdo": 457,
+  "corte": 1136,
   "silencio": 72
  },
  "filas": [
@@ -170828,6 +170828,11 @@
    "forma": "tenevāha",
    "mias": [
     [
+     "tena",
+     "eva",
+     "āha"
+    ],
+    [
      "teneva",
      "iha"
     ],
@@ -170892,7 +170897,8 @@
      "āha"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "taṇhamabbuyhāti",
@@ -191720,6 +191726,11 @@
    "forma": "tenevāha",
    "mias": [
     [
+     "tena",
+     "eva",
+     "āha"
+    ],
+    [
      "teneva",
      "iha"
     ],
@@ -191784,7 +191795,8 @@
      "āha"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "hadaye",
@@ -213644,6 +213656,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -213658,10 +213674,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -213781,7 +213793,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "natthi",
@@ -217049,6 +217061,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -217063,10 +217079,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -217186,7 +217198,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "isīti",
@@ -236272,6 +236284,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -236286,10 +236302,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -236409,7 +236421,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "appamattāya",
@@ -241916,16 +241928,16 @@
    "forma": "yāvadeva",
    "mias": [
     [
+     "yāva",
+     "eva"
+    ],
+    [
      "yāvade",
      "eva"
     ],
     [
      "yāvade",
      "iva"
-    ],
-    [
-     "yāva",
-     "eva"
     ],
     [
      "yāvā",
@@ -241949,7 +241961,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "parinibbānatthamidaṃ",
@@ -255025,6 +255037,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -255039,10 +255055,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -255162,7 +255174,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "pādapakkhālanahetu",
@@ -271617,6 +271629,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -271631,10 +271647,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -271754,7 +271766,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "taruṇappattā",
@@ -312198,6 +312210,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -312212,10 +312228,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -312335,7 +312347,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "kāraṇaṃ",
@@ -312628,6 +312640,11 @@
    "mias": [
     [
      "kāmasukhaṃ",
+     "anubhūtaṃ",
+     "iti"
+    ],
+    [
+     "kāmasukhaṃ",
      "anubhūtanti"
     ],
     [
@@ -312643,7 +312660,8 @@
      "abhūtanti"
     ]
    ],
-   "categoria": "corte"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "pacchānutāpinī",
@@ -312691,16 +312709,16 @@
    "forma": "yāvadeva",
    "mias": [
     [
+     "yāva",
+     "eva"
+    ],
+    [
      "yāvade",
      "eva"
     ],
     [
      "yāvade",
      "iva"
-    ],
-    [
-     "yāva",
-     "eva"
     ],
     [
      "yāvā",
@@ -312724,7 +312742,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 3
+   "rango": 1
   },
   {
    "forma": "atthādhigamattho",
@@ -313626,6 +313644,11 @@
    "forma": "tenevāha",
    "mias": [
     [
+     "tena",
+     "eva",
+     "āha"
+    ],
+    [
      "teneva",
      "iha"
     ],
@@ -313690,7 +313713,8 @@
      "āha"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "chedananti",
@@ -314222,6 +314246,11 @@
    "forma": "tenevāha",
    "mias": [
     [
+     "tena",
+     "eva",
+     "āha"
+    ],
+    [
      "teneva",
      "iha"
     ],
@@ -314286,7 +314315,8 @@
      "āha"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "nigacchatīti",
@@ -334446,6 +334476,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -334460,10 +334494,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -334583,7 +334613,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "bahukāni",
@@ -349588,6 +349618,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -349602,10 +349636,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -349725,7 +349755,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "majjhimo",
@@ -355399,6 +355429,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -355413,10 +355447,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -355536,7 +355566,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "sugatiyañca",
@@ -357334,6 +357364,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -357348,10 +357382,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -357471,7 +357501,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "nāmāsiṃ",
@@ -382618,6 +382648,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -382632,10 +382666,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -382755,7 +382785,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "vuttoyeva",
@@ -386551,6 +386581,11 @@
    "forma": "tenevāha",
    "mias": [
     [
+     "tena",
+     "eva",
+     "āha"
+    ],
+    [
      "teneva",
      "iha"
     ],
@@ -386615,7 +386650,8 @@
      "āha"
     ]
    ],
-   "categoria": "desacuerdo"
+   "categoria": "acuerdo",
+   "rango": 1
   },
   {
    "forma": "kodhaparetassa",
@@ -387628,6 +387664,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -387642,10 +387682,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -387765,7 +387801,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "ahañca",
@@ -406379,6 +406415,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -406393,10 +406433,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -406516,7 +406552,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "sadevake",
@@ -407259,6 +407295,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -407273,10 +407313,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -407396,7 +407432,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "āyantīti",
@@ -434988,6 +435024,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -435002,10 +435042,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -435125,7 +435161,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "garuke",
@@ -444252,6 +444288,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -444266,10 +444306,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -444389,7 +444425,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "sāranti",
@@ -527919,6 +527955,10 @@
    "forma": "tassattho",
    "mias": [
     [
+     "tassa",
+     "attho"
+    ],
+    [
      "ta",
      "assattho"
     ],
@@ -527933,10 +527973,6 @@
     [
      "tasi",
      "sattho"
-    ],
-    [
-     "tassa",
-     "attho"
     ],
     [
      "tassā",
@@ -528056,7 +528092,7 @@
     ]
    ],
    "categoria": "acuerdo",
-   "rango": 5
+   "rango": 1
   },
   {
    "forma": "bhavagate",
