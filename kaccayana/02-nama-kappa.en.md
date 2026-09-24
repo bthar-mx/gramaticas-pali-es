@@ -6020,7 +6020,7 @@ The consonants ‘t’, ‘l’, ‘ṇ’ and ‘d’ which have the letter ‘
 
 Examples:
 
-1. **Bāhussaccaṃ** \= bāhussuta \+ ya (the last ‘a’ is elided (§261); ‘t’ together with ‘y’ becomes ‘c’ (§269); ‘c’ is doubled (§28); ‘u’ becomes ‘a’ (§404)).
+1. **Bāhussaccaṃ** \= bahussuta \+ ṇya (‘a’ becomes ‘ā’ (§400); the last ‘a’ is elided (§261); ‘t’ together with ‘y’ becomes ‘c’ (§269); ‘c’ is doubled (§28); ‘u’ becomes ‘a’ (§404)).
 
 What is the purpose of saying “which have ‘ya’”? \[This sutta does not apply when there is no ‘ya’, such as in:\] Tiṇadalaṃ.
 
