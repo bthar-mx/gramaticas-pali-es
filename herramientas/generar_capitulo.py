@@ -68,9 +68,13 @@ CAPITULOS = {
         "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.7",
+        "version": "1.8",
         "version_fecha": "2026-09-24",
-        "version_nota": "Corregida la formación de «bāhussaccaṃ» (§269): "
+        "version_nota": "En la formación de «bāhussaccaṃ» (§269) se añade "
+                        "el paso por el cual la ‘ṇ’ de ‘ṇya’ se elide "
+                        "(§396), en el orden que da el Nyāsa. "
+                        "Antes, en la versión 1.7: "
+                        "corregida la formación de «bāhussaccaṃ» (§269): "
                         "la base es «bahussuta» y el sufijo ‘ṇya’, y la "
                         "cadena añade el paso por el cual ‘a’ se convierte "
                         "en ‘ā’ (§400). "
@@ -97,9 +101,13 @@ CAPITULOS = {
                         "vocal que sustituye a ‘smā’ es ‘ā’, no ‘a’; en §70, "
                         "la correspondencia de ‘jha’ y ‘la’ con ‘iya’ y ‘uva’ "
                         "pasa a nota al pie.",
-        "version_en": "1.4",
+        "version_en": "1.5",
         "version_fecha_en": "2026-09-24",
-        "version_nota_en": "Corrected the formation of «bāhussaccaṃ» (§269): "
+        "version_nota_en": "In the formation of «bāhussaccaṃ» (§269), added "
+                           "the step by which the ‘ṇ’ of ‘ṇya’ is elided "
+                           "(§396), in the order given by the Nyāsa. "
+                           "Previously, in version 1.4: "
+                           "corrected the formation of «bāhussaccaṃ» (§269): "
                            "the base is «bahussuta» and the suffix ‘ṇya’, "
                            "and the chain adds the step by which ‘a’ becomes "
                            "‘ā’ (§400). "
