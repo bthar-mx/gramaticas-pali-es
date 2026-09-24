@@ -6019,7 +6019,7 @@ Las consonantes ‘t’, ‘l’, ‘ṇ’ y ‘d’ que tienen la letra ‘y�
 
 Ejemplos:
 
-1. **Bāhussaccaṃ** \= bahussuta \+ ṇya (‘a’ se convierte en ‘ā’ (§400); la última ‘a’ se elide (§261); ‘t’ junto con ‘y’ se convierte en ‘c’ (§269); ‘c’ se duplica (§28); ‘u’ se convierte en ‘a’ (§404)).
+1. **Bāhussaccaṃ** \= bahussuta \+ ṇya (‘ṇ’ se elide (§396); ‘a’ se convierte en ‘ā’ (§400); la última ‘a’ se elide (§261); ‘t’ junto con ‘y’ se convierte en ‘c’ (§269); ‘c’ se duplica (§28); ‘u’ se convierte en ‘a’ (§404)).
 
 ¿Cuál es la finalidad de decir “que tienen ‘ya’”? \[Este sutta no se aplica cuando no hay ‘ya’, como en:\] Tiṇadalaṃ.
 
