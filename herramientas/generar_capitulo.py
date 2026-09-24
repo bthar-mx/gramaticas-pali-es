@@ -68,9 +68,14 @@ CAPITULOS = {
         "titulo_en": "2-Noun Chapter",
         "anterior": "1-Sandhi-Kappa",
         "siguiente": "3-Kāraka-Kappa",
-        "version": "1.6",
-        "version_fecha": "2026-09-08",
-        "version_nota": "En la glosa de §247, los sufijos comienzan con "
+        "version": "1.7",
+        "version_fecha": "2026-09-24",
+        "version_nota": "Corregida la formación de «bāhussaccaṃ» (§269): "
+                        "la base es «bahussuta» y el sufijo ‘ṇya’, y la "
+                        "cadena añade el paso por el cual ‘a’ se convierte "
+                        "en ‘ā’ (§400). "
+                        "Antes, en la versión 1.6: "
+                        "en la glosa de §247, los sufijos comienzan con "
                         "‘to’, no con ‘tvā’, conforme a la propia vutti "
                         "(To ādi yesaṃ paccayānaṃ). "
                         "Antes, en la versión 1.5: "
@@ -92,9 +97,14 @@ CAPITULOS = {
                         "vocal que sustituye a ‘smā’ es ‘ā’, no ‘a’; en §70, "
                         "la correspondencia de ‘jha’ y ‘la’ con ‘iya’ y ‘uva’ "
                         "pasa a nota al pie.",
-        "version_en": "1.3",
-        "version_fecha_en": "2026-09-08",
-        "version_nota_en": "In the gloss of §247, the suffixes begin with "
+        "version_en": "1.4",
+        "version_fecha_en": "2026-09-24",
+        "version_nota_en": "Corrected the formation of «bāhussaccaṃ» (§269): "
+                           "the base is «bahussuta» and the suffix ‘ṇya’, "
+                           "and the chain adds the step by which ‘a’ becomes "
+                           "‘ā’ (§400). "
+                           "Previously, in version 1.3: "
+                           "in the gloss of §247, the suffixes begin with "
                            "‘to’, not with ‘tvā’, as the vutti itself states "
                            "(To ādi yesaṃ paccayānaṃ). "
                            "Previously, in version 1.2: "
