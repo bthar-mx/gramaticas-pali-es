@@ -306,13 +306,18 @@ INTRO = {
     "que el 6 se considerada como pasado (atīta-kāla).":
         "Note: 4–5 are called unspecified tenses (anutta-kāla), while 6 is "
         "regarded as past (atīta-kāla).",
-    "En las conjugaciones que siguen, denominadas “todas las raíces” "
+    # 2026-09-27: IEBH antepone la primera frase a las dos notas.
+    "Las cuatro inflexiones verbales que se colocan después de todas las "
+    "raíces. En las conjugaciones que siguen, denominadas “todas las raíces” "
     "(sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal.":
+        "The four verbal inflections that are placed after all roots. "
         "In the conjugations that follow, called “all roots” (sabbadhātuka), "
         "‘i’ is not inserted before the verbal inflection suffix.",
-    "En las conjugaciones que siguen, denominadas “no todas las raíces” "
+    "Las cuatro inflexiones verbales que no se colocan después de todas las "
+    "raíces. En las conjugaciones que siguen, denominadas “no todas las raíces” "
     "(asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de "
     "inflexión verbal.":
+        "The four verbal inflections that are not placed after all roots. "
         "In the conjugations that follow, called “not all roots” "
         "(asabbadhātuka), ‘i’ is optionally inserted before the verbal "
         "inflection suffix.",

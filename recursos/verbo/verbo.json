@@ -1,5 +1,5 @@
 {
- "_nota": "Extraído de docs/fuentes/verbo.docx por herramientas/extraer_verbo.py. Verbatim: no se corrige nada aquí. Las erratas conocidas están en docs/verbo/escaleras-por-adjudicar.md.",
+ "_nota": "Extraído de docs/fuentes/verbo.docx por herramientas/extraer_verbo.py. Verbatim: no se corrige nada aquí. Las erratas conocidas están en docs/verbo/escaleras-por-adjudicar.md. Excepción: los ítems con «_revisado_iebh» los revisó el IEBH (2026-09-27); allí se conserva el texto original.",
  "fuente": {
   "titulo": "Verbo (ākhyāta)",
   "autor": "Bhikkhu Nandisena",
@@ -115,23 +115,33 @@
    },
    {
     "texto": "conjugaciones sabbadhātuka",
-    "nota": "En las conjugaciones que siguen, denominadas “todas las raíces” (sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal.",
+    "nota": "Las cuatro inflexiones verbales que se colocan después de todas las raíces. En las conjugaciones que siguen, denominadas “todas las raíces” (sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal.",
     "sub": [
      "Presente (vattamānā)",
      "Imperativo (pañcamī)",
      "Potencial (sattamī)",
      "Imperfecto (hiyyattanī)"
-    ]
+    ],
+    "_revisado_iebh": {
+     "fecha": "2026-09-27",
+     "por": "IEBH",
+     "original": "En las conjugaciones que siguen, denominadas “todas las raíces” (sabbadhātuka), no se inserta ‘i’ antes del sufijo de inflexión verbal."
+    }
    },
    {
     "texto": "conjugaciones asabbadhātuka",
-    "nota": "En las conjugaciones que siguen, denominadas “no todas las raíces” (asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal.",
+    "nota": "Las cuatro inflexiones verbales que no se colocan después de todas las raíces. En las conjugaciones que siguen, denominadas “no todas las raíces” (asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal.",
     "sub": [
      "Perfecto (parokkhā)",
      "Aoristo (ajjatanī)",
      "Futuro (bhavissantī)",
      "Conditional (kālātipatti)"
-    ]
+    ],
+    "_revisado_iebh": {
+     "fecha": "2026-09-27",
+     "por": "IEBH",
+     "original": "En las conjugaciones que siguen, denominadas “no todas las raíces” (asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal."
+    }
    }
   ]
  },
