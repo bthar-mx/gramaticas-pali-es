@@ -1,5 +1,5 @@
 {
- "_nota": "«Glosario de términos gramaticales de la lengua pali», material preparado por Bhikkhu Nandisena. El español es SUYO y se reproduce literalmente; no se retoca. Extraído de la capa de texto del PDF con herramientas/extraer_glosario_nandisena.py.",
+ "_nota": "«Glosario de términos gramaticales de la lengua pali», material preparado por Bhikkhu Nandisena. El español es SUYO y se reproduce literalmente; no se retoca. Extraído de la capa de texto del PDF con herramientas/extraer_glosario_nandisena.py. Excepción: las entradas con «_revisado_iebh» las revisó el IEBH (2026-09-27); allí se conserva el texto original.",
  "fuente": {
   "titulo": "Glosario de términos gramaticales de la lengua pali",
   "autor": "Bhikkhu Nandisena",
@@ -1008,9 +1008,14 @@
   {
    "pali": "asabba-dhātuka",
    "homonimo": null,
-   "es": "este término se refiere a aquellas conjugaciones donde opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal. Éstas son las siguientes: 1) Perfecto (parokkhā), 2) aoristo (ajjatanī), 3) futuro (bhavissantī), 4) conditional (kālātipatti).",
+   "es": "las cuatro inflexiones verbales que no se colocan después de todas las raíces. Este término se refiere a aquellas conjugaciones donde opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal. Éstas son las siguientes: 1) Perfecto (parokkhā), 2) aoristo (ajjatanī), 3) futuro (bhavissantī), 4) conditional (kālātipatti).",
    "refs": [],
-   "pagina": 6
+   "pagina": 6,
+   "_revisado_iebh": {
+    "fecha": "2026-09-27",
+    "por": "IEBH",
+    "original": "este término se refiere a aquellas conjugaciones donde opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal. Éstas son las siguientes: 1) Perfecto (parokkhā), 2) aoristo (ajjatanī), 3) futuro (bhavissantī), 4) conditional (kālātipatti)."
+   }
   },
   {
    "pali": "asamāhāra-digu",
@@ -2584,9 +2589,14 @@
   {
    "pali": "dabba",
    "homonimo": null,
-   "es": "sustancia; entidad. Una de las tres propiedades del tema (liṅgattha).",
+   "es": "sustancia; entidad. Una de las tres propiedades del tema nominal (liṅgattha).",
    "refs": [],
-   "pagina": 15
+   "pagina": 15,
+   "_revisado_iebh": {
+    "fecha": "2026-09-27",
+    "por": "IEBH",
+    "original": "sustancia; entidad. Una de las tres propiedades del tema (liṅgattha)."
+   }
   },
   {
    "pali": "dabbābhidhāna",
@@ -4130,11 +4140,16 @@
   {
    "pali": "liṅgattha",
    "homonimo": null,
-   "es": "propiedades del tema. Hay 3 propiedades del tema: (1) habilidad (satti; sakattha), (2) sustancia (dabba) y (3) tema (liṅga).",
+   "es": "propiedades del tema nominal o la base. Hay 3 propiedades del tema nominal: (1) habilidad (satti; sakattha), (2) sustancia (dabba) y (3) género (liṅga).",
    "refs": [
     "Rū. 137"
    ],
-   "pagina": 24
+   "pagina": 24,
+   "_revisado_iebh": {
+    "fecha": "2026-09-27",
+    "por": "IEBH",
+    "original": "propiedades del tema. Hay 3 propiedades del tema: (1) habilidad (satti; sakattha), (2) sustancia (dabba) y (3) tema (liṅga)."
+   }
   },
   {
    "pali": "liṅga-vipallāsa",
@@ -5030,9 +5045,14 @@
   {
    "pali": "satti",
    "homonimo": null,
-   "es": "habilidad. Una de las tres propiedades del tema (liṅgattha). También sakattha.",
+   "es": "habilidad. Una de las tres propiedades del tema nominal (liṅgattha). También sakattha.",
    "refs": [],
-   "pagina": 28
+   "pagina": 28,
+   "_revisado_iebh": {
+    "fecha": "2026-09-27",
+    "por": "IEBH",
+    "original": "habilidad. Una de las tres propiedades del tema (liṅgattha). También sakattha."
+   }
   },
   {
    "pali": "sadda",
@@ -5159,9 +5179,14 @@
   {
    "pali": "sabba-dhātuka",
    "homonimo": null,
-   "es": "este término se refiere a aquellas conjugaciones que no insertan ‘i’ antes del sufijo de la inflexión verbal. Éstas son las siguientes: 1) Presente (vattamānā), 2) imperativo (pañcamī), 3) potencial (sattamī), 4) imperfecto (hiyyattanī).",
+   "es": "las cuatro inflexiones verbales que se colocan después de todas las raíces. Este término se refiere a aquellas conjugaciones que no insertan ‘i’ antes del sufijo de la inflexión verbal. Éstas son las siguientes: 1) Presente (vattamānā), 2) imperativo (pañcamī), 3) potencial (sattamī), 4) imperfecto (hiyyattanī).",
    "refs": [],
-   "pagina": 29
+   "pagina": 29,
+   "_revisado_iebh": {
+    "fecha": "2026-09-27",
+    "por": "IEBH",
+    "original": "este término se refiere a aquellas conjugaciones que no insertan ‘i’ antes del sufijo de la inflexión verbal. Éstas son las siguientes: 1) Presente (vattamānā), 2) imperativo (pañcamī), 3) potencial (sattamī), 4) imperfecto (hiyyattanī)."
+   }
   },
   {
    "pali": "sabba-nāma",
