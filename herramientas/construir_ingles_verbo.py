@@ -56,7 +56,10 @@ INTERFAZ = {
     "indice": "Index",
     "arriba": "Back to top",
     "version": "Version",
-    "version_nota": ("The tab bar now ends with a link to the roots of the "
+    "version_nota": ("The notes on the sabbadhātuka and asabbadhātuka conjugations now begin"
+                     " by saying what they are: the four verbal inflections that are, or are"
+                     " not, placed after all roots. Before, in version 1.5: "
+                     "The tab bar now ends with a link to the roots of the "
                      "Saddanīti. It is not a tab and does not pretend to be "
                      "one: it sits apart from the group, without the active "
                      "underline, and carries the ↗ with which the site marks "
