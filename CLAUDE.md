@@ -489,8 +489,9 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
   en `usos.json`): caso del sujeto (nominativo), caso del objeto (acusativo),
   caso del instrumento (instrumental), caso del destinatario (dativo), caso del
   punto de partida (ablativo), caso del lugar (locativo); el sāmī, que no es
-  kāraka, posesivo/genitivo. Aún no están en `comun/glosario.md` ni en el
-  capítulo 3, que sigue diciendo «ablativo», «dativo», etc.
+  kāraka, posesivo/genitivo. Están en `comun/glosario.md`. El capítulo 3
+  sigue diciendo «ablativo», «dativo», «sujeto», etc.: por decisión del IEBH
+  (2026-09-28) se deja así por ahora.
 - **Pendiente**: las 17 dudas marcadas en `duda` (lista en
   `docs/casos/usos-revision.md`), y cotejar los ejemplos canónicos con el
   corpus del Sexto Concilio.
