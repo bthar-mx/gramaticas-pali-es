@@ -186,10 +186,47 @@ html.sin-barra .sidebar{transform:translateX(-100%)}
   box-shadow:0 6px 20px var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s}
 #top-btn.show{opacity:1;pointer-events:auto}
 @media print{.bar,.sidebar,#top-btn{display:none!important}body{padding-left:0}}
+/* ---------- índice: ocultarlo y plegar sus grupos ---------- */
+.sidebar{padding-top:calc(env(safe-area-inset-top,0px) + 54px)}
+.sb-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);left:14px;font-family:var(--mono);font-size:14px;line-height:1;
+  padding:6px 9px;background:var(--ola);color:var(--soot);border:1px solid var(--hair);border-radius:2px;cursor:pointer}
+.sb-tools{position:absolute;top:calc(env(safe-area-inset-top,0px) + 17px);right:12px;display:flex;gap:4px}
+.sb-tools button{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  background:none;border:1px solid var(--hair);color:var(--soot);border-radius:2px;padding:4px 6px;cursor:pointer}
+.sb-close:hover,.sb-tools button:hover{color:var(--ink);border-color:var(--soot)}
+.sb-close:focus-visible,.sb-tools button:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.sb-sec>summary{display:flex;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10.5px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--haritala);padding:9px 14px 6px 12px;cursor:pointer;list-style:none;user-select:none}
+.sb-sec>summary::-webkit-details-marker{display:none}
+.sb-sec>summary::before{content:'▸';flex:0 0 10px;font-size:9px;opacity:.8}
+.sb-sec[open]>summary::before{content:'▾'}
+.sb-sec>summary .gl{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sb-sec>summary .pl{text-transform:none;font-style:italic;letter-spacing:.02em;font-family:var(--serif);font-size:13.5px}
+.sb-sec>summary .n{color:var(--soot);font-weight:400;letter-spacing:0}
+.sb-sec>summary:hover{background:var(--ola)}
+.sb-sec>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
+.sb-sec[open]{padding-bottom:6px}
+.sb-sec.on:not([open])>summary{background:var(--ola);box-shadow:inset 2px 0 0 var(--haritala)}
+.sidebar a[hidden],.sb-sec[hidden]{display:none}
+.sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
+.sidebar a.on b{color:inherit}
+/* ---------- la referencia de cada ejemplo ---------- */
+ul.ejs .rf{display:inline;margin-left:9px;font-family:var(--mono);font-size:10px;font-style:normal;font-weight:400;color:var(--soot);letter-spacing:.02em}
+ul.ejs .rf>span,ul.ejs .rf a{white-space:nowrap}
+ul.ejs .rf .cn{color:var(--nila)}
+ul.ejs .rf .sep{margin:0 5px;opacity:.6}
+ul.ejs .rf a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
+ul.ejs .rf span[title]{cursor:help}
+/* los anclajes quedan justo debajo de la barra de mandos, mida lo que mida */
+html{scroll-padding-top:calc(var(--barh,74px) + 10px)}
+.sec,.card{scroll-margin-top:0}
+.uso .urf{font-family:var(--mono);font-size:10px;color:var(--soot);margin-left:auto}
 </style>
 </head>
 <body>
 <nav class="sidebar" id="sidebar" aria-label="Índice">
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice" title="Ocultar el índice. El ☰ de la barra de arriba lo devuelve.">☰</button>
+  <div class="sb-tools"><button id="sb-abrir" title="Desplegar todos los grupos del índice">Desplegar</button><button id="sb-plegar" title="Plegar todos los grupos del índice">Plegar</button></div>
   <div class="sb-brand"><b>Usos de las inflexiones</b><span class="lbl">Kāraka · Kaccāyana · Rūpasiddhi</span></div>
   <div id="sb-list"></div>
 </nav>
@@ -235,7 +272,7 @@ html.sin-barra .sidebar{transform:translateX(-100%)}
     <span class="src glos">glos</span> Glosario de Nandisena,
     <span class="src diap">diap</span> diapositivas de Nandisena,
     <span class="src prop">prop</span> propuesta pendiente del IEBH.
-    <span class="proc">sólo PDF</span> y <span class="proc">sólo diap.</span> marcan ejemplos que no están en la <i>Rūpasiddhi</i>.</div>
+    </div>
   <div id="out"></div>
   <div class="empty" id="empty"><p>Ningún uso coincide con la búsqueda.</p></div>
   
@@ -247,6 +284,7 @@ html.sin-barra .sidebar{transform:translateX(-100%)}
     <p class="version-foot" id="vfoot"></p>
     <p><strong>Qué es esta página.</strong> Los usos de cada una de las siete inflexiones nominales en el orden del capítulo de los casos (Kāraka-kaṇḍa) de la <i>Padarūpasiddhi</i>, con la concordancia de cada uso con la gramática de Kaccāyana —en la numeración de <a href="../../kaccayana/karaka/">la traducción de este sitio</a>, §271–§315— y con el <i>Saddanīti</i>. El botón «Kaccāyana» reordena los mismos usos por los aforismos de Kaccāyana.</p>
     <p><strong>Fuentes.</strong> La estructura sigue un paradigma inglés de los usos de las inflexiones hecho sobre la <i>Rūpasiddhi</i>, cotejado aquí ejemplo por ejemplo con el texto de la <i>Rūpasiddhi</i>; donde no coinciden, manda la <i>Rūpasiddhi</i> y la corrección se anota. El español viene, por este orden de autoridad, de la terminología fijada del proyecto, del capítulo 3 publicado, del <i>Glosario de términos gramaticales de la lengua pali</i> y de las presentaciones <i>Casos gramaticales</i> de Bhikkhu Nandisena; lo demás es propuesta pendiente del IEBH. Las referencias canónicas de los ejemplos (Dī, Ma, Saṃ, Aṅ, Khu, Vi, Abhi…) son las de las notas de la edición de la <i>Rūpasiddhi</i>, en la paginación de la edición birmana del Sexto Concilio.</p>
+    <p><strong>La referencia de cada ejemplo.</strong> Bajo cada ejemplo va de dónde sale: el aforismo de la <i>Rūpasiddhi</i> que lo trae y, cuando las notas de su edición lo identifican, el lugar del Canon o de los comentarios. Los pocos ejemplos que no están en la <i>Rūpasiddhi</i> lo dicen: el aforismo de Kaccāyana, el paradigma de base o las diapositivas de Nandisena.</p>
     <p><strong>Los nombres de los casos.</strong> Mientras el IEBH decide, se dan los dos juegos: el del capítulo 3 y el Glosario (ablativo, dativo, locativo, instrumental) y el de las diapositivas (punto de partida, destinatario, lugar, instrumento).</p>
     <p><strong>Véase también.</strong> <a href="../../kaccayana/karaka/">3-Kāraka-Kappa</a>; los <a href="../paradigmas/">paradigmas de declinación</a>; el <a href="../glosario/">glosario de terminología gramatical</a>.</p>
   </details>
@@ -284,13 +322,27 @@ function refs(ru){
 }
 function texto(u){ // todo el texto buscable de un uso
   let t=[u.pali,u.es,(u.notas||[]).join(' ')];
-  (u.ejemplos||[]).forEach(e=>t.push(e.pali,e.es,e.nota||''));
+  (u.ejemplos||[]).forEach(e=>t.push(e.pali,e.es,e.nota||'',e.canon||''));
   (u.sub||[]).forEach(s=>t.push(texto(s)));
   return t.join(' ');
 }
+const CANON_TIP='Lugar del Canon o de los comentarios según las notas de la edición de la Rūpasiddhi, en la paginación de la edición birmana del Sexto Concilio.';
+function refEj(e,u){ // de dónde sale cada ejemplo
+  let r='';
+  if(e.procedencia==='rū') r=`<span title="El ejemplo está en la Rūpasiddhi, en este aforismo">Rū. §${u.rupasiddhi.join('/§')}</span>`;
+  else if(e.procedencia==='kacc'){
+    const m=/Kacc\. §(\d+)/.exec(e.nota||'');
+    const ks=m?[m[1]]:[...new Set(u.rupasiddhi.map(x=>C[x][0]).filter(k=>k!=='—'))];
+    r=`<span title="Sólo en Kaccāyana; no está en la Rūpasiddhi">${ks.map(k=>`<a href="${KURL(k)}">Kacc. §${k}</a>`).join('/')}</span>`;
+  }
+  else if(e.procedencia==='pdf') r='<span title="Sólo en el paradigma inglés que sirvió de base; no está en la Rūpasiddhi">paradigma de base</span>';
+  else if(e.procedencia==='diap') r='<span title="Sólo en las diapositivas «Casos gramaticales» de Bhikkhu Nandisena; no está en la Rūpasiddhi">diapositivas de Nandisena</span>';
+  const cn=e.canon?e.canon.replace(/\s*\(nota de Rū\.\)/,'').trim():'';
+  return `<span class="rf">${r}${cn?`<span class="sep">·</span><span class="cn" title="${esc(CANON_TIP)}">${esc(cn)}</span>`:''}</span>`;
+}
 function ejemplos(u){
   if(!u.ejemplos) return '';
-  return '<ul class="ejs">'+u.ejemplos.map(e=>`<li><span class="p">${pl(e.pali)}${e.procedencia!=='rū'?`<span class="proc">${PROC[e.procedencia]}</span>`:''}${e.canon?` <span class="cn">${esc(e.canon)}</span>`:''}</span><span class="t">${e.es?esc(e.es):'—'}${src(e.es_fuente)}${e.nota?`<br><span class="rev-only nota" style="margin:0">${esc(e.nota)}</span>`:''}</span></li>`).join('')+'</ul>';
+  return '<ul class="ejs">'+u.ejemplos.map(e=>`<li><span class="p">${pl(e.pali)}${refEj(e,u)}</span><span class="t">${e.es?esc(e.es):'—'}${src(e.es_fuente)}${e.nota?`<br><span class="rev-only nota" style="margin:0">${esc(e.nota)}</span>`:''}</span></li>`).join('')+'</ul>';
 }
 function extras(u){
   let h='';
@@ -299,51 +351,82 @@ function extras(u){
   if(u.duda) h+=`<p class="duda rev-only"><b>Duda</b>${esc(u.duda)}</p>`;
   return h;
 }
-function sub(u){
-  return `<div class="uso"><div class="uh"><span class="ru">${esc(u.ruta)}</span><span class="ut"><span class="pali">${esc(u.pali)}</span>${u.es?` <span class="es">— ${esc(u.es)}</span>${src(u.es_fuente)}`:''}</span></div>${ejemplos(u)}${extras(u)}${(u.sub||[]).map(sub).join('')}</div>`;
+function difRu(u,pr){ // el aforismo de una subdivisión, sólo si no es el de su uso
+  return pr&&u.rupasiddhi.join()!==pr.join()?`<span class="urf">Rū. §${u.rupasiddhi.join('/§')}</span>`:'';
+}
+function sub(u,pr){
+  return `<div class="uso"><div class="uh"><span class="ru">${esc(u.ruta)}</span><span class="ut"><span class="pali">${esc(u.pali)}</span>${u.es?` <span class="es">— ${esc(u.es)}</span>${src(u.es_fuente)}`:''}</span>${difRu(u,pr)}</div>${ejemplos(u)}${extras(u)}${(u.sub||[]).map(s=>sub(s,u.rupasiddhi)).join('')}</div>`;
 }
 function card(u,inf){
-  return `<article class="card" id="${u.id}" data-inf="${inf}" data-t="${esc(norm(texto(u)))}">
+  return `<article class="card" id="${u.id}" data-u="${u.id}" data-inf="${inf}" data-t="${esc(norm(texto(u)))}">
    <div class="chead"><span class="cod">${({p:'I',d:'II',t:'III',c:'IV',q:'V',x:'VI',s:'VII'})[inf]}.${esc(u.ruta)}</span><h3 class="title"><span class="pali">${esc(u.pali)}</span> — ${esc(u.es)}${src(u.es_fuente)}</h3>
    <div class="meta">${refs(u.rupasiddhi)}</div></div>
-   ${ejemplos(u)}${extras(u)}${(u.sub||[]).map(sub).join('')}</article>`;
+   ${ejemplos(u)}${extras(u)}${(u.sub||[]).map(s=>sub(s,u.rupasiddhi)).join('')}</article>`;
 }
 const TOP=[];D.inflexiones.forEach(i=>i.sub.forEach(u=>TOP.push([u,i.id])));
 let nu=0,ne=0;(function c(us){us.forEach(u=>{nu++;ne+=(u.ejemplos||[]).length;c(u.sub||[])})})(D.inflexiones.flatMap(i=>i.sub));
 document.getElementById('hero').innerHTML=`<div><b>${D.inflexiones.length}</b> de 7 inflexiones</div><div><b>${nu}</b> usos <span class="ref">con sus subdivisiones</span></div><div><b>${ne}</b> ejemplos</div><div><b>${Object.keys(C).length}</b> aforismos <span class="ref">Rū. · Kacc. · Sadd.</span></div>`;
 
 let ord='ru';
+/* Qué grupos del índice están plegados. Dura lo que la visita, como plegar la
+   barra entera: es comodidad del momento, no una preferencia. */
+const abiertos={};
+function grupoSb(key,label,tip,items,n,extra){
+  return `<details class="sb-sec" data-g="${key}"${extra||''}${abiertos[key]===false?'':' open'}><summary${tip?` title="${esc(tip)}"`:''}><span class="gl">${label}</span><span class="n">${n}</span></summary>${items}</details>`;
+}
+/* En el orden de Kaccāyana, el índice se parte en los aforismos que definen
+   los kāraka (§271–§283) y los que asignan las inflexiones (§284–§315). */
+const KGR=[['sanna','§271–§283 · saññā','Aforismos que definen los kāraka (y el sāmī)',k=>k!=='—'&&+k<=283],
+ ['vibh','§284–§315 · vibhatti','Aforismos que asignan las inflexiones',k=>k!=='—'&&+k>=284],
+ ['sin','Sin Kaccāyana','Rū. §306 no tiene correspondiente en el capítulo 3',k=>k==='—']];
 function render(){
   let h='',sb='';
   if(ord==='ru'){
     D.inflexiones.forEach(i=>{
       h+=`<div class="sec" id="sec-${i.id}"><h2>${i.ruta}. <span class="pl">${esc(i.pali)}</span> · ${esc(i.es)}</h2><span class="rule"></span></div>`;
-      sb+=`<p class="sb-h">${i.ruta} · ${esc(i.pali)}</p>`;
-      i.sub.forEach(u=>{h+=card(u,i.id);sb+=`<a href="#${u.id}"><b>${u.ruta}</b><i>${esc(u.pali)}</i></a>`});
+      let it='';
+      i.sub.forEach(u=>{h+=card(u,i.id);it+=`<a href="#${u.id}" data-c="${u.id}"><b>${u.ruta}</b><i>${esc(u.pali)}</i></a>`});
+      sb+=grupoSb('ru-'+i.id,`${i.ruta} · <span class="pl">${esc(i.pali)}</span>`,i.es,it,i.sub.length,` data-inf="${i.id}"`);
     });
-    
   }else{
     const g={};TOP.forEach(([u,inf])=>{[...new Set(u.rupasiddhi.map(r=>C[r][0]))].forEach(k=>(g[k]=g[k]||[]).push([u,inf]))});
+    const it={},nk={};
     Object.keys(g).sort((a,b)=>(a==='—'?9999:+a)-(b==='—'?9999:+b)).forEach(k=>{
       const r=Object.keys(C).filter(x=>C[x][0]===k).sort((a,b)=>a-b)[0];
-      h+=`<div class="sec" id="k${k==='—'?'sin':k}"><h2>${k==='—'?'Sin correspondencia en Kaccāyana':'Kacc. §'+k} · <span class="pl">${esc(TIT[r])}</span></h2><span class="rule"></span></div><p class="sec-desc">= Rū. §${r} · Sadd. ${C[r][1]}</p>`;
-      sb+=`<a href="#k${k==='—'?'sin':k}"><b>${k==='—'?'—':'§'+k}</b><i>${esc(TIT[r])}</i></a>`;
-      g[k].forEach(([u,inf])=>h+=card(u,inf).replace(`id="${u.id}"`,`id="${u.id}-k${k==='—'?'sin':k}"`));
+      const sid='k'+(k==='—'?'sin':k);
+      h+=`<div class="sec" id="${sid}"><h2>${k==='—'?'Sin correspondencia en Kaccāyana':'Kacc. §'+k} · <span class="pl">${esc(TIT[r])}</span></h2><span class="rule"></span></div><p class="sec-desc">= Rū. §${r} · Sadd. ${C[r][1]}</p>`;
+      const G=KGR.find(x=>x[3](k))[0];
+      it[G]=(it[G]||'')+`<a href="#${sid}" data-c="${sid}"><b>${k==='—'?'—':'§'+k}</b><i>${esc(TIT[r])}</i></a>`;nk[G]=(nk[G]||0)+1;
+      g[k].forEach(([u,inf])=>h+=card(u,inf).replace(`id="${u.id}"`,`id="${u.id}-${sid}"`));
     });
+    KGR.forEach(([key,label,tip])=>{if(it[key]) sb+=grupoSb('kc-'+key,esc(label),tip,it[key],nk[key])});
   }
-  document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;filtrar();
+  document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
+  filtrar();
 }
 let inf='all';
 function filtrar(){
   const q=norm(document.getElementById('q').value.trim());let n=0;
   document.querySelectorAll('.card').forEach(c=>{const ok=(inf==='all'||c.dataset.inf===inf)&&(!q||c.dataset.t.includes(q));c.hidden=!ok;if(ok)n++});
   document.querySelectorAll('.sec').forEach(s=>{let e=s.nextElementSibling,any=false;while(e&&!e.classList.contains('sec')){if(e.classList.contains('card')&&!e.hidden)any=true;e=e.nextElementSibling}s.hidden=!any;const d=s.nextElementSibling;if(d&&d.classList.contains('sec-desc'))d.hidden=!any});
+  /* el índice enseña sólo lo que queda a la vista, con su cuenta */
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;d.querySelector('.n').textContent=v});
   document.getElementById('count').textContent=n+(n===1?' uso':' usos');
   document.getElementById('empty').style.display=n?'none':'block';
+  espiar();
+}
+/* el uso que está arriba en pantalla, para no perder el sitio al cambiar de orden */
+function enPantalla(){
+  if(scrollY<document.getElementById('out').offsetTop-150) return null;
+  for(const c of document.querySelectorAll('.card')){if(c.hidden)continue;if(c.getBoundingClientRect().bottom>120)return c.dataset.u}
+  return null;
 }
 function grupo(id,fn){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));fn(b.dataset.v)})}
-grupo('f-inf',v=>{inf=v;filtrar()});
-grupo('f-ord',v=>{ord=v;render()});
+grupo('f-inf',v=>{inf=v;filtrar();
+  if(v!=='all'){const d=document.querySelector(`#sb-list .sb-sec[data-inf="${v}"]`);if(d)d.open=true}});
+grupo('f-ord',v=>{const u=enPantalla();ord=v;render();
+  if(u){const c=document.querySelector(`.card[data-u="${u}"]:not([hidden])`);if(c)c.scrollIntoView()}});
 grupo('f-rev',v=>document.body.classList.toggle('rev',v==='rev'));
 document.getElementById('q').addEventListener('input',filtrar);
 const root=document.documentElement;
@@ -365,16 +448,41 @@ document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.th
 const topBtn=document.getElementById('top-btn');
 addEventListener('scroll',()=>topBtn.classList.toggle('show',scrollY>600),{passive:true});
 topBtn.onclick=()=>scrollTo({top:0});
-const sbEl=document.getElementById('sidebar'),scr=document.getElementById('scrim');
+const sbEl=document.getElementById('sidebar'),scr=document.getElementById('scrim'),burger=document.getElementById('burger');
 const ancha=()=>innerWidth>900;
+const barEl=document.getElementById('bar');
+function medirBarra(){root.style.setProperty('--barh',barEl.offsetHeight+'px')}
+medirBarra();addEventListener('resize',medirBarra);
 const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
-document.getElementById('burger').onclick=()=>{
-  if(ancha()) root.classList.toggle('sin-barra');
-  else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
+/* Ocultar el índice: en pantalla ancha lo aparta y el texto ocupa su sitio;
+   en estrecha es un cajón. Como en el resto de los recursos, no se guarda
+   entre visitas. */
+function pintarBarra(oculta){
+  root.classList.toggle('sin-barra',oculta);
+  burger.setAttribute('aria-expanded',oculta?'false':'true');
+  burger.title=oculta?'Mostrar el índice':'Ocultar el índice';
+}
+pintarBarra(false);
+burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
+document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
+document.getElementById('sb-abrir').onclick=()=>document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.open=true);
+document.getElementById('sb-plegar').onclick=()=>document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.open=false);
 addEventListener('resize',()=>{if(!ancha()) root.classList.remove('sin-barra')});
 scr.onclick=cerrar;
 addEventListener('keydown',e=>{if(e.key==='Escape')cerrar()});
 sbEl.addEventListener('click',e=>{if(e.target.closest('a')&&!ancha())cerrar()});
+/* El índice sigue la lectura: marca el uso (o el aforismo) que está arriba y,
+   si su grupo está desplegado, lo trae a la vista dentro de la barra. */
+let spyF=0;
+function espiar(){
+  const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=barEl.getBoundingClientRect().bottom+40;
+  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
+  links.forEach(a=>a.classList.toggle('on',a===cur));
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
+  if(cur&&cur.closest('details').open){const r=cur.getBoundingClientRect(),s=sbEl.getBoundingClientRect();
+    if(r.top<s.top+60||r.bottom>s.bottom-20) sbEl.scrollTop+=r.top-s.top-s.height/3}
+}
+addEventListener('scroll',()=>{if(!spyF)spyF=requestAnimationFrame(()=>{spyF=0;espiar()})},{passive:true});
 render();
 })();
 </script>
