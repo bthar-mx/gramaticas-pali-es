@@ -485,8 +485,12 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
   `cap3` (capítulo 3 publicado) > `glos` (Glosario de Nandisena) > `diap`
   (diapositivas *Casos gramaticales* de Nandisena) > `prop` (propuesta, pendiente
   del IEBH). El modo «Revisión» de la página lo enseña.
-- **Nombres de los casos**: por decisión del 2026-09-28, los dos juegos a la
-  vez (capítulo 3 y diapositivas) hasta que el IEBH fije uno.
+- **Nombres de los casos**: fijados por el IEBH el 2026-09-28 (`nombres_de_caso`
+  en `usos.json`): caso del sujeto (nominativo), caso del objeto (acusativo),
+  caso del instrumento (instrumental), caso del destinatario (dativo), caso del
+  punto de partida (ablativo), caso del lugar (locativo); el sāmī, que no es
+  kāraka, posesivo/genitivo. Aún no están en `comun/glosario.md` ni en el
+  capítulo 3, que sigue diciendo «ablativo», «dativo», etc.
 - **Pendiente**: las 17 dudas marcadas en `duda` (lista en
   `docs/casos/usos-revision.md`), y cotejar los ejemplos canónicos con el
   corpus del Sexto Concilio.

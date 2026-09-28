@@ -19,39 +19,14 @@
   "diap": "Sólo en las diapositivas"
  },
  "nombres_de_caso": {
-  "_nota": "Decisión del 2026-09-28: por ahora, los dos juegos.",
-  "kattu": [
-   "sujeto",
-   "caso del sujeto"
-  ],
-  "kamma": [
-   "objeto",
-   "caso del objeto"
-  ],
-  "karaṇa": [
-   "instrumental",
-   "caso del instrumento"
-  ],
-  "sampadāna": [
-   "dativo",
-   "caso del destinatario"
-  ],
-  "apādāna": [
-   "ablativo",
-   "caso del punto de partida"
-  ],
-  "okāsa": [
-   "locativo",
-   "caso del lugar"
-  ],
-  "sāmī": [
-   "posesivo",
-   null
-  ],
-  "_columnas": [
-   "capítulo 3 / Glosario",
-   "diapositivas"
-  ]
+  "_nota": "Decisión del IEBH, 2026-09-28: un solo nombre por kāraka, el de su función con el caso tradicional entre paréntesis. El sāmī no es kāraka (Rū. §316).",
+  "kattu": "caso del sujeto (nominativo)",
+  "kamma": "caso del objeto (acusativo)",
+  "karaṇa": "caso del instrumento (instrumental)",
+  "sampadāna": "caso del destinatario (dativo)",
+  "apādāna": "caso del punto de partida (ablativo)",
+  "okāsa": "caso del lugar (locativo)",
+  "sāmī": "posesivo/genitivo"
  },
  "concordancia": {
   "rupasiddhi→kaccayana→saddaniti": {
