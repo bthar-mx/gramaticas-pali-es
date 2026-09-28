@@ -103,6 +103,10 @@ def main():
     if os.path.exists(os.path.join(recursos, "paradigmas", "plantilla.html")):
         fallos += correr("generar_paradigmas.py")
 
+    # usos de las inflexiones · Kāraka
+    if os.path.exists(os.path.join(recursos, "casos", "plantilla.html")):
+        fallos += correr("generar_casos.py")
+
     # raíces pāḷi y sánscritas
     # Los datos los producen extraer_raices.py, extraer_dhatupatha.py y
     # extraer_dhatumanjusa.py a partir de los PDF, que no están en el

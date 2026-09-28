@@ -466,6 +466,31 @@ sin descifrar. La hoja de cálculo pública de la digitalización sirve de
 cotejo independiente: sus 643 claves coinciden una a una con las
 extraídas del PDF.
 
+## Estado de recursos/casos
+
+La referencia de los usos de las inflexiones (`/recursos/casos/`, v0.3,
+**borrador en revisión**, 2026-09-28) se arma con
+`herramientas/generar_casos.py` a partir de `recursos/casos/usos.json` (los
+datos) y `recursos/casos/plantilla.html` (maquetado y lógica). El generador
+verifica los datos —ids únicos, toda cita de la Rūpasiddhi en la concordancia,
+Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo falla.
+
+- **Orden**: el de la Rūpasiddhi, Kāraka-kaṇḍa (§283–§329, con §70); el botón
+  «Kaccāyana» reordena por §271–§315. Rū. §306 no tiene correspondiente en el
+  capítulo 3 y va aparte.
+- **Base**: un paradigma inglés de los usos (ParadigmCasos.pdf, no está en el
+  repositorio), cotejado ejemplo por ejemplo con la Rūpasiddhi; donde no
+  coinciden manda la Rūpasiddhi y la corrección va en `correcciones_al_pdf`.
+- **El español lleva su fuente** en `es_fuente`: `norma` (`comun/glosario.md`) >
+  `cap3` (capítulo 3 publicado) > `glos` (Glosario de Nandisena) > `diap`
+  (diapositivas *Casos gramaticales* de Nandisena) > `prop` (propuesta, pendiente
+  del IEBH). El modo «Revisión» de la página lo enseña.
+- **Nombres de los casos**: por decisión del 2026-09-28, los dos juegos a la
+  vez (capítulo 3 y diapositivas) hasta que el IEBH fije uno.
+- **Pendiente**: las 17 dudas marcadas en `duda` (lista en
+  `docs/casos/usos-revision.md`), y cotejar los ejemplos canónicos con el
+  corpus del Sexto Concilio.
+
 ## Estado de recursos/paradigmas
 
 La referencia de paradigmas (`/recursos/paradigmas/`, v1.18) son las 84 entradas
