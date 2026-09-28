@@ -62,14 +62,14 @@ h1{font-size:clamp(34px,5.5vw,52px);line-height:.98;margin:10px 0 0;font-weight:
 .hero b{font-weight:700;color:var(--haritala)}
 .hero .ref{color:var(--soot);font-size:10.5px}
 
-/* casos: los dos juegos de nombres */
+/* casos: los nombres fijados por el IEBH */
 .casos{margin:26px 0 0;width:100%;border-collapse:collapse;font-size:15.5px}
 .casos caption{text-align:left;margin-bottom:6px}
 .casos th,.casos td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--hair);vertical-align:baseline}
 .casos thead th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
   color:var(--soot);border-bottom:1.5px solid var(--ink)}
 .casos tbody th{font-style:italic;font-weight:700;width:1%;white-space:nowrap}
-.casos td.alt{color:var(--soot)}
+.casos td.alt,.casos .alt{color:var(--soot)}
 .casos td.kc{font-family:var(--mono);font-size:11px;white-space:nowrap}
 .casos td.kc a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
 .tbl-scroll{overflow-x:auto}
@@ -243,8 +243,8 @@ html{scroll-padding-top:calc(var(--barh,74px) + 10px)}
   <div class="hero" id="hero"></div>
 </div>
 <div class="tbl-scroll"><table class="casos">
-  <caption class="lbl">Los seis casos · dos nombres, provisionalmente</caption>
-  <thead><tr><th>kāraka</th><th>capítulo 3 · Glosario</th><th>diapositivas de Nandisena</th><th>Kacc.</th></tr></thead>
+  <caption class="lbl">Los seis casos (kāraka) y el sāmī</caption>
+  <thead><tr><th>kāraka</th><th>nombre</th><th>Kacc.</th></tr></thead>
   <tbody id="casos"></tbody>
 </table></div>
 </div></header>
@@ -285,7 +285,7 @@ html{scroll-padding-top:calc(var(--barh,74px) + 10px)}
     <p><strong>Qué es esta página.</strong> Los usos de cada una de las siete inflexiones nominales en el orden del capítulo de los casos (Kāraka-kaṇḍa) de la <i>Padarūpasiddhi</i>, con la concordancia de cada uso con la gramática de Kaccāyana —en la numeración de <a href="../../kaccayana/karaka/">la traducción de este sitio</a>, §271–§315— y con el <i>Saddanīti</i>. El botón «Kaccāyana» reordena los mismos usos por los aforismos de Kaccāyana.</p>
     <p><strong>Fuentes.</strong> La estructura sigue un paradigma inglés de los usos de las inflexiones hecho sobre la <i>Rūpasiddhi</i>, cotejado aquí ejemplo por ejemplo con el texto de la <i>Rūpasiddhi</i>; donde no coinciden, manda la <i>Rūpasiddhi</i> y la corrección se anota. El español viene, por este orden de autoridad, de la terminología fijada del proyecto, del capítulo 3 publicado, del <i>Glosario de términos gramaticales de la lengua pali</i> y de las presentaciones <i>Casos gramaticales</i> de Bhikkhu Nandisena; lo demás es propuesta pendiente del IEBH. Las referencias canónicas de los ejemplos (Dī, Ma, Saṃ, Aṅ, Khu, Vi, Abhi…) son las de las notas de la edición de la <i>Rūpasiddhi</i>, en la paginación de la edición birmana del Sexto Concilio.</p>
     <p><strong>La referencia de cada ejemplo.</strong> Bajo cada ejemplo va de dónde sale: el aforismo de la <i>Rūpasiddhi</i> que lo trae y, cuando las notas de su edición lo identifican, el lugar del Canon o de los comentarios. Los pocos ejemplos que no están en la <i>Rūpasiddhi</i> lo dicen: el aforismo de Kaccāyana, el paradigma de base o las diapositivas de Nandisena.</p>
-    <p><strong>Los nombres de los casos.</strong> Mientras el IEBH decide, se dan los dos juegos: el del capítulo 3 y el Glosario (ablativo, dativo, locativo, instrumental) y el de las diapositivas (punto de partida, destinatario, lugar, instrumento).</p>
+    <p><strong>Los nombres de los casos.</strong> Por decisión del IEBH (28 de septiembre de 2026), cada kāraka se nombra por su función, con el nombre tradicional del caso entre paréntesis: caso del sujeto (nominativo), caso del objeto (acusativo), caso del instrumento (instrumental), caso del destinatario (dativo), caso del punto de partida (ablativo) y caso del lugar (locativo). El sāmī, que no es kāraka, es el posesivo/genitivo.</p>
     <p><strong>Véase también.</strong> <a href="../../kaccayana/karaka/">3-Kāraka-Kappa</a>; los <a href="../paradigmas/">paradigmas de declinación</a>; el <a href="../glosario/">glosario de terminología gramatical</a>.</p>
   </details>
   <p class="licencia"><span class="marca-lockup"></span>Material del Instituto de Estudios Buddhistas Hispano (IEBH), a partir de la obra de Bhikkhu Nandisena.<br>
@@ -311,11 +311,10 @@ const PROC={pdf:'sólo PDF',diap:'sólo diap.',kacc:'sólo Kacc.'};
 const INF={p:'primera',d:'segunda'};
 
 // casos
-const K=[['kattu','sujeto','caso del sujeto','281'],['kamma','objeto','caso del objeto','280'],
- ['karaṇa','instrumental','caso del instrumento','279'],['sampadāna','dativo','caso del destinatario','276'],
- ['apādāna','ablativo','caso del punto de partida','271'],['okāsa','locativo','caso del lugar','278'],
- ['sāmī','posesivo','—  no es caso (Rū. §316)','283']];
-document.getElementById('casos').innerHTML=K.map(k=>`<tr><th>${k[0]}</th><td>${k[1]}</td><td class="alt">${k[2]}</td><td class="kc"><a href="${KURL(k[3])}">§${k[3]}</a></td></tr>`).join('');
+/* Los nombres vienen de los datos (nombres_de_caso); aquí sólo el orden y el aforismo de Kaccāyana que define cada uno. */
+const NC=D.nombres_de_caso;
+const K=[['kattu','281'],['kamma','280'],['karaṇa','279'],['sampadāna','276'],['apādāna','271'],['okāsa','278'],['sāmī','283']];
+document.getElementById('casos').innerHTML=K.map(([k,n])=>`<tr><th>${k}</th><td>${esc(NC[k])}${k==='sāmī'?' <span class="alt">— no es kāraka (Rū. §316)</span>':''}</td><td class="kc"><a href="${KURL(n)}">§${n}</a></td></tr>`).join('');
 
 function refs(ru){
   return ru.map(r=>`<span>Rū. §${r}</span>${C[r][0]==='—'?'<span>Kacc. —</span>':`<a href="${KURL(C[r][0])}">Kacc. §${C[r][0]}</a>`}<span>Sadd. ${C[r][1]}</span>`).join('<span>·</span>');
