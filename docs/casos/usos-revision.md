@@ -1276,7 +1276,7 @@ Rū. §306 = Kacc. — = Sadd. 1291
 
 ## V. *pañcamī* — quinta inflexión `norma`
 
-### 1. *apādāna* — en el ablativo `cap3`
+### 1. *apādāna* — en el caso del punto de partida (ablativo) `norma`
 
 Rū. §307 = Kacc. §295 = Sadd. 607 · Rū. §308 = Kacc. §271 = Sadd. 555, 557
 
@@ -1410,7 +1410,7 @@ Rū. §309 = Kacc. §272 = Sadd. 558, 568
 - ***ariyehi** puthag ev’ āyaṃ jano* — esta gente está separada de los nobles `prop` *puthu.*
 - *yāva **brahmalokā** saddo abbhuggacchati* — el sonido se propaga hasta el mundo de Brahmā `prop` (Vi i 21 (nota de Rū.)) *yāva.*
 
-### 3. *kāladdhāna (kammāpādānamajjhe)* — en tiempo y espacio, entre el objeto y el ablativo `prop`
+### 3. *kāladdhāna (kammāpādānamajjhe)* — en tiempo y espacio, entre el caso del objeto y el del punto de partida `prop`
 
 Rū. §309 = Kacc. §272 = Sadd. 558, 568
 
@@ -1906,7 +1906,7 @@ Rū. §312 = Kacc. §275 = Sadd. 571
 
 ## VII. *sattamī* — séptima inflexión `norma`
 
-### 1. *okāsa* — en el locativo `cap3`
+### 1. *okāsa* — en el caso del lugar (locativo) `norma`
 
 Rū. §319 = Kacc. §302 = Sadd. 630 · Rū. §320 = Kacc. §278 = Sadd. 572–573
 
@@ -1994,7 +1994,7 @@ Rū. §324 = Kacc. §310 = Sadd. 641
 
 > Capítulo 3, §310: «La séptima [inflexión] en los significados de objeto, instrumento y causa».
 
-### 8. *sampadāna* — en el dativo `cap3`
+### 8. *sampadāna* — en el caso del destinatario (dativo) `norma`
 
 Rū. §325 = Kacc. §311 = Sadd. 642
 

@@ -4044,8 +4044,8 @@
      "id": "q1",
      "ruta": "1",
      "pali": "apādāna",
-     "es": "en el ablativo",
-     "es_fuente": "cap3",
+     "es": "en el caso del punto de partida (ablativo)",
+     "es_fuente": "norma",
      "rupasiddhi": [
       "307",
       "308"
@@ -4485,7 +4485,7 @@
      "id": "q3",
      "ruta": "3",
      "pali": "kāladdhāna (kammāpādānamajjhe)",
-     "es": "en tiempo y espacio, entre el objeto y el ablativo",
+     "es": "en tiempo y espacio, entre el caso del objeto y el del punto de partida",
      "es_fuente": "prop",
      "rupasiddhi": [
       "309"
@@ -5987,8 +5987,8 @@
      "id": "s1",
      "ruta": "1",
      "pali": "okāsa",
-     "es": "en el locativo",
-     "es_fuente": "cap3",
+     "es": "en el caso del lugar (locativo)",
+     "es_fuente": "norma",
      "rupasiddhi": [
       "319",
       "320"
@@ -6277,8 +6277,8 @@
      "id": "s8",
      "ruta": "8",
      "pali": "sampadāna",
-     "es": "en el dativo",
-     "es_fuente": "cap3",
+     "es": "en el caso del destinatario (dativo)",
+     "es_fuente": "norma",
      "rupasiddhi": [
       "325"
      ],

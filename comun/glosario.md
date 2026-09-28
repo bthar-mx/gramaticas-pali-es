@@ -229,6 +229,14 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *viparīta* | inversión | Del juego de §404; «reversing» en N-EN. La inversión es fonética (uggate sūriye), no semántica. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
 | *ādesa* | sustitución | Del juego de §404; «substitution» en N-EN; coherente con ādesa-sandhi. | Taddhita, IEBH 2026-09-13 — Kacc. §391, §404 |
 
+| *kattu / kattā* | caso del sujeto (nominativo) | Nombre del kāraka; el paréntesis da el caso tradicional. El capítulo 3 dice «sujeto» (nota del traductor 42); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §281 · Rū. §294 |
+| *kamma* | caso del objeto (acusativo) | Nombre del kāraka. El capítulo 3 dice «objeto» (nota del traductor 40); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §280 · Rū. §285 |
+| *karaṇa* | caso del instrumento (instrumental) | Nombre del kāraka. El capítulo 3 dice «instrumental» (nota del traductor 39); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §279 · Rū. §292 |
+| *sampadāna* | caso del destinatario (dativo) | Nombre del kāraka. El capítulo 3 dice «dativo» (nota del traductor 19); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §276 · Rū. §302 |
+| *apādāna* | caso del punto de partida (ablativo) | Nombre del kāraka. El capítulo 3 dice «ablativo» (nota del traductor 1); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §271 · Rū. §308 |
+| *okāsa* | caso del lugar (locativo) | Nombre del kāraka; también *adhikaraṇa*. El capítulo 3 dice «locativo» (nota del traductor 37); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §278 · Rū. §320 |
+| *sāmī* | posesivo/genitivo | No es kāraka (Rū. §316). El capítulo 3 dice «posesivo (también genitivo)» (nota del traductor 46); se deja así por ahora. | Kāraka, IEBH 2026-09-28 — Kacc. §283 · Rū. §316 |
+
 ## En discusión
 
 - **niyutta** vacila en el Taddhita entre «ocupado en» (§351) y
