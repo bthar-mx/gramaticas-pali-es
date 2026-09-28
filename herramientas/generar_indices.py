@@ -110,6 +110,12 @@ RECURSOS = [
      "todas las variantes de cada forma: nombres por género y tema, "
      "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
      "ignora los diacríticos y filtros por género y por tema."),
+    ("casos/", "__CASOS_BADGE__", "Usos de las inflexiones — kāraka",
+     "Qué expresa cada una de las siete inflexiones nominales, uso por uso, "
+     "según el capítulo de los casos de la <i>Rūpasiddhi</i>, con un ejemplo "
+     "o más para cada uso y la concordancia con Kaccāyana y Saddanīti. Dos "
+     "órdenes —el de la Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
+     "que enseña de dónde viene cada traducción. Borrador en revisión."),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: el <i>Glosario de términos "
@@ -276,6 +282,18 @@ EN = {
         "every variant of each form: nouns by gender and stem, pronouns, "
         "numerals and the suffixes that are inflections. Search ignores "
         "diacritics, with filters by gender and by stem.",
+    "Usos de las inflexiones — kāraka": "Uses of the inflections — kāraka",
+    "Qué expresa cada una de las siete inflexiones nominales, uso por uso, "
+    "según el capítulo de los casos de la <i>Rūpasiddhi</i>, con un ejemplo "
+    "o más para cada uso y la concordancia con Kaccāyana y Saddanīti. Dos "
+    "órdenes —el de la Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
+    "que enseña de dónde viene cada traducción. Borrador en revisión.":
+        "What each of the seven nominal inflections expresses, use by use, "
+        "following the chapter on cases of the <i>Rūpasiddhi</i>, with one "
+        "example or more for each use and the concordance with Kaccāyana and "
+        "Saddanīti. Two orders —the Rūpasiddhi's and Kaccāyana's— and a review "
+        "mode that shows where each translation comes from. Draft under review; "
+        "the page itself is in Spanish.",
     "Glosario de terminología gramatical": "Glossary of grammatical terminology",
     "Los términos técnicos de la gramática pāḷi en una sola lista "
     "alfabética, con tres capas por lema: el <i>Glosario de términos "
@@ -520,6 +538,23 @@ def tablas_paradigmas():
                if x.get("genero") != "sufijos")
 
 
+def cuenta_casos():
+    """(usos, ejemplos) de recursos/casos/usos.json, para la insignia."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "casos", "usos.json")
+    if not os.path.exists(p):
+        return None
+    d = json.load(open(p, encoding="utf-8"))
+    usos = sum(len(i.get("sub", [])) for i in d.get("inflexiones", []))
+    ej = 0
+    pila = [u for i in d.get("inflexiones", []) for u in i.get("sub", [])]
+    while pila:
+        u = pila.pop()
+        ej += len(u.get("ejemplos", []))
+        pila.extend(u.get("sub", []))
+    return usos, ej, d.get("version", "")
+
+
 def cuenta_raices():
     """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
     import json
@@ -734,7 +769,12 @@ def indice_recursos():
     badge_glo = (bi("{0} entradas · {1} términos".format(miles(n_glo[0]), miles(n_glo[1])),
                     "{0} entries · {1} terms".format("{0:,}".format(n_glo[0]), "{0:,}".format(n_glo[1])))
                  if n_glo else "glosario")
+    n_cas = cuenta_casos()
+    badge_cas = (bi("{0} usos · {1} ejemplos · v{2} borrador".format(*n_cas),
+                    "{0} uses · {1} examples · v{2} draft".format(*n_cas))
+                 if n_cas else "casos")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
+                 "__CASOS_BADGE__": badge_cas,
                  "__GLOSARIO_BADGE__": badge_glo,
                  "__RAICES_BADGE__": badge_rai, "__VERBO_BADGE__": badge_ver,
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
@@ -744,7 +784,8 @@ def indice_recursos():
                 for href, ins, titulo, desc in RECURSOS
                 if (ins != "__RAICES_BADGE__" or n_rai)
                 and (ins != "__VERBO_BADGE__" or n_ver)
-                and (ins != "__GLOSARIO_BADGE__" or n_glo)]
+                and (ins != "__GLOSARIO_BADGE__" or n_glo)
+                and (ins != "__CASOS_BADGE__" or n_cas)]
 
     externas = [tarjeta(href, ins, titulo, desc, externo=True)
                 for href, ins, titulo, desc in CORPUS]
