@@ -10,6 +10,7 @@ Escribe:
     site/index.html             portada — las cuatro obras
     site/kaccayana/index.html   los ocho capítulos de Kaccāyana
     site/recursos/index.html    el material de apoyo
+    site/guia-clases/index.html guía para estudiantes de las clases grabadas
 
 Lo que antes había que corregir a mano —«1 de 8 capítulos», «51 suttas»—
 se cuenta ahora del markdown: publicar un capítulo es añadirlo a CAPITULOS
@@ -637,7 +638,20 @@ def portada(pub):
                "inscritos.",
                "Recorded Pāḷi grammar classes of the Most Venerable U "
                "Sīlānanda, with synced transcript, Spanish translation and "
-               "the text of each sutta. Access for enrolled students."))]))
+               "the text of each sutta. Access for enrolled students.")),
+            # La guía es pública: está fuera de /clases/ (que atrapa la ruta
+            # de Cloudflare Access) para que se pueda leer antes de entrar.
+            tarjeta(
+                "guia-clases/",
+                bi("pública", "public"),
+                bi("Guía para estudiantes de las clases",
+                   "Student guide to the classes"),
+                bi("Cómo entrar con el código que llega por correo, usar el "
+                   "reproductor, instalar la aplicación y guardar clases "
+                   "para escucharlas sin conexión.",
+                   "How to sign in with the emailed code, use the player, "
+                   "install the app and save classes to listen offline "
+                   "(in Spanish)."))]))
 
     return pagina(
         assets_v=version_assets(),
@@ -852,6 +866,38 @@ def indice_recursos():
         pie="  {0} {1}.".format(bi("Fuentes:", "Sources:"), FUENTES))
 
 
+def guia_clases():
+    """
+    La guía para estudiantes de las clases grabadas de U Sīlānanda.
+
+    El cuerpo vive en herramientas/guia_clases.html (sólo en español: la
+    escriben y la leen los estudiantes hispanohablantes); aquí sólo se envuelve
+    con la plantilla de los índices. La ruta no empieza por «clases»: la
+    aplicación de Cloudflare Access cubre gramaticas.buddha-dhamma.net/clases*
+    y la guía tiene que poder leerse antes de entrar.
+    """
+    cuerpo = open(os.path.join(RAIZ, "herramientas", "guia_clases.html"),
+                  encoding="utf-8").read()
+    return pagina(
+        assets_v=version_assets(),
+        titulo="Guía para estudiantes · Clases de U Sīlānanda",
+        descripcion="Cómo entrar a las clases grabadas de gramática pāḷi del "
+                    "Muy Venerable U Sīlānanda, usar el reproductor y "
+                    "escucharlas sin conexión.",
+        raiz="../",
+        volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
+        eyebrow=bi("Clases de Kaccāyana y Rūpasiddhi",
+                   "Kaccāyana &amp; Rūpasiddhi classes"),
+        lang_en="Student guide · Classes of U Sīlānanda",
+        descripcion_en="How to access the recorded Pāḷi grammar classes of "
+                       "the Most Venerable U Sīlānanda (guide in Spanish).",
+        h1=bi("Guía para estudiantes", "Student guide"),
+        cuerpo=cuerpo,
+        pie='  {0} <a href="mailto:admin@iebh.org">admin@iebh.org</a>.'.format(
+            bi("Dudas y solicitudes de acceso:",
+               "Questions and access requests:")))
+
+
 def pagina(**kw):
     """PAGINA con los dos títulos ya serializados para el botón de idioma."""
     import json as _json
@@ -879,6 +925,7 @@ def main():
         escribir("site/index.html", portada(pub)),
         escribir("site/kaccayana/index.html", indice_kaccayana(pub)),
         escribir("site/recursos/index.html", indice_recursos()),
+        escribir("site/guia-clases/index.html", guia_clases()),
     ]
     total = sum(n for _slug, n in pub.values())
     if SIN_INGLES:

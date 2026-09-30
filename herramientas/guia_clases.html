@@ -1,0 +1,121 @@
+<!-- Guía para estudiantes de las clases grabadas de U Sīlānanda.
+     Fuente del cuerpo de site/guia-clases/index.html; la envuelve
+     herramientas/generar_indices.py (guia_clases()) con la plantilla de los
+     índices. Texto tomado de la guía en Claude Docs (2026-09-30). Pública a
+     propósito: vive fuera de /clases/, que está detrás de Cloudflare Access. -->
+<style>
+/* Prosa, listas y tabla dentro de .idx, que por sí solo sólo sabe de
+   tarjetas. Va aquí y no en pali.css para no cambiar la huella de los assets
+   de todo el sitio por una sola página. */
+.idx-guia p, .idx-guia li { line-height: 1.65; color: var(--text2); }
+.idx-guia p { margin: .9rem 0 0; }
+.idx-guia ul, .idx-guia ol { margin: .7rem 0 0 1.4rem; display: grid; gap: .35rem; }
+.idx-guia ul { list-style: disc; }
+.idx-guia ol { list-style: decimal; }
+.idx-guia b { color: var(--text); font-weight: 500; }
+.idx-guia a { color: var(--accent); }
+body.dark .idx-guia a { color: var(--accent-mid); }
+.idx-guia .tabla { overflow-x: auto; margin-top: 1rem; }
+.idx-guia table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.idx-guia th, .idx-guia td { text-align: left; vertical-align: top; padding: .5rem .7rem; border-bottom: .5px solid var(--border); color: var(--text2); }
+.idx-guia th { font: 500 11px/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--text3); }
+.idx-guia td:first-child { color: var(--text); }
+.idx-guia td:last-child { white-space: nowrap; }
+@media (max-width: 520px) { .idx-guia th, .idx-guia td { padding: .45rem .4rem; } }
+.idx-guia kbd { font: 400 .8rem/1 var(--mono); padding: .1rem .35rem; border: .5px solid var(--border2); border-radius: 4px; background: var(--bg2); }
+.idx-guia dt { margin-top: 1rem; color: var(--text); font-weight: 500; }
+.idx-guia dd { margin: .25rem 0 0; line-height: 1.65; color: var(--text2); }
+.idx-guia .aviso-en { display: none; margin-top: 1rem; padding: .7rem 1rem; border: .5px dashed var(--border2); border-radius: var(--r); }
+body.en .idx-guia .aviso-en { display: block; }
+</style>
+<div class="idx-guia">
+<p class="aviso-en" lang="en">This guide is for the students of the classes and is written in Spanish. The classes themselves are in English.</p>
+<p class="idx-lede">Las clases de gramática pāḷi del Muy Venerable U Sīlānanda están en <a href="../clases/">gramaticas.buddha-dhamma.net/clases/</a>. Solo pueden verlas las personas cuyo correo haya autorizado el IEBH. Esta guía explica cómo entrar, escuchar las clases y guardarlas para oírlas sin conexión.</p>
+
+<h2>Qué son las clases</h2>
+<p>Son 119 clases: 34 sobre el <i>Kaccāyana</i> y 85 sobre la <i>Padarūpasiddhi</i>. Cada clase ofrece:</p>
+<ul>
+<li>el audio original del maestro, en inglés;</li>
+<li>la transcripción sincronizada, que resalta cada palabra mientras suena;</li>
+<li>la traducción al español, junto al inglés o en su lugar;</li>
+<li>el texto de cada sutta en la edición del IEBH y el glosario del sitio.</li>
+</ul>
+<p>Si su correo no está autorizado, escriba a <a href="mailto:admin@iebh.org">admin@iebh.org</a> para solicitar el acceso.</p>
+
+<h2>Entrar por primera vez</h2>
+<p>Se entra con un código que llega por correo; no hay contraseña que recordar.</p>
+<ol>
+<li>Abra <a href="../clases/">gramaticas.buddha-dhamma.net/clases/</a>.</li>
+<li>En la página «Log in to Clases de U Sīlānanda», escriba su correo y pulse <b>Send login code</b>.</li>
+<li>Busque en su bandeja de entrada el mensaje de Cloudflare (si no aparece, revise el correo no deseado) y escriba el código.</li>
+<li>Se abre la biblioteca de clases.</li>
+</ol>
+<p>La sesión dura un mes en ese dispositivo y navegador. Pasado ese tiempo, el sitio vuelve a pedir un código. En cada dispositivo nuevo (otra computadora, el teléfono) hay que entrar una vez.</p>
+
+<h2>La biblioteca</h2>
+<p>La biblioteca es la página de inicio: reúne las 119 clases y un buscador que recorre todas las transcripciones.</p>
+<ul>
+<li><b>Panel izquierdo.</b> Elija <i>Kaccāyana</i> o <i>Rūpasiddhi</i> arriba. Cada capítulo se abre y se cierra con un clic; dentro, el triángulo ▸ junto a cada clase muestra sus suttas. Un clic en un sutta abre la clase en ese momento. El panel recuerda lo que dejó abierto.</li>
+<li><b>Buscador.</b> Escriba una palabra pāḷi, un número de sutta («§302») o una palabra inglesa; cada resultado lleva al minuto exacto de la clase.</li>
+<li><b>Idioma y tema.</b> El botón <b>ES / EN</b> cambia el idioma de la página y ◐ alterna entre modo claro y oscuro.</li>
+<li>En pantallas pequeñas, el panel se abre con el botón ☰ junto al logotipo.</li>
+</ul>
+
+<h2>Escuchar una clase</h2>
+<p>Pulse <b>▶ Reproducir</b>: el audio avanza y la transcripción resalta la palabra que se oye. Un clic en cualquier palabra salta a ese momento.</p>
+<div class="tabla"><table>
+<thead><tr><th>Botón</th><th>Qué hace</th><th>Tecla</th></tr></thead>
+<tbody>
+<tr><td>▶ Reproducir</td><td>reproduce o pausa</td><td><kbd>Espacio</kbd></td></tr>
+<tr><td>−10 / +10</td><td>retrocede o avanza 10 segundos (las flechas, 5)</td><td><kbd>←</kbd> <kbd>→</kbd></td></tr>
+<tr><td>− 1× +</td><td>cambia la velocidad; un clic en «1×» vuelve a la normal</td><td><kbd>[</kbd> <kbd>]</kbd></td></tr>
+<tr><td>⟲ Repetir</td><td>primer clic: inicio del pasaje; segundo: fin (se repite); tercero: se detiene</td><td><kbd>R</kbd></td></tr>
+<tr><td>ES / EN / ES+EN</td><td>traducción española, original inglés o ambos</td><td><kbd>L</kbd></td></tr>
+<tr><td>📖</td><td>abre a la derecha el texto del sutta en la edición del IEBH</td><td><kbd>T</kbd></td></tr>
+<tr><td>Enlace</td><td>copia un enlace a este minuto exacto, para compartirlo</td><td>—</td></tr>
+<tr><td>⚙</td><td>tamaño de letra, marcas de minuto, desplazamiento con el audio, imprimir</td><td>—</td></tr>
+<tr><td>?</td><td>lista de atajos de teclado</td><td><kbd>?</kbd></td></tr>
+</tbody>
+</table></div>
+<p>Otras ayudas:</p>
+<ul>
+<li>Las palabras con subrayado punteado muestran su significado en el glosario del IEBH al pasar el cursor (en el teléfono, al tocarlas).</li>
+<li>Un clic en el título de un sutta abre su texto; las flechas <kbd>↑</kbd> <kbd>↓</kbd> del teclado pasan al sutta anterior o siguiente.</li>
+<li>Si se desplaza lejos del audio, el botón <b>↓ Volver a la palabra actual</b> lo trae de vuelta.</li>
+</ul>
+
+<h2>Instalar la aplicación</h2>
+<p>El sitio se instala como una aplicación, sin tienda de aplicaciones: queda un icono con el árbol del IEBH y se abre en su propia ventana. Primero entre al sitio con su correo, como se explicó arriba.</p>
+<ul>
+<li><b>Computadora (Chrome o Edge):</b> en la biblioteca, pulse <b>Instalar la aplicación</b>, o el icono de instalar en la barra de direcciones.</li>
+<li><b>Android (Chrome):</b> pulse <b>Instalar la aplicación</b>, o menú <b>⋮ → Instalar aplicación / Añadir a pantalla de inicio</b>.</li>
+<li><b>iPhone o iPad (Safari):</b> pulse <b>Compartir</b> (el cuadrado con una flecha hacia arriba) → <b>Añadir a pantalla de inicio</b> → <b>Añadir</b>.</li>
+</ul>
+<p>En iPhone y iPad conviene instalarla: Safari puede borrar las clases guardadas de los sitios que no están instalados si no se usan durante unos días.</p>
+
+<h2>Escuchar sin conexión</h2>
+<p>Cada clase que guarde se puede oír y leer después sin internet, con todas las funciones (saltar, repetir, cambiar la velocidad).</p>
+<ol>
+<li>Con conexión, abra la clase y pulse <b>⬇ Sin conexión</b>. El botón muestra el porcentaje de descarga y termina en <b>✓ Sin conexión</b>.</li>
+<li>Las clases guardadas llevan la marca <b>⬇ sin conexión</b> en su tarjeta de la biblioteca y un ⬇ en el panel izquierdo. Arriba de la biblioteca se indica cuántas hay y cuánto espacio ocupan.</li>
+<li>Sin internet, abra la aplicación (o el sitio) como siempre y elija una clase guardada. Las que no guardó muestran un aviso de que no están disponibles.</li>
+<li>Para liberar espacio, abra la clase, pulse <b>✓ Sin conexión</b> y confirme.</li>
+</ol>
+<p>Cada clase ocupa entre 25 y 70 MB. Guarde solo las que vaya a estudiar pronto, sobre todo en el teléfono.</p>
+
+<h2>Preguntas frecuentes</h2>
+<dl>
+<dt>No me llega el código.</dt>
+<dd>Revise el correo no deseado y compruebe que escribió el mismo correo que autorizó el IEBH. Si sigue sin llegar, escriba a <a href="mailto:admin@iebh.org">admin@iebh.org</a>.</dd>
+<dt>Me dice que no tengo acceso.</dt>
+<dd>Su correo no está en la lista de estudiantes; pida en <a href="mailto:admin@iebh.org">admin@iebh.org</a> que lo añadan.</dd>
+<dt>Me vuelve a pedir el código.</dt>
+<dd>Ha pasado un mes, o entró desde otro dispositivo o navegador. Escriba su correo y el nuevo código.</dd>
+<dt>El audio no suena.</dt>
+<dd>Compruebe la conexión y el volumen. Sin internet solo suenan las clases guardadas con <b>⬇ Sin conexión</b>.</dd>
+<dt>¿Se actualiza la aplicación?</dt>
+<dd>Sí: cuando el IEBH publica correcciones, la aplicación las recibe la siguiente vez que se abre con internet.</dd>
+<dt>¿Por qué la traducción dice «revisión pendiente»?</dt>
+<dd>La traducción al español se hizo con ayuda de Claude y el IEBH la está revisando. Ante una duda, el audio original en inglés es la referencia.</dd>
+</dl>
+</div>
