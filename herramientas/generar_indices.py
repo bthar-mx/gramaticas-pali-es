@@ -144,6 +144,12 @@ CORPUS = [
      "subcomentarios enlazados capa a capa, de modo que desde cualquier "
      "párrafo se llega a su aṭṭhakathā y su ṭīkā. 83.751 párrafos y 54.036 "
      "variantes, con búsqueda que ignora los diacríticos."),
+    ("https://abhidhana.buddha-dhamma.net/", "25 volúmenes · borrador",
+     "Tipiṭaka Pāḷi-Myanmā Abhidhāna",
+     "El diccionario pāḷi-birmano del Ministerio de Asuntos Religiosos de "
+     "Myanmar, en 25 volúmenes, digitalizado: 221.154 entradas con el "
+     "titular romanizado y la página impresa al lado. Los significados en "
+     "español son borradores sin revisar; edición en curso.", True),
 ]
 
 # ---------------------------------------------------------------- inglés
@@ -336,6 +342,16 @@ EN = {
         "one reaches its aṭṭhakathā and its ṭīkā. 83,751 paragraphs and "
         "54,036 variants, with search that ignores diacritics.",
     "118 volúmenes": "118 volumes",
+    "Tipiṭaka Pāḷi-Myanmā Abhidhāna": "Tipiṭaka Pāḷi-Myanmā Abhidhāna",
+    "El diccionario pāḷi-birmano del Ministerio de Asuntos Religiosos de "
+    "Myanmar, en 25 volúmenes, digitalizado: 221.154 entradas con el "
+    "titular romanizado y la página impresa al lado. Los significados en "
+    "español son borradores sin revisar; edición en curso.":
+        "The Pāḷi-Burmese dictionary of Myanmar's Ministry of Religious "
+        "Affairs, in 25 volumes, digitised: 221,154 entries with the headword "
+        "romanised and the printed page alongside. The Spanish meanings are "
+        "unreviewed drafts; a work in progress.",
+    "25 volúmenes · borrador": "25 volumes · draft",
 }
 
 
@@ -787,8 +803,10 @@ def indice_recursos():
                 and (ins != "__GLOSARIO_BADGE__" or n_glo)
                 and (ins != "__CASOS_BADGE__" or n_cas)]
 
-    externas = [tarjeta(href, ins, titulo, desc, externo=True)
-                for href, ins, titulo, desc in CORPUS]
+    # Un quinto elemento True marca la insignia como obra en curso.
+    externas = [tarjeta(href, ins, titulo, desc, externo=True,
+                        wip=bool(resto and resto[0]))
+                for href, ins, titulo, desc, *resto in CORPUS]
 
     cuerpo = ('<p class="idx-lede">' + bi(
                   'Material de referencia para el estudio de la lengua pāḷi, '
