@@ -617,11 +617,27 @@ def portada(pub):
             'works. A Pāḷi term is always translated the same way in all of '
             'them.') + '</p>\n\n'
         '<h2>' + bi('Obras') + '</h2>\n{0}\n\n'
-        '<h2>' + bi('Recursos') + '</h2>\n{1}\n'
+        '<h2>' + bi('Recursos') + '</h2>\n{1}\n\n'
+        '<h2>' + bi('Clases', 'Classes') + '</h2>\n{2}\n'
     ).format(lista(tarjetas), lista([tarjeta(
         "recursos/", None, "Material de apoyo",
         "Reglas de combinación eufónica (<i>sandhi</i>), tablas y glosarios "
-        "de referencia para el estudio de la lengua.")]))
+        "de referencia para el estudio de la lengua.")]),
+        # Las clases grabadas viven en otro worker (pali-clases) bajo /clases/,
+        # detrás del acceso por correo de Cloudflare Access; aquí sólo va el
+        # enlace. Ni el contenido ni el audio están en este repositorio.
+        lista([tarjeta(
+            "clases/",
+            bi("acceso con registro", "sign-in required"),
+            bi("Clases de Kaccāyana y Rūpasiddhi",
+               "Kaccāyana &amp; Rūpasiddhi classes"),
+            bi("Clases grabadas de gramática pāḷi del Muy Venerable U "
+               "Sīlānanda, con transcripción sincronizada, traducción al "
+               "español y el texto de cada sutta. Acceso para estudiantes "
+               "inscritos.",
+               "Recorded Pāḷi grammar classes of the Most Venerable U "
+               "Sīlānanda, with synced transcript, Spanish translation and "
+               "the text of each sutta. Access for enrolled students."))]))
 
     return pagina(
         assets_v=version_assets(),
