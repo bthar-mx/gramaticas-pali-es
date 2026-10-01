@@ -877,8 +877,8 @@ def indice_recursos():
                     "{0} uses · {1} examples · v{2} draft".format(*n_cas))
                  if n_cas else "casos")
     n_cla = cuenta_clasificacion()
-    badge_cla = (bi("{0} aforismos · {1} notas · v{2} borrador".format(*n_cla),
-                    "{0} aphorisms · {1} notes · v{2} draft".format(*n_cla))
+    badge_cla = (bi("{0} aforismos · {1} notas · v{2}".format(*n_cla),
+                    "{0} aphorisms · {1} notes · v{2}".format(*n_cla))
                  if n_cla else "clasificación")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
                  "__CASOS_BADGE__": badge_cas,

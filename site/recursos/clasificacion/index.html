@@ -452,7 +452,7 @@ function textos(){
   /* versión */
   const [y,m,d]=D.fecha.split('-').map(Number);const largo=t.date(d,m,y,t.months);
   const b=document.getElementById('vbadge');b.dataset.tip=`${t.ver} ${D.version} · ${largo} · ${D.nota_version[lang]}`;
-  b.innerHTML=`v${esc(D.version)} · ${t.draft} <time datetime="${D.fecha}">${D.fecha}</time>`;
+  b.innerHTML=`v${esc(D.version)} · <time datetime="${D.fecha}">${D.fecha}</time>`;
   document.getElementById('vfoot').innerHTML=`<strong>${t.ver} ${esc(D.version)}</strong> — <time datetime="${D.fecha}">${largo}</time>. ${esc(D.nota_version[lang])}`;
   const lb=document.getElementById('lang-btn');lb.querySelectorAll('.lang-seg').forEach(x=>x.classList.toggle('lang-cur',x.dataset.l===lang));
   lb.dataset.tip=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.dataset.tip);
