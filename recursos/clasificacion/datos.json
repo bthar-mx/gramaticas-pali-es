@@ -1,10 +1,10 @@
 {
- "version": "0.2",
+ "version": "0.3",
  "fecha": "2026-10-01",
  "estado": "borrador",
  "nota_version": {
-  "es": "Se añade el Kāraka-Kappa (§271–§315). Contiene ya el Sandhi-Kappa, el Nāma-Kappa y el Kāraka-Kappa.",
-  "en": "Adds the Kāraka-Kappa (§271–§315). Now covers the Sandhi-Kappa, the Nāma-Kappa and the Kāraka-Kappa."
+  "es": "Se añade el Samāsa-Kappa (§316–§343). Contiene ya el Sandhi-Kappa, el Nāma-Kappa, el Kāraka-Kappa y el Samāsa-Kappa.",
+  "en": "Adds the Samāsa-Kappa (§316–§343). Now covers the Sandhi-Kappa, the Nāma-Kappa, the Kāraka-Kappa and the Samāsa-Kappa."
  },
  "capitulos": [
   {
@@ -27,6 +27,13 @@
    "desde": 271,
    "hasta": 315,
    "pali": "Kāraka-Kappa"
+  },
+  {
+   "clave": "samasa",
+   "md": "04-samasa-kappa",
+   "desde": 316,
+   "hasta": 343,
+   "pali": "Samāsa-Kappa"
   }
  ],
  "tipos": {
@@ -92,6 +99,11 @@
   "atidesa": {
    "es": "extensión (no es una de las ocho)",
    "en": "extension (not one of the eight)",
+   "fuera": true
+  },
+  "liṅga-vacana": {
+   "es": "asignación de género y número (no es una de las ocho)",
+   "en": "assignment of gender and number (not one of the eight)",
    "fuera": true
   }
  },
@@ -6050,6 +6062,582 @@
    "nota": {
     "en": "The sutta names only the third inflection; the vutti adds the seventh (Rū 329 “tatiyāvibhatti hoti, sattamī ca”), and Nyāsa states both. Determination: vidhi — vibhatti.",
     "es": "El sutta nombra sólo la tercera inflexión; la vutti añade la séptima (Rū 329 «tatiyāvibhatti hoti, sattamī ca»), y Nyāsa da ambas. Determinación: vidhi — vibhatti."
+   }
+  },
+  "316": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The connected meaning of nouns is named samāsa (compound).",
+    "es": "El significado conectado de nombres recibe el nombre de samāsa (compuesto)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 331: “Tesaṃ nāmānaṃ payujjamānapadatthānaṃ yo yuttattho, so samāsasañño hoti”.",
+     "es": "Rū 331: «Tesaṃ nāmānaṃ payujjamānapadatthānaṃ yo yuttattho, so samāsasañño hoti»."
+    },
+    "nyasa": {
+     "en": "“tesaṃ nāmānaṃ payujjamānapadatthānaṃ yo yuttattho, so samāsasañño hotī ti ñāpanatthaṃ”.",
+     "es": "«tesaṃ nāmānaṃ payujjamānapadatthānaṃ yo yuttattho, so samāsasañño hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "317": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "en": "Elision of the inflections of the nouns that form a compound.",
+    "es": "Elisión de las inflexiones de los nombres que forman un compuesto."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 332: “tesaṃ yuttatthānaṃ samāsānaṃ, taddhitāyādippaccayantānañ ca vibhattiyo lopanīyā hontī”; “Caggahaṇaṃ ‘pabhaṅkaro’ ti ādīsu lopanivattanatthaṃ”.",
+     "es": "Rū 332: «tesaṃ yuttatthānaṃ samāsānaṃ, taddhitāyādippaccayantānañ ca vibhattiyo lopanīyā hontī»; «Caggahaṇaṃ “pabhaṅkaro” ti ādīsu lopanivattanatthaṃ»."
+    },
+    "nyasa": {
+     "en": "“tesaṃ yuttatthānaṃ samāsānaṃ vibhattiyo lopā hontī ti ñāpanatthaṃ”.",
+     "es": "«tesaṃ yuttatthānaṃ samāsānaṃ vibhattiyo lopā hontī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "By “tesaṃ” the vutti extends the elision to secondary derivatives, verbs and primary derivatives (Vāsiṭṭho); by “ca” it restricts it: in pabhaṅkaro, amatandado the inflection of the first member is not elided (Rū 332: “lopanivattanatthaṃ”). Determination: vidhi — lopa.",
+    "es": "Por «tesaṃ» la vutti extiende la elisión a los derivados secundarios, verbos y derivados primarios (Vāsiṭṭho); por «ca», la restringe: en pabhaṅkaro, amatandado la inflexión del primer miembro no se elide (Rū 332: «lopanivattanatthaṃ»). Determinación: vidhi — lopa."
+   }
+  },
+  "318": {
+   "tipo": "V",
+   "vidhi": "paṭisedha",
+   "op": {
+    "en": "After the inflections are elided, the vowel-final base keeps its natural form (pakati).",
+    "es": "Tras la elisión de las inflexiones, la base terminada en vocal conserva su forma natural (pakati)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 333: “Luttāsu vibhattīsu sarantassa assa yuttatthabhūtassa tividhassa pi liṅgassa pakatibhāvo hoti … Nimittābhāve nemittakābhāvassa idha anicchitattā ayam atideso”.",
+     "es": "Rū 333: «Luttāsu vibhattīsu sarantassa assa yuttatthabhūtassa tividhassa pi liṅgassa pakatibhāvo hoti … Nimittābhāve nemittakābhāvassa idha anicchitattā ayam atideso»."
+    },
+    "nyasa": {
+     "en": "(318-a) “luttāsu vibhattīsu assa samāsapadassa sarantassa pakatirūpāni hontī ti ñāpanatthaṃ”.",
+     "es": "(318-a) «luttāsu vibhattīsu assa samāsapadassa sarantassa pakatirūpāni hontī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Rū 333 calls it an atidesa (“ayam atideso”): even though the inflection, which was the cause, is gone, its effect is not meant to disappear. U Sīlānanda (class ch4-1, ~13:00–15:00) explains it as a prohibition: “this sutta prevents changes being made”. By the project rule, pakati = paṭisedha (Bhāsāṭīkā on §24). Determination: vidhi — paṭisedha.",
+    "es": "Rū 333 lo llama atidesa («ayam atideso»): aunque falte la inflexión, que era la causa, no se quiere que desaparezca su efecto. U Sīlānanda (clase ch4-1, ~13:00–15:00) lo explica como impedimento: «this sutta prevents changes being made». Por la regla del proyecto, pakati = paṭisedha (Bhāsāṭīkā al §24). Determinación: vidhi — paṭisedha."
+   }
+  },
+  "319": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "A compound whose first member is a prefix or a particle is named abyayībhāva (adverbial compound).",
+    "es": "El compuesto cuyo primer miembro es un prefijo o una partícula recibe el nombre de abyayībhāva (compuesto adverbial)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 330: “so ca samāso abyayībhāvasañño hoti. Idha abyayībhāvādisaññāvidhāyakasuttān’ eva vā saññāvidhānamukhena samāsavidhāyakānī ti daṭṭhabbāni”.",
+     "es": "Rū 330: «so ca samāso abyayībhāvasañño hoti. Idha abyayībhāvādisaññāvidhāyakasuttān’ eva vā saññāvidhānamukhena samāsavidhāyakānī ti daṭṭhabbāni»."
+    },
+    "nyasa": {
+     "en": "“upasaggapubbako nipātapubbako ca samāsasañño hoti abyayībhāvasañño cā ti ñāpanatthaṃ”.",
+     "es": "«upasaggapubbako nipātapubbako ca samāsasañño hoti abyayībhāvasañño cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Saññā by form. Rū 330 points out that these naming suttas are “saññāvidhānamukhena samāsavidhāyakāni”: in giving the name they also prescribe the compounding, which is not one of the eight vidhis; the Nyāsa says the same at §324, §327, §328 and §329 (“aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”). Determination: saññā.",
+    "es": "Saññā por la forma. Rū 330 advierte que estos suttas de nombre «saññāvidhānamukhena samāsavidhāyakāni»: al dar el nombre prescriben también la composición, que no es una de las ocho vidhis; Nyāsa dice lo mismo en los §324, §327, §328 y §329 («aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»). Determinación: saññā."
+   }
+  },
+  "320": {
+   "tipo": "V",
+   "vidhi": "liṅga-vacana",
+   "op": {
+    "en": "The abyayībhāva is of neuter gender.",
+    "es": "El abyayībhāva es de género neutro."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 335: “napuṃsakaliṅgattaṃ … na cā ’yaṃ atideso, sutte atidesaliṅgassa ivasaddassa adassanato”.",
+     "es": "Rū 335: «napuṃsakaliṅgattaṃ … na cā ’yaṃ atideso, sutte atidesaliṅgassa ivasaddassa adassanato»."
+    },
+    "nyasa": {
+     "en": "“so abyayībhāvasamāso napuṃsakaliṅgo va daṭṭhabbo ti ñāpanatthaṃ … napuṃsakaliṅgo ti kāriyātideso”.",
+     "es": "«so abyayībhāvasamāso napuṃsakaliṅgo va daṭṭhabbo ti ñāpanatthaṃ … napuṃsakaliṅgo ti kāriyātideso»."
+    }
+   },
+   "nota": {
+    "en": "The Nyāsa calls it an atidesa (“napuṃsakaliṅgo ti kāriyātideso”: the operations of the neuter apply to it); Rū 335 expressly denies it (“na cā ’yaṃ atideso”), because the sutta lacks “iva”, the mark of an atidesa. It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Nyāsa lo llama atidesa («napuṃsakaliṅgo ti kāriyātideso»: se le aplican las operaciones del neutro); Rū 335 lo niega expresamente («na cā ’yaṃ atideso»), porque el sutta no lleva «iva», la marca del atidesa. Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
+  },
+  "321": {
+   "tipo": "V",
+   "vidhi": "liṅga-vacana",
+   "op": {
+    "en": "The digu takes singular number and neuter gender.",
+    "es": "El digu toma número singular y género neutro."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 349: “Digussa samāsassa ekattaṃ hoti, napuṃsakaliṅgattañ ca”.",
+     "es": "Rū 349: «Digussa samāsassa ekattaṃ hoti, napuṃsakaliṅgattañ ca»."
+    },
+    "nyasa": {
+     "en": "“digusamāsassa ekattaṃ hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ”.",
+     "es": "«digusamāsassa ekattaṃ hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Rū 349 limits it to the collective digu (“samāhāradiguss’ etaṃ gahaṇaṃ”). It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Rū 349 lo limita al digu colectivo («samāhāradiguss’ etaṃ gahaṇaṃ»). Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
+  },
+  "322": {
+   "tipo": "V",
+   "vidhi": "liṅga-vacana",
+   "op": {
+    "en": "In a dvanda of parts of the body, musical instruments, parts of a vehicle and of an army, small creatures, natural enemies, opposites, etc., singular number and neuter gender.",
+    "es": "En el dvanda de partes del cuerpo, instrumentos musicales, partes de un vehículo y de un ejército, animales pequeños, enemigos naturales, opuestos, etc., número singular y género neutro."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 359: “samāhāradvandasamāse pi pāṇitūriyayoggasenaṅgatthānaṃ … ekattaṃ hoti, napuṃsakaliṅgattañ ca”.",
+     "es": "Rū 359: «samāhāradvandasamāse pi pāṇitūriyayoggasenaṅgatthānaṃ … ekattaṃ hoti, napuṃsakaliṅgattañ ca»."
+    },
+    "nyasa": {
+     "en": "“tathā dvandasamāse pāṇyaṅga-tūriyaṅga-yoggaṅga-senaṅga-khuddajantuka-vividhaviruddha-visabhāgattha icc evamādīnaṃ ekattañ ca hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ”.",
+     "es": "«tathā dvandasamāse pāṇyaṅga-tūriyaṅga-yoggaṅga-senaṅga-khuddajantuka-vividhaviruddha-visabhāgattha icc evamādīnaṃ ekattañ ca hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
+  },
+  "323": {
+   "tipo": "V",
+   "vidhi": "liṅga-vacana",
+   "op": {
+    "en": "Optionally, in a dvanda of trees, grasses, animals, riches, grains, countries, etc., singular number and neuter gender.",
+    "es": "Opcionalmente, en el dvanda de árboles, hierbas, animales, riquezas, granos, países, etc., número singular y género neutro."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 360: “ekattaṃ, napuṃsakaliṅgattañ ca vibhāsā hoti dvande samāse. Ekattābhāve bahuvacanaṃ, parass’ eva liṅgañ ca”.",
+     "es": "Rū 360: «ekattaṃ, napuṃsakaliṅgattañ ca vibhāsā hoti dvande samāse. Ekattābhāve bahuvacanaṃ, parass’ eva liṅgañ ca»."
+    },
+    "nyasa": {
+     "en": "“rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnam ekattañ ca napuṃsakaliṅgattañ ca hoti dvandasamāse vikappenā ti ñāpanatthaṃ … anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ”.",
+     "es": "«rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnam ekattañ ca napuṃsakaliṅgattañ ca hoti dvandasamāse vikappenā ti ñāpanatthaṃ … anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Optional counterpart of §322 (Nyāsa: “anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ”); without the singular, plural and the gender of the last member (Rū 360). It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Versión opcional del §322 (Nyāsa: «anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ»); sin singular, plural y el género del último miembro (Rū 360). Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
+  },
+  "324": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "Two words referring to the same thing, when compounded, form the compound named kammadhāraya (adjectival compound).",
+    "es": "Dos palabras que se refieren a la misma cosa, al componerse, forman el compuesto que recibe el nombre de kammadhāraya (compuesto adjetivo)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 339: “Dve padāni nāmikāni tulyādhikaraṇāni aññamaññena saha vibhāsā samasyante, tasmiṃ dvipade tulyādhikaraṇe sati so samāso kammadhārayasañño ca hoti”.",
+     "es": "Rū 339: «Dve padāni nāmikāni tulyādhikaraṇāni aññamaññena saha vibhāsā samasyante, tasmiṃ dvipade tulyādhikaraṇe sati so samāso kammadhārayasañño ca hoti»."
+    },
+    "nyasa": {
+     "en": "“dvipada icc etāni tulyādhikaraṇāni yadā samassante, tadā so samāso kammadhārayasañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”.",
+     "es": "«dvipada icc etāni tulyādhikaraṇāni yadā samassante, tadā so samāso kammadhārayasañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Saññā by form. Rū 330 points out that these naming suttas are “saññāvidhānamukhena samāsavidhāyakāni”: in giving the name they also prescribe the compounding, which is not one of the eight vidhis; the Nyāsa says the same at §324, §327, §328 and §329 (“aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”). Determination: saññā.",
+    "es": "Saññā por la forma. Rū 330 advierte que estos suttas de nombre «saññāvidhānamukhena samāsavidhāyakāni»: al dar el nombre prescriben también la composición, que no es una de las ocho vidhis; Nyāsa dice lo mismo en los §324, §327, §328 y §329 («aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»). Determinación: saññā."
+   }
+  },
+  "325": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "A kammadhāraya whose first member is a numeral is named digu (numeral compound).",
+    "es": "El kammadhāraya cuyo primer miembro es un numeral recibe el nombre de digu (compuesto numérico)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 348: “Saṅkhyāpubbo kammadhāraya-samāso digusañño hoti”.",
+     "es": "Rū 348: «Saṅkhyāpubbo kammadhāraya-samāso digusañño hoti»."
+    },
+    "nyasa": {
+     "en": "“saṅkhyāpubbo kammadhārayasamāso digusañño hotī ti ñāpanatthaṃ”.",
+     "es": "«saṅkhyāpubbo kammadhārayasamāso digusañño hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "326": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The kammadhāraya and the digu are also named tappurisa (determinative compound).",
+    "es": "El kammadhāraya y el digu reciben también el nombre de tappurisa (compuesto determinativo)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 341: “Ubhe kammadhāraya-digusamāsā tappurisasaññā honti”.",
+     "es": "Rū 341: «Ubhe kammadhāraya-digusamāsā tappurisasaññā honti»."
+    },
+    "nyasa": {
+     "en": "“ubhe digukammadhārayasamāsā tappurisasaññā hontī ti ñāpanatthaṃ”.",
+     "es": "«ubhe digukammadhārayasamāsā tappurisasaññā hontī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "327": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "A word in the second inflection, etc., compounded with a following noun forms the compound named tappurisa (determinative compound).",
+    "es": "La palabra en segunda inflexión, etc., compuesta con un nombre siguiente forma el compuesto que recibe el nombre de tappurisa (compuesto determinativo)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 351: “Amādivibhatyantāni yuttatthāni pubbapadāni nāmehi parapadebhi saha vibhāsā samasyante, so samāso tappurisasañño hoti”.",
+     "es": "Rū 351: «Amādivibhatyantāni yuttatthāni pubbapadāni nāmehi parapadebhi saha vibhāsā samasyante, so samāso tappurisasañño hoti»."
+    },
+    "nyasa": {
+     "en": "“tā amādayo vibhattiyo yadā parapadebhi nāmehi samassante, tadā so samāso tappurisasañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”.",
+     "es": "«tā amādayo vibhattiyo yadā parapadebhi nāmehi samassante, tadā so samāso tappurisasañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Saññā by form. Rū 330 points out that these naming suttas are “saññāvidhānamukhena samāsavidhāyakāni”: in giving the name they also prescribe the compounding, which is not one of the eight vidhis; the Nyāsa says the same at §324, §327, §328 and §329 (“aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”). Determination: saññā.",
+    "es": "Saññā por la forma. Rū 330 advierte que estos suttas de nombre «saññāvidhānamukhena samāsavidhāyakāni»: al dar el nombre prescriben también la composición, que no es una de las ocho vidhis; Nyāsa dice lo mismo en los §324, §327, §328 y §329 («aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»). Determinación: saññā."
+   }
+  },
+  "328": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "Nouns compounded in the sense of another word form the compound named bahubbīhi (relative compound).",
+    "es": "Nombres compuestos en el significado de otra palabra forman el compuesto que recibe el nombre de bahubbīhi (compuesto relativo)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 352: “Samasyamānapadato aññesaṃ … padānam atthesu yuttatthāni nāmāni vibhāsā samasyante, so samāso bahubbīhisañño ca hoti”.",
+     "es": "Rū 352: «Samasyamānapadato aññesaṃ … padānam atthesu yuttatthāni nāmāni vibhāsā samasyante, so samāso bahubbīhisañño ca hoti»."
+    },
+    "nyasa": {
+     "en": "“aññesaṃ padānaṃ atthesu nāmāni yadā samassante, tadā so samāso bahubbīhisañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”.",
+     "es": "«aññesaṃ padānaṃ atthesu nāmāni yadā samassante, tadā so samāso bahubbīhisañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Saññā by form. Rū 330 points out that these naming suttas are “saññāvidhānamukhena samāsavidhāyakāni”: in giving the name they also prescribe the compounding, which is not one of the eight vidhis; the Nyāsa says the same at §324, §327, §328 and §329 (“aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”). Determination: saññā.",
+    "es": "Saññā por la forma. Rū 330 advierte que estos suttas de nombre «saññāvidhānamukhena samāsavidhāyakāni»: al dar el nombre prescriben también la composición, que no es una de las ocho vidhis; Nyāsa dice lo mismo en los §324, §327, §328 y §329 («aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»). Determinación: saññā."
+   }
+  },
+  "329": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The collection of nouns in the same inflection is named dvanda (copulative compound).",
+    "es": "La colección de nombres con la misma inflexión recibe el nombre de dvanda (compuesto copulativo)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 357: “Nānānāmānam eva ekavibhattikānaṃ yuttatthānaṃ yo samuccayo, so vibhāsā samāso bhavati, dvandasañño ca”.",
+     "es": "Rū 357: «Nānānāmānam eva ekavibhattikānaṃ yuttatthānaṃ yo samuccayo, so vibhāsā samāso bhavati, dvandasañño ca»."
+    },
+    "nyasa": {
+     "en": "“ekavibhattikānaṃ nāmānaṃ yo samuccayo, so dvandasañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”.",
+     "es": "«ekavibhattikānaṃ nāmānaṃ yo samuccayo, so dvandasañño hotī ti … idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Saññā by form. Rū 330 points out that these naming suttas are “saññāvidhānamukhena samāsavidhāyakāni”: in giving the name they also prescribe the compounding, which is not one of the eight vidhis; the Nyāsa says the same at §324, §327, §328 and §329 (“aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ”). Determination: saññā.",
+    "es": "Saññā por la forma. Rū 330 advierte que estos suttas de nombre «saññāvidhānamukhena samāsavidhāyakāni»: al dar el nombre prescriben también la composición, que no es una de las ocho vidhis; Nyāsa dice lo mismo en los §324, §327, §328 y §329 («aññassa samāsavidhāyakassa abhāvā idam pi saññāvidhānamukhena samāsavidhāyakan ti daṭṭhabbaṃ»). Determinación: saññā."
+   }
+  },
+  "330": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Substitution of “mahanta” by ‘mahā’ (and, by the plural, sometimes by ‘maha’) before a member referring to the same thing.",
+    "es": "Sustitución de “mahanta” por ‘mahā’ (y, por el plural, a veces por ‘maha’) ante un miembro que se refiere a la misma cosa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 340: “Mahantasaddassa mahā hoti tulyādhikaraṇe uttarapade pare. Mahatan ti bahuvacanaggahaṇena kvaci maha-ādeso ca”.",
+     "es": "Rū 340: «Mahantasaddassa mahā hoti tulyādhikaraṇe uttarapade pare. Mahatan ti bahuvacanaggahaṇena kvaci maha-ādeso ca»."
+    },
+    "nyasa": {
+     "en": "“mahantasaddassa mahā-ādeso hoti tulyādhikaraṇe pade … bahuvacananiddeso mahantasaddassa maha icc ādeso hotī ti ñāpanatthaṃ”.",
+     "es": "«mahantasaddassa mahā-ādeso hoti tulyādhikaraṇe pade … bahuvacananiddeso mahantasaddassa maha icc ādeso hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "331": {
+   "tipo": "V",
+   "vidhi": "atidesa",
+   "op": {
+    "en": "A feminine that formerly denoted a masculine, before a feminine member referring to the same thing, is treated as masculine: it loses the feminine suffix (extension, atidesa).",
+    "es": "Un femenino que antes indicó masculino, ante un miembro femenino que se refiere a la misma cosa, se considera como masculino: pierde el sufijo femenino (extensión, atidesa)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 353: “so pumā iva daṭṭhabbo ti pubbapade itthippaccayābhāvo, bahubbīhivisayo ’yaṃ”.",
+     "es": "Rū 353: «so pumā iva daṭṭhabbo ti pubbapade itthippaccayābhāvo, bahubbīhivisayo ’yaṃ»."
+    },
+    "nyasa": {
+     "en": "(331, inside the section of 330) “itthiyaṃ tulyādhikaraṇe pade ce bhāsitapumitthī, pumā va daṭṭhabbā ti ñāpanatthaṃ”.",
+     "es": "(331, dentro de la sección del 330) «itthiyaṃ tulyādhikaraṇe pade ce bhāsitapumitthī, pumā va daṭṭhabbā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Rū 353 limits it to the bahubbīhi (dīghajaṅgho), since §332 deals with the kammadhāraya. The Rūpasiddhi calls it a pumbhāvātidesa, an extension of masculine status, for the first member only (“pubbapadass’ ev’ āyaṃ pumbhāvātideso”); the effect is that the first member loses its feminine suffix. Like §187, none of the eight vidhis. Determination: vidhi — atidesa.",
+    "es": "Rū 353 lo limita al bahubbīhi (dīghajaṅgho), pues el §332 trata el kammadhāraya. Rū lo llama pumbhāvātidesa, extensión de la condición de masculino, y solo al primer miembro («pubbapadass’ ev’ āyaṃ pumbhāvātideso»); el efecto es que el primer miembro pierde el sufijo femenino. Como el §187, ninguna de las ocho vidhis. Determinación: vidhi — atidesa."
+   }
+  },
+  "332": {
+   "tipo": "V",
+   "vidhi": "atidesa",
+   "op": {
+    "en": "The same in the kammadhāraya: a feminine first member that formerly denoted a masculine is treated as masculine (khattiyakaññā; extension, atidesa).",
+    "es": "Lo mismo en el kammadhāraya: el primer miembro femenino que antes indicó masculino se considera como masculino (khattiyakaññā; extensión, atidesa)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 343: “pubbapade itthippaccayassa nivatti hoti … Pubbapadass’ evā ’yaṃ pumbhāvātideso”.",
+     "es": "Rū 343: «pubbapade itthippaccayassa nivatti hoti … Pubbapadass’ evā ’yaṃ pumbhāvātideso»."
+    },
+    "nyasa": {
+     "en": "(the OCR heads the section “322”) “kammadhārayasaññe ca samāse itthiyaṃ tulyādhikaraṇe pade sace pubbe bhāsitapumā idāni itthivācako, so pumā va daṭṭhabbo ti ñāpanatthaṃ”.",
+     "es": "(el OCR rotula la sección «322») «kammadhārayasaññe ca samāse itthiyaṃ tulyādhikaraṇe pade sace pubbe bhāsitapumā idāni itthivācako, so pumā va daṭṭhabbo ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "The Rūpasiddhi calls it a pumbhāvātidesa, an extension of masculine status, for the first member only (“pubbapadass’ ev’ āyaṃ pumbhāvātideso”); the effect is that the first member loses its feminine suffix. Like §187, none of the eight vidhis. Determination: vidhi — atidesa.",
+    "es": "Rū lo llama pumbhāvātidesa, extensión de la condición de masculino, y solo al primer miembro («pubbapadass’ ev’ āyaṃ pumbhāvātideso»); el efecto es que el primer miembro pierde el sufijo femenino. Como el §187, ninguna de las ocho vidhis. Determinación: vidhi — atidesa."
+   }
+  },
+  "333": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Substitution of “na” by ‘a’ in the tappurisa.",
+    "es": "Sustitución de “na” por ‘a’ en el tappurisa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 344: “Nassa nipātapadassa tappurise uttarapade pare sabbass’ eva attaṃ hoti”.",
+     "es": "Rū 344: «Nassa nipātapadassa tappurise uttarapade pare sabbass’ eva attaṃ hoti»."
+    },
+    "nyasa": {
+     "en": "“nassa padassa tappurisekadesattā tappurise uttarapade attaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "«nassa padassa tappurisekadesattā tappurise uttarapade attaṃ hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "334": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Substitution of “na” by ‘an’ in the tappurisa when a vowel follows.",
+    "es": "Sustitución de “na” por ‘an’ en el tappurisa cuando sigue una vocal."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 345: “Na icc etassa padassa tappurise uttarapade an hoti sare pare”.",
+     "es": "Rū 345: «Na icc etassa padassa tappurise uttarapade an hoti sare pare»."
+    },
+    "nyasa": {
+     "en": "“sare pare nassa padassa sabbass’ eva anādeso hotī ti ñāpanatthaṃ”.",
+     "es": "«sare pare nassa padassa sabbass’ eva anādeso hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "335": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Substitution of “ku” by ‘kad’ when a vowel follows.",
+    "es": "Sustitución de “ku” por ‘kad’ cuando sigue una vocal."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 346: “Ku icc etassa nipātassa tappurise uttarapade kad hoti sare pare”.",
+     "es": "Rū 346: «Ku icc etassa nipātassa tappurise uttarapade kad hoti sare pare»."
+    },
+    "nyasa": {
+     "en": "“ku icc etassa sare pare kad ādeso hotī ti ñāpanatthaṃ”.",
+     "es": "«ku icc etassa sare pare kad ādeso hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "336": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Substitution of “ku” by ‘kā’ in the sense of little (and, by the plural, sometimes in that of contemptible).",
+    "es": "Sustitución de “ku” por ‘kā’ en el sentido de poco (y, por el plural, a veces en el de despreciable)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 347: “Ku icc etassa appatthe vattamānassa kā hoti tappurise uttarapade pare. Bahuvacanuccāraṇato kucchitatthe ca kvaci”.",
+     "es": "Rū 347: «Ku icc etassa appatthe vattamānassa kā hoti tappurise uttarapade pare. Bahuvacanuccāraṇato kucchitatthe ca kvaci»."
+    },
+    "nyasa": {
+     "en": "“ku icc etassa kā ādeso hoti appatthesū ti ñāpanatthaṃ”.",
+     "es": "«ku icc etassa kā ādeso hoti appatthesū ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "339": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Substitution of “jāyā” by ‘tudaṃ’ and ‘jāni’ when “pati” follows.",
+    "es": "Sustitución de “jāyā” por ‘tudaṃ’ y ‘jāni’ cuando sigue “pati”."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 358: “Jāyāsaddassa tudaṃ jāni icc ete ādesā honti patisadde pare kvaci”.",
+     "es": "Rū 358: «Jāyāsaddassa tudaṃ jāni icc ete ādesā honti patisadde pare kvaci»."
+    },
+    "nyasa": {
+     "en": "“jāyā icc etāya tudaṃ jāni icc ete ādesā honti patimhi pare ti ñāpanatthaṃ”.",
+     "es": "«jāyā icc etāya tudaṃ jāni icc ete ādesā honti patimhi pare ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "U Sīlānanda (class ch4-4, ~61:00–67:00) cites Moggallāna’s view: “jānipatī ti pakatyantarena siddhaṃ”, i.e. “jāni” would be another word, not a substitute for “jāyā” (reading of the recording not certain). Determination: vidhi — ādesa.",
+    "es": "U Sīlānanda (clase ch4-4, ~61:00–67:00) cita la opinión de Moggallāna: «jānipatī ti pakatyantarena siddhaṃ», es decir, “jāni” sería otra palabra y no una sustitución de “jāyā” (lectura de la grabación no segura). Determinación: vidhi — ādesa."
+   }
+  },
+  "337": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Sometimes, substitution of the final vowel of a noun at the end of a compound by ‘a’ (devarājo, pañcāhaṃ).",
+    "es": "A veces, sustitución de la vocal final de un nombre al final de un compuesto por ‘a’ (devarājo, pañcāhaṃ)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 350: “samāsantagatānaṃ rājādīnaṃ nāmānaṃ anto kvaci akāro hotī … Atha vā a ca ko ca akā … a ka icc ete paccayā hontī”.",
+     "es": "Rū 350: «samāsantagatānaṃ rājādīnaṃ nāmānaṃ anto kvaci akāro hotī … Atha vā a ca ko ca akā … a ka icc ete paccayā hontī»."
+    },
+    "nyasa": {
+     "en": "“samāsantagatānaṃ nāmānaṃ anto kvaci akārādeso hotī ti ñāpanatthaṃ”.",
+     "es": "«samāsantagatānaṃ nāmānaṃ anto kvaci akārādeso hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "The Nyāsa (“akārādeso”) and U Sīlānanda (class ch4-4, ~41:00: “akāro means substitution”) read it as a substitution. Rū 350 gives another reading too: “akā”, the suffixes ‘a’ and ‘ka’ at the end of the compound (pañcagavaṃ, āpāṇakoṭikaṃ), and by “kāra” the suffix ‘ka’ in the bahubbīhi. Determination: vidhi — ādesa.",
+    "es": "Nyāsa («akārādeso») y U Sīlānanda (clase ch4-4, ~41:00: «akāro means substitution») lo leen como sustitución. Rū 350 da además otra lectura: «akā», los sufijos ‘a’ y ‘ka’ al final del compuesto (pañcagavaṃ, āpāṇakoṭikaṃ), y por «kāra» el sufijo ‘ka’ en el bahubbīhi. Determinación: vidhi — ādesa."
+   }
+  },
+  "338": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "en": "Suffix ‘ka’ after “nadī” at the end of a compound (bahunadiko).",
+    "es": "Sufijo ‘ka’ tras “nadī” al final de un compuesto (bahunadiko)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 356: “Samāsantagatā nadimhā kappaccayo hoti, casaddena tu-antā ca … Nadī ti c’ ettha itthivācakānaṃ īkār’-ūkārānaṃ parasamaññā”.",
+     "es": "Rū 356: «Samāsantagatā nadimhā kappaccayo hoti, casaddena tu-antā ca … Nadī ti c’ ettha itthivācakānaṃ īkār’-ūkārānaṃ parasamaññā»."
+    },
+    "nyasa": {
+     "en": "“nadimhā ca kapaccayo hoti samāsante ti ñāpanatthaṃ”.",
+     "es": "«nadimhā ca kapaccayo hoti samāsante ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "For Rū 356 “nadī” is here the technical name of every feminine in ‘ī’ or ‘ū’ (bahujambukaṃ), and by “ca” also stems in ‘tu’ (bahukattuko). Determination: vidhi — paccaya.",
+    "es": "Para Rū 356 «nadī» es aquí el nombre técnico de todo femenino en ‘ī’ o ‘ū’ (bahujambukaṃ), y por «ca» también los temas en ‘tu’ (bahukattuko). Determinación: vidhi — paccaya."
+   }
+  },
+  "340": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "en": "Suffix ‘ā’ after “dhanu” at the end of a compound (gāṇḍīvadhanvā).",
+    "es": "Sufijo ‘ā’ tras “dhanu” al final de un compuesto (gāṇḍīvadhanvā)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 355: “Kvaci samāsantagatā dhanusaddā āpaccayo hoti, casaddena dhammādito ca”.",
+     "es": "Rū 355: «Kvaci samāsantagatā dhanusaddā āpaccayo hoti, casaddena dhammādito ca»."
+    },
+    "nyasa": {
+     "en": "“dhanumhā ca āpaccayo hotī ti ñāpanatthaṃ”.",
+     "es": "«dhanumhā ca āpaccayo hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "341": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "en": "Sometimes, substitution of the inflections by ‘aṃ’ after an abyayībhāva ending in ‘a’ (upanagaraṃ).",
+    "es": "A veces, sustitución de las inflexiones por ‘aṃ’ tras un abyayībhāva terminado en ‘a’ (upanagaraṃ)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 336: “akārantā abyayībhāvā parāsaṃ vibhattīnaṃ kvaci aṃ hoti” and the verse “Na pañcamyāyam ambhāvo, kvaci ti adhikārato; tatiyāsattamī-chaṭṭhīnan tu hoti vikappato”.",
+     "es": "Rū 336: «akārantā abyayībhāvā parāsaṃ vibhattīnaṃ kvaci aṃ hoti» y la estrofa «Na pañcamyāyam ambhāvo, kvaci ti adhikārato; tatiyāsattamī-chaṭṭhīnan tu hoti vikappato»."
+    },
+    "nyasa": {
+     "en": "“tasmā akārantā abyayībhāvasamāsā parāsaṃ vibhattīnaṃ kvaci amādeso hotī ti ñāpanatthaṃ”.",
+     "es": "«tasmā akārantā abyayībhāvasamāsā parāsaṃ vibhattīnaṃ kvaci amādeso hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "By “kvaci”, Rū 336: never before the fifth; before the third, seventh and sixth, optional. Determination: vidhi — ādesa.",
+    "es": "Por «kvaci», Rū 336: nunca ante la quinta; ante la tercera, la séptima y la sexta, opcional. Determinación: vidhi — ādesa."
+   }
+  },
+  "342": {
+   "tipo": "V",
+   "vidhi": "rassa",
+   "op": {
+    "en": "Shortening of the final vowel of the compound in the neuter (upagaṅgaṃ).",
+    "es": "Acortamiento de la vocal final del compuesto en neutro (upagaṅgaṃ)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 337: “Napuṃsake vattamānassa samāsassa anto saro rasso hoti. Ettha ca abyayībhāvaggahaṇaṃ n’ ānuvattetabbaṃ”.",
+     "es": "Rū 337: «Napuṃsake vattamānassa samāsassa anto saro rasso hoti. Ettha ca abyayībhāvaggahaṇaṃ n’ ānuvattetabbaṃ»."
+    },
+    "nyasa": {
+     "en": "“napuṃsake liṅge vattamānassa abyayībhāvasamāsassa saro rasso hotī ti ñāpanatthaṃ”.",
+     "es": "«napuṃsake liṅge vattamānassa abyayībhāvasamāsassa saro rasso hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Scope disputed: the vutti and the Nyāsa speak of the abyayībhāva; Rū 337 says “abyayībhāva” does not carry over here, so it also applies to the digu, dvanda and bahubbīhi in the neuter (catuddisaṃ, mukhanāsikaṃ). Determination: vidhi — rassa.",
+    "es": "Alcance discutido: la vutti y Nyāsa hablan del abyayībhāva; Rū 337 dice que «abyayībhāva» no sigue vigente aquí, de modo que vale también para el digu, el dvanda y el bahubbīhi en neutro (catuddisaṃ, mukhanāsikaṃ). Determinación: vidhi — rassa."
+   }
+  },
+  "343": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "en": "Elision of the inflections after an abyayībhāva not ending in ‘a’ (adhitthi, upavadhu).",
+    "es": "Elisión de las inflexiones tras un abyayībhāva no terminado en ‘a’ (adhitthi, upavadhu)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 338: “Akārantato aññasmā abyayībhāvasamāsā parāsaṃ vibhattīnaṃ lopo ca hoti”.",
+     "es": "Rū 338: «Akārantato aññasmā abyayībhāvasamāsā parāsaṃ vibhattīnaṃ lopo ca hoti»."
+    },
+    "nyasa": {
+     "en": "“aññasmā abyayībhāvasamāsā anakārantā parāsaṃ vibhattīnaṃ lopo hotī ti ñāpanatthaṃ”.",
+     "es": "«aññasmā abyayībhāvasamāsā anakārantā parāsaṃ vibhattīnaṃ lopo hotī ti ñāpanatthaṃ»."
+    }
    }
   }
  }
