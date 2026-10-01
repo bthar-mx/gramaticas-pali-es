@@ -117,6 +117,20 @@ RECURSOS = [
      "o más para cada uso y la concordancia con Kaccāyana y Saddanīti. Dos "
      "órdenes —el de la Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
      "que enseña de dónde viene cada traducción. Borrador en revisión."),
+    ("clasificacion/", "__CLASIFICACION_BADGE__",
+     "Clasificación de los suttas de Kaccāyana",
+     "Cada aforismo del Sandhi-Kappa y del Nāma-Kappa clasificado según "
+     "los cuatro tipos de sutta —saññā, adhikāra, paribhāsā y vidhi— y, "
+     "cuando es vidhi, según las ocho operaciones (lopa, dīgha, rassa, "
+     "ādesa, āgama, paṭisedha, paccaya y vibhatti), con la operación "
+     "descrita en una frase. Cada decisión se apoya en la "
+     "<i>Rūpasiddhi</i> y el <i>Nyāsa</i>, contrastados con la "
+     "<i>Bhāsāṭīkā</i>, el <i>Saddanīti</i> y las clases del Ven. U "
+     "Sīlānanda; donde la tradición discrepa, se expone la divergencia y "
+     "se justifica la determinación. Para el estudiante, un mapa de qué "
+     "hace cada regla; para el investigador, las fuentes de cada "
+     "clasificación. Cada aforismo enlaza a su texto y traducción. "
+     "Borrador en revisión."),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: el <i>Glosario de términos "
@@ -301,6 +315,31 @@ EN = {
         "Saddanīti. Two orders —the Rūpasiddhi's and Kaccāyana's— and a review "
         "mode that shows where each translation comes from. Draft under review; "
         "the page itself is in Spanish.",
+    "Clasificación de los suttas de Kaccāyana":
+        "Classification of the Kaccāyana suttas",
+    "Cada aforismo del Sandhi-Kappa y del Nāma-Kappa clasificado según "
+    "los cuatro tipos de sutta —saññā, adhikāra, paribhāsā y vidhi— y, "
+    "cuando es vidhi, según las ocho operaciones (lopa, dīgha, rassa, "
+    "ādesa, āgama, paṭisedha, paccaya y vibhatti), con la operación "
+    "descrita en una frase. Cada decisión se apoya en la "
+    "<i>Rūpasiddhi</i> y el <i>Nyāsa</i>, contrastados con la "
+    "<i>Bhāsāṭīkā</i>, el <i>Saddanīti</i> y las clases del Ven. U "
+    "Sīlānanda; donde la tradición discrepa, se expone la divergencia y "
+    "se justifica la determinación. Para el estudiante, un mapa de qué "
+    "hace cada regla; para el investigador, las fuentes de cada "
+    "clasificación. Cada aforismo enlaza a su texto y traducción. "
+    "Borrador en revisión.":
+        "Every aphorism of the Sandhi-Kappa and the Nāma-Kappa classified by "
+        "the four kinds of sutta —saññā, adhikāra, paribhāsā and vidhi— and, "
+        "when it is a vidhi, by the eight operations (lopa, dīgha, rassa, "
+        "ādesa, āgama, paṭisedha, paccaya and vibhatti), with the operation "
+        "stated in one sentence. Each decision rests on the <i>Rūpasiddhi</i>"
+        " and the <i>Nyāsa</i>, checked against the <i>Bhāsāṭīkā</i>, the "
+        "<i>Saddanīti</i> and the Ven. U Sīlānanda's classes; where the "
+        "tradition disagrees, the divergence is set out and the determination"
+        " justified. For students, a map of what each rule does; for "
+        "scholars, the sources behind every classification. Each aphorism "
+        "links to its text and translation. Draft under review.",
     "Glosario de terminología gramatical": "Glossary of grammatical terminology",
     "Los términos técnicos de la gramática pāḷi en una sola lista "
     "alfabética, con tres capas por lema: el <i>Glosario de términos "
@@ -572,6 +611,17 @@ def cuenta_casos():
     return usos, ej, d.get("version", "")
 
 
+def cuenta_clasificacion():
+    """(aforismos, con nota, versión) de recursos/clasificacion/datos.json."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "clasificacion", "datos.json")
+    if not os.path.exists(p):
+        return None
+    d = json.load(open(p, encoding="utf-8"))
+    s = d.get("suttas", {})
+    return len(s), sum(1 for e in s.values() if "nota" in e), d.get("version", "")
+
+
 def cuenta_raices():
     """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
     import json
@@ -819,8 +869,13 @@ def indice_recursos():
     badge_cas = (bi("{0} usos · {1} ejemplos · v{2} borrador".format(*n_cas),
                     "{0} uses · {1} examples · v{2} draft".format(*n_cas))
                  if n_cas else "casos")
+    n_cla = cuenta_clasificacion()
+    badge_cla = (bi("{0} aforismos · {1} notas · v{2} borrador".format(*n_cla),
+                    "{0} aphorisms · {1} notes · v{2} draft".format(*n_cla))
+                 if n_cla else "clasificación")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
                  "__CASOS_BADGE__": badge_cas,
+                 "__CLASIFICACION_BADGE__": badge_cla,
                  "__GLOSARIO_BADGE__": badge_glo,
                  "__RAICES_BADGE__": badge_rai, "__VERBO_BADGE__": badge_ver,
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
@@ -831,7 +886,8 @@ def indice_recursos():
                 if (ins != "__RAICES_BADGE__" or n_rai)
                 and (ins != "__VERBO_BADGE__" or n_ver)
                 and (ins != "__GLOSARIO_BADGE__" or n_glo)
-                and (ins != "__CASOS_BADGE__" or n_cas)]
+                and (ins != "__CASOS_BADGE__" or n_cas)
+                and (ins != "__CLASIFICACION_BADGE__" or n_cla)]
 
     # Un quinto elemento True marca la insignia como obra en curso.
     externas = [tarjeta(href, ins, titulo, desc, externo=True,
