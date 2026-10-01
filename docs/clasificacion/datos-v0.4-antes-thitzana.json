@@ -1,10 +1,10 @@
 {
- "version": "0.5",
+ "version": "0.4",
  "fecha": "2026-10-01",
  "estado": "borrador",
  "nota_version": {
-  "es": "Se sigue el esquema de ocho vidhis según Thitzana: vuddhi, pakati, atidesa y demás operaciones sin clase propia pasan a ādesa, con una etiqueta que las nombra.",
-  "en": "The eight-fold scheme of vidhis is followed as Thitzana explains it: vuddhi, pakati, atidesa and the other operations without a class of their own go under ādesa, with a tag that names them."
+  "es": "Se añade el Taddhita-Kappa (§344–§405). Contiene ya los capítulos 1 a 5.",
+  "en": "Adds the Taddhita-Kappa (§344–§405). Now covers chapters 1 to 5."
  },
  "capitulos": [
   {
@@ -84,8 +84,8 @@
    "en": "shortening"
   },
   "ādesa": {
-   "es": "sustitución; según Thitzana, incluye también vuddhi, vipariyāya, pakati, atidesa, etc.",
-   "en": "substitution; according to Thitzana, it also includes vuddhi, vipariyāya, pakati, atidesa, etc."
+   "es": "sustitución",
+   "en": "substitution"
   },
   "āgama": {
    "es": "inserción",
@@ -102,6 +102,36 @@
   "vibhatti": {
    "es": "inflexión",
    "en": "inflection"
+  },
+  "atidesa": {
+   "es": "extensión (no es una de las ocho)",
+   "en": "extension (not one of the eight)",
+   "fuera": true
+  },
+  "liṅga-vacana": {
+   "es": "asignación de género y número (no es una de las ocho)",
+   "en": "assignment of gender and number (not one of the eight)",
+   "fuera": true
+  },
+  "vuddhi": {
+   "es": "fortalecimiento (no es una de las ocho; provisional)",
+   "en": "strengthening (not one of the eight; provisional)",
+   "fuera": true
+  },
+  "vikāra": {
+   "es": "cambio (no es una de las ocho)",
+   "en": "change (not one of the eight)",
+   "fuera": true
+  },
+  "viparīta": {
+   "es": "inversión (no es una de las ocho)",
+   "en": "inversion (not one of the eight)",
+   "fuera": true
+  },
+  "nipātana": {
+   "es": "formación por nipātana (no es una de las ocho)",
+   "en": "formation by nipātana (not one of the eight)",
+   "fuera": true
   }
  },
  "suttas": {
@@ -527,7 +557,7 @@
   },
   "23": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "paṭisedha",
    "op": {
     "en": "When a consonant follows, vowels keep their natural form (no change).",
     "es": "Cuando sigue una consonante, las vocales conservan su forma natural (ningún cambio)."
@@ -540,21 +570,16 @@
     "nyasa": {
      "en": "“pakatibhāvaṃ katvā”.",
      "es": "«pakatibhāvaṃ katvā»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la pakati, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (pakati, under ādesa)."
     }
    },
    "nota": {
-    "es": "La pakati (conservar la forma natural) no figura por su nombre entre las ocho vidhis. Thitzana (vol. 2, Introducción, pp. 36–37) la cuenta dentro de la ādesa («Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included»), y así se clasifica aquí. La Bhāsāṭīkā, en cambio, llama al sutta hermano §24 paṭisedha-vidhi-sutta, porque impide toda operación. Añade que §23 va primero para que «byañjane» siga por adhikāra en toda la tercera sección. Determinación: vidhi — ādesa (pakati).",
-    "en": "Pakati (keeping the natural form) is not named among the eight vidhis. Thitzana (vol. 2, Introduction, pp. 36–37) counts it under ādesa (“Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”), and it is so classified here. The Bhāsāṭīkā, by contrast, calls the sister sutta §24 a paṭisedha-vidhi-sutta, since it blocks every operation. It adds that §23 is placed first so that “byañjane” runs by adhikāra over the whole third section. Determination: vidhi — ādesa (pakati)."
-   },
-   "grupo": "pakati"
+    "en": "Pakati (keeping the natural form) is not among the eight. The Bhāsāṭīkā calls the sister sutta §24 a paṭisedha-vidhi-sutta, since it blocks every operation; the same applies here. It adds that §23 is placed first so that “byañjane” runs by adhikāra over the whole third section.",
+    "es": "La pakati (conservar la forma natural) no está entre las ocho. La Bhāsāṭīkā llama al sutta hermano §24 paṭisedha-vidhi-sutta, porque impide toda operación; lo mismo vale aquí. Añade que §23 va primero para que «byañjane» siga por adhikāra en toda la tercera sección."
+   }
   },
   "24": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "paṭisedha",
    "op": {
     "en": "Sometimes, when a vowel follows, vowels keep their natural form (no elision, substitution or change).",
     "es": "A veces, cuando sigue una vocal, las vocales conservan su forma natural (sin elisión, sustitución ni cambio)."
@@ -567,17 +592,12 @@
     "nyasa": {
      "en": "“pakatibhāvaṃ katvā”.",
      "es": "«pakatibhāvaṃ katvā»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la pakati, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (pakati, under ādesa)."
     }
    },
    "nota": {
-    "es": "La Bhāsāṭīkā lo llama paṭisedha-vidhi-sutta (impide las operaciones de todos los suttas vocálicos anteriores). Se sigue a Thitzana (vol. 2, Introducción, pp. 36–37), que cuenta la pakati dentro de la ādesa, como en el §23. Determinación: vidhi — ādesa (pakati).",
-    "en": "The Bhāsāṭīkā calls it a paṭisedha-vidhi-sutta (it prevents the operations of all the preceding vowel suttas). Thitzana (vol. 2, Introduction, pp. 36–37) is followed, who counts pakati under ādesa, as in §23. Determination: vidhi — ādesa (pakati)."
-   },
-   "grupo": "pakati"
+    "en": "The Bhāsāṭīkā: paṭisedha-vidhi-sutta (it prevents the operations of all the preceding vowel suttas).",
+    "es": "La Bhāsāṭīkā: paṭisedha-vidhi-sutta (impide las operaciones de todos los suttas vocálicos anteriores)."
+   }
   },
   "25": {
    "tipo": "V",
@@ -699,8 +719,8 @@
     }
    },
    "nota": {
-    "es": "Apavāda (Rū): impide la elisión y la sustitución del niggahita ante consonante. Formalmente «aṃ iti hoti», funcionalmente una interdicción; se clasifica paṭisedha. Podría verse también como una pakati del niggahita, que Thitzana contaría en la ādesa (§23, §24); queda paṭisedha por su función de apavāda, por confirmar. Determinación: vidhi — paṭisedha.",
-    "en": "Apavāda (Rū): it blocks the elision and substitution of the niggahita before a consonant. Formally “aṃ iti hoti”, functionally a prohibition; classified paṭisedha. It could also be read as a pakati of the niggahita, which Thitzana would count under ādesa (§23, §24); it stays paṭisedha for its apavāda function, to be confirmed. Determination: vidhi — paṭisedha."
+    "en": "Apavāda (Rū): it blocks the elision and substitution of the niggahita before a consonant. Formally “aṃ iti hoti”, functionally a prohibition; classified paṭisedha as with pakati (§23).",
+    "es": "Apavāda (Rū): impide la elisión y la sustitución del niggahita ante consonante. Formalmente «aṃ iti hoti», funcionalmente una interdicción; se clasifica paṭisedha, como la pakati (§23)."
    }
   },
   "31": {
@@ -1081,7 +1101,7 @@
   },
   "51": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "atidesa",
    "op": {
     "en": "Prefixes and particles whose forms have not been shown are formed by the sandhi rules already given (extension, atidesa).",
     "es": "Los prefijos y partículas cuyas formas no se han mostrado se forman con las reglas de combinación ya dadas (extensión, atidesa)."
@@ -1094,17 +1114,12 @@
     "nyasa": {
      "en": "“vuttānusārena ñātabbā ti ñāpanatthaṃ” (no type label).",
      "es": "«vuttānusārena ñātabbā ti ñāpanatthaṃ» (sin etiqueta de tipo)."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la atidesa, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (atidesa, under ādesa)."
     }
    },
    "nota": {
-    "es": "La atidesa (extensión) es una clase propia en el esquema de seis citado por la Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). Rū llama atidesa a este sutta; la Bhāsāṭīkā lo llama suttātidesa y recoge que el Bālāvatāra y otros lo cuentan como vidhi-sutta. En el esquema de ocho vidhis, Thitzana (vol. 2, Introducción, pp. 36–37) cuenta la atidesa dentro de la ādesa. Determinación: vidhi — ādesa (atidesa; clase propia en el esquema de seis).",
-    "en": "Atidesa (extension) is a kind of its own in the six-fold scheme cited by the Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). Rū calls this sutta atidesa; the Bhāsāṭīkā calls it a suttātidesa and reports that the Bālāvatāra and others count it a vidhi-sutta. In the eight-fold scheme of vidhis, Thitzana (vol. 2, Introduction, pp. 36–37) counts atidesa under ādesa. Determination: vidhi — ādesa (atidesa; a kind of its own in the six-fold scheme)."
-   },
-   "grupo": "atidesa"
+    "en": "Atidesa (extension) is a kind of its own in the six-fold scheme cited by the Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). Rū calls this sutta atidesa; the Bhāsāṭīkā calls it a suttātidesa and reports that Bālāvatāra and others count it a vidhi-sutta. Determination: vidhi (four-fold), atidesa (six-fold); none of the eight vidhis.",
+    "es": "La atidesa (extensión) es una clase propia en el esquema de seis citado por la Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). Rū llama atidesa a este sutta; la Bhāsāṭīkā lo llama suttātidesa y recoge que el Bālāvatāra y otros lo cuentan como vidhi-sutta. Determinación: vidhi (esquema de cuatro), atidesa (esquema de seis); ninguna de las ocho vidhis."
+   }
   },
   "52": {
    "tipo": "A",
@@ -1682,7 +1697,7 @@
   },
   "83": {
    "tipo": "V",
-   "vidhi": "lopa + ādesa",
+   "vidhi": "lopa + paṭisedha",
    "op": {
     "en": "Elision of the preceding vowel when ‘aṃ’, a substitute, a suffix, etc., follow; after that elision the following vowel stays natural (pakati).",
     "es": "Elisión de la vocal precedente cuando siguen ‘aṃ’, una sustitución, un sufijo, etc.; tras esa elisión, la vocal siguiente permanece natural (pakati)."
@@ -1695,17 +1710,12 @@
     "nyasa": {
      "en": "“pubbasaralopaṃ katvā … pakatibhāvaṃ katvā”.",
      "es": "«pubbasaralopaṃ katvā … pakatibhāvaṃ katvā»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la pakati, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (pakati, under ādesa)."
     }
    },
    "nota": {
-    "es": "Rū 67: apavāda del §13 («tadapavādena pubbalopam āha»): ante ‘aṃ’, una sustitución, un sufijo, etc., se elide la vocal precedente, no la siguiente. La segunda mitad mantiene natural (pakati) la vocal siguiente; la pakati se cuenta en la ādesa según Thitzana (vol. 2, Introducción, pp. 36–37), como en §23–§24 (la Bhāsāṭīkā sobre el §24 la contaría como paṭisedha). Nyāsa nombra ambas: «pubbasaralopaṃ katvā … pakatibhāvaṃ katvā». Determinación: lopa + ādesa (pakati).",
-    "en": "Rū 67: an apavāda of §13 (“tadapavādena pubbalopam āha”): before ‘aṃ’, a substitute, a suffix, etc., the preceding vowel is elided, not the following one. The second half keeps the following vowel natural (pakati); pakati counts under ādesa according to Thitzana (vol. 2, Introduction, pp. 36–37), as in §23–§24 (the Bhāsāṭīkā on §24 would count it as paṭisedha). Nyāsa names both: “pubbasaralopaṃ katvā … pakatibhāvaṃ katvā”. Determination: lopa + ādesa (pakati)."
-   },
-   "grupo": "pakati"
+    "en": "Rū 67: an apavāda of §13 (“tadapavādena pubbalopam āha”): before ‘aṃ’, a substitute, a suffix, etc., the preceding vowel is elided, not the following one. The second half keeps the following vowel natural (pakati). Pakati is not among the eight; following the Bhāsāṭīkā on §24, keeping the natural form counts as paṭisedha. Nyāsa names both: “pubbasaralopaṃ katvā … pakatibhāvaṃ katvā”. Determination: lopa + paṭisedha.",
+    "es": "Rū 67: apavāda del §13 («tadapavādena pubbalopam āha»): ante ‘aṃ’, una sustitución, un sufijo, etc., se elide la vocal precedente, no la siguiente. La segunda mitad mantiene natural (pakati) la vocal siguiente. La pakati no está entre las ocho; según la Bhāsāṭīkā sobre el §24, conservar la forma natural cuenta como paṭisedha. Nyāsa nombra ambas: «pubbasaralopaṃ katvā … pakatibhāvaṃ katvā». Determinación: lopa + paṭisedha."
+   }
   },
   "84": {
    "tipo": "V",
@@ -3583,7 +3593,7 @@
   },
   "187": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "atidesa",
    "op": {
     "en": "‘nta’ of “gacchanta”, etc., is treated as ‘ntu’ before the remaining inflections (extension, atidesa).",
     "es": "‘nta’ de “gacchanta”, etc., se considera como ‘ntu’ ante las inflexiones restantes (extensión, atidesa)."
@@ -3596,17 +3606,12 @@
     "nyasa": {
      "en": "“ntum iva katvā”.",
      "es": "«ntum iva katvā»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la atidesa, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (atidesa, under ādesa)."
     }
    },
    "nota": {
-    "es": "Rū 108: «kāriyātideso ’yaṃ»; Nyāsa: «ntum iva katvā». La Bhāsāṭīkā y U Sīlānanda (clase 11) explican que ‘nta’ no se convierte realmente en ‘ntu’: simplemente se le aplican las operaciones prescritas para ‘ntu’. No es, pues, una sustitución en sentido estricto. En el esquema de cuatro es vidhi (la práctica del Bālāvatāra para la atidesa, según la Bhāsāṭīkā sobre el §51); en el de seis, atidesa; en el de ocho vidhis, Thitzana (vol. 2, Introducción, pp. 36–37) cuenta la atidesa dentro de la ādesa. Compárese con el §270. Determinación: vidhi — ādesa (atidesa).",
-    "en": "Rū 108: “kāriyātideso ’yaṃ”; Nyāsa: “ntum iva katvā”. The Bhāsāṭīkā and U Sīlānanda (class 11) explain that ‘nta’ does not actually become ‘ntu’: the operations prescribed for ‘ntu’ are simply carried out on it. So it is not a substitution in the strict sense. In the four-fold scheme it is a vidhi (the practice of the Bālāvatāra for atidesa, as the Bhāsāṭīkā reports on §51); in the six-fold scheme it is an atidesa; in the eight-fold scheme of vidhis, Thitzana (vol. 2, Introduction, pp. 36–37) counts atidesa under ādesa. Contrast §270. Determination: vidhi — ādesa (atidesa)."
-   },
-   "grupo": "atidesa"
+    "en": "Rū 108: “kāriyātideso ’yaṃ”; Nyāsa: “ntum iva katvā”. The Bhāsāṭīkā and U Sīlānanda (class 11) explain that ‘nta’ does not actually become ‘ntu’: the operations prescribed for ‘ntu’ are simply carried out on it. So it is neither saññā nor ādesa. In the four-fold scheme it is a vidhi (the practice of the Bālāvatāra for atidesa, as the Bhāsāṭīkā reports on §51); in the six-fold scheme it is an atidesa. It is none of the eight vidhis. Contrast §270. Determination: vidhi (four-fold scheme), atidesa (six-fold scheme).",
+    "es": "Rū 108: «kāriyātideso ’yaṃ»; Nyāsa: «ntum iva katvā». La Bhāsāṭīkā y U Sīlānanda (clase 11) explican que ‘nta’ no se convierte realmente en ‘ntu’: simplemente se le aplican las operaciones prescritas para ‘ntu’. No es, pues, ni saññā ni ādesa. En el esquema de cuatro es vidhi (la práctica del Bālāvatāra para la atidesa, según la Bhāsāṭīkā sobre el §51); en el de seis, atidesa. No es ninguna de las ocho vidhis. Compárese con el §270. Determinación: vidhi (esquema de cuatro), atidesa (esquema de seis)."
+   }
   },
   "188": {
    "tipo": "V",
@@ -6128,7 +6133,7 @@
   },
   "318": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "paṭisedha",
    "op": {
     "en": "After the inflections are elided, the vowel-final base keeps its natural form (pakati).",
     "es": "Tras la elisión de las inflexiones, la base terminada en vocal conserva su forma natural (pakati)."
@@ -6141,17 +6146,12 @@
     "nyasa": {
      "en": "(318-a) “luttāsu vibhattīsu assa samāsapadassa sarantassa pakatirūpāni hontī ti ñāpanatthaṃ”.",
      "es": "(318-a) «luttāsu vibhattīsu assa samāsapadassa sarantassa pakatirūpāni hontī ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la pakati, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (pakati, under ādesa)."
     }
    },
    "nota": {
-    "es": "Rū 333 lo llama atidesa («ayam atideso»): aunque falte la inflexión, que era la causa, no se quiere que desaparezca su efecto. U Sīlānanda (clase ch4-1, ~13:00–15:00) lo explica como impedimento: «this sutta prevents changes being made». Sea pakati o atidesa, Thitzana (vol. 2, Introducción, pp. 36–37) cuenta ambas dentro de la ādesa; la Bhāsāṭīkā al §24 contaría la pakati como paṭisedha. Determinación: vidhi — ādesa (pakati).",
-    "en": "Rū 333 calls it an atidesa (“ayam atideso”): even though the inflection, which was the cause, is gone, its effect is not meant to disappear. U Sīlānanda (class ch4-1, ~13:00–15:00) explains it as a prohibition: “this sutta prevents changes being made”. Whether pakati or atidesa, Thitzana (vol. 2, Introduction, pp. 36–37) counts both under ādesa; the Bhāsāṭīkā on §24 would count pakati as paṭisedha. Determination: vidhi — ādesa (pakati)."
-   },
-   "grupo": "pakati"
+    "en": "Rū 333 calls it an atidesa (“ayam atideso”): even though the inflection, which was the cause, is gone, its effect is not meant to disappear. U Sīlānanda (class ch4-1, ~13:00–15:00) explains it as a prohibition: “this sutta prevents changes being made”. By the project rule, pakati = paṭisedha (Bhāsāṭīkā on §24). Determination: vidhi — paṭisedha.",
+    "es": "Rū 333 lo llama atidesa («ayam atideso»): aunque falte la inflexión, que era la causa, no se quiere que desaparezca su efecto. U Sīlānanda (clase ch4-1, ~13:00–15:00) lo explica como impedimento: «this sutta prevents changes being made». Por la regla del proyecto, pakati = paṭisedha (Bhāsāṭīkā al §24). Determinación: vidhi — paṭisedha."
+   }
   },
   "319": {
    "tipo": "S",
@@ -6177,7 +6177,7 @@
   },
   "320": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "liṅga-vacana",
    "op": {
     "en": "The abyayībhāva is of neuter gender.",
     "es": "El abyayībhāva es de género neutro."
@@ -6190,21 +6190,16 @@
     "nyasa": {
      "en": "“so abyayībhāvasamāso napuṃsakaliṅgo va daṭṭhabbo ti ñāpanatthaṃ … napuṃsakaliṅgo ti kāriyātideso”.",
      "es": "«so abyayībhāvasamāso napuṃsakaliṅgo va daṭṭhabbo ti ñāpanatthaṃ … napuṃsakaliṅgo ti kāriyātideso»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La liṅga-vacana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Liṅga-vacana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "en": "The Nyāsa calls it an atidesa (“napuṃsakaliṅgo ti kāriyātideso”: the operations of the neuter apply to it); Rū 335 expressly denies it (“na cā ’yaṃ atideso”), because the sutta lacks “iva”, the mark of an atidesa. It assigns number and gender to the compound; it is not named among the eight vidhis. It is counted under ādesa, which Thitzana (vol. 2, Introduction, pp. 36–37) extends beyond changing a word into another form: “Vuddhi, Vipariyāya, Pakati, Atidesa and so on” (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (liṅga-vacana).",
-    "es": "Nyāsa lo llama atidesa («napuṃsakaliṅgo ti kāriyātideso»: se le aplican las operaciones del neutro); Rū 335 lo niega expresamente («na cā ’yaṃ atideso»), porque el sutta no lleva «iva», la marca del atidesa. Asigna número y género al compuesto; no figura por su nombre entre las ocho vidhis. Se cuenta en la ādesa, en la que Thitzana (vol. 2, Introducción, pp. 36–37) incluye, además del cambio de una palabra en otra forma, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on» (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (liṅga-vacana)."
-   },
-   "grupo": "linga"
+    "en": "The Nyāsa calls it an atidesa (“napuṃsakaliṅgo ti kāriyātideso”: the operations of the neuter apply to it); Rū 335 expressly denies it (“na cā ’yaṃ atideso”), because the sutta lacks “iva”, the mark of an atidesa. It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Nyāsa lo llama atidesa («napuṃsakaliṅgo ti kāriyātideso»: se le aplican las operaciones del neutro); Rū 335 lo niega expresamente («na cā ’yaṃ atideso»), porque el sutta no lleva «iva», la marca del atidesa. Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
   },
   "321": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "liṅga-vacana",
    "op": {
     "en": "The digu takes singular number and neuter gender.",
     "es": "El digu toma número singular y género neutro."
@@ -6217,21 +6212,16 @@
     "nyasa": {
      "en": "“digusamāsassa ekattaṃ hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ”.",
      "es": "«digusamāsassa ekattaṃ hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La liṅga-vacana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Liṅga-vacana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "en": "Rū 349 limits it to the collective digu (“samāhāradiguss’ etaṃ gahaṇaṃ”). It assigns number and gender to the compound; it is not named among the eight vidhis. It is counted under ādesa, which Thitzana (vol. 2, Introduction, pp. 36–37) extends beyond changing a word into another form: “Vuddhi, Vipariyāya, Pakati, Atidesa and so on” (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (liṅga-vacana).",
-    "es": "Rū 349 lo limita al digu colectivo («samāhāradiguss’ etaṃ gahaṇaṃ»). Asigna número y género al compuesto; no figura por su nombre entre las ocho vidhis. Se cuenta en la ādesa, en la que Thitzana (vol. 2, Introducción, pp. 36–37) incluye, además del cambio de una palabra en otra forma, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on» (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (liṅga-vacana)."
-   },
-   "grupo": "linga"
+    "en": "Rū 349 limits it to the collective digu (“samāhāradiguss’ etaṃ gahaṇaṃ”). It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Rū 349 lo limita al digu colectivo («samāhāradiguss’ etaṃ gahaṇaṃ»). Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
   },
   "322": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "liṅga-vacana",
    "op": {
     "en": "In a dvanda of parts of the body, musical instruments, parts of a vehicle and of an army, small creatures, natural enemies, opposites, etc., singular number and neuter gender.",
     "es": "En el dvanda de partes del cuerpo, instrumentos musicales, partes de un vehículo y de un ejército, animales pequeños, enemigos naturales, opuestos, etc., número singular y género neutro."
@@ -6244,21 +6234,16 @@
     "nyasa": {
      "en": "“tathā dvandasamāse pāṇyaṅga-tūriyaṅga-yoggaṅga-senaṅga-khuddajantuka-vividhaviruddha-visabhāgattha icc evamādīnaṃ ekattañ ca hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ”.",
      "es": "«tathā dvandasamāse pāṇyaṅga-tūriyaṅga-yoggaṅga-senaṅga-khuddajantuka-vividhaviruddha-visabhāgattha icc evamādīnaṃ ekattañ ca hoti napuṃsakaliṅgattañ cā ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La liṅga-vacana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Liṅga-vacana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "en": "It assigns number and gender to the compound; it is not named among the eight vidhis. It is counted under ādesa, which Thitzana (vol. 2, Introduction, pp. 36–37) extends beyond changing a word into another form: “Vuddhi, Vipariyāya, Pakati, Atidesa and so on” (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (liṅga-vacana).",
-    "es": "Asigna número y género al compuesto; no figura por su nombre entre las ocho vidhis. Se cuenta en la ādesa, en la que Thitzana (vol. 2, Introducción, pp. 36–37) incluye, además del cambio de una palabra en otra forma, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on» (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (liṅga-vacana)."
-   },
-   "grupo": "linga"
+    "en": "It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
   },
   "323": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "liṅga-vacana",
    "op": {
     "en": "Optionally, in a dvanda of trees, grasses, animals, riches, grains, countries, etc., singular number and neuter gender.",
     "es": "Opcionalmente, en el dvanda de árboles, hierbas, animales, riquezas, granos, países, etc., número singular y género neutro."
@@ -6271,17 +6256,12 @@
     "nyasa": {
      "en": "“rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnam ekattañ ca napuṃsakaliṅgattañ ca hoti dvandasamāse vikappenā ti ñāpanatthaṃ … anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ”.",
      "es": "«rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnam ekattañ ca napuṃsakaliṅgattañ ca hoti dvandasamāse vikappenā ti ñāpanatthaṃ … anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La liṅga-vacana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Liṅga-vacana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "en": "Optional counterpart of §322 (Nyāsa: “anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ”); without the singular, plural and the gender of the last member (Rū 360). It assigns number and gender to the compound; it is not named among the eight vidhis. It is counted under ādesa, which Thitzana (vol. 2, Introduction, pp. 36–37) extends beyond changing a word into another form: “Vuddhi, Vipariyāya, Pakati, Atidesa and so on” (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (liṅga-vacana).",
-    "es": "Versión opcional del §322 (Nyāsa: «anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ»); sin singular, plural y el género del último miembro (Rū 360). Asigna número y género al compuesto; no figura por su nombre entre las ocho vidhis. Se cuenta en la ādesa, en la que Thitzana (vol. 2, Introducción, pp. 36–37) incluye, además del cambio de una palabra en otra forma, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on» (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (liṅga-vacana)."
-   },
-   "grupo": "linga"
+    "en": "Optional counterpart of §322 (Nyāsa: “anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ”); without the singular, plural and the gender of the last member (Rū 360). It assigns number and gender to the compound; it is not one of the eight vidhis. Marked “liṅga-vacana” (IEBH decision, 2026-10-01). Determination: vidhi — liṅga-vacana.",
+    "es": "Versión opcional del §322 (Nyāsa: «anantarasutten’ eva siddhe vikappanattham idam āraddhaṃ»); sin singular, plural y el género del último miembro (Rū 360). Asigna número y género al compuesto; no es una de las ocho vidhis. Se marca «liṅga-vacana» (decisión del IEBH, 2026-10-01). Determinación: vidhi — liṅga-vacana."
+   }
   },
   "324": {
    "tipo": "S",
@@ -6427,7 +6407,7 @@
   },
   "331": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "atidesa",
    "op": {
     "en": "A feminine that formerly denoted a masculine, before a feminine member referring to the same thing, is treated as masculine: it loses the feminine suffix (extension, atidesa).",
     "es": "Un femenino que antes indicó masculino, ante un miembro femenino que se refiere a la misma cosa, se considera como masculino: pierde el sufijo femenino (extensión, atidesa)."
@@ -6440,21 +6420,16 @@
     "nyasa": {
      "en": "(331, inside the section of 330) “itthiyaṃ tulyādhikaraṇe pade ce bhāsitapumitthī, pumā va daṭṭhabbā ti ñāpanatthaṃ”.",
      "es": "(331, dentro de la sección del 330) «itthiyaṃ tulyādhikaraṇe pade ce bhāsitapumitthī, pumā va daṭṭhabbā ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la atidesa, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (atidesa, under ādesa)."
     }
    },
    "nota": {
-    "en": "Rū 353 limits it to the bahubbīhi (dīghajaṅgho), since §332 deals with the kammadhāraya. The Rūpasiddhi calls it a pumbhāvātidesa, an extension of masculine status, for the first member only (“pubbapadass’ ev’ āyaṃ pumbhāvātideso”); the effect is that the first member loses its feminine suffix. Like §187, in the eight-fold scheme it counts under ādesa (Thitzana (vol. 2, Introduction, pp. 36–37)). Determination: vidhi — ādesa (atidesa).",
-    "es": "Rū 353 lo limita al bahubbīhi (dīghajaṅgho), pues el §332 trata el kammadhāraya. Rū lo llama pumbhāvātidesa, extensión de la condición de masculino, y solo al primer miembro («pubbapadass’ ev’ āyaṃ pumbhāvātideso»); el efecto es que el primer miembro pierde el sufijo femenino. Como el §187, en el esquema de ocho se cuenta en la ādesa (Thitzana (vol. 2, Introducción, pp. 36–37)). Determinación: vidhi — ādesa (atidesa)."
-   },
-   "grupo": "atidesa"
+    "en": "Rū 353 limits it to the bahubbīhi (dīghajaṅgho), since §332 deals with the kammadhāraya. The Rūpasiddhi calls it a pumbhāvātidesa, an extension of masculine status, for the first member only (“pubbapadass’ ev’ āyaṃ pumbhāvātideso”); the effect is that the first member loses its feminine suffix. Like §187, none of the eight vidhis. Determination: vidhi — atidesa.",
+    "es": "Rū 353 lo limita al bahubbīhi (dīghajaṅgho), pues el §332 trata el kammadhāraya. Rū lo llama pumbhāvātidesa, extensión de la condición de masculino, y solo al primer miembro («pubbapadass’ ev’ āyaṃ pumbhāvātideso»); el efecto es que el primer miembro pierde el sufijo femenino. Como el §187, ninguna de las ocho vidhis. Determinación: vidhi — atidesa."
+   }
   },
   "332": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "atidesa",
    "op": {
     "en": "The same in the kammadhāraya: a feminine first member that formerly denoted a masculine is treated as masculine (khattiyakaññā; extension, atidesa).",
     "es": "Lo mismo en el kammadhāraya: el primer miembro femenino que antes indicó masculino se considera como masculino (khattiyakaññā; extensión, atidesa)."
@@ -6467,17 +6442,12 @@
     "nyasa": {
      "en": "(the OCR heads the section “322”) “kammadhārayasaññe ca samāse itthiyaṃ tulyādhikaraṇe pade sace pubbe bhāsitapumā idāni itthivācako, so pumā va daṭṭhabbo ti ñāpanatthaṃ”.",
      "es": "(el OCR rotula la sección «322») «kammadhārayasaññe ca samāse itthiyaṃ tulyādhikaraṇe pade sace pubbe bhāsitapumā idāni itthivācako, so pumā va daṭṭhabbo ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la atidesa, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (atidesa, under ādesa)."
     }
    },
    "nota": {
-    "en": "The Rūpasiddhi calls it a pumbhāvātidesa, an extension of masculine status, for the first member only (“pubbapadass’ ev’ āyaṃ pumbhāvātideso”); the effect is that the first member loses its feminine suffix. Like §187, in the eight-fold scheme it counts under ādesa (Thitzana (vol. 2, Introduction, pp. 36–37)). Determination: vidhi — ādesa (atidesa).",
-    "es": "Rū lo llama pumbhāvātidesa, extensión de la condición de masculino, y solo al primer miembro («pubbapadass’ ev’ āyaṃ pumbhāvātideso»); el efecto es que el primer miembro pierde el sufijo femenino. Como el §187, en el esquema de ocho se cuenta en la ādesa (Thitzana (vol. 2, Introducción, pp. 36–37)). Determinación: vidhi — ādesa (atidesa)."
-   },
-   "grupo": "atidesa"
+    "en": "The Rūpasiddhi calls it a pumbhāvātidesa, an extension of masculine status, for the first member only (“pubbapadass’ ev’ āyaṃ pumbhāvātideso”); the effect is that the first member loses its feminine suffix. Like §187, none of the eight vidhis. Determination: vidhi — atidesa.",
+    "es": "Rū lo llama pumbhāvātidesa, extensión de la condición de masculino, y solo al primer miembro («pubbapadass’ ev’ āyaṃ pumbhāvātideso»); el efecto es que el primer miembro pierde el sufijo femenino. Como el §187, ninguna de las ocho vidhis. Determinación: vidhi — atidesa."
+   }
   },
   "333": {
    "tipo": "V",
@@ -7569,7 +7539,7 @@
   },
   "391": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "nipātana",
    "op": {
     "en": "Words not accounted for by any rule are established by nipātana.",
     "es": "Las palabras que no se explican por ninguna regla se realizan por nipātana."
@@ -7582,17 +7552,12 @@
     "nyasa": {
      "en": "“… te nipātanā sijjhantī ti ñāpanatthaṃ”.",
      "es": "«… te nipātanā sijjhantī ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La nipātana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Nipātana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "es": "Uno de los cuatro suttas universales de Kaccāyana (nota 36 de la traducción del capítulo; U Sīlānanda los llama «universal suttas» y también «nipātana suttas», clases ch5-7 y ch7-5). La vutti enumera los ámbitos: letras, género, nombres, compuestos, derivados, verbos, números, kāraka, sandhi, pakati, vuddhi, lopa, āgama, vikāra, viparīta, inflexiones. Rū lo hace regir los suttas siguientes («ti vattate», antes de Rū 417 = §395). La nipātana no figura por su nombre entre las ocho vidhis; se cuenta en la ādesa por el «and so on» de Thitzana (vol. 2, Introducción, pp. 36–37), pues fija la forma de una palabra (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (nipātana).",
-    "en": "One of Kaccāyana’s four universal suttas (note 36 of the chapter translation; U Sīlānanda calls them “universal suttas” and also “nipātana suttas”, classes ch5-7 and ch7-5). The vutti lists its domains: letters, gender, nouns, compounds, derivatives, verbs, numbers, kāraka, sandhi, pakati, vuddhi, lopa, āgama, vikāra, viparīta, inflections. The Rūpasiddhi has it govern the following suttas (“ti vattate”, before Rū 417 = §395). Nipātana is not named among the eight vidhis; it is counted under ādesa by the “and so on” of Thitzana (vol. 2, Introduction, pp. 36–37), since it fixes the form of a word (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (nipātana)."
-   },
-   "grupo": "nipatana"
+    "es": "Uno de los cuatro suttas universales de Kaccāyana (nota 36 de la traducción del capítulo; U Sīlānanda los llama «universal suttas» y también «nipātana suttas», clases ch5-7 y ch7-5). La vutti enumera los ámbitos: letras, género, nombres, compuestos, derivados, verbos, números, kāraka, sandhi, pakati, vuddhi, lopa, āgama, vikāra, viparīta, inflexiones. Rū lo hace regir los suttas siguientes («ti vattate», antes de Rū 417 = §395). Etiqueta «nipātana», no una de las ocho (decisión del IEBH, 2026-10-01). Determinación: vidhi — nipātana.",
+    "en": "One of Kaccāyana’s four universal suttas (note 36 of the chapter translation; U Sīlānanda calls them “universal suttas” and also “nipātana suttas”, classes ch5-7 and ch7-5). The vutti lists its domains: letters, gender, nouns, compounds, derivatives, verbs, numbers, kāraka, sandhi, pakati, vuddhi, lopa, āgama, vikāra, viparīta, inflections. The Rūpasiddhi has it govern the following suttas (“ti vattate”, before Rū 417 = §395). Label “nipātana”, not one of the eight (IEBH decision, 2026-10-01). Determination: vidhi — nipātana."
+   }
   },
   "392": {
    "tipo": "V",
@@ -7640,7 +7605,7 @@
   },
   "394": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "nipātana",
    "op": {
     "en": "Higher numerals are formed by multiplying by ten (dasasahassaṃ, satasahassaṃ).",
     "es": "Los numerales superiores se forman multiplicando por diez (dasasahassaṃ, satasahassaṃ)."
@@ -7653,21 +7618,16 @@
     "nyasa": {
      "en": "“yāva tāsaṃ saṅkhyānaṃ uttari tāva dasaguṇitaṃ kātabban ti ñāpanatthaṃ”.",
      "es": "«yāva tāsaṃ saṅkhyānaṃ uttari tāva dasaguṇitaṃ kātabban ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La nipātana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Nipātana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "es": "No prescribe por su nombre ninguna de las ocho operaciones: fija cómo se forman los numerales superiores, que se rematan por nipātana (§391). Como el §391, se cuenta en la ādesa (Thitzana (vol. 2, Introducción, pp. 36–37)). Determinación: vidhi — ādesa (nipātana).",
-    "en": "It prescribes none of the eight operations by name: it fixes how higher numerals are formed, completed by nipātana (§391). Like §391, it counts under ādesa (Thitzana (vol. 2, Introduction, pp. 36–37)). Determination: vidhi — ādesa (nipātana)."
-   },
-   "grupo": "nipatana"
+    "es": "No prescribe ninguna de las ocho operaciones: fija cómo se forman los numerales superiores, que se rematan por nipātana (§391). Determinación: vidhi — nipātana (decisión del IEBH, 2026-10-01).",
+    "en": "It prescribes none of the eight operations: it fixes how higher numerals are formed, completed by nipātana (§391). Determination: vidhi — nipātana (IEBH decision, 2026-10-01)."
+   }
   },
   "395": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "nipātana",
    "op": {
     "en": "Numerals with no stated name are formed by their own names (koṭi, pakoṭi …).",
     "es": "Los numerales que no tienen nombre establecido se forman con sus propios nombres (koṭi, pakoṭi …)."
@@ -7680,17 +7640,12 @@
     "nyasa": {
      "en": "“yāsaṃ saṅkhyānam aniddiṭṭhanāmadheyyānaṃ rūpāni, tāni sakehi sakehi nāmehi nippajjante ti ñāpanatthaṃ”.",
      "es": "«yāsaṃ saṅkhyānam aniddiṭṭhanāmadheyyānaṃ rūpāni, tāni sakehi sakehi nāmehi nippajjante ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included». La nipātana no se nombra; se incluye por «and so on».",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included”. Nipātana is not named; included by “and so on”."
     }
    },
    "nota": {
-    "es": "Rū 417: «nipaccante»; rige aquí el §391 («“Yad anupapannā nipātanā sijjhantī” ti vattate»). Como el §391, se cuenta en la ādesa (Thitzana (vol. 2, Introducción, pp. 36–37)). Determinación: vidhi — ādesa (nipātana).",
-    "en": "Rū 417: “nipaccante”; §391 governs here (“‘Yad anupapannā nipātanā sijjhantī’ ti vattate”). Like §391, it counts under ādesa (Thitzana (vol. 2, Introduction, pp. 36–37)). Determination: vidhi — ādesa (nipātana)."
-   },
-   "grupo": "nipatana"
+    "es": "Rū 417: «nipaccante»; rige aquí el §391 («“Yad anupapannā nipātanā sijjhantī” ti vattate»). Determinación: vidhi — nipātana (decisión del IEBH, 2026-10-01).",
+    "en": "Rū 417: “nipaccante”; §391 governs here (“‘Yad anupapannā nipātanā sijjhantī’ ti vattate”). Determination: vidhi — nipātana (IEBH decision, 2026-10-01)."
+   }
   },
   "396": {
    "tipo": "V",
@@ -7766,7 +7721,7 @@
   },
   "400": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "vuddhi",
    "op": {
     "en": "Strengthening of the initial vowel (not followed by a conjunct) when a suffix with indicatory ‘ṇ’ follows (ābhidhammiko, venateyyo).",
     "es": "Fortalecimiento de la vocal inicial (no seguida de consonante conjunta) cuando sigue un sufijo con ‘ṇ’ indicativa (ābhidhammiko, venateyyo)."
@@ -7779,17 +7734,12 @@
     "nyasa": {
      "en": "“ādisarassa vā ādibyañjanassa vā asaṃyogantassa vuddhi hoti ṇakārānubandhasmiṃ paccaye ti ñāpanatthaṃ”.",
      "es": "«ādisarassa vā ādibyañjanassa vā asaṃyogantassa vuddhi hoti ṇakārānubandhasmiṃ paccaye ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la vuddhi, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi, under ādesa)."
     }
    },
    "nota": {
-    "es": "Rūpasiddhi y Nyāsa nombran la vuddhi como operación propia: Nyāsa la nombra como nombra las demás («ādisarassa vuddhiṃ katvā», «akārassa ākāravuddhiṃ katvā»), y Rū la enumera junto a las otras («kāritabyapadesa-ṇalopa-vuddhiyo», Rū 569). Kaccāyana la nombra aparte en §404 y la regula con la paribhāsā §405; Niruttidīpanī la cuenta como clase propia de operación («lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso»). El esquema de ocho vidhis (Glosario de Nandisena; verso mnemónico de la tradición birmana) no la nombra; Thitzana (vol. 2, Introducción, pp. 36–37) explica que la ādesa incluye «Vuddhi, Vipariyāya, Pakati, Atidesa and so on». Se sigue a Thitzana (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (vuddhi).",
-    "en": "The Rūpasiddhi and the Nyāsa name vuddhi as an operation of its own: the Nyāsa names it as it names the others (“ādisarassa vuddhiṃ katvā”, “akārassa ākāravuddhiṃ katvā”), and the Rūpasiddhi lists it alongside them (“kāritabyapadesa-ṇalopa-vuddhiyo”, Rū 569). Kaccāyana names it separately in §404 and regulates it with the paribhāsā §405; the Niruttidīpanī counts it as an operation of its own (“lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso”). The eight-fold scheme of vidhis (Nandisena’s Glossary; the mnemonic verse of the Burmese tradition) does not name it; Thitzana (vol. 2, Introduction, pp. 36–37) explains that ādesa includes “Vuddhi, Vipariyāya, Pakati, Atidesa and so on”. Thitzana is followed (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (vuddhi)."
-   },
-   "grupo": "vuddhi"
+    "es": "Rūpasiddhi y Nyāsa tratan la vuddhi como operación propia, nunca como sustitución: Nyāsa la nombra como nombra las demás («ādisarassa vuddhiṃ katvā», «akārassa ākāravuddhiṃ katvā»), y Rū la enumera junto a las otras («kāritabyapadesa-ṇalopa-vuddhiyo», Rū 569). Kaccāyana la nombra aparte en §404 y la regula con la paribhāsā §405; Niruttidīpanī la cuenta como clase propia de operación («lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso»). No está entre las ocho clases de vidhi del Glosario de Nandisena. Etiqueta «vuddhi», pendiente de confirmación del IEBH. Determinación: vidhi — vuddhi (provisional).",
+    "en": "The Rūpasiddhi and the Nyāsa treat vuddhi as an operation of its own, never as a substitution: the Nyāsa names it as it names the others (“ādisarassa vuddhiṃ katvā”, “akārassa ākāravuddhiṃ katvā”), and the Rūpasiddhi lists it alongside them (“kāritabyapadesa-ṇalopa-vuddhiyo”, Rū 569). Kaccāyana names it separately in §404 and regulates it with the paribhāsā §405; the Niruttidīpanī counts it as an operation of its own (“lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso”). It is not among the eight kinds of vidhi in Nandisena’s Glossary. Label “vuddhi”, pending the IEBH’s confirmation. Determination: vidhi — vuddhi (provisional)."
+   }
   },
   "401": {
    "tipo": "V",
@@ -7859,7 +7809,7 @@
   },
   "404": {
    "tipo": "V",
-   "vidhi": "ādesa + lopa + āgama",
+   "vidhi": "vuddhi + lopa + āgama + vikāra + viparīta + ādesa",
    "op": {
     "en": "In those places (initial, middle, final), sometimes, strengthening, elision, insertion, change, inversion and substitution, as the Word of the Victorious One requires.",
     "es": "En esos lugares (inicial, medio, final), a veces, fortalecimiento, elisión, inserción, cambio, inversión y sustitución, según la palabra del Victorioso."
@@ -7872,17 +7822,12 @@
     "nyasa": {
      "en": "“tesu ādi-majjh’-uttaresu kvaci vuddhi-lopāgama-vikāra-viparītādesā hontī ti ñāpanatthaṃ”.",
      "es": "«tesu ādi-majjh’-uttaresu kvaci vuddhi-lopāgama-vikāra-viparītādesā hontī ti ñāpanatthaṃ»."
-    },
-    "th": {
-     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (vuddhi y vipariyāya, en la ādesa).",
-     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi and vipariyāya, under ādesa)."
     }
    },
    "nota": {
-    "es": "Uno de los cuatro suttas universales de Kaccāyana (nota 36 de la traducción del capítulo; U Sīlānanda los llama «universal suttas» y también «nipātana suttas», clases ch5-7 y ch7-5). Nombra seis operaciones: vuddhi, lopa, āgama, vikāra, viparīta y ādesa. En el esquema de ocho vidhis, Thitzana (vol. 2, Introducción, pp. 36–37) cuenta dentro de la ādesa la vuddhi y la vipariyāya (= viparīta), «and so on»; el vikāra (cambio de una letra en otra) se cuenta también en la ādesa. Quedan tres vidhis (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa + lopa + āgama.",
-    "en": "One of Kaccāyana’s four universal suttas (note 36 of the chapter translation; U Sīlānanda calls them “universal suttas” and also “nipātana suttas”, classes ch5-7 and ch7-5). It names six operations: vuddhi, lopa, āgama, vikāra, viparīta and ādesa. In the eight-fold scheme of vidhis, Thitzana (vol. 2, Introduction, pp. 36–37) counts vuddhi and vipariyāya (= viparīta) under ādesa, “and so on”; vikāra (changing one letter into another) also counts under ādesa. Three vidhis remain (IEBH decision, 2026-10-01). Determination: vidhi — ādesa + lopa + āgama."
-   },
-   "grupo": "univ"
+    "es": "Uno de los cuatro suttas universales de Kaccāyana (nota 36 de la traducción del capítulo; U Sīlānanda los llama «universal suttas» y también «nipātana suttas», clases ch5-7 y ch7-5). Se marcan las seis operaciones que nombra; «vikāra» (cambio) y «viparīta» (inversión) no son de las ocho (decisión del IEBH, 2026-10-01); «vuddhi», provisional. Determinación: vidhi — vuddhi + lopa + āgama + vikāra + viparīta + ādesa.",
+    "en": "One of Kaccāyana’s four universal suttas (note 36 of the chapter translation; U Sīlānanda calls them “universal suttas” and also “nipātana suttas”, classes ch5-7 and ch7-5). The six operations it names are marked; “vikāra” (change) and “viparīta” (inversion) are not among the eight (IEBH decision, 2026-10-01); “vuddhi”, provisional. Determination: vidhi — vuddhi + lopa + āgama + vikāra + viparīta + ādesa."
+   }
   },
   "405": {
    "tipo": "P",
