@@ -1,10 +1,10 @@
 {
- "version": "0.1",
+ "version": "0.2",
  "fecha": "2026-09-30",
  "estado": "borrador",
  "nota_version": {
-  "es": "Primera versión publicada: Sandhi-Kappa (§1–§51) y Nāma-Kappa (§52–§270).",
-  "en": "First published version: Sandhi-Kappa (§1–§51) and Nāma-Kappa (§52–§270)."
+  "es": "Se añade el Kāraka-Kappa (§271–§315). Contiene ya el Sandhi-Kappa, el Nāma-Kappa y el Kāraka-Kappa.",
+  "en": "Adds the Kāraka-Kappa (§271–§315). Now covers the Sandhi-Kappa, the Nāma-Kappa and the Kāraka-Kappa."
  },
  "capitulos": [
   {
@@ -20,6 +20,13 @@
    "desde": 52,
    "hasta": 270,
    "pali": "Nāma-Kappa"
+  },
+  {
+   "clave": "karaka",
+   "md": "03-karaka-kappa",
+   "desde": 271,
+   "hasta": 315,
+   "pali": "Kāraka-Kappa"
   }
  ],
  "tipos": {
@@ -108,7 +115,7 @@
    },
    "nota": {
     "en": "Not one of the four kinds. Rū calls it the statement of subject-matter and purpose (abhidheyyappayojanavākya). The Bhāsāṭīkā reports that some call it a paribhāsā-sutta and others a pubbavākya (introductory sentence), and rejects paribhāsā because it is never used again. Determination: pubbavākya.",
-    "es": "No es de ninguna de las cuatro clases. La Rū lo llama enunciado de materia y propósito (abhidheyyappayojanavākya). La Bhāsāṭīkā recoge que unos lo llaman paribhāsā y otros pubbavākya (enunciado inicial), y descarta paribhāsā porque no vuelve a emplearse. Determinación: pubbavākya."
+    "es": "No es de ninguna de las cuatro clases. Rū lo llama enunciado de materia y propósito (abhidheyyappayojanavākya). La Bhāsāṭīkā recoge que unos lo llaman paribhāsā y otros pubbavākya (enunciado inicial), y descarta paribhāsā porque no vuelve a emplearse. Determinación: pubbavākya."
    }
   },
   "2": {
@@ -429,7 +436,7 @@
     },
     "nyasa": {
      "en": "“okār’ukārānaṃ vakāraṃ katvā”; Nyāsa’s own example of a vidhi-sutta (under §2).",
-     "es": "«okār’ukārānaṃ vakāraṃ katvā»; el propio ejemplo de vidhi-sutta del Nyāsa (en el §2)."
+     "es": "«okār’ukārānaṃ vakāraṃ katvā»; el propio ejemplo de vidhi-sutta de Nyāsa (en el §2)."
     }
    }
   },
@@ -1072,7 +1079,7 @@
    },
    "nota": {
     "en": "Atidesa (extension) is a kind of its own in the six-fold scheme cited by the Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). Rū calls this sutta atidesa; the Bhāsāṭīkā calls it a suttātidesa and reports that Bālāvatāra and others count it a vidhi-sutta. Determination: vidhi (four-fold), atidesa (six-fold); none of the eight vidhis.",
-    "es": "La atidesa (extensión) es una clase propia en el esquema de seis citado por la Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). La Rū llama atidesa a este sutta; la Bhāsāṭīkā lo llama suttātidesa y recoge que el Bālāvatāra y otros lo cuentan como vidhi-sutta. Determinación: vidhi (esquema de cuatro), atidesa (esquema de seis); ninguna de las ocho vidhis."
+    "es": "La atidesa (extensión) es una clase propia en el esquema de seis citado por la Bhāsāṭīkā (saññā, paribhāsā, vidhi, niyama, atidesa, adhikāra). Rū llama atidesa a este sutta; la Bhāsāṭīkā lo llama suttātidesa y recoge que el Bālāvatāra y otros lo cuentan como vidhi-sutta. Determinación: vidhi (esquema de cuatro), atidesa (esquema de seis); ninguna de las ocho vidhis."
    }
   },
   "52": {
@@ -1130,7 +1137,7 @@
    },
    "nota": {
     "en": "Rū 62 adds “‘Vibhattiyo’ ti adhikāro”: the word vibhattiyo is carried into §55, which makes the word an adhikāra, not the sutta (U Sīlānanda, class 7). The Bhāsāṭīkā calls it a vibhatti-vidhi sutta, the procedure for attaching the inflections, citing the Rūpasiddhi-ṭīkā (vibhattividhāne) and Nyāsa (vibhatyuppattiṃ katvā); it reports that some call it a kind of paribhāsā. Determination: vidhi — vibhatti, the only one in the chapter.",
-    "es": "La Rū 62 añade «‘Vibhattiyo’ ti adhikāro»: la palabra vibhattiyo sigue al §55, lo que hace adhikāra a la palabra, no al sutta (U Sīlānanda, clase 7). La Bhāsāṭīkā lo llama vibhatti-vidhi-sutta, el procedimiento para añadir las inflexiones, y cita la Rūpasiddhi-ṭīkā (vibhattividhāne) y el Nyāsa (vibhatyuppattiṃ katvā); recoge que algunos lo consideran una clase de paribhāsā. Determinación: vidhi — vibhatti, el único del capítulo."
+    "es": "Rū 62 añade «‘Vibhattiyo’ ti adhikāro»: la palabra vibhattiyo sigue al §55, lo que hace adhikāra a la palabra, no al sutta (U Sīlānanda, clase 7). La Bhāsāṭīkā lo llama vibhatti-vidhi-sutta, el procedimiento para añadir las inflexiones, y cita Rūpasiddhi-ṭīkā (vibhattividhāne) y Nyāsa (vibhatyuppattiṃ katvā); recoge que algunos lo consideran una clase de paribhāsā. Determinación: vidhi — vibhatti, el único del capítulo."
    }
   },
   "55": {
@@ -1152,7 +1159,7 @@
    },
    "nota": {
     "en": "Rū 63 calls it a saññā-sutta explicitly, and the vutti uses the “kvattho” formula (“vibhatti icc anena kvattho”); U Sīlānanda follows Rū. Dissent: the Bhāsāṭīkā, which says Nyāsa reads it the same way, takes it as a statement of the form (sarūpa) of the inflections, answering the question left by §54; on this reading the naming belongs to the “ca” of §54. Saddanīti gives the name vibhatti in Sadd 198, and Sadd 200 (= Kc 55) states their form and names them paṭhamā … sattamī. Determination: saññā (Rū 63).",
-    "es": "La Rū 63 lo llama saññā-sutta expresamente, y la vutti emplea la fórmula «kvattho» («vibhatti icc anena kvattho»); U Sīlānanda sigue a la Rū. Disidencia: la Bhāsāṭīkā, que dice que el Nyāsa lo lee igual, lo toma como enunciado de la forma (sarūpa) de las inflexiones, en respuesta a la pregunta que deja el §54; según esta lectura, la denominación corresponde al «ca» del §54. El Saddanīti da el nombre vibhatti en Sadd 198, y Sadd 200 (= Kc 55) enuncia su forma y las nombra paṭhamā … sattamī. Determinación: saññā (Rū 63)."
+    "es": "Rū 63 lo llama saññā-sutta expresamente, y la vutti emplea la fórmula «kvattho» («vibhatti icc anena kvattho»); U Sīlānanda sigue a Rū. Disidencia: la Bhāsāṭīkā, que dice que Nyāsa lo lee igual, lo toma como enunciado de la forma (sarūpa) de las inflexiones, en respuesta a la pregunta que deja el §54; según esta lectura, la denominación corresponde al «ca» del §54. El Saddanīti da el nombre vibhatti en Sadd 198, y Sadd 200 (= Kc 55) enuncia su forma y las nombra paṭhamā … sattamī. Determinación: saññā (Rū 63)."
    }
   },
   "56": {
@@ -1336,7 +1343,7 @@
    },
    "nota": {
     "en": "Nyāsa calls it an apavāda of §179: after “tā”, “etā”, “imā” the inflection ‘sa’ optionally takes ‘ssāya’ instead of ‘sā’. Formally a substitution (Rū 215 “ssāyādeso hoti vā”). Determination: ādesa.",
-    "es": "El Nyāsa lo llama apavāda del §179: tras “tā”, “etā”, “imā”, la inflexión ‘sa’ toma opcionalmente ‘ssāya’ en lugar de ‘sā’. Formalmente una sustitución (Rū 215 «ssāyādeso hoti vā»). Determinación: ādesa."
+    "es": "Nyāsa lo llama apavāda del §179: tras “tā”, “etā”, “imā”, la inflexión ‘sa’ toma opcionalmente ‘ssāya’ en lugar de ‘sā’. Formalmente una sustitución (Rū 215 «ssāyādeso hoti vā»). Determinación: ādesa."
    }
   },
   "66": {
@@ -1668,7 +1675,7 @@
    },
    "nota": {
     "en": "Rū 67: an apavāda of §13 (“tadapavādena pubbalopam āha”): before ‘aṃ’, a substitute, a suffix, etc., the preceding vowel is elided, not the following one. The second half keeps the following vowel natural (pakati). Pakati is not among the eight; following the Bhāsāṭīkā on §24, keeping the natural form counts as paṭisedha. Nyāsa names both: “pubbasaralopaṃ katvā … pakatibhāvaṃ katvā”. Determination: lopa + paṭisedha.",
-    "es": "Rū 67: apavāda del §13 («tadapavādena pubbalopam āha»): ante ‘aṃ’, una sustitución, un sufijo, etc., se elide la vocal precedente, no la siguiente. La segunda mitad mantiene natural (pakati) la vocal siguiente. La pakati no está entre las ocho; según la Bhāsāṭīkā sobre el §24, conservar la forma natural cuenta como paṭisedha. El Nyāsa nombra ambas: «pubbasaralopaṃ katvā … pakatibhāvaṃ katvā». Determinación: lopa + paṭisedha."
+    "es": "Rū 67: apavāda del §13 («tadapavādena pubbalopam āha»): ante ‘aṃ’, una sustitución, un sufijo, etc., se elide la vocal precedente, no la siguiente. La segunda mitad mantiene natural (pakati) la vocal siguiente. La pakati no está entre las ocho; según la Bhāsāṭīkā sobre el §24, conservar la forma natural cuenta como paṭisedha. Nyāsa nombra ambas: «pubbasaralopaṃ katvā … pakatibhāvaṃ katvā». Determinación: lopa + paṭisedha."
    }
   },
   "84": {
@@ -1708,7 +1715,7 @@
    },
    "nota": {
     "en": "Niyama: Rū 150 (“niyamattham āha”), Nyāsa on §84 (“na asampatte vidhānaṃ, atha kho sampatte niyamo”), the Bhāsāṭīkā and U Sīlānanda (class 14: “fixation”). It fixes the sense of “api” in §84. Of the two purposes of a repeated rule (siddhe sati pi ārambho niyamāya vā atthantaraviññāpanāya vā), the Bhāsāṭīkā assigns it the first. Classified by form: worded with “na”, hence paṭisedha. Niyama is a kind of its own in the six-fold scheme (see §51). Determination: paṭisedha.",
-    "es": "Niyama: Rū 150 («niyamattham āha»), el Nyāsa sobre el §84 («na asampatte vidhānaṃ, atha kho sampatte niyamo»), la Bhāsāṭīkā y U Sīlānanda (clase 14: «fijación»). Fija el sentido de «api» en el §84. De los dos propósitos de una regla repetida (siddhe sati pi ārambho niyamāya vā atthantaraviññāpanāya vā), la Bhāsāṭīkā le asigna el primero. Se clasifica por la forma: formulado con «na», por tanto paṭisedha. El niyama es una clase propia en el esquema de seis (véase §51). Determinación: paṭisedha."
+    "es": "Niyama: Rū 150 («niyamattham āha»), Nyāsa sobre el §84 («na asampatte vidhānaṃ, atha kho sampatte niyamo»), la Bhāsāṭīkā y U Sīlānanda (clase 14: «fijación»). Fija el sentido de «api» en el §84. De los dos propósitos de una regla repetida (siddhe sati pi ārambho niyamāya vā atthantaraviññāpanāya vā), la Bhāsāṭīkā le asigna el primero. Se clasifica por la forma: formulado con «na», por tanto paṭisedha. El niyama es una clase propia en el esquema de seis (véase §51). Determinación: paṭisedha."
    }
   },
   "86": {
@@ -2067,7 +2074,7 @@
    "base": {
     "ru": {
      "en": "— (not in Rū).",
-     "es": "— (no está en la Rū)."
+     "es": "— (no está en Rū)."
     },
     "nyasa": {
      "en": "“nāvacanassa so-ādese kate”.",
@@ -2094,7 +2101,7 @@
    },
    "nota": {
     "en": "Rū 313 sits in the Kāraka-kaṇḍa, under the ablative of measure (pamāṇattha): “Dīgha ora icc etehi smāvacanassa so-ādeso hoti vā” (dīghaso nava vidatthiyo), with ‘smā’, ‘so’ and ‘vā’ carried over from §99 and §105. Nyāsa: “smāvacanassa so-ādese kate”. Determination: ādesa.",
-    "es": "La Rū 313 está en el Kāraka-kaṇḍa, en el ablativo de medida (pamāṇattha): «Dīgha ora icc etehi smāvacanassa so-ādeso hoti vā» (dīghaso nava vidatthiyo), con ‘smā’, ‘so’ y ‘vā’ traídos de los §99 y §105. Nyāsa: «smāvacanassa so-ādese kate». Determinación: ādesa."
+    "es": "Rū 313 está en el Kāraka-kaṇḍa, en el ablativo de medida (pamāṇattha): «Dīgha ora icc etehi smāvacanassa so-ādeso hoti vā» (dīghaso nava vidatthiyo), con ‘smā’, ‘so’ y ‘vā’ traídos de los §99 y §105. Nyāsa: «smāvacanassa so-ādese kate». Determinación: ādesa."
    }
   },
   "107": {
@@ -2957,7 +2964,7 @@
    "base": {
     "ru": {
      "en": "— (not in Rū).",
-     "es": "— (no está en la Rū)."
+     "es": "— (no está en Rū)."
     },
     "nyasa": {
      "en": "“pumantassa amādesaṃ katvā”.",
@@ -3524,7 +3531,7 @@
    },
    "nota": {
     "en": "Two operations, both named by Rū 112: “sasaddādeso hoti … bakārāgamo hoti”; Nyāsa names the first (“sakārādesaṃ katvā”). Shown with both labels, as §22, §27 and §43 in chapter 1. Determination: ādesa + āgama.",
-    "es": "Dos operaciones, ambas nombradas por la Rū 112: «sasaddādeso hoti … bakārāgamo hoti»; el Nyāsa nombra la primera («sakārādesaṃ katvā»). Se muestran ambas etiquetas, como §22, §27 y §43 en el capítulo 1. Determinación: ādesa + āgama."
+    "es": "Dos operaciones, ambas nombradas por Rū 112: «sasaddādeso hoti … bakārāgamo hoti»; Nyāsa nombra la primera («sakārādesaṃ katvā»). Se muestran ambas etiquetas, como §22, §27 y §43 en el capítulo 1. Determinación: ādesa + āgama."
    }
   },
   "186": {
@@ -3784,7 +3791,7 @@
    },
    "nota": {
     "en": "Two operations, both named by Rū 158: “āttam āpajjate … silopo ca hoti”; Nyāsa names the first (“ākārādesaṃ katvā”). Determination: ādesa + lopa.",
-    "es": "Dos operaciones, ambas nombradas por la Rū 158: «āttam āpajjate … silopo ca hoti»; el Nyāsa nombra la primera («ākārādesaṃ katvā»). Determinación: ādesa + lopa."
+    "es": "Dos operaciones, ambas nombradas por Rū 158: «āttam āpajjate … silopo ca hoti»; Nyāsa nombra la primera («ākārādesaṃ katvā»). Determinación: ādesa + lopa."
    }
   },
   "200": {
@@ -4300,7 +4307,7 @@
    },
    "nota": {
     "en": "Nyāsa calls the word “ve” a niyama. The sutta itself substitutes “ka” for “kiṃ” (Rū 270 “kasaddo ādeso hoti”; Nyāsa “kādesaṃ katvā”). Classified by form. Determination: ādesa.",
-    "es": "El Nyāsa llama niyama a la palabra «ve». El sutta mismo sustituye “kiṃ” por “ka” (Rū 270 «kasaddo ādeso hoti»; Nyāsa «kādesaṃ katvā»). Se clasifica por la forma. Determinación: ādesa."
+    "es": "Nyāsa llama niyama a la palabra «ve». El sutta mismo sustituye “kiṃ” por “ka” (Rū 270 «kasaddo ādeso hoti»; Nyāsa «kādesaṃ katvā»). Se clasifica por la forma. Determinación: ādesa."
    }
   },
   "228": {
@@ -4340,7 +4347,7 @@
    },
    "nota": {
     "en": "Niyama according to Nyāsa: “siddhe saty ārambho niyamāya”. The operation is the substitution “kiṃ” → “ka” (Rū 226 “kasaddo ādeso hoti”). Classified by form. Determination: ādesa.",
-    "es": "Niyama según el Nyāsa: «siddhe saty ārambho niyamāya». La operación es la sustitución “kiṃ” → “ka” (Rū 226 «kasaddo ādeso hoti»). Se clasifica por la forma. Determinación: ādesa."
+    "es": "Niyama según Nyāsa: «siddhe saty ārambho niyamāya». La operación es la sustitución “kiṃ” → “ka” (Rū 226 «kasaddo ādeso hoti»). Se clasifica por la forma. Determinación: ādesa."
    }
   },
   "230": {
@@ -4618,7 +4625,7 @@
    },
    "nota": {
     "en": "For ‘a’ the result is in effect a lengthening, but Rū 72 says “ākārattam āpajjate” and Nyāsa “ākārādesaṃ katvā”, not dīgha; and for “pitu”, etc., the ‘u’ is truly replaced by ‘ā’. One label covers both. Determination: ādesa.",
-    "es": "Para ‘a’ el resultado es de hecho un alargamiento, pero la Rū 72 dice «ākārattam āpajjate» y el Nyāsa «ākārādesaṃ katvā», no dīgha; y en “pitu”, etc., la ‘u’ se sustituye realmente por ‘ā’. Una sola etiqueta cubre ambos casos. Determinación: ādesa."
+    "es": "Para ‘a’ el resultado es de hecho un alargamiento, pero Rū 72 dice «ākārattam āpajjate» y Nyāsa «ākārādesaṃ katvā», no dīgha; y en “pitu”, etc., la ‘u’ se sustituye realmente por ‘ā’. Una sola etiqueta cubre ambos casos. Determinación: ādesa."
    }
   },
   "245": {
@@ -4640,7 +4647,7 @@
    },
    "nota": {
     "en": "Niyama: Rū 152 (“pun’ ārambho niyamattho”), Nyāsa (“siddhe saty ārambho niyamāya”), the Bhāsāṭīkā and U Sīlānanda (class 14). Here niyama means specifying, not making constant: only jha, la, pa are shortened before ‘ga’, never ‘o’ (bho go, not bho gu). Classified by form. Determination: rassa.",
-    "es": "Niyama: Rū 152 («pun’ ārambho niyamattho»), el Nyāsa («siddhe saty ārambho niyamāya»), la Bhāsāṭīkā y U Sīlānanda (clase 14). Aquí niyama significa especificar, no hacer constante: sólo jha, la, pa se acortan ante ‘ga’, nunca ‘o’ (bho go, no bho gu). Se clasifica por la forma. Determinación: rassa."
+    "es": "Niyama: Rū 152 («pun’ ārambho niyamattho»), Nyāsa («siddhe saty ārambho niyamāya»), la Bhāsāṭīkā y U Sīlānanda (clase 14). Aquí niyama significa especificar, no hacer constante: sólo jha, la, pa se acortan ante ‘ga’, nunca ‘o’ (bho go, no bho gu). Se clasifica por la forma. Determinación: rassa."
    }
   },
   "246": {
@@ -4698,7 +4705,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "249": {
@@ -4720,7 +4727,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "250": {
@@ -4742,7 +4749,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "251": {
@@ -4764,7 +4771,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "252": {
@@ -4786,7 +4793,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "253": {
@@ -4808,7 +4815,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "254": {
@@ -4830,7 +4837,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "255": {
@@ -4852,7 +4859,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti.",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti."
    }
   },
   "256": {
@@ -4892,7 +4899,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti. Governed by the adhikāra “kāle” (§256).",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti. Regido por el adhikāra «kāle» (§256)."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti. Regido por el adhikāra «kāle» (§256)."
    }
   },
   "258": {
@@ -4914,7 +4921,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti. Governed by the adhikāra “kāle” (§256).",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti. Regido por el adhikāra «kāle» (§256)."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti. Regido por el adhikāra «kāle» (§256)."
    }
   },
   "259": {
@@ -4936,7 +4943,7 @@
    },
    "nota": {
     "en": "§247 gives these suffixes the name vibhatti (saññā). The Bhāsāṭīkā on §247 and U Sīlānanda (class 23) explain that, because they carry that name and express a case meaning, they are called vibhatti-paccaya, and the forms they make are padas. Rū (“…paccayo hoti”) and Nyāsa (“…paccayaṃ katvā”) word the sutta as the application of a suffix. Determination: paccaya (vibhatti-paccaya), not vibhatti. Governed by the adhikāra “kāle” (§256).",
-    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. La Rū («…paccayo hoti») y el Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti. Regido por el adhikāra «kāle» (§256)."
+    "es": "El §247 da a estos sufijos el nombre de vibhatti (saññā). La Bhāsāṭīkā sobre el §247 y U Sīlānanda (clase 23) explican que, por llevar ese nombre y expresar un significado casual, se llaman vibhatti-paccaya, y las formas que producen son padas. Rū («…paccayo hoti») y Nyāsa («…paccayaṃ katvā») formulan el sutta como aplicación de un sufijo. Determinación: paccaya (vibhatti-paccaya), no vibhatti. Regido por el adhikāra «kāle» (§256)."
    }
   },
   "260": {
@@ -5138,7 +5145,905 @@
    },
    "nota": {
     "en": "Two readings. As an extension: Rū 120 calls it “nābhāvātideso … rūpātideso”, and Nyāsa reads ‘smā’ as if it were ‘nā’ (“nāvacanam iva katvā”). As a real substitution: unlike §187, what is transferred is the form itself; U Sīlānanda (class 12) explains that ‘smā’ must actually be changed to ‘nā’, not just regarded as ‘nā’, otherwise one gets *brahmusmā. On its reading the Bhāsāṭīkā seems to prefer a text yielding a ‘nā’-substitute (OCR uncertain). Determination: ādesa, following the second reading.",
-    "es": "Dos lecturas. Como extensión: la Rū 120 lo llama «nābhāvātideso … rūpātideso», y el Nyāsa lee ‘smā’ como si fuera ‘nā’ («nāvacanam iva katvā»). Como sustitución real: a diferencia del §187, lo que se transfiere es la forma misma; U Sīlānanda (clase 12) explica que ‘smā’ debe cambiarse realmente en ‘nā’, no sólo considerarse como ‘nā’; de lo contrario resultaría *brahmusmā. En cuanto a la lectura, la Bhāsāṭīkā parece preferir un texto que dé una sustitución ‘nā’ (OCR dudoso). Determinación: ādesa, según la segunda lectura."
+    "es": "Dos lecturas. Como extensión: Rū 120 lo llama «nābhāvātideso … rūpātideso», y Nyāsa lee ‘smā’ como si fuera ‘nā’ («nāvacanam iva katvā»). Como sustitución real: a diferencia del §187, lo que se transfiere es la forma misma; U Sīlānanda (clase 12) explica que ‘smā’ debe cambiarse realmente en ‘nā’, no sólo considerarse como ‘nā’; de lo contrario resultaría *brahmusmā. En cuanto a la lectura, la Bhāsāṭīkā parece preferir un texto que dé una sustitución ‘nā’ (OCR dudoso). Determinación: ādesa, según la segunda lectura."
+   }
+  },
+  "271": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The kāraka from which something departs, from which fear arises, or from which something is taken, is named apādāna.",
+    "es": "El kāraka del que algo se aparta, del que surge temor o del que se toma algo recibe el nombre de apādāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 88 (Nāma-kaṇḍa) and Rū 308 (Kāraka-kaṇḍa): “taṃ kārakaṃ apādānasaññaṃ hoti”; Rū 308: “Apādānasaññāvisayassa kriyāvisesassa niddiṭṭhattā niddiṭṭhavisayaṃ”.",
+     "es": "Rū 88 (Nāma-kaṇḍa) y Rū 308 (Kāraka-kaṇḍa): «taṃ kārakaṃ apādānasaññaṃ hoti»; Rū 308: «Apādānasaññāvisayassa kriyāvisesassa niddiṭṭhattā niddiṭṭhavisayaṃ»."
+    },
+    "nyasa": {
+     "en": "“taṃ kārakaṃ apādānasaññaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "«taṃ kārakaṃ apādānasaññaṃ hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Rūpasiddhi gives this sutta twice: at Rū 88, in the Nāma-kaṇḍa, and at Rū 308, in the Kāraka-kaṇḍa; both read “apādānasaññaṃ hoti”. Rū 308 adds that it is a saññā of defined scope (niddiṭṭhavisaya). Nyāsa agrees. Determination: saññā.",
+    "es": "Rūpasiddhi trae este sutta dos veces: en Rū 88, en el Nāma-kaṇḍa, y en Rū 308, en el Kāraka-kaṇḍa; ambas dicen «apādānasaññaṃ hoti». Rū 308 añade que es una saññā de ámbito definido (niddiṭṭhavisaya). Nyāsa concuerda. Determinación: saññā."
+   }
+  },
+  "272": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "In connection with roots and nouns, and with prefixes, particles, etc., the kāraka is also named apādāna.",
+    "es": "En conexión con raíces y nombres, y con prefijos, partículas, etc., el kāraka también recibe el nombre de apādāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 309: “taṃyuttaṃ kārakaṃ apādānasaññaṃ hoti”; before it: “‘Apādānan’ ti adhikāro”.",
+     "es": "Rū 309: «taṃyuttaṃ kārakaṃ apādānasaññaṃ hoti»; antes: «‘Apādānan’ ti adhikāro»."
+    },
+    "nyasa": {
+     "en": "“apādānasaññaṃ hotī ti ñāpanatthaṃ”; “apādānaggahaṇam ih’ ānuvattate”.",
+     "es": "«apādānasaññaṃ hotī ti ñāpanatthaṃ»; «apādānaggahaṇam ih’ ānuvattate»."
+    }
+   },
+   "nota": {
+    "en": "Rū 309 introduces it with “‘Apādānan’ ti adhikāro”: the word apādāna is carried on through §272–§275, which makes the word an adhikāra, not the sutta (as with “sare” at §12 and “vibhattiyo” at §54). Each of these suttas extends the name apādāna to further cases. Determination: saññā.",
+    "es": "Rū 309 lo introduce con «‘Apādānan’ ti adhikāro»: la palabra apādāna sigue por §272–§275, lo que hace adhikāra a la palabra, no al sutta (como «sare» en el §12 y «vibhattiyo» en el §54). Cada uno de estos suttas extiende el nombre apādāna a nuevos casos. Determinación: saññā."
+   }
+  },
+  "273": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "With verbs meaning protection, what is desired (and, by ca, what is not desired) is named apādāna.",
+    "es": "Con los verbos que significan protección, lo deseado (y, por ca, lo no deseado) recibe el nombre de apādāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 310: “yaṃ icchitaṃ, taṃ kārakaṃ apādānasaññaṃ hoti, cakāradhikārato anicchitañ ca”.",
+     "es": "Rū 310: «yaṃ icchitaṃ, taṃ kārakaṃ apādānasaññaṃ hoti, cakāradhikārato anicchitañ ca»."
+    },
+    "nyasa": {
+     "en": "“apādānasaññaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "«apādānasaññaṃ hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "274": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "Optionally, the one by whom one wishes not to be seen is named apādāna.",
+    "es": "Opcionalmente, aquel por quien uno desea no ser visto recibe el nombre de apādāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 311: “taṃ kārakaṃ apādānasaññaṃ hoti vā, antaradhāne ’v’ yaṃ”.",
+     "es": "Rū 311: «taṃ kārakaṃ apādānasaññaṃ hoti vā, antaradhāne ’v’ yaṃ»."
+    },
+    "nyasa": {
+     "en": "“apādānasaññaṃ hotī ti ñāpanatthaṃ”; “vāggahaṇaphalaṃ sayam eva vakkhati”.",
+     "es": "«apādānasaññaṃ hotī ti ñāpanatthaṃ»; «vāggahaṇaphalaṃ sayam eva vakkhati»."
+    }
+   },
+   "nota": {
+    "en": "“Vā” is optional here (Rū 311 “apādānasaññaṃ hoti vā”): the naming applies only in the sense of disappearing (antaradhāna). Determination: saññā.",
+    "es": "Aquí «vā» es opcional (Rū 311 «apādānasaññaṃ hoti vā»): la denominación se aplica sólo en el sentido de desaparecer (antaradhāna). Determinación: saññā."
+   }
+  },
+  "275": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "In the senses of far, near, measure of distance and time, elision of ‘tvā’, direction, distinction, abstention, purity, release, cause, separation, measure, priority, binding, quality, question, answer, little and non-agent, the kāraka is named apādāna.",
+    "es": "En los significados de lejos, cerca, medida de la distancia y del tiempo, elisión de ‘tvā’, dirección, distinción, abstención, pureza, liberación, causa, separación, medida, anterioridad, atadura, cualidad, pregunta, respuesta, poco y no-agente, el kāraka recibe el nombre de apādāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 312: “taṃ kārakaṃ apādānasaññaṃ hoti, casaddena yathāyogaṃ dutiyā, tatiyā, chaṭṭhī ca”.",
+     "es": "Rū 312: «taṃ kārakaṃ apādānasaññaṃ hoti, casaddena yathāyogaṃ dutiyā, tatiyā, chaṭṭhī ca»."
+    },
+    "nyasa": {
+     "en": "“apādānasaññaṃ hotī ti ñāpanatthaṃ”; “caggahaṇena aññatthāpi pañcamīvibhattiñ ca chaṭṭhī-dutiyā-tatiyāvibhattiyo ca saṅgaṇhāti”.",
+     "es": "«apādānasaññaṃ hotī ti ñāpanatthaṃ»; «caggahaṇena aññatthāpi pañcamīvibhattiñ ca chaṭṭhī-dutiyā-tatiyāvibhattiyo ca saṅgaṇhāti»."
+    }
+   },
+   "nota": {
+    "en": "A saññā that, through “ca”, also licenses other inflections directly: Rū 312 “casaddena yathāyogaṃ dutiyā, tatiyā, chaṭṭhī ca”; Nyāsa likewise. The sutta itself names; the extra inflections come from the particle. Determination: saññā.",
+    "es": "Saññā que, por «ca», también autoriza directamente otras inflexiones: Rū 312 «casaddena yathāyogaṃ dutiyā, tatiyā, chaṭṭhī ca»; Nyāsa igual. El sutta mismo da un nombre; las demás inflexiones vienen de la partícula. Determinación: saññā."
+   }
+  },
+  "276": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The one to whom one wishes to give, to whom something is pleasing, or for whom one holds something, is named sampadāna.",
+    "es": "Aquel a quien uno desea dar, a quien algo agrada o para quien uno sostiene algo recibe el nombre de sampadāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 302: “taṃ kārakaṃ sampadānasaññaṃ hoti. Sammā padīyate assā ti sampadānaṃ, paṭiggāhako”.",
+     "es": "Rū 302: «taṃ kārakaṃ sampadānasaññaṃ hoti. Sammā padīyate assā ti sampadānaṃ, paṭiggāhako»."
+    },
+    "nyasa": {
+     "en": "“taṃ kārakaṃ sampadānasaññaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "«taṃ kārakaṃ sampadānasaññaṃ hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "277": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "In connection with ‘silāgha’, ‘hanu’, ‘ṭhā’, ‘sapa’, ‘dhāra’, ‘piha’, ‘kudha’, ‘duha’, ‘issa’, ‘usūya’, ‘rādha’, ‘ikkha’, etc., and in the other listed senses, the kāraka is named sampadāna.",
+    "es": "En conexión con ‘silāgha’, ‘hanu’, ‘ṭhā’, ‘sapa’, ‘dhāra’, ‘piha’, ‘kudha’, ‘duha’, ‘issa’, ‘usūya’, ‘rādha’, ‘ikkha’, etc., y en los demás significados enumerados, el kāraka recibe el nombre de sampadāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 303: “taṃ kammādikārakaṃ sampadānasaññaṃ hoti”; before it: “‘Sampadānaṃ,’ ‘vā’ ti ca vattate”; “vādhikārato dutiyā ca”.",
+     "es": "Rū 303: «taṃ kammādikārakaṃ sampadānasaññaṃ hoti»; antes: «‘Sampadānaṃ,’ ‘vā’ ti ca vattate»; «vādhikārato dutiyā ca»."
+    },
+    "nyasa": {
+     "en": "“taṃ kārakaṃ sampadānasaññaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "«taṃ kārakaṃ sampadānasaññaṃ hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Rū 303 carries “vā” from §274 (“‘Sampadānaṃ,’ ‘vā’ ti ca vattate”), so with rādha and ikkha, and with verbs of motion, the second inflection is also allowed (“vādhikārato dutiyā ca”). Determination: saññā.",
+    "es": "Rū 303 trae «vā» del §274 («‘Sampadānaṃ,’ ‘vā’ ti ca vattate»), de modo que con rādha e ikkha, y con los verbos de movimiento, también se admite la segunda inflexión («vādhikārato dutiyā ca»). Determinación: saññā."
+   }
+  },
+  "278": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "That which is the support (ādhāra) is named okāsa.",
+    "es": "Lo que es el soporte (ādhāra) recibe el nombre de okāsa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 320: “yo ādhāro, taṃ kārakaṃ okāsasaññaṃ hoti”.",
+     "es": "Rū 320: «yo ādhāro, taṃ kārakaṃ okāsasaññaṃ hoti»."
+    },
+    "nyasa": {
+     "en": "“taṃ kārakaṃ okāsasaññaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "«taṃ kārakaṃ okāsasaññaṃ hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "279": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "That by means of which one does, sees or hears is named karaṇa.",
+    "es": "Aquello por medio de lo cual uno hace, ve u oye recibe el nombre de karaṇa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 292: “taṃ kārakaṃ karaṇasaññaṃ hoti”.",
+     "es": "Rū 292: «taṃ kārakaṃ karaṇasaññaṃ hoti»."
+    },
+    "nyasa": {
+     "en": "“taṃ kārakaṃ karaṇasaññaṃ hotī ti ñāpanatthaṃ”; “anvatthasaññā”.",
+     "es": "«taṃ kārakaṃ karaṇasaññaṃ hotī ti ñāpanatthaṃ»; «anvatthasaññā»."
+    }
+   }
+  },
+  "280": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "That which one does, sees or hears is named kamma.",
+    "es": "Aquello que uno hace, ve u oye recibe el nombre de kamma."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 285: “taṃ kārakaṃ kammasaññaṃ hoti”; “sabbattha iminā ’va kammasaññā hoti”.",
+     "es": "Rū 285: «taṃ kārakaṃ kammasaññaṃ hoti»; «sabbattha iminā ’va kammasaññā hoti»."
+    },
+    "nyasa": {
+     "en": "“taṃ kārakaṃ kammasaññaṃ hotī ti ñāpanatthaṃ”; “anvatthasaññā”.",
+     "es": "«taṃ kārakaṃ kammasaññaṃ hotī ti ñāpanatthaṃ»; «anvatthasaññā»."
+    }
+   }
+  },
+  "281": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The one who does is named kattā.",
+    "es": "El que hace recibe el nombre de kattā."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 294: “Yo kriyaṃ attappadhāno hutvā karoti, so kattusañño hoti”.",
+     "es": "Rū 294: «Yo kriyaṃ attappadhāno hutvā karoti, so kattusañño hoti»."
+    },
+    "nyasa": {
+     "en": "“so kattusañño hotī ti ñāpanatthaṃ”.",
+     "es": "«so kattusañño hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "282": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The one who causes the agent to act is named hetu, and also kattā.",
+    "es": "El que hace actuar al agente recibe el nombre de hetu, y también el de kattā."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 295: “so hetusañño hoti, kattā cā ti hetukattusaññā”; before it: “‘kattā’ ti vattate”.",
+     "es": "Rū 295: «so hetusañño hoti, kattā cā ti hetukattusaññā»; antes: «‘kattā’ ti vattate»."
+    },
+    "nyasa": {
+     "en": "“so hetusañño hoti kattusañño cā ti ñāpanatthaṃ”.",
+     "es": "«so hetusañño hoti kattusañño cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "One sutta, two names: Rū 295 “so hetusañño hoti, kattā cā ti hetukattusaññā”; Nyāsa “hetusañño hoti kattusañño cā ti”. Determination: saññā.",
+    "es": "Un sutta, dos nombres: Rū 295 «so hetusañño hoti, kattā cā ti hetukattusaññā»; Nyāsa «hetusañño hoti kattusañño cā ti». Determinación: saññā."
+   }
+  },
+  "283": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "en": "The one whose possession something is, is named sāmī.",
+    "es": "Aquel de quien algo es posesión recibe el nombre de sāmī."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 316: “taṃ pati so attho sāmisañño hoti”.",
+     "es": "Rū 316: «taṃ pati so attho sāmisañño hoti»."
+    },
+    "nyasa": {
+     "en": "(283-ka) “taṃ sāmisaññaṃ hotī ti ñāpanatthaṃ”.",
+     "es": "(283-ka) «taṃ sāmisaññaṃ hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Sāmī is named here with the kārakas, but it is not itself a kāraka: it has no direct relation to the action (Nyāsa: “kriyābhisambandhābhāvā n’ eha kārakatā sambhavati”). The classification is unaffected. Determination: saññā.",
+    "es": "El sāmī se nombra aquí junto a los kāraka, pero no es un kāraka: no tiene relación directa con la acción (Nyāsa: «kriyābhisambandhābhāvā n’ eha kārakatā sambhavati»). Eso no cambia la clasificación. Determinación: saññā."
+   }
+  },
+  "284": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the first inflection when only the meaning of the base is expressed.",
+    "es": "Aplicación de la primera inflexión cuando sólo se expresa el significado de la base."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 283: “Liṅgatthābhidhānamatte paṭhamāvibhatti hoti”.",
+     "es": "Rū 283: «Liṅgatthābhidhānamatte paṭhamāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“paṭhamā vibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«paṭhamā vibhatti hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "From here to §315 every sutta assigns an inflection; §271–§283 named the kārakas and the sāmī. U Sīlānanda (Kaccāyana class 4, ~29 min): “now we have finished the six kārakas. The rest are about adding terminations, adding vibhattis.” Determination: vidhi — vibhatti.",
+    "es": "Desde aquí hasta el §315 cada sutta asigna una inflexión; §271–§283 nombraron los kāraka y el sāmī. U Sīlānanda (clase 4 de Kaccāyana, ~29 min): «hemos terminado los seis kāraka. Lo demás trata de añadir terminaciones, de añadir vibhattis». Determinación: vidhi — vibhatti."
+   }
+  },
+  "285": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the first inflection also in the vocative.",
+    "es": "Aplicación de la primera inflexión también en el vocativo."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 70 (Nāma-kaṇḍa): “ālapanatthādike liṅgatthābhidhānamatte ca paṭhamāvibhatti hoti”; before it: “‘liṅgatthe paṭhamā’ ti vattate”.",
+     "es": "Rū 70 (Nāma-kaṇḍa): «ālapanatthādike liṅgatthābhidhānamatte ca paṭhamāvibhatti hoti»; antes: «‘liṅgatthe paṭhamā’ ti vattate»."
+    },
+    "nyasa": {
+     "en": "(285-ka) “ālapanatthe ca paṭhamā vibhatti hotī ti ñāpanatthaṃ”; “siddhe saty ārambhassa niyamāya saṃvattanato”.",
+     "es": "(285-ka) «ālapanatthe ca paṭhamā vibhatti hotī ti ñāpanatthaṃ»; «siddhe saty ārambhassa niyamāya saṃvattanato»."
+    }
+   },
+   "nota": {
+    "en": "Niyama according to Nyāsa: “siddhe saty ārambhassa niyamāya saṃvattanato”; the first inflection would follow from §284 anyway. Rūpasiddhi places the sutta in the Nāma-kaṇḍa (Rū 70), with “‘liṅgatthe paṭhamā’ ti vattate”. Classified by form. Determination: vidhi — vibhatti.",
+    "es": "Niyama según Nyāsa: «siddhe saty ārambhassa niyamāya saṃvattanato»; la primera inflexión resultaría de todos modos del §284. Rūpasiddhi coloca el sutta en el Nāma-kaṇḍa (Rū 70), con «‘liṅgatthe paṭhamā’ ti vattate». Se clasifica por la forma. Determinación: vidhi — vibhatti."
+   }
+  },
+  "286": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection in the karaṇa.",
+    "es": "Aplicación de la tercera inflexión en el karaṇa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 291: “Karaṇakārake tatiyāvibhatti hoti”.",
+     "es": "Rū 291: «Karaṇakārake tatiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“karaṇakārake tatiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«karaṇakārake tatiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "287": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection in connection with “saha”, etc.",
+    "es": "Aplicación de la tercera inflexión en conexión con “saha”, etc."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 296: “yoge liṅgamhā tatiyāvibhatti hoti, casaddena sahatthe pi”.",
+     "es": "Rū 296: «yoge liṅgamhā tatiyāvibhatti hoti, casaddena sahatthe pi»."
+    },
+    "nyasa": {
+     "en": "“tatiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«tatiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "288": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection in the kattā.",
+    "es": "Aplicación de la tercera inflexión en el kattā."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 293: “Kattari ca kārake liṅgamhā tatiyāvibhatti hoti”; before it: “‘Tatiyā’ ti adhikāro”.",
+     "es": "Rū 293: «Kattari ca kārake liṅgamhā tatiyāvibhatti hoti»; antes: «‘Tatiyā’ ti adhikāro»."
+    },
+    "nyasa": {
+     "en": "“kattari kārake tatiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«kattari kārake tatiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "289": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection in the sense of cause.",
+    "es": "Aplicación de la tercera inflexión en el significado de causa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 297: “hetvatthe, hetvatthappayoge ca liṅgamhā tatiyāvibhatti hoti”.",
+     "es": "Rū 297: «hetvatthe, hetvatthappayoge ca liṅgamhā tatiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“hetvatthe hetuppayoge ca tatiyā vibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«hetvatthe hetuppayoge ca tatiyā vibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "290": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection in the sense of the seventh.",
+    "es": "Aplicación de la tercera inflexión en el significado de la séptima."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 298: “Sattamyatthe ca liṅgamhā tatiyāvibhatti hoti”.",
+     "es": "Rū 298: «Sattamyatthe ca liṅgamhā tatiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“sattamyatthe ca tatiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«sattamyatthe ca tatiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "291": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection to the limb by which a deformity of the body is marked.",
+    "es": "Aplicación de la tercera inflexión al miembro por el que se señala la deformidad del cuerpo."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 299: “Yena byādhimatā aṅgena aṅgino vikāro lakkhīyate, tattha tatiyāvibhatti hoti”.",
+     "es": "Rū 299: «Yena byādhimatā aṅgena aṅgino vikāro lakkhīyate, tattha tatiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“tattha tatiyā vibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«tattha tatiyā vibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "292": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection in a qualifier (lineage, name, birth, craft, age, quality).",
+    "es": "Aplicación de la tercera inflexión en un calificativo (linaje, nombre, nacimiento, oficio, edad, cualidad)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 300: “visesanatthe tatiyāvibhatti hoti, casaddena pakati-ādīhi ca”.",
+     "es": "Rū 300: «visesanatthe tatiyāvibhatti hoti, casaddena pakati-ādīhi ca»."
+    },
+    "nyasa": {
+     "en": "“visesanatthe ca tatiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«visesanatthe ca tatiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "293": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the fourth inflection in the sampadāna.",
+    "es": "Aplicación de la cuarta inflexión en el sampadāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 301: “Sampadānakārake liṅgamhā catutthīvibhatti hoti”.",
+     "es": "Rū 301: «Sampadānakārake liṅgamhā catutthīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“sampadānakārake catutthīvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«sampadānakārake catutthīvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "294": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the fourth inflection in connection with “namo”, etc.",
+    "es": "Aplicación de la cuarta inflexión en conexión con “namo”, etc."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 305: “Namosaddayoge, sotthi-svāgatādīhi ca yoge liṅgamhā catutthīvibhatti hoti”; before it: “‘Catutthī’ ti vattate”.",
+     "es": "Rū 305: «Namosaddayoge, sotthi-svāgatādīhi ca yoge liṅgamhā catutthīvibhatti hoti»; antes: «‘Catutthī’ ti vattate»."
+    },
+    "nyasa": {
+     "en": "“namoyogādīsu ca catutthīvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«namoyogādīsu ca catutthīvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "295": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the fifth inflection in the apādāna.",
+    "es": "Aplicación de la quinta inflexión en el apādāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 307: no gloss (the sutta is followed directly by “Kim apādānaṃ?”).",
+     "es": "Rū 307: sin glosa (al sutta le sigue directamente «Kim apādānaṃ?»)."
+    },
+    "nyasa": {
+     "en": "“apādānakārake pañcamīvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«apādānakārake pañcamīvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "296": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Optionally, application of the fifth inflection in the sense of cause.",
+    "es": "Opcionalmente, aplicación de la quinta inflexión en el significado de causa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 314: “tasmiṃ kāraṇatthe ca pañcamīvibhatti hoti, vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā”; before it: “‘Pañcamī’ ti vattate”.",
+     "es": "Rū 314: «tasmiṃ kāraṇatthe ca pañcamīvibhatti hoti, vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā»; antes: «‘Pañcamī’ ti vattate»."
+    },
+    "nyasa": {
+     "en": "— (no section: the Nyāsa passes from §295 to §297).",
+     "es": "— (sin sección: Nyāsa pasa del §295 al §297)."
+    }
+   },
+   "nota": {
+    "en": "An option beside §289: Rū 314 “vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā”, i.e. in the sense of cause the third inflection is also available. Nyāsa has no section for this sutta. Determination: vidhi — vibhatti.",
+    "es": "Una alternativa al §289: Rū 314 «vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā», es decir, en el significado de causa también cabe la tercera inflexión. Nyāsa no tiene sección para este sutta. Determinación: vidhi — vibhatti."
+   }
+  },
+  "297": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the second inflection in the sense of the kamma.",
+    "es": "Aplicación de la segunda inflexión en el significado del kamma."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 284: “Kammatthe liṅgamhā dutiyāvibhatti hoti”.",
+     "es": "Rū 284: «Kammatthe liṅgamhā dutiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“kammatthe dutiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«kammatthe dutiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "298": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the second inflection to words of time and distance in continuous connection.",
+    "es": "Aplicación de la segunda inflexión a las palabras de tiempo y distancia en conexión continua."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 287: “tehi kāladdhānavācīhi liṅgehi dutiyāvibhatti hoti”.",
+     "es": "Rū 287: «tehi kāladdhānavācīhi liṅgehi dutiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“accantasaṃyutte dutiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«accantasaṃyutte dutiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "299": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the second inflection in connection with kammappavacanīyas.",
+    "es": "Aplicación de la segunda inflexión en conexión con los kammappavacanīya."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 288: “Kammappavacanīyehi nipātopasaggehi yutte yoge sati liṅgamhā dutiyāvibhatti hoti”.",
+     "es": "Rū 288: «Kammappavacanīyehi nipātopasaggehi yutte yoge sati liṅgamhā dutiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“kammappavacanīyayutte dutiyāvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«kammappavacanīyayutte dutiyāvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "300": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Optionally, application of the second inflection to the prompted agent of ‘gamu’, ‘budha’, ‘bhuja’, ‘paṭha’, ‘hara’, ‘kara’, ‘si’, etc., in the causative.",
+    "es": "Opcionalmente, aplicación de la segunda inflexión al agente inducido de ‘gamu’, ‘budha’, ‘bhuja’, ‘paṭha’, ‘hara’, ‘kara’, ‘si’, etc., en el causativo."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 286: “payojjakattubhūte kammani liṅgamhā dutiyāvibhatti hoti vā. Niccasampatte vikappattho ’yaṃ, tena tassa pakkhe tatiyā hoti”; before it: “‘Dutiyā’ ti adhikāro”.",
+     "es": "Rū 286: «payojjakattubhūte kammani liṅgamhā dutiyāvibhatti hoti vā. Niccasampatte vikappattho ’yaṃ, tena tassa pakkhe tatiyā hoti»; antes: «‘Dutiyā’ ti adhikāro»."
+    },
+    "nyasa": {
+     "en": "(300-ka) “kammani kārite sati dutiyā hotī ti ñāpanatthaṃ”; “imass’ uccāraṇaṃ vikappanatthaṃ”.",
+     "es": "(300-ka) «kammani kārite sati dutiyā hotī ti ñāpanatthaṃ»; «imass’ uccāraṇaṃ vikappanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "“Vā” makes the second inflection optional where it would otherwise be fixed: Rū 286 “niccasampatte vikappattho ’yaṃ, tena tassa pakkhe tatiyā hoti”; Nyāsa “imass’ uccāraṇaṃ vikappanatthaṃ”. U Sīlānanda (class 5, ~34 min) gives puriso purisaṃ / purisena / purisassa gāmaṃ gāmayati. Determination: vidhi — vibhatti.",
+    "es": "«Vā» hace opcional la segunda inflexión donde sería fija: Rū 286 «niccasampatte vikappattho ’yaṃ, tena tassa pakkhe tatiyā hoti»; Nyāsa «imass’ uccāraṇaṃ vikappanatthaṃ». U Sīlānanda (clase 5, ~34 min) da puriso purisaṃ / purisena / purisassa gāmaṃ gāmayati. Determinación: vidhi — vibhatti."
+   }
+  },
+  "301": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the sixth inflection in the sāmī.",
+    "es": "Aplicación de la sexta inflexión en el sāmī."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 315: no gloss (the sutta is followed directly by “Ko ca sāmī?”).",
+     "es": "Rū 315: sin glosa (al sutta le sigue directamente «Ko ca sāmī?»)."
+    },
+    "nyasa": {
+     "en": "“sāmismiṃ chaṭṭhīvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«sāmismiṃ chaṭṭhīvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "302": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the seventh inflection in the okāsa.",
+    "es": "Aplicación de la séptima inflexión en el okāsa."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 319: “Okāsakārake sattamīvibhatti hoti”.",
+     "es": "Rū 319: «Okāsakārake sattamīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“okāsakārake sattamīvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«okāsakārake sattamīvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "303": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the sixth and the seventh inflection in connection with “sāmī”, “issara”, “adhipati”, “dāyāda”, “sakkhī”, “patibhū”, “pasuta”, “kusala”.",
+    "es": "Aplicación de la sexta y de la séptima inflexión en conexión con “sāmī”, “issara”, “adhipati”, “dāyāda”, “sakkhī”, “patibhū”, “pasuta”, “kusala”."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 321: “chaṭṭhīvibhatti hoti, sattamī ca. Ubhayatthaṃ vacanaṃ”; before it: “‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro”.",
+     "es": "Rū 321: «chaṭṭhīvibhatti hoti, sattamī ca. Ubhayatthaṃ vacanaṃ»; antes: «‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro»."
+    },
+    "nyasa": {
+     "en": "“chaṭṭhī vibhatti hoti sattamī cā ti ñāpanatthaṃ”.",
+     "es": "«chaṭṭhī vibhatti hoti sattamī cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Two inflections in one sutta: the sixth and the seventh (Rū 321 “Ubhayatthaṃ vacanaṃ”, with “‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro” carried over §303–§305). Both are the same kind of operation. Determination: vidhi — vibhatti.",
+    "es": "Dos inflexiones en un sutta: la sexta y la séptima (Rū 321 «Ubhayatthaṃ vacanaṃ», con «‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro» por §303–§305). Ambas son la misma clase de operación. Determinación: vidhi — vibhatti."
+   }
+  },
+  "304": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the sixth and the seventh inflection to the whole from which a part is singled out.",
+    "es": "Aplicación de la sexta y de la séptima inflexión al conjunto del que se extrae una parte."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 322: “samudāyavāciliṅgamhā chaṭṭhīvibhatti hoti, sattamī ca”.",
+     "es": "Rū 322: «samudāyavāciliṅgamhā chaṭṭhīvibhatti hoti, sattamī ca»."
+    },
+    "nyasa": {
+     "en": "“niddhāraṇatthe chaṭṭhī hoti sattamī cā ti ñāpanatthaṃ”.",
+     "es": "«niddhāraṇatthe chaṭṭhī hoti sattamī cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Two inflections in one sutta: the sixth and the seventh (Rū 321 “Ubhayatthaṃ vacanaṃ”, with “‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro” carried over §303–§305). Both are the same kind of operation. Determination: vidhi — vibhatti.",
+    "es": "Dos inflexiones en un sutta: la sexta y la séptima (Rū 321 «Ubhayatthaṃ vacanaṃ», con «‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro» por §303–§305). Ambas son la misma clase de operación. Determinación: vidhi — vibhatti."
+   }
+  },
+  "305": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the sixth and the seventh inflection in disregard.",
+    "es": "Aplicación de la sexta y de la séptima inflexión en el desprecio."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 323: “Anādare gamyamāne bhāvavatā liṅgamhā chaṭṭhīvibhatti hoti, sattamī ca”.",
+     "es": "Rū 323: «Anādare gamyamāne bhāvavatā liṅgamhā chaṭṭhīvibhatti hoti, sattamī ca»."
+    },
+    "nyasa": {
+     "en": "“anādare ca chaṭṭhīvibhatti hoti sattamī cā ti ñāpanatthaṃ”.",
+     "es": "«anādare ca chaṭṭhīvibhatti hoti sattamī cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "Two inflections in one sutta: the sixth and the seventh (Rū 321 “Ubhayatthaṃ vacanaṃ”, with “‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro” carried over §303–§305). Both are the same kind of operation. Determination: vidhi — vibhatti.",
+    "es": "Dos inflexiones en un sutta: la sexta y la séptima (Rū 321 «Ubhayatthaṃ vacanaṃ», con «‘Chaṭṭhī,’ ‘sattamī’ ti ca adhikāro» por §303–§305). Ambas son la misma clase de operación. Determinación: vidhi — vibhatti."
+   }
+  },
+  "306": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Sometimes, application of the second inflection in the sense of the sixth.",
+    "es": "A veces, aplicación de la segunda inflexión en el significado de la sexta."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 289: “Chaṭṭhīnaṃ atthe kvaci dutiyāvibhatti hoti”.",
+     "es": "Rū 289: «Chaṭṭhīnaṃ atthe kvaci dutiyāvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“chaṭṭhīnam atthe kvaci dutiyā hotī ti ñāpanatthaṃ”.",
+     "es": "«chaṭṭhīnam atthe kvaci dutiyā hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "307": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Sometimes, application of the second inflection in the sense of the third and the seventh.",
+    "es": "A veces, aplicación de la segunda inflexión en el significado de la tercera y de la séptima."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 290: “Tatiyā-sattamīnam atthe ca kvaci liṅgamhā dutiyāvibhatti hoti”; before it: “‘Kvaci dutiyā,’ ‘atthe’ ti ca vattate”.",
+     "es": "Rū 290: «Tatiyā-sattamīnam atthe ca kvaci liṅgamhā dutiyāvibhatti hoti»; antes: «‘Kvaci dutiyā,’ ‘atthe’ ti ca vattate»."
+    },
+    "nyasa": {
+     "en": "“tatiyā-sattamīnañ ca atthe kvaci dutiyā hotī ti ñāpanatthaṃ”.",
+     "es": "«tatiyā-sattamīnañ ca atthe kvaci dutiyā hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "308": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Sometimes, application of the sixth inflection in the sense of the third and the seventh.",
+    "es": "A veces, aplicación de la sexta inflexión en el significado de la tercera y de la séptima."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 317: “Tatiyā-sattamīnam atthe kvaci chaṭṭhīvibhatti hoti”.",
+     "es": "Rū 317: «Tatiyā-sattamīnam atthe kvaci chaṭṭhīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“tatiyā-sattamīnaṃ atthe kvaci chaṭṭhī ca hotī ti ñāpanatthaṃ”.",
+     "es": "«tatiyā-sattamīnaṃ atthe kvaci chaṭṭhī ca hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "309": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Sometimes, application of the sixth inflection in the sense of the second and the fifth.",
+    "es": "A veces, aplicación de la sexta inflexión en el significado de la segunda y de la quinta."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 318: “Dutiyā-pañcamīnam atthe ca kvaci chaṭṭhīvibhatti hoti”.",
+     "es": "Rū 318: «Dutiyā-pañcamīnam atthe ca kvaci chaṭṭhīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“dutiyā-pañcamīnañ ca atthe kvaci chaṭṭhīvibhatti hotī ti ñāpanatthaṃ”.",
+     "es": "«dutiyā-pañcamīnañ ca atthe kvaci chaṭṭhīvibhatti hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "310": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the seventh inflection in the senses of kamma, karaṇa and motive (nimitta).",
+    "es": "Aplicación de la séptima inflexión en los significados de kamma, karaṇa y motivo (nimitta)."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 324: “Kamma karaṇa nimitta icc etesv atthesu liṅgamhā sattamīvibhatti hoti”.",
+     "es": "Rū 324: «Kamma karaṇa nimitta icc etesv atthesu liṅgamhā sattamīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“kamma-karaṇa-nimitta icc etesv atthesu sattamī hotī ti ñāpanatthaṃ”.",
+     "es": "«kamma-karaṇa-nimitta icc etesv atthesu sattamī hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "311": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the seventh inflection in the sense of the sampadāna.",
+    "es": "Aplicación de la séptima inflexión en el significado del sampadāna."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 325: “Sampadānatthe ca liṅgamhā sattamīvibhatti hoti”; before it: “‘Sattamī’ ti adhikāro”.",
+     "es": "Rū 325: «Sampadānatthe ca liṅgamhā sattamīvibhatti hoti»; antes: «‘Sattamī’ ti adhikāro»."
+    },
+    "nyasa": {
+     "en": "“sampadānatthe ca sattamī hotī ti ñāpanatthaṃ”.",
+     "es": "«sampadānatthe ca sattamī hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "312": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the seventh inflection in the sense of the fifth.",
+    "es": "Aplicación de la séptima inflexión en el significado de la quinta."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 326: “Pañcamyatthe ca liṅgamhā sattamīvibhatti hoti”.",
+     "es": "Rū 326: «Pañcamyatthe ca liṅgamhā sattamīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“pañcamyatthe ca sattamī hotī ti ñāpanatthaṃ”.",
+     "es": "«pañcamyatthe ca sattamī hotī ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "These suttas give an inflection in the meaning of another inflection. The operation is still the application of an inflection. Determination: vidhi — vibhatti.",
+    "es": "Estos suttas dan una inflexión en el significado de otra inflexión. La operación sigue siendo la aplicación de una inflexión. Determinación: vidhi — vibhatti."
+   }
+  },
+  "313": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the seventh inflection in the senses of time and of an action (bhāva) that marks another.",
+    "es": "Aplicación de la séptima inflexión en los significados de tiempo y de una acción (bhāva) que señala otra."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 327: “tasmiṃ kālatthe ca bhāvalakkhaṇe bhāvatthe ca liṅgamhā sattamīvibhatti hoti”.",
+     "es": "Rū 327: «tasmiṃ kālatthe ca bhāvalakkhaṇe bhāvatthe ca liṅgamhā sattamīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“kālabhāva icc etesv atthesu ca sattamī hotī ti ñāpanatthaṃ”; “bhāvo ti dhātvattho adhippeto”.",
+     "es": "«kālabhāva icc etesv atthesu ca sattamī hotī ti ñāpanatthaṃ»; «bhāvo ti dhātvattho adhippeto»."
+    }
+   }
+  },
+  "314": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the seventh inflection in connection with ‘upa’ and ‘adhi’ in the senses of excess and lordship.",
+    "es": "Aplicación de la séptima inflexión en conexión con ‘upa’ y ‘adhi’ en los significados de exceso y de señorío."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 328: “upa adhi icc etehi yoge adhik’-issaravacane gamyamāne liṅgamhā sattamīvibhatti hoti”.",
+     "es": "Rū 328: «upa adhi icc etehi yoge adhik’-issaravacane gamyamāne liṅgamhā sattamīvibhatti hoti»."
+    },
+    "nyasa": {
+     "en": "“tattha sattamī hotī ti ñāpanatthaṃ”.",
+     "es": "«tattha sattamī hotī ti ñāpanatthaṃ»."
+    }
+   }
+  },
+  "315": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "en": "Application of the third inflection (and, by the gloss, the seventh) in the senses of “maṇḍita” and “ussukka”.",
+    "es": "Aplicación de la tercera inflexión (y, según la glosa, de la séptima) en los significados de “maṇḍita” y “ussukka”."
+   },
+   "base": {
+    "ru": {
+     "en": "Rū 329: “Maṇḍita ussukka icc etesv atthesu gamyamānesu liṅgamhā tatiyāvibhatti hoti, sattamī ca”.",
+     "es": "Rū 329: «Maṇḍita ussukka icc etesv atthesu gamyamānesu liṅgamhā tatiyāvibhatti hoti, sattamī ca»."
+    },
+    "nyasa": {
+     "en": "(315-ka) “maṇḍitussukkesu sattamī hoti tatiyā cā ti ñāpanatthaṃ”.",
+     "es": "(315-ka) «maṇḍitussukkesu sattamī hoti tatiyā cā ti ñāpanatthaṃ»."
+    }
+   },
+   "nota": {
+    "en": "The sutta names only the third inflection; the vutti adds the seventh (Rū 329 “tatiyāvibhatti hoti, sattamī ca”), and Nyāsa states both. Determination: vidhi — vibhatti.",
+    "es": "El sutta nombra sólo la tercera inflexión; la vutti añade la séptima (Rū 329 «tatiyāvibhatti hoti, sattamī ca»), y Nyāsa da ambas. Determinación: vidhi — vibhatti."
    }
   }
  }

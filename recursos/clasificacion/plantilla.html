@@ -8,7 +8,7 @@
 <title>Clasificación de los suttas · Kaccāyana</title>
 <meta name="version" content="__VERSION__">
 <meta name="version-date" content="__VERSION_DATE__">
-<meta name="description" content="Cada aforismo del Sandhi-Kappa y del Nāma-Kappa de Kaccāyana clasificado según los cuatro tipos de sutta y, cuando es vidhi, según las ocho operaciones, con su fundamento en la Rūpasiddhi y el Nyāsa.">
+<meta name="description" content="Cada aforismo de Kaccāyana clasificado según los cuatro tipos de sutta y, cuando es vidhi, según las ocho operaciones, con su fundamento en Rūpasiddhi y Nyāsa.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -53,7 +53,17 @@ body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);fo
 .sb-tools button{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   background:none;border:1px solid var(--hair);color:var(--soot);border-radius:2px;padding:4px 6px;cursor:pointer}
 .sb-close:hover,.sb-tools button:hover{color:var(--ink);border-color:var(--soot)}
-.sb-cap{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);padding:12px 14px 2px}
+.sb-ch>summary{display:flex;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink);padding:12px 14px 4px 8px;cursor:pointer;list-style:none;user-select:none}
+.sb-ch>summary::-webkit-details-marker{display:none}
+.sb-ch>summary::before{content:'▸';flex:0 0 12px;font-size:10px;opacity:.8}
+.sb-ch[open]>summary::before{content:'▾'}
+.sb-ch>summary .gl{flex:1;min-width:0}
+.sb-ch>summary .n{color:var(--soot);font-weight:400;letter-spacing:0}
+.sb-ch>summary:hover{background:var(--ola)}
+.sb-ch>summary:focus-visible,.sb-sec>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
+.sb-ch .sb-sec>summary{padding-left:20px}
+.sb-ch.on:not([open])>summary{background:var(--ola);box-shadow:inset 2px 0 0 var(--haritala)}
 .sb-sec>summary{display:flex;align-items:baseline;gap:6px;font-family:var(--mono);font-size:10.5px;font-weight:600;
   letter-spacing:.1em;text-transform:uppercase;color:var(--haritala);padding:7px 14px 5px 12px;cursor:pointer;list-style:none;user-select:none}
 .sb-sec>summary::-webkit-details-marker{display:none}
@@ -107,13 +117,15 @@ h1{font-size:clamp(34px,5.5vw,52px);line-height:.98;margin:10px 0 0;font-weight:
 /* chips */
 .chip{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.04em;border-radius:2px;
   padding:1.5px 6px;white-space:nowrap;border:1px solid transparent}
-.chip.t-S{color:var(--nila);background:var(--chip-k)}
+/* Todas las etiquetas llevan filete: continuo dentro del esquema,
+   discontinuo fuera de él (pubbavākya, atidesa). */
+.chip.t-S{color:var(--nila);background:var(--chip-k);border-color:var(--nila)}
 .chip.t-A{color:var(--haritala);border-color:var(--haritala)}
 .chip.t-P{color:var(--rakta);border-color:var(--rakta)}
-.chip.t-V{color:var(--soot);border-color:var(--hair)}
+.chip.t-V{color:var(--soot);border-color:var(--soot)}
 .chip.t-X{color:var(--soot);border-style:dashed;border-color:var(--soot)}
-.chip.v{color:var(--ink);background:var(--hl)}
-.chip.v.fuera{background:none;border:1px dashed var(--haritala);color:var(--haritala)}
+.chip.v{color:var(--ink);background:var(--hl);border-color:var(--haritala)}
+.chip.v.fuera{background:none;border-style:dashed;color:var(--haritala)}
 .chip+.chip{margin-left:3px}
 
 /* barra de mandos */
@@ -261,7 +273,7 @@ footer a{color:var(--nila)}
 <nav class="sidebar" id="sidebar" aria-label="Índice">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice" data-t-title="sb_hide">☰</button>
   <div class="sb-tools"><button id="sb-abrir" data-t="sb_open">Desplegar</button><button id="sb-plegar" data-t="sb_fold">Plegar</button></div>
-  <div class="sb-brand"><b data-t="title">Clasificación de los suttas</b><span class="lbl">Kaccāyana · Sandhi · Nāma</span></div>
+  <div class="sb-brand"><b data-t="title">Clasificación de los suttas</b><span class="lbl">Kaccāyana · Sandhi · Nāma · Kāraka</span></div>
   <div id="sb-list"></div>
 </nav>
 <div class="scrim" id="scrim"></div>
@@ -292,7 +304,7 @@ footer a{color:var(--nila)}
   <button class="icon-btn" id="ftog" aria-expanded="false" data-t="filters">Filtros</button>
   <span class="ext">
   <div class="filtros" id="f-cap" role="group">
-    <button data-v="all" aria-pressed="true" data-t="all">Todos</button><button data-v="sandhi" aria-pressed="false">Sandhi</button><button data-v="nama" aria-pressed="false">Nāma</button>
+    <button data-v="all" aria-pressed="true" data-t="all">Todos</button><button data-v="sandhi" aria-pressed="false">Sandhi</button><button data-v="nama" aria-pressed="false">Nāma</button><button data-v="karaka" aria-pressed="false">Kāraka</button>
   </div>
   <div class="filtros" id="f-tipo" role="group">
     <button data-v="all" aria-pressed="true" data-t="all">Todos</button><button data-v="S" aria-pressed="false">saññā</button><button data-v="A" aria-pressed="false">adhikāra</button><button data-v="P" aria-pressed="false">paribhāsā</button><button data-v="V" aria-pressed="false">vidhi</button>
@@ -332,8 +344,8 @@ footer a{color:var(--nila)}
 const D = /*__DATOS__*/{}/*__FIN__*/;
 const T={
  es:{title:'Clasificación de los suttas',title_long:'Clasificación de los suttas de Kaccāyana',back:'← Recursos · Gramáticas Pāḷi',
-  tag:'Cada aforismo del Sandhi-Kappa y del Nāma-Kappa según los cuatro tipos de sutta —<i>saññā</i>, <i>adhikāra</i>, <i>paribhāsā</i> y <i>vidhi</i>— y, cuando es <i>vidhi</i>, según las ocho operaciones, con la operación descrita en una frase y su fundamento en la <i>Rūpasiddhi</i> y el <i>Nyāsa</i>.',
-  aviso:'Borrador en revisión. Las citas del <i>Nyāsa</i> y de la <i>Bhāsāṭīkā</i> vienen de transcripciones OCR y se dan normalizadas: no son citas literales hasta cotejarlas con el facsímil.',
+  tag:'Cada aforismo de Kaccāyana según los cuatro tipos de sutta —<i>saññā</i>, <i>adhikāra</i>, <i>paribhāsā</i> y <i>vidhi</i>— y, cuando es <i>vidhi</i>, según las ocho operaciones, con la operación descrita en una frase y su fundamento en <i>Rūpasiddhi</i> y <i>Nyāsa</i>. Por ahora, el Sandhi-Kappa, el Nāma-Kappa y el Kāraka-Kappa; los demás capítulos se irán añadiendo.',
+  aviso:'Borrador en revisión. Las citas de <i>Nyāsa</i> y de la <i>Bhāsāṭīkā</i> vienen de transcripciones OCR y se dan normalizadas: no son citas literales hasta cotejarlas con el facsímil.',
   legend:'Leyenda',leg_types:'Tipos de sutta',leg_vidhi:'Tipos de vidhi',all:'Todos',with_note:'Con nota',all_vidhi:'Toda vidhi',
   h_type:'Tipo',h_op:'Operación',h_int:'Interpretación / determinación',empty:'Ningún aforismo coincide.',
   search:'Buscar en pāḷi, español o inglés (sin diacríticos)…',sb_open:'Desplegar',sb_fold:'Plegar',sb_hide:'Ocultar el índice',
@@ -341,17 +353,17 @@ const T={
   bh:'La Bhāsāṭīkā y las clases de U Sīlānanda se citan en la interpretación.',ocr:'Nyāsa normalizado a partir del OCR; por cotejar con la edición de 1933.',
   tk:raton=>(raton?'clic':'toca otra vez')+' para abrir el sutta',sadd:'Sadd.',rows:n=>n+(n===1?' aforismo':' aforismos'),
   hero:(n,c)=>`<div><b>${n}</b> aforismos</div><div><b>${c.S||0}</b> saññā · <b>${c.A||0}</b> adhikāra</div><div><b>${c.P||0}</b> paribhāsā · <b>${c.V||0}</b> vidhi</div><div><b>${c.nota}</b> notas <span class="ref">de interpretación</span></div>`,
-  kanda:['','Primera sección','Segunda sección','Tercera sección','Cuarta sección','Quinta sección'],
-  cap:{sandhi:'Capítulo de la combinación eufónica',nama:'Capítulo de los nombres'},
+  kanda:['','Primera sección','Segunda sección','Tercera sección','Cuarta sección','Quinta sección','Sexta sección'],
+  cap:{sandhi:'Capítulo de la combinación eufónica',nama:'Capítulo de los nombres',karaka:'Capítulo de los kāraka'},
   months:['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
   date:(d,m,y,M)=>`${d} de ${M[m-1]} de ${y}`,ver:'Versión',draft:'borrador',
   lic:'Material del Instituto de Estudios Buddhistas Hispano (IEBH), a partir de la obra de Bhikkhu Nandisena.<br>Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.',
-  pie:`<p><strong>Qué es esta página.</strong> Cada aforismo (sutta) de los dos primeros capítulos de Kaccāyana —Sandhi-Kappa, §1–§51, y Nāma-Kappa, §52–§270, en la numeración de <a href="../../kaccayana/sandhi/">la traducción de este sitio</a>— clasificado según los cuatro tipos de sutta que da la <i>Rūpasiddhi</i> (Rū 63: <i>saññādhikāraparibhāsāvidhisuttesu</i>) y, cuando es <i>vidhi</i>, según la operación que efectúa. El § de cada fila abre el aforismo y su traducción.</p>
-  <p><strong>Método.</strong> Cada clasificación se apoya en la <i>Rūpasiddhi</i> y el <i>Nyāsa</i> (<i>Mukhamattadīpanī</i>). La <i>Rūpasiddhi</i> nombra el tipo en algunos aforismos; el <i>Nyāsa</i> casi nunca nombra el tipo, pero casi siempre nombra la operación (<i>…ādesaṃ katvā</i>, <i>…āgamaṃ katvā</i>, <i>lopaṃ katvā</i>…). Donde las dos concuerdan, esa es la clasificación. Los aforismos que la tradición llama <i>niyama</i>, <i>atidesa</i> o <i>apavāda</i> se clasifican por la operación que efectúan, y la nota lo dice. Los dudosos se han contrastado con la <i>Kaccāyana Bhāsāṭīkā</i>, el <i>Saddanīti</i> y las clases de la <i>Rūpasiddhi</i> del Ven. U Sīlānanda; donde la tradición discrepa, la nota expone la divergencia y justifica la determinación.</p>
-  <p><strong>Fuentes y cautelas.</strong> La <i>Rūpasiddhi</i> se cita por la edición del proyecto. El <i>Nyāsa</i> se cita normalizado a partir de una transcripción OCR de la edición de Sudhammavatī (Yangon, 1933), y la <i>Bhāsāṭīkā</i> a partir de un OCR del facsímil birmano: unas y otras citas son paráfrasis hasta cotejarlas con el facsímil. Las referencias a U Sīlānanda dan la clase y el minuto aproximado de la grabación.</p>
-  <p><strong>Véase también.</strong> <a href="../../kaccayana/sandhi/">1-Sandhi-Kappa</a>; <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; el <a href="../glosario/">glosario de terminología gramatical</a>.</p>`},
+  pie:`<p><strong>Qué es esta página.</strong> Cada aforismo (sutta) de los capítulos de Kaccāyana publicados aquí —por ahora Sandhi-Kappa, §1–§51, Nāma-Kappa, §52–§270, y Kāraka-Kappa, §271–§315, en la numeración de <a href="../../kaccayana/sandhi/">la traducción de este sitio</a>— clasificado según los cuatro tipos de sutta que da <i>Rūpasiddhi</i> (Rū 63: <i>saññādhikāraparibhāsāvidhisuttesu</i>) y, cuando es <i>vidhi</i>, según la operación que efectúa. El § de cada fila abre el aforismo y su traducción.</p>
+  <p><strong>Método.</strong> Cada clasificación se apoya en <i>Rūpasiddhi</i> y <i>Nyāsa</i> (<i>Mukhamattadīpanī</i>). <i>Rūpasiddhi</i> nombra el tipo en algunos aforismos; <i>Nyāsa</i> casi nunca nombra el tipo, pero casi siempre nombra la operación (<i>…ādesaṃ katvā</i>, <i>…āgamaṃ katvā</i>, <i>lopaṃ katvā</i>…). Donde las dos concuerdan, esa es la clasificación. Los aforismos que la tradición llama <i>niyama</i>, <i>atidesa</i> o <i>apavāda</i> se clasifican por la operación que efectúan, y la nota lo dice. Los dudosos se han contrastado con la <i>Kaccāyana Bhāsāṭīkā</i>, el <i>Saddanīti</i> y las clases de <i>Rūpasiddhi</i> del Ven. U Sīlānanda; donde la tradición discrepa, la nota expone la divergencia y justifica la determinación.</p>
+  <p><strong>Fuentes y cautelas.</strong> <i>Rūpasiddhi</i> se cita por la edición del proyecto. <i>Nyāsa</i> se cita normalizado a partir de una transcripción OCR de la edición de Sudhammavatī (Yangon, 1933), y la <i>Bhāsāṭīkā</i> a partir de un OCR del facsímil birmano: unas y otras citas son paráfrasis hasta cotejarlas con el facsímil. Las referencias a U Sīlānanda dan la clase y el minuto aproximado de la grabación.</p>
+  <p><strong>Véase también.</strong> <a href="../../kaccayana/sandhi/">1-Sandhi-Kappa</a>; <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; <a href="../../kaccayana/karaka/">3-Kāraka-Kappa</a>; los <a href="../casos/">usos de las inflexiones</a>; el <a href="../glosario/">glosario de terminología gramatical</a>.</p>`},
  en:{title:'Classification of the suttas',title_long:'Classification of the Kaccāyana suttas',back:'← Resources · Pāḷi Grammars',
-  tag:'Every aphorism of the Sandhi-Kappa and the Nāma-Kappa by the four kinds of sutta —<i>saññā</i>, <i>adhikāra</i>, <i>paribhāsā</i> and <i>vidhi</i>— and, when it is a <i>vidhi</i>, by the eight operations, with the operation stated in one sentence and its basis in the <i>Rūpasiddhi</i> and the <i>Nyāsa</i>.',
+  tag:'Every aphorism of Kaccāyana by the four kinds of sutta —<i>saññā</i>, <i>adhikāra</i>, <i>paribhāsā</i> and <i>vidhi</i>— and, when it is a <i>vidhi</i>, by the eight operations, with the operation stated in one sentence and its basis in the <i>Rūpasiddhi</i> and the <i>Nyāsa</i>. For now, the Sandhi-Kappa, the Nāma-Kappa and the Kāraka-Kappa; the other chapters will be added in turn.',
   aviso:'Draft under review. Quotations from the <i>Nyāsa</i> and the <i>Bhāsāṭīkā</i> come from OCR transcriptions and are given normalised: they are not verbatim until checked against the facsimile.',
   legend:'Legend',leg_types:'Kinds of sutta',leg_vidhi:'Kinds of vidhi',all:'All',with_note:'With note',all_vidhi:'Any vidhi',
   h_type:'Type',h_op:'Operation',h_int:'Interpretation / determination',empty:'No aphorism matches.',
@@ -360,15 +372,15 @@ const T={
   bh:'The Bhāsāṭīkā and U Sīlānanda’s classes are cited in the interpretation.',ocr:'Nyāsa normalised from the OCR; to be checked against the 1933 edition.',
   tk:raton=>raton?'click to open the sutta':'tap again to open the sutta',sadd:'Sadd.',rows:n=>n+(n===1?' aphorism':' aphorisms'),
   hero:(n,c)=>`<div><b>${n}</b> aphorisms</div><div><b>${c.S||0}</b> saññā · <b>${c.A||0}</b> adhikāra</div><div><b>${c.P||0}</b> paribhāsā · <b>${c.V||0}</b> vidhi</div><div><b>${c.nota}</b> notes <span class="ref">of interpretation</span></div>`,
-  kanda:['','First section','Second section','Third section','Fourth section','Fifth section'],
-  cap:{sandhi:'Chapter on euphonic combination',nama:'Chapter on nouns'},
+  kanda:['','First section','Second section','Third section','Fourth section','Fifth section','Sixth section'],
+  cap:{sandhi:'Chapter on euphonic combination',nama:'Chapter on nouns',karaka:'Chapter on the kārakas'},
   months:['January','February','March','April','May','June','July','August','September','October','November','December'],
   date:(d,m,y,M)=>`${d} ${M[m-1]} ${y}`,ver:'Version',draft:'draft',
   lic:'Material of the Instituto de Estudios Buddhistas Hispano (IEBH), based on the work of Bhikkhu Nandisena.<br>This material may be reproduced for personal use and distributed free of charge.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a> licence.',
-  pie:`<p><strong>What this page is.</strong> Every aphorism (sutta) of the first two chapters of Kaccāyana —Sandhi-Kappa, §1–§51, and Nāma-Kappa, §52–§270, numbered as in <a href="../../en/kaccayana/sandhi/">this site’s translation</a>— classified by the four kinds of sutta given in the <i>Rūpasiddhi</i> (Rū 63: <i>saññādhikāraparibhāsāvidhisuttesu</i>) and, when it is a <i>vidhi</i>, by the operation it performs. The § of each row opens the aphorism and its translation.</p>
+  pie:`<p><strong>What this page is.</strong> Every aphorism (sutta) of the chapters of Kaccāyana published here —for now Sandhi-Kappa, §1–§51, Nāma-Kappa, §52–§270, and Kāraka-Kappa, §271–§315, numbered as in <a href="../../en/kaccayana/sandhi/">this site’s translation</a>— classified by the four kinds of sutta given in the <i>Rūpasiddhi</i> (Rū 63: <i>saññādhikāraparibhāsāvidhisuttesu</i>) and, when it is a <i>vidhi</i>, by the operation it performs. The § of each row opens the aphorism and its translation.</p>
   <p><strong>Method.</strong> Each classification rests on the <i>Rūpasiddhi</i> and the <i>Nyāsa</i> (<i>Mukhamattadīpanī</i>). The <i>Rūpasiddhi</i> names the kind of a few aphorisms; the <i>Nyāsa</i> hardly ever names the kind, but nearly always names the operation (<i>…ādesaṃ katvā</i>, <i>…āgamaṃ katvā</i>, <i>lopaṃ katvā</i>…). Where the two agree, that is the classification. Aphorisms the tradition calls <i>niyama</i>, <i>atidesa</i> or <i>apavāda</i> are classified by the operation they perform, and the note says so. Doubtful cases were checked against the <i>Kaccāyana Bhāsāṭīkā</i>, the <i>Saddanīti</i> and the Ven. U Sīlānanda’s classes on the <i>Rūpasiddhi</i>; where the tradition disagrees, the note sets out the divergence and justifies the determination.</p>
   <p><strong>Sources and caveats.</strong> The <i>Rūpasiddhi</i> is cited from the project’s edition. The <i>Nyāsa</i> is cited normalised from an OCR transcription of the Sudhammavatī edition (Yangon, 1933), and the <i>Bhāsāṭīkā</i> from an OCR of the Burmese facsimile: both are paraphrases until checked against the facsimile. References to U Sīlānanda give the class and the approximate minute of the recording.</p>
-  <p><strong>See also.</strong> <a href="../../en/kaccayana/sandhi/">1-Sandhi-Kappa</a>; <a href="../../en/kaccayana/nama/">2-Nāma-Kappa</a>; the <a href="../glosario/">glossary of grammatical terminology</a>.</p>`}
+  <p><strong>See also.</strong> <a href="../../en/kaccayana/sandhi/">1-Sandhi-Kappa</a>; <a href="../../en/kaccayana/nama/">2-Nāma-Kappa</a>; <a href="../../en/kaccayana/karaka/">3-Kāraka-Kappa</a>; the <a href="../casos/">uses of the inflections</a>; the <a href="../glosario/">glossary of grammatical terminology</a>.</p>`}
 };
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
@@ -435,7 +447,8 @@ function render(){
   const t=T[lang];let h='',sb='';
   D.capitulos.forEach(c=>{
     const ks=D.kandas[c.clave];
-    sb+=`<div class="sb-cap">${esc(c.pali)}</div>`;
+    const chg='ch-'+c.clave;
+    sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]===false?'':' open'}><summary title="${esc(t.cap[c.clave]||'')}"><span class="gl">${esc(c.pali)}</span><span class="n">${c.hasta-c.desde+1}</span></summary>`;
     ks.forEach(([k,desde,o],i)=>{
       const hasta=i+1<ks.length?ks[i+1][1]-1:c.hasta;const sid=`k-${c.clave}-${o}`;
       const nombre=k.charAt(0)+k.slice(1).toLowerCase().replace('-kaṇḍa','-kaṇḍa');
@@ -444,9 +457,10 @@ function render(){
       F.filter(e=>e.cap===c.clave&&e.n>=desde&&e.n<=hasta).forEach(e=>{h+=fila(e);it+=`<a href="#s${e.n}" data-c="s${e.n}"><b>§${e.n}</b><i>${esc(e.sutta)}</i></a>`});
       sb+=`<details class="sb-sec" data-g="${sid}"${abiertos[sid]?' open':''}><summary title="${esc(t.kanda[o]||'')}"><span class="gl">${esc(nombre)}</span><span class="n">${hasta-desde+1}</span></summary>${it}</details>`;
     });
+    sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
-  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
+  document.querySelectorAll('#sb-list details').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
 const abiertos={'k-sandhi-1':true};
@@ -460,7 +474,7 @@ function filtrar(){
   });
   document.querySelectorAll('tr.sec').forEach(s=>{let e=s.nextElementSibling,any=false;while(e&&!e.classList.contains('sec')){if(e.classList.contains('r')&&!e.hidden){any=true;break}e=e.nextElementSibling}s.hidden=!any});
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;d.querySelector('.n').textContent=v});
-  document.querySelectorAll('.sb-cap').forEach(c=>{let e=c.nextElementSibling,any=false;while(e&&!e.classList.contains('sb-cap')){if(!e.hidden)any=true;e=e.nextElementSibling}c.hidden=!any});
+  document.querySelectorAll('#sb-list .sb-ch').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{if(!a.hidden)v++});d.hidden=!v;d.querySelector(':scope>summary .n').textContent=v});
   document.getElementById('count').textContent=T[lang].rows(n);
   document.getElementById('empty').hidden=!!n;
   espiar();
@@ -505,8 +519,8 @@ const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
 function pintarBarra(oc){root.classList.toggle('sin-barra',oc);burger.setAttribute('aria-expanded',oc?'false':'true')}
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
-document.getElementById('sb-abrir').onclick=()=>document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.open=true);
-document.getElementById('sb-plegar').onclick=()=>document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.open=false);
+document.getElementById('sb-abrir').onclick=()=>document.querySelectorAll('#sb-list details').forEach(d=>d.open=true);
+document.getElementById('sb-plegar').onclick=()=>document.querySelectorAll('#sb-list details').forEach(d=>d.open=false);
 addEventListener('resize',()=>{if(!ancha())root.classList.remove('sin-barra')});
 scr.onclick=cerrar;
 addEventListener('keydown',e=>{if(e.key==='Escape')cerrar()});
@@ -518,8 +532,8 @@ function espiar(){
   const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=barEl.getBoundingClientRect().bottom+40;
   for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
   links.forEach(a=>a.classList.toggle('on',a===cur));
-  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
-  if(cur&&cur.closest('details').open){const r=cur.getBoundingClientRect(),s=sbEl.getBoundingClientRect();if(r.top<s.top+60||r.bottom>s.bottom-20)sbEl.scrollTop+=r.top-s.top-s.height/3}
+  document.querySelectorAll('#sb-list details').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
+  if(cur&&cur.closest('.sb-sec').open&&cur.closest('.sb-ch').open){const r=cur.getBoundingClientRect(),s=sbEl.getBoundingClientRect();if(r.top<s.top+60||r.bottom>s.bottom-20)sbEl.scrollTop+=r.top-s.top-s.height/3}
 }
 const topBtn=document.getElementById('top-btn');
 addEventListener('scroll',()=>{topBtn.classList.toggle('show',scrollY>600);if(!spyF)spyF=requestAnimationFrame(()=>{spyF=0;espiar()})},{passive:true});
