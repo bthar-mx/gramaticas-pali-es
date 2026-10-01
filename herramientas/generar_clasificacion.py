@@ -42,7 +42,8 @@ PLANTILLA = os.path.join(DIR, "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "clasificacion", "index.html")
 
 # el número de la Rūpasiddhi puede ser doble: «**271\. 88, 308\. …**»
-CABECERA = re.compile(r"^\*\*(\d+)\\\.\s+(\d+(?:,\s*\d+)*)\\\.\s+(.+?)\*\*")
+# el punto puede ir escapado («271\.», capítulos 1–3) o no («316.», capítulo 4)
+CABECERA = re.compile(r"^\*\*(\d+)\\?\.\s+(\d+(?:,\s*\d+)*)\\?\.\s+(.+?)\*\*")
 KANDA = re.compile(r"^\*\*([A-ZĀĪŪṄÑṬḌṆḶṂ]+-KAṆḌA)\*\*")
 ORD = {"PAṬHAMA": 1, "DUTIYA": 2, "TATIYA": 3, "CATUTTHA": 4, "PAÑCAMA": 5,
        "CHAṬṬHA": 6, "SATTAMA": 7, "AṬṬHAMA": 8}
@@ -63,7 +64,8 @@ def leer_md(ruta):
     suttas, kandas, pend = {}, [], None
     i = 0
     while i < len(lin):
-        l = lin[i].strip()
+        # «**339. 358. Jāyāya tudaṃ-jāni[^19]** **patimhi (731).**»: negrita partida
+        l = lin[i].strip().replace("** **", " ")
         m = KANDA.match(l)
         if m:
             pend = m.group(1)
