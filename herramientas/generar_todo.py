@@ -107,6 +107,10 @@ def main():
     if os.path.exists(os.path.join(recursos, "casos", "plantilla.html")):
         fallos += correr("generar_casos.py")
 
+    # clasificación de los suttas · Sandhi y Nāma
+    if os.path.exists(os.path.join(recursos, "clasificacion", "plantilla.html")):
+        fallos += correr("generar_clasificacion.py")
+
     # raíces pāḷi y sánscritas
     # Los datos los producen extraer_raices.py, extraer_dhatupatha.py y
     # extraer_dhatumanjusa.py a partir de los PDF, que no están en el
