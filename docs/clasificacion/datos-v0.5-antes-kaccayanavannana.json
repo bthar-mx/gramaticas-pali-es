@@ -1,10 +1,10 @@
 {
- "version": "0.6",
+ "version": "0.5",
  "fecha": "2026-10-01",
  "estado": "borrador",
  "nota_version": {
-  "es": "v0.6: cotejo con la Kaccāyanavaṇṇanā (Rangún, 1916) en §30, §285, §296, §400, §404 y §405; el §30 pasa de paṭisedha a ādesa. Se sigue el esquema de ocho vidhis según Thitzana: vuddhi, pakati, atidesa y demás operaciones sin clase propia pasan a ādesa, con una etiqueta que las nombra.",
-  "en": "v0.6: checked against the Kaccāyanavaṇṇanā (Rangoon, 1916) at §30, §285, §296, §400, §404 and §405; §30 moves from paṭisedha to ādesa. The eight-fold scheme of vidhis is followed as Thitzana explains it: vuddhi, pakati, atidesa and the other operations without a class of their own go under ādesa, with a tag that names them."
+  "es": "Se sigue el esquema de ocho vidhis según Thitzana: vuddhi, pakati, atidesa y demás operaciones sin clase propia pasan a ādesa, con una etiqueta que las nombra.",
+  "en": "The eight-fold scheme of vidhis is followed as Thitzana explains it: vuddhi, pakati, atidesa and the other operations without a class of their own go under ādesa, with a tag that names them."
  },
  "capitulos": [
   {
@@ -683,10 +683,10 @@
   },
   "30": {
    "tipo": "V",
-   "vidhi": "ādesa",
+   "vidhi": "paṭisedha",
    "op": {
-    "es": "Cuando sigue una consonante, al niggahita le corresponde ‘aṃ’ (en lugar de elidirse).",
-    "en": "When a consonant follows, the niggahita takes ‘aṃ’ (instead of being elided)."
+    "en": "When a consonant follows, the niggahita stays ‘ṃ’ (it is neither elided nor substituted).",
+    "es": "Cuando sigue una consonante, el niggahita queda como ‘ṃ’ (no se elide ni se sustituye)."
    },
    "base": {
     "ru": {
@@ -696,15 +696,11 @@
     "nyasa": {
      "en": "“aṃ iti hotī ti ñāpanatthaṃ”.",
      "es": "«aṃ iti hotī ti ñāpanatthaṃ»."
-    },
-    "kv": {
-     "es": "Facsímil de 1916, p. 32 del PDF: «idāni niggahitādesaṃ vidhātuṃ “aṃ byañjane niggahitan” ti vuttaṃ»; «byañjane niggahitassa amādeso pi hotī ti dassetuṃ»; en los ejemplos, «aṃ-ādesaṃ katvā»; y «… vidhisuttan ti veditabbaṃ».",
-     "en": "1916 facsimile, PDF p. 32: “idāni niggahitādesaṃ vidhātuṃ ‘aṃ byañjane niggahitan’ ti vuttaṃ”; “byañjane niggahitassa amādeso pi hotī ti dassetuṃ”; in the examples, “aṃ-ādesaṃ katvā”; and “… vidhisuttan ti veditabbaṃ”."
     }
    },
    "nota": {
-    "es": "Apavāda (Rū 58): impide la elisión y las demás sustituciones del niggahita ante consonante; formalmente «aṃ iti hoti». La Kaccāyanavaṇṇanā lo presenta como sustitución («niggahitādesaṃ vidhātuṃ», «amādeso pi hotī ti dassetuṃ») y lo llama vidhisutta. Hasta la v0.5 se clasificaba paṭisedha por su función de apavāda; ahora se sigue a la Kaccāyanavaṇṇanā, lo que concuerda con Thitzana, que cuenta la pakati dentro de la ādesa (§23, §24) (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa.",
-    "en": "Apavāda (Rū 58): it blocks the elision and the other substitutions of the niggahita before a consonant; formally “aṃ iti hoti”. The Kaccāyanavaṇṇanā presents it as a substitution (“niggahitādesaṃ vidhātuṃ”, “amādeso pi hotī ti dassetuṃ”) and calls it a vidhisutta. Up to v0.5 it was classified paṭisedha for its apavāda function; the Kaccāyanavaṇṇanā is now followed, which agrees with Thitzana, who counts pakati under ādesa (§23, §24) (IEBH decision, 2026-10-01). Determination: vidhi — ādesa."
+    "es": "Apavāda (Rū): impide la elisión y la sustitución del niggahita ante consonante. Formalmente «aṃ iti hoti», funcionalmente una interdicción; se clasifica paṭisedha. Podría verse también como una pakati del niggahita, que Thitzana contaría en la ādesa (§23, §24); queda paṭisedha por su función de apavāda, por confirmar. Determinación: vidhi — paṭisedha.",
+    "en": "Apavāda (Rū): it blocks the elision and substitution of the niggahita before a consonant. Formally “aṃ iti hoti”, functionally a prohibition; classified paṭisedha. It could also be read as a pakati of the niggahita, which Thitzana would count under ādesa (§23, §24); it stays paṭisedha for its apavāda function, to be confirmed. Determination: vidhi — paṭisedha."
    }
   },
   "31": {
@@ -5485,15 +5481,11 @@
     "nyasa": {
      "es": "(285-ka) Opinión contraria a la de Rūpasiddhi: Nyāsa lee el sutta como niyama (restricción). «imassa visuṃ vacanaṃ siddhe saty ārambhassa niyamāya saṃvattanato ālapane sati liṅgatthe paṭhamā vibhatti yeva hotī ti ñāpanatthaṃ»: como el §284 ya da la primera inflexión, enunciar aparte el vocativo sólo restringe —en el vocativo, únicamente la primera inflexión—. Rū 70 («ālapanatthādike liṅgatthābhidhānamatte ca») y Rū 283 («“liṅgatthe paṭhamā” ti adhikicca “ālapane cā” ti ālapanatthe ca paṭhamā») lo tratan, en cambio, como un significado añadido que el §284 no cubre; así también U Sīlānanda (clase ch3-4, ~40:15).",
      "en": "(285-ka) A view contrary to the Rūpasiddhi’s: the Nyāsa reads the sutta as a niyama (restriction). “imassa visuṃ vacanaṃ siddhe saty ārambhassa niyamāya saṃvattanato ālapane sati liṅgatthe paṭhamā vibhatti yeva hotī ti ñāpanatthaṃ”: since §284 already gives the first inflection, stating the vocative separately only restricts —in the vocative, the first inflection alone—. Rū 70 (“ālapanatthādike liṅgatthābhidhānamatte ca”) and Rū 283 (“‘liṅgatthe paṭhamā’ ti adhikicca ‘ālapane cā’ ti ālapanatthe ca paṭhamā”), by contrast, treat it as an added sense that §284 does not cover; so too U Sīlānanda (class ch3-4, ~40:15)."
-    },
-    "kv": {
-     "es": "Facsímil de 1916, p. 117 del PDF: sale del §284 («“liṅgatthe paṭhamā” ti suttato nikkhantaṃ») y se enuncia «ālapanatthādike liṅgatthe pi paṭhamāvibhatti hotī ti dassetuṃ»; no lo llama niyama.",
-     "en": "1916 facsimile, PDF p. 117: it derives from §284 (“‘liṅgatthe paṭhamā’ ti suttato nikkhantaṃ”) and is stated “ālapanatthādike liṅgatthe pi paṭhamāvibhatti hotī ti dassetuṃ”; it does not call it a niyama."
     }
    },
    "nota": {
-    "es": "Nyāsa lo lee como niyama (véase el fundamento): la primera inflexión resultaría de todos modos del §284. Rūpasiddhi (Rū 70, Rū 283) y U Sīlānanda lo leen como un significado añadido, el vocativo, que el §284 no cubre. La Kaccāyanavaṇṇanā lo explica también como extensión al vocativo («… liṅgatthe pi paṭhamāvibhatti hotī ti dassetuṃ»), sin llamarlo niyama. Se clasifica por la forma. Determinación: vidhi — vibhatti.",
-    "en": "The Nyāsa reads it as a niyama (see the basis): the first inflection would follow from §284 anyway. The Rūpasiddhi (Rū 70, Rū 283) and U Sīlānanda read it as an added sense, the vocative, that §284 does not cover. The Kaccāyanavaṇṇanā also explains it as an extension to the vocative (“… liṅgatthe pi paṭhamāvibhatti hotī ti dassetuṃ”), without calling it a niyama. Classified by form. Determination: vidhi — vibhatti."
+    "es": "Nyāsa lo lee como niyama (véase el fundamento): la primera inflexión resultaría de todos modos del §284. Rūpasiddhi (Rū 70, Rū 283) y U Sīlānanda lo leen como un significado añadido, el vocativo, que el §284 no cubre. Se clasifica por la forma. Determinación: vidhi — vibhatti.",
+    "en": "The Nyāsa reads it as a niyama (see the basis): the first inflection would follow from §284 anyway. The Rūpasiddhi (Rū 70, Rū 283) and U Sīlānanda read it as an added sense, the vocative, that §284 does not cover. Classified by form. Determination: vidhi — vibhatti."
    }
   },
   "286": {
@@ -5695,15 +5687,11 @@
     "nyasa": {
      "es": "(296) Leído en el facsímil de 1933, p. 235 (la transcripción OCR omite esta sección): «Kāraṇatthe ca. Kimattham idaṃ? Kāraṇatthe ca pañcamīvibhatti hotī ti ñāpanatthaṃ. Dvipadam idaṃ. Atthādayo suviññeyyā va. Caggahaṇaṃ pañcamiggahaṇānukaḍḍhanatthaṃ.» Véase también Nyāsa al §275 (p. 208): «hetū ti kāraṇatthavācake saṅgaṇhāti»; allí distingue el uso de la quinta para la causa que alterna con otras formas (kasmā hetunā, kena hetunā, kissa hetu) del que no alterna (katattā upacitattā ussannattā vipulattā).",
      "en": "(296) Read in the 1933 facsimile, p. 235 (the OCR transcription omits this section): “Kāraṇatthe ca. Kimattham idaṃ? Kāraṇatthe ca pañcamīvibhatti hotī ti ñāpanatthaṃ. Dvipadam idaṃ. Atthādayo suviññeyyā va. Caggahaṇaṃ pañcamiggahaṇānukaḍḍhanatthaṃ.” See also the Nyāsa on §275 (p. 208): “hetū ti kāraṇatthavācake saṅgaṇhāti”; there it distinguishes the fifth inflection for cause that alternates with other forms (kasmā hetunā, kena hetunā, kissa hetu) from the one that does not (katattā upacitattā ussannattā vipulattā)."
-    },
-    "kv": {
-     "es": "Facsímil de 1916, p. 119 del PDF: «iminā hetvatthe tatiyāvibhattiṃ vikappeti».",
-     "en": "1916 facsimile, PDF p. 119: “iminā hetvatthe tatiyāvibhattiṃ vikappeti”."
     }
    },
    "nota": {
-    "es": "Una alternativa al §289: Rū 314 «vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā», es decir, en el significado de causa también cabe la tercera inflexión. Nyāsa sólo explica el ca (arrastra «pañcamī»); la causa como apādāna la trata en el §275. La Kaccāyanavaṇṇanā lo dice expresamente: «iminā hetvatthe tatiyāvibhattiṃ vikappeti». Determinación: vidhi — vibhatti.",
-    "en": "An option beside §289: Rū 314 “vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā”, i.e. in the sense of cause the third inflection is also available. The Nyāsa only explains the ca (it carries over “pañcamī”); cause as apādāna is treated under §275. The Kaccāyanavaṇṇanā says so expressly: “iminā hetvatthe tatiyāvibhattiṃ vikappeti”. Determination: vidhi — vibhatti."
+    "es": "Una alternativa al §289: Rū 314 «vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā», es decir, en el significado de causa también cabe la tercera inflexión. Nyāsa sólo explica el ca (arrastra «pañcamī»); la causa como apādāna la trata en el §275. Determinación: vidhi — vibhatti.",
+    "en": "An option beside §289: Rū 314 “vikappenā ’yaṃ, hetvatthe tatiyāya ca vihitattā”, i.e. in the sense of cause the third inflection is also available. The Nyāsa only explains the ca (it carries over “pañcamī”); cause as apādāna is treated under §275. Determination: vidhi — vibhatti."
    }
   },
   "297": {
@@ -7795,15 +7783,11 @@
     "th": {
      "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la vuddhi, en la ādesa).",
      "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi, under ādesa)."
-    },
-    "kv": {
-     "es": "Facsímil de 1916, p. 145 del PDF: sale de los suttas que dan los sufijos con ‘ṇ’ indicativa («vā ṇapacce» y otros) y explica la vuddhi de la vocal inicial ante esos sufijos; nombra la operación vuddhi, sin asignarle clase.",
-     "en": "1916 facsimile, PDF p. 145: it derives from the suttas that give the suffixes with indicatory ‘ṇ’ (“vā ṇapacce” and others) and explains the vuddhi of the initial vowel before those suffixes; it names the operation vuddhi without assigning it a class."
     }
    },
    "nota": {
-    "es": "Rūpasiddhi y Nyāsa nombran la vuddhi como operación propia: Nyāsa la nombra como nombra las demás («ādisarassa vuddhiṃ katvā», «akārassa ākāravuddhiṃ katvā»), y Rū la enumera junto a las otras («kāritabyapadesa-ṇalopa-vuddhiyo», Rū 569). Kaccāyana la nombra aparte en §404 y la regula con la paribhāsā §405; Niruttidīpanī la cuenta como clase propia de operación («lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso»). El esquema de ocho vidhis (Glosario de Nandisena; verso mnemónico de la tradición birmana) no la nombra; Thitzana (vol. 2, Introducción, pp. 36–37) explica que la ādesa incluye «Vuddhi, Vipariyāya, Pakati, Atidesa and so on». La Kaccāyanavaṇṇanā también la llama vuddhi, sin asignarle clase. Se sigue a Thitzana (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (vuddhi).",
-    "en": "The Rūpasiddhi and the Nyāsa name vuddhi as an operation of its own: the Nyāsa names it as it names the others (“ādisarassa vuddhiṃ katvā”, “akārassa ākāravuddhiṃ katvā”), and the Rūpasiddhi lists it alongside them (“kāritabyapadesa-ṇalopa-vuddhiyo”, Rū 569). Kaccāyana names it separately in §404 and regulates it with the paribhāsā §405; the Niruttidīpanī counts it as an operation of its own (“lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso”). The eight-fold scheme of vidhis (Nandisena’s Glossary; the mnemonic verse of the Burmese tradition) does not name it; Thitzana (vol. 2, Introduction, pp. 36–37) explains that ādesa includes “Vuddhi, Vipariyāya, Pakati, Atidesa and so on”. The Kaccāyanavaṇṇanā also calls it vuddhi, without assigning it a class. Thitzana is followed (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (vuddhi)."
+    "es": "Rūpasiddhi y Nyāsa nombran la vuddhi como operación propia: Nyāsa la nombra como nombra las demás («ādisarassa vuddhiṃ katvā», «akārassa ākāravuddhiṃ katvā»), y Rū la enumera junto a las otras («kāritabyapadesa-ṇalopa-vuddhiyo», Rū 569). Kaccāyana la nombra aparte en §404 y la regula con la paribhāsā §405; Niruttidīpanī la cuenta como clase propia de operación («lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso»). El esquema de ocho vidhis (Glosario de Nandisena; verso mnemónico de la tradición birmana) no la nombra; Thitzana (vol. 2, Introducción, pp. 36–37) explica que la ādesa incluye «Vuddhi, Vipariyāya, Pakati, Atidesa and so on». Se sigue a Thitzana (decisión del IEBH, 2026-10-01). Determinación: vidhi — ādesa (vuddhi).",
+    "en": "The Rūpasiddhi and the Nyāsa name vuddhi as an operation of its own: the Nyāsa names it as it names the others (“ādisarassa vuddhiṃ katvā”, “akārassa ākāravuddhiṃ katvā”), and the Rūpasiddhi lists it alongside them (“kāritabyapadesa-ṇalopa-vuddhiyo”, Rū 569). Kaccāyana names it separately in §404 and regulates it with the paribhāsā §405; the Niruttidīpanī counts it as an operation of its own (“lopo, dīgho, rasso, vuddhi, ādeso, āgamo, dvibhāvo, vipallāso”). The eight-fold scheme of vidhis (Nandisena’s Glossary; the mnemonic verse of the Burmese tradition) does not name it; Thitzana (vol. 2, Introduction, pp. 36–37) explains that ādesa includes “Vuddhi, Vipariyāya, Pakati, Atidesa and so on”. Thitzana is followed (IEBH decision, 2026-10-01). Determination: vidhi — ādesa (vuddhi)."
    },
    "grupo": "vuddhi"
   },
@@ -7892,10 +7876,6 @@
     "th": {
      "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (vuddhi y vipariyāya, en la ādesa).",
      "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi and vipariyāya, under ādesa)."
-    },
-    "kv": {
-     "es": "Facsímil de 1916, pp. 146–147 del PDF: enumera las seis operaciones (vuddhi, lopa, āgama, vikāra, viparīta, ādesa) y glosa lopa como «adassana»; no asigna clase.",
-     "en": "1916 facsimile, PDF pp. 146–147: it lists the six operations (vuddhi, lopa, āgama, vikāra, viparīta, ādesa) and glosses lopa as “adassana”; it assigns no class."
     }
    },
    "nota": {
@@ -7919,15 +7899,11 @@
     "nyasa": {
      "es": "«a-ivaṇṇ’-uvaṇṇānaṃ ā-e-o vuddhiyo hontī ti ñāpanatthaṃ … caggahaṇaṃ ī-ū-vuddhiyo samucceti». Y al §2, al exponer las cuatro clases: «“Ayuvaṇṇānañ c’ āyo vuddhī” ti evamādīni paribhāsāsuttāni».",
      "en": "“a-ivaṇṇ’-uvaṇṇānaṃ ā-e-o vuddhiyo hontī ti ñāpanatthaṃ … caggahaṇaṃ ī-ū-vuddhiyo samucceti”. And on §2, setting out the four kinds: “‘Ayuvaṇṇānañ c’ āyo vuddhī’ ti evamādīni paribhāsāsuttāni”."
-    },
-    "kv": {
-     "es": "Facsímil de 1916, p. 147 del PDF: «niyamena pana akārayuvaṇṇānaṃ yeva vuddhi hotī ti dassetuṃ»; y «paribhāsāsuttaṃ».",
-     "en": "1916 facsimile, PDF p. 147: “niyamena pana akārayuvaṇṇānaṃ yeva vuddhi hotī ti dassetuṃ”; and “paribhāsāsuttaṃ”."
     }
    },
    "nota": {
-    "es": "Rūpasiddhi y Nyāsa coinciden en llamarlo paribhāsā: Rū 364 («niyamatthaṃ paribhāsam āha»: fija qué vuddhi corresponde, que el §400 dejaba sin determinar) y Rū 434, en el Ākhyāta; Nyāsa lo pone, al §2, como ejemplo de paribhāsā-sutta. La Kaccāyanavaṇṇanā lo llama también «paribhāsāsuttaṃ», con función de niyama («niyamena pana akārayuvaṇṇānaṃ yeva vuddhi hotī ti dassetuṃ»). En contra, la vutti cierra con la fórmula de las saññā: «Vuddhi icc anena kvattho? Vuddhādisarassa…» (§400), presente también en la edición de Pind (Kacc 407); de ahí que la traducción publicada y U Sīlānanda (clase ch5-7, ~80:00) lo lean como definición. Se sigue a las tres obras, que lo dicen expresamente. Determinación: paribhāsā.",
-    "en": "The Rūpasiddhi and the Nyāsa agree in calling it a paribhāsā: Rū 364 (“niyamatthaṃ paribhāsam āha”: it fixes which vuddhi applies, which §400 left undetermined) and Rū 434, in the Ākhyāta; the Nyāsa gives it, on §2, as its example of a paribhāsā-sutta. The Kaccāyanavaṇṇanā also calls it “paribhāsāsuttaṃ”, with a niyama function (“niyamena pana akārayuvaṇṇānaṃ yeva vuddhi hotī ti dassetuṃ”). Against this, the vutti closes with the saññā formula: “Vuddhi icc anena kvattho? Vuddhādisarassa…” (§400), also in Pind’s edition (Kacc 407); hence the published translation and U Sīlānanda (class ch5-7, ~80:00) read it as a definition. The three works, which say so expressly, are followed. Determination: paribhāsā."
+    "es": "Rūpasiddhi y Nyāsa coinciden en llamarlo paribhāsā: Rū 364 («niyamatthaṃ paribhāsam āha»: fija qué vuddhi corresponde, que el §400 dejaba sin determinar) y Rū 434, en el Ākhyāta; Nyāsa lo pone, al §2, como ejemplo de paribhāsā-sutta. En contra, la vutti cierra con la fórmula de las saññā: «Vuddhi icc anena kvattho? Vuddhādisarassa…» (§400), presente también en la edición de Pind (Kacc 407); de ahí que la traducción publicada y U Sīlānanda (clase ch5-7, ~80:00) lo lean como definición. Se sigue a los dos tratados, que lo dicen expresamente. Determinación: paribhāsā.",
+    "en": "The Rūpasiddhi and the Nyāsa agree in calling it a paribhāsā: Rū 364 (“niyamatthaṃ paribhāsam āha”: it fixes which vuddhi applies, which §400 left undetermined) and Rū 434, in the Ākhyāta; the Nyāsa gives it, on §2, as its example of a paribhāsā-sutta. Against this, the vutti closes with the saññā formula: “Vuddhi icc anena kvattho? Vuddhādisarassa…” (§400), also in Pind’s edition (Kacc 407); hence the published translation and U Sīlānanda (class ch5-7, ~80:00) read it as a definition. The two treatises, which say so expressly, are followed. Determination: paribhāsā."
    }
   }
  }
