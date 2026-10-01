@@ -41,7 +41,8 @@ DATOS = os.path.join(DIR, "datos.json")
 PLANTILLA = os.path.join(DIR, "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "clasificacion", "index.html")
 
-CABECERA = re.compile(r"^\*\*(\d+)\\\.\s+(\d+)\\\.\s+(.+?)\*\*")
+# el número de la Rūpasiddhi puede ser doble: «**271\. 88, 308\. …**»
+CABECERA = re.compile(r"^\*\*(\d+)\\\.\s+(\d+(?:,\s*\d+)*)\\\.\s+(.+?)\*\*")
 KANDA = re.compile(r"^\*\*([A-ZĀĪŪṄÑṬḌṆḶṂ]+-KAṆḌA)\*\*")
 ORD = {"PAṬHAMA": 1, "DUTIYA": 2, "TATIYA": 3, "CATUTTHA": 4, "PAÑCAMA": 5,
        "CHAṬṬHA": 6, "SATTAMA": 7, "AṬṬHAMA": 8}
@@ -68,7 +69,9 @@ def leer_md(ruta):
             pend = m.group(1)
         m = CABECERA.match(l)
         if m:
-            n, ru, txt = int(m.group(1)), int(m.group(2)), m.group(3)
+            n, txt = int(m.group(1)), m.group(3)
+            ru = re.sub(r"\s+", " ", m.group(2))
+            ru = None if ru == "0" else ru
             sadd = None
             ms = re.search(r"\s*\(([\d\-–, ]+)\)\.?$", txt)
             if ms:
@@ -85,7 +88,7 @@ def leer_md(ruta):
                     j += 1
                 if j < len(lin) and not CABECERA.match(lin[j].strip()):
                     tr = limpiar(lin[j])
-            suttas[n] = {"ru": ru or None, "sutta": txt, "sadd": sadd, "tr": tr}
+            suttas[n] = {"ru": ru, "sutta": txt, "sadd": sadd, "tr": tr}
             if pend:
                 kandas.append([pend, n])
                 pend = None
