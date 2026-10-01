@@ -59,7 +59,11 @@ body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);fo
 .sb-ch>summary::before{content:'▸';flex:0 0 12px;font-size:10px;opacity:.8}
 .sb-ch[open]>summary::before{content:'▾'}
 .sb-ch>summary .gl{flex:1;min-width:0}
-.sb-ch>summary .n{color:var(--soot);font-weight:400;letter-spacing:0}
+.sb-ch>summary .n,.sb-ch>summary .rg,.sb-sec>summary .n,.sb-sec>summary .rg{color:var(--soot);font-weight:400;letter-spacing:0;text-transform:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.sb-ch>summary .n:empty,.sb-sec>summary .n:empty{display:none}
+.sb-ch>summary .n,.sb-sec>summary .n{color:var(--haritala)}
+/* con filtro activo: el número de aforismos visibles sustituye al rango */
+.sb-ch.flt>summary .rg,.sb-sec.flt>summary .rg{display:none}
 .sb-ch>summary:hover{background:var(--ola)}
 .sb-ch>summary:focus-visible,.sb-sec>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
 .sb-ch .sb-sec>summary{padding-left:20px}
@@ -70,7 +74,6 @@ body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);fo
 .sb-sec>summary::before{content:'▸';flex:0 0 10px;font-size:9px;opacity:.8}
 .sb-sec[open]>summary::before{content:'▾'}
 .sb-sec>summary .gl{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.sb-sec>summary .n{color:var(--soot);font-weight:400;letter-spacing:0}
 .sb-sec>summary:hover{background:var(--ola)}
 .sb-sec[open]{padding-bottom:6px}
 .sb-sec.on:not([open])>summary{background:var(--ola);box-shadow:inset 2px 0 0 var(--haritala)}
@@ -83,11 +86,11 @@ header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
 .mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
 .mast>div:first-child{flex:1 1 420px;min-width:260px}
 h1{font-size:clamp(34px,5.5vw,52px);line-height:.98;margin:10px 0 0;font-weight:700;letter-spacing:-.02em}
-.tag{margin:12px 0 0;max-width:60ch;color:var(--soot);font-size:16.5px}
+.tag{margin:10px 0 0;max-width:60ch;color:var(--soot);font-size:16.5px;line-height:1.45}
 .version-badge{display:inline-flex;gap:6px;margin-top:12px;font-family:var(--mono);font-size:10.5px;font-weight:600;
   letter-spacing:.05em;color:var(--rakta);background:var(--ola-2);border:1px solid var(--rakta);border-radius:999px;padding:4px 10px;cursor:help}
 .version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-.aviso{margin:14px 0 0;max-width:66ch;font-size:14.5px;color:var(--soot);border-left:2px solid var(--rakta);padding-left:10px}
+.aviso{margin:0 0 16px;max-width:66ch;font-size:14.5px;color:var(--soot);border-left:2px solid var(--rakta);padding-left:10px}
 .hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
 .hero b{font-weight:700;color:var(--haritala)}
 .hero .ref{color:var(--soot);font-size:10.5px}
@@ -127,6 +130,8 @@ h1{font-size:clamp(34px,5.5vw,52px);line-height:.98;margin:10px 0 0;font-weight:
 .chip.v{color:var(--ink);background:var(--hl);border-color:var(--haritala)}
 .chip.v.fuera{background:none;border-style:dashed;color:var(--haritala)}
 .chip+.chip{margin-left:3px}
+/* grupo: inflexión en el significado de otra (§306–§309, §311, §312) */
+.chip.g{display:table;margin:0 0 5px;font-weight:600;letter-spacing:.02em;text-transform:none;color:var(--nila);background:none;border-style:dashed;border-color:var(--nila)}
 
 /* barra de mandos */
 .bar{position:sticky;top:0;z-index:20;background:var(--ola);border-bottom:1px solid var(--hair);
@@ -285,7 +290,6 @@ footer a{color:var(--nila)}
     <h1 data-t="title_long">Clasificación de los suttas de Kaccāyana</h1>
     <p class="tag" data-t-html="tag"></p>
     <div class="vline"><span class="version-badge" id="vbadge"></span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button></div>
-    <p class="aviso" data-t-html="aviso"></p>
   </div>
   <div class="hero" id="hero"></div>
 </div>
@@ -331,6 +335,7 @@ footer a{color:var(--nila)}
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 
 <footer><div class="wrap">
+  <p class="aviso" data-t-html="aviso"></p>
   <details class="pie-notas">
     <summary data-t="foot_sum">Notas, cifras y fuentes</summary>
     <p class="version-foot" id="vfoot"></p>
@@ -344,7 +349,7 @@ footer a{color:var(--nila)}
 const D = /*__DATOS__*/{}/*__FIN__*/;
 const T={
  es:{title:'Clasificación de los suttas',title_long:'Clasificación de los suttas de Kaccāyana',back:'← Recursos · Gramáticas Pāḷi',
-  tag:'Cada aforismo de Kaccāyana según los cuatro tipos de sutta —<i>saññā</i>, <i>adhikāra</i>, <i>paribhāsā</i> y <i>vidhi</i>— y, cuando es <i>vidhi</i>, según las ocho operaciones, con la operación descrita en una frase y su fundamento en <i>Rūpasiddhi</i> y <i>Nyāsa</i>. Por ahora, el Sandhi-Kappa, el Nāma-Kappa y el Kāraka-Kappa; los demás capítulos se irán añadiendo.',
+  tag:'Cada aforismo de Kaccāyana según su tipo de sutta y, si es <i>vidhi</i>, según la operación que efectúa.',
   aviso:'Borrador en revisión. Las citas de <i>Nyāsa</i> y de la <i>Bhāsāṭīkā</i> vienen de transcripciones OCR y se dan normalizadas: no son citas literales hasta cotejarlas con el facsímil.',
   legend:'Leyenda',leg_types:'Tipos de sutta',leg_vidhi:'Tipos de vidhi',all:'Todos',with_note:'Con nota',all_vidhi:'Toda vidhi',
   h_type:'Tipo',h_op:'Operación',h_int:'Interpretación / determinación',empty:'Ningún aforismo coincide.',
@@ -352,6 +357,7 @@ const T={
   foot_sum:'Notas, cifras y fuentes',filters:'Filtros',more:'Fundamento',more_n:'Nota y fundamento',note:'Interpretación',basis:'Fundamento',
   bh:'La Bhāsāṭīkā y las clases de U Sīlānanda se citan en la interpretación.',ocr:'Nyāsa normalizado a partir del OCR; por cotejar con la edición de 1933.',
   tk:raton=>(raton?'clic':'toca otra vez')+' para abrir el sutta',sadd:'Sadd.',rows:n=>n+(n===1?' aforismo':' aforismos'),
+  grupo:{otra:['inflexión en el significado de otra','Uno de los suttas que dan una inflexión en el significado de otra inflexión: §306–§309, §311 y §312. El §310 queda fuera: da la séptima en significados de kāraka.']},
   hero:(n,c)=>`<div><b>${n}</b> aforismos</div><div><b>${c.S||0}</b> saññā · <b>${c.A||0}</b> adhikāra</div><div><b>${c.P||0}</b> paribhāsā · <b>${c.V||0}</b> vidhi</div><div><b>${c.nota}</b> notas <span class="ref">de interpretación</span></div>`,
   kanda:['','Primera sección','Segunda sección','Tercera sección','Cuarta sección','Quinta sección','Sexta sección'],
   cap:{sandhi:'Capítulo de la combinación eufónica',nama:'Capítulo de los nombres',karaka:'Capítulo de los kāraka'},
@@ -363,7 +369,7 @@ const T={
   <p><strong>Fuentes y cautelas.</strong> <i>Rūpasiddhi</i> se cita por la edición del proyecto. <i>Nyāsa</i> se cita normalizado a partir de una transcripción OCR de la edición de Sudhammavatī (Yangon, 1933), y la <i>Bhāsāṭīkā</i> a partir de un OCR del facsímil birmano: unas y otras citas son paráfrasis hasta cotejarlas con el facsímil. Las referencias a U Sīlānanda dan la clase y el minuto aproximado de la grabación.</p>
   <p><strong>Véase también.</strong> <a href="../../kaccayana/sandhi/">1-Sandhi-Kappa</a>; <a href="../../kaccayana/nama/">2-Nāma-Kappa</a>; <a href="../../kaccayana/karaka/">3-Kāraka-Kappa</a>; los <a href="../casos/">usos de las inflexiones</a>; el <a href="../glosario/">glosario de terminología gramatical</a>.</p>`},
  en:{title:'Classification of the suttas',title_long:'Classification of the Kaccāyana suttas',back:'← Resources · Pāḷi Grammars',
-  tag:'Every aphorism of Kaccāyana by the four kinds of sutta —<i>saññā</i>, <i>adhikāra</i>, <i>paribhāsā</i> and <i>vidhi</i>— and, when it is a <i>vidhi</i>, by the eight operations, with the operation stated in one sentence and its basis in the <i>Rūpasiddhi</i> and the <i>Nyāsa</i>. For now, the Sandhi-Kappa, the Nāma-Kappa and the Kāraka-Kappa; the other chapters will be added in turn.',
+  tag:'Every aphorism of Kaccāyana by its kind of sutta and, when it is a <i>vidhi</i>, by the operation it performs.',
   aviso:'Draft under review. Quotations from the <i>Nyāsa</i> and the <i>Bhāsāṭīkā</i> come from OCR transcriptions and are given normalised: they are not verbatim until checked against the facsimile.',
   legend:'Legend',leg_types:'Kinds of sutta',leg_vidhi:'Kinds of vidhi',all:'All',with_note:'With note',all_vidhi:'Any vidhi',
   h_type:'Type',h_op:'Operation',h_int:'Interpretation / determination',empty:'No aphorism matches.',
@@ -371,6 +377,7 @@ const T={
   foot_sum:'Notes, figures and sources',filters:'Filters',more:'Basis',more_n:'Note & basis',note:'Interpretation',basis:'Basis',
   bh:'The Bhāsāṭīkā and U Sīlānanda’s classes are cited in the interpretation.',ocr:'Nyāsa normalised from the OCR; to be checked against the 1933 edition.',
   tk:raton=>raton?'click to open the sutta':'tap again to open the sutta',sadd:'Sadd.',rows:n=>n+(n===1?' aphorism':' aphorisms'),
+  grupo:{otra:['inflection in the sense of another','One of the suttas that give an inflection in the sense of another inflection: §306–§309, §311 and §312. §310 is outside the group: it gives the seventh in kāraka senses.']},
   hero:(n,c)=>`<div><b>${n}</b> aphorisms</div><div><b>${c.S||0}</b> saññā · <b>${c.A||0}</b> adhikāra</div><div><b>${c.P||0}</b> paribhāsā · <b>${c.V||0}</b> vidhi</div><div><b>${c.nota}</b> notes <span class="ref">of interpretation</span></div>`,
   kanda:['','First section','Second section','Third section','Fourth section','Fifth section','Sixth section'],
   cap:{sandhi:'Chapter on euphonic combination',nama:'Chapter on nouns',karaka:'Chapter on the kārakas'},
@@ -436,10 +443,10 @@ function fila(e){
   const interp=m?`<span class="det">${esc(m[2])}</span>`:(nota?esc(prim)+(prim.length<nota.length?' …':''):'<span class="vacio">—</span>');
   const bh=/Bhāsāṭīkā|Sīlānanda/.test(nota);
   const detalle=`<div class="detalle">${nota?`<h4>${t.note}</h4><p>${esc(nota)}</p>`:''}<h4>${t.basis}</h4><dl><dt>Rūpasiddhi</dt><dd>${esc(e.base.ru[lang])}</dd><dt>Nyāsa</dt><dd>${esc(e.base.nyasa[lang])}</dd></dl>${bh?`<p class="ocr">${t.bh}</p>`:''}<p class="ocr">${t.ocr}</p></div>`;
-  const txt=norm([e.n,e.sutta,e.tr.es,e.tr.en,e.op.es,e.op.en,e.nota?e.nota.es+' '+e.nota.en:'',e.base.ru.en,e.base.nyasa.en,D.tipos[e.tipo].pali,e.vidhi].join(' '));
+  const txt=norm([e.n,e.sutta,e.tr.es,e.tr.en,e.op.es,e.op.en,e.nota?e.nota.es+' '+e.nota.en:'',e.base.ru.en,e.base.nyasa.en,D.tipos[e.tipo].pali,e.vidhi,e.grupo?T.es.grupo[e.grupo][0]+' '+T.en.grupo[e.grupo][0]:''].join(' '));
   return `<tr class="r" id="s${e.n}" data-n="${e.n}" data-cap="${e.cap}" data-tipo="${e.tipo}" data-v="${esc(vidhis(e).join('|'))}" data-nota="${e.nota?1:0}" data-t="${esc(txt)}">
    <td class="n">${tip}</td><td class="ru">${e.ru||'—'}</td><td class="su">${esc(e.sutta)}</td><td class="ti">${tipoChip(e.tipo)}</td>
-   <td class="vi">${vidhis(e).map(v=>vChip(v)).join('')||'—'}</td><td class="op">${esc(e.op[lang])}</td><td class="in">${interp}</td>
+   <td class="vi">${vidhis(e).map(v=>vChip(v)).join('')||'—'}</td><td class="op">${e.grupo?`<span class="chip g" tabindex="0" data-tip-h="${esc(t.grupo[e.grupo][0])}" data-tip="${esc(t.grupo[e.grupo][1])}">${esc(t.grupo[e.grupo][0])}</span>`:''}${esc(e.op[lang])}</td><td class="in">${interp}</td>
    <td class="x"><button class="mas" aria-expanded="false" aria-controls="d${e.n}" data-l="${e.nota?'more_n':'more'}" aria-label="${t[e.nota?'more_n':'more']}" data-tip="${t[e.nota?'more_n':'more']}">▸</button></td></tr>
    <tr class="det-row" id="d${e.n}" hidden><td colspan="8">${detalle}</td></tr>`;
 }
@@ -448,14 +455,14 @@ function render(){
   D.capitulos.forEach(c=>{
     const ks=D.kandas[c.clave];
     const chg='ch-'+c.clave;
-    sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]===false?'':' open'}><summary title="${esc(t.cap[c.clave]||'')}"><span class="gl">${esc(c.pali)}</span><span class="n">${c.hasta-c.desde+1}</span></summary>`;
+    sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]===false?'':' open'}><summary title="${esc(t.cap[c.clave]||'')}"><span class="gl">${esc(c.pali)}</span><span class="n"></span><span class="rg">§${c.desde}–§${c.hasta}</span></summary>`;
     ks.forEach(([k,desde,o],i)=>{
       const hasta=i+1<ks.length?ks[i+1][1]-1:c.hasta;const sid=`k-${c.clave}-${o}`;
       const nombre=k.charAt(0)+k.slice(1).toLowerCase().replace('-kaṇḍa','-kaṇḍa');
       h+=`<tr class="sec" id="${sid}" data-cap="${c.clave}"><td colspan="8"><h2>${esc(c.pali)} · <span class="pl">${esc(nombre)}</span><span class="rg">§${desde}–§${hasta} · ${esc(t.kanda[o]||'')}</span></h2></td></tr>`;
       let it='';
       F.filter(e=>e.cap===c.clave&&e.n>=desde&&e.n<=hasta).forEach(e=>{h+=fila(e);it+=`<a href="#s${e.n}" data-c="s${e.n}"><b>§${e.n}</b><i>${esc(e.sutta)}</i></a>`});
-      sb+=`<details class="sb-sec" data-g="${sid}"${abiertos[sid]?' open':''}><summary title="${esc(t.kanda[o]||'')}"><span class="gl">${esc(nombre)}</span><span class="n">${hasta-desde+1}</span></summary>${it}</details>`;
+      sb+=`<details class="sb-sec" data-g="${sid}"${abiertos[sid]?' open':''}><summary title="${esc(t.kanda[o]||'')}"><span class="gl">${esc(nombre)}</span><span class="n"></span><span class="rg">§${desde}–§${hasta}</span></summary>${it}</details>`;
     });
     sb+='</details>';
   });
@@ -473,8 +480,8 @@ function filtrar(){
     const d=r.nextElementSibling;if(!ok&&d)d.hidden=true;else if(d&&r.querySelector('.mas').getAttribute('aria-expanded')==='true')d.hidden=false;
   });
   document.querySelectorAll('tr.sec').forEach(s=>{let e=s.nextElementSibling,any=false;while(e&&!e.classList.contains('sec')){if(e.classList.contains('r')&&!e.hidden){any=true;break}e=e.nextElementSibling}s.hidden=!any});
-  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;d.querySelector('.n').textContent=v});
-  document.querySelectorAll('#sb-list .sb-ch').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{if(!a.hidden)v++});d.hidden=!v;d.querySelector(':scope>summary .n').textContent=v});
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;const tot=d.querySelectorAll('a[data-c]').length;d.querySelector(':scope>summary .n').textContent=v<tot?v:'';d.classList.toggle('flt',v<tot)});
+  document.querySelectorAll('#sb-list .sb-ch').forEach(d=>{let v=0;const as=d.querySelectorAll('a[data-c]');as.forEach(a=>{if(!a.hidden)v++});d.hidden=!v;d.querySelector(':scope>summary .n').textContent=v<as.length?v:'';d.classList.toggle('flt',v<as.length)});
   document.getElementById('count').textContent=T[lang].rows(n);
   document.getElementById('empty').hidden=!!n;
   espiar();
