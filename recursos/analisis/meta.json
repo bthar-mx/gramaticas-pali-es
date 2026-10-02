@@ -1,21 +1,55 @@
 {
-  "version": "0.2",
+  "version": "0.2.1",
   "fecha": "2026-10-03",
   "estado": "borrador",
   "nota_version": {
-    "es": "Sandhi-Kappa completo, cotejado con las imágenes del libro; versión bilingüe.",
-    "en": "Sandhi-Kappa complete, checked against the book's page images; bilingual version."
+    "es": "Sandhi-Kappa: todas las funciones y clases cotejadas con las imágenes; notas de cotejo con la clasificación del sitio en §1, §24 y §51.",
+    "en": "Sandhi-Kappa: all roles and classes checked against the images; notes comparing §1, §24 and §51 with the site classification."
   },
-  "capitulos": ["01-sandhi.json"],
+  "capitulos": [
+    "01-sandhi.json"
+  ],
   "indice": [
-    {"clave": "sandhi", "pali": "Sandhi-Kappa", "md": "01-sandhi-kappa"},
-    {"clave": "nama", "pali": "Nāma-Kappa", "md": "02-nama-kappa"},
-    {"clave": "karaka", "pali": "Kāraka-Kappa", "md": "03-karaka-kappa"},
-    {"clave": "samasa", "pali": "Samāsa-Kappa", "md": "04-samasa-kappa"},
-    {"clave": "taddhita", "pali": "Taddhita-Kappa", "md": "05-taddhita-kappa"},
-    {"clave": "akhyata", "pali": "Ākhyāta-Kappa", "md": ""},
-    {"clave": "kita", "pali": "Kita-Kappa", "md": ""},
-    {"clave": "unadi", "pali": "Uṇādi-Kappa", "md": ""}
+    {
+      "clave": "sandhi",
+      "pali": "Sandhi-Kappa",
+      "md": "01-sandhi-kappa"
+    },
+    {
+      "clave": "nama",
+      "pali": "Nāma-Kappa",
+      "md": "02-nama-kappa"
+    },
+    {
+      "clave": "karaka",
+      "pali": "Kāraka-Kappa",
+      "md": "03-karaka-kappa"
+    },
+    {
+      "clave": "samasa",
+      "pali": "Samāsa-Kappa",
+      "md": "04-samasa-kappa"
+    },
+    {
+      "clave": "taddhita",
+      "pali": "Taddhita-Kappa",
+      "md": "05-taddhita-kappa"
+    },
+    {
+      "clave": "akhyata",
+      "pali": "Ākhyāta-Kappa",
+      "md": ""
+    },
+    {
+      "clave": "kita",
+      "pali": "Kita-Kappa",
+      "md": ""
+    },
+    {
+      "clave": "unadi",
+      "pali": "Uṇādi-Kappa",
+      "md": ""
+    }
   ],
   "cita": {
     "autor": "Ashin Aggañāṇābhivaṃsa (အရှင်အဂ္ဂဉာဏာဘိဝံသ), Si-shin Nāyaka Sayadaw",

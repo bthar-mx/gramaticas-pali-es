@@ -4,126 +4,1288 @@
   "pali": "Sandhi-Kappa",
   "desde": 1,
   "hasta": 51,
-  "pdf": [51, 112],
+  "pdf": [
+    51,
+    112
+  ],
   "paginas": "5–66",
   "suttas": [
-    {"n": 1, "pdf": 51, "clase": "anaṅga-paribhāsā", "roles": [], "anuvatti": "", "ejemplo": "",
-     "nota": {"es": "Paribhāsā que no forma parte de un término técnico ni de una operación. El libro no da modelo (က).",
-              "en": "A paribhāsā that is part neither of a technical term nor of an operation. The book gives no model (က)."}},
-    {"n": 2, "pdf": 52, "clase": "saññā-sutta · anvattha-saññā", "roles": [], "anuvatti": "", "ejemplo": "a, ā … ḷa, aṃ",
-     "nota": {"es": "Sutta de definición; nombre «que sigue el sentido». Por «api» también vaṇṇa, lipi y lekha.",
-              "en": "A defining sutta; a name «that follows the meaning». Through «api», also vaṇṇa, lipi and lekha."}},
-    {"n": 3, "pdf": 55, "clase": "saññā", "roles": [["saññā", "sarā", ""], ["saññī", "akkharā", "tattha, odantā, aṭṭha"]], "anuvatti": "akkharā", "ejemplo": "",
-     "nota": {"es": "«odantā» = o + d (āgama) + antā.", "en": "«odantā» = o + d (āgama) + antā."}},
-    {"n": 4, "pdf": 56, "clase": "saññā", "roles": [["saññā", "rassā", ""], ["saññī", "sarā", "lahumattā, tayo"]], "anuvatti": "sarā", "ejemplo": "a, i, u",
-     "nota": {"es": "«mattā»: el tiempo de un chasquido de dedos o de un parpadeo.", "en": "«mattā»: the time of a finger-snap or a blink."}},
-    {"n": 5, "pdf": 57, "clase": "saññā", "roles": [["saññā", "dīghā", ""], ["saññī", "sarā", "aññe"]], "anuvatti": "sarā", "ejemplo": "ā, ī, ū, e, o",
-     "nota": {"es": "", "en": ""}},
-    {"n": 6, "pdf": 57, "clase": "saññā", "roles": [["saññā", "byañjanā", ""], ["saññī", "akkharā", "sesā"]], "anuvatti": "akkharā", "ejemplo": "k, kh, g, gh, ṅ … ḷ, ṃ",
-     "nota": {"es": "Cita una ṭīkā y la Kalāpa-ṭīkā.", "en": "Quotes a ṭīkā and the Kalāpa-ṭīkā."}},
-    {"n": 7, "pdf": 58, "clase": "saññā", "roles": [["saññā", "vaggā", "pañca pañcaso"], ["saññī", "byañjanā", "tattha, mantā"]], "anuvatti": "byañjanā", "ejemplo": "ka, kha, ga, gha, ṅa … ma",
-     "nota": {"es": "Compara la vutti con Rūpasiddhi.", "en": "Compares the vutti with Rūpasiddhi."}},
-    {"n": 8, "pdf": 59, "clase": "saññā", "roles": [["saññā", "niggahītaṃ", ""], ["saññī", "aṃ", "iti"]], "anuvatti": "", "ejemplo": "aṃ",
-     "nota": {"es": "Compara con la anusvāra del sánscrito.", "en": "Compares it with the Sanskrit anusvāra."}},
-    {"n": 9, "pdf": 59, "clase": "saññaṅga-paribhāsā", "roles": [], "anuvatti": "", "ejemplo": "",
-     "nota": {"es": "Paribhāsā que forma parte de un término técnico. Explica ghosa, aghosa, ūsmā.",
-              "en": "A paribhāsā that is part of a technical term. Explains ghosa, aghosa, ūsmā."}},
-    {"n": 10, "pdf": 60, "clase": "vidhyaṅga-paribhāsā", "roles": [["kāriyī", "byañjanaṃ", "pubbaṃ"], ["kāriya", "viyojaye", "adhoṭhitaṃ, assaraṃ"], ["nimitta", "sarena", "", "3"]], "anuvatti": "", "ejemplo": "tatra + ayaṃ → tatrāyaṃ",
-     "nota": {"es": "Paribhāsā que forma parte de una operación. Nimitta en la tercera inflexión.",
-              "en": "A paribhāsā that is part of an operation. Nimitta in the third inflection."}},
-    {"n": 11, "pdf": 61, "clase": "vidhyaṅga-paribhāsā", "roles": [["kāriyī", "byañjanaṃ", "assaraṃ, adhoṭhitaṃ, pubbaṃ"], ["kāriya", "naye", "paraṃ, yutte"]], "anuvatti": "byañjanaṃ, assaraṃ, adhoṭhitaṃ, pubbaṃ", "ejemplo": "tatra + ayaṃ → tatrāyaṃ",
-     "nota": {"es": "Paribhāsā que forma parte de una operación. Cierra el primer pariccheda: siete saññā y cuatro paribhāsā.",
-              "en": "A paribhāsā that is part of an operation. Closes the first pariccheda: seven saññā and four paribhāsā."}},
-    {"n": 12, "pdf": 63, "clase": "pubbalopa-vidhi", "roles": [["kāriyī", "sarā", ""], ["kāriya", "lopaṃ", ""], ["nimitta", "sare", "", "7"]], "anuvatti": "", "ejemplo": "yass{kx|a} + {n|i}ndriyāni → yassindriyāni",
-     "nota": {"es": "Elisión de la vocal previa. El plural indica 64 elisiones posibles. Cita Saddanīti. El libro pide memorizar este modelo.",
-              "en": "Elision of the preceding vowel. The plural points to 64 possible elisions. Quotes Saddanīti. The book asks the student to memorise this model."}},
-    {"n": 13, "pdf": 65, "clase": "paralopa-vidhi", "roles": [["kāriyī", "saro", "paro"], ["kāriya", "lopaṃ", "vā"], ["nimitta", "sarasmā", "asarūpā", "5"]], "anuvatti": "saro, asarūpā, saro", "ejemplo": "bhikkh{n|u} + {kx|i}nī → bhikkhunī",
-     "nota": {"es": "Elisión de la vocal siguiente. El libro llama a este nimitta «pañcamī-nimitta».",
-              "en": "Elision of the following vowel. The book calls this nimitta «pañcamī-nimitta»."}},
-    {"n": 14, "pdf": 67, "clase": "", "roles": [["kāriyī", "saro", "paro"], ["kāriya", "asavaṇṇaṃ", ""], ["nimitta", "sare", "lutte", "7"]], "anuvatti": "sare lutte, paro saro", "ejemplo": "up{nx|a} + {k|i}kkhā → up{r|e}kkhā",
-     "nota": {"es": "El kāriyī son solo i, ī, u, ū.", "en": "The kāriyī are only i, ī, u, ū."}},
-    {"n": 15, "pdf": 68, "clase": "", "roles": [["kāriyī", "saro", "paro"], ["kāriya", "dīghaṃ", ""], ["nimitta", "sare", "lutte", "7"]], "anuvatti": "sare lutte, paro saro", "ejemplo": "saddh{nx|ā} + {k|i}dha → saddh{r|ī}dha",
-     "nota": {"es": "", "en": ""}},
-    {"n": 16, "pdf": 69, "clase": "", "roles": [["kāriyī", "saro", "pubbo, ca"], ["kāriya", "dīghaṃ", ""], ["nimitta", "sare", "lutte", "7"]], "anuvatti": "sare lutte, pubbo saro", "ejemplo": "kiṃs{k|u} + {nx|i}dha → kiṃs{r|ū}dha",
-     "nota": {"es": "El libro: kāriya y nimitta, «como en el sutta anterior».", "en": "The book: kāriya and nimitta «as in the previous sutta»."}},
-    {"n": 17, "pdf": 70, "clase": "", "roles": [["kāriyī", "e", "anta"], ["kāriya", "yaṃ", "ādeso"], ["nimitta", "sare", "", "7"]], "anuvatti": "sare, e, anta", "ejemplo": "t{k|e} + {n|a}ssa → t{r|y}assa",
-     "nota": {"es": "El kāriyī es la e de me, te, ye.", "en": "The kāriyī is the e of me, te, ye."}},
-    {"n": 18, "pdf": 71, "clase": "", "roles": [], "anuvatti": "sare, o u, anta", "ejemplo": "ko + attho → kvattho",
-     "nota": {"es": "El libro: «nimitta, etc., como en el sutta anterior».", "en": "The book: «nimitta, etc., as in the previous sutta»."}},
-    {"n": 19, "pdf": 72, "clase": "", "roles": [["kāriyī", "ti", "sabbo"], ["kāriya", "caṃ", "kvaci"], ["nimitta", "sare", "", "7"]], "anuvatti": "sare, ti", "ejemplo": "a{k|ti} + {n|a}ntaṃ → a{r|cc}antaṃ",
-     "nota": {"es": "El nimitta son las seis vocales que no son i/ī.", "en": "The nimitta are the six vowels other than i/ī."}},
-    {"n": 20, "pdf": 73, "clase": "", "roles": [["kāriyī", "dhassa", "ca"], ["kāriya", "do", "ca"], ["nimitta", "sare", "", "7"]], "anuvatti": "sare, dhassa", "ejemplo": "ekami{k|dh}{n|a} + ahaṃ → ekami{r|d}āhaṃ",
-     "nota": {"es": "El libro separa «ekamidha + ahaṃ».", "en": "The book splits «ekamidha + ahaṃ»."}},
-    {"n": 21, "pdf": 76, "clase": "", "roles": [["kāriyī", "ivaṇṇo", ""], ["kāriya", "yaṃ", "navā"], ["nimitta", "sare", "asarūpe", "7"]], "anuvatti": "asarūpe, sare", "ejemplo": "agg{k|i} + {n|ā}gāraṃ → agg{r|y}āgāraṃ",
-     "nota": {"es": "", "en": ""}},
-    {"n": 22, "pdf": 77, "clase": "", "roles": [["kāriyī", "ādissa; saro", "eva; pubbo"], ["kāriya", "ri; rasso", "navā, ca"], ["nimitta", "sarasmā", "", "5"]], "anuvatti": "sarasmā, eva", "ejemplo": "yath{k|ā} + {k|e}va → yath{r|a}{r|ri}va",
-     "nota": {"es": "", "en": ""}},
-    {"n": 23, "pdf": 79, "clase": "", "roles": [["nimitta", "byañjane", "", "7"]], "anuvatti": "sarā, byañjane", "ejemplo": "tiṇṇ{k|o} + {n|p}āraṅgato → tiṇṇo pāraṅgato",
-     "nota": {"es": "El libro solo nombra el nimitta (de la pakati).", "en": "The book names only the nimitta (of the pakati)."}},
-    {"n": 24, "pdf": 80, "clase": "ဒုတိယပိုင်း တစ်ပိုင်းလုံးကို မြစ်သောသုတ်", "roles": [], "anuvatti": "sare, sarā", "ejemplo": "pāraṅgat{k|o} + {n|a}hu → pāraṅgato ahu",
-     "nota": {"es": "«Sutta que impide todo el segundo pariccheda» (el sandhi de vocales).", "en": "«Sutta that blocks the whole second pariccheda» (vowel sandhi)."}},
-    {"n": 25, "pdf": 82, "clase": "", "roles": [["kāriyī", "sarā", ""], ["kāriya", "dīghaṃ", "kvaci"], ["nimitta", "byañjane", "", "7"]], "anuvatti": "byañjane, sarā", "ejemplo": "ch{k|a} + {n|r}attaṃ → ch{r|ā}rattaṃ",
-     "nota": {"es": "El kāriyī son las tres vocales breves. Señala un desacuerdo entre Rūpasiddhi y su ṭīkā.",
-              "en": "The kāriyī are the three short vowels. Notes a disagreement between Rūpasiddhi and its ṭīkā."}},
-    {"n": 26, "pdf": 83, "clase": "", "roles": [], "anuvatti": "", "ejemplo": "puggal{k|ā} + {n|dh}ammadasā → puggal{r|a}dhammadasā",
-     "nota": {"es": "El libro no tiene explicación (ခ) para este sutta; da más ejemplos y cita una gāthā (métrica).",
-              "en": "The book has no explanation (ခ) for this sutta; it gives more examples and quotes a gāthā (metre)."}},
-    {"n": 27, "pdf": 84, "clase": "", "roles": [["kāriyī", "sarā", ""], ["kāriya", "lopaṃ", "kvaci"], ["nimitta", "byañjane", "ca", "7"], ["visaya", "tatra", ""], ["visayī", "akāro", ""]], "anuvatti": "byañjane, sarā", "ejemplo": "es{kx|o} + {n|dh}ammo → es{r|a} dhammo",
-     "nota": {"es": "Dos operaciones: elisión de la vocal e inserción de «a» en su lugar.", "en": "Two operations: elision of the vowel and insertion of «a» in its place."}},
-    {"n": 28, "pdf": 85, "clase": "သဒိသာသဒိသဒွေဘော် ၂-မျိုးလုံးကို စီရင်သောသုတ်", "roles": [["visaya", "byañjanassa", "para"], ["visayī", "dvebhāvo", "ṭhāne"], ["nimitta", "sarasmā", "", "5"]], "anuvatti": "sarasmā, byañjanassa", "ejemplo": "idh{n|a} + {k|p}amādo → idha{r|p}pamādo",
-     "nota": {"es": "«Sutta que regula las dos clases de duplicación, semejante y no semejante».", "en": "«Sutta that governs both kinds of doubling, like and unlike»."}},
-    {"n": 29, "pdf": 88, "clase": "niyama-sutta", "roles": [["visaya", "ghosāghosānaṃ", "vagge, ṭhāne"], ["visayī", "tatiyapaṭhamā", ""], ["nimitta", "sarasmā", "", "5"]], "anuvatti": "sarasmā, parabyañjana", "ejemplo": "p{n|a} + {k|gh}arati → pa{r|g}gharati",
-     "nota": {"es": "Sutta de restricción, «como jhalapā rassaṃ». Duplicación no semejante.", "en": "A restricting sutta, «like jhalapā rassaṃ». Unlike doubling."}},
-    {"n": 30, "pdf": 89, "clase": "… ဗျဉ္ဇနေစတို့ကို မြစ်သောသုတ်", "roles": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "aṃ", ""], ["nimitta", "byañjane", "", "7"]], "anuvatti": "byañjane, niggahītaṃ", "ejemplo": "eva{k|ṃ} + {n|v}utte → evaṃ vutte",
-     "nota": {"es": "«Sutta que impide» §31, §32, §33 y §39.", "en": "«Sutta that blocks» §31, §32, §33 and §39."}},
-    {"n": 31, "pdf": 90, "clase": "", "roles": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "vagganta", ""], ["nimitta", "byañjane", "vagge", "7"]], "anuvatti": "vagge byañjane, niggahītaṃ", "ejemplo": "taṇha{k|ṃ} + {n|k}aro → taṇha{r|ṅ}karo",
-     "nota": {"es": "Cita el Ekakkharakosa.", "en": "Quotes the Ekakkharakosa."}},
-    {"n": 32, "pdf": 92, "clase": "", "roles": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "ñaṃ", ""], ["nimitta", "ehe", "", "7"]], "anuvatti": "ehe, niggahītaṃ", "ejemplo": "ta{k|ṃ} + {n|e}va → ta{r|ññ}eva",
-     "nota": {"es": "Nimitta: la e de «eva» y la h de «hi».", "en": "Nimitta: the e of «eva» and the h of «hi»."}},
-    {"n": 33, "pdf": 93, "clase": "", "roles": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "ñaṃ", ""], ["nimitta", "ye", "", "7"]], "anuvatti": "ye, niggahītaṃ", "ejemplo": "sa{k|ṃ} + {n|y}ogo → sa{r|ññ}ogo",
-     "nota": {"es": "El kāriyī es el niggahīta del upasagga «saṃ».", "en": "The kāriyī is the niggahīta of the upasagga «saṃ»."}},
-    {"n": 34, "pdf": 94, "clase": "", "roles": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "madā", ""], ["nimitta", "sare", "", "7"]], "anuvatti": "sare, niggahītaṃ", "ejemplo": "ya{k|ṃ} + {n|e}karattiṃ → ya{r|m}ekarattiṃ",
-     "nota": {"es": "", "en": ""}},
-    {"n": 35, "pdf": 96, "clase": "", "roles": [["visayī", "ya, va, ma, da, na, ta, ra, ḷa", "āgamā, ca, vā"], ["nimitta", "sare", "", "7"]], "anuvatti": "sare", "ejemplo": "",
-     "nota": {"es": "El libro junta aquí el modelo (က) y la explicación (ခ).", "en": "Here the book merges the model (က) and the explanation (ခ)."}},
-    {"n": 36, "pdf": 100, "clase": "", "roles": [["visayī", "o", "āgamo, kvaci"], ["nimitta", "byañjane", "", "7"]], "anuvatti": "byañjane", "ejemplo": "atippag{x|e} + {n|kh}o → atippag{r|o} kho",
-     "nota": {"es": "La e se elide por §12.", "en": "The e is elided by §12."}},
-    {"n": 37, "pdf": 100, "clase": "", "roles": [["visayī", "niggahītaṃ", "āgamo"], ["visaya", "kvaci", ""], ["nimitta", "sare / byañjane", "", "7"]], "anuvatti": "sare vā byañjane vā", "ejemplo": "cakkhu + {n|u}dapādi → cakkhu{r|ṃ} udapādi",
-     "nota": {"es": "", "en": ""}},
-    {"n": 38, "pdf": 101, "clase": "", "ejercicio": true, "roles": [["visaya", "kvaci", ""]], "anuvatti": "sare, niggahītaṃ", "ejemplo": "tāsaṃ + ahaṃ → tāsāhaṃ",
-     "respuesta": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "lopaṃ", "kvaci"], ["nimitta", "sare", "", "7"]],
-     "nota": {"es": "«kvaci»: el lugar métrico o eufónico.", "en": "«kvaci»: the metrical or euphonic position."}},
-    {"n": 39, "pdf": 101, "clase": "", "ejercicio": true, "roles": [["visaya", "kvaci", ""]], "anuvatti": "byañjane, niggahītaṃ", "ejemplo": "ariyasaccānaṃ + dassanaṃ → ariyasaccāna dassanaṃ",
-     "respuesta": [["kāriyī", "niggahītaṃ", ""], ["kāriya", "lopaṃ", ""], ["nimitta", "byañjane", "", "7"]],
-     "nota": {"es": "«kvaci»: cuando el metro lo pide.", "en": "«kvaci»: where the metre calls for it."}},
-    {"n": 40, "pdf": 102, "clase": "", "roles": [["kāriyī", "saro", "paro"], ["kāriya", "lopaṃ", "vā"], ["nimitta", "niggahītā", "", "5"]], "anuvatti": "niggahītā, saro", "ejemplo": "cakka{n|ṃ} + {kx|i}va → cakkaṃ va",
-     "nota": {"es": "", "en": ""}},
-    {"n": 41, "pdf": 102, "clase": "", "roles": [["kāriyī", "byañjano", ""], ["kāriya", "visaññogo", ""], ["nimitta", "niggahītā parasare lutte", "", "5+7"]], "anuvatti": "niggahītā parasare lutte, byañjano", "ejemplo": "eva{n|ṃ} + {x|a}{k|ss}a → evaṃ{r|s}a",
-     "nota": {"es": "Cita la Rūpasiddhi-ṭīkā.", "en": "Quotes the Rūpasiddhi-ṭīkā."}},
-    {"n": 42, "pdf": 105, "clase": "", "roles": [["visaya", "ante", "puthassa"], ["visayī", "go", "āgamo, kvaci"], ["nimitta", "sare", "", "7"]], "anuvatti": "sare, puthassa", "ejemplo": "puth{k|a} + {n|e}va → putha{r|g}eva",
-     "nota": {"es": "", "en": ""}},
-    {"n": 43, "pdf": 105, "clase": "", "roles": [["visaya", "ante", "pāssa"], ["visayī", "go", "āgamo"], ["kāriyī", "ante", ""], ["kāriya", "rasso", ""], ["nimitta", "sare", "", "7"]], "anuvatti": "sare, pāssa", "ejemplo": "p{k|ā} + {n|e}va → pa{r|g}eva",
-     "nota": {"es": "Dos operaciones: inserción de g y acortamiento de ā.", "en": "Two operations: insertion of g and shortening of ā."}},
-    {"n": 44, "pdf": 106, "clase": "", "ejercicio": true, "roles": [], "anuvatti": "sare, abhi", "ejemplo": "abhi + okāso → abbhokāso",
-     "respuesta": [["kāriyī", "abhi", ""], ["kāriya", "abbho", ""], ["nimitta", "sare", "", "7"]],
-     "nota": {"es": "El sutta se formula por economía (lāghava).", "en": "The sutta is framed for economy (lāghava)."}},
-    {"n": 45, "pdf": 106, "clase": "", "roles": [], "anuvatti": "sare, adhi", "ejemplo": "adhi + okāso → ajjhokāso",
-     "nota": {"es": "El libro: «como abbho abhi» (§44).", "en": "The book: «like abbho abhi» (§44)."}},
-    {"n": 46, "pdf": 107, "clase": "", "roles": [], "anuvatti": "", "ejemplo": "abhi + icchitaṃ → abhicchitaṃ",
-     "nota": {"es": "Trata del uso de «bahulaṃ» en aṭṭhakathā y ṭīkā.", "en": "Discusses the use of «bahulaṃ» in aṭṭhakathā and ṭīkā."}},
-    {"n": 47, "pdf": 107, "clase": "", "roles": [], "anuvatti": "", "ejemplo": "ati + icchā → aticchā",
-     "nota": {"es": "No se pone c ante i/ī, como tampoco y. El ejemplo muestra que §19 no se aplica.",
-              "en": "No c before i/ī, just as no y. The example shows §19 not applying."}},
-    {"n": 48, "pdf": 108, "clase": "", "roles": [["nimitta", "sare vā byañjane vā", "", "7"]], "anuvatti": "sare vā byañjane vā, pati", "ejemplo": "{k|pati} + {n|a}ggi → {r|paṭ}aggi",
-     "nota": {"es": "Nimitta genérico: vocal o consonante.", "en": "Generic nimitta: vowel or consonant."}},
-    {"n": 49, "pdf": 108, "clase": "", "roles": [["kāriyī", "anto", "puthassa"], ["kāriya", "u", ""], ["nimitta", "jane", "", "7"]], "anuvatti": "jane, puthassa anto", "ejemplo": "puth{k|a} + {n|j}ane → puth{r|u}jjano",
-     "nota": {"es": "El libro lee «Puthass' u jane» y da «byañjane» entre paréntesis. Doce etimologías de «puthujjana».",
-              "en": "The book reads «Puthass' u jane», with «byañjane» in brackets. Twelve etymologies of «puthujjana»."}},
-    {"n": 50, "pdf": 110, "clase": "", "ejercicio": true, "roles": [], "anuvatti": "byañjane, avassa", "ejemplo": "ava + naddhā → onaddhā",
-     "respuesta": [["kāriyī", "ava", ""], ["kāriya", "o", ""], ["nimitta", "byañjane", "", "7"]],
-     "nota": {"es": "Discute si así habría veintiún upasaggas.", "en": "Asks whether there would then be twenty-one upasaggas."}},
-    {"n": 51, "pdf": 111, "clase": "suttātidesa", "roles": [], "anuvatti": "", "ejemplo": "pāpa{k|n}aṃ → pāpa{r|ṇ}aṃ",
-     "nota": {"es": "Remisión a los suttas ya enunciados (§12–§50). La n pasa a ṇ por el «ca» de §20.",
-              "en": "Refers back to the suttas already stated (§12–§50). The n becomes ṇ through the «ca» of §20."}}
+    {
+      "n": 1,
+      "pdf": 51,
+      "clase": "anaṅga-paribhāsā",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "Paribhāsā que no forma parte de un término técnico ni de una operación. El libro no da modelo (က). Clasificación del sitio: fuera de las cuatro clases.",
+        "en": "A paribhāsā that is part neither of a technical term nor of an operation. The book gives no model (က). Site classification: outside the four classes."
+      }
+    },
+    {
+      "n": 2,
+      "pdf": 52,
+      "clase": "saññā-sutta · anvattha-saññā",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "a, ā … ḷa, aṃ",
+      "nota": {
+        "es": "Sutta de definición; nombre «que sigue el sentido». Por «api» también vaṇṇa, lipi y lekha.",
+        "en": "A defining sutta; a name «that follows the meaning». Through «api», also vaṇṇa, lipi and lekha."
+      }
+    },
+    {
+      "n": 3,
+      "pdf": 55,
+      "clase": "saññā",
+      "roles": [
+        [
+          "saññā",
+          "sarā",
+          ""
+        ],
+        [
+          "saññī",
+          "akkharā",
+          "tattha, odantā, aṭṭha"
+        ]
+      ],
+      "anuvatti": "akkharā",
+      "ejemplo": "",
+      "nota": {
+        "es": "«odantā» = o + d (āgama) + antā.",
+        "en": "«odantā» = o + d (āgama) + antā."
+      }
+    },
+    {
+      "n": 4,
+      "pdf": 56,
+      "clase": "saññā",
+      "roles": [
+        [
+          "saññā",
+          "rassā",
+          ""
+        ],
+        [
+          "saññī",
+          "sarā",
+          "lahumattā, tayo"
+        ]
+      ],
+      "anuvatti": "sarā",
+      "ejemplo": "a, i, u",
+      "nota": {
+        "es": "«mattā»: el tiempo de un chasquido de dedos o de un parpadeo.",
+        "en": "«mattā»: the time of a finger-snap or a blink."
+      }
+    },
+    {
+      "n": 5,
+      "pdf": 57,
+      "clase": "saññā",
+      "roles": [
+        [
+          "saññā",
+          "dīghā",
+          ""
+        ],
+        [
+          "saññī",
+          "sarā",
+          "aññe"
+        ]
+      ],
+      "anuvatti": "sarā",
+      "ejemplo": "ā, ī, ū, e, o",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 6,
+      "pdf": 57,
+      "clase": "saññā",
+      "roles": [
+        [
+          "saññā",
+          "byañjanā",
+          ""
+        ],
+        [
+          "saññī",
+          "akkharā",
+          "sesā"
+        ]
+      ],
+      "anuvatti": "akkharā",
+      "ejemplo": "k, kh, g, gh, ṅ … ḷ, ṃ",
+      "nota": {
+        "es": "Cita una ṭīkā y la Kalāpa-ṭīkā.",
+        "en": "Quotes a ṭīkā and the Kalāpa-ṭīkā."
+      }
+    },
+    {
+      "n": 7,
+      "pdf": 58,
+      "clase": "saññā",
+      "roles": [
+        [
+          "saññā",
+          "vaggā",
+          "pañca pañcaso"
+        ],
+        [
+          "saññī",
+          "byañjanā",
+          "tattha, mantā"
+        ]
+      ],
+      "anuvatti": "byañjanā",
+      "ejemplo": "ka, kha, ga, gha, ṅa … ma",
+      "nota": {
+        "es": "Compara la vutti con Rūpasiddhi.",
+        "en": "Compares the vutti with Rūpasiddhi."
+      }
+    },
+    {
+      "n": 8,
+      "pdf": 59,
+      "clase": "saññā",
+      "roles": [
+        [
+          "saññā",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "saññī",
+          "aṃ",
+          "iti"
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "aṃ",
+      "nota": {
+        "es": "Compara con la anusvāra del sánscrito.",
+        "en": "Compares it with the Sanskrit anusvāra."
+      }
+    },
+    {
+      "n": 9,
+      "pdf": 59,
+      "clase": "saññaṅga-paribhāsā",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "Paribhāsā que forma parte de un término técnico. Explica ghosa, aghosa, ūsmā.",
+        "en": "A paribhāsā that is part of a technical term. Explains ghosa, aghosa, ūsmā."
+      }
+    },
+    {
+      "n": 10,
+      "pdf": 60,
+      "clase": "vidhyaṅga-paribhāsā",
+      "roles": [
+        [
+          "kāriyī",
+          "byañjanaṃ",
+          "pubbaṃ"
+        ],
+        [
+          "kāriya",
+          "viyojaye",
+          "adhoṭhitaṃ, assaraṃ"
+        ],
+        [
+          "nimitta",
+          "sarena",
+          "",
+          "3"
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "tatra + ayaṃ → tatrāyaṃ",
+      "nota": {
+        "es": "Paribhāsā que forma parte de una operación. Nimitta en la tercera inflexión.",
+        "en": "A paribhāsā that is part of an operation. Nimitta in the third inflection."
+      }
+    },
+    {
+      "n": 11,
+      "pdf": 61,
+      "clase": "vidhyaṅga-paribhāsā",
+      "roles": [
+        [
+          "kāriyī",
+          "byañjanaṃ",
+          "assaraṃ, adhoṭhitaṃ, pubbaṃ"
+        ],
+        [
+          "kāriya",
+          "naye",
+          "paraṃ, yutte"
+        ]
+      ],
+      "anuvatti": "byañjanaṃ, assaraṃ, adhoṭhitaṃ, pubbaṃ",
+      "ejemplo": "tatra + ayaṃ → tatrāyaṃ",
+      "nota": {
+        "es": "Paribhāsā que forma parte de una operación. Cierra el primer pariccheda: siete saññā y cuatro paribhāsā.",
+        "en": "A paribhāsā that is part of an operation. Closes the first pariccheda: seven saññā and four paribhāsā."
+      }
+    },
+    {
+      "n": 12,
+      "pdf": 63,
+      "clase": "pubbalopa-vidhi",
+      "roles": [
+        [
+          "kāriyī",
+          "sarā",
+          ""
+        ],
+        [
+          "kāriya",
+          "lopaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "yass{kx|a} + {n|i}ndriyāni → yassindriyāni",
+      "nota": {
+        "es": "Elisión de la vocal previa. El plural indica 64 elisiones posibles. Cita Saddanīti. El libro pide memorizar este modelo.",
+        "en": "Elision of the preceding vowel. The plural points to 64 possible elisions. Quotes Saddanīti. The book asks the student to memorise this model."
+      }
+    },
+    {
+      "n": 13,
+      "pdf": 65,
+      "clase": "paralopa-vidhi",
+      "roles": [
+        [
+          "kāriyī",
+          "saro",
+          "paro"
+        ],
+        [
+          "kāriya",
+          "lopaṃ",
+          "vā"
+        ],
+        [
+          "nimitta",
+          "sarasmā",
+          "asarūpā",
+          "5"
+        ]
+      ],
+      "anuvatti": "saro, asarūpā, saro",
+      "ejemplo": "bhikkh{n|u} + {kx|i}nī → bhikkhunī",
+      "nota": {
+        "es": "Elisión de la vocal siguiente. El libro llama a este nimitta «pañcamī-nimitta».",
+        "en": "Elision of the following vowel. The book calls this nimitta «pañcamī-nimitta»."
+      }
+    },
+    {
+      "n": 14,
+      "pdf": 67,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "saro",
+          "paro"
+        ],
+        [
+          "kāriya",
+          "asavaṇṇaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "lutte",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare lutte, paro saro",
+      "ejemplo": "up{nx|a} + {k|i}kkhā → up{r|e}kkhā",
+      "nota": {
+        "es": "El kāriyī son solo i, ī, u, ū.",
+        "en": "The kāriyī are only i, ī, u, ū."
+      }
+    },
+    {
+      "n": 15,
+      "pdf": 68,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "saro",
+          "paro"
+        ],
+        [
+          "kāriya",
+          "dīghaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "lutte",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare lutte, paro saro",
+      "ejemplo": "saddh{nx|ā} + {k|i}dha → saddh{r|ī}dha",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 16,
+      "pdf": 69,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "saro",
+          "pubbo, ca"
+        ],
+        [
+          "kāriya",
+          "dīghaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "lutte",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare lutte, pubbo saro",
+      "ejemplo": "kiṃs{k|u} + {nx|i}dha → kiṃs{r|ū}dha",
+      "nota": {
+        "es": "El libro: kāriya y nimitta, «como en el sutta anterior».",
+        "en": "The book: kāriya and nimitta «as in the previous sutta»."
+      }
+    },
+    {
+      "n": 17,
+      "pdf": 70,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "e",
+          "anta"
+        ],
+        [
+          "kāriya",
+          "yaṃ",
+          "ādeso, kvaci"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare, e, anta",
+      "ejemplo": "t{k|e} + {n|a}ssa → t{r|y}assa",
+      "nota": {
+        "es": "El kāriyī es la e de me, te, ye.",
+        "en": "The kāriyī is the e of me, te, ye."
+      }
+    },
+    {
+      "n": 18,
+      "pdf": 71,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "sare, o u, anta",
+      "ejemplo": "ko + attho → kvattho",
+      "nota": {
+        "es": "El libro: «nimitta, etc., como en el sutta anterior».",
+        "en": "The book: «nimitta, etc., as in the previous sutta»."
+      }
+    },
+    {
+      "n": 19,
+      "pdf": 72,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "ti",
+          "sabbo"
+        ],
+        [
+          "kāriya",
+          "caṃ",
+          "kvaci"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare, ti",
+      "ejemplo": "a{k|ti} + {n|a}ntaṃ → a{r|cc}antaṃ",
+      "nota": {
+        "es": "El nimitta son las seis vocales que no son i/ī.",
+        "en": "The nimitta are the six vowels other than i/ī."
+      }
+    },
+    {
+      "n": 20,
+      "pdf": 73,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "dhassa",
+          "ca"
+        ],
+        [
+          "kāriya",
+          "do",
+          "ca"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare, dhassa",
+      "ejemplo": "ekami{k|dh}{n|a} + ahaṃ → ekami{r|d}āhaṃ",
+      "nota": {
+        "es": "El libro separa «ekamidha + ahaṃ».",
+        "en": "The book splits «ekamidha + ahaṃ»."
+      }
+    },
+    {
+      "n": 21,
+      "pdf": 76,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "ivaṇṇo",
+          ""
+        ],
+        [
+          "kāriya",
+          "yaṃ",
+          "navā"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "asarūpe",
+          "7"
+        ]
+      ],
+      "anuvatti": "asarūpe, sare",
+      "ejemplo": "agg{k|i} + {n|ā}gāraṃ → agg{r|y}āgāraṃ",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 22,
+      "pdf": 77,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "ādissa; saro",
+          "eva; pubbo"
+        ],
+        [
+          "kāriya",
+          "ri; rasso",
+          "navā, ca"
+        ],
+        [
+          "nimitta",
+          "sarasmā",
+          "",
+          "5"
+        ]
+      ],
+      "anuvatti": "sarasmā, eva",
+      "ejemplo": "yath{k|ā} + {k|e}va → yath{r|a}{r|ri}va",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 23,
+      "pdf": 79,
+      "clase": "",
+      "roles": [
+        [
+          "nimitta",
+          "byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sarā, byañjane",
+      "ejemplo": "tiṇṇ{k|o} + {n|p}āraṅgato → tiṇṇo pāraṅgato",
+      "nota": {
+        "es": "El libro solo nombra el nimitta (de la pakati).",
+        "en": "The book names only the nimitta (of the pakati)."
+      }
+    },
+    {
+      "n": 24,
+      "pdf": 80,
+      "clase": "ဒုတိယပိုင်း တစ်ပိုင်းလုံးကို မြစ်သောသုတ်",
+      "roles": [],
+      "anuvatti": "sare, sarā",
+      "ejemplo": "pāraṅgat{k|o} + {n|a}hu → pāraṅgato ahu",
+      "nota": {
+        "es": "«Sutta que impide todo el segundo pariccheda» (el sandhi de vocales). Clasificación del sitio: vidhi (ādesa).",
+        "en": "«Sutta that blocks the whole second pariccheda» (vowel sandhi). Site classification: vidhi (ādesa)."
+      }
+    },
+    {
+      "n": 25,
+      "pdf": 82,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "sarā",
+          ""
+        ],
+        [
+          "kāriya",
+          "dīghaṃ",
+          "kvaci"
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "byañjane, sarā",
+      "ejemplo": "ch{k|a} + {n|r}attaṃ → ch{r|ā}rattaṃ",
+      "nota": {
+        "es": "El kāriyī son las tres vocales breves. Señala un desacuerdo entre Rūpasiddhi y su ṭīkā.",
+        "en": "The kāriyī are the three short vowels. Notes a disagreement between Rūpasiddhi and its ṭīkā."
+      }
+    },
+    {
+      "n": 26,
+      "pdf": 83,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puggal{k|ā} + {n|dh}ammadasā → puggal{r|a}dhammadasā",
+      "nota": {
+        "es": "El libro no tiene explicación (ခ) para este sutta; da más ejemplos y cita una gāthā (métrica).",
+        "en": "The book has no explanation (ခ) for this sutta; it gives more examples and quotes a gāthā (metre)."
+      }
+    },
+    {
+      "n": 27,
+      "pdf": 84,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "sarā",
+          ""
+        ],
+        [
+          "kāriya",
+          "lopaṃ",
+          "kvaci"
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "ca",
+          "7"
+        ],
+        [
+          "visaya",
+          "tatra",
+          ""
+        ],
+        [
+          "visayī",
+          "akāro",
+          ""
+        ]
+      ],
+      "anuvatti": "byañjane, sarā",
+      "ejemplo": "es{kx|o} + {n|dh}ammo → es{r|a} dhammo",
+      "nota": {
+        "es": "Dos operaciones: elisión de la vocal e inserción de «a» en su lugar.",
+        "en": "Two operations: elision of the vowel and insertion of «a» in its place."
+      }
+    },
+    {
+      "n": 28,
+      "pdf": 85,
+      "clase": "သဒိသာသဒိသဒွေဘော် ၂-မျိုးလုံးကို စီရင်သောသုတ်",
+      "roles": [
+        [
+          "visaya",
+          "byañjanassa",
+          "para"
+        ],
+        [
+          "visayī",
+          "dvebhāvo",
+          "ṭhāne"
+        ],
+        [
+          "nimitta",
+          "sarasmā",
+          "",
+          "5"
+        ]
+      ],
+      "anuvatti": "sarasmā, byañjanassa",
+      "ejemplo": "idh{n|a} + {k|p}amādo → idha{r|p}pamādo",
+      "nota": {
+        "es": "«Sutta que regula las dos clases de duplicación, semejante y no semejante».",
+        "en": "«Sutta that governs both kinds of doubling, like and unlike»."
+      }
+    },
+    {
+      "n": 29,
+      "pdf": 88,
+      "clase": "niyama-sutta",
+      "roles": [
+        [
+          "visaya",
+          "ghosāghosānaṃ",
+          "vagge, ṭhāne"
+        ],
+        [
+          "visayī",
+          "tatiyapaṭhamā",
+          ""
+        ],
+        [
+          "nimitta",
+          "sarasmā",
+          "",
+          "5"
+        ]
+      ],
+      "anuvatti": "sarasmā, parabyañjana",
+      "ejemplo": "p{n|a} + {k|gh}arati → pa{r|g}gharati",
+      "nota": {
+        "es": "Sutta de restricción, «como jhalapā rassaṃ». Duplicación no semejante.",
+        "en": "A restricting sutta, «like jhalapā rassaṃ». Unlike doubling."
+      }
+    },
+    {
+      "n": 30,
+      "pdf": 89,
+      "clase": "… ဗျဉ္ဇနေစတို့ကို မြစ်သောသုတ်",
+      "roles": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "aṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "byañjane, niggahītaṃ",
+      "ejemplo": "eva{k|ṃ} + {n|v}utte → evaṃ vutte",
+      "nota": {
+        "es": "«Sutta que impide» §31, §32, §33 y §39.",
+        "en": "«Sutta that blocks» §31, §32, §33 and §39."
+      }
+    },
+    {
+      "n": 31,
+      "pdf": 90,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "vagganta",
+          ""
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "vagge",
+          "7"
+        ]
+      ],
+      "anuvatti": "vagge byañjane, niggahītaṃ",
+      "ejemplo": "taṇha{k|ṃ} + {n|k}aro → taṇha{r|ṅ}karo",
+      "nota": {
+        "es": "Cita el Ekakkharakosa.",
+        "en": "Quotes the Ekakkharakosa."
+      }
+    },
+    {
+      "n": 32,
+      "pdf": 92,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "ñaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "ehe",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "ehe, niggahītaṃ",
+      "ejemplo": "ta{k|ṃ} + {n|e}va → ta{r|ññ}eva",
+      "nota": {
+        "es": "Nimitta: la e de «eva» y la h de «hi».",
+        "en": "Nimitta: the e of «eva» and the h of «hi»."
+      }
+    },
+    {
+      "n": 33,
+      "pdf": 93,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "ñaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "ye",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "ye, niggahītaṃ",
+      "ejemplo": "sa{k|ṃ} + {n|y}ogo → sa{r|ññ}ogo",
+      "nota": {
+        "es": "El kāriyī es el niggahīta del upasagga «saṃ».",
+        "en": "The kāriyī is the niggahīta of the upasagga «saṃ»."
+      }
+    },
+    {
+      "n": 34,
+      "pdf": 94,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "madā",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare, niggahītaṃ",
+      "ejemplo": "ya{k|ṃ} + {n|e}karattiṃ → ya{r|m}ekarattiṃ",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 35,
+      "pdf": 96,
+      "clase": "",
+      "roles": [
+        [
+          "visayī",
+          "ya, va, ma, da, na, ta, ra, ḷa",
+          "āgamā, ca, vā"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare",
+      "ejemplo": "",
+      "nota": {
+        "es": "El libro junta aquí el modelo (က) y la explicación (ခ).",
+        "en": "Here the book merges the model (က) and the explanation (ခ)."
+      }
+    },
+    {
+      "n": 36,
+      "pdf": 100,
+      "clase": "",
+      "roles": [
+        [
+          "visayī",
+          "o",
+          "āgamo, kvaci"
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "byañjane",
+      "ejemplo": "atippag{x|e} + {n|kh}o → atippag{r|o} kho",
+      "nota": {
+        "es": "La e se elide por §12.",
+        "en": "The e is elided by §12."
+      }
+    },
+    {
+      "n": 37,
+      "pdf": 100,
+      "clase": "",
+      "roles": [
+        [
+          "visayī",
+          "niggahītaṃ",
+          "āgamo"
+        ],
+        [
+          "visaya",
+          "kvaci",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare / byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare vā byañjane vā",
+      "ejemplo": "cakkhu + {n|u}dapādi → cakkhu{r|ṃ} udapādi",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 38,
+      "pdf": 101,
+      "clase": "",
+      "ejercicio": true,
+      "roles": [
+        [
+          "visaya",
+          "kvaci",
+          ""
+        ]
+      ],
+      "anuvatti": "sare, niggahītaṃ",
+      "ejemplo": "tāsaṃ + ahaṃ → tāsāhaṃ",
+      "respuesta": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "lopaṃ",
+          "kvaci"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "nota": {
+        "es": "«kvaci»: el lugar métrico o eufónico.",
+        "en": "«kvaci»: the metrical or euphonic position."
+      }
+    },
+    {
+      "n": 39,
+      "pdf": 101,
+      "clase": "",
+      "ejercicio": true,
+      "roles": [
+        [
+          "visaya",
+          "kvaci",
+          ""
+        ]
+      ],
+      "anuvatti": "byañjane, niggahītaṃ",
+      "ejemplo": "ariyasaccānaṃ + dassanaṃ → ariyasaccāna dassanaṃ",
+      "respuesta": [
+        [
+          "kāriyī",
+          "niggahītaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "lopaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "nota": {
+        "es": "«kvaci»: cuando el metro lo pide.",
+        "en": "«kvaci»: where the metre calls for it."
+      }
+    },
+    {
+      "n": 40,
+      "pdf": 102,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "saro",
+          "paro"
+        ],
+        [
+          "kāriya",
+          "lopaṃ",
+          "vā"
+        ],
+        [
+          "nimitta",
+          "niggahītā",
+          "",
+          "5"
+        ]
+      ],
+      "anuvatti": "niggahītā, saro",
+      "ejemplo": "cakka{n|ṃ} + {kx|i}va → cakkaṃ va",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 41,
+      "pdf": 102,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "byañjano",
+          ""
+        ],
+        [
+          "kāriya",
+          "visaññogo",
+          ""
+        ],
+        [
+          "nimitta",
+          "niggahītā parasare lutte",
+          "ca",
+          "5+7"
+        ]
+      ],
+      "anuvatti": "niggahītā parasare lutte, byañjano",
+      "ejemplo": "eva{n|ṃ} + {x|a}{k|ss}a → evaṃ{r|s}a",
+      "nota": {
+        "es": "Cita la Rūpasiddhi-ṭīkā.",
+        "en": "Quotes the Rūpasiddhi-ṭīkā."
+      }
+    },
+    {
+      "n": 42,
+      "pdf": 105,
+      "clase": "",
+      "roles": [
+        [
+          "visaya",
+          "ante",
+          "puthassa"
+        ],
+        [
+          "visayī",
+          "go",
+          "āgamo, kvaci"
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare, puthassa",
+      "ejemplo": "puth{k|a} + {n|e}va → putha{r|g}eva",
+      "nota": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "n": 43,
+      "pdf": 105,
+      "clase": "",
+      "roles": [
+        [
+          "visaya",
+          "ante",
+          "pāssa"
+        ],
+        [
+          "visayī",
+          "go",
+          "āgamo"
+        ],
+        [
+          "kāriyī",
+          "ante",
+          ""
+        ],
+        [
+          "kāriya",
+          "rasso",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare, pāssa",
+      "ejemplo": "p{k|ā} + {n|e}va → pa{r|g}eva",
+      "nota": {
+        "es": "Dos operaciones: inserción de g y acortamiento de ā.",
+        "en": "Two operations: insertion of g and shortening of ā."
+      }
+    },
+    {
+      "n": 44,
+      "pdf": 106,
+      "clase": "",
+      "ejercicio": true,
+      "roles": [],
+      "anuvatti": "sare, abhi",
+      "ejemplo": "abhi + okāso → abbhokāso",
+      "respuesta": [
+        [
+          "kāriyī",
+          "abhi",
+          ""
+        ],
+        [
+          "kāriya",
+          "abbho",
+          ""
+        ],
+        [
+          "nimitta",
+          "sare",
+          "",
+          "7"
+        ]
+      ],
+      "nota": {
+        "es": "El sutta se formula por economía (lāghava).",
+        "en": "The sutta is framed for economy (lāghava)."
+      }
+    },
+    {
+      "n": 45,
+      "pdf": 106,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "sare, adhi",
+      "ejemplo": "adhi + okāso → ajjhokāso",
+      "nota": {
+        "es": "El libro: «como abbho abhi» (§44).",
+        "en": "The book: «like abbho abhi» (§44)."
+      }
+    },
+    {
+      "n": 46,
+      "pdf": 107,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "abhi + icchitaṃ → abhicchitaṃ",
+      "nota": {
+        "es": "Trata del uso de «bahulaṃ» en aṭṭhakathā y ṭīkā.",
+        "en": "Discusses the use of «bahulaṃ» in aṭṭhakathā and ṭīkā."
+      }
+    },
+    {
+      "n": 47,
+      "pdf": 107,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "ati + icchā → aticchā",
+      "nota": {
+        "es": "No se pone c ante i/ī, como tampoco y. El ejemplo muestra que §19 no se aplica.",
+        "en": "No c before i/ī, just as no y. The example shows §19 not applying."
+      }
+    },
+    {
+      "n": 48,
+      "pdf": 108,
+      "clase": "",
+      "roles": [
+        [
+          "nimitta",
+          "sare vā byañjane vā",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "sare vā byañjane vā, pati",
+      "ejemplo": "{k|pati} + {n|a}ggi → {r|paṭ}aggi",
+      "nota": {
+        "es": "Nimitta genérico: vocal o consonante.",
+        "en": "Generic nimitta: vowel or consonant."
+      }
+    },
+    {
+      "n": 49,
+      "pdf": 108,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "anto",
+          "puthassa"
+        ],
+        [
+          "kāriya",
+          "u",
+          ""
+        ],
+        [
+          "nimitta",
+          "jane",
+          "",
+          "7"
+        ]
+      ],
+      "anuvatti": "jane, puthassa anto",
+      "ejemplo": "puth{k|a} + {n|j}ane → puth{r|u}jjano",
+      "nota": {
+        "es": "El libro lee «Puthass' u jane» y da «byañjane» entre paréntesis. Doce etimologías de «puthujjana».",
+        "en": "The book reads «Puthass' u jane», with «byañjane» in brackets. Twelve etymologies of «puthujjana»."
+      }
+    },
+    {
+      "n": 50,
+      "pdf": 110,
+      "clase": "",
+      "ejercicio": true,
+      "roles": [],
+      "anuvatti": "byañjane, avassa",
+      "ejemplo": "ava + naddhā → onaddhā",
+      "respuesta": [
+        [
+          "kāriyī",
+          "ava",
+          ""
+        ],
+        [
+          "kāriya",
+          "o",
+          ""
+        ],
+        [
+          "nimitta",
+          "byañjane",
+          "",
+          "7"
+        ]
+      ],
+      "nota": {
+        "es": "Discute si así habría veintiún upasaggas.",
+        "en": "Asks whether there would then be twenty-one upasaggas."
+      }
+    },
+    {
+      "n": 51,
+      "pdf": 111,
+      "clase": "suttātidesa",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "pāpa{k|n}aṃ → pāpa{r|ṇ}aṃ",
+      "nota": {
+        "es": "Remisión a los suttas ya enunciados (§12–§50). La n pasa a ṇ por el «ca» de §20. Clasificación del sitio: vidhi (ādesa).",
+        "en": "Refers back to the suttas already stated (§12–§50). The n becomes ṇ through the «ca» of §20. Site classification: vidhi (ādesa)."
+      }
+    }
   ]
 }
