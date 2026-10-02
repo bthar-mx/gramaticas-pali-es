@@ -129,6 +129,11 @@ def main():
     # las tres páginas de índice — al final, porque cuentan lo ya generado
     fallos += correr("generar_indices.py")
 
+    # visibilidad en buscadores — lo último de todo: lee la salida ya escrita
+    # y añade canónica, hreflang, descripción si falta, sitemap.xml y
+    # robots.txt (2026-10-01).
+    fallos += correr("generar_seo.py")
+
     print()
     print("Todo regenerado." if not fallos else "{0} paso(s) con error.".format(fallos))
     return 1 if fallos else 0
