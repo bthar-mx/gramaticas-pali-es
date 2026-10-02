@@ -111,9 +111,9 @@ def main():
     if os.path.exists(os.path.join(recursos, "clasificacion", "plantilla.html")):
         fallos += correr("generar_clasificacion.py")
 
-    # Visuddhāyuṃ · tabla del estudiante (borrador)
-    if os.path.exists(os.path.join(recursos, "visuddhayum", "plantilla.html")):
-        fallos += correr("generar_visuddhayum.py")
+    # análisis de los suttas · según la Visuddhāyuṃ (borrador)
+    if os.path.exists(os.path.join(recursos, "analisis", "plantilla.html")):
+        fallos += correr("generar_analisis.py")
 
     # raíces pāḷi y sánscritas
     # Los datos los producen extraer_raices.py, extraer_dhatupatha.py y

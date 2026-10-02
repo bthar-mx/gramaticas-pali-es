@@ -1,0 +1,37 @@
+{
+  "version": "0.2",
+  "fecha": "2026-10-03",
+  "estado": "borrador",
+  "nota_version": {
+    "es": "Sandhi-Kappa completo, cotejado con las imágenes del libro; versión bilingüe.",
+    "en": "Sandhi-Kappa complete, checked against the book's page images; bilingual version."
+  },
+  "capitulos": ["01-sandhi.json"],
+  "indice": [
+    {"clave": "sandhi", "pali": "Sandhi-Kappa", "md": "01-sandhi-kappa"},
+    {"clave": "nama", "pali": "Nāma-Kappa", "md": "02-nama-kappa"},
+    {"clave": "karaka", "pali": "Kāraka-Kappa", "md": "03-karaka-kappa"},
+    {"clave": "samasa", "pali": "Samāsa-Kappa", "md": "04-samasa-kappa"},
+    {"clave": "taddhita", "pali": "Taddhita-Kappa", "md": "05-taddhita-kappa"},
+    {"clave": "akhyata", "pali": "Ākhyāta-Kappa", "md": ""},
+    {"clave": "kita", "pali": "Kita-Kappa", "md": ""},
+    {"clave": "unadi", "pali": "Uṇādi-Kappa", "md": ""}
+  ],
+  "cita": {
+    "autor": "Ashin Aggañāṇābhivaṃsa (အရှင်အဂ္ဂဉာဏာဘိဝံသ), Si-shin Nāyaka Sayadaw",
+    "titulo": "Byākaraṇasiromaṇi Visuddhāyuṃ Kaccāyana-suttanak-ṭīkā",
+    "titulo_my": "ဗျာကရဏသိရောမဏိ ဝိသုဒ္ဓါရုံ ကစ္စည်းသုတ်နက်ဋီကာ",
+    "es": {
+      "edicion": "Primera edición, Nattaw de 1366 de la era birmana (diciembre de 2004). Yangon: Departamento de Asuntos Religiosos (Kaba-Aye); imprenta Tipiṭaka-Nikāya.",
+      "prefacio": "Prefacio firmado en el Mahāvisuddhārāma Taik-thit, Mahā-aung-mye, Mandalay, el 10.º día creciente del segundo Wāso de 1366 (26-7-2004).",
+      "paginas": "617 págs. más preliminares. La columna «Fuente» da la página del PDF del escaneo (página impresa + 46).",
+      "autor_nota": "Sobre el autor. Ashin Aggañāṇābhivaṃsa (1938–2023), conocido como Si-shin Nāyaka Sayadaw, fue abad principal (padhāna-nāyaka) del monasterio Mahāvisuddhārāma Taikthit (Si-shin) de Mandalay y vicepresidente de la Shwegyin Nikāya. Obtuvo el título de Pāḷi-pāragū en 1963 y recibió del Estado los títulos de Aggamahāpaṇḍita y, en 2020, Abhidhaja Mahāraṭṭhaguru. Durante décadas enseñó pariyatti a numerosos monjes. Falleció el 19 de noviembre de 2023."
+    },
+    "en": {
+      "edicion": "First edition, Nattaw 1366 of the Burmese era (December 2004). Yangon: Department of Religious Affairs (Kaba-Aye); Tipiṭaka-Nikāya press.",
+      "prefacio": "Preface signed at the Mahāvisuddhārāma Taik-thit, Mahā-aung-mye, Mandalay, on the 10th waxing day of Second Wāso 1366 (26-7-2004).",
+      "paginas": "617 pp. plus front matter. The «Source» column gives the page of the scanned PDF (printed page + 46).",
+      "autor_nota": "About the author. Ashin Aggañāṇābhivaṃsa (1938–2023), known as the Si-shin Nāyaka Sayadaw, was chief abbot (padhāna-nāyaka) of the Mahāvisuddhārāma Taikthit (Si-shin) Monastery in Mandalay and vice-chairman of the Shwegyin Nikāya. He earned the Pāḷi-pāragū degree in 1963 and received the state titles Aggamahāpaṇḍita and, in 2020, Abhidhaja Mahāraṭṭhaguru. For decades he taught the scriptures to many monks. He passed away on 19 November 2023."
+    }
+  }
+}

@@ -133,6 +133,9 @@ RECURSOS = [
      "hace cada regla; para el investigador, las fuentes de cada "
      "clasificación. Cada aforismo enlaza a su texto y traducción. "
      "Borrador en revisión."),
+    ("analisis/", "__ANALISIS_BADGE__",
+     "Análisis de los suttas de Kaccāyana",
+     "Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>."),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: el <i>Glosario de términos "
@@ -317,6 +320,11 @@ EN = {
         "Saddanīti. Two orders —the Rūpasiddhi's and Kaccāyana's— and a review "
         "mode that shows where each translation comes from. Draft under review; "
         "the page itself is in Spanish.",
+    "Análisis de los suttas de Kaccāyana":
+        "Analysis of the Kaccāyana suttas",
+    "Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.":
+        "Class, anuvatti, roles (kāriyī, kāriya, nimitta) and example for each "
+        "sutta, following the <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
     "Clasificación de los suttas de Kaccāyana":
         "Classification of the Kaccāyana suttas",
     "Cada aforismo de Kaccāyana clasificado según "
@@ -629,6 +637,21 @@ def cuenta_clasificacion():
     return len(s), sum(1 for e in s.values() if "nota" in e), d.get("version", "")
 
 
+def cuenta_analisis():
+    """(capítulos, suttas, versión) de recursos/analisis/."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "analisis", "meta.json")
+    if not os.path.exists(p):
+        return None
+    m = json.load(open(p, encoding="utf-8"))
+    caps, n = [], 0
+    for f in m.get("capitulos", []):
+        d = json.load(open(os.path.join(RAIZ, "recursos", "analisis", "datos", f), encoding="utf-8"))
+        caps.append(d["pali"].replace("-Kappa", ""))
+        n += len(d["suttas"])
+    return " · ".join(caps), n, m.get("version", "")
+
+
 def cuenta_raices():
     """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
     import json
@@ -880,9 +903,14 @@ def indice_recursos():
     badge_cla = (bi("{0} aforismos · {1} notas · v{2}".format(*n_cla),
                     "{0} aphorisms · {1} notes · v{2}".format(*n_cla))
                  if n_cla else "clasificación")
+    n_ana = cuenta_analisis()
+    badge_ana = (bi("{0} · {1} suttas · v{2}".format(*n_ana),
+                    "{0} · {1} suttas · v{2}".format(*n_ana))
+                 if n_ana else "análisis")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
                  "__CASOS_BADGE__": badge_cas,
                  "__CLASIFICACION_BADGE__": badge_cla,
+                 "__ANALISIS_BADGE__": badge_ana,
                  "__GLOSARIO_BADGE__": badge_glo,
                  "__RAICES_BADGE__": badge_rai, "__VERBO_BADGE__": badge_ver,
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
@@ -894,7 +922,8 @@ def indice_recursos():
                 and (ins != "__VERBO_BADGE__" or n_ver)
                 and (ins != "__GLOSARIO_BADGE__" or n_glo)
                 and (ins != "__CASOS_BADGE__" or n_cas)
-                and (ins != "__CLASIFICACION_BADGE__" or n_cla)]
+                and (ins != "__CLASIFICACION_BADGE__" or n_cla)
+                and (ins != "__ANALISIS_BADGE__" or n_ana)]
 
     # Un quinto elemento True marca la insignia como obra en curso.
     externas = [tarjeta(href, ins, titulo, desc, externo=True,
