@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Genera la tabla del estudiante de la Visuddhāyuṃ (borrador).
+Genera «Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ
+Kaccāyana-ṭīkā» (borrador), en español e inglés en la misma página.
 
-    python3 herramientas/generar_visuddhayum.py
+    python3 herramientas/generar_analisis.py
 
 Junta:
 
-  recursos/visuddhayum/meta.json          versión, estado y cita del libro
-  recursos/visuddhayum/datos/NN-*.json    un archivo por capítulo: clase de
+  recursos/analisis/meta.json          versión, estado y cita del libro
+  recursos/analisis/datos/NN-*.json    un archivo por capítulo: clase de
                                           sutta según el libro, anuvatti,
                                           funciones (kāriyī / kāriya /
                                           nimitta, saññā / saññī, visaya /
                                           visayī), ejemplo marcado, notas y
-                                          página del PDF
+                                          página del PDF; notas en es/en
   kaccayana/0N-*.md                       el texto pāḷi de cada aforismo
-  recursos/visuddhayum/plantilla.html     el maquetado y la lógica
+  recursos/analisis/plantilla.html     el maquetado y la lógica
 
-y escribe site/recursos/visuddhayum/index.html.
+y escribe site/recursos/analisis/index.html.
 
 Antes de escribir verifica que cada capítulo tenga todos sus aforismos, sin
 huecos ni sobrantes; que la página del PDF esté dentro del capítulo y no
@@ -36,9 +37,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from generar_clasificacion import leer_md  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIR = os.path.join(RAIZ, "recursos", "visuddhayum")
+DIR = os.path.join(RAIZ, "recursos", "analisis")
 PLANTILLA = os.path.join(DIR, "plantilla.html")
-DESTINO = os.path.join(RAIZ, "site", "recursos", "visuddhayum", "index.html")
+DESTINO = os.path.join(RAIZ, "site", "recursos", "analisis", "index.html")
 
 ROLES = {"kāriyī", "kāriya", "nimitta", "saññā", "saññī", "visaya", "visayī"}
 CASOS = {"7", "5", "3", "5+7"}
@@ -73,7 +74,7 @@ def verificar(cap, textos):
         if s["pdf"] < previa:
             fallos.append("§{0}: la página del PDF retrocede".format(n))
         previa = s["pdf"]
-        for r in s["roles"]:
+        for r in s["roles"] + s.get("respuesta", []):
             if r[0] not in ROLES:
                 fallos.append("§{0}: función desconocida «{1}»".format(n, r[0]))
             if r[0] == "nimitta" and (len(r) < 4 or r[3] not in CASOS):
@@ -83,6 +84,11 @@ def verificar(cap, textos):
             fallos.append("§{0}: marca mal formada en el ejemplo".format(n))
         if s.get("ejercicio") and MARCA.search(s["ejemplo"]):
             fallos.append("§{0}: un ejercicio no lleva el ejemplo marcado".format(n))
+        nota = s.get("nota", {})
+        if bool(nota.get("es", "").strip()) != bool(nota.get("en", "").strip()):
+            fallos.append("§{0}: la nota no está en las dos lenguas".format(n))
+        if s.get("respuesta") and not s.get("ejercicio"):
+            fallos.append("§{0}: respuesta sin ejercicio".format(n))
         if not nfc(s):
             fallos.append("§{0}: texto que no está en NFC".format(n))
     return fallos
@@ -99,10 +105,21 @@ def main():
             if s["n"] in textos:
                 s["sutta"] = textos[s["n"]]["sutta"]
         caps.append(cap)
+    indice = []
+    for c in meta["indice"]:
+        e = {"clave": c["clave"], "pali": c["pali"], "kandas": [], "desde": None, "hasta": None}
+        ruta = os.path.join(RAIZ, "kaccayana", c["md"] + ".md") if c["md"] else ""
+        if ruta and os.path.exists(ruta):
+            t, ks = leer_md(ruta)
+            e["desde"], e["hasta"] = min(t), max(t)
+            for i, (k, desde) in enumerate(ks):
+                hasta = ks[i + 1][1] - 1 if i + 1 < len(ks) else e["hasta"]
+                e["kandas"].append([k, desde, hasta])
+        indice.append(e)
     if not nfc(meta):
         fallos.append("meta.json: texto que no está en NFC")
     if fallos:
-        print("La tabla de la Visuddhāyuṃ NO cuadra; no se publica:")
+        print("El análisis de los suttas NO cuadra; no se publica:")
         for f in fallos[:25]:
             print("  ✗", f)
         return 1
@@ -112,7 +129,7 @@ def main():
         for s in cap["suttas"]:
             s["cap"] = cap["clave"]
             filas.append(s)
-    salida = {"meta": meta,
+    salida = {"meta": meta, "indice": indice,
               "capitulos": [{k: c[k] for k in ("clave", "pali", "desde", "hasta", "pdf", "paginas")} for c in caps],
               "filas": filas}
 
@@ -128,7 +145,7 @@ def main():
     open(DESTINO, "w", encoding="utf-8").write(html)
 
     ej = sum(1 for f in filas if f.get("ejercicio"))
-    print("Visuddhāyuṃ v{0} ({1}) · {2} aforismos · {3} ejercicios → {4}".format(
+    print("Análisis (Visuddhāyuṃ) v{0} ({1}) · {2} aforismos · {3} ejercicios → {4}".format(
         meta["version"], meta["estado"], len(filas), ej, os.path.relpath(DESTINO, RAIZ)))
     return 0
 
