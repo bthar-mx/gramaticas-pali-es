@@ -1,10 +1,10 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "fecha": "2026-10-03",
   "estado": "borrador",
   "nota_version": {
-    "es": "Sandhi-Kappa: todas las funciones y clases cotejadas con las imágenes; notas de cotejo con la clasificación del sitio en §1, §24 y §51.",
-    "en": "Sandhi-Kappa: all roles and classes checked against the images; notes comparing §1, §24 and §51 with the site classification."
+    "es": "Sandhi-Kappa: todas las funciones y clases cotejadas con las imágenes; notas de cotejo con la clasificación del sitio en §1, §24, §30 y §51.",
+    "en": "Sandhi-Kappa: all roles and classes checked against the images; notes comparing §1, §24, §30 and §51 with the site classification."
   },
   "capitulos": [
     "01-sandhi.json"
