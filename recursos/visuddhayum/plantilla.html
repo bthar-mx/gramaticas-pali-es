@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Visuddhāyuṃ · tabla del estudiante</title>
+<meta name="version" content="__VERSION__">
+<meta name="version-date" content="__VERSION_DATE__">
+<meta name="description" content="Cada sutta de Kaccāyana según la Visuddhāyuṃ: clase de sutta, anuvatti, kāriyī, kāriya y nimitta, y el ejemplo del libro con las letras marcadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&family=Padauk&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ola:#E7E3D6;--ola-2:#F0EDE4;--ink:#171612;--soot:#4E4839;--hair:#BFB7A0;
+  --haritala:#5C4008;--nila:#27414F;--rakta:#7E2E23;--hl:rgba(92,64,8,.16);
+  --serif:"Gentium Book Plus",Georgia,"Times New Roman",serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --mya:"Padauk","Myanmar Text","Noto Sans Myanmar",sans-serif;
+}
+:root[data-theme="dark"]{
+  --ola:#1A1917;--ola-2:#232220;--ink:#F4F1E8;--soot:#BDB5A2;--hair:#494438;
+  --haritala:#EFC14E;--nila:#B6D8EE;--rakta:#F09A88;--hl:rgba(239,193,78,.20)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.55;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%)}
+:root[data-theme="dark"] body{background-image:none}
+a{color:var(--nila)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--soot)}
+[hidden]{display:none!important}
+header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
+.marca-arbol{display:inline-block;width:26px;height:26px;background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+:root[data-theme="dark"] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
+.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
+:root[data-theme="dark"] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
+h1{font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:14px 0 0;letter-spacing:-.01em}
+.tag{margin:10px 0 0;max-width:70ch;color:var(--soot);font-size:16.5px;line-height:1.45}
+.vline{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.badge{display:inline-flex;gap:6px;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--hair);border-radius:2px;padding:4px 8px;color:var(--soot)}
+.badge.borr{border-color:var(--rakta);color:var(--rakta)}
+.cita{margin:18px 0 0;max-width:80ch;font-size:15px;line-height:1.5;border-left:2px solid var(--hair);padding-left:12px}
+.cita .my{font-family:var(--mya);font-size:14px}
+details.leyenda{margin-top:18px}
+details.leyenda summary{cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--soot)}
+.ley{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px 24px;margin:10px 0 0;font-size:14.5px}
+.ley dt{font-weight:700}.ley dd{margin:0 0 6px;color:var(--soot)}
+/* marcas del ejemplo */
+.k{font-weight:700;text-decoration:underline;text-decoration-color:var(--nila);text-underline-offset:3px}
+.n{font-weight:700;color:var(--rakta)}
+.r{font-weight:700;color:var(--haritala);background:var(--hl);border-radius:2px;padding:0 1px}
+.x{text-decoration:line-through;text-decoration-thickness:2px}
+.ed{font-family:var(--mono);font-size:10px;font-weight:600;border:1px dashed var(--soot);border-radius:2px;padding:0 4px;margin-left:4px;color:var(--soot);cursor:help;white-space:nowrap}
+.bar{position:sticky;top:0;z-index:20;background:var(--ola);border-bottom:1px solid var(--hair);padding:10px 0}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input[type=search]{flex:1 1 220px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);background:var(--ola-2);
+  border:1px solid var(--hair);border-radius:2px;padding:6px 10px}
+.filtros{display:flex;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.filtros button,.icon-btn{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  background:var(--ola-2);color:var(--soot);border:0;border-right:1px solid var(--hair);padding:7px 10px;cursor:pointer}
+.filtros button:last-child{border-right:0}
+.filtros button[aria-pressed=true]{background:var(--nila);color:var(--ola-2)}
+.icon-btn{border:1px solid var(--hair);border-radius:2px;font-size:13px;padding:5px 9px}
+.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
+table.vt{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0 40px}
+table.vt thead th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--soot);padding:8px;border-bottom:1px solid var(--soot)}
+table.vt td{padding:9px 8px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+td.sec a{font-family:var(--mono);font-size:12px;font-weight:700;text-decoration:none}
+td.su{font-style:italic;min-width:12ch}
+td.cl .my{font-family:var(--mya);font-size:13.5px;font-style:normal}
+.rol{display:block}.rol b{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--soot);margin-right:4px}
+.rol i{color:var(--soot)}
+.ejer{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--haritala);border:1px solid var(--haritala);border-radius:2px;padding:1px 5px;margin-bottom:4px}
+td.ej{white-space:nowrap}
+td.no{color:var(--soot);font-size:13.5px;max-width:34ch}
+td.pdf{font-family:var(--mono);font-size:11.5px;color:var(--soot);white-space:nowrap}
+.empty{padding:60px 0;text-align:center;color:var(--soot)}
+footer{border-top:1px solid var(--hair);padding:30px 0 60px;font-size:14.5px;color:var(--soot)}
+.aviso{max-width:72ch;border-left:2px solid var(--rakta);padding-left:10px}
+@media (max-width:760px){
+  table.vt,table.vt tbody,table.vt tr,table.vt td{display:block;width:auto}
+  table.vt thead{display:none}
+  table.vt tr{border-bottom:1px solid var(--soot);padding:8px 0}
+  table.vt td{border:0;padding:3px 0}
+  td.ej{white-space:normal}
+  td[data-h]::before{content:attr(data-h);display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--soot)}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="volver-sitio" href="../">← Recursos · Gramáticas Pāḷi</a>
+  <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
+  <h1>Visuddhāyuṃ · tabla del estudiante</h1>
+  <p class="tag">Cada sutta de Kaccāyana tal como lo analiza la <i>Visuddhāyuṃ</i>: la clase de sutta que le da el libro, las palabras que vienen de suttas anteriores (anuvatti), la función de cada palabra y el ejemplo del modelo de derivación (rup), con las letras marcadas.</p>
+  <div class="vline"><span class="badge borr">Borrador</span><span class="badge">v__VERSION__ · <time>__VERSION_DATE__</time></span></div>
+  <div class="cita" id="cita"></div>
+  <details class="leyenda" open>
+    <summary>Leyenda</summary>
+    <dl class="ley">
+      <div><dt>kāriyī (kārī)</dt><dd>Aquello a lo que se realiza cierto tipo de operación gramatical. En el ejemplo: <span class="k">subrayado</span>.</dd></div>
+      <div><dt>kāriya</dt><dd>La operación gramatical que hay que realizar. En el ejemplo, su resultado: <span class="r">resaltado</span>; lo elidido, <span class="x">tachado</span>.</dd></div>
+      <div><dt>nimitta</dt><dd>Causa. En el ejemplo: <span class="n">en rojo</span>. Hay dos clases: en la séptima inflexión (<i>sattamī-nimitta</i>) y en la quinta (<i>pañcamī-nimitta</i>).</dd></div>
+      <div><dt><span class="ed">7.ª</span> <span class="ed">5.ª</span></dt><dd>Inflexión del nimitta. <b>Añadido editorial del IEBH</b>, deducido del caso de la palabra; no es análisis del libro, que solo la nombra en §13.</dd></div>
+      <div><dt>saññā / saññī</dt><dd>En los suttas de definición: el nombre técnico y lo que recibe ese nombre.</dd></div>
+      <div><dt>visaya / visayī</dt><dd>Términos que usa el libro en los suttas de inserción (āgama) y de duplicación en lugar de kāriyī / kāriya.</dd></div>
+      <div><dt>[ … ]</dt><dd>Calificadores (<i>visesana</i>) de la palabra anterior.</dd></div>
+      <div><dt><span class="ejer">Ejercicio</span></dt><dd>El libro deja el análisis al estudiante: identifique usted kāriyī, kāriya y nimitta.</dd></div>
+    </dl>
+  </details>
+</div></header>
+
+<div class="bar"><div class="wrap">
+  <input type="search" id="q" aria-label="Buscar" placeholder="Buscar sutta, término o ejemplo">
+  <div class="filtros" id="f-cap" role="group" aria-label="Capítulo"></div>
+  <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
+  <span class="count" id="count"></span>
+</div></div>
+
+<main class="wrap">
+  <table class="vt">
+    <thead><tr><th>§</th><th>Sutta</th><th>Clase de sutta</th><th>Anuvatti</th><th>Funciones</th><th>Ejemplo</th><th>Notas</th><th>Fuente</th></tr></thead>
+    <tbody id="out"></tbody>
+  </table>
+  <div class="empty" id="empty" hidden><p>Ningún sutta coincide.</p></div>
+</main>
+
+<footer><div class="wrap">
+  <p class="aviso"><b>Borrador.</b> Las celdas proceden de la lectura del texto birmano (OCR de un escaneo, cotejado en parte con las imágenes). El § y el texto pāḷi del sutta siguen la traducción de este sitio (Nandisena); cuando la lectura del libro difiere, se indica en las notas. La columna «Fuente» da la página del PDF del escaneo (página impresa + 46).</p>
+  <p id="cita-pie"></p>
+  <p class="licencia"><span class="marca-lockup"></span>Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH) a partir de la obra citada. Copyright © 2026 IEBH.</p>
+</div></footer>
+
+<script>
+const D=/*__DATOS__*/{}/*__FIN__*/;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const MY=/[က-႟]/;
+const txt=s=>MY.test(s)?`<span class="my" lang="my">${esc(s)}</span>`:esc(s);
+const marcar=s=>esc(s).replace(/\{(kx|nx|k|n|r|x)\|([^{}|]+)\}/g,(m,t,v)=>`<span class="${t.split('').join(' ')}">${v}</span>`);
+const plano=s=>s.replace(/\{(?:kx|nx|k|n|r|x)\|([^{}|]+)\}/g,'$1');
+const CASO={'7':'7.ª','5':'5.ª','3':'3.ª','5+7':'5.ª + 7.ª'};
+const ED='Añadido editorial del IEBH: inflexión del nimitta, deducida del caso de la palabra. No es análisis del libro.';
+
+const c=D.meta.cita;
+document.getElementById('cita').innerHTML=`<b>${esc(c.autor)}</b>. <i>${esc(c.titulo)}</i> (<span class="my" lang="my">${esc(c.titulo_my)}</span>). ${esc(c.edicion)} ${esc(c.prefacio)}`;
+document.getElementById('cita-pie').innerHTML=`<b>Cita.</b> ${esc(c.autor)}, <i>${esc(c.titulo)}</i>. ${esc(c.edicion)} ${esc(c.paginas)}`;
+
+function roles(f){
+  if(!f.roles.length) return '—';
+  return f.roles.map(r=>{
+    const v=r[2]?` <i>[${esc(r[2])}]</i>`:'';
+    const caso=r[0]==='nimitta'&&r[3]?`<span class="ed" title="${ED}">${CASO[r[3]]||esc(r[3])}</span>`:'';
+    return `<span class="rol"><b>${esc(r[0])}:</b>${esc(r[1])}${v}${caso}</span>`}).join('');
+}
+function fila(f){
+  const url='../../kaccayana/'+f.cap+'/#s'+f.n;
+  const notas=[f.clase_es,f.nota].filter(Boolean).map(esc).join(' ');
+  const ej=f.ejemplo?marcar(f.ejemplo):'—';
+  return `<tr id="s${f.n}">
+<td class="sec" data-h="§"><a href="${url}" title="Abrir el aforismo y su traducción">§${f.n}</a></td>
+<td class="su" data-h="Sutta">${esc(f.sutta||'')}</td>
+<td class="cl" data-h="Clase de sutta">${f.clase?txt(f.clase):'—'}</td>
+<td data-h="Anuvatti">${f.anuvatti?esc(f.anuvatti):'—'}</td>
+<td data-h="Funciones">${f.ejercicio?'<span class="ejer">Ejercicio</span>':''}${roles(f)}</td>
+<td class="ej" data-h="Ejemplo">${ej}</td>
+<td class="no" data-h="Notas">${notas||'—'}</td>
+<td class="pdf" data-h="Fuente">PDF ${f.pdf}</td></tr>`;
+}
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+D.filas.forEach(f=>{f._q=norm(['§'+f.n,f.sutta,f.clase,f.clase_es,f.anuvatti,f.roles.map(r=>r.join(' ')).join(' '),plano(f.ejemplo),f.nota,f.ejercicio?'ejercicio':''].join(' '))});
+
+const fc=document.getElementById('f-cap');
+fc.innerHTML='<button data-v="all" aria-pressed="true">Todos</button>'+D.capitulos.map(k=>`<button data-v="${k.clave}" aria-pressed="false">${esc(k.pali)}</button>`).join('');
+let cap='all';
+fc.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cap=b.dataset.v;
+  fc.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));pintar()});
+const q=document.getElementById('q');q.addEventListener('input',pintar);
+
+function pintar(){
+  const t=norm(q.value.trim());
+  const F=D.filas.filter(f=>(cap==='all'||f.cap===cap)&&(!t||f._q.includes(t)));
+  document.getElementById('out').innerHTML=F.map(fila).join('');
+  document.getElementById('empty').hidden=F.length>0;
+  document.getElementById('count').textContent=F.length+' / '+D.filas.length;
+}
+pintar();
+
+/* tema, compartido con el sitio (pali_dark) */
+const root=document.documentElement;
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const saved=store.get('pali_dark');
+if(saved==='1'||(saved===null&&matchMedia('(prefers-color-scheme: dark)').matches)) root.dataset.theme='dark';
+document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';store.set('pali_dark',root.dataset.theme==='dark'?'1':'0')};
+</script>
+</body>
+</html>
