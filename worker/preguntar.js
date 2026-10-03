@@ -33,8 +33,8 @@
 
    ---- CUÁNTO: 20 preguntas por persona y día (UTC) ----
 
-   El contador vive en el KV PREGUNTAS (o, mientras no esté enlazado, en el de
-   la cola) bajo el prefijo PREFIJO_PREGUNTAS, que /api/cola excluye. Sólo
+   El contador vive en el KV PREGUNTAS (sólo si faltara, en el de la cola)
+   bajo el prefijo PREFIJO_PREGUNTAS, que /api/cola excluye para ese caso. Sólo
    cuenta lo que se respondió: un fallo de la API no gasta pregunta. KV no es
    atómico, así que dos preguntas a la vez podrían contar una; para dos
    personas no merece un Durable Object.
@@ -101,6 +101,9 @@ async function datos(env, url) {
   return DATOS;
 }
 
+/* PREGUNTAS, enlazado en wrangler.jsonc desde el 2026-10-03. VEREDICTOS sólo
+   si PREGUNTAS faltara; con PREGUNTAS presente, en VEREDICTOS no se escribe
+   nada y el filtro de /api/cola no tiene qué filtrar. */
 function kv(env) {
   return env.PREGUNTAS || env.VEREDICTOS || null;
 }

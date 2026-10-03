@@ -192,6 +192,12 @@ async function main() {
     comprobar("con PREGUNTAS enlazado, se escribe ahí y no en VEREDICTOS",
       e.PREGUNTAS.datos.size === 2 && e.VEREDICTOS.datos.size === 0,
       e.PREGUNTAS.datos.size + " / " + e.VEREDICTOS.datos.size);
+    const conf = JSON.parse(readFileSync(new URL("../wrangler.jsonc", import.meta.url), "utf-8")
+      .replace(/^\s*\/\/.*$/gm, ""));
+    comprobar("wrangler.jsonc enlaza PREGUNTAS (producción)",
+      (conf.kv_namespaces || []).some((k) => k.binding === "PREGUNTAS" && /^[0-9a-f]{32}$/.test(k.id)));
+    comprobar("y no trae valores de secretos",
+      !conf.vars && !/sk-ant|ANTHROPIC_API_KEY"\s*:/.test(JSON.stringify(conf)));
   }
   comprobar("§ inexistente → 404", (await pedir(env(), bueno, { ...P, sutta: 9999 })).status === 404);
   comprobar("pregunta vacía → 400", (await pedir(env(), bueno, { ...P, pregunta: "  " })).status === 400);
