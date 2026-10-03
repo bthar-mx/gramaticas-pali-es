@@ -18,7 +18,10 @@ Junta:
   kaccayana/0N-*.md                       el texto pāḷi de cada aforismo
   recursos/analisis/plantilla.html     el maquetado y la lógica
 
-y escribe site/recursos/analisis/index.html.
+y escribe site/recursos/analisis/index.html, más preguntar.json al lado: lo
+que el botón «Preguntar» le pasa al modelo (v. worker/index.js) — cada fila con
+lo que la página enseña de ella y, del glosario, sólo las entradas que la fila
+usa y sólo los campos del globo. La «fuente» de cada término no sale nunca.
 
 Antes de escribir verifica que cada capítulo tenga todos sus aforismos, sin
 huecos ni sobrantes; que la página del PDF esté dentro del capítulo y no
@@ -40,10 +43,15 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIR = os.path.join(RAIZ, "recursos", "analisis")
 PLANTILLA = os.path.join(DIR, "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "analisis", "index.html")
+PREGUNTAR = os.path.join(RAIZ, "site", "recursos", "analisis", "preguntar.json")
 
 ROLES = {"kāriyī", "kāriya", "nimitta", "saññā", "saññī", "visaya", "visayī"}
 CASOS = {"7", "5", "3", "5+7"}
 MARCA = re.compile(r"\{(k|n|r|x|kx|nx)\|([^{}|]+)\}")
+# Las funciones de la columna llevan globo por su nombre (RK de la plantilla).
+RK = {"kāriyī": "kariyi", "kāriya": "kariya", "nimitta": "nimitta", "saññā": "sannaroles",
+      "saññī": "sannaroles", "visaya": "visaya", "visayī": "visaya"}
+CITA = re.compile(r"«[^»]*»|“[^”]*”")
 
 
 def nfc(x):
@@ -92,6 +100,45 @@ def verificar(cap, textos):
         if not nfc(s):
             fallos.append("§{0}: texto que no está en NFC".format(n))
     return fallos
+
+
+def terminos_de_fila(s, glosario, gre, gfk):
+    """Las entradas del glosario que la fila enseña en globo, con el mismo
+    criterio que glosar() en la plantilla: clase, notas y funciones; nada
+    dentro de una cita pāḷi de dos palabras o más; respetando «no_en»."""
+    usados = {RK[r[0]] for r in s["roles"] + s.get("respuesta", []) if r[0] in RK}
+    for texto in [s.get("clase", "")] + [s.get("nota", {}).get(l, "") for l in ("es", "en")]:
+        citas = [m.span() for m in CITA.finditer(texto) if re.search(r"\s", m.group().strip())]
+        for m in gre.finditer(texto):
+            k = gfk.get(m.group(1).lower())
+            if k and not any(a <= m.start() < b for a, b in citas) \
+                    and s["n"] not in glosario[k].get("no_en", []):
+                usados.add(k)
+    return sorted(k for k in usados if k in glosario)
+
+
+def datos_preguntar(meta, filas, glosario):
+    """preguntar.json: el contexto del botón «Preguntar», fila por fila."""
+    gk = {t["clave"]: t for t in glosario}
+    formas = sorted(((f, t["clave"]) for t in glosario for f in t["formas"]), key=lambda x: -len(x[0]))
+    gfk = {f.lower(): k for f, k in formas}
+    gre = re.compile(r"(?<![^\W\d_])(" + "|".join(re.escape(f) for f, _ in formas) + r")(?![^\W\d_])",
+                     re.I) if formas else None
+    out = {"version": meta["version"], "filas": {}, "terminos": {}}
+    for s in filas:
+        usados = terminos_de_fila(s, gk, gre, gfk) if gre else []
+        out["filas"][str(s["n"])] = {
+            "cap": s["cap"], "n": s["n"], "sutta": s.get("sutta", ""), "tr": s.get("tr", {}),
+            "clase": s["clase"], "anuvatti": s["anuvatti"], "roles": s["roles"],
+            "ejercicio": bool(s.get("ejercicio")), "respuesta": s.get("respuesta", []),
+            "ejemplo": s["ejemplo"], "nota": s.get("nota", {}), "pdf": s["pdf"], "terminos": usados}
+        for k in usados:
+            t = gk[k]
+            e = t.get("ejemplo")
+            out["terminos"][k] = {"termino": t["termino"], "def": t["def"],
+                                  "ejemplo": {"n": e["n"], "sutta": e.get("sutta", ""),
+                                              "nota": e.get("nota", {}), "tr": e.get("tr", {})} if e else None}
+    return out
 
 
 def main():
@@ -155,6 +202,9 @@ def main():
     html = html.replace("__VERSION_DATE__", meta["fecha"]).replace("__VERSION__", meta["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
     open(DESTINO, "w", encoding="utf-8").write(html)
+    with open(PREGUNTAR, "w", encoding="utf-8") as f:
+        json.dump(datos_preguntar(meta, filas, glosario), f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
 
     ej = sum(1 for f in filas if f.get("ejercicio"))
     print("Análisis (Visuddhāyuṃ) v{0} ({1}) · {2} aforismos · {3} ejercicios → {4}".format(
