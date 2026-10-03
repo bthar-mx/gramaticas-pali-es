@@ -129,7 +129,13 @@ def main():
         for s in cap["suttas"]:
             s["cap"] = cap["clave"]
             filas.append(s)
-    salida = {"meta": meta, "indice": indice,
+    try:
+        import terminos
+        glosario = terminos.cargar(RAIZ)
+    except ValueError as err:
+        print("El glosario de los globos NO cuadra; no se publica:", err)
+        return 1
+    salida = {"meta": meta, "indice": indice, "terminos": glosario,
               "capitulos": [{k: c[k] for k in ("clave", "pali", "desde", "hasta", "pdf", "paginas")} for c in caps],
               "filas": filas}
 

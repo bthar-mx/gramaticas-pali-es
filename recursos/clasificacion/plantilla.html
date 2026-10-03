@@ -219,6 +219,11 @@ a.sref:focus-visible,.chip[data-tip]:focus-visible{outline:2px solid var(--harit
 #tip .tp{font-style:italic;font-weight:700;margin:0;font-size:16.5px}
 #tip .te{margin:5px 0 0;color:var(--soot);font-size:15px}
 #tip .tk{font-family:var(--mono);font-size:10.5px;color:var(--haritala);margin:8px 0 0;letter-spacing:.06em;text-transform:uppercase}
+.gl{border-bottom:1px dotted var(--nila);cursor:help}
+.gl:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+#tip.glosa{pointer-events:auto}
+#tip .gd{margin:0;font-size:15px}
+#tip .te a{color:var(--nila)}
 #tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
 #tip.llano p{margin:0}
 #tip.llano i{font-weight:700}
@@ -421,6 +426,42 @@ const vidhis=e=>e.vidhi?e.vidhi.split('+').map(s=>s.trim()):[];
 const tipoChip=(t,tip=true)=>`<span class="chip t-${t}"${tip?` tabindex="0" data-tip-h="${esc(D.tipos[t].pali)}" data-tip="${esc(D.tipos[t][lang])}"`:''}>${esc(D.tipos[t].pali)}</span>`;
 const vChip=(v,tip=true)=>`<span class="chip v${D.vidhis[v].fuera?' fuera':''}"${tip?` tabindex="0" data-tip-h="${esc(v)}" data-tip="${esc(D.vidhis[v][lang])}"`:''}>${esc(v)}</span>`;
 const url=(e)=>(lang==='en'?'../../en/kaccayana/':'../../kaccayana/')+e.cap+'/#s'+e.n;
+/* ---------- glosario de los globos (recursos/terminos/terminos.json) ----------
+   Primera aparición de cada término por celda; el globo da la definición y un
+   ejemplo con su § y la primera línea de la traducción publicada. */
+const GL=D.terminos||[],GK={},GF=[];
+GL.forEach(t=>{GK[t.clave]=t;t.formas.forEach(f=>GF.push([f,t.clave]))});
+GF.sort((a,b)=>b[0].length-a[0].length);
+const GFK={};GF.forEach(([f,k])=>GFK[f.toLowerCase()]=k);
+const GRE=GF.length?new RegExp('(?<![\\p{L}\\p{M}])('+GF.map(([f])=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\p{L}\\p{M}])','giu'):null;
+const gClave=x=>GFK[String(x||'').toLowerCase()]||null;
+function glosar(el){
+  if(!GRE||!el)return;
+  const vistos=new Set();el.querySelectorAll('[data-g]').forEach(s=>vistos.add(s.dataset.g));
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,.chip,.ed,.ejer,.my,[data-g],[data-sutta]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  const nodos=[];while(w.nextNode())nodos.push(w.currentNode);
+  nodos.forEach(n=>{
+    const t=n.nodeValue;let m,frag=null,ult=0;GRE.lastIndex=0;
+    while((m=GRE.exec(t))){
+      const k=GFK[m[1].toLowerCase()];if(!k||vistos.has(k))continue;vistos.add(k);
+      frag=frag||document.createDocumentFragment();
+      frag.appendChild(document.createTextNode(t.slice(ult,m.index)));
+      const s=document.createElement('span');s.className='gl';s.dataset.g=k;s.tabIndex=0;s.textContent=m[1];
+      frag.appendChild(s);ult=m.index+m[1].length;
+    }
+    if(frag){frag.appendChild(document.createTextNode(t.slice(ult)));n.parentNode.replaceChild(frag,n)}
+  });
+}
+function glosaHTML(k){
+  const t=GK[k];if(!t)return '';const e=t.ejemplo;
+  const aqui=document.getElementById('s'+e.n);
+  const href=aqui?'#s'+e.n:(lang==='en'?'../../en/kaccayana/':'../../kaccayana/')+e.cap+'/#s'+e.n;
+  return `<span class="tn">${esc(t.termino)}</span><p class="gd">${esc(t.def[lang])}</p>`+
+    `<p class="te">${lang==='en'?'Example':'Ejemplo'}: <a href="${href}">§${e.n}</a> <i>${esc(e.sutta||'')}</i>`+
+    `${e.nota?' — '+esc(e.nota[lang]):''}${e.tr&&e.tr[lang]?` · «${esc(e.tr[lang])}»`:''}</p>`;
+}
+/* los chips con entrada en el glosario abren su globo */
+function chipsGlosa(r){r.querySelectorAll('.chip[data-tip-h]').forEach(c=>{const g=gClave(c.dataset.tipH);if(g){c.dataset.g=g;c.removeAttribute('data-tip');c.removeAttribute('data-tip-h')}})}
 const det=n=>{const m=/(Determinación|Determination):\s*([^]*)$/.exec(n);return m?m:null};
 
 /* textos fijos */
@@ -489,6 +530,7 @@ function render(){
     sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
+  document.querySelectorAll('#out tr.r td.op, #out tr.r td.in, #out .detalle p').forEach(glosar);chipsGlosa(document.getElementById('out'));
   document.querySelectorAll('#sb-list details').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
@@ -587,10 +629,12 @@ function placeTip(el){const r=el.getBoundingClientRect();tip.style.visibility='h
   tip.style.left=x+'px';tip.style.top=y+'px';tip.style.visibility=''}
 function pintarTip(el,html,llano){if(!html)return;tip.classList.toggle('llano',!!llano);tip.innerHTML=html;tip.setAttribute('aria-hidden','false');placeTip(el);tipDe=el}
 function hideTip(){clearTimeout(tipT);tip.classList.remove('on');tip.setAttribute('aria-hidden','true');tipDe=null}
-const SEL_TIP='a[data-sutta], [data-tip]';
-function abrirTip(el){if(el.matches('a[data-sutta]'))pintarTip(el,tipHTML(+el.dataset.sutta));else pintarTip(el,llanoHTML(el),true)}
+const SEL_TIP='a[data-sutta], [data-tip], [data-g]';
+let ocultarT=null;const programarOcultar=()=>{clearTimeout(ocultarT);ocultarT=setTimeout(hideTip,250)};
+tip.addEventListener('mouseenter',()=>clearTimeout(ocultarT));tip.addEventListener('mouseleave',()=>{if(tip.classList.contains('glosa'))programarOcultar()});
+function abrirTip(el){clearTimeout(ocultarT);const g=el.matches('[data-g]');tip.classList.toggle('glosa',g);if(g)pintarTip(el,glosaHTML(el.dataset.g));else if(el.matches('a[data-sutta]'))pintarTip(el,tipHTML(+el.dataset.sutta));else pintarTip(el,llanoHTML(el),true)}
 document.addEventListener('mouseover',e=>{if(!conRaton())return;const a=e.target.closest(SEL_TIP);if(!a)return;clearTimeout(tipT);tipT=setTimeout(()=>abrirTip(a),110)});
-document.addEventListener('mouseout',e=>{if(conRaton()&&e.target.closest(SEL_TIP))hideTip()});
+document.addEventListener('mouseout',e=>{if(conRaton()&&e.target.closest(SEL_TIP)){clearTimeout(tipT);if(tip.classList.contains('glosa'))programarOcultar();else hideTip()}});
 /* El foco sólo abre el globo cuando viene del teclado: en táctil, tocar un
    enlace también lo enfoca, y el segundo toque ya no llegaría a abrirlo. */
 document.addEventListener('focusin',e=>{const a=e.target.closest(SEL_TIP);if(a&&a.matches(':focus-visible'))abrirTip(a)});
@@ -602,7 +646,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
 document.addEventListener('click',e=>{
   const a=e.target.closest('a[data-sutta]');
   if(a){if(conRaton())return;if(tipDe===a){hideTip();return}e.preventDefault();abrirTip(a);return}
-  const otro=e.target.closest('.chip[data-tip], #vbadge');
+  const otro=e.target.closest('.chip[data-tip], [data-g], #vbadge');
   if(otro){if(conRaton())return;if(tipDe===otro)hideTip();else abrirTip(otro);return}
   if(!e.target.closest('#tip'))hideTip();
 });

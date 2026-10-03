@@ -167,6 +167,12 @@ def main():
               for c in d["capitulos"]}
     salida = {k: d[k] for k in ("version", "fecha", "estado", "nota_version", "capitulos", "tipos", "vidhis")}
     salida.update(filas=filas, kandas=kandas)
+    try:
+        import terminos
+        salida["terminos"] = terminos.cargar(RAIZ)
+    except ValueError as err:
+        print("El glosario de los globos NO cuadra; no se publica:", err)
+        return 1
 
     pl = open(PLANTILLA, encoding="utf-8").read()
     m = re.search(r'/\*__DATOS__\*/.*?/\*__FIN__\*/', pl, re.S)
