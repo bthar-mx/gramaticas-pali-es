@@ -79,7 +79,8 @@ async function main() {
       llamadas.push({ headers: o.headers, body: JSON.parse(o.body) });
       if (apiStatus !== 200) return new Response("error de prueba", { status: apiStatus });
       return Response.json({ model: "claude-opus-5-5", stop_reason: "end_turn",
-        content: [{ type: "thinking", thinking: "" }, { type: "text", text: "Respuesta de prueba." }] });
+        content: [{ type: "thinking", thinking: "" }, { type: "text", text: "Respuesta de prueba." }],
+        usage: { input_tokens: 300, output_tokens: 120, cache_creation_input_tokens: 0, cache_read_input_tokens: 1400 } });
     }
     throw new Error("URL inesperada: " + u);
   };
@@ -122,7 +123,17 @@ async function main() {
 
   {
     const e = env(); llamadas = []; apiStatus = 200;
+    const registro = [], logOriginal = console.log;
+    console.log = (...a) => registro.push(a.join(" "));
     const r = await pedir(e, bueno, P);
+    console.log = logOriginal;
+    const uso = registro.map((l) => { try { return JSON.parse(l); } catch (x) { return null; } })
+      .find((o) => o && o.evento === "preguntar.uso");
+    comprobar("registra el uso de la caché (creación y lectura)",
+      uso && uso.cache_read_input_tokens === 1400 && uso.cache_creation_input_tokens === 0
+        && uso.input_tokens === 300 && uso.output_tokens === 120, JSON.stringify(registro));
+    comprobar("y en ese registro no hay correo ni pregunta",
+      !registro.join(" ").toLowerCase().includes("lector@ejemplo.org") && !registro.join(" ").includes(P.pregunta));
     const x = await r.json();
     comprobar("POST bueno → 200 con la respuesta", r.status === 200 && x.respuesta === "Respuesta de prueba.",
       r.status + " " + JSON.stringify(x));
@@ -145,7 +156,11 @@ async function main() {
     comprobar("la instrucción llama «aṅga» al campo y no da su procedencia",
       sis.includes("«aṅga» (campo anuvatti)") && sis.includes("nunca «anuvatti»") && !sis.includes("vienen de suttas anteriores"));
     comprobar("la instrucción trae el ejemplo de §13 (nimitta «sarasmā», no «asarūpā»)",
-      sis.includes("el nimitta es «sarasmā», calificado por «asarūpā»"));
+      sis.includes("el nimitta es «sarasmā», calificado por «asarūpā»") && sis.includes("no digas lo que una palabra NO es"));
+    comprobar("la instrucción pide «usted» y ejemplos sin marcas",
+      sis.includes("«usted», nunca de «tú»") && sis.includes("nunca muestres las marcas"));
+    comprobar("va el ejemplo llano junto al marcado",
+      u.includes('"ejemplo_llano":"ekamidha + ahaṃ → ekamidāhaṃ"') && u.includes("ekami{k|dh}"), u.slice(0, 400));
     comprobar("«No lo sé» termina ahí; sin ofrecer más ayuda",
       sis.includes("TERMINA ahí") && sis.includes("no ofrezcas más ayuda"));
     comprobar("sólo § de otro sutta si está en el material; nada de «el libro dice» sin datos",
