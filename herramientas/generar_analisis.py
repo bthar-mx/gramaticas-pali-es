@@ -10,7 +10,7 @@ Junta:
 
   recursos/analisis/meta.json          versión, estado y cita del libro
   recursos/analisis/datos/NN-*.json    un archivo por capítulo: clase de
-                                          sutta según el libro, anuvatti,
+                                          sutta según el libro, aṅga,
                                           funciones (kāriyī / kāriya /
                                           nimitta, saññā / saññī, visaya /
                                           visayī), ejemplo marcado, notas y
@@ -188,7 +188,12 @@ def main():
     except ValueError as err:
         print("El glosario de los globos NO cuadra; no se publica:", err)
         return 1
-    salida = {"meta": meta, "indice": indice, "terminos": glosario,
+    # a la página, sólo los campos que enseña el globo, como en
+    # /recursos/comentarios/: la «fuente» de cada entrada (que puede nombrar
+    # docs/fuentes/) y la marca «revisar» no viajan
+    globos = [{k: t[k] for k in ("clave", "termino", "formas", "def", "ejemplo", "no_en") if k in t}
+              for t in glosario]
+    salida = {"meta": meta, "indice": indice, "terminos": globos,
               "capitulos": [{k: c[k] for k in ("clave", "pali", "desde", "hasta", "pdf", "paginas")} for c in caps],
               "filas": filas}
 
