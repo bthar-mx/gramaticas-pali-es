@@ -615,14 +615,14 @@
     "aṅga"
    ],
    "def": {
-    "es": "Miembro, parte. La Visuddhāyuṃ llama aṅga a cada palabra que el sutta necesita, incluidas las que vienen por anuvatti, y abre la explicación de cada sutta contándolas.",
-    "en": "Member, part. The Visuddhāyuṃ calls each word a sutta needs an aṅga, including those carried over by anuvatti, and opens each explanation by listing them."
+    "es": "Miembro, parte. La Visuddhāyuṃ abre la explicación (ခ) de cada sutta con la lista «aṅga N»: las palabras que cuenta como aṅga del sutta, sean del propio sutta o traídas de suttas anteriores (anuvatti). La columna «Aṅga» de la tabla copia esa lista tal como la da el libro.",
+    "en": "Member, part. The Visuddhāyuṃ opens the explanation (ခ) of each sutta with the list «aṅga N»: the words it counts as the sutta's aṅga, whether from the sutta itself or carried over from earlier suttas (anuvatti). The table's «Aṅga» column copies that list as the book gives it."
    },
    "ejemplo": {
     "n": 14,
     "cap": "sandhi"
    },
-   "fuente": "Redacción IEBH. Visuddhāyuṃ, apartado (ခ) de cada sutta (p. ej. §14, PDF 67).",
+   "fuente": "Redacción IEBH (decisión de Angel, 2026-10-03). Visuddhāyuṃ, apartado (ခ): p. ej. §14 (PDF 67); aṅga del propio sutta en §65, §67, §68, §70 (PDF 123–126).",
    "revisar": true
   },
   {
@@ -2074,6 +2074,112 @@
     "en": "A lexicon (kosa) of one-syllable words (ekakkhara), cited by the Visuddhāyuṃ under §31."
    },
    "fuente": "Visuddhāyuṃ, §31 (PDF 90). La descripción es la del título; autor y fecha: no encontrados en las fuentes del proyecto. Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "antaranga",
+   "termino": "antaraṅga",
+   "formas": [
+    "antaraṅga",
+    "antaraṅga-vidhi"
+   ],
+   "def": {
+    "es": "«Interno». Rótulo que la Visuddhāyuṃ da a muchas vidhis de Nāma (antaraṅga-vidhi). En la tradición gramatical, operación cuyas condiciones están dentro de la forma o más cerca de ella; prevalece sobre la bāhiraṅga.",
+    "en": "“Internal”. Label the Visuddhāyuṃ gives to many Nāma vidhis (antaraṅga-vidhi). In the grammatical tradition, an operation whose conditions lie within, or nearer to, the form; it prevails over a bāhiraṅga one."
+   },
+   "ejemplo": {
+    "n": 66,
+    "cap": "nama"
+   },
+   "fuente": "Rótulo: Visuddhāyuṃ §66 (PDF 124) y otros. Definición: borrador de Claude, no tomada del libro.",
+   "revisar": true
+  },
+  {
+   "clave": "bahiranga",
+   "termino": "bāhiraṅga",
+   "formas": [
+    "bāhiraṅga",
+    "bāhiraṅga-vidhi"
+   ],
+   "def": {
+    "es": "«Externo». Rótulo que la Visuddhāyuṃ da a muchas vidhis de Nāma (bāhiraṅga-vidhi). En la tradición gramatical, operación cuyas condiciones están fuera de la forma o más lejos de ella; cede ante la antaraṅga.",
+    "en": "“External”. Label the Visuddhāyuṃ gives to many Nāma vidhis (bāhiraṅga-vidhi). In the grammatical tradition, an operation whose conditions lie outside, or further from, the form; it yields to an antaraṅga one."
+   },
+   "ejemplo": {
+    "n": 68,
+    "cap": "nama"
+   },
+   "fuente": "Rótulo: Visuddhāyuṃ §68, «ဗဟိရင်္ဂဝိဓိသုတ်တည်း» (PDF 125). Definición: borrador de Claude, no tomada del libro.",
+   "revisar": true
+  },
+  {
+   "clave": "ubhayanga",
+   "termino": "ubhayaṅga",
+   "formas": [
+    "ubhayaṅga"
+   ],
+   "def": {
+    "es": "«De ambos lados». Sutta con una operación antaraṅga y otra bāhiraṅga; en §83 la Visuddhāyuṃ: la elisión es antaraṅga y la pakati, bāhiraṅga.",
+    "en": "“Of both sides”. A sutta with one antaraṅga and one bāhiraṅga operation; at §83 the Visuddhāyuṃ says the elision is antaraṅga and the pakati bāhiraṅga."
+   },
+   "ejemplo": {
+    "n": 83,
+    "cap": "nama"
+   },
+   "fuente": "Visuddhāyuṃ §83 (PDF 133).",
+   "revisar": true
+  },
+  {
+   "clave": "sihavikkanta",
+   "termino": "sīhavikkanta-adhikāra",
+   "formas": [
+    "sīhavikkanta-adhikāra",
+    "sīhavikkanta"
+   ],
+   "def": {
+    "es": "Adhikāra «del paso del león»: según la Visuddhāyuṃ, rige toda la obra (§52). Compárese sīhagatika.",
+    "en": "Adhikāra “of the lion's stride”: according to the Visuddhāyuṃ it governs the whole work (§52). Compare sīhagatika."
+   },
+   "ejemplo": {
+    "n": 52,
+    "cap": "nama"
+   },
+   "fuente": "Visuddhāyuṃ §52 (PDF 114).",
+   "revisar": true
+  },
+  {
+   "clave": "upaparibhasa",
+   "termino": "upaparibhāsā",
+   "formas": [
+    "upaparibhāsā",
+    "vidhyaṅga-upaparibhāsā"
+   ],
+   "def": {
+    "es": "Clase que la Visuddhāyuṃ da a §56 (vidhyaṅga-upaparibhāsā). Sentido exacto por confirmar; en §1 el libro distingue la upari-bhāsā, que impide, de la paribhāsā, que no impide.",
+    "en": "Class the Visuddhāyuṃ gives to §56 (vidhyaṅga-upaparibhāsā). Exact sense to be confirmed; at §1 the book distinguishes upari-bhāsā, which blocks, from paribhāsā, which does not."
+   },
+   "ejemplo": {
+    "n": 56,
+    "cap": "nama"
+   },
+   "fuente": "Visuddhāyuṃ §56 (PDF 118) y §1 (PDF 52).",
+   "revisar": true
+  },
+  {
+   "clave": "sampasarana",
+   "termino": "sampasāraṇa",
+   "formas": [
+    "sampasāraṇa"
+   ],
+   "def": {
+    "es": "«Expansión»: se restituye la forma plena de una palabra contraída. En §95, según la Visuddhāyuṃ, el sutta expande la palabra contraída agni del sánscrito: aggi → aggini.",
+    "en": "“Expansion”: the full form of a contracted word is restored. At §95, according to the Visuddhāyuṃ, the sutta expands the contracted Sanskrit word agni: aggi → aggini."
+   },
+   "ejemplo": {
+    "n": 95,
+    "cap": "nama"
+   },
+   "fuente": "Visuddhāyuṃ §95, «သမ္ပသာရဏ(ပြန်ဆန့်)» (PDF 140).",
    "revisar": true
   }
  ],
