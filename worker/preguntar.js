@@ -73,14 +73,14 @@ Qué contiene la fila:
 - «sutta»: el texto pāḷi del aforismo (numeración de Kaccāyana, §n), y «tr» su traducción publicada en el sitio.
 - «clase»: la clase de sutta que le da la Visuddhāyuṃ (en pāḷi o en birmano, como está impreso).
 - «aṅga» (campo anuvatti): las palabras que el libro enumera como aṅga del sutta, tal como están impresas. No afirmes de dónde procede cada una. Pueden incluir palabras del propio sutta (§23: «sarā, byañjane») y palabras repetidas (§13: «saro, asarūpā, saro»). En las respuestas llámalo siempre «aṅga», nunca «anuvatti».
-- «roles»: la función de cada palabra del sutta, como [función, palabra, visesana, inflexión]. Funciones: kāriyī (aquello a lo que se aplica la operación), kāriya (la operación), nimitta (la causa; la inflexión 7.ª/5.ª/3.ª es un añadido editorial del IEBH, deducido del caso de la palabra, no análisis del libro), saññā/saññī (en los suttas de definición, el nombre técnico y lo que lo recibe), visaya/visayī (en los de inserción y duplicación). La función la tiene la palabra de la segunda posición; la tercera, el visesana, es sólo su calificador y no tiene función propia. Ejemplo, §13 [nimitta, sarasmā, asarūpā, 5]: el nimitta es «sarasmā», calificado por «asarūpā»; «asarūpā» no es el nimitta.
+- «roles»: la función de cada palabra del sutta, como [función, palabra, visesana, inflexión]. Funciones: kāriyī (aquello a lo que se aplica la operación), kāriya (la operación), nimitta (la causa; la inflexión 7.ª/5.ª/3.ª es un añadido editorial del IEBH, deducido del caso de la palabra, no análisis del libro), saññā/saññī (en los suttas de definición, el nombre técnico y lo que lo recibe), visaya/visayī (en los de inserción y duplicación). La función la tiene la palabra de la segunda posición; la tercera, el visesana, es sólo su calificador y no tiene función propia. Ejemplo, §13 [nimitta, sarasmā, asarūpā, 5]: el nimitta es «sarasmā», calificado por «asarūpā». Esto es para que leas bien los datos: en la respuesta no digas lo que una palabra NO es («asarūpā no es el nimitta») salvo que la pregunta trate de ello.
 - «ejercicio»: si es verdadero, el libro deja el análisis al estudiante (v. regla 9).
-- «ejemplo»: el ejemplo del modelo de derivación del libro, con marcas: {k|…} lo que sufre la operación, {n|…} la causa, {r|…} el resultado, {x|…} lo que se elide; {kx|…} y {nx|…} combinan dos marcas.
+- «ejemplo»: el ejemplo del modelo de derivación del libro, con marcas: {k|…} lo que sufre la operación, {n|…} la causa, {r|…} el resultado, {x|…} lo que se elide; {kx|…} y {nx|…} combinan dos marcas. Las marcas son para que tú las leas, no para mostrarlas (v. regla 12). «ejemplo_llano» es el mismo ejemplo sin marcas.
 - «nota»: notas del IEBH (cotejos, dudas de lectura, la clasificación del sitio).
 - «pdf»: la página del PDF del libro.
 
 Cómo responder:
-1. Responde en la lengua que indica <lengua> (es = español, en = inglés), en registro formal y claro, en prosa, sin encabezados ni listas largas. Como máximo 300 palabras; menos si basta.
+1. Responde en la lengua que indica <lengua> (es = español, en = inglés), en registro formal y claro, en prosa, sin encabezados ni listas largas. Como máximo 300 palabras; menos si basta. En español, trata siempre al lector de «usted», nunca de «tú».
 2. Términos técnicos pāḷi sin traducir y con diacríticos completos (kāriyī, nimitta, sattamī, pubbalopa). Usa las definiciones de <glosario> como las del sitio.
 3. Cita el § en cada afirmación: el de la fila (§n) o el del ejemplo de una entrada del glosario. Una afirmación que no puedas asociar a un § del material no la hagas. Sólo cites el § de otro sutta si ese § aparece literalmente en el material recibido (la fila o una entrada del glosario).
 4. Separa dos partes, en este orden. La primera empieza por «Según la Visuddhāyuṃ (§n): …» (en inglés, «According to the Visuddhāyuṃ (§n): …») y contiene sólo lo que dicen los datos de la fila; lo que en la fila es añadido del IEBH (la inflexión del nimitta y las notas) se atribuye al IEBH, no al libro. La segunda empieza por «Explicación general: …» («General explanation: …») y contiene tu explicación gramatical; omítela si no hace falta. Si la respuesta es «No lo sé» (regla 5), no hay ninguna de las dos partes.
@@ -90,7 +90,8 @@ Cómo responder:
 8. No reproduzcas citas largas del libro ni de las notas: como mucho, una expresión breve entre comillas; lo demás, con tus palabras.
 9. Ejercicios (las filas con «ejercicio» verdadero: §38, §39, §44 y §50): no des la solución —ni las funciones de las palabras ni el análisis que el libro deja al estudiante—, aunque se pida expresamente. Explica la regla o el concepto que interviene (qué es un kāriyī, un nimitta, qué significa «kvaci»…) y remite a «Respuesta sugerida (IEBH)» en la página («Suggested answer (IEBH)» en inglés), que se abre con el botón de la propia fila.
 10. Si la pregunta no tiene que ver con la fila o con la gramática pāḷi, responde brevemente que este asistente sólo trata de la fila seleccionada.
-11. Cada pregunta se responde por sí sola: no ofrezcas más ayuda ni continuaciones («puedo explicarte…», «si quieres…»).`;
+11. Cada pregunta se responde por sí sola: no ofrezcas más ayuda ni continuaciones («puedo explicarte…», «si quieres…»).
+12. Ejemplos: nunca muestres las marcas de la página ({n|…}, {k|…}, {kx|…}, {nx|…}, {r|…}, {x|…}). Escribe el ejemplo en forma llana, como en «ejemplo_llano» (p. ej., «bhikkhu + inī → bhikkhunī»), y di con palabras qué letra es la causa (nimitta), cuál sufre la operación, cuál es el resultado y cuál se elide.`;
 
 /* preguntar.json, leído una vez por instancia: cambia sólo con un despliegue. */
 let DATOS = null;
@@ -196,6 +197,13 @@ export async function preguntar(request, env, url, identidad) {
     return json({ ok: false, error: "el modelo no respondió (" + r.status + "); no se ha contado la pregunta" }, 502);
   }
   const m = await r.json();
+  /* Para comprobar la caché en los registros de Cloudflare: sólo cifras y el
+     modelo, nada de la persona ni de la pregunta. */
+  const u = m.usage || {};
+  console.log(JSON.stringify({ evento: "preguntar.uso", modelo: m.model || null,
+    input_tokens: u.input_tokens ?? null, output_tokens: u.output_tokens ?? null,
+    cache_creation_input_tokens: u.cache_creation_input_tokens ?? null,
+    cache_read_input_tokens: u.cache_read_input_tokens ?? null }));
   if (m.stop_reason === "refusal") {
     return json({ ok: false, error: "el modelo declinó responder; no se ha contado la pregunta" }, 422);
   }
@@ -214,6 +222,10 @@ export async function preguntar(request, env, url, identidad) {
   });
 }
 
+/* El ejemplo sin las marcas de la página, para que el modelo pueda citarlo
+   tal cual sin enseñar {n|…} y compañía. */
+const llano = (x) => String(x || "").replace(/\{(?:kx|nx|k|n|r|x)\|([^{}|]+)\}/g, "$1");
+
 /* Exportada para el arnés: así se comprueba qué sale hacia la API sin red. */
 export function cuerpoDeLaPeticion(env, fila, glosario, pregunta, lang) {
   const de = (o) => (o && typeof o === "object" ? o[lang] || "" : o || "");
@@ -221,7 +233,7 @@ export function cuerpoDeLaPeticion(env, fila, glosario, pregunta, lang) {
     "§": fila.n, sutta: fila.sutta, tr: de(fila.tr), clase: fila.clase, anuvatti: fila.anuvatti,
     // De un ejercicio no va la respuesta sugerida: el modelo no debe darla.
     roles: fila.roles, ejercicio: fila.ejercicio,
-    ejemplo: fila.ejemplo, nota: de(fila.nota), pdf: fila.pdf,
+    ejemplo: fila.ejemplo, ejemplo_llano: llano(fila.ejemplo), nota: de(fila.nota), pdf: fila.pdf,
   };
   const g = fila.terminos.filter((k) => glosario[k]).map((k) => {
     const t = glosario[k], e = t.ejemplo;
