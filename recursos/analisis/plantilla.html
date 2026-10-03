@@ -556,8 +556,24 @@ function render(){
    fuentes en dt, el aviso de OCR, los botones) no cuentan: si contaran, «Nyāsa»
    encontraría las 405 filas. */
 const NO_BUSCAR='h4,dt,.ocr,button,.lbl';
-function textoBuscable(el){if(!el)return '';const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest(NO_BUSCAR)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
-  let s='';while(w.nextNode())s+=' '+w.currentNode.nodeValue;return s}
+/* Cómo se juntan los nodos de texto (v0.3.4 / v0.7.6). El marcado en línea
+   (marcas del ejemplo, globos, <i>, <b>) parte las palabras en varios nodos
+   —«yass<span>a</span> + <span>i</span>ndriyāni»— y el espacio que se ponía
+   entre nodos las rompía: «yassa» no se encontraba. Ahora: dentro de una misma
+   unidad (celda, párrafo, dt/dd, chip, función…) dos nodos se pegan si el corte
+   cae dentro de una palabra (letra o guion a cada lado) o ante puntuación de cierre; si no,
+   se separan. Entre unidades distintas, o tras un rótulo excluido, siempre
+   espacio: dos chips seguidos no forman una palabra. */
+const UNIDAD='td,th,p,li,dt,dd,div,h1,h2,h3,h4,h5,h6,.chip,.rol,.ed,.ejer,.lbl,.det,.vacio';
+const LETRA=/[\p{L}\p{M}\p{N}\-‐]/u,CIERRA=/^[.,;:!?)\]»”’…]/,ABRE=/[(\[«“‘]$/;
+function textoBuscable(el){if(!el)return '';const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);
+  let s='',prev=null;while(w.nextNode()){const n=w.currentNode,p=n.parentElement,v=n.nodeValue;
+    if(p.closest(NO_BUSCAR)){prev=null;continue}
+    if(!v)continue;
+    const u=p.closest(UNIDAD),a=s.slice(-1),z=v[0];
+    const pegar=u===prev&&((LETRA.test(a)&&LETRA.test(z))||CIERRA.test(z)||ABRE.test(a));
+    s+=(pegar?'':' ')+v;prev=u}
+  return s}
 function buscable(){document.querySelectorAll('#out tr.r').forEach(r=>{const d=r.nextElementSibling;
   r.dataset.t=norm([r.dataset.t,textoBuscable(r),d&&d.classList.contains('det-row')?textoBuscable(d):''].join(' ')).replace(/\s+/g,' ')})}
 function filtrar(){
