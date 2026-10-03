@@ -1,10 +1,10 @@
 {
-  "version": "0.2.3",
+  "version": "0.3",
   "fecha": "2026-10-03",
   "estado": "borrador",
   "nota_version": {
-    "es": "Sandhi-Kappa: todas las funciones y clases cotejadas con las imágenes; notas de cotejo con la clasificación del sitio (v0.7) en §1, §24, §30 y §51.",
-    "en": "Sandhi-Kappa: all roles and classes checked against the images; notes comparing §1, §24, §30 and §51 with the site classification (v0.7)."
+    "es": "v0.3: globos con definición y ejemplo para los términos técnicos. Sandhi-Kappa: todas las funciones y clases cotejadas con las imágenes; notas de cotejo con la clasificación del sitio (v0.7) en §1, §24, §30 y §51.",
+    "en": "v0.3: tooltips with a definition and an example for the technical terms. Sandhi-Kappa: all roles and classes checked against the images; notes comparing §1, §24, §30 and §51 with the site classification (v0.7)."
   },
   "capitulos": [
     "01-sandhi.json"

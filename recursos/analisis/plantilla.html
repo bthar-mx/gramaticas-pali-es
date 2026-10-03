@@ -122,12 +122,11 @@ h1{font-size:clamp(34px,5.5vw,52px);line-height:.98;margin:10px 0 0;font-weight:
 .chip{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.04em;border-radius:2px;
   padding:1.5px 6px;white-space:nowrap;border:1px solid transparent}
 /* Todas las etiquetas llevan filete: continuo dentro del esquema,
-   discontinuo fuera de él (pubbavākya, atidesa). */
+   discontinuo fuera de él (atidesa, liṅga-vacana). */
 .chip.t-S{color:var(--nila);background:var(--chip-k);border-color:var(--nila)}
 .chip.t-A{color:var(--haritala);border-color:var(--haritala)}
 .chip.t-P{color:var(--rakta);border-color:var(--rakta)}
 .chip.t-V{color:var(--soot);border-color:var(--soot)}
-.chip.t-X{color:var(--soot);border-style:dashed;border-color:var(--soot)}
 .chip.v{color:var(--ink);background:var(--hl);border-color:var(--haritala)}
 .chip.v.fuera{background:none;border-style:dashed;color:var(--haritala)}
 .chip+.chip{margin-left:3px}
@@ -221,6 +220,11 @@ a.sref:focus-visible,.chip[data-tip]:focus-visible{outline:2px solid var(--harit
 #tip .tp{font-style:italic;font-weight:700;margin:0;font-size:16.5px}
 #tip .te{margin:5px 0 0;color:var(--soot);font-size:15px}
 #tip .tk{font-family:var(--mono);font-size:10.5px;color:var(--haritala);margin:8px 0 0;letter-spacing:.06em;text-transform:uppercase}
+.gl{border-bottom:1px dotted var(--nila);cursor:help}
+.gl:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+#tip.glosa{pointer-events:auto}
+#tip .gd{margin:0;font-size:15px}
+#tip .te a{color:var(--nila)}
 #tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
 #tip.llano p{margin:0}
 #tip.llano i{font-weight:700}
@@ -275,6 +279,12 @@ footer a{color:var(--nila)}
 @media print{.bar,.sidebar,#top-btn,.mas{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
 
 /* ---- propio de esta página ---- */
+.gl{border-bottom:1px dotted var(--nila);cursor:help}
+.gl:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+#tip.glosa{pointer-events:auto}
+#tip .gd{margin:0;font-size:15px}
+#tip .te a{color:var(--nila)}
+
 :root{--mya:"Padauk","Myanmar Text","Noto Sans Myanmar",sans-serif}
 .my{font-family:var(--mya);font-size:.92em;font-style:normal}
 .subt{margin:6px 0 0;font-size:19px;color:var(--soot);font-style:italic}
@@ -368,6 +378,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
   <div class="empty" id="empty" hidden><p data-t="empty">Ningún sutta coincide.</p></div>
 </main>
 <button id="top-btn" aria-label="↑">↑</button>
+<div id="tip" role="tooltip" aria-hidden="true"></div>
 
 <footer><div class="wrap">
   <p class="aviso" data-t-html="aviso"></p>
@@ -422,6 +433,42 @@ const plano=s=>String(s||'').replace(/\{(?:kx|nx|k|n|r|x)\|([^{}|]+)\}/g,'$1');
 const CASO={'7':'7.ª','5':'5.ª','3':'3.ª','5+7':'5.ª + 7.ª'};
 const url=e=>(lang==='en'?'../../en/kaccayana/':'../../kaccayana/')+e.cap+'/#s'+e.n;
 const kname=k=>k.charAt(0)+k.slice(1).toLowerCase();
+/* ---------- glosario de los globos (recursos/terminos/terminos.json) ----------
+   Primera aparición de cada término por celda; el globo da la definición y un
+   ejemplo con su § y la primera línea de la traducción publicada. */
+const GL=D.terminos||[],GK={},GF=[];
+GL.forEach(t=>{GK[t.clave]=t;t.formas.forEach(f=>GF.push([f,t.clave]))});
+GF.sort((a,b)=>b[0].length-a[0].length);
+const GFK={};GF.forEach(([f,k])=>GFK[f.toLowerCase()]=k);
+const GRE=GF.length?new RegExp('(?<![\\p{L}\\p{M}])('+GF.map(([f])=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\p{L}\\p{M}])','giu'):null;
+const gClave=x=>GFK[String(x||'').toLowerCase()]||null;
+function glosar(el){
+  if(!GRE||!el)return;
+  const vistos=new Set();el.querySelectorAll('[data-g]').forEach(s=>vistos.add(s.dataset.g));
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,.chip,.ed,.ejer,.my,[data-g],[data-sutta]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  const nodos=[];while(w.nextNode())nodos.push(w.currentNode);
+  nodos.forEach(n=>{
+    const t=n.nodeValue;let m,frag=null,ult=0;GRE.lastIndex=0;
+    while((m=GRE.exec(t))){
+      const k=GFK[m[1].toLowerCase()];if(!k||vistos.has(k))continue;vistos.add(k);
+      frag=frag||document.createDocumentFragment();
+      frag.appendChild(document.createTextNode(t.slice(ult,m.index)));
+      const s=document.createElement('span');s.className='gl';s.dataset.g=k;s.tabIndex=0;s.textContent=m[1];
+      frag.appendChild(s);ult=m.index+m[1].length;
+    }
+    if(frag){frag.appendChild(document.createTextNode(t.slice(ult)));n.parentNode.replaceChild(frag,n)}
+  });
+}
+function glosaHTML(k){
+  const t=GK[k];if(!t)return '';const e=t.ejemplo;
+  const aqui=document.getElementById('s'+e.n);
+  const href=aqui?'#s'+e.n:(lang==='en'?'../../en/kaccayana/':'../../kaccayana/')+e.cap+'/#s'+e.n;
+  return `<span class="tn">${esc(t.termino)}</span><p class="gd">${esc(t.def[lang])}</p>`+
+    `<p class="te">${lang==='en'?'Example':'Ejemplo'}: <a href="${href}">§${e.n}</a> <i>${esc(e.sutta||'')}</i>`+
+    `${e.nota?' — '+esc(e.nota[lang]):''}${e.tr&&e.tr[lang]?` · «${esc(e.tr[lang])}»`:''}</p>`;
+}
+const RK={'kāriyī':'kariyi','kāriya':'kariya','nimitta':'nimitta','saññā':'sannaroles','saññī':'sannaroles','visaya':'visaya','visayī':'visaya'};
+
 
 function textos(){
   const t=T[lang];root.lang=lang;
@@ -444,7 +491,7 @@ function roles(rs){
   const t=T[lang];
   return rs.map(r=>{const v=r[2]?` <i>[${esc(r[2])}]</i>`:'';
     const ca=r[0]==='nimitta'&&r[3]?`<span class="ed" title="${esc(t.ed)}">${CASO[r[3]]||esc(r[3])}</span>`:'';
-    return `<span class="rol"><b>${esc(r[0])}:</b>${esc(r[1])}${v}${ca}</span>`}).join('');
+    return `<span class="rol"><b${RK[r[0]]?` class="gl" tabindex="0" data-g="${RK[r[0]]}"`:''}>${esc(r[0])}:</b>${esc(r[1])}${v}${ca}</span>`}).join('');
 }
 function fila(e){
   const t=T[lang];const nota=(e.nota&&e.nota[lang])||'';
@@ -485,6 +532,7 @@ function render(){
     sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
+  document.querySelectorAll('#out td.cl, #out td.no, #out .detalle p').forEach(glosar);
   document.querySelectorAll('#sb-list details[data-g]').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
@@ -547,6 +595,26 @@ function espiar(){
 const topBtn=document.getElementById('top-btn');
 addEventListener('scroll',()=>{topBtn.classList.toggle('show',scrollY>600);if(!spyF)spyF=requestAnimationFrame(()=>{spyF=0;espiar()})},{passive:true});
 topBtn.onclick=()=>scrollTo({top:0});
+
+
+/* globos del glosario (como en /recursos/clasificacion/): ratón, toque y teclado */
+const tip=document.getElementById('tip');let tipT=null,tipDe=null,ocultarT=null,puntero='mouse';
+addEventListener('pointerdown',e=>{puntero=e.pointerType||'mouse'},{capture:true,passive:true});
+const conRaton=()=>puntero==='mouse'&&mq('(hover: hover)');
+function placeTip(el){const r=el.getBoundingClientRect();tip.style.visibility='hidden';tip.classList.add('on');
+  const w=tip.offsetWidth,h=tip.offsetHeight;let x=r.left,y=r.bottom+8;
+  if(x+w>innerWidth-12)x=innerWidth-w-12;if(x<12)x=12;if(y+h>innerHeight-12)y=r.top-h-8;if(y<8)y=8;
+  tip.style.left=x+'px';tip.style.top=y+'px';tip.style.visibility=''}
+function abrirTip(el){clearTimeout(ocultarT);const h=glosaHTML(el.dataset.g);if(!h)return;tip.innerHTML=h;tip.classList.add('glosa');tip.setAttribute('aria-hidden','false');placeTip(el);tipDe=el}
+function hideTip(){clearTimeout(tipT);clearTimeout(ocultarT);tip.classList.remove('on','glosa');tip.setAttribute('aria-hidden','true');tipDe=null}
+const programarOcultar=()=>{clearTimeout(ocultarT);ocultarT=setTimeout(hideTip,250)};
+tip.addEventListener('mouseenter',()=>clearTimeout(ocultarT));tip.addEventListener('mouseleave',programarOcultar);
+document.addEventListener('mouseover',e=>{if(!conRaton())return;const a=e.target.closest('[data-g]');if(!a)return;clearTimeout(tipT);tipT=setTimeout(()=>abrirTip(a),110)});
+document.addEventListener('mouseout',e=>{if(conRaton()&&e.target.closest('[data-g]')){clearTimeout(tipT);programarOcultar()}});
+document.addEventListener('focusin',e=>{const a=e.target.closest('[data-g]');if(a&&a.matches(':focus-visible'))abrirTip(a)});
+document.addEventListener('focusout',e=>{if(e.target.closest('[data-g]'))programarOcultar()});
+document.addEventListener('click',e=>{const a=e.target.closest('[data-g]');if(a){if(conRaton())return;if(tipDe===a)hideTip();else abrirTip(a);return}if(!e.target.closest('#tip'))hideTip()});
+addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
 
 textos();render();
 /* un § en la dirección (#s12) lleva a esa fila */

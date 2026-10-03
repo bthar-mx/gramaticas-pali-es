@@ -1,0 +1,523 @@
+{
+ "version": "0.1",
+ "fecha": "2026-10-03",
+ "nota": "Glosario de los globos de /recursos/clasificacion/ y /recursos/analisis/. «revisar»: redacción IEBH por revisar. El ejemplo se completa al generar con el texto pāḷi y la primera línea de la traducción publicada (ES/EN).",
+ "terminos": [
+  {
+   "clave": "kariyi",
+   "termino": "kāriyī (kārī)",
+   "formas": [
+    "kāriyī",
+    "kārī"
+   ],
+   "def": {
+    "es": "Aquello a lo que se realiza cierto tipo de operación gramatical.",
+    "en": "That on which a certain kind of grammatical operation is performed."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«sarā» es el kāriyī.",
+     "en": "“sarā” is the kāriyī."
+    }
+   },
+   "fuente": "ES: documento de Angel «Kāriyī – Kāriya – Nimitta» (= Glosario de Nandisena); EN: IEBH — por revisar. Funciones de §12: Nyāsa, Rūpasiddhi, Visuddhāyuṃ (PDF 63).",
+   "revisar": true
+  },
+  {
+   "clave": "kariya",
+   "termino": "kāriya",
+   "formas": [
+    "kāriya"
+   ],
+   "def": {
+    "es": "La operación gramatical que hay que realizar.",
+    "en": "The grammatical operation to be performed."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«lopaṃ» es el kāriya.",
+     "en": "“lopaṃ” is the kāriya."
+    }
+   },
+   "fuente": "Como kāriyī.",
+   "revisar": true
+  },
+  {
+   "clave": "nimitta",
+   "termino": "nimitta",
+   "formas": [
+    "nimitta"
+   ],
+   "def": {
+    "es": "Lit. signo; causa, razón. Hay dos clases: en la séptima inflexión (sattamī-nimitta) y en la quinta (pañcamī-nimitta).",
+    "en": "Lit. sign; cause, reason. There are two kinds: in the seventh inflection (sattamī-nimitta) and in the fifth (pañcamī-nimitta)."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«sare» es nimitta en la 7.ª.",
+     "en": "“sare” is a nimitta in the 7th."
+    }
+   },
+   "fuente": "ES: documento de Angel; EN: IEBH — por revisar.",
+   "revisar": true
+  },
+  {
+   "clave": "pancami",
+   "termino": "pañcamī-nimitta",
+   "formas": [
+    "pañcamī-nimitta"
+   ],
+   "def": {
+    "es": "Causa expresada en la quinta inflexión («después de…»).",
+    "en": "Cause expressed in the fifth inflection (“after…”)."
+   },
+   "ejemplo": {
+    "n": 13,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«asarūpā».",
+     "en": "“asarūpā”."
+    }
+   },
+   "fuente": "Nombre en §13: Visuddhāyuṃ (PDF 65).",
+   "revisar": true
+  },
+  {
+   "clave": "sannaroles",
+   "termino": "saññā / saññī",
+   "formas": [
+    "saññī"
+   ],
+   "def": {
+    "es": "En los suttas de definición, el nombre técnico (saññā) y lo que recibe ese nombre (saññī).",
+    "en": "In defining suttas, the technical name (saññā) and what bears that name (saññī)."
+   },
+   "ejemplo": {
+    "n": 4,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«rassā» = saññā; «sarā» (anuvatti) = saññī.",
+     "en": "“rassā” = saññā; “sarā” (anuvatti) = saññī."
+    }
+   },
+   "fuente": "Funciones de §4: Visuddhāyuṃ (PDF 56).",
+   "revisar": true
+  },
+  {
+   "clave": "visaya",
+   "termino": "visaya / visayī",
+   "formas": [
+    "visayī",
+    "visaya"
+   ],
+   "def": {
+    "es": "visaya: el lugar donde se introduce el elemento; visayī: el elemento introducido allí (cf. §42: visaya «ante [puthassa]», visayī «go»). La Visuddhāyuṃ usa estos términos en los suttas de inserción (āgama) y de duplicación.",
+    "en": "visaya: the place where the element is introduced; visayī: the element introduced there (cf. §42: visaya “ante [puthassa]”, visayī “go”). The Visuddhāyuṃ uses these terms in suttas of insertion (āgama) and doubling."
+   },
+   "ejemplo": {
+    "n": 42,
+    "cap": "sandhi",
+    "nota": {
+     "es": "visaya «ante [puthassa]», visayī «go».",
+     "en": "visaya “ante [puthassa]”, visayī “go”."
+    }
+   },
+   "fuente": "Visuddhāyuṃ (PDF 105; también §28, PDF 85).",
+   "revisar": true
+  },
+  {
+   "clave": "visesana",
+   "termino": "visesana",
+   "formas": [
+    "visesana"
+   ],
+   "def": {
+    "es": "Calificador de una de las palabras anteriores (kāriyī, kāriya, nimitta, saññā…).",
+    "en": "Qualifier of one of the words above (kāriyī, kāriya, nimitta, saññā…)."
+   },
+   "ejemplo": {
+    "n": 13,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«paro» califica al kāriyī «saro».",
+     "en": "“paro” qualifies the kāriyī “saro”."
+    }
+   },
+   "fuente": "Visuddhāyuṃ (PDF 65–66).",
+   "revisar": true
+  },
+  {
+   "clave": "anuvatti",
+   "termino": "anuvatti",
+   "formas": [
+    "anuvatti"
+   ],
+   "def": {
+    "es": "Palabra que se trae de suttas anteriores para completar el sutta; la Visuddhāyuṃ la llama aṅga.",
+    "en": "A word carried over from earlier suttas to complete the sutta; the Visuddhāyuṃ calls it aṅga."
+   },
+   "ejemplo": {
+    "n": 14,
+    "cap": "sandhi",
+    "nota": {
+     "es": "anuvatti «sare», «paro saro».",
+     "en": "anuvatti “sare”, “paro saro”."
+    }
+   },
+   "fuente": "Visuddhāyuṃ (PDF 67).",
+   "revisar": true
+  },
+  {
+   "clave": "sanna",
+   "termino": "saññā",
+   "formas": [
+    "saññā"
+   ],
+   "def": {
+    "es": "Aforismo que explica el significado de un término técnico.",
+    "en": "Aphorism that names a technical term."
+   },
+   "ejemplo": {
+    "n": 2,
+    "cap": "sandhi"
+   },
+   "fuente": "Leyenda de la clasificación (datos.json, tipos); clase de §2: Nyāsa, Visuddhāyuṃ (PDF 53)."
+  },
+  {
+   "clave": "adhikara",
+   "termino": "adhikāra",
+   "formas": [
+    "adhikāra"
+   ],
+   "def": {
+    "es": "Aforismo regulativo.",
+    "en": "Governing aphorism."
+   },
+   "ejemplo": {
+    "n": 52,
+    "cap": "nama"
+   },
+   "fuente": "Leyenda de la clasificación; §52 = A en datos.json (Rū 60). No hay adhikāra en Sandhi."
+  },
+  {
+   "clave": "paribhasa",
+   "termino": "paribhāsā",
+   "formas": [
+    "paribhāsā"
+   ],
+   "def": {
+    "es": "Aforismo general que explica la correcta interpretación o aplicación de otras reglas.",
+    "en": "Interpretive aphorism, on how other rules are read or applied."
+   },
+   "ejemplo": {
+    "n": 10,
+    "cap": "sandhi"
+   },
+   "fuente": "Leyenda de la clasificación."
+  },
+  {
+   "clave": "vidhi",
+   "termino": "vidhi",
+   "formas": [
+    "vidhi"
+   ],
+   "def": {
+    "es": "Aforismo con instrucciones gramaticales.",
+    "en": "Operational aphorism."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi"
+   },
+   "fuente": "Leyenda de la clasificación."
+  },
+  {
+   "clave": "ananga",
+   "termino": "anaṅga-paribhāsā",
+   "formas": [
+    "anaṅga-paribhāsā",
+    "anaṅga"
+   ],
+   "def": {
+    "es": "Paribhāsā que no forma parte ni de un término técnico ni de una operación; enunciado general para toda la gramática.",
+    "en": "A paribhāsā that is part of neither a technical term nor an operation; a general statement for the whole grammar."
+   },
+   "ejemplo": {
+    "n": 1,
+    "cap": "sandhi"
+   },
+   "fuente": "Clase de §1: Visuddhāyuṃ (PDF 52); clasificación v0.7. Definición: borrador de Angel.",
+   "revisar": true
+  },
+  {
+   "clave": "sannanga",
+   "termino": "saññaṅga-paribhāsā",
+   "formas": [
+    "saññaṅga-paribhāsā",
+    "saññaṅga"
+   ],
+   "def": {
+    "es": "Paribhāsā que forma parte de un término técnico (saññā): indica cómo entender los nombres técnicos.",
+    "en": "A paribhāsā that is part of a technical term (saññā): it tells how the technical names are to be taken."
+   },
+   "ejemplo": {
+    "n": 9,
+    "cap": "sandhi"
+   },
+   "fuente": "Clase de §9: Visuddhāyuṃ (PDF 59). Definición: borrador de Angel.",
+   "revisar": true
+  },
+  {
+   "clave": "vidhyanga",
+   "termino": "vidhyaṅga-paribhāsā",
+   "formas": [
+    "vidhyaṅga-paribhāsā",
+    "vidhyaṅga"
+   ],
+   "def": {
+    "es": "Paribhāsā que forma parte de una operación (vidhi): indica cómo realizar las operaciones.",
+    "en": "A paribhāsā that is part of an operation (vidhi): it tells how operations are to be carried out."
+   },
+   "ejemplo": {
+    "n": 10,
+    "cap": "sandhi"
+   },
+   "fuente": "Clase de §10–§11: Visuddhāyuṃ (PDF 60–61). Definición: borrador de Angel.",
+   "revisar": true
+  },
+  {
+   "clave": "niyama",
+   "termino": "niyama",
+   "formas": [
+    "niyama-sutta",
+    "niyama"
+   ],
+   "def": {
+    "es": "Regla que restringe o fija una operación que otro sutta ya permitía.",
+    "en": "A rule that restricts or fixes an operation another sutta already allowed."
+   },
+   "ejemplo": {
+    "n": 29,
+    "cap": "sandhi"
+   },
+   "fuente": "«niyama-sutta» en §29: Visuddhāyuṃ (PDF 85); Rū; Nyāsa: «siddhe saty ārambho niyamāya».",
+   "revisar": true
+  },
+  {
+   "clave": "apavada",
+   "termino": "apavāda",
+   "formas": [
+    "apavāda"
+   ],
+   "def": {
+    "es": "Regla de excepción: desplaza a una regla general en su propio ámbito.",
+    "en": "Exception rule: it displaces a general rule within its own domain."
+   },
+   "ejemplo": {
+    "n": 13,
+    "cap": "sandhi",
+    "nota": {
+     "es": "apavāda del §12.",
+     "en": "apavāda of §12."
+    }
+   },
+   "fuente": "§13 como apavāda del §12: Rūpasiddhi y Nyāsa (nota de datos.json).",
+   "revisar": true
+  },
+  {
+   "clave": "pakati",
+   "termino": "pakati",
+   "formas": [
+    "pakati"
+   ],
+   "def": {
+    "es": "Conservación de la forma natural: la letra queda sin cambio. El sitio cuenta la pakati en la ādesa según Thitzana, salvo §24 y §30, clasificados paṭisedha según la Visuddhāyuṃ.",
+    "en": "Keeping the natural form: the letter stays unchanged. The site counts pakati under ādesa following Thitzana, except §24 and §30, classified paṭisedha following the Visuddhāyuṃ."
+   },
+   "ejemplo": {
+    "n": 23,
+    "cap": "sandhi"
+   },
+   "fuente": "Thitzana, vol. 2, Introd. pp. 36–37; Visuddhāyuṃ (PDF 79–80); clasificación v0.7.",
+   "revisar": true
+  },
+  {
+   "clave": "lopa",
+   "termino": "lopa",
+   "formas": [
+    "lopa"
+   ],
+   "def": {
+    "es": "Elisión: una letra desaparece.",
+    "en": "Elision: a letter disappears."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi"
+   },
+   "fuente": "Leyenda de la clasificación; frase: IEBH — por revisar.",
+   "revisar": true
+  },
+  {
+   "clave": "digha",
+   "termino": "dīgha",
+   "formas": [
+    "dīgha"
+   ],
+   "def": {
+    "es": "Alargamiento: una vocal breve se hace larga.",
+    "en": "Lengthening: a short vowel becomes long."
+   },
+   "ejemplo": {
+    "n": 15,
+    "cap": "sandhi"
+   },
+   "fuente": "idem.",
+   "revisar": true
+  },
+  {
+   "clave": "rassa",
+   "termino": "rassa",
+   "formas": [
+    "rassa"
+   ],
+   "def": {
+    "es": "Acortamiento: una vocal larga se hace breve.",
+    "en": "Shortening: a long vowel becomes short."
+   },
+   "ejemplo": {
+    "n": 26,
+    "cap": "sandhi"
+   },
+   "fuente": "idem.",
+   "revisar": true
+  },
+  {
+   "clave": "adesa",
+   "termino": "ādesa",
+   "formas": [
+    "ādesa"
+   ],
+   "def": {
+    "es": "Sustitución: una letra o palabra ocupa el lugar de otra. Según Thitzana incluye también vuddhi, vipariyāya, pakati, atidesa, etc., salvo donde la Visuddhāyuṃ clasifica de otro modo (véanse paṭisedha, atidesa, liṅga-vacana).",
+    "en": "Substitution: a letter or word takes the place of another. According to Thitzana it also includes vuddhi, vipariyāya, pakati, atidesa, etc., except where the Visuddhāyuṃ classifies otherwise (see paṭisedha, atidesa, liṅga-vacana)."
+   },
+   "ejemplo": {
+    "n": 17,
+    "cap": "sandhi"
+   },
+   "fuente": "Leyenda de la clasificación (Thitzana, vol. 2, Introd. pp. 36–37); frase: IEBH — por revisar.",
+   "revisar": true
+  },
+  {
+   "clave": "agama",
+   "termino": "āgama",
+   "formas": [
+    "āgama"
+   ],
+   "def": {
+    "es": "Inserción: se añade una letra que no estaba.",
+    "en": "Insertion: a letter that was not there is added."
+   },
+   "ejemplo": {
+    "n": 35,
+    "cap": "sandhi"
+   },
+   "fuente": "idem.",
+   "revisar": true
+  },
+  {
+   "clave": "patisedha",
+   "termino": "paṭisedha",
+   "formas": [
+    "paṭisedha"
+   ],
+   "def": {
+    "es": "Interdicción: impide que se aplique otra regla.",
+    "en": "Prohibition: it prevents another rule from applying."
+   },
+   "ejemplo": {
+    "n": 46,
+    "cap": "sandhi"
+   },
+   "fuente": "Leyenda; clase de §46: Nyāsa y Bhāsāṭīkā (datos.json). También §24 y §30 según la Visuddhāyuṃ.",
+   "revisar": true
+  },
+  {
+   "clave": "paccaya",
+   "termino": "paccaya",
+   "formas": [
+    "paccaya"
+   ],
+   "def": {
+    "es": "Sufijo: se añade un sufijo a la base o a la raíz.",
+    "en": "Suffix: a suffix is added to the base or the root."
+   },
+   "ejemplo": {
+    "n": 237,
+    "cap": "nama"
+   },
+   "fuente": "Leyenda. No hay paccaya en Sandhi.",
+   "revisar": true
+  },
+  {
+   "clave": "vibhatti",
+   "termino": "vibhatti",
+   "formas": [
+    "vibhatti"
+   ],
+   "def": {
+    "es": "Inflexión: se añade una terminación de caso a la base.",
+    "en": "Inflection: a case ending is added to the base."
+   },
+   "ejemplo": {
+    "n": 284,
+    "cap": "karaka"
+   },
+   "fuente": "Leyenda. No hay vibhatti en Sandhi.",
+   "revisar": true
+  },
+  {
+   "clave": "atidesa",
+   "termino": "atidesa",
+   "formas": [
+    "suttātidesa",
+    "kāriyātidesa",
+    "atidesa"
+   ],
+   "def": {
+    "es": "Extensión: regla que extiende la operación o el nombre de una cosa a otra («trátese X como Y»). El §51 es un suttātidesa: los suttas ya enunciados se extienden a las formas no mostradas.",
+    "en": "Extension: a rule that extends the operation or name of one thing to another (“treat X as Y”). §51 is a suttātidesa: the suttas already stated extend to the forms not shown."
+   },
+   "ejemplo": {
+    "n": 51,
+    "cap": "sandhi"
+   },
+   "fuente": "Clase de §51: Visuddhāyuṃ (PDF 111), clasificación v0.7.",
+   "revisar": true
+  },
+  {
+   "clave": "linga",
+   "termino": "liṅga-vacana",
+   "formas": [
+    "liṅga-vacana"
+   ],
+   "def": {
+    "es": "Género y número (liṅga = género, vacana = número): regla que fija el género y el número, p. ej. de un compuesto. Clase propia según la Visuddhāyuṃ, fuera de las ocho.",
+    "en": "Gender and number (liṅga = gender, vacana = number): a rule that fixes gender and number, e.g. of a compound. A class of its own according to the Visuddhāyuṃ, outside the eight."
+   },
+   "ejemplo": {
+    "n": 320,
+    "cap": "samasa"
+   },
+   "fuente": "Clase de §320: Visuddhāyuṃ (PDF 398), clasificación v0.7. No hay ejemplo en Sandhi.",
+   "revisar": true
+  }
+ ]
+}
