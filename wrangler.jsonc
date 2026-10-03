@@ -11,11 +11,16 @@
   // El resto: docs/solucionador/automatizacion.md.
   //
   // /api/preguntar (botón «Preguntar» de /recursos/analisis/, 2026-10-03)
-  // usa el mismo KV para su contador diario y dos secretos más, que se ponen
-  // en el panel o con «npx wrangler secret put»; sin ellos responde 503:
-  //   ANTHROPIC_API_KEY      la clave de la API (nunca en el repositorio)
+  // necesita dos secretos más, que se ponen en el panel o con
+  // «npx wrangler secret put»; sin ellos responde 503. Aquí van sólo los
+  // NOMBRES, nunca los valores:
+  //   ANTHROPIC_API_KEY      la clave de la API
   //   ACCESO_AUD_PREGUNTAR   el AUD tag de la aplicación «gramaticas-preguntar»
-  // Opcional: PREGUNTAR_MODELO (por omisión, claude-opus-5-5). Ver worker/preguntar.js.
+  // Opcional: PREGUNTAR_MODELO (por omisión, claude-sonnet-5-5).
+  // El contador diario y el registro van al KV PREGUNTAS si está enlazado y,
+  // si no, al de VEREDICTOS. OJO: un enlace puesto sólo en el panel lo quita
+  // el siguiente despliegue desde main, porque manda este archivo; PREGUNTAS
+  // tiene que figurar abajo, en kv_namespaces, con su id. Ver worker/preguntar.js.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
   "main": "worker/index.js",

@@ -16,7 +16,11 @@
      6. la API falla                     → 502 y no se gasta pregunta
      7. límite alcanzado                 → 429 y la API no se llama
      8. § inexistente / pregunta vacía   → 404 / 400
-     9. /api/cola no enseña los contadores */
+     9. /api/cola no enseña los contadores ni el registro
+    10. el registro: pregunta, §, lengua y fecha; el correo, en ninguna parte
+    11. ejercicio (§38): la respuesta sugerida no va al modelo
+    12. modelo: Sonnet por omisión, PREGUNTAR_MODELO lo cambia; PREGUNTAS
+        se prefiere a VEREDICTOS */
 
 import { readFileSync } from "node:fs";
 import worker from "./index.js";
@@ -134,11 +138,25 @@ async function main() {
     const fuentes = JSON.parse(GLOSARIO).terminos.map((t) => t.fuente).filter((f) => f && f.length > 20);
     comprobar("no va ninguna «fuente» del glosario", !fuentes.some((f) => u.includes(f)));
     comprobar("ni la otra lengua de la nota", !u.includes("The book splits"));
-    comprobar("el contador queda con su prefijo, por correo en minúsculas",
-      [...e.VEREDICTOS.datos.keys()].some((k) => k.startsWith("preguntar/") && k.endsWith("/lector@ejemplo.org")));
+    comprobar("modelo por omisión: claude-sonnet-5-5", c.body.model === "claude-sonnet-5-5", c.body.model);
+    const sis = c.body.system[0].text;
+    comprobar("la instrucción trae los ejercicios y el «No lo sé»",
+      sis.includes("§38, §39, §44 y §50") && sis.includes("«No lo sé»") && sis.includes("«Según la Visuddhāyuṃ (§n)"));
+    const h = [...new Uint8Array(await crypto.subtle.digest("SHA-256",
+      new TextEncoder().encode("lector@ejemplo.org")))].map((b) => b.toString(16).padStart(2, "0")).join("");
+    comprobar("el contador va con el hash del correo (en minúsculas)",
+      [...e.VEREDICTOS.datos.keys()].some((k) => /^preguntar\/\d{4}-\d\d-\d\d\//.test(k) && k.endsWith("/" + h)));
+    const logs = [...e.VEREDICTOS.datos.entries()].filter(([k]) => k.startsWith("preguntar/log/"));
+    const reg = logs.length === 1 ? JSON.parse(logs[0][1]) : {};
+    comprobar("una entrada de registro con pregunta, §, lengua y fecha",
+      reg.pregunta === P.pregunta && reg.sutta === 20 && reg.lang === "es" && /^\d{4}-\d\d-\d\dT/.test(reg.fecha),
+      JSON.stringify(logs));
+    comprobar("y sólo esos cuatro campos", Object.keys(reg).sort().join() === "fecha,lang,pregunta,sutta");
+    comprobar("el correo no está en ninguna clave ni valor del KV",
+      ![...e.VEREDICTOS.datos.entries()].some(([k, v]) => (k + v).toLowerCase().includes("lector@ejemplo.org")));
     const cola = await worker.fetch(new Request("https://ejemplo.org/api/cola?clave=x"), e);
     const lista = (await cola.json()).veredictos || [];
-    comprobar("/api/cola no enseña los contadores", cola.status === 200 && lista.length === 0, JSON.stringify(lista));
+    comprobar("/api/cola no enseña los contadores ni el registro", cola.status === 200 && lista.length === 0, JSON.stringify(lista));
 
     const en = await pedir(e, bueno, { ...P, lang: "en" });
     const u2 = llamadas[1] ? llamadas[1].body.messages[0].content : "";
@@ -160,6 +178,21 @@ async function main() {
     comprobar("y la API no se llama", llamadas.length === 0);
   }
 
+  {
+    llamadas = [];
+    const r = await pedir(env(), bueno, { ...P, sutta: 38, pregunta: "¿Cuál es la solución?" });
+    const u = llamadas[0] ? llamadas[0].body.messages[0].content : "";
+    comprobar("ejercicio §38 → 200 y va marcado como ejercicio", r.status === 200 && u.includes('"ejercicio":true'), u.slice(0, 300));
+    comprobar("y sin la respuesta sugerida", !u.includes('"respuesta"') && !u.includes('["kāriya","lopaṃ","kvaci"]'), u);
+  }
+  {
+    const e = env(); e.PREGUNTAR_MODELO = "claude-opus-5-5"; e.PREGUNTAS = kvFalso(); llamadas = [];
+    await pedir(e, bueno, P);
+    comprobar("PREGUNTAR_MODELO cambia el modelo", llamadas[0] && llamadas[0].body.model === "claude-opus-5-5");
+    comprobar("con PREGUNTAS enlazado, se escribe ahí y no en VEREDICTOS",
+      e.PREGUNTAS.datos.size === 2 && e.VEREDICTOS.datos.size === 0,
+      e.PREGUNTAS.datos.size + " / " + e.VEREDICTOS.datos.size);
+  }
   comprobar("§ inexistente → 404", (await pedir(env(), bueno, { ...P, sutta: 9999 })).status === 404);
   comprobar("pregunta vacía → 400", (await pedir(env(), bueno, { ...P, pregunta: "  " })).status === 400);
   comprobar("pregunta larguísima → 400",
