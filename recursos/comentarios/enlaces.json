@@ -1,0 +1,31 @@
+{
+  "nota": "Material del propio sitio que va DELANTE de los enlaces externos en la columna «Texto en línea». «fila» es el comienzo exacto del nombre en negrita de la fila española. «href» es relativo a /recursos/comentarios/; un elemento sin «href» es material del IEBH aún no publicado y sale sin enlace. «traduccion» pone la traducción de Kaccāyana con sus capítulos publicados (en la fila inglesa, la edición inglesa). Nada de docs/fuentes/ se enlaza nunca: el generador lo comprueba.",
+  "filas": [
+    {"fila": "Kaccāyana (", "propios": [
+      {"traduccion": true},
+      {"href": "../clasificacion/", "es": "Clasificación de los suttas", "en": "Classification of the suttas"},
+      {"href": "../sandhi/", "es": "Sandhi: referencia interactiva (cap. 1)", "en": "Sandhi reference (ch. 1; in Spanish)"},
+      {"href": "../../guia-clases/", "es": "Clases de U Sīlānanda (guía)", "en": "U Sīlānanda's classes (guide)"}
+    ]},
+    {"fila": "Kaccāyanavutti", "propios": [
+      {"traduccion": true, "nota": {"es": "el vutti acompaña a cada sutta", "en": "the vutti accompanies each sutta"}}
+    ]},
+    {"fila": "Nyāsa (", "propios": [
+      {"es": "Transcripción digital IEBH (en preparación)", "en": "IEBH digital transcription (in preparation)"}
+    ]},
+    {"fila": "Rūpasiddhi (", "propios": [
+      {"href": "../casos/", "es": "Usos de las inflexiones (Kāraka-kaṇḍa)", "en": "Uses of the inflections (Kāraka-kaṇḍa; in Spanish)"},
+      {"href": "../sandhi/", "es": "Sandhi: concordancia Rū. (cap. 1)", "en": "Sandhi reference: Rū. concordance (ch. 1; in Spanish)"},
+      {"href": "../../guia-clases/", "es": "Clases de U Sīlānanda (guía)", "en": "U Sīlānanda's classes (guide)"}
+    ]},
+    {"fila": "Rūpasiddhi-ṭīkā", "propios": [
+      {"es": "Transliteración IEBH (en preparación)", "en": "IEBH transliteration (in preparation)"}
+    ]},
+    {"fila": "Kaccāyanadhātumañjūsā", "propios": [
+      {"href": "../raices/", "es": "Raíces pāḷi (pestaña Dhātumañjūsā)", "en": "Pāḷi roots (Dhātumañjūsā tab)"}
+    ]},
+    {"fila": "Byākaraṇasiromaṇi Visuddhāyuṃ", "propios": [
+      {"href": "../analisis/", "es": "Análisis de los suttas de Kaccāyana (borrador)", "en": "Analysis of the Kaccāyana suttas (draft)"}
+    ]}
+  ]
+}
