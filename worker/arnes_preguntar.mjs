@@ -142,6 +142,14 @@ async function main() {
     const sis = c.body.system[0].text;
     comprobar("la instrucción trae los ejercicios y el «No lo sé»",
       sis.includes("§38, §39, §44 y §50") && sis.includes("«No lo sé»") && sis.includes("«Según la Visuddhāyuṃ (§n)"));
+    comprobar("la instrucción llama «aṅga» al campo y no da su procedencia",
+      sis.includes("«aṅga» (campo anuvatti)") && sis.includes("nunca «anuvatti»") && !sis.includes("vienen de suttas anteriores"));
+    comprobar("la instrucción trae el ejemplo de §13 (nimitta «sarasmā», no «asarūpā»)",
+      sis.includes("el nimitta es «sarasmā», calificado por «asarūpā»"));
+    comprobar("«No lo sé» termina ahí; sin ofrecer más ayuda",
+      sis.includes("TERMINA ahí") && sis.includes("no ofrezcas más ayuda"));
+    comprobar("sólo § de otro sutta si está en el material; nada de «el libro dice» sin datos",
+      sis.includes("aparece literalmente en el material") && sis.includes("«el libro llama…»"));
     const h = [...new Uint8Array(await crypto.subtle.digest("SHA-256",
       new TextEncoder().encode("lector@ejemplo.org")))].map((b) => b.toString(16).padStart(2, "0")).join("");
     comprobar("el contador va con el hash del correo (en minúsculas)",
