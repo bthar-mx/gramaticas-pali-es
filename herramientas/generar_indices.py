@@ -136,6 +136,14 @@ RECURSOS = [
     ("analisis/", "__ANALISIS_BADGE__",
      "Análisis de los suttas de Kaccāyana",
      "Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>."),
+    ("comentarios/", "__COMENTARIOS_BADGE__",
+     "Comentarios de la escuela de Kaccāyana",
+     "Las obras de la escuela gramatical de Kaccāyana —el texto raíz, sus "
+     "comentarios, los compendios y sus ṭīkās, los tratados auxiliares y "
+     "las glosas vernáculas— con autor, fecha, lugar, relación con "
+     "Kaccāyana, la sección de Ñāṇatusita (<i>Reference Table of Pāli "
+     "Literature</i>) y el texto en línea, con el material de este sitio "
+     "en primer lugar. Borrador en revisión."),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: el <i>Glosario de términos "
@@ -325,6 +333,20 @@ EN = {
     "Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.":
         "Class, anuvatti, roles (kāriyī, kāriya, nimitta) and example for each "
         "sutta, following the <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
+    "Comentarios de la escuela de Kaccāyana":
+        "Commentaries of the Kaccāyana school",
+    "Las obras de la escuela gramatical de Kaccāyana —el texto raíz, sus "
+    "comentarios, los compendios y sus ṭīkās, los tratados auxiliares y "
+    "las glosas vernáculas— con autor, fecha, lugar, relación con "
+    "Kaccāyana, la sección de Ñāṇatusita (<i>Reference Table of Pāli "
+    "Literature</i>) y el texto en línea, con el material de este sitio "
+    "en primer lugar. Borrador en revisión.":
+        "The works of the Kaccāyana school of grammar —the root text, its "
+        "commentaries, the digests and their ṭīkās, the auxiliary treatises "
+        "and the vernacular glosses— with author, date, place, relation to "
+        "Kaccāyana, Ñāṇatusita's section (<i>Reference Table of Pāli "
+        "Literature</i>) and the online text, this site's own material first."
+        " Draft under review.",
     "Clasificación de los suttas de Kaccāyana":
         "Classification of the Kaccāyana suttas",
     "Cada aforismo de Kaccāyana clasificado según "
@@ -652,6 +674,17 @@ def cuenta_analisis():
     return " · ".join(caps), n, m.get("version", "")
 
 
+def cuenta_comentarios():
+    """(obras, versión) de las tablas de docs/referencias/, para la insignia."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "comentarios", "meta.json")
+    if not os.path.exists(p):
+        return None
+    m = json.load(open(p, encoding="utf-8"))
+    md = open(os.path.join(RAIZ, m["fuentes"]["es"]), encoding="utf-8").read()
+    return len(re.findall(r"^\| \*\*", md, re.M)), m.get("version", "")
+
+
 def cuenta_raices():
     """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
     import json
@@ -907,10 +940,15 @@ def indice_recursos():
     badge_ana = (bi("{0} · {1} suttas · v{2}".format(*n_ana),
                     "{0} · {1} suttas · v{2}".format(*n_ana))
                  if n_ana else "análisis")
+    n_com = cuenta_comentarios()
+    badge_com = (bi("{0} obras · v{1} borrador".format(*n_com),
+                    "{0} works · v{1} draft".format(*n_com))
+                 if n_com else "comentarios")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
                  "__CASOS_BADGE__": badge_cas,
                  "__CLASIFICACION_BADGE__": badge_cla,
                  "__ANALISIS_BADGE__": badge_ana,
+                 "__COMENTARIOS_BADGE__": badge_com,
                  "__GLOSARIO_BADGE__": badge_glo,
                  "__RAICES_BADGE__": badge_rai, "__VERBO_BADGE__": badge_ver,
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
@@ -923,7 +961,8 @@ def indice_recursos():
                 and (ins != "__GLOSARIO_BADGE__" or n_glo)
                 and (ins != "__CASOS_BADGE__" or n_cas)
                 and (ins != "__CLASIFICACION_BADGE__" or n_cla)
-                and (ins != "__ANALISIS_BADGE__" or n_ana)]
+                and (ins != "__ANALISIS_BADGE__" or n_ana)
+                and (ins != "__COMENTARIOS_BADGE__" or n_com)]
 
     # Un quinto elemento True marca la insignia como obra en curso.
     externas = [tarjeta(href, ins, titulo, desc, externo=True,

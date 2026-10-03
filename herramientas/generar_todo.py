@@ -115,6 +115,10 @@ def main():
     if os.path.exists(os.path.join(recursos, "analisis", "plantilla.html")):
         fallos += correr("generar_analisis.py")
 
+    # comentarios de la escuela de Kaccāyana · tablas de docs/referencias/
+    if os.path.exists(os.path.join(recursos, "comentarios", "plantilla.html")):
+        fallos += correr("generar_comentarios.py")
+
     # términos técnicos sin entrada en el glosario de los globos (aviso, no
     # error): palabras pāḷi del texto explicativo de la clasificación y del
     # análisis que no cubre ninguna forma de recursos/terminos/terminos.json
