@@ -416,7 +416,7 @@ en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the sutta
   cita:'Citation'}};
 
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const norm=s=>String(s||'').normalize('NFC').normalize('NFD').replace(/\p{M}/gu,'').replace(/[ŋŊ]/g,'n').toLowerCase();
 const root=document.documentElement;
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const mq=c=>{try{return !!(window.matchMedia&&matchMedia(c).matches)}catch(e){return false}};
@@ -513,7 +513,8 @@ function fila(e){
   let fun=e.ejercicio?`<span class="ejer">${t.ex}</span>`:'';
   fun+=e.roles.length?roles(e.roles):(e.ejercicio?'':'—');
   if(e.respuesta)fun+=`<button class="ver-resp" aria-expanded="false" aria-controls="r${e.n}">${t.show}</button><div class="resp" id="r${e.n}" hidden><span class="lbl">${t.ans}</span>${roles(e.respuesta)}</div>`;
-  const q=norm(['§'+e.n,e.sutta,e.clase,e.anuvatti,e.roles.map(r=>r.join(' ')).join(' '),plano(e.ejemplo),e.nota?e.nota.es+' '+e.nota.en:'',e.ejercicio?'ejercicio exercise':''].join(' '));
+  /* búsqueda: lo que no está a la vista (§, traducción); el resto lo añade buscable() con el texto visible */
+  const q=['§'+e.n,e.tr?e.tr[lang]:''].join(' ');
   return `<tr class="r" id="s${e.n}" data-cap="${e.cap}" data-t="${esc(q)}">
 <td class="n"><a href="${url(e)}" title="${esc(t.open)}">§${e.n}</a></td>
 <td class="su">${esc(e.sutta||'')}</td>
@@ -544,14 +545,26 @@ function render(){
     sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
-  document.querySelectorAll('#out td.cl, #out td.no, #out .detalle p').forEach(glosar);
+  document.querySelectorAll('#out td.cl, #out td.no, #out .detalle p').forEach(glosar);buscable();
   document.querySelectorAll('#sb-list details[data-g]').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
+/* La búsqueda mira todo el texto de la fila y de su detalle (aunque esté
+   plegado), en la lengua de la página, sin acentos ni mayúsculas. El texto de
+   los globos no entra: no está en la página hasta que se abren. */
+/* Los rótulos fijos que se repiten en todas las filas (h4, los nombres de las
+   fuentes en dt, el aviso de OCR, los botones) no cuentan: si contaran, «Nyāsa»
+   encontraría las 405 filas. */
+const NO_BUSCAR='h4,dt,.ocr,button,.lbl';
+function textoBuscable(el){if(!el)return '';const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest(NO_BUSCAR)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  let s='';while(w.nextNode())s+=' '+w.currentNode.nodeValue;return s}
+function buscable(){document.querySelectorAll('#out tr.r').forEach(r=>{const d=r.nextElementSibling;
+  r.dataset.t=norm([r.dataset.t,textoBuscable(r),d&&d.classList.contains('det-row')?textoBuscable(d):''].join(' ')).replace(/\s+/g,' ')})}
 function filtrar(){
   const q=norm(document.getElementById('q').value.trim());let n=0;
+  const num=/^§?\s*(\d+)$/.exec(q);  /* «30» o «§30»: ese aforismo, no todo texto con un 30 */
   document.querySelectorAll('tr.r').forEach(r=>{
-    const ok=(st.cap==='all'||r.dataset.cap===st.cap)&&(!q||r.dataset.t.includes(q));
+    const ok=(st.cap==='all'||r.dataset.cap===st.cap)&&(!q||(num?r.id==='s'+num[1]:r.dataset.t.includes(q)));
     r.hidden=!ok;if(ok)n++;
     const d=r.nextElementSibling;const b=r.querySelector('.mas');
     if(d&&d.classList.contains('det-row'))d.hidden=!ok||!b||b.getAttribute('aria-expanded')!=='true';

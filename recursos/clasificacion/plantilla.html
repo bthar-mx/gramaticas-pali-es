@@ -410,7 +410,7 @@ const T={
   <p><strong>See also.</strong> <a href="../../en/kaccayana/sandhi/">1-Sandhi-Kappa</a>; <a href="../../en/kaccayana/nama/">2-Nāma-Kappa</a>; <a href="../../en/kaccayana/karaka/">3-Kāraka-Kappa</a>; <a href="../../en/kaccayana/samasa/">4-Samāsa-Kappa</a>; <a href="../../en/kaccayana/taddhita/">5-Taddhita-Kappa</a>; the <a href="../casos/">uses of the inflections</a>; the <a href="../glosario/">glossary of grammatical terminology</a>.</p>`}
 };
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const norm=s=>String(s||'').normalize('NFC').normalize('NFD').replace(/\p{M}/gu,'').replace(/[ŋŊ]/g,'n').toLowerCase();
 const root=document.documentElement;
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const mq=c=>{try{return !!(window.matchMedia&&matchMedia(c).matches)}catch(e){return false}};
@@ -518,7 +518,8 @@ function fila(e){
   const interp=m?`<span class="det">${esc(m[2])}</span>`:(nota?esc(prim)+(prim.length<nota.length?' …':''):'<span class="vacio">—</span>');
   const bh=/Bhāsāṭīkā|Sīlānanda/.test(nota);
   const detalle=`<div class="detalle">${nota?`<h4>${t.note}</h4><p>${esc(nota)}</p>`:''}<h4>${t.basis}</h4><dl><dt>Rūpasiddhi</dt><dd>${esc(e.base.ru[lang])}</dd><dt>Nyāsa</dt><dd>${esc(e.base.nyasa[lang])}</dd>${e.base.th?`<dt>Thitzana</dt><dd>${esc(e.base.th[lang])}</dd>`:''}${e.base.kv?`<dt>Kaccāyanavaṇṇanā</dt><dd>${esc(e.base.kv[lang])}</dd>`:''}</dl>${bh?`<p class="ocr">${t.bh}</p>`:''}<p class="ocr">${t.ocr}</p></div>`;
-  const txt=norm([e.n,e.sutta,e.tr.es,e.tr.en,e.op.es,e.op.en,e.nota?e.nota.es+' '+e.nota.en:'',e.base.ru.en,e.base.nyasa.en,e.base.kv?e.base.kv.en:'',D.tipos[e.tipo].pali,e.vidhi,e.grupo?T.es.grupo[e.grupo][0]+' '+T.en.grupo[e.grupo][0]:''].join(' '));
+  /* búsqueda: lo que no está a la vista (§, traducción, nombre del tipo); el resto lo añade buscable() con el texto visible */
+  const txt=['§'+e.n,e.tr[lang],D.tipos[e.tipo].pali,D.tipos[e.tipo][lang]].join(' ');
   return `<tr class="r" id="s${e.n}" data-n="${e.n}" data-cap="${e.cap}" data-tipo="${e.tipo}" data-v="${esc(vidhis(e).join('|'))}" data-nota="${e.nota?1:0}" data-t="${esc(txt)}">
    <td class="n">${tip}</td><td class="ru">${e.ru||'—'}</td><td class="su">${esc(e.sutta)}</td><td class="ti">${tipoChip(e.tipo)}</td>
    <td class="vi">${vidhis(e).map(v=>vChip(v)).join('')||'—'}</td><td class="op">${e.grupo?`<span class="chip g" tabindex="0" data-tip-h="${esc(t.grupo[e.grupo][0])}" data-tip="${esc(t.grupo[e.grupo][1])}">${esc(t.grupo[e.grupo][0])}</span>`:''}${esc(e.op[lang])}</td><td class="in">${interp}</td>
@@ -542,16 +543,28 @@ function render(){
     sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
-  document.querySelectorAll('#out tr.r td.op, #out tr.r td.in, #out .detalle p, #out .detalle dt, #out .detalle dd').forEach(glosar);chipsGlosa(document.getElementById('out'));
+  document.querySelectorAll('#out tr.r td.op, #out tr.r td.in, #out .detalle p, #out .detalle dt, #out .detalle dd').forEach(glosar);chipsGlosa(document.getElementById('out'));buscable();
   document.querySelectorAll('#sb-list details').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
 const abiertos={'k-sandhi-1':true};
+/* La búsqueda mira todo el texto de la fila y de su detalle (aunque esté
+   plegado), en la lengua de la página, sin acentos ni mayúsculas. El texto de
+   los globos no entra: no está en la página hasta que se abren. */
+/* Los rótulos fijos que se repiten en todas las filas (h4, los nombres de las
+   fuentes en dt, el aviso de OCR, los botones) no cuentan: si contaran, «Nyāsa»
+   encontraría las 405 filas. */
+const NO_BUSCAR='h4,dt,.ocr,button,.lbl';
+function textoBuscable(el){if(!el)return '';const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest(NO_BUSCAR)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  let s='';while(w.nextNode())s+=' '+w.currentNode.nodeValue;return s}
+function buscable(){document.querySelectorAll('#out tr.r').forEach(r=>{const d=r.nextElementSibling;
+  r.dataset.t=norm([r.dataset.t,textoBuscable(r),d&&d.classList.contains('det-row')?textoBuscable(d):''].join(' ')).replace(/\s+/g,' ')})}
 function filtrar(){
   const q=norm(document.getElementById('q').value.trim());let n=0;
+  const num=/^§?\s*(\d+)$/.exec(q);  /* «30» o «§30»: ese aforismo, no todo texto con un 30 */
   document.querySelectorAll('tr.r').forEach(r=>{
     const ok=(st.cap==='all'||r.dataset.cap===st.cap)&&(st.tipo==='all'||r.dataset.tipo===st.tipo)
-      &&(st.vidhi==='all'||r.dataset.v.split('|').includes(st.vidhi))&&(st.nota==='all'||r.dataset.nota==='1')&&(!q||r.dataset.t.includes(q));
+      &&(st.vidhi==='all'||r.dataset.v.split('|').includes(st.vidhi))&&(st.nota==='all'||r.dataset.nota==='1')&&(!q||(num?r.id==='s'+num[1]:r.dataset.t.includes(q)));
     r.hidden=!ok;if(ok)n++;
     const d=r.nextElementSibling;if(!ok&&d)d.hidden=true;else if(d&&r.querySelector('.mas').getAttribute('aria-expanded')==='true')d.hidden=false;
   });

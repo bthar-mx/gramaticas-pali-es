@@ -100,10 +100,16 @@ def main():
     for nombre in meta["capitulos"]:
         cap = json.load(open(os.path.join(DIR, "datos", nombre), encoding="utf-8"))
         textos = leer_md(os.path.join(RAIZ, "kaccayana", cap["md"] + ".md"))[0]
+        en = os.path.join(RAIZ, "kaccayana", cap["md"] + ".en.md")
+        textos_en = leer_md(en)[0] if os.path.exists(en) else {}
         fallos += verificar(cap, textos)
         for s in cap["suttas"]:
             if s["n"] in textos:
                 s["sutta"] = textos[s["n"]]["sutta"]
+                # la traducción publicada: no se muestra en la tabla, pero entra
+                # en la búsqueda (v0.3.3)
+                s["tr"] = {"es": textos[s["n"]]["tr"],
+                           "en": textos_en.get(s["n"], {}).get("tr", "")}
         caps.append(cap)
     indice = []
     for c in meta["indice"]:
