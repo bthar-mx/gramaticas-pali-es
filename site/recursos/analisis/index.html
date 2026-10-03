@@ -304,7 +304,7 @@ footer a{color:var(--nila)}
   tr.det-row td{padding:0 0 14px}
 }
 @media (prefers-reduced-motion:reduce){.sidebar,body{transition:none}}
-@media print{.bar,.sidebar,#top-btn,.mas,.preg{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
+@media print{.tabla-caja{overflow:visible}.bar,.sidebar,#top-btn,.mas,.preg{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
 
 /* ---- propio de esta página ---- */
 .gl{border-bottom:1px dotted var(--nila);cursor:help}
@@ -332,7 +332,11 @@ details.plegable p{margin:0 0 8px}
 .mk-r{font-weight:700;color:var(--haritala);background:var(--hl);border-radius:2px;padding:0 1px}
 .mk-x{text-decoration:line-through;text-decoration-thickness:2px}
 .ed{font-family:var(--mono);font-size:10px;font-weight:600;border:1px dashed var(--soot);border-radius:2px;padding:0 4px;margin-left:4px;color:var(--soot);cursor:help;white-space:nowrap}
-table.an{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0 40px}
+/* La tabla va en su propia caja con desplazamiento horizontal (como en
+   /recursos/comentarios/): si no cabe, se desplaza ella y no la página. */
+.tabla-caja{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:10px 0 40px}
+.tabla-caja:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
+table.an{width:100%;border-collapse:collapse;font-size:14.5px;margin:0}
 table.an thead th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--soot);padding:8px;border-bottom:1px solid var(--soot);vertical-align:bottom}
 table.an td{padding:9px 8px;border-bottom:1px solid var(--hair);vertical-align:baseline}
 table.an tr.sec td{border-bottom:1px solid var(--hair)}
@@ -340,7 +344,9 @@ table.an tr.marca{background:var(--hl)}
 table.an td.n{white-space:nowrap}
 table.an td.n a{font-family:var(--mono);font-size:12px;font-weight:700;text-decoration:none;color:var(--nila)}
 table.an td.su{font-style:italic}
-table.an td.ej{white-space:nowrap}
+/* El ejemplo se parte, si hace falta, sólo después de la flecha */
+table.an td.ej{white-space:normal}
+table.an td.ej .nw{white-space:nowrap}
 table.an td.pdf{font-family:var(--mono);font-size:11.5px;color:var(--soot);white-space:nowrap}
 table.an td.no{color:var(--soot);font-size:13.5px}
 .rol{display:block}.rol b{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--soot);margin-right:4px}
@@ -399,10 +405,12 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 </div></div>
 
 <main class="wrap">
+  <div class="tabla-caja" id="tabla-caja" tabindex="0" role="region">
   <table class="an" id="tabla">
     <thead><tr><th>§</th><th>Sutta</th><th data-t="h_class">Clase de sutta</th><th>Anuvatti</th><th data-t="h_roles">Funciones</th><th data-t="h_ex">Ejemplo</th><th data-t="h_notes">Notas</th><th data-t="h_src">Fuente</th><th></th></tr></thead>
     <tbody id="out"></tbody>
   </table>
+  </div>
   <div class="empty" id="empty" hidden><p data-t="empty">Ningún sutta coincide.</p></div>
 </main>
 <button id="top-btn" aria-label="↑">↑</button>
@@ -479,6 +487,10 @@ const st={cap:'all'};
 const F=D.filas;
 const MY=/[က-႟]/;
 const txt=s=>MY.test(s)?`<span class="my" lang="my">${esc(s)}</span>`:esc(s);
+/* «a + b → c» en dos trozos que no se parten por dentro: la línea, si se
+   rompe, se rompe después de la flecha */
+const ejemplo=s=>{const p=String(s).split('→');
+  return p.length===2?`<span class="nw">${marcar(p[0].trimEnd())} →</span> <span class="nw">${marcar(p[1].trimStart())}</span>`:marcar(s)};
 const marcar=s=>esc(s).replace(/\{(kx|nx|k|n|r|x)\|([^{}|]+)\}/g,(m,t,v)=>`<span class="${t.split('').map(c=>'mk-'+c).join(' ')}">${v}</span>`);
 const plano=s=>String(s||'').replace(/\{(?:kx|nx|k|n|r|x)\|([^{}|]+)\}/g,'$1');
 const CASO={'7':'7.ª','5':'5.ª','3':'3.ª','5+7':'5.ª + 7.ª'};
@@ -536,6 +548,7 @@ function textos(){
   document.querySelectorAll('[data-t]').forEach(el=>el.textContent=t[el.dataset.t]);
   document.querySelectorAll('[data-t-html]').forEach(el=>el.innerHTML=t[el.dataset.tHtml]);
   document.getElementById('q').placeholder=t.search;
+  document.getElementById('tabla-caja').setAttribute('aria-label',t.title_short);
   document.title=t.title;
   document.getElementById('term').innerHTML='<dl class="ley-an">'+t.terms.map(([a,b])=>`<div><dt>${esc(a)}</dt><dd>${esc(b)}</dd></div>`).join('')+'</dl>';
   const c=D.meta.cita,cl=c[lang];
@@ -572,7 +585,7 @@ function fila(e){
 <td class="cl" data-h="${esc(t.h_class)}">${e.clase?txt(e.clase):'—'}</td>
 <td data-h="Anuvatti">${e.anuvatti?esc(e.anuvatti):'—'}</td>
 <td data-h="${esc(t.h_roles)}">${fun}</td>
-<td class="ej" data-h="${esc(t.h_ex)}">${e.ejemplo?marcar(e.ejemplo):'—'}</td>
+<td class="ej" data-h="${esc(t.h_ex)}">${e.ejemplo?ejemplo(e.ejemplo):'—'}</td>
 <td class="no" data-h="${esc(t.h_notes)}">${nota?esc(corta):'—'}</td>
 <td class="pdf" data-h="${esc(t.h_src)}">PDF ${e.pdf}</td>
 <td class="x">${PREG.ok?`<button class="preg" data-n="${e.n}" aria-label="${esc(t.ask)} §${e.n}" title="${esc(t.ask)}">?</button>`:''}${larga?`<button class="mas" aria-expanded="false" aria-controls="d${e.n}" aria-label="${t.more}" title="${t.more}">▸</button>`:''}</td></tr>
@@ -706,7 +719,8 @@ document.addEventListener('mouseout',e=>{if(conRaton()&&e.target.closest('[data-
 document.addEventListener('focusin',e=>{const a=e.target.closest('[data-g]');if(a&&a.matches(':focus-visible'))abrirTip(a)});
 document.addEventListener('focusout',e=>{if(e.target.closest('[data-g]'))programarOcultar()});
 document.addEventListener('click',e=>{const a=e.target.closest('[data-g]');if(a){if(conRaton())return;if(tipDe===a)hideTip();else abrirTip(a);return}if(!e.target.closest('#tip'))hideTip()});
-addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
+addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});
+document.getElementById('tabla-caja').addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
 
 /* ---------- «Preguntar» (2026-10-03): /api/preguntar, detrás de Cloudflare Access ----------
    Sin sesión, Access responde con una redirección a su página de acceso; con
