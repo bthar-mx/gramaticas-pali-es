@@ -234,17 +234,20 @@ def main():
     datos = {"meta": meta, "titulo": {"es": es["titulo"], "en": en["titulo"]},
              "entradilla": {"es": es["entradilla"], "en": en["entradilla"]},
              "secciones": secciones}
+    try:
+        import terminos
+        # sólo lo que la página usa: la «fuente» interna de cada entrada (que
+        # puede nombrar docs/fuentes/) no viaja a la página
+        datos["terminos"] = [{k: t[k] for k in ("clave", "termino", "formas", "def", "ejemplo") if k in t}
+                             for t in terminos.cargar(RAIZ)]
+    except ValueError as err:
+        fallos.append("glosario de los globos: {0}".format(err))
+
     plano = json.dumps(datos, ensure_ascii=False)
     if "docs/fuentes" in plano or "fuentes/" in re.sub(r'https?://\S+', '', plano):
         fallos.append("algo enlaza o nombra docs/fuentes/: no se publica nada de ahí")
     if not nfc(datos):
         fallos.append("texto que no está en NFC")
-
-    try:
-        import terminos
-        datos["terminos"] = terminos.cargar(RAIZ)
-    except ValueError as err:
-        fallos.append("glosario de los globos: {0}".format(err))
 
     if fallos:
         print("Los comentarios de Kaccāyana NO cuadran; no se publica:")
