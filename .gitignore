@@ -17,3 +17,7 @@ dpd-descomposicion.tsv
 dpd-pos.tsv
 dpd-mobile-db.zip
 dpd-mobile*.db
+
+# Archivos que Claude prepara para herramientas/publicar.sh (ruta y mensaje
+# de cada publicación); son locales y no viajan.
+herramientas/.publicar/
