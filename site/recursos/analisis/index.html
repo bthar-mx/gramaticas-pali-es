@@ -177,6 +177,28 @@ td.x{width:1%;white-space:nowrap;text-align:right}
 .mas:hover{border-color:var(--nila)}
 .mas[aria-expanded=true]{background:var(--nila);color:var(--ola-2);border-color:var(--nila)}
 .mas:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+/* «Preguntar» (2026-10-03): sólo aparece con sesión de Access en /api/preguntar */
+.preg{font-family:var(--mono);font-size:12px;line-height:1;background:none;color:var(--nila);
+  border:1px solid var(--hair);border-radius:2px;padding:4px 7px;cursor:pointer;margin-right:4px}
+.preg:hover{border-color:var(--nila)}
+.preg:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
+#preg-dlg{max-width:min(40em,calc(100vw - 32px));width:100%;border:1px solid var(--hair);border-radius:4px;
+  background:var(--ola-2);color:var(--ink);padding:18px 20px;box-shadow:0 8px 30px var(--shadow)}
+#preg-dlg::backdrop{background:rgba(0,0,0,.35)}
+#preg-dlg h2{font-size:17px;margin:0 0 4px}
+#preg-dlg .su{font-style:italic;color:var(--soot);margin:0 0 10px}
+#preg-dlg textarea{width:100%;box-sizing:border-box;min-height:5.5em;font:inherit;padding:8px;border:1px solid var(--hair);
+  border-radius:2px;background:var(--ola);color:var(--ink)}
+#preg-dlg .acciones{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+#preg-dlg .acciones button{font:inherit;font-size:14px;padding:5px 12px;border:1px solid var(--nila);border-radius:2px;cursor:pointer;background:none;color:var(--nila)}
+#preg-dlg .acciones button.prim{background:var(--nila);color:var(--ola-2)}
+#preg-dlg .acciones button:disabled{opacity:.5;cursor:default}
+#preg-dlg .quedan{font-family:var(--mono);font-size:11px;color:var(--soot);margin-left:auto}
+#preg-out{margin-top:12px;max-height:50vh;overflow:auto}
+#preg-out:empty{display:none}
+#preg-out .err{color:var(--rakta)}
+#preg-dlg .descargo{font-size:12px;color:var(--soot);margin:10px 0 0}
+.preg-entrar{font-size:12px}
 tr.r:hover td{background:var(--hover)}
 tr.r.marca td{background:var(--hl)}
 tr.det-row td{padding:0 8px 16px;border-bottom:1px solid var(--hair)}
@@ -276,7 +298,7 @@ footer a{color:var(--nila)}
   tr.det-row td{padding:0 0 14px}
 }
 @media (prefers-reduced-motion:reduce){.sidebar,body{transition:none}}
-@media print{.bar,.sidebar,#top-btn,.mas{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
+@media print{.bar,.sidebar,#top-btn,.mas,.preg{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
 
 /* ---- propio de esta página ---- */
 .gl{border-bottom:1px dotted var(--nila);cursor:help}
@@ -379,10 +401,20 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 </main>
 <button id="top-btn" aria-label="↑">↑</button>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
+<dialog id="preg-dlg" aria-labelledby="preg-tit">
+  <form method="dialog" id="preg-form">
+    <h2 id="preg-tit"></h2><p class="su" id="preg-su"></p>
+    <textarea id="preg-q" maxlength="1500" required></textarea>
+    <div class="acciones"><button type="submit" class="prim" id="preg-env" data-t="ask_send">Preguntar</button><button type="button" id="preg-cerrar" data-t="ask_close">Cerrar</button><span class="quedan" id="preg-quedan"></span></div>
+  </form>
+  <div id="preg-out" aria-live="polite"></div>
+  <p class="descargo" data-t="ask_note"></p>
+</dialog>
 
 <footer><div class="wrap">
   <p class="aviso" data-t-html="aviso"></p>
   <p class="version-foot" id="vfoot"></p>
+  <p class="preg-entrar" id="preg-entrar" hidden><a href="/api/preguntar" data-t="ask_login">Iniciar sesión para preguntar</a></p>
   <p class="licencia"><span class="marca-lockup"></span><span data-t-html="lic"></span></p>
 </div></footer>
 
@@ -401,7 +433,11 @@ es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los 
   more:'más',open:'Abrir el aforismo y su traducción',ver:'Versión',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Borrador.</b> Lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.',
   lic:'Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH) a partir de la obra citada. Copyright © 2026 IEBH.',
-  cita:'Cita'},
+  cita:'Cita',
+  ask:'Preguntar',ask_title:n=>'Preguntar sobre §'+n,ask_ph:'Su pregunta sobre esta fila (análisis, funciones, ejemplo, notas)…',ask_send:'Preguntar',ask_close:'Cerrar',
+  ask_wait:'Pensando…',ask_left:n=>'Quedan hoy: '+n,ask_cut:'(respuesta cortada por el límite de extensión)',
+  ask_login:'Iniciar sesión para preguntar (acceso restringido)',ask_err:'No se pudo preguntar: ',
+  ask_note:'Respuesta generada por un modelo de IA (Claude) sólo a partir de esta fila y del glosario del sitio. No está revisada por el IEBH: cotéjela con la fuente.'},
 en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the suttas',subtitle:'following the Visuddhāyuṃ Kaccāyana-ṭīkā',back:'← Resources · Pāḷi Grammars',
   draft:'Draft',sb_open:'Expand',sb_fold:'Fold',pend:'pending',all:'All',search:'Search sutta, term or example',empty:'No sutta matches.',
   intro:'Each Kaccāyana sutta as the <i>Visuddhāyuṃ</i> analyses it: class, anuvatti, the role of each word and the example of the model derivation.',
@@ -413,7 +449,11 @@ en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the sutta
   more:'more',open:'Open the aphorism and its translation',ver:'Version',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Draft.</b> A reading of the Burmese text from a scan, checked against the page images.',
   lic:'Study material of the Instituto de Estudios Buddhistas Hispano (IEBH), based on the work cited. Copyright © 2026 IEBH.',
-  cita:'Citation'}};
+  cita:'Citation',
+  ask:'Ask',ask_title:n=>'Ask about §'+n,ask_ph:'Your question about this row (analysis, roles, example, notes)…',ask_send:'Ask',ask_close:'Close',
+  ask_wait:'Thinking…',ask_left:n=>'Left today: '+n,ask_cut:'(answer cut off at the length limit)',
+  ask_login:'Sign in to ask (restricted access)',ask_err:'Could not ask: ',
+  ask_note:'Answer generated by an AI model (Claude) from this row and the site glossary only. Not reviewed by the IEBH: check it against the source.'}};
 
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s||'').normalize('NFC').normalize('NFD').replace(/\p{M}/gu,'').replace(/[ŋŊ]/g,'n').toLowerCase();
@@ -524,7 +564,7 @@ function fila(e){
 <td class="ej" data-h="${esc(t.h_ex)}">${e.ejemplo?marcar(e.ejemplo):'—'}</td>
 <td class="no" data-h="${esc(t.h_notes)}">${nota?esc(corta):'—'}</td>
 <td class="pdf" data-h="${esc(t.h_src)}">PDF ${e.pdf}</td>
-<td class="x">${larga?`<button class="mas" aria-expanded="false" aria-controls="d${e.n}" aria-label="${t.more}" title="${t.more}">▸</button>`:''}</td></tr>
+<td class="x">${PREG.ok?`<button class="preg" data-n="${e.n}" aria-label="${esc(t.ask)} §${e.n}" title="${esc(t.ask)}">?</button>`:''}${larga?`<button class="mas" aria-expanded="false" aria-controls="d${e.n}" aria-label="${t.more}" title="${t.more}">▸</button>`:''}</td></tr>
 ${larga?`<tr class="det-row" id="d${e.n}" hidden><td colspan="9"><div class="detalle"><p>${esc(nota)}</p></div></td></tr>`:''}`;
 }
 const abiertos={};
@@ -656,6 +696,41 @@ document.addEventListener('focusin',e=>{const a=e.target.closest('[data-g]');if(
 document.addEventListener('focusout',e=>{if(e.target.closest('[data-g]'))programarOcultar()});
 document.addEventListener('click',e=>{const a=e.target.closest('[data-g]');if(a){if(conRaton())return;if(tipDe===a)hideTip();else abrirTip(a);return}if(!e.target.closest('#tip'))hideTip()});
 addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
+
+/* ---------- «Preguntar» (2026-10-03): /api/preguntar, detrás de Cloudflare Access ----------
+   Sin sesión, Access responde con una redirección a su página de acceso; con
+   redirect:'manual' eso llega como 'opaqueredirect' y basta para saber que no
+   hay que enseñar los botones. Al público no se le enseña nada más que el
+   enlace discreto del pie, que lleva a iniciar sesión. */
+const PREG={ok:false,restantes:null,n:null};
+const dlg=document.getElementById('preg-dlg'),pq=document.getElementById('preg-q'),pout=document.getElementById('preg-out'),penv=document.getElementById('preg-env');
+function quedan(){document.getElementById('preg-quedan').textContent=PREG.restantes===null?'':T[lang].ask_left(PREG.restantes)}
+function abrirPreg(n){
+  const t=T[lang],e=F.find(x=>x.n===n);if(!e||!dlg.showModal)return;
+  PREG.n=n;document.getElementById('preg-tit').textContent=t.ask_title(n);
+  document.getElementById('preg-su').textContent=e.sutta||'';pq.placeholder=t.ask_ph;
+  pout.innerHTML='';penv.disabled=PREG.restantes===0;quedan();dlg.showModal();pq.focus();
+}
+document.getElementById('out').addEventListener('click',e=>{const b=e.target.closest('.preg');if(b)abrirPreg(+b.dataset.n)});
+document.getElementById('preg-cerrar').onclick=()=>dlg.close();
+document.getElementById('preg-form').addEventListener('submit',async ev=>{
+  ev.preventDefault();const t=T[lang],q=pq.value.trim();if(!q||PREG.n===null)return;
+  penv.disabled=true;pout.innerHTML=`<p>${esc(t.ask_wait)}</p>`;
+  try{
+    const r=await fetch('/api/preguntar',{method:'POST',redirect:'manual',credentials:'same-origin',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify({sutta:PREG.n,pregunta:q,lang})});
+    if(r.type==='opaqueredirect'){PREG.ok=false;throw new Error(t.ask_login)}
+    const j=await r.json().catch(()=>({}));
+    if(typeof j.restantes==='number')PREG.restantes=j.restantes;
+    if(!r.ok||!j.ok)throw new Error(j.error||('HTTP '+r.status));
+    pout.innerHTML=j.respuesta.split(/\n\s*\n/).map(p=>`<p>${esc(p.trim())}</p>`).join('')+(j.cortada?`<p><i>${esc(t.ask_cut)}</i></p>`:'');
+  }catch(err){pout.innerHTML=`<p class="err">${esc(t.ask_err+(err&&err.message||err))}</p>`}
+  quedan();penv.disabled=PREG.restantes===0;
+});
+fetch('/api/preguntar?json=1',{redirect:'manual',credentials:'same-origin'})
+  .then(r=>r.ok?r.json():null).catch(()=>null)
+  .then(j=>{if(j&&j.ok){PREG.ok=true;PREG.restantes=j.restantes;render()}
+    else document.getElementById('preg-entrar').hidden=false});
 
 textos();render();
 /* un § en la dirección (#s12) lleva a esa fila */
