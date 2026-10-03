@@ -17,10 +17,11 @@
   //   ANTHROPIC_API_KEY      la clave de la API
   //   ACCESO_AUD_PREGUNTAR   el AUD tag de la aplicación «gramaticas-preguntar»
   // Opcional: PREGUNTAR_MODELO (por omisión, claude-sonnet-5-5).
-  // El contador diario y el registro van al KV PREGUNTAS si está enlazado y,
-  // si no, al de VEREDICTOS. OJO: un enlace puesto sólo en el panel lo quita
-  // el siguiente despliegue desde main, porque manda este archivo; PREGUNTAS
-  // tiene que figurar abajo, en kv_namespaces, con su id. Ver worker/preguntar.js.
+  // El contador diario y el registro van al KV PREGUNTAS (creado por el IEBH
+  // el 2026-10-03 y enlazado abajo). Figura aquí y no sólo en el panel
+  // porque cada despliegue desde main aplica este archivo, y un enlace que no
+  // esté en él se pierde. Si faltara, el worker recurre a VEREDICTOS. Ver
+  // worker/preguntar.js.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
   "main": "worker/index.js",
@@ -32,6 +33,10 @@
     {
       "binding": "VEREDICTOS",
       "id": "6510113d133b4f07aaa7f9320e3156fd"
+    },
+    {
+      "binding": "PREGUNTAS",
+      "id": "137986ff87b247db80545826eb3afcc6"
     }
   ]
 }
