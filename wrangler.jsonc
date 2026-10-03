@@ -9,6 +9,13 @@
   // y la clave de lectura vive como secreto del worker:
   //   npx wrangler secret put CLAVE_VEREDICTOS
   // El resto: docs/solucionador/automatizacion.md.
+  //
+  // /api/preguntar (botón «Preguntar» de /recursos/analisis/, 2026-10-03)
+  // usa el mismo KV para su contador diario y dos secretos más, que se ponen
+  // en el panel o con «npx wrangler secret put»; sin ellos responde 503:
+  //   ANTHROPIC_API_KEY      la clave de la API (nunca en el repositorio)
+  //   ACCESO_AUD_PREGUNTAR   el AUD tag de la aplicación «gramaticas-preguntar»
+  // Opcional: PREGUNTAR_MODELO (por omisión, claude-opus-5-5). Ver worker/preguntar.js.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
   "main": "worker/index.js",

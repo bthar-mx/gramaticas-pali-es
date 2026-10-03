@@ -69,6 +69,10 @@
    /api/veredictos, como segundo «destination». La galleta de Access vale por
    aplicación: si fuera otra aplicación, iniciar sesión ahí no abriría el POST. */
 
+/* El botón «Preguntar» de /recursos/analisis/ vive en su propio archivo; usa
+   la identidad de aquí, con el AUD de su aplicación de Access. */
+import { preguntar, PREFIJO_PREGUNTAS } from "./preguntar.js";
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -80,6 +84,9 @@ export default {
     }
     if (url.pathname === "/api/entrar") {
       return entrar(request, env);
+    }
+    if (url.pathname === "/api/preguntar") {
+      return preguntar(request, env, url, identidad);
     }
     return env.ASSETS.fetch(request);
   },
@@ -239,7 +246,9 @@ async function cola(request, env, url) {
     let cursor;
     for (;;) {
       const lista = await env.VEREDICTOS.list(cursor ? { cursor } : {});
-      claves.push(...lista.keys);
+      // Los contadores de /api/preguntar viven en el mismo KV con su prefijo;
+      // no son veredictos y quien recoge no debe verlos.
+      claves.push(...lista.keys.filter((k) => !k.name.startsWith(PREFIJO_PREGUNTAS)));
       if (lista.list_complete) break;
       cursor = lista.cursor;
     }
@@ -427,8 +436,11 @@ function rotuloDe(correo, env) {
   return r || "revisor verificado";
 }
 
-async function identidad(request, env) {
-  const equipo = env.ACCESO_EQUIPO, aud = env.ACCESO_AUD;
+/* «aud» se pasa cuando la ruta es de OTRA aplicación de Access del mismo
+   equipo: /api/preguntar vive en «gramaticas-preguntar», no en «gramaticas»,
+   y un token de una no vale en la otra. */
+async function identidad(request, env, aud = env.ACCESO_AUD) {
+  const equipo = env.ACCESO_EQUIPO;
   // Sin configurar: la cola sigue como estaba. Es deliberado — desplegar
   // este worker no debe cerrar la puerta antes de que exista la llave.
   if (!equipo || !aud) return { configurado: false, correo: null };
