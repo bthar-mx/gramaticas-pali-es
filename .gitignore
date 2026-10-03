@@ -21,3 +21,8 @@ dpd-mobile*.db
 # Archivos que Claude prepara para herramientas/publicar.sh (ruta y mensaje
 # de cada publicación); son locales y no viajan.
 herramientas/.publicar/
+
+# Fuentes no publicadas (decisión pendiente de derechos)
+docs/fuentes/nyasappadipika/
+docs/fuentes/padarupasiddhitika/raw/
+docs/fuentes/padarupasiddhitika/paginas/
