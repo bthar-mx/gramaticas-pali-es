@@ -9,6 +9,19 @@
   // y la clave de lectura vive como secreto del worker:
   //   npx wrangler secret put CLAVE_VEREDICTOS
   // El resto: docs/solucionador/automatizacion.md.
+  //
+  // /api/preguntar (botón «Preguntar» de /recursos/analisis/, 2026-10-03)
+  // necesita dos secretos más, que se ponen en el panel o con
+  // «npx wrangler secret put»; sin ellos responde 503. Aquí van sólo los
+  // NOMBRES, nunca los valores:
+  //   ANTHROPIC_API_KEY      la clave de la API
+  //   ACCESO_AUD_PREGUNTAR   el AUD tag de la aplicación «gramaticas-preguntar»
+  // Opcional: PREGUNTAR_MODELO (por omisión, claude-sonnet-5-5).
+  // El contador diario y el registro van al KV PREGUNTAS (creado por el IEBH
+  // el 2026-10-03 y enlazado abajo). Figura aquí y no sólo en el panel
+  // porque cada despliegue desde main aplica este archivo, y un enlace que no
+  // esté en él se pierde. Si faltara, el worker recurre a VEREDICTOS. Ver
+  // worker/preguntar.js.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
   "main": "worker/index.js",
@@ -20,6 +33,10 @@
     {
       "binding": "VEREDICTOS",
       "id": "6510113d133b4f07aaa7f9320e3156fd"
+    },
+    {
+      "binding": "PREGUNTAS",
+      "id": "137986ff87b247db80545826eb3afcc6"
     }
   ]
 }
