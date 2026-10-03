@@ -210,7 +210,7 @@ a.sref:focus-visible,.chip[data-tip]:focus-visible{outline:2px solid var(--harit
 .vline{display:flex;align-items:center;flex-wrap:wrap;gap:6px 0;margin-top:12px}
 .vline .version-badge{margin-top:0}
 /* ---------- tooltip de sutta (como en /recursos/sandhi/ y /recursos/paradigmas/) ---------- */
-#tip{position:fixed;z-index:200;max-width:380px;pointer-events:none;opacity:0;
+#tip{position:fixed;z-index:200;max-width:min(380px,calc(100vw - 24px));box-sizing:border-box;pointer-events:none;opacity:0;
   transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
   background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
   box-shadow:0 8px 26px var(--shadow);padding:13px 15px;font-size:15.5px;line-height:1.5}
@@ -224,7 +224,7 @@ a.sref:focus-visible,.chip[data-tip]:focus-visible{outline:2px solid var(--harit
 #tip.glosa{pointer-events:auto}
 #tip .gd{margin:0;font-size:15px}
 #tip .te a{color:var(--nila)}
-#tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
+#tip.llano{max-width:min(340px,calc(100vw - 24px));padding:11px 15px;font-size:15px;line-height:1.55}
 #tip.llano p{margin:0}
 #tip.llano i{font-weight:700}
 mark{background:var(--hl);color:inherit;border-radius:2px;box-shadow:inset 0 -1px 0 var(--haritala)}
@@ -435,28 +435,38 @@ GF.sort((a,b)=>b[0].length-a[0].length);
 const GFK={};GF.forEach(([f,k])=>GFK[f.toLowerCase()]=k);
 const GRE=GF.length?new RegExp('(?<![\\p{L}\\p{M}])('+GF.map(([f])=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\p{L}\\p{M}])','giu'):null;
 const gClave=x=>GFK[String(x||'').toLowerCase()]||null;
+/* Citas pāḷi de dos palabras o más entre comillas: son texto del sutta o de la
+   fuente, y no se glosan. Una palabra suelta entre comillas («ca», «kvaci») sí. */
+const CITA=/«[^»]*»|“[^”]*”/g;
+function rangosCita(t){const r=[];let m;CITA.lastIndex=0;while((m=CITA.exec(t)))if(/\s/.test(m[0].trim()))r.push([m.index,m.index+m[0].length]);return r}
 function glosar(el){
   if(!GRE||!el)return;
+  const tr=el.closest('tr[id]'),n=tr?+tr.id.slice(1):null;
   const vistos=new Set();el.querySelectorAll('[data-g]').forEach(s=>vistos.add(s.dataset.g));
-  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,.chip,.ed,.ejer,.my,[data-g],[data-sutta]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:x=>x.parentElement.closest('a,button,.chip,.ed,.ejer,.my,[data-g],[data-sutta]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
   const nodos=[];while(w.nextNode())nodos.push(w.currentNode);
-  nodos.forEach(n=>{
-    const t=n.nodeValue;let m,frag=null,ult=0;GRE.lastIndex=0;
+  nodos.forEach(nd=>{
+    const t=nd.nodeValue,citas=rangosCita(t);let m,frag=null,ult=0;GRE.lastIndex=0;
     while((m=GRE.exec(t))){
-      const k=GFK[m[1].toLowerCase()];if(!k||vistos.has(k))continue;vistos.add(k);
+      const k=GFK[m[1].toLowerCase()];if(!k||vistos.has(k))continue;
+      if(citas.some(([a,b])=>m.index>=a&&m.index<b))continue;
+      if(n!==null&&(GK[k].no_en||[]).includes(n))continue;
+      vistos.add(k);
       frag=frag||document.createDocumentFragment();
       frag.appendChild(document.createTextNode(t.slice(ult,m.index)));
       const s=document.createElement('span');s.className='gl';s.dataset.g=k;s.tabIndex=0;s.textContent=m[1];
       frag.appendChild(s);ult=m.index+m[1].length;
     }
-    if(frag){frag.appendChild(document.createTextNode(t.slice(ult)));n.parentNode.replaceChild(frag,n)}
+    if(frag){frag.appendChild(document.createTextNode(t.slice(ult)));nd.parentNode.replaceChild(frag,nd)}
   });
 }
 function glosaHTML(k){
   const t=GK[k];if(!t)return '';const e=t.ejemplo;
+  const cab=`<span class="tn">${esc(t.termino)}</span><p class="gd">${esc(t.def[lang])}</p>`;
+  if(!e)return cab;  /* obras y capítulos sin publicar: sólo la descripción */
   const aqui=document.getElementById('s'+e.n);
   const href=aqui?'#s'+e.n:(lang==='en'?'../../en/kaccayana/':'../../kaccayana/')+e.cap+'/#s'+e.n;
-  return `<span class="tn">${esc(t.termino)}</span><p class="gd">${esc(t.def[lang])}</p>`+
+  return cab+
     `<p class="te">${lang==='en'?'Example':'Ejemplo'}: <a href="${href}">§${e.n}</a> <i>${esc(e.sutta||'')}</i>`+
     `${e.nota?' — '+esc(e.nota[lang]):''}${e.tr&&e.tr[lang]?` · «${esc(e.tr[lang])}»`:''}</p>`;
 }
@@ -496,6 +506,8 @@ function textos(){
   document.getElementById('vfoot').innerHTML=`<strong>${t.ver} ${esc(D.version)}</strong> — <time datetime="${D.fecha}">${largo}</time>. ${esc(D.nota_version[lang])}`;
   const lb=document.getElementById('lang-btn');lb.querySelectorAll('.lang-seg').forEach(x=>x.classList.toggle('lang-cur',x.dataset.l===lang));
   lb.dataset.tip=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.dataset.tip);
+  /* globos también en la introducción, la leyenda y las notas (2026-10-03) */
+  ['.tag','#ley-tipos td:last-child','#ley-vidhi td:last-child','#pie'].forEach(s=>document.querySelectorAll(s).forEach(glosar));
 }
 
 /* la tabla */

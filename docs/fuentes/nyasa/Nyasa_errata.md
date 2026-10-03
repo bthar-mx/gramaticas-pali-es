@@ -36,3 +36,9 @@ por capítulos, verificada byte a byte contra el master).
 - **Corrupción de espaciado extensa** en Samāsa, Taddhita, Ākhyāta, Kibbidhāna y Uṇādi (palabras fusionadas y partidas en medio de línea, p. ej. «gadhi iccetasmā ikapaccayohotītiñāpa naṃtthaṃ»). Demasiado extensa y ambigua para corrección mecánica: corregir capítulo por capítulo en el punto de uso, cuando cada capítulo entre en traducción. Los capítulos 1–3 (Sandhi, Nāma, Kāraka) están notablemente más limpios.
 - **Anclas de sutta:** en Sandhi–Kāraka los números `(N)` coinciden con los § del proyecto (verificado: §12, §52, §53, §271, §284). No todos los suttas llevan ancla tipográficamente uniforme (algunos sin negrita o con espacios: `( 570 )`). El **Uṇādi reinicia la numeración** en (1): no usar sus anclas como § sin concordancia.
 - **Límite Sandhi/Nāma en esta edición:** §52 *Jinavacanayuttaṃ hi* abre el Nāmakappa aquí (tras el colofón del quinto pariccheda del Sandhi). Cotejar con la división que usa el proyecto antes de citar «capítulo» del Nyāsa.
+
+## 4. Correcciones propuestas tras cotejo con el escaneo — pendientes de aprobación del IEBH
+
+| Lugar | Transcripción | Escaneo 1933 | Propuesta | Cotejo |
+|---|---|---|---|---|
+| §2 (comentario), p. 9 de la edición; `Nyasa-01-sandhi.md` l. 105 y máster l. 1743 | «Yā pana **anvatthasañña**, sā tañ c' eva sādheti» | «ယာပန အနွတ္ထသညာ၊ သာ တဉ္စေဝ သာဓေတိ» — **anvatthasaññā** (ā larga) | anvatthasañña → **anvatthasaññā** | 2026-10-03, imagen de `Nyasa_1933_escaneo_bitonal_200dpi.pdf`, PDF p. 47 (= p. 9 impresa). El resto de la frase («Rūḷhī-anvatthavasena dvippakārāsu saññāsu yā rūḷhīsaññā, sā vohārasukhamattam eva sādheti … attano atthassa sabhāvañ ca dīpeti») coincide; el guion de «Rūḷhī-anvattha°» es editorial (la escritura birmana no lo marca). |

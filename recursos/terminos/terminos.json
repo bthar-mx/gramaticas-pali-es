@@ -1,7 +1,7 @@
 {
- "version": "0.1",
+ "version": "0.2",
  "fecha": "2026-10-03",
- "nota": "Glosario de los globos de /recursos/clasificacion/ y /recursos/analisis/. «revisar»: redacción IEBH por revisar. El ejemplo se completa al generar con el texto pāḷi y la primera línea de la traducción publicada (ES/EN).",
+ "nota": "Glosario de los globos de /recursos/clasificacion/ y /recursos/analisis/. «revisar»: redacción IEBH por revisar. El ejemplo se completa al generar con el texto pāḷi y la primera línea de la traducción publicada (ES/EN). Desde v0.2: «grupo» = «obra» o «capitulo» (sin ejemplo: el globo da solo la descripción); «no_en» = § donde la forma es palabra del sutta y no se glosa. «no_terminos»: palabras pāḷi del texto explicativo revisadas por el IEBH como NO terminología (formas citadas sin comillas, fórmulas del Nyāsa, nombres propios); las excluye del aviso de términos sin entrada de generar_todo.py.",
  "terminos": [
   {
    "clave": "kariyi",
@@ -22,7 +22,7 @@
      "en": "“sarā” is the kāriyī."
     }
    },
-   "fuente": "ES: documento de Angel «Kāriyī – Kāriya – Nimitta» (= Glosario de Nandisena); EN: IEBH — por revisar. Funciones de §12: Nyāsa, Rūpasiddhi, Visuddhāyuṃ (PDF 63).",
+   "fuente": "ES: documento del IEBH «Kāriyī – Kāriya – Nimitta» (= Glosario de Nandisena); EN: IEBH — por revisar. Funciones de §12: Nyāsa, Rūpasiddhi, Visuddhāyuṃ (PDF 63).",
    "revisar": true
   },
   {
@@ -64,7 +64,7 @@
      "en": "“sare” is a nimitta in the 7th."
     }
    },
-   "fuente": "ES: documento de Angel; EN: IEBH — por revisar.",
+   "fuente": "ES: documento del IEBH; EN: IEBH — por revisar.",
    "revisar": true
   },
   {
@@ -487,6 +487,8 @@
    "clave": "atidesa",
    "termino": "atidesa",
    "formas": [
+    "pumbhāvātidesa",
+    "rūpātidesa",
     "suttātidesa",
     "kāriyātidesa",
     "atidesa"
@@ -518,6 +520,1634 @@
    },
    "fuente": "Clase de §320: Visuddhāyuṃ (PDF 398), clasificación v0.7. No hay ejemplo en Sandhi.",
    "revisar": true
+  },
+  {
+   "clave": "anvattha",
+   "termino": "anvattha-saññā",
+   "formas": [
+    "anvattha-saññā",
+    "anvatthasaññā"
+   ],
+   "def": {
+    "es": "Término técnico cuyo nombre corresponde a su significado: además de servir de rótulo, muestra la naturaleza de lo que nombra.",
+    "en": "A technical name that follows its meaning: besides serving as a label, it shows the nature of what it names."
+   },
+   "ejemplo": {
+    "n": 2,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«akkhara»: «na kkharantī ti akkharā».",
+     "en": "“akkhara”: “na kkharantī ti akkharā”."
+    }
+   },
+   "fuente": "Redacción IEBH. Nyāsa sobre el §2: «Rūḷhī-anvatthavasena dvippakārāsu saññāsu yā rūḷhīsaññā, sā vohārasukhamattam eva sādheti. Yā pana anvatthasaññā, sā tañ c' eva sādheti, attano atthassa sabhāvañ ca dīpeti» (ed. Sudhammavatī, Yangon 1933, p. 9; cotejado con el escaneo, PDF p. 47). Visuddhāyuṃ, clase de §2 (PDF 53).",
+   "revisar": true
+  },
+  {
+   "clave": "rulhi",
+   "termino": "rūḷhī-saññā",
+   "formas": [
+    "rūḷhī-saññā",
+    "rūḷhīsaññā"
+   ],
+   "def": {
+    "es": "Término técnico convencional, que solo facilita la referencia.",
+    "en": "A conventional technical name that only makes reference easy."
+   },
+   "ejemplo": {
+    "n": 60,
+    "cap": "nama",
+    "nota": {
+     "es": "«gha», nombre de ā: una sola letra.",
+     "en": "“gha”, the name of ā: a single letter."
+    }
+   },
+   "fuente": "Redacción IEBH. Nyāsa sobre el §2, que pone «ā gho» de contraste («yathā pana “ā gho” ti ādīsu “gho” iti ekakkharen' eva saññā ṭhapitā»); misma cita que anvattha-saññā.",
+   "revisar": true
+  },
+  {
+   "clave": "sutta",
+   "termino": "sutta",
+   "formas": [
+    "sutta",
+    "suttas"
+   ],
+   "def": {
+    "es": "Aforismo; regla gramatical. Hay 4 clases: saññā-sutta, paribhāsā-sutta, adhikāra-sutta y vidhi-sutta.",
+    "en": "Aphorism; grammatical rule. There are four kinds: saññā-, paribhāsā-, adhikāra- and vidhi-sutta."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi",
+    "nota": {
+     "es": "un vidhi-sutta.",
+     "en": "a vidhi-sutta."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sutta (p. 31; Rū §63), abreviado; EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "vutti",
+   "termino": "vutti",
+   "formas": [
+    "vutti"
+   ],
+   "def": {
+    "es": "Explicación (del sutta). Hay tres clases: la palabra del aforismo (sutta-vutti), la que viene de aforismos anteriores (anuvattana-vutti) y la palabra insertada (pakkhipana-vutti).",
+    "en": "Explanation (of a sutta). Three kinds: the aphorism's own words (sutta-vutti), words carried over from earlier aphorisms (anuvattana-vutti) and inserted words (pakkhipana-vutti)."
+   },
+   "ejemplo": {
+    "n": 2,
+    "cap": "sandhi",
+    "nota": {
+     "es": "su vutti pregunta «tena kvattho?».",
+     "en": "its vutti asks “tena kvattho?”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. vutti (p. 27); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "anga",
+   "termino": "aṅga",
+   "formas": [
+    "aṅga"
+   ],
+   "def": {
+    "es": "Miembro, parte. La Visuddhāyuṃ llama aṅga a cada palabra que el sutta necesita, incluidas las que vienen por anuvatti, y abre la explicación de cada sutta contándolas.",
+    "en": "Member, part. The Visuddhāyuṃ calls each word a sutta needs an aṅga, including those carried over by anuvatti, and opens each explanation by listing them."
+   },
+   "ejemplo": {
+    "n": 14,
+    "cap": "sandhi"
+   },
+   "fuente": "Redacción IEBH. Visuddhāyuṃ, apartado (ခ) de cada sutta (p. ej. §14, PDF 67).",
+   "revisar": true
+  },
+  {
+   "clave": "kappa",
+   "termino": "kappa",
+   "formas": [
+    "kappa"
+   ],
+   "def": {
+    "es": "Capítulo de Kaccāyana (Sandhi-Kappa, Nāma-Kappa…).",
+    "en": "A chapter of Kaccāyana (Sandhi-Kappa, Nāma-Kappa…)."
+   },
+   "ejemplo": {
+    "n": 1,
+    "cap": "sandhi",
+    "nota": {
+     "es": "abre el Sandhi-Kappa.",
+     "en": "opens the Sandhi-Kappa."
+    }
+   },
+   "fuente": "Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "kanda",
+   "termino": "kaṇḍa",
+   "formas": [
+    "kaṇḍa"
+   ],
+   "def": {
+    "es": "Sección: cada una de las partes en que se divide un capítulo de Kaccāyana (Paṭhama-kaṇḍa…); en la Rūpasiddhi, cada una de sus grandes partes (Sandhi-kaṇḍa, Nāma-kaṇḍa…).",
+    "en": "Section: each part of a Kaccāyana chapter (Paṭhama-kaṇḍa…); in the Rūpasiddhi, each of its main parts (Sandhi-kaṇḍa, Nāma-kaṇḍa…)."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi",
+    "nota": {
+     "es": "abre el Dutiya-kaṇḍa.",
+     "en": "opens the Dutiya-kaṇḍa."
+    }
+   },
+   "fuente": "Redacción IEBH; uso del sitio y de la Rūpasiddhi («Iti Rūpasiddhiyaṃ Sandhi-kaṇḍo paṭhamo»).",
+   "revisar": true
+  },
+  {
+   "clave": "pariccheda",
+   "termino": "pariccheda",
+   "formas": [
+    "pariccheda"
+   ],
+   "def": {
+    "es": "Sección (lit. delimitación). La Visuddhāyuṃ divide así cada capítulo y marca el fin de cada una.",
+    "en": "Section (lit. delimitation). The Visuddhāyuṃ divides each chapter this way and marks the end of each."
+   },
+   "ejemplo": {
+    "n": 11,
+    "cap": "sandhi",
+    "nota": {
+     "es": "cierra el primero.",
+     "en": "closes the first."
+    }
+   },
+   "fuente": "Redacción IEBH. Visuddhāyuṃ PDF 62, 187, 205, 212.",
+   "revisar": true
+  },
+  {
+   "clave": "sihagatika",
+   "termino": "sīhagatika",
+   "formas": [
+    "sīhagatika",
+    "sīha-gatika"
+   ],
+   "def": {
+    "es": "Yendo o moviéndose como león. Un tipo de regla general (adhikāra) cuyo dominio se extiende hacia atrás y hacia adelante.",
+    "en": "Going or moving like a lion. A kind of general rule (adhikāra) whose domain extends both backward and forward."
+   },
+   "ejemplo": {
+    "n": 52,
+    "cap": "nama"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sīha-gatika (Rū §60); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "niddittha",
+   "termino": "niddiṭṭhavisaya",
+   "formas": [
+    "niddiṭṭhavisaya"
+   ],
+   "def": {
+    "es": "De ámbito definido: saññā cuyo ámbito de aplicación queda fijado (Rū 308).",
+    "en": "Of defined scope: a saññā whose field of application is fixed (Rū 308)."
+   },
+   "ejemplo": {
+    "n": 271,
+    "cap": "karaka"
+   },
+   "fuente": "Redacción IEBH: nota publicada de §271 (clasificación); comun/glosario.md s.v. niddiṭṭha («indicado; especificado»).",
+   "revisar": true
+  },
+  {
+   "clave": "sattami_n",
+   "termino": "sattamī-nimitta",
+   "formas": [
+    "sattamī-nimitta"
+   ],
+   "def": {
+    "es": "Causa expresada en la séptima inflexión («cuando sigue…»).",
+    "en": "Cause expressed in the seventh inflection (“when … follows”)."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«sare».",
+     "en": "“sare”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sattamī-nimitta (p. 28: «causa de elisión en la séptima inflexión»), generalizado a toda operación como en la entrada pañcamī-nimitta; Rū §13: «nimittasattamī c' āyaṃ».",
+   "revisar": true
+  },
+  {
+   "clave": "pubbalopa",
+   "termino": "pubbalopa",
+   "formas": [
+    "pubbalopa"
+   ],
+   "def": {
+    "es": "Elisión de la (vocal) precedente.",
+    "en": "Elision of the preceding (vowel)."
+   },
+   "ejemplo": {
+    "n": 12,
+    "cap": "sandhi"
+   },
+   "fuente": "comun/glosario.md (cosecha Niruttidīpanī, s. 58); Rū §13 («pubballopavidhānaṃ»); clase de §12 en la Visuddhāyuṃ (PDF 64). EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "paralopa",
+   "termino": "paralopa",
+   "formas": [
+    "paralopa"
+   ],
+   "def": {
+    "es": "Elisión de la (vocal) siguiente.",
+    "en": "Elision of the following (vowel)."
+   },
+   "ejemplo": {
+    "n": 13,
+    "cap": "sandhi"
+   },
+   "fuente": "Rū §13 («upari paralopavidhānato»); clase de §13 en la Visuddhāyuṃ (PDF 65). Redacción IEBH por simetría con pubbalopa.",
+   "revisar": true
+  },
+  {
+   "clave": "vibhattipaccaya",
+   "termino": "vibhatti-paccaya",
+   "formas": [
+    "vibhatti-paccaya"
+   ],
+   "def": {
+    "es": "Sufijos que reciben el nombre de vibhatti (§247) porque expresan un significado casual; las formas que producen son padas.",
+    "en": "Suffixes named vibhatti (§247) because they express a case meaning; the forms they produce are padas."
+   },
+   "ejemplo": {
+    "n": 247,
+    "cap": "nama"
+   },
+   "fuente": "Redacción IEBH: nota publicada de §248 (Bhāsāṭīkā sobre el §247; U Sīlānanda, clase 23).",
+   "revisar": true
+  },
+  {
+   "clave": "laghava",
+   "termino": "lāghava",
+   "formas": [
+    "lāghava"
+   ],
+   "def": {
+    "es": "Economía, brevedad: razón para formular una regla de cierta manera.",
+    "en": "Economy, brevity: a reason for wording a rule in a certain way."
+   },
+   "ejemplo": {
+    "n": 44,
+    "cap": "sandhi"
+   },
+   "fuente": "Redacción IEBH: nota publicada de §44 (Visuddhāyuṃ PDF 106).",
+   "revisar": true
+  },
+  {
+   "clave": "bahulam",
+   "termino": "bahulaṃ",
+   "formas": [
+    "bahulaṃ",
+    "bahula"
+   ],
+   "def": {
+    "es": "«Ampliamente», según el uso: la regla se aplica de modo variable —a veces sí, a veces no, a veces de otra manera—.",
+    "en": "“Widely”, according to usage: the rule applies variably —sometimes it does, sometimes not, sometimes otherwise."
+   },
+   "ejemplo": {
+    "n": 46,
+    "cap": "sandhi"
+   },
+   "fuente": "Redacción IEBH sin fuente: no está en el Glosario de Nandisena, ni en la Terminología, ni definido en Rūpasiddhi-Sandhi, Nyāsa-Sandhi o Saddanīti; Rū §42 solo dice que «ca» de §20 «bahulattha» (de muchos sentidos).",
+   "revisar": true
+  },
+  {
+   "clave": "pubbavakya",
+   "termino": "pubbavākya",
+   "formas": [
+    "pubbavākya"
+   ],
+   "def": {
+    "es": "Enunciado inicial: nombre que, según la Bhāsāṭīkā, dan algunos al §1 en lugar de paribhāsā.",
+    "en": "Opening statement: the name some give to §1 instead of paribhāsā, according to the Bhāsāṭīkā."
+   },
+   "ejemplo": {
+    "n": 1,
+    "cap": "sandhi"
+   },
+   "fuente": "Redacción IEBH: nota publicada de §1 (clasificación).",
+   "revisar": true
+  },
+  {
+   "clave": "vuddhi",
+   "termino": "vuddhi",
+   "formas": [
+    "vuddhi"
+   ],
+   "def": {
+    "es": "Incremento; vocal fortalecida o que ha sido alargada. Thitzana la cuenta dentro de la ādesa.",
+    "en": "Strengthening; a vowel that has been strengthened or lengthened. Thitzana counts it under ādesa."
+   },
+   "ejemplo": {
+    "n": 404,
+    "cap": "taddhita",
+    "nota": {
+     "es": "Kaccāyana la nombra.",
+     "en": "Kaccāyana names it."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. vuddhi (p. 27; Rū §364); comun/glosario.md (ādivuddhi «fortalecimiento»); Thitzana, vol. 2, Introd. pp. 36–37. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "viparita",
+   "termino": "vipariyāya / viparīta",
+   "formas": [
+    "vipariyāya",
+    "viparīta"
+   ],
+   "def": {
+    "es": "Cambio, reversión; transposición (vipariyāya). Cambio; reversión; transformación (viparīta). Thitzana los equipara y los cuenta en la ādesa.",
+    "en": "Change, reversal; transposition (vipariyāya). Change; reversal; transformation (viparīta). Thitzana equates the two and counts them under ādesa."
+   },
+   "ejemplo": {
+    "n": 404,
+    "cap": "taddhita"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.vv. vipariyaya (p. 26; Rū 40) y viparīta (p. 25; Kac. §79, Rū §45–46); nota publicada de §404. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "vikara",
+   "termino": "vikāra",
+   "formas": [
+    "vikāra"
+   ],
+   "def": {
+    "es": "Cambio; alteración; modificación.",
+    "en": "Change; alteration; modification."
+   },
+   "ejemplo": {
+    "n": 404,
+    "cap": "taddhita"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. vikāra (p. 25; Rū §35), abreviado; EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "nipatana",
+   "termino": "nipātana",
+   "formas": [
+    "nipātana"
+   ],
+   "def": {
+    "es": "Formación por cita directa: la forma que ninguna regla explica se establece tal como se encuentra en el texto.",
+    "en": "Formation by direct citation: a form no rule accounts for is established as found in the text."
+   },
+   "ejemplo": {
+    "n": 391,
+    "cap": "taddhita"
+   },
+   "fuente": "Redacción IEBH: op publicada de §391; comun/glosario.md s.v. mahāvutti.",
+   "revisar": true
+  },
+  {
+   "clave": "dvebhava",
+   "termino": "dvebhāva",
+   "formas": [
+    "dvebhāva",
+    "dvibhāva"
+   ],
+   "def": {
+    "es": "Lit., estado de dos; duplicación de una consonante cuando va precedida por una vocal o en otros casos.",
+    "en": "Lit. “state of two”; doubling of a consonant after a vowel or in other cases."
+   },
+   "ejemplo": {
+    "n": 28,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. dvebhāva (p. 15; Kac. §28, Rū §40); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "akkhara",
+   "termino": "akkhara",
+   "formas": [
+    "akkhara"
+   ],
+   "def": {
+    "es": "Fonema; letra; sílaba. Hay 41 letras en el alfabeto pali.",
+    "en": "Phoneme; letter; syllable. There are 41 letters in the Pāḷi alphabet."
+   },
+   "ejemplo": {
+    "n": 2,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. akkhara (p. 2; Kac. §2); EN adjudicado (recursos/glosario/ingles.json)."
+  },
+  {
+   "clave": "vanna",
+   "termino": "vaṇṇa",
+   "formas": [
+    "vaṇṇa"
+   ],
+   "def": {
+    "es": "Letra; sonido; fonema; vocal. Avaṇṇa, las vocales a, ā; ivaṇṇa, i, ī; uvaṇṇa, u, ū.",
+    "en": "Letter; sound; phoneme; vowel. Avaṇṇa: a, ā; ivaṇṇa: i, ī; uvaṇṇa: u, ū."
+   },
+   "ejemplo": {
+    "n": 21,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«ivaṇṇo».",
+     "en": "“ivaṇṇo”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. vaṇṇa (p. 24; Rū §2); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "sara",
+   "termino": "sara",
+   "formas": [
+    "sara"
+   ],
+   "def": {
+    "es": "Vocal. Hay 8 vocales: a, ā; i, ī; u, ū; e, o.",
+    "en": "Vowel. There are eight: a, ā; i, ī; u, ū; e, o."
+   },
+   "ejemplo": {
+    "n": 3,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sara (p. 30; Kac. §3, Rū §3); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "byanjana",
+   "termino": "byañjana",
+   "formas": [
+    "byañjana"
+   ],
+   "def": {
+    "es": "Consonante. También vyañjana.",
+    "en": "Consonant. Also vyañjana."
+   },
+   "ejemplo": {
+    "n": 6,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. byañjana (p. 22); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "vagga",
+   "termino": "vagga",
+   "formas": [
+    "vagga"
+   ],
+   "def": {
+    "es": "Grupo; las consonantes agrupadas. Son 25, en cinco grupos.",
+    "en": "Group; the grouped consonants: 25, in five groups."
+   },
+   "ejemplo": {
+    "n": 7,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. vagga (p. 24; Kac. §7, Rū §9); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "niggahita",
+   "termino": "niggahīta",
+   "formas": [
+    "niggahīta"
+   ],
+   "def": {
+    "es": "La consonante nasal ṃ.",
+    "en": "The nasal consonant ṃ."
+   },
+   "ejemplo": {
+    "n": 8,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. niggahīta (p. 17; Kac. §8, Rū §10); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "anusvara",
+   "termino": "anusvāra",
+   "formas": [
+    "anusvāra"
+   ],
+   "def": {
+    "es": "Nombre sánscrito del niggahīta (ṃ).",
+    "en": "The Sanskrit name for niggahīta (ṃ)."
+   },
+   "ejemplo": {
+    "n": 8,
+    "cap": "sandhi"
+   },
+   "fuente": "Thitzana, vol. 2, p. 123 (sobre el §8): «It is called an “anusvāra” in Sanskrit»; nota publicada de §8 (Visuddhāyuṃ). Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "ghosa",
+   "termino": "ghosa",
+   "formas": [
+    "ghosa"
+   ],
+   "def": {
+    "es": "(Consonante) sonora. Hay 21 consonantes sonoras.",
+    "en": "Voiced (consonant). There are 21."
+   },
+   "ejemplo": {
+    "n": 29,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«ghosāghosānaṃ».",
+     "en": "“ghosāghosānaṃ”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. ghosa (p. 12; Kac. §9, Sad. §18); Rū §11. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "aghosa",
+   "termino": "aghosa",
+   "formas": [
+    "aghosa"
+   ],
+   "def": {
+    "es": "Sorda; (consonante) sorda. Hay once consonantes sordas.",
+    "en": "Voiceless; voiceless (consonant). There are eleven voiceless consonants."
+   },
+   "ejemplo": {
+    "n": 29,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. aghosa (p. 2; Sad. §17); EN adjudicado."
+  },
+  {
+   "clave": "usma",
+   "termino": "ūsmā",
+   "formas": [
+    "ūsmā"
+   ],
+   "def": {
+    "es": "Nombre que la gramática sánscrita da a las consonantes fricativas (en pāḷi, s y h); la Visuddhāyuṃ lo explica en el §9 entre los términos tomados de otras gramáticas.",
+    "en": "The Sanskrit grammarians' name for the fricative consonants (in Pāḷi, s and h); the Visuddhāyuṃ explains it under §9 among the terms taken from other grammars."
+   },
+   "ejemplo": {
+    "n": 9,
+    "cap": "sandhi"
+   },
+   "fuente": "Redacción IEBH sin fuente en el proyecto: no está en el Glosario de Nandisena, ni en Rūpasiddhi-Sandhi (Rū §11 da ghosa, aghosa, dhanita, sithila, lopa, savaṇṇa, saṃyoga, liṅga), ni en Nyāsa-Sandhi, ni en el Saddanīti del proyecto. Qué letras abarca en la tradición pāḷi: por confirmar con la Visuddhāyuṃ (PDF 59).",
+   "revisar": true
+  },
+  {
+   "clave": "matta",
+   "termino": "mattā",
+   "formas": [
+    "mattā"
+   ],
+   "def": {
+    "es": "Duración; unidad de medida; una mora o instante prosódico.",
+    "en": "Duration; unit of measure; a mora."
+   },
+   "ejemplo": {
+    "n": 4,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«lahumattā».",
+     "en": "“lahumattā”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. mattā (p. 23; Rū §4); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "sarupa",
+   "termino": "sarūpa",
+   "formas": [
+    "sarūpa"
+   ],
+   "def": {
+    "es": "Semejante; opuesto a asarūpa, «disímil». Rū 11: las vocales savaṇṇa «se llaman también sarūpa». En las notas de §2 y §55, «la forma (propia)» de las letras o de las inflexiones (lectura de la Bhāsāṭīkā).",
+    "en": "Similar; the opposite of asarūpa, “dissimilar”. Rū 11: savaṇṇa vowels “are also called sarūpa”. In the notes on §2 and §55, “the (very) form” of the letters or inflections (the Bhāsāṭīkā's reading)."
+   },
+   "ejemplo": {
+    "n": 13,
+    "cap": "sandhi",
+    "nota": {
+     "es": "«asarūpā».",
+     "en": "“asarūpā”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sarūpa (p. 30; Rū §15); Rū 11 («Rassassarā sakadīghehi aññamaññaṃ savaṇṇā nāma, ye sarūpā ti pi vuccanti»); notas publicadas de §2 y §55. 2.º sentido y EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "kvaci",
+   "termino": "kvaci",
+   "formas": [
+    "kvaci"
+   ],
+   "def": {
+    "es": "«A veces»: aplicación poco frecuente; una sola forma resultante, sin alternativa.",
+    "en": "“Sometimes”: infrequent application; only one resulting form, no alternative."
+   },
+   "ejemplo": {
+    "n": 14,
+    "cap": "sandhi"
+   },
+   "fuente": "comun/terminologia-particulas.md (Kaccāyana Bhāsāṭīkā; Kaccāyanavaṇṇanā 31). Nandisena (p. 11) da «opcionalmente; a veces»: manda la Terminología. EN: convención de la edición inglesa.",
+   "revisar": true
+  },
+  {
+   "clave": "nava",
+   "termino": "navā",
+   "formas": [
+    "navā"
+   ],
+   "def": {
+    "es": "«Ocasionalmente»: sinónimo funcional de kvaci; también una sola forma resultante.",
+    "en": "“Occasionally”: functionally the same as kvaci; one resulting form."
+   },
+   "ejemplo": {
+    "n": 21,
+    "cap": "sandhi"
+   },
+   "fuente": "Como kvaci.",
+   "revisar": true
+  },
+  {
+   "clave": "va",
+   "termino": "vā",
+   "formas": [
+    "vā"
+   ],
+   "def": {
+    "es": "«Opcionalmente»: dos formas posibles, con la aplicación y sin ella.",
+    "en": "“Optionally”: two possible forms, with and without the application."
+   },
+   "ejemplo": {
+    "n": 13,
+    "cap": "sandhi"
+   },
+   "fuente": "Como kvaci.",
+   "revisar": true
+  },
+  {
+   "clave": "vibhasa",
+   "termino": "vibhāsā",
+   "formas": [
+    "vibhāsā"
+   ],
+   "def": {
+    "es": "«Facultativamente»: sinónimo funcional de vā; también dos formas.",
+    "en": "“Optionally” (vibhāsā): functionally the same as vā; two forms."
+   },
+   "ejemplo": {
+    "n": 154,
+    "cap": "nama"
+   },
+   "fuente": "Como kvaci. EN: la convención inglesa no fija vibhāsā.",
+   "revisar": true
+  },
+  {
+   "clave": "ca",
+   "termino": "ca",
+   "formas": [
+    "ca"
+   ],
+   "def": {
+    "es": "Partícula «y». En un sutta puede arrastrar palabras o añadir operaciones que el enunciado no nombra. Cinco funciones: arrastre (anukaḍḍhana), recolección (sampiṇḍana), acumulación (samuccaya), delimitación (avadhāraṇa) y fluidez del habla (vācāsiliṭṭha).",
+    "en": "The particle “and”. In a sutta it can drag words along or add operations the wording does not name. Five functions: dragging, collecting, accumulating, delimiting, smoothness of speech."
+   },
+   "ejemplo": {
+    "n": 20,
+    "cap": "sandhi"
+   },
+   "fuente": "comun/terminologia-particulas.md (las aplicaciones de «ca»); EN con los nombres del Venerable (docs/fuentes/nandisena-apendice-sandhi-en.md).",
+   "revisar": true
+  },
+  {
+   "clave": "pathama",
+   "termino": "paṭhamā",
+   "formas": [
+    "paṭhamā"
+   ],
+   "def": {
+    "es": "El primer caso; el caso nominativo (en este sitio, caso del sujeto).",
+    "en": "The first case; the nominative (case of the subject)."
+   },
+   "ejemplo": {
+    "n": 55,
+    "cap": "nama"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. paṭhamā (p. 19; Kac. §284); nombres de caso del IEBH (2026-09-28, comun/glosario.md). EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "pancami_i",
+   "termino": "pañcamī",
+   "formas": [
+    "pañcamī"
+   ],
+   "def": {
+    "es": "La quinta inflexión: caso del punto de partida (ablativo).",
+    "en": "The fifth inflection: case of the starting point (ablative)."
+   },
+   "ejemplo": {
+    "n": 55,
+    "cap": "nama"
+   },
+   "fuente": "Nombres de caso del IEBH (comun/glosario.md). No Nandisena: su pañcamī (p. 18) es el imperativo.",
+   "revisar": true
+  },
+  {
+   "clave": "sattami_i",
+   "termino": "sattamī",
+   "formas": [
+    "sattamī"
+   ],
+   "def": {
+    "es": "La séptima inflexión: caso del lugar (locativo).",
+    "en": "The seventh inflection: case of the place (locative)."
+   },
+   "ejemplo": {
+    "n": 55,
+    "cap": "nama"
+   },
+   "fuente": "Nombres de caso del IEBH (comun/glosario.md). No Nandisena: su sattamī (p. 28) es el potencial.",
+   "revisar": true
+  },
+  {
+   "clave": "linga_b",
+   "termino": "liṅga",
+   "formas": [
+    "liṅga"
+   ],
+   "def": {
+    "es": "Según el contexto: base, tema nominal (lo que tiene significado, excluidos la raíz, el sufijo y la inflexión); género; forma final.",
+    "en": "Depending on context: base, nominal stem (what has meaning, excluding root, suffix and inflection); gender; final form."
+   },
+   "ejemplo": {
+    "n": 53,
+    "cap": "nama",
+    "nota": {
+     "es": "«la base (liṅga)».",
+     "en": "“the base (liṅga)”."
+    }
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. liṅga (p. 24, dos entradas; Rū §11); comun/glosario.md. EN: IEBH.",
+   "revisar": true,
+   "no_en": [
+    222
+   ]
+  },
+  {
+   "clave": "karaka",
+   "termino": "kāraka",
+   "formas": [
+    "kāraka",
+    "kārakas"
+   ],
+   "def": {
+    "es": "Aquello que realiza la acción; caso, relación con el verbo. En las gramáticas antiguas hay seis: kattu-, kamma-, karaṇa-, sampadāna-, apādāna- y okāsa-kāraka. El genitivo no se denomina kāraka.",
+    "en": "That which brings about the action; case relation. Six in the old grammars: agent, object, instrument, recipient, starting point, place. The genitive is not a kāraka."
+   },
+   "ejemplo": {
+    "n": 271,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. kāraka (p. 10; Kac. §271), abreviado; EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "katta",
+   "termino": "kattā",
+   "formas": [
+    "kattā"
+   ],
+   "def": {
+    "es": "Agente o sujeto.",
+    "en": "Agent."
+   },
+   "ejemplo": {
+    "n": 281,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. kattu (p. 9); EN: glosa publicada de §281.",
+   "revisar": true
+  },
+  {
+   "clave": "kamma",
+   "termino": "kamma",
+   "formas": [
+    "kamma"
+   ],
+   "def": {
+    "es": "Objeto; aquello que recibe la acción de un verbo activo (el objeto directo).",
+    "en": "Object; what receives the action of an active verb (the direct object)."
+   },
+   "ejemplo": {
+    "n": 280,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. kamma (p. 10; Rū §310); EN: IEBH.",
+   "revisar": true,
+   "no_en": [
+    160
+   ]
+  },
+  {
+   "clave": "karana",
+   "termino": "karaṇa",
+   "formas": [
+    "karaṇa"
+   ],
+   "def": {
+    "es": "El tercer caso; el caso instrumental. Glosa del sitio: instrumento.",
+    "en": "The third case; the instrumental. Site gloss: instrument."
+   },
+   "ejemplo": {
+    "n": 279,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. karaṇa (p. 10; Kac. §310) — no la homónima (órgano de articulación); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "sampadana",
+   "termino": "sampadāna",
+   "formas": [
+    "sampadāna"
+   ],
+   "def": {
+    "es": "El cuarto caso; el caso dativo. Glosa del sitio: destinatario.",
+    "en": "The fourth case; the dative. Site gloss: recipient."
+   },
+   "ejemplo": {
+    "n": 276,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sampadāna (p. 30); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "apadana",
+   "termino": "apādāna",
+   "formas": [
+    "apādāna"
+   ],
+   "def": {
+    "es": "El quinto caso; el caso ablativo. Glosa del sitio: punto de partida.",
+    "en": "The fifth case; the ablative case. Site gloss: starting point."
+   },
+   "ejemplo": {
+    "n": 271,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. apādāna (p. 4; Kac. §295); EN adjudicado + glosa del sitio."
+  },
+  {
+   "clave": "okasa",
+   "termino": "okāsa",
+   "formas": [
+    "okāsa"
+   ],
+   "def": {
+    "es": "El séptimo caso; el caso locativo. Glosa del sitio: lugar.",
+    "en": "The seventh case; the locative. Site gloss: place."
+   },
+   "ejemplo": {
+    "n": 278,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. okāsa (p. 9; Rū §94); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "adhara",
+   "termino": "ādhāra",
+   "formas": [
+    "ādhāra"
+   ],
+   "def": {
+    "es": "Locativo; apoyo; contenedor, receptáculo, base.",
+    "en": "Locative; support; container, receptacle, base."
+   },
+   "ejemplo": {
+    "n": 278,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. ādhāra (p. 7); EN adjudicado."
+  },
+  {
+   "clave": "sami",
+   "termino": "sāmī",
+   "formas": [
+    "sāmī"
+   ],
+   "def": {
+    "es": "El sexto caso; el caso genitivo. Glosa del sitio: poseedor.",
+    "en": "The sixth case; the genitive. Site gloss: owner."
+   },
+   "ejemplo": {
+    "n": 283,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sāmī (p. 31; Kac. §283); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "hetu",
+   "termino": "hetu",
+   "formas": [
+    "hetu"
+   ],
+   "def": {
+    "es": "Causa: el que hace actuar al agente; recibe también el nombre de kattā.",
+    "en": "Cause: the one who makes the agent act; also named kattā."
+   },
+   "ejemplo": {
+    "n": 282,
+    "cap": "karaka"
+   },
+   "fuente": "Redacción IEBH: op publicada de §282; Glosario de Nandisena (2013), s.v. hetu-kattu (p. 31; Rū §294).",
+   "revisar": true
+  },
+  {
+   "clave": "kammappavacaniya",
+   "termino": "kammappavacanīya",
+   "formas": [
+    "kammappavacanīya",
+    "kammappavacanīyas"
+   ],
+   "def": {
+    "es": "Nombre de ciertos prefijos (pari, pati, anu, abhi), cuya terminación va en la segunda inflexión aunque el significado sea de otra.",
+    "en": "Name of certain prefixes (pari, pati, anu, abhi) construed with the second inflection, although the meaning may belong to another."
+   },
+   "ejemplo": {
+    "n": 299,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. kammappavacanīya (p. 10; Kac. §299, Rū §299), abreviado; EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "samasa",
+   "termino": "samāsa",
+   "formas": [
+    "samāsa"
+   ],
+   "def": {
+    "es": "Compuesto: la combinación de dos o más voces que forman una unidad gramatical.",
+    "en": "Compound: two or more words combined into a grammatical unit."
+   },
+   "ejemplo": {
+    "n": 316,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. samāsa (p. 29; Rū 176, §331); comun/glosario.md. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "abyayibhava",
+   "termino": "abyayībhāva",
+   "formas": [
+    "abyayībhāva"
+   ],
+   "def": {
+    "es": "Compuesto adverbial. El primer miembro es un indeclinable y el segundo un sustantivo.",
+    "en": "Adverbial compound. The first member is an indeclinable and the second a noun."
+   },
+   "ejemplo": {
+    "n": 319,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. abyayībhāva (p. 5); EN adjudicado."
+  },
+  {
+   "clave": "kammadharaya",
+   "termino": "kammadhāraya",
+   "formas": [
+    "kammadhāraya"
+   ],
+   "def": {
+    "es": "Compuesto adjetivo, donde se combinan un adjetivo y un sustantivo.",
+    "en": "Adjective compound, combining an adjective and a noun."
+   },
+   "ejemplo": {
+    "n": 324,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. kammadhāraya (p. 10; Rū 183); comun/glosario.md («compuesto adjetivo», no «adjetival»). EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "digu",
+   "termino": "digu",
+   "formas": [
+    "digu"
+   ],
+   "def": {
+    "es": "Compuesto numérico determinativo.",
+    "en": "Numerical compound."
+   },
+   "ejemplo": {
+    "n": 325,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. digu (p. 15; Rū 177); comun/glosario.md. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "tappurisa",
+   "termino": "tappurisa",
+   "formas": [
+    "tappurisa"
+   ],
+   "def": {
+    "es": "Compuesto determinativo: el primer miembro, en cualquier inflexión menos la primera, determina al segundo.",
+    "en": "Determinative compound: the first member, in any inflection but the first, determines the second."
+   },
+   "ejemplo": {
+    "n": 326,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. tappurisa (p. 14; Rū 192), abreviado; EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "bahubbihi",
+   "termino": "bahubbīhi",
+   "formas": [
+    "bahubbīhi"
+   ],
+   "def": {
+    "es": "Compuesto relativo, que denota algo diferente de lo que representa cada uno de sus miembros.",
+    "en": "Relative compound, denoting something other than what each of its members stands for."
+   },
+   "ejemplo": {
+    "n": 328,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. bahubbīhi-samāsa (p. 21; Rū 199), abreviado (el original imprime «cada unos»); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "dvanda",
+   "termino": "dvanda",
+   "formas": [
+    "dvanda"
+   ],
+   "def": {
+    "es": "Compuesto copulativo o agregativo.",
+    "en": "Copulative compound."
+   },
+   "ejemplo": {
+    "n": 329,
+    "cap": "samasa"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. dvanda (p. 15); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "upasagga",
+   "termino": "upasagga",
+   "formas": [
+    "upasagga",
+    "upasaggas"
+   ],
+   "def": {
+    "es": "Prefijo. Se antepone a raíces, verbos y derivados; hay veinte.",
+    "en": "Prefix, placed before roots, verbs and derivatives; there are twenty."
+   },
+   "ejemplo": {
+    "n": 221,
+    "cap": "nama"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. upasagga (p. 8; Rū §282), abreviado; comun/glosario.md. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "sandhi",
+   "termino": "sandhi",
+   "formas": [
+    "sandhi"
+   ],
+   "def": {
+    "es": "Combinación eufónica. Según la Rūpasiddhi hay cuatro clases: de vocales (sara-), natural (pakati-), de consonantes (byañjana-) y del niggahīta (niggahīta-sandhi).",
+    "en": "Euphonic combination. The Rūpasiddhi has four kinds: of vowels, natural (pakati), of consonants and of the niggahīta."
+   },
+   "ejemplo": {
+    "n": 1,
+    "cap": "sandhi"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. sandhi (p. 29; Rū 2–35); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "nama",
+   "termino": "nāma",
+   "formas": [
+    "nāma"
+   ],
+   "def": {
+    "es": "Nombre: incluye sustantivos y adjetivos.",
+    "en": "Noun (including adjectives)."
+   },
+   "ejemplo": {
+    "n": 52,
+    "cap": "nama"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. nāma (p. 16), abreviado; EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "taddhita",
+   "termino": "taddhita",
+   "formas": [
+    "taddhita"
+   ],
+   "def": {
+    "es": "Derivado secundario: no se forma directamente de la raíz sino de un derivado primario (kitaka).",
+    "en": "Secondary derivative: formed not directly from the root but from a primary derivative (kitaka)."
+   },
+   "ejemplo": {
+    "n": 344,
+    "cap": "taddhita"
+   },
+   "fuente": "comun/glosario.md («derivado secundario», norma del sitio); Glosario de Nandisena (2013), s.v. taddhita (p. 14), que dice «derivativo secundario … de un derivativo primario». EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "akhyata",
+   "termino": "ākhyāta",
+   "formas": [
+    "ākhyāta"
+   ],
+   "def": {
+    "es": "Verbo.",
+    "en": "Verb."
+   },
+   "ejemplo": {
+    "n": 405,
+    "cap": "taddhita"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. ākhyāta (p. 7); EN adjudicado."
+  },
+  {
+   "clave": "kita",
+   "termino": "kita",
+   "formas": [
+    "kita"
+   ],
+   "def": {
+    "es": "Nombre de los sufijos que forman derivados primarios (kitaka), y del capítulo de Kaccāyana que los trata.",
+    "en": "Name of the suffixes that form primary derivatives (kitaka), and of the Kaccāyana chapter on them."
+   },
+   "grupo": "capitulo",
+   "fuente": "Glosario de Nandisena (2013), s.v. kita (p. 11; Kac. §546); capítulo sin publicar: sin ejemplo. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "unadi",
+   "termino": "uṇādi",
+   "formas": [
+    "uṇādi"
+   ],
+   "def": {
+    "es": "«Los que empiezan por uṇ»: los sufijos uṇ, etc., y el último capítulo de Kaccāyana, que los trata.",
+    "en": "“Those beginning with uṇ”: the suffixes uṇ, etc., and the last chapter of Kaccāyana, on them."
+   },
+   "grupo": "capitulo",
+   "fuente": "Redacción IEBH (no está en el Glosario de Nandisena); capítulo sin publicar: sin ejemplo.",
+   "revisar": true
+  },
+  {
+   "clave": "tika",
+   "termino": "ṭīkā",
+   "formas": [
+    "ṭīkā"
+   ],
+   "def": {
+    "es": "Subcomentario: comentario de segundo nivel.",
+    "en": "Sub-commentary: a second-level commentary."
+   },
+   "grupo": "obra",
+   "fuente": "Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "atthakatha",
+   "termino": "aṭṭhakathā",
+   "formas": [
+    "aṭṭhakathā"
+   ],
+   "def": {
+    "es": "Comentario (a los textos canónicos).",
+    "en": "Commentary (on the canonical texts)."
+   },
+   "grupo": "obra",
+   "fuente": "Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "gatha",
+   "termino": "gāthā",
+   "formas": [
+    "gāthā"
+   ],
+   "def": {
+    "es": "Verso; estrofa.",
+    "en": "Verse; stanza."
+   },
+   "grupo": "obra",
+   "fuente": "Glosario de Nandisena (2013), s.v. gāthā (p. 12; Rū §35); EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "o_kaccayana",
+   "termino": "Kaccāyana",
+   "formas": [
+    "Kaccāyana",
+    "Kaccāyanabyākaraṇaṃ"
+   ],
+   "def": {
+    "es": "Gramática pāḷi en suttas (aforismos); la obra que traduce este sitio, en la versión de Bhikkhu Nandisena.",
+    "en": "Pāḷi grammar in suttas (aphorisms); the work this site translates, following Bhikkhu Nandisena's version."
+   },
+   "grupo": "obra",
+   "fuente": "Sitio; descripción del proyecto.",
+   "revisar": true
+  },
+  {
+   "clave": "o_vutti",
+   "termino": "Kaccāyanavutti",
+   "formas": [
+    "Kaccāyanavutti"
+   ],
+   "def": {
+    "es": "La explicación en prosa que acompaña a cada sutta de Kaccāyana; la tradición que recoge el prefacio de la edición de 1933 del Nyāsa la atribuye a Saṅghanandi.",
+    "en": "The prose explanation accompanying each Kaccāyana sutta; the tradition quoted in the preface to the 1933 edition of the Nyāsa ascribes it to Saṅghanandi."
+   },
+   "grupo": "obra",
+   "fuente": "Nyāsa, ed. 1933, prefacio (máster l. 26–27, verso del Gambhīrattha: «Kaccānena kato yogo, vutti ca Saṃghanandinā»); edición de referencia del proyecto: Pind (PDF).",
+   "revisar": true
+  },
+  {
+   "clave": "o_rupasiddhi",
+   "termino": "Rūpasiddhi",
+   "formas": [
+    "Rūpasiddhi",
+    "Padarūpasiddhi"
+   ],
+   "def": {
+    "es": "Gramática que expone los suttas de Kaccāyana en su propio orden y numeración, por kaṇḍas; de Buddhappiya, también llamado Dīpaṅkara.",
+    "en": "A grammar setting out Kaccāyana's suttas in its own order and numbering, by kaṇḍas; by Buddhappiya, also called Dīpaṅkara."
+   },
+   "grupo": "obra",
+   "fuente": "Nandisena, lista de obras («Rū.: Padarūpasiddhi»); autoría: prólogo de la Padarūpasiddhiṭīkā (docs/fuentes/padarupasiddhitika/00-front.md), que remite al colofón y al Gandhavaṃsa.",
+   "revisar": true
+  },
+  {
+   "clave": "o_rupasiddhitika",
+   "termino": "Rūpasiddhi-ṭīkā",
+   "formas": [
+    "Rūpasiddhi-ṭīkā",
+    "Padarūpasiddhiṭīkā"
+   ],
+   "def": {
+    "es": "Comentario (ṭīkā) a la Rūpasiddhi, atribuido a su mismo autor.",
+    "en": "Commentary (ṭīkā) on the Rūpasiddhi, ascribed to its own author."
+   },
+   "grupo": "obra",
+   "fuente": "Prólogo de la Padarūpasiddhiṭīkā (docs/fuentes/padarupasiddhitika/00-front.md).",
+   "revisar": true
+  },
+  {
+   "clave": "o_nyasa",
+   "termino": "Nyāsa",
+   "formas": [
+    "Nyāsa",
+    "Mukhamattadīpanī"
+   ],
+   "def": {
+    "es": "Comentario a Kaccāyana, llamado también Mukhamattadīpanī; la edición de Yangon (Sudhammavatī, 1933) lo atribuye al thera cingalés Vimalabuddhi (el Saddanīti y la Vinayālaṅkāraṭīkā lo dan a Vajirabuddhi).",
+    "en": "Commentary on Kaccāyana, also called Mukhamattadīpanī; the Yangon edition (Sudhammavatī, 1933) ascribes it to the Sinhalese thera Vimalabuddhi (the Saddanīti and the Vinayālaṅkāraṭīkā give it to Vajirabuddhi)."
+   },
+   "grupo": "obra",
+   "fuente": "Escaneo de la ed. 1933: portada (PDF 7: «သီဟိုဠ်ကျွန်း အရှင်ဝိမလဗုဒ္ဓိ မဟာထေရ်မြတ် … မုခမတ္တဒီပနီ … နျာသပါဠိ») y prefacio (PDF 10, con los versos del Mukhamattasāra y del Gambhīrattha); transcrito en el máster, l. 17–29.",
+   "revisar": true
+  },
+  {
+   "clave": "o_bhasatika",
+   "termino": "Bhāsāṭīkā",
+   "formas": [
+    "Bhāsāṭīkā",
+    "Kaccāyana Bhāsāṭīkā"
+   ],
+   "def": {
+    "es": "Comentario a Kaccāyana en birmano; se cita por un OCR del facsímil.",
+    "en": "Commentary on Kaccāyana in Burmese; cited from an OCR of the facsimile."
+   },
+   "grupo": "obra",
+   "fuente": "Sitio (Notas, cifras y fuentes). Autor y fecha: no encontrados en las fuentes del proyecto.",
+   "revisar": true
+  },
+  {
+   "clave": "o_vannana",
+   "termino": "Kaccāyanavaṇṇanā",
+   "formas": [
+    "Kaccāyanavaṇṇanā"
+   ],
+   "def": {
+    "es": "Comentario a Kaccāyana de Mahāvijitāvī; se cita por el facsímil de Rangún, 1916.",
+    "en": "Commentary on Kaccāyana by Mahāvijitāvī; cited from the Rangoon facsimile of 1916."
+   },
+   "grupo": "obra",
+   "fuente": "Sitio (Notas, cifras y fuentes).",
+   "revisar": true
+  },
+  {
+   "clave": "o_visuddhayum",
+   "termino": "Visuddhāyuṃ",
+   "formas": [
+    "Visuddhāyuṃ",
+    "Kaccāyana-ṭīkā"
+   ],
+   "def": {
+    "es": "Guía de estudio de Kaccāyana, sutta por sutta, en birmano, de Ashin Aggañāṇābhivaṃsa (Si-shin Nāyaka Sayadaw); primera edición, Yangon, 1366 de la era birmana (2004).",
+    "en": "A Burmese study guide to Kaccāyana, sutta by sutta, by Ashin Aggañāṇābhivaṃsa (Si-shin Nāyaka Sayadaw); first edition, Yangon, Burmese Era 1366 (2004)."
+   },
+   "grupo": "obra",
+   "fuente": "recursos/analisis/meta.json (cita); escaneo, PDF 4 y 24.",
+   "revisar": true
+  },
+  {
+   "clave": "o_saddaniti",
+   "termino": "Saddanīti",
+   "formas": [
+    "Saddanīti"
+   ],
+   "def": {
+    "es": "Gramática pāḷi de Aggavaṃsa en tres partes (Padamālā, Dhātumālā, Suttamālā); se cita por la edición de Helmer Smith.",
+    "en": "Pāḷi grammar by Aggavaṃsa in three parts (Padamālā, Dhātumālā, Suttamālā); cited from Helmer Smith's edition."
+   },
+   "grupo": "obra",
+   "fuente": "Título del PDF del proyecto; comun/fuentes-externas.md.",
+   "revisar": true
+  },
+  {
+   "clave": "o_nirutti",
+   "termino": "Niruttidīpanī",
+   "formas": [
+    "Niruttidīpanī"
+   ],
+   "def": {
+    "es": "Gramática de Leḍī Sayāḍo (1903).",
+    "en": "Grammar by Ledi Sayadaw (1903)."
+   },
+   "grupo": "obra",
+   "fuente": "comun/fuentes-externas.md.",
+   "revisar": true
+  },
+  {
+   "clave": "o_mogg",
+   "termino": "Moggallāna",
+   "formas": [
+    "Moggallāna"
+   ],
+   "def": {
+    "es": "Gramática pāḷi; el proyecto la consulta junto con la Payogasiddhi.",
+    "en": "A Pāḷi grammar; the project consults it together with the Payogasiddhi."
+   },
+   "grupo": "obra",
+   "fuente": "Nandisena, lista de obras; comun/fuentes-externas.md.",
+   "revisar": true
+  },
+  {
+   "clave": "o_bala",
+   "termino": "Bālāvatāra",
+   "formas": [
+    "Bālāvatāra"
+   ],
+   "def": {
+    "es": "Gramática pāḷi citada en las notas con la sigla Bā.",
+    "en": "A Pāḷi grammar, cited in the notes as Bā."
+   },
+   "grupo": "obra",
+   "fuente": "comun/convenciones.md.",
+   "revisar": true
+  },
+  {
+   "clave": "o_thitzana",
+   "termino": "Thitzana",
+   "formas": [
+    "Thitzana"
+   ],
+   "def": {
+    "es": "Ven. A. Thitzana, Kaccāyana, vol. 2 (en inglés); el sitio sigue su Introducción, pp. 36–37, para las ocho vidhis.",
+    "en": "Ven. A. Thitzana, Kaccāyana, vol. 2 (in English); the site follows its Introduction, pp. 36–37, for the eight vidhis."
+   },
+   "grupo": "obra",
+   "fuente": "PDF del proyecto; sitio.",
+   "revisar": true
+  },
+  {
+   "clave": "o_silananda",
+   "termino": "U Sīlānanda",
+   "formas": [
+    "U Sīlānanda",
+    "Sīlānanda"
+   ],
+   "def": {
+    "es": "Clases grabadas de gramática pāḷi (Kaccāyana, Rūpasiddhi) del Ven. U Sīlānanda; se citan por clase y minuto.",
+    "en": "Recorded Pāḷi grammar classes (Kaccāyana, Rūpasiddhi) by Ven. U Sīlānanda; cited by class and minute."
+   },
+   "grupo": "obra",
+   "fuente": "Sitio (Notas, cifras y fuentes).",
+   "revisar": true
+  },
+  {
+   "clave": "o_nandisena",
+   "termino": "Nandisena",
+   "formas": [
+    "Nandisena"
+   ],
+   "def": {
+    "es": "Bhikkhu Nandisena: autor de la traducción de Kaccāyana que sigue este sitio y del Glosario de términos gramaticales de la lengua pali (2013).",
+    "en": "Bhikkhu Nandisena: author of the Kaccāyana translation this site follows and of the Glosario de términos gramaticales de la lengua pali (2013)."
+   },
+   "grupo": "obra",
+   "fuente": "recursos/glosario/nandisena.json.",
+   "revisar": true
+  },
+  {
+   "clave": "bhava",
+   "termino": "bhāva",
+   "formas": [
+    "bhāva"
+   ],
+   "def": {
+    "es": "Estado; condición; cierta clase de nombre verbal; nombre abstracto; impersonal. En el §313: la acción que señala otra.",
+    "en": "State; condition; a kind of verbal noun; abstract noun; impersonal. In §313: an action that marks another."
+   },
+   "ejemplo": {
+    "n": 313,
+    "cap": "karaka"
+   },
+   "fuente": "Glosario de Nandisena (2013), s.v. bhāva (p. 22); op publicada de §313. EN: IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "pamanattha",
+   "termino": "pamāṇattha",
+   "formas": [
+    "pamāṇattha"
+   ],
+   "def": {
+    "es": "En el sentido de medida: p. ej. el ablativo de medida (Rū 313).",
+    "en": "In the sense of measure: e.g. the ablative of measure (Rū 313)."
+   },
+   "ejemplo": {
+    "n": 106,
+    "cap": "nama"
+   },
+   "fuente": "Redacción IEBH: nota publicada de §106 (clasificación).",
+   "revisar": true
+  },
+  {
+   "clave": "abhidheyya",
+   "termino": "abhidheyyappayojanavākya",
+   "formas": [
+    "abhidheyyappayojanavākya"
+   ],
+   "def": {
+    "es": "Enunciado de materia y propósito: así llama la Rūpasiddhi al §1.",
+    "en": "Statement of subject-matter and purpose: the Rūpasiddhi's name for §1."
+   },
+   "ejemplo": {
+    "n": 1,
+    "cap": "sandhi"
+   },
+   "fuente": "Rū §1 («abhidheyyappayojanavākyam idam uccate»); nota publicada de §1. Redacción IEBH.",
+   "revisar": true
   }
+ ],
+ "no_terminos": [
+  "antaradhāna",
+  "antā",
+  "atthantaraviññāpanāya",
+  "aññatthesu",
+  "aṭṭhādasa",
+  "aṭṭhārasa",
+  "bahujambukaṃ",
+  "brahmusmā",
+  "bārasa",
+  "bāvīsati",
+  "caggahaṇena",
+  "cattālīsaṃ",
+  "catuddisaṃ",
+  "chaṭṭha",
+  "chaṭṭhiyantato",
+  "dasasahassaṃ",
+  "devarājo",
+  "devatā",
+  "dvidhā",
+  "dvikaṃ",
+  "dvādasa",
+  "dīghajaṅgho",
+  "dīghaso",
+  "ekādasa",
+  "ekādasī",
+  "ekārasa",
+  "etasmiṃ",
+  "gāmayati",
+  "gāmaṃ",
+  "gāṇḍīvadhanvā",
+  "hetunā",
+  "hitādiatthe",
+  "hitādy",
+  "hotī",
+  "itthaṃ",
+  "kasmā",
+  "katattā",
+  "kathaṃ",
+  "katvā",
+  "khattiyakaññā",
+  "koṭi",
+  "kāle",
+  "lopaṃ",
+  "mahāvijitāvī",
+  "mukhanāsikaṃ",
+  "niccaṃ",
+  "niyamāya",
+  "pabhaṅkaro",
+  "paccayā",
+  "pakoṭi",
+  "pañcagavaṃ",
+  "pañcāhaṃ",
+  "purisaṃ",
+  "purisā",
+  "pāḷi",
+  "rādha",
+  "satasahassaṃ",
+  "saññādhikāraparibhāsāvidhisuttesu",
+  "so-ila-va-ālādippacayā",
+  "soḷasa",
+  "sudhammavatī",
+  "sīpaccayo",
+  "tathā",
+  "tikaṃ",
+  "tissannaṃ",
+  "tiṃsati",
+  "tiṃsaṃ",
+  "ttana-ṇeyyādippaccayā",
+  "tusaddaggahaṇena",
+  "upacitattā",
+  "upagaṅgaṃ",
+  "upanagaraṃ",
+  "upari-bhāsā",
+  "upādāniyā",
+  "ussannattā",
+  "veyyākaraṇo",
+  "vibhattividhāne",
+  "vibhatyuppattiṃ",
+  "vikappenā",
+  "vipulattā",
+  "vāsiṭṭho",
+  "vīpaccayo",
+  "vīsati",
+  "vīsaṃ",
+  "yathā",
+  "yogavibhāgena",
+  "ñāpanatthaṃ",
+  "ābhidhammiko",
+  "ādesaṃ",
+  "āgamaṃ",
+  "ājjavaṃ",
+  "āpaccaṃ",
+  "āpāṇakoṭikaṃ",
+  "ārambho",
+  "ārisyaṃ",
+  "āyasmā",
+  "ṇappaccayo",
+  "ṇavapaccayo",
+  "ṇeyyapaccayo",
+  "ṭhānaṃ"
  ]
 }
