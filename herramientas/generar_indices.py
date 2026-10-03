@@ -135,7 +135,7 @@ RECURSOS = [
      "Borrador en revisión."),
     ("analisis/", "__ANALISIS_BADGE__",
      "Análisis de los suttas de Kaccāyana",
-     "Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>."),
+     "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>."),
     ("comentarios/", "__COMENTARIOS_BADGE__",
      "Comentarios de la escuela de Kaccāyana",
      "Las obras de la escuela gramatical de Kaccāyana —el texto raíz, sus "
@@ -330,8 +330,8 @@ EN = {
         "the page itself is in Spanish.",
     "Análisis de los suttas de Kaccāyana":
         "Analysis of the Kaccāyana suttas",
-    "Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.":
-        "Class, anuvatti, roles (kāriyī, kāriya, nimitta) and example for each "
+    "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.":
+        "Class, aṅga, roles (kāriyī, kāriya, nimitta) and example for each "
         "sutta, following the <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
     "Comentarios de la escuela de Kaccāyana":
         "Commentaries of the Kaccāyana school",
@@ -671,7 +671,7 @@ def cuenta_analisis():
         d = json.load(open(os.path.join(RAIZ, "recursos", "analisis", "datos", f), encoding="utf-8"))
         caps.append(d["pali"].replace("-Kappa", ""))
         n += len(d["suttas"])
-    return " · ".join(caps), n, m.get("version", "")
+    return " · ".join(caps), n, m.get("version", ""), m.get("etiqueta")
 
 
 def cuenta_comentarios():
@@ -937,8 +937,10 @@ def indice_recursos():
                     "{0} aphorisms · {1} notes · v{2}".format(*n_cla))
                  if n_cla else "clasificación")
     n_ana = cuenta_analisis()
-    badge_ana = (bi("{0} · {1} suttas · v{2}".format(*n_ana),
-                    "{0} · {1} suttas · v{2}".format(*n_ana))
+    # con «etiqueta» en meta.json (v0.4: Nāma publicado en parte), ésa
+    badge_ana = ((bi(n_ana[3]["es"], n_ana[3]["en"]) if n_ana[3] else
+                  bi("{0} · {1} suttas · v{2}".format(*n_ana[:3]),
+                     "{0} · {1} suttas · v{2}".format(*n_ana[:3])))
                  if n_ana else "análisis")
     n_com = cuenta_comentarios()
     badge_com = (bi("{0} obras · v{1} borrador".format(*n_com),

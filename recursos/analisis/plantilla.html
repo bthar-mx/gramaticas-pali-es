@@ -8,7 +8,7 @@
 <title>Análisis de los suttas de Kaccāyana</title>
 <meta name="version" content="__VERSION__">
 <meta name="version-date" content="__VERSION_DATE__">
-<meta name="description" content="Clase, anuvatti, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta de Kaccāyana, según la Visuddhāyuṃ Kaccāyana-ṭīkā.">
+<meta name="description" content="Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta de Kaccāyana, según la Visuddhāyuṃ Kaccāyana-ṭīkā.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&family=Padauk&display=swap" rel="stylesheet">
@@ -389,7 +389,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
   <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
   <h1 data-t="title">Análisis de los suttas de Kaccāyana</h1>
   <p class="subt" data-t="subtitle">según la Visuddhāyuṃ Kaccāyana-ṭīkā</p>
-  <div class="vline"><span class="badge-b" data-t="draft">Borrador</span><span class="version-badge" id="vbadge"></span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button></div>
+  <div class="vline"><span class="badge-b" id="etiqueta">Borrador</span><span class="version-badge" id="vbadge"></span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button></div>
   <p class="tag" data-t-html="intro"></p>
   <details class="plegable"><summary data-t="how_sum">Cómo leer esta tabla</summary><div data-t-html="how"></div></details>
   <details class="plegable"><summary data-t="term_sum">Terminología</summary><div id="term"></div></details>
@@ -407,7 +407,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 <main class="wrap">
   <div class="tabla-caja" id="tabla-caja" tabindex="0" role="region">
   <table class="an" id="tabla">
-    <thead><tr><th>§</th><th>Sutta</th><th data-t="h_class">Clase de sutta</th><th>Anuvatti</th><th data-t="h_roles">Funciones</th><th data-t="h_ex">Ejemplo</th><th data-t="h_notes">Notas</th><th data-t="h_src">Fuente</th><th></th></tr></thead>
+    <thead><tr><th>§</th><th>Sutta</th><th data-t="h_class">Clase de sutta</th><th>Aṅga</th><th data-t="h_roles">Funciones</th><th data-t="h_ex">Ejemplo</th><th data-t="h_notes">Notas</th><th data-t="h_src">Fuente</th><th></th></tr></thead>
     <tbody id="out"></tbody>
   </table>
   </div>
@@ -439,10 +439,10 @@ const D=/*__DATOS__*/{}/*__FIN__*/;
 const T={
 es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los suttas',subtitle:'según la Visuddhāyuṃ Kaccāyana-ṭīkā',back:'← Recursos · Gramáticas Pāḷi',
   draft:'Borrador',sb_open:'Desplegar',sb_fold:'Plegar',pend:'pendiente',all:'Todos',search:'Buscar sutta, término o ejemplo',empty:'Ningún sutta coincide.',
-  intro:'Cada sutta de Kaccāyana tal como lo analiza la <i>Visuddhāyuṃ</i>: clase, anuvatti, funciones de cada palabra y el ejemplo del modelo de derivación.',
+  intro:'Cada sutta de Kaccāyana tal como lo analiza la <i>Visuddhāyuṃ</i>: clase, aṅga, funciones de cada palabra y el ejemplo del modelo de derivación.',
   how_sum:'Cómo leer esta tabla',term_sum:'Terminología',src_sum:'Fuente y cita',
-  how:`<p>El § abre el aforismo y su traducción en este sitio; el texto pāḷi del sutta sigue a Nandisena. Las demás columnas proceden del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso), las palabras que vienen de suttas anteriores (anuvatti), la función de cada palabra y el ejemplo de su modelo de derivación (rup). Donde el libro no da una función, la celda queda vacía.</p><p>En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.</p>`,
-  terms:[['kāriyī (kārī)','aquello a lo que se realiza cierto tipo de operación gramatical.'],['kāriya','la operación gramatical que hay que realizar.'],['nimitta','causa. Hay dos clases: en la séptima inflexión (sattamī-nimitta) y en la quinta (pañcamī-nimitta).'],['saññā / saññī','en los suttas de definición, el nombre técnico y lo que recibe ese nombre.'],['visaya / visayī','términos que usa el libro en los suttas de inserción (āgama) y de duplicación, en lugar de kāriyī / kāriya.'],['visesana','calificador de una de las palabras anteriores; va entre corchetes.'],['anuvatti','palabras que vienen de suttas anteriores (el libro las llama aṅga).'],['paribhāsā','tres clases: saññaṅga, anaṅga y vidhyaṅga.']],
+  how:`<p>El § abre el aforismo y su traducción en este sitio; el texto pāḷi del sutta sigue a Nandisena. Las demás columnas proceden del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso), las palabras que enumera como aṅga del sutta, la función de cada palabra y el ejemplo de su modelo de derivación (rup). Donde el libro no da una función, la celda queda vacía.</p><p>En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.</p>`,
+  terms:[['kāriyī (kārī)','aquello a lo que se realiza cierto tipo de operación gramatical.'],['kāriya','la operación gramatical que hay que realizar.'],['nimitta','causa. Hay dos clases: en la séptima inflexión (sattamī-nimitta) y en la quinta (pañcamī-nimitta).'],['saññā / saññī','en los suttas de definición, el nombre técnico y lo que recibe ese nombre.'],['visaya / visayī','términos que usa el libro en los suttas de inserción (āgama) y de duplicación, en lugar de kāriyī / kāriya.'],['visesana','calificador de una de las palabras anteriores; va entre corchetes.'],['Aṅga','las palabras que el libro enumera como miembros (aṅga) del sutta, tal como las imprime; pueden ser palabras del propio sutta o suplidas de suttas anteriores. El libro escribe kārī donde esta página dice kāriyī; imprime también bahiraṅga y, una vez, bāhiyaṅga (§83).'],['paribhāsā','tres clases: saññaṅga, anaṅga y vidhyaṅga.']],
   h_class:'Clase de sutta',h_roles:'Funciones',h_ex:'Ejemplo',h_notes:'Notas',h_src:'Fuente',
   ex:'Ejercicio',show:'ver respuesta',hide:'ocultar respuesta',ans:'Respuesta sugerida (IEBH)',ed:'Añadido editorial del IEBH: inflexión del nimitta, deducida del caso de la palabra. No es análisis del libro.',
   more:'más',open:'Abrir el aforismo y su traducción',ver:'Versión',rows:n=>n+(n===1?' sutta':' suttas'),
@@ -457,10 +457,10 @@ es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los 
   ask_note:'Respuesta generada por un modelo de IA (Claude) sólo a partir de esta fila y del glosario del sitio. No está revisada por el IEBH: cotéjela con la fuente.'},
 en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the suttas',subtitle:'following the Visuddhāyuṃ Kaccāyana-ṭīkā',back:'← Resources · Pāḷi Grammars',
   draft:'Draft',sb_open:'Expand',sb_fold:'Fold',pend:'pending',all:'All',search:'Search sutta, term or example',empty:'No sutta matches.',
-  intro:'Each Kaccāyana sutta as the <i>Visuddhāyuṃ</i> analyses it: class, anuvatti, the role of each word and the example of the model derivation.',
+  intro:'Each Kaccāyana sutta as the <i>Visuddhāyuṃ</i> analyses it: class, aṅga, the role of each word and the example of the model derivation.',
   how_sum:'How to read this table',term_sum:'Terminology',src_sum:'Source and citation',
-  how:`<p>The § opens the aphorism and its translation on this site; the Pāḷi text of the sutta follows Nandisena. The other columns come from the book: the class it gives (in Pāḷi or Burmese, as printed), the words carried over from earlier suttas (anuvatti), the role of each word and the example of its model derivation (rup). Where the book gives no role, the cell is left empty.</p><p>In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book's analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.</p>`,
-  terms:[['kāriyī (kārī)','that on which a certain kind of grammatical operation is performed.'],['kāriya','the grammatical operation to be performed.'],['nimitta','cause. There are two kinds: in the seventh inflection (sattamī-nimitta) and in the fifth (pañcamī-nimitta).'],['saññā / saññī','in defining suttas, the technical name and what bears that name.'],['visaya / visayī','terms the book uses in suttas of insertion (āgama) and doubling, instead of kāriyī / kāriya.'],['visesana','qualifier of one of the words above; shown in brackets.'],['anuvatti','words carried over from earlier suttas (the book calls them aṅga).'],['paribhāsā','three kinds: saññaṅga, anaṅga and vidhyaṅga.']],
+  how:`<p>The § opens the aphorism and its translation on this site; the Pāḷi text of the sutta follows Nandisena. The other columns come from the book: the class it gives (in Pāḷi or Burmese, as printed), the words it lists as the sutta's aṅga, the role of each word and the example of its model derivation (rup). Where the book gives no role, the cell is left empty.</p><p>In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book's analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.</p>`,
+  terms:[['kāriyī (kārī)','that on which a certain kind of grammatical operation is performed.'],['kāriya','the grammatical operation to be performed.'],['nimitta','cause. There are two kinds: in the seventh inflection (sattamī-nimitta) and in the fifth (pañcamī-nimitta).'],['saññā / saññī','in defining suttas, the technical name and what bears that name.'],['visaya / visayī','terms the book uses in suttas of insertion (āgama) and doubling, instead of kāriyī / kāriya.'],['visesana','qualifier of one of the words above; shown in brackets.'],['Aṅga','the words the book lists as members (aṅga) of the sutta, as it prints them; they may be words of the sutta itself or supplied from earlier suttas. The book writes kārī where this page says kāriyī; it also prints bahiraṅga and, once, bāhiyaṅga (§83).'],['paribhāsā','three kinds: saññaṅga, anaṅga and vidhyaṅga.']],
   h_class:'Sutta class',h_roles:'Roles',h_ex:'Example',h_notes:'Notes',h_src:'Source',
   ex:'Exercise',show:'show answer',hide:'hide answer',ans:'Suggested answer (IEBH)',ed:'IEBH editorial addition: the inflection of the nimitta, inferred from the case of the word. Not the book\'s analysis.',
   more:'more',open:'Open the aphorism and its translation',ver:'Version',rows:n=>n+(n===1?' sutta':' suttas'),
@@ -554,7 +554,8 @@ function textos(){
   const c=D.meta.cita,cl=c[lang];
   document.getElementById('fuente').innerHTML=`<p><b>${esc(c.autor)}</b>. <i>${esc(c.titulo)}</i> (<span class="my" lang="my">${esc(c.titulo_my)}</span>). ${esc(cl.edicion)} ${esc(cl.prefacio)} ${esc(cl.paginas)}</p><p>${esc(cl.autor_nota)}</p>`;
   const m=D.meta;
-  document.getElementById('vbadge').innerHTML=`v${esc(m.version)} · <time datetime="${m.fecha}">${m.fecha}</time>`;
+  document.getElementById('etiqueta').textContent=m.etiqueta?m.etiqueta[lang]:t.draft;
+  document.getElementById('vbadge').innerHTML=`<time datetime="${m.fecha}">${m.fecha}</time>`;
   document.getElementById('vfoot').innerHTML=`<strong>${t.ver} ${esc(m.version)}</strong> — <time datetime="${m.fecha}">${m.fecha}</time>. ${esc(m.nota_version[lang])}`;
   const fc=document.getElementById('f-cap');
   fc.innerHTML=`<button data-v="all" aria-pressed="${st.cap==='all'}">${t.all}</button>`+D.capitulos.map(k=>`<button data-v="${k.clave}" aria-pressed="${st.cap===k.clave}">${esc(k.pali.replace('-Kappa',''))}</button>`).join('');
@@ -571,7 +572,9 @@ function roles(rs){
 }
 function fila(e){
   const t=T[lang];const nota=(e.nota&&e.nota[lang])||'';
-  const prim=nota?((/^(.+?[.;»])(\s|$)/.exec(nota)||[0,nota])[1]):'';
+  /* la primera frase acaba en «.» o «;» (con su comilla de cierre, si la lleva); no en
+     cualquier «»»: si no, una nota que abre con «ca» se queda en «ca» … (v0.4) */
+  const prim=nota?((/^(.+?[.;][»”]?)(\s|$)/.exec(nota)||[0,nota])[1]):'';
   const corta=prim.length>90?prim.slice(0,80).replace(/\s\S*$/,'')+' …':(prim.length<nota.length?prim+' …':prim);
   const larga=corta!==nota;
   let fun=e.ejercicio?`<span class="ejer">${t.ex}</span>`:'';
@@ -583,7 +586,7 @@ function fila(e){
 <td class="n"><a href="${url(e)}" title="${esc(t.open)}">§${e.n}</a></td>
 <td class="su">${esc(e.sutta||'')}</td>
 <td class="cl" data-h="${esc(t.h_class)}">${e.clase?txt(e.clase):'—'}</td>
-<td data-h="Anuvatti">${e.anuvatti?esc(e.anuvatti):'—'}</td>
+<td data-h="Aṅga">${e.anuvatti?esc(e.anuvatti):'—'}</td>
 <td data-h="${esc(t.h_roles)}">${fun}</td>
 <td class="ej" data-h="${esc(t.h_ex)}">${e.ejemplo?ejemplo(e.ejemplo):'—'}</td>
 <td class="no" data-h="${esc(t.h_notes)}">${nota?esc(corta):'—'}</td>
@@ -596,11 +599,14 @@ function render(){
   const t=T[lang];let h='',sb='';
   D.indice.forEach(c=>{
     const filas=F.filter(e=>e.cap===c.clave);
-    const rg=c.desde?`§${c.desde}–§${c.hasta}`:'';
+    /* el rango de lo publicado, no el del capítulo entero (Nāma, v0.4) */
+    const rg=filas.length?`§${filas[0].n}–§${filas[filas.length-1].n}`:(c.desde?`§${c.desde}–§${c.hasta}`:'');
     if(!filas.length){sb+=`<details class="sb-ch pend"><summary onclick="return false"><span class="gl">${esc(c.pali)}</span><span class="rg" data-p="${t.pend}">${rg}</span></summary></details>`;return}
     const chg='ch-'+c.clave;
     sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]===false?'':' open'}><summary><span class="gl">${esc(c.pali)}</span><span class="n"></span><span class="rg">${rg}</span></summary>`;
     c.kandas.forEach(([k,desde,hasta],i)=>{
+      /* capítulo publicado en parte (Nāma, v0.4): sin filas, el kaṇḍa no sale */
+      if(!filas.some(e=>e.n>=desde&&e.n<=hasta))return;
       const sid=`k-${c.clave}-${i+1}`;let it='';
       h+=`<tr class="sec" id="${sid}" data-cap="${c.clave}"><td colspan="9"><h2>${esc(c.pali)} · ${esc(kname(k))}<span class="rg">§${desde}–§${hasta}</span></h2></td></tr>`;
       filas.filter(e=>e.n>=desde&&e.n<=hasta).forEach(e=>{h+=fila(e);it+=`<a href="#s${e.n}" data-c="s${e.n}"><b>§${e.n}</b><i>${esc(e.sutta||'')}</i></a>`});
