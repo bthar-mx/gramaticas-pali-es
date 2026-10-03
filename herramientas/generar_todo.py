@@ -115,6 +115,27 @@ def main():
     if os.path.exists(os.path.join(recursos, "analisis", "plantilla.html")):
         fallos += correr("generar_analisis.py")
 
+    # términos técnicos sin entrada en el glosario de los globos (aviso, no
+    # error): palabras pāḷi del texto explicativo de la clasificación y del
+    # análisis que no cubre ninguna forma de recursos/terminos/terminos.json
+    # ni está en su lista «no_terminos». Véase terminos.sin_entrada().
+    if os.path.exists(os.path.join(recursos, "terminos", "terminos.json")):
+        import terminos
+        try:
+            faltan = terminos.sin_entrada(RAIZ)
+        except Exception as e:  # el aviso nunca tumba la regeneración
+            print("⚠ glosario de los globos: no se pudo comprobar ({0})".format(e))
+        else:
+            if faltan:
+                print("⚠ glosario de los globos: {0} término(s) sin entrada "
+                      "(añadirlos a terminos.json o, si no son terminología, "
+                      "a «no_terminos»):".format(len(faltan)))
+                for w in sorted(faltan):
+                    print("    {0} — {1}".format(w, "; ".join(
+                        "{0}, {1}".format(p, d) for p, d in faltan[w])))
+            else:
+                print("· glosario de los globos: ningún término sin entrada")
+
     # raíces pāḷi y sánscritas
     # Los datos los producen extraer_raices.py, extraer_dhatupatha.py y
     # extraer_dhatumanjusa.py a partir de los PDF, que no están en el
