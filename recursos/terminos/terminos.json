@@ -1813,7 +1813,8 @@
    "termino": "Rūpasiddhi",
    "formas": [
     "Rūpasiddhi",
-    "Padarūpasiddhi"
+    "Padarūpasiddhi",
+    "Rū"
    ],
    "def": {
     "es": "Gramática que expone los suttas de Kaccāyana en su propio orden y numeración, por kaṇḍas; de Buddhappiya, también llamado Dīpaṅkara.",
@@ -2045,6 +2046,34 @@
     "cap": "sandhi"
    },
    "fuente": "Rū §1 («abhidheyyappayojanavākyam idam uccate»); nota publicada de §1. Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "o_kalapatika",
+   "termino": "Kalāpa-ṭīkā",
+   "formas": [
+    "Kalāpa-ṭīkā"
+   ],
+   "grupo": "obra",
+   "def": {
+    "es": "Comentario (ṭīkā) al Kalāpa, gramática que la Visuddhāyuṃ cita junto a Kaccāyana (aquí, en el §6).",
+    "en": "Commentary (ṭīkā) on the Kalāpa, a grammar the Visuddhāyuṃ cites alongside Kaccāyana (here, under §6)."
+   },
+   "fuente": "Visuddhāyuṃ, §6 (PDF 57) y §60 (PDF 120, «မှီရာကလာပ်ကျမ်း»: el Kalāpa en que se apoya). Autor y fecha: no encontrados en las fuentes del proyecto. Redacción IEBH.",
+   "revisar": true
+  },
+  {
+   "clave": "o_ekakkharakosa",
+   "termino": "Ekakkharakosa",
+   "formas": [
+    "Ekakkharakosa"
+   ],
+   "grupo": "obra",
+   "def": {
+    "es": "Léxico (kosa) de palabras de una sílaba (ekakkhara), citado por la Visuddhāyuṃ en el §31.",
+    "en": "A lexicon (kosa) of one-syllable words (ekakkhara), cited by the Visuddhāyuṃ under §31."
+   },
+   "fuente": "Visuddhāyuṃ, §31 (PDF 90). La descripción es la del título; autor y fecha: no encontrados en las fuentes del proyecto. Redacción IEBH.",
    "revisar": true
   }
  ],

@@ -497,7 +497,7 @@ function textos(){
   const lb=document.getElementById('lang-btn');lb.querySelectorAll('.lang-seg').forEach(x=>x.classList.toggle('lang-cur',x.dataset.l===lang));
   lb.title=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.title);
   /* globos también en la introducción, la leyenda y las notas (2026-10-03) */
-  ['.tag','[data-t-html="how"]','#term dd'].forEach(s=>document.querySelectorAll(s).forEach(glosar));
+  ['.subt','.tag','[data-t-html="how"]','#term dd','#fuente p','#vfoot','.aviso'].forEach(s=>document.querySelectorAll(s).forEach(glosar));
 }
 function roles(rs){
   const t=T[lang];

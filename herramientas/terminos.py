@@ -90,7 +90,12 @@ SIN_DIACRITICOS = {"sutta", "suttas", "vidhi", "sandhi", "ca", "kvaci", "kappa",
                    "vutti", "vagga", "sara", "lopa", "rassa", "liṅga", "kamma",
                    "hetu", "digu", "dvanda", "tappurisa", "kita", "nimitta",
                    "niyama", "atidesa", "pakati", "paccaya", "vibhatti",
-                   "visesana", "anuvatti", "visaya", "pariccheda", "taddhita"}
+                   "visesana", "anuvatti", "visaya", "pariccheda", "taddhita",
+                   # nombres de obras y autores sin diacríticos (grupo «obra»)
+                   "thitzana", "nandisena"}
+# Títulos de obras sin diacríticos: se reconocen por la terminación
+# (Payogasiddhi, Kaccāyanavutti, Ekakkharakosa, Mukhamattasāra…).
+_OBRA = _re.compile(r"(siddhi|vutti|kosa|sāra|sara|ṭīkā|tika|vaṇṇanā|dīpanī|nīti|niti|avatāra)$")
 _PAL = _re.compile(r"[A-Za-zāīūṃṅñṭḍṇḷĀĪŪṂṄÑṬḌṆḶ’']+(?:-[A-Za-zāīūṃṅñṭḍṇḷĀĪŪṂṄÑṬḌṆḶ]+)*")
 _CITA = _re.compile(r"«[^»]*»|“[^”]*”|‘[^’]*’|\"[^\"]*\"")
 
@@ -135,11 +140,16 @@ def _textos(raiz):
 
 
 def sin_entrada(raiz):
-    """{palabra: [(página, dónde), …]} de las palabras pāḷi sin entrada."""
+    """{palabra: [(página, dónde), …]} de las palabras pāḷi sin entrada.
+
+    Cubre también las obras citadas (grupo «obra»): sus nombres llevan casi
+    siempre diacríticos, y los que no (Thitzana, Nandisena, «…siddhi»,
+    «…vutti») se buscan aparte. Las palabras que aparecen con mayúscula
+    inicial van marcadas con «obra?» en el primer lugar de la lista."""
     d = json.load(open(os.path.join(raiz, "recursos", "terminos", "terminos.json"), encoding="utf-8"))
     formas = {f.lower() for t in d["terminos"] for f in t["formas"]}
     ignorar = {w.lower() for w in d.get("no_terminos", [])}
-    faltan = {}
+    faltan, mayus = {}, set()
     for pag, donde, txt in _textos(raiz):
         txt = _CITA.sub(" ", unicodedata.normalize("NFC", txt or ""))
         for tok in _PAL.findall(txt):
@@ -148,11 +158,21 @@ def sin_entrada(raiz):
             # va en grupo pāḷi (ññ, ñc, ñj); y las letras y sufijos sueltos
             # (ā, ṇa, kaṇ) son objeto de la regla, no terminología.
             pali = (_DIAC - {"ñ", "Ñ"}) & set(w) or _re.search("ñ[ñcj]", w)
-            if not w or not (pali or w in SIN_DIACRITICOS) or len(w) <= 3 and w not in SIN_DIACRITICOS:
+            obra = tok[:1].isupper() and bool(_OBRA.search(w))
+            if not w or not (pali or obra or w in SIN_DIACRITICOS) or len(w) <= 3 and w not in SIN_DIACRITICOS:
                 continue
-            if w in formas or w in ignorar or any(p in formas for p in w.split("-")):
+            # Un compuesto glosado por una de sus partes (pubbalopa-vidhi →
+            # vidhi) basta para un término; para una obra con nombre
+            # compuesto (Kalāpa-ṭīkā) hace falta la entrada del nombre entero.
+            partes = not (obra and "-" in w)
+            if w in formas or w in ignorar or partes and any(p in formas for p in w.split("-")):
                 continue
+            # con mayúscula inicial en el texto: casi siempre una obra o un autor
+            if tok[:1].isupper():
+                mayus.add(w)
             faltan.setdefault(w, [])
             if len(faltan[w]) < 3 and (pag, donde) not in faltan[w]:
                 faltan[w].append((pag, donde))
+    for w in mayus & set(faltan):
+        faltan[w].insert(0, ("obra?", "con mayúscula"))
     return faltan
