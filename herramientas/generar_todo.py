@@ -124,10 +124,10 @@ def main():
         try:
             faltan = terminos.sin_entrada(RAIZ)
         except Exception as e:  # el aviso nunca tumba la regeneración
-            print("⚠ glosario de los globos: no se pudo comprobar ({0})".format(e))
+            print("⚠ aviso — glosario de los globos: no se pudo comprobar ({0})".format(e))
         else:
             if faltan:
-                print("⚠ glosario de los globos: {0} término(s) sin entrada "
+                print("⚠ aviso — glosario de los globos: {0} término(s) u obra(s) sin entrada "
                       "(añadirlos a terminos.json o, si no son terminología, "
                       "a «no_terminos»):".format(len(faltan)))
                 for w in sorted(faltan):

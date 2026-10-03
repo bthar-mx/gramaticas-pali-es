@@ -507,7 +507,7 @@ function textos(){
   const lb=document.getElementById('lang-btn');lb.querySelectorAll('.lang-seg').forEach(x=>x.classList.toggle('lang-cur',x.dataset.l===lang));
   lb.dataset.tip=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.dataset.tip);
   /* globos también en la introducción, la leyenda y las notas (2026-10-03) */
-  ['.tag','#ley-tipos td:last-child','#ley-vidhi td:last-child','#pie'].forEach(s=>document.querySelectorAll(s).forEach(glosar));
+  ['.tag','#ley-tipos td:last-child','#ley-vidhi td:last-child','#pie','#vfoot','.aviso'].forEach(s=>document.querySelectorAll(s).forEach(glosar));
 }
 
 /* la tabla */
@@ -542,7 +542,7 @@ function render(){
     sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
-  document.querySelectorAll('#out tr.r td.op, #out tr.r td.in, #out .detalle p').forEach(glosar);chipsGlosa(document.getElementById('out'));
+  document.querySelectorAll('#out tr.r td.op, #out tr.r td.in, #out .detalle p, #out .detalle dt, #out .detalle dd').forEach(glosar);chipsGlosa(document.getElementById('out'));
   document.querySelectorAll('#sb-list details').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
