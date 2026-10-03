@@ -705,20 +705,25 @@ addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:tru
    redirect:'manual' eso llega como 'opaqueredirect' y basta para saber que no
    hay que enseñar los botones. Al público no se le enseña nada más que el
    enlace discreto del pie, que lleva a iniciar sesión. */
-const PREG={ok:false,restantes:null,n:null};
+/* «turno» cambia cada vez que se abre el diálogo: una respuesta que llega
+   tarde (se cerró mientras pensaba) no se pinta sobre la pregunta siguiente. */
+const PREG={ok:false,restantes:null,n:null,turno:0};
 const dlg=document.getElementById('preg-dlg'),pq=document.getElementById('preg-q'),pout=document.getElementById('preg-out'),penv=document.getElementById('preg-env');
 function quedan(){document.getElementById('preg-quedan').textContent=PREG.restantes===null?'':T[lang].ask_left(PREG.restantes)}
 function abrirPreg(n){
   const t=T[lang],e=F.find(x=>x.n===n);if(!e||!dlg.showModal)return;
   PREG.n=n;document.getElementById('preg-tit').textContent=t.ask_title(n);
   document.getElementById('preg-su').textContent=e.sutta||'';pq.placeholder=t.ask_ph;
-  pout.innerHTML='';penv.disabled=PREG.restantes===0;quedan();dlg.showModal();pq.focus();
+  /* cada apertura empieza en limpio: ni la pregunta ni la respuesta anteriores;
+     el «Quedan hoy» sí se conserva */
+  PREG.turno++;pq.value='';pout.innerHTML='';penv.disabled=PREG.restantes===0;quedan();dlg.showModal();pq.focus();
 }
 document.getElementById('out').addEventListener('click',e=>{const b=e.target.closest('.preg');if(b)abrirPreg(+b.dataset.n)});
 document.getElementById('preg-cerrar').onclick=()=>dlg.close();
 document.getElementById('preg-form').addEventListener('submit',async ev=>{
-  ev.preventDefault();const t=T[lang],q=pq.value.trim();if(!q||PREG.n===null)return;
-  penv.disabled=true;pout.innerHTML=`<p>${esc(t.ask_wait)}</p>`;
+  ev.preventDefault();const t=T[lang],q=pq.value.trim(),turno=PREG.turno;if(!q||PREG.n===null)return;
+  const pinta=h=>{if(turno===PREG.turno)pout.innerHTML=h};
+  penv.disabled=true;pinta(`<p>${esc(t.ask_wait)}</p>`);
   try{
     const r=await fetch('/api/preguntar',{method:'POST',redirect:'manual',credentials:'same-origin',
       headers:{'Content-Type':'application/json'},body:JSON.stringify({sutta:PREG.n,pregunta:q,lang})});
@@ -726,9 +731,9 @@ document.getElementById('preg-form').addEventListener('submit',async ev=>{
     const j=await r.json().catch(()=>({}));
     if(typeof j.restantes==='number')PREG.restantes=j.restantes;
     if(!r.ok||!j.ok)throw new Error(j.error||('HTTP '+r.status));
-    pout.innerHTML=j.respuesta.split(/\n\s*\n/).map(p=>`<p>${esc(p.trim())}</p>`).join('')+(j.cortada?`<p><i>${esc(t.ask_cut)}</i></p>`:'');
-  }catch(err){pout.innerHTML=`<p class="err">${esc(t.ask_err+(err&&err.message||err))}</p>`}
-  quedan();penv.disabled=PREG.restantes===0;
+    pinta(j.respuesta.split(/\n\s*\n/).map(p=>`<p>${esc(p.trim())}</p>`).join('')+(j.cortada?`<p><i>${esc(t.ask_cut)}</i></p>`:''));
+  }catch(err){pinta(`<p class="err">${esc(t.ask_err+(err&&err.message||err))}</p>`)}
+  quedan();if(turno===PREG.turno)penv.disabled=PREG.restantes===0;
 });
 fetch('/api/preguntar?json=1',{redirect:'manual',credentials:'same-origin'})
   .then(r=>r.ok?r.json():null).catch(()=>null)
