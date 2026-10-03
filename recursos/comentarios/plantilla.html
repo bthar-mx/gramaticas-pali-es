@@ -308,7 +308,11 @@ const GL=D.terminos||[],GK={},GF=[];
 GL.forEach(t=>{GK[t.clave]=t;t.formas.forEach(f=>GF.push([f,t.clave]))});
 GF.sort((a,b)=>b[0].length-a[0].length);
 const GFK={};GF.forEach(([f,k])=>GFK[f.toLowerCase()]=k);
-const GRE=GF.length?new RegExp('(?<![\\p{L}\\p{M}])('+GF.map(([f])=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\p{L}\\p{M}])','giu'):null;
+/* Sólo nombres enteros (2026-10-03): una forma pegada a un guion o a un
+   paréntesis forma parte de otro título —«Mukhamattadīpanī-purāṇaṭīkā» es una
+   ṭīkā sobre el Nyāsa, no el Nyāsa; «Bālāvatāra-(purāṇa)ṭīkā», «Rūpasiddhi-
+   sannaya»— y no lleva el globo de la obra. */
+const GRE=GF.length?new RegExp('(?<![\\p{L}\\p{M}\\-‐)])('+GF.map(([f])=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\p{L}\\p{M}\\-‐(])','giu'):null;
 function glosar(el){
   if(!GRE||!el)return;
   const vistos=new Set();
