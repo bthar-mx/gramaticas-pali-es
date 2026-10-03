@@ -33,17 +33,33 @@
 
    ---- CUÁNTO: 20 preguntas por persona y día (UTC) ----
 
-   El contador vive en el KV de la cola (o en PREGUNTAS, si algún día se crea
-   uno propio) bajo el prefijo PREFIJO_PREGUNTAS, que /api/cola excluye. Sólo
+   El contador vive en el KV PREGUNTAS (o, mientras no esté enlazado, en el de
+   la cola) bajo el prefijo PREFIJO_PREGUNTAS, que /api/cola excluye. Sólo
    cuenta lo que se respondió: un fallo de la API no gasta pregunta. KV no es
    atómico, así que dos preguntas a la vez podrían contar una; para dos
-   personas no merece un Durable Object. No se guarda el texto de las
-   preguntas ni de las respuestas. */
+   personas no merece un Durable Object.
+
+   ---- QUÉ SE GUARDA: el registro (pedido del IEBH, 2026-10-03) ----
+
+   Cada pregunta respondida deja una entrada en PREFIJO_REGISTRO —dentro del
+   mismo prefijo, de modo que /api/cola tampoco la ve— con la pregunta, el §,
+   la lengua y la fecha. NO el correo (ni en el valor ni en la clave) y no la
+   respuesta. La página lo dice junto al botón. Para leerlo:
+       npx wrangler kv key list --binding PREGUNTAS --prefix preguntar/log/ --remote
+
+   ---- LOS EJERCICIOS (§38, §39, §44, §50) ----
+
+   En las filas de ejercicio el modelo NO recibe la «Respuesta sugerida (IEBH)»:
+   la instrucción le pide no dar la solución, y lo que no tiene no lo puede
+   dar. Sabe sólo que la respuesta existe en la página. */
 
 export const PREFIJO_PREGUNTAS = "preguntar/";
+const PREFIJO_REGISTRO = PREFIJO_PREGUNTAS + "log/";
 const LIMITE_DIARIO = 20;
 const MAX_PREGUNTA = 1500;          // caracteres
-const MODELO = "claude-opus-5-5";   // PREGUNTAR_MODELO lo cambia sin desplegar
+/* Sonnet por coste (pedido del IEBH, 2026-10-03). Para comparar con Opus,
+   el secreto PREGUNTAR_MODELO=claude-opus-5-5 lo cambia sin desplegar. */
+const MODELO = "claude-sonnet-5-5";
 
 /* La parte fija del prompt: va primero y con cache_control, de modo que se
    cobra entera una vez cada cinco minutos y no en cada pregunta. Nada que
@@ -58,19 +74,22 @@ Qué contiene la fila:
 - «clase»: la clase de sutta que le da la Visuddhāyuṃ (en pāḷi o en birmano, como está impreso).
 - «anuvatti»: palabras que vienen de suttas anteriores (el libro las llama aṅga).
 - «roles»: la función de cada palabra del sutta, como [función, palabra, visesana, inflexión]. Funciones: kāriyī (aquello a lo que se aplica la operación), kāriya (la operación), nimitta (la causa; la inflexión 7.ª/5.ª/3.ª es un añadido editorial del IEBH, deducido del caso de la palabra, no análisis del libro), saññā/saññī (en los suttas de definición, el nombre técnico y lo que lo recibe), visaya/visayī (en los de inserción y duplicación). El visesana es un calificador de otra palabra.
-- «ejercicio»: si es verdadero, el libro deja el análisis al estudiante, y «respuesta» es la respuesta sugerida por el IEBH, no por el libro.
+- «ejercicio»: si es verdadero, el libro deja el análisis al estudiante (v. regla 9).
 - «ejemplo»: el ejemplo del modelo de derivación del libro, con marcas: {k|…} lo que sufre la operación, {n|…} la causa, {r|…} el resultado, {x|…} lo que se elide; {kx|…} y {nx|…} combinan dos marcas.
 - «nota»: notas del IEBH (cotejos, dudas de lectura, la clasificación del sitio).
 - «pdf»: la página del PDF del libro.
 
 Cómo responder:
-1. Responde en la lengua que indica <lengua> (es = español, en = inglés), en registro formal y claro, en prosa, sin encabezados. Como máximo 300 palabras; menos si basta.
+1. Responde en la lengua que indica <lengua> (es = español, en = inglés), en registro formal y claro, en prosa, sin encabezados ni listas largas. Como máximo 300 palabras; menos si basta.
 2. Términos técnicos pāḷi sin traducir y con diacríticos completos (kāriyī, nimitta, sattamī, pubbalopa). Usa las definiciones de <glosario> como las del sitio.
-3. Básate sólo en la fila y el glosario. Si la respuesta exige algo que no está ahí —otro sutta, la vutti, el comentario completo, otra gramática—, dilo expresamente («la fila no lo dice») en lugar de suponerlo, y puedes indicar dónde habría que mirarlo.
-4. No inventes reglas, pasos de derivación, referencias ni citas. Si propones una explicación propia, márcala como tal. Ante una duda de lectura o de gramática, di que es una duda.
-5. El Tipiṭaka es la fuente y Kaccāyana la autoridad que lo explica: que una forma sea posible por las reglas no demuestra que el canon la diga. No afirmes que una lectura está atestiguada si no lo dice el material.
-6. Lo que es del libro (Visuddhāyuṃ) y lo que es añadido del IEBH (inflexión del nimitta, respuestas de ejercicio, notas) se distingue al citarlo.
-7. Si la pregunta no tiene que ver con la fila o con la gramática pāḷi, responde brevemente que este asistente sólo trata de la fila seleccionada.`;
+3. Cita el § en cada afirmación: el de la fila (§n) o el del ejemplo de una entrada del glosario. Una afirmación que no puedas asociar a un § del material no la hagas.
+4. Separa dos partes, en este orden. La primera empieza por «Según la Visuddhāyuṃ (§n): …» (en inglés, «According to the Visuddhāyuṃ (§n): …») y contiene sólo lo que dicen los datos de la fila; lo que en la fila es añadido del IEBH (la inflexión del nimitta y las notas) se atribuye al IEBH, no al libro. La segunda empieza por «Explicación general: …» («General explanation: …») y contiene tu explicación gramatical; omítela si no hace falta.
+5. Básate sólo en la fila y el glosario. Si el material no cubre lo que se pregunta —otro sutta, la vutti, el comentario completo, otra gramática, una forma del canon—, responde «No lo sé» («I don't know»), di brevemente qué falta y sugiere consultarlo con un maestro. No lo suplas con lo que sea verosímil.
+6. No inventes reglas, pasos de derivación, referencias ni citas. Si propones una explicación propia, márcala como tal. Ante una duda de lectura o de gramática, di que es una duda.
+7. El Tipiṭaka es la fuente y Kaccāyana la autoridad que lo explica: que una forma sea posible por las reglas no demuestra que el canon la diga. No afirmes que una lectura está atestiguada si no lo dice el material.
+8. No reproduzcas citas largas del libro ni de las notas: como mucho, una expresión breve entre comillas; lo demás, con tus palabras.
+9. Ejercicios (las filas con «ejercicio» verdadero: §38, §39, §44 y §50): no des la solución —ni las funciones de las palabras ni el análisis que el libro deja al estudiante—, aunque se pida expresamente. Explica la regla o el concepto que interviene (qué es un kāriyī, un nimitta, qué significa «kvaci»…) y remite a «Respuesta sugerida (IEBH)» en la página («Suggested answer (IEBH)» en inglés), que se abre con el botón de la propia fila.
+10. Si la pregunta no tiene que ver con la fila o con la gramática pāḷi, responde brevemente que este asistente sólo trata de la fila seleccionada.`;
 
 /* preguntar.json, leído una vez por instancia: cambia sólo con un despliegue. */
 let DATOS = null;
@@ -86,12 +105,17 @@ function kv(env) {
   return env.PREGUNTAS || env.VEREDICTOS || null;
 }
 
-function claveDelDia(correo) {
-  return PREFIJO_PREGUNTAS + new Date().toISOString().slice(0, 10) + "/" + correo.toLowerCase();
+/* El contador va por persona, pero la clave lleva el SHA-256 del correo y no
+   el correo: la página promete que no se guarda, y una clave del KV también es
+   guardar. */
+async function claveDelDia(correo) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(correo.toLowerCase()));
+  const hex = [...new Uint8Array(h)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  return PREFIJO_PREGUNTAS + new Date().toISOString().slice(0, 10) + "/" + hex;
 }
 
 async function usadas(env, correo) {
-  return parseInt((await kv(env).get(claveDelDia(correo))) || "0", 10) || 0;
+  return parseInt((await kv(env).get(await claveDelDia(correo))) || "0", 10) || 0;
 }
 
 const SIN_CACHE = { "Cache-Control": "no-store" };
@@ -175,7 +199,11 @@ export async function preguntar(request, env, url, identidad) {
   if (!respuesta) {
     return json({ ok: false, error: "respuesta vacía; no se ha contado la pregunta" }, 502);
   }
-  await kv(env).put(claveDelDia(ident.correo), String(ya + 1), { expirationTtl: 60 * 60 * 48 });
+  await kv(env).put(await claveDelDia(ident.correo), String(ya + 1), { expirationTtl: 60 * 60 * 48 });
+  // El registro: pregunta, §, lengua y fecha. Ni correo ni respuesta.
+  const fecha = new Date().toISOString();
+  await kv(env).put(PREFIJO_REGISTRO + fecha + "-" + crypto.randomUUID().slice(0, 8),
+    JSON.stringify({ pregunta, sutta: n, lang, fecha }));
   return json({
     ok: true, respuesta, restantes: LIMITE_DIARIO - ya - 1,
     cortada: m.stop_reason === "max_tokens", modelo: m.model,
@@ -187,7 +215,8 @@ export function cuerpoDeLaPeticion(env, fila, glosario, pregunta, lang) {
   const de = (o) => (o && typeof o === "object" ? o[lang] || "" : o || "");
   const f = {
     "§": fila.n, sutta: fila.sutta, tr: de(fila.tr), clase: fila.clase, anuvatti: fila.anuvatti,
-    roles: fila.roles, ejercicio: fila.ejercicio, respuesta: fila.respuesta,
+    // De un ejercicio no va la respuesta sugerida: el modelo no debe darla.
+    roles: fila.roles, ejercicio: fila.ejercicio,
     ejemplo: fila.ejemplo, nota: de(fila.nota), pdf: fila.pdf,
   };
   const g = fila.terminos.filter((k) => glosario[k]).map((k) => {
