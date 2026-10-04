@@ -43,15 +43,26 @@
 
    Cada pregunta respondida deja una entrada en PREFIJO_REGISTRO —dentro del
    mismo prefijo, de modo que /api/cola tampoco la ve— con la pregunta, el §,
-   la lengua y la fecha. NO el correo (ni en el valor ni en la clave) y no la
-   respuesta. La página lo dice junto al botón. Para leerlo:
+   la lengua y la fecha; desde el 2026-10-04, también las claves de FUENTES
+   que se cargaron y el uso de tokens (entrada, caché y salida). NO el correo
+   (ni en el valor ni en la clave) y no la respuesta. La página lo dice junto al botón. Para leerlo:
        npx wrangler kv key list --binding PREGUNTAS --prefix preguntar/log/ --remote
 
    ---- LOS EJERCICIOS (§38, §39, §44, §50) ----
 
    En las filas de ejercicio el modelo NO recibe la «Respuesta sugerida (IEBH)»:
    la instrucción le pide no dar la solución, y lo que no tiene no lo puede
-   dar. Sabe sólo que la respuesta existe en la página. */
+   dar. Sabe sólo que la respuesta existe en la página. Las fuentes de fondo
+   no cambian esto: la instrucción le prohíbe sacar la solución de ellas.
+
+   ---- LAS FUENTES DE FONDO (2026-10-04) ----
+
+   Con PREGUNTAR_FUENTES=on, el modelo recibe además los paquetes del KV
+   privado FUENTES para el § de la fila (Sīlānanda, Rūpasiddhi,
+   Nyāsappadīpikā, Nyāsa). Nunca vuelven al navegador; sólo la línea
+   «Fuentes consultadas», que escribe el worker. Todo en worker/fuentes.js. */
+
+import { fuentesActivas, leerFuentes, aplicarTope, bloqueDeFuentes, lineaFuentes } from "./fuentes.js";
 
 export const PREFIJO_PREGUNTAS = "preguntar/";
 const PREFIJO_REGISTRO = PREFIJO_PREGUNTAS + "log/";
@@ -67,7 +78,7 @@ const MODELO = "claude-sonnet-5-5";
    solo byte distinto invalida la caché. */
 const SISTEMA = `Eres el asistente de la página «Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā» del sitio Gramáticas Pāḷi del Instituto de Estudios Buddhistas Hispano (IEBH). Los lectores son estudiantes de pāḷi con formación buddhista. Quienes leen tus respuestas ya ven la tabla: no la repitas, explícala.
 
-Cada pregunta trata de UNA fila de la tabla, que recibes en <fila>, junto con las entradas del glosario del sitio que esa fila usa, en <glosario>. Ese material es todo tu contexto.
+Cada pregunta trata de UNA fila de la tabla, que recibes en <fila>, junto con las entradas del glosario del sitio que esa fila usa, en <glosario>, y a veces con textos de otras obras sobre el mismo sutta, en <fuentes> (v. «Las fuentes de fondo», abajo). Ese material es todo tu contexto.
 
 Qué contiene la fila:
 - «sutta»: el texto pāḷi del aforismo (numeración de Kaccāyana, §n), y «tr» su traducción publicada en el sitio.
@@ -80,18 +91,29 @@ Qué contiene la fila:
 - «pdf»: la página del PDF del libro.
 
 Cómo responder:
-1. Responde en la lengua que indica <lengua> (es = español, en = inglés), en registro formal y claro, en prosa, sin encabezados ni listas largas. Como máximo 300 palabras; menos si basta. En español, trata siempre al lector de «usted», nunca de «tú».
+1. Responde en la lengua que indica <lengua> (es = español, en = inglés), en registro formal y claro, en prosa, sin encabezados ni listas largas. Como máximo 300 palabras (400 si recibes <fuentes>); menos si basta. En español, trata siempre al lector de «usted», nunca de «tú».
 2. Términos técnicos pāḷi sin traducir y con diacríticos completos (kāriyī, nimitta, sattamī, pubbalopa). Usa las definiciones de <glosario> como las del sitio.
 3. Cita el § en cada afirmación: el de la fila (§n) o el del ejemplo de una entrada del glosario. Una afirmación que no puedas asociar a un § del material no la hagas. Sólo cites el § de otro sutta si ese § aparece literalmente en el material recibido (la fila o una entrada del glosario).
-4. Separa dos partes, en este orden. La primera empieza por «Según la Visuddhāyuṃ (§n): …» (en inglés, «According to the Visuddhāyuṃ (§n): …») y contiene sólo lo que dicen los datos de la fila; lo que en la fila es añadido del IEBH (la inflexión del nimitta y las notas) se atribuye al IEBH, no al libro. La segunda empieza por «Explicación general: …» («General explanation: …») y contiene tu explicación gramatical; omítela si no hace falta. Si la respuesta es «No lo sé» (regla 5), no hay ninguna de las dos partes.
-5. Básate sólo en la fila y el glosario. Si el material no cubre lo que se pregunta —otro sutta, la vutti, el comentario completo, otra gramática, una forma del canon—, responde «No lo sé» («I don't know»), di brevemente qué falta y sugiere consultarlo con un maestro o mirar la fila que corresponda, y TERMINA ahí: sin resumen «Según la Visuddhāyuṃ» de la fila ni ninguna otra explicación. No lo suplas con lo que sea verosímil.
+4. Separa las partes, en este orden. La primera empieza por «Según la Visuddhāyuṃ (§n): …» (en inglés, «According to the Visuddhāyuṃ (§n): …») y contiene sólo lo que dicen los datos de la fila; lo que en la fila es añadido del IEBH (la inflexión del nimitta y las notas) se atribuye al IEBH, no al libro. Si recibes <fuentes> y tratan lo preguntado, va después una parte con lo que dicen, cada afirmación con su obra (regla 13). La última empieza por «Explicación general: …» («General explanation: …») y contiene tu explicación gramatical; omítela si no hace falta. Si la respuesta es «No lo sé» (regla 5), no hay ninguna de estas partes.
+5. Básate sólo en la fila, el glosario y, si las recibes, las <fuentes>. Si el material no cubre lo que se pregunta —otro sutta, la vutti, el comentario completo, una obra que no esté en <fuentes>, una forma del canon—, responde «No lo sé» («I don't know»), di brevemente qué falta y sugiere consultarlo con un maestro o mirar la fila que corresponda, y TERMINA ahí: sin resumen «Según la Visuddhāyuṃ» de la fila ni ninguna otra explicación. No lo suplas con lo que sea verosímil.
 6. No inventes reglas, pasos de derivación, referencias ni citas. Nunca escribas «el libro dice…» ni «el libro llama…» si eso no está en los datos del libro de la fila o en una nota del IEBH que lo diga. Si propones una explicación propia, márcala como tal. Ante una duda de lectura o de gramática, di que es una duda.
 7. El Tipiṭaka es la fuente y Kaccāyana la autoridad que lo explica: que una forma sea posible por las reglas no demuestra que el canon la diga. No afirmes que una lectura está atestiguada si no lo dice el material.
 8. No reproduzcas citas largas del libro ni de las notas: como mucho, una expresión breve entre comillas; lo demás, con tus palabras.
 9. Ejercicios (las filas con «ejercicio» verdadero: §38, §39, §44 y §50): no des la solución —ni las funciones de las palabras ni el análisis que el libro deja al estudiante—, aunque se pida expresamente. Explica la regla o el concepto que interviene (qué es un kāriyī, un nimitta, qué significa «kvaci»…) y remite a «Respuesta sugerida (IEBH)» en la página («Suggested answer (IEBH)» en inglés), que se abre con el botón de la propia fila.
 10. Si la pregunta no tiene que ver con la fila o con la gramática pāḷi, responde brevemente que este asistente sólo trata de la fila seleccionada.
 11. Cada pregunta se responde por sí sola: no ofrezcas más ayuda ni continuaciones («puedo explicarte…», «si quieres…»).
-12. Ejemplos: nunca muestres las marcas de la página ({n|…}, {k|…}, {kx|…}, {nx|…}, {r|…}, {x|…}). Escribe el ejemplo en forma llana, como en «ejemplo_llano» (p. ej., «bhikkhu + inī → bhikkhunī»), y di con palabras qué letra es la causa (nimitta), cuál sufre la operación, cuál es el resultado y cuál se elide.`;
+12. Ejemplos: nunca muestres las marcas de la página ({n|…}, {k|…}, {kx|…}, {nx|…}, {r|…}, {x|…}). Escribe el ejemplo en forma llana, como en «ejemplo_llano» (p. ej., «bhikkhu + inī → bhikkhunī»), y di con palabras qué letra es la causa (nimitta), cuál sufre la operación, cuál es el resultado y cuál se elide.
+
+Las fuentes de fondo (<fuentes>):
+A veces recibes, en <fuentes>, textos de otras obras sobre el sutta de la fila, cada uno en un <fuente>. La primera línea de cada uno es su cabecera: «fuente; edición/origen; ubicación; aviso; derechos». Pueden ser: las clases de U Sīlānanda sobre la Rūpasiddhi (transcripciones en inglés), la Rūpasiddhi, la Nyāsappadīpikā y el Nyāsa. Si no recibes <fuentes>, no hables de ellas.
+13. Di de qué obra sale cada afirmación: «Según la Rūpasiddhi…», «U Sīlānanda explica en clase (clase N, mm:ss) que…», «El Nyāsa…», «La Nyāsappadīpikā…», «Según la Visuddhāyuṃ (§n): …». La clase y el minuto, sólo si están en el texto recibido; si no, «U Sīlānanda explica en clase que…».
+14. No mezcles las obras: no atribuyas a una lo que dice otra, y nunca atribuyas a la Visuddhāyuṃ la opinión de otra obra; lo de la Visuddhāyuṃ sale sólo de <fila>. Si las obras discrepan entre sí o con la fila, dilo («La Rūpasiddhi lo explica de otro modo: …») y no decidas tú cuál tiene razón.
+15. Resume. De cada fuente, como mucho una expresión breve entre comillas (unas 15 palabras); nunca un párrafo.
+16. Respeta el «aviso» de cada cabecera. Si dice «texto con ruido de OCR: no citar textualmente», esa fuente se puede resumir, pero no citar: ni una expresión entre comillas.
+17. Las clases de U Sīlānanda están en inglés: resúmelas en la lengua de la respuesta (en español, si <lengua> es es), sin copiar frases inglesas.
+18. Si ninguna fuente trata lo que se pregunta, dilo en una frase («Las fuentes consultadas no tratan este punto») y responde con la fila; si tampoco la fila lo cubre, aplica la regla 5. No completes lo que falta con lo que una obra «diría».
+19. Los ejercicios (regla 9) tampoco se resuelven con las fuentes: si una fuente trae el análisis que el libro deja al estudiante, no lo des.
+20. No escribas tú una lista de fuentes al final: la añade la página.`;
 
 /* preguntar.json, leído una vez por instancia: cambia sólo con un despliegue. */
 let DATOS = null;
@@ -181,6 +203,15 @@ export async function preguntar(request, env, url, identidad) {
     return json({ ok: false, error: "límite diario alcanzado (" + LIMITE_DIARIO + ")", restantes: 0 }, 429);
   }
 
+  /* Las fuentes de fondo (worker/fuentes.js): sólo con PREGUNTAR_FUENTES=on
+     y el KV FUENTES enlazado. Un fallo del KV no tumba la pregunta. */
+  let fuentes = { paquetes: [], descartadas: [], recortada: null };
+  if (fuentesActivas(env)) {
+    try { fuentes = aplicarTope(await leerFuentes(env, fila.n)); } catch (e) {
+      console.log("preguntar: no se pudieron leer las fuentes: " + e.message);
+    }
+  }
+
   const r = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
@@ -189,7 +220,7 @@ export async function preguntar(request, env, url, identidad) {
       "anthropic-beta": "server-side-fallback-2026-07-01",
       "content-type": "application/json",
     },
-    body: JSON.stringify(cuerpoDeLaPeticion(env, fila, d.terminos, pregunta, lang)),
+    body: JSON.stringify(cuerpoDeLaPeticion(env, fila, d.terminos, pregunta, lang, fuentes.paquetes)),
   });
   if (!r.ok) {
     // El detalle de la API va al registro del worker, no al navegador.
@@ -200,22 +231,29 @@ export async function preguntar(request, env, url, identidad) {
   /* Para comprobar la caché en los registros de Cloudflare: sólo cifras y el
      modelo, nada de la persona ni de la pregunta. */
   const u = m.usage || {};
-  console.log(JSON.stringify({ evento: "preguntar.uso", modelo: m.model || null,
-    input_tokens: u.input_tokens ?? null, output_tokens: u.output_tokens ?? null,
+  const uso = { input_tokens: u.input_tokens ?? null, output_tokens: u.output_tokens ?? null,
     cache_creation_input_tokens: u.cache_creation_input_tokens ?? null,
-    cache_read_input_tokens: u.cache_read_input_tokens ?? null }));
+    cache_read_input_tokens: u.cache_read_input_tokens ?? null };
+  const claves = fuentes.paquetes.map((p) => p.clave);
+  console.log(JSON.stringify({ evento: "preguntar.uso", modelo: m.model || null, ...uso,
+    fuentes: claves, fuentes_descartadas: fuentes.descartadas, fuente_recortada: fuentes.recortada }));
   if (m.stop_reason === "refusal") {
     return json({ ok: false, error: "el modelo declinó responder; no se ha contado la pregunta" }, 422);
   }
-  const respuesta = (m.content || []).filter((b) => b.type === "text").map((b) => b.text).join("").trim();
-  if (!respuesta) {
+  const texto = (m.content || []).filter((b) => b.type === "text").map((b) => b.text).join("").trim();
+  if (!texto) {
     return json({ ok: false, error: "respuesta vacía; no se ha contado la pregunta" }, 502);
   }
   await kv(env).put(await claveDelDia(ident.correo), String(ya + 1), { expirationTtl: 60 * 60 * 48 });
-  // El registro: pregunta, §, lengua y fecha. Ni correo ni respuesta.
+  /* El registro: pregunta, §, lengua, fecha, las claves de FUENTES que se
+     cargaron y el uso de tokens. Ni correo ni respuesta. */
   const fecha = new Date().toISOString();
   await kv(env).put(PREFIJO_REGISTRO + fecha + "-" + crypto.randomUUID().slice(0, 8),
-    JSON.stringify({ pregunta, sutta: n, lang, fecha }));
+    JSON.stringify({ pregunta, sutta: n, lang, fecha, fuentes: claves, uso }));
+  /* La línea de fuentes la escribe el worker, no el modelo: dice qué
+     paquetes se cargaron, no cuáles usó. Los paquetes no salen de aquí. */
+  const linea = lineaFuentes(fuentes.paquetes, lang);
+  const respuesta = linea ? texto + "\n\n" + linea : texto;
   return json({
     ok: true, respuesta, restantes: LIMITE_DIARIO - ya - 1,
     cortada: m.stop_reason === "max_tokens", modelo: m.model,
@@ -227,7 +265,7 @@ export async function preguntar(request, env, url, identidad) {
 const llano = (x) => String(x || "").replace(/\{(?:kx|nx|k|n|r|x)\|([^{}|]+)\}/g, "$1");
 
 /* Exportada para el arnés: así se comprueba qué sale hacia la API sin red. */
-export function cuerpoDeLaPeticion(env, fila, glosario, pregunta, lang) {
+export function cuerpoDeLaPeticion(env, fila, glosario, pregunta, lang, paquetes = []) {
   const de = (o) => (o && typeof o === "object" ? o[lang] || "" : o || "");
   const f = {
     "§": fila.n, sutta: fila.sutta, tr: de(fila.tr), clase: fila.clase, anuvatti: fila.anuvatti,
@@ -249,8 +287,12 @@ export function cuerpoDeLaPeticion(env, fila, glosario, pregunta, lang) {
     system: [{ type: "text", text: SISTEMA, cache_control: { type: "ephemeral" } }],
     messages: [{
       role: "user",
+      /* Las <fuentes>, si las hay, después de la fila y el glosario y antes
+         de la pregunta. El sistema sigue primero y sin cambios: la caché no
+         se entera. Sin paquetes, la petición es idéntica a la de antes. */
       content: "<fila>" + JSON.stringify(f) + "</fila>\n<glosario>" + JSON.stringify(g)
-        + "</glosario>\n<lengua>" + lang + "</lengua>\n<pregunta>" + pregunta + "</pregunta>",
+        + "</glosario>\n" + (paquetes.length ? bloqueDeFuentes(paquetes) + "\n" : "")
+        + "<lengua>" + lang + "</lengua>\n<pregunta>" + pregunta + "</pregunta>",
     }],
   };
 }

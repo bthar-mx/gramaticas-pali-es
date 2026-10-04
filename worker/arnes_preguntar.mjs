@@ -20,10 +20,16 @@
     10. el registro: pregunta, §, lengua y fecha; el correo, en ninguna parte
     11. ejercicio (§38): la respuesta sugerida no va al modelo
     12. modelo: Sonnet por omisión, PREGUNTAR_MODELO lo cambia; PREGUNTAS
-        se prefiere a VEREDICTOS */
+        se prefiere a VEREDICTOS
+    13. fuentes de fondo (worker/fuentes.js): las claves, el tope y el
+        interruptor PREGUNTAR_FUENTES; con «off» la petición es la de antes,
+        byte a byte; con «on» van después de la fila, el sistema no cambia,
+        los paquetes no vuelven al navegador y la línea «Fuentes
+        consultadas» la pone el worker */
 
 import { readFileSync } from "node:fs";
 import worker from "./index.js";
+import { clavesDe, aplicarTope, fuentesActivas, lineaFuentes, estimarTokens, TOPE_TOKENS } from "./fuentes.js";
 
 const EQUIPO = "equipo-de-prueba.cloudflareaccess.com";
 const AUD = "aud-de-gramaticas";
@@ -174,7 +180,11 @@ async function main() {
     comprobar("una entrada de registro con pregunta, §, lengua y fecha",
       reg.pregunta === P.pregunta && reg.sutta === 20 && reg.lang === "es" && /^\d{4}-\d\d-\d\dT/.test(reg.fecha),
       JSON.stringify(logs));
-    comprobar("y sólo esos cuatro campos", Object.keys(reg).sort().join() === "fecha,lang,pregunta,sutta");
+    comprobar("y sólo esos campos (más fuentes y uso)",
+      Object.keys(reg).sort().join() === "fecha,fuentes,lang,pregunta,sutta,uso", Object.keys(reg).join());
+    comprobar("el registro lleva el uso de tokens y ninguna fuente (interruptor apagado)",
+      reg.uso && reg.uso.cache_read_input_tokens === 1400 && reg.uso.output_tokens === 120
+        && Array.isArray(reg.fuentes) && reg.fuentes.length === 0, JSON.stringify(reg));
     comprobar("el correo no está en ninguna clave ni valor del KV",
       ![...e.VEREDICTOS.datos.entries()].some(([k, v]) => (k + v).toLowerCase().includes("lector@ejemplo.org")));
     const cola = await worker.fetch(new Request("https://ejemplo.org/api/cola?clave=x"), e);
@@ -222,6 +232,7 @@ async function main() {
     comprobar("y no trae valores de secretos",
       !conf.vars && !/sk-ant|ANTHROPIC_API_KEY"\s*:/.test(JSON.stringify(conf)));
   }
+  await fuentes(env, pedir, bueno, P, () => llamadas, (v) => { llamadas = v; });
   comprobar("§ inexistente → 404", (await pedir(env(), bueno, { ...P, sutta: 9999 })).status === 404);
   comprobar("pregunta vacía → 400", (await pedir(env(), bueno, { ...P, pregunta: "  " })).status === 400);
   comprobar("pregunta larguísima → 400",
@@ -230,6 +241,125 @@ async function main() {
   console.log("\n" + (hechas - fallos) + "/" + hechas + " comprobaciones");
   if (fallos) { console.log("HAY FALLOS."); process.exit(1); }
   console.log("«Preguntar» se sostiene.");
+}
+
+/* 13. Las fuentes de fondo. */
+async function fuentes(env, pedir, bueno, P, leer, poner) {
+  console.log("\n  — fuentes de fondo —");
+  comprobar("claves de §2: las cuatro obras, en orden de prioridad",
+    clavesDe(2).join() === "silananda-rup/2,rupasiddhi/2,nyasappadipika/2,nyasa/2", clavesDe(2).join());
+  comprobar("interruptor: apagado por omisión",
+    !fuentesActivas({ FUENTES: {} }) && !fuentesActivas({ FUENTES: {}, PREGUNTAR_FUENTES: "off" }));
+  comprobar("interruptor: «on» enciende (también « ON »), pero no sin el KV",
+    fuentesActivas({ FUENTES: {}, PREGUNTAR_FUENTES: "on" }) && fuentesActivas({ FUENTES: {}, PREGUNTAR_FUENTES: " ON " })
+      && !fuentesActivas({ PREGUNTAR_FUENTES: "on" }));
+
+  const pq = (dir, chars) => ({ clave: dir + "/2", obra: { dir, nombre: dir, name: dir },
+    texto: dir + "; ed.; lugar; ninguno; derechos\n" + "a".repeat(chars) });
+  const cuatro = [pq("silananda-rup", 12000), pq("rupasiddhi", 4500), pq("nyasappadipika", 4500), pq("nyasa", 4500)];
+  const total = (ps) => ps.reduce((s, p) => s + estimarTokens(p.texto), 0);
+  {
+    const t = aplicarTope(cuatro, 100000);
+    comprobar("tope: lo que cabe pasa entero", t.paquetes.length === 4 && !t.descartadas.length && !t.recortada);
+    const t2 = aplicarTope(cuatro, 7000);
+    comprobar("tope: se cae primero el Nyāsa, luego la Nyāsappadīpikā",
+      t2.descartadas.join() === "nyasa/2,nyasappadipika/2" && t2.paquetes.length === 2, JSON.stringify(t2.descartadas));
+    const t3 = aplicarTope(cuatro, 2000);
+    comprobar("tope: si ni Sīlānanda cabe sola, se recorta y se dice",
+      t3.paquetes.length === 1 && t3.recortada === "silananda-rup/2" && t3.paquetes[0].texto.includes("recortado")
+        && total(t3.paquetes) <= 2000, total(t3.paquetes));
+    // Tamaños de verdad: Sīlānanda ~7.000 tokens y las otras ~2.000 → 13.000.
+    const grandes = [pq("silananda-rup", 21000), pq("rupasiddhi", 6000), pq("nyasappadipika", 6000), pq("nyasa", 6000)];
+    const t4 = aplicarTope(grandes);
+    comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo el Nyāsa y el bloque queda por debajo",
+      total(t4.paquetes) <= TOPE_TOKENS && t4.descartadas.join() === "nyasa/2", total(t4.paquetes) + " " + t4.descartadas);
+  }
+
+  const TEXTOS = {
+    "silananda-rup/20": "fuente: U Sīlānanda, Rūpasiddhi classes (clase 3, 12:40); grabación; clase 3; ninguno; uso privado\nIn class he says SECRETO-SILANANDA.",
+    "rupasiddhi/20": "**Rūpasiddhi (VRI)**; VRI; §20; texto con ruido de OCR: no citar textualmente; dominio público\nSECRETO-RUPASIDDHI",
+    "nyasa/20": "Nyāsa; VRI; p. 1; ninguno; dominio público\nSECRETO-NYASA",
+    "nyasa/38": "Nyāsa; VRI; p. 9; ninguno; dominio público\nSECRETO-EJERCICIO",
+  };
+  const kvF = () => {
+    const leidas = [];
+    return { leidas, async get(k) { leidas.push(k); return TEXTOS[k] ?? null; } };
+  };
+  const pedirCon = async (extra, cuerpo = P) => {
+    const e = { ...env(), ...extra }; poner([]);
+    const registro = [], logOriginal = console.log;
+    console.log = (...a) => registro.push(a.join(" "));
+    const r = await pedir(e, bueno, cuerpo);
+    console.log = logOriginal;
+    const c = leer()[0];
+    return { e, r, x: await r.json(), c, u: c ? c.body.messages[0].content : "", sis: c ? c.body.system : null, registro };
+  };
+
+  const base = await pedirCon({});
+  const off = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "off" });
+  comprobar("apagado: la petición es idéntica a la de sin FUENTES",
+    JSON.stringify(off.c.body) === JSON.stringify(base.c.body));
+  comprobar("apagado: no se lee el KV y no hay línea de fuentes",
+    off.e.FUENTES.leidas.length === 0 && !off.x.respuesta.includes("Fuentes consultadas"), off.x.respuesta);
+
+  const on = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" });
+  comprobar("encendido: se piden las cuatro claves de §20",
+    on.e.FUENTES.leidas.slice().sort().join() === clavesDe(20).slice().sort().join(), on.e.FUENTES.leidas.join());
+  comprobar("encendido: el sistema es el mismo (la caché sigue valiendo)",
+    JSON.stringify(on.sis) === JSON.stringify(base.c.body.system));
+  const iG = on.u.indexOf("</glosario>"), iF = on.u.indexOf("<fuentes>"), iL = on.u.indexOf("<lengua>");
+  comprobar("encendido: <fuentes> va después de la fila y el glosario, antes de la pregunta",
+    iG > 0 && iF > iG && iL > iF, [iG, iF, iL].join());
+  comprobar("encendido: cada paquete con su cabecera; el que falta se salta",
+    on.u.includes('<fuente clave="silananda-rup/20">\nfuente: U Sīlānanda, Rūpasiddhi classes (clase 3, 12:40); grabación;')
+      && on.u.includes("texto con ruido de OCR") && on.u.includes("SECRETO-NYASA")
+      && !on.u.includes("nyasappadipika/20"), on.u.slice(iF, iF + 400));
+  comprobar("encendido: la línea «Fuentes consultadas» la pone el worker, con los nombres fijos y en orden",
+    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases de Rūpasiddhi; Padarūpasiddhi; Nyāsa.",
+    on.x.respuesta);
+  comprobar("y sin nada de la cabecera (ni «fuente:», ni clase, ni edición)",
+    !/fuente:|clase 3|12:40|VRI|\*\*/.test(on.x.respuesta), on.x.respuesta);
+  const alNavegador = JSON.stringify(on.x);
+  comprobar("encendido: ningún paquete vuelve al navegador",
+    !/SECRETO-|grabación|dominio público/.test(alNavegador), alNavegador);
+  const uso = on.registro.map((l) => { try { return JSON.parse(l); } catch (x) { return null; } })
+    .find((o) => o && o.evento === "preguntar.uso");
+  comprobar("encendido: el registro del worker lleva las claves y el uso",
+    uso && uso.fuentes.join() === "silananda-rup/20,rupasiddhi/20,nyasa/20" && uso.input_tokens === 300, JSON.stringify(uso));
+  const log = [...on.e.VEREDICTOS.datos.entries()].find(([k]) => k.startsWith("preguntar/log/"));
+  const reg = log ? JSON.parse(log[1]) : {};
+  comprobar("encendido: el registro del KV lleva las claves y no el texto",
+    reg.fuentes && reg.fuentes.length === 3 && !/SECRETO-/.test(log[1]), log && log[1]);
+
+  const en = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, lang: "en" });
+  comprobar("en inglés: «Sources consulted» con los nombres ingleses",
+    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
+
+  const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
+  comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
+    !vacio.u.includes("<fuentes>") && vacio.x.respuesta === "Respuesta de prueba.", vacio.x.respuesta);
+
+  const roto = await pedirCon({ PREGUNTAR_FUENTES: "on",
+    FUENTES: { async get() { throw new Error("KV caído"); } } });
+  comprobar("si el KV falla, la pregunta se responde igual y sin fuentes",
+    roto.r.status === 200 && !roto.u.includes("<fuentes>"), roto.r.status);
+
+  const ej = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 38 });
+  comprobar("ejercicio §38 con fuentes: sigue sin la respuesta sugerida",
+    ej.u.includes('"ejercicio":true') && !ej.u.includes('["kāriya","lopaṃ","kvaci"]') && ej.u.includes("SECRETO-EJERCICIO"));
+
+  const sis = base.c.body.system[0].text;
+  comprobar("la instrucción trae las reglas de las fuentes",
+    sis.includes("«Según la Rūpasiddhi…»") && sis.includes("(clase N, mm:ss)")
+      && sis.includes("nunca atribuyas a la Visuddhāyuṃ la opinión de otra obra")
+      && sis.includes("unas 15 palabras") && sis.includes("«texto con ruido de OCR: no citar textualmente»")
+      && sis.includes("están en inglés: resúmelas") && sis.includes("«Las fuentes consultadas no tratan este punto»")
+      && sis.includes("tampoco se resuelven con las fuentes"));
+
+  const conf = JSON.parse(readFileSync(new URL("../wrangler.jsonc", import.meta.url), "utf-8")
+    .replace(/^\s*\/\/.*$/gm, ""));
+  const f = (conf.kv_namespaces || []).find((k) => k.binding === "FUENTES");
+  comprobar("wrangler.jsonc enlaza FUENTES con un id real", !!f && /^[0-9a-f]{32}$/.test(f.id), f && f.id);
 }
 
 main();
