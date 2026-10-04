@@ -880,7 +880,7 @@ C1. **bahiraṅga**: grafía del libro, §108 y ss. (PDF 145 y ss.)
 
 - [ ] Revisado
 
-Decisión: 
+Decisión: en «Clase de sutta», grafía normalizada «bāhiraṅga», con la impresa en la nota (IEBH; aplicado a §164, sesión 6).
 
 C2. **ammādi**: §115 (PDF 149)
 
@@ -1068,7 +1068,7 @@ F1. §121–§123 y §130 (PDF 152–153, 155): el libro dice «လွယ်ပ�
 
 - [ ] Revisado
 
-Decisión: 
+Decisión: sin respuesta sugerida donde el libro no las da (aplicado también a G1, IEBH 2026-10-03).
 
 F2. §123 (PDF 152): dos rótulos de clase, «ဥဘယင်္ဂ» (ubhayaṅga) y «ဤသုတ်ကား လာဃဝသိဒ္ဓိ(နည်းပြ)သုတ်တည်း» (lāghavasiddhi-sutta). ¿Van los dos en «Clase de sutta», o el segundo a Notas?
 
@@ -1098,7 +1098,7 @@ F6. §129 (PDF 154): las tres voces que siguen a «အင်္ဂါ ၃-ပါ
 
 - [ ] Revisado
 
-Decisión: 
+Decisión: regla (b) sustituida por (b'), aplicada (IEBH, 2026-10-03): las tres voces están justo tras «အင်္ဂါ ၃-ပါး» (comprobado en la imagen, sesión 6) y la celda vuelve a «aṅga 3: akārānta, napuṃsaka, sabbanāma-gaṇa».
 
 F7. §132 (PDF 155, y≈2064–2292): cierre del paréntesis del kārī, «ရှု» («véase») frente a «ရူ» (¿Rū.?); y la voz tras «တိလိင်», «သင်္ချာနာမ်» frente a «သဗ္ဗနာမ်». Solo en Notas.
 
@@ -1140,7 +1140,7 @@ F13. Regla por defecto, aplicada: (b) en «Aṅga» solo cuentan como aṅga nom
 
 - [ ] Revisado
 
-Decisión: 
+Decisión: regla (b) sustituida por (b'), aplicada (IEBH, 2026-10-03): cuando el libro escribe «aṅga N» seguido de N voces, la celda «Aṅga» las da tal como están impresas; si no cuadran con el número o son comentario, a Notas. §129 corregido; §120 sigue en Notas (tres voces para «aṅga 2», al cierre del (ခ)).
 
 F14. Regla por defecto, aplicada: (c) §126: Funciones solo con nimitta y kāriyī; el rol impreso «ကာရီ» para avaṇṇā / aṃ va a Notas tal como está, con DUDA, hasta que el IEBH mire la imagen.
 
@@ -1509,6 +1509,458 @@ F72. §160 (PDF 165, y≈603–668 y y≈839–886): en los dos paréntesis «t�
 Decisión: 
 
 F73. §160 (PDF 165, y≈1267–1301): bajo la línea de fecha del cierre del pariccheda II, una fila de siete asteriscos (lector) que el verificador ve como una marca sin texto. No sale en la página.
+
+- [ ] Revisado
+
+Decisión: 
+
+## G. Tanda 3 (§161–)
+
+Sesión 6 (2026-10-03). Preguntas abiertas de §161–§165 (primeros suttas del pariccheda III) y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 3 — filas (borrador)». Reglas por defecto (a)–(f) de la tanda 2 aplicadas igual.
+
+G1. §161–§163 y §165 (PDF 166–169): el libro no da funciones, y tampoco dice «ခွဲ» ni «လွယ်ပြီ»: simplemente calla (en §162 y §163 no hay siquiera (ခ)). Las filas dicen «el libro no las da», sin respuesta sugerida. Los lectores de §163 y §165 propusieron una (§163: kāriyī sa, kāriya aṃ, nimitta tumha / amha; §165: nimitta sabbanāma [dvandaṭṭha], kāriyī yo [paṭhamā], kāriya e), que no está en la fila. ¿Se añade una «Respuesta sugerida (IEBH)» donde el libro calla, o solo donde pide analizar?
+
+- [ ] Revisado
+
+Decisión: por defecto, sin respuesta sugerida donde el libro calla, como en F1 (IEBH, 2026-10-03). Las filas quedan como están.
+
+G2. §162 (PDF 166, y≈1545): el encabezado imprime «ဝါ ယောပ္ပ[ထ/ဌ]မော» (vā **yo**ppaṭhamo, sin la sandhi «yv» de Nandisena, *Vā yv appaṭhamo*). El lector escribió ယွ y el verificador ယော; la imagen ampliada en esta sesión dice ယော. Además, ထ (imagen ampliada, sin cola) frente a ဌ (las dos lecturas). Solo afecta al encabezado.
+
+- [ ] Revisado
+
+Decisión: 
+
+G3. §162 (PDF 166, y≈1720): la segunda derivación marca el yo como «(ပ၊ဒု)». Si es paṭhamā + dutiyā, el libro saca tumhaṃ / tumhānaṃ por el «vā» también en la 1.ª, aunque el enunciado dice *appaṭhamo*. La impresión es clara (las dos lecturas); la lectura de la abreviatura es [I].
+
+- [ ] Revisado
+
+Decisión: 
+
+G4. §164 (PDF 167, y≈610–650): la lista de aṅga del libro es «(1) sabbanāma, (2) akārānta, (3) yo, (4) paṭhamā». yo y paṭhamā llegan por anuvatti y akārānta es una etiqueta, cosas que la regla por defecto (b) manda a Notas. Pero aquí el libro las numera **dentro** de la lista «aṅga 4», así que se ha copiado entera, según la decisión 1 del IEBH. ¿Confirma que la decisión 1 manda sobre (b) cuando el libro numera la voz como aṅga?
+
+- [ ] Revisado
+
+Decisión: regla (b) sustituida por (b'), aplicada (IEBH, 2026-10-03): la lista «aṅga 4» se queda tal como está.
+
+G5. §164 (PDF 167, y≈450–470): tras «သဗ္ဗ+ယော» va «॥ပ॥». Puede ser paṭhamā, como «(ပ)» en §165, o una marca de peyyāla: el paréntesis que cierra el (က) dice «… မဇ္ဈေပေယျာလနည်းဖြင့် ပုံစံထုတ်သည်» («el modelo se da por el método del majjhepeyyāla»). La primera palabra de ese paréntesis no la da nadie por segura («မိဂဒဝ?ဏ္ဏန» / «မိဂဒဝဥဇ္ဇန»). Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+G6. §164 (PDF 167, y≈650–760): tras los roles, el libro da sin rótulo «အကာရန္တ၊ ပုလ္လိင်၊ သဗ္ဗနာမ်ဂိုဏ်း» (akārānta, masculino, sabbanāma-gaṇa). Va a Notas por la regla (b), no como visaya. El rol se imprime «ကာရီ», que la fila da como kāriyī (convención de la nota).
+
+- [ ] Revisado
+
+Decisión: 
+
+G7. §161 (PDF 166, y≈1290): «sampasāraṇa» con ပ subscrita (verificador a 10×, e imagen ampliada en esta sesión) o con ဗ (lector); y con ာ final o sin ella. Solo en Notas. El libro llama sampasāraṇa a amha → asma («en sánscrito asma es la palabra de base»): es un ejemplo más para la entrada B115.
+
+- [ ] Revisado
+
+Decisión: 
+
+G8. §165 (PDF 169, y≈470): segmentación de «အစ္စန္တပ္ပဝိသယ» (accantappavisaya), dicho de la sustitución por e: ¿accanta-appa-visaya, «de ámbito sumamente reducido»? Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+G9. §161–§165: casi todas las derivaciones cierran con «ချေ-», con guion (alguna, «ချေ» sin él). Se copia sin desarrollar, como «ချေ၊ ခပ်၊ ကပ်» en la tanda 2. ¿Cómo se rinde en la página, si se rinde?
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos; no están en `comun/glosario.md` ni en `recursos/terminos/terminos.json`). bahiraṅga (C1), dvidhā-sutta (F27) y padatoparāpadatopara (F54) ya están propuestos y vuelven a salir en §164 y §161:
+
+G10. **majjhepeyyāla**: §164 (PDF 167), «မဇ္ဈေပေယျာလနည်းဖြင့် ပုံစံထုတ်သည်»
+
+- [ ] Revisado
+
+Decisión: 
+
+G11. **sabbādi-gaṇa / aññādi-gaṇa / tyadādi-gaṇa / pubbādi-gaṇa**: §164 (PDF 167), los cuatro grupos de sabbanāma de la lista sánscrita; aññādi y pubbādi de nuevo en §165 (PDF 169)
+
+- [ ] Revisado
+
+Decisión: 
+
+G12. **niyama-sutta «que debilita al sutta anterior»** («ရှေ့သုတ်ကို အားနည်းစေသော»): §165 (PDF 169). La entrada «niyama» ya existe en `terminos.json`; esta es la primera vez que el libro dice a qué sutta restringe. ¿Ejemplo para la entrada?
+
+- [ ] Revisado
+
+Decisión: 
+
+G13. **accantappavisaya** (segmentación en duda, G8): §165 (PDF 169)
+
+- [ ] Revisado
+
+Decisión: 
+
+Añadido en la sesión 6 (2026-10-03), tras §170. Antes de la tanda se aplicaron tres decisiones del IEBH: (b) sustituida por (b') (F6, F13, G4), clase «bāhiraṅga» normalizada con la grafía impresa en la nota (C1, §164) y sin respuesta sugerida donde el libro calla (F1, G1).
+
+G14. §167 (PDF 171, y≈790–880): grafía de dakkhiṇā- en las dos últimas formas del (က). El verificador lee ဏာ (ā) en las cuatro grafías: «ဒက္ခိဏာပုဗ္ဗဿာ / ဒက္ခိဏာပုဗ္ဗာ+ သ / ဒက္ခိဏာပုဗ္ဗဿံ / ဒက္ခိဏာပုဗ္ဗာ+သ္မိံ». El lector da ā solo en la primera segmentación. La imagen ampliada en esta sesión muestra ဏာ en las cuatro. Sin [V].
+
+- [ ] Revisado
+
+Decisión: 
+
+G15. §168 (PDF 171, y≈1500): segunda forma femenina, «သဗ္ဗသာနံ» (sabbasānaṃ, con a breve; lector, ampliado) frente a «သဗ္ဗာသာနံ» (sabbāsānaṃ; verificador). La imagen ampliada en esta sesión muestra a breve; las dos lecturas coinciden en que la segmentación de las formas femeninas se imprime «သဗ္ဗ+နံ», con a breve. ¿Errata del libro? Sin [V].
+
+- [ ] Revisado
+
+Decisión: 
+
+G16. §168 (PDF 171, y≈1600): el (က) cierra con «ဤသုတ်၌ အ၊ အာ၊ ဥ၊ နိဂ္ဂဟီတန္တ ကာရန် ၄-ပါး။ တိလိင်တည်း» («cuatro finales: a, ā, u, niggahītanta; los tres géneros»). No es lista «aṅga N», y por (b') va a Notas. El libro no da ejemplo en niggahīta.
+
+- [ ] Revisado
+
+Decisión: 
+
+G17. §170 (PDF 172, y≈700): el único rol que nombra el libro es el visesana del kārī, «sabbassa». La celda de Funciones da solo eso; kāriyī (ima), kāriya (e) y nimitta (su, naṃ, hi) se deducirían del (က), pero por la decisión de G1 no van como respuesta sugerida. ¿Vale una celda de Funciones con un solo rol?
+
+- [ ] Revisado
+
+Decisión: 
+
+G18. §166 (PDF 169–170): el (ခ) trae formas con «*» propias (māsapubbā, māsapubbe, māsapubbāya) y otras sin «*» («…ဟပုဗ္ဗ», sattāhāvara). Se anotan aparte de las del (က), como en la tanda 2. Primera voz: «ကောဟပုဗ္ဗ» según se ve impreso, quizá ဧကာဟပုဗ္ဗ (ekāhapubba). Y el nombre que da el libro al sutta, «နာညံသဗ္ဗနာမိကံ-ဝိနာမိကာရသုတ်» (PDF 169, y≈1640): no se sabe qué es «ဝိနာမိကာရ».
+
+- [ ] Revisado
+
+Decisión: «ဝိနာမိကာရ» cerrada (sesión 7, 2026-10-04): releída con lector + verificador a ciegas a ×9–×12, las dos lecturas dan **ဓိ**: «နာညံသဗ္ဗနာမိကံ-ဝိနာဓိကာရသုတ်», *vinādhikāra*-sutta (PDF 169, y≈1540–1600; también «ဤဝိနာဓိ ကာရသုတ်ဖြင့်», y≈1873–1938). Nota de §166 corregida. Es la misma palabra de §173–§175: véase G25. Lo demás de G18 (las formas del (ခ) y «ကောဟပုဗ္ဗ») sigue abierto.
+
+G19. §169 (PDF 171, y≈1850): «သုနံဟိသုစ ဖြင့် ဒီဃပြု»: ¿el sutta homónimo de alargamiento, o el «ca» de este mismo sutta? Y los contraejemplos mahārājesu… llevan «*»: van al Ejemplo, como katarakatamā en §165, y no a Notas como tava / mama en §163, que no lo llevan. ¿De acuerdo con este criterio?
+
+- [ ] Revisado
+
+Decisión: criterio aplicado: con motivo en la celda (pedido del IEBH, 2026-10-04). Todo contraejemplo con «*» que va al Ejemplo lleva en la misma celda el motivo que da el libro, en español, p. ej. «mahārājesu (el «ca» lo impide)» o «tumhānaṃ (vā; por …)». Revisadas las tandas 2 y 3: casi todos lo llevaban ya; donde la celda tenía solo el birmano «ဝါမြစ်» o «နဝါမြစ်» se añadió la glosa «lo impide el «vā»» / «lo impide el «navā»», sin tocar nada más: §127, §128, §129, §147, §156, §158, §159 (dos), §160 (cinco) y §165. §136, §148, §150, §154 y §169 ya la tenían. Los contraejemplos sin «*» (§163, tava / mama) siguen en Notas.
+
+G20. §170 (PDF 172, y≈730): «ဧတတေသံ» (lector) frente a «ဧတေတသံ» (verificador), nombre del sutta con el que se compara. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos):
+
+G21. (Retirado: **aññapada**, de §167, ya está en `comun/glosario.md`.)
+
+G22. **rājādi-gaṇa**: §169 (PDF 171), «ရာဇာဒိဂိုဏ်း ပျက်သည်»
+
+- [ ] Revisado
+
+Decisión: 
+
+G23. **sāmaññavacana**: §170 (PDF 172), en la cita «sāmaññavacanaṃ hi pulliṅgena vā napuṃsakaliṅgena vā niddiṭṭhaṃ»
+
+- [ ] Revisado
+
+Decisión: 
+
+G24. **sutta-rūpa / sutta-phala** («သုတ်ရင်း / သုတ်ဖျား»): §166 (PDF 169), «သုတ်ရင်းနှင့် သုတ်ဖျားရင်း ကွဲကြ၏». La lectura pāḷi de las dos voces birmanas es [I].
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 7 (2026-10-04). Preguntas abiertas de §171–§175 y términos propuestos (no añadidos). Detalle en `nama-piloto.md`, «Tanda 3 — filas (borrador)».
+
+G25. §173 (PDF 173, y≈330): en el motivo de *asuko*, «အမုဿမောသံ-ဝိနာ[မ/ဓ]ိကာရဖြင့်». El lector lee **မိ** («la မိ es nítida», ×3); el verificador, **ဓိ** (×5–×10, ~90 %: círculo cerrado con barra interior, frente a la မ abierta de «မော» en la misma palabra). La imagen ampliada en esta sesión parece ဓ. En §174 (PDF 173, y≈1290) y §175 (PDF 174, y≈430) las dos lecturas dan **ဝိနာဓိကာရ** (*vinādhikāra*), y §130 ya decía «el vinādhikāra de *Amussāduṃ*». Si es ဓိ, el «ဝိနာမိကာရ» de §166 (G18) sería probablemente la misma palabra mal leída: ¿se relee §166 en la imagen? En §173 esa palabra queda sin [V]; el resto de la forma, [V]. **Actualización (2026-10-04):** §166 releído con lector + verificador a ciegas: las dos lecturas dan ဓိ (G18). Con §166, §174 y §175 en ဓိ, solo el lector de §173 lee မိ.
+
+- [ ] Revisado
+
+Decisión: 
+
+G26. §173 (PDF 173, y≈330): tras «ကအာဂုံကြောင့် အမု၏ မ်ကို သ်ပြု။» el libro imprime «သိသက်။ ဩပြု။» (las dos lecturas). El lector lo entiende «si se elide»; el verificador, «entra si». Se copia tal cual. ¿Cómo se traduce «သက်» aquí?
+
+- [ ] Revisado
+
+Decisión: 
+
+G27. §174 (PDF 173, y≈745): el encabezado, «ဧတတေသံ တော» (lector) frente a «ဧတေတေသံ တော» (verificador, que lo lee igual en el (ခ)). Es la misma vacilación de §170 (G20). Solo en Notas; no afecta a ninguna celda.
+
+- [ ] Revisado
+
+Decisión: 
+
+G28. §172 (PDF 172, y≈1760): «ကာရီ၏ ဝိသေသန» (lector) frente a «ကာရိ၏» con i breve (verificador, ampliado). Solo afecta a la cita birmana dentro de Funciones; el valor (*anapuṃsakassa*) coincide.
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos):
+
+G29. **vinādhikāra** («ဝိနာဓိကာရ»): §174 (PDF 173), §175 (PDF 174); quizá §173 y §166 (véase G25). El libro lo usa para aplicar un sutta fuera de su nimitta; la glosa «sin el adhikāra» es [I].
+
+- [ ] Revisado
+
+Decisión: 
+
+G30. **yogavibhāga** («ယောဂဝိဘာဂ»): §171 (PDF 172), «အနိမိ ဟူသော ယောဂဝိဘာဂဖြင့်». Cercano a *suttavibhāga*, que sí está en `comun/glosario.md`: ¿entrada propia o remisión?
+
+- [ ] Revisado
+
+Decisión: 
+
+G31. **uccāraṇattha** («ဥစ္စာရဏတ္ထ»): §174 (PDF 173), «la a de "to" es para pronunciar».
+
+- [ ] Revisado
+
+Decisión: 
+
+G32. **sambandhāpekkha-kāriya** («သမ္ဗန္ဓာပေက္ခ ကာရိယ»): §175 (PDF 173), dicho de *nattaṃ*.
+
+- [ ] Revisado
+
+Decisión: 
+
+G33. **anvādiṭṭha** («အနွာဒိဋ္ဌ», glosado en el libro «နောက်ထပ်ဆိုအပ်သော», «mencionado de nuevo»): §175 (PDF 174).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 7, segunda parte (2026-10-04). Preguntas de §176–§180 y términos propuestos (no añadidos).
+
+G34. §178 (PDF 175, y≈1000): primer rótulo de clase en birmano del pariccheda III, «ဤသုတ်ကား ဂိုဏ်းဖျက်သုတ်တည်း» («este sutta es un sutta que deshace el gaṇa»): las dos lecturas. Va en «Clase de sutta» copiado y traducido, sin término pāḷi. ¿Se propone un término pāḷi para la página (p. ej. *gaṇa-bhedaka*) o se deja solo la frase?
+
+- [ ] Revisado
+
+Decisión: 
+
+G35. §178 (PDF 175, y≈760): el cierre de la derivación de sabbako, «ချေ» (lector) / «ဈေ» (verificador). Queda fuera de la celda. Y (PDF 175, y≈1240) «အပ္ပ[ဓ/မ]ာန ဝိသေသန»: el verificador lee ဓ (*appadhāna*) con seguridad alta a ×8; el lector, မ (*appamāna*), sin descartar ဓ. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+G36. §180 (PDF 176, y≈420): primera cita de *ghato nādīnaṃ*, «ယတော» (lector, que lo da por errata) / «ဃတော» (verificador). Fuera de la celda.
+
+- [ ] Revisado
+
+Decisión: 
+
+G37. §179 (PDF 175, y≈1745) y §183: el libro dice «ဝါမြစ်» aunque el enunciado no lleva «vā», y no dice de qué sutta viene. La celda lo copia («lo impide el «vā»») sin identificarlo. ¿Basta así?
+
+- [ ] Revisado
+
+Decisión: 
+
+G38. «တွက်လေ» («calcúlese», §175, §177, §180): junto a formas con «*» sin segmentar. Se trata como encargo de derivar formas, no como ejercicio de funciones (que pide ခွဲ / ခွဲလေ), y no lleva respuesta sugerida. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+G39. «သ်လာ» (§130, §176, §177, §182): «viene s». Se copia sin desarrollar, como «ချေ» y «ကပ်». ¿Glosa fija en la página, o se deja el birmano?
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos):
+
+G40. **ṭhānivādesa** («ဌာနိဝါဒေသော»): §176 (PDF 174).
+
+- [ ] Revisado
+
+Decisión: 
+
+G41. **kucchita** (sentido del sufijo taddhita ka, «ကုစ္ဆိတံ ဥဒ္ဓုမာတံ»): §178 (PDF 175); con *hīnattha*, *khuddakattha*, *anukampattha*, sentidos de ka en el (က).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 7, tercera parte (2026-10-04). Preguntas de §181–§185 y términos propuestos (no añadidos).
+
+G42. §183 (PDF 177, y≈720 y y≈960): la 1.ª forma del (က) y el vigraha del (ခ): **manodhātu / mana + dhātu** (lector; también el OCR) frente a **manomātu / mana + mātu** (verificador). La imagen ampliada en esta sesión parece ဓ. Sin [V]. Es la tercera confusión ဓ / မ de la tanda (con G25, §173, y G35, §178): ¿las mira el IEBH juntas?
+
+- [ ] Revisado
+
+Decisión: 
+
+G43. §181 (PDF 176, y≈1000): segmentación de manasi: impreso «မန+သိ» (mana + si) según el verificador, sin မ subscrita ni anusvāra; «မန+သ္မိံ» según el lector, que marca la subscrita como [I]. La imagen ampliada en esta sesión parece «သိ». Sin [V]. Si el libro imprime «si», ¿se copia tal cual (regla (d)) con una nota, o se trata como errata?
+
+- [ ] Revisado
+
+Decisión: 
+
+G44. §184 (PDF 177, y≈1640): en mānasikaṃ el libro dice «ဤသုတ်၌ဝါမြစ်» aunque la forma sí recibe s; las formas paralelas del (ခ) dicen «ဤ၌ဝါဖြင့်» («por el vā»). Las dos lecturas ven «ဝါမြစ်». ¿Errata del libro? La celda lo copia.
+
+- [ ] Revisado
+
+Decisión: 
+
+G45. §183 (PDF 177, y≈960): el (ခ) abre con una frase que describe el sutta, «… ဝါကျဖြင့်ပြီးသော သမာသ်ပုဒ်၌ စီရင်သောသုတ်တည်း» («es el sutta que opera sobre la palabra compuesta formada con esa frase»). Las dos lecturas la toman por descripción y no por rótulo: Clase vacía y la frase en Notas. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+G46. §181 (PDF 176, y≈1900–1990): el último párrafo del (ခ), sobre el kammappavacanīya (anvattha: solo dutiyā; rūḷhī: dutiyā y además chaṭṭhī, sattamī…), parece una comparación; el lector no ve su relación con el sutta. Resumido en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos):
+
+G47. **saṇṭhāna** (forma externa, frente a la naturaleza interna, en el género de las voces del manogaṇa): §181 (PDF 176).
+
+- [ ] Revisado
+
+Decisión: 
+
+G48. **paradvebhāva** («ပရဒွေဘာဝေါ»): §184 (PDF 178), en tapassī.
+
+- [ ] Revisado
+
+Decisión: 
+
+G49. **visajjanīya** («ဝိသဇ္ဇနီ», el visarga sánscrito): §183 (PDF 177).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 7, cuarta parte (2026-10-04). Preguntas de §186–§190 y términos propuestos (no añadidos).
+
+G50. §188 (PDF 180, y≈1000): contraejemplo con «*» **en el (ခ)**: *mahābrahmaṃ* = mahābrahma + aṃ, «သမာသ်၌ ဝါမြစ်», en compuesto lo impide el «vā» («(ကွစိသမာသန္တ-ဖြင့် ဂိုဏ်းပျက်သည်)»). La regla (g) se refiere al Ejemplo; esta forma va con las del (ခ), aparte en Notas, con su motivo al lado. ¿Pasa al Ejemplo, o queda así?
+
+- [ ] Revisado
+
+Decisión: por defecto (IEBH, 2026-10-04): el contraejemplo con «*» del (ခ) se queda con las formas del (ခ), aparte en Notas, con su motivo. Aplicado a §188; regla (i) en la lista de la tanda 2.
+
+G51. §188 (PDF 180, y≈775): el libro nombra el nimitta sin darle valor: «နိမိတ်ဖြင့် အကာရန္တ ပုလ္လိင် ဗြဟ္မာဒိဂိုဏ်းဟုသိ» («por el nimitta, sépase que es el brahmādi-gaṇa, akārānta, masculino»). La celda Funciones lo copia así; identificarlo con *brahmattasakharājādito* queda [I]. ¿Se da el valor en la página?
+
+- [ ] Revisado
+
+Decisión: por defecto (IEBH, 2026-10-04): un rol nombrado sin valor no se muestra en Funciones; la frase va a Notas. Aplicado a §188 (Funciones: «el libro no las da»); regla (h) en la lista de la tanda 2.
+
+G52. Encabezados con lecturas distintas (solo Notas; el nº del libro coincide siempre): §187 (PDF 179, y≈1610) «န္တဿ» / «န္တုဝ» (Nandisena: *Sesesu ntu 'va*); §188 (PDF 180, y≈560) «၂၊၃၊၂၈» / «၂၊၃၊၁၈» (la serie pide 2.3.28); §189 (PDF 180, y≈1160) «သျာ» / «သ္မာ» (Nandisena: *Sy ā ca*).
+
+- [ ] Revisado
+
+Decisión: 
+
+G53. §190 (PDF 181, y≈330): primera forma del (ခ), «ဥဠာရ-» (*uḷāra-*, lector) / «ဥဋ္ဌာရ-» (verificador); y la obra citada, «နေတ္တိဋ္ဌကထာ» (lector) / «နေတ္တိ၌ ကထာ» (verificador). Y (PDF 180, y≈1950) «soḷasāsiṃsu» / «soḷasāsīsu» en el verso. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos):
+
+G54. **niccattha-jotaka** («နိစ္စတ္ထဇောတက», dicho del «ca» que indica obligatoriedad): §189 (PDF 180).
+
+- [ ] Revisado
+
+Decisión: 
+
+G55. **pakāra** (sentido de ādi, «ပကာရ (အတူ)»): §186 (PDF 179). El glosario tiene *pakāravacana* («expresión de modo», Taddhita), no *pakāra* solo.
+
+- [ ] Revisado
+
+Decisión: 
+
+G56. **gaṇa-bheda / «ဂိုဏ်းပျက်»** («se pierde el gaṇa», en samāsa): §178, §188, §189, §190. Afín a la frase de clase de §178 (G34).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 8 (2026-10-04). Preguntas de §191–§195 (no hay términos nuevos).
+
+G57. §192 (PDF 181, y≈1020): segmentación de sakhe: «သခ+သ္မိံ» con ံ (verificador, ×8, también en «သ္မိံကို») / «သခ+သ္မိ» sin ံ (lector). La imagen ampliada en esta sesión muestra el punto (sakha + smiṃ). Sin [V]; la forma sakhe sí es [V].
+
+- [ ] Revisado
+
+Decisión: 
+
+G58. §193 (PDF 181, y≈1375): la partícula de la única forma: «ဟော» (*ho brahme*, verificador) / «ဟေ» (*he brahme*, lector). La imagen ampliada en esta sesión muestra ဟော, como «ho pumaṃ» en §153. Sin [V].
+
+- [ ] Revisado
+
+Decisión: 
+
+G59. §193 (PDF 181, y≈1395): el (က) cierra con «(အကာရပိတာဒျန္တာနမာ ကို နှုတ်သောသုတ်တည်း။)», «es el sutta que retira [el caso de] *akāra-pitādy-antānam ā*» (§244 [I]). Las dos lecturas lo toman por descripción y no por rótulo: Clase vacía y la frase en Notas, como §183 (G45). Si el IEBH decide G45 de otro modo, cambia también aquí.
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 8, segunda parte (2026-10-04). Preguntas de §196–§200 y términos propuestos (no añadidos).
+
+G60. §198 (PDF 182, y≈2020): vocal de la 3.ª forma: «ဗြဟ္မူနံ», *brahmūnaṃ*, ū larga (verificador, ×6: doble trazo frente al simple de brahmuno / brahmunā; también el OCR) / «ဗြဟ္မုနံ», u breve (lector). La imagen ampliada en esta sesión muestra el doble trazo, que cuadra con el alargamiento de *sunaṃhisu ca* que el libro cita a continuación. Sin [V].
+
+- [ ] Revisado
+
+Decisión: 
+
+G61. §199 (PDF 183, y≈320): numeración del encabezado, «၂၊၃၊၃၉» (lector) / «၂၊၄၊၄၉» (verificador, ×7). El nº 199 coincide; la serie pide 2.3.39. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+G62. §197 (PDF 182, y≈1630): la frase final del (ခ), «နိစ္စဝိဓိငှာ ဗြဟ္မသဒ္ဒါတစ်ခုကိုသာ ဥပလက္ခဏာ ပြသည်», «para que sea regla fija (nicca-vidhi), muestra solo la voz brahma como upalakkhaṇa». Las dos lecturas la toman por finalidad, no por rótulo de clase: Clase vacía y la frase en Notas (como G45 y G59).
+
+- [ ] Revisado
+
+Decisión: 
+
+Términos propuestos para el glosario (no añadidos):
+
+G63. **upalakkhaṇa** («ဥပလက္ခဏာ», forma que representa al grupo): §197 (PDF 182).
+
+- [ ] Revisado
+
+Decisión: 
+
+G64. **nicca-vidhi** («နိစ္စဝိဓိ», regla fija): §197 (PDF 182); y «မြဲ», «fijo», en §192 y §202.
+
+- [ ] Revisado
+
+Decisión: 
+
+G65. **bhāvaniddesa** («ဘာဝနိဒ္ဒေသ (ဘာဝတ္ထေနိဒ္ဒိဋ္ဌ)», enunciado en sentido abstracto, por el «tta» de *ārattaṃ*): §200 (PDF 183), §201 (PDF 184).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 8, tercera parte (2026-10-04). Preguntas de §201–§205 (no hay términos nuevos).
+
+G66. §201 (PDF 184, y≈670), columna Clase: el lector no ve rótulo; el verificador pone «ဝိကပ္ပဝိဓိ» (*vikappavidhi*), que está en el cuerpo del (ခ) («… နံကြောင့်လည်း ဝိကပ္ပဝိဓိ ပြီးတုံဘိလျက် …») y se refiere a lo que ya haría el sutta anterior, aunque él mismo dice que no hay rótulo aparte. Sin [V]: la celda queda vacía y la frase va en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+G67. §204 (PDF 184, y≈2025): la primera forma se imprime «သက္ကမန္ဒာတု», *sakkamandātu*, con ဒ (las dos lecturas, ×6 y ×12), frente a ဓ en mahāmandhātu, mandhātu y el encabezado. Probable errata del libro. La celda la copia tal cual con [V]. ¿Se enmienda a *sakkamandhātu* con nota, o se deja?
+
+- [ ] Revisado
+
+Decisión: 
+
+G68. Limpieza de las columnas de página (sesión 8, 2026-10-04): las formas y segmentaciones sin [V] de la tanda 3 (§167, §168, §173, §181, §183, §192, §193, §198) estaban escritas en la celda del Ejemplo con «?» o «sin [V]: véase la DUDA». Se han sacado de la celda: ahora solo están en la DUDA de Notas, con las dos lecturas. Donde el motivo sí era [V] y la forma no (§183, 1.ª forma), el motivo pasa a Notas. ¿De acuerdo con este criterio?
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 8, cuarta parte (2026-10-04). §206–§210: tanda 3 completa. Preguntas y términos propuestos (no añadidos).
+
+G69. §208 (PDF 185, y≈1675): en la línea del (က), tras «ရုပ်။», un blanco de unos 150 px que acaba en un «။» suelto (las dos lecturas; a ×8 no se ve nada dentro). ¿Hueco de composición o algo que no salió impreso? Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+G70. **satthādi-gaṇa / pitādi-gaṇa / rattādi-gaṇa** («သတ္ထာဒိဂိုဏ်းမကြီး», «ပိတာဒိဂိုဏ်းတက်», «ရတ္တာဒိဂိုဏ်း»): §199, §209 (PDF 183, 186–187). El libro llama a satthādi «grupo mayor» y a pitādi «subgrupo»; y *kriyāsakattaka* («con agente de la acción») como criterio de satthādi.
 
 - [ ] Revisado
 
