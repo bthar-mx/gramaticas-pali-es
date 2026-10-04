@@ -25,7 +25,9 @@
         interruptor PREGUNTAR_FUENTES; con «off» la petición es la de antes,
         byte a byte; con «on» van después de la fila, el sistema no cambia,
         los paquetes no vuelven al navegador y la línea «Fuentes
-        consultadas» la pone el worker */
+        consultadas» la pone el worker; con_fuentes cambia la advertencia de
+        IA de la página; la inferencia propia va rotulada; los «Kac §N» de
+        los paquetes son del IEBH */
 
 import { readFileSync } from "node:fs";
 import worker from "./index.js";
@@ -332,12 +334,15 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     reg.fuentes && reg.fuentes.length === 3 && !/SECRETO-/.test(log[1]), log && log[1]);
 
   const en = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, lang: "en" });
+  comprobar("con fuentes cargadas, con_fuentes es true (y sólo un booleano)",
+    on.x.con_fuentes === true && off.x.con_fuentes === false, JSON.stringify([on.x.con_fuentes, off.x.con_fuentes]));
   comprobar("en inglés: «Sources consulted» con los nombres ingleses",
     en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
 
   const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
   comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
-    !vacio.u.includes("<fuentes>") && vacio.x.respuesta === "Respuesta de prueba.", vacio.x.respuesta);
+    !vacio.u.includes("<fuentes>") && vacio.x.respuesta === "Respuesta de prueba." && vacio.x.con_fuentes === false,
+    vacio.x.respuesta);
 
   const roto = await pedirCon({ PREGUNTAR_FUENTES: "on",
     FUENTES: { async get() { throw new Error("KV caído"); } } });
@@ -355,6 +360,20 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
       && sis.includes("unas 15 palabras") && sis.includes("«texto con ruido de OCR: no citar textualmente»")
       && sis.includes("están en inglés: resúmelas") && sis.includes("«Las fuentes consultadas no tratan este punto»")
       && sis.includes("tampoco se resuelven con las fuentes"));
+  comprobar("la inferencia propia va rotulada «(del asistente, no de las fuentes)»",
+    sis.includes("«Explicación general (del asistente, no de las fuentes): …»")
+      && sis.includes("«General explanation (the assistant's, not from the sources): …»")
+      && sis.includes("«(inferencia del asistente)»") && !sis.includes("empieza por «Explicación general: …»"));
+  comprobar("los «Kac §N» de los paquetes son del IEBH, no de la obra",
+    sis.includes("(«Kac §N», «Kacc. §N» y semejantes) son del IEBH") && sis.includes("no digas que la obra cita ese §"));
+
+  const pagina = readFileSync(new URL("../site/recursos/analisis/index.html", import.meta.url), "utf-8");
+  comprobar("la página trae las dos advertencias, con y sin fuentes",
+    pagina.includes("sólo a partir de esta fila y del glosario del sitio")
+      && pagina.includes("a partir de esta fila, del glosario del sitio y de las fuentes consultadas. No está revisada por el IEBH: cotéjela con las fuentes.")
+      && pagina.includes("from this row, the site glossary and the sources consulted. Not reviewed by the IEBH: check it against the sources."));
+  comprobar("y la elige por con_fuentes, también al copiar",
+    pagina.includes("notaPreg(!!j.con_fuentes)") && pagina.includes("'— '+nota") && pagina.includes("notaPreg(false)"));
 
   const conf = JSON.parse(readFileSync(new URL("../wrangler.jsonc", import.meta.url), "utf-8")
     .replace(/^\s*\/\/.*$/gm, ""));
