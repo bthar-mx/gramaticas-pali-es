@@ -28,8 +28,7 @@
   // «<obra>/<§>». Es PRIVADO: el texto no está en el repositorio ni en el
   // sitio. Se crea una vez con
   //   npx wrangler kv namespace create FUENTES
-  // y el id que imprime sustituye a PEGAR-AQUI-EL-ID-DEL-KV-FUENTES abajo;
-  // con el marcador, el despliegue falla. Se llena con
+  // (creado por el IEBH el 2026-10-04 y enlazado abajo). Se llena con
   // herramientas/subir_fuentes.sh. Se enciende con la variable
   // PREGUNTAR_FUENTES=on (como secreto, igual que PREGUNTAR_MODELO, para que
   // sobreviva a los despliegues); sin ella, o con «off», no se lee.
@@ -51,7 +50,7 @@
     },
     {
       "binding": "FUENTES",
-      "id": "PEGAR-AQUI-EL-ID-DEL-KV-FUENTES"
+      "id": "bfedf442cc21449da8e3f530198c24a2"
     }
   ]
 }

@@ -14,7 +14,7 @@
 # él. Este guion no contiene ningún texto; sólo los traslada.
 #
 # Hace falta: Node (para npx), haber iniciado sesión con «npx wrangler login»
-# y que wrangler.jsonc tenga ya el id real del KV FUENTES.
+# (el enlace FUENTES ya está en wrangler.jsonc).
 #
 # Subir otra vez sobrescribe las claves que ya estén; no borra las que falten
 # en la carpeta. Para quitar una:
@@ -26,11 +26,6 @@ RAIZ=$(cd "$(dirname "$0")/.." && pwd)
 
 if [ ! -d "$ORIGEN" ]; then
   echo "No existe la carpeta de fuentes: $ORIGEN" >&2
-  exit 1
-fi
-if grep -q "PEGAR-AQUI-EL-ID-DEL-KV-FUENTES" "$RAIZ/wrangler.jsonc"; then
-  echo "wrangler.jsonc aún tiene el marcador del id de FUENTES." >&2
-  echo "Créelo con «npx wrangler kv namespace create FUENTES» y pegue el id." >&2
   exit 1
 fi
 
