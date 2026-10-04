@@ -23,12 +23,13 @@
      cabe sola, se recorta por el final y se dice. */
 
 /* En orden de prioridad: la primera es la que más pesa y la última que se
-   cae. «nombre» es lo que dice la línea «Fuentes consultadas» si la cabecera
-   del paquete no trae el suyo. */
+   cae. «nombre» y «name» son lo que dice la línea «Fuentes consultadas»:
+   fijos, y no sacados de la cabecera del paquete, para que en la línea no
+   aparezcan rótulos («fuente: …»), ediciones ni números de clase. */
 export const OBRAS = [
-  { dir: "silananda-rup", nombre: "U Sīlānanda, clases sobre la Rūpasiddhi",
+  { dir: "silananda-rup", nombre: "U Sīlānanda, clases de Rūpasiddhi",
     name: "U Sīlānanda, classes on the Rūpasiddhi" },
-  { dir: "rupasiddhi", nombre: "Rūpasiddhi", name: "Rūpasiddhi" },
+  { dir: "rupasiddhi", nombre: "Padarūpasiddhi", name: "Padarūpasiddhi" },
   { dir: "nyasappadipika", nombre: "Nyāsappadīpikā", name: "Nyāsappadīpikā" },
   { dir: "nyasa", nombre: "Nyāsa", name: "Nyāsa" },
 ];
@@ -91,17 +92,9 @@ export function bloqueDeFuentes(paquetes) {
   return "<fuentes>\n" + paquetes.map(envolver).join("\n") + "\n</fuentes>";
 }
 
-/* El primer campo de la cabecera, si lo hay; si no, el nombre fijo. */
-function nombreDe(p, lang) {
-  const cab = p.texto.split("\n", 1)[0].replace(/^[#>*\s«"]+|[»"\s]+$/g, "");
-  const primero = cab.split(";")[0].trim();
-  if (primero && primero.length <= 120) return primero;
-  return lang === "en" ? p.obra.name : p.obra.nombre;
-}
-
 /* La línea que el worker añade a la respuesta: la escribe él, no el modelo. */
 export function lineaFuentes(paquetes, lang) {
   if (!paquetes.length) return "";
   return (lang === "en" ? "Sources consulted: " : "Fuentes consultadas: ")
-    + paquetes.map((p) => nombreDe(p, lang)).join("; ") + ".";
+    + paquetes.map((p) => (lang === "en" ? p.obra.name : p.obra.nombre)).join("; ") + ".";
 }

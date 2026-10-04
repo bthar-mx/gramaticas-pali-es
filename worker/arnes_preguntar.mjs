@@ -276,8 +276,8 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   }
 
   const TEXTOS = {
-    "silananda-rup/20": "U Sīlānanda, clases sobre la Rūpasiddhi; grabación; clase 3; ninguno; uso privado\nIn class he says SECRETO-SILANANDA.",
-    "rupasiddhi/20": "Rūpasiddhi; VRI; §20; texto con ruido de OCR: no citar textualmente; dominio público\nSECRETO-RUPASIDDHI",
+    "silananda-rup/20": "fuente: U Sīlānanda, Rūpasiddhi classes (clase 3, 12:40); grabación; clase 3; ninguno; uso privado\nIn class he says SECRETO-SILANANDA.",
+    "rupasiddhi/20": "**Rūpasiddhi (VRI)**; VRI; §20; texto con ruido de OCR: no citar textualmente; dominio público\nSECRETO-RUPASIDDHI",
     "nyasa/20": "Nyāsa; VRI; p. 1; ninguno; dominio público\nSECRETO-NYASA",
     "nyasa/38": "Nyāsa; VRI; p. 9; ninguno; dominio público\nSECRETO-EJERCICIO",
   };
@@ -311,12 +311,14 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   comprobar("encendido: <fuentes> va después de la fila y el glosario, antes de la pregunta",
     iG > 0 && iF > iG && iL > iF, [iG, iF, iL].join());
   comprobar("encendido: cada paquete con su cabecera; el que falta se salta",
-    on.u.includes('<fuente clave="silananda-rup/20">\nU Sīlānanda, clases sobre la Rūpasiddhi; grabación;')
+    on.u.includes('<fuente clave="silananda-rup/20">\nfuente: U Sīlānanda, Rūpasiddhi classes (clase 3, 12:40); grabación;')
       && on.u.includes("texto con ruido de OCR") && on.u.includes("SECRETO-NYASA")
       && !on.u.includes("nyasappadipika/20"), on.u.slice(iF, iF + 400));
-  comprobar("encendido: la línea «Fuentes consultadas» la pone el worker, en orden",
-    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases sobre la Rūpasiddhi; Rūpasiddhi; Nyāsa.",
+  comprobar("encendido: la línea «Fuentes consultadas» la pone el worker, con los nombres fijos y en orden",
+    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases de Rūpasiddhi; Padarūpasiddhi; Nyāsa.",
     on.x.respuesta);
+  comprobar("y sin nada de la cabecera (ni «fuente:», ni clase, ni edición)",
+    !/fuente:|clase 3|12:40|VRI|\*\*/.test(on.x.respuesta), on.x.respuesta);
   const alNavegador = JSON.stringify(on.x);
   comprobar("encendido: ningún paquete vuelve al navegador",
     !/SECRETO-|grabación|dominio público/.test(alNavegador), alNavegador);
@@ -330,7 +332,8 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     reg.fuentes && reg.fuentes.length === 3 && !/SECRETO-/.test(log[1]), log && log[1]);
 
   const en = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, lang: "en" });
-  comprobar("en inglés: «Sources consulted»", en.x.respuesta.includes("\n\nSources consulted: "), en.x.respuesta);
+  comprobar("en inglés: «Sources consulted» con los nombres ingleses",
+    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
 
   const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
   comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
@@ -356,10 +359,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   const conf = JSON.parse(readFileSync(new URL("../wrangler.jsonc", import.meta.url), "utf-8")
     .replace(/^\s*\/\/.*$/gm, ""));
   const f = (conf.kv_namespaces || []).find((k) => k.binding === "FUENTES");
-  comprobar("wrangler.jsonc enlaza FUENTES", !!f);
-  if (f && !/^[0-9a-f]{32}$/.test(f.id)) {
-    console.log("  AVISO el id de FUENTES es aún el marcador («" + f.id + "»): pegar el id real antes de fusionar");
-  }
+  comprobar("wrangler.jsonc enlaza FUENTES con un id real", !!f && /^[0-9a-f]{32}$/.test(f.id), f && f.id);
 }
 
 main();
