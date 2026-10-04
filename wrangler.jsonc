@@ -22,6 +22,16 @@
   // porque cada despliegue desde main aplica este archivo, y un enlace que no
   // esté en él se pierde. Si faltara, el worker recurre a VEREDICTOS. Ver
   // worker/preguntar.js.
+  //
+  // FUENTES (2026-10-04): los paquetes de fondo de «Preguntar» (Sīlānanda,
+  // Rūpasiddhi, Nyāsappadīpikā, Nyāsa), uno por obra y §, con claves
+  // «<obra>/<§>». Es PRIVADO: el texto no está en el repositorio ni en el
+  // sitio. Se crea una vez con
+  //   npx wrangler kv namespace create FUENTES
+  // (creado por el IEBH el 2026-10-04 y enlazado abajo). Se llena con
+  // herramientas/subir_fuentes.sh. Se enciende con la variable
+  // PREGUNTAR_FUENTES=on (como secreto, igual que PREGUNTAR_MODELO, para que
+  // sobreviva a los despliegues); sin ella, o con «off», no se lee.
   "name": "gramaticas-pali-es",
   "compatibility_date": "2026-08-10",
   "main": "worker/index.js",
@@ -37,6 +47,10 @@
     {
       "binding": "PREGUNTAS",
       "id": "137986ff87b247db80545826eb3afcc6"
+    },
+    {
+      "binding": "FUENTES",
+      "id": "bfedf442cc21449da8e3f530198c24a2"
     }
   ]
 }
