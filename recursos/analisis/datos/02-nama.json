@@ -3,12 +3,12 @@
   "md": "02-nama-kappa",
   "pali": "Nāma-Kappa",
   "desde": 52,
-  "hasta": 119,
+  "hasta": 160,
   "pdf": [
     113,
-    151
+    165
   ],
-  "paginas": "67–105",
+  "paginas": "67–119",
   "suttas": [
     {
       "n": 52,
@@ -1708,6 +1708,624 @@
       "nota": {
         "es": "«ca» es visesana. Kāriyī, por pārisesa-naya: llevado por «Akatarassā» (§116) el yo de ālapana, quedan el de liṅgattha y dutiyā del tema en u y los tres del tema en ū. Cita la paribhāsā ṭhānivā ādeso: el vo ya puesto sigue contando como yo. Último sutta del pariccheda I.",
         "en": "“ca” is a visesana. Kāriyī, by pārisesa-naya: once “Akatarassā” (§116) has taken the ālapana yo, there remain the liṅgattha and dutiyā yo of the u-stem and the three of the ū-stem. It cites the paribhāsā ṭhānivā ādeso: the vo already substituted still counts as yo. Last sutta of pariccheda I."
+      }
+    },
+    {
+      "n": 120,
+      "pdf": 152,
+      "clase": "ubhayaṅga",
+      "roles": [],
+      "anuvatti": "aṅga 2",
+      "ejemplo": "amha + sa → mamaṃ",
+      "nota": {
+        "es": "Primer sutta del pariccheda II. El libro añade: akārānta, aliṅga, grupo sabbanāma.",
+        "en": "First sutta of pariccheda II. The book adds: akārānta, aliṅga, sabbanāma group."
+      },
+      "ejercicio": true,
+      "respuesta": [
+        [
+          "kāriyī",
+          "amha",
+          "savibhattissa"
+        ],
+        [
+          "kāriya",
+          "mamaṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "se",
+          "",
+          "7"
+        ]
+      ]
+    },
+    {
+      "n": 121,
+      "pdf": 152,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "amha + yo → mayaṃ",
+      "nota": {
+        "es": "El libro no reparte funciones: «aṅga, nimitta, etc., son fáciles» (လွယ်ပြီ); no es ejercicio. Cita sin atribuir: «Ettha ca ekasmiṃpi gāravabahumānena bahuvacanaṃ hoti» (el plural, por respeto, aun de uno solo), y remite al prefacio del Rūpasiddhi-nissaya de Visuddhāruṃ.",
+        "en": "The book does not assign the roles: “aṅga, nimitta, etc. are easy” (လွယ်ပြီ); it is not an exercise. Unattributed quotation: “Ettha ca ekasmiṃpi gāravabahumānena bahuvacanaṃ hoti” (the plural, out of respect, even for one person); it refers to the preface of the Visuddhāruṃ Rūpasiddhi-nissaya."
+      }
+    },
+    {
+      "n": 122,
+      "pdf": 152,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "guṇavantu + yo → guṇavanto",
+      "nota": {
+        "es": "«ntu, junto con yo, se hace nto». El libro solo dice «es fácil» (လွယ်ပြီ) y añade: masculino.",
+        "en": "“ntu, together with yo, becomes nto”. The book only says “it is easy” (လွယ်ပြီ) and adds: masculine."
+      }
+    },
+    {
+      "n": 123,
+      "pdf": 152,
+      "clase": "ubhayaṅga; lāghavasiddhi-sutta",
+      "roles": [],
+      "anuvatti": "aṅga 2",
+      "ejemplo": "guṇavantassa",
+      "nota": {
+        "es": "El libro solo dice «nimitta, etc., son fáciles» (လွယ်၏). Como sutta de lāghavasiddhi («que muestra el método»): importa la forma de partida (anipphanna) y la acabada (nipphanna), para que sea Jinavacana; el modo de producirla (nipphādana) puede ser cualquiera. Lo ilustra con purisa + si → puriso. Masculinos y neutros en -a.",
+        "en": "The book only says “nimitta, etc. are easy” (လွယ်၏). As a lāghavasiddhi sutta (“showing the method”): what matters is the starting form (anipphanna) and the finished one (nipphanna), so that it is Jinavacana; the way of producing it (nipphādana) may be any. It illustrates with purisa + si → puriso. Masculines and neuters in -a."
+      }
+    },
+    {
+      "n": 124,
+      "pdf": 153,
+      "clase": "ubhayaṅga",
+      "roles": [],
+      "anuvatti": "aṅga 2",
+      "ejemplo": "guṇavantu + si → guṇavā",
+      "nota": {
+        "es": "Tras el modelo, «ချေ, ခပ်, ကပ်», sin desarrollar, y «por puriso se sabe que es masculino». El libro añade: masculino (se sabe por el sutta siguiente), grupo guṇavā. Aunque todos los suttas son de aplicación general (bahulaṃ), de dos con el mismo nimitta y kārī y distinto kāriya, el que no lleva vā es más general: «Ā simhi» es más fijo que «Simhi vā».",
+        "en": "After the model, “ချေ, ခပ်, ကပ်”, not spelled out, and “by puriso it is known to be masculine”. The book adds: masculine (known from the next sutta), guṇavā group. Although all suttas apply generally (bahulaṃ), of two with the same nimitta and kārī and a different kāriya, the one without vā is more general: “Ā simhi” is more fixed than “Simhi vā”."
+      },
+      "ejercicio": true,
+      "respuesta": [
+        [
+          "kāriyī",
+          "ntussa",
+          ""
+        ],
+        [
+          "kāriya",
+          "ā",
+          ""
+        ],
+        [
+          "nimitta",
+          "simhi",
+          "",
+          "7"
+        ]
+      ]
+    },
+    {
+      "n": 125,
+      "pdf": 153,
+      "clase": "ubhayaṅga",
+      "roles": [],
+      "anuvatti": "aṅga 3: simhi, ntussa, napuṃsake",
+      "ejemplo": "guṇavantu + si → guṇavaṃ",
+      "nota": {
+        "es": "«El ntu neutro, junto con si, se hace aṃ». El libro añade: neutro.",
+        "en": "“The neuter ntu, together with si, becomes aṃ”. The book adds: neuter."
+      },
+      "ejercicio": true,
+      "respuesta": [
+        [
+          "kāriyī",
+          "ntussa",
+          "napuṃsake"
+        ],
+        [
+          "kāriya",
+          "aṃ",
+          ""
+        ],
+        [
+          "nimitta",
+          "simhi",
+          "",
+          "7"
+        ]
+      ]
+    },
+    {
+      "n": 126,
+      "pdf": 153,
+      "clase": "ubhayaṅga",
+      "roles": [
+        [
+          "nimitta",
+          "ge",
+          "",
+          "7"
+        ],
+        [
+          "kāriyī",
+          "ntussa",
+          ""
+        ]
+      ],
+      "anuvatti": "aṅga 2",
+      "ejemplo": "guṇavantu + si (ga) → bho guṇava; …vā; …vaṃ",
+      "nota": {
+        "es": "El libro da también avaṇṇā, aṃ, con el rol impreso «ကာရီ» (kārī), y ca como su visesana. La 2.ª y la 3.ª forma van abreviadas en el libro. Tras el modelo, «ချေ, ကပ်». El libro añade: masculino, neutro.",
+        "en": "The book also gives avaṇṇā, aṃ, with the role printed «ကာရီ» (kārī), and ca as its visesana. The 2nd and 3rd forms are abbreviated in the book. After the model, “ချေ, ကပ်”. The book adds: masculine, neuter."
+      }
+    },
+    {
+      "n": 127,
+      "pdf": 154,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "guṇavantu + sa → guṇavato; guṇavantu + smiṃ → guṇavati; guṇavantu + nā, smā → guṇavatā; guṇavantu + sa → guṇavantassa; guṇavantasmiṃ",
+      "nota": {
+        "es": "guṇavati y guṇavatā van entre paréntesis en el libro; smā → nā por «အမှတုမှ-». guṇavantassa: el vā lo impide. guṇavantasmiṃ, «igual». La explicación: por nā se toma también el nā que sustituye a smā; en guṇavato y sīlavato se recita con una ligera pausa (yati) entre la palabra y el sufijo, en bhagavato no.",
+        "en": "guṇavati and guṇavatā are in parentheses in the book; smā → nā by “အမှတုမှ-”. guṇavantassa: vā prevents it. guṇavantasmiṃ, “likewise”. The explanation: by nā the nā that replaces smā is also taken; guṇavato and sīlavato are recited with a slight pause (yati) between word and suffix, bhagavato is not."
+      }
+    },
+    {
+      "n": 128,
+      "pdf": 154,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "guṇavantu + naṃ → guṇavataṃ; guṇavantānaṃ",
+      "nota": {
+        "es": "No hay explicación (ခ). guṇavantānaṃ: el vā lo impide.",
+        "en": "There is no explanation (ခ). guṇavantānaṃ: vā prevents it."
+      }
+    },
+    {
+      "n": 129,
+      "pdf": 154,
+      "clase": "ubhayaṅga",
+      "roles": [],
+      "anuvatti": "aṅga 3",
+      "ejemplo": "ima + si, aṃ → idaṃ; ima + si, aṃ → imaṃ; imaṃ + atthitā → idamatthitā; ima + paccayatā → idappaccayatā",
+      "nota": {
+        "es": "Tras «aṅga 3», el libro da: akārānta, neutro, grupo sabbanāma. imaṃ: el vā lo impide; si → aṃ fuera del masculino. idamatthitā (impreso «imaṃ +») e idappaccayatā: en samāsa, por «Imassidaṃ», sutta partido en dos; el primero se arregla por «Madā sare». Cita la Rūpasiddhi, que, siguiendo al sánscrito, hace de idaṃ un sabbanāma en niggahīta; este sutta se dice porque idaṃ es escaso en el Piṭaka y por facilidad de pronunciación (sukhuccāraṇa). idaṃ predomina en la 1.ª, imaṃ en la 2.ª.",
+        "en": "After “aṅga 3”, the book gives: akārānta, neuter, sabbanāma group. imaṃ: vā prevents it; si → aṃ outside the masculine. idamatthitā (printed “imaṃ +”) and idappaccayatā: in samāsa, by “Imassidaṃ”, a sutta split in two; the first is arranged by “Madā sare”. It cites the Rūpasiddhi, which, following Sanskrit, makes idaṃ a sabbanāma ending in niggahīta; this sutta is stated because idaṃ is rare in the Piṭaka and for ease of pronunciation (sukhuccāraṇa). idaṃ prevails in the 1st case, imaṃ in the 2nd."
+      }
+    },
+    {
+      "n": 130,
+      "pdf": 155,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "amu + si, aṃ → aduṃ; amu + sa → adussa",
+      "nota": {
+        "es": "La explicación dice solo «es fácil» (လွယ်၏). adussa: amu → aduṃ por el vinādhikāra de «Amussāduṃ»; el niggahīta desaparece por sí solo (método rukkhasakuṇa), o se elide por «byañjane ca».",
+        "en": "The explanation only says “it is easy” (လွယ်၏). adussa: amu → aduṃ by the vinādhikāra of “Amussāduṃ”; the niggahīta disappears of itself (rukkhasakuṇa method), or is elided by “byañjane ca”."
+      }
+    },
+    {
+      "n": 131,
+      "pdf": 155,
+      "clase": "adhikāra",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "No hay modelo (က). La explicación, en pāḷi, analiza el compuesto (itthī, pumā y napuṃsaka, en kammadhāraya con saṅkhyā) y dice que saṅkhyā pasa a neutro por este nipātana; cierra: «adhikāratthamevidamāraddhaṃ».",
+        "en": "There is no model (က). The explanation, in Pāḷi, analyses the compound (itthī, pumā and napuṃsaka, in kammadhāraya with saṅkhyā) and says that saṅkhyā becomes neuter by this nipātana; it closes: “adhikāratthamevidamāraddhaṃ”."
+      }
+    },
+    {
+      "n": 132,
+      "pdf": 155,
+      "clase": "ubhayaṅga",
+      "roles": [
+        [
+          "nimitta",
+          "yosu",
+          "",
+          "7"
+        ],
+        [
+          "kāriyī",
+          "dvinnaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "dve",
+          ""
+        ]
+      ],
+      "anuvatti": "aṅga 2",
+      "ejemplo": "dvi + yo → dve; dvi + yo → duve; dvi + naṃ → duvinnaṃ",
+      "nota": {
+        "es": "«ca» es visesana: por él, duve y duvi; naṃ → innaṃ por «ubhādito naminnaṃ», y entre paréntesis «no ca dvādito». El libro añade: ikārānta, de los tres géneros. dvaya no es kāriya de dvi: es un taddhita colectivo; ubha es sinónimo (vevacana) de dvi; ubhaya = ubha + aya; estas voces expresan una pareja, no el número sin más.",
+        "en": "“ca” is a visesana: by it, duve and duvi; naṃ → innaṃ by “ubhādito naminnaṃ”, and in parentheses “no ca dvādito”. The book adds: ikārānta, of the three genders. dvaya is not a kāriya of dvi: it is a collective taddhita; ubha is a synonym (vevacana) of dvi; ubhaya = ubha + aya; these words express a pair, not the bare number."
+      }
+    },
+    {
+      "n": 133,
+      "pdf": 156,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "ti + yo → tisso; catasso",
+      "nota": {
+        "es": "catasso, «igual». La explicación cita a Moggallāna: tissa, catassa con yo → o, que deja hechas a la vez tissannaṃ y catassannaṃ.",
+        "en": "catasso, “likewise”. The explanation cites Moggallāna: tissa, catassa with yo → o, which also yields tissannaṃ and catassannaṃ at once."
+      }
+    },
+    {
+      "n": 134,
+      "pdf": 156,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "pañca + yo → pañca",
+      "nota": {
+        "es": "«La a de pañca, junto con yo, se hace a». La explicación: este sutta deja sin efecto («hunde») a «Sabbayonīnam āe» y «Ato niccaṃ»; donde viene n se dice dvādi, donde se hace a, pañcādi (hasta aṭṭhārasa).",
+        "en": "“The a of pañca, together with yo, becomes a”. The explanation: this sutta overrides (“sinks”) “Sabbayonīnam āe” and “Ato niccaṃ”; where n comes one says dvādi, where a is made, pañcādi (up to aṭṭhārasa)."
+      }
+    },
+    {
+      "n": 135,
+      "pdf": 156,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "rāja + sa → rañño; rājino",
+      "nota": {
+        "es": "rājino, «igual». La explicación: por ser paccakkhānukaraṇa dice «rājassa» y no «rañño»; akārānta, masculino, grupo rājādi; en compuesto, por «kvaci samāsanta», se pierde lo de rājādi: devarañño, devarājassa. Cita a Moggallāna, que forma también raññassa.",
+        "en": "rājino, “likewise”. The explanation: being a paccakkhānukaraṇa it says “rājassa”, not “rañño”; akārānta, masculine, rājādi group; in a compound, by “kvaci samāsanta”, the rājādi treatment is lost: devarañño, devarājassa. It cites Moggallāna, who also forms raññassa."
+      }
+    },
+    {
+      "n": 136,
+      "pdf": 157,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "rāja + naṃ → raññaṃ; rājūnaṃ",
+      "nota": {
+        "es": "rājūnaṃ: el vā lo impide; por «Rājassa rāju», rāja → rāju y se alarga. La explicación: el vā se añade para rājūnaṃ, no para devarājānaṃ, que en compuesto deja de ser rājādi y va como purisa, por «kvaci samāsanta».",
+        "en": "rājūnaṃ: vā prevents it; by “Rājassa rāju”, rāja → rāju, then lengthened. The explanation: the vā is added for rājūnaṃ, not for devarājānaṃ, which in a compound stops being rājādi and goes like purisa, by “kvaci samāsanta”."
+      }
+    },
+    {
+      "n": 137,
+      "pdf": 157,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "rāja + nā, smā → raññā; rāja + nā → rājinā",
+      "nota": {
+        "es": "raññā: smā → nā por «အမှတုမှန္တု-». rājinā: por el vā sobrante de este sutta. La explicación: fuera de compuesto no existe rājena; en compuesto, por «kvaci samāsanta», también devarājena; teniendo en cuenta «sabbadattena rājinā», rājinā se forma por el vā.",
+        "en": "raññā: smā → nā by “အမှတုမှန္တု-”. rājinā: by the redundant vā of this sutta. The explanation: outside a compound there is no rājena; in a compound, by “kvaci samāsanta”, also devarājena; with “sabbadattena rājinā” in view, rājinā is formed by the vā."
+      }
+    },
+    {
+      "n": 138,
+      "pdf": 157,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "raññe; rājini",
+      "nota": {
+        "es": "Una sola segmentación para las dos formas. La explicación: «kvaci samāsanta» deshace opcionalmente lo de rājādi (devarājassa, devarañño); en nā y naṃ se pone vā porque, aun fuera de compuesto, hay otro procedimiento; en sa y smiṃ no, porque fuera de compuesto éste es fijo. rājini se forma también de otro modo, glosada «¡oh reina!».",
+        "en": "One segmentation for both forms. The explanation: “kvaci samāsanta” optionally undoes the rājādi treatment (devarājassa, devarañño); with nā and naṃ vā is added because, even outside a compound, there is another procedure; with sa and smiṃ it is not, because outside a compound this one is fixed. rājini is also formed another way, glossed “O queen!”."
+      }
+    },
+    {
+      "n": 139,
+      "pdf": 157,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "tumha, amha + smiṃ → tayi, mayi",
+      "nota": {
+        "es": "Una sola segmentación para las dos formas. La explicación: tumhāmhākaṃ es «အပစ္စက္ခာန»; akārānta, de los tres géneros, sabbanāma.",
+        "en": "One segmentation for both forms. The explanation: tumhāmhākaṃ is «အပစ္စက္ခာန»; akārānta, of the three genders, sabbanāma."
+      }
+    },
+    {
+      "n": 140,
+      "pdf": 158,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "tumha, amha + si → tvaṃ, ahaṃ; tumha + si → tuvaṃ",
+      "nota": {
+        "es": "tuvaṃ, por el «ca». La explicación: el «ca» está fuera de su sitio (aṭṭhāna-payutta) y se construye tras tvaṃ y ahaṃ; hay también ahakaṃ: hecho ahaṃ, se añade ka y el niggahīta pasa a la ka por una paribhāsā; «no hay que decir que ahakaṃ sale por el \"ca\"».",
+        "en": "tuvaṃ, by the “ca”. The explanation: the “ca” is out of place (aṭṭhāna-payutta) and is construed after tvaṃ and ahaṃ; there is also ahakaṃ: once ahaṃ is made, ka is added and the niggahīta moves to the ka by a paribhāsā; “one should not say that ahakaṃ comes from the ‘ca’”."
+      }
+    },
+    {
+      "n": 141,
+      "pdf": 158,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "tumha, amha + sa → tava, mama",
+      "nota": {
+        "es": "(က) y (ခ) fusionados en el libro. «Aunque vale para las dos (စ, ဆ), lo más usado es la chaṭṭhī».",
+        "en": "(က) and (ခ) merged in the book. “Although it holds for both (စ, ဆ), the chaṭṭhī is the more used”."
+      }
+    },
+    {
+      "n": 142,
+      "pdf": 158,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "(က) y (ခ) fusionados en el libro: «ရုပ်လွယ်ပြီ» («la forma es fácil»). «Aunque es de las dos (စ, ဆ), lo más usado es la catutthī».",
+        "en": "(က) and (ခ) merged in the book: «ရုပ်လွယ်ပြီ» (“the form is easy”). “Although it is of both (စ, ဆ), the catutthī is the more used”."
+      }
+    },
+    {
+      "n": 143,
+      "pdf": 158,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "El modelo dice solo «ရုပ်လွယ်၏» («la forma es fácil»). La explicación: de dos suttas con el mismo nimitta y kārī y distinto kāriya, el que lleva vā es menos fijo; por eso en el acusativo singular taṃ y maṃ son más frecuentes que tavaṃ y mamaṃ. Trata maṃ en samāsa y en taddhita, con citas del Gāmaṇisaṃyutta («ete hi gāmaṇi mandīpā maṃleṇā mantāṇā maṃsaraṇā viharanti»), el Mahāgovindasutta y el Dhammacetiyasutta; también mamuddesiko, mamupajjhāyako.",
+        "en": "The model only says «ရုပ်လွယ်၏» (“the form is easy”). The explanation: of two suttas with the same nimitta and kārī and a different kāriya, the one with vā is less fixed; hence in the accusative singular taṃ and maṃ are more frequent than tavaṃ and mamaṃ. It treats maṃ in samāsa and in taddhita, quoting the Gāmaṇisaṃyutta (“ete hi gāmaṇi mandīpā maṃleṇā mantāṇā maṃsaraṇā viharanti”), the Mahāgovindasutta and the Dhammacetiyasutta; also mamuddesiko, mamupajjhāyako."
+      }
+    },
+    {
+      "n": 144,
+      "pdf": 159,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "(က) y (ခ) fusionados en el libro: «todo es fácil» (အလုံးစုံလွယ်၏); y «ဤ၌ ဝါပါ၍ တံမံအောက် တဝံ၊ မမံနည်း၏».",
+        "en": "(က) and (ခ) merged in the book: “all is easy” (အလုံးစုံလွယ်၏); and «ဤ၌ ဝါပါ၍ တံမံအောက် တဝံ၊ မမံနည်း၏»."
+      }
+    },
+    {
+      "n": 145,
+      "pdf": 159,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "(က) y (ခ) fusionados en el libro: «todo es fácil»; el nā que es kāriya («ကာရိယနာ») también se incluye en «nāmhi».",
+        "en": "(က) and (ခ) merged in the book: “all is easy”; the nā that is a kāriya («ကာရိယနာ») is also included in “nāmhi”."
+      }
+    },
+    {
+      "n": 146,
+      "pdf": 159,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "(က) y (ခ) fusionados en el libro: «todo es fácil». Las operaciones de los suttas desde «Tumhāmhākaṃ tayimayi» hasta éste se dan al comienzo de frase o de pāda y también tras palabra (padato para), y en compuesto en los dos miembros; «en estos ocho suttas solo entran todavía siete singulares»; desde el siguiente, tras palabra.",
+        "en": "(က) and (ခ) merged in the book: “all is easy”. The operations of the suttas from “Tumhāmhākaṃ tayimayi” to this one occur at the start of a sentence or pāda and also after a word (padato para), and in a compound in both members; “in these eight suttas only seven singulars are included so far”; from the next one on, after a word."
+      }
+    },
+    {
+      "n": 147,
+      "pdf": 159,
+      "clase": "ubhayaṅga",
+      "roles": [
+        [
+          "kāriyī",
+          "tumhamhākaṃ",
+          "padato"
+        ],
+        [
+          "kāriya",
+          "vo, no",
+          ""
+        ],
+        [
+          "nimitta",
+          "dutiyā … ṭṭhīsu",
+          "bahuvacanesu",
+          "7"
+        ]
+      ],
+      "anuvatti": "aṅga 4: dutiyā-chaṭṭhīsu, bahuvacanesu, padato, tumhamhākaṃ",
+      "ejemplo": "tumha + yo → pahāya vo; amha + yo → mā no; tumha + naṃ (စ) → dhammaṃ vo; amha + naṃ (စ) → saṃvibhajetha no; amha + naṃ (ဆ) → satthā no; tumha + naṃ (စ) → bhayaṃ tumhākaṃ",
+      "nota": {
+        "es": "«padato»: no al comienzo de pāda ni de frase, sino tras una palabra al menos. «bahuvacanesu» se sabe por el sutta siguiente. El nimitta va abreviado en el libro («ဒုတီယာ ။ပ။ ဋ္ဌီသု»). bhayaṃ tumhākaṃ: el navā lo impide; naṃ → ākaṃ por «tumhāmhehi nam ākaṃ».",
+        "en": "“padato”: not at the start of a pāda or sentence, but after at least one word. “bahuvacanesu” is known from the next sutta. The nimitta is abbreviated in the book («ဒုတီယာ ။ပ။ ဋ္ဌီသု»). bhayaṃ tumhākaṃ: navā prevents it; naṃ → ākaṃ by “tumhāmhehi nam ākaṃ”."
+      }
+    },
+    {
+      "n": 148,
+      "pdf": 160,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "tumha + sa → dadāmi te; dadāhi me; idaṃ te; ayaṃ me; tumha + sa → idaṃ tuyhaṃ; amha + sa → vacanaṃ mama",
+      "nota": {
+        "es": "La explicación empieza «examínese como el anterior» y da solo: ekavacanesu es visesana del nimitta; aṃ no se incluye porque se dirá «na aṃmhi». dadāhi me, idaṃ te, ayaṃ me, «igual». idaṃ tuyhaṃ y vacanaṃ mama, por «tuyhaṃ mayhañca» y «tavamamase».",
+        "en": "The explanation opens “examine as the previous one” and gives only: ekavacanesu is a visesana of the nimitta; aṃ is not included because “na aṃmhi” will be stated. dadāhi me, idaṃ te, ayaṃ me, “likewise”. idaṃ tuyhaṃ and vacanaṃ mama, by “tuyhaṃ mayhañca” and “tavamamase”."
+      }
+    },
+    {
+      "n": 149,
+      "pdf": 160,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "(က) y (ခ) fusionados en el libro. aṃ, que quedaría comprendido en «te me ekavacanesu», lo excluye este sutta: no se hacen te, me, sino taṃ, maṃ; se dice que no hay restricción entre tras palabra y no tras palabra.",
+        "en": "(က) and (ခ) merged in the book. aṃ, which would be included in “te me ekavacanesu”, is excluded by this sutta: not te, me, but taṃ, maṃ; it is said there is no restriction between after a word and not after a word."
+      }
+    },
+    {
+      "n": 150,
+      "pdf": 160,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "tumha + nā → kataṃ te; kataṃ me; kataṃ tayā; kataṃ mayā",
+      "nota": {
+        "es": "No hay explicación (ခ). kataṃ me, «igual». kataṃ tayā, kataṃ mayā, por «nāmhi tayā mayā».",
+        "en": "There is no explanation (ခ). kataṃ me, “likewise”. kataṃ tayā, kataṃ mayā, by “nāmhi tayā mayā”."
+      }
+    },
+    {
+      "n": 151,
+      "pdf": 161,
+      "clase": "",
+      "roles": [
+        [
+          "kāriya",
+          "vo, no",
+          ""
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "tumha + hi → kataṃ vo; kataṃ no; tumha + yo (ပ) → gāmaṃ vo; gāmaṃ no",
+      "nota": {
+        "es": "El kāriya vale en el plural de «ပ, ဒု, တ, စ, ဆ»; la línea siguiente da te, me para el singular. gāmaṃ vo, por el «su» del sutta. La explicación, de dos páginas, cita la Rūpasiddhi («pādādo ca cavevādiyoge ca na ca honti»: no al comienzo de pāda o de frase ni junto a ca, vā, eva), el Kalāpa, Pāṇini, la Mugdhabodha-ṭīkā, Moggallāna y una ṭippanī a la Siddhāntakaumudī; expone las cuatro excepciones del sánscrito y trata el anvādesa y el vocativo.",
+        "en": "The kāriya holds in the plural of «ပ, ဒု, တ, စ, ဆ»; the next line gives te, me for the singular. gāmaṃ vo, by the “su” of the sutta. The two-page explanation cites the Rūpasiddhi (“pādādo ca cavevādiyoge ca na ca honti”: not at the start of a pāda or sentence, nor next to ca, vā, eva), the Kalāpa, Pāṇini, the Mugdhabodha-ṭīkā, Moggallāna and a ṭippanī on the Siddhāntakaumudī; it sets out the four Sanskrit exceptions and treats anvādesa and the vocative."
+      }
+    },
+    {
+      "n": 152,
+      "pdf": 163,
+      "clase": "ubhayaṅga",
+      "roles": [
+        [
+          "nimitta",
+          "simhi",
+          "",
+          "7"
+        ],
+        [
+          "kāriyī",
+          "pumantassa",
+          ""
+        ],
+        [
+          "kāriya",
+          "ā",
+          ""
+        ]
+      ],
+      "anuvatti": "aṅga 2",
+      "ejemplo": "puma + si → pumā; maghava + si → maghavā; yuvā; asmā; bhasmā; addhā; usmā",
+      "nota": {
+        "es": "maghavā, por el «anta» del sutta. El libro añade: akārānta, masculino, grupo pumādi. En sánscrito pumās, maghavan, yuvan son temas en consonante. En yuvino bhāvo, yobbanaṃ lleva n; «yobbannaṃ» es pāḷi corrupto. maghavā es también del grupo guṇavā.",
+        "en": "maghavā, by the “anta” of the sutta. The book adds: akārānta, masculine, pumādi group. In Sanskrit pumās, maghavan, yuvan are consonant stems. In yuvino bhāvo, yobbanaṃ has n; “yobbannaṃ” is corrupt Pāḷi. maghavā also belongs to the guṇavā group."
+      }
+    },
+    {
+      "n": 153,
+      "pdf": 163,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + si (ga) → ho pumaṃ",
+      "nota": {
+        "es": "No hay explicación (ခ).",
+        "en": "There is no explanation (ခ)."
+      }
+    },
+    {
+      "n": 154,
+      "pdf": 163,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "itthipuma + si (ga) → he itthipumaṃ; itthipuma; itthipuma + si → he itthipumā",
+      "nota": {
+        "es": "he itthipumā: el vibhāsā lo impide; se forma por «akāra pitā…» y «ākāro vā». La explicación: la vutti de Kaccāyana da itthipumannapuṃsakaṃ; el Nyāsa hace aṃ la a de puma y la pasa a nasal de clase; el vuttikāra y los maestros del Nyāsa se equivocan por no advertir que se arrastra «amālapanekavacane»; itthipumannapuṃsakaṃ sale doblando la n, y por «pumassa liṅgādīsu…» también itthipunnapuṃsakaṃ.",
+        "en": "he itthipumā: the vibhāsā prevents it; it is formed by “akāra pitā…” and “ākāro vā”. The explanation: the Kaccāyana vutti gives itthipumannapuṃsakaṃ; the Nyāsa makes the a of puma aṃ and turns it into a class nasal; the vuttikāra and the Nyāsa masters err by not noticing that “amālapanekavacane” is carried over; itthipumannapuṃsakaṃ comes by doubling the n, and by “pumassa liṅgādīsu…” also itthipunnapuṃsakaṃ."
+      }
+    },
+    {
+      "n": 155,
+      "pdf": 164,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + yo → pumāno",
+      "nota": {
+        "es": "No hay explicación (ခ).",
+        "en": "There is no explanation (ခ)."
+      }
+    },
+    {
+      "n": 156,
+      "pdf": 164,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + smiṃ → pumāne; pume",
+      "nota": {
+        "es": "No hay explicación (ခ). pume: el vā lo impide; con ese vā también, a causa de yo, pumāne («a los hombres»).",
+        "en": "There is no explanation (ခ). pume: vā prevents it; with that vā, also because of yo, pumāne (“the men”, accusative)."
+      }
+    },
+    {
+      "n": 157,
+      "pdf": 164,
+      "clase": "antaraṅga",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + hi → pumānehi; …bhi",
+      "nota": {
+        "es": "La 2.ª forma va abreviada en el libro. La explicación: la palabra «vibhatti», dicha de más, anula la «savibhatti» que haría el sutta ubhayaṅga. Un paréntesis del modelo trata maghavā y yuvā: maghavāna, yuvāna se declinan como purisa; sin āna, maghavā, yuvā (por «pumantassā simhi») y maghavānā, yuvānā, maghavāsu, yuvāsu (por el «ca» de otro sutta).",
+        "en": "The 2nd form is abbreviated in the book. The explanation: the word “vibhatti”, stated in excess, cancels the “savibhatti” that would make the sutta ubhayaṅga. A parenthesis in the model deals with maghavā and yuvā: maghavāna, yuvāna are declined like purisa; without āna, maghavā, yuvā (by “pumantassā simhi”) and maghavānā, yuvānā, maghavāsu, yuvāsu (by the “ca” of another sutta)."
+      }
+    },
+    {
+      "n": 158,
+      "pdf": 164,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + su → pumāsu; pumesu",
+      "nota": {
+        "es": "No hay explicación (ခ). pumesu: el vā lo impide; por «suhisv-».",
+        "en": "There is no explanation (ခ). pumesu: vā prevents it; by “suhisv-”."
+      }
+    },
+    {
+      "n": 159,
+      "pdf": 164,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + nā → pumunā, pumānā; puma + sa → pumuno; pumassa; puma + smā → pumunā; pumasmā; kammuno; thāmuno",
+      "nota": {
+        "es": "No hay explicación (ခ). pumuno y pumunā (de smā), por el «ca», y luego «jhalato sassa no vā» y «jhalato ca»; pumassa, pumasmā: el vā lo impide. kammuno, thāmuno, «igual»; con kamma y thāma entran los grupos cittādi y mano.",
+        "en": "There is no explanation (ခ). pumuno and pumunā (from smā), by the “ca”, then “jhalato sassa no vā” and “jhalato ca”; pumassa, pumasmā: vā prevents it. kammuno, thāmuno, “likewise”; kamma and thāma bring in the cittādi and mano groups."
+      }
+    },
+    {
+      "n": 160,
+      "pdf": 165,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "kamma + nā → kammanā, kammunā; kammena; atta + nā → attanā; attena; maghava + nā, su → maghavānā, maghavāsu; maghavena, maghavesu; yuvānā, yuvāsu; thāma + nā → thāmunā; thāmena; thāma + sa → thāmuno; thāmassa; addhunā, addhuno",
+      "nota": {
+        "es": "No hay explicación (ခ). Las formas en -ena, -esu, -assa: el vā lo impide (ato nena, suhisv-). attanā y maghavānā, por el «ca»; thāmunā, thāmuno, por la palabra «anta», sobrante. Último sutta del pariccheda II: «ဒုတိယပိုင်းဋီကာပြီး၏».",
+        "en": "There is no explanation (ခ). The forms in -ena, -esu, -assa: vā prevents it (ato nena, suhisv-). attanā and maghavānā, by the “ca”; thāmunā, thāmuno, by the redundant word “anta”. Last sutta of pariccheda II: «ဒုတိယပိုင်းဋီကာပြီး၏»."
       }
     }
   ]
