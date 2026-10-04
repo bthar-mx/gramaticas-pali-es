@@ -986,7 +986,7 @@ D2. Nota de versión v0.4 (pie de la página, ES y EN): dice «La columna «Anuv
 
 Decisión: 
 
-D3. Añadido por Claude. Etiquetas de caso del nimitta deducidas de la terminación donde el libro no las pone (ghato, pato, lato, jhalato → 5.ª: §111, §112, §114, §116, §117, §119, PDF 148–151; tato → 5.ª en §77, PDF 129); el generador exige una en cada nimitta.
+D3. Añadido por Claude. Etiquetas de caso del nimitta deducidas de la terminación donde el libro no las pone (ghato, pato, lato, jhalato → 5.ª: §111, §112, §114, §116, §117, §119, PDF 148–151; tato → 5.ª en §77, PDF 129); el generador exige una en cada nimitta. Añadido por decisión de Angel (2026-10-04): §175, *sabbattha* → 7.ª (PDF 173–174).
 
 - [ ] Revisado
 
@@ -1620,9 +1620,9 @@ Decisión:
 
 G17. §170 (PDF 172, y≈700): el único rol que nombra el libro es el visesana del kārī, «sabbassa». La celda de Funciones da solo eso; kāriyī (ima), kāriya (e) y nimitta (su, naṃ, hi) se deducirían del (က), pero por la decisión de G1 no van como respuesta sugerida. ¿Vale una celda de Funciones con un solo rol?
 
-- [ ] Revisado
+- [x] Revisado
 
-Decisión: 
+Decisión: decisión de Angel (2026-10-04): por defecto, aceptado. §170 y §172 se tratan como §188 (regla (h)): el rol nombrado sin valor no va a Funciones, que queda vacía; la frase va a Notas.
 
 G18. §166 (PDF 169–170): el (ခ) trae formas con «*» propias (māsapubbā, māsapubbe, māsapubbāya) y otras sin «*» («…ဟပုဗ္ဗ», sattāhāvara). Se anotan aparte de las del (က), como en la tanda 2. Primera voz: «ကောဟပုဗ္ဗ» según se ve impreso, quizá ဧကာဟပုဗ္ဗ (ekāhapubba). Y el nombre que da el libro al sutta, «နာညံသဗ္ဗနာမိကံ-ဝိနာမိကာရသုတ်» (PDF 169, y≈1640): no se sabe qué es «ဝိနာမိကာရ».
 
@@ -1936,21 +1936,21 @@ Sesión 8, tercera parte (2026-10-04). Preguntas de §201–§205 (no hay térmi
 
 G66. §201 (PDF 184, y≈670), columna Clase: el lector no ve rótulo; el verificador pone «ဝိကပ္ပဝိဓိ» (*vikappavidhi*), que está en el cuerpo del (ခ) («… နံကြောင့်လည်း ဝိကပ္ပဝိဓိ ပြီးတုံဘိလျက် …») y se refiere a lo que ya haría el sutta anterior, aunque él mismo dice que no hay rótulo aparte. Sin [V]: la celda queda vacía y la frase va en Notas.
 
-- [ ] Revisado
+- [x] Revisado
 
-Decisión: 
+Decisión: decisión de Angel (2026-10-04): por defecto, aceptado. Clase de §201 vacía; la frase «ဝိကပ္ပဝိဓိ …» del cuerpo del (ခ) queda en Notas.
 
 G67. §204 (PDF 184, y≈2025): la primera forma se imprime «သက္ကမန္ဒာတု», *sakkamandātu*, con ဒ (las dos lecturas, ×6 y ×12), frente a ဓ en mahāmandhātu, mandhātu y el encabezado. Probable errata del libro. La celda la copia tal cual con [V]. ¿Se enmienda a *sakkamandhātu* con nota, o se deja?
 
-- [ ] Revisado
+- [x] Revisado
 
-Decisión: 
+Decisión: decisión de Angel (2026-10-04): por defecto. §204 se deja como está impreso, *sakkamandātu* (con ဒ), con nota que señala la probable errata frente a *mandhātu*; no se enmienda.
 
 G68. Limpieza de las columnas de página (sesión 8, 2026-10-04): las formas y segmentaciones sin [V] de la tanda 3 (§167, §168, §173, §181, §183, §192, §193, §198) estaban escritas en la celda del Ejemplo con «?» o «sin [V]: véase la DUDA». Se han sacado de la celda: ahora solo están en la DUDA de Notas, con las dos lecturas. Donde el motivo sí era [V] y la forma no (§183, 1.ª forma), el motivo pasa a Notas. ¿De acuerdo con este criterio?
 
-- [ ] Revisado
+- [x] Revisado
 
-Decisión: 
+Decisión: decisión de Angel (2026-10-04): aprobado. Lo que no es [V] sale de las celdas de página y queda solo en Notas (DUDA con las dos lecturas).
 
 Sesión 8, cuarta parte (2026-10-04). §206–§210: tanda 3 completa. Preguntas y términos propuestos (no añadidos).
 
@@ -1965,3 +1965,18 @@ G70. **satthādi-gaṇa / pitādi-gaṇa / rattādi-gaṇa** («သတ္ထာ�
 - [ ] Revisado
 
 Decisión: 
+
+**Decisión de Angel (2026-10-04), al cerrar la tanda 3 y antes de la tanda 4.**
+
+- **G68 aprobado**: lo que no es [V] sale de las celdas de página y queda en Notas.
+- **G67, por defecto**: §204 se deja como está impreso (*sakkamandātu*), con nota.
+- **Valores por defecto aceptados**:
+  1. **Motivo de los contraejemplos**: en la celda del Ejemplo, una etiqueta pāḷi breve entre paréntesis —«(vā)», «(navā)», «(ca)»—, como en la v0.6; el motivo completo, en la nota bilingüe. Sustituye a la forma de la regla (g) («lo impide el «vā»» en la celda) para lo que se escriba desde ahora.
+  2. **§175, «sabbattha»**: la etiqueta 7.ª del nimitta se pone, y entra en D3 (etiqueta de caso añadida por el IEBH donde el libro no la pone).
+  3. **§170 y §172**: como §188 (regla (h)): rol nombrado sin valor → Funciones vacía, la frase en Notas (G17).
+  4. **§201**: clase vacía (G66).
+
+## H. Tanda 4 (§211–)
+
+Pariccheda IV («နာမ် / စတုတ္ထပိုင်း», PDF 188 en adelante). Preguntas abiertas y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 4 — filas (borrador)». Reglas por defecto (a), (b'), (c)–(i) de las tandas 2 y 3, con la forma nueva del motivo de los contraejemplos (decisión de Angel, 2026-10-04, punto 1).
+

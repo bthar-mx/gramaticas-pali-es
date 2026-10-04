@@ -324,6 +324,13 @@ Hallazgos de la tanda (sesión 6):
 - **Contraejemplos con «*»** (§169: mahārājesu…; §165: katarakatamā) van al Ejemplo; los que no llevan «*» (§163: tava, mama), a Notas.
 - **El OCR lee mal**: «ဠိပဒံ» por «ဒွိပဒံ» (§163), «သ္ဗ» por «သ္မ» (asma, §161) y el ပ/ဗ de «sampasāraṇa». Los cinco encabezados sí los detecta `loc.py`.
 
+## Tanda 4 — filas (borrador)
+
+Pariccheda IV, «နာမ် / စတုတ္ထပိုင်း» (PDF 188 en adelante; §211 en y≈650). Sesión 9 (2026-10-04). Recortes solapados con `crop.py` por bandas de píxeles (`_crops/nama/l211/`…, lector; `v211/`…, verificador, con recortes propios), sin `mk.py`. Lector + verificador a ciegas en cada fila; [V] en clase, funciones y ejemplo solo donde las dos lecturas coinciden. Reglas por defecto (a), (b'), (c)–(i) de las tandas 2 y 3, con las decisiones de Angel del 2026-10-04 (`revision-angel.md`, final de §G): **el motivo de un contraejemplo con «*» va en el Ejemplo como etiqueta pāḷi breve entre paréntesis —«(vā)», «(navā)», «(ca)»— y el motivo completo, en Notas**; celdas de página vacías donde el libro no da nada. Preguntas y términos: `revision-angel.md`, §H.
+
+| § | PDF | Clase de sutta | Aṅga | Funciones | Ejemplo (က) | Notas |
+|---|---|---|---|---|---|---|
+
 ## Hallazgos de la sesión 2 (§64–§107)
 
 - **«aṅga» no es «anuvatti»:** la lista «(1) … (2) … aṅga N» recoge palabras del propio sutta (§65 tato, sassa; §67; §68; §70) o de suttas anteriores (§66 saṃsā, ekavacana, ya). Resuelto por la decisión 1 (columna «Aṅga»).
