@@ -3,12 +3,12 @@
   "md": "02-nama-kappa",
   "pali": "Nāma-Kappa",
   "desde": 52,
-  "hasta": 210,
+  "hasta": 246,
   "pdf": [
     113,
-    187
+    205
   ],
-  "paginas": "67–141",
+  "paginas": "67–159",
   "suttas": [
     {
       "n": 52,
@@ -2979,6 +2979,485 @@
       "nota": {
         "es": "No hay explicación (ခ). tvayā: tayā por «Nāmhi tayā mayā»; t → tv. tvayi: por «Tumh'āmhākaṃ tayi mayi» y este sutta. Cita del libro: «en Moggallāna se forma tvamhā; véase el Rūpasiddhi-nissaya de Visuddhāruṃ». Último sutta del pariccheda III: «တတိယပိုင်း ပြီး၏».",
         "en": "There is no explanation (ခ). tvayā: tayā by “Nāmhi tayā mayā”; t → tv. tvayi: by “Tumh'āmhākaṃ tayi mayi” and this sutta. The book cites: “in Moggallāna tvamhā is formed; see the Visuddhāruṃ Rūpasiddhi-nissaya”. Last sutta of pariccheda III: «တတိယပိုင်း ပြီး၏»."
+      }
+    },
+    {
+      "n": 211,
+      "pdf": 188,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "attanehi; atta + si → sako",
+      "nota": {
+        "es": "Primer sutta del pariccheda IV. attanehi: por este sutta, a causa de hi, la a de atta se hace ana; luego e por «suhisv-». sako no es contraejemplo: el libro lo saca del exceso de la palabra «tta» del enunciado, dicha en sentido abstracto, por el que atta se hace saka; si → o por «so». Tras «saka» imprime además «(se hace sa)», sin aclararlo. La explicación: en la lengua raíz (pāḷi) la palabra es atta, y en sánscrito lleva una n que es anubandha; en su lugar viene n, y de ahí ana, etc.",
+        "en": "First sutta of pariccheda IV. attanehi: by this sutta, because of hi, the a of atta becomes ana; then e by “suhisv-”. sako is not a counterexample: the book takes it from the excess of the word “tta” in the wording, stated in the abstract sense, by which atta becomes saka; si → o by “so”. After “saka” it also prints “(becomes sa)”, without explaining it. The explanation: in the root language (Pāḷi) the word is atta, and in Sanskrit it has an n that is an anubandha; n comes in its place, and hence ana, etc."
+      }
+    },
+    {
+      "n": 212,
+      "pdf": 188,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "atta + smiṃ → attani",
+      "nota": {
+        "es": "No hay explicación (ခ). Por este sutta, la smiṃ que va tras atta se hace ni. El modelo cierra con un paréntesis que descompone ni en vocal + n: «(ဣပြု၊ န်လာ)», «se hace i; viene n» (lectura de un solo lector, sin verificar).",
+        "en": "There is no explanation (ခ). By this sutta, the smiṃ after atta becomes ni. The model closes with a parenthesis that splits ni into vowel + n: «(ဣပြု၊ န်လာ)», “becomes i; n comes in” (a single reader's reading, unverified)."
+      }
+    },
+    {
+      "n": 213,
+      "pdf": 188,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "atta + sa → attano",
+      "nota": {
+        "es": "No hay explicación (ခ). Por este sutta, tras atta, sa se hace no. El modelo cierra con un paréntesis del mismo tipo que el de §212 («se hace o; viene n»), cuya grafía no fijan las dos lecturas.",
+        "en": "There is no explanation (ခ). By this sutta, after atta, sa becomes no. The model closes with a parenthesis of the same kind as in §212 (“becomes o; n comes in”), whose spelling the two readings do not settle."
+      }
+    },
+    {
+      "n": 214,
+      "pdf": 188,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "atta + smā → attanā; attajo → atrajo",
+      "nota": {
+        "es": "No hay explicación (ခ). attanā: por este sutta, tras atta, smā se hace nā; el modelo cierra con un paréntesis como el de §212–§213, cuya grafía no fijan las dos lecturas. atrajo no es contraejemplo: el libro lo justifica porque el sutta «smā nā», dicho cuando ya estaba hecho por otro sutta, es sobrante, y por ese sobrante, a causa de ja, la t de atta se hace r. El nombre del otro sutta, abreviado, no lo fijan las dos lecturas y no se da aquí.",
+        "en": "There is no explanation (ခ). attanā: by this sutta, after atta, smā becomes nā; the model closes with a parenthesis like that of §212–§213, whose spelling the two readings do not settle. atrajo is not a counterexample: the book justifies it because the sutta “smā nā”, stated when the form was already made by another sutta, is superfluous, and by that surplus, because of ja, the t of atta becomes r. The name of the other sutta, abbreviated, is not settled by the two readings and is not given here."
+      }
+    },
+    {
+      "n": 215,
+      "pdf": 189,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "aggi + smā → agginā; aggismā (ca); daṇḍī + smā → daṇḍinā; daṇḍismā (ca); bhikkhunā",
+      "nota": {
+        "es": "No hay explicación (ခ). agginā: aggi es jha («ဈမှည့်»); por este sutta, la smā que va tras jha se hace nā. daṇḍinā: jha; antes se abrevia la ī, por un sutta que el libro abrevia y cuyo nombre no fijan las dos lecturas; la forma va impresa con i breve y la segmentación con ī larga. bhikkhunā (la): «etc., igual», sin segmentación. aggismā, daṇḍismā: el «ca» lo impide.",
+        "en": "There is no explanation (ခ). agginā: aggi is jha («ဈမှည့်»); by this sutta, the smā after jha becomes nā. daṇḍinā: jha; the ī is first shortened, by a sutta the book abbreviates and whose name the two readings do not settle; the form is printed with short i and the segmentation with long ī. bhikkhunā (la): “etc., likewise”, without segmentation. aggismā, daṇḍismā: “ca” prevents it."
+      }
+    },
+    {
+      "n": 216,
+      "pdf": 189,
+      "clase": "",
+      "roles": [
+        [
+          "nimitta",
+          "ghato",
+          "",
+          "5"
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "kaññā + smiṃ → kaññāyaṃ; kaññā + smiṃ → kaññāya (vā); ratti + smiṃ → rattiyaṃ; ratti + smiṃ → rattiyā (vā); itthiyaṃ",
+      "nota": {
+        "es": "El nimitta va impreso «ghato», no «ghapato» como en el enunciado. kaññāyaṃ (gha) y rattiyaṃ (pa): por este sutta, smiṃ se hace yaṃ. kaññāya, rattiyā: el vā lo impide; se forman por «ghato nādīnaṃ» y «pato yā». itthiyaṃ: «etc., igual». La explicación: por el nimitta se entienden los temas en ā, i, ī, u, ū; el femenino; ratti, kaññā, nadī, una voz más que no se ha identificado («ဂဟံ») y el mano-gaṇa. Formas del (ခ): parisati, sabhati, con smiṃ → tiṃ (ti), según Moggallāna, por economía (lāghava-siddhi); pero derivadas como en «yavamadana-» —smiṃ → i, con t añadida— son conformes al sánscrito (sakkatānuloma) y concuerdan con la formación de pārisajja.",
+        "en": "The nimitta is printed “ghato”, not “ghapato” as in the wording. kaññāyaṃ (gha) and rattiyaṃ (pa): by this sutta, smiṃ becomes yaṃ. kaññāya, rattiyā: vā prevents it; they are formed by “ghato nādīnaṃ” and “pato yā”. itthiyaṃ: “etc., likewise”. The explanation: the nimitta covers stems in ā, i, ī, u, ū; the feminine; ratti, kaññā, nadī, one more word not yet identified («ဂဟံ»), and the mano-gaṇa. Forms in the (ခ): parisati, sabhati, with smiṃ → tiṃ (ti), according to Moggallāna, for economy (lāghava-siddhi); but derived as in “yavamadana-” —smiṃ → i, with t added— they follow Sanskrit (sakkatānuloma) and agree with the formation of pārisajja."
+      }
+    },
+    {
+      "n": 217,
+      "pdf": 189,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "aṭṭhi + yo → aṭṭhīni; aṭṭhī (vā); daṇḍī + yo → daṇḍīni, daṇḍī; viññūni",
+      "nota": {
+        "es": "aṭṭhīni: por este sutta, tras neutro, yo se hace ni; luego «yosu kata-». aṭṭhī: el vā lo impide; se forma por otra remisión abreviada, cuya primera letra no fijan las dos lecturas, y por «yosu kata-». La segmentación de aṭṭhīni va impresa con i breve y la de daṇḍīni con ī larga. El modelo cierra con «calcúlese el resto». La explicación: aunque dice «napuṃsakehi» en general, como existe «Ato niccaṃ», tómense los temas en i, ī, u, ū (neutro, rattādi, sabbanāma); un verso sin obra nombrada enseña que daṇḍī y viññū, cuando denotan la clase (jāti), son neutros.",
+        "en": "aṭṭhīni: by this sutta, after a neuter, yo becomes ni; then “yosu kata-”. aṭṭhī: vā prevents it; it is formed by another abbreviated reference, whose first letter the two readings do not settle, and by “yosu kata-”. The segmentation of aṭṭhīni is printed with short i and that of daṇḍīni with long ī. The model closes with “work out the rest”. The explanation: although it says “napuṃsakehi” in general, since “Ato niccaṃ” exists, take the stems in i, ī, u, ū (neuter, rattādi, sabbanāma); an unattributed verse teaches that daṇḍī and viññū, when they denote the class (jāti), are neuter."
+      }
+    },
+    {
+      "n": 218,
+      "pdf": 189,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "citta + yo → cittāni; asaddha + yo → asaddhāni; sabba + yo → sabbāni",
+      "nota": {
+        "es": "Por este sutta, tras la a del neutro, yo se hace ni; luego «yosu kata-». La explicación abre con «akārānta, neutro, citta, sabbanāma»: aunque el sutta manda ni fijo, «Sabbayonīnam ā e» haría de ni ā y e; podría prescindirse de él, pero se enuncia para indicar que ni → ā, e se da solo en pocos suddhanāma y nunca en los sabbanāma, que, por ser visesana, conservan ni para mostrar el género del visesya. Cita una estrofa sin obra nombrada («yā pubbe bodhisattānaṃ … dhuvaṃ buddho bhavissasi»): aunque se da, es de alcance escaso (appavisaya) y no cuenta; o tómese como inversión de género (liṅgavipallāsa).",
+        "en": "By this sutta, after the a of the neuter, yo becomes ni; then “yosu kata-”. The explanation opens with “akārānta, neuter, citta, sabbanāma”: although the sutta prescribes a fixed ni, “Sabbayonīnam ā e” would turn ni into ā and e; the sutta could be dispensed with, but it is stated to show that ni → ā, e occurs only in a few suddhanāmas and never in the sabbanāmas, which, being visesanas, keep ni to show the gender of the visesya. It quotes an unattributed stanza (“yā pubbe bodhisattānaṃ … dhuvaṃ buddho bhavissasi”): though it occurs, it is of narrow scope (appavisaya) and does not count; or take it as an inversion of gender (liṅgavipallāsa)."
+      }
+    },
+    {
+      "n": 219,
+      "pdf": 190,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "citta + si → cittaṃ; asaddhaṃ",
+      "nota": {
+        "es": "No hay explicación (ခ). Por este sutta, tras la a del neutro, si se hace aṃ. Tras el encabezado, entre paréntesis: akārānta, citta, sabbanāma.",
+        "en": "There is no explanation (ခ). By this sutta, after the a of the neuter, si becomes aṃ. After the heading, in brackets: akārānta, citta, sabbanāma."
+      }
+    },
+    {
+      "n": 220,
+      "pdf": 190,
+      "clase": "",
+      "roles": [
+        [
+          "nimitta",
+          "sesato",
+          "",
+          "5"
+        ],
+        [
+          "kāriyī",
+          "go, si",
+          ""
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "purisa + si (ga) → bho purisa, purisā; rāja-; bhotī, kattī + si → bhoti katti; kattī + si → sā kattī",
+      "nota": {
+        "es": "El libro no nombra el kāriya. La explicación abre con la división en pada: sesato, lopaṃ, go, si, api (pañcapadaṃ); kāriyī: gasi = go + si, por «Lopañ ca tatrākāro». bho purisa, purisā: por «akārapitā-», a causa de ga, a → ā; por «ākāro vā», ā → breve, o no, porque el vā lo impide; por este sutta, se elide ga. rāja-: «etc., igual». bhoti katti: pī → pi por «jhalapā rassaṃ-»; se elide ga. sā kattī: ante si, pī debería abreviarse, pero lo impide el «api» de «na sismiṃ-»; se elide si. Ninguna es contraejemplo. Alcance de sesato: los 14 suttas desde «so» hasta «si»; entran pu, gu, pumā, rājā, citta, kiṃ (algunos) y los sabbanāma salvo amu, en los tres géneros. Cierra con una cita de la Rūpasiddhi sobre la mención expresa de ga, pendiente de cotejo con la edición.",
+        "en": "The book does not name the kāriya. The explanation opens with the division into padas: sesato, lopaṃ, go, si, api (pañcapadaṃ); kāriyī: gasi = go + si, by “Lopañ ca tatrākāro”. bho purisa, purisā: by “akārapitā-”, because of ga, a → ā; by “ākāro vā”, ā → short, or not, because vā prevents it; by this sutta, ga is elided. rāja-: “etc., likewise”. bhoti katti: pī → pi by “jhalapā rassaṃ-”; ga is elided. sā kattī: before si, pī should be shortened, but the “api” of “na sismiṃ-” prevents it; si is elided. None is a counterexample. Scope of sesato: the 14 suttas from “so” to “si”; they cover pu, gu, pumā, rājā, citta, kiṃ (some) and the sabbanāmas except amu, in the three genders. It closes with a quotation from the Rūpasiddhi on the express mention of ga, pending collation with the edition."
+      }
+    },
+    {
+      "n": 221,
+      "pdf": 191,
+      "clase": "",
+      "roles": [
+        [
+          "nimitta",
+          "āvuso …pa… dīhi",
+          "",
+          "3"
+        ],
+        [
+          "kāriyī",
+          "sabbāsaṃ",
+          ""
+        ],
+        [
+          "kāriya",
+          "lopo",
+          ""
+        ],
+        [
+          "visesana",
+          "ca",
+          ""
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "āvuso + si, yo (အာ) → āvuso",
+      "nota": {
+        "es": "Por este sutta se eliden la si y la yo que siguen al nipāta āvuso. El kāriya, lopo, no está en el enunciado. La explicación: āvuso se nombra aparte por ser un nipāta especial (anaññasattāvacara, sāsanappasiddha); los upasagga del grupo pādi son veinte («ဥပသာရ» es palabra birmana venida del sánscrito: no se le haga vigraha como si fuera pāḷi); los nipāta del grupo cādi son muchos; cita la Rūpasiddhi («ādisaddena kvaci suttapadādīhi ca»); el visesana ca recoge el cādi principal (ca, vā…) y el derivado (sva, anto, pāto…). El resto de la explicación (PDF 191–195), lectura de un solo lector, sin verificar: svādi vācaka y cādi jotaka; el abyaya y su estrofa («sadisaṃ tīsu liṅgesu … yaṃ na byeti tad abyayaṃ»); pakati-abyaya y vikati-abyaya; la definición del upasagga, jotaka y no vācaka; combinaciones de uno a cuatro upasagga (vihāro, byavahāro, subyavahāro, samabhibyavahāro); los veinte upasagga con sus sentidos, en una tabla; abhi en abhidhamma, con citas de la Aṭṭhasālinī y de la Mūlaṭīkā.",
+        "en": "By this sutta the si and the yo that follow the nipāta āvuso are elided. The kāriya, lopo, is not in the wording. The explanation: āvuso is named separately as a special nipāta (anaññasattāvacara, sāsanappasiddha); the upasaggas of the pādi group are twenty («ဥပသာရ» is a Burmese word from Sanskrit: do not analyse it as if it were Pāḷi); the nipātas of the cādi group are many; it quotes the Rūpasiddhi (“ādisaddena kvaci suttapadādīhi ca”); the visesana ca gathers the primary cādi (ca, vā…) and the derived one (sva, anto, pāto…). The rest of the explanation (PDF 191–195), a single reader's reading, unverified: svādi as vācaka and cādi as jotaka; the abyaya and its stanza (“sadisaṃ tīsu liṅgesu … yaṃ na byeti tad abyayaṃ”); pakati-abyaya and vikati-abyaya; the definition of the upasagga, jotaka and not vācaka; combinations of one to four upasaggas (vihāro, byavahāro, subyavahāro, samabhibyavahāro); the twenty upasaggas with their senses, in a table; abhi in abhidhamma, with quotations from the Aṭṭhasālinī and the Mūlaṭīkā."
+      }
+    },
+    {
+      "n": 222,
+      "pdf": 195,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "puma + liṅgaṃ → pulliṅgaṃ; puma + bhāvo → pumbhāvo; puma + kokilo → puṅkokilo; puma + napuṃsakaṃ → punnapuṃsakaṃ; puma + gavo → puṅgavo",
+      "nota": {
+        "es": "No hay explicación (ခ). pulliṅgaṃ: por este sutta, a causa de liṅga, se elide la a de puma; la m se hace niggahīta por «aṃmo niggahītaṃ-» y, por el «vā» de «vagganta vā-», el niggahīta se hace l. Las demás, igual: por «vagganta-» se hace la nasal del grupo. El encabezado del libro imprime 2.3.12 (pariccheda III), entre 2.4.11 y 2.4.13.",
+        "en": "There is no explanation (ခ). pulliṅgaṃ: by this sutta, because of liṅga, the a of puma is elided; the m becomes niggahīta by “aṃmo niggahītaṃ-” and, by the “vā” of “vagganta vā-”, the niggahīta becomes l. The others likewise: by “vagganta-” the nasal of the group is made. The book's heading prints 2.3.12 (pariccheda III), between 2.4.11 and 2.4.13."
+      }
+    },
+    {
+      "n": 223,
+      "pdf": 195,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "itthī + aṃ → itthiyaṃ; itthī + aṃ → itthiṃ (vā)",
+      "nota": {
+        "es": "No hay explicación (ခ). itthiyaṃ (pa): por este sutta, aṃ tras pī se hace yaṃ; luego, por el «ca» de «pasaññassa ca», en el sutta de la abreviación, a causa de aṃ, pī se hace «ဣယ»; se elide, se une. itthiṃ: el vā lo impide; se forma por el sutta de la abreviación y «aṃmo-»; va impresa con i breve y la segmentación con ī larga. El modelo cierra con «(temas en ī; ratti, nadī [impreso «နဒါ»] y «ဂဟံ»)», la voz sin identificar de §216.",
+        "en": "There is no explanation (ခ). itthiyaṃ (pa): by this sutta, aṃ after pī becomes yaṃ; then, by the “ca” of “pasaññassa ca”, in the sutta of shortening, because of aṃ, pī becomes «ဣယ»; elision, joining. itthiṃ: vā prevents it; it is formed by the sutta of shortening and “aṃmo-”; it is printed with short i and the segmentation with long ī. The model closes with “(stems in ī; ratti, nadī [printed «နဒါ»] and «ဂဟံ»)”, the unidentified word of §216."
+      }
+    },
+    {
+      "n": 224,
+      "pdf": 195,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "daṇḍī + aṃ → daṇḍinaṃ; nidhi + aṃ → nidhinaṃ; bandhu + aṃ → ādiccabandhunaṃ",
+      "nota": {
+        "es": "No hay explicación (ခ). daṇḍinaṃ: jha; se abrevia (forma impresa con i breve, segmentación con ī larga); por este sutta, tras el jha ya abreviado, aṃ se hace naṃ. La segunda forma con «*», contraejemplo del vā, no se da aquí por una diferencia de lectura. nidhinaṃ y ādiccabandhunaṃ no son contraejemplos: salen de «naṃ jhato» partido en dos (ဒွိဓာသုတ်), tras jha y la breves por sí mismos; ādiccabandhunaṃ, en «buddhaṃ ādiccabandhunaṃ», con segmentación solo del último miembro. Tras nidhinaṃ, sin obra nombrada: «nidhinaṃ va pavattāraṃ, yaṃ passe vajjadassinaṃ».",
+        "en": "There is no explanation (ခ). daṇḍinaṃ: jha; shortened (form printed with short i, segmentation with long ī); by this sutta, after the already shortened jha, aṃ becomes naṃ. The second form with “*”, the counterexample of vā, is not given here because the readings differ. nidhinaṃ and ādiccabandhunaṃ are not counterexamples: they come from “naṃ jhato” split in two (ဒွိဓာသုတ်), after jha and la that are short of themselves; ādiccabandhunaṃ, in “buddhaṃ ādiccabandhunaṃ”, with segmentation of the last member only. After nidhinaṃ, unattributed: “nidhinaṃ va pavattāraṃ, yaṃ passe vajjadassinaṃ”."
+      }
+    },
+    {
+      "n": 225,
+      "pdf": 196,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "daṇḍī + yo → daṇḍino; sāramati + yo → sāramatino",
+      "nota": {
+        "es": "daṇḍino: jha; se abrevia (forma impresa con i breve, segmentación con ī larga); por este sutta, tras el jha ya abreviado, yo se hace no. sāramatino no es contraejemplo: por el vinādhikāra de «yonaṃ no», tras el jha no abreviado, yo se hace no. La explicación: el procedimiento del yogavibhāga se obtiene solo en el samāsa bahubbīhi; en Moggallāna, tras jhi y jhī, la yo de «ပ-» se hace no, y la de «ဒု-», no y ne; aquí no se hace, por ser de alcance escaso (appavisaya).",
+        "en": "daṇḍino: jha; shortened (form printed with short i, segmentation with long ī); by this sutta, after the already shortened jha, yo becomes no. sāramatino is not a counterexample: by the vinādhikāra of “yonaṃ no”, after a jha that is not shortened, yo becomes no. The explanation: the yogavibhāga procedure applies only in the bahubbīhi samāsa; in Moggallāna, after jhi and jhī, the yo of «ပ-» becomes no, and that of «ဒု-», no and ne; it is not done here, being of narrow scope (appavisaya)."
+      }
+    },
+    {
+      "n": 226,
+      "pdf": 196,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "daṇḍī + smiṃ → daṇḍini; daṇḍimhi (vā)",
+      "nota": {
+        "es": "daṇḍini: jha; se abrevia; por este sutta, smiṃ se hace ni (forma impresa con i breve, segmentación con ī larga). daṇḍimhi: el vā lo impide; el enunciado no lo lleva y el libro no dice de dónde viene. La explicación: en los versos «phalaṃ patati ambuni …» y «… pupphaṃ yathā paṃsuni ātape kataṃ», citados sin obra, ambuni (ambu + smiṃ) y paṃsuni (paṃsu + smiṃ) se forman por el vinādhikāra; Moggallāna llama ambādi a las palabras con smiṃ → ni; en el bahubbīhi, tras jhi y jhī, se hace ne.",
+        "en": "daṇḍini: jha; shortened; by this sutta, smiṃ becomes ni (form printed with short i, segmentation with long ī). daṇḍimhi: vā prevents it; the wording does not have it and the book does not say where it comes from. The explanation: in the verses “phalaṃ patati ambuni …” and “… pupphaṃ yathā paṃsuni ātape kataṃ”, quoted without naming the work, ambuni (ambu + smiṃ) and paṃsuni (paṃsu + smiṃ) are formed by the vinādhikāra; Moggallāna calls the words with smiṃ → ni ambādi; in the bahubbīhi, after jhi and jhī, ne is made."
+      }
+    },
+    {
+      "n": 227,
+      "pdf": 196,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "kiṃ + (အဘယ်၌, တို့၌) → kva; kiṃ + si → ko",
+      "nota": {
+        "es": "No hay explicación (ခ). La segmentación de kva lleva dentro la glosa birmana «en qué, en cuáles». kva: por «kiṃsmā vo-», en sentido de lugar, va tras kiṃ; por «tvādayo-», va recibe el nombre de sattamī; por este sutta, a causa de va, kiṃ se hace ka; por «tesu vuddhi-», se elide la a de ka. ko no es contraejemplo: por el «ca», a causa de si, kiṃ se hace ka; se forma por «so». Cierra con «calcúlese el resto» y los rasgos: niggahītanta, tres géneros, sabbanāma-gaṇa.",
+        "en": "There is no explanation (ခ). The segmentation of kva carries the Burmese gloss “in what, in which (pl.)” inside it. kva: by “kiṃsmā vo-”, in the sense of place, va follows kiṃ; by “tvādayo-”, va takes the name sattamī; by this sutta, because of va, kiṃ becomes ka; by “tesu vuddhi-”, the a of ka is elided. ko is not a counterexample: by the “ca”, because of si, kiṃ becomes ka; it is formed by “so”. It closes with “work out the rest” and the features: niggahītanta, three genders, sabbanāma-gaṇa."
+      }
+    },
+    {
+      "n": 228,
+      "pdf": 196,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "kiṃ + (အဘယ်၌) → kuhiṃ",
+      "nota": {
+        "es": "No hay explicación (ခ). La segmentación lleva dentro la glosa birmana «en qué». Por «hiṃhaṃhiñcanaṃ», en sentido de lugar, hiṃ tras kiṃ; por «tvādayo-», hiṃ recibe el nombre de sattamī; por este sutta, a causa de hiṃ, kiṃ se hace ku. El libro no da ejemplo de kuhaṃ ni dice nada del «ca».",
+        "en": "There is no explanation (ခ). The segmentation carries the Burmese gloss “in what” inside it. By “hiṃhaṃhiñcanaṃ”, in the sense of place, hiṃ follows kiṃ; by “tvādayo-”, hiṃ takes the name sattamī; by this sutta, because of hiṃ, kiṃ becomes ku. The book gives no example of kuhaṃ and says nothing of the “ca”."
+      }
+    },
+    {
+      "n": 229,
+      "pdf": 197,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "El sutta no tiene modelo (က): tras el encabezado viene directamente la explicación, que dice entera: «Ettha ca ‘kissa ka ve cā’ ti sutte ca-saddena va-ppaccayāvasiṭṭha-thamādi-paccayānaṃ gahitattā sesaggahaṇena vibhattiyo va gayhante», y «ကစ္စည်းဝုတ္တိသို့ မလိုက်» («no sigue a la Kaccāyana-vutti»).",
+        "en": "The sutta has no model (က): the heading is followed directly by the explanation, which reads in full: “Ettha ca ‘kissa ka ve cā’ ti sutte ca-saddena va-ppaccayāvasiṭṭha-thamādi-paccayānaṃ gahitattā sesaggahaṇena vibhattiyo va gayhante”, and «ကစ္စည်းဝုတ္တိသို့ မလိုက်» (“it does not follow the Kaccāyana-vutti”)."
+      }
+    },
+    {
+      "n": 230,
+      "pdf": 197,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "kiṃ + (အဘယ်၌) → kutra; kiṃ + (အဘယ်မှ) → kuto; kiṃ + (အဘယ်၌) → kuttha",
+      "nota": {
+        "es": "No hay explicación (ခ). Las segmentaciones llevan la glosa birmana («en qué», «de qué»). kutra: por «tratha sattamiyā-», en sentido de lugar, tra tras el sabbanāma kiṃ, con el nombre de sattamī; por este sutta, a causa de tra, kiṃ se hace ku. kuto: por «kvaci to pañcamyatthe-», en sentido de apādāna, to (pañcamī); kiṃ → ku. kuttha: por «tratha sattamiyā-», tha; kiṃ → ku; se duplica. Ninguna es contraejemplo. El libro no dice nada del «ca».",
+        "en": "There is no explanation (ခ). The segmentations carry the Burmese gloss (“in what”, “from what”). kutra: by “tratha sattamiyā-”, in the sense of place, tra after the sabbanāma kiṃ, with the name sattamī; by this sutta, because of tra, kiṃ becomes ku. kuto: by “kvaci to pañcamyatthe-”, in the sense of apādāna, to (pañcamī); kiṃ → ku. kuttha: by “tratha sattamiyā-”, tha; kiṃ → ku; doubling. None is a counterexample. The book says nothing of the “ca”."
+      }
+    },
+    {
+      "n": 231,
+      "pdf": 197,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "eta + to → ato; etā + to → ato; eta, etā + tha → attha; eta, etā + to → etto (vā); ettha",
+      "nota": {
+        "es": "No hay explicación (ခ). ato: por este sutta, todo eta (y etā, a causa de to) se hace a. attha: igual, y se duplica. etto: el vā lo impide; por «tesu vuddhi-» se elide la vocal final de eta (etā) y a la t se une to; y, entre paréntesis, por «E, tothesu, ca», etā se hace e y se duplica. ettha: igual. Ese paréntesis cita entero el enunciado de §233, que el libro no encabeza aparte (véase §233).",
+        "en": "There is no explanation (ခ). ato: by this sutta, the whole of eta (and etā, because of to) becomes a. attha: likewise, with doubling. etto: vā prevents it; by “tesu vuddhi-” the final vowel of eta (etā) is elided and to is joined to the t; and, in brackets, by “E, tothesu, ca”, etā becomes e, with doubling. ettha: likewise. That parenthesis quotes in full the wording of §233, which the book does not give a heading of its own (see §233)."
+      }
+    },
+    {
+      "n": 232,
+      "pdf": 197,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "eta, etā + tra → atra",
+      "nota": {
+        "es": "No hay explicación (ခ). Por este sutta, a causa de tra, eta y etā se hacen a. Sin contraejemplo.",
+        "en": "There is no explanation (ခ). By this sutta, because of tra, eta and etā become a. No counterexample."
+      }
+    },
+    {
+      "n": 233,
+      "pdf": 197,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "",
+      "nota": {
+        "es": "El libro no tiene encabezado para este sutta. El hueco está en PDF 197, entre «(၂၃၂)» y «(၂၃၃)»: solo el modelo de §232 y un blanco (las dos lecturas). La numeración del pariccheda salta de 2.4.22 a 2.4.23 (= §234), y desde aquí el número del libro es uno menos que el §. El texto de la columna Sutta es el enunciado de Kaccāyana según Nandisena, no del libro.",
+        "en": "The book has no heading for this sutta. The gap is on PDF 197, between «(၂၃၂)» and «(၂၃၃)»: only the model of §232 and a blank (both readings). The pariccheda numbering jumps from 2.4.22 to 2.4.23 (= §234), and from here on the book's number is one less than the §. The text in the Sutta column is Kaccāyana's wording as given by Nandisena, not the book's."
+      }
+    },
+    {
+      "n": 234,
+      "pdf": 197,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "ima + thaṃ → itthaṃ; ima + dāni → idāni; ima + ha → iha; ima + to → ito; ima + dha → idha",
+      "nota": {
+        "es": "No hay explicación (ခ). En el libro, nº 233 (2.4.23); la primera letra del encabezado no la fijan las lecturas y no se da aquí. itthaṃ, glosado «ayaṃ pakāro»: por este sutta, a causa de thaṃ, ima se hace i. idāni: a causa de dāni, ima se hace i; luego «por el “sutta grande” se elide la i; queda dāni», sin decir qué sutta es. iha: a causa de ha, ima se hace i. ito, idha: igual.",
+        "en": "There is no explanation (ခ). In the book, no. 233 (2.4.23); the first letter of the heading is not settled by the readings and is not given here. itthaṃ, glossed “ayaṃ pakāro”: by this sutta, because of thaṃ, ima becomes i. idāni: because of dāni, ima becomes i; then “by the ‘great sutta’ the i is elided; dāni remains”, without saying which sutta that is. iha: because of ha, ima becomes i. ito, idha: likewise."
+      }
+    },
+    {
+      "n": 235,
+      "pdf": 198,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "ima + dhunā → adhunā",
+      "nota": {
+        "es": "No hay explicación (ခ). En el libro, nº 234. Por este sutta, a causa de dhunā, ima se hace a. El libro no comenta el «ca» del enunciado.",
+        "en": "There is no explanation (ခ). In the book, no. 234. By this sutta, because of dhunā, ima becomes a. The book does not comment on the “ca” of the wording."
+      }
+    },
+    {
+      "n": 236,
+      "pdf": 198,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "ima + rahi → etarahi",
+      "nota": {
+        "es": "No hay explicación (ခ). En el libro, nº 235. Por este sutta, a causa de rahi, ima se hace eta. El libro imprime el enunciado «Eta rahimhi ca», con un «ca» que no comenta.",
+        "en": "There is no explanation (ခ). In the book, no. 235. By this sutta, because of rahi, ima becomes eta. The book prints the wording “Eta rahimhi ca”, with a “ca” it does not comment on."
+      }
+    },
+    {
+      "n": 237,
+      "pdf": 198,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "saddha, kañña+ → saddhā, kaññā",
+      "nota": {
+        "es": "En el libro, nº 236. Una sola segmentación para las dos formas, sin sufijo tras «+». Por este sutta, tras la a, en femenino, se pone ā —ā que hace manifiesto (jotaka)—, o, tras la a, en sentido de femenino —ā que expresa (vācaka)—; se elide, se une; por el «ca» de «taddhita-», cuenta como nāma. La explicación: saddhā muestra que ā es fija tras un tema que también es masculino (bhāsitapuma), y kaññā, tras uno solo femenino (niyatitthiliṅga); no es fija tras bhāsitapuma, tras los temas en man (dāmā, pāmā, sīmā…) ni tras los bahubbīhi en an (yuva, puma, rāja, brahma…), donde a veces entra ī; sí lo es tras tabba, anīya y ta, aunque sean bhāsitapuma; los temas en tā de sentido bhāva, saka y samūha son femeninos por naturaleza.",
+        "en": "In the book, no. 236. A single segmentation for both forms, with no suffix after “+”. By this sutta, after the a, in the feminine, ā is added —ā that makes manifest (jotaka)—, or, after the a, in the sense of the feminine —ā that expresses (vācaka)—; elision, joining; by the “ca” of “taddhita-”, it counts as nāma. The explanation: saddhā shows that ā is fixed after a stem that is also masculine (bhāsitapuma), and kaññā, after one that is only feminine (niyatitthiliṅga); it is not fixed after bhāsitapuma, after stems in man (dāmā, pāmā, sīmā…) or after bahubbīhis in an (yuva, puma, rāja, brahma…), where ī sometimes comes in; it is fixed after tabba, anīya and ta, even when bhāsitapuma; stems in tā in the sense of bhāva, saka and samūha are feminine by nature."
+      }
+    },
+    {
+      "n": 238,
+      "pdf": 198,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "nada + ī → nadī; mahī; puthu + ī → pathavī; go+ → gāvī",
+      "nota": {
+        "es": "En el libro, nº 237. nadī: por este sutta, tras el femenino nada, se pone ī; se elide, se une; mahī, igual. pathavī y gāvī no son contraejemplos: según la explicación, los dos primeros modelos son palabras del grupo nadādi y los dos últimos, de fuera (anadādi), que toman ī por el «vā». pathavī: por el «ca» de «o sare ca», ante ī, u se hace ava; por «tesu vuddhi-», la u de pu se hace a (en ese paso el libro imprime «ပ်၏»). gāvī: por «tesu vuddhi-», ante ī, la o de go se hace āva. La explicación añade: las nadādi del sánscrito se darán en el nāma-gaṇa; según los textos mundanos, un río mide 1008 × 4 «တာ» de largo; el Piṭaka no da medida, y es río la corriente que moja el hábito de la bhikkhunī que la cruza (el sentido de una palabra del pasaje es inseguro); mahī, con ī, es la tierra o el río Mahī de Mālava; mahi, con i, solo la tierra.",
+        "en": "In the book, no. 237. nadī: by this sutta, after the feminine nada, ī is added; elision, joining; mahī, likewise. pathavī and gāvī are not counterexamples: according to the explanation, the first two models are words of the nadādi group and the last two, words outside it (anadādi), which take ī by the “vā”. pathavī: by the “ca” of “o sare ca”, before ī, u becomes ava; by “tesu vuddhi-”, the u of pu becomes a (at that step the book prints «ပ်၏»). gāvī: by “tesu vuddhi-”, before ī, the o of go becomes āva. The explanation adds: the Sanskrit nadādi will be given in the nāma-gaṇa; according to worldly texts, a river is 1008 × 4 «တာ» long; the Piṭaka gives no measure, and a river is a stream that wets the robe of a bhikkhunī crossing it (the sense of one word in the passage is uncertain); mahī, with ī, is the earth or the river Mahī of Mālava; mahi, with i, only the earth."
+      }
+    },
+    {
+      "n": 239,
+      "pdf": 199,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "mānava + (manuno + apaccaṃ) → mānavī; nāvika + (ṇika) → nāvikī; venateyya + (ṇeyya) → venateyyī; gotama + (ṇa) → gotamī; guṇavantu+ → guṇavatī; vajanta + (nta) → vajantī; vajantā (vā)",
+      "nota": {
+        "es": "En el libro, nº 238. mānavī: por este sutta, tras el femenino mānava, acabado en el sufijo ṇava, se pone ī; igual con los demás sufijos, que los paréntesis de las segmentaciones nombran. guṇavatī: ntu se hace ta por «ntussa ta-». vajantā: el vā lo impide; se pone ā. La explicación (PDF 199–202) es un tratado de los femeninos en ī, sin obra nombrada: un verso que define jāti («ākatiggahaṇā jāti …») y ejemplos por clase (mānusī, migī, haṃsī; brāhmaṇī; vāseṭṭhī, gotamī…); cuándo no se pone ī (jāti secundaria, como en bahumigā bhūmi; femeninos fijos; penúltima y: vessā, khattiyā); un verso que define guṇa y los temas en u de cualidad (mudvī, paṭvī); ī opcional tras pāda en compuesto, el soṇādi-gaṇa, los svaṅga (con su verso) y los temas en kta; pakkha tras upamāna; ī tras palabras de «esposa» (gopī); y no tras man, numerales, el svasādi ni el ajādi. Los versos no se han cotejado letra a letra.",
+        "en": "In the book, no. 238. mānavī: by this sutta, after the feminine mānava, ending in the suffix ṇava, ī is added; likewise with the other suffixes, which the brackets of the segmentations name. guṇavatī: ntu becomes ta by “ntussa ta-”. vajantā: vā prevents it; ā is added. The explanation (PDF 199–202) is a treatise on feminines in ī, without naming a work: a verse defining jāti (“ākatiggahaṇā jāti …”) and examples by class (mānusī, migī, haṃsī; brāhmaṇī; vāseṭṭhī, gotamī…); when ī is not added (secondary jāti, as in bahumigā bhūmi; fixed feminines; penultimate y: vessā, khattiyā); a verse defining guṇa, and stems in u denoting a quality (mudvī, paṭvī); optional ī after pāda in a compound, the soṇādi-gaṇa, the svaṅgas (with their verse) and stems in kta; pakkha after upamāna; ī after words for “wife” (gopī); and not after man, numerals, the svasādi or the ajādi. The verses have not been collated letter by letter."
+      }
+    },
+    {
+      "n": 240,
+      "pdf": 202,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "gahapatānī; bhikkhunī; rāja+ → rājinī; vidū+ → vidunī; viññū+ → viññunī; yakkha, sīha+ → yakkhinī, sīhinī",
+      "nota": {
+        "es": "En el libro, nº 239. gahapatānī: por este sutta, tras pati en femenino, se pone inī; remite a otro sutta. bhikkhunī: remite a «saralopo-». rājinī: inī; se elide, se une. vidunī, viññunī, yakkhinī, sīhinī no son contraejemplos: se forman «por el vā» (inī; se elide la i y se abrevia la ū), aunque el enunciado no lleva vā y el libro no dice de dónde viene; vidunī y viññunī van impresas con u breve y la segmentación con ū larga. La explicación: hatthinī abarca los temas en ī que también son masculinos; en sánscrito no hay inī, sino el sufijo «in»; Moggallāna forma gahapatānī, mātulānī con ānī y vidūnī, viññūnī, bhikkhunī con nī; yakkhinī, sīhinī: inī en pocos casos. Sigue el sufijo ū del sánscrito: tras temas en u de casta humana o de especie (kurū, kakkandhū), no tras penúltima y ni en el grupo rajju; en Kaccāyana, brāhmaṇabandhu- y khattiyabandhu- pierden la ū por tratarse como masculinos; ū en bahubbīhi tras ūru (vāmorū, lakkhaṇorū), no en kammadhāraya; a veces tras el grupo tanu (sutanū); siempre en bhaddabāhū, kamaṇḍalū, kadrū («madre de los nāga») y sassū («suegra»).",
+        "en": "In the book, no. 239. gahapatānī: by this sutta, after pati in the feminine, inī is added; it refers to another sutta. bhikkhunī: it refers to “saralopo-”. rājinī: inī; elision, joining. vidunī, viññunī, yakkhinī, sīhinī are not counterexamples: they are formed “by the vā” (inī; the i is elided and the ū shortened), although the wording has no vā and the book does not say where it comes from; vidunī and viññunī are printed with short u and the segmentation with long ū. The explanation: hatthinī covers stems in ī that are also masculine; in Sanskrit there is no inī, but the suffix “in”; Moggallāna forms gahapatānī, mātulānī with ānī, and vidūnī, viññūnī, bhikkhunī with nī; yakkhinī, sīhinī: inī in a few cases. Then the Sanskrit suffix ū: after stems in u denoting a human caste or a species (kurū, kakkandhū), not after a penultimate y nor in the rajju group; in Kaccāyana, brāhmaṇabandhu- and khattiyabandhu- lose the ū by being treated as masculine; ū in a bahubbīhi after ūru (vāmorū, lakkhaṇorū), not in a kammadhāraya; sometimes after the tanu group (sutanū); always in bhaddabāhū, kamaṇḍalū, kadrū (“mother of the nāgas”) and sassū (“mother-in-law”)."
+      }
+    },
+    {
+      "n": 241,
+      "pdf": 203,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "guṇavantu + ī → guṇavatī; gacchanta + ī → gacchatī; guṇavantu + ī → guṇavantī (vā); gacchantī (vā)",
+      "nota": {
+        "es": "No hay explicación (ခ). En el libro, nº 240. guṇavatī: por este sutta, a causa de ī, ntu se hace t; se elide, se une. gacchatī: por «sesesu ntuva», nta se hace ntu; luego, igual. guṇavantī, gacchantī: el vā lo impide (el enunciado no lo lleva; el libro no dice de dónde viene); por el «ca» de «ntussa nto yosu ca», la u de ntu se hace a; se elide, se une; «también puede unirse elidiendo la u».",
+        "en": "There is no explanation (ခ). In the book, no. 240. guṇavatī: by this sutta, because of ī, ntu becomes t; elision, joining. gacchatī: by “sesesu ntuva”, nta becomes ntu; then likewise. guṇavantī, gacchantī: vā prevents it (the wording does not have it; the book does not say where it comes from); by the “ca” of “ntussa nto yosu ca”, the u of ntu becomes a; elision, joining; “it may also be joined by eliding the u”."
+      }
+    },
+    {
+      "n": 242,
+      "pdf": 204,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "bhavanta + ī → bhotī; bhotī + si (ga) → bhoti",
+      "nota": {
+        "es": "No hay explicación (ခ). En el libro, nº 241. bhotī: por este sutta, a causa de ī, bhavanta se hace bhota; se elide, se une. bhoti: por «jhalapā rassaṃ», a causa de ga, pī se abrevia; por «sesato», se elide ga.",
+        "en": "There is no explanation (ခ). In the book, no. 241. bhotī: by this sutta, because of ī, bhavanta becomes bhota; elision, joining. bhoti: by “jhalapā rassaṃ”, because of ga, pī is shortened; by “sesato”, ga is elided."
+      }
+    },
+    {
+      "n": 243,
+      "pdf": 204,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "bhavanta + si (ga) → bho; bhavanta + si (ga) → bhante … bhaddante (၉-ရုပ်); bhavanta + yo (အာ) → bhante … bhaddantā (၅-ရုပ်); bhavanta + yo (လိင်) → bhonto … bhaddantā (၄-ရုပ်); bhavanta + yo (ဒု) → bhonte … bhaddante (၃-ရုပ်)",
+      "nota": {
+        "es": "En el libro, nº 242. bho: por este sutta, a causa de ga, bhavanta se hace bho; por «sesato-», se elide ga. Las demás no son contraejemplos: salen del «tu» del sutta (a causa de yo, bhavanta junto con yo se hace bhante, etc.); el libro las abrevia en grupos de nueve, cinco, cuatro y tres formas, y no se enumeran aquí. Cierre del modelo: bhotā, bhoto solo muestran el método; fórmense como gacchanta, etc. La explicación: bho y bhante son nipāta del vocativo en los dos números; bhadanta y bhaddanta se declinan como purisa; bhonta es otra palabra, del grupo gacchantādi, formada sin hacer ava la o; el cuerpo del sutta y su «tu» se dicen para mostrar cómo se intercambian los sinónimos (pariyāya-sadda).",
+        "en": "In the book, no. 242. bho: by this sutta, because of ga, bhavanta becomes bho; by “sesato-”, ga is elided. The others are not counterexamples: they come from the “tu” of the sutta (because of yo, bhavanta together with yo becomes bhante, etc.); the book abbreviates them in groups of nine, five, four and three forms, which are not listed here. Close of the model: bhotā, bhoto only show the method; form them like gacchanta, etc. The explanation: bho and bhante are vocative nipātas in both numbers; bhadanta and bhaddanta are declined like purisa; bhonta is a separate word, of the gacchantādi group, formed without turning the o into ava; the body of the sutta and its “tu” are stated to show how synonyms (pariyāya-sadda) interchange."
+      }
+    },
+    {
+      "n": 244,
+      "pdf": 204,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "purisa + si (ga) → bho purisā; pitu, mātu + si (ga) → bho pitā, bhoti mātā",
+      "nota": {
+        "es": "En el libro, nº 243. purisā: por este sutta, a causa de ga, la a del tema en a purisa se hace ā; se elide ga. pitā, mātā: a causa de ga, la u de pitu y de mātu, del grupo pitādi, se hace ā; se elide ga. La explicación, dos frases cuyo sentido no se ha fijado: por «akāra», mano, pu, gu, pumā, «ဂစ်», rājā y «စိတ်»; por «pitādi», los que suben al grupo pitādi, junto con «သတ္ထာဒိဂိုဏ်းမ ယူ» (grupo satthādi).",
+        "en": "In the book, no. 243. purisā: by this sutta, because of ga, the a of the a-stem purisa becomes ā; ga is elided. pitā, mātā: because of ga, the u of pitu and of mātu, of the pitādi group, becomes ā; ga is elided. The explanation, two sentences whose sense has not been settled: by “akāra”, mano, pu, gu, pumā, «ဂစ်», rājā and «စိတ်»; by “pitādi”, those that rise into the pitādi group, together with «သတ္ထာဒိဂိုဏ်းမ ယူ» (satthādi group)."
+      }
+    },
+    {
+      "n": 245,
+      "pdf": 205,
+      "clase": "",
+      "roles": [],
+      "anuvatti": "",
+      "ejemplo": "daṇḍī, sukhakārī, sayambhū, gotrabhū, itthī, vadhū + si (ga) → bho daṇḍi, sukhakāri, sayambhu, gotrabhu; bhoti itthi, vadhu",
+      "nota": {
+        "es": "En el libro, nº 244. Una sola segmentación para las seis; las formas, con vocal breve, y la segmentación, con larga. Por este sutta, a causa de ga, jhī, lū, pī, pū se abrevian en jhi, lu, pi, pu. La explicación: por jha y la se entienden i, ī, u, ū de masculino y neutro; por pa, ivaṇṇa, uvaṇṇa, femenino, ratti, «နဒါ» y «ဂဟံ» (la voz sin identificar de §216); por «rassaṃ» se sabe que i, u breves no están entre los kāriyī; el sutta de la abreviación restringe (niyama) los kāriyī que se tratan ante ga. Y, lectura de un solo lector, sin verificar: «además, en la o se forman bho, go».",
+        "en": "In the book, no. 244. A single segmentation for the six; the forms with a short vowel, the segmentation with a long one. By this sutta, because of ga, jhī, lū, pī, pū are shortened to jhi, lu, pi, pu. The explanation: jha and la cover i, ī, u, ū of masculine and neuter; pa, ivaṇṇa, uvaṇṇa, feminine, ratti, «နဒါ» and «ဂဟံ» (the unidentified word of §216); from “rassaṃ” it is known that short i, u are not among the kāriyīs; the sutta of shortening restricts (niyama) the kāriyīs treated before ga. And, a single reader's reading, unverified: “moreover, in the o, bho and go are formed”."
+      }
+    },
+    {
+      "n": 246,
+      "pdf": 205,
+      "clase": "",
+      "roles": [
+        [
+          "kāriyī",
+          "ākāro",
+          ""
+        ]
+      ],
+      "anuvatti": "",
+      "ejemplo": "sā + si (ga) → bho sa; purisa + si (ga) → bho purisa; purisa + si (ga) → bho purisā (vā)",
+      "nota": {
+        "es": "En el libro, nº 245; último sutta del pariccheda IV, que cierra con «စတုတ္ထပိုင်းပြီး၏။», sin fecha. El libro no nombra nimitta ni kāriya. sa: por este sutta, a causa de ga, la ā se hace a, como dan las formas impresas; se elide ga. purisa: por «akārapitā-», a causa de ga, a → ā; por este sutta, ā → a; se elide ga. purisā: el vā lo impide; no se abrevia. La explicación: el kāriyī ākāro abarca la ā natural (pakati-ā) y la derivada (vikati-ā); con la natural, restringe (niyama) ante ga; la ā derivada es el kāriya de «akārapitā-»; alcance: los grupos de los temas en a y los dos grupos «ရတ်, သတ်».",
+        "en": "In the book, no. 245; last sutta of pariccheda IV, which closes with «စတုတ္ထပိုင်းပြီး၏။», undated. The book does not name the nimitta or the kāriya. sa: by this sutta, because of ga, the ā becomes a, as the printed forms give; ga is elided. purisa: by “akārapitā-”, because of ga, a → ā; by this sutta, ā → a; ga is elided. purisā: vā prevents it; there is no shortening. The explanation: the kāriyī ākāro covers the natural ā (pakati-ā) and the derived one (vikati-ā); with the natural one, it restricts (niyama) before ga; the derived ā is the kāriya of “akārapitā-”; scope: the groups of a-stems and the two groups «ရတ်, သတ်»."
       }
     }
   ]
