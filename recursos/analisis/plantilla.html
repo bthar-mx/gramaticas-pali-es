@@ -26,7 +26,7 @@
   --ola:#1A1917;--ola-2:#232220;--ink:#F4F1E8;--soot:#BDB5A2;--hair:#494438;
   --haritala:#EFC14E;--nila:#B6D8EE;--rakta:#F09A88;--shadow:rgba(0,0,0,.45);
   --hover:rgba(255,255,255,.055);--hl:rgba(239,193,78,.20);--chip-k:rgba(182,216,238,.13)}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--barh,74px) + 10px)}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--barh,74px) + var(--cabh,0px) + 10px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.55;
   background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);padding-left:238px;transition:padding-left .2s ease}
@@ -304,7 +304,7 @@ footer a{color:var(--nila)}
   tr.det-row td{padding:0 0 14px}
 }
 @media (prefers-reduced-motion:reduce){.sidebar,body{transition:none}}
-@media print{.tabla-caja{overflow:visible}.bar,.sidebar,#top-btn,.mas,.preg{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
+@media print{.tabla-caja{overflow:visible}.bar,.sidebar,#top-btn,.mas,.preg,.cab-fija{display:none!important}#tabla.tapado thead{opacity:1}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
 
 /* ---- propio de esta página ---- */
 .gl{border-bottom:1px dotted var(--nila);cursor:help}
@@ -336,6 +336,22 @@ details.plegable p{margin:0 0 8px}
    /recursos/comentarios/): si no cabe, se desplaza ella y no la página. */
 .tabla-caja{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:10px 0 40px}
 .tabla-caja:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
+/* Cabecera fija (v0.7): la caja de arriba desplaza en horizontal, y eso hace de
+   ella el contenedor de «position:sticky» de cualquier cosa que lleve dentro:
+   un <thead> fijo dentro de .tabla-caja no se movería nunca. Por eso la fila de
+   encabezados se copia en .cab-fija, que va FUERA de la caja, pegada bajo la
+   barra de mandos (--barh), y que la tapa exactamente en reposo (margen
+   inferior negativo = alto del <thead>). El <thead> real se queda, invisible,
+   para el lector de pantalla y el teclado; los anchos de columna y el
+   desplazamiento horizontal se copian por JS. En pantalla estrecha no hay
+   cabecera (cada fila es una ficha) y la copia no se muestra. */
+.tabla-marco{margin:10px 0 40px}
+.tabla-marco .tabla-caja{margin:0}
+.cab-fija{position:sticky;top:var(--barh,74px);z-index:15;background:var(--ola);overflow-x:auto;scrollbar-width:none}
+.cab-fija::-webkit-scrollbar{display:none}
+.cab-fija table{table-layout:fixed}
+.cab-fija .gl.foco{outline:2px solid var(--haritala);outline-offset:1px}
+#tabla.tapado thead{opacity:0}
 table.an{width:100%;border-collapse:collapse;font-size:14.5px;margin:0}
 table.an thead th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--soot);padding:8px;border-bottom:1px solid var(--soot);vertical-align:bottom}
 table.an td{padding:9px 8px;border-bottom:1px solid var(--hair);vertical-align:baseline}
@@ -364,7 +380,7 @@ tr.sec h2{font-weight:400;font-size:18px;margin:18px 0 2px}
 tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-left:10px}
 @media (max-width:760px){
   table.an,table.an tbody,table.an tr,table.an td{display:block;width:auto}
-  table.an thead{display:none}
+  table.an thead,.cab-fija{display:none}
   table.an tr.r{border-bottom:1px solid var(--soot);padding:8px 0}
   table.an td{border:0;padding:3px 0}
   table.an td.ej{white-space:normal}
@@ -405,11 +421,14 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 </div></div>
 
 <main class="wrap">
+  <div class="tabla-marco">
+  <div class="cab-fija" id="cab-fija" aria-hidden="true"><table class="an"><colgroup></colgroup><thead></thead></table></div>
   <div class="tabla-caja" id="tabla-caja" tabindex="0" role="region">
   <table class="an" id="tabla">
-    <thead><tr><th>§</th><th>Sutta</th><th data-t="h_class">Clase de sutta</th><th>Aṅga</th><th data-t="h_roles">Funciones</th><th data-t="h_ex">Ejemplo</th><th data-t="h_notes">Notas</th><th data-t="h_src">Fuente</th><th></th></tr></thead>
+    <thead><tr><th><span class="gl" tabindex="0" data-g="col:n">§</span></th><th><span class="gl" tabindex="0" data-g="col:su">Sutta</span></th><th><span class="gl" tabindex="0" data-g="col:cl" data-t="h_class">Clase de sutta</span></th><th><span class="gl" tabindex="0" data-g="col:an">Aṅga</span></th><th><span class="gl" tabindex="0" data-g="col:fu" data-t="h_roles">Funciones</span></th><th><span class="gl" tabindex="0" data-g="col:ej" data-t="h_ex">Ejemplo</span></th><th data-t="h_notes">Notas</th><th data-t="h_src">Fuente</th><th></th></tr></thead>
     <tbody id="out"></tbody>
   </table>
+  </div>
   </div>
   <div class="empty" id="empty" hidden><p data-t="empty">Ningún sutta coincide.</p></div>
 </main>
@@ -444,6 +463,15 @@ es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los 
   how:`<p>El § abre el aforismo y su traducción en este sitio; el texto pāḷi del sutta sigue a Nandisena. Las demás columnas proceden del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso), las palabras que enumera como aṅga del sutta, la función de cada palabra y el ejemplo de su modelo de derivación (rup). Donde el libro no da una función, la celda queda vacía.</p><p>En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.</p>`,
   terms:[['kāriyī (kārī)','aquello a lo que se realiza cierto tipo de operación gramatical.'],['kāriya','la operación gramatical que hay que realizar.'],['nimitta','causa. Hay dos clases: en la séptima inflexión (sattamī-nimitta) y en la quinta (pañcamī-nimitta).'],['saññā / saññī','en los suttas de definición, el nombre técnico y lo que recibe ese nombre.'],['visaya / visayī','términos que usa el libro en los suttas de inserción (āgama) y de duplicación, en lugar de kāriyī / kāriya.'],['visesana','calificador de una de las palabras anteriores; va entre corchetes.'],['Aṅga','las palabras que el libro enumera como miembros (aṅga) del sutta, tal como las imprime; pueden ser palabras del propio sutta o suplidas de suttas anteriores. El libro escribe kārī donde esta página dice kāriyī; imprime también bahiraṅga y, una vez, bāhiyaṅga (§83).'],['paribhāsā','tres clases: saññaṅga, anaṅga y vidhyaṅga.']],
   h_class:'Clase de sutta',h_roles:'Funciones',h_ex:'Ejemplo',h_notes:'Notas',h_src:'Fuente',
+  /* globos de los encabezados: trozos de «how», sin definiciones nuevas; si se
+     cambia «how», cámbiense también. «Notas» y «Fuente» no tienen explicación
+     ahí, y no llevan globo. */
+  cols:{n:'El § abre el aforismo y su traducción en este sitio.',
+    su:'El texto pāḷi del sutta sigue a Nandisena.',
+    cl:'Procede del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso).',
+    an:'Procede del libro: las palabras que enumera como aṅga del sutta.',
+    fu:'Procede del libro: la función de cada palabra. Donde el libro no da una función, la celda queda vacía. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.',
+    ej:'Procede del libro: el ejemplo de su modelo de derivación (rup). En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>.'},
   ex:'Ejercicio',show:'ver respuesta',hide:'ocultar respuesta',ans:'Respuesta sugerida (IEBH)',ed:'Añadido editorial del IEBH: inflexión del nimitta, deducida del caso de la palabra. No es análisis del libro.',
   more:'más',open:'Abrir el aforismo y su traducción',ver:'Versión',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Borrador.</b> Lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.',
@@ -463,6 +491,12 @@ en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the sutta
   how:`<p>The § opens the aphorism and its translation on this site; the Pāḷi text of the sutta follows Nandisena. The other columns come from the book: the class it gives (in Pāḷi or Burmese, as printed), the words it lists as the sutta's aṅga, the role of each word and the example of its model derivation (rup). Where the book gives no role, the cell is left empty.</p><p>In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book's analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.</p>`,
   terms:[['kāriyī (kārī)','that on which a certain kind of grammatical operation is performed.'],['kāriya','the grammatical operation to be performed.'],['nimitta','cause. There are two kinds: in the seventh inflection (sattamī-nimitta) and in the fifth (pañcamī-nimitta).'],['saññā / saññī','in defining suttas, the technical name and what bears that name.'],['visaya / visayī','terms the book uses in suttas of insertion (āgama) and doubling, instead of kāriyī / kāriya.'],['visesana','qualifier of one of the words above; shown in brackets.'],['Aṅga','the words the book lists as members (aṅga) of the sutta, as it prints them; they may be words of the sutta itself or supplied from earlier suttas. The book writes kārī where this page says kāriyī; it also prints bahiraṅga and, once, bāhiyaṅga (§83).'],['paribhāsā','three kinds: saññaṅga, anaṅga and vidhyaṅga.']],
   h_class:'Sutta class',h_roles:'Roles',h_ex:'Example',h_notes:'Notes',h_src:'Source',
+  cols:{n:'The § opens the aphorism and its translation on this site.',
+    su:'The Pāḷi text of the sutta follows Nandisena.',
+    cl:'From the book: the class it gives (in Pāḷi or Burmese, as printed).',
+    an:'From the book: the words it lists as the sutta\'s aṅga.',
+    fu:'From the book: the role of each word. Where the book gives no role, the cell is left empty. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book\'s analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.',
+    ej:'From the book: the example of its model derivation (rup). In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>.'},
   ex:'Exercise',show:'show answer',hide:'hide answer',ans:'Suggested answer (IEBH)',ed:'IEBH editorial addition: the inflection of the nimitta, inferred from the case of the word. Not the book\'s analysis.',
   more:'more',open:'Open the aphorism and its translation',ver:'Version',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Draft.</b> A reading of the Burmese text from a scan, checked against the page images.',
@@ -533,6 +567,8 @@ function glosar(el){
   });
 }
 function glosaHTML(k){
+  if(k.startsWith('col:')){const c=T[lang].cols[k.slice(4)],th=document.querySelector(`#tabla thead [data-g="${k}"]`);
+    return c?`<span class="tn">${esc(th?th.textContent:'')}</span><p class="gd">${c}</p>`:''}
   const t=GK[k];if(!t)return '';const e=t.ejemplo;
   const cab=`<span class="tn">${esc(t.termino)}</span><p class="gd">${esc(t.def[lang])}</p>`;
   if(!e)return cab;  /* obras y capítulos sin publicar: sólo la descripción */
@@ -565,6 +601,7 @@ function textos(){
   lb.title=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.title);
   /* globos también en la introducción, la leyenda y las notas (2026-10-03) */
   ['.subt','.tag','[data-t-html="how"]','#term dd','#fuente p','#vfoot','.aviso'].forEach(s=>document.querySelectorAll(s).forEach(glosar));
+  copiarCab();
 }
 function roles(rs){
   const t=T[lang];
@@ -661,7 +698,7 @@ function filtrar(){
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;const tot=d.querySelectorAll('a[data-c]').length;d.querySelector(':scope>summary .n').textContent=v<tot?v:'';d.classList.toggle('flt',v<tot)});
   document.getElementById('count').textContent=T[lang].rows(n);
   document.getElementById('empty').hidden=!!n;
-  espiar();
+  medirCab();espiar();
 }
 document.getElementById('f-cap').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.cap=b.dataset.v;
   document.querySelectorAll('#f-cap button').forEach(x=>x.setAttribute('aria-pressed',x===b));filtrar()});
@@ -682,10 +719,14 @@ if(saved==='1'||(saved===null&&mq('(prefers-color-scheme: dark)'))) root.dataset
 document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';store.set('pali_dark',root.dataset.theme==='dark'?'1':'0')};
 
 /* barra lateral (como en /recursos/clasificacion/) */
+const cab=document.getElementById('cab-fija'),caja=document.getElementById('tabla-caja'),tabla=document.getElementById('tabla');
 const sbEl=document.getElementById('sidebar'),scr=document.getElementById('scrim'),burger=document.getElementById('burger'),barEl=document.getElementById('bar');
 const ancha=()=>innerWidth>900;
 function medirBarra(){root.style.setProperty('--barh',barEl.offsetHeight+'px')}
 medirBarra();addEventListener('resize',medirBarra);
+if(window.ResizeObserver)new ResizeObserver(medirBarra).observe(barEl);
+/* lo que tapa la parte de arriba de la pantalla: la barra y, si se ve, la cabecera fija */
+const bajoBarra=()=>barEl.getBoundingClientRect().bottom+cab.offsetHeight;
 const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
 function pintarBarra(oc){root.classList.toggle('sin-barra',oc);burger.setAttribute('aria-expanded',oc?'false':'true')}
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
@@ -696,10 +737,10 @@ addEventListener('resize',()=>{if(!ancha())root.classList.remove('sin-barra')});
 scr.onclick=cerrar;
 addEventListener('keydown',e=>{if(e.key==='Escape')cerrar()});
 sbEl.addEventListener('click',e=>{if(e.target.closest('a')&&!ancha())cerrar()});
-function enPantalla(){for(const r of document.querySelectorAll('tr.r')){if(r.hidden)continue;if(r.getBoundingClientRect().bottom>barEl.getBoundingClientRect().bottom+20)return r.id}return null}
+function enPantalla(){for(const r of document.querySelectorAll('tr.r')){if(r.hidden)continue;if(r.getBoundingClientRect().bottom>bajoBarra()+20)return r.id}return null}
 let spyF=0;
 function espiar(){
-  const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=barEl.getBoundingClientRect().bottom+40;
+  const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=bajoBarra()+40;
   for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
   links.forEach(a=>a.classList.toggle('on',a===cur));
   document.querySelectorAll('#sb-list details').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
@@ -718,7 +759,7 @@ function placeTip(el){const r=el.getBoundingClientRect();tip.style.visibility='h
   const w=tip.offsetWidth,h=tip.offsetHeight;let x=r.left,y=r.bottom+8;
   if(x+w>innerWidth-12)x=innerWidth-w-12;if(x<12)x=12;if(y+h>innerHeight-12)y=r.top-h-8;if(y<8)y=8;
   tip.style.left=x+'px';tip.style.top=y+'px';tip.style.visibility=''}
-function abrirTip(el){clearTimeout(ocultarT);const h=glosaHTML(el.dataset.g);if(!h)return;tip.innerHTML=h;tip.classList.add('glosa');tip.setAttribute('aria-hidden','false');placeTip(el);tipDe=el}
+function abrirTip(el){clearTimeout(ocultarT);const h=glosaHTML(el.dataset.g);if(!h)return;tip.innerHTML=h;tip.classList.add('glosa');tip.setAttribute('aria-hidden','false');placeTip(gemelo(el));tipDe=el}
 function hideTip(){clearTimeout(tipT);clearTimeout(ocultarT);tip.classList.remove('on','glosa');tip.setAttribute('aria-hidden','true');tipDe=null}
 const programarOcultar=()=>{clearTimeout(ocultarT);ocultarT=setTimeout(hideTip,250)};
 tip.addEventListener('mouseenter',()=>clearTimeout(ocultarT));tip.addEventListener('mouseleave',programarOcultar);
@@ -728,7 +769,8 @@ document.addEventListener('focusin',e=>{const a=e.target.closest('[data-g]');if(
 document.addEventListener('focusout',e=>{if(e.target.closest('[data-g]'))programarOcultar()});
 document.addEventListener('click',e=>{const a=e.target.closest('[data-g]');if(a){if(conRaton())return;if(tipDe===a)hideTip();else abrirTip(a);return}if(!e.target.closest('#tip'))hideTip()});
 addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});
-document.getElementById('tabla-caja').addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
+document.getElementById('tabla-caja').addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});
+cab.addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
 
 /* ---------- «Preguntar» (2026-10-03): /api/preguntar, detrás de Cloudflare Access ----------
    Sin sesión, Access responde con una redirección a su página de acceso; con
@@ -792,6 +834,39 @@ fetch('/api/preguntar?json=1',{redirect:'manual',credentials:'same-origin'})
   .then(r=>r.ok?r.json():null).catch(()=>null)
   .then(j=>{if(j&&j.ok){PREG.ok=true;PREG.restantes=j.restantes;render();document.getElementById('preg-login').hidden=true}
     document.getElementById('preg-entrar').hidden=false});
+
+/* ---------- cabecera fija (v. el CSS de .cab-fija) ---------- */
+function copiarCab(){
+  const fila=tabla.tHead.rows[0];
+  cab.querySelector('thead').innerHTML=fila.outerHTML;
+  /* la copia es para el ratón y el dedo; el teclado va al <thead> real */
+  cab.querySelectorAll('[tabindex]').forEach(x=>x.removeAttribute('tabindex'));
+  cab.querySelector('colgroup').innerHTML='<col>'.repeat(fila.cells.length);
+  medirCab();
+}
+function medirCab(){
+  const cs=tabla.tHead.rows[0].cells,cols=cab.querySelectorAll('col');
+  if(cols.length!==cs.length)return;
+  for(let i=0;i<cs.length;i++)cols[i].style.width=cs[i].getBoundingClientRect().width+'px';
+  cab.firstElementChild.style.width=tabla.getBoundingClientRect().width+'px';
+  const h=tabla.tHead.getBoundingClientRect().height;
+  cab.style.marginBottom=-h+'px';
+  tabla.classList.toggle('tapado',cab.offsetHeight>0);
+  root.style.setProperty('--cabh',cab.offsetHeight+'px');
+  cab.scrollLeft=caja.scrollLeft;
+}
+/* el gemelo visible de un encabezado del <thead> real, para anclar el globo
+   y pintar el foco donde se ve */
+function gemelo(el){
+  if(!cab.offsetHeight||!tabla.tHead.contains(el))return el;
+  return cab.querySelector(`[data-g="${el.dataset.g}"]`)||el;
+}
+caja.addEventListener('scroll',()=>{if(cab.scrollLeft!==caja.scrollLeft)cab.scrollLeft=caja.scrollLeft},{passive:true});
+cab.addEventListener('scroll',()=>{if(caja.scrollLeft!==cab.scrollLeft)caja.scrollLeft=cab.scrollLeft},{passive:true});
+tabla.tHead.addEventListener('focusin',e=>{const g=gemelo(e.target);if(g!==e.target)g.classList.add('foco')});
+tabla.tHead.addEventListener('focusout',()=>cab.querySelectorAll('.foco').forEach(x=>x.classList.remove('foco')));
+if(window.ResizeObserver){const ro=new ResizeObserver(()=>medirCab());ro.observe(tabla);[...tabla.tHead.rows[0].cells].forEach(c=>ro.observe(c))}
+addEventListener('resize',medirCab);
 
 textos();render();
 /* un § en la dirección (#s12) lleva a esa fila */
