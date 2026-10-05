@@ -315,7 +315,7 @@ El trabajo cambia de naturaleza. Por orden de urgencia:
    estaban en la p. 1110. **Ahora sí se puede correr**, y es el primer trabajo
    de la sesión que siga. `diplomado.json` está en su sitio.
 2. **`.gitignore` y el PDF del IEBH.** Sigue sin resolverse y sigue siendo lo
-   único irrecuperable: `conspectus-ejemplar-angel.pdf` vive sólo en su disco.
+   único irrecuperable: `conspectus-ejemplar-iebh.pdf` vive sólo en su disco.
    Ver briefing 50 §2.
 3. **Las fichas que saben menos de lo que las sesiones 50-52 averiguaron**, todas
    en páginas ya revisadas y todas pendientes de que IEBH mande tocarlas:

@@ -107,7 +107,7 @@ Conviene mirar la consola antes de dar por sentado que falta una traducción.
 
 ## 3. LA LENGUA DE ARRANQUE LA PONE EL SISTEMA DEL LECTOR
 
-**Pedido de Angel, 2026-09-07:** «que las páginas se vean en inglés cuando el
+**Pedido del IEBH, 2026-09-07:** «que las páginas se vean en inglés cuando el
 sistema operativo del visitante está en inglés, y en español cuando está en
 español; y que los conmutadores sigan estando».
 
@@ -187,7 +187,7 @@ de Wikipedia. Se deja como está.
 **Su botón «EN» nunca fue un conmutador de idioma.** Lo único que hacía era
 **añadir** la glosa inglesa bajo la española (clase `con-en`); el título, el
 `h1`, la entradilla, la barra lateral, las pestañas, los filtros, las etiquetas
-de fila y el contador se quedaban en español. Era la página que Angel estaba
+de fila y el contador se quedaban en español. Era la página que el IEBH estaba
 mirando cuando lo dijo.
 
 **Hecha en esta sesión, y con la decisión de IEBH (2026-09-07): en modo inglés
@@ -236,7 +236,7 @@ visto. Decide IEBH si vale o si espera adjudicación aparte.
 
 ### 4 ter bis. LAS VERSIONES, QUE SE HABÍAN OLVIDADO
 
-Lo vio Angel: la página de raíces cambiaba entera y seguía diciendo v1.5. Y no
+Lo vio el IEBH: la página de raíces cambiaba entera y seguía diciendo v1.5. Y no
 era sólo ella — **ninguna de las páginas tocadas se había subido de versión**.
 Corregido:
 
@@ -269,7 +269,7 @@ un testigo declarado con `var`, que sí se iza inicializado: `versionLista`.
 
 ### 4 ter ter. LA PÁGINA EN BLANCO, Y POR QUÉ NO LA CAZÓ LA PRUEBA
 
-Lo vio Angel: pulsar «EN» en raíces dejaba la **página entera en blanco**.
+Lo vio el IEBH: pulsar «EN» en raíces dejaba la **página entera en blanco**.
 
 **La causa, y es un choque de nombres.** La clase de la lengua en el `<body>`
 es `en` — la misma que la de la glosa inglesa. De modo que un
@@ -372,7 +372,7 @@ partirlo a mano.
    dejó el briefing 62 §4: «Puthabyā» (§72), «Itthi» (§85), «Kva»,
    «Daṇḍi», «Catassannaṃ», «Pulliṅgaṃ», «Bāhussaccaṃ».
 4. `/recursos/sandhi/` y `/recursos/nombre/` no tienen conmutador ninguno.
-   Angel los dejó fuera del encargo de esta sesión, y son las dos únicas
+   El IEBH los dejó fuera del encargo de esta sesión, y son las dos únicas
    páginas del sitio que siguen siendo sólo españolas.
 5. Los 21 términos ingleses que IEBH pasó para `glosario-ingles.json` quedaron
    a medias: mapeados a sus claves exactas y con la adjudicación por tandas

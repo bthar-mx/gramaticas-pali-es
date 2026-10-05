@@ -192,7 +192,7 @@ def medir(archivo, limite=None):
             ("BASE, o piezas > 10× la forma", base or r10),
             ("BASE, o > 1× nipāta y sustantiva", base or rns1),
             ("BASE, o > 10× nipāta y sustantiva", base or rns10),
-            # La unión que pide el caso `tenupasaṅkami` (reportado por Angel,
+            # La unión que pide el caso `tenupasaṅkami` (reportado por el IEBH,
             # 2026-08-28): la segunda voz es un verbo, no un nipāta, y la
             # variante nipāta-sola lo calla. ¿Qué cuesta admitir también la
             # sustantiva de 10× y de 100× sin nipāta?

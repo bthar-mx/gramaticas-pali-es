@@ -312,7 +312,7 @@ briefing 49 §5. La ficha lo advierte. **No se ha tocado `desnudo()`.**
 
     # la página impresa N del ejemplar del IEBH (hoja = N − 1104)
     pdfimages -j -f $((N-1104)) -l $((N-1104)) \
-      recursos/saddaniti/conspectus-ejemplar-angel.pdf /tmp/p
+      recursos/saddaniti/conspectus-ejemplar-iebh.pdf /tmp/p
 
     # el cuerpo de la obra, para verificar referencias
     python3 herramientas/pagina_saddaniti.py 877

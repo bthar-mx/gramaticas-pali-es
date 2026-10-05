@@ -10,14 +10,14 @@ estudiantes hispanohablantes de pāḷi con formación buddhista.
 
 ## Reglas
 
-- **Con Angel se habla en inglés. Todo lo que produce el proyecto va en
+- **Con el IEBH se habla en inglés. Todo lo que produce el proyecto va en
   español.** El criterio es quién lo lee, no dónde aparece:
-  - **Inglés**: todo lo que Claude le dice a Angel en el chat —la respuesta
+  - **Inglés**: todo lo que Claude le dice al IEBH en el chat —la respuesta
     **entera**, incluidas las explicaciones que acompañan a un bloque de
     código o a una orden para copiar.
   - **Español**: el sitio, los briefings, los mensajes de commit, los
     comentarios del código, los `<!-- DUDA: ... -->`. Siguen en español
-    **aunque se le pasen a Angel en el chat para que los copie**: un mensaje
+    **aunque se le pasen al IEBH en el chat para que los copie**: un mensaje
     de commit es contenido del proyecto, no una frase dirigida a él.
 - **Nada de verbos ingleses conjugados en español** —«commitear», «pushear»,
   «empujado», «mergear», «testear»—. La tabla y el porqué, en
@@ -32,13 +32,13 @@ estudiantes hispanohablantes de pāḷi con formación buddhista.
 - Dar la referencia (sutta, obra, edición) al afirmar algo sobre el texto.
 - No reescribir secciones ya revisadas sin que se pida.
 - Nunca añadir, quitar ni cambiar nada más allá de lo que da estrictamente la
-  edición base sin avisar explícitamente y dejar que Angel decida. Esto incluye
+  edición base sin avisar explícitamente y dejar que el IEBH decida. Esto incluye
   las expansiones morfológicas (pasos de elisión o sustitución que Nandisena no
   menciona). Lo tomado de Ven. A. Thitzana se señala siempre como suyo.
 
 ## EL TIPIṬAKA ES LA FUENTE; KACCĀYANA ES LA AUTORIDAD QUE LO EXPLICA
 
-**Pedido de Angel, 2026-08-30, y va aquí arriba porque es criterio, no
+**Pedido del IEBH, 2026-08-30, y va aquí arriba porque es criterio, no
 detalle.** Sí, se entiende, y de este modo:
 
 **Una lectura puede ser impecable por las reglas y no ser una lectura.** Que
@@ -61,7 +61,7 @@ De ahí, tres consecuencias que no se negocian:
 ### DICHO CON SUS PALABRAS, QUE SON MEJORES
 
 **HAY FORMAS DE SANDHI TEÓRICAMENTE PLAUSIBLES QUE SON INVEROSÍMILES EN EL
-TIPIṬAKA.** Angel, 2026-08-30. Plausible por la gramática y ausente del canon
+TIPIṬAKA.** El IEBH, 2026-08-30. Plausible por la gramática y ausente del canon
 son cosas distintas, y la segunda manda: **el Tipiṭaka es la fuente; Kaccāyana
 —y el Saddanīti— son la autoridad que lo EXPLICA, no la que lo autoriza.**
 
@@ -99,9 +99,9 @@ que el trabajo que queda no se pueda terminar con mejores reglas.
 
 ## Gestión de la sesión
 
-Corresponde a Claude —no a Angel— avisar cuando la conversación se ha alargado
+Corresponde a Claude —no al IEBH— avisar cuando la conversación se ha alargado
 lo bastante como para convenir abrir una nueva. El aviso se da **antes** de que
-la calidad se resienta, no después, y no espera a que Angel lo pregunte.
+la calidad se resienta, no después, y no espera a que el IEBH lo pregunte.
 
 Al avisar, Claude entrega lo que el chat nuevo necesita para continuar sin
 pérdida:
@@ -119,13 +119,13 @@ escrito en el briefing se pierde.
 
 ## Cuando llegan veredictos: las escaleras, siempre
 
-**Pedido de Angel, 2026-08-30.** Un veredicto adjudica los COMPONENTES; casi
+**Pedido del IEBH, 2026-08-30.** Un veredicto adjudica los COMPONENTES; casi
 nunca trae la ESCALERA. Y un caso sin escalera es media respuesta: la página
 enseña el corte y calla el cómo, que es justo lo que un lector de gramática
 viene a ver.
 
 Así que cada vez que entren veredictos —por la cola, por el modo revisión o
-dichos en la sesión—, **sin que Angel lo pida**:
+dichos en la sesión—, **sin que el IEBH lo pida**:
 
     python3 herramientas/auditar_derivacion_casos.py
 
@@ -147,7 +147,7 @@ Reglas que no se saltan, y son las de siempre:
 - **Nunca inventar un paso para tapar un hueco.** Antes de darla por
   imposible, mirar §51 y el «ca» de §20 (sección «Cómo averiguar qué sutta
   explica una operación», más abajo), y el capítulo de Thitzana.
-- **La escalera propuesta es una PROPUESTA.** Se le enseña a Angel con su
+- **La escalera propuesta es una PROPUESTA.** Se le enseña al IEBH con su
   verificación; firmarla es suya. Lo que él escriba a mano entra como
   `escalera_iebh`, verbatim y rotulada como suya, por
   `incorporar_adjudicaciones.py`.
@@ -389,7 +389,7 @@ Dos cosas más que salen de ahí:
   independiente, no sólo para rellenar huecos.
 
 Recordatorio de siempre: lo tomado de Thitzana se señala como suyo antes de
-incorporarlo, para que Angel decida y se le dé el crédito al Venerable.
+incorporarlo, para que el IEBH decida y se le dé el crédito al Venerable.
 
 ## Estado de recursos/raices
 
@@ -520,7 +520,7 @@ español con un aviso en el pie que lo dice. Firmarlo es poner `"adjudicado": tr
 con `adjudicado_por` y `fecha`; entonces el aviso cede el sitio al crédito. **Eso
 ya ocurrió**, de modo que la firma es de 2026-08-29 y cubre lo que había ese día:
 lo que se añada después a `ingles.json` —una nota nueva, una glosa retocada—
-entra bajo una firma que no lo ha visto, y **eso se le dice a Angel al añadirlo**,
+entra bajo una firma que no lo ha visto, y **eso se le dice al IEBH al añadirlo**,
 para que decida si vale o si espera adjudicación aparte.
 
 El cotejo lado a lado, para firmar, lo escribe
@@ -531,16 +531,144 @@ Las **formas pāḷi no se traducen nunca**: son el objeto de la página, y no
 aparecen en `ingles.json` siquiera. Las referencias (§248, Rū. §260) tampoco: son
 la cita, y es la misma en los dos idiomas.
 
-### La atribución pública dice IEBH, nunca «Angel» (resuelto, sesión 56)
+### La atribución pública dice IEBH, nunca el nombre propio (resuelto, sesión 56)
 
-Pedido de Angel, 2026-09-04: **«Angel» se sustituye por «IEBH» en todo lo que
+Pedido del IEBH, 2026-09-04: **el nombre propio se sustituye por «IEBH» en todo lo que
 produce el proyecto** —datos que llegan al sitio, `comun/`, `docs/` con los
 briefings, y los comentarios de `herramientas/`—. Hecho en la sesión 56 (779
 apariciones, 70 archivos), con las preposiciones ajustadas («ejemplar del
-IEBH», «lo decide IEBH»). Las tres notas de paradigmas que decían «con el visto
-bueno de Angel» quedaron corregidas con ello. **Este archivo es la única
-excepción**: sus instrucciones de trabajo siguen nombrando a Angel. Lo que se
-escriba de aquí en adelante nace ya con IEBH.
+IEBH», «lo decide IEBH»). Las tres notas de paradigmas que daban el visto
+bueno con el nombre propio quedaron corregidas con ello. **Desde el 2026-10-04
+este archivo ya no es excepción** (pedido del IEBH): sus instrucciones de trabajo
+dicen también «el IEBH», y el nombre propio no queda en ningún archivo del
+repositorio fuera de `.git` —el PDF del Conspectus se llama ahora
+`conspectus-ejemplar-iebh.pdf`—. Lo que se escriba de aquí en adelante nace ya
+con IEBH.
+
+## Visuddhāyuṃ — análisis por sutta
+
+El *Visuddhāyuṃ Kaccāyana-suttanak-ṭīkā* (Ashin Aggañāṇābhivaṃsa) es la fuente
+de la «tabla del estudiante»: clase de sutta, aṅga, funciones (kāriyī, kāriya,
+nimitta, saññā, saññī, visaya, visayī), ejemplo del modelo (က) y notas. De ahí
+sale `recursos/analisis/datos/NN-<obra>.json`, que alimenta «Análisis de los
+suttas de Kaccāyana».
+
+### Reglas que no se saltan
+
+- **Solo [V] llega al sitio.** [V] = la celda se ha visto en la imagen de la
+  página. [R] (reconstruido del OCR), [I] (completado por Claude) y ? (ilegible)
+  son estados de trabajo: se resuelven o se quitan antes de publicar. **El OCR
+  no verifica nada**: confunde la clase (§52: «vilokana» por «vikkanta») y los
+  números del encabezado (§113 sale «117»; §85, §96, §115 no salen). La clase,
+  siempre en la imagen.
+- **Donde el libro no da nada, la celda queda vacía.** No se rellena por
+  simetría con otros suttas ni por lo que «debería» decir. «—» significa que el
+  libro no lo tiene, y eso es un dato, no un hueco.
+- **Nunca se presenta el análisis de Claude como palabra del libro.** Lo que
+  diga el libro va en su celda; lo que proponga Claude va rotulado. Esto vale
+  también para las lecturas de abreviaturas dentro de las notas (las celdas
+  [I]: §65, §73, §74, §77, §80…): o se verifican en la imagen, o se quitan al
+  publicar.
+- **Los ejercicios se rotulan «Respuesta sugerida (IEBH)».** Cuando el libro
+  dice «nimitta, kārī, etc.: analícelo» (ခွဲ / ခွဲလေ), la respuesta no es del
+  libro: es una propuesta, y firmarla es del IEBH.
+- **El término de clase es el del libro**, con sus diacríticos y sin
+  normalizar: antaraṅga-vidhi, bāhiraṅga-vidhi-sutta, ubhayaṅga,
+  vidhyaṅga-paribhāsā, rūḷhī-saññā, sīhavikkanta-adhikāra, niyama-sutta,
+  paṭisedha-sutta, suttātidesa. Donde el libro rotula con una frase birmana, se
+  copia la frase y se traduce al lado. Si además conviene decir en qué clase
+  del sitio cae, va en la nota como «Clasificación del sitio: …», nunca
+  sustituyendo al término del libro. antaraṅga / bāhiraṅga / ubhayaṅga van en
+  «Clase de sutta» cuando el libro los da como rótulo, y **sin** nota de
+  diferencia con `datos.json`: es otro eje, no una contradicción.
+- **Claude no ejecuta ninguna orden de git**, ni `git status`. De git se ocupa
+  el IEBH.
+- **Tampoco ejecuta `herramientas/publicar.sh`.** Publicar es escribir
+  `herramientas/.publicar/archivos.txt` (una ruta por línea) y
+  `herramientas/.publicar/mensaje.txt` (el mensaje del commit, en español) y
+  decírselo al IEBH, que lo lanza él.
+
+### Dónde está el material
+
+El escaneo y el OCR **no están en el repositorio** (derechos) y no deben
+entrar. Viven en el disco del IEBH:
+
+| Qué | Ruta |
+| --- | --- |
+| PDF del escaneo (664 pp.) | `~/Tipitaka/nissaya/scans/annya/visuddhayum-kaccayana-tika.pdf` |
+| Imágenes de página | `~/Tipitaka/nissaya/ocr/visuddhayum-kaccayana-tika/img/p-NNN-*.jpg` |
+| OCR crudo (Tesseract 5, mya) | `…/visuddhayum-kaccayana-tika/raw/NNN.txt` |
+| tessdata birmano | `…/visuddhayum-kaccayana-tika/tessdata/mya.traineddata` |
+| Recortes y caché TSV | `…/visuddhayum-kaccayana-tika/_crops/` |
+
+`NNN` es la **página del PDF**, y la conversión es
+
+    página del PDF = página del libro + 46
+
+### Concordancia entre el número del libro y el §
+
+El libro numera sus suttas con su propia serie, que coincide con el § de
+Nandisena **hasta §232**. En el pariccheda IV, **§233 no tiene encabezado** en
+el libro; a partir de ahí:
+
+    hasta §232:  nº del libro = §
+    desde §234:  nº del libro = § − 1
+
+De modo que §270 es el nº 269 del libro. El encabezado tiene la forma
+«(nº) sutta။ kaṇḍa.pariccheda.sutta။ N-padaṃ» —p. ej. «(၆၃) ဧတိမာသမိ။ ၂၊၁၊၁၂။
+ဒွိပဒံ»—, y la numeración kaṇḍa.pariccheda.sutta sirve de comprobación
+independiente del nº.
+
+### Formato de los datos
+
+`recursos/analisis/datos/NN-<obra>.json`: cabecera (`clave`, `md`, `pali`,
+`desde`, `hasta`, `pdf`, `paginas`) y `suttas`, un objeto por sutta:
+
+- `n`, `pdf`, `clase` (vacía si el libro no la da), `anuvatti` (la columna que
+  en la tabla se llama ya «Aṅga»), `ejemplo`, `nota` (`es` / `en`);
+- `roles`: lista de `[rol, valor, visesana]`, y el nimitta añade un cuarto
+  elemento con la inflexión (`"3"`, `"5"`, `"7"`, `"5+7"`), que es **añadido
+  editorial del IEBH**, no del libro;
+- los ejercicios llevan `"ejercicio": true` y la propuesta en `respuesta`, con
+  la misma forma que `roles`.
+
+### Nota de avance
+
+`docs/visuddhayum/nama-piloto.md` es el cuaderno de Nāma: estado, tandas por
+pariccheda, filas en borrador con sus marcas, hallazgos y preguntas abiertas.
+**Se actualiza al avanzar, no al final.** Su gemelo cerrado es
+`docs/visuddhayum/sandhi-piloto.md`, que es la fuente de `01-sandhi.json` y el
+modelo de formato.
+
+Las cuatro decisiones del IEBH del 2026-10-03, que encabezan esa nota:
+
+1. La columna **«Aṅga»** (antes «Anuvatti») copia la lista «aṅga N» tal como la
+   da el libro, venga del propio sutta o de suttas anteriores. Sandhi recibe el
+   cambio de nombre cuando se publique Nāma.
+2. **antaraṅga-vidhi / bāhiraṅga-vidhi / ubhayaṅga van en «Clase de sutta»**
+   cuando el libro los da como rótulo, sin nota de diferencia con `datos.json`.
+3. **§90**: la imagen dice «antaraṅga», no «sin etiqueta» (corregido en
+   `docs/visuddhayum/clasificacion-cotejo.md`).
+4. Las **celdas [I] dentro de las notas** no salen en la página como palabras
+   del libro: al publicar, se verifican o se quitan.
+
+Nāma no se publica por partes: **se publica cuando todo el capítulo sea [V]**.
+
+### Las herramientas de recortes
+
+`herramientas/visuddhayum/` (`lines.py`, `crop.py`, `mk.py`, `loc.py`), ya
+adaptadas a este Mac; su README explica cada una. Requieren Tesseract y Pillow
+(instalado con `brew install pillow`). La orden `/visuddhayum-lote` recorre un
+tramo de § con ellas.
+
+**El recorte compuesto de `mk.py` no se usa para leer ni para verificar
+ninguna celda.** Cose dos tramos —encabezado + 5 líneas, (ခ) + 7 líneas— y
+pierde lo que queda entre ellos y después: en 30 de los 55 suttas de
+§52–§107 el hueco cae dentro del (က) (auditoría de la sesión 3,
+`docs/visuddhayum/nama-piloto.md`). Como mucho sirve de índice para saber
+dónde está cada sutta. Para leer, recortes **solapados** con `lines.py` +
+`crop.py` (por índice de línea o por bandas de píxeles, `crop.py N yA yB`) que
+cubran el sutta **entero** sin huecos, del encabezado al encabezado siguiente.
 
 ## Hacia dónde va esto: un solucionador de sandhis
 

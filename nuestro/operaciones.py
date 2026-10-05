@@ -398,7 +398,7 @@ def op_S49(a, b, F):
     #      «dvevassasahassāyukā, que es dve vassasahassāyukā». Eso era MÍO y
     #      sin autoridad: la lista de arriba enumeraba correctamente lo que la
     #      regla ancha generaba de más, pero la glosa de lo que las voces son
-    #      DE VERDAD no me correspondía darla. Lo corrigió Angel. --> Sin la restricción, «sv
+    #      DE VERDAD no me correspondía darla. Lo corrigió el IEBH. --> Sin la restricción, «sv
     # eva» del banco salía con una octava lectura falsa y arnes.js lo
     # detenía; con ella, los cinco arneses pasan.
     #

@@ -14,7 +14,7 @@
    La clave de LECTURA vive como secreto del worker (CLAVE_VEREDICTOS); la
    cola, en el KV VEREDICTOS. Cómo crearlos: docs/solucionador/automatizacion.md.
 
-   ---- QUIÉN ESCRIBE: Cloudflare Access (pedido de Angel, 2026-08-31) ----
+   ---- QUIÉN ESCRIBE: Cloudflare Access (pedido del IEBH, 2026-08-31) ----
 
    Hasta hoy la cola era un buzón ANÓNIMO: cualquiera podía dejar un .md y no
    quedaba constancia de quién. Peor que eso, el .md exportado trae ya escrita
@@ -138,7 +138,7 @@ async function entrar(request, env) {
     + "<p><a href='/recursos/solucionador/'>Volver al solucionador</a>"
     /* Cerrar sesión lo hace Access, no el worker: la galleta es suya. Se
        manda al «logout» del equipo, que la borra para TODAS las aplicaciones
-       —es una sola sesión— y devuelve al solucionador (pedido de Angel,
+       —es una sola sesión— y devuelve al solucionador (pedido del IEBH,
        2026-08-31: no había manera de salir, y sin ella no se puede probar
        otro papel sin abrir una ventana privada). */
     + (ident.configurado
@@ -278,7 +278,7 @@ async function cola(request, env, url) {
     }
     // Y el listado completo, en PARALELO. Estaba dentro de un for con await,
     // de modo que el tiempo era la suma de todas las lecturas del KV, una
-    // detrás de otra (2026-08-30, pedido de Angel: «¿hay manera de que
+    // detrás de otra (2026-08-30, pedido del IEBH: «¿hay manera de que
     // termine antes?»). Con Promise.all es el de la más lenta, no la suma.
     const out = await Promise.all(claves.map(async (k) => ({
       id: k.name,
@@ -355,7 +355,7 @@ function galleta(request, nombre) {
   return m ? m[1] : null;
 }
 
-/* ---- LOS DOS PAPELES (pedido de Angel, 2026-08-31) ----
+/* ---- LOS DOS PAPELES (pedido del IEBH, 2026-08-31) ----
 
    Access AUTENTICA —dice quién eres— y este worker AUTORIZA —dice qué
    puedes—. Son dos preguntas y conviene que las conteste cada uno la suya:
@@ -386,7 +386,7 @@ function galleta(request, nombre) {
        fulano@ejemplo.org = Ven. Fulano
        mengano@ejemplo.org
 
-   El RÓTULO es lo que se publicará en la página (decisión de Angel,
+   El RÓTULO es lo que se publicará en la página (decisión del IEBH,
    2026-08-31: nombrar al revisor). El CORREO no se publica nunca — se quitó
    de ahí esta misma tarde y no vuelve—: queda en el metadato de la cola y en
    el archivo de veredictos-recibidos/, que no se publican.
@@ -402,7 +402,7 @@ function repertorio(env) {
          #  → aovb@me.com = IEBH
 
      y pegado tal cual, el «#  → » quedaba pegado a la dirección y no casaba
-     con nadie. Angel se vio de «aprendiz» dos veces por esto. Un repertorio
+     con nadie. El IEBH se vio de «aprendiz» dos veces por esto. Un repertorio
      se escribe a mano y a mano se pega mal: lo que hay que hacer es leerlo
      con tolerancia, no exigir que venga perfecto. */
   const m = new Map();

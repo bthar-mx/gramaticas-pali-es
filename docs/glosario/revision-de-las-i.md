@@ -15,7 +15,7 @@ que varias fichas dejaron abiertas *expresamente para cotejar sobre papel*.
 
 El ejemplar del IEBH sí decide. Extraído con
 
-    pdfimages -j -f N -l N recursos/saddaniti/conspectus-ejemplar-angel.pdf salida
+    pdfimages -j -f N -l N recursos/saddaniti/conspectus-ejemplar-iebh.pdf salida
 
 —una imagen por hoja, **hoja = página impresa − 1104**—, la línea recortada a
 ×7 u ×8 separa los dos signos sin ambigüedad: **el punto de la i breve es

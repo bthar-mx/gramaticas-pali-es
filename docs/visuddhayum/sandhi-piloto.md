@@ -1,6 +1,6 @@
 # Visuddhāyuṃ — tabla del estudiante, Sandhi (piloto v5.1, 2026-10-03)
 
-Copia en el repositorio de `claude/visuddhayum-sandhi-piloto.md` (proyecto de Claude), para Claude Code. La columna «Anuvatti» pasará a llamarse «Aṅga» cuando se publique Nāma (decisión de Angel, 2026-10-03; véase `docs/visuddhayum/nama-piloto.md`).
+Copia en el repositorio de `claude/visuddhayum-sandhi-piloto.md` (proyecto de Claude), para Claude Code. La columna «Anuvatti» pasará a llamarse «Aṅga» cuando se publique Nāma (decisión del IEBH, 2026-10-03; véase `docs/visuddhayum/nama-piloto.md`).
 
 Estado: **todas las celdas cotejadas con las imágenes** (PDF 51–112). Es la fuente de `recursos/analisis/datos/01-sandhi.json` («Análisis de los suttas de Kaccāyana» v0.2.2).
 
@@ -97,7 +97,7 @@ Estado: **todas las celdas cotejadas con las imágenes** (PDF 51–112). Es la f
 
 ## Fechas del párrafo «Sobre el autor»: por confirmar
 
-No tengo fuente para ninguna de las cuatro fechas. Vienen del texto que Angel pasó, que a su vez procede de un resumen anterior hecho con IA, y en esta sesión no encontré una fuente independiente: una búsqueda breve en la web no dio nada útil.
+No tengo fuente para ninguna de las cuatro fechas. Vienen del texto que el IEBH pasó, que a su vez procede de un resumen anterior hecho con IA, y en esta sesión no encontré una fuente independiente: una búsqueda breve en la web no dio nada útil.
 
 | Año | Qué dice el párrafo | Fuente | Estado |
 |---|---|---|---|

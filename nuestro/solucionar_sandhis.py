@@ -108,7 +108,7 @@ USAR_CANON = False
 # Ver el comentario en cargar(). Se enciende con `--solo-canon`.
 SOLO_CANON = False
 # El DPD como TESTIGO SILENCIOSO dentro del modo solo-canon (decisión de
-# Angel, 2026-08-28, en chat; pendiente de confirmación del Venerable, que
+# IEBH, 2026-08-28, en chat; pendiente de confirmación del Venerable, que
 # lo había apartado en la sesión 30). El papel es el que §9 de las normas
 # del OSBCT siempre permitió: probar si una cadena ocurre, filtrar y
 # ordenar candidatos — NUNCA análisis presentado al lector. La autoridad
@@ -909,7 +909,7 @@ def _patron_niggahita_m(r, patron, frec, f_forma):
 
     Devuelve True si afirmó (la señal queda «segura» y la lectura primera).
 
-    RÉGIMEN MEDIDO (decisión de Angel, 2026-08-30): el patrón sólo afirma
+    RÉGIMEN MEDIDO (decisión del IEBH, 2026-08-30): el patrón sólo afirma
     formas cuya frecuencia alcanza `frec_minima` (159: la frecuencia del
     puesto 5.000, hasta donde llegó la medición). Fuera de ahí el resguardo
     se debilita —con la forma rara, el piso de las candidatas cae— y
@@ -968,7 +968,7 @@ def _patron_niggahita_m(r, patron, frec, f_forma):
 def _aplicar_patron(r):
     """Los patrones adjudicados: la cola enclítica con base única atestiguada.
 
-    Observación de Angel (2026-08-28, sobre SN 1.1 y DN 2): las colas de
+    Observación del IEBH (2026-08-28, sobre SN 1.1 y DN 2): las colas de
     «iti» y «pi» «no son difíciles de detectar con 100 % de exactitud». La
     regla que lo vuelve mecanismo, adjudicada con su fuente en
     `casos-reportados.json`: si entre las lecturas verificadas hay
@@ -999,7 +999,7 @@ def _aplicar_patron(r):
         seg = cotejo(patron.get("segunda", ""))
         if not seg:
             continue
-        # El resguardo de la base residual, adjudicado por Angel
+        # El resguardo de la base residual, adjudicado por el IEBH
         # (2026-08-28, sesión 32): una base candidata debe ser AL MENOS tan
         # frecuente en el canon como la forma entera. Sin él, «ho» (4
         # apariciones) concedía la unicidad y el patrón afirmaba hoti
@@ -1014,7 +1014,7 @@ def _aplicar_patron(r):
             if (len(comp) == 2 and comp[1] == seg
                     and frec.get(comp[0], 0) >= max(f_forma, 1)):
                 bases.add(comp[0])
-        # Regla de la clase vocálica, adjudicada por Angel (2026-08-28):
+        # Regla de la clase vocálica, adjudicada por el IEBH (2026-08-28):
         # «hotīti es sólo hoti + iti y hotūti es sólo hotu + iti». La vocal
         # que sobrevive ante el remanente conserva la clase de la vocal
         # final de la base (a/ā, i/ī, u/ū, e, o); las bases de otra clase
@@ -1075,7 +1075,7 @@ def _aplicar_caso(r):
       · sandhi=false no toca nada aquí: es prueba de regresión de que la
         señal calla (la comprueba `arnes_casos`).
 
-    El primer caso fue `tenupasaṅkami` (Angel, 2026-08-28): la señal por
+    El primer caso fue `tenupasaṅkami` (IEBH, 2026-08-28): la señal por
     frecuencia no puede verlo —1.763 apariciones contra 231 de su propia
     segunda voz— y ésta es la vía que la decisión del Venerable dejó
     prevista: cada fallo reportado, un caso permanente.
@@ -2155,7 +2155,7 @@ def main():
         "en ninguna capa (decisión del Venerable, 2026-08-28)."))
     ap.add_argument("--dpd-filtro", action="store_true", help=(
         "suma el DPD como testigo silencioso dentro de solo-canon: filtro, "
-        "ordenación y señal, nunca análisis (decisión de Angel, 2026-08-28)."))
+        "ordenación y señal, nunca análisis (decisión del IEBH, 2026-08-28)."))
     a = ap.parse_args()
     globals()['USAR_CANON'] = a.canon
     globals()['SOLO_CANON'] = a.solo_canon

@@ -9,7 +9,7 @@ carpeta de descargas.
 | --- | --- | --- |
 | `saddaniti-smith-NN.pdf` | el escaneo, imagen pura | **no** — `.gitignore` excluye `*.pdf` |
 | `saddaniti-smith-NN.paginas.json` | mapa hoja del escaneo → página impresa | **sí** |
-| `conspectus-ejemplar-angel.pdf` | el Conspectus fotografiado del ejemplar del IEBH | **no** — y esto es un problema, ver abajo |
+| `conspectus-ejemplar-iebh.pdf` | el Conspectus fotografiado del ejemplar del IEBH | **no** — y esto es un problema, ver abajo |
 
 Los PDF no viajan, como los demás PDF del repositorio. **Si hacen falta en
 otra máquina, se vuelven a bajar de archive.org** con los identificadores
@@ -18,7 +18,7 @@ es lo que permite citar por página impresa sin tener el escaneo delante.
 
 ## EL CONSPECTUS DEL EJEMPLAR DEL IEBH (sesión 50)
 
-`conspectus-ejemplar-angel.pdf`, 44 páginas, las **1105-1148** completas, una
+`conspectus-ejemplar-iebh.pdf`, 44 páginas, las **1105-1148** completas, una
 por fotograma y en orden, hechas con un iPhone el 2026-09-04. Es la sección E
 del vol. IV, el Conspectus gramatical entero; se corta justo donde empieza el
 métrico (sección 8).
@@ -38,7 +38,7 @@ esa línea no se ha tocado —es decisión suya si quiere una excepción para es
 archivo—. Mientras tanto, existe sólo en su disco.
 
     # una página cualquiera, a resolución nativa (la 1135 es la hoja 31)
-    pdfimages -j -f 31 -l 31 recursos/saddaniti/conspectus-ejemplar-angel.pdf /tmp/p
+    pdfimages -j -f 31 -l 31 recursos/saddaniti/conspectus-ejemplar-iebh.pdf /tmp/p
 
 **Hoja del PDF = página impresa − 1104.** No hace falta `pagina_saddaniti.py`
 para éste; ese guion es para los cinco volúmenes de archive.org.

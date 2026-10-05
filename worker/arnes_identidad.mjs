@@ -1,5 +1,5 @@
 /* Arnés de la identidad de Access — worker/index.js.
-   Pedido de Angel, 2026-08-31, al poner login en el modo revisión.
+   Pedido del IEBH, 2026-08-31, al poner login en el modo revisión.
 
        node worker/arnes_identidad.mjs
 
@@ -172,7 +172,7 @@ async function main() {
       { aud: [AUD], email: "estudiante@ejemplo.org", exp: dentro });
     const p = t.split(".");
     p[1] = b64url(JSON.stringify(
-      { aud: [AUD], email: "angel@ejemplo.org", exp: dentro }));
+      { aud: [AUD], email: "iebh@ejemplo.org", exp: dentro }));
     comprobar("cuerpo manipulado → 401",
       (await enviar(conAcceso(), p.join("."))).status === 401);
   }
@@ -348,7 +348,7 @@ async function main() {
     comprobar("?json=1 dice papel aprendiz", ja.papel === "aprendiz", JSON.stringify(ja));
   }
 
-  /* ---- EL RÓTULO PÚBLICO (2026-08-31, decisión de Angel: nombrar al
+  /* ---- EL RÓTULO PÚBLICO (2026-08-31, decisión del IEBH: nombrar al
      revisor) ---- Lo que se publica es el rótulo, nunca el correo: la
      dirección se quitó de la página esta misma tarde y no vuelve. */
   {
@@ -381,7 +381,7 @@ async function main() {
   }
 
   /* ---- CÓMO SE ESCRIBE EL REPERTORIO (2026-08-31) ----
-     Pasó de verdad: Angel figuraba en REVISORES y la página le decía
+     Pasó de verdad: el IEBH figuraba en REVISORES y la página le decía
      «aprendiz». El parser sólo partía por comas y saltos de línea —para no
      partir los rótulos, que llevan espacios—, de modo que varios correos
      escritos SEGUIDOS quedaban en un solo trozo que no casaba con nadie.

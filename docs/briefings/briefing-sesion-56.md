@@ -99,7 +99,8 @@ Pedido del IEBH en esta sesión. **779 apariciones en 70 archivos** de
 las preposiciones ajustadas: «ejemplar del IEBH», «al IEBH», «lo decide IEBH»,
 «El IEBH» a principio de frase, «the IEBH» en el inglés. `CLAUDE.md` es la
 única excepción y lo dice. El nombre de archivo
-`conspectus-ejemplar-angel.pdf` no se ha tocado: está en su disco y no viaja.
+del PDF del Conspectus no se ha tocado: está en su disco y no viaja (se renombró
+`conspectus-ejemplar-iebh.pdf` el 2026-10-04).
 Con esto quedan corregidas las tres notas de paradigmas que decían «con el
 visto bueno del IEBH».
 
@@ -148,7 +149,7 @@ visto bueno del IEBH».
 - **No ejecutar `git status`** desde el entorno Linux: `git --no-optional-locks
   status --porcelain`.
 - Al editar un `pNNNN.json`, `json.load` después.
-- Los tres PDF y `conspectus-ejemplar-angel.pdf` no viajan.
+- Los tres PDF y `conspectus-ejemplar-iebh.pdf` no viajan.
 
 ---
 
