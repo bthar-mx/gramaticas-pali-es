@@ -30,8 +30,8 @@ estén bien formadas; que cada nimitta lleve su caso; y que todo esté en NFC.
 Si algo no cuadra, no publica.
 
 También escribe la guía para el estudiante, site/recursos/analisis/guia/,
-con recursos/analisis/guia.md (el texto, tal cual: el español, una línea
-«---», el inglés) y recursos/analisis/guia-plantilla.html. La página del
+con recursos/analisis/guia.md (el texto, tal cual: el español y el inglés,
+separados por «---» o por el «# título» inglés) y recursos/analisis/guia-plantilla.html. La página del
 análisis enlaza a ella, así que sin guia.md no se publica nada.
 """
 
@@ -154,7 +154,9 @@ def datos_preguntar(meta, filas, glosario):
 def guia(meta):
     """La guía para el estudiante: (html, fallos). El markdown se convierte
     con el mismo intérprete de prosa que generar_recurso.py; el texto no se
-    toca. El primer «# título» de cada lengua es el h1 de la página."""
+    toca. Las dos lenguas se separan por una línea «---» o, si no la hay, por
+    el segundo «# título»; el «# título» de cada lengua es el h1 de la página.
+    Además de lo que entiende ese intérprete: «> cita» y `código`."""
     import html as H
     import generar_recurso as R
     if not os.path.exists(GUIA):
@@ -165,13 +167,39 @@ def guia(meta):
         fallos.append("guia.md: texto que no está en NFC")
     lineas = txt.split("\n")
     corte = [i for i, l in enumerate(lineas) if l.strip() == "---" and i > 0]
-    if len(corte) != 1:
-        return None, fallos + ["guia.md: hace falta una sola línea «---» entre el español y el "
-                               "inglés (hay {0})".format(len(corte))]
-    partes = {"es": lineas[:corte[0]], "en": lineas[corte[0] + 1:]}
-    # `código`, que el intérprete de prosa no conoce
+    if len(corte) == 1:
+        partes = {"es": lineas[:corte[0]], "en": lineas[corte[0] + 1:]}
+    else:
+        h1s = [i for i, l in enumerate(lineas) if re.match(r"^#\s+\S", l)]
+        if corte or len(h1s) != 2:
+            return None, fallos + ["guia.md: el español y el inglés se separan con una sola "
+                                   "línea «---» o con dos «# título» (hay {0} y {1})".format(
+                                       len(corte), len(h1s))]
+        partes = {"es": lineas[:h1s[1]], "en": lineas[h1s[1]:]}
     base = R.inline
     R.inline = lambda t: re.sub(r"`([^`]+)`", r"<code>\1</code>", base(t))
+
+    def bloques(ls):
+        # las citas «> …» aparte; lo demás, al intérprete de prosa
+        out, i = [], 0
+        while i < len(ls):
+            if ls[i].startswith(">"):
+                j = i
+                while j < len(ls) and ls[j].startswith(">"):
+                    j += 1
+                cita = " ".join(re.sub(r"^>\s?", "", x).strip() for x in ls[i:j]).strip()
+                out.append("<blockquote><p>{0}</p></blockquote>".format(R.inline(cita)))
+                i = j
+                continue
+            j = i
+            while j < len(ls) and not ls[j].startswith(">"):
+                j += 1
+            out.append(R.render(ls[i:j])[0])
+            i = j
+        h = "\n".join(x for x in out if x)
+        # lista numerada: el número va en el texto (generar_recurso lo deja literal)
+        return re.sub(r'<ul class="doc-lista">(?=<li>\d+[.)] )', '<ul class="doc-lista num">', h)
+
     cuerpos, titulos = {}, {}
     try:
         for lg, ls in partes.items():
@@ -182,15 +210,13 @@ def guia(meta):
                 continue
             h1 = re.sub(r"^#\s+", "", ls[i].strip())
             del ls[i]
-            cuerpos[lg] = R.render(ls)[0]
-            titulos[lg] = {"h1": re.sub(r"[*_`]", "", h1), "h1_html": R.inline(h1)}
+            cuerpos[lg] = bloques(ls)
+            limpio = re.sub(r"[*_`]", "", h1)
+            titulos[lg] = {"h1": limpio, "titulo": limpio, "h1_html": R.inline(h1)}
     finally:
         R.inline = base
     if fallos:
         return None, fallos
-    for lg, nombre in (("es", "Análisis de los suttas de Kaccāyana"),
-                       ("en", "Analysis of the Kaccāyana suttas")):
-        titulos[lg]["titulo"] = "{0} · {1}".format(titulos[lg]["h1"], nombre)
     pl = open(GUIA_PLANTILLA, encoding="utf-8").read()
     js = json.dumps({lg: {"titulo": t["titulo"], "h1": t["h1"]} for lg, t in titulos.items()},
                     ensure_ascii=False).replace("</", "<\\/")
