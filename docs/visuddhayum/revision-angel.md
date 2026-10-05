@@ -986,7 +986,7 @@ D2. Nota de versión v0.4 (pie de la página, ES y EN): dice «La columna «Anuv
 
 Decisión: 
 
-D3. Añadido por Claude. Etiquetas de caso del nimitta deducidas de la terminación donde el libro no las pone (ghato, pato, lato, jhalato → 5.ª: §111, §112, §114, §116, §117, §119, PDF 148–151; tato → 5.ª en §77, PDF 129); el generador exige una en cada nimitta. Añadido por decisión de Angel (2026-10-04): §175, *sabbattha* → 7.ª (PDF 173–174).
+D3. Añadido por Claude. Etiquetas de caso del nimitta deducidas de la terminación donde el libro no las pone (ghato, pato, lato, jhalato → 5.ª: §111, §112, §114, §116, §117, §119, PDF 148–151; tato → 5.ª en §77, PDF 129); el generador exige una en cada nimitta. Añadido por decisión de Angel (2026-10-04): §175, *sabbattha* → 7.ª (PDF 173–174). Añadidas en la v0.7, pendientes de la decisión del IEBH: §216, *ghato* → 5.ª (PDF 189); §220, *sesato* → 5.ª (PDF 190); §221, *āvuso …pa… dīhi* → 3.ª (PDF 191), como proponía la fila de trabajo, aunque la 5.ª también se puede defender (compárese §106, *dīghorehi* → 5.ª).
 
 - [ ] Revisado
 
@@ -1980,3 +1980,251 @@ Decisión:
 
 Pariccheda IV («နာမ် / စတုတ္ထပိုင်း», PDF 188 en adelante). Preguntas abiertas y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 4 — filas (borrador)». Reglas por defecto (a), (b'), (c)–(i) de las tandas 2 y 3, con la forma nueva del motivo de los contraejemplos (decisión de Angel, 2026-10-04, punto 1).
 
+Sesión 9 (2026-10-04). Preguntas de §211–§215 (no hay términos nuevos; véase H3).
+
+H1. §211 (*sako*, PDF 188, y≈850) y §214 (*atrajo*, PDF 188, y≈2045): formas con «*» que no son contraejemplos sino **operaciones añadidas que el libro saca de un sobrante** —el «tta» de *anattaṃ* (§211, «တ္တသဒ္ဒါလွန်ဖြင့်») y el sutta *smā nā* entero, que ya haría *amhatumhantu-* (§214, «သ္မာ နာသုတ်ပိုဖြင့်»)—. Van al Ejemplo **sin etiqueta** de motivo, y la razón en Notas. ¿Se les pone una etiqueta breve como a los contraejemplos (p. ej. «(adhika)», que el libro no usa), o se dejan así?
+
+- [ ] Revisado
+
+Decisión: 
+
+H2. §211 (PDF 188, y≈905): tras «အတ္တကို သကပြု။» el libro imprime «(သပြု)။» («se hace sa»). ¿Variante («o bien sa») o aclaración? Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+H3. §212–§214 cierran el (က) con «(ဣပြု၊ န်လာ)», «(ဩပြု၊ န်လာ)», «(အာပြု၊ န်လာ)» —«se hace i / o / ā; viene n»—: el libro descompone ni / no / nā en n + vocal. En §213 y §214 una de las dos lecturas duda del signo de la န (် / ံ) y, en §213, de ဩ / သြ; Claude, en la imagen ampliada, ve ် en las tres. Solo en Notas. ¿Se traduce así o se deja solo el birmano?
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 9, segunda parte (2026-10-04). Preguntas de §216–§220 y términos propuestos (no añadidos).
+
+H4. §216 (PDF 189, y≈965): el nimitta se imprime «ဃတော» (*ghato*) en el (ခ), aunque el encabezado dice «ဃပတော» (*ghapato*): las dos lecturas. La celda copia *ghato* tal como está. ¿Se deja así, o se anota *ghapato* como el del enunciado?
+
+- [ ] Revisado
+
+Decisión: 
+
+H5. §216 (PDF 189, y≈1020) y §220 (PDF 191, y≈500): en las listas de lo que abarca el nimitta —«…ရတ်၊ ကညာ၊ နဒီ၊ ဂဟံ၊ မနောဂိုဏ်း» (§216), «…ရတ်၊ ကညာ၊ နဒီ၊ ဂဟံ၊ သဗ္ဗနာမ်ဂိုဏ်း» (§220)— hay una voz, «ဂဟံ» (lector; el verificador de §220 lee «ဂဟာ», y Claude no descarta «ဝဟံ»), que ninguno identifica. ¿Qué palabra modelo es? Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+H6. §220 (PDF 191, y≈680), cita de la Rūpasiddhi: «… ဂက္ကတိဝစနမေဝ ဉာပက …» (lector) / «… ဂကြတိဝစနမေဝ …» (verificador). Conviene cotejarla con la edición de la Rūpasiddhi antes de traducirla. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+H7. §217 (PDF 189, y≈1450): la remisión del contraejemplo *aṭṭhī*, «ဃပတောစ ယောနံ-» (lector; Claude ve la misma ဃ del encabezado de §216) / «ယပတောစ ယောနံ-» (verificador). Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+H8. Términos propuestos para el glosario (no añadidos): **appavisaya** («de alcance escaso», §218, PDF 190); **liṅgavipallāsa** («inversión de género», §218, PDF 190; «vipallāsa» ya está en `comun/glosario.md`, el compuesto no); **sakkatānuloma** («conforme al sánscrito», §216, PDF 189); **ñāpaka** («indicio», en la cita de la Rūpasiddhi de §220, PDF 191). (*lāghava* ya está en `recursos/terminos/terminos.json`.)
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 9, tercera parte (2026-10-04). Preguntas de §221–§225 y términos propuestos (no añadidos).
+
+H9. **Discrepancia en celda cotejada**, §224 (PDF 195, y≈2050–2110): la 2.ª forma con «*», contraejemplo de «ဝါမြစ်» (lo impide el «vā»): «ဒဏ္ဍိံ» (*daṇḍiṃ*, lector) / «ဒဏ္ဍီ» (*daṇḍī*, verificador). Claude, a ×3, ve un círculo abierto con un punto a la derecha (ိ + ံ), como el lector; *daṇḍiṃ* sería además la forma esperada del acusativo. Sin [V], la forma está fuera de la celda, en la DUDA de Notas. ¿La mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: 
+
+H10. §222 (PDF 195, y≈1030): el encabezado imprime «၂၊၃၊၁၂» (pariccheda **3**) entre §221 (2.4.11) y §223 (2.4.13): las dos lecturas, con el ၃ comparado con el de «၁၃». Se anota como errata probable del libro, sin enmendar. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+H11. La abreviación del sutta de la abreviación, «အဃော-» / «အယော-» (*agho rassam…* o *ayo…*?): §215, §223, §224, §225 (PDF 189, 195, 196). Las lecturas se reparten; en §225 las dos leen «အယော-». Claude ve ဃ en §215 y en «ဃပတောစ» de §217. Solo en Notas. ¿Lo mira el IEBH, o se deja con las dos lecturas?
+
+- [ ] Revisado
+
+Decisión: 
+
+H12. §221 (PDF 191–195): el (ခ) ocupa cinco páginas (upasagga, nipāta, abyaya, tabla de los veinte upasagga con sus sentidos, citas de la Aṭṭhasālinī, de «အနု» y de la Mūlaṭīkā). Por (e) va resumido en Notas; lo de PDF 192–195 lo ha leído solo el lector (el verificador comprobó que no hay rótulo de clase). ¿Basta el resumen, o se quiere la tabla de los upasagga como material aparte?
+
+- [ ] Revisado
+
+Decisión: 
+
+H13. Términos propuestos para el glosario (no añadidos): **jotaka / vācaka** («que hace manifiesto» / «que expresa», del upasagga y el nipāta, §221, PDF 191–192); **pakati-abyaya / vikati-abyaya** (§221, PDF 192); **anaññasattāvacara**, **sāsanappasiddha** (de *āvuso*, §221, PDF 191). (*dvidhā* y *yogavibhāga* ya están en el glosario.)
+
+- [ ] Revisado
+
+Decisión: 
+
+**Regla por defecto propuesta (corrección del asesor, 2026-10-04), para que Angel la confirme:** (j) **formas con «*» de ejemplo (no contraejemplos) dentro de un (ခ) → Notas**, aparte, con lo que diga el libro de ellas; nunca al Ejemplo ni a Funciones (así en §216 *parisati*, *sabhati*; §221 *byayaṃ* … *anutāpe*; §226 *ambuni*, *paṃsuni*). Y: donde una página del (ခ) solo la ha leído el lector, lo que se anote de ella en Notas va rotulado «lectura de un solo lector, sin verificar» (§221, PDF 191 y≈1530 → 195).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 9, cuarta parte (2026-10-04). Preguntas de §226–§230 y términos propuestos (no añadidos). Fin del tramo pedido (§211–§230); el pariccheda IV sigue en §231 (PDF 197, y≈986).
+
+H14. §229 (PDF 197, y≈405): el (ခ) cierra con «ကစ္စည်းဝုတ္တိသို့ မလိုက်» («no sigue a la Kaccāyana-vutti»): el autor entiende *sesa* como «solo las vibhatti», porque el «ca» de *kissa ka ve ca* (§227 [I]) ya recogió los sufijos *thaṃ*, etc. ¿Conviene cotejarlo con la vutti de Nandisena (§229) y anotar en qué se aparta?
+
+- [ ] Revisado
+
+Decisión: 
+
+H15. §226 (PDF 196, y≈1020): el paréntesis de proceso tras *daṇḍini*: «(သ္မိံကို ဣပြု၊ န် လာ)» (lector) / «(သ္မိံကို ကပြု နဲ လာ)» (verificador). La serie de §212–§214 y §224–§225 apoya la del lector. Solo en Notas (véase H3).
+
+- [ ] Revisado
+
+Decisión: 
+
+H16. Términos propuestos para el glosario (no añadidos): **ambādi** (grupo de Moggallāna de las formas con smiṃ → ni, §226, PDF 196). (*okāsa*, que sale en §227, §228 y §230, ya está en el glosario.)
+
+- [ ] Revisado
+
+Decisión: 
+
+
+## I. Tanda 5 (§231–)
+
+Pariccheda IV desde §231 (PDF 197, y≈986). Preguntas abiertas y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 5 — filas (borrador)». Reglas por defecto (a), (b'), (c)–(i) y la (j) propuesta en §H, pendiente de confirmar.
+
+Sesión 10 (2026-10-04). Preguntas de §231–§235 y términos propuestos (no añadidos).
+
+I1. **§233 sin encabezado** (PDF 197): entre «(၂၃၂)» (y≈1376) y «(၂၃၃)» (y≈1623) solo están el encabezado y el (က) de §232 y un blanco (lector y verificador). La numeración del pariccheda también salta: 2.4.22 (§232) → 2.4.23 (§234). El enunciado del §233, «ဧ, တောထေသု၊ စ» (*E to-thesu ca*), está citado dentro del (က) de §231 (PDF 197, y≈1220–1270), como segunda vía para *etto*. Por defecto: fila de §233 con todas las celdas vacías; en Notas, que el libro no lo encabeza, que desde ahí el nº del libro es § − 1, y solo la ubicación de la cita. Desde §234, el encabezado se copia con el nº del libro y la fila lleva el § de Kaccāyana. ¿De acuerdo, o se quiere en la fila de §233 algo más (p. ej. el paso de §231 que lo usa)?
+
+- [ ] Revisado
+
+Decisión: 
+
+I2. §231 (PDF 197, y≈1270): «(ဧ, တောထေသု၊ စဖြင့် ဧတာကို ဧပြု။ ဒွိတ္တပြု။)»: ¿«စဖြင့်» es el «ca» final del enunciado + «ဖြင့်» («por *E tothesu ca*») o «por el "ca" de *E tothesu*»? Las dos lecturas lo dejan abierto. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+I3. §234 (PDF 197, y≈1640): la 1.ª letra del encabezado «(၂၃၃) ?မဿိ ထံ--»: «ဣ» (lector y verificador de §234; Claude a ×3, igual que la ဣ de «ဣမ» del (က)) / «ဏ္ဏ» (verificador de §232). Se anota ဣ con la discrepancia en Notas. ¿Lo mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: 
+
+I4. §234 (PDF 197–198): tras *idāni*, «(သုတ်ကြီးဖြင့် ဣချေ-ဒါနိပြီး၏)» —«por el "sutta grande", se elide la i; queda dāni»—. ¿Qué sutta es el «သုတ်ကြီး» (¿el *mahāsutta*?) y qué i se elide, si la segmentación impresa es «ဣမ+ဒါနိ»? Y tras *itthaṃ*: «ဒွိတ္တပြု» (verificador) / «ဒိတ္တပြု» (lector). Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+I5. Términos propuestos para el glosario (no añadidos): **pakāra** («modo», en la glosa «(အယံ ပကာရော)» de *itthaṃ*, §234, PDF 197). (*dvitta* ya figura en notas anteriores; comprobar si está en el glosario.)
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 10, segunda parte (2026-10-04). Preguntas de §236–§240 y términos propuestos (no añadidos).
+
+I6. §236 (PDF 198, y≈770): el encabezado imprime **«ဧတ ရဟိမှိ စ»** (*Eta rahimhi ca*), tipadaṃ, con un «ca» que la concordancia (*Eta rahimhi*) no tiene (las dos lecturas). El libro no comenta ese «ca». ¿Se coteja con la edición de Nandisena?
+
+- [ ] Revisado
+
+Decisión: 
+
+I7. **Formas sacadas «por el vā» que no son contraejemplos** («ဝါဖြင့် … သက်», «por el "vā" se pone…»): §238 *pathavī*, *gāvī* (el (ခ) dice que muestran palabras de fuera del grupo nadādi) y §240 *vidunī*, *viññunī*, *yakkhinī*, *sīhinī* (el enunciado de §240 no lleva «vā»; el libro no dice de dónde viene). Van al Ejemplo sin etiqueta, como H1, y el motivo en Notas. «(vā)» queda para «ဝါမြစ်» (lo impide el «vā»: §231 *etto*, §239 *vajantā*). ¿De acuerdo, o se quiere otra etiqueta para estas?
+
+- [ ] Revisado
+
+Decisión: 
+
+I8. **Segmentaciones sin nada tras «+»**: §237 «သဒ္ဓ, ကည+ဤဖြင့်» (sin la ā), §239 «ဂုဏဝန္တု+», §240 «ရာဇ+», «ဝိဒူ+», «ယက္ခ, သီဟ+». Se copian así («saddha, kañña + → saddhā, kaññā»), sin completar el sufijo. En §237 el verificador no descarta que «ဤ» sea la vocal ī y no «por este». ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+I9. §240 (PDF 202): la forma *vidunī*, *viññunī* con u breve y la segmentación «ဝိဒူ+», «ဝိညူ+» con ū larga (las dos lecturas); en el (ခ), las mismas palabras con ū larga («ဝိဒူနီ, ဝိညူနီ», de Moggallāna). Se copian como están. Y la ဣ de esta tipografía: el lector de §240 leyó «ကနီ», «ကတ္ထိလိင်» donde el verificador lee «ဣနီ», «ဣတ္ထိလိင်» (como en §234, I3); se copia ဣ.
+
+- [ ] Revisado
+
+Decisión: 
+
+I10. §239 (PDF 199–202): el (ခ) más largo de la tanda —un tratado de los femeninos en ī por clases (*jāti*, *guṇa*, *svaṅga*, los grupos *soṇādi*, *svasādi*, *ajādi*), con versos de definición sin obra nombrada— va resumido página por página, con lector y dos verificadores. Ninguna forma con «*» en el (ခ). ¿Basta el resumen, o se quiere el material aparte (como H12 para §221)?
+
+- [ ] Revisado
+
+Decisión: 
+
+I11. Términos propuestos para el glosario (no añadidos): **bhāsitapuma** («que también se usa en masculino», §237, §240); **niyatitthiliṅga** («de femenino fijo», §237, §239); **jotaka / vācaka** aplicados al sufijo ā (§237; ya propuestos en H13); **anadādi** (§238); **svaṅga** («miembro del propio cuerpo», §239); **soṇādi**, **svasādi**, **ajādi** (grupos, §239); **upamāna** (§239, §240; comprobar si está).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 10, tercera parte (2026-10-04). Preguntas de §241–§245 y términos propuestos (no añadidos).
+
+I12. **Contraejemplos de un «vā» que el enunciado no tiene**: §241 *guṇavantī*, *gacchantī* («ဝါမြစ်»; *Ntussa tam īkāre* no lleva «vā»), como §226. Se etiquetan «(vā)» como los demás; el libro no dice de dónde viene el «vā». ¿Se anota la procedencia (anuvutti, [I]) o se deja así?
+
+- [ ] Revisado
+
+Decisión: 
+
+I13. §243 (PDF 204): las formas sacadas «por el tu» (*bhante … bhaddante*, en grupos de «(၉-ရုပ်)», «(၅-ရုပ်)», «(၄-ရုပ်)», «(၃-ရုပ်)», abreviados con «လ», «ပ») se copian como están, sin enumerar las intermedias (regla (d)), y sin etiqueta (H1). El cierre del (က), «*ဘောတာ, *ဘောတောကား နည်းပြမျှ သာ» (*bhotā*, *bhoto* solo muestran el método), va a Notas: son formas con «*» de remisión, no del sutta. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+I14. §244 (PDF 204, y≈1790–1850): el (ခ) «အကာရဖြင့်- မနော, ပု, ဂု, ပုမာ, ဂစ်, ရာဇာ, စိတ်ယူ။ ပိတာဒိဖြင့် ပိတာဒိဂိုဏ်းတက်နှင့်တကွ သတ္ထာဒိဂိုဏ်းမ ယူ။»: ¿«စိတ်» es *citta* de la lista (Claude) y «ယူ» el verbo «tómese»? ¿«မ ယူ» es «(femenino) tómese» o «no se toma»? Las dos lecturas copian el texto y dejan el sentido abierto. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+I15. §245 (PDF 205, y≈540): «ထို့ပြင် ဩ၌ ဘော ဂေါဟု ပြီးသည်» (lector); el verificador no lee la palabra tras «ထို့ပြင်». Y «ဂဟံ» vuelve en la lista de pa (H5). Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+I16. Términos propuestos para el glosario (no añadidos): **pariyāya-sadda** («sinónimo», §243, PDF 204); **satthādi-gaṇa**, **pitādi-gaṇa** (§244, PDF 204); **gacchantādi** (§243).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 10, cuarta parte (2026-10-04). Preguntas de §246–§250 y términos propuestos (no añadidos). **La tanda se para aquí** por la regla de parada (≥2 discrepancias en celdas cotejadas en el lote §246–§250, las dos en §248).
+
+I17. **Discrepancias en celda cotejada**, §248 (PDF 206, y≈1790–1830), en el Ejemplo: (1) la forma junto a *piṭṭhito*, «ပစ္ဆတော» (*pacchato*, lector) / «ပဿတော» (*passato*, verificador, que no descarta ဃ); (2) «*အနိဿတော» (*anissato*), que solo da el verificador. Claude, a ×2, ve un glifo más parecido a ဿ y no ve otra forma con «*» entre «ပိဋ္ဌိတော နည်းတူ» y «*အနိစ္စတော». Las dos formas están fuera de la celda, en la DUDA de Notas. ¿Las mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: 
+
+I18. §246 (PDF 205): «အာကာရော-ကာရီ» da un rol con valor (kārī: *ākāro*, [V]); el (ခ) dice además que «la ā derivada es el kāriya de *akārapitā-*» —un rol de otro sutta—, que va a Notas y no a Funciones. Y «အရဿပြု»: «se hace a breve» (lector, como piden las formas *sa*, *purisa*) / «se hace no breve» (verificador). ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+I19. §247 (PDF 206): el libro imprime el enunciado **«တွာဒယော ဝိဘတ္တိသညာ»**, sin -yo, y en el (ခ) lo justifica con el Kalāpa («la obra en que se apoya», marca «(၂၄)», verso *vibhattisaññā viññeyyā …*) frente a la Rūpasiddhi-ṭīkā y «muchos textos», que leen *vibhattisaññāyo*. ¿Se coteja el verso con el Kalāpa? ¿«(၂၄)» es nº de sutta o nota?
+
+- [ ] Revisado
+
+Decisión: 
+
+I20. §249 (PDF 207): **«သဗ္ဗနာမေဟိ- ဟု ဝိသယကို…»** da un rol con valor: visaya: *sabbanāmehi* [V, las dos lecturas], primera vez en la tanda. Y §248 dice «သဒ္ဒါဝိသယ မပါ» (no se especifica el visaya de palabra): rol sin valor → Notas por (h). ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+I21. Términos propuestos para el glosario (no añadidos): **pakati-ā / vikati-ā** («ā natural / ā derivada», §246); **paccatta** («nominativo», en la glosa de la Aṭṭhakathā, §248); **dvādi** (el grupo dvi, tumha, amha, excluido del visaya, §249). (*yogavibhāga*, *okāsa*, *visaya* ya están.)
+
+- [ ] Revisado
+
+Decisión: 

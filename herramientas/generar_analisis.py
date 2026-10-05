@@ -45,7 +45,9 @@ PLANTILLA = os.path.join(DIR, "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "analisis", "index.html")
 PREGUNTAR = os.path.join(RAIZ, "site", "recursos", "analisis", "preguntar.json")
 
-ROLES = {"kāriyī", "kāriya", "nimitta", "saññā", "saññī", "visaya", "visayī"}
+ROLES = {"kāriyī", "kāriya", "nimitta", "saññā", "saññī", "visaya", "visayī", "visesana"}
+# «visesana» como función propia: cuando el libro lo enumera suelto (§221, «စ-ဝိသေသန»)
+# y no se sabe a qué palabra califica (v0.7).
 CASOS = {"7", "5", "3", "5+7"}
 MARCA = re.compile(r"\{(k|n|r|x|kx|nx)\|([^{}|]+)\}")
 # Las funciones de la columna llevan globo por su nombre (RK de la plantilla).
