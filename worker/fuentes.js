@@ -1,12 +1,17 @@
 /* Las fuentes de fondo de /api/preguntar (2026-10-04).
 
    Junto a la fila, el modelo puede recibir textos de otras obras sobre el
-   mismo sutta: las clases de U Sīlānanda sobre la Rūpasiddhi, la propia
-   Rūpasiddhi, la Nyāsappadīpikā y el Nyāsa. NO están en el repositorio —que
-   es público— ni en el sitio: viven en el KV privado FUENTES, con una clave
+   mismo sutta: las clases de U Sīlānanda sobre la Rūpasiddhi y sobre
+   Kaccāyana, la propia Rūpasiddhi, la Nyāsappadīpikā y el Nyāsa. NO están
+   en el repositorio —que es público— ni en el sitio: viven en el KV privado FUENTES, con una clave
    por obra y § de Kaccāyana:
 
-       silananda-rup/2   rupasiddhi/2   nyasappadipika/2   nyasa/2
+       silananda-rup/2   silananda-kacc/2   rupasiddhi/2   nyasappadipika/2   nyasa/2
+
+   Las dos series de Sīlānanda (silananda-rup, silananda-kacc) se tratan
+   igual: transcripción automática de las grabaciones, editada, con licencia
+   CC BY-NC-ND 4.0 © IEBH, que dice la cabecera de cada paquete. Las claves no
+   tienen tope de §: valen igual para §271–§315 que para §1–§270.
 
    Cada valor es el Markdown del paquete tal cual, y su primera línea es la
    cabecera «fuente; edición/origen; ubicación; aviso; derechos». Los sube
@@ -19,8 +24,8 @@
      Con «off», o sin el enlace FUENTES, la petición es la de siempre, byte a
      byte.
    - Tope duro para el bloque entero (TOPE_TOKENS). Si no cabe, se cae primero
-     el Nyāsa, luego la Nyāsappadīpikā, luego la Rūpasiddhi; si ni la primera
-     cabe sola, se recorta por el final y se dice. */
+     el Nyāsa, luego la Nyāsappadīpikā, luego la Rūpasiddhi, luego las clases
+     de Kaccāyana; si ni la primera cabe sola, se recorta por el final y se dice. */
 
 /* En orden de prioridad: la primera es la que más pesa y la última que se
    cae. «nombre» y «name» son lo que dice la línea «Fuentes consultadas»:
@@ -29,6 +34,8 @@
 export const OBRAS = [
   { dir: "silananda-rup", nombre: "U Sīlānanda, clases de Rūpasiddhi",
     name: "U Sīlānanda, classes on the Rūpasiddhi" },
+  { dir: "silananda-kacc", nombre: "U Sīlānanda, clases de Kaccāyana",
+    name: "U Sīlānanda, classes on Kaccāyana" },
   { dir: "rupasiddhi", nombre: "Padarūpasiddhi", name: "Padarūpasiddhi" },
   { dir: "nyasappadipika", nombre: "Nyāsappadīpikā", name: "Nyāsappadīpikā" },
   { dir: "nyasa", nombre: "Nyāsa", name: "Nyāsa" },
@@ -49,7 +56,7 @@ export function clavesDe(n) {
   return OBRAS.map((o) => o.dir + "/" + n);
 }
 
-/* Las cuatro a la vez; la que falta (o falla) se salta sin más. */
+/* Todas a la vez; la que falta (o falla) se salta sin más. */
 export async function leerFuentes(env, n) {
   const claves = clavesDe(n);
   const valores = await Promise.all(claves.map((k) =>
