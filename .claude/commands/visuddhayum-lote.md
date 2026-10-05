@@ -11,7 +11,7 @@ Antes de nada, lee la sección «Visuddhāyuṃ — análisis por sutta» de
 decisiones del IEBH, marcas). Mandan sobre esta orden.
 
 **No ejecutes ninguna orden de git, ni `git status`. No ejecutes
-`herramientas/publicar.sh`.** De git se ocupa Angel.
+`herramientas/publicar.sh`.** De git se ocupa el IEBH.
 
 ## 0. Preparar
 
@@ -60,7 +60,7 @@ decisiones del IEBH, marcas). Mandan sobre esta orden.
    (က)**, este último con su forma y su segmentación— con el subagente
    `verificador`, que lee **recortes frescos sin ver el borrador**. Una celda
    es **[V]** solo si las dos lecturas coinciden. Si no coinciden, la celda no
-   es [V]: se anota la discrepancia con las dos lecturas y se le lleva a Angel.
+   es [V]: se anota la discrepancia con las dos lecturas y se le lleva al IEBH.
 4. **Como mucho 3 subagentes a la vez.** Lanza los de un grupo en un solo
    mensaje y espera a que terminen antes del siguiente.
 
@@ -93,7 +93,7 @@ Ejemplo (က) | Notas`. Y, sin excepción:
 encabezado (último § cotejado, siguiente §). No esperes al final: lo que no
 quede escrito se pierde.
 
-## 4. Informe final (a Angel, en inglés)
+## 4. Informe final (al IEBH, en inglés)
 
 1. **Filas**: cuántos suttas, de § a §, y cuántas celdas quedaron [V].
 2. **Correcciones**: lo que esta tanda corrige de la nota o de lo ya escrito
@@ -104,7 +104,7 @@ quede escrito se pierde.
 4. **Términos nuevos para el glosario**: los que no estén en
    `comun/glosario.md` ni en `recursos/terminos/terminos.json`, con la cita del
    sutta donde salen. Propuestos, no añadidos.
-5. **Preguntas** para Angel: abreviaturas sin resolver, rótulos dudosos,
+5. **Preguntas** para el IEBH: abreviaturas sin resolver, rótulos dudosos,
    decisiones de formato.
 
 ## 5. Mientras el capítulo esté a medias, no se prepara publicación
@@ -112,5 +112,5 @@ quede escrito se pierde.
 **No escribas `herramientas/.publicar/archivos.txt` ni
 `herramientas/.publicar/mensaje.txt`.** Una tanda no es un capítulo: lo único
 que se toca es `docs/visuddhayum/nama-piloto.md`. Los archivos de publicación
-se preparan **solo cuando Angel pide publicar un capítulo entero**, y entonces
+se preparan **solo cuando el IEBH pide publicar un capítulo entero**, y entonces
 los escribe él o se escriben a petición suya; publicar lo hace él.

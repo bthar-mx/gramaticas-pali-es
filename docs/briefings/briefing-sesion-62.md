@@ -202,7 +202,7 @@ commits siguientes fallaron con «Another git process seems to be running». Se
 resolvió con `rm -f .git/index.lock`.
 
 **A partir de aquí, Claude no lanza `git` en este repositorio**: prepara los
-cambios y entrega los comandos para que los ejecute Angel.
+cambios y entrega los comandos para que los ejecute el IEBH.
 
 ---
 

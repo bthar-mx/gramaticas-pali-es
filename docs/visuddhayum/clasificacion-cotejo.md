@@ -2,7 +2,7 @@
 
 **Alcance.** Solo lectura: no se ha tocado `recursos/clasificacion/`.
 
-**Corrección del 2026-10-03 (sesión 2 de Nāma):** en §90 la (ခ) dice «အန္တရင်» (antaraṅga); la fila decía «sin etiqueta». Decisión de Angel: antaraṅga / bāhiraṅga / ubhayaṅga van en «Clase de sutta» cuando el libro los da como rótulo, sin nota de diferencia con datos.json (es otro eje, no una contradicción).
+**Corrección del 2026-10-03 (sesión 2 de Nāma):** en §90 la (ခ) dice «အန္တရင်» (antaraṅga); la fila decía «sin etiqueta». Decisión del IEBH: antaraṅga / bāhiraṅga / ubhayaṅga van en «Clase de sutta» cuando el libro los da como rótulo, sin nota de diferencia con datos.json (es otro eje, no una contradicción).
 
 **Método.**
 
@@ -10,7 +10,7 @@
 - «datos.json ahora» se toma del `recursos/clasificacion/datos.json` actual (v0.6), no de los antiguos `claude/clasificacion_cap*_data.py.txt`.
 - **Marcas:** [V] = leído en la imagen; ? = no confirmado.
 - **Comparación:** «sin etiqueta» = el libro no da clase en las líneas leídas; «coincide» / «difiere» compara lo que dice el libro con datos.json.
-- Este cotejo no recomienda cambios: Angel decide.
+- Este cotejo no recomienda cambios: pendiente de revisión del IEBH.
 
 ## Sandhi
 
@@ -67,7 +67,7 @@ Se registran las dos posiciones, sin veredicto. La página del análisis lleva a
 | § | N.º libro | PDF | Texto del libro (tal como está impreso) | Traducción literal | datos.json ahora | Resultado |
 |---|---|---|---|---|---|---|
 | 65 | 65 | 123 | «(၆၅) တတော သဿ ဿာယ။ … တိပဒံ။» — (ခ): solo aṅga y funciones (tato: nimitta; sassa: kārī; ssāya: kāriya; vā: su visesana) [V] | — | V · ādesa (nota: Nyāsa lo llama apavāda del §179) | sin etiqueta (la sesión 2 de Nāma lee al final de la lista de rasgos «ဗဟိရင်ဝိဓိ», bāhiraṅga-vidhi: otro eje, véase la corrección arriba) |
-| 83 | 83 | 133 | «(၈၃) သရလောပေါ မာဒေသ-။ … ပဉ္စပဒံ။» — (ခ): «ဥဘယင် (လောပ-အန္တရင်၊ ပကတိ-ဗာဟိယင်)။ အင်္ဂါ ၂-ပါး။ အမာဒေသပစ္စယာဒိမှိ-နိမိတ်။ သရ-ကာရီ။ လောပေါ-ကာရိယ။» [V] | «Ubhayaṅga (the lopa is antaraṅga, the pakati bāhiraṅga). Two aṅga. "aṃ-ādesa-paccayādimhi": nimitta. "sara": kārī. "lopo": kāriya.» | V · lopa + ādesa (grupo pakati; nota: Rū 67, apavāda del §13) | sin etiqueta de apavāda; **ubhayaṅga** va en «Clase de sutta» (decisión de Angel, 2026-10-03), sin nota de diferencia |
+| 83 | 83 | 133 | «(၈၃) သရလောပေါ မာဒေသ-။ … ပဉ္စပဒံ။» — (ခ): «ဥဘယင် (လောပ-အန္တရင်၊ ပကတိ-ဗာဟိယင်)။ အင်္ဂါ ၂-ပါး။ အမာဒေသပစ္စယာဒိမှိ-နိမိတ်။ သရ-ကာရီ။ လောပေါ-ကာရိယ။» [V] | «Ubhayaṅga (the lopa is antaraṅga, the pakati bāhiraṅga). Two aṅga. "aṃ-ādesa-paccayādimhi": nimitta. "sara": kārī. "lopo": kāriya.» | V · lopa + ādesa (grupo pakati; nota: Rū 67, apavāda del §13) | sin etiqueta de apavāda; **ubhayaṅga** va en «Clase de sutta» (decisión del IEBH, 2026-10-03), sin nota de diferencia |
 | 85 | 85 | 135 | «(၈၅) န သိသ္မိံ မနပုံသကာနိ။ … တိပဒံ။» — (ခ): «အဃောရဿ-၌ ပတိသေဓအပိအရ သရုပ်ပြ၍ နေရာချသော နိယမသုတ်တည်း။» [V] | «It is a niyama-sutta that, showing in its own form the "api" of prohibition in "agho rassaṃ…" (§84), assigns it its place.» | V · paṭisedha (nota: niyama según Rū 150, Nyāsa, Bhāsāṭīkā, U Sīlānanda) | **coincide con la nota** (niyama); la vidhi «paṭisedha» no se contradice |
 | 90 | 90 | 137–138 | «(၉၀) ပဉ္စာဒီနမတ္တံ။ … ဒွိပဒံ။» — (ခ): «သုနံဟိသုစ ဖြင့် နံကြောင့်ဒီဃ၊ သုဟိသွ-ဖြင့် သုဟိကြောင့် ဧပြုကိုပြသည်။ အန္တရင်။ နိမိတ်စသည်ခွဲ။ တိလိင်။ သချာ ၁၁-ပုဒ်။ သဗ္ဗနာမ်ဂိုဏ်း။» [V] | «…shows the lengthening before naṃ (by "sunaṃhisu ca") and the e before su, hi (by "suhisv a"). Antaraṅga. Analyse the nimitta, etc. Three genders. Numerals: 11 words. Sabbanāma group.» | V · ādesa (nota: apavāda, Rū 252) | **antaraṅga** (corregido el 2026-10-03; antes «sin etiqueta en las líneas leídas»); otro eje, no contradice ādesa |
 | 134 | 134 | 156 | «(၁၃၄) ပဉ္စာဒီနမကာရော။ … ဒွိပဒံ။» — (ခ), entero: sobre qué numerales son «pañcādi» [V] | — | V · ādesa (nota: apavāda del §107) | sin etiqueta |
@@ -87,7 +87,7 @@ Se registran las dos posiciones, sin veredicto. La página del análisis lleva a
 - En ninguno de los 11 aparece «apavāda» ni «atidesa» en las líneas leídas.
 - Nada de esto afecta a la página del análisis (solo Sandhi), que sigue en v0.2.2.
 
-## Pakati: resumen de fuentes (para Angel)
+## Pakati: resumen de fuentes (para el IEBH)
 
 - **El sitio (datos.json v0.6):**
   - Sigue a Thitzana, que pone la pakati dentro de la ādesa: §23 y §24 = V · ādesa, grupo pakati.

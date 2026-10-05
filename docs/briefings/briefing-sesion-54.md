@@ -166,7 +166,7 @@ Y al terminar:
 
 ### El método, afinado por trece páginas
 
-    pdfimages -j -f N -l N recursos/saddaniti/conspectus-ejemplar-angel.pdf salida
+    pdfimages -j -f N -l N recursos/saddaniti/conspectus-ejemplar-iebh.pdf salida
 
 **Hoja = página impresa − 1104.** Lo que se ha aprendido haciéndolo:
 

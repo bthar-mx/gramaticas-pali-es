@@ -31,7 +31,7 @@ Con esto queda entera la sección 6.1 (la palabra y su sentido) y casi entera la
 
 ## 2. LA FUENTE DE IMAGEN HA CAMBIADO: EL EJEMPLAR DEL IEBH
 
-`recursos/saddaniti/conspectus-ejemplar-angel.pdf`, 44 fotogramas, las páginas
+`recursos/saddaniti/conspectus-ejemplar-iebh.pdf`, 44 fotogramas, las páginas
 **1105-1148** completas, una por fotograma y en orden, cortadas justo donde
 empieza el Conspectus métrico. Hechas con un iPhone el 2026-09-04.
 
@@ -75,7 +75,7 @@ mismo vive sólo en su disco. **Es decisión suya** si quiere una excepción en
 extracción:
 
     # hoja del PDF = página impresa − 1104 (la 1135 es la 31)
-    pdfimages -j -f 31 -l 31 recursos/saddaniti/conspectus-ejemplar-angel.pdf /tmp/p
+    pdfimages -j -f 31 -l 31 recursos/saddaniti/conspectus-ejemplar-iebh.pdf /tmp/p
 
 `pdfimages -j` copia el JPEG original y tarda milisegundos; `pdftoppm` sobre
 este archivo reescala mal, porque las cajas de página no son uniformes.
@@ -305,7 +305,7 @@ ficha, sin tocar ninguna de las dos definiciones.
 
     # la página impresa N del ejemplar del IEBH (hoja = N − 1104)
     pdfimages -j -f $((N-1104)) -l $((N-1104)) \
-      recursos/saddaniti/conspectus-ejemplar-angel.pdf /tmp/p
+      recursos/saddaniti/conspectus-ejemplar-iebh.pdf /tmp/p
 
     # el cuerpo de la obra, para verificar referencias
     python3 herramientas/pagina_saddaniti.py 911

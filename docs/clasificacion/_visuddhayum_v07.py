@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Decisión C (Angel, 2026-10-03): seguir las etiquetas de la Visuddhāyuṃ
+# Decisión C (IEBH, 2026-10-03): seguir las etiquetas de la Visuddhāyuṃ
 # solo donde el libro las da. Se ejecuta una vez; se niega si datos.json no es v0.6.
 import json, os, re, sys
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

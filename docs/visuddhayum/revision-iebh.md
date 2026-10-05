@@ -986,7 +986,7 @@ D2. Nota de versión v0.4 (pie de la página, ES y EN): dice «La columna «Anuv
 
 Decisión: 
 
-D3. Añadido por Claude. Etiquetas de caso del nimitta deducidas de la terminación donde el libro no las pone (ghato, pato, lato, jhalato → 5.ª: §111, §112, §114, §116, §117, §119, PDF 148–151; tato → 5.ª en §77, PDF 129); el generador exige una en cada nimitta. Añadido por decisión de Angel (2026-10-04): §175, *sabbattha* → 7.ª (PDF 173–174). Añadidas en la v0.7, pendientes de la decisión del IEBH: §216, *ghato* → 5.ª (PDF 189); §220, *sesato* → 5.ª (PDF 190); §221, *āvuso …pa… dīhi* → 3.ª (PDF 191), como proponía la fila de trabajo, aunque la 5.ª también se puede defender (compárese §106, *dīghorehi* → 5.ª).
+D3. Añadido por Claude. Etiquetas de caso del nimitta deducidas de la terminación donde el libro no las pone (ghato, pato, lato, jhalato → 5.ª: §111, §112, §114, §116, §117, §119, PDF 148–151; tato → 5.ª en §77, PDF 129); el generador exige una en cada nimitta. Añadido por decisión del IEBH (2026-10-04): §175, *sabbattha* → 7.ª (PDF 173–174). Añadidas en la v0.7, pendientes de la decisión del IEBH: §216, *ghato* → 5.ª (PDF 189); §220, *sesato* → 5.ª (PDF 190); §221, *āvuso …pa… dīhi* → 3.ª (PDF 191), como proponía la fila de trabajo, aunque la 5.ª también se puede defender (compárese §106, *dīghorehi* → 5.ª).
 
 - [ ] Revisado
 
@@ -1062,7 +1062,7 @@ Decisión:
 
 ## F. Tanda 2 (§120–)
 
-Sesión 5 (2026-10-03). Preguntas abiertas de las tandas §120–§139, reglas por defecto aplicadas a petición de Angel pendientes de su revisión, y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 2 — filas (borrador)».
+Sesión 5 (2026-10-03). Preguntas abiertas de las tandas §120–§139, reglas por defecto aplicadas a petición del IEBH pendientes de su revisión, y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 2 — filas (borrador)».
 
 F1. §121–§123 y §130 (PDF 152–153, 155): el libro dice «လွယ်ပြီ / လွယ်၏» («es fácil») en lugar de repartir funciones o pedir que se analicen (ခွဲ). Las filas dicen «el libro no las da», sin respuesta sugerida. ¿Se añade también aquí una «Respuesta sugerida (IEBH)»?
 
@@ -1622,7 +1622,7 @@ G17. §170 (PDF 172, y≈700): el único rol que nombra el libro es el visesana 
 
 - [x] Revisado
 
-Decisión: decisión de Angel (2026-10-04): por defecto, aceptado. §170 y §172 se tratan como §188 (regla (h)): el rol nombrado sin valor no va a Funciones, que queda vacía; la frase va a Notas.
+Decisión: decisión del IEBH (2026-10-04): por defecto, aceptado. §170 y §172 se tratan como §188 (regla (h)): el rol nombrado sin valor no va a Funciones, que queda vacía; la frase va a Notas.
 
 G18. §166 (PDF 169–170): el (ခ) trae formas con «*» propias (māsapubbā, māsapubbe, māsapubbāya) y otras sin «*» («…ဟပုဗ္ဗ», sattāhāvara). Se anotan aparte de las del (က), como en la tanda 2. Primera voz: «ကောဟပုဗ္ဗ» según se ve impreso, quizá ဧကာဟပုဗ္ဗ (ekāhapubba). Y el nombre que da el libro al sutta, «နာညံသဗ္ဗနာမိကံ-ဝိနာမိကာရသုတ်» (PDF 169, y≈1640): no se sabe qué es «ဝိနာမိကာရ».
 
@@ -1938,19 +1938,19 @@ G66. §201 (PDF 184, y≈670), columna Clase: el lector no ve rótulo; el verifi
 
 - [x] Revisado
 
-Decisión: decisión de Angel (2026-10-04): por defecto, aceptado. Clase de §201 vacía; la frase «ဝိကပ္ပဝိဓိ …» del cuerpo del (ခ) queda en Notas.
+Decisión: decisión del IEBH (2026-10-04): por defecto, aceptado. Clase de §201 vacía; la frase «ဝိကပ္ပဝိဓိ …» del cuerpo del (ခ) queda en Notas.
 
 G67. §204 (PDF 184, y≈2025): la primera forma se imprime «သက္ကမန္ဒာတု», *sakkamandātu*, con ဒ (las dos lecturas, ×6 y ×12), frente a ဓ en mahāmandhātu, mandhātu y el encabezado. Probable errata del libro. La celda la copia tal cual con [V]. ¿Se enmienda a *sakkamandhātu* con nota, o se deja?
 
 - [x] Revisado
 
-Decisión: decisión de Angel (2026-10-04): por defecto. §204 se deja como está impreso, *sakkamandātu* (con ဒ), con nota que señala la probable errata frente a *mandhātu*; no se enmienda.
+Decisión: decisión del IEBH (2026-10-04): por defecto. §204 se deja como está impreso, *sakkamandātu* (con ဒ), con nota que señala la probable errata frente a *mandhātu*; no se enmienda.
 
 G68. Limpieza de las columnas de página (sesión 8, 2026-10-04): las formas y segmentaciones sin [V] de la tanda 3 (§167, §168, §173, §181, §183, §192, §193, §198) estaban escritas en la celda del Ejemplo con «?» o «sin [V]: véase la DUDA». Se han sacado de la celda: ahora solo están en la DUDA de Notas, con las dos lecturas. Donde el motivo sí era [V] y la forma no (§183, 1.ª forma), el motivo pasa a Notas. ¿De acuerdo con este criterio?
 
 - [x] Revisado
 
-Decisión: decisión de Angel (2026-10-04): aprobado. Lo que no es [V] sale de las celdas de página y queda solo en Notas (DUDA con las dos lecturas).
+Decisión: decisión del IEBH (2026-10-04): aprobado. Lo que no es [V] sale de las celdas de página y queda solo en Notas (DUDA con las dos lecturas).
 
 Sesión 8, cuarta parte (2026-10-04). §206–§210: tanda 3 completa. Preguntas y términos propuestos (no añadidos).
 
@@ -1966,7 +1966,7 @@ G70. **satthādi-gaṇa / pitādi-gaṇa / rattādi-gaṇa** («သတ္ထာ�
 
 Decisión: 
 
-**Decisión de Angel (2026-10-04), al cerrar la tanda 3 y antes de la tanda 4.**
+**Decisión del IEBH (2026-10-04), al cerrar la tanda 3 y antes de la tanda 4.**
 
 - **G68 aprobado**: lo que no es [V] sale de las celdas de página y queda en Notas.
 - **G67, por defecto**: §204 se deja como está impreso (*sakkamandātu*), con nota.
@@ -1978,7 +1978,7 @@ Decisión:
 
 ## H. Tanda 4 (§211–)
 
-Pariccheda IV («နာမ် / စတုတ္ထပိုင်း», PDF 188 en adelante). Preguntas abiertas y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 4 — filas (borrador)». Reglas por defecto (a), (b'), (c)–(i) de las tandas 2 y 3, con la forma nueva del motivo de los contraejemplos (decisión de Angel, 2026-10-04, punto 1).
+Pariccheda IV («နာမ် / စတုတ္ထပိုင်း», PDF 188 en adelante). Preguntas abiertas y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 4 — filas (borrador)». Reglas por defecto (a), (b'), (c)–(i) de las tandas 2 y 3, con la forma nueva del motivo de los contraejemplos (decisión del IEBH, 2026-10-04, punto 1).
 
 Sesión 9 (2026-10-04). Preguntas de §211–§215 (no hay términos nuevos; véase H3).
 
@@ -2064,7 +2064,7 @@ H13. Términos propuestos para el glosario (no añadidos): **jotaka / vācaka** 
 
 Decisión: 
 
-**Regla por defecto propuesta (corrección del asesor, 2026-10-04), para que Angel la confirme:** (j) **formas con «*» de ejemplo (no contraejemplos) dentro de un (ခ) → Notas**, aparte, con lo que diga el libro de ellas; nunca al Ejemplo ni a Funciones (así en §216 *parisati*, *sabhati*; §221 *byayaṃ* … *anutāpe*; §226 *ambuni*, *paṃsuni*). Y: donde una página del (ခ) solo la ha leído el lector, lo que se anote de ella en Notas va rotulado «lectura de un solo lector, sin verificar» (§221, PDF 191 y≈1530 → 195).
+**Regla por defecto propuesta (corrección del asesor, 2026-10-04), para que el IEBH la confirme:** (j) **formas con «*» de ejemplo (no contraejemplos) dentro de un (ခ) → Notas**, aparte, con lo que diga el libro de ellas; nunca al Ejemplo ni a Funciones (así en §216 *parisati*, *sabhati*; §221 *byayaṃ* … *anutāpe*; §226 *ambuni*, *paṃsuni*). Y: donde una página del (ခ) solo la ha leído el lector, lo que se anote de ella en Notas va rotulado «lectura de un solo lector, sin verificar» (§221, PDF 191 y≈1530 → 195).
 
 - [ ] Revisado
 
@@ -2203,7 +2203,7 @@ I17. **Discrepancias en celda cotejada**, §248 (PDF 206, y≈1790–1830), en e
 
 - [ ] Revisado
 
-Decisión: 
+Decisión: por defecto (v0.8), pendiente de revisión del IEBH: las dos formas disputadas quedan fuera del Ejemplo de §248; la duda, en Notas.
 
 I18. §246 (PDF 205): «အာကာရော-ကာရီ» da un rol con valor (kārī: *ākāro*, [V]); el (ခ) dice además que «la ā derivada es el kāriya de *akārapitā-*» —un rol de otro sutta—, que va a Notas y no a Funciones. Y «အရဿပြု»: «se hace a breve» (lector, como piden las formas *sa*, *purisa*) / «se hace no breve» (verificador). ¿De acuerdo?
 
@@ -2228,3 +2228,143 @@ I21. Términos propuestos para el glosario (no añadidos): **pakati-ā / vikati-
 - [ ] Revisado
 
 Decisión: 
+
+## J. Tanda 6 (§251–)
+
+Pariccheda V desde §251 (PDF 207, y≈1537) hasta §270, último sutta de Nāma. Preguntas abiertas y términos propuestos para el glosario (no añadidos). Detalle en `nama-piloto.md`, «Tanda 6 — filas (borrador)». Reglas por defecto (a), (b'), (c)–(i) y la (j) propuesta en §H, como en la tanda 5.
+
+Sesión 11 (2026-10-04). Preguntas de §251–§255 y términos propuestos (no añadidos).
+
+J1. **Discrepancia en celda cotejada**, §251 (PDF 207, y≈1700), segmentación de la 2.ª *kva*: «ကိံ+အာ» (*kiṃ + ā*, lector) / «ကိံ+အ» (*kiṃ + a*, verificador). Claude, a ×3, ve un ာ separado, igual al de «ကာ» que sigue [I]; el sentido (femenino kā) pide ā. La forma *kva* es [V]; la segmentación queda sin [V], en la DUDA de Notas. ¿La mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto (v0.8), pendiente de revisión del IEBH: la 2.ª *kva* va en el Ejemplo; su segmentación, fuera de la celda; la duda, en Notas.
+
+J2. §252 (PDF 208, y≈302): el encabezado imprime la 3.ª palabra «ဟိံဉ္စနံ», con ိံ sobre ဟ (verificador; Claude a ×2), donde el enunciado es *hiñcanaṃ* (el lector transcribe «ဟိဉ္စနံ»). Se copia como está impreso, sin normalizar, y se dice en Notas. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+J3. **Contraejemplos de un «vā» que el enunciado no tiene**: §251 (*kismiṃ, kesu; kissaṃ, kāsu*, «ဝါမြစ်၍စီရင်»; *Kiṃsmā vo*) y §252 (*kismiṃ*, etc., «ဝါမြစ်»; *Hiṃ haṃ hiñcanaṃ*). Se etiquetan «(vā)» como en I12; el libro no dice de dónde viene el «vā».
+
+- [ ] Revisado
+
+Decisión: 
+
+J4. **Suttas sin (က) ni (ခ) con «(အလုံးစုံလွယ်၏)»** («todo es fácil»: §253, y §258 según el lector) y «(လွယ်ပြီ)» (§255), en la línea del encabezado. Por (f), Ejemplo vacío y la frase en Notas. ¿De acuerdo, o se quiere que la página diga algo en estas filas?
+
+- [ ] Revisado
+
+Decisión: 
+
+J5. **(က) que solo remite**: §252 («ကု ဟိံဟံသု စ၊ ကြည့်» + un contraejemplo) y §254 («ဣမဿိထံ-သုတ်ကြည့်», ninguna forma con «*»). La remisión va al Ejemplo glosada «cf.», como las demás remisiones «(… ကြည့်)». Las identificaciones (*ku hiṃhaṃsu ca* = §228; *imassi thaṃ-* = §234; *kissa ka ve ca* = §227) son [I] y van en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+J6. Términos propuestos para el glosario (no añadidos): **ṭhānivādesa** («el sustituto vale como lo sustituido», en el paréntesis «(ဌာနိဝါဒေသော)» de §251; comprobar si está, cf. §62). (*okāsa* ya está.)
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 11, segunda parte (2026-10-04). Preguntas de §256–§260 y términos propuestos (no añadidos). Ninguna discrepancia en celdas cotejadas.
+
+J7. §256 (PDF 208, y≈1085): el (ခ) abre con «။အဓိကာရသုတ်တည်း။» («es un adhikāra-sutta»). Las dos lecturas leen la misma frase; el verificador la copia y deja abierto si es rótulo de clase. Se pone en «Clase de sutta» como *adhikāra-sutta* [V], en la forma de §52 y §68 (frase «… သုတ်တည်း» al principio del (ခ)). Es el primer rótulo de clase desde §211. ¿De acuerdo? (Clasificación del sitio: adhikāra.)
+
+- [ ] Revisado
+
+Decisión: por defecto (v0.8), pendiente de revisión del IEBH: Clase de §256 = *adhikāra-sutta*, como está impresa («အဓိကာရသုတ်တည်း»).
+
+J8. §259 (PDF 209): el (ခ) entero (una página) discute si los sufijos de vibhatti como tra/tha van en singular o también en plural, con tres citas de aṭṭhakathā (una con referencia impresa: «မူလပဏ္ဏာသ သလ္လေခသုတ် အဋ္ဌကထာ-၁၈၆»). Va resumido en Notas, por (e), con las citas pāḷi transcritas a ojo. Dos cosas por mirar: (1) la obra de la 1.ª cita, impresa «မဇ္ဈိမပဏ္ဏာသာဘယသုတ္တဋ္ဌကထာ» (¿*paṇṇāsa* + *Abhaya-sutta*, MN 58? [I]; y≈760–821); (2) el sentido de la frase sobre *kāmato* / *kāmehi* (y≈944–1130): el lector y Claude entienden «no ha de tomarse *kāmato* por singular»; el verificador lo entendió al revés. Solo en Notas. ¿Se cotejan las citas con el CST?
+
+- [ ] Revisado
+
+Decisión: 
+
+J9. §259: **formas con «*» dentro del (ခ)**: *kadāci*, *karahaci* (PDF 209, y≈337–405), dadas como formas pāḷi con rahi tras otros temas. A Notas por (j); no entran en el Ejemplo.
+
+- [ ] Revisado
+
+Decisión: 
+
+J10. §260 (PDF 209, y≈1695): segmentación impresa «သဗ္ဗ, သဗ္ဗာ+ဒါ» (*sabba, sabbā + dā*), con el 2.º tema en ā (las dos lecturas). Se copia así, como «သဗ္ဗ, သဗ္ဗာ+» de §250 (temas masculino y femenino [I]). Y el enunciado lleva «vā», pero el (က) no da contraejemplo. Solo en Notas.
+
+- [ ] Revisado
+
+Decisión: 
+
+J11. Términos propuestos para el glosario (no añadidos): **adhikāra-sutta** como rótulo de clase (§256; comprobar la entrada *adhikāra*); **kālattha-vācī** («que expresa tiempo», §256); **abhidheyya** («lo designado», §256); **jātyapekkha** («atendiendo a la clase», §259); **kālokāsa** («tiempo-lugar», §257).
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 11, tercera parte (2026-10-04). Preguntas de §261–§265 y términos propuestos (no añadidos).
+
+J12. **Celda cotejada sin acuerdo**, §262 (PDF 210, y≈755–805): el paréntesis de la segmentación de *jeyyo*, «ဝုဒ္ဓ (?) + ဣယော». El lector no lo lee (duda entre «(မှု)», «(ဗု)», «(ဓု)», a ×8); el verificador lee «(ဎု)» (*ḍhu*), con «ဍု» y «ဋု» como alternativas; Claude, a ×5, ve un glifo como ဎ con ု [I] (¿indicación de la grafía *vuḍḍha*?). La forma *jeyyo* y el resto de la segmentación son [V]; el paréntesis queda fuera, en la DUDA. ¿Lo mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto (v0.8), pendiente de revisión del IEBH: *jeyyo* y la segmentación van en el Ejemplo sin el paréntesis; la duda, en Notas.
+
+J13. §261 (PDF 209–210): grafías impresas que se copian sin corregir (las dos lecturas): «မဏ္ဍပ+ယော → မဏ္ဍပျော» (*maṇḍapa*, *maṇḍapyo*, con ပ abierto; ¿se esperaba *māṇḍabyo*?), «ကောရု+ယော» (*koru*, no *kuru*), «ကုဏ္ဍနီ+ယော → ကောဏ္ဍညော», y el resultado de ṇy / ny impreso con el glifo de ဥ («ဥပြု») donde el sentido pide ဉ (ñ). Y *bhātabyo* va sin «*» (las dos lecturas). ¿De acuerdo en copiarlas así?
+
+- [ ] Revisado
+
+Decisión: 
+
+J14. §263 (PDF 210, y≈1065): «*ဇေယျော, *ဇေဋ္ဌောနည်းတူ» —*jeyyo*, *jeṭṭho*, «igual»— con «*», sin segmentación y sin decir de dónde salen. Que vengan del «ca» de *Pasatthassa so ca* (pasattha → ja) es lectura del lector [I]. Van al Ejemplo sin etiqueta (H1), y la lectura del «ca», solo en Notas. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: 
+
+J15. **El glifo ဣ que parece «က္က»** en los sufijos *iya* / *iṭṭha* (§262–§265): las cuatro lecturas lo leen ဣ por las formas resultantes; un verificador lo transcribe literal («က္ကယော») y lo lee igual. Se copia ဣ. (Mismo caso que I9.)
+
+- [ ] Revisado
+
+Decisión: 
+
+J16. Términos propuestos para el glosario (no añadidos): **iya / iṭṭha** como sufijos de comparativo y superlativo (§262–§265; comprobar si están); *dvitta* ya figura en notas anteriores.
+
+- [ ] Revisado
+
+Decisión: 
+
+Sesión 11, cuarta parte (2026-10-04). Preguntas de §266–§270, cierre del capítulo y términos propuestos (no añadidos). Ninguna discrepancia en celdas cotejadas.
+
+J17. §266 (PDF 210): el libro imprime **«ကန်»** (*kan*, con န dental) en el encabezado y en el (က) (las dos lecturas, ampliadas hasta ×10); Nandisena da *Appassa kaṇ*. Y §269 (PDF 211): el encabezado imprime **«တလနဒ»** (*ta-la-na-da*), donde Nandisena da *ta-la-ṇa-da*. Se copian como están, con la diferencia en Notas. ¿De acuerdo?
+
+- [ ] Revisado
+
+Decisión: por defecto (v0.8), pendiente de revisión del IEBH: la columna Sutta conserva la grafía de Nandisena (*kaṇ*, *ta-la-ṇa-da*); la del libro va en Notas.
+
+J18. §269 (PDF 211–212): el (က) más largo de la tanda, 35 formas con «*» en ya (bhāva / taddhita), todas con su segmentación en la celda del Ejemplo, con los pasos abreviados. Grafías impresas que se copian sin corregir: «ဝိပလ္လဋ္ဌ / အဋ္ဌ» (*vipallaṭṭha*, ¿por *vipallattha*?), «ညာသော / ညာယော» (*ñāso*, *ñāyo*), «သာမာန», «ကောသီတ», «တစ္ဆံ» (el verificador no descarta စ por ဆ). ¿Basta así, o se quiere repartir el Ejemplo de algún modo (p. ej. solo las formas con paso propio)?
+
+- [ ] Revisado
+
+Decisión: 
+
+J19. §269, dos paréntesis sin resolver (solo en Notas): (1) PDF 211, y≈895–950, «(ပမှည့်၊ ပသညဿစဖြင့် ပိကို ယ်ပြု)» en *jaccandho* (ပ claro a ×8 en las dos lecturas); por el paralelo «(ဈမှည့်၊ …)» de *vipallāso*, «X-မှည့်» parece «con la saññā X» [I], pero qué sea aquí «ပ / ပိ» no se decide. (2) PDF 212, y≈330–380, la palabra citada en «(ဒုမ္မ?ကား ဤနှင့် မဆိုင်။ ဏျတ္တတာ ဘာဝေ စ ၌ကြည့်)»: «ဒုမ္မဇ္ဇံ» (verificador) / ilegible (lector). ¿Los mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: 
+
+J20. **Cierre de Nāma** (PDF 212), confirmado en la imagen por el lector, el verificador y Claude: «ပဉ္စမပိုင်းပြီး၏။» (y≈1019–1079), centrado, **sin «ဋီကာ»**; siete asteriscos (y≈1105–1150); un verso pāḷi de dos líneas sin obra nombrada, «ကာမဿာဒါနုယောဂိန၊ မတ္တဟိံသာနုယောဂိနံ။ / ယုဒ္ဓံ ဝိနဿတံ သီဃ- မေန္တု မဇ္ဈိမိကာသုခံ။» (y≈1286–1410; ¿«ဂိ» o «ဂီ» en la 1.ª palabra?: las lecturas difieren), y la fecha y el lugar «၀၄-၁၁-၅-ရက်နေ့၊ ပဲခူးဂူ» (y≈1447–1480), en la forma de la del pariccheda II («၀၄-၁၁-၀»). PDF 213 abre un ensayo titulado «နာမ်ဂိုဏ်း» (*nāma-gaṇa*), sin encabezado de sutta. ¿Se dice algo de esto en la página (fecha, verso), o solo en la nota?
+
+- [ ] Revisado
+
+Decisión: por defecto (v0.8), pendiente de revisión del IEBH: la nota de §270 menciona el cierre «ပဉ္စမပိုင်းပြီး၏။» y su línea de fecha y lugar, como la nota de §246 (nº 245 del libro) menciona el cierre del pariccheda IV; el verso no se reproduce.
+
+J21. Términos propuestos para el glosario (no añadidos): **padamālā** («guirnalda de palabras», paradigma; PDF 213, fuera de Nāma); **nāma-gaṇa** (ídem).
+
+- [ ] Revisado
+
+Decisión: 
+
+**Reglas por defecto aplicadas en la v0.8 (2026-10-04), pendientes de revisión del IEBH** (la publicación de §247–§270): I17, J1, J12 → lo disputado fuera de la celda, la duda en Notas; J7 → §256, clase *adhikāra-sutta*, como está impresa («အဓိကာရသုတ်တည်း»); J20 → la nota de §270 menciona el cierre «ပဉ္စမပိုင်းပြီး၏။» y la línea de fecha y lugar, sin reproducir el verso; J17 → la columna Sutta conserva la grafía de Nandisena, la del libro va en Notas. Además, como en la fila: I20, visaya *sabbanāmehi* en Funciones de §249 y «သဒ္ဒါဝိသယ မပါ» de §248 solo en Notas; J3, «(vā)» en los contraejemplos de §251 y §252; J4, filas de §253, §255, §258 sin Ejemplo y la frase «fácil» en Notas; J5, las remisiones con «cf.».

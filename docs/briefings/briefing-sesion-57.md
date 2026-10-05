@@ -204,8 +204,9 @@ de briefings y en seis `duda` del Conspectus— más la clave
 `lo_que_se_ve_en_el_ejemplar_de_…` de `diplomado.json` (nadie la lee por
 nombre) y las menciones del propio briefing 56. Hecho ahora, 29 archivos, con
 las preposiciones ajustadas («DEL IEBH», «LO QUE EL IEBH DECIDIÓ»). Lo único
-que queda es el nombre de archivo `conspectus-ejemplar-angel.pdf`, que no
-viaja, y `CLAUDE.md`, que es la excepción declarada.
+que queda es el nombre de archivo del PDF del Conspectus, que no viaja (renombrado
+`conspectus-ejemplar-iebh.pdf` el 2026-10-04), y `CLAUDE.md`, que es la
+excepción declarada (dejó de serlo el 2026-10-04).
 
 ---
 
@@ -250,7 +251,7 @@ viaja, y `CLAUDE.md`, que es la excepción declarada.
   `json.dump`**: los de las pp. 1136-1148 están escritos a mano, con listas
   en una línea, y el volcado los reformatea entero. Insertar la `duda` como
   texto.
-- Los tres PDF y `conspectus-ejemplar-angel.pdf` no viajan.
+- Los tres PDF y `conspectus-ejemplar-iebh.pdf` no viajan.
 
 ---
 
