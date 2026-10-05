@@ -318,6 +318,12 @@ footer a{color:var(--nila)}
 .subt{margin:6px 0 0;font-size:19px;color:var(--soot);font-style:italic}
 .badge-b{display:inline-flex;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
   border:1px solid var(--rakta);color:var(--rakta);border-radius:2px;padding:4px 8px}
+/* enlace a la guía para el estudiante (/recursos/analisis/guia/), sobre «Cómo leer esta tabla» */
+.guia-enlace{margin:12px 0 0;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.guia-enlace a{color:var(--nila);text-decoration:none;border-bottom:1px solid var(--hair)}
+.guia-enlace a::after{content:' →'}
+.guia-enlace a:hover{border-bottom-color:var(--nila)}
+.guia-enlace a:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
 details.plegable{margin:10px 0 0;max-width:86ch;border-top:1px solid var(--hair)}
 details.plegable>summary{cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--soot);padding:9px 0 7px;list-style:none}
 details.plegable>summary::-webkit-details-marker{display:none}
@@ -407,6 +413,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
   <p class="subt" data-t="subtitle">según la Visuddhāyuṃ Kaccāyana-ṭīkā</p>
   <div class="vline"><span class="badge-b" id="etiqueta">Borrador</span><span class="version-badge" id="vbadge"></span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button></div>
   <p class="tag" data-t-html="intro"></p>
+  <p class="guia-enlace"><a href="guia/" id="guia-link" data-t="guide">Guía para el estudiante</a></p>
   <details class="plegable"><summary data-t="how_sum">Cómo leer esta tabla</summary><div data-t-html="how"></div></details>
   <details class="plegable"><summary data-t="term_sum">Terminología</summary><div id="term"></div></details>
   <details class="plegable"><summary data-t="src_sum">Fuente y cita</summary><div id="fuente"></div></details>
@@ -425,7 +432,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
   <div class="cab-fija" id="cab-fija" aria-hidden="true"><table class="an"><colgroup></colgroup><thead></thead></table></div>
   <div class="tabla-caja" id="tabla-caja" tabindex="0" role="region">
   <table class="an" id="tabla">
-    <thead><tr><th><span class="gl" tabindex="0" data-g="col:n">§</span></th><th><span class="gl" tabindex="0" data-g="col:su">Sutta</span></th><th><span class="gl" tabindex="0" data-g="col:cl" data-t="h_class">Clase de sutta</span></th><th><span class="gl" tabindex="0" data-g="col:an">Aṅga</span></th><th><span class="gl" tabindex="0" data-g="col:fu" data-t="h_roles">Funciones</span></th><th><span class="gl" tabindex="0" data-g="col:ej" data-t="h_ex">Ejemplo</span></th><th data-t="h_notes">Notas</th><th data-t="h_src">Fuente</th><th></th></tr></thead>
+    <thead><tr><th><span class="gl" tabindex="0" data-g="col:n">§</span></th><th><span class="gl" tabindex="0" data-g="col:su">Sutta</span></th><th><span class="gl" tabindex="0" data-g="col:cl" data-t="h_class">Clase de sutta</span></th><th><span class="gl" tabindex="0" data-g="col:an">Aṅga</span></th><th><span class="gl" tabindex="0" data-g="col:fu" data-t="h_roles">Funciones</span></th><th><span class="gl" tabindex="0" data-g="col:ej" data-t="h_ex">Ejemplo</span></th><th><span class="gl" tabindex="0" data-g="col:no" data-t="h_notes">Notas</span></th><th><span class="gl" tabindex="0" data-g="col:pdf" data-t="h_src">Fuente</span></th><th></th></tr></thead>
     <tbody id="out"></tbody>
   </table>
   </div>
@@ -465,13 +472,16 @@ es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los 
   h_class:'Clase de sutta',h_roles:'Funciones',h_ex:'Ejemplo',h_notes:'Notas',h_src:'Fuente',
   /* globos de los encabezados: trozos de «how», sin definiciones nuevas; si se
      cambia «how», cámbiense también. «Notas» y «Fuente» no tienen explicación
-     ahí, y no llevan globo. */
+     ahí: las suyas son las de la tabla de la sección 3 de la guía (guia.md). */
   cols:{n:'El § abre el aforismo y su traducción en este sitio.',
     su:'El texto pāḷi del sutta sigue a Nandisena.',
     cl:'Procede del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso).',
     an:'Procede del libro: las palabras que enumera como aṅga del sutta.',
     fu:'Procede del libro: la función de cada palabra. Donde el libro no da una función, la celda queda vacía. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.',
-    ej:'Procede del libro: el ejemplo de su modelo de derivación (rup). En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>.'},
+    ej:'Procede del libro: el ejemplo de su modelo de derivación (rup). En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>.',
+    no:'La primera frase de la nota; pulse ▸ para leerla entera.',
+    pdf:'La página del PDF del escaneo (página impresa + 46).'},
+  guide:'Guía para el estudiante',
   ex:'Ejercicio',show:'ver respuesta',hide:'ocultar respuesta',ans:'Respuesta sugerida (IEBH)',ed:'Añadido editorial del IEBH: inflexión del nimitta, deducida del caso de la palabra. No es análisis del libro.',
   more:'más',open:'Abrir el aforismo y su traducción',ver:'Versión',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Borrador.</b> Lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.',
@@ -496,7 +506,10 @@ en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the sutta
     cl:'From the book: the class it gives (in Pāḷi or Burmese, as printed).',
     an:'From the book: the words it lists as the sutta\'s aṅga.',
     fu:'From the book: the role of each word. Where the book gives no role, the cell is left empty. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book\'s analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.',
-    ej:'From the book: the example of its model derivation (rup). In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>.'},
+    ej:'From the book: the example of its model derivation (rup). In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>.',
+    no:'The note\'s first sentence; click ▸ for the whole note.',
+    pdf:'The page of the scanned PDF (printed page + 46).'},
+  guide:'Student guide',
   ex:'Exercise',show:'show answer',hide:'hide answer',ans:'Suggested answer (IEBH)',ed:'IEBH editorial addition: the inflection of the nimitta, inferred from the case of the word. Not the book\'s analysis.',
   more:'more',open:'Open the aphorism and its translation',ver:'Version',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Draft.</b> A reading of the Burmese text from a scan, checked against the page images.',
@@ -586,6 +599,7 @@ function textos(){
   document.querySelectorAll('[data-t]').forEach(el=>el.textContent=t[el.dataset.t]);
   document.querySelectorAll('[data-t-html]').forEach(el=>el.innerHTML=t[el.dataset.tHtml]);
   document.getElementById('q').placeholder=t.search;
+  document.getElementById('guia-link').href='guia/?lang='+lang;
   document.getElementById('tabla-caja').setAttribute('aria-label',t.title_short);
   document.title=t.title;
   document.getElementById('term').innerHTML='<dl class="ley-an">'+t.terms.map(([a,b])=>`<div><dt>${esc(a)}</dt><dd>${esc(b)}</dd></div>`).join('')+'</dl>';

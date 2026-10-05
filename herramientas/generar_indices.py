@@ -135,7 +135,9 @@ RECURSOS = [
      "Borrador en revisión."),
     ("analisis/", "__ANALISIS_BADGE__",
      "Análisis de los suttas de Kaccāyana",
-     "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>."),
+     "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
+     # quinto elemento: un enlace secundario bajo la tarjeta (href, es, en)
+     ("analisis/guia/", "Guía para el estudiante", "Student guide")),
     ("comentarios/", "__COMENTARIOS_BADGE__",
      "Comentarios de la escuela de Kaccāyana",
      "Las obras de la escuela gramatical de Kaccāyana —el texto raíz, sus "
@@ -558,12 +560,15 @@ return /^en\\b/i.test(n)?'en':'es';}}</script>
 
 
 def tarjeta(href, insignia, titulo, desc, wip=False, externo=False,
-            traducir_titulo=True):
+            traducir_titulo=True, extra=None):
     """
     Una tarjeta del índice, en los dos idiomas.
 
     El título se traduce en los recursos —«Paradigmas de declinación»— pero
     no en las obras ni en los capítulos, que son nombres pāḷi.
+
+    «extra» = (href, es, en): un enlace pequeño bajo la tarjeta, fuera de
+    ella (la tarjeta ya es un <a> y no puede llevar otro dentro).
     """
     ins = ""
     if insignia:
@@ -586,6 +591,10 @@ def tarjeta(href, insignia, titulo, desc, wip=False, externo=False,
             href, cuerpo)
     else:
         interior = '    <div class="idx-card pend">\n{0}    </div>'.format(cuerpo)
+    if extra:
+        interior += ('\n    <a class="idx-sub" href="{0}" style="display:inline-block;'
+                     'margin:.35rem 0 0 1.25rem;font:400 .8rem/1.4 var(--mono);'
+                     'color:var(--accent)">→ {1}</a>').format(extra[0], bi(extra[1], extra[2]))
     return "  <li>\n{0}\n  </li>".format(interior)
 
 
@@ -956,8 +965,9 @@ def indice_recursos():
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
                                               "88 % of the bench"),
                  "__NOMBRE_BADGE__": bi("10 pasos", "10 steps")}
-    tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc)
-                for href, ins, titulo, desc in RECURSOS
+    tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc,
+                        extra=extra[0] if extra else None)
+                for href, ins, titulo, desc, *extra in RECURSOS
                 if (ins != "__RAICES_BADGE__" or n_rai)
                 and (ins != "__VERBO_BADGE__" or n_ver)
                 and (ins != "__GLOSARIO_BADGE__" or n_glo)
