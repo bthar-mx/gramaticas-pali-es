@@ -262,7 +262,7 @@ async function main() {
 async function fuentes(env, pedir, bueno, P, leer, poner) {
   console.log("\n  — fuentes de fondo —");
   comprobar("claves de §2: las cinco obras, en orden de prioridad",
-    clavesDe(2).join() === "silananda-rup/2,silananda-kacc/2,rupasiddhi/2,nyasappadipika/2,nyasa/2", clavesDe(2).join());
+    clavesDe(2).join() === "silananda-kacc/2,silananda-rup/2,rupasiddhi/2,nyasappadipika/2,nyasa/2", clavesDe(2).join());
   {
     const sh = readFileSync(new URL("../herramientas/subir_fuentes.sh", import.meta.url), "utf-8");
     const m = sh.match(/const OBRAS = (\[[^\]]*\]);/);
@@ -271,7 +271,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
       delGuion.join() === OBRAS.map((o) => o.dir).join(), delGuion.join());
   }
   comprobar("claves de §280 (capítulo 3): las mismas obras, sin tope de §",
-    clavesDe(280).join() === "silananda-rup/280,silananda-kacc/280,rupasiddhi/280,nyasappadipika/280,nyasa/280", clavesDe(280).join());
+    clavesDe(280).join() === "silananda-kacc/280,silananda-rup/280,rupasiddhi/280,nyasappadipika/280,nyasa/280", clavesDe(280).join());
   comprobar("interruptor: apagado por omisión",
     !fuentesActivas({ FUENTES: {} }) && !fuentesActivas({ FUENTES: {}, PREGUNTAR_FUENTES: "off" }));
   comprobar("interruptor: «on» enciende (también « ON »), pero no sin el KV",
@@ -294,6 +294,15 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
         && total(t3.paquetes) <= 2000, total(t3.paquetes));
     // Tamaños de verdad: Sīlānanda ~7.000 tokens y las otras ~2.000 → 13.000.
     const grandes = [pq("silananda-rup", 21000), pq("rupasiddhi", 6000), pq("nyasappadipika", 6000), pq("nyasa", 6000)];
+    // Las dos series juntas: la de Kaccāyana es la última que se cae.
+    const pq2 = (dir, chars) => ({ ...pq(dir, chars), clave: dir + "/2" });
+    const series = [pq2("silananda-kacc", 15000), pq2("silananda-rup", 15000), pq2("rupasiddhi", 4500)];
+    const t5 = aplicarTope(series, 6000);
+    comprobar("tope: con las dos series de Sīlānanda, se cae la de Rūpasiddhi y queda la de Kaccāyana",
+      t5.descartadas.join() === "rupasiddhi/2,silananda-rup/2" && t5.paquetes.map((p) => p.clave).join() === "silananda-kacc/2",
+      JSON.stringify(t5));
+    comprobar("y el orden de OBRAS lo dice: silananda-kacc primero, silananda-rup después",
+      OBRAS[0].dir === "silananda-kacc" && OBRAS[1].dir === "silananda-rup", OBRAS.map((o) => o.dir).join());
     const t4 = aplicarTope(grandes);
     comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo el Nyāsa y el bloque queda por debajo",
       total(t4.paquetes) <= TOPE_TOKENS && t4.descartadas.join() === "nyasa/2", total(t4.paquetes) + " " + t4.descartadas);
@@ -341,7 +350,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
       && on.u.includes("texto con ruido de OCR") && on.u.includes("SECRETO-NYASA")
       && !on.u.includes("nyasappadipika/20"), on.u.slice(iF, iF + 400));
   comprobar("encendido: la línea «Fuentes consultadas» la pone el worker, con los nombres fijos y en orden",
-    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases de Rūpasiddhi; U Sīlānanda, clases de Kaccāyana; Padarūpasiddhi; Nyāsa.",
+    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases de Kaccāyana; U Sīlānanda, clases de Rūpasiddhi; Padarūpasiddhi; Nyāsa.",
     on.x.respuesta);
   comprobar("y sin nada de la cabecera (ni «fuente:», ni clase, ni edición)",
     !/fuente:|clase 3|clase 7|12:40|03:10|VRI|BY-NC|\*\*/.test(on.x.respuesta), on.x.respuesta);
@@ -351,7 +360,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   const uso = on.registro.map((l) => { try { return JSON.parse(l); } catch (x) { return null; } })
     .find((o) => o && o.evento === "preguntar.uso");
   comprobar("encendido: el registro del worker lleva las claves y el uso",
-    uso && uso.fuentes.join() === "silananda-rup/20,silananda-kacc/20,rupasiddhi/20,nyasa/20" && uso.input_tokens === 300, JSON.stringify(uso));
+    uso && uso.fuentes.join() === "silananda-kacc/20,silananda-rup/20,rupasiddhi/20,nyasa/20" && uso.input_tokens === 300, JSON.stringify(uso));
   const log = [...on.e.VEREDICTOS.datos.entries()].find(([k]) => k.startsWith("preguntar/log/"));
   const reg = log ? JSON.parse(log[1]) : {};
   comprobar("encendido: el registro del KV lleva las claves y no el texto",
@@ -361,7 +370,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   comprobar("con fuentes cargadas, con_fuentes es true (y sólo un booleano)",
     on.x.con_fuentes === true && off.x.con_fuentes === false, JSON.stringify([on.x.con_fuentes, off.x.con_fuentes]));
   comprobar("en inglés: «Sources consulted» con los nombres ingleses",
-    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on the Rūpasiddhi; U Sīlānanda, classes on Kaccāyana; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
+    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on Kaccāyana; U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
 
   const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
   comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
