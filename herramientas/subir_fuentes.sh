@@ -6,7 +6,7 @@
 # Lee ~/Documents/preguntar-fuentes/ (o la carpeta que se le dé), con una
 # subcarpeta por obra y un Markdown por § de Kaccāyana:
 #
-#     silananda-rup/2.md   silananda-kacc/2.md   rupasiddhi/2.md
+#     silananda-kacc/2.md   silananda-rup/2.md   rupasiddhi/2.md
 #     nyasappadipika/2.md  nyasa/2.md
 #
 # y sube cada archivo con la clave «<obra>/<§>» («silananda-rup/2»). Las obras
@@ -41,7 +41,7 @@ BULTO="$TMP/fuentes.json"
 ORIGEN="$ORIGEN" BULTO="$BULTO" node --input-type=module -e '
 import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-const OBRAS = ["silananda-rup", "silananda-kacc", "rupasiddhi", "nyasappadipika", "nyasa"];
+const OBRAS = ["silananda-kacc", "silananda-rup", "rupasiddhi", "nyasappadipika", "nyasa"];
 const origen = process.env.ORIGEN;
 const pares = [], avisos = [];
 for (const e of readdirSync(origen, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
