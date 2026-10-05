@@ -4,9 +4,9 @@
 
 La página [Análisis de los suttas de Kaccāyana](https://gramaticas.buddha-dhamma.net/recursos/analisis/) muestra cada sutta de Kaccāyana tal como lo analiza la *Visuddhāyuṃ Kaccāyana-ṭīkā* de Ashin Aggañāṇābhivaṃsa (Mandalay, 2004), una guía de estudio en birmano, sutta por sutta.
 
-Para cada sutta encontrará, en una fila de la tabla: la clase de sutta, su aṅga, la función de cada palabra y el ejemplo del modelo de derivación. Hoy cubre el Sandhi-Kappa (§1–§51) y el Nāma-Kappa hasta el §246; los demás capítulos figuran como «pendiente».
+Para cada sutta encontrará, en una fila de la tabla: la clase de sutta, su aṅga, la función de cada palabra y el ejemplo del modelo de derivación. La etiqueta de versión, arriba de la tabla, indica qué capítulos y suttas están ya publicados; los demás capítulos figuran en el índice como «pendiente».
 
-Es un **borrador** (versión v0.7): una lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.
+Es un **borrador**: una lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.
 
 ## 2. Cómo moverse por la página
 
@@ -24,7 +24,7 @@ La tabla tiene más columnas de las que caben en una pantalla normal: desplácel
 
 ## 3. Cómo leer una fila
 
-Cada fila es un sutta. Salvo el § y el texto del sutta, todo lo que ve procede del libro; donde el libro no da nada, la celda queda vacía (—).
+Cada fila es un sutta. Salvo el § y el texto del sutta, todo lo que ve procede del libro; donde el libro no da nada, la celda queda vacía (—). Pase el ratón por el título de una columna (o tóquelo en una pantalla táctil) para ver qué contiene.
 
 | Columna | Qué contiene |
 | --- | --- |
@@ -63,9 +63,9 @@ Si encuentra algo que le parezca un error, anótelo con el § y la página del P
 
 **La obra.** El apartado **Fuente y cita**, arriba de la tabla, da los datos completos del libro y una nota sobre su autor.
 
-**Cómo citar esta página** (propuesta):
+**Cómo citar esta página**:
 
-> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā*, v0.7 (borrador), 2026, §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
+> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā*, versión [la que muestra la etiqueta] (borrador), [año], §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
 
 Indique siempre la versión, porque el borrador cambia.
 
@@ -78,13 +78,15 @@ Indique siempre la versión, porque el borrador cambia.
 5. Haga los ejercicios antes de abrir la respuesta sugerida.
 6. Lea las definiciones del glosario la primera vez que encuentre un término nuevo.
 
+---
+
 # English version — Student guide
 
 ## 1. What this page is
 
 The page [Analysis of the Kaccāyana suttas](https://gramaticas.buddha-dhamma.net/recursos/analisis/) shows each Kaccāyana sutta as the *Visuddhāyuṃ Kaccāyana-ṭīkā* by Ashin Aggañāṇābhivaṃsa (Mandalay, 2004) analyses it. That book is a Burmese study guide that goes sutta by sutta.
 
-Each table row gives one sutta: its class, its aṅga, the role of each word and the example of the model derivation. The page now covers Sandhi-Kappa (§1–§51) and Nāma-Kappa up to §246; the other chapters are marked «pending». It is a **draft** (v0.7): a reading of the Burmese text from a scan, checked against the page images.
+Each table row gives one sutta: its class, its aṅga, the role of each word and the example of the model derivation. The version label above the table says which chapters and suttas are published so far; the other chapters are marked «pending» in the index. It is a **draft**: a reading of the Burmese text from a scan, checked against the page images.
 
 ## 2. Finding your way
 
@@ -102,7 +104,7 @@ The table is wider than most screens: scroll it to the right to see **Notes** an
 
 ## 3. Reading a row
 
-Apart from the § and the sutta text, everything comes from the book; where the book gives nothing, the cell is empty (—).
+Apart from the § and the sutta text, everything comes from the book; where the book gives nothing, the cell is empty (—). Hover over a column title (or tap it on a touch screen) to see what the column holds.
 
 | Column | What it holds |
 | --- | --- |
@@ -129,9 +131,9 @@ Only what two independent readings have checked against the page images reaches 
 
 **Source and citation**, above the table, gives the full details of the book and a note on its author.
 
-**How to cite this page** (proposal):
+**How to cite this page**:
 
-> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā*, v0.7 (draft), 2026, §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
+> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā*, version [as shown on the label] (draft), [year], §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
 
 Always give the version: the draft changes.
 
