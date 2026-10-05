@@ -27,11 +27,16 @@
         los paquetes no vuelven al navegador y la línea «Fuentes
         consultadas» la pone el worker; con_fuentes cambia la advertencia de
         IA de la página; la inferencia propia va rotulada; los «Kac §N» de
-        los paquetes son del IEBH */
+        los paquetes son del IEBH; las clases de Kaccāyana de Sīlānanda
+        (silananda-kacc) entran igual que las de Rūpasiddhi, y nada limita
+        el § a §1–§270
+    14. ejercicios sin lista fija: el sistema no enumera §; un ejercicio de
+        Nāma (§66) va marcado y sin respuesta sugerida, como §38
+    15. visesana suelto (§221): el sistema lo describe como lo da la fila */
 
 import { readFileSync } from "node:fs";
 import worker from "./index.js";
-import { clavesDe, aplicarTope, fuentesActivas, lineaFuentes, estimarTokens, TOPE_TOKENS } from "./fuentes.js";
+import { OBRAS, clavesDe, aplicarTope, fuentesActivas, lineaFuentes, estimarTokens, TOPE_TOKENS } from "./fuentes.js";
 
 const EQUIPO = "equipo-de-prueba.cloudflareaccess.com";
 const AUD = "aud-de-gramaticas";
@@ -159,8 +164,16 @@ async function main() {
     comprobar("ni la otra lengua de la nota", !u.includes("The book splits"));
     comprobar("modelo por omisión: claude-sonnet-5-5", c.body.model === "claude-sonnet-5-5", c.body.model);
     const sis = c.body.system[0].text;
-    comprobar("la instrucción trae los ejercicios y el «No lo sé»",
-      sis.includes("§38, §39, §44 y §50") && sis.includes("«No lo sé»") && sis.includes("«Según la Visuddhāyuṃ (§n)"));
+    comprobar("la instrucción trae los ejercicios (por la marca de la fila, sin lista de §) y el «No lo sé»",
+      sis.includes("las filas con «ejercicio» verdadero; la fila lo dice") && !/«ejercicio» verdadero: §/.test(sis)
+        && sis.includes("«No lo sé»") && sis.includes("«Según la Visuddhāyuṃ (§n)"));
+    comprobar("la instrucción describe el visesana suelto como lo da §221",
+      sis.includes('§221 [visesana, ca, ""]') && sis.includes("con «visesana» en la primera posición")
+        && sis.includes("no digas a qué palabra califica si la fila no lo dice"));
+    {
+      const f221 = JSON.parse(DATOS).filas["221"].roles.find((x) => x[0] === "visesana");
+      comprobar("y la fila §221 de preguntar.json lo trae así", f221 && f221[1] === "ca" && f221[2] === "", JSON.stringify(f221));
+    }
     comprobar("la instrucción llama «aṅga» al campo y no da su procedencia",
       sis.includes("«aṅga» (campo anuvatti)") && sis.includes("nunca «anuvatti»") && !sis.includes("vienen de suttas anteriores"));
     comprobar("la instrucción trae el ejemplo de §13 (nimitta «sarasmā», no «asarūpā»)",
@@ -248,8 +261,17 @@ async function main() {
 /* 13. Las fuentes de fondo. */
 async function fuentes(env, pedir, bueno, P, leer, poner) {
   console.log("\n  — fuentes de fondo —");
-  comprobar("claves de §2: las cuatro obras, en orden de prioridad",
-    clavesDe(2).join() === "silananda-rup/2,rupasiddhi/2,nyasappadipika/2,nyasa/2", clavesDe(2).join());
+  comprobar("claves de §2: las cinco obras, en orden de prioridad",
+    clavesDe(2).join() === "silananda-kacc/2,silananda-rup/2,rupasiddhi/2,nyasappadipika/2,nyasa/2", clavesDe(2).join());
+  {
+    const sh = readFileSync(new URL("../herramientas/subir_fuentes.sh", import.meta.url), "utf-8");
+    const m = sh.match(/const OBRAS = (\[[^\]]*\]);/);
+    const delGuion = m ? JSON.parse(m[1]) : [];
+    comprobar("subir_fuentes.sh sube las mismas obras que lee el worker",
+      delGuion.join() === OBRAS.map((o) => o.dir).join(), delGuion.join());
+  }
+  comprobar("claves de §280 (capítulo 3): las mismas obras, sin tope de §",
+    clavesDe(280).join() === "silananda-kacc/280,silananda-rup/280,rupasiddhi/280,nyasappadipika/280,nyasa/280", clavesDe(280).join());
   comprobar("interruptor: apagado por omisión",
     !fuentesActivas({ FUENTES: {} }) && !fuentesActivas({ FUENTES: {}, PREGUNTAR_FUENTES: "off" }));
   comprobar("interruptor: «on» enciende (también « ON »), pero no sin el KV",
@@ -272,6 +294,15 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
         && total(t3.paquetes) <= 2000, total(t3.paquetes));
     // Tamaños de verdad: Sīlānanda ~7.000 tokens y las otras ~2.000 → 13.000.
     const grandes = [pq("silananda-rup", 21000), pq("rupasiddhi", 6000), pq("nyasappadipika", 6000), pq("nyasa", 6000)];
+    // Las dos series juntas: la de Kaccāyana es la última que se cae.
+    const pq2 = (dir, chars) => ({ ...pq(dir, chars), clave: dir + "/2" });
+    const series = [pq2("silananda-kacc", 15000), pq2("silananda-rup", 15000), pq2("rupasiddhi", 4500)];
+    const t5 = aplicarTope(series, 6000);
+    comprobar("tope: con las dos series de Sīlānanda, se cae la de Rūpasiddhi y queda la de Kaccāyana",
+      t5.descartadas.join() === "rupasiddhi/2,silananda-rup/2" && t5.paquetes.map((p) => p.clave).join() === "silananda-kacc/2",
+      JSON.stringify(t5));
+    comprobar("y el orden de OBRAS lo dice: silananda-kacc primero, silananda-rup después",
+      OBRAS[0].dir === "silananda-kacc" && OBRAS[1].dir === "silananda-rup", OBRAS.map((o) => o.dir).join());
     const t4 = aplicarTope(grandes);
     comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo el Nyāsa y el bloque queda por debajo",
       total(t4.paquetes) <= TOPE_TOKENS && t4.descartadas.join() === "nyasa/2", total(t4.paquetes) + " " + t4.descartadas);
@@ -279,6 +310,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
 
   const TEXTOS = {
     "silananda-rup/20": "fuente: U Sīlānanda, Rūpasiddhi classes (clase 3, 12:40); grabación; clase 3; ninguno; uso privado\nIn class he says SECRETO-SILANANDA.",
+    "silananda-kacc/20": "fuente: U Sīlānanda, Kaccāyana classes (clase 7, 03:10); transcripción automática, editada; clase 7; ninguno; CC BY-NC-ND 4.0 © IEBH\nIn class he says SECRETO-KACC.",
     "rupasiddhi/20": "**Rūpasiddhi (VRI)**; VRI; §20; texto con ruido de OCR: no citar textualmente; dominio público\nSECRETO-RUPASIDDHI",
     "nyasa/20": "Nyāsa; VRI; p. 1; ninguno; dominio público\nSECRETO-NYASA",
     "nyasa/38": "Nyāsa; VRI; p. 9; ninguno; dominio público\nSECRETO-EJERCICIO",
@@ -305,7 +337,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     off.e.FUENTES.leidas.length === 0 && !off.x.respuesta.includes("Fuentes consultadas"), off.x.respuesta);
 
   const on = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" });
-  comprobar("encendido: se piden las cuatro claves de §20",
+  comprobar("encendido: se piden las cinco claves de §20",
     on.e.FUENTES.leidas.slice().sort().join() === clavesDe(20).slice().sort().join(), on.e.FUENTES.leidas.join());
   comprobar("encendido: el sistema es el mismo (la caché sigue valiendo)",
     JSON.stringify(on.sis) === JSON.stringify(base.c.body.system));
@@ -314,30 +346,31 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     iG > 0 && iF > iG && iL > iF, [iG, iF, iL].join());
   comprobar("encendido: cada paquete con su cabecera; el que falta se salta",
     on.u.includes('<fuente clave="silananda-rup/20">\nfuente: U Sīlānanda, Rūpasiddhi classes (clase 3, 12:40); grabación;')
+      && on.u.includes('<fuente clave="silananda-kacc/20">\nfuente: U Sīlānanda, Kaccāyana classes') && on.u.includes("SECRETO-KACC")
       && on.u.includes("texto con ruido de OCR") && on.u.includes("SECRETO-NYASA")
       && !on.u.includes("nyasappadipika/20"), on.u.slice(iF, iF + 400));
   comprobar("encendido: la línea «Fuentes consultadas» la pone el worker, con los nombres fijos y en orden",
-    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases de Rūpasiddhi; Padarūpasiddhi; Nyāsa.",
+    on.x.respuesta === "Respuesta de prueba.\n\nFuentes consultadas: U Sīlānanda, clases de Kaccāyana; U Sīlānanda, clases de Rūpasiddhi; Padarūpasiddhi; Nyāsa.",
     on.x.respuesta);
   comprobar("y sin nada de la cabecera (ni «fuente:», ni clase, ni edición)",
-    !/fuente:|clase 3|12:40|VRI|\*\*/.test(on.x.respuesta), on.x.respuesta);
+    !/fuente:|clase 3|clase 7|12:40|03:10|VRI|BY-NC|\*\*/.test(on.x.respuesta), on.x.respuesta);
   const alNavegador = JSON.stringify(on.x);
   comprobar("encendido: ningún paquete vuelve al navegador",
-    !/SECRETO-|grabación|dominio público/.test(alNavegador), alNavegador);
+    !/SECRETO-|grabación|transcripción automática|dominio público/.test(alNavegador), alNavegador);
   const uso = on.registro.map((l) => { try { return JSON.parse(l); } catch (x) { return null; } })
     .find((o) => o && o.evento === "preguntar.uso");
   comprobar("encendido: el registro del worker lleva las claves y el uso",
-    uso && uso.fuentes.join() === "silananda-rup/20,rupasiddhi/20,nyasa/20" && uso.input_tokens === 300, JSON.stringify(uso));
+    uso && uso.fuentes.join() === "silananda-kacc/20,silananda-rup/20,rupasiddhi/20,nyasa/20" && uso.input_tokens === 300, JSON.stringify(uso));
   const log = [...on.e.VEREDICTOS.datos.entries()].find(([k]) => k.startsWith("preguntar/log/"));
   const reg = log ? JSON.parse(log[1]) : {};
   comprobar("encendido: el registro del KV lleva las claves y no el texto",
-    reg.fuentes && reg.fuentes.length === 3 && !/SECRETO-/.test(log[1]), log && log[1]);
+    reg.fuentes && reg.fuentes.length === 4 && !/SECRETO-/.test(log[1]), log && log[1]);
 
   const en = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, lang: "en" });
   comprobar("con fuentes cargadas, con_fuentes es true (y sólo un booleano)",
     on.x.con_fuentes === true && off.x.con_fuentes === false, JSON.stringify([on.x.con_fuentes, off.x.con_fuentes]));
   comprobar("en inglés: «Sources consulted» con los nombres ingleses",
-    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
+    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on Kaccāyana; U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
 
   const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
   comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
@@ -353,6 +386,29 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   comprobar("ejercicio §38 con fuentes: sigue sin la respuesta sugerida",
     ej.u.includes('"ejercicio":true') && !ej.u.includes('["kāriya","lopaṃ","kvaci"]') && ej.u.includes("SECRETO-EJERCICIO"));
 
+  {
+    // 14. Un ejercicio de Nāma, que la vieja lista (§38–§50) no nombraba.
+    const f66 = JSON.parse(DATOS).filas["66"];
+    const ej66 = await pedirCon({}, { ...P, sutta: 66 });
+    const resp = JSON.stringify(f66.respuesta);
+    comprobar("ejercicio §66 (Nāma): va marcado y sin la respuesta sugerida",
+      f66.ejercicio === true && f66.respuesta.length > 0 && ej66.u.includes('"ejercicio":true')
+        && !ej66.u.includes(resp.slice(1, -1)) && !ej66.u.includes('"respuesta"'), ej66.u.slice(0, 300));
+  }
+
+  {
+    // §271 en adelante: las fuentes no tienen tope; lo que falta es la fila.
+    const TEXTOS3 = { "silananda-kacc/280": "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 40; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-280" };
+    const kv3 = { async get(k) { return TEXTOS3[k] ?? null; } };
+    const { leerFuentes } = await import("./fuentes.js");
+    const l = await leerFuentes({ FUENTES: kv3 }, 280);
+    comprobar("§280: leerFuentes trae silananda-kacc/280",
+      l.length === 1 && l[0].clave === "silananda-kacc/280" && l[0].obra.nombre === "U Sīlānanda, clases de Kaccāyana", JSON.stringify(l.map((p) => p.clave)));
+    const sin = await pedirCon({ FUENTES: kv3, PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 280 });
+    comprobar("§280 sin fila en preguntar.json → 404 y la API no se llama (el único límite son los datos de la página)",
+      sin.r.status === 404 && !sin.c, sin.r.status);
+  }
+
   const sis = base.c.body.system[0].text;
   comprobar("la instrucción trae las reglas de las fuentes",
     sis.includes("«Según la Rūpasiddhi…»") && sis.includes("(clase N, mm:ss)")
@@ -360,6 +416,10 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
       && sis.includes("unas 15 palabras") && sis.includes("«texto con ruido de OCR: no citar textualmente»")
       && sis.includes("están en inglés: resúmelas") && sis.includes("«Las fuentes consultadas no tratan este punto»")
       && sis.includes("tampoco se resuelven con las fuentes"));
+  comprobar("la instrucción distingue las dos series de clases de Sīlānanda",
+    sis.includes("sus clases sobre Kaccāyana (dos series distintas; transcripciones automáticas en inglés, editadas)")
+      && sis.includes("«U Sīlānanda explica en sus clases de Kaccāyana (clase N, mm:ss) que…»")
+      && sis.includes("No confundas las dos series de clases"));
   comprobar("la inferencia propia va rotulada «(del asistente, no de las fuentes)»",
     sis.includes("«Explicación general (del asistente, no de las fuentes): …»")
       && sis.includes("«General explanation (the assistant's, not from the sources): …»")

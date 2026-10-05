@@ -6,9 +6,13 @@
 # Lee ~/Documents/preguntar-fuentes/ (o la carpeta que se le dé), con una
 # subcarpeta por obra y un Markdown por § de Kaccāyana:
 #
-#     silananda-rup/2.md   rupasiddhi/2.md   nyasappadipika/2.md   nyasa/2.md
+#     silananda-kacc/2.md   silananda-rup/2.md   rupasiddhi/2.md
+#     nyasappadipika/2.md  nyasa/2.md
 #
-# y sube cada archivo con la clave «<obra>/<§>» («silananda-rup/2»). El JSON
+# y sube cada archivo con la clave «<obra>/<§>» («silananda-rup/2»). Las obras
+# son las de OBRAS, abajo, que deben coincidir con las de worker/fuentes.js;
+# una subcarpeta que no esté en OBRAS no se sube, y se avisa. Nada se salta
+# sin aviso: tampoco un archivo que no sea .md o cuyo nombre no sea un §. El JSON
 # intermedio se escribe en un directorio temporal FUERA del repositorio y se
 # borra al terminar: el repositorio es público y los textos no deben entrar en
 # él. Este guion no contiene ningún texto; sólo los traslada.
@@ -37,15 +41,23 @@ BULTO="$TMP/fuentes.json"
 ORIGEN="$ORIGEN" BULTO="$BULTO" node --input-type=module -e '
 import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-const OBRAS = ["silananda-rup", "rupasiddhi", "nyasappadipika", "nyasa"];
+const OBRAS = ["silananda-kacc", "silananda-rup", "rupasiddhi", "nyasappadipika", "nyasa"];
 const origen = process.env.ORIGEN;
 const pares = [], avisos = [];
+for (const e of readdirSync(origen, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+  if (e.name.startsWith(".")) continue;
+  if (!e.isDirectory()) { avisos.push(e.name + ": no es una subcarpeta de obra (se salta)"); continue; }
+  if (!OBRAS.includes(e.name)) {
+    avisos.push(e.name + "/: no es una obra de OBRAS (" + OBRAS.join(", ") + "); NO se sube nada de ella");
+  }
+}
 for (const obra of OBRAS) {
   const dir = join(origen, obra);
   if (!existsSync(dir)) { avisos.push("falta la carpeta " + obra + "/"); continue; }
   let n = 0;
   for (const f of readdirSync(dir).sort()) {
-    if (!f.endsWith(".md")) continue;
+    if (f.startsWith(".")) continue;
+    if (!f.endsWith(".md")) { avisos.push(obra + "/" + f + ": no es .md (se salta)"); continue; }
     const s = f.slice(0, -3);
     if (!/^[0-9]+$/.test(s)) { avisos.push(obra + "/" + f + ": el nombre no es un § (se salta)"); continue; }
     const texto = readFileSync(join(dir, f), "utf-8").normalize("NFC");
