@@ -28,6 +28,11 @@ huecos ni sobrantes; que la página del PDF esté dentro del capítulo y no
 retroceda; que las marcas del ejemplo ({k|…} {n|…} {r|…} {x|…} {kx|…} {nx|…})
 estén bien formadas; que cada nimitta lleve su caso; y que todo esté en NFC.
 Si algo no cuadra, no publica.
+
+También escribe la guía para el estudiante, site/recursos/analisis/guia/,
+con recursos/analisis/guia.md (el texto, tal cual: el español, una línea
+«---», el inglés) y recursos/analisis/guia-plantilla.html. La página del
+análisis enlaza a ella, así que sin guia.md no se publica nada.
 """
 
 import json
@@ -44,6 +49,9 @@ DIR = os.path.join(RAIZ, "recursos", "analisis")
 PLANTILLA = os.path.join(DIR, "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "analisis", "index.html")
 PREGUNTAR = os.path.join(RAIZ, "site", "recursos", "analisis", "preguntar.json")
+GUIA = os.path.join(DIR, "guia.md")
+GUIA_PLANTILLA = os.path.join(DIR, "guia-plantilla.html")
+GUIA_DESTINO = os.path.join(RAIZ, "site", "recursos", "analisis", "guia", "index.html")
 
 ROLES = {"kāriyī", "kāriya", "nimitta", "saññā", "saññī", "visaya", "visayī", "visesana"}
 # «visesana» como función propia: cuando el libro lo enumera suelto (§221, «စ-ဝိသေသန»)
@@ -143,6 +151,58 @@ def datos_preguntar(meta, filas, glosario):
     return out
 
 
+def guia(meta):
+    """La guía para el estudiante: (html, fallos). El markdown se convierte
+    con el mismo intérprete de prosa que generar_recurso.py; el texto no se
+    toca. El primer «# título» de cada lengua es el h1 de la página."""
+    import html as H
+    import generar_recurso as R
+    if not os.path.exists(GUIA):
+        return None, ["falta " + os.path.relpath(GUIA, RAIZ)]
+    txt = open(GUIA, encoding="utf-8").read().replace("\r\n", "\n")
+    fallos = []
+    if unicodedata.normalize("NFC", txt) != txt:
+        fallos.append("guia.md: texto que no está en NFC")
+    lineas = txt.split("\n")
+    corte = [i for i, l in enumerate(lineas) if l.strip() == "---" and i > 0]
+    if len(corte) != 1:
+        return None, fallos + ["guia.md: hace falta una sola línea «---» entre el español y el "
+                               "inglés (hay {0})".format(len(corte))]
+    partes = {"es": lineas[:corte[0]], "en": lineas[corte[0] + 1:]}
+    # `código`, que el intérprete de prosa no conoce
+    base = R.inline
+    R.inline = lambda t: re.sub(r"`([^`]+)`", r"<code>\1</code>", base(t))
+    cuerpos, titulos = {}, {}
+    try:
+        for lg, ls in partes.items():
+            ls = list(ls)
+            i = next((k for k, l in enumerate(ls) if l.strip()), None)
+            if i is None or not re.match(r"^#\s+\S", ls[i].strip()):
+                fallos.append("guia.md: la parte «{0}» no empieza por «# título»".format(lg))
+                continue
+            h1 = re.sub(r"^#\s+", "", ls[i].strip())
+            del ls[i]
+            cuerpos[lg] = R.render(ls)[0]
+            titulos[lg] = {"h1": re.sub(r"[*_`]", "", h1), "h1_html": R.inline(h1)}
+    finally:
+        R.inline = base
+    if fallos:
+        return None, fallos
+    for lg, nombre in (("es", "Análisis de los suttas de Kaccāyana"),
+                       ("en", "Analysis of the Kaccāyana suttas")):
+        titulos[lg]["titulo"] = "{0} · {1}".format(titulos[lg]["h1"], nombre)
+    pl = open(GUIA_PLANTILLA, encoding="utf-8").read()
+    js = json.dumps({lg: {"titulo": t["titulo"], "h1": t["h1"]} for lg, t in titulos.items()},
+                    ensure_ascii=False).replace("</", "<\\/")
+    pl = re.sub(r"/\*__TITULOS__\*/.*?/\*__FIN__\*/", lambda m: js, pl, flags=re.S)
+    for clave, valor in (("__ES_TITULO__", H.escape(titulos["es"]["titulo"])),
+                         ("__ES_H1__", titulos["es"]["h1_html"]),
+                         ("__VERSION__", meta["version"]),
+                         ("__ES__", cuerpos["es"]), ("__EN__", cuerpos["en"])):
+        pl = pl.replace(clave, valor)
+    return pl, []
+
+
 def main():
     meta = json.load(open(os.path.join(DIR, "meta.json"), encoding="utf-8"))
     caps, fallos = [], []
@@ -173,6 +233,8 @@ def main():
         indice.append(e)
     if not nfc(meta):
         fallos.append("meta.json: texto que no está en NFC")
+    pagina_guia, f_guia = guia(meta)
+    fallos += f_guia
     if fallos:
         print("El análisis de los suttas NO cuadra; no se publica:")
         for f in fallos[:25]:
@@ -209,6 +271,8 @@ def main():
     html = html.replace("__VERSION_DATE__", meta["fecha"]).replace("__VERSION__", meta["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
     open(DESTINO, "w", encoding="utf-8").write(html)
+    os.makedirs(os.path.dirname(GUIA_DESTINO), exist_ok=True)
+    open(GUIA_DESTINO, "w", encoding="utf-8").write(pagina_guia)
     with open(PREGUNTAR, "w", encoding="utf-8") as f:
         json.dump(datos_preguntar(meta, filas, glosario), f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
@@ -216,6 +280,7 @@ def main():
     ej = sum(1 for f in filas if f.get("ejercicio"))
     print("Análisis (Visuddhāyuṃ) v{0} ({1}) · {2} aforismos · {3} ejercicios → {4}".format(
         meta["version"], meta["estado"], len(filas), ej, os.path.relpath(DESTINO, RAIZ)))
+    print("Guía para el estudiante → {0}".format(os.path.relpath(GUIA_DESTINO, RAIZ)))
     return 0
 
 

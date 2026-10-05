@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<title>__ES_TITULO__</title>
+<meta name="version" content="__VERSION__">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&family=Padauk&display=swap" rel="stylesheet">
+<style>
+/* Guía para el estudiante del análisis de los suttas. Los estilos son los de
+   recursos/analisis/plantilla.html (colores, letra, cabecera, interruptor
+   ES | EN), reducidos a lo que usa una página de prosa. */
+:root{
+  --ola:#E7E3D6;--ola-2:#F0EDE4;--ink:#171612;--soot:#4E4839;--hair:#BFB7A0;
+  --haritala:#5C4008;--hl:rgba(92,64,8,.16);
+  --chip-k:rgba(39,65,79,.10);--nila:#27414F;--rakta:#7E2E23;--shadow:rgba(0,0,0,.08);
+  --serif:"Gentium Book Plus",Georgia,"Times New Roman",serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --mya:"Padauk","Myanmar Text","Noto Sans Myanmar",sans-serif;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{
+  --ola:#1A1917;--ola-2:#232220;--ink:#F4F1E8;--soot:#BDB5A2;--hair:#494438;
+  --haritala:#EFC14E;--nila:#B6D8EE;--rakta:#F09A88;--shadow:rgba(0,0,0,.45);
+  --hl:rgba(239,193,78,.20);--chip-k:rgba(182,216,238,.13)}
+html{-webkit-text-size-adjust:100%;background:var(--ola)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%)}
+:root[data-theme="dark"] body{background-image:none}
+[hidden]{display:none!important}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--soot)}
+header{padding:52px 0 22px;border-bottom:1px solid var(--hair)}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;background:url(../../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+:root[data-theme="dark"] .marca-arbol{background-image:url(../../../assets/iebh-arbol-blanco.svg)}
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.05;margin:10px 0 0;font-weight:700;letter-spacing:-.02em}
+.vline{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:14px}
+.badge-b{display:inline-flex;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--rakta);color:var(--rakta);border-radius:2px;padding:4px 8px}
+#lang-btn{position:relative;height:26px;padding:2px;border-radius:100px;
+  background:var(--ola-2);border:.5px solid var(--hair);color:var(--soot);
+  font:600 11px/1 var(--mono);letter-spacing:.08em;cursor:pointer;display:inline-flex;align-items:center;gap:2px;flex:none;
+  -webkit-appearance:none;appearance:none}
+#lang-btn .lang-seg{display:flex;align-items:center;justify-content:center;height:100%;padding:0 9px;border-radius:100px;transition:background .15s,color .15s}
+#lang-btn .lang-cur{background:var(--nila);color:var(--ola)}
+#lang-btn:hover .lang-seg:not(.lang-cur){background:var(--chip-k);color:var(--ink)}
+#lang-btn:focus-visible,.icon-btn:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
+.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);color:var(--soot);
+  border:1px solid var(--hair);border-radius:2px;padding:6px 9px;cursor:pointer}
+/* el texto de la guía */
+.guia{padding:10px 0 20px}
+.guia h2{font-size:24px;line-height:1.2;margin:34px 0 8px;font-weight:700}
+.guia h3{font-size:19px;margin:26px 0 6px;font-weight:700}
+.guia h4,.guia h5{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soot);margin:22px 0 4px}
+.guia p{margin:0 0 12px}
+.guia a{color:var(--nila)}
+.guia ul{margin:0 0 12px;padding-left:22px}
+.guia li{margin:0 0 4px}
+.guia code{font-family:var(--mono);font-size:.86em;background:var(--chip-k);border-radius:2px;padding:0 3px}
+.guia blockquote{margin:0 0 12px;border-left:2px solid var(--haritala);padding-left:12px;color:var(--soot)}
+.guia hr{border:0;border-top:1px solid var(--hair);margin:26px 0}
+.guia .my{font-family:var(--mya);font-size:.92em}
+.doc-tabla-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 16px}
+.doc-tabla{width:100%;border-collapse:collapse;font-size:15px}
+.doc-tabla th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--soot);
+  padding:8px;border-bottom:1px solid var(--soot);vertical-align:bottom}
+.doc-tabla td{padding:8px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+footer{border-top:1px solid var(--hair);margin-top:30px;padding:22px 0 50px;color:var(--soot);font-size:14px}
+footer a{color:var(--nila)}
+.licencia{font-size:12.5px;line-height:1.65}
+@media (max-width:760px){.wrap{padding:0 16px}header{padding-top:36px}}
+@media print{#lang-btn,#theme{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="volver-sitio" id="volver" href="../">← Análisis de los suttas de Kaccāyana</a>
+  <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
+  <h1 id="h1">__ES_H1__</h1>
+  <div class="vline"><span class="badge-b" id="etiqueta">Borrador</span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button><button type="button" class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button></div>
+</div></header>
+
+<main class="wrap">
+<article class="guia" id="guia-es" lang="es">
+__ES__
+</article>
+<article class="guia" id="guia-en" lang="en" hidden>
+__EN__
+</article>
+</main>
+
+<footer><div class="wrap">
+  <p><a href="../" id="volver-pie">← Análisis de los suttas de Kaccāyana</a></p>
+  <p class="licencia" id="lic">Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.</p>
+</div></footer>
+
+<script>
+(function(){
+/* Las dos lenguas viajan en la página; el interruptor enseña una u otra, con
+   la misma regla que el análisis (?lang= o la clave pali_lang del sitio). */
+const H=/*__TITULOS__*/{}/*__FIN__*/;
+const T={
+  es:{titulo:H.es.titulo,h1:H.es.h1,volver:'← Análisis de los suttas de Kaccāyana',draft:'Borrador',
+    lic:'Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.',
+    otra:'View this page in English',tema:'Claro / oscuro'},
+  en:{titulo:H.en.titulo,h1:H.en.h1,volver:'← Analysis of the Kaccāyana suttas',draft:'Draft',
+    lic:'Study material of the Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.',
+    otra:'Ver esta página en español',tema:'Light / dark'}};
+const root=document.documentElement;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const mq=c=>{try{return !!(window.matchMedia&&matchMedia(c).matches)}catch(e){return false}};
+function paliLang(){const g=store.get('pali_lang');if(g==='en'||g==='es')return g;
+  const n=(navigator.languages&&navigator.languages[0])||navigator.language||'';return /^en\b/i.test(n)?'en':'es'}
+let lang=(new URLSearchParams(location.search).get('lang')||paliLang())==='en'?'en':'es';
+function pintar(){
+  const t=T[lang];root.lang=lang;document.title=t.titulo;
+  document.getElementById('h1').textContent=t.h1;
+  document.getElementById('guia-es').hidden=lang!=='es';
+  document.getElementById('guia-en').hidden=lang!=='en';
+  ['volver','volver-pie'].forEach(id=>{const a=document.getElementById(id);a.textContent=t.volver;a.href='../?lang='+lang});
+  document.getElementById('etiqueta').textContent=t.draft;
+  document.getElementById('lic').textContent=t.lic;
+  document.getElementById('theme').setAttribute('aria-label',t.tema);
+  const lb=document.getElementById('lang-btn');
+  lb.querySelectorAll('.lang-seg').forEach(x=>x.classList.toggle('lang-cur',x.dataset.l===lang));
+  lb.title=t.otra;lb.setAttribute('aria-label',t.otra);
+}
+document.getElementById('lang-btn').onclick=()=>{lang=lang==='en'?'es':'en';store.set('pali_lang',lang);pintar()};
+/* tema, compartido con el sitio (pali_dark) */
+const saved=store.get('pali_dark');
+if(saved==='1'||(saved===null&&mq('(prefers-color-scheme: dark)')))root.dataset.theme='dark';
+document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';store.set('pali_dark',root.dataset.theme==='dark'?'1':'0')};
+pintar();
+})();
+</script>
+</body>
+</html>
