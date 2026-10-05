@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<title>Guía para estudiantes — Análisis de los suttas de Kaccāyana</title>
+<meta name="version" content="0.7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&family=Padauk&display=swap" rel="stylesheet">
+<style>
+/* Guía para el estudiante del análisis de los suttas. Los estilos son los de
+   recursos/analisis/plantilla.html (colores, letra, cabecera, interruptor
+   ES | EN), reducidos a lo que usa una página de prosa. */
+:root{
+  --ola:#E7E3D6;--ola-2:#F0EDE4;--ink:#171612;--soot:#4E4839;--hair:#BFB7A0;
+  --haritala:#5C4008;--hl:rgba(92,64,8,.16);
+  --chip-k:rgba(39,65,79,.10);--nila:#27414F;--rakta:#7E2E23;--shadow:rgba(0,0,0,.08);
+  --serif:"Gentium Book Plus",Georgia,"Times New Roman",serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --mya:"Padauk","Myanmar Text","Noto Sans Myanmar",sans-serif;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{
+  --ola:#1A1917;--ola-2:#232220;--ink:#F4F1E8;--soot:#BDB5A2;--hair:#494438;
+  --haritala:#EFC14E;--nila:#B6D8EE;--rakta:#F09A88;--shadow:rgba(0,0,0,.45);
+  --hl:rgba(239,193,78,.20);--chip-k:rgba(182,216,238,.13)}
+html{-webkit-text-size-adjust:100%;background:var(--ola)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%)}
+:root[data-theme="dark"] body{background-image:none}
+[hidden]{display:none!important}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--soot)}
+header{padding:52px 0 22px;border-bottom:1px solid var(--hair)}
+.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);text-decoration:none;margin-bottom:14px;opacity:.85}
+.volver-sitio:hover{color:var(--nila);opacity:1}
+.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;background:url(../../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
+:root[data-theme="dark"] .marca-arbol{background-image:url(../../../assets/iebh-arbol-blanco.svg)}
+.eyebrow-iebh{display:flex;align-items:center;gap:9px}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.05;margin:10px 0 0;font-weight:700;letter-spacing:-.02em}
+.vline{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:14px}
+.badge-b{display:inline-flex;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--rakta);color:var(--rakta);border-radius:2px;padding:4px 8px}
+#lang-btn{position:relative;height:26px;padding:2px;border-radius:100px;
+  background:var(--ola-2);border:.5px solid var(--hair);color:var(--soot);
+  font:600 11px/1 var(--mono);letter-spacing:.08em;cursor:pointer;display:inline-flex;align-items:center;gap:2px;flex:none;
+  -webkit-appearance:none;appearance:none}
+#lang-btn .lang-seg{display:flex;align-items:center;justify-content:center;height:100%;padding:0 9px;border-radius:100px;transition:background .15s,color .15s}
+#lang-btn .lang-cur{background:var(--nila);color:var(--ola)}
+#lang-btn:hover .lang-seg:not(.lang-cur){background:var(--chip-k);color:var(--ink)}
+#lang-btn:focus-visible,.icon-btn:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
+.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);color:var(--soot);
+  border:1px solid var(--hair);border-radius:2px;padding:6px 9px;cursor:pointer}
+/* el texto de la guía */
+.guia{padding:10px 0 20px}
+.guia h2{font-size:24px;line-height:1.2;margin:34px 0 8px;font-weight:700}
+.guia h3{font-size:19px;margin:26px 0 6px;font-weight:700}
+.guia h4,.guia h5{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soot);margin:22px 0 4px}
+.guia p{margin:0 0 12px}
+.guia a{color:var(--nila)}
+.guia ul{margin:0 0 12px;padding-left:22px}
+.guia li{margin:0 0 4px}
+.guia ul.num{list-style:none;padding-left:0}
+.guia code{font-family:var(--mono);font-size:.86em;background:var(--chip-k);border-radius:2px;padding:0 3px}
+.guia blockquote{margin:0 0 12px;border-left:2px solid var(--haritala);padding-left:12px;color:var(--soot)}
+.guia hr{border:0;border-top:1px solid var(--hair);margin:26px 0}
+.guia .my{font-family:var(--mya);font-size:.92em}
+.doc-tabla-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 16px}
+.doc-tabla{width:100%;border-collapse:collapse;font-size:15px}
+.doc-tabla th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--soot);
+  padding:8px;border-bottom:1px solid var(--soot);vertical-align:bottom}
+.doc-tabla td{padding:8px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+footer{border-top:1px solid var(--hair);margin-top:30px;padding:22px 0 50px;color:var(--soot);font-size:14px}
+footer a{color:var(--nila)}
+.licencia{font-size:12.5px;line-height:1.65}
+@media (max-width:760px){.wrap{padding:0 16px}header{padding-top:36px}}
+@media print{#lang-btn,#theme{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="volver-sitio" id="volver" href="../">← Análisis de los suttas de Kaccāyana</a>
+  <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
+  <h1 id="h1">Guía para estudiantes — Análisis de los suttas de Kaccāyana</h1>
+  <div class="vline"><span class="badge-b" id="etiqueta">Borrador</span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button><button type="button" class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button></div>
+</div></header>
+
+<main class="wrap">
+<article class="guia" id="guia-es" lang="es">
+<h3 id="1-qué-es-esta-página">1. Qué es esta página</h3>
+<p>La página <a href="https://gramaticas.buddha-dhamma.net/recursos/analisis/">Análisis de los suttas de Kaccāyana</a> muestra cada sutta de Kaccāyana tal como lo analiza la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i> de Ashin Aggañāṇābhivaṃsa (Mandalay, 2004), una guía de estudio en birmano, sutta por sutta.</p>
+<p>Para cada sutta encontrará, en una fila de la tabla: la clase de sutta, su aṅga, la función de cada palabra y el ejemplo del modelo de derivación. Hoy cubre el Sandhi-Kappa (§1–§51) y el Nāma-Kappa hasta el §246; los demás capítulos figuran como «pendiente».</p>
+<p>Es un <strong>borrador</strong> (versión v0.7): una lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.</p>
+<h3 id="2-cómo-moverse-por-la-página">2. Cómo moverse por la página</h3>
+<div class="doc-tabla-wrap"><table class="doc-tabla"><thead><tr><th>Elemento</th><th>Dónde está</th><th>Para qué sirve</th></tr></thead><tbody><tr><td>Índice lateral</td><td>A la izquierda (en el móvil, botón ☰)</td><td>Saltar a un capítulo (Kappa) o a una sección (kaṇḍa).</td></tr><tr><td>DESPLEGAR / PLEGAR</td><td>Arriba del índice</td><td>Abrir o cerrar todas las secciones del índice.</td></tr><tr><td>Buscador</td><td>Barra sobre la tabla</td><td>Buscar un sutta, un término o una forma del ejemplo. Escriba «30» o «§30» para ir directamente al §30.</td></tr><tr><td>TODOS / SANDHI / NĀMA</td><td>Barra sobre la tabla</td><td>Mostrar todos los suttas o sólo los de un capítulo. A la derecha se ve cuántos suttas quedan a la vista.</td></tr><tr><td>◐</td><td>Barra sobre la tabla</td><td>Cambiar entre modo claro y oscuro.</td></tr><tr><td>ES / EN</td><td>Junto a la versión</td><td>Cambiar la lengua de la página (español o inglés).</td></tr><tr><td>↑</td><td>Abajo a la derecha, al bajar</td><td>Volver al principio de la página.</td></tr></tbody></table></div>
+<p>La tabla tiene más columnas de las que caben en una pantalla normal: desplácela hacia la derecha para ver <strong>Notas</strong> y <strong>Fuente</strong>. En el móvil, cada fila se muestra como una ficha.</p>
+<h3 id="3-cómo-leer-una-fila">3. Cómo leer una fila</h3>
+<p>Cada fila es un sutta. Salvo el § y el texto del sutta, todo lo que ve procede del libro; donde el libro no da nada, la celda queda vacía (—).</p>
+<div class="doc-tabla-wrap"><table class="doc-tabla"><thead><tr><th>Columna</th><th>Qué contiene</th></tr></thead><tbody><tr><td>§</td><td>Número del sutta. Al pulsarlo se abre el aforismo con su traducción en este sitio.</td></tr><tr><td>Sutta</td><td>El texto pāḷi del sutta, según la edición de U Nandisena.</td></tr><tr><td>Clase de sutta</td><td>La clase que le da el libro, en pāḷi o en birmano, tal como está impresa.</td></tr><tr><td>Aṅga</td><td>Las palabras que el libro enumera como miembros (aṅga) del sutta, tal como las imprime.</td></tr><tr><td>Funciones</td><td>La función de cada palabra: kāriyī, kāriya, nimitta, saññā / saññī, visaya / visayī; el visesana va entre corchetes.</td></tr><tr><td>Ejemplo</td><td>El ejemplo del modelo de derivación (rup) que da el libro.</td></tr><tr><td>Notas</td><td>La primera frase de la nota; pulse ▸ para leerla entera.</td></tr><tr><td>Fuente</td><td>La página del PDF del escaneo (página impresa + 46).</td></tr></tbody></table></div>
+<p>En la columna Ejemplo, las marcas significan:</p>
+<ul class="doc-lista"><li><strong>subrayado</strong>: la letra que sufre la operación;</li><li><strong>en rojo</strong>: la causa;</li><li><strong>resaltado</strong>: el resultado;</li><li><strong>tachado</strong>: lo que se elide.</li></ul>
+<p>Las etiquetas como <strong>7.ª</strong> o <strong>5.ª</strong> junto al nimitta son un añadido editorial del IEBH (la inflexión deducida del caso de la palabra), no análisis del libro.</p>
+<h3 id="4-términos-técnicos-y-ejercicios">4. Términos técnicos y ejercicios</h3>
+<p><strong>Términos con subrayado punteado.</strong> Los términos técnicos (saññā, aṅga, kāriya…) llevan un subrayado punteado. Pase el ratón por encima, tóquelo en el móvil o lléguelo con la tecla Tab: aparece un globo con su definición. Las definiciones básicas están también en el apartado <strong>Terminología</strong>, arriba de la tabla.</p>
+<p><strong>Ejercicios.</strong> En algunos suttas, marcados <strong>Ejercicio</strong>, el libro deja el análisis al estudiante. Intente primero hacer el análisis usted mismo: kāriyī, kāriya, nimitta. Después pulse <strong>ver respuesta</strong> para comparar con la <strong>Respuesta sugerida (IEBH)</strong>. Esa respuesta es del IEBH, no del libro.</p>
+<h3 id="5-borrador-fuentes-y-cómo-citar">5. Borrador, fuentes y cómo citar</h3>
+<p><strong>Por qué es un borrador.</strong> El texto birmano se lee en un escaneo. Sólo pasa a la tabla lo que dos lecturas independientes han cotejado en las imágenes. Por eso:</p>
+<ul class="doc-lista"><li>una celda vacía significa que el libro no da nada, o que la lectura aún no está verificada;</li><li>lo que ha leído un solo lector va en la nota, rotulado «lectura de un solo lector, sin verificar».</li></ul>
+<p>Si encuentra algo que le parezca un error, anótelo con el § y la página del PDF y comuníqueselo a su profesor.</p>
+<p><strong>La obra.</strong> El apartado <strong>Fuente y cita</strong>, arriba de la tabla, da los datos completos del libro y una nota sobre su autor.</p>
+<p><strong>Cómo citar esta página</strong> (propuesta):</p>
+<blockquote><p>Instituto de Estudios Buddhistas Hispano (IEBH). <i>Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā</i>, v0.7 (borrador), 2026, §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/</p></blockquote>
+<p>Indique siempre la versión, porque el borrador cambia.</p>
+<h3 id="6-sugerencias-de-estudio">6. Sugerencias de estudio</h3>
+<ul class="doc-lista num"><li>1. Antes de cada clase, busque el § que se va a estudiar y lea la fila completa, incluida la nota.</li><li>2. Pulse el § para leer el aforismo y su traducción, y vuelva a la tabla.</li><li>3. Siga el ejemplo con las marcas de color: qué letra cambia, por qué causa y con qué resultado.</li><li>4. Busque una forma o un término (por ejemplo, «nimitta») para ver todos los suttas donde aparece.</li><li>5. Haga los ejercicios antes de abrir la respuesta sugerida.</li><li>6. Lea las definiciones del glosario la primera vez que encuentre un término nuevo.</li></ul>
+</article>
+<article class="guia" id="guia-en" lang="en" hidden>
+<h3 id="1-what-this-page-is">1. What this page is</h3>
+<p>The page <a href="https://gramaticas.buddha-dhamma.net/recursos/analisis/">Analysis of the Kaccāyana suttas</a> shows each Kaccāyana sutta as the <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i> by Ashin Aggañāṇābhivaṃsa (Mandalay, 2004) analyses it. That book is a Burmese study guide that goes sutta by sutta.</p>
+<p>Each table row gives one sutta: its class, its aṅga, the role of each word and the example of the model derivation. The page now covers Sandhi-Kappa (§1–§51) and Nāma-Kappa up to §246; the other chapters are marked «pending». It is a <strong>draft</strong> (v0.7): a reading of the Burmese text from a scan, checked against the page images.</p>
+<h3 id="2-finding-your-way">2. Finding your way</h3>
+<div class="doc-tabla-wrap"><table class="doc-tabla"><thead><tr><th>Element</th><th>Where</th><th>What it does</th></tr></thead><tbody><tr><td>Side index</td><td>Left (on phones, the ☰ button)</td><td>Jump to a chapter (Kappa) or section (kaṇḍa).</td></tr><tr><td>EXPAND / FOLD</td><td>Top of the index</td><td>Open or close every section in the index.</td></tr><tr><td>Search box</td><td>Bar above the table</td><td>Find a sutta, a term or a form in the examples. Type «30» or «§30» to go straight to §30.</td></tr><tr><td>ALL / SANDHI / NĀMA</td><td>Bar above the table</td><td>Show every sutta or one chapter only; the count of visible suttas is on the right.</td></tr><tr><td>◐</td><td>Bar above the table</td><td>Switch between light and dark mode.</td></tr><tr><td>ES / EN</td><td>Next to the version</td><td>Switch the page language.</td></tr><tr><td>↑</td><td>Bottom right, once you scroll</td><td>Back to the top.</td></tr></tbody></table></div>
+<p>The table is wider than most screens: scroll it to the right to see <strong>Notes</strong> and <strong>Source</strong>. On phones each row is shown as a card.</p>
+<h3 id="3-reading-a-row">3. Reading a row</h3>
+<p>Apart from the § and the sutta text, everything comes from the book; where the book gives nothing, the cell is empty (—).</p>
+<div class="doc-tabla-wrap"><table class="doc-tabla"><thead><tr><th>Column</th><th>What it holds</th></tr></thead><tbody><tr><td>§</td><td>The sutta number; click it to open the aphorism and its translation on this site.</td></tr><tr><td>Sutta</td><td>The Pāḷi text of the sutta, following U Nandisena's edition.</td></tr><tr><td>Sutta class</td><td>The class the book gives, in Pāḷi or Burmese, as printed.</td></tr><tr><td>Aṅga</td><td>The words the book lists as members (aṅga) of the sutta, as printed.</td></tr><tr><td>Roles</td><td>Each word's role: kāriyī, kāriya, nimitta, saññā / saññī, visaya / visayī; a visesana is shown in brackets.</td></tr><tr><td>Example</td><td>The book's example of the model derivation (rup).</td></tr><tr><td>Notes</td><td>The note's first sentence; click ▸ for the whole note.</td></tr><tr><td>Source</td><td>The page of the scanned PDF (printed page + 46).</td></tr></tbody></table></div>
+<p>In the Example column: <strong>underlined</strong> = the letter the operation acts on; <strong>red</strong> = the cause; <strong>highlighted</strong> = the result; <strong>struck through</strong> = what is elided. Tags such as <strong>7.ª</strong> or <strong>5.ª</strong> next to the nimitta are an IEBH editorial addition, not the book's analysis.</p>
+<h3 id="4-technical-terms-and-exercises">4. Technical terms and exercises</h3>
+<p><strong>Dotted underlines.</strong> Hover over a technical term, tap it on a phone, or reach it with the Tab key to see its definition. The basic terms are also listed under <strong>Terminology</strong> above the table.</p>
+<p><strong>Exercises.</strong> In suttas marked <strong>Exercise</strong>, the book leaves the analysis to the student. Do the analysis yourself first, then click <strong>show answer</strong> to compare with the <strong>Suggested answer (IEBH)</strong>. That answer comes from the IEBH, not from the book.</p>
+<h3 id="5-draft-status-sources-and-citing">5. Draft status, sources and citing</h3>
+<p>Only what two independent readings have checked against the page images reaches the table. An empty cell means the book gives nothing, or the reading is not yet verified. Material read by a single reader is in the note, labelled «lectura de un solo lector, sin verificar». If something looks wrong, note the § and the PDF page and tell your teacher.</p>
+<p><strong>Source and citation</strong>, above the table, gives the full details of the book and a note on its author.</p>
+<p><strong>How to cite this page</strong> (proposal):</p>
+<blockquote><p>Instituto de Estudios Buddhistas Hispano (IEBH). <i>Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā</i>, v0.7 (draft), 2026, §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/</p></blockquote>
+<p>Always give the version: the draft changes.</p>
+<h3 id="6-study-tips">6. Study tips</h3>
+<ul class="doc-lista num"><li>1. Before each class, look up the § you will study and read the whole row, including the note.</li><li>2. Click the § to read the aphorism and its translation, then come back to the table.</li><li>3. Follow the example through its colour marks: which letter changes, because of what, with what result.</li><li>4. Search for a form or a term (e.g. «nimitta») to see every sutta where it occurs.</li><li>5. Do the exercises before opening the suggested answer.</li><li>6. Read the glossary definition the first time you meet a new term.</li></ul>
+</article>
+</main>
+
+<footer><div class="wrap">
+  <p><a href="../" id="volver-pie">← Análisis de los suttas de Kaccāyana</a></p>
+  <p class="licencia" id="lic">Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.</p>
+</div></footer>
+
+<script>
+(function(){
+/* Las dos lenguas viajan en la página; el interruptor enseña una u otra, con
+   la misma regla que el análisis (?lang= o la clave pali_lang del sitio). */
+const H={"es": {"titulo": "Guía para estudiantes — Análisis de los suttas de Kaccāyana", "h1": "Guía para estudiantes — Análisis de los suttas de Kaccāyana"}, "en": {"titulo": "English version — Student guide", "h1": "English version — Student guide"}};
+const T={
+  es:{titulo:H.es.titulo,h1:H.es.h1,volver:'← Análisis de los suttas de Kaccāyana',draft:'Borrador',
+    lic:'Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.',
+    otra:'View this page in English',tema:'Claro / oscuro'},
+  en:{titulo:H.en.titulo,h1:H.en.h1,volver:'← Analysis of the Kaccāyana suttas',draft:'Draft',
+    lic:'Study material of the Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.',
+    otra:'Ver esta página en español',tema:'Light / dark'}};
+const root=document.documentElement;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const mq=c=>{try{return !!(window.matchMedia&&matchMedia(c).matches)}catch(e){return false}};
+function paliLang(){const g=store.get('pali_lang');if(g==='en'||g==='es')return g;
+  const n=(navigator.languages&&navigator.languages[0])||navigator.language||'';return /^en\b/i.test(n)?'en':'es'}
+let lang=(new URLSearchParams(location.search).get('lang')||paliLang())==='en'?'en':'es';
+function pintar(){
+  const t=T[lang];root.lang=lang;document.title=t.titulo;
+  document.getElementById('h1').textContent=t.h1;
+  document.getElementById('guia-es').hidden=lang!=='es';
+  document.getElementById('guia-en').hidden=lang!=='en';
+  ['volver','volver-pie'].forEach(id=>{const a=document.getElementById(id);a.textContent=t.volver;a.href='../?lang='+lang});
+  document.getElementById('etiqueta').textContent=t.draft;
+  document.getElementById('lic').textContent=t.lic;
+  document.getElementById('theme').setAttribute('aria-label',t.tema);
+  const lb=document.getElementById('lang-btn');
+  lb.querySelectorAll('.lang-seg').forEach(x=>x.classList.toggle('lang-cur',x.dataset.l===lang));
+  lb.title=t.otra;lb.setAttribute('aria-label',t.otra);
+}
+document.getElementById('lang-btn').onclick=()=>{lang=lang==='en'?'es':'en';store.set('pali_lang',lang);pintar()};
+/* tema, compartido con el sitio (pali_dark) */
+const saved=store.get('pali_dark');
+if(saved==='1'||(saved===null&&mq('(prefers-color-scheme: dark)')))root.dataset.theme='dark';
+document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';store.set('pali_dark',root.dataset.theme==='dark'?'1':'0')};
+pintar();
+})();
+</script>
+</body>
+</html>
