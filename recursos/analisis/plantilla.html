@@ -162,6 +162,7 @@ tr.sec td{padding:30px 0 6px;border-bottom:1px solid var(--hair)}
 tr.sec h2{font-size:22px;margin:0;font-weight:700}
 tr.sec h2 .pl{font-style:italic;color:var(--haritala)}
 tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);letter-spacing:.04em;margin-left:8px}
+tr.sec .cap-aviso{margin:6px 0 0;font-size:13.5px;color:var(--soot);max-width:70ch}
 td.n{white-space:nowrap;width:1%}
 td.ru{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap;width:1%}
 td.su{font-style:italic;font-weight:700;width:17%}
@@ -661,7 +662,9 @@ function render(){
       /* capítulo publicado en parte (Nāma, v0.4): sin filas, el kaṇḍa no sale */
       if(!filas.some(e=>e.n>=desde&&e.n<=hasta))return;
       const sid=`k-${c.clave}-${i+1}`;let it='';
-      h+=`<tr class="sec" id="${sid}" data-cap="${c.clave}"><td colspan="9"><h2>${esc(c.pali)} · ${esc(kname(k))}<span class="rg">§${desde}–§${hasta}</span></h2></td></tr>`;
+      /* aviso de cabecera del capítulo, bajo su primer kaṇḍa (Kāraka, v0.9) */
+      const av=i===0?(D.capitulos.find(x=>x.clave===c.clave)||{}).aviso:null;
+      h+=`<tr class="sec" id="${sid}" data-cap="${c.clave}"><td colspan="9"><h2>${esc(c.pali)} · ${esc(kname(k))}<span class="rg">§${desde}–§${hasta}</span></h2>${av&&av[lang]?`<p class="cap-aviso">${esc(av[lang])}</p>`:''}</td></tr>`;
       filas.filter(e=>e.n>=desde&&e.n<=hasta).forEach(e=>{h+=fila(e);it+=`<a href="#s${e.n}" data-c="s${e.n}"><b>§${e.n}</b><i>${esc(e.sutta||'')}</i></a>`});
       sb+=`<details class="sb-sec" data-g="${sid}"${abiertos[sid]?' open':''}><summary><span class="gl">${esc(kname(k))}</span><span class="n"></span><span class="rg">§${desde}–§${hasta}</span></summary>${it}</details>`;
     });

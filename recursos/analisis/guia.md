@@ -44,6 +44,8 @@ En la columna Ejemplo, las marcas significan:
 - **resaltado**: el resultado;
 - **tachado**: lo que se elide.
 
+En Kāraka el libro no segmenta con «+»: narra los pasos. La notación «+ / →» de la columna Ejemplo es del IEBH y resume esa narración; las glosas y la narración están en las Notas.
+
 Las etiquetas como **7.ª** o **5.ª** junto al nimitta son un añadido editorial del IEBH (la inflexión deducida del caso de la palabra), no análisis del libro.
 
 ## 4. Términos técnicos y ejercicios
@@ -118,6 +120,8 @@ Apart from the § and the sutta text, everything comes from the book; where the 
 | Source | The page of the scanned PDF (printed page + 46). |
 
 In the Example column: **underlined** = the letter the operation acts on; **red** = the cause; **highlighted** = the result; **struck through** = what is elided. Tags such as **7.ª** or **5.ª** next to the nimitta are an IEBH editorial addition, not the book's analysis.
+
+In Kāraka the book does not segment with «+»: it narrates the steps. The «+ / →» notation in the Example column is the IEBH's summary of that narration; glosses and narration are in the Notes.
 
 ## 4. Technical terms and exercises
 

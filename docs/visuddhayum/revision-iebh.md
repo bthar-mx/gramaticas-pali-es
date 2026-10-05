@@ -2368,3 +2368,364 @@ J21. Términos propuestos para el glosario (no añadidos): **padamālā** («gui
 Decisión: 
 
 **Reglas por defecto aplicadas en la v0.8 (2026-10-04), pendientes de revisión del IEBH** (la publicación de §247–§270): I17, J1, J12 → lo disputado fuera de la celda, la duda en Notas; J7 → §256, clase *adhikāra-sutta*, como está impresa («အဓိကာရသုတ်တည်း»); J20 → la nota de §270 menciona el cierre «ပဉ္စမပိုင်းပြီး၏။» y la línea de fecha y lugar, sin reproducir el verso; J17 → la columna Sutta conserva la grafía de Nandisena, la del libro va en Notas. Además, como en la fila: I20, visaya *sabbanāmehi* en Funciones de §249 y «သဒ္ဒါဝိသယ မပါ» de §248 solo en Notas; J3, «(vā)» en los contraejemplos de §251 y §252; J4, filas de §253, §255, §258 sin Ejemplo y la frase «fácil» en Notas; J5, las remisiones con «cf.».
+
+## K. Kāraka (§271–)
+
+Capítulo 7 del libro, PDF 494–562; nº del libro = § + 307. Preparación del 2026-10-05, antes de la tanda 1a: ninguna fila leída todavía. Detalle en `karaka-piloto.md`. Reglas por defecto (a), (b'), (c)–(j), traídas de Nāma.
+
+K1. §301 (nº 608, PDF 547) y §302 (nº 609, PDF 548): el libro no da (က)/(ခ) propios; solo remite atrás. §301: «ရုပ်ကို - ယဿဝါ ပရိဂ္ဂဟော တံ သာမီ၌ ဆိုအပ်ပြီ» (el modelo se dio en *yassa vā pariggaho taṃ sāmī*, §283). §302: «ရုပ်ကို-ယောဓာရော တမောကာသံ၌ဆိုအပ်ပြီ။», «(ခ) အဓိပ္ပါယ် ကိုလည်း ဆိုအပ်ပြီ။» (modelo y explicación, en *yo’dhāro tam okāsaṃ*, §278). ¿Celda vacía o remisión?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: una sola regla para las remisiones, la (h): «cf. §N» en el Ejemplo. §301 → «cf. §283»; §302 → «cf. §278». Sustituye a la propuesta por defecto (celdas vacías y remisión en Notas). Vale junto con K16 y K39.
+
+K2. §300 (nº 607): la palabra del padaṃ del encabezado quedó fuera del borde de la tira en la exploración [?]. Hay que leerla a ojo: PDF 543, y≈858–918.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: cerrado por K36 (*tipadaṃ*, las dos lecturas).
+
+K3. §314 (nº 621): en el encabezado «အဓိကိဿရတ္ထောပါဓိယောဂေ», el grupo «ဿရတ္ထော» es dudoso [?]. Hay que leerlo a ojo: PDF 560, y≈504–550.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: el grupo sigue [?]; la columna Sutta sigue a Nandisena (J17/K4) y la nota publicada dice que un grupo del encabezado impreso no se lee con seguridad, sin darlo.
+
+K4. Encabezados que no coinciden con el texto de Nandisena: §275 (nº 582) y §277 (nº 584), abreviados por el libro con «--»; §314, con otra redacción (Nandisena: *Upa-’dhyādhik’-issaravacane*); §315, donde el libro añade «စ», que Nandisena no tiene. Ya resuelto por J17.
+
+- [ ] Revisado
+
+Decisión: ya cubierto por J17 (por defecto desde la v0.8, pendiente de revisión del IEBH como J17): la columna Sutta lleva la grafía de Nandisena; la forma del libro, como está impresa (con «--»), va en Notas.
+
+### Tanda 1a (§271–§274), 2026-10-05
+
+K5. **Discrepancia en celda cotejada**, §272 (PDF 496, y≈850–900), *himavatā*: el paso «အမှတုမှန္တ--ဖြင့် သ္မာကို နာငဲ့»: «no nā» (lector) / «nā en lugar de smā» (verificador). Claude, a ×2, lee «နာငဲ့» (¿smā «mirando a» / tratado como nā?, para que luego «to, ti, tā-» haga nta con nā → tā). La forma, himavanta + smā y el paso de «to, ti, tā-» son [V]; este paso queda fuera, en la DUDA de Notas. ¿Lo mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K6. **Discrepancia en celda cotejada**, §272 (PDF 496, y≈1190), *sālāya*: el sutta del paso smā → āya: «ဃတောနာဒီနံ» (lector, que infiere ဃ porque en esta letra se parece a ယ; [I] = Kacc. «ghato nādīnaṃ») / «ယတောနာဒီနံ» (verificador). La forma, sālā + smā y smā → āya son [V]; el nombre del sutta queda fuera, en la DUDA. ¿Lo mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K7. **Celda cotejada sin acuerdo**, §272 (PDF 496, y≈1230 y y≈1720), *brahmalokā* (dos veces, con *ā* y con *yāva*): «ဗြ» (lector) / «ဗ o ပ, no se distingue» (verificador); Claude, a ×3, tampoco lo decide. Las dos apariciones están fuera de la celda, en la DUDA de Notas. ¿Las mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K8. **Los encabezados de Kāraka no traen numeración kaṇḍa.pariccheda.sutta** (§271–§274, las dos lecturas y Claude en §271). La comprobación independiente del nº que daba Nāma no existe aquí; queda la serie seguida y la tabla de encabezados de `karaka-piloto.md`. ¿Basta, o se quiere otra comprobación (p. ej., la página impresa)?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) se acepta. Además, en cada sutta se anota la página impresa de cada página del PDF, comprobada contra PDF = libro + 46.
+
+K9. **El (က) de Kāraka narra, no segmenta**: ninguno de los cuatro suttas escribe «X + Y»; dan la base («X-တည်»), la glosa y los suttas de cada paso en prosa birmana. La celda Ejemplo da las formas con «*» y lo narrado en que coinciden las dos lecturas (base + sufijo, suttas citados con su abreviatura impresa, «--» incluido, regla d). ¿Este formato, o solo las formas, con lo narrado en Notas?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: el formato de las tandas 1a–9: las formas y, en la misma celda, los pasos narrados en que coinciden las dos lecturas.
+
+K10. §271 (PDF 494, y≈1200–1320): en *pāvakā* y *pāpā* el libro imprime «မကြောက်ရာ» y «မလန့်ရာ», con «မ» negativo («lo que no se teme»), cuando el sentido pide lo que se teme (como «ကြောက်ရာ» de *corā*). Las dos lecturas lo ven igual. Va en Notas tal como está, con DUDA. ¿Errata del libro o lectura que se nos escapa?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: se copia como está impreso («así impreso» en la nota publicada), sin conjetura de errata.
+
+K11. Dudas solo de Notas, con las dos lecturas en la DUDA de cada fila: §271, la palabra que abre la última frase (PDF 496, y≈430: «ရှဋ္ဌီ(?)» / «ရှင်ဦး»); §273, lo que se dice de *maccha* («ဣစ္ဆိတ» / «ဣဋ္ဌ») y «ပုဗ္ဗသင်္ဂတိ» / «ပုဗ္ဗသင်္ကတိ»; §274, el número de la referencia al Brahmanimantana-sutta («505» / «405») y el «၌» final de la glosa de *upajjhāyā*. No afectan a ninguna celda de página.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+### Tanda 1b (§275), 2026-10-05
+
+K12. **Discrepancias en celda cotejada**, §275, formas del (က), fuera de [V] y en la DUDA de Notas: (1) PDF 499, y≈1900, la forma unida a *pubba*: «သမ္ဗောဓာ» *sambodhā* (lector; Claude, a ×2, igual) / «သမ္ဗာဓာ» *sambādhā* (verificador). (2) PDF 500, y≈330: «*အဘိဓမ္မာ» (verificador) / ဘ o တ sin decidir (lector); Claude ve «အတိဓမ္မာ». (3) PDF 500, y≈540: «*ဧကသဒိသဘာဝပတ္တိတော» (verificador; Claude ve la «သ») / lectura insegura (lector). (4) PDF 499, y≈2230: «ပုညာယ», las dos lecturas con esa grafía, pero el «*» lo ve el lector y no el verificador (Claude lo ve). ¿Las mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K13. §275, PDF 499, y≈2230: el libro imprime «ပုညာယ» (glosa «ပုညာတည်»), entre *sīlena* y *kuto* («ကိံ … ပုစ္ဆာ၌», en la pregunta). El sutta enumera *pañha*, y el sentido pide *pucchāya*. Se copia como está. ¿Errata del libro?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: se copia como está impreso («así impreso» en la nota publicada), sin conjetura de errata.
+
+K14. Dudas solo de Notas, §275, con las dos lecturas en la DUDA de la fila: *annassa / anussavassa* y *addhassa / ajjhenassa hetu* (PDF 502, y≈2050; Claude con el verificador); *kimpanimassa / kimpunimassa* (502, y≈1800; Claude ve la «ု»); *kato- … kuto- / kvato- … kvato-* (502, y≈2220); *jaḍattā / jaḷattā* (503, y≈900); la paribhāsā «yattha āsatti / āsaṅkā, tattha paṭisedho» (504); «ပုဗ္ဗသင်္ဂတိ / သင်္ကတိ» (504, y≈600–700: la misma duda que en §273, K11); la palabra antes de «ဂစ္ဆ ဘန္တေ» (503, y≈1450) y la última de la cita «Pañcamī vibhatte» (501, y≈1500). Ninguna afecta a celdas de página.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+K15. K8 se aplica desde la tanda 1b: la fila de §275 anota las páginas impresas 452–458 (PDF 498–504). Las filas de la tanda 1a (§271–§274, PDF 494–498) no las llevan: en aquella tanda solo se comprobó la p. 452 (PDF 498), en el (ခ) de §273. ¿Se completan cuando el IEBH lo pida, a ojo en la imagen, o basta con lo anotado?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: no se completan; las páginas impresas se quedan en `karaka-piloto.md` y no salen en la página (como en Nāma).
+
+### Tanda 2 (§276–§280), 2026-10-05
+
+K16. §280 (nº 587, PDF 513, y≈775): el (က) no da forma; solo remite adelante: «(က) ရုပ်။ ။ ကမ္မတ္ထေ ဒုတိယာသို့ရောက်မှ ဆိုလတံ့။» (se dirá al llegar a *kammatthe dutiyā*). Las dos lecturas coinciden. Por la regla (h), las remisiones del libro se quedan en el Ejemplo, glosadas «cf.», y así va. Pero K1 (§301, §302: el libro solo remite atrás) propone por defecto lo contrario: celda vacía y la remisión en Notas. ¿Se tratan igual las dos clases de remisión? Si vale K1, la de §280 pasa a Notas.
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: la misma regla que K1, la (h): §280 lleva «cf. §297» en el Ejemplo (remisión hacia adelante, a *kammatthe dutiyā*).
+
+K17. §277 (nº 584, PDF 505, y≈790): el (က), tras *buddhassa*, dice al lector «(ကြွင်းရုပ်တို့ကို သုတ်နက်အရ အယှဉ်ကို ကျနစွာ ဆို၍ တွက်လေ)» (las formas restantes, calcúlalas diciendo con exactitud la voz con que se unen, según el sentido del sutta). Las dos lecturas coinciden en el texto. No es un «ခွဲ / ခွဲလေ» de funciones, sino un encargo de derivar las otras formas del sutta (hanu, ṭhā, sapa, dhāra, piha…). ¿Ejercicio? Por defecto no: la frase va en Notas, sin respuesta sugerida.
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: el «…တွက်လေ» de §277 es un ejercicio; la «Respuesta sugerida (IEBH)» queda vacía.
+
+K18. §277 (PDF 505, y≈840): el (ခ) abre con «ဤသုတ်သည် ပါဏိနီကျမ်းလာ သုတ်အသီးသီးတို့ကို တသုတ်တည်းပြုထားသောသုတ် ဖြစ်သည်» (este sutta reúne en uno solo varios suttas del libro de Pāṇini). Las dos lecturas lo tienen por descripción, no por rótulo de clase. Va en Notas, «Clase: …», regla (h). ¿Conforme?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: Clase vacía; la frase va en la nota como descripción del libro.
+
+K19. **Discrepancia en celda cotejada**, §277 (PDF 505, y≈790), *buddhassa*: «စတုတ္ထီ ဧကဝစ်သသက်» (lector) / la primera letra, «ေက» o «ဧ», sin decidir (verificador). Lo demás del paso (catutthī «sa» en el sampadāna, por «sampadāne catutthī») es [V]; «singular» queda fuera de la celda, en la DUDA de Notas. ¿Lo mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K20. Dudas solo de Notas, con las dos lecturas en la DUDA de cada fila; ninguna afecta a celdas de página. §276: «ဒိစ္ဆာ / ဒိတ္သာ» en el sutta de Kalāpa; si rajaka y rāja «son sambandha, no sampadāna» o «se explican como sampadāna» (PDF 504, y≈1700); un «*» suelto que solo ve el verificador (504, y≈975). §277: *bhoto upaṭṭhiṃ / ဘောတိ ဥပဋ္ဌိသံ* (506, y≈700); *adhārayi / အဓာရေသိ* (506, y≈1240); *tadatthyaṃ / တာဒတ္ထံ* (508, y≈1425); tres formas con «*» que solo da el verificador (509); cifras de referencias y otros pasos, solo del lector. §278: la tercera forma del (ခ), «ādheyyo» / «အာဓေယော» (510, y≈1655); el símil (jinete y caballo / uno que duerme en una cama); «ဇလံ / ဇလ်». §279: la grafía de las citas sánscritas (lector). §280: la palabra que abre el (ခ), «ဣဓ» / «က္လစ»; «ကမ္မနော / ကမ္မုနော», «အသံ / အဿံ» (lector).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+### Tanda 3 (§281–§285), 2026-10-05
+
+K21. **Celda cotejada sin acuerdo pleno**, §282 (PDF 514, y≈990, x≈560–700), *dāsajeṭṭhako* («ဒါသဇေဋ္ဌကော»): el verificador lee el grupo central «ဇေဋ္ဌ» con claridad a ×2; el lector ve ဒါသ, ေ, un glifo ancho con subíndice y ကော, pero no logra separar ဇ + ဋ္ဌ en la imagen (lo tomó del OCR y lo marcó [R]). La narración del (က) es [V]; la forma va en el Ejemplo marcada [?]. ¿La mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K22. **Discrepancias en celda cotejada**, §283 (PDF 514, y≈1500–1580), el (က) de *sāmino*: (1) el nombre que da el sutta: «သာမိမှည့်» (*sāmi*, i breve; lector) / «သာမီမှည့်» (*sāmī*, ī larga; verificador). (2) El sutta del paso de la chaṭṭhī: «သာမိသ္မိံဆဋ္ဌီဖြင့် သမ္ဗန္ဓ ဆဋ္ဌီ…» (*sāmismiṃ chaṭṭhī*, lector, «con ampliación») / «သာမိသို့ဆဋ္ဌီဖြင့် သမ္ဗန်၌ ဆဋ္ဌီ…» («a sāmi, por chaṭṭhī, en el sambandha»; verificador). La forma, la base sāmī, la glosa, la chaṭṭhī singular «sa» y los dos suttas siguientes («အယောရဿ---», «ဈလတော သဿ နော ဝါ») son [V]; los dos puntos quedan fuera de [V], señalados en la celda. ¿Los mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K23. Dudas solo de Notas, con las dos lecturas en la DUDA de cada fila; ninguna afecta a celdas de página. §281: «သာ ဓုရေဝေတိ ဓနေယတိ / နေယတိ» en la cita de la Tattvabodhinī (514, y≈560–620). §283: «tassa / တဗ္ဗ (¿တပ္ပ?)» (514, y≈1790); el último pie de la estrofa, «na visesyādito / န ဝိသယှာဒိတော» (515, y≈810). §284: las dos divisiones del liṅga, «anippanna / nipphanna» (lector) frente a «aniyata / niyata» (verificador); la Tattvabodhinī, que solo ve el verificador (518–519); la grafía de la máxima «na kevalā …» y de la gāthā final; dos paréntesis de la 516, solo del lector. §285: «ဣဟ / ကြာဟ» al abrir la cita de la Tattvabodhinī (519, y≈1200).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+K24. §285 (PDF 519, y≈1095–1125): el verso de la Rūpasiddhi acaba impreso «… natthi rājā bhave ti ဒ"န္တိ», con un ဒ sin vocal antes de la comilla de cierre (las dos lecturas; el verificador, a ×4). Se copia como está. ¿Errata del libro (¿«bhave iti daṃ»?) o lectura que se nos escapa?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: se copia como está impreso («así impreso» en la nota publicada), sin conjetura de errata.
+
+### Tanda 4 (§286–§290), 2026-10-05
+
+K25. **Discrepancias en celda cotejada**, §287 (PDF 520, y≈735–900), el (က) de *gaggena*. La forma *gaggena* (las dos lecturas, ဂ abierta), su narración y cinco formas de la lista son [V]; quedan fuera de [V], señalados en la celda: (1) el paso tras la tatiyā (y≈790): «ဧနပြု» (*ena*; verificador) / «နေပြု», sin interpretar (lector). Claude, a ×2, ve el mismo glifo con que abre «ဧကဝုစ်» en esa línea (lectura de Claude, sin verificar). (2) «သဟဿေန» *sahassena*: el verificador lo lee claro; el lector, a ×7, no está seguro del ဿ. (3) «ဉာနေန», con န dental, como está impreso (verificador) / «ဉာဏေန» (lector). (4) La última forma de la lista (y≈830–885, x≈890–1060): «ဂုဠေန» *guḷena* (verificador, en ampliación) / ဂု + ေ + ဏ con subíndice (¿ဍ, ဌ?) + န, sin leer (lector). ¿Los mira el IEBH en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K26. **Discrepancia en celda cotejada**, §290 (PDF 523, y≈1530–1560): la forma con «*» que el libro pone «en addhā» («အဒ္ဓါ၌--နာသက်»): «ယောဇနေန» *yojanena* (lector) / «ယောဗ္ဗနေန» *yobbanena* (verificador). Claude, a ×2, ve «ယောဇနေန» (lectura de Claude, sin verificar). La forma queda fuera de la celda; la narración es [V]. ¿La mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K27. Dudas solo de Notas, con las dos lecturas en la DUDA de cada fila; ninguna afecta a celdas de página. §287: «သဟယောဂတော» donde se esperaría *sahāgato* (521, y≈840–880; solo el lector). §288: «ကတ္တုဘူတလက္ခဏာ» (lector) / «ဣတ္ထမ္ဘူတလက္ခဏာ» (verificador, que no descarta က) (522, y≈520–540); «မဏိနာ / ¿မဏ္ဍိနာ?» (522, y≈475). §289: «anāssite / anāsitte», «rīsyate / rīyate» en el verso «dabbādivisayo hetu…» (522, y≈1530–1580). §290: la primera palabra del (ခ), «ဧနယောဂ» (lector) / «နေယောဂ» (verificador) (524, y≈245); es el mismo glifo que el paso de §287 (K25, 1), y el IEBH puede decidir los dos a la vez.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+### Tanda 5 (§291–§295), 2026-10-05
+
+K28. **Discrepancia en celda cotejada**, §291 (PDF 524, y≈665), el sentido de *akkhinā* en el (က): «ဣတ္ထမ္ဘူတ လက္ခဏာ» *itthambhūta-lakkhaṇa* (lector, que lee ဣ en una ligadura) / «ကတ္ထမ္ဘူတ လက္ခဏ», copiado tal como se ve, y con la misma grafía en el (ခ) (verificador). La forma *akkhinā*, la base, la glosa y la tatiyā «nā» son [V]; la palabra queda fuera. Es el mismo glifo que en §288 (K27, «ကတ္တုဘူတ- / ဣတ္ထမ္ဘူတ-»): una sola decisión del IEBH resuelve los dos. ¿Lo mira en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K29. **Discrepancias en celda cotejada**, §294 (PDF 528, y≈420–520), el (က): (1) el paso de *vipassissa* antes de «sāgamo se»: «အယောရဿ-» (verificador) / «အဃောရဿ-» *agho rassa-* (lector); (2) la voz a la que va unido *pajānaṃ*: «သွတ္ထိ» *svatthi* (verificador) / *sotthi* (lector). Lo demás del (က) es [V]. La página 528 está escaneada a otra escala (1617 × 2438 px). ¿Los mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K30. **Discrepancia en celda cotejada**, §295 (PDF 530, y≈395–425): la base que precede a la glosa de *abbhā*: «အဗ္ဘ၊» *abbha* (verificador) / «အဗ္ဘာ၊» (lector). La forma *abbhā* y su glosa «တိမ်တိုက်မှ» son [V]. ¿La mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K31. Dudas solo de Notas, con las dos lecturas en la DUDA de cada fila; ninguna afecta a celdas de página. §291: la forma con «*» tras «အင်္ဂမဿာတိ» (524, y≈1105): ¿«အင်္ဂီ» *aṅgī*? (lector, que no distingue el signo final) / «အင်္ဂေါ» *aṅgo* (verificador); «ကု?ိတေ» en la cita del Kalāpa (526, y≈390; el sentido pediría *kucchite*); «ကာလီ / ကာဠီ» (526, y≈340); «ဆာတြံ / ¿ဆတ္တံ?» (525, y≈1490–1535). §292: «ကလာပဝုတ္တိ ပဉ္စိကာ» (lector) / «ပဋိကာ» (verificador) (526, y≈1785); «ဇဋ္ဌာဘိ / ဇဋာဘိ» (527, y≈370–410); el número del Mugdhabodha, «၂၈၈» (las dos lecturas; el lector no descarta del todo ၆ al final) (527, y≈480). §293: «ဒိန္နဓနော» *dinnadhano* (lector, a ×8) / «ဒိန္နမနော» (verificador, sin descartar ဓ) (527, y≈1370). §294: «ဝသဍ္» *vasaḍ*, grupo inseguro (528, y≈830 y 1110); la primera sílaba de «'…bhivāde' 8.2.83» (529, y≈1220–1250); «ဒေဝေ» (528, y≈880).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+### Tanda 6 (§296–§300), 2026-10-05
+
+Sustituye a una tanda 6 interrumpida (filas de §296–§298 en `karaka-piloto.md`), que se borró sin reutilizar sus lecturas ni sus recortes. Ninguna de las preguntas que siguen viene de aquella ejecución.
+
+K32. **Discrepancias en celda cotejada**, §296 (PDF 530), el (က): (1) la palabra que sigue a *ananubodhā* (y≈585): «အနနုဗောဓေ» *ananubodhe* (verificador) / «အနနုဗောဓ» *ananubodha*, que el lector toma por la base; (2) la segunda forma con «*» (y≈667): «အပ္ပတိဝေဓာ» *appativedhā* (verificador) / «အပ္ပဋိဝေဓာ» *appaṭivedhā* (lector). La forma *ananubodhā*, su glosa, el sentido kāraṇa, la pañcamī «smā» (impresa «သွာ» en las dos lecturas), «smāsmiṃnaṃ vā» y *avijjāpaccayā* son [V]. ¿Los mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K33. **Discrepancias en celda cotejada**, §297 (PDF 530, y≈990–1320), los suttas que cita el (က): (1) tras *gavaṃ*: «အဝံမှိစ» (verificador) / «အဝံမို့စ», así impreso según él (lector); (2) tras *vīhayo*: «ယောသွကတ ရဿောဈော» en las dos lecturas, con el verificador inseguro de la última sílaba; (3) tras *gāviṃ*: «အဃောရဿ-» en las dos, con el verificador dudando entre ဃ y ယ (el mismo glifo que K29), y «အံမောနိဂ္ဂဟိတံ-» (verificador) / «အံမောနိဂ္ဂဟီတံ-» (lector). Las nueve formas, sus bases, glosas, caso y sufijo son [V]; las citas quedan fuera. ¿Las mira el IEBH?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K34. §299 (PDF 538–543). (1) **Clase**: el libro no da rótulo, pero en medio del (ခ) (PDF 542, y≈840–920) dice, según una de las dos maneras de explicar el sutta: «ဤနည်း၌ကား ကမ္မပ္ပဝစနီယေ စသုတ်သည် ကမ္မတ္ထေ ဒုတိယာ၏ နိယမသုတ်တည်း။» («según esta manera, el sutta "kammappavacanīye…" es el niyama-sutta de "kammatthe dutiyā"»). Las dos lecturas lo ven igual y ninguna lo toma por rótulo; la celda queda vacía y la frase va en Notas. ¿Vale así, o va «niyama-sutta» en la celda con nota de que es condicional? (2) **Discrepancia en celda cotejada**, el (က), segunda manera (PDF 539, y≈230): «ဘာဝလက္ခဏာ၌» (verificador) / «ဘာဝလက္ခဏ၌» (lector); el sentido (bhāvalakkhaṇa, correspondería sattamī) es [V], la grafía queda fuera.
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: la frase queda en Notas; Clase y Funciones vacías; no es ejercicio.
+
+K35. **Discrepancia en celda cotejada**, §300 (PDF 543, y≈960), el (က) de *janaṃ*: «ကာရိတ်ကံ၌» (lector) / «ကာရိဟ်ကံ၌», con ဟ်, que el verificador toma por errata y copia como está. Además, «ကေဝုစ်» (en *janaṃ* y *janena*, impreso así en las dos lecturas): ¿es «ekavacana» (el verificador lo traduce «singular»; ¿errata o abreviatura por «ဧကဝုစ်»?) [I]. Y en *janena*, la palabra tras «ဝါ» («မြစ်», verificador con [?]; el lector no la transcribe), solo Notas.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K36. §300 (nº 607), **K2 resuelto por las dos lecturas**: leído de borde a borde, el padaṃ es «တိပဒံ» *tipadaṃ* (lector y verificador), y cuadra con las tres voces de Nandisena. El encabezado, como está impreso: «(၆၀၇) ဂတိဗုဒ္ဓိဘုဇပဌဟရ, ကရ, သ ယာဒီနံ ကာရိတေ ဝါ။ တိပဒံ။», con comas tras «ဟရ» y «ကရ» y un espacio en «သ ယာဒီနံ» (Nandisena: *Gati-buddhi-bhuja-paṭha-hara-kara-sayādīnaṃ kārite vā*); va en Notas por J17/K4. Corregida la tabla de encabezados de `karaka-piloto.md`. ¿Se da K2 por cerrado?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: K2 cerrado: *tipadaṃ*.
+
+K37. Dudas solo de Notas, con las dos lecturas en cada fila; ninguna afecta a celdas de página. §296: el término de la operación de la nipātana al final del (ခ) (530, y≈840): «အာဒေသပြု» *ādesa* (verificador) / «အာဒီဃပြု» (lector, que lo lee *ādi-dīgha*). §297: el verso que cierra el (ခ) (537, y≈660–700): «ပဓာနမှိ ဂဟိတမှိ၊ အပ္ပဓာနမှိ ဂယှတိ» (verificador) / «ပမာနမှိ … အပ္ပမာနမှိ …» (lector); la obra de 534 y 536: «ဘေဒစိန္တာဒီပနီ» (verificador) / «ဘောဇစိန္တာဒီပနီ» (lector). §298: la grafía de «(ဋိပ္ပဏီ)» (538, y≈490; [?] en el verificador); el espacio tras «ကာလဒ္ဓါန» en el encabezado. §300: la referencia tras «ဏိဇာစ-» (545, y≈1720–1840): «(၁၊ ၃၊ ၇၄)» (lector) / «(၁၊ ၃၊ ၃၄)» (verificador); «မုဂ္ဓဗောဓဋီကာ» (lector) / «မုဒ္ဓဗောဓဋီကာ» (verificador); «ဝါတ္တိက» (lector) / «ဝုတ္တိက» (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+K38. §297 (PDF 534, y≈1640–1710): un «ခွဲလေ» que no pide analizar funciones: «…ဂါထာအရ သန္တဇနနနိဗ္ဗတ္တိ၊ အသန္တဇနန နိဗ္ဗတ္တိ ၂-မျိုးကို ပုဒ်စစ် အတိုင်းခွဲလေ» (distinguir, según la gāthā, las dos clases de nibbatti, siguiendo el «ပုဒ်စစ်»). Las dos lecturas coinciden en que no es ejercicio de funciones. Va en Notas, sin «ejercicio» en Funciones y sin respuesta sugerida. ¿Vale así? Y ¿qué es «ပုဒ်စစ်» (también «ပုဒ်စစ်ဂဏ္ဌိ» en §299 y «ပုဒ်စစ်ကျမ်း» en §300, según el verificador): una obra o el *padaccheda*?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: queda en Notas; Clase y Funciones vacías; no es ejercicio, sin respuesta sugerida. (Lo de «ပုဒ်စစ်» sigue abierto.)
+
+### Tanda 7 (§301–§305), 2026-10-05
+
+No había restos de una ejecución interrumpida de esta tanda. Todo, con lector + verificador a ciegas por sutta.
+
+K39. §301 (nº 608, PDF 547–548). (1) **Corrige el supuesto de K1**: según las dos lecturas, en §301 solo el (က) remite atrás; el (ခ) es propio y largo (PDF 547, y≈1310 – 548, y≈945: *gosataṃ ānehi*, sambandhī-sāmī, y citas de la Siddhāntakaumudī, la Tattvabodhinī y la Ṭippanī). La fila aplica K1 solo al (က): Ejemplo vacío y la remisión en Notas; el (ခ) se resume en Notas como en las demás filas. ¿Vale así? Además, K1 manda rotular la remisión «decisión del IEBH» aunque K1 sigue sin revisar; la fila lo hace así, como pide la nota. (2) Dudas solo de Notas: la última voz de la remisión (547, y≈1255–1300): «သာမီ» (verificador) / «သာမိ» (lector); la obra de la que se toman los tipos de relación (547, y≈1665): «ဉာသ်ကျမ်း», Nyāsa (lector, ampliado) / «ဉာဏ်ကျမ်း» (verificador); el nombre de la última obra (548, y≈910): «ဋိပ္ပနီ» en las dos lecturas, con el verificador dudando entre ဋ y ဠ.
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: regla (h), como K1 y K16: «cf. §283» en el Ejemplo de §301; su (ခ) propio sigue resumido en Notas.
+
+K40. **Discrepancia en celda cotejada**, §304 (PDF 549, y≈1010–1100), el (က) de *manussānaṃ* y *manussesu*: la palabra entre «ဆဋ္ဌီ» / «သတ္တမီ» y el sufijo es «ဗဟုဝုစ်» (plural; lector) / «ဝိဘတ်ပုစ်» (verificador). Lo demás del (က) es [V]. Además, en *sīlasmiṃ* las dos lecturas ven claro «ပထမာ ဧကဝုစ် သ္မိံ» (por el «ca» del sutta, en el liṅgattha): lo esperable sería la sattamī. Se copia como está. ¿Errata del libro, o se refiere a la smiṃ en sentido de paṭhamā?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). *sīlasmiṃ*: se copia como está impreso («así impreso» en la nota publicada), sin conjetura de errata.
+
+K41. §305 (PDF 550, última línea del (ခ), y≈1961–2017): un «ခွဲ» que no pide analizar funciones: «နိဒ္ဒါရဏ စတုက္ကကဲ့သို့ အနာဒရ, အနာဒရဝန္တ, အနာဒရိယ, အနာဒရိယဝန္တဟု အနာဒရစတုက္ကကိုခွဲ။» (como el niddhāraṇa-catukka de §304, distinguir el anādara-catukka). Las dos lecturas coinciden en que no es ejercicio de funciones. Como en K38: va en Notas, sin «ejercicio» en Funciones y sin respuesta sugerida. ¿Vale así, o se quiere una «Respuesta sugerida (IEBH)» con los cuatro términos aplicados a *rudato*?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: queda en Notas; Clase y Funciones vacías; no es ejercicio, sin respuesta sugerida.
+
+K42. Dudas solo de Notas, con las dos lecturas en cada fila; ninguna afecta a celdas de página. §303: (1) la conclusión del (ခ) (PDF 549, y≈360–480): con *sāmi* y sus sinónimos «la chaṭṭhī sola, no las dos» (lector) / «la chaṭṭhī y la sattamī, no solo la chaṭṭhī» (verificador); las dos añaden que en el Tipiṭaka hay también sattamī. (2) La sattamī, cuando se pone (549, y≈720): «la de su propio campo, savisaya» (verificador, «သဝိသယ၌သာ») / «la del lugar, ādhāra» (lector). (3) La primera palabra de la glosa tras «…အပတိမှိ» (548, y≈1905): «ကမ္မေဟိ» o «က္ကမေဟိ» (lector) / «ကမေဟိ» (verificador). (4) La vocal final de \*maggāmaggassa kovid- (549, y≈480–545): «kovidā» (verificador) / «kovido» (lector). §304: «ပဋု» (verificador) / «ပဋ္ဍု» o «ပဋ္ဋု» (lector) en el ejemplo de la Siddhāntakaumudī (549, y≈1320–1430); «နာပကံသေန» [?] (verificador) en la cita de la Mugdhabodhaṭīkā (549, y≈1560); el Nyāsa entre las obras con cinco clases de niddhāraṇa solo en el verificador. §305: en la explicación de la tradición māgadha (550, y≈1774–1841), «ရိုသေ, မရိုသေ» (respeto, falta de respeto; lector) / «ရှိသေ, မရှိသေ» (verificador); en la cita de la Ṭippaṇī (550, y≈1420–1530), «ဝိသိဋ္ဌံ» (lector) / «ဝိသိဋ္ဌေ» (verificador), y «ဓာတူနဉ္စာ» con ဉ္စ o ဉ္ဇ (lector).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: las lecturas discutidas no se dan en la nota publicada; donde importa para entender la fila, la nota dice que las dos lecturas no leen igual.
+
+### Tanda 8 (§306–§310), 2026-10-05
+
+No había restos de una ejecución interrumpida de esta tanda. Todo, con lector + verificador a ciegas por sutta. En los cinco, clase, aṅga y funciones: el libro no los da (las dos lecturas coinciden). **La tanda superó el tope de 600k fichas de los subagentes (665.098); el informe acaba en PARAR por eso.**
+
+K43. §306 (nº 613, PDF 551–552). (1) **Discrepancia en celda cotejada** (PDF 551, y≈760), el último *gāmaṃ* del (က): «…ဤသုတ်၌ ဗဟုဝုစ် နံဖြင့်…» (lector) / «ဗတုဝုစ်» (verificador, ampliado ×3, que la tiene por errata del libro). Fuera de [V]. (2) El encabezado, «ဆဋ္ဌီန» sin anusvāra en las dos lecturas (Nandisena: *chaṭṭhīnam atthe*); va en Notas por K4. (3) Dudas solo de Notas: la obra citada tras «samayā nikasā…» (551, y≈1225): «ဋိပ္ပဏီ», con la primera letra insegura (lector) / «ဋီပ္ပဏီ» (verificador); el sutta del Paṇṇāsa de «*upamā maṃ paṭibhāti» (552, y≈515): «Anuruddha», sin seguridad (lector) / «အနင်္ဂဏသုတ်», Anaṅgaṇa (verificador); el número de «bhagavantaññeva paṭibhātu»: 184 (lector) / ၂၈၄ (verificador); la obra que se cita con la ṭīkā del Madhupiṇḍikasutta: «Mugdhabodha-ṭīkā(s)» (lector) / «မုခ္ခမတ္တဒီပနီ», Mukhamattadīpanī (verificador). (4) «တံမမံမှိ» tras *maṃ*: el verificador lo toma por cita de sutta; el lector no lo interpreta.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). El encabezado impreso, en la nota (K4).
+
+K44. §307 (nº 614, PDF 553–555). **Discrepancias en celda cotejada**, todas en el (က) de PDF 553 y fuera de [V]: (1) la tercera forma (y≈610), «unida a *vinā*»: «*သဒ္ဓမ္မံ» (*saddhammaṃ*, lector) / «*သဒ္ဓိံ» (*saddhiṃ*, verificador); (2) *ekaṃ samayaṃ* (y≈610–720): primera letra «ဧ» o «ေ» [?] (lector) / «ဧ», con duda (verificador); (3) la última voz de la lista de upasagga del segundo *gāmaṃ* (y≈960): «အဘိ» (lector) / «အဓိ» (verificador); (4) la cita tras *maṃ* (y≈560–620): «တမမံမိ» [?] (lector) / «တမမံမှိ» (verificador); (5) «ဈလပေဟိ» en «aṃmo niggahītaṃ jhalapehi» (y≈790): leído por el lector, [?] para el verificador. Además, las dos lecturas copian «မြစ်၌တူသော» (¿por «ဟူသော»?) y «တပ္ပါနယောဂ» / «တစ္စာရယောဂ», sin identificar. Dudas solo de Notas: el número de la Pāyāsi-aṭṭhakathā: 317 (lector) / ၃၉၇ (verificador); el de la ṭīkā del Tevijjasutta: 299 (lector) / ၃၉၉ (verificador); el último dígito de «သီ၊ဋီသစ်၊ ၂။ ၂၈၉» (lector: ၉ o ၇); la obra citada para *pathaviṃ adhisessati* (554, y≈310–440): solo el verificador nombra la Abhidhānappadīpikā-ṭīkā; la forma tras «*gāmassa vā» (554, y≈560): «*evam uttarena» (lector) / «*ဝေ မုတ္တရေန» [?] (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K45. §308 (nº 615, PDF 555). (1) **Discrepancia en celda cotejada** (PDF 555, y≈655–700), tras *pāpassa*: «ပုဏ္ဏတ္တ» (lector, [?]) / «ပုဏ္ဏတ္ထ» (verificador). Fuera de [V]. (2) Solo de Notas: el último sūtra de Pāṇini está impreso «၂၊ ၆၊ ၆၄» (las dos lecturas, con ၆ en medio; el resto de la serie es ၂၊၃၊…): ¿errata del libro por 2.3.64? Su consonante inicial: «ကၡ» (lector) / «ကွ» (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). El número del sūtra de Pāṇini: se copia como está impreso («así impreso» en la nota publicada), sin conjetura de errata.
+
+K46. §309 (nº 616, PDF 556). **Discrepancias en celda cotejada**, fuera de [V]: (1) la cuarta forma del (က) (PDF 556, y≈530–560), unida a «ပတိယတန (အဘိသင်္ခါရ) တ္ထကရ»: «*ကညာဿ» (*kaññāya*, impreso con «ဿ»; lector) / «*ကဏ္ဍဿ» (*kaṇḍassa*; el verificador no descarta ဋ္ဌ, *kaṭṭhassa*); (2) los sufijos de *kammassa* (y≈410): «ဏွ၊ တု» (lector) / «ဏွု[?] တု» (verificador). Además: «*တံ၊ ကွစိမြစ်။» se copia como está impreso (las dos lecturas), como contraejemplo del «kvaci»; ¿vale así la glosa en la celda? Y los cuatro sūtra del (ခ) van sin nombre de obra: la fila dice que son de Pāṇini como identificación de las dos lecturas [I].
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). «*taṃ, kvaci»: se cuenta en la nota; la identificación [I] de los sūtra de Pāṇini no se publica.
+
+K47. §310 (nº 617, PDF 556–557). (1) **Discrepancia en celda cotejada** (PDF 556, y≈1640–1770), sexta forma del (က), «နည်းတူ»: ilegible en el grupo de consonantes (lector) / «*ဝဋ္ဋေသု» [?], ṭṭ o ḍḍ (verificador). Fuera de [V]. (2) En *bhikkhūsu* las dos lecturas ven claro «သတ္တမီ ဧကဝုစ် သုသက်» (singular con «su»), y en *hatthesu* y *cammesu* «ဗဟုဝုစ်»: ¿errata del libro? Se copia como está. (3) Dudas solo de Notas: el número del Aññātakaviññatti-sikkhāpada: 313 (lector) / ၁၁၃ (verificador); el de la Mahākhandhaka-aṭṭhakathā: 207 (lector) / ၃၀၇ (verificador); el de la Sāratthaṭīkā del Ūnapañcabandhana: 2.42 (lector) / ၂။၄၂၈ (verificador); la palabra del pasaje del Mahāsīhanādasutta: «anissānikamme» (lector) / «အနိယျာနိကဓမ္မေ» (verificador); el vagga del Catukkaṅguttara: «tatiya-yoga-vagga» (lector) / «တဏှာယောဂဝဂ်» (verificador); el fin del (ခ) en PDF 557: y≈1850 (lector) / y≈1720 (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). *bhikkhūsu*: se copia como está impreso («así impreso» en la nota publicada), sin conjetura de errata.
+
+### Tanda 9 (§311–§315), 2026-10-05
+
+No había restos de una ejecución interrumpida de esta tanda. Todo, con lector + verificador a ciegas por sutta. En los cinco, clase, aṅga y funciones: el libro no los da (las dos lecturas coinciden). Fichas de los subagentes: 433.300, bajo el tope de 600k.
+
+K48. §311 (nº 618, PDF 558). **Discrepancia en celda cotejada** (PDF 558, y≈450–560): el sufijo que narra el (က) para *saṅghe* y *maṇimhi*: «သတ္တမီ ဧကဝုစ် သ္မိံသက်» (*smiṃ*, lector) / «… သို့သက်» (verificador). Las formas y el resto de lo narrado son [V]; el sufijo, fuera. El verificador ve además «ဧကဝစ်» (sin «ု») en el segundo renglón. ¿Puede mirarlo en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12).
+
+K49. §313 (nº 620, PDF 558–560). (1) **Discrepancia en celda cotejada** (PDF 558, y≈1800–1880): la tercera forma del (က), «*ဂေါသု» (*gosu*, lector) / «*ဂါဝီသု» (*gāvīsu*, verificador); lo narrado coincide. Fuera de [V]; la misma discrepancia afecta al ejercicio del lakkhaṇa-catukka y al ejemplo de la Siddhāntakaumudī. (2) *pubbaṇhe*, «ဧကဝုစ် သ္မိံ» (y≈1790): lo lee el verificador; el lector, [?]. Fuera de [V]. (3) El «ခွဲလေ» de PDF 560, y≈300–440 pide analizar el **lakkhaṇa-catukka**, no las funciones, y el libro da él mismo la respuesta: se ha dejado Funciones vacía y el ejercicio en Notas, sin «Respuesta sugerida». ¿Le parece bien? (4) Dudas solo de Notas: el sūtra «yassa ca bhāvena bhāvalakkhaṇaṃ ၂၊၃၊၃၇», ¿Pāṇini (verificador) o Kalāpa (lector)?; los nombres de obra «ဒုဃဋ» / «ငြပ္ပဏီ» (verificador) frente a «Ṭippaṇī» (lector) (PDF 559, y≈1000); *vipumhi* / *vidhumhi*; *phagguno* / *phaggano* y la referencia (Chakka-aṅguttara / «Saṅkhyuttara»).
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-05) decisión del IEBH: el ejercicio del lakkhaṇa-catukka queda en Notas; Clase y Funciones vacías; no es ejercicio, sin respuesta sugerida.
+
+K50. §314 (nº 621, PDF 560–562). (1) **Discrepancias en celda cotejada**, fuera de [V]: la cuarta forma (PDF 560, y≈810–845), «*အတိဒေဝေသု», leída así por los dos, pero con reserva del verificador, mientras el (ခ) imprime «*အဓိဒေဝေသု ဗုဒ္ဓေါ»: ¿errata del (က)?; y la inicial de los dos suttas citados tras *upakhāriyaṃ* (y≈705–745), «အဃောရဿ», «ဃပတော သ္မိံ ယံ ဝါ»: ဃ (lector) / ဃ o ယ, [?] (verificador). (2) **K3, el encabezado** (PDF 560, y≈505–545): lector, «တ» con suscrita «ထ» o «တ», [?]; verificador, «တ္ထ» (la «ထ» clara a ×6, la «တ» de arriba [?]). Sigue [?]; padaṃ *ekapadaṃ* (las dos lecturas). (3) Dudas solo de Notas: la forma con «*» de PDF 561, y≈450, «ဝိဏ္ဍော» / «ဝိဏ္ဏော» ဂုဏာ; la cita «(၃၁၀) adhike sattopādhīhi», ¿de la Mugdhabodha (lector, [?])?; el valor de los maestros: «nikkha, 125 o 250» (lector) / «nikuñca, 1225 o 1250» (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). El encabezado, como K3.
+
+K51. §315 (nº 622, PDF 562). (1) **Discrepancias en celda cotejada**, fuera de [V]: el conocimiento del karaṇa (y≈835), «သဟဇာတဉာဏ်» (*sahajāta*, lector) / «သဟာစရဏဉာဏ်» (*sahacaraṇa*, verificador); «အယှဉ်၌» tras «ဥဿုက» (y≈880–900), [?] para el verificador. (2) Solo de Notas: *ussuka* = ud + sū (lector) / su (verificador) + kvi; en el verso de cierre, «မဏ္ဍိမိကာ» (lector) / «မၛ္ဈိမိကာ» (verificador); «ဥဿုကသဒ္ဒါ ကဉ် ခွေးဘော်မဲ့ တည်း» (y≈1440–1500), no entendido. (3) La conjetura del libro de que en Kaccāyana *pasita* pasó a *pasīdita*, *pasanna* y *maṇḍita* (la palabra del sutta) va en Notas como dicho del libro; ¿conviene destacarla en la página?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuera de la celda (solo [V] llega al sitio); la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (como I17/J1/J12). La conjetura del libro sobre *pasita* va en la nota como dicho del libro, sin destacar.
+
+### Al preparar la v0.9 (2026-10-05)
+
+**Decisiones del IEBH (2026-10-05), aplicadas en `karaka-piloto.md` y en `03-karaka.json`:**
+
+- **K9**: formato del Ejemplo de Kāraka, el de las tandas 1a–9 (formas + pasos narrados en que coinciden las dos lecturas, en la celda).
+- **K1 + K16 + K39**: una sola regla para las remisiones, la (h): «cf. §N» en el Ejemplo. §280 → «cf. §297»; §301 → «cf. §283»; §302 → «cf. §278». El (ခ) propio de §301 sigue resumido en Notas.
+- **K17**: §277, «…တွက်လေ», es un ejercicio; «Respuesta sugerida (IEBH)» vacía.
+- **K34, K38, K41, K49**: en Notas; Clase y Funciones vacías; no son ejercicio.
+- **K8** (ya decidido): páginas impresas anotadas en la nota de trabajo.
+
+**Lo que sigue por defecto, pendiente de revisión del IEBH** (como en la v0.8):
+
+- **Discrepancias en celda cotejada** (K5–K7, K12, K19, K21, K22, K25, K26, K28–K30, K32, K33, K35, K40, K43–K48, K50, K51): fuera de la celda; la nota publicada no da ninguna de las dos lecturas y, donde importa, dice que no leen igual (I17/J1/J12). §282 queda con *dāsajeṭṭhako* fuera del Ejemplo (K21).
+- **Dudas solo de Notas** (K11, K14, K20, K23, K27, K31, K37, K42 y las partes de nota de K39 y K43–K51): no se dan en la nota publicada.
+- **Posibles erratas del libro** (K10, K13, K24, K40, K45, K47): «así impreso», sin conjetura.
+- **Encabezados** (K4/J17): la columna Sutta sigue a Nandisena; la forma impresa, en la nota. **K3**: el grupo dudoso de §314 no se da. **K2**: cerrado por K36 (*tipadaṃ*).
+- **K15**: las páginas impresas no salen en la página; las filas de la tanda 1a no se completan.
+- **K18**: §277, la frase sobre Pāṇini va en la nota como descripción, no como clase.
+- **K38**: qué es «ပုဒ်စစ်», abierto.
+- **K51**: la conjetura sobre *pasita*, en la nota, sin destacar.
+- Reglas traídas de Nāma, todas en vigor: (a), (b'), (c)–(j); «Funciones donde el libro calla» sin respuesta sugerida; solo [V] en las celdas; lo de un solo lector, rotulado en la nota; las identificaciones [I] y las lecturas de Claude no se publican.
+- **Nuevo en la v0.9, propuesta de Claude**: la celda Ejemplo es un solo campo, que se ve igual en la página española y en la inglesa. En Kāraka se escribe en notación pāḷi («base + sufijo → forma («sutta»)»), sin prosa española, para que la página inglesa no muestre castellano; las glosas y lo narrado en prosa van en la nota, en las dos lenguas.

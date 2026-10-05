@@ -238,6 +238,10 @@ def main():
         en = os.path.join(RAIZ, "kaccayana", cap["md"] + ".en.md")
         textos_en = leer_md(en)[0] if os.path.exists(en) else {}
         fallos += verificar(cap, textos)
+        # aviso de cabecera del capítulo (Kāraka, v0.9): si lo hay, en las dos lenguas
+        aviso = cap.get("aviso")
+        if aviso is not None and not (aviso.get("es") and aviso.get("en")):
+            fallos.append("{0}: el aviso del capítulo no está en español e inglés".format(cap["clave"]))
         for s in cap["suttas"]:
             if s["n"] in textos:
                 s["sutta"] = textos[s["n"]]["sutta"]
@@ -284,7 +288,8 @@ def main():
     globos = [{k: t[k] for k in ("clave", "termino", "formas", "def", "ejemplo", "no_en") if k in t}
               for t in glosario]
     salida = {"meta": meta, "indice": indice, "terminos": globos,
-              "capitulos": [{k: c[k] for k in ("clave", "pali", "desde", "hasta", "pdf", "paginas")} for c in caps],
+              "capitulos": [{k: c[k] for k in ("clave", "pali", "desde", "hasta", "pdf", "paginas", "aviso") if k in c}
+                            for c in caps],
               "filas": filas}
 
     pl = open(PLANTILLA, encoding="utf-8").read()
