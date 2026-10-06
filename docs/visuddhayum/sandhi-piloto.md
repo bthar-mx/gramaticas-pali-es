@@ -13,7 +13,7 @@ Estado: **todas las celdas cotejadas con las imágenes** (PDF 51–112). Es la f
 | 3 | 55 | saññā [V] recuento §11 (PDF 62) | akkharā | saññā: sarā · saññī: akkharā [tattha, odantā, aṭṭha] [V] | — | «odantā» = o + d (āgama) + antā. |
 | 4 | 56 | saññā [V] recuento §11 | sarā | saññā: rassā · saññī: sarā [lahumattā, tayo] [V] | a, i, u [V] | «mattā»: el tiempo de un chasquido de dedos o de un parpadeo. |
 | 5 | 57 | saññā [V] recuento §11 | sarā | saññā: dīghā · saññī: sarā [aññe] [V] | ā, ī, ū, e, o [V] |  |
-| 6 | 57 | saññā [V] recuento §11 | akkharā | saññā: byañjanā · saññī: akkharā [sesā] [V] | k, kh, g, gh, ṅ … ḷ, ṃ [V] | Cita una ṭīkā y la Kalāpa-ṭīkā. |
+| 6 | 57 | saññā [V] recuento §11 | akkharā | saññā: byañjanā · saññī: akkharā [sesā] [V] | k, kh, g, gh, ṅ … ḷ, ṃ [V] | Cita una ṭīkā y Kalāpa-ṭīkā. |
 | 7 | 58 | saññā [V] recuento §11 | byañjanā | saññā: vaggā [pañca pañcaso] · saññī: byañjanā [tattha, mantā] [V] | ka, kha, ga, gha, ṅa … ma [V] | Compara la vutti con Rūpasiddhi. |
 | 8 | 59 | saññā [V] recuento §11 | — | saññā: niggahītaṃ · saññī: aṃ [iti] [V] | aṃ [V] | Compara con la anusvāra del sánscrito. |
 | 9 | 59 | saññaṅga-paribhāsā [V] PDF 59 | — | — | — | Paribhāsā que forma parte de un término técnico. Explica ghosa, aghosa, ūsmā. |
@@ -48,7 +48,7 @@ Estado: **todas las celdas cotejadas con las imágenes** (PDF 51–112). Es la f
 | 38 | 101 | — | sare, niggahītaṃ | **ejercicio**: visaya: kvaci · respuesta sugerida (IEBH): kāriyī: niggahītaṃ · kāriya: lopaṃ [kvaci] · nimitta (7.ª): sare [V] | tāsaṃ + ahaṃ → tāsāhaṃ [V] | «kvaci»: el lugar métrico o eufónico. |
 | 39 | 101 | — | byañjane, niggahītaṃ | **ejercicio**: visaya: kvaci · respuesta sugerida (IEBH): kāriyī: niggahītaṃ · kāriya: lopaṃ · nimitta (7.ª): byañjane [V] | ariyasaccānaṃ + dassanaṃ → ariyasaccāna dassanaṃ [V] | «kvaci»: cuando el metro lo pide. |
 | 40 | 102 | — | niggahītā, saro | kāriyī: saro [paro] · kāriya: lopaṃ [vā] · nimitta (5.ª): niggahītā [V] | cakkaṃ + iva → cakkaṃ va [V] |  |
-| 41 | 102 | — | niggahītā parasare lutte, byañjano | kāriyī: byañjano · kāriya: visaññogo · nimitta (5.ª + 7.ª): niggahītā parasare lutte [ca] [V] | evaṃ + assa → evaṃsa [V] | Cita la Rūpasiddhi-ṭīkā. |
+| 41 | 102 | — | niggahītā parasare lutte, byañjano | kāriyī: byañjano · kāriya: visaññogo · nimitta (5.ª + 7.ª): niggahītā parasare lutte [ca] [V] | evaṃ + assa → evaṃsa [V] | Cita Rūpasiddhi-ṭīkā. |
 | 42 | 105 | — | sare, puthassa | visaya: ante [puthassa] · visayī: go [āgamo, kvaci] · nimitta (7.ª): sare [V] | putha + eva → puthageva [V] |  |
 | 43 | 105 | — | sare, pāssa | visaya: ante [pāssa] · visayī: go [āgamo] · kāriyī: ante · kāriya: rasso · nimitta (7.ª): sare [V] | pā + eva → pageva [V] | Dos operaciones: inserción de g y acortamiento de ā. |
 | 44 | 106 | — | sare, abhi | **ejercicio** · respuesta sugerida (IEBH): kāriyī: abhi · kāriya: abbho · nimitta (7.ª): sare | abhi + okāso → abbhokāso [V] | El sutta se formula por economía (lāghava). |

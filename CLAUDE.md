@@ -23,6 +23,13 @@ estudiantes hispanohablantes de pāḷi con formación buddhista.
   «empujado», «mergear», «testear»—. La tabla y el porqué, en
   `comun/convenciones.md` §0.
 - Registro formal y doctrinal; no coloquial.
+- **Sin artículo ante títulos de obras** (estilo de la casa, IEBH,
+  2026-10-06): «según Visuddhāyuṃ», «de Rūpasiddhi», «cita Mahāṭīkā»,
+  «Mugdhabodha-ṭīkā dice»; en inglés, sin «the» («according to Rūpasiddhi»).
+  Las colecciones y los textos del canon lo conservan: «el Vinaya», «los
+  Jātaka», «el Saṃyutta», «the Vinaya». Los nombres comunes también («la
+  ṭīkā», «una Aṭṭhakathā», «su nissaya»): la regla es para el título, no
+  para el género de obra.
 - Términos técnicos pāḷi sin traducir, con diacríticos completos
   (nibbāna, saṅkhāra, kāraka); cursiva en la primera aparición de cada sección.
 - Consultar `comun/glosario.md` antes de fijar la traducción de un término.
@@ -618,6 +625,19 @@ De modo que §270 es el nº 269 del libro. El encabezado tiene la forma
 «(nº) sutta။ kaṇḍa.pariccheda.sutta။ N-padaṃ» —p. ej. «(၆၃) ဧတိမာသမိ။ ၂၊၁၊၁၂။
 ဒွိပဒံ»—, y la numeración kaṇḍa.pariccheda.sutta sirve de comprobación
 independiente del nº.
+
+Kāraka (§271–§315): nº del libro = § + 307, PDF 494–562; el libro sigue su
+propio orden de capítulos (Ākhyāta empieza en el nº 270 del libro = §406).
+
+Samāsa (§316–§343): capítulo 5 del libro; nº del libro = § + 172, PDF 390–442.
+El escaneo es defectuoso dentro de §328: faltan las pp. impresas 373–374 y
+379–380, y las 371–372 y 381–382 están dos veces (PDF 417–418 = 425–426;
+PDF 419–420 = 427–428). Se lee PDF 427–428 y se coteja con 419–420. Detalle
+en `docs/visuddhayum/samasa-piloto.md`.
+
+Taddhita (§344–§405): capítulo 6 del libro; nº del libro = § + 172, PDF 443–490;
+pariśiṣṭa PDF 491–493 (pp. 445–447), sin numerar; escaneo sin defectos. Detalle
+en `docs/visuddhayum/taddhita-piloto.md`.
 
 ### Formato de los datos
 
