@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Genera «Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ
+Genera «Análisis de los suttas de Kaccāyana según Visuddhāyuṃ
 Kaccāyana-ṭīkā» (borrador), en español e inglés en la misma página.
 
     python3 herramientas/generar_analisis.py
@@ -107,7 +107,7 @@ def verificar(cap, textos):
             fallos.append("§{0}: la nota no está en las dos lenguas".format(n))
         if s.get("respuesta") and not s.get("ejercicio"):
             fallos.append("§{0}: respuesta sin ejercicio".format(n))
-        # resumen «según la Visuddhāyuṃ» (Kāraka, v0.10): si lo hay, en las dos lenguas
+        # resumen «según Visuddhāyuṃ» (Kāraka, v0.10): si lo hay, en las dos lenguas
         res = s.get("resumen")
         if res is not None and not (res.get("es", "").strip() and res.get("en", "").strip()):
             fallos.append("§{0}: el resumen no está en español e inglés".format(n))
