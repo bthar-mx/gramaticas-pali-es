@@ -416,6 +416,33 @@ table.an td.no{color:var(--soot);font-size:13.5px}
 .sb-ch.pend .rg::after{content:attr(data-p);margin-left:6px;font-style:italic}
 tr.sec h2{font-weight:400;font-size:18px;margin:18px 0 2px}
 tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-left:10px}
+/* Kaṇḍas plegables (v0.11.1): la fila de cabecera de cada kaṇḍa es un botón que
+   abre o cierra sus filas. Plegadas, las filas llevan .plg (no «hidden», que es
+   del filtro: así la búsqueda y el índice lateral distinguen lo que no coincide
+   de lo que sólo está plegado). Al imprimir, todo abierto. */
+tr.sec .kt{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 0;width:100%;margin:0;padding:4px 6px 4px 0;border:0;background:none;
+  font:inherit;color:inherit;text-align:left;cursor:pointer;-webkit-appearance:none;appearance:none;border-radius:2px}
+tr.sec .kt:hover{background:var(--hover)}
+tr.sec .kt:hover .ind{color:var(--nila);border-color:var(--nila)}
+tr.sec .kt:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
+tr.sec .kt .ind{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:20px;height:20px;margin-right:10px;
+  align-self:center;border:1px solid var(--hair);border-radius:2px;font:12px/1 var(--mono);color:var(--soot);transition:transform .15s ease}
+tr.sec .kt[aria-expanded=true] .ind{transform:rotate(90deg);color:var(--ola-2);background:var(--nila);border-color:var(--nila)}
+tr.sec .kt .rg .cu{color:var(--haritala)}
+#out tr.plg{display:none!important}
+.plegar{display:flex;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.plegar button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  padding:8px 9px;border:0;background:var(--ola-2);color:var(--soot);cursor:pointer;border-right:1px solid var(--hair);white-space:nowrap}
+.plegar button:last-child{border-right:0}
+.plegar button:hover{color:var(--ink)}
+.plegar button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
+/* en el móvil, al final de la barra, en la línea de ◐ y el recuento: una línea menos de barra fija */
+@media (max-width:760px){.plegar{order:1;margin-left:auto}}
+@media (prefers-reduced-motion:reduce){tr.sec .kt .ind{transition:none}}
+@media print{
+  #out tr.plg:not([hidden]){display:table-row!important}
+  #out tr.det-row.plg[hidden]{display:table-row!important}
+  tr.sec .kt .ind,.plegar{display:none!important}}
 @media (max-width:760px){
   table.an,table.an tbody,table.an tr,table.an td{display:block;width:auto}
   table.an thead,.cab-fija{display:none}
@@ -461,6 +488,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 <div class="bar" id="bar"><div class="wrap">
   <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
   <input type="search" id="q" aria-label="Buscar">
+  <div class="plegar" role="group" id="plegar"><button type="button" id="k-abrir" data-t="k_open">Desplegar todo</button><button type="button" id="k-plegar" data-t="k_fold">Plegar todo</button></div>
   <div class="filtros" id="f-cap" role="group"></div>
   <button class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button>
   <span class="count" id="count"></span>
@@ -504,10 +532,10 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 const D=/*__DATOS__*/{}/*__FIN__*/;
 const T={
 es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los suttas',subtitle:'según Visuddhāyuṃ Kaccāyana-ṭīkā',back:'← Recursos · Gramáticas Pāḷi',
-  draft:'Borrador',sb_open:'Desplegar',sb_fold:'Plegar',pend:'pendiente',all:'Todos',search:'Buscar sutta, término o ejemplo',empty:'Ningún sutta coincide.',
+  draft:'Borrador',sb_open:'Desplegar',sb_fold:'Plegar',k_open:'Desplegar todo',k_fold:'Plegar todo',k_tip_open:'Abrir esta sección',k_tip_fold:'Plegar esta sección',k_of:(v,n)=>v+' de '+n,pend:'pendiente',all:'Todos',search:'Buscar sutta, término o ejemplo',empty:'Ningún sutta coincide.',
   intro:'Cada sutta de Kaccāyana tal como lo analiza <i>Visuddhāyuṃ</i>: clase, aṅga, funciones de cada palabra y el ejemplo del modelo de derivación.',
   how_sum:'Cómo leer esta tabla',term_sum:'Terminología',src_sum:'Fuente y cita',
-  how:`<p>El § abre el aforismo y su traducción en este sitio; el texto pāḷi del sutta sigue a Nandisena. Las demás columnas proceden del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso), las palabras que enumera como aṅga del sutta, la función de cada palabra y el ejemplo de su modelo de derivación (rup). Donde el libro no da una función, la celda queda vacía. En la columna «Notas · Preguntar», junto al sutta, ▸ abre las notas de la fila; ? pregunta a la IA sobre este aforismo (requiere acceso).</p><p>En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.</p>`,
+  how:`<p>El § abre el aforismo y su traducción en este sitio; el texto pāḷi del sutta sigue a Nandisena. Las demás columnas proceden del libro: la clase que le da (en pāḷi o en birmano, tal como está impreso), las palabras que enumera como aṅga del sutta, la función de cada palabra y el ejemplo de su modelo de derivación (rup). Donde el libro no da una función, la celda queda vacía. En la columna «Notas · Preguntar», junto al sutta, ▸ abre las notas de la fila; ? pregunta a la IA sobre este aforismo (requiere acceso).</p><p>Cada kaṇḍa empieza plegado: su cabecera (capítulo · kaṇḍa · § · número de suttas) lo abre o lo cierra, también con el teclado. «Desplegar todo» y «Plegar todo», junto al buscador, actúan sobre todos, y la página recuerda los que se dejan abiertos. La búsqueda y los filtros abren los kaṇḍas donde hay coincidencias; al borrarlos vuelve el plegado anterior. Un enlace a un § abre su kaṇḍa.</p><p>En el ejemplo, la letra que sufre la operación va <span class="mk-k">subrayada</span>; la causa, <span class="mk-n">en rojo</span>; el resultado, <span class="mk-r">resaltado</span>; lo que se elide, <span class="mk-x">tachado</span>. Las etiquetas <span class="ed">7.ª</span> <span class="ed">5.ª</span> son un añadido editorial del IEBH, no análisis del libro. En los suttas marcados <span class="ejer">Ejercicio</span>, el libro deja el análisis al estudiante.</p>`,
   terms:[['kāriyī (kārī)','aquello a lo que se realiza cierto tipo de operación gramatical.'],['kāriya','la operación gramatical que hay que realizar.'],['nimitta','causa. Hay dos clases: en la séptima inflexión (sattamī-nimitta) y en la quinta (pañcamī-nimitta).'],['saññā / saññī','en los suttas de definición, el nombre técnico y lo que recibe ese nombre.'],['visaya / visayī','términos que usa el libro en los suttas de inserción (āgama) y de duplicación, en lugar de kāriyī / kāriya.'],['visesana','calificador de una de las palabras anteriores; va entre corchetes.'],['Aṅga','las palabras que el libro enumera como miembros (aṅga) del sutta, tal como las imprime; pueden ser palabras del propio sutta o suplidas de suttas anteriores. El libro escribe kārī donde esta página dice kāriyī; imprime también bahiraṅga y, una vez, bāhiyaṅga (§83).'],['paribhāsā','tres clases: saññaṅga, anaṅga y vidhyaṅga.']],
   h_class:'Clase de sutta',h_roles:'Funciones',h_ex:'Ejemplo',h_notes:'Notas',h_src:'Fuente',h_x:'Notas · Preguntar',
   /* globos de los encabezados: trozos de «how», sin definiciones nuevas; si se
@@ -536,10 +564,10 @@ es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los 
   ask_note:'Respuesta generada por un modelo de IA (Claude) sólo a partir de esta fila y del glosario del sitio. No está revisada por el IEBH: cotéjela con la fuente.',
   ask_note_f:'Respuesta generada por un modelo de IA (Claude) a partir de esta fila, del glosario del sitio y de las fuentes consultadas. No está revisada por el IEBH: cotéjela con las fuentes.'},
 en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the suttas',subtitle:'following Visuddhāyuṃ Kaccāyana-ṭīkā',back:'← Resources · Pāḷi Grammars',
-  draft:'Draft',sb_open:'Expand',sb_fold:'Fold',pend:'pending',all:'All',search:'Search sutta, term or example',empty:'No sutta matches.',
+  draft:'Draft',sb_open:'Expand',sb_fold:'Fold',k_open:'Expand all',k_fold:'Collapse all',k_tip_open:'Open this section',k_tip_fold:'Fold this section',k_of:(v,n)=>v+' of '+n,pend:'pending',all:'All',search:'Search sutta, term or example',empty:'No sutta matches.',
   intro:'Each Kaccāyana sutta as <i>Visuddhāyuṃ</i> analyses it: class, aṅga, the role of each word and the example of the model derivation.',
   how_sum:'How to read this table',term_sum:'Terminology',src_sum:'Source and citation',
-  how:`<p>The § opens the aphorism and its translation on this site; the Pāḷi text of the sutta follows Nandisena. The other columns come from the book: the class it gives (in Pāḷi or Burmese, as printed), the words it lists as the sutta's aṅga, the role of each word and the example of its model derivation (rup). Where the book gives no role, the cell is left empty. In the «Notes · Ask» column, next to the sutta, ▸ opens the row's notes; ? asks the AI about this aphorism (access required).</p><p>In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book's analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.</p>`,
+  how:`<p>The § opens the aphorism and its translation on this site; the Pāḷi text of the sutta follows Nandisena. The other columns come from the book: the class it gives (in Pāḷi or Burmese, as printed), the words it lists as the sutta's aṅga, the role of each word and the example of its model derivation (rup). Where the book gives no role, the cell is left empty. In the «Notes · Ask» column, next to the sutta, ▸ opens the row's notes; ? asks the AI about this aphorism (access required).</p><p>Each kaṇḍa starts folded: its heading (chapter · kaṇḍa · § · number of suttas) opens or closes it, from the keyboard too. «Expand all» and «Collapse all», next to the search box, act on all of them, and the page remembers the ones left open. Search and the chapter filter open the kaṇḍas that have matches; clearing them restores the previous folding. A link to a § opens its kaṇḍa.</p><p>In the example, the letter the operation acts on is <span class="mk-k">underlined</span>; the cause, <span class="mk-n">in red</span>; the result, <span class="mk-r">highlighted</span>; what is elided, <span class="mk-x">struck through</span>. The tags <span class="ed">7.ª</span> <span class="ed">5.ª</span> are an IEBH editorial addition, not the book's analysis. In suttas marked <span class="ejer">Exercise</span>, the book leaves the analysis to the student.</p>`,
   terms:[['kāriyī (kārī)','that on which a certain kind of grammatical operation is performed.'],['kāriya','the grammatical operation to be performed.'],['nimitta','cause. There are two kinds: in the seventh inflection (sattamī-nimitta) and in the fifth (pañcamī-nimitta).'],['saññā / saññī','in defining suttas, the technical name and what bears that name.'],['visaya / visayī','terms the book uses in suttas of insertion (āgama) and doubling, instead of kāriyī / kāriya.'],['visesana','qualifier of one of the words above; shown in brackets.'],['Aṅga','the words the book lists as members (aṅga) of the sutta, as it prints them; they may be words of the sutta itself or supplied from earlier suttas. The book writes kārī where this page says kāriyī; it also prints bahiraṅga and, once, bāhiyaṅga (§83).'],['paribhāsā','three kinds: saññaṅga, anaṅga and vidhyaṅga.']],
   h_class:'Sutta class',h_roles:'Roles',h_ex:'Example',h_notes:'Notes',h_src:'Source',h_x:'Notes · Ask',
   cols:{n:'The § opens the aphorism and its translation on this site.',
@@ -697,6 +725,70 @@ ${resu?`<tr class="resu-row" id="u${e.n}"><td></td><td colspan="8"><p class="res
 ${larga?`<tr class="det-row" id="d${e.n}" hidden><td colspan="9"><div class="detalle"><p>${esc(nota)}</p></div></td></tr>`:''}`;
 }
 const abiertos={};
+/* ---------- kaṇḍas plegables (v0.11.1) ----------
+   abiertosK: los kaṇḍas que el lector deja abiertos, guardados en localStorage
+   (si no lo hay, valen para la visita). fltK: el plegado provisional mientras
+   hay búsqueda o filtro de capítulo; mientras exista, los botones actúan sobre
+   él y no sobre abiertosK, de modo que al borrar el filtro vuelve lo de antes.
+   Las filas plegadas llevan .plg; «hidden» queda para el filtro. */
+const KS='analisis_kandas_abiertos';
+const abiertosK=new Set((()=>{try{const v=JSON.parse(store.get(KS)||'[]');return Array.isArray(v)?v.filter(x=>typeof x==='string'):[]}catch(e){return []}})());
+let fltK=null,fltKey='';
+const kAbierto=sid=>(fltK||abiertosK).has(sid);
+function guardarK(){store.set(KS,JSON.stringify([...abiertosK]))}
+function abrirK(sid,ab){
+  const s=fltK||abiertosK;if(ab)s.add(sid);else s.delete(sid);
+  if(!fltK)guardarK();
+  /* el grupo del capítulo, en el índice, se abre con su kaṇḍa */
+  const d=ab&&document.querySelector(`#sb-list .sb-sec[data-g="${sid}"]`);if(d)d.closest('.sb-ch').open=true;
+}
+function todosK(ab){
+  const s=fltK||abiertosK;s.clear();
+  if(ab)document.querySelectorAll('#out tr.sec').forEach(x=>{if(!x.hidden)s.add(x.id)});
+  if(!fltK)guardarK();
+  pliegue();
+}
+function pliegue(){
+  const t=T[lang],vis={};
+  document.querySelectorAll('#out tr:not(.sec)').forEach(tr=>{const k=tr.dataset.k;tr.classList.toggle('plg',!kAbierto(k));
+    if(tr.classList.contains('r')&&!tr.hidden)vis[k]=(vis[k]||0)+1});
+  document.querySelectorAll('#out tr.sec .kt').forEach(b=>{const k=b.dataset.k,ab=kAbierto(k),n=+b.dataset.n,v=vis[k]||0;
+    b.setAttribute('aria-expanded',ab);b.title=ab?t.k_tip_fold:t.k_tip_open;
+    b.querySelector('.cu').textContent=fltK&&v<n?t.k_of(v,t.rows(n)):t.rows(n)});
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{d.open=kAbierto(d.dataset.g)});
+  if(spDe&&spDe.closest('tr.plg'))spCerrar();
+  medirCab();espiar();
+}
+/* Ir a un § (sN) o a un kaṇḍa (k-…): si el filtro lo esconde, se quita el
+   filtro; se abre su kaṇḍa y se desplaza bajo la barra y la cabecera fija
+   (scroll-padding-top). Se repite al cargar las letras, salvo que el lector ya
+   haya movido la página. */
+const ANCLA=/^#(s\d+|k-[^\s#]+)$/;
+let objetivo=null;
+function irA(id){
+  const out=document.getElementById('out'),el=document.getElementById(id);
+  if(!el||!out.contains(el)||!(el.classList.contains('r')||el.classList.contains('sec')))return false;
+  if(el.hidden){document.getElementById('q').value='';st.cap='all';
+    document.querySelectorAll('#f-cap button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==='all'));filtrar()}
+  abrirK(el.classList.contains('sec')?el.id:el.dataset.k,true);pliegue();
+  out.querySelectorAll('tr.marca').forEach(x=>x.classList.remove('marca'));
+  if(el.classList.contains('r'))el.classList.add('marca');
+  hideTip();objetivo=id;el.scrollIntoView({block:'start'});
+  return true;
+}
+['wheel','touchstart','mousedown','keydown'].forEach(ev=>addEventListener(ev,()=>{objetivo=null},{passive:true,capture:true}));
+const reIr=()=>{if(!objetivo)return;const el=document.getElementById(objetivo);if(el)el.scrollIntoView({block:'start'})};
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(reIr);
+addEventListener('load',reIr);
+addEventListener('hashchange',()=>{const m=ANCLA.exec(location.hash);if(m)irA(m[1])});
+/* cualquier enlace de la página a un § o a un kaṇḍa (índice, globos, notas):
+   también si la dirección ya lleva ese mismo «#», que no dispara hashchange */
+document.addEventListener('click',e=>{
+  if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+  const a=e.target.closest('a[href^="#"]');if(!a)return;
+  const h=a.getAttribute('href'),m=ANCLA.exec(h);if(!m||!document.getElementById(m[1]))return;
+  e.preventDefault();if(location.hash!==h)history.pushState(null,'',h);irA(m[1]);
+});
 function render(){
   spCerrar();  /* la tabla se rehace: el § del globo deja de existir */
   const t=T[lang];let h='',sb='';
@@ -706,22 +798,29 @@ function render(){
     const rg=filas.length?`§${filas[0].n}–§${filas[filas.length-1].n}`:(c.desde?`§${c.desde}–§${c.hasta}`:'');
     if(!filas.length){sb+=`<details class="sb-ch pend"><summary onclick="return false"><span class="gl">${esc(c.pali)}</span><span class="rg" data-p="${t.pend}">${rg}</span></summary></details>`;return}
     const chg='ch-'+c.clave;
-    sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]===false?'':' open'}><summary><span class="gl">${esc(c.pali)}</span><span class="n"></span><span class="rg">${rg}</span></summary>`;
+    /* el grupo del índice: como lo dejó el lector en esta visita; si no lo tocó,
+       abierto cuando alguno de sus kaṇḍas lo está */
+    const chOpen=abiertos[chg]!==undefined?abiertos[chg]:c.kandas.some((x,i)=>kAbierto(`k-${c.clave}-${i+1}`));
+    sb+=`<details class="sb-ch" data-g="${chg}"${chOpen?' open':''}><summary><span class="gl">${esc(c.pali)}</span><span class="n"></span><span class="rg">${rg}</span></summary>`;
     c.kandas.forEach(([k,desde,hasta],i)=>{
       /* capítulo publicado en parte (Nāma, v0.4): sin filas, el kaṇḍa no sale */
       if(!filas.some(e=>e.n>=desde&&e.n<=hasta))return;
       const sid=`k-${c.clave}-${i+1}`;let it='';
       /* aviso de cabecera del capítulo, bajo su primer kaṇḍa (Kāraka, v0.9) */
       const av=i===0?(D.capitulos.find(x=>x.clave===c.clave)||{}).aviso:null;
-      h+=`<tr class="sec" id="${sid}" data-cap="${c.clave}"><td colspan="9"><h2>${esc(c.pali)} · ${esc(kname(k))}<span class="rg">§${desde}–§${hasta}</span></h2>${av&&av[lang]?`<p class="cap-aviso">${esc(av[lang])}</p>`:''}</td></tr>`;
-      filas.filter(e=>e.n>=desde&&e.n<=hasta).forEach(e=>{h+=fila(e);it+=`<a href="#s${e.n}" data-c="s${e.n}"><b>§${e.n}</b><i>${esc(e.sutta||'')}</i></a>`});
-      sb+=`<details class="sb-sec" data-g="${sid}"${abiertos[sid]?' open':''}><summary><span class="gl">${esc(kname(k))}</span><span class="n"></span><span class="rg">§${desde}–§${hasta}</span></summary>${it}</details>`;
+      const fk=filas.filter(e=>e.n>=desde&&e.n<=hasta);
+      /* la cabecera del kaṇḍa es el botón que lo pliega (v0.11.1): capítulo · kaṇḍa · § · nº de suttas */
+      h+=`<tr class="sec" id="${sid}" data-cap="${c.clave}"><td colspan="9"><h2><button type="button" class="kt" data-k="${sid}" data-n="${fk.length}" aria-expanded="false" aria-controls="${fk.map(e=>'s'+e.n).join(' ')}"><span class="ind" aria-hidden="true">▸</span><span>${esc(c.pali)} · ${esc(kname(k))}</span><span class="rg">§${desde}–§${hasta} · <span class="cu">${t.rows(fk.length)}</span></span></button></h2>${av&&av[lang]?`<p class="cap-aviso">${esc(av[lang])}</p>`:''}</td></tr>`;
+      fk.forEach(e=>{h+=fila(e);it+=`<a href="#s${e.n}" data-c="s${e.n}"><b>§${e.n}</b><i>${esc(e.sutta||'')}</i></a>`});
+      sb+=`<details class="sb-sec" data-g="${sid}"${kAbierto(sid)?' open':''}><summary><span class="gl">${esc(kname(k))}</span><span class="n"></span><span class="rg">§${desde}–§${hasta}</span></summary>${it}</details>`;
     });
     sb+='</details>';
   });
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
+  /* cada fila (r, resu-row, det-row) sabe a qué kaṇḍa pertenece */
+  let kk=null;for(const tr of document.getElementById('out').rows){if(tr.classList.contains('sec'))kk=tr.id;else tr.dataset.k=kk}
   document.querySelectorAll('#out td.cl, #out td.no, #out .detalle p').forEach(glosar);buscable();
-  document.querySelectorAll('#sb-list details[data-g]').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
+  document.querySelectorAll('#sb-list .sb-ch[data-g]').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
 /* La búsqueda mira todo el texto de la fila y de su detalle (aunque esté
@@ -763,6 +862,13 @@ function filtrar(){
     if(u)u.hidden=!ok;
   });
   document.querySelectorAll('tr.sec').forEach(s=>{let e=s.nextElementSibling,any=false;while(e&&!e.classList.contains('sec')){if(e.classList.contains('r')&&!e.hidden){any=true;break}e=e.nextElementSibling}s.hidden=!any});
+  /* con búsqueda o filtro de capítulo, los kaṇḍas con coincidencias se abren en
+     un plegado provisional (fltK), que se rehace cada vez que cambia el filtro;
+     al quitarlo vuelve el del lector (abiertosK), que el filtro no toca */
+  const clave=st.cap+'|'+q;
+  if(!q&&st.cap==='all'){fltK=null;fltKey=''}
+  else if(!fltK||clave!==fltKey){fltKey=clave;fltK=new Set();document.querySelectorAll('#out tr.sec').forEach(s=>{if(!s.hidden)fltK.add(s.id)})}
+  pliegue();
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;const tot=d.querySelectorAll('a[data-c]').length;d.querySelector(':scope>summary .n').textContent=v<tot?v:'';d.classList.toggle('flt',v<tot)});
   document.getElementById('count').textContent=T[lang].rows(n);
   document.getElementById('empty').hidden=!!n;
@@ -772,6 +878,11 @@ document.getElementById('f-cap').addEventListener('click',e=>{const b=e.target.c
   document.querySelectorAll('#f-cap button').forEach(x=>x.setAttribute('aria-pressed',x===b));filtrar()});
 document.getElementById('q').addEventListener('input',filtrar);
 document.getElementById('lang-btn').onclick=()=>{const top=enPantalla();lang=lang==='en'?'es':'en';store.set('pali_lang',lang);textos();render();if(top){const r=document.getElementById(top);if(r&&!r.hidden)r.scrollIntoView()}};
+/* la cabecera del kaṇḍa lo abre o lo pliega */
+document.getElementById('out').addEventListener('click',e=>{const b=e.target.closest('.kt');if(!b)return;
+  abrirK(b.dataset.k,b.getAttribute('aria-expanded')!=='true');pliegue()});
+document.getElementById('k-abrir').onclick=()=>todosK(true);
+document.getElementById('k-plegar').onclick=()=>todosK(false);
 /* «más» y «ver respuesta» */
 document.getElementById('out').addEventListener('click',e=>{
   const m=e.target.closest('.mas');
@@ -799,19 +910,40 @@ const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
 function pintarBarra(oc){root.classList.toggle('sin-barra',oc);burger.setAttribute('aria-expanded',oc?'false':'true')}
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
-document.getElementById('sb-abrir').onclick=()=>document.querySelectorAll('#sb-list details:not(.pend)').forEach(d=>d.open=true);
-document.getElementById('sb-plegar').onclick=()=>document.querySelectorAll('#sb-list details').forEach(d=>d.open=false);
+document.getElementById('sb-abrir').onclick=()=>{document.querySelectorAll('#sb-list details:not(.pend)').forEach(d=>d.open=true);todosK(true)};
+document.getElementById('sb-plegar').onclick=()=>{document.querySelectorAll('#sb-list details').forEach(d=>d.open=false);todosK(false)};
 addEventListener('resize',()=>{if(!ancha())root.classList.remove('sin-barra')});
 scr.onclick=cerrar;
 addEventListener('keydown',e=>{if(e.key==='Escape')cerrar()});
 sbEl.addEventListener('click',e=>{if(e.target.closest('a')&&!ancha())cerrar()});
-function enPantalla(){for(const r of document.querySelectorAll('tr.r')){if(r.hidden)continue;if(r.getBoundingClientRect().bottom>bajoBarra()+20)return r.id}return null}
+/* En el índice, un kaṇḍa lleva a su sección y la abre; si ya está abierta y a la
+   vista arriba, la pliega. Un capítulo abre su grupo y lleva a su primer kaṇḍa
+   (si tiene uno solo, lo abre también). */
+sbEl.addEventListener('click',e=>{
+  const s=e.target.closest('summary');if(!s||!sbEl.contains(s))return;
+  const d=s.parentElement;
+  if(d.classList.contains('sb-sec')){e.preventDefault();
+    const sid=d.dataset.g,sec=document.getElementById(sid);if(!sec)return;
+    if(kAbierto(sid)&&Math.abs(sec.getBoundingClientRect().top-bajoBarra())<60){abrirK(sid,false);pliegue();return}
+    irA(sid);if(!ancha())cerrar();return}
+  if(d.classList.contains('sb-ch')&&!d.classList.contains('pend')&&!d.open){
+    const secs=[...document.querySelectorAll(`#out tr.sec[data-cap="${d.dataset.g.slice(3)}"]`)].filter(x=>!x.hidden);
+    if(!secs.length)return;
+    if(document.querySelectorAll(`#out tr.sec[data-cap="${d.dataset.g.slice(3)}"]`).length===1)abrirK(secs[0].id,true);
+    pliegue();objetivo=secs[0].id;secs[0].scrollIntoView({block:'start'});
+  }
+});
+function enPantalla(){for(const r of document.querySelectorAll('#out tr.r, #out tr.sec')){if(r.hidden||r.classList.contains('plg'))continue;if(r.getBoundingClientRect().bottom>bajoBarra()+20)return r.id}return null}
 let spyF=0;
 function espiar(){
   const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=bajoBarra()+40;
-  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
+  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el||el.classList.contains('plg'))continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
+  /* el kaṇḍa en curso, por su cabecera: con todo plegado no hay fila que mirar */
+  let curS=null;for(const s of document.querySelectorAll('#out tr.sec')){if(s.hidden)continue;if(s.getBoundingClientRect().top<=lim)curS=s.id;else break}
+  if(cur&&curS&&document.getElementById(cur.dataset.c).dataset.k!==curS)cur=null;
+  const dS=curS?document.querySelector(`#sb-list .sb-sec[data-g="${curS}"]`):null;
   links.forEach(a=>a.classList.toggle('on',a===cur));
-  document.querySelectorAll('#sb-list details').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
+  document.querySelectorAll('#sb-list details').forEach(d=>d.classList.toggle('on',(!!cur&&d.contains(cur))||(!!dS&&d.contains(dS))));
   if(cur&&cur.closest('.sb-sec').open&&cur.closest('.sb-ch').open){const r=cur.getBoundingClientRect(),s=sbEl.getBoundingClientRect();if(r.top<s.top+60||r.bottom>s.bottom-20)sbEl.scrollTop+=r.top-s.top-s.height/3}
 }
 const topBtn=document.getElementById('top-btn');
@@ -1013,9 +1145,8 @@ if(window.ResizeObserver){const ro=new ResizeObserver(()=>medirCab());ro.observe
 addEventListener('resize',medirCab);
 
 textos();render();
-/* un § en la dirección (#s12) lleva a esa fila */
-(function(){const m=/^#s(\d+)$/.exec(location.hash);if(!m)return;const r=document.getElementById('s'+m[1]);if(!r)return;
-  r.classList.add('marca');setTimeout(()=>r.scrollIntoView(),0)})();
+/* un § en la dirección (#s12) lleva a esa fila, con su kaṇḍa abierto */
+{const m=ANCLA.exec(location.hash);if(m)irA(m[1])}
 })();
 </script>
 </body>

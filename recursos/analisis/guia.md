@@ -12,9 +12,11 @@ Es un **borrador**: una lectura del texto birmano a partir de un escaneo, coteja
 
 | Elemento | Dónde está | Para qué sirve |
 | --- | --- | --- |
-| Índice lateral | A la izquierda (en el móvil, botón ☰) | Saltar a un capítulo (Kappa) o a una sección (kaṇḍa). |
-| DESPLEGAR / PLEGAR | Arriba del índice | Abrir o cerrar todas las secciones del índice. |
-| Buscador | Barra sobre la tabla | Buscar un sutta, un término o una forma del ejemplo. Escriba «30» o «§30» para ir directamente al §30. |
+| Índice lateral | A la izquierda (en el móvil, botón ☰) | Saltar a un capítulo (Kappa) o a una sección (kaṇḍa), que se abre en la tabla. |
+| DESPLEGAR / PLEGAR | Arriba del índice | Abrir o cerrar todas las secciones del índice y de la tabla. |
+| Cabecera de cada kaṇḍa | En la tabla | Abrir o cerrar ese kaṇḍa, que empieza plegado. Dice capítulo, kaṇḍa, § y número de suttas. |
+| DESPLEGAR TODO / PLEGAR TODO | Junto al buscador | Abrir o cerrar todos los kaṇḍas. La página recuerda los que se dejan abiertos. |
+| Buscador | Barra sobre la tabla | Buscar un sutta, un término o una forma del ejemplo. Escriba «30» o «§30» para ir directamente al §30. Los kaṇḍas con coincidencias se abren; al borrar la búsqueda vuelve el plegado anterior. |
 | TODOS / SANDHI / NĀMA | Barra sobre la tabla | Mostrar todos los suttas o sólo los de un capítulo. A la derecha se ve cuántos suttas quedan a la vista. |
 | ◐ | Barra sobre la tabla | Cambiar entre modo claro y oscuro. |
 | ES / EN | Junto a la versión | Cambiar la lengua de la página (español o inglés). |
@@ -101,9 +103,11 @@ Each table row gives one sutta: its class, its aṅga, the role of each word and
 
 | Element | Where | What it does |
 | --- | --- | --- |
-| Side index | Left (on phones, the ☰ button) | Jump to a chapter (Kappa) or section (kaṇḍa). |
-| EXPAND / FOLD | Top of the index | Open or close every section in the index. |
-| Search box | Bar above the table | Find a sutta, a term or a form in the examples. Type «30» or «§30» to go straight to §30. |
+| Side index | Left (on phones, the ☰ button) | Jump to a chapter (Kappa) or section (kaṇḍa), which opens in the table. |
+| EXPAND / FOLD | Top of the index | Open or close every section in the index and in the table. |
+| Heading of each kaṇḍa | In the table | Open or close that kaṇḍa, which starts folded. It gives chapter, kaṇḍa, § and number of suttas. |
+| EXPAND ALL / COLLAPSE ALL | Next to the search box | Open or close every kaṇḍa. The page remembers the ones left open. |
+| Search box | Bar above the table | Find a sutta, a term or a form in the examples. Type «30» or «§30» to go straight to §30. The kaṇḍas with matches open; clearing the search restores the previous folding. |
 | ALL / SANDHI / NĀMA | Bar above the table | Show every sutta or one chapter only; the count of visible suttas is on the right. |
 | ◐ | Bar above the table | Switch between light and dark mode. |
 | ES / EN | Next to the version | Switch the page language. |
