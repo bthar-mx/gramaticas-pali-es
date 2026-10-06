@@ -97,7 +97,7 @@ RECURSOS = [
     ("nombre/", "__NOMBRE_BADGE__", "Formación del nombre — pācako",
      "La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz "
      "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "
-     "paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa."),
+     "paso. Cruza Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa."),
     ("verbo/", "__VERBO_BADGE__", "El verbo — ākhyāta",
      "Las ocho inflexiones del verbo pāḷi y los ocho grupos de raíces, la "
      "derivación paso a paso de cada forma con el aforismo que la ampara —en "
@@ -113,9 +113,9 @@ RECURSOS = [
      "ignora los diacríticos y filtros por género y por tema."),
     ("casos/", "__CASOS_BADGE__", "Usos de las inflexiones — kāraka",
      "Qué expresa cada una de las siete inflexiones nominales, uso por uso, "
-     "según el capítulo de los casos de la <i>Rūpasiddhi</i>, con un ejemplo "
+     "según el capítulo de los casos de <i>Rūpasiddhi</i>, con un ejemplo "
      "o más para cada uso y la concordancia con Kaccāyana y Saddanīti. Dos "
-     "órdenes —el de la Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
+     "órdenes —el de Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
      "que enseña de dónde viene cada traducción. Borrador en revisión."),
     ("clasificacion/", "__CLASIFICACION_BADGE__",
      "Clasificación de los suttas de Kaccāyana",
@@ -126,8 +126,8 @@ RECURSOS = [
      "descrita en una frase. Por ahora, el Sandhi-Kappa, el Nāma-Kappa, "
      "el Kāraka-Kappa, el Samāsa-Kappa y el Taddhita-Kappa; "
      "los demás capítulos se irán añadiendo. Cada decisión se apoya en "
-     "<i>Rūpasiddhi</i> y <i>Nyāsa</i>, contrastados con la "
-     "<i>Bhāsāṭīkā</i>, el <i>Saddanīti</i> y las clases del Ven. U "
+     "<i>Rūpasiddhi</i> y <i>Nyāsa</i>, contrastados con "
+     "<i>Bhāsāṭīkā</i>, <i>Saddanīti</i> y las clases del Ven. U "
      "Sīlānanda; donde la tradición discrepa, se expone la divergencia y "
      "se justifica la determinación. Para el estudiante, un mapa de qué "
      "hace cada regla; para el investigador, las fuentes de cada "
@@ -135,7 +135,7 @@ RECURSOS = [
      "Borrador en revisión."),
     ("analisis/", "__ANALISIS_BADGE__",
      "Análisis de los suttas de Kaccāyana",
-     "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
+     "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
      # quinto elemento: un enlace secundario bajo la tarjeta (href, es, en)
      ("analisis/guia/", "Guía para el estudiante", "Student guide")),
     ("comentarios/", "__COMENTARIOS_BADGE__",
@@ -148,19 +148,19 @@ RECURSOS = [
      "en primer lugar. Borrador en revisión."),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
-     "alfabética, con tres capas por lema: el <i>Glosario de términos "
+     "alfabética, con tres capas por lema: <i>Glosario de términos "
      "gramaticales de la lengua pali</i> de Bhikkhu Nandisena (IEBH, 2013), "
-     "el <i>Conspectus Terminorum</i> de Helmer Smith (<i>Saddanīti</i> IV) "
+     "<i>Conspectus Terminorum</i> de Helmer Smith (<i>Saddanīti</i> IV) "
      "en colación página a página sobre la plancha, y la terminología fijada en estas "
      "traducciones. Buscador que ignora los diacríticos e índice por el "
      "alfabeto pāḷi."),
     ("raices/", "__RAICES_BADGE__", "Raíces pāḷi comparadas con las sánscritas",
-     "Las raíces de la <i>Dhātumālā</i> del <i>Saddanīti</i> con su "
+     "Las raíces de <i>Dhātumālā</i> de <i>Saddanīti</i> con su "
      "significado en español y en inglés, la raíz sánscrita correspondiente "
      "cuando la hay, y el <i>gaṇa</i> y la página de cada una, del libro "
      "<i>Pali Roots in Saddanīti</i> del Ven. U Sīlānanda, editado por "
      "Bhikkhu Nandisena. Con el índice inverso, que va del "
-     "sentido a las raíces que lo expresan, y el <i>Dhātupāṭha</i> y la "
+     "sentido a las raíces que lo expresan, y <i>Dhātupāṭha</i> y "
      "<i>Dhātumañjūsā</i> de Andersen y Smith concordados lema a lema."),
 ]
 
@@ -290,10 +290,10 @@ EN = {
     "Formación del nombre — pācako": "Formation of the noun — pācako",
     "La derivación de <i>pācako</i> «uno que cocina» paso a paso, de la raíz "
     "<i>√paca</i> al nominativo singular, con el aforismo que ampara cada "
-    "paso. Cruza el Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa.":
+    "paso. Cruza Kibbidhāna, el Nāma-Kappa y el Sandhi-Kappa.":
         "The derivation of <i>pācako</i> “one who cooks” step by step, from "
         "the root <i>√paca</i> to the nominative singular, with the aphorism "
-        "that authorises each step. It crosses the Kibbidhāna, the Nāma-Kappa "
+        "that authorises each step. It crosses Kibbidhāna, the Nāma-Kappa "
         "and the Sandhi-Kappa.",
     "El verbo — ākhyāta": "The verb — ākhyāta",
     "Las ocho inflexiones del verbo pāḷi y los ocho grupos de raíces, la "
@@ -320,21 +320,21 @@ EN = {
         "diacritics, with filters by gender and by stem.",
     "Usos de las inflexiones — kāraka": "Uses of the inflections — kāraka",
     "Qué expresa cada una de las siete inflexiones nominales, uso por uso, "
-    "según el capítulo de los casos de la <i>Rūpasiddhi</i>, con un ejemplo "
+    "según el capítulo de los casos de <i>Rūpasiddhi</i>, con un ejemplo "
     "o más para cada uso y la concordancia con Kaccāyana y Saddanīti. Dos "
-    "órdenes —el de la Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
+    "órdenes —el de Rūpasiddhi y el de Kaccāyana— y un modo de revisión "
     "que enseña de dónde viene cada traducción. Borrador en revisión.":
         "What each of the seven nominal inflections expresses, use by use, "
-        "following the chapter on cases of the <i>Rūpasiddhi</i>, with one "
+        "following the chapter on cases of <i>Rūpasiddhi</i>, with one "
         "example or more for each use and the concordance with Kaccāyana and "
-        "Saddanīti. Two orders —the Rūpasiddhi's and Kaccāyana's— and a review "
+        "Saddanīti. Two orders —Rūpasiddhi's and Kaccāyana's— and a review "
         "mode that shows where each translation comes from. Draft under review; "
         "the page itself is in Spanish.",
     "Análisis de los suttas de Kaccāyana":
         "Analysis of the Kaccāyana suttas",
-    "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según la <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.":
+    "Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.":
         "Class, aṅga, roles (kāriyī, kāriya, nimitta) and example for each "
-        "sutta, following the <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
+        "sutta, following <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.",
     "Comentarios de la escuela de Kaccāyana":
         "Commentaries of the Kaccāyana school",
     "Las obras de la escuela gramatical de Kaccāyana —el texto raíz, sus "
@@ -358,8 +358,8 @@ EN = {
     "descrita en una frase. Por ahora, el Sandhi-Kappa, el Nāma-Kappa, "
      "el Kāraka-Kappa, el Samāsa-Kappa y el Taddhita-Kappa; "
     "los demás capítulos se irán añadiendo. Cada decisión se apoya en "
-    "<i>Rūpasiddhi</i> y <i>Nyāsa</i>, contrastados con la "
-    "<i>Bhāsāṭīkā</i>, el <i>Saddanīti</i> y las clases del Ven. U "
+    "<i>Rūpasiddhi</i> y <i>Nyāsa</i>, contrastados con "
+    "<i>Bhāsāṭīkā</i>, <i>Saddanīti</i> y las clases del Ven. U "
     "Sīlānanda; donde la tradición discrepa, se expone la divergencia y "
     "se justifica la determinación. Para el estudiante, un mapa de qué "
     "hace cada regla; para el investigador, las fuentes de cada "
@@ -372,8 +372,8 @@ EN = {
         "stated in one sentence. For now, the Sandhi-Kappa, the Nāma-Kappa, "
         "the Kāraka-Kappa, the Samāsa-Kappa and the Taddhita-Kappa; "
         "the other chapters will be added in turn. "
-        "Each decision rests on the <i>Rūpasiddhi</i>"
-        " and the <i>Nyāsa</i>, checked against the <i>Bhāsāṭīkā</i>, the "
+        "Each decision rests on <i>Rūpasiddhi</i>"
+        " and <i>Nyāsa</i>, checked against <i>Bhāsāṭīkā</i>, "
         "<i>Saddanīti</i> and the Ven. U Sīlānanda's classes; where the "
         "tradition disagrees, the divergence is set out and the determination"
         " justified. For students, a map of what each rule does; for "
@@ -381,9 +381,9 @@ EN = {
         "links to its text and translation. Draft under review.",
     "Glosario de terminología gramatical": "Glossary of grammatical terminology",
     "Los términos técnicos de la gramática pāḷi en una sola lista "
-    "alfabética, con tres capas por lema: el <i>Glosario de términos "
+    "alfabética, con tres capas por lema: <i>Glosario de términos "
     "gramaticales de la lengua pali</i> de Bhikkhu Nandisena (IEBH, 2013), "
-    "el <i>Conspectus Terminorum</i> de Helmer Smith (<i>Saddanīti</i> IV) "
+    "<i>Conspectus Terminorum</i> de Helmer Smith (<i>Saddanīti</i> IV) "
     "en colación página a página sobre la plancha, y la terminología fijada en estas "
     "traducciones. Buscador que ignora los diacríticos e índice por el "
     "alfabeto pāḷi.":
@@ -396,19 +396,19 @@ EN = {
         "alphabet.",
     "Raíces pāḷi comparadas con las sánscritas":
         "Pāḷi roots compared with the Sanskrit ones",
-    "Las raíces de la <i>Dhātumālā</i> del <i>Saddanīti</i> con su "
+    "Las raíces de <i>Dhātumālā</i> de <i>Saddanīti</i> con su "
     "significado en español y en inglés, la raíz sánscrita correspondiente "
     "cuando la hay, y el <i>gaṇa</i> y la página de cada una, del libro "
     "<i>Pali Roots in Saddanīti</i> del Ven. U Sīlānanda, editado por "
     "Bhikkhu Nandisena. Con el índice inverso, que va del sentido a las "
-    "raíces que lo expresan, y el <i>Dhātupāṭha</i> y la <i>Dhātumañjūsā</i> "
+    "raíces que lo expresan, y <i>Dhātupāṭha</i> y <i>Dhātumañjūsā</i> "
     "de Andersen y Smith concordados lema a lema.":
-        "The roots of the <i>Dhātumālā</i> of the <i>Saddanīti</i> with their "
+        "The roots of <i>Dhātumālā</i> of <i>Saddanīti</i> with their "
         "meaning in Spanish and English, the corresponding Sanskrit root "
         "where there is one, and the <i>gaṇa</i> and page of each, from "
         "<i>Pali Roots in Saddanīti</i> by Ven. U Sīlānanda, edited by "
         "Bhikkhu Nandisena. With the reverse index, which goes from the sense "
-        "to the roots that express it, and the <i>Dhātupāṭha</i> and the "
+        "to the roots that express it, and <i>Dhātupāṭha</i> and "
         "<i>Dhātumañjūsā</i> of Andersen and Smith concorded lemma by lemma.",
     "Chaṭṭhasaṅgītipiṭaka — Tipiṭaka del Sexto Concilio":
         "Chaṭṭhasaṅgītipiṭaka — Tipiṭaka of the Sixth Council",
@@ -921,8 +921,8 @@ def indice_recursos():
         _en = "{0} roots · {1} with Sanskrit".format(
             miles(n_rai[0]), miles(n_rai[1]))
         if n_rai[2]:
-            _es += " · {0} del Dhātupāṭha".format(n_rai[2])
-            _en += " · {0} from the Dhātupāṭha".format(n_rai[2])
+            _es += " · {0} de Dhātupāṭha".format(n_rai[2])
+            _en += " · {0} from Dhātupāṭha".format(n_rai[2])
         if n_rai[3]:
             _es += " · {0} estrofas".format(n_rai[3])
             _en += " · {0} stanzas".format(n_rai[3])

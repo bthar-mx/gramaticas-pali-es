@@ -169,7 +169,7 @@ async function main() {
     const sis = c.body.system[0].text;
     comprobar("la instrucción trae los ejercicios (por la marca de la fila, sin lista de §) y el «No lo sé»",
       sis.includes("las filas con «ejercicio» verdadero; la fila lo dice") && !/«ejercicio» verdadero: §/.test(sis)
-        && sis.includes("«No lo sé»") && sis.includes("«Según la Visuddhāyuṃ (§n)"));
+        && sis.includes("«No lo sé»") && sis.includes("«Según Visuddhāyuṃ (§n)"));
     comprobar("la instrucción describe el visesana suelto como lo da §221",
       sis.includes('§221 [visesana, ca, ""]') && sis.includes("con «visesana» en la primera posición")
         && sis.includes("no digas a qué palabra califica si la fila no lo dice"));
@@ -429,8 +429,8 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
 
   const sis = base.c.body.system[0].text;
   comprobar("la instrucción trae las reglas de las fuentes",
-    sis.includes("«Según la Rūpasiddhi…»") && sis.includes("(clase N, mm:ss)")
-      && sis.includes("nunca atribuyas a la Visuddhāyuṃ la opinión de otra obra")
+    sis.includes("«Según Rūpasiddhi…»") && sis.includes("(clase N, mm:ss)")
+      && sis.includes("nunca atribuyas a Visuddhāyuṃ la opinión de otra obra")
       && sis.includes("unas 15 palabras") && sis.includes("«texto con ruido de OCR: no citar textualmente»")
       && sis.includes("están en inglés: resúmelas") && sis.includes("«Las fuentes consultadas no tratan este punto»")
       && sis.includes("tampoco se resuelven con las fuentes"));
