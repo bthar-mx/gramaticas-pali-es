@@ -843,7 +843,7 @@ def indice_kaccayana(pub):
             'Kaccāyana\'s sequential number — the one we cite by (<b>§30</b>) '
             'and the one that fixes each sutta\'s permanent link. The second '
             'is the corresponding number in Padarūpasiddhi; the one in '
-            'parentheses is that of the Saddanīti-Suttamālā, absent in some '
+            'parentheses is that of Saddanīti-Suttamālā, absent in some '
             'suttas.') + '</p>\n'
     ).format(lista(tarjetas))
 

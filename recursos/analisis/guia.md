@@ -20,7 +20,7 @@ Es un **borrador**: una lectura del texto birmano a partir de un escaneo, coteja
 | ES / EN | Junto a la versión | Cambiar la lengua de la página (español o inglés). |
 | ↑ | Abajo a la derecha, al bajar | Volver al principio de la página. |
 
-La tabla tiene más columnas de las que caben en una pantalla normal: desplácela hacia la derecha para ver **Notas** y **Fuente**. En el móvil, cada fila se muestra como una ficha.
+La tabla tiene más columnas de las que caben en una pantalla normal: desplácela hacia la derecha para ver **Notas** y **Fuente**. Los botones ▸ (abrir la nota entera) y ? (Preguntar) no exigen desplazarse: están en la columna **Notas · Preguntar**, junto al sutta. En el móvil, cada fila se muestra como una ficha, con esos botones justo bajo el texto del sutta.
 
 ## 3. Cómo leer una fila
 
@@ -28,13 +28,14 @@ Cada fila es un sutta. Salvo el § y el texto del sutta, todo lo que ve procede 
 
 | Columna | Qué contiene |
 | --- | --- |
-| § | Número del sutta. Al pulsarlo se abre el aforismo con su traducción en este sitio. |
+| § | Número del sutta. Al pasar el ratón (o con un primer toque) muestra el sutta, su traducción y, si lo hay, el resumen; al pulsarlo se abre el aforismo con su traducción en este sitio. |
 | Sutta | El texto pāḷi del sutta, según la edición de U Nandisena. |
+| Notas · Preguntar | ▸ abre las notas de la fila; ? pregunta a la IA sobre este aforismo (requiere acceso). La respuesta de la IA es orientativa: no es palabra del libro. |
 | Clase de sutta | La clase que le da el libro, en pāḷi o en birmano, tal como está impresa. |
 | Aṅga | Las palabras que el libro enumera como miembros (aṅga) del sutta, tal como las imprime. |
 | Funciones | La función de cada palabra: kāriyī, kāriya, nimitta, saññā / saññī, visaya / visayī; el visesana va entre corchetes. |
 | Ejemplo | El ejemplo del modelo de derivación (rup) que da el libro. |
-| Notas | La primera frase de la nota; pulse ▸ para leerla entera. |
+| Notas | La primera frase de la nota; pulse ▸ (columna «Notas · Preguntar») para leerla entera. |
 | Fuente | La página del PDF del escaneo (página impresa + 46). |
 
 En la columna Ejemplo, las marcas significan:
@@ -104,7 +105,7 @@ Each table row gives one sutta: its class, its aṅga, the role of each word and
 | ES / EN | Next to the version | Switch the page language. |
 | ↑ | Bottom right, once you scroll | Back to the top. |
 
-The table is wider than most screens: scroll it to the right to see **Notes** and **Source**. On phones each row is shown as a card.
+The table is wider than most screens: scroll it to the right to see **Notes** and **Source**. The ▸ (whole note) and ? (Ask) buttons need no scrolling: they are in the **Notes · Ask** column, next to the sutta. On phones each row is shown as a card, with those buttons right under the sutta text.
 
 ## 3. Reading a row
 
@@ -112,13 +113,14 @@ Apart from the § and the sutta text, everything comes from the book; where the 
 
 | Column | What it holds |
 | --- | --- |
-| § | The sutta number; click it to open the aphorism and its translation on this site. |
+| § | The sutta number. Hover over it (or tap it once) to see the sutta, its translation and, if there is one, the summary; click it to open the aphorism and its translation on this site. |
 | Sutta | The Pāḷi text of the sutta, following U Nandisena's edition. |
+| Notes · Ask | ▸ opens the row's notes; ? asks the AI about this aphorism (access required). The AI's answer is a guide, not the book's word. |
 | Sutta class | The class the book gives, in Pāḷi or Burmese, as printed. |
 | Aṅga | The words the book lists as members (aṅga) of the sutta, as printed. |
 | Roles | Each word's role: kāriyī, kāriya, nimitta, saññā / saññī, visaya / visayī; a visesana is shown in brackets. |
 | Example | The book's example of the model derivation (rup). |
-| Notes | The note's first sentence; click ▸ for the whole note. |
+| Notes | The note's first sentence; click ▸ (column «Notes · Ask») for the whole note. |
 | Source | The page of the scanned PDF (printed page + 46). |
 
 In the Example column: **underlined** = the letter the operation acts on; **red** = the cause; **highlighted** = the result; **struck through** = what is elided. Tags such as **7.ª** or **5.ª** next to the nimitta are an IEBH editorial addition, not the book's analysis.
