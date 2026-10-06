@@ -1,8 +1,8 @@
 /* Las fuentes de fondo de /api/preguntar (2026-10-04).
 
    Junto a la fila, el modelo puede recibir textos de otras obras sobre el
-   mismo sutta: las clases de U Sīlānanda sobre la Rūpasiddhi y sobre
-   Kaccāyana, la propia Rūpasiddhi, la Nyāsappadīpikā y el Nyāsa. NO están
+   mismo sutta: las clases de U Sīlānanda sobre Rūpasiddhi y sobre
+   Kaccāyana, la propia Rūpasiddhi, Nyāsappadīpikā y Nyāsa. NO están
    en el repositorio —que es público— ni en el sitio: viven en el KV privado FUENTES, con una clave
    por obra y § de Kaccāyana:
 
@@ -24,7 +24,7 @@
      Con «off», o sin el enlace FUENTES, la petición es la de siempre, byte a
      byte.
    - Tope duro para el bloque entero (TOPE_TOKENS). Si no cabe, se cae primero
-     el Nyāsa, luego la Nyāsappadīpikā, luego la Rūpasiddhi, luego las clases
+     Nyāsa, luego Nyāsappadīpikā, luego Rūpasiddhi, luego las clases
      de Rūpasiddhi; las de Kaccāyana son las últimas que se caen (pedido del
      IEBH, 2026-10-05). Si ni la primera cabe sola, se recorta por el final y se dice. */
 
@@ -36,7 +36,7 @@ export const OBRAS = [
   { dir: "silananda-kacc", nombre: "U Sīlānanda, clases de Kaccāyana",
     name: "U Sīlānanda, classes on Kaccāyana" },
   { dir: "silananda-rup", nombre: "U Sīlānanda, clases de Rūpasiddhi",
-    name: "U Sīlānanda, classes on the Rūpasiddhi" },
+    name: "U Sīlānanda, classes on Rūpasiddhi" },
   { dir: "rupasiddhi", nombre: "Padarūpasiddhi", name: "Padarūpasiddhi" },
   { dir: "nyasappadipika", nombre: "Nyāsappadīpikā", name: "Nyāsappadīpikā" },
   { dir: "nyasa", nombre: "Nyāsa", name: "Nyāsa" },

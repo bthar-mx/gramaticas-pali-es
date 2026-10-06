@@ -289,7 +289,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     const t = aplicarTope(cuatro, 100000);
     comprobar("tope: lo que cabe pasa entero", t.paquetes.length === 4 && !t.descartadas.length && !t.recortada);
     const t2 = aplicarTope(cuatro, 7000);
-    comprobar("tope: se cae primero el Nyāsa, luego la Nyāsappadīpikā",
+    comprobar("tope: se cae primero Nyāsa, luego Nyāsappadīpikā",
       t2.descartadas.join() === "nyasa/2,nyasappadipika/2" && t2.paquetes.length === 2, JSON.stringify(t2.descartadas));
     const t3 = aplicarTope(cuatro, 2000);
     comprobar("tope: si ni Sīlānanda cabe sola, se recorta y se dice",
@@ -307,7 +307,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     comprobar("y el orden de OBRAS lo dice: silananda-kacc primero, silananda-rup después",
       OBRAS[0].dir === "silananda-kacc" && OBRAS[1].dir === "silananda-rup", OBRAS.map((o) => o.dir).join());
     const t4 = aplicarTope(grandes);
-    comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo el Nyāsa y el bloque queda por debajo",
+    comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo Nyāsa y el bloque queda por debajo",
       total(t4.paquetes) <= TOPE_TOKENS && t4.descartadas.join() === "nyasa/2", total(t4.paquetes) + " " + t4.descartadas);
   }
 
@@ -373,7 +373,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   comprobar("con fuentes cargadas, con_fuentes es true (y sólo un booleano)",
     on.x.con_fuentes === true && off.x.con_fuentes === false, JSON.stringify([on.x.con_fuentes, off.x.con_fuentes]));
   comprobar("en inglés: «Sources consulted» con los nombres ingleses",
-    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on Kaccāyana; U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
+    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on Kaccāyana; U Sīlānanda, classes on Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
 
   const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
   comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
@@ -416,14 +416,22 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
 
   {
     // §271 en adelante: las fuentes no tienen tope; lo que falta es la fila.
-    const TEXTOS3 = { "silananda-kacc/280": "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 40; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-280" };
+    // El § sin fila se calcula: el siguiente al último que trae preguntar.json
+    // (era §280, y dejó de valer cuando Kāraka entró en la página, v0.9).
+    const filas = JSON.parse(DATOS).filas;
+    const nSin = Math.max(...Object.keys(filas).map(Number)) + 1;
+    const TEXTOS3 = { "silananda-kacc/280": "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 40; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-280",
+                      ["silananda-kacc/" + nSin]: "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 41; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-SIN-FILA" };
     const kv3 = { async get(k) { return TEXTOS3[k] ?? null; } };
     const { leerFuentes } = await import("./fuentes.js");
     const l = await leerFuentes({ FUENTES: kv3 }, 280);
     comprobar("§280: leerFuentes trae silananda-kacc/280",
       l.length === 1 && l[0].clave === "silananda-kacc/280" && l[0].obra.nombre === "U Sīlānanda, clases de Kaccāyana", JSON.stringify(l.map((p) => p.clave)));
-    const sin = await pedirCon({ FUENTES: kv3, PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 280 });
-    comprobar("§280 sin fila en preguntar.json → 404 y la API no se llama (el único límite son los datos de la página)",
+    const l2 = await leerFuentes({ FUENTES: kv3 }, nSin);
+    comprobar("§" + nSin + " (aún sin fila): el KV tiene fuente y preguntar.json no tiene la fila",
+      l2.length === 1 && !filas[String(nSin)], JSON.stringify(l2.map((p) => p.clave)));
+    const sin = await pedirCon({ FUENTES: kv3, PREGUNTAR_FUENTES: "on" }, { ...P, sutta: nSin });
+    comprobar("§" + nSin + " sin fila en preguntar.json → 404 y la API no se llama (el único límite son los datos de la página)",
       sin.r.status === 404 && !sin.c, sin.r.status);
   }
 
