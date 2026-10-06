@@ -49,6 +49,10 @@ En Kāraka el libro no segmenta con «+»: narra los pasos. La notación «+ / �
 
 En Kāraka, bajo el texto de cada sutta, una línea rotulada «Según Visuddhāyuṃ (resumen del IEBH, borrador)» resume en pocas frases lo que el libro dice de ese sutta; es un resumen del IEBH, no texto del libro, y su primera frase aparece también al pasar el ratón por el §.
 
+En Samāsa el libro casi nunca da modelo (က) ni clase de sutta: explica en prosa. Las celdas vacías no son omisiones; la explicación está en las Notas.
+
+En Taddhita el libro casi nunca da modelo (က) ni clase de sutta: explica en prosa. Cuando segmenta con «+», lo hace dentro de la prosa, y eso va en las Notas. Las celdas vacías no son omisiones; la explicación está en las Notas.
+
 Las etiquetas como **7.ª** o **5.ª** junto al nimitta son un añadido editorial del IEBH (la inflexión deducida del caso de la palabra), no análisis del libro.
 
 ## 4. Términos técnicos y ejercicios
@@ -128,6 +132,10 @@ In the Example column: **underlined** = the letter the operation acts on; **red*
 In Kāraka the book does not segment with «+»: it narrates the steps. The «+ / →» notation in the Example column is the IEBH's summary of that narration; glosses and narration are in the Notes.
 
 In Kāraka, under the text of each sutta, a line labelled «According to Visuddhāyuṃ (IEBH summary, draft)» sums up in a few sentences what the book says about that sutta; it is an IEBH summary, not the book's text, and its first sentence also appears when you hover over the §.
+
+In Samāsa the book almost never gives a (က) model or a sutta class: it explains in prose. Empty cells are not omissions; the explanation is in the Notes.
+
+In Taddhita the book almost never gives a (က) model or a sutta class: it explains in prose. Where it segments with «+», it does so within the prose, and that goes in the Notes. Empty cells are not omissions; the explanation is in the Notes.
 
 ## 4. Technical terms and exercises
 

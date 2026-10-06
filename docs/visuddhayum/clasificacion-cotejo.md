@@ -74,7 +74,7 @@ Se registran las dos posiciones, sin veredicto. La página del análisis lleva a
 | 187 | 187 | 180 | «(၁၈၇) သေသေသု န္တုဝ။ … တိပဒံ။» — (ခ): «ဂုဏဝါဒိကိုဏ်း အစီအရင်ရောက်ရန် န္တုကို နှုပြုသည်။ သေသေသုဆိုသော်လည်း န္တော၊ တော၊ တိ၊ တာ၊ တံ-စသော ဝိသေသဝိဓိ မရှိသည့်အရာ ဥကို အ-ပြန်ပြုရဦးမည့်အရာတို့၌ နှုမင့်ပဲထားသည်က သာ၍ကောင်း၏။» [V; la palabra «နှု» es ?] | «So that it follows the procedure of the guṇavant group, it makes [nta] (like?) ntu. Although it says "sesesu", where there is no special vidhi such as nto, to, ti, tā, taṃ, and where the u would have to be turned back into a, it is better to leave it [as nta].» | V · ādesa (grupo atidesa; nota: Rū 108 kāriyātidesa) | sin término de clase; describe el efecto «como ntu», compatible con la nota de atidesa |
 | 203 | 203 | 184 | «(၂၀၃) ဥ သသ္မိံ သလောပေါ စ။ … စတုပ္ပဒံ။» — solo el modelo (က); no hay (ခ) [V] | — | V · ādesa + lopa (nota: apavāda del §200) | sin (ခ) |
 | 227 | 227 | 196 | «(၂၂၇) ကိဿ က ဝေ စ။ … စတုပ္ပဒံ။» — solo el modelo (က); no hay (ခ) [V] | — | V · ādesa (nota: Nyāsa llama niyama a «ve») | sin (ခ) |
-| 229 | 229 | 197 | «(၂၂၉) သေသေသု စ။ … ဒွိပဒံ။» — (ခ), entero: una cita pāḷi («ettha ca kissa ka ve cāti sutte …») y «ကစ္စည်းဝုတ္တိသို့ မလိုက်။» [V] | «…does not follow the Kaccāyana-vutti.» | V · ādesa (nota: niyama según Nyāsa) | sin etiqueta |
+| 229 | 229 | 197 | «(၂၂၉) သေသေသု စ။ … ဒွိပဒံ။» — (ခ), entero: una cita pāḷi («ettha ca kissa ka ve cāti sutte …») y «ကစ္စည်းဝုတ္တိသို့ မလိုက်။» [V] | «…does not follow Kaccāyana-vutti.» | V · ādesa (nota: niyama según Nyāsa) | sin etiqueta |
 | 245 | 244 | 205 | «(၂၄၄) ဈလပါ ရဿံ။ … ဒွိပဒံ။» — (ခ): «…ရဿံဖြင့် ကာရီ၌ အ၊ ဥ မပါဟု သိရ၏။ အဃောရဿ-ဖြင့် ဂနောင်းရာ ပြုရမည့် ကာရီများကို နိယမပြုသည်။» [V] | «…By "rassaṃ" we know that a and u are not among the kārī. It makes a niyama of the kārī that must be [shortened] where ga follows, by "agho rassaṃ…".» | V · rassa (nota: niyama, en el sentido de especificar) | **coincide con la nota** (niyama); la vidhi «rassa» no se contradice |
 | 270 | 269 | 212 | «(၂၆၉) အမှ၊ တုမှ၊ န္တု၊ ရာဇ-- … စတုပ္ပဒံ။» — solo el modelo (က); luego «ပဉ္စမပိုင်းပြီး၏။» [V] | «…The fifth part is finished.» | V · ādesa (nota: dos lecturas, atidesa o ādesa) | sin (ခ) |
 
@@ -92,7 +92,7 @@ Se registran las dos posiciones, sin veredicto. La página del análisis lleva a
 - **El sitio (datos.json v0.6):**
   - Sigue a Thitzana, que pone la pakati dentro de la ādesa: §23 y §24 = V · ādesa, grupo pakati.
   - Referencia: nota de §23 en datos.json (Thitzana, vol. 2, introducción). Véase también `claude/vuddhi-y-las-ocho-vidhis.md`.
-- **La Visuddhāyuṃ:**
+- **Visuddhāyuṃ:**
   - Llama a §30 «ပတိသေဓ (ပကတိ)ဝိဓိ» (PDF 79–80, dentro de la explicación de §23), y a §30 «sutta que impide» §31–§33 y §39 (PDF 89).
   - Describe §24 como «sutta que impide todo el segundo pariccheda» (PDF 80).
 - **La Bhāsāṭīkā:** llama a §24 «paṭisedha-vidhi-sutta» (citada en la nota de §24 de datos.json).
