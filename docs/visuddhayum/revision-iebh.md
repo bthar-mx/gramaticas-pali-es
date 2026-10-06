@@ -2729,3 +2729,195 @@ Decisión: por defecto, pendiente de revisión del IEBH: lo discutido queda fuer
 - **K51**: la conjetura sobre *pasita*, en la nota, sin destacar.
 - Reglas traídas de Nāma, todas en vigor: (a), (b'), (c)–(j); «Funciones donde el libro calla» sin respuesta sugerida; solo [V] en las celdas; lo de un solo lector, rotulado en la nota; las identificaciones [I] y las lecturas de Claude no se publican.
 - **Nuevo en la v0.9, propuesta de Claude**: la celda Ejemplo es un solo campo, que se ve igual en la página española y en la inglesa. En Kāraka se escribe en notación pāḷi («base + sufijo → forma («sutta»)»), sin prosa española, para que la página inglesa no muestre castellano; las glosas y lo narrado en prosa van en la nota, en las dos lenguas.
+
+## L. Samāsa (§316–)
+
+Capítulo 5 del libro, PDF 390–442; nº del libro = § + 172. Preparación del 2026-10-05, antes de la tanda 1: ninguna fila leída todavía. Detalle en `samasa-piloto.md`. Reglas por defecto (a), (b'), (c)–(j), traídas de Nāma, y las asentadas en Kāraka (K9 con su aviso, «cf. §N», «ခွဲ» que no son ejercicio, J17/K4).
+
+L1. **§328 (nº 500, bahubbīhi): el escaneo está incompleto.** Faltan las pp. impresas 373–374 y 379–380, las cuatro dentro de §328 (≈ 4 de sus ≈ 12 páginas [inf]); las pp. 371–372 y 381–382 están dos veces (PDF 417–418 = 425–426; PDF 419–420 = 427–428). El encabezado y el comienzo de §328 están en PDF 415 [img]. Se lee PDF 427–428 y se coteja con 419–420. Opciones: (a) analizar §328 con lo que hay y decir en la nota qué páginas faltan; (b) dejar §328 en espera hasta que aparezca otro ejemplar de esas páginas. En los dos casos la tabla no rellena el hueco. ¿Hay otro ejemplar o escaneo de esas cuatro páginas?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: §328 se publica como PENDIENTE: la fila lleva el texto del sutta y el encabezado de sección como las demás, las celdas vacías, y en Notas: «Pendiente. En el ejemplar escaneado faltan las pp. 373–374 y 379–380 del libro, que caen dentro de este sutta (y las pp. 371–372 y 381–382 aparecen duplicadas). La fila se completará cuando se disponga de esas páginas.» (y su equivalente inglés). No se lee §328: la tanda 4 no se hace.
+
+L2. **El padaṃ del encabezado no coincide con el desglose de Nandisena en cuatro suttas** (leídos a escala completa [img]): §316 (nº 488), el libro no da palabra de padaṃ (N = 3); §324 (nº 496), *dvipadaṃ* (N = 3); §330 (nº 502), *tipadaṃ* (N = 4); §339 (nº 511), *catuppadaṃ* (N = 3). No se corrige ninguno de los dos textos.
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: como J17. El padaṃ se da como está impreso (o su ausencia), con la diferencia en Notas; el desglose de Nandisena no se toca.
+
+L3. **Encabezados abreviados por el libro**: §322 (nº 494), «တထာ ဒွန္ဒေ ပါဏိတူရိယ--», y §323 (nº 495), «ဝိဘာသာ ရုက္ခ တိဏ ပသု-». Como §275 y §277 en Kāraka (K4).
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: como J17/K4. La columna Sutta lleva la grafía de Nandisena; la forma del libro, como está impresa (con «--» / «-»), va en Notas.
+
+L4. **El pariśiṣṭa de Samāsa del índice.** El índice (PDF 003) da «သမာသ်ပရိသိဋ္ဌပိုင်း ... ၃၉၆» (p. 396) [img], pero PDF 442 (p. 396) no lleva ese rótulo: trae (513)–(515), el verso de cierre, la fecha «၀၄-၆-၆ရက်နေ့» y «သမာသ်ပြီး၏။» [img]. Ākhyāta y Taddhita sí tienen página rotulada (PDF 317, PDF 491) [ocr]. No falta ninguna hoja entre las pp. 396 y 397 [img]. ¿Qué quiere decir el índice? ¿Se trata en la tabla, o solo se menciona en la nota de §343?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: no hay en el escaneo nada que analizar como pariśiṣṭa; la nota de §343 describe el cierre de PDF 442 como J20 en §270 y no menciona el pariśiṣṭa.
+
+### Tanda 1 (§316–§320), 2026-10-05
+
+Filas en `samasa-piloto.md`, «Tanda 1 — filas (borrador)». Lector + verificador a ciegas en cada sutta (§316 en dos tramos); ningún prompt llevó OCR ni lectura anterior.
+
+L5. **Ninguno de §316–§320 tiene bloque «(က) ရုပ်»**: los cinco van del encabezado al «(ခ) အဓိပ္ပါယ်» (las dos lecturas de cada uno). Lo que la nota de preparación tomó por un (က) de §316 después del (ခ) (PDF 390, y≈1600) es un enumerador interno del (ခ) («(က) သင်္ဂတတ္ထဝါစက…», seguido de «(ခ) သမ္ဗန္ဓတ္ထဝါစက…» en PDF 391). Consecuencia para K9: la tanda 1 no puede decidir el aviso de Samāsa. El libro no segmenta con «+» en ningún sitio de estos cinco suttas (lo explica en prosa), pero no hay ningún (က) en que comprobarlo. ¿Se espera a la primera tanda con (က), o se adopta ya el aviso de Kāraka con «En Samāsa»?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: resuelto por L9 (aviso de cabecera propio de Samāsa, sin el aviso de la notación «+»).
+
+L6. **§320, la clase.** Las dos lecturas coinciden: «ဤသုတ်အစီအရင်သည် ကာရိယာတိဒေသ မဟုတ်။ ကေဝလ? နပုံသက လိင်္ဂကာရိယ (ဝိဓိ) တည်း။» (PDF 398, y≈1040–1080), y al cierre «… နပုံသက လိင်္ဂကာရိယ သုတ်သာတည်း။». La celda dice «နပုံသက လိင်္ဂကာရိယ (ဝိဓိ)», *napuṃsaka-liṅgakāriya (vidhi)* [V]; la palabra apilada de delante (*kevala*?) la dan con duda las dos lecturas y queda en Notas. ¿Vale así la celda, o prefiere el IEBH solo «vidhi», o la frase entera con «no es kāriyātidesa»? ¿Puede mirar «ကေဝလ» en la imagen?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: la celda como arriba, «နပုံသက လိင်္ဂကာရိယ (ဝိဓိ)»; la palabra apilada de delante no se da: la nota dice que no se lee con seguridad y que queda fuera de la celda (como las dudas solo de Notas, K11…).
+
+L7. **§320, el encabezado.** «သော နပုံသကလိင်္ဂေ။» (lector y verificador de §320) frente a «သော နပုံသကလိင်္ဂေါ။» (lector y verificador de §319, que lo leen como fin de su tramo; y la tabla de encabezados de la preparación). Kaccāyana (Nandisena): *so napuṃsakaliṅgo*. No afecta a ninguna celda. ¿Puede mirarlo el IEBH en PDF 398, y≈955–1003? En la misma fila, la remisión del libro a Pāṇini: «၅၊၄၊၁၀၉» (verificador) o «၇?၊၄၊၁၀၉» (lector); y «ဥပသာရ», como está impreso, ¿por ဥပသဂ္ဂ?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: no se da ninguna de las dos lecturas del encabezado (la columna Sutta sigue a Nandisena, J17); la remisión a Pāṇini se da sin el primer número («…4.109»), diciendo que las lecturas no lo leen igual; «ဥပသာရ» no se publica.
+
+L8. **Formas y nombres de las Notas en que las lecturas no coinciden** (no tocan Clase, Aṅga ni Funciones; van como DUDA en las filas):
+- §316: el nombre del ñāya (က) de PDF 393, y≈390: «တစောသ?ညာယ» (lector) o «တစေသဒ္ဒညာယ» (verificador); «(ယခင်ဋီကာ)» (PDF 394, y≈461): ¿qué obra es?
+- §318: «ဣဒပ္ပစ္စယာ» (lector) o «ဣဒမ္ပစ္စယာ» (verificador) (PDF 395, y≈760–880).
+- §319: sentido (8), pariyanta: «*sāggi» (lector) o «*သာဂရံ» (verificador) (PDF 397); y en el párrafo de la Bhedacintā-dīpanī (PDF 398, y≈700–850): «*adhicittā» (lector) o «*အဇ္ဈတ္တာ» (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: ninguna de las dos lecturas entra en la tabla; la nota publicada no da ninguna y, donde importa, dice que las dos lecturas no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica.
+
+### Tanda 2 (§321–§325), 2026-10-05
+
+Filas en `samasa-piloto.md`, «Tanda 2 — filas (borrador)». Lector + verificador a ciegas en cada sutta; ningún prompt llevó OCR ni lectura anterior. Lector y verificador coinciden en Clase, Aṅga, Funciones y Ejemplo de los cinco: todas vacías porque el libro no las da.
+
+L9. **Tampoco §321–§325 tienen bloque «(က) ရုပ်»**, ni siquiera rótulo «(ခ) အဓိပ္ပါယ်»: los cinco van del encabezado a una prosa de comentario sin rótulos (las diez lecturas). Van diez suttas de Samāsa sin un solo (က), y en ninguno segmenta el libro con «+»: da el vigraha en pāḷi o narra en prosa. Esto refuerza L5: ¿se adopta ya para Samāsa el aviso de Kāraka con «En Samāsa», o se espera todavía al primer (က)? Y, si Samāsa sigue así, ¿conviene que la página de Samāsa diga en la cabecera que el libro no da ni clase ni modelo en la mayoría de sus suttas, para que las filas vacías no parezcan un hueco?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: aviso de cabecera de Samāsa (campo `aviso` de `04-samasa.json`): «En Samāsa el libro casi nunca da modelo (က) ni clase de sutta: explica en prosa. Las celdas vacías no son omisiones; la explicación está en las Notas.» / «In Samāsa the book almost never gives a (က) model or a sutta class: it explains in prose. Empty cells are not omissions; the explanation is in the Notes.» Sin aviso de la notación «+» en Samāsa.
+
+L10. **Lecturas de las Notas en que lector y verificador no coinciden, o que da con duda una sola lectura** (no tocan Clase, Aṅga, Funciones ni Ejemplo; van como DUDA en las filas):
+- §321 (PDF 398–399): «အဝယပ္ပဓာနော», con una sola «va» según el verificador (¿errata del libro por avayava-?); «သင်္ခိပ္ပ», dudoso para el lector.
+- §322 (PDF 399–400): en la estrofa de khuddajantu, «သိယာနဋ္ဌိ» (lector) o «သိယာနင်္ဂိ» (verificador); «မဟိသရဘု» (lector) o «မဟိသရာဘု?» (verificador); la segunda «ekakadukaṃ» de PDF 400, y≈470 («ကေကဒုကံ»?).
+- §323 (PDF 400–402): «ပူဂေါ» (verificador) o «ပူဂီ» (lector); en la estrofa de la Rūpasiddhi, «ဣဝဏ္ဏုဝဏ္ဏကံ» (lector) o una lectura insegura «က္လဝဏ္ဏာ‿ဝဏ္ဏကံ» (verificador); los números de Pāṇini en PDF 401, y≈1000–1250; las dos últimas formas con «\*» de PDF 402 (y≈1450–1480), dudosas en las dos lecturas.
+- §324 (PDF 402–405): «vatthavisesā» (verificador) o «vatthuvisesā» (lector); «sākapatthavādi» (lector) o «sākapatthivādi» (verificador); «နိဂ္ဂဏ္ဍာဒိ» o «နိဂ္ဂဏ္ဌာဒိ»: ¿a qué § remite?; y la obra «ဋီကာကျော်», sin identificar.
+- §325 (PDF 406–407): **«\*catussadaṃ / \*catussadaso» (lector) o «\*catussaccaṃ / \*catussaccadesano» (verificador)** (PDF 407, y≈720–800), la discrepancia de más bulto de la tanda; «tisahassī ca sā» o «ca tā»; la referencia de Pāṇini de «sa napuṃsakaṃ», «2.4.17» (lector) o «၂၊ ၄၊ ၂၅» (verificador).
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: ninguna de las dos lecturas entra en la tabla; la nota publicada no da ninguna y, donde importa, dice que las dos lecturas no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica.
+
+### Tanda 3 (§326–§327), 2026-10-05
+
+Filas en `samasa-piloto.md`, «Tanda 3 — filas (borrador)». Lector + verificador a ciegas en cada sutta (§327 en dos tramos, 409–412 y 412–415); ningún prompt llevó OCR ni lectura anterior. Lectores y verificadores coinciden en Clase, Aṅga, Funciones y Ejemplo de los dos: todas vacías porque el libro no las da. Encabezados y páginas impresas (361–369), donde los ponen las tablas de la nota.
+
+L11. **Tampoco §326–§327 tienen bloque «(က) ရုပ်» ni rótulo «(ခ)»**: van doce suttas de Samāsa sin un solo (က) y sin ninguna segmentación con «+» (las seis lecturas). La pregunta de L5 y L9 sigue abierta: ¿se adopta ya el aviso de Kāraka con «En Samāsa», y conviene que la cabecera de la página de Samāsa diga que el libro no da clase ni modelo en la mayoría de sus suttas? Todavía no se ha leído §328 (tanda 4, en espera de L1).
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: resuelto por L9.
+
+L12. **Lecturas de las Notas en que lector y verificador no coinciden, o que da con duda una sola lectura** (no tocan Clase, Aṅga, Funciones ni Ejemplo; van como DUDA en las filas):
+- §326 (PDF 407–408): ဋ o တ en «ပသဇ္ဇပ္ပ(ဋ/တ)ိသေဓ»: las dos lecturas ven ဋ en PDF 407, y≈1400–1430, y တ en las formas con «\*» de PDF 408, y≈330–540, las dos con duda; en la estrofa de PDF 408, y≈880–980, «brāhmaṇakārakaṃ» (lector) o «ဗြာဟ္မဏကာရဏံ» (verificador), y «jātibrāhmaṇa eva so» (lector) o «ဇာတျာ ဗြာဟ္မဏ ဧဝ သော» (verificador); «မဟာဘာသ» (PDF 409, y≈250): ¿Mahābhāṣya?
+- §327, tramo A (PDF 409–412): «\*ဒွိဇတ္ထ[ာ?]» (PDF 410, y≈1200); «ကေယဋ» / «ကေယျ(ဋ္ဌ)», ¿Kaiyaṭa? (PDF 411, y≈720; 412, y≈1335); la primera sílaba de «[?]ပဏ္ဏာသ» (PDF 412, y≈520); en la estrofa de niddhāraṇa (PDF 412, y≈850–1100), «ဝါတိကေ» o «ဝါတညိကေ», y el comienzo de su glosa, «တိကေ» (dos lecturas) o «ဋီကေ» (una).
+- §327, tramo B (PDF 412–415): «\*rājasabhaṃ» o «\*ရာဇသဘာ»; «\*ပိဋ္ဌသုရံ» o «\*piṇḍasuraṃ»; «\*ကုဋိစ္ဆာယံ» o «\*kuḍḍacchāyaṃ»; «\*ဇလဇ္ဇာလော?» o «\*jalapphālo» (PDF 414, y≈220); «\*ပဘင်္ကရော» o «\*pabhaṅguro» (PDF 415); «\*ပစ္စက္ခာဗုဒ္ဓိ?» o «\*paccakkhabuddhi»; dos formas de la serie de sabhā (PDF 413, y≈440–760) que solo el verificador lee; la remisión a Pāṇini de PDF 413, y≈1530–1560, «၂၄၊၂၇၊၂၄၊၂၅» o «၂၄၊၂၂၊၂၄၊၂၅».
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: ninguna de las dos lecturas entra en la tabla; la nota publicada no da ninguna y, donde importa, dice que las dos lecturas no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica.
+
+### Tanda 5 (§329–§333), 2026-10-05
+
+Filas en `samasa-piloto.md`, «Tanda 5 — filas (borrador)». Lector + verificador a ciegas en cada sutta; ningún prompt llevó OCR ni lectura anterior. Se leyó PDF 427–428 (no 419–420). Lectores y verificadores coinciden en Clase, Aṅga, Funciones y Ejemplo de los cinco: todas vacías porque el libro no las da. Encabezados y páginas impresas (381–388), donde los ponen las tablas de la nota.
+
+L13. **Tampoco §329–§333 tienen bloque «(က) ရုပ်» ni rótulo «(ခ)»**: van diecisiete suttas de Samāsa sin un solo (က) y sin ninguna segmentación con «+» (las diez lecturas). La pregunta de L5, L9 y L11 sigue abierta. Y una nueva: **§333** (nº 505) no tiene comentario propio; solo «အဓိပ္ပါယ်ကို အန္တရသုတ်၌ ပေါင်း၍ဆိုအံ့။» (PDF 434, y≈950–975), «el sentido lo diré junto con él en el *antara-sutta*». Las dos lecturas entienden que es el sutta siguiente, (၅၀၆) = §334, pero el libro no da número. ¿Se pone en el Ejemplo «cf. §334» (regla (h), K1/K16/K39), o se deja en Notas, como ahora, porque la remisión no lleva número? Si el comentario de §334 trata también §333, ¿se resume en la fila de §333, en la de §334 o en las dos?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: §333: Ejemplo vacío; las Notas citan la remisión del libro («အဓိပ္ပါယ်ကို အန္တရသုတ်၌ ပေါင်း၍ဆိုအံ့။») y dicen que no nombra el sutta. La identificación con §334 no se publica (ni en §333 ni en §334). El aviso de cabecera, por L9.
+
+L14. **§331: dos frases con «aṅga» y una con «nimitta» que no son celda.** «ရှေ့နောက် အင်္ဂါ ၂-ပါးစုံသော်လည်း» (PDF 432, y≈470) y «သုတ်အင်္ဂါ စုံသော်လည်း» (433, y≈880): hablan de que las condiciones del sutta están completas, sin lista «aṅga N». Y «… နိမိတ်ဖြစ်သော ဥတ္တရပဒကို နိယတာနိယတ မရွေးရ …» (431, y≈1330–1370): el uttarapada es el nimitta, dicho de paso, sin análisis de funciones ni «ခွဲ». Lector y verificador dejan las celdas vacías; las tres frases van en Notas. ¿Conforme, o quiere el IEBH que «aṅga 2» o «nimitta: uttarapada» entren en alguna celda?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: celdas vacías; las frases en Notas (también la de §336, «… ဟု နိမိတ်နှင့်တကွဆို၏»).
+
+L15. **Lecturas de las Notas en que lector y verificador no coinciden, o que da con duda una sola lectura** (no tocan Clase, Aṅga, Funciones ni Ejemplo; van como DUDA en las filas):
+- §329 (PDF 427–429): «ခဏ္ဍ» o «ခဂ္ဂ» en \*khaṇḍatissaṃ (429, y≈1065); «(ရူပသိဒ္ဓိကို မှီသော မောဂ္ဂလာနဝုတ္တိ)» (428, y≈1160): ¿una obra o dos?; «တံ ကရာဏော» (428, y≈1530); «သုတ်ကြီး» (427, y≈1270): ¿qué sutta?
+- §330 (PDF 429–431), la discrepancia de más bulto de la tanda: **\*mahābalo / \*mahāphalo; \*mahappaṇḍito / \*mahappaññito; \*mahapputto / \*mahappatto; \*mahāvisiṭṭho / \*mahāvisiddho; \*saññābhavo / \*saññābhavīti** (PDF 430); la obra de «balaṃ āyāso upāyāso» (Saccavibhaṅga-aṭṭhakathā o «သဒ္ဓမ္မပဇ္ဇောတိကထာ»); Madhuṭīkā o Mukhamattadīpanī (430); la remisión de PDF 430, y≈1520 («မုဒ္ဓဗောဓ-၃၂၆ … ပါဏိနိ ၉/၃/၄၉», lector, con duda; «Mukhamattadīpanī-32 … Pāṇini 6.3.46», verificador); el nombre de la ṭīkā de PDF 431, y≈1100.
+- §331 (PDF 431–433): «(၎င်းဋီကာ)» o «(ငင်းဋီကာ)» (432, y≈1110); la última forma de la serie bahu- (432, y≈990–1060); samaṇī-/samaṇi-, kumārī-/kumāri-; brahmabandhū-/brahmabandhu-bhariyo (433); los números de Pāṇini (433, y≈1655–1720).
+- §332 (PDF 433–434): **el encabezado (504)**, «ကမ္မဓာရယသညေ စ» (tres lecturas y la tabla) o «ကမ္မဓာရယသညော စ» (una); «Kāmasutta-aṭṭhakathā (၃၀)» o «(၁၀)»; «ဧကမ္မဝဂ္ဂ», así impreso según las dos lecturas: ¿errata por ဧကဓမ္မ-?
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: ninguna de las dos lecturas entra en la tabla; la nota publicada no da ninguna y, donde importa, dice que las dos lecturas no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica.
+
+### Tanda 6 (§334–§338), 2026-10-05
+
+Filas en `samasa-piloto.md`, «Tanda 6 — filas (borrador)». Lector + verificador a ciegas en cada sutta (§337, en dos tramos); ningún prompt llevó OCR ni lectura anterior. Lectores y verificadores coinciden en Clase, Aṅga, Funciones y Ejemplo de los cinco: todas vacías porque el libro no las da. Encabezados (506)–(511) y páginas impresas (388–395), donde los ponen las tablas de la nota. Una sola lectura de página discrepante (490–492 por 390–392 en PDF 436–438, lector del tramo A de §337), desmentida por cuatro lecturas y una quinta a ciegas solo de las cabeceras.
+
+L16. **Veintidós suttas de Samāsa sin un (က)** y sin segmentación con «+» (las doce lecturas de esta tanda). La pregunta de L5, L9, L11 y L13 sigue abierta. Y dos casos de sutta sin comentario propio:
+- **§333 → §334.** El comentario de §334 (nº 506) **no dice** tratar otro sutta (las dos lecturas), pero habla de las voces con *na-* en que «no hay sustitución por a / an»: «a» es la operación de §333 (*attaṃ nassa tappurise*) y «an» la de §334. Que sea el comentario prometido en §333 («… အန္တရသုတ်၌ ပေါင်း၍ဆိုအံ့») es inferencia de Claude [I].
+- **§335 → §336.** §335 (nº 507, *kad kussa*) **no tiene ni una línea**, ni siquiera de remisión (las cuatro lecturas que ven la página). El comentario de §336 (nº 508) empieza por *ku → kad* en sánscrito: que cubra también §335 es inferencia de Claude [I].
+
+¿Se pone algo en el Ejemplo de §333 y §335 («cf. §334», «cf. §336»), o se deja como ahora, en Notas y rotulado [I]? ¿Se resume el comentario en las dos filas o solo en la que lo lleva?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: §333, como L13. §335: celdas vacías; las Notas dicen que el libro no da comentario. Las dos inferencias [I] (§333 → §334, §335 → §336) no se publican; el resumen va solo en la fila que lleva el comentario (§334, §336). El aviso de cabecera, por L9.
+
+L17. **Lecturas de las Notas en que lector y verificador no coinciden, o que da con duda una sola lectura** (no tocan Clase, Aṅga, Funciones ni Ejemplo; van como DUDA en las filas):
+- §334 (PDF 434–435): «အပါသံ့ / အပါသဿံ» en la estrofa de la Mugdhabodha-ṭīkā (434, y≈1205); «တဗ္ဘာဝဟ(?)သည်» (434, y≈1265); la obra de la cita «မဏိဒီပ၌ကား» (435, y≈1300): ¿Maṇidīpa?; «မချက်» (435, y≈855): ¿errata por «မချွတ်»?
+- §336 (PDF 435–436): «*ကတောသဏံ / *ကတောသမံ» (435, y≈1750); «ကဗ္ဗဒေါ / ကဒွဒေါ»; la glosa de *ကာက္ခံ, «ဒင်္ဂါး … ကျွေ» o «ဒဂီး … ဣန္ဒြေ»; **la serie de aṅga, «*ကာဂ္ဂိ၊ *ကဒဂ္ဂိ၊ *ကဝဂ္ဂိ» o «*ကာင်္ဂ, *ကဒင်္ဂ, *ကဝင်္ဂ»** (436, y≈660–710); la de uṇha, en tres grafías (ဏှံ / ဏ် / ဏ္ဏံ); Pāṇini 6.3.104 o 105.
+- §337 (PDF 436–440): *paṇṇabhūmo / *ပဏ္ဍုဘူမော, *kiṇhabhūmo / *ကိဋ္ဌဘူမော (437); el dvanda excluido de go, en tres lecturas (ajassagāvo? / အဇဧဠကဂါဝေါ / ajjhagavo) (438, y≈1060); «*ဝေါ / *ဝါ» (438); kantasakhi / kaṇhasakhā; -rājo / -rājā; uḷārattā / uḷāratto (439); **el sufijo samāsanta tras gandha, i-paccaya (lector, dudoso) o ka-paccaya (verificador)** (440, y≈240–340); Mugdhabodha «?39»; «syā ca»; «ကေဝစနေ».
+- §338 (PDF 440): la primera palabra del párrafo, «ဤဒူတ်သြဒ္ဓါချာ» según las dos lecturas, que ninguna sabe leer (y≈1210); ဧတိဿ / ဧတဿ န္တိ; *setaṅgūkā / *သေတင်္ဂီကာ; *saddhāpakatiko / *သဒ္ဒါပကတိကော; ဆဓာတုရော / ဆမာတုရော.
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: ninguna de las dos lecturas entra en la tabla; la nota publicada no da ninguna y, donde importa, dice que las dos lecturas no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica.
+
+### Tanda 7 (§339–§343), 2026-10-05
+
+Filas en `samasa-piloto.md`, «Tanda 7 — filas (borrador)». Lector + verificador a ciegas en cada sutta; ningún prompt llevó OCR ni lectura anterior. Lectores y verificadores coinciden en Clase, Aṅga, Funciones y Ejemplo de los cinco: todas vacías porque el libro no las da. Encabezados (511)–(515) y páginas impresas (395–396), donde los ponen las tablas de la nota. Una sola lectura de página discrepante (495–496 por 395–396 en PDF 441–442, lector de §340), desmentida por las otras nueve. El encabezado (512) dice «ဓနုမှာ စ», no «စာ» como la tabla de encabezados de `samasa-piloto.md` (las dos lecturas); la tabla no se ha tocado.
+
+L18. **Veintisiete suttas de Samāsa sin un (က)**: con esta tanda, todos los leídos (§316–§327, §329–§343), y en ninguno segmenta el libro con «+» (§339 narra la derivación en prosa). La pregunta de L5, L9, L11, L13 y L16 sobre el aviso de K9 sigue abierta, y ya puede decidirse para todo el capítulo salvo §328. Y una remisión nueva sin número: **§341** (nº 513) acaba en «အကျယ်ကို ဥပသဂ္ဂနိပါတပုဗ္ဗကော၌ ဆိုအပ်ပြီ», «el desarrollo se ha dicho ya en *upasagga-nipāta-pubbako*» (las dos lecturas), que por la tabla de encabezados es el nº 491 = §319 [I]. Como en §333 (L13), no va al Ejemplo. ¿Se pone «cf. §319»?
+
+- [x] Revisado
+
+Decisión: (IEBH, 2026-10-06) decisión del IEBH: §341 → «cf. §319» en el Ejemplo (regla (h), buscando el sutta por sus palabras: «ဥပသဂ္ဂနိပါတပုဗ္ဗကော» = nº 491 = §319). La remisión del libro, citada en Notas. El aviso de cabecera, por L9.
+
+L19. **Lecturas de las Notas en que lector y verificador no coinciden, o que da con duda una sola lectura** (no tocan Clase, Aṅga, Funciones ni Ejemplo; van como DUDA en las filas):
+- §339 (PDF 441): «သတ္တတိ / Suttanti» antes de «ကုသဇာတ်(၂။၇၄)»; el mahāthera «သဒ္ဒ- / သဗ္ဗ-ဂုဏာကရ» (y≈1300); \*tudampati / \*tudampatī; «ဒွန္ဒေ / ဒွန္ဒွေ» en la cita del «သက္ကတ အဘိဓာန်»; «ကပ္ပရာ» en la estrofa de la Kāsikāvutti (y≈700).
+- §340 (PDF 441–442): **si el libro dice «ပါဏိနိကိုမှီ၍»** (verificador) tras la cita «ဓနုသောစ ၅-၄။ ၁၃၂ … ၅၊၄၊၁၃၃» (441, y≈1650–1730); el lector entiende «apoyándose en las formas pāḷi». De eso depende si el libro atribuye la cita a Pāṇini; «ဓန္ဝန္တိ / ဓန္ဝတ္တိ / ဓန္ဝတ္ထိ» en la cita del Candra; «ရှင်း / ရင်း» en la remisión a la Rūpasiddhi-nissaya.
+- §341 (PDF 442): el número del Mugdhabodha, «၃၃၄» o «၃၇၄» (y≈650); «မံဘာဝေါ / မံ့ဘာဝေါ»; «အံပြုမမြဲ / အံပြုမပြု».
+- §342 (PDF 442): la forma con «\*», «\*အသဒ္ဒိ» o «\*အသဒ္ဒံ» (y≈1150–1205); el reparto de «ပါဏိနိ ၂၊၄၁၊၂။ ၁၇၊ ၁၈», que las dos lecturas copian igual y ninguna sabe leer.
+- §343 (PDF 442): el verso 2 del cierre, «ဓေယျပုရေ … ဇဋ္ဌေ … ဝိဇဋိကတော» o «ဇေယျပုရေ … ဇင္ဃေ … ဝိဇဋီကတော» (y≈1925); «မတ္တဟိံသာ / မတ္တဟိသာ»; «နပုံးမငဲ့ / မင့်»; «မုဒ္ဓ- / မုဒ္ဒဗောဓ».
+
+- [ ] Revisado
+
+Decisión: por defecto, pendiente de revisión del IEBH: ninguna de las dos lecturas entra en la tabla; la nota publicada no da ninguna y, donde importa, dice que las dos lecturas no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica.
+
+### Al preparar la v0.10 (2026-10-06)
+
+**Decisiones del IEBH (2026-10-06), aplicadas en `samasa-piloto.md` y en `04-samasa.json`:**
+
+- **L1**: §328 se publica como pendiente (fila con el texto del sutta, celdas vacías y la nota literal de arriba, en las dos lenguas). No se lee §328.
+- **L9** (con L5 y L11): aviso de cabecera de Samāsa, en las dos lenguas, el de arriba; sin aviso de la notación «+».
+- **L18**: §341 → «cf. §319» en el Ejemplo.
+- **L13 / L16**: §333, Ejemplo vacío y la remisión del libro citada en Notas, sin la identificación con §334; §335, vacío, y las Notas dicen que el libro no da comentario.
+- **Tabla de encabezados** de `samasa-piloto.md`: (512) «ဓနုမှာ စာ» → «ဓနုမှာ စ», como leen las dos lecturas de la tanda 7.
+- **L2 / L3**: como J17.
+
+**Lo que sigue por defecto, pendiente de revisión del IEBH:**
+
+- **Discrepancias y dudas en las Notas** (L7, L8, L10, L12, L15, L17, L19): no se da ninguna de las dos lecturas; la nota dice, donde importa, que no leen igual (I17/J1/J12). Lo que da con duda una sola lectura no se publica; lo que da sin duda una sola lectura va rotulado «lectura de un solo lector, sin verificar».
+- **L4**: el pariśiṣṭa no se menciona; la nota de §343 describe el cierre como J20.
+- **L6**: §320, la celda «နပုံသက လိင်္ဂကာရိယ (ဝိဓိ)»; la palabra de delante, fuera.
+- **L14**: celdas vacías; las frases de aṅga y nimitta de §331 y §336, en Notas.
+- **Posibles erratas del libro** («ဧကမ္မဝဂ္ဂ» de §332, «အနဝါဒေသော» de §340): «así impreso», sin conjetura.
+- **Identificaciones** que no son del libro: no se publican (las de §333/§334, §335/§336, el verso de §343 = J20, la obra de «ယခင်ဋီကာ»). Excepción, como en §299 de la v0.9: en §329 la nota añade «(§322 y §323)» tras «Tathā dvande----» y «Vibhāsā rukkha----», comprobado contra el markdown del capítulo; y §341, por L18.
+- **K15**: las páginas impresas no salen en la página.
+- Reglas traídas de Nāma y Kāraka, todas en vigor: (a), (b'), (c)–(j); solo [V] en las celdas; las identificaciones [I] y las lecturas de Claude no se publican.

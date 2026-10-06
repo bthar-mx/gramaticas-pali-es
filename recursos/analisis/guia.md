@@ -46,6 +46,8 @@ En la columna Ejemplo, las marcas significan:
 
 En Kāraka el libro no segmenta con «+»: narra los pasos. La notación «+ / →» de la columna Ejemplo es del IEBH y resume esa narración; las glosas y la narración están en las Notas.
 
+En Kāraka, bajo el texto de cada sutta, una línea rotulada «Según la Visuddhāyuṃ (resumen del IEBH, borrador)» resume en pocas frases lo que el libro dice de ese sutta; es un resumen del IEBH, no texto del libro, y su primera frase aparece también al pasar el ratón por el §.
+
 Las etiquetas como **7.ª** o **5.ª** junto al nimitta son un añadido editorial del IEBH (la inflexión deducida del caso de la palabra), no análisis del libro.
 
 ## 4. Términos técnicos y ejercicios
@@ -122,6 +124,8 @@ Apart from the § and the sutta text, everything comes from the book; where the 
 In the Example column: **underlined** = the letter the operation acts on; **red** = the cause; **highlighted** = the result; **struck through** = what is elided. Tags such as **7.ª** or **5.ª** next to the nimitta are an IEBH editorial addition, not the book's analysis.
 
 In Kāraka the book does not segment with «+»: it narrates the steps. The «+ / →» notation in the Example column is the IEBH's summary of that narration; glosses and narration are in the Notes.
+
+In Kāraka, under the text of each sutta, a line labelled «According to the Visuddhāyuṃ (IEBH summary, draft)» sums up in a few sentences what the book says about that sutta; it is an IEBH summary, not the book's text, and its first sentence also appears when you hover over the §.
 
 ## 4. Technical terms and exercises
 

@@ -107,6 +107,10 @@ def verificar(cap, textos):
             fallos.append("§{0}: la nota no está en las dos lenguas".format(n))
         if s.get("respuesta") and not s.get("ejercicio"):
             fallos.append("§{0}: respuesta sin ejercicio".format(n))
+        # resumen «según la Visuddhāyuṃ» (Kāraka, v0.10): si lo hay, en las dos lenguas
+        res = s.get("resumen")
+        if res is not None and not (res.get("es", "").strip() and res.get("en", "").strip()):
+            fallos.append("§{0}: el resumen no está en español e inglés".format(n))
         if not nfc(s):
             fallos.append("§{0}: texto que no está en NFC".format(n))
     return fallos
@@ -128,7 +132,8 @@ def terminos_de_fila(s, glosario, gre, gfk):
 
 
 def datos_preguntar(meta, filas, glosario):
-    """preguntar.json: el contexto del botón «Preguntar», fila por fila."""
+    """preguntar.json: el contexto del botón «Preguntar», fila por fila.
+    Los campos van uno a uno: el «resumen» de Kāraka (v0.10) no entra."""
     gk = {t["clave"]: t for t in glosario}
     formas = sorted(((f, t["clave"]) for t in glosario for f in t["formas"]), key=lambda x: -len(x[0]))
     gfk = {f.lower(): k for f, k in formas}

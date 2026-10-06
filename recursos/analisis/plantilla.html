@@ -367,6 +367,16 @@ table.an tr.marca{background:var(--hl)}
 table.an td.n{white-space:nowrap}
 table.an td.n a{font-family:var(--mono);font-size:12px;font-weight:700;text-decoration:none;color:var(--nila)}
 table.an td.su{font-style:italic}
+/* resumen de lo que dice la Visuddhāyuṃ (Kāraka, v0.10): una línea bajo el texto del
+   sutta que ocupa el ancho de la fila, para no alargarla en la columna estrecha */
+table.an tr.r.con-resu td{border-bottom:0}
+table.an tr.resu-row td{padding:0 8px 10px;border-bottom:1px solid var(--hair)}
+table.an tr.resu-row:has(+ tr.det-row:not([hidden])) td{border-bottom:0}
+tr.resu-row[hidden]{display:none}
+tr.r:hover + tr.resu-row td{background:var(--hover)}
+tr.r.marca + tr.resu-row td{background:var(--hl)}
+.resu{margin:0;max-width:110ch;font-size:13.5px;line-height:1.5;color:var(--soot)}
+.resu .lbl{font-family:inherit;font-style:italic;font-weight:600;font-size:13px;letter-spacing:0;text-transform:none;color:var(--soot)}
 /* El ejemplo se parte, si hace falta, sólo después de la flecha */
 table.an td.ej{white-space:normal}
 table.an td.ej .nw{white-space:nowrap}
@@ -394,6 +404,10 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
   table.an tr.r{display:grid;grid-template-columns:auto 1fr auto;column-gap:10px}
   table.an td.n,table.an td.su,table.an td.x{grid-row:1}
   table.an td:not(.n):not(.su):not(.x){grid-column:1 / -1}
+  table.an tr.r.con-resu{border-bottom:0}
+  table.an tr.resu-row{border-bottom:1px solid var(--soot);padding:0 0 8px}
+  table.an tr.resu-row td{border:0;padding:0}
+  table.an tr.resu-row td:first-child{display:none}
   table.an td[data-h]::before{content:attr(data-h);display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--soot)}
 }
 </style>
@@ -484,7 +498,7 @@ es:{title:'Análisis de los suttas de Kaccāyana',title_short:'Análisis de los 
     pdf:'La página del PDF del escaneo (página impresa + 46).'},
   guide:'Guía para el estudiante',
   ex:'Ejercicio',show:'ver respuesta',hide:'ocultar respuesta',ans:'Respuesta sugerida (IEBH)',ed:'Añadido editorial del IEBH: inflexión del nimitta, deducida del caso de la palabra. No es análisis del libro.',
-  more:'más',open:'Abrir el aforismo y su traducción',ver:'Versión',rows:n=>n+(n===1?' sutta':' suttas'),
+  more:'más',open:'Abrir el aforismo y su traducción',resu:'Según la Visuddhāyuṃ (resumen del IEBH, borrador)',ver:'Versión',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Borrador.</b> Lectura del texto birmano a partir de un escaneo, cotejada con las imágenes de las páginas.',
   lic:'Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH) a partir de la obra citada. Copyright © 2026 IEBH.',
   cita:'Cita',
@@ -512,7 +526,7 @@ en:{title:'Analysis of the Kaccāyana suttas',title_short:'Analysis of the sutta
     pdf:'The page of the scanned PDF (printed page + 46).'},
   guide:'Student guide',
   ex:'Exercise',show:'show answer',hide:'hide answer',ans:'Suggested answer (IEBH)',ed:'IEBH editorial addition: the inflection of the nimitta, inferred from the case of the word. Not the book\'s analysis.',
-  more:'more',open:'Open the aphorism and its translation',ver:'Version',rows:n=>n+(n===1?' sutta':' suttas'),
+  more:'more',open:'Open the aphorism and its translation',resu:'According to the Visuddhāyuṃ (IEBH summary, draft)',ver:'Version',rows:n=>n+(n===1?' sutta':' suttas'),
   aviso:'<b>Draft.</b> A reading of the Burmese text from a scan, checked against the page images.',
   lic:'Study material of the Instituto de Estudios Buddhistas Hispano (IEBH), based on the work cited. Copyright © 2026 IEBH.',
   cita:'Citation',
@@ -624,8 +638,14 @@ function roles(rs){
     const ca=r[0]==='nimitta'&&r[3]?`<span class="ed" title="${esc(t.ed)}">${CASO[r[3]]||esc(r[3])}</span>`:'';
     return `<span class="rol"><b${RK[r[0]]?` class="gl" tabindex="0" data-g="${RK[r[0]]}"`:''}>${esc(r[0])}:</b>${esc(r[1])}${v}${ca}</span>`}).join('');
 }
+/* resumen (Kāraka, v0.10): *cursiva* del texto → <i>; la primera frase va también
+   en el globo del §, tras «Abrir el aforismo…» */
+const cursiva=s=>esc(s).replace(/\*([^*]+)\*/g,'<i>$1</i>');
+const primeraFrase=s=>((/^(.+?[.!?][»”)]?)(\s|$)/.exec(s)||[0,s])[1]).replace(/\*/g,'');
 function fila(e){
   const t=T[lang];const nota=(e.nota&&e.nota[lang])||'';
+  const resu=(e.resumen&&e.resumen[lang])||'';
+  const tit=t.open+(resu?'\n\n'+t.resu+': '+primeraFrase(resu):'');
   /* la primera frase acaba en «.» o «;» (con su comilla de cierre, si la lleva); no en
      cualquier «»»: si no, una nota que abre con «ca» se queda en «ca» … (v0.4) */
   const prim=nota?((/^(.+?[.;][»”]?)(\s|$)/.exec(nota)||[0,nota])[1]):'';
@@ -636,8 +656,8 @@ function fila(e){
   if(e.respuesta)fun+=`<button class="ver-resp" aria-expanded="false" aria-controls="r${e.n}">${t.show}</button><div class="resp" id="r${e.n}" hidden><span class="lbl">${t.ans}</span>${roles(e.respuesta)}</div>`;
   /* búsqueda: lo que no está a la vista (§, traducción); el resto lo añade buscable() con el texto visible */
   const q=['§'+e.n,e.tr?e.tr[lang]:''].join(' ');
-  return `<tr class="r" id="s${e.n}" data-cap="${e.cap}" data-t="${esc(q)}">
-<td class="n"><a href="${url(e)}" title="${esc(t.open)}">§${e.n}</a></td>
+  return `<tr class="r${resu?' con-resu':''}" id="s${e.n}" data-cap="${e.cap}" data-t="${esc(q)}">
+<td class="n"><a href="${url(e)}" title="${esc(tit)}">§${e.n}</a></td>
 <td class="su">${esc(e.sutta||'')}</td>
 <td class="cl" data-h="${esc(t.h_class)}">${e.clase?txt(e.clase):'—'}</td>
 <td data-h="Aṅga">${e.anuvatti?esc(e.anuvatti):'—'}</td>
@@ -646,6 +666,7 @@ function fila(e){
 <td class="no" data-h="${esc(t.h_notes)}">${nota?esc(corta):'—'}</td>
 <td class="pdf" data-h="${esc(t.h_src)}">PDF ${e.pdf}</td>
 <td class="x">${PREG.ok?`<button class="preg" data-n="${e.n}" aria-label="${esc(t.ask)} §${e.n}" title="${esc(t.ask)}">?</button>`:''}${larga?`<button class="mas" aria-expanded="false" aria-controls="d${e.n}" aria-label="${t.more}" title="${t.more}">▸</button>`:''}</td></tr>
+${resu?`<tr class="resu-row" id="u${e.n}"><td></td><td colspan="8"><p class="resu"><span class="lbl">${esc(t.resu)}.</span> ${cursiva(resu)}</p></td></tr>`:''}
 ${larga?`<tr class="det-row" id="d${e.n}" hidden><td colspan="9"><div class="detalle"><p>${esc(nota)}</p></div></td></tr>`:''}`;
 }
 const abiertos={};
@@ -700,16 +721,18 @@ function textoBuscable(el){if(!el)return '';const w=document.createTreeWalker(el
     const pegar=u===prev&&((LETRA.test(a)&&LETRA.test(z))||CIERRA.test(z)||ABRE.test(a));
     s+=(pegar?'':' ')+v;prev=u}
   return s}
-function buscable(){document.querySelectorAll('#out tr.r').forEach(r=>{const d=r.nextElementSibling;
-  r.dataset.t=norm([r.dataset.t,textoBuscable(r),d&&d.classList.contains('det-row')?textoBuscable(d):''].join(' ')).replace(/\s+/g,' ')})}
+/* la nota entera (d§) y el resumen (u§, Kāraka) van en filas aparte: se buscan por id */
+function buscable(){document.querySelectorAll('#out tr.r').forEach(r=>{const n=r.id.slice(1),d=document.getElementById('d'+n),u=document.getElementById('u'+n);
+  r.dataset.t=norm([r.dataset.t,textoBuscable(r),d?textoBuscable(d):'',u?textoBuscable(u):''].join(' ')).replace(/\s+/g,' ')})}
 function filtrar(){
   const q=norm(document.getElementById('q').value.trim());let n=0;
   const num=/^§?\s*(\d+)$/.exec(q);  /* «30» o «§30»: ese aforismo, no todo texto con un 30 */
   document.querySelectorAll('tr.r').forEach(r=>{
     const ok=(st.cap==='all'||r.dataset.cap===st.cap)&&(!q||(num?r.id==='s'+num[1]:r.dataset.t.includes(q)));
     r.hidden=!ok;if(ok)n++;
-    const d=r.nextElementSibling;const b=r.querySelector('.mas');
-    if(d&&d.classList.contains('det-row'))d.hidden=!ok||!b||b.getAttribute('aria-expanded')!=='true';
+    const k=r.id.slice(1),d=document.getElementById('d'+k),u=document.getElementById('u'+k);const b=r.querySelector('.mas');
+    if(d)d.hidden=!ok||!b||b.getAttribute('aria-expanded')!=='true';
+    if(u)u.hidden=!ok;
   });
   document.querySelectorAll('tr.sec').forEach(s=>{let e=s.nextElementSibling,any=false;while(e&&!e.classList.contains('sec')){if(e.classList.contains('r')&&!e.hidden){any=true;break}e=e.nextElementSibling}s.hidden=!any});
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;const tot=d.querySelectorAll('a[data-c]').length;d.querySelector(':scope>summary .n').textContent=v<tot?v:'';d.classList.toggle('flt',v<tot)});
