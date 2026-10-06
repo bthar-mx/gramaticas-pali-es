@@ -32,7 +32,10 @@
         el § a §1–§270
     14. ejercicios sin lista fija: el sistema no enumera §; un ejercicio de
         Nāma (§66) va marcado y sin respuesta sugerida, como §38
-    15. visesana suelto (§221): el sistema lo describe como lo da la fila */
+    15. visesana suelto (§221): el sistema lo describe como lo da la fila
+    16. ejercicios sin respuesta sugerida (§64, §118, §277): van con
+        «respuesta_sugerida» falso, y la regla 9 sólo remite al botón con
+        verdadero (las comprobaciones, junto a las del 14) */
 
 import { readFileSync } from "node:fs";
 import worker from "./index.js";
@@ -394,6 +397,21 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     comprobar("ejercicio §66 (Nāma): va marcado y sin la respuesta sugerida",
       f66.ejercicio === true && f66.respuesta.length > 0 && ej66.u.includes('"ejercicio":true')
         && !ej66.u.includes(resp.slice(1, -1)) && !ej66.u.includes('"respuesta"'), ej66.u.slice(0, 300));
+    comprobar("y con «respuesta_sugerida» verdadero: la regla 9 puede remitir al botón",
+      ej66.u.includes('"respuesta_sugerida":true'), ej66.u.slice(0, 300));
+    // §64, §118 y §277: ejercicios SIN respuesta sugerida; la regla 9 no debe remitir al botón.
+    for (const n of [64, 118, 277]) {
+      const f = JSON.parse(DATOS).filas[String(n)];
+      const r = await pedirCon({}, { ...P, sutta: n });
+      comprobar("ejercicio §" + n + " sin respuesta sugerida: va con «respuesta_sugerida» falso",
+        f.ejercicio === true && f.respuesta.length === 0 && r.u.includes('"ejercicio":true')
+          && r.u.includes('"respuesta_sugerida":false'), r.u.slice(0, 300));
+    }
+    const nf = await pedirCon({}, P);
+    comprobar("una fila que no es ejercicio no lleva «respuesta_sugerida»",
+      !nf.u.includes("respuesta_sugerida"), nf.u.slice(0, 300));
+    comprobar("la regla 9 remite al botón sólo con «respuesta_sugerida» verdadero",
+      /Sólo si la fila trae «respuesta_sugerida» verdadero, remite a «Respuesta sugerida \(IEBH\)»/.test(nf.sis[0].text));
   }
 
   {

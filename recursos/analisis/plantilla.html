@@ -257,6 +257,24 @@ a.sref:focus-visible,.chip[data-tip]:focus-visible{outline:2px solid var(--harit
 #tip.llano{max-width:min(340px,calc(100vw - 24px));padding:11px 15px;font-size:15px;line-height:1.55}
 #tip.llano p{margin:0}
 #tip.llano i{font-weight:700}
+/* ---------- globo del § (v0.10.1): sustituye al «title» nativo, que era ilegible ----------
+   Va colgado de <body> y en posición fija, de modo que ni .tabla-caja
+   (overflow-x:auto) ni la barra ni la cabecera fijas lo recortan; spColocar()
+   lo mantiene siempre dentro de la ventana. */
+#spop{position:fixed;left:0;top:0;z-index:210;box-sizing:border-box;width:max-content;
+  max-width:min(32rem,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow-y:auto;overscroll-behavior:contain;
+  background:var(--ola-2);color:var(--ink);border:1px solid var(--soot);border-radius:4px;
+  box-shadow:0 10px 32px var(--shadow);padding:14px 18px 13px;
+  font-family:var(--serif);font-size:17px;line-height:1.6;text-align:left;font-style:normal;font-weight:400}
+#spop .sp-n{display:block;font-family:var(--mono);font-size:16px;font-weight:700;color:var(--nila);letter-spacing:.03em;margin:0 0 3px}
+#spop .sp-su{margin:0 0 8px;font-style:italic;font-weight:700;font-size:18px;line-height:1.5}
+#spop .sp-tr{margin:0}
+#spop .sp-res{margin:11px 0 0;padding-top:9px;border-top:1px solid var(--hair);font-size:16px}
+#spop .sp-lbl{display:block;font-style:italic;font-weight:700;color:var(--soot);margin:0 0 2px}
+#spop .sp-ir{margin:12px 0 0;font-size:16px}
+#spop .sp-ir a{color:var(--nila);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+#spop .sp-ir a:hover{color:var(--haritala)}
+#spop .sp-ir a:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
 mark{background:var(--hl);color:inherit;border-radius:2px;box-shadow:inset 0 -1px 0 var(--haritala)}
 .empty{padding:60px 0;text-align:center;color:var(--soot)}
 footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;color:var(--soot);font-size:14px}
@@ -456,6 +474,7 @@ tr.sec h2 .rg{font-family:var(--mono);font-size:11px;color:var(--soot);margin-le
 </main>
 <button id="top-btn" aria-label="↑">↑</button>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
+<div id="spop" role="dialog" aria-modal="false" aria-labelledby="spop-n" hidden><div id="spop-c"></div><p class="sp-ir"><a id="spop-ir" href="#"></a></p></div>
 <dialog id="preg-dlg" aria-labelledby="preg-tit">
   <form method="dialog" id="preg-form">
     <h2 id="preg-tit"></h2><p class="su" id="preg-su"></p>
@@ -639,13 +658,12 @@ function roles(rs){
     return `<span class="rol"><b${RK[r[0]]?` class="gl" tabindex="0" data-g="${RK[r[0]]}"`:''}>${esc(r[0])}:</b>${esc(r[1])}${v}${ca}</span>`}).join('');
 }
 /* resumen (Kāraka, v0.10): *cursiva* del texto → <i>; la primera frase va también
-   en el globo del §, tras «Abrir el aforismo…» */
+   en el globo del § (spHTML) */
 const cursiva=s=>esc(s).replace(/\*([^*]+)\*/g,'<i>$1</i>');
-const primeraFrase=s=>((/^(.+?[.!?][»”)]?)(\s|$)/.exec(s)||[0,s])[1]).replace(/\*/g,'');
+const primeraFrase=s=>cursiva(((/^(.+?[.!?][»”)]?)(\s|$)/.exec(s)||[0,s])[1])).replace(/\*/g,'');
 function fila(e){
   const t=T[lang];const nota=(e.nota&&e.nota[lang])||'';
   const resu=(e.resumen&&e.resumen[lang])||'';
-  const tit=t.open+(resu?'\n\n'+t.resu+': '+primeraFrase(resu):'');
   /* la primera frase acaba en «.» o «;» (con su comilla de cierre, si la lleva); no en
      cualquier «»»: si no, una nota que abre con «ca» se queda en «ca» … (v0.4) */
   const prim=nota?((/^(.+?[.;][»”]?)(\s|$)/.exec(nota)||[0,nota])[1]):'';
@@ -657,7 +675,7 @@ function fila(e){
   /* búsqueda: lo que no está a la vista (§, traducción); el resto lo añade buscable() con el texto visible */
   const q=['§'+e.n,e.tr?e.tr[lang]:''].join(' ');
   return `<tr class="r${resu?' con-resu':''}" id="s${e.n}" data-cap="${e.cap}" data-t="${esc(q)}">
-<td class="n"><a href="${url(e)}" title="${esc(tit)}">§${e.n}</a></td>
+<td class="n"><a href="${url(e)}" data-sp="${e.n}">§${e.n}</a></td>
 <td class="su">${esc(e.sutta||'')}</td>
 <td class="cl" data-h="${esc(t.h_class)}">${e.clase?txt(e.clase):'—'}</td>
 <td data-h="Aṅga">${e.anuvatti?esc(e.anuvatti):'—'}</td>
@@ -671,6 +689,7 @@ ${larga?`<tr class="det-row" id="d${e.n}" hidden><td colspan="9"><div class="det
 }
 const abiertos={};
 function render(){
+  spCerrar();  /* la tabla se rehace: el § del globo deja de existir */
   const t=T[lang];let h='',sb='';
   D.indice.forEach(c=>{
     const filas=F.filter(e=>e.cap===c.clave);
@@ -811,6 +830,82 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-g]');if(a)
 addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});
 document.getElementById('tabla-caja').addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});
 cab.addEventListener('scroll',()=>{if(!tip.matches(':hover'))hideTip()},{passive:true});addEventListener('keydown',e=>{if(e.key==='Escape')hideTip()});
+
+/* ---------- globo del § (v0.10.1) ----------
+   Lo que antes iba en el «title» del enlace, legible: el § y el sutta pāḷi
+   entero; su traducción entera en la lengua de la página; si la fila tiene
+   resumen, su primera frase con su rótulo; y el enlace al aforismo (el mismo
+   destino del §). Todo sale de la fila (D.filas), sin tocar los datos.
+   Ratón: se abre al pasar (con una breve espera) y se cierra al salir, salvo
+   que el puntero pase al globo. Teclado: se abre al enfocar el § y Enter
+   sigue el enlace. Dedo: el primer toque abre el globo y el enlace de dentro
+   navega; un segundo toque en el mismo § también. Esc, un clic o toque fuera
+   lo cierran. Sirve para cualquier fila, presente o futura: se delega en
+   #out y se busca la fila por el número del §. */
+const sp=document.getElementById('spop'),spC=document.getElementById('spop-c'),spIr=document.getElementById('spop-ir');
+let spDe=null,spAbrirT=null,spCerrarT=null,spF=0;
+function spHTML(e){
+  const t=T[lang],tr=(e.tr&&e.tr[lang])||'',resu=(e.resumen&&e.resumen[lang])||'';
+  return `<span class="sp-n" id="spop-n">§${e.n}</span><p class="sp-su">${esc(e.sutta||'')}</p>`+
+    (tr?`<p class="sp-tr">${cursiva(tr)}</p>`:'')+
+    (resu?`<div class="sp-res"><span class="sp-lbl">${esc(t.resu)}</span>${primeraFrase(resu)}</div>`:'');
+}
+function spColocar(){
+  if(!spDe)return;
+  const r=spDe.getBoundingClientRect(),vw=root.clientWidth||innerWidth,vh=innerHeight,m=12,g=8;
+  /* el § ya no se ve (desplazamiento de la página o de la tabla): fuera el globo */
+  if(r.bottom<0||r.top>vh||r.right<0||r.left>vw||!r.width){spCerrar();return}
+  sp.style.maxHeight=(vh-2*m)+'px';
+  const w=sp.offsetWidth,h=sp.offsetHeight;
+  const x=Math.max(m,Math.min(r.left,vw-w-m));
+  let y;
+  if(r.bottom+g+h<=vh-m)y=r.bottom+g;            /* debajo del § */
+  else if(r.top-g-h>=m)y=r.top-g-h;              /* encima */
+  else y=Math.max(m,Math.min(r.bottom+g,vh-h-m)); /* no cabe ni arriba ni abajo: dentro de la ventana */
+  sp.style.left=x+'px';sp.style.top=y+'px';
+}
+function spAbrir(a){
+  clearTimeout(spAbrirT);clearTimeout(spCerrarT);
+  const e=F.find(x=>x.n===+a.dataset.sp);if(!e)return;
+  if(spDe&&spDe!==a)spDe.removeAttribute('aria-describedby');
+  spC.innerHTML=spHTML(e);spIr.textContent=T[lang].open;spIr.href=a.href;
+  spDe=a;a.setAttribute('aria-describedby','spop-c');
+  sp.hidden=false;sp.scrollTop=0;spColocar();
+}
+function spCerrar(){
+  clearTimeout(spAbrirT);clearTimeout(spCerrarT);
+  if(!sp||sp.hidden)return;
+  sp.hidden=true;if(spDe)spDe.removeAttribute('aria-describedby');spDe=null;
+}
+const spProgramarCierre=()=>{clearTimeout(spAbrirT);clearTimeout(spCerrarT);spCerrarT=setTimeout(spCerrar,220)};
+const spEnlace=x=>x&&x.closest?x.closest('#out a[data-sp]'):null;
+document.getElementById('out').addEventListener('mouseover',e=>{
+  const a=spEnlace(e.target);if(!a||!conRaton())return;
+  clearTimeout(spCerrarT);if(spDe===a)return;
+  clearTimeout(spAbrirT);spAbrirT=setTimeout(()=>spAbrir(a),280);
+});
+document.getElementById('out').addEventListener('mouseout',e=>{
+  const a=spEnlace(e.target);if(!a||!conRaton()||a.contains(e.relatedTarget))return;
+  if(e.relatedTarget&&sp.contains(e.relatedTarget)){clearTimeout(spAbrirT);return}
+  spProgramarCierre();
+});
+sp.addEventListener('mouseenter',()=>clearTimeout(spCerrarT));
+sp.addEventListener('mouseleave',e=>{if(conRaton()&&!(spDe&&spDe.contains(e.relatedTarget)))spProgramarCierre()});
+/* teclado: el foco visible abre; al salir del § (y no hacia el globo), se cierra */
+document.getElementById('out').addEventListener('focusin',e=>{const a=spEnlace(e.target);if(a&&a.matches(':focus-visible'))spAbrir(a)});
+document.getElementById('out').addEventListener('focusout',e=>{const a=spEnlace(e.target);
+  if(a&&a===spDe&&!(e.relatedTarget&&sp.contains(e.relatedTarget)))spProgramarCierre()});
+sp.addEventListener('focusout',e=>{if(!(e.relatedTarget&&(sp.contains(e.relatedTarget)||e.relatedTarget===spDe)))spProgramarCierre()});
+/* toque: el primero abre (no navega); Enter (detail 0) y el clic del ratón siguen el enlace */
+document.addEventListener('click',e=>{
+  const a=spEnlace(e.target);
+  if(a){if(e.detail===0||conRaton()||spDe===a)return;e.preventDefault();spAbrir(a);return}
+  if(spDe&&!sp.contains(e.target))spCerrar();
+});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&spDe){const a=spDe,dentro=sp.contains(document.activeElement);spCerrar();if(dentro)a.focus()}});
+const spSeguir=()=>{if(spDe&&!spF)spF=requestAnimationFrame(()=>{spF=0;spColocar()})};
+addEventListener('scroll',spSeguir,{passive:true});addEventListener('resize',spSeguir);
+document.getElementById('tabla-caja').addEventListener('scroll',spSeguir,{passive:true});
 
 /* ---------- «Preguntar» (2026-10-03): /api/preguntar, detrás de Cloudflare Access ----------
    Sin sesión, Access responde con una redirección a su página de acceso; con
