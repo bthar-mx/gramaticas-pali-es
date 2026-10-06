@@ -32,7 +32,10 @@
         el § a §1–§270
     14. ejercicios sin lista fija: el sistema no enumera §; un ejercicio de
         Nāma (§66) va marcado y sin respuesta sugerida, como §38
-    15. visesana suelto (§221): el sistema lo describe como lo da la fila */
+    15. visesana suelto (§221): el sistema lo describe como lo da la fila
+    16. ejercicios sin respuesta sugerida (§64, §118, §277): van con
+        «respuesta_sugerida» falso, y la regla 9 sólo remite al botón con
+        verdadero (las comprobaciones, junto a las del 14) */
 
 import { readFileSync } from "node:fs";
 import worker from "./index.js";
@@ -166,7 +169,7 @@ async function main() {
     const sis = c.body.system[0].text;
     comprobar("la instrucción trae los ejercicios (por la marca de la fila, sin lista de §) y el «No lo sé»",
       sis.includes("las filas con «ejercicio» verdadero; la fila lo dice") && !/«ejercicio» verdadero: §/.test(sis)
-        && sis.includes("«No lo sé»") && sis.includes("«Según la Visuddhāyuṃ (§n)"));
+        && sis.includes("«No lo sé»") && sis.includes("«Según Visuddhāyuṃ (§n)"));
     comprobar("la instrucción describe el visesana suelto como lo da §221",
       sis.includes('§221 [visesana, ca, ""]') && sis.includes("con «visesana» en la primera posición")
         && sis.includes("no digas a qué palabra califica si la fila no lo dice"));
@@ -286,7 +289,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     const t = aplicarTope(cuatro, 100000);
     comprobar("tope: lo que cabe pasa entero", t.paquetes.length === 4 && !t.descartadas.length && !t.recortada);
     const t2 = aplicarTope(cuatro, 7000);
-    comprobar("tope: se cae primero el Nyāsa, luego la Nyāsappadīpikā",
+    comprobar("tope: se cae primero Nyāsa, luego Nyāsappadīpikā",
       t2.descartadas.join() === "nyasa/2,nyasappadipika/2" && t2.paquetes.length === 2, JSON.stringify(t2.descartadas));
     const t3 = aplicarTope(cuatro, 2000);
     comprobar("tope: si ni Sīlānanda cabe sola, se recorta y se dice",
@@ -304,7 +307,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     comprobar("y el orden de OBRAS lo dice: silananda-kacc primero, silananda-rup después",
       OBRAS[0].dir === "silananda-kacc" && OBRAS[1].dir === "silananda-rup", OBRAS.map((o) => o.dir).join());
     const t4 = aplicarTope(grandes);
-    comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo el Nyāsa y el bloque queda por debajo",
+    comprobar("tope por omisión (" + TOPE_TOKENS + "): cae sólo Nyāsa y el bloque queda por debajo",
       total(t4.paquetes) <= TOPE_TOKENS && t4.descartadas.join() === "nyasa/2", total(t4.paquetes) + " " + t4.descartadas);
   }
 
@@ -370,7 +373,7 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
   comprobar("con fuentes cargadas, con_fuentes es true (y sólo un booleano)",
     on.x.con_fuentes === true && off.x.con_fuentes === false, JSON.stringify([on.x.con_fuentes, off.x.con_fuentes]));
   comprobar("en inglés: «Sources consulted» con los nombres ingleses",
-    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on Kaccāyana; U Sīlānanda, classes on the Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
+    en.x.respuesta.endsWith("\n\nSources consulted: U Sīlānanda, classes on Kaccāyana; U Sīlānanda, classes on Rūpasiddhi; Padarūpasiddhi; Nyāsa."), en.x.respuesta);
 
   const vacio = await pedirCon({ FUENTES: kvF(), PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 13 });
   comprobar("encendido, sin paquetes para el §: ni bloque ni línea",
@@ -394,25 +397,48 @@ async function fuentes(env, pedir, bueno, P, leer, poner) {
     comprobar("ejercicio §66 (Nāma): va marcado y sin la respuesta sugerida",
       f66.ejercicio === true && f66.respuesta.length > 0 && ej66.u.includes('"ejercicio":true')
         && !ej66.u.includes(resp.slice(1, -1)) && !ej66.u.includes('"respuesta"'), ej66.u.slice(0, 300));
+    comprobar("y con «respuesta_sugerida» verdadero: la regla 9 puede remitir al botón",
+      ej66.u.includes('"respuesta_sugerida":true'), ej66.u.slice(0, 300));
+    // §64, §118 y §277: ejercicios SIN respuesta sugerida; la regla 9 no debe remitir al botón.
+    for (const n of [64, 118, 277]) {
+      const f = JSON.parse(DATOS).filas[String(n)];
+      const r = await pedirCon({}, { ...P, sutta: n });
+      comprobar("ejercicio §" + n + " sin respuesta sugerida: va con «respuesta_sugerida» falso",
+        f.ejercicio === true && f.respuesta.length === 0 && r.u.includes('"ejercicio":true')
+          && r.u.includes('"respuesta_sugerida":false'), r.u.slice(0, 300));
+    }
+    const nf = await pedirCon({}, P);
+    comprobar("una fila que no es ejercicio no lleva «respuesta_sugerida»",
+      !nf.u.includes("respuesta_sugerida"), nf.u.slice(0, 300));
+    comprobar("la regla 9 remite al botón sólo con «respuesta_sugerida» verdadero",
+      /Sólo si la fila trae «respuesta_sugerida» verdadero, remite a «Respuesta sugerida \(IEBH\)»/.test(nf.sis[0].text));
   }
 
   {
     // §271 en adelante: las fuentes no tienen tope; lo que falta es la fila.
-    const TEXTOS3 = { "silananda-kacc/280": "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 40; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-280" };
+    // El § sin fila se calcula: el siguiente al último que trae preguntar.json
+    // (era §280, y dejó de valer cuando Kāraka entró en la página, v0.9).
+    const filas = JSON.parse(DATOS).filas;
+    const nSin = Math.max(...Object.keys(filas).map(Number)) + 1;
+    const TEXTOS3 = { "silananda-kacc/280": "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 40; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-280",
+                      ["silananda-kacc/" + nSin]: "fuente: U Sīlānanda, Kaccāyana classes; transcripción automática, editada; clase 41; ninguno; CC BY-NC-ND 4.0 © IEBH\nSECRETO-SIN-FILA" };
     const kv3 = { async get(k) { return TEXTOS3[k] ?? null; } };
     const { leerFuentes } = await import("./fuentes.js");
     const l = await leerFuentes({ FUENTES: kv3 }, 280);
     comprobar("§280: leerFuentes trae silananda-kacc/280",
       l.length === 1 && l[0].clave === "silananda-kacc/280" && l[0].obra.nombre === "U Sīlānanda, clases de Kaccāyana", JSON.stringify(l.map((p) => p.clave)));
-    const sin = await pedirCon({ FUENTES: kv3, PREGUNTAR_FUENTES: "on" }, { ...P, sutta: 280 });
-    comprobar("§280 sin fila en preguntar.json → 404 y la API no se llama (el único límite son los datos de la página)",
+    const l2 = await leerFuentes({ FUENTES: kv3 }, nSin);
+    comprobar("§" + nSin + " (aún sin fila): el KV tiene fuente y preguntar.json no tiene la fila",
+      l2.length === 1 && !filas[String(nSin)], JSON.stringify(l2.map((p) => p.clave)));
+    const sin = await pedirCon({ FUENTES: kv3, PREGUNTAR_FUENTES: "on" }, { ...P, sutta: nSin });
+    comprobar("§" + nSin + " sin fila en preguntar.json → 404 y la API no se llama (el único límite son los datos de la página)",
       sin.r.status === 404 && !sin.c, sin.r.status);
   }
 
   const sis = base.c.body.system[0].text;
   comprobar("la instrucción trae las reglas de las fuentes",
-    sis.includes("«Según la Rūpasiddhi…»") && sis.includes("(clase N, mm:ss)")
-      && sis.includes("nunca atribuyas a la Visuddhāyuṃ la opinión de otra obra")
+    sis.includes("«Según Rūpasiddhi…»") && sis.includes("(clase N, mm:ss)")
+      && sis.includes("nunca atribuyas a Visuddhāyuṃ la opinión de otra obra")
       && sis.includes("unas 15 palabras") && sis.includes("«texto con ruido de OCR: no citar textualmente»")
       && sis.includes("están en inglés: resúmelas") && sis.includes("«Las fuentes consultadas no tratan este punto»")
       && sis.includes("tampoco se resuelven con las fuentes"));

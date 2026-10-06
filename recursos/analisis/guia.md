@@ -2,7 +2,7 @@
 
 ## 1. Qué es esta página
 
-La página [Análisis de los suttas de Kaccāyana](https://gramaticas.buddha-dhamma.net/recursos/analisis/) muestra cada sutta de Kaccāyana tal como lo analiza la *Visuddhāyuṃ Kaccāyana-ṭīkā* de Ashin Aggañāṇābhivaṃsa (Mandalay, 2004), una guía de estudio en birmano, sutta por sutta.
+La página [Análisis de los suttas de Kaccāyana](https://gramaticas.buddha-dhamma.net/recursos/analisis/) muestra cada sutta de Kaccāyana tal como lo analiza *Visuddhāyuṃ Kaccāyana-ṭīkā* de Ashin Aggañāṇābhivaṃsa (Mandalay, 2004), una guía de estudio en birmano, sutta por sutta.
 
 Para cada sutta encontrará, en una fila de la tabla: la clase de sutta, su aṅga, la función de cada palabra y el ejemplo del modelo de derivación. La etiqueta de versión, arriba de la tabla, indica qué capítulos y suttas están ya publicados; los demás capítulos figuran en el índice como «pendiente».
 
@@ -20,7 +20,7 @@ Es un **borrador**: una lectura del texto birmano a partir de un escaneo, coteja
 | ES / EN | Junto a la versión | Cambiar la lengua de la página (español o inglés). |
 | ↑ | Abajo a la derecha, al bajar | Volver al principio de la página. |
 
-La tabla tiene más columnas de las que caben en una pantalla normal: desplácela hacia la derecha para ver **Notas** y **Fuente**. En el móvil, cada fila se muestra como una ficha.
+La tabla tiene más columnas de las que caben en una pantalla normal: desplácela hacia la derecha para ver **Notas** y **Fuente**. Los botones ▸ (abrir la nota entera) y ? (Preguntar) no exigen desplazarse: están en la columna **Notas · Preguntar**, junto al sutta. En el móvil, cada fila se muestra como una ficha, con esos botones justo bajo el texto del sutta.
 
 ## 3. Cómo leer una fila
 
@@ -28,13 +28,14 @@ Cada fila es un sutta. Salvo el § y el texto del sutta, todo lo que ve procede 
 
 | Columna | Qué contiene |
 | --- | --- |
-| § | Número del sutta. Al pulsarlo se abre el aforismo con su traducción en este sitio. |
+| § | Número del sutta. Al pasar el ratón (o con un primer toque) muestra el sutta, su traducción y, si lo hay, el resumen; al pulsarlo se abre el aforismo con su traducción en este sitio. |
 | Sutta | El texto pāḷi del sutta, según la edición de U Nandisena. |
+| Notas · Preguntar | ▸ abre las notas de la fila; ? pregunta a la IA sobre este aforismo (requiere acceso). La respuesta de la IA es orientativa: no es palabra del libro. |
 | Clase de sutta | La clase que le da el libro, en pāḷi o en birmano, tal como está impresa. |
 | Aṅga | Las palabras que el libro enumera como miembros (aṅga) del sutta, tal como las imprime. |
 | Funciones | La función de cada palabra: kāriyī, kāriya, nimitta, saññā / saññī, visaya / visayī; el visesana va entre corchetes. |
 | Ejemplo | El ejemplo del modelo de derivación (rup) que da el libro. |
-| Notas | La primera frase de la nota; pulse ▸ para leerla entera. |
+| Notas | La primera frase de la nota; pulse ▸ (columna «Notas · Preguntar») para leerla entera. |
 | Fuente | La página del PDF del escaneo (página impresa + 46). |
 
 En la columna Ejemplo, las marcas significan:
@@ -46,7 +47,7 @@ En la columna Ejemplo, las marcas significan:
 
 En Kāraka el libro no segmenta con «+»: narra los pasos. La notación «+ / →» de la columna Ejemplo es del IEBH y resume esa narración; las glosas y la narración están en las Notas.
 
-En Kāraka, bajo el texto de cada sutta, una línea rotulada «Según la Visuddhāyuṃ (resumen del IEBH, borrador)» resume en pocas frases lo que el libro dice de ese sutta; es un resumen del IEBH, no texto del libro, y su primera frase aparece también al pasar el ratón por el §.
+En Kāraka, bajo el texto de cada sutta, una línea rotulada «Según Visuddhāyuṃ (resumen del IEBH, borrador)» resume en pocas frases lo que el libro dice de ese sutta; es un resumen del IEBH, no texto del libro, y su primera frase aparece también al pasar el ratón por el §.
 
 Las etiquetas como **7.ª** o **5.ª** junto al nimitta son un añadido editorial del IEBH (la inflexión deducida del caso de la palabra), no análisis del libro.
 
@@ -69,7 +70,7 @@ Si encuentra algo que le parezca un error, anótelo con el § y la página del P
 
 **Cómo citar esta página**:
 
-> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā*, versión [la que muestra la etiqueta] (borrador), [año], §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
+> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según Visuddhāyuṃ Kaccāyana-ṭīkā*, versión [la que muestra la etiqueta] (borrador), [año], §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
 
 Indique siempre la versión, porque el borrador cambia.
 
@@ -88,7 +89,7 @@ Indique siempre la versión, porque el borrador cambia.
 
 ## 1. What this page is
 
-The page [Analysis of the Kaccāyana suttas](https://gramaticas.buddha-dhamma.net/recursos/analisis/) shows each Kaccāyana sutta as the *Visuddhāyuṃ Kaccāyana-ṭīkā* by Ashin Aggañāṇābhivaṃsa (Mandalay, 2004) analyses it. That book is a Burmese study guide that goes sutta by sutta.
+The page [Analysis of the Kaccāyana suttas](https://gramaticas.buddha-dhamma.net/recursos/analisis/) shows each Kaccāyana sutta as *Visuddhāyuṃ Kaccāyana-ṭīkā* by Ashin Aggañāṇābhivaṃsa (Mandalay, 2004) analyses it. That book is a Burmese study guide that goes sutta by sutta.
 
 Each table row gives one sutta: its class, its aṅga, the role of each word and the example of the model derivation. The version label above the table says which chapters and suttas are published so far; the other chapters are marked «pending» in the index. It is a **draft**: a reading of the Burmese text from a scan, checked against the page images.
 
@@ -104,7 +105,7 @@ Each table row gives one sutta: its class, its aṅga, the role of each word and
 | ES / EN | Next to the version | Switch the page language. |
 | ↑ | Bottom right, once you scroll | Back to the top. |
 
-The table is wider than most screens: scroll it to the right to see **Notes** and **Source**. On phones each row is shown as a card.
+The table is wider than most screens: scroll it to the right to see **Notes** and **Source**. The ▸ (whole note) and ? (Ask) buttons need no scrolling: they are in the **Notes · Ask** column, next to the sutta. On phones each row is shown as a card, with those buttons right under the sutta text.
 
 ## 3. Reading a row
 
@@ -112,20 +113,21 @@ Apart from the § and the sutta text, everything comes from the book; where the 
 
 | Column | What it holds |
 | --- | --- |
-| § | The sutta number; click it to open the aphorism and its translation on this site. |
+| § | The sutta number. Hover over it (or tap it once) to see the sutta, its translation and, if there is one, the summary; click it to open the aphorism and its translation on this site. |
 | Sutta | The Pāḷi text of the sutta, following U Nandisena's edition. |
+| Notes · Ask | ▸ opens the row's notes; ? asks the AI about this aphorism (access required). The AI's answer is a guide, not the book's word. |
 | Sutta class | The class the book gives, in Pāḷi or Burmese, as printed. |
 | Aṅga | The words the book lists as members (aṅga) of the sutta, as printed. |
 | Roles | Each word's role: kāriyī, kāriya, nimitta, saññā / saññī, visaya / visayī; a visesana is shown in brackets. |
 | Example | The book's example of the model derivation (rup). |
-| Notes | The note's first sentence; click ▸ for the whole note. |
+| Notes | The note's first sentence; click ▸ (column «Notes · Ask») for the whole note. |
 | Source | The page of the scanned PDF (printed page + 46). |
 
 In the Example column: **underlined** = the letter the operation acts on; **red** = the cause; **highlighted** = the result; **struck through** = what is elided. Tags such as **7.ª** or **5.ª** next to the nimitta are an IEBH editorial addition, not the book's analysis.
 
 In Kāraka the book does not segment with «+»: it narrates the steps. The «+ / →» notation in the Example column is the IEBH's summary of that narration; glosses and narration are in the Notes.
 
-In Kāraka, under the text of each sutta, a line labelled «According to the Visuddhāyuṃ (IEBH summary, draft)» sums up in a few sentences what the book says about that sutta; it is an IEBH summary, not the book's text, and its first sentence also appears when you hover over the §.
+In Kāraka, under the text of each sutta, a line labelled «According to Visuddhāyuṃ (IEBH summary, draft)» sums up in a few sentences what the book says about that sutta; it is an IEBH summary, not the book's text, and its first sentence also appears when you hover over the §.
 
 ## 4. Technical terms and exercises
 
@@ -141,7 +143,7 @@ Only what two independent readings have checked against the page images reaches 
 
 **How to cite this page**:
 
-> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según la Visuddhāyuṃ Kaccāyana-ṭīkā*, version [as shown on the label] (draft), [year], §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
+> Instituto de Estudios Buddhistas Hispano (IEBH). *Análisis de los suttas de Kaccāyana según Visuddhāyuṃ Kaccāyana-ṭīkā*, version [as shown on the label] (draft), [year], §N. https://gramaticas.buddha-dhamma.net/recursos/analisis/
 
 Always give the version: the draft changes.
 
