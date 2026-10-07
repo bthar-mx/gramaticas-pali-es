@@ -639,6 +639,13 @@ Taddhita (§344–§405): capítulo 6 del libro; nº del libro = § + 172, PDF 4
 pariśiṣṭa PDF 491–493 (pp. 445–447), sin numerar; escaneo sin defectos. Detalle
 en `docs/visuddhayum/taddhita-piloto.md`.
 
+Ākhyāta (§406–§523): nº del libro = § − 136, PDF 224–316, cuatro partes
+(§406–431, 432–457, 458–481, 482–523, = kaṇḍa de Nandisena); §424–§430 sin
+encabezado (bloque 243–244); números mal impresos: §420 «274», §456 «340»,
+§457 «341»; pariśiṣṭa PDF 317 (p. 271), clasificación de los suttas;
+ensayo «အာချာတ်ဂိုဏ်း» PDF 318–321; escaneo sin defectos. Detalle en
+`docs/visuddhayum/akhyata-piloto.md`.
+
 ### Formato de los datos
 
 `recursos/analisis/datos/NN-<obra>.json`: cabecera (`clave`, `md`, `pali`,
