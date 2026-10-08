@@ -34,7 +34,7 @@ pulsa:
 | capítulos (ES y EN) | `#lang-btn` (enlace a la otra URL; guarda `pali_lang` y conserva el `#ancla`) | `#dark-btn` → `body.dark` |
 | portada, /kaccayana/, /recursos/ | `#lang-btn` → `body.en` | `#dark-btn` → `body.dark` |
 | solucionador, paradigmas, raíces | `#en-btn` | `#theme` → `html[data-theme]` |
-| glosario | `#b-es` / `#b-en` | `#theme` (clave propia `tema`) |
+| glosario | `#b-es` / `#b-en` | `#theme` (`pali_dark` desde la etapa 4a; antes, clave propia `tema`) |
 | verbo | `#langToggle` | `#themeToggle` (sistema si no se eligió) |
 | clasificación, análisis, su guía, comentarios | `#lang-btn` | `#theme` |
 | sandhi, casos | **Solo en español** | `#theme` |
@@ -63,6 +63,8 @@ sutta, `/s/N/` (véase `etapa-2-hub.md`).
 En la portada, la caja grande usa la misma función. Una palabra no se busca
 —no hay todavía búsqueda en todo el sitio— y la caja lo dice: «La búsqueda en
 todo el sitio llega en una etapa posterior», con el enlace a los recursos.
+Desde la etapa 4a, una palabra, en las dos cajas, va a `/buscar/?q=…`
+(véase `etapa-4a-busqueda.md`).
 
 ## Lo que se quitó (porque la barra lo hace)
 
@@ -122,6 +124,7 @@ no tenía el suyo.
 
 - El glosario guarda el tema con su clave propia `tema`, no con `pali_dark`
   (era así antes de esta etapa): la barra lo acciona bien, pero el tema
-  elegido allí no viaja al resto del sitio ni al revés.
+  elegido allí no viaja al resto del sitio ni al revés. Resuelto en la etapa
+  4a: ahora usa `pali_dark` (`etapa-4a-busqueda.md`).
 - Etapa 2: hecha (`etapa-2-hub.md`).
 - Etapa 3: la fila de enlaces de cada tarjeta de sutta.

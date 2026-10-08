@@ -124,7 +124,7 @@
     if (cab.classList.contains('cab-abierta') && !cab.contains(e.target)) abrir(false);
   });
 
-  /* ── Ir a § ─────────────────────────────────────────────────────── */
+  /* ── Ir a § o buscar ─────────────────────────────────────────────────── */
   var SECCIONES = null, cargando = null;
   function cargar() {
     if (SECCIONES) return Promise.resolve(SECCIONES);
@@ -148,27 +148,28 @@
     return BASE + (en ? 'en/' : '') + 's/' + n + '/';
   }
 
-  function avisar(form, texto, enlace) {
+  /* Lo que no es un número va a la búsqueda en todo el sitio (etapa 4a,
+     2026-10-08): /buscar/?q=… o /en/buscar/?q=…, que escribe
+     generar_busqueda.py. El índice lo carga esa página, no ésta. */
+  function destinoBusqueda(q, l) {
+    return BASE + (l === 'en' ? 'en/' : '') + 'buscar/?q=' + encodeURIComponent(q);
+  }
+
+  function avisar(form, texto) {
     var a = form.querySelector('.cab-aviso, .ir-aviso');
     if (!a) return;
     a.textContent = texto;
-    if (enlace) {
-      a.appendChild(document.createTextNode(' '));
-      var e = document.createElement('a');
-      e.href = BASE + 'recursos/' + (idioma() === 'en' ? '?lang=en' : '');
-      e.textContent = t('ver_recursos');
-      a.appendChild(e);
-    }
     a.hidden = false;
   }
 
   function ir(form) {
     var input = form.querySelector('input');
-    var v = (input && input.value || '').replace(/[§\s.]/g, '');
+    var crudo = (input && input.value || '').replace(/\s+/g, ' ').trim();
+    var v = crudo.replace(/[§\s.]/g, '');
     if (!v) { input && input.focus(); return; }
     if (!/^\d+$/.test(v)) {
-      if (form.hasAttribute('data-palabras')) avisar(form, t('palabras'), true);
-      else avisar(form, t('no_numero'));
+      abrir(false);
+      location.href = destinoBusqueda(crudo, idioma());
       return;
     }
     var n = parseInt(v, 10);
