@@ -43,6 +43,7 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from generar_clasificacion import leer_md  # noqa: E402
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIR = os.path.join(RAIZ, "recursos", "analisis")
@@ -306,9 +307,11 @@ def main():
     html = pl[:m.start()] + datos + pl[m.end():]
     html = html.replace("__VERSION_DATE__", meta["fecha"]).replace("__VERSION__", meta["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "analisis"))  # la barra común del sitio
     os.makedirs(os.path.dirname(GUIA_DESTINO), exist_ok=True)
-    open(GUIA_DESTINO, "w", encoding="utf-8").write(pagina_guia)
+    open(GUIA_DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(pagina_guia, "analisis-guia"))
     with open(PREGUNTAR, "w", encoding="utf-8") as f:
         json.dump(datos_preguntar(meta, filas, glosario), f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")

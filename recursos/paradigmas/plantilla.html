@@ -46,7 +46,7 @@ body{
 .wrap{max-width:980px;margin:0 auto;padding:0 22px}
 
 /* ---------- barra lateral ---------- */
-.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
+.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;
   background:var(--ola-2);border-right:1px solid var(--hair);
   /* Sitio arriba para el ☰ que pliega el índice. */
   padding:54px 0 48px}
@@ -91,7 +91,7 @@ html.sin-barra .sidebar{transform:translateX(-100%)}
    de su esquina: parece un solo botón aunque sean dos, y se pulsa en el
    mismo sitio para plegar y para devolver. Sólo se ve cuando la barra
    está plegada. */
-#volver-barra{position:fixed;left:14px;top:14px;
+#volver-barra{position:fixed;left:14px;top:calc(var(--cabecera-h,0px) + 14px);
   z-index:56;display:none;align-items:center;
   font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
   background:var(--ola-2);color:var(--soot);
@@ -157,7 +157,7 @@ h1 .dia{color:var(--haritala)}
 .hero .ref{color:var(--soot);font-size:10.5px}
 
 /* ---------- controls ---------- */
-.bar{position:sticky;top:0;z-index:20;background:var(--ola);
+.bar{position:sticky;top:var(--cabecera-h,0px);z-index:20;background:var(--ola);
      border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
 .bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 input[type=search]{
@@ -411,7 +411,6 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <header>
   <div class="wrap mast">
     <div>
-      <a class="volver-sitio" href="../"><span class="i-es">← Recursos · Gramáticas Pāḷi</span><span class="i-en">← Resources · Pāḷi Grammars</span></a>
       <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
       <h1><span class="i-es">Paradigmas de declinaci<span class="dia">ó</span>n</span><span class="i-en">Declension paradigms</span></h1>
       <p class="tag i-es">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>

@@ -36,6 +36,7 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from generar_capitulo import CAPITULOS  # noqa: E402
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIR = os.path.join(RAIZ, "recursos", "comentarios")
@@ -264,7 +265,8 @@ def main():
     salida = pl[:m.start()] + js + pl[m.end():]
     salida = salida.replace("__VERSION_DATE__", meta["fecha"]).replace("__VERSION__", meta["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(salida)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(salida, "comentarios"))  # la barra común del sitio
     print("Comentarios de Kaccāyana v{0} ({1}) · {2} obras · {3} con material del sitio → {4}".format(
         meta["version"], meta["estado"], n_filas, sum(usados.values()), os.path.relpath(DESTINO, RAIZ)))
     return 0
