@@ -69,6 +69,14 @@ ES 492 KB, EN 501 KB (unos 130 KB comprimidos). Se descarga sólo al buscar.
   de una palabra del título, dentro del título, y por último en el texto o las
   claves. Un poco por delante lo que coincide con los diacríticos tal como se
   escribieron (bhū antes que bhu). Un número pone primero ese §.
+- En Suttas, además, lo que coincide en el título o en la línea de traducción
+  va antes que lo que sólo coincide en las palabras de los ejemplos, que son
+  claves que no se ven (pedido del IEBH en la revisión de la PR).
+- Los grupos no van en un orden fijo: salen por su mejor coincidencia, de
+  modo que el que tiene el título exacto va primero («bhū» → Raíces, con la
+  raíz bhū arriba; «kāraka» → Glosario, con el término kāraka arriba). Un
+  número pone Suttas delante. A igualdad, el orden Suttas · Glosario ·
+  Raíces · Paradigmas · Recursos. (Pedido del IEBH en la revisión.)
 - 20 por grupo y «Ver N más». La búsqueda queda en la dirección (`?q=`). Sin
   resultados, lo dice y sugiere probar sin diacríticos o con un número de §.
 - Teclado: ↓ de la caja a los resultados, ↑ ↓ entre ellos, Esc a la caja.

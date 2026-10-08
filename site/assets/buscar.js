@@ -13,6 +13,9 @@
      ṃ = m, ñ = n…), sin puntuación. generar_busqueda.norm() hace lo mismo
      con las claves del índice; si se cambia una, hay que cambiar la otra.
    · La búsqueda queda en la dirección (?q=) para poder compartirla.
+   · Los grupos salen por su mejor coincidencia, no en un orden fijo; en
+     Suttas, lo que se ve (título, traducción) antes que lo que sólo está en
+     las palabras de los ejemplos (véase buscar()).
    · Los borradores no traen texto al índice: sólo su título, y la
      clasificación y el análisis, los § que cubren (véase porNumero()). */
 (function () {
@@ -119,7 +122,7 @@
       var base = t.replace(/^§\d+\s+/, '').replace(/^[^·]*·\s+/, '').replace(/\s*\([^)]*\)\s*$/, '');
       return {
         g: tipos[e[0]], t: t, x: x, u: e[3], b: !!e[5], i: i,
-        nt: nt, resto: nx + ' ' + (e[4] || ''),
+        nt: nt, nx: nx, resto: nx + ' ' + (e[4] || ''),
         nucleo: base.split(' / ').map(norm),
         bruto: t.normalize('NFC').toLowerCase()
       };
@@ -130,8 +133,11 @@
   function inicioDePalabra(s, at) { return at === 0 || s.charAt(at - 1) === ' '; }
   function finDePalabra(s, at) { return at === s.length || s.charAt(at) === ' '; }
 
+  /* Devuelve {p, vis}: la puntuación (0 si falta alguna palabra) y si todas
+     las palabras están a la vista —en el título o en el texto corto—, no
+     sólo en las claves ocultas (las palabras de los ejemplos de un sutta). */
   function puntuar(e, tokens, qn, qbruto) {
-    var p = 0;
+    var p = 0, vis = true;
     for (var i = 0; i < tokens.length; i++) {
       var tk = tokens[i], at = e.nt.indexOf(tk);
       if (at >= 0) {
@@ -147,13 +153,14 @@
         p += mejor;
       } else {
         at = e.resto.indexOf(tk);
-        if (at < 0) return 0;            /* todas las palabras han de estar */
+        if (at < 0) return null;         /* todas las palabras han de estar */
+        if (e.nx.indexOf(tk) < 0) vis = false;
         p += inicioDePalabra(e.resto, at) ? (finDePalabra(e.resto, at + tk.length) ? 10 : 8) : 3;
       }
     }
     if (e.nt === qn || e.nucleo.indexOf(qn) >= 0) p += 500;
     if (qbruto && e.bruto.indexOf(qbruto) >= 0) p += 5;   /* con sus diacríticos */
-    return p - e.nt.length / 100;
+    return { p: p - e.nt.length / 100, vis: vis };
   }
 
   /* Un número: el § publicado primero, y detrás los dos borradores que
@@ -175,24 +182,38 @@
     var grupos = {};
     idx.tipos.forEach(function (t) { grupos[t] = []; });
     idx.e.forEach(function (e) {
-      var p = puntuar(e, tokens, qn, qbruto);
-      if (p > 0) grupos[e.g].push({ e: e, p: p });
+      var r = puntuar(e, tokens, qn, qbruto);
+      if (r && r.p > 0) grupos[e.g].push({ e: e, p: r.p, vis: r.vis });
     });
     var num = /^\d+$/.test(qn) ? parseInt(qn, 10) : null;
+    /* Dentro de cada grupo, la mejor primero. En Suttas, además, lo que
+       coincide en el título o en la línea de traducción va antes que lo que
+       sólo coincide en las palabras de los ejemplos, que no se ven. */
+    var mejor = {};
     idx.tipos.forEach(function (t) {
       var l = grupos[t];
       if (num !== null && t === 'suttas') {
         l.forEach(function (r) { if (r.e.t.indexOf('§' + num + ' ') === 0) r.p += 10000; });
       }
-      l.sort(function (a, b) { return b.p - a.p || a.e.i - b.e.i; });
+      l.sort(function (a, b) {
+        if (t === 'suttas' && a.vis !== b.vis) return a.vis ? -1 : 1;
+        return b.p - a.p || a.e.i - b.e.i;
+      });
+      mejor[t] = l.reduce(function (m, r) { return Math.max(m, r.p); }, -Infinity);
       grupos[t] = l.map(function (r) { return r.e; });
+    });
+    /* Los grupos, por su mejor coincidencia: el que tiene el título exacto
+       (bhū → Raíces, kāraka → Glosario) va primero. Un número pone Suttas
+       delante (el § lleva +10000). A igualdad, el orden fijo de los tipos. */
+    var orden = idx.tipos.slice().sort(function (a, b) {
+      return (mejor[b] - mejor[a]) || (idx.tipos.indexOf(a) - idx.tipos.indexOf(b));
     });
     if (num !== null) {
       var extra = porNumero(num, idx);
       var l = grupos.suttas, k = (l.length && l[0].t.indexOf('§' + num + ' ') === 0) ? 1 : 0;
       grupos.suttas = l.slice(0, k).concat(extra, l.slice(k));
     }
-    return { grupos: grupos, tokens: tokens };
+    return { grupos: grupos, tokens: tokens, orden: orden };
   }
 
   /* ── Pintar ────────────────────────────────────────────────────── */
@@ -230,13 +251,13 @@
     res.innerHTML = '';
     if (!r) { estado.textContent = ''; return; }
     var total = 0;
-    INDICE.tipos.forEach(function (t) { total += r.grupos[t].length; });
+    r.orden.forEach(function (t) { total += r.grupos[t].length; });
     if (!total) {
       estado.innerHTML = esc(fmt(TX.nada, { q: q })) + ' <span class="busca-sug">' + esc(TX.sugerencia) + '</span>';
       return;
     }
     estado.textContent = total === 1 ? fmt(TX.un_resultado, { q: q }) : fmt(TX.n_resultados, { n: total, q: q });
-    INDICE.tipos.forEach(function (t) {
+    r.orden.forEach(function (t) {
       var lista = r.grupos[t];
       if (!lista.length) return;
       var sec = document.createElement('section');
