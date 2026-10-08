@@ -26,7 +26,7 @@
   --ola:#1A1917;--ola-2:#232220;--ink:#F4F1E8;--soot:#BDB5A2;--hair:#494438;
   --haritala:#EFC14E;--nila:#B6D8EE;--rakta:#F09A88;--shadow:rgba(0,0,0,.45);
   --hover:rgba(255,255,255,.055);--hl:rgba(239,193,78,.20);--chip-k:rgba(182,216,238,.13)}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--barh,74px) + var(--cabh,0px) + 10px)}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + var(--cabh,0px) + 10px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.55;
   background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);padding-left:238px;transition:padding-left .2s ease}
@@ -36,7 +36,7 @@ body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);fo
 [hidden]{display:none!important}
 
 /* barra lateral */
-.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;background:var(--ola-2);
+.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;background:var(--ola-2);
   border-right:1px solid var(--hair);padding:calc(env(safe-area-inset-top,0px) + 54px) 0 48px;transition:transform .2s ease}
 .sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:6px}
 .sb-brand b{display:block;font-size:18px;letter-spacing:-.01em;margin-bottom:3px;line-height:1.2}
@@ -134,7 +134,7 @@ h1{font-size:clamp(34px,5.5vw,52px);line-height:.98;margin:10px 0 0;font-weight:
 .chip.g{display:table;margin:0 0 5px;font-weight:600;letter-spacing:.02em;text-transform:none;color:var(--nila);background:none;border-style:dashed;border-color:var(--nila)}
 
 /* barra de mandos */
-.bar{position:sticky;top:0;z-index:20;background:var(--ola);border-bottom:1px solid var(--hair);
+.bar{position:sticky;top:var(--cabecera-h,0px);z-index:20;background:var(--ola);border-bottom:1px solid var(--hair);
   padding:calc(env(safe-area-inset-top,0px) + 10px) 0 10px;margin-bottom:6px}
 .bar .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 input[type=search]{flex:1 1 160px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
@@ -375,7 +375,7 @@ details.plegable p{margin:0 0 8px}
    cabecera (cada fila es una ficha) y la copia no se muestra. */
 .tabla-marco{margin:10px 0 40px}
 .tabla-marco .tabla-caja{margin:0}
-.cab-fija{position:sticky;top:var(--barh,74px);z-index:15;background:var(--ola);overflow-x:auto;scrollbar-width:none}
+.cab-fija{position:sticky;top:calc(var(--cabecera-h,0px) + var(--barh,74px));z-index:15;background:var(--ola);overflow-x:auto;scrollbar-width:none}
 .cab-fija::-webkit-scrollbar{display:none}
 .cab-fija table{table-layout:fixed}
 .cab-fija .gl.foco{outline:2px solid var(--haritala);outline-offset:1px}
@@ -473,7 +473,6 @@ tr.sec .kt .rg .cu{color:var(--haritala)}
 <div class="scrim" id="scrim"></div>
 
 <header><div class="wrap">
-  <a class="volver-sitio" href="../" data-t="back">← Recursos · Gramáticas Pāḷi</a>
   <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
   <h1 data-t="title">Análisis de los suttas de Kaccāyana</h1>
   <p class="subt" data-t="subtitle">según Visuddhāyuṃ Kaccāyana-ṭīkā</p>

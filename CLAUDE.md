@@ -166,12 +166,27 @@ Reglas que no se saltan, y son las de siempre:
 ## Cómo se publica
 
 El markdown es la fuente; el HTML de `site/` es salida generada. **Nunca se
-edita nada dentro de `site/`, con cuatro excepciones que son fuente y no salida:
-`site/assets/pali.css`, `site/assets/pali.js`, los SVG de la marca en
-`site/assets/` y `site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
-entero el hook de pre-commit en cada commit, así que un cambio hecho ahí
+edita nada dentro de `site/`, con estas excepciones, que son fuente y no salida:
+`site/assets/pali.css`, `site/assets/pali.js`, `site/assets/cabecera.css`,
+`site/assets/cabecera.js`, los SVG de la marca en `site/assets/` y
+`site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
+entero el hook de pre-commit en cada commit (también
+`site/assets/secciones.json`, que es salida), así que un cambio hecho ahí
 desaparece sin avisar y sin dejar rastro. Lo que se edita está en
-`kaccayana/`, `recursos/`, `comun/` y esos tres archivos de `site/assets/`.
+`kaccayana/`, `recursos/`, `comun/` y esos archivos de `site/assets/`.
+
+### La cabecera común (rediseño de la navegación, etapa 1, 2026-10-08)
+
+Las 26 páginas llevan arriba la misma barra: marca → portada; Kaccāyana ·
+Recursos · Glosario · Clases; «Ir a §»; ES|EN; tema. **Una sola fuente para
+el marcado**: `herramientas/cabecera.py`, que cada generador llama con
+`cabecera.insertar(html, clave)` antes de escribir. Su tabla `PAGINAS` dice,
+página por página, qué mandos de idioma y de tema ya tenía: la barra **los
+acciona** (siguen en el DOM, ocultos), no trae mecanismo propio. Una página
+nueva necesita su entrada en `PAGINAS` y la llamada a `insertar`.
+`generar_secciones.py` escribe el mapa §N → capítulo para «Ir a §»; el
+destino se calcula en una sola función de `cabecera.js` (`destinoSutta`).
+Notas de trabajo: `docs/navegacion/etapa-1-cabecera.md`.
 
 ### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
 

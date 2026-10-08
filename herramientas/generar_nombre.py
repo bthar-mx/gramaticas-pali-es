@@ -28,6 +28,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 
 from generar_capitulo import CAPITULOS, parsear  # noqa: E402
+import cabecera  # noqa: E402
 
 PLANTILLA = os.path.join(RAIZ, "recursos", "nombre", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "nombre", "index.html")
@@ -92,7 +93,7 @@ def main():
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
     with open(DESTINO, "w", encoding="utf-8") as f:
-        f.write(html)
+        f.write(cabecera.insertar(html, "nombre"))  # la barra común del sitio
 
     print("{0} referencias enlazadas · {1} pendientes de capítulo → {2}".format(
         len(enlazadas), len(pendientes), os.path.relpath(DESTINO, RAIZ)))

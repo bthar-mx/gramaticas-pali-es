@@ -26,6 +26,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 
 from generar_capitulo import parsear, partir_bloques, desescapar  # noqa: E402
+import cabecera  # noqa: E402
 
 MD = os.path.join(RAIZ, "kaccayana", "01-sandhi-kappa.md")
 REGLAS = os.path.join(RAIZ, "recursos", "sandhi", "reglas.json")
@@ -170,7 +171,8 @@ def main():
             + plantilla[marca.end():])
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "sandhi"))  # la barra común del sitio
 
     # ── auditoría de las secuencias ──────────────────────────────────
     # §10 separa la consonante de su vocal, §11 vuelve a unirlas. Si un paso

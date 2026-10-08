@@ -26,6 +26,7 @@ import os
 import re
 import sys
 import unicodedata
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATOS = os.path.join(RAIZ, "recursos", "casos", "usos.json")
@@ -117,7 +118,8 @@ def main():
     html = pl[:m.start()] + datos + pl[m.end():]
     html = html.replace("__VERSION_DATE__", d["fecha"]).replace("__VERSION__", d["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "casos"))  # la barra común del sitio
     tope, usos, ejemplos = contar(d)
     print("v{0} ({1}) · {2} inflexiones · {3} usos ({4} con subdivisiones) · "
           "{5} ejemplos → {6}".format(d["version"], d.get("estado", ""),
