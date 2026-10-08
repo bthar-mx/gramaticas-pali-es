@@ -16,7 +16,7 @@ Taṃ yathā? Gāmā apenti munayo; nagarā niggato rājā; corā bhayaṃ jāya
 
 That from which \[one\] moves away, \[from which\] danger or fear \[arises\], or from which one takes: that is “apādāna”.
 
-That from which \[one\] moves away, that from which danger or fear arises, or that from which \[one\] takes: that case has the name “ablative”.[^1]
+That from which \[one\] moves away, that from which danger or fear arises, or that from which \[one\] takes: that case has the name “apādāna” (starting point).[^1]
 
 ---
 
@@ -29,7 +29,7 @@ Examples:
 3. **Corā** bhayaṃ jāyate (danger or fear arises from the thief).
 4. **Ācariyupajjhāyehi** sikkhaṃ gaṇhāti sisso (the student takes the training from the teachers and preceptors).
 
-What is the use of the name “apādāna” (ablative)?[^2] For the use of the name “apādāna” in the sutta “Apādāne pañcamī” (§295). In the ablative, the fifth \[inflection\].
+What is the use of the name “apādāna” (starting point)?[^2] For the use of the name “apādāna” in the sutta “Apādāne pañcamī” (§295). In the starting point, the fifth \[inflection\].
 
 ---
 
@@ -61,11 +61,11 @@ Taṃ yathā? Apasālāya āyanti vāṇijā; ābrahmalokā saddo abbhuggacchati
 
 ---
 
-\[When there is connection with\] roots and nouns, and when there is connection with prefixes and others, also \[there is the ablative\].
+\[When there is connection with\] roots and nouns, and when there is connection with prefixes and others, also \[there is the starting point\].
 
-When there is connection with roots and nouns, and when there is connection with prefixes and others, that case also has the name “ablative”.
+When there is connection with roots and nouns, and when there is connection with prefixes and others, that case also has the name “apādāna” (starting point).
 
-First, **when there is connection with roots**: in connection with the root ‘**ji**’ preceded by ‘**parā**’, that which cannot be conquered[^8] has the name “ablative”.
+First, **when there is connection with roots**: in connection with the root ‘**ji**’ preceded by ‘**parā**’, that which cannot be conquered[^8] has the name “apādāna” (starting point).
 
 ---
 
@@ -75,7 +75,7 @@ Examples:
 
 1. **Buddhasmā** parājenti aññatitthiyā (the adherents of other teachers were defeated by the Buddha).
 
-In connection with the root ‘**bhū**’ preceded by ‘**pa**’, that from which there is an uninterrupted flow has the name “ablative”.
+In connection with the root ‘**bhū**’ preceded by ‘**pa**’, that from which there is an uninterrupted flow has the name “apādāna” (starting point).
 
 As what?
 
@@ -85,7 +85,7 @@ Examples:
 2. **Anavatattamhā** pabhavanti mahāsarā (the great lakes originate from the \[lake\] Anavatatta).
 3. **Aciravatiyā** pabhavanti kunnadiyo (the small rivers originate from the \[river\] Aciravatī).
 
-Also **in connection with nouns**, that case has the name “ablative”.
+Also **in connection with nouns**, that case has the name “apādāna” (starting point).
 
 As what?
 
@@ -95,7 +95,7 @@ Examples:
 2. **Bhūmito** niggato raso (the essence comes out from the earth).
 3. **Ubhato** sujāto putto **mātito** ca **pitito** ca (a son well born from both, from the mother and from the father).
 
-**In connection with prefixes**,[^9] that case has the name “ablative”.
+**In connection with prefixes**,[^9] that case has the name “apādāna” (starting point).
 
 As what?
 
@@ -147,7 +147,7 @@ Kāke rakkhanti taṇḍulā; yavā paṭisedhenti gāvo.
 
 That which is desired \[in connection with\] those meaning protection.
 
-When there is connection with roots having the meaning of protection, that which is desired, that case has the name “ablative”.
+When there is connection with roots having the meaning of protection, that which is desired, that case has the name “apādāna” (starting point).
 
 ---
 
@@ -170,7 +170,7 @@ Upajjhāyā antaradhāyati sisso; mātarā ca pitarā ca antaradhāyati putto.
 
 Optionally, by whom not being seen \[is desired\].
 
-Optionally, that by whom not being seen is desired: that case has the name “ablative”.
+Optionally, that by whom not being seen is desired: that case has the name “apādāna” (starting point).
 
 ---
 
@@ -233,7 +233,7 @@ Dūratthe, antikatthe, addhanimmāne, kālanimmāne, tvālope, disāyoge, vibhat
 
 Far, near, measurement of distance and of time, elision of ‘tvā’, in connection with direction, comparison, abstinence, purity, liberation, cause, seclusion, measuring, in connection with the past, bondage, expression of quality, question, talk, little and no-agent.
 
-In the meaning of far, in the meaning of near, in the measurement of distance, in the measurement of time, when there is elision of ‘tvā’, in connection with direction, in comparison, in connection with abstinence, in purity, in liberation, in the meaning of cause, in the meaning of seclusion, in measuring, in connection with the past, in the meaning of bondage, in the expression of quality, in question, in talk, in little and in no-agent; in these meanings and in these connections, that case has the name “ablative”.
+In the meaning of far, in the meaning of near, in the measurement of distance, in the measurement of time, when there is elision of ‘tvā’, in connection with direction, in comparison, in connection with abstinence, in purity, in liberation, in the meaning of cause, in the meaning of seclusion, in measuring, in connection with the past, in the meaning of bondage, in the expression of quality, in question, in talk, in little and in no-agent; in these meanings and in these connections, that case has the name “apādāna” (starting point).
 
 ---
 
@@ -267,7 +267,7 @@ Examples:
 1. **Ito** bhikkhave ekanavutikappe Vipassī nāma Bhagavā loke udapādi (bhikkhus, ninety-one aeons from this one, the Blessed One Vipassī arose in the world).
 2. **Ito** tiṇṇaṃ māsānaṃ accayena parinibbāyissati (at the expiration of three months from now, \[the Buddha\] will attain Parinibbāna), etc.
 
-(5) **When there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the accusative (kamma) and in the locative (adhikaraṇa):
+(5) **When there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the object (kamma) and in the place (adhikaraṇa):
 
 Examples:
 
@@ -357,7 +357,7 @@ Examples:
 3. **Paññāya** vimuttimano (because of wisdom, \[he\] is one whose mind is freed).
 4. **Issariyāya** janaṃ rakkhati rājā (because of his power, the king protects the people), etc.
 
-(17) **In questioning, when there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the accusative (kamma) and in the locative (adhikaraṇa):
+(17) **In questioning, when there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the object (kamma) and in the place (adhikaraṇa):
 
 Examples:
 
@@ -365,7 +365,7 @@ Examples:
 2. **Vinayā** pucchanti (they ask about the Vinaya), vinayaṃ sutvā, vinaye ṭhatvā (pucchanti) vā (having listened to the Vinaya, or having stood on the Vinaya, they ask).
 3. Also the second and the third \[inflection\]. Abhidhammaṃ, abhidhammena vā. Vinayaṃ, vinayena vā. Likewise with the suttas, the geyyas, the gāthās, the veyyākaraṇas, the udānas, the itivuttakas, the jātakas, the abbhutadhammas and the vedallas, etc.
 
-(18) **In talking, when there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the kamma (accusative) and in the adhikaraṇa (locative):
+(18) **In talking, when there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the object (kamma) and in the place (adhikaraṇa):
 
 Examples:
 
@@ -404,7 +404,7 @@ Samaṇassa cīvaraṃ dadāti; samaṇassa rocate saccaṃ; Devadattassa suva�
 
 To whom \[one\] wants to give, to whom \[something\] is pleasing, or for whom \[one\] holds \[something\]: that is “sampadāna”.
 
-To whom \[one\] wants to give, or to whom \[something\] is pleasing, or for whom \[one\] holds \[something\]: that case has the name “dative”.[^19]
+To whom \[one\] wants to give, or to whom \[something\] is pleasing, or for whom \[one\] holds \[something\]: that case has the name “sampadāna” (recipient).[^19]
 
 ---
 
@@ -414,7 +414,7 @@ Examples:
 2. **Samaṇassa** rocate saccaṃ (the truth is pleasing to the ascetic).
 3. **Devadattassa** suvaṇṇacchattaṃ dhārayate Yaññadatto (Yaññadatta holds the golden parasol for Devadatta).
 
-What is the use of the name “sampadāna” (dative)? For the use of the name “sampadāna” in the sutta “Sampadāne catutthī” (§293). In the dative, the fourth \[inflection\].
+What is the use of the name “sampadāna” (recipient)? For the use of the name “sampadāna” in the sutta “Sampadāne catutthī” (§293). In the recipient, the fourth \[inflection\].
 
 “Vā” is in the sense of alternative (vikappana). When there is connection with roots and nouns, or connection with prefixes, or connection with particles, the word “vā” is employed as an alternative of meaning.
 
@@ -499,9 +499,9 @@ Taṃ yathā? Bhikkhusaṃghassa pabhū ayaṃ Bhagavā. Desassa pabhū ayaṃ r
 
 ---
 
-‘Silāgha’, ‘hanu’, ‘ṭhā’, ‘sapa’, ‘dhāra’, ‘piha’, ‘kudha’, ‘duha’, ‘issa’ and ‘usūya’, ‘rādha’ and ‘ikkha’, in the former subject of ‘paccāsuṇa’ and ‘anupatigiṇa’, in the meaning of announcing, in the purpose of that, in the meaning of ‘tuṃ’, in the meaning of “alaṃ”, with ‘mañña’ in disrespect and in a non-living being, in the object \[of roots\] having the meaning of going, and in the meaning of benediction, with “sammuti”, with “bhiyya” and in the meanings of the seventh \[inflection\], also \[there is “dative”\].
+‘Silāgha’, ‘hanu’, ‘ṭhā’, ‘sapa’, ‘dhāra’, ‘piha’, ‘kudha’, ‘duha’, ‘issa’ and ‘usūya’, ‘rādha’ and ‘ikkha’, in the former subject of ‘paccāsuṇa’ and ‘anupatigiṇa’, in the meaning of announcing, in the purpose of that, in the meaning of ‘tuṃ’, in the meaning of “alaṃ”, with ‘mañña’ in disrespect and in a non-living being, in the object \[of roots\] having the meaning of going, and in the meaning of benediction, with “sammuti”, with “bhiyya” and in the meanings of the seventh \[inflection\], also \[there is “recipient”\].
 
-In connection with these roots: ‘silāgha’ (praising), ‘hanu’ (deceiving/removing), ‘ṭhā’ (standing), ‘sapa’ (swearing/insulting), ‘dhāra’ (holding/owing), ‘piha’ (liking/loving), ‘kudha’ (being angry), ‘duha’ (wishing to harm), ‘issa’ (envying), in connection with \[roots\] having the meaning of ‘usūya’ (showing anger), in connection with \[the roots\] ‘rādha’ (pleasing) and ‘ikkha’ (seeing), in the subject of the previous \[sentence\] \[when\] the root ‘su’ (hearing), preceded by ‘pati’ and ‘ā’, and the root ‘ge’ (making sound), preceded by ‘anu’ and ‘pati’, \[are used\]; in the meaning of announcing; in the purpose of that; in the meaning of ‘tuṃ’; in the meaning of “alaṃ”; in connection with \[the root\] ‘mana’ in \[the expression of\] disrespect and towards a non-living being; in the object of roots having the meaning of going; in the meaning of benediction; \[in connection\] with “sammuti” and “bhiyya”; and in the meaning of the locative: that case has the name “dative”.
+In connection with these roots: ‘silāgha’ (praising), ‘hanu’ (deceiving/removing), ‘ṭhā’ (standing), ‘sapa’ (swearing/insulting), ‘dhāra’ (holding/owing), ‘piha’ (liking/loving), ‘kudha’ (being angry), ‘duha’ (wishing to harm), ‘issa’ (envying), in connection with \[roots\] having the meaning of ‘usūya’ (showing anger), in connection with \[the roots\] ‘rādha’ (pleasing) and ‘ikkha’ (seeing), in the subject of the previous \[sentence\] \[when\] the root ‘su’ (hearing), preceded by ‘pati’ and ‘ā’, and the root ‘ge’ (making sound), preceded by ‘anu’ and ‘pati’, \[are used\]; in the meaning of announcing; in the purpose of that; in the meaning of ‘tuṃ’; in the meaning of “alaṃ”; in connection with \[the root\] ‘mana’ in \[the expression of\] disrespect and towards a non-living being; in the object of roots having the meaning of going; in the meaning of benediction; \[in connection\] with “sammuti” and “bhiyya”; and in the meaning of the seventh \[inflection\]: that case has the name “sampadāna” (recipient).
 
 ---
 
@@ -557,7 +557,7 @@ Examples:
 4. Titthiyā **samaṇānaṃ** issayanti guṇagiddhena; titthiyā **samaṇānaṃ** issayanti lābhagiddhena (because of greed for honor, the followers of \[other\] teachings are jealous of the ascetics; because of greed for gain, the followers of \[other\] teachings are jealous of the ascetics).
 5. Dujjanā **guṇavantānaṃ** usūyanti guṇagiddhena (because of greed for honor, bad people find fault with the virtuous); kā usūyā **vijānataṃ** (what is the criticism of those who know?), etc.
 
-(8) **In connection with the roots ‘rādha’** (pleasing) **and ‘ikkha’** (seeing), the one who has not been spoken of and about whom one asks, and for the purpose of making known the action: that case has the name “dative”; also the second \[inflection\] \[is used\].
+(8) **In connection with the roots ‘rādha’** (pleasing) **and ‘ikkha’** (seeing), the one who has not been spoken of and about whom one asks, and for the purpose of making known the action: that case has the name “sampadāna” (recipient); also the second \[inflection\] \[is used\].
 
 Examples:
 
@@ -566,11 +566,11 @@ Examples:
 3. Cakkhuṃ **janassa** dassanāya taṃ viya maññe (I consider the eye to see people just as I consider you \[= I regard you as the eye\]).
 4. **Āyasmato** **Upālittherassa** upasampadāpekkho Upatisso (the Venerable Upatissa wishes the higher ordination from the Venerable Upāli), āyasmantaṃ vā, etc.
 
-(9) **In the former subject of ‘paccāsuṇa’ and ‘anupatigiṇa’**: when the root ‘su’ (hearing) is in connection with **‘paccā’** \[= ‘pati’ \+ ‘ā’\], whatever is the subject of the previous object has the name “dative”.
+(9) **In the former subject of ‘paccāsuṇa’ and ‘anupatigiṇa’**: when the root ‘su’ (hearing) is in connection with **‘paccā’** \[= ‘pati’ \+ ‘ā’\], whatever is the subject of the previous object has the name “sampadāna” (recipient).
 
 As what? Bhagavā bhikkhū etad avoca (the Blessed One said this to the bhikkhus).
 
-\[Here\] **“bhikkhū”** is the **indirect object** (akathitakamma) and **“etaṃ”** is the **direct object** (kathitakamma). The subject of the previous object (“etaṃ”), “Bhagavā”, has the name “kattu” by the sutta “Yo karoti sa kattā” (§281). Thus, whatever is the subject of the previous object has the name “dative”.
+\[Here\] **“bhikkhū”** is the **indirect object** (akathitakamma) and **“etaṃ”** is the **direct object** (kathitakamma). The subject of the previous object (“etaṃ”), “Bhagavā”, has the name “kattu” by the sutta “Yo karoti sa kattā” (§281). Thus, whatever is the subject of the previous object has the name “sampadāna” (recipient).
 
 As what?
 
@@ -579,7 +579,7 @@ Examples:
 1. Te bhikkhū **Bhagavato** paccassosuṃ (those bhikkhus replied to the Blessed One).
 2. Āsuṇanti **Buddhassa** bhikkhū (the bhikkhus listen to the Buddha).
 
-(10) **In connection with ‘anu’ and ‘pati’ of the root ‘ge’** (making sound), whatever is the subject of the previous object has the name “dative”.
+(10) **In connection with ‘anu’ and ‘pati’ of the root ‘ge’** (making sound), whatever is the subject of the previous object has the name “sampadāna” (recipient).
 
 As what? Bhikkhu janaṃ dhammaṃ sāveti (the bhikkhu makes the people listen to the Dhamma).
 
@@ -590,7 +590,7 @@ Examples:
     
   The one who speaks, that is the “subject” (kattā);   
   What is said is called “object” (kamma);   
-  The one who receives it should be understood as “dative”. 
+  The one who receives it should be understood as “recipient” (sampadāna). 
 
 And so on.
 
@@ -698,7 +698,7 @@ Examples:
 
 Also in the remaining constructions of words, other examples should be constructed by those who are skilled in giving examples.
 
-**Taking “ca” is for the dragging of “vā”, which has the meaning of alternative** (vikappana). Here the word “vā” is employed to drag (include) whatever words with the function of the dative that have not been shown by me.
+**Taking “ca” is for the dragging of “vā”, which has the meaning of alternative** (vikappana). Here the word “vā” is employed to drag (include) whatever words with the function of recipient that have not been shown by me.
 
 As what?
 
@@ -731,7 +731,7 @@ Tattha **byāpiko** tāva: Jalesu khīraṃ tiṭṭhati, tilesu telaṃ, ucchū
 
 That which is the receptacle, that is “okāsa”.[^37]
 
-That which is a receptacle has the name “locative”. 
+That which is a receptacle has the name “okāsa” (place). 
 
 That receptacle is fourfold: (1) pervading (byāpika), (2) close contact (opasilesika), (3) domain (vesayika) and (4) nearness (sāmīpika).
 
@@ -767,7 +767,7 @@ Examples:
 3. **Vaje** gāvo duhanti (they milk the cows near the pen).
 4. **Sāvatthiyaṃ** viharati Jetavane (\[the Blessed One\] dwells near Sāvatthī, in Jeta's Grove).
 
-What is the use of the name “okāsa” (locative)? For the use of the name “okāsa” in the sutta “Okāse sattamī” (§302). In the locative, the seventh \[inflection\].
+What is the use of the name “okāsa” (place)? For the use of the name “okāsa” in the sutta “Okāse sattamī” (§302). In the place, the seventh \[inflection\].
 
 ---
 
@@ -783,7 +783,7 @@ Dattena vīhiṃ lunāti; vāsiyā kaṭṭhaṃ tacchati; pharasunā rukkhaṃ 
 
 By means of this \[one\] does, that is “karaṇa”.[^39]
 
-By means of this \[one\] does, by means of this \[one\] sees, by means of this \[one\] hears: that case has the name “instrumental”.
+By means of this \[one\] does, by means of this \[one\] sees, by means of this \[one\] hears: that case has the name “karaṇa” (instrument).
 
 ---
 
@@ -797,7 +797,7 @@ Examples:
 6. **Cakkhunā** rūpaṃ passati (sees a form with the eye).
 7. **Sotena** saddaṃ suṇāti (hears the sound with the ear).
 
-What is the use of the name “karaṇa” (instrumental)? For the use of the name “karaṇa” in the sutta “Karaṇe tatiyā” (§286). In the instrumental, the third \[inflection\].
+What is the use of the name “karaṇa” (instrument)? For the use of the name “karaṇa” in the sutta “Karaṇe tatiyā” (§286). In the instrument, the third \[inflection\].
 
 ---
 
@@ -894,7 +894,7 @@ Tassa bhikkhuno paṭivīso;[^45] bhikkhuno patto; tassa bhikkhuno cīvaraṃ; a
 
 The possession of that, this is “sāmī”.
 
-The possession of that, this has the name “possessive”.[^46]
+The possession of that, this has the name “sāmī” (possessor).[^46]
 
 ---
 
@@ -906,7 +906,7 @@ Examples:
 3. **Tassa bhikkhuno** cīvaraṃ (the robe of that bhikkhu).
 4. **Attano** mukhaṃ (the mouth of oneself).
 
-What is the use of the name “sāmī” (possessive)? For the use of the name “sāmī” in the sutta “Sāmismiṃ chaṭṭhī” (§301). In the possessive, the sixth \[inflection\].
+What is the use of the name “sāmī” (possessor)? For the use of the name “sāmī” in the sutta “Sāmismiṃ chaṭṭhī” (§301). In the possessor, the sixth \[inflection\].
 
 ---
 
@@ -962,7 +962,7 @@ Agginā kuṭiṃ jhāpeti; manasā ce paduṭṭhena (Khu. i, 13); manasā ce p
 
 In the instrument, the third \[inflection\].
 
-In the instrumental case there is the third inflection.
+In the instrument there is the third inflection.
 
 ---
 
@@ -1118,9 +1118,9 @@ Buddhassa vā Dhammassa vā Saṃghassa vā dānaṃ deti; dātā hoti samaṇas
 
 ---
 
-In the dative, the fourth \[inflection\].
+In the recipient, the fourth \[inflection\].
 
-In the dative case there is the fourth inflection.
+In the recipient there is the fourth inflection.
 
 ---
 
@@ -1162,9 +1162,9 @@ Pāpā cittaṃ nivāraye (Khu. i, 30); abbhā mutto va candimā (Khu. i, 39), b
 
 ---
 
-In the ablative, the fifth \[inflection\].
+In the starting point, the fifth \[inflection\].
 
-In the ablative case there is the fifth inflection.
+In the starting point there is the fifth inflection.
 
 ---
 
@@ -1327,9 +1327,9 @@ Gambhīre odakantike (Khu. i, 9); pāpasmiṃ ramati mano (Khu. i, 30); bhagavat
 
 ---
 
-In the locative, the seventh \[inflection\].
+In the place, the seventh \[inflection\].
 
-In the locative case there is the seventh inflection.
+In the place there is the seventh inflection.
 
 ---
 
@@ -1583,9 +1583,9 @@ Saṃghe dinnaṃ mahapphalaṃ (Khu. ii, 49); saṃghe Gotami dehi (M. iii, 296
 
 ---
 
-Also in the sampadāna (dative).
+Also in the recipient (sampadāna).
 
-There is also the seventh inflection in the dative.
+There is also the seventh inflection in the recipient.
 
 ---
 
@@ -1692,7 +1692,7 @@ Examples:
 
 **End of the Case Chapter**
 
-[^1]: Translator's note: From now on the term “apādāna” is translated as “ablative”.
+[^1]: Translator's note: Nandisena translates “apādāna” as “ablative”; here, “starting point”.
 
 [^2]: Footnote: “Kvattho” can be read as “ko attho” (what is the use?) or as “kva attho” (where is the use?).
 
@@ -1728,7 +1728,7 @@ Examples:
 
 [^18]: Footnote: There are two agents: (1) the causative agent and (2) the pure agent. “Akattari” means non-causative agent.
 
-[^19]: Translator's note: From now on the term “sampadāna” is translated as “dative”.
+[^19]: Translator's note: Nandisena translates “sampadāna” as “dative”; here, “recipient”.
 
 [^20]: Footnote: Nāyaṃ pāṭho Sīhaḷapotthakesu dissati. (This reading is not found in the Sinhalese manuscripts.)
 
@@ -1764,11 +1764,11 @@ Examples:
 
 [^36]: Footnote: Pakkhanti (K).
 
-[^37]: Translator's note: From now on the term “okāsa” is translated as “locative”.
+[^37]: Translator's note: Nandisena translates “okāsa” as “locative”; here, “place”.
 
 [^38]: Footnote: Āvāṭaṃ (Sī).
 
-[^39]: Translator's note: From now on the term “karaṇa” is translated as “instrumental”.
+[^39]: Translator's note: Nandisena translates “karaṇa” as “instrumental”; here, “instrument”.
 
 [^40]: Translator's note: From now on the term “kamma” is translated as “object”.
 
@@ -1782,7 +1782,7 @@ Examples:
 
 [^45]: Footnote: Paṭivīso ca koṭṭhāso (Abhidhā. 485-gāthā). (“Paṭivīsa” is a portion.)
 
-[^46]: Translator's note: From now on the term “sāmī” is translated as “possessive” (also genitive).
+[^46]: Translator's note: Nandisena translates “sāmī” as “possessive” (also genitive); here, “possessor”.
 
 [^47]: Translator's note: We translate “attha” as “meaning”, as in the rest of the project.
 
