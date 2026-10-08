@@ -19,14 +19,14 @@
   "diap": "Sólo en las diapositivas"
  },
  "nombres_de_caso": {
-  "_nota": "Decisión del IEBH, 2026-09-28: un solo nombre por kāraka, el de su función con el caso tradicional entre paréntesis. El sāmī no es kāraka (Rū. §316).",
-  "kattu": "caso del sujeto (nominativo)",
-  "kamma": "caso del objeto (acusativo)",
-  "karaṇa": "caso del instrumento (instrumental)",
-  "sampadāna": "caso del destinatario (dativo)",
-  "apādāna": "caso del punto de partida (ablativo)",
-  "okāsa": "caso del lugar (locativo)",
-  "sāmī": "posesivo/genitivo"
+  "_nota": "Decisión del IEBH, 2026-09-28: un solo nombre por kāraka, el de su función. Corrección del IEBH, 2026-10-08: sin el caso tradicional entre paréntesis, porque un kāraka no equivale a un caso (el kattā va en la primera inflexión en la activa y en la tercera en la pasiva, Kacc. §288). El sāmī no es kāraka (Rū. §316).",
+  "kattu": "caso del sujeto o agente",
+  "kamma": "caso del objeto",
+  "karaṇa": "caso del instrumento",
+  "sampadāna": "caso del destinatario",
+  "apādāna": "caso del punto de partida",
+  "okāsa": "caso del lugar",
+  "sāmī": "poseedor"
  },
  "concordancia": {
   "rupasiddhi→kaccayana→saddaniti": {
@@ -4044,7 +4044,7 @@
      "id": "q1",
      "ruta": "1",
      "pali": "apādāna",
-     "es": "en el caso del punto de partida (ablativo)",
+     "es": "en el caso del punto de partida",
      "es_fuente": "norma",
      "rupasiddhi": [
       "307",
@@ -5987,7 +5987,7 @@
      "id": "s1",
      "ruta": "1",
      "pali": "okāsa",
-     "es": "en el caso del lugar (locativo)",
+     "es": "en el caso del lugar",
      "es_fuente": "norma",
      "rupasiddhi": [
       "319",
@@ -6277,7 +6277,7 @@
      "id": "s8",
      "ruta": "8",
      "pali": "sampadāna",
-     "es": "en el caso del destinatario (dativo)",
+     "es": "en el caso del destinatario",
      "es_fuente": "norma",
      "rupasiddhi": [
       "325"
