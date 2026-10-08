@@ -923,10 +923,10 @@ def portada(pub):
         'aria-describedby="ini-ir-nota"/>'
         '<button type="submit">' + bi('Ir', 'Go') + '</button></div>\n'
         '<p class="ini-ir-nota" id="ini-ir-nota">' + bi(
-            'Un número lleva al sutta en su capítulo ({0} publicados). La '
+            'Un número lleva a la página de ese sutta ({0} publicados). La '
             'búsqueda de palabras en todo el sitio llega en una etapa '
             'posterior.'.format(total),
-            'A number takes you to the sutta in its chapter ({0} published). '
+            'A number takes you to that sutta\'s page ({0} published). '
             'Word search across the whole site comes in a later stage.'
             .format(total)) + '</p>\n'
         '<p class="ir-aviso" role="status" aria-live="polite" hidden=""></p>\n'

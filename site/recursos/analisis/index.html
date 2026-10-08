@@ -464,7 +464,7 @@ tr.sec .kt .rg .cu{color:var(--haritala)}
 </style>
 <!-- cabecera:inicio -->
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/cabecera.css?v=9b86f070" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=75f2dcad" rel="stylesheet"/>
 <style>#theme,#lang-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 </head>
@@ -1127,7 +1127,12 @@ pout.addEventListener('click',async ev=>{
 });
 fetch('/api/preguntar?json=1',{redirect:'manual',credentials:'same-origin'})
   .then(r=>r.ok?r.json():null).catch(()=>null)
-  .then(j=>{if(j&&j.ok){PREG.ok=true;PREG.restantes=j.restantes;render();document.getElementById('preg-login').hidden=true}
+  .then(j=>{if(j&&j.ok){PREG.ok=true;PREG.restantes=j.restantes;render();document.getElementById('preg-login').hidden=true;
+      /* ?preguntar=N (desde la página del sutta, /s/N/, etapa 2 de la
+         navegación): con sesión, abre su fila y el diálogo de ese §. Sin
+         sesión no hace nada más: el pie ya ofrece iniciarla. */
+      const pn=+(new URLSearchParams(location.search).get('preguntar')||0);
+      if(pn&&F.some(x=>x.n===pn)){irA('s'+pn);abrirPreg(pn)}}
     document.getElementById('preg-entrar').hidden=false});
 
 /* ---------- cabecera fija (v. el CSS de .cab-fija) ---------- */
@@ -1169,7 +1174,7 @@ textos();render();
 })();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=9b86f070"></script>
+<script defer src="../../assets/cabecera.js?v=75f2dcad"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

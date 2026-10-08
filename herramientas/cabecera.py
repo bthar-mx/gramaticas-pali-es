@@ -130,6 +130,12 @@ PAGINAS = {
     "capitulo":    dict(raiz="../../", seccion="kaccayana", indice=False,
                         idioma="enlace", ctl_idioma="#lang-btn",
                         tema="clase", ctl_tema="#dark-btn"),
+    # las páginas de cada sutta (etapa 2): /s/N/ y /en/s/N/, dos URL como
+    # los capítulos; su #lang-btn y su #dark-btn ocultos los pone
+    # generar_hub.py, y raiz e idioma se fijan al llamar
+    "hub":         dict(raiz="../../", seccion="kaccayana", indice=False,
+                        idioma="enlace", ctl_idioma="#lang-btn",
+                        tema="clase", ctl_tema="#dark-btn"),
     "sandhi":      dict(raiz="../../", seccion="recursos", indice=False,
                         idioma="solo-es", tema="atributo", ctl_tema="#theme"),
     "solucionador": dict(raiz="../../", seccion="recursos", indice=False,

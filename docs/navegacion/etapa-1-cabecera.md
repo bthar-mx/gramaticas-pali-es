@@ -57,7 +57,8 @@ Un número del 1 al 405 lleva a `/kaccayana/<capítulo>/#sN` (o a `/en/…` si
 la página está en inglés y el capítulo tiene edición inglesa). Un número sin
 § publicado da «§406 aún no está publicado» / «§406 is not published yet»,
 nunca un enlace muerto. El destino sale de una sola función,
-`destinoSutta()` en `cabecera.js`, para que la etapa 2 lo lleve a `/s/N/`.
+`destinoSutta()` en `cabecera.js`. Desde la etapa 2 lleva a la página del
+sutta, `/s/N/` (véase `etapa-2-hub.md`).
 
 En la portada, la caja grande usa la misma función. Una palabra no se busca
 —no hay todavía búsqueda en todo el sitio— y la caja lo dice: «La búsqueda en
@@ -122,5 +123,5 @@ no tenía el suyo.
 - El glosario guarda el tema con su clave propia `tema`, no con `pali_dark`
   (era así antes de esta etapa): la barra lo acciona bien, pero el tema
   elegido allí no viaja al resto del sitio ni al revés.
-- Etapa 2: el § hub (`/s/N/`) y llevar allí `destinoSutta()`.
+- Etapa 2: hecha (`etapa-2-hub.md`).
 - Etapa 3: la fila de enlaces de cada tarjeta de sutta.
