@@ -1410,9 +1410,6 @@ PLANTILLA = '''<!DOCTYPE html>
 <title>{obra} · {titulo_pali}</title>
 <meta content="{version}" name="version"/>
 <meta content="{version_fecha}" name="version-date"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="{raiz}assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
 <body>

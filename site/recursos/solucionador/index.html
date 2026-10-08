@@ -8,162 +8,77 @@
 <meta name="version" content="1.5">
 <meta name="version-date" content="2026-08-28">
 <meta name="description" content="Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces, y qué secuencia de aforismos la explica —de Kaccāyana, y del Saddanīti cuando Kaccāyana no la enuncia. Todo se verifica por recomposición.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- cabecera:inicio -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/base.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<!-- cabecera:fin -->
 <style>
-/* La paleta, la tipografía y la escalera son las de /recursos/sandhi/, a
-   propósito: la decisión del Venerable (briefing 30 §3.4) pide que la
-   secuencia se muestre exactamente como la muestra esa página. */
-:root{
-  --ola:#E7E3D6;        /* hoja de palma */
-  --ola-2:#F0EDE4;
-  --ink:#171612;        /* tinta de humo */
-  --soot:#4E4839;
-  --hair:#BFB7A0;
-  --haritala:#5C4008;   /* oropimente: corrección */
-  --hover:rgba(255,255,255,.55);
-  --active:rgba(255,255,255,.75);
-  --hl:rgba(92,64,8,.16);
-  --hl-ce:rgba(126,46,35,.14);
-  --chip-k:rgba(39,65,79,.10);
-  --chip-c:rgba(92,64,8,.14);
-  --nila:#27414F;       /* índigo: sección */
-  --rakta:#7E2E23;      /* bermellón: contraejemplo */
-  --marakata:#2F6B4A;   /* esmeralda: predicción firme (pedido del IEBH,
-                           2026-08-30: el filete de lo firme, de color distinto
-                           al de lo adjudicado, no sólo más fino) */
-  --shadow:rgba(0,0,0,.05);
-  --serif:"Gentium Book Plus",Georgia,serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-html[data-theme=dark]{
-  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
-  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --marakata:#8FCCA8;
-  --shadow:rgba(0,0,0,.45);
-  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
-  --hl:rgba(239,193,78,.20); --hl-ce:rgba(240,154,136,.18);
-  --chip-k:rgba(182,216,238,.13); --chip-c:rgba(239,193,78,.15);
-}
-html[data-theme=dark] body{background-image:none}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--ola);color:var(--ink);
-  font-family:var(--serif);font-size:17px;line-height:1.55;
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
-}
-.wrap{max-width:980px;margin:0 auto;padding:0 22px}
-.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
-     text-transform:uppercase;color:var(--soot)}
-/* Arriba a la DERECHA del bloque de cabecera (2026-08-31). Absoluto sobre
-   .mast para no entrar en su flex: con «space-between» y tres hijos, el
-   lema se habría ido al centro y la cabecera entera se recolocaba. */
-.mast{position:relative}
+/* La paleta, la letra, el bloque del título, el globo, el ↑ y el pie son
+   comunes: site/assets/base.css y site/assets/recursos.css (etapa 4b). Esta
+   página no tiene índice lateral ni barra de mandos: no tiene secciones.
+   Aquí, lo que sólo tiene ella. */
+/* El mando de sesión, arriba a la DERECHA del bloque del título
+   (2026-08-31). Absoluto sobre .rc-mast para no entrar en su flex. */
+.rc-mast{position:relative}
 .sesion-arriba{position:absolute;top:0;right:0;z-index:2}
 @media (max-width:640px){.sesion-arriba{position:static;margin:10px 0 0}}
-.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
-  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
-html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
-.eyebrow-iebh{display:flex;align-items:center;gap:9px}
-.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
-  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
-html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
 
-header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
-.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
-h1{font-size:clamp(40px,8vw,64px);line-height:.94;margin:0;font-weight:700;letter-spacing:-.02em}
-h1 .dia{color:var(--haritala)}
-/* 2026-08-29, pedido del IEBH: la cabecera se estaba comiendo la página, y
-   la página es para resolver sandhis. El reclamo y la declaración de método
-   bajan de cuerpo y se apartan del camino; la caja de texto sube. */
-.tag{margin:8px 0 0;max-width:52ch;color:var(--soot);font-size:14px;line-height:1.5}
 /* La declaración de método: a la vista queda la frase que la nombra —
    «Proponer y verificar, nunca afirmar.»— y el resto se despliega. */
 .lema{margin:10px 0 0;max-width:60ch;font-size:13px;line-height:1.55;
-  color:var(--soot)}
-.lema>summary{cursor:pointer;list-style:none;font-weight:700;color:var(--ink)}
+  color:var(--text2)}
+.lema>summary{cursor:pointer;list-style:none;font-weight:700;color:var(--text)}
 .lema>summary::-webkit-details-marker{display:none}
 .lema>summary::after{content:' ▸';font-size:10px;color:var(--haritala);
   font-weight:400}
 .lema[open]>summary::after{content:' ▾'}
-.lema>summary:hover{color:var(--nila)}
-.lema>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.lema>summary:hover{color:var(--accent)}
+.lema>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .lema>p{margin:7px 0 0}
-.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
-  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
-  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
-  border-radius:999px;padding:4px 10px;position:relative}
-.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-/* La insignia de versión tenía globo propio de CSS (::after). Desde el
-   2026-08-29 pasa por el #tip llano como todo lo demás: un solo motor de
-   globos, un solo tamaño que ajustar. */
-.version-foot{margin-top:10px;font-size:11px;line-height:1.5;color:var(--soot)}
-.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
-      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
-.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
-.hero div.on{opacity:1;transition:opacity .5s ease}
-.hero b{font-weight:700;color:var(--haritala)}
-.hero .ref{color:var(--soot);font-size:10.5px}
-.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
-  text-decoration:none;margin-bottom:14px;opacity:.85}
-.volver-sitio:hover{color:var(--nila);opacity:1}
 .revision{margin:20px 0 0;max-width:104ch;font-size:13.5px;line-height:1.55;
-  color:var(--soot);border-left:2px solid var(--haritala);padding-left:13px}
+  color:var(--text2);border-left:2px solid var(--haritala);padding-left:13px}
 .revision>summary{cursor:pointer;list-style:none}
 .revision>summary::-webkit-details-marker{display:none}
 .revision>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
 .revision[open]>summary::after{content:' ▾'}
-.revision>summary:hover{color:var(--ink)}
+.revision>summary:hover{color:var(--text)}
 .revision>p{margin:9px 0 0}
-/* El pie plegado (pedido del IEBH, 2026-08-29). Hereda el mando de
-   .revision —el ▸/▾ y el filete verde— pero NO su tipografía: dentro va la
-   prosa del pie, que ya tiene la suya y no debe encogerse por estar
-   plegada. El sumario sí va en pequeño: es un mando, no un texto. */
-.pie-notas{margin:0;font-size:inherit;line-height:inherit;color:inherit;
-  border-left:0;padding-left:0}
-.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
-  padding:4px 0;margin-bottom:2px}
-.pie-notas[open]>summary{margin-bottom:10px}
-.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 
 /* ---------- la caja ---------- */
 .consulta{margin:30px 0 8px}
 textarea{width:100%;min-height:110px;resize:vertical;font-family:var(--serif);
-  font-size:17px;line-height:1.6;color:var(--ink);background:var(--ola-2);
-  border:1px solid var(--hair);border-radius:2px;padding:12px 14px}
-textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
+  font-size:17px;line-height:1.6;color:var(--text);background:var(--bg2);
+  border:1px solid var(--border);border-radius:2px;padding:12px 14px}
+textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
 .acciones{display:flex;gap:12px;align-items:center;margin-top:10px;flex-wrap:wrap}
 .boton{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;padding:10px 18px;border:0;border-radius:2px;
-  background:var(--nila);color:var(--ola-2);cursor:pointer}
+  background:var(--accent);color:var(--bg2);cursor:pointer}
 .boton:hover{filter:brightness(1.08)}
 .boton:disabled{opacity:.5;cursor:default}
 .boton:focus-visible{outline:2px solid var(--haritala);outline-offset:1px}
-.boton.secundario{background:var(--ola-2);color:var(--soot);border:1px solid var(--hair)}
-.boton.secundario:hover{filter:none;color:var(--ink);border-color:var(--soot)}
-.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
-  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
-.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
-.estado{font-family:var(--mono);font-size:11px;color:var(--soot)}
-.icon-btn.on{color:var(--haritala);border-color:var(--haritala)}
+.boton.secundario{background:var(--bg2);color:var(--text2);border:1px solid var(--border)}
+.boton.secundario:hover{filter:none;color:var(--text);border-color:var(--text2)}
+.estado{font-family:var(--mono);font-size:11px;color:var(--text2)}
 
 /* ---------- modo revisión ---------- */
 .rev-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0 2px;
-  padding:8px 10px;border:1px dashed var(--hair);border-radius:2px}
+  padding:8px 10px;border:1px dashed var(--border);border-radius:2px}
 .rev-lbl{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--soot);margin-right:2px}
+  text-transform:uppercase;color:var(--text2);margin-right:2px}
 .rev-btn{font-family:var(--mono);font-size:11px;padding:5px 9px;cursor:pointer;
-  background:var(--ola-2);color:var(--soot);border:1px solid var(--hair);border-radius:2px}
-.rev-btn:hover{color:var(--ink);border-color:var(--soot)}
-.rev-btn.on{color:var(--ola-2);background:var(--nila);border-color:var(--nila)}
+  background:var(--bg2);color:var(--text2);border:1px solid var(--border);border-radius:2px}
+.rev-btn:hover{color:var(--text);border-color:var(--text2)}
+.rev-btn.on{color:var(--bg2);background:var(--accent);border-color:var(--accent)}
 .rev-otra{font-family:var(--mono);font-size:12px;padding:5px 8px;min-width:16ch;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);border-radius:2px}
+  background:var(--bg2);color:var(--text);border:1px solid var(--border);border-radius:2px}
 .rev-acciones{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0 6px}
-.rev-nota-modo{font-size:13.5px;color:var(--soot);margin:14px 0 0;max-width:88ch}
-.veces{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--nila);
-  background:var(--chip-k);border-radius:9px;padding:1px 7px;vertical-align:2px;
+.rev-nota-modo{font-size:13.5px;color:var(--text2);margin:14px 0 0;max-width:88ch}
+.veces{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);
+  background:var(--accent-bg);border-radius:9px;padding:1px 7px;vertical-align:2px;
   cursor:help}
 .cuenta-sandhis{font-size:18px;margin:26px 0 4px}
 .cuenta-sandhis b{color:var(--haritala)}
@@ -171,7 +86,7 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
 /* ---------- chips de señal ---------- */
 .src{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;padding:2px 6px;border-radius:2px;white-space:nowrap}
-.src.segura{background:var(--chip-k);color:var(--nila)}
+.src.segura{background:var(--accent-bg);color:var(--accent)}
 .src.posible{background:var(--chip-c);color:var(--haritala)}
 
 /* ---------- el pasaje marcado (pedido del IEBH, 2026-08-29) ----------
@@ -185,27 +100,27 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
    voces sobre las que el motor calla, que es donde mirar para el campo
    «sandhi no detectado» del modo revisión. */
 .pasaje{margin:18px 0 0;padding:15px 17px;border-radius:3px;
-  background:var(--ola-2);border:1px solid var(--hair);
+  background:var(--bg2);border:1px solid var(--border);
   font-family:var(--serif);font-size:17px;line-height:2.05}
 .pasaje mark{background:none;color:inherit;border-radius:2px;padding:1px 3px;
   cursor:pointer;transition:background .12s}
-.pasaje mark.m-adj{background:var(--chip-k);
-  box-shadow:inset 0 -2px 0 var(--nila)}
-.pasaje mark.m-firme{background:var(--chip-k);
+.pasaje mark.m-adj{background:var(--accent-bg);
+  box-shadow:inset 0 -2px 0 var(--accent)}
+.pasaje mark.m-firme{background:var(--accent-bg);
   box-shadow:inset 0 -1px 0 var(--marakata)}
 .pasaje mark.m-pos{background:var(--chip-c);
   box-shadow:inset 0 -1px 0 var(--haritala)}
-.pasaje mark:hover{background:var(--ola)}
-.pasaje mark:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.pasaje mark:hover{background:var(--bg)}
+.pasaje mark:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .pasaje-leyenda{display:flex;gap:16px;flex-wrap:wrap;margin:11px 0 0;
   font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;
-  color:var(--soot)}
+  color:var(--text2)}
 .pasaje-leyenda i{display:inline-block;width:11px;height:11px;
   margin-right:5px;vertical-align:-1px;border-radius:2px}
-.pasaje-leyenda i.m-adj{background:var(--chip-k);box-shadow:inset 0 -2px 0 var(--nila)}
-.pasaje-leyenda i.m-firme{background:var(--chip-k);box-shadow:inset 0 -1px 0 var(--marakata)}
+.pasaje-leyenda i.m-adj{background:var(--accent-bg);box-shadow:inset 0 -2px 0 var(--accent)}
+.pasaje-leyenda i.m-firme{background:var(--accent-bg);box-shadow:inset 0 -1px 0 var(--marakata)}
 .pasaje-leyenda i.m-pos{background:var(--chip-c);box-shadow:inset 0 -1px 0 var(--haritala)}
-@media print{.pasaje mark{background:none;box-shadow:inset 0 -1px 0 var(--soot)}}
+@media print{.pasaje mark{background:none;box-shadow:inset 0 -1px 0 var(--text2)}}
 
 /* ---------- escalera de secuencia (idéntica a /recursos/sandhi/) ---------- */
 .lad{margin:12px 0 0;font-family:var(--mono);font-size:13.5px;line-height:1.9;
@@ -216,82 +131,53 @@ textarea:focus{outline:2px solid var(--nila);outline-offset:1px}
 .lad b{font-weight:700;color:var(--haritala);background:var(--hl);
        border-radius:2px;padding:0 1px}
 .lad b.ws{background:none;box-shadow:inset 0 -2px 0 var(--haritala)}
-.lad .ref{font-size:11px;color:var(--soot);white-space:nowrap}
-a.xref,.lad .ref a{color:var(--nila);text-decoration:none;
+.lad .ref{font-size:11px;color:var(--text2);white-space:nowrap}
+a.xref,.lad .ref a{color:var(--accent);text-decoration:none;
   border-bottom:1px dotted currentColor;font-weight:600}
 a.xref:hover,a.xref:focus-visible,.lad .ref a:hover,.lad .ref a:focus-visible{
   color:var(--haritala)}
-.cita{font-family:var(--mono);font-size:11.5px;color:var(--soot)}
-.cita b{color:var(--nila);font-weight:600}
+.cita{font-family:var(--mono);font-size:11.5px;color:var(--text2)}
+.cita b{color:var(--accent);font-weight:600}
 .parcial{font-family:var(--mono);font-size:10.5px;color:var(--rakta);letter-spacing:.04em}
-.parcial.verif{color:var(--nila)}
+.parcial.verif{color:var(--accent)}
 
 /* ---------- resultados ---------- */
-.forms{border-top:1px solid var(--hair);margin-top:14px}
-details.form{border-bottom:1px solid var(--hair)}
+.forms{border-top:1px solid var(--border);margin-top:14px}
+details.form{border-bottom:1px solid var(--border)}
 details.form>summary{
   list-style:none;cursor:pointer;padding:11px 2px;display:flex;gap:14px;
   align-items:baseline;justify-content:space-between}
 details.form>summary::-webkit-details-marker{display:none}
 details.form>summary:hover{background:var(--hover)}
-details.form>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
+details.form>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .fname{font-weight:700;font-size:17.5px}
-.fmeta{font-family:var(--mono);font-size:11px;color:var(--soot);letter-spacing:.05em;text-align:right}
+.fmeta{font-family:var(--mono);font-size:11px;color:var(--text2);letter-spacing:.05em;text-align:right}
 details.form[open]>summary{background:var(--active)}
 .fbody{padding:2px 2px 18px}
-.motivo{font-size:14.5px;color:var(--soot);margin:6px 0 0}
-.empty{padding:40px 0;text-align:center;color:var(--soot)}
-.empty p{margin:0 0 6px}
+.motivo{font-size:14.5px;color:var(--text2);margin:6px 0 0}
 
-footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
-       color:var(--soot);font-size:14px}
-footer a{color:var(--nila)}
-.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
-  font-size:12.5px;line-height:1.65;color:var(--soot)}
-
-/* ---------- tooltip de aforismo (el de /recursos/sandhi/, agrandado a
-   pedido del IEBH, 2026-08-28) ---------- */
-/* 2026-08-29, con la caché ya arreglada y la página VISTA de verdad: el
-   agrandado del 2026-08-29 (560 px · 21 px) se había pedido contra una
-   página vieja, y el aforismo salía demasiado grande. Vuelve al tamaño
-   del 2026-08-28, que es EL MISMO de /recursos/sandhi/ — las dos páginas
-   vuelven a coincidir, que es lo comprobable. */
-#tip{position:fixed;z-index:200;max-width:460px;pointer-events:none;opacity:0;
-  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
-  box-shadow:0 8px 26px var(--shadow);padding:14px 17px;font-size:18px;line-height:1.5}
-#tip.on{opacity:1;transform:none}
+/* ---------- globo de aforismo: el mismo tamaño que en /recursos/sandhi/ ---------- */
+#tip{max-width:460px;padding:14px 17px;font-size:18px}
+#tip .tn{display:inline;font-size:13px;margin:0}
+#tip .te{font-size:17px}
+#tip .tk{font-size:12px}
 #tip .th{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
-#tip .tn{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--nila)}
-#tip .tc{font-family:var(--mono);font-size:12px;color:var(--soot)}
-#tip .tp{font-style:italic;font-weight:700;margin:0}
-#tip .te{margin:5px 0 0;color:var(--soot);font-size:17px}
-#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--soot);margin:7px 0 0}
-#tip .tk{font-family:var(--mono);font-size:12px;color:var(--haritala);margin:8px 0 0;
-  letter-spacing:.06em;text-transform:uppercase}
-
-/* El globo LLANO: el mismo #tip, con texto corrido, para lo que antes
-   llevaba el rótulo NATIVO del navegador (title=) — el ×N, los botones,
-   los campos de la revisión, la insignia de versión. El nativo es
-   minúsculo e inestilizable, y por eso el IEBH lo seguía viendo chico
-   aunque el del aforismo ya fuera grande (2026-08-29). Ahora TODOS los
-   globos de la página son este mismo elemento: uno solo que gobernar. */
-#tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
-#tip.llano p{margin:0}
+#tip .tc{font-family:var(--mono);font-size:12px;color:var(--text2)}
+#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--text2);margin:7px 0 0}
 
 /* ---------- enlace y copia de cada voz (pedido del IEBH, 2026-08-29) ------
    Los mismos botones de /recursos/raices/ y /recursos/paradigmas/, y el
    mismo aspecto, para que la misma cosa se vea igual en las tres páginas. */
 .fbtns{display:flex;gap:8px;flex-wrap:wrap;align-items:center;
-  margin:16px 0 0;padding-top:11px;border-top:1px solid var(--hair)}
+  margin:16px 0 0;padding-top:11px;border-top:1px solid var(--border)}
 .mini-btn{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);
   font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
-  color:var(--soot);background:var(--ola-2);border:1px solid var(--hair);
+  color:var(--text2);background:var(--bg2);border:1px solid var(--border);
   border-radius:2px;padding:5px 9px;cursor:pointer;
   transition:color .12s,border-color .12s}
 .mini-btn svg{width:12px;height:12px}
-.mini-btn:hover{color:var(--ink);border-color:var(--soot)}
-.mini-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.mini-btn:hover{color:var(--text);border-color:var(--text2)}
+.mini-btn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .mini-btn.ok{color:var(--haritala);border-color:var(--haritala)}
 @media print{.fbtns{display:none}}
 @media (max-width:640px){
@@ -305,28 +191,9 @@ footer a{color:var(--nila)}
    son la voz del proyecto y el arnés de la etapa 4 los compara byte a byte. */
 body.en .i-es{display:none}
 body:not(.en) .i-en{display:none}
-
-#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
-  width:38px;height:38px;border-radius:50%;
-  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
-  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
-  opacity:0;pointer-events:none;transform:translateY(6px);
-  transition:opacity .2s,transform .2s,background .12s,color .12s}
-#top-btn.show{opacity:1;pointer-events:auto;transform:none}
-#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
-@media (prefers-reduced-motion:reduce){#top-btn{transition:none}
-  .hero div{opacity:1!important;transition:none!important}}
-@media (max-width:640px){
-  body{font-size:16px}
-  .mast{gap:22px}
-  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
-        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
-  .hero div{justify-content:flex-start}
-}
 </style>
 <!-- cabecera:inicio -->
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/cabecera.css?v=d9271bb6" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
 <style>#theme,#en-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -360,10 +227,20 @@ if(g==='en'||g==='es')return g;
 var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
 return /^en\b/i.test(n)?'en':'es';}</script>
 
-<header>
-  <div class="wrap mast">
-    <div>
-      <!-- 2026-08-31, pedido del IEBH: el mando de sesión, arriba a la
+<header class="rc-titulo">
+<div class="wrap rc-mast">
+<div class="rc-titulo-texto">
+<p class="eyebrow-iebh"><span class="marca-arbol" aria-hidden="true"></span><span class="lbl"><span class="i-es">Kaccāyana · Sandhi-Kappa · Canon del Sexto Concilio</span><span class="i-en">Kaccāyana · Sandhi-Kappa · Sixth Council Canon</span></span></p>
+<h1 class="rc-h1"><span class="i-es">Solucionador de sandh<span class="dia">i</span>s</span><span class="i-en">Sandh<span class="dia">i</span> Solver</span></h1>
+<p class="tag i-es">Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces,
+      y qué secuencia de aforismos la explica: de Kaccāyana, y del Saddanīti
+      cuando Kaccāyana no la enuncia.</p>
+<p class="tag i-en">Paste a Pāḷi passage: how many sandhis there are, which words
+      they join, and which sequence of rules explains each one — Kaccāyana's,
+      and the Saddanīti's where Kaccāyana has none.</p>
+<div class="rc-insignias"><span class="version-badge" id="vbadge"></span></div>
+</div>
+<div class="rc-lado"><!-- 2026-08-31, pedido del IEBH: el mando de sesión, arriba a la
            DERECHA de la cabecera. Estaba entre los botones de análisis, y ahí
            se leía como una acción del solucionador cuando no lo es: dice quién
            eres, no qué hacer con el texto. Junto al «← Recursos» tapaba el
@@ -371,24 +248,9 @@ return /^en\b/i.test(n)?'en':'es';}</script>
       <button class="icon-btn sesion-arriba" id="entrar-btn" hidden
         aria-label="Iniciar sesión para enviar veredictos"
         data-tip="Iniciar sesión para enviar veredictos">⇥ entrar</button>
-      <!-- 2026-08-30, pedido del IEBH: en modo inglés el título es «Sandhi
-           Solver», y el sobretítulo tampoco puede quedarse en español. Van
-           con los mismos .i-es/.i-en que el resto de la interfaz; la letra
-           en color (.dia) se conserva en los dos, sobre la «i» de Sandhi. -->
-      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl i-es">Kaccāyana · Sandhi-Kappa · Canon del Sexto Concilio</span><span class="lbl i-en">Kaccāyana · Sandhi-Kappa · Sixth Council Canon</span></div>
-      <h1><span class="i-es">Solucionador de sandh<span class="dia">i</span>s</span><span class="i-en">Sandh<span class="dia">i</span> Solver</span></h1>
-      <p class="tag i-es">Pegue un pasaje pāḷi: cuántos sandhis hay, cuáles son las voces,
-      y qué secuencia de aforismos la explica: de Kaccāyana, y del Saddanīti
-      cuando Kaccāyana no la enuncia.</p>
-      <p class="tag i-en">Paste a Pāḷi passage: how many sandhis there are, which words
-      they join, and which sequence of rules explains each one — Kaccāyana's,
-      and the Saddanīti's where Kaccāyana has none.</p>
-      <span class="version-badge" id="vbadge"></span>
-    </div>
-    <div class="hero" id="hero" aria-hidden="true"></div>
-  </div>
-  <div class="wrap">
-    <!-- 2026-08-29: aquí vivía un <details> de tres párrafos con las cifras
+      <div class="hero" id="hero" aria-hidden="true"></div></div>
+</div>
+<div class="wrap rc-debajo"><!-- 2026-08-29: aquí vivía un <details> de tres párrafos con las cifras
          dentro. El IEBH pidió dos frases. Las cifras no se perdieron: bajaron
          al pie, junto a «Fuentes», que es donde ya estaba su compañía; y el
          párrafo del DPD se quitó por duplicado — el pie lo dice desde antes,
@@ -410,8 +272,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
       and choosing silently would be lying by omission. What the engine does not
       know, it leaves unsaid — and the numbers, for what it finds and what it
       misses, are in the footer.</p>
-    </details>
-  </div>
+    </details></div>
 </header>
 
 <main class="wrap">
@@ -437,14 +298,9 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio">↑</button>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 
-<footer class="wrap">
-  <!-- 2026-08-29, pedido del IEBH: el pie abría con la nota de versión y
-       seguía con cuatro párrafos, y eso es mucho pie. Todo eso se pliega
-       aquí dentro; a la vista queda sólo el árbol del IEBH y su crédito,
-       que es lo que el pie de una página del instituto tiene que decir
-       sin que nadie pulse nada. Nada se pierde: está a un clic. -->
-  <details class="revision pie-notas">
-    <summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
+<footer class="rc-pie">
+<div class="wrap">
+<details class="pie-notas"><summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
   <p class="version-foot" id="vfoot"></p>
   <div class="i-es">
   <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11
@@ -513,12 +369,8 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   (canon, aṭṭhakathā and ṭīkā). The lexicon orders and attests; <strong>it is never the
   authority of the analysis</strong>: the authority is Kaccāyana and the edition's text.</p>
   </div>
-  </details>
-
-  <!-- La fórmula inglesa de la licencia es la que ya usan las páginas de
-       capítulo (COPYRIGHT_EN en generar_capitulo.py), para que el sitio diga
-       lo mismo en los dos sitios. -->
-  <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Miguel De Anquín y
+</details>
+<p class="licencia"><span class="marca-lockup" aria-hidden="true"></span><span class="i-es">Preparado por Miguel De Anquín y
   Bhikkhu Nandisena basándose en el capítulo 1 del Kaccāyana y Rūpasiddhi, y también el
   capítulo correspondiente del Saddanīti Suttamālā.<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
@@ -529,6 +381,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   This material may be reproduced for personal use and distributed free of charge.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
+</div>
 </footer>
 
 <script id="motor">
@@ -3887,7 +3740,7 @@ topBtn.addEventListener('click', () => scrollTo({top:0,
   behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}));
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=d9271bb6"></script>
+<script defer src="../../assets/cabecera.js?v=4aacb900"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

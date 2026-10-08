@@ -1,0 +1,147 @@
+/* Base común del sitio — Gramáticas Pāḷi en español
+   FUENTE, no salida, como pali.css: ningún generador escribe este archivo.
+
+   Rediseño de la navegación, etapa 4b (2026-10-08). Lo que comparten TODAS
+   las páginas, en un solo sitio:
+
+     1. la paleta «hoja de palma», clara y oscura;
+     2. las tres familias de letra (Gentium Book Plus, Inter, JetBrains Mono);
+     3. el fondo de la página;
+     4. la marca del IEBH (.marca-arbol, .marca-lockup);
+     5. la etiqueta «borrador».
+
+   Antes la paleta estaba copiada en pali.css, en cabecera.css (con prefijo
+   cab-) y en cada plantilla de recursos/ con nombres propios (--ola, --ink,
+   --soot, --hair, --nila…). Ahora los valores sólo están aquí, con los
+   nombres de pali.css; herramientas/cabecera.py (comprobar_tokens) falla si
+   un valor de la paleta vuelve a aparecer en otra hoja o plantilla.
+
+   La enlaza herramientas/cabecera.py (insertar) en las 26 páginas y en las
+   810 de cada sutta, antes de las hojas de la página.
+
+   El tema oscuro sigue al mecanismo que cada familia de páginas ya tenía,
+   sin uno propio:
+     body.dark                capítulos, páginas de sutta, índices, búsqueda
+     html[data-theme=dark]    recursos/
+     el sistema               nombre y verbo, mientras el lector no elija
+                              (html sin data-theme; su barra lleva
+                              data-tema="medio"). */
+
+/* ── 1 y 2. Paleta y letra ─────────────────────────────────────────
+   Contraste medido de cada par; los textos cumplen AA sobre todas las
+   superficies. El campo de página es el tono MÁS oscuro (--bg = ola) y lo
+   elevado se aclara (--bg2 = ola-2, --bg3 = un paso más de luz). */
+:root {
+  --bg:          #E7E3D6;   /* ola — campo de página; tinta 14,10:1 */
+  --bg2:         #F0EDE4;   /* ola-2 — superficies elevadas */
+  --bg3:         #F6F4EC;   /* hover de lo ya elevado */
+  --text:        #171612;   /* tinta de humo */
+  --text2:       #4E4839;   /* hollín — 7,08:1 sobre --bg */
+  --text3:       #6B6455;   /* 4,57:1 */
+  --border:      #BFB7A0;   /* filete */
+  --border2:     #A89C7F;   /* filete marcado */
+  --accent:      #27414F;   /* nīla, índigo — 8,37:1 */
+  --accent-bg:   rgba(39,65,79,.10);
+  --accent-mid:  #517488;   /* nīla medio: focos, filetes de glosa */
+  --green:       #55611E;
+  --green-bg:    rgba(85,97,30,.12);
+  --haritala:    #5C4008;   /* oropimente: lo que cambia, lo que se corrige */
+  --rakta:       #7E2E23;   /* bermellón: contraejemplo, borrador */
+  --marakata:    #2F6B4A;   /* esmeralda: lo verificado (solucionador) */
+  /* superficies traslúcidas y resaltes */
+  --hover:       rgba(255,255,255,.55);
+  --active:      rgba(255,255,255,.75);
+  --hl:          rgba(92,64,8,.16);     /* resalte oropimente */
+  --hl-ce:       rgba(126,46,35,.14);   /* resalte bermellón */
+  --chip-c:      rgba(92,64,8,.14);
+  --shadow:      rgba(0,0,0,.06);
+  --luz:         radial-gradient(circle at 12% 8%, rgba(255,255,255,.55), transparent 55%);
+  /* las tres familias */
+  --serif:       "Gentium Book Plus", Georgia, serif;
+  --sans:        "Inter", system-ui, sans-serif;
+  --mono:        "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --display:     var(--serif);
+}
+
+/* El oscuro: la luz se apaga y los acentos se aclaran. */
+body.dark,
+html[data-theme="dark"] {
+  --bg: #1A1917; --bg2: #232220; --bg3: #2C2A26;
+  --text: #F4F1E8; --text2: #BDB5A2; --text3: #978F80;
+  --border: #494438; --border2: #5C564A;
+  --accent: #B6D8EE; --accent-bg: rgba(182,216,238,.13); --accent-mid: #8FB6CE;
+  --green: #A5D178; --green-bg: rgba(165,209,120,.14);
+  --haritala: #EFC14E; --rakta: #F09A88; --marakata: #8FCCA8;
+  --hover: rgba(255,255,255,.055); --active: rgba(255,255,255,.085);
+  --hl: rgba(239,193,78,.20); --hl-ce: rgba(240,154,136,.18);
+  --chip-c: rgba(239,193,78,.15);
+  --shadow: rgba(0,0,0,.45);
+  --luz: none;
+}
+/* Nombre y verbo: si el lector no ha elegido, manda el sistema. Los valores
+   son los del bloque de arriba; CSS no deja juntar una consulta de medios y
+   un selector en la misma regla. */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]):has(.cab[data-tema="medio"]) {
+    --bg: #1A1917; --bg2: #232220; --bg3: #2C2A26;
+    --text: #F4F1E8; --text2: #BDB5A2; --text3: #978F80;
+    --border: #494438; --border2: #5C564A;
+    --accent: #B6D8EE; --accent-bg: rgba(182,216,238,.13); --accent-mid: #8FB6CE;
+    --green: #A5D178; --green-bg: rgba(165,209,120,.14);
+    --haritala: #EFC14E; --rakta: #F09A88; --marakata: #8FCCA8;
+    --hover: rgba(255,255,255,.055); --active: rgba(255,255,255,.085);
+    --hl: rgba(239,193,78,.20); --hl-ce: rgba(240,154,136,.18);
+    --chip-c: rgba(239,193,78,.15);
+    --shadow: rgba(0,0,0,.45);
+    --luz: none;
+  }
+}
+
+/* ── 3. El fondo ───────────────────────────────────────────────────
+   La luz suave arriba a la izquierda, como la que cae sobre una hoja de
+   palma; en oscuro se apaga. Con especificidad cero: una página que
+   necesite otro fondo lo pone sin pelear. */
+:where(body) {
+  background-color: var(--bg);
+  background-image: var(--luz);
+  color: var(--text);
+}
+
+/* ── 4. La marca del IEBH ──────────────────────────────────────────
+   Dos archivos por marca, uno por tema, en lugar de teñir uno solo: el
+   imagotipo lleva el punto de la «i» en otro color, y aplanarlo con CSS
+   alteraría la marca. De fondo y no en <img> para que el navegador pida
+   sólo la del tema en uso. Van al lado del nombre del instituto, así que son
+   decorativas. Cada página ajusta el tamaño y el margen donde lo necesite. */
+.marca-arbol {
+  display: inline-block; flex: none;
+  width: 26px; height: 26px;
+  background: url(iebh-arbol-granate.svg) center/contain no-repeat;
+}
+.marca-lockup {
+  display: block;
+  width: 180px; height: 75px;
+  margin: 0 0 16px;
+  background: url(iebh-imagotipo-granate.svg) left center/contain no-repeat;
+}
+body.dark .marca-arbol,
+html[data-theme="dark"] .marca-arbol { background-image: url(iebh-arbol-blanco.svg); }
+body.dark .marca-lockup,
+html[data-theme="dark"] .marca-lockup { background-image: url(iebh-imagotipo-blanco.svg); }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]):has(.cab[data-tema="medio"]) .marca-arbol { background-image: url(iebh-arbol-blanco.svg); }
+  html:not([data-theme]):has(.cab[data-tema="medio"]) .marca-lockup { background-image: url(iebh-imagotipo-blanco.svg); }
+}
+
+/* ── 5. «borrador» ─────────────────────────────────────────────────
+   La misma etiqueta en las tarjetas de los índices, en el bloque del título
+   de cada recurso, en los resultados de /buscar/ y en las páginas de cada
+   sutta. */
+.borrador {
+  display: inline-block; vertical-align: .1em;
+  margin: 0; padding: 1px 6px;
+  font: 600 10.5px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--rakta); background: transparent;
+  border: 1px solid var(--rakta); border-radius: 2px;
+}
