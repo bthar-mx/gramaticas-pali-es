@@ -139,6 +139,7 @@ TEXTOS_JS = {
         "grupos": {"suttas": "Suttas", "glosario": "Glossary", "raices": "Roots",
                    "paradigmas": "Paradigms", "recursos": "Resources"},
         "borrador": "draft",
+        "solo_es": "No English text yet",
         "cargando": "Loading the index…",
         "error": "The search index could not be loaded.",
         "n_resultados": "{n} results for «{q}»",
@@ -258,21 +259,28 @@ def glosario(lengua, d):
         nand = [d["nandisena"][i] for i in g["n"]]
         smith = [d["conspectus"][i] for i in g["c"]]
         texto = ""
+        solo_es = False
         # la traducción que enseña la ficha, por la misma prelación que el
         # lema: la lista normativa, Nandisena, Smith. En inglés, lo que la
-        # página publica en inglés; si no hay, el español, como la página.
+        # página publica en inglés; si no hay, el español, como la página,
+        # y rotulado igual que en ella: «ES», sólo en español (el séptimo
+        # campo de la entrada, que buscar.js convierte en la etiqueta).
         for capa in (norma, nand, smith):
             for e in capa:
                 t = (e.get("en") if lengua == "en" else None) or e.get("es")
                 if t:
                     texto = t
+                    solo_es = lengua == "en" and not e.get("en")
                     break
             if texto:
                 break
         texto = corto(plano(re.sub(r"\*\*?|`", "", texto)))
         otras = " ".join(p for p, _f in g.get("gr", [])[1:])
-        out.append(["glosario", nfc(g["p"]), texto, url + "#g-" + g["id"],
-                    claves(otras, quitar=g["p"])])
+        fila = ["glosario", nfc(g["p"]), texto, url + "#g-" + g["id"],
+                claves(otras, quitar=g["p"])]
+        if solo_es:
+            fila += [0, "es"]
+        out.append(fila)
     return out
 
 
@@ -454,7 +462,8 @@ def main():
         indice = {
             "_nota": "Generado por herramientas/generar_busqueda.py; no editar a mano. "
                      "Cada entrada: [tipo, título, texto, dirección desde la raíz del "
-                     "sitio, claves normalizadas, borrador].",
+                     "sitio, claves normalizadas, borrador, lengua del texto "
+                     "si no es la de la página].",
             "tipos": list(TIPOS),
             "borradores": borradores_por_sutta(lengua),
             "e": entradas,

@@ -13,8 +13,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/base.css?v=4aacb900" rel="stylesheet"/>
-<link href="../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/base.css?v=70c73f6b" rel="stylesheet"/>
+<link href="../../assets/recursos.css?v=70c73f6b" rel="stylesheet"/>
 <!-- cabecera:fin -->
 <style>
 /* La paleta, la letra, el bloque del título, el índice lateral, la barra
@@ -158,7 +158,7 @@ footer.rc-pie p{max-width:78ch}
 @media print{.bar,.sidebar,#top-btn,.mas{display:none!important}body{padding-left:0}tr.det-row[hidden]{display:table-row!important}}
 </style>
 <!-- cabecera:inicio -->
-<link href="../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=70c73f6b" rel="stylesheet"/>
 <style>#theme,#lang-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 </head>
@@ -531,7 +531,7 @@ medirBarra();addEventListener('resize',medirBarra);
 /* la barra crece al pintarse sus filtros y su cuenta: se vuelve a medir (etapa 4b) */
 if(window.ResizeObserver)new ResizeObserver(medirBarra).observe(barEl);
 const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
-function pintarBarra(oc){root.classList.toggle('sin-barra',oc);burger.setAttribute('aria-expanded',oc?'false':'true')}
+function pintarBarra(oc){root.classList.toggle('sin-barra',oc)} /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
 /* plegado, el ☰ se queda en la esquina, donde estaba (recursos.css) */
@@ -603,7 +603,7 @@ textos();render();
 })();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=4aacb900"></script>
+<script defer src="../../assets/cabecera.js?v=70c73f6b"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

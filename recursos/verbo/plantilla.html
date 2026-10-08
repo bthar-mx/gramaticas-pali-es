@@ -951,8 +951,15 @@ const VERSION_DATE = '__VERSION_DATE__';
       const d = tr('tiempos', inf.titulo);
       mete(d, 'inflexiones', a, ui('pestanas','inflexiones'));
       if (inf.pali) mete(inf.pali, 'inflexiones', a, d);
-      inf.tabla.slice(2).forEach(fila => fila.slice(1).forEach(
-        f => mete(f, 'inflexiones', a, d)));
+      /* Las terminaciones, de la misma tabla que se pinta: «filas» de
+         inflexiones.json. Hasta aquí se leía «tabla», que es el campo de
+         verbo.json —el documento reducido que la página dejó en la v1.3—;
+         ninguna de las ocho inflexiones lo trae ya, y el índice se detenía
+         en la primera sin indexar nada. «ī - i» son dos terminaciones, como
+         en terminacion(). */
+      inf.filas.forEach(fila => fila.slice(1).forEach(
+        c => String(c || '').split(' - ').forEach(
+          f => mete(f, 'inflexiones', a, d))));
     });
 
     DATA.escaleras.forEach((e,i) => {
@@ -1364,7 +1371,7 @@ const VERSION_DATE = '__VERSION_DATE__';
   function ancha(){ return window.innerWidth > 900; }
   function plegarIndice(oculto){
     raiz.classList.toggle('sin-barra', oculto);
-    burger.setAttribute('aria-expanded', oculto ? 'false' : 'true');
+    /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
   }
   function cerrarIndice(){ sbEl.classList.remove('open'); velo.classList.remove('on'); }
   burger.addEventListener('click', () => {

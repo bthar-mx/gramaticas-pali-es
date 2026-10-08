@@ -8,7 +8,8 @@
      2. las tres familias de letra (Gentium Book Plus, Inter, JetBrains Mono);
      3. el fondo de la página;
      4. la marca del IEBH (.marca-arbol, .marca-lockup);
-     5. la etiqueta «borrador».
+     5. la etiqueta «borrador»;
+     6. la etiqueta «ES» (sólo en español) y el texto oculto .vh.
 
    Antes la paleta estaba copiada en pali.css, en cabecera.css (con prefijo
    cab-) y en cada plantilla de recursos/ con nombres propios (--ola, --ink,
@@ -144,4 +145,22 @@ html[data-theme="dark"] .marca-lockup { background-image: url(iebh-imagotipo-bla
   white-space: nowrap;
   color: var(--rakta); background: transparent;
   border: 1px solid var(--rakta); border-radius: 2px;
+}
+
+/* ── 6. «ES»: sólo en español ─────────────────────────────────────
+   En una vista inglesa, el texto que todavía no tiene inglés sale en
+   español y lo dice: la etiqueta se ve («ES») y el lector de pantalla oye
+   «No English text yet» (el .vh de dentro); el texto lleva lang="es".
+   La usan las fichas del glosario y sus resultados de /en/buscar/. */
+.solo-es {
+  display: inline-block; vertical-align: .1em;
+  margin: 0 6px 0 0; padding: 0 5px;
+  font: 600 10px/1.5 var(--mono); letter-spacing: .08em;
+  font-style: normal; white-space: nowrap;
+  color: var(--text2); background: transparent;
+  border: 1px solid var(--text2); border-radius: 2px;
+}
+.vh {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
 }

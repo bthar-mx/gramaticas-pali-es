@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/base.css?v=4aacb900" rel="stylesheet"/>
-<link href="../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/base.css?v=70c73f6b" rel="stylesheet"/>
+<link href="../../assets/recursos.css?v=70c73f6b" rel="stylesheet"/>
 <!-- cabecera:fin -->
 <style>
 /* La paleta, la letra, el bloque del título, el índice lateral, la barra
@@ -172,7 +172,7 @@ tbody tr:hover{background:var(--hover)}
 .revision>p{margin:9px 0 0}
 </style>
 <!-- cabecera:inicio -->
-<link href="../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=70c73f6b" rel="stylesheet"/>
 <style>#theme{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -749,11 +749,12 @@ const anchaBastante = () => innerWidth > 900;
 function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
-  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
   b.setAttribute('data-tip', oculta
     ? 'Mostrar otra vez el índice al lado del texto.'
     : 'Aparta el índice y el texto ocupa su sitio.');
-  b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  /* aria-label y aria-expanded de los tres ☰ los pone cabecera.js
+     (rotularIndice), que sabe también si el cajón del teléfono está
+     abierto. */
 }
 pintarBarra(false);
 /* Al estrecharse la ventana la barra pasa a cajón: que no se quede plegada
@@ -829,7 +830,7 @@ document.getElementById('sbnav').addEventListener('click', e => {
 render();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=4aacb900"></script>
+<script defer src="../../assets/cabecera.js?v=70c73f6b"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

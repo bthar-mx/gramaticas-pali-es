@@ -501,7 +501,7 @@ medirBarra();addEventListener('resize',medirBarra);
 /* la barra crece al pintarse sus filtros y su cuenta: se vuelve a medir (etapa 4b) */
 if(window.ResizeObserver)new ResizeObserver(medirBarra).observe(barEl);
 const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
-function pintarBarra(oc){root.classList.toggle('sin-barra',oc);burger.setAttribute('aria-expanded',oc?'false':'true')}
+function pintarBarra(oc){root.classList.toggle('sin-barra',oc)} /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
 /* plegado, el ☰ se queda en la esquina, donde estaba (recursos.css) */

@@ -28,10 +28,19 @@
      "Pasado (atīta)",
      "Futuro (anāgata)",
      "Presente (paccuppanna)",
-     "Imperative (āṇatti)",
-     "Supposition (parikappa)",
-     "Conditional (kālātipatti)."
-    ]
+     "Imperativo (āṇatti)",
+     "Suposición (parikappa)",
+     "Condicional (kālātipatti)."
+    ],
+    "_corregido": {
+     "fecha": "2026-10-08",
+     "que": "nombres que el documento dejó en inglés, cambiados por el español que la página ya da a esas mismas inflexiones (sección «Inflexiones» y usos de cada una); pendiente de la revisión del IEBH",
+     "original": [
+      "Imperative (āṇatti)",
+      "Supposition (parikappa)",
+      "Conditional (kālātipatti)."
+     ]
+    }
    },
    {
     "texto": "tres personas (tipurisa)",
@@ -82,14 +91,22 @@
     "nota": "",
     "sub": [
      "Presente (vattamānā)",
-     "Imperative (pañcamī)",
+     "Imperativo (pañcamī)",
      "Potencial (sattamī)",
      "Imperfecto (hiyyattanī)",
      "Perfecto (parokkhā)",
      "Aoristo (ajjatanī)",
      "Futuro (bhavissantī)",
-     "Conditional (kālātipatti)"
-    ]
+     "Condicional (kālātipatti)"
+    ],
+    "_corregido": {
+     "fecha": "2026-10-08",
+     "que": "nombres que el documento dejó en inglés, cambiados por el español que la página ya da a esas mismas inflexiones (sección «Inflexiones» y usos de cada una); pendiente de la revisión del IEBH",
+     "original": [
+      "Imperative (pañcamī)",
+      "Conditional (kālātipatti)"
+     ]
+    }
    },
    {
     "texto": "dos grupos de inflexiones",
@@ -135,12 +152,19 @@
      "Perfecto (parokkhā)",
      "Aoristo (ajjatanī)",
      "Futuro (bhavissantī)",
-     "Conditional (kālātipatti)"
+     "Condicional (kālātipatti)"
     ],
     "_revisado_iebh": {
      "fecha": "2026-09-27",
      "por": "IEBH",
      "original": "En las conjugaciones que siguen, denominadas “no todas las raíces” (asabbadhātuka), opcionalmente se inserta ‘i’ antes del sufijo de inflexión verbal."
+    },
+    "_corregido": {
+     "fecha": "2026-10-08",
+     "que": "nombres que el documento dejó en inglés, cambiados por el español que la página ya da a esas mismas inflexiones (sección «Inflexiones» y usos de cada una); pendiente de la revisión del IEBH",
+     "original": [
+      "Conditional (kālātipatti)"
+     ]
     }
    }
   ]
