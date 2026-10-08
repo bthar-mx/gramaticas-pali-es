@@ -30,6 +30,7 @@ import json
 import os
 import re
 import sys
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JS = os.path.join(RAIZ, "nuestro", "js")
@@ -238,7 +239,8 @@ def main():
     html = inyectar(html, "/*__MOTOR__*/", "/*__FIN_MOTOR__*/", empaquetar())
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "solucionador"))  # la barra común del sitio
 
     avisos = []
     if not os.path.exists(os.path.join(LEXICO, "indice.json")):

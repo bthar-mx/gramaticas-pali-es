@@ -1174,13 +1174,11 @@ def render_kanda_nav(suttas):
 
 
 def version_assets():
-    """Huella de pali.css + pali.js para invalidar la caché al cambiarlos."""
-    import hashlib
-    h = hashlib.md5()
-    for f in ("pali.css", "pali.js"):
-        with open(os.path.join(RAIZ, "site", "assets", f), "rb") as fh:
-            h.update(fh.read())
-    return h.hexdigest()[:8]
+    """Huella de pali.css, pali.js y la cabecera común para invalidar la
+    caché al cambiarlos. Vive en cabecera.py, que la usa para su hoja y su
+    guion: un solo ?v= para todo el sitio."""
+    import cabecera
+    return cabecera.version_assets()
 
 
 def render(cap, meta, notas):
@@ -1215,6 +1213,7 @@ def render(cap, meta, notas):
     otra = IDIOMAS["es" if es_en else "en"]
     otra_ruta = ruta_salida(meta, otra)
     alt_html = lang_btn = lang_script = ""
+    alt_url = None
     if os.path.exists(otra_ruta):
         alt_url = "/{0}{1}/{2}/".format(
             "" if es_en else "en/", meta["obra_slug"], meta["slug"])
@@ -1243,10 +1242,12 @@ def render(cap, meta, notas):
         lang_script = ('<script>try{{if(paliLang()===\'{1}\')'
                        'location.replace(\'{0}\'+location.hash)}}catch(e){{}}</script>'
                        .format(alt_url, otra["lang"]))
-    return PLANTILLA.format(
+    # El «← Kaccāyana-Byākaraṇaṃ» de la cabecera se fue con la barra común
+    # (2026-10-08): ahora lo hace su «Kaccāyana», que en inglés abre el
+    # índice en inglés (antes llevaba a la URL española sin más).
+    pagina = PLANTILLA.format(
         lang=L["lang"], raiz=raiz, alt=alt_html, lang_btn=lang_btn,
         lang_script=lang_script,
-        volver=raiz + meta["obra_slug"] + "/" if es_en else "../",
         obra=meta["obra"], obra_sub=obra_sub,
         obra_display=marcar_diacriticos(escapar_html(meta["obra"])),
         insignia=insignia_version(meta),
@@ -1285,6 +1286,11 @@ def render(cap, meta, notas):
         assets_v=version_assets(),
         cuerpo="".join(cuerpo),
     )
+    # La barra común: su ES|EN pulsa el #lang-btn de la cabecera del
+    # capítulo, que guarda la elección y conserva el #ancla.
+    import cabecera
+    return cabecera.insertar(pagina, "capitulo", idioma=L["lang"],
+                             otra_url=alt_url, raiz=raiz)
 
 
 def ruta_salida(meta, idioma=None):
@@ -1366,7 +1372,6 @@ return /^en\\b/i.test(n)?'en':'es';}}</script>
 <div id="main">
 <div id="inner">
 <div class="page-hdr">
-<a class="idx-back" href="{volver}">← {obra}</a>
 <div class="hdr-marca"><span class="marca-arbol"></span></div>
 <div class="hdr-grammar">{obra_display}</div>
 <div class="hdr-sub">{obra_sub}</div>

@@ -34,6 +34,7 @@ import os
 import re
 import sys
 import unicodedata
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIR = os.path.join(RAIZ, "recursos", "clasificacion")
@@ -183,7 +184,8 @@ def main():
     html = pl[:m.start()] + datos + pl[m.end():]
     html = html.replace("__VERSION_DATE__", d["fecha"]).replace("__VERSION__", d["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "clasificacion"))  # la barra común del sitio
 
     cuenta = {}
     for f in filas:

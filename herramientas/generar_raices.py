@@ -27,6 +27,7 @@ import os
 import re
 import sys
 import unicodedata
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
@@ -306,7 +307,8 @@ def main():
             + plantilla[marca.end():])
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "raices"))  # la barra común del sitio
 
     raices = datos["raices"]
     con_skt = sum(1 for r in raices if r["sanscrito"])

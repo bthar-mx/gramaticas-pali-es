@@ -86,7 +86,7 @@
 
   /* ---------- barra lateral ---------- */
   .sidebar{
-    position:fixed;left:0;top:0;bottom:0;width:238px;z-index:60;
+    position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;z-index:60;
     overflow-y:auto;background:var(--aside);
     border-right:1px solid var(--rule);padding:52px 0 40px;
     transition:transform .22s ease;
@@ -637,7 +637,6 @@ else if(_d==='0')document.documentElement.setAttribute('data-theme','light');}ca
 <div class="marco">
 <main class="sheet">
 
-  <a class="volver-sitio" href="../" id="volver">← Recursos · Gramáticas Pāḷi</a>
 
   <header>
     <div>
@@ -1663,7 +1662,6 @@ const VERSION_DATE = '__VERSION_DATE__';
     document.title = ui('titulo_llano');
     document.getElementById('h1').innerHTML = ui('titulo');
     document.getElementById('eyebrow').textContent = ui('eyebrow');
-    document.getElementById('volver').textContent = ui('volver');
     document.getElementById('pie-sum').textContent = ui('pie_sum');
     document.getElementById('licencia-txt').innerHTML = ui('licencia');
     document.getElementById('sb-titulo').textContent = ui('sb_titulo');

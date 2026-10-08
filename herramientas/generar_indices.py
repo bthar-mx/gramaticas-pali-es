@@ -28,6 +28,8 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 
 from generar_capitulo import CAPITULOS, parsear, version_assets  # noqa: E402
+import cabecera  # noqa: E402
+from generar_secciones import mapa as mapa_secciones  # noqa: E402
 
 # ---------------------------------------------------------------- datos
 
@@ -79,8 +81,8 @@ OBRAS = [
      "De Buddhappiya. Reordena el material de Kaccāyana por temas."),
     (None, "Saddanīti", "De Aggavaṃsa. La gramática pāḷi más extensa."),
     (None, "Nirutti-dīpanī",
-     "De Ledi Sayadaw. Una gramática moderna en siete capítulos en el mismo "
-     "orden que Kaccāyana."),
+     "De Ledi Sayadaw. Explicación propia, en pāḷi, de los aforismos de la "
+     "gramática de Moggallāna."),
 ]
 
 RECURSOS = [
@@ -106,7 +108,7 @@ RECURSOS = [
      "presentaciones de clase; los paradigmas de <i>otros paradigmas</i>, del "
      "<i>Higher Pali Course</i> del Ven. Buddhadatta Thera."),
     ("paradigmas/", "__PARADIGMAS_BADGE__", "Paradigmas de declinación",
-     "Los 83 paradigmas de declinación nominal y pronominal de la lengua "
+     "Los __N_PARADIGMAS__ paradigmas de declinación nominal y pronominal de la lengua "
      "pāḷi, con "
      "todas las variantes de cada forma: nombres por género y tema, "
      "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
@@ -224,10 +226,10 @@ EN = {
         "By Buddhappiya. It rearranges Kaccāyana's material by topic.",
     "De Aggavaṃsa. La gramática pāḷi más extensa.":
         "By Aggavaṃsa. The most extensive of the Pāḷi grammars.",
-    "De Ledi Sayadaw. Una gramática moderna en siete capítulos en el mismo "
-    "orden que Kaccāyana.":
-        "By Ledi Sayadaw. A modern grammar in seven chapters, in the same "
-        "order as Kaccāyana.",
+    "De Ledi Sayadaw. Explicación propia, en pāḷi, de los aforismos de la "
+    "gramática de Moggallāna.":
+        "By Ledi Sayadaw. His own explanation, in Pāḷi, of the aphorisms of "
+        "Moggallāna's grammar.",
 
     # --- Kaccāyana -----------------------------------------------------
     "Gramática de Kaccāyana": "Kaccāyana's grammar",
@@ -310,11 +312,11 @@ EN = {
         "<i>other paradigms</i>, from the <i>Higher Pali Course</i> of Ven. "
         "Buddhadatta Thera.",
     "Paradigmas de declinación": "Declension paradigms",
-    "Los 83 paradigmas de declinación nominal y pronominal de la lengua "
+    "Los __N_PARADIGMAS__ paradigmas de declinación nominal y pronominal de la lengua "
     "pāḷi, con todas las variantes de cada forma: nombres por género y tema, "
     "pronombres, numerales y los sufijos que son inflexiones. Buscador que "
     "ignora los diacríticos y filtros por género y por tema.":
-        "The 83 paradigms of nominal and pronominal declension in Pāḷi, with "
+        "The __N_PARADIGMAS__ paradigms of nominal and pronominal declension in Pāḷi, with "
         "every variant of each form: nouns by gender and stem, pronouns, "
         "numerals and the suffixes that are inflections. Search ignores "
         "diacritics, with filters by gender and by stem.",
@@ -486,12 +488,15 @@ document.body.classList.add('dark');}}catch(e){{}}
    español es el que queda por defecto: es la lengua del proyecto, y a ella
    van a parar las lenguas que no son el inglés. */
 function paliLang(){{var g=null;
+/* ?lang=en|es en la dirección manda sobre todo lo demás, sin guardarse: es
+   como abren estos índices en inglés los capítulos de /en/ desde la barra
+   común (2026-10-08), y como ya lo hacían el análisis y la clasificación. */
+var q=/[?&]lang=(en|es)(&|$)/.exec(location.search);if(q)return q[1];
 try{{g=localStorage.getItem('pali_lang');}}catch(e){{}}
 if(g==='en'||g==='es')return g;
 var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
 return /^en\\b/i.test(n)?'en':'es';}}</script>
-<main class="idx">
-{volver}
+<main class="{clase_main}">
 <p class="idx-eyebrow"><span class="marca-arbol"></span>{eyebrow}</p>
 <h1 class="display">{h1}</h1>
 {cuerpo}
@@ -541,7 +546,7 @@ return /^en\\b/i.test(n)?'en':'es';}}</script>
     l.setAttribute('aria-label', en ? 'Ver en español' : 'View in English');
     l.setAttribute('data-tip', en ? 'Ver en español' : 'View in English');
   }}
-  if (paliLang() === 'en') {{ document.body.classList.add('en'); }}
+  {arranque_en}
   l.onclick = function () {{
     document.body.classList.toggle('en');
     try {{ localStorage.setItem('pali_lang', document.body.classList.contains('en') ? 'en' : 'es'); }} catch (e) {{}}
@@ -714,73 +719,255 @@ def cuenta_raices():
 
 # ---------------------------------------------------------------- páginas
 
-def portada(pub):
-    n = len(pub)
-    tarjetas = []
-    for href, titulo, desc in OBRAS:
-        if href == "kaccayana/":
-            tarjetas.append(tarjeta(
-                href,
-                bi("{0} de {1} capítulos".format(n, len(CAPITULOS_KACC)),
-                   "{0} of {1} chapters".format(n, len(CAPITULOS_KACC))),
-                titulo, desc, traducir_titulo=False))
-        else:
-            tarjetas.append(tarjeta(None, "prevista", titulo, desc, wip=True,
-                                    traducir_titulo=False))
+# La portada (rediseño de la navegación, etapa 1; mesa de trabajo 1 del diseño
+# aprobado por el IEBH el 2026-10-08). Los rangos de § salen de
+# comun/concordancia.json (por generar_secciones.mapa), los recuentos de los
+# datos de cada recurso; aquí no se teclea ningún número.
 
-    cuerpo = (
-        '<p class="idx-sub">' + bi('Traducciones de las gramáticas clásicas '
-        'de la lengua pāḷi') + '</p>\n'
-        '<p class="idx-lede">' + bi(
+# Estado de los capítulos de Kaccāyana que no están publicados.
+ESTADO_KACC = {6: ("en preparación", "in preparation")}
+
+# Los recursos de la portada, en tres grupos por lo que hace el estudiante.
+# (href, título es, título en, línea es, línea en, borrador). Los «__X__» se
+# rellenan con los datos en grupos_recursos().
+GRUPOS_RECURSOS = [
+    (("Consultar", "Look up"), [
+        ("glosario/", "Glosario gramatical", "Grammatical glossary",
+         "Nandisena, el <i>Conspectus Terminorum</i> de Smith y la terminología "
+         "de estas traducciones",
+         "Nandisena, Smith's <i>Conspectus Terminorum</i> and the terminology "
+         "of these translations", False),
+        ("raices/", "Raíces", "Roots",
+         "Las __N_RAICES__ raíces de <i>Saddanīti</i>, con <i>Dhātupāṭha</i> y "
+         "<i>Dhātumañjūsā</i>",
+         "The __N_RAICES_EN__ roots of <i>Saddanīti</i>, with <i>Dhātupāṭha</i> "
+         "and <i>Dhātumañjūsā</i>", False),
+        ("paradigmas/", "Paradigmas", "Paradigms",
+         # texto del IEBH, 2026-10-08
+         "Declinación nominal y pronominal · <i>vibhatti-paccaya</i>, "
+         "sufijos-inflexiones",
+         "Nominal and pronominal declension · <i>vibhatti-paccaya</i>, "
+         "inflectional suffixes", False),
+    ]),
+    (("Derivar y practicar", "Derive and practise"), [
+        ("sandhi/", "Sandhi", "Sandhi",
+         "Las __N_REGLAS__ reglas de combinación eufónica y __N_FORMAS__ formas, "
+         "paso a paso",
+         "The __N_REGLAS__ rules of euphonic combination and __N_FORMAS__ "
+         "forms, step by step", False),
+        ("solucionador/", "Solucionador de sandhis", "Sandhi solver",
+         "Separar un pasaje pāḷi en sus voces, con la secuencia de cada sandhi",
+         "Split a Pāḷi passage into its words, with the sequence of each sandhi",
+         False),
+        ("nombre/", "Formación del nombre", "Formation of the noun",
+         "<i>pācako</i>, de la raíz al nominativo, paso a paso",
+         "<i>pācako</i>, from the root to the nominative, step by step", False),
+        ("verbo/", "El verbo", "The verb",
+         "Las inflexiones del verbo y __N_PARADIGMAS_VERBO__ paradigmas de "
+         "conjugación",
+         "The inflections of the verb and __N_PARADIGMAS_VERBO__ conjugation "
+         "paradigms", False),
+    ]),
+    (("Estudiar los suttas", "Study the suttas"), [
+        ("clasificacion/", "Clasificación de los suttas",
+         "Classification of the suttas",
+         "Saññā, adhikāra, paribhāsā y vidhi, __RANGO_CLASIFICACION__",
+         "Saññā, adhikāra, paribhāsā and vidhi, __RANGO_CLASIFICACION__", True),
+        ("analisis/", "Análisis según Visuddhāyuṃ",
+         "Analysis following Visuddhāyuṃ",
+         "Clase, aṅga, funciones y ejemplo de cada sutta, __RANGO_ANALISIS__",
+         "Class, aṅga, roles and example of each sutta, __RANGO_ANALISIS__",
+         True),
+        ("casos/", "Usos de las inflexiones", "Uses of the inflections",
+         "Qué expresa cada inflexión, según <i>Rūpasiddhi</i>",
+         "What each inflection expresses, following <i>Rūpasiddhi</i> "
+         "(in Spanish)", True),
+        ("comentarios/", "Comentarios", "Commentaries",
+         "Las obras de la escuela gramatical de Kaccāyana",
+         "The works of the Kaccāyana school of grammar", True),
+    ]),
+]
+
+NUMEROS = {1: ("Una", "One"), 2: ("dos", "two"), 3: ("tres", "three"),
+           4: ("cuatro", "four"), 5: ("cinco", "five"), 6: ("seis", "six")}
+
+
+def rango(ns):
+    ns = sorted(ns)
+    return "§{0}–§{1}".format(ns[0], ns[-1]) if ns else ""
+
+
+def rango_analisis():
+    """§ mínimo y máximo de las filas de recursos/analisis/datos/."""
+    p = os.path.join(RAIZ, "recursos", "analisis", "meta.json")
+    if not os.path.exists(p):
+        return ""
+    m = json.load(open(p, encoding="utf-8"))
+    ns = []
+    for f in m.get("capitulos", []):
+        d = json.load(open(os.path.join(RAIZ, "recursos", "analisis", "datos", f),
+                           encoding="utf-8"))
+        ns += [s["n"] for s in d["suttas"]]
+    return rango(ns)
+
+
+def rango_clasificacion():
+    p = os.path.join(RAIZ, "recursos", "clasificacion", "datos.json")
+    if not os.path.exists(p):
+        return ""
+    return rango(int(k) for k in json.load(open(p, encoding="utf-8"))["suttas"])
+
+
+def grupos_recursos():
+    """Los tres grupos de la portada, con los números tomados de los datos."""
+    miles = lambda n: "{0:,}".format(n).replace(",", ".")
+    rai = cuenta_raices() or (0, 0, 0, 0)
+    sandhi = formas_sandhi() or (0, 0)
+    verbo = cuenta_verbo() or (0, 0)
+    valores = {
+        "__N_RAICES__": miles(rai[0]), "__N_RAICES_EN__": "{0:,}".format(rai[0]),
+        "__N_PARADIGMAS__": str(tablas_paradigmas() or 0),
+        "__N_REGLAS__": str(sandhi[0]), "__N_FORMAS__": str(sandhi[1]),
+        "__N_PARADIGMAS_VERBO__": str(verbo[1]),
+        "__RANGO_CLASIFICACION__": rango_clasificacion(),
+        "__RANGO_ANALISIS__": rango_analisis(),
+    }
+    bloques = []
+    for (g_es, g_en), items in GRUPOS_RECURSOS:
+        tarjetas = []
+        for href, t_es, t_en, d_es, d_en, borrador in items:
+            for k, v in valores.items():
+                d_es, d_en = d_es.replace(k, v), d_en.replace(k, v)
+            etiqueta = (' <span class="ini-borrador">' + bi("borrador", "draft")
+                        + '</span>') if borrador else ""
+            tarjetas.append(
+                '<li><a class="ini-rec" href="recursos/{0}">'
+                '<span class="ini-rec-t">{1}{2}</span>'
+                '<span class="ini-rec-d">{3}</span></a></li>'.format(
+                    href, bi(t_es, t_en), etiqueta, bi(d_es, d_en)))
+        bloques.append(
+            '<div class="ini-grupo">\n<h3>{0}</h3>\n<ul class="ini-recs">\n{1}\n</ul>\n</div>'
+            .format(bi(g_es, g_en), "\n".join(tarjetas)))
+    return "\n".join(bloques)
+
+
+def portada(pub):
+    secc = mapa_secciones()
+    caps = secc["capitulos"]
+    por_num = {c["num"]: (slug, c) for slug, c in caps.items()}
+    total = rango(int(k) for k in secc["secciones"])
+
+    # Kaccāyana: ocho baldosas, las publicadas con su rango de §
+    baldosas = []
+    for num, titulo, _clave, _desc in CAPITULOS_KACC:
+        nombre = titulo.replace("-Kappa", "")
+        if num in pub and num in por_num:
+            slug, c = por_num[num]
+            baldosas.append(
+                '<li><a class="ini-cap" href="kaccayana/{0}/">'
+                '<span class="ini-cap-n">{1}</span>'
+                '<span class="ini-cap-t">{2}</span>'
+                '<span class="ini-cap-r">§{3}–§{4}</span></a></li>'.format(
+                    slug, num, nombre, c["desde"], c["hasta"]))
+        else:
+            es, en = ESTADO_KACC.get(num, ("prevista", "planned"))
+            baldosas.append(
+                '<li><div class="ini-cap pend">'
+                '<span class="ini-cap-n">{0}</span>'
+                '<span class="ini-cap-t">{1}</span>'
+                '<span class="ini-cap-r">{2}</span></div></li>'.format(
+                    num, nombre, bi(es, en)))
+
+    n_pub = len(pub)
+    kacc = OBRAS[0]
+    previstas = [o for o in OBRAS if not o[0]]
+    en_curso = len(OBRAS) - len(previstas)
+    resumen = bi("{0} traducción en curso, {1} previstas".format(
+                     NUMEROS[en_curso][0], NUMEROS[len(previstas)][0]),
+                 "{0} translation in progress, {1} planned".format(
+                     NUMEROS[en_curso][1], NUMEROS[len(previstas)][1]))
+    obra = (
+        '<article class="ini-obra">\n'
+        '<div class="ini-obra-cab"><h3><a href="kaccayana/">{titulo}</a></h3>'
+        '<span class="ini-estado">{estado}</span></div>\n'
+        '<p class="ini-obra-d">{desc}</p>\n'
+        '<ul class="ini-caps">\n{baldosas}\n</ul>\n'
+        '</article>').format(
+            titulo=kacc[1], desc=bi(kacc[2]), baldosas="\n".join(baldosas),
+            estado=bi("{0} de {1} capítulos · {2}".format(n_pub, len(CAPITULOS_KACC), total),
+                      "{0} of {1} chapters · {2}".format(n_pub, len(CAPITULOS_KACC), total)))
+    otras = "\n".join(
+        '<li class="ini-prev"><span class="ini-prev-e">{0}</span>'
+        '<span class="ini-prev-t">{1}</span><span class="ini-prev-d">{2}</span></li>'
+        .format(bi("prevista"), titulo, bi(desc)) for _h, titulo, desc in previstas)
+
+    heroe = (
+        '<p class="idx-lede ini-lede">' + bi(
             'Traducciones al español de las gramáticas clásicas pāḷi, con '
             'glosario terminológico común y concordancia entre las obras. '
             'Un término pāḷi se traduce siempre igual en todas ellas.',
             'English translations of the classical Pāḷi grammars, with a '
             'shared terminological glossary and a concordance between the '
             'works. A Pāḷi term is always translated the same way in all of '
-            'them.') + '</p>\n\n'
-        '<h2>' + bi('Obras') + '</h2>\n{0}\n\n'
-        '<h2>' + bi('Recursos') + '</h2>\n{1}\n\n'
-        '<h2>' + bi('Clases', 'Classes') + '</h2>\n{2}\n'
-    ).format(lista(tarjetas), lista([tarjeta(
-        "recursos/", None, "Material de apoyo",
-        "Reglas de combinación eufónica (<i>sandhi</i>), tablas y glosarios "
-        "de referencia para el estudio de la lengua.")]),
+            'them.') + '</p>\n'
+        # La caja grande. En esta etapa sólo lleva a un §: la misma función
+        # que la barra (cabecera.js). Una palabra no se busca —todavía no hay
+        # búsqueda en todo el sitio— y se dice, con el camino a los recursos,
+        # que tienen cada uno su buscador.
+        '<form class="ini-ir" data-ir-sutta="" data-palabras="" novalidate="">\n'
+        '<label for="ini-ir-n">' + bi('Ir a un sutta o buscar en todo el sitio',
+                                      'Go to a sutta or search the whole site')
+        + '</label>\n'
+        '<div class="ini-ir-fila"><input id="ini-ir-n" name="n" type="text" '
+        'autocomplete="off" enterkeyhint="go" placeholder="§ 290" '
+        'aria-describedby="ini-ir-nota"/>'
+        '<button type="submit">' + bi('Ir', 'Go') + '</button></div>\n'
+        '<p class="ini-ir-nota" id="ini-ir-nota">' + bi(
+            'Un número lleva al sutta en su capítulo ({0} publicados). La '
+            'búsqueda de palabras en todo el sitio llega en una etapa '
+            'posterior.'.format(total),
+            'A number takes you to the sutta in its chapter ({0} published). '
+            'Word search across the whole site comes in a later stage.'
+            .format(total)) + '</p>\n'
+        '<p class="ir-aviso" role="status" aria-live="polite" hidden=""></p>\n'
+        '</form>\n')
+
+    cuerpo = (
+        heroe +
+        '<section class="ini-sec" aria-labelledby="t-obras">\n'
+        '<div class="ini-sec-cab"><h2 id="t-obras">' + bi('Obras') + '</h2>'
+        '<span>' + resumen + '</span></div>\n'
+        + obra + '\n<ul class="ini-prevs">\n' + otras + '\n</ul>\n</section>\n\n'
+        '<section class="ini-sec" id="recursos" aria-labelledby="t-recursos">\n'
+        '<div class="ini-sec-cab"><h2 id="t-recursos">' + bi('Recursos') + '</h2>'
+        '<a href="recursos/">' + bi('Todos los recursos →', 'All resources →')
+        + '</a></div>\n<div class="ini-grupos">\n' + grupos_recursos()
+        + '\n</div>\n</section>\n\n'
         # Las clases grabadas viven en otro worker (pali-clases) bajo /clases/,
         # detrás del acceso por correo de Cloudflare Access; aquí sólo va el
-        # enlace. Ni el contenido ni el audio están en este repositorio.
-        lista([tarjeta(
-            "clases/",
-            bi("acceso con registro", "sign-in required"),
-            bi("Clases de Kaccāyana y Rūpasiddhi",
-               "Kaccāyana &amp; Rūpasiddhi classes"),
-            bi("Clases grabadas de gramática pāḷi del Muy Venerable U "
-               "Sīlānanda, con transcripción sincronizada, traducción al "
-               "español y el texto de cada sutta. Acceso para estudiantes "
-               "inscritos.",
-               "Recorded Pāḷi grammar classes of the Most Venerable U "
-               "Sīlānanda, with synced transcript, Spanish translation and "
-               "the text of each sutta. Access for enrolled students.")),
-            # La guía es pública: está fuera de /clases/ (que atrapa la ruta
-            # de Cloudflare Access) para que se pueda leer antes de entrar.
-            tarjeta(
-                "guia-clases/",
-                bi("pública", "public"),
-                bi("Guía para estudiantes de las clases",
-                   "Student guide to the classes"),
-                bi("Cómo entrar con el código que llega por correo, usar el "
-                   "reproductor, instalar la aplicación y guardar clases "
-                   "para escucharlas sin conexión.",
-                   "How to sign in with the emailed code, use the player, "
-                   "install the app and save classes to listen offline "
-                   "(in Spanish)."))]))
+        # enlace. La guía es pública: está fuera de /clases/ para que se pueda
+        # leer antes de entrar.
+        '<section class="ini-clases" id="clases" aria-labelledby="t-clases">\n'
+        '<div class="ini-clases-t"><h2 id="t-clases">'
+        + bi('Clases de Kaccāyana y Rūpasiddhi', 'Kaccāyana &amp; Rūpasiddhi classes')
+        + '</h2>\n<p>' + bi(
+            'Clases grabadas de gramática pāḷi del Muy Venerable U Sīlānanda, '
+            'con transcripción sincronizada, traducción al español y el texto '
+            'de cada sutta. Acceso para estudiantes inscritos.',
+            'Recorded Pāḷi grammar classes of the Most Venerable U Sīlānanda, '
+            'with synced transcript, Spanish translation and the text of each '
+            'sutta. Access for enrolled students.') + '</p></div>\n'
+        '<div class="ini-clases-b">'
+        '<a class="ini-btn prim" href="clases/">' + bi('Entrar a las clases', 'Enter the classes')
+        + '</a><a class="ini-btn" href="guia-clases/">' + bi('Guía de las clases', 'Guide to the classes')
+        + '</a></div>\n</section>\n')
 
     return pagina(
-        assets_v=version_assets(),
+        assets_v=version_assets(), clase_main="idx ini",
         titulo="Gramáticas Pāḷi en español",
         descripcion="Traducciones al español de las gramáticas clásicas de la "
                     "lengua pāḷi. Instituto de Estudios Buddhistas Hispano.",
-        raiz="", volver="",
+        raiz="",
         eyebrow="Instituto de Estudios Buddhistas Hispano",
         lang_en="Pāḷi Grammars in English",
         descripcion_en="English translations of the classical grammars of the "
@@ -793,8 +980,11 @@ def portada(pub):
               'P<span class="dia">ā</span><span class="dia">ḷ</span>i '
               'Grammars in English'),
         cuerpo=cuerpo,
-        pie=(bi('Textos relacionados: corpus del Sexto Concilio en',
-                'Related texts: the Sixth Council corpus at')
+        pie=(bi('Edición con DOI', 'Edition with DOI')
+             + ' <a href="https://doi.org/10.5281/zenodo.21948010">'
+             '10.5281/zenodo.21948010</a>.<br/>\n  '
+             + bi('Textos relacionados: corpus del Sexto Concilio en',
+                  'Related texts: the Sixth Council corpus at')
              + ' <a href="https://buddha-dhamma.net">buddha-dhamma.net</a>.'
              '<br/>\n  ' + bi('Código y traducciones:', 'Code and translations:')
              + '\n  {0}.').format(FUENTES))
@@ -853,7 +1043,6 @@ def indice_kaccayana(pub):
         descripcion="Traducción al español de la gramática de Kaccāyana, "
                     "capítulo por capítulo.",
         raiz="../",
-        volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Gramática de Kaccāyana"),
         lang_en="Kaccāyana-Byākaraṇaṃ · Pāḷi Grammars in English",
         descripcion_en="English translation of Kaccāyana's grammar, chapter "
@@ -946,10 +1135,13 @@ def indice_recursos():
                     "{0} aphorisms · {1} notes · v{2}".format(*n_cla))
                  if n_cla else "clasificación")
     n_ana = cuenta_analisis()
-    # con «etiqueta» en meta.json (v0.4: Nāma publicado en parte), ésa
-    badge_ana = ((bi(n_ana[3]["es"], n_ana[3]["en"]) if n_ana[3] else
-                  bi("{0} · {1} suttas · v{2}".format(*n_ana[:3]),
-                     "{0} · {1} suttas · v{2}".format(*n_ana[:3])))
+    # Capítulos y rango de §, de los datos; no de la «etiqueta» de meta.json,
+    # que se escribe a mano y puede quedarse atrás (la auditoría de la
+    # navegación encontró un «§52–§343» que ya no era verdad).
+    badge_ana = (bi("{0} {1} · v{2} borrador".format(
+                        n_ana[0].replace(" · ", " + "), rango_analisis(), n_ana[2]),
+                    "{0} {1} · v{2} draft".format(
+                        n_ana[0].replace(" · ", " + "), rango_analisis(), n_ana[2]))
                  if n_ana else "análisis")
     n_com = cuenta_comentarios()
     badge_com = (bi("{0} obras · v{1} borrador".format(*n_com),
@@ -976,6 +1168,10 @@ def indice_recursos():
                 and (ins != "__ANALISIS_BADGE__" or n_ana)
                 and (ins != "__COMENTARIOS_BADGE__" or n_com)]
 
+    # El número de paradigmas, de los datos: la descripción decía «83» a
+    # mano mientras la insignia contaba 85 (2026-10-08).
+    tarjetas = [t.replace("__N_PARADIGMAS__", str(n_par)) for t in tarjetas]
+
     # Un quinto elemento True marca la insignia como obra en curso.
     externas = [tarjeta(href, ins, titulo, desc, externo=True,
                         wip=bool(resto and resto[0]))
@@ -999,7 +1195,6 @@ def indice_recursos():
         descripcion="Material de apoyo para el estudio de la gramática pāḷi: "
                     "reglas, tablas y glosarios.",
         raiz="../",
-        volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Material de apoyo"),
         lang_en="Resources · Pāḷi Grammars in English",
         descripcion_en="Reference material for the study of Pāḷi grammar: "
@@ -1022,13 +1217,12 @@ def guia_clases():
     cuerpo = open(os.path.join(RAIZ, "herramientas", "guia_clases.html"),
                   encoding="utf-8").read()
     return pagina(
-        assets_v=version_assets(),
+        assets_v=version_assets(), solo_es=True,
         titulo="Guía para estudiantes · Clases de U Sīlānanda",
         descripcion="Cómo entrar a las clases grabadas de gramática pāḷi del "
                     "Muy Venerable U Sīlānanda, usar el reproductor y "
                     "escucharlas sin conexión.",
         raiz="../",
-        volver='<a class="idx-back" href="../">← Gramáticas Pāḷi</a>\n',
         eyebrow=bi("Clases de Kaccāyana y Rūpasiddhi",
                    "Kaccāyana &amp; Rūpasiddhi classes"),
         lang_en="Student guide · Classes of U Sīlānanda",
@@ -1045,6 +1239,13 @@ def pagina(**kw):
     """PAGINA con los dos títulos ya serializados para el botón de idioma."""
     import json as _json
     kw.setdefault("lang_en", kw["titulo"])
+    kw.setdefault("clase_main", "idx")
+    # Una página sólo en español (la guía de las clases) no arranca en inglés
+    # aunque el lector lo haya elegido: no tendría con qué volver, porque su
+    # conmutador lo sustituye la barra común, que allí dice «Solo en español».
+    kw["arranque_en"] = ("" if kw.pop("solo_es", False) else
+                         "if (paliLang() === 'en') {{ document.body.classList.add('en'); }}"
+                         .replace("{{", "{").replace("}}", "}"))
     kw.setdefault("descripcion_en", kw["descripcion"])
     kw["titulo_json"] = _json.dumps(kw["titulo"], ensure_ascii=False)
     kw["lang_en_json"] = _json.dumps(kw.pop("lang_en"), ensure_ascii=False)
@@ -1054,7 +1255,8 @@ def pagina(**kw):
     return PAGINA.format(**kw)
 
 
-def escribir(ruta, html):
+def escribir(ruta, html, clave):
+    html = cabecera.insertar(html, clave)
     destino = os.path.join(RAIZ, ruta)
     os.makedirs(os.path.dirname(destino), exist_ok=True)
     with open(destino, "w", encoding="utf-8") as f:
@@ -1065,10 +1267,10 @@ def escribir(ruta, html):
 def main():
     pub = capitulos_publicados()
     hechas = [
-        escribir("site/index.html", portada(pub)),
-        escribir("site/kaccayana/index.html", indice_kaccayana(pub)),
-        escribir("site/recursos/index.html", indice_recursos()),
-        escribir("site/guia-clases/index.html", guia_clases()),
+        escribir("site/index.html", portada(pub), "portada"),
+        escribir("site/kaccayana/index.html", indice_kaccayana(pub), "kaccayana"),
+        escribir("site/recursos/index.html", indice_recursos(), "recursos"),
+        escribir("site/guia-clases/index.html", guia_clases(), "guia-clases"),
     ]
     total = sum(n for _slug, n in pub.values())
     if SIN_INGLES:
