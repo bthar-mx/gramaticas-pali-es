@@ -61,9 +61,13 @@ html.sin-barra body { padding-left: 0; }
   width: 238px; overflow-y: auto; overscroll-behavior: contain;
   padding: 54px 0 48px;
   background: var(--bg2); border-right: 1px solid var(--border);
-  transition: transform .2s ease;
+  transition: transform .2s ease, visibility .2s;
 }
-html.sin-barra .sidebar { transform: translateX(-100%); }
+/* Fuera de la pantalla, además, invisible: así el índice cerrado —y el ☰
+   de su esquina, que diría «Ocultar el índice»— no queda al alcance del
+   tabulador ni del lector de pantalla. La transición de visibility lo
+   oculta al acabar de salir y lo enseña al empezar a entrar. */
+html.sin-barra .sidebar { transform: translateX(-100%); visibility: hidden; }
 .sb-brand { padding: 0 18px 14px; border-bottom: 1px solid var(--border); margin-bottom: 6px; }
 .sb-brand b { display: block; font-size: 19px; line-height: 1.2; letter-spacing: -.01em; margin-bottom: 3px; }
 .sb-brand .lbl { display: block; font-size: 8.5px; letter-spacing: .1em; line-height: 1.5; }
@@ -126,8 +130,8 @@ html.sin-barra #volver-barra { display: inline-flex; }
 
 @media (max-width: 900px) {
   body:has(> .sidebar) { padding-left: 0; }
-  .sidebar { transform: translateX(-100%); box-shadow: 0 0 40px var(--shadow); }
-  .sidebar.open { transform: none; }
+  .sidebar { transform: translateX(-100%); visibility: hidden; box-shadow: 0 0 40px var(--shadow); }
+  .sidebar.open { transform: none; visibility: visible; }
   html.sin-barra #volver-barra { display: none; }
   .scrim.on { display: block; position: fixed; inset: 0; z-index: 55; background: rgba(0,0,0,.35); }
   .bar #burger { display: inline-flex; order: -1; }

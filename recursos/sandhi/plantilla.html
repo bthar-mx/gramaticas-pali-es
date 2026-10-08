@@ -716,11 +716,12 @@ const anchaBastante = () => innerWidth > 900;
 function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
-  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
   b.setAttribute('data-tip', oculta
     ? 'Mostrar otra vez el índice al lado del texto.'
     : 'Aparta el índice y el texto ocupa su sitio.');
-  b.setAttribute('aria-label', oculta ? 'Mostrar el índice' : 'Ocultar el índice');
+  /* aria-label y aria-expanded de los tres ☰ los pone cabecera.js
+     (rotularIndice), que sabe también si el cajón del teléfono está
+     abierto. */
 }
 pintarBarra(false);
 /* Al estrecharse la ventana la barra pasa a cajón: que no se quede plegada

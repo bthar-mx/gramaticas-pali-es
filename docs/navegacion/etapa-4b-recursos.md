@@ -152,9 +152,39 @@ recursos») está ahora arriba de `/buscar/` y `/en/buscar/`
 `base.css` (7 KB, 2,9 KB gzip) y `recursos.css` (21 KB, 5,7 KB gzip) se piden
 una vez y quedan en caché.
 
+## Arreglos después de la etapa (2026-10-08)
+
+- **La búsqueda de dentro de `/recursos/verbo/`** no encontraba nada: el
+  índice leía `inf.tabla`, el campo de `verbo.json` (el documento reducido),
+  y la página toma sus inflexiones de `inflexiones.json` desde la v1.3, que
+  las trae en `filas`. No era una inflexión: eran las ocho, y el guion se
+  detenía en la primera, el presente. Ahora indexa `filas`, la tabla que se
+  pinta, con «ī - i» como dos terminaciones.
+- **Inglés en la vista española del verbo**: seis nombres de los «seis
+  tiempos», los «ocho grupos de inflexiones» y las conjugaciones
+  asabbadhātuka venían en inglés del documento; van con el español que la
+  página ya usa (`_corregido` en `verbo.json` guarda el original). Las
+  claves de `ingles.json` siguen al español; el inglés no cambia.
+- **Glosario en inglés**: la definición que no tiene inglés sale en español
+  con la etiqueta «ES» (`.solo-es`, `base.css`; «No English text yet» para
+  el lector de pantalla) y `lang="es"`, también en `/en/buscar/` (séptimo
+  campo de la entrada del índice). La lista la escribe
+  `generar_glosario.py` en `docs/glosario/ingles-faltante.md`.
+- **El nombre de los ☰** sigue al estado del índice: «Mostrar el índice» /
+  «Ocultar el índice» (y en inglés), con `aria-expanded`, en ancha y en el
+  cajón del teléfono. Lo pone `cabecera.js` (`rotularIndice`) para las nueve
+  páginas; las páginas ya no lo tocan. El índice cerrado queda además
+  `visibility:hidden` (`recursos.css`), para que su ☰ de la esquina no se
+  anuncie ni se alcance con el tabulador mientras no se ve.
+- **Raíces, enlace profundo (`#rNNN`)**: el salto era suave y se calculaba
+  antes de que la página acabara de componerse, de modo que la fila caía
+  donde tocara (bajo la barra o una pantalla más allá). Ahora es
+  instantáneo y se repite al cargar las letras y la página, salvo que el
+  lector ya la haya movido, como en el análisis.
+
 ## Pendiente o para decidir
 
-- La búsqueda de dentro de `/recursos/verbo/` no encuentra nada, antes y
-  después de esta etapa: al armar su índice, `inf.tabla` llega sin definir
-  para alguna inflexión y el guion se detiene (`TypeError … reading 'slice'`).
-  No es del aspecto; va aparte.
+- En `/recursos/verbo/`, un enlace a una inflexión (`#i-aoristo`) deja el
+  título unos 40 px bajo la barra de mandos pegajosa: sus encabezados
+  llevan `scroll-margin-top: 1.5rem`, que no cuenta la barra. Visto al
+  comprobar raíces; no se ha tocado.

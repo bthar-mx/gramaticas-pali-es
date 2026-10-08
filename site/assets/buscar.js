@@ -121,7 +121,7 @@
       var nt = norm(t), nx = norm(x);
       var base = t.replace(/^§\d+\s+/, '').replace(/^[^·]*·\s+/, '').replace(/\s*\([^)]*\)\s*$/, '');
       return {
-        g: tipos[e[0]], t: t, x: x, u: e[3], b: !!e[5], i: i,
+        g: tipos[e[0]], t: t, x: x, u: e[3], b: !!e[5], l: e[6] || '', i: i,
         nt: nt, nx: nx, resto: nx + ' ' + (e[4] || ''),
         nucleo: base.split(' / ').map(norm),
         bruto: t.normalize('NFC').toLowerCase()
@@ -217,12 +217,23 @@
   }
 
   /* ── Pintar ────────────────────────────────────────────────────── */
+  /* El texto de una ficha que no tiene todavía inglés sale en español en
+     /en/buscar/, como en la página del glosario, y con la misma etiqueta
+     (.solo-es, base.css): «ES» a la vista y «No English text yet» para el
+     lector de pantalla. */
+  function soloEs() {
+    var t = esc(TX.solo_es || 'No English text yet');
+    return '<span class="solo-es" lang="en" title="' + t + '">' +
+      '<span aria-hidden="true">ES</span><span class="vh">' + t + '</span></span>';
+  }
+
   function filaHTML(e, tokens) {
     var pali = e.g === 'suttas' || e.g === 'glosario' || e.g === 'raices';
     return '<li><a class="busca-r" href="' + esc(BASE + e.u) + '">' +
       '<span class="busca-t"' + (pali && !e.b ? ' lang="pi"' : '') + '>' + resaltar(e.t, tokens) + '</span>' +
       (e.b ? ' <span class="borrador">' + esc(TX.borrador || 'borrador') + '</span>' : '') +
-      (e.x ? '<span class="busca-x">' + resaltar(e.x, tokens) + '</span>' : '') +
+      (e.x ? '<span class="busca-x"' + (e.l ? ' lang="' + esc(e.l) + '"' : '') + '>' +
+        (e.l === 'es' ? soloEs() : '') + resaltar(e.x, tokens) + '</span>' : '') +
       '</a></li>';
   }
 

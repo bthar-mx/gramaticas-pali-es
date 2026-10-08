@@ -281,7 +281,6 @@ const TXT = {
     a_buscar: 'Buscar', a_gen: 'Filtrar por género', a_tema: 'Filtrar por tema',
     a_indice: 'Mostrar u ocultar el índice', a_tema_btn: 'Cambiar tema',
     t_tema: 'Claro / oscuro', a_arriba: 'Volver al inicio', t_arriba: 'Volver al inicio',
-    a_mostrar_ind: 'Mostrar el índice', a_ocultar_ind: 'Ocultar el índice',
     t_mostrar_ind: 'Mostrar otra vez el índice al lado del texto.',
     t_ocultar_ind: 'Aparta el índice y el texto ocupa su sitio.',
     t_ocultar_sb: 'Aparta el índice y el texto ocupa su sitio. El ☰ se queda en su sitio para devolverlo.',
@@ -326,7 +325,6 @@ const TXT = {
     a_buscar: 'Search', a_gen: 'Filter by gender', a_tema: 'Filter by stem',
     a_indice: 'Show or hide the index', a_tema_btn: 'Change theme',
     t_tema: 'Light / dark', a_arriba: 'Back to top', t_arriba: 'Back to top',
-    a_mostrar_ind: 'Show the index', a_ocultar_ind: 'Hide the index',
     t_mostrar_ind: 'Bring the index back beside the text.',
     t_ocultar_ind: 'Puts the index aside and the text takes its place.',
     t_ocultar_sb: 'Puts the index aside and the text takes its place. The ☰ stays where it is to bring it back.',
@@ -767,9 +765,10 @@ const anchaBastante = () => innerWidth > 900;
 function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
-  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
   b.setAttribute('data-tip', tr(oculta ? 't_mostrar_ind' : 't_ocultar_ind'));
-  b.setAttribute('aria-label', tr(oculta ? 'a_mostrar_ind' : 'a_ocultar_ind'));
+  /* aria-label y aria-expanded de los tres ☰ los pone cabecera.js
+     (rotularIndice), que sabe también si el cajón del teléfono está
+     abierto. */
 }
 (function(){
   /* El índice se abre siempre al llegar. Plegarlo es una comodidad del
@@ -1055,13 +1054,11 @@ topBtn.addEventListener('click', () => {
     arriba.setAttribute('aria-label', tr('a_arriba'));
     arriba.setAttribute('data-tip', tr('t_arriba'));
     const volver = document.getElementById('volver-barra');
-    volver.setAttribute('aria-label', tr('a_mostrar_ind'));
     volver.setAttribute('data-tip', tr('t_mostrar_ind'));
     const cerrar = document.getElementById('sbclose');
-    cerrar.setAttribute('aria-label', tr('a_ocultar_ind'));
     cerrar.setAttribute('data-tip', tr('t_ocultar_sb'));
-    /* El ☰ de la barra de controles lo rotula pintarBarra(), que sabe si el
-       índice está plegado o no; aquí no se toca. */
+    /* El aria-label de los tres ☰ lo pone cabecera.js (rotularIndice),
+       según el estado del índice y la lengua; aquí no se toca. */
 
     if(primera) return;                 /* al arrancar, cada cosa se pinta sola */
     /* Lo pintado, otra vez, en el idioma nuevo */
