@@ -90,7 +90,9 @@ va a `/buscar/?q=…` (o `/en/buscar/` si la página está en inglés), con
 numérico (se quitó `inputmode="numeric"`), dice «Buscar…» / «Search…» detrás
 del «§», y es un poco más ancha para que quepa. La portada perdió la nota de
 que la búsqueda de palabras «llega en una etapa posterior»: su rótulo y su
-ejemplo (`290 · kāraka`) dicen ahora que sirve para las dos cosas.
+ejemplo (`290 · kāraka`) dicen ahora que sirve para las dos cosas. (En la
+etapa 4b la caja de la portada se quitó; su explicación está arriba de
+`/buscar/`. Véase `etapa-4b-recursos.md`.)
 
 ### noindex
 

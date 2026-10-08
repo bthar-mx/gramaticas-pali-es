@@ -8,190 +8,36 @@
 <meta name="version" content="3.8">
 <meta name="version-date" content="2026-08-18">
 <meta name="description" content="Referencia interactiva de las reglas de sandhi del pāḷi, según Kaccāyana, Rūpasiddhi y Saddanīti.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- cabecera:inicio -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/base.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<!-- cabecera:fin -->
 <style>
-:root{
-  --ola:#E7E3D6;        /* hoja de palma */
-  --ola-2:#F0EDE4;
-  --ink:#171612;        /* tinta de humo */
-  --soot:#4E4839;
-  --hair:#BFB7A0;
-  --haritala:#5C4008;   /* oropimente: corrección */
-  --hover:rgba(255,255,255,.55);
-  --active:rgba(255,255,255,.75);
-  --hl:rgba(92,64,8,.16);
-  --hl-ce:rgba(126,46,35,.14);
-  --chip-k:rgba(39,65,79,.10);
-  --chip-c:rgba(92,64,8,.14);
-  --nila:#27414F;       /* índigo: sección */
-  --rakta:#7E2E23;      /* bermellón: contraejemplo */
-  --shadow:rgba(0,0,0,.05);
-  --serif:"Gentium Book Plus",Georgia,serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-html[data-theme=dark]{
-  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
-  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
-  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
-  --hl:rgba(239,193,78,.20); --hl-ce:rgba(240,154,136,.18);
-  --chip-k:rgba(182,216,238,.13); --chip-c:rgba(239,193,78,.15);
-}
-html[data-theme=dark] body{background-image:none}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--ola);color:var(--ink);
-  font-family:var(--serif);font-size:17px;line-height:1.55;
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
-}
-.wrap{max-width:980px;margin:0 auto;padding:0 22px}
-
-/* ---------- barra lateral ---------- */
-.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;
-  background:var(--ola-2);border-right:1px solid var(--hair);
-  /* Sitio arriba para el ☰ que pliega el índice. */
-  padding:54px 0 48px}
-.sidebar h3{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--haritala);margin:20px 18px 6px}
-.sidebar h3:first-of-type{margin-top:6px}
-.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:6px}
-.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
-.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5}
-.sidebar a{display:block;padding:3px 18px;color:var(--ink);text-decoration:none;font-size:14px;
-  border-left:2px solid transparent}
-.sidebar a:hover{background:var(--ola);color:var(--nila)}
-.sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
-.sidebar a b{font-family:var(--mono);font-size:11px;color:var(--soot);margin-right:6px}
-.sidebar a:hover b,.sidebar a.on b{color:inherit}
-.sb-close{position:absolute;top:14px;left:14px;
-  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
-  background:var(--ola);color:var(--soot);border:1px solid var(--hair);
-  border-radius:2px;cursor:pointer}
-.sb-close:hover{color:var(--ink);border-color:var(--soot)}
-.sb-close:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-#burger{display:inline-flex}
-body{padding-left:238px}
-.scrim{display:none}
-
-/* ---------- ocultar la barra lateral ---------- */
-/* Como en /recursos/paradigmas/ y /recursos/raices/: el botón ☰ vale para
-   las dos cosas: en pantalla ancha pliega la barra y el texto se ensancha;
-   en estrecha la saca por encima, como antes. No se guarda entre visitas:
-   plegarla es comodidad del momento, no una preferencia que deba durar. */
-.sidebar{transition:transform .2s ease}
-body{transition:padding-left .2s ease}
-html.sin-barra body{padding-left:0}
-html.sin-barra .sidebar{transform:translateX(-100%)}
-/* ---------- el ☰ que trae de vuelta el índice ---------- */
-/* Al plegar la barra, un ☰ fijo se queda exactamente donde estaba el ☰
-   de su esquina: parece un solo botón aunque sean dos, y se pulsa en el
-   mismo sitio para plegar y para devolver. Sólo se ve cuando la barra
-   está plegada. */
-#volver-barra{position:fixed;left:14px;top:calc(var(--cabecera-h,0px) + 14px);
-  z-index:56;display:none;align-items:center;
-  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
-  background:var(--ola-2);color:var(--soot);
-  border:1px solid var(--hair);border-radius:2px;cursor:pointer;
-  box-shadow:0 2px 10px var(--shadow)}
-#volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
-#volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-html.sin-barra #volver-barra{display:inline-flex}
+/* La paleta, la letra, el bloque del título, el índice lateral, la barra
+   de mandos, el globo, el ↑ y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo que sólo tiene esta página. */
+.sidebar h3:first-of-type{padding-top:6px}
 /* Con la barra plegada, el botón «Volver» vuelve al borde, como en estrecha. */
 html.sin-barra #volver{left:22px}
-@media (max-width:900px){html.sin-barra #volver-barra{display:none}}
-@media print{#volver-barra{display:none!important}}
-@media (prefers-reduced-motion:reduce){
-  .sidebar,body{transition:none}
-}
-
-/* ---------- marca del IEBH ---------- */
-/* El árbol arriba, como marca de quien publica el sitio —no como pie de la
-   línea que tiene al lado—, y el imagotipo completo abajo, con la licencia. */
-.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
-  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
-html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
-.eyebrow-iebh{display:flex;align-items:center;gap:9px}
-.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
-  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
-html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
-
-/* ---------- eyebrow / labels ---------- */
-.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
-     text-transform:uppercase;color:var(--soot)}
-
-/* ---------- header ---------- */
-header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
-.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
-h1{font-size:clamp(46px,9vw,74px);line-height:.92;margin:0;font-weight:700;letter-spacing:-.02em}
-h1 .dia{color:var(--haritala)}
-.tag{margin:10px 0 0;max-width:34ch;color:var(--soot);font-size:16.5px}
-.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
-  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
-  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
-  border-radius:999px;padding:4px 10px}
-.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-/* Ojo: aquí no entran .sb-close ni #volver-barra, que ya están
-   posicionados (absolute/fixed): un position:relative posterior los
-   sacaría de su sitio y los dejaría en la esquina del documento. */
-.version-badge,#burger{position:relative}
-/* Estos controles usan el globo por CSS de la insignia de versión, no el
-   motor de globos #tip de las tarjetas. */
-.sb-close[data-tip]:hover::after,
-#volver-barra[data-tip]:hover::after,
-#burger[data-tip]:hover::after,
-.version-badge[data-tip]:hover::after{content:attr(data-tip);
-  position:absolute;top:calc(100% + 8px);left:0;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
-  border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--sans,sans-serif);
-  letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
-  min-width:160px;max-width:min(340px,70vw);z-index:100;
-  box-shadow:0 3px 12px rgba(0,0,0,.12)}
-/* La barra recorta y el globo del ☰ de su esquina no cabe dentro: en «fixed» se
-   sale de ella y se pone al lado, sobre el texto. */
-.sb-close[data-tip]:hover::after{
-  position:fixed;left:250px;top:calc(var(--cabecera-h,0px) + 14px);right:auto;bottom:auto;max-width:320px}
-/* El ☰ fijo está en la esquina: su globo, debajo y hacia la derecha. */
-#volver-barra[data-tip]:hover::after{
-  top:calc(100% + 8px);left:0}
-.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
-.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
-      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
-.hero div{opacity:0}
-.hero div.on{opacity:1;transition:opacity .5s ease}
-.hero b{font-weight:700;color:var(--haritala)}
 .hero .lad,.hero>div>div{border:0;padding:0}
-.hero .ref{color:var(--soot);font-size:10.5px}
-.hero div{display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
 
-/* ---------- controls ---------- */
-.bar{position:sticky;top:var(--cabecera-h,0px);z-index:20;background:var(--ola);
-     border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
-.bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-input[type=search]{
-  flex:1 1 240px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;padding:9px 12px}
-input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
-.tabs{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+/* ---------- pestañas ---------- */
+.tabs{display:flex;gap:0;border:1px solid var(--border);border-radius:2px;overflow:hidden}
 .tabs button{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;
-  text-transform:uppercase;padding:9px 13px;border:0;background:var(--ola-2);
-  color:var(--soot);cursor:pointer;border-right:1px solid var(--hair)}
+  text-transform:uppercase;padding:9px 13px;border:0;background:var(--bg2);
+  color:var(--text2);cursor:pointer;border-right:1px solid var(--border)}
 .tabs button:last-child{border-right:0}
+.tabs button[aria-selected=true]{background:var(--accent);color:var(--bg2)}
+.tabs button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
 .tabs button i{font-style:normal;opacity:.65;margin-left:6px;font-size:10px}
 .tabs button[aria-selected=true] i{opacity:.85}
 .tabs button.vacia i{opacity:.3}
-.ir-a{font:inherit;color:var(--nila);background:none;border:0;border-bottom:1px solid currentColor;
+.ir-a{font:inherit;color:var(--accent);background:none;border:0;border-bottom:1px solid currentColor;
   padding:0;margin:0 .5em 0 0;cursor:pointer}
 .ir-a:hover{color:var(--haritala)}
-.tabs button[aria-selected=true]{background:var(--nila);color:var(--ola-2)}
-.tabs button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
-.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
-.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
-  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer;
-  align-items:center;justify-content:center}
-.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
-.icon-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
 
 /* Alto real de la barra pegajosa; se mide en tiempo de ejecución porque
    en pantallas estrechas los controles se reparten en dos filas. */
@@ -200,25 +46,25 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 /* ---------- sections ---------- */
 .sec{margin:38px 0 8px;display:flex;align-items:baseline;gap:12px}
 .sec h2{font-size:20px;margin:0;font-weight:700;letter-spacing:.01em}
-.sec .rule{flex:1;height:1px;background:var(--hair)}
+.sec .rule{flex:1;height:1px;background:var(--border)}
 
 /* ---------- cards ---------- */
-.card{border-top:1px solid var(--hair);padding:20px 0;display:grid;
+.card{border-top:1px solid var(--border);padding:20px 0;display:grid;
       grid-template-columns:60px 1fr;gap:20px;align-items:start}
-.card:last-child{border-bottom:1px solid var(--hair)}
-.num{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--nila);
+.card:last-child{border-bottom:1px solid var(--border)}
+.num{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);
      padding-top:3px;letter-spacing:.02em}
-.num em{display:block;font-style:normal;font-size:10px;color:var(--soot);font-weight:500;margin-top:3px}
+.num em{display:block;font-style:normal;font-size:10px;color:var(--text2);font-weight:500;margin-top:3px}
 .title{font-size:18.5px;margin:0 0 6px;font-weight:400}
 .pali{font-style:italic;font-weight:700}
-.gloss{color:var(--soot);font-size:15.5px;margin:2px 0 0}
-.split{font-family:var(--mono);font-size:11.5px;color:var(--soot);margin-top:5px}
+.gloss{color:var(--text2);font-size:15.5px;margin:2px 0 0}
+.split{font-family:var(--mono);font-size:11.5px;color:var(--text2);margin-top:5px}
 
 /* ---------- concordance chips ---------- */
 .conc{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0 0}
 .chip{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.07em;
-  padding:2.5px 7px;border:1px solid var(--hair);border-radius:2px;color:var(--soot);background:var(--ola-2)}
-.chip.k{border-color:var(--nila);color:var(--nila)}
+  padding:2.5px 7px;border:1px solid var(--border);border-radius:2px;color:var(--text2);background:var(--bg2)}
+.chip.k{border-color:var(--accent);color:var(--accent)}
 
 /* ---------- escalera de secuencia (elemento distintivo) ---------- */
 .lad{margin:12px 0 0;font-family:var(--mono);font-size:13.5px;line-height:1.9;
@@ -231,131 +77,80 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 .lad.ce b{color:var(--rakta);background:var(--hl-ce)}
 .lad b.ws{background:none;box-shadow:inset 0 -2px 0 var(--haritala)}
 .lad.ce b.ws{box-shadow:inset 0 -2px 0 var(--rakta)}
-.lad .ref{font-size:11px;color:var(--soot);white-space:nowrap}
-a.xref,.lad .ref a{color:var(--nila);text-decoration:none;
+.lad .ref{font-size:11px;color:var(--text2);white-space:nowrap}
+a.xref,.lad .ref a{color:var(--accent);text-decoration:none;
   border-bottom:1px dotted currentColor;font-weight:600}
 a.xref:hover,a.xref:focus-visible,.lad .ref a:hover,.lad .ref a:focus-visible{
   color:var(--haritala)}
 
 /* ---------- forms index ---------- */
-.forms{border-top:1px solid var(--hair)}
-details.form{border-bottom:1px solid var(--hair)}
+.forms{border-top:1px solid var(--border)}
+details.form{border-bottom:1px solid var(--border)}
 details.form>summary{
   list-style:none;cursor:pointer;padding:11px 2px;display:flex;gap:14px;
   align-items:baseline;justify-content:space-between}
 details.form>summary::-webkit-details-marker{display:none}
 details.form>summary:hover{background:var(--hover)}
-details.form>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
+details.form>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .fname{font-weight:700;font-size:17.5px}
 .fname.ce{color:var(--rakta)}
-.fmeta{font-family:var(--mono);font-size:11px;color:var(--soot);letter-spacing:.05em;text-align:right}
+.fmeta{font-family:var(--mono);font-size:11px;color:var(--text2);letter-spacing:.05em;text-align:right}
 details.form[open]>summary{background:var(--active)}
 .fbody{padding:2px 2px 18px}
 
 /* ---------- concordance table ---------- */
 table{border-collapse:collapse;width:100%;margin-top:14px;font-size:15px}
-th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:baseline}
 th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;
-   text-transform:uppercase;color:var(--soot);border-bottom-color:var(--ink)}
-td.n{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--nila)}
-td.n.q{color:var(--soot);font-weight:500}
+   text-transform:uppercase;color:var(--text2);border-bottom-color:var(--text)}
+td.n{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--accent)}
+td.n.q{color:var(--text2);font-weight:500}
 td.a{font-style:italic;font-weight:700}
 tbody tr:hover{background:var(--hover)}
 
 
-/* ---------- tooltip de aforismo ----------
+/* ---------- globo de aforismo ----------
    Agrandado a pedido del IEBH (2026-08-28): costaba leerlo. */
-#tip{position:fixed;z-index:200;max-width:460px;pointer-events:none;opacity:0;
-  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
-  box-shadow:0 8px 26px var(--shadow);padding:14px 17px;font-size:18px;line-height:1.5}
-#tip.on{opacity:1;transform:none}
+#tip{max-width:460px;padding:14px 17px;font-size:18px}
+#tip .tn{display:inline;font-size:13px;margin:0}
+#tip .te{font-size:17px}
+#tip .tk{font-size:12px}
 #tip .th{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
-#tip .tn{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--nila)}
-#tip .tc{font-family:var(--mono);font-size:12px;color:var(--soot)}
-#tip .tp{font-style:italic;font-weight:700;margin:0}
-#tip .te{margin:5px 0 0;color:var(--soot);font-size:17px}
-#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--soot);margin:7px 0 0}
-#tip .tk{font-family:var(--mono);font-size:12px;color:var(--haritala);margin:8px 0 0;
-  letter-spacing:.06em;text-transform:uppercase}
+#tip .tc{font-family:var(--mono);font-size:12px;color:var(--text2)}
+#tip .ts{font-family:var(--mono);font-size:12.5px;color:var(--text2);margin:7px 0 0}
 
 /* ---------- volver ---------- */
 #volver{position:fixed;left:calc(238px + 22px);bottom:22px;z-index:150;display:none;
   align-items:center;gap:8px;font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.06em;text-transform:uppercase;background:var(--nila);color:var(--ola-2);
+  letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--bg2);
   border:0;border-radius:999px;padding:10px 15px;cursor:pointer;box-shadow:0 6px 20px var(--shadow)}
 #volver.on{display:inline-flex}
 #volver:hover{filter:brightness(1.08)}
 @media (max-width:900px){#volver{left:22px}}
 
-/* ---------- volver al inicio (igual que en los capítulos) ---------- */
-#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
-  width:38px;height:38px;border-radius:50%;
-  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
-  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
-  opacity:0;pointer-events:none;transform:translateY(6px);
-  transition:opacity .2s,transform .2s,background .12s,color .12s}
-#top-btn.show{opacity:1;pointer-events:auto;transform:none}
-#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
-#top-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
-
-/* ---------- empty + footer ---------- */
+/* ---------- fuentes y citas ---------- */
 .src{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
   text-transform:uppercase;padding:2px 6px;border-radius:2px;white-space:nowrap}
-.src.kac{background:var(--chip-k);color:var(--nila)}
+.src.kac{background:var(--accent-bg);color:var(--accent)}
 .src.ce{background:var(--chip-c);color:var(--haritala)}
-.cita{font-family:var(--mono);font-size:11.5px;color:var(--soot)}
-.cita b{color:var(--nila);font-weight:600}
+.cita{font-family:var(--mono);font-size:11.5px;color:var(--text2)}
+.cita b{color:var(--accent);font-weight:600}
 .parcial{font-family:var(--mono);font-size:10.5px;color:var(--rakta);letter-spacing:.04em}
-.parcial.verif{color:var(--soot)}
+.parcial.verif{color:var(--text2)}
 .parcial.revisar{color:var(--rakta);border-left:2px solid var(--rakta);padding-left:8px}
-.filtros{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
-.filtros button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
-  text-transform:uppercase;padding:8px 10px;border:0;background:var(--ola-2);color:var(--soot);
-  cursor:pointer;border-right:1px solid var(--hair)}
-.filtros[hidden]{display:none}
-.filtros button:last-child{border-right:0}
-.filtros button[aria-pressed=true]{background:var(--haritala);color:var(--ola-2)}
-.empty{padding:60px 0;text-align:center;color:var(--soot)}
-.empty p{margin:0 0 6px}
-footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
-       color:var(--soot);font-size:14px}
-footer a{color:var(--nila)}
-.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
-  font-size:12.5px;line-height:1.65;color:var(--soot)}
-mark{background:var(--hl);color:inherit;border-radius:2px;
-  box-shadow:inset 0 -1px 0 var(--haritala)}
 
-@media (max-width:900px){
-  body{padding-left:0}
-  .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
-  .sidebar.open{transform:none}
-  .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
-}
 @media (max-width:640px){
-  body{font-size:16px}
-  .mast{gap:22px}
-  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
-        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
-  .hero div{justify-content:flex-start}
-  .bar .wrap{gap:9px}
   .tabs{width:100%}
   .tabs button{flex:1;padding:9px 6px;font-size:10px;letter-spacing:.05em}
-  .count{width:100%}
   .card{grid-template-columns:1fr;gap:8px}
   .num{padding-top:0}
   .num em{display:inline;margin-left:8px}
 }
 @media (prefers-reduced-motion:reduce){
-  .hero div{opacity:1!important;transition:none!important}
   *{animation:none!important}
 }
-.card.subregla{margin-left:clamp(0px,3vw,26px);background:transparent;box-shadow:none;border-left:2px solid var(--hair)}
+.card.subregla{margin-left:clamp(0px,3vw,26px);background:transparent;box-shadow:none;border-left:2px solid var(--border)}
 .card.subregla .num{opacity:.75}
-.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
-  text-decoration:none;margin-bottom:14px;opacity:.85}
-.volver-sitio:hover{color:var(--nila);opacity:1}
 @media print{
   #sbnav,#sbclose,#burger,#theme,.tabs,.ws,#volver,#top-btn,.hero,input#q{display:none!important}
   body{background:#fff;color:#000}
@@ -365,31 +160,19 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   a{color:#000;text-decoration:none}
   .lad{background:#fafafa}
 }
-.parcial.verif{color:var(--nila)}
+.parcial.verif{color:var(--accent)}
 .revision{margin:20px 0 0;max-width:104ch;font-size:13.5px;line-height:1.55;
-  color:var(--soot);border-left:2px solid var(--haritala);padding-left:13px}
+  color:var(--text2);border-left:2px solid var(--haritala);padding-left:13px}
 .revision>summary{cursor:pointer;list-style:none}
 .revision>summary::-webkit-details-marker{display:none}
 .revision>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
 .revision[open]>summary::after{content:' ▾'}
-.revision>summary:hover{color:var(--ink)}
-.revision>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.revision>summary:hover{color:var(--text)}
+.revision>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .revision>p{margin:9px 0 0}
-/* El pie plegado (pedido del IEBH, 2026-08-29, extendido a esta página el
-   2026-09-02). Hereda el mando de .revision —el ▸/▾— pero NO su tipografía:
-   dentro va la prosa del pie, que ya tiene la suya y no debe encogerse por
-   estar plegada. El sumario sí va en pequeño: es un mando, no un texto. */
-.pie-notas{margin:0;font-size:inherit;line-height:inherit;color:inherit;
-  border-left:0;padding-left:0}
-.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
-  padding:4px 0;margin-bottom:2px}
-.pie-notas[open]>summary{margin-bottom:10px}
-.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
 </style>
 <!-- cabecera:inicio -->
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/cabecera.css?v=d9271bb6" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
 <style>#theme{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -423,18 +206,17 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
   <nav id="sbnav"></nav>
 </aside>
 
-<header>
-  <div class="wrap mast">
-    <div>
-      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Kaccāyana · Rūpasiddhi · Saddanīti</span></div>
-      <h1>Sandh<span class="dia">i</span></h1>
-      <p class="tag">Las reglas de combinación eufónica del pāḷi, con su secuencia.</p>
-      <span class="version-badge" id="vbadge"></span>
-    </div>
-    <div class="hero" id="hero" aria-hidden="true"></div>
-  </div>
-  <div class="wrap">
-    <details class="revision">
+<header class="rc-titulo">
+<div class="wrap rc-mast">
+<div class="rc-titulo-texto">
+<p class="eyebrow-iebh"><span class="marca-arbol" aria-hidden="true"></span><span class="lbl">Kaccāyana · Rūpasiddhi · Saddanīti</span></p>
+<h1 class="rc-h1">Sandh<span class="dia">i</span></h1>
+<p class="tag">Las reglas de combinación eufónica del pāḷi, con su secuencia.</p>
+<div class="rc-insignias"><span class="version-badge" id="vbadge"></span></div>
+</div>
+<div class="rc-lado"><div class="hero" id="hero" aria-hidden="true"></div></div>
+</div>
+<div class="wrap rc-debajo"><details class="revision">
       <summary>Reglas y formas transcritas del documento de Bhikkhu Nandisena · las 266
       formas llevan ya su secuencia · la correspondencia regla ↔ aforismo §N está pendiente
       de revisión</summary>
@@ -442,12 +224,13 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
       Sandhi-kappa, 175 la llevan calculada según el patrón del aforismo y 42 construida
       paso a paso con los aforismos del capítulo. Todas se comprueban contra la forma
       atestiguada: si los pasos no la reproducen, la forma se queda sin secuencia.</p>
-    </details>
-  </div>
+    </details></div>
 </header>
 
 <div class="bar">
   <div class="wrap">
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
+      aria-expanded="true">☰</button>
     <input type="search" id="q" placeholder="Buscar regla, aforismo o forma — «tathupamam», «niggahita», «elide»…" aria-label="Buscar">
     <div class="tabs" role="tablist">
       <button role="tab" id="t-reglas"   aria-selected="true"  data-v="reglas">Clases<i></i></button>
@@ -455,8 +238,6 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
       <button role="tab" id="t-formas"   aria-selected="false" data-v="formas">Formas<i></i></button>
       <button role="tab" id="t-conc"     aria-selected="false" data-v="conc">Concordancia</button>
     </div>
-    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
-      aria-expanded="true">☰</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" title="Claro / oscuro">◐</button>
     <span class="filtros" id="filtros" hidden>
       <button data-src="all" aria-pressed="true">Todas</button>
@@ -472,22 +253,22 @@ mark{background:var(--hl);color:inherit;border-radius:2px;
 <button id="volver" class="" aria-label="Volver"></button>
 <button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
 
-<footer class="wrap">
-  <details class="revision pie-notas">
-    <summary>Notas, cifras y fuentes</summary>
-  <p class="version-foot" id="vfoot"></p>
+<footer class="rc-pie">
+<div class="wrap">
+<details class="pie-notas"><summary>Notas, cifras y fuentes</summary>
+<p class="version-foot" id="vfoot"></p>
   <p><strong>Fuentes.</strong> Las formas marcadas <span class="src ce">C. eufónica</span> proceden de las <em>Reglas de combinación eufónica</em> de Bhikkhu Nandisena, con su referencia canónica, tal como él las da: componentes y resultado. El documento no da los pasos intermedios. Los que aquí aparecen se calculan según el patrón del aforismo y se comprueban contra la forma atestiguada: si los pasos no la reproducen exactamente, la forma se queda sin secuencia. Nada se da por bueno sin comprobar. Las marcadas <span class="src kac">Kaccāyana</span> vienen con su secuencia tomada del propio Sandhi-kappa (51 aforismos, §1–§51), con la numeración concordante de Rūpasiddhi (RŪ) y Saddanīti Suttamālā (SAD). Las cuatro categorías y los enunciados en español siguen las <em>Reglas de combinación eufónica</em> preparadas por Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano.</p>
   <p><strong>Véase también.</strong> El capítulo completo, con el vutti, las notas del traductor y la
   pregunta <em>kimatthaṃ</em> de cada aforismo, en <a href="../../kaccayana/sandhi/">1-Sandhi-Kappa</a>.
   Las reglas y las formas proceden de las <em>Reglas de combinación eufónica</em>
   de Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano.</p>
   <p><strong>Cómo leer una secuencia.</strong> §10 separa la consonante de su vocal; §11 vuelve a unirlas. Entre esos dos pasos ocurre la operación propiamente dicha. «EM» es la forma de la edición moderna, con apóstrofo. En amarillo, lo que cambia en cada paso; en rojo, los contraejemplos, que muestran dónde la regla <em>no</em> se aplica.</p>
-  </details>
-
-  <p class="licencia"><span class="marca-lockup"></span>Preparado por Bhikkhu Nandisena<br>
+</details>
+<p class="licencia"><span class="marca-lockup" aria-hidden="true"></span>Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</p>
+</div>
 </footer>
 
 <script>
@@ -1041,12 +822,14 @@ document.getElementById('sbnav').addEventListener('click', e => {
     .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
   medir();
   addEventListener('resize', medir);
+  /* la barra crece al pintarse sus filtros y su cuenta: se vuelve a medir (etapa 4b) */
+  if(window.ResizeObserver) new ResizeObserver(medir).observe(barra);
 })();
 
 render();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=d9271bb6"></script>
+<script defer src="../../assets/cabecera.js?v=4aacb900"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

@@ -185,7 +185,8 @@ NAV = (("kaccayana", "kaccayana/"), ("recursos", "recursos/"),
 # «←» de esos capítulos llevaba a /kaccayana/ sin más, la URL española.
 CON_LANG = {"", "kaccayana/", "recursos/", "recursos/glosario/"}
 
-ARCHIVOS_VERSION = ("pali.css", "pali.js", "cabecera.css", "cabecera.js")
+ARCHIVOS_VERSION = ("base.css", "recursos.css", "pali.css", "pali.js",
+                    "cabecera.css", "cabecera.js")
 
 
 def version_assets():
@@ -328,11 +329,21 @@ def ocultos(clave):
     return ",".join(sel)
 
 
-# Las letras de la barra: Gentium para la marca y el §, Inter para lo demás,
-# las de pali.css. Las páginas de recursos/ no cargaban Inter, y algunas
-# (nombre, verbo) tampoco Gentium.
-FUENTES = ("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700"
-           "&amp;family=Inter:wght@400;500;600&amp;display=swap")
+# Las tres familias de letra de todo el sitio (base.css, --serif, --sans,
+# --mono), de una sola petición: Gentium Book Plus para el texto y los
+# títulos, Inter para la interfaz, JetBrains Mono para rótulos y cifras.
+# Hasta la etapa 4b cada plantilla pedía las suyas, y nombre y verbo traían
+# otras tres (Fraunces, Spectral, IBM Plex Mono).
+FUENTES = ("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@"
+           "0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700"
+           "&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap")
+
+# Las páginas que llevan además recursos.css, la hoja común de los recursos
+# (etapa 4b): el bloque del título, el índice lateral, la barra de mandos,
+# los botones, las fichas y el pie.
+CON_RECURSOS_CSS = {"recursos", "sandhi", "solucionador", "nombre", "verbo",
+                    "paradigmas", "raices", "glosario", "casos", "clasificacion",
+                    "analisis", "analisis-guia", "comentarios"}
 
 MARCA_INI = "<!-- cabecera:inicio -->"
 MARCA_FIN = "<!-- cabecera:fin -->"
@@ -340,19 +351,36 @@ _BLOQUE = re.compile(re.escape(MARCA_INI) + r".*?" + re.escape(MARCA_FIN) + r"\n
 
 
 def insertar(html, clave, idioma="es", otra_url=None, raiz=None):
-    """Pone la barra, su hoja y su guion en una página ya compuesta.
+    """Pone la barra, sus hojas y su guion en una página ya compuesta.
+
+    Arriba del todo del <head>, ANTES de las hojas de la página: las letras,
+    base.css (paleta, letra, marca del IEBH) y, en los recursos,
+    recursos.css. Van primero para que lo propio de cada página —un tamaño,
+    un margen— pueda ajustarlas sin pelear. La hoja de la barra va al final,
+    como antes: es la barra la que no debe dejarse tocar.
+
+    Compone además el bloque del título y el pie de los recursos
+    (recursos_comun.componer), si la página los trae.
 
     Es idempotente: si la página ya los lleva (una plantilla que se volviera
     a leer de la salida, por ejemplo), los reemplaza."""
+    import recursos_comun
     p = PAGINAS[clave]
     r = p["raiz"] if raiz is None else raiz
     v = version_assets()
     html = _BLOQUE.sub("", html)
-    cabeza = ('{ini}\n<link href="{fuentes}" rel="stylesheet"/>\n'
-              '<link href="{r}assets/cabecera.css?v={v}" rel="stylesheet"/>\n'
+    html = recursos_comun.componer(html)
+    hojas = ('{ini}\n<link href="https://fonts.googleapis.com" rel="preconnect"/>\n'
+             '<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>\n'
+             '<link href="{fuentes}" rel="stylesheet"/>\n'
+             '<link href="{r}assets/base.css?v={v}" rel="stylesheet"/>\n'
+             '{rec}{fin}\n'
+             .format(ini=MARCA_INI, fin=MARCA_FIN, r=r, v=v, fuentes=FUENTES,
+                     rec=('<link href="{0}assets/recursos.css?v={1}" rel="stylesheet"/>\n'
+                          .format(r, v) if clave in CON_RECURSOS_CSS else "")))
+    cabeza = ('{ini}\n<link href="{r}assets/cabecera.css?v={v}" rel="stylesheet"/>\n'
               '<style>{ocultos}{{display:none!important}}</style>\n{fin}\n'
-              .format(ini=MARCA_INI, fin=MARCA_FIN, r=r, v=v, ocultos=ocultos(clave),
-                      fuentes=FUENTES))
+              .format(ini=MARCA_INI, fin=MARCA_FIN, r=r, v=v, ocultos=ocultos(clave)))
     barra = "{0}\n{1}{2}\n".format(MARCA_INI, cabecera_html(clave, idioma, otra_url, r),
                                    MARCA_FIN)
     guion = ('{ini}\n<script defer src="{r}assets/cabecera.js?v={v}"></script>\n{fin}\n'
@@ -366,6 +394,12 @@ def insertar(html, clave, idioma="es", otra_url=None, raiz=None):
     cuerpo = re.compile(r"<body(\s[^>]*)?>\n?")
     if not cuerpo.search(html, html.index("</head>")):
         raise ValueError("cabecera.insertar({0}): la página no tiene <body>".format(clave))
+    # las hojas comunes, delante de la primera hoja o estilo de la página
+    fin_head = html.index("</head>")
+    primera = re.compile(r'<link[^>]*rel="?stylesheet|<link[^>]*rel="?preconnect|<style')
+    m = primera.search(html, 0, fin_head)
+    pos = m.start() if m else fin_head
+    html = html[:pos] + hojas + html[pos:]
     html = html.replace("</head>", cabeza + "</head>", 1)
     m = cuerpo.search(html, html.index("</head>"))
     html = html[:m.end()] + barra + html[m.end():]
@@ -375,32 +409,58 @@ def insertar(html, clave, idioma="es", otra_url=None, raiz=None):
 
 # ---------------------------------------------------------------- tokens
 #
-# cabecera.css repite los valores de la paleta «hoja de palma» de pali.css,
-# porque la mitad de las páginas (las de recursos/) no cargan pali.css. Para
-# que no se separen, esto comprueba que coincidan; generar_secciones.py lo
-# llama en cada regeneración y falla si no.
+# La paleta «hoja de palma» vive SÓLO en site/assets/base.css (etapa 4b).
+# Hasta entonces estaba copiada en pali.css, en cabecera.css y en cada
+# plantilla de recursos/, y esto comprobaba que las copias coincidieran. Ahora
+# comprueba que no vuelva a haber copias: ningún valor de la paleta —los
+# colores de base.css, en hexadecimal— en otra hoja de site/assets/ ni en el
+# <style> de una plantilla de recursos/. generar_secciones.py lo llama en cada
+# regeneración y falla si encuentra alguno.
+#
+# Excepciones, porque no son la paleta: los colores de impresión (#000,
+# #fff…), que no dependen del tema.
 
-TOKENS = ("bg", "bg2", "bg3", "text", "text2", "text3", "border", "border2",
-          "accent", "accent-bg", "accent-mid", "haritala")
+def _hex_paleta():
+    base = open(os.path.join(ASSETS, "base.css"), encoding="utf-8").read()
+    return {h.lower() for h in re.findall(r"--[a-z0-9-]+:\s*(#[0-9A-Fa-f]{6})\b", base)}
 
 
-def _tokens(bloque):
-    return {k: v.strip() for k, v in re.findall(r"--([a-z0-9-]+):\s*([^;]+);", bloque)}
+def _sin_impresion(css):
+    """El CSS sin sus bloques @media print, con las llaves contadas."""
+    out, i = [], 0
+    for m in re.finditer(r"@media\s+print\s*\{", css):
+        if m.start() < i:
+            continue
+        out.append(css[i:m.start()])
+        prof, j = 1, m.end()
+        while j < len(css) and prof:
+            prof += {"{": 1, "}": -1}.get(css[j], 0)
+            j += 1
+        i = j
+    out.append(css[i:])
+    return "".join(out)
 
 
 def comprobar_tokens():
-    """Lista de discrepancias entre cabecera.css y pali.css (vacía si
-    coinciden)."""
-    pali = open(os.path.join(ASSETS, "pali.css"), encoding="utf-8").read()
-    cab = open(os.path.join(ASSETS, "cabecera.css"), encoding="utf-8").read()
-    claro_p = _tokens(re.search(r":root\s*\{(.*?)\}", pali, re.S).group(1))
-    oscuro_p = _tokens(re.search(r"body\.dark\s*\{(.*?)\}", pali, re.S).group(1))
-    claro_c = _tokens(re.search(r"/\*claro\*/(.*?)\}", cab, re.S).group(1))
-    oscuro_c = _tokens(re.search(r"/\*oscuro\*/(.*?)\}", cab, re.S).group(1))
+    """Lista de los sitios fuera de base.css donde aparece un valor de la
+    paleta (vacía si no hay ninguno)."""
+    paleta = _hex_paleta()
+    if len(paleta) < 20:
+        return ["base.css: la paleta no está (sólo {0} colores)".format(len(paleta))]
+    sitios = [os.path.join(ASSETS, f) for f in sorted(os.listdir(ASSETS))
+              if f.endswith((".css", ".js")) and f != "base.css"]
+    recursos = os.path.join(RAIZ, "recursos")
+    for d in sorted(os.listdir(recursos)):
+        for f in ("plantilla.html", "guia-plantilla.html"):
+            ruta = os.path.join(recursos, d, f)
+            if os.path.exists(ruta):
+                sitios.append(ruta)
     malos = []
-    for nombre, p, c in (("claro", claro_p, claro_c), ("oscuro", oscuro_p, oscuro_c)):
-        for t in TOKENS:
-            if p.get(t, "").lower() != c.get("cab-" + t, "").lower():
-                malos.append("{0} --{1}: pali.css {2!r}, cabecera.css {3!r}".format(
-                    nombre, t, p.get(t), c.get("cab-" + t)))
+    for ruta in sitios:
+        texto = open(ruta, encoding="utf-8").read()
+        if ruta.endswith(".html"):
+            texto = "".join(re.findall(r"<style[^>]*>(.*?)</style>", texto, re.S))
+        texto = _sin_impresion(texto)
+        for h in sorted({x.lower() for x in re.findall(r"#[0-9A-Fa-f]{6}\b", texto)} & paleta):
+            malos.append("{0}: {1}".format(os.path.relpath(ruta, RAIZ), h))
     return malos

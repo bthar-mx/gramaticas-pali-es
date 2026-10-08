@@ -386,7 +386,7 @@ def html_citas(lista, lengua, raiz, n_hub):
     filas = []
     for (orden, tes, ten, href, borr), items in sorted(grupos.items()):
         titulo = ten if lengua == "en" else tes
-        etiqueta = (' <span class="ini-borrador">{0}</span>'.format(t["borrador"])
+        etiqueta = (' <span class="borrador">{0}</span>'.format(t["borrador"])
                     if borr else "")
         enlaces = []
         vistos = set()
@@ -418,9 +418,6 @@ PAGINA = """<!DOCTYPE html>
 <title>{titulo}</title>
 <meta content="{descripcion}" name="description"/>
 <link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="{raiz}assets/pali.css?v={v}" rel="stylesheet"/>
 </head>
 <body>
@@ -506,8 +503,8 @@ def pagina(n, lengua, s, conc_s, info, prev, sig, citas_html, hubs, kanda_nombre
     lq = "?lang=en" if lengua == "en" else ""
     borradores = (
         '<ul class="hub-borradores">'
-        '<li><a href="{r}recursos/clasificacion/{lq}#s{n}">{c}</a> <span class="ini-borrador">{b}</span></li>'
-        '<li><a href="{r}recursos/analisis/{lq}#s{n}">{a}</a> <span class="ini-borrador">{b}</span></li>'
+        '<li><a href="{r}recursos/clasificacion/{lq}#s{n}">{c}</a> <span class="borrador">{b}</span></li>'
+        '<li><a href="{r}recursos/analisis/{lq}#s{n}">{a}</a> <span class="borrador">{b}</span></li>'
         '</ul>').format(r=raiz, lq=lq, n=n, c=t["clasif"] + " →", a=t["analisis"] + " →",
                         b=t["borrador"])
 

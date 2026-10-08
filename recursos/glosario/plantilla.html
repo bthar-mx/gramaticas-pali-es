@@ -8,72 +8,21 @@
 <meta name="version" content="1.3">
 <meta name="version-date" content="2026-09-27">
 <meta name="description" content="Terminología gramatical pāḷi en español e inglés, a partir del Conspectus Terminorum (saññāmātikā) de la edición del Saddanīti de Helmer Smith, y de la lista normativa de este repositorio.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:wght@500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ola:#E7E3D6; --ola-2:#F0EDE4; --ink:#171612; --soot:#4E4839; --hair:#BFB7A0;
-  --haritala:#5C4008; --hover:rgba(255,255,255,.55); --active:rgba(255,255,255,.75);
-  --hl:rgba(92,64,8,.16); --chip-k:rgba(39,65,79,.10);
-  --nila:#27414F; --rakta:#7E2E23; --shadow:rgba(0,0,0,.05);
-  --serif:"Gentium Book Plus",Georgia,serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --pali:"IBM Plex Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-}
-html[data-theme=dark]{
-  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
-  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
-  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
-  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
-}
-html[data-theme=dark] body{background-image:none}
-*{box-sizing:border-box}
-/* Sin «scroll-behavior:smooth»: con 1.878 fichas la página mide decenas de
-   miles de píxeles y el navegador ANIMABA el recorrido entero, de modo que
-   un salto desde el índice tardaba segundos en llegar. El salto lo decide
-   ahora saltarA(), que anima sólo de cerca. Igual que en paradigmas,
-   sandhi, raíces y verbo. */
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--ola);color:var(--ink);
-  font-family:var(--serif);font-size:17px;line-height:1.55;
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-a{color:var(--nila)}
+/* La paleta, la letra, el bloque del título, el índice lateral, la barra
+   de mandos, el globo, el ↑ y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo que sólo tiene esta página. */
+a{color:var(--accent)}
+.wrap{max-width:1080px}
 
-/* ---------- barra lateral ---------- */
-.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;
-  background:var(--ola-2);border-right:1px solid var(--hair);padding:54px 0 48px}
-.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:10px}
-.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
-.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5;color:var(--soot);
-  text-transform:uppercase}
-.sb-tit{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--haritala);padding:12px 18px 6px}
-
-/* El índice, en el modelo de /recursos/paradigmas/: las siete partes del
-   Conspectus se pliegan y despliegan, y dentro va cada epígrafe con su
-   rótulo y su cuenta. Así se ve de un vistazo de qué habla cada tramo, que
-   antes no se veía: los epígrafes 2.x, 3.x y 4.x caían todos en el mismo
-   «Morfología» y el índice repetía la palabra siete veces. */
-.sb-sec{border-bottom:1px solid transparent}
-.sb-sec[open]{padding-bottom:8px}
-.sb-sec>summary{font-family:var(--mono);font-size:10px;font-weight:600;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--haritala);
-  margin:0;padding:9px 18px 7px;cursor:pointer;list-style:none;user-select:none}
-.sb-sec>summary::-webkit-details-marker{display:none}
-.sb-sec>summary::after{content:' ▸';font-size:9px;opacity:.8}
-.sb-sec[open]>summary::after{content:' ▾'}
-.sb-sec>summary:hover{background:var(--hover);color:var(--ink)}
-.sb-sec>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
 .secs a{display:block;padding:4px 18px;font-size:13.5px;line-height:1.35;
-  color:var(--ink);text-decoration:none;border-left:2px solid transparent}
-.secs a:hover{background:var(--hover);border-left-color:var(--haritala);color:var(--nila)}
+  color:var(--text);text-decoration:none;border-left:2px solid transparent}
+.secs a:hover{background:var(--hover);border-left-color:var(--haritala);color:var(--accent)}
 .secs a.on{background:var(--hover);border-left-color:var(--haritala);color:var(--haritala)}
-.secs a b{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--soot);
+.secs a b{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--text2);
   margin-right:6px}
 .secs a:hover b,.secs a.on b{color:inherit}
-.secs a span{float:right;font-family:var(--mono);font-size:10px;color:var(--soot);
+.secs a span{float:right;font-family:var(--mono);font-size:10px;color:var(--text2);
   margin-left:6px}
 
 /* La rejilla de iniciales, la misma de /recursos/raices/. El alfabeto pāḷi
@@ -84,60 +33,21 @@ a{color:var(--nila)}
    discontinuo y no se pueden pulsar. */
 .inis{display:flex;flex-wrap:wrap;gap:3px;padding:0 14px 12px}
 .inis a{font-family:var(--serif);font-size:15px;font-weight:700;font-style:italic;
-  min-width:34px;padding:4px 4px 3px;background:var(--ola);color:var(--ink);
-  border:1px solid var(--hair);border-radius:2px;line-height:1.1;
+  min-width:34px;padding:4px 4px 3px;background:var(--bg);color:var(--text);
+  border:1px solid var(--border);border-radius:2px;line-height:1.1;
   text-align:center;text-decoration:none}
-.inis a:hover{border-color:var(--soot);color:var(--nila)}
+.inis a:hover{border-color:var(--text2);color:var(--accent)}
 .inis a.on{border-color:var(--haritala);color:var(--haritala);background:var(--hl)}
 .inis a.vacia{opacity:.42;cursor:default;background:transparent;border-style:dashed;
   pointer-events:none}
 .inis a em{display:block;font-family:var(--mono);font-style:normal;
-  font-size:8px;font-weight:600;color:var(--soot);letter-spacing:0}
+  font-size:8px;font-weight:600;color:var(--text2);letter-spacing:0}
 .inis a:hover em,.inis a.on em{color:inherit}
 @media(pointer:coarse){.inis a{min-width:44px;min-height:44px;font-size:17px}}
 
-.sb-nota{padding:12px 18px 0;font-size:12px;line-height:1.55;color:var(--soot);
-  border-top:1px solid var(--hair);margin-top:12px}
-.sb-close{position:absolute;top:14px;left:14px;background:transparent;border:0;
-  font-size:17px;color:var(--soot);cursor:pointer}
-body.sin-barra .sidebar{display:none}
-/* Ojo con la lista: la fila de pestañas va en un .wrap suelto y NO estaba
-   aquí, de modo que la barra lateral se le echaba encima y tapaba la
-   primera pestaña. Cualquier bloque de ancho completo que se añada tiene
-   que entrar en esta regla. */
-body:not(.sin-barra) header:not(.cab),body:not(.sin-barra) .bar>.wrap,
-body:not(.sin-barra) .tabs-wrap,
-body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:238px}
-#volver-barra{position:fixed;top:calc(var(--cabecera-h,0px) + 10px);left:12px;z-index:70;display:none;
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
-  font-size:16px;color:var(--soot);cursor:pointer;padding:3px 8px}
-body.sin-barra #volver-barra{display:block}
+.sb-nota{padding:12px 18px 0;font-size:12px;line-height:1.55;color:var(--text2);
+  border-top:1px solid var(--border);margin-top:12px}
 
-/* ---------- cabecera ---------- */
-header{border-bottom:1px solid var(--hair);background:var(--ola-2)}
-.mast{padding:30px 22px 26px}
-.volver-sitio{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
-  text-decoration:none;color:var(--soot)}
-.volver-sitio:hover{color:var(--nila)}
-.eyebrow-iebh{display:flex;align-items:center;gap:7px;margin:12px 0 10px}
-/* Dos archivos por marca, uno por tema, como en el resto del sitio. El
-   claro apuntaba a «iebh-arbol.svg», que no existe en assets/: en tema
-   claro el árbol no se veía. */
-.marca-arbol{width:16px;height:16px;background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat;
-  display:inline-block;flex:0 0 16px}
-html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
-.marca-lockup{display:block;width:170px;height:70px;margin:0 0 14px;
-  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
-html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
-.eyebrow-iebh .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--soot)}
-h1{margin:0;font-size:38px;line-height:1.1;letter-spacing:-.015em;font-weight:700}
-h1 .dia{color:var(--haritala)}
-.obras{margin:6px 0 0;font-size:15px;color:var(--soot)}
-.tag{margin:12px 0 0;max-width:62ch;font-size:15.5px;color:var(--soot)}
-.version-badge{display:inline-block;margin-top:14px;font-family:var(--mono);
-  font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--soot);
-  border:1px solid var(--hair);border-radius:2px;padding:3px 8px}
 
 /* El aviso y la presentación estaban entre el título y el buscador, y se
    llevaban la primera pantalla entera: lo importante de esta página es el
@@ -145,55 +55,27 @@ h1 .dia{color:var(--haritala)}
    tratamiento que en /recursos/paradigmas/. Siguen enteros, no se ha
    quitado ni una palabra de ellos. */
 .pie-aviso{margin:0 0 4px;padding:10px 12px;border-left:2px solid var(--haritala);
-  background:linear-gradient(0deg,var(--hl),var(--hl)),var(--ola);
+  background:linear-gradient(0deg,var(--hl),var(--hl)),var(--bg);
   border-radius:0 2px 2px 0;max-width:74ch}
 .pie-aviso b{color:var(--haritala)}
 
-/* ---------- barra de mandos ---------- */
-.bar{position:sticky;top:var(--cabecera-h,0px);z-index:50;background:var(--ola-2);
-  border-bottom:1px solid var(--hair);box-shadow:0 1px 4px var(--shadow)}
-.bar .wrap{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:9px 22px}
-#q{flex:1 1 260px;min-width:190px;font-family:var(--serif);font-size:15px;
-  padding:6px 10px;background:var(--ola);color:var(--ink);
-  border:1px solid var(--hair);border-radius:3px}
-#q:focus{outline:2px solid var(--haritala);outline-offset:-1px}
-.icon-btn,.filtros button{font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.06em;padding:5px 9px;background:var(--ola);color:var(--soot);
-  border:1px solid var(--hair);border-radius:3px;cursor:pointer}
-.icon-btn:hover,.filtros button:hover{color:var(--ink);border-color:var(--soot)}
-.icon-btn[aria-pressed=true],.filtros button[aria-pressed=true]{
-  background:var(--hl);color:var(--haritala);border-color:var(--haritala)}
 /* GLOS y CONSP sólo actúan en la vista alfabética: en las otras dos se
    desactivan, y hasta ahora no se veía —parecían vivos y no respondían—. */
 .icon-btn:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
-.icon-btn:disabled:hover{color:var(--soot);border-color:var(--hair)}
-.count{font-family:var(--mono);font-size:11px;color:var(--soot);margin-left:auto}
+.icon-btn:disabled:hover{color:var(--text2);border-color:var(--border)}
 
 .tabs{display:flex;gap:6px;padding:14px 0 0}
 .tabs button{font-family:var(--serif);font-size:16px;padding:7px 14px;
-  background:transparent;color:var(--soot);border:1px solid transparent;
+  background:transparent;color:var(--text2);border:1px solid transparent;
   border-bottom:0;border-radius:3px 3px 0 0;cursor:pointer}
-.tabs button[aria-selected=true]{background:var(--ola-2);color:var(--ink);
-  border-color:var(--hair);font-weight:700}
-.tabs button span{font-family:var(--mono);font-size:10.5px;color:var(--soot)}
+.tabs button[aria-selected=true]{background:var(--bg2);color:var(--text);
+  border-color:var(--border);font-weight:700}
+.tabs button span{font-family:var(--mono);font-size:10.5px;color:var(--text2)}
 
-/* ---------- globos ----------
-   El «title» nativo del navegador se dibuja al tamaño que decide el sistema
-   —diminuto—, y no hay CSS que lo cambie. De modo que aquí va el mismo
-   motor de globos de /recursos/raices/ y /recursos/paradigmas/: 14px sobre
-   el papel de la página, con su título en versales, y colocado para que no
-   se salga por ningún borde. Se abre con el cursor, con el foco del teclado
-   y, en táctil, con el primer toque. */
-#tip{position:fixed;z-index:200;max-width:min(420px,86vw);pointer-events:none;opacity:0;
-  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
-  border-radius:3px;box-shadow:0 8px 26px var(--shadow);
-  padding:10px 13px;font:400 14px/1.5 var(--serif)}
-#tip.on{opacity:1;transform:none}
 #tip b{display:block;font-family:var(--mono);font-size:10px;font-weight:700;
   letter-spacing:.1em;text-transform:uppercase;color:var(--haritala);
   margin-bottom:4px}
-#tip i{color:var(--soot)}
+#tip i{color:var(--text2)}
 @media (prefers-reduced-motion:reduce){#tip{transition:none}}
 @media print{#tip{display:none}}
 [data-tip]{cursor:help}
@@ -219,55 +101,55 @@ body:not(.en) .i-en{display:none}
 .bio[open] > summary{margin-bottom:8px}
 .bio p{margin:0 0 8px}
 .bio p:last-child{margin-bottom:0}
-.bio .fuente{font-size:12px;color:var(--soot);border-top:1px solid var(--hair);
+.bio .fuente{font-size:12px;color:var(--text2);border-top:1px solid var(--border);
   padding-top:8px;margin-top:10px}
 
 /* ---------- las fichas ---------- */
 main{padding-top:8px;padding-bottom:60px}
 h2.sec{font-size:13px;font-family:var(--mono);letter-spacing:.13em;
   text-transform:uppercase;color:var(--haritala);margin:34px 0 4px;
-  padding-bottom:6px;border-bottom:1px solid var(--hair)}
-h2.sec small{float:right;font-size:10.5px;color:var(--soot);letter-spacing:.06em}
+  padding-bottom:6px;border-bottom:1px solid var(--border)}
+h2.sec small{float:right;font-size:10.5px;color:var(--text2);letter-spacing:.06em}
 /* La barra de mandos es pegajosa: sin este margen, el salto desde el índice
    deja el epígrafe justo debajo de ella y parece que no ha pasado nada. */
 h2.sec{scroll-margin-top:var(--barra,64px)}
-.t{padding:11px 0 10px;border-bottom:1px solid var(--hair);
+.t{padding:11px 0 10px;border-bottom:1px solid var(--border);
   display:grid;grid-template-columns:minmax(150px,15.5em) 1fr;gap:4px 20px}
 .t:hover{background:var(--hover)}
 .lema{font-weight:700;font-style:italic;font-size:18px;line-height:1.3;
   overflow-wrap:anywhere}
 .lema .ep{display:block;font-family:var(--mono);font-style:normal;font-weight:600;
-  font-size:9.5px;letter-spacing:.08em;color:var(--soot);margin-top:3px}
-.lema .var{display:block;font-size:13px;font-weight:400;color:var(--soot);
+  font-size:9.5px;letter-spacing:.08em;color:var(--text2);margin-top:3px}
+.lema .var{display:block;font-size:13px;font-weight:400;color:var(--text2);
   margin-top:4px;line-height:1.45}
 .gl{margin:0}
 .gl dt{display:none}
-.gl .fr{color:var(--soot);font-style:italic}
+.gl .fr{color:var(--text2);font-style:italic}
 .gl .fr::before{content:"fr ";font-family:var(--mono);font-style:normal;
-  font-size:9.5px;letter-spacing:.1em;color:var(--hair);margin-right:5px}
+  font-size:9.5px;letter-spacing:.1em;color:var(--border);margin-right:5px}
 .gl .es::before{content:"es ";font-family:var(--mono);font-size:9.5px;
-  letter-spacing:.1em;color:var(--hair);margin-right:5px}
+  letter-spacing:.1em;color:var(--border);margin-right:5px}
 .gl .en::before{content:"en ";font-family:var(--mono);font-size:9.5px;
-  letter-spacing:.1em;color:var(--hair);margin-right:5px}
+  letter-spacing:.1em;color:var(--border);margin-right:5px}
 .gl div{margin:1px 0}
-.gl .en{color:var(--nila)}
-.nota{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--soot)}
+.gl .en{color:var(--accent)}
+.nota{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--text2)}
 /* Las notas largas —colaciones, dudas, conflictos— van plegadas a dos líneas
    con un «más» al final (pedido del IEBH, sesión 57); pulsar despliega. Si la
    búsqueda casa dentro de la nota, se pinta desplegada para que el resaltado
    se vea. */
 .nota.plegada .cuerpo{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.nota .mas{display:inline-block;margin-top:2px;padding:0 6px;border:1px solid var(--line,#8886);border-radius:4px;font:inherit;font-size:12px;color:var(--soot);background:transparent;cursor:pointer}
-.nota .mas:hover{color:var(--ink,inherit)}
-.nota b{color:var(--ink)}
+.nota .mas{display:inline-block;margin-top:2px;padding:0 6px;border:1px solid var(--line,#8886);border-radius:4px;font:inherit;font-size:12px;color:var(--text2);background:transparent;cursor:pointer}
+.nota .mas:hover{color:var(--text,inherit)}
+.nota b{color:var(--text)}
 .marca{display:inline-block;font-family:var(--mono);font-size:9px;font-weight:700;
   letter-spacing:.1em;text-transform:uppercase;padding:1px 5px;border-radius:2px;
   margin-right:6px;vertical-align:1px}
 .m-conflicto{background:rgba(126,46,35,.14);color:var(--rakta)}
-.m-duda{background:var(--chip-k);color:var(--nila)}
+.m-duda{background:var(--accent-bg);color:var(--accent)}
 .m-norma{background:var(--hl);color:var(--haritala)}
 .puente{margin-top:7px;padding:7px 10px;border-left:2px solid var(--haritala);
-  background:var(--hover);border-radius:0 2px 2px 0;color:var(--ink)}
+  background:var(--hover);border-radius:0 2px 2px 0;color:var(--text)}
 
 /* ---------- la vista alfabética: una ficha por lema, en capas ----------
    Las dos obras y la lista normativa caen en la misma entrada, cada una en
@@ -275,7 +157,7 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
    es poder verlas sobre la MISMA palabra. El orden de las capas es el de
    autoridad: primero lo fijado por el IEBH, luego el español firmado de
    Nandisena, y al final los sentidos de Smith, uno por epígrafe. */
-.capa{padding:6px 0 5px;border-top:1px dotted var(--hair)}
+.capa{padding:6px 0 5px;border-top:1px dotted var(--border)}
 .capa:first-child{border-top:0;padding-top:1px}
 /* La marca de la capa: una o dos palabras, no una línea en versales. El
    subrayado punteado avisa de que lleva globo, que es donde está el resto
@@ -286,18 +168,18 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
   text-decoration:underline dotted;text-underline-offset:2px}
 .tag-norma{background:var(--hl);color:var(--haritala)}
 .tag-nand{background:var(--hl);color:var(--haritala)}
-.tag-smith{background:var(--chip-k);color:var(--nila)}
+.tag-smith{background:var(--accent-bg);color:var(--accent)}
 .capa .gl{overflow:hidden}
 .lema .obras{display:block;font-family:var(--mono);font-style:normal;font-weight:400;
   font-size:9.5px;letter-spacing:.06em;color:var(--haritala);margin-top:4px}
 .lema .obras span{cursor:help;text-decoration:underline dotted;text-underline-offset:2px}
-.lema .obras span:hover{color:var(--nila)}
+.lema .obras span:hover{color:var(--accent)}
 /* Las 132 entradas cuyas fuentes no escriben igual el lema. La divergencia
    es dato —niggahita / niggahīta, karaṇa / kāraṇa—, así que se enseña
    entera y con el nombre de quien escribe cada cosa. */
 .grafias{display:block;font-size:12.5px;font-weight:400;font-style:normal;
-  color:var(--soot);margin-top:4px;line-height:1.5}
-.grafias i{font-style:italic;color:var(--ink)}
+  color:var(--text2);margin-top:4px;line-height:1.5}
+.grafias i{font-style:italic;color:var(--text)}
 /* Enlaces entre fichas: se ven como enlaces, pero discretos, porque en
    una lista de 1.984 lemas un enlace llamativo por línea es ruido. */
 /* El pāḷi suelto en las glosas va en OTRA LETRA, no en cursiva: con casi
@@ -305,10 +187,10 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
    del enlace. Una sans (IBM Plex Sans) sobre la serif del cuerpo separa las
    dos lenguas al ojo sin gritar (decisión del IEBH, sesión 58). */
 i.pl{font-style:normal;font-family:var(--pali);font-weight:500;font-size:.93em;letter-spacing:.005em}
-.xref{color:var(--nila);text-decoration:underline dotted;text-underline-offset:2px;
+.xref{color:var(--accent);text-decoration:underline dotted;text-underline-offset:2px;
   cursor:pointer}
 .xref:hover{text-decoration-style:solid;background:var(--hl)}
-.vease{margin:6px 0 0;font-size:12.5px;color:var(--soot);font-style:italic}
+.vease{margin:6px 0 0;font-size:12.5px;color:var(--text2);font-style:italic}
 .vease .xref{font-style:normal}
 /* Al llegar por un enlace, la ficha se señala un momento: en una lista
    tan larga, sin esto uno no sabe dónde ha caído. */
@@ -317,52 +199,17 @@ i.pl{font-style:normal;font-family:var(--pali);font-weight:500;font-size:.93em;l
 .t{scroll-margin-top:var(--barra,64px)}
 .grafias em{font-style:normal;font-family:var(--mono);font-size:9px;
   letter-spacing:.06em}
-.fijado{font-family:var(--mono);font-size:10px;color:var(--soot);letter-spacing:.05em}
-.vacio{padding:40px 0;color:var(--soot);font-style:italic}
-mark{background:var(--hl);color:inherit;border-radius:2px}
+.fijado{font-family:var(--mono);font-size:10px;color:var(--text2);letter-spacing:.05em}
+.vacio{padding:40px 0;color:var(--text2);font-style:italic}
 
-footer{border-top:1px solid var(--hair);background:var(--ola-2);padding:26px 22px 50px;
-  font-size:13px;color:var(--soot)}
-footer h3{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
+footer.rc-pie h3{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
   text-transform:uppercase;color:var(--haritala);margin:18px 0 5px}
-footer p{max-width:74ch;line-height:1.65}
-footer code{font-family:var(--mono);font-size:11.5px}
-/* El pie plegado, como en /recursos/paradigmas/ (pedido del IEBH,
-   2026-08-29): a la vista queda el árbol del IEBH y su crédito; la
-   presentación, el aviso y las notas de fuentes van a un clic. El sumario
-   va en pequeño porque es un mando, no un texto. */
-.pie-notas{margin:0}
-.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
-  cursor:pointer;list-style:none;padding:4px 0;margin-bottom:2px}
-.pie-notas>summary::-webkit-details-marker{display:none}
-.pie-notas>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
-.pie-notas[open]>summary::after{content:' ▾'}
-.pie-notas[open]>summary{margin-bottom:12px}
-.pie-notas>summary:hover{color:var(--ink)}
-.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
-  font-size:12.5px;line-height:1.65;color:var(--soot)}
-/* El botón de subir: el mismo círculo que en /recursos/sandhi/ y el
-   solucionador (pedido del IEBH, sesión 58). */
-#top-btn{position:fixed;right:22px;bottom:22px;z-index:55;
-  width:38px;height:38px;border-radius:50%;padding:0;
-  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
-  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25);
-  opacity:0;pointer-events:none;transform:translateY(6px);
-  transition:opacity .2s,transform .2s,background .12s,color .12s}
+footer.rc-pie p{max-width:74ch;line-height:1.65}
+footer.rc-pie code{font-family:var(--mono);font-size:11.5px}
 #top-btn.on{opacity:1;pointer-events:auto;transform:none}
-#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
-@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
 
 @media(max-width:900px){
-  body:not(.sin-barra) header:not(.cab),body:not(.sin-barra) .bar>.wrap,
-  body:not(.sin-barra) .tabs-wrap,
-  body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:22px}
-  .sidebar{display:none}
-  #volver-barra{display:none}
   .t{grid-template-columns:1fr;gap:3px}
-  h1{font-size:30px}
 }
 </style>
 </head>
@@ -381,6 +228,7 @@ if(g==='en'||g==='es')return g;
 var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
 return /^en\b/i.test(n)?'en':'es';}</script>
 
+<div class="scrim" id="scrim"></div>
 <button id="volver-barra" aria-label="Mostrar el índice">☰</button>
 <aside class="sidebar" id="sidebar" aria-label="Índice de secciones">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice">☰</button>
@@ -396,19 +244,19 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   <p class="sb-nota" id="sb-nota"></p>
 </aside>
 
-<header>
-  <div class="wrap mast">
-    <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
-    <h1><span class="i-es">Glosario gramatical p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi grammatical glossary</span></h1>
-    <!-- El título del glosario de Nandisena no se traduce: es el título de
-         una obra publicada en español, y se cita como se llama. -->
-    <p class="obras"><i>Glosario de términos gramaticales de la lengua pali</i> · <i>Conspectus Terminorum</i> (saññāmātikā)</p>
-    <span class="version-badge" id="vbadge"></span>
-  </div>
-</header>
+<rc-titulo>
+  <rc-ceja>Instituto de Estudios Buddhistas Hispano</rc-ceja>
+  <rc-h1><span class="i-es">Glosario gramatical p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi grammatical glossary</span></rc-h1>
+  <!-- El título del glosario de Nandisena no se traduce: es el título de
+       una obra publicada en español, y se cita como se llama. -->
+  <rc-sub><i>Glosario de términos gramaticales de la lengua pali</i> · <i>Conspectus Terminorum</i> (saññāmātikā)</rc-sub>
+  <rc-insignias><span class="version-badge" id="vbadge"></span></rc-insignias>
+</rc-titulo>
 
 <div class="bar">
   <div class="wrap">
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice" aria-expanded="true"
+      data-tip="Índice|Aparta el índice de la izquierda y el texto ocupa su sitio. Vuelve con el mismo botón.">☰</button>
     <input type="search" id="q" placeholder="Buscar término, glosa o epígrafe — «sandhi», «vocal», «1.1.2», «metre»…" aria-label="Buscar"
       data-tip="Buscar|Busca a la vez en el lema, en el francés de Smith, en el español, en el inglés, en el epígrafe y en las notas. Se puede escribir sin diacríticos: «nibbana» encuentra nibbāna.">
     <button class="icon-btn" id="b-nand" aria-pressed="true"
@@ -423,8 +271,6 @@ return /^en\b/i.test(n)?'en':'es';}</script>
     </span>
     <button class="icon-btn" id="b-marcas" aria-pressed="false"
       data-tip="Sólo lo marcado|Deja a la vista las entradas con «difiere de la norma», «por cotejar» o «errata del impreso»: lo que está pendiente de decidir sobre la lectura del impreso.">⚑</button>
-    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice" aria-expanded="true"
-      data-tip="Índice|Aparta el índice de la izquierda y el texto ocupa su sitio. Vuelve con el mismo botón.">☰</button>
     <button class="icon-btn" id="theme" aria-label="Cambiar tema" data-tip="Tema|Alterna entre el papel claro y el oscuro.">◐</button>
     <span class="count" id="count" data-tip="Cuenta|Cuántas entradas quedan a la vista con lo que hay filtrado ahora mismo."></span>
   </div>
@@ -448,9 +294,8 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 <button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio|Sube al principio de la lista.">↑</button>
 
-<footer class="wrap">
-  <details class="pie-notas">
-    <summary><span class="i-es">Qué es esta página · notas y fuentes</span><span class="i-en">What this page is · notes and sources</span></summary>
+<rc-pie>
+<rc-notas><summary><span class="i-es">Qué es esta página · notas y fuentes</span><span class="i-en">What this page is · notes and sources</span></summary>
 
   <p>La terminología con que las gramáticas clásicas hablan de sí mismas.
   Reúne dos obras: el <b>Glosario</b> de <b>Bhikkhu Nandisena</b> (IEBH, 2013), que define
@@ -637,17 +482,16 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   <code>recursos/glosario/conspectus.json</code> sin tocar ningún dato.</p>
 
   <p class="fijado" id="vfoot"></p>
-  </details>
-
-  <p class="licencia"><span class="marca-lockup"></span><span class="i-es">
+</rc-notas>
+<rc-licencia><span class="i-es">
   Material preparado por Bhikkhu Nandisena.<br>
   Copyright © 2013-2026 Instituto de Estudios Buddhistas Hispano (IEBH).
   Publicado bajo licencia
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Material prepared by Bhikkhu Nandisena.<br>
   Copyright © 2013-2026 Instituto de Estudios Buddhistas Hispano (IEBH).
   Published under
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
-</footer>
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></rc-licencia>
+</rc-pie>
 
 <script>
 const DATA = /*__DATOS__*/{}/*__FIN__*/;
@@ -794,7 +638,7 @@ function ficha(t, tipo){
     (t.remite_a ? '<div class="es">v. <i>' + escapa(t.remite_a) + '</i></div>' : '') +
     sentido(t) +
     (esNand && !t.es && !t.remite_a
-       ? '<div class="es" style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</div>' : '');
+       ? '<div class="es" style="color:var(--text2);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</div>' : '');
   // El puente: cuando un término del Conspectus tiene entrada en el Glosario,
   // se enseña el español de Nandisena junto al francés de Smith. Es el caso
   // que hace útil tener las dos obras en una página.
@@ -808,7 +652,7 @@ function ficha(t, tipo){
                  t.ref_interna ? 'Ver ' + t.ref_interna + '.' : '']
     .filter(Boolean).map(escapa).join(' ');
   return '<div class="t">' +
-    '<div class="lema">' + (t.sin_lema ? '<span style="color:var(--soot)">—</span>' : resalta(t.pali)) +
+    '<div class="lema">' + (t.sin_lema ? '<span style="color:var(--text2)">—</span>' : resalta(t.pali)) +
       '<span class="ep">' + ep + '</span>' + vars + refs + '</div>' +
     '<div><div class="gl">' + glosas + '</div>' + puente +
       (marcas || notas ? notaPlegable(marcas + notas, notas) : '') +
@@ -1017,7 +861,7 @@ function capaNand(t){
   const cuerpo = enIngles ? enlazaGlosa(t.en, t.pali)
     : t.es ? enlazaGlosa(t.es, t.pali)
     : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
-    : '<span style="color:var(--soot);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
+    : '<span style="color:var(--text2);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
   const tip = 'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la '
     + 'lengua pali (IEBH, 2013), p. ' + t.pagina
     + (t.homonimo ? ', homónimo ' + t.homonimo : '')
@@ -1038,7 +882,7 @@ function capaSmith(t){
                  t.ref_interna ? 'Ver ' + t.ref_interna + '.' : '']
     .filter(Boolean).map(escapa).join(' ');
   const vars = (t.variantes && t.variantes.length)
-    ? '<div class="es" style="color:var(--soot)">también: <i>' +
+    ? '<div class="es" style="color:var(--text2)">también: <i>' +
       t.variantes.map(v => enlaceTermino(v)).join('</i>, <i>') + '</i></div>' : '';
   const sec = DATA.secciones[t.epigrafe.split('.').slice(0,2).join('.')] || '';
   // El epígrafe se queda a la vista, y no es adorno: es lo único que
@@ -1323,13 +1167,25 @@ $('#b-en').onclick = () => ponIdioma('en');
    página del sitio (sesión 63). */
 ponIdioma(idioma);
 
-const plegar = v => document.body.classList.toggle('sin-barra', v);
-$('#burger').onclick = () => {
-  const v = !document.body.classList.contains('sin-barra');
-  plegar(v); $('#burger').setAttribute('aria-expanded', !v);
+/* El índice, con el patrón común de los recursos (recursos.css, etapa 4b):
+   en pantalla ancha se pliega y el texto ocupa su sitio; en estrecha es un
+   cajón con velo. Hasta la etapa 4b, en estrecha no había índice. */
+const sbEl = $('#sidebar'), velo = $('#scrim');
+const ancha = () => innerWidth > 900;
+const plegar = v => {
+  document.documentElement.classList.toggle('sin-barra', v);
+  $('#burger').setAttribute('aria-expanded', !v);
 };
-$('#sbclose').onclick = () => { plegar(true); $('#burger').setAttribute('aria-expanded', false); };
-$('#volver-barra').onclick = () => { plegar(false); $('#burger').setAttribute('aria-expanded', true); };
+const cerrarSb = () => { sbEl.classList.remove('open'); velo.classList.remove('on'); };
+$('#burger').onclick = () => {
+  if (ancha()) plegar(!document.documentElement.classList.contains('sin-barra'));
+  else { sbEl.classList.toggle('open'); velo.classList.toggle('on'); }
+};
+$('#sbclose').onclick = () => { if (ancha()) plegar(true); else cerrarSb(); };
+$('#volver-barra').onclick = () => plegar(false);
+velo.onclick = cerrarSb;
+addEventListener('keydown', e => { if (e.key === 'Escape') cerrarSb(); });
+addEventListener('resize', () => { if (!ancha()) document.documentElement.classList.remove('sin-barra'); });
 
 /* ---------- saltar desde el índice ---------- */
 /* Con 1.878 fichas la página pasa de las decenas de miles de píxeles. Un
@@ -1376,7 +1232,7 @@ $('#secs').addEventListener('click', e => {
   e.preventDefault();
   $('#secs').querySelectorAll('a').forEach(x => x.classList.toggle('on', x === a));
   saltarA(document.getElementById(a.dataset.ir));
-  if (innerWidth <= 900) plegar(true);
+  if (!ancha()) cerrarSb();
 });
 
 // No llamarlo «top»: window.top ya existe y un const con ese nombre en el
@@ -1396,6 +1252,8 @@ addEventListener('scroll', () => btnTop.classList.toggle('on', scrollY > 600), {
     .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
   medir();
   addEventListener('resize', medir);
+  /* la barra crece al pintarse sus filtros y su cuenta: se vuelve a medir (etapa 4b) */
+  if(window.ResizeObserver) new ResizeObserver(medir).observe(barra);
 })();
 
 
