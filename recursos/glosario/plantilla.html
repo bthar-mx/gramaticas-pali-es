@@ -131,6 +131,9 @@ h2.sec{scroll-margin-top:var(--barra,64px)}
   letter-spacing:.1em;color:var(--border);margin-right:5px}
 .gl .en::before{content:"en ";font-family:var(--mono);font-size:9.5px;
   letter-spacing:.1em;color:var(--border);margin-right:5px}
+/* En la vista inglesa, la definición que sólo está en español lleva su
+   propia etiqueta, .solo-es (base.css): el «es» de arriba sobraría. */
+.gl .es[lang="es"]::before{content:none}
 .gl div{margin:1px 0}
 .gl .en{color:var(--accent)}
 .nota{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--text2)}
@@ -606,6 +609,16 @@ function casa(t){
 }
 
 
+/* En la vista inglesa, la definición que todavía no tiene inglés sale en
+   español (el inglés de este proyecto lo adjudica el IEBH; aquí no se
+   escribe): se rotula «ES», visible y para el lector de pantalla, y el
+   texto lleva lang="es". La lista entera la escribe generar_glosario.py en
+   docs/glosario/ingles-faltante.md. En la vista española, nada. */
+const MARCA_SOLO_ES = '<span class="solo-es" lang="en" title="No English text yet">'
+  + '<span aria-hidden="true">ES</span><span class="vh">No English text yet</span></span>';
+const langEs = () => idioma === 'en' ? ' lang="es"' : '';
+const marcaEs = () => idioma === 'en' ? MARCA_SOLO_ES : '';
+
 /* La línea de sentido, según el idioma. Devuelve '' si no hay ninguna. */
 /* Las glosas de Smith y de la norma pasan también por enlazaGlosa(): las
    voces pāḷi sueltas quedan en cursiva y, si son lema, enlazan (pedido del
@@ -613,7 +626,7 @@ function casa(t){
    como si fuera español). */
 function sentido(t){
   if (idioma === 'en' && t.en) return '<div class="en">' + enlazaGlosa(t.en, t.pali) + '</div>';
-  if (t.es) return '<div class="es">' + enlazaGlosa(t.es, t.pali) + '</div>';
+  if (t.es) return '<div class="es"' + langEs() + '>' + marcaEs() + enlazaGlosa(t.es, t.pali) + '</div>';
   if (t.en) return '<div class="en">' + enlazaGlosa(t.en, t.pali) + '</div>';
   return '';
 }
@@ -643,8 +656,9 @@ function ficha(t, tipo){
   // se enseña el español de Nandisena junto al francés de Smith. Es el caso
   // que hace útil tener las dos obras en una página.
   const puente = (t.nandisena || []).map(g =>
-    '<p class="nota puente"><span class="marca m-norma">Nandisena</span>' +
-    (g.es ? enlazaGlosa(g.es, g.pali) : 'v. ' + escapa(g.remite_a || '')) +
+    '<p class="nota puente"' + (g.es && !(idioma === 'en' && g.en) ? langEs() : '') + '><span class="marca m-norma">Nandisena</span>' +
+    (idioma === 'en' && g.en ? enlazaGlosa(g.en, g.pali)
+     : g.es ? marcaEs() + enlazaGlosa(g.es, g.pali) : 'v. ' + escapa(g.remite_a || '')) +
     (g.refs && g.refs.length ? ' <span class="fijado">' + g.refs.map(escapa).join(' · ') + '</span>' : '') +
     '</p>').join('');
   const notas = [t.nota, t.conflicto, t.duda, t.errata,
@@ -859,7 +873,7 @@ function capaNand(t){
      lector está en EN, se enseña él, rotulado «en». Si no, el español. */
   const enIngles = idioma === 'en' && t.en;
   const cuerpo = enIngles ? enlazaGlosa(t.en, t.pali)
-    : t.es ? enlazaGlosa(t.es, t.pali)
+    : t.es ? marcaEs() + enlazaGlosa(t.es, t.pali)
     : t.remite_a ? 'v. <i>' + enlaceTermino(t.remite_a) + '</i>'
     : '<span style="color:var(--text2);font-style:italic">sin definición en el impreso — la entrada trae sólo la referencia</span>';
   const tip = 'Glosario de Bhikkhu Nandisena|Glosario de términos gramaticales de la '
@@ -870,7 +884,8 @@ function capaNand(t){
         : '. Su español es el firmado y se reproduce literalmente.');
   return '<div class="capa capa-nand">' +
     '<div class="gl">' + marca('tag-nand', 'Glosario', tip) +
-    '<div class="' + (enIngles ? 'en' : 'es') + '">' + cuerpo + refs + '</div></div></div>';
+    '<div class="' + (enIngles ? 'en' : 'es') + '"' + (!enIngles && t.es ? langEs() : '') + '>'
+    + cuerpo + refs + '</div></div></div>';
 }
 function capaSmith(t){
   const marcas =
@@ -1174,7 +1189,7 @@ const sbEl = $('#sidebar'), velo = $('#scrim');
 const ancha = () => innerWidth > 900;
 const plegar = v => {
   document.documentElement.classList.toggle('sin-barra', v);
-  $('#burger').setAttribute('aria-expanded', !v);
+  /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 };
 const cerrarSb = () => { sbEl.classList.remove('open'); velo.classList.remove('on'); };
 $('#burger').onclick = () => {

@@ -337,8 +337,7 @@ const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
    entre visitas. */
 function pintarBarra(oculta){
   root.classList.toggle('sin-barra',oculta);
-  burger.setAttribute('aria-expanded',oculta?'false':'true');
-  burger.title=oculta?'Mostrar el índice':'Ocultar el índice';
+  /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 }
 pintarBarra(false);
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
