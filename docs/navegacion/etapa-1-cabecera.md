@@ -9,7 +9,7 @@ etapa 2). Esta nota recoge cómo está hecho y qué se quitó.
 | Pieza | Qué es | Fuente o salida |
 | --- | --- | --- |
 | `herramientas/cabecera.py` | marcado de la barra, tabla `PAGINAS`, `insertar()`, `version_assets()`, comprobación de la paleta | fuente |
-| `site/assets/cabecera.css` | estilos de la barra; repite la paleta «hoja de palma» de `pali.css` con prefijo `cab-` | fuente (a mano) |
+| `site/assets/cabecera.css` | estilos de la barra; repetía la paleta «hoja de palma» de `pali.css` con prefijo `cab-` (desde la etapa 4b la toma de `base.css`) | fuente (a mano) |
 | `site/assets/cabecera.js` | idioma, tema, menú del teléfono, «Ir a §» | fuente (a mano) |
 | `herramientas/generar_secciones.py` | escribe `site/assets/secciones.json` (mapa §N → capítulo) | generador |
 | `site/assets/secciones.json` | 405 §§, sólo los que tienen ancla `id="sN"` en el HTML publicado | salida |
@@ -21,7 +21,8 @@ todo el sitio. `generar_capitulo.version_assets()` la llama.
 `generar_secciones.py` va en `generar_todo.py` tras los capítulos (lee sus
 anclas) y antes de `generar_indices.py` (la portada toma de él los rangos) y
 de `generar_seo.py`. Falla si la paleta de `cabecera.css` deja de coincidir
-con la de `pali.css`.
+con la de `pali.css` (desde la etapa 4b: si un valor de la paleta aparece
+fuera de `base.css`; véase `etapa-4b-recursos.md`).
 
 ## La barra acciona lo que cada página ya tenía
 

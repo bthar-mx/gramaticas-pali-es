@@ -1,0 +1,379 @@
+/* Recursos — hoja común de las páginas de /recursos/
+   FUENTE, no salida, como pali.css: ningún generador escribe este archivo.
+
+   Rediseño de la navegación, etapa 4b (2026-10-08). Hasta aquí cada
+   plantilla de recursos/ traía su copia de estas piezas, con variantes
+   pequeñas que no querían decir nada. Ahora:
+
+     · el bloque del título (ceja con el árbol del IEBH, h1, descripción,
+       insignias de versión y «borrador»), cuyo marcado escribe
+       herramientas/recursos_comun.py;
+     · el índice lateral: un cajón, un solo ☰, en el mismo sitio en todas;
+     · la barra de mandos pegajosa: buscador, botones, filtros, cuenta;
+     · fichas, tablas que se deslizan, globos, el ↑ y el pie con la licencia.
+
+   Lo que es de una sola herramienta —las tablas de paradigmas, la escalera
+   del sandhi, el pasaje del solucionador, las tablas del verbo, la tabla del
+   análisis…— sigue en el <style> de su plantilla, que va DESPUÉS de esta
+   hoja y puede ajustarla. La paleta y la letra son las de base.css.
+
+   El tema: html[data-theme=dark] en todas, salvo /recursos/ (body.dark) y
+   nombre y verbo, que siguen al sistema mientras el lector no elija; los
+   colores llegan resueltos de base.css y aquí no hace falta distinguir. */
+
+/* ── Página ──────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--serif); font-size: 17px; line-height: 1.55;
+}
+[hidden] { display: none !important; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+.lbl {
+  font: 600 11px/1.5 var(--mono); letter-spacing: .16em;
+  text-transform: uppercase; color: var(--text2);
+}
+mark {
+  background: var(--hl); color: inherit; border-radius: 2px;
+  box-shadow: inset 0 -1px 0 var(--haritala);
+}
+
+/* ── El índice lateral ───────────────────────────────────────────
+   Un solo patrón y un solo ☰:
+
+     · en pantalla ancha (> 900 px) el índice va al lado del texto, y el ☰
+       está en su esquina de arriba a la izquierda (.sb-close). Al plegarlo,
+       otro ☰ fijo (#volver-barra) queda exactamente en ese sitio, de modo
+       que parece un solo botón y se pulsa en el mismo lugar para plegar y
+       para devolver. El ☰ de la barra de mandos (#burger) no se ve: sería
+       un segundo botón para lo mismo;
+     · en pantalla estrecha el índice es un cajón. El ☰ es el primero de la
+       barra de mandos (#burger), que es pegajosa y está siempre a mano; con
+       el cajón abierto, el ☰ de su esquina lo cierra, y también el velo y
+       Escape.
+
+   No se guarda entre visitas: plegarlo es comodidad del momento. */
+body:has(> .sidebar) { padding-left: 238px; transition: padding-left .2s ease; }
+html.sin-barra body { padding-left: 0; }
+.sidebar {
+  position: fixed; left: 0; top: var(--cabecera-h, 0px); bottom: 0; z-index: 60;
+  width: 238px; overflow-y: auto; overscroll-behavior: contain;
+  padding: 54px 0 48px;
+  background: var(--bg2); border-right: 1px solid var(--border);
+  transition: transform .2s ease;
+}
+html.sin-barra .sidebar { transform: translateX(-100%); }
+.sb-brand { padding: 0 18px 14px; border-bottom: 1px solid var(--border); margin-bottom: 6px; }
+.sb-brand b { display: block; font-size: 19px; line-height: 1.2; letter-spacing: -.01em; margin-bottom: 3px; }
+.sb-brand .lbl { display: block; font-size: 8.5px; letter-spacing: .1em; line-height: 1.5; }
+/* títulos de grupo (sin plegar) y grupos plegables */
+.sidebar h3, .sb-tit {
+  font: 600 10.5px/1.4 var(--mono); letter-spacing: .15em; text-transform: uppercase;
+  color: var(--haritala); margin: 0; padding: 14px 18px 6px;
+}
+.sb-sec { border-bottom: 1px solid transparent; }
+.sb-sec[open] { padding-bottom: 8px; }
+.sb-sec > summary {
+  display: flex; align-items: baseline; gap: 6px; margin: 0; padding: 8px 14px 6px 12px;
+  font: 600 10.5px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--haritala); cursor: pointer; list-style: none; user-select: none;
+}
+.sb-sec > summary::-webkit-details-marker { display: none; }
+.sb-sec > summary::before { content: '▸'; flex: 0 0 10px; font-size: 9px; opacity: .8; }
+.sb-sec[open] > summary::before { content: '▾'; }
+.sb-sec > summary:hover { background: var(--bg); }
+.sb-sec > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+/* los enlaces */
+.sidebar a {
+  display: block; padding: 3px 18px;
+  color: var(--text); text-decoration: none; font-size: 14px; line-height: 1.4;
+  border-left: 2px solid transparent;
+}
+.sidebar a:hover { background: var(--bg); color: var(--accent); }
+.sidebar a.on { border-left-color: var(--haritala); color: var(--haritala); background: var(--bg); }
+.sidebar a b { font: 600 10.5px/1 var(--mono); color: var(--text2); margin-right: 6px; }
+.sidebar a:hover b, .sidebar a.on b { color: inherit; }
+.sidebar a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+/* el ☰, en la esquina del índice y, plegado, en el mismo sitio */
+.sb-close, #volver-barra {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 30px; margin: 0; padding: 0;
+  font: 400 15px/1 var(--mono); color: var(--text2);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 2px;
+  cursor: pointer;
+}
+.sb-close { position: absolute; top: 14px; left: 14px; }
+#volver-barra {
+  position: fixed; left: 14px; top: calc(var(--cabecera-h, 0px) + 14px); z-index: 56;
+  display: none; background: var(--bg2); box-shadow: 0 2px 10px var(--shadow);
+}
+html.sin-barra #volver-barra { display: inline-flex; }
+.sb-close:hover, #volver-barra:hover { color: var(--text); border-color: var(--text2); }
+.sb-close:focus-visible, #volver-barra:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Desplegar / Plegar todo, arriba a la derecha del índice */
+.sb-tools { position: absolute; top: 17px; right: 12px; display: flex; gap: 4px; }
+.sb-tools button, .rc-plegar button {
+  font: 600 9px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase;
+  background: none; color: var(--text2);
+  border: 1px solid var(--border); border-radius: 2px; padding: 5px 6px; cursor: pointer;
+}
+.sb-tools button:hover, .rc-plegar button:hover { color: var(--text); border-color: var(--text2); }
+.sb-tools button:focus-visible, .rc-plegar button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.scrim { display: none; }
+/* El ☰ de la barra de mandos sólo hace falta cuando el índice es cajón. */
+.bar #burger { display: none; }
+
+@media (max-width: 900px) {
+  body:has(> .sidebar) { padding-left: 0; }
+  .sidebar { transform: translateX(-100%); box-shadow: 0 0 40px var(--shadow); }
+  .sidebar.open { transform: none; }
+  html.sin-barra #volver-barra { display: none; }
+  .scrim.on { display: block; position: fixed; inset: 0; z-index: 55; background: rgba(0,0,0,.35); }
+  .bar #burger { display: inline-flex; order: -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body:has(> .sidebar), .sidebar { transition: none; }
+}
+
+/* ── El bloque del título ────────────────────────────────────────
+   Marcado: recursos_comun.titulo(). Ceja con el árbol del IEBH, título,
+   descripción de una línea e insignias; a la derecha, si la página lo
+   tiene, su muestra animada (.hero); debajo, lo que la página ponga. */
+header.rc-titulo { padding: 52px 0 26px; border-bottom: 1px solid var(--border); }
+.rc-mast {
+  display: flex; flex-wrap: wrap; gap: 22px 34px;
+  align-items: flex-end; justify-content: space-between;
+}
+.rc-titulo-texto { flex: 1 1 420px; min-width: 260px; }
+.rc-lado { flex: 0 1 auto; min-width: 0; }
+.rc-debajo { margin-top: 18px; }
+.eyebrow-iebh { display: flex; align-items: center; gap: 9px; margin: 0; }
+.eyebrow-iebh .marca-arbol { margin: 0; vertical-align: 0; }
+.eyebrow-iebh .lbl { line-height: 1.35; }
+h1.rc-h1 {
+  margin: 10px 0 0; font: 700 clamp(34px, 5.5vw, 52px)/1 var(--serif);
+  letter-spacing: -.02em; color: var(--text);
+}
+.rc-h1 .dia, .rc-h1 em { color: var(--haritala); }
+.rc-h1 em { font-style: normal; }
+.rc-sub { margin: 8px 0 0; font-size: 19px; line-height: 1.35; font-style: italic; color: var(--text2); }
+.rc-titulo .tag { margin: 12px 0 0; max-width: 62ch; font-size: 16.5px; line-height: 1.45; color: var(--text2); }
+.rc-insignias { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 14px; }
+.version-badge {
+  position: relative; display: inline-flex; align-items: center; gap: 6px;
+  font: 600 10.5px/1.4 var(--mono); letter-spacing: .05em;
+  color: var(--accent); background: var(--bg2);
+  border: 1px solid var(--accent); border-radius: 999px; padding: 3px 10px;
+  cursor: help;
+}
+.version-badge:empty { display: none; }
+@media (max-width: 640px) { .version-badge { white-space: normal; } }
+.version-badge time { opacity: .8; font-variant-numeric: tabular-nums; }
+.version-foot { margin-top: 10px; font-size: 13px; color: var(--text2); }
+/* la muestra animada de la derecha (sandhi, paradigmas, raíces, solucionador) */
+.hero {
+  font: 12.5px/1.95 var(--mono); text-align: right; white-space: nowrap;
+  border-right: 2px solid var(--haritala); padding-right: 14px;
+}
+.hero div { display: flex; gap: 9px; justify-content: flex-end; align-items: baseline; opacity: 0; }
+.hero div.on { opacity: 1; transition: opacity .5s ease; }
+/* .fija: la muestra quieta, sin turnos (la cuenta de la clasificación) */
+.hero.fija div { display: block; opacity: 1; }
+.hero b { font-weight: 700; color: var(--haritala); }
+.hero .ref { color: var(--text2); font-size: 10.5px; }
+/* el enlace de vuelta de las páginas que la barra común no cubre (la guía) */
+.volver-sitio {
+  display: inline-block; margin-bottom: 14px; opacity: .85;
+  font: 400 12px/1 var(--mono); color: var(--text2); text-decoration: none;
+}
+.volver-sitio:hover { color: var(--accent); opacity: 1; }
+@media (max-width: 640px) {
+  header.rc-titulo { padding: 34px 0 22px; }
+  .rc-sub { font-size: 17px; }
+  .rc-titulo .tag { font-size: 16px; }
+  .hero {
+    text-align: left; border-right: 0; border-left: 2px solid var(--haritala);
+    padding: 0 0 0 12px; font-size: 11px; overflow-x: auto; width: 100%;
+  }
+  .hero div { justify-content: flex-start; }
+  .rc-lado { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero div { opacity: 1 !important; transition: none !important; }
+}
+
+/* ── La barra de mandos ──────────────────────────────────────────
+   Pegajosa bajo la cabecera común: el buscador de la página, sus filtros,
+   la cuenta y, en pantalla estrecha, el ☰ del índice. */
+.bar {
+  position: sticky; top: var(--cabecera-h, 0px); z-index: 20;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  padding: 12px 0; margin-bottom: 6px;
+}
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+input[type=search] {
+  flex: 1 1 220px; min-width: 0; margin: 0;
+  font: 16px/1.3 var(--serif); color: var(--text);
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 2px;
+  padding: 9px 12px;
+}
+input[type=search]::placeholder { color: var(--text3); opacity: 1; }
+input[type=search]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+select {
+  font: 11px var(--mono); color: var(--text); background: var(--bg2);
+  border: 1px solid var(--border); border-radius: 2px; padding: 7px 6px;
+}
+select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* botón de icono: ☰, ⚑, ⧉… */
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font: 13px/1 var(--mono); color: var(--text2); background: var(--bg2);
+  border: 1px solid var(--border); border-radius: 2px; padding: 8px 10px; cursor: pointer;
+}
+.icon-btn:hover { color: var(--text); border-color: var(--text2); }
+.icon-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.icon-btn.on, .icon-btn[aria-pressed=true] { background: var(--accent); color: var(--bg2); border-color: var(--accent); }
+/* grupos de botones: filtros, Desplegar / Plegar todo. Las pestañas no:
+   cada herramienta tiene las suyas (en caja en sandhi, subrayadas en
+   raíces y en el glosario, otras en el verbo). */
+.filtros, .rc-plegar {
+  display: flex; flex-wrap: nowrap; gap: 0;
+  border: 1px solid var(--border); border-radius: 2px; overflow: hidden;
+}
+.filtros button, .rc-plegar button {
+  font: 600 10px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  padding: 8px 10px; margin: 0; border: 0; border-radius: 0;
+  background: var(--bg2); color: var(--text2); cursor: pointer;
+  border-right: 1px solid var(--border);
+}
+.filtros button:last-child, .rc-plegar button:last-child { border-right: 0; }
+.filtros button:hover, .rc-plegar button:hover { color: var(--text); }
+.filtros button[aria-pressed=true] { background: var(--accent); color: var(--bg2); }
+.filtros.tema button[aria-pressed=true] { background: var(--haritala); }
+.filtros button:focus-visible, .rc-plegar button:focus-visible {
+  outline: 2px solid var(--haritala); outline-offset: -2px;
+}
+.count { font: 11px/1.4 var(--mono); color: var(--text2); white-space: nowrap; }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .bar .wrap { gap: 9px; }
+  /* un grupo de filtros que no cabe se parte en filas, en vez de salirse */
+  .filtros { flex-wrap: wrap; gap: 1px; background: var(--border); }
+  .filtros button { flex: 1 0 auto; border-right: 0; }
+}
+
+/* ── Tablas ────────────────────────────────────────────────────────
+   Las insignias comunes son .version-badge (arriba) y .borrador (base.css).
+   Las fichas que significan algo en una herramienta (.chip, .cod, .gana…)
+   son de su plantilla. */
+/* Una tabla ancha rueda dentro de su caja y no empuja la página de lado. */
+.rc-desliza { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.empty { padding: 60px 0; text-align: center; color: var(--text2); }
+.empty p { margin: 0 0 6px; }
+
+/* ── El globo ──────────────────────────────────────────────────── */
+#tip {
+  position: fixed; z-index: 200; max-width: 380px; pointer-events: none; opacity: 0;
+  transform: translateY(3px); transition: opacity .12s ease, transform .12s ease;
+  background: var(--bg2); color: var(--text); border: 1px solid var(--border); border-radius: 3px;
+  box-shadow: 0 8px 26px var(--shadow); padding: 13px 15px; font-size: 15.5px; line-height: 1.5;
+}
+#tip.on { opacity: 1; transform: none; }
+#tip .tn { font: 700 12px/1.4 var(--mono); color: var(--accent); display: block; margin-bottom: 5px; }
+#tip .tp { font-style: italic; font-weight: 700; margin: 0; font-size: 16.5px; }
+#tip .te { margin: 5px 0 0; color: var(--text2); font-size: 15px; }
+#tip .tk {
+  font: 10.5px/1.4 var(--mono); color: var(--haritala); margin: 8px 0 0;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+/* el globo llano: texto corrido, para lo que antes llevaba el «title» nativo */
+#tip.llano { max-width: 340px; padding: 11px 15px; font-size: 15px; line-height: 1.55; }
+#tip.llano p { margin: 0; }
+/* el globo de CSS de los mandos del índice y de la insignia de versión */
+.sb-close[data-tip]:hover::after,
+#volver-barra[data-tip]:hover::after,
+#burger[data-tip]:hover::after,
+.version-badge[data-tip]:hover::after {
+  content: attr(data-tip);
+  position: absolute; top: calc(100% + 8px); left: 0; z-index: 100;
+  width: max-content; min-width: 160px; max-width: min(340px, 70vw);
+  background: var(--bg2); color: var(--text); border: 1px solid var(--border); border-radius: 10px;
+  padding: 8px 13px; font: 400 12.5px/1.6 var(--sans); letter-spacing: normal;
+  text-transform: none; white-space: normal; text-align: left;
+  box-shadow: 0 3px 12px rgba(0,0,0,.12);
+}
+/* el índice recorta: el globo de su ☰ sale fuera, al lado */
+.sb-close[data-tip]:hover::after {
+  position: fixed; left: 250px; top: calc(var(--cabecera-h, 0px) + 14px); max-width: 320px;
+}
+#burger { position: relative; }
+
+/* ── El ↑ ──────────────────────────────────────────────────────── */
+#top-btn {
+  position: fixed; right: 22px; bottom: 22px; z-index: 150;
+  width: 38px; height: 38px; border-radius: 50%; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border); background: var(--bg2); color: var(--text2);
+  font: 16px/1 var(--mono); cursor: pointer; box-shadow: 0 6px 20px var(--shadow);
+  opacity: 0; pointer-events: none; transform: translateY(6px);
+  transition: opacity .2s, transform .2s, background .12s, color .12s;
+}
+#top-btn.show { opacity: 1; pointer-events: auto; transform: none; }
+#top-btn:hover { background: var(--bg); color: var(--text); border-color: var(--text2); }
+#top-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (prefers-reduced-motion: reduce) { #top-btn { transition: none; } }
+
+/* ── El pie ──────────────────────────────────────────────────────
+   Marcado: recursos_comun.pie(). Las notas plegadas («Notas, cifras y
+   fuentes»; pedido del IEBH, 2026-08-29), y a la vista el imagotipo del
+   IEBH con el crédito y la licencia. */
+footer.rc-pie {
+  margin-top: 54px; padding: 26px 0 58px;
+  border-top: 1px solid var(--border);
+  color: var(--text2); font-size: 14px; line-height: 1.6;
+}
+footer.rc-pie a { color: var(--accent); }
+footer.rc-pie p { margin: 0 0 12px; }
+.pie-notas { margin: 0; }
+.pie-notas > summary {
+  font: 600 11px/1.4 var(--mono); letter-spacing: .07em; text-transform: uppercase;
+  color: var(--text2); cursor: pointer; list-style: none; padding: 4px 0; margin-bottom: 2px;
+}
+.pie-notas > summary::-webkit-details-marker { display: none; }
+.pie-notas > summary::after { content: ' ▸'; font-size: 11px; color: var(--haritala); }
+.pie-notas[open] > summary::after { content: ' ▾'; }
+.pie-notas[open] > summary { margin-bottom: 10px; }
+.pie-notas > summary:hover { color: var(--text); }
+.pie-notas > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.licencia {
+  margin: 22px 0 0; padding-top: 18px; border-top: 1px solid var(--border);
+  font-size: 12.5px; line-height: 1.65; color: var(--text2);
+}
+footer.rc-pie .licencia:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+/* ── Táctil ──────────────────────────────────────────────────────
+   Sólo para punteros gruesos (dedo o lápiz): con ratón nada cambia. Zonas
+   de toque de 44 px, el mínimo recomendado, en los mandos comunes; lo de
+   cada herramienta, en su plantilla. Venía de paradigmas y raíces. */
+@media (pointer: coarse) {
+  input[type=search] { padding: 12px 13px; min-height: 44px; }
+  /* los grupos se reparten en filas; la raya es el hueco de 1 px */
+  .filtros { flex-wrap: wrap; gap: 1px; background: var(--border); border-radius: 3px; }
+  .filtros button { flex: 1 0 auto; min-height: 44px; font-size: 11.5px; padding: 12px 13px; border-right: 0; }
+  .icon-btn { min-height: 44px; min-width: 44px; padding: 12px 13px; font-size: 15px; }
+  .sb-close, #volver-barra { width: 44px; height: 44px; }
+  .sb-tools button, .rc-plegar button { min-height: 36px; padding: 8px 9px; }
+  .sidebar { width: min(300px, 84vw); }
+  .sidebar a { padding: 10px 18px; font-size: 15px; }
+  .sb-sec > summary { padding: 14px 18px 12px; font-size: 11.5px; }
+  .version-badge { padding: 8px 14px; }
+  #top-btn { width: 48px; height: 48px; font-size: 19px; right: 16px; bottom: 16px; }
+}
+
+/* ── Impresión ─────────────────────────────────────────────────── */
+@media print {
+  body, body:has(> .sidebar) { padding-left: 0; background: #fff; color: #000; }
+  .sidebar, .scrim, #volver-barra, #burger, .bar, #top-btn, #tip, .sb-close { display: none !important; }
+  a { color: #000; text-decoration: none; }
+}

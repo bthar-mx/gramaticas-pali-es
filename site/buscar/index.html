@@ -7,13 +7,15 @@
 <title>Buscar · Gramáticas Pāḷi</title>
 <meta content="Búsqueda en todo el sitio: suttas, glosario, raíces, paradigmas y recursos." name="description"/>
 <link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<!-- cabecera:inicio -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="../assets/pali.css?v=d9271bb6" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/base.css?v=4aacb900" rel="stylesheet"/>
+<!-- cabecera:fin -->
+<link href="../assets/pali.css?v=4aacb900" rel="stylesheet"/>
 <!-- cabecera:inicio -->
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../assets/cabecera.css?v=d9271bb6" rel="stylesheet"/>
+<link href="../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
 <style>#dark-btn,#lang-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 </head>
@@ -49,6 +51,7 @@ try{if(paliLang()==='en')location.replace('/en/buscar/'+location.search+location
 <a id="lang-btn" href="/en/buscar/" onclick="try{localStorage.setItem('pali_lang','en')}catch(e){};this.href='/en/buscar/'+location.search+location.hash">EN</a>
 <main class="busca" id="busca" data-indice="../assets/busqueda-es.json?v=415f7a6b" data-textos="{&quot;grupos&quot;:{&quot;suttas&quot;:&quot;Suttas&quot;,&quot;glosario&quot;:&quot;Glosario&quot;,&quot;raices&quot;:&quot;Raíces&quot;,&quot;paradigmas&quot;:&quot;Paradigmas&quot;,&quot;recursos&quot;:&quot;Recursos&quot;},&quot;borrador&quot;:&quot;borrador&quot;,&quot;cargando&quot;:&quot;Cargando el índice…&quot;,&quot;error&quot;:&quot;No se pudo cargar el índice de búsqueda.&quot;,&quot;n_resultados&quot;:&quot;{n} resultados para «{q}»&quot;,&quot;un_resultado&quot;:&quot;1 resultado para «{q}»&quot;,&quot;nada&quot;:&quot;Nada coincide con «{q}».&quot;,&quot;sugerencia&quot;:&quot;Pruebe sin diacríticos (karaka, no kāraka) o con un número de sutta, por ejemplo 290.&quot;,&quot;ver_mas&quot;:&quot;Ver {n} más&quot;,&quot;quedan&quot;:&quot;de {n}&quot;}">
 <h1>Buscar en el sitio</h1>
+<p class="busca-intro">Un número lleva a la página de ese sutta (405 publicados). Una palabra, en pāḷi o en español, con diacríticos o sin ellos, se busca en los suttas, el glosario, las raíces, los paradigmas y los recursos.</p>
 <form class="busca-form" id="busca-form" role="search" action="./" method="get">
 <label for="busca-q">Palabra, término, raíz o número de sutta</label>
 <div class="busca-fila"><input id="busca-q" name="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-describedby="busca-ayuda"/>
@@ -63,9 +66,9 @@ try{if(paliLang()==='en')location.replace('/en/buscar/'+location.search+location
 <p>Edición del texto en pāḷi y traducción al español por Bhikkhu Nandisena. Este material puede ser reproducido para uso personal y distribuido de forma gratuita. Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license">CC BY-NC-ND 4.0</a> · DOI <a href="https://doi.org/10.5281/zenodo.21948010">10.5281/zenodo.21948010</a>.</p>
 </div>
 </main>
-<script defer src="../assets/buscar.js?v=b1a4d517"></script>
+<script defer src="../assets/buscar.js?v=b18fc3d9"></script>
 <!-- cabecera:inicio -->
-<script defer src="../assets/cabecera.js?v=d9271bb6"></script>
+<script defer src="../assets/cabecera.js?v=4aacb900"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

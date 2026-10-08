@@ -167,9 +167,10 @@ Reglas que no se saltan, y son las de siempre:
 
 El markdown es la fuente; el HTML de `site/` es salida generada. **Nunca se
 edita nada dentro de `site/`, con estas excepciones, que son fuente y no salida:
-`site/assets/pali.css`, `site/assets/pali.js`, `site/assets/cabecera.css`,
-`site/assets/cabecera.js`, `site/assets/buscar.js`, los SVG de la marca en
-`site/assets/` y `site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
+`site/assets/base.css`, `site/assets/recursos.css`, `site/assets/pali.css`,
+`site/assets/pali.js`, `site/assets/cabecera.css`, `site/assets/cabecera.js`,
+`site/assets/buscar.js`, los SVG de la marca en `site/assets/` y
+`site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
 entero el hook de pre-commit en cada commit (también
 `site/assets/secciones.json`, que es salida), así que un cambio hecho ahí
 desaparece sin avisar y sin dejar rastro. Lo que se edita está en
@@ -210,6 +211,19 @@ raíces, paradigmas y recursos— y **ni una palabra de los borradores**: de
 ellos, sólo el título y los § que cubren. Lo carga `site/assets/buscar.js`
 sólo al buscar. El glosario guarda el tema en `pali_dark`, como las demás
 páginas. Notas: `docs/navegacion/etapa-4a-busqueda.md`.
+
+**Un solo aspecto para los recursos** (etapa 4b, 2026-10-08). La paleta «hoja
+de palma», las tres familias de letra, la marca del IEBH y la etiqueta
+«borrador» viven **sólo** en `site/assets/base.css`, que `cabecera.insertar`
+enlaza en todas las páginas; `cabecera.comprobar_tokens()` falla si un color
+de la paleta reaparece en otra hoja o plantilla. El cromo común de las trece
+páginas de recursos (bloque del título, índice lateral con un solo ☰, barra de
+mandos, pie) está en `site/assets/recursos.css`; el marcado del bloque del
+título y del pie lo escribe `herramientas/recursos_comun.py` a partir de las
+etiquetas `<rc-titulo>` y `<rc-pie>` de cada plantilla. En una plantilla de
+recursos, el `<style>` es sólo para lo que tiene esa herramienta. La portada
+ya no lleva caja de búsqueda: la de la barra es la única. Notas:
+`docs/navegacion/etapa-4b-recursos.md`.
 
 ### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
 

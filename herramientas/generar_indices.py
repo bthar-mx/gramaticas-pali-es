@@ -176,7 +176,7 @@ CORPUS = [
      "subcomentarios enlazados capa a capa, de modo que desde cualquier "
      "párrafo se llega a su aṭṭhakathā y su ṭīkā. 83.751 párrafos y 54.036 "
      "variantes, con búsqueda que ignora los diacríticos."),
-    ("https://abhidhana.buddha-dhamma.net/", "25 volúmenes · borrador",
+    ("https://abhidhana.buddha-dhamma.net/", "25 volúmenes",
      "Tipiṭaka Pāḷi-Myanmā Abhidhāna",
      "El diccionario pāḷi-birmano del Ministerio de Asuntos Religiosos de "
      "Myanmar, en 25 volúmenes, digitalizado: 221.154 entradas con el "
@@ -432,7 +432,7 @@ EN = {
         "Affairs, in 25 volumes, digitised: 221,154 entries with the headword "
         "romanised and the printed page alongside. The Spanish meanings are "
         "unreviewed drafts; a work in progress.",
-    "25 volúmenes · borrador": "25 volumes · draft",
+    "25 volúmenes": "25 volumes",
 }
 
 
@@ -471,9 +471,6 @@ PAGINA = """<!DOCTYPE html>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>{titulo}</title>
 <meta content="{descripcion}" name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="{raiz}assets/pali.css?v={assets_v}" rel="stylesheet"/>
 </head>
@@ -496,17 +493,7 @@ try{{g=localStorage.getItem('pali_lang');}}catch(e){{}}
 if(g==='en'||g==='es')return g;
 var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
 return /^en\\b/i.test(n)?'en':'es';}}</script>
-<main class="{clase_main}">
-<p class="idx-eyebrow"><span class="marca-arbol"></span>{eyebrow}</p>
-<h1 class="display">{h1}</h1>
-{cuerpo}
-<div class="idx-foot">
-<span class="marca-lockup"></span>
-{pie}
-<p class="idx-licencia"><span class="i-es">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
-</div>
-
-</main>
+{principal}
 
 <script>
 (function () {{
@@ -564,8 +551,31 @@ return /^en\\b/i.test(n)?'en':'es';}}</script>
 """
 
 
+# El cuerpo de la portada, de /kaccayana/ y de la guía de las clases. El de
+# /recursos/ es otro: el bloque del título y el pie comunes de los recursos
+# (recursos_comun.py, etapa 4b), como en cada una de sus páginas.
+PRINCIPAL_IDX = """<main class="{clase_main}">
+<p class="idx-eyebrow"><span class="marca-arbol"></span>{eyebrow}</p>
+<h1 class="display">{h1}</h1>
+{cuerpo}
+<div class="idx-foot">
+<span class="marca-lockup"></span>
+{pie}
+<p class="idx-licencia">{licencia}</p>
+</div>
+
+</main>"""
+
+LICENCIA = ('<span class="i-es">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). '
+            'Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" '
+            'rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span>'
+            '<span class="i-en">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). '
+            'Published under licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" '
+            'rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span>')
+
+
 def tarjeta(href, insignia, titulo, desc, wip=False, externo=False,
-            traducir_titulo=True, extra=None):
+            traducir_titulo=True, extra=None, borrador=False):
     """
     Una tarjeta del índice, en los dos idiomas.
 
@@ -584,6 +594,8 @@ def tarjeta(href, insignia, titulo, desc, wip=False, externo=False,
     desc = bi(desc)
     marca = ('<span aria-hidden="true" class="idx-ext">↗</span>'
              if externo else "")
+    if borrador:
+        marca += ' <span class="borrador">' + bi("borrador", "draft") + '</span>'
     cuerpo = ('{0}      <span class="t">{1}{2}</span>\n'
               '      <span class="d">{3}</span>\n').format(
                   ins, titulo, marca, desc)
@@ -852,7 +864,7 @@ def grupos_recursos():
     for (g_es, g_en), items in recursos_descritos():
         tarjetas = []
         for href, t_es, t_en, d_es, d_en, borrador in items:
-            etiqueta = (' <span class="ini-borrador">' + bi("borrador", "draft")
+            etiqueta = (' <span class="borrador">' + bi("borrador", "draft")
                         + '</span>') if borrador else ""
             tarjetas.append(
                 '<li><a class="ini-rec" href="recursos/{0}">'
@@ -924,29 +936,10 @@ def portada(pub):
             'shared terminological glossary and a concordance between the '
             'works. A Pāḷi term is always translated the same way in all of '
             'them.') + '</p>\n'
-        # La caja grande, la misma que la de la barra (cabecera.js): un
-        # número lleva a la página de ese sutta (destinoSutta()); cualquier
-        # otra cosa, a la búsqueda en todo el sitio, /buscar/?q=… (etapa 4a,
-        # 2026-10-08).
-        '<form class="ini-ir" data-ir-sutta="" novalidate="">\n'
-        '<label for="ini-ir-n">' + bi('Buscar en todo el sitio o ir a un sutta por su número',
-                                      'Search the whole site, or go to a sutta by its number')
-        + '</label>\n'
-        '<div class="ini-ir-fila"><input id="ini-ir-n" name="q" type="text" '
-        'autocomplete="off" enterkeyhint="search" placeholder="290 · kāraka" '
-        'aria-describedby="ini-ir-nota"/>'
-        '<button type="submit">' + bi('Ir', 'Go') + '</button></div>\n'
-        '<p class="ini-ir-nota" id="ini-ir-nota">' + bi(
-            'Un número lleva a la página de ese sutta ({0} publicados). Una '
-            'palabra, en pāḷi o en español, con diacríticos o sin ellos, se '
-            'busca en los suttas, el glosario, las raíces, los paradigmas y '
-            'los recursos.'.format(total),
-            'A number takes you to that sutta\'s page ({0} published). A '
-            'word, in Pāḷi or English, with or without diacritics, is looked '
-            'up in the suttas, the glossary, the roots, the paradigms and the '
-            'resources.'.format(total)) + '</p>\n'
-        '<p class="ir-aviso" role="status" aria-live="polite" hidden=""></p>\n'
-        '</form>\n')
+        # La caja grande de búsqueda se quitó (pedido del IEBH, 2026-10-08):
+        # la de la barra común, en todas las páginas, es la única. Su
+        # explicación está ahora arriba de /buscar/ (generar_busqueda.py).
+        )
 
     cuerpo = (
         heroe +
@@ -1143,8 +1136,8 @@ def indice_recursos():
                     "{0} entries · {1} terms".format("{0:,}".format(n_glo[0]), "{0:,}".format(n_glo[1])))
                  if n_glo else "glosario")
     n_cas = cuenta_casos()
-    badge_cas = (bi("{0} usos · {1} ejemplos · v{2} borrador".format(*n_cas),
-                    "{0} uses · {1} examples · v{2} draft".format(*n_cas))
+    badge_cas = (bi("{0} usos · {1} ejemplos · v{2}".format(*n_cas),
+                    "{0} uses · {1} examples · v{2}".format(*n_cas))
                  if n_cas else "casos")
     n_cla = cuenta_clasificacion()
     badge_cla = (bi("{0} aforismos · {1} notas · v{2}".format(*n_cla),
@@ -1154,14 +1147,14 @@ def indice_recursos():
     # Capítulos y rango de §, de los datos; no de la «etiqueta» de meta.json,
     # que se escribe a mano y puede quedarse atrás (la auditoría de la
     # navegación encontró un «§52–§343» que ya no era verdad).
-    badge_ana = (bi("{0} {1} · v{2} borrador".format(
+    badge_ana = (bi("{0} {1} · v{2}".format(
                         n_ana[0].replace(" · ", " + "), rango_analisis(), n_ana[2]),
-                    "{0} {1} · v{2} draft".format(
+                    "{0} {1} · v{2}".format(
                         n_ana[0].replace(" · ", " + "), rango_analisis(), n_ana[2]))
                  if n_ana else "análisis")
     n_com = cuenta_comentarios()
-    badge_com = (bi("{0} obras · v{1} borrador".format(*n_com),
-                    "{0} works · v{1} draft".format(*n_com))
+    badge_com = (bi("{0} obras · v{1}".format(*n_com),
+                    "{0} works · v{1}".format(*n_com))
                  if n_com else "comentarios")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
                  "__CASOS_BADGE__": badge_cas,
@@ -1173,8 +1166,14 @@ def indice_recursos():
                  "__SOLUCIONADOR_BADGE__": bi("88 % del banco",
                                               "88 % of the bench"),
                  "__NOMBRE_BADGE__": bi("10 pasos", "10 steps")}
+    # Los borradores, los mismos que marca la portada (GRUPOS_RECURSOS): la
+    # etiqueta común «borrador» va junto al título (etapa 4b), no dentro de
+    # la insignia.
+    borradores = {href for _g, items in recursos_descritos()
+                  for href, _te, _tn, _de, _dn, b in items if b}
     tarjetas = [tarjeta(href, insignias.get(ins, ins), titulo, desc,
-                        extra=extra[0] if extra else None)
+                        extra=extra[0] if extra else None,
+                        borrador=href in borradores)
                 for href, ins, titulo, desc, *extra in RECURSOS
                 if (ins != "__RAICES_BADGE__" or n_rai)
                 and (ins != "__VERBO_BADGE__" or n_ver)
@@ -1188,22 +1187,34 @@ def indice_recursos():
     # mano mientras la insignia contaba 85 (2026-10-08).
     tarjetas = [t.replace("__N_PARADIGMAS__", str(n_par)) for t in tarjetas]
 
-    # Un quinto elemento True marca la insignia como obra en curso.
+    # Un quinto elemento True marca la obra como en curso: insignia apagada y
+    # la etiqueta común «borrador».
     externas = [tarjeta(href, ins, titulo, desc, externo=True,
-                        wip=bool(resto and resto[0]))
+                        wip=bool(resto and resto[0]),
+                        borrador=bool(resto and resto[0]))
                 for href, ins, titulo, desc, *resto in CORPUS]
 
-    cuerpo = ('<p class="idx-lede">' + bi(
-                  'Material de referencia para el estudio de la lengua pāḷi, '
-                  'complementario a las traducciones de las gramáticas, y el '
-                  'corpus en el que leer los pasajes que citan.',
-                  'Reference material for the study of the Pāḷi language, '
-                  'complementary to the translations of the grammars, and the '
-                  'corpus in which to read the passages they cite.')
-              + '</p>\n\n'
-              '<h2>' + bi('Disponible') + '</h2>\n{0}\n\n'
-              '<h2>' + bi('Corpus') + '</h2>\n{1}\n').format(
-                  lista(tarjetas), lista(externas))
+    lede = bi('Material de referencia para el estudio de la lengua pāḷi, '
+              'complementario a las traducciones de las gramáticas, y el '
+              'corpus en el que leer los pasajes que citan.',
+              'Reference material for the study of the Pāḷi language, '
+              'complementary to the translations of the grammars, and the '
+              'corpus in which to read the passages they cite.')
+    # El bloque del título y el pie, los comunes de los recursos: el marcado
+    # lo pone recursos_comun.componer() al pasar por cabecera.insertar().
+    principal = (
+        '<rc-titulo>\n'
+        '<rc-ceja>' + bi("Material de apoyo", "Reference material") + '</rc-ceja>\n'
+        '<rc-h1>' + bi("Recursos") + '</rc-h1>\n'
+        '<rc-desc>' + lede + '</rc-desc>\n'
+        '</rc-titulo>\n'
+        '<main class="idx idx-rec">\n'
+        '<h2>' + bi('Disponible') + '</h2>\n' + lista(tarjetas) + '\n\n'
+        '<h2>' + bi('Corpus') + '</h2>\n' + lista(externas) + '\n'
+        '</main>\n'
+        '<rc-pie>\n'
+        '<rc-licencia>{0} {1}.<br>\n{2}</rc-licencia>\n'
+        '</rc-pie>'.format(bi("Fuentes:", "Sources:"), FUENTES, LICENCIA))
 
     return pagina(
         assets_v=version_assets(),
@@ -1211,13 +1222,10 @@ def indice_recursos():
         descripcion="Material de apoyo para el estudio de la gramática pāḷi: "
                     "reglas, tablas y glosarios.",
         raiz="../",
-        eyebrow=bi("Material de apoyo"),
         lang_en="Resources · Pāḷi Grammars in English",
         descripcion_en="Reference material for the study of Pāḷi grammar: "
                        "rules, tables and glossaries.",
-        h1=bi("Recursos"),
-        cuerpo=cuerpo,
-        pie="  {0} {1}.".format(bi("Fuentes:", "Sources:"), FUENTES))
+        principal=principal)
 
 
 def guia_clases():
@@ -1256,6 +1264,13 @@ def pagina(**kw):
     import json as _json
     kw.setdefault("lang_en", kw["titulo"])
     kw.setdefault("clase_main", "idx")
+    if "principal" not in kw:
+        kw["principal"] = PRINCIPAL_IDX.format(
+            clase_main=kw.pop("clase_main"), eyebrow=kw.pop("eyebrow"),
+            h1=kw.pop("h1"), cuerpo=kw.pop("cuerpo"), pie=kw.pop("pie"),
+            licencia=LICENCIA)
+    else:
+        kw.pop("clase_main")
     # Una página sólo en español (la guía de las clases) no arranca en inglés
     # aunque el lector lo haya elegido: no tendría con qué volver, porque su
     # conmutador lo sustituye la barra común, que allí dice «Solo en español».

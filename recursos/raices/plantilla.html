@@ -8,129 +8,27 @@
 <meta name="version" content="1.6">
 <meta name="version-date" content="2026-09-07">
 <meta name="description" content="Las 1.698 raíces pāḷi del Saddanīti Dhātumālā comparadas con las del Pāṇinīya-Dhātupāṭha, del libro «Pali Roots in Saddanīti» del Venerable U Sīlānanda, editado por Bhikkhu Nandisena.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ola:#E7E3D6;        /* hoja de palma */
-  --ola-2:#F0EDE4;
-  --ink:#171612;        /* tinta de humo */
-  --soot:#4E4839;
-  --hair:#BFB7A0;
-  --haritala:#5C4008;   /* oropimente */
-  --hover:rgba(255,255,255,.55);
-  --active:rgba(255,255,255,.75);
-  --hl:rgba(92,64,8,.16);
-  --chip-k:rgba(39,65,79,.10);
-  --nila:#27414F;       /* índigo */
-  --rakta:#7E2E23;      /* bermellón */
-  --shadow:rgba(0,0,0,.05);
-  --serif:"Gentium Book Plus",Georgia,serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-html[data-theme=dark]{
-  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
-  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
-  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
-  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
-}
-html[data-theme=dark] body{background-image:none}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--ola);color:var(--ink);
-  font-family:var(--serif);font-size:17px;line-height:1.55;
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
-}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-
-/* ---------- barra lateral ---------- */
-.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;
-  background:var(--ola-2);border-right:1px solid var(--hair);
-  /* Sitio arriba para el ☰ que pliega el índice. */
-  padding:54px 0 48px}
-.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:10px}
-.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
-.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5}
-.sb-tit{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--haritala);padding:10px 18px 6px}
+/* La paleta, la letra, el bloque del título, el índice lateral, la barra
+   de mandos, el globo, el ↑ y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo que sólo tiene esta página. */
 .abc{display:flex;flex-wrap:wrap;gap:3px;padding:0 14px 14px}
 .abc button{font-family:var(--serif);font-size:15px;font-weight:700;font-style:italic;
-  min-width:34px;padding:4px 4px 3px;background:var(--ola);color:var(--ink);
-  border:1px solid var(--hair);border-radius:2px;cursor:pointer;line-height:1.1}
-.abc button:hover{border-color:var(--soot);color:var(--nila)}
+  min-width:34px;padding:4px 4px 3px;background:var(--bg);color:var(--text);
+  border:1px solid var(--border);border-radius:2px;cursor:pointer;line-height:1.1}
+.abc button:hover{border-color:var(--text2);color:var(--accent)}
 .abc button:disabled{opacity:.42;cursor:default;background:transparent;
   border-style:dashed}
 .abc button small{display:block;font-family:var(--mono);font-style:normal;
-  font-size:8px;font-weight:600;color:var(--soot);letter-spacing:0}
+  font-size:8px;font-weight:600;color:var(--text2);letter-spacing:0}
 .abc button:hover small{color:inherit}
-.sb-nota{padding:4px 18px 0;font-size:12.5px;line-height:1.6;color:var(--soot);
-  border-top:1px solid var(--hair);margin-top:6px;padding-top:12px}
-.sb-close{position:absolute;top:14px;left:14px;
-  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
-  background:var(--ola);color:var(--soot);border:1px solid var(--hair);
-  border-radius:2px;cursor:pointer}
-.sb-close:hover{color:var(--ink);border-color:var(--soot)}
-.sb-close:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-body{padding-left:238px}
-.scrim{display:none}
+.sb-nota{padding:4px 18px 0;font-size:12.5px;line-height:1.6;color:var(--text2);
+  border-top:1px solid var(--border);margin-top:6px;padding-top:12px}
 
-/* ---------- ocultar la barra lateral ---------- */
-/* El botón ☰ vale para las dos cosas: en pantalla ancha pliega la barra y el
-   texto se ensancha; en estrecha la saca por encima, como antes. La
-   preferencia se guarda y la comparten todas las páginas del sitio. */
-.sidebar{transition:transform .2s ease}
-body{transition:padding-left .2s ease}
-html.sin-barra body{padding-left:0}
-html.sin-barra .sidebar{transform:translateX(-100%)}
-/* ---------- el ☰ que trae de vuelta el índice ---------- */
-/* Al plegar la barra, un ☰ fijo se queda exactamente donde estaba el ☰
-   de su esquina: parece un solo botón aunque sean dos, y se pulsa en el
-   mismo sitio para plegar y para devolver. Sólo se ve cuando la barra
-   está plegada. */
-#volver-barra{position:fixed;left:14px;top:calc(var(--cabecera-h,0px) + 14px);
-  z-index:56;display:none;align-items:center;
-  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
-  background:var(--ola-2);color:var(--soot);
-  border:1px solid var(--hair);border-radius:2px;cursor:pointer;
-  box-shadow:0 2px 10px var(--shadow)}
-#volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
-#volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-html.sin-barra #volver-barra{display:inline-flex}
-@media (max-width:900px){html.sin-barra #volver-barra{display:none}}
-@media print{#volver-barra{display:none!important}}
-@media (prefers-reduced-motion:reduce){
-  .sidebar,body{transition:none}
-}
-
-/* ---------- marca del IEBH ---------- */
-.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
-  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
-html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
-.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
-  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
-html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
-.eyebrow-iebh{display:flex;align-items:center;gap:9px}
-
-.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
-     text-transform:uppercase;color:var(--soot)}
-
-/* ---------- header ---------- */
-header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
-.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
-.mast>div:first-child{flex:1 1 380px;min-width:280px}
-.mast .hero{flex:0 1 auto}
-h1{font-size:clamp(34px,5.5vw,52px);line-height:.95;margin:0;font-weight:700;letter-spacing:-.02em}
-h1 .dia{color:var(--haritala)}
-.tag{margin:8px 0 0;max-width:46ch;color:var(--soot);font-size:16.5px}
-/* Las tres obras, bajo el título: la página no es sólo el Saddanīti. */
-.obras{margin:9px 0 0;font-family:var(--mono);font-size:11.5px;font-weight:600;
-  letter-spacing:.06em;color:var(--haritala)}
-.obras i{font-family:var(--serif);font-style:italic;font-size:14.5px;letter-spacing:0}
-/* El crédito del cotejo, en la propia entradilla. */
+/* El crédito del cotejo, en la propia entradilla. Las tres obras van bajo
+   el título, en el subtítulo común (.rc-sub): la página no es sólo el
+   Saddanīti. */
 .tag .por{color:var(--haritala);font-size:15px}
-@media (max-width:640px){.obras{font-size:10.5px}.obras i{font-size:13.5px}}
 /* En un teléfono las cuatro pestañas más el enlace a /verbo/ miden 542 px y
    empujaban la página entera de lado. Se hace rodar la tira, no se parte en
    dos filas: partirla dejaría «El verbo ↗» debajo de las pestañas, y ahí
@@ -140,60 +38,26 @@ h1 .dia{color:var(--haritala)}
   .tabs::-webkit-scrollbar{display:none}
   .tabs .grupo{flex:0 0 auto}
 }
-.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
-  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
-  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
-  border-radius:999px;padding:4px 10px;position:relative}
-.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
 .version-badge[data-tip]:hover::after,
 .version-badge[data-tip].on::after{content:attr(data-tip);
   position:absolute;top:calc(100% + 8px);left:0;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
+  background:var(--bg2);color:var(--text);border:1px solid var(--border);
   border-radius:10px;padding:8px 13px;font:400 12.5px/1.6 var(--serif);
   letter-spacing:normal;white-space:normal;width:max-content;text-align:left;
   min-width:160px;max-width:min(340px,70vw);z-index:100;
   box-shadow:0 3px 12px rgba(0,0,0,.12)}
-.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
-.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
-      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
-.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
-.hero div.on{opacity:1;transition:opacity .5s ease}
-.hero b{font-weight:700;color:var(--haritala);font-family:var(--serif);
-  font-style:italic;font-size:15px}
-.hero .ref{color:var(--soot);font-size:10.5px}
 
-/* ---------- controles ---------- */
-.bar{position:sticky;top:var(--cabecera-h,0px);z-index:20;background:var(--ola);
-     border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
-.bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-input[type=search]{
-  flex:1 1 240px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;padding:9px 12px}
-input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
-.filtros{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
-.filtros button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
-  text-transform:uppercase;padding:8px 10px;border:0;background:var(--ola-2);color:var(--soot);
-  cursor:pointer;border-right:1px solid var(--hair)}
-.filtros button:last-child{border-right:0}
-.filtros button[aria-pressed=true]{background:var(--nila);color:var(--ola-2)}
-.filtros.gana button[aria-pressed=true]{background:var(--haritala);color:var(--ola-2)}
-.filtros button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
-.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
-.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
-  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
-.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
-.icon-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-.icon-btn[aria-pressed=true]{background:var(--nila);color:var(--ola-2);border-color:var(--nila)}
+.filtros.gana button[aria-pressed=true]{background:var(--haritala);color:var(--bg2)}
 
 /* ---------- pestañas ---------- */
 .tabs{display:flex;gap:0;align-items:flex-end;
-  border-bottom:1px solid var(--hair);margin:0 0 4px}
+  border-bottom:1px solid var(--border);margin:0 0 4px}
 .tabs .grupo{display:flex}
 .tabs button{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;
   text-transform:uppercase;background:none;border:0;border-bottom:2px solid transparent;
-  color:var(--soot);padding:12px 2px;margin-right:26px;cursor:pointer}
+  color:var(--text2);padding:12px 2px;margin-right:26px;cursor:pointer}
 .tabs button[aria-selected=true]{color:var(--haritala);border-bottom-color:var(--haritala)}
-.tabs button:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .tabs button span{font-family:var(--serif);font-size:12px;letter-spacing:0;
   text-transform:none;opacity:.75;margin-left:6px}
 .tabs button[data-tip]{cursor:pointer}
@@ -204,56 +68,56 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
    subrayado del activo y con la flecha ↗ de los enlaces salientes. */
 .tabs .fuera{margin-left:auto;align-self:center;padding:12px 0;
   font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--soot);text-decoration:none;
+  text-transform:uppercase;color:var(--text2);text-decoration:none;
   cursor:pointer;white-space:nowrap}
 .tabs .fuera:hover{color:var(--haritala)}
-.tabs .fuera:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.tabs .fuera:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .tabs .fuera .flecha{opacity:.65;margin-left:.35em}
 
 /* ---------- letra ---------- */
 .letra{margin:34px 0 2px;display:flex;align-items:baseline;gap:12px;
   scroll-margin-top:var(--barra,74px)}
 .letra h2{font-size:24px;margin:0;font-weight:700;font-style:italic;color:var(--haritala)}
-.letra .rule{flex:1;height:1px;background:var(--hair)}
-.letra .n{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.08em}
+.letra .rule{flex:1;height:1px;background:var(--border)}
+.letra .n{font-family:var(--mono);font-size:10.5px;color:var(--text2);letter-spacing:.08em}
 /* Subcabecera de letra dentro de una sección del Dhātupāṭha: son las
    cabeceras «K», «KH», «G»… que el propio libro pone dentro de cada gaṇa. */
 .subletra{margin:16px 0 0;display:flex;align-items:baseline;gap:10px;
   scroll-margin-top:var(--barra,74px)}
 .subletra b{font-family:var(--serif);font-style:italic;font-weight:700;
-  font-size:16px;color:var(--soot)}
-.subletra .rule{flex:1;height:1px;background:var(--hair);opacity:.6}
-.subletra .n{font-family:var(--mono);font-size:9.5px;color:var(--soot);opacity:.8}
+  font-size:16px;color:var(--text2)}
+.subletra .rule{flex:1;height:1px;background:var(--border);opacity:.6}
+.subletra .n{font-family:var(--mono);font-size:9.5px;color:var(--text2);opacity:.8}
 /* Índice de secciones del Dhātupāṭha, en la barra lateral. */
 .secs{padding:0 14px 14px}
 .secs button{display:flex;width:100%;align-items:baseline;gap:8px;
   font-family:var(--serif);font-size:14.5px;text-align:left;
   background:none;border:0;border-left:2px solid transparent;
-  padding:5px 8px;cursor:pointer;color:var(--ink)}
-.secs button:hover{background:var(--ola);color:var(--nila);border-left-color:var(--haritala)}
+  padding:5px 8px;cursor:pointer;color:var(--text)}
+.secs button:hover{background:var(--bg);color:var(--accent);border-left-color:var(--haritala)}
 .secs button i{font-family:var(--mono);font-size:10.5px;font-weight:700;
-  color:var(--soot);min-width:34px}
+  color:var(--text2);min-width:34px}
 .secs button:hover i{color:inherit}
 .secs button u{margin-left:auto;font-family:var(--mono);font-size:9px;
-  color:var(--soot);text-decoration:none}
+  color:var(--text2);text-decoration:none}
 
 /* ---------- la fila de una raíz ---------- */
-.fila{border-top:1px solid var(--hair);display:grid;
+.fila{border-top:1px solid var(--border);display:grid;
   grid-template-columns:minmax(120px,1.1fr) minmax(0,2.6fr) minmax(0,2fr);
   gap:0 20px;padding:12px 0;align-items:start;scroll-margin-top:var(--barra,74px)}
-.fila:last-child{border-bottom:1px solid var(--hair)}
+.fila:last-child{border-bottom:1px solid var(--border)}
 .fila:hover{background:var(--hover)}
 .fila.abierta{background:var(--active)}
 .col-raiz{display:flex;flex-direction:column;gap:4px}
 .raiz{font-style:italic;font-weight:700;font-size:20px;line-height:1.2;cursor:pointer;
   background:none;border:0;padding:0;text-align:left;color:inherit;font-family:var(--serif)}
-.raiz:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
+.raiz:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .raiz .mas{font-family:var(--mono);font-style:normal;font-weight:400;font-size:11px;
-  color:var(--soot);margin-left:6px;opacity:.7}
+  color:var(--text2);margin-left:6px;opacity:.7}
 .gana{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.07em;
-  color:var(--nila);background:var(--chip-k);border-radius:2px;padding:2px 7px;
+  color:var(--accent);background:var(--accent-bg);border-radius:2px;padding:2px 7px;
   align-self:flex-start;white-space:nowrap;cursor:help}
-.glosa{font-style:italic;color:var(--ink);font-weight:600}
+.glosa{font-style:italic;color:var(--text);font-weight:600}
 /* La glosa de cada raíz, en la lengua que esté puesta. Hasta la sesión 63 el
    botón EN AÑADÍA el inglés debajo del español —de ahí que fuera más pequeño
    y en cursiva—; ahora es un conmutador de lengua y se turnan, de modo que
@@ -263,18 +127,18 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
    propio <body> y la página entera desaparece en blanco al conmutar (sesión
    63). Por eso las dos glosas se seleccionan SIEMPRE dentro de #out, que es
    donde las pinta el guion, y nunca por la clase a secas. */
-#out .es{color:var(--soot);font-size:15.5px}
-#out .en{color:var(--soot);font-size:15.5px;display:none}
+#out .es{color:var(--text2);font-size:15.5px}
+#out .en{color:var(--text2);font-size:15.5px;display:none}
 body.en #out .en{display:block}
 body.en #out .es{display:none}
 /* Y la prosa de la página, que va duplicada en el marcado. */
 body.en .i-es{display:none}
 body:not(.en) .i-en{display:none}
-.col-skt{border-left:1px solid var(--hair);padding-left:20px}
+.col-skt{border-left:1px solid var(--border);padding-left:20px}
 .skt{font-style:italic;font-weight:700;color:var(--rakta);font-size:17px}
-.skt-glosa{font-style:italic;color:var(--soot);font-size:15px}
-.nada{color:var(--soot);opacity:.45;font-family:var(--mono);font-size:11px}
-.refs{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.04em;
+.skt-glosa{font-style:italic;color:var(--text2);font-size:15px}
+.nada{color:var(--text2);opacity:.45;font-family:var(--mono);font-size:11px}
+.refs{font-family:var(--mono);font-size:10.5px;color:var(--text2);letter-spacing:.04em;
   margin-top:3px;white-space:nowrap}
 
 /* Enlace y Copiar en cada fila. Con 1.698 filas, tenerlos siempre a la vista
@@ -288,41 +152,41 @@ body:not(.en) .i-en{display:none}
 @media print{.acciones{display:none}}
 
 /* ---------- detalle desplegado ---------- */
-.detalle{grid-column:1/-1;margin:10px 0 2px;padding:14px 16px;background:var(--ola-2);
-  border:1px solid var(--hair);border-left:2px solid var(--haritala);border-radius:2px;
+.detalle{grid-column:1/-1;margin:10px 0 2px;padding:14px 16px;background:var(--bg2);
+  border:1px solid var(--border);border-left:2px solid var(--haritala);border-radius:2px;
   font-size:15px;line-height:1.65}
 .detalle dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
 .detalle dt{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--soot);padding-top:4px;white-space:nowrap}
+  text-transform:uppercase;color:var(--text2);padding-top:4px;white-space:nowrap}
 .detalle dd{margin:0}
-.detalle .nota{margin-top:10px;padding-top:9px;border-top:1px solid var(--hair);
-  font-size:14px;color:var(--soot)}
+.detalle .nota{margin-top:10px;padding-top:9px;border-top:1px solid var(--border);
+  font-size:14px;color:var(--text2)}
 .detalle .nota b{font-family:var(--mono);font-size:10px;color:var(--haritala);
   margin-right:5px;vertical-align:super}
 .detalle .acc{margin-top:11px;display:flex;gap:8px;flex-wrap:wrap}
 .mini-btn{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);
-  font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--soot);
-  background:var(--ola);border:1px solid var(--hair);border-radius:2px;
+  font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--text2);
+  background:var(--bg);border:1px solid var(--border);border-radius:2px;
   padding:5px 9px;cursor:pointer;line-height:1}
-.mini-btn:hover{color:var(--ink);border-color:var(--soot)}
-.mini-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.mini-btn:hover{color:var(--text);border-color:var(--text2)}
+.mini-btn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .mini-btn.ok{color:var(--haritala);border-color:var(--haritala)}
 @media print{.mini-btn{display:none}}
 
 /* ---------- índice de significados ---------- */
-.sig{border-top:1px solid var(--hair);padding:13px 0;scroll-margin-top:var(--barra,74px)}
-.sig:last-child{border-bottom:1px solid var(--hair)}
+.sig{border-top:1px solid var(--border);padding:13px 0;scroll-margin-top:var(--barra,74px)}
+.sig:last-child{border-bottom:1px solid var(--border)}
 .sig:hover{background:var(--hover)}
 .sig .cab{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
 .sig .glosa{font-size:17px}
 .sig .lista{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-family:var(--serif);font-style:italic;font-weight:700;font-size:15.5px;
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;
-  padding:3px 9px;cursor:pointer;color:var(--ink);line-height:1.3}
+  background:var(--bg2);border:1px solid var(--border);border-radius:2px;
+  padding:3px 9px;cursor:pointer;color:var(--text);line-height:1.3}
 .chip:hover{border-color:var(--haritala);color:var(--haritala)}
-.chip:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .chip u{font-family:var(--mono);font-style:normal;font-weight:600;font-size:9.5px;
-  color:var(--soot);text-decoration:none;margin-left:6px;letter-spacing:.05em}
+  color:var(--text2);text-decoration:none;margin-left:6px;letter-spacing:.05em}
 .chip:hover u{color:inherit}
 
 /* ---------- Dhātupāṭha ---------- */
@@ -330,18 +194,18 @@ body:not(.en) .i-en{display:none}
   color:var(--rakta);border:1px solid currentColor;border-radius:2px;
   padding:1px 4px;margin-left:7px;vertical-align:2px;cursor:help;white-space:nowrap}
 .dp-lista{margin:0;padding:0;list-style:none}
-.dp-lista li{padding:3px 0;border-bottom:1px dotted var(--hair)}
+.dp-lista li{padding:3px 0;border-bottom:1px dotted var(--border)}
 .dp-lista li:last-child{border-bottom:0}
 .dp-n{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--rakta);
   margin-right:8px}
 .dp-cierto{color:var(--haritala);font-family:var(--mono);font-size:9px;
   font-weight:700;letter-spacing:.06em;margin-left:7px;cursor:help}
-.dp-nota{display:block;font-size:13px;color:var(--soot);margin-top:2px;
-  padding-left:10px;border-left:2px solid var(--hair)}
-.dp-fila{border-top:1px solid var(--hair);display:grid;
+.dp-nota{display:block;font-size:13px;color:var(--text2);margin-top:2px;
+  padding-left:10px;border-left:2px solid var(--border)}
+.dp-fila{border-top:1px solid var(--border);display:grid;
   grid-template-columns:minmax(90px,.7fr) minmax(0,1.4fr) minmax(0,1.6fr);
   gap:0 20px;padding:11px 0;align-items:start;scroll-margin-top:var(--barra,74px)}
-.dp-fila:last-child{border-bottom:1px solid var(--hair)}
+.dp-fila:last-child{border-bottom:1px solid var(--border)}
 .dp-fila:hover{background:var(--hover)}
 .dp-fila .raiz{font-size:19px;cursor:auto}
 .dp-grupo{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.07em;
@@ -354,125 +218,56 @@ html[data-theme=dark] .dp-grupo{background:rgba(240,154,136,.14)}
 }
 @media (max-width:640px){.dp-fila{grid-template-columns:1fr;gap:5px}}
 .prestado{font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.06em;
-  color:var(--nila);margin-left:6px;vertical-align:1px;cursor:help}
+  color:var(--accent);margin-left:6px;vertical-align:1px;cursor:help}
 
 /* ---------- Dhātumañjūsā ---------- */
 .dm-marca{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.08em;
-  color:var(--nila);border:1px solid currentColor;border-radius:2px;
+  color:var(--accent);border:1px solid currentColor;border-radius:2px;
   padding:1px 4px;margin-left:5px;vertical-align:2px;cursor:help;white-space:nowrap}
-.dm{border-top:1px solid var(--hair);padding:15px 0;scroll-margin-top:var(--barra,74px)}
-.dm:last-child{border-bottom:1px solid var(--hair)}
+.dm{border-top:1px solid var(--border);padding:15px 0;scroll-margin-top:var(--barra,74px)}
+.dm:last-child{border-bottom:1px solid var(--border)}
 .dm:hover{background:var(--hover)}
 .dm-cab{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:5px}
 .dm-n{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--haritala);
   letter-spacing:.06em}
-.dm-rango{font-family:var(--mono);font-size:10px;color:var(--soot);letter-spacing:.05em}
+.dm-rango{font-family:var(--mono);font-size:10px;color:var(--text2);letter-spacing:.05em}
 .dm-versos{font-style:italic;font-size:17.5px;line-height:1.72;
-  border-left:2px solid var(--hair);padding-left:14px;margin:0}
+  border-left:2px solid var(--border);padding-left:14px;margin:0}
 .dm-versos span{display:block}
-.dm-notas{margin-top:9px;font-size:13.5px;color:var(--soot);line-height:1.6}
+.dm-notas{margin-top:9px;font-size:13.5px;color:var(--text2);line-height:1.6}
 .dm-notas b{font-family:var(--mono);font-size:10px;color:var(--haritala);margin-right:5px}
 .dm-notas p{margin:2px 0}
 @media (max-width:640px){.dm-versos{font-size:16.5px;padding-left:10px}}
 
-/* ---------- globo de ayuda ---------- */
-/* El «title» del navegador tarda casi un segundo en salir, no se puede
-   estilar y con el dedo no aparece nunca. Este globo sale enseguida, se lee
-   con teclado y responde al toque. */
-#tip{position:fixed;z-index:200;max-width:330px;pointer-events:none;opacity:0;
-  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
-  background:var(--ola-2);color:var(--ink);border:1px solid var(--hair);
-  border-radius:3px;box-shadow:0 8px 26px var(--shadow);
-  padding:10px 13px;font:400 14px/1.5 var(--serif)}
-#tip.on{opacity:1;transform:none}
 #tip b{display:block;font-family:var(--mono);font-size:10px;font-weight:700;
   letter-spacing:.1em;text-transform:uppercase;color:var(--haritala);
   margin-bottom:4px}
-#tip i{color:var(--soot)}
+#tip i{color:var(--text2)}
 @media (prefers-reduced-motion:reduce){#tip{transition:none}}
 @media print{#tip{display:none}}
 [data-tip]{cursor:help}
 button[data-tip]{cursor:pointer}
 
-mark{background:var(--hl);color:inherit;border-radius:2px;
-  box-shadow:inset 0 -1px 0 var(--haritala)}
 .destacada{animation:latido 1.6s ease}
 @keyframes latido{0%,100%{background:transparent}22%{background:var(--hl)}}
 
-/* ---------- volver al inicio ---------- */
-#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
-  width:38px;height:38px;border-radius:50%;
-  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
-  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
-  opacity:0;pointer-events:none;transform:translateY(6px);
-  transition:opacity .2s,transform .2s,background .12s,color .12s}
-#top-btn.show{opacity:1;pointer-events:auto;transform:none}
-#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
-#top-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
-
-/* ---------- vacío + pie ---------- */
-.empty{padding:60px 0;text-align:center;color:var(--soot)}
-.empty p{margin:0 0 6px}
-footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
-       color:var(--soot);font-size:14px}
-footer a{color:var(--nila)}
-/* El pie plegado (pedido del IEBH, 2026-08-29, extendido a esta página el
-   2026-09-02): a la vista queda el árbol del IEBH y su crédito; las notas y
-   la nota de versión van a un clic. El sumario va en pequeño porque es un
-   mando, no un texto; la prosa de dentro conserva la suya. */
-.pie-notas{margin:0}
-.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
-  cursor:pointer;list-style:none;padding:4px 0;margin-bottom:2px}
-.pie-notas>summary::-webkit-details-marker{display:none}
-.pie-notas>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
-.pie-notas[open]>summary::after{content:' ▾'}
-.pie-notas[open]>summary{margin-bottom:10px}
-.pie-notas>summary:hover{color:var(--ink)}
-.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
-  font-size:12.5px;line-height:1.65;color:var(--soot)}
-.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
-  text-decoration:none;margin-bottom:14px;opacity:.85}
-.volver-sitio:hover{color:var(--nila);opacity:1}
-
 @media (max-width:900px){
-  body{padding-left:0}
-  .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
-  .sidebar.open{transform:none}
-  .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
   .fila{grid-template-columns:minmax(110px,1fr) minmax(0,2.4fr)}
   .col-skt{grid-column:1/-1;border-left:0;padding-left:0;margin-top:8px;
-    padding-top:8px;border-top:1px dotted var(--hair)}
+    padding-top:8px;border-top:1px dotted var(--border)}
 }
 @media (max-width:640px){
-  body{font-size:16px}
-  .mast{gap:22px}
-  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
-        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
-  .hero div{justify-content:flex-start}
-  .bar .wrap{gap:9px}
-  .count{width:100%}
   .fila{grid-template-columns:1fr;gap:6px}
   .detalle dl{grid-template-columns:1fr;gap:0 0}
   .detalle dt{padding-top:9px}
 }
 @media (pointer:coarse){
-  input[type=search]{padding:12px 13px;min-height:44px}
-  .filtros{flex-wrap:wrap;gap:1px;background:var(--hair);border-radius:3px}
-  .filtros button{flex:1 0 auto;min-height:44px;font-size:11.5px;padding:12px 13px;border-right:0}
-  .icon-btn{min-height:44px;min-width:44px;padding:12px 13px;font-size:15px}
   .mini-btn{min-height:38px;padding:9px 12px;font-size:11px}
-  .sidebar{width:min(300px,84vw)}
   .abc button{min-width:44px;min-height:44px;font-size:17px}
   .chip{min-height:38px;display:inline-flex;align-items:center}
-  .version-badge{padding:8px 14px}
-  #top-btn{width:48px;height:48px;font-size:19px;right:16px;bottom:16px}
 }
 @media (pointer:coarse) and (max-width:640px){#f-gana,#f-skt{flex:1 1 100%}}
 @media (prefers-reduced-motion:reduce){
-  .hero div{opacity:1!important;transition:none!important}
   *{animation:none!important}
 }
 @media print{
@@ -540,32 +335,28 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   <i>ṅ</i> or <i>ṇ</i>.</span></p>
 </aside>
 
-<header>
-  <div class="wrap mast">
-    <div>
-      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
-      <h1><span class="i-es">Ra<span class="dia">í</span>ces p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi roots</span></h1>
-      <p class="obras"><i>Saddanīti-dhātumālā</i> · <i>Dhātupāṭha</i> · <i>Dhātumañjūsā</i></p>
-      <p class="tag"><span class="i-es">Las raíces del <i>Saddanīti</i> cotejadas una a una con las del
+<rc-titulo>
+  <rc-ceja>Instituto de Estudios Buddhistas Hispano</rc-ceja>
+  <rc-h1><span class="i-es">Ra<span class="dia">í</span>ces p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi roots</span></rc-h1>
+  <rc-sub><i>Saddanīti-dhātumālā</i> · <i>Dhātupāṭha</i> · <i>Dhātumañjūsā</i></rc-sub>
+  <rc-desc><span class="i-es">Las raíces del <i>Saddanīti</i> cotejadas una a una con las del
       <i>Pāṇinīya-dhātupāṭha</i> <span class="por">(cotejo del Ven. U Sīlānanda)</span>,
       y junto a ellas las otras dos listas clásicas de raíces pāḷi:
       <i>Dhātupāṭha</i> y <i>Dhātumañjūsā</i> en verso.</span><span class="i-en">The roots of the <i>Saddanīti</i> compared one by one with those of the
       <i>Pāṇinīya-dhātupāṭha</i> <span class="por">(comparison by Ven. U Sīlānanda)</span>,
       and beside them the other two classical lists of Pāḷi roots:
-      the <i>Dhātupāṭha</i> and the <i>Dhātumañjūsā</i> in verse.</span></p>
-      <span class="version-badge" id="vbadge"></span>
-    </div>
-    <div class="hero" id="hero" aria-hidden="true"></div>
-  </div>
-</header>
+      the <i>Dhātupāṭha</i> and the <i>Dhātumañjūsā</i> in verse.</span></rc-desc>
+  <rc-insignias><span class="version-badge" id="vbadge"></span></rc-insignias>
+  <rc-lado><div class="hero" id="hero" aria-hidden="true"></div></rc-lado>
+</rc-titulo>
 
 <div class="bar">
   <div class="wrap">
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
+      aria-expanded="true">☰</button>
     <input type="search" id="q" aria-label="Buscar">
     <span class="filtros gana" id="f-gana" role="group" aria-label="Filtrar por gaṇa"></span>
     <span class="filtros" id="f-skt" role="group" aria-label="Filtrar por cognado sánscrito"></span>
-    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
-      aria-expanded="true">☰</button>
     <!-- Desde la sesión 63 este botón conmuta la LENGUA de la página entera,
          no sólo si se enseña la glosa inglesa. Su rótulo dice la lengua a la
          que se va, que es el criterio del resto del sitio. -->
@@ -594,9 +385,8 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 <button id="top-btn" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
 
-<footer class="wrap">
-  <details class="pie-notas">
-    <summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
+<rc-pie>
+<rc-notas><summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
   <p class="version-foot" id="vfoot"></p>
   <div class="i-es">
   <p><strong>Fuente.</strong> Las 1.698 raíces proceden de
@@ -752,17 +542,15 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   2019); the English translation of their entries, from the digitisation of Bodhirasa
   Bhikkhu (2019).</p>
   </div>
-  </details>
-
-  <!-- La formula inglesa es la de COPYRIGHT_EN en generar_capitulo.py. -->
-  <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Bhikkhu Nandisena<br>
+</rc-notas>
+<rc-licencia><span class="i-es">Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Prepared by Bhikkhu Nandisena<br>
   This material may be reproduced for personal use and distributed free of charge.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
-</footer>
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></rc-licencia>
+</rc-pie>
 
 <script>
 const DATA = /*__DATOS__*/{}/*__FIN__*/;
@@ -1795,6 +1583,8 @@ topBtn.addEventListener('click', () => {
     .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
   medir();
   addEventListener('resize', medir);
+  /* la barra crece al pintarse sus filtros y su cuenta: se vuelve a medir (etapa 4b) */
+  if(window.ResizeObserver) new ResizeObserver(medir).observe(barra);
 })();
 
 /* ---------- el desfile de la cabecera ----------

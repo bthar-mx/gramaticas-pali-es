@@ -5,14 +5,17 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Recursos · Gramáticas Pāḷi en español</title>
 <meta content="Material de apoyo para el estudio de la gramática pāḷi: reglas, tablas y glosarios." name="description"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<!-- cabecera:inicio -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
-<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="../assets/pali.css?v=d9271bb6" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/base.css?v=4aacb900" rel="stylesheet"/>
+<link href="../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<!-- cabecera:fin -->
+<link href="../assets/pali.css?v=4aacb900" rel="stylesheet"/>
 <!-- cabecera:inicio -->
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../assets/cabecera.css?v=d9271bb6" rel="stylesheet"/>
+<link href="../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
 <style>#dark-btn,#lang-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -53,11 +56,16 @@ try{g=localStorage.getItem('pali_lang');}catch(e){}
 if(g==='en'||g==='es')return g;
 var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
 return /^en\b/i.test(n)?'en':'es';}</script>
-<main class="idx">
-<p class="idx-eyebrow"><span class="marca-arbol"></span><span class="i-es">Material de apoyo</span><span class="i-en">Reference material</span></p>
-<h1 class="display"><span class="i-es">Recursos</span><span class="i-en">Resources</span></h1>
-<p class="idx-lede"><span class="i-es">Material de referencia para el estudio de la lengua pāḷi, complementario a las traducciones de las gramáticas, y el corpus en el que leer los pasajes que citan.</span><span class="i-en">Reference material for the study of the Pāḷi language, complementary to the translations of the grammars, and the corpus in which to read the passages they cite.</span></p>
-
+<header class="rc-titulo">
+<div class="wrap rc-mast">
+<div class="rc-titulo-texto">
+<p class="eyebrow-iebh"><span class="marca-arbol" aria-hidden="true"></span><span class="lbl"><span class="i-es">Material de apoyo</span><span class="i-en">Reference material</span></span></p>
+<h1 class="rc-h1"><span class="i-es">Recursos</span><span class="i-en">Resources</span></h1>
+<p class="tag"><span class="i-es">Material de referencia para el estudio de la lengua pāḷi, complementario a las traducciones de las gramáticas, y el corpus en el que leer los pasajes que citan.</span><span class="i-en">Reference material for the study of the Pāḷi language, complementary to the translations of the grammars, and the corpus in which to read the passages they cite.</span></p>
+</div>
+</div>
+</header>
+<main class="idx idx-rec">
 <h2><span class="i-es">Disponible</span><span class="i-en">Available</span></h2>
 <ul class="idx-list">
   <li>
@@ -97,30 +105,30 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   </li>
   <li>
     <a class="idx-card" href="casos/">
-      <span class="idx-badge"><span class="i-es">109 usos · 364 ejemplos · v0.3 borrador</span><span class="i-en">109 uses · 364 examples · v0.3 draft</span></span>
-      <span class="t"><span class="i-es">Usos de las inflexiones — kāraka</span><span class="i-en">Uses of the inflections — kāraka</span></span>
+      <span class="idx-badge"><span class="i-es">109 usos · 364 ejemplos · v0.3</span><span class="i-en">109 uses · 364 examples · v0.3</span></span>
+      <span class="t"><span class="i-es">Usos de las inflexiones — kāraka</span><span class="i-en">Uses of the inflections — kāraka</span> <span class="borrador"><span class="i-es">borrador</span><span class="i-en">draft</span></span></span>
       <span class="d"><span class="i-es">Qué expresa cada una de las siete inflexiones nominales, uso por uso, según el capítulo de los casos de <i>Rūpasiddhi</i>, con un ejemplo o más para cada uso y la concordancia con Kaccāyana y Saddanīti. Dos órdenes —el de Rūpasiddhi y el de Kaccāyana— y un modo de revisión que enseña de dónde viene cada traducción. Borrador en revisión.</span><span class="i-en">What each of the seven nominal inflections expresses, use by use, following the chapter on cases of <i>Rūpasiddhi</i>, with one example or more for each use and the concordance with Kaccāyana and Saddanīti. Two orders —Rūpasiddhi's and Kaccāyana's— and a review mode that shows where each translation comes from. Draft under review; the page itself is in Spanish.</span></span>
     </a>
   </li>
   <li>
     <a class="idx-card" href="clasificacion/">
       <span class="idx-badge"><span class="i-es">405 aforismos · 105 notas · v0.7.6</span><span class="i-en">405 aphorisms · 105 notes · v0.7.6</span></span>
-      <span class="t"><span class="i-es">Clasificación de los suttas de Kaccāyana</span><span class="i-en">Classification of the Kaccāyana suttas</span></span>
+      <span class="t"><span class="i-es">Clasificación de los suttas de Kaccāyana</span><span class="i-en">Classification of the Kaccāyana suttas</span> <span class="borrador"><span class="i-es">borrador</span><span class="i-en">draft</span></span></span>
       <span class="d"><span class="i-es">Cada aforismo de Kaccāyana clasificado según los cuatro tipos de sutta —saññā, adhikāra, paribhāsā y vidhi— y, cuando es vidhi, según las ocho operaciones (lopa, dīgha, rassa, ādesa, āgama, paṭisedha, paccaya y vibhatti), con la operación descrita en una frase. Por ahora, el Sandhi-Kappa, el Nāma-Kappa, el Kāraka-Kappa, el Samāsa-Kappa y el Taddhita-Kappa; los demás capítulos se irán añadiendo. Cada decisión se apoya en <i>Rūpasiddhi</i> y <i>Nyāsa</i>, contrastados con <i>Bhāsāṭīkā</i>, <i>Saddanīti</i> y las clases del Ven. U Sīlānanda; donde la tradición discrepa, se expone la divergencia y se justifica la determinación. Para el estudiante, un mapa de qué hace cada regla; para el investigador, las fuentes de cada clasificación. Cada aforismo enlaza a su texto y traducción. Borrador en revisión.</span><span class="i-en">Every aphorism of Kaccāyana classified by the four kinds of sutta —saññā, adhikāra, paribhāsā and vidhi— and, when it is a vidhi, by the eight operations (lopa, dīgha, rassa, ādesa, āgama, paṭisedha, paccaya and vibhatti), with the operation stated in one sentence. For now, the Sandhi-Kappa, the Nāma-Kappa, the Kāraka-Kappa, the Samāsa-Kappa and the Taddhita-Kappa; the other chapters will be added in turn. Each decision rests on <i>Rūpasiddhi</i> and <i>Nyāsa</i>, checked against <i>Bhāsāṭīkā</i>, <i>Saddanīti</i> and the Ven. U Sīlānanda's classes; where the tradition disagrees, the divergence is set out and the determination justified. For students, a map of what each rule does; for scholars, the sources behind every classification. Each aphorism links to its text and translation. Draft under review.</span></span>
     </a>
   </li>
   <li>
     <a class="idx-card" href="analisis/">
-      <span class="idx-badge"><span class="i-es">Sandhi + Nāma + Kāraka + Samāsa + Taddhita §1–§405 · v0.11 borrador</span><span class="i-en">Sandhi + Nāma + Kāraka + Samāsa + Taddhita §1–§405 · v0.11 draft</span></span>
-      <span class="t"><span class="i-es">Análisis de los suttas de Kaccāyana</span><span class="i-en">Analysis of the Kaccāyana suttas</span></span>
+      <span class="idx-badge"><span class="i-es">Sandhi + Nāma + Kāraka + Samāsa + Taddhita §1–§405 · v0.11</span><span class="i-en">Sandhi + Nāma + Kāraka + Samāsa + Taddhita §1–§405 · v0.11</span></span>
+      <span class="t"><span class="i-es">Análisis de los suttas de Kaccāyana</span><span class="i-en">Analysis of the Kaccāyana suttas</span> <span class="borrador"><span class="i-es">borrador</span><span class="i-en">draft</span></span></span>
       <span class="d"><span class="i-es">Clase, aṅga, funciones (kāriyī, kāriya, nimitta) y ejemplo de cada sutta, según <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.</span><span class="i-en">Class, aṅga, roles (kāriyī, kāriya, nimitta) and example for each sutta, following <i>Visuddhāyuṃ Kaccāyana-ṭīkā</i>.</span></span>
     </a>
     <a class="idx-sub" href="analisis/guia/" style="display:inline-block;margin:.35rem 0 0 1.25rem;font:400 .8rem/1.4 var(--mono);color:var(--accent)">→ <span class="i-es">Guía para el estudiante</span><span class="i-en">Student guide</span></a>
   </li>
   <li>
     <a class="idx-card" href="comentarios/">
-      <span class="idx-badge"><span class="i-es">48 obras · v0.1 borrador</span><span class="i-en">48 works · v0.1 draft</span></span>
-      <span class="t"><span class="i-es">Comentarios de la escuela de Kaccāyana</span><span class="i-en">Commentaries of the Kaccāyana school</span></span>
+      <span class="idx-badge"><span class="i-es">48 obras · v0.1</span><span class="i-en">48 works · v0.1</span></span>
+      <span class="t"><span class="i-es">Comentarios de la escuela de Kaccāyana</span><span class="i-en">Commentaries of the Kaccāyana school</span> <span class="borrador"><span class="i-es">borrador</span><span class="i-en">draft</span></span></span>
       <span class="d"><span class="i-es">Las obras de la escuela gramatical de Kaccāyana —el texto raíz, sus comentarios, los compendios y sus ṭīkās, los tratados auxiliares y las glosas vernáculas— con autor, fecha, lugar, relación con Kaccāyana, la sección de Ñāṇatusita (<i>Reference Table of Pāli Literature</i>) y el texto en línea, con el material de este sitio en primer lugar. Borrador en revisión.</span><span class="i-en">The works of the Kaccāyana school of grammar —the root text, its commentaries, the digests and their ṭīkās, the auxiliary treatises and the vernacular glosses— with author, date, place, relation to Kaccāyana, Ñāṇatusita's section (<i>Reference Table of Pāli Literature</i>) and the online text, this site's own material first. Draft under review.</span></span>
     </a>
   </li>
@@ -151,20 +159,19 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   </li>
   <li>
     <a class="idx-card ext" href="https://abhidhana.buddha-dhamma.net/" rel="noopener" target="_blank">
-      <span class="idx-badge wip"><span class="i-es">25 volúmenes · borrador</span><span class="i-en">25 volumes · draft</span></span>
-      <span class="t"><span class="i-es">Tipiṭaka Pāḷi-Myanmā Abhidhāna</span><span class="i-en">Tipiṭaka Pāḷi-Myanmā Abhidhāna</span><span aria-hidden="true" class="idx-ext">↗</span></span>
+      <span class="idx-badge wip"><span class="i-es">25 volúmenes</span><span class="i-en">25 volumes</span></span>
+      <span class="t"><span class="i-es">Tipiṭaka Pāḷi-Myanmā Abhidhāna</span><span class="i-en">Tipiṭaka Pāḷi-Myanmā Abhidhāna</span><span aria-hidden="true" class="idx-ext">↗</span> <span class="borrador"><span class="i-es">borrador</span><span class="i-en">draft</span></span></span>
       <span class="d"><span class="i-es">El diccionario pāḷi-birmano del Ministerio de Asuntos Religiosos de Myanmar, en 25 volúmenes, digitalizado: 221.154 entradas con el titular romanizado y la página impresa al lado. Los significados en español son borradores sin revisar; edición en curso.</span><span class="i-en">The Pāḷi-Burmese dictionary of Myanmar's Ministry of Religious Affairs, in 25 volumes, digitised: 221,154 entries with the headword romanised and the printed page alongside. The Spanish meanings are unreviewed drafts; a work in progress.</span></span>
     </a>
   </li>
 </ul>
-
-<div class="idx-foot">
-<span class="marca-lockup"></span>
-  <span class="i-es">Fuentes:</span><span class="i-en">Sources:</span> <a href="https://github.com/bthar-mx/gramaticas-pali-es">github.com/bthar-mx/gramaticas-pali-es</a>.
-<p class="idx-licencia"><span class="i-es">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
-</div>
-
 </main>
+<footer class="rc-pie">
+<div class="wrap">
+<p class="licencia"><span class="marca-lockup" aria-hidden="true"></span><span class="i-es">Fuentes:</span><span class="i-en">Sources:</span> <a href="https://github.com/bthar-mx/gramaticas-pali-es">github.com/bthar-mx/gramaticas-pali-es</a>.<br>
+<span class="i-es">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Copyright &copy; 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under licence <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
+</div>
+</footer>
 
 <script>
 (function () {
@@ -218,7 +225,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 })();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../assets/cabecera.js?v=d9271bb6"></script>
+<script defer src="../assets/cabecera.js?v=4aacb900"></script>
 <!-- cabecera:fin -->
 </body>
 </html>
