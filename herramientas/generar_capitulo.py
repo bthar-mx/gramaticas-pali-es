@@ -250,6 +250,11 @@ IDIOMAS = {
         "estudiado": "Estudiado",
         "marcar_estudiado": "Marcar como estudiado",
         "enlace": "Enlace",
+        # fila de enlaces de cada tarjeta (navegación, etapa 3, 2026-10-08)
+        "enlaces_aria": "Más sobre §{n}", "todo_sobre": "Todo sobre §{n}",
+        "clasificacion": "Clasificación", "visuddhayum": "Visuddhāyuṃ",
+        "preguntar": "Preguntar", "borrador": "borrador",
+        "rup_corto": "Rū", "sadd_corto": "Sad",
         "copiar_enlace": "Copiar enlace a este sutta",
         "copiar": "Copiar §",
         "copiar_sutta": "Copiar sutta al portapapeles",
@@ -314,6 +319,10 @@ IDIOMAS = {
         "estudiado": "Studied",
         "marcar_estudiado": "Mark as studied",
         "enlace": "Link",
+        "enlaces_aria": "More on §{n}", "todo_sobre": "All about §{n}",
+        "clasificacion": "Classification", "visuddhayum": "Visuddhāyuṃ",
+        "preguntar": "Ask", "borrador": "draft",
+        "rup_corto": "Rū", "sadd_corto": "Sad",
         "copiar_enlace": "Copy link to this sutta",
         "copiar": "Copy §",
         "copiar_sutta": "Copy sutta to clipboard",
@@ -948,23 +957,81 @@ def render_sutta(s, notas):
         sadd_html += marcar_notas(
             "".join("[^{0}]".format(k) for k in s["notas_hdr"]), notas)
 
+    # Rū y Sad legibles sin pasar el ratón (etapa 3): con el dedo los globos
+    # no se abren (pali.css, hover:none), así que allí se enseña esta línea;
+    # con ratón queda oculta y siguen los globos. No son enlaces: no hay
+    # todavía página de Rūpasiddhi ni de Saddanīti.
+    concord = "{0} {1}".format(L["rup_corto"], s["rup"])
+    if s["sadd"]:
+        concord += " · {0} {1}".format(L["sadd_corto"], ", ".join(s["sadd"]))
+    concord_html = '<div class="sutta-concord">{0}</div>'.format(escapar_html(concord))
+
     return (
         '<div class="sutta-card" id="{sid}">\n'
         '<div class="sutta-header" onclick="toggleCard(\'{sid}\')" role="button" tabindex="0">\n'
         '<div class="sutta-meta">\n'
         '<div class="sutta-ref-line">{ref}<span class="sutta-pali-title">{pali}{sadd}</span></div>\n'
-        '{desglose}\n'
+        '{desglose}{concord}\n'
         '</div>\n'
         '<svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" '
         'viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg>\n'
         '</div>\n'
         '<div class="sutta-body">\n{palib}{gloss}{vutti}{resto}{notas}'
-        '{pie}'
+        '{enlaces}{pie}'
         '</div>\n</div>\n'
     ).format(sid=sid, ref=ref, sadd=sadd_html, pie=pie_tarjeta(sid),
+             enlaces=fila_enlaces(n), concord=concord_html,
              pali=marcar_notas(escapar_html(s["pali_notas"]), notas),
              desglose=desglose_html, palib=pali_html, gloss=gloss_html,
              vutti=vutti_html, resto=resto_html, notas=notas_html)
+
+
+_FILAS_BORRADOR = {}
+
+
+def filas_borrador(cual):
+    """Los § que tienen fila en un borrador («clasificacion» o «analisis»),
+    para no enlazar a una fila que no existe."""
+    if cual not in _FILAS_BORRADOR:
+        ns = set()
+        if cual == "clasificacion":
+            p = os.path.join(RAIZ, "recursos", "clasificacion", "datos.json")
+            if os.path.exists(p):
+                ns = {int(k) for k in json.load(open(p, encoding="utf-8"))["suttas"]}
+        else:
+            p = os.path.join(RAIZ, "recursos", "analisis", "meta.json")
+            if os.path.exists(p):
+                for f in json.load(open(p, encoding="utf-8"))["capitulos"]:
+                    d = json.load(open(os.path.join(RAIZ, "recursos", "analisis", "datos", f),
+                                       encoding="utf-8"))
+                    ns |= {s["n"] for s in d["suttas"]}
+        _FILAS_BORRADOR[cual] = ns
+    return _FILAS_BORRADOR[cual]
+
+
+def fila_enlaces(n):
+    """La fila de enlaces de la tarjeta (navegación, etapa 3; mesa de
+    trabajo 3): la página del sutta, la clasificación y el análisis según
+    Visuddhāyuṃ —los dos, borradores: sólo el enlace y su rótulo— y
+    «Preguntar», que abre el diálogo del análisis. Va dentro del cuerpo de
+    la tarjeta, sobre los mandos de su pie; pali.js la deja fuera de la
+    búsqueda del capítulo."""
+    raiz = L["raiz"]
+    en = L["lang"] == "en"
+    lq = "?lang=en" if en else ""
+    borr = ' <span class="sutta-enl-borr">{0}</span>'.format(L["borrador"])
+    items = ['<a class="sutta-enl sutta-enl-hub" href="{0}s/{1}/">{2}</a>'.format(
+        raiz + ("en/" if en else ""), n, L["todo_sobre"].format(n=n))]
+    if n in filas_borrador("clasificacion"):
+        items.append('<a class="sutta-enl" href="{0}recursos/clasificacion/{1}#s{2}">{3}{4}</a>'
+                     .format(raiz, lq, n, L["clasificacion"], borr))
+    if n in filas_borrador("analisis"):
+        items.append('<a class="sutta-enl" href="{0}recursos/analisis/{1}#s{2}">{3}{4}</a>'
+                     .format(raiz, lq, n, L["visuddhayum"], borr))
+        items.append('<a class="sutta-enl" href="{0}recursos/analisis/?preguntar={1}{2}#s{1}">{3}</a>'
+                     .format(raiz, n, "&amp;lang=en" if en else "", L["preguntar"]))
+    return '<nav class="sutta-enlaces" aria-label="{0}">{1}</nav>\n'.format(
+        L["enlaces_aria"].format(n=n), "".join(items))
 
 
 def pie_tarjeta(sid):
@@ -1120,7 +1187,9 @@ def rangos_kanda(suttas):
 def render_toc(suttas, meta):
     """TOC con grupos de kaṇḍa plegables y caja «ir a §…» / filtro."""
     rangos = rangos_kanda(suttas)
-    partes = ['<p class="toc-title">{0}</p>'.format(meta["titulo_pali"])]
+    # sin el número delante («Kāraka-Kappa», no «3-Kāraka-Kappa»): el
+    # capítulo ya se dice arriba (navegación, etapa 3)
+    partes = ['<p class="toc-title">{0}</p>'.format(re.sub(r"^\d+-", "", meta["titulo_pali"]))]
     partes.append(
         '<div class="toc-jump-wrap">'
         '<input aria-label="{0}" '

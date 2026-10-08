@@ -196,6 +196,11 @@ un enlace rotulado «borrador» a cada uno; lo comprueba
 `herramientas/comprobar_hub_borradores.py`. Notas:
 `docs/navegacion/etapa-2-hub.md`.
 
+**Las tarjetas de los capítulos** (etapa 3, 2026-10-08) llevan una fila de
+enlaces —la página del sutta, la clasificación y el análisis (borradores,
+sólo el enlace) y «Preguntar»— y, en pantallas táctiles, «Rū N · Sad N» a la
+vista. Notas: `docs/navegacion/etapa-3-tarjetas.md`.
+
 ### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
 
 Los capítulos 2, 3 y 4 en español son **salida**, no fuente: los rehace
@@ -528,8 +533,12 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
 
 ## Estado de recursos/paradigmas
 
-La referencia de paradigmas (`/recursos/paradigmas/`, v1.18) son las 84 entradas
-(83 documentos) de declinación nominal y pronominal del IEBH. Se arma con
+La referencia de paradigmas (`/recursos/paradigmas/`, v1.18) son **85 paradigmas**
+de declinación nominal y pronominal del IEBH, de 83 documentos (GO y NUMERALES
+llevan dos cada uno), más la tabla de los sufijos que son inflexiones:
+`paradigmas.json` tiene 86 entradas en 84 documentos. «85 paradigmas» en todo
+el sitio (IEBH, 2026-10-08); las cifras salen de los datos
+(`generar_paradigmas.cuenta`), no se escriben a mano. Se arma con
 `herramientas/generar_paradigmas.py` a partir de `recursos/paradigmas/plantilla.html`
 y tres JSON: `paradigmas.json` (los datos), `indice.json` (el cotejo) e
 `ingles.json` (el inglés de la prosa).
