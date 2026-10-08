@@ -1235,3 +1235,108 @@ a.ini-rec:hover { background: var(--accent-bg); border-color: var(--accent-mid);
   .ini-sec, .ini-clases { margin-top: 3rem; }
   .ini-clases { padding: 1.1rem 1rem; }
 }
+
+/* ── Página de cada sutta, /s/N/ (rediseño de la navegación, etapa 2,
+   2026-10-08) ───────────────────────────────────────────────────────
+   Mesas de trabajo 2 y 4 del diseño aprobado por el IEBH, con los tokens de
+   esta hoja. El texto del sutta usa las mismas clases que la tarjeta del
+   capítulo (.pali-block, .gloss, .vutti, .seq-list…). */
+.hub {
+  max-width: 1180px; margin: 0 auto; padding: 1.5rem 24px 4rem;
+  font-family: var(--sans); color: var(--text); line-height: 1.55;
+}
+.hub-cab {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: .6rem 1.5rem; font-size: 14px;
+}
+.hub-migas ol { list-style: none; display: flex; flex-wrap: wrap; gap: .2rem .45rem; color: var(--text2); }
+.hub-migas li + li::before { content: "›"; margin-right: .45rem; color: var(--text3); }
+.hub-migas a { color: var(--accent); }
+.hub-migas [aria-current] { color: var(--text); font-weight: 500; }
+.hub-pasos { display: flex; flex-wrap: wrap; gap: 8px; }
+.hub-paso {
+  display: inline-flex; align-items: center; gap: .4rem; min-height: 44px;
+  padding: 0 14px; border: 1px solid var(--border2); border-radius: var(--r);
+  color: var(--accent); text-decoration: none; max-width: 100%;
+}
+.hub-paso:hover { background: var(--accent-bg); }
+.hub-paso i { font-family: var(--serif); color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 16rem; }
+
+.hub-titulo {
+  margin: 1.6rem 0 0; padding-bottom: 1.4rem; border-bottom: 1px solid var(--border2);
+  display: flex; flex-direction: column; gap: .7rem;
+}
+.hub-obra { font-size: 13px; color: var(--text2); }
+.hub-titulo-fila { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem 1.4rem; }
+.hub-n { font: 700 clamp(44px, 7vw, 64px)/1 var(--display); color: var(--accent); }
+.hub-titulo h1 { font: 700 clamp(30px, 5vw, 44px)/1.1 var(--display); letter-spacing: -.01em; }
+.hub-trad { font: 400 19px/1.5 var(--serif); color: var(--text2); max-width: 52rem; }
+.hub-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; }
+.hub-chips li { padding: 4px 10px; border: 1px solid var(--border); border-radius: 6px; color: var(--text2); }
+.hub-chips .hub-chip-k { background: var(--accent-bg); border-color: transparent; color: var(--accent); font-weight: 500; }
+
+.hub-cuerpo { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 2rem; margin-top: 1.75rem; align-items: start; }
+.hub-indice {
+  position: sticky; top: calc(var(--cabecera-h, 0px) + 1rem);
+  display: flex; flex-direction: column; gap: 2px; font-size: 15px;
+}
+.hub-indice p {
+  font: 500 11px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text3); padding: 0 12px 6px;
+}
+.hub-indice a {
+  display: flex; align-items: center; min-height: 40px; padding: 4px 12px;
+  border-radius: 6px; color: var(--accent); text-decoration: none;
+}
+.hub-indice a:hover { background: var(--bg2); }
+.hub-secs { display: flex; flex-direction: column; gap: 1.4rem; min-width: 0; }
+.hub-sec {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: var(--rl);
+  padding: 1.4rem 1.6rem;
+}
+.hub-sec-plana { background: transparent; }
+.hub-sec h2 { font: 700 24px/1.2 var(--display); margin-bottom: .8rem; }
+.hub-sec-cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .4rem 1rem; }
+.hub-leer { font-size: 14px; font-weight: 500; color: var(--accent); }
+.hub-ref { font: 400 13px/1.5 var(--mono); color: var(--text3); margin-bottom: .2rem; }
+.hub-ref .sutta-pali-title { font: 700 18px/1.4 var(--serif); color: var(--text); }
+.hub-sutta .sutta-breakdown { margin: 0 0 .9rem; }
+.hub-sutta .pali-block, .hub-sutta .gloss, .hub-sutta .vutti { margin-bottom: .8rem; }
+.hub-resto { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.hub-glosa { color: var(--text3); font-size: .92em; }
+.hub-cita { text-decoration: none; }
+.hub-nota { margin-top: 1rem; font-size: 13px; color: var(--text3); }
+.hub-citas { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+.hub-citas li { line-height: 1.6; }
+.hub-cita-fuente { font-weight: 500; }
+.hub-cita-fuente a, .hub-citas a { color: var(--accent); }
+.hub-cita-lugares { color: var(--text2); }
+.hub-borradores { list-style: none; display: flex; flex-direction: column; gap: .35rem; }
+.hub-borradores a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-weight: 500; }
+.hub-preg { border-color: var(--accent); background: transparent; }
+.hub-preg p + p { margin-top: .8rem; }
+.hub-preg-estado { font-size: 14px; color: var(--text2); }
+.hub-preg-estado a { color: var(--accent); }
+.hub-pie { margin-top: 3.5rem; }
+
+/* Teléfono (mesa de trabajo 4): todo en una columna, sin nada que dependa
+   de pasar el ratón; dianas de 44 px. */
+@media (max-width: 900px) {
+  .hub-cuerpo { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
+  .hub-indice { position: static; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .hub-indice p { width: 100%; padding: 0 0 2px; }
+  .hub-indice a { min-height: 44px; border: 1px solid var(--border); }
+}
+@media (max-width: 760px) {
+  .hub { padding: 1.1rem 16px 3rem; }
+  .hub-sec { padding: 1.1rem 1rem; }
+  .hub-pasos { width: 100%; }
+  .hub-paso { flex: 1 1 0; min-width: 0; justify-content: center; padding: 0 10px; }
+  .hub-paso i { display: none; }
+  .hub-migas a, .hub-leer { display: inline-flex; align-items: center; min-height: 44px; }
+  .hub-trad { font-size: 17px; }
+}
+@media print {
+  .hub-pasos, .hub-indice, .hub-preg { display: none !important; }
+  .hub-cuerpo { display: block; }
+}
