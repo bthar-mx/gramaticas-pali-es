@@ -818,8 +818,11 @@ def rango_clasificacion():
     return rango(int(k) for k in json.load(open(p, encoding="utf-8"))["suttas"])
 
 
-def grupos_recursos():
-    """Los tres grupos de la portada, con los números tomados de los datos."""
+def recursos_descritos():
+    """GRUPOS_RECURSOS con los «__X__» ya rellenos: [((grupo es, grupo en),
+    [(href, título es, título en, línea es, línea en, borrador), …]), …].
+    La portada pinta esto, y la búsqueda del sitio (generar_busqueda.py)
+    toma de aquí el título y la línea de cada recurso."""
     miles = lambda n: "{0:,}".format(n).replace(",", ".")
     rai = cuenta_raices() or (0, 0, 0, 0)
     sandhi = formas_sandhi() or (0, 0)
@@ -832,12 +835,23 @@ def grupos_recursos():
         "__RANGO_CLASIFICACION__": rango_clasificacion(),
         "__RANGO_ANALISIS__": rango_analisis(),
     }
-    bloques = []
-    for (g_es, g_en), items in GRUPOS_RECURSOS:
-        tarjetas = []
+    out = []
+    for grupo, items in GRUPOS_RECURSOS:
+        llenos = []
         for href, t_es, t_en, d_es, d_en, borrador in items:
             for k, v in valores.items():
                 d_es, d_en = d_es.replace(k, v), d_en.replace(k, v)
+            llenos.append((href, t_es, t_en, d_es, d_en, borrador))
+        out.append((grupo, llenos))
+    return out
+
+
+def grupos_recursos():
+    """Los tres grupos de la portada, con los números tomados de los datos."""
+    bloques = []
+    for (g_es, g_en), items in recursos_descritos():
+        tarjetas = []
+        for href, t_es, t_en, d_es, d_en, borrador in items:
             etiqueta = (' <span class="ini-borrador">' + bi("borrador", "draft")
                         + '</span>') if borrador else ""
             tarjetas.append(
@@ -910,25 +924,27 @@ def portada(pub):
             'shared terminological glossary and a concordance between the '
             'works. A Pāḷi term is always translated the same way in all of '
             'them.') + '</p>\n'
-        # La caja grande. En esta etapa sólo lleva a un §: la misma función
-        # que la barra (cabecera.js). Una palabra no se busca —todavía no hay
-        # búsqueda en todo el sitio— y se dice, con el camino a los recursos,
-        # que tienen cada uno su buscador.
-        '<form class="ini-ir" data-ir-sutta="" data-palabras="" novalidate="">\n'
-        '<label for="ini-ir-n">' + bi('Ir a un sutta o buscar en todo el sitio',
-                                      'Go to a sutta or search the whole site')
+        # La caja grande, la misma que la de la barra (cabecera.js): un
+        # número lleva a la página de ese sutta (destinoSutta()); cualquier
+        # otra cosa, a la búsqueda en todo el sitio, /buscar/?q=… (etapa 4a,
+        # 2026-10-08).
+        '<form class="ini-ir" data-ir-sutta="" novalidate="">\n'
+        '<label for="ini-ir-n">' + bi('Buscar en todo el sitio o ir a un sutta por su número',
+                                      'Search the whole site, or go to a sutta by its number')
         + '</label>\n'
-        '<div class="ini-ir-fila"><input id="ini-ir-n" name="n" type="text" '
-        'autocomplete="off" enterkeyhint="go" placeholder="§ 290" '
+        '<div class="ini-ir-fila"><input id="ini-ir-n" name="q" type="text" '
+        'autocomplete="off" enterkeyhint="search" placeholder="290 · kāraka" '
         'aria-describedby="ini-ir-nota"/>'
         '<button type="submit">' + bi('Ir', 'Go') + '</button></div>\n'
         '<p class="ini-ir-nota" id="ini-ir-nota">' + bi(
-            'Un número lleva a la página de ese sutta ({0} publicados). La '
-            'búsqueda de palabras en todo el sitio llega en una etapa '
-            'posterior.'.format(total),
-            'A number takes you to that sutta\'s page ({0} published). '
-            'Word search across the whole site comes in a later stage.'
-            .format(total)) + '</p>\n'
+            'Un número lleva a la página de ese sutta ({0} publicados). Una '
+            'palabra, en pāḷi o en español, con diacríticos o sin ellos, se '
+            'busca en los suttas, el glosario, las raíces, los paradigmas y '
+            'los recursos.'.format(total),
+            'A number takes you to that sutta\'s page ({0} published). A '
+            'word, in Pāḷi or English, with or without diacritics, is looked '
+            'up in the suttas, the glossary, the roots, the paradigms and the '
+            'resources.'.format(total)) + '</p>\n'
         '<p class="ir-aviso" role="status" aria-live="polite" hidden=""></p>\n'
         '</form>\n')
 

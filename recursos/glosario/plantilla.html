@@ -688,16 +688,28 @@ let verNand = true, verSmith = true;
    allí era un SyntaxError, aquí sería de ejecución, y el efecto el mismo. */
 const guardado = k => { try { return localStorage.getItem(k); } catch(e){ return null; } };
 const guardar  = (k,v) => { try { localStorage.setItem(k,v); } catch(e){} };
+/* La clave es la común del sitio, pali_dark ('1' oscuro, '0' claro), como
+   en paradigmas y raíces: el tema elegido aquí viaja a las demás páginas, y
+   al revés (etapa 4a, 2026-10-08). Antes era una clave propia, «tema»
+   ('dark'/'light'): si queda una, se pasa UNA vez a pali_dark —salvo que el
+   lector ya haya elegido en otra página, que manda— y se borra. */
 (function(){
-  const g = guardado('tema');
-  if (g) document.documentElement.dataset.theme = g;
+  const viejo = guardado('tema');
+  if (viejo !== null){
+    if (guardado('pali_dark') === null && (viejo === 'dark' || viejo === 'light'))
+      guardar('pali_dark', viejo === 'dark' ? '1' : '0');
+    try { localStorage.removeItem('tema'); } catch(e){}
+  }
+  const g = guardado('pali_dark');
+  if (g === '1') document.documentElement.dataset.theme = 'dark';
+  else if (g === '0') document.documentElement.dataset.theme = 'light';
   else if (matchMedia('(prefers-color-scheme:dark)').matches)
     document.documentElement.dataset.theme = 'dark';
 })();
 $('#theme').onclick = () => {
   const d = document.documentElement.dataset.theme === 'dark';
   document.documentElement.dataset.theme = d ? 'light' : 'dark';
-  guardar('tema', d ? 'light' : 'dark');
+  guardar('pali_dark', d ? '0' : '1');
 };
 
 /* ---------- cabecera y aviso ---------- */

@@ -6,7 +6,8 @@ aprobado por el IEBH el 2026-10-08).
 
 Una sola fuente para el marcado de la barra que va arriba en las 26 páginas:
 el árbol del IEBH y «Gramáticas Pāḷi» → portada; Kaccāyana · Recursos ·
-Glosario · Clases; la caja «Ir a §»; el conmutador ES|EN y el del tema.
+Glosario · Clases; la caja «§» (un número va a ese sutta; lo demás, a la
+búsqueda del sitio, desde la etapa 4a); el conmutador ES|EN y el del tema.
 
 Cada generador llama a `insertar(html, clave)` justo antes de escribir su
 página. `insertar` pone:
@@ -53,8 +54,8 @@ TEXTOS = {
         "recursos": "Recursos",
         "glosario": "Glosario",
         "clases": "Clases",
-        "ir": "Ir al sutta número",
-        "ir_ph": "Ir a §…",
+        "ir": "Ir a un sutta por su número o buscar en el sitio",
+        "ir_ph": "Buscar…",
         "idioma": "Idioma",
         "es": "Español",
         "en": "English",
@@ -62,10 +63,7 @@ TEXTOS = {
         "tema": "Modo oscuro",
         "menu": "Menú",
         "no_publicado": "§{n} aún no está publicado",
-        "no_numero": "Escriba un número de sutta, por ejemplo 290",
         "sin_indice": "No se pudo cargar el índice de los suttas",
-        "palabras": "La búsqueda en todo el sitio llega en una etapa posterior.",
-        "ver_recursos": "Cada recurso tiene su propio buscador: ver los recursos",
     },
     "en": {
         "marca": "Pāḷi Grammars",
@@ -75,8 +73,8 @@ TEXTOS = {
         "recursos": "Resources",
         "glosario": "Glossary",
         "clases": "Classes",
-        "ir": "Go to sutta number",
-        "ir_ph": "Go to §…",
+        "ir": "Go to a sutta by its number or search the site",
+        "ir_ph": "Search…",
         "idioma": "Language",
         "es": "Español",
         "en": "English",
@@ -84,10 +82,7 @@ TEXTOS = {
         "tema": "Dark mode",
         "menu": "Menu",
         "no_publicado": "§{n} is not published yet",
-        "no_numero": "Type a sutta number, for example 290",
         "sin_indice": "The sutta index could not be loaded",
-        "palabras": "Site-wide search comes in a later stage.",
-        "ver_recursos": "Each resource has its own search: see the resources",
     },
 }
 
@@ -134,6 +129,13 @@ PAGINAS = {
     # los capítulos; su #lang-btn y su #dark-btn ocultos los pone
     # generar_hub.py, y raiz e idioma se fijan al llamar
     "hub":         dict(raiz="../../", seccion="kaccayana", indice=False,
+                        idioma="enlace", ctl_idioma="#lang-btn",
+                        tema="clase", ctl_tema="#dark-btn"),
+    # la búsqueda en todo el sitio (etapa 4a): /buscar/ y /en/buscar/, dos
+    # URL como las páginas de sutta; generar_busqueda.py pone su #lang-btn y
+    # su #dark-btn ocultos, y raiz e idioma se fijan al llamar. No es ninguna
+    # de las secciones de la barra: ningún enlace lleva aria-current.
+    "buscar":      dict(raiz="../", seccion="buscar", indice=True,
                         idioma="enlace", ctl_idioma="#lang-btn",
                         tema="clase", ctl_tema="#dark-btn"),
     "sandhi":      dict(raiz="../../", seccion="recursos", indice=False,
@@ -293,11 +295,12 @@ def cabecera_html(clave, idioma="es", otra_url=None, raiz=None):
         '<button type="button" class="cab-tema" aria-pressed="false" aria-label="{tema}" '
         'data-cab-aria="tema">{luna}{sol}</button></div>\n'
         '</div>\n'
-        '<form class="cab-ir" data-ir-sutta="" aria-label="{ir}" '
-        'data-cab-aria="ir" novalidate="">'
+        '<form class="cab-ir" data-ir-sutta="" role="search" aria-label="{ir}" '
+        'data-cab-aria="ir" action="{buscar}" method="get" novalidate="">'
         '<label class="cab-ir-l" for="cab-ir-n">§<span class="cab-sr" data-cab-t="ir">{ir}</span></label>'
-        '<input class="cab-ir-n" id="cab-ir-n" name="n" type="text" inputmode="numeric" '
-        'autocomplete="off" enterkeyhint="go" placeholder="{ir_ph}" data-cab-ph="ir_ph"/>'
+        '<input class="cab-ir-n" id="cab-ir-n" name="q" type="text" '
+        'autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" '
+        'placeholder="{ir_ph}" data-cab-ph="ir_ph"/>'
         '<p class="cab-aviso" role="status" aria-live="polite" hidden=""></p></form>\n'
         '<button type="button" class="cab-menu" aria-expanded="false" aria-controls="cab-panel" '
         'aria-label="{menu}" data-cab-aria="menu">{icono_menu}</button>\n'
@@ -310,6 +313,8 @@ def cabecera_html(clave, idioma="es", otra_url=None, raiz=None):
              marca=_e(T["marca"]), nav=_e(T["nav"]), enlaces="".join(enlaces),
              lengua=lengua, tema=_e(T["tema"]), luna=ICONO_LUNA, sol=ICONO_SOL,
              ir=_e(T["ir"]), ir_ph=_e(T["ir_ph"]), menu=_e(T["menu"]),
+             buscar=_e(r + ("en/" if idioma == "en" and p["idioma"] == "enlace" else "")
+                       + "buscar/"),
              icono_menu=ICONO_MENU)
 
 
