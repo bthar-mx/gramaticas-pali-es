@@ -48,6 +48,7 @@ import os
 import re
 import sys
 import unicodedata
+import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -481,7 +482,8 @@ def main():
             + plantilla[marca.end():])
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "glosario"))  # la barra común del sitio
 
     paginas = sorted({t["pagina"] for t in conspectus})
     conflictos = sum(1 for t in conspectus if t.get("conflicto"))

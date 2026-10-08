@@ -42,7 +42,7 @@ body{margin:0;background:var(--ola);color:var(--ink);
 a{color:var(--nila)}
 
 /* ---------- barra lateral ---------- */
-.sidebar{position:fixed;left:0;top:0;bottom:0;width:238px;overflow-y:auto;z-index:60;
+.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;
   background:var(--ola-2);border-right:1px solid var(--hair);padding:54px 0 48px}
 .sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:10px}
 .sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
@@ -105,10 +105,10 @@ body.sin-barra .sidebar{display:none}
    aquí, de modo que la barra lateral se le echaba encima y tapaba la
    primera pestaña. Cualquier bloque de ancho completo que se añada tiene
    que entrar en esta regla. */
-body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
+body:not(.sin-barra) header:not(.cab),body:not(.sin-barra) .bar>.wrap,
 body:not(.sin-barra) .tabs-wrap,
 body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:238px}
-#volver-barra{position:fixed;top:10px;left:12px;z-index:70;display:none;
+#volver-barra{position:fixed;top:calc(var(--cabecera-h,0px) + 10px);left:12px;z-index:70;display:none;
   background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
   font-size:16px;color:var(--soot);cursor:pointer;padding:3px 8px}
 body.sin-barra #volver-barra{display:block}
@@ -150,7 +150,7 @@ h1 .dia{color:var(--haritala)}
 .pie-aviso b{color:var(--haritala)}
 
 /* ---------- barra de mandos ---------- */
-.bar{position:sticky;top:0;z-index:50;background:var(--ola-2);
+.bar{position:sticky;top:var(--cabecera-h,0px);z-index:50;background:var(--ola-2);
   border-bottom:1px solid var(--hair);box-shadow:0 1px 4px var(--shadow)}
 .bar .wrap{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:9px 22px}
 #q{flex:1 1 260px;min-width:190px;font-family:var(--serif);font-size:15px;
@@ -356,7 +356,7 @@ footer code{font-family:var(--mono);font-size:11.5px}
 @media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
 
 @media(max-width:900px){
-  body:not(.sin-barra) header,body:not(.sin-barra) .bar>.wrap,
+  body:not(.sin-barra) header:not(.cab),body:not(.sin-barra) .bar>.wrap,
   body:not(.sin-barra) .tabs-wrap,
   body:not(.sin-barra) main,body:not(.sin-barra) footer{padding-left:22px}
   .sidebar{display:none}
@@ -373,6 +373,9 @@ footer code{font-family:var(--mono);font-size:11.5px}
    el que queda por defecto, que es la lengua del proyecto, y a él van a
    parar las lenguas que no son el inglés. */
 function paliLang(){var g=null;
+/* ?lang=en|es en la dirección manda, sin guardarse: así abren el glosario
+   en inglés los capítulos de /en/ desde la barra común (2026-10-08). */
+var q=/[?&]lang=(en|es)(&|$)/.exec(location.search);if(q)return q[1];
 try{g=localStorage.getItem('pali_lang');}catch(e){}
 if(g==='en'||g==='es')return g;
 var n=(navigator.languages&&navigator.languages[0])||navigator.language||'';
@@ -395,7 +398,6 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 
 <header>
   <div class="wrap mast">
-    <a class="volver-sitio" href="../"><span class="i-es">← Recursos · Gramáticas Pāḷi</span><span class="i-en">← Resources · Pāḷi Grammars</span></a>
     <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
     <h1><span class="i-es">Glosario gramatical p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi grammatical glossary</span></h1>
     <!-- El título del glosario de Nandisena no se traduce: es el título de

@@ -57,6 +57,11 @@ def main():
             fallos += correr("generar_capitulo.py",
                              os.path.join(meta["obra_slug"], clave + ".md"))
 
+    # el mapa §N → capítulo de «Ir a §» (cabecera común, 2026-10-08). Tras
+    # los capítulos, porque comprueba sus anclas en el HTML ya escrito; antes
+    # de los índices, porque la portada toma de él los rangos de §.
+    fallos += correr("generar_secciones.py")
+
     # documentos en prosa
     #
     # combinacion-eufonica.md ya no se publica: la referencia interactiva de

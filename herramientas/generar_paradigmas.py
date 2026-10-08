@@ -30,6 +30,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 
 from generar_capitulo import parsear, partir_bloques, desescapar  # noqa: E402
+import cabecera  # noqa: E402
 
 DATOS = os.path.join(RAIZ, "recursos", "paradigmas", "paradigmas.json")
 INDICE = os.path.join(RAIZ, "recursos", "paradigmas", "indice.json")
@@ -221,7 +222,8 @@ def main():
             + plantilla[marca.end():])
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "paradigmas"))  # la barra común del sitio
 
     entradas = datos["paradigmas"]
     con_tabla = [p for p in entradas if "filas" in p]

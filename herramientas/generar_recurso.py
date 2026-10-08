@@ -20,6 +20,8 @@ import re
 import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
+import cabecera  # noqa: E402
 
 
 # ── Encabezamiento YAML ─────────────────────────────────────────────────
@@ -225,7 +227,6 @@ PLANTILLA = '''<!DOCTYPE html>
 </head>
 <body>
 <main class="doc">
-<a class="idx-back" href="../">← Recursos</a>
 <p class="idx-eyebrow">{eyebrow}</p>
 <h1>{titulo}</h1>
 {autoria}
@@ -289,11 +290,11 @@ def main():
     destino = os.path.join(RAIZ, "site", "recursos", nombre, "index.html")
     os.makedirs(os.path.dirname(destino), exist_ok=True)
     with open(destino, "w", encoding="utf-8") as f:
-        f.write(PLANTILLA.format(
+        f.write(cabecera.insertar(PLANTILLA.format(
             titulo=html.escape(titulo),
             eyebrow=html.escape(meta.get("basado_en", "Recurso")),
             autoria=autoria, aviso=aviso, cuerpo=cuerpo,
-            pie=" · ".join(pie)))
+            pie=" · ".join(pie)), "recurso"))   # la barra común del sitio
 
     print("{0} encabezados · {1} tablas · {2} listas → {3}".format(
         len(indice), cuerpo.count('class="doc-tabla"'),

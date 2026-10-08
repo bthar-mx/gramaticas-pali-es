@@ -36,6 +36,7 @@ from auditar_verbo import cobertura  # noqa: E402
 from escaleras_verbo import escaleras  # noqa: E402
 from generar_capitulo import CAPITULOS, parsear  # noqa: E402
 from generar_ingles_verbo import comprobar  # noqa: E402
+import cabecera  # noqa: E402
 
 PLANTILLA = os.path.join(RAIZ, "recursos", "verbo", "plantilla.html")
 VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
@@ -242,7 +243,8 @@ def main():
         print("aviso — han quedado marcadores sin sustituir")
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(html)
+    open(DESTINO, "w", encoding="utf-8").write(
+        cabecera.insertar(html, "verbo"))  # la barra común del sitio
 
     propuestas = sum(1 for e in escs for p in e["pasos"]
                      if p["origen"] == "propuesta")
