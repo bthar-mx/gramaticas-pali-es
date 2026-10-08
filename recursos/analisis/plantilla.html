@@ -772,7 +772,7 @@ if(window.ResizeObserver)new ResizeObserver(medirBarra).observe(barEl);
 /* lo que tapa la parte de arriba de la pantalla: la barra y, si se ve, la cabecera fija */
 const bajoBarra=()=>barEl.getBoundingClientRect().bottom+cab.offsetHeight;
 const cerrar=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
-function pintarBarra(oc){root.classList.toggle('sin-barra',oc);burger.setAttribute('aria-expanded',oc?'false':'true')}
+function pintarBarra(oc){root.classList.toggle('sin-barra',oc)} /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
 /* plegado, el ☰ se queda en la esquina, donde estaba (recursos.css) */

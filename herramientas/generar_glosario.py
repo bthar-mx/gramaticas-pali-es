@@ -61,6 +61,8 @@ INGLES = os.path.join(RAIZ, "recursos", "glosario", "glosario-ingles.json")
 INGLES_NANDISENA = os.path.join(RAIZ, "recursos", "glosario", "ingles.json")
 PLANTILLA = os.path.join(RAIZ, "recursos", "glosario", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "glosario", "index.html")
+# Las definiciones que la vista inglesa enseña en español (escribir_faltante)
+FALTANTE = os.path.join(RAIZ, "docs", "glosario", "ingles-faltante.md")
 
 PAGINAS = (1105, 1148)
 
@@ -246,6 +248,69 @@ def verificar_ingles_nandisena(entradas, ing):
     return fallos, avisos, {k: borr[k] for k in borr if k in por_clave}
 
 
+def ingles_faltante(agrupado, normativo, nandisena, estado_en_nand):
+    """Las definiciones que la vista inglesa enseña en español, porque no
+    tienen inglés publicado: [(lema, ancla, fuente, qué falta)], en el orden
+    de la página. Es la misma regla que aplica la plantilla (sentido() y
+    capaNand()): la norma sin «en», y Nandisena sin inglés adjudicado. Las
+    remisiones («v. …») y las entradas sin definición no cuentan: no hay
+    prosa que traducir. Smith trae siempre su inglés (propuesta)."""
+    filas = []
+    for gr in agrupado:
+        ancla = "#g-" + gr["id"]
+        for i in gr["g"]:
+            e = normativo[i]
+            if e.get("es") and not e.get("en"):
+                filas.append((e["pali"], ancla, "norma (comun/glosario.md)",
+                              "«en» en recursos/glosario/glosario-ingles.json"))
+        for i in gr["n"]:
+            e = nandisena[i]
+            if e.get("es") and not e.get("en") and not e.get("remite_a"):
+                lema = e["pali"] + (" {0}".format(e["homonimo"])
+                                    if e.get("homonimo") else "")
+                filas.append((lema, ancla,
+                              "Glosario de Nandisena, p. {0}".format(e.get("pagina")),
+                              "inglés en recursos/glosario/ingles.json: "
+                              + estado_en_nand.get(i, "sin redactar")))
+    # las de la norma sin lema pāḷi no están en la vista alfabética: sólo
+    # en la pestaña de la norma, que no tiene anclas por ficha
+    for e in normativo:
+        if e["sin_lema"] and e.get("es") and not e.get("en"):
+            filas.append(("— («{0}»)".format(e["es"].split(".")[0]), "—",
+                          "norma (comun/glosario.md), sin lema pāḷi",
+                          "«en» en recursos/glosario/glosario-ingles.json"))
+    return filas
+
+
+def escribir_faltante(filas):
+    """docs/glosario/ingles-faltante.md: la lista, para el IEBH. La rehace
+    cada generación; no se edita a mano."""
+    fichas = len({f[1] for f in filas if f[1] != "—"})
+    norma = sum(1 for f in filas if f[2].startswith("norma"))
+    redactadas = sum(1 for f in filas if "sin adjudicar" in f[3])
+    L = ["# Glosario: entradas sin texto inglés", "",
+         "*Lo escribe `herramientas/generar_glosario.py` en cada generación "
+         "del sitio. No se edita a mano: se completa el inglés en su JSON y "
+         "se vuelve a generar.*", "",
+         "En la vista inglesa de `/recursos/glosario/` (y en sus resultados "
+         "de `/en/buscar/`), estas definiciones salen en español con la "
+         "etiqueta «ES» y el texto «No English text yet». El inglés de este "
+         "proyecto lo adjudica el IEBH: aquí no se redacta ninguno.", "",
+         "**{0} definiciones en {1} fichas.** De ellas, {2} de la norma "
+         "(sin «en» en `glosario-ingles.json`) y {3} del Glosario de "
+         "Nandisena ({4} redactadas en `ingles.json` y sin adjudicar; las "
+         "demás, sin redactar).".format(len(filas), fichas, norma,
+                                        len(filas) - norma, redactadas), "",
+         "| # | lema | ancla | fuente | qué falta |",
+         "| ---: | --- | --- | --- | --- |"]
+    for n, (lema, ancla, fuente, falta) in enumerate(filas, 1):
+        L.append("| {0} | {1} | `{2}` | {3} | {4} |".format(
+            n, lema.replace("|", "\\|"), ancla, fuente, falta))
+    os.makedirs(os.path.dirname(FALTANTE), exist_ok=True)
+    with open(FALTANTE, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L) + "\n")
+
+
 def main():
     for ruta in (NORMATIVO, DATOS, INGLES, PLANTILLA):
         if not os.path.exists(ruta):
@@ -292,6 +357,7 @@ def main():
     # el «adjudicado» general del archivo. Las demás quedan redactadas y
     # sin publicar: el modo inglés enseña ahí el español y lo dice.
     ing_nand = {"adjudicado": False, "entradas": {}}
+    estado_en_nand = {}   # índice → por qué no se publica su inglés
     nand_en_total = 0
     nand_en_adjudicadas = 0
     if os.path.exists(INGLES_NANDISENA) and nand["entradas"]:
@@ -308,10 +374,15 @@ def main():
                 return bool(ing_nand.get("adjudicado"))
             return bool(tandas.get(str(t), {}).get("adjudicado"))
 
-        for clave, e in zip(claves_nandisena(nand["entradas"]), nand["entradas"]):
+        for i, (clave, e) in enumerate(zip(claves_nandisena(nand["entradas"]),
+                                           nand["entradas"])):
             if clave in borr and adjudicada(borr[clave]):
                 e["en"] = borr[clave]["en"]
                 nand_en_adjudicadas += 1
+            elif clave in borr:
+                t = borr[clave].get("tanda")
+                estado_en_nand[i] = ("redactado, sin adjudicar"
+                                     + (" (tanda {0})".format(t) if t is not None else ""))
 
     if fallos:
         print("No se publica. {0} fallo(s):".format(len(fallos)))
@@ -347,10 +418,13 @@ def main():
         gemelas = por_lema.get(desnudo(t["pali"]), [])
         if gemelas:
             en_ambas += 1
-            t["nandisena"] = [{"pali": g["pali"], "es": g.get("es"),
-                               "homonimo": g.get("homonimo"),
-                               "refs": g.get("refs", []),
-                               "remite_a": g.get("remite_a")}
+            # «en» sólo si está adjudicado (main() no lo pone antes): con
+            # él, el puente de la vista inglesa no enseña el español.
+            t["nandisena"] = [dict({"pali": g["pali"], "es": g.get("es"),
+                                    "homonimo": g.get("homonimo"),
+                                    "refs": g.get("refs", []),
+                                    "remite_a": g.get("remite_a")},
+                                   **({"en": g["en"]} if g.get("en") else {}))
                               for g in gemelas]
 
     # ---- la vista alfabética única -------------------------------------
@@ -472,6 +546,10 @@ def main():
         "diplomado": dip,
     }
 
+    faltante = ingles_faltante(agrupado, normativo, nand["entradas"],
+                               estado_en_nand)
+    escribir_faltante(faltante)
+
     plantilla = open(PLANTILLA, encoding="utf-8").read()
     marca = re.search(r"/\*__DATOS__\*/.*?/\*__FIN__\*/", plantilla, re.S)
     if not marca:
@@ -509,6 +587,10 @@ def main():
     if dudas:
         print("  {0} entrada(s) con <!-- DUDA -->, por cotejar sobre la "
               "imagen".format(dudas))
+    print("  vista inglesa: {0} definiciones en {1} fichas siguen sólo en "
+          "español, rotuladas «ES» → {2}".format(
+              len(faltante), len({f[1] for f in faltante if f[1] != "—"}),
+              os.path.relpath(FALTANTE, RAIZ)))
     if not salida["ingles_adjudicado"]:
         print("  el inglés de las entradas normativas va SIN adjudicar: la "
               "página lo advierte")

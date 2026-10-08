@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/base.css?v=4aacb900" rel="stylesheet"/>
-<link href="../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/base.css?v=70c73f6b" rel="stylesheet"/>
+<link href="../../assets/recursos.css?v=70c73f6b" rel="stylesheet"/>
 <!-- cabecera:fin -->
 <style>
 /* La paleta, la letra, el bloque del título, el índice lateral, la barra
@@ -290,7 +290,7 @@ button[data-tip]{cursor:pointer}
 }
 </style>
 <!-- cabecera:inicio -->
-<link href="../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=70c73f6b" rel="stylesheet"/>
 <style>#theme,#en-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -625,12 +625,10 @@ const TXT = {
     ph_dhatupatha: 'Buscar en el Dhātupāṭha — «bhū», «pāke», «cutting»…',
     ph_dhatumanjusa: 'Buscar en el poema — «bhū sattāyaṃ», «gatimhi», «Ckbip»…',
     a_buscar: 'Buscar', a_gana: 'Filtrar por gaṇa', a_skt: 'Filtrar por cognado sánscrito',
-    a_barra: 'Mostrar u ocultar el índice', a_tema: 'Cambiar tema', t_tema: 'Claro / oscuro',
+    a_tema: 'Cambiar tema', t_tema: 'Claro / oscuro',
     a_arriba: 'Volver al inicio', a_indice: 'Índice alfabético',
     a_lang: 'View in English', t_lang: 'View in English',
-    mostrar_ind: 'Mostrar el índice',
     t_mostrar_ind: 'Mostrar el índice|Vuelve a poner el índice al lado del texto.',
-    ocultar_ind: 'Ocultar el índice',
     t_ocultar_ind: 'Ocultar el índice|Aparta el índice y el texto ocupa su sitio.',
     t_ocultar_sb: 'Ocultar el índice|Aparta el índice y el texto ocupa su sitio. El ☰ se queda en su sitio para devolverlo.',
     gana_todas: 'Gaṇa', t_gana_todas: 'Grupo — la clase de conjugación de la raíz',
@@ -693,12 +691,10 @@ const TXT = {
     ph_dhatupatha: 'Search the Dhātupāṭha — “bhū”, “pāke”, “cutting”…',
     ph_dhatumanjusa: 'Search the poem — “bhū sattāyaṃ”, “gatimhi”, “Ckbip”…',
     a_buscar: 'Search', a_gana: 'Filter by gaṇa', a_skt: 'Filter by Sanskrit cognate',
-    a_barra: 'Show or hide the index', a_tema: 'Change theme', t_tema: 'Light / dark',
+    a_tema: 'Change theme', t_tema: 'Light / dark',
     a_arriba: 'Back to top', a_indice: 'Alphabetical index',
     a_lang: 'Ver en español', t_lang: 'Ver en español',
-    mostrar_ind: 'Show the index',
     t_mostrar_ind: 'Show the index|Puts the index back beside the text.',
-    ocultar_ind: 'Hide the index',
     t_ocultar_ind: 'Hide the index|Moves the index aside and the text takes its place.',
     t_ocultar_sb: 'Hide the index|Moves the index aside and the text takes its place. The ☰ stays where it is to bring it back.',
     gana_todas: 'Gaṇa', t_gana_todas: 'Group — the conjugation class of the root',
@@ -1318,7 +1314,8 @@ function aplicarIdioma(v){
   q.placeholder = ROTULOS()[pestanya][1];
   q.setAttribute('aria-label', tr('a_buscar'));
   document.getElementById('abc-tit').textContent = ROTULOS()[pestanya][0];
-  const rot = [['f-gana','a_gana'],['f-skt','a_skt'],['burger','a_barra'],
+  /* el aria-label de los tres ☰ lo pone cabecera.js (rotularIndice) */
+  const rot = [['f-gana','a_gana'],['f-skt','a_skt'],
                ['theme','a_tema'],['top-btn','a_arriba'],['sidebar','a_indice']];
   for(const [id,k] of rot){
     const el = document.getElementById(id);
@@ -1327,11 +1324,9 @@ function aplicarIdioma(v){
   const t = document.getElementById('theme');
   if(t) t.setAttribute('title', tr('t_tema'));
   const vb = document.getElementById('volver-barra');
-  if(vb){ vb.setAttribute('aria-label', tr('mostrar_ind'));
-          vb.dataset.tip = tr('t_mostrar_ind'); }
+  if(vb) vb.dataset.tip = tr('t_mostrar_ind');
   const sc = document.getElementById('sbclose');
-  if(sc){ sc.setAttribute('aria-label', tr('ocultar_ind'));
-          sc.dataset.tip = tr('t_ocultar_sb'); }
+  if(sc) sc.dataset.tip = tr('t_ocultar_sb');
   const hero = document.getElementById('hero');
   if(hero) hero.setAttribute('aria-label', tr('hero_alt'));
   /* Los globos de las pestañas */
@@ -1436,11 +1431,12 @@ const anchaBastante = () => innerWidth > 900;
 function pintarBarra(oculta){
   document.documentElement.classList.toggle('sin-barra', oculta);
   const b = document.getElementById('burger');
-  b.setAttribute('aria-expanded', oculta ? 'false' : 'true');
   b.setAttribute('data-tip', oculta
     ? tr('t_mostrar_ind')
     : tr('t_ocultar_ind'));
-  b.setAttribute('aria-label', oculta ? tr('mostrar_ind') : tr('ocultar_ind'));
+  /* aria-label y aria-expanded de los tres ☰ los pone cabecera.js
+     (rotularIndice), que sabe también si el cajón del teléfono está
+     abierto. */
 }
 (function(){
   /* El índice se abre siempre al llegar. Plegarlo es una comodidad del
@@ -1649,18 +1645,30 @@ pintarHero(true);
 cambiarPestanya('raices');
 render();
 
-/* Si el enlace trae #rNNN, desplegar esa raíz. */
+/* Si el enlace trae #rNNN, desplegar esa raíz. Al llegar el salto es
+   instantáneo, no saltarA(): el desplazamiento suave se calculaba antes de
+   que terminaran de componerse la letra y lo de encima de la fila, y la
+   raíz quedaba unos píxeles —o una pantalla— fuera de su sitio, a veces
+   bajo la barra pegajosa. Como en el análisis, se vuelve a alinear cuando
+   han cargado las letras y la página, salvo que el lector ya la haya
+   movido. */
 (function(){
   const m = /^#r(\d+)$/.exec(location.hash);
   if(!m) return;
   const el = document.getElementById('r' + m[1]);
   if(!el) return;
   el.querySelector('button[data-abre]')?.click();
-  saltarA(el);
+  let quieto = true;
+  ['wheel','touchstart','mousedown','keydown'].forEach(ev =>
+    addEventListener(ev, () => { quieto = false; }, {passive:true, capture:true}));
+  const ir = () => { if(quieto) el.scrollIntoView({block:'start', behavior:'instant'}); };
+  ir();
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(ir);
+  addEventListener('load', ir);
 })();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=4aacb900"></script>
+<script defer src="../../assets/cabecera.js?v=70c73f6b"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

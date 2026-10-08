@@ -110,6 +110,56 @@
     if (mq.addEventListener) mq.addEventListener('change', pintar);
   }
 
+  /* ── El ☰ del índice lateral de los recursos ─────────────────────
+     Las páginas con índice (recursos.css) tienen tres ☰: #burger en la
+     barra de mandos (el del teléfono), #sbclose en la esquina del índice y
+     #volver-barra, que queda en su sitio al plegarlo. Su nombre y su
+     aria-expanded dicen el estado REAL del índice, en la lengua de la
+     página: «Mostrar el índice» si está cerrado, «Ocultar el índice» si
+     está abierto. Se decide aquí, en un solo sitio, y no en cada página:
+     el estado es html.sin-barra en pantalla ancha y .sidebar.open en la
+     estrecha (el cajón), con el mismo corte que recursos.css (900 px). Lo
+     que cada página hace al pulsar no cambia; esto sólo lo rotula, y corre
+     después de su código porque lo despiertan los observadores. */
+  var indice = document.getElementById('sidebar');
+  var estrecha = window.matchMedia ? matchMedia('(max-width: 900px)') : null;
+  /* Aquí y no en TEXTOS (cabecera.py): esos van en cada una de las 836
+     páginas, y sólo las nueve con índice usan éstos. */
+  var T_INDICE = {
+    es: { mostrar: 'Mostrar el índice', ocultar: 'Ocultar el índice' },
+    en: { mostrar: 'Show the index', ocultar: 'Hide the index' }
+  };
+  function rotularIndice() {
+    var abierto = (estrecha && estrecha.matches)
+      ? indice.classList.contains('open')
+      : !html.classList.contains('sin-barra');
+    var tx = T_INDICE[idioma()] || T_INDICE.es;
+    var mostrar = tx.mostrar, ocultar = tx.ocultar;
+    [['burger', abierto ? ocultar : mostrar], ['sbclose', ocultar],
+     ['volver-barra', mostrar]].forEach(function (par) {
+      var b = document.getElementById(par[0]);
+      if (!b) return;
+      if (b.getAttribute('aria-label') !== par[1]) b.setAttribute('aria-label', par[1]);
+      if (par[0] === 'burger' && b.hasAttribute('title') && b.getAttribute('title') !== par[1]) b.setAttribute('title', par[1]);
+      if (b.getAttribute('aria-expanded') !== String(abierto)) b.setAttribute('aria-expanded', String(abierto));
+      if (!b.hasAttribute('aria-controls')) b.setAttribute('aria-controls', 'sidebar');
+    });
+  }
+  if (indice && document.getElementById('burger')) {
+    if (window.MutationObserver) {
+      var moi = new MutationObserver(rotularIndice);
+      moi.observe(html, { attributes: true, attributeFilter: ['lang', 'class'] });
+      moi.observe(indice, { attributes: true, attributeFilter: ['class'] });
+      if (document.body) moi.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
+    if (estrecha) {
+      if (estrecha.addEventListener) estrecha.addEventListener('change', rotularIndice);
+      else if (estrecha.addListener) estrecha.addListener(rotularIndice);
+    }
+    rotularIndice();
+    window.addEventListener('load', rotularIndice);
+  }
+
   /* ── Menú del teléfono ──────────────────────────────────────────── */
   var menu = cab.querySelector('.cab-menu');
   function abrir(si) {
