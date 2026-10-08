@@ -8,175 +8,17 @@
 <meta name="version" content="1.17">
 <meta name="version-date" content="2026-09-06">
 <meta name="description" content="Los 85 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- cabecera:inicio -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/base.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<!-- cabecera:fin -->
 <style>
-:root{
-  --ola:#E7E3D6;        /* hoja de palma */
-  --ola-2:#F0EDE4;
-  --ink:#171612;        /* tinta de humo */
-  --soot:#4E4839;
-  --hair:#BFB7A0;
-  --haritala:#5C4008;   /* oropimente */
-  --hover:rgba(255,255,255,.55);
-  --active:rgba(255,255,255,.75);
-  --hl:rgba(92,64,8,.16);
-  --chip-k:rgba(39,65,79,.10);
-  --nila:#27414F;       /* índigo */
-  --rakta:#7E2E23;      /* bermellón */
-  --shadow:rgba(0,0,0,.05);
-  --serif:"Gentium Book Plus",Georgia,serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-html[data-theme=dark]{
-  --ola:#1A1917; --ola-2:#232220; --ink:#F4F1E8; --soot:#BDB5A2; --hair:#494438;
-  --haritala:#EFC14E; --nila:#B6D8EE; --rakta:#F09A88; --shadow:rgba(0,0,0,.45);
-  --hover:rgba(255,255,255,.055); --active:rgba(255,255,255,.085);
-  --hl:rgba(239,193,78,.20); --chip-k:rgba(182,216,238,.13);
-}
-html[data-theme=dark] body{background-image:none}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--ola);color:var(--ink);
-  font-family:var(--serif);font-size:17px;line-height:1.55;
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%);
-}
-.wrap{max-width:980px;margin:0 auto;padding:0 22px}
-
-/* ---------- barra lateral ---------- */
-.sidebar{position:fixed;left:0;top:var(--cabecera-h,0px);bottom:0;width:238px;overflow-y:auto;z-index:60;
-  background:var(--ola-2);border-right:1px solid var(--hair);
-  /* Sitio arriba para el ☰ que pliega el índice. */
-  padding:54px 0 48px}
-.sb-sec>summary{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--haritala);margin:0;padding:9px 18px 7px;
-  cursor:pointer;list-style:none;user-select:none}
-.sb-sec>summary::-webkit-details-marker{display:none}
-.sb-sec>summary::after{content:' ▸';font-size:9px;opacity:.8}
-.sb-sec[open]>summary::after{content:' ▾'}
-.sb-sec>summary:hover{background:var(--ola)}
-.sb-sec>summary:focus-visible{outline:2px solid var(--nila);outline-offset:-2px}
-.sb-sec{border-bottom:1px solid transparent}
-.sb-sec[open]{padding-bottom:8px}
-.sb-brand{padding:0 18px 14px;border-bottom:1px solid var(--hair);margin-bottom:6px}
-.sb-brand b{display:block;font-size:19px;letter-spacing:-.01em;margin-bottom:3px}
-.sb-brand .lbl{font-size:8.5px;letter-spacing:.1em;line-height:1.5}
-.sidebar a{display:block;padding:3px 18px;color:var(--ink);text-decoration:none;font-size:14px;
-  border-left:2px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sidebar a:hover{background:var(--ola);color:var(--nila)}
-.sidebar a.on{border-left-color:var(--haritala);color:var(--haritala);background:var(--ola)}
-.sidebar a b{font-family:var(--mono);font-size:10.5px;color:var(--soot);margin-right:6px;font-weight:600}
-.sidebar a:hover b,.sidebar a.on b{color:inherit}
-.sb-close{position:absolute;top:14px;left:14px;
-  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
-  background:var(--ola);color:var(--soot);border:1px solid var(--hair);
-  border-radius:2px;cursor:pointer}
-.sb-close:hover{color:var(--ink);border-color:var(--soot)}
-.sb-close:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-body{padding-left:238px}
-.scrim{display:none}
-
-/* ---------- ocultar la barra lateral ---------- */
-/* El botón ☰ vale para las dos cosas: en pantalla ancha pliega la barra y el
-   texto se ensancha; en estrecha la saca por encima, como antes. La
-   preferencia se guarda y la comparten todas las páginas del sitio. */
-.sidebar{transition:transform .2s ease}
-body{transition:padding-left .2s ease}
-html.sin-barra body{padding-left:0}
-html.sin-barra .sidebar{transform:translateX(-100%)}
-/* ---------- el ☰ que trae de vuelta el índice ---------- */
-/* Al plegar la barra, un ☰ fijo se queda exactamente donde estaba el ☰
-   de su esquina: parece un solo botón aunque sean dos, y se pulsa en el
-   mismo sitio para plegar y para devolver. Sólo se ve cuando la barra
-   está plegada. */
-#volver-barra{position:fixed;left:14px;top:calc(var(--cabecera-h,0px) + 14px);
-  z-index:56;display:none;align-items:center;
-  font-family:var(--mono);font-size:14px;line-height:1;padding:6px 9px;
-  background:var(--ola-2);color:var(--soot);
-  border:1px solid var(--hair);border-radius:2px;cursor:pointer;
-  box-shadow:0 2px 10px var(--shadow)}
-#volver-barra:hover{color:var(--ink);background:var(--ola);border-color:var(--soot)}
-#volver-barra:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-html.sin-barra #volver-barra{display:inline-flex}
-@media (max-width:900px){html.sin-barra #volver-barra{display:none}}
-@media print{#volver-barra{display:none!important}}
-@media (prefers-reduced-motion:reduce){
-  .sidebar,body{transition:none}
-}
-
-/* ---------- marca del IEBH ---------- */
-/* Dos archivos por marca, uno por tema, en lugar de teñir uno solo: el
-   imagotipo lleva el punto de la «i» en otro color, y aplanarlo con CSS
-   alteraría la marca. Ambas versiones son las que da el manual. Van de
-   fondo y no de <img> para que el navegador sólo pida la del tema en uso. */
-.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;
-  background:url(../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
-html[data-theme=dark] .marca-arbol{background-image:url(../../assets/iebh-arbol-blanco.svg)}
-.marca-lockup{display:block;width:180px;height:75px;margin:0 0 16px;
-  background:url(../../assets/iebh-imagotipo-granate.svg) left center/contain no-repeat}
-html[data-theme=dark] .marca-lockup{background-image:url(../../assets/iebh-imagotipo-blanco.svg)}
-/* El nombre del instituto ya está escrito al lado: el árbol es decorativo. */
-.eyebrow-iebh{display:flex;align-items:center;gap:9px}
-
-/* ---------- eyebrow / labels ---------- */
-.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
-     text-transform:uppercase;color:var(--soot)}
-
-/* ---------- header ---------- */
-header{padding:52px 0 26px;border-bottom:1px solid var(--hair)}
-.mast{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-end;justify-content:space-between}
-.mast>div:first-child{flex:1 1 380px;min-width:280px}
-.mast .hero{flex:0 1 auto}
-h1{font-size:clamp(34px,5.5vw,52px);line-height:.95;margin:0;font-weight:700;letter-spacing:-.02em}
-h1 .dia{color:var(--haritala)}
-.tag{margin:10px 0 0;max-width:38ch;color:var(--soot);font-size:16.5px}
-.version-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;cursor:help;
-  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;
-  color:var(--nila);background:var(--ola-2);border:1px solid var(--nila);
-  border-radius:999px;padding:4px 10px;position:relative}
-.version-badge time{opacity:.8;font-variant-numeric:tabular-nums}
-/* Con el dedo no hay hover: la clase «on» la pone un toque (ver el guion). */
-/* Ojo: aquí no entran .sb-close ni #volver-barra, que ya están posicionados
-   (absolute/fixed): un position:relative posterior los sacaría de su sitio
-   y los dejaría en la esquina del documento — es lo que pasaba. */
-#burger{position:relative}
-/* 2026-08-29: esta página tenía DOS motores de globos —el de CSS (::after)
-   para la insignia y los ☰, y el rótulo NATIVO del navegador (title=) para
-   el tema, el ↑, Enlace, Copiar y «doc ↗»—, y el nativo es diminuto e
-   inestilizable. Los dos se pliegan ahora al #tip que la página ya tenía
-   para los suttas y los casos, en su variante LLANA: un solo globo, un solo
-   tamaño que ajustar, y el mismo trato que en el solucionador. */
-.version-foot{margin-top:10px;font-size:13px;color:var(--soot)}
-.hero{font-family:var(--mono);font-size:12.5px;line-height:1.95;text-align:right;
-      border-right:2px solid var(--haritala);padding-right:14px;white-space:nowrap}
-.hero div{opacity:0;display:flex;gap:9px;justify-content:flex-end;align-items:baseline}
-.hero div.on{opacity:1;transition:opacity .5s ease}
-.hero b{font-weight:700;color:var(--haritala)}
-.hero .ref{color:var(--soot);font-size:10.5px}
-
-/* ---------- controls ---------- */
-.bar{position:sticky;top:var(--cabecera-h,0px);z-index:20;background:var(--ola);
-     border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:6px}
-.bar .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-input[type=search]{
-  flex:1 1 220px;min-width:0;font-family:var(--serif);font-size:16px;color:var(--ink);
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;padding:9px 12px}
-input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
-.filtros{display:flex;gap:0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
-.filtros button{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;
-  text-transform:uppercase;padding:8px 10px;border:0;background:var(--ola-2);color:var(--soot);
-  cursor:pointer;border-right:1px solid var(--hair)}
-.filtros button:last-child{border-right:0}
-.filtros button[aria-pressed=true]{background:var(--nila);color:var(--ola-2)}
-.filtros.tema button[aria-pressed=true]{background:var(--haritala)}
-.filtros button:focus-visible{outline:2px solid var(--haritala);outline-offset:-2px}
-.count{font-family:var(--mono);font-size:11px;color:var(--soot);white-space:nowrap}
-.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);
-  color:var(--soot);border:1px solid var(--hair);border-radius:2px;padding:8px 10px;cursor:pointer}
-.icon-btn:hover{color:var(--ink);border-color:var(--soot)}
-.icon-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+/* La paleta, la letra, el bloque del título, el índice lateral, la barra
+   de mandos, el globo, el ↑ y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo que sólo tiene esta página. */
 
 /* La barra es pegajosa: sin este margen, saltar a un paradigma lo deja oculto. */
 .sec,.card{scroll-margin-top:var(--barra,74px)}
@@ -184,93 +26,74 @@ input[type=search]:focus{outline:2px solid var(--nila);outline-offset:1px}
 /* ---------- sections ---------- */
 .sec{margin:38px 0 8px;display:flex;align-items:baseline;gap:12px}
 .sec h2{font-size:20px;margin:0;font-weight:700;letter-spacing:.01em}
-.sec .rule{flex:1;height:1px;background:var(--hair)}
+.sec .rule{flex:1;height:1px;background:var(--border)}
 
 /* ---------- cards ---------- */
-.card{border-top:1px solid var(--hair);padding:22px 0 26px}
-.card:last-child{border-bottom:1px solid var(--hair)}
+.card{border-top:1px solid var(--border);padding:22px 0 26px}
+.card:last-child{border-bottom:1px solid var(--border)}
 .chead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
 .cod{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.07em;
-  color:var(--nila);background:var(--chip-k);border-radius:2px;padding:2.5px 8px;white-space:nowrap}
+  color:var(--accent);background:var(--accent-bg);border-radius:2px;padding:2.5px 8px;white-space:nowrap}
 .title{font-size:19px;margin:0;font-weight:400}
 .pali{font-style:italic;font-weight:700}
-.gloss{color:var(--soot)}
-.meta{font-family:var(--mono);font-size:10.5px;color:var(--soot);letter-spacing:.05em;margin-left:auto;
+.gloss{color:var(--text2)}
+.meta{font-family:var(--mono);font-size:10.5px;color:var(--text2);letter-spacing:.05em;margin-left:auto;
   display:flex;gap:8px;align-items:center;white-space:nowrap}
-.meta a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
+.meta a{color:var(--accent);text-decoration:none;border-bottom:1px dotted currentColor}
 .meta a:hover{color:var(--haritala)}
 .mini-btn{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);
-  font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--soot);
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:2px;
+  font-size:10px;font-weight:600;letter-spacing:.05em;color:var(--text2);
+  background:var(--bg2);border:1px solid var(--border);border-radius:2px;
   padding:4px 8px;cursor:pointer;line-height:1}
 .mini-btn svg{width:12px;height:12px}
-.mini-btn:hover{color:var(--ink);border-color:var(--soot)}
-.mini-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
+.mini-btn:hover{color:var(--text);border-color:var(--text2)}
+.mini-btn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .mini-btn.ok{color:var(--haritala);border-color:var(--haritala)}
 @media print{.mini-btn{display:none}}
 
 /* ---------- tablas de declinación (elemento central) ---------- */
 .tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:15.5px}
-.tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--hair);vertical-align:baseline}
+.tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:baseline}
 .tbl thead th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;
-   text-transform:uppercase;color:var(--soot);border-bottom:1.5px solid var(--ink)}
-.tbl tbody th{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--nila);
+   text-transform:uppercase;color:var(--text2);border-bottom:1.5px solid var(--text)}
+.tbl tbody th{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--accent);
    white-space:nowrap;cursor:help;width:1%}
-.tbl tbody th i{font-style:italic;color:var(--soot)}
+.tbl tbody th i{font-style:italic;color:var(--text2)}
 /* Las formas van en redonda, como en los documentos de origen: en cuerpos
    pequeños la cursiva estorba a los diacríticos. La cursiva queda para los
    lemas y el pāḷi corrido, como en el resto del sitio. */
 .tbl td{font-style:normal;font-weight:600}
-.tbl td .sep{font-weight:400;color:var(--soot)}
+.tbl td .sep{font-weight:400;color:var(--text2)}
 .tbl td .rara{opacity:.62;font-weight:400}
-.tbl.suf tbody th{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ink);cursor:auto}
+.tbl.suf tbody th{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--text);cursor:auto}
 .tbl.suf td.multi{font-weight:400}
-.tbl.suf .uso-l{font-size:14.5px;color:var(--soot);margin:2px 0}
-.tbl.suf .uso-t{color:var(--ink)}
-.tbl.suf .g{font-weight:400;color:var(--soot);font-size:13.5px}
+.tbl.suf .uso-l{font-size:14.5px;color:var(--text2);margin:2px 0}
+.tbl.suf .uso-t{color:var(--text)}
+.tbl.suf .g{font-weight:400;color:var(--text2);font-size:13.5px}
 .tbl.suf .refs{font-family:var(--mono);font-size:11px;white-space:nowrap;font-weight:400}
-.tbl.suf .refs a{color:var(--nila);text-decoration:none;border-bottom:1px dotted currentColor}
+.tbl.suf .refs a{color:var(--accent);text-decoration:none;border-bottom:1px dotted currentColor}
 .tbl.suf .refs a:hover{color:var(--haritala)}
 [id^="suf-"]{scroll-margin-top:var(--barra,74px)}
-.tbl td.nada{font-style:normal;font-weight:400;color:var(--soot);opacity:.6}
+.tbl td.nada{font-style:normal;font-weight:400;color:var(--text2);opacity:.6}
 .tbl tbody tr:hover{background:var(--hover)}
-mark{background:var(--hl);color:inherit;border-radius:2px;
-  box-shadow:inset 0 -1px 0 var(--haritala)}
 
 /* ---------- notas de la tarjeta ---------- */
 .prosa{margin:10px 0 0;font-size:15px;line-height:1.55}
 i.pl{font-style:italic}
-.prosa a.xp{color:var(--nila);text-decoration:none;border-bottom:1px dotted var(--nila)}
+.prosa a.xp{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
 .prosa a.xp:hover{border-bottom-style:solid}
 .tbl.lista{margin-top:12px}
 .tbl.lista tbody th{font-family:var(--mono);font-weight:500;font-size:12.5px;white-space:nowrap}
-.tbl.lista td.como{font-size:13px;color:var(--soot)}
-a.doc-forma{font-size:11px;margin-left:2px;color:var(--soot);text-decoration:none;vertical-align:super}
-a.doc-forma:hover{color:var(--nila)}
-.tbl.lista td.como a.xp{color:var(--nila);text-decoration:none;border-bottom:1px dotted var(--nila)}
-.familia{margin:10px 0 0;font-size:14.5px;color:var(--soot)}
-.familia b{color:var(--ink);font-weight:600}
-.parcial{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;color:var(--soot);
+.tbl.lista td.como{font-size:13px;color:var(--text2)}
+a.doc-forma{font-size:11px;margin-left:2px;color:var(--text2);text-decoration:none;vertical-align:super}
+a.doc-forma:hover{color:var(--accent)}
+.tbl.lista td.como a.xp{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+.familia{margin:10px 0 0;font-size:14.5px;color:var(--text2)}
+.familia b{color:var(--text);font-weight:600}
+.parcial{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;color:var(--text2);
   letter-spacing:.02em;border-left:2px solid var(--haritala);padding-left:8px;line-height:1.7}
-.igual{margin:10px 0 0;font-size:15px;color:var(--soot)}
-.igual a{color:var(--nila)}
-
-/* ---------- tooltip de sutta (como en /recursos/sandhi/, en grande) ---------- */
-#tip{position:fixed;z-index:200;max-width:380px;pointer-events:none;opacity:0;
-  transform:translateY(3px);transition:opacity .12s ease,transform .12s ease;
-  background:var(--ola-2);border:1px solid var(--hair);border-radius:3px;
-  box-shadow:0 8px 26px var(--shadow);padding:13px 15px;font-size:15.5px;line-height:1.5}
-#tip.on{opacity:1;transform:none}
-#tip .tn{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--nila);
-  display:block;margin-bottom:5px}
-#tip .tp{font-style:italic;font-weight:700;margin:0;font-size:16.5px}
-#tip .te{margin:5px 0 0;color:var(--soot);font-size:15px}
-#tip .tk{font-family:var(--mono);font-size:10.5px;color:var(--haritala);margin:8px 0 0;
-  letter-spacing:.06em;text-transform:uppercase}
-/* El globo LLANO: el mismo #tip con texto corrido, para lo que antes llevaba
-   el ::after de CSS o el «title» nativo. 15 px — el nativo rondaba los 11. */
-#tip.llano{max-width:340px;padding:11px 15px;font-size:15px;line-height:1.55}
-#tip.llano p{margin:0}
+.igual{margin:10px 0 0;font-size:15px;color:var(--text2)}
+.igual a{color:var(--accent)}
 
 /* ---------- inglés a demanda (pedido del IEBH, 2026-08-29), como en
    /recursos/raices/ y en el solucionador: el botón EN alterna el idioma de
@@ -281,60 +104,8 @@ a.doc-forma:hover{color:var(--nila)}
    entonces se muestra en español también en modo inglés. */
 body.en .i-es{display:none}
 body:not(.en) .i-en{display:none}
-.icon-btn.on{background:var(--nila);color:var(--ola-2);border-color:var(--nila)}
 
-/* ---------- volver al inicio (igual que en los capítulos) ---------- */
-#top-btn{position:fixed;right:22px;bottom:22px;z-index:150;
-  width:38px;height:38px;border-radius:50%;
-  border:1px solid var(--hair);background:var(--ola-2);color:var(--soot);
-  font:16px/1 var(--mono);cursor:pointer;box-shadow:0 6px 20px var(--shadow);
-  opacity:0;pointer-events:none;transform:translateY(6px);
-  transition:opacity .2s,transform .2s,background .12s,color .12s}
-#top-btn.show{opacity:1;pointer-events:auto;transform:none}
-#top-btn:hover{background:var(--ola);color:var(--ink);border-color:var(--soot)}
-#top-btn:focus-visible{outline:2px solid var(--nila);outline-offset:1px}
-@media (prefers-reduced-motion:reduce){#top-btn{transition:none}}
-
-/* ---------- empty + footer ---------- */
-.empty{padding:60px 0;text-align:center;color:var(--soot)}
-.empty p{margin:0 0 6px}
-footer{border-top:1px solid var(--hair);margin-top:54px;padding:26px 0 58px;
-       color:var(--soot);font-size:14px}
-footer a{color:var(--nila)}
-/* El pie plegado (pedido del IEBH, 2026-08-29, extendido a esta página el
-   2026-09-02): a la vista queda el árbol del IEBH y su crédito; las notas y
-   la nota de versión van a un clic. El sumario va en pequeño porque es un
-   mando, no un texto; la prosa de dentro conserva la suya. */
-.pie-notas{margin:0}
-.pie-notas>summary{font-family:var(--mono);font-size:11px;font-weight:600;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--soot);
-  cursor:pointer;list-style:none;padding:4px 0;margin-bottom:2px}
-.pie-notas>summary::-webkit-details-marker{display:none}
-.pie-notas>summary::after{content:' ▸';font-size:11px;color:var(--haritala)}
-.pie-notas[open]>summary::after{content:' ▾'}
-.pie-notas[open]>summary{margin-bottom:10px}
-.pie-notas>summary:hover{color:var(--ink)}
-.pie-notas>summary:focus-visible{outline:2px solid var(--nila);outline-offset:2px}
-.licencia{margin-top:22px;padding-top:18px;border-top:1px solid var(--hair);
-  font-size:12.5px;line-height:1.65;color:var(--soot)}
-.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);
-  text-decoration:none;margin-bottom:14px;opacity:.85}
-.volver-sitio:hover{color:var(--nila);opacity:1}
-
-@media (max-width:900px){
-  body{padding-left:0}
-  .sidebar{transform:translateX(-100%);transition:transform .22s ease;box-shadow:0 0 40px var(--shadow)}
-  .sidebar.open{transform:none}
-  .scrim.on{display:block;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:55}
-}
 @media (max-width:640px){
-  body{font-size:16px}
-  .mast{gap:22px}
-  .hero{text-align:left;border-right:0;border-left:2px solid var(--haritala);
-        padding:0 0 0 12px;font-size:11px;overflow-x:auto;width:100%}
-  .hero div{justify-content:flex-start}
-  .bar .wrap{gap:9px}
-  .count{width:100%}
   /* La tabla ya rodaba sola; quien empujaba la página de lado era esta fila:
      «Copiar» y «doc ↗» iban en una línea que no se parte, y llegaba a 459 px
      en una pantalla de 375. Se le permite pasar a la línea siguiente. */
@@ -348,24 +119,12 @@ footer a{color:var(--nila)}
    —el mínimo recomendado— y tooltips que se abren al tocar, porque en táctil
    no existe el hover. La lógica del primer/segundo toque va en el guion. */
 @media (pointer:coarse){
-  input[type=search]{padding:12px 13px;min-height:44px}
-  /* Los filtros pasan a repartirse en filas; la raya de separación es el
-     hueco de 1px, que deja ver el fondo del contenedor. */
-  .filtros{flex-wrap:wrap;gap:1px;background:var(--hair);border-radius:3px}
-  .filtros button{flex:1 0 auto;min-height:44px;font-size:11.5px;
-    padding:12px 13px;border-right:0}
-  .icon-btn{min-height:44px;min-width:44px;padding:12px 13px;font-size:15px}
   .mini-btn{min-height:38px;padding:9px 12px;font-size:11px}
   .mini-btn svg{width:14px;height:14px}
   .meta a{display:inline-block;padding:9px 2px}
-  .sidebar{width:min(300px,84vw)}
-  .sidebar a{padding:10px 18px;font-size:15px}
-  .sb-sec>summary{padding:14px 18px 12px;font-size:11.5px}
   .tbl th,.tbl td{padding:10px}
   .tbl tbody th{cursor:pointer}
   a[data-sutta]{display:inline-block;padding:6px 3px}
-  .version-badge{padding:8px 14px}
-  #top-btn{width:48px;height:48px;font-size:19px;right:16px;bottom:16px}
 }
 @media (pointer:coarse) and (max-width:640px){
   /* Cada grupo de filtros, a línea completa: así los botones crecen a lo
@@ -374,7 +133,6 @@ footer a{color:var(--nila)}
 }
 
 @media (prefers-reduced-motion:reduce){
-  .hero div{opacity:1!important;transition:none!important}
   *{animation:none!important}
 }
 @media print{
@@ -386,8 +144,7 @@ footer a{color:var(--nila)}
 }
 </style>
 <!-- cabecera:inicio -->
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/cabecera.css?v=d9271bb6" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
 <style>#theme,#en-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -431,26 +188,26 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   <nav id="sbnav"></nav>
 </aside>
 
-<header>
-  <div class="wrap mast">
-    <div>
-      <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
-      <h1><span class="i-es">Paradigmas de declinaci<span class="dia">ó</span>n</span><span class="i-en">Declension paradigms</span></h1>
-      <p class="tag i-es">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
-      <p class="tag i-en">The declension tables of the Pāḷi noun and pronoun, with every variant.</p>
-      <span class="version-badge" id="vbadge"></span>
-    </div>
-    <div class="hero" id="hero" aria-hidden="true"></div>
-  </div>
+<header class="rc-titulo">
+<div class="wrap rc-mast">
+<div class="rc-titulo-texto">
+<p class="eyebrow-iebh"><span class="marca-arbol" aria-hidden="true"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></p>
+<h1 class="rc-h1"><span class="i-es">Paradigmas de declinaci<span class="dia">ó</span>n</span><span class="i-en">Declension paradigms</span></h1>
+<p class="tag i-es">Las tablas de declinación del nombre y el pronombre pāḷi, con todas sus variantes.</p>
+<p class="tag i-en">The declension tables of the Pāḷi noun and pronoun, with every variant.</p>
+<div class="rc-insignias"><span class="version-badge" id="vbadge"></span></div>
+</div>
+<div class="rc-lado"><div class="hero" id="hero" aria-hidden="true"></div></div>
+</div>
 </header>
 
 <div class="bar">
   <div class="wrap">
+    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
+      aria-expanded="true">☰</button>
     <input type="search" id="q" placeholder="Buscar paradigma o forma — «purisa», «rannā», «bhikkhave»…" aria-label="Buscar">
     <span class="filtros" id="f-gen" role="group" aria-label="Filtrar por género"></span>
     <span class="filtros tema" id="f-tema" role="group" aria-label="Filtrar por tema"></span>
-    <button class="icon-btn" id="burger" aria-label="Mostrar u ocultar el índice"
-      aria-expanded="true">☰</button>
     <button class="icon-btn" id="en-btn" aria-pressed="false"
       aria-label="Interface in English / Interfaz en español"
       data-tip="Interface in English / Interfaz en español">EN</button>
@@ -463,9 +220,9 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <div id="tip" role="tooltip" aria-hidden="true"></div>
 <button id="top-btn" aria-label="Volver al inicio" data-tip="Volver al inicio">↑</button>
 
-<footer class="wrap">
-  <details class="pie-notas">
-    <summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
+<footer class="rc-pie">
+<div class="wrap">
+<details class="pie-notas"><summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
   <p class="version-foot" id="vfoot"></p>
   <div class="i-es">
   <p><strong>Fuente.</strong> Los 85 paradigmas proceden de 83 documentos de declinación preparados por
@@ -506,15 +263,15 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   own words and are still in Spanish here, awaiting their English adjudication.</em></p>
   <p class="parcial" id="credito-ingles" hidden></p>
   </div>
-  </details>
-
-  <p class="licencia"><span class="marca-lockup"></span><span class="i-es">Preparado por Bhikkhu Nandisena<br>
+</details>
+<p class="licencia"><span class="marca-lockup" aria-hidden="true"></span><span class="i-es">Preparado por Bhikkhu Nandisena<br>
   Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span><span class="i-en">Prepared by Bhikkhu Nandisena<br>
   This material may be reproduced for personal use and distributed free of charge.<br>
   Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under licence
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.</span></p>
+</div>
 </footer>
 
 <script>
@@ -1302,6 +1059,8 @@ topBtn.addEventListener('click', () => {
     .setProperty('--barra', (barra.offsetHeight + 12) + 'px');
   medir();
   addEventListener('resize', medir);
+  /* la barra crece al pintarse sus filtros y su cuenta: se vuelve a medir (etapa 4b) */
+  if(window.ResizeObserver) new ResizeObserver(medir).observe(barra);
 })();
 
 /* ---------- inglés a demanda (pedido del IEBH, 2026-08-29) ----------
@@ -1370,7 +1129,7 @@ topBtn.addEventListener('click', () => {
 render();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=d9271bb6"></script>
+<script defer src="../../assets/cabecera.js?v=4aacb900"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

@@ -84,6 +84,12 @@ T = {
         "titulo_pagina": "Buscar · Gramáticas Pāḷi",
         "descripcion": "Búsqueda en todo el sitio: suttas, glosario, raíces, "
                        "paradigmas y recursos.",
+        # La explicación que llevaba la caja grande de la portada, que se quitó
+        # (pedido del IEBH, 2026-10-08): la caja de la barra es la única.
+        "intro": "Un número lleva a la página de ese sutta ({n} publicados). "
+                 "Una palabra, en pāḷi o en español, con diacríticos o sin "
+                 "ellos, se busca en los suttas, el glosario, las raíces, los "
+                 "paradigmas y los recursos.",
         "etiqueta": "Palabra, término, raíz o número de sutta",
         "boton": "Buscar",
         "ayuda": "Con diacríticos o sin ellos: «karaka» encuentra kāraka. "
@@ -98,6 +104,10 @@ T = {
         "titulo_pagina": "Search · Pāḷi Grammars",
         "descripcion": "Search the whole site: suttas, glossary, roots, "
                        "paradigms and resources.",
+        "intro": "A number takes you to that sutta's page ({n} published). "
+                 "A word, in Pāḷi or English, with or without diacritics, is "
+                 "looked up in the suttas, the glossary, the roots, the "
+                 "paradigms and the resources.",
         "etiqueta": "Word, term, root or sutta number",
         "boton": "Search",
         "ayuda": "With or without diacritics: «karaka» finds kāraka. "
@@ -361,9 +371,6 @@ PAGINA = """<!DOCTYPE html>
 <title>{titulo_pagina}</title>
 <meta content="{descripcion}" name="description"/>
 <link href="{raiz}assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="{raiz}assets/pali.css?v={v}" rel="stylesheet"/>
 </head>
 <body>
@@ -383,6 +390,7 @@ try{{if(paliLang()==='{otra_lang}')location.replace('{otra_url}'+location.search
 <a id="lang-btn" href="{otra_url}" onclick="try{{localStorage.setItem('pali_lang','{otra_lang}')}}catch(e){{}};this.href='{otra_url}'+location.search+location.hash">{otra_lang_may}</a>
 <main class="busca" id="busca" data-indice="{raiz}assets/busqueda-{lang}.json?v={vi}" data-textos="{textos}">
 <h1>{titulo}</h1>
+<p class="busca-intro">{intro}</p>
 <form class="busca-form" id="busca-form" role="search" action="./" method="get">
 <label for="busca-q">{etiqueta}</label>
 <div class="busca-fila"><input id="busca-q" name="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-describedby="busca-ayuda"/>
@@ -408,7 +416,7 @@ def huella(ruta):
         return hashlib.md5(f.read()).hexdigest()[:8]
 
 
-def pagina(lengua, v_indice):
+def pagina(lengua, v_indice, n_suttas):
     t = T[lengua]
     raiz = "../" if lengua == "es" else "../../"
     otra = "en" if lengua == "es" else "es"
@@ -420,6 +428,7 @@ def pagina(lengua, v_indice):
         titulo_pagina=H.escape(t["titulo_pagina"]), descripcion=H.escape(t["descripcion"]),
         otra_lang=otra, otra_url=otra_url, otra_lang_may=otra.upper(),
         tema=H.escape(t["tema"]), titulo=H.escape(t["titulo"]),
+        intro=H.escape(t["intro"].format(n=n_suttas)),
         etiqueta=H.escape(t["etiqueta"]), boton=H.escape(t["boton"]),
         ayuda=H.escape(t["ayuda"]), sin_js=H.escape(t["sin_js"]),
         copyright=t["copyright"],
@@ -462,7 +471,7 @@ def main():
         destino = os.path.join(SITIO, "buscar") if lengua == "es" else os.path.join(SITIO, "en", "buscar")
         os.makedirs(destino, exist_ok=True)
         with open(os.path.join(destino, "index.html"), "w", encoding="utf-8") as f:
-            f.write(pagina(lengua, huella(ruta)))
+            f.write(pagina(lengua, huella(ruta), cuenta[TIPOS.index("suttas")]))
         informe.append("{0}: {1} entradas ({2}) · {3} KB".format(
             lengua.upper(), len(entradas),
             " · ".join("{0} {1}".format(c, n) for c, n in zip(cuenta, TIPOS)),

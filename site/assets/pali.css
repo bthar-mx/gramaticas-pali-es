@@ -3,60 +3,15 @@
 
 /* ── Reset & variables ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* La paleta «hoja de palma», las tres familias de letra, el fondo de la
+   página y la marca del IEBH viven en base.css (etapa 4b, 2026-10-08), que
+   herramientas/cabecera.py enlaza en todas las páginas. Aquí sólo queda lo
+   que es de la maqueta de estas páginas. */
 :root {
-  /* Paleta «hoja de palma», la de /recursos/sandhi/ y /recursos/paradigmas/
-     (sesión 20). El modelo de superficies se invierte: el campo de página es
-     el tono MÁS oscuro (--bg = ola) y lo elevado se aclara (--bg2 = ola-2,
-     --bg3 = un paso más de luz para el hover de lo ya elevado). Contraste
-     medido de cada par; los textos cumplen AA sobre todas las superficies. */
-  --bg:            #E7E3D6;   /* ola — campo de página; ink 14,10:1 */
-  --bg2:           #F0EDE4;   /* ola-2 — superficies elevadas; ink 15,47:1 */
-  --bg3:           #F6F4EC;   /* hover de lo elevado; ink 16,44:1 */
-  --text:          #171612;   /* ink, tinta de humo */
-  --text2:         #4E4839;   /* soot — 7,08:1 sobre --bg */
-  --text3:         #6B6455;   /* 4,57:1 — el #8C8A85 anterior suspendía AA (3,30:1) */
-  --border:        #BFB7A0;   /* hair — sólido, no alfa */
-  --border2:       #A89C7F;   /* hair oscuro — el filete más marcado, también sólido */
-  --accent:        #27414F;   /* nīla — 8,37:1; desaparece el violeta #534AB7 */
-  --accent-bg:     rgba(39,65,79,.10);   /* chip-k de la página de sandhi */
-  --accent-mid:    #517488;   /* nīla medio: filete de .gloss, focos, barra de progreso */
-  --green:         #55611E;   /* oliva cálido, ajustado a la paleta — 5,25:1 */
-  --green-bg:      rgba(85,97,30,.12);
-  --serif:         'Gentium Book Plus', Georgia, serif;
-  --sans:          'Inter', system-ui, sans-serif;
-  --mono:          'JetBrains Mono', monospace;
   --r:             8px;
   --rl:            12px;
   --toc-w:         240px;
-  --haritala:      #5C4008;   /* oropimente: el amarillo de las correcciones */
-  --display:       "Gentium Book Plus", Georgia, serif;
 }
-/* El oscuro de hoja de palma, copiado del que ya está probado en la página
-   de sandhi (html[data-theme=dark]), no inventado. --bg3 y --text3 no
-   existen allí: --bg3 es un paso más de luz sobre ola-2 oscuro, y --text3
-   (4,96:1 sobre --bg2) aclara el soot oscuro para el texto terciario. */
-body.dark {
-  --bg: #1A1917; --bg2: #232220; --bg3: #2C2A26;
-  --text: #F4F1E8; --text2: #BDB5A2; --text3: #978F80;
-  --border: #494438; --border2: #5C564A;
-  --accent: #B6D8EE;
-  --accent-bg: rgba(182,216,238,.13);
-  --accent-mid: #8FB6CE;
-  --green: #A5D178; --green-bg: rgba(165,209,120,.14);
-  --haritala: #EFC14E;
-}
-
-/* En los capítulos el fondo lo pone #main; las páginas de índice no lo
-   tienen, y sin esto el modo oscuro dejaba la página blanca con el texto
-   casi blanco encima. */
-body {
-  background: var(--bg);
-  color: var(--text);
-  /* La luz suave arriba a la izquierda de la página de sandhi, como la que
-     cae sobre una hoja de palma. En oscuro se apaga, igual que allí. */
-  background-image: radial-gradient(circle at 12% 8%, rgba(255,255,255,.55), transparent 55%);
-}
-body.dark { background-image: none; }
 
 /* ── Progress bar ────────────────────────────────────────────────── */
 #pbar-wrap {
@@ -673,24 +628,15 @@ body.dark .footer-box-copy a { color: var(--accent-mid); }
    alteraría la marca. De fondo y no en <img> para que el navegador pida
    sólo la versión del tema en uso. El nombre del instituto va escrito
    debajo, así que la imagen es decorativa y no lleva texto alternativo. */
-.marca-lockup {
-  display: block;
-  width: 180px;
-  height: 75px;
-  margin: 0 0 .6rem;
-  background: url(iebh-imagotipo-granate.svg) left center/contain no-repeat;
-}
-body.dark .marca-lockup { background-image: url(iebh-imagotipo-blanco.svg); }
+/* El dibujo y sus dos versiones, en base.css; aquí, el tamaño y el sitio. */
+.marca-lockup { margin: 0 0 .6rem; }
 /* El árbol solo, para la línea que ya nombra al instituto. */
 .marca-arbol {
-  display: inline-block;
   width: 24px;
   height: 24px;
   vertical-align: -8px;
   margin-right: .55rem;
-  background: url(iebh-arbol-granate.svg) center/contain no-repeat;
 }
-body.dark .marca-arbol { background-image: url(iebh-arbol-blanco.svg); }
 /* En los capítulos la cabecera no tiene línea de crédito, así que el árbol
    va solo, entre el enlace de vuelta y el título de la obra. */
 .hdr-marca { margin: .35rem 0 .5rem; line-height: 0; }
@@ -952,6 +898,10 @@ body.dark .chapter-end-es { color: #C9C2B0; }
   max-width: 46rem; margin: 0 auto; padding: 4rem 1.5rem 6rem;
   font-family: var(--sans); color: var(--text);
 }
+/* /recursos/ lleva el bloque del título y el pie comunes de los recursos
+   (recursos.css, etapa 4b): su lista va al ancho de ellos. */
+.idx.idx-rec { max-width: 980px; padding: .5rem 22px 0; }
+.idx-rec .idx-list { max-width: 46rem; }
 .idx-eyebrow {
   font: 500 11px/1 var(--mono); letter-spacing: .09em;
   text-transform: uppercase; color: var(--text3); margin-bottom: 1.1rem;
@@ -1114,30 +1064,6 @@ body.dark .doc a { color: var(--accent-mid); }
 .ini h1.display { font-size: clamp(38px, 6.4vw, 60px); line-height: 1.02; margin-bottom: .2rem; }
 .ini .ini-lede { max-width: 44rem; font-size: 1.08rem; margin-top: 1.1rem; }
 
-.ini-ir { max-width: 52rem; margin-top: 2rem; display: flex; flex-direction: column; gap: .5rem; position: relative; }
-.ini-ir label { font: 500 14px/1.4 var(--sans); color: var(--text); }
-.ini-ir-fila { display: flex; flex-wrap: wrap; gap: 10px; }
-.ini-ir input {
-  flex: 1 1 18rem; min-width: 0; height: 56px; padding: 0 18px;
-  border: 1px solid var(--border2); border-radius: var(--rl);
-  background: var(--bg3); color: var(--text);
-  font: 400 18px/1 var(--sans); outline: none;
-}
-.ini-ir input::placeholder { color: var(--text3); opacity: 1; }
-.ini-ir input:focus { border-color: var(--accent-mid); box-shadow: 0 0 0 3px var(--accent-bg); }
-.ini-ir button {
-  height: 56px; padding: 0 28px; border: 0; border-radius: var(--rl);
-  background: var(--accent); color: var(--bg3); cursor: pointer;
-  font: 500 17px/1 var(--sans);
-}
-.ini-ir button:focus-visible { outline: 2px solid var(--accent-mid); outline-offset: 2px; }
-.ini-ir-nota { margin: 0; font-size: .9rem; color: var(--text3); line-height: 1.5; }
-.ir-aviso {
-  margin: .25rem 0 0; padding: .6rem .9rem; font-size: .92rem; line-height: 1.5;
-  background: var(--bg2); border: 1px solid var(--border2); border-radius: var(--r);
-  color: var(--text);
-}
-.ir-aviso a { color: var(--accent); }
 
 .ini-sec { margin-top: 4rem; }
 .ini-sec-cab {
@@ -1199,11 +1125,8 @@ a.ini-cap:hover { background: var(--accent-bg); border-color: var(--accent-mid);
 a.ini-rec:hover { background: var(--accent-bg); border-color: var(--accent-mid); }
 .ini-rec-t { font-weight: 500; }
 .ini-rec-d { font-size: .88rem; line-height: 1.45; color: var(--text2); }
-.ini-borrador {
-  display: inline-block; margin-left: .35rem; padding: 0 .4rem; vertical-align: .1em;
-  font: 500 11px/1.6 var(--sans); color: var(--haritala);
-  border: 1px solid var(--haritala); border-radius: 4px;
-}
+/* La etiqueta «borrador» (.borrador) es la de base.css, la misma en todo
+   el sitio: tarjetas, resultados de /buscar/ y páginas de cada sutta. */
 
 .ini-clases {
   margin-top: 4rem; padding: 1.5rem 1.75rem;
@@ -1227,11 +1150,10 @@ a.ini-rec:hover { background: var(--accent-bg); border-color: var(--accent-mid);
 .ini-btn.prim:hover { filter: brightness(1.1); }
 .ini .idx-foot { margin-top: 4rem; }
 
-/* La caja del § y los botones, a ancho de teléfono: márgenes de 16 px. */
+/* A ancho de teléfono: márgenes de 16 px. */
 @media (max-width: 760px) {
   .idx.ini { padding: 2.25rem 16px 3.5rem; }
   .ini-obra { padding: 1.1rem 1rem; }
-  .ini-ir button { flex: 1 1 100%; }
   .ini-sec, .ini-clases { margin-top: 3rem; }
   .ini-clases { padding: 1.1rem 1rem; }
 }
@@ -1378,13 +1300,15 @@ body.dark .sutta-concord { color: #D2CBB8; }
 /* ── Búsqueda en todo el sitio, /buscar/ (rediseño de la navegación,
    etapa 4a, 2026-10-08) ─────────────────────────────────────────────
    Una caja y la lista de resultados por grupos; la pinta assets/buscar.js.
-   La caja repite la de la portada (.ini-ir). Los resultados son enlaces de
-   bloque, con dianas de 44 px como mínimo. */
+   La caja tiene el aspecto de la que tuvo la portada hasta la etapa 4b. Los
+   resultados son enlaces de bloque, con dianas de 44 px como mínimo. */
 .busca {
   max-width: 52rem; margin: 0 auto; padding: 2rem 24px 4rem;
   font-family: var(--sans); color: var(--text); line-height: 1.55;
 }
 .busca h1 { font: 700 clamp(30px, 5vw, 40px)/1.1 var(--display); letter-spacing: -.01em; }
+/* lo que hace la caja: lo decía la de la portada, que ya no está */
+.busca-intro { max-width: 44rem; margin: .6rem 0 0; color: var(--text2); line-height: 1.55; }
 .busca-form { margin-top: 1.2rem; display: flex; flex-direction: column; gap: .5rem; }
 .busca-form label { font: 500 14px/1.4 var(--sans); }
 .busca-fila { display: flex; flex-wrap: wrap; gap: 10px; }

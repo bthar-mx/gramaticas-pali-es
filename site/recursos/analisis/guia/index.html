@@ -7,81 +7,46 @@
 <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
 <title>Guía para estudiantes — Análisis de los suttas de Kaccāyana</title>
 <meta name="version" content="0.11">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&family=Padauk&display=swap" rel="stylesheet">
+<!-- La letra birmana de las citas del libro; las tres del sitio las pone cabecera.insertar. -->
+<!-- cabecera:inicio -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../../assets/base.css?v=4aacb900" rel="stylesheet"/>
+<link href="../../../assets/recursos.css?v=4aacb900" rel="stylesheet"/>
+<!-- cabecera:fin -->
+<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
 <style>
-/* Guía para el estudiante del análisis de los suttas. Los estilos son los de
-   recursos/analisis/plantilla.html (colores, letra, cabecera, interruptor
-   ES | EN), reducidos a lo que usa una página de prosa. */
-:root{
-  --ola:#E7E3D6;--ola-2:#F0EDE4;--ink:#171612;--soot:#4E4839;--hair:#BFB7A0;
-  --haritala:#5C4008;--hl:rgba(92,64,8,.16);
-  --chip-k:rgba(39,65,79,.10);--nila:#27414F;--rakta:#7E2E23;--shadow:rgba(0,0,0,.08);
-  --serif:"Gentium Book Plus",Georgia,"Times New Roman",serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  --mya:"Padauk","Myanmar Text","Noto Sans Myanmar",sans-serif;
+/* Guía para el estudiante del análisis de los suttas. La paleta, la letra,
+   el bloque del título y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo de una página de prosa. */
+:root{--mya:"Padauk","Myanmar Text","Noto Sans Myanmar",sans-serif;
   padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-:root[data-theme="dark"]{
-  --ola:#1A1917;--ola-2:#232220;--ink:#F4F1E8;--soot:#BDB5A2;--hair:#494438;
-  --haritala:#EFC14E;--nila:#B6D8EE;--rakta:#F09A88;--shadow:rgba(0,0,0,.45);
-  --hl:rgba(239,193,78,.20);--chip-k:rgba(182,216,238,.13)}
-html{-webkit-text-size-adjust:100%;background:var(--ola)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--ola);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.55),transparent 55%)}
-:root[data-theme="dark"] body{background-image:none}
-[hidden]{display:none!important}
-.wrap{max-width:780px;margin:0 auto;padding:0 22px}
-.lbl{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--soot)}
-header{padding:52px 0 22px;border-bottom:1px solid var(--hair)}
-.volver-sitio{display:inline-block;font:400 12px/1 var(--mono);color:var(--soot);text-decoration:none;margin-bottom:14px;opacity:.85}
-.volver-sitio:hover{color:var(--nila);opacity:1}
-.marca-arbol{display:inline-block;width:26px;height:26px;flex:0 0 auto;background:url(../../../assets/iebh-arbol-granate.svg) center/contain no-repeat}
-:root[data-theme="dark"] .marca-arbol{background-image:url(../../../assets/iebh-arbol-blanco.svg)}
-.eyebrow-iebh{display:flex;align-items:center;gap:9px}
-h1{font-size:clamp(30px,5vw,44px);line-height:1.05;margin:10px 0 0;font-weight:700;letter-spacing:-.02em}
-.vline{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:14px}
-.badge-b{display:inline-flex;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-  border:1px solid var(--rakta);color:var(--rakta);border-radius:2px;padding:4px 8px}
-#lang-btn{position:relative;height:26px;padding:2px;border-radius:100px;
-  background:var(--ola-2);border:.5px solid var(--hair);color:var(--soot);
-  font:600 11px/1 var(--mono);letter-spacing:.08em;cursor:pointer;display:inline-flex;align-items:center;gap:2px;flex:none;
-  -webkit-appearance:none;appearance:none}
-#lang-btn .lang-seg{display:flex;align-items:center;justify-content:center;height:100%;padding:0 9px;border-radius:100px;transition:background .15s,color .15s}
-#lang-btn .lang-cur{background:var(--nila);color:var(--ola)}
-#lang-btn:hover .lang-seg:not(.lang-cur){background:var(--chip-k);color:var(--ink)}
-#lang-btn:focus-visible,.icon-btn:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
-.icon-btn{font-family:var(--mono);font-size:13px;line-height:1;background:var(--ola-2);color:var(--soot);
-  border:1px solid var(--hair);border-radius:2px;padding:6px 9px;cursor:pointer}
+body{line-height:1.6}
+.wrap{max-width:780px}
 /* el texto de la guía */
 .guia{padding:10px 0 20px}
 .guia h2{font-size:24px;line-height:1.2;margin:34px 0 8px;font-weight:700}
 .guia h3{font-size:19px;margin:26px 0 6px;font-weight:700}
-.guia h4,.guia h5{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soot);margin:22px 0 4px}
+.guia h4,.guia h5{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text2);margin:22px 0 4px}
 .guia p{margin:0 0 12px}
-.guia a{color:var(--nila)}
+.guia a{color:var(--accent)}
 .guia ul{margin:0 0 12px;padding-left:22px}
 .guia li{margin:0 0 4px}
 .guia ul.num{list-style:none;padding-left:0}
-.guia code{font-family:var(--mono);font-size:.86em;background:var(--chip-k);border-radius:2px;padding:0 3px}
-.guia blockquote{margin:0 0 12px;border-left:2px solid var(--haritala);padding-left:12px;color:var(--soot)}
-.guia hr{border:0;border-top:1px solid var(--hair);margin:26px 0}
+.guia code{font-family:var(--mono);font-size:.86em;background:var(--accent-bg);border-radius:2px;padding:0 3px}
+.guia blockquote{margin:0 0 12px;border-left:2px solid var(--haritala);padding-left:12px;color:var(--text2)}
+.guia hr{border:0;border-top:1px solid var(--border);margin:26px 0}
 .guia .my{font-family:var(--mya);font-size:.92em}
-.doc-tabla-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 16px}
+.doc-tabla-wrap{margin:6px 0 16px}
 .doc-tabla{width:100%;border-collapse:collapse;font-size:15px}
-.doc-tabla th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--soot);
-  padding:8px;border-bottom:1px solid var(--soot);vertical-align:bottom}
-.doc-tabla td{padding:8px;border-bottom:1px solid var(--hair);vertical-align:baseline}
-footer{border-top:1px solid var(--hair);margin-top:30px;padding:22px 0 50px;color:var(--soot);font-size:14px}
-footer a{color:var(--nila)}
-.licencia{font-size:12.5px;line-height:1.65}
-@media (max-width:760px){.wrap{padding:0 16px}header{padding-top:36px}}
-@media print{#lang-btn,#theme{display:none}}
+.doc-tabla th{text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);
+  padding:8px;border-bottom:1px solid var(--text2);vertical-align:bottom}
+.doc-tabla td{padding:8px;border-bottom:1px solid var(--border);vertical-align:baseline}
+@media (max-width:760px){.wrap{padding:0 16px}}
 </style>
 <!-- cabecera:inicio -->
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../../../assets/cabecera.css?v=d9271bb6" rel="stylesheet"/>
+<link href="../../../assets/cabecera.css?v=4aacb900" rel="stylesheet"/>
 <style>#theme,#lang-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 </head>
@@ -101,12 +66,16 @@ footer a{color:var(--nila)}
 <div class="cab-hueco" aria-hidden="true"></div>
 <script>document.documentElement.classList.add("cab-js")</script>
 <!-- cabecera:fin -->
-<header><div class="wrap">
-  <a class="volver-sitio" id="volver" href="../">← Análisis de los suttas de Kaccāyana</a>
-  <div class="eyebrow-iebh"><span class="marca-arbol"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></div>
-  <h1 id="h1">Guía para estudiantes — Análisis de los suttas de Kaccāyana</h1>
-  <div class="vline"><span class="badge-b" id="etiqueta">Borrador</span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button><button type="button" class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button></div>
-</div></header>
+<header class="rc-titulo">
+<div class="wrap rc-mast">
+<div class="rc-titulo-texto">
+<a class="volver-sitio" id="volver" href="../">← Análisis de los suttas de Kaccāyana</a>
+<p class="eyebrow-iebh"><span class="marca-arbol" aria-hidden="true"></span><span class="lbl">Instituto de Estudios Buddhistas Hispano</span></p>
+<h1 class="rc-h1" id="h1">Guía para estudiantes — Análisis de los suttas de Kaccāyana</h1>
+<div class="rc-insignias"><span class="borrador" id="etiqueta">Borrador</span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button><button type="button" class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button></div>
+</div>
+</div>
+</header>
 
 <main class="wrap">
 <article class="guia" id="guia-es" lang="es">
@@ -170,10 +139,12 @@ footer a{color:var(--nila)}
 </article>
 </main>
 
-<footer><div class="wrap">
-  <p><a href="../" id="volver-pie">← Análisis de los suttas de Kaccāyana</a></p>
-  <p class="licencia" id="lic">Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.</p>
-</div></footer>
+<footer class="rc-pie">
+<div class="wrap">
+<p><a href="../" id="volver-pie">← Análisis de los suttas de Kaccāyana</a></p>
+<p class="licencia"><span class="marca-lockup" aria-hidden="true"></span><span id="lic">Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.</span></p>
+</div>
+</footer>
 
 <script>
 (function(){
@@ -215,7 +186,7 @@ pintar();
 })();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../../assets/cabecera.js?v=d9271bb6"></script>
+<script defer src="../../../assets/cabecera.js?v=4aacb900"></script>
 <!-- cabecera:fin -->
 </body>
 </html>

@@ -221,7 +221,7 @@
     var pali = e.g === 'suttas' || e.g === 'glosario' || e.g === 'raices';
     return '<li><a class="busca-r" href="' + esc(BASE + e.u) + '">' +
       '<span class="busca-t"' + (pali && !e.b ? ' lang="pi"' : '') + '>' + resaltar(e.t, tokens) + '</span>' +
-      (e.b ? ' <span class="ini-borrador">' + esc(TX.borrador || 'borrador') + '</span>' : '') +
+      (e.b ? ' <span class="borrador">' + esc(TX.borrador || 'borrador') + '</span>' : '') +
       (e.x ? '<span class="busca-x">' + resaltar(e.x, tokens) + '</span>' : '') +
       '</a></li>';
   }

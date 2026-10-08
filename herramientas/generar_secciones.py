@@ -20,8 +20,9 @@ Va en generar_todo.py después de los capítulos (lee su HTML) y antes de
 generar_indices.py (la portada toma de aquí los rangos de cada capítulo) y
 de generar_seo.py. Es determinista: mismo origen, mismo archivo, byte a byte.
 
-De paso comprueba que la paleta de site/assets/cabecera.css siga siendo la de
-pali.css (véase cabecera.comprobar_tokens) y falla si no.
+De paso comprueba que la paleta «hoja de palma» siga viviendo sólo en
+site/assets/base.css (etapa 4b; véase cabecera.comprobar_tokens) y falla si
+un valor suyo vuelve a aparecer en otra hoja o plantilla.
 """
 
 import json
@@ -76,7 +77,7 @@ def mapa():
 def main():
     malos = cabecera.comprobar_tokens()
     if malos:
-        print("La paleta de cabecera.css no es la de pali.css:")
+        print("La paleta «hoja de palma» aparece fuera de site/assets/base.css:")
         for m in malos:
             print("   ", m)
         return 1
