@@ -188,6 +188,14 @@ nueva necesita su entrada en `PAGINAS` y la llamada a `insertar`.
 destino se calcula en una sola función de `cabecera.js` (`destinoSutta`).
 Notas de trabajo: `docs/navegacion/etapa-1-cabecera.md`.
 
+**La página de cada sutta** (etapa 2, 2026-10-08): `/s/N/` y `/en/s/N/`, 810
+páginas indexadas que escribe `herramientas/generar_hub.py` con el mismo
+análisis del markdown que los capítulos. «Ir a §» lleva ahí. **No llevan
+nada de los borradores** (clasificación, análisis según Visuddhāyuṃ): sólo
+un enlace rotulado «borrador» a cada uno; lo comprueba
+`herramientas/comprobar_hub_borradores.py`. Notas:
+`docs/navegacion/etapa-2-hub.md`.
+
 ### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
 
 Los capítulos 2, 3 y 4 en español son **salida**, no fuente: los rehace
