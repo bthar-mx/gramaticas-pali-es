@@ -545,12 +545,14 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
   (diapositivas *Casos gramaticales* de Nandisena) > `prop` (propuesta, pendiente
   del IEBH). El modo «Revisión» de la página lo enseña.
 - **Nombres de los casos**: fijados por el IEBH el 2026-09-28 (`nombres_de_caso`
-  en `usos.json`): caso del sujeto (nominativo), caso del objeto (acusativo),
-  caso del instrumento (instrumental), caso del destinatario (dativo), caso del
-  punto de partida (ablativo), caso del lugar (locativo); el sāmī, que no es
-  kāraka, posesivo/genitivo. Están en `comun/glosario.md`. El capítulo 3
-  sigue diciendo «ablativo», «dativo», «sujeto», etc.: por decisión del IEBH
-  (2026-09-28) se deja así por ahora.
+  en `usos.json`): caso del sujeto o agente, caso del objeto, caso del
+  instrumento, caso del destinatario, caso del punto de partida, caso del lugar;
+  el sāmī, que no es kāraka, poseedor. **Sin el caso entre paréntesis** (IEBH
+  2026-10-08): un kāraka no equivale a un caso (el kattā va en la primera
+  inflexión en la activa y en la tercera en la pasiva, §288). Están en `comun/glosario.md`. El capítulo 3
+  usa los papeles desde el 2026-10-08 («apādāna» (punto de partida), etc.;
+  kattā: «sujeto» o «agente»); las notas de Nandisena 1, 19, 37, 39 y 46 son
+  ahora nota nuestra.
 - **Pendiente**: las 17 dudas marcadas en `duda` (lista en
   `docs/casos/usos-revision.md`), y cotejar los ejemplos canónicos con el
   corpus del Sexto Concilio.

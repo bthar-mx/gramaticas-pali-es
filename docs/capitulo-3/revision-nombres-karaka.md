@@ -1,5 +1,7 @@
 # Capítulo 3 (Kāraka-Kappa) — paso a los nombres nuevos de los kāraka
 
+**2026-10-08 — REAPLICADO.** El 2026-10-08 `kaccayana/03-karaka-kappa.md` (y el sitio en vivo) seguían con los nombres de Nandisena: el cambio del 2026-10-01 no estaba en el repositorio. Se aplica de nuevo por la corrección del IEBH del 2026-10-08 (un kāraka no equivale a un caso: el kattā va en la primera inflexión en la activa y en la tercera en la pasiva, §288; ningún nombre de kāraka lleva ya el caso entre paréntesis). 44 líneas: frases de nombre «“apādāna” (punto de partida)», «“sampadāna” (destinatario)», «“okāsa” (lugar)», «“karaṇa” (instrumento)», «“sāmī” (poseedor)»; l. 504 «significado de la séptima [inflexión]»; notas 1, 19, 37, 39, 46 como nota nuestra. **kattā: se conserva «sujeto»** (el IEBH acepta «sujeto» y «agente»); líneas de «sujeto» y «objeto» (tabla B) y notas 40, 42, 43 sin cambio. La edición inglesa no se ha tocado.
+
 **APLICADO 2026-10-01** con las decisiones del IEBH: frases de nombre «“apādāna” (punto de partida)»; kattā → agente; sāmī → poseedor; notas de Nandisena 1, 19, 37, 39, 42, 46 reescritas como nota nuestra (40 y 43 sin cambio: el término no cambia); «ese caso recibe el nombre» se conserva; l. 504 «significado del locativo» → «significado de la séptima [inflexión]» (sattamyattha, como en l. 502). La tabla de abajo es el borrador previo, ya superado.
 
 Borrador de trabajo (Claude, 2026-10-01). Antes: no aplicado: `kaccayana/03-karaka-kappa.md` no se ha tocado. El IEBH revisa línea por línea; luego se aplica lo aprobado.
