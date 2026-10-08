@@ -394,7 +394,11 @@ function plegar(s) {
 // Nāma son 219 suttas largos y rehacerlo en cada tecla se nota.
 function textoBuscable(el) {
   if (el._plegado === undefined || el._plegadoDe !== el.textContent.length) {
-    el._plegado = plegar(el.textContent);
+    /* La fila de enlaces de la tarjeta (navegación, etapa 3) no cuenta: si
+       no, «preguntar» o «clasificación» encontrarían todas las tarjetas. */
+    var t = el.textContent, fila = el.querySelector('.sutta-enlaces');
+    if (fila) t = t.replace(fila.textContent, ' ');
+    el._plegado = plegar(t);
     el._plegadoDe = el.textContent.length;
   }
   return el._plegado;

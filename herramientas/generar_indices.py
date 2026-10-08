@@ -640,9 +640,9 @@ def tablas_paradigmas():
     p = os.path.join(RAIZ, "recursos", "paradigmas", "paradigmas.json")
     if not os.path.exists(p):
         return None
-    d = json.load(open(p, encoding="utf-8"))
-    return sum(1 for x in d.get("paradigmas", [])
-               if x.get("genero") != "sufijos")
+    # la misma regla que la propia página (generar_paradigmas.cuenta)
+    from generar_paradigmas import cuenta
+    return cuenta(json.load(open(p, encoding="utf-8")))[0]
 
 
 def cuenta_casos():

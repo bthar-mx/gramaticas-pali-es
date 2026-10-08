@@ -7,7 +7,7 @@
 <title>Paradigmas · Declinación nominal y pronominal en pāḷi</title>
 <meta name="version" content="1.17">
 <meta name="version-date" content="2026-09-06">
-<meta name="description" content="Los 83 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
+<meta name="description" content="Los 85 paradigmas de declinación nominal y pronominal del pāḷi, según los documentos del Instituto de Estudios Buddhistas Hispano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -387,7 +387,7 @@ footer a{color:var(--nila)}
 </style>
 <!-- cabecera:inicio -->
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/cabecera.css?v=75f2dcad" rel="stylesheet"/>
+<link href="../../assets/cabecera.css?v=ef5dac28" rel="stylesheet"/>
 <style>#theme,#en-btn{display:none!important}</style>
 <!-- cabecera:fin -->
 <!-- seo:inicio -->
@@ -468,10 +468,12 @@ return /^en\b/i.test(n)?'en':'es';}</script>
     <summary><span class="i-es">Notas, cifras y fuentes</span><span class="i-en">Notes, numbers and sources</span></summary>
   <p class="version-foot" id="vfoot"></p>
   <div class="i-es">
-  <p><strong>Fuente.</strong> Los 83 paradigmas proceden de los documentos de declinación preparados por
+  <p><strong>Fuente.</strong> Los 85 paradigmas proceden de 83 documentos de declinación preparados por
   Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano, transcritos aquí tal como están,
   con las variantes de cada celda separadas. Las formas entre paréntesis se dan así en el documento.
-  El paradigma femenino de <i>go</i> (F-O) es el mismo documento que el masculino (M-O1).</p>
+  Dos documentos llevan dos paradigmas cada uno: el femenino de <i>go</i> (F-O) está en el mismo
+  documento que el masculino (M-O1), y los numerales cardinales y los ordinales comparten el de los
+  numerales. Aparte va la tabla de los sufijos que son inflexiones.</p>
   <p><strong>Cómo leer las tablas.</strong> Las ocho filas son las inflexiones nominales, nombradas por su
   ordinal con el pāḷi al lado, como en la traducción de Kaccāyana. Al pasar el cursor por el nombre de
   la inflexión —o al tocarlo, en móvil— se ve el caso gramatical correspondiente: primera = nominativo, segunda = acusativo,
@@ -484,10 +486,12 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   </div>
 
   <div class="i-en">
-  <p><strong>Source.</strong> The 83 paradigms come from the declension documents prepared by
+  <p><strong>Source.</strong> The 85 paradigms come from 83 declension documents prepared by
   Bhikkhu Nandisena, Instituto de Estudios Buddhistas Hispano, transcribed here exactly as they
   stand, with the variants of each cell separated. Forms in parentheses are given that way in the
-  document. The feminine paradigm of <i>go</i> (F-O) is the same document as the masculine (M-O1).</p>
+  document. Two documents hold two paradigms each: the feminine paradigm of <i>go</i> (F-O) is in the
+  same document as the masculine (M-O1), and the cardinal and ordinal numerals share the numerals
+  document. The table of the suffixes that are inflections comes separately.</p>
   <p><strong>How to read the tables.</strong> The eight rows are the nominal inflections, named by their
   ordinal with the Pāḷi beside it, as in the translation of Kaccāyana. Hovering over the name of an
   inflection — or tapping it, on a phone — shows the corresponding grammatical case: first = nominative,
@@ -1078,7 +1082,7 @@ document.getElementById('sbclose').onclick = () => {
 scrim.onclick = closeSb;
 addEventListener('keydown', e => { if(e.key === 'Escape') closeSb(); });
 
-/* Los 82 paradigmas hacen una página de unos 35.000 px de alto. Un salto
+/* Los paradigmas hacen una página de unos 35.000 px de alto. Un salto
    «suave» de punta a punta tarda segundos: el navegador recorre toda esa
    distancia animando. Cerca, la animación ayuda a ver de dónde a dónde se
    va; lejos, sólo hace esperar. De ahí el umbral. */
@@ -1366,7 +1370,7 @@ topBtn.addEventListener('click', () => {
 render();
 </script>
 <!-- cabecera:inicio -->
-<script defer src="../../assets/cabecera.js?v=75f2dcad"></script>
+<script defer src="../../assets/cabecera.js?v=ef5dac28"></script>
 <!-- cabecera:fin -->
 </body>
 </html>
