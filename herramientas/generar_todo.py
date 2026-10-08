@@ -166,6 +166,14 @@ def main():
     # de buscadores, que las mete en sitemap.xml
     fallos += correr("generar_hub.py")
 
+    # la búsqueda en todo el sitio, /buscar/ y su índice (etapa 4a,
+    # 2026-10-08): después de las páginas de sutta y del glosario, que lee ya
+    # publicados; antes de generar_seo.py, que deja las dos páginas fuera del
+    # sitemap por ser noindex. Con los índices no hay orden que guardar: la
+    # portada y este índice toman la línea de cada recurso de la misma función
+    # (generar_indices.recursos_descritos)
+    fallos += correr("generar_busqueda.py")
+
     # las tres páginas de índice — al final, porque cuentan lo ya generado
     fallos += correr("generar_indices.py")
 

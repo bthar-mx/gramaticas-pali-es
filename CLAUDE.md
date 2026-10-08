@@ -168,8 +168,8 @@ Reglas que no se saltan, y son las de siempre:
 El markdown es la fuente; el HTML de `site/` es salida generada. **Nunca se
 edita nada dentro de `site/`, con estas excepciones, que son fuente y no salida:
 `site/assets/pali.css`, `site/assets/pali.js`, `site/assets/cabecera.css`,
-`site/assets/cabecera.js`, los SVG de la marca en `site/assets/` y
-`site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
+`site/assets/cabecera.js`, `site/assets/buscar.js`, los SVG de la marca en
+`site/assets/` y `site/_headers`** — ningún generador los escribe. Todo lo demás lo reconstruye
 entero el hook de pre-commit en cada commit (también
 `site/assets/secciones.json`, que es salida), así que un cambio hecho ahí
 desaparece sin avisar y sin dejar rastro. Lo que se edita está en
@@ -200,6 +200,16 @@ un enlace rotulado «borrador» a cada uno; lo comprueba
 enlaces —la página del sutta, la clasificación y el análisis (borradores,
 sólo el enlace) y «Preguntar»— y, en pantallas táctiles, «Rū N · Sad N» a la
 vista. Notas: `docs/navegacion/etapa-3-tarjetas.md`.
+
+**La búsqueda en todo el sitio** (etapa 4a, 2026-10-08): `/buscar/` y
+`/en/buscar/`, noindex y fuera del sitemap. La caja «§» de la barra y la de
+la portada llevan un número a `/s/N/` y lo demás a `/buscar/?q=…`. El índice
+(`site/assets/busqueda-es.json`, `busqueda-en.json`) lo escribe
+`herramientas/generar_busqueda.py` con lo ya publicado —suttas, glosario,
+raíces, paradigmas y recursos— y **ni una palabra de los borradores**: de
+ellos, sólo el título y los § que cubren. Lo carga `site/assets/buscar.js`
+sólo al buscar. El glosario guarda el tema en `pali_dark`, como las demás
+páginas. Notas: `docs/navegacion/etapa-4a-busqueda.md`.
 
 ### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
 

@@ -110,7 +110,7 @@ header.cab {
 }
 .cab-herr { display: flex; align-items: center; gap: 10px; flex: none; order: 3; }
 
-/* «Ir a §» */
+/* «Ir a §» o buscar (una palabra va a /buscar/, etapa 4a) */
 .cab-ir {
   position: relative; order: 2; margin: 0 0 0 auto; padding: 0; flex: none;
   display: flex; align-items: center; height: 40px;
@@ -124,7 +124,7 @@ header.cab {
   font: 400 18px/1 'Gentium Book Plus', Georgia, serif; color: var(--cab-text2);
 }
 .cab input.cab-ir-n {
-  width: 76px; height: 38px; margin: 0; padding: 0 10px 0 6px;
+  width: 96px; height: 38px; margin: 0; padding: 0 10px 0 6px;
   border: 0; border-radius: 0 8px 8px 0; background: transparent; box-shadow: none;
   font: 400 15px/1 'Inter', system-ui, sans-serif; color: var(--cab-text);
   -webkit-appearance: none; appearance: none;
@@ -191,7 +191,7 @@ header.cab {
   .cab a.cab-enlace { padding: 0 6px; font-size: 14.5px; }
   .cab-nav { gap: 0 2px; }
   .cab-herr { gap: 8px; }
-  .cab input.cab-ir-n { width: 64px; }
+  .cab input.cab-ir-n { width: 80px; }
   .cab .cab-seg { min-width: 40px; padding: 0 8px; }
 }
 @media (max-width: 860px) {
@@ -208,7 +208,7 @@ header.cab {
   .cab-marca { gap: 8px; }
   .cab .cab-marca .marca-arbol { width: 26px; height: 26px; }
   .cab-nombre { font-size: 18px; }
-  .cab input.cab-ir-n { width: 68px; font-size: 16px; }   /* 16 px: iOS no amplía */
+  .cab input.cab-ir-n { width: 86px; font-size: 16px; }   /* 16 px: iOS no amplía */
   .cab button.cab-menu { display: inline-flex; }
   .cab-js .cab-panel {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
@@ -247,7 +247,7 @@ header.cab {
 }
 @media (max-width: 360px) {
   .cab-nombre { font-size: 16px; }
-  .cab input.cab-ir-n { width: 56px; }
+  .cab input.cab-ir-n { width: 84px; }
 }
 
 @media print {
