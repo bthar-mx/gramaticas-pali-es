@@ -1340,3 +1340,37 @@ a.ini-rec:hover { background: var(--accent-bg); border-color: var(--accent-mid);
   .hub-pasos, .hub-indice, .hub-preg { display: none !important; }
   .hub-cuerpo { display: block; }
 }
+
+/* ── Tarjeta del sutta: fila de enlaces y Rū / Sad a la vista
+   (rediseño de la navegación, etapa 3, 2026-10-08; mesa de trabajo 3) ──
+   La fila va sobre el pie de la tarjeta: la página del sutta, los dos
+   borradores con su rótulo y «Preguntar». Enlaces llanos, sin texto de los
+   borradores. */
+.sutta-enlaces {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  margin-top: .9rem; padding-top: .75rem; border-top: .5px solid var(--border);
+}
+.sutta-enl {
+  display: inline-flex; align-items: center; gap: .35rem; min-height: 32px;
+  padding: 0 11px; border: .5px solid var(--border2); border-radius: var(--r);
+  font: 500 12.5px/1.2 var(--sans); color: var(--accent); text-decoration: none;
+  background: transparent;
+}
+.sutta-enl:hover { background: var(--accent-bg); border-color: var(--accent-mid); }
+.sutta-enl:focus-visible { outline: 2px solid var(--accent-mid); outline-offset: 2px; }
+.sutta-enl-hub { background: var(--accent); border-color: var(--accent); color: var(--bg3); }
+.sutta-enl-hub:hover { background: var(--accent); filter: brightness(1.12); }
+.sutta-enl-borr {
+  font: 500 10.5px/1.5 var(--sans); color: var(--haritala);
+  border: .5px solid var(--haritala); border-radius: 4px; padding: 0 .3rem;
+}
+/* Con el dedo, y a ancho de teléfono, dianas de 44 px; la fila se parte. */
+@media (pointer: coarse), (max-width: 760px) {
+  .sutta-enl { min-height: 44px; font-size: 13.5px; }
+}
+/* Rū y Sad: con ratón, los globos de siempre; con el dedo los globos no se
+   abren (arriba, hover:none), así que se enseña esta línea. */
+.sutta-concord { display: none; font: 12px/1.4 var(--mono); color: var(--text3); margin-top: 4px; }
+@media (hover: none) { .sutta-concord { display: block; } }
+body.dark .sutta-concord { color: #D2CBB8; }
+@media print { .sutta-enlaces { display: none !important; } }

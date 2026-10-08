@@ -124,6 +124,13 @@ def ruta_url(archivo):
     return "/" if rel == "." else "/" + rel + "/"
 
 
+def nombre_cap(meta):
+    """«Kāraka-Kappa», sin el número delante que lleva el título del
+    markdown («3-Kāraka-Kappa»): el número ya está en «capítulo 3 de 8»
+    (navegación, etapa 3)."""
+    return re.sub(r"^\d+-", "", meta["titulo_pali"])
+
+
 def sin_etiquetas(t):
     t = re.sub(r"<[^>]+>", " ", t)
     return re.sub(r"\s+", " ", H.unescape(t)).strip()
@@ -251,8 +258,8 @@ def citas(secc):
 
     titulos_cap = {}
     for clave, meta in GC.CAPITULOS.items():
-        titulos_cap["/kaccayana/{0}/".format(meta["slug"])] = (meta["num"], meta["titulo_pali"])
-        titulos_cap["/en/kaccayana/{0}/".format(meta["slug"])] = (meta["num"], meta["titulo_pali"])
+        titulos_cap["/kaccayana/{0}/".format(meta["slug"])] = (meta["num"], nombre_cap(meta))
+        titulos_cap["/en/kaccayana/{0}/".format(meta["slug"])] = (meta["num"], nombre_cap(meta))
 
     # 1. enlaces escritos en el HTML
     re_a = re.compile(r'<a\b[^>]*?\bhref="([^"]*#s(\d+))"[^>]*>(.*?)</a>', re.S)
@@ -584,7 +591,7 @@ def main():
             info = secc["capitulos"].get(meta["slug"])
             if not info or (lengua == "en" and not info["en"]):
                 continue
-            info = dict(info, slug=meta["slug"], titulo_pali=meta["titulo_pali"])
+            info = dict(info, slug=meta["slug"], titulo_pali=nombre_cap(meta))
             suttas, cap = cargar_capitulo(clave, lengua)
             for n in hubs:
                 if secc["secciones"][str(n)] != meta["slug"]:

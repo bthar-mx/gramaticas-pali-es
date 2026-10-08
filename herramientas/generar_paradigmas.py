@@ -7,8 +7,12 @@ Genera la referencia de paradigmas de declinación.
 
 Junta dos cosas:
 
-  recursos/paradigmas/paradigmas.json   las 84 entradas (83 documentos únicos),
-                                        transcritas de los documentos del IEBH
+  recursos/paradigmas/paradigmas.json   86 entradas en 84 documentos del IEBH:
+                                        85 paradigmas de declinación (de 83
+                                        documentos: GO y NUMERALES llevan dos
+                                        cada uno) y la tabla de los sufijos que
+                                        son inflexiones. Las cifras de la
+                                        página salen de aquí (cuenta()).
   recursos/paradigmas/plantilla.html    el maquetado y la lógica
 
 y escribe site/recursos/paradigmas/index.html.
@@ -181,6 +185,16 @@ def verificar(datos, indice):
     return fallos
 
 
+def cuenta(datos):
+    """(paradigmas, documentos): los paradigmas de declinación —todas las
+    entradas menos la tabla de los sufijos que son inflexiones— y los
+    documentos de los que proceden. Decisión del IEBH, 2026-10-08: «85
+    paradigmas» en todo el sitio; la portada y /recursos/ usan esta misma
+    regla (generar_indices.tablas_paradigmas)."""
+    decl = [x for x in datos.get("paradigmas", []) if x.get("genero") != "sufijos"]
+    return len(decl), len({x["doc"] for x in decl})
+
+
 def main():
     datos = json.load(open(DATOS, encoding="utf-8"))
     indice = json.load(open(INDICE, encoding="utf-8"))
@@ -220,6 +234,9 @@ def main():
     html = (plantilla[:marca.start()]
             + json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
             + plantilla[marca.end():])
+    n_par, n_doc = cuenta(datos)
+    html = (html.replace("__N_PARADIGMAS__", str(n_par))
+            .replace("__N_DOCUMENTOS__", str(n_doc)))
 
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
     open(DESTINO, "w", encoding="utf-8").write(
