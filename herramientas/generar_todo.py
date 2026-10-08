@@ -160,6 +160,12 @@ def main():
             fallos += correr("generar_ingles_glosario.py")
         fallos += correr("generar_glosario.py")
 
+    # las páginas de cada sutta, /s/N/ y /en/s/N/ (etapa 2 de la navegación,
+    # 2026-10-08): después de los capítulos y de los recursos, cuyos enlaces
+    # a cada § recoge en «Dónde se cita»; antes de los índices y de la pasada
+    # de buscadores, que las mete en sitemap.xml
+    fallos += correr("generar_hub.py")
+
     # las tres páginas de índice — al final, porque cuentan lo ya generado
     fallos += correr("generar_indices.py")
 

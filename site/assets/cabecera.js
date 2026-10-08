@@ -136,13 +136,16 @@
     return cargando;
   }
 
-  /* El destino de un §, en UNA función: la etapa 2 lo llevará a /s/N/. */
+  /* El destino de un §, en UNA función. Desde la etapa 2 (2026-10-08) es la
+     página del sutta, /s/N/ o /en/s/N/, que generar_hub.py escribe para
+     cada § de secciones.json (y en inglés si el capítulo tiene edición
+     inglesa). Un § que no está en el mapa no tiene destino. */
   function destinoSutta(n, l, datos) {
     var cap = datos && datos.secciones && datos.secciones[String(n)];
     if (!cap) return null;
     var info = datos.capitulos && datos.capitulos[cap];
     var en = l === 'en' && info && info.en;
-    return BASE + (en ? 'en/' : '') + 'kaccayana/' + cap + '/#s' + n;
+    return BASE + (en ? 'en/' : '') + 's/' + n + '/';
   }
 
   function avisar(form, texto, enlace) {
@@ -173,14 +176,11 @@
       var url = destinoSutta(n, idioma(), datos);
       if (!url) { avisar(form, t('no_publicado').replace('{n}', n)); return; }
       var aqui = location.href.split('#')[0].split('?')[0].replace(/index\.html$/, '');
-      var alla = url.split('#')[0];
       abrir(false);
-      if (aqui === alla) {
-        /* el mismo capítulo: sólo cambia el ancla (y si ya era ésa, se
-           vuelve a llevar la tarjeta a la vista) */
-        var el = document.getElementById('s' + n);
-        if (location.hash === '#s' + n && el) el.scrollIntoView();
-        else location.hash = 's' + n;
+      if (aqui === url) {
+        /* ya está en la página de ese sutta: arriba */
+        window.scrollTo(0, 0);
+        form.querySelector('input').value = '';
       } else {
         location.href = url;
       }
