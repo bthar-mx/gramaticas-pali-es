@@ -1,5 +1,5 @@
 {
- "_nota": "Traducción al español y al inglés de las glosas birmanas del nissaya del Dhātvatthasaṅgaha, frase por frase (cada glosa se parte por comas y por «၊ ဝါ၊»). Propuesta de Claude, sesión 66 (2026-10-10). seguridad: A segura, B probable, C dudosa. No llega al sitio mientras «adjudicado» sea false; firmarlo es del IEBH. Donde el sentido pāḷi coincide letra a letra con una glosa del Saddanīti, la página usa el español de Nandisena y el inglés de esa edición (rótulo «Sad»), no esto.",
+ "_nota": "Traducción al español y al inglés de las glosas birmanas del nissaya del Dhātvatthasaṅgaha, frase por frase (cada glosa se parte por comas y por «၊ ဝါ၊»). Propuesta de Claude, sesión 66 (2026-10-10). seguridad: A segura, B probable, C dudosa. No llega al sitio mientras «adjudicado» sea false; firmarlo es del IEBH. Donde el sentido pāḷi coincide letra a letra con una glosa del Saddanīti, la página usa el español de Nandisena y el inglés de esa edición (rótulo «Sad»), no esto. «pali»: sentidos pāḷi sin glosa birmana ni equivalente en el Saddanīti (109 sentidos, 39 formas), traducidos del pāḷi; se aplican sólo a esos sentidos.",
  "adjudicado": false,
  "adjudicado_por": null,
  "fecha": null,
@@ -7689,6 +7689,203 @@
    "en": "oppressing and harming",
    "seguridad": "A",
    "veces": 1
+  }
+ },
+ "pali": {
+  "gatyaṃ": {
+   "es": "ir",
+   "en": "going",
+   "seguridad": "A"
+  },
+  "gate": {
+   "es": "ir",
+   "en": "going",
+   "seguridad": "A"
+  },
+  "hiṃsane": {
+   "es": "dañar, maltratar",
+   "en": "harming",
+   "seguridad": "A"
+  },
+  "gatepi ca": {
+   "es": "ir también",
+   "en": "also going",
+   "seguridad": "A"
+  },
+  "saṃhate": {
+   "es": "reunir",
+   "en": "gathering",
+   "seguridad": "A"
+  },
+  "hiṃsāya": {
+   "es": "dañar",
+   "en": "harming",
+   "seguridad": "A"
+  },
+  "yāyane": {
+   "es": "ir",
+   "en": "going",
+   "seguridad": "A"
+  },
+  "hiṃse": {
+   "es": "dañar",
+   "en": "harming",
+   "seguridad": "A"
+  },
+  "dityaṃ": {
+   "es": "brillar",
+   "en": "shining",
+   "seguridad": "A"
+  },
+  "gatipūjāsu": {
+   "es": "ir, venerar",
+   "en": "going, honouring",
+   "seguridad": "A"
+  },
+  "gatibhakkhaṇe": {
+   "es": "ir, comer",
+   "en": "going, eating",
+   "seguridad": "A"
+  },
+  "rose ca": {
+   "es": "y enfadarse",
+   "en": "and being angry",
+   "seguridad": "B"
+  },
+  "rakkhe": {
+   "es": "proteger",
+   "en": "protecting",
+   "seguridad": "A"
+  },
+  "nodasaṃghe": {
+   "es": "impeler, reunir",
+   "en": "impelling, gathering",
+   "seguridad": "A"
+  },
+  "nodane": {
+   "es": "impeler",
+   "en": "impelling",
+   "seguridad": "A"
+  },
+  "hisāyaṃ": {
+   "es": "dañar",
+   "en": "harming",
+   "seguridad": "A"
+  },
+  "hiṃsābale ceva": {
+   "es": "dañar, y ser fuerte",
+   "en": "harming, and being strong",
+   "seguridad": "A"
+  },
+  "dittiyaṃ va": {
+   "es": "brillar",
+   "en": "shining",
+   "seguridad": "A"
+  },
+  "vadhe": {
+   "es": "matar, golpear",
+   "en": "killing, striking",
+   "seguridad": "A"
+  },
+  "vadhagatīsu": {
+   "es": "golpear, ir",
+   "en": "striking, going",
+   "seguridad": "A"
+  },
+  "saddaussāhesu": {
+   "es": "emitir un sonido, esforzarse",
+   "en": "making a sound, striving",
+   "seguridad": "A"
+  },
+  "saddamhi": {
+   "es": "emitir un sonido",
+   "en": "making a sound",
+   "seguridad": "A"
+  },
+  "gatirakkhāsu": {
+   "es": "ir, proteger",
+   "en": "going, protecting",
+   "seguridad": "A"
+  },
+  "rāsikare": {
+   "es": "amontonar",
+   "en": "heaping up",
+   "seguridad": "A"
+  },
+  "hiṃsādhāraṇesu": {
+   "es": "dañar, sostener",
+   "en": "harming, holding",
+   "seguridad": "A"
+  },
+  "vadha dāna nirūpaṇe": {
+   "es": "golpear, dar, examinar",
+   "en": "striking, giving, examining",
+   "seguridad": "B"
+  },
+  "vuddhaṃ": {
+   "es": "crecer",
+   "en": "growing",
+   "seguridad": "B"
+  },
+  "hiṃsanamhi": {
+   "es": "dañar",
+   "en": "harming",
+   "seguridad": "A"
+  },
+  "gatihiṃsāsu": {
+   "es": "ir, dañar",
+   "en": "going, harming",
+   "seguridad": "A"
+  },
+  "sappane": {
+   "es": "ir, deslizarse",
+   "en": "going, creeping",
+   "seguridad": "A"
+  },
+  "gatidānesu": {
+   "es": "ir, dar",
+   "en": "going, giving",
+   "seguridad": "A"
+  },
+  "gati hiṃsāsu": {
+   "es": "ir, dañar",
+   "en": "going, harming",
+   "seguridad": "A"
+  },
+  "gate ca": {
+   "es": "y ir",
+   "en": "and going",
+   "seguridad": "A"
+  },
+  "gatisadde": {
+   "es": "ir, emitir un sonido",
+   "en": "going, making a sound",
+   "seguridad": "A"
+  },
+  "dittihiṃsāsu": {
+   "es": "brillar, dañar",
+   "en": "shining, harming",
+   "seguridad": "A"
+  },
+  "gatyaṃ ca": {
+   "es": "y ir",
+   "en": "and going",
+   "seguridad": "A"
+  },
+  "nindāyaṃ": {
+   "es": "censurar",
+   "en": "blaming",
+   "seguridad": "A"
+  },
+  "gatihiṃsanasaṃvare": {
+   "es": "ir, dañar, contener",
+   "en": "going, harming, restraining",
+   "seguridad": "A"
+  },
+  "gatyanādaresu": {
+   "es": "ir, faltar al respeto",
+   "en": "going, disrespecting",
+   "seguridad": "A"
   }
  }
 }

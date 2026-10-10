@@ -144,7 +144,8 @@ forma, y lo decide el IEBH en el papel. Tabla y datos, en local:
 
 ### Qué se publica (decisión del IEBH, 2026-10-10)
 
-- En el sitio: **la raíz, su sentido y la referencia** (verso, página).
+- En el sitio: **la raíz, su sentido y la referencia** (verso, página), y
+  desde la sesión 66 **los versos pāḷi**.
 - **En local, no se publica**: el texto del nissaya, con sus notas.
   `docs/fuentes/dhatvatthasangaha/` está en `.gitignore`, bajo «Fuentes no
   publicadas».
@@ -177,9 +178,26 @@ frase por frase con `dhatvatthasangaha-glosas.json`, **sólo cuando el IEBH lo
 haya firmado** (`"adjudicado": true`). Lo que se añada al glosario después de
 la firma entra bajo una firma que no lo ha visto, y eso se le dice al IEBH.
 
-**No se publica todavía el número de verso**: la asignación del extractor está
-corrida en algunos versos (briefing 65, §3). La referencia publicada es la
-página.
+**Los versos** (sesión 66, v1.8 de la página): los 445 versos pāḷi
+(pp. 1-45), romanizados y cotejados con la imagen, en `versos` del mismo JSON
+(`lineas`, `cuenta` = la cifra impresa, `duda`, `cierre`, `kanda_fin`,
+`raices`). Cada raíz lleva `verso`, asignado por el texto (su lema aparece en
+el verso; 1.517 de 1.625) o por el orden, y `verso_como` dice cuál. Las cifras
+impresas cuadran con la asignación salvo en ocho versos, explicados en `duda`
+(90, 121, 202, 384-385, 403, 423-424). Registro del cotejo, fuera del
+repositorio: `…/_work/sesion66/cotejo-versos.py`.
+
+**La autoría y la fecha.** El verso 435 dice que el poema lo compuso el Thera
+Visuddhācāra de Visuddhārāma —el mismo autor del nissaya—. La nota de los
+editores (hojas 13-14) fecha el final de la obra en el año birmano 1250
+(sāsana 2432), Wāgaung, 4.º de la menguante, sábado, 23:30 (agosto de 1888);
+el verso 436 da el mismo día en pāḷi.
+
+**Derechos — aviso de los editores (hoja 14).** El grupo Visuddhāruṃ
+Gaṇavācaka declara que nadie puede reimprimir la obra sin su permiso. Se
+publican raíz, sentido, página y los versos pāḷi (decisión del IEBH,
+2026-10-10, antes de leer el aviso); el nissaya, no. Si el aviso pide otra
+cosa, lo decide el IEBH.
 
 ## Procedencia y permiso
 
