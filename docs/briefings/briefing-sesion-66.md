@@ -37,7 +37,25 @@
    quedan 109 sin birmano y sin Saddanīti. Tabla para adjudicar, las C y B
    primero: `docs/dhatvatthasangaha/glosas-por-adjudicar.md`.
 
+6. **Segunda parte de la sesión (v1.8, sin commit)**, con el IEBH fuera:
+   - **Los 445 versos**, cotejados en 65 hojas de contacto (verso 1-109 leídos
+     enteros, 110-445 por corrección del OCR); registro en
+     `_work/sesion66/cotejo-versos.py`. Vista «Versos» en la pestaña; cada raíz
+     con su verso (campo `verso`, `verso_como`).
+   - **«La obra y guía»**: tercera vista de la pestaña (no una página aparte:
+     no necesita entrada en `cabecera.PAGINAS`). Se basa en la portada, los
+     vv. 1, 434-436 y la nota de los editores (hojas 6-9 y 13-14, leídas por
+     OCR `mya` en la nube; el registro de dhammadāna se resume, no se traduce).
+   - **Globos de los kaṇḍas** (`kandas_info`, `orden_es/en` en el JSON).
+   - **Glosario**: tabla `pali` con los 39 sentidos sin glosa birmana.
+   - **Aviso de derechos** de los editores (hoja 14): nadie puede reimprimir
+     sin permiso del grupo Visuddhāruṃ Gaṇavācaka. Se publican los versos por
+     decisión del IEBH tomada antes de leerlo; se le avisa.
+
 ## 2. PENDIENTE
+
+- **Decidir, a la vista del aviso de derechos**, si los versos pāḷi siguen
+  publicados.
 
 - **Adjudicar el glosario de frases birmanas** (arriba). Las «C» son sobre
   todo fragmentos de sentidos múltiples y remisiones a otras raíces.

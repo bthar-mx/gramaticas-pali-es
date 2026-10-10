@@ -1118,3 +1118,49 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ပေါ်လာခြင်း | aparecer | appearing |
 | 1 | ဥပါဒ်ခြင်း ကြိယာ | la acción de surgir | the act of arising |
 | 1 | နှိပ်စက် ညှဉ်းဆဲခြင်း | oprimir y dañar | oppressing and harming |
+
+## Sentidos sólo en pāḷi — 39
+
+Sin glosa birmana en el libro y sin igual en el *Saddanīti*: traducidos del pāḷi.
+
+| pāḷi | español | inglés | seguridad |
+| --- | --- | --- | --- |
+| gatyaṃ | ir | going | A |
+| gate | ir | going | A |
+| hiṃsane | dañar, maltratar | harming | A |
+| gatepi ca | ir también | also going | A |
+| saṃhate | reunir | gathering | A |
+| hiṃsāya | dañar | harming | A |
+| yāyane | ir | going | A |
+| hiṃse | dañar | harming | A |
+| dityaṃ | brillar | shining | A |
+| gatipūjāsu | ir, venerar | going, honouring | A |
+| gatibhakkhaṇe | ir, comer | going, eating | A |
+| rose ca | y enfadarse | and being angry | B |
+| rakkhe | proteger | protecting | A |
+| nodasaṃghe | impeler, reunir | impelling, gathering | A |
+| nodane | impeler | impelling | A |
+| hisāyaṃ | dañar | harming | A |
+| hiṃsābale ceva | dañar, y ser fuerte | harming, and being strong | A |
+| dittiyaṃ va | brillar | shining | A |
+| vadhe | matar, golpear | killing, striking | A |
+| vadhagatīsu | golpear, ir | striking, going | A |
+| saddaussāhesu | emitir un sonido, esforzarse | making a sound, striving | A |
+| saddamhi | emitir un sonido | making a sound | A |
+| gatirakkhāsu | ir, proteger | going, protecting | A |
+| rāsikare | amontonar | heaping up | A |
+| hiṃsādhāraṇesu | dañar, sostener | harming, holding | A |
+| vadha dāna nirūpaṇe | golpear, dar, examinar | striking, giving, examining | B |
+| vuddhaṃ | crecer | growing | B |
+| hiṃsanamhi | dañar | harming | A |
+| gatihiṃsāsu | ir, dañar | going, harming | A |
+| sappane | ir, deslizarse | going, creeping | A |
+| gatidānesu | ir, dar | going, giving | A |
+| gati hiṃsāsu | ir, dañar | going, harming | A |
+| gate ca | y ir | and going | A |
+| gatisadde | ir, emitir un sonido | going, making a sound | A |
+| dittihiṃsāsu | brillar, dañar | shining, harming | A |
+| gatyaṃ ca | y ir | and going | A |
+| nindāyaṃ | censurar | blaming | A |
+| gatihiṃsanasaṃvare | ir, dañar, contener | going, harming, restraining | A |
+| gatyanādaresu | ir, faltar al respeto | going, disrespecting | A |

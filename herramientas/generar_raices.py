@@ -323,6 +323,11 @@ def traducir_dv(datos, dv, glosas):
                     s["tr"] = "iebh"
                     n_iebh += 1
                     continue
+            tp = (glosas or {}).get("pali", {}).get(s.get("pali") or "")
+            if firmado and not s.get("my") and tp:
+                s["es"], s["en"], s["tr"] = tp["es"], tp["en"], "iebh"
+                n_iebh += 1
+                continue
             n_falta += 1
     return n_sad, n_iebh, n_falta, firmado
 

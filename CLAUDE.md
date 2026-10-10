@@ -452,7 +452,7 @@ incorporarlo, para que el IEBH decida y se le dé el crédito al Venerable.
 
 ## Estado de recursos/raices
 
-La referencia de raíces (`/recursos/raices/`, v1.7) reúne **cuatro obras
+La referencia de raíces (`/recursos/raices/`, v1.8) reúne **cuatro obras
 distintas** en cinco pestañas, y confundirlas es el error fácil:
 
 | Pestaña | Obra | Cuántas | Qué numera |
@@ -466,8 +466,9 @@ distintas** en cinco pestañas, y confundirlas es el error fácil:
 Se arma con `herramientas/generar_raices.py` a partir de
 `recursos/raices/plantilla.html` y cinco JSON: `raices.json`,
 `dhatupatha.json`, `dhatupatha-ingles.json`, `dhatumanjusa.json` y
-`dhatvatthasangaha.json` (raíz, sentido y página; el texto del nissaya no
-se publica; detalle en `recursos/raices/LEEME.md`).
+`dhatvatthasangaha.json` (raíz, sentido, página y los 445 versos pāḷi; el
+texto del nissaya no se publica; detalle en `recursos/raices/LEEME.md`), más
+`dhatvatthasangaha-glosas.json` (traducción de las glosas, sólo con firma).
 
 ### La fuente principal, y cómo se cita
 
