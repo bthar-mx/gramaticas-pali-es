@@ -1,5 +1,5 @@
 {
- "_nota": "Traducción al español y al inglés de las glosas birmanas del nissaya del Dhātvatthasaṅgaha, frase por frase (cada glosa se parte por comas y por «၊ ဝါ၊»). Propuesta de Claude, sesión 66 (2026-10-10). seguridad: A segura, B probable, C dudosa. No llega al sitio mientras «adjudicado» sea false; firmarlo es del IEBH. Donde el sentido pāḷi coincide letra a letra con una glosa del Saddanīti, la página usa el español de Nandisena y el inglés de esa edición (rótulo «Sad»), no esto. «pali»: sentidos pāḷi sin glosa birmana ni equivalente en el Saddanīti (109 sentidos, 39 formas), traducidos del pāḷi; se aplican sólo a esos sentidos.",
+ "_nota": "Traducción al español y al inglés de las glosas birmanas del nissaya del Dhātvatthasaṅgaha, frase por frase (cada glosa se parte por comas y por «၊ ဝါ၊»). Propuesta de Claude, sesión 66 (2026-10-10). seguridad: A segura, B probable, C dudosa. No llega al sitio mientras «adjudicado» sea false; firmarlo es del IEBH. Donde el sentido pāḷi coincide letra a letra con una glosa del Saddanīti, la página usa el español de Nandisena y el inglés de esa edición (rótulo «Sad»), no esto. «pali»: sentidos pāḷi sin glosa birmana ni equivalente en el Saddanīti (109 sentidos, 39 formas), traducidos del pāḷi; se aplican sólo a esos sentidos. «publicar_borrador»: el IEBH pidió el 2026-10-10 publicar la propuesta antes de firmarla; sale en la página rotulada «borrador» hasta que «adjudicado» sea true.",
  "adjudicado": false,
  "adjudicado_por": null,
  "fecha": null,
@@ -1903,7 +1903,7 @@
   },
   "ခြောက်သွေ့စေခြင်းအနက်": {
    "my": "ခြောက်သွေ့စေခြင်းအနက်",
-   "es": "sentido de secar",
+   "es": "significado de secar",
    "en": "sense of drying",
    "seguridad": "A",
    "veces": 2
@@ -2099,7 +2099,7 @@
   },
   "ပေါင်းစုခြင်းအနက်": {
    "my": "ပေါင်းစုခြင်းအနက်",
-   "es": "sentido de reunir",
+   "es": "significado de reunir",
    "en": "sense of gathering",
    "seguridad": "A",
    "veces": 2
@@ -2211,7 +2211,7 @@
   },
   "ကန္တိလေးနက်": {
    "my": "ကန္တိ လေးနက်",
-   "es": "deseo, brillo: cuatro sentidos",
+   "es": "deseo, brillo: cuatro significados",
    "en": "delight: four senses",
    "seguridad": "C",
    "veces": 1
@@ -2477,7 +2477,7 @@
   },
   "ပူလောင်ခြင်းအနက်": {
    "my": "ပူလောင်ခြင်းအနက်",
-   "es": "sentido de arder",
+   "es": "significado de arder",
    "en": "sense of burning",
    "seguridad": "A",
    "veces": 1
@@ -2519,7 +2519,7 @@
   },
   "ထွန်းပခြင်းဒိတ္တိအနက်": {
    "my": "ထွန်းပခြင်း ဒိတ္တိ အနက်",
-   "es": "sentido de brillar (ditti)",
+   "es": "significado de brillar (ditti)",
    "en": "sense of shining (ditti)",
    "seguridad": "A",
    "veces": 1
@@ -2645,7 +2645,7 @@
   },
   "မဒမှတပါးသောရောဒနာ’ဝှါနဗျာကုလ၃-နက်": {
    "my": "မဒမှ တပါးသော ရောဒနာ’ဝှါန ဗျာကုလ ၃-နက်",
-   "es": "tres sentidos, distintos de mada: llorar, llamar, turbarse",
+   "es": "tres significados, distintos de mada: llorar, llamar, turbarse",
    "en": "three senses besides mada: weeping, calling, agitation",
    "seguridad": "B",
    "veces": 1
@@ -2694,7 +2694,7 @@
   },
   "အထူးထူးအပြားပြားများသောအနက်ရှိ": {
    "my": "အထူးထူး အပြားပြား များသော အနက်ရှိ",
-   "es": "de muchos sentidos",
+   "es": "de muchos significados",
    "en": "having many senses",
    "seguridad": "A",
    "veces": 1
@@ -2799,7 +2799,7 @@
   },
   "များသောအနက်ရှိ": {
    "my": "များသော အနက်ရှိ",
-   "es": "de muchos sentidos",
+   "es": "de muchos significados",
    "en": "having many senses",
    "seguridad": "A",
    "veces": 1
@@ -3191,7 +3191,7 @@
   },
   "ပါးဟူသောအနက်": {
    "my": "ပါးဟူသော အနက်",
-   "es": "sentido de delgado",
+   "es": "significado de delgado",
    "en": "sense of thin",
    "seguridad": "C",
    "veces": 1
@@ -3226,21 +3226,21 @@
   },
   "သိနိုင်ခဲခက်ရှုပ်ထွေးသောအနက်": {
    "my": "သိနိုင်ခဲခက် ရှုပ်ထွေးသော အနက်",
-   "es": "sentido difícil de conocer",
+   "es": "significado difícil de conocer",
    "en": "sense hard to know",
    "seguridad": "B",
    "veces": 1
   },
   "တည်ရာအနက်": {
    "my": "တည်ရာအနက်",
-   "es": "sentido de lugar",
+   "es": "significado de lugar",
    "en": "sense of place",
    "seguridad": "C",
    "veces": 1
   },
   "ဖွဲ့ကုံးစီရင်ခြင်းအနက်": {
    "my": "ဖွဲ့ကုံးစီရင်ခြင်း အနက်",
-   "es": "sentido de componer",
+   "es": "significado de componer",
    "en": "sense of composing",
    "seguridad": "A",
    "veces": 1
@@ -3352,7 +3352,7 @@
   },
   "ဂုရဓာတ်ကဲ့သို့ဟိံသာဂတိဥယျမအနက်ရှိ": {
    "my": "ဂုရဓာတ်ကဲ့သို့ ဟိံသာ ဂတိ ဥယျမ အနက်ရှိ",
-   "es": "con los sentidos de gura: dañar, ir, esforzarse",
+   "es": "con los significados de gura: dañar, ir, esforzarse",
    "en": "with the senses of gura: harming, going, striving",
    "seguridad": "A",
    "veces": 1
@@ -3387,7 +3387,7 @@
   },
   "သွားခြင်းဂတိအနက်": {
    "my": "သွားခြင်း ဂတိအနက်",
-   "es": "ir (sentido de gati)",
+   "es": "ir (significado de gati)",
    "en": "going (sense of gati)",
    "seguridad": "A",
    "veces": 1
@@ -3429,21 +3429,21 @@
   },
   "ကြောက်မက်ဖွယ်ဟူသောအနက်": {
    "my": "ကြောက်မက်ဖွယ် ဟူသော အနက်",
-   "es": "sentido de terrible",
+   "es": "significado de terrible",
    "en": "sense of fearful",
    "seguridad": "A",
    "veces": 1
   },
   "အသံပြုခြင်းအနက်": {
    "my": "အသံပြုခြင်း အနက်",
-   "es": "sentido de emitir un sonido",
+   "es": "significado de emitir un sonido",
    "en": "sense of making a sound",
    "seguridad": "A",
    "veces": 1
   },
   "ကြောက်မက်ဖွယ်သောအသံကိုပြုခြင်းအနက်": {
    "my": "ကြောက်မက်ဖွယ်သောအသံကို ပြုခြင်း အနက်",
-   "es": "sentido de emitir un sonido terrible",
+   "es": "significado de emitir un sonido terrible",
    "en": "sense of making a fearful sound",
    "seguridad": "A",
    "veces": 1
@@ -3485,7 +3485,7 @@
   },
   "သွားခြင်းအနက်": {
    "my": "သွားခြင်း အနက်",
-   "es": "sentido de ir",
+   "es": "significado de ir",
    "en": "sense of going",
    "seguridad": "A",
    "veces": 1
@@ -3772,7 +3772,7 @@
   },
   "ဇစ္စဓာတ်ကဲ့သို့အနက်နှစ်ပါး": {
    "my": "ဇစ္စဓာတ်ကဲ့သို့ အနက်နှစ်ပါး",
-   "es": "los dos sentidos de la raíz jacca",
+   "es": "los dos significados de la raíz jacca",
    "en": "the two senses of the root jacca",
    "seguridad": "B",
    "veces": 1
@@ -3800,7 +3800,7 @@
   },
   "ဇဗ္ဘဓာတ်ကဲ့သို့အနက်နှစ်ပါး": {
    "my": "ဇဗ္ဘဓာတ်ကဲ့သို့ အနက်နှစ်ပါး",
-   "es": "los dos sentidos de la raíz jabbha",
+   "es": "los dos significados de la raíz jabbha",
    "en": "the two senses of the root jabbha",
    "seguridad": "B",
    "veces": 1
@@ -3905,7 +3905,7 @@
   },
   "ဥတ္တိအနက်နှစ်ပါး": {
    "my": "ဥတ္တိအနက် နှစ်ပါး",
-   "es": "dos sentidos de decir",
+   "es": "dos significados de decir",
    "en": "two senses of uttering",
    "seguridad": "C",
    "veces": 1
@@ -3982,14 +3982,14 @@
   },
   "သစ်စေးဟူသောအနက်": {
    "my": "သစ်စေးဟူသော အနက်",
-   "es": "sentido de resina",
+   "es": "significado de resina",
    "en": "sense of resin",
    "seguridad": "B",
    "veces": 1
   },
   "ထွန်းပခြင်းအနက်": {
    "my": "ထွန်းပခြင်းအနက်",
-   "es": "sentido de brillar",
+   "es": "significado de brillar",
    "en": "sense of shining",
    "seguridad": "A",
    "veces": 1
@@ -4017,7 +4017,7 @@
   },
   "ဂတျတ္ထ": {
    "my": "ဂတျတ္ထ",
-   "es": "con sentido de ir",
+   "es": "con significado de ir",
    "en": "in the sense of going",
    "seguridad": "A",
    "veces": 1
@@ -4087,7 +4087,7 @@
   },
   "ဤနောက်ဖြစ်သောသွာဒိဂိုဏ်းဝဓာခန္ဒနအနက်": {
    "my": "ဤနောက်ဖြစ်သော သွာဒိဂိုဏ်း ဝဓာခန္ဒန အနက်",
-   "es": "los sentidos vadha y khandana, en la clase svādi que sigue",
+   "es": "los significados vadha y khandana, en la clase svādi que sigue",
    "en": "the senses vadha and khandana, in the svādi class that follows",
    "seguridad": "C",
    "veces": 1
@@ -4143,7 +4143,7 @@
   },
   "ဤပီဠာဝဓအနက်နှစ်ပါး": {
    "my": "ဤပီဠာဝဓအနက် နှစ်ပါး",
-   "es": "estos dos sentidos: oprimir y matar",
+   "es": "estos dos significados: oprimir y matar",
    "en": "these two senses: oppressing and killing",
    "seguridad": "A",
    "veces": 1
@@ -4374,7 +4374,7 @@
   },
   "ဘူသာသမတ္ထဝါရဏဟူသောအလံသဒ္ဒါ၏အနက်": {
    "my": "ဘူသာ သမတ္ထ ဝါရဏ ဟူသော အလံသဒ္ဒါ၏ အနက်",
-   "es": "el sentido de alaṃ: adorno, capacidad, prohibición",
+   "es": "el significado de alaṃ: adorno, capacidad, prohibición",
    "en": "the sense of alaṃ: ornament, ability, prohibition",
    "seguridad": "A",
    "veces": 1
@@ -4521,7 +4521,7 @@
   },
   "ဃောရရုတ-ဟူသောဒထွေးဒခိဓာတ်၏အနက်": {
    "my": "ဃောရရုတ-ဟူသော ဒထွေး ဒခိ ဓာတ်၏ အနက်",
-   "es": "el sentido de la raíz dakhi con dos d: grito terrible",
+   "es": "el significado de la raíz dakhi con dos d: grito terrible",
    "en": "the sense of the root dakhi: fearful cry",
    "seguridad": "B",
    "veces": 1
@@ -4598,7 +4598,7 @@
   },
   "သောသနာလမတ္ထ-ဟူသောဒထွေးဒါခဓာတ်၏အနက်": {
    "my": "သောသနာလမတ္ထ-ဟူသော ဒထွေး ဒါခဓာတ်၏ အနက်",
-   "es": "el sentido de la raíz dākha: secar y alaṃ",
+   "es": "el significado de la raíz dākha: secar y alaṃ",
    "en": "the sense of the root dākha: drying and alaṃ",
    "seguridad": "B",
    "veces": 1
@@ -4626,7 +4626,7 @@
   },
   "ဒိတ္တိက္လေသဇီဝန-ဟူသောဓိက္ခဓာတ်၏အနက်": {
    "my": "ဒိတ္တိက္လေသ ဇီဝန-ဟူသော ဓိက္ခဓာတ်၏ အနက်",
-   "es": "el sentido de la raíz dhikkha: brillar, afligirse, vivir",
+   "es": "el significado de la raíz dhikkha: brillar, afligirse, vivir",
    "en": "the sense of the root dhikkha: shining, afflicting, living",
    "seguridad": "A",
    "veces": 1
@@ -4773,14 +4773,14 @@
   },
   "နိဒဓာတ်၏သန္နိဓိ": {
    "my": "နိဒဓာတ်၏ သန္နိဓိ",
-   "es": "el sentido de nida: proximidad",
+   "es": "el significado de nida: proximidad",
    "en": "the sense of nida: proximity",
    "seguridad": "B",
    "veces": 1
   },
   "ကုစ္ဆနတ္ထနှစ်ပါး": {
    "my": "ကုစ္ဆနတ္ထ နှစ်ပါး",
-   "es": "dos sentidos, censurar…",
+   "es": "dos significados, censurar…",
    "en": "two senses, censuring…",
    "seguridad": "C",
    "veces": 1
@@ -5025,7 +5025,7 @@
   },
   "ချမ်းသာခြင်းအနက်": {
    "my": "ချမ်းသာခြင်းအနက်",
-   "es": "sentido de felicidad",
+   "es": "significado de felicidad",
    "en": "sense of happiness",
    "seguridad": "A",
    "veces": 1
@@ -5214,7 +5214,7 @@
   },
   "ဗရဟဓာတ်ကဲ့သို့၄-နက်": {
    "my": "ဗရဟဓာတ်ကဲ့သို့ ၄-နက်",
-   "es": "cuatro sentidos, como la raíz baraha",
+   "es": "cuatro significados, como la raíz baraha",
    "en": "four senses, like the root baraha",
    "seguridad": "A",
    "veces": 1
@@ -5683,7 +5683,7 @@
   },
   "ထိုကက္ကနသာဌေယျနှစ်နက်": {
    "my": "ထိုကက္ကနသာဌေယျ နှစ်နက်",
-   "es": "esos dos sentidos: pulverizar y engañar",
+   "es": "esos dos significados: pulverizar y engañar",
    "en": "those two senses: pulverizing and deceiving",
    "seguridad": "B",
    "veces": 1
@@ -5942,7 +5942,7 @@
   },
   "ဘူသနနိဝါရဏသမတ္ထဟူသောအလံအနက်သုံးပါး": {
    "my": "ဘူသန နိဝါရဏ သမတ္ထ ဟူသော အလံအနက် သုံးပါး",
-   "es": "los tres sentidos de alaṃ: adorno, prohibición, capacidad",
+   "es": "los tres significados de alaṃ: adorno, prohibición, capacidad",
    "en": "the three senses of alaṃ: ornament, prohibition, ability",
    "seguridad": "A",
    "veces": 1
@@ -6089,7 +6089,7 @@
   },
   "လကဓာတ်၏အနက်နှစ်ခု": {
    "my": "လကဓာတ်၏ အနက်နှစ်ခု",
-   "es": "los dos sentidos de la raíz laka",
+   "es": "los dos significados de la raíz laka",
    "en": "the two senses of the root laka",
    "seguridad": "A",
    "veces": 1
@@ -6131,7 +6131,7 @@
   },
   "အနက်မရှိသောစကားကိုပရမ်းပတာဆိုခြင်း": {
    "my": "အနက်မရှိသော စကားကို ပရမ်းပတာ ဆိုခြင်း",
-   "es": "hablar sin sentido",
+   "es": "hablar sin significado",
    "en": "prattling",
    "seguridad": "A",
    "veces": 1
@@ -6229,7 +6229,7 @@
   },
   "ဘူသနဝါရဏသာမတ္ထိယသုံးပါးဟူသောအလံအနက်": {
    "my": "ဘူသနဝါရဏ သာမတ္ထိယ သုံးပါးဟူသော အလံအနက်",
-   "es": "los tres sentidos de alaṃ: adorno, prohibición, capacidad",
+   "es": "los tres significados de alaṃ: adorno, prohibición, capacidad",
    "en": "the three senses of alaṃ: ornament, prohibition, ability",
    "seguridad": "A",
    "veces": 1
@@ -6292,7 +6292,7 @@
   },
   "စုရာဒိဂဏိကလဇိဓာတ်၏အနက်": {
    "my": "စုရာဒိဂဏိက လဇိဓာတ်၏ အနက်",
-   "es": "el sentido de la raíz laji, de la clase curādi",
+   "es": "el significado de la raíz laji, de la clase curādi",
    "en": "the sense of the root laji, of the curādi class",
    "seguridad": "A",
    "veces": 1
@@ -6376,14 +6376,14 @@
   },
   "ထိုအနက်": {
    "my": "ထိုအနက်",
-   "es": "ese sentido",
+   "es": "ese significado",
    "en": "that sense",
    "seguridad": "C",
    "veces": 1
   },
   "သစ်ခွံအနက်": {
    "my": "သစ်ခွံ အနက်",
-   "es": "sentido de corteza",
+   "es": "significado de corteza",
    "en": "sense of bark",
    "seguridad": "A",
    "veces": 1
@@ -6439,14 +6439,14 @@
   },
   "ဆောင်ခြင်းအနက်": {
    "my": "ဆောင်ခြင်းအနက်",
-   "es": "sentido de llevar",
+   "es": "significado de llevar",
    "en": "sense of bearing",
    "seguridad": "A",
    "veces": 1
   },
   "အညာဟူသောအနက်": {
    "my": "အညာဟူသော အနက်",
-   "es": "sentido de «añā»",
+   "es": "significado de «añā»",
    "en": "sense of añā",
    "seguridad": "C",
    "veces": 1
@@ -6502,7 +6502,7 @@
   },
   "ထဝအနက်နှစ်ပါး": {
    "my": "ထဝ အနက်နှစ်ပါး",
-   "es": "los dos sentidos: alabar",
+   "es": "los dos significados: alabar",
    "en": "the two senses: praising",
    "seguridad": "B",
    "veces": 1
@@ -6796,7 +6796,7 @@
   },
   "အခါဟူသောအနက်": {
    "my": "အခါဟူသော အနက်",
-   "es": "sentido de tiempo",
+   "es": "significado de tiempo",
    "en": "sense of time",
    "seguridad": "A",
    "veces": 1
@@ -6873,7 +6873,7 @@
   },
   "ကျင်နာခြင်းအနက်": {
    "my": "ကျင်နာခြင်းအနက်",
-   "es": "sentido de dolor",
+   "es": "significado de dolor",
    "en": "sense of pain",
    "seguridad": "A",
    "veces": 1
@@ -7230,7 +7230,7 @@
   },
   "ဤဂတိအနက်": {
    "my": "ဤဂတိအနက်",
-   "es": "este sentido de ir",
+   "es": "este significado de ir",
    "en": "this sense of going",
    "seguridad": "A",
    "veces": 1
@@ -7887,5 +7887,8 @@
    "en": "going, disrespecting",
    "seguridad": "A"
   }
- }
+ },
+ "publicar_borrador": true,
+ "publicar_borrador_por": "IEBH",
+ "publicar_borrador_fecha": "2026-10-10"
 }
