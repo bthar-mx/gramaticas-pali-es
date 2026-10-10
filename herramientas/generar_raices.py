@@ -252,7 +252,8 @@ def concordar_dv(datos, dv):
     con = seguras = 0
     marca = collections.defaultdict(list)
     for x in dv["entradas"]:
-        glosas = {_simple(s["pali"]) for s in x["sentidos"]}
+        glosas = {_simple(re.sub(r"\s+(ca|pi|ceva|cāpi|vā)$", "", s["pali"] or ""))
+                  for s in x["sentidos"]} | {_simple(s["pali"] or "") for s in x["sentidos"]}
         vistos, hits = set(), []
         for nombre in x["nombres"]:
             for l in _lemas_dv(nombre):
@@ -262,6 +263,8 @@ def concordar_dv(datos, dv):
                     vistos.add(r["id"])
                     hits.append({"id": r["id"], "raiz": " / ".join(r["raices"]),
                                  "glosa": r["glosa"], "ref": r["ref"],
+                                 "es": r.get("es", ""), "en": r.get("en", ""),
+                                 "ganas": sorted({x["gana"] for x in r.get("refs", [])}),
                                  "misma_glosa": _simple(r["glosa"]) in glosas})
                     marca[r["id"]].append(x["n"])
         x["sad"] = hits
@@ -314,10 +317,16 @@ def traducir_dv(datos, dv, glosas):
     for x in dv["entradas"]:
         for s in x["sentidos"]:
             s["es"] = s["en"] = s["tr"] = ""
+            s.pop("en_col", None)
             p = re.sub(r"\s+(ca|pi|ceva|cāpi|vā)$", "", s.get("pali") or "")
             par = (voc.get(_n(p)) or voc_s.get(_simple(p))) if p else None
             if par:
                 s["es"], s["en"], s["tr"] = par[0], par[1], "sad"
+                # Pedido del IEBH (2026-10-10): si la raíz del Saddanīti con
+                # esa misma glosa ya está en la columna «En el Saddanīti», la
+                # traducción se lee allí, junto a su glosa, y no se repite.
+                s["en_col"] = any(_simple(h["glosa"]) in (_simple(p), _simple(s["pali"]))
+                                  for h in x.get("sad", []))
                 n_sad += 1
                 continue
             if usar and s.get("my"):

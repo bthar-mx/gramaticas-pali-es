@@ -67,7 +67,8 @@ SITIO = os.path.join(RAIZ, "site")
 ASSETS = os.path.join(SITIO, "assets")
 
 # Los tipos, en el orden en que salen los grupos de resultados.
-TIPOS = ("suttas", "glosario", "raices", "paradigmas", "recursos")
+TIPOS = ("suttas", "glosario", "raices", "dhatupatha", "dhatvattha",
+         "dhatvattha_versos", "paradigmas", "recursos")
 
 # Las páginas de una sola URL que entienden ?lang=en; las demás siguen la
 # lengua guardada (pali_lang).
@@ -82,7 +83,8 @@ T = {
     "es": {
         "titulo": "Buscar en el sitio",
         "titulo_pagina": "Buscar · Gramáticas Pāḷi",
-        "descripcion": "Búsqueda en todo el sitio: suttas, glosario, raíces, "
+        "descripcion": "Búsqueda en todo el sitio: suttas, glosario, raíces "
+                       "(Saddanīti, Dhātupāṭha y Dhātvatthasaṅgaha), "
                        "paradigmas y recursos.",
         # La explicación que llevaba la caja grande de la portada, que se quitó
         # (pedido del IEBH, 2026-10-08): la caja de la barra es la única.
@@ -102,7 +104,8 @@ T = {
     "en": {
         "titulo": "Search the site",
         "titulo_pagina": "Search · Pāḷi Grammars",
-        "descripcion": "Search the whole site: suttas, glossary, roots, "
+        "descripcion": "Search the whole site: suttas, glossary, roots "
+                       "(Saddanīti, Dhātupāṭha and Dhātvatthasaṅgaha), "
                        "paradigms and resources.",
         "intro": "A number takes you to that sutta's page ({n} published). "
                  "A word, in Pāḷi or English, with or without diacritics, is "
@@ -122,7 +125,11 @@ T = {
 # Lo que buscar.js escribe: van en el atributo data-textos de la página.
 TEXTOS_JS = {
     "es": {
-        "grupos": {"suttas": "Suttas", "glosario": "Glosario", "raices": "Raíces",
+        "grupos": {"suttas": "Suttas", "glosario": "Glosario",
+                   "raices": "Raíces · Saddanīti",
+                   "dhatupatha": "Raíces · Dhātupāṭha",
+                   "dhatvattha": "Raíces · Dhātvatthasaṅgaha",
+                   "dhatvattha_versos": "Versos del Dhātvatthasaṅgaha",
                    "paradigmas": "Paradigmas", "recursos": "Recursos"},
         "borrador": "borrador",
         "cargando": "Cargando el índice…",
@@ -136,7 +143,11 @@ TEXTOS_JS = {
         "quedan": "de {n}",
     },
     "en": {
-        "grupos": {"suttas": "Suttas", "glosario": "Glossary", "raices": "Roots",
+        "grupos": {"suttas": "Suttas", "glosario": "Glossary",
+                   "raices": "Roots · Saddanīti",
+                   "dhatupatha": "Roots · Dhātupāṭha",
+                   "dhatvattha": "Roots · Dhātvatthasaṅgaha",
+                   "dhatvattha_versos": "Verses of the Dhātvatthasaṅgaha",
                    "paradigmas": "Paradigms", "recursos": "Resources"},
         "borrador": "draft",
         "solo_es": "No English text yet",
@@ -299,6 +310,102 @@ def raices(lengua):
     return out
 
 
+# ------------------------------------------- Dhātupāṭha y Dhātvatthasaṅgaha
+#
+# Sesión 66, pedido del IEBH: las otras dos obras de la pestaña de raíces
+# entran en el índice, cada una en su grupo. Sólo lo publicado y cotejado:
+# del Dhātvatthasaṅgaha, el significado pāḷi y, cuando coincide con una glosa
+# del Saddanīti, la traducción de Nandisena; las traducciones en borrador de
+# las glosas birmanas NO entran (como los demás borradores, que no se
+# indexan) hasta que el IEBH firme el glosario. Las traducciones salen de las
+# mismas funciones que usa generar_raices.py, para que digan lo mismo.
+
+_OBRAS = {}
+_GANAS = ("bhūvādi", "rudhādi", "divādi", "svādi", "kiyādi", "gahādi",
+          "tanādi", "curādi")
+
+
+def _obras():
+    if _OBRAS:
+        return _OBRAS
+    import generar_raices as GR
+    datos = json.load(open(GR.DATOS, encoding="utf-8"))
+    if os.path.exists(GR.DHATUPATHA):
+        dp = json.load(open(GR.DHATUPATHA, encoding="utf-8"))
+        ingles = (json.load(open(GR.DP_INGLES, encoding="utf-8"))
+                  if os.path.exists(GR.DP_INGLES) else None)
+        GR.traducir_dp(datos, dp, ingles)
+        _OBRAS["dp"] = dp
+    if os.path.exists(GR.DHATVATTHA):
+        dv = json.load(open(GR.DHATVATTHA, encoding="utf-8"))
+        glosas = (json.load(open(GR.DV_GLOSAS, encoding="utf-8"))
+                  if os.path.exists(GR.DV_GLOSAS) else None)
+        GR.concordar_dv(datos, dv)
+        GR.traducir_dv(datos, dv, glosas)
+        _OBRAS["dv"] = dv
+    return _OBRAS
+
+
+def dhatupatha(lengua):
+    dp = _obras().get("dp")
+    if not dp:
+        return []
+    out = []
+    for i, x in enumerate(dp["entradas"]):
+        tr = x.get("en") if lengua == "en" else x.get("es")
+        texto = x["glosa"] + (" — " + tr if tr else "")
+        ref = "nº {0}{1}, gaṇa {2}".format(x["n"], x.get("sufijo", ""), x.get("gana", ""))
+        out.append(["dhatupatha", x["raiz"], corto(texto) + " · " + ref,
+                    "recursos/raices/#dp{0}".format(i),
+                    ""])
+    return out
+
+
+def dhatvattha(lengua):
+    dv = _obras().get("dv")
+    if not dv:
+        return []
+    out = []
+    for i, x in enumerate(dv["entradas"]):
+        partes = []
+        for s in x["sentidos"]:
+            t = s.get("pali") or ""
+            if s.get("tr") == "sad":         # sólo lo que no es borrador
+                tr = s.get("en") if lengua == "en" else s.get("es")
+                if tr:
+                    t += " — " + tr.rstrip(".")
+            if t:
+                partes.append(t)
+        ref = ["v. {0}".format(x["verso"])] if x.get("verso") else []
+        if x.get("gana"):
+            ref.insert(0, " · ".join(_GANAS[n - 1] for n in x["gana"]))
+        ref.append("p. {0}".format(x["pagina"]))
+        texto = corto("; ".join(partes)) if partes else ""
+        texto = (texto + " · " if texto else "") + ", ".join(ref[1:] if x.get("gana") else ref)
+        if x.get("gana"):
+            texto += " · " + ref[0]
+        titulo = " / ".join(x["nombres"]) if x.get("nombres") else x["raiz"]
+        out.append(["dhatvattha", titulo, texto,
+                    "recursos/raices/#dv{0}".format(i),
+                    claves(x["raiz"], quitar=titulo + " " + texto)])
+    return out
+
+
+def dhatvattha_versos(lengua):
+    dv = _obras().get("dv")
+    if not dv:
+        return []
+    out = []
+    for v in dv.get("versos", []):
+        texto = " / ".join(v["lineas"])
+        extra = " ".join(t for t in (v.get("cierre"), v.get("kanda_fin")) if t)
+        out.append(["dhatvattha_versos", "v. {0}".format(v["n"]),
+                    corto(texto, 220),
+                    "recursos/raices/#dvv{0}".format(v["n"]),
+                    claves(texto, extra, quitar=corto(texto, 220))])
+    return out
+
+
 # ---------------------------------------------------------------- paradigmas
 
 
@@ -455,6 +562,8 @@ def main():
     informe = []
     for lengua in ("es", "en"):
         entradas = (suttas(lengua, secc) + glosario(lengua, glos) + raices(lengua)
+                    + dhatupatha(lengua) + dhatvattha(lengua)
+                    + dhatvattha_versos(lengua)
                     + paradigmas(lengua) + recursos(lengua))
         for e in entradas:
             e[0] = TIPOS.index(e[0])
