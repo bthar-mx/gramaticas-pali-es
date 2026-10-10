@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
-<title>Raíces pāḷi · Saddanīti, Dhātupāṭha y Dhātumañjūsā</title>
-<meta name="version" content="1.6">
-<meta name="version-date" content="2026-09-07">
+<title>Raíces pāḷi · Saddanīti, Dhātupāṭha, Dhātumañjūsā y Dhātvatthasaṅgaha</title>
+<meta name="version" content="1.7">
+<meta name="version-date" content="2026-10-10">
 <meta name="description" content="Las 1.698 raíces pāḷi del Saddanīti Dhātumālā comparadas con las del Pāṇinīya-Dhātupāṭha, del libro «Pali Roots in Saddanīti» del Venerable U Sīlānanda, editado por Bhikkhu Nandisena.">
 <style>
 /* La paleta, la letra, el bloque del título, el índice lateral, la barra
@@ -220,6 +220,36 @@ html[data-theme=dark] .dp-grupo{background:rgba(240,154,136,.14)}
 .prestado{font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.06em;
   color:var(--accent);margin-left:6px;vertical-align:1px;cursor:help}
 
+/* ---------- Dhātvatthasaṅgaha ---------- */
+.dv-marca{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.08em;
+  color:var(--haritala);border:1px solid currentColor;border-radius:2px;
+  padding:1px 4px;margin-left:5px;vertical-align:2px;cursor:help;white-space:nowrap}
+.dv-fila{border-top:1px solid var(--border);display:grid;
+  grid-template-columns:minmax(120px,.8fr) minmax(0,1.6fr) minmax(0,1.2fr);
+  gap:0 20px;padding:11px 0;align-items:start;scroll-margin-top:var(--barra,74px)}
+.dv-fila:last-child{border-bottom:1px solid var(--border)}
+.dv-fila:hover{background:var(--hover)}
+.dv-fila .raiz{font-size:19px;cursor:auto}
+.my{font-family:"Noto Sans Myanmar","Myanmar Sangam MN","Myanmar MN","Padauk","Myanmar Text",sans-serif;
+  font-style:normal;line-height:1.75}
+.dv-margen{font-size:15px;color:var(--text2);display:block;margin-top:1px}
+.dv-sent{margin:0 0 4px}
+.dv-sent .my{display:block;font-size:14.5px;color:var(--text2)}
+.dv-sent+.dv-sent{border-top:1px dashed var(--border);padding-top:4px}
+.dv-ref{font-family:var(--mono);font-size:10.5px;color:var(--text2);letter-spacing:.04em;margin-top:3px}
+.dv-duda{display:inline-block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.06em;
+  color:var(--rakta);border:1px solid currentColor;border-radius:2px;padding:0 4px;
+  margin-left:6px;vertical-align:2px;cursor:help}
+.dv-comparte{font-size:13px;color:var(--text2);font-style:italic}
+.dv-fila .borrador{margin-top:4px;cursor:help}
+.dv-sad{list-style:none;margin:0;padding:0;font-size:14px}
+.dv-sad li{margin:0 0 3px}
+@media (max-width:900px){
+  .dv-fila{grid-template-columns:minmax(110px,1fr) minmax(0,2fr)}
+  .dv-fila>:nth-child(3){grid-column:1/-1;margin-top:6px}
+}
+@media (max-width:640px){.dv-fila{grid-template-columns:1fr;gap:5px}}
+
 /* ---------- Dhātumañjūsā ---------- */
 .dm-marca{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.08em;
   color:var(--accent);border:1px solid currentColor;border-radius:2px;
@@ -301,7 +331,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <aside class="sidebar" id="sidebar" aria-label="Índice alfabético">
   <button class="sb-close" id="sbclose" aria-label="Ocultar el índice"
     data-tip="Ocultar el índice|Aparta el índice y el texto ocupa su sitio. El ☰ se queda en su sitio para devolverlo.">☰</button>
-  <div class="sb-brand"><b><span class="i-es">Raíces pāḷi</span><span class="i-en">Pāḷi roots</span></b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā</span></div>
+  <div class="sb-brand"><b><span class="i-es">Raíces pāḷi</span><span class="i-en">Pāḷi roots</span></b><span class="lbl">Saddanīti · Dhātupāṭha · Dhātumañjūsā · Dhātvatthasaṅgaha</span></div>
   <div class="sb-tit" id="abc-tit"></div>
   <div class="abc" id="abc"></div>
   <div class="secs" id="secs"></div>
@@ -312,6 +342,17 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   <i>Dhātupāṭha</i> does not go in alphabetical order but in that of its edition:
   nine gaṇa sections, and within each one the roots by initial. That is why the
   same letter comes back in every section, and the index is one of sections.</span></p>
+
+  <p class="sb-nota" id="sb-dv-nota" style="display:none"><span class="i-es">El
+  <i>Dhātvatthasaṅgaha</i> va en su orden, que es el de sus siete kaṇḍas: las
+  raíces que empiezan por vocal, por <i>k</i>, por <i>kh</i> y las tres letras
+  siguientes, por la ca- y la ṭa-vagga, por la ta-vagga, por la pa-vagga y por
+  el resto. El número es el de raíces de cada kaṇḍa, el que declara el
+  libro.</span><span class="i-en">The <i>Dhātvatthasaṅgaha</i> goes in its own
+  order, that of its seven kaṇḍas: roots beginning with a vowel, with <i>k</i>,
+  with <i>kh</i> and the three following letters, with the ca- and ṭa-vagga,
+  the ta-vagga, the pa-vagga and the rest. The number is the count of roots in
+  each kaṇḍa, the one the book declares.</span></p>
 
   <div id="sb-dm" style="display:none">
     <div class="sb-tit"><span class="i-es">La Dhātumañjūsā</span><span class="i-en">The Dhātumañjūsā</span></div>
@@ -338,14 +379,14 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <rc-titulo>
   <rc-ceja>Instituto de Estudios Buddhistas Hispano</rc-ceja>
   <rc-h1><span class="i-es">Ra<span class="dia">í</span>ces p<span class="dia">ā</span>ḷi</span><span class="i-en">P<span class="dia">ā</span>ḷi roots</span></rc-h1>
-  <rc-sub><i>Saddanīti-dhātumālā</i> · <i>Dhātupāṭha</i> · <i>Dhātumañjūsā</i></rc-sub>
+  <rc-sub><i>Saddanīti-dhātumālā</i> · <i>Dhātupāṭha</i> · <i>Dhātumañjūsā</i> · <i>Dhātvatthasaṅgaha</i></rc-sub>
   <rc-desc><span class="i-es">Las raíces del <i>Saddanīti</i> cotejadas una a una con las del
       <i>Pāṇinīya-dhātupāṭha</i> <span class="por">(cotejo del Ven. U Sīlānanda)</span>,
-      y junto a ellas las otras dos listas clásicas de raíces pāḷi:
-      <i>Dhātupāṭha</i> y <i>Dhātumañjūsā</i> en verso.</span><span class="i-en">The roots of the <i>Saddanīti</i> compared one by one with those of the
+      y junto a ellas otras tres listas clásicas de raíces pāḷi:
+      <i>Dhātupāṭha</i>, <i>Dhātumañjūsā</i> en verso y <i>Dhātvatthasaṅgaha</i> con su <i>nissaya</i> birmano.</span><span class="i-en">The roots of the <i>Saddanīti</i> compared one by one with those of the
       <i>Pāṇinīya-dhātupāṭha</i> <span class="por">(comparison by Ven. U Sīlānanda)</span>,
-      and beside them the other two classical lists of Pāḷi roots:
-      the <i>Dhātupāṭha</i> and the <i>Dhātumañjūsā</i> in verse.</span></rc-desc>
+      and beside them three other classical lists of Pāḷi roots:
+      the <i>Dhātupāṭha</i>, the <i>Dhātumañjūsā</i> in verse and the <i>Dhātvatthasaṅgaha</i> with its Burmese <i>nissaya</i>.</span></rc-desc>
   <rc-insignias><span class="version-badge" id="vbadge"></span></rc-insignias>
   <rc-lado><div class="hero" id="hero" aria-hidden="true"></div></rc-lado>
 </rc-titulo>
@@ -376,6 +417,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
     <button role="tab" id="tab-significados" aria-selected="false" data-tab="significados"><span class="i-es">Significados</span><span class="i-en">Meanings</span> <span id="n-significados"></span></button>
     <button role="tab" id="tab-dhatupatha" aria-selected="false" data-tab="dhatupatha">Dhātupāṭha <span id="n-dhatupatha"></span></button>
     <button role="tab" id="tab-dhatumanjusa" aria-selected="false" data-tab="dhatumanjusa">Dhātumañjūsā <span id="n-dhatumanjusa"></span></button>
+    <button role="tab" id="tab-dhatvattha" aria-selected="false" data-tab="dhatvattha">Dhātvatthasaṅgaha <span id="n-dhatvattha"></span></button>
    </div>
    <a class="fuera" id="a-verbo" href="../verbo/" hidden><span class="i-es">El verbo</span><span class="i-en">The verb</span> <span class="flecha">↗</span></a>
   </div>
@@ -427,6 +469,26 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   que van bajo cada estrofa con el número de raíz al que se refieren. La marca
   <span class="dm-marca">DM</span> junto a una raíz señala las estrofas que la nombran
   <b>literalmente</b>: es una coincidencia de palabra, no una identificación.</p>
+
+  <p><strong>El Dhātvatthasaṅgaha.</strong> La quinta pestaña es el
+  <i>Dhātvatthasaṅgaha</i> con su <i>nissaya</i> birmano, del Mahāvisuddhārāma
+  Sayadaw (Bhaddanta Visuddhācāra), en la sexta impresión (2008) que guarda la
+  biblioteca electrónica del Ministerio de Asuntos Religiosos de Myanmar (KBRL,
+  nº 001288). Sus 1.637 raíces van en el orden del libro, por sus siete kaṇḍas, y
+  la cifra de cada kaṇḍa es la que el libro declara. La raíz es la del margen,
+  <b>vista en la imagen</b>, en birmano y en la romanización del CST; dieciocho
+  lecturas que la imagen no decide llevan <span class="dv-duda">?</span>. Las
+  diez raíces de las pp. 262-263, que faltan en el escaneo, se leen en el ejemplar
+  en papel del IEBH, séptima impresión, y se citan con su página. El sentido es
+  el que da el <i>nissaya</i>: el pāḷi, en romanización, y la glosa birmana tal
+  cual, sin traducir. Donde el sentido pāḷi coincide letra a letra con una glosa
+  del <i>Saddanīti</i>, lleva además el español de Nandisena y el inglés de esa
+  edición, con el rótulo <span class="prestado">Sad</span>: es traducción prestada
+  del pāḷi, no de la glosa birmana. El sentido está <b>cotejado con la imagen</b>, y donde un rasgo
+  no se decide ahí lleva <span class="dv-duda">?</span>. Las diez raíces de la
+  séptima impresión van todavía <span class="borrador">sin cotejar</span>. De la obra sólo se publica
+  raíz, sentido y página. El cruce con el Saddanīti es, como el del Dhātupāṭha,
+  sólo por lema.</p>
 
   <p><strong>Los significados del Dhātupāṭha.</strong> Andersen y Smith no traducen: su
   entrada trae la raíz y la glosa pāḷi, nada más. El inglés que se muestra procede de la
@@ -492,6 +554,26 @@ return /^en\b/i.test(n)?'en':'es';}</script>
   alone</b>: one and the same root may appear in the two works with different senses, and
   it is not for this page to decide which is which. Where the meaning also coincides it is
   indicated, and that is the correspondence that may be taken as certain: 229 of 675.</p>
+
+  <p><strong>The Dhātvatthasaṅgaha.</strong> The fifth tab is the
+  <i>Dhātvatthasaṅgaha</i> with its Burmese <i>nissaya</i> by the Mahāvisuddhārāma
+  Sayadaw (Bhaddanta Visuddhācāra), in the sixth printing (2008) held by the
+  e-library of Myanmar’s Ministry of Religious Affairs (KBRL, no. 001288). Its
+  1,637 roots go in the book’s order, by its seven kaṇḍas, and the figure for each
+  kaṇḍa is the one the book declares. The root is the one in the margin, <b>seen in
+  the image</b>, in Burmese and in the CST romanisation; eighteen readings the
+  image does not settle carry <span class="dv-duda">?</span>. The ten roots of
+  pp. 262-263, missing from the scan, are read in the IEBH’s paper copy, seventh
+  printing, and cited with its page. The meaning is the one the <i>nissaya</i>
+  gives: the Pāḷi, romanised, and the Burmese gloss as it stands, untranslated.
+  Where the Pāḷi meaning matches a <i>Saddanīti</i> gloss letter for letter, it
+  also carries Nandisena’s Spanish and that edition’s English, labelled
+  <span class="prestado">Sad</span>: a borrowed translation of the Pāḷi, not of the
+  Burmese gloss. The meaning is <b>checked against the image</b>, and where a feature cannot be
+  settled there it carries <span class="dv-duda">?</span>. The ten roots of the
+  seventh printing are still <span class="borrador">not checked</span>. Only root, meaning and page are published
+  from the work. The match with the Saddanīti is, like the Dhātupāṭha’s, by lemma
+  only.</p>
 
   <p><strong>The Dhātumañjūsā.</strong> The fourth tab is the
   <i>Kaccāyana-Dhātumañjūsā</i>, attributed to Sīlavaṃsa: the same list of roots
@@ -571,7 +653,7 @@ let IDIOMA = paliLang();
 if (IDIOMA === 'en') { document.body.classList.add('en'); document.documentElement.lang = 'en'; }
 const TXT = {
   es: {
-    doc_titulo: 'Raíces pāḷi · Saddanīti, Dhātupāṭha y Dhātumañjūsā',
+    doc_titulo: 'Raíces pāḷi · Saddanīti, Dhātupāṭha, Dhātumañjūsā y Dhātvatthasaṅgaha',
     hero_alt: 'Raíces pāḷi · Instituto de Estudios Buddhistas Hispano',
     hero: [['paca','cocinar'],['gamu','ir'],['ñā','conocer'],
            ['bhū','ser, existir'],['kara','hacer'],['dhara','sostener']],
@@ -585,6 +667,21 @@ const TXT = {
     vacio_1: 'Nada que responda a esa búsqueda.',
     vacio_2: 'Prueba con menos letras, o sin diacríticos.',
     dp_tit: 'Dhātupāṭha por secciones',
+    dv_tit: 'Dhātvatthasaṅgaha por kaṇḍas',
+    ph_dhatvattha: 'Buscar en el Dhātvatthasaṅgaha — «ako», «gatiyaṃ», «သွားခြင်း»…',
+    dv_pag: 'p. ', dv_verso: 'v. ', dv_7a: '7.ª impr.',
+    t_dv_7a: 'Séptima impresión|Las pp. 262-263 faltan en el escaneo (6.ª impresión); esta raíz se lee en el ejemplar en papel del IEBH, 7.ª impresión, que pagina de otro modo: la página citada es la de la 7.ª.',
+    t_dv_duda: 'Lectura dudosa|La imagen no decide un rasgo de la letra en el margen. Se deja la lectura que favorecen el verso y los demás testigos; queda por cotejar en el papel. ',
+    dv_borrador: 'sin cotejar',
+    t_dv_borrador: 'Sin cotejar|Esta raíz está en las pp. 262-263, que faltan en el escaneo; se lee en la 7.ª impresión y su sentido todavía no se ha cotejado.',
+    t_dv_sduda: 'Sentido dudoso|Se cotejó con la imagen de la página, pero un rasgo no se decide ahí: ',
+    t_dv_sad: 'Traducción prestada|El sentido pāḷi es letra a letra una glosa del Saddanīti; el español es el que Nandisena le da en «Pali Roots in Saddanīti», y el inglés, el de esa misma edición. No es traducción de la glosa birmana.',
+    dv_comparte: 'el sentido lo da con la raíz siguiente: ',
+    dv_sin_sentido: 'sin sentido extraído',
+    dv_sad_tit: 'Saddanīti', dv_sin_sad: 'sin lema igual en el Saddanīti',
+    t_dv_1: 'Dhātvatthasaṅgaha|También en el Dhātvatthasaṅgaha, entrada ',
+    t_dv_2: '. El cruce es sólo por lema.',
+    t_dv_lema: 'Cruce por lema|Mismo lema en el Saddanīti. No dice por sí solo que sea la misma raíz con el mismo sentido.',
     ph_raices: 'Buscar raíz o significado — «paca», «gam», «cocinar», «gatyatthe»…',
     ph_significados: 'Buscar un sentido — «ir», «hablar», «gatiyaṃ», «hiṃsā»…',
     ph_dhatupatha: 'Buscar en el Dhātupāṭha — «bhū», «pāke», «cutting»…',
@@ -629,15 +726,17 @@ const TXT = {
       raices: 'Raíces del Saddanīti|Las 1.698 raíces de la Dhātumālā del Saddanīti, cotejadas por el Ven. U Sīlānanda con las del Pāṇinīya-dhātupāṭha. Es la obra principal de esta página.',
       significados: 'Del sentido a la raíz|El índice inverso de la misma obra: 776 significados, y bajo cada uno las raíces que lo expresan. Para cuando se sabe el sentido y se busca la raíz.',
       dhatupatha: 'Dhātupāṭha pāḷi|Otra obra: las 639 raíces del Dhātupāṭha en la edición de Andersen y Smith (1921), con sus notas críticas. Su numeración de grupos no es la del Saddanīti.',
-      dhatumanjusa: 'Dhātumañjūsā|La misma lista de raíces puesta en verso: 154 estrofas en śloka, atribuidas a Sīlavaṃsa. Va como texto, porque en el verso la raíz y su significado están encajados en el metro.'
+      dhatumanjusa: 'Dhātumañjūsā|La misma lista de raíces puesta en verso: 154 estrofas en śloka, atribuidas a Sīlavaṃsa. Va como texto, porque en el verso la raíz y su significado están encajados en el metro.',
+      dhatvattha: 'Dhātvatthasaṅgaha|Otra obra: las 1.637 raíces del Dhātvatthasaṅgaha, con el sentido que les da el nissaya birmano del Mahāvisuddhārāma Sayadaw. Sólo raíz, sentido y página, vistos en la imagen.'
     },
     plural: {raices: ['raíz','raíces','ninguna raíz'],
              significados: ['significado','significados','ningún significado'],
              dhatupatha: ['entrada','entradas','ninguna entrada'],
-             dhatumanjusa: ['estrofa','estrofas','ninguna estrofa']}
+             dhatumanjusa: ['estrofa','estrofas','ninguna estrofa'],
+             dhatvattha: ['entrada','entradas','ninguna entrada']}
   },
   en: {
-    doc_titulo: 'Pāḷi roots · Saddanīti, Dhātupāṭha and Dhātumañjūsā',
+    doc_titulo: 'Pāḷi roots · Saddanīti, Dhātupāṭha, Dhātumañjūsā and Dhātvatthasaṅgaha',
     hero_alt: 'Pāḷi roots · Instituto de Estudios Buddhistas Hispano',
     hero: [['paca','cooking'],['gamu','going'],['ñā','knowing'],
            ['bhū','being, existing'],['kara','doing'],['dhara','holding']],
@@ -651,6 +750,21 @@ const TXT = {
     vacio_1: 'Nothing answers to that search.',
     vacio_2: 'Try fewer letters, or without diacritics.',
     dp_tit: 'Dhātupāṭha by sections',
+    dv_tit: 'Dhātvatthasaṅgaha by kaṇḍas',
+    ph_dhatvattha: 'Search the Dhātvatthasaṅgaha — “ako”, “gatiyaṃ”, “သွားခြင်း”…',
+    dv_pag: 'p. ', dv_verso: 'v. ', dv_7a: '7th pr.',
+    t_dv_7a: 'Seventh printing|Pp. 262-263 are missing from the scan (6th printing); this root is read in the IEBH’s paper copy, 7th printing, which is paginated differently: the page cited is the 7th printing’s.',
+    t_dv_duda: 'Doubtful reading|The image does not settle one feature of the letter in the margin. The reading favoured by the verse and the other witnesses is kept; it remains to be checked on paper. ',
+    dv_borrador: 'not checked',
+    t_dv_borrador: 'Not checked|This root is on pp. 262-263, missing from the scan; it is read in the 7th printing and its meaning has not yet been checked.',
+    t_dv_sduda: 'Doubtful meaning|Checked against the page image, but one feature cannot be settled there: ',
+    t_dv_sad: 'Borrowed translation|The Pāḷi meaning is letter for letter a gloss of the Saddanīti; the Spanish is the one Nandisena gives it in “Pali Roots in Saddanīti”, and the English that of the same edition. It is not a translation of the Burmese gloss.',
+    dv_comparte: 'its meaning is given with the next root: ',
+    dv_sin_sentido: 'no meaning extracted',
+    dv_sad_tit: 'Saddanīti', dv_sin_sad: 'no identical lemma in the Saddanīti',
+    t_dv_1: 'Dhātvatthasaṅgaha|Also in the Dhātvatthasaṅgaha, entry ',
+    t_dv_2: '. The match is by lemma only.',
+    t_dv_lema: 'Match by lemma|Same lemma in the Saddanīti. By itself it does not say that it is the same root with the same meaning.',
     ph_raices: 'Search root or meaning — “paca”, “gam”, “cooking”, “gatyatthe”…',
     ph_significados: 'Search a sense — “going”, “speaking”, “gatiyaṃ”, “hiṃsā”…',
     ph_dhatupatha: 'Search the Dhātupāṭha — “bhū”, “pāke”, “cutting”…',
@@ -695,12 +809,14 @@ const TXT = {
       raices: 'Roots of the Saddanīti|The 1,698 roots of the Dhātumālā of the Saddanīti, compared by Ven. U Sīlānanda with those of the Pāṇinīya-dhātupāṭha. It is the main work of this page.',
       significados: 'From the sense to the root|The reverse index of the same work: 776 meanings, and under each the roots that express it. For when the sense is known and the root is sought.',
       dhatupatha: 'Pāḷi Dhātupāṭha|Another work: the 639 roots of the Dhātupāṭha in the edition of Andersen and Smith (1921), with their critical notes. Its numbering of groups is not the Saddanīti’s.',
-      dhatumanjusa: 'Dhātumañjūsā|The same list of roots put into verse: 154 stanzas in śloka, attributed to Sīlavaṃsa. It goes as text, because in the verse the root and its meaning are fitted into the metre.'
+      dhatumanjusa: 'Dhātumañjūsā|The same list of roots put into verse: 154 stanzas in śloka, attributed to Sīlavaṃsa. It goes as text, because in the verse the root and its meaning are fitted into the metre.',
+      dhatvattha: 'Dhātvatthasaṅgaha|Another work: the 1,637 roots of the Dhātvatthasaṅgaha, with the meaning given them by the Burmese nissaya of the Mahāvisuddhārāma Sayadaw. Only root, meaning and page, seen in the image.'
     },
     plural: {raices: ['root','roots','no roots'],
              significados: ['meaning','meanings','no meanings'],
              dhatupatha: ['entry','entries','no entries'],
-             dhatumanjusa: ['stanza','stanzas','no stanzas']}
+             dhatumanjusa: ['stanza','stanzas','no stanzas'],
+             dhatvattha: ['entry','entries','no entries']}
   }
 };
 const tr = k => (TXT[IDIOMA][k] !== undefined ? TXT[IDIOMA][k] : TXT.es[k]);
@@ -827,6 +943,21 @@ DM.forEach(e => {
   e._b = fold([e.versos.join(' '), e.notas.map(n => n.texto).join(' ')].join(' '));
   e.letra = letraDe((e.versos[0] || '').split(/\s+/)[0] || '');
 });
+/* El Dhātvatthasaṅgaha va en el orden del libro, por sus siete kaṇḍas. La
+   raíz es la del margen, vista en la imagen; el sentido es todavía OCR del
+   cuerpo del nissaya, y la ficha lo dice. Se cruza con el Saddanīti por lema
+   y nada más, como el Dhātupāṭha. */
+const DV = (DATA.dhatvattha && DATA.dhatvattha.entradas) || [];
+const DV_KANDAS = (DATA.dhatvattha && DATA.dhatvattha.kandas) || {};
+const DV_CUENTA = (DATA.dhatvattha && DATA.dhatvattha.cuenta_libro) || {};
+const DV_POR_ID = {};
+DV.forEach((x, i) => {
+  x._i = i; DV_POR_ID[x.id] = x;
+  x._b = fold([x.raiz, x.raiz_my, x.nombres.join(' '),
+    x.sentidos.map(s => [s.pali, s.pali_my, s.my, s.es || '', s.en || ''].join(' ')).join(' ')].join(' '));
+});
+function dvSeccion(k){ return `${k}. ${DV_KANDAS[k] || ''}`; }
+
 function dmRango(e){
   if(!e.rangos.length) return '';
   const a = e.rangos[0][0], b = e.rangos[e.rangos.length - 1][1];
@@ -901,9 +1032,12 @@ function filaHTML(r){
   const dp = (r.dp || []).length
     ? `<span class="dp-marca" data-tip="${esc(tr('t_dp_1') + r.dp.map(dpNum).join(', ') + tr('t_dp_2'))}">DP</span>`
     : '';
+  const dv = (r.dv || []).length
+    ? `<span class="dv-marca" data-tip="${esc(tr('t_dv_1') + r.dv.join(', ') + tr('t_dv_2'))}">DV</span>`
+    : '';
   return `<div class="fila" id="r${r.id}" data-id="${r.id}">
     <div class="col-raiz">
-      <button class="raiz" data-abre="${r.id}" aria-expanded="false">${raiz}${nota}${dp}${dm}</button>
+      <button class="raiz" data-abre="${r.id}" aria-expanded="false">${raiz}${nota}${dp}${dm}${dv}</button>
       ${chip}
       <div class="refs">${refsHTML(r.refs, GANAS_PALI)}</div>
       <div class="acciones">
@@ -986,6 +1120,51 @@ function dpFilaHTML(x){
   </div>`;
 }
 
+/* De dónde viene la traducción de un sentido: «Sad» = la misma glosa pāḷi
+   en el Saddanīti, con el español de Nandisena; sin rótulo = el glosario de
+   las glosas birmanas firmado por el IEBH. */
+function dvMarca(s){
+  return s.tr === 'sad'
+    ? `<span class="prestado" data-tip="${esc(tr('t_dv_sad'))}">Sad</span>` : '';
+}
+function dvFilaHTML(x){
+  const duda = x.estado === '?'
+    ? `<span class="dv-duda" data-tip="${esc(tr('t_dv_duda') + (x.duda || ''))}">?</span>` : '';
+  const impr = x.impresion === 7
+    ? ` · <span data-tip="${esc(tr('t_dv_7a'))}">${tr('dv_7a')}</span>` : '';
+  let sent;
+  if(x.sentidos.length){
+    sent = x.sentidos.map(s =>
+      `<div class="dv-sent"><span class="glosa">${hi(s.pali)}</span>` +
+      (s.my ? `<span class="my" lang="my">${hi(s.my)}</span>` : '') +
+      (s.es ? `<div class="es">${hi(s.es)}${dvMarca(s)}</div>` : '') +
+      (s.en ? `<div class="en">${hi(s.en)}${dvMarca(s)}</div>` : '') + `</div>`).join('');
+  } else if(x.con && DV_POR_ID[x.con]){
+    const y = DV_POR_ID[x.con];
+    sent = `<div class="dv-comparte">${tr('dv_comparte')}<a href="#dv${y._i}" data-dv="${y._i}"><i>${esc(y.raiz)}</i></a></div>`;
+  } else {
+    sent = `<div class="nada">${tr('dv_sin_sentido')}</div>`;
+  }
+  const sad = x.sad.length
+    ? `<ul class="dv-sad">` + x.sad.map(h =>
+        `<li><button class="chip" data-raiz="${esc(h.raiz.split(' / ')[0])}" data-tip="${esc(tr('t_dv_lema'))}">${esc(h.raiz)}<u>${esc(h.ref)}</u></button> <i>${esc(h.glosa)}</i>` +
+        (h.misma_glosa ? `<span class="dp-cierto" data-tip="${esc(tr('t_mismo_sig'))}">${tr('mismo_sig')}</span>` : '') +
+        `</li>`).join('') + `</ul>`
+    : `<span class="nada">${tr('dv_sin_sad')}</span>`;
+  return `<div class="dv-fila" id="dv${x._i}">
+    <div class="col-raiz">
+      <div><span class="raiz">${hi(x.raiz)}</span>${duda}</div>
+      <span class="dv-margen my" lang="my">${hi(x.raiz_my)}</span>
+      <div class="dv-ref">nº ${x.n}${x.cuantas > 1 ? '–' + (x.n + x.cuantas - 1) : ''} · ${tr('dv_pag')}${esc(x.pagina)}${impr}</div>
+    </div>
+    <div class="col-sig">${sent}${x.sentido_estado === '?'
+        ? `<span class="dv-duda" data-tip="${esc(tr('t_dv_sduda') + (x.sentido_duda || ''))}">?</span>`
+        : x.sentido_estado === 'sin-imagen'
+        ? `<span class="borrador" data-tip="${esc(tr('t_dv_borrador'))}">${tr('dv_borrador')}</span>` : ''}</div>
+    <div class="col-skt">${sad}</div>
+  </div>`;
+}
+
 function dmHTML(e){
   const versos = e.versos.map(v => `<span>${hi(v)}</span>`).join('');
   const notas = e.notas.length
@@ -1017,13 +1196,14 @@ function sigHTML(s, i){
 
 function render(){
   const esRaices = pestanya === 'raices', esDP = pestanya === 'dhatupatha',
-        esDM = pestanya === 'dhatumanjusa';
+        esDM = pestanya === 'dhatumanjusa', esDV = pestanya === 'dhatvattha';
   const lista = esRaices ? DATA.raices.filter(visibleRaiz)
+    : esDV ? DV.filter(x => !q || x._b.includes(fold(q)))
     : esDP ? DP.filter(x => !q || x._b.includes(fold(q)))
     : esDM ? DM.filter(x => !q || x._b.includes(fold(q)))
     : DATA.significados.filter(visibleSig);
   const total = esRaices ? DATA.raices.length
-    : esDP ? DP.length : esDM ? DM.length : DATA.significados.length;
+    : esDV ? DV.length : esDP ? DP.length : esDM ? DM.length : DATA.significados.length;
 
   if(!lista.length){
     out.innerHTML = `<div class="empty"><p>${tr('vacio_1')}</p>
@@ -1034,10 +1214,20 @@ function render(){
   }
 
   const cuentas = new Map();
-  if(!esDM) lista.forEach(x => cuentas.set(x.letra, (cuentas.get(x.letra) || 0) + 1));
+  if(!esDM && !esDV) lista.forEach(x => cuentas.set(x.letra, (cuentas.get(x.letra) || 0) + 1));
   let h = '', letra = null, seccion = null;
   lista.forEach((x, i) => {
     if(esDM){ h += dmHTML(x); return; }
+    if(esDV){
+      if(x.kanda !== seccion){
+        seccion = x.kanda;
+        const n = lista.filter(y => y.kanda === seccion).reduce((a, y) => a + y.cuantas, 0);
+        h += `<div class="letra" id="K-${seccion}"><h2>${esc(dvSeccion(seccion))}</h2>
+          <span class="rule"></span><span class="n">${n}</span></div>`;
+      }
+      h += dvFilaHTML(x);
+      return;
+    }
 
     /* El Dhātupāṭha no va en orden alfabético: va en el de la edición, nueve
        secciones de gaṇa y dentro de cada una las iniciales. Por eso aquí las
@@ -1071,9 +1261,9 @@ function render(){
   });
   out.innerHTML = h;
   cnt.textContent = `${lista.length}${tr('de')}${total} ` +
-    tr('plural')[esRaices ? 'raices' : esDP ? 'dhatupatha'
+    tr('plural')[esRaices ? 'raices' : esDP ? 'dhatupatha' : esDV ? 'dhatvattha'
                  : esDM ? 'dhatumanjusa' : 'significados'][1];
-  if(esDP) pintarSecciones(lista); else pintarAbc(cuentas);
+  if(esDP) pintarSecciones(lista); else if(esDV) pintarKandas(lista); else pintarAbc(cuentas);
 }
 
 /* Las nueve secciones del Dhātupāṭha, con su nombre y cuántas raíces trae
@@ -1093,7 +1283,20 @@ function pintarSecciones(lista){
       `<span>${esc(nombre)}</span><u>${cuenta.get(sec)}</u></button>`;
   }).join('');
 }
+function pintarKandas(lista){
+  const cuenta = new Map();
+  lista.forEach(x => cuenta.set(x.kanda, (cuenta.get(x.kanda) || 0) + x.cuantas));
+  document.getElementById('secs').innerHTML = [...cuenta.keys()].map(k =>
+    `<button data-kanda="${k}"><i>${k}</i><span>${esc(DV_KANDAS[k] || '')}</span><u>${cuenta.get(k)}</u></button>`).join('');
+}
 document.getElementById('secs').addEventListener('click', e => {
+  const k = e.target.closest('button[data-kanda]');
+  if(k){
+    const el = document.getElementById('K-' + k.dataset.kanda);
+    if(el) saltarA(el);
+    if(innerWidth <= 900) cerrarSb();
+    return;
+  }
   const b = e.target.closest('button[data-sec]');
   if(!b) return;
   const el = document.getElementById('G-' + b.dataset.sec);
@@ -1199,6 +1402,7 @@ const ROTULOS = () => ({
   significados: [tr('sig_tit'),  tr('ph_significados')],
   dhatupatha:   [tr('dp_tit'),   tr('ph_dhatupatha')],
   dhatumanjusa: [tr('dm_tit'),   tr('ph_dhatumanjusa')],
+  dhatvattha:   [tr('dv_tit'),   tr('ph_dhatvattha')],
 });
 function cambiarPestanya(v){
   pestanya = v;
@@ -1212,13 +1416,21 @@ function cambiarPestanya(v){
   // Dhātupāṭha, y ninguno la Dhātumañjūsā, que es un poema y se lee seguido.
   const conAbc = v === 'raices' || v === 'significados';
   document.getElementById('abc').style.display = conAbc ? '' : 'none';
-  document.getElementById('secs').style.display = v === 'dhatupatha' ? '' : 'none';
+  document.getElementById('secs').style.display = (v === 'dhatupatha' || v === 'dhatvattha') ? '' : 'none';
+  document.getElementById('sb-dv-nota').style.display = v === 'dhatvattha' ? '' : 'none';
   document.getElementById('abc-tit').style.display = v === 'dhatumanjusa' ? 'none' : '';
   document.getElementById('sb-dm').style.display = v === 'dhatumanjusa' ? '' : 'none';
   document.getElementById('sb-abc-nota').style.display = conAbc ? '' : 'none';
   document.getElementById('sb-dp-nota').style.display = v === 'dhatupatha' ? '' : 'none';
   document.getElementById('q').placeholder = ROTULOS()[v][1];
 }
+out.addEventListener('click', e => {
+  const a = e.target.closest('a[data-dv]');
+  if(!a) return;
+  e.preventDefault();
+  const el = document.getElementById('dv' + a.dataset.dv);
+  if(el) saltarA(el);
+});
 document.querySelector('.tabs').addEventListener('click', e => {
   const b = e.target.closest('button[data-tab]');
   if(!b || b.dataset.tab === pestanya) return;
@@ -1338,6 +1550,11 @@ if(DP.length){
 } else {
   document.getElementById('tab-dhatupatha').remove();
 }
+if(DV.length){
+  document.getElementById('n-dhatvattha').textContent = DV.reduce((a, x) => a + x.cuantas, 0);
+} else {
+  document.getElementById('tab-dhatvattha').remove();
+}
 if(DM.length){
   document.getElementById('n-dhatumanjusa').textContent = DM.length;
 } else {
@@ -1347,8 +1564,8 @@ if(DM.length){
 /* ---------- insignia de versión ---------- */
 const VERSION = document.querySelector('meta[name=version]').content;
 const VERSION_DATE = document.querySelector('meta[name="version-date"]').content;
-const VERSION_NOTE_EN = 'The “EN” button now switches the language of the whole page and no longer merely adds the English gloss: in English mode the Spanish one is hidden, so that the two take turns instead of adding up. With that the English gloss is set like the Spanish, because in its own mode it is the principal one. The title, the opening text, the sidebar, the tabs, the filters, the row labels, the counter, the tooltips and the footer notes are in English. The Pāḷi and Sanskrit forms are not translated, nor the Pāḷi glosses, nor the references, which are the citation; nor U Sīlānanda’s Spanish and the digitisation’s English, which are the sources and are shown as they stand. The starting language is set by the reader’s system until they choose, and their choice travels to the rest of the site. Earlier versions of this page are described in the Spanish note.';
-const VERSION_NOTE = 'El botón «EN» pasa a conmutar la lengua de la página entera y no sólo a añadir la glosa inglesa: en modo inglés se esconde la española, de modo que las dos se turnan en vez de sumarse. Con ello la glosa inglesa se compone como la española, porque en su modo es la principal. Van en inglés el título, la entradilla, la barra lateral, las pestañas, los filtros, las etiquetas de fila, el contador, los globos y las notas del pie. No se traducen las formas pāḷi y sánscritas, las glosas pāḷi ni las referencias, que son la cita; ni el español de U Sīlānanda y el inglés de la digitalización, que son las fuentes y se enseñan como están. La lengua de arranque la pone el sistema del lector mientras no elija, y su elección viaja al resto del sitio. Antes, en la versión 1.5: La barra de pestañas se cierra con un enlace a «El verbo · ākhyāta». No es una pestaña y no lo aparenta: las cuatro pestañas de esta página son cuatro cuerpos de raíces, y una quinta que se fuera de la página rompería lo que aquí significa una pestaña, así que va apartada del grupo, sin el subrayado del activo y con la flecha ↗ de los enlaces salientes. Su globo dice qué hay allí y cuántas de estas raíces se conjugan; esas cifras se calculan contra la otra página cada vez que se publica, de modo que no pueden quedarse viejas. Antes, en la versión 1.4: El botón que pliega el índice pasa a ser el mismo ☰ en todas las páginas del sitio, en la esquina del propio índice. Antes, en la versión 1.3: El índice de la izquierda se pliega y se despliega, y vuelve a abrirse siempre al entrar: plegarlo es comodidad del momento, no una preferencia guardada. El Dhātupāṭha estrena índice propio, por las nueve secciones de su edición, porque no va en orden alfabético y el índice por letras repetía la misma inicial en cada sección. Antes, en la versión 1.2: Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras. Antes, en la versión 1.1: Se añade el Dhātupāṭha de Andersen y Smith y su concordancia con las raíces del Saddanīti. La 1.0 publicó las 1.698 raíces del Saddanīti-dhātumālā cotejadas con el Pāṇinīya-dhātupāṭha, y su índice inverso de significados.';
+const VERSION_NOTE_EN = 'A fifth tab: the Dhātvatthasaṅgaha with the Burmese nissaya of the Mahāvisuddhārāma Sayadaw, 1,637 roots in the book’s order by its seven kaṇḍas. Root, meaning and page only; the root (margin) and the meaning (body) have been checked against the page images, and what the image does not settle carries «?». Where the Pāḷi meaning is letter for letter a Saddanīti gloss, it carries Nandisena’s Spanish and that edition’s English, labelled «Sad»; the Burmese gloss goes untranslated for now. Each entry is matched with the Saddanīti by lemma, and the Saddanīti rows carry a «DV» mark. Before, in version 1.6: The “EN” button now switches the language of the whole page and no longer merely adds the English gloss: in English mode the Spanish one is hidden, so that the two take turns instead of adding up. With that the English gloss is set like the Spanish, because in its own mode it is the principal one. The title, the opening text, the sidebar, the tabs, the filters, the row labels, the counter, the tooltips and the footer notes are in English. The Pāḷi and Sanskrit forms are not translated, nor the Pāḷi glosses, nor the references, which are the citation; nor U Sīlānanda’s Spanish and the digitisation’s English, which are the sources and are shown as they stand. The starting language is set by the reader’s system until they choose, and their choice travels to the rest of the site. Earlier versions of this page are described in the Spanish note.';
+const VERSION_NOTE = 'Quinta pestaña: el Dhātvatthasaṅgaha con el nissaya birmano del Mahāvisuddhārāma Sayadaw, 1.637 raíces en el orden del libro, por sus siete kaṇḍas. Sólo raíz, sentido y página; la raíz (del margen) y el sentido (del cuerpo) están cotejados con la imagen de la página, y lo que la imagen no decide lleva «?». Donde el sentido pāḷi es letra a letra una glosa del Saddanīti, lleva el español de Nandisena y el inglés de esa edición, con el rótulo «Sad»; la glosa birmana va por ahora sin traducir. Cada entrada se cruza con el Saddanīti por lema, y las filas del Saddanīti llevan la marca «DV». Antes, en la versión 1.6: El botón «EN» pasa a conmutar la lengua de la página entera y no sólo a añadir la glosa inglesa: en modo inglés se esconde la española, de modo que las dos se turnan en vez de sumarse. Con ello la glosa inglesa se compone como la española, porque en su modo es la principal. Van en inglés el título, la entradilla, la barra lateral, las pestañas, los filtros, las etiquetas de fila, el contador, los globos y las notas del pie. No se traducen las formas pāḷi y sánscritas, las glosas pāḷi ni las referencias, que son la cita; ni el español de U Sīlānanda y el inglés de la digitalización, que son las fuentes y se enseñan como están. La lengua de arranque la pone el sistema del lector mientras no elija, y su elección viaja al resto del sitio. Antes, en la versión 1.5: La barra de pestañas se cierra con un enlace a «El verbo · ākhyāta». No es una pestaña y no lo aparenta: las cuatro pestañas de esta página son cuatro cuerpos de raíces, y una quinta que se fuera de la página rompería lo que aquí significa una pestaña, así que va apartada del grupo, sin el subrayado del activo y con la flecha ↗ de los enlaces salientes. Su globo dice qué hay allí y cuántas de estas raíces se conjugan; esas cifras se calculan contra la otra página cada vez que se publica, de modo que no pueden quedarse viejas. Antes, en la versión 1.4: El botón que pliega el índice pasa a ser el mismo ☰ en todas las páginas del sitio, en la esquina del propio índice. Antes, en la versión 1.3: El índice de la izquierda se pliega y se despliega, y vuelve a abrirse siempre al entrar: plegarlo es comodidad del momento, no una preferencia guardada. El Dhātupāṭha estrena índice propio, por las nueve secciones de su edición, porque no va en orden alfabético y el índice por letras repetía la misma inicial en cada sección. Antes, en la versión 1.2: Se añade la Dhātumañjūsā en verso, el significado de las entradas del Dhātupāṭha y globos de ayuda en todas las cifras. Antes, en la versión 1.1: Se añade el Dhātupāṭha de Andersen y Smith y su concordancia con las raíces del Saddanīti. La 1.0 publicó las 1.698 raíces del Saddanīti-dhātumālā cotejadas con el Pāṇinīya-dhātupāṭha, y su índice inverso de significados.';
 /* La fecha se compone a mano y no con toLocaleDateString: aquélla llevaba
    la lengua fija en 'es' y habría dado el mes en español en la página
    inglesa. Mismo patrón que /recursos/paradigmas/ (sesión 63). */

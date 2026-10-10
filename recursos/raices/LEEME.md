@@ -152,6 +152,35 @@ forma, y lo decide el IEBH en el papel. Tabla y datos, en local:
 - El sentido va **en birmano** por ahora; el español, en una pasada aparte que
   firma el IEBH.
 
+### Publicado: la quinta pestaña (sesión 66, 2026-10-10, v1.7 de la página)
+
+`recursos/raices/dhatvatthasangaha.json` (1.625 entradas, 1.637 raíces), que
+`generar_raices.py` carga como `datos.dhatvattha` y cruza con el Saddanīti por
+lema (`concordar_dv`: la forma de cita del margen con -o/-ā final se compara
+también con -a). Cada entrada: `raiz_my` (el margen), `raiz` y `nombres`
+(romanización CST), `n` y `cuantas` (el número de raíz del libro), `kanda`,
+`pagina` e `impresion` (6 o 7), `estado` (`V` / `?`, con `duda`), `sentidos`
+(`pali_my`, `pali`, `my`), `sentido_estado` y `sentido_duda`, `con` (cuando el
+libro da el sentido con la raíz siguiente: «သည်၎င်း»).
+
+**El sentido está cotejado con la imagen** (sesión 66): 1.566 entradas vistas
+`V`, 49 `?` con su motivo, y las diez de la séptima impresión `sin-imagen`. El
+registro de cada corrección (809 entradas corregidas desde la imagen) está
+fuera del repositorio, en `~/Tipitaka/nissaya/ocr/dhatvatthasangaha-nissaya/_work/sesion66/cotejo-sentidos.py`.
+Comprobación independiente: el primer sentido pāḷi aparece en el verso en
+1.325 de 1.528 entradas (87 %).
+
+**Traducción** (sesión 66): `generar_raices.py` (`traducir_dv`) pone a cada
+sentido el español de Nandisena y el inglés de su edición cuando el pāḷi
+coincide con una glosa del Saddanīti (rótulo «Sad»); si no, la glosa birmana
+frase por frase con `dhatvatthasangaha-glosas.json`, **sólo cuando el IEBH lo
+haya firmado** (`"adjudicado": true`). Lo que se añada al glosario después de
+la firma entra bajo una firma que no lo ha visto, y eso se le dice al IEBH.
+
+**No se publica todavía el número de verso**: la asignación del extractor está
+corrida en algunos versos (briefing 65, §3). La referencia publicada es la
+página.
+
 ## Procedencia y permiso
 
 Publicación difundida por un ministerio de Myanmar, en descarga libre.
