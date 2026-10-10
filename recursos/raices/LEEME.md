@@ -48,8 +48,11 @@ impresa con permiso del grupo ဂဏဝါစက de Visuddhāyuṃ), que encuade
 el Dhātvatthasaṅgaha otras obras breves (ကစ္စည်းပကာသအကောက်,
 နေတ္တိဟာရတ္ထဒီပနီသစ်, …). Sirve de segundo testigo. Su portada dice
 **သတ္တမအကြိမ်**: es la **séptima** impresión, posterior a la del escaneo
-(sexta). Que la paginación del Dhātvatthasaṅgaha sea la misma en las dos
-está **por comprobar** con una o dos páginas fotografiadas.
+(sexta). **No pagina como la sexta** (comprobado en la sesión 65 con 22
+páginas fotografiadas por el IEBH): está recompuesta, con otra caja, y lleva
+el número de cada verso como encabezado («(၂၈၄)»). Lo que en la sexta son las
+pp. 262-263 es en la séptima pp. 201-203. Una página de la séptima, por tanto,
+no se cita como si fuera de la sexta.
 
 ## Cómo está hecho el libro
 
@@ -102,8 +105,13 @@ página no es constante:
 | 276-565 | 12 | **faltan las pp. 262-263** (la 261 acaba en la entrada *မဒေါ*; la 264 abre con el verso ၂၈၆) |
 
 Las pp. 262-263 caen en las raíces en *m-* del kaṇḍa de *p-* (ma es de la
-pa-vagga): **su contenido no está en este escaneo**, y habrá que pedírselo
-al ejemplar en papel. Es la segunda cosa que conviene fotografiar de él.
+pa-vagga): **su contenido no está en este escaneo**. Se ha leído en el
+ejemplar en papel del IEBH (séptima impresión, pp. 201-203, fotos de la
+sesión 65): versos ၂၈၃-၂၈၅ con **diez raíces**, *madi, maddo, madhu, mano,
+mabbo, mabbho, mayo, maro, malo, mallo*. Con ellas el kaṇḍa 6 da los 316 del
+libro. La p. 46, en cambio, no esconde texto: el pāḷi acaba en la 45 y el
+nissaya empieza en la 47 sin que falte ningún verso; es un hueco de la
+compaginación, no del contenido.
 
 El mapa lo hace `herramientas/dhatvatthasangaha/paginar.py`: lee el
 titulillo de cada hoja con OCR, saca el número y vota el desfase. 368 hojas se
@@ -125,6 +133,14 @@ modelo `myap` renglón a renglón, **CER 4,9 % en versos y 3,0 % en nissaya**.
 Corrida completa (hojas 16-407) y extracción: §5 de ese documento. **El libro
 declara 1.637 raíces** (renglones de cierre de cada kaṇḍa: 277 en los dos
 primeros, 159, 177, 266, 316 y 442) y **445 versos**.
+
+**Verificación en la imagen (sesión 65): las 1.637, kaṇḍa por kaṇḍa.**
+1.625 renglones de entrada vistos uno a uno en la imagen (varios valen por dos
+o tres raíces unidas con ’); 22 que el extractor no había reconocido; las diez
+de las pp. 262-263, de la séptima impresión. Quedan **18 lecturas dudosas**,
+16 de ellas ယ/ဃ: en la negrita del margen las dos letras tienen la misma
+forma, y lo decide el IEBH en el papel. Tabla y datos, en local:
+`docs/fuentes/dhatvatthasangaha/verificacion.md` y `.json`.
 
 ### Qué se publica (decisión del IEBH, 2026-10-10)
 
