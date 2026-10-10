@@ -2,9 +2,9 @@
 
 Propuesta de Claude (sesión 66, 2026-10-10): **1.098 frases distintas** de las glosas birmanas del nissaya, cada una traducida una vez al español y al inglés; la página las aplica en todas las entradas donde aparecen. Fuente de datos: `recursos/raices/dhatvatthasangaha-glosas.json`. **No llegan al sitio** hasta que el IEBH ponga `"adjudicado": true` (con `adjudicado_por` y `fecha`).
 
-Seguridad: **A** segura (951) · **B** probable (109) · **C** dudosa (38). Conviene empezar por las C y las B: son las que más necesitan el ojo del IEBH. Las frases que son sólo un nombre de sentido sánscrito o una remisión a otra raíz («los dos sentidos de la raíz …») se tradujeron literalmente.
+Seguridad: **A** segura (951) · **B** probable (109) · **C** dudosa (38). Conviene empezar por las C y las B: son las que más necesitan el ojo del IEBH. Las frases que son sólo un nombre de significado sánscrito o una remisión a otra raíz («los dos significados de la raíz …») se tradujeron literalmente.
 
-Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la página usa el español de Nandisena y el inglés de esa edición (rótulo **Sad**), no esta tabla.
+Donde el significado pāḷi coincide exactamente con una glosa del *Saddanīti*, la página usa el español de Nandisena y el inglés de esa edición (rótulo **Sad**), no esta tabla.
 
 ## Dudosas (C) — 38
 
@@ -15,24 +15,24 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | မိဿနတ္ထကြဉ်သော မက္ခန | untar (excluido mezclar) | smearing (excluding mixing) |
 | 1 | ဗျတ္တိ | manifestación | manifestation |
 | 1 | ဂတိ | ir | going |
-| 1 | ကန္တိ လေးနက် | deseo, brillo: cuatro sentidos | delight: four senses |
+| 1 | ကန္တိ လေးနက် | deseo, brillo: cuatro significados | delight: four senses |
 | 1 | မြှောက်လွှတ် | alzar | raising |
 | 1 | ငြိုငြင်သဖြင့် အသက် ရှည်ခြင်း | vivir con pena | living in distress |
 | 1 | ဆွန့်ခြင်း | abandonar | giving up |
-| 1 | ပါးဟူသော အနက် | sentido de delgado | sense of thin |
-| 1 | တည်ရာအနက် | sentido de lugar | sense of place |
+| 1 | ပါးဟူသော အနက် | significado de delgado | sense of thin |
+| 1 | တည်ရာအနက် | significado de lugar | sense of place |
 | 1 | ဆုံးဖြတ်ဆွတ်ခြွေခြင်း | decidir, arrancar | deciding, plucking |
 | 1 | ချုပ်ချယ် မျက်လိုခြင်း | oprimir con ira | oppressing angrily |
 | 1 | စွန်ခြင်း | abandonar | abandoning |
 | 1 | ဇကွဲ အစရှိသော ဇစ္စဓာတ်ကဲ့သို့ ပရိဘာသန | como jacca: hablar mal | like jacca: reviling |
-| 1 | ဥတ္တိအနက် နှစ်ပါး | dos sentidos de decir | two senses of uttering |
+| 1 | ဥတ္တိအနက် နှစ်ပါး | dos significados de decir | two senses of uttering |
 | 1 | အမှတ်သညာကို ပြုလိုခြင်း | querer dar una señal | wishing to signal |
-| 1 | ဤနောက်ဖြစ်သော သွာဒိဂိုဏ်း ဝဓာခန္ဒန အနက် | los sentidos vadha y khandana, en la clase svādi que sigue | the senses vadha and khandana, in the svādi class that follows |
+| 1 | ဤနောက်ဖြစ်သော သွာဒိဂိုဏ်း ဝဓာခန္ဒန အနက် | los significados vadha y khandana, en la clase svādi que sigue | the senses vadha and khandana, in the svādi class that follows |
 | 1 | စောင့်ရှောင်ခြင်း | guardar, evitar | guarding |
 | 1 | မြဲမြံသည်၏ ဖြစ်ကြောင်း | causa de firmeza | cause of firmness |
 | 1 | မလိုအပ်သည်ကို ကျင့်ခြင်း | hacer lo innecesario | doing what is unneeded |
 | 1 | ကိုယ်ကို ပစ်လွဲခြင်း | desviar el cuerpo | swerving |
-| 1 | ကုစ္ဆနတ္ထ နှစ်ပါး | dos sentidos, censurar… | two senses, censuring… |
+| 1 | ကုစ္ဆနတ္ထ နှစ်ပါး | dos significados, censurar… | two senses, censuring… |
 | 1 | စာခြင်း | comer | eating |
 | 1 | ပြည့်စုံသည်ကို ဆို့ပိတ်ခြင်း | impedir la abundancia | obstructing abundance |
 | 1 | ဝဇိရစိန်သွင် စူးဝင်ဖောက်ထွင်းခြင်း | perforar como diamante | piercing like a diamond |
@@ -42,8 +42,8 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ဆံပြတ်ခြင်း | cortarse el pelo | cutting hair |
 | 1 | ပြသည်ကို ပြုခြင်း | hacer lo que se muestra | making a likeness |
 | 1 | ထိုဂိုဏ်း | esa clase | that class |
-| 1 | ထိုအနက် | ese sentido | that sense |
-| 1 | အညာဟူသော အနက် | sentido de «añā» | sense of añā |
+| 1 | ထိုအနက် | ese significado | that sense |
+| 1 | အညာဟူသော အနက် | significado de «añā» | sense of añā |
 | 1 | အသွားကို မပြုပြင်ခြင်း | no ordenar el andar | not regulating one’s gait |
 | 1 | အလုံးစုံ မယှဉ်ခြင်း | no unirse del todo | not joining wholly |
 | 1 | လွန်စွာဆောင်ခြင်း | llevar en exceso | carrying much |
@@ -81,7 +81,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | သွားခြင်းစသော ကြိယာမတ္တ | mera acción de ir, etc. | mere action of going, etc. |
 | 1 | ယားဖျောက် ခြင်း | rascar la comezón | scratching an itch |
 | 1 | ခေါ်တ မြည် တမ်းခြင်း | llamar y lamentarse | calling and lamenting |
-| 1 | မဒမှ တပါးသော ရောဒနာ’ဝှါန ဗျာကုလ ၃-နက် | tres sentidos, distintos de mada: llorar, llamar, turbarse | three senses besides mada: weeping, calling, agitation |
+| 1 | မဒမှ တပါးသော ရောဒနာ’ဝှါန ဗျာကုလ ၃-နက် | tres significados, distintos de mada: llorar, llamar, turbarse | three senses besides mada: weeping, calling, agitation |
 | 1 | စက်ဆုတ်ဖွယ်သော အသံကို ပြုခြင်း | emitir un sonido repugnante | making a loathsome sound |
 | 1 | သစ်စေး၏ အနံ့ | olor de la resina | smell of resin |
 | 1 | အသံ ဆိတ်ဆိတ်နေခြင်း | callar | being silent |
@@ -99,7 +99,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | တားမြစ် ပိတ်ဆို့ခြင်း ထောက်ပံ့ ခိုင်မာစေခြင်း | impedir, cerrar, sostener, afianzar | preventing, closing, supporting |
 | 1 | ဆွံခြင်း | tener el miembro rígido, cojear | being lame |
 | 1 | ကြုံးဝါးခြင်း | rugir | roaring |
-| 1 | သိနိုင်ခဲခက် ရှုပ်ထွေးသော အနက် | sentido difícil de conocer | sense hard to know |
+| 1 | သိနိုင်ခဲခက် ရှုပ်ထွေးသော အနက် | significado difícil de conocer | sense hard to know |
 | 1 | ပျံတက် ကျော်စောခြင်း | elevarse, ser famoso | rising, being famous |
 | 1 | ခြုတ်ခြယ်ရမ်းကား မျက်ထား ရန်လိုခြင်း | ser hostil, enfurecerse | being hostile |
 | 1 | အပေါင်းပြုခြင်း | agregar | adding |
@@ -107,12 +107,12 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | မျိုးနွယ်စပ်ဖွဲ့ခြင်း | unir el linaje | joining a lineage |
 | 1 | ရေဖျော်ခြင်း | disolver en agua | dissolving in water |
 | 1 | ထိုဆုဓာတ်နည်းတူ ဖြတ်ခြင်း | cortar, como la raíz chu | cutting, like the root chu |
-| 1 | ဇစ္စဓာတ်ကဲ့သို့ အနက်နှစ်ပါး | los dos sentidos de la raíz jacca | the two senses of the root jacca |
+| 1 | ဇစ္စဓာတ်ကဲ့သို့ အနက်နှစ်ပါး | los dos significados de la raíz jacca | the two senses of the root jacca |
 | 1 | စမ္ပယ် ကွန့်မြူးခြင်း | retozar con gracia | sporting gracefully |
-| 1 | ဇဗ္ဘဓာတ်ကဲ့သို့ အနက်နှစ်ပါး | los dos sentidos de la raíz jabbha | the two senses of the root jabbha |
+| 1 | ဇဗ္ဘဓာတ်ကဲ့သို့ အနက်နှစ်ပါး | los dos significados de la raíz jabbha | the two senses of the root jabbha |
 | 1 | ဇုဍဓာတ်နှင့် တူ | igual que la raíz juḍa | like the root juḍa |
 | 1 | သွားခြင်း၏ ဆုတ်နစ်ခြင်း | impedimento al andar | obstruction in going |
-| 1 | သစ်စေးဟူသော အနက် | sentido de resina | sense of resin |
+| 1 | သစ်စေးဟူသော အနက် | significado de resina | sense of resin |
 | 1 | အရေကိုယူခြင်း | tomar la piel | taking the skin |
 | 1 | ချပ်ဝတ်ခြင်း | vestir armadura | putting on armour |
 | 1 | မတ်မတ်မြင့်ခြင်း | erguirse | standing erect |
@@ -123,11 +123,11 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ကျင့်ဝတ်ငါးပါးကို ကျင့်ခြင်း | observar los cinco preceptos | observing the five precepts |
 | 1 | အတတ်သင်စေဖို့ အနီးသို့ ဆောင်ခြင်း | llevar al maestro para que aprenda | leading to a teacher for learning |
 | 1 | ကစား နေထိုင်ခြင်း | jugar, residir | playing, residing |
-| 1 | ဃောရရုတ-ဟူသော ဒထွေး ဒခိ ဓာတ်၏ အနက် | el sentido de la raíz dakhi con dos d: grito terrible | the sense of the root dakhi: fearful cry |
+| 1 | ဃောရရုတ-ဟူသော ဒထွေး ဒခိ ဓာတ်၏ အနက် | el significado de la raíz dakhi con dos d: grito terrible | the sense of the root dakhi: fearful cry |
 | 1 | လွှားခြင်း | saltar | leaping |
-| 1 | သောသနာလမတ္ထ-ဟူသော ဒထွေး ဒါခဓာတ်၏ အနက် | el sentido de la raíz dākha: secar y alaṃ | the sense of the root dākha: drying and alaṃ |
+| 1 | သောသနာလမတ္ထ-ဟူသော ဒထွေး ဒါခဓာတ်၏ အနက် | el significado de la raíz dākha: secar y alaṃ | the sense of the root dākha: drying and alaṃ |
 | 1 | မည်းနက် စိမ်းညိုခြင်း စိမ်းညိုအောင်ပြုခြင်း | ser negro azulado, ennegrecer | being dark blue, darkening |
-| 1 | နိဒဓာတ်၏ သန္နိဓိ | el sentido de nida: proximidad | the sense of nida: proximity |
+| 1 | နိဒဓာတ်၏ သန္နိဓိ | el significado de nida: proximidad | the sense of nida: proximity |
 | 1 | ယုတ်ညံ့သော သွားခြင်း | andar de modo vil | going basely |
 | 1 | အောက် လေစုန်ခြင်း | ventosear | breaking wind |
 | 1 | ချိုင့်ဝှမ်းရာ အရပ် | hondonada | hollow |
@@ -139,7 +139,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ပေါင်းယှဉ်ရောနှော လိမ်းကျံခြင်း | untar mezclando | smearing with a mixture |
 | 1 | ကောင်းကြွယ်ပွားစီးခြင်း | prosperar | flourishing |
 | 1 | ကပ်ငြိစပ်နွောခြင်း | adherirse | adhering |
-| 1 | ထိုကက္ကနသာဌေယျ နှစ်နက် | esos dos sentidos: pulverizar y engañar | those two senses: pulverizing and deceiving |
+| 1 | ထိုကက္ကနသာဌေယျ နှစ်နက် | esos dos significados: pulverizar y engañar | those two senses: pulverizing and deceiving |
 | 1 | ခါး၏ ဆန်းကြယ်ခြင်းကို ပြုခြင်း | adornar la cintura | adorning the waist |
 | 1 | လေ့လာကျွမ်းဝင် စပ်ယှဉ်ခြင်း | familiarizarse y unirse | becoming familiar |
 | 1 | တပ်ချင်းတူသော သူနှစ်ယောက်တို့၏ အမှု | acto de dos personas que se desean | act of a couple |
@@ -149,7 +149,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | လှုပ်ရှားပွတ်ခြေခြင်း | agitar y frotar | moving and rubbing |
 | 1 | ခြုတ်ခြယ်ခြင်း | molestar | annoying |
 | 1 | ကိုယ်အင်္ဂါကို မှုန့်မှုန့်ညက်ညက် ဖျက်ဆီးခြင်း | reducir el cuerpo a polvo | grinding the body to powder |
-| 1 | ထဝ အနက်နှစ်ပါး | los dos sentidos: alabar | the two senses: praising |
+| 1 | ထဝ အနက်နှစ်ပါး | los dos significados: alabar | the two senses: praising |
 | 1 | တင့်တယ်စမွယ်ခြင်း | brillar con gracia | being graceful |
 | 1 | တွန်မြည်ခြင်း | cantar (aves) | calling (of birds) |
 | 1 | ချည်ချောင်းအစဉ် | serie de hilos | series of threads |
@@ -427,7 +427,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 2 | တိုးပွားခြင်း | aumentar | increasing |
 | 2 | ရိုသေခြင်း | respetar | respecting |
 | 2 | အိပ်ပိုက်ခြင်း | dormir | sleeping |
-| 2 | ခြောက်သွေ့စေခြင်းအနက် | sentido de secar | sense of drying |
+| 2 | ခြောက်သွေ့စေခြင်းအနက် | significado de secar | sense of drying |
 | 2 | မပီမပြင် မြည်ခြင်း | sonar indistintamente | sounding indistinctly |
 | 2 | မုန်းခြင်း | odiar | hating |
 | 2 | ဖောက်ပြန်ပျက်စီးခြင်း | corromperse, arruinarse | being corrupted |
@@ -452,7 +452,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 2 | မြင်းဟီးသံ | relincho | neighing |
 | 2 | မြှောက် ချီ လွှင့်ပစ်ခြင်း | alzar y arrojar | lifting and hurling |
 | 2 | ချာ၍ လည်ခြင်း | girar | turning round |
-| 2 | ပေါင်းစုခြင်းအနက် | sentido de reunir | sense of gathering |
+| 2 | ပေါင်းစုခြင်းအနက် | significado de reunir | sense of gathering |
 | 2 | ရှိခြင်း | ser, existir | being, existing |
 | 2 | လွတ်စေခြင်း | liberar | freeing |
 | 2 | ချမ်းသာခြင်း | ser feliz | being happy |
@@ -510,11 +510,11 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ကောက်ကြွင်း စသည်ကို ရှာမှီးခြင်း | espigar | gleaning |
 | 1 | ကပ်၍ ညှဉ်းဆဲခြင်း | acosar | harassing |
 | 1 | အသင့်ဖြစ်ခြင်း | estar dispuesto | being ready |
-| 1 | ပူလောင်ခြင်းအနက် | sentido de arder | sense of burning |
+| 1 | ပူလောင်ခြင်းအနက် | significado de arder | sense of burning |
 | 1 | အပြစ်ကို ထင်စွာပြုခြင်း | manifestar la falta | showing a fault |
 | 1 | ညှဉ်းဆဲ နိုပ်စက်ခြင်း | dañar y oprimir | harming and oppressing |
 | 1 | ထက်မြက် တောက်ပခြင်း | ser agudo y brillante | being sharp and bright |
-| 1 | ထွန်းပခြင်း ဒိတ္တိ အနက် | sentido de brillar (ditti) | sense of shining (ditti) |
+| 1 | ထွန်းပခြင်း ဒိတ္တိ အနက် | significado de brillar (ditti) | sense of shining (ditti) |
 | 1 | ဖွဲ့စည်းခြင်း | organizar | organizing |
 | 1 | ပေါက်ရောက်ခြင်း | brotar | sprouting |
 | 1 | မိုးရွာသွန်းခြင်း | llover | raining |
@@ -533,7 +533,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ပုပ်နံ့လိုင်ခြင်း | oler a podrido | smelling putrid |
 | 1 | သနားကြင်နာခြင်း | compadecerse | pitying |
 | 1 | အဆင်း | color, forma | colour, form |
-| 1 | အထူးထူး အပြားပြား များသော အနက်ရှိ | de muchos sentidos | having many senses |
+| 1 | အထူးထူး အပြားပြား များသော အနက်ရှိ | de muchos significados | having many senses |
 | 1 | ခေါ်ဝေါ်ခြင်း | llamar | calling |
 | 1 | ပုဒ်ဗျည်းမထင် မပီပြင်သော စကား | habla inarticulada | inarticulate speech |
 | 1 | ကားကားဖပွင့်ခြင်း | abrirse de par en par | opening wide |
@@ -544,7 +544,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ခြိမ်းခြောက် ကြောက်စေခြင်း | amenazar y asustar | threatening, frightening |
 | 1 | ရောဂါပျောက်မှု ဆေးကုခြင်း | curar una enfermedad | healing |
 | 1 | ကြဲဖြန့်ခြင်း | esparcir | scattering |
-| 1 | များသော အနက်ရှိ | de muchos sentidos | having many senses |
+| 1 | များသော အနက်ရှိ | de muchos significados | having many senses |
 | 1 | ကုန်းခန်း လျော့ပါးခြင်း | agotarse, disminuir | dwindling |
 | 1 | ဥစ္စာလဲလှယ် ရောင်းဝယ်ခြင်း | comerciar | trading |
 | 1 | ဖံးလွမ်းခြင်း | cubrir | covering |
@@ -588,7 +588,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ဖွဲ့ကုံးစီရင်ခြင်း | componer | composing |
 | 1 | မာန်မူ ထောင်လွားခြင်း | ser altivo | being haughty |
 | 1 | သည်းခံဆိုင်းငံ့ခြင်း | soportar y contenerse | enduring patiently |
-| 1 | ဖွဲ့ကုံးစီရင်ခြင်း အနက် | sentido de componer | sense of composing |
+| 1 | ဖွဲ့ကုံးစီရင်ခြင်း အနက် | significado de componer | sense of composing |
 | 1 | မျိုခြင်း | tragar | swallowing |
 | 1 | ပင်ပန်းနွမ်းလျ မရွင်ပျခြင်း | estar fatigado y triste | being weary and joyless |
 | 1 | ကျင်ကြီးစွန့်ခြင်း | defecar | defecating |
@@ -599,24 +599,24 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ထွေးယှက် ပွေရှုပ်ခြင်း | enredarse | being entangled |
 | 1 | စောင့်စည်း ဖုံးအုပ်ခြင်း | refrenar, cubrir | restraining, covering |
 | 1 | ပုတ်ခတ် ဖျက်ဆီးခြင်း | golpear y destruir | striking and destroying |
-| 1 | ဂုရဓာတ်ကဲ့သို့ ဟိံသာ ဂတိ ဥယျမ အနက်ရှိ | con los sentidos de gura: dañar, ir, esforzarse | with the senses of gura: harming, going, striving |
+| 1 | ဂုရဓာတ်ကဲ့သို့ ဟိံသာ ဂတိ ဥယျမ အနက်ရှိ | con los significados de gura: dañar, ir, esforzarse | with the senses of gura: harming, going, striving |
 | 1 | ပေါင်းစုဝေးခြင်း | congregarse | congregating |
 | 1 | အနွယ် | linaje | lineage |
 | 1 | ထိခိုက် ပုတ်ခတ်ခြင်း | chocar, golpear | hitting |
-| 1 | သွားခြင်း ဂတိအနက် | ir (sentido de gati) | going (sense of gati) |
+| 1 | သွားခြင်း ဂတိအနက် | ir (significado de gati) | going (sense of gati) |
 | 1 | အနံ့ကို ယူခြင်း | oler | smelling |
 | 1 | နမ်းခြင်း | besar, oler | kissing, smelling |
 | 1 | နောက်သို့ ပြန်လည်ခြင်း | volverse atrás | turning back |
 | 1 | ရောင်းဝယ် ဖလှယ်ခြင်း | comerciar, intercambiar | bartering |
-| 1 | ကြောက်မက်ဖွယ် ဟူသော အနက် | sentido de terrible | sense of fearful |
-| 1 | အသံပြုခြင်း အနက် | sentido de emitir un sonido | sense of making a sound |
-| 1 | ကြောက်မက်ဖွယ်သောအသံကို ပြုခြင်း အနက် | sentido de emitir un sonido terrible | sense of making a fearful sound |
+| 1 | ကြောက်မက်ဖွယ် ဟူသော အနက် | significado de terrible | sense of fearful |
+| 1 | အသံပြုခြင်း အနက် | significado de emitir un sonido | sense of making a sound |
+| 1 | ကြောက်မက်ဖွယ်သောအသံကို ပြုခြင်း အနက် | significado de emitir un sonido terrible | sense of making a fearful sound |
 | 1 | နှစ်သက်ဖွယ်ကို ပြုခြင်း | complacer | pleasing |
 | 1 | ဆွေးမြည့် အိုမင်းခြင်း | decaer, envejecer | decaying, ageing |
 | 1 | ထိပါး ညှဉ်းဆဲခြင်း | herir, dañar | injuring |
 | 1 | နှောင့်နွေးခြင်း | perturbar | disturbing |
 | 1 | ရှုကြည့်ခြင်း | mirar | looking at |
-| 1 | သွားခြင်း အနက် | sentido de ir | sense of going |
+| 1 | သွားခြင်း အနက် | significado de ir | sense of going |
 | 1 | ကြမ်းကြုတ် မျက်လိုခြင်း | ser feroz y colérico | being fierce and wrathful |
 | 1 | ရေဆေးခြင်း | lavar | washing |
 | 1 | ကျင့်ခြင်း | practicar | practising |
@@ -669,9 +669,9 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ကျော့ကွင်းထောင်ခြင်း | tender un lazo | setting a snare |
 | 1 | ကိုက်ခဲခြင်း | morder | biting |
 | 1 | သည်းခံနိုင်ခြင်း | ser capaz de soportar | being able to endure |
-| 1 | ထွန်းပခြင်းအနက် | sentido de brillar | sense of shining |
+| 1 | ထွန်းပခြင်းအနက် | significado de brillar | sense of shining |
 | 1 | ကျခြင်း | caer | falling |
-| 1 | ဂတျတ္ထ | con sentido de ir | in the sense of going |
+| 1 | ဂတျတ္ထ | con significado de ir | in the sense of going |
 | 1 | ပါးအောင်ပြုခြင်း | adelgazar | thinning |
 | 1 | ညဉ်းဆဲခြင်း | dañar | harming |
 | 1 | မှန်ကန်ခြင်း | ser verdadero | being true |
@@ -686,7 +686,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ခိုက်ရန်ညင်းခုံပြုခြင်း | reñir | quarrelling |
 | 1 | ကောက်အောင်ပြုခြင်း | torcer | making crooked |
 | 1 | သတ်ပုတ်ခြင်း | golpear | beating |
-| 1 | ဤပီဠာဝဓအနက် နှစ်ပါး | estos dos sentidos: oprimir y matar | these two senses: oppressing and killing |
+| 1 | ဤပီဠာဝဓအနက် နှစ်ပါး | estos dos significados: oprimir y matar | these two senses: oppressing and killing |
 | 1 | လျင်စွာဖြစ်ခြင်း | surgir rápidamente | arising quickly |
 | 1 | နှိုင်းချိန် ဆုံးဖြတ်ခြင်း | sopesar y decidir | weighing and deciding |
 | 1 | ပွတ်သွေးခြင်း | pulir frotando | polishing |
@@ -712,7 +712,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | သူတပါးကို လှည့်ဖြားလိမ်လည်ခြင်း | engañar a otro | deceiving another |
 | 1 | ကိုက်ဖြတ်ဖျက်ဆီးခြင်း | morder y destruir | biting and destroying |
 | 1 | ပြေးသွားခြင်း | correr | running |
-| 1 | ဘူသာ သမတ္ထ ဝါရဏ ဟူသော အလံသဒ္ဒါ၏ အနက် | el sentido de alaṃ: adorno, capacidad, prohibición | the sense of alaṃ: ornament, ability, prohibition |
+| 1 | ဘူသာ သမတ္ထ ဝါရဏ ဟူသော အလံသဒ္ဒါ၏ အနက် | el significado de alaṃ: adorno, capacidad, prohibición | the sense of alaṃ: ornament, ability, prohibition |
 | 1 | မရပ် မတည် တုန်လှုပ်ခြင်း | temblar sin cesar | trembling restlessly |
 | 1 | ရှည်လျားအောင် ပြုခြင်း | alargar | lengthening |
 | 1 | ပိုင်းဖြတ်ခြင်း | cortar en trozos | cutting off |
@@ -740,7 +740,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ကြည်ညိုယုံကြည်ခြင်း | tener fe y confianza | having faith |
 | 1 | လျင်မြန်ပြေး သွားခြင်း | correr rápido | running fast |
 | 1 | အားရ နှစ်သက်ခြင်း | complacerse | being gratified |
-| 1 | ဒိတ္တိက္လေသ ဇီဝန-ဟူသော ဓိက္ခဓာတ်၏ အနက် | el sentido de la raíz dhikkha: brillar, afligirse, vivir | the sense of the root dhikkha: shining, afflicting, living |
+| 1 | ဒိတ္တိက္လေသ ဇီဝန-ဟူသော ဓိက္ခဓာတ်၏ အနက် | el significado de la raíz dhikkha: brillar, afligirse, vivir | the sense of the root dhikkha: shining, afflicting, living |
 | 1 | လှုပ်ခြင်း | moverse | moving |
 | 1 | ပူခြင်း | estar caliente | being hot |
 | 1 | ပူစေခြင်း | calentar | heating |
@@ -788,7 +788,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ပြဓာန်းခြင်း | ser principal | being foremost |
 | 1 | ကြီးမားသည်အဖြစ် | grandeza | greatness |
 | 1 | စိုက်ထူ မြင့်မောက်ခြင်း | erigir, elevarse | erecting, rising |
-| 1 | ချမ်းသာခြင်းအနက် | sentido de felicidad | sense of happiness |
+| 1 | ချမ်းသာခြင်းအနက် | significado de felicidad | sense of happiness |
 | 1 | သုတ်သင်ခြင်း စင်ကြယ်စေခြင်း | limpiar, purificar | cleaning, purifying |
 | 1 | မကောင်းနံ့လှိုင်ခြင်း | heder | stinking |
 | 1 | ပြည့်ခြင်း ပြည့်စေခြင်း | llenarse, llenar | being full, filling |
@@ -809,7 +809,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ဖရိုဖရဲ ကြဲဖြန့်ခြင်း | esparcir en desorden | scattering about |
 | 1 | ခိုင်ခံ့ မြဲမြံခြင်း | ser firme y estable | being firm and stable |
 | 1 | ဖွဲ့မိ ငြိတွယ်ခြင်း | quedar atado, apegarse | being caught, clinging |
-| 1 | ဗရဟဓာတ်ကဲ့သို့ ၄-နက် | cuatro sentidos, como la raíz baraha | four senses, like the root baraha |
+| 1 | ဗရဟဓာတ်ကဲ့သို့ ၄-နက် | cuatro significados, como la raíz baraha | four senses, like the root baraha |
 | 1 | အစိတ် | parte | part |
 | 1 | ဖျက်ဆီးဖောက် ဖြတ်ခြင်း | destruir rompiendo | breaking up |
 | 1 | မှီခြင်း | apoyarse | leaning on |
@@ -898,7 +898,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ညှဉ်းဆဲဖျက်ဆီးခြင်း | dañar y destruir | harming and destroying |
 | 1 | ကပ်၍ ယူခြင်း | tomar para sí | appropriating |
 | 1 | အသံမြည်ခြင်း | sonar | sounding |
-| 1 | ဘူသန နိဝါရဏ သမတ္ထ ဟူသော အလံအနက် သုံးပါး | los tres sentidos de alaṃ: adorno, prohibición, capacidad | the three senses of alaṃ: ornament, prohibition, ability |
+| 1 | ဘူသန နိဝါရဏ သမတ္ထ ဟူသော အလံအနက် သုံးပါး | los tres significados de alaṃ: adorno, prohibición, capacidad | the three senses of alaṃ: ornament, prohibition, ability |
 | 1 | ပြီးစေခြင်း | llevar a término | accomplishing |
 | 1 | ပြစ်မှားခြင်း | ofender | offending |
 | 1 | ကင်းဆိတ် လက်လျှော့ခြင်း | privarse, renunciar | giving up |
@@ -916,13 +916,13 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | မြူစသည်နှင့် ရောနှောခြင်း | mezclarse con polvo, etc. | mixing with dust, etc. |
 | 1 | တောင်းရမ်းခြင်း | mendigar | begging |
 | 1 | အမှတ်တံဆိပ် ပြုခြင်း | marcar | marking |
-| 1 | လကဓာတ်၏ အနက်နှစ်ခု | los dos sentidos de la raíz laka | the two senses of the root laka |
+| 1 | လကဓာတ်၏ အနက်နှစ်ခု | los dos significados de la raíz laka | the two senses of the root laka |
 | 1 | ခုန်တက်ပျံလွှားခြင်း | saltar hacia arriba | leaping up |
 | 1 | အစာမစားမူ၍ ကျင့်သုံးခြင်း | practicar el ayuno | fasting |
 | 1 | လျှာကို လှုပ်ခြင်း | mover la lengua | moving the tongue |
 | 1 | စက်ဆုပ်ခြင်း | aborrecer | loathing |
 | 1 | မြည်တမ်း ငိုကြွေးခြင်း | lamentarse y llorar | lamenting and weeping |
-| 1 | အနက်မရှိသော စကားကို ပရမ်းပတာ ဆိုခြင်း | hablar sin sentido | prattling |
+| 1 | အနက်မရှိသော စကားကို ပရမ်းပတာ ဆိုခြင်း | hablar sin significado | prattling |
 | 1 | ခေါ်ဆိုခြင်း | llamar | calling |
 | 1 | အချင်းချင်း အဆင့်ဆင့် ပြောဆိုခြင်း | conversar | conversing |
 | 1 | မှီတင်းခြင်း | apoyarse | leaning on |
@@ -936,7 +936,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | လျှာလှုပ်ခြင်း | mover la lengua | moving the tongue |
 | 1 | စင်စစ် စောင့်ရှောက်ခြင်း | proteger del todo | guarding fully |
 | 1 | အလိုလိုက်ခြင်း | complacer | indulging |
-| 1 | ဘူသနဝါရဏ သာမတ္ထိယ သုံးပါးဟူသော အလံအနက် | los tres sentidos de alaṃ: adorno, prohibición, capacidad | the three senses of alaṃ: ornament, prohibition, ability |
+| 1 | ဘူသနဝါရဏ သာမတ္ထိယ သုံးပါးဟူသော အလံအနက် | los tres significados de alaṃ: adorno, prohibición, capacidad | the three senses of alaṃ: ornament, prohibition, ability |
 | 1 | ပါးအောင်ခြစ်ခြင်း | raspar hasta adelgazar | scraping thin |
 | 1 | လိမ်းကျံကပ်ငြိခြင်း | untar y adherirse | smearing, sticking |
 | 1 | အနည်းငယ်မျှ ဖြစ်ခြင်း | ser muy poco | being slight |
@@ -944,7 +944,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | အရည်ဖြစ်ကျ ကြေမွခြင်း | derretirse, deshacerse | melting |
 | 1 | ကပ်ရောက်ခြင်း | acercarse, llegar | approaching |
 | 1 | ပယ်နှုတ်ခြင်း | extirpar | removing |
-| 1 | စုရာဒိဂဏိက လဇိဓာတ်၏ အနက် | el sentido de la raíz laji, de la clase curādi | the sense of the root laji, of the curādi class |
+| 1 | စုရာဒိဂဏိက လဇိဓာတ်၏ အနက် | el significado de la raíz laji, de la clase curādi | the sense of the root laji, of the curādi class |
 | 1 | ပင်ပန်းညှိုးခွေခြင်း | estar fatigado y marchito | being weary and drooping |
 | 1 | မထီမဲ့မြင် အောက်မေ့ခြင်း | menospreciar | disdaining |
 | 1 | ရုဋ္ဌိဓာတ်နှင့် တူ | igual que la raíz ruṭṭhi | like the root ruṭṭhi |
@@ -954,14 +954,14 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | လုယက် ခြင်း | saquear | plundering |
 | 1 | လိုချင်မက်မောခြင်း | codiciar | craving |
 | 1 | ကပ်ငြိခြင်း | adherirse | adhering |
-| 1 | သစ်ခွံ အနက် | sentido de corteza | sense of bark |
+| 1 | သစ်ခွံ အနက် | significado de corteza | sense of bark |
 | 1 | ဆို့ပိတ်ခြင်း | obstruir | obstructing |
 | 1 | သတင်း စကား ညွှန်ကြားခြင်း | enviar un mensaje | sending a message |
 | 1 | လှည့်ပတ်ခြင်း | engañar | cheating |
 | 1 | ပြုပြင်းခြင်း | preparar | preparing |
 | 1 | စွန့်ခွါ ကြဉ်ရှောင်ခြင်း | renunciar, evitar | renouncing, avoiding |
 | 1 | တစ်ယောက်ထီးတည်း သွားခြင်း | ir solo | going alone |
-| 1 | ဆောင်ခြင်းအနက် | sentido de llevar | sense of bearing |
+| 1 | ဆောင်ခြင်းအနက် | significado de llevar | sense of bearing |
 | 1 | လောင်းထည့်ခြင်း | verter | pouring in |
 | 1 | ချဲ့ဖွင့်ခြင်း | explicar con detalle | expounding |
 | 1 | အဖြူ စသော အဆင်းကို ပြုခြင်း | dar color blanco, etc. | colouring white, etc. |
@@ -1004,7 +1004,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | ရှုဆင်ခြင်ခြင်း | contemplar | contemplating |
 | 1 | ကြည့်ရှုစုံစမ်းခြင်း | investigar mirando | examining |
 | 1 | တီးမှုတ်ခြင်း | tocar un instrumento | playing an instrument |
-| 1 | အခါဟူသော အနက် | sentido de tiempo | sense of time |
+| 1 | အခါဟူသော အနက် | significado de tiempo | sense of time |
 | 1 | ကာလကို ရေတွက်ခြင်း | contar el tiempo | reckoning time |
 | 1 | ရုံးစုခေါက်လိပ်ခြင်း | enrollar, plegar | rolling up |
 | 1 | ကြောက်ရွံ့ ထိတ်လန့်ခြင်း | aterrorizarse | being terrified |
@@ -1013,7 +1013,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | စဉ်းလဲလှည့်ပတ်ခြင်း | engañar | deceiving |
 | 1 | ပျင်းရိထိုင်းမှိုင်းခြင်း | ser perezoso y torpe | being lazy and dull |
 | 1 | မကောင်းသော စကားကို ဆိုခြင်း | hablar mal | speaking ill |
-| 1 | ကျင်နာခြင်းအနက် | sentido de dolor | sense of pain |
+| 1 | ကျင်နာခြင်းအနက် | significado de dolor | sense of pain |
 | 1 | မပြတ်မစဲ မြဲခြင်း | ser constante | being constant |
 | 1 | ကျင်နာ ဆင်းရဲခြင်း | doler y sufrir | aching and suffering |
 | 1 | အဖန်တလဲလဲ ရယ်မောစေခြင်း | hacer reír una y otra vez | making laugh repeatedly |
@@ -1058,7 +1058,7 @@ Donde el sentido pāḷi coincide exactamente con una glosa del *Saddanīti*, la
 | 1 | နစ်မြုပ်ခြင်း | sumergirse | sinking |
 | 1 | ကိုယ်ကို ခါတွက် ဆေးလျှော်ခြင်း | sacudir y lavar el cuerpo | washing the body |
 | 1 | ချမ်းစေခြင်း | enfriar | cooling |
-| 1 | ဤဂတိအနက် | este sentido de ir | this sense of going |
+| 1 | ဤဂတိအနက် | este significado de ir | this sense of going |
 | 1 | ပြီးစီး အောင်မြင်ခြင်း | lograr | achieving |
 | 1 | ငြိမ်းသောယာ မင်္ဂလာရှိခြင်း | ser apacible y auspicioso | being peaceful and auspicious |
 | 1 | သုတ်သင်ရေချိုးခြင်း | bañarse | bathing |

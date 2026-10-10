@@ -304,6 +304,11 @@ def traducir_dv(datos, dv, glosas):
     for k, v in voc.items():
         voc_s.setdefault(_simple(k), v)
     firmado = bool(glosas and glosas.get("adjudicado"))
+    # Pedido del IEBH (2026-10-10): la propuesta puede publicarse sin firma,
+    # pero rotulada «borrador» en cada traducción ("tr": "borrador").
+    borrador = bool(glosas and glosas.get("publicar_borrador")) and not firmado
+    usar = firmado or borrador
+    marca = "iebh" if firmado else "borrador"
     tabla = (glosas or {}).get("glosas", {})
     n_sad = n_iebh = n_falta = 0
     for x in dv["entradas"]:
@@ -315,21 +320,21 @@ def traducir_dv(datos, dv, glosas):
                 s["es"], s["en"], s["tr"] = par[0], par[1], "sad"
                 n_sad += 1
                 continue
-            if firmado and s.get("my"):
+            if usar and s.get("my"):
                 partes = [tabla.get(_clave_my(f)) for f in _PARTE_MY.split(s["my"]) if f.strip()]
                 if partes and all(partes):
                     s["es"] = ", ".join(t["es"] for t in partes)
                     s["en"] = ", ".join(t["en"] for t in partes)
-                    s["tr"] = "iebh"
+                    s["tr"] = marca
                     n_iebh += 1
                     continue
             tp = (glosas or {}).get("pali", {}).get(s.get("pali") or "")
-            if firmado and not s.get("my") and tp:
-                s["es"], s["en"], s["tr"] = tp["es"], tp["en"], "iebh"
+            if usar and not s.get("my") and tp:
+                s["es"], s["en"], s["tr"] = tp["es"], tp["en"], marca
                 n_iebh += 1
                 continue
             n_falta += 1
-    return n_sad, n_iebh, n_falta, firmado
+    return n_sad, n_iebh, n_falta, (firmado or borrador), borrador
 
 
 def cifras_del_verbo():
@@ -461,7 +466,8 @@ def main():
         print("  sentidos traducidos: {0} del Saddanīti, {1} del glosario del "
               "IEBH{2}, {3} sin traducción".format(
                   tr_dv[0], tr_dv[1],
-                  "" if tr_dv[3] else " (sin firmar: no se publica)", tr_dv[2]))
+                  " (BORRADOR: sin firmar, rotulado en la página)" if tr_dv[4]
+                  else "" if tr_dv[3] else " (sin firmar: no se publica)", tr_dv[2]))
     return 0
 
 
