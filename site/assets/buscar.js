@@ -228,7 +228,8 @@
   }
 
   function filaHTML(e, tokens) {
-    var pali = e.g === 'suttas' || e.g === 'glosario' || e.g === 'raices';
+    var pali = e.g === 'suttas' || e.g === 'glosario' || e.g === 'raices' ||
+      e.g === 'dhatupatha' || e.g === 'dhatvattha' || e.g === 'dhatvattha_versos';
     return '<li><a class="busca-r" href="' + esc(BASE + e.u) + '">' +
       '<span class="busca-t"' + (pali && !e.b ? ' lang="pi"' : '') + '>' + resaltar(e.t, tokens) + '</span>' +
       (e.b ? ' <span class="borrador">' + esc(TX.borrador || 'borrador') + '</span>' : '') +

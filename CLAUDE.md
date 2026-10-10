@@ -452,7 +452,7 @@ incorporarlo, para que el IEBH decida y se le dé el crédito al Venerable.
 
 ## Estado de recursos/raices
 
-La referencia de raíces (`/recursos/raices/`, v1.8) reúne **cuatro obras
+La referencia de raíces (`/recursos/raices/`, v1.9) reúne **cuatro obras
 distintas** en cinco pestañas, y confundirlas es el error fácil:
 
 | Pestaña | Obra | Cuántas | Qué numera |

@@ -78,6 +78,15 @@ y cuadran con el mapa de páginas en todas las que se han cotejado (47, 79,
   número de raíces que contiene** (… ၇ ။ = siete raíces). Cada raíz va en
   nominativo (*kako, kaki*) seguida de su sentido en locativo y, a menudo,
   de la marca de gaṇa: ဘူ (bhūvādi), စု (curādi), ဒိ (divādi), …
+  Desde el v. 18 una raíz **sin marca es bhūvādi** («ito paraṃ tu na vakkhaṃ,
+  bhūti suddhabhuvādikaṃ»; nota del nissaya: «ဂိုဏ်းပြ မပါလျှင် ဘူဝါဒိဂဏိကဓာတ်
+  မှတ်လေ»). La «tu» de *cutu*, *bhūtu* es la partícula «pero» (nissaya «မူကား»),
+  no una clase. *to* es tanādi (*tā* en plural).
+- **El gaṇa publicado** (campo `gana`, sesión 66) sale del cuerpo del nissaya
+  (`_work/sesion66/gana.py` sobre el OCR, con correcciones de OCR anotadas en el
+  script) y, sin marca, de la regla del v. 18 (`gana_como`). Coincide con algún
+  grupo del Saddanīti en 964 de las 990 raíces con lema común. No está cotejado
+  uno por uno con la imagen.
 - **La entrada del nissaya.** El verso se repite y luego viene una entrada por
   raíz: la raíz **en negrita al margen**, su sentido en birmano palabra por
   palabra y, entre corchetes, formas conjugadas, derivados y citas

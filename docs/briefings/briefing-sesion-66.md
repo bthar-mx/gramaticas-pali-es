@@ -52,7 +52,33 @@
      sin permiso del grupo Visuddhāruṃ Gaṇavācaka. Se publican los versos por
      decisión del IEBH tomada antes de leerlo; se le avisa.
 
+7. **Tercera parte (v1.9, sin commit)**, con el IEBH:
+   - Traducción en borrador publicada, rotulada («publicar_borrador»).
+   - «sentido» → «significado» en los textos en español de la pestaña.
+   - Cabecera fija de columnas con globos.
+   - Lo del Saddanīti ya no dice «Sad»: si la raíz del Saddanīti con esa
+     glosa está en la tercera columna, la traducción va allí (campo
+     `en_col`, 187); si no, rótulo «según Saddanīti» (356).
+   - Buscador del sitio: tipos `dhatupatha`, `dhatvattha`,
+     `dhatvattha_versos` en `generar_busqueda.py` (sin borradores); anclas
+     `#dpN`, `#dvN`, `#dvvN` en la plantilla (`abrirAncla`).
+   - **Marcas de gaṇa en los versos**: bhū, cu, di, ru, svā, kī, gaha, to/tā
+     (tanādi; «tā» plural, ver nissaya «တာ၊ တနာဒိဂဏိကတို့တည်း»), y además
+     «tu» (cutu 32×, bhūtu, dirutu): ¿tudādi? Sin confirmar. El nissaya nombra
+     el gaṇa (ဘူဝါဒိ 72, စုရာဒိ 100, ဒိဝါဒိ 35… en el OCR de `raw/`).
+
 ## 2. PENDIENTE
+
+- **Enlazar las raíces dentro del texto de los versos** (recomendado al
+  IEBH): 1.514 de 1.625 salen como palabra entera; ~100 en sandhi (’ki = aki).
+- **Gaṇa: hecho** (v1.9). `gana.py` + `gana_aplicar.py` en `_work/sesion66/`.
+  Pendiente: cotejo con la imagen de las 26 que discrepan del Saddanīti y de
+  las «según el significado». «tu» = partícula «pero» (resuelto).
+- **Versión interna con el nissaya: hecha (opción 1)**, fuera del repositorio:
+  `~/Tipitaka/nissaya/ocr/dhatvatthasangaha-nissaya/interno/` (index.html,
+  nissaya.js, recortes/, paginas/; ~60 MB; se abre con doble clic). Se rehace
+  con `_work/interno/construir.py`. Opción 2 (repo privado + Cloudflare
+  Access) cuando haga falta. Pedir permiso al grupo Visuddhāruṃ Gaṇavācaka.
 
 - **Decidir, a la vista del aviso de derechos**, si los versos pāḷi siguen
   publicados.
