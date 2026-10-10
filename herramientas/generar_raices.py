@@ -37,6 +37,8 @@ VERBO = os.path.join(RAIZ, "recursos", "verbo", "verbo.json")
 DHATUPATHA = os.path.join(RAIZ, "recursos", "raices", "dhatupatha.json")
 DP_INGLES = os.path.join(RAIZ, "recursos", "raices", "dhatupatha-ingles.json")
 DHATUMANJUSA = os.path.join(RAIZ, "recursos", "raices", "dhatumanjusa.json")
+DHATVATTHA = os.path.join(RAIZ, "recursos", "raices", "dhatvatthasangaha.json")
+DV_GLOSAS = os.path.join(RAIZ, "recursos", "raices", "dhatvatthasangaha-glosas.json")
 PLANTILLA = os.path.join(RAIZ, "recursos", "raices", "plantilla.html")
 DESTINO = os.path.join(RAIZ, "site", "recursos", "raices", "index.html")
 
@@ -224,6 +226,107 @@ def concordar(datos, dp):
     return con, seguras, huerfanas
 
 
+def _lemas_dv(nombre):
+    """Las formas de cita del margen —«ako», «aggā», «aki»— y el lema con que
+    las da el Saddanīti —«aka», «agga», «aki»—. Sólo se toca la vocal final:
+    -o y -ā del nominativo pasan a -a. Nada más."""
+    n = unicodedata.normalize("NFC", nombre.lower().strip(" ’'"))
+    out = {n}
+    if n[-1:] in ("o", "ā"):
+        out.add(n[:-1] + "a")
+    return out
+
+
+def concordar_dv(datos, dv):
+    """Cruza el Dhātvatthasaṅgaha con el Saddanīti, por lema y nada más.
+
+    Como con el Dhātupāṭha: la coincidencia de lema no dice que sea la misma
+    raíz con el mismo sentido. Cuando además una glosa pāḷi coincide letra a
+    letra (salvo la consonante doble inicial del sandhi), se marca
+    «misma_glosa», que es la correspondencia que se puede dar por segura.
+    """
+    por_lema = collections.defaultdict(list)
+    for r in datos["raices"]:
+        for l in r["raices"]:
+            por_lema[unicodedata.normalize("NFC", l.lower())].append(r)
+    con = seguras = 0
+    marca = collections.defaultdict(list)
+    for x in dv["entradas"]:
+        glosas = {_simple(s["pali"]) for s in x["sentidos"]}
+        vistos, hits = set(), []
+        for nombre in x["nombres"]:
+            for l in _lemas_dv(nombre):
+                for r in por_lema.get(l, []):
+                    if r["id"] in vistos:
+                        continue
+                    vistos.add(r["id"])
+                    hits.append({"id": r["id"], "raiz": " / ".join(r["raices"]),
+                                 "glosa": r["glosa"], "ref": r["ref"],
+                                 "misma_glosa": _simple(r["glosa"]) in glosas})
+                    marca[r["id"]].append(x["n"])
+        x["sad"] = hits
+        if hits:
+            con += 1
+            if any(h["misma_glosa"] for h in hits):
+                seguras += 1
+    for r in datos["raices"]:
+        r["dv"] = sorted(set(marca.get(r["id"], [])))
+    return con, seguras
+
+
+_PARTE_MY = re.compile(r"\s*,\s*|\s*၊\s*ဝါ\s*၊\s*")
+
+
+def _clave_my(frase):
+    return frase.replace(" ", "").replace("ပွါး", "ပွား")
+
+
+def traducir_dv(datos, dv, glosas):
+    """Pone español e inglés a cada sentido del Dhātvatthasaṅgaha.
+
+    Dos fuentes, y cada sentido dice de cuál viene:
+      «sad»    el sentido pāḷi coincide letra a letra con una glosa del
+               Saddanīti (salvo «ca», «pi»… al final y la consonante doble
+               inicial): se reutiliza el español de Nandisena y el inglés de
+               esa edición, como en el Dhātupāṭha;
+      «iebh»   si no, la glosa birmana, frase por frase, con el glosario de
+               dhatvatthasangaha-glosas.json — sólo si el IEBH lo ha firmado
+               («adjudicado»). Sin firma no se inyecta nada.
+    """
+    voc = {}
+    for r in datos["raices"]:
+        if r["glosa"] and (r["es"] or r["en"]):
+            voc.setdefault(_n(r["glosa"]), (r["es"], r["en"]))
+    for x in datos["significados"]:
+        if x["glosa"] and (x["es"] or x["en"]):
+            voc.setdefault(_n(x["glosa"]), (x["es"], x["en"]))
+    voc_s = {}
+    for k, v in voc.items():
+        voc_s.setdefault(_simple(k), v)
+    firmado = bool(glosas and glosas.get("adjudicado"))
+    tabla = (glosas or {}).get("glosas", {})
+    n_sad = n_iebh = n_falta = 0
+    for x in dv["entradas"]:
+        for s in x["sentidos"]:
+            s["es"] = s["en"] = s["tr"] = ""
+            p = re.sub(r"\s+(ca|pi|ceva|cāpi|vā)$", "", s.get("pali") or "")
+            par = (voc.get(_n(p)) or voc_s.get(_simple(p))) if p else None
+            if par:
+                s["es"], s["en"], s["tr"] = par[0], par[1], "sad"
+                n_sad += 1
+                continue
+            if firmado and s.get("my"):
+                partes = [tabla.get(_clave_my(f)) for f in _PARTE_MY.split(s["my"]) if f.strip()]
+                if partes and all(partes):
+                    s["es"] = ", ".join(t["es"] for t in partes)
+                    s["en"] = ", ".join(t["en"] for t in partes)
+                    s["tr"] = "iebh"
+                    n_iebh += 1
+                    continue
+            n_falta += 1
+    return n_sad, n_iebh, n_falta, firmado
+
+
 def cifras_del_verbo():
     """Las del globo del enlace a /verbo/, calculadas y no escritas a mano.
 
@@ -290,6 +393,18 @@ def main():
         for r in datos["raices"]:
             r["dm"] = []
 
+    con_dv = seg_dv = 0
+    if os.path.exists(DHATVATTHA):
+        dv = json.load(open(DHATVATTHA, encoding="utf-8"))
+        con_dv, seg_dv = concordar_dv(datos, dv)
+        glosas = (json.load(open(DV_GLOSAS, encoding="utf-8"))
+                  if os.path.exists(DV_GLOSAS) else None)
+        tr_dv = traducir_dv(datos, dv, glosas)
+        datos["dhatvattha"] = dv
+    else:
+        for r in datos["raices"]:
+            r["dv"] = []
+
     verbo = cifras_del_verbo()
     if verbo is None:
         print("  aviso — sin recursos/verbo/verbo.json: se publica sin el "
@@ -333,6 +448,15 @@ def main():
     if "dhatumanjusa" in datos:
         print("  Dhātumañjūsā: {0} estrofas; {1} raíces nombradas literalmente "
               "en alguna".format(len(datos["dhatumanjusa"]["estrofas"]), con_dm))
+    if "dhatvattha" in datos:
+        ents = datos["dhatvattha"]["entradas"]
+        print("  Dhātvatthasaṅgaha: {0} entradas, {1} raíces; {2} con lema en "
+              "el Saddanīti, {3} de ellas con la misma glosa".format(
+                  len(ents), sum(x["cuantas"] for x in ents), con_dv, seg_dv))
+        print("  sentidos traducidos: {0} del Saddanīti, {1} del glosario del "
+              "IEBH{2}, {3} sin traducción".format(
+                  tr_dv[0], tr_dv[1],
+                  "" if tr_dv[3] else " (sin firmar: no se publica)", tr_dv[2]))
     return 0
 
 

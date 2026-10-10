@@ -452,8 +452,8 @@ incorporarlo, para que el IEBH decida y se le dé el crédito al Venerable.
 
 ## Estado de recursos/raices
 
-La referencia de raíces (`/recursos/raices/`, v1.3) reúne **tres obras
-distintas** en cuatro pestañas, y confundirlas es el error fácil:
+La referencia de raíces (`/recursos/raices/`, v1.7) reúne **cuatro obras
+distintas** en cinco pestañas, y confundirlas es el error fácil:
 
 | Pestaña | Obra | Cuántas | Qué numera |
 | --- | --- | --- | --- |
@@ -461,10 +461,13 @@ distintas** en cuatro pestañas, y confundirlas es el error fácil:
 | Significados | índice inverso de la misma | 776 | — |
 | Dhātupāṭha | Andersen y Smith, 1921 | 643 | 1–639, más cuatro con letra |
 | Dhātumañjūsā | Kaccāyana-Dhātumañjūsā | 154 estrofas | la suya, hasta 884 |
+| Dhātvatthasaṅgaha | con el nissaya del Mahāvisuddhārāma Sayadaw (KBRL 001288) | 1.637 | la suya, por siete kaṇḍas + **página** |
 
 Se arma con `herramientas/generar_raices.py` a partir de
-`recursos/raices/plantilla.html` y cuatro JSON: `raices.json`,
-`dhatupatha.json`, `dhatupatha-ingles.json` y `dhatumanjusa.json`.
+`recursos/raices/plantilla.html` y cinco JSON: `raices.json`,
+`dhatupatha.json`, `dhatupatha-ingles.json`, `dhatumanjusa.json` y
+`dhatvatthasangaha.json` (raíz, sentido y página; el texto del nissaya no
+se publica; detalle en `recursos/raices/LEEME.md`).
 
 ### La fuente principal, y cómo se cita
 

@@ -163,7 +163,9 @@ RECURSOS = [
      "<i>Pali Roots in Saddanīti</i> del Ven. U Sīlānanda, editado por "
      "Bhikkhu Nandisena. Con el índice inverso, que va del "
      "sentido a las raíces que lo expresan, y <i>Dhātupāṭha</i> y "
-     "<i>Dhātumañjūsā</i> de Andersen y Smith concordados lema a lema."),
+     "<i>Dhātumañjūsā</i> de Andersen y Smith concordados lema a lema, y "
+     "las raíces de <i>Dhātvatthasaṅgaha</i> con el sentido de su "
+     "<i>nissaya</i> birmano."),
 ]
 
 # Fuera de este sitio. Van en su propia sección y marcadas como externas:
@@ -404,14 +406,17 @@ EN = {
     "<i>Pali Roots in Saddanīti</i> del Ven. U Sīlānanda, editado por "
     "Bhikkhu Nandisena. Con el índice inverso, que va del sentido a las "
     "raíces que lo expresan, y <i>Dhātupāṭha</i> y <i>Dhātumañjūsā</i> "
-    "de Andersen y Smith concordados lema a lema.":
+    "de Andersen y Smith concordados lema a lema, y las raíces de "
+    "<i>Dhātvatthasaṅgaha</i> con el sentido de su <i>nissaya</i> birmano.":
         "The roots of <i>Dhātumālā</i> of <i>Saddanīti</i> with their "
         "meaning in Spanish and English, the corresponding Sanskrit root "
         "where there is one, and the <i>gaṇa</i> and page of each, from "
         "<i>Pali Roots in Saddanīti</i> by Ven. U Sīlānanda, edited by "
         "Bhikkhu Nandisena. With the reverse index, which goes from the sense "
         "to the roots that express it, and <i>Dhātupāṭha</i> and "
-        "<i>Dhātumañjūsā</i> of Andersen and Smith concorded lemma by lemma.",
+        "<i>Dhātumañjūsā</i> of Andersen and Smith concorded lemma by lemma, "
+        "and the roots of <i>Dhātvatthasaṅgaha</i> with the meaning of its "
+        "Burmese <i>nissaya</i>.",
     "Chaṭṭhasaṅgītipiṭaka — Tipiṭaka del Sexto Concilio":
         "Chaṭṭhasaṅgītipiṭaka — Tipiṭaka of the Sixth Council",
     "La edición del Sexto Concilio romanizada: canon, comentarios y "
@@ -750,10 +755,10 @@ GRUPOS_RECURSOS = [
          "Nandisena, Smith's <i>Conspectus Terminorum</i> and the terminology "
          "of these translations", False),
         ("raices/", "Raíces", "Roots",
-         "Las __N_RAICES__ raíces de <i>Saddanīti</i>, con <i>Dhātupāṭha</i> y "
-         "<i>Dhātumañjūsā</i>",
-         "The __N_RAICES_EN__ roots of <i>Saddanīti</i>, with <i>Dhātupāṭha</i> "
-         "and <i>Dhātumañjūsā</i>", False),
+         "Las __N_RAICES__ raíces de <i>Saddanīti</i>, con <i>Dhātupāṭha</i>, "
+         "<i>Dhātumañjūsā</i> y <i>Dhātvatthasaṅgaha</i>",
+         "The __N_RAICES_EN__ roots of <i>Saddanīti</i>, with <i>Dhātupāṭha</i>, "
+         "<i>Dhātumañjūsā</i> and <i>Dhātvatthasaṅgaha</i>", False),
         ("paradigmas/", "Paradigmas", "Paradigms",
          # texto del IEBH, 2026-10-08
          "Declinación nominal y pronominal · <i>vibhatti-paccaya</i>, "
