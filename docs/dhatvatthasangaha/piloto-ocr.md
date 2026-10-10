@@ -133,3 +133,41 @@ externo: que la raíz exista en el Saddanīti o en el Dhātupāṭha. Pero ése
 tampoco basta solo, porque el Dhātvatthasaṅgaha trae raíces que las otras
 obras no tienen (*aṅga* de curādi junto a *agi*). **Nada de esto se publica
 sin verlo en la imagen**: la cola, en `docs/fuentes/dhatvatthasangaha/revision.md`.
+
+## 6. Verificación en la imagen (sesión 65, 2026-10-10)
+
+Todas las raíces, miradas en la imagen: hojas de contacto de los renglones del
+margen (2 × 14 recortes a resolución completa, con la lectura del OCR al lado),
+y ampliación de cada caso dudoso. Resultado y tabla en
+`docs/fuentes/dhatvatthasangaha/verificacion.md` (local).
+
+| | |
+| --- | ---: |
+| renglones del margen mirados (hojas 61-407) | 1.915 |
+| entradas verificadas `V` | 1.574 |
+| entradas que el extractor no había reconocido, `V-nueva` | 22 |
+| de la séptima impresión (pp. 262-263 de la sexta), `V-7ª` | 10 |
+| dudosas, `?` | 18 |
+| **raíces** | **1.637 = el libro**, y cuadran los siete kaṇḍas |
+
+**El OCR del margen se equivocaba en 350 de 1.592 entradas** (22 %), mucho más
+que el 3 % de CER del nissaya: el margen va en negrita, más grande, y Tesseract
+confunde ahí lo que en el cuerpo lee bien. Confusiones vistas, con la regla
+para decidirlas en la imagen:
+
+- ဋ (gancho a la izquierda arriba) / ဍ (arco liso);
+- ဂ (abierta abajo a la izquierda) / ဝ (cerrada);
+- subíndices: စ redondo y cerrado, ဇ con gancho abierto, ဆ con un bucle más;
+  ဗ redondo con muesca arriba, ပ una U, ဖ una U con rizo dentro;
+- ဿ más ancha que သ; ီ anillo relleno, ိ anillo abierto;
+- **ယ / ဃ: en esta negrita son la misma forma.** No se decide por la imagen;
+  se ha dejado la lectura que favorecen el verso, el prayoga y el Dhātupāṭha
+  sánscrito, marcada `?`. Son 16 y las decide el IEBH en el papel.
+
+Por qué se le escapaban 22 entradas al extractor: renglones de entrada que no empiezan
+por «RAÍZ၊ သည်» —la raíz en acusativo (*လာဘံ ကို … အဗြဝိ*), seguida de «iti
+ca» (*ပိဉ္ဆောတိ စ*), de «tu» (*တဖော တု*)— o pegados a la nota anterior.
+Una (*ဟိဝိ/ဟီ*, E1594) y un punto (E17) son las otras dos dudas.
+
+**Lo que ya no vale de §5**: las cifras por kaṇḍa de esa tabla (267/277,
+161/159…) eran del extractor; las buenas son las de este apartado.
