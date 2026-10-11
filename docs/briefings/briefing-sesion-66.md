@@ -79,6 +79,17 @@
   nissaya.js, recortes/, paginas/; ~60 MB; se abre con doble clic). Se rehace
   con `_work/interno/construir.py`. Opción 2 (repo privado + Cloudflare
   Access) cuando haga falta. Pedir permiso al grupo Visuddhāruṃ Gaṇavācaka.
+- **OCR del kaṇḍa 1 corregido contra la imagen** (hojas 64-93, 304 líneas):
+  `_work/interno/corr-k1.json`; `aplicar_corr.py` genera `raw_corr/` sin
+  tocar `raw/`. `construir.py` lee `raw_corr/` y ya no corta una entrada en
+  una cita numerada («၂။ ၁၈၇)») ni en un verso sin raíces propias (v. 16 de
+  *avo*). Traducción ES/EN puesta al día; quedan 15 «[?]», ningún «[OCR …]».
+  Correcciones al sitio público: E16 añcho, E8 mūlye, E37 pāṇajīvane.
+- **Traducción del nissaya (piloto)**: kaṇḍa 1 (Sarādika, 138 entradas)
+  traducida al español, borrador sobre el OCR, en
+  `_work/interno/traduccion-k1.json`; se ve en la versión interna. Espera la
+  revisión del IEBH antes de seguir con los kaṇḍas 2-7 (`traduccion-kN.json`,
+  `construir.py` los recoge todos).
 
 - **Decidir, a la vista del aviso de derechos**, si los versos pāḷi siguen
   publicados.
