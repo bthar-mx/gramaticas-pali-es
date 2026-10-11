@@ -85,11 +85,26 @@
   una cita numerada («၂။ ၁၈၇)») ni en un verso sin raíces propias (v. 16 de
   *avo*). Traducción ES/EN puesta al día; quedan 15 «[?]», ningún «[OCR …]».
   Correcciones al sitio público: E16 añcho, E8 mūlye, E37 pāṇajīvane.
+- **Kaṇḍa 2 (Kakārādika)**: OCR corregido (hojas 93-118, `corr-k2.json`) y
+  traducido ES/EN (`traduccion-k2.json`, 127 entradas). Las correcciones de
+  consonante de los kaṇḍas 1-2 se cotejaron por segunda vez, línea contra
+  imagen: deshizo cuatro correcciones mías erróneas (kaḷo, kūḍo, ကေသောသိ,
+  သောကော). E37: el verso dice pāṇajīvane; el cuerpo, ပါဏဇီဝဏေ.
 - **Traducción del nissaya (piloto)**: kaṇḍa 1 (Sarādika, 138 entradas)
   traducida al español, borrador sobre el OCR, en
   `_work/interno/traduccion-k1.json`; se ve en la versión interna. Espera la
   revisión del IEBH antes de seguir con los kaṇḍas 2-7 (`traduccion-kN.json`,
   `construir.py` los recoge todos).
+- **Kaṇḍas 3-7 (noche del 10 al 11-X)**: OCR corregido contra la imagen por
+  agentes en paralelo (hojas 119-399, 2.874 líneas; segunda pasada de cada
+  bloque con `verif2.py`), `corr-k3…k7.json`; `raw_corr/` regenerado (3.524
+  líneas en total). Traducidos ES/EN por agentes (`traduccion-k3…k7.json`,
+  1.350 entradas; 332 con algún «[?]»). La versión interna tiene ya las 1.615
+  entradas con nissaya traducidas. BORRADOR SIN REVISIÓN HUMANA.
+  Lista de lo que hay que cotejar y de lo que afecta a los datos publicados
+  (lemas y sentidos distintos, totales de grupo, ဃ/ယ): 
+  `_work/interno/revision-pendiente-k3-7.md` (privado, contiene birmano).
+  Nada de esa lista se ha aplicado todavía a `dhatvatthasangaha.json`.
 
 - **Decidir, a la vista del aviso de derechos**, si los versos pāḷi siguen
   publicados.
