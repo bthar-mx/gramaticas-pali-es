@@ -104,7 +104,14 @@
   Lista de lo que hay que cotejar y de lo que afecta a los datos publicados
   (lemas y sentidos distintos, totales de grupo, ဃ/ယ): 
   `_work/interno/revision-pendiente-k3-7.md` (privado, contiene birmano).
-  Nada de esa lista se ha aplicado todavía a `dhatvatthasangaha.json`.
+  Cotejada luego con Saddanīti, Dhātupāṭha, Dhātumañjūsā y cognado
+  sánscrito (agentes, `rev-k3-4/k5-6/k7.json`, privados): aplicadas a
+  `dhatvatthasangaha.json` 115 entradas y 73 versos, cada una con
+  `nota_correccion`; «?» pasa de 18 a 5 (aghi, aja, cagha, dhāgha, lagha).
+  Diferido: gaṇa de E617/E758/E797 y los sentidos con prefijo de E758/E797;
+  E1283 laya/lagha, E1293 yāte/ghāte, E1575 āyāte/āghāte, E640 tiya/tigha,
+  E980/E1041 vuddhyaṃ/vuḍḍhyaṃ, verso 364 gatibhūkhana/sukhana: papel de la
+  7.ª impresión. Siete significados nuevos sin traducción todavía.
 
 - **Decidir, a la vista del aviso de derechos**, si los versos pāḷi siguen
   publicados.
