@@ -295,7 +295,7 @@
 "sentidos": [
 {
 "pali_my": "မူလေ",
-"pali": "mūle",
+"pali": "mūlye",
 "my": "အဖိုးပြတ်ခြင်း, အဖိုးထိုက်ခြင်း"
 }
 ],
@@ -306,7 +306,8 @@
 1
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66: el verso 4 y el nissaya dicen မူလျေ (mūlye); se leía «mūle»."
 },
 {
 "id": "E9",
@@ -533,10 +534,10 @@
 "n": 19,
 "cuantas": 1,
 "kanda": 1,
-"raiz_my": "အဉ္ဇော",
-"raiz": "añjo",
+"raiz_my": "အဉ္ဆော",
+"raiz": "añcho",
 "nombres": [
-"añjo"
+"añcho"
 ],
 "pagina": "53",
 "impresion": 6,
@@ -557,7 +558,8 @@
 1
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66: el margen, el verso 6 y el cuerpo del nissaya dicen အဉ္ဆော (añcho), con ဆ; se leía «añjo»."
 },
 {
 "id": "E17",
@@ -1223,7 +1225,7 @@
 "sentidos": [
 {
 "pali_my": "ပါဏဇီဝဏေ",
-"pali": "pāṇajīvaṇe",
+"pali": "pāṇajīvane",
 "my": "ရှူရှိုက်ခြင်း, အသက်ရှည်ခြင်း"
 }
 ],
@@ -1235,7 +1237,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66: verso 11 y nissaya ပါဏဇီဝနေ (pāṇajīvane), con n dental."
 },
 {
 "id": "E38",
@@ -52981,7 +52984,7 @@
 "n": 6,
 "pagina": "2",
 "lineas": [
-"achi añjo ca bhvā’yāme, ajo khepagatīsu bhū.",
+"achi añcho ca bhvā’yāme, ajo khepagatīsu bhū.",
 "aji dittiyaṃ cu ajjo, saṅkhāre bhūtu labbhane."
 ],
 "cuenta": 5,
