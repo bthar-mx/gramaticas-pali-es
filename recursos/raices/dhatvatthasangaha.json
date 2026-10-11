@@ -1,5 +1,5 @@
 {
-"_nota": "Las raíces del Dhātvatthasaṅgaha con su nissaya, del Mahāvisuddhārāma Sayadaw. La raíz es la del margen, vista en la imagen (sesión 65); «?» marca las dieciocho lecturas que la imagen no decide. El significado —el pāḷi y la glosa birmana del cuerpo del nissaya— se cotejó con la imagen en la sesión 66 (2026-10-10): sentido_estado «V» = visto; «?» = algún rasgo no se decide en la imagen (sentido_duda dice cuál); «sin-imagen» = las diez de la 7.ª impresión, sin cotejar. Romanización pāḷi con la convención del CST. Se publican raíz, significado, referencia y los versos pāḷi del libro (no el nissaya); el texto del nissaya no sale del disco del IEBH.",
+"_nota": "Las raíces del Dhātvatthasaṅgaha con su nissaya, del Mahāvisuddhārāma Sayadaw. La raíz es la del margen, vista en la imagen (sesión 65); «?» marca las lecturas que la imagen no decide (dieciocho en la sesión 65; cinco tras el cotejo con el Saddanīti, el Dhātupāṭha y la Dhātumañjūsā, 2026-10-11, que decidió entre ဃ/ယ y otros glifos ambiguos; cada cambio lleva su nota_correccion). El significado —el pāḷi y la glosa birmana del cuerpo del nissaya— se cotejó con la imagen en la sesión 66 (2026-10-10): sentido_estado «V» = visto; «?» = algún rasgo no se decide en la imagen (sentido_duda dice cuál); «sin-imagen» = las diez de la 7.ª impresión, sin cotejar. Romanización pāḷi con la convención del CST. Se publican raíz, significado, referencia y los versos pāḷi del libro (no el nissaya); el texto del nissaya no sale del disco del IEBH.",
 "fuente": {
 "titulo": "Dhātvatthasaṅgahapāṭh-nissaya",
 "titulo_my": "ဓာတွတ္ထသင်္ဂဟပါဌ်နိဿယ",
@@ -258,8 +258,8 @@
 ],
 "pagina": "52",
 "impresion": 6,
-"estado": "?",
-"duda": "ယ/ဃ dudoso en la imagen; a favor de ဃ: el significado pāpakaraṇa es el de agha (cur.)",
+"estado": "V",
+"duda": "",
 "verso": 3,
 "sentidos": [
 {
@@ -275,7 +275,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con los tratados, 2026-10-11): ယ/ဃ decidido a favor de ဃ por el Saddanīti, agha «pāpakaraṇe» (VIII 290, curādi), mismo sentido que da el nissaya; duda anterior: «ယ/ဃ dudoso en la imagen; a favor de ဃ: el significado pāpakaraṇa es el de agha (cur.)»."
 },
 {
 "id": "E8",
@@ -9425,8 +9426,8 @@
 "verso": 80,
 "sentidos": [
 {
-"pali_my": "သဥ္စယစလနေ",
-"pali": "sau⟨္⟩cayacalane",
+"pali_my": "သဉ္စယစလနေ",
+"pali": "sañcayacalane",
 "my": "ပေါင်းစုခြင်း, တုန်လှုပ်ခြင်း"
 },
 {
@@ -9443,7 +9444,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «sau⟨္⟩cayacalane» → «sañcayacalane»; sentidos[0].pali_my: «သဥ္စယစလနေ» → «သဉ္စယစလနေ»."
 },
 {
 "id": "E294",
@@ -9617,8 +9619,8 @@
 "verso": 81,
 "sentidos": [
 {
-"pali_my": "ပရိယာတေ",
-"pali": "pariyāte",
+"pali_my": "ပရိဃာတေ",
+"pali": "parighāte",
 "my": "ထက်ဝန်းကျင် နှိပ်စက်ခြင်း"
 }
 ],
@@ -9629,7 +9631,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «pariyāte» → «parighāte»; sentidos[0].pali_my: «ပရိယာတေ» → «ပရိဃာတေ»."
 },
 {
 "id": "E300",
@@ -10801,8 +10804,8 @@
 "my": "ပစ်လွှတ်ခြင်း"
 },
 {
-"pali_my": "ဂတျာယဃာတေ",
-"pali": "gatyāyaghāte",
+"pali_my": "ဂတျာဃာတေ",
+"pali": "gatyāghāte",
 "my": "အသွားပျက်ခြင်း၊ ဝါ၊ ဆွံ့ခြင်း, ခြေခွင်ခြင်း"
 }
 ],
@@ -10814,7 +10817,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali: «gatyāyaghāte» → «gatyāghāte»; sentidos[1].pali_my: «ဂတျာယဃာတေ» → «ဂတျာဃာတေ»."
 },
 {
 "id": "E336",
@@ -11548,8 +11552,8 @@
 "verso": 94,
 "sentidos": [
 {
-"pali_my": "အသနေ",
-"pali": "asane",
+"pali_my": "အသ္နေ",
+"pali": "asne",
 "my": "စားခြင်း"
 },
 {
@@ -11566,7 +11570,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «asane» → «asne»; sentidos[0].pali_my: «အသနေ» → «အသ္နေ»."
 },
 {
 "id": "E359",
@@ -11687,20 +11692,21 @@
 "verso": 96,
 "sentidos": [
 {
-"pali_my": "ပဃ္ဃရေ",
-"pali": "paghghare",
+"pali_my": "ပဂ္ဃရေ",
+"pali": "pagghare",
 "my": "ယိုစီးခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ပဃ္ဃရေ: la lectura de las consonantes geminadas no es segura en el recorte (el OCR no lee nada)",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «paghghare» → «pagghare»; sentidos[0].pali_my: «ပဃ္ဃရေ» → «ပဂ္ဃရေ»."
 },
 {
 "id": "E363",
@@ -11869,8 +11875,8 @@
 "verso": 97,
 "sentidos": [
 {
-"pali_my": "နိဝိရေ",
-"pali": "nivire",
+"pali_my": "နိဂိရေ",
+"pali": "nigire",
 "my": "မျိုခြင်း"
 }
 ],
@@ -11881,7 +11887,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «nivire» → «nigire»; sentidos[0].pali_my: «နိဝိရေ» → «နိဂိရေ»."
 },
 {
 "id": "E369",
@@ -14302,18 +14309,18 @@
 "verso": 114,
 "sentidos": [
 {
-"pali_my": "ဝိဟေ",
-"pali": "vihe",
+"pali_my": "ပိဟေ",
+"pali": "pihe",
 "my": "ချစ်နှစ်သက်ခြင်း"
 },
 {
-"pali_my": "ကတ္တေ",
-"pali": "katte",
+"pali_my": "ကက္ကေ",
+"pali": "kakke",
 "my": "အမှုန့်ပြုခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el segundo significado (ကတ္တေ según el OCR; la glosa es «hacer polvo») no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
@@ -14321,7 +14328,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «vihe» → «pihe»; sentidos[0].pali_my: «ဝိဟေ» → «ပိဟေ»; sentidos[1].pali: «katte» → «kakke»; sentidos[1].pali_my: «ကတ္တေ» → «ကက္ကေ»."
 },
 {
 "id": "E447",
@@ -15545,8 +15553,8 @@
 "verso": 124,
 "sentidos": [
 {
-"pali_my": "ဆေဒဒမှိ",
-"pali": "chedadamhi",
+"pali_my": "ဆေဒမှိ",
+"pali": "chedamhi",
 "my": "ဖြတ်ခြင်း"
 }
 ],
@@ -15557,7 +15565,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «chedadamhi» → «chedamhi»; sentidos[0].pali_my: «ဆေဒဒမှိ» → «ဆေဒမှိ»."
 },
 {
 "id": "E484",
@@ -15823,8 +15832,8 @@
 "verso": 126,
 "sentidos": [
 {
-"pali_my": "ဟာဝဓမှိ",
-"pali": "hāvadhamhi",
+"pali_my": "ဟာဝမှိ",
+"pali": "hāvamhi",
 "my": "စမ္ပါယ် ကွန့်မြူးခြင်း"
 }
 ],
@@ -15835,7 +15844,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «hāvadhamhi» → «hāvamhi»; sentidos[0].pali_my: «ဟာဝဓမှိ» → «ဟာဝမှိ»."
 },
 {
 "id": "E493",
@@ -16130,7 +16140,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "သံဝရဥဇနေ: la letra tras ဥ (¿ဇ/ဈ?) no se decide en la imagen",
 "verso_como": "texto",
 "gana": [
@@ -16157,8 +16167,8 @@
 "verso": 128,
 "sentidos": [
 {
-"pali_my": "ဥသဂ္ဂေ",
-"pali": "usagge",
+"pali_my": "ဥဿဂ္ဂေ",
+"pali": "ussagge",
 "my": "စွန့်ပစ်ခြင်း"
 },
 {
@@ -16168,7 +16178,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဥသဂ္ဂေ: ¿ဥဿဂ္ဂေ? la letra doble no es segura en la imagen",
 "verso_como": "texto",
 "gana": [
@@ -16176,7 +16186,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «usagge» → «ussagge»; sentidos[0].pali_my: «ဥသဂ္ဂေ» → «ဥဿဂ္ဂေ»."
 },
 {
 "id": "E505",
@@ -16226,8 +16237,8 @@
 "verso": 129,
 "sentidos": [
 {
-"pali_my": "ဝဓေ",
-"pali": "vadhe",
+"pali_my": "ဝမေ",
+"pali": "vame",
 "my": "ပျို့အန်ခြင်း"
 },
 {
@@ -16244,7 +16255,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «vadhe» → «vame»; sentidos[0].pali_my: «ဝဓေ» → «ဝမေ»."
 },
 {
 "id": "E507",
@@ -16513,8 +16525,8 @@
 "verso": 131,
 "sentidos": [
 {
-"pali_my": "ဒွေဓာကရှေ",
-"pali": "dvedhākarhe",
+"pali_my": "ဒွေဓာကရေ",
+"pali": "dvedhākare",
 "my": "နှစ်ဖြာပြုခြင်း"
 },
 {
@@ -16531,7 +16543,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «dvedhākarhe» → «dvedhākare»; sentidos[0].pali_my: «ဒွေဓာကရှေ» → «ဒွေဓာကရေ»."
 },
 {
 "id": "E516",
@@ -17302,7 +17315,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el primer significado es remisión: «ဇတ္တ (?) ဤမေထုန, ဝိဇမ္ဘန အနက်နှစ်ပါး»; la palabra inicial no es segura",
 "verso_como": "texto",
 "gana": [
@@ -17503,20 +17516,21 @@
 "verso": 138,
 "sentidos": [
 {
-"pali_my": "မုဒ္ဓေ",
-"pali": "muddhe",
+"pali_my": "မုဉ္စေ",
+"pali": "muñce",
 "my": "လွှတ်ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "မုဒ္ဓေ o ဓုဒ္ဓေ: la primera letra no es segura",
 "verso_como": "texto",
 "gana": [
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «muddhe» → «muñce»; sentidos[0].pali_my: «မုဒ္ဓေ» → «မုဉ္စေ»."
 },
 {
 "id": "E547",
@@ -17691,8 +17705,8 @@
 "verso": 139,
 "sentidos": [
 {
-"pali_my": "ဗြုဟေ",
-"pali": "bruhe",
+"pali_my": "ဗြူဟေ",
+"pali": "brūhe",
 "my": "ပွါးခြင်း"
 }
 ],
@@ -17703,7 +17717,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «bruhe» → «brūhe»; sentidos[0].pali_my: «ဗြုဟေ» → «ဗြူဟေ»."
 },
 {
 "id": "E553",
@@ -18495,10 +18510,10 @@
 "n": 586,
 "cuantas": 1,
 "kanda": 4,
-"raiz_my": "ဈုသော",
-"raiz": "jhuso",
+"raiz_my": "ဈသော",
+"raiz": "jhaso",
 "nombres": [
-"jhuso"
+"jhaso"
 ],
 "pagina": "155",
 "impresion": 6,
@@ -18519,7 +18534,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «jhuso» → «jhaso»; raiz_my: «ဈုသော» → «ဈသော»; nombres: «[\"jhuso\"]» → «[\"jhaso\"]»."
 },
 {
 "id": "E579",
@@ -19323,13 +19339,13 @@
 "my": "သွားခြင်း သာမာန်"
 },
 {
-"pali_my": "နဘုဂ္ဂတျုဋ္ဌနခေပေ",
-"pali": "nabhuggatyuṭṭhanakhepe",
+"pali_my": "နဘုဂ္ဂတျုဍ္ဍနခေပေ",
+"pali": "nabhuggatyuḍḍanakhepe",
 "my": "ကောင်းကင်သို့ တက်သွားခြင်း, ကျော့ကွင်းထောင်ခြင်း, ပစ်လွှတ်ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "နဘုဂ္ဂတျုဋ္ဌနခေပေ: lectura del compuesto no segura en el recorte",
 "verso_como": "texto",
 "gana": [
@@ -19337,7 +19353,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali: «nabhuggatyuṭṭhanakhepe» → «nabhuggatyuḍḍanakhepe»; sentidos[1].pali_my: «နဘုဂ္ဂတျုဋ္ဌနခေပေ» → «နဘုဂ္ဂတျုဍ္ဍနခေပေ»."
 },
 {
 "id": "E603",
@@ -19356,8 +19373,8 @@
 "verso": 150,
 "sentidos": [
 {
-"pali_my": "ခုသနေ",
-"pali": "khusane",
+"pali_my": "ဍံသနေ",
+"pali": "ḍaṃsane",
 "my": "ကိုက်ခဲခြင်း"
 }
 ],
@@ -19368,7 +19385,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «khusane» → «ḍaṃsane»; sentidos[0].pali_my: «ခုသနေ» → «ဍံသနေ»."
 },
 {
 "id": "E605",
@@ -19672,8 +19690,8 @@
 "verso": 153,
 "sentidos": [
 {
-"pali_my": "တနုကရှေ",
-"pali": "tanukarhe",
+"pali_my": "တနုကရေ",
+"pali": "tanukare",
 "my": "ပါးအောင်ပြုခြင်း"
 }
 ],
@@ -19684,7 +19702,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «tanukarhe» → «tanukare»; sentidos[0].pali_my: «တနုကရှေ» → «တနုကရေ»."
 },
 {
 "id": "E615",
@@ -19927,8 +19946,8 @@
 "verso": 155,
 "sentidos": [
 {
-"pali_my": "ဟိသာယံ",
-"pali": "hisāyaṃ",
+"pali_my": "ဟိံသာယံ",
+"pali": "hiṃsāyaṃ",
 "my": ""
 }
 ],
@@ -19939,7 +19958,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «hisāyaṃ» → «hiṃsāyaṃ»; sentidos[0].pali_my: «ဟိသာယံ» → «ဟိံသာယံ»."
 },
 {
 "id": "E623",
@@ -20068,13 +20088,13 @@
 "my": "နှစ်သက်ရောင့်ရဲခြင်း"
 },
 {
-"pali_my": "အစ္ဆေဒ သတ္တ ဟိံသာ တက္ကေ",
-"pali": "accheda satta hiṃsā takke",
+"pali_my": "အစ္ဆေဒ သန္တ ဟိံသာ တက္ကေ",
+"pali": "accheda santa hiṃsā takke",
 "my": "ဖြတ်ခြင်း, ငြိမ်သက်ခြင်း, ညှဉ်းဆဲခြင်း, ကြံစည်ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el cuarto significado sale en el recorte («အစ္ဆေဒ…»), pero la primera sílaba no es segura",
 "verso_como": "texto",
 "gana": [
@@ -20082,7 +20102,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[3].pali: «accheda satta hiṃsā takke» → «accheda santa hiṃsā takke»; sentidos[3].pali_my: «အစ္ဆေဒ သတ္တ ဟိံသာ တက္ကေ» → «အစ္ဆေဒ သန္တ ဟိံသာ တက္ကေ»."
 },
 {
 "id": "N178_2972",
@@ -22140,8 +22161,8 @@
 "my": "ထွန်းတောက်ခြင်း, ဖျက်ဆီးခြင်း, လျင်စွာသွားခြင်း"
 },
 {
-"pali_my": "ဝါကျဂ္ဂဟာတ္တမဘာယေ",
-"pali": "vākyaggahāttamabhāye",
+"pali_my": "ဝါကျဂ္ဂရဟာက္ကမဘာယေ",
+"pali": "vākyaggarahākkamabhāye",
 "my": "စကားဆိုခြင်း, ယူခြင်း, နင်းနယ်ခြင်း, ကြောက်စေခြင်း"
 },
 {
@@ -22159,7 +22180,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[2].pali: «vākyaggahāttamabhāye» → «vākyaggarahākkamabhāye»; sentidos[2].pali_my: «ဝါကျဂ္ဂဟာတ္တမဘာယေ» → «ဝါကျဂ္ဂရဟာက္ကမဘာယေ»."
 },
 {
 "id": "E688",
@@ -22545,8 +22567,8 @@
 "verso": 175,
 "sentidos": [
 {
-"pali_my": "အတ္တမေ",
-"pali": "attame",
+"pali_my": "အက္ကမေ",
+"pali": "akkame",
 "my": "နင်းနယ်ခြင်း"
 }
 ],
@@ -22557,7 +22579,8 @@
 4
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «attame» → «akkame»; sentidos[0].pali_my: «အတ္တမေ» → «အက္ကမေ»."
 },
 {
 "id": "E700",
@@ -22607,8 +22630,8 @@
 "verso": 176,
 "sentidos": [
 {
-"pali_my": "အဒ္ဓေ",
-"pali": "addhe",
+"pali_my": "အဒ္ဒေ",
+"pali": "adde",
 "my": "စိုစွတ်ခြင်း"
 }
 ],
@@ -22619,7 +22642,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «addhe» → «adde»; sentidos[0].pali_my: «အဒ္ဓေ» → «အဒ္ဒေ»."
 },
 {
 "id": "E702",
@@ -23211,8 +23235,8 @@
 "verso": 179,
 "sentidos": [
 {
-"pali_my": "ဝုနိသီယဝဓေ",
-"pali": "vunisīyavadhe",
+"pali_my": "ဝုဍ္ဎိသီဃဝဓေ",
+"pali": "vuḍḍhisīghavadhe",
 "my": "ကြီးပွားခြင်း, လျင်မြန်ခြင်း, ညှဉ်းဆဲခြင်း"
 },
 {
@@ -23228,7 +23252,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «vunisīyavadhe» → «vuḍḍhisīghavadhe»; sentidos[0].pali_my: «ဝုနိသီယဝဓေ» → «ဝုဍ္ဎိသီဃဝဓေ»."
 },
 {
 "id": "E721",
@@ -23247,20 +23272,21 @@
 "verso": 179,
 "sentidos": [
 {
-"pali_my": "ဣစ္ဆာယောရုတေ",
-"pali": "icchāyorute",
+"pali_my": "ဣစ္ဆာဃောရရုတေ",
+"pali": "icchāghorarute",
 "my": "လိုချင်ခြင်း, ပြင်းစွာ တွန်မြည်ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဣစ္ဆာယောရုတေ: lectura del compuesto (¿ဣစ္ဆာဃောရရုတေ?) no segura",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «icchāyorute» → «icchāghorarute»; sentidos[0].pali_my: «ဣစ္ဆာယောရုတေ» → «ဣစ္ဆာဃောရရုတေ»."
 },
 {
 "id": "E722",
@@ -23274,8 +23300,7 @@
 ],
 "pagina": "181",
 "impresion": 6,
-"estado": "?",
-"duda": "ယ/ဃ dudoso; a favor de ဃ: prayoga (OCR) ဒဃုဏောတိ",
+"estado": "V",
 "verso": 179,
 "sentidos": [
 {
@@ -23291,17 +23316,18 @@
 4
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"duda": ""
 },
 {
 "id": "E723",
 "n": 734,
 "cuantas": 1,
 "kanda": 5,
-"raiz_my": "ဒယိ",
-"raiz": "dayi",
+"raiz_my": "ဒဃိ",
+"raiz": "daghi",
 "nombres": [
-"dayi"
+"daghi"
 ],
 "pagina": "181",
 "impresion": 6,
@@ -23322,7 +23348,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «dayi» → «daghi»; raiz_my: «ဒယိ» → «ဒဃိ»; nombres: «[\"dayi\"]» → «[\"daghi\"]»."
 },
 {
 "id": "E724",
@@ -23471,8 +23498,8 @@
 "verso": 181,
 "sentidos": [
 {
-"pali_my": "အသီယဃေ",
-"pali": "asīyaghe",
+"pali_my": "အသီဃေ",
+"pali": "asīghe",
 "my": "မလျင် နုန့်နှေး လေးလံခြင်း"
 }
 ],
@@ -23483,7 +23510,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «asīyaghe» → «asīghe»; sentidos[0].pali_my: «အသီယဃေ» → «အသီဃေ»."
 },
 {
 "id": "E729",
@@ -24119,6 +24147,11 @@
 "verso": 186,
 "sentidos": [
 {
+"pali_my": "ဝုဒ္ဓိယံ",
+"pali": "vuddhiyaṃ",
+"my": "ကြီးပွားခြင်း"
+},
+{
 "pali_my": "ဒိတ္တိယံ",
 "pali": "dittiyaṃ",
 "my": "ထွန်းပခြင်း"
@@ -24137,7 +24170,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos: «[dittiyaṃ, dahane]» → «[vuddhiyaṃ (ဝုဒ္ဓိယံ, ကြီးပွားခြင်း), dittiyaṃ, dahane]»."
 },
 {
 "id": "E749",
@@ -24233,8 +24267,8 @@
 "verso": 188,
 "sentidos": [
 {
-"pali_my": "သောသနာလမတ္တေ",
-"pali": "sosanālamatte",
+"pali_my": "သောသနာလမတ္ထေ",
+"pali": "sosanālamatthe",
 "my": "ခြောက်သွေ့စေခြင်းအနက်, ဘူသာ သမတ္ထ ဝါရဏ ဟူသော အလံသဒ္ဒါ၏ အနက်"
 }
 ],
@@ -24245,22 +24279,22 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «sosanālamatte» → «sosanālamatthe»; sentidos[0].pali_my: «သောသနာလမတ္တေ» → «သောသနာလမတ္ထေ»."
 },
 {
 "id": "E752",
 "n": 763,
 "cuantas": 1,
 "kanda": 5,
-"raiz_my": "ဒါယော",
-"raiz": "dāyo",
+"raiz_my": "ဒါဃော",
+"raiz": "dāgho",
 "nombres": [
-"dāyo"
+"dāgho"
 ],
 "pagina": "187",
 "impresion": 6,
-"estado": "?",
-"duda": "por la forma parece ယ (trazo izquierdo corto, como E45/E72), no ဃ (E402/E405/E699); el OCR leyó ဃ y el Saddanīti tiene dāgha; decidir en el papel",
+"estado": "V",
 "verso": 188,
 "sentidos": [
 {
@@ -24281,7 +24315,9 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"duda": "",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «dāyo» → «dāgho»; raiz_my: «ဒါယော» → «ဒါဃော»; nombres: «[\"dāyo\"]» → «[\"dāgho\"]»."
 },
 {
 "id": "E753",
@@ -24468,7 +24504,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el final de la glosa (tras «အနီးသို့») queda fuera del recorte; se completa con el OCR",
 "verso_como": "texto",
 "gana": [
@@ -24482,10 +24518,10 @@
 "n": 770,
 "cuantas": 1,
 "kanda": 5,
-"raiz_my": "ဒိမ္ပော",
-"raiz": "dimpo",
+"raiz_my": "ဒိမ္ဗော",
+"raiz": "dimbo",
 "nombres": [
-"dimpo"
+"dimbo"
 ],
 "pagina": "189",
 "impresion": 6,
@@ -24506,7 +24542,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «dimpo» → «dimbo»; raiz_my: «ဒိမ္ပော» → «ဒိမ္ဗော»; nombres: «[\"dimpo\"]» → «[\"dimbo\"]»."
 },
 {
 "id": "E760",
@@ -24539,10 +24576,10 @@
 "n": 772,
 "cuantas": 1,
 "kanda": 5,
-"raiz_my": "ဒိမ္ဖော",
-"raiz": "dimpho",
+"raiz_my": "ဒိမ္ဗော",
+"raiz": "dimbo",
 "nombres": [
-"dimpho"
+"dimbo"
 ],
 "pagina": "189",
 "impresion": 6,
@@ -24563,17 +24600,18 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «dimpho» → «dimbo»; raiz_my: «ဒိမ္ဖော» → «ဒိမ္ဗော»; nombres: «[\"dimpho\"]» → «[\"dimbo\"]»."
 },
 {
 "id": "E762",
 "n": 773,
 "cuantas": 1,
 "kanda": 5,
-"raiz_my": "ဒိဗီ",
-"raiz": "dibī",
+"raiz_my": "ဒိဗိ",
+"raiz": "dibi",
 "nombres": [
-"dibī"
+"dibi"
 ],
 "pagina": "189",
 "impresion": 6,
@@ -24594,7 +24632,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «dibī» → «dibi»; raiz_my: «ဒိဗီ» → «ဒိဗိ»; nombres: «[\"dibī\"]» → «[\"dibi\"]»."
 },
 {
 "id": "E763",
@@ -24946,8 +24985,8 @@
 "verso": 195,
 "sentidos": [
 {
-"pali_my": "ပစ္ဆရုဏေ",
-"pali": "paccharuṇe",
+"pali_my": "ပဂ္ဃရဏေ",
+"pali": "paggharaṇe",
 "my": "ယိုစီးခြင်း"
 }
 ],
@@ -24958,7 +24997,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «paccharuṇe» → «paggharaṇe»; sentidos[0].pali_my: «ပစ္ဆရုဏေ» → «ပဂ္ဃရဏေ»."
 },
 {
 "id": "E774",
@@ -25720,7 +25760,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "falta la glosa con prefijo ni-: «… နိဓာနေ?… အပ်နှံသွင်းထားခြင်း»; la palabra pāḷi no sale en el recorte",
 "verso_como": "texto",
 "gana": [
@@ -27321,20 +27361,21 @@
 "verso": 213,
 "sentidos": [
 {
-"pali_my": "သောစနေ",
-"pali": "socane",
+"pali_my": "သောဓနေ",
+"pali": "sodhane",
 "my": "စင်ကြယ်အောင်ပြုခြင်း၊ ဝါ၊ ရေချိုးခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "«သောစနေ»: la palabra pāḷi sale borrosa en el recorte",
 "verso_como": "texto",
 "gana": [
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «socane» → «sodhane»; sentidos[0].pali_my: «သောစနေ» → «သောဓနေ»."
 },
 {
 "id": "E849",
@@ -27632,8 +27673,8 @@
 "verso": 215,
 "sentidos": [
 {
-"pali_my": "ဒုဂ္ဂဓေ",
-"pali": "duggadhe",
+"pali_my": "ဒုဂ္ဂမေ",
+"pali": "duggame",
 "my": "ရွုပ်ထွေးပွေယှက် အသိခက်ခြင်း"
 }
 ],
@@ -27644,7 +27685,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «duggadhe» → «duggame»; sentidos[0].pali_my: «ဒုဂ္ဂဓေ» → «ဒုဂ္ဂမေ»."
 },
 {
 "id": "E858",
@@ -28426,8 +28468,8 @@
 "verso": 221,
 "sentidos": [
 {
-"pali_my": "ကယဝိတ္တယထုတီသု",
-"pali": "kayavittayathutīsu",
+"pali_my": "ကယဝိက္ကယထုတီသု",
+"pali": "kayavikkayathutīsu",
 "my": "လဲလှယ် ဝယ်ရောင်းခြင်း, ချီးမွမ်းခြင်း"
 },
 {
@@ -28444,7 +28486,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «kayavittayathutīsu» → «kayavikkayathutīsu»; sentidos[0].pali_my: «ကယဝိတ္တယထုတီသု» → «ကယဝိက္ကယထုတီသု»."
 },
 {
 "id": "E883",
@@ -29126,7 +29169,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "သေကသ္နေဟ…: ¿သ္နေဟ o သ္နေဟ? el conjunto no es seguro en la imagen",
 "verso_como": "texto",
 "gana": [
@@ -29184,8 +29227,8 @@
 "verso": 227,
 "sentidos": [
 {
-"pali_my": "သမ္ပနေ",
-"pali": "sampane",
+"pali_my": "သပ္ပနေ",
+"pali": "sappane",
 "my": "သွားခြင်း"
 }
 ],
@@ -29196,7 +29239,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «sampane» → «sappane»; sentidos[0].pali_my: «သမ္ပနေ» → «သပ္ပနေ»."
 },
 {
 "id": "E906",
@@ -29319,8 +29363,8 @@
 "verso": 229,
 "sentidos": [
 {
-"pali_my": "ပါနရက္ခဘုဥ္ဇန ပူရ ပါပုဏနေ",
-"pali": "pānarakkhabhuu⟨္⟩jana pūra pāpuṇane",
+"pali_my": "ပါနရက္ခဘုဉ္ဇန ပူရ ပါပုဏနေ",
+"pali": "pānarakkhabhuñjana pūra pāpuṇane",
 "my": "သောက်ခြင်း, စောင့်ရှောက်ခြင်း, သုံးဆောင်ခြင်း, ပြည့်စေခြင်း, ရောက်ခြင်း"
 }
 ],
@@ -29331,7 +29375,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «pānarakkhabhuu⟨္⟩jana pūra pāpuṇane» → «pānarakkhabhuñjana pūra pāpuṇane»; sentidos[0].pali_my: «ပါနရက္ခဘုဥ္ဇန ပူရ ပါပုဏနေ» → «ပါနရက္ခဘုဉ္ဇန ပူရ ပါပုဏနေ»."
 },
 {
 "id": "E910",
@@ -29807,7 +29852,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဗလပါဏ န …: el espacio antes de «န» parece del texto, pero no es seguro",
 "verso_como": "texto",
 "gana": [
@@ -29951,7 +29996,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "«သုဘော» como tercer significado: la forma (¿nominativo?) es rara; leer en el papel",
 "verso_como": "texto",
 "gana": [
@@ -30196,10 +30241,10 @@
 "n": 946,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ပုဉ္ဆ",
-"raiz": "puñcha",
+"raiz_my": "ပုဉ္ဆော",
+"raiz": "puñcho",
 "nombres": [
-"puñcha"
+"puñcho"
 ],
 "pagina": "225",
 "impresion": 6,
@@ -30220,7 +30265,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «puñcha» → «puñcho»; raiz_my: «ပုဉ္ဆ» → «ပုဉ္ဆော»."
 },
 {
 "id": "E936",
@@ -31496,10 +31542,10 @@
 "n": 986,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ဖဒ္ဓေါ",
-"raiz": "phaddho",
+"raiz_my": "ဖဒ္ဒေါ",
+"raiz": "phaddo",
 "nombres": [
-"phaddho"
+"phaddo"
 ],
 "pagina": "234",
 "impresion": 6,
@@ -31520,7 +31566,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «phaddho» → «phaddo»; raiz_my: «ဖဒ္ဓေါ» → «ဖဒ္ဒေါ»."
 },
 {
 "id": "E976",
@@ -31594,10 +31641,10 @@
 "n": 989,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ဖဿော",
-"raiz": "phasso",
+"raiz_my": "ဖသော",
+"raiz": "phaso",
 "nombres": [
-"phasso"
+"phaso"
 ],
 "pagina": "235",
 "impresion": 6,
@@ -31606,8 +31653,8 @@
 "verso": 248,
 "sentidos": [
 {
-"pali_my": "သွေသဂယှနေ",
-"pali": "svesagayhane",
+"pali_my": "သ္လေသဂယှနေ",
+"pali": "slesagayhane",
 "my": "ယှဉ်ကပ်ခြင်း, ယူခြင်း"
 }
 ],
@@ -31618,7 +31665,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «phasso» → «phaso»; raiz_my: «ဖဿော» → «ဖသော»; sentidos[0].pali: «svesagayhane» → «slesagayhane»; sentidos[0].pali_my: «သွေသဂယှနေ» → «သ္လေသဂယှနေ»."
 },
 {
 "id": "E979",
@@ -32115,7 +32163,8 @@
 "raiz_my": "ဖေန",
 "raiz": "phena",
 "nombres": [
-"phena"
+"phena",
+"phela"
 ],
 "pagina": "237",
 "impresion": 6,
@@ -32136,7 +32185,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): nombres: «[\"phena\"]» → «[\"phena\", \"phela\"]»."
 },
 {
 "id": "E996",
@@ -32617,7 +32667,7 @@
 "n": 1022,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ဗာဟေါ",
+"raiz_my": "ဗာဟော",
 "raiz": "bāho",
 "nombres": [
 "bāho"
@@ -32641,7 +32691,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz_my: «ဗာဟေါ» → «ဗာဟော»."
 },
 {
 "id": "E1013",
@@ -32765,7 +32816,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "အက္ကုသေ အက္ကောသေ: lectura de las dos formas no segura (el OCR da အတကုသေ)",
 "verso_como": "texto",
 "gana": [
@@ -32854,20 +32905,21 @@
 "verso": 258,
 "sentidos": [
 {
-"pali_my": "ဝဇိရနိဋ္ဌိဗ္ဗေ နိဗ္ဗေသေ",
-"pali": "vajiraniṭṭhibbe nibbese",
+"pali_my": "ဝဇိရနိဗ္ဗိသေ နိဗ္ဗေသေ",
+"pali": "vajiranibbise nibbese",
 "my": "ဝဇိရစိန်သွင် စူးဝင်ဖောက်ထွင်းခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဝဇိရနိဋ္ဌိဗ္ဗေ နိဗ္ဗေသေ: lectura del par no segura en la imagen",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «vajiraniṭṭhibbe nibbese» → «vajiranibbise nibbese»; sentidos[0].pali_my: «ဝဇိရနိဋ္ဌိဗ္ဗေ နိဗ္ဗေသေ» → «ဝဇိရနိဗ္ဗိသေ နိဗ္ဗေသေ»."
 },
 {
 "id": "E1020",
@@ -32906,10 +32958,10 @@
 "n": 1031,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ဗုတ္တော",
-"raiz": "butto",
+"raiz_my": "ဗုတ္ထော",
+"raiz": "buttho",
 "nombres": [
-"butto"
+"buttho"
 ],
 "pagina": "242",
 "impresion": 6,
@@ -32930,7 +32982,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «butto» → «buttho»; raiz_my: «ဗုတ္တော» → «ဗုတ္ထော»."
 },
 {
 "id": "E1022",
@@ -33062,10 +33115,10 @@
 "n": 1036,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ဗုဒ္ဓေါ",
-"raiz": "buddho",
+"raiz_my": "ဗုန္ဓေါ",
+"raiz": "bundho",
 "nombres": [
-"buddho"
+"bundho"
 ],
 "pagina": "243",
 "impresion": 6,
@@ -33092,7 +33145,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «buddho» → «bundho»; raiz_my: «ဗုဒ္ဓေါ» → «ဗုန္ဓေါ»."
 },
 {
 "id": "E1027",
@@ -33657,7 +33711,7 @@
 },
 {
 "pali_my": "ဟိသေ",
-"pali": "hise",
+"pali": "hiṃse",
 "my": "ညှဉ်းဆဲခြင်း"
 }
 ],
@@ -33669,7 +33723,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali: «hise» → «hiṃse»."
 },
 {
 "id": "E1046",
@@ -33806,10 +33861,10 @@
 "n": 1059,
 "cuantas": 1,
 "kanda": 6,
-"raiz_my": "ဘဉ္ဇ",
-"raiz": "bhañja",
+"raiz_my": "ဘန္ဇ",
+"raiz": "bhanja",
 "nombres": [
-"bhañja"
+"bhanja"
 ],
 "pagina": "248",
 "impresion": 6,
@@ -33830,7 +33885,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «bhañja» → «bhanja»; raiz_my: «ဘဉ္ဇ» → «ဘန္ဇ»."
 },
 {
 "id": "E1051",
@@ -34042,7 +34098,7 @@
 "sentidos": [
 {
 "pali_my": "ဟိသေ",
-"pali": "hise",
+"pali": "hiṃse",
 "my": "ညှဉ်းဆဲခြင်း"
 }
 ],
@@ -34053,7 +34109,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «hise» → «hiṃse»."
 },
 {
 "id": "E1058",
@@ -34177,7 +34234,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဝဓ ဒါန နိရူပဏေ: la primera palabra (el OCR da ဝဝဝ) no es segura",
 "verso_como": "texto",
 "gana": [
@@ -34777,7 +34834,7 @@
 "sentidos": [
 {
 "pali_my": "ဓဏ္ဏနေ",
-"pali": "dhaṇṇane",
+"pali": "maṇḍane",
 "my": "တန်ဆာဆင်ခြင်း"
 }
 ],
@@ -34789,7 +34846,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «dhaṇṇane» → «maṇḍane»."
 },
 {
 "id": "E1082",
@@ -35208,8 +35266,7 @@
 ],
 "pagina": "258",
 "impresion": 6,
-"estado": "?",
-"duda": "ယ/ဃ dudoso; a favor de ဃ: mismos significados que aghi (E9)",
+"estado": "V",
 "verso": 278,
 "sentidos": [
 {
@@ -35225,7 +35282,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"duda": ""
 },
 {
 "id": "E1096",
@@ -35245,19 +35303,20 @@
 "sentidos": [
 {
 "pali_my": "ထေယျ ကတ္တ ဂဗ္ဗ သာဌေယျေ",
-"pali": "theyya katta gabba sāṭheyye",
+"pali": "theyya kakka gabba sāṭheyye",
 "my": "ခိုးခြင်း, အမှုန့်ပြုခြင်း, မာန်မူခြင်း, စဉ်းလဲခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "«ကတ္တ»: ¿ကက္က? la consonante no se decide en la imagen",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «theyya katta gabba sāṭheyye» → «theyya kakka gabba sāṭheyye»."
 },
 {
 "id": "E1097",
@@ -35717,7 +35776,7 @@
 },
 {
 "pali_my": "ဂဗ္ဗဒေဇျေ",
-"pali": "gabbadejye",
+"pali": "gabbadenye",
 "my": "မာန်မူခြင်း, ဆင်းရဲ နွမ်းပါးခြင်း"
 },
 {
@@ -35727,7 +35786,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဂဗ္ဗဒေဇျေ (¿ဂဗ္ဗဒေဇ္ဇေ?): lectura no segura",
 "verso_como": "texto",
 "gana": [
@@ -35736,7 +35795,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali: «gabbadejye» → «gabbadenye»."
 },
 {
 "id": "P7_1",
@@ -37185,19 +37245,20 @@
 "sentidos": [
 {
 "pali_my": "မောဟဝနေသု",
-"pali": "mohavanesu",
+"pali": "mohavaḍḍhanesu",
 "my": "တွေဝေခြင်း, ကြီးပွါးခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "မောဟဝ…: la sílaba central (¿ဝန/ဝဍ္ဎ?) no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali: «mohavanesu» → «mohavaḍḍhanesu»."
 },
 {
 "id": "E1148",
@@ -38242,7 +38303,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဒေဝစ္စ: ¿ဒေဝစ္စာ? la vocal final no es segura",
 "verso_como": "texto",
 "gana": [
@@ -38268,8 +38329,8 @@
 "verso": 304,
 "sentidos": [
 {
-"pali_my": "တာဠာဠပကာရေ",
-"pali": "tāḷāḷapakāre",
+"pali_my": "တာဠောပကာရေ",
+"pali": "tāḷopakāre",
 "my": "ရိုက်နှက် ပုတ်ခတ်ခြင်း, ကျေးဇူး ပြုခြင်း"
 },
 {
@@ -38279,14 +38340,15 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "တာဠာဠပကာရေ: el compuesto (¿တာဠောပကာရေ?) no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «တာဠာဠပကာရေ» → «တာဠောပကာရေ»; sentidos[0].pali: «tāḷāḷapakāre» → «tāḷopakāre»."
 },
 {
 "id": "E1182",
@@ -38489,17 +38551,23 @@
 "pali_my": "ဝါယာမေ",
 "pali": "vāyāme",
 "my": "အားထုတ်ခြင်း"
+},
+{
+"pali_my": "ဣန္ဒြိယနိဂ္ဂဟေ",
+"pali": "indriyaniggahe",
+"my": "စက္ခုစသော ဣန္ဒြေကို နှိပ်ကွပ် စောင့်စည်းခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "falta la glosa de «ဣန္ဒြိယနိဂ္ဂဟေ» (prefijo saṃ), que sigue fuera del recorte",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[4]: «(no existe)» → «{\"pali_my\": \"ဣန္ဒြိယနိဂ္ဂဟေ\", \"pali\": \"indriyaniggahe\", \"my\": \"စက္ခုစသော ဣန္ဒြေကို နှိပ်ကွပ် စောင့်စည်းခြင်း\"}»."
 },
 {
 "id": "E1188",
@@ -39218,7 +39286,7 @@
 ],
 "pagina": "286",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ dudoso (forma de ယ); a favor de ဃ: raghi gatau (sánscr.)",
 "verso": 311,
 "sentidos": [
@@ -39504,8 +39572,8 @@
 "verso": 313,
 "sentidos": [
 {
-"pali_my": "ဟိသေ",
-"pali": "hise",
+"pali_my": "ဟိံသေ",
+"pali": "hiṃse",
 "my": "ညှဉ်းဆဲခြင်း"
 }
 ],
@@ -39516,7 +39584,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ဟိသေ» → «ဟိံသေ»; sentidos[0].pali: «hise» → «hiṃse»."
 },
 {
 "id": "E1220",
@@ -40016,25 +40085,26 @@
 ],
 "pagina": "290",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ dudoso (forma de ယ); a favor de ဃ: prayoga (OCR) [ရာဃတိ] y rāghṛ sāmarthye (sánscr.); sigue «တု၊»",
 "verso": 316,
 "sentidos": [
 {
-"pali_my": "သာမတ္ထိယံ",
-"pali": "sāmatthiyaṃ",
+"pali_my": "သာမတ္ထုံ",
+"pali": "sāmatthuṃ",
 "my": "စွမ်းနိုင်ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "သာမတ္ထိယံ: la terminación (¿ထုံ/ထိယံ?) no se decide en la imagen",
 "verso_como": "orden",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «သာမတ္ထိယံ» → «သာမတ္ထုံ»; sentidos[0].pali: «sāmatthiyaṃ» → «sāmatthuṃ»."
 },
 {
 "id": "E1236",
@@ -40479,8 +40549,8 @@
 "my": "ညှဉ်းဆဲခြင်း, ပြောဆိုခြင်း"
 },
 {
-"pali_my": "ပဃ္ဃရေ",
-"pali": "paghghare",
+"pali_my": "ပဂ္ဃရေ",
+"pali": "pagghare",
 "my": "ယိုစီးခြင်း"
 },
 {
@@ -40490,7 +40560,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ပဿဝသန္တာနေ: la primera parte (¿ပသဝ?) no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
@@ -40499,7 +40569,8 @@
 5
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[2].pali_my: «ပဃ္ဃရေ» → «ပဂ္ဃရေ»; sentidos[2].pali: «paghghare» → «pagghare»."
 },
 {
 "id": "E1250",
@@ -40765,8 +40836,8 @@
 "verso": 323,
 "sentidos": [
 {
-"pali_my": "ဝိယာတော’ပဃာတေ",
-"pali": "viyāto’paghāte",
+"pali_my": "ဝိဃာတော’ပဃာတေ",
+"pali": "vighāto’paghāte",
 "my": "ပင်ပန်းခြင်း, ကပ်၍ နှိပ်စက်ခြင်း"
 }
 ],
@@ -40777,7 +40848,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ဝိယာတော’ပဃာတေ» → «ဝိဃာတော’ပဃာတေ»; sentidos[0].pali: «viyāto’paghāte» → «vighāto’paghāte»."
 },
 {
 "id": "C1375",
@@ -41662,7 +41734,7 @@
 ],
 "pagina": "300",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ indistinguibles; el OCR leyó ဃ",
 "verso": 330,
 "sentidos": [
@@ -42017,25 +42089,41 @@
 "my": "အနက်မရှိသော စကားကို ပရမ်းပတာ ဆိုခြင်း"
 },
 {
-"pali_my": "အာဝဓန္တေ",
-"pali": "āvadhante",
+"pali_my": "အာမန္တေ",
+"pali": "āmante",
 "my": "ခေါ်ဆိုခြင်း"
 },
 {
 "pali_my": "သလ္လာပေ",
 "pali": "sallāpe",
 "my": "အချင်းချင်း အဆင့်ဆင့် ပြောဆိုခြင်း"
+},
+{
+"pali_my": "အညထာဝစေ",
+"pali": "aññathāvace",
+"my": "အမှား အချော် ဆိုခြင်း"
+},
+{
+"pali_my": "မုဟုံဝါကျေ",
+"pali": "muhuṃvākye",
+"my": "အဖန်တလဲလဲ ဆိုခြင်း"
+},
+{
+"pali_my": "ဝိကတ္ထနေ",
+"pali": "vikatthane",
+"my": "ပလွား ဝါကြွား၍ ဆိုခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "la glosa de apa- (အညထာဝစေ…) sigue fuera del recorte; no se publica",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[3].pali_my: «အာဝဓန္တေ» → «အာမန္တေ»; sentidos[3].pali: «āvadhante» → «āmante». se añaden los sentidos con prefijo aññathāvace (apa-), muhuṃvākye (anu-), vikatthane (u-)."
 },
 {
 "id": "E1295",
@@ -42302,8 +42390,8 @@
 "verso": 337,
 "sentidos": [
 {
-"pali_my": "ဝိဟာယံ",
-"pali": "vihāyaṃ",
+"pali_my": "ပိဟာယံ",
+"pali": "pihāyaṃ",
 "my": "လိုချင်နှစ်သက်ခြင်း"
 },
 {
@@ -42336,7 +42424,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ဝိဟာယံ» → «ပိဟာယံ»; sentidos[0].pali: «vihāyaṃ» → «pihāyaṃ»."
 },
 {
 "id": "E1303",
@@ -42449,7 +42538,7 @@
 ],
 "pagina": "305",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ indistinguibles; significado sāmatthiya (lāghṛ sāmarthye, sánscr.) a favor de ဃ",
 "verso": 339,
 "sentidos": [
@@ -42805,8 +42894,8 @@
 "verso": 341,
 "sentidos": [
 {
-"pali_my": "အပနယနနမှိ",
-"pali": "apanayananamhi",
+"pali_my": "အပနယနမှိ",
+"pali": "apanayanamhi",
 "my": "ပယ်နှုတ်ခြင်း"
 }
 ],
@@ -42817,7 +42906,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «အပနယနနမှိ» → «အပနယနမှိ»; sentidos[0].pali: «apanayananamhi» → «apanayanamhi»."
 },
 {
 "id": "E1316",
@@ -42867,8 +42957,8 @@
 "verso": 342,
 "sentidos": [
 {
-"pali_my": "စုလဇ္ဇတ္ထေသု",
-"pali": "culajjatthesu",
+"pali_my": "စုလဇျတ္ထေသု",
+"pali": "culajyatthesu",
 "my": "စုရာဒိဂဏိက လဇိဓာတ်၏ အနက်"
 }
 ],
@@ -42879,7 +42969,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «စုလဇ္ဇတ္ထေသု» → «စုလဇျတ္ထေသု»; sentidos[0].pali: «culajjatthesu» → «culajyatthesu»."
 },
 {
 "id": "E1318",
@@ -43024,10 +43115,10 @@
 "n": 1342,
 "cuantas": 1,
 "kanda": 7,
-"raiz_my": "လုဏ္ဍ္ဏော",
-"raiz": "luṇḍṇo",
+"raiz_my": "လုဏ္ဌော",
+"raiz": "luṇṭho",
 "nombres": [
-"luṇḍṇo"
+"luṇṭho"
 ],
 "pagina": "309",
 "impresion": 6,
@@ -43048,7 +43139,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «luṇḍṇo» → «luṇṭho»; raiz_my: «လုဏ္ဍ္ဏော» → «လုဏ္ဌော»; nombres: «[\"luṇḍṇo\"]» → «[\"luṇṭho\"]»."
 },
 {
 "id": "E1322",
@@ -43172,8 +43264,8 @@
 "my": "တွေဝေခြင်း"
 },
 {
-"pali_my": "ဝိဒ္ဓိယံ",
-"pali": "viddhiyaṃ",
+"pali_my": "ဂိဒ္ဓိယံ",
+"pali": "giddhiyaṃ",
 "my": "အလွန် လိုချင်မက်မောခြင်း"
 }
 ],
@@ -43185,7 +43277,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «ဝိဒ္ဓိယံ» → «ဂိဒ္ဓိယံ»; sentidos[1].pali: «viddhiyaṃ» → «giddhiyaṃ»."
 },
 {
 "id": "E1326",
@@ -43582,8 +43675,8 @@
 "verso": 347,
 "sentidos": [
 {
-"pali_my": "အာဒါန ပဋိဃ ဒိတ္တီသု",
-"pali": "ādāna paṭigha dittīsu",
+"pali_my": "အာဒါန ပတိဃ ဒိတ္တီသု",
+"pali": "ādāna patigha dittīsu",
 "my": "ယူခြင်း, ညှဉ်းဆဲခြင်း, ထွန်းပခြင်း"
 }
 ],
@@ -43594,7 +43687,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «အာဒါန ပဋိဃ ဒိတ္တီသု» → «အာဒါန ပတိဃ ဒိတ္တီသု»; sentidos[0].pali: «ādāna paṭigha dittīsu» → «ādāna patigha dittīsu»."
 },
 {
 "id": "E1339",
@@ -43826,7 +43920,7 @@
 ],
 "pagina": "313",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ indistinguibles; mismos significados que aghi/maghi (vaghi, sánscr.)",
 "verso": 349,
 "sentidos": [
@@ -44228,8 +44322,8 @@
 "verso": 352,
 "sentidos": [
 {
-"pali_my": "သာမတ္ထထူလိယေ",
-"pali": "sāmatthathūliye",
+"pali_my": "သာမတ္ထုထူလိယေ",
+"pali": "sāmatthuthūliye",
 "my": "စွမ်းနိုင်ခြင်း, ဆူဖြိုးခြင်း"
 }
 ],
@@ -44240,7 +44334,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «သာမတ္ထထူလိယေ» → «သာမတ္ထုထူလိယေ»; sentidos[0].pali: «sāmatthathūliye» → «sāmatthuthūliye»."
 },
 {
 "id": "E1358",
@@ -44301,7 +44396,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "«ဝဏ္ဏတ္ထ» y la glosa «အညာဟူသော အနက်» no se leen con seguridad",
 "verso_como": "texto",
 "gana": [
@@ -44328,8 +44423,8 @@
 "verso": 353,
 "sentidos": [
 {
-"pali_my": "ဝဇေ",
-"pali": "vaje",
+"pali_my": "ဝဍ္ဎေ",
+"pali": "vaḍḍhe",
 "my": "ကြီးပွါးခြင်း"
 },
 {
@@ -44346,7 +44441,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ဝဇေ» → «ဝဍ္ဎေ»; sentidos[0].pali: «vaje» → «vaḍḍhe»."
 },
 {
 "id": "E1361",
@@ -44401,20 +44497,21 @@
 "verso": 353,
 "sentidos": [
 {
-"pali_my": "ထုတိ ဝိတ္ထာရသုက္ကာ’ဗျုယျုတ္တိဒီပနေ",
-"pali": "thuti vitthārasukkā’byuyyuttidīpane",
+"pali_my": "ထုတိ ဝိတ္ထာရသုက္ကာ’ဒျုယျုတ္တိဒီပနေ",
+"pali": "thuti vitthārasukkā’dyuyyuttidīpane",
 "my": "ချီးမွမ်းခြင်း, ချဲ့ဖွင့်ခြင်း, အဖြူ စသော အဆင်းကို ပြုခြင်း, အားထုတ်ခြင်း, ပြခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el compuesto (…’ဗျုယျုတ္တိ…) no se lee con seguridad en la imagen",
 "verso_como": "texto",
 "gana": [
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ထုတိ ဝိတ္ထာရသုက္ကာ’ဗျုယျုတ္တိဒီပနေ» → «ထုတိ ဝိတ္ထာရသုက္ကာ’ဒျုယျုတ္တိဒီပနေ»; sentidos[0].pali: «thuti vitthārasukkā’byuyyuttidīpane» → «thuti vitthārasukkā’dyuyyuttidīpane»."
 },
 {
 "id": "E1363",
@@ -45031,8 +45128,8 @@
 "my": "အသံပြုခြင်း"
 },
 {
-"pali_my": "သေဌျုယျမဝုဒ္ဓိသု",
-"pali": "seṭhyuyyamavuddhisu",
+"pali_my": "သေဋ္ဌုယျမဝုဒ္ဓီသု စ",
+"pali": "seṭṭhu’yyamavuddhīsu ca",
 "my": "လွန်မြတ်ခြင်း, အားထုတ်ခြင်း, ကြီးပွါးခြင်း"
 },
 {
@@ -45042,14 +45139,15 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el compuesto «သေဌျုယျမဝုဒ္ဓိသု» no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «သေဌျုယျမဝုဒ္ဓိသု» → «သေဋ္ဌုယျမဝုဒ္ဓီသု စ»; sentidos[1].pali: «seṭhyuyyamavuddhisu» → «seṭṭhu’yyamavuddhīsu ca»."
 },
 {
 "id": "E1382",
@@ -45245,8 +45343,8 @@
 "verso": 362,
 "sentidos": [
 {
-"pali_my": "ထမ္ဘော",
-"pali": "thambho",
+"pali_my": "ထမ္ဘေ",
+"pali": "thambhe",
 "my": "မာန်ခက်ထန်ခြင်း"
 }
 ],
@@ -45257,7 +45355,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ထမ္ဘော» → «ထမ္ဘေ»; sentidos[0].pali: «thambho» → «thambhe»."
 },
 {
 "id": "E1388",
@@ -45882,10 +45981,15 @@
 "pali_my": "ဝိမံသန လာဘ တုဋ္ဌျံ",
 "pali": "vimaṃsana lābha tuṭṭhyaṃ",
 "my": "စုံစမ်းဆင်ခြင်ခြင်း, ရခြင်း, နှစ်သက်ခြင်း"
+},
+{
+"pali_my": "အနုဘာဝနိဝါသာချာန ထေရိယေ",
+"pali": "anubhāva nivāsākhyāna theriye",
+"my": "ခံစားသုံးဆောင်ခြင်း, နေခြင်း, ပြောဆိုခြင်း, မြဲမြံခိုင်ခံ့ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "falta la glosa de cu-: «အနုဘာဝနိဝါသာချာန ထေရိယေ» (sentir, morar, decir, ¿firmeza?); el final sale fuera del recorte",
 "verso_como": "texto",
 "gana": [
@@ -45895,7 +45999,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[3]: «(no existe)» → «{\"pali_my\": \"အနုဘာဝနိဝါသာချာန ထေရိယေ\", \"pali\": \"anubhāva nivāsākhyāna theriye\", \"my\": \"ခံစားသုံးဆောင်ခြင်း, နေခြင်း, ပြောဆိုခြင်း, မြဲမြံခိုင်ခံ့ခြင်း\"}»."
 },
 {
 "id": "E1407",
@@ -46452,8 +46557,8 @@
 "verso": 372,
 "sentidos": [
 {
-"pali_my": "နိမ္ပဇ္ဇနေ",
-"pali": "nimpajjane",
+"pali_my": "နိမ္မဇ္ဇနေ",
+"pali": "nimmajjane",
 "my": "စင်ကြယ်ခြင်း"
 }
 ],
@@ -46464,7 +46569,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «နိမ္ပဇ္ဇနေ» → «နိမ္မဇ္ဇနေ»; sentidos[0].pali: «nimpajjane» → «nimmajjane»."
 },
 {
 "id": "E1424",
@@ -46483,8 +46589,8 @@
 "verso": 373,
 "sentidos": [
 {
-"pali_my": "ပါဂဗ္ဘိယေ",
-"pali": "pāgabbhiye",
+"pali_my": "ပါဂဗ္ဗိယေ",
+"pali": "pāgabbiye",
 "my": "ခက်ထန်မာမြင်းခြင်း"
 }
 ],
@@ -46495,7 +46601,8 @@
 4
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ပါဂဗ္ဘိယေ» → «ပါဂဗ္ဗိယေ»; sentidos[0].pali: «pāgabbhiye» → «pāgabbiye»."
 },
 {
 "id": "E1425",
@@ -47123,7 +47230,7 @@
 ],
 "pagina": "338",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ indistinguibles; a favor de ဃ: prayoga (OCR) [သဃုဏာတိ], svādi hiṃsā (ṣagha, sánscr.)",
 "verso": 378,
 "sentidos": [
@@ -47361,8 +47468,8 @@
 "my": "သွားခြင်း, နစ်ခြင်း, ဝေဖန်ခြင်း, ပျက်စီးခြင်း, ကျင်နာခြင်း"
 },
 {
-"pali_my": "သိလာဃနေ",
-"pali": "silāghane",
+"pali_my": "သီလာဃနေ",
+"pali": "sīlāghane",
 "my": "ချီးမွမ်းခြင်း"
 }
 ],
@@ -47374,7 +47481,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «သိလာဃနေ» → «သီလာဃနေ»; sentidos[1].pali: «silāghane» → «sīlāghane»."
 },
 {
 "id": "E1447",
@@ -47434,25 +47542,26 @@
 "my": "ပျင်းရိထိုင်းမှိုင်းခြင်း"
 },
 {
-"pali_my": "ဂတျာသင်္ခတ သင်္ခတေ",
-"pali": "gatyāsaṅkhata saṅkhate",
+"pali_my": "ဂတျသင်္ခတ သင်္ခတေ",
+"pali": "gatyasaṅkhata saṅkhate",
 "my": "အသွားကို မပြုပြင်ခြင်း, ပြုပြင်ခြင်း"
 },
 {
-"pali_my": "သိလာဃဒုဗ္ဗစာသု စ",
-"pali": "silāghadubbacāsu ca",
+"pali_my": "သိလာဃဒုဗ္ဗာစာသု စ",
+"pali": "silāghadubbācāsu ca",
 "my": "ချီးမွမ်းခြင်း, မကောင်းသော စကားကို ဆိုခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ဝဓက္လေသ… (¿ဝဏ္ဏ?) y ဂတျာသင်္ခတ: lecturas no seguras",
 "verso_como": "texto",
 "gana": [
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[2].pali_my: «ဂတျာသင်္ခတ သင်္ခတေ» → «ဂတျသင်္ခတ သင်္ခတေ»; sentidos[2].pali: «gatyāsaṅkhata saṅkhate» → «gatyasaṅkhata saṅkhate»; sentidos[3].pali_my: «သိလာဃဒုဗ္ဗစာသု စ» → «သိလာဃဒုဗ္ဗာစာသု စ»; sentidos[3].pali: «silāghadubbacāsu ca» → «silāghadubbācāsu ca»."
 },
 {
 "id": "E1449",
@@ -47589,10 +47698,10 @@
 "n": 1480,
 "cuantas": 1,
 "kanda": 7,
-"raiz_my": "သန္တော",
-"raiz": "santo",
+"raiz_my": "သန္ထော",
+"raiz": "santho",
 "nombres": [
-"santo"
+"santho"
 ],
 "pagina": "341",
 "impresion": 6,
@@ -47613,7 +47722,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «santo» → «santho»; raiz_my: «သန္တော» → «သန္ထော»; nombres: «[\"santo\"]» → «[\"santho\"]»."
 },
 {
 "id": "E1454",
@@ -47848,8 +47958,8 @@
 "verso": 387,
 "sentidos": [
 {
-"pali_my": "အပါနေဿဂ္ဂကိလေဒေ",
-"pali": "apānessaggakilede",
+"pali_my": "အပါနောဿဂ္ဂကိလေဒေ",
+"pali": "apāno’ssaggakilede",
 "my": "ဝင်သက်လေကို စွန့်လွှတ်ခြင်း၊ ဝါ၊ ဝမ်းလေစုန်ခြင်း, စိုစွတ်ခြင်း"
 },
 {
@@ -47859,7 +47969,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el compuesto «အပါနေဿဂ္ဂကိလေဒေ» no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
@@ -47867,7 +47977,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «အပါနေဿဂ္ဂကိလေဒေ» → «အပါနောဿဂ္ဂကိလေဒေ»; sentidos[0].pali: «apānessaggakilede» → «apāno’ssaggakilede»."
 },
 {
 "id": "E1461",
@@ -48058,8 +48169,8 @@
 "verso": 389,
 "sentidos": [
 {
-"pali_my": "ဝဏ္ဏနေ",
-"pali": "vaṇṇane",
+"pali_my": "မဏ္ဍနေ",
+"pali": "maṇḍane",
 "my": "တန်ဆာဆင်ခြင်း"
 },
 {
@@ -48076,7 +48187,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ဝဏ္ဏနေ» → «မဏ္ဍနေ»; sentidos[0].pali: «vaṇṇane» → «maṇḍane»."
 },
 {
 "id": "E1467",
@@ -48100,8 +48212,8 @@
 "my": "သွားခြင်း"
 },
 {
-"pali_my": "ဝဏ္ဏန သမ္ဗန္ဓေ",
-"pali": "vaṇṇana sambandhe",
+"pali_my": "မဏ္ဍန သမ္ဗန္ဓေ",
+"pali": "maṇḍana sambandhe",
 "my": "တန်ဆာဆင်ခြင်း, စပ်ခြင်း"
 }
 ],
@@ -48112,7 +48224,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «ဝဏ္ဏန သမ္ဗန္ဓေ» → «မဏ္ဍန သမ္ဗန္ဓေ»; sentidos[1].pali: «vaṇṇana sambandhe» → «maṇḍana sambandhe»."
 },
 {
 "id": "E1468",
@@ -48229,8 +48342,8 @@
 "my": "နှောင့်ယှက် ဗျာဝဲခြင်း"
 },
 {
-"pali_my": "တတ္တသဒ္ဒါလောစေ",
-"pali": "tattasaddāloce",
+"pali_my": "တက္ကသဒ္ဒါလောစေ",
+"pali": "takkasaddāloce",
 "my": "ကြံစည်ခြင်း, အသံပြုခြင်း, စုံစမ်းခြင်း"
 },
 {
@@ -48252,7 +48365,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «တတ္တသဒ္ဒါလောစေ» → «တက္ကသဒ္ဒါလောစေ»; sentidos[1].pali: «tattasaddāloce» → «takkasaddāloce»."
 },
 {
 "id": "E1472",
@@ -49121,8 +49235,8 @@
 "verso": 399,
 "sentidos": [
 {
-"pali_my": "သေဝ ဂတိ ဝုဒ္ဓိံ",
-"pali": "seva gati vuddhiṃ",
+"pali_my": "သေဝ ဂတိ ဝုဒ္ဓျံ",
+"pali": "seva gati vuddhyaṃ",
 "my": "မှီဝဲခြင်း, သွားခြင်း, ကြီးပွါးခြင်း"
 },
 {
@@ -49147,7 +49261,7 @@
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "«ဝုဒ္ဓိံ» (¿ဝုဒ္ဓိသု?) y el final de la glosa de ဗန္ဓနေ (fuera del recorte) no son seguros",
 "verso_como": "texto",
 "gana": [
@@ -49156,7 +49270,8 @@
 5
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «သေဝ ဂတိ ဝုဒ္ဓိံ» → «သေဝ ဂတိ ဝုဒ္ဓျံ»; sentidos[0].pali: «seva gati vuddhiṃ» → «seva gati vuddhyaṃ»."
 },
 {
 "id": "E1499",
@@ -49201,7 +49316,7 @@
 ],
 "pagina": "356",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ indistinguibles; significado āghāyana y prayoga (OCR) သိင်္ဃတိ… → ဃ (śiṅgh, sánscr.)",
 "verso": 400,
 "sentidos": [
@@ -49237,13 +49352,13 @@
 "verso": 400,
 "sentidos": [
 {
-"pali_my": "ယရဏေ",
-"pali": "yaraṇe",
+"pali_my": "ဃရဏေ",
+"pali": "gharaṇe",
 "my": "သွန်းလောင်းခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "ယရဏေ (¿ဃရဏေ?): ယ/ဃ no se decide por la forma",
 "verso_como": "texto",
 "gana": [
@@ -49251,7 +49366,8 @@
 2
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ယရဏေ» → «ဃရဏေ»; sentidos[0].pali: «yaraṇe» → «gharaṇe»."
 },
 {
 "id": "E1502",
@@ -49478,8 +49594,8 @@
 "my": "တားမြစ်ခြင်း"
 },
 {
-"pali_my": "သိဒ္ဓံ",
-"pali": "siddhaṃ",
+"pali_my": "သိဒ္ဓျံ",
+"pali": "siddhyaṃ",
 "my": "ပြီးစီး အောင်မြင်ခြင်း"
 }
 ],
@@ -49490,7 +49606,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[2].pali_my: «သိဒ္ဓံ» → «သိဒ္ဓျံ»; sentidos[2].pali: «siddhaṃ» → «siddhyaṃ»."
 },
 {
 "id": "E1509",
@@ -49726,7 +49843,7 @@
 ],
 "pagina": "360",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "ယ/ဃ indistinguibles; significado katthana (ślāgh, sánscr.) → ဃ",
 "verso": 405,
 "sentidos": [
@@ -50392,26 +50509,33 @@
 "estado": "V",
 "duda": "",
 "verso": 412,
-"sentidos": [],
+"sentidos": [
+{
+"pali_my": "နှာနမန္ထသန္ဓာပီဠေ",
+"pali": "nhānamanthasandhāpīḷe",
+"my": "ရေချိုးခြင်း, မွှေ့နှောက်ခြင်း, စပ်ခြင်း, နှိပ်စက်ခြင်း"
+}
+],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "no es un significado: el libro sólo dice que la raíz lleva anubandha ī; queda vacío hasta revisarlo",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): se añade el sentido nhānamanthasandhāpīḷe, que está en el verso 412 y en la glosa."
 },
 {
 "id": "E1537",
 "n": 1562,
 "cuantas": 1,
 "kanda": 7,
-"raiz_my": "သုဋော",
-"raiz": "suṭo",
+"raiz_my": "သုဋ္ဋော",
+"raiz": "suṭṭo",
 "nombres": [
-"suṭo"
+"suṭṭo"
 ],
 "pagina": "367",
 "impresion": 6,
@@ -50420,8 +50544,8 @@
 "verso": 412,
 "sentidos": [
 {
-"pali_my": "တုစ္ဆာနာဒရေ",
-"pali": "tucchānādare",
+"pali_my": "တုစ္ဆနာဒရေ",
+"pali": "tucchanādare",
 "my": "နည်းပါးခြင်း, မရိုသေခြင်း"
 }
 ],
@@ -50432,7 +50556,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): raiz: «suṭo» → «suṭṭo»; raiz_my: «သုဋော» → «သုဋ္ဋော»; nombres: «[\"suṭo\"]» → «[\"suṭṭo\"]»; sentidos[0].pali_my: «တုစ္ဆာနာဒရေ» → «တုစ္ဆနာဒရေ»; sentidos[0].pali: «tucchānādare» → «tucchanādare»."
 },
 {
 "id": "E1538",
@@ -50674,8 +50799,8 @@
 "verso": 414,
 "sentidos": [
 {
-"pali_my": "သုဒ္ဓံ",
-"pali": "suddhaṃ",
+"pali_my": "သုဒ္ဓျံ",
+"pali": "suddhyaṃ",
 "my": "စင်ကြယ်ခြင်း"
 },
 {
@@ -50692,7 +50817,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «သုဒ္ဓံ» → «သုဒ္ဓျံ»; sentidos[0].pali: «suddhaṃ» → «suddhyaṃ»."
 },
 {
 "id": "E1546",
@@ -51038,8 +51164,8 @@
 "my": "ရိုသေစွာ နာယူဝန်ခံခြင်း"
 },
 {
-"pali_my": "ဟိံသာပဃ္ဃရနိရာသေ",
-"pali": "hiṃsāpaghgharanirāse",
+"pali_my": "ဟိံသာပဂ္ဃရနိရာသေ",
+"pali": "hiṃsāpaggharanirāse",
 "my": "ညှဉ်းဆဲခြင်း, ယိုစေခြင်း, တားမြစ် ခြင်း"
 }
 ],
@@ -51051,7 +51177,8 @@
 8
 ],
 "gana_como": "nissaya",
-"gana_varia": true
+"gana_varia": true,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «ဟိံသာပဃ္ဃရနိရာသေ» → «ဟိံသာပဂ္ဃရနိရာသေ»; sentidos[1].pali: «hiṃsāpaghgharanirāse» → «hiṃsāpaggharanirāse»."
 },
 {
 "id": "E1557",
@@ -51287,20 +51414,21 @@
 "verso": 419,
 "sentidos": [
 {
-"pali_my": "အာရာဓနုပဘုဉ္ဇနတာသယေ",
-"pali": "ārādhanupabhuñjanatāsaye",
+"pali_my": "အာရာဓနုပဘုဉ္ဇနအာသယေ",
+"pali": "ārādhanu’pabhuñjana āsaye",
 "my": "အားရနှစ်သက်စေခြင်း, သုံးဆောင်ခံစားခြင်း, မှီခို ဆည်းကပ်ခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "el compuesto (…ဘုဉ္ဇန…သယေ) no se lee con seguridad",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «အာရာဓနုပဘုဉ္ဇနတာသယေ» → «အာရာဓနုပဘုဉ္ဇနအာသယေ»; sentidos[0].pali: «ārādhanupabhuñjanatāsaye» → «ārādhanu’pabhuñjana āsaye»."
 },
 {
 "id": "E1564",
@@ -51324,8 +51452,8 @@
 "my": "ထက်အောင်သွေးခြင်း၊ ဝါ၊ နည်းအောင် ပါးအောင်ပြုခြင်း, ဖျက်ဆီးခြင်း"
 },
 {
-"pali_my": "သိတေ",
-"pali": "site",
+"pali_my": "ဩသိတေ",
+"pali": "osite",
 "my": "ပြီးဆုံးခြင်း"
 }
 ],
@@ -51336,7 +51464,8 @@
 3
 ],
 "gana_como": "nissaya",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[1].pali_my: «သိတေ» → «ဩသိတေ»; sentidos[1].pali: «site» → «osite»."
 },
 {
 "id": "E1565",
@@ -51598,8 +51727,8 @@
 "verso": 421,
 "sentidos": [
 {
-"pali_my": "ဗလတ္တရပ္ပုတိ ကီလဗန္ဓေ",
-"pali": "balattarapputi kīlabandhe",
+"pali_my": "ဗလက္ကရပ္လုတိ ကီလဗန္ဓေ",
+"pali": "balakkarapluti kīlabandhe",
 "my": "အနိုင့်အထက်မူခြင်း, ပေါလောပေါ်ခြင်း, တံသင်း၌ ဖွဲ့ချည်ခြင်း"
 }
 ],
@@ -51610,7 +51739,8 @@
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[0].pali_my: «ဗလတ္တရပ္ပုတိ ကီလဗန္ဓေ» → «ဗလက္ကရပ္လုတိ ကီလဗန္ဓေ»; sentidos[0].pali: «balattarapputi kīlabandhe» → «balakkarapluti kīlabandhe»."
 },
 {
 "id": "E1574",
@@ -51825,20 +51955,21 @@
 "my": "စကား ဆိုခြင်း"
 },
 {
-"pali_my": "ဒူရီကရဏေ",
-"pali": "dūrīkaraṇe",
-"my": "ဝေးအောင်ပြုခြင်း"
+"pali_my": "ဒူရိကရဏေ",
+"pali": "dūrikaraṇe",
+"my": "ဝေးအောင်ပြုခြင်း၊ ဝါ၊ အဝေးသို့ ပယ်ရှားခြင်း"
 }
 ],
 "comparte": false,
-"sentido_estado": "?",
+"sentido_estado": "V",
 "sentido_duda": "la glosa de ဒူရီကရဏေ sigue fuera del recorte («… ဝါ၊ အဝေးသို့ …»)",
 "verso_como": "texto",
 "gana": [
 1
 ],
 "gana_como": "v18",
-"gana_varia": false
+"gana_varia": false,
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): sentidos[4]: «{\"pali_my\":\"ဒူရီကရဏေ\",\"pali\":\"dūrīkaraṇe\",\"my\":\"ဝေးအောင်ပြုခြင်း\"}» → «{\"pali_my\":\"ဒူရိကရဏေ\",\"pali\":\"dūrikaraṇe\",\"my\":\"ဝေးအောင်ပြုခြင်း၊ ဝါ၊ အဝေးသို့ ပယ်ရှားခြင်း\"}»."
 },
 {
 "id": "E1580",
@@ -52307,7 +52438,7 @@
 ],
 "pagina": "384",
 "impresion": 6,
-"estado": "?",
+"estado": "V",
 "duda": "la primera vocal es un anillo grueso: ¿ိ o ီ? (el OCR leyó ဟီ); prayoga ဟိမ္ဗတိ",
 "verso": 428,
 "sentidos": [
@@ -54123,7 +54254,7 @@
 "pagina": "8",
 "lineas": [
 "khandho cu rāsikaraṇe, khanu vidāraṇe khapo.",
-"khepe cu khapi sahane, khabbo dappe gatepi ca."
+"khepe cu khapi sahane, khabbo dabbe gatepi ca."
 ],
 "cuenta": 5,
 "kanda": 3,
@@ -54134,7 +54265,7 @@
 "E284",
 "E285"
 ],
-"duda": "«dappe» (¿dabbe?): ပ္ပ/ဗ္ဗ no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «khepe cu khapi sahane, khabbo dappe gatepi ca.» → «khepe cu khapi sahane, khabbo dabbe gatepi ca.» (El verso imprime dabbe (lectura que también trae el SD) y la glosa dappe; se publica el verso como lo imprime el libro y se quita la duda; anótese la discrepancia verso/glosa.)"
 },
 {
 "n": 79,
@@ -54174,7 +54305,7 @@
 "pagina": "9",
 "lineas": [
 "khaḷo cu bhede khā khyā ca, kathane pākaṭepi ca.",
-"khādo bhakkhaṇe khādi tu, pariyāte pavattati."
+"khādo bhakkhaṇe khādi tu, parighāte pavattati."
 ],
 "cuenta": 5,
 "kanda": 3,
@@ -54184,7 +54315,8 @@
 "E297",
 "E298",
 "E299"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «khādo bhakkhaṇe khādi tu, pariyāte pavattati.» → «khādo bhakkhaṇe khādi tu, parighāte pavattati.» (Mismo caso ဃ/ယ en el verso.)"
 },
 {
 "n": 82,
@@ -54252,7 +54384,7 @@
 "n": 86,
 "pagina": "9",
 "lineas": [
-"khujū theyye khuḍo khuḍa, cu bhede khuḍi khañjane.",
+"khujū theyye khuḍo khuḍi, cu bhede khuḍi khañjane.",
 "khuṇo to hiṃsane khudo, pipāsāsahakīḷane."
 ],
 "cuenta": 5,
@@ -54265,7 +54397,7 @@
 "E317",
 "E318"
 ],
-"duda": "«khuḍa» del primer renglón no se lee con seguridad"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «khujū theyye khuḍo khuḍa, cu bhede khuḍi khañjane.» → «khujū theyye khuḍo khuḍi, cu bhede khuḍi khañjane.» (La imagen trae ခုဍိ (con ိ), no khuḍa; coincide con la raíz E315 khuḍi; se quita la duda del verso (el gana_nota de E314 «khuḍo khuḍa» debería decir «khuḍo khuḍi»).)"
 },
 {
 "n": 87,
@@ -54379,7 +54511,7 @@
 "n": 93,
 "pagina": "10",
 "lineas": [
-"gabbo gatyaṃ cubhū dappe, gambho gatimhi gabbha tu.",
+"gabbo gatyaṃ cubhū dappe, gambo gatimhi gabbha tu.",
 "krūradhāre gamu gatyaṃ, āpubbo cva’dhivāsane."
 ],
 "cuenta": 4,
@@ -54390,7 +54522,7 @@
 "E354",
 "E355"
 ],
-"duda": "«gambho» (¿gambo?): el margen lee gambo"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «gabbo gatyaṃ cubhū dappe, gambho gatimhi gabbha tu.» → «gabbo gatyaṃ cubhū dappe, gambo gatimhi gabbha tu.» (El verso imprime gambo, no gambho; se quita la duda.)"
 },
 {
 "n": 94,
@@ -54562,7 +54694,7 @@
 "n": 104,
 "pagina": "11",
 "lineas": [
-"ghaggo hāse ghaṭo bhūcu, cetāyaṃ cutu hiṃsana-",
+"ghaggho hāse ghaṭo bhūcu, cetāyaṃ cutu hiṃsana-",
 "dittīsu bhūcu saṅghāte, ghaṭi rave cubhū jute."
 ],
 "cuenta": 3,
@@ -54571,7 +54703,8 @@
 "E401",
 "E402",
 "E403"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «ghaggo hāse ghaṭo bhūcu, cetāyaṃ cutu hiṃsana-» → «ghaggho hāse ghaṭo bhūcu, cetāyaṃ cutu hiṃsana-» (El verso imprime ghaggho como la raíz publicada; ghaggo es error de transcripción (sin tratado que lo atestigüe: SD, DP y DM no traen ghaggha).)"
 },
 {
 "n": 105,
@@ -54662,7 +54795,7 @@
 "n": 110,
 "pagina": "12",
 "lineas": [
-"110 cako tittipatighāta- parivitakkadittisu.",
+"cako tittipatighāta- parivitakkadittisu.",
 "cakāso dittiyaṃyeva, caki caṅko ca cañcale."
 ],
 "cuenta": 4,
@@ -54672,7 +54805,8 @@
 "E429",
 "E430",
 "E431"
-]
+],
+"nota_correccion": "Sesión 66: se quita un resto del OCR («110 cako») en la línea 1."
 },
 {
 "n": 111,
@@ -54712,7 +54846,7 @@
 "lineas": [
 "caḍi caṇḍo cubhū caṇḍe ca ṇo dānagatibbadha.",
 "saddesu cato cado ca, yāce cadi hilādane.",
-"dittikkacchākantīsu ca, cano tu saddahiṃsane. 7"
+"dittikkacchākantīsu ca, cano tu saddahiṃsane. 7 ."
 ],
 "cuenta": 7,
 "kanda": 4,
@@ -54724,14 +54858,15 @@
 "E443",
 "E444",
 "E445"
-]
+],
+"nota_correccion": "Sesión 66: se quita un resto del OCR («7») en la línea 3."
 },
 {
 "n": 114,
 "pagina": "12",
 "lineas": [
-"capo bhū vihe cu kakke, capi gatyaṃ cu cabba bhū.",
-"gatiyaṃ cubhū bhakkhaṇe, cammo ca gatibhakkhaṇe. 4 ["
+"capo bhū pihe cu kakke, capi gatyaṃ cu cabba bhū.",
+"gatiyaṃ cubhū bhakkhaṇe, cammo ca gatibhakkhaṇe. 4 ."
 ],
 "cuenta": 4,
 "kanda": 4,
@@ -54740,7 +54875,8 @@
 "E447",
 "E448",
 "E449"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «capo bhū vihe cu kakke, capi gatyaṃ cu cabba bhū.» → «capo bhū pihe cu kakke, capi gatyaṃ cu cabba bhū.» (El verso imprime pihe.) Sesión 66: se quita un resto del OCR («4 [») en la línea 2."
 },
 {
 "n": 115,
@@ -54762,7 +54898,7 @@
 "pagina": "12",
 "lineas": [
 "calo bhū kampavilāsa- gatīsu cutu posane.",
-"caso vadhabhakkhe caho, sāṭheye bhūcuro siyā. 3⟨ု⟩"
+"caso vadhabhakkhe caho, sāṭheye bhūcuro siyā. 3 ."
 ],
 "cuenta": 3,
 "kanda": 4,
@@ -54770,14 +54906,15 @@
 "E453",
 "E454",
 "E455"
-]
+],
+"nota_correccion": "Sesión 66: se quita un resto del OCR («3⟨ု⟩») en la línea 2."
 },
 {
 "n": 117,
 "pagina": "13",
 "lineas": [
 "cāyo pūjānisāmane, ci caye svākibhūcu u.",
-"vaḍḍhane apa bhindane, nho che saṃu samuccaye."
+"vaḍḍhane apa bhindane, nyo che saṃu samuccaye."
 ],
 "cuenta": 2,
 "kanda": 4,
@@ -54785,13 +54922,13 @@
 "E456",
 "E457"
 ],
-"duda": "segundo renglón: «vaḍḍhane apa» y «nho/no» no se leen con seguridad"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vaḍḍhane apa bhindane, nho che saṃu samuccaye.» → «vaḍḍhane apa bhindane, nyo che saṃu samuccaye.» (Verso y glosa imprimen နျော (nyo = ni + o); se quita la duda.)"
 },
 {
 "n": 118,
 "pagina": "13",
 "lineas": [
-"citto cu pīḷane cikkho, byattavācāya ciṅgulo.",
+"cikko cu pīḷane cikkho, byattavācāya ciṅgulo.",
 "paribbhame cu ciṭo bhū, bhayattose cu pesane."
 ],
 "cuenta": 4,
@@ -54801,7 +54938,8 @@
 "E459",
 "E460",
 "E461"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «citto cu pīḷane cikkho, byattavācāya ciṅgulo.» → «cikko cu pīḷane cikkho, byattavācāya ciṅgulo.» (El verso imprime cikko.)"
 },
 {
 "n": 119,
@@ -54922,7 +55060,7 @@
 "n": 126,
 "pagina": "13",
 "lineas": [
-"culo cu samuccayamhi, cullo hāvadhamhi cūṇa cu.",
+"culo cu samuccayamhi, cullo hāvamhi cūṇa cu.",
 "saṅkoce cūro di dāhe, cūso pāne pavattati."
 ],
 "cuenta": 5,
@@ -54934,14 +55072,14 @@
 "E494",
 "E495"
 ],
-"duda": "«hāvadhamhi»: la sílaba central no es segura"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «culo cu samuccayamhi, cullo hāvadhamhi cūṇa cu.» → «culo cu samuccayamhi, cullo hāvamhi cūṇa cu.» (El verso imprime hāvamhi; se quita la duda.)"
 },
 {
 "n": 127,
 "pagina": "13",
 "lineas": [
 "ceṭo īhāyaṃ celo ca, cello ca gaticālane.",
-"cevi cetanātulylesu, iki cādī dvisattari. 4."
+"cevi cetanātulylesu, iki cādī dvisattari. 4 ."
 ],
 "cuenta": 4,
 "kanda": 4,
@@ -54951,7 +55089,8 @@
 "E498",
 "E499"
 ],
-"cierre": "iki cādī dvisattari. 72"
+"cierre": "iki cādī dvisattari. 72",
+"nota_correccion": "Sesión 66: se quita un resto del OCR («4») en la línea 2."
 },
 {
 "n": 128,
@@ -55023,7 +55162,7 @@
 "n": 132,
 "pagina": "14",
 "lineas": [
-"chukho chede chupo phasse, chubho nicchubhane churo.",
+"chuḍo chede chupo phasse, chubho nicchubhane churo.",
 "chede che ca di chedo cu, chādīme catuvīsati."
 ],
 "cuenta": 6,
@@ -55036,8 +55175,8 @@
 "E523",
 "E524"
 ],
-"duda": "«chukho» del verso corresponde a la raíz chuḍo del margen (asignada aquí por la cuenta del verso); la consonante no se decide",
-"cierre": "chādī’me catuvīsati. 24 · 96"
+"cierre": "chādī’me catuvīsati. 24 · 96",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «chukho chede chupo phasse, chubho nicchubhane churo.» → «chuḍo chede chupo phasse, chubho nicchubhane churo.» (El verso imprime chuḍo, como el margen y el lema; se quita la duda (no hay tratado con chuḍa: SD sólo chu/chuṭa).)"
 },
 {
 "n": 133,
@@ -55095,7 +55234,7 @@
 "pagina": "14",
 "lineas": [
 "jabho methunavijambhe, jabhi cettha cu nāsane.",
-"jamu bhakkhe jaro rogo vayohānya cukīdibhū."
+"jamu bhakkhe jaro roge, vayohānyaṃ cukīdibhū."
 ],
 "cuenta": 4,
 "kanda": 4,
@@ -55104,27 +55243,29 @@
 "E540",
 "E541",
 "E542"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «jamu bhakkhe jaro rogo vayohānya cukīdibhū.» → «jamu bhakkhe jaro roge, vayohānyaṃ cukīdibhū.» (El verso imprime roge y vayohānyaṃ, como los sentidos publicados.)"
 },
 {
 "n": 137,
 "pagina": "14",
 "lineas": [
 "jalo bhū ditti calana- tikkhadhaññe cu chādane.",
-"jaso cu tāḷanaanā- daresu bhūcu hiṃsane. 2]"
+"jaso cu tāḷanaanā- daresu bhūcu hiṃsane. 2 ."
 ],
 "cuenta": 2,
 "kanda": 4,
 "raices": [
 "E543",
 "E544"
-]
+],
+"nota_correccion": "Sesión 66: se quita un resto del OCR («2]») en la línea 2."
 },
 {
 "n": 138,
 "pagina": "15",
 "lineas": [
-"jasi rakkhe cu jasu di, muddhe jasso’ttirakkhaṇa.",
+"jasi rakkhe cu jasu di, muñce jasso’ttirakkhaṇa.",
 "bhassesu jā jarāyaṃ kī, jāgaro vibudhe tabhū."
 ],
 "cuenta": 5,
@@ -55136,7 +55277,7 @@
 "E548",
 "E549"
 ],
-"duda": "«muddhe» (¿vuddhe?): la primera letra no es segura"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «jasi rakkhe cu jasu di, muddhe jasso’ttirakkhaṇa.» → «jasi rakkhe cu jasu di, muñce jasso’ttirakkhaṇa.» (El verso imprime muñce; se quita la duda.)"
 },
 {
 "n": 139,
@@ -55161,7 +55302,7 @@
 "pagina": "15",
 "lineas": [
 "jīvo pāṇadhāraṇamhi, ju jave ca gate jugi.",
-"cāge juḍḍho gatibandhe, curādiko tu peraṇe."
+"cāge juḍo gatibandhe, curādiko tu peraṇe."
 ],
 "cuenta": 4,
 "kanda": 4,
@@ -55170,7 +55311,8 @@
 "E557",
 "E558",
 "E559"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «cāge juḍḍho gatibandhe, curādiko tu peraṇe.» → «cāge juḍo gatibandhe, curādiko tu peraṇe.» (Como en khaḍo/khuḍo, la cola de ဍ no es consonante apilada; el verso imprime juḍo, como la raíz publicada.)"
 },
 {
 "n": 141,
@@ -55311,8 +55453,8 @@
 "n": 149,
 "pagina": "16",
 "lineas": [
-"ḍabi saṃghe ḍabhi noda-saṃhate.",
-"ḍipo nodasaṃghe ḍipi, saṃhate divi nodane."
+"ḍapi saṃghe ḍabi noda-saṃhate ḍabhi saṃhate.",
+"ḍipo nodasaṃghe ḍipi, saṃhate ḍibi nodane."
 ],
 "cuenta": 6,
 "kanda": 4,
@@ -55324,7 +55466,8 @@
 "E598",
 "E599"
 ],
-"duda": "el primer renglón no sale en el recorte: se toma del nissaya (ḍabi, ḍabhi); para el papel"
+"duda": "el primer renglón no sale en el recorte: se toma del nissaya (ḍabi, ḍabhi); para el papel",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «ḍabi saṃghe ḍabhi noda-saṃhate.» → «ḍapi saṃghe ḍabi noda-saṃhate ḍabhi saṃhate.» (La imagen completa trae el renglón entero, que cuadra con las tres raíces publicadas; se quita la duda.); «ḍipo nodasaṃghe ḍipi, saṃhate divi nodane.» → «ḍipo nodasaṃghe ḍipi, saṃhate ḍibi nodane.» (El verso imprime ḍibi (= E599).)"
 },
 {
 "n": 150,
@@ -55384,7 +55527,7 @@
 "pagina": "17",
 "lineas": [
 "taccho tanukare tajjo, bhassane bhūcu tañju ru.",
-"saṅkoce taṭo ussaye’yāghāte tu curādiko."
+"saṅkoce taṭo ussaye, āghāte tu curādiko."
 ],
 "cuenta": 4,
 "kanda": 5,
@@ -55394,7 +55537,7 @@
 "E616",
 "E617"
 ],
-"duda": "«ussaye’yāghāte» (¿ussayāghāte?): la sílaba no es segura"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «saṅkoce taṭo ussaye’yāghāte tu curādiko.» → «saṅkoce taṭo ussaye, āghāte tu curādiko.» (No hay sílaba «’yā»: el libro imprime ussaye, coma y āghāte.)"
 },
 {
 "n": 154,
@@ -55621,7 +55764,7 @@
 "n": 168,
 "pagina": "18",
 "lineas": [
-"tummo tupho tumpho cettha, tubi dhātva’ddane cubhū.",
+"tumpo tupho tumpho ce’ttha, tubi dhātva’ddane cubhū.",
 "tubbī hiṃsāyaṃ tubhopi, bhūdikī tura vegaje."
 ],
 "cuenta": 7,
@@ -55635,14 +55778,14 @@
 "E670",
 "E671"
 ],
-"duda": "primera línea: «tummo/tumpho» y «tupho» no se leen con seguridad (el margen da tumpo, tupho, tumpho)"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «tummo tupho tumpho cettha, tubi dhātva’ddane cubhū.» → «tumpo tupho tumpho ce’ttha, tubi dhātva’ddane cubhū.» (La primera raíz del verso es tumpo, como el lema; también se imprime la elisión ce’ttha.)"
 },
 {
 "n": 169,
 "pagina": "18",
 "lineas": [
 "tulo ummāne bhūcuro, tuvaṭṭo cu nipajjane.",
-"tuso di tuṭṭu bhū sadde, tuho tuḷo ca hiṃsane."
+"tuso di tuṭṭhyaṃ bhū sadde, tuho tuḷo ca hiṃsane."
 ],
 "cuenta": 5,
 "kanda": 5,
@@ -55652,7 +55795,8 @@
 "E674",
 "E675",
 "E676"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «tuso di tuṭṭu bhū sadde, tuho tuḷo ca hiṃsane.» → «tuso di tuṭṭhyaṃ bhū sadde, tuho tuḷo ca hiṃsane.» (El verso imprime တုဋ္ဌျံ (tuṭṭhyaṃ), no «tuṭṭu».)"
 },
 {
 "n": 170,
@@ -55692,13 +55836,14 @@
 "pagina": "18",
 "lineas": [
 "traso dibhū bhaye cutu, dittibyāghātasīghage.",
-"vākyaggahā’kkamabhāye, nisedhadhāraṇesu ca."
+"vākyaggarahā’kkamabhāye, nisedhadhāraṇesu ca."
 ],
 "cuenta": 1,
 "kanda": 5,
 "raices": [
 "E686"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vākyaggahā’kkamabhāye, nisedhadhāraṇesu ca.» → «vākyaggarahā’kkamabhāye, nisedhadhāraṇesu ca.» (El verso impreso lleva ရ; anotar posible errata por -ggahā-.)"
 },
 {
 "n": 173,
@@ -55753,8 +55898,8 @@
 "n": 176,
 "pagina": "19",
 "lineas": [
-"thipo sete thimo dya’dde. thiro daḷattane thivu.",
-"dittiyaṃ thīno thīmo bhū, saṅghāte di pa’roddane."
+"thipo seke thimo dya’dde, thiro daḷattane thivu.",
+"dittiyaṃ thīno thīmo bhū, saṅghāte di paro’ddane."
 ],
 "cuenta": 6,
 "kanda": 5,
@@ -55766,7 +55911,7 @@
 "E704",
 "E705"
 ],
-"duda": "«paroddane / pa’roddane» y «thiro» no se leen con seguridad"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «thipo sete thimo dya’dde. thiro daḷattane thivu.» → «thipo seke thimo dya’dde, thiro daḷattane thivu.» (El verso imprime သေကေ; «sete» y el punto tras dya’dde son errores de transcripción.); «dittiyaṃ thīno thīmo bhū, saṅghāte di pa’roddane.» → «dittiyaṃ thīno thīmo bhū, saṅghāte di paro’ddane.» (El libro imprime paro + addane (la elisión va tras paro), como explica el nissaya.)"
 },
 {
 "n": 177,
@@ -55810,8 +55955,8 @@
 "n": 179,
 "pagina": "19",
 "lineas": [
-"dako cu assāde dakkho vuḍḍhisīyavadhe gate.",
-"dakhi icchāyorarute, dayo svā yātane siyā."
+"dako cu assāde dakkho vuḍḍhisīghavadhe gate.",
+"dakhi icchāghorarute, dagho svā ghātane siyā."
 ],
 "cuenta": 4,
 "kanda": 5,
@@ -55821,13 +55966,13 @@
 "E721",
 "E722"
 ],
-"duda": "«vuḍḍhisīyavadhe», «icchāyorarute», «dayo/yātane»: ယ/ဃ no se decide (el nissaya lee sīgha, ghāta)"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «dako cu assāde dakkho vuḍḍhisīyavadhe gate.» → «dako cu assāde dakkho vuḍḍhisīghavadhe gate.» (ဃ/ယ decidido por el tratado (sīgha). El nissaya imprime ahí ဝဍ္ဎိ (vaḍḍhi); no se ha visto el verso del mūla, por eso se conserva vuḍḍhi.); «dakhi icchāyorarute, dayo svā yātane siyā.» → «dakhi icchāghorarute, dagho svā ghātane siyā.» (Las tres voces con ဃ/ယ se deciden por el sentido y los tratados.)"
 },
 {
 "n": 180,
 "pagina": "19",
 "lineas": [
-"dayi cāgarakkhaṇesu, daḍi āṇāya bhūcuro.",
+"daghi cāgarakkhaṇesu, daḍi āṇāya bhūcuro.",
 "daṇḍo cu daṇḍanipāte, dado dāne ca dhāraṇe. 4 ."
 ],
 "cuenta": 4,
@@ -55837,14 +55982,15 @@
 "E724",
 "E725",
 "E726"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «dayi cāgarakkhaṇesu, daḍi āṇāya bhūcuro.» → «daghi cāgarakkhaṇesu, daḍi āṇāya bhūcuro.» (Ídem.)"
 },
 {
 "n": 181,
 "pagina": "19",
 "lineas": [
-"dadho tathā dadhya’sīye, davū di hāsagabbane.",
-"dappo gabbe cubhū sandī- pane davi gate siyā."
+"dadho tathā dadhya’sīghe, dapū di hāsagabbane.",
+"dappo gabbe cubhū sandī- pane dabi gate siyā."
 ],
 "cuenta": 5,
 "kanda": 5,
@@ -55855,7 +56001,7 @@
 "E730",
 "E731"
 ],
-"duda": "«dadhya’sīye» (¿sīghe?) no seguro"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «dadho tathā dadhya’sīye, davū di hāsagabbane.» → «dadho tathā dadhya’sīghe, dapū di hāsagabbane.» (El verso imprime ဒပူ (como el lema E729) y sīghe.); «dappo gabbe cubhū sandī- pane davi gate siyā.» → «dappo gabbe cubhū sandī- pane dabi gate siyā.» (El verso imprime ဗ, como el lema.)"
 },
 {
 "n": 182,
@@ -55952,7 +56098,7 @@
 "n": 188,
 "pagina": "20",
 "lineas": [
-"dākho sosanālamatthe, dāyo āyāsasattisu.",
+"dākho sosanālamatthe, dāgho āyāsasattisu.",
 "bhamāyāmesu ca dāno, avakhaṇḍanā’jjave."
 ],
 "cuenta": 3,
@@ -55962,7 +56108,7 @@
 "E752",
 "E753"
 ],
-"duda": "«dāyo» (¿dāgho?): ယ/ဃ no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «dākho sosanālamatthe, dāyo āyāsasattisu.» → «dākho sosanālamatthe, dāgho āyāsasattisu.» (Acompaña al cambio de lema.)"
 },
 {
 "n": 189,
@@ -55986,20 +56132,21 @@
 "pagina": "20",
 "lineas": [
 "dikkho bhū muṇḍiyijjana- niyamopanayesu ca.",
-"vatādese ca svā vadhe dimbo cu saṃhate siyā. 2]"
+"vatādese ca svā vadhe dimbo cu saṃhate siyā. 2 ."
 ],
 "cuenta": 2,
 "kanda": 5,
 "raices": [
 "E758",
 "E759"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vatādese ca svā vadhe dimbo cu saṃhate siyā. 2]» → «vatādese ca svā vadhe dimbo cu saṃhate siyā. 2 .» (El corchete final es resto del OCR; el libro imprime la cifra 2 seguida de ။.)"
 },
 {
 "n": 191,
 "pagina": "20",
 "lineas": [
-"dipho dimbo ca pīḷāyaṃ, divi pītikare dibhi.",
+"dipho dimbo ca pīḷāyaṃ, dibi pītikare dibhi.",
 "node cu dimbho saṅghāte, divo cu kūjapīḷane."
 ],
 "cuenta": 6,
@@ -56012,7 +56159,8 @@
 "E764",
 "E765"
 ],
-"duda": "«dimbo» (¿dimmo?) no seguro"
+"duda": "«dimbo» (¿dimmo?) no seguro",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «dipho dimbo ca pīḷāyaṃ, divi pītikare dibhi.» → «dipho dimbo ca pīḷāyaṃ, dibi pītikare dibhi.» (El verso imprime ဗ; también queda resuelta la duda «dimbo (¿dimmo?)»: el subíndice es ဗ.)"
 },
 {
 "n": 192,
@@ -56156,7 +56304,7 @@
 "pagina": "21",
 "lineas": [
 "dhassu hiṃsāsaṅghātesu, dhā dhāradānaposane.",
-"nitu nyāse vi karaṇe, ā āropebhi bhāsane."
+"nitu nyāse vi karaṇe, ā ārope’bhi bhāsane."
 ],
 "cuenta": 2,
 "kanda": 5,
@@ -56164,7 +56312,7 @@
 "E796",
 "E797"
 ],
-"duda": "«āropebhi» (¿āropa’bhi?) no seguro"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «nitu nyāse vi karaṇe, ā āropebhi bhāsane.» → «nitu nyāse vi karaṇe, ā ārope’bhi bhāsane.» (El libro imprime la elisión (ārope + abhi).)"
 },
 {
 "n": 202,
@@ -56694,7 +56842,7 @@
 "pagina": "24",
 "lineas": [
 "piho ci’cchāyaṃ bhū gatyaṃ, piḷadhya’laṅkāre siyā.",
-"pī bhūcukī tappane di, pītipāne dikī subhe."
+"pī bhūcukī tappane di, pītipāne dikī subho."
 ],
 "cuenta": 3,
 "kanda": 6,
@@ -56702,7 +56850,8 @@
 "E925",
 "E926",
 "E927"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «pī bhūcukī tappane di, pītipāne dikī subhe.» → «pī bhūcukī tappane di, pītipāne dikī subho.» (El verso imprime subho.)"
 },
 {
 "n": 235,
@@ -56774,7 +56923,7 @@
 "n": 239,
 "pagina": "25",
 "lineas": [
-"putto cu bandhā’nādarā-dare puno gate caye.",
+"puttho cu bandhā’nādarā-dare puno gate caye.",
 "puppho vikāse pubbo bhū, pūraṇe cu niketane."
 ],
 "cuenta": 4,
@@ -56785,7 +56934,7 @@
 "E947",
 "E948"
 ],
-"duda": "«puttho» (margen) frente a «putto» (verso): la aspirada no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «putto cu bandhā’nādarā-dare puno gate caye.» → «puttho cu bandhā’nādarā-dare puno gate caye.» (El verso imprime ttha, como el lema; la duda del verso queda resuelta.)"
 },
 {
 "n": 240,
@@ -56901,7 +57050,7 @@
 "n": 247,
 "pagina": "26",
 "lineas": [
-"phadi kiñcicalanamhi, phaddho paribhavicchane.",
+"phadi kiñcicalanamhi, phaddo paribhavi’cchane.",
 "pharo byāpanagatīsu, pakāsacalanesu ca."
 ],
 "cuenta": 3,
@@ -56910,14 +57059,15 @@
 "E974",
 "E975",
 "E976"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «phadi kiñcicalanamhi, phaddho paribhavicchane.» → «phadi kiñcicalanamhi, phaddo paribhavi’cchane.» (El verso imprime ဖဒ္ဒေါ y la elisión paribhavi’cchane.)"
 },
 {
 "n": 248,
 "pagina": "26",
 "lineas": [
 "phalo nipphattiabyatta- saddabhijjanabhedana-",
-"gatippakāsacalesu, phaso cu sallesagayhane."
+"gatippakāsacalesu, phaso cu slesagayhane."
 ],
 "cuenta": 2,
 "kanda": 6,
@@ -56925,7 +57075,7 @@
 "E977",
 "E978"
 ],
-"duda": "«sallesagayhane» (¿saṃsesa…, ¿sesa…?): la primera sílaba no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «gatippakāsacalesu, phaso cu sallesagayhane.» → «gatippakāsacalesu, phaso cu slesagayhane.» (El verso imprime slesa- (no «salla-»); la duda del verso queda resuelta.)"
 },
 {
 "n": 249,
@@ -56962,7 +57112,7 @@
 "n": 251,
 "pagina": "26",
 "lineas": [
-"phuṭṭo cva’nādare phuḍḍo, āvare phuḍi phullane.",
+"phuṭṭo cva’nādare phuḍo, āvare phuḍi phullane.",
 "cu tu keḷiyaṃ phuṇo tu, vikire ca vidhūnane. 4 ."
 ],
 "cuenta": 4,
@@ -56973,14 +57123,14 @@
 "E988",
 "E989"
 ],
-"duda": "primer renglón: la secuencia «phuṭṭo cva’nādare phuḍḍo, āvare» se completa con el nissaya; para el papel"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «phuṭṭo cva’nādare phuḍḍo, āvare phuḍi phullane.» → «phuṭṭo cva’nādare phuḍo, āvare phuḍi phullane.» (El verso imprime ဖုဍော, no ဖုဍ္ဍော; el resto del renglón coincide con la imagen (la duda «para el papel» queda resuelta salvo la pila de ဖုဋ္ဋော, emborronada).)"
 },
 {
 "n": 252,
 "pagina": "26",
 "lineas": [
 "phuro calanappakāse, phulo caye ca phulla tu.",
-"vikāsabhijjane phuso, phasse phena jilā gate."
+"vikāsabhijjane phuso, phasse phena philā gate."
 ],
 "cuenta": 6,
 "kanda": 6,
@@ -56990,7 +57140,8 @@
 "E992",
 "E993",
 "E994"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vikāsabhijjane phuso, phasse phena jilā gate.» → «vikāsabhijjane phuso, phasse phena philā gate.» (El verso imprime ဖိလာ (phela con i por el metro), no ဇိလာ.)"
 },
 {
 "n": 253,
@@ -57092,7 +57243,7 @@
 "n": 259,
 "pagina": "27",
 "lineas": [
-"buṭo hiṃsāya bhūcuro, butto cvā’dara’nādare.",
+"buṭo hiṃsāya bhūcuro, buttho cvā’dara’nādare.",
 "budo bundo nisāmane, vattatīti pakāsito."
 ],
 "cuenta": 4,
@@ -57102,7 +57253,8 @@
 "E1021",
 "E1022",
 "E1023"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «buṭo hiṃsāya bhūcuro, butto cvā’dara’nādare.» → «buṭo hiṃsāya bhūcuro, buttho cvā’dara’nādare.» (Ídem.)"
 },
 {
 "n": 260,
@@ -57193,7 +57345,7 @@
 "n": 265,
 "pagina": "28",
 "lineas": [
-"bhaji dittiyaṃ cu bhajjaṃ, bhajjane bhanja maddane.",
+"bhaji dittiyaṃ cu bhajjī, bhajjane bhanja maddane.",
 "bhaṭo posanakathāsu, bhaḍi bhasse cu maṅgale."
 ],
 "cuenta": 5,
@@ -57204,7 +57356,8 @@
 "E1050",
 "E1051",
 "E1052"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «bhaji dittiyaṃ cu bhajjaṃ, bhajjane bhanja maddane.» → «bhaji dittiyaṃ cu bhajjī, bhajjane bhanja maddane.» (El verso imprime ဘဇ္ဇီ, no ဘဇ္ဇံ.)"
 },
 {
 "n": 266,
@@ -57306,7 +57459,7 @@
 "n": 272,
 "pagina": "28",
 "lineas": [
-"bhū bhū sattāpattivuddhya’nubhāvesu vi chijjane.",
+"bhū bhū sattāpattivuḍḍhya’nubhavesu vi chijjane.",
 "pari hiṃsāhiḷe parā, byasane’bhya’dhi maddane."
 ],
 "cuenta": 1,
@@ -57314,7 +57467,8 @@
 "raices": [
 "E1077"
 ],
-"duda": "«byasane’bhya’dhi»: lectura del sandhi no segura"
+"duda": "«byasane’bhya’dhi»: lectura del sandhi no segura",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «bhū bhū sattāpattivuddhya’nubhāvesu vi chijjane.» → «bhū bhū sattāpattivuḍḍhya’nubhavesu vi chijjane.» (El libro imprime anubhava (ဘဝေသု, sin ā). La pila ဒ္ဓ/ဍ္ဎ de la ligadura no es segura: lo seguro es -bhavesu. Los sentidos de E1077 ya dicen anubhavesu.)"
 },
 {
 "n": 273,
@@ -57441,7 +57595,7 @@
 "n": 281,
 "pagina": "29",
 "lineas": [
-"maṭho vāsamaddanesu, maṭhi ukkaṇṭhane makhu.",
+"maṭho vāsamaddanesu, maṭhi ukkaṇṭhane maḍi.",
 "bhāgaveṭhasuddhibhūse, cutu bhūsanamodane."
 ],
 "cuenta": 3,
@@ -57451,7 +57605,7 @@
 "E1104",
 "E1105"
 ],
-"duda": "«makhu» al final del primer renglón (¿maḍi?): el margen da maḍi; no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «maṭho vāsamaddanesu, maṭhi ukkaṇṭhane makhu.» → «maṭho vāsamaddanesu, maṭhi ukkaṇṭhane maḍi.» (El verso imprime မဍိ; queda resuelta la duda del verso.)"
 },
 {
 "n": 282,
@@ -57474,7 +57628,7 @@
 "n": 283,
 "pagina": "29",
 "lineas": [
-"mado dyu’mmāde bhū gabba-dejje cu tittiyaṃ madi.",
+"mado dyu’mmāde bhū gabba-denye cu tittiyaṃ madi.",
 "thutimodamadagati- jaḷasoppanadittisu."
 ],
 "cuenta": 2,
@@ -57482,7 +57636,8 @@
 "raices": [
 "E1111",
 "P7_1"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «mado dyu’mmāde bhū gabba-dejje cu tittiyaṃ madi.» → «mado dyu’mmāde bhū gabba-denye cu tittiyaṃ madi.» (Ídem.)"
 },
 {
 "n": 284,
@@ -57630,7 +57785,7 @@
 "n": 293,
 "pagina": "30",
 "lineas": [
-"misso cu yoge miho tu, seke mhi saṃhase vitu.",
+"misso cu yoge miho tu, seke mhi’saṃhase vitu.",
 "vimhaye cva’nādarasmiṃ, mhiṭo cu snehanādare."
 ],
 "cuenta": 4,
@@ -57641,7 +57796,7 @@
 "E1138",
 "E1139"
 ],
-"duda": "«mhi’saṃhase» (¿mhi īsaṃhase?): el apóstrofo/vocal no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «misso cu yoge miho tu, seke mhi saṃhase vitu.» → «misso cu yoge miho tu, seke mhi’saṃhase vitu.» (El libro imprime la elisión (mhi + īsaṃhase).)"
 },
 {
 "n": 294,
@@ -57791,7 +57946,7 @@
 "n": 303,
 "pagina": "31",
 "lineas": [
-"duva3⟨ု⟩. medo medhāvadhe mepo, gatiyaṃ meva sevane.",
+"medo medhāvadhe mepo, gatiyaṃ meva sevane.",
 "mokkho bhū muccane bhūcu, khepanamhi pavattati."
 ],
 "cuenta": 4,
@@ -57803,7 +57958,8 @@
 "E1178"
 ],
 "cierre": "iti mādidhātavo catunāsīti (ma-: 104) · 316",
-"kanda_fin": "iti dhātvatthasaṅgahe pavaggādikadhātvatthakaṇḍo chaṭṭho. 316"
+"kanda_fin": "iti dhātvatthasaṅgahe pavaggādikadhātvatthakaṇḍo chaṭṭho. 316",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «duva3⟨ု⟩. medo medhāvadhe mepo, gatiyaṃ meva sevane.» → «medo medhāvadhe mepo, gatiyaṃ meva sevane.» (El prefijo «duva3⟨ု⟩.» es basura del OCR (probablemente la cifra ၃၀၃).)"
 },
 {
 "n": 304,
@@ -57938,8 +58094,7 @@
 "E1210",
 "E1211",
 "E1212"
-],
-"duda": "«raghi» (¿rayi?): ဃ/ယ no se decide"
+]
 },
 {
 "n": 312,
@@ -58014,7 +58169,7 @@
 "pagina": "33",
 "lineas": [
 "rahi gatyaṃ rā tu dāna-ggāhe rākho tu sosane.",
-"alamatthe ca rāyo tu, sāmatthuṃ rāja dittiyaṃ."
+"alamatthe ca rāgho tu, sāmatthuṃ rāja dittiyaṃ."
 ],
 "cuenta": 5,
 "kanda": 7,
@@ -58025,7 +58180,7 @@
 "E1235",
 "E1236"
 ],
-"duda": "«rāyo» (¿rāgho?): ယ/ဃ no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «alamatthe ca rāyo tu, sāmatthuṃ rāja dittiyaṃ.» → «alamatthe ca rāgho tu, sāmatthuṃ rāja dittiyaṃ.» (El verso latino debe concordar con el lema decidido (gh); quitar la duda del verso.)"
 },
 {
 "n": 317,
@@ -58236,7 +58391,7 @@
 "n": 330,
 "pagina": "34",
 "lineas": [
-"lagi khañjanagatīsu, layo cu sādane layi.",
+"lagi khañjanagatīsu, layo cu sādane laghi.",
 "bhūcu ullaṅghe bhū gatya-bhojasose cu dittiyaṃ."
 ],
 "cuenta": 3,
@@ -58246,7 +58401,7 @@
 "E1283",
 "E1284"
 ],
-"duda": "«layo… layi» o «lagho… laghi»: ယ/ဃ no se decide (E1283/E1284 del margen; el verso testigo propuesto en el briefing 65)"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «lagi khañjanagatīsu, layo cu sādane layi.» → «lagi khañjanagatīsu, layo cu sādane laghi.» (La segunda raíz del verso es laghi (decidida); la primera (E1283) sigue dudosa, por lo que se deja «layo» con la duda sólo para ella (o «lagho» si se decide E1283).)"
 },
 {
 "n": 331,
@@ -58345,14 +58500,15 @@
 "n": 337,
 "pagina": "35",
 "lineas": [
-"laso bhūdi vihāyaṃ cu, sippayogamhi bhū pana.",
+"laso bhūdi pihāyaṃ cu, sippayogamhi bhū pana.",
 "silesadittikīḷāsu, u hāse vi vilāsane."
 ],
 "cuenta": 1,
 "kanda": 7,
 "raices": [
 "E1302"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «laso bhūdi vihāyaṃ cu, sippayogamhi bhū pana.» → «laso bhūdi pihāyaṃ cu, sippayogamhi bhū pana.» (Ídem en el verso.)"
 },
 {
 "n": 338,
@@ -58372,7 +58528,7 @@
 "n": 339,
 "pagina": "35",
 "lineas": [
-"lākho sosanālamatthe, lāyo sāmatthiye siyā.",
+"lākho sosanālamatthe, lāgho sāmatthiye siyā.",
 "lājo bhajjanabhassesu, lābhaṃ cu pesane’bravi."
 ],
 "cuenta": 4,
@@ -58383,7 +58539,7 @@
 "E1307",
 "C1434"
 ],
-"duda": "«lāyo» (¿lāgho?): ယ/ဃ no se decide"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «lākho sosanālamatthe, lāyo sāmatthiye siyā.» → «lākho sosanālamatthe, lāgho sāmatthiye siyā.» (Concordar el verso con el lema decidido.)"
 },
 {
 "n": 340,
@@ -58423,8 +58579,8 @@
 "n": 342,
 "pagina": "35",
 "lineas": [
-"luji cu culajjatthesu, luṭo bhūcu jute dibhū.",
-"viloḷaviyāte luṭi, bhūcu theyyevamaññane."
+"luji cu culajya’tthesu, luṭo bhūcu jute dibhū.",
+"viloḷavighāte luṭi, bhūcu theyyevamaññane."
 ],
 "cuenta": 3,
 "kanda": 7,
@@ -58433,14 +58589,15 @@
 "E1318",
 "C1449"
 ],
-"duda": "«viyāte» (¿vighāte?): ယ/ဃ no se decide"
+"duda": "«viyāte» (¿vighāte?): ယ/ဃ no se decide",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «luji cu culajjatthesu, luṭo bhūcu jute dibhū.» → «luji cu culajya’tthesu, luṭo bhūcu jute dibhū.» (Ídem en el verso, con la elisión impresa.); «viloḷaviyāte luṭi, bhūcu theyyevamaññane.» → «viloḷavighāte luṭi, bhūcu theyyevamaññane.» (El glifo no decide; la glosa (fatiga) y el SD (luṭa …ghāte) dan gh, como ya trae el campo sentidos.)"
 },
 {
 "n": 343,
 "pagina": "35",
 "lineas": [
 "luṭho bhū vellapatane, cu theyye luṭhi ruṭṭhiva.",
-"luṇḍṇo cu theyye luthi tu, hiṃsāsaṃkilese siyā."
+"luṇṭho cu theyye luthi tu, hiṃsāsaṃkilese siyā."
 ],
 "cuenta": 4,
 "kanda": 7,
@@ -58449,14 +58606,15 @@
 "E1320",
 "E1321",
 "E1322"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «luṇḍṇo cu theyye luthi tu, hiṃsāsaṃkilese siyā.» → «luṇṭho cu theyye luthi tu, hiṃsāsaṃkilese siyā.» (El verso impreso trae la misma forma လုဏ္ဌော.)"
 },
 {
 "n": 344,
 "pagina": "35",
 "lineas": [
 "lupo dya’dassanākulī-bhāvesu ru vilumpane.",
-"lubi bhūcu vadhe lubho, bhū vimohe di viddhiyaṃ."
+"lubi bhūcu vadhe lubho, bhū vimohe di giddhiyaṃ."
 ],
 "cuenta": 3,
 "kanda": 7,
@@ -58464,7 +58622,8 @@
 "E1323",
 "E1324",
 "E1325"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «lubi bhūcu vadhe lubho, bhū vimohe di viddhiyaṃ.» → «lubi bhūcu vadhe lubho, bhū vimohe di giddhiyaṃ.» (Ídem en el verso.)"
 },
 {
 "n": 345,
@@ -58507,7 +58666,7 @@
 "n": 347,
 "pagina": "36",
 "lineas": [
-"vako ādānapaṭigha-dittīsu vatta bhū gati.",
+"vako ādānapatigha-dittīsu vakka bhū gati.",
 "koṭillarukkhattacesu, cutu nāsanabhāsane."
 ],
 "cuenta": 2,
@@ -58515,7 +58674,8 @@
 "raices": [
 "E1338",
 "E1339"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vako ādānapaṭigha-dittīsu vatta bhū gati.» → «vako ādānapatigha-dittīsu vakka bhū gati.» (Patigha como lo imprime el libro, y la raíz del verso es vakka (como el lema E1339 ya publicado), no vatta.)"
 },
 {
 "n": 348,
@@ -58547,8 +58707,7 @@
 "C1480",
 "E1345",
 "E1346"
-],
-"duda": "«vaghi» (¿vayi?): ဃ/ယ no se decide"
+]
 },
 {
 "n": 350,
@@ -58589,7 +58748,7 @@
 "lineas": [
 "vaṭṭo āvattane hoti, vaṭho sāmatthuthūliye.",
 "vaṭhi ekacāre vaḍi, bhū veṭhā’vattadhāraṇa-",
-"vaṇṇatthabandhasaṅte, hoti bhūcu vibhājane."
+"vaṇṇatthabandhasaṅghāte, hoti bhūcu vibhājane."
 ],
 "cuenta": 4,
 "kanda": 7,
@@ -58598,14 +58757,15 @@
 "E1357",
 "E1358",
 "E1359"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vaṇṇatthabandhasaṅte, hoti bhūcu vibhājane.» → «vaṇṇatthabandhasaṅghāte, hoti bhūcu vibhājane.» (Al verso latino le falta la sílaba ghā.)"
 },
 {
 "n": 353,
 "pagina": "36",
 "lineas": [
 "vaḍḍho bhū vaḍḍhe cvā’kire, vaṇo’tyaṃ cva’ṅgacuṇṇane.",
-"vaṇṇo cu thutivitthāra-sukkā’byuyyuttidīpane."
+"vaṇṇo cu thutivitthāra-sukkā’dyuyyuttidīpane."
 ],
 "cuenta": 3,
 "kanda": 7,
@@ -58614,7 +58774,8 @@
 "E1361",
 "E1362"
 ],
-"duda": "«sukkā’byuyyuttidīpane»: lectura del compuesto no segura"
+"duda": "«sukkā’byuyyuttidīpane»: lectura del compuesto no segura",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «vaṇṇo cu thutivitthāra-sukkā’byuyyuttidīpane.» → «vaṇṇo cu thutivitthāra-sukkā’dyuyyuttidīpane.» (Ídem en el verso; se quita la duda.)"
 },
 {
 "n": 354,
@@ -58823,14 +58984,15 @@
 "pagina": "38",
 "lineas": [
 "vido bhū ñāṇamaṅgalye, di bhāve ru vimaṃsana.",
-"lābhatuṭṭhya’nubhāva- nivāsākhyānatheriye."
+"lābhatuṭṭhyaṃ cva’nubhāva- nivāsākhyānatheriye."
 ],
 "cuenta": 1,
 "kanda": 7,
 "raices": [
 "E1406"
 ],
-"duda": "«lābhatuṭṭhya’nubhāva» no seguro en la imagen"
+"duda": "«lābhatuṭṭhya’nubhāva» no seguro en la imagen",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «lābhatuṭṭhya’nubhāva- nivāsākhyānatheriye.» → «lābhatuṭṭhyaṃ cva’nubhāva- nivāsākhyānatheriye.» (El verso impreso trae tuṭṭhyaṃ y la marca de gaṇa cu (cva’nubhāva, como «cva’ṅga» en el verso 353); lo publicado omite ambos. Se quita la duda.)"
 },
 {
 "n": 368,
@@ -58978,7 +59140,7 @@
 "pagina": "39",
 "lineas": [
 "sako pūje bhūditasvā, sattiyaṃ saki saṃsaya.",
-"trāsagatyaṃ satto gate, cu vākye saga saṃvare."
+"trāsagatyaṃ sakko gate, cu vākye saga saṃvare."
 ],
 "cuenta": 4,
 "kanda": 7,
@@ -58987,7 +59149,8 @@
 "E1439",
 "E1440",
 "E1441"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «trāsagatyaṃ satto gate, cu vākye saga saṃvare.» → «trāsagatyaṃ sakko gate, cu vākye saga saṃvare.» (El verso latino publicado repite el error del OCR; el impreso dice sakko, como el lema.)"
 },
 {
 "n": 378,
@@ -59025,7 +59188,7 @@
 "n": 380,
 "pagina": "39",
 "lineas": [
-"sañjo sanno ca saṅgamhi, saṭo bhū gati sīdana.",
+"sañjo sanjo ca saṅgamhi, saṭo bhū gati sīdana.",
 "vibhāgabhedarogesu, cutu sīlāghane siyā."
 ],
 "cuenta": 3,
@@ -59034,14 +59197,15 @@
 "C1587",
 "E1445",
 "E1446"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «sañjo sanno ca saṅgamhi, saṭo bhū gati sīdana.» → «sañjo sanjo ca saṅgamhi, saṭo bhū gati sīdana.» (El verso latino trae sanno (OCR); el impreso da sanjo, como el lema ya publicado.)"
 },
 {
 "n": 381,
 "pagina": "39",
 "lineas": [
 "saṭṭo cu hiṃsāniketa- baladāne saṭho vadha-",
-"klesaketave cvā’lasye, gatyā’saṅkhatasaṅkhate.",
+"klesaketave cvā’lasye, gatya’saṅkhatasaṅkhate.",
 "silāghadubbācāsu ca, saḍi gumbattharujjane."
 ],
 "cuenta": 3,
@@ -59050,7 +59214,8 @@
 "E1447",
 "E1448",
 "E1449"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «klesaketave cvā’lasye, gatyā’saṅkhatasaṅkhate.» → «klesaketave cvā’lasye, gatya’saṅkhatasaṅkhate.» (El verso impreso no trae ā tras gaty-.)"
 },
 {
 "n": 382,
@@ -59071,7 +59236,7 @@
 "n": 383,
 "pagina": "39",
 "lineas": [
-"santo cu piyakaraṇe, satho cu patihassana.",
+"santho cu piyakaraṇe, satho cu patihassana.",
 "dubbalyayatane bhūcu, mokkhabandhanahiṃsane."
 ],
 "cuenta": 2,
@@ -59079,13 +59244,14 @@
 "raices": [
 "E1453",
 "E1454"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «santo cu piyakaraṇe, satho cu patihassana.» → «santho cu piyakaraṇe, satho cu patihassana.» (Ídem en el verso.)"
 },
 {
 "n": 384,
 "pagina": "39",
 "lineas": [
-"sathi sethilye sanno kī, patihassanamocane.",
+"sathi sethilye santho kī, patihassanamocane.",
 "cubhū vadhaganthanesu, sado sāda gate cubhū."
 ],
 "cuenta": null,
@@ -59095,7 +59261,8 @@
 "E1456",
 "E1457"
 ],
-"duda": "la cifra final del verso no se imprime"
+"duda": "la cifra final del verso no se imprime",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «sathi sethilye sanno kī, patihassanamocane.» → «sathi sethilye santho kī, patihassanamocane.» (El verso latino trae sanno (lectura del OCR); el impreso dice santho, como el lema.)"
 },
 {
 "n": 385,
@@ -59159,7 +59326,7 @@
 "pagina": "40",
 "lineas": [
 "sabi bhū maṇḍane cutu, maṇḍale samba sappane.",
-"cutu vaṇṇanasambandhe, sabbho hiṃsanakatthane.",
+"cutu maṇḍanasambandhe, sabbho hiṃsanakatthane.",
 "sabhājo pītisevana- dassanesu curādiko."
 ],
 "cuenta": 4,
@@ -59170,7 +59337,8 @@
 "E1468",
 "E1469"
 ],
-"duda": "primer renglón («maṇḍane… maṇḍale samba») no seguro"
+"duda": "primer renglón («maṇḍane… maṇḍale samba») no seguro",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «cutu vaṇṇanasambandhe, sabbho hiṃsanakatthane.» → «cutu maṇḍanasambandhe, sabbho hiṃsanakatthane.» (Ídem en el verso; el primer renglón (maṇḍane… maṇḍale samba) queda confirmado por la imagen y puede quitarse la duda del verso.)"
 },
 {
 "n": 390,
@@ -59217,7 +59385,7 @@
 "pagina": "40",
 "lineas": [
 "salo bhū calasaṃvara-gativege cu thomane.",
-"salati salavi sallo, gate savo vikāri ca."
+"salaki salagi sallo, gate savo vikāri ca."
 ],
 "cuenta": 5,
 "kanda": 7,
@@ -59227,7 +59395,8 @@
 "E1476",
 "E1477",
 "E1478"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «salati salavi sallo, gate savo vikāri ca.» → «salaki salagi sallo, gate savo vikāri ca.» (El verso latino conserva la lectura del OCR (salati salavi); el impreso y los lemas dan salaki salagi.)"
 },
 {
 "n": 394,
@@ -59312,8 +59481,8 @@
 "n": 399,
 "pagina": "41",
 "lineas": [
-"sāḷo thutyaṃ si bhū seva gativuddhiṃ u ussaye.",
-"āñjapā’vāvalambamhi, svā teje svāki bandhane."
+"sāḷo thutyaṃ si bhū seva- gativuddhyaṃ u ussaye.",
+"ānya’pāvā’valambamhi, svā teje svāki bandhane."
 ],
 "cuenta": 2,
 "kanda": 7,
@@ -59321,7 +59490,8 @@
 "E1497",
 "E1498"
 ],
-"duda": "«āñjapā’vāvalambamhi» no se lee con seguridad"
+"duda": "«āñjapā’vāvalambamhi» no se lee con seguridad",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «sāḷo thutyaṃ si bhū seva gativuddhiṃ u ussaye. / āñjapā’vāvalambamhi, svā teje svāki bandhane.» → «sāḷo thutyaṃ si bhū seva- gativuddhyaṃ u ussaye. / ānya’pāvā’valambamhi, svā teje svāki bandhane.» (El verso impreso trae vuddhyaṃ y ā-ni-apa-ava contraído en ānya’pāvā’-, como explica la glosa; āñjapā es lectura errónea.)"
 },
 {
 "n": 400,
@@ -59337,8 +59507,7 @@
 "E1500",
 "E1501",
 "E1502"
-],
-"duda": "«sighi… āghāyane… gharaṇe» (¿sayi… āyāyane… yaraṇe?): ဃ/ယ no se decide"
+]
 },
 {
 "n": 401,
@@ -59359,8 +59528,8 @@
 "n": 402,
 "pagina": "41",
 "lineas": [
-"sidi sītalasukkesu, sidho gatyaṃ simbe’tthani.",
-"pati vāraṇe di siddhaṃ, sidhū tu sāsane sive."
+"sidi sītalasukkesu, sidho gatyaṃ sidhve’tthani.",
+"pati vāraṇe di siddhyaṃ, sidhū tu sāsane sive."
 ],
 "cuenta": 4,
 "kanda": 7,
@@ -59370,7 +59539,8 @@
 "E1508",
 "E1509"
 ],
-"duda": "«simbe’tthani» no se lee con seguridad"
+"duda": "«simbe’tthani» no se lee con seguridad",
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «sidi sītalasukkesu, sidho gatyaṃ simbe’tthani. / pati vāraṇe di siddhaṃ, sidhū tu sāsane sive.» → «sidi sītalasukkesu, sidho gatyaṃ sidhve’tthani. / pati vāraṇe di siddhyaṃ, sidhū tu sāsane sive.» (El verso dice sidhu + ettha + ni (sidhve’tthani); «simbe» es lectura errónea, y el locativo es siddhyaṃ.)"
 },
 {
 "n": 403,
@@ -59415,8 +59585,7 @@
 "E1517",
 "E1518",
 "E1519"
-],
-"duda": "«silāgho» (¿silāyo?): ဃ/ယ no se decide"
+]
 },
 {
 "n": 406,
@@ -59541,7 +59710,7 @@
 "pagina": "42",
 "lineas": [
 "sutto cu ganthane sutho, hiṃsāyaṃ sudi sobhane.",
-"sudho di sundho cu suddhaṃ, paro bhū suddhisodhane."
+"sudho di sundho cu suddhyaṃ, paro bhū suddhisodhane."
 ],
 "cuenta": 5,
 "kanda": 7,
@@ -59551,7 +59720,8 @@
 "E1543",
 "E1544",
 "E1545"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «sudho di sundho cu suddhaṃ, paro bhū suddhisodhane.» → «sudho di sundho cu suddhyaṃ, paro bhū suddhisodhane.» (Ídem en el verso.)"
 },
 {
 "n": 415,
@@ -59623,7 +59793,7 @@
 "pagina": "42",
 "lineas": [
 "selo cāla gate sevo, ārādhanu’pabhuñjana-",
-"āsaye so di nisāna-nāsane ava sosite."
+"āsaye so di nisāna-nāsane ava osite."
 ],
 "cuenta": 3,
 "kanda": 7,
@@ -59632,7 +59802,7 @@
 "E1563",
 "E1564"
 ],
-"duda": "«ava sosite» (¿osite?) no seguro"
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «āsaye so di nisāna-nāsane ava sosite.» → «āsaye so di nisāna-nāsane ava osite.» (La palabra es osite (ava + osita); «sosite» lee ဩ como သော.)"
 },
 {
 "n": 420,
@@ -59658,8 +59828,8 @@
 "n": 421,
 "pagina": "43",
 "lineas": [
-"hago saṃvare haṭo tu, dityaṃ haṭho balakkāra-",
-"pputikīlabandhe hado, vaccossagge pavattati."
+"hago saṃvare haṭo tu, dityaṃ haṭho balakkara-",
+"plutikīlabandhe hado, vaccossagge pavattati."
 ],
 "cuenta": 4,
 "kanda": 7,
@@ -59668,7 +59838,8 @@
 "E1572",
 "E1573",
 "E1574"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «hago saṃvare haṭo tu, dityaṃ haṭho balakkāra- / pputikīlabandhe hado, vaccossagge pavattati.» → «hago saṃvare haṭo tu, dityaṃ haṭho balakkara- / plutikīlabandhe hado, vaccossagge pavattati.» (El verso impreso no trae ā en balakkara y el segundo renglón empieza por pluti, no pputi.)"
 },
 {
 "n": 422,
@@ -59734,7 +59905,7 @@
 "pagina": "43",
 "lineas": [
 "hasso hāse hassu hāse alīkepi ca hā pana.",
-"gaticāgahānya’hi svā, gatyu’patāpavuddhisu."
+"gaticāgahānyaṃ hi svā, gatyu’patāpavuddhisu."
 ],
 "cuenta": 4,
 "kanda": 7,
@@ -59743,7 +59914,8 @@
 "E1585",
 "E1586",
 "E1587"
-]
+],
+"nota_correccion": "Sesión 66 (cotejo con la imagen y con Saddanīti, Dhātupāṭha, Dhātumañjūsā, 2026-10-11): «gaticāgahānya’hi svā, gatyu’patāpavuddhisu.» → «gaticāgahānyaṃ hi svā, gatyu’patāpavuddhisu.» (El verso impreso trae hānyaṃ (con niggahīta) seguido de la raíz hi.)"
 },
 {
 "n": 427,
