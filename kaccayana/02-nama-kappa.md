@@ -44,7 +44,7 @@ Las inflexiones se colocan después de las bases que concuerdan con la palabra d
 
 ---
 
-**55\. 63\. Si yo, aṃ yo, nā hi, sa naṃ, smā hi, sa naṃ, smiṃ su (200).** \[Si yo, aṃ yo, nā hi, sa naṃ, smā hi, sa naṃ, smiṃ su, 1\]
+**55\. 63\. Si yo, aṃ yo, nā hi, sa naṃ, smā hi, sa naṃ, smiṃ su (200).** \[Si-yo-aṃ-yo-nā-hi-sa-naṃ-smā-hi-sa-naṃ-smiṃ-su, 1\]
 
 Kā ca pana tāyo vibhattiyo? Si, yo iti paṭhamā; aṃ, yo iti dutiyā; nā, hi iti tatiyā; sa, naṃ iti catutthī; smā, hi iti pañcamī; sa, naṃ iti chaṭṭhī; smiṃ, su iti sattamī.
 

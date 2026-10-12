@@ -421,7 +421,7 @@ Examples:
 
 ---
 
-**423\. 426\. Vattamānā ti anti, si tha, mi ma; te ante, se vhe, e mhe (896).** \[Vattamānā \+ ti anti, si tha, mi ma, te ante, se vhe, e mhe, 2\]
+**423\. 426\. Vattamānā ti anti, si tha, mi ma; te ante, se vhe, e mhe (896).** \[Vattamānā \+ ti-anti-si-tha-mi-ma-te-ante-se-vhe-e-mhe, 2\]
 
 **Vattamānā** icc esā saññā hoti **ti anti**, **si tha**, **mi ma**, **te ante**, **se vhe**, **e mhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -437,7 +437,7 @@ What is the use of the name “vattamānā”? For the use of the name “vattam
 
 ---
 
-**424\. 450\. Pañcamī tu antu, hi tha, mi ma; taṃ antaṃ, ssu vho, e āmase (897).** \[Pañcamī \+ tu antu, hi tha, mi ma, taṃ antaṃ, ssu vho, e āmase, 2\]
+**424\. 450\. Pañcamī tu antu, hi tha, mi ma; taṃ antaṃ, ssu vho, e āmase (897).** \[Pañcamī \+ tu-antu-hi-tha-mi-ma-taṃ-antaṃ-ssu-vho-e-āmase, 2\]
 
 **Pañcamī** icc esā saññā hoti **tu antu**, **hi tha**, **mi ma**, **taṃ antaṃ**, **ssu vho**, **e āmase** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -453,7 +453,7 @@ What is the use of the name “pañcamī”? For the use of the name “pañcam�
 
 ---
 
-**425\. 453\. Sattamī eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma; etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe (898).** \[Sattamī \+ eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma, etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe, 2\]
+**425\. 453\. Sattamī eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma; etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe (898).** \[Sattamī \+ eyya-eyyuṃ-eyyāsi-eyyātha-eyyāmi-eyyāma-etha-eraṃ-etho-eyyāvho-eyyaṃ-eyyāmhe, 2\]
 
 **Sattamī** icc esā saññā hoti **eyya eyyuṃ**, **eyyāsi eyyātha**, **eyyāmi eyyāma**, **etha eraṃ**, **etho eyyāvho**, **eyyaṃ eyyāmhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -469,7 +469,7 @@ What is the use of the name “sattamī”? For the use of the name “sattamī�
 
 ---
 
-**426\. 459\. Parokkhā a u, e ttha, aṃ mha;[^14] ttha re, ttho vho, iṃ mhe[^15] (899).** \[Parokkhā \+ a u, e ttha, aṃ mha, ttha re, ttho vho, iṃ mhe, 2\]
+**426\. 459\. Parokkhā a u, e ttha, aṃ mha;[^14] ttha re, ttho vho, iṃ mhe[^15] (899).** \[Parokkhā \+ a-u-e-ttha-aṃ-mha-ttha-re-ttho-vho-iṃ-mhe, 2\]
 
 **Parokkhā** icc esā saññā hoti **a u**, **e ttha**, **aṃ mha**,[^16] **ttha re**, **ttho vho**, **iṃ mhe[^17]** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -485,7 +485,7 @@ What is the use of the name “parokkhā”? For the use of the name “parokkh�
 
 ---
 
-**427\. 455\. Hiyyattanī ā ū, o ttha, aṃ mhā;[^18] ttha tthuṃ, se vhaṃ, iṃ mhase (900).** \[Hiyyattanī \+ ā ū, o ttha, aṃ mhā, ttha tthuṃ, se vhaṃ, iṃ mhase, 2\]
+**427\. 455\. Hiyyattanī ā ū, o ttha, aṃ mhā;[^18] ttha tthuṃ, se vhaṃ, iṃ mhase (900).** \[Hiyyattanī \+ ā-ū-o-ttha-aṃ-mhā-ttha-tthuṃ-se-vhaṃ-iṃ-mhase, 2\]
 
 **Hiyyattanī** icc esā saññā hoti **ā ū**, **o ttha**, **aṃ mhā**,[^19] **ttha tthuṃ**, **se vhaṃ**, **iṃ mhase** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -501,7 +501,7 @@ What is the use of the name “hiyyattanī”? For the use of the name “hiyyat
 
 ---
 
-**428\. 468\. Ajjatanī ī uṃ, o ttha, iṃ mhā; ā ū, se vhaṃ, aṃ mhe (901).** \[Ajjatanī \+ ī uṃ, o ttha, iṃ mhā, ā ū, se vhaṃ, aṃ mhe, 2\]
+**428\. 468\. Ajjatanī ī uṃ, o ttha, iṃ mhā; ā ū, se vhaṃ, aṃ mhe (901).** \[Ajjatanī \+ ī-uṃ-o-ttha-iṃ-mhā-ā-ū-se-vhaṃ-aṃ-mhe, 2\]
 
 **Ajjatanī** icc esā saññā hoti **ī uṃ**, **o ttha**, **iṃ mhā**, **ā ū**, **se vhaṃ**, **aṃ mhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -517,7 +517,7 @@ What is the use of the name “ajjatanī”? For the use of the name “ajjatan�
 
 ---
 
-**429\. 472\. Bhavissantī ssati ssanti, ssasi ssatha, ssāmi ssāma; ssate ssante, ssase ssavhe, ssaṃ ssāmhe (902).** \[Bhavissantī \+ ssati ssanti, ssasi ssatha, ssāmi ssāma, ssate ssante, ssase ssavhe, ssaṃ ssāmhe, 2\]
+**429\. 472\. Bhavissantī ssati ssanti, ssasi ssatha, ssāmi ssāma; ssate ssante, ssase ssavhe, ssaṃ ssāmhe (902).** \[Bhavissantī \+ ssati-ssanti-ssasi-ssatha-ssāmi-ssāma-ssate-ssante-ssase-ssavhe-ssaṃ-ssāmhe, 2\]
 
 **Bhavissantī** icc esā saññā hoti **ssati ssanti**, **ssasi ssatha**, **ssāmi ssāma**, **ssate ssante**, **ssase ssavhe**, **ssaṃ ssāmhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -533,7 +533,7 @@ What is the use of the name “bhavissantī”? For the use of the name “bhavi
 
 ---
 
-**430\. 474\. Kālātipatti ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā;[^20] ssatha ssisu,[^21] ssase ssavhe, ssiṃ[^22] ssāmhase (903).** \[Kālātipatti \+ ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā, ssatha ssisu, ssase ssavhe, ssiṃ ssāmhase, 2\]
+**430\. 474\. Kālātipatti ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā;[^20] ssatha ssisu,[^21] ssase ssavhe, ssiṃ[^22] ssāmhase (903).** \[Kālātipatti \+ ssā-ssaṃsu-sse-ssatha-ssaṃ-ssāmhā-ssatha-ssisu-ssase-ssavhe-ssiṃ-ssāmhase, 2\]
 
 **Kālātipatti** icc esā saññā hoti **ssā ssaṃsu**, **sse ssatha**, **ssaṃ ssāmhā**,[^23] **ssatha ssisu**,[^24] **ssase ssavhe**, **ssiṃ[^25]** **ssāmhase** icc etesaṃ **dvādasannaṃ** padānaṃ.
 
@@ -791,7 +791,7 @@ Thus also others should be formed.
 
 ---
 
-**438\. 540\. Dhātūhi ṇe-ṇaya-ṇāpe-ṇāpayā kāritāni hetvatthe (914).** \[Dhātūhi \+ ṇe, ṇaya, ṇāpe, ṇāpayā \+ kāritāni \+ hetu-atthe, 4\]
+**438\. 540\. Dhātūhi ṇe-ṇaya-ṇāpe-ṇāpayā kāritāni hetvatthe (914).** \[Dhātūhi \+ ṇe-ṇaya-ṇāpe-ṇāpayā \+ kāritāni \+ hetu-atthe, 4\]
 
 Sabbehi dhātūhi **ṇe ṇaya ṇāpe ṇāpaya** icc ete paccayā honti **kārita**saññā ca hetvatthe.
 
@@ -1467,7 +1467,7 @@ Examples:
 
 ---
 
-**463\. 532\. Māna-kitānaṃ va-tattaṃ vā (944).** \[Mānakitānaṃ \+ va, ta-ttaṃ \+ vā, 3\]
+**463\. 532\. Māna-kitānaṃ va-tattaṃ vā (944).** \[Mānakitānaṃ \+ va-tattaṃ \+ vā, 3\]
 
 **Māna kita** icc etesaṃ dhātūnaṃ abbhāsagatānaṃ **va**kāra-**ta**kārattaṃ hoti vā yathāsaṅkhyaṃ.
 
@@ -2752,7 +2752,7 @@ What is the purpose of saying “kvaci” (sometimes)? To allow an exception to 
 
 ---
 
-**519\. 457\. Akārāgamo hiyyattanī-ajjatanī-kālātipattīsu (1032).** \[Akāra-āgamo \+ hiyyattanī, ajjatanī-kālātipattīsu, 2\]
+**519\. 457\. Akārāgamo hiyyattanī-ajjatanī-kālātipattīsu (1032).** \[Akāra-āgamo \+ hiyyattanī-ajjatanī-kālātipattīsu, 2\]
 
 Kvaci **a**kārāgamo hoti **hiyyattanī-ajjatanī-kālātipatti** icc etāsu vibhattīsu.
 
