@@ -404,7 +404,7 @@ function render(){
   D.capitulos.forEach(c=>{
     const ks=D.kandas[c.clave];
     const chg='ch-'+c.clave;
-    sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]===false?'':' open'}><summary title="${esc(t.cap[c.clave]||'')}"><span class="gl">${esc(c.pali)}</span><span class="n"></span><span class="rg">§${c.desde}–§${c.hasta}</span></summary>`;
+    sb+=`<details class="sb-ch" data-g="${chg}"${abiertos[chg]?' open':''}><summary title="${esc(t.cap[c.clave]||'')}"><span class="gl">${esc(c.pali)}</span><span class="n"></span><span class="rg">§${c.desde}–§${c.hasta}</span></summary>`;
     ks.forEach(([k,desde,o],i)=>{
       const hasta=i+1<ks.length?ks[i+1][1]-1:c.hasta;const sid=`k-${c.clave}-${o}`;
       const nombre=k.charAt(0)+k.slice(1).toLowerCase().replace('-kaṇḍa','-kaṇḍa');
@@ -420,7 +420,7 @@ function render(){
   document.querySelectorAll('#sb-list details').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
   filtrar();
 }
-const abiertos={'k-sandhi-1':true};
+const abiertos={}; /* v0.8.1: el índice lateral empieza plegado (IEBH, 2026-10-12) */
 /* La búsqueda mira todo el texto de la fila y de su detalle (aunque esté
    plegado), en la lengua de la página, sin acentos ni mayúsculas. El texto de
    los globos no entra: no está en la página hasta que se abren. */
