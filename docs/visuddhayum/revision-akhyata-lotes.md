@@ -21,6 +21,8 @@ publicar son las decisiones que tocan una celda (Clase, Aṅga, Ejemplo) y las
 
 ## Tanda 1 (N1–N24): enviada en el chat del 2026-10-12
 
+**Cerrada el 2026-10-12** («ok to all»): marcadas en `revision-iebh.md`. N12, N18, N20 y N23 quedan pendientes de la imagen.
+
 N1–N7 y N104 [C]; N10, N15, N19, N24 [C, en bloque, L19]; N9, N11, N13, N14,
 N16, N21, N22 [C]; N17: sin «cf. §418» [C]. A la imagen: N12 {01, 02}, N18
 {03}, N20 {04, 05}, N23 {06, 07}. N8: resuelto.
