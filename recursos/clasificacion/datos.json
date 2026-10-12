@@ -1,10 +1,10 @@
 {
- "version": "0.7.6",
- "fecha": "2026-10-03",
+ "version": "0.8",
+ "fecha": "2026-10-12",
  "estado": "borrador",
  "nota_version": {
-  "es": "v0.7.6: la búsqueda encuentra las palabras partidas por un globo o por otro marcado en línea; dos chips seguidos no se juntan en una palabra. v0.7.5: la búsqueda mira todo el texto de cada fila y de su detalle (fuentes incluidas) en la lengua de la página, sin distinguir acentos ni mayúsculas («nyasa» = «Nyāsa»). v0.7.4: globo en los nombres de las fuentes del detalle de cada aforismo (Rūpasiddhi, Nyāsa, Thitzana, Kaccāyanavaṇṇanā) y en su texto; «Rū» lleva el de la Rūpasiddhi. v0.7.3: globo en todos los términos técnicos, también en la leyenda y en estas notas (glosario de 117 entradas, con las obras citadas); ninguno dentro de las citas pāḷi; el globo ya no toca el borde de la pantalla en el móvil. v0.7.2: globos con definición y ejemplo para los términos técnicos (glosario común con el análisis de los suttas). v0.7.1: las notas de §24, §30 y §320 ponen en pasado la elección anterior del sitio. v0.7: los aforismos que la Visuddhāyuṃ Kaccāyana-ṭīkā clasifica expresamente siguen ese libro: §1 paribhāsā; §24 y §30 paṭisedha; §51 atidesa y §320 liṅga-vacana, con clase propia. v0.6: cotejo con la Kaccāyanavaṇṇanā (Rangún, 1916) en §30, §285, §296, §400, §404 y §405; el §30 pasa de paṭisedha a ādesa. Se sigue el esquema de ocho vidhis según Thitzana: vuddhi, pakati, atidesa y demás operaciones sin clase propia pasan a ādesa, con una etiqueta que las nombra.",
-  "en": "v0.7.6: search finds words split by a tooltip or other inline markup; two adjacent chips are not joined into one word. v0.7.5: search covers all the text of each row and its detail (sources included) in the page language, ignoring diacritics and case (“nyasa” = “Nyāsa”). v0.7.4: tooltips on the source names in each aphorism’s detail (Rūpasiddhi, Nyāsa, Thitzana, Kaccāyanavaṇṇanā) and in their text; “Rū” carries the Rūpasiddhi’s. v0.7.3: a tooltip on every technical term, including the legend and these notes (117-entry glossary, with the works cited); none inside Pāḷi quotations; the tooltip no longer touches the screen edge on phones. v0.7.2: tooltips with a definition and an example for the technical terms (glossary shared with the sutta analysis). v0.7.1: the notes of §24, §30 and §320 put the site’s earlier choice in the past tense. v0.7: the aphorisms that the Visuddhāyuṃ Kaccāyana-ṭīkā classifies explicitly follow that book: §1 paribhāsā; §24 and §30 paṭisedha; §51 atidesa and §320 liṅga-vacana, each a class of its own. v0.6: checked against the Kaccāyanavaṇṇanā (Rangoon, 1916) at §30, §285, §296, §400, §404 and §405; §30 moves from paṭisedha to ādesa. The eight-fold scheme of vidhis is followed as Thitzana explains it: vuddhi, pakati, atidesa and the other operations without a class of their own go under ādesa, with a tag that names them."
+  "es": "v0.8: Ākhyāta-Kappa (§406–§523), los 118 suttas, con las mismas fuentes que los capítulos 1–5: Rūpasiddhi y Nyāsa, y el esquema de las ocho vidhis según Thitzana (vuddhi, vipariyāya y atidesa, en la ādesa). Rūpasiddhi llama paribhāsā a §409 y §432, y adhikāra a §413; Nyāsa llama también paribhāsā a §432. En §517 Rūpasiddhi lee «viparīta» como «tabbiparīta»: acortamiento. v0.7.6: la búsqueda encuentra las palabras partidas por un globo o por otro marcado en línea; dos chips seguidos no se juntan en una palabra. v0.7.5: la búsqueda mira todo el texto de cada fila y de su detalle (fuentes incluidas) en la lengua de la página, sin distinguir acentos ni mayúsculas («nyasa» = «Nyāsa»). v0.7.4: globo en los nombres de las fuentes del detalle de cada aforismo (Rūpasiddhi, Nyāsa, Thitzana, Kaccāyanavaṇṇanā) y en su texto; «Rū» lleva el de la Rūpasiddhi. v0.7.3: globo en todos los términos técnicos, también en la leyenda y en estas notas (glosario de 117 entradas, con las obras citadas); ninguno dentro de las citas pāḷi; el globo ya no toca el borde de la pantalla en el móvil. v0.7.2: globos con definición y ejemplo para los términos técnicos (glosario común con el análisis de los suttas). v0.7.1: las notas de §24, §30 y §320 ponen en pasado la elección anterior del sitio. v0.7: los aforismos que la Visuddhāyuṃ Kaccāyana-ṭīkā clasifica expresamente siguen ese libro: §1 paribhāsā; §24 y §30 paṭisedha; §51 atidesa y §320 liṅga-vacana, con clase propia. v0.6: cotejo con la Kaccāyanavaṇṇanā (Rangún, 1916) en §30, §285, §296, §400, §404 y §405; el §30 pasa de paṭisedha a ādesa. Se sigue el esquema de ocho vidhis según Thitzana: vuddhi, pakati, atidesa y demás operaciones sin clase propia pasan a ādesa, con una etiqueta que las nombra.",
+  "en": "v0.8: Ākhyāta-Kappa (§406–§523), all 118 suttas, with the same sources as chapters 1–5: the Rūpasiddhi and the Nyāsa, and the eight-fold scheme of vidhis as Thitzana explains it (vuddhi, vipariyāya and atidesa, under ādesa). The Rūpasiddhi calls §409 and §432 paribhāsā, and §413 adhikāra; the Nyāsa also calls §432 a paribhāsā. At §517 the Rūpasiddhi reads “viparīta” as “tabbiparīta”: shortening. v0.7.6: search finds words split by a tooltip or other inline markup; two adjacent chips are not joined into one word. v0.7.5: search covers all the text of each row and its detail (sources included) in the page language, ignoring diacritics and case (“nyasa” = “Nyāsa”). v0.7.4: tooltips on the source names in each aphorism’s detail (Rūpasiddhi, Nyāsa, Thitzana, Kaccāyanavaṇṇanā) and in their text; “Rū” carries the Rūpasiddhi’s. v0.7.3: a tooltip on every technical term, including the legend and these notes (117-entry glossary, with the works cited); none inside Pāḷi quotations; the tooltip no longer touches the screen edge on phones. v0.7.2: tooltips with a definition and an example for the technical terms (glossary shared with the sutta analysis). v0.7.1: the notes of §24, §30 and §320 put the site’s earlier choice in the past tense. v0.7: the aphorisms that the Visuddhāyuṃ Kaccāyana-ṭīkā classifies explicitly follow that book: §1 paribhāsā; §24 and §30 paṭisedha; §51 atidesa and §320 liṅga-vacana, each a class of its own. v0.6: checked against the Kaccāyanavaṇṇanā (Rangoon, 1916) at §30, §285, §296, §400, §404 and §405; §30 moves from paṭisedha to ādesa. The eight-fold scheme of vidhis is followed as Thitzana explains it: vuddhi, pakati, atidesa and the other operations without a class of their own go under ādesa, with a tag that names them."
  },
  "capitulos": [
   {
@@ -41,6 +41,13 @@
    "desde": 344,
    "hasta": 405,
    "pali": "Taddhita-Kappa"
+  },
+  {
+   "clave": "akhyata",
+   "md": "06-akhyata-kappa",
+   "desde": 406,
+   "hasta": 523,
+   "pali": "Ākhyāta-Kappa"
   }
  ],
  "tipos": {
@@ -7930,6 +7937,2231 @@
    "nota": {
     "es": "Rūpasiddhi y Nyāsa coinciden en llamarlo paribhāsā: Rū 364 («niyamatthaṃ paribhāsam āha»: fija qué vuddhi corresponde, que el §400 dejaba sin determinar) y Rū 434, en el Ākhyāta; Nyāsa lo pone, al §2, como ejemplo de paribhāsā-sutta. La Kaccāyanavaṇṇanā lo llama también «paribhāsāsuttaṃ», con función de niyama («niyamena pana akārayuvaṇṇānaṃ yeva vuddhi hotī ti dassetuṃ»). En contra, la vutti cierra con la fórmula de las saññā: «Vuddhi icc anena kvattho? Vuddhādisarassa…» (§400), presente también en la edición de Pind (Kacc 407); de ahí que la traducción publicada y U Sīlānanda (clase ch5-7, ~80:00) lo lean como definición. Se sigue a las tres obras, que lo dicen expresamente. Determinación: paribhāsā.",
     "en": "The Rūpasiddhi and the Nyāsa agree in calling it a paribhāsā: Rū 364 (“niyamatthaṃ paribhāsam āha”: it fixes which vuddhi applies, which §400 left undetermined) and Rū 434, in the Ākhyāta; the Nyāsa gives it, on §2, as its example of a paribhāsā-sutta. The Kaccāyanavaṇṇanā also calls it “paribhāsāsuttaṃ”, with a niyama function (“niyamena pana akārayuvaṇṇānaṃ yeva vuddhi hotī ti dassetuṃ”). Against this, the vutti closes with the saññā formula: “Vuddhi icc anena kvattho? Vuddhādisarassa…” (§400), also in Pind’s edition (Kacc 407); hence the published translation and U Sīlānanda (class ch5-7, ~80:00) read it as a definition. The three works, which say so expressly, are followed. Determination: paribhāsā."
+   }
+  },
+  "406": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las seis primeras formas de cada inflexión reciben el nombre de “parassapada” (voz activa).",
+    "en": "The first six forms of each inflection are named “parassapada” (active voice)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 429: «Atha taddhitānantaraṃ vuccamānānaṃ sabbāsaṃ vattamānādīnaṃ aṭṭhavidhānaṃ vibhattīnaṃ yāni yāni pubbakāni cha padāni, tāni tāni atthato aṭṭhacattālīsamattāni parassapadasaññāni honti».",
+     "en": "Rū 429: “Atha taddhitānantaraṃ vuccamānānaṃ sabbāsaṃ vattamānādīnaṃ aṭṭhavidhānaṃ vibhattīnaṃ yāni yāni pubbakāni cha padāni, tāni tāni atthato aṭṭhacattālīsamattāni parassapadasaññāni honti”."
+    },
+    "nyasa": {
+     "es": "«ito paraṃ vuccamānānaṃ vibhattigaṇānaṃ yāni yāni purimāni cha padāni, tāni tāni parassapadasaññāni hontī ti ñāpanatthaṃ».",
+     "en": "“ito paraṃ vuccamānānaṃ vibhattigaṇānaṃ yāni yāni purimāni cha padāni, tāni tāni parassapadasaññāni hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "407": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las seis formas posteriores reciben el nombre de “attanopada” (voz media).",
+    "en": "The latter six forms are named “attanopada” (middle voice)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 439: «Sabbāsaṃ vattamānādīnaṃ aṭṭhavidhānaṃ vibhattīnaṃ yāni yāni parāni cha padāni, tāni tāni attanopadasaññāni hontī ti te-ādīnaṃ attanopadasaññā».",
+     "en": "Rū 439: “Sabbāsaṃ vattamānādīnaṃ aṭṭhavidhānaṃ vibhattīnaṃ yāni yāni parāni cha padāni, tāni tāni attanopadasaññāni hontī ti te-ādīnaṃ attanopadasaññā”."
+    },
+    "nyasa": {
+     "es": "«yāni yāni vibhattīnaṃ parāni cha padāni, tāni tāni attanopadasaññāni hontī ti ñāpanatthaṃ».",
+     "en": "“yāni yāni vibhattīnaṃ parāni cha padāni, tāni tāni attanopadasaññāni hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "408": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Los pares de formas reciben los nombres de tercera, segunda y primera persona (paṭhama-, majjhima-, uttamapurisa).",
+    "en": "The pairs of forms are named third, second and first person (paṭhama-, majjhima-, uttamapurisa)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 431: «Tāsaṃ vibhattīnaṃ parassapadānam attanopadānañ ca dve dve vacanāni yathākkamaṃ paṭhama-majjhim’-uttamapurisasaññāni honti».",
+     "en": "Rū 431: “Tāsaṃ vibhattīnaṃ parassapadānam attanopadānañ ca dve dve vacanāni yathākkamaṃ paṭhama-majjhim’-uttamapurisasaññāni honti”."
+    },
+    "nyasa": {
+     "es": "«tāsaṃ sabbāsaṃ vibhattīnaṃ dve dve paṭhama-majjhim’-uttamapurisasaññāni hontī ti ñāpanatthaṃ».",
+     "en": "“tāsaṃ sabbāsaṃ vibhattīnaṃ dve dve paṭhama-majjhim’-uttamapurisasaññāni hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "409": {
+   "tipo": "P",
+   "vidhi": "",
+   "op": {
+    "es": "Regla de interpretación: cuando varias personas se enuncian juntas, se toma la posterior.",
+    "en": "Interpretive rule: when several persons are mentioned together, the latter is taken."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 441: «Sabbesaṃ paṭhama-majjhimānaṃ, paṭham’-uttamānaṃ, majjhim’-uttamānaṃ tiṇṇaṃ vā purisānaṃ ekatobhidhāne kātabbe paro puriso yojetabbo».",
+     "en": "Rū 441: “Sabbesaṃ paṭhama-majjhimānaṃ, paṭham’-uttamānaṃ, majjhim’-uttamānaṃ tiṇṇaṃ vā purisānaṃ ekatobhidhāne kātabbe paro puriso yojetabbo”."
+    },
+    "nyasa": {
+     "es": "«sabbesaṃ paṭhama-majjhim’-uttamapurisānaṃ tulyābhidhāne paro puriso yojetabbo ti ñāpanatthaṃ».",
+     "en": "“sabbesaṃ paṭhama-majjhim’-uttamapurisānaṃ tulyābhidhāne paro puriso yojetabbo ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rūpasiddhi lo introduce como paribhāsā al cerrar Rū 440 («Paṭhamapurisādīnam ekajjhappavattippasaṅge paribhāsam āha»): no asigna una inflexión, sino que dice cuál de las personas se toma cuando concurren. Nyāsa lo enuncia con «yojetabbo», «se ha de emplear». Determinación: paribhāsā.",
+    "en": "The Rūpasiddhi introduces it as a paribhāsā at the close of Rū 440 (“Paṭhamapurisādīnam ekajjhappavattippasaṅge paribhāsam āha”): it does not assign an inflection, but says which person is taken when several concur. The Nyāsa states it with “yojetabbo”, “is to be used”. Determination: paribhāsā."
+   }
+  },
+  "410": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la tercera persona cuando el sujeto es un nombre con el mismo locus, se emplee o no.",
+    "en": "Assignment of the third person when the subject is a noun with the same locus, whether used or not."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 432: «Tumhāmhasaddavajjite tulyādhikaraṇabhūte sādhakavācake nāmamhi payujjamāne pi appayujjamāne pi dhātūhi paṭhamapuriso hoti».",
+     "en": "Rū 432: “Tumhāmhasaddavajjite tulyādhikaraṇabhūte sādhakavācake nāmamhi payujjamāne pi appayujjamāne pi dhātūhi paṭhamapuriso hoti”."
+    },
+    "nyasa": {
+     "es": "«tulyādhikaraṇasaṅkhāte sādhakavācake nāmamhi payujjamāne pi appayujjamāne pi sabbadhātūhi paṭhamapuriso hotī ti ñāpanatthaṃ».",
+     "en": "“tulyādhikaraṇasaṅkhāte sādhakavācake nāmamhi payujjamāne pi appayujjamāne pi sabbadhātūhi paṭhamapuriso hotī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "§410–§412 asignan la persona del verbo (tercera, segunda, primera). Ninguna de las dos fuentes nombra la clase; como las personas son pares de formas de cada inflexión (§408), se cuentan como vidhi · vibhatti, igual que las asignaciones de tiempo de §414–§422. Por revisar.",
+    "en": "§410–§412 assign the person of the verb (third, second, first). Neither source names the class; since the persons are pairs of forms of each inflection (§408), they are counted as vidhi · vibhatti, like the tense assignments of §414–§422. To review."
+   }
+  },
+  "411": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la segunda persona con “tumha” (tú), se emplee o no.",
+    "en": "Assignment of the second person with “tumha” (you), whether used or not."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 436: «Tulyādhikaraṇabhūte tumhasadde payujjamāne pi appayujjamāne pi dhātūhi majjhimapuriso hoti».",
+     "en": "Rū 436: “Tulyādhikaraṇabhūte tumhasadde payujjamāne pi appayujjamāne pi dhātūhi majjhimapuriso hoti”."
+    },
+    "nyasa": {
+     "es": "«tulyādhikaraṇasaṅkhāte tumhe payujjamāne pi appayujjamāne pi majjhimapuriso hotī ti ñāpanatthaṃ».",
+     "en": "“tulyādhikaraṇasaṅkhāte tumhe payujjamāne pi appayujjamāne pi majjhimapuriso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "412": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la primera persona con “amha” (yo), se emplee o no.",
+    "en": "Assignment of the first person with “amha” (I), whether used or not."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 437: «Tulyādhikaraṇabhūte amhasadde payujjamāne pi appayujjamāne pi dhātūhi uttamapuriso hoti».",
+     "en": "Rū 437: “Tulyādhikaraṇabhūte amhasadde payujjamāne pi appayujjamāne pi dhātūhi uttamapuriso hoti”."
+    },
+    "nyasa": {
+     "es": "«tulyādhikaraṇasaṅkhāte amhasaddamhi payujjamāne pi … appayujjamāne pi uttamapuriso hotī ti ñāpanatthaṃ».",
+     "en": "“tulyādhikaraṇasaṅkhāte amhasaddamhi payujjamāne pi … appayujjamāne pi uttamapuriso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "413": {
+   "tipo": "A",
+   "vidhi": "",
+   "op": {
+    "es": "Aforismo regulativo: «en tiempo» (kāle) rige las asignaciones de inflexión que siguen.",
+    "en": "Governing aphorism: “in time” (kāle) governs the assignments of inflection that follow."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 427: «Ayam adhikāro. Ito paraṃ tyādivibhattividhāne sabbattha vattate».",
+     "en": "Rū 427: “Ayam adhikāro. Ito paraṃ tyādivibhattividhāne sabbattha vattate”."
+    },
+    "nyasa": {
+     "es": "«ye ito paraṃ vakkhāma, te kāle yeva hontī ti ñāpanatthaṃ».",
+     "en": "“ye ito paraṃ vakkhāma, te kāle yeva hontī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rū 427: «Ayam adhikāro. Ito paraṃ tyādivibhattividhāne sabbattha vattate»: rige todas las asignaciones de inflexión que siguen. Nyāsa: «lo que diremos de aquí en adelante vale solo en tiempo». Determinación: adhikāra.",
+    "en": "Rū 427: “Ayam adhikāro. Ito paraṃ tyādivibhattividhāne sabbattha vattate”: it governs all the assignments of inflection that follow. The Nyāsa: “what we shall say from here on holds only in time”. Determination: adhikāra."
+   }
+  },
+  "414": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “vattamānā” en el tiempo presente.",
+    "en": "Assignment of the inflection “vattamānā” in the present time."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 428: «Paccuppanne kāle gamyamāne vattamānāvibhatti hoti».",
+     "en": "Rū 428: “Paccuppanne kāle gamyamāne vattamānāvibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«paccuppanne kāle vattamānāvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“paccuppanne kāle vattamānāvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "415": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “pañcamī” en los significados de orden y de bendición, en tiempo no enunciado.",
+    "en": "Assignment of the inflection “pañcamī” in the meanings of command and blessing, in unstated time."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 451: «Āṇatyatthe ca āsīsatthe ca anuttakāle pañcamīvibhatti hoti».",
+     "en": "Rū 451: “Āṇatyatthe ca āsīsatthe ca anuttakāle pañcamīvibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«āṇatyatthe ca āsisatthe ca anuttakāle pañcamīvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“āṇatyatthe ca āsisatthe ca anuttakāle pañcamīvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "416": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “sattamī” en los significados de consentimiento y de suposición.",
+    "en": "Assignment of the inflection “sattamī” in the meanings of consent and assumption."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 454: «Anumatyatthe ca parikappatthe ca anuttakāle sattamīvihatti hoti».",
+     "en": "Rū 454: “Anumatyatthe ca parikappatthe ca anuttakāle sattamīvihatti hoti”."
+    },
+    "nyasa": {
+     "es": "«anumatyatthe ca parikappatthe ca anuttakāle sattamīvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“anumatyatthe ca parikappatthe ca anuttakāle sattamīvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "417": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “parokkhā” en el pasado no percibido directamente.",
+    "en": "Assignment of the inflection “parokkhā” in the past not directly perceived."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 460: «Apaccakkhe vattuno indriyāvisayabhūte atīte kāle parokkhāvibhatti hoti».",
+     "en": "Rū 460: “Apaccakkhe vattuno indriyāvisayabhūte atīte kāle parokkhāvibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«apaccakkhe atīte kāle parokkhāvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“apaccakkhe atīte kāle parokkhāvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "418": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “hiyyattanī” en el pasado a partir de ayer, percibido o no.",
+    "en": "Assignment of the inflection “hiyyattanī” in the past from yesterday on, perceived or not."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 456: «Hiyyopabhuti atīte kāle paccakkhe vā appaccakkhe vā hiyyattanīvibhatti hoti».",
+     "en": "Rū 456: “Hiyyopabhuti atīte kāle paccakkhe vā appaccakkhe vā hiyyattanīvibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«hiyyopabhuti atīte kāle paccakkhe vā apaccakkhe vā hiyyattanīvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“hiyyopabhuti atīte kāle paccakkhe vā apaccakkhe vā hiyyattanīvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "419": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “ajjatanī” en el pasado próximo.",
+    "en": "Assignment of the inflection “ajjatanī” in the recent past."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 469: «Samīpe samīpato paṭhāya ajjappabhuti atīte kāle paccakkhe ca apaccakkhe ca ajjatanīvibhatti hoti».",
+     "en": "Rū 469: “Samīpe samīpato paṭhāya ajjappabhuti atīte kāle paccakkhe ca apaccakkhe ca ajjatanīvibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«samīpe atīte kāle paccakkhe vā apaccakkhe vā ajjatanīvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“samīpe atīte kāle paccakkhe vā apaccakkhe vā ajjatanīvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "420": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de “hiyyattanī” y “ajjatanī” (y, por «ca», “pañcamī”) en todo tiempo, en asociación con “mā”.",
+    "en": "Assignment of “hiyyattanī” and “ajjatanī” (and, by “ca”, “pañcamī”) in all time, in conjunction with “mā”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 471: «Yadā māyogo, tadā hiyyattan’-ajjatanīvibhattiyo sabbakāle pi honti, casaddena pañcamī ca».",
+     "en": "Rū 471: “Yadā māyogo, tadā hiyyattan’-ajjatanīvibhattiyo sabbakāle pi honti, casaddena pañcamī ca”."
+    },
+    "nyasa": {
+     "es": "«yadā māyogo, tadā hiyyattanī-ajjatanīvibhattiyo sabbakāle pi hontī ti ñāpanatthaṃ».",
+     "en": "“yadā māyogo, tadā hiyyattanī-ajjatanīvibhattiyo sabbakāle pi hontī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rū 471: «casaddena pañcamī ca»: el «ca» del sutta añade la “pañcamī” (mā bhavatu).",
+    "en": "Rū 471: “casaddena pañcamī ca”: the sutta’s “ca” adds the “pañcamī” (mā bhavatu)."
+   }
+  },
+  "421": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “bhavissantī” en el tiempo futuro.",
+    "en": "Assignment of the inflection “bhavissantī” in the future time."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 473: «Anāgate kāle bhavissantīvibhatti hoti».",
+     "en": "Rū 473: “Anāgate kāle bhavissantīvibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«anāgate kāle bhavissantīvibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“anāgate kāle bhavissantīvibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "422": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de la inflexión “kālātipatti” en el pasado, cuando la acción no llegó a ocurrir.",
+    "en": "Assignment of the inflection “kālātipatti” in the past, when the action failed to take place."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 475: «Kriyātipannamatte atīte kāle kālātipattivibhatti hoti».",
+     "en": "Rū 475: “Kriyātipannamatte atīte kāle kālātipattivibhatti hoti”."
+    },
+    "nyasa": {
+     "es": "«kriyātipannamatte atīte kāle kālātipattivibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“kriyātipannamatte atīte kāle kālātipattivibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "423": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones ti, anti … e, mhe reciben el nombre de “vattamānā”.",
+    "en": "The twelve endings ti, anti … e, mhe are named “vattamānā”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 426: «Tyādayo dvādasa vattamānāsaññā honti».",
+     "en": "Rū 426: “Tyādayo dvādasa vattamānāsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«tyādayo vattamānasaññā hontī ti ñāpanatthaṃ».",
+     "en": "“tyādayo vattamānasaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "424": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones tu, antu … e, āmase reciben el nombre de “pañcamī”.",
+    "en": "The twelve endings tu, antu … e, āmase are named “pañcamī”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 450: «Tvādayo dvādasa pañcamīsaññā honti».",
+     "en": "Rū 450: “Tvādayo dvādasa pañcamīsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«tvādayo pañcamīsaññā hontī ti ñāpanatthaṃ».",
+     "en": "“tvādayo pañcamīsaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "425": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones eyya, eyyuṃ … eyyaṃ, eyyāmhe reciben el nombre de “sattamī”.",
+    "en": "The twelve endings eyya, eyyuṃ … eyyaṃ, eyyāmhe are named “sattamī”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 453: «Eyyādayo dvādasa sattamīsaññā honti».",
+     "en": "Rū 453: “Eyyādayo dvādasa sattamīsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«eyyādayo sattamīsaññā hontī ti ñāpanatthaṃ».",
+     "en": "“eyyādayo sattamīsaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "426": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones a, u … iṃ, mhe reciben el nombre de “parokkhā”.",
+    "en": "The twelve endings a, u … iṃ, mhe are named “parokkhā”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 459: «Ā-ādayo dvādasa parokkhāsaññā honti».",
+     "en": "Rū 459: “Ā-ādayo dvādasa parokkhāsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«a-ādayo parokkhāsaññā hontī ti ñāpanatthaṃ».",
+     "en": "“a-ādayo parokkhāsaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "427": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones ā, ū … iṃ, mhase reciben el nombre de “hiyyattanī”.",
+    "en": "The twelve endings ā, ū … iṃ, mhase are named “hiyyattanī”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 455: «Ā-ādayo dvādasa hiyyattanīsaññā honti».",
+     "en": "Rū 455: “Ā-ādayo dvādasa hiyyattanīsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«ā-ādayo hiyyattanīsaññā hontī ti ñāpanatthaṃ».",
+     "en": "“ā-ādayo hiyyattanīsaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "428": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones ī, uṃ … aṃ, mhe reciben el nombre de “ajjatanī”.",
+    "en": "The twelve endings ī, uṃ … aṃ, mhe are named “ajjatanī”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 468: «Ī-ādayo dvādasa ajjatanīsaññā honti».",
+     "en": "Rū 468: “Ī-ādayo dvādasa ajjatanīsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«ī-ādayo ajjatanīsaññā hontī ti ñāpanatthaṃ».",
+     "en": "“ī-ādayo ajjatanīsaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "429": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones ssati, ssanti … ssaṃ, ssāmhe reciben el nombre de “bhavissantī”.",
+    "en": "The twelve endings ssati, ssanti … ssaṃ, ssāmhe are named “bhavissantī”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 472: «Ssatyādīnaṃ dvādasannaṃ vacanānaṃ bhavissantīsaññā honti».",
+     "en": "Rū 472: “Ssatyādīnaṃ dvādasannaṃ vacanānaṃ bhavissantīsaññā honti”."
+    },
+    "nyasa": {
+     "es": "«ssatyādayo bhavissantīsaññā hontī ti ñāpanatthaṃ».",
+     "en": "“ssatyādayo bhavissantīsaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "430": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "Las doce terminaciones ssā, ssaṃsu … ssiṃ, ssāmhase reciben el nombre de “kālātipatti”.",
+    "en": "The twelve endings ssā, ssaṃsu … ssiṃ, ssāmhase are named “kālātipatti”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 474: «Ssādīnaṃ dvādasannaṃ kālātipattisaññā hoti».",
+     "en": "Rū 474: “Ssādīnaṃ dvādasannaṃ kālātipattisaññā hoti”."
+    },
+    "nyasa": {
+     "es": "«ssādayo kālātipattisaññā hontī ti ñāpanatthaṃ».",
+     "en": "“ssādayo kālātipattisaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "431": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "“Hiyyattanī”, “sattamī”, “pañcamī” y “vattamānā” reciben el nombre de “sabbadhātuka”.",
+    "en": "“Hiyyattanī”, “sattamī”, “pañcamī” and “vattamānā” are named “sabbadhātuka”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 458: «Hiyyattanādayo catasso vibhattiyo sabbadhātukasaññā honti».",
+     "en": "Rū 458: “Hiyyattanādayo catasso vibhattiyo sabbadhātukasaññā honti”."
+    },
+    "nyasa": {
+     "es": "«hiyyattanādayo catasso sabbadhātukasaññā hontī ti ñāpanatthaṃ».",
+     "en": "“hiyyattanādayo catasso sabbadhātukasaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "432": {
+   "tipo": "P",
+   "vidhi": "",
+   "op": {
+    "es": "Regla de interpretación: los sufijos se colocan después de las raíces y de los temas nominales.",
+    "en": "Interpretive rule: suffixes are placed after roots and nominal bases."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 362: «Dhātūhi, liṅgehi ca paccayā parā ’va hontī ti paribhāsato».",
+     "en": "Rū 362: “Dhātūhi, liṅgehi ca paccayā parā ’va hontī ti paribhāsato”."
+    },
+    "nyasa": {
+     "es": "«dhātūhi ca liṅgehi ca paccayā parā va hontī ti ñāpanatthaṃ … paccayaṭṭhānaniyamakaraṇattham idaṃ vuttaṃ … idaṃ pana catūsu suttesu paribhāsāsuttan ti daṭṭhabbaṃ».",
+     "en": "“dhātūhi ca liṅgehi ca paccayā parā va hontī ti ñāpanatthaṃ … paccayaṭṭhānaniyamakaraṇattham idaṃ vuttaṃ … idaṃ pana catūsu suttesu paribhāsāsuttan ti daṭṭhabbaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rūpasiddhi lo cita como paribhāsā («“dhātu-liṅgehi parā paccayā” ti paribhāsato», Rū 362, y otra vez en Rū 428), y Nyāsa lo dice expresamente: fija el lugar del sufijo («paccayaṭṭhānaniyamakaraṇattham idaṃ vuttaṃ») y es «de los cuatro, el paribhāsā-sutta» («idaṃ pana catūsu suttesu paribhāsāsuttan ti daṭṭhabbaṃ»). Rūpasiddhi lo pone en el Taddhita (Rū 362). Determinación: paribhāsā.",
+    "en": "The Rūpasiddhi cites it as a paribhāsā (“‘dhātu-liṅgehi parā paccayā’ ti paribhāsato”, Rū 362, and again in Rū 428), and the Nyāsa says so expressly: it fixes the place of the suffix (“paccayaṭṭhānaniyamakaraṇattham idaṃ vuttaṃ”) and is “of the four, the paribhāsā-sutta” (“idaṃ pana catūsu suttesu paribhāsāsuttan ti daṭṭhabbaṃ”). The Rūpasiddhi places it in the Taddhita (Rū 362). Determination: paribhāsā."
+   }
+  },
+  "433": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Opcionalmente, aplicación de los sufijos ‘kha’, ‘cha’ y ‘sa’ tras “tija”, “gupa”, “kita” y “māna”.",
+    "en": "Optionally, application of the suffixes ‘kha’, ‘cha’ and ‘sa’ after “tija”, “gupa”, “kita” and “māna”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 528: «Tija gupa kita māna icc etehi dhātūhi kha cha sa icc ete paccayā parā honti vā».",
+     "en": "Rū 528: “Tija gupa kita māna icc etehi dhātūhi kha cha sa icc ete paccayā parā honti vā”."
+    },
+    "nyasa": {
+     "es": "«tija-gupa-kita-māna icc etehi dhātūhi kha-cha-sa icc ete paccayā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“tija-gupa-kita-māna icc etehi dhātūhi kha-cha-sa icc ete paccayā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "434": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Opcionalmente, aplicación de los sufijos ‘kha’, ‘cha’ y ‘sa’ tras “bhuja”, “ghasa”, “hara”, “su”, “pā” y otras, en el significado de querer hacer algo (desiderativo).",
+    "en": "Optionally, application of the suffixes ‘kha’, ‘cha’ and ‘sa’ after “bhuja”, “ghasa”, “hara”, “su”, “pā” and others, in the sense of wanting to do something (desiderative)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 534: «Bhuja ghasa hara su pā icc evamādīhi dhātūhi tumicchatthesu ca kha cha sa icc ete paccayā honti vā».",
+     "en": "Rū 534: “Bhuja ghasa hara su pā icc evamādīhi dhātūhi tumicchatthesu ca kha cha sa icc ete paccayā honti vā”."
+    },
+    "nyasa": {
+     "es": "«bhuja-ghasa-hara-su-pā icc evamādīhi tumicchatthesu gamyamānesu kha-cha-sa icc ete paccayā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“bhuja-ghasa-hara-su-pā icc evamādīhi tumicchatthesu gamyamānesu kha-cha-sa icc ete paccayā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "435": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘āya’ tras un nombre que sirve de comparación con el agente, en el significado de comportamiento.",
+    "en": "Application of the suffix ‘āya’ after a noun that serves as comparison for the agent, in the sense of behaviour."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 536: «Ācaraṇakriyāya kattuno upamānabhūtamhā nāmato āyappaccayo hoti ācāratthe».",
+     "en": "Rū 536: “Ācaraṇakriyāya kattuno upamānabhūtamhā nāmato āyappaccayo hoti ācāratthe”."
+    },
+    "nyasa": {
+     "es": "«kattuno upamānabhūtamhā nāmato āyapaccayo hoti ācāratthe ti ñāpanatthaṃ».",
+     "en": "“kattuno upamānabhūtamhā nāmato āyapaccayo hoti ācāratthe ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "436": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘īya’ tras un nombre que sirve de comparación, en el significado de comportamiento.",
+    "en": "Application of the suffix ‘īya’ after a noun that serves as comparison, in the sense of behaviour."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 537: «Upamānabhūtā nāmato īyappaccayo hoti ācāratthe».",
+     "en": "Rū 537: “Upamānabhūtā nāmato īyappaccayo hoti ācāratthe”."
+    },
+    "nyasa": {
+     "es": "«upamānasmā nāmato īyapaccayo hoti ācāratthe ti ñāpanatthaṃ».",
+     "en": "“upamānasmā nāmato īyapaccayo hoti ācāratthe ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "437": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘īya’ tras un nombre, en el significado de desear para uno mismo.",
+    "en": "Application of the suffix ‘īya’ after a noun, in the sense of wanting for oneself."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 538: «Nāmamhā attano icchatthe īyappaccayo hoti».",
+     "en": "Rū 538: “Nāmamhā attano icchatthe īyappaccayo hoti”."
+    },
+    "nyasa": {
+     "es": "«nāmamhā atticchatthe īyapaccayo hotī ti ñāpanatthaṃ».",
+     "en": "“nāmamhā atticchatthe īyapaccayo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "438": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación de los sufijos ‘ṇe’, ‘ṇaya’, ‘ṇāpe’ y ‘ṇāpaya’ tras las raíces en el significado de causa; se llaman “kārita” (causativo).",
+    "en": "Application of the suffixes ‘ṇe’, ‘ṇaya’, ‘ṇāpe’ and ‘ṇāpaya’ after roots in the sense of cause; they are called “kārita” (causative)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 540: «Sabbehi dhātūhi hetvatthe abhidheyye ṇe ṇaya ṇāpe ṇāpaya icc ete paccayā parā honti, te kāritasaññā ca honti».",
+     "en": "Rū 540: “Sabbehi dhātūhi hetvatthe abhidheyye ṇe ṇaya ṇāpe ṇāpaya icc ete paccayā parā honti, te kāritasaññā ca honti”."
+    },
+    "nyasa": {
+     "es": "«sabbadhātūhi hetvatthe gamyamāne ṇe-ṇaya-ṇāpe-ṇāpaya icc ete paccayā honti, te kāritasaññā ca hontī ti ñāpanatthaṃ».",
+     "en": "“sabbadhātūhi hetvatthe gamyamāne ṇe-ṇaya-ṇāpe-ṇāpaya icc ete paccayā honti, te kāritasaññā ca hontī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Hace dos cosas: aplica los sufijos y les da el nombre “kārita” (Rū 540: «te kāritasaññā ca honti»). Se clasifica por la operación principal, como §439 y §452.",
+    "en": "It does two things: it applies the suffixes and gives them the name “kārita” (Rū 540: “te kāritasaññā ca honti”). It is classified by its main operation, like §439 and §452."
+   }
+  },
+  "439": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘ṇaya’ tras un nombre que ha de tomar forma de raíz; se llama también “kārita”.",
+    "en": "Application of the suffix ‘ṇaya’ after a noun that is to take the form of a root; it is also called “kārita”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 539: «Dhātuyā rūpe nipphādetabbe, “taṃ karoti, tena atikkamati” icc ādike payujjitabbe vā sati nāmamhā ṇayappaccayo hoti, kāritasaññā ca».",
+     "en": "Rū 539: “Dhātuyā rūpe nipphādetabbe, “taṃ karoti, tena atikkamati” icc ādike payujjitabbe vā sati nāmamhā ṇayappaccayo hoti, kāritasaññā ca”."
+    },
+    "nyasa": {
+     "es": "«dhāturūpe sati nāmasmā ṇayapaccayo hoti, tato kāritasaññā cā ti ñāpanatthaṃ».",
+     "en": "“dhāturūpe sati nāmasmā ṇayapaccayo hoti, tato kāritasaññā cā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "440": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘ya’ en el impersonal (bhāva) y en el pasivo (kamma).",
+    "en": "Application of the suffix ‘ya’ in the impersonal (bhāva) and the passive (kamma)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 445: «Sabbadhātūhi paro bhāva-kammesu yappaccayo hoti».",
+     "en": "Rū 445: “Sabbadhātūhi paro bhāva-kammesu yappaccayo hoti”."
+    },
+    "nyasa": {
+     "es": "«sabbehi dhātūhi bhāvakammesu yapaccayo hotī ti ñāpanatthaṃ».",
+     "en": "“sabbehi dhātūhi bhāvakammesu yapaccayo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "441": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución del sufijo ‘ya’, junto con el final de la raíz, por una letra del grupo ‘ca’, por ‘y’ o por ‘v’.",
+    "en": "Substitution of the suffix ‘ya’, together with the end of the root, by a letter of the ‘ca’ group, by ‘y’ or by ‘v’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 447: «Tassa bhāva-kammavisayassa yappaccayassa cavagga-yakāra-vakārattaṃ hoti dhātvantena saha yathāsambhavaṃ».",
+     "en": "Rū 447: “Tassa bhāva-kammavisayassa yappaccayassa cavagga-yakāra-vakārattaṃ hoti dhātvantena saha yathāsambhavaṃ”."
+    },
+    "nyasa": {
+     "es": "«tassa yapaccayassa dhātvantena saha cavagga-yakāra-vakārattaṃ hotī ti ñāpanatthaṃ».",
+     "en": "“tassa yapaccayassa dhātvantena saha cavagga-yakāra-vakārattaṃ hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "442": {
+   "tipo": "V",
+   "vidhi": "āgama",
+   "op": {
+    "es": "Opcionalmente, inserción de ‘i’ o ‘ī’ ante el sufijo ‘ya’ del impersonal y del pasivo.",
+    "en": "Optionally, insertion of ‘i’ or ‘ī’ before the suffix ‘ya’ of the impersonal and the passive."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 448: «Sabbehi dhātūhi tasmiṃ bhāva-kammavisaye yappaccaye pare ivaṇṇāgamo hoti vā».",
+     "en": "Rū 448: “Sabbehi dhātūhi tasmiṃ bhāva-kammavisaye yappaccaye pare ivaṇṇāgamo hoti vā”."
+    },
+    "nyasa": {
+     "es": "«sabbadhātūhi tamhi yapaccaye pare ivaṇṇāgamo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“sabbadhātūhi tamhi yapaccaye pare ivaṇṇāgamo hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "443": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, el sufijo ‘ya’ toma la forma de la consonante anterior (asimilación).",
+    "en": "Optionally, the suffix ‘ya’ takes the form of the preceding consonant (assimilation)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 449: «ka-ca-ṭa-pavagga-yakāra-la-santeh’ eva dhātūhi paro yappaccayo pubbarūpam āpajjate vā».",
+     "en": "Rū 449: “ka-ca-ṭa-pavagga-yakāra-la-santeh’ eva dhātūhi paro yappaccayo pubbarūpam āpajjate vā”."
+    },
+    "nyasa": {
+     "es": "«sabbehi dhātūhi yapaccayo pubbarūpam āpajjate vikappenā ti ñāpanatthaṃ».",
+     "en": "“sabbehi dhātūhi yapaccayo pubbarūpam āpajjate vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "444": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Extensión a la voz activa de las sustituciones de ‘ya’ (§441 y §443) (extensión, atidesa).",
+    "en": "Extension to the active voice of the substitutions of ‘ya’ (§441 and §443) (extension, atidesa)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 511: «Yathā bhāva-kammesu yappaccayass’ ādeso hoti, tathā kattari pi yappaccayassa sadhātvantassa cavagga-yakāra-vakārādeso, pubbarūpañ kātabbānī».",
+     "en": "Rū 511: “Yathā bhāva-kammesu yappaccayass’ ādeso hoti, tathā kattari pi yappaccayassa sadhātvantassa cavagga-yakāra-vakārādeso, pubbarūpañ kātabbānī”."
+    },
+    "nyasa": {
+     "es": "«yathā heṭṭhā bhāvakammesu yapaccayass’ ādeso hoti, tathā kattari pi hotī ti ñāpanatthaṃ».",
+     "en": "“yathā heṭṭhā bhāvakammesu yapaccayass’ ādeso hoti, tathā kattari pi hotī ti ñāpanatthaṃ”."
+    },
+    "th": {
+     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la atidesa, en la ādesa).",
+     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (atidesa, under ādesa)."
+    }
+   },
+   "grupo": "atidesa",
+   "nota": {
+    "es": "Rū 511: «Yathā bhāva-kammesu yappaccayass’ ādeso hoti, tathā kattari pi»: extiende a la voz activa las sustituciones de §441 y §443 (atidesa). La atidesa se cuenta en la ādesa según Thitzana (vol. 2, Introducción, pp. 36–37), como §187, §331 y §332.",
+    "en": "Rū 511: “Yathā bhāva-kammesu yappaccayass’ ādeso hoti, tathā kattari pi”: it extends the substitutions of §441 and §443 to the active voice (atidesa). Atidesa is counted under ādesa according to Thitzana (vol. 2, Introduction, pp. 36–37), like §187, §331 and §332."
+   }
+  },
+  "445": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘a’ tras “bhū” y las demás raíces de su grupo, en la voz activa.",
+    "en": "Application of the suffix ‘a’ after “bhū” and the other roots of its group, in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 433: «Bhū icc evamādito dhātugaṇato paro apaccayo hoti kattari vihitesu vibhattippaccayesu paresu».",
+     "en": "Rū 433: “Bhū icc evamādito dhātugaṇato paro apaccayo hoti kattari vihitesu vibhattippaccayesu paresu”."
+    },
+    "nyasa": {
+     "es": "«bhū icc evamādito dhātugaṇato apaccayo hoti kattarī ti ñāpanatthaṃ».",
+     "en": "“bhū icc evamādito dhātugaṇato apaccayo hoti kattarī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "446": {
+   "tipo": "V",
+   "vidhi": "paccaya + āgama",
+   "op": {
+    "es": "Aplicación del sufijo ‘a’ tras “rudha” y las demás raíces de su grupo, con inserción de la niggahita delante.",
+    "en": "Application of the suffix ‘a’ after “rudha” and the other roots of its group, with insertion of the niggahita before it."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 509: «Rudha icc evamādito dhātugaṇato appaccayo hoti kattari vibhatti-ppaccayesu niggahītañ ca tato pubbaṃ hutvā āgamo hoti».",
+     "en": "Rū 509: “Rudha icc evamādito dhātugaṇato appaccayo hoti kattari vibhatti-ppaccayesu niggahītañ ca tato pubbaṃ hutvā āgamo hoti”."
+    },
+    "nyasa": {
+     "es": "«rudha icc evamādito dhātugaṇato apaccayo hoti kattari, niggahītapubbañ ca hutvā āgamo hotī ti ñāpanatthaṃ».",
+     "en": "“rudha icc evamādito dhātugaṇato apaccayo hoti kattari, niggahītapubbañ ca hutvā āgamo hotī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Dos operaciones: el sufijo ‘a’ (paccaya) y la niggahita que se inserta delante (āgama: «niggahītañ ca tato pubbaṃ hutvā āgamo hoti», Rū 509). Por el «ca», además, los sufijos ‘i’, ‘ī’, ‘e’, ‘o’ (Rū 509: «casaddena i-ī-e-opaccayā ca»).",
+    "en": "Two operations: the suffix ‘a’ (paccaya) and the niggahita inserted before it (āgama: “niggahītañ ca tato pubbaṃ hutvā āgamo hoti”, Rū 509). By “ca”, also the suffixes ‘i’, ‘ī’, ‘e’, ‘o’ (Rū 509: “casaddena i-ī-e-opaccayā ca”)."
+   }
+  },
+  "447": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘ya’ tras “divu” y las demás raíces de su grupo, en la voz activa.",
+    "en": "Application of the suffix ‘ya’ after “divu” and the other roots of its group, in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 510: «Divādito dhātugaṇato yappaccayo hoti kattari vihitesu vibhatti-ppaccayesu».",
+     "en": "Rū 510: “Divādito dhātugaṇato yappaccayo hoti kattari vihitesu vibhatti-ppaccayesu”."
+    },
+    "nyasa": {
+     "es": "«divādito dhātugaṇato yapaccayo hoti kattarī ti ñāpanatthaṃ».",
+     "en": "“divādito dhātugaṇato yapaccayo hoti kattarī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "448": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación de los sufijos ‘ṇu’, ‘ṇā’ y ‘uṇā’ tras “su” y las demás raíces de su grupo, en la voz activa.",
+    "en": "Application of the suffixes ‘ṇu’, ‘ṇā’ and ‘uṇā’ after “su” and the other roots of its group, in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 512: «Su icc evamādito dhātugaṇato ṇu ṇā uṇā icc ete paccayā honti kattari vihitesu vibhatti-ppaccayesu».",
+     "en": "Rū 512: “Su icc evamādito dhātugaṇato ṇu ṇā uṇā icc ete paccayā honti kattari vihitesu vibhatti-ppaccayesu”."
+    },
+    "nyasa": {
+     "es": "«su icc evamādito dhātugaṇato ṇu-ṇā-uṇā icc ete paccayā honti kattarī ti ñāpanatthaṃ».",
+     "en": "“su icc evamādito dhātugaṇato ṇu-ṇā-uṇā icc ete paccayā honti kattarī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "449": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación del sufijo ‘nā’ tras “kī” y las demás raíces de su grupo, en la voz activa.",
+    "en": "Application of the suffix ‘nā’ after “kī” and the other roots of its group, in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 513: «Kī icc evamādito dhātugaṇato nāpaccayo hoti kattari».",
+     "en": "Rū 513: “Kī icc evamādito dhātugaṇato nāpaccayo hoti kattari”."
+    },
+    "nyasa": {
+     "es": "«kī icc evamādito dhātugaṇato nāpaccayo hoti kattarī ti ñāpanatthaṃ».",
+     "en": "“kī icc evamādito dhātugaṇato nāpaccayo hoti kattarī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "450": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación de los sufijos ‘ppa’ y ‘ṇhā’ tras “gaha” y otras, en la voz activa.",
+    "en": "Application of the suffixes ‘ppa’ and ‘ṇhā’ after “gaha” and others, in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 517: «Gaha icc evamādito dhātuto ppa ṇhā icc ete paccayā honti kattari».",
+     "en": "Rū 517: “Gaha icc evamādito dhātuto ppa ṇhā icc ete paccayā honti kattari”."
+    },
+    "nyasa": {
+     "es": "«gaha icc evamādito dhātugaṇato ppa-ṇhā icc ete paccayā honti kattarī ti ñāpanatthaṃ».",
+     "en": "“gaha icc evamādito dhātugaṇato ppa-ṇhā icc ete paccayā honti kattarī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "451": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación de los sufijos ‘o’ e ‘yira’ tras “tanu” y las demás raíces de su grupo, en la voz activa.",
+    "en": "Application of the suffixes ‘o’ and ‘yira’ after “tanu” and the other roots of its group, in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 520: «Tanu icc evamādito dhātugaṇato o yira icc ete paccayā honti kattari».",
+     "en": "Rū 520: “Tanu icc evamādito dhātugaṇato o yira icc ete paccayā honti kattari”."
+    },
+    "nyasa": {
+     "es": "«tanu icc evamādito dhātugaṇato o-yira icc ete paccayā honti kattarī ti ñāpanatthaṃ».",
+     "en": "“tanu icc evamādito dhātugaṇato o-yira icc ete paccayā honti kattarī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "452": {
+   "tipo": "V",
+   "vidhi": "paccaya",
+   "op": {
+    "es": "Aplicación de los sufijos ‘ṇe’ y ‘ṇaya’ tras “cura” y las demás raíces de su grupo; se llaman “kārita”.",
+    "en": "Application of the suffixes ‘ṇe’ and ‘ṇaya’ after “cura” and the other roots of its group; they are called “kārita”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 525: «Cura icc evamādito dhātugaṇato ṇe ṇaya icc ete paccayā honti kattari, bhāve ca kammani, vibhatti-ppaccayesu».",
+     "en": "Rū 525: “Cura icc evamādito dhātugaṇato ṇe ṇaya icc ete paccayā honti kattari, bhāve ca kammani, vibhatti-ppaccayesu”."
+    },
+    "nyasa": {
+     "es": "«cura icc evamādito dhātugaṇato ṇe-ṇaya icc ete paccayā honti kattari, kāritasaññā cā ti ñāpanatthaṃ».",
+     "en": "“cura icc evamādito dhātugaṇato ṇe-ṇaya icc ete paccayā honti kattari, kāritasaññā cā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "453": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de las inflexiones “attanopada” (medias) en el impersonal y en el pasivo.",
+    "en": "Assignment of the “attanopada” (middle) inflections in the impersonal and the passive."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 444: «Bhāve ca kammani ca kārake abhidheyye attanopadāni honti, casaddena kammakattari pi».",
+     "en": "Rū 444: “Bhāve ca kammani ca kārake abhidheyye attanopadāni honti, casaddena kammakattari pi”."
+    },
+    "nyasa": {
+     "es": "«attanopadāni honti bhāve ca kammani cā ti ñāpanatthaṃ».",
+     "en": "“attanopadāni honti bhāve ca kammani cā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "454": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de las inflexiones “attanopada” también en la voz activa.",
+    "en": "Assignment of the “attanopada” inflections also in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 440: «Kattari ca kārake abhidheyye dhātūhi attanopadāni honti».",
+     "en": "Rū 440: “Kattari ca kārake abhidheyye dhātūhi attanopadāni honti”."
+    },
+    "nyasa": {
+     "es": "«kattari ca attanopadāni hontī ti ñāpanatthaṃ».",
+     "en": "“kattari ca attanopadāni hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "455": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Aplicación de las inflexiones (ti, etc.) tras las raíces derivadas con sufijo (los sufijos de §433–§439).",
+    "en": "Application of the inflections (ti, etc.) after roots derived with a suffix (the suffixes of §433–§439)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 530: «Dhātvatthe niddiṭṭhehi khādi-kāritantehi paccayehi tyādayo vibhattiyo honti».",
+     "en": "Rū 530: “Dhātvatthe niddiṭṭhehi khādi-kāritantehi paccayehi tyādayo vibhattiyo honti”."
+    },
+    "nyasa": {
+     "es": "«dhātvādhikāre vihitānaṃ tyādīnaṃ vibhattīnaṃ adhātumhā sampatte … dhātuppaccayā ti laddhavohārehi … vuttehi khādipaccayehi tyādayo vibhattiyo hontī ti ñāpanatthaṃ».",
+     "en": "“dhātvādhikāre vihitānaṃ tyādīnaṃ vibhattīnaṃ adhātumhā sampatte … dhātuppaccayā ti laddhavohārehi … vuttehi khādipaccayehi tyādayo vibhattiyo hontī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Las inflexiones se dan tras las raíces («dhātūhi»); este sutta las extiende a las bases derivadas con los sufijos de §433–§439, que no son raíces (Nyāsa: «adhātumhā sampatte»). Ninguna de las dos fuentes nombra la clase; se cuenta como vidhi · vibhatti, porque lo que hace es aplicar las inflexiones. Por revisar.",
+    "en": "The inflections are given after roots (“dhātūhi”); this sutta extends them to the bases derived with the suffixes of §433–§439, which are not roots (Nyāsa: “adhātumhā sampatte”). Neither source names the class; it is counted as vidhi · vibhatti, because what it does is apply the inflections. To review."
+   }
+  },
+  "456": {
+   "tipo": "V",
+   "vidhi": "vibhatti",
+   "op": {
+    "es": "Asignación de las inflexiones “parassapada” en la voz activa.",
+    "en": "Assignment of the “parassapada” inflections in the active voice."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 430: «Kattarikārake abhidheyye sabbadhātūhi parassapadaṃ hoti».",
+     "en": "Rū 430: “Kattarikārake abhidheyye sabbadhātūhi parassapadaṃ hoti”."
+    },
+    "nyasa": {
+     "es": "«kattarikārake … parassapadaṃ hotī ti ñāpanatthaṃ».",
+     "en": "“kattarikārake … parassapadaṃ hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "457": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "“Bhū” y las demás palabras que expresan acción reciben el nombre de “dhātu” (raíz).",
+    "en": "“Bhū” and the other words that express action are named “dhātu” (root)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 424: «Bhū icc evamādayo ye kriyāvācino saddagaṇā, te dhātusaññā honti».",
+     "en": "Rū 424: “Bhū icc evamādayo ye kriyāvācino saddagaṇā, te dhātusaññā honti”."
+    },
+    "nyasa": {
+     "es": "«bhū icc evamādayo ye saddagaṇā, te dhātusaññā hontī ti ñāpanatthaṃ».",
+     "en": "“bhū icc evamādayo ye saddagaṇā, te dhātusaññā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "458": {
+   "tipo": "V",
+   "vidhi": "āgama",
+   "op": {
+    "es": "A veces, reduplicación de la sílaba inicial de una sola vocal de la raíz (dvebhāva).",
+    "en": "Sometimes, reduplication of the initial single-vowel syllable of the root (dvebhāva)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 461: «Dhātūnam ādibhūtānaṃ vaṇṇānam ekassarānaṃ kvaci dvebhāvo hoti».",
+     "en": "Rū 461: “Dhātūnam ādibhūtānaṃ vaṇṇānam ekassarānaṃ kvaci dvebhāvo hoti”."
+    },
+    "nyasa": {
+     "es": "«ādibhūtānaṃ vaṇṇānaṃ ekassarānaṃ kvaci dvebhāvo hotī ti ñāpanatthaṃ».",
+     "en": "“ādibhūtānaṃ vaṇṇānaṃ ekassarānaṃ kvaci dvebhāvo hotī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Como en §28, la duplicación (dvebhāva) no está entre las ocho vidhis; se clasifica como āgama, porque se añade una segunda sílaba. Por revisar.",
+    "en": "As in §28, doubling (dvebhāva) is not among the eight vidhis; it is classified as āgama, because a second syllable is added. To review."
+   }
+  },
+  "459": {
+   "tipo": "S",
+   "vidhi": "",
+   "op": {
+    "es": "La parte anterior de la raíz reduplicada recibe el nombre de “abbhāsa”.",
+    "en": "The former part of the reduplicated root is named “abbhāsa”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 462: «Dvebhūtassa dhātussa yo pubbo avayavo, so abbhāsasañño hoti».",
+     "en": "Rū 462: “Dvebhūtassa dhātussa yo pubbo avayavo, so abbhāsasañño hoti”."
+    },
+    "nyasa": {
+     "es": "«dvebhūtassa dhātussa yo pubbo, so abbhāsasañño hotī ti ñāpanatthaṃ».",
+     "en": "“dvebhūtassa dhātussa yo pubbo, so abbhāsasañño hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "460": {
+   "tipo": "V",
+   "vidhi": "rassa",
+   "op": {
+    "es": "Acortamiento de la vocal del abbhāsa.",
+    "en": "Shortening of the vowel of the abbhāsa."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 506: «Abbhāse vattamānassa sarassa rasso hoti».",
+     "en": "Rū 506: “Abbhāse vattamānassa sarassa rasso hoti”."
+    },
+    "nyasa": {
+     "es": "«abbhāse vattamānassa sarassa rasso hotī ti ñāpanatthaṃ».",
+     "en": "“abbhāse vattamānassa sarassa rasso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "461": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "En el abbhāsa, sustitución de la segunda y la cuarta consonante de cada grupo por la primera y la tercera.",
+    "en": "In the abbhāsa, substitution of the second and fourth consonant of each group by the first and third."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 464: «Abbhāsagatānaṃ dutiya-catutthānaṃ vaggabyañjanānaṃ yathākkamaṃ paṭhama-tatiyā honti».",
+     "en": "Rū 464: “Abbhāsagatānaṃ dutiya-catutthānaṃ vaggabyañjanānaṃ yathākkamaṃ paṭhama-tatiyā honti”."
+    },
+    "nyasa": {
+     "es": "«abbhāsagatānaṃ dutiya-catutthānaṃ paṭhama-tatiyā hontī ti ñāpanatthaṃ».",
+     "en": "“abbhāsagatānaṃ dutiya-catutthānaṃ paṭhama-tatiyā hontī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "462": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "En el abbhāsa, sustitución del grupo ‘ka’ por el grupo ‘ca’.",
+    "en": "In the abbhāsa, substitution of the ‘ka’ group by the ‘ca’ group."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 467: «Abbhāse vattamānassa kavaggassa cavaggo hoti».",
+     "en": "Rū 467: “Abbhāse vattamānassa kavaggassa cavaggo hoti”."
+    },
+    "nyasa": {
+     "es": "«abbhāse vattamānassa kavaggassa cavaggo hotī ti ñāpanatthaṃ».",
+     "en": "“abbhāse vattamānassa kavaggassa cavaggo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "463": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, en el abbhāsa de “māna” y “kita”, sustitución por ‘v’ y por ‘t’ respectivamente.",
+    "en": "Optionally, in the abbhāsa of “māna” and “kita”, substitution by ‘v’ and by ‘t’ respectively."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 532: «Abbhāsagatānaṃ māna kita icc etesaṃ dhātūnaṃ vakāra-takārattaṃ hoti vā yathākkamaṃ».",
+     "en": "Rū 532: “Abbhāsagatānaṃ māna kita icc etesaṃ dhātūnaṃ vakāra-takārattaṃ hoti vā yathākkamaṃ”."
+    },
+    "nyasa": {
+     "es": "«māna-kita icc etesaṃ dhātūnaṃ abbhāsagatānaṃ vakāra-takārādesā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“māna-kita icc etesaṃ dhātūnaṃ abbhāsagatānaṃ vakāra-takārādesā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "464": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "En el abbhāsa, sustitución de ‘h’ por ‘j’.",
+    "en": "In the abbhāsa, substitution of ‘h’ by ‘j’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 504: «Hakārassa abbhāse vattamānassa jo hoti».",
+     "en": "Rū 504: “Hakārassa abbhāse vattamānassa jo hoti”."
+    },
+    "nyasa": {
+     "es": "«abbhāse vattamānassa hakārassa jādeso hotī ti ñāpanatthaṃ».",
+     "en": "“abbhāse vattamānassa hakārassa jādeso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "465": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución del final del abbhāsa por ‘i’, ‘ī’ o ‘a’.",
+    "en": "Optionally, substitution of the end of the abbhāsa by ‘i’, ‘ī’ or ‘a’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 463: «Abbhāsassa antassa ivaṇṇo hoti vā, akāro ca».",
+     "en": "Rū 463: “Abbhāsassa antassa ivaṇṇo hoti vā, akāro ca”."
+    },
+    "nyasa": {
+     "es": "«abbhāsantassa ivaṇṇo ca akāro ca hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“abbhāsantassa ivaṇṇo ca akāro ca hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "466": {
+   "tipo": "V",
+   "vidhi": "āgama",
+   "op": {
+    "es": "Opcionalmente, inserción de la niggahita al final del abbhāsa.",
+    "en": "Optionally, insertion of the niggahita at the end of the abbhāsa."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 489: «Abbhāsante niggahītañ c’ āgamo hoti vā».",
+     "en": "Rū 489: “Abbhāsante niggahītañ c’ āgamo hoti vā”."
+    },
+    "nyasa": {
+     "es": "«abbhāsante niggahītāgamo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“abbhāsante niggahītāgamo hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "467": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Tras el abbhāsa, sustitución de “pā” y “māna” por ‘vā’ y ‘maṃ’ cuando sigue el sufijo ‘sa’.",
+    "en": "After the abbhāsa, substitution of “pā” and “māna” by ‘vā’ and ‘maṃ’ when the suffix ‘sa’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 533: «Tato abbhāsato parāsaṃ pā-mānānaṃ dhātūnaṃ vā maṃ icc ete ādesā honti yathākkamaṃ sappaccaye pare».",
+     "en": "Rū 533: “Tato abbhāsato parāsaṃ pā-mānānaṃ dhātūnaṃ vā maṃ icc ete ādesā honti yathākkamaṃ sappaccaye pare”."
+    },
+    "nyasa": {
+     "es": "«tato abbhāsato paresaṃ pā-mānānaṃ dhātūnaṃ vā-maṃ icc ete ādesā honti sapaccaye pare ti ñāpanatthaṃ».",
+     "en": "“tato abbhāsato paresaṃ pā-mānānaṃ dhātūnaṃ vā-maṃ icc ete ādesā honti sapaccaye pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "468": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “ṭhā” por ‘tiṭṭha’.",
+    "en": "Optionally, substitution of “ṭhā” by ‘tiṭṭha’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 492: «Ṭhā icc etassa dhātussa tiṭṭhādeso hoti vā».",
+     "en": "Rū 492: “Ṭhā icc etassa dhātussa tiṭṭhādeso hoti vā”."
+    },
+    "nyasa": {
+     "es": "«ṭhā icc etassa dhātussa tiṭṭhādeso hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“ṭhā icc etassa dhātussa tiṭṭhādeso hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "469": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “pā” por ‘piba’ (‘piva’).",
+    "en": "Optionally, substitution of “pā” by ‘piba’ (‘piva’)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 494: «Pā icc etassa dhātussa pibādeso hoti vā».",
+     "en": "Rū 494: “Pā icc etassa dhātussa pibādeso hoti vā”."
+    },
+    "nyasa": {
+     "es": "«pā icc etassa dhātussa pivādeso hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“pā icc etassa dhātussa pivādeso hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "470": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “ñā” por ‘jā’, ‘jaṃ’ y ‘nā’.",
+    "en": "Optionally, substitution of “ñā” by ‘jā’, ‘jaṃ’ and ‘nā’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 514: «Ñā icc etassa dhātussa jā jaṃ nā icc ete ādesā honti vā».",
+     "en": "Rū 514: “Ñā icc etassa dhātussa jā jaṃ nā icc ete ādesā honti vā”."
+    },
+    "nyasa": {
+     "es": "«ñā icc etassa dhātussa jā-jaṃ-nā icc ete ādesā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“ñā icc etassa dhātussa jā-jaṃ-nā icc ete ādesā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "471": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “disa” por ‘passa’, ‘dissa’ y ‘dakkha’.",
+    "en": "Optionally, substitution of “disa” by ‘passa’, ‘dissa’ and ‘dakkha’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 483: «Disa icc etassa dhātussa passa dissa dakkha icc ete ādesā honti vā».",
+     "en": "Rū 483: “Disa icc etassa dhātussa passa dissa dakkha icc ete ādesā honti vā”."
+    },
+    "nyasa": {
+     "es": "«disassa dhātussa passa-dissa-dakkha icc ete ādesā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“disassa dhātussa passa-dissa-dakkha icc ete ādesā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "472": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la consonante final de la raíz por ‘c’ cuando siguen los sufijos ‘cha’.",
+    "en": "Substitution of the final consonant of the root by ‘c’ when the suffixes ‘cha’ follow."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 531: «Dhātvantassa byañjanassa cakārādeso hoti chappaccayesu paresu».",
+     "en": "Rū 531: “Dhātvantassa byañjanassa cakārādeso hoti chappaccayesu paresu”."
+    },
+    "nyasa": {
+     "es": "«dhātvantassa byañjanassa cakārādeso hoti chapaccayesu paresū ti ñāpanatthaṃ».",
+     "en": "“dhātvantassa byañjanassa cakārādeso hoti chapaccayesu paresū ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "473": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la consonante final de la raíz por ‘k’ cuando sigue el sufijo ‘kha’.",
+    "en": "Substitution of the final consonant of the root by ‘k’ when the suffix ‘kha’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 529: «Dhātvantassa byañjanassa kakārādeso hoti khappaccaye pare».",
+     "en": "Rū 529: “Dhātvantassa byañjanassa kakārādeso hoti khappaccaye pare”."
+    },
+    "nyasa": {
+     "es": "«dhātvantassa byañjanassa kakārādeso hoti khapaccaye pare ti ñāpanatthaṃ».",
+     "en": "“dhātvantassa byañjanassa kakārādeso hoti khapaccaye pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "474": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de toda la raíz “hara” por ‘gī’ cuando sigue el sufijo ‘sa’.",
+    "en": "Substitution of the whole root “hara” by ‘gī’ when the suffix ‘sa’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 535: «Hara icc etassa dhātussa sabbassa gī hoti se paccaye pare».",
+     "en": "Rū 535: “Hara icc etassa dhātussa sabbassa gī hoti se paccaye pare”."
+    },
+    "nyasa": {
+     "es": "«hara icc etassa dhātussa sabbass’ eva gī-ādeso hoti sapaccaye pare ti ñāpanatthaṃ».",
+     "en": "“hara icc etassa dhātussa sabbass’ eva gī-ādeso hoti sapaccaye pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "475": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de “brū” y “bhū” por ‘āha’ y ‘bhūva’ en la inflexión “parokkhā”.",
+    "en": "Substitution of “brū” and “bhū” by ‘āha’ and ‘bhūva’ in the “parokkhā” inflection."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 465: «Brū bhū icc etesaṃ dhātūnaṃ āha bhūva icc ete ādesā honti parokkhāvibhattiyaṃ».",
+     "en": "Rū 465: “Brū bhū icc etesaṃ dhātūnaṃ āha bhūva icc ete ādesā honti parokkhāvibhattiyaṃ”."
+    },
+    "nyasa": {
+     "es": "«brū-bhū icc etesaṃ dhātūnaṃ āha-bhūva icc ete ādesā honti parokkhāyaṃ vibhattiyan ti ñāpanatthaṃ».",
+     "en": "“brū-bhū icc etesaṃ dhātūnaṃ āha-bhūva icc ete ādesā honti parokkhāyaṃ vibhattiyan ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "476": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución del final de “gamu” por ‘ccha’ ante todas las inflexiones.",
+    "en": "Optionally, substitution of the end of “gamu” by ‘ccha’ before all the inflections."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 442: «Gamu icc etassa dhātuss’ anto makāro ccho hoti vā sabbāsu vibhattīsu, sabbaggahaṇena mān’-anta-yakāritappaccayesu ca».",
+     "en": "Rū 442: “Gamu icc etassa dhātuss’ anto makāro ccho hoti vā sabbāsu vibhattīsu, sabbaggahaṇena mān’-anta-yakāritappaccayesu ca”."
+    },
+    "nyasa": {
+     "es": "«gamu icc etassa dhātussa anto ccho hoti vikappena sabbāsu paccaya-vibhattīsū ti ñāpanatthaṃ».",
+     "en": "“gamu icc etassa dhātussa anto ccho hoti vikappena sabbāsu paccaya-vibhattīsū ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "477": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la ‘a’ de “vaca” por ‘o’ cuando sigue la inflexión “ajjatanī”.",
+    "en": "Substitution of the ‘a’ of “vaca” by ‘o’ when the “ajjatanī” inflection follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 479: «Vaca icc etassa dhātussa akāro ottam āpajjate ajjatanimhi vibhattimhi».",
+     "en": "Rū 479: “Vaca icc etassa dhātussa akāro ottam āpajjate ajjatanimhi vibhattimhi”."
+    },
+    "nyasa": {
+     "es": "«vaca icc etassa dhātussa akāro ottam āpajjate ajjatanimhi vibhattimhī ti ñāpanatthaṃ».",
+     "en": "“vaca icc etassa dhātussa akāro ottam āpajjate ajjatanimhi vibhattimhī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "478": {
+   "tipo": "V",
+   "vidhi": "dīgha",
+   "op": {
+    "es": "Alargamiento de ‘a’ cuando siguen ‘hi’, ‘mi’ y ‘ma’.",
+    "en": "Lengthening of ‘a’ when ‘hi’, ‘mi’ and ‘ma’ follow."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 438: «Akāro dīgham āpajjate hi mi ma icc etāsu vibhattīsu».",
+     "en": "Rū 438: “Akāro dīgham āpajjate hi mi ma icc etāsu vibhattīsu”."
+    },
+    "nyasa": {
+     "es": "«akāro dīgham āpajjate hi-mi-ma icc etāsu vibhattīsū ti ñāpanatthaṃ».",
+     "en": "“akāro dīgham āpajjate hi-mi-ma icc etāsu vibhattīsū ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "479": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "es": "Opcionalmente, elisión de la inflexión ‘hi’ (tras ‘a’).",
+    "en": "Optionally, elision of the inflection ‘hi’ (after ‘a’)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 452: «Akārato paro hivibhatti lopam āpajjate vā».",
+     "en": "Rū 452: “Akārato paro hivibhatti lopam āpajjate vā”."
+    },
+    "nyasa": {
+     "es": "«hivibhatti lopam āpajjate vikappenā ti ñāpanatthaṃ».",
+     "en": "“hivibhatti lopam āpajjate vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "480": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Sustitución de la vocal de “hū” por ‘eha’, ‘oha’ y ‘e’ ante la inflexión “bhavissantī”, y opcionalmente elisión de ‘ssa’.",
+    "en": "Substitution of the vowel of “hū” by ‘eha’, ‘oha’ and ‘e’ before the “bhavissantī” inflection, and optionally elision of ‘ssa’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 490: «Hū icc etassa dhātussa saro eha-oha-ettam āpajjate bhavissantimhi vibhattimhi, ssassa ca lopo hoti vā».",
+     "en": "Rū 490: “Hū icc etassa dhātussa saro eha-oha-ettam āpajjate bhavissantimhi vibhattimhi, ssassa ca lopo hoti vā”."
+    },
+    "nyasa": {
+     "es": "«hū icc etassa dhātussa saro eh’-oh’-ettam āpajjate bhavissantimhi vibhattimhi, ssassa ca lopo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“hū icc etassa dhātussa saro eh’-oh’-ettam āpajjate bhavissantimhi vibhattimhi, ssassa ca lopo hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "481": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “kara”, junto con su sufijo, por ‘kāha’ ante la inflexión “bhavissantī”, con elisión de ‘ssa’.",
+    "en": "Optionally, substitution of “kara”, together with its suffix, by ‘kāha’ before the “bhavissantī” inflection, with elision of ‘ssa’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 524: «Kara icc etassa dhātussa sappaccayassa kāhādeso hoti vā bhavissantimhi, ssassa ca lopo hoti».",
+     "en": "Rū 524: “Kara icc etassa dhātussa sappaccayassa kāhādeso hoti vā bhavissantimhi, ssassa ca lopo hoti”."
+    },
+    "nyasa": {
+     "es": "«kara icc etassa dhātussa sapaccayassa kāhādeso hoti, sakāradvayassa ca lopo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“kara icc etassa dhātussa sapaccayassa kāhādeso hoti, sakāradvayassa ca lopo hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "482": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución del final de “dā” por ‘aṃ’ cuando siguen ‘mi’ y ‘ma’.",
+    "en": "Optionally, substitution of the end of “dā” by ‘aṃ’ when ‘mi’ and ‘ma’ follow."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 508: «Dā icc etassa dhātussa antassa aṃ hoti vā mi ma icc etesu paresu».",
+     "en": "Rū 508: “Dā icc etassa dhātussa antassa aṃ hoti vā mi ma icc etesu paresu”."
+    },
+    "nyasa": {
+     "es": "«dā icc etassa dhātussa antassa aṃ hoti mi-ma icc etesu vibhattīsū ti ñāpanatthaṃ».",
+     "en": "“dā icc etassa dhātussa antassa aṃ hoti mi-ma icc etesu vibhattīsū ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "483": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Fortalecimiento (vuddhi) de la vocal de la raíz que no termina en consonante conjunta, cuando sigue un sufijo causativo (kārita).",
+    "en": "Strengthening (vuddhi) of the vowel of a root that does not end in a conjunct consonant, when a causative (kārita) suffix follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 527: «Asaṃyogantassa dhātussa kārite pare vuddhi hoti».",
+     "en": "Rū 527: “Asaṃyogantassa dhātussa kārite pare vuddhi hoti”."
+    },
+    "nyasa": {
+     "es": "«asaṃyogantassa dhātussa kārite vuddhi hotī ti ñāpanatthaṃ».",
+     "en": "“asaṃyogantassa dhātussa kārite vuddhi hotī ti ñāpanatthaṃ”."
+    },
+    "th": {
+     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la vuddhi, en la ādesa).",
+     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi, under ādesa)."
+    }
+   },
+   "grupo": "vuddhi",
+   "nota": {
+    "es": "La vuddhi se cuenta en la ādesa según Thitzana (vol. 2, Introducción, pp. 36–37), como §400. Qué vuddhi corresponde lo fija la paribhāsā §405 (Rū 434: «“A-y-uvaṇṇānañ c’ āyo vuddhī” ti paribhāsato»).",
+    "en": "Vuddhi is counted under ādesa according to Thitzana (vol. 2, Introduction, pp. 36–37), like §400. Which vuddhi applies is fixed by the paribhāsā §405 (Rū 434: “‘A-y-uvaṇṇānañ c’ āyo vuddhī’ ti paribhāsato”)."
+   }
+  },
+  "484": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, fortalecimiento (vuddhi) de “ghaṭa” y otras raíces ante el causativo.",
+    "en": "Optionally, strengthening (vuddhi) of “ghaṭa” and other roots before the causative."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 542: «Ghaṭādīnaṃ dhātūnaṃ asaṃyogantānaṃ vuddhi hoti vā kārite».",
+     "en": "Rū 542: “Ghaṭādīnaṃ dhātūnaṃ asaṃyogantānaṃ vuddhi hoti vā kārite”."
+    },
+    "nyasa": {
+     "es": "«ghaṭādīnaṃ dhātūnaṃ asaṃyogantānaṃ vikappena vuddhi hoti kārite ti ñāpanatthaṃ».",
+     "en": "“ghaṭādīnaṃ dhātūnaṃ asaṃyogantānaṃ vikappena vuddhi hoti kārite ti ñāpanatthaṃ”."
+    },
+    "th": {
+     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la vuddhi, en la ādesa).",
+     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi, under ādesa)."
+    }
+   },
+   "grupo": "vuddhi",
+   "nota": {
+    "es": "Vuddhi opcional (vā), contada en la ādesa como §483. Rū 542 lee el «vā» como vavatthitavibhāsā: en estas raíces la vuddhi normalmente no se hace (gameti, gamayati).",
+    "en": "Optional vuddhi (vā), counted under ādesa like §483. Rū 542 reads the “vā” as vavatthitavibhāsā: in these roots vuddhi is normally not made (gameti, gamayati)."
+   }
+  },
+  "485": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Fortalecimiento (vuddhi) de la vocal de la raíz ante los demás sufijos (no causativos).",
+    "en": "Strengthening (vuddhi) of the root vowel before the other (non-causative) suffixes."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 434: «Kāritato aññesu paccayesu asaṃyogantānaṃ dhātūnaṃ vuddhi hoti. Caggahaṇena ṇuppaccayass’ āpi vuddhi hoti».",
+     "en": "Rū 434: “Kāritato aññesu paccayesu asaṃyogantānaṃ dhātūnaṃ vuddhi hoti. Caggahaṇena ṇuppaccayass’ āpi vuddhi hoti”."
+    },
+    "nyasa": {
+     "es": "«aññesu ca paccayesu asaṃyogantānaṃ dhātūnaṃ vuddhi hotī ti ñāpanatthaṃ».",
+     "en": "“aññesu ca paccayesu asaṃyogantānaṃ dhātūnaṃ vuddhi hotī ti ñāpanatthaṃ”."
+    },
+    "th": {
+     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la vuddhi, en la ādesa).",
+     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vuddhi, under ādesa)."
+    }
+   },
+   "grupo": "vuddhi",
+   "nota": {
+    "es": "Vuddhi ante los sufijos no causativos, contada en la ādesa como §483; por el «ca», también la del sufijo ‘ṇu’ (Rū 434).",
+    "en": "Vuddhi before the non-causative suffixes, counted under ādesa like §483; by “ca”, also that of the suffix ‘ṇu’ (Rū 434)."
+   }
+  },
+  "486": {
+   "tipo": "V",
+   "vidhi": "dīgha",
+   "op": {
+    "es": "Alargamiento de la vocal de “guha” y “dusa” cuando sigue un sufijo causativo (en lugar de la vuddhi).",
+    "en": "Lengthening of the vowel of “guha” and “dusa” when a causative suffix follows (instead of vuddhi)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 543: «Guha dusa icc etesaṃ dhātūnaṃ saro dīgham āpajjate kārite pare, vuddhāpavādo ’yaṃ».",
+     "en": "Rū 543: “Guha dusa icc etesaṃ dhātūnaṃ saro dīgham āpajjate kārite pare, vuddhāpavādo ’yaṃ”."
+    },
+    "nyasa": {
+     "es": "«guha-dusa icc etesaṃ dhātūnaṃ saro dīgham āpajjate kārite ti ñāpanatthaṃ».",
+     "en": "“guha-dusa icc etesaṃ dhātūnaṃ saro dīgham āpajjate kārite ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rū 543: «vuddhāpavādo ’yaṃ»: excepción (apavāda) a la vuddhi de §483; en vez de fortalecer, alarga.",
+    "en": "Rū 543: “vuddhāpavādo ’yaṃ”: an exception (apavāda) to the vuddhi of §483; instead of strengthening, it lengthens."
+   }
+  },
+  "487": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la ‘v’ de “vaca”, “vasa”, “vaha” y otras por ‘u’ cuando sigue el sufijo ‘ya’.",
+    "en": "Substitution of the ‘v’ of “vaca”, “vasa”, “vaha” and others by ‘u’ when the suffix ‘ya’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 478: «Vaca vasa vaha icc evamādīnaṃ dhātūnaṃ vakārassa ukāro hoti yappaccaye pare, ādisaddena vaḍḍhassa ca».",
+     "en": "Rū 478: “Vaca vasa vaha icc evamādīnaṃ dhātūnaṃ vakārassa ukāro hoti yappaccaye pare, ādisaddena vaḍḍhassa ca”."
+    },
+    "nyasa": {
+     "es": "«vaca-vasa-vaha icc evamādīnaṃ dhātūnaṃ vakārassa ukāro hoti yapaccaye pare ti ñāpanatthaṃ».",
+     "en": "“vaca-vasa-vaha icc evamādīnaṃ dhātūnaṃ vakārassa ukāro hoti yapaccaye pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "488": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Inversión (metátesis) de ‘h’ con el sufijo ‘ya’ que sigue, y opcionalmente sustitución de ‘y’ por ‘l’.",
+    "en": "Inversion (metathesis) of ‘h’ with the following suffix ‘ya’, and optionally substitution of ‘y’ by ‘l’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 481: «Hakārassa vipariyayo hoti yappaccaye pare, yappaccayassa ca lakāro hoti vā».",
+     "en": "Rū 481: “Hakārassa vipariyayo hoti yappaccaye pare, yappaccayassa ca lakāro hoti vā”."
+    },
+    "nyasa": {
+     "es": "«havipariyāyo hoti yapaccayasmiṃ pare, yakārassa ca lo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“havipariyāyo hoti yapaccayasmiṃ pare, yakārassa ca lo hoti vikappenā ti ñāpanatthaṃ”."
+    },
+    "th": {
+     "es": "Introducción, pp. 36–37: dentro de la ādesa, «Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included» (la vipariyāya, en la ādesa).",
+     "en": "Introduction, pp. 36–37: under ādesa, “Vuddhi, Vipariyāya, Pakati, Atidesa and so on, are also included” (vipariyāya, under ādesa)."
+    }
+   },
+   "grupo": "vipariyaya",
+   "nota": {
+    "es": "Dos operaciones: la inversión (vipariyāya) de ‘h’ con la ‘y’ del sufijo (vaha + ya → vayha: vayhati) y la sustitución opcional de esa ‘y’ por ‘l’. La vipariyāya se cuenta en la ādesa según Thitzana (vol. 2, Introducción, pp. 36–37), que la nombra expresamente.",
+    "en": "Two operations: the inversion (vipariyāya) of ‘h’ with the ‘y’ of the suffix (vaha + ya → vayha: vayhati) and the optional substitution of that ‘y’ by ‘l’. Vipariyāya is counted under ādesa according to Thitzana (vol. 2, Introduction, pp. 36–37), who names it expressly."
+   }
+  },
+  "489": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de toda la raíz “gaha” por ‘ghe’ cuando sigue el sufijo ‘ppa’.",
+    "en": "Substitution of the whole root “gaha” by ‘ghe’ when the suffix ‘ppa’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 519: «Gaha icc etassa dhātussa sabbassa ghe-ādeso hoti ppappaccaye pare».",
+     "en": "Rū 519: “Gaha icc etassa dhātussa sabbassa ghe-ādeso hoti ppappaccaye pare”."
+    },
+    "nyasa": {
+     "es": "«gaha icc etassa dhātussa ghekāro hoti ppapaccayasmiṃ pare ti ñāpanatthaṃ».",
+     "en": "“gaha icc etassa dhātussa ghekāro hoti ppapaccayasmiṃ pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "490": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "es": "Elisión de la ‘h’ de “gaha” cuando sigue el sufijo ‘ṇhā’.",
+    "en": "Elision of the ‘h’ of “gaha” when the suffix ‘ṇhā’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 518: «Gaha icc etassa dhātussa hakārassa lopo hoti ṇhāmhi paccaye pare».",
+     "en": "Rū 518: “Gaha icc etassa dhātussa hakārassa lopo hoti ṇhāmhi paccaye pare”."
+    },
+    "nyasa": {
+     "es": "«gaha icc etassa dhātussa hakārassa lopo hoti ṇhāpaccayasmiṃ pare ti ñāpanatthaṃ».",
+     "en": "“gaha icc etassa dhātussa hakārassa lopo hoti ṇhāpaccayasmiṃ pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "491": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de toda la raíz “kara” por ‘kāsa’ cuando sigue la inflexión “ajjatanī”.",
+    "en": "Optionally, substitution of the whole root “kara” by ‘kāsa’ when the “ajjatanī” inflection follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 523: «Kara icc etassa dhātussa sabbass’ eva kāsattaṃ hoti vā ajjatanimhi vibhattimhi pare … “sattam ajjatanimhī” ti yogavibhāgena aññasmā pi dhātuto sāgamo pi sijjhati».",
+     "en": "Rū 523: “Kara icc etassa dhātussa sabbass’ eva kāsattaṃ hoti vā ajjatanimhi vibhattimhi pare … “sattam ajjatanimhī” ti yogavibhāgena aññasmā pi dhātuto sāgamo pi sijjhati”."
+    },
+    "nyasa": {
+     "es": "«kara icc etassa dhātussa kāsattaṃ hoti ajjatanimhi vikappenā ti ñāpanatthaṃ».",
+     "en": "“kara icc etassa dhātussa kāsattaṃ hoti ajjatanimhi vikappenā ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rū 523 da además una segunda lectura: por yogavibhāga, «sattam ajjatanimhī», inserción de ‘s’ (āgama) también tras otras raíces. Se clasifica por la lectura principal, la sustitución de “kara” por ‘kāsa’.",
+    "en": "Rū 523 also gives a second reading: by yogavibhāga, “sattam ajjatanimhī”, insertion of ‘s’ (āgama) after other roots too. It is classified by the main reading, the substitution of “kara” by ‘kāsa’."
+   }
+  },
+  "492": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Tras “asa”, opcionalmente sustitución de ‘mi’ y ‘ma’ por ‘mhi’ y ‘mha’, y elisión del final de la raíz.",
+    "en": "After “asa”, optionally substitution of ‘mi’ and ‘ma’ by ‘mhi’ and ‘mha’, and elision of the end of the root."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 499: «Asa icc etāya dhātuyā parāsaṃ mi ma icc etāsaṃ vibhattīnaṃ mhi mha icc ete ādesā honti vā, dhātvantassa lopo ca».",
+     "en": "Rū 499: “Asa icc etāya dhātuyā parāsaṃ mi ma icc etāsaṃ vibhattīnaṃ mhi mha icc ete ādesā honti vā, dhātvantassa lopo ca”."
+    },
+    "nyasa": {
+     "es": "«asa icc etasmā mi-ma icc etāsaṃ vibhattīnaṃ mhi-mhādesā honti, dhātvantassa ca lopo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“asa icc etasmā mi-ma icc etāsaṃ vibhattīnaṃ mhi-mhādesā honti, dhātvantassa ca lopo hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "493": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Tras “asa”, sustitución de ‘tha’ por ‘ttha’, y elisión del final de la raíz.",
+    "en": "After “asa”, substitution of ‘tha’ by ‘ttha’, and elision of the end of the root."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 498: «Asa icc etāya dhātuyā parassa thassa vibhattissa tthattaṃ hoti, dhātvantassa lopo ca».",
+     "en": "Rū 498: “Asa icc etāya dhātuyā parassa thassa vibhattissa tthattaṃ hoti, dhātvantassa lopo ca”."
+    },
+    "nyasa": {
+     "es": "«asa icc etasmā thassa vibhattissa tthattaṃ hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ».",
+     "en": "“asa icc etasmā thassa vibhattissa tthattaṃ hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "494": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Tras “asa”, sustitución de ‘ti’ por ‘tthi’, y elisión del final de la raíz.",
+    "en": "After “asa”, substitution of ‘ti’ by ‘tthi’, and elision of the end of the root."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 495: «Asa icc etasmā dhātumhā parassa tissa vibhattissa tthittaṃ hoti, dhātvantassa lopo ca».",
+     "en": "Rū 495: “Asa icc etasmā dhātumhā parassa tissa vibhattissa tthittaṃ hoti, dhātvantassa lopo ca”."
+    },
+    "nyasa": {
+     "es": "«asa icc etasmā tissa vibhattissa tthittaṃ hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ».",
+     "en": "“asa icc etasmā tissa vibhattissa tthittaṃ hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "495": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Tras “asa”, sustitución de ‘tu’ por ‘tthu’, y elisión del final de la raíz.",
+    "en": "After “asa”, substitution of ‘tu’ by ‘tthu’, and elision of the end of the root."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 500: «Asa icc etāya dhātuyā parassa tussa vibhattissa tthuttaṃ hoti, dhātvantassa lopo ca».",
+     "en": "Rū 500: “Asa icc etāya dhātuyā parassa tussa vibhattissa tthuttaṃ hoti, dhātvantassa lopo ca”."
+    },
+    "nyasa": {
+     "es": "«asa icc etasmā tussa vibhattissa tthuttaṃ hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ».",
+     "en": "“asa icc etasmā tussa vibhattissa tthuttaṃ hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "496": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "es": "Elisión del final de “asa” cuando sigue la inflexión ‘si’.",
+    "en": "Elision of the end of “asa” when the inflection ‘si’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 497: «Asadhātussa antalopo hoti simhi vibhattimhi ca».",
+     "en": "Rū 497: “Asadhātussa antalopo hoti simhi vibhattimhi ca”."
+    },
+    "nyasa": {
+     "es": "«asa icc etass’ eva dhātussa simhi vibhattimhi anto lopo hotī ti ñāpanatthaṃ».",
+     "en": "“asa icc etass’ eva dhātussa simhi vibhattimhi anto lopo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "497": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Tras “labha”, opcionalmente sustitución de ‘ī’ e ‘iṃ’ por ‘ttha’ y ‘tthaṃ’, y elisión del final de la raíz.",
+    "en": "After “labha”, optionally substitution of ‘ī’ and ‘iṃ’ by ‘ttha’ and ‘tthaṃ’, and elision of the end of the root."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 477: «Labha icc etasmā dhātuto paresaṃ ī-iṃnaṃvibhattīnaṃ ttha tthaṃ icc ete ādesā honti vā, dhātvantassa lopo ca».",
+     "en": "Rū 477: “Labha icc etasmā dhātuto paresaṃ ī-iṃnaṃvibhattīnaṃ ttha tthaṃ icc ete ādesā honti vā, dhātvantassa lopo ca”."
+    },
+    "nyasa": {
+     "es": "«labha icc etasmā ī-iṃnaṃ vibhattīnaṃ ttha-tthaṃ ādesā honti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ».",
+     "en": "“labha icc etasmā ī-iṃnaṃ vibhattīnaṃ ttha-tthaṃ ādesā honti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "498": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Tras “kusa”, sustitución de ‘ī’ por ‘cchi’, y elisión del final de la raíz.",
+    "en": "After “kusa”, substitution of ‘ī’ by ‘cchi’, and elision of the end of the root."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 480: «Kusa icc etasmā dhātuto īvibhattissa cchi-ādeso hoti, dhātvantassa lopo ca».",
+     "en": "Rū 480: “Kusa icc etasmā dhātuto īvibhattissa cchi-ādeso hoti, dhātvantassa lopo ca”."
+    },
+    "nyasa": {
+     "es": "«kudha icc etasmā īvibhattissa cchi-ādeso hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ».",
+     "en": "“kudha icc etasmā īvibhattissa cchi-ādeso hoti, dhātvantassa ca lopo hotī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rūpasiddhi lee la raíz «kusa» (Rū 480: «Kusa icc etasmā dhātuto …»), como el enunciado de Nandisena; Nyāsa lee «kudha» («kudha icc etasmā …»; *akkocchi*, de «kudha kope») y explica la ‘d’ del enunciado como de sandhi («kudhasmā īcchī ti vattabbe dakāro sandhivasena»).",
+    "en": "The Rūpasiddhi reads the root “kusa” (Rū 480: “Kusa icc etasmā dhātuto …”), as does Nandisena’s wording; the Nyāsa reads “kudha” (“kudha icc etasmā …”; *akkocchi*, from “kudha kope”) and explains the ‘d’ of the wording as due to sandhi (“kudhasmā īcchī ti vattabbe dakāro sandhivasena”)."
+   }
+  },
+  "499": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de toda la raíz “dā” por ‘dajja’.",
+    "en": "Optionally, substitution of the whole root “dā” by ‘dajja’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 507: «Dā icc etassa dhātussa sabbassa dajjādeso hoti vā».",
+     "en": "Rū 507: “Dā icc etassa dhātussa sabbassa dajjādeso hoti vā”."
+    },
+    "nyasa": {
+     "es": "«dā icc etassa dhātussa dajjādeso hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“dā icc etassa dhātussa dajjādeso hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "500": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de toda la raíz “vada” por ‘vajja’.",
+    "en": "Optionally, substitution of the whole root “vada” by ‘vajja’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 486: «Vada icc etassa dhātussa sabbassa vajjādeso hoti vā sabbāsu vibhattīsu».",
+     "en": "Rū 486: “Vada icc etassa dhātussa sabbassa vajjādeso hoti vā sabbāsu vibhattīsu”."
+    },
+    "nyasa": {
+     "es": "«vada icc etassa dhātussa vajjādeso hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“vada icc etassa dhātussa vajjādeso hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "501": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de toda la raíz “gamu” por ‘ghamma’.",
+    "en": "Optionally, substitution of the whole root “gamu” by ‘ghamma’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 443: «Gamu icc etassa dhātussa sabbassa ghammādeso hoti vā».",
+     "en": "Rū 443: “Gamu icc etassa dhātussa sabbassa ghammādeso hoti vā”."
+    },
+    "nyasa": {
+     "es": "«gamu icc etassa dhātussa ghammādeso hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“gamu icc etassa dhātussa ghammādeso hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "502": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución del final de “dā”, “dhā”, “mā”, “ṭhā”, “hā”, “pā”, “maha”, “matha” y otras por ‘ī’ cuando sigue el sufijo ‘ya’.",
+    "en": "Substitution of the end of “dā”, “dhā”, “mā”, “ṭhā”, “hā”, “pā”, “maha”, “matha” and others by ‘ī’ when the suffix ‘ya’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 493: «Bhāva-kammavisaye yamhi paccaye pare dā dhā mā ṭhā hā pā maha matha icc evamādīnaṃ dhātūnaṃ anto īkāram āpajjate, niccattho ’yam ārambho».",
+     "en": "Rū 493: “Bhāva-kammavisaye yamhi paccaye pare dā dhā mā ṭhā hā pā maha matha icc evamādīnaṃ dhātūnaṃ anto īkāram āpajjate, niccattho ’yam ārambho”."
+    },
+    "nyasa": {
+     "es": "«yamhi paccaye pare vuttappakārānaṃ dhātūnaṃ anto īkāram āpajjate ti ñāpanatthaṃ».",
+     "en": "“yamhi paccaye pare vuttappakārānaṃ dhātūnaṃ anto īkāram āpajjate ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Rū 493: «niccattho ’yam ārambho»: la sustitución por ‘ī’ es obligatoria, no opcional.",
+    "en": "Rū 493: “niccattho ’yam ārambho”: the substitution by ‘ī’ is obligatory, not optional."
+   }
+  },
+  "503": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la ‘y’ inicial de “yaja” por ‘i’ cuando sigue el sufijo ‘ya’.",
+    "en": "Substitution of the initial ‘y’ of “yaja” by ‘i’ when the suffix ‘ya’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 485: «Yaja icc etassa dhātussa ādissa yakārassa ikārādeso hoti yappaccaye pare».",
+     "en": "Rū 485: “Yaja icc etassa dhātussa ādissa yakārassa ikārādeso hoti yappaccaye pare”."
+    },
+    "nyasa": {
+     "es": "«yaja icc etassa dhātussa ādissa ikārādeso hoti yapaccayasmiṃ pare ti ñāpanatthaṃ».",
+     "en": "“yaja icc etassa dhātussa ādissa ikārādeso hoti yapaccayasmiṃ pare ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "504": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Tras todas las raíces, sustitución opcional de ‘uṃ’ por ‘iṃsu’.",
+    "en": "After all roots, optional substitution of ‘uṃ’ by ‘iṃsu’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 470: «Sabbehi dhātūhi uṃvibhattissa iṃsvādeso hoti vā».",
+     "en": "Rū 470: “Sabbehi dhātūhi uṃvibhattissa iṃsvādeso hoti vā”."
+    },
+    "nyasa": {
+     "es": "«sabbehi dhātūhi uṃvibhattissa iṃsvādeso hotī ti ñāpanatthaṃ».",
+     "en": "“sabbehi dhātūhi uṃvibhattissa iṃsvādeso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "505": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “jara” y “mara” por ‘jīra’, ‘jiyya’ y ‘miyya’.",
+    "en": "Optionally, substitution of “jara” and “mara” by ‘jīra’, ‘jiyya’ and ‘miyya’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 482: «Jara mara icc etesaṃ dhātūnaṃ jīra-jīyya-mīyyādesā honti vā».",
+     "en": "Rū 482: “Jara mara icc etesaṃ dhātūnaṃ jīra-jīyya-mīyyādesā honti vā”."
+    },
+    "nyasa": {
+     "es": "«jara-marānaṃ jīra-jiyya-miyya icc ete ādesā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“jara-marānaṃ jīra-jiyya-miyya icc ete ādesā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "506": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "es": "Opcionalmente, elisión de la letra inicial de “asa” ante todas las inflexiones y sufijos.",
+    "en": "Optionally, elision of the initial letter of “asa” before all inflections and suffixes."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 496: «Sabattha vibhattippaccayesu ca asa icc etāya dhātuyā ādissa lopo hoti vā».",
+     "en": "Rū 496: “Sabattha vibhattippaccayesu ca asa icc etāya dhātuyā ādissa lopo hoti vā”."
+    },
+    "nyasa": {
+     "es": "«sabbattha vibhattippaccayesu asa icc etassa dhātussa ādissa lopo hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“sabbattha vibhattippaccayesu asa icc etassa dhātussa ādissa lopo hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "507": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de “asa” por ‘bhū’ ante las inflexiones “asabbadhātuka”.",
+    "en": "Optionally, substitution of “asa” by ‘bhū’ before the “asabbadhātuka” inflections."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 501: «Asass’ eva dhātussa bhū-ādeso hoti vā asabbadhātuke».",
+     "en": "Rū 501: “Asass’ eva dhātussa bhū-ādeso hoti vā asabbadhātuke”."
+    },
+    "nyasa": {
+     "es": "«asa icc etassa dhātussa asabbadhātuke bhū-ādeso hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“asa icc etassa dhātussa asabbadhātuke bhū-ādeso hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "508": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Tras “ñā”, sustitución opcional de ‘eyya’ por ‘iyā’ y ‘ñā’.",
+    "en": "After “ñā”, optional substitution of ‘eyya’ by ‘iyā’ and ‘ñā’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 515: «Eyyassa vibhattissa ñā icc etāya dhātuyā parassa iyā ñā icc ete ādesā honti vā».",
+     "en": "Rū 515: “Eyyassa vibhattissa ñā icc etāya dhātuyā parassa iyā ñā icc ete ādesā honti vā”."
+    },
+    "nyasa": {
+     "es": "«ñā icc etasmā eyyassa vibhattissa iyā-ñā icc ete ādesā honti vikappenā ti ñāpanatthaṃ».",
+     "en": "“ñā icc etasmā eyyassa vibhattissa iyā-ñā icc ete ādesā honti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "509": {
+   "tipo": "V",
+   "vidhi": "lopa + ādesa",
+   "op": {
+    "es": "Tras “ñā”, opcionalmente elisión del sufijo ‘nā’ o sustitución por ‘y’.",
+    "en": "After “ñā”, optionally elision of the suffix ‘nā’ or substitution by ‘y’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 516: «Ñā icc etāya dhātuyā parassa nāpaccayassa lopo hoti vā, yakārattañ ca».",
+     "en": "Rū 516: “Ñā icc etāya dhātuyā parassa nāpaccayassa lopo hoti vā, yakārattañ ca”."
+    },
+    "nyasa": {
+     "es": "«ñā icc etasmā nāpaccayassa lopo hoti, yakārattañ ca āpajjate vikappenā ti ñāpanatthaṃ».",
+     "en": "“ñā icc etasmā nāpaccayassa lopo hoti, yakārattañ ca āpajjate vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "510": {
+   "tipo": "V",
+   "vidhi": "ādesa + lopa",
+   "op": {
+    "es": "Opcionalmente, sustitución del sufijo ‘a’ por ‘e’, o su elisión.",
+    "en": "Optionally, substitution of the suffix ‘a’ by ‘e’, or its elision."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 487: «Bhūvādito paro appaccayo ettam āpajjate, lopañ ca vā».",
+     "en": "Rū 487: “Bhūvādito paro appaccayo ettam āpajjate, lopañ ca vā”."
+    },
+    "nyasa": {
+     "es": "«akārapaccayo ettam āpajjate lopañ ca vikappenā ti ñāpanatthaṃ».",
+     "en": "“akārapaccayo ettam āpajjate lopañ ca vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "511": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución del sufijo ‘o’ (de “tanu” y su grupo) por ‘u’.",
+    "en": "Optionally, substitution of the suffix ‘o’ (of “tanu” and its group) by ‘u’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 521: «Tanādito okārappaccayo uttam āpajjate vā».",
+     "en": "Rū 521: “Tanādito okārappaccayo uttam āpajjate vā”."
+    },
+    "nyasa": {
+     "es": "«okārapaccayo uttam āpajjate vikappenā ti ñāpanatthaṃ».",
+     "en": "“okārapaccayo uttam āpajjate vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "512": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución de la ‘a’ de “kara” por ‘u’.",
+    "en": "Optionally, substitution of the ‘a’ of “kara” by ‘u’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 522: «Kara icc etassa dhātussa akāro uttam āpajjate vā».",
+     "en": "Rū 522: “Kara icc etassa dhātussa akāro uttam āpajjate vā”."
+    },
+    "nyasa": {
+     "es": "«kara icc etassa dhātussa akāro ca uttam āpajjate vikappenā ti ñāpanatthaṃ».",
+     "en": "“kara icc etassa dhātussa akāro ca uttam āpajjate vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "513": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la ‘o’ final de la raíz por ‘ava’ cuando sigue una vocal.",
+    "en": "Substitution of the root-final ‘o’ by ‘ava’ when a vowel follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 435: «Okārassa dhātvantassa sare pare avādeso hoti».",
+     "en": "Rū 435: “Okārassa dhātvantassa sare pare avādeso hoti”."
+    },
+    "nyasa": {
+     "es": "«okārassa dhātvantassa sare pare avādeso hotī ti ñāpanatthaṃ».",
+     "en": "“okārassa dhātvantassa sare pare avādeso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "514": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de la ‘e’ final de la raíz por ‘aya’ cuando sigue una vocal.",
+    "en": "Substitution of the root-final ‘e’ by ‘aya’ when a vowel follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 491: «Ekārassa dhātvantassa sare pare ayādeso hoti».",
+     "en": "Rū 491: “Ekārassa dhātvantassa sare pare ayādeso hoti”."
+    },
+    "nyasa": {
+     "es": "«dhātvantassa ekārassa sare pare ayādeso hotī ti ñāpanatthaṃ».",
+     "en": "“dhātvantassa ekārassa sare pare ayādeso hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "515": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Sustitución de esas ‘o’ y ‘e’ por ‘āva’ y ‘āya’ ante el causativo.",
+    "en": "Substitution of those ‘o’ and ‘e’ by ‘āva’ and ‘āya’ before the causative."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 541: «Te dhātvantabhūtā okār’-ekārā āva-āyādese pāpuṇanti kārite pare».",
+     "en": "Rū 541: “Te dhātvantabhūtā okār’-ekārā āva-āyādese pāpuṇanti kārite pare”."
+    },
+    "nyasa": {
+     "es": "«te o-e icc ete āva-āyādese pāpuṇanti kārite ti ñāpanatthaṃ».",
+     "en": "“te o-e icc ete āva-āyādese pāpuṇanti kārite ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "516": {
+   "tipo": "V",
+   "vidhi": "āgama",
+   "op": {
+    "es": "A veces, inserción de ‘i’ ante las inflexiones “asabbadhātuka”.",
+    "en": "Sometimes, insertion of ‘i’ before the “asabbadhātuka” inflections."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 466: «Sabbasmiṃ asabbadhātukamhi pare kvaci dhātūhi paro ikārāgamo hoti».",
+     "en": "Rū 466: “Sabbasmiṃ asabbadhātukamhi pare kvaci dhātūhi paro ikārāgamo hoti”."
+    },
+    "nyasa": {
+     "es": "«ikārāgamo hoti asabbadhātukamhī ti ñāpanatthaṃ».",
+     "en": "“ikārāgamo hoti asabbadhātukamhī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "517": {
+   "tipo": "V",
+   "vidhi": "dīgha + rassa + ādesa + lopa + āgama",
+   "op": {
+    "es": "A veces, alargamiento, lo contrario (acortamiento), sustitución, elisión e inserción en raíces, inflexiones y sufijos, según el uso.",
+    "en": "Sometimes, lengthening, its opposite (shortening), substitution, elision and insertion in roots, inflections and suffixes, according to usage."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 488: «kvaci dhātūnaṃ, tyādivibhattīnaṃ, dhātuvihitappaccayānañ ca dīgha tabbiparīta ādesa lop’ āgama icc etāni kāriyāni jinavacanānurūpato bhavanti».",
+     "en": "Rū 488: “kvaci dhātūnaṃ, tyādivibhattīnaṃ, dhātuvihitappaccayānañ ca dīgha tabbiparīta ādesa lop’ āgama icc etāni kāriyāni jinavacanānurūpato bhavanti”."
+    },
+    "nyasa": {
+     "es": "«kvaci dhātu-vibhatti-paccayānaṃ dīgha-viparīt’-ādesa-lop’-āgamā ca hontī ti ñāpanatthaṃ».",
+     "en": "“kvaci dhātu-vibhatti-paccayānaṃ dīgha-viparīt’-ādesa-lop’-āgamā ca hontī ti ñāpanatthaṃ”."
+    }
+   },
+   "nota": {
+    "es": "Cinco operaciones. Rū 488 glosa «viparīta» como «tabbiparīta», «lo contrario de eso», es decir, del alargamiento: el acortamiento (rassa), y lo ilustra con «Nāmhi rasso kiyādīnaṃ». Rū 488 lo restringe a las formas que las demás reglas no explican («avihitalakkhaṇesu payogesu … jinavacanānurūpato»). Compárese §404 (Taddhita), donde «viparīta» se contó en la ādesa.",
+    "en": "Five operations. Rū 488 glosses “viparīta” as “tabbiparīta”, “the opposite of that”, i.e. of lengthening: shortening (rassa), and illustrates it with “Nāmhi rasso kiyādīnaṃ”. Rū 488 restricts it to the forms that the other rules do not account for (“avihitalakkhaṇesu payogesu … jinavacanānurūpato”). Compare §404 (Taddhita), where “viparīta” was counted under ādesa."
+   }
+  },
+  "518": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "A veces, las inflexiones “attanopada” pasan a “parassapada”.",
+    "en": "Sometimes, the “attanopada” inflections become “parassapada”."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 446: «Attanopadāni kvaci parassapadattam āpajjante, akattari yev’ etaṃ».",
+     "en": "Rū 446: “Attanopadāni kvaci parassapadattam āpajjante, akattari yev’ etaṃ”."
+    },
+    "nyasa": {
+     "es": "«attanopadāni parassapadattam āpajjante kvacī ti ñāpanatthaṃ».",
+     "en": "“attanopadāni parassapadattam āpajjante kvacī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "519": {
+   "tipo": "V",
+   "vidhi": "āgama",
+   "op": {
+    "es": "A veces, inserción de ‘a’ al principio de la raíz ante “hiyyattanī”, “ajjatanī” y “kālātipatti” (aumento).",
+    "en": "Sometimes, insertion of ‘a’ at the beginning of the root before “hiyyattanī”, “ajjatanī” and “kālātipatti” (augment)."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 457: «Kvaci dhātūnam ādimhi akārāgamo hoti hiyyattanī-ajjatanī-kālātipatti icc etāsu tīsu vibhattīsu».",
+     "en": "Rū 457: “Kvaci dhātūnam ādimhi akārāgamo hoti hiyyattanī-ajjatanī-kālātipatti icc etāsu tīsu vibhattīsu”."
+    },
+    "nyasa": {
+     "es": "«kvaci akārāgamo hoti hiyyattanī-ajjatanī-kālātipattīsū ti ñāpanatthaṃ».",
+     "en": "“kvaci akārāgamo hoti hiyyattanī-ajjatanī-kālātipattīsū ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "520": {
+   "tipo": "V",
+   "vidhi": "āgama",
+   "op": {
+    "es": "Tras “brū”, a veces inserción de ‘ī’ cuando sigue la inflexión ‘ti’.",
+    "en": "After “brū”, sometimes insertion of ‘ī’ when the inflection ‘ti’ follows."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 502: «Brū icc etāya dhātuyā paro īkārāgamo hoti timhi vibhattimhi kvaci».",
+     "en": "Rū 502: “Brū icc etāya dhātuyā paro īkārāgamo hoti timhi vibhattimhi kvaci”."
+    },
+    "nyasa": {
+     "es": "«brū icc etāya dhātuyā īkārāgamo hoti timhi vibhattimhī ti ñāpanatthaṃ».",
+     "en": "“brū icc etāya dhātuyā īkārāgamo hoti timhi vibhattimhī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "521": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "es": "A veces, elisión de la letra final de la raíz de más de una vocal.",
+    "en": "Sometimes, elision of the final letter of a root of more than one vowel."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 425: «Anekassarassa dhātussa anto kvaci lopo hoti».",
+     "en": "Rū 425: “Anekassarassa dhātussa anto kvaci lopo hoti”."
+    },
+    "nyasa": {
+     "es": "«kvaci anekassarassa dhātussa anto lopo hotī ti ñāpanatthaṃ».",
+     "en": "“kvaci anekassarassa dhātussa anto lopo hotī ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "522": {
+   "tipo": "V",
+   "vidhi": "ādesa",
+   "op": {
+    "es": "Opcionalmente, sustitución del final de “isu” y “yamu” por ‘ccha’.",
+    "en": "Optionally, substitution of the end of “isu” and “yamu” by ‘ccha’."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 476: «Isu yamu icc etesaṃ dhātūnaṃ anto ccho hoti vā».",
+     "en": "Rū 476: “Isu yamu icc etesaṃ dhātūnaṃ anto ccho hoti vā”."
+    },
+    "nyasa": {
+     "es": "«isu-yamu icc etesaṃ anto ccho hoti vikappenā ti ñāpanatthaṃ».",
+     "en": "“isu-yamu icc etesaṃ anto ccho hoti vikappenā ti ñāpanatthaṃ”."
+    }
+   }
+  },
+  "523": {
+   "tipo": "V",
+   "vidhi": "lopa",
+   "op": {
+    "es": "Elisión de la ‘ṇ’ de los sufijos causativos (kārita).",
+    "en": "Elision of the ‘ṇ’ of the causative (kārita) suffixes."
+   },
+   "base": {
+    "ru": {
+     "es": "Rū 526: «Kāritappaccayānaṃ ṇakāro lopam āpajjate».",
+     "en": "Rū 526: “Kāritappaccayānaṃ ṇakāro lopam āpajjate”."
+    },
+    "nyasa": {
+     "es": "«kāritānaṃ paccayānaṃ ṇo lopam āpajjate ti ñāpanatthaṃ».",
+     "en": "“kāritānaṃ paccayānaṃ ṇo lopam āpajjate ti ñāpanatthaṃ”."
+    }
    }
   }
  }

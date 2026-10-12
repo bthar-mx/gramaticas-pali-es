@@ -3297,7 +3297,9 @@ Decisión: por defecto (IEBH, 2026-10-06): no se lee. Se menciona una sola vez, 
 
 N8. **Publicación.** El capítulo 6 de Kaccāyana no está en `kaccayana/`: solo existe `docs/6 - Ākhyāta-Kaccāyana.md` (Nandisena, pāḷi e inglés, sin desglose de padaṃ).
 
-- [ ] Revisado
+- [x] Revisado
+
+Resuelto (IEBH, 2026-10-12): el capítulo 6 está publicado en español e inglés (`kaccayana/06-akhyata-kappa.md` y `.en.md`, versión 1.0 del 2026-10-12). La condición de N8 se cumple; el análisis se publica cuando todo Ākhyāta sea [V]. Con el desglose del capítulo publicado se rellena la columna N (N104).
 
 Decisión: por defecto (IEBH, 2026-10-06): la publicación del análisis de Ākhyāta espera al capítulo 6 de Kaccāyana en español e inglés (`kaccayana/06-…`), salvo que el IEBH decida publicarlo solo con el pāḷi.
 
@@ -3986,3 +3988,12 @@ Decisión: por defecto, pendiente de revisión del IEBH: (1), (2), (3), (6) y (7
 Filas en `akhyata-piloto.md`, «Tanda 20 (§520–§523) — filas (borrador)». Lector + verificador a ciegas en cada sutta y en el pariśiṣṭa; ningún prompt llevó OCR ni lectura anterior; sin relecturas. Las ocho lecturas de los suttas coinciden en que el libro no da Clase, Aṅga ni Funciones, ni pide analizarlas; §520, §521 y §523 tienen solo (က); §522, (က) y (ခ). Encabezados donde los pone la tabla de la nota; páginas impresas 269 = PDF 315 y 270 = PDF 316, PDF 317 sin número, como en la concordancia.
 
 N103. **§520–§523 y pariśiṣṭa, lecturas y formato.** (1) §520, (က): «ဦကို လမှည့်» (315, y≈900): las dos lecturas copian lo mismo y no lo entienden igual («se dobla» / «se abrevia»); en la celda va el birmano, sin sentido. (2) §520, (က): «ဗျလာန-», nítido para las dos a ×4, no se identifica con ningún sutta de Nandisena; y «လူကို» donde se esperaría la ū de brū. Van como están impresos. ¿Errata del libro, o se deja sin comentario? (3) §521, (က): la raíz de *kelāyati*, «ကေလ» (lector) / «ကေလေ» (verificador), 315, y≈1185–1270; no se da en la celda. (4) §522, (က): tras *niyacchati*, «\*ဣစ္ဆတိ နည်းတူ။» (lector, «como *icchati*») / «\*ဣစ္ဆတိ။ နည်းတူ။» (verificador, forma aparte, ¿errata por ယစ္ဆတိ?), 316, y≈700. (5) §522, (ခ): «ဗဟုနေကေ» / «ဗဟူနေကေ», y la referencia «(သဂါထာဝဂ္ဂ ဒေဝတာသံယုတ်)» / «(သဂါထာဝဂ္ဂဒေဝတာ သံယုဂ်)». (6) §523, (က): «အောက်၌ ပြီးစေအပ်ပြီ», remisión sin sutta nombrado; va en Notas sin identificar (L13). (7) Identificaciones por las palabras (L18): §520, «အညေသုစ» = §485; §521, «တေအာဝါယာ» = §515 y «ယမှိဒါဓာ» = §502; §522, «အနကာ ယုဏွူနံ» = §622 (Kita). (8) **Pariśiṣṭa (N6)**: las dos lecturas, a escala completa, confirman que **dos cuentas no cuadran en el libro**: (ဂ) imprime 38 y su lista da 46; (ဆ) imprime 8 y su lista da 11, con 317, 318, 320 al final, los mismos que cierran (ဇ). ¿Se da como está, con una nota que lo diga, o sin comentario? Y en (ဇ), tras 286, «၊» / «။». (9) Pariśiṣṭa: va entero en las Notas de §523, como dice N6. Es largo; ¿se queda ahí o pasa a una nota del capítulo? (10) Titulillo de PDF 316 no visto (las seis lecturas).
+
+### Columna N (desglose del capítulo 6 publicado), 2026-10-12
+
+N104. **El padaṃ del libro frente al desglose del capítulo 6.** La columna N de `akhyata-piloto.md` se rellena con el número final de cada desglose `\[…, n\]` de `kaccayana/06-akhyata-kappa.md`. Coincide con el padaṃ impreso en 102 de los 111 encabezados. **No coincide en siete**: §410 (impreso *catuppadaṃ*; desglose de 5: Nāmamhi + payujjamāne + api + tulya-adhikaraṇe + paṭhamo; el libro abrevia el encabezado en «ပိ--»), §418 (*catuppadaṃ*; 3: Hiyyopabhuti + paccakkhe + hiyyattanī; el libro imprime «ဟိယျော ပဘုတိ» en dos palabras), §419 (*tipadaṃ*; 2: Samīpe + ajjatanī), §437 (*tipadaṃ*; 2: Nāmamhā + atta-icchā-atthe), §446 (*catuppadaṃ*; 3: Rudha-ādito + niggahita-pubbaṃ + ca; el libro imprime «နိဂ္ဂဟီတ ပုဗ္ဗဉ္စ» separado), §448 (*pañcapadaṃ*; 3: Su-ādito + ṇu-ṇā-uṇā + ca; el libro imprime «ဏု,ဏာ,ဥဏာ» separados) y §519 (*tipadaṃ* y «*catuppadaṃ* vā»; 2: Akāra-āgamo + hiyyattanī-ajjatanī-kālātipattīsu). **En §435 y §516 coincide solo la segunda cuenta**, la de «ဝါ» (N3): §435, 4; §516, 2. §424–§430 no tienen encabezado en el libro (N1); el desglose da 2 en los siete. En §418, §446 y §448 la diferencia se explica por cómo imprime el libro el encabezado; en los demás, es inferencia de Claude que el libro cuente los miembros del compuesto por separado, y no se publica.
+
+- [ ] Revisado
+
+Decisión: por defecto, la de Taddhita (M1, J17): el padaṃ, como está impreso, en Notas, con la frase «el padaṃ impreso no coincide con las n palabras del desglose del capítulo 6» (en §435 y §516, «la segunda cuenta coincide …; la primera, no»); sin corregir ni el libro ni el desglose, y sin explicar la diferencia. Las filas de `akhyata-piloto.md` ya lo llevan.
+
