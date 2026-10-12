@@ -20,6 +20,13 @@
    "aplicadas": 99,
    "pendientes": 0,
    "reconstruccion": true
+  },
+  {
+   "capitulo": "akhyata",
+   "detectadas": 188,
+   "aplicadas": 184,
+   "pendientes": 4,
+   "reconstruccion": true
   }
  ],
  "citas": {
@@ -1677,6 +1684,956 @@
     }
    ],
    "pendientes": []
+  },
+  "akhyata": {
+   "aplicadas": [
+    {
+     "sutta": 431,
+     "ancla": "sabbadhātukasaññā honti agamā gaccheyya gacchatu gacchati",
+     "cita": "(M. i, 326)"
+    },
+    {
+     "sutta": 432,
+     "ancla": "= cicciṭāyati",
+     "cita": "(Vin. iii, 320)"
+    },
+    {
+     "sutta": 432,
+     "ancla": "= cicciṭāyati vasiṭṭhassa apaccaṃ vāsiṭṭho",
+     "cita": "(Vin. ii, 11)"
+    },
+    {
+     "sutta": 433,
+     "ancla": "ete paccayā honti vā titikkhati",
+     "cita": "(A. ii, 468; Khu. i, 59)"
+    },
+    {
+     "sutta": 433,
+     "ancla": "ete paccayā honti vā titikkhati jigucchati",
+     "cita": "(Khu. i, 320; M. ii, 87)"
+    },
+    {
+     "sutta": 433,
+     "ancla": "paccayā honti vā titikkhati jigucchati tikicchati",
+     "cita": "(Khu. vi, 183)"
+    },
+    {
+     "sutta": 433,
+     "ancla": "nti vā titikkhati jigucchati tikicchati vīmaṃsati",
+     "cita": "(A. ii, 304; Khu. ii, 318)"
+    },
+    {
+     "sutta": 434,
+     "ancla": "ghasitum icchati = jighacchati",
+     "cita": "(Khu. i, 43)"
+    },
+    {
+     "sutta": 434,
+     "ancla": "= jighacchati haritum icchati = jigīsati",
+     "cita": "(Khu. v, 359)"
+    },
+    {
+     "sutta": 434,
+     "ancla": "= jigīsati sotum icchati = sussusati",
+     "cita": "(D. i, 220; A. i, 73)"
+    },
+    {
+     "sutta": 434,
+     "ancla": "bhottum icchati tumicchatthesū ti kimatthaṃ bhuñjati",
+     "cita": "(Vin. ii, 97)"
+    },
+    {
+     "sutta": 435,
+     "ancla": "cicciṭam iva attānam ācarati = cicciṭāyati",
+     "cita": "(Vin. iii, 320; S. i, 171)"
+    },
+    {
+     "sutta": 437,
+     "ancla": "evaṃ vatthīyati parikkhārīyati cīvarīyati dhanīyati ghaṭīyati",
+     "cita": "(DhA. i, 30)"
+    },
+    {
+     "sutta": 438,
+     "ancla": "atha vā karontaṃ payojayati = kāreti",
+     "cita": "(M. ii, 332)"
+    },
+    {
+     "sutta": 438,
+     "ancla": "karontaṃ payojayati = kāreti kārayati kārāpeti",
+     "cita": "(Vin. i, 240)"
+    },
+    {
+     "sutta": 438,
+     "ancla": "= kārenti",
+     "cita": "(M. i, 121)"
+    },
+    {
+     "sutta": 438,
+     "ancla": "= kārenti kārayanti kārāpenti",
+     "cita": "(Vin. i, 121)"
+    },
+    {
+     "sutta": 438,
+     "ancla": "pi yojetabbā hetvatthe ti kimatthaṃ karoti",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 442,
+     "ancla": "pare ivaṇṇāgamo hoti vā karīyate karīyati",
+     "cita": "(M. ii, 101)"
+    },
+    {
+     "sutta": 444,
+     "ancla": "yapaccayassa ādeso kātabbo bujjhati",
+     "cita": "(JA. i, 403)"
+    },
+    {
+     "sutta": 444,
+     "ancla": "yapaccayassa ādeso kātabbo bujjhati vijjhati maññati",
+     "cita": "(Khu. i, 22)"
+    },
+    {
+     "sutta": 444,
+     "ancla": "ādeso kātabbo bujjhati vijjhati maññati sibbati",
+     "cita": "(Vin. ii, 86)"
+    },
+    {
+     "sutta": 445,
+     "ancla": "evamādito dhātugaṇato apaccayo hoti kattari bhavati",
+     "cita": "(Khu. i, 67)"
+    },
+    {
+     "sutta": 446,
+     "ancla": "hoti kattari pubbe niggahitāgamo hoti rundhati",
+     "cita": "(SnA. i, 161)"
+    },
+    {
+     "sutta": 447,
+     "ancla": "evamādito dhātugaṇato yapaccayo hoti kattari dibbati",
+     "cita": "(VinA. i, 6)"
+    },
+    {
+     "sutta": 447,
+     "ancla": "dhātugaṇato yapaccayo hoti kattari dibbati sibbati",
+     "cita": "(Vin. ii, 86)"
+    },
+    {
+     "sutta": 447,
+     "ancla": "kattari dibbati sibbati yujjhati vijjhati bujjhati",
+     "cita": "(Khu. i, 33)"
+    },
+    {
+     "sutta": 448,
+     "ancla": "pāpuṇāti",
+     "cita": "(M. ii, 99)"
+    },
+    {
+     "sutta": 449,
+     "ancla": "dhātugaṇato nāpaccayo hoti kattari kiṇāti jināti",
+     "cita": "(Khu. i, 64)"
+    },
+    {
+     "sutta": 450,
+     "ancla": "ete paccayā honti kattari gheppati gaṇhāti",
+     "cita": "(VinA. i, 20)"
+    },
+    {
+     "sutta": 451,
+     "ancla": "paccayā honti kattari tanoti tanohi karoti",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 451,
+     "ancla": "honti kattari tanoti tanohi karoti karohi",
+     "cita": "(Khu. ii, 172)"
+    },
+    {
+     "sutta": 452,
+     "ancla": "kattari kāritasaññā ca coreti corayati cinteti",
+     "cita": "(JA. i, 227)"
+    },
+    {
+     "sutta": 454,
+     "ancla": "honti maññate rocate socate bujjhate jāyate",
+     "cita": "(Khu. i, 45)"
+    },
+    {
+     "sutta": 455,
+     "ancla": "dhātuniddiṭṭhehi paccayehi khādi-kāritantehi vibhattiyo honti titikkhati",
+     "cita": "(Khu. i, 59)"
+    },
+    {
+     "sutta": 455,
+     "ancla": "paccayehi khādi-kāritantehi vibhattiyo honti titikkhati jigucchati",
+     "cita": "(M. ii, 87)"
+    },
+    {
+     "sutta": 455,
+     "ancla": "khādi-kāritantehi vibhattiyo honti titikkhati jigucchati vīmaṃsati",
+     "cita": "(A. ii, 304)"
+    },
+    {
+     "sutta": 455,
+     "ancla": "titikkhati jigucchati vīmaṃsati samuddāyati puttīyati kāreti",
+     "cita": "(M. ii, 332)"
+    },
+    {
+     "sutta": 456,
+     "ancla": "kattari parassapadaṃ hoti karoti",
+     "cita": "(Khu. vii, 83)"
+    },
+    {
+     "sutta": 456,
+     "ancla": "parassapadaṃ hoti karoti pacati paṭhati gacchati",
+     "cita": "(M. i, 326)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "ye saddagaṇā te dhātusaññā honti bhavati",
+     "cita": "(M. ii, 338)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "saddagaṇā te dhātusaññā honti bhavati bhavanti",
+     "cita": "(M. ii, 335)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "dhātusaññā honti bhavati bhavanti carati caranti",
+     "cita": "(M. i, 129)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "caranti pacati pacanti cintayati cintayanti hoti",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "pacati pacanti cintayati cintayanti hoti honti",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "pacanti cintayati cintayanti hoti honti gacchati",
+     "cita": "(M. iii, 338)"
+    },
+    {
+     "sutta": 457,
+     "ancla": "cintayati cintayanti hoti honti gacchati gacchanti",
+     "cita": "(A. ii, 5)"
+    },
+    {
+     "sutta": 458,
+     "ancla": "tikicchati vīmaṃsati bubhukkhati pivāsati daddallati dadāti",
+     "cita": "(Khu. i, 49)"
+    },
+    {
+     "sutta": 458,
+     "ancla": "vīmaṃsati bubhukkhati pivāsati daddallati dadāti jahāti",
+     "cita": "(Khu. vii, 96)"
+    },
+    {
+     "sutta": 458,
+     "ancla": "bubhukkhati pivāsati daddallati dadāti jahāti caṅkamati",
+     "cita": "(A. ii, 212)"
+    },
+    {
+     "sutta": 460,
+     "ancla": "vattamānassa sarassa rasso hoti dadhāti jahāti",
+     "cita": "(Khu. vii, 96)"
+    },
+    {
+     "sutta": 462,
+     "ancla": "kavaggassa cavaggo hoti cikicchati jigucchati jighacchati",
+     "cita": "(Khu. i, 43)"
+    },
+    {
+     "sutta": 462,
+     "ancla": "jaṅgamati caṅkamati",
+     "cita": "(A. ii, 212)"
+    },
+    {
+     "sutta": 463,
+     "ancla": "vakāra-takārattaṃ hoti vā yathāsaṅkhyaṃ vīmaṃsati tikicchati",
+     "cita": "(Khu. vi, 183)"
+    },
+    {
+     "sutta": 464,
+     "ancla": "abbhāse vattamānassa hakārassa jo hoti jahāti",
+     "cita": "(Khu. i, 183)"
+    },
+    {
+     "sutta": 465,
+     "ancla": "antassa ivaṇṇo hoti akāro vā jigucchati",
+     "cita": "(M. ii, 87)"
+    },
+    {
+     "sutta": 465,
+     "ancla": "akāro vā jigucchati pivāsati vīmaṃsati jighacchati",
+     "cita": "(Khu. i, 43)"
+    },
+    {
+     "sutta": 466,
+     "ancla": "abbhāsassa ante niggahitāgamo hoti vā caṅkamati",
+     "cita": "(M. iii, 154)"
+    },
+    {
+     "sutta": 468,
+     "ancla": "etassa dhātussa tiṭṭhādeso hoti vā tiṭṭhati",
+     "cita": "(M. i, 155)"
+    },
+    {
+     "sutta": 468,
+     "ancla": "dhātussa tiṭṭhādeso hoti vā tiṭṭhati tiṭṭhatu",
+     "cita": "(M. i, 196)"
+    },
+    {
+     "sutta": 468,
+     "ancla": "tiṭṭhādeso hoti vā tiṭṭhati tiṭṭhatu tiṭṭheyya",
+     "cita": "(M. i, 190)"
+    },
+    {
+     "sutta": 469,
+     "ancla": "etassa dhātussa pivādeso hoti vā pivati",
+     "cita": "(M. ii, 5)"
+    },
+    {
+     "sutta": 469,
+     "ancla": "dhātussa pivādeso hoti vā pivati pivatu",
+     "cita": "(Khu. i, 175)"
+    },
+    {
+     "sutta": 470,
+     "ancla": "jānāti",
+     "cita": "(M. i, 141, 143)"
+    },
+    {
+     "sutta": 470,
+     "ancla": "jānāti jāneyya jāniyā jaññā",
+     "cita": "(Khu. i, 37)"
+    },
+    {
+     "sutta": 471,
+     "ancla": "ete ādesā honti vā passati",
+     "cita": "(Khu. i, 53)"
+    },
+    {
+     "sutta": 471,
+     "ancla": "ete ādesā honti vā passati dissati",
+     "cita": "(Khu. i, 176)"
+    },
+    {
+     "sutta": 471,
+     "ancla": "ādesā honti vā passati dissati dakkhati",
+     "cita": "(Khu. i, 410)"
+    },
+    {
+     "sutta": 471,
+     "ancla": "dakkhati adakkha vā ti kimatthaṃ addasa",
+     "cita": "(M. i, 196)"
+    },
+    {
+     "sutta": 473,
+     "ancla": "dhātussa ko hoti khapaccaye pare titikkhati",
+     "cita": "(Khu. i, 59)"
+    },
+    {
+     "sutta": 475,
+     "ancla": "ādesā honti yathāsaṅkhyaṃ parokkhāyaṃ vibhattiyaṃ āha",
+     "cita": "(M. i, 196)"
+    },
+    {
+     "sutta": 475,
+     "ancla": "honti yathāsaṅkhyaṃ parokkhāyaṃ vibhattiyaṃ āha āhu",
+     "cita": "(Khu. i, 260)"
+    },
+    {
+     "sutta": 475,
+     "ancla": "babhūva babhūvu parokkhāyam iti kimatthaṃ abravuṃ",
+     "cita": "(JA. v, 17)"
+    },
+    {
+     "sutta": 476,
+     "ancla": "ccho hoti vā sabbāsu paccayavibhattīsu gacchamāno",
+     "cita": "(JA. i, 226)"
+    },
+    {
+     "sutta": 476,
+     "ancla": "hoti vā sabbāsu paccayavibhattīsu gacchamāno gacchanto",
+     "cita": "(M. ii, 302)"
+    },
+    {
+     "sutta": 476,
+     "ancla": "vā sabbāsu paccayavibhattīsu gacchamāno gacchanto gacchati",
+     "cita": "(M. ii, 338)"
+    },
+    {
+     "sutta": 476,
+     "ancla": "gacchanto gacchati gameti gacchatu gametu gaccheyya",
+     "cita": "(VinA. i, 104)"
+    },
+    {
+     "sutta": 476,
+     "ancla": "agacchā agamā agacchī agamī gacchissati gamissati",
+     "cita": "(VinA. i, 68)"
+    },
+    {
+     "sutta": 476,
+     "ancla": "agacchissā agamissā gamisse ti kimatthaṃ icchati",
+     "cita": "(Khu. i, 55)"
+    },
+    {
+     "sutta": 477,
+     "ancla": "akāro ottam āpajjate ajjatanimhi vibhattimhi avoca",
+     "cita": "(M. i, 17)"
+    },
+    {
+     "sutta": 477,
+     "ancla": "ottam āpajjate ajjatanimhi vibhattimhi avoca avocuṃ",
+     "cita": "(M. i, 118)"
+    },
+    {
+     "sutta": 477,
+     "ancla": "avoca avocuṃ ajjatanimhī ti kimatthaṃ avaca",
+     "cita": "(M. i, 183)"
+    },
+    {
+     "sutta": 478,
+     "ancla": "etesu vibhattīsu gacchāhi",
+     "cita": "(VinA. i, 68)"
+    },
+    {
+     "sutta": 478,
+     "ancla": "etesu vibhattīsu gacchāhi gacchāmi",
+     "cita": "(Khu. v, 324)"
+    },
+    {
+     "sutta": 478,
+     "ancla": "etesu vibhattīsu gacchāhi gacchāmi gacchāma",
+     "cita": "(Khu. iii, 28)"
+    },
+    {
+     "sutta": 480,
+     "ancla": "henti hehissati hehissanti hohissati hohissanti hessati",
+     "cita": "(Khu. iii, 25)"
+    },
+    {
+     "sutta": 480,
+     "ancla": "hessati hessanti hū ti kimatthaṃ bhavissati",
+     "cita": "(VinA. i, 5)"
+    },
+    {
+     "sutta": 480,
+     "ancla": "hessanti hū ti kimatthaṃ bhavissati bhavissanti",
+     "cita": "(M. i, 52)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "ssassa ca niccaṃ lopo hoti kāhati",
+     "cita": "(JA. ii, 401)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "ca niccaṃ lopo hoti kāhati kāhiti",
+     "cita": "(Khu. i, 64)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "niccaṃ lopo hoti kāhati kāhiti kāhasi",
+     "cita": "(Khu. i, 36)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "hoti kāhati kāhiti kāhasi kāhisi kāhāmi",
+     "cita": "(DhA. i, 288)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "kāhāmi kāhāma vā ti kimatthaṃ karissati",
+     "cita": "(VinA. i, 75)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "kāhāma vā ti kimatthaṃ karissati karissanti",
+     "cita": "(DhA. i, 153)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "ādayo ādesā honti vakkhāmi",
+     "cita": "(JA. i, 366)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "ādayo ādesā honti vakkhāmi vakkhāma",
+     "cita": "(JA. i, 170)"
+    },
+    {
+     "sutta": 481,
+     "ancla": "ādayo ādesā honti vakkhāmi vakkhāma vacchāmi",
+     "cita": "(Vin. iii, 76)"
+    },
+    {
+     "sutta": 482,
+     "ancla": "etesu dammi",
+     "cita": "(Khu. v, 325)"
+    },
+    {
+     "sutta": 483,
+     "ancla": "vuddhi hoti kāreti",
+     "cita": "(M. ii, 332)"
+    },
+    {
+     "sutta": 483,
+     "ancla": "vuddhi hoti kāreti kārenti",
+     "cita": "(M.i, 121)"
+    },
+    {
+     "sutta": 483,
+     "ancla": "hoti kāreti kārenti kārayati kārayanti kārāpeti",
+     "cita": "(Vin. i, 240)"
+    },
+    {
+     "sutta": 483,
+     "ancla": "kāreti kārenti kārayati kārayanti kārāpeti kārāpenti",
+     "cita": "(Vin. i, 218)"
+    },
+    {
+     "sutta": 484,
+     "ancla": "asaṃyogantānaṃ vuddhi hoti vā kārite ghāṭeti",
+     "cita": "(Vin. ii, 295)"
+    },
+    {
+     "sutta": 484,
+     "ancla": "vuddhi hoti vā kārite ghāṭeti ghaṭeti",
+     "cita": "(Vin. ii, 295)"
+    },
+    {
+     "sutta": 487,
+     "ancla": "ukāro hoti yapaccaye pare uccate vuccati",
+     "cita": "(VinA. i, 17)"
+    },
+    {
+     "sutta": 487,
+     "ancla": "hoti yapaccaye pare uccate vuccati vussati",
+     "cita": "(M. i, 201)"
+    },
+    {
+     "sutta": 487,
+     "ancla": "yapaccaye pare uccate vuccati vussati vuyhati",
+     "cita": "(Khu. vii, 3)"
+    },
+    {
+     "sutta": 488,
+     "ancla": "ca lo hoti vā vulhati vuyhati",
+     "cita": "(Khu. vii, 3)"
+    },
+    {
+     "sutta": 490,
+     "ancla": "lopo hoti ṇhāmhi paccaye pare gaṇhāti",
+     "cita": "(VinA. i, 20)"
+    },
+    {
+     "sutta": 491,
+     "ancla": "kāsattaṃ hoti vā ajjatanimhi vibhattimhi akāsi",
+     "cita": "(M. ii, 194)"
+    },
+    {
+     "sutta": 491,
+     "ancla": "ajjatanimhi vibhattimhi akāsi akāsuṃ akari akaruṃ",
+     "cita": "(D. ii, 204)"
+    },
+    {
+     "sutta": 491,
+     "ancla": "aññatthā pi sāgamo hoti ahosi",
+     "cita": "(VinA. i, 10)"
+    },
+    {
+     "sutta": 491,
+     "ancla": "aññatthā pi sāgamo hoti ahosi adāsi",
+     "cita": "(VinA. i, 9)"
+    },
+    {
+     "sutta": 492,
+     "ancla": "honti vā dhātvantassa lopo ca amhi",
+     "cita": "(M. ii, 302)"
+    },
+    {
+     "sutta": 492,
+     "ancla": "dhātvantassa lopo ca amhi amha asmi",
+     "cita": "(M. i, 49)"
+    },
+    {
+     "sutta": 493,
+     "ancla": "tthattaṃ hoti dhātvantassa lopo ca attha",
+     "cita": "(JA. i, 222)"
+    },
+    {
+     "sutta": 494,
+     "ancla": "tthittaṃ hoti dhātvantassa lopo ca atthi",
+     "cita": "(Vin. i, 153)"
+    },
+    {
+     "sutta": 495,
+     "ancla": "tthuttaṃ hoti dhātvantassa lopo ca atthu",
+     "cita": "(D. iii, 159)"
+    },
+    {
+     "sutta": 496,
+     "ancla": "ca hoti ko nu tvam asi",
+     "cita": "(S. i, 104\\)"
+    },
+    {
+     "sutta": 497,
+     "ancla": "ttha-tthaṃādesā honti dhātvantassa lopo ca alattha",
+     "cita": "(M. ii, 239)"
+    },
+    {
+     "sutta": 497,
+     "ancla": "honti dhātvantassa lopo ca alattha alatthaṃ",
+     "cita": "(M. ii, 188)"
+    },
+    {
+     "sutta": 498,
+     "ancla": "cchi hoti dhātvantassa lopo ca akkocchi",
+     "cita": "(Khu. i, 13)"
+    },
+    {
+     "sutta": 499,
+     "ancla": "dajjādeso hoti vā dajjāmi dajjeyya dadāmi",
+     "cita": "(Khu. v, 229)"
+    },
+    {
+     "sutta": 499,
+     "ancla": "hoti vā dajjāmi dajjeyya dadāmi dadeyya",
+     "cita": "(Vin.A. i, 38)"
+    },
+    {
+     "sutta": 500,
+     "ancla": "vajjādeso hoti vā vajjāmi vajjeyya vadāmi",
+     "cita": "(M. i, 11)"
+    },
+    {
+     "sutta": 500,
+     "ancla": "hoti vā vajjāmi vajjeyya vadāmi vadeyya",
+     "cita": "(M. i, 105)"
+    },
+    {
+     "sutta": 501,
+     "ancla": "ghammāmi vā ti kimatthaṃ gacchatu gacchāhi",
+     "cita": "(JA. iv, 149)"
+    },
+    {
+     "sutta": 501,
+     "ancla": "vā ti kimatthaṃ gacchatu gacchāhi gacchāmi",
+     "cita": "(Vin. iii, 12)"
+    },
+    {
+     "sutta": 502,
+     "ancla": "evamādīnaṃ dhātūnaṃ anto īkāram āpajjate dīyati",
+     "cita": "(JA. iv, 147)"
+    },
+    {
+     "sutta": 502,
+     "ancla": "anto īkāram āpajjate dīyati dhīyati mīyati",
+     "cita": "(A. i, 356)"
+    },
+    {
+     "sutta": 504,
+     "ancla": "sabbehi dhātūhi uṃvibhattissa iṃsuādeso hoti upasaṅkamiṃsu",
+     "cita": "(M. i, 118)"
+    },
+    {
+     "sutta": 504,
+     "ancla": "dhātūhi uṃvibhattissa iṃsuādeso hoti upasaṅkamiṃsu nisīdiṃsu",
+     "cita": "(M. i, 118)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "etesaṃ dhātūnaṃ jīra-jiyya-miyyādesā honti vā jīrati",
+     "cita": "(A. ii, 48)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "dhātūnaṃ jīra-jiyya-miyyādesā honti vā jīrati jīranti",
+     "cita": "(Khu. i, 36)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "jīra-jiyya-miyyādesā honti vā jīrati jīranti jiyyati",
+     "cita": "(Khu. v, 397)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "vā jīrati jīranti jiyyati jiyyanti miyyati",
+     "cita": "(Khu. i, 405)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "jīrati jīranti jiyyati jiyyanti miyyati miyyanti",
+     "cita": "(Khu. vi, 157)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "jīranti jiyyati jiyyanti miyyati miyyanti marati",
+     "cita": "(Khu. vii, 92)"
+    },
+    {
+     "sutta": 505,
+     "ancla": "jiyyati jiyyanti miyyati miyyanti marati maranti",
+     "cita": "(DhA. i, 147)"
+    },
+    {
+     "sutta": 506,
+     "ancla": "ādissa lopo hoti vā siyā",
+     "cita": "(M. i, 62)"
+    },
+    {
+     "sutta": 506,
+     "ancla": "ādissa lopo hoti vā siyā santi",
+     "cita": "(Khu. i, 54)"
+    },
+    {
+     "sutta": 506,
+     "ancla": "lopo hoti vā siyā santi sante",
+     "cita": "(Khu. ii, 216)"
+    },
+    {
+     "sutta": 506,
+     "ancla": "hoti vā siyā santi sante samāno",
+     "cita": "(Khu. vi, 234)"
+    },
+    {
+     "sutta": 506,
+     "ancla": "sante samāno vā ti kimatthaṃ asi",
+     "cita": "(Khu. vi, 157)"
+    },
+    {
+     "sutta": 507,
+     "ancla": "dhātussa bhū hoti vā asabbadhātuke bhavissati",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 507,
+     "ancla": "bhū hoti vā asabbadhātuke bhavissati bhavissanti",
+     "cita": "(M. i, 52)"
+    },
+    {
+     "sutta": 508,
+     "ancla": "parassa iyā-ñāādesā honti vā jāniyā jaññā",
+     "cita": "(Khu. i, 37)"
+    },
+    {
+     "sutta": 508,
+     "ancla": "jāniyā jaññā vā ti kimatthaṃ jāneyya",
+     "cita": "(Khu. i, 401)"
+    },
+    {
+     "sutta": 509,
+     "ancla": "lopo hoti vā yakārattañ ca jaññā",
+     "cita": "(Khu. i, 37)"
+    },
+    {
+     "sutta": 509,
+     "ancla": "jaññā nāyati vā ti kimatthaṃ jānāti",
+     "cita": "(M. i, 143)"
+    },
+    {
+     "sutta": 510,
+     "ancla": "āpajjate ettañ ca hoti vā vajjemi",
+     "cita": "(VinA. i, 336)"
+    },
+    {
+     "sutta": 510,
+     "ancla": "hoti vā vajjemi vademi vajjāmi vadāmi",
+     "cita": "(Khu. i, 115)"
+    },
+    {
+     "sutta": 511,
+     "ancla": "okārapaccayo uttam āpajjate vā kurute",
+     "cita": "(Khu. i, 241)"
+    },
+    {
+     "sutta": 511,
+     "ancla": "okārapaccayo uttam āpajjate vā kurute karoti",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 512,
+     "ancla": "uttam āpajjate vā kurute",
+     "cita": "(Khu. i, 241)"
+    },
+    {
+     "sutta": 512,
+     "ancla": "uttam āpajjate vā kurute karoti",
+     "cita": "(M. i, 10)"
+    },
+    {
+     "sutta": 512,
+     "ancla": "uttam āpajjate vā kurute karoti kubbanti",
+     "cita": "(Khu. v, 398)"
+    },
+    {
+     "sutta": 512,
+     "ancla": "kubbanti kayirati karasse ti kimatthaṃ sarati",
+     "cita": "(Khu. i, 8)"
+    },
+    {
+     "sutta": 512,
+     "ancla": "kayirati karasse ti kimatthaṃ sarati marati",
+     "cita": "(Khu. vii, 92)"
+    },
+    {
+     "sutta": 513,
+     "ancla": "dhātvantassa sare pare avādeso hoti cavati",
+     "cita": "(Khu. vii, 92)"
+    },
+    {
+     "sutta": 513,
+     "ancla": "sare pare avādeso hoti cavati bhavati",
+     "cita": "(Khu. i, 67)"
+    },
+    {
+     "sutta": 515,
+     "ancla": "aññasmim pi ekārassa āyādeso hoti gāyati",
+     "cita": "(JA. i, 418)"
+    },
+    {
+     "sutta": 515,
+     "ancla": "pi ekārassa āyādeso hoti gāyati gāyanti",
+     "cita": "(Vin. ii, 351)"
+    },
+    {
+     "sutta": 516,
+     "ancla": "sabbasmiṃ asabbadhātukamhi ikārāgamo hoti gamissati",
+     "cita": "(VinA. iii, 281)"
+    },
+    {
+     "sutta": 516,
+     "ancla": "sabbasmiṃ asabbadhātukamhi ikārāgamo hoti gamissati karissati",
+     "cita": "(M. i, 31)"
+    },
+    {
+     "sutta": 516,
+     "ancla": "asabbadhātukamhī ti kimatthaṃ gacchati karoti labhati",
+     "cita": "(Khu. i, 67)"
+    },
+    {
+     "sutta": 516,
+     "ancla": "ti kimatthaṃ gacchati karoti labhati pacati",
+     "cita": "(JA. ii, 238)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "etāni kāriyāni jinavacanānurūpāni kātabbāni jāyati",
+     "cita": "(Khu. i, 23)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "etāni kāriyāni jinavacanānurūpāni kātabbāni jāyati kareyya",
+     "cita": "(Khu. vii, 334)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "jinavacanānurūpāni kātabbāni jāyati kareyya jāniyā siyā",
+     "cita": "(M. i, 62)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "kātabbāni jāyati kareyya jāniyā siyā kare",
+     "cita": "(Khu. vii, 109)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "jāyati kareyya jāniyā siyā kare gacche",
+     "cita": "(Khu. vii, 391)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "kareyya jāniyā siyā kare gacche jaññā",
+     "cita": "(Khu. v, 78)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "vakkhetha dakkhetha dicchati agacchi agacchuṃ ahosi",
+     "cita": "(VinA. i, 6)"
+    },
+    {
+     "sutta": 517,
+     "ancla": "dakkhetha dicchati agacchi agacchuṃ ahosi ahesuṃ",
+     "cita": "(VinA. i, 7\\)"
+    },
+    {
+     "sutta": 518,
+     "ancla": "attanopadāni kvaci parassapadattam āpajjante vuccati",
+     "cita": "(Khu. i, 22)"
+    },
+    {
+     "sutta": 518,
+     "ancla": "attanopadāni kvaci parassapadattam āpajjante vuccati labbhati",
+     "cita": "(Khu. v, 97)"
+    },
+    {
+     "sutta": 518,
+     "ancla": "kvaci parassapadattam āpajjante vuccati labbhati paccati",
+     "cita": "(Khu. i, 23)"
+    },
+    {
+     "sutta": 521,
+     "ancla": "marati anekasarasse ti kimatthaṃ pāti yāti",
+     "cita": "(Khu. v, 113)"
+    },
+    {
+     "sutta": 521,
+     "ancla": "anekasarasse ti kimatthaṃ pāti yāti vāti",
+     "cita": "(Khu. v, 126)"
+    },
+    {
+     "sutta": 522,
+     "ancla": "dhātūnaṃ anto ccho hoti vā icchati",
+     "cita": "(Khu. i, 55)"
+    },
+    {
+     "sutta": 522,
+     "ancla": "icchati niyacchati vā ti kimatthaṃ esati",
+     "cita": "(DAA. iii, 190)"
+    },
+    {
+     "sutta": 523,
+     "ancla": "etesaṃ paccayānaṃ ṇo lopam āpajjate kāreti",
+     "cita": "(M. ii, 332)"
+    },
+    {
+     "sutta": 523,
+     "ancla": "ṇo lopam āpajjate kāreti kārayati kārāpeti",
+     "cita": "(Vin. i, 240)"
+    }
+   ],
+   "pendientes": [
+    {
+     "sutta": 462,
+     "cita": "(Khu. v, 359)",
+     "previo": " hoti.\n\nCikicchati, jigucchati, jighacchati  , jigīsati[^53]",
+     "motivo": "sin ancla única en su sutta"
+    },
+    {
+     "sutta": 474,
+     "cita": "(Khu. v, 359)",
+     "previo": "ss’ eva **gī**ādeso hoti **sa**paccaye pare.\n\n\tJigīsati[^60]",
+     "motivo": "sin ancla única en su sutta"
+    },
+    {
+     "sutta": 513,
+     "cita": "(Khu. v, 354)",
+     "previo": "i.\n\n\tCavati  ., bhavati  .\n\n\t**O** ti kimatthaṃ? Jayati[^67]",
+     "motivo": "sin ancla única en su sutta"
+    },
+    {
+     "sutta": 514,
+     "cita": "(Khu. v, 354)",
+     "previo": "ātvantassa sare pare **ayā**deso hoti.\n\n\tNayati, jayati[^68]",
+     "motivo": "sin ancla única en su sutta"
+    }
+   ]
   }
  }
 }

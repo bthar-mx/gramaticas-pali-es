@@ -6129,7 +6129,7 @@ Ejemplos:
 
 [^29]:  Para la felicidad.
 
-[^30]:  Smā smiṃ sa ekavacana icc’ etesaṃ (K).
+[^30]:  Smā smiṃ sa ekavacana icc etesaṃ (K).
 
 [^31]:  Este sutta se arrastra y tiene influencia sobre los tres suttas siguientes: §132-§133-§134.
 

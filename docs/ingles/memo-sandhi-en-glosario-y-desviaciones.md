@@ -319,3 +319,365 @@ Same base and same rule as §5–§7: N-EN verbatim; the Spanish master (`docs/5
 
 **Addendum, same day (later).** A translator's note on the §349 neuter (it refers to *kula*, family) entered as note 2, renumbering 2–53 → 3–54 in both editions; the note numbers earlier in this §8 are as of their writing. The five discursive treatise notes carry, after the Pāḷi kept verbatim, a translation in parentheses — Spanish in the Spanish edition, English in the English one — as the Samāsa notes 9 and 14 already did. **Scope fixed by the IEBH the same day: the passages quoted from other treatises are rendered, the variant readings are not.** Notes 13 (Rū) and 18 (Mog) are wholly treatise passages and are translated entire; notes 27, 45 and 51 are mixed, so their parenthesis is labelled ("Translation of the Rūpasiddhi passage…") and the (K), (Sī, K) and Sinhalese-book readings inside them stay untranslated. The pure variant notes stay in Pāḷi. Chapter note total: 54.
 
+## 9. Register of deviations in `06-akhyata-kappa.en.md` as built (2026-10-12)
+
+Same base and rule as §5–§8: N-EN verbatim (ṁ → ṃ); the Spanish master (`docs/6. Ākhyāta-Kappa.md`, revised by the IEBH, with the 188 canonical references of the base edition restored by `restituir_citas.py`) gives the structure; where the Spanish translated what N-EN left untranslated, or expanded, the English follows the Spanish. The corrections to N-EN listed in §2 of the working notes of each session-26 draft («Divergencias del inglés resueltas desde el pāḷi») were accepted by the IEBH on 2026-10-12 and are applied. Built by substitution over the converted Spanish chapter, in five ranges, so the Pāḷi blocks, headings, breakdowns, canonical references and the 113 note anchors are byte-identical with the Spanish edition. **Not reviewed.**
+
+**Notes.** Same 113 as the Spanish, same numbering: N-EN's 71 (his English verbatim; the Sī / K / Rū variant notes in Pāḷi), the 41 added in the IEBH's revision (translated from the Spanish, unlabelled, as the IEBH decided on 2026-10-12), and one by Ven. A. Thitzana (note 69, §458, from *Kaccāyana Pāli Vyākaraṇaṁ* vol. 2, p. 645, n. 42). Note 62 (§445) also carries, after the IEBH's text, Thitzana's explanation of the vikaraṇa (vol. 2, p. 637, n. 36). Both Thitzana texts: his English edited for clarity and attributed to him.
+
+**Terms.** *vikaraṇa* conjugational sign; *kārita* causative; *kattari* in the active voice; *parassapada* / *attanopada* active / middle voice; *paṭhama-* / *majjhima-* / *uttamapurisa* third / second / first person (N-EN «middle person» for the second; follows the Spanish and its note 4); *dvebhāva* reduplication; *abbhāsa* untranslated; *vipariyaya* and *viparīta* both **reversal** (N-EN «reversion» in §488; unified on assembly); the eight tense names untranslated.
+
+**Update, same day.** The IEBH ruled that the Spanish takes every accepted correction (2026-10-12): §422 (‑matta), §433 «gupa (sentir aversión)», §434 «querer [hacer algo]», §439 «la noche es clara», §442 «la ivaṇṇa», §461–§465 «en lugar de», §486 «hace ocultar / hace corromper», §515 «llegan a», §521 «que no es de una sola vocal». The English now carries them all (clear, in place of, causes to hide / to corrupt, reach, does not have only one vowel); where the range registers below say a correction was not applied because the Spanish lacked it, that is superseded.
+
+The five range registers follow as written.
+
+### Range 1 (§406–§431, with chapter opening): register of deviations in `tramo1.en.md`
+
+Base: N-EN (Nandisena's English) verbatim, ṃ normalized. Built by substituting the Spanish lines of `tramo1-406-431.es.md` one at a time. All other lines, including Pāḷi blocks, headings, verses, kaṇḍa Pāḷi lines, separators and Pāḷi variant notes, are byte-identical with the Spanish, trailing spaces included. The `<!-- NOTAS DEL TRAMO -->` marker is kept unchanged so that assembly can find the notes.
+
+#### (a) Departures from N-EN wording
+
+##### Formatting and conventions applied throughout
+- Glosses, explanations and examples are laid out as in the Spanish: blocks separated by `---`, numbered examples, and "Examples:" / "Which are these?" labels. N-EN runs the examples as prose with word-by-word parentheses ("He (so) goes (gacchati)"). The English now uses the Spanish model: the Pāḷi phrase in bold followed by its English in parentheses. The English inside the parentheses is N-EN's wherever he gives one.
+- *Kvattho*: N-EN "Why it is said “X”? For the use of the word “X” …" is replaced by "What is the use of the name “X”? For the use of the name “X” …" (fixed formula, Spanish «nombre»). *Kimatthaṃ*: N-EN "Why it is said …?" is replaced by "What is the purpose of saying …?", and the quoted Pāḷi word is now the sutta's own locative “tulyādhikaraṇe” (N-EN: “tulyādhikaraṇa”), as in the Spanish.
+- In the gloss lines, square brackets `\[…\]` appear exactly where the Spanish has them. Where N-EN marked a supplied word with round brackets, those became square brackets ("(should be taken)" → "\[should be taken\]", "(a knowledge that has)" → "\[a knowledge that has\]").
+- Body brackets are written escaped (`\[…\]`) as INSTRUCCIONES §2 says. **Note:** the published `05-taddhita-kappa.en.md` carries them *unescaped* in the body (`[there is]`). That file also drops the trailing double spaces after `**…-KAPPA**`, after `**…-KAṆḌA**` and on list items. I followed the instruction to stay byte-identical with the Spanish. If the 05 convention is wanted, removing the escapes and trailing spaces is a mechanical step.
+
+##### Divergencias applied (sesion-26-suttas-406-431)
+1. **§408 gloss** (div. 1): "The pairs \[are\] third person, second person and first person." This replaces N-EN's "A group of two is called person (purisa), third person …".
+2. **§427 kvattho** (div. 2): "What is the use of the name “hiyyattanī”? …(§418)." N-EN does not have this sentence. It is supplied from the Pāḷi and the Spanish, by parallel with §423–§430. The divergencia says the IEBH decides whether it stays, but the Spanish file carries **no** `<!-- DUDA -->` marker, so none was added in the English either (see (c)).
+3. **§410** (div. 3): "the first (person)" / "the first person" → "the third \[person\]" / "the third person".
+4. **§420 vutti** (div. 4): "When \[they are\] in conjunction with “mā”, the inflections “hiyyattanī” and “ajjatanī” are also \[employed\] in all time." N-EN reads "When in conjunction with “mā” and in all time, there are the inflections …".
+5. **§422 vutti** (div. 5, *-matta*): "In the past time, in what consists only of an action that has passed without happening,[^13] there is …". **Applied although the Spanish vutti does NOT carry it** (it reads «en una acción no ocurrida,[^13]»). See (b) and (c).
+6. **Verse (K)** (div. 6): "force" is kept, following N-EN and his note 1 (*raya*). The Spanish «corriente» renders the same word.
+
+##### Following the Spanish (expansions or terminology)
+- **§406** gloss and vutti: N-EN "(word for another)" → "(active voice)". The Spanish moved the literal sense into note 3, which the English now carries as "Literally “word for another”." The vutti also gets "(active voice)", as the Spanish does.
+- **§407** gloss: N-EN "(word for itself)" → "(middle voice)", as the Spanish. The Spanish has no literal-sense note here, so N-EN's "word for itself" disappears (see (b)).
+- **§408–§412**: *majjhimapurisa* is "second person" where N-EN has "middle person", following the Spanish and its note 4. This also applies in §409, where N-EN's vutti read "first person, middle person and highest person" and was recast as "Where all three –third person, second person and first person– are mentioned together …".
+- **§408** examples: N-EN's stray Spanish «Pero en "attanopada"» → "Also in the “attanopada”:" (Pāḷi *pi*). The Pāḷi labels (paṭhamapurisā …) were added in parentheses, as in the Spanish. The kvattho answer quotes three suttas separately, as in the Spanish. N-EN joins them into one quoted sutta.
+- **§408** vutti: the Pāḷi in parentheses is written *paṭhamapurisa / majjhimapurisa / uttamapurisa* without hyphens, as in the Spanish. N-EN hyphenates them.
+- **§410** "Also when \[the name is\] not used:" (Spanish «\[el nombre\]»).
+- **§411–§412** vutti: "that have the same locus" → "with the same locus", following the Spanish «con el mismo locus», because N-EN's clause is ungrammatical. "(you)" / "(I)" were added after “tumha” / “amha”, as in the Spanish.
+- **§411** examples: N-EN "goes (yāsi)" → "(\[you\] go)", following the Spanish.
+- **§413**: “kāla” (time) → “kāle” (in time), and "\[from 413 to 422\]" added, as in the Spanish.
+- **§414, §419, §421**: "\[time\]" supplied where the Spanish has «\[tiempo\]». For §419 this gives "In proximate \[time\]" in place of N-EN's "In proximity", in both the gloss and the vutti (wording change; see (b)).
+- **§415** gloss recast on the Spanish model: "In the meaning of command and blessing, and in time that is not said, \[there is\] the “pañcamī”." N-EN: "In command, blessing and time that is not said, there is the “pañcamī”."
+- **§417, §418** gloss: "In \[that which is\] not seen / seen" for N-EN "In that which is …", with brackets as in the Spanish «En \[aquello\]».
+- **§422** gloss: "(without taking place)" became plain text, because the Spanish has no bracket there.
+- **§423–§430** vutti: inside the Pāḷi lists, N-EN's semicolon is replaced by the Spanish comma.
+- **§431** example: N-EN "(He) came (agamā)" → "(\[he\] went)", and "go (gacchatu)" → "let \[him\] go", following the Spanish «fue», «que \[él\] vaya» and §418–§419 "went".
+- **Verse (Kh)**: "grammar of verbs" → "\[grammar of\] verbs", as in the Spanish.
+- **Verse (G)**: "exists in (these meanings)" → "exists \[in these meanings\]".
+- **Closing**: "**Thus \[ends\] the first section in the chapter of verbs**" uses N-EN's words with the Spanish bracket «\[termina\]».
+- **Notes 2, 6 and 13** exist only in the Spanish (editor's notes). They are translated into English and carry no label.
+- **Note 4**: N-EN's fn 2 is followed by the Spanish additions, translated (the second- and first-person explanation).
+- **Note 5**: N-EN fn 3 verbatim. The bold on the Pāḷi suffixes comes from the Spanish.
+
+##### Typos and slips of N-EN corrected
+"knowlege" → knowledge (K); "who possess" → who possesses (Kh); "nipphannna" → nipphanna (G); "undestood" → understood (§413); "that have the same locus" → "that has" (§410); "Let he do" → let him do (§415); "the Ancient (porānā)" → the ancients (§417); "hiyyatanī" → hiyyattanī (§431); "asabbadhātumhi" → asabbadhātukamhi (§431 kvattho, matching the Pāḷi block). N-EN's Pāḷi typos ("Ākyātasāgaram", "ssasa", "Ti, anti") do not enter, because the Spanish Pāḷi is used.
+
+#### (b) Places where I am unsure
+
+1. **§422 vutti, *-matta***. The divergencia says the Spanish was translated «en aquello que consiste sólo en una acción que ha quedado sin realizarse», but the Spanish file has «en una acción no ocurrida». I applied the divergencia ("in what consists only of an action that has passed without happening"), so on this line the English is *not* parallel with the Spanish. Either the Spanish file is behind the divergencia, or the divergencia was later withdrawn. The IEBH should decide.
+2. **"second person" for *majjhimapurisa*** (§408–§412, note 4). This follows the Spanish and its note 4, which explicitly says «aquí se traduce como “segunda persona”». N-EN consistently says "middle person". I chose the Spanish so that the English note stays true, but this is a terminology decision.
+3. **§406/§407 "(active voice)" / "(middle voice)"** in place of N-EN's literal "(word for another)" / "(word for itself)". For §407 the literal sense is lost entirely, because the Spanish has no note there. The IEBH may want a parallel note ("Literally “word for itself”"), but I did not invent one.
+4. **§410 gloss and vutti "When used \[or not used\] in a name that has the same locus"**: this is N-EN's wording, kept. The Pāḷi is a locative absolute ("when a name … is used"), which the Spanish renders more accurately («cuando se emplea un nombre»). I did not rewrite it, because no divergencia covers it.
+5. **§419 "In proximate \[time\]"**: this rewords N-EN's "In proximity" to carry the Spanish bracket. The alternative is to keep "In proximity" with no bracket.
+6. **§407 "The latest \[six\]"**: kept from N-EN, although "latter" or "last" is the natural English. It is not an obvious typo, so I left it.
+7. **Number in the English glosses**: "you" renders both *tvaṃ* and *tumhe* (§409, §411), so singular and plural are not distinguished (the Spanish has tú / vosotros). I kept N-EN's plain "you".
+8. **Verse (Kh) "the Buddha"**: N-EN's word is kept for *sambuddham*. The Spanish has «el Perfectamente Iluminado».
+9. **Note 6**: "vasāma … tadā" is rendered "lived" (past), as the Spanish «vivimos» with «en ese entonces» implies.
+
+#### (c) Problems noticed in the Spanish (reported only, not changed)
+
+1. **§422 vutti** does not reflect divergencia 5 (*-matta*): see (b)1.
+2. **§427**: divergencia 2 says the supplied kvattho line is "marcado con `<!-- DUDA -->` en el cuerpo", but there is no such marker in `tramo1-406-431.es.md`.
+3. **§411 vutti**: «hay la la segunda persona» has a duplicated article.
+4. **§431 kvattho**: «“Ikārāgamo asabbadhātumkamhi”» is a typo for *asabbadhātukamhi*, the form in the sutta's own Pāḷi block.
+5. **§416 vutti** line ends with a stray tab character.
+6. **§418 Pāḷi vutti**: «“hiyyattanī”[^11] vibhatti» uses quotes and a space, where every parallel sutta and N-EN have **…**vibhatti in bold, compounded (N-EN: `**hiyyattanī[^8]**vibhatti`). The line was kept byte-identical.
+7. **Header breakdowns** have stray spaces: §408 «paṭhama-majjhima- uttama-purisā» and §431 «Hiyyattanī- sattamī-pañcamī-vattamānā». Kept byte-identical.
+8. **Note 19 (§427 vutti, aṃ mhā)**: the Spanish reads «Amha (Sī).», but N-EN's corresponding note 15 reads «Amhā (Sī).», as does note 18 on the heading. The Spanish may have dropped the macron. Kept as in the Spanish.
+9. **§431 Pāḷi example line**: N-EN gives a reference «(M. i, 326)» after «Agamā, gaccheyya, gacchatu, gacchati», and the Spanish block omits it. This may be intentional, but it is not registered.
+10. **Note 6** ends with trailing spaces (not carried into the English).
+11. **§416 example**: the Spanish «tú irías» (conditional) does not match N-EN's "you may go" (permissive *sattamī*, consent). The English keeps N-EN. The Spanish might better read «puedes ir» / «que vayas»; this is for the IEBH to judge.
+
+### Range 2 (§432–§457): register of deviations from N-EN
+
+Base: Nandisena's English (N-EN) verbatim, ṁ → ṃ. The file was built by substitution over `tramo2-432-457.es.md`. Pāḷi blocks, sutta headings, formation steps, Pāḷi notes, the closing Pāḷi formula and the `<!-- NOTAS DEL TRAMO -->` marker are byte-identical, and so is the Markdown escaping (`\[ \] \+ \=`, trailing double spaces). The escaping follows INSTRUCCIONES §2 (`\[…\]`). 05-taddhita-kappa.en.md uses unescaped `[…]` in its glosses and no trailing double spaces. Both forms render the same; the generator/IEBH may want to normalise.
+
+#### (a) Departures from N-EN wording
+
+**Fixed terms and formulae (whole range).** *vā* → "optionally" (N-EN "sometimes": §433 gloss, vutti and *kimatthaṃ*; §434 vutti and *kimatthaṃ*; §442; §443). "Why it is said …?" → "What is the purpose of saying …?". Root names, and the names *niggahita* and *kārita*, in curly quotes, as the Spanish has them (N-EN uses single quotes on root names). Brackets are placed where the Spanish has them, including N-EN's own parentheses "(which are called)", "(a verb signifying)", "(inflection)" and "(insertion of the)". Example glosses drop N-EN's interlinear "(word)" annotations and take the form of the Spanish examples (Pāḷi = **word** (gloss)). "Formation of" → "Sequence of". "Thus" (list header) → "Likewise:" (05 convention).
+
+**Accepted divergencias applied.**
+- §433: "gupa, disgusting" → "“gupa” (feeling aversion)", and in the examples (§433, §455) "is disgusted" → "feels aversion" (div. 1). I kept N-EN's gerunds for tija/kita/māna ("enduring", "curing", "investigating"). In English, "curing" already gives the root meaning, which is what div. 1 asks for. See (b).
+- §434: "in the meanings of wanting and to do" → "in the meanings of wanting \[to do something\]" in the gloss, the vutti and the *kimatthaṃ* (div. 2). See (c): the Spanish file does not carry this change.
+- §439: "(it) is pure as the night" → "(the night is pure)" (div. 3, subject restored). I kept N-EN's word "pure", which is also the final Spanish «pura». The divergencia says «clara». See (b).
+- §439: *daḷhayati* "makes the effort firm" and *upakkamālati* "undertakes" (div. 4).
+- §440, §442, §443, §453: the *bhāva* member is given as an action noun ("knowing, or it is known"), which is N-EN's own pattern (div. 5). §440 *labbhate* "obtaining and it is obtained" → "or" (typo). §453 "obtaining (they) are obtained" → "obtaining or they are obtained".
+- §441 vutti: "–as the case may be–" added for *yathāsambhavaṃ* (div. 7). The vutti otherwise follows the Spanish structure, with "changes … to the state of the letters of the ‘ca’ group, of ‘y’ and of ‘v’". N-EN has "there is the substitution of ‘ca’ group …".
+- §442 gloss and vutti: "insertion of ivaṇṇa \[‘i’ or ‘ī’\]" (div. 6). See (c): the Spanish file does not carry this either.
+- §446 gloss: "Also after “rudha” and others, \[there is\] the “niggahita” in front" (div. 1 of 445–457).
+- §451: imperatives marked as "stretch \[you\]!", "do \[you\]!" (div. 2). The Spanish has «extiende \[tú\]», with no exclamation mark. I added "!" because English cannot otherwise tell the imperative from the present.
+- §454 *jāyate*: "arises" → "is born" (div. 4). Div. 3 (*rocate*/*socate*) leaves N-EN's "shines"/"grieves" unchanged.
+- §455 vutti: from the Pāḷi, as div. 5: "After the roots with the suffixes that indicate their meaning –those beginning with ‘kha’ and ending with “kārita”–, there are inflections."
+- §457: gloss without "(called)"; vutti "are called “dhātu” (root)" (div. 6).
+- §447 *dibbati*: both values kept (div. 7, no change).
+
+**Following the Spanish where it expands or reorders N-EN.**
+- §438 gloss and vutti: "“kārita” (causative)".
+- §439 gloss: "after a noun" added (*nāmasmā*, omitted by N-EN). Vutti: "after that noun" (*tasmā*).
+- §440 and §444: order "impersonal … and passive" (Pāḷi *bhāva-kamma*), with "\[sense\]". N-EN has "passive and impersonal".
+- §443 gloss: "And \[reaches\] the previous form" (N-EN "And the previous form"; "reaches" is his vutti word). Examples: *sakkate* added, which N-EN omits, glossed as the Spanish has it, "it is honored". See (b).
+- §444 gloss: "Likewise also in the active voice" (*tathā*; N-EN "Also in the active voice").
+- §447 gloss: ‘ya’ (N-EN ‘yo’, the nominative of the sutta).
+- §452 vutti: ", and they are called “kārita”" (in the Pāḷi; N-EN omits it). *manteti* "deliberates/consults" (N-EN "consults").
+- §453–§454: "“attanopada” (middle)" and §456 "“parassapada”", with the brackets as in the Spanish.
+- Closing: "Thus \[ends\] the second section in the verb chapter" (bracket as in the Spanish). "**THIRD SECTION**" (N-EN "**Third Section**"; 05 casing).
+- Glosses where N-EN and the Spanish differ only in wording keep N-EN's: *paṭhati* "reads" (Spanish «recita»), *lunāti* "cuts" («siega»), *saṃvuṇoti* "restrains" («contiene»), *yujjate* "engaged" in §441/§453 ("yoked" in §440, as N-EN), *cicciṭāyati* "acts like “ci-ci”" («chisporrotea»), *vuḍḍhate* "it is increased" («crece»), *phallate* "splitting" («se parte»). *kujjhate* "he is angry" in §441 (N-EN there "it is angry"; his own §453 "he is angry").
+
+**Typos of N-EN corrected.** mountarin; Sometines; "there is there is suffix"; comparision; "such in the" (§437); "they are know" (§441); "there insertion" (§446); "Those group of words" (§457); "and it is obtained" → "or" (§440); "following examples" → "example" (§434, single example); "desire of oneself" → "desire for oneself" (§437 vutti and *kimatthaṃ*, to agree with his own gloss); stray comma in note 68 ("“dhātuppaccaya”, means").
+
+**Notes.** 27–30, 33–48, 50, 52–55, 58–60 and 64 are identical to the Spanish (Pāḷi variants or formulas). 31, 49 and 68 are N-EN verbatim (his 27, 44, 52). In 57 and 63 (his 47 and 50, Pāḷi in the base edition), I kept the Pāḷi verbatim and added the English in parentheses, following memo §8 addendum. The Spanish gives only a Spanish translation and drops the Pāḷi (see (c)). 32, 51, 56, 61, 62 (first part), 65, 66 and 67 are editor's notes, translated from the Spanish. In 62 I used "dragged" for «se arrastra», Nandisena's *anukaḍḍhana* term. 62 ends with the Thitzana text exactly as given in INSTRUCCIONES.
+
+#### (b) Places where I am unsure
+
+1. **§439 *visuddhayati*.** Div. 3 says the Spanish was rendered «la noche es clara», but the final Spanish says «pura». I used "the night is pure" (N-EN's word, final Spanish). Change to "clear" if the divergencia wording is meant to prevail.
+2. **§433 root glosses.** I changed only "disgusting". If IEBH wants div. 1 read literally, change "kita (curing)" to "(to cure)" and put the other three in the infinitive too.
+3. **§443 *sakkate* "it is honored".** I copied this from the Spanish, but I doubt it. In the grammatical tradition *sakkate* under *pubbarūpa* is usually taken from √*sak* "to be able" (*sak* + *ya* → *sakk-*), so "it is possible / one is able". "Honored" would point to *sakkaroti* (sa + √kar), which does not fit this rule. I have not checked this against Rūpasiddhi or Saddanīti in this session. Please verify.
+4. **§434 and §442.** I applied div. 2 and div. 6, but the final Spanish does not reflect them (see (c)). If the Spanish is deliberately final and the divergencias are outdated, these four lines should go back to "in the meanings of wanting and to do" and "insertion of ‘i’ or ‘ī’".
+5. **§451 "stretch \[you\]!".** The bracket placement and the "!" are my rendering of the divergencia.
+6. **Note 61.** Its content is questionable: "That is, ‘ya’ becomes the previous form". §444 extends to the active voice *all* the substitutions of ‘ya’ of §441–§443 ("yathā heṭṭhā … ādeso"). Its own examples *bujjhati*, *vijjhati* and *maññati* are §441 (cavagga) cases, not *pubbarūpa*. I translated it faithfully but flag it.
+7. **Note 65.** The Spanish dash placement is broken (see (c)). I translated what I take to be the intended sense: "the letter ‘ṇ’ –which prescribes the strengthening of the root vowel and is part of the true causative suffixes (§438)– is elided by §523".
+8. **`<!-- NOTAS DEL TRAMO -->`.** I kept the marker unchanged in case a script splits on it. Rename it if not needed.
+
+#### (c) Problems noticed in the Spanish (reported only, not changed)
+
+1. **Formation sequences, §433.** Step 2 reads "tij (§521)" in all four sequences. It is right only for *titikkhati*. For *jigucchati*, *tikicchati* and *vīmaṃsati* it should be "gup (§521)", "kit (§521)" and "mān (§521)". Copied unchanged into the English, so the error is in both.
+2. **§434, divergencia 2 not applied.** The gloss, vutti and *kimatthaṃ* still say «en los significados de querer y hacer», which is the reading div. 2 rejects.
+3. **§442, divergencia 6 not applied.** The gloss and vutti say «inserción de ‘i’ o ‘ī’», with no «ivaṇṇa».
+4. **§433.** Div. 1 says «gupa (sentir aversión)», but the vutti has «“gupa” (disgustar)». The examples have «siente aversión», so the vutti and the examples are not consistent.
+5. **§439.** Div. 3 says «la noche es clara», but the example has «la noche es pura».
+6. **§440 example 1.** «**Ṭhīyate** ( estar en pie, la acción de estar en pie)» has a stray space and a duplicated gloss, apparently an unfinished edit. In the same line, «la acción e uncir» should be «de uncir».
+7. **§434 header.** «\[Bhuja-ghasa-hara-su- pā-ādīhi …» has a stray space after "su-".
+8. **Note 58** gives «√vaḍha + ya + te = vaḍḍhate», but the example it is attached to is *vuḍḍhate*. Either the note or the example form needs aligning.
+9. **Note 65.** The opening dash closes in the wrong place: «–que prescribe el fortalecimiento de la vocal de la raíz es parte de los verdaderos sufijos causativos (§438)–». It needs «raíz y es parte…» or the dash moved.
+10. **Notes 57 and 63.** The Spanish replaces Nandisena's Pāḷi notes (his 47, 50) with a Spanish translation only, so the Pāḷi of the base edition is lost. Elsewhere (memo §8 addendum) the Pāḷi is kept and the translation added.
+11. **Note 68** (and N-EN 52) reads "nāpe" for ‘ṇāpe’. Copied unchanged.
+12. **Note 61** content: see (b) 6.
+13. **Inline canonical references.** None of N-EN's inline references appear in the Pāḷi lines of this range, for example (Vin. iii, 320), (Khu. i, 59), (M. ii, 87), (VinA. i, 6). Chapters 1–5 carry them inline (memo §5, §7, §8). The English inherits the omission because the Pāḷi blocks are byte-identical.
+14. **§432 header.** «432\. 362\.» differs from N-EN's «432. 462.». The Spanish note 32 («Rū. §362») agrees with 362, which looks like a deliberate correction (in Rūpasiddhi this sutta opens the Taddhita section). Noted only.
+15. **Minor.** Note 49 has three spaces after the colon (the English has two). §449 sequence step 5 has three trailing spaces.
+
+### Range 3 (§458–§481): register of deviations from Nandisena's English
+
+Base: N-EN verbatim (ṁ → ṃ). The file was built by substitution over `tramo3-458-481.es.md`, so the Pāḷi blocks, headings, kaṇḍa Pāḷi lines and the 13 note anchors (69–81) are byte-identical with the Spanish. All the items below are places where the English departs from N-EN.
+
+#### (a) Departures from N-EN and the reason for each
+
+**Applied in every sutta (convention).** *vā* → "optionally". N-EN writes "Sometimes" for *vā* in the glosses, vuttis and *kimatthaṃ* answers of §463, §465–§466, §468–§471, §476, §479–§481. "Why it is said “X”?" → "What is the purpose of saying “X”?". N-EN's parenthesised supplied words, e.g. "(syllable)", "(he)", "(inflections)", become `\[…\]` wherever the Spanish brackets them. Where the Spanish has no bracket, the parentheses are dropped and the words are kept. Root names take the Spanish's double quotes ("“māna”"; N-EN has ‘māna’). "(abbhāsa)" is placed after "the previous syllable" as the Spanish places it. N-EN's own forms here are "“abbhāsa” (previous reduplicated syllables)" and "“abbhāsa” (reduplicate syllable)". Example glosses are N-EN's own and go after the bold word, as the Spanish layout has them. The plural "examples" follows the Spanish wherever two counter-examples are given (§458, §466).
+
+**Divergencias applied (sesion-26-suttas-458-481).**
+- No. 2, §463 vutti: "Optionally, …". N-EN drops the *vā* here.
+- No. 3, §465 title and vutti: "‘i’, ‘ī’ **or** the letter ‘a’", not N-EN's "and ‘a’".
+- No. 4, §464: *juhvati, juhoti* glossed "(\[he\] offers)" (Spanish «ofrenda»). N-EN has "(he) sacrifices".
+- No. 5, §476: *gacchamāno, gacchanto* "(going)". This is N-EN's own word, kept together as the Spanish does.
+- No. 6, §478: *gacchāma, gacchāmhe* "(we go)". No distinction was added, as the divergencia directs.
+- No. 7, §481: "the inflection of the “bhavissantī” **has the substitutions** ‘khāmi’…". N-EN's "is changed to" inverted the operation.
+- No. 8, §481: "and others" added for *icc’ ādayo*.
+- **No. 1 was NOT applied** ("in place of" for §461, §462, §464 and §465). See (b)1.
+
+**Follows the Spanish, which expands or recasts N-EN.**
+- §459 vutti: the stray "it" is removed ("of the reduplicated root ~~it~~ is called").
+- §460 vutti: "previous syllable (abbhāsa)". N-EN has "previous (syllable)".
+- §461 title: "Of the second and fourth, the first and third." (N-EN "First and third of second and fourth."). §461 vutti is recast to the Spanish order: "Of the second and fourth \[consonants\] in the previous syllable (abbhāsa), there are the first and third."
+- §462 title and vutti are recast the same way: "Of the ‘ka’ group, the ‘ca’ group." and "Of the ‘ka’ group in the previous syllable (abbhāsa), there is the ‘ca’ group."
+- §463 title: "\[there is\] the state of ‘va’ and ‘ta’" (Spanish «el estado de», from *-ttaṃ*). The vutti follows the Spanish whole: "the previous syllable (abbhāsa) of the roots … is changed to the state of the letter ‘va’ and of the letter ‘ta’ respectively". N-EN has "There are ‘va’ and ‘ta’ of the “abbhāsa” of the roots…".
+- §466 title: "And \[there is\] the niggahita." This follows the Spanish and the Pāḷi *ca*. N-EN has "Sometimes there is the “niggahita”", and the title has no *vā*. "niggahita" is left unquoted, as in the Spanish.
+- §467 title: "After that, \[there are\] … when ‘sa’ follows" (N-EN "After that (abbhāsa) there are…").
+- §468 and §469 titles: "\[is substituted by\]" (N-EN "becomes"), following the Spanish «\[se sustituye por\]» and the ādesa convention.
+- §470 and §471 titles: "\[There are\] … of “ñā”" and "… of “disa”". The words "of “disa”" are added for §471; N-EN's title omits them.
+- §472: "suffixes" is plural in the title and the vutti, following the Spanish and the Pāḷi *chapaccayesu*. N-EN has "suffix". "And" is added to the title for *ca*. "follow" is left unbracketed (locative); see (c)3.
+- §473 and §474 titles: "\[there is\]" bracketed as in the Spanish. For §474, "when ‘sa’ follows" replaces N-EN's "when there is ‘sa’".
+- §475: "\[there are\]" is bracketed. The question reads "“parokkhāyaṃ”" as in the Spanish (N-EN "“parokkhā”").
+- §476 title: "\[is substituted by\]" (N-EN "becomes"), followed by "when all \[the inflections\] follow". In the vutti, "all suffixes and inflections" follows the Spanish and the Pāḷi *paccayavibhattīsu* (N-EN "inflections and suffixes"). "(to go)" replaces N-EN's appositive "going", and "is substituted by" replaces "becomes". Example 3 reads "(let \[him\] go)" (Spanish «que \[él\] vaya»; N-EN "Go").
+- §477 title: "When “ajjatanī” follows … \[becomes\]". The vutti reads "changes to the state of ‘o’" (Spanish «cambia al estado de», Pāḷi *ottam āpajjate*); N-EN has "When there is … becomes ‘o’".
+- §478 title: "follow … \[becomes\] long" (N-EN "When there are … becomes long").
+- §480 title is recast to the Spanish: "There are ‘eha’, ‘oha’ and ‘e’ of the vowel of “hū” when \[the inflection\] “bhavissantī” follows, and \[there is elision\] of ‘ssa’". N-EN's own wording, "(future)", is dropped there, as in the Spanish. In the vutti, "\[the inflection\]" is added.
+- §481: "its suffix" (N-EN "the suffix"). In the vutti, "when the inflection “bhavissantī” follows" replaces "when there is".
+- Closing formula: "**Thus \[ends\] the third section in the verb chapter**". This is N-EN's wording with the Spanish bracket on «termina».
+- Notes 75 and 80–81: "Kac" → "Kacc." in note 75, as in the Spanish. Notes 71, 72, 80 and 81 exist only in the Spanish and are translated without a label.
+
+**Errors in N-EN corrected (typos, or a gloss that contradicts his own Pāḷi or the Spanish).**
+- §458: "an exception **of** the rule" → "to the rule".
+- §466: "walks up **an** down" → "and".
+- §466 counter-example: *pivāsati* "(he) wishes to **eat**" → "to drink", as in his §458 and §465.
+- §468: "(he) stands" lacks its word (*tiṭṭhati*). "(let he) stand" → "let \[him\] stand"; the same fix is made in §469 and §476.
+- §471 counter-example: "(adassa)" → *addasa* (his own Pāḷi).
+- §472: *jighacchati* lacks its parenthesis in N-EN ("(he) wishes to eat."). The word is supplied as in the Spanish.
+- §475 counter-example: *abravuṃ* "(they) **were**" → "(\[they\] said)", as in the Spanish.
+- §478: "does not **becomes** long" → "become".
+- §480: N-EN's second list has "hohissati" among the plurals. It is not carried into the English, because the Spanish list (*hohissanti*) is used.
+
+#### (b) Places I am unsure about
+
+1. **Divergencia No. 1 does not match the Spanish.** The divergencias file says §461 (and §462, §464, §465) were translated as a genitive of substitution, «*en lugar de* la segunda y la cuarta…». The final Spanish file has no «en lugar de» in any of these suttas: §461 reads «De la segunda y la cuarta, la primera y la tercera.» I followed the Spanish so that the two editions stay parallel ("Of the second and fourth, the first and third."). If the editor wants "In place of…", both the Spanish and the English need it.
+2. **Example glosses where N-EN varies.** N-EN uses different English for the same verb in different suttas, and I kept his gloss in each place as the instruction says:
+   - *jahāti*: "renounces" in §458, "abandons" in §460 and §464.
+   - *jigucchati*: "is disgusted" in §458, §462 and §472, but "reproaches" in §465.
+   - *vīmaṃsati*: "investigates" in §458, §465 and §467, but "thinks" in §463.
+   - *jaṅgamati*: "goes" in §462, "goes about" in §466 (Spanish «anda de acá para allá» in both).
+   - *jigīsati*: "wants to carry" in §462, "wishes to carry" in §474.
+   - *dadhāti*: "holds" in §459, where the Spanish gives two senses («lleva/sostiene»).
+
+   The Spanish is uniform in each case. If uniform English is wanted, these are the places to change.
+3. **Imperatives in §478–§479.** *gacchāhi* (Spanish «ve tú»), *gaccha / gama* and *gamaya* «haz ir tú» are given as "(you go)" and "(you cause to go)", following N-EN's "(You) go". The English does not show that these are imperatives as the Spanish does. I avoided "go [you]" because it would add brackets the Spanish does not have.
+4. **§476 example 8.** *agacchissā* is given as "(\[if he\] would go)", N-EN's wording. The Spanish «\[si él\] hubiera ido» is past conditional ("would have gone"). I kept N-EN.
+5. **Note 71: "√mā".** I translated the Spanish literally. The sutta §467 names the root as *māna*, not *mā*; see (c)5.
+6. **Note 80.** It says *abravuṃ* is in the ajjatanī. I did not verify this. The ending *-uṃ* occurs in both the ajjatanī and the hiyyattanī 3rd plural, so the editor may wish to confirm it.
+
+#### (c) Problems noticed in the Spanish (report only; nothing changed)
+
+1. **§458:** the title gloss and the vutti gloss are identical sentences (lines 11 and 13). N-EN's two differ only in "which" and "that".
+2. **§472 title:** «‘ca’de» lacks a space («‘ca’ de»).
+3. **§472 title:** «cuando \[siguen\] los sufijos ‘cha’» brackets the locative "follow". Under convenciones §1 bis, «siguen» should be unbracketed. The English leaves it unbracketed.
+4. **§463 example:** the note anchors are inconsistent with each other. One sits outside the bold: «**Vīmaṃsati**[^71]». The other sits inside it: «**tikicchati[^72]**». Both are copied byte-identically.
+5. **Note 71:** «√mā se sustituye por ‘maṃ’ por §467». §467 substitutes ‘maṃ’ for the root **māna**, so the note might better say "māna". I don't know whether the note means the root in its dictionary form *mā(n)*.
+6. **Sutta headings, Rūpasiddhi numbers:** §468 and §469 both carry "(949)", and the sequence then skips 955 (§474 = 954, §475 = 956). N-EN has the same. This may be in the source edition. I have not verified it.
+7. **§464 example:** *juhvati* has no gloss of its own («**juhvati**, **juhoti** (\[él\] ofrenda)»). This is not wrong; I mention it only because N-EN groups the two the same way.
+8. **Trailing spaces** at the end of note definitions 75, 76, 77 and 81. They are harmless. The English keeps the one on the Pāḷi note 77 and drops the others.
+9. **§465 heading** has «ivaṇṇākāro» where N-EN has «ivaṇṇ’ ākāro». The Spanish Pāḷi was kept as is. I mention it only in case the apostrophe form is intended.
+
+### Range 4 (§482–§502) — register of deviations from Nandisena's English
+
+Built by line substitution over `tramo4-482-502.es.md`: every heading, Pāḷi block, `---`, the §488 formation steps and all `[^n]` anchors are byte-identical with the Spanish. Notes 82–88, Spanish numbering. Supplied words in escaped brackets `\[…\]` exactly where the Spanish has them (05-taddhita-kappa.en.md writes them unescaped in body text; they render the same). The `<!-- NOTAS DEL TRAMO -->` marker is kept as in the Spanish file.
+
+#### (a) Departures from N-EN wording
+
+**Conventions applied throughout (not repeated per sutta).** ‘x’ for letters/suffixes/inflections and “x” for roots and words, as the Spanish (N-EN uses ‘…’ for roots). Locative "When there is ‘x’" → "When ‘x’ follows", unbracketed (convenciones §1 bis): §482, §485, §487, §489, §490, §491, §496, §502. Ablative → "after": §492 vutti ("after the root “asa”", N "of the root"), §497 and §498 gloss and vutti ("after “labha”/“kusa”", N "of"). *Vā* → "optionally" where N has "sometimes": §484, §488, §491, §492, §499, §500, §501 (incl. "What is the purpose of saying “vā” (optionally)?", N "(sometimes)"). "Why it is said …?" → "What is the purpose of saying …?" (§483, §484, §501). N's "(he) does X (form)" prose → numbered examples with the form in bold and the gloss in parentheses; N's "(he)/(they)" → `\[he\]`/`\[they\]` where the Spanish brackets «\[él\]/\[ellos\]», and unbracketed where the Spanish has an explicit pronoun or none ("I give", "we are", "it is said").
+
+**Divergencias applied** (`sesion-26-suttas-482-502.divergencias-ingles.md`):
+- §484 (div. 1): short gloss "Optionally, \[also\] of “ghaṭa” and others." (N "Sometimes of ‘ghaṭa’ and others."); vutti restructured after the Spanish: "Optionally, in the causative, there is strengthening of the roots “ghaṭa” and others that do not end in a conjunct consonant." (N "…of (the vowel of) the root that does not end in a conjunct consonant, of roots ‘ghaṭa’ and others").
+- §487 (div. 3): *vussati* "(it is inhabited)" (N "(he) causes to live").
+- §491 (div. 4): "By indicating the state with “kāsatta”, also in other cases there is insertion of ‘s’:" (N "By showing state in “kāsatta”, also when there are other (inflections), there is insertion of ’s’.").
+- §493–§495 (div. 5): *attha* "(you all are)" — plural, see (b); *atthi* "(\[he\] is)"; *atthu* "(let it be)" (N's own words, brackets removed as in the Spanish).
+- §496 (div. 6): N's "Who are you Sir?" kept as "(who are you, Sir?)" — the Spanish keeps «señor»; the divergencia leaves *mārisa* ("friend", Thitzana) to the IEBH.
+- §499–§500 (div. 7): grouping by person kept as N and the Spanish: "(I give) … (\[he\] should give)". The Pāḷi order is "dajjāmi, dajjeyya; dadāmi, dadeyya"; Thitzana treats *dadāmi/dadeyya* as counter-examples of *vā*.
+- **§486 (div. 2) NOT applied — see (b).**
+
+**Follows the Spanish (expansion or correction of N):**
+- §482 gloss: "\[there is\]" bracketed (Spanish «\[hay\]»).
+- §483 gloss: "(vuddhi)" added and "\[the vowel of the root\]" (N "(vowel of the root that)"); counter-examples "such as in the following examples" (plural; N "example", two forms follow).
+- §485 vutti: "\[other than the causative\]", "\[of the vowel\]" as the Spanish brackets; *ca* extension set as a header line with a numbered example.
+- §488: "of the suffix ‘ya’" (N "of ‘ya’"); sequence label "Sequence of **vuyhati**, which comes from the root ‘vaha’ (carrying):" (N "Formation of “vuyhati”. It comes from the root ‘vaha’, carrying."). Steps copied from the Spanish byte for byte (see (c) on step 2).
+- §489: "there is the letter ‘ghe’" (Spanish «la letra»; N "there is ‘ghe’").
+- §491 gloss: "When \[the inflection\] “ajjatanī” follows, \[there is\] ‘kāsa’ of “kara”." (N "In the “ajjatanī” there is…").
+- §492 gloss: "\[of the root\]" bracket (N "(consonant of the root)").
+- §496 vutti: "When the inflection ‘si’ follows" (N "When there is ‘si’").
+- §497: "There are the substitutions" (article added, as Spanish «las sustituciones»).
+- §499: "there is the substitution" (article, as N's own §500–§501).
+- §500: *vajjeyya, vadeyya* "(\[he\] should say)" — N "(I) should say"; Spanish «\[él\] debería decir» (3rd sg optative, parallel to N's own §499 "(he) should give").
+- §501: *ghammatu/gacchatu* "(let \[him\] go)", *ghammāhi/gacchāhi* "(go!)", *ghammāmi/gacchāmi* "(I go)" — N groups "(Let it) go (ghammatu, ghammāhi)"; the Spanish separates 3rd sg imperative / 2nd sg imperative / 1st sg.
+- §502: vutti "the end \[vowel\] … and others becomes the letter ‘ī’" (Spanish «la \[vocal\] final … y otras … la letra ‘ī’»; N "the end of the roots … becomes ‘ī’", without *evamādīnaṃ*); "and “matha”" for N's list comma; *ṭhīyati* "(one stands)" — N "standing", Spanish «se está en pie» (impersonal passive), see (b).
+- Kept N against the Spanish's different word (no divergencia): §483 *mantayati* "consults" (ES «delibera»); §484 "causes to try" (ES «hace esforzarse»); §487 *vuyhati* "he is carried away", §488 "it is carried" (N's own two wordings); §502 *dhīyati* "it is contained" (ES «es sostenido»).
+
+**Typos of N-EN corrected:** "strengthning" (§483), "roots that does not" → "do not" (§485), "inflection follow" → "follows" (§491), "elision of end" → "of the end" (§493), "elsion" (§497), "Sir" comma (§496). N's "adasi"/"uccati" in his prose glosses disappear because the forms are now the bold Pāḷi of the Spanish.
+
+**Notes.** 86, 87: N's 61, 62 verbatim. 82, 83, 84, 85, 88: editor's notes, translated from the Spanish, unlabelled.
+
+#### (b) Uncertain — the IEBH to decide
+
+1. **§486, *gūhayati / dūsayati* (div. 2).** The divergencia says the Spanish was translated «hace ocultar» / «hace corromper», but the final Spanish has «hace proteger» with note 85 «Oculta.» and «hace perecer». Since the Spanish master did not take the divergencia and note 85 only makes sense against "protect", I kept N verbatim — "(\[he\] causes to protect),[^85] … (\[he\] causes to injure, spoil)" — and note 85 as "Hides." (I read «Oculta» as the verb, glossing *guha*; it could also be read as an adjective.) If div. 2 stands: "causes to hide" / "causes to corrupt" and note 85 becomes redundant. *Dūsayati*: the Spanish «perecer» is neither N's "injure, spoil" nor the divergencia's «corromper»; I did not follow it.
+2. **§493 *attha* "(you all are)".** The Spanish «vosotros sois» has no brackets; English has no unbracketed plural "you". Alternatives: "(you \[pl.\] are)", "(ye are)".
+3. **§502 *ṭhīyati* "(one stands)".** Rendering of the Spanish impersonal «se está en pie»; N "standing". Possible alternative "(it is stood)".
+4. **§501 *ghammāhi* "(go!)"** for «ve tú»; alternative "(go \[you\])".
+5. **Note 88** «La letra ‘i’ es indicativa de √gamu» rendered literally "The letter ‘i’ is indicative of √gamu" (i.e. *gami-* in the sutta stands for *gamu*). Wording may want smoothing.
+6. **Fourth-section heading.** The brief says the range begins with the heading of the fourth section, but `tramo4-482-502.es.md` begins at §482: «CATUTTHA-KAṆḌA / CUARTA SECCIÓN» is at the end of `tramo3-458-481.es.md` (lines 566–567). I did not add it here (it would break line-for-line parity with the Spanish range); whoever builds range 3 should render it "**CATUTTHA-KAṆḌA**  / **FOURTH SECTION**".
+
+#### (c) Problems noticed in the Spanish (reported, not changed)
+
+1. **§483 Pāḷi vutti: "kāriyte"** — should be *kārite* (N-EN prints "kāriye", also wrong). Pāḷi left byte-identical.
+2. **§486 Pāḷi vutti: "dhātunaṃ"** — expected *dhātūnaṃ* (N-EN has the same).
+3. **§486: divergencia 2 not reflected** in the Spanish (see (b) 1).
+4. **§488 sequence step 2: "vah (§521)"** — N-EN has "vah**~~a~~** (§521)" (the elided ‘a’ shown struck through). The Spanish drops the strikethrough; copied as in the Spanish.
+5. **§488 vutti:** double space in «del sufijo  ‘ya’».
+6. **§491 vutti:** missing space in «‘kāsa’de».
+7. **§492 breakdown:** «mi-mā-naṃ» vs. the sutta «mi-mānaṃ» (hyphenation differs; possibly intentional split mi-mā + naṃ).
+8. **§487 examples:** Pāḷi has *uccate* (attanopada); N-EN's prose gloss reads "uccati" — no issue in the Spanish, noted only because the two sources differ.
+9. **Note 83:** trailing space after «‘aya’.» (dropped in the English).
+
+### Range 5 (§503–§523, closing verse and formulas): deviations from Nandisena's English
+
+Base: N-EN verbatim (ṃ throughout). The Spanish range file gives the structure. Pāḷi blocks, headings, the verse in Pāḷi, the Pāḷi closing formulas and the Pāḷi variant notes (89, 98, 99, 101, 106) are byte-identical with the Spanish.
+
+#### (a) Where the English departs from N-EN's wording
+
+**Fixed terms and formulae, applied throughout.**
+- *vā*: N-EN "Sometimes" → **"Optionally"** in §505, §506, §507, §508, §511, §512, §522 (glosses and vuttis), and "“vā” (sometimes)" → "“vā” (optionally)" in every *kimatthaṃ*. The Spanish says «opcionalmente» in all of them.
+- *kimatthaṃ*: N-EN "Why it is said “X”?" → "What is the purpose of saying “X”?" (12 places).
+- "To allow an exception **of** this rule" (§506, §507, §509, §519) → "**to** this rule", which is N-EN's own wording in §518, §521 and §522. "such in" → "such as in" (§519, §521).
+- Supplied words in square brackets wherever the Spanish has them ("\[There is\]", "\[there are\]", "\[roots\]", "\[syllable\]", "\[letter\]", "\[inflections\]", "\[inflections called\]", "\[become\]", "\[becomes\]", "\[reach\]", "\[suffixes\]", "\[chapter of the\]", "\[on it\]"). In the example glosses N-EN's "(He) …" / "(they) …" → "(\[he\] …)" / "(\[they\] …)". "follows" (locative) and "after" (ablative) are unbracketed.
+- Roots in double quotes and letters/suffixes/inflections in single quotes, as the Spanish (N-EN uses single quotes for roots).
+- Where N-EN gives one gloss for a list of words, the gloss sits in the Spanish position (e.g. §505, two numbered lines).
+
+**Accepted divergencias (sesion-26-suttas-503-523), applied.**
+- Div. 2, §517: the five operations in the order of the Pāḷi, "lengthening, reversal, substitution, elision and insertion", and "of the roots, of the inflections and of the suffixes" (N-EN: "insertion, elision, substitution, reversion, lengthening of suffixes, inflections, roots"). "reversal" rather than N-EN's "reversion", as in the §404 set in Taddhita (memo §8).
+- Div. 3, §515 vutti: "those \[letters\] ‘o’ and ‘e’" (N-EN "those ‘e’ and ‘o’"). The gloss has no list of letters, as in the Spanish, so N-EN's "(‘e’ and ‘o’)" there is dropped.
+- Div. 5, §515: *lāveti* "causes to reap" (N-EN "causes to cut").
+- Div. 6, §510: the two pairs kept with a semicolon, "**Vajjemi**, **vademi**; **vajjāmi**, **vadāmi** (I speak)", as in the Spanish.
+- Div. 7, §517: *vakkhetha* / *dakkhetha* "you would speak" / "you would see" (N-EN "(you) speak", "(you) see").
+- Div. 8, verse: "let the sagacious ones reflect" (N-EN "let the wise ones think again and again"). "Wise" is avoided because it renders *dhīra* in the opening verse (K) of the chapter.
+- Div. 1 (§521) and div. 4 (§515) could not be applied as written. See (b).
+
+**Following the Spanish (structure or expansion).**
+- §503: "the initial \[syllable\]" (N-EN "the beginning"), from the Spanish «la \[sílaba\] inicial». Typo "og" → "of".
+- §506: the gloss begins "And everywhere" (*ca*), as the Spanish; "the initial \[letter\]" (N-EN "the beginning").
+- §507: the gloss and vutti say "the \[inflections\] / \[inflections called\] “asabbadhātuka”" (N-EN "the “asabbadhātuka”").
+- §508: N-EN gives no English for the *kimatthaṃ*. The answer is translated from the Spanish: "To allow an exception … **jāneyya** (\[he\] may know)".
+- §509: gloss "or the state of ‘ya’" (N-EN "or ‘ya’"); vutti "the suffix ‘nā’ that follows the root “ñā”" (N-EN "of the root").
+- §510: gloss "the letter ‘a’"; vutti "or **optionally** it is changed to ‘e’" (the Spanish «u opcionalmente»; N-EN has no "optionally").
+- §511: gloss "\[There is\] the state of ‘u’ of the letter ‘o’" (N-EN "There is ‘u’ of letter ‘o’").
+- §512: vutti "of the root “kara”"; the counter-example sentence says "examples" (plural, two words), as the Spanish. N-EN has a double space there, now removed.
+- §513: gloss "When a vowel follows, \[there is\] ‘ava’ in place of ‘o’" (N-EN "When there is a vowel, there is ‘ava’ of ‘o’"). The Spanish has «en lugar de».
+- §515: "By dividing the sutta, also in another case there is the substitution ‘āya’ of the letter ‘e’:" (N-EN "also when other follow"), with the examples as a numbered line, as the Spanish.
+- §516: gloss "When the \[inflections\] “asabbadhātuka” follow" and vutti "When all the \[inflections called\] “asabbadhātuka” follow, there is insertion of ‘i’" (N-EN "There is insertion of ‘i’ in all “asabbadhātuka”"). In the *kimatthaṃ* the Spanish gloss of the word is placed in parentheses after it: "“asabbadhātukamhi” (when the \[inflections\] “asabbadhātuka” follow)". See (c). Typo "operaratio" → "operation".
+- §517: "formations" for *sādhana* (N-EN "examples") in the vutti and in "Thus also the other formations should be formed", as the Spanish «formaciones» (cf. note 107). "the Victorious One" for *jina* (N-EN "the Conqueror"), the glossary term (memo §2.5) and the Spanish «el Victorioso». "have not been show" → "shown"; "according the Word" → "according to the Word". The operations are set between en dashes, as the Spanish. *Jāniyā* "\[he\] may know" (N-EN "should know") and *siyā* "may be" (N-EN "(he) would be"), as in §506 and §508 and the Spanish «podría». N-EN leaves *kareyya* unglossed ("(he) should do," with no word); the gloss is given. *Jāyati* "arises" (N-EN "(It) is arisen", ungrammatical); see (b).
+- §518: gloss "The \[inflections\] “attanopada” \[reach\] the state of “parassapada”" and vutti "reach the state of" (N-EN "are changed (to)"). This follows the Spanish «alcanzan (al/el) estado», which renders *-ttaṃ* and *āpajjante*. N-EN's vutti "changed “parassapada”" is missing "to". N-EN's example gloss "(it) is cooked (paccate)" → *paccati*, the word in his own Pāḷi line.
+- §519: "when … follow" for N-EN "in the" / "when there are the inflections of the" (locative). "The is insertion" → "\[There is\] insertion".
+- §520: "when ‘ti’ follows" / "when the inflection ‘ti’ follows" (N-EN "when there is"); "there insertion" → "there is insertion".
+- §521: "the final \[letter\]" in the gloss and vutti (N-EN "the end" / "the end (consonant)"). His "(consonant)" contradicts his own note 70 (= 110), where the elided letter is the vowel ‘u’. The *kimatthaṃ* gloss is "(which has various vowels)" (N-EN "(of many vowels)"), and the counter-example reads "when the root has only one vowel" (N-EN "only one syllable"), as the Spanish. *Pāti* is glossed "(\[he\] protects)"; N-EN has "(he) protects" with no word in parentheses. *Mahīyati* / *mathīyati* are glossed as passives, "is honored" / "is churned" (N-EN active "(he) honors", "(he) churns"), as the Spanish «es honrado», «es batido». They are *ya*-passives (cf. note 111). "Whty" → "What".
+- §523: gloss "of the \[suffixes\] “kārita”" (N-EN "of the causative"). The Spanish keeps "kārita" in the gloss; the vutti says "causative suffixes", as both.
+- Verse: one paragraph, as the Spanish. "the \[chapter of the\] verb has been shown by me in brief" (N-EN "it has been shown by me this verb chapter in brief"). The word order is corrected and the brackets follow the Spanish. "By their own special knowledge" (N-EN "By one’s special knowledge"; *sakaṃ*, Spanish «su propio»). "\[on it\]" from the Spanish.
+- Closing formulas: N-EN verbatim, bold as in the Spanish: "**Thus ends the fourth section in the verb chapter**", "**End of the Verb Chapter**".
+
+**Notes.**
+- 89, 98, 99, 101, 106: Pāḷi variants, identical.
+- 91 (= N-EN 64), 95 (= 65), 110 (= 70), 111 (= 71): N-EN verbatim, with curly quotes as in the Spanish. Typo in 111: "there end vowel" → "the end vowel".
+- 90, 92, 93, 94, 96, 97, 100, 102, 103, 104, 105, 107, 108, 109, 112, 113: editor's notes, translated from the Spanish and unlabelled. «Después» → "Then".
+- No Thitzana note falls in this range.
+
+#### (b) Places where I am unsure
+
+1. **Div. 4 (§515, *pāpuṇanti* «llegan a») is not in the final Spanish.** The final Spanish says «se convierten en», both bracketed in the gloss and plain in the vutti. I followed the final Spanish, "\[become\]" / "become", which also replaces N-EN's "are changed to". If the IEBH wants div. 4 as described, the vutti should read "those \[letters\] ‘o’ and ‘e’ reach ‘āva’ and ‘āya’", and the gloss should become "Those \[reach\] …". The Spanish would need the same change.
+2. **Div. 1 (§521, *anekasara* «que no es de una sola vocal») is not in the final Spanish either.** The Spanish keeps «que tiene varias vocales» in the gloss, the vutti and the *kimatthaṃ*. Only the counter-example was changed, to «cuando la raíz tiene una sola vocal». I followed the Spanish: "which has various vowels" (N-EN), with "only one vowel" in the counter-example. If div. 1 is applied, the three places would read "which is not of a single vowel".
+3. **Unbracketed glosses without a subject.** The Spanish glosses some words without a subject and without brackets: *siyā* «podría ser», *jāyati* «nace», *ahosi* «fue», and the passives of §518 and §521. I gave bare English, "may be", "arises", "was", "is said", following the bracket rule. For *vakkhetha* / *dakkhetha* (Spanish «diríais», «veríais») English needs a pronoun to show the person. I wrote "you would speak" / "you would see" **unbracketed**, like *asi* "you are" (Spanish «tú eres») and *vadāmi* "I speak" («yo digo»). Someone should check whether "you" ought to be bracketed. For *jāyati* I kept N-EN's verb ("arises", from his "is arisen"). The Spanish has «nace» ("is born"), and either reading is defensible.
+4. **§519 *agamissā* / *gamissā*:** I kept N-EN's "should have gone". The Spanish has «habría ido» ("would have gone"), and divergencia 7 moved the sattamī forms of §517 to "would". I did not change this one because no divergencia covers it. Someone should check it.
+5. **§522:** I kept N-EN's two different glosses, *niyacchati* "regulates" and *niyamati* "determines". The Spanish uses «controla» for both. They could be unified.
+6. **Verse, *vicakkhaṇā* → "the sagacious ones":** the Spanish has «sagaces». I avoided "discerning" because the Spanish «discernimiento» renders *buddhi* in the same line. This is my choice of word; the IEBH may prefer another.
+7. **Note 105:** the Spanish «No obstante que aquí no hay sufijo causativo ‘e’ → ‘āya’» has no comma. I read it as "Although there is no causative suffix here, ‘e’ → ‘āya’", where ‘e’ is the root-final of *ge*. The alternative reading "no causative suffix ‘e’" also makes sense, and I cannot tell which the editor meant.
+8. **The `<!-- NOTAS DEL TRAMO -->` marker** is kept as it is so that the assembler can split body and notes. Remove it if the assembled master should carry no Spanish marker.
+
+#### (c) Problems noticed in the Spanish (reported only, not changed)
+
+1. **§519, word breakdown:** «\[Akāra-āgamo \+ hiyyattanī, ajjatanī-kālātipattīsu, 2\]» has a comma inside the compound. It should be «hiyyattanī-ajjatanī-kālātipattīsu». The comma is copied in the English heading, which has to be byte-identical.
+2. **§509, vutti:** the Pāḷi has «lopo hoti **vā**» and the Pāḷi line has a *Vā ti kimatthaṃ?*, but neither the gloss nor the vutti in Spanish says «opcionalmente». N-EN also lacks it. The English follows them.
+3. **§518, gloss:** «\[alcanzan\] **al** estado de “parassapada”» should be «el estado», as in the vutti.
+4. **§516, *kimatthaṃ*:** «¿Con qué fin se dice cuando siguen las \[inflexiones\] “asabbadhātukamhi”?» is garbled. The Pāḷi word is quoted inside its own gloss, and the inflections are named in the locative. A parallel form would be «¿Con qué fin se dice “asabbadhātukamhi” (cuando siguen las \[inflexiones\] “asabbadhātuka”)?»
+5. **Divergencias 1 and 4 vs the final Spanish:** see (b) 1–2. The divergencias file says «se tradujo» for wordings that the Spanish file does not carry.
+6. **Note 91:** «hiyyatanī» (single *t*), copied from N-EN fn 64. Everywhere else, including §519, the spelling is «hiyyattanī». It was kept in the English because the note is N-EN verbatim.
+7. **Inconsistent subject brackets in §517:** «**jāyati** (nace)», «**siyā** (podría ser)» and «**ahosi** (fue)» have no «\[él\]», while every other singular in the list has one. The same holds for §506 *siyā*.
+8. **The section-closing formula is phrased differently from range 1:** range 1 has «Así \[termina\] la primera sección del capítulo de los verbos»; this range has «Así termina la cuarta sección en el capítulo del verbo» (no bracket, «en», «del verbo»). N-EN also varies ("in the chapter of verbs" / "in the verb chapter").
+9. **Note 108:** double space after «“pajjunnagatika”,». Notes 90, 103, 107 and 111 end with a trailing space. These are typographic only.
+10. **Note 109 (*bravīti*):** «√brū \+ a \+ ti. Después ‘ū’ → ‘o’ → ‘ava’» does not mention the ‘ī’ insertion of this very sutta, or what happens to the vikaraṇa ‘a’. It is not wrong as far as it goes, but it is incomplete. I am not sure how the editor intends the derivation.

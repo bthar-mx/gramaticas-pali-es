@@ -225,9 +225,9 @@ recursos, el `<style>` es sólo para lo que tiene esa herramienta. La portada
 ya no lleva caja de búsqueda: la de la barra es la única. Notas:
 `docs/navegacion/etapa-4b-recursos.md`.
 
-### Tres capítulos españoles NO se editan en `kaccayana/` (sesión 61)
+### Los capítulos españoles 2 a 6 NO se editan en `kaccayana/` (sesión 61; ampliado el 2026-10-12)
 
-Los capítulos 2, 3 y 4 en español son **salida**, no fuente: los rehace
+Los capítulos 2 a 6 en español son **salida**, no fuente: los rehace
 `herramientas/convertir_<obra>.py` a partir de su maestro de `docs/`, y el hook
 de pre-commit ejecuta **todos** los `convertir_*.py` antes de generar el sitio.
 Un cambio hecho en el archivo de `kaccayana/` sobrevive en el disco, sobrevive
@@ -239,18 +239,32 @@ modo que el commit sale sin él y sin avisar.
 | 2 · Nāma | `docs/2. Nāma-Kappa.md` | `convertir_nama.py` |
 | 3 · Kāraka | `docs/3. Kāraka-Kappa.md` | `convertir_karaka.py` |
 | 4 · Samāsa | `docs/4. Samāsa-Kappa.md` | `convertir_samasa.py` |
+| 5 · Taddhita | `docs/5. Taddhita-Kappa.md` | `convertir_taddhita.py` |
+| 6 · Ākhyāta | `docs/6. Ākhyāta-Kappa.md` | `convertir_akhyata.py` |
 
 El capítulo 1 (Sandhi) no tiene conversor: `kaccayana/01-sandhi-kappa.md` es su
 fuente y se edita ahí. **Los maestros ingleses `NN-nombre.en.md` tampoco tienen
-conversor**: los cuatro se editan directamente en `kaccayana/`.
+conversor**: se editan directamente en `kaccayana/`.
 
-Consecuencia para las notas al pie: en los tres capítulos convertidos **no se
+Consecuencia para las notas al pie: en los capítulos 2, 3 y 4 **no se
 numeran a mano**. En el maestro se escribe la nota en prosa —`… texto. Nota:
 …` en la misma línea, o un párrafo propio que empiece por `Nota:`, `Nota al
 pie:` o `Nota del traductor…:`— y el conversor coloca el ancla `[^n]` y
 renumera todas en orden de aparición. La definición conserva el rótulo
 (`[^11]:  Nota: …`); el inglés, que sí se numera a mano, lo acompaña con
 `Note: …` para que las dos ediciones digan lo mismo.
+
+**El 5 y el 6 son al revés**: sus maestros traen las notas ya numeradas
+`[^n]` en orden de aparición, y el conversor sólo comprueba que anclas y
+definiciones casen (1..N). Una nota nueva obliga a renumerar las siguientes
+en el maestro y en el inglés. En el 6, los párrafos «Nota: …» de §472 y §473
+son cuerpo (explicaciones de Nandisena dentro de los ejemplos), no notas al
+pie: `convertir_akhyata.py` los deja ahí y se detiene ante cualquier otro.
+
+**Tachado** (capítulo 6): Nandisena marca con `~~x~~` la letra que se elide
+en las secuencias de formación («div + **~~y~~**a + ti»); el generador lo
+pinta como `<del>`. «Secuencia de **x**:» es rótulo de secuencia, como
+«Secuencia:».
 
 Cada `git push` a `main` despliega en
 <https://gramaticas.buddha-dhamma.net> (Cloudflare Workers, ver

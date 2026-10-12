@@ -285,7 +285,7 @@ def glosario(lengua, d):
                     break
             if texto:
                 break
-        texto = corto(plano(re.sub(r"\*\*?|`", "", texto)))
+        texto = corto(plano(re.sub(r"\*\*?|`|~~", "", texto)))
         otras = " ".join(p for p, _f in g.get("gr", [])[1:])
         fila = ["glosario", nfc(g["p"]), texto, url + "#g-" + g["id"],
                 claves(otras, quitar=g["p"])]

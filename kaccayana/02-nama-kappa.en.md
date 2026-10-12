@@ -6130,7 +6130,7 @@ What is the purpose of saying “after these”? \[This sutta does not apply whe
 
 [^29]:  For the happiness.
 
-[^30]:  Smā smiṃ sa ekavacana icc’ etesaṃ (K).
+[^30]:  Smā smiṃ sa ekavacana icc etesaṃ (K).
 
 [^31]:  This sutta is dragged and has influence over the three following suttas: §132-§133-§134.
 

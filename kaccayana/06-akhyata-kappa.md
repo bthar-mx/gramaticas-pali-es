@@ -1,0 +1,3114 @@
+**6-ĀKHYĀTA-KAPPA**  
+**6-CAPÍTULO DEL VERBO**
+
+**PAṬṬHAMA-KAṆḌA**  
+**PRIMERA SECCIÓN**
+
+(K) Ākhyātasāgaram ath’ ajjatanītaraṅgaṃ,   
+Dhātujjalaṃ vikaraṇ’-āgama-kālamīnaṃ.   
+Lopānubandhariyam atthavibhāgatīraṃ,[^1]   
+Dhīrā taranti kavino puthubuddhināvā.
+
+Los sabios poetas cruzan, con la nave de la vasta sabiduría, el océano de los verbos que tiene por olas las inflexiones, por agua las raíces, por peces los signos de conjugación, los aumentos y los tiempos, por corriente las elisiones y las letras indicativas, y por orilla la división de los significados.
+
+(Kh) Vicittasaṅkhāraparikkhitaṃ imaṃ,   
+Ākhyātasaddaṃ vipulaṃ asesato.   
+Paṇamya sambuddham anantagocaraṃ,   
+Sugocaraṃ yaṃ vadato suṇātha me.
+
+Habiendo rendido homenaje al Perfectamente Iluminado, que posee \[un conocimiento de\] esfera infinita y que tiene un buen objeto (Nibbāna), escuchadme completamente que voy a exponer esta vasta \[gramática de los\] verbos, provista de una variedad de formaciones.
+
+(G) Adhikāre maṅgale c’ eva, nipphanne c’ āvadhāraṇe.   
+Anantare c’ apādāne, athasaddo pavattati.
+
+La palabra “atha” se emplea \[en estos significados\]: (i) continuación (adhikāra), (ii) bendición (maṅgala), (iii) compleción (nipphanna), (iv) limitación (avadhāraṇa), (v) inmediatez (anantara) y (vi) separación (apādāna).
+
+---
+
+**406\. 429\. Atha**[^2] **pubbāni vibhattīnaṃ cha parassapadāni (865).** \[Atha \+ pubbāni \+ vibhattīnaṃ \+ cha \+ parassapadāni, 5\]
+
+Atha sabbāsaṃ vibhattīnaṃ yāni yāni pubbakāni **cha** padāni, tāni tāni **parassapada**saññāni honti.
+
+Taṃ yathā? **Ti anti, si tha, mi ma.**
+
+**Parassapadam** icc anena kvattho? Kattari parassapadaṃ.
+
+---
+
+Las seis inflexiones anteriores se llaman “parassapada” (voz activa).[^3]
+
+De todas las inflexiones, aquellas seis voces que son las anteriores reciben el nombre “parassapada” (voz activa).
+
+---
+
+¿Cómo qué?
+
+1. **Ti anti, si tha, mi ma.**
+
+¿Cuál es la utilidad del nombre “parassapada”? Para el uso del nombre “parassapada” en el sutta “Kattari parassapadaṃ” (§456).
+
+---
+
+**407\. 439\. Parāṇy attanopadāni (866).** \[Parāṇi \+ attanopadāni, 2\]
+
+Sabbāsaṃ vibhattīnaṃ yāni yāni parāni **cha** padāni, tāni tāni **attanopada**saññāni honti.
+
+Taṃ yathā? **Te ante, se vhe, e mhe.**
+
+**Attanopadam** icc anena kvattho? Attanopadāni bhāve ca kammani.
+
+---
+
+Las \[seis\] posteriores se llaman “attanopada” (voz media).
+
+De todas las inflexiones, aquellas seis voces que son posteriores reciben el nombre “attanopada”.
+
+---
+
+¿Cómo qué?
+
+1. **Te ante, se vhe, e mhe.**
+
+¿Cuál es la utilidad del nombre “attanopada”? Para el uso del nombre “attanopada” en el sutta “Attanopadāni bhāve ca kammani” (§453).
+
+---
+
+**408\. 431\. Dve dve paṭhama-majjhim’-uttamapurisā (867).** \[Dve-dve \+ paṭhama-majjhima- uttama-purisā, 2\]
+
+Tāsaṃ sabbāsaṃ vibhattīnaṃ parassapadānaṃ, attanopadānañ ca **dve dve** padāni **paṭhama-majjhim’-uttamapurisa**saññāni honti.
+
+Taṃ yathā? **Ti anti** iti paṭhamapurisā, **si tha** iti majjhimapurisā, **mi ma** iti uttamapurisā. Attanopadānam pi **te ante** iti paṭhamapurisā, **se vhe** iti majjhimapurisā, **e mhe** iti uttamapurisā. Evaṃ sabbattha.
+
+**Paṭhama-majjhim’-uttamapurisam** icc anena kvattho? Nāmamhi payujjamāne pi tulyādhikaraṇe paṭhamo, tumhe majjhimo, amhe uttamo.
+
+---
+
+Los pares \[son\] tercera persona, segunda persona y primera persona.[^4]
+
+De todas esas inflexiones, tanto de las voces activas como de las voces medias, cada par de voces recibe el nombre tercera persona (paṭhamapurisa), segunda persona (majjhimapurisa) y primera persona (uttamapurisa).
+
+---
+
+¿Cómo qué?
+
+1. **Ti anti** corresponden a la tercera persona (paṭhamapurisā); **si tha** corresponden a la segunda persona (majjhimapurisā); **mi ma** corresponden a la primera persona (uttamapurisā).  
+2. También en las voces medias: **te ante** corresponden a la tercera persona (paṭhamapurisā); **se vhe** corresponden a la segunda persona (majjhimapurisā); **e mhe** corresponden a la primera persona (uttamapurisā).
+
+Así en todos los casos.
+
+¿Cuál es la utilidad del nombre “paṭhama-majjhim’-uttamapurisa”? Para el uso de estos nombres en los suttas “Nāmamhi payujjamāne pi tulyādhikaraṇe paṭhamo”, “Tumhe majjhimo”, “Amhe uttamo” (§410-12).
+
+---
+
+**409\. 441\. Sabbesam ekābhidhāne paro puriso (868).** \[Sabbesaṃ \+ eka-abhidhāne \+ paro \+ puriso, 4\]
+
+Sabbesaṃ tiṇṇaṃ paṭhama-majjhim’-uttamapurisānaṃ ekābhidhāne **paro puriso** gahetabbo.
+
+So ca paṭhati, tvañ ca paṭhasi, **tumhe paṭhatha**. So ca pacati, tvañ ca pacasi, **tumhe pacatha**. 
+
+Evaṃ sesāsu vibhattīsu **paro puriso** yojetabbo.
+
+---
+
+Cuando todas \[las personas\] se enuncian juntas, \[se debe tomar\] la persona posterior.[^5]
+
+Cuando las tres –tercera persona, segunda persona y primera persona– se enuncian a la vez, se debe tomar la persona posterior.
+
+---
+
+Ejemplos:
+
+1. **So ca paṭhati**, **tvañ ca paṭhasi** (él recita y tú recitas): al combinarse ambas personas, **tumhe paṭhatha** (vosotros recitáis).  
+2. **So ca pacati**, **tvañ ca pacasi** (él cocina y tú cocinas): al combinarse ambas personas, **tumhe pacatha** (vosotros cocináis).
+
+Así, en las inflexiones restantes se debe emplear la persona posterior.[^6]
+
+---
+
+**410\. 432\. Nāmamhi payujjamāne pi tulyādhikaraṇe paṭhamo (869).** \[Nāmamhi \+ payujjamāne \+ api \+ tulya-adhikaraṇe \+ paṭhamo, 5\]
+
+**Nāma**mhi payujjamāne pi appayujjamāne pi tulyādhikaraṇe **paṭhamapuriso** hoti.
+
+So gacchati, te gacchanti.
+
+Appayujjamāne pi: Gacchati, gacchanti.
+
+**Tulyādhikaraṇe** ti kimatthaṃ? Tena haññase tvaṃ Devadattena.
+
+---
+
+Cuando se emplea \[o no se emplea\] un nombre que tiene el mismo locus, \[hay\] la tercera \[persona\].
+
+Tanto cuando se emplea un nombre que tiene el mismo locus como cuando no se emplea, hay la tercera persona.
+
+---
+
+Ejemplos:
+
+1. **So gacchati** (él va), **te gacchanti** (ellos van).
+
+También cuando no se emplea \[el nombre\]:
+
+1. **Gacchati** (\[él\] va), **gacchanti** (\[ellos\] van).
+
+¿Con qué fin se dice “tulyādhikaraṇe” (que tiene el mismo locus)? Para impedir la operación de esta regla cuando no hay el mismo locus, como en el ejemplo siguiente: Tena haññase tvaṃ Devadattena (tú eres matado por ese Devadatta).
+
+---
+
+**411\. 436\. Tumhe majjhimo (870).** \[Tumhe \+ majjhimo, 2\]
+
+**Tumhe** payujjamāne pi appayujjamāne pi tulyādhikaraṇe **majjhimapuriso** hoti.
+
+Tvaṃ yāsi, tumhe yātha.
+
+Appayujjamāne pi: Yāsi, yātha.
+
+**Tulyādhikaraṇe** ti kimatthaṃ? Tayā paccate odano.
+
+---
+
+Cuando \[se emplea o no se emplea\] “tumha” (tú), \[hay\] la segunda persona.
+
+Tanto cuando se emplea “tumha” (tú) con el mismo locus como cuando no se emplea, hay la segunda persona.
+
+---
+
+Ejemplos:
+
+1. **Tvaṃ yāsi** (tú vas), **tumhe yātha** (vosotros vais).
+
+También cuando no se emplea:
+
+1. **Yāsi** (\[tú\] vas), **yātha** (\[vosotros\] vais).
+
+¿Con qué fin se dice “tulyādhikaraṇe” (que tiene el mismo locus)? Para impedir la operación de esta regla cuando no hay el mismo locus, como en el ejemplo siguiente: Tayā paccate odano (el arroz es cocinado por ti).
+
+---
+
+**412\. 437\. Amhe uttamo (871).** \[Amhe \+ uttamo, 2\]
+
+**Amhe** payujjamāne pi appayujjamāne pi tulyādhikaraṇe **uttamapuriso** hoti.
+
+Ahaṃ yajāmi, mayaṃ yajāma.
+
+Appayujjamāne pi: Yajāmi, yajāma.
+
+**Tulyādhikaraṇe** ti kimatthaṃ? Mayā ijjate Buddho.
+
+---
+
+Cuando \[se emplea o no se emplea\] “amha” (yo), \[hay\] la primera persona.
+
+Tanto cuando se emplea “amha” (yo) con el mismo locus como cuando no se emplea, hay la primera persona.
+
+---
+
+Ejemplos:
+
+1. **Ahaṃ yajāmi** (yo hago una ofrenda), **mayaṃ yajāma** (nosotros hacemos una ofrenda).
+
+También cuando no se emplea:
+
+1. **Yajāmi** (\[yo\] hago una ofrenda), **yajāma** (\[nosotros\] hacemos una ofrenda).
+
+¿Con qué fin se dice “tulyādhikaraṇe” (que tiene el mismo locus)? Para impedir la operación de esta regla cuando no hay el mismo locus, como en el ejemplo siguiente: Mayā ijjate Buddho (el Buddha es honrado por mí).
+
+---
+
+**413\. 427\. Kāle.** \[Kāle, 1\]
+
+“Kāle” icc etaṃ adhikāratthaṃ veditabbaṃ.
+
+---
+
+En tiempo.
+
+Debe entenderse que “kāle” (en tiempo) es para seguir \[desde 413 hasta 422\].
+
+---
+
+**414\. 428\. Vattamānā paccuppanne (872).** \[Vattamānā \+ paccuppanne, 2\]
+
+**Paccuppanne** kāle **vattamānā**vibhatti hoti. 
+
+Pāṭaliputtaṃ gacchati, Sāvatthiṃ[^7] pavisati.
+
+---
+
+En el \[tiempo\] presente, \[hay\] “vattamānā”.
+
+En el tiempo presente hay la inflexión “vattamānā”.
+
+---
+
+Ejemplos:
+
+1. **Pāṭaliputtaṃ gacchati** (\[él\] va a Pāṭaliputta).  
+2. **Sāvatthiṃ pavisati** (\[él\] entra en Sāvatthī).
+
+---
+
+**415\. 451\. Āṇaty-āsiṭṭhe ’nuttakāle pañcamī (880).** \[Āṇati-āsiṭṭhe \+ ana-uttakāle \+ pañcamī, 3\]
+
+**Āṇatyatthe** ca **āsīsatthe** ca anuttakāle **pañcamī**vibhatti hoti.
+
+Karotu kusalaṃ, sukhaṃ te hotu.
+
+---
+
+En el significado de orden y de bendición, y en tiempo no enunciado, \[hay\] “pañcamī”.
+
+En el significado de orden, en el significado de bendición y en tiempo no enunciado,[^8] hay la inflexión “pañcamī”.
+
+---
+
+Ejemplos:
+
+1. **Karotu kusalaṃ** (que haga mérito).  
+2. **Sukhaṃ te hotu** (que haya felicidad para ti).
+
+---
+
+**416\. 454\. Anumati-parikappatthesu sattamī (881, 883-4).** \[Anumati-parikappa-atthesu \+ sattamī, 2\]
+
+**Anumatyatthe** ca **parikappatthe** ca anuttakāle **sattamī**vibhatti hoti.
+
+Tvaṃ gaccheyyāsi. Kim ahaṃ kareyyāmi?
+
+---
+
+En los significados de consentimiento y de suposición, \[hay\] “sattamī”.
+
+En el significado de consentimiento, en el significado de suposición y en tiempo no enunciado, hay la inflexión “sattamī”.	
+
+---
+
+Ejemplos:
+
+1. **Tvaṃ gaccheyyāsi** (tú irías).  
+2. **Kim ahaṃ kareyyāmi?** (¿qué haría yo?).
+
+---
+
+**417\. 460\. Apaccakkhe parokkhātīte (885).** \[Apaccakkhe \+ parokkhā \+ atīte, 3\]
+
+**Apaccakkhe atīte** kāle **parokkhā**vibhatti hoti.
+
+Supine kila-m-āha. Evaṃ kila porāṇ’ āhu.
+
+---
+
+En \[aquello\] no percibido directamente, en el pasado, \[hay\] “parokkhā”.
+
+En aquello no percibido directamente, en tiempo pasado, hay la inflexión “parokkhā”.
+
+---
+
+Ejemplos:
+
+1. **Supine kila-m-āha** (dicen que dijo en un sueño).  
+2. **Evaṃ kila porāṇ’ āhu** (así, dicen, dijeron los antiguos).
+
+---
+
+**418\. 456\. Hiyyopabhuti[^9] paccakkhe hiyyattanī (886).** \[Hiyyopabhuti \+ paccakkhe \+ hiyyattanī, 3\]
+
+**Hiyyopabhuti[^10] atīte** kāle paccakkhe vā apaccakkhe vā “hiyyattanī”[^11] vibhatti hoti.
+
+So agamā maggaṃ, te agamū maggaṃ.
+
+---
+
+En \[aquello\] percibido directamente, a partir de ayer, \[hay\] “hiyyattanī”.
+
+En el tiempo pasado, a partir de ayer, en aquello percibido directamente o no percibido directamente, hay la inflexión “hiyyattanī”.
+
+---
+
+Ejemplos:
+
+1. **So agamā maggaṃ** (él fue por el camino).  
+2. **Te agamū maggaṃ** (ellos fueron por el camino).
+
+---
+
+**419\. 469\. Samīpe ’jjatanī (887).** \[Samīpe \+ ajjatanī, 2\]
+
+**Ajjappabhuti atīte** kāle paccakkhe vā apaccakkhe vā samīpe **ajjatanī**vibhatti hoti.
+
+So maggaṃ agamī, te maggaṃ agamuṃ.
+
+---
+
+En \[tiempo\] próximo, \[hay\] “ajjatanī”.
+
+En el tiempo pasado, a partir de hoy, en aquello percibido directamente o no percibido directamente, en \[tiempo\] próximo, hay la inflexión “ajjatanī”.
+
+---
+
+Ejemplos:
+
+1. **So maggaṃ agamī** (él fue por el camino).  
+2. **Te maggaṃ agamuṃ** (ellos fueron por el camino).
+
+---
+
+**420\. 471\. Māyoge sabbakāle ca (888).** \[Māyoge \+ sabbakāle \+ ca, 3\]
+
+**Hiyyattanī-ajjatanī** icc etā vibhattiyo yadā **māyogā**,[^12] tadā **sabbakāle** ca honti.
+
+Mā gamā, mā vacā, mā gamī, mā vacī.
+
+**Caggahaṇena** pañcamīvibhatti pi hoti. Mā gacchāhi.
+
+---
+
+En asociación con “mā” y en todo tiempo.
+
+Cuando \[están\] en asociación con “mā”, las inflexiones “hiyyattanī” y “ajjatanī” son también \[empleadas\] en todo tiempo.
+
+---
+
+Ejemplos:
+
+1. **Mā gamā** (no vayas), **mā vacā** (no hables); **mā gamī** (no vayas), **mā vacī** (no hables).
+
+Al tomar “ca”, hay también la inflexión “pañcamī”:
+
+1. **Mā gacchāhi** (no vayas).
+
+---
+
+**421\. 473\. Anāgate bhavissantī (892).** \[Anāgate \+ bhavissantī, 2\]
+
+**Anāgate** kāle **bhavissantī**vibhatti hoti.
+
+So gacchissati, karissati. Te gacchissanti, karissanti.
+
+---
+
+En \[tiempo\] futuro, \[hay\] “bhavissantī”.
+
+En el tiempo futuro hay la inflexión “bhavissantī”.
+
+---
+
+Ejemplos:
+
+1. **So gacchissati** (él irá), **karissati** (hará).  
+2. **Te gacchissanti** (ellos irán), **karissanti** (harán).
+
+---
+
+**422\. 475\. Kriyātipanne ’tīte kālātipatti (895).** \[Kiriyā-atipanne \+ atīte \+ kālātipatti, 3\]
+
+**Kriyātipannamatte atīte** kāle **kālātipatti**vibhatti hoti.
+
+So ce taṃ yānaṃ alabhissā, agacchissā. Te ce taṃ yānaṃ alabhissaṃsu, agacchissaṃsu.
+
+---
+
+En el pasado, en una acción no ocurrida, \[hay\] “kālātipatti”.
+
+En el tiempo pasado, en aquello que consiste sólo en una acción que ha quedado sin realizarse,[^13] hay la inflexión “kālātipatti”.
+
+---
+
+Ejemplos:
+
+1. **So ce taṃ yānaṃ alabhissā, agacchissā** (si él hubiera conseguido ese carruaje, habría ido).  
+2. **Te ce taṃ yānaṃ alabhissaṃsu, agacchissaṃsu** (si ellos hubieran conseguido ese carruaje, habrían ido).
+
+---
+
+**423\. 426\. Vattamānā ti anti, si tha, mi ma; te ante, se vhe, e mhe (896).** \[Vattamānā \+ ti anti, si tha, mi ma, te ante, se vhe, e mhe, 2\]
+
+**Vattamānā** icc esā saññā hoti **ti anti**, **si tha**, **mi ma**, **te ante**, **se vhe**, **e mhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Vattamānā** icc anena kvattho? Vattamānā paccuppanne.
+
+---
+
+**Ti anti, si tha, mi ma; te ante, se vhe, e mhe** son “vattamānā”.
+
+Estas doce voces –**ti anti, si tha, mi ma, te ante, se vhe, e mhe**– reciben el nombre “vattamānā”.
+
+¿Cuál es la utilidad del nombre “vattamānā”? Para el uso del nombre “vattamānā” en el sutta “Vattamānā paccuppanne” (§414).
+
+---
+
+**424\. 450\. Pañcamī tu antu, hi tha, mi ma; taṃ antaṃ, ssu vho, e āmase (897).** \[Pañcamī \+ tu antu, hi tha, mi ma, taṃ antaṃ, ssu vho, e āmase, 2\]
+
+**Pañcamī** icc esā saññā hoti **tu antu**, **hi tha**, **mi ma**, **taṃ antaṃ**, **ssu vho**, **e āmase** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Pañcamī** icc anena kvattho? Āṇatyāsiṭṭhe ’nuttakāle pañcamī.
+
+---
+
+**Tu antu, hi tha, mi ma; taṃ antaṃ, ssu vho, e āmase** son “pañcamī”.
+
+Estas doce voces –**tu antu, hi tha, mi ma, taṃ antaṃ, ssu vho, e āmase**– reciben el nombre “pañcamī”.
+
+¿Cuál es la utilidad del nombre “pañcamī”? Para el uso del nombre “pañcamī” en el sutta “Āṇatyāsiṭṭhe ’nuttakāle pañcamī” (§415).
+
+---
+
+**425\. 453\. Sattamī eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma; etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe (898).** \[Sattamī \+ eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma, etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe, 2\]
+
+**Sattamī** icc esā saññā hoti **eyya eyyuṃ**, **eyyāsi eyyātha**, **eyyāmi eyyāma**, **etha eraṃ**, **etho eyyāvho**, **eyyaṃ eyyāmhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Sattamī** icc anena kvattho? Anumatiparikappatthesu sattamī.
+
+---
+
+**Eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma; etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe** son “sattamī”.
+
+Estas doce voces –**eyya eyyuṃ, eyyāsi eyyātha, eyyāmi eyyāma, etha eraṃ, etho eyyāvho, eyyaṃ eyyāmhe**– reciben el nombre “sattamī”.
+
+¿Cuál es la utilidad del nombre “sattamī”? Para el uso del nombre “sattamī” en el sutta “Anumatiparikappatthesu sattamī” (§416).
+
+---
+
+**426\. 459\. Parokkhā a u, e ttha, aṃ mha;[^14] ttha re, ttho vho, iṃ mhe[^15] (899).** \[Parokkhā \+ a u, e ttha, aṃ mha, ttha re, ttho vho, iṃ mhe, 2\]
+
+**Parokkhā** icc esā saññā hoti **a u**, **e ttha**, **aṃ mha**,[^16] **ttha re**, **ttho vho**, **iṃ mhe[^17]** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Parokkhā** icc anena kvattho? Apaccakkhe parokkhātīte.
+
+---
+
+**A u, e ttha, aṃ mha; ttha re, ttho vho, iṃ mhe** son “parokkhā”.
+
+Estas doce voces –**a u, e ttha, aṃ mha, ttha re, ttho vho, iṃ mhe**– reciben el nombre “parokkhā”.
+
+¿Cuál es la utilidad del nombre “parokkhā”? Para el uso del nombre “parokkhā” en el sutta “Apaccakkhe parokkhātīte” (§417).
+
+---
+
+**427\. 455\. Hiyyattanī ā ū, o ttha, aṃ mhā;[^18] ttha tthuṃ, se vhaṃ, iṃ mhase (900).** \[Hiyyattanī \+ ā ū, o ttha, aṃ mhā, ttha tthuṃ, se vhaṃ, iṃ mhase, 2\]
+
+**Hiyyattanī** icc esā saññā hoti **ā ū**, **o ttha**, **aṃ mhā**,[^19] **ttha tthuṃ**, **se vhaṃ**, **iṃ mhase** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Hiyyattanī** icc anena kvattho? Hiyyopabhuti paccakkhe hiyyattanī.
+
+---
+
+**Ā ū, o ttha, aṃ mhā; ttha tthuṃ, se vhaṃ, iṃ mhase** son “hiyyattanī”.
+
+Estas doce voces –**ā ū, o ttha, aṃ mhā, ttha tthuṃ, se vhaṃ, iṃ mhase**– reciben el nombre “hiyyattanī”.
+
+¿Cuál es la utilidad del nombre “hiyyattanī”? Para el uso del nombre “hiyyattanī” en el sutta “Hiyyopabhuti paccakkhe hiyyattanī” (§418).
+
+---
+
+**428\. 468\. Ajjatanī ī uṃ, o ttha, iṃ mhā; ā ū, se vhaṃ, aṃ mhe (901).** \[Ajjatanī \+ ī uṃ, o ttha, iṃ mhā, ā ū, se vhaṃ, aṃ mhe, 2\]
+
+**Ajjatanī** icc esā saññā hoti **ī uṃ**, **o ttha**, **iṃ mhā**, **ā ū**, **se vhaṃ**, **aṃ mhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Ajjatanī** icc anena kvattho? Samīpe ’jjatanī.
+
+---
+
+**Ī uṃ, o ttha, iṃ mhā; ā ū, se vhaṃ, aṃ mhe** son “ajjatanī”.
+
+Estas doce voces –**ī uṃ, o ttha, iṃ mhā, ā ū, se vhaṃ, aṃ mhe**– reciben el nombre “ajjatanī”.
+
+¿Cuál es la utilidad del nombre “ajjatanī”? Para el uso del nombre “ajjatanī” en el sutta “Samīpe ’jjatanī” (§419).
+
+---
+
+**429\. 472\. Bhavissantī ssati ssanti, ssasi ssatha, ssāmi ssāma; ssate ssante, ssase ssavhe, ssaṃ ssāmhe (902).** \[Bhavissantī \+ ssati ssanti, ssasi ssatha, ssāmi ssāma, ssate ssante, ssase ssavhe, ssaṃ ssāmhe, 2\]
+
+**Bhavissantī** icc esā saññā hoti **ssati ssanti**, **ssasi ssatha**, **ssāmi ssāma**, **ssate ssante**, **ssase ssavhe**, **ssaṃ ssāmhe** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Bhavissantī** icc anena kvattho? Anāgate bhavissantī.
+
+---
+
+**Ssati ssanti, ssasi ssatha, ssāmi ssāma; ssate ssante, ssase ssavhe, ssaṃ ssāmhe** son “bhavissantī”.
+
+Estas doce voces –**ssati ssanti, ssasi ssatha, ssāmi ssāma, ssate ssante, ssase ssavhe, ssaṃ ssāmhe**– reciben el nombre “bhavissantī”.
+
+¿Cuál es la utilidad del nombre “bhavissantī”? Para el uso del nombre “bhavissantī” en el sutta “Anāgate bhavissantī” (§421).
+
+---
+
+**430\. 474\. Kālātipatti ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā;[^20] ssatha ssisu,[^21] ssase ssavhe, ssiṃ[^22] ssāmhase (903).** \[Kālātipatti \+ ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā, ssatha ssisu, ssase ssavhe, ssiṃ ssāmhase, 2\]
+
+**Kālātipatti** icc esā saññā hoti **ssā ssaṃsu**, **sse ssatha**, **ssaṃ ssāmhā**,[^23] **ssatha ssisu**,[^24] **ssase ssavhe**, **ssiṃ[^25]** **ssāmhase** icc etesaṃ **dvādasannaṃ** padānaṃ.
+
+**Kālātipatti** icc anena kvattho? Kriyātipanne ’tīte kālātipatti.
+
+---
+
+**Ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā; ssatha ssisu, ssase ssavhe, ssiṃ ssāmhase** son “kālātipatti”.
+
+Estas doce voces –**ssā ssaṃsu, sse ssatha, ssaṃ ssāmhā, ssatha ssisu, ssase ssavhe, ssiṃ ssāmhase**– reciben el nombre “kālātipatti”.
+
+¿Cuál es la utilidad del nombre “kālātipatti”? Para el uso del nombre “kālātipatti” en el sutta “Kriyātipanne ’tīte kālātipatti” (§422).
+
+---
+
+**431\. 458\. Hiyyattanī-sattamī-pañcamī-vattamānā sabbadhātukaṃ (904).** \[Hiyyattanī- sattamī-pañcamī-vattamānā \+ sabbadhātukaṃ, 2\]
+
+**Hiyyattanādayo catasso** vibhattiyo **sabbadhātuka**saññā honti.
+
+Agamā, gaccheyya, gacchatu, gacchati (M. i, 326).
+
+**Sabbadhātuka** icc anena kvattho? Ikārāgamo asabbadhātukamhi.
+
+---
+
+“Hiyyattanī”, “sattamī”, “pañcamī” y “vattamānā” son “sabbadhātuka”.
+
+Las cuatro inflexiones que empiezan con “hiyyattanī” reciben el nombre “sabbadhātuka”.[^26]
+
+---
+
+Ejemplos:
+
+1. **Agamā** (\[él\] fue), **gaccheyya** (\[él\] iría), **gacchatu** (que \[él\] vaya), **gacchati** (\[él\] va).
+
+¿Cuál es la utilidad del nombre “sabbadhātuka”? Para el uso del nombre “sabbadhātuka” en el sutta “Ikārāgamo asabbadhātukamhi” (§516).
+
+---
+
+**Iti ākhyāta-kappe paṭhamo kaṇḍo**
+
+**Así \[termina\] la primera sección del capítulo de los verbos**
+
+**DUTIYA-KAṆḌA**  
+**SEGUNDA SECCIÓN**
+
+---
+
+**432\. 362\. Dhātu-liṅgehi parā paccayā (905).** \[Dhātuliṅgehi \+ parā \+ paccayā, 3\]
+
+Dhātu-liṅga icc etehi parā paccayā honti.
+
+Karoti, gacchati. Yo koci karoti, taṃ añño “karohi karohi” icc evaṃ bravīti, atha vā karontaṃ payojayati[^27] \= kāreti. Saṃgho pabbatam iva attānam ācarati[^28] \= pabbatāyati. Taḷākaṃ samuddam iva attānam ācarati[^29] \= samuddāyati. Saddo cicciṭam iva attānam ācarati[^30] \= cicciṭāyati (Vin. iii, 320). Vasiṭṭhassa apaccaṃ Vāsiṭṭho (Vin. ii, 11). Evam aññe pi yojetabbā.
+
+---
+
+Los sufijos van tras las raíces y los temas nominales.[^31]
+
+Hay sufijos[^32] tras las raíces (dhātu) y tras los temas nominales (liṅga).
+
+---
+
+Ejemplos:
+
+1. **Karoti** (\[él\] hace), **gacchati** (\[él\] va).  
+2. Yo koci karoti, taṃ añño “karohi karohi” icc evaṃ bravīti, atha vā karontaṃ payojayati \= **kāreti** (alguien hace, y otro le dice “haz, haz”, o bien lo pone a hacer: \[él\] hace hacer).  
+3. Saṃgho pabbatam iva attānam ācarati \= **pabbatāyati** (el Sangha se comporta como una montaña: hace de montaña).  
+4. Taḷākaṃ samuddam iva attānam ācarati \= **samuddāyati** (el lago se comporta como un mar: hace de mar).  
+5. Saddo cicciṭam iva attānam ācarati \= **cicciṭāyati** (el sonido se comporta como un “ci-ci”: chisporrotea).  
+6. Vasiṭṭhassa apaccaṃ **Vāsiṭṭho** (el descendiente de Vasiṭṭha).
+
+Así deben formarse también los demás.
+
+---
+
+**433\. 528\. Tija-gupa-kita-mānehi kha-cha-sā vā (906-9).** \[Tija-gupa-kita-mānehi \+ kha-cha-sā \+ vā, 3\]
+
+**Tija gupa kita māna** icc etehi dhātūhi **kha cha sa** icc ete paccayā honti vā.
+
+Titikkhati (A. ii, 468; Khu. i, 59), jigucchati (Khu. i, 320; M. ii, 87), tikicchati (Khu. vi, 183), vīmaṃsati (A. ii, 304; Khu. ii, 318).
+
+**Vā** ti kimatthaṃ? Tejati, gopati,[^33] māneti.
+
+---
+
+Opcionalmente, tras “tija”, “gupa”, “kita” y “māna”, \[hay\] ‘kha’, ‘cha’ y ‘sa’.
+
+Opcionalmente, tras las raíces “tija” (soportar), “gupa” (sentir aversión), “kita” (curar) y “māna” (investigar), hay los sufijos ‘kha’, ‘cha’ y ‘sa’.
+
+---
+
+Ejemplos:
+
+1. **Titikkhati** (\[él\] soporta), **jigucchati** (\[él\] siente aversión), **tikicchati** (\[él\] cura), **vīmaṃsati** (\[él\] investiga).
+
+Secuencia de **titikkhati**:
+
+1. tija (§457)  
+2. tij (§521)  
+3. tij \+ kha (§433)  
+4. ti \+ tij \+ kha (§458)  
+5. ti \+ tik \+ kha (§473)  
+6. ti \+ tik \+ kha \+ ti (§414) \= **titikkhati** (§11)
+
+Secuencia de **jigucchati**:
+
+1. gupa (§457)  
+2. gup (§521)  
+3. gup \+ cha (§433)  
+4. gu \+ gup \+ cha (§458)  
+5. gi \+ gup \+ cha  
+6. ji \+ gup \+ cha  
+7. ji \+ guc \+ cha (§472)  
+8. ji \+ guc \+ cha \+ ti (§414) \= **jigucchati** (§11)
+
+Secuencia de **tikicchati**:
+
+1. kita (§457)  
+2. kit (§521)  
+3. kit \+ cha (§433)  
+4. ki \+ kit \+ cha (§458)  
+5. ta \+ kit \+ cha  
+6. ti \+ kit \+ cha  
+7. ti \+ kic \+ cha (§472)  
+8. ti \+ kic \+ cha \+ ti (§414) \= **tikicchati** (§11)
+
+Secuencia de **vīmaṃsati**:
+
+1. māna (§457)  
+2. mān (§521)  
+3. mān \+ sa (§433)  
+4. mā \+ mān \+ sa (§458)  
+5. mī \+ mān \+ sa  
+6. vī \+ mān \+ sa  
+7. vī \+ maṃ \+ sa  
+8. vī \+ maṃ \+ sa \+ ti (§414) \= **vīmaṃsati** (§11)
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir excepciones a la regla, como en los ejemplos siguientes: **tejati** (\[él\] afila), **gopati** (\[él\] protege), **māneti** (\[él\] honra).
+
+---
+
+**434\. 534\. Bhuja-ghasa-hara-su-pādīhi tumicchatthesu[^34] (910).** \[Bhuja-ghasa-hara-su- pā-ādīhi \+ tuṃ-icchā-atthesu, 2\]
+
+**Bhuja ghasa hara su pā** icc evamādīhi dhātūhi **tumicchatthesu kha cha sa** icc ete paccayā honti vā.
+
+Bhottum icchati \= bubhukkhati. Ghasitum icchati \= jighacchati (Khu. i, 43). Haritum icchati \= jigīsati (Khu. v, 359). Sotum icchati \= sussusati (D. i, 220; A. i, 73). Pātum icchati \= pivāsati.
+
+**Vā** ti kimatthaṃ? Bhottum icchati.
+
+**Tumicchatthesū** ti kimatthaṃ? Bhuñjati (Vin. ii, 97).
+
+---
+
+Tras “bhuja”, “ghasa”, “hara”, “su” y “pā”, en los significados de querer \[hacer algo\].
+
+Opcionalmente, tras las raíces “bhuja” (engullir), “ghasa” (comer), “hara” (llevar, tomar), “su” (oír) y “pā” (beber), en los significados de querer \[hacer algo\], hay los sufijos ‘kha’, ‘cha’ y ‘sa’.
+
+---
+
+Ejemplos:
+
+1. Bhottum icchati \= **bubhukkhati** (quiere comer).  
+2. Ghasitum icchati \= **jighacchati** (quiere comer).  
+3. Haritum icchati \= **jigīsati** (quiere llevar).  
+4. Sotum icchati \= **sussusati** (quiere oír).  
+5. Pātum icchati \= **pivāsati** (quiere beber).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a la regla, como en el ejemplo siguiente: **bhottum icchati** (quiere comer).
+
+¿Con qué fin se dice “tumicchatthesu” (en los significados de querer \[hacer algo\])? Para impedir la operación de esta regla cuando no aplican los significados de querer \[hacer algo\], como en el ejemplo siguiente: **bhuñjati** (\[él\] come).
+
+---
+
+**435\. 536\. Āya nāmato kattūpamānā-d-ācāre (911).** \[Āya \+ nāmato \+ kattu-upamānā \+ ācāre, 4\]
+
+Nāmato kattūpamānā ācāratthe **āya**paccayo hoti.
+
+Saṃgho pabbatam iva attānam ācarati \= pabbatāyati. Taḷākaṃ samuddam iva attānam ācarati \= samuddāyati. Saddo cicciṭam iva attānam ācarati \= cicciṭāyati (Vin. iii, 320; S. i, 171). Evaṃ aññe pi yojetabbā.
+
+---
+
+\[Hay\] ‘āya’ tras un nombre, en comparación con el agente, en \[el significado de\] comportamiento.
+
+Tras un nombre, hay el sufijo ‘āya’ en comparación con el agente, en el significado de comportamiento.
+
+---
+
+Ejemplos:
+
+1. Saṃgho pabbatam iva attānam ācarati \= **pabbatāyati** (el Sangha se comporta sí mismo como una montaña: hace de montaña).  
+2. Taḷākaṃ samuddam iva attānam ācarati \= **samuddāyati** (el lago se comporta sí mismo como un mar: hace de mar).  
+3. Saddo cicciṭam iva attānam ācarati \= **cicciṭāyati** (el sonido se comporta sí mismo como un “ci-ci”: chisporrotea).
+
+Así deben formarse también los demás.
+
+---
+
+**436\. 537\. Īy’ ūpamānā ca (912).** \[Īya \+ upamānā \+ ca, 3\]
+
+Nāmato upamānā ācāratthe ca **īya**paccayo hoti.
+
+Achattaṃ chattam iva ācarati[^35] \= chattīyati. Aputtaṃ puttam iva ācarati[^36] \= puttīyati.
+
+**Upamānā** ti kimatthaṃ? Dhammaṃ ācarati.[^37]
+
+**Ācāre** ti kimatthaṃ? Achattaṃ chattam iva rakkhati. Evaṃ aññe pi yojetabbā.
+
+---
+
+Y \[hay\] ‘īya’ en comparación.
+
+Y tras un nombre, hay el sufijo ‘īya’ en comparación, en el significado de comportamiento.
+
+---
+
+Ejemplos:
+
+1. Achattaṃ chattam iva ācarati \= **chattīyati** (trata lo que no es una sombrilla como si fuera una sombrilla).  
+2. Aputtaṃ puttam iva ācarati \= **puttīyati** (trata a quien no es hijo como si fuera un hijo).
+
+¿Con qué fin se dice “upamāna” (comparación)? Para impedir la operación de esta regla cuando no hay comparación, como en el ejemplo siguiente: **Dhammaṃ ācarati** (practica el Dhamma).
+
+¿Con qué fin se dice “ācāra” (comportamiento)? Para impedir la operación de esta regla cuando no hay \[un verbo que signifique\] comportamiento, como en el ejemplo siguiente: **achattaṃ chattam iva rakkhati** (protege lo que no es una sombrilla como si fuera una sombrilla).
+
+Así deben formarse también los demás.
+
+---
+
+**437\. 538\. Nāmamhā ’tticchatthe (913).** \[Nāmamhā \+ atta-icchā-atthe, 2\]
+
+Nāmamhā attano icchatthe **īya**paccayo hoti.
+
+Attano pattam icchati \= pattīyati. Evaṃ vatthīyati, parikkhārīyati, cīvarīyati, dhanīyati, ghaṭīyati (DhA. i, 30).
+
+**Atticchatthe** ti kimatthaṃ? Aññassa pattam icchati. Evaṃ aññe pi yojetabbā.
+
+---
+
+Tras un nombre, en el significado de desear para uno mismo.
+
+Tras un nombre hay el sufijo ‘īya’ en el significado de desear para uno mismo.
+
+---
+
+Ejemplos:
+
+1. Attano pattam icchati \= **pattīyati** (desea el cuenco para sí mismo).
+
+Así:
+
+1. **Vatthīyati** (desea la tela para sí mismo), **parikkhārīyati** (desea los requisitos para sí mismo), **cīvarīyati** (desea el hábito para sí mismo), **dhanīyati** (desea la riqueza para sí mismo), **ghaṭīyati** (desea el cántaro para sí mismo).
+
+¿Con qué fin se dice “atticchatthe” (en el significado de desear para uno mismo)? Para impedir la operación de esta regla cuando no aplica el significado de desear para uno mismo, como en el ejemplo siguiente: **aññassa pattam icchati** (desea el cuenco para otro).
+
+Así deben formarse también los demás.
+
+---
+
+**438\. 540\. Dhātūhi ṇe-ṇaya-ṇāpe-ṇāpayā kāritāni hetvatthe (914).** \[Dhātūhi \+ ṇe, ṇaya, ṇāpe, ṇāpayā \+ kāritāni \+ hetu-atthe, 4\]
+
+Sabbehi dhātūhi **ṇe ṇaya ṇāpe ṇāpaya** icc ete paccayā honti **kārita**saññā ca hetvatthe.
+
+Yo koci karoti, taṃ añño “karohi karohi” icc evaṃ bravīti,[^38] atha vā karontaṃ payojayati \= kāreti (M. ii, 332), kārayati, kārāpeti (Vin. i, 240), kārāpayati. Ye keci karonti, te aññe “karotha karotha” icc evaṃ bruvanti[^39] \= kārenti (M. i, 121), kārayanti, kārāpenti (Vin. i, 121), kārāpayanti. Yo koci pacati, taṃ añño “pacāhi pacāhi” icc evaṃ bravīti,[^40] atha vā pacantaṃ payojayati \= pāceti, pācayati, pācāpeti, pācāpayati. Ye keci pacanti, te aññe “pacatha pacatha” icc evaṃ bruvanti[^41] \= pācenti, pācayanti, pācāpenti, pācāpayanti. Evaṃ bhaṇeti, bhaṇayati, bhaṇāpeti, bhaṇāpayati. Bhaṇenti, bhaṇayanti, bhaṇāpenti, bhaṇāpayanti. Tatha-r-iva aññe pi yojetabbā.
+
+**Hetvatthe** ti kimatthaṃ? Karoti (M. i, 10), pacati.
+
+**Atthaggahaṇena ala**paccayo hoti. Jotalati.
+
+---
+
+Tras las raíces, en el significado de causa, \[hay\] ‘ṇe’, ‘ṇaya’, ‘ṇāpe’ y ‘ṇāpaya’, \[que se llaman\] “kārita” (causativo).
+
+Tras todas las raíces, en el significado de causa, hay los sufijos ‘ṇe’, ‘ṇaya’, ‘ṇāpe’ y ‘ṇāpaya’, y reciben el nombre “kārita” (causativo).
+
+---
+
+Ejemplos:
+
+1. Yo koci karoti, taṃ añño “karohi karohi” icc evaṃ bravīti, atha vā karontaṃ payojayati \= **kāreti**, **kārayati**, **kārāpeti**, **kārāpayati** (alguien hace, y otro le dice “haz, haz”, o bien lo incita a hacer: \[él\] le hace hacer).  
+2. Ye keci karonti, te aññe “karotha karotha” icc evaṃ bruvanti \= **kārenti**, **kārayanti**, **kārāpenti**, **kārāpayanti** (unos hacen, y otros les dicen “haced, haced”: \[ellos\] les hacen hacer).  
+3. Yo koci pacati, taṃ añño “pacāhi pacāhi” icc evaṃ bravīti, atha vā pacantaṃ payojayati \= **pāceti**, **pācayati**, **pācāpeti**, **pācāpayati** (alguien cocina, y otro le dice “cocina, cocina”, o bien lo incita a cocinar: \[él\] le hace cocinar).  
+4. Ye keci pacanti, te aññe “pacatha pacatha” icc evaṃ bruvanti \= **pācenti**, **pācayanti**, **pācāpenti**, **pācāpayanti** (unos cocinan, y otros les dicen “cocinad, cocinad”: \[ellos\] les hacen cocinar).
+
+Así:
+
+1. **Bhaṇeti**, **bhaṇayati**, **bhaṇāpeti**, **bhaṇāpayati** (\[él\] hace recitar); **bhaṇenti**, **bhaṇayanti**, **bhaṇāpenti**, **bhaṇāpayanti** (\[ellos\] hacen recitar).
+
+De igual modo deben formarse también los demás.
+
+¿Con qué fin se dice “hetvatthe” (en el significado de causa)? Para impedir la operación de esta regla cuando no aplica el significado de causa, como en los ejemplos siguientes: **karoti** (\[él\] hace), **pacati** (\[él\] cocina).
+
+Al tomar “attha”, hay también el sufijo ‘ala’: **jotalati** (\[él\] hace brillar).
+
+---
+
+**439\. 539\. Dhāturūpe nāmasmā ṇayo ca (919).** \[Dhāturūpe \+ nāmasmā \+ ṇayo \+ ca, 4\]
+
+Tasmā nāmasmā **ṇaya**paccayo hoti **kārita**sañño ca dhāturūpe sati.
+
+Hatthinā atikkamati maggaṃ[^42] \= atihatthayati. Vīṇāya upagāyati gītaṃ[^43] \= upavīṇayati. Daḷhaṃ karoti vīriyaṃ[^44] \= daḷhayati. Visuddhā hoti ratti[^45] \= visuddhayati.
+
+**Caggahaṇena** **āra āla** icc ete paccayā honti. Santaṃ[^46] karoti \= santārati;[^47] upakkamaṃ karoti \= upakkamālati.
+
+---
+
+Y \[hay\] ‘ṇaya’ tras un nombre, cuando tiene forma de raíz.
+
+Y tras ese nombre, cuando tiene forma de raíz, hay el sufijo ‘ṇaya’, que recibe el nombre “kārita” (causativo).
+
+---
+
+Ejemplos:
+
+1. Hatthinā atikkamati maggaṃ \= **atihatthayati** (cruza el camino en elefante).  
+2. Vīṇāya upagāyati gītaṃ \= **upavīṇayati** (canta una canción con el arpa).  
+3. Daḷhaṃ karoti vīriyaṃ \= **daḷhayati** (hace firme el esfuerzo).  
+4. Visuddhā hoti ratti \= **visuddhayati** (la noche es clara).
+
+Al tomar “ca”, hay también los sufijos ‘āra’ y ‘āla’:
+
+1. Santaṃ karoti \= **santārati** (apacigua).  
+2. Upakkamaṃ karoti \= **upakkamālati** (emprende).
+
+---
+
+**440\. 445\. Bhāva-kammesu yo (920).** \[Bhāvakammesu \+ yo, 2\]
+
+Sabbehi dhātūhi bhāva-kammesu **ya**paccayo hoti.
+
+Ṭhīyate, bujjhate, paccate, labbhate, karīyate, yujjate,[^48] uccate.
+
+**Bhāva-kammesū** ti kimatthaṃ? Karoti, pacati, paṭhati.
+
+---
+
+\[Hay\] ‘ya’ en \[el sentido\] impersonal (bhāva) y pasivo (kamma).
+
+Tras todas las raíces, en \[el sentido\] impersonal y pasivo, hay el sufijo ‘ya’.[^49]
+
+---
+
+Ejemplos:
+
+1. **Ṭhīyate** (la acción de estar en pie), **bujjhate** (la acción de conocer, o es conocido), **paccate** (la acción de cocinar, o es cocinado), **labbhate** (la acción de obtener, o es obtenido), **karīyate** (la acción de hacer, o es hecho), **yujjate** (la acción de uncir, o es uncido), **uccate** (la acción de decir, o es dicho).
+
+¿Con qué fin se dice “bhāva-kammesu” (en el impersonal y el pasivo)? Para impedir la operación de esta regla cuando no hay ni impersonal ni pasivo, como en los ejemplos siguientes: **karoti** (\[él\] hace), **pacati** (\[él\] cocina), **paṭhati** (\[él\] recita).
+
+---
+
+**441\. 447\. Tassa cavagga-yakāra-vakārattaṃ sadhātvantassa (921).** \[Tassa \+ cavagga-yakāra-vakārattaṃ \+ sa-dhātvantassa, 3\]
+
+Tassa **ya**paccayassa **ca**vagga-**ya**kāra-**va**kārattaṃ hoti dhātūnaṃ antena[^50] saha yathāsambhavaṃ.
+
+Vuccate, vuccante, uccate, uccante, paccate, paccante. Majjate, majjante, yujjate, yujjante. Bujjhate, bujjhante, kujjhate, kujjhante, ujjhate, ujjhante. Haññate, haññante. Kayyate, kayyante. Dibbate, dibbante.
+
+---
+
+Ese \[‘ya’\], junto con el final de la raíz, \[cambia\] al estado de las letras del grupo ‘ca’, de ‘y’ y de ‘v’.
+
+Ese sufijo ‘ya’, junto con el final de las raíces, cambia –según los casos– al estado de las letras del grupo ‘ca’, de ‘y’ y de ‘v’.
+
+---
+
+Ejemplos:
+
+1. **Vuccate**,[^51] **vuccante**; **uccate**, **uccante** (es dicho; son dichos); **paccate**, **paccante** (es cocinado; son cocinados).  
+2. **Majjate**,[^52] **majjante** (es frotado; son frotados); **yujjate**, **yujjante** (es uncido; son uncidos).  
+3. **Bujjhate**,[^53] **bujjhante** (es conocido; son conocidos); **kujjhate**, **kujjhante** (se enoja; se enojan); **ujjhate**, **ujjhante** (es abandonado; son abandonados).  
+4. **Haññate**,[^54] **haññante** (es matado; son matados).  
+5. **Kayyate**, **kayyante** (es hecho; son hechos).  
+6. **Dibbate**, **dibbante** (es jugado; son jugados).
+
+---
+
+**442\. 448\. Ivaṇṇāgamo vā (922).** \[Ivaṇṇa-āgamo \+ vā, 2\]
+
+Sabbehi dhātūhi **ya**mhi paccaye[^55] pare **i**vaṇṇāgamo hoti vā.
+
+Karīyate, karīyati (M. ii, 101), gacchīyate, gacchīyati.
+
+**Vā** ti kimatthaṃ? Kayyate.
+
+---
+
+Opcionalmente \[hay\] inserción de la ivaṇṇa \[‘i’ o ‘ī’\].
+
+Opcionalmente, tras todas las raíces, cuando sigue el sufijo ‘ya’,[^56] hay inserción de la ivaṇṇa \[‘i’ o ‘ī’\].
+
+---
+
+Ejemplos:
+
+1. **Karīyate**, **karīyati** (el estado de hacer, o es hecho); **gacchīyate**, **gacchīyati** (el estado de ir, o es ido).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **kayyate** (es hecho).
+
+---
+
+**443\. 449\. Pubbarūpañ ca (923).** \[Pubbarūpaṃ \+ ca, 2\]
+
+Sabbehi dhātūhi **ya**paccayo pubbarūpam āpajjate vā.
+
+Vuḍḍhate, phallate, dammate, sakkate, labbhate, dissate.[^57]
+
+---
+
+Y \[se convierte en\] la forma anterior.
+
+Opcionalmente, tras todas las raíces, el sufijo ‘ya’ se convierte en la forma anterior.
+
+---
+
+Ejemplos:
+
+1. **Vuḍḍhate[^58]** (crece), **phallate** (se parte), **dammate** (el estado de domar, o es domado), **sakkate** (es honrado), **labbhate** (el estado de obtener, o es obtenido), **dissate** (el estado de ver, o es visto).
+
+---
+
+**444\. 511\. Tathā[^59] kattari ca (924).** \[Tathā \+ kattari \+ ca, 3\]
+
+Yathā heṭṭhā bhāva-kammesu **ya**paccayassa ādeso hoti tathā kattari pi[^60] **ya**paccayassa ādeso kātabbo.
+
+Bujjhati (JA. i, 403), vijjhati, maññati (Khu. i, 22), sibbati (Vin. ii, 86).
+
+---
+
+Y así también en la voz activa.
+
+Así como arriba, en \[el sentido\] impersonal y pasivo, hay sustitución del sufijo ‘ya’, del mismo modo también en la voz activa debe hacerse la sustitución del sufijo ‘ya’.[^61]
+
+---
+
+Ejemplos:
+
+1. **Bujjhati** (\[él\] conoce), **vijjhati** (\[él\] perfora), **maññati** (\[él\] piensa), **sibbati** (\[él\] cose).
+
+---
+
+**445\. 433\. Bhūvādito a (925).** \[Bhū-ādito \+ a, 2\]
+
+**Bhū** icc evamādito dhātugaṇato **a**paccayo hoti kattari.
+
+Bhavati (Khu. i, 67), paṭhati, pacati, jayati.
+
+---
+
+Tras “bhū” y otros, \[hay\] ‘a’.[^62]
+
+Tras el grupo de raíces que empieza con “bhū”, hay el sufijo ‘a’ en la voz activa.
+
+---
+
+Ejemplos:
+
+1. **Bhavati** (\[él\] es), **paṭhati** (\[él\] recita), **pacati** (\[él\] cocina), **jayati** (\[él\] vence).
+
+Secuencia de **bhavati**:
+
+1. **bhū** (§457)  
+2. bhū \+ **ti** (§414)  
+3. bhū \+ **a** \+ ti (§445)  
+4. bh**o** \+ a \+ ti (§485)  
+5. bh**ava** \+ a \+ ti (§513)  
+6. bhav \+ a \+ ti (§83)  
+7. **bhavati** (§11)
+
+Secuencia de **pacati**:
+
+1. **paca** (§457)  
+2. paca \+ **ti** (§414)  
+3. pac (§521)  
+4. pac \+ **a** \+ ti (§445)  
+5. **pacati** (§11)
+
+---
+
+**446\. 509\. Rudhādito niggahitapubbañ ca (926).** \[Rudha-ādito \+ niggahita-pubbaṃ \+ ca, 3\]
+
+**Rudha** icc evamādito dhātugaṇato **a**paccayo hoti kattari, pubbe niggahitāgamo hoti.
+
+Rundhati (SnA. i, 161), chindati, bhindati.
+
+**Caggahaṇena** **i ī e o** icc ete paccayā honti niggahitapubbañ ca.
+
+Rundhiti, rundhīti, rundheti, rundhoti, sumbhoti, parisumbhoti.
+
+---
+
+Y tras “rudha” y otros, \[hay\] la niggahita delante.
+
+Tras el grupo de raíces que empieza con “rudha”, hay el sufijo ‘a’ en la voz activa, y delante hay inserción de la niggahita.
+
+---
+
+Ejemplos:
+
+1. **Rundhati** (\[él\] obstruye), **chindati** (\[él\] corta), **bhindati** (\[él\] rompe).
+
+Al tomar “ca”, hay también los sufijos ‘i’, ‘ī’, ‘e’ y ‘o’, y la niggahita delante:
+
+1. **Rundhiti**, **rundhīti**, **rundheti**, **rundhoti** (\[él\] obstruye); **sumbhoti**, **parisumbhoti** (\[él\] golpea).
+
+Secuencia de **rundhati** (\[él\] obstruye):
+
+1. **rudha** (§457)  
+2. rudh (§521)  
+3. rudh \+ **ti** (§414)  
+4. rudh \+ **a** \+ ti (§445)  
+5. ru**ṃ**dh \+ a \+ ti (§446)  
+6. ru**n**dh \+ a \+ ti (§31)  
+7. **rundhati** (§11)
+
+---
+
+**447\. 510\. Divādito yo (928).** \[Divu-ādito \+ yo, 2\]
+
+**Divu** icc evamādito dhātugaṇato **ya**paccayo hoti kattari.
+
+Dibbati (VinA. i, 6), sibbati (Vin. ii, 86), yujjhati, vijjhati, bujjhati (Khu. i, 33).
+
+---
+
+Tras “divu” y otros, \[hay\] ‘ya’.
+
+Tras el grupo de raíces que empieza con “divu”, hay el sufijo ‘ya’ en la voz activa.
+
+---
+
+Ejemplos:
+
+1. **Dibbati** (\[él\] juega, o brilla), **sibbati** (\[él\] cose), **yujjhati** (\[él\] combate), **vijjhati** (\[él\] perfora), **bujjhati** (\[él\] conoce).
+
+Secuencia de **dibbati**:
+
+1. **divu** (§457)  
+2. div (§521)  
+3. div \+ **ti** (§414)  
+4. div \+ **ya** \+ ti (§447)  
+5. div \+ **~~y~~**a \+ ti (§444)  
+6. div**v** \+ a \+ ti (§28)  
+7. di**bb** \+ a \+ ti (§20)  
+8. **dibbati** (§11)
+
+---
+
+**448\. 512\. Svādito ṇu-ṇā-uṇā ca (929).** \[Su-ādito \+ ṇu-ṇā-uṇā \+ ca, 3\]
+
+**Su** icc evamādito dhātugaṇato **ṇu** **ṇā uṇā** icc ete paccayā honti kattari.
+
+Abhisuṇoti, abhisuṇāti; saṃvuṇoti, saṃvuṇāti; āvuṇoti, āvuṇāti; pāpuṇoti,[^63] pāpuṇāti (M. ii, 99).
+
+---
+
+Y tras “su” y otros, \[hay\] ‘ṇu’, ‘ṇā’ y ‘uṇā’.
+
+Tras el grupo de raíces que empieza con “su”, hay los sufijos ‘ṇu’, ‘ṇā’ y ‘uṇā’ en la voz activa.
+
+---
+
+Ejemplos:
+
+1. **Abhisuṇoti**, **abhisuṇāti** (\[él\] oye).  
+2. **Saṃvuṇoti**, **saṃvuṇāti** (\[él\] contiene).  
+3. **Āvuṇoti**, **āvuṇāti** (\[él\] ensarta).  
+4. **Pāpuṇoti**, **pāpuṇāti** (\[él\] alcanza).
+
+Secuencia de **suṇoti** (\[él\] oye):
+
+1. **su** (§457)  
+2. su \+ **ti** (§414)  
+3. su \+ **ṇu** \+ ti (§448)  
+4. su \+ ṇ**o** \+ ti (§485)  
+5. **suṇoti** (§11)
+
+Secuencia de **suṇāti** (\[él\] oye):
+
+1. **su** (§457)  
+2. su \+ **ti** (§414)  
+3. su \+ **ṇā** \+ ti (§448)  
+4. **suṇāti** (§448)
+
+---
+
+**449\. 513\. Kiyādito nā (930).** \[Kī-ādito \+ nā, 2\]
+
+**Kī** icc evamādito dhātugaṇato **nā**paccayo hoti kattari.
+
+Kiṇāti, jināti (Khu. i, 64), dhunāti, munāti, lunāti, punāti.[^64]
+
+---
+
+Tras “kī” y otros, \[hay\] ‘nā’.
+
+Tras el grupo de raíces que empieza con “kī”, hay el sufijo ‘nā’ en la voz activa.
+
+---
+
+Ejemplos:
+
+1. **Kiṇāti** (\[él\] compra), **jināti** (\[él\] vence), **dhunāti** (\[él\] sacude), **munāti** (\[él\] conoce), **lunāti** (\[él\] siega), **punāti** (\[él\] limpia).
+
+Secuencia de **kiṇāti**:
+
+1. **kī** (§457)  
+2. kī \+ **ti** (§414)  
+3. kī \+ **nā** \+ ti (§449)  
+4. k**i** \+ nā \+ ti (§517)  
+5. ki \+ **ṇ**ā \+ ti (§449)   
+6. **kiṇāti** (§11)
+
+---
+
+**450\. 517\. Gahādito ppa-ṇhā (931).** \[Gaha-ādito \+ ppa-ṇhā, 2\]
+
+**Gaha** icc evamādito dhātugaṇato **ppa ṇhā** icc ete paccayā honti kattari.
+
+Gheppati, gaṇhāti (VinA. i, 20).
+
+---
+
+Tras “gaha” y otros, \[hay\] ‘ppa’ y ‘ṇhā’.
+
+Tras el grupo de raíces que empieza con “gaha”, hay los sufijos ‘ppa’ y ‘ṇhā’ en la voz activa.
+
+---
+
+Ejemplos:
+
+1. **Gheppati**, **gaṇhāti** (\[él\] toma).
+
+Secuencia de **gaṇhāti**:
+
+1. **gaha** (§457)  
+2. gaha \+ **ti** (§414)  
+3. gaha \+ **ṇhā** \+ ti (§450)  
+4. ga \+ ṇhā \+ ti (§490)  
+5. **gaṇhāti** (§11)
+
+---
+
+**451\. 520\. Tanādito o-yirā (932).** \[Tanu-ādito \+ o-yirā, 2\]
+
+**Tanu** icc evamādito dhātugaṇato **o yira** icc ete paccayā honti kattari.
+
+Tanoti, tanohi; karoti (M. i, 10), karohi (Khu. ii, 172); kayirati, kayirāhi.
+
+---
+
+Tras “tanu” y otros, \[hay\] ‘o’ e ‘yira’.
+
+Tras el grupo de raíces que empieza con “tanu”, hay los sufijos ‘o’ e ‘yira’ en la voz activa.
+
+---
+
+Ejemplos:
+
+1. **Tanoti** (\[él\] extiende), **tanohi** (extiende \[tú\]).  
+2. **Karoti** (\[él\] hace), **karohi** (haz \[tú\]).  
+3. **Kayirati** (\[él\] hace), **kayirāhi** (haz \[tú\]).
+
+Secuencia de **tanoti**:
+
+1. **tanu** (§457)  
+2. tan (§521)  
+3. tan \+ **ti** (§414)  
+4. tan \+ **o** \+ ti (§451)  
+5. **tanoti** (§11)
+
+---
+
+**452\. 525\. Curādito ṇe-ṇayā (933).** \[Cura-ādito \+ ṇe-ṇayā, 2\]
+
+**Cura** icc evamādito dhātugaṇato **ṇe ṇaya** icc ete paccayā honti kattari, kāritasaññā ca.
+
+Coreti, corayati; cinteti (JA. i, 227), cintayati; manteti, mantayati.
+
+---
+
+Tras “cura” y otros, \[hay\] ‘ṇe’ y ‘ṇaya’.
+
+Tras el grupo de raíces que empieza con “cura”, hay los sufijos ‘ṇe’ y ‘ṇaya’ en la voz activa, y reciben el nombre “kārita”.[^65]
+
+---
+
+Ejemplos:
+
+1. **Coreti**, **corayati** (\[él\] roba).  
+2. **Cinteti**, **cintayati** (\[él\] piensa).  
+3. **Manteti**, **mantayati** (\[él\] delibera/consulta).
+
+Secuencia de **coreti**:
+
+1. **cura** (§457)  
+2. cur (§521)  
+3. cur \+ **ti** (§414)  
+4. cur \+ **ṇe** \+ ti (§452)  
+5. cur \+ **~~ṇ~~**e \+ ti (§523)  
+6. c**o**r \+ e \+ ti (§483)  
+7. **coreti** (§11)
+
+Secuencia de **corayati**:
+
+1. **cura** (§457)  
+2. cur (§521)  
+3. cur \+ **ti** (§414)  
+4. cur \+ **ṇaya** \+ ti (§452)  
+5. cur \+ **~~ṇ~~**aya \+ ti (§523)  
+6. c**o**r \+ aya \+ ti (§483)  
+7. **corayati** (§11)
+
+---
+
+**453\. 444\. Attanopadāni bhāve ca kammani (934).** \[Attanopadāni \+ bhāve \+ ca \+ kammani, 4\]
+
+Bhāve ca kammani ca attanopadāni honti.
+
+Uccate, uccante; majjate, majjante; yujjate, yujjante; kujjhate, kujjhante; labbhate, labbhante; kayyate, kayyante.
+
+---
+
+Y en el impersonal y pasivo, \[hay las inflexiones\] “attanopada” (medias).
+
+En el impersonal y en el pasivo hay \[las inflexiones\] “attanopada” (medias).
+
+---
+
+Ejemplos:
+
+1. **Uccate**,[^66] **uccante** (el estado de decir o es dicho; el estado de decir o son dichos).  
+2. **Majjate**, **majjante** (es frotado, son frotados).  
+3. **Yujjate**, **yujjante** (es uncido, son uncidos).  
+4. **Kujjhate**, **kujjhante** (se enoja, se enojan).  
+5. **Labbhate**, **labbhante** (el estado de obtener o es obtenido; el estado de obtener o son obtenidos).  
+6. **Kayyate**, **kayyante** (el estado de hacer o es hecho; el estado de hacer o son hechos).
+
+---
+
+**454\. 440\. Kattari ca (935).** \[Kattari \+ ca, 2\]
+
+Kattari ca attanopadāni honti.
+
+Maññate, rocate, socate, bujjhate, jāyate (Khu. i, 45).
+
+---
+
+Y en la voz activa.
+
+Y en la voz activa hay las \[inflexiones\] “attanopada” (medias).
+
+---
+
+Ejemplos:
+
+1. **Maññate**[^67] (\[él\] piensa), **rocate** (\[él\] brilla), **socate** (\[él\] se aflige), **bujjhate** (\[él\] conoce), **jāyate** (\[él\] nace).
+
+---
+
+**455\. 530\. Dhātuppaccayehi vibhattiyo (936).** \[Dhātuppaccayehi \+ vibhattiyo, 2\]
+
+Dhātuniddiṭṭhehi paccayehi **kh**ādi-**kārita**ntehi vibhattiyo honti.
+
+Titikkhati (Khu. i, 59), jigucchati (M. ii, 87), vīmaṃsati (A. ii, 304), samuddāyati, puttīyati, kāreti (M. ii, 332), pāceti.
+
+---
+
+Tras las raíces con sufijos, \[hay\] inflexiones.[^68]
+
+Tras las raíces con los sufijos que indican su significado –los que empiezan con ‘kha’ y terminan en “kārita”–, hay inflexiones.
+
+---
+
+Ejemplos:
+
+1. **Titikkhati** (\[él\] soporta), **jigucchati** (\[él\] siente aversión), **vīmaṃsati** (\[él\] investiga), **samuddāyati** (\[él\] hace de mar), **puttīyati** (\[él\] trata como a un hijo), **kāreti** (\[él\] hace hacer), **pāceti** (\[él\] hace cocinar).
+
+---
+
+**456\. 430\. Kattari parassapadaṃ (937).** \[Kattari \+ parassapadaṃ, 2\]
+
+Kattari parassapadaṃ hoti.
+
+Karoti (Khu. vii, 83), pacati, paṭhati, gacchati (M. i, 326).
+
+---
+
+En la voz activa \[hay\] “parassapada”.
+
+En la voz activa hay \[la inflexión\] “parassapada”.
+
+---
+
+Ejemplos:
+
+1. **Karoti** (\[él\] hace), **pacati** (\[él\] cocina), **paṭhati** (\[él\] recita), **gacchati** (\[él\] va).
+
+---
+
+**457\. 424\. Bhūvādayo dhātavo (938).** \[Bhū-ādayo \+ dhātavo, 2\]
+
+**Bhū** icc evamādayo ye saddagaṇā, te dhātusaññā honti.
+
+Bhavati (M. ii, 338), bhavanti (M. ii, 335), carati, caranti (M. i, 129), pacati, pacanti, cintayati, cintayanti, hoti (M. i, 10), honti (M. i, 10), gacchati (M. iii, 338), gacchanti (A. ii, 5).
+
+---
+
+“Bhū” y otros son raíces.
+
+Aquellos grupos de voces que empiezan con “bhū” reciben el nombre “dhātu” (raíz).
+
+---
+
+Ejemplos:
+
+1. **Bhavati**, **bhavanti** (\[él\] es, \[ellos\] son).  
+2. **Carati**, **caranti** (\[él\] anda, \[ellos\] andan).  
+3. **Pacati**, **pacanti** (\[él\] cocina, \[ellos\] cocinan).  
+4. **Cintayati**, **cintayanti** (\[él\] piensa, \[ellos\] piensan).  
+5. **Hoti**, **honti** (\[él\] es, \[ellos\] son).  
+6. **Gacchati**, **gacchanti** (\[él\] va, \[ellos\] van).
+
+---
+
+**Iti ākhyāta-kappe dutiyo kaṇḍo**
+
+**Así \[termina\] la segunda sección del capítulo de los verbos**
+
+**TATIYA-KAṆḌA**  
+**TERCERA SECCIÓN**
+
+---
+
+**458\. 461\. Kvac’ ādivaṇṇānam ekassarānaṃ dvebhāvo (939).** \[Kvaci \+ ādivaṇṇānaṃ \+ ekassarānaṃ \+ dvebhāvo, 4\]
+
+Ādibhūtānaṃ vaṇṇānaṃ ekassarānaṃ kvaci dvebhāvo hoti.
+
+Titikkhati, jigucchati, tikicchati, vīmaṃsati, bubhukkhati, pivāsati, daddallati, dadāti (Khu. i, 49), jahāti (Khu. vii, 96), caṅkamati (A. ii, 212).
+
+**Kvacī** ti kimatthaṃ? Kampati, calati.
+
+---
+
+A veces hay reduplicación de las letras iniciales que tienen una sola vocal.
+
+A veces hay reduplicación de las letras iniciales que tienen una sola vocal.
+
+---
+
+Ejemplos:
+
+1. **Titikkhati** (\[él\] soporta), **jigucchati** (\[él\] siente aversión), **tikicchati** (\[él\] cura), **vīmaṃsati** (\[él\] investiga), **bubhukkhati** (\[él\] quiere comer), **pivāsati** (\[él\] quiere beber), **daddallati** (\[él\] resplandece), **dadāti** (\[él\] da), **jahāti** (\[él\] abandona), **caṅkamati** (\[él\] pasea).
+
+¿Con qué fin se dice “kvaci” (a veces)? Para admitir una excepción a la regla, como en los ejemplos siguientes: **kampati** (\[él\] tiembla), **calati** (\[él\] se agita).[^69]
+
+---
+
+**459\. 462\. Pubbo ’bbhāso (940).** \[Pubbo \+ abbhāso, 2\]
+
+Dvebhūtassa dhātussa yo pubbo, so **abbhāsa**sañño hoti.
+
+Dadhāti, dadāti, babhūva.
+
+---
+
+La \[sílaba\] anterior es “abbhāsa”.
+
+La \[sílaba\] anterior de la raíz reduplicada recibe el nombre “abbhāsa”.
+
+---
+
+Ejemplos:
+
+1. **Dadhāti** (\[él\] lleva/sostiene), **dadāti** (\[él\] da), **babhūva** (\[él\] fue).
+
+---
+
+**460\. 506\. Rasso (941).** \[Rasso, 1\]
+
+Abbhāse vattamānassa sarassa rasso hoti.
+
+Dadhāti, jahāti (Khu. vii, 96).
+
+---
+
+Breve.
+
+La vocal en la sílaba anterior (abbhāsa) se hace breve.
+
+---
+
+Ejemplos:
+
+1. **Dadhāti** (\[él\] sostiene), **jahāti** (\[él\] abandona).
+
+---
+
+**461\. 464\. Dutiya-catutthānaṃ paṭhama-tatiyā (942).** \[Dutiya-catutthānaṃ \+ paṭhama-tatiyā, 2\]
+
+Abbhāsagatānaṃ dutiya-catutthānaṃ paṭhama-tatiyā honti.
+
+Ciccheda, bubhukkhati, babhūva, dadhāti.
+
+---
+
+En lugar de la segunda y la cuarta, la primera y la tercera.
+
+En lugar de la segunda y la cuarta \[consonantes\] en la sílaba anterior (abbhāsa), hay la primera y la tercera.
+
+---
+
+Ejemplos:
+
+1. **Ciccheda** (\[él\] cortó), **bubhukkhati** (\[él\] quiere comer), **babhūva** (\[él\] fue), **dadhāti** (\[él\] sostiene).
+
+---
+
+**462\. 467\. Kavaggassa cavaggo (943).** \[Kavaggassa \+ cavaggo, 2\]
+
+Abbhāse vattamānassa **ka**vaggassa **ca**vaggo hoti.
+
+Cikicchati, jigucchati, jighacchati (Khu. i, 43), jigīsati (Khu. v, 359),[^70] jaṅgamati, caṅkamati (A. ii, 212).
+
+---
+
+En lugar del grupo ‘ka’, el grupo ‘ca’.
+
+En lugar del grupo ‘ka’ en la sílaba anterior (abbhāsa), hay el grupo ‘ca’.
+
+---
+
+Ejemplos:
+
+1. **Cikicchati** (\[él\] cura), **jigucchati** (\[él\] siente aversión), **jighacchati** (\[él\] quiere comer), **jigīsati** (\[él\] quiere llevar), **jaṅgamati** (\[él\] anda de acá para allá), **caṅkamati** (\[él\] pasea).
+
+---
+
+**463\. 532\. Māna-kitānaṃ va-tattaṃ vā (944).** \[Mānakitānaṃ \+ va, ta-ttaṃ \+ vā, 3\]
+
+**Māna kita** icc etesaṃ dhātūnaṃ abbhāsagatānaṃ **va**kāra-**ta**kārattaṃ hoti vā yathāsaṅkhyaṃ.
+
+Vīmaṃsati, tikicchati (Khu. vi, 183).
+
+**Vā** ti kimatthaṃ? Cikicchati.
+
+---
+
+Opcionalmente, \[hay\] el estado de ‘va’ y de ‘ta’ para “māna” y “kita”.
+
+Opcionalmente, la sílaba anterior (abbhāsa) de las raíces “māna” y “kita” se convierte al estado de la letra ‘va’ y de la letra ‘ta’ respectivamente.
+
+---
+
+Ejemplos:
+
+1. **Vīmaṃsati**[^71] (\[él\] investiga), **tikicchati[^72]** (\[él\] cura).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a la regla, como en el ejemplo siguiente: **cikicchati** (\[él\] cura).
+
+---
+
+**464\. 504\. Hassa jo (945).** \[Hassa \+ jo, 2\]
+
+Abbhāse vattamānassa **ha**kārassa **jo** hoti.
+
+Jahāti (Khu. i, 183), juhvati, juhoti, jahāra.
+
+---
+
+Hay ‘ja’ en lugar de ‘ha’.
+
+Hay ‘ja’ en lugar de la letra ‘ha’ que es la sílaba anterior (abbhāsa).
+
+---
+
+Ejemplos:
+
+1. **Jahāti** (\[él\] abandona), **juhvati**, **juhoti** (\[él\] ofrenda), **jahāra** (\[él\] llevó).
+
+---
+
+**465\. 463\. Antass’ ivaṇṇākāro vā (946).** \[Antassa \+ ivaṇṇa-akāro \+ vā, 3\]
+
+Abbhāsassa antassa **i**vaṇṇo hoti, **a**kāro vā.
+
+Jigucchati (M. ii, 87), pivāsati, vīmaṃsati, jighacchati (Khu. i, 43), babhūva, dadhāti.
+
+**Vā** ti kimatthaṃ? Bubhukkhati.
+
+---
+
+Opcionalmente, \[hay\] ‘i’, ‘ī’ o la letra ‘a’ en lugar del final.
+
+Opcionalmente, hay ‘i’, ‘ī’ o la letra ‘a’ en lugar del final de la sílaba anterior (abbhāsa).
+
+---
+
+Ejemplos:
+
+1. **Jigucchati** (\[él\] siente aversión), **pivāsati** (\[él\] quiere beber), **vīmaṃsati** (\[él\] investiga), **jighacchati** (\[él\] quiere comer), **babhūva** (\[él\] fue), **dadhāti** (\[él\] sostiene).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a la regla, como en el ejemplo siguiente: **bubhukkhati** (\[él\] quiere comer).
+
+---
+
+**466\. 489\. Niggahitañ ca (947).** \[Niggahitaṃ \+ ca, 2\]
+
+Abbhāsassa ante niggahitāgamo hoti vā.
+
+Caṅkamati (M. iii, 154), cañcalati, jaṅgamati.
+
+**Vā** ti kimatthaṃ? Pivāsati, daddallati.
+
+---
+
+Y \[hay\] la niggahita.
+
+Opcionalmente, hay inserción de la niggahita al final de la sílaba anterior (abbhāsa).
+
+---
+
+Ejemplos:
+
+1. **Caṅkamati** (\[él\] pasea), **cañcalati** (\[él\] se agita), **jaṅgamati** (\[él\] anda de acá para allá).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a la regla, como en los ejemplos siguientes: **pivāsati** (\[él\] quiere beber), **daddallati** (\[él\] resplandece).
+
+---
+
+**467\. 533\. Tato pā-mānānaṃ vā-maṃ sesu (948).** \[Tato \+ pā-mānānaṃ \+ vā-maṃ \+ sesu, 4\]
+
+Tato abbhāsato **pā māna** icc etesaṃ dhātūnaṃ **vā maṃ** icc ete ādesā honti yathāsaṅkhyaṃ **sa**paccaye pare.
+
+Pivāsati, vīmaṃsati.
+
+---
+
+Tras esa, \[hay\] ‘vā’ y ‘maṃ’ de “pā” y “māna”, cuando sigue ‘sa’.
+
+Tras esa sílaba anterior (abbhāsa), hay –respectivamente– las sustituciones ‘vā’ y ‘maṃ’ de las raíces “pā” y “māna”, cuando sigue el sufijo ‘sa’.
+
+---
+
+Ejemplos:
+
+1. **Pivāsati** (\[él\] quiere beber), **vīmaṃsati** (\[él\] investiga).
+
+---
+
+**468\. 492\. Ṭhā tiṭṭho (949).** \[Ṭhā \+ tiṭṭho, 2\]
+
+**Ṭhā** icc etassa dhātussa **tiṭṭhā**deso hoti vā.
+
+Tiṭṭhati (M. i, 155), tiṭṭhatu (M. i, 196); tiṭṭheyya (M. i, 190), tiṭṭheyyuṃ.
+
+**Vā** ti kimatthaṃ? Ṭhāti.
+
+---
+
+“Ṭhā” \[se sustituye por\] ‘tiṭṭha’.
+
+Opcionalmente, la raíz “ṭhā” se sustituye por ‘tiṭṭha’.
+
+---
+
+Ejemplos:
+
+1. **Tiṭṭhati** (\[él\] está en pie), **tiṭṭhatu** (que \[él\] esté en pie); **tiṭṭheyya** (\[él\] estaría en pie), **tiṭṭheyyuṃ** (\[ellos\] estarían en pie).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **ṭhāti** (\[él\] está en pie).
+
+---
+
+**469\. 494\. Pā pivo[^73] (949).** \[Pā \+ pivo, 2\]
+
+**Pā** icc etassa dhātussa **pivā**deso hoti vā.
+
+Pivati (M. ii, 5), pivatu (Khu. i, 175); piveyya, piveyyuṃ.
+
+**Vā** ti kimatthaṃ? Pāti.
+
+---
+
+“Pā” \[se sustituye por\] ‘piva’.
+
+Opcionalmente, la raíz “pā” se sustituye por ‘piva’.
+
+---
+
+Ejemplos:
+
+1. **Pivati** (\[él\] bebe), **pivatu** (que \[él\] beba); **piveyya** (\[él\] bebería), **piveyyuṃ** (\[ellos\] beberían).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a la regla, como en el ejemplo siguiente: **pāti** (\[él\] bebe).
+
+---
+
+**470\. 514\. Ñāssa jā-jaṃ-nā (950).** \[Ñāssa \+ jā-jaṃ-nā, 2\]
+
+**Ñā** icc etassa dhātussa **jā-jaṃ-nā**ādesā honti vā.[^74]
+
+Jānāti (M. i, 141, 143); jāneyya, jāniyā, jaññā (Khu. i, 37); nāyati.
+
+---
+
+\[Hay\] ‘jā’, ‘jaṃ’ y ‘nā’ de “ñā”.
+
+Opcionalmente, la raíz “ñā” se sustituye por ‘jā’, ‘jaṃ’ y ‘nā’.
+
+---
+
+Ejemplos:
+
+1. **Jānāti** (\[él\] conoce); **jāneyya**, **jāniyā**, **jaññā** (\[él\] debería conocer);[^75] **nāyati** (\[él\] conoce).
+
+---
+
+**471\. 483\. Disassa passa-dissa-dakkhā vā (951).** \[Disassa \+ passa-dissa-dakkhā \+ vā, 3\]
+
+**Disa** icc etassa dhātussa **passa dissa dakkha** icc ete ādesā honti vā.
+
+Passati (Khu. i, 53), dissati (Khu. i, 176), dakkhati (Khu. i, 410), adakkha.
+
+**Vā** ti kimatthaṃ? Addasa (M. i, 196).
+
+---
+
+Opcionalmente, \[hay\] ‘passa’, ‘dissa’ y ‘dakkha’ de “disa”.
+
+Opcionalmente, la raíz “disa” se sustituye por ‘passa’, ‘dissa’ y ‘dakkha’.
+
+---
+
+Ejemplos:
+
+1. **Passati**, **dissati** (\[él\] ve);[^76] **dakkhati** (\[él\] verá), **adakkha** (\[él\] vio).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **addasa** (\[él\] vio).
+
+---
+
+**472\. 531\. Byañjanantassa co chapaccayesu ca (952).** \[Byañjana-antassa \+ co \+ chapaccayesu \+ ca, 4\]
+
+Byañjanantassa dhātussa **co** hoti **cha**paccayesu paresu.[^77]
+
+Jigucchati, tikicchati, jighacchati.
+
+---
+
+Y \[hay\] ‘ca’ de la consonante final cuando \[siguen\] los sufijos ‘cha’.
+
+Hay ‘ca’ de la consonante final de la raíz cuando siguen los sufijos ‘cha’.
+
+---
+
+Ejemplos:
+
+1. **Jigucchati** (\[él\] siente aversión), **tikicchati** (\[él\] cura), **jighacchati** (\[él\] quiere comer).
+
+Nota: en “jigucchati” la raíz es ‘gupa’; tras elidirse la vocal final de la raíz y colocarse el sufijo ‘cha’, la consonante final de la raíz se cambia a ‘c’. En “tikicchati” la raíz es ‘kita’; tras elidirse la vocal final de la raíz y colocarse el sufijo ‘cha’, la consonante final de la raíz se cambia a ‘c’. En “jighacchati” la raíz es ‘ghasa’; tras elidirse la vocal final de la raíz y colocarse el sufijo ‘cha’, la consonante final de la raíz se cambia a ‘c’.
+
+---
+
+**473\. 529\. Ko khe ca (953).** \[Ko \+ khe \+ ca, 3\]
+
+Byañjanantassa dhātussa **ko** hoti **kha**paccaye pare.
+
+Titikkhati (Khu. i, 59), bubhukkhati.
+
+---
+
+Y \[hay\] ‘ka’ cuando sigue ‘kha’.
+
+Hay ‘ka’ de la consonante final de la raíz cuando sigue el sufijo ‘kha’.
+
+---
+
+Ejemplos:
+
+1. **Titikkhati** (\[él\] soporta), **bubhukkhati** (\[él\] quiere comer).
+
+Nota: en “titikkhati” la raíz es ‘tija’; tras elidirse la vocal final de la raíz y colocarse el sufijo ‘kha’, la consonante final de la raíz, ‘j’, se cambia en ‘k’.
+
+---
+
+**474\. 535\. Harassa gī se[^78] (954).** \[Harassa \+ gī \+ se, 3\]
+
+**Hara** icc etassa dhātussa sabbass’ eva **gī**ādeso hoti **sa**paccaye pare.
+
+Jigīsati (Khu. v, 359).[^79]
+
+---
+
+\[Hay\] ‘gī’ de “hara” cuando sigue ‘sa’.
+
+Hay sustitución por ‘gī’ de toda la raíz “hara” cuando sigue el sufijo ‘sa’.
+
+---
+
+Ejemplos:
+
+1. **Jigīsati** (\[él\] quiere llevar).
+
+---
+
+**475\. 465\. Brū-bhūnam āha-bhūvā parokkhāyaṃ (956).** \[Brū-bhūnaṃ \+ āha-bhūvā \+ parokkhāyaṃ, 3\]
+
+**Brū bhū** icc etesaṃ dhātūnaṃ **āha bhūva** icc ete ādesā honti yathāsaṅkhyaṃ parokkhāyaṃ vibhattiyaṃ.
+
+Āha (M. i, 196), āhu (Khu. i, 260); babhūva, babhūvu.
+
+**Parokkhāyam** iti kimatthaṃ? Abravuṃ (JA. v, 17).
+
+---
+
+En “parokkhā”, \[hay\] ‘āha’ y ‘bhūva’ de “brū” y “bhū”.
+
+Las raíces “brū” y “bhū” se sustituyen –respectivamente– por ‘āha’ y ‘bhūva’ cuando hay la inflexión “parokkhā”.
+
+---
+
+Ejemplos:
+
+1. **Āha** (\[él\] dijo), **āhu** (\[ellos\] dijeron); **babhūva** (\[él\] fue), **babhūvu** (\[ellos\] fueron).
+
+¿Con qué fin se dice “parokkhāyaṃ”? Para impedir la operación de esta regla cuando no hay la “parokkhā”, como en el ejemplo siguiente: **abravuṃ** (\[ellos\] dijeron).[^80]
+
+---
+
+**476\. 442\. Gamiss’ anto ccho vā sabbāsu (957).** \[Gamissa \+ anto \+ ccho \+ vā \+ sabbāsu, 5\]
+
+**Gamu** icc etassa dhātussa anto **ma**kāro **ccho** hoti vā sabbāsu paccayavibhattīsu.
+
+Gacchamāno (JA. i, 226), gacchanto (M. ii, 302). Gacchati (M. ii, 338), gameti. Gacchatu, gametu. Gaccheyya (VinA. i, 104), gameyya. Agacchā, agamā. Agacchī, agamī. Gacchissati, gamissati (VinA. i, 68). Agacchissā, agamissā.
+
+**Gamisse** ti kimatthaṃ? Icchati (Khu. i, 55).
+
+---
+
+Opcionalmente, el final de “gamu” \[se sustituye por\] ‘ccha’ ante todas \[las inflexiones\].
+
+Opcionalmente, cuando siguen todos los sufijos e inflexiones, la letra ‘m’ que está al final de la raíz “gamu” (ir) se sustituye por ‘ccha’.
+
+---
+
+Ejemplos:
+
+1. **Gacchamāno**, **gacchanto** (yendo).  
+2. **Gacchati**, **gameti** (\[él\] va).  
+3. **Gacchatu**, **gametu** (que \[él\] vaya).  
+4. **Gaccheyya**, **gameyya** (\[él\] debería ir).  
+5. **Agacchā**, **agamā** (\[él\] fue).  
+6. **Agacchī**, **agamī** (\[él\] fue).  
+7. **Gacchissati**, **gamissati** (\[él\] irá).  
+8. **Agacchissā**, **agamissā** (\[si él\] hubiera ido).
+
+¿Con qué fin se dice “gamissa” (de “gamu”)? Para impedir la operación de esta regla cuando no hay “gamu”, como en el ejemplo siguiente: **icchati** (\[él\] quiere).
+
+---
+
+**477\. 479\. Vacass’ ajjatanimhi-m-akāro o (958).** \[Vacassa \+ ajjatanimhi \+ akāro \+ o, 4\]
+
+**Vaca** icc etassa dhātussa **a**kāro **o**ttam āpajjate **a**j**jatani**mhi vibhattimhi.
+
+Avoca (M. i, 17), avocuṃ (M. i, 118).
+
+**Ajjatanimhī** ti kimatthaṃ? Avaca (M. i, 183), avacū.
+
+---
+
+Cuando sigue “ajjatanī”, la ‘a’ de “vaca” \[cambia a\] ‘o’.
+
+Cuando sigue la inflexión “ajjatanī”, la ‘a’ de la raíz “vaca” cambia al estado de ‘o’.
+
+---
+
+Ejemplos:
+
+1. **Avoca** (\[él\] dijo), **avocuṃ** (\[ellos\] dijeron).
+
+¿Con qué fin se dice “ajjatanī”? Para impedir la operación de esta regla cuando no hay la “ajjatanī”, como en los ejemplos siguientes: **avaca** (\[él\] dijo), **avacū** (\[ellos\] dijeron).[^81]
+
+---
+
+**478\. 438\. Akāro dīghaṃ hi-mi-mesu (959).** \[Akāro \+ dīghaṃ \+ hi-mi-mesu, 3\]
+
+**A**kāro dīgham āpajjate **hi mi ma** icc etesu vibhattīsu.
+
+Gacchāhi (VinA. i, 68), gacchāmi (Khu. v, 324), gacchāma (Khu. iii, 28), gacchāmhe.
+
+**Mi**kāraggahaṇena **hi**vibhattimhi **a**kāro kvaci na dīgham āpajjate. Gacchahi.
+
+---
+
+Cuando siguen ‘hi’, ‘mi’ y ‘ma’, la letra ‘a’ \[se vuelve\] larga.
+
+Cuando siguen las inflexiones ‘hi’, ‘mi’ y ‘ma’, la letra ‘a’ se vuelve larga.
+
+---
+
+Ejemplos:
+
+1. **Gacchāhi** (ve tú), **gacchāmi** (yo voy), **gacchāma**, **gacchāmhe** (nosotros vamos).
+
+Al tomar la letra ‘mi’, cuando hay la inflexión ‘hi’, a veces la letra ‘a’ no se hace larga:
+
+1. **Gacchahi** (ve tú).
+
+---
+
+**479\. 452\. Hi lopaṃ vā (960).** \[Hi \+ lopaṃ \+ vā, 3\]
+
+**Hi**vibhatti lopam āpajjate vā.
+
+Gaccha, gacchāhi; gama, gamāhi; gamaya, gamayāhi.
+
+**Hī** ti kimatthaṃ? Gacchati, gamayati.
+
+---
+
+Opcionalmente, ‘hi’ se elide.
+
+Opcionalmente, la inflexión ‘hi’ se elide.
+
+---
+
+Ejemplos:
+
+1. **Gaccha**, **gacchāhi**; **gama**, **gamāhi** (ve tú); **gamaya**, **gamayāhi** (haz ir tú).
+
+¿Con qué fin se dice “hi”? Para impedir la operación de esta regla cuando no hay ‘hi’, como en los ejemplos siguientes: **gacchati** (\[él\] va), **gamayati** (\[él\] hace ir).
+
+---
+
+**480\. 490\. Hotissar’ eh’-oh’-e bhavissantimhi ssassa ca (961).** \[Hotissaro \+ eha-oha-e \+ bhavissantimhi \+ ssassa \+ ca, 5\]
+
+**Hū** icc etassa dhātussa saro **eha-oha-e**ttam āpajjate bhavissantimhi, **ssa**ssa ca lopo hoti vā.
+
+Hehiti, hehinti; hohiti, hohinti; heti, henti. Hehissati, hehissanti; hohissati, hohissanti; hessati (Khu. iii, 25), hessanti.
+
+**Hū** ti kimatthaṃ? Bhavissati (VinA. i, 5), bhavissanti (M. i, 52).
+
+**Bhavissantimhī** ti kimatthaṃ? Hoti.
+
+---
+
+Hay ‘eha’, ‘oha’ y ‘e’ de la vocal de “hū” cuando sigue \[la inflexión\] “bhavissantī” y \[hay elisión\] de ‘ssa’.
+
+La vocal de la raíz “hū” se convierte en ‘eha’, ‘oha’ y ‘e’ cuando hay \[la inflexión\] “bhavissantī”, y opcionalmente se elide ‘ssa’.
+
+---
+
+Ejemplos:
+
+1. **Hehiti**, **hohiti**, **heti** (\[él\] será); **hehinti**, **hohinti**, **henti** (\[ellos\] serán).  
+2. **Hehissati**, **hohissati**, **hessati** (\[él\] será); **hehissanti**, **hohissanti**, **hessanti** (\[ellos\] serán).
+
+¿Con qué fin se dice “hū”? Para impedir la operación de esta regla cuando no hay “hū”, como en los ejemplos siguientes: **bhavissati** (\[él\] será), **bhavissanti** (\[ellos\] serán).
+
+¿Con qué fin se dice “bhavissantimhi” (en el futuro)? Para impedir la operación de esta regla cuando no hay la “bhavissantī”, como en el ejemplo siguiente: **hoti** (\[él\] es).
+
+---
+
+**481\. 524\. Karassa sapaccayassa kāho (962).** \[Karassa \+ sa-paccayassa \+ kāho, 3\]
+
+**Kara** icc etassa dhātussa sapaccayassa **kāhā**deso hoti vā bhavissantimhi vibhattimhi, **ssa**ssa ca niccaṃ lopo hoti.
+
+Kāhati (JA. ii, 401), kāhiti (Khu. i, 64); kāhasi (Khu. i, 36), kāhisi; kāhāmi (DhA. i, 288), kāhāma.
+
+**Vā** ti kimatthaṃ? Karissati (VinA. i, 75), karissanti (DhA. i, 153).
+
+**Sapaccaya**ggahaṇena aññehi pi bhavissantiyā vibhattiyā **khāmi** **khāma** **chāmi** **chāma** icc ādayo ādesā honti. Vakkhāmi (JA. i, 366), vakkhāma (JA. i, 170); vacchāmi (Vin. iii, 76), vacchāma.
+
+---
+
+\[Hay\] ‘kāha’ de “kara” junto con su sufijo.
+
+Opcionalmente, la raíz “kara” junto con su sufijo se sustituye por ‘kāha’ cuando sigue la inflexión “bhavissantī”, y siempre hay elisión de ‘ssa’.
+
+---
+
+Ejemplos:
+
+1. **Kāhati**, **kāhiti** (\[él\] hará); **kāhasi**, **kāhisi** (tú harás); **kāhāmi** (yo haré), **kāhāma** (nosotros haremos).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en los ejemplos siguientes: **karissati** (\[él\] hará), **karissanti** (\[ellos\] harán).
+
+Al tomar “sapaccaya”, también tras otras \[raíces\] la inflexión de la “bhavissantī” tiene las sustituciones ‘khāmi’, ‘khāma’, ‘chāmi’, ‘chāma’ y otras:
+
+1. **Vakkhāmi** (yo diré), **vakkhāma** (nosotros diremos); **vacchāmi** (yo moraré), **vacchāma** (nosotros moraremos).
+
+---
+
+**Iti ākhyāta-kappe tatiyo kaṇḍo**
+
+**Así \[termina\] la tercera sección del capítulo de los verbos**
+
+**CATUTTHA-KAṆḌA**  
+**CUARTA SECCIÓN**
+
+---
+
+---
+
+**482\. 508\. Dā-d-antass’ aṃ mi-mesu (972).** \[Dā-antassa \+ aṃ \+ mi-mesu, 3\]
+
+**Dā** iccetassa dhātussa antassa **aṃ** hoti **mi ma** icc etesu.
+
+Dammi (Khu. v, 325), damma.
+
+---
+
+Cuando siguen ‘mi’ y ‘ma’, \[hay\] ‘aṃ’ del final de “dā”.
+
+Cuando siguen ‘mi’ y ‘ma’, hay ‘aṃ’ del final de la raíz “dā”.
+
+---
+
+Ejemplos:
+
+1. **Dammi** (yo doy), **damma** (nosotros damos).
+
+---
+
+**483\. 527\. Asaṃyogantassa vuddhi kārite (973).** \[Asaṃyogantassa \+ vuddhi \+ kārite, 3\]
+
+Asaṃyogantassa dhātussa kārite vuddhi hoti.
+
+Kāreti (M. ii, 332), kārenti (M.i, 121); kārayati, kārayanti; kārāpeti (Vin. i, 240), kārāpenti (Vin. i, 218); kārāpayati, kārāpayanti.
+
+**Asaṃyogantasse** ti kimatthaṃ? Cintayati, mantayati.
+
+---
+
+En el causativo hay fortalecimiento (vuddhi) de \[la vocal de la raíz\] que no termina en consonante conjunta.
+
+En el causativo hay fortalecimiento de \[la vocal de\] la raíz que no termina en consonante conjunta.
+
+---
+
+Ejemplos:
+
+1. **Kāreti**, **kārayati**, **kārāpeti**, **kārāpayati** (\[él\] hace hacer); **kārenti**, **kārayanti**, **kārāpenti**, **kārāpayanti** (\[ellos\] hacen hacer).
+
+¿Con qué fin se dice “asaṃyogantassa” (que no termina en consonante conjunta)? Para impedir la operación de esta regla cuando sí termina en consonante conjunta, como en los ejemplos siguientes: **cintayati** (\[él\] piensa), **mantayati** (\[él\] delibera).
+
+---
+
+**484\. 542\. Ghaṭādīnaṃ vā (974).** \[Ghaṭa-ādīnaṃ \+ vā, 2\]
+
+**Ghaṭā**dīnaṃ dhātūnaṃ asaṃyogantānaṃ vuddhi hoti vā kārite.
+
+Ghāṭeti (Vin. ii, 295), ghaṭeti (Vin. ii, 295); ghāṭayati, ghaṭayati; ghāṭāpeti, ghaṭāpeti; ghāṭāpayati, ghaṭāpayati; gāmeti, gameti; gāmayati, gamayati; gāmāpeti, gamāpeti; gāmāpayati, gamāpayati.
+
+**Ghaṭādīnam** iti kimatthaṃ? Kāreti.
+
+---
+
+Opcionalmente, \[también\] de “ghaṭa” y otras.[^82]
+
+Opcionalmente, en el causativo hay fortalecimiento de las raíces “ghaṭa” y otras que no terminan en consonante conjunta.
+
+---
+
+Ejemplos:
+
+1. **Ghāṭeti**, **ghaṭeti**; **ghāṭayati**, **ghaṭayati**; **ghāṭāpeti**, **ghaṭāpeti**; **ghāṭāpayati**, **ghaṭāpayati** (\[él\] hace esforzarse).  
+2. **Gāmeti**, **gameti**; **gāmayati**, **gamayati**; **gāmāpeti**, **gamāpeti**; **gāmāpayati**, **gamāpayati** (\[él\] hace ir).
+
+¿Con qué fin se dice “ghaṭādīnaṃ” (de “ghaṭa” y otras)? Para impedir la operación de esta regla cuando no hay “ghaṭa” y otras, como en el ejemplo siguiente: **kāreti** (\[él\] hace hacer).
+
+---
+
+**485\. 434\. Aññesu ca (975).** \[Aññesu \+ ca, 2\]
+
+Aññesu ca paccayesu sabbesaṃ dhātūnaṃ asaṃyogantānaṃ vuddhi hoti.
+
+Jayati, hoti, bhavati.
+
+**Ca**ggahaṇena **ṇu**paccayassā pi vuddhi hoti. Abhisuṇoti.
+
+---
+
+Y cuando otros siguen.
+
+Y cuando siguen otros sufijos \[distintos del causativo\], hay fortalecimiento \[de la vocal\] de todas las raíces que no terminan en consonante conjunta.
+
+---
+
+Ejemplos:
+
+1. **Jayati**[^83] (\[él\] vence), **hoti** (\[él\] es), **bhavati**[^84] (\[él\] es).
+
+Al tomar “ca”, hay también fortalecimiento del sufijo ‘ṇu’:
+
+1. **Abhisuṇoti** (\[él\] oye).
+
+---
+
+**486\. 543\. Guha-dusānaṃ dīghaṃ (977).** \[Guha-dusānaṃ \+ dīghaṃ, 2\]
+
+**Guha dusa** iccetesaṃ dhātunaṃ saro dīgham āpajjate kārite.
+
+Gūhayati, dūsayati.
+
+---
+
+Larga para “guha” y “dusa”.
+
+En el causativo, la vocal de las raíces “guha” y “dusa” se hace larga.
+
+---
+
+Ejemplos:
+
+1. **Gūhayati** (\[él\] hace ocultar),[^85] **dūsayati** (\[él\] hace corromper).
+
+---
+
+**487\. 478\. Vaca-vasa-vahādīnam ukāro vassa ye (978-9).** \[Vaca-vasa-vaha-ādīnaṃ \+ ukāro \+ vassa \+ ye, 4\]
+
+**Vaca vasa vaha** icc evamādīnaṃ dhātūnaṃ **va**kārassa **u**kāro hoti **ya**paccaye pare.
+
+Uccate, vuccati (VinA. i, 17); vussati (M. i, 201); vuyhati (Khu. vii, 3).
+
+---
+
+Cuando sigue ‘ya’, hay ‘u’ de la ‘v’ de “vaca”, “vasa”, “vaha” y otras.
+
+Cuando sigue el sufijo ‘ya’, hay ‘u’ de la ‘v’ de las raíces “vaca”, “vasa”, “vaha” y otras.
+
+---
+
+Ejemplos:
+
+1. **Uccate**, **vuccati** (es dicho); **vussati** (es habitado); **vuyhati** (es llevado).
+
+---
+
+**488\. 481\. Havipariyayo lo vā (980).** \[Ha-vipariyayo \+ lo \+ vā, 3\]
+
+**Ha**kārassa vipariyayo hoti **ya**paccaye pare, **ya**paccayassa ca **lo** hoti vā.
+
+Vulhati, vuyhati (Khu. vii, 3).
+
+---
+
+Hay inversión de ‘ha’ y opcionalmente \[hay\] ‘la’.
+
+Cuando sigue el sufijo ‘ya’, hay inversión de la letra ‘h’, y opcionalmente hay ‘la’ del sufijo ‘ya’.
+
+---
+
+Ejemplos:
+
+1. **Vulhati**, **vuyhati** (es llevado).
+
+Secuencia de **vuyhati**, que viene de la raíz ‘vaha’ (llevar):
+
+1. **vaha** (§457)  
+2. vah (§521)  
+3. vah \+ **ti** (§414)  
+4. vah \+ **ya** \+ ti  
+5. v**u**h \+ ya \+ ti (§487)  
+6. vu**y** \+ **h**a \+ ti (§488)  
+7. **vuyhati** (§11)
+
+---
+
+**489\. 519\. Gahassa ghe ppe (981).** \[Gahassa \+ ghe \+ ppe, 3\]
+
+**Gaha** icc etassa dhātussa sabbassa **ghe**kāro hoti **ppa**paccaye pare.
+
+Gheppati.
+
+---
+
+Cuando sigue ‘ppa’, \[hay\] ‘ghe’ de “gaha”.
+
+Cuando sigue el sufijo ‘ppa’,[^86] hay la letra ‘ghe’ de toda la raíz “gaha”.
+
+---
+
+Ejemplos:
+
+1. **Gheppati** (\[él\] toma).
+
+---
+
+**490\. 518\. Halopo ṇhāmhi (982).** \[Halopo \+ ṇhāmhi, 2\]
+
+**Gaha** icc etassa dhātussa **ha**kārassa lopo hoti **ṇhā**mhi paccaye pare.
+
+Gaṇhāti (VinA. i, 20).
+
+---
+
+Cuando sigue ‘ṇhā’, \[hay\] elisión de la ‘ha’.
+
+Cuando sigue el sufijo ‘ṇhā’,[^87] hay elisión de la letra ‘h’ de la raíz “gaha”.
+
+---
+
+Ejemplos:
+
+1. **Gaṇhāti** (\[él\] toma).
+
+---
+
+**491\. 523\. Karassa kāsattam ajjatanimhi (983).** \[Karassa \+ kāsattaṃ \+ ajjatanimhi, 3\]
+
+**Kara** icc etassa dhātussa sabbassa **kāsa**ttaṃ hoti vā ajjatanimhi vibhattimhi.
+
+Akāsi (M. ii, 194), akāsuṃ. Akari, akaruṃ (D. ii, 204).
+
+**Kāsattam** iti bhāvaniddesena aññatthā pi **s**āgamo hoti. Ahosi (VinA. i, 10), adāsi (VinA. i, 9).
+
+---
+
+Cuando sigue \[la inflexión\] “ajjatanī”, \[hay\] ‘kāsa’ de “kara”.
+
+Opcionalmente, cuando sigue la inflexión “ajjatanī”, hay ‘kāsa’ de toda la raíz “kara”.
+
+---
+
+Ejemplos:
+
+1. **Akāsi**, **akari** (\[él\] hizo); **akāsuṃ**, **akaruṃ** (\[ellos\] hicieron).
+
+Al indicar el estado con “kāsatta”, también en otros casos hay inserción de ‘s’:
+
+1. **Ahosi** (\[él\] fue), **adāsi** (\[él\] dio).
+
+---
+
+**492\. 499\. Asasmā mi-mānaṃ mhi-mhā ’ntalopo ca (987).** \[Asasmā \+ mi-mā-naṃ \+ mhi-mhā \+ antalopo \+ ca, 5\]
+
+**Asa** icc etāya dhātuyā **mi ma** icc etesaṃ vibhattīnaṃ **mhi-mhā**desā honti vā, dhātvantassa lopo ca.
+
+Amhi (M. ii, 302), amha. Asmi (M. i, 49), asma.
+
+---
+
+Tras “asa”, \[hay\] ‘mhi’ y ‘mha’ de ‘mi’ y ‘ma’, y elisión del final \[de la raíz\].
+
+Opcionalmente, hay las sustituciones ‘mhi’ y ‘mha’ de las inflexiones ‘mi’ y ‘ma’ tras la raíz “asa”, y elisión de la \[consonante\] final de la raíz.
+
+---
+
+Ejemplos:
+
+1. **Amhi**, **asmi** (yo soy); **amha**, **asma** (nosotros somos).
+
+---
+
+**493\. 498\. Thassa tthattaṃ (988).** \[Thassa \+ tthattaṃ, 2\]
+
+**Asa** icc etāya dhātuyā **tha**ssa vibhattissa **ttha**ttaṃ hoti, dhātvantassa lopo ca.
+
+Attha (JA. i, 222).
+
+---
+
+\[Hay\] ‘ttha’ de ‘tha’.
+
+Hay ‘ttha’ de la inflexión ‘tha’ de la raíz “asa”, y elisión de la \[consonante\] final de la raíz.
+
+---
+
+Ejemplos:
+
+1. **Attha** (vosotros sois).
+
+---
+
+**494\. 495\. Tissa tthittaṃ (989).** \[Tissa \+ tthittaṃ, 2\]
+
+**Asa** icc etāya dhātuyā **ti**ssa vibhattissa **tthi**ttaṃ hoti, dhātvantassa lopo ca.
+
+Atthi (Vin. i, 153).
+
+---
+
+\[Hay\] ‘tthi’ de ‘ti’.
+
+Hay ‘tthi’ de la inflexión ‘ti’ de la raíz “asa”, y elisión de la \[consonante\] final de la raíz.
+
+---
+
+Ejemplos:
+
+1. **Atthi** (\[él\] es).
+
+---
+
+**495\. 500\. Tussa tthuttaṃ (991).** \[Tussa \+ tthuttaṃ, 2\]
+
+**Asa** icc etāya dhātuyā **tu**ssa vibhattissa **tthu**ttaṃ hoti, dhātvantassa lopo ca.
+
+Atthu (D. iii, 159).
+
+---
+
+\[Hay\] ‘tthu’ de ‘tu’.
+
+Hay ‘tthu’ de la inflexión ‘tu’ de la raíz “asa”, y elisión de la \[consonante\] final de la raíz.
+
+---
+
+Ejemplos:
+
+1. **Atthu** (que sea).
+
+---
+
+**496\. 497\. Simhi ca (992).** \[Simhi \+ ca, 2\]
+
+**Asa**ss’ eva dhātussa **si**mhi vibhattimhi antassa lopo ca hoti.
+
+Ko nu tvam asi (S. i, 104\) mārisa?
+
+---
+
+Y cuando sigue ‘si’.
+
+Cuando sigue la inflexión ‘si’, hay elisión de la \[consonante\] final de la raíz “asa”.
+
+---
+
+Ejemplos:
+
+1. **Ko nu tvam asi mārisa?** (¿quién eres tú, señor?).
+
+---
+
+**497\. 477\. Labhasmā ī-iṃnaṃ ttha-tthaṃ (1003).** \[Labhasmā \+ ī-iṃnaṃ \+ ttha-tthaṃ, 3\]
+
+**Labha** icc etāya dhātuyā **ī-iṃ**naṃ vibhattīnaṃ **ttha-tthaṃ**ādesā honti, dhātvantassa lopo ca.
+
+Alattha (M. ii, 239), alatthaṃ (M. ii, 188).
+
+---
+
+\[Hay\] ‘ttha’ y ‘tthaṃ’ de ‘ī’ e ‘iṃ’ tras “labha”.
+
+Hay las sustituciones ‘ttha’ y ‘tthaṃ’ de las inflexiones ‘ī’ e ‘iṃ’ tras la raíz “labha”, y elisión de la \[consonante\] final de la raíz.
+
+---
+
+Ejemplos:
+
+1. **Alattha** (\[él\] obtuvo), **alatthaṃ** (yo obtuve).
+
+---
+
+**498\. 480\. Kusasmā-d-ī cchi (1004).** \[Kusasmā \+ ī \+ cchi, 3\]
+
+**Kusa** icc etāya dhātuyā **ī**vibhattissa **cchi** hoti, dhātvantassa lopo ca.
+
+Akkocchi (Khu. i, 13).
+
+---
+
+\[Hay\] ‘cchi’ de ‘ī’ tras “kusa”.
+
+Hay ‘cchi’ de la inflexión ‘ī’ tras la raíz “kusa”, y elisión de la \[consonante\] final de la raíz.
+
+---
+
+Ejemplos:
+
+1. **Akkocchi** (\[él\] injurió).
+
+---
+
+**499\. 507\. Dādhātussa dajjaṃ (1005).** \[Dā-dhātussa \+ dajjaṃ, 2\]
+
+**Dā** icc etassa dhātussa sabbassa **dajjā**deso hoti vā.
+
+Dajjāmi, dajjeyya; dadāmi (Khu. v, 229), dadeyya (Vin.A. i, 38).
+
+---
+
+\[Hay\] ‘dajja’ de la raíz “dā”.
+
+Opcionalmente, hay la sustitución ‘dajja’ de toda la raíz “dā”.
+
+---
+
+Ejemplos:
+
+1. **Dajjāmi**, **dadāmi** (yo doy); **dajjeyya**, **dadeyya** (\[él\] debería dar).
+
+---
+
+**500\. 486\. Vadassa vajjaṃ (1006).** \[Vadassa \+ vajjaṃ, 2\]
+
+**Vada** icc etassa dhātussa sabbassa **vajjā**deso hoti vā.
+
+Vajjāmi, vajjeyya; vadāmi (M. i, 11), vadeyya (M. i, 105).
+
+---
+
+\[Hay\] ‘vajja’ de “vada”.
+
+Opcionalmente, hay la sustitución ‘vajja’ de toda la raíz “vada”.
+
+---
+
+Ejemplos:
+
+1. **Vajjāmi**, **vadāmi** (yo digo); **vajjeyya**, **vadeyya** (\[él\] debería decir).
+
+---
+
+**501\. 443\. Gamissa[^88] ghammaṃ (1013).** \[Gamissa \+ ghammaṃ, 2\]
+
+**Gamu** icc etassa dhātussa sabbassa **ghammā**deso hoti vā.
+
+Ghammatu, ghammāhi, ghammāmi.
+
+**Vā** ti kimatthaṃ? Gacchatu, gacchāhi (JA. iv, 149), gacchāmi (Vin. iii, 12).
+
+---
+
+\[Hay\] ‘ghamma’ de “gamu”.
+
+Opcionalmente, hay la sustitución ‘ghamma’ de toda la raíz “gamu”.
+
+---
+
+Ejemplos:
+
+1. **Ghammatu** (que \[él\] vaya), **ghammāhi** (ve tú), **ghammāmi** (yo voy).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en los ejemplos siguientes: **gacchatu** (que \[él\] vaya), **gacchāhi** (ve tú), **gacchāmi** (yo voy).
+
+---
+
+**502\. 493\. Yamhi dā-dhā-mā-ṭhā-hā-pā-maha-mathādīnam ī (1014).** \[Yamhi \+ dā-dhā-mā-ṭhā-hā-pā-maha-matha-ādīnaṃ \+ ī, 3\]
+
+**Ya**mhi paccaye pare **dā dhā mā ṭhā hā pā maha matha** icc evamādīnaṃ dhātūnaṃ anto **ī**kāram āpajjate.
+
+Dīyati (JA. iv, 147), dhīyati, mīyati (A. i, 356), ṭhīyati, hīyati, pīyati, mahīyati, mathīyati.
+
+---
+
+Cuando sigue ‘ya’, \[hay\] ‘ī’ de “dā”, “dhā”, “mā”, “ṭhā”, “hā”, “pā”, “maha” y “matha”.
+
+Cuando sigue el sufijo ‘ya’, la \[vocal\] final de las raíces “dā”, “dhā”, “mā”, “ṭhā”, “hā”, “pā”, “maha” y “matha” y otras se convierte en la letra ‘ī’.
+
+---
+
+Ejemplos:
+
+1. **Dīyati** (es dado), **dhīyati** (es sostenido), **mīyati** (es medido), **ṭhīyati** (se está en pie), **hīyati** (es abandonado), **pīyati** (es bebido), **mahīyati** (es honrado), **mathīyati** (es batido).
+
+---
+
+**503\. 485\. Yajass’ ādiss’ i (1015).** \[Yajassa \+ ādissa \+ i, 3\]
+
+**Yaja** icc etassa dhātussa ādissa **i**kārādeso hoti **ya**paccaye pare.
+
+Ijjate mayā Buddho.
+
+---
+
+\[Hay\] ‘i’ de la \[sílaba\] inicial de “yaja”.
+
+Cuando sigue el sufijo ‘ya’, hay la sustitución ‘i’ de la \[sílaba\] inicial de la raíz “yaja”.
+
+---
+
+Ejemplos:
+
+1. **Ijjate mayā Buddho** (el Buddha es honrado por mí).
+
+---
+
+**504\. 470\. Sabbato uṃ iṃsu (1016).** \[Sabbato \+ uṃ \+ iṃsu, 3\]
+
+Sabbehi dhātūhi **uṃ**vibhattissa **iṃsu**ādeso hoti.
+
+Upasaṅkamiṃsu (M. i, 118), nisīdiṃsu (M. i, 118).
+
+---
+
+Tras todas \[las raíces\], \[hay\] ‘iṃsu’ de ‘uṃ’.
+
+Tras todas las raíces hay la sustitución ‘iṃsu’ de la inflexión ‘uṃ’.
+
+---
+
+Ejemplos:
+
+1. **Upasaṅkamiṃsu** (\[ellos\] se acercaron), **nisīdiṃsu** (\[ellos\] se sentaron).
+
+---
+
+**505\. 482\. Jara-marānaṃ jīra-jiyya-miyyā[^89] vā (1018).** \[Jara-marānaṃ \+ jīra-jiyya-miyyā \+ vā, 3\]
+
+**Jara** **mara** icc etesaṃ dhātūnaṃ **jīra-jiyya-miyyā**desā honti vā.
+
+Jīrati (A. ii, 48), jīranti (Khu. i, 36); jiyyati (Khu. v, 397), jiyyanti; miyyati (Khu. i, 405), miyyanti (Khu. vi, 157); marati (Khu. vii, 92), maranti (DhA. i, 147).
+
+---
+
+Opcionalmente, \[hay\] ‘jīra’, ‘jiyya’ y ‘miyya’ de “jara” y “mara”.
+
+Opcionalmente, hay las sustituciones ‘jīra’, ‘jiyya’ y ‘miyya’ de las raíces “jara” y “mara”.
+
+---
+
+Ejemplos:
+
+1. **Jīrati**, **jiyyati** (\[él\] envejece); **jīranti**, **jiyyanti** (\[ellos\] envejecen).  
+2. **Miyyati**, **marati** (\[él\] muere); **miyyanti**, **maranti** (\[ellos\] mueren).
+
+---
+
+**506\. 496\. Sabbatthāsass’ ādilopo ca (1019).** \[Sabbattha \+ asassa \+ ādilopo \+ ca, 4\]
+
+Sabbattha vibhattipaccayesu **asa** icc etassa dhātussa ādissa lopo hoti vā.
+
+Siyā (M. i, 62), santi (Khu. i, 54), sante (Khu. ii, 216), samāno (Khu. vi, 234).
+
+**Vā** ti kimatthaṃ? Asi (Khu. vi, 157).
+
+---
+
+Y en todas partes \[hay\] elisión de la \[letra\] inicial de “asa”.
+
+Opcionalmente, ante todas las inflexiones y sufijos hay elisión de la \[letra\] inicial de la raíz “asa”.
+
+---
+
+Ejemplos:
+
+1. **Siyā[^90]** (podría ser), **santi**, **sante** (\[ellos\] son), **samāno** (siendo).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **asi** (tú eres).
+
+---
+
+**507\. 501\. Asabbadhātuke bhū (1020).** \[Asabbadhātuke \+ bhū, 2\]
+
+**Asa**ss’ eva dhātussa **bhū** hoti vā asabbadhātuke.
+
+Bhavissati (M. i, 10), bhavissanti (M. i, 52).
+
+**Vā** ti kimatthaṃ? Āsuṃ.
+
+---
+
+En \[las inflexiones\] “asabbadhātuka”, \[hay\] “bhū”.
+
+Opcionalmente, en \[las inflexiones denominadas\] “asabbadhātuka”,[^91] hay ‘bhū’ de la raíz “asa”.
+
+---
+
+Ejemplos:
+
+1. **Bhavissati** (\[él\] será), **bhavissanti** (\[ellos\] serán).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **āsuṃ** (\[ellos\] fueron).
+
+---
+
+**508\. 515\. Eyyassa ñāto iyā-ñā (1021).** \[Eyyassa \+ ñāto \+ iyā-ñā, 3\]
+
+**Eyya**ssa vibhattissa **ñā** icc etāya dhātuyā parassa **iyā-ñā**ādesā honti vā.
+
+Jāniyā, jaññā (Khu. i, 37).
+
+**Vā** ti kimatthaṃ? Jāneyya (Khu. i, 401).
+
+---
+
+Tras “ñā”, \[hay\] ‘iyā’ y ‘ñā’ de ‘eyya’.
+
+Opcionalmente, tras la raíz “ñā” hay las sustituciones ‘iyā’ y ‘ñā’ de la inflexión ‘eyya’ que sigue.
+
+---
+
+Ejemplos:
+
+1. **Jāniyā**, **jaññā** (\[él\] podría conocer).[^92]
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **jāneyya** (\[él\] podría conocer).
+
+---
+
+**509\. 516\. Nāssa lopo yakārattaṃ (1022).** \[Nāssa \+ lopo \+ yakārattaṃ, 3\]
+
+**Ñā** icc etāya dhātuyā parassa **nā**paccayassa lopo hoti vā, **ya**kārattañ ca.
+
+Jaññā (Khu. i, 37), nāyati.
+
+**Vā** ti kimatthaṃ? Jānāti (M. i, 143).
+
+---
+
+\[Hay\] elisión de ‘nā’ o el estado de ‘ya’.
+
+Hay elisión del sufijo ‘nā’[^93] que sigue a la raíz “ñā”, o bien pasa al estado de ‘ya’.
+
+---
+
+Ejemplos:
+
+1. **Jaññā[^94]** (\[él\] podría conocer), **nāyati** (\[él\] conoce).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en el ejemplo siguiente: **jānāti** (\[él\] conoce).
+
+---
+
+**510\. 487\. Lopañ c’ ettam akāro (1023).** \[Lopaṃ \+ ca \+ ettaṃ \+ akāro, 4\]
+
+**A**kārapaccayo lopam āpajjate, **e**ttañ ca hoti vā.
+
+Vajjemi (VinA. i, 336), vademi; vajjāmi, vadāmi (Khu. i, 115).
+
+---
+
+\[Hay\] elisión de la letra ‘a’, o el estado de ‘e’.
+
+El sufijo ‘a’[^95] se elide, u opcionalmente pasa al estado de ‘e’.
+
+---
+
+Ejemplos:
+
+1. **Vajjemi**,[^96] **vademi**; **vajjāmi**, **vadāmi** (yo digo).
+
+---
+
+**511\. 521\. Uttam okāro (1024).** \[Uttaṃ \+ okāro, 2\]
+
+**O**kārapaccayo **u**ttam āpajjate vā.
+
+Kurute (Khu. i, 241), karoti (M. i, 10).
+
+**Okāro** ti kimatthaṃ? Hoti.
+
+---
+
+\[Hay\] el estado de ‘u’ de la letra ‘o’.
+
+Opcionalmente, el sufijo ‘o’ pasa al estado de ‘u’.
+
+---
+
+Ejemplos:
+
+1. **Kurute**,[^97] **karoti** (\[él\] hace).
+
+¿Con qué fin se dice “okāro” (la letra ‘o’)? Para impedir la operación de esta regla cuando no hay la letra ‘o’, como en el ejemplo siguiente: **hoti** (\[él\] es).
+
+---
+
+**512\. 522\. Karass’ ākāro ca (1025).** \[Karassa \+ akāro \+ ca, 3\]
+
+**Kara** icc etassa dhātussa **a**kāro[^98] **u**ttam āpajjate vā.
+
+Kurute (Khu. i, 241), karoti (M. i, 10); kubbanti (Khu. v, 398); kayirati.
+
+**Karasse** ti kimatthaṃ? Sarati (Khu. i, 8), marati (Khu. vii, 92).
+
+---
+
+Y la letra ‘a’ de “kara”.
+
+Opcionalmente, la letra ‘a’ de la raíz “kara” pasa al estado de ‘u’.
+
+---
+
+Ejemplos:
+
+1. **Kurute**, **karoti** (\[él\] hace); **kubbanti** (\[ellos\] hacen); **kayirati** (\[él\] hace).
+
+¿Con qué fin se dice “karassa” (de “kara”)? Para impedir la operación de esta regla cuando no hay “kara”, como en los ejemplos siguientes: **sarati** (\[él\] recuerda), **marati** (\[él\] muere).
+
+---
+
+**513\. 435\. O ava sare (1027).** \[O \+ ava \+ sare, 3\]
+
+**O**kārassa dhātvantassa sare pare **avā**deso hoti.
+
+Cavati (Khu. vii, 92), bhavati (Khu. i, 67).
+
+**O** ti kimatthaṃ? Jayati (Khu. v, 354).[^99]
+
+---
+
+Cuando sigue una vocal, \[hay\] ‘ava’ en lugar de ‘o’.
+
+Cuando sigue una vocal, hay la sustitución ‘ava’ de la letra ‘o’ que es final de raíz.
+
+---
+
+Ejemplos:
+
+1. **Cavati**[^100] (\[él\] fallece), **bhavati** (\[él\] es).
+
+¿Con qué fin se dice “o”? Para impedir la operación de esta regla cuando no hay ‘o’, como en el ejemplo siguiente: **jayati** (\[él\] vence).
+
+---
+
+**514\. 491\. E aya (1028).** \[E \+ aya, 2\]
+
+**E**kārassa dhātvantassa sare pare **ayā**deso hoti.
+
+Nayati, jayati (Khu. v, 354).[^101]
+
+---
+
+\[Hay\] ‘aya’ de ‘e’.
+
+Cuando sigue una vocal, hay la sustitución ‘aya’ de la letra ‘e’ que es final de raíz.
+
+---
+
+Ejemplos:
+
+1. **Nayati[^102]** (\[él\] conduce), **jayati** (\[él\] vence).
+
+---
+
+**515\. 541\. Te āv’-āyā kārite (1029).** \[Te \+ āva-āyā \+ kārite, 3\]
+
+Te **o e** icc ete **āva-āyā**dese pāpuṇanti kārite.
+
+Lāveti, nāyeti.
+
+**Yogavibhāgena** aññasmim pi **e**kārassa **āyā**deso hoti. Gāyati (JA. i, 418), gāyanti (Vin. ii, 351).
+
+---
+
+Esas \[llegan a\] ‘āva’ y ‘āya’ en el causativo.
+
+En el causativo, esas \[letras\] ‘o’ y ‘e’ llegan a ‘āva’ y ‘āya’.
+
+---
+
+Ejemplos:
+
+1. **Lāveti**[^103] (\[él\] hace segar), **nāyeti[^104]** (\[él\] hace conducir).
+
+Por división del sutta, también en otro caso hay la sustitución ‘āya’ de la letra ‘e’:
+
+1. **Gāyati** (\[él\] canta), **gāyanti** (\[ellos\] cantan).[^105]
+
+---
+
+**516\. 466\. Ikārāgamo asabbadhātukamhi (1030).** \[I-kāra-āgamo \+ asabbadhātukamhi, 2\]
+
+Sabbasmiṃ asabbadhātukamhi **i**kārāgamo hoti.
+
+Gamissati (VinA. iii, 281), karissati (M. i, 31), labhissati, pacissati.
+
+**Asabbadhātukamhī** ti kimatthaṃ? Gacchati, karoti, labhati (Khu. i, 67), pacati (JA. ii, 238).
+
+---
+
+Cuando siguen las \[inflexiones\] “asabbadhātuka”, \[hay\] inserción de la letra ‘i’.
+
+Cuando siguen todas las \[inflexiones denominadas\] “asabbadhātuka” hay inserción de la ‘i’.
+
+---
+
+Ejemplos:
+
+1. **Gamissati** (\[él\] irá), **karissati** (\[él\] hará), **labhissati** (\[él\] obtendrá), **pacissati** (\[él\] cocinará).
+
+¿Con qué fin se dice cuando siguen las \[inflexiones\] “asabbadhātukamhi”? Para impedir la operación de esta regla cuando no hay las \[inflexiones\] “asabbadhātuka”, como en los ejemplos siguientes: **gacchati** (\[él\] va), **karoti** (\[él\] hace), **labhati** (\[él\] obtiene), **pacati** (\[él\] cocina).
+
+---
+
+**517\. 488\. Kvaci dhātu-vibhatti-paccayānaṃ dīgha-viparīt’-ādesa-lop’-āgamā ca (1105).** \[Kvaci \+ dhātu-vibhatti-paccayānaṃ \+ dīgha-viparīta-ādesa-lopa-āgamā \+ ca, 4\]
+
+Idha ākhyāte aniddiṭṭhesu[^106] sādhanesu[^107] kvaci dhātu-vibhatti-paccayānaṃ dīgha viparīt’ ādesa lop’ āgama icc etāni kāriyāni jinavacanānurūpāni kātabbāni.
+
+Jāyati (Khu. i, 23), kareyya (Khu. vii, 334), jāniyā, siyā (M. i, 62), kare (Khu. vii, 109), gacche (Khu. vii, 391), jaññā (Khu. v, 78), vakkhetha, dakkhetha, dicchati, agacchi, agacchuṃ, ahosi (VinA. i, 6), ahesuṃ (VinA. i, 7\) icc evamādīni aññāni pi sādhanāni yojetabbāni.
+
+---
+
+Y a veces \[hay\] alargamiento, inversión, sustitución, elisión e inserción de las raíces, de las inflexiones y de los sufijos.
+
+Aquí, en el \[capítulo del\] verbo, en las formaciones que no se han mostrado, a veces deben hacerse estas operaciones a las raíces, a las inflexiones y a los sufijos –alargamiento, inversión, sustitución, elisión e inserción–, conforme a la Palabra del Victorioso.
+
+---
+
+Ejemplos:
+
+1. **Jāyati** (nace), **kareyya** (\[él\] debería hacer), **jāniyā** (\[él\] podría conocer), **siyā** (podría ser), **kare** (\[él\] debería hacer), **gacche** (\[él\] debería ir), **jaññā** (\[él\] podría conocer), **vakkhetha** (diríais), **dakkhetha** (veríais), **dicchati** (\[él\] ve), **agacchi** (\[él\] vino), **agacchuṃ** (\[ellos\] vinieron), **ahosi** (fue), **ahesuṃ** (\[ellos\] fueron).[^108]
+
+Así deben formarse también las demás formaciones.
+
+---
+
+**518\. 446\. Attanopadāni parassapadattaṃ (1031).** \[Attanopadāni \+ parassapadattaṃ, 2\]
+
+Attanopadāni kvaci parassapadattam āpajjante.
+
+Vuccati (Khu. i, 22), labbhati (Khu. v, 97), paccati (Khu. i, 23).
+
+**Kvacī** ti kimatthaṃ? Karīyate, labbhate, paccate.
+
+---
+
+Las \[inflexiones\] “attanopada” \[alcanzan\] el estado de “parassapada”.
+
+A veces las \[inflexiones\] “attanopada” alcanzan el estado de “parassapada”.
+
+---
+
+Ejemplos:
+
+1. **Vuccati** (es dicho), **labbhati** (es obtenido), **paccati** (es cocinado).
+
+¿Con qué fin se dice “kvaci” (a veces)? Para admitir una excepción a esta regla, como en los ejemplos siguientes: **karīyate** (es hecho), **labbhate** (es obtenido), **paccate** (es cocinado).
+
+---
+
+**519\. 457\. Akārāgamo hiyyattanī-ajjatanī-kālātipattīsu (1032).** \[Akāra-āgamo \+ hiyyattanī, ajjatanī-kālātipattīsu, 2\]
+
+Kvaci **a**kārāgamo hoti **hiyyattanī-ajjatanī-kālātipatti** icc etāsu vibhattīsu.
+
+Agamā, agamī, agamissā.
+
+**Kvacī** ti kimatthaṃ? Gamā, gamī, gamissā.
+
+---
+
+\[Hay\] inserción de la letra ‘a’ cuando siguen \[las inflexiones\] “hiyyattanī”, “ajjatanī” y “kālātipatti”.
+
+A veces, cuando siguen las inflexiones “hiyyattanī”, “ajjatanī” y “kālātipatti”, hay inserción de la letra ‘a’.
+
+---
+
+Ejemplos:
+
+1. **Agamā**, **agamī** (\[él\] fue); **agamissā** (\[él\] habría ido).
+
+¿Con qué fin se dice “kvaci” (a veces)? Para admitir una excepción a esta regla, como en los ejemplos siguientes: **gamā**, **gamī** (\[él\] fue); **gamissā** (\[él\] habría ido).
+
+---
+
+**520\. 502\. Brūto ī timhi (1033).** \[Brūto \+ ī \+ timhi, 3\]
+
+**Brū** icc etāya dhātuyā **ī**kārāgamo hoti **ti**mhi vibhattimhi.
+
+Bravīti.
+
+---
+
+Tras “brū”, cuando sigue ‘ti’, \[hay\] ‘ī’.
+
+Tras la raíz “brū”, cuando sigue la inflexión ‘ti’, hay inserción de la letra ‘ī’.
+
+---
+
+Ejemplos:
+
+1. **Bravīti[^109]** (\[él\] habla).
+
+---
+
+**521\. 425\. Dhātuss’ anto lopo ’nekasarassa (1034).** \[Dhātussa \+ anto \+ lopo \+ ana-ekasarassa, 4\]
+
+Dhātussa anto kvaci lopo hoti anekasarassa.
+
+Gacchati, sarati, marati.
+
+**Anekasarasse** ti kimatthaṃ? Pāti, yāti (Khu. v, 113), vāti (Khu. v, 126).
+
+**Kvacī** ti kimatthaṃ? Mahīyati, mathīyati.
+
+---
+
+\[Hay\] elisión de la \[letra\] final de la raíz que no es de una sola vocal.
+
+A veces hay elisión de la \[letra\] final de la raíz que no es de una sola vocal.
+
+---
+
+Ejemplos:
+
+1. **Gacchati** (\[él\] va), **sarati** (\[él\] recuerda), **marati** (\[él\] muere).[^110]
+
+¿Con qué fin se dice “anekasarassa” (que no es de una sola vocal)? Para impedir la operación de esta regla cuando la raíz tiene una sola vocal, como en los ejemplos siguientes: **pāti** (\[él\] protege), **yāti** (\[él\] va), **vāti** (\[él\] sopla).
+
+¿Con qué fin se dice “kvaci” (a veces)? Para admitir una excepción a esta regla, como en los ejemplos siguientes: **mahīyati** (es honrado), **mathīyati** (es batido).[^111]
+
+---
+
+**522\. 476\. Isu-yamūnam anto ccho vā (1035).** \[Isu-yamūnaṃ \+ anto \+ ccho \+ vā, 4\]
+
+**Isu yamu** icc etesaṃ dhātūnaṃ anto **ccho** hoti vā.
+
+Icchati (Khu. i, 55), niyacchati.
+
+**Vā** ti kimatthaṃ? Esati (DAA. iii, 190), niyamati.
+
+---
+
+Opcionalmente, el final de “isu” y “yamu” \[se convierte en\] ‘ccha’.
+
+Opcionalmente, el final de las raíces “isu” y “yamu” se convierte en ‘ccha’.
+
+---
+
+Ejemplos:
+
+1. **Icchati[^112]** (\[él\] desea), **niyacchati[^113]** (\[él\] controla).
+
+¿Con qué fin se dice “vā” (opcionalmente)? Para admitir una excepción a esta regla, como en los ejemplos siguientes: **esati** (\[él\] busca), **niyamati** (\[él\] controla).
+
+---
+
+**523\. 526\. Kāritānaṃ ṇo lopaṃ.** \[Kāritānaṃ \+ ṇo \+ lopaṃ, 3\]
+
+Kārita icc etesaṃ paccayānaṃ **ṇo** lopam āpajjate.
+
+Kāreti (M. ii, 332), kārayati, kārāpeti (Vin. i, 240), kārāpayati.
+
+---
+
+\[Hay\] elisión de ‘ṇ’ de los \[sufijos\] “kārita”.
+
+La ‘ṇ’ de los sufijos causativos se elide.
+
+---
+
+Ejemplos:
+
+1. **Kāreti**, **kārayati**, **kārāpeti**, **kārāpayati** (\[él\] hace hacer).
+
+---
+
+Sāsanatthaṃ samuddiṭṭhaṃ, may’ ākhyātaṃ samāsato. Sakaṃ buddhivisesena, cintayantu vicakkhaṇā.
+
+Por el bien de la Dispensación he expuesto yo en resumen el \[capítulo del\] verbo. Que los sagaces reflexionen \[sobre él\] con su propio discernimiento.
+
+---
+
+**Iti ākhyāta-kappe catuttho kaṇḍo**
+
+**Así termina la cuarta sección en el capítulo del verbo**
+
+**Ākhyāta-kappo niṭṭhito**
+
+**Fin del capítulo del verbo**
+
+[^1]:  Lopānubandharayam atthavibhāgatīraṃ (Sī, K).
+
+[^2]:  La partícula “atha” aquí tiene el significado de inmediatamente después.
+
+[^3]:  Literalmente “voz para otra”.
+
+[^4]:  “Paṭhama-purisa” significa literalmente “primera persona”, pero se refiere a la tercera persona, por esta razón se traduce como “tercera persona”. “Majjhimapurisa”, literalmente “persona media”, aquí se traduce como “segunda persona”. “Uttamapurisa”, literalmente “persona principal”, aquí se traduce como “primera persona”.
+
+[^5]:  Se debe tomar la persona posterior en el orden de las inflexiones. El orden de las inflexiones es **ti**, **nti**, **si** **tha**, **mi** **ma**. Ejemplo: “ahaṃ pacāmi (yo cocino) y (ca) so pacati (él cocina): mayaṃ pacāma (nosotros cocinamos)”.
+
+[^6]:  Ejemplo canónico (Cp. 395): “ahañ ca Maddidevī ca, Jālī Kaṇhājinā c’ ubho; aññamaññaṃ sokanudā, vasāma assame tadā”. Traducción: En ese entonces, yo, la reina Maddī, y ambos, Jālī y Kaṇhājinā, vivimos, mutuamente disipando el pesar, en la ermita.    
+
+
+[^7]:  Sāvatthiyaṃ (K).
+
+[^8]:  No es un tiempo específico. Ejemplo: cuando se dice “sukhaṃ te hotu” (que haya felicidad para ti), puede significar tanto el tiempo presente como el futuro. 
+
+[^9]:  Hīyoppabhuti (Sī).
+
+[^10]:  Hīyoppabhuti (Sī).
+
+[^11]:  Hīyattanī (Sī).
+
+[^12]:  Yoge (K).
+
+[^13]:  Literalmente “en una acción que ha pasado sin ocurrir”. La no ocurrencia se puede deber a (1) deficiencia de causas o a (2) la existencia de condiciones que impiden su realización.
+
+[^14]:  Amha (Sī).
+
+[^15]:  Imhe (Sī).
+
+[^16]:  Amha (Sī).
+
+[^17]:  Imhe (Sī).
+
+[^18]:  Amhā (Sī).
+
+[^19]:  Amha (Sī).
+
+[^20]:  Ssamhā (Sī).
+
+[^21]:  Ssiṃsu (Sī).
+
+[^22]:  Ssaṃ (Sī).
+
+[^23]:  Ssamhā (Sī).
+
+[^24]:  Ssiṃsu (Sī).
+
+[^25]:  Ssaṃ (Sī).
+
+[^26]:  Estas inflexiones pueden aplicarse tras todas (sabba) las raíces (dhātu).
+
+[^27]:  Payojayatī ti (Sī). 
+
+[^28]:  Attānam ācaratī ti (Sī).
+
+[^29]:  Attānam ācaratī ti (Sī).
+
+[^30]:  Attānam ācaratī ti (Sī).
+
+[^31]:  Éste es un “paribhāsa-sutta”, una máxima, un enunciado general. 
+
+[^32]:  En Rū. §362 el término “paccaya” se define como “eso por medio del cual se hace entender el significado” y se refiere a las inflexiones nominales, inflexiones verbales, sufijos derivados primarios, sufijos derivados secundarios y sufijos en general. 
+
+[^33]:  Gopayati (Sī).
+
+[^34]:  Tumicchatthesu ca (Sī).
+
+[^35]:  Ācaratī ti (Sī).
+
+[^36]:  Ācaratī ti (Sī).
+
+[^37]:  Dhammam ācarati (Rū, Sad.). Dhammaṃ ācaratī ti dhammacārī (K).
+
+[^38]:  “Abravi, abravun” ti atītakālikapadāni katthaci dissanti, taṃ na yuttaṃ, taṃsaṃvaṇṇetabbabhūtānaṃ “kāreti, kārentī” tyādīnaṃ padānaṃ vattamānakālikattā. Bruvanti (Rū. 502-sutte), brunti (Sad. Dhātumāla 145-piṭṭhe). 
+
+[^39]:  Purimapiṭṭhe passitabbaṃ.
+
+[^40]:  Purimapiṭṭhe passitabbaṃ.
+
+[^41]:  Purimapiṭṭhe passitabbaṃ.
+
+[^42]:  Magganti (Sī).
+
+[^43]:  Gītanti (Sī).
+
+[^44]:  Vīriyanti (Sī).
+
+[^45]:  Rattīhi (Sī).
+
+[^46]:  Santaraṃ (Sī).
+
+[^47]:  Santarārati (Sī).
+
+[^48]:  Ijjate (Sī).
+
+[^49]:   El sufijo ‘ya’, cuando se añade tras raíces intransitivas, tiene sólo el sentido impersonal; pero tras raíces transitivas tiene los dos significados. 
+
+[^50]:  Dhātvantena (Sī).
+
+[^51]:  √vaca \+ ya \+ te \= vuccate. El procedimiento es similar para “paccate”. 
+
+[^52]:  √maja \+ ya \+ te \= majjate.
+
+[^53]:  √budha \+ ya \+ te \= bujjhate. 
+
+[^54]:  √hana \+ ya \+ te \= haññate.
+
+[^55]:  Tasmiṃ yapaccaye (Sī).
+
+[^56]:  En el significado de estado (bhāva) o de objeto (kamma).
+
+[^57]:  En el manuscrito cingalés se lee a continuación el pasaje “vā ti kimatthaṃ? Damyate”, y lo mismo en la Saddanīti-suttamālā. 
+
+[^58]:  √vaḍha \+ ya \+ te \= vaḍḍhate.
+
+[^59]:  Yathā (Sī, K).
+
+[^60]:  Kattari ca (Sī).
+
+[^61]:  Es decir  ‘ya’ se convierte en la forma anterior.
+
+[^62]:  Suttas §445-§452 tratan la aplicación de los signos de conjugación (vikaraṇa). El término “kattari” (voz activa) se arrastra desde §444. Nota del traductor (Ven. A. Thitzana, *Kaccāyana Pāli Vyākaraṇaṁ*, vol. 2, p. 637, n. 36): Todos los sufijos que aplican los ocho suttas de §445 a §452 se llaman “vikaraṇa-paccaya”, es decir, sufijos distintivos. En la palabra “vikaraṇa”, ‘vi’ significa “especial, distintivo” y ‘karaṇa’, “hacer”: son los sufijos que distinguen a cada verbo. Todos los verbos se clasifican en ocho grupos según estos ocho sufijos: bhūvādi-gaṇa (el grupo de “bhū”), rudhādi-gaṇa (el de “rudha”), divādi-gaṇa (el de “divu”), svādi-gaṇa (el de “su”), kiyādi-gaṇa (el de “kī”), gahādi-gaṇa (el de “gaha”), tanādi-gaṇa (el de “tanu”) y curādi-gaṇa (el de “cura”). Todos los verbos de estos grupos se usan en voz activa. Los verbos con el sufijo ‘ya’ de §440, en cambio, han de considerarse la voz pasiva de esos ocho grupos y de otros verbos.
+
+[^63]:  Los maestros dicen que el ejemplo “pāpuṇotī” no es correcto, y tampoco se encuentra en Nyāsa, Suttaniddesa, Padarūpasiddhi ni en Saddanīti. Con la raíz “apa” precedida de “pa”, la forma “pāpuṇotī” no se establece ni con el sufijo ‘ṇu’, ni con el sufijo ‘ṇā’, ni con el sufijo ‘uṇā’. 
+
+[^64]:  Muṇāti, luṇāti, puṇati (Sī).
+
+[^65]:  En este sutta, ‘ṇe’ y ‘ṇaya’ se denominan “kārita”, causativo, no porque sean verdaderos causativos sino porque la letra ‘ṇ’ –que prescribe el fortalecimiento de la vocal de la raíz es parte de los verdaderos sufijos causativos (§438)– se elide por §523. Para poder efectuar esta elisión se requiere llamarlos “kārita”. 
+
+[^66]:  El sujeto se puede colocar en la tercera inflexión: “purisena uccate”, lit., por el hombre diciendo.
+
+[^67]:  √mana \+ ya \+ te. En este caso ‘ya’ es el signo de conjugación del tercer grupo. 
+
+[^68]:  En este sutta “dhātuppaccaya” significa las raíces con los sufijos que empiezan por ‘kha’ y terminan en “kārita”, es decir, desde el sutta §433 hasta el §438. Sufijos: kha, cha, sa; āya; īya; ṇe, ṇaya, ṇāpe, ṇāpaya; ala.
+
+[^69]:  Nota del traductor (Ven. A. Thitzana, *Kaccāyana Pāli Vyākaraṇaṁ*, vol. 2, p. 645, n. 42): Por lo general, esta reduplicación sólo se aplica a los verbos que llevan los sufijos de §433 y §434. Los demás verbos, los que llevan signos de conjugación (vikaraṇa), también pueden reduplicarse cuando están en la inflexión “parokkhā” y en algunas otras terminaciones flexivas.
+
+[^70]:  Jigiṃsati (Sī).
+
+[^71]:  La ‘a’ de ‘va’ –la sílaba anterior (abbhāsa)– se sustituye por ‘ī’ por §465. √mā se sustituye por ‘maṃ’ por §467.
+
+[^72]:  La ‘a’ de ‘ta’ –la sílaba anterior (abbhāsa)– se sustituye por ‘i’ por §465.
+
+[^73]:  Pā pibo (Rū, Sī).
+
+[^74]:  Vāggahaṇamihānuvattate (Syā), vā ti kimatthaṃ? Viññāyati (Sī, Sad.) jādeso nāmhi jaṃ ñāmhi, nābhāvo timhi evidha.
+
+[^75]:  Véase Kacc. §508 para “jāniyā” y “jaññā”. 
+
+[^76]:  Según Kaccāyana, “dissati” puede ser tanto activo como pasivo. 
+
+[^77]:  Chappaccaye pare (Sī, Rū). 
+
+[^78]:  Gīṃ se (Sī).
+
+[^79]:  Jigiṃsati (Sī).
+
+[^80]:  En este caso la inflexión es “ajjatanī”.
+
+[^81]:  En este caso la inflexión es “hiyyattanī”. 
+
+[^82]:  A diferencia de §483, donde siempre hay fortalecimiento, en este sutta el fortalecimiento es opcional.
+
+[^83]:  √ji \+ a \+ ti. Por este sutta ‘i’ de “ji” se convierte en ‘e’ y por §514 ‘e’ se convierte en ‘aya’. 
+
+[^84]:  √bhū \+ a \+ ti. Por este sutta ‘ū’ se convierte en ‘o’ y por §513 ‘o’ se convierte en ‘ava’.
+
+[^85]:  Oculta.
+
+[^86]:  ‘Ppa’ es uno de los signos de conjugación (vikaraṇa) del grupo “kiyādi”.
+
+[^87]:  ‘Ṇhā’ es uno de los signos de conjugación (vikaraṇa) del grupo “kiyādi”.
+
+[^88]:  La letra ‘i’ es indicativa de √gamu.
+
+[^89]:  Jīra jīya mīya (K). Jīra jīyya mīyyā (Sī).
+
+[^90]:  √asa \+ eyya. La inflexión ‘eyya’ se sustituye por ‘iyā’ por §517. Por este sutta ‘a’ de “asa” se elide. 
+
+[^91]:  Las inflexiones “asabbadhātuka” son todas menos “vattamānā” (presente), “pañcamī” (imperativo), “sattamī” (potencial) y “hiyyattanī” (imperfecto).
+
+[^92]:  Para la sustitución de √ñā por ‘jā’, ‘jaṃ’ y ‘nā’ ver §470.
+
+[^93]:  En este caso ‘nā’ es el signo de conjugación (vikaraṇa) de √ñā.
+
+[^94]:  √ñā → ‘jaṃ’ (§470). La inflexión ‘eyya’ se sustituye por ‘ñā’ (§508).
+
+[^95]:  El sufijo ‘a’ es el signo de conjugación (vikaraṇa).
+
+[^96]:  √vada \+ a \+ mi. Por §500 “vada” → “vajja”.
+
+[^97]:  La ‘a’ de √kara se sustituye por ‘u’ por §512 y el signo de conjugación ‘o’ se sustituye por ‘u’ por este sutta.
+
+[^98]:  Akāro ca (Sī).
+
+[^99]:  Sareti kimatthaṃ? Hoti. O ti kimatthaṃ? Jayati (Sad., Sī).
+
+[^100]:  √cu \+ a \+ ti. Después ‘u’ → ‘o’ → ‘ava’.
+
+[^101]:  Jayati, sareti kimatthaṃ? Neti (Sī).
+
+[^102]:  √nī \+ a \+ ti. Después ‘ī’ → ‘e’ → ‘aya’.
+
+[^103]:  √lū \+ ṇe \+ ti. Después ‘ū’ → ‘o’ → ‘āva’. 
+
+[^104]:  √nī \+ ṇe \+ ti. Después ‘ī’ → ‘e’ → ‘āya’.
+
+[^105]:  √ge. No obstante que aquí no hay sufijo causativo ‘e’ → ‘āya’.
+
+[^106]:  Anipphannesu (Sī).
+
+[^107]:  El término “sādhana” se refiere al nombre de los sufijos “kita” tratados en el siguiente capítulo. No obstante que allí hay siete “sādhana”, en este capítulo se refiere solamente a tres: “kattu-sādhana”, “kamma-sādhana” y “bhāva-sādhana”. 
+
+[^108]:  Varios de estos ejemplos se pueden formar también por medio de otros suttas. El Venerable U Sīlānanda explica que esto se denomina “pajjunnagatika”,  el modo de la lluvia. Es decir, la lluvia cae haya caído antes o no. En los lugares donde ha caído antes, la lluvia volverá a caer. De la misma manera, esto se puede hacer por otro sutta y también por este sutta. Eso se llama “pajjunnagatika”.
+
+[^109]:  √brū \+ a \+ ti. Después ‘ū’ → ‘o’ → ‘ava’.
+
+[^110]:  La raíz ‘gamu’ tiene ‘u’ como vocal final, que se elide según este sutta.
+
+[^111]:  Cuando hay el sufijo ‘ya’ tras las raíces ‘maha’ y ‘matha’, la vocal final de las raíces, ‘a’, no se elide, sino que, según el sutta 502, la vocal final de la raíz se cambia en ‘ī’. 
+
+[^112]:  √isu \+ a \+ ti. El final de “isu” se convierte en ‘ccha’.
+
+[^113]:  ‘ni’ \+ √yamu \+ a \+ ti. El final de “yamu” se convierte en ‘ccha’.

@@ -195,7 +195,7 @@ CAPITULOS = {
         "titulo_es": "5-Capítulo de derivados secundarios",
         "titulo_en": "5-Secondary Derivative Chapter",
         "anterior": "4-Samāsa-Kappa",
-        "siguiente": "6-Ākhyāta-Kappa",   # en preparación: botón inactivo
+        "siguiente": "6-Ākhyāta-Kappa",
         "version": "1.1",
         "version_fecha": "2026-09-13",
         "version_nota": "Primera edición: §344–§405, los 62 suttas del "
@@ -220,6 +220,36 @@ CAPITULOS = {
                            "technical terms. Version 1.1 carries the "
                            "IEBH's review, in step with the Spanish "
                            "edition.",
+    },
+    "06-akhyata-kappa": {
+        "slug": "akhyata",
+        "obra": "Kaccāyana-Byākaraṇaṃ",
+        "obra_sub": "Gramática de Kaccāyana",
+        "obra_slug": "kaccayana",
+        "num": 6,
+        "titulo_pali": "6-Ākhyāta-Kappa",
+        "titulo_es": "6-Capítulo del verbo",
+        "titulo_en": "6-Verb Chapter",
+        "anterior": "5-Taddhita-Kappa",
+        "siguiente": "7-Kibbidhāna-Kappa",   # en preparación: botón inactivo
+        "version": "1.0",
+        "version_fecha": "2026-10-12",
+        "version_nota": "Primera edición: §406–§523, los 118 suttas del "
+                        "Ākhyāta-kappa en sus cuatro secciones, revisados "
+                        "por el IEBH, con las referencias canónicas de la "
+                        "edición base, las 71 notas de Nandisena y las "
+                        "añadidas en la revisión —dos de ellas de Ven. A. "
+                        "Thitzana, en §445 y §458—, y las secuencias de "
+                        "formación de los signos de conjugación.",
+        "version_en": "1.0",
+        "version_fecha_en": "2026-10-12",
+        "version_nota_en": "First English edition: Bhikkhu Nandisena's "
+                           "translation with the apparatus of the Spanish "
+                           "edition (numbered examples, word-count "
+                           "breakdowns after Thitzana, formation sequences, "
+                           "references and notes, two of them by Ven. A. "
+                           "Thitzana) and the corrections to the English "
+                           "recorded in the deviations memo.",
     },
 }
 
@@ -443,7 +473,8 @@ def escapar_html(t):
 RE_OTRA_OBRA = re.compile(
     r'[A-ZĀĪŪÑṄ][a-zāīūṃṇṭḍñṅḷ]{0,4}\.\s*(?:[ivxlcdm]+\s+)?$')
 # "Kac. §79" es la propia obra: sí se enlaza si el sutta está en el capítulo.
-RE_PROPIA_OBRA = re.compile(r'Kac\.\s*$')
+# También "Kacc. §508" (capítulo 6, nota de §471).
+RE_PROPIA_OBRA = re.compile(r'Kacc?\.\s*$')
 
 SUTTAS_VALIDOS = set()
 SUTTAS_OTROS_CAP = {}     # n → (slug, título del capítulo, título del sutta)
@@ -517,6 +548,9 @@ def marcar_notas(t, notas):
 
 def enfasis(t):
     t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
+    # Tachado (capítulo 6, 2026-10-12): Nandisena marca con él la letra que
+    # se elide en las secuencias de formación —«div + **~~y~~**a + ti»—.
+    t = re.sub(r'~~(?!\s)(.+?)(?<!\s)~~', r'<del>\1</del>', t)
     t = re.sub(r'(?<!\*)\*(?!\s)([^*]+?)(?<!\s)\*(?!\*)', r'<i>\1</i>', t)
     return t
 
@@ -551,6 +585,8 @@ ABREVIATURAS = {
     "DhA":          "Dhammapada-aṭṭhakathā",
     "JA":           "Jātaka-aṭṭhakathā",
     "VinA":         "Vinaya-aṭṭhakathā",
+    "Vin.A":        "Vinaya-aṭṭhakathā",           # así en el Ākhyāta (§499)
+    "SnA":          "Suttanipāta-aṭṭhakathā",      # Ākhyāta
     "AbhiA":        "Abhidhamma-aṭṭhakathā",
     "AbhA":         "Abhidhamma-aṭṭhakathā",       # así en el Samāsa (§322)
     "SuttanipātaA": "Suttanipāta-aṭṭhakathā",
@@ -820,8 +856,10 @@ def parrafos(lineas, notas, clase="rest-para"):
             out.append('<div class="formation-title"><strong>{0}</strong></div>'
                        .format(inline(mt.group(1), notas)))
             continue
-        me = re.match(r'^(Secuencia|Ejemplos?[^:]*|Contraejemplos?[^:]*'
-                      r'|Sequence|Examples?[^:]*|Counter-examples?[^:]*):\s*$', t)
+        # «Secuencia de **pacati**:» (capítulo 6) es rótulo de secuencia, y
+        # su lista va en mono como la de «Secuencia:».
+        me = re.match(r'^(Secuencia(?: de .+?)?|Ejemplos?[^:]*|Contraejemplos?[^:]*'
+                      r'|Sequence(?: of .+?)?|Examples?[^:]*|Counter-examples?[^:]*):\s*$', t)
         if me:
             volcar_buf()
             ejemplos[0] = me.group(1).startswith(

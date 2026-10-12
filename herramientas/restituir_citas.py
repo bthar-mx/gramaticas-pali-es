@@ -53,11 +53,16 @@ CAPITULOS = {
     # (fallo del IEBH, briefing 59 §5.1) y sin los «\)» del markdown.
     "samasa": ("4 - Samāsa-Kaccāyana (citas).md",
                "docs/4. Samāsa-Kappa.md", 316, 343),
+    # Capítulo 6 (2026-10-12): la base es la conversión de Nandisena que
+    # vive en docs/, «6 - Ākhyāta-Kaccāyana.md».
+    "akhyata": ("6 - Ākhyāta-Kaccāyana.md",
+                "docs/6. Ākhyāta-Kappa.md", 406, 523),
 }
 
 PROPUESTA = "docs/fuentes/citas-canonicas.json"
 
-SIGLAS = ("Khu|Vin|Abhi|AbhA|DhA|DA|MA|SA|AA|JA|VinA|VimānaA|UdānaA"
+# Capítulo 6: «SnA.», «DAA.» y «Vin.A.» (con punto interior, §499).
+SIGLAS = ("Vin\\.A|SnA|DAA|Khu|Vin|Abhi|AbhA|DhA|DA|MA|SA|AA|JA|VinA|VimānaA|UdānaA"
           "|PetavatthuA|Vism|Mog\\.-pañcikā|Sad|D|M|A|S|J")
 
 # (Khu. i, 336) — sigla conocida, tomo en romanos, y lo que siga. Desde la

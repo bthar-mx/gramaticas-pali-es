@@ -93,7 +93,7 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *tvādi* | los sufijos tvā, etc. | Nandisena lo cita dentro de abyaya («tvādi-paccayanta-pada») sin entrada propia. | cosecha s. 57, IEBH 2026-09-05 — Kacc. §247, §601 · Rū. §425, §434, §457, §488, §528, §534 (y 4 más) · Nyāsa §2, §20, §38, §51, §83, §209 (y 40 más) |
 | *saddūpapada* | lit., palabra cercana; [compuesto cuyo] miembro precedente es una palabra | Thitzana 71, Nyāsa 65: los derivados primarios cuyo upapada es un sadda y no un kāraka. La norma tiene upapada «miembro precedente». | cosecha s. 57, IEBH 2026-09-05 — Kacc. §670 · Nyāsa §20, §31, §48, §58, §104, §261 (y 28 más) |
 | *sambandhī* | el término de la relación; lo relacionado (genitivo) | Rū. 15, Nyāsa 33: pareja de sambandha, que sí está. | cosecha s. 57, IEBH 2026-09-05 — Kacc. §277 · Rū. §362, §413, §640, §663 · Nyāsa §2, §3, §9, §13, §14, §17 (y 22 más), Sandhi (introducción) |
-| *hetvattha* | en el sentido de causa | Kacc. 15 (instrumental y ablativo de causa). | cosecha s. 57, IEBH 2026-09-05 — Kacc. §275, §282, §289, §438 · Rū. §540, §544 · Nyāsa §271, §274, §282, §286, §289, §299 (y 15 más) |
+| *hetvattha* | significado de causa | Kacc. 15 (instrumental y ablativo de causa). Antes «en el sentido de causa»; fijado por el IEBH el 2026-10-12 como en el Ākhyāta (§438: «en el significado de causa»). | cosecha s. 57, IEBH 2026-09-05 — Kacc. §275, §282, §289, §438 · Rū. §540, §544 · Nyāsa §271, §274, §282, §286, §289, §299 (y 15 más) |
 | *karaṇattha* | en el sentido de instrumento |  | cosecha s. 57, IEBH 2026-09-05 — Kacc. §310 · Nyāsa §2, §18, §38, §164, §229, §245 (y 13 más) |
 | *byāpika* | (locativo) que abarca; permeante; extensible | Kacc. 4, Rū. 4: uno de los tres adhikaraṇa con opasilesika y vesayika, que sí están. | cosecha s. 57, IEBH 2026-09-05 — Kacc. §278 |
 | *ubhayattha* | en ambos sentidos; en los dos casos | Rū. 5. | cosecha s. 57, IEBH 2026-09-05 — Nyāsa §31, §51, §82 |
@@ -236,6 +236,49 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *apādāna* | caso del punto de partida | Nombre del kāraka. IEBH 2026-10-08: sin el caso entre paréntesis; un kāraka no equivale a un caso. En el capítulo 3 y en la clasificación (IEBH 2026-10-01) se usa el papel, sin «caso»: «punto de partida (apādāna)»; Nandisena dice «ablativo» (nota del traductor 1, reescrita como nota nuestra). | Kāraka, IEBH 2026-09-28 — Kacc. §271 · Rū. §308 |
 | *okāsa* | caso del lugar | Nombre del kāraka (IEBH 2026-10-08: sin el caso entre paréntesis; un kāraka no equivale a un caso); también *adhikaraṇa*. En el capítulo 3 y en la clasificación (IEBH 2026-10-01) se usa el papel, sin «caso»: «lugar (okāsa)»; Nandisena dice «locativo» (nota del traductor 37, reescrita como nota nuestra). | Kāraka, IEBH 2026-09-28 — Kacc. §278 · Rū. §320 |
 | *sāmī* | poseedor | No es kāraka (Rū. §316). IEBH 2026-10-08: antes «posesivo/genitivo»; sin el caso, como los kāraka. En el capítulo 3 y en la clasificación (IEBH 2026-10-01) se usa el papel, sin «caso»: «poseedor (sāmī)»; Nandisena dice «posesivo (también genitivo)» (nota del traductor 46, reescrita como nota nuestra). | Kāraka, IEBH 2026-09-28 — Kacc. §283 · Rū. §316 |
+| *ākhyāta* | verbo | Título del capítulo 6 («6-Capítulo del verbo»); en el cuerpo, «el \[capítulo del\] verbo» (§517). | Ākhyāta, IEBH 2026-10-12 — Kacc. §517 |
+| *parassapada* | sin traducir; equivalencia «voz activa» | Las seis primeras inflexiones de cada tiempo. Literalmente «voz para otra» (nota de §406). | Ākhyāta, IEBH 2026-10-12 — Kacc. §406 · Kacc. §456 |
+| *attanopada* | sin traducir; equivalencia «voz media» | Las seis últimas inflexiones de cada tiempo; «\[inflexiones\] medias» en §453–§454. | Ākhyāta, IEBH 2026-10-12 — Kacc. §407 · Kacc. §453 · Kacc. §454 |
+| *purisa* | persona | En el Ākhyāta, la persona gramatical; **no** «hombre», que es su sentido en el Kāraka. | Ākhyāta, IEBH 2026-10-12 — Kacc. §408 |
+| *paṭhamapurisa* | tercera persona | Literalmente «primera persona»: el orden pāḷi empieza por la tercera (nota de §408). | Ākhyāta, IEBH 2026-10-12 — Kacc. §408 · Kacc. §410 |
+| *majjhimapurisa* | segunda persona | Literalmente «persona media» (nota de §408). N-EN: «middle person». | Ākhyāta, IEBH 2026-10-12 — Kacc. §408 · Kacc. §411 |
+| *uttamapurisa* | primera persona | Literalmente «persona principal» (nota de §408). | Ākhyāta, IEBH 2026-10-12 — Kacc. §408 · Kacc. §412 |
+| *vattamānā* | sin traducir; inflexión del presente | Nombre de tiempo, sin glosa en el cuerpo; «presente» sólo en la nota de §507. | Ākhyāta, IEBH 2026-10-12 — Kacc. §414 · Kacc. §423 |
+| *pañcamī* | sin traducir; inflexión del imperativo | **En el Ākhyāta no es la quinta inflexión nominal** (ablativo): es el nombre del imperativo. «Imperativo» sólo en la nota de §507. | Ākhyāta, IEBH 2026-10-12 — Kacc. §415 · Kacc. §424 |
+| *sattamī* | sin traducir; inflexión del potencial | **En el Ākhyāta no es la séptima inflexión nominal** (locativo): es el nombre del potencial. «Potencial» sólo en la nota de §507. | Ākhyāta, IEBH 2026-10-12 — Kacc. §416 · Kacc. §425 |
+| *parokkhā* | sin traducir; pasado no percibido directamente |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §417 · Kacc. §426 |
+| *hiyyattanī* | sin traducir; pasado a partir de ayer | «Imperfecto» sólo en la nota de §507. | Ākhyāta, IEBH 2026-10-12 — Kacc. §418 · Kacc. §427 |
+| *ajjatanī* | sin traducir; pasado próximo, a partir de hoy |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §419 · Kacc. §428 |
+| *bhavissantī* | sin traducir; futuro |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §421 · Kacc. §429 |
+| *kālātipatti* | sin traducir; acción pasada no ocurrida | «En una acción no ocurrida» (kriyātipanne). | Ākhyāta, IEBH 2026-10-12 — Kacc. §422 · Kacc. §430 |
+| *sabbadhātuka* / *asabbadhātuka* | sin traducir | Sabbadhātuka: hiyyattanī, sattamī, pañcamī y vattamānā, que se aplican tras todas las raíces (nota de §431); asabbadhātuka: las demás. | Ākhyāta, IEBH 2026-10-12 — Kacc. §431 · Kacc. §507 · Kacc. §516 |
+| *āṇatti* / *āsiṭṭha* | orden / bendición |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §415 |
+| *anumati* / *parikappa* | consentimiento / suposición |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §416 |
+| *paccakkha* / *apaccakkha* | percibido directamente / no percibido directamente |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §417 · Kacc. §418 |
+| *ekābhidhāna* | enunciación conjunta | «Cuando todas \[las personas\] se enuncian juntas». | Ākhyāta, IEBH 2026-10-12 — Kacc. §409 |
+| *paribhāsā* | máxima, enunciado general | «Paribhāsa-sutta» (nota de §432). | Ākhyāta, IEBH 2026-10-12 — Kacc. §432 |
+| *kārita* | sin traducir; equivalencia «causativo» | Nombre de los sufijos ṇe, ṇaya, ṇāpe, ṇāpaya (§438) y, por extensión, de ṇe y ṇaya del grupo de «cura» (§452), que no son verdaderos causativos. | Ākhyāta, IEBH 2026-10-12 — Kacc. §438 · Kacc. §439 · Kacc. §452 · Kacc. §483 |
+| *tumicchattha* | significado de querer \[hacer algo\] | El desiderativo. | Ākhyāta, IEBH 2026-10-12 — Kacc. §434 |
+| *atticchattha* | significado de desear para uno mismo |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §437 |
+| *upamāna* | comparación |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §435 · Kacc. §436 |
+| *ācāra* | comportamiento |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §435 · Kacc. §436 |
+| *dhāturūpa* | forma de raíz | «Cuando tiene forma de raíz». | Ākhyāta, IEBH 2026-10-12 — Kacc. §439 |
+| *kattari* | en la voz activa |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §444 · Kacc. §445–§452 · Kacc. §454 · Kacc. §456 |
+| *pubbarūpa* | forma anterior | «El sufijo ‘ya’ se convierte en la forma anterior». | Ākhyāta, IEBH 2026-10-12 — Kacc. §443 |
+| *yathāsambhavaṃ* | según los casos | **No** confundir con *yathāsaṅkhyaṃ* («respectivamente»), que también está en el capítulo. | Ākhyāta, IEBH 2026-10-12 — Kacc. §441 |
+| *vikaraṇa* | signo de conjugación | Los sufijos de §445–§452 que distinguen los ocho grupos de raíces («vikaraṇa-paccaya»). | Ākhyāta, IEBH 2026-10-12 — Kacc. §445 · Kacc. §452 |
+| *dhātugaṇa* | grupo de raíces | Los ocho grupos (bhūvādi, rudhādi, divādi, svādi, kiyādi, gahādi, tanādi, curādi) se dejan sin traducir: «el grupo de raíces que empieza con “bhū”», etc. | Ākhyāta, IEBH 2026-10-12 — Kacc. §445 · Kacc. §452 |
+| *dhātuppaccaya* | raíz con sufijo | Las raíces con los sufijos de §433–§438 (nota de §455). | Ākhyāta, IEBH 2026-10-12 — Kacc. §455 |
+| *dhātu* | raíz | «Reciben el nombre “dhātu” (raíz)». | Ākhyāta, IEBH 2026-10-12 — Kacc. §457 |
+| *dvebhāva* | reduplicación | En el Ākhyāta, reduplicación de la sílaba inicial de la raíz. | Ākhyāta, IEBH 2026-10-12 — Kacc. §458 |
+| *ekassara* | que tiene una sola vocal |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §458 |
+| *abbhāsa* | sin traducir; la sílaba anterior (reduplicada) | «La \[sílaba\] anterior de la raíz reduplicada recibe el nombre “abbhāsa”». | Ākhyāta, IEBH 2026-10-12 — Kacc. §459 · Kacc. §460–§467 |
+| *byañjananta* | consonante final \[de la raíz\] |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §472 · Kacc. §473 |
+| *niccaṃ* | siempre | Extremo obligatorio de la escala kvaci / vā / navā / vibhāsā. | Ākhyāta, IEBH 2026-10-12 — Kacc. §481 |
+| *vipariyaya* | inversión | Sinónimo de *viparīta* (inversión). | Ākhyāta, IEBH 2026-10-12 — Kacc. §488 |
+| *yogavibhāga* | división del sutta | Cf. *suttavibhāga* (§20 del Sandhi). | Ākhyāta, IEBH 2026-10-12 — Kacc. §515 |
+| *anekasara* | que tiene varias vocales |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §521 |
+| *sāsana* | la Dispensación | Verso final del capítulo. | Ākhyāta, IEBH 2026-10-12 — Kacc. §523 |
 
 ## En discusión
 

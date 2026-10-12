@@ -64,6 +64,7 @@ DETALLE = {
     3: "§271–§315, sexta sección del Nāma-kappa.",
     4: "§316–§343, séptima sección del Nāma-kappa.",
     5: "§344–§405, octava sección del Nāma-kappa.",
+    6: "§406–§523, en cuatro kaṇḍas.",
 }
 
 OBRAS = [
@@ -263,6 +264,7 @@ EN = {
         "Chapter on the <i>uṇādi</i> suffixes.",
     "§1–§51, en cinco kaṇḍas.": "§1–§51, in five kaṇḍas.",
     "§52–§270, en cinco kaṇḍas.": "§52–§270, in five kaṇḍas.",
+    "§406–§523, en cuatro kaṇḍas.": "§406–§523, in four kaṇḍas.",
     "§271–§315, sexta sección del Nāma-kappa.":
         "§271–§315, sixth section of the Nāma-kappa.",
     "Traducción completa.": "Complete translation.",
@@ -742,7 +744,7 @@ def cuenta_raices():
 # datos de cada recurso; aquí no se teclea ningún número.
 
 # Estado de los capítulos de Kaccāyana que no están publicados.
-ESTADO_KACC = {6: ("en preparación", "in preparation")}
+ESTADO_KACC = {}   # el 6 (Ākhyāta) se publicó el 2026-10-12
 
 # Los recursos de la portada, en tres grupos por lo que hace el estudiante.
 # (href, título es, título en, línea es, línea en, borrador). Los «__X__» se
