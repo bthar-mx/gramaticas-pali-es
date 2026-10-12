@@ -4081,7 +4081,7 @@ N106. **Las [I] dentro de las notas** (§431, §444, §445, §447, §466, §471,
 
 - [x] Revisado
 
-N107. **El pariśiṣṭa alimenta la columna «Clase de sutta» de Ākhyāta** (cambia N6, que lo dejaba fuera). Cada sutta lleva «pariśiṣṭa: …» con el grupo o los grupos en que el libro lo pone, como están impresos (saññā, adhikāra, paribhāsā o la frase birmana), y la traducción al principio de su nota; en §406 y §413 va además el rótulo del propio sutta. Las dos cuentas que no cuadran, (ဂ) y (ဆ), se dicen en el aviso del capítulo y en §523. Publicado en la v0.12.1.
+N107. **El parisiṭṭha alimenta la columna «Clase de sutta» de Ākhyāta** (cambia N6, que lo dejaba fuera). Cada sutta lleva «parisiṭṭha: …» con el grupo o los grupos en que el libro lo pone, como están impresos (saññā, adhikāra, paribhāsā o la frase birmana), y la traducción al principio de su nota; en §406 y §413 va además el rótulo del propio sutta. Las dos cuentas que no cuadran, (ဂ) y (ဆ), se dicen en el aviso del capítulo y en §523. Publicado en la v0.12.1.
 
 - [x] Revisado
 

@@ -26,7 +26,7 @@ from generar_clasificacion import leer_md
 GRUPOS = {"obra", "capitulo"}
 
 MD = {"sandhi": "01-sandhi-kappa", "nama": "02-nama-kappa", "karaka": "03-karaka-kappa",
-      "samasa": "04-samasa-kappa", "taddhita": "05-taddhita-kappa"}
+      "samasa": "04-samasa-kappa", "taddhita": "05-taddhita-kappa", "akhyata": "06-akhyata-kappa"}
 
 
 def cargar(raiz):
