@@ -25,7 +25,7 @@ La palabra “atha” se emplea \[en estos significados\]: (i) continuación (ad
 
 ---
 
-**406\. 429\. Atha**[^2] **pubbāni vibhattīnaṃ cha parassapadāni (865).** \[Atha \+ pubbāni \+ vibhattīnaṃ \+ cha \+ parassapadāni, 5\]
+**406\. 429\. Atha[^2] pubbāni vibhattīnaṃ cha parassapadāni (865).** \[Atha \+ pubbāni \+ vibhattīnaṃ \+ cha \+ parassapadāni, 5\]
 
 Atha sabbāsaṃ vibhattīnaṃ yāni yāni pubbakāni **cha** padāni, tāni tāni **parassapada**saññāni honti.
 
