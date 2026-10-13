@@ -32,6 +32,16 @@ html{scroll-padding-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 10px)}
 
 .filtros.rev button[data-v=rev][aria-pressed=true]{background:var(--rakta)}
 
+/* plegables (2026-10-13): la tabla de los casos y cada sección empiezan plegadas */
+details.plg>summary{list-style:none;cursor:pointer}
+details.plg>summary::-webkit-details-marker{display:none}
+details.plg>summary::before{content:'▸';display:inline-block;width:1em;flex:0 0 1em;font-size:.7em;color:var(--haritala);font-style:normal}
+details.plg[open]>summary::before{content:'▾'}
+details.plg>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.casos-plg{margin:26px 0 0}
+.casos-plg>summary{display:inline-block}
+.casos-plg .casos{margin-top:8px}
+
 /* secciones y tarjetas */
 .sec{margin:40px 0 6px;display:flex;align-items:baseline;gap:12px;scroll-margin-top:84px}
 .sec h2{font-size:22px;margin:0;font-weight:700}
@@ -119,11 +129,12 @@ ul.ejs .rf span[title]{cursor:help}
   <rc-lado><div class="hero fija" id="hero"></div></rc-lado>
   <rc-debajo>
 <p class="aviso">Borrador en revisión. El español marcado como propuesta está pendiente del IEBH; el modo «Revisión» enseña de dónde viene cada traducción.</p>
+<details class="plg casos-plg"><summary class="lbl">Los seis casos (kāraka) y el sāmī (poseedor)</summary>
 <div class="rc-desliza"><table class="casos">
-  <caption class="lbl">Los seis casos (kāraka) y el sāmī</caption>
   <thead><tr><th>kāraka</th><th>nombre</th><th>Kacc.</th></tr></thead>
   <tbody id="casos"></tbody>
 </table></div>
+</details>
   </rc-debajo>
 </rc-titulo>
 
@@ -247,6 +258,13 @@ let ord='ru';
 /* Qué grupos del índice están plegados. Dura lo que la visita, como plegar la
    barra entera: es comodidad del momento, no una preferencia. */
 const abiertos={};
+/* Las secciones del panel principal empiezan plegadas (IEBH, 2026-10-13).
+   Lo que el lector despliega dura lo que la visita. */
+const secAbiertas={};
+/* abrir la sección que contiene un elemento (enlace del índice, #ancla) */
+function abrirHasta(el){for(let d=el&&el.closest('details.grp');d;d=d.parentElement&&d.parentElement.closest('details.grp'))d.open=true}
+/* un elemento dentro de una sección plegada no tiene caja: se mide su sección */
+const caja=el=>{const d=el.closest('details.grp:not([open])');return (d?d.querySelector('summary'):el).getBoundingClientRect()};
 function grupoSb(key,label,tip,items,n,extra){
   return `<details class="sb-sec" data-g="${key}"${extra||''}${abiertos[key]===false?'':' open'}><summary${tip?` title="${esc(tip)}"`:''}><span class="gl">${label}</span><span class="n">${n}</span></summary>${items}</details>`;
 }
@@ -259,9 +277,10 @@ function render(){
   let h='',sb='';
   if(ord==='ru'){
     D.inflexiones.forEach(i=>{
-      h+=`<div class="sec" id="sec-${i.id}"><h2>${i.ruta}. <span class="pl">${esc(i.pali)}</span> · ${esc(i.es)}</h2><span class="rule"></span></div>`;
+      h+=`<details class="plg grp" id="sec-${i.id}"${secAbiertas['sec-'+i.id]?' open':''}><summary class="sec"><h2>${i.ruta}. <span class="pl">${esc(i.pali)}</span> · ${esc(i.es)}</h2><span class="rule"></span></summary>`;
       let it='';
       i.sub.forEach(u=>{h+=card(u,i.id);it+=`<a href="#${u.id}" data-c="${u.id}"><b>${u.ruta}</b><i>${esc(u.pali)}</i></a>`});
+      h+='</details>';
       sb+=grupoSb('ru-'+i.id,`${i.ruta} · <span class="pl">${esc(i.pali)}</span>`,i.es,it,i.sub.length,` data-inf="${i.id}"`);
     });
   }else{
@@ -270,22 +289,26 @@ function render(){
     Object.keys(g).sort((a,b)=>(a==='—'?9999:+a)-(b==='—'?9999:+b)).forEach(k=>{
       const r=Object.keys(C).filter(x=>C[x][0]===k).sort((a,b)=>a-b)[0];
       const sid='k'+(k==='—'?'sin':k);
-      h+=`<div class="sec" id="${sid}"><h2>${k==='—'?'Sin correspondencia en Kaccāyana':'Kacc. §'+k} · <span class="pl">${esc(TIT[r])}</span></h2><span class="rule"></span></div><p class="sec-desc">= Rū. §${r} · Sadd. ${C[r][1]}</p>`;
+      h+=`<details class="plg grp" id="${sid}"${secAbiertas[sid]?' open':''}><summary class="sec"><h2>${k==='—'?'Sin correspondencia en Kaccāyana':'Kacc. §'+k} · <span class="pl">${esc(TIT[r])}</span></h2><span class="rule"></span></summary><p class="sec-desc">= Rū. §${r} · Sadd. ${C[r][1]}</p>`;
       const G=KGR.find(x=>x[3](k))[0];
       it[G]=(it[G]||'')+`<a href="#${sid}" data-c="${sid}"><b>${k==='—'?'—':'§'+k}</b><i>${esc(TIT[r])}</i></a>`;nk[G]=(nk[G]||0)+1;
       g[k].forEach(([u,inf])=>h+=card(u,inf).replace(`id="${u.id}"`,`id="${u.id}-${sid}"`));
+      h+='</details>';
     });
     KGR.forEach(([key,label,tip])=>{if(it[key]) sb+=grupoSb('kc-'+key,esc(label),tip,it[key],nk[key])});
   }
   document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
+  document.querySelectorAll('#out details.grp').forEach(d=>d.addEventListener('toggle',()=>{secAbiertas[d.id]=d.open;espiar()}));
   filtrar();
 }
 let inf='all';
 function filtrar(){
   const q=norm(document.getElementById('q').value.trim());let n=0;
   document.querySelectorAll('.card').forEach(c=>{const ok=(inf==='all'||c.dataset.inf===inf)&&(!q||c.dataset.t.includes(q));c.hidden=!ok;if(ok)n++});
-  document.querySelectorAll('.sec').forEach(s=>{let e=s.nextElementSibling,any=false;while(e&&!e.classList.contains('sec')){if(e.classList.contains('card')&&!e.hidden)any=true;e=e.nextElementSibling}s.hidden=!any;const d=s.nextElementSibling;if(d&&d.classList.contains('sec-desc'))d.hidden=!any});
+  document.querySelectorAll('#out details.grp').forEach(d=>{const any=!!d.querySelector('.card:not([hidden])');d.hidden=!any;
+    /* buscando, se abre lo que tiene resultados */
+    if(q&&any)d.open=true});
   /* el índice enseña sólo lo que queda a la vista, con su cuenta */
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;d.querySelector('.n').textContent=v});
   document.getElementById('count').textContent=n+(n===1?' uso':' usos');
@@ -295,14 +318,16 @@ function filtrar(){
 /* el uso que está arriba en pantalla, para no perder el sitio al cambiar de orden */
 function enPantalla(){
   if(scrollY<document.getElementById('out').offsetTop-150) return null;
-  for(const c of document.querySelectorAll('.card')){if(c.hidden)continue;if(c.getBoundingClientRect().bottom>120)return c.dataset.u}
+  for(const c of document.querySelectorAll('#out details.grp[open] .card')){if(c.hidden)continue;if(c.getBoundingClientRect().bottom>120)return c.dataset.u}
   return null;
 }
 function grupo(id,fn){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));fn(b.dataset.v)})}
 grupo('f-inf',v=>{inf=v;filtrar();
-  if(v!=='all'){const d=document.querySelector(`#sb-list .sb-sec[data-inf="${v}"]`);if(d)d.open=true}});
+  if(v!=='all'){const d=document.querySelector(`#sb-list .sb-sec[data-inf="${v}"]`);if(d)d.open=true;
+    if(ord==='ru'){const s=document.getElementById('sec-'+v);if(s)s.open=true}
+    else document.querySelectorAll('#out details.grp:not([hidden])').forEach(s=>s.open=true)}});
 grupo('f-ord',v=>{const u=enPantalla();ord=v;render();
-  if(u){const c=document.querySelector(`.card[data-u="${u}"]:not([hidden])`);if(c)c.scrollIntoView()}});
+  if(u){const c=document.querySelector(`.card[data-u="${u}"]:not([hidden])`);if(c){abrirHasta(c);c.scrollIntoView()}}});
 grupo('f-rev',v=>document.body.classList.toggle('rev',v==='rev'));
 document.getElementById('q').addEventListener('input',filtrar);
 const root=document.documentElement;
@@ -339,7 +364,8 @@ function pintarBarra(oculta){
   root.classList.toggle('sin-barra',oculta);
   /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 }
-pintarBarra(false);
+/* Empieza oculto (IEBH, 2026-10-13): el ☰ lo devuelve. */
+pintarBarra(ancha());
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
 /* plegado, el ☰ se queda en la esquina, donde estaba (recursos.css) */
@@ -349,13 +375,18 @@ document.getElementById('sb-plegar').onclick=()=>document.querySelectorAll('#sb-
 addEventListener('resize',()=>{if(!ancha()) root.classList.remove('sin-barra')});
 scr.onclick=cerrar;
 addEventListener('keydown',e=>{if(e.key==='Escape')cerrar()});
-sbEl.addEventListener('click',e=>{if(e.target.closest('a')&&!ancha())cerrar()});
+sbEl.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;
+  const t=document.getElementById((a.getAttribute('href')||'').slice(1));if(t)abrirHasta(t);
+  if(!ancha())cerrar()});
+/* un #ancla que cae en una sección plegada la abre */
+function abrirAncla(){const id=decodeURIComponent(location.hash.slice(1));const t=id&&document.getElementById(id);if(t){abrirHasta(t);t.scrollIntoView()}}
+addEventListener('hashchange',abrirAncla);
 /* El índice sigue la lectura: marca el uso (o el aforismo) que está arriba y,
    si su grupo está desplegado, lo trae a la vista dentro de la barra. */
 let spyF=0;
 function espiar(){
   const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=barEl.getBoundingClientRect().bottom+40;
-  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
+  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(caja(el).top<=lim)cur=a;else break}
   links.forEach(a=>a.classList.toggle('on',a===cur));
   document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
   if(cur&&cur.closest('details').open){const r=cur.getBoundingClientRect(),s=sbEl.getBoundingClientRect();
@@ -363,6 +394,7 @@ function espiar(){
 }
 addEventListener('scroll',()=>{if(!spyF)spyF=requestAnimationFrame(()=>{spyF=0;espiar()})},{passive:true});
 render();
+if(location.hash)abrirAncla();
 })();
 </script>
 </body>
