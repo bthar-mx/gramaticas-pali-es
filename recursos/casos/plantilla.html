@@ -40,6 +40,7 @@ details.plg[open]>summary::before{content:'▾'}
 details.plg>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .casos-plg{margin:26px 0 0}
 .casos-plg>summary{display:inline-block}
+.casos-plg>summary::before{margin-right:.5em}
 .casos-plg .casos{margin-top:8px}
 
 /* secciones y tarjetas */
@@ -257,6 +258,7 @@ document.getElementById('hero').innerHTML=`<div><b>${D.inflexiones.length}</b> d
 let ord='ru';
 /* Qué grupos del índice están plegados. Dura lo que la visita, como plegar la
    barra entera: es comodidad del momento, no una preferencia. */
+/* Empiezan plegados (IEBH, 2026-10-13). */
 const abiertos={};
 /* Las secciones del panel principal empiezan plegadas (IEBH, 2026-10-13).
    Lo que el lector despliega dura lo que la visita. */
@@ -266,7 +268,7 @@ function abrirHasta(el){for(let d=el&&el.closest('details.grp');d;d=d.parentElem
 /* un elemento dentro de una sección plegada no tiene caja: se mide su sección */
 const caja=el=>{const d=el.closest('details.grp:not([open])');return (d?d.querySelector('summary'):el).getBoundingClientRect()};
 function grupoSb(key,label,tip,items,n,extra){
-  return `<details class="sb-sec" data-g="${key}"${extra||''}${abiertos[key]===false?'':' open'}><summary${tip?` title="${esc(tip)}"`:''}><span class="gl">${label}</span><span class="n">${n}</span></summary>${items}</details>`;
+  return `<details class="sb-sec" data-g="${key}"${extra||''}${abiertos[key]?' open':''}><summary${tip?` title="${esc(tip)}"`:''}><span class="gl">${label}</span><span class="n">${n}</span></summary>${items}</details>`;
 }
 /* En el orden de Kaccāyana, el índice se parte en los aforismos que definen
    los kāraka (§271–§283) y los que asignan las inflexiones (§284–§315). */
@@ -364,8 +366,7 @@ function pintarBarra(oculta){
   root.classList.toggle('sin-barra',oculta);
   /* aria-label y aria-expanded de los tres ☰: cabecera.js (rotularIndice) */
 }
-/* Empieza oculto (IEBH, 2026-10-13): el ☰ lo devuelve. */
-pintarBarra(ancha());
+pintarBarra(false);
 burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
 document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrar()};
 /* plegado, el ☰ se queda en la esquina, donde estaba (recursos.css) */
