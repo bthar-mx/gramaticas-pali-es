@@ -279,6 +279,24 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *yogavibhāga* | división del sutta | Cf. *suttavibhāga* (§20 del Sandhi). | Ākhyāta, IEBH 2026-10-12 — Kacc. §515 |
 | *anekasara* | que tiene varias vocales |  | Ākhyāta, IEBH 2026-10-12 — Kacc. §521 |
 | *sāsana* | la Dispensación | Verso final del capítulo. | Ākhyāta, IEBH 2026-10-12 — Kacc. §523 |
+| *abhihita* | expresado (por el verbo, un *kita*, un *taddhita* o un compuesto) | El agente u objeto ya enunciado no recibe otra inflexión que la primera. Ny. §284: «ākhyāta-kitaka-taddhita-samāsābhihitattho»; Rū. 284 «anabhihite evāyaṃ». | Saddanīti, IEBH 2026-10-14 — Sadd. §548, §551, §577 · Ny. §282, §284 · Rū. 283–286 |
+| *anabhihita* | no expresado | Ausente en Nyāsa (OCR); primera aparición en esta tradición, Rū. 284. Pāṇini 2.3.1 *anabhihite*. | Saddanīti, IEBH 2026-10-14 — Sadd. §548, §551, §594 · Rū. 284 |
+| *abhihitakattā* | agente expresado | El que enuncia el verbo: «puriso maggaṃ gacchati … ākhyātena kathitattā». Va en la primera inflexión (§594). | Saddanīti, IEBH 2026-10-14 — Sadd. §548, §594 |
+| *anabhihitakattā* | agente no expresado | El que no enuncian ni el verbo ni un *kita*: «sūdena paciyati odano; ahinā daṭṭho naro». Va en la tercera inflexión (§594). | Saddanīti, IEBH 2026-10-14 — Sadd. §548, §594 |
+| *abhihitakamma* | objeto expresado | «Mayā ijjate buddho … ākhyātena paccayena vā kathitattā». Va en la primera inflexión. | Saddanīti, IEBH 2026-10-14 — Sadd. §551, §577 |
+| *anabhihitakamma* | objeto no expresado | «Chattaṃ karoti … ākhyātena akathitattā». Va en la segunda inflexión. | Saddanīti, IEBH 2026-10-14 — Sadd. §551 |
+| *kathita* / *akathita* | enunciado / no enunciado | Sentido 1: definición de *abhihita* / *anabhihita* (equivale al posterior *vutta* / *avutta*). **No** confundir con *kathitakamma* / *akathitakamma* (sentido 2). | Saddanīti, IEBH 2026-10-14 — Sadd. §548, §551 |
+| *kathitakamma* / *akathitakamma* | sin traducir; equivalencia «objeto principal / objeto secundario» | En los verbos de dos objetos: «ajaṃ gāmaṃ nayati» — *ajo* kathita, *gāmo* akathita «appadhānattā». Sentido distinto de *kathita* = enunciado. | Saddanīti, IEBH 2026-10-14 — Sadd. §551 |
+| *suddhakattā* | agente puro | El que hace la acción por sí mismo; uno de los tres agentes (con *hetukattā* y *kammakattā*). | Saddanīti, IEBH 2026-10-14 — Sadd. §548 · Rū. 294 |
+| *hetukattā* | agente causante | = *payojakakattā* (Niruttidīpanī). «Yaññadatto devadattaṃ gamayati». | Saddanīti, IEBH 2026-10-14 — Sadd. §548 · Rū. 294 |
+| *kattukamma* | objeto-agente | El que recibe la orden en la causativa («puriso purisaṃ kammaṃ kāreti»): es agente y objeto. **No** confundir con *kammakattā* = agente-objeto. | Saddanīti, IEBH 2026-10-14 — Sadd. §551 |
+| *icchitakamma* / *anicchitakamma* / *nevicchitanānicchitakamma* | objeto deseado / no deseado / ni deseado ni no deseado | «bhattaṃ bhuñjati» / «visaṃ gilati» / «rukkhamūlam upasaṅkamati». | Saddanīti, IEBH 2026-10-14 — Sadd. §551 |
+| *nipphattanīya* / *vikaraṇīya* / *pāpanīya* | lo que ha de producirse / modificarse / alcanzarse | Las tres clases de objeto. «rathaṃ karoti» / «vīhayo lunāti» / «nivesanaṃ pavisati». | Saddanīti, IEBH 2026-10-14 — Sadd. §551 |
+| *pariccattakāraṇa* / *apariccattakāraṇa* | con la causa abandonada / con la causa no abandonada | Subclases del *vikaraṇīya*: la causa se destruye (leña → carbón) o subsiste con otra cualidad (oro → brazalete). | Saddanīti, IEBH 2026-10-14 — Sadd. §551 |
+| *garū* | maestros (no especificados) | Autoridades anteriores sin nombre; Aggavaṃsa les atribuye el agente de cinco clases. | Saddanīti, IEBH 2026-10-14 — Sadd. §548 |
+| *liṅgattha* | significado de la base | «Liṅgatthe paṭhamā»: lo que va en la primera inflexión, incluido el agente u objeto ya expresado («ākhyātakitataddhitasamāsehi vutto»). | Saddanīti, IEBH 2026-10-14 — Sadd. §577 · Kacc. §284 · Rū. 283 |
+| *upādāpaññatti* | concepto derivado | «ghaṭapaṭādivohārattho»: lo designado en dependencia de formas, etc.; uno de los dos *liṅgattha*. | Saddanīti, IEBH 2026-10-14 — Sadd. §577 |
+| *tajjāpaññatti* | concepto de lo real | «kakkhaḷattādisāmaññākāro» de las realidades últimas; el otro *liṅgattha*. | Saddanīti, IEBH 2026-10-14 — Sadd. §577 |
 
 ## En discusión
 
