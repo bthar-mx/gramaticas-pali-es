@@ -65,3 +65,15 @@ PPN67018828X), marcado como dominio público; las condiciones de la SUB
 Göttingen permiten el uso no comercial para investigación. La copia de la
 GRETIL e-library (eDocs, gr_elib-260) está cerrada hasta 2056. No viaja con el
 repositorio: `.gitignore` excluye `*.pdf`.
+
+## In English
+
+Seven treatises of the Kaccāyana school, taken from GRETIL (via the
+INDOLOGY/GRETIL-mirror). Five are provisional transcriptions by A. Ruiz
+Falqués; Bālāvatāra and Saddabindu are texts of the Sri Lanka Tripitaka
+Project. Use them for searching; check the readings against the printed
+editions before quoting, as Ruiz Falqués asks. The Pāḷi is unchanged from
+GRETIL: the IEBH added only headings, page markers, bold type and line breaks
+(14 October 2026). In Bālāvatāra the sutta numbers «[Kc N]» were assigned
+automatically by matching text: verify them before citing. GRETIL's own header
+and each transcriber's attribution are kept in full in every file.

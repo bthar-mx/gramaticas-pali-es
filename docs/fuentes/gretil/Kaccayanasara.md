@@ -10,6 +10,10 @@
 
 # Kaccāyanasāra, Mahāyasa / Yasa (s. XIV–XV)
 
+> **Aviso.** Transcripción provisional de A. Ruiz Falqués, tomada de GRETIL. Impreso: Saddā ṅay 15 coṅ pāṭh, Rangún 1964. Sólo el verso. Sirve para buscar; para citar, cotéjese con la edición impresa. Pāḷi sin cambios respecto de GRETIL; marcado añadido por el IEBH.
+>
+> **Notice.** Provisional transcription by A. Ruiz Falqués, taken from GRETIL. Printed edition: Saddā ṅay 15 coṅ pāṭh, Rangoon 1964. Verse only. Use it for searching; check the readings against the printed edition before quoting. Pāḷi unchanged from GRETIL; markup added by the IEBH.
+
 <!-- Cabecera original del archivo GRETIL, sin cambios:
 
 Yasa Mahathera: Kaccayanasara

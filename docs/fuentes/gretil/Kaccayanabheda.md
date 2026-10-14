@@ -10,6 +10,10 @@
 
 # Kaccāyanabheda, Mahāyasa (s. XIV)
 
+> **Aviso.** Transcripción provisional de A. Ruiz Falqués, tomada de GRETIL. Impreso: Saddā ṅay 15 coṅ pāṭh, Rangún 1964. Sirve para buscar; para citar, cotéjese con la edición impresa. Pāḷi sin cambios respecto de GRETIL; marcado añadido por el IEBH.
+>
+> **Notice.** Provisional transcription by A. Ruiz Falqués, taken from GRETIL. Printed edition: Saddā ṅay 15 coṅ pāṭh, Rangoon 1964. Use it for searching; check the readings against the printed edition before quoting. Pāḷi unchanged from GRETIL; markup added by the IEBH.
+
 <!-- Cabecera original del archivo GRETIL, sin cambios:
 
 Mahayasa Thera: Kaccayanabheda

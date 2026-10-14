@@ -10,6 +10,10 @@
 
 # Bālāvatāra, Dhammakitti (s. XIV)
 
+> **Aviso.** Texto del Sri Lanka Tripitaka Project, tomado de GRETIL, sin cotejar con el impreso. Sirve para buscar; para citar, cotéjese con la edición impresa. Los números «[Kc N]» de los suttas se asignaron automáticamente: verifíquense antes de citar. Pāḷi sin cambios respecto de GRETIL; marcado añadido por el IEBH.
+>
+> **Notice.** Text of the Sri Lanka Tripitaka Project, taken from GRETIL, not checked against the printed edition. Use it for searching; check the readings against the printed edition before quoting. The sutta numbers «[Kc N]» were assigned automatically: verify them before citing. Pāḷi unchanged from GRETIL; markup added by the IEBH.
+
 <!-- Cabecera original del archivo GRETIL, sin cambios:
 
 Balavatara
