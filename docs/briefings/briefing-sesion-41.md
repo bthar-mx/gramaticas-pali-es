@@ -285,7 +285,7 @@ aplicación.
 
 El repertorio vive en el secreto **`REVISORES`**, con rótulo opcional:
 
-    admin@iebh.org = IEBH, admin@iebh.org = IEBH, fulano@ejemplo.org = Ven. Fulano
+    admin@iebh.org = IEBH, fulano@ejemplo.org = Ven. Fulano
 
 **Sin `REVISORES` puesto, toda identidad verificada es revisora** (lo de antes;
 desplegar no degrada a nadie). En Access se admite a los DOS papeles en la
