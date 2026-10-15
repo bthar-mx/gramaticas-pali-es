@@ -8,7 +8,7 @@
 <title>__ES_TITULO__</title>
 <meta name="version" content="__VERSION__">
 <style>
-/* Guía para el estudiante de las partículas (nipāta). La paleta, la letra,
+/* Guía para el estudiante de los indeclinables (abyaya). La paleta, la letra,
    el bloque del título y el pie son comunes: site/assets/base.css y
    site/assets/recursos.css (etapa 4b). Aquí, lo de una página de prosa. */
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -38,7 +38,7 @@ body{line-height:1.6}
 </head>
 <body>
 <rc-titulo>
-  <rc-volver id="volver" href="../">← Partículas (nipāta)</rc-volver>
+  <rc-volver id="volver" href="../">← Indeclinables (abyaya)</rc-volver>
   <rc-ceja>Instituto de Estudios Buddhistas Hispano</rc-ceja>
   <rc-h1 id="h1">__ES_H1__</rc-h1>
   <rc-insignias><span class="borrador" id="etiqueta">En revisión</span><span class="version-badge" id="vbadge">v__VERSION__ · <time datetime="__VERSION_DATE__">__VERSION_DATE__</time></span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button><button type="button" class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button></rc-insignias>
@@ -54,20 +54,20 @@ __EN__
 </main>
 
 <rc-pie>
-<rc-extra><p><a href="../" id="volver-pie">← Partículas (nipāta)</a></p></rc-extra>
+<rc-extra><p><a href="../" id="volver-pie">← Indeclinables (abyaya)</a></p></rc-extra>
 <rc-licencia><span id="lic">Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.</span></rc-licencia>
 </rc-pie>
 
 <script>
 (function(){
 /* Las dos lenguas viajan en la página; el interruptor enseña una u otra, con
-   la misma regla que la página de las partículas (?lang= o la clave pali_lang del sitio). */
+   la misma regla que la página de los indeclinables (?lang= o la clave pali_lang del sitio). */
 const H=/*__TITULOS__*/{}/*__FIN__*/;
 const T={
-  es:{titulo:H.es.titulo,h1:H.es.h1,volver:'← Partículas (nipāta)',draft:'En revisión',
+  es:{titulo:H.es.titulo,h1:H.es.h1,volver:'← Indeclinables (abyaya)',draft:'En revisión',
     lic:'Material de estudio del Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.',
     otra:'View this page in English',tema:'Claro / oscuro'},
-  en:{titulo:H.en.titulo,h1:H.en.h1,volver:'← Particles (nipāta)',draft:'Under review',
+  en:{titulo:H.en.titulo,h1:H.en.h1,volver:'← Indeclinables (abyaya)',draft:'Under review',
     lic:'Study material of the Instituto de Estudios Buddhistas Hispano (IEBH). Copyright © 2026 IEBH.',
     otra:'Ver esta página en español',tema:'Light / dark'}};
 const root=document.documentElement;

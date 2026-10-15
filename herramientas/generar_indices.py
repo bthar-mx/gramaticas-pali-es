@@ -149,13 +149,17 @@ RECURSOS = [
      "Kaccāyana, la sección de Ñāṇatusita (<i>Reference Table of Pāli "
      "Literature</i>) y el texto en línea, con el material de este sitio "
      "en primer lugar. Borrador en revisión."),
-    ("particulas/", "__PARTICULAS_BADGE__", "Partículas — nipāta",
-     "Las partículas (<i>nipāta</i>) del pāḷi, con sus sentidos y "
-     "ejemplos del Canon y los comentarios: el documento de Bhikkhu "
-     "Nandisena (2013), edición revisada por IEBH, con las erratas "
-     "evidentes corregidas. Buscador que ignora los diacríticos, filtro "
-     "por el sentido de caso e índice por el alfabeto pāḷi. En revisión.",
-     ("particulas/guia/", "Guía para el estudiante", "Student guide")),
+    ("indeclinables/", "__PARTICULAS_BADGE__", "Indeclinables — abyaya",
+     "Los indeclinables (<i>abyaya</i>) del pāḷi en sus seis clases "
+     "—prefijos, partículas, voces con sufijos de caso, compuestos "
+     "<i>abyayībhāva</i>, sufijos secundarios y voces en <i>tvā</i>, "
+     "etc.—, con sus sentidos y ejemplos: los documentos "
+     "«Indeclinables» y «Partículas» de Bhikkhu Nandisena (2013), "
+     "edición revisada por IEBH, con las partículas que faltaban "
+     "añadidas y su fuente. Buscador que ignora los diacríticos, "
+     "filtro por el sentido de caso e índice por el alfabeto pāḷi. En "
+     "revisión.",
+     ("indeclinables/guia/", "Guía para el estudiante", "Student guide")),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: <i>Glosario de términos "
@@ -362,18 +366,24 @@ EN = {
         "Kaccāyana, Ñāṇatusita's section (<i>Reference Table of Pāli "
         "Literature</i>) and the online text, this site's own material first."
         " Draft under review.",
-    "Partículas — nipāta": "Particles — nipāta",
-    "Las partículas (<i>nipāta</i>) del pāḷi, con sus sentidos y "
-    "ejemplos del Canon y los comentarios: el documento de Bhikkhu "
-    "Nandisena (2013), edición revisada por IEBH, con las erratas "
-    "evidentes corregidas. Buscador que ignora los diacríticos, filtro "
-    "por el sentido de caso e índice por el alfabeto pāḷi. En revisión.":
-        "The Pāḷi particles (<i>nipāta</i>), with their senses and "
-        "examples from the Canon and the commentaries: Bhikkhu "
-        "Nandisena's document (2013), edited by IEBH, with the obvious "
-        "errata corrected. Search ignores diacritics, with a filter by "
-        "case sense and an index by the Pāḷi alphabet. Under review; "
-        "the English is a draft.",
+    "Indeclinables — abyaya": "Indeclinables — abyaya",
+    "Los indeclinables (<i>abyaya</i>) del pāḷi en sus seis clases "
+    "—prefijos, partículas, voces con sufijos de caso, compuestos "
+    "<i>abyayībhāva</i>, sufijos secundarios y voces en <i>tvā</i>, "
+    "etc.—, con sus sentidos y ejemplos: los documentos "
+    "«Indeclinables» y «Partículas» de Bhikkhu Nandisena (2013), "
+    "edición revisada por IEBH, con las partículas que faltaban "
+    "añadidas y su fuente. Buscador que ignora los diacríticos, "
+    "filtro por el sentido de caso e índice por el alfabeto pāḷi. En "
+    "revisión.":
+        "The Pāḷi indeclinables (<i>abyaya</i>) in their six classes "
+        "—prefixes, particles, words with case suffixes, "
+        "<i>abyayībhāva</i> compounds, secondary suffixes and words in "
+        "<i>tvā</i>, etc.—, with their senses and examples: Bhikkhu "
+        "Nandisena's «Indeclinables» and «Particles» (2013), edited by "
+        "IEBH, with the missing particles added and their source. Search "
+        "ignores diacritics, with a filter by case sense and an index by "
+        "the Pāḷi alphabet. Under review; the English is a draft.",
     "Clasificación de los suttas de Kaccāyana":
         "Classification of the Kaccāyana suttas",
     "Cada aforismo de Kaccāyana clasificado según "
@@ -738,14 +748,17 @@ def cuenta_comentarios():
 
 
 def cuenta_particulas():
-    """(entradas, ejemplos, versión) de recursos/particulas/particulas.json."""
+    """(partículas, prefijos, versión) de recursos/particulas/ e indeclinables/."""
     import json
     p = os.path.join(RAIZ, "recursos", "particulas", "particulas.json")
-    if not os.path.exists(p):
+    i = os.path.join(RAIZ, "recursos", "indeclinables", "indeclinables.json")
+    if not (os.path.exists(p) and os.path.exists(i)):
         return None
     d = json.load(open(p, encoding="utf-8"))
-    ej = sum(1 for x in d["entradas"] for b in x["bloques"] if b["tipo"] == "ej")
-    return len(d["entradas"]), ej, d["meta"]["version"]
+    ind = json.load(open(i, encoding="utf-8"))
+    nuevas = len(next(c for c in ind["clases"] if c["id"] == "nipata")["entradas"])
+    pref = len(ind["clases"][0]["entradas"])
+    return len(d["entradas"]) + nuevas, pref, ind["meta"]["version"]
 
 
 def cuenta_raices():
@@ -797,11 +810,11 @@ GRUPOS_RECURSOS = [
          "sufijos-inflexiones",
          "Nominal and pronominal declension · <i>vibhatti-paccaya</i>, "
          "inflectional suffixes", False),
-        ("particulas/", "Partículas", "Particles",
-         "Las partículas (<i>nipāta</i>) de Bhikkhu Nandisena, con sentidos y "
-         "ejemplos",
-         "Bhikkhu Nandisena's particles (<i>nipāta</i>), with senses and "
-         "examples", True),
+        ("indeclinables/", "Indeclinables", "Indeclinables",
+         "Prefijos, partículas y demás indeclinables (<i>abyaya</i>) de "
+         "Bhikkhu Nandisena",
+         "Bhikkhu Nandisena's prefixes, particles and other indeclinables "
+         "(<i>abyaya</i>)", True),
     ]),
     (("Derivar y practicar", "Derive and practise"), [
         ("sandhi/", "Sandhi", "Sandhi",
@@ -1199,9 +1212,9 @@ def indice_recursos():
                     "{0} works · v{1}".format(*n_com))
                  if n_com else "comentarios")
     n_pti = cuenta_particulas()
-    badge_pti = (bi("{0} partículas · {1} ejemplos · v{2}".format(*n_pti),
-                    "{0} particles · {1} examples · v{2}".format(*n_pti))
-                 if n_pti else "partículas")
+    badge_pti = (bi("{1} prefijos · {0} partículas · v{2}".format(*n_pti),
+                    "{1} prefixes · {0} particles · v{2}".format(*n_pti))
+                 if n_pti else "indeclinables")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
                  "__PARTICULAS_BADGE__": badge_pti,
                  "__CASOS_BADGE__": badge_cas,

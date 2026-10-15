@@ -1,10 +1,12 @@
-# Guía para estudiantes — Partículas (nipāta)
+# Guía para estudiantes — Indeclinables (abyaya)
 
 ## 1. Qué es esta página
 
-La página [Partículas (nipāta)](https://gramaticas.buddha-dhamma.net/recursos/particulas/) reúne las partículas del pāḷi, en orden alfabético pāḷi. Para cada una da su equivalente sánscrito cuando lo hay, sus sentidos —con el término técnico pāḷi de cada uno— y ejemplos del Canon y de los comentarios, con su traducción.
+La página [Indeclinables (abyaya)](https://gramaticas.buddha-dhamma.net/recursos/indeclinables/) reúne en seis pestañas las seis clases de palabras indeclinables del pāḷi: los prefijos, las partículas, las voces con sufijos de caso, los compuestos *abyayībhāva*, las voces con sufijos secundarios indeclinables y las voces en *tvā*, etc. Para cada prefijo y cada partícula da sus sentidos —con el término técnico pāḷi de cada uno— y ejemplos, con su traducción; las partículas, además, su equivalente sánscrito cuando lo hay y ejemplos del Canon y de los comentarios.
 
-El texto es el documento *Partículas (Nipāta)* de Bhikkhu Nandisena (2013), en edición revisada por IEBH. Esta primera versión publica el texto de 2013 con las erratas evidentes corregidas; la lista de esas erratas está al pie de la página. La revisión completa, entrada por entrada contra las fuentes, está en curso: por eso la página lleva la etiqueta **En revisión**. La versión inglesa es una traducción provisional del español.
+El texto son dos documentos de Bhikkhu Nandisena (2013), *Indeclinables (Avyaya)* y *Partículas (Nipāta)*, en edición revisada por IEBH: el primero da las seis clases, y el segundo desarrolla la segunda, las partículas. Esta versión publica los textos de 2013 con las erratas evidentes corregidas (la lista está al pie de la página) y añade, con la etiqueta **IEBH** y su fuente, las partículas que el documento de 2013 no trae. La revisión completa, entrada por entrada contra las fuentes, está en curso: por eso la página lleva la etiqueta **En revisión**. La versión inglesa es una traducción provisional del español.
+
+La dirección antigua de las partículas, …/recursos/particulas/, lleva ahora a la pestaña de las partículas de esta página.
 
 ## 2. Qué es un nipāta
 
@@ -89,7 +91,27 @@ No todo indeclinable es partícula. Niruttidīpanī (p. 155) distingue seis clas
 - la palabra con sufijo taddhita indeclinable (*abyayataddhitapada*): *yathā, ekadhā, sabbaso*;
 - la palabra terminada en *tvā*, etc. (*tvādipaccayantapada*): *katvā, kātuṃ*.
 
-Rūpasiddhi es más amplia: cuenta como partículas también las formas en *-to, -tra, -tha, -so, -dhā*, las terminadas en *tave, tuṃ* y las terminadas en *tuna, tvāna, tvā*. El documento de Nandisena sigue a Rūpasiddhi, y por eso incluye, por ejemplo, *to, tra* o *dhā*.
+Rūpasiddhi es más amplia: cuenta como partículas también las formas en *-to, -tra, -tha, -so, -dhā*, las terminadas en *tave, tuṃ* y las terminadas en *tuna, tvāna, tvā*. El documento de Nandisena sigue a Rūpasiddhi, y por eso incluye, por ejemplo, *to, tra* o *dhā*. Su documento *Indeclinables*, en cambio, sigue las seis clases: son las seis pestañas de esta página.
+
+### Los prefijos: qué hacen
+
+Rūpasiddhi cierra su capítulo de los prefijos (Opasaggikapada, p. 132) con un verso que también cita Saddanīti (Suttamālā XXVII):
+
+> *Dhātvatthaṃ bādhate koci, koci tam anuvattate, tam evañño viseseti: upasaggagatī tidhā.*
+
+«Uno anula el sentido de la raíz, otro lo sigue, otro lo especifica: el comportamiento del prefijo es triple.»
+
+Son las tres funciones que da Nandisena con sus ejemplos: *gacchati* «va» y *āgacchati* «viene» (el sentido cambia al opuesto); *ṭhito* y *patiṭṭhito* (no cambia); *harati* «lleva» y *paharati* «golpea» (se especifica).
+
+### ¿Llevan inflexión los prefijos?
+
+Kaccāyana (§221) dice que tras los prefijos, como tras las partículas, se eliden todas las inflexiones; no dice cuál recibe cada uno antes de elidirse. Los gramáticos no responden igual:
+
+- **Sólo la primera del singular.** Rūpasiddhi (p. 131): como los prefijos sólo califican al nombre y al verbo y no tienen distinción de número ni de kāraka, *tehi paṭhamekavacanam eva bhavati*, «tras ellos surge sólo la primera del singular». Lo mismo dice el Suttaniddesa sobre §221: tras el prefijo, la primera del singular; tras la partícula, cualquiera de las catorce.
+- **La que pida el sentido.** Niruttidīpanī (p. 156): *upasaggehi pi atthānurūpaṃ taṃtaṃvibhattilopo; rūpasiddhiyaṃ pana «tehi paṭhamekavacanam eva bhavatī» ti vuttaṃ*, «también tras los prefijos se elide la inflexión que corresponda según el sentido; Rūpasiddhi, en cambio, dice que tras ellos sólo surge la primera del singular».
+- **Saddanīti** trata la cuestión en dos lugares de la Suttamālā. En el capítulo de los kāraka (§577, *Liṅgatthe paṭhamā*; ed. Smith, p. 714) pone los prefijos entre las palabras que van en la primera inflexión: *pa parā icc evamādayo sabbe upasaggā yojetabbā*. En el capítulo del nombre (§448, el sutta que corresponde a Kacc. §221; ed. Smith, pp. 672–673) da su propia postura frente a la antigua: según el Niruttipiṭaka de Mahākaccāyana, los veinte prefijos no llevan inflexión; «nosotros, en cambio» (*mayaṃ pana*), sostenemos que en las palabras sueltas unos la llevan y otros no, que en los verbos (*pabhavati, parābhavati*) nunca, y que en los compuestos siempre, y no sólo la primera: *pakārena jānanā = pajānanā* (tercera), *uddhaṃ khittāni = ukkhittāni* (séptima). La Padamālā (p. 397) lo resume: *upasaggā sabbe pi sabbavibhattivacanakā*.
+
+Leídos juntos, los dos pasajes de Saddanīti parecen repartirse los casos —la primera para el prefijo en su sentido propio, otras inflexiones en los compuestos— más que contradecirse; es una observación de esta guía, no algo que el texto diga. El Niruttipiṭaka que cita Saddanīti, atribuido por la tradición a Mahākaccāyana, no se conserva: sólo se conoce por citas.
 
 ## 3. Cómo se clasifican
 
@@ -154,15 +176,16 @@ La lista sigue: inferencia, recuerdo y reflexión (*nūna*); lo conocido de oíd
 
 | Elemento | Dónde está | Para qué sirve |
 | --- | --- | --- |
-| Índice lateral | A la izquierda (en el móvil, botón ☰) | Las partículas agrupadas por su letra inicial, en el orden del alfabeto pāḷi: a ā i ī u ū e o k kh g gh… Las aspiradas (kh, th, bh…) son letras propias. Pulse una letra para desplegarla y una partícula para ir a ella. |
+| Pestañas 1–6 | Sobre el contenido | Las seis clases de indeclinables. La pestaña activa se conserva en la dirección (…?c=nipata). Al buscar, un punto marca las pestañas que tienen coincidencias. |
+| Índice lateral | A la izquierda (en el móvil, botón ☰) | El índice de la pestaña activa. En las partículas, agrupadas por su letra inicial, en el orden del alfabeto pāḷi: a ā i ī u ū e o k kh g gh… Las aspiradas (kh, th, bh…) son letras propias. Pulse una letra para desplegarla y una entrada para ir a ella. |
 | DESPLEGAR / PLEGAR | Arriba del índice | Abrir o cerrar todas las letras del índice. |
 | Buscador | Barra superior | Busca en el pāḷi, en la traducción y en las referencias. No hace falta escribir los diacríticos: «sadhu» encuentra *sādhu*, y «D. ii 64» encuentra los ejemplos de esa página. |
-| TODAS / 1.ª / VOCATIVO / 2.ª … 7.ª | Junto al buscador | Mostrar sólo las partículas que se usan en el sentido de esa inflexión. Se combina con el buscador. A la derecha se ve cuántas quedan a la vista. |
+| TODAS / 1.ª / VOCATIVO / 2.ª … 7.ª | Junto al buscador (sólo en la pestaña de las partículas) | Mostrar sólo las partículas que se usan en el sentido de esa inflexión. Se combina con el buscador. A la derecha se ve cuántas quedan a la vista. |
 | ◐ | Barra superior | Cambiar entre modo claro y oscuro. |
 | ES / EN | Junto a la versión | Cambiar la lengua de la página. |
 | ↑ | Abajo a la derecha, al bajar | Volver al principio. |
 
-Cada partícula tiene su propia dirección: añada «#» y el lema sin diacríticos a la dirección de la página para enlazarla. Por ejemplo, …/recursos/particulas/#kira.
+Cada partícula tiene su propia dirección: añada «#» y el lema sin diacríticos a la dirección de la página para enlazarla. Por ejemplo, …/recursos/indeclinables/#kira. En la tabla de los sufijos de caso, cada sufijo enlaza además con su sutta de Kaccāyana en la traducción de este sitio.
 
 ## 5. Cómo leer una entrada
 
@@ -219,26 +242,28 @@ Las referencias de los ejemplos remiten a la **edición birmana del Sexto Concil
 ## 6. Lo que esta versión no tiene todavía
 
 - **La revisión completa.** Las correcciones de fondo —sentidos, traducciones, referencias dudosas, añadidos de Rūpasiddhi-ṭīkā y de Saddanīti— están preparadas y pendientes de aprobación. Entrarán en una próxima versión.
-- **Partículas que faltan.** Las gramáticas, Abhidhānappadīpikā y los comentarios recogen partículas que el documento de 2013 no trae. Están en preparación; cuando se publiquen, llevarán la etiqueta **IEBH** para distinguirlas del texto de Nandisena.
+- **Partículas añadidas.** Las 72 partículas con la etiqueta **IEBH** no están en el documento de 2013: las recogen las gramáticas, Abhidhānappadīpikā o los propios comentarios. Cada una dice su fuente; cuando el Canon y los comentarios no dan un ejemplo, la entrada lo dice.
 - **El inglés** es provisional.
 
 ## 7. Fuentes y cómo citar
 
-**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, p. 131 y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Saddanīti, Suttamālā, cap. XXVII, ed. Helmer Smith (Lund, 1930), p. 878; Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso.
+**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, Opasaggikapada, pp. 126–132, y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155–156 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Saddanīti, Suttamālā, ed. Helmer Smith, vol. III (Lund, 1930), pp. 672–673, 714 y 878; el Suttaniddesa sobre Kacc. §221 (texto de GRETIL); Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso.
 
 **Cómo citar esta página:**
 
-> Bhikkhu Nandisena, *Partículas (nipāta)*, edición revisada por IEBH, versión [la que muestra la etiqueta], [año]. https://gramaticas.buddha-dhamma.net/recursos/particulas/
+> Bhikkhu Nandisena, *Indeclinables (abyaya)*, edición revisada por IEBH, versión [la que muestra la etiqueta], [año]. https://gramaticas.buddha-dhamma.net/recursos/indeclinables/
 
 ---
 
-# Student guide — Particles (nipāta)
+# Student guide — Indeclinables (abyaya)
 
 ## 1. What this page is
 
-The page [Particles (nipāta)](https://gramaticas.buddha-dhamma.net/recursos/particulas/?lang=en) gathers the Pāḷi particles in Pāḷi alphabetical order. For each one it gives its Sanskrit equivalent where there is one, its senses —each with its Pāḷi technical term— and examples from the Canon and the commentaries, with their translation.
+The page [Indeclinables (abyaya)](https://gramaticas.buddha-dhamma.net/recursos/indeclinables/?lang=en) gathers in six tabs the six classes of Pāḷi indeclinable words: the prefixes, the particles, the words with case suffixes, the *abyayībhāva* compounds, the words with indeclinable secondary suffixes and the words in *tvā*, etc. For each prefix and each particle it gives its senses —each with its Pāḷi technical term— and examples, with their translation; for the particles, also the Sanskrit equivalent where there is one and examples from the Canon and the commentaries.
 
-The text is Bhikkhu Nandisena's document *Partículas (Nipāta)* (2013), edited by IEBH. This first version publishes the 2013 text with the obvious errata corrected; the list of those errata is at the foot of the page. The full revision, entry by entry against the sources, is in progress, which is why the page is labelled **Under review**. The English is a provisional translation of the Spanish.
+The text is two documents by Bhikkhu Nandisena (2013), *Indeclinables (Avyaya)* and *Partículas (Nipāta)*, edited by IEBH: the first gives the six classes, and the second develops the second class, the particles. This version publishes the 2013 texts with the obvious errata corrected (the list is at the foot of the page) and adds, with the label **IEBH** and their source, the particles that the 2013 document does not have. The full revision, entry by entry against the sources, is in progress, which is why the page is labelled **Under review**. The English is a provisional translation of the Spanish.
+
+The former address of the particles, …/recursos/particulas/, now leads to the particles tab of this page.
 
 ## 2. What a nipāta is
 
@@ -323,7 +348,27 @@ Not every indeclinable is a particle. Niruttidīpanī (p. 155) distinguishes six
 - the word with an indeclinable taddhita suffix (*abyayataddhitapada*): *yathā, ekadhā, sabbaso*;
 - the word ending in *tvā*, etc. (*tvādipaccayantapada*): *katvā, kātuṃ*.
 
-Rūpasiddhi is broader: it also counts as particles the forms in *-to, -tra, -tha, -so, -dhā*, those ending in *tave, tuṃ* and those ending in *tuna, tvāna, tvā*. Nandisena's document follows Rūpasiddhi, which is why it includes, for instance, *to, tra* and *dhā*.
+Rūpasiddhi is broader: it also counts as particles the forms in *-to, -tra, -tha, -so, -dhā*, those ending in *tave, tuṃ* and those ending in *tuna, tvāna, tvā*. Nandisena's document follows Rūpasiddhi, which is why it includes, for instance, *to, tra* and *dhā*. His *Indeclinables*, on the other hand, follows the six classes: they are the six tabs of this page.
+
+### The prefixes: what they do
+
+Rūpasiddhi closes its chapter on the prefixes (Opasaggikapada, p. 132) with a verse that Saddanīti also quotes (Suttamālā XXVII):
+
+> *Dhātvatthaṃ bādhate koci, koci tam anuvattate, tam evañño viseseti: upasaggagatī tidhā.*
+
+“One overrides the sense of the root, another follows it, another specifies it: the behaviour of the prefix is threefold.”
+
+These are the three functions Nandisena gives with his examples: *gacchati* “goes” and *āgacchati* “comes” (the sense turns to its opposite); *ṭhito* and *patiṭṭhito* (it does not change); *harati* “carries” and *paharati* “strikes” (it is specified).
+
+### Do the prefixes take an inflection?
+
+Kaccāyana (§221) says that after the prefixes, as after the particles, all the inflections are elided; it does not say which one each receives before it is elided. The grammarians do not answer alike:
+
+- **Only the first singular.** Rūpasiddhi (p. 131): since the prefixes only qualify the noun and the verb and have no distinction of number or of kāraka, *tehi paṭhamekavacanam eva bhavati*, “after them only the first singular arises”. The Suttaniddesa says the same on §221: after a prefix, the first singular; after a particle, any of the fourteen.
+- **Whichever the sense requires.** Niruttidīpanī (p. 156): *upasaggehi pi atthānurūpaṃ taṃtaṃvibhattilopo; rūpasiddhiyaṃ pana “tehi paṭhamekavacanam eva bhavatī” ti vuttaṃ*, “after the prefixes too, whichever inflection fits the sense is elided; Rūpasiddhi, however, says that after them only the first singular arises”.
+- **Saddanīti** deals with the question in two places of the Suttamālā. In the chapter on the kārakas (§577, *Liṅgatthe paṭhamā*; Smith ed., p. 714) it lists the prefixes among the words that go in the first inflection: *pa parā icc evamādayo sabbe upasaggā yojetabbā*. In the chapter on the noun (§448, the sutta that corresponds to Kacc. §221; Smith ed., pp. 672–673) it gives its own view against the older one: according to Mahākaccāyana's Niruttipiṭaka, the twenty prefixes take no inflection; “but we” (*mayaṃ pana*) hold that as separate words some take one and some do not, that in verbs (*pabhavati, parābhavati*) never, and that in compounds always, and not only the first: *pakārena jānanā = pajānanā* (third), *uddhaṃ khittāni = ukkhittāni* (seventh). The Padamālā (p. 397) sums it up: *upasaggā sabbe pi sabbavibhattivacanakā*.
+
+Read together, the two passages of Saddanīti seem to share out the cases —the first for the prefix in its own sense, other inflections in compounds— rather than contradict each other; this is an observation of this guide, not something the text says. The Niruttipiṭaka that Saddanīti quotes, attributed by tradition to Mahākaccāyana, does not survive: it is known only through quotations.
 
 ## 3. How they are classified
 
@@ -388,15 +433,16 @@ The list goes on: inference, recollection and reflection (*nūna*); hearsay (*ki
 
 | Element | Where it is | What it does |
 | --- | --- | --- |
-| Side index | On the left (on a phone, the ☰ button) | The particles grouped by initial letter, in the order of the Pāḷi alphabet: a ā i ī u ū e o k kh g gh… The aspirates (kh, th, bh…) are letters of their own. Click a letter to open it and a particle to go to it. |
+| Tabs 1–6 | Above the content | The six classes of indeclinables. The active tab is kept in the address (…?c=nipata). When you search, a dot marks the tabs that have matches. |
+| Side index | On the left (on a phone, the ☰ button) | The index of the active tab. For the particles, grouped by initial letter, in the order of the Pāḷi alphabet: a ā i ī u ū e o k kh g gh… The aspirates (kh, th, bh…) are letters of their own. Click a letter to open it and an entry to go to it. |
 | EXPAND / COLLAPSE | Above the index | Open or close every letter in the index. |
 | Search box | Top bar | Searches the Pāḷi, the translation and the references. You need not type diacritics: “sadhu” finds *sādhu*, and “D. ii 64” finds the examples on that page. |
-| ALL / 1ST / VOCATIVE / 2ND … 7TH | Beside the search box | Show only the particles used in the sense of that inflection. It combines with the search. The count on the right says how many remain in view. |
+| ALL / 1ST / VOCATIVE / 2ND … 7TH | Beside the search box (particles tab only) | Show only the particles used in the sense of that inflection. It combines with the search. The count on the right says how many remain in view. |
 | ◐ | Top bar | Switch between light and dark mode. |
 | ES / EN | Beside the version | Switch the page language. |
 | ↑ | Bottom right, once you scroll | Back to the top. |
 
-Every particle has its own address: add “#” and the headword without diacritics to the page address to link to it, for instance …/recursos/particulas/#kira.
+Every particle has its own address: add “#” and the headword without diacritics to the page address to link to it, for instance …/recursos/indeclinables/#kira. In the table of case suffixes, each suffix also links to its Kaccāyana sutta in this site's translation.
 
 ## 5. How to read an entry
 
@@ -453,13 +499,13 @@ The references of the examples point to the **Burmese Sixth Council edition** (C
 ## 6. What this version does not have yet
 
 - **The full revision.** The substantive corrections —senses, translations, doubtful references, additions from Rūpasiddhi-ṭīkā and Saddanīti— are prepared and awaiting approval. They will come in a later version.
-- **Missing particles.** The grammars, Abhidhānappadīpikā and the commentaries record particles that the 2013 document does not have. They are in preparation; when published, they will carry the label **IEBH** to set them apart from Nandisena's text.
+- **Added particles.** The 72 particles labelled **IEBH** are not in the 2013 document: they are recorded by the grammars, Abhidhānappadīpikā or the commentaries themselves. Each gives its source; where the Canon and the commentaries offer no example, the entry says so.
 - **The English** is provisional.
 
 ## 7. Sources and how to cite
 
-**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, p. 131 and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Saddanīti, Suttamālā, ch. XXVII, ed. Helmer Smith (Lund, 1930), p. 878; Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy.
+**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, Opasaggikapada, pp. 126–132, and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155–156 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Saddanīti, Suttamālā, ed. Helmer Smith, vol. III (Lund, 1930), pp. 672–673, 714 and 878; the Suttaniddesa on Kacc. §221 (GRETIL text); Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy.
 
 **How to cite this page:**
 
-> Bhikkhu Nandisena, *Particles (nipāta)*, edited by IEBH, version [the one shown on the label], [year]. https://gramaticas.buddha-dhamma.net/recursos/particulas/?lang=en
+> Bhikkhu Nandisena, *Indeclinables (abyaya)*, edited by IEBH, version [the one shown on the label], [year]. https://gramaticas.buddha-dhamma.net/recursos/indeclinables/?lang=en

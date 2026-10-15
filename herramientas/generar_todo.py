@@ -124,9 +124,9 @@ def main():
     if os.path.exists(os.path.join(recursos, "comentarios", "plantilla.html")):
         fallos += correr("generar_comentarios.py")
 
-    # partículas (nipāta) · documento de Bhikkhu Nandisena, edición revisada por IEBH
-    if os.path.exists(os.path.join(recursos, "particulas", "plantilla.html")):
-        fallos += correr("generar_particulas.py")
+    # indeclinables (abyaya), con las partículas · Bhikkhu Nandisena, edición revisada por IEBH
+    if os.path.exists(os.path.join(recursos, "indeclinables", "plantilla.html")):
+        fallos += correr("generar_indeclinables.py")
 
     # términos técnicos sin entrada en el glosario de los globos (aviso, no
     # error): palabras pāḷi del texto explicativo de la clasificación y del

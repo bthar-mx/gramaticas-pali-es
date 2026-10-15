@@ -1,26 +1,32 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Genera la referencia de las partículas (nipāta).
+Genera la referencia de los indeclinables (abyaya), con las partículas.
 
-    python3 herramientas/generar_particulas.py
+    python3 herramientas/generar_indeclinables.py
 
-Junta dos cosas:
+Junta tres cosas:
 
-  recursos/particulas/particulas.json  el documento «Partículas (Nipāta)» de
-                                       Bhikkhu Nandisena (2013), con las
-                                       erratas evidentes corregidas y su
-                                       inglés (borrador)
-  recursos/particulas/plantilla.html   el maquetado y la lógica
+  recursos/particulas/particulas.json      «Partículas (Nipāta)» de Bhikkhu
+                                           Nandisena (2013): 310 entradas, con
+                                           las erratas evidentes corregidas y
+                                           su inglés (borrador)
+  recursos/indeclinables/indeclinables.json «Indeclinables (Avyaya)» (2013):
+                                           las clases 1 y 3-6, la definición,
+                                           las notas y las erratas; y las
+                                           partículas añadidas por IEBH
+                                           («nuevo»: true), que aquí se
+                                           intercalan en orden alfabético pāḷi
+  recursos/indeclinables/plantilla.html    el maquetado y la lógica
 
-y escribe site/recursos/particulas/index.html.
+y escribe site/recursos/indeclinables/index.html, con su guía para el
+estudiante (recursos/indeclinables/guia.md y guia-plantilla.html; español e
+inglés separados por una sola línea «---»).
 
-También escribe la guía para el estudiante, site/recursos/particulas/guia/,
-con recursos/particulas/guia.md (el texto, tal cual: el español y el inglés,
-separados por una sola línea «---») y recursos/particulas/guia-plantilla.html,
-como la del análisis (generar_analisis.py). La página enlaza a ella, así que
-sin guia.md no se publica nada. La fuente del texto está en
-docs/fuentes/nandisena/particulas.md; la revisión, en docs/privado/nipatas/.
+La página antigua /recursos/particulas/ (y su guía) pasa a ser una remisión a
+la pestaña de las partículas, que conserva el #ancla de cada entrada: ningún
+enlace publicado se rompe. Las fuentes del texto están en docs/fuentes/nandisena/;
+la revisión, en docs/privado/nipatas/.
 
 Antes de escribir verifica los datos: identificadores únicos, toda entrada
 con su cabecera en los dos idiomas, todo ejemplo con pāḷi, toda llamada [^n]
@@ -37,11 +43,56 @@ import cabecera  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATOS = os.path.join(RAIZ, "recursos", "particulas", "particulas.json")
-PLANTILLA = os.path.join(RAIZ, "recursos", "particulas", "plantilla.html")
-DESTINO = os.path.join(RAIZ, "site", "recursos", "particulas", "index.html")
-GUIA = os.path.join(RAIZ, "recursos", "particulas", "guia.md")
-GUIA_PLANTILLA = os.path.join(RAIZ, "recursos", "particulas", "guia-plantilla.html")
-GUIA_DESTINO = os.path.join(RAIZ, "site", "recursos", "particulas", "guia", "index.html")
+DATOS_I = os.path.join(RAIZ, "recursos", "indeclinables", "indeclinables.json")
+PLANTILLA = os.path.join(RAIZ, "recursos", "indeclinables", "plantilla.html")
+DESTINO = os.path.join(RAIZ, "site", "recursos", "indeclinables", "index.html")
+GUIA = os.path.join(RAIZ, "recursos", "indeclinables", "guia.md")
+GUIA_PLANTILLA = os.path.join(RAIZ, "recursos", "indeclinables", "guia-plantilla.html")
+GUIA_DESTINO = os.path.join(RAIZ, "site", "recursos", "indeclinables", "guia", "index.html")
+VIEJA = os.path.join(RAIZ, "site", "recursos", "particulas", "index.html")
+VIEJA_GUIA = os.path.join(RAIZ, "site", "recursos", "particulas", "guia", "index.html")
+ALF = ["a", "ā", "i", "ī", "u", "ū", "e", "o", "k", "kh", "g", "gh", "ṅ", "c", "ch",
+       "j", "jh", "ñ", "ṭ", "ṭh", "ḍ", "ḍh", "ṇ", "t", "th", "d", "dh", "n", "p", "ph",
+       "b", "bh", "m", "y", "r", "l", "v", "s", "h", "ḷ", "ṃ"]
+
+
+def clave(w):
+    """Orden alfabético pāḷi (las aspiradas son una letra)."""
+    w = re.sub(r"<[^>]+>", "", w).lower()
+    out, i = [], 0
+    while i < len(w):
+        if w[i:i + 2] in ALF:
+            out.append(ALF.index(w[i:i + 2]))
+            i += 2
+        else:
+            out.append(ALF.index(w[i]) if w[i] in ALF else 99)
+            i += 1
+    return out
+
+
+def unir(p, ind):
+    """Las 310 de Nandisena, en su orden, con las de IEBH intercaladas."""
+    ent = list(p["entradas"])
+    nip = next(c for c in ind["clases"] if c["id"] == "nipata")
+    for x in sorted(nip["entradas"], key=lambda e: clave(e["lema"])):
+        k = clave(x["lema"])
+        pos = next((i for i, e in enumerate(ent) if clave(e["lema"]) > k), len(ent))
+        ent.insert(pos, x)
+    nip["entradas"] = ent
+    ind["meta"]["erratas"] = p["meta"]["erratas"]
+    return ind
+
+
+REMISION = """<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex"><title>{titulo}</title>
+<link rel="canonical" href="{destino}">
+<script>(function(){{var q=new URLSearchParams(location.search),l=q.get('lang');
+location.replace('{destino}'+'{extra}'+(l?'&lang='+l:'')+location.hash)}})();</script>
+<meta http-equiv="refresh" content="0; url={destino}{extra}">
+</head><body><p>Esta página está ahora en <a href="{destino}{extra}">{titulo}</a>.
+· This page has moved to <a href="{destino}{extra}">{titulo}</a>.</p></body></html>
+"""
 CASOS = {"1", "1v", "2", "3", "4", "5", "6", "7"}
 
 
@@ -53,7 +104,13 @@ def verificar(d):
         if isinstance(t, str) and unicodedata.normalize("NFC", t) != t:
             fallos.append("{0}: texto que no está en NFC".format(donde))
 
-    for x in d["entradas"]:
+    entradas = next(c for c in d["clases"] if c["id"] == "nipata")["entradas"]
+    for c in d["clases"]:
+        for x in c.get("entradas", []) if c["id"] != "nipata" else []:
+            if x["id"] in vistos:
+                fallos.append("id repetido: " + x["id"])
+            vistos.add(x["id"])
+    for x in entradas:
         i = x["id"]
         if i in vistos:
             fallos.append("id repetido: " + i)
@@ -155,12 +212,13 @@ def guia(version, fecha):
 
 
 def main():
-    d = json.load(open(DATOS, encoding="utf-8"))
+    d = unir(json.load(open(DATOS, encoding="utf-8")),
+             json.load(open(DATOS_I, encoding="utf-8")))
     fallos = verificar(d)
     pagina_guia, f_guia = guia(d["meta"]["version"], d["meta"]["fecha"])
     fallos += f_guia
     if fallos:
-        print("particulas.json NO cuadra; no se publica:")
+        print("indeclinables NO cuadra; no se publica:")
         for f in fallos[:20]:
             print("  ✗", f)
         return 1
@@ -174,16 +232,25 @@ def main():
     meta = d["meta"]
     html = html.replace("__VERSION_DATE__", meta["fecha"]).replace("__VERSION__", meta["version"])
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
-    open(DESTINO, "w", encoding="utf-8").write(cabecera.insertar(html, "particulas"))
+    open(DESTINO, "w", encoding="utf-8").write(cabecera.insertar(html, "indeclinables"))
     os.makedirs(os.path.dirname(GUIA_DESTINO), exist_ok=True)
     open(GUIA_DESTINO, "w", encoding="utf-8").write(
-        cabecera.insertar(pagina_guia, "particulas-guia"))
-    ej = sum(1 for x in d["entradas"] for b in x["bloques"] if b["tipo"] == "ej")
-    nuevas = sum(1 for x in d["entradas"] if x.get("nuevo"))
-    print("v{0} ({1}) · {2} entradas ({3} añadidas por IEBH) · {4} ejemplos · "
-          "{5} erratas → {6} (y la guía)".format(meta["version"], meta["estado"]["es"], len(d["entradas"]),
-                                     nuevas, ej, len(meta["erratas"]),
-                                     os.path.relpath(DESTINO, RAIZ)))
+        cabecera.insertar(pagina_guia, "indeclinables-guia"))
+    # las direcciones antiguas remiten a la página nueva
+    for ruta, destino, extra in ((VIEJA, "../indeclinables/", "?c=nipata"),
+                                 (VIEJA_GUIA, "../../indeclinables/guia/", "?")):
+        os.makedirs(os.path.dirname(ruta), exist_ok=True)
+        open(ruta, "w", encoding="utf-8").write(REMISION.format(
+            titulo="Indeclinables (abyaya)", destino=destino, extra=extra))
+    ent = next(c for c in d["clases"] if c["id"] == "nipata")["entradas"]
+    ej = sum(1 for x in ent for b in x["bloques"] if b["tipo"] == "ej")
+    nuevas = sum(1 for x in ent if x.get("nuevo"))
+    pref = len(d["clases"][0]["entradas"])
+    print("v{0} ({1}) · {2} prefijos · {3} partículas ({4} añadidas por IEBH) · {5} ejemplos · "
+          "{6}+{7} erratas → {8} (y la guía; /recursos/particulas/ remite)".format(
+              meta["version"], meta["estado"]["es"], pref, len(ent), nuevas, ej,
+              len(meta["erratas"]), len(meta.get("erratas_indeclinables", [])),
+              os.path.relpath(DESTINO, RAIZ)))
     return 0
 
 
