@@ -31,8 +31,6 @@ Fuera de las gramáticas, Nettivibhāvinī, una ṭīkā del Nettippakaraṇa (p
 | *upasagga* | da a conocer una particularidad de la acción (*kiriyāvisesabodhahetu*) | *pa, upa* |
 | *nipāta* | da a conocer una particularidad en la forma de la acción y de la sustancia (*kiriyāya ceva dabbassa ca sarūpavisesapakāsanahetu*) | *evaṃ, iti* |
 
-La división es anterior a la gramática pāḷi: es la de Yāska en el Nirukta sánscrito (1.1), *catvāri padajātāni nāmākhyāte copasarganipātāś ca*, «cuatro son las clases de palabra: el nombre y el verbo, el prefijo y la partícula».
-
 La partícula es lo que queda fuera de las otras tres. Así cierra Rūpasiddhi su capítulo de las partículas (Nepātikapada, p. 136):
 
 > *Evaṃ nāmākhyātopasaggavinimuttaṃ yad abyayalakkhaṇaṃ, taṃ sabbaṃ nipātapadan ti veditabbaṃ.*
@@ -211,7 +209,7 @@ Las referencias de los ejemplos remiten a la **edición birmana del Sexto Concil
 
 ## 7. Fuentes y cómo citar
 
-**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, p. 131 y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso; Yāska, Nirukta 1.1.
+**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, p. 131 y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso.
 
 **Cómo citar esta página:**
 
@@ -251,8 +249,6 @@ Outside the grammars, Nettivibhāvinī, a ṭīkā on the Nettippakaraṇa (p. 4
 | *ākhyāta* | action predominates in it (*kiriyāpadhāna*) | *phusati, vedayati, vijānāti* |
 | *upasagga* | it makes known a particular of the action (*kiriyāvisesabodhahetu*) | *pa, upa* |
 | *nipāta* | it makes known a particular in the form of the action and of the substance (*kiriyāya ceva dabbassa ca sarūpavisesapakāsanahetu*) | *evaṃ, iti* |
-
-The division is older than Pāḷi grammar: it is Yāska's in the Sanskrit Nirukta (1.1), *catvāri padajātāni nāmākhyāte copasarganipātāś ca*, “four are the kinds of word: noun and verb, prefix and particle”.
 
 The particle is whatever falls outside the other three. This is how Rūpasiddhi closes its chapter on particles (Nepātikapada, p. 136):
 
@@ -432,7 +428,7 @@ The references of the examples point to the **Burmese Sixth Council edition** (C
 
 ## 7. Sources and how to cite
 
-**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, p. 131 and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy; Yāska, Nirukta 1.1.
+**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, p. 131 and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy.
 
 **How to cite this page:**
 
