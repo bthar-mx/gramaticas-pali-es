@@ -52,6 +52,9 @@ sup.fn a{color:var(--accent);text-decoration:none;font-family:var(--mono);font-s
 .notas .nn{font-family:var(--mono);font-size:10.5px;color:var(--accent);margin-right:6px}
 .fuente{margin:10px 0 0;font-size:14px;color:var(--text2);max-width:78ch;border-left:2px solid var(--haritala);padding-left:10px}
 .fuente b{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--haritala);margin-right:6px}
+.guia-l{margin:12px 0 0;font-size:15px}
+.guia-l a{color:var(--accent);text-decoration:none;border-bottom:1px dotted currentColor}
+.guia-l a:hover{color:var(--haritala)}
 .aviso{margin:14px 0 0;max-width:66ch;font-size:14.5px;color:var(--text2);border-left:2px solid var(--rakta);padding-left:10px}
 .erratas{font-size:13.5px;border-collapse:collapse;margin:8px 0;width:100%}
 .erratas td{padding:3px 8px;border-bottom:1px solid var(--border);vertical-align:baseline}
@@ -79,6 +82,7 @@ footer.rc-pie p{max-width:78ch}
   <rc-lado><div class="hero fija" id="hero"></div></rc-lado>
   <rc-debajo>
   <p class="aviso" id="aviso"></p>
+  <p class="guia-l"><a id="guia-l" href="guia/"></a></p>
   </rc-debajo>
 </rc-titulo>
 
@@ -107,7 +111,7 @@ footer.rc-pie p{max-width:78ch}
 const D=/*__DATOS__*/{}/*__FIN__*/;
 const M=D.meta;
 const T={
-es:{title:'Partículas',estado:M.estado.es,empty:'Ninguna partícula coincide.',sb_open:'Desplegar',sb_close:'Plegar',
+es:{title:'Partículas',guia:'Guía para el estudiante: qué es un nipāta, cómo se clasifican y cómo leer esta página →',estado:M.estado.es,empty:'Ninguna partícula coincide.',sb_open:'Desplegar',sb_close:'Plegar',
   notas_sum:'Notas, fuentes y erratas',ver:'Versión',todas:'Todas',sin:'Sin caso',
   search:'Buscar en pāḷi, español o referencia (sin diacríticos)…',
   rows:n=>n+(n===1?' partícula':' partículas'),
@@ -121,11 +125,11 @@ es:{title:'Partículas',estado:M.estado.es,empty:'Ninguna partícula coincide.',
   hero:(n,e)=>`<div><b>${n}</b> partículas</div><div><b>${e}</b> ejemplos</div>`,
   lic:'Material del Instituto de Estudios Buddhistas Hispano (IEBH), a partir de la obra de Bhikkhu Nandisena.<br>Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.',
   notas:n=>`<p><strong>Qué es esta página.</strong> El documento <i>Partículas (Nipāta)</i> de Bhikkhu Nandisena (2013; ${esc(M.publicacion)}): cada partícula con su equivalente sánscrito cuando lo hay, sus sentidos —con el término técnico pāḷi— y ejemplos del Canon y los comentarios. Atribución: ${esc(M.atribucion.es)}.</p>
-  <p><strong>Las referencias.</strong> Las de los ejemplos (D. ii 64, J. i 11, DhA. i 41…) son páginas de la edición birmana del Sexto Concilio, no de la PTS. Se han comprobado una a una contra el texto del Sexto Concilio.</p>
+  <p><strong>Las referencias.</strong> Las de los ejemplos (D. ii 64, J. i 11, DhA. i 41…) son páginas de la edición birmana del Sexto Concilio, no de la PTS. Se han cotejado una a una con el texto del Sexto Concilio; las que no caen en la página citada se corrigen entre las erratas o en la revisión.</p>
   <p><strong>El caso.</strong> La etiqueta 1.ª, 2.ª… 7.ª dice en el sentido de qué inflexión se usa la partícula, según Rūpasiddhi y Saddanīti. Donde Niruttidīpanī (sutta 288) asigna otra, se indica aparte.</p>
   <p><strong>Erratas corregidas en esta edición (${n}).</strong> Sólo las evidentes: tipografía, una referencia que no cae en la página citada, una palabra repetida. Lo que es cuestión de interpretación queda para la revisión.</p>`,
 },
-en:{title:'Particles',estado:M.estado.en,empty:'No particle matches.',sb_open:'Expand',sb_close:'Collapse',
+en:{title:'Particles',guia:'Student guide: what a nipāta is, how they are classified and how to read this page →',estado:M.estado.en,empty:'No particle matches.',sb_open:'Expand',sb_close:'Collapse',
   notas_sum:'Notes, sources and errata',ver:'Version',todas:'All',sin:'No case',
   search:'Search Pāḷi, English or a reference (diacritics optional)…',
   rows:n=>n+(n===1?' particle':' particles'),
@@ -139,7 +143,7 @@ en:{title:'Particles',estado:M.estado.en,empty:'No particle matches.',sb_open:'E
   hero:(n,e)=>`<div><b>${n}</b> particles</div><div><b>${e}</b> examples</div>`,
   lic:'Material of the Instituto de Estudios Buddhistas Hispano (IEBH), based on the work of Bhikkhu Nandisena.<br>This material may be reproduced for personal use and distributed free of charge.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a> licence.',
   notas:n=>`<p><strong>What this page is.</strong> Bhikkhu Nandisena’s <i>Partículas (Nipāta)</i> (2013; ${esc(M.publicacion)}): each particle with its Sanskrit equivalent where there is one, its senses —with the Pāḷi technical term— and examples from the Canon and the commentaries. Attribution: ${esc(M.atribucion.en)}. The English is a draft translation of the Spanish.</p>
-  <p><strong>References.</strong> Those of the examples (D. ii 64, J. i 11, DhA. i 41…) are pages of the Burmese Sixth Council edition, not of the PTS. Each one has been checked against the Sixth Council text.</p>
+  <p><strong>References.</strong> Those of the examples (D. ii 64, J. i 11, DhA. i 41…) are pages of the Burmese Sixth Council edition, not of the PTS. Each one has been checked against the Sixth Council text; those that do not fall on the page cited are corrected among the errata or in the revision.</p>
   <p><strong>Case.</strong> The 1st, 2nd… 7th label says in the sense of which inflection the particle is used, according to Rūpasiddhi and Saddanīti. Where Niruttidīpanī (sutta 288) assigns another, it is shown separately.</p>
   <p><strong>Errata corrected in this edition (${n}).</strong> Only the obvious ones: typography, a reference that does not fall on the page cited, a repeated word. Matters of interpretation are left for the revision. The list quotes the Spanish text.</p>`,
 }};
@@ -195,6 +199,7 @@ function textos(){
   document.getElementById('h1').textContent=document.title;
   document.getElementById('entradilla').innerHTML=t.entradilla;
   document.getElementById('aviso').innerHTML=t.aviso;
+  const gl=document.getElementById('guia-l');gl.textContent=t.guia;gl.href='guia/?lang='+lang;
   document.getElementById('hero').innerHTML=t.hero(E.length,nEj);
   document.getElementById('lic').innerHTML=t.lic;
   document.getElementById('vbadge').innerHTML=`v${esc(M.version)} · <time datetime="${M.fecha}">${M.fecha}</time>`;

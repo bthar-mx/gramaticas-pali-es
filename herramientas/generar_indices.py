@@ -154,7 +154,8 @@ RECURSOS = [
      "ejemplos del Canon y los comentarios: el documento de Bhikkhu "
      "Nandisena (2013), edición revisada por IEBH, con las erratas "
      "evidentes corregidas. Buscador que ignora los diacríticos, filtro "
-     "por el sentido de caso e índice por el alfabeto pāḷi. En revisión."),
+     "por el sentido de caso e índice por el alfabeto pāḷi. En revisión.",
+     ("particulas/guia/", "Guía para el estudiante", "Student guide")),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: <i>Glosario de términos "

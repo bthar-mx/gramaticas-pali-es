@@ -175,6 +175,9 @@ PAGINAS = {
     "particulas":  dict(raiz="../../", seccion="recursos", indice=False,
                         idioma="alterna", ctl_idioma="#lang-btn",
                         tema="atributo", ctl_tema="#theme"),
+    "particulas-guia": dict(raiz="../../../", seccion="recursos", indice=False,
+                            idioma="alterna", ctl_idioma="#lang-btn",
+                            tema="atributo", ctl_tema="#theme"),
     # documentos en prosa de recursos/*.md (hoy ninguno se publica)
     "recurso":     dict(raiz="../../", seccion="recursos", indice=False,
                         idioma="solo-es", tema="clase", ctl_tema="#dark-btn"),
@@ -347,7 +350,7 @@ FUENTES = ("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght
 CON_RECURSOS_CSS = {"recursos", "sandhi", "solucionador", "nombre", "verbo",
                     "paradigmas", "raices", "glosario", "casos", "clasificacion",
                     "analisis", "analisis-guia", "comentarios",
-                    "particulas"}
+                    "particulas", "particulas-guia"}
 
 MARCA_INI = "<!-- cabecera:inicio -->"
 MARCA_FIN = "<!-- cabecera:fin -->"
