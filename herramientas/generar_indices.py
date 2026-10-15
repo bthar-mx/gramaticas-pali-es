@@ -149,6 +149,12 @@ RECURSOS = [
      "Kaccāyana, la sección de Ñāṇatusita (<i>Reference Table of Pāli "
      "Literature</i>) y el texto en línea, con el material de este sitio "
      "en primer lugar. Borrador en revisión."),
+    ("particulas/", "__PARTICULAS_BADGE__", "Partículas — nipāta",
+     "Las partículas (<i>nipāta</i>) del pāḷi, con sus sentidos y "
+     "ejemplos del Canon y los comentarios: el documento de Bhikkhu "
+     "Nandisena (2013), edición revisada por IEBH, con las erratas "
+     "evidentes corregidas. Buscador que ignora los diacríticos, filtro "
+     "por el sentido de caso e índice por el alfabeto pāḷi. En revisión."),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: <i>Glosario de términos "
@@ -355,6 +361,18 @@ EN = {
         "Kaccāyana, Ñāṇatusita's section (<i>Reference Table of Pāli "
         "Literature</i>) and the online text, this site's own material first."
         " Draft under review.",
+    "Partículas — nipāta": "Particles — nipāta",
+    "Las partículas (<i>nipāta</i>) del pāḷi, con sus sentidos y "
+    "ejemplos del Canon y los comentarios: el documento de Bhikkhu "
+    "Nandisena (2013), edición revisada por IEBH, con las erratas "
+    "evidentes corregidas. Buscador que ignora los diacríticos, filtro "
+    "por el sentido de caso e índice por el alfabeto pāḷi. En revisión.":
+        "The Pāḷi particles (<i>nipāta</i>), with their senses and "
+        "examples from the Canon and the commentaries: Bhikkhu "
+        "Nandisena's document (2013), edited by IEBH, with the obvious "
+        "errata corrected. Search ignores diacritics, with a filter by "
+        "case sense and an index by the Pāḷi alphabet. Under review; "
+        "the English is a draft.",
     "Clasificación de los suttas de Kaccāyana":
         "Classification of the Kaccāyana suttas",
     "Cada aforismo de Kaccāyana clasificado según "
@@ -718,6 +736,17 @@ def cuenta_comentarios():
     return len(re.findall(r"^\| \*\*", md, re.M)), m.get("version", "")
 
 
+def cuenta_particulas():
+    """(entradas, ejemplos, versión) de recursos/particulas/particulas.json."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "particulas", "particulas.json")
+    if not os.path.exists(p):
+        return None
+    d = json.load(open(p, encoding="utf-8"))
+    ej = sum(1 for x in d["entradas"] for b in x["bloques"] if b["tipo"] == "ej")
+    return len(d["entradas"]), ej, d["meta"]["version"]
+
+
 def cuenta_raices():
     """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
     import json
@@ -767,6 +796,11 @@ GRUPOS_RECURSOS = [
          "sufijos-inflexiones",
          "Nominal and pronominal declension · <i>vibhatti-paccaya</i>, "
          "inflectional suffixes", False),
+        ("particulas/", "Partículas", "Particles",
+         "Las partículas (<i>nipāta</i>) de Bhikkhu Nandisena, con sentidos y "
+         "ejemplos",
+         "Bhikkhu Nandisena's particles (<i>nipāta</i>), with senses and "
+         "examples", True),
     ]),
     (("Derivar y practicar", "Derive and practise"), [
         ("sandhi/", "Sandhi", "Sandhi",
@@ -1163,7 +1197,12 @@ def indice_recursos():
     badge_com = (bi("{0} obras · v{1}".format(*n_com),
                     "{0} works · v{1}".format(*n_com))
                  if n_com else "comentarios")
+    n_pti = cuenta_particulas()
+    badge_pti = (bi("{0} partículas · {1} ejemplos · v{2}".format(*n_pti),
+                    "{0} particles · {1} examples · v{2}".format(*n_pti))
+                 if n_pti else "partículas")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
+                 "__PARTICULAS_BADGE__": badge_pti,
                  "__CASOS_BADGE__": badge_cas,
                  "__CLASIFICACION_BADGE__": badge_cla,
                  "__ANALISIS_BADGE__": badge_ana,
@@ -1188,7 +1227,8 @@ def indice_recursos():
                 and (ins != "__CASOS_BADGE__" or n_cas)
                 and (ins != "__CLASIFICACION_BADGE__" or n_cla)
                 and (ins != "__ANALISIS_BADGE__" or n_ana)
-                and (ins != "__COMENTARIOS_BADGE__" or n_com)]
+                and (ins != "__COMENTARIOS_BADGE__" or n_com)
+                and (ins != "__PARTICULAS_BADGE__" or n_pti)]
 
     # El número de paradigmas, de los datos: la descripción decía «83» a
     # mano mientras la insignia contaba 85 (2026-10-08).

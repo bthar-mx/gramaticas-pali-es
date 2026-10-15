@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Partículas (nipāta)</title>
+<meta name="version" content="__VERSION__">
+<meta name="version-date" content="__VERSION_DATE__">
+<meta name="description" content="Las partículas (nipāta) del pāḷi, con sus sentidos y ejemplos del Canon y los comentarios: el documento de Bhikkhu Nandisena (2013), edición revisada por IEBH.">
+<style>
+/* La paleta, la letra, el bloque del título, el índice lateral, la barra
+   de mandos, el globo, el ↑ y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo que sólo tiene esta página. */
+html{scroll-padding-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 10px)}
+.sidebar a{padding:2px 18px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sidebar a i{font-style:italic}
+.sb-sec>summary::before{content:'▸';flex:0 0 10px;font-size:9px;opacity:.8}
+.sb-sec[open]>summary::before{content:'▾'}
+.sb-sec>summary .gl{flex:1;min-width:0;font-family:var(--serif);font-style:italic;text-transform:none;letter-spacing:0;font-size:14px}
+.sb-sec>summary .n{color:var(--text2);font-weight:400;letter-spacing:0}
+.sb-sec.on:not([open])>summary{background:var(--bg);box-shadow:inset 2px 0 0 var(--haritala)}
+.sidebar a[hidden],.sb-sec[hidden]{display:none}
+
+/* letra inicial */
+.sec{margin:40px 0 6px;display:flex;align-items:baseline;gap:12px}
+.sec h2{font-size:24px;margin:0;font-weight:700;font-style:italic;color:var(--haritala)}
+.sec .rule{flex:1;height:1px;background:var(--border)}
+
+/* entrada */
+.card{border-top:1px solid var(--border);padding:18px 0 20px}
+.ecab{font-size:17px;line-height:1.6;margin:0;max-width:78ch}
+.ecab b{font-style:italic;font-size:19px}
+.chips{display:inline-flex;gap:6px;margin-left:8px;vertical-align:2px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.05em;border-radius:2px;padding:1px 6px;
+  color:var(--accent);background:var(--accent-bg);white-space:nowrap;cursor:help}
+.chip.nir{color:var(--text2);background:none;border:1px solid var(--border)}
+.chip.nuevo{color:var(--bg2);background:var(--haritala)}
+.bl{margin:6px 0 0;max-width:78ch;line-height:1.6}
+.bl.n2{padding-left:22px}
+ul.ejs{list-style:none;margin:4px 0 6px;padding:0 0 0 16px;border-left:1px solid var(--border)}
+ul.ejs.n2{margin-left:22px}
+ul.ejs li{padding:3px 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px 22px;align-items:baseline}
+ul.ejs .p{font-style:italic}
+ul.ejs .t{color:var(--text2)}
+ul.ejs .rf{display:inline;margin-left:9px;font-family:var(--mono);font-size:10.5px;font-style:normal;color:var(--accent);white-space:nowrap;cursor:help}
+@media (max-width:640px){ul.ejs li{grid-template-columns:1fr;gap:0}ul.ejs .t{padding-left:12px}}
+sup.fn a{color:var(--accent);text-decoration:none;font-family:var(--mono);font-size:.75em}
+.notas{margin:10px 0 0;padding:6px 0 0;border-top:1px dashed var(--border);font-size:14px;color:var(--text2);max-width:78ch}
+.notas p{margin:2px 0}
+.notas .nn{font-family:var(--mono);font-size:10.5px;color:var(--accent);margin-right:6px}
+.fuente{margin:10px 0 0;font-size:14px;color:var(--text2);max-width:78ch;border-left:2px solid var(--haritala);padding-left:10px}
+.fuente b{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--haritala);margin-right:6px}
+.aviso{margin:14px 0 0;max-width:66ch;font-size:14.5px;color:var(--text2);border-left:2px solid var(--rakta);padding-left:10px}
+.erratas{font-size:13.5px;border-collapse:collapse;margin:8px 0;width:100%}
+.erratas td{padding:3px 8px;border-bottom:1px solid var(--border);vertical-align:baseline}
+.erratas td:first-child{font-family:var(--mono);font-size:10.5px;white-space:nowrap;color:var(--text2)}
+.erratas del{color:var(--rakta)}
+footer.rc-pie p{max-width:78ch}
+@media print{.bar,.sidebar,#top-btn{display:none!important}body{padding-left:0}}
+</style>
+</head>
+<body>
+<nav class="sidebar" id="sidebar" aria-label="Índice">
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice">☰</button>
+  <div class="sb-tools"><button id="sb-abrir" data-t="sb_open">Desplegar</button><button id="sb-plegar" data-t="sb_close">Plegar</button></div>
+  <div class="sb-brand"><b data-t="title">Partículas</b><span class="lbl">nipāta</span></div>
+  <div id="sb-list"></div>
+</nav>
+<div class="scrim" id="scrim"></div>
+<button id="volver-barra" aria-label="Mostrar el índice">☰</button>
+
+<rc-titulo>
+  <rc-ceja>Instituto de Estudios Buddhistas Hispano</rc-ceja>
+  <rc-h1 id="h1">Partículas (nipāta)</rc-h1>
+  <rc-desc id="entradilla"></rc-desc>
+  <rc-insignias><span class="borrador" data-t="estado">En revisión</span><span class="version-badge" id="vbadge"></span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button></rc-insignias>
+  <rc-lado><div class="hero fija" id="hero"></div></rc-lado>
+  <rc-debajo>
+  <p class="aviso" id="aviso"></p>
+  </rc-debajo>
+</rc-titulo>
+
+<div class="bar" id="bar"><div class="wrap">
+  <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+  <input type="search" id="q" aria-label="Buscar">
+  <div class="filtros" id="f-caso" role="group"></div>
+  <button class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button>
+  <span class="count" id="count"></span>
+</div></div>
+
+<main class="wrap" id="out"></main>
+<div class="wrap"><div class="empty" id="empty" hidden><p data-t="empty">Ninguna partícula coincide.</p></div></div>
+<button id="top-btn" aria-label="↑">↑</button>
+
+<rc-pie>
+<rc-notas><summary data-t="notas_sum">Notas, fuentes y erratas</summary>
+  <p class="version-foot" id="vfoot"></p>
+  <div id="notas-pie"></div>
+</rc-notas>
+<rc-licencia><span id="lic"></span></rc-licencia>
+</rc-pie>
+
+<script>
+(function(){
+const D=/*__DATOS__*/{}/*__FIN__*/;
+const M=D.meta;
+const T={
+es:{title:'Partículas',estado:M.estado.es,empty:'Ninguna partícula coincide.',sb_open:'Desplegar',sb_close:'Plegar',
+  notas_sum:'Notas, fuentes y erratas',ver:'Versión',todas:'Todas',sin:'Sin caso',
+  search:'Buscar en pāḷi, español o referencia (sin diacríticos)…',
+  rows:n=>n+(n===1?' partícula':' partículas'),
+  entradilla:'Las partículas (<i>nipāta</i>) del pāḷi, con sus sentidos y ejemplos del Canon y los comentarios, en orden alfabético pāḷi.',
+  aviso:'<b>En revisión.</b> Es el texto de 2013 de Bhikkhu Nandisena con las erratas evidentes corregidas; la lista está en las notas al pie de la página. La revisión completa, entrada por entrada contra las fuentes, está en curso.',
+  caso:{'1':'1.ª','1v':'Vocativo','2':'2.ª','3':'3.ª','4':'4.ª','5':'5.ª','6':'6.ª','7':'7.ª'},
+  caso_tit:'En qué inflexión se usa (sentido de caso), según Rūpasiddhi y Saddanīti',
+  nir_tit:c=>'Niruttidīpanī (sutta 288) la da en el sentido de la '+c+' inflexión',
+  ref_tit:'Página de la edición birmana del Sexto Concilio (Chaṭṭhasaṅgāyana)',
+  nuevo:'IEBH',nuevo_tit:'Entrada añadida por IEBH; no está en el documento de 2013',fuente:'Fuente',
+  hero:(n,e)=>`<div><b>${n}</b> partículas</div><div><b>${e}</b> ejemplos</div>`,
+  lic:'Material del Instituto de Estudios Buddhistas Hispano (IEBH), a partir de la obra de Bhikkhu Nandisena.<br>Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.',
+  notas:n=>`<p><strong>Qué es esta página.</strong> El documento <i>Partículas (Nipāta)</i> de Bhikkhu Nandisena (2013; ${esc(M.publicacion)}): cada partícula con su equivalente sánscrito cuando lo hay, sus sentidos —con el término técnico pāḷi— y ejemplos del Canon y los comentarios. Atribución: ${esc(M.atribucion.es)}.</p>
+  <p><strong>Las referencias.</strong> Las de los ejemplos (D. ii 64, J. i 11, DhA. i 41…) son páginas de la edición birmana del Sexto Concilio, no de la PTS. Se han comprobado una a una contra el texto del Sexto Concilio.</p>
+  <p><strong>El caso.</strong> La etiqueta 1.ª, 2.ª… 7.ª dice en el sentido de qué inflexión se usa la partícula, según Rūpasiddhi y Saddanīti. Donde Niruttidīpanī (sutta 288) asigna otra, se indica aparte.</p>
+  <p><strong>Erratas corregidas en esta edición (${n}).</strong> Sólo las evidentes: tipografía, una referencia que no cae en la página citada, una palabra repetida. Lo que es cuestión de interpretación queda para la revisión.</p>`,
+},
+en:{title:'Particles',estado:M.estado.en,empty:'No particle matches.',sb_open:'Expand',sb_close:'Collapse',
+  notas_sum:'Notes, sources and errata',ver:'Version',todas:'All',sin:'No case',
+  search:'Search Pāḷi, English or a reference (diacritics optional)…',
+  rows:n=>n+(n===1?' particle':' particles'),
+  entradilla:'The Pāḷi particles (<i>nipāta</i>), with their senses and examples from the Canon and the commentaries, in Pāḷi alphabetical order.',
+  aviso:'<b>Under review.</b> This is Bhikkhu Nandisena’s 2013 text with the obvious errata corrected; they are listed in the notes at the foot of the page. The full revision, entry by entry against the sources, is in progress. <b>The English is a draft translation</b> of the Spanish and has not yet been checked.',
+  caso:{'1':'1st','1v':'Vocative','2':'2nd','3':'3rd','4':'4th','5':'5th','6':'6th','7':'7th'},
+  caso_tit:'Inflection in whose sense it is used (case sense), according to Rūpasiddhi and Saddanīti',
+  nir_tit:c=>'Niruttidīpanī (sutta 288) gives it in the sense of the '+c+' inflection',
+  ref_tit:'Page of the Burmese Sixth Council (Chaṭṭhasaṅgāyana) edition',
+  nuevo:'IEBH',nuevo_tit:'Entry added by IEBH; not in the 2013 document',fuente:'Source',
+  hero:(n,e)=>`<div><b>${n}</b> particles</div><div><b>${e}</b> examples</div>`,
+  lic:'Material of the Instituto de Estudios Buddhistas Hispano (IEBH), based on the work of Bhikkhu Nandisena.<br>This material may be reproduced for personal use and distributed free of charge.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a> licence.',
+  notas:n=>`<p><strong>What this page is.</strong> Bhikkhu Nandisena’s <i>Partículas (Nipāta)</i> (2013; ${esc(M.publicacion)}): each particle with its Sanskrit equivalent where there is one, its senses —with the Pāḷi technical term— and examples from the Canon and the commentaries. Attribution: ${esc(M.atribucion.en)}. The English is a draft translation of the Spanish.</p>
+  <p><strong>References.</strong> Those of the examples (D. ii 64, J. i 11, DhA. i 41…) are pages of the Burmese Sixth Council edition, not of the PTS. Each one has been checked against the Sixth Council text.</p>
+  <p><strong>Case.</strong> The 1st, 2nd… 7th label says in the sense of which inflection the particle is used, according to Rūpasiddhi and Saddanīti. Where Niruttidīpanī (sutta 288) assigns another, it is shown separately.</p>
+  <p><strong>Errata corrected in this edition (${n}).</strong> Only the obvious ones: typography, a reference that does not fall on the page cited, a repeated word. Matters of interpretation are left for the revision. The list quotes the Spanish text.</p>`,
+}};
+
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>String(s||'').normalize('NFD').replace(/\p{M}/gu,'').toLowerCase();
+/* markdown en línea del documento: **negrita**, *cursiva*, [^n], <sup>n</sup> */
+function md(s,id){
+  return esc(s).replace(/&lt;sup&gt;(\d)&lt;\/sup&gt;/g,'<sup>$1</sup>')
+    .replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<i>$1</i>')
+    .replace(/\[\^(\d+)\]/g,(m,n)=>id?`<sup class="fn"><a href="#${id}-n${n}">${n}</a></sup>`:`<sup>${n}</sup>`);
+}
+const root=document.documentElement;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const mq=c=>{try{return !!(window.matchMedia&&matchMedia(c).matches)}catch(e){return false}};
+/* Lengua: la misma regla que en todo el sitio (clave pali_lang). */
+function paliLang(){const g=store.get('pali_lang');if(g==='en'||g==='es')return g;
+  const n=(navigator.languages&&navigator.languages[0])||navigator.language||'';return /^en\b/i.test(n)?'en':'es'}
+let lang=(new URLSearchParams(location.search).get('lang')||paliLang())==='en'?'en':'es';
+
+/* inicial en el orden del alfabeto pāḷi (las aspiradas son una letra) */
+const ALF=['a','ā','i','ī','u','ū','e','o','k','kh','g','gh','ṅ','c','ch','j','jh','ñ','ṭ','ṭh','ḍ','ḍh','ṇ','t','th','d','dh','n','p','ph','b','bh','m','y','r','l','v','s','h','ḷ'];
+function inicial(l){l=l.replace(/<[^>]+>/g,'').toLowerCase().normalize('NFC');const d=l.slice(0,2);return ALF.includes(d)?d:l[0]}
+const E=D.entradas;
+const nEj=E.reduce((a,x)=>a+x.bloques.filter(b=>b.tipo==='ej').length,0);
+const CASOS=['1','1v','2','3','4','5','6','7'].filter(c=>E.some(x=>x.caso.includes(c)));
+
+function entrada(x){
+  const t=T[lang],L=lang;
+  let chips=x.caso.map(c=>`<span class="chip" title="${esc(t.caso_tit)}">${esc(t.caso[c])}</span>`).join('');
+  if(x.nir) chips+=`<span class="chip nir" title="${esc(t.nir_tit(x.nir))}">Nir. ${esc(x.nir)}</span>`;
+  if(x.nuevo) chips+=`<span class="chip nuevo" title="${esc(t.nuevo_tit)}">${t.nuevo}</span>`;
+  let h=`<article class="card" id="${x.id}" data-c="${x.caso.join(' ')||'sin'}"><p class="ecab">${md(x.cab[L]||x.cab.es,x.id)}${chips?`<span class="chips">${chips}</span>`:''}</p>`;
+  let ul=null;
+  const cerrar=()=>{if(ul!==null){h+=ul+'</ul>';ul=null}};
+  x.bloques.forEach(b=>{
+    if(b.tipo==='ej'){
+      if(ul===null)ul=`<ul class="ejs${b.nivel===2?' n2':''}">`;
+      const ref=b.ref?`<span class="rf" title="${esc(t.ref_tit)}">${esc(b.ref)}</span>`:'';
+      ul+=`<li><span class="p">${md(b.pali,x.id)}${ref}</span><span class="t">${md(b[L]||b.es,x.id)}</span></li>`;
+    }else{cerrar();h+=`<p class="bl${b.nivel===2?' n2':''}">${md(b[L]||b.es,x.id)}</p>`}
+  });
+  cerrar();
+  if(x.fuente) h+=`<p class="fuente"><b>${t.fuente}</b>${md(x.fuente[L]||x.fuente.es)}</p>`;
+  if(x.notas.length) h+='<div class="notas">'+x.notas.map(n=>`<p id="${x.id}-n${n.n}"><span class="nn">${esc(n.n)}</span>${md(n[L]||n.es)}</p>`).join('')+'</div>';
+  return h+'</article>';
+}
+function textos(){
+  const t=T[lang];root.lang=lang;
+  document.querySelectorAll('[data-t]').forEach(el=>el.textContent=t[el.dataset.t]);
+  document.getElementById('q').placeholder=t.search;
+  document.title=lang==='en'?'Particles (nipāta)':'Partículas (nipāta)';
+  document.getElementById('h1').textContent=document.title;
+  document.getElementById('entradilla').innerHTML=t.entradilla;
+  document.getElementById('aviso').innerHTML=t.aviso;
+  document.getElementById('hero').innerHTML=t.hero(E.length,nEj);
+  document.getElementById('lic').innerHTML=t.lic;
+  document.getElementById('vbadge').innerHTML=`v${esc(M.version)} · <time datetime="${M.fecha}">${M.fecha}</time>`;
+  document.getElementById('vfoot').innerHTML=`<strong>${t.ver} ${esc(M.version)}</strong> — <time datetime="${M.fecha}">${M.fecha}</time>. ${esc(M.nota_version[lang])}`;
+  document.getElementById('notas-pie').innerHTML=t.notas(M.erratas.length)+
+    '<table class="erratas"><tbody>'+M.erratas.map(r=>`<tr><td>${esc(r.id)}</td><td><del>${md(r.antes)}</del></td><td>${md(r.despues)}</td></tr>`).join('')+'</tbody></table>';
+  document.getElementById('f-caso').innerHTML=`<button data-v="all" aria-pressed="${caso==='all'}">${t.todas}</button>`+
+    CASOS.map(c=>`<button data-v="${c}" aria-pressed="${caso===c}">${esc(t.caso[c])}</button>`).join('');
+  document.getElementById('f-caso').setAttribute('aria-label',t.caso_tit);
+  const lb=document.getElementById('lang-btn');lb.querySelectorAll('.lang-seg').forEach(s=>s.classList.toggle('lang-cur',s.dataset.l===lang));
+  lb.title=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.title);
+}
+const abiertos={};
+function render(){
+  const g=[];E.forEach(x=>{const i=inicial(x.lema);let u=g[g.length-1];if(!u||u.i!==i){u={i,xs:[]};g.push(u)}u.xs.push(x)});
+  let h='',sb='';
+  g.forEach(u=>{
+    h+=`<section class="grp" id="l-${encodeURIComponent(u.i)}"><div class="sec"><h2>${esc(u.i)}</h2><span class="rule"></span></div>`+u.xs.map(entrada).join('')+'</section>';
+    sb+=`<details class="sb-sec" data-g="${esc(u.i)}"${abiertos[u.i]?' open':''}><summary><span class="gl">${esc(u.i)}</span><span class="n">${u.xs.length}</span></summary>`+
+      u.xs.map(x=>`<a href="#${x.id}" data-c="${x.id}"><i>${md(x.lema)}</i></a>`).join('')+'</details>';
+  });
+  document.getElementById('out').innerHTML=h;document.getElementById('sb-list').innerHTML=sb;
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.addEventListener('toggle',()=>{abiertos[d.dataset.g]=d.open}));
+  document.querySelectorAll('#out .card').forEach(c=>{c.dataset.t=norm(c.textContent).replace(/\s+/g,' ')});
+  filtrar();
+}
+let caso='all';
+function filtrar(){
+  const q=norm(document.getElementById('q').value.trim());let n=0;
+  document.querySelectorAll('#out .card').forEach(c=>{const ok=(caso==='all'||c.dataset.c.split(' ').includes(caso))&&(!q||c.dataset.t.includes(q));c.hidden=!ok;if(ok)n++});
+  document.querySelectorAll('#out section.grp').forEach(s=>{s.hidden=!s.querySelector('.card:not([hidden])')});
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>{let v=0;d.querySelectorAll('a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);const ok=!!el&&!el.hidden;a.hidden=!ok;if(ok)v++});d.hidden=!v;d.querySelector('.n').textContent=v});
+  document.getElementById('count').textContent=T[lang].rows(n);
+  document.getElementById('empty').hidden=!!n;
+  espiar();
+}
+document.getElementById('q').addEventListener('input',filtrar);
+document.getElementById('f-caso').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;caso=b.dataset.v;
+  document.querySelectorAll('#f-caso button').forEach(x=>x.setAttribute('aria-pressed',x===b));filtrar()});
+document.getElementById('lang-btn').onclick=()=>{lang=lang==='en'?'es':'en';store.set('pali_lang',lang);textos();render()};
+/* tema, compartido con el sitio (pali_dark) */
+const saved=store.get('pali_dark');
+if(saved==='1'||(saved===null&&mq('(prefers-color-scheme: dark)'))) root.dataset.theme='dark';
+document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';store.set('pali_dark',root.dataset.theme==='dark'?'1':'0')};
+
+/* barra lateral (como en /recursos/casos/) */
+const sbEl=document.getElementById('sidebar'),scr=document.getElementById('scrim'),burger=document.getElementById('burger'),barEl=document.getElementById('bar');
+const ancha=()=>innerWidth>900;
+function medirBarra(){root.style.setProperty('--barh',barEl.offsetHeight+'px')}
+medirBarra();addEventListener('resize',medirBarra);
+if(window.ResizeObserver)new ResizeObserver(medirBarra).observe(barEl);
+const cerrarSb=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
+function pintarBarra(oc){root.classList.toggle('sin-barra',oc)} /* aria de los ☰: cabecera.js (rotularIndice) */
+burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
+document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrarSb()};
+document.getElementById('volver-barra').onclick=()=>pintarBarra(false);
+document.getElementById('sb-abrir').onclick=()=>document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.open=true);
+document.getElementById('sb-plegar').onclick=()=>document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.open=false);
+addEventListener('resize',()=>{if(!ancha())root.classList.remove('sin-barra')});
+scr.onclick=cerrarSb;
+addEventListener('keydown',e=>{if(e.key==='Escape')cerrarSb()});
+sbEl.addEventListener('click',e=>{if(e.target.closest('a')&&!ancha())cerrarSb()});
+/* el índice sigue la lectura */
+let spyF=0;
+function espiar(){
+  const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=barEl.getBoundingClientRect().bottom+40;
+  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
+  links.forEach(a=>a.classList.toggle('on',a===cur));
+  document.querySelectorAll('#sb-list .sb-sec').forEach(d=>d.classList.toggle('on',!!cur&&d.contains(cur)));
+  if(cur&&cur.closest('details').open){const r=cur.getBoundingClientRect(),s=sbEl.getBoundingClientRect();
+    if(r.top<s.top+60||r.bottom>s.bottom-20) sbEl.scrollTop+=r.top-s.top-s.height/3}
+}
+const topBtn=document.getElementById('top-btn');
+addEventListener('scroll',()=>{topBtn.classList.toggle('show',scrollY>600);if(!spyF)spyF=requestAnimationFrame(()=>{spyF=0;espiar()})},{passive:true});
+topBtn.onclick=()=>scrollTo({top:0});
+
+textos();render();
+if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)setTimeout(()=>t.scrollIntoView(),0)}
+})();
+</script>
+</body>
+</html>
