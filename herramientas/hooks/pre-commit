@@ -32,7 +32,12 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-CAMBIOS=$(cd "$RAIZ" && git diff --name-only -- site/ kaccayana/)
+# Lo regenerado que git ya sigue (git diff) y también lo NUEVO (ls-files
+# --others): sin esto, la primera vez que un generador escribe una página
+# —site/recursos/particulas/index.html, 2026-10-14— el commit sale sin ella y
+# sin avisar. --exclude-standard respeta .gitignore (.DS_Store, etc.).
+CAMBIOS=$(cd "$RAIZ" && { git diff --name-only -- site/ kaccayana/;
+  git ls-files --others --exclude-standard -- site/ kaccayana/; } | sort -u)
 if [ -n "$CAMBIOS" ]; then
   echo "pre-commit: regenerado y añadido al commit:"
   echo "$CAMBIOS" | sed 's/^/    /'
