@@ -16,7 +16,16 @@ La gramática pāḷi distingue cuatro clases de palabra (*pada*): el nombre (*n
 
 «Los sabios dicen que la palabra es de cuatro clases —de nombre, de verbo, de prefijo y de partícula—, como en *asso khalv abhidhāvati*.»
 
-El ejemplo reúne las cuatro en una sola frase: *asso* «el caballo» es nombre; *khalu* «en verdad», partícula; *abhi*, prefijo, y *dhāvati* «corre», verbo. Payogasiddhi lee *taññūhi* («los que la conocen») en lugar de *viññūhi*. Subodhālaṅkāra-ṭīkā (p. 40) cita el mismo verso y lo atribuye al capítulo del nombre de Rūpasiddhi-ṭīkā.
+El ejemplo, *asso khalv abhidhāvati*, «el caballo, en verdad, corre hacia adelante», reúne las cuatro en una sola frase:
+
+| Palabra | Significado | Clase |
+| --- | --- | --- |
+| *asso* | el caballo | nombre (*nāma*) |
+| *khalu* (*khalv* ante vocal) | en verdad | partícula (*nipāta*) |
+| *abhi* | hacia | prefijo (*upasagga*) |
+| *dhāvati* | corre | verbo (*ākhyāta*) |
+
+Payogasiddhi lee *taññūhi* («los que la conocen») en lugar de *viññūhi*. Subodhālaṅkāra-ṭīkā (p. 40) cita el mismo verso y lo atribuye al capítulo del nombre de Rūpasiddhi-ṭīkā.
 
 La misma ṭīkā explica con esta división el título de la obra que comenta (p. 4): se llama *Padarūpasiddhi* porque establece la formación de las formas con inflexión de las cuatro clases de palabra —*nāmākhyātopasagganipātasaṅkhātānaṃ catubbidhānaṃ padānaṃ*—. Y dice por qué el nombre va primero (p. 30): de las cuatro clases, la acción depende de la sustancia (*kriyāya dabbanissitattā*), y por eso se muestra antes la formación de la palabra que designa la sustancia, el nombre.
 
@@ -241,7 +250,16 @@ Pāḷi grammar distinguishes four kinds of word (*pada*): the noun (*nāma*), t
 
 “The wise say that the word is of four kinds —of noun, of verb, of prefix and of particle—, as in *asso khalv abhidhāvati*.”
 
-The example brings all four together in a single sentence: *asso* “the horse” is a noun; *khalu* “indeed”, a particle; *abhi*, a prefix; and *dhāvati* “runs”, a verb. Payogasiddhi reads *taññūhi* (“those who know it”) instead of *viññūhi*. Subodhālaṅkāra-ṭīkā (p. 40) quotes the same verse and attributes it to the chapter on the noun of Rūpasiddhi-ṭīkā.
+The example, *asso khalv abhidhāvati*, “the horse indeed runs forward”, brings all four together in a single sentence:
+
+| Word | Meaning | Kind |
+| --- | --- | --- |
+| *asso* | the horse | noun (*nāma*) |
+| *khalu* (*khalv* before a vowel) | indeed | particle (*nipāta*) |
+| *abhi* | towards | prefix (*upasagga*) |
+| *dhāvati* | runs | verb (*ākhyāta*) |
+
+Payogasiddhi reads *taññūhi* (“those who know it”) instead of *viññūhi*. Subodhālaṅkāra-ṭīkā (p. 40) quotes the same verse and attributes it to the chapter on the noun of Rūpasiddhi-ṭīkā.
 
 The same ṭīkā uses this division to explain the title of the work it comments on (p. 4): it is called *Padarūpasiddhi* because it establishes the formation of the inflected forms of the four kinds of word —*nāmākhyātopasagganipātasaṅkhātānaṃ catubbidhānaṃ padānaṃ*—. And it says why the noun comes first (p. 30): of the four kinds, action depends on substance (*kriyāya dabbanissitattā*), so the formation of the word that denotes substance, the noun, is shown first.
 
