@@ -10,7 +10,30 @@ El texto es el documento *Partículas (Nipāta)* de Bhikkhu Nandisena (2013), en
 
 ### Una de las cuatro clases de palabra
 
-La gramática pāḷi distingue cuatro clases de palabra (*pada*): el nombre (*nāma*), el verbo (*ākhyāta*), el prefijo (*upasagga*) y la partícula (*nipāta*). La partícula es lo que queda fuera de las otras tres. Así cierra Rūpasiddhi su capítulo de las partículas (Nepātikapada, p. 136):
+La gramática pāḷi distingue cuatro clases de palabra (*pada*): el nombre (*nāma*), el verbo (*ākhyāta*), el prefijo (*upasagga*) y la partícula (*nipāta*). Los gramáticos lo dicen con un verso que abre el capítulo del nombre en Rūpasiddhi-ṭīkā (p. 30) y que cita también Payogasiddhi (p. 85):
+
+> *Padaṃ catubbidhaṃ vuttaṃ nāmākhyātopasaggajaṃ, nipātajañ cā ti viññūhi: asso khalv abhidhāvatī ti.*
+
+«Los sabios dicen que la palabra es de cuatro clases —de nombre, de verbo, de prefijo y de partícula—, como en *asso khalv abhidhāvati*.»
+
+El ejemplo reúne las cuatro en una sola frase: *asso* «el caballo» es nombre; *khalu* «en verdad», partícula; *abhi*, prefijo, y *dhāvati* «corre», verbo. Payogasiddhi lee *taññūhi* («los que la conocen») en lugar de *viññūhi*. Subodhālaṅkāra-ṭīkā (p. 40) cita el mismo verso y lo atribuye al capítulo del nombre de Rūpasiddhi-ṭīkā.
+
+La misma ṭīkā explica con esta división el título de la obra que comenta (p. 4): se llama *Padarūpasiddhi* porque establece la formación de las formas con inflexión de las cuatro clases de palabra —*nāmākhyātopasagganipātasaṅkhātānaṃ catubbidhānaṃ padānaṃ*—. Y dice por qué el nombre va primero (p. 30): de las cuatro clases, la acción depende de la sustancia (*kriyāya dabbanissitattā*), y por eso se muestra antes la formación de la palabra que designa la sustancia, el nombre.
+
+Saddanīti habla en los mismos términos de «las cuatro clases de palabra, nombre, verbo, etc.» (*nāmākhyātādīsu catūsu padesu*; Padamālā, p. 79). Rūpasiddhi, por su parte, dice que los prefijos califican al nombre y al verbo (*nāmākhyātavisesaka*; p. 131).
+
+Fuera de las gramáticas, Nettivibhāvinī, una ṭīkā del Nettippakaraṇa (p. 46), da la división con una definición de cada clase:
+
+| Clase | Qué la caracteriza | Ejemplos |
+| --- | --- | --- |
+| *nāma* | en ella predomina la sustancia (*dabbapadhāna*) | *phasso, vedanā, cittaṃ* |
+| *ākhyāta* | en ella predomina la acción (*kiriyāpadhāna*) | *phusati, vedayati, vijānāti* |
+| *upasagga* | da a conocer una particularidad de la acción (*kiriyāvisesabodhahetu*) | *pa, upa* |
+| *nipāta* | da a conocer una particularidad en la forma de la acción y de la sustancia (*kiriyāya ceva dabbassa ca sarūpavisesapakāsanahetu*) | *evaṃ, iti* |
+
+La división es anterior a la gramática pāḷi: es la de Yāska en el Nirukta sánscrito (1.1), *catvāri padajātāni nāmākhyāte copasarganipātāś ca*, «cuatro son las clases de palabra: el nombre y el verbo, el prefijo y la partícula».
+
+La partícula es lo que queda fuera de las otras tres. Así cierra Rūpasiddhi su capítulo de las partículas (Nepātikapada, p. 136):
 
 > *Evaṃ nāmākhyātopasaggavinimuttaṃ yad abyayalakkhaṇaṃ, taṃ sabbaṃ nipātapadan ti veditabbaṃ.*
 
@@ -188,7 +211,7 @@ Las referencias de los ejemplos remiten a la **edición birmana del Sexto Concil
 
 ## 7. Fuentes y cómo citar
 
-**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, Nepātikapada, pp. 132–136; Niruttidīpanī, pp. 155 y 161–162; Saddanīti, Padamālā, p. 397; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/).
+**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, p. 131 y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso; Yāska, Nirukta 1.1.
 
 **Cómo citar esta página:**
 
@@ -208,7 +231,30 @@ The text is Bhikkhu Nandisena's document *Partículas (Nipāta)* (2013), edited 
 
 ### One of the four kinds of word
 
-Pāḷi grammar distinguishes four kinds of word (*pada*): the noun (*nāma*), the verb (*ākhyāta*), the prefix (*upasagga*) and the particle (*nipāta*). The particle is whatever falls outside the other three. This is how Rūpasiddhi closes its chapter on particles (Nepātikapada, p. 136):
+Pāḷi grammar distinguishes four kinds of word (*pada*): the noun (*nāma*), the verb (*ākhyāta*), the prefix (*upasagga*) and the particle (*nipāta*). The grammarians state it in a verse that opens the chapter on the noun in Rūpasiddhi-ṭīkā (p. 30), and that Payogasiddhi also quotes (p. 85):
+
+> *Padaṃ catubbidhaṃ vuttaṃ nāmākhyātopasaggajaṃ, nipātajañ cā ti viññūhi: asso khalv abhidhāvatī ti.*
+
+“The wise say that the word is of four kinds —of noun, of verb, of prefix and of particle—, as in *asso khalv abhidhāvati*.”
+
+The example brings all four together in a single sentence: *asso* “the horse” is a noun; *khalu* “indeed”, a particle; *abhi*, a prefix; and *dhāvati* “runs”, a verb. Payogasiddhi reads *taññūhi* (“those who know it”) instead of *viññūhi*. Subodhālaṅkāra-ṭīkā (p. 40) quotes the same verse and attributes it to the chapter on the noun of Rūpasiddhi-ṭīkā.
+
+The same ṭīkā uses this division to explain the title of the work it comments on (p. 4): it is called *Padarūpasiddhi* because it establishes the formation of the inflected forms of the four kinds of word —*nāmākhyātopasagganipātasaṅkhātānaṃ catubbidhānaṃ padānaṃ*—. And it says why the noun comes first (p. 30): of the four kinds, action depends on substance (*kriyāya dabbanissitattā*), so the formation of the word that denotes substance, the noun, is shown first.
+
+Saddanīti speaks in the same terms of “the four kinds of word, noun, verb, etc.” (*nāmākhyātādīsu catūsu padesu*; Padamālā, p. 79). Rūpasiddhi, for its part, says that the prefixes qualify the noun and the verb (*nāmākhyātavisesaka*; p. 131).
+
+Outside the grammars, Nettivibhāvinī, a ṭīkā on the Nettippakaraṇa (p. 46), gives the division with a definition of each kind:
+
+| Kind | What marks it | Examples |
+| --- | --- | --- |
+| *nāma* | substance predominates in it (*dabbapadhāna*) | *phasso, vedanā, cittaṃ* |
+| *ākhyāta* | action predominates in it (*kiriyāpadhāna*) | *phusati, vedayati, vijānāti* |
+| *upasagga* | it makes known a particular of the action (*kiriyāvisesabodhahetu*) | *pa, upa* |
+| *nipāta* | it makes known a particular in the form of the action and of the substance (*kiriyāya ceva dabbassa ca sarūpavisesapakāsanahetu*) | *evaṃ, iti* |
+
+The division is older than Pāḷi grammar: it is Yāska's in the Sanskrit Nirukta (1.1), *catvāri padajātāni nāmākhyāte copasarganipātāś ca*, “four are the kinds of word: noun and verb, prefix and particle”.
+
+The particle is whatever falls outside the other three. This is how Rūpasiddhi closes its chapter on particles (Nepātikapada, p. 136):
 
 > *Evaṃ nāmākhyātopasaggavinimuttaṃ yad abyayalakkhaṇaṃ, taṃ sabbaṃ nipātapadan ti veditabbaṃ.*
 
@@ -386,7 +432,7 @@ The references of the examples point to the **Burmese Sixth Council edition** (C
 
 ## 7. Sources and how to cite
 
-**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, Nepātikapada, pp. 132–136; Niruttidīpanī, pp. 155 and 161–162; Saddanīti, Padamālā, p. 397; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/).
+**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, p. 131 and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy; Yāska, Nirukta 1.1.
 
 **How to cite this page:**
 
