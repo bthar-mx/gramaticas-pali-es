@@ -20,7 +20,13 @@ El ejemplo reúne las cuatro en una sola frase: *asso* «el caballo» es nombre;
 
 La misma ṭīkā explica con esta división el título de la obra que comenta (p. 4): se llama *Padarūpasiddhi* porque establece la formación de las formas con inflexión de las cuatro clases de palabra —*nāmākhyātopasagganipātasaṅkhātānaṃ catubbidhānaṃ padānaṃ*—. Y dice por qué el nombre va primero (p. 30): de las cuatro clases, la acción depende de la sustancia (*kriyāya dabbanissitattā*), y por eso se muestra antes la formación de la palabra que designa la sustancia, el nombre.
 
-Saddanīti habla en los mismos términos de «las cuatro clases de palabra, nombre, verbo, etc.» (*nāmākhyātādīsu catūsu padesu*; Padamālā, p. 79). Rūpasiddhi, por su parte, dice que los prefijos califican al nombre y al verbo (*nāmākhyātavisesaka*; p. 131).
+Saddanīti es la gramática que más se detiene en ellas. El capítulo XXVII de su Suttamālā, el que trata de los prefijos y las partículas, se titula *Vācogadhapadavibhatti*, «división de las palabras que entran en el habla», y empieza así (ed. Helmer Smith, p. 878):
+
+> *Ito paraṃ pavakkhāmi catunnan tu vibhājanaṃ vācogadhapadānan, taṃ suṇātha susamāhitā. Tattha nāmikapadaṃ ākhyātapadaṃ upasaggapadaṃ nipātapadan ti cattāri vācogadhapadāni nāma honti. Etasmiñ hi padacatukke tipiṭake vuttāni sabbāni vimuttirasasādhakāni vacanāni ogāhanti.*
+
+«De aquí en adelante expondré la división de las cuatro clases de palabra que entran en el habla; escuchadla con atención. La palabra-nombre, la palabra-verbo, la palabra-prefijo y la palabra-partícula se llaman las cuatro palabras que entran en el habla. Pues en este conjunto de cuatro palabras entran todas las expresiones dichas en el Tipiṭaka que producen el sabor de la liberación.»
+
+El capítulo trata después cada una por su orden: el nombre, el verbo, los prefijos y, por último, las partículas. Su Padamālā da la división por sabida cuando habla de «las cuatro clases de palabra, nombre, verbo, etc.» (*nāmākhyātādīsu catūsu padesu*, p. 79). Rūpasiddhi, por su parte, dice que los prefijos califican al nombre y al verbo (*nāmākhyātavisesaka*; p. 131).
 
 Fuera de las gramáticas, Nettivibhāvinī, una ṭīkā del Nettippakaraṇa (p. 46), da la división con una definición de cada clase:
 
@@ -105,7 +111,7 @@ Es el grupo que recoge el filtro de la página. Según Rūpasiddhi (pp. 133–13
 | 7.ª, de lugar | las formas en *-to, -tra, -tha*: *ekato, purato, yatra, yattha, tatra, tattha, yahiṃ, tahiṃ*; y *samantā, parito, heṭṭhā, upari, uddhaṃ, adho, anto, antarā, bahi, pacchā, pure…* |
 | 7.ª, de tiempo | *sampati, ajja, suve, hiyyo, sāyaṃ, pāto, divā, nattaṃ, niccaṃ, satataṃ, abhiṇhaṃ, muhuttaṃ, purā, yadā, tadā, kadā…* |
 
-Saddanīti, en el capítulo de las partículas de su Suttamālā, coincide en lo esencial con esta distribución. Niruttidīpanī (pp. 155–156) discrepa en algunas. Por ejemplo, pone *ciraṃ, cirassaṃ, niccaṃ, satataṃ, abhiṇhaṃ, abhikkhaṇaṃ, muhuttaṃ* en la 2.ª, la de la duración continua (*accantasaṃyoga*), *samantā, samantato* en la 5.ª, *musā* en la 3.ª, *sādhu* y *tuṇhī* en la 1.ª, y deja *iti* y *evaṃ* en el sentido de las siete. La página da el caso de Rūpasiddhi y Saddanīti, y marca aparte, con la etiqueta **Nir.**, la asignación de Niruttidīpanī donde es distinta.
+Saddanīti, en el capítulo XXVII de su Suttamālā, coincide en lo esencial con esta distribución. Niruttidīpanī (pp. 155–156) discrepa en algunas. Por ejemplo, pone *ciraṃ, cirassaṃ, niccaṃ, satataṃ, abhiṇhaṃ, abhikkhaṇaṃ, muhuttaṃ* en la 2.ª, la de la duración continua (*accantasaṃyoga*), *samantā, samantato* en la 5.ª, *musā* en la 3.ª, *sādhu* y *tuṇhī* en la 1.ª, y deja *iti* y *evaṃ* en el sentido de las siete. La página da el caso de Rūpasiddhi y Saddanīti, y marca aparte, con la etiqueta **Nir.**, la asignación de Niruttidīpanī donde es distinta.
 
 ### Sin sentido de caso
 
@@ -209,7 +215,7 @@ Las referencias de los ejemplos remiten a la **edición birmana del Sexto Concil
 
 ## 7. Fuentes y cómo citar
 
-**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, p. 131 y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso.
+**Las fuentes de esta guía**, en el texto del Sexto Concilio: Padarūpasiddhi, p. 131 y Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 y 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 y 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, y su ṭīkā; Kaccāyana §221, en [la traducción de este sitio](https://gramaticas.buddha-dhamma.net/kaccayana/nama/). Fuera del Sexto Concilio: Saddanīti, Suttamālā, cap. XXVII, ed. Helmer Smith (Lund, 1930), p. 878; Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 y 30, leída en las imágenes del ejemplar impreso.
 
 **Cómo citar esta página:**
 
@@ -239,7 +245,13 @@ The example brings all four together in a single sentence: *asso* “the horse�
 
 The same ṭīkā uses this division to explain the title of the work it comments on (p. 4): it is called *Padarūpasiddhi* because it establishes the formation of the inflected forms of the four kinds of word —*nāmākhyātopasagganipātasaṅkhātānaṃ catubbidhānaṃ padānaṃ*—. And it says why the noun comes first (p. 30): of the four kinds, action depends on substance (*kriyāya dabbanissitattā*), so the formation of the word that denotes substance, the noun, is shown first.
 
-Saddanīti speaks in the same terms of “the four kinds of word, noun, verb, etc.” (*nāmākhyātādīsu catūsu padesu*; Padamālā, p. 79). Rūpasiddhi, for its part, says that the prefixes qualify the noun and the verb (*nāmākhyātavisesaka*; p. 131).
+Saddanīti is the grammar that dwells on them most. Chapter XXVII of its Suttamālā, the one on the prefixes and particles, is called *Vācogadhapadavibhatti*, “division of the words that enter into speech”, and it opens thus (ed. Helmer Smith, p. 878):
+
+> *Ito paraṃ pavakkhāmi catunnan tu vibhājanaṃ vācogadhapadānan, taṃ suṇātha susamāhitā. Tattha nāmikapadaṃ ākhyātapadaṃ upasaggapadaṃ nipātapadan ti cattāri vācogadhapadāni nāma honti. Etasmiñ hi padacatukke tipiṭake vuttāni sabbāni vimuttirasasādhakāni vacanāni ogāhanti.*
+
+“From here on I shall set out the division of the four kinds of word that enter into speech; listen attentively. The noun-word, the verb-word, the prefix-word and the particle-word are called the four words that enter into speech. For into this set of four words enter all the utterances spoken in the Tipiṭaka that bring about the taste of liberation.”
+
+The chapter then takes each in turn: the noun, the verb, the prefixes and, last, the particles. Its Padamālā takes the division for granted when it speaks of “the four kinds of word, noun, verb, etc.” (*nāmākhyātādīsu catūsu padesu*, p. 79). Rūpasiddhi, for its part, says that the prefixes qualify the noun and the verb (*nāmākhyātavisesaka*; p. 131).
 
 Outside the grammars, Nettivibhāvinī, a ṭīkā on the Nettippakaraṇa (p. 46), gives the division with a definition of each kind:
 
@@ -324,7 +336,7 @@ This is the group the page's filter picks out. According to Rūpasiddhi (pp. 133
 | 7th, of place | the forms in *-to, -tra, -tha*: *ekato, purato, yatra, yattha, tatra, tattha, yahiṃ, tahiṃ*; and *samantā, parito, heṭṭhā, upari, uddhaṃ, adho, anto, antarā, bahi, pacchā, pure…* |
 | 7th, of time | *sampati, ajja, suve, hiyyo, sāyaṃ, pāto, divā, nattaṃ, niccaṃ, satataṃ, abhiṇhaṃ, muhuttaṃ, purā, yadā, tadā, kadā…* |
 
-Saddanīti, in the chapter on particles of its Suttamālā, agrees with this distribution in essentials. Niruttidīpanī (pp. 155–156) differs on a few. For instance, it puts *ciraṃ, cirassaṃ, niccaṃ, satataṃ, abhiṇhaṃ, abhikkhaṇaṃ, muhuttaṃ* in the 2nd, that of continuous duration (*accantasaṃyoga*), *samantā, samantato* in the 5th, *musā* in the 3rd, *sādhu* and *tuṇhī* in the 1st, and allows *iti* and *evaṃ* in the sense of all seven. The page gives the case according to Rūpasiddhi and Saddanīti, and marks separately, with the label **Nir.**, Niruttidīpanī's assignment where it differs.
+Saddanīti, in chapter XXVII of its Suttamālā, agrees with this distribution in essentials. Niruttidīpanī (pp. 155–156) differs on a few. For instance, it puts *ciraṃ, cirassaṃ, niccaṃ, satataṃ, abhiṇhaṃ, abhikkhaṇaṃ, muhuttaṃ* in the 2nd, that of continuous duration (*accantasaṃyoga*), *samantā, samantato* in the 5th, *musā* in the 3rd, *sādhu* and *tuṇhī* in the 1st, and allows *iti* and *evaṃ* in the sense of all seven. The page gives the case according to Rūpasiddhi and Saddanīti, and marks separately, with the label **Nir.**, Niruttidīpanī's assignment where it differs.
 
 ### Without a case sense
 
@@ -428,7 +440,7 @@ The references of the examples point to the **Burmese Sixth Council edition** (C
 
 ## 7. Sources and how to cite
 
-**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, p. 131 and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy.
+**The sources of this guide**, in the Sixth Council text: Padarūpasiddhi, p. 131 and Nepātikapada, pp. 132–136; Payogasiddhi, p. 85; Subodhālaṅkāra-ṭīkā, p. 40; Saddanīti, Padamālā, pp. 79 and 397; Nettivibhāvinī, p. 46; Niruttidīpanī, pp. 155 and 161–162; Abhidhānappadīpikā, Abyayavagga, vv. 1136–1203, and its ṭīkā; Kaccāyana §221, in [this site's translation](https://gramaticas.buddha-dhamma.net/en/kaccayana/nama/). Outside the Sixth Council text: Saddanīti, Suttamālā, ch. XXVII, ed. Helmer Smith (Lund, 1930), p. 878; Padarūpasiddhi-ṭīkā (Buddhasāsanasamiti, 1956), pp. 4 and 30, read from images of the printed copy.
 
 **How to cite this page:**
 
