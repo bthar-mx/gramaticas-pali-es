@@ -83,7 +83,7 @@ def verificar(d):
     return fallos
 
 
-def guia(version):
+def guia(version, fecha):
     """La guía para el estudiante: (html, fallos). Como la del análisis: el
     markdown pasa por el intérprete de prosa de generar_recurso.py, con «> cita»
     y `código` además; el texto no se toca. Español e inglés, separados por
@@ -147,6 +147,7 @@ def guia(version):
     pl = re.sub(r"/\*__TITULOS__\*/.*?/\*__FIN__\*/", lambda m: js, pl, flags=re.S)
     for clave, valor in (("__ES_TITULO__", H.escape(titulos["es"]["titulo"])),
                          ("__ES_H1__", titulos["es"]["h1_html"]),
+                         ("__VERSION_DATE__", fecha),
                          ("__VERSION__", version),
                          ("__ES__", cuerpos["es"]), ("__EN__", cuerpos["en"])):
         pl = pl.replace(clave, valor)
@@ -156,7 +157,7 @@ def guia(version):
 def main():
     d = json.load(open(DATOS, encoding="utf-8"))
     fallos = verificar(d)
-    pagina_guia, f_guia = guia(d["meta"]["version"])
+    pagina_guia, f_guia = guia(d["meta"]["version"], d["meta"]["fecha"])
     fallos += f_guia
     if fallos:
         print("particulas.json NO cuadra; no se publica:")
