@@ -1,14 +1,14 @@
 {
  "meta": {
-  "version": "0.2",
+  "version": "0.3",
   "fecha": "2026-10-15",
   "estado": {
    "es": "En revisión",
    "en": "Under review"
   },
   "nota_version": {
-   "es": "Una sola página para los indeclinables: las seis clases de Bhikkhu Nandisena, con «Partículas» como clase 2; el texto de «Indeclinables» (2013) con las erratas evidentes corregidas; 72 partículas añadidas por IEBH, con su fuente. Antes, en la versión 0.1.4 (15 de octubre de 2026), la página «Partículas (nipāta)» y su guía.",
-   "en": "A single page for the indeclinables: Bhikkhu Nandisena's six classes, with «Particles» as class 2; the text of «Indeclinables» (2013) with the obvious errata corrected; 72 particles added by IEBH, with their source. Earlier, in version 0.1.4 (15 October 2026), the page «Particles (nipāta)» and its guide."
+   "es": "«Indeclinables» revisado entrada por entrada contra las fuentes (Rūpasiddhi, Niruttidīpanī, Payogasiddhi, Saddanīti, Abhidhānappadīpikā y el Canon): traducciones, sentidos, ejemplos y referencias corregidos, y sentidos añadidos con la etiqueta IEBH; la lista está al pie. Partículas añadidas: 71 (se retira byattaṃ; hevaṃ remite a ha). Antes, en la versión 0.2 (15 de octubre de 2026), una sola página para las seis clases, con 72 partículas añadidas.",
+   "en": "«Indeclinables» revised entry by entry against the sources (Rūpasiddhi, Niruttidīpanī, Payogasiddhi, Saddanīti, Abhidhānappadīpikā and the Canon): translations, senses, examples and references corrected, and senses added with the IEBH label; the list is at the foot. Added particles: 71 (byattaṃ withdrawn; hevaṃ refers to ha). Earlier, in version 0.2 (15 October 2026), a single page for the six classes, with 72 added particles."
   },
   "atribucion": {
    "es": "Bhikkhu Nandisena, edición revisada por IEBH",
@@ -19,7 +19,7 @@
    {
     "id": "C-302",
     "antes": "*tiṭṭho*, parado. Si se le coloca el prefijo **pati**, *pati-ṭṭitho*, parado.",
-    "despues": "*ṭhito*, parado. Si se le coloca el prefijo **pati**, *pati-ṭṭhito*, parado."
+    "despues": "*ṭhito*, de pie. Si se le coloca el prefijo **pati**, *pati-ṭṭhito*, establecido, firme."
    },
    {
     "id": "C-307",
@@ -111,6 +111,638 @@
     "antes": "La partículas se dividen",
     "despues": "Las partículas se dividen"
    }
+  ],
+  "correcciones_indeclinables": [
+   {
+    "id": "C-301",
+    "antes": "Se anteponen a los verbos y nombres. Tienen tres funciones: (1) cambiar, (2) conformar y (3) modificar.",
+    "despues": "Se anteponen a los verbos y nombres. Tienen tres modos de funcionar (*upasaggagati*): (1) alterar (*bādhati*) el significado de la raíz, (2) seguirlo (*anuvattati*) y (3) especificarlo (*viseseti*). Estrofa: «*dhātvatthaṃ bādhate koci, koci tam anuvattate, tam evañño viseseti, upasaggagatī tidhā*» (Rū. p. 132)."
+   },
+   {
+    "id": "C-304",
+    "antes": "*harati*, lleva. Si se le coloca el prefijo **pa**, *paharati*, golpea. En este caso se modifica el significado.",
+    "despues": "*jānāti*, conoce. Si se le coloca el prefijo **pa**, *pajānāti*, conoce bien, de diversos modos. En este caso se modifica el significado."
+   },
+   {
+    "id": "C-305",
+    "antes": "Hay veinte prefijos: **pa**, **parā**, **ni**, **nī**, **u**, **du**, **saṃ**, **vi**, **ava**, **anu**, **pari**, **adhi**, **abhi**, **pati**, **su**, **ā**, **ati**, **api**, **apa**, **upa**.",
+    "despues": "Hay veinte prefijos: **pa**, **parā**, **ni**, **nī**, **u**, **du**, **saṃ**, **vi**, **ava**, **anu**, **pari**, **adhi**, **abhi**, **pati**, **su**, **ā**, **ati**, **api**, **apa**, **upa**.[^14] + nota 14"
+   },
+   {
+    "id": "C-306",
+    "antes": "*paññā*, comprender en diferentes modos.",
+    "despues": "*paññā*, sabiduría (lo que conoce de diversos modos)."
+   },
+   {
+    "id": "C-310",
+    "antes": "*pavāsī*, uno que vive solo.",
+    "despues": "*pavāsī*, el que vive fuera (de su hogar), ausente (Rū. p. 126 y Payog.: *pavāsī*; Nir. p. 157 da *pavāso*)."
+   },
+   {
+    "id": "C-311",
+    "antes": "Después de ése (*tappara*):[^3] / nota 3: *Tappara* significa anterior en tiempo.",
+    "despues": "Más allá de ése, el siguiente en la serie (*tappara*):[^3] / nota 3: *Para*, ‘más allá, ulterior’. Rū. (samāsa): *ācariyato paro pācariyo*, el que está más allá del maestro; en la línea de maestros, el anterior en el tiempo."
+   },
+   {
+    "id": "C-312",
+    "antes": "*pavuddhakāyo*, cuerpo grande.",
+    "despues": "*pavuddhakāyo*, de cuerpo muy crecido (*bahubbīhi*).[^15] + nota 15"
+   },
+   {
+    "id": "C-313",
+    "antes": "*pahūtavitto*, abundante riqueza.",
+    "despues": "*pahūtavitto*, que tiene abundante riqueza (Sn. v. 102; CST p. 296, PTS p. 19). Ejemplo tomado de Sad. (Smith p. 882), no de Rūpasiddhi."
+   },
+   {
+    "id": "C-314",
+    "antes": "*pa-hūtaṃ annaṃ*, mucha comida \\[satisfecho con lo que uno ha comido\\].",
+    "despues": "*pahūtam annaṃ*, mucha comida \\[satisfecho con lo que uno ha comido\\]."
+   },
+   {
+    "id": "C-315",
+    "antes": "nota 2: Sad. iii 362 tiene *abhinipphanna*, llevar a cabo; ejecutar.",
+    "despues": "nota 2: Sad. (Smith p. 881) tiene *abhinipphanne pakataṃ* (*abhinipphanna*, llevar a cabo; ejecutar). Saddanīti asigna *vippakataṃ* a **vi** (*ādikamme vippakataṃ*, Smith p. 885)."
+   },
+   {
+    "id": "C-316",
+    "antes": "(no figura)",
+    "despues": "Sucesión (de generaciones) (*tadanubandha*): *paputto*, nieto (hijo del hijo); *panattā*, bisnieto. + nota 16"
+   },
+   {
+    "id": "D-pa-1",
+    "antes": "",
+    "despues": "(véase C-311)"
+   },
+   {
+    "id": "D-pa-4",
+    "antes": "",
+    "despues": "(véase C-316)"
+   },
+   {
+    "id": "C-319",
+    "antes": "Fortaleza (*vikkama*):",
+    "despues": "Esfuerzo, denuedo (*vikkama*):"
+   },
+   {
+    "id": "C-320",
+    "antes": "*aṅgassa parāmasanaṃ*, masajeando el miembro.",
+    "despues": "*aṅgassa parāmasanaṃ*, el tocar (acariciar) un miembro \\[del cuerpo\\]."
+   },
+   {
+    "id": "C-321",
+    "antes": "nota 5: *Parā + kama* \\> *parakkamati*.",
+    "despues": "nota 5: *Parā* + √*kam* > *parakkamati*: se abrevia ā (Kacc. §26) y se duplica k (Kacc. §28); cf. Kacc. §51."
+   },
+   {
+    "id": "C-322",
+    "antes": "*nirutti*, expresar completamente.",
+    "despues": "*nirutti*, expresión (explicación) completa del sentido.[^17] + nota 17"
+   },
+   {
+    "id": "C-323",
+    "antes": "*niyyāti*, ir afuera.",
+    "despues": "*niyyāti*, sale."
+   },
+   {
+    "id": "C-324",
+    "antes": "Ir afuera (*nikkhanta*):",
+    "despues": "Salida, haber salido (*nikkhanta*):"
+   },
+   {
+    "id": "C-325",
+    "antes": "*nibbānaṃ*, Nibbāna.",
+    "despues": "*nibbano*, (Rū. *nibbāno*), salido del bosque \\[de los deseos\\], sin deseo; *nibbānaṃ*, Nibbāna (salido del *vāna*, el ansia)."
+   },
+   {
+    "id": "C-327",
+    "antes": "*nisāmanaṃ*, investigando.",
+    "despues": "*nisāmanaṃ*, consideración atenta."
+   },
+   {
+    "id": "C-328",
+    "antes": "*niṭṭhitaṃ*, final.",
+    "despues": "*niṭṭhitaṃ*, terminado, concluido."
+   },
+   {
+    "id": "C-329",
+    "antes": "*nipuṇo*, sabio.",
+    "despues": "*nipuṇo*, hábil, diestro; sutil."
+   },
+   {
+    "id": "D-ni-1",
+    "antes": "",
+    "despues": "(véase C-325)"
+   },
+   {
+    "id": "C-330",
+    "antes": "Sacar afuera (*nīharaṇa*):",
+    "despues": "Sacar afuera (*nīharaṇa*):[^18] + nota 18"
+   },
+   {
+    "id": "C-331",
+    "antes": "(no figura)",
+    "despues": "Salida (*niggama*): *niyyānikaṃ* [mama sāsanaṃ], conducente a la liberación. + nota 19"
+   },
+   {
+    "id": "D-nī-1",
+    "antes": "",
+    "despues": "(véase C-331)"
+   },
+   {
+    "id": "C-332",
+    "antes": "Trabajo arriba (*uddhakamma*):",
+    "despues": "Acción hacia arriba (*uddhakamma*):"
+   },
+   {
+    "id": "C-333",
+    "antes": "*ukkhepo*, arrojado arriba.",
+    "despues": "*ukkhepo*, el lanzamiento hacia arriba."
+   },
+   {
+    "id": "C-334",
+    "antes": "*uttamo*, el mejor, excelente.",
+    "despues": "*uttamo*, el mejor, excelente; *lokuttaro*, supramundano."
+   },
+   {
+    "id": "C-335",
+    "antes": "*ubbāsito*, que vive aislado, separado.",
+    "despues": "*ubbāsito*, deshabitado; expulsado de su morada (ThagA. ii 326, PTS iii 56)."
+   },
+   {
+    "id": "C-336",
+    "antes": "Obtener substancia, significado, la meta (*atthalābha*):",
+    "despues": "Obtención de existencia, surgimiento (*attalābha*; var. *atthalābha*):[^20] + nota 20"
+   },
+   {
+    "id": "C-337",
+    "antes": "*ussahati gantuṃ*, se esfuerza para \\[poder\\] ir.",
+    "despues": "*ussahati gantuṃ*, es capaz de ir (se siente con fuerzas para ir)."
+   },
+   {
+    "id": "C-338",
+    "antes": "Decir con claridad, precisamente (*sarūpakathana*):",
+    "despues": "Enunciación (de algo) en su propia forma (*sarūpakathana*), es decir, *uddesa*, enunciación sumaria (cf. nota 6; Nir. p. 158):"
+   },
+   {
+    "id": "C-339",
+    "antes": "*uddisati suttaṃ*, recita el discurso.",
+    "despues": "*uddisati suttaṃ*, recita (enuncia) el texto \\[según Sad. (Smith p. 881, n. 4): el Pātimokkha\\]."
+   },
+   {
+    "id": "D-u-1",
+    "antes": "",
+    "despues": "(véase C-336)"
+   },
+   {
+    "id": "D-u-2",
+    "antes": "",
+    "despues": "(véase C-338)"
+   },
+   {
+    "id": "D-u-3",
+    "antes": "",
+    "despues": "(véase C-335)"
+   },
+   {
+    "id": "C-340",
+    "antes": "*dummukho*, boca sucia; procaz.",
+    "despues": "*dummukho*, de cara fea."
+   },
+   {
+    "id": "C-341",
+    "antes": "Inexistencia (*abhāva*):",
+    "despues": "Inexistencia (*abhāva*):[^21] + nota 21"
+   },
+   {
+    "id": "C-342",
+    "antes": "Totalidad, inclusión (*samantabhāva*):",
+    "despues": "Estado de estar por todas partes (*samantabhāva*):"
+   },
+   {
+    "id": "C-343",
+    "antes": "*saṃkiṇṇā samullapanā*, conversando todo alrededor[^8].",
+    "despues": "*saṃkiṇṇā*, esparcidas (mezcladas) por todas partes. / *samullapanā*, charla [halagadora] por todos lados[^8]."
+   },
+   {
+    "id": "C-344",
+    "antes": "nota 8: Hablar acerca del objeto; uno quiere un objeto pero no dice “yo quiero esto”; entonces uno habla indirectamente.",
+    "despues": "nota 8: Hablar acerca del objeto; uno quiere un objeto pero no dice “yo quiero esto”; entonces uno habla indirectamente. Véase Vibh. 366 (PTS p. 352), definición de *lapanā*, donde aparece *samullapanā*."
+   },
+   {
+    "id": "C-345",
+    "antes": "*saṃvāso*, co-residencia.",
+    "despues": "*saṃvāso*, convivencia (Nir. p. 159 añade *sambhogo*)."
+   },
+   {
+    "id": "C-346",
+    "antes": "Compilar (*saṅgaha*): *saṅgaṇhāti*, compila.",
+    "despues": "Acogida, inclusión (*saṅgaha*): *saṅgaṇhāti*, reúne, abarca; acoge (favorece)."
+   },
+   {
+    "id": "C-347",
+    "antes": "*saṃvutaṃ*, controlado.",
+    "despues": "*saṃvutaṃ*, cerrado, cubierto (de ahí: refrenado)."
+   },
+   {
+    "id": "C-349",
+    "antes": "nota 9: El término original es *saṃ-ratto*. La ‘ṃ’ se elide y la vocal ‘a’ se convierte en larga. Véase Rū. §53-54.",
+    "despues": "nota 9: El término original es *saṃ-ratto*. La ‘ṃ’ se elide y la vocal ‘a’ se convierte en larga. Véase Rū. §53–54 (= Kacc. §38–39)."
+   },
+   {
+    "id": "D-saṃ-1",
+    "antes": "",
+    "despues": "(véase C-346)"
+   },
+   {
+    "id": "C-351",
+    "antes": "*vimati*, duda (lit. mucho entendimiento).",
+    "despues": "*vimati*, duda (lit. entendimiento dividido, de varias formas)."
+   },
+   {
+    "id": "C-352",
+    "antes": "(faltan viyoga y ādikamma)",
+    "despues": "Separación (*viyoga*): *vippayutto*, disociado. / Comienzo de la acción (*ādikamma*): *vippakataṃ*, comenzado y no terminado. + nota 22"
+   },
+   {
+    "id": "C-354",
+    "antes": "Desdén, desprecio; intimidación (*paribhava*):",
+    "despues": "Desdén, desprecio (*paribhava*):"
+   },
+   {
+    "id": "C-355",
+    "antes": "*avakokilaṃ vanaṃ*, bosque sin cuclillo.",
+    "despues": "*avakokilaṃ vanaṃ*, bosque abandonado por el cuclillo (Rū. samāsakaṇḍa, p. 198; Nir.)."
+   },
+   {
+    "id": "C-356",
+    "antes": "*anu Sāriputtaṃ paññavanto*, los sabios son inferiores que Sāriputta.",
+    "despues": "*anu Sāriputtaṃ paññavanto*, los sabios son inferiores a Sāriputta."
+   },
+   {
+    "id": "C-358",
+    "antes": "*rukkhaṃ anu vijjotate vijju*, el rayo ilumina el árbol. / dé eso que es mi parte aquí. / la luna ilumina en cada árbol.",
+    "despues": "*rukkhaṃ anu vijjotate vijju*, el relámpago resplandece cubriendo \\[con su luz\\] el árbol (Niruttidīpanī: *rukkhaṃ anu pharitvā ti attho*). / lo que aquí se haya apartado para mí, que se me dé (Niruttidīpanī: *maṃ uddissa yaṃ vatthu ṭhapitaṃ siyā taṃ me dīyatu*). / la luna resplandece árbol tras árbol."
+   },
+   {
+    "id": "C-360",
+    "antes": "(faltan sentidos)",
+    "despues": "Repetición (*punappunabhāva*): *anvaḍḍhamāsaṃ*, cada quincena. / Condición de menor (*kaniṭṭhabhāva*): *anuthero*, thera menor/segundo. + nota 23"
+   },
+   {
+    "id": "D-anu-1",
+    "antes": "",
+    "despues": "(véanse C-358, C-364, C-375, C-380)"
+   },
+   {
+    "id": "C-361",
+    "antes": "Discriminación (*pariccheda*):",
+    "despues": "Delimitación, determinación (*pariccheda*):"
+   },
+   {
+    "id": "C-362",
+    "antes": "*pāricariyā*, honor.",
+    "despues": "*pāricariyā*, servicio, atención (honrar sirviendo) (D. iii 154, PTS iii 189; M. ii 388, PTS ii 177)."
+   },
+   {
+    "id": "C-363",
+    "antes": "*paribhāsati*, reprende.",
+    "despues": "*paribhāsati*, insulta, injuria."
+   },
+   {
+    "id": "C-364",
+    "antes": "*rukkhaṃ pari vijjotate vijju*, el rayo ilumina el árbol.",
+    "despues": "*rukkhaṃ pari vijjotate vijju*, el relámpago resplandece cubriendo \\[con su luz\\] el árbol (Niruttidīpanī: *parī ti pharitvā*). + itthambhūtakkhāna, bhāga, vicchā (nuevos) + nota 24"
+   },
+   {
+    "id": "C-365",
+    "antes": "Supremacía (*issariya*):",
+    "despues": "Señorío, dominio (*issara*):"
+   },
+   {
+    "id": "C-366",
+    "antes": "*adhi Brahmadatte Pañcālā*, Los Pañcālas son gobernados por Brahmadatta.",
+    "despues": "*adhi Brahmadatte Pañcālā*, los Pañcālas son gobernados por Brahmadatta."
+   },
+   {
+    "id": "C-367",
+    "antes": "*adhirohati*, crece hacia arriba.",
+    "despues": "*adhirohati*, sube, asciende."
+   },
+   {
+    "id": "D-adhi-1",
+    "antes": "(no figura)",
+    "despues": "Especificación (*visesana*): (sin ejemplo en la fuente) + nota 25"
+   },
+   {
+    "id": "C-370",
+    "antes": "*abhimukho*, estar cara a cara; *abhikkamati*, procede.",
+    "despues": "*abhimukho*, que está de frente, vuelto hacia; *abhikkamati*, avanza, va hacia adelante (D. ii 269, PTS ii 338)."
+   },
+   {
+    "id": "C-372",
+    "antes": "*Abhidhammo*, Tercera Canasta.",
+    "despues": "*abhidhammo*, el Dhamma distinguido (nombre de la tercera canasta)."
+   },
+   {
+    "id": "C-373",
+    "antes": "Trabajo arriba (*uddhakamma*):",
+    "despues": "Acción hacia arriba (*uddhakamma*):"
+   },
+   {
+    "id": "C-374",
+    "antes": "Parte, porción (*bhāga*): *yad ettha maṃ abhi siyā taṃ dīyatu*, dé eso que es mi parte aquí.",
+    "despues": "(suprimido)"
+   },
+   {
+    "id": "C-375",
+    "antes": "*rukkhaṃ abhi vijjotate vijju*, el rayo ilumina el árbol. / la luna ilumina en cada árbol.",
+    "despues": "*rukkhaṃ abhi vijjotate vijju*, el relámpago resplandece cubriendo \\[con su luz\\] el árbol (Niruttidīpanī: *rukkhaṃ abhibyāpetvā vijjotate*). / la luna resplandece bañando árbol tras árbol (Niruttidīpanī: *byāpetvā vijjotate*)."
+   },
+   {
+    "id": "C-376",
+    "antes": "Venir en contacto (*patigata*):",
+    "despues": "Presente ante (los sentidos) (*patigata*):"
+   },
+   {
+    "id": "C-377",
+    "antes": "Semejanza (*patinidhi*): el alumno se asemeja al maestro.",
+    "despues": "Representación, sustitución (*patinidhi*): el discípulo \\[actúa\\] en lugar del maestro."
+   },
+   {
+    "id": "C-378",
+    "antes": "Restitución (*patidāna*): da mantequilla clarificada a uno que desea aceite.",
+    "despues": "Intercambio (*patidāna*): a quien desea aceite le da a cambio mantequilla clarificada."
+   },
+   {
+    "id": "C-380",
+    "antes": "*rukkhaṃ pati vijjotate vijju*, el rayo ilumina el árbol. / dé eso que es mi parte aquí. / la luna ilumina en cada árbol.",
+    "despues": "*rukkhaṃ pati vijjotate vijju*, el relámpago resplandece con relación al árbol (Niruttidīpanī: *patī ti paṭicca*). / lo que aquí se haya apartado para mí, que se me dé. / la luna resplandece árbol tras árbol."
+   },
+   {
+    "id": "D-pati-1",
+    "antes": "",
+    "despues": "(véase C-377)"
+   },
+   {
+    "id": "C-381",
+    "antes": "Trabajo arriba (*uddhakamma*):",
+    "despues": "Acción hacia arriba (*uddhakamma*):"
+   },
+   {
+    "id": "C-382",
+    "antes": "Logro (*patti*): ha cometido una ofensa.",
+    "despues": "Llegar a, incurrir (*patti*): ha incurrido en una falta."
+   },
+   {
+    "id": "C-383",
+    "antes": "*ādīyati*, se adhiere; *ālambati*, se cuelga; se agarra de.",
+    "despues": "*ādīyati*, toma, se apropia; *ālambati*, se cuelga; se agarra de."
+   },
+   {
+    "id": "C-384",
+    "antes": "*āmantesi*, se dirigió.",
+    "despues": "*āmantesi*, se dirigió a, llamó \\[a los bhikkhus\\]."
+   },
+   {
+    "id": "C-385",
+    "antes": "*accantaṃ*, trasciende el fin.",
+    "despues": "*accantaṃ*, absolutamente, por completo (lit. que ha sobrepasado el fin). M. iii 55 (PTS iii 4): *accantaṃ niṭṭhaṃ nibbānaṃ ārādhenti*."
+   },
+   {
+    "id": "C-386",
+    "antes": "Abundancia (*atisaya*): *atikusalo*, mucho mérito.",
+    "despues": "Excelencia, grado sumo (*atisaya*): *atikusalo*, sumamente hábil (o: sumamente bueno)."
+   },
+   {
+    "id": "C-388",
+    "antes": "(falta antobhāva)",
+    "despues": "Hacia adentro (*antobhāva*): *mañcaṃ vā pīṭhaṃ vā atiharitvā*, habiendo metido dentro una cama o un asiento. + nota 27"
+   },
+   {
+    "id": "D-ati-1",
+    "antes": "*ativuddhi*, mucho crecimiento.",
+    "despues": "*ativuddhi*, mucho crecimiento.[^26] + nota 26"
+   },
+   {
+    "id": "C-389",
+    "antes": "Honor, reverencia (*sambhāvanā*):",
+    "despues": "Suposición enfática, hipérbole «incluso» (*sambhāvanā*):"
+   },
+   {
+    "id": "C-390",
+    "antes": "*api bhante bhikkhaṃ labhittha*, ¿el venerable obtuvo alimentos?",
+    "despues": "*api bhante bhikkhaṃ labhittha*, ¿obtuvo usted limosna, venerable señor?"
+   },
+   {
+    "id": "C-392",
+    "antes": "Surgimiento, nacimiento; imparcialidad, justicia (*upapatti*):",
+    "despues": "Renacer (*upapatti*): / Razón, lo razonable (*yutti*): [upekkhā]"
+   },
+   {
+    "id": "C-393",
+    "antes": "*upapattito ikkhatī ti upekkhā*, ecuanimidad, significa ver con imparcialidad.",
+    "despues": "*upapattito ikkhatī ti upekkhā*, *upekkhā* (ecuanimidad) es mirar (*ikkhati*) conforme a razón (*upapattito*), es decir, con imparcialidad."
+   },
+   {
+    "id": "C-394",
+    "antes": "*upamānaṃ*, símil.",
+    "despues": "*upamānaṃ, upamā*, símil, comparación."
+   },
+   {
+    "id": "C-395",
+    "antes": "*upa khāriyaṃ doṇo*, un *doṇa* excede a un *khāri*.[^12]",
+    "despues": "*upa khāriyaṃ doṇo*, un *doṇa* por encima de un *khāri* (un *khāri* más un *doṇa*).[^12]"
+   },
+   {
+    "id": "C-396",
+    "antes": "Marca (*saññā*):",
+    "despues": "Nombre técnico, designación (*saññā*):"
+   },
+   {
+    "id": "C-397",
+    "antes": "*buddhupaṭṭhāko*, uno que venera al Buddha. / uno que atiende a la madre.",
+    "despues": "*buddhupaṭṭhāko*, el que sirve (asiste) al Buddha. / el cuidado (servicio) de la madre (SnA. ii 23, PTS i 300)."
+   },
+   {
+    "id": "C-399",
+    "antes": "*paraṃ upavadati*, reprende.",
+    "despues": "*paraṃ upavadati*, censura a otro."
+   },
+   {
+    "id": "D-upa-2",
+    "antes": "nota 12: *Doṇa* y *khāri* son medidas de capacidad.",
+    "despues": "nota 12: *Doṇa* y *khāri* son medidas de capacidad; el *doṇa* es la decimosexta parte del *khāri* (Vin-ṭ.)."
+   },
+   {
+    "id": "C-401",
+    "antes": "3\\. **voces terminadas en sufijos que representan inflexiones (*vibhatti-paccaya-pada*)**",
+    "despues": "**3. voces terminadas en sufijos que representan inflexiones (*vibhatti-paccaya-pada*)**"
+   },
+   {
+    "id": "C-402",
+    "antes": "(sin nota)",
+    "despues": "… *hiñcanaṃ*.[^28] + nota 28"
+   },
+   {
+    "id": "C-403",
+    "antes": "*sabbatra* (en todo)",
+    "despues": "*sabbatra* (en todas partes)"
+   },
+   {
+    "id": "C-406",
+    "antes": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *aññadā,* en otro día, *ekadā,* una vez, *yadā,* ¿cuándo?\n*tadā,* luego, después, en ese tiempo",
+    "despues": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *aññadā,* en otro día, *ekadā,* una vez, *yadā,* cuando (relativo)\n*tadā,* luego, después, en ese tiempo"
+   },
+   {
+    "id": "C-407",
+    "antes": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *aññadā,* en otro día, *ekadā,* una vez, *yadā,* cuando (relativo)\n*tadā,* luego, después, en ese tiempo",
+    "despues": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *aññadā,* en otro momento, en otra ocasión, *ekadā,* una vez, *yadā,* cuando (relativo)\n*tadā,* luego, después, en ese tiempo"
+   },
+   {
+    "id": "C-408",
+    "antes": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *aññadā,* en otro momento, en otra ocasión, *ekadā,* una vez, *yadā,* cuando (relativo)\n*tadā,* luego, después, en ese tiempo",
+    "despues": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *sadā,* siempre (‘sa’ por ‘sabba’ ante ‘dā’, Rū. §277), *aññadā,* en otro momento, en otra ocasión, *ekadā,* una vez, *yadā,* cuando (relativo)\n*tadā,* luego, después, en ese tiempo"
+   },
+   {
+    "id": "C-409",
+    "antes": "*kudācanaṃ,* a veces, en cualquier tiempo",
+    "despues": "*kudācanaṃ,* en algún momento, alguna vez (con negación: nunca, p. ej. *na … kudācanaṃ*) (Dhp. v. 5, p. 14; también M. iii 192 (PTS iii 154); V. iii 496 (PTS Vin i 349))"
+   },
+   {
+    "id": "C-410",
+    "antes": "*sabbadhi,* en todo",
+    "despues": "*sabbadhi,* en todas partes"
+   },
+   {
+    "id": "C-411",
+    "antes": "- séptima (*sattamī*) (lugar y tiempo) (Después de *kiṃ* y *ta*)\n\n- séptima (*sattamī*) (lugar y tiempo) (Después de *ta*)",
+    "despues": "- séptima (*sattamī*) (lugar y tiempo) (Después de *kiṃ*)\n\n- séptima (*sattamī*) (lugar y tiempo) (Después de *ta*)"
+   },
+   {
+    "id": "C-412",
+    "antes": "*kuhaṃ,* ¿dónde?\n*tahaṃ,* en eso, allí",
+    "despues": "*kuhaṃ, kahaṃ,* ¿dónde? (‘ka’ por ‘kiṃ’ en virtud de ‘ca’ de Kacc. §227 / Rū. §270)\n*tahaṃ,* en eso, allí"
+   },
+   {
+    "id": "C-413",
+    "antes": "*kuhiñcanaṃ,* ¿dónde?",
+    "despues": "*kuhiñcanaṃ,* ¿dónde?; dondequiera (con negación: en ninguna parte)"
+   },
+   {
+    "id": "C-414",
+    "antes": "El primer miembro del compuesto es un indeclinable, el segundo un nombre. Este tipo de compuesto normalmente tiene la primera terminación neutra. Ejemplos, *upa-nagaraṃ*, cerca de la ciudad; *niddarathaṃ*, sin aflicción.",
+    "despues": "El primer miembro … (*adhikumāri*, *upavadhu*). [redacción del editor]"
+   },
+   {
+    "id": "C-415",
+    "antes": "*niddarathaṃ*, sin aflicción",
+    "despues": "*niddarathaṃ*, ausencia de aflicción"
+   },
+   {
+    "id": "C-416",
+    "antes": "Ejemplos, *upa-nagaraṃ* …; *niddarathaṃ* …",
+    "despues": "… + *yathāvuḍḍhaṃ*, *yāvajīvaṃ*, *adhicittaṃ*, *tiropabbataṃ*, *antopāsādaṃ*, *upagaṅgaṃ*, *adhikumāri*, *upavadhu*"
+   },
+   {
+    "id": "C-417",
+    "antes": "*kkhattuṃ*, usado para dividir números e indicar veces.",
+    "despues": "1)  *kkhattuṃ*, tras numerales, en lugar de *sakiṃ*, en el sentido de ‘vez’ (*vāra*) (Kacc. §646 / Rū. §419); Rū. lo cuenta entre las voces de distribución numérica (*saṅkhyāvibhāga*)."
+   },
+   {
+    "id": "C-418",
+    "antes": "*dhā*, usado para dividir.",
+    "despues": "2)  *dhā*, en el sentido de división (*vibhāga*): ‘en tantas partes, de tantos modos’."
+   },
+   {
+    "id": "C-419",
+    "antes": "1) jjhaṃ … 5) thaṃ (kkhattuṃ y dhā sin número)",
+    "despues": "1) kkhattuṃ, 2) dhā, 3) jjha, 4) so, 5) thā, 6) thattā, 7) thaṃ"
+   },
+   {
+    "id": "C-420",
+    "antes": "1)  *jjhaṃ*",
+    "despues": "3)  *jjha* (formas: *ekajjhaṃ*, *dvejjhaṃ*)[^29] + nota 29"
+   },
+   {
+    "id": "C-421",
+    "antes": "*suttaso*, de acuerdo con los discursos.",
+    "despues": "*suttaso*, por suttas, sutta por sutta."
+   },
+   {
+    "id": "C-422",
+    "antes": "4)  *thattā*",
+    "despues": "6)  *thattā*[^30] + nota 30"
+   },
+   {
+    "id": "C-423",
+    "antes": "5)  *thaṃ*",
+    "despues": "7)  *thaṃ*[^31] + nota 31"
+   },
+   {
+    "id": "C-426",
+    "antes": "*passituna*, habiendo visto/después de haber visto",
+    "despues": "*passituna*, habiendo visto/después de haber visto (forma de gramáticos, Rū.) / *kātuna*, habiendo hecho/después de haber hecho (Kacc. §564 / Rū. §640)"
+   },
+   {
+    "id": "C-427",
+    "antes": "*kātuṃ*, hacer",
+    "despues": "*kātuṃ*, (para) hacer"
+   },
+   {
+    "id": "C-428",
+    "antes": "*kātave*, hacer",
+    "despues": "*kātave*, (para) hacer"
+   },
+   {
+    "id": "C-430",
+    "antes": "7.  *tya*",
+    "despues": "*racca*[^32] + nota 32"
+   },
+   {
+    "id": "C-431",
+    "antes": "*upecca*, habiéndose acercado, después de haberse acercado.",
+    "despues": "*upecca*, habiéndose acercado/después de haberse acercado"
+   },
+   {
+    "id": "C-432",
+    "antes": "Son indeclinables las voces terminadas en los siguientes sufijos primarios:",
+    "despues": "Son indeclinables las voces terminadas en los siguientes sufijos primarios:[^33] + nota 33"
+   },
+   {
+    "id": "D-cl36-1",
+    "antes": "",
+    "despues": "(véase C-420)"
+   },
+   {
+    "id": "D-cl36-2",
+    "antes": "",
+    "despues": "(véase C-422)"
+   },
+   {
+    "id": "D-cl36-3",
+    "antes": "",
+    "despues": "(véase C-430)"
+   },
+   {
+    "id": "Q-byattam",
+    "antes": "**byattaṃ**, (adv.) Claramente…",
+    "despues": "(entrada retirada)"
+   },
+   {
+    "id": "Q-hevam",
+    "antes": "**hevaṃ**, (ind.) Así, de ese modo (*ha* + *evaṃ*); casi siempre en *mā hevaṃ* «¡no [digas] así!».",
+    "despues": "**hevaṃ**, véase *ha*. (= *ha* + *evaṃ*; los comentarios llaman a *ha* «nipātamatta»; Niruttidīpanī, Nir. p. 44, explica la *h* como aumento ante vocal: «*sare pare bahulaṃ hāgamo*».)"
+   },
+   {
+    "id": "Q-dosa",
+    "antes": "**doso**, (sc. *doṣā*) (adv.) De noche.",
+    "despues": "**doso**, (adv.) De noche."
+   },
+   {
+    "id": "Q-netti",
+    "antes": "Comentario: Nettivibhāvinī 44 (sobre esta estrofa): «khūti avadhāraṇatthe nipāto, tena disālocananayo koci atthaviseso na hotīti dassetī».",
+    "despues": "Comentario: NettiA. 31: «khūti ca nipāto avadhāraṇe, tena olokanameva ayaṃ nayo na koci atthavisesoti dasseti»; también Nettivibhāvinī 44: «khūti avadhāraṇatthe nipāto…»."
+   }
   ]
  },
  "definicion": [
@@ -136,20 +768,20 @@
    "en": "In the Burmese texts it reads *abyaya*."
   },
   "2": {
-   "es": "Sad. iii 362 tiene *abhinipphanna*, llevar a cabo; ejecutar.",
-   "en": "Sad. iii 362 has *abhinipphanna*, to accomplish; to carry out."
+   "es": "Sad. (Smith p. 881) tiene *abhinipphanne pakataṃ* (*abhinipphanna*, llevar a cabo; ejecutar). Saddanīti asigna *vippakataṃ* a **vi** (*ādikamme vippakataṃ*: Sad. (Smith p. 885)).",
+   "en": "Sad. (Smith p. 881) has *abhinipphanne pakataṃ* (*abhinipphanna*, to accomplish; to carry out). Saddanīti assigns *vippakataṃ* to **vi** (*ādikamme vippakataṃ*: Sad. (Smith p. 885))."
   },
   "3": {
-   "es": "*Tappara* significa anterior en tiempo.",
-   "en": "*Tappara* means prior in time."
+   "es": "*Para*, ‘más allá, ulterior’. Rū. (samāsa): *ācariyato paro pācariyo*, el que está más allá del maestro; en la línea de maestros, el anterior en el tiempo.",
+   "en": "*Para*, ‘beyond, further’. Rū. (samāsa): *ācariyato paro pācariyo*, the one who is beyond the teacher; in the line of teachers, the earlier in time."
   },
   "4": {
    "es": "Sad. iii 364: *kaliggāha*, derrota, mala consecuencia.",
    "en": "Sad. iii 364: *kaliggāha*, defeat, bad consequence."
   },
   "5": {
-   "es": "*Parā + kama* \\> *parakkamati*.",
-   "en": "*Parā + kama* \\> *parakkamati*."
+   "es": "*Parā* + √*kam* > *parakkamati*: se abrevia ā (Kacc. §26) y se duplica k (Kacc. §28); cf. Kacc. §51.",
+   "en": "*Parā* + √*kam* > *parakkamati*: ā is shortened (Kacc. §26) and k is doubled (Kacc. §28); cf. Kacc. §51."
   },
   "6": {
    "es": "Diferencia entre *uddesa*, enunciación; introducción y *niddesa*, descripción detallada.",
@@ -160,12 +792,12 @@
    "en": "The word *samādhi* consists of **saṃ** + **ā** + **dhā**. **Saṃ** has two meanings: rightly (*sammā*) and evenly (*sama*). Placing the mind rightly and evenly on the object."
   },
   "8": {
-   "es": "Hablar acerca del objeto; uno quiere un objeto pero no dice “yo quiero esto”; entonces uno habla indirectamente.",
-   "en": "Talking around the object; one wants an object but does not say “I want this”; so one speaks indirectly."
+   "es": "Hablar acerca del objeto; uno quiere un objeto pero no dice “yo quiero esto”; entonces uno habla indirectamente. Véase Vibh. 366 (PTS p. 352), definición de *lapanā*, donde aparece *samullapanā*.",
+   "en": "Talking around the object; one wants an object but does not say “I want this”; so one speaks indirectly. See Vibh. 366 (PTS p. 352), the definition of *lapanā*, where *samullapanā* occurs."
   },
   "9": {
-   "es": "El término original es *saṃ-ratto*. La ‘ṃ’ se elide y la vocal ‘a’ se convierte en larga. Véase Rū. §53-54.",
-   "en": "The original term is *saṃ-ratto*. The ‘ṃ’ is elided and the vowel ‘a’ becomes long. See Rū. §53-54."
+   "es": "El término original es *saṃ-ratto*. La ‘ṃ’ se elide y la vocal ‘a’ se convierte en larga. Véase Rū. §53–54 (= Kacc. §38–39).",
+   "en": "The original term is *saṃ-ratto*. The ‘ṃ’ is elided and the vowel ‘a’ becomes long. See Rū. §53–54 (= Kacc. §38–39)."
   },
   "10": {
    "es": "*vi + ava + dā*.",
@@ -176,12 +808,92 @@
    "en": "Lit. *anu*, always, and *saya*, lies; that which always lies."
   },
   "12": {
-   "es": "*Doṇa* y *khāri* son medidas de capacidad.",
-   "en": "*Doṇa* and *khāri* are measures of capacity."
+   "es": "*Doṇa* y *khāri* son medidas de capacidad; el *doṇa* es la decimosexta parte del *khāri* (Vin-ṭ.).",
+   "en": "*Doṇa* and *khāri* are measures of capacity; the *doṇa* is the sixteenth part of the *khāri* (Vin-ṭ.)."
   },
   "13": {
    "es": "Véase Rū. §569.",
    "en": "See Rū. §569."
+  },
+  "14": {
+   "es": "El orden es el de Rūpasiddhi (Rū. p. 126). Saddanīti los ordena empezando por **ā**: ā, u, ati, pati, pa, pari, ava, parā, adhi, abhi, anu, upa, apa, api, saṃ, vi, ni, nī, su, du: Sad. (Smith p. 880). Payogasiddhi y Niruttidīpanī sustituyen **nī** por **o**: consideran **nī** mero alargamiento de **ni** (Nir. p. 157).",
+   "en": "The order is that of Rūpasiddhi (Rū. p. 126). Saddanīti orders them beginning with **ā**: ā, u, ati, pati, pa, pari, ava, parā, adhi, abhi, anu, upa, apa, api, saṃ, vi, ni, nī, su, du: Sad. (Smith p. 880). Payogasiddhi and Niruttidīpanī replace **nī** with **o**: they regard **nī** as a mere lengthening of **ni** (Nir. p. 157)."
+  },
+  "15": {
+   "es": "Saddanīti lee *pavaddhakāyo* (Cp. II 5:1; CST *pavaḍḍhakāyo*).",
+   "en": "Saddanīti reads *pavaddhakāyo* (Cp. II 5:1; CST *pavaḍḍhakāyo*)."
+  },
+  "16": {
+   "es": "Nir. p. 157 (*tadanubandhe putto paputto nattā panattā*); samāsa, p. 279.",
+   "en": "Nir. p. 157 (*tadanubandhe putto paputto nattā panattā*); samāsa, p. 279."
+  },
+  "17": {
+   "es": "Saddanīti la pone bajo *nīharaṇa*: Sad. (Smith p. 885).",
+   "en": "Saddanīti places it under *nīharaṇa*: Sad. (Smith p. 885)."
+  },
+  "18": {
+   "es": "*nī* es *ni* con vocal alargada; por eso Niruttidīpanī (Nir. p. 157) y Payogasiddhi («*nīharati, issa dīgho*») lo excluyen de la lista y ponen *o*.",
+   "en": "*nī* is *ni* with the vowel lengthened; that is why Niruttidīpanī (Nir. p. 157) and Payogasiddhi («*nīharati, issa dīgho*») leave it out of the list and put *o*."
+  },
+  "19": {
+   "es": "Sad. (Smith p. 885).",
+   "en": "Sad. (Smith p. 885)."
+  },
+  "20": {
+   "es": "Rū. (CST) y Nir. leen *atthalābha* (Nir.: *rūpassa uppādo*); Payog., Sad. (Smith p. 881) y Abh. leen *attalābha*; Abh-ṭ.: *atthalābho uppatti*.",
+   "en": "Rū. (CST) and Nir. read *atthalābha* (Nir.: *rūpassa uppādo*); Payog., Sad. (Smith p. 881) and Abh. read *attalābha*; Abh-ṭ.: *atthalābho uppatti*."
+  },
+  "21": {
+   "es": "Niruttidīpanī (Nir. p. 158) y Abh-ṭ. añaden bajo *abhāva* *dussīlo*, *duppañño*.",
+   "en": "Niruttidīpanī (Nir. p. 158) and Abh-ṭ. add under *abhāva* *dussīlo*, *duppañño*."
+  },
+  "22": {
+   "es": "*viyoga*: Rū. p. 128 (*viyoge vippayutto*); Nir. p. 158. *ādikamma*: Sad. (Smith p. 885) (*ādikamme vippakataṃ*); Rū. p. 126 da el mismo ejemplo bajo **pa**.",
+   "en": "*viyoga*: Rū. p. 128 (*viyoge vippayutto*); Nir. p. 158. *ādikamma*: Sad. (Smith p. 885) (*ādikamme vippakataṃ*); Rū. p. 126 gives the same example under **pa**."
+  },
+  "23": {
+   "es": "Nir. pp. 159–160.",
+   "en": "Nir. pp. 159–160."
+  },
+  "24": {
+   "es": "Rū. p. 129 (*lakkhaṇādīsu … iccādi*); Rū. (kārakakaṇḍa): *lakkhaṇitthambhūtakkhānabhāgavicchāsu pati pari anū*.",
+   "en": "Rū. p. 129 (*lakkhaṇādīsu … iccādi*); Rū. (kārakakaṇḍa): *lakkhaṇitthambhūtakkhānabhāgavicchāsu pati pari anū*."
+  },
+  "25": {
+   "es": "Abh. (Abyayavagga), p. 95; Abh-ṭ.",
+   "en": "Abh. (Abyayavagga), p. 95; Abh-ṭ."
+  },
+  "26": {
+   "es": "Se mantiene *ativuddhi* (Rūpasiddhi, Payogasiddhi). Saddanīti lee *ativuṭṭhī*, «lluvia excesiva», palabra atestiguada en los comentarios (p. ej. MA. iii 302).",
+   "en": "*ativuddhi* is kept (Rūpasiddhi, Payogasiddhi). Saddanīti reads *ativuṭṭhī*, “excessive rain”, a word attested in the commentaries (e.g. MA. iii 302)."
+  },
+  "27": {
+   "es": "Nir. p. 159 (*antokamme mañcaṃ vā pīṭhaṃ vā atiharitvā ṭhapeti*); Abh. (Abyayavagga), p. 95.",
+   "en": "Nir. p. 159 (*antokamme mañcaṃ vā pīṭhaṃ vā atiharitvā ṭhapeti*); Abh. (Abyayavagga), p. 95."
+  },
+  "28": {
+   "es": "Kacc. §247 (Rū. §261) los denomina *vibhattisaññā* (‘to’ … ‘dāni’). Rū. (al final de §422) añade que estos mismos sufijos se incluyen también entre los *abyaya-taddhita* (véase la clase 5); en §423 (Kacc. §391) da además, por *nipātana*, ‘jja’ (*ajja*) y ‘jju’ (*sajju*, *aparajju*), que también recoge Abhidhānappadīpikā (último verso del Abyayavagga). Niruttidīpanī (Nir. p. 154) agrega ‘raha’ (*karaha*) y analiza *kuhiñcanaṃ* y *kudācanaṃ* como *kuhiṃ*/*kudā* + partícula *cana*.",
+   "en": "Kacc. §247 (Rū. §261) calls them *vibhattisaññā* (‘to’ … ‘dāni’). Rū. (at the end of §422) adds that these same suffixes are also included among the *abyaya-taddhita* (see class 5); in §423 (Kacc. §391) it also gives, by *nipātana*, ‘jja’ (*ajja*) and ‘jju’ (*sajju*, *aparajju*), which Abhidhānappadīpikā also records (last verse of the Abyayavagga). Niruttidīpanī (Nir. p. 154) adds ‘raha’ (*karaha*) and analyses *kuhiñcanaṃ* and *kudācanaṃ* as *kuhiṃ*/*kudā* + the particle *cana*."
+  },
+  "29": {
+   "es": "Rū. §420 lo obtiene del ‘ca’ de Kacc. §397 (cuya vutti solo deriva ‘so’); Abh. también da ‘jjha’. ‘jjhaṃ’ según Moggallāna, Payog. y Nir.",
+   "en": "Rū. §420 derives it from the ‘ca’ of Kacc. §397 (whose vutti derives only ‘so’); Abh. also gives ‘jjha’. ‘jjhaṃ’ according to Moggallāna, Payog. and Nir."
+  },
+  "30": {
+   "es": "‘thattā’ se obtiene por ‘tu’ de Kacc. §398 (Rū. §421): *tathattā*, *yathattā*, *aññathattā*. No debe confundirse con el sustantivo neutro *aññathattaṃ*, ‘alteración’. Kacc. §398 lee ‘thatthā’ (Sī ‘tathattā’, Sad. ‘tatthā’); Abh. y su ṭīkā dan ‘thattaṃ’ (*aññathattaṃ*).",
+   "en": "‘thattā’ is obtained by the ‘tu’ of Kacc. §398 (Rū. §421): *tathattā*, *yathattā*, *aññathattā*. It should not be confused with the neuter noun *aññathattaṃ*, ‘alteration’. Kacc. §398 reads ‘thatthā’ (Sī ‘tathattā’, Sad. ‘tatthā’); Abh. and its ṭīkā give ‘thattaṃ’ (*aññathattaṃ*)."
+  },
+  "31": {
+   "es": "Kacc. §399 / Rū. §422 *Kim-imehi thaṃ* (‘ka’ por ‘kiṃ’ en virtud de ‘ca’ de Kacc. §227 / Rū. §270; ‘i’ por ‘ima’ y duplicación: Kacc. §234 / Rū. §265).",
+   "en": "Kacc. §399 / Rū. §422 *Kim-imehi thaṃ* (‘ka’ for ‘kiṃ’ by virtue of the ‘ca’ of Kacc. §227 / Rū. §270; ‘i’ for ‘ima’ and doubling: Kacc. §234 / Rū. §265)."
+  },
+  "32": {
+   "es": "Sustituto de ‘tuna’, etc. (Kacc. §598 / Rū. §643, que lo extiende a √*i* por *yogavibhāga*: *paṭicca*, *avecca*, *upecca*).",
+   "en": "Substitute for ‘tuna’, etc. (Kacc. §598 / Rū. §643, which extends it to √*i* by *yogavibhāga*: *paṭicca*, *avecca*, *upecca*)."
+  },
+  "33": {
+   "es": "Según Kacc. §601 (Rū. §334), las formas en *tave*, *tuna*, etc. no reciben el tratamiento de nombre; Niruttidīpanī (Nir. p. 162) precisa que tras *tvā*/*tvāna* se elide la primera inflexión y tras *tuṃ*/*tave* la cuarta.",
+   "en": "According to Kacc. §601 (Rū. §334), forms in *tave*, *tuna*, etc. do not receive the treatment of a noun; Niruttidīpanī (Nir. p. 162) specifies that after *tvā*/*tvāna* the first inflection is elided and after *tuṃ*/*tave* the fourth."
   }
  },
  "clases": [
@@ -195,8 +907,8 @@
    "intro": [
     {
      "tipo": "txt",
-     "es": "Se anteponen a los verbos y nombres. Tienen tres funciones: (1) cambiar, (2) conformar y (3) modificar.",
-     "en": "They are placed before verbs and nouns. They have three functions: (1) to change, (2) to conform and (3) to modify."
+     "es": "Se anteponen a los verbos y nombres. Tienen tres modos de funcionar (*upasaggagati*): (1) alterar (*bādhati*) el significado de la raíz, (2) seguirlo (*anuvattati*) y (3) especificarlo (*viseseti*). Estrofa: «*dhātvatthaṃ bādhate koci, koci tam anuvattate, tam evañño viseseti, upasaggagatī tidhā*» (Rū. p. 132).",
+     "en": "They are placed before verbs and nouns. They have three modes of operation (*upasaggagati*): (1) to alter (*bādhati*) the meaning of the root, (2) to follow it (*anuvattati*) and (3) to specify it (*viseseti*). Stanza: «*dhātvatthaṃ bādhate koci, koci tam anuvattate, tam evañño viseseti, upasaggagatī tidhā*» (Rū. p. 132)."
     },
     {
      "tipo": "txt",
@@ -211,20 +923,20 @@
     },
     {
      "tipo": "ej",
-     "es": "parado. Si se le coloca el prefijo **pati**, *pati-ṭṭhito*, parado. En este caso no se modifica el significado.",
-     "en": "standing. If the prefix **pati** is placed before it, *pati-ṭṭhito*, standing. In this case the meaning is not modified.",
+     "es": "de pie. Si se le coloca el prefijo **pati**, *pati-ṭṭhito*, establecido, firme. En este caso no se modifica el significado.",
+     "en": "standing. If the prefix **pati** is placed before it, *pati-ṭṭhito*, established, firm. In this case the meaning is not modified.",
      "pali": "ṭhito"
     },
     {
      "tipo": "ej",
-     "es": "lleva. Si se le coloca el prefijo **pa**, *paharati*, golpea. En este caso se modifica el significado.",
-     "en": "carries. If the prefix **pa** is placed before it, *paharati*, strikes. In this case the meaning is modified.",
-     "pali": "harati"
+     "es": "conoce. Si se le coloca el prefijo **pa**, *pajānāti*, conoce bien, de diversos modos. En este caso se modifica el significado.",
+     "en": "knows. If the prefix **pa** is placed before it, *pajānāti*, knows well, in various ways. In this case the meaning is modified.",
+     "pali": "jānāti"
     },
     {
      "tipo": "txt",
-     "es": "Hay veinte prefijos: **pa**, **parā**, **ni**, **nī**, **u**, **du**, **saṃ**, **vi**, **ava**, **anu**, **pari**, **adhi**, **abhi**, **pati**, **su**, **ā**, **ati**, **api**, **apa**, **upa**.",
-     "en": "There are twenty prefixes: **pa**, **parā**, **ni**, **nī**, **u**, **du**, **saṃ**, **vi**, **ava**, **anu**, **pari**, **adhi**, **abhi**, **pati**, **su**, **ā**, **ati**, **api**, **apa**, **upa**."
+     "es": "Hay veinte prefijos: **pa**, **parā**, **ni**, **nī**, **u**, **du**, **saṃ**, **vi**, **ava**, **anu**, **pari**, **adhi**, **abhi**, **pati**, **su**, **ā**, **ati**, **api**, **apa**, **upa**.[^14]",
+     "en": "There are twenty prefixes: **pa**, **parā**, **ni**, **nī**, **u**, **du**, **saṃ**, **vi**, **ava**, **anu**, **pari**, **adhi**, **abhi**, **pati**, **su**, **ā**, **ati**, **api**, **apa**, **upa**.[^14]"
     }
    ],
    "entradas": [
@@ -239,8 +951,8 @@
       },
       {
        "tipo": "ej",
-       "es": "comprender en diferentes modos.",
-       "en": "understanding in different modes.",
+       "es": "sabiduría (lo que conoce de diversos modos).",
+       "en": "wisdom (that which knows in various ways).",
        "pali": "paññā"
       },
       {
@@ -261,8 +973,8 @@
       },
       {
        "tipo": "ej",
-       "es": "excelente.",
-       "en": "excellent.",
+       "es": "excelente; *padhānaṃ*, lo principal; *padhānattaṃ*, preeminencia.",
+       "en": "excellent; *padhānaṃ*, the principal; *padhānattaṃ*, pre-eminence.",
        "pali": "paṇītaṃ"
       },
       {
@@ -283,7 +995,7 @@
       },
       {
        "tipo": "ej",
-       "es": "tirar o poner adentro.",
+       "es": "arrojado o puesto dentro.",
        "en": "thrown or put inside.",
        "pali": "pakkhittaṃ"
       },
@@ -294,14 +1006,14 @@
       },
       {
        "tipo": "ej",
-       "es": "uno que vive solo.",
-       "en": "one who lives alone.",
+       "es": "el que vive fuera (de su hogar), ausente (Rū. p. 126 y Payog.: *pavāsī*; Nir. p. 157 da *pavāso*).",
+       "en": "one who lives away (from home), absent (Rū. p. 126 and Payog.: *pavāsī*; Nir. p. 157 has *pavāso*).",
        "pali": "pavāsī"
       },
       {
        "tipo": "txt",
-       "es": "Después de ése (*tappara*):[^3]",
-       "en": "After that (*tappara*):[^3]"
+       "es": "Más allá de ése, el siguiente en la serie (*tappara*):[^3]",
+       "en": "Beyond that, the next in the series (*tappara*):[^3]"
       },
       {
        "tipo": "ej",
@@ -311,13 +1023,31 @@
       },
       {
        "tipo": "txt",
+       "es": "Sucesión (de generaciones) (*tadanubandha*):[^16]",
+       "en": "Succession (of generations) (*tadanubandha*):[^16]",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "nieto (hijo del hijo).",
+       "en": "grandson (son of the son).",
+       "pali": "paputto"
+      },
+      {
+       "tipo": "ej",
+       "es": "bisnieto.",
+       "en": "great-grandson.",
+       "pali": "panattā"
+      },
+      {
+       "tipo": "txt",
        "es": "En el significado de mucho, abundancia (*bhusattha*):",
        "en": "In the sense of much, abundance (*bhusattha*):"
       },
       {
        "tipo": "ej",
-       "es": "cuerpo grande.",
-       "en": "large body.",
+       "es": "de cuerpo muy crecido (*bahubbīhi*).[^15]",
+       "en": "with a greatly grown body (*bahubbīhi*).[^15]",
        "pali": "pavuddhakāyo"
       },
       {
@@ -338,15 +1068,15 @@
       },
       {
        "tipo": "ej",
-       "es": "abundante riqueza.",
-       "en": "abundant wealth.",
+       "es": "que tiene abundante riqueza (Sn. v. 102; CST p. 296, PTS p. 19). Ejemplo tomado de Sad. (Smith p. 882), no de Rūpasiddhi.",
+       "en": "who has abundant wealth (Sn. v. 102; CST p. 296, PTS p. 19). Example taken from Sad. (Smith p. 882), not from Rūpasiddhi.",
        "pali": "pahūtavitto"
       },
       {
        "tipo": "ej",
        "es": "mucha comida \\[satisfecho con lo que uno ha comido\\].",
        "en": "much food \\[satisfied with what one has eaten\\].",
-       "pali": "pa-hūtaṃ annaṃ"
+       "pali": "pahūtam annaṃ"
       },
       {
        "tipo": "txt",
@@ -411,8 +1141,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Fortaleza (*vikkama*):",
-       "en": "Strength (*vikkama*):"
+       "es": "Esfuerzo, denuedo (*vikkama*):",
+       "en": "Effort, valour (*vikkama*):"
       },
       {
        "tipo": "ej",
@@ -427,8 +1157,8 @@
       },
       {
        "tipo": "ej",
-       "es": "masajeando el miembro.",
-       "en": "massaging the limb.",
+       "es": "el tocar (acariciar) un miembro \\[del cuerpo\\].",
+       "en": "touching (caressing) a limb \\[of the body\\].",
        "pali": "aṅgassa parāmasanaṃ"
       }
      ]
@@ -444,8 +1174,8 @@
       },
       {
        "tipo": "ej",
-       "es": "expresar completamente.",
-       "en": "expressing completely.",
+       "es": "expresión (explicación) completa del sentido.[^17]",
+       "en": "complete expression (explanation) of the meaning.[^17]",
        "pali": "nirutti"
       },
       {
@@ -467,7 +1197,7 @@
       },
       {
        "tipo": "ej",
-       "es": "ir afuera.",
+       "es": "sale.",
        "en": "goes out.",
        "pali": "niyyāti"
       },
@@ -517,14 +1247,14 @@
       },
       {
        "tipo": "txt",
-       "es": "Ir afuera (*nikkhanta*):",
-       "en": "Going out (*nikkhanta*):"
+       "es": "Salida, haber salido (*nikkhanta*):",
+       "en": "Exit, having gone out (*nikkhanta*):"
       },
       {
        "tipo": "ej",
-       "es": "Nibbāna.",
-       "en": "Nibbāna.",
-       "pali": "nibbānaṃ"
+       "es": "(Rū. *nibbāno*), salido del bosque \\[de los deseos\\], sin deseo; *nibbānaṃ*, Nibbāna (salido del *vāna*, el ansia).",
+       "en": "(Rū. *nibbāno*), gone out of the forest \\[of desires\\], without desire; *nibbānaṃ*, Nibbāna (gone out of *vāna*, craving).",
+       "pali": "nibbano"
       },
       {
        "tipo": "txt",
@@ -539,8 +1269,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Decisión (*avadhāraṇa*):",
-       "en": "Decision (*avadhāraṇa*):"
+       "es": "Determinación (*avadhāraṇa*):",
+       "en": "Determination (*avadhāraṇa*):"
       },
       {
        "tipo": "ej",
@@ -577,8 +1307,8 @@
       },
       {
        "tipo": "ej",
-       "es": "investigando.",
-       "en": "investigating.",
+       "es": "consideración atenta.",
+       "en": "careful consideration.",
        "pali": "nisāmanaṃ"
       },
       {
@@ -588,8 +1318,8 @@
       },
       {
        "tipo": "ej",
-       "es": "final.",
-       "en": "finished.",
+       "es": "terminado, concluido.",
+       "en": "finished, concluded.",
        "pali": "niṭṭhitaṃ"
       },
       {
@@ -599,8 +1329,8 @@
       },
       {
        "tipo": "ej",
-       "es": "sabio.",
-       "en": "wise.",
+       "es": "hábil, diestro; sutil.",
+       "en": "skilful, adept; subtle.",
        "pali": "nipuṇo"
       }
      ]
@@ -611,8 +1341,8 @@
      "bloques": [
       {
        "tipo": "txt",
-       "es": "Sacar afuera (*nīharaṇa*):",
-       "en": "Taking out (*nīharaṇa*):"
+       "es": "Sacar afuera (*nīharaṇa*):[^18]",
+       "en": "Taking out (*nīharaṇa*):[^18]"
       },
       {
        "tipo": "ej",
@@ -630,6 +1360,18 @@
        "es": "impedimento.",
        "en": "hindrance.",
        "pali": "nīvaraṇaṃ"
+      },
+      {
+       "tipo": "txt",
+       "es": "Salida (*niggama*):[^19]",
+       "en": "Departure (*niggama*):[^19]",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "conducente a la liberación.",
+       "en": "leading to liberation.",
+       "pali": "niyyānikaṃ \\[mama sāsanaṃ\\]"
       }
      ]
     },
@@ -650,7 +1392,7 @@
       },
       {
        "tipo": "txt",
-       "es": "Trabajo arriba (*uddhakamma*):",
+       "es": "Acción hacia arriba (*uddhakamma*):",
        "en": "Upward action (*uddhakamma*):"
       },
       {
@@ -661,8 +1403,8 @@
       },
       {
        "tipo": "ej",
-       "es": "arrojado arriba.",
-       "en": "thrown upward.",
+       "es": "el lanzamiento hacia arriba.",
+       "en": "the throwing upward.",
        "pali": "ukkhepo"
       },
       {
@@ -672,8 +1414,8 @@
       },
       {
        "tipo": "ej",
-       "es": "el mejor, excelente.",
-       "en": "the best, excellent.",
+       "es": "el mejor, excelente; *lokuttaro*, supramundano.",
+       "en": "the best, excellent; *lokuttaro*, supramundane.",
        "pali": "uttamo"
       },
       {
@@ -683,8 +1425,8 @@
       },
       {
        "tipo": "ej",
-       "es": "que vive aislado, separado.",
-       "en": "living isolated, apart.",
+       "es": "deshabitado; expulsado de su morada (ThagA. ii 326, PTS iii 56).",
+       "en": "uninhabited; driven from its dwelling (ThagA. ii 326, PTS iii 56).",
        "pali": "ubbāsito"
       },
       {
@@ -700,8 +1442,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Obtener substancia, significado, la meta (*atthalābha*):",
-       "en": "Obtaining substance, meaning, the goal (*atthalābha*):"
+       "es": "Obtención de existencia, surgimiento (*attalābha*; var. *atthalābha*):[^20]",
+       "en": "Obtaining existence, arising (*attalābha*; var. *atthalābha*):[^20]"
       },
       {
        "tipo": "ej",
@@ -716,19 +1458,19 @@
       },
       {
        "tipo": "ej",
-       "es": "se esfuerza para \\[poder\\] ir.",
-       "en": "strives \\[to be able\\] to go.",
+       "es": "es capaz de ir (se siente con fuerzas para ir).",
+       "en": "is able to go (feels strong enough to go).",
        "pali": "ussahati gantuṃ"
       },
       {
        "tipo": "txt",
-       "es": "Decir con claridad, precisamente (*sarūpakathana*):",
-       "en": "Saying clearly, precisely (*sarūpakathana*):"
+       "es": "Enunciación (de algo) en su propia forma (*sarūpakathana*), es decir, *uddesa*, enunciación sumaria (cf. nota 6; Nir. p. 158):",
+       "en": "Stating (something) in its own form (*sarūpakathana*), that is, *uddesa*, summary statement (cf. note 6; Nir. p. 158):"
       },
       {
        "tipo": "ej",
-       "es": "recita el discurso.",
-       "en": "recites the discourse.",
+       "es": "recita (enuncia) el texto \\[según Sad. (Smith p. 881, n. 4): el Pātimokkha\\].",
+       "en": "recites (sets forth) the text \\[according to Sad. (Smith p. 881, n. 4): the Pātimokkha\\].",
        "pali": "uddisati suttaṃ"
       }
      ]
@@ -750,8 +1492,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Inexistencia (*abhāva*):",
-       "en": "Non-existence (*abhāva*):"
+       "es": "Inexistencia (*abhāva*):[^21]",
+       "en": "Non-existence (*abhāva*):[^21]"
       },
       {
        "tipo": "ej",
@@ -805,8 +1547,8 @@
       },
       {
        "tipo": "ej",
-       "es": "boca sucia; procaz.",
-       "en": "foul-mouthed; insolent.",
+       "es": "de cara fea.",
+       "en": "with an ugly face.",
        "pali": "dummukho"
       }
      ]
@@ -845,14 +1587,20 @@
       },
       {
        "tipo": "txt",
-       "es": "Totalidad, inclusión (*samantabhāva*):",
-       "en": "Totality, inclusion (*samantabhāva*):"
+       "es": "Estado de estar por todas partes (*samantabhāva*):",
+       "en": "State of being everywhere (*samantabhāva*):"
       },
       {
        "tipo": "ej",
-       "es": "conversando todo alrededor[^8].",
-       "en": "talking all around[^8].",
-       "pali": "saṃkiṇṇā samullapanā"
+       "es": "esparcidas (mezcladas) por todas partes.",
+       "en": "scattered (mixed) everywhere.",
+       "pali": "saṃkiṇṇā"
+      },
+      {
+       "tipo": "ej",
+       "es": "charla \\[halagadora\\] por todos lados[^8].",
+       "en": "\\[flattering\\] talk on all sides[^8].",
+       "pali": "samullapanā"
       },
       {
        "tipo": "txt",
@@ -894,8 +1642,8 @@
       },
       {
        "tipo": "ej",
-       "es": "co-residencia.",
-       "en": "co-residence.",
+       "es": "convivencia (Nir. p. 159 añade *sambhogo*).",
+       "en": "living together (Nir. p. 159 adds *sambhogo*).",
        "pali": "saṃvāso"
       },
       {
@@ -933,13 +1681,13 @@
       },
       {
        "tipo": "txt",
-       "es": "Compilar (*saṅgaha*):",
-       "en": "Compiling (*saṅgaha*):"
+       "es": "Acogida, inclusión (*saṅgaha*):",
+       "en": "Welcoming, inclusion (*saṅgaha*):"
       },
       {
        "tipo": "ej",
-       "es": "compila.",
-       "en": "compiles.",
+       "es": "reúne, abarca; acoge (favorece).",
+       "en": "gathers, encompasses; takes in (supports).",
        "pali": "saṅgaṇhāti"
       },
       {
@@ -949,8 +1697,8 @@
       },
       {
        "tipo": "ej",
-       "es": "controlado.",
-       "en": "restrained.",
+       "es": "cerrado, cubierto (de ahí: refrenado).",
+       "en": "closed, covered (hence: restrained).",
        "pali": "saṃvutaṃ"
       },
       {
@@ -971,8 +1719,8 @@
       },
       {
        "tipo": "ej",
-       "es": "exitoso.",
-       "en": "successful.",
+       "es": "exitoso; dotado.",
+       "en": "successful; endowed.",
        "pali": "sampanno"
       }
      ]
@@ -1005,8 +1753,8 @@
       },
       {
        "tipo": "ej",
-       "es": "duda (lit. mucho entendimiento).",
-       "en": "doubt (lit. much understanding).",
+       "es": "duda (lit. entendimiento dividido, de varias formas).",
+       "en": "doubt (lit. divided understanding, of various kinds).",
        "pali": "vimati"
       },
       {
@@ -1047,6 +1795,30 @@
        "es": "deformado, feo.",
        "en": "deformed, ugly.",
        "pali": "virūpo"
+      },
+      {
+       "tipo": "txt",
+       "es": "Separación (*viyoga*):[^22]",
+       "en": "Separation (*viyoga*):[^22]",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "disociado.",
+       "en": "dissociated.",
+       "pali": "vippayutto"
+      },
+      {
+       "tipo": "txt",
+       "es": "Comienzo de la acción (*ādikamma*):",
+       "en": "Beginning of the action (*ādikamma*):",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "comenzado y no terminado.",
+       "en": "begun and not finished.",
+       "pali": "vippakataṃ"
       }
      ]
     },
@@ -1061,8 +1833,8 @@
       },
       {
        "tipo": "txt",
-       "es": "*avakkhittacakkhu*, uno con los ojos mirando hacia abajo:",
-       "en": "*avakkhittacakkhu*, one with eyes looking downward:"
+       "es": "*avakkhittacakkhu*, uno con los ojos mirando hacia abajo.",
+       "en": "*avakkhittacakkhu*, one with eyes looking downward."
       },
       {
        "tipo": "txt",
@@ -1077,14 +1849,14 @@
       },
       {
        "tipo": "ej",
-       "es": "bosque sin cuclillo.",
-       "en": "a forest without cuckoos.",
+       "es": "bosque abandonado por el cuclillo (Rū. samāsakaṇḍa, p. 198; Nir.).",
+       "en": "a forest abandoned by the cuckoo (Rū. samāsakaṇḍa, p. 198; Nir.).",
        "pali": "avakokilaṃ vanaṃ"
       },
       {
        "tipo": "txt",
-       "es": "Desdén, desprecio; intimidación (*paribhava*):",
-       "en": "Disdain, contempt; intimidation (*paribhava*):"
+       "es": "Desdén, desprecio (*paribhava*):",
+       "en": "Disdain, contempt (*paribhava*):"
       },
       {
        "tipo": "ej",
@@ -1221,7 +1993,7 @@
       },
       {
        "tipo": "ej",
-       "es": "los sabios son inferiores que Sāriputta.",
+       "es": "los sabios son inferiores a Sāriputta.",
        "en": "the wise are inferior to Sāriputta.",
        "pali": "anu Sāriputtaṃ paññavanto"
       },
@@ -1243,8 +2015,8 @@
       },
       {
        "tipo": "ej",
-       "es": "el rayo ilumina el árbol.",
-       "en": "the lightning illuminates the tree.",
+       "es": "el relámpago resplandece cubriendo \\[con su luz\\] el árbol (Niruttidīpanī: *rukkhaṃ anu pharitvā ti attho*).",
+       "en": "the lightning flashes, covering the tree \\[with its light\\] (Niruttidīpanī: *rukkhaṃ anu pharitvā ti attho*).",
        "pali": "rukkhaṃ anu vijjotate vijju"
       },
       {
@@ -1265,20 +2037,44 @@
       },
       {
        "tipo": "ej",
-       "es": "dé eso que es mi parte aquí.",
-       "en": "let that which is my share here be given.",
+       "es": "lo que aquí se haya apartado para mí, que se me dé (Niruttidīpanī: *maṃ uddissa yaṃ vatthu ṭhapitaṃ siyā taṃ me dīyatu*).",
+       "en": "whatever has been set aside here for me, let it be given to me (Niruttidīpanī: *maṃ uddissa yaṃ vatthu ṭhapitaṃ siyā taṃ me dīyatu*).",
        "pali": "yad ettha maṃ anu siyā taṃ dīyatu"
       },
       {
        "tipo": "txt",
-       "es": "Sucesión; extensión (*vicchā*):",
-       "en": "Succession; distribution (*vicchā*):"
+       "es": "Distribución, repetición distributiva (*vicchā*):",
+       "en": "Distribution, distributive repetition (*vicchā*):"
       },
       {
        "tipo": "ej",
-       "es": "la luna ilumina en cada árbol.",
-       "en": "the moon shines on each tree.",
+       "es": "la luna resplandece árbol tras árbol.",
+       "en": "the moon shines tree after tree.",
        "pali": "rukkhaṃ rukkhaṃ anu vijjotate cando"
+      },
+      {
+       "tipo": "txt",
+       "es": "Repetición (*punappunabhāva*):[^23]",
+       "en": "Repetition (*punappunabhāva*):[^23]",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "cada quincena.",
+       "en": "every fortnight.",
+       "pali": "anvaḍḍhamāsaṃ"
+      },
+      {
+       "tipo": "txt",
+       "es": "Condición de menor (*kaniṭṭhabhāva*):",
+       "en": "Condition of being junior (*kaniṭṭhabhāva*):",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "thera menor/segundo.",
+       "en": "junior/second thera.",
+       "pali": "anuthero"
       }
      ]
     },
@@ -1299,8 +2095,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Discriminación (*pariccheda*):",
-       "en": "Discrimination (*pariccheda*):"
+       "es": "Delimitación, determinación (*pariccheda*):",
+       "en": "Delimitation, determination (*pariccheda*):"
       },
       {
        "tipo": "ej",
@@ -1348,8 +2144,8 @@
       },
       {
        "tipo": "ej",
-       "es": "honor.",
-       "en": "honour.",
+       "es": "servicio, atención (honrar sirviendo) (D. iii 154, PTS iii 189; M. ii 388, PTS ii 177).",
+       "en": "service, attendance (honouring by serving) (D. iii 154, PTS iii 189; M. ii 388, PTS ii 177).",
        "pali": "pāricariyā"
       },
       {
@@ -1381,8 +2177,8 @@
       },
       {
        "tipo": "ej",
-       "es": "reprende.",
-       "en": "reproaches.",
+       "es": "insulta, injuria.",
+       "en": "insults, abuses.",
        "pali": "paribhāsati"
       },
       {
@@ -1392,9 +2188,45 @@
       },
       {
        "tipo": "ej",
-       "es": "el rayo ilumina el árbol.",
-       "en": "the lightning illuminates the tree.",
+       "es": "el relámpago resplandece cubriendo \\[con su luz\\] el árbol (Niruttidīpanī: *parī ti pharitvā*).",
+       "en": "the lightning flashes, covering the tree \\[with its light\\] (Niruttidīpanī: *parī ti pharitvā*).",
        "pali": "rukkhaṃ pari vijjotate vijju"
+      },
+      {
+       "tipo": "txt",
+       "es": "Señalar que es de tal manera (*itthambhūtakkhāna*):[^24]",
+       "en": "Pointing out that it is of such a manner (*itthambhūtakkhāna*):[^24]",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "Devadatta es bueno con su madre.",
+       "en": "Devadatta is good to his mother.",
+       "pali": "sādhu Devadatto mātaraṃ pari"
+      },
+      {
+       "tipo": "txt",
+       "es": "Parte, porción (*bhāga*):",
+       "en": "Part, portion (*bhāga*):",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "lo que aquí se haya apartado para mí, que se me dé.",
+       "en": "whatever has been set aside here for me, let it be given to me.",
+       "pali": "yad ettha maṃ pari siyā taṃ dīyatu"
+      },
+      {
+       "tipo": "txt",
+       "es": "Distribución, repetición distributiva (*vicchā*):",
+       "en": "Distribution, distributive repetition (*vicchā*):",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "la luna resplandece árbol tras árbol.",
+       "en": "the moon shines tree after tree.",
+       "pali": "rukkhaṃ rukkhaṃ pari vijjotate cando"
       }
      ]
     },
@@ -1415,8 +2247,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Supremacía (*issariya*):",
-       "en": "Supremacy (*issariya*):"
+       "es": "Señorío, dominio (*issara*):",
+       "en": "Lordship, dominion (*issara*):"
       },
       {
        "tipo": "ej",
@@ -1426,8 +2258,8 @@
       },
       {
        "tipo": "ej",
-       "es": "Los Pañcālas son gobernados por Brahmadatta.",
-       "en": "The Pañcālas are ruled by Brahmadatta.",
+       "es": "los Pañcālas son gobernados por Brahmadatta.",
+       "en": "the Pañcālas are ruled by Brahmadatta.",
        "pali": "adhi Brahmadatte Pañcālā"
       },
       {
@@ -1437,8 +2269,8 @@
       },
       {
        "tipo": "ej",
-       "es": "crece hacia arriba.",
-       "en": "grows upward.",
+       "es": "sube, asciende.",
+       "en": "climbs, ascends.",
        "pali": "adhirohati"
       },
       {
@@ -1501,6 +2333,12 @@
        "es": "obtiene una cantidad de riqueza.",
        "en": "obtains a mass of wealth.",
        "pali": "bhogakkhandhaṃ adhigacchati"
+      },
+      {
+       "tipo": "txt",
+       "es": "Especificación (*visesana*): (sin ejemplo en la fuente)[^25]",
+       "en": "Specification (*visesana*): (no example in the source)[^25]",
+       "nuevo": true
       }
      ]
     },
@@ -1515,8 +2353,8 @@
       },
       {
        "tipo": "ej",
-       "es": "estar cara a cara; *abhikkamati*, procede.",
-       "en": "being face to face; *abhikkamati*, goes forward.",
+       "es": "que está de frente, vuelto hacia; *abhikkamati*, avanza, va hacia adelante (D. ii 269, PTS ii 338).",
+       "en": "facing, turned towards; *abhikkamati*, advances, goes forward (D. ii 269, PTS ii 338).",
        "pali": "abhimukho"
       },
       {
@@ -1526,9 +2364,9 @@
       },
       {
        "tipo": "ej",
-       "es": "Tercera Canasta.",
-       "en": "Third Basket.",
-       "pali": "Abhidhammo"
+       "es": "el Dhamma distinguido (nombre de la tercera canasta).",
+       "en": "the distinguished Dhamma (name of the third basket).",
+       "pali": "abhidhammo"
       },
       {
        "tipo": "txt",
@@ -1543,7 +2381,7 @@
       },
       {
        "tipo": "txt",
-       "es": "Trabajo arriba (*uddhakamma*):",
+       "es": "Acción hacia arriba (*uddhakamma*):",
        "en": "Upward action (*uddhakamma*):"
       },
       {
@@ -1592,8 +2430,8 @@
       },
       {
        "tipo": "ej",
-       "es": "el rayo ilumina el árbol.",
-       "en": "the lightning illuminates the tree.",
+       "es": "el relámpago resplandece cubriendo \\[con su luz\\] el árbol (Niruttidīpanī: *rukkhaṃ abhibyāpetvā vijjotate*).",
+       "en": "the lightning flashes, covering the tree \\[with its light\\] (Niruttidīpanī: *rukkhaṃ abhibyāpetvā vijjotate*).",
        "pali": "rukkhaṃ abhi vijjotate vijju"
       },
       {
@@ -1609,24 +2447,13 @@
       },
       {
        "tipo": "txt",
-       "es": "Parte, porción (*bhāga*):",
-       "en": "Part, portion (*bhāga*):"
-      },
-      {
-       "tipo": "ej",
-       "es": "dé eso que es mi parte aquí.",
-       "en": "let that which is my share here be given.",
-       "pali": "yad ettha maṃ abhi siyā taṃ dīyatu"
-      },
-      {
-       "tipo": "txt",
        "es": "Sucesión; extensión (*vicchā*):",
        "en": "Succession; distribution (*vicchā*):"
       },
       {
        "tipo": "ej",
-       "es": "la luna ilumina en cada árbol.",
-       "en": "the moon shines on each tree.",
+       "es": "la luna resplandece bañando árbol tras árbol (Niruttidīpanī: *byāpetvā vijjotate*).",
+       "en": "the moon shines, bathing tree after tree (Niruttidīpanī: *byāpetvā vijjotate*).",
        "pali": "rukkhaṃ rukkhaṃ abhi vijjotate cando"
       }
      ]
@@ -1637,8 +2464,8 @@
      "bloques": [
       {
        "tipo": "txt",
-       "es": "Venir en contacto (*patigata*):",
-       "en": "Coming into contact (*patigata*):"
+       "es": "Presente ante (los sentidos) (*patigata*):",
+       "en": "Present before (the senses) (*patigata*):"
       },
       {
        "tipo": "ej",
@@ -1659,24 +2486,24 @@
       },
       {
        "tipo": "txt",
-       "es": "Semejanza (*patinidhi*):",
-       "en": "Resemblance (*patinidhi*):"
+       "es": "Representación, sustitución (*patinidhi*):",
+       "en": "Representation, substitution (*patinidhi*):"
       },
       {
        "tipo": "ej",
-       "es": "el alumno se asemeja al maestro.",
-       "en": "the pupil resembles the teacher.",
+       "es": "el discípulo \\[actúa\\] en lugar del maestro.",
+       "en": "the pupil \\[acts\\] in place of the teacher.",
        "pali": "ācariyato pati sisso"
       },
       {
        "tipo": "txt",
-       "es": "Restitución (*patidāna*):",
-       "en": "Restitution (*patidāna*):"
+       "es": "Intercambio (*patidāna*):",
+       "en": "Exchange (*patidāna*):"
       },
       {
        "tipo": "ej",
-       "es": "da mantequilla clarificada a uno que desea aceite.",
-       "en": "gives ghee to one who wants oil.",
+       "es": "a quien desea aceite le da a cambio mantequilla clarificada.",
+       "en": "to one who wants oil he gives ghee in exchange.",
        "pali": "telatthikassa ghataṃ pati dadāti"
       },
       {
@@ -1763,8 +2590,8 @@
       },
       {
        "tipo": "ej",
-       "es": "el rayo ilumina el árbol.",
-       "en": "the lightning illuminates the tree.",
+       "es": "el relámpago resplandece con relación al árbol (Niruttidīpanī: *patī ti paṭicca*).",
+       "en": "the lightning flashes in relation to the tree (Niruttidīpanī: *patī ti paṭicca*).",
        "pali": "rukkhaṃ pati vijjotate vijju"
       },
       {
@@ -1785,8 +2612,8 @@
       },
       {
        "tipo": "ej",
-       "es": "dé eso que es mi parte aquí.",
-       "en": "let that which is my share here be given.",
+       "es": "lo que aquí se haya apartado para mí, que se me dé.",
+       "en": "whatever has been set aside here for me, let it be given to me.",
        "pali": "yad ettha maṃ pati siyā taṃ dīyatu"
       },
       {
@@ -1796,8 +2623,8 @@
       },
       {
        "tipo": "ej",
-       "es": "la luna ilumina en cada árbol.",
-       "en": "the moon shines on each tree.",
+       "es": "la luna resplandece árbol tras árbol.",
+       "en": "the moon shines tree after tree.",
        "pali": "rukkhaṃ rukkhaṃ pati vijjotate cando"
       }
      ]
@@ -1869,7 +2696,7 @@
       },
       {
        "tipo": "txt",
-       "es": "Trabajo arriba (*uddhakamma*):",
+       "es": "Acción hacia arriba (*uddhakamma*):",
        "en": "Upward action (*uddhakamma*):"
       },
       {
@@ -1902,13 +2729,13 @@
       },
       {
        "tipo": "txt",
-       "es": "Logro (*patti*):",
-       "en": "Reaching (*patti*):"
+       "es": "Llegar a, incurrir (*patti*):",
+       "en": "Reaching, incurring (*patti*):"
       },
       {
        "tipo": "ej",
-       "es": "ha cometido una ofensa.",
-       "en": "has committed an offence.",
+       "es": "ha incurrido en una falta.",
+       "en": "has incurred an offence.",
        "pali": "āpattim āpanno"
       },
       {
@@ -1951,8 +2778,8 @@
       },
       {
        "tipo": "ej",
-       "es": "se adhiere; *ālambati*, se cuelga; se agarra de.",
-       "en": "clings; *ālambati*, hangs on; holds on to.",
+       "es": "toma, se apropia; *ālambati*, se cuelga; se agarra de.",
+       "en": "takes, appropriates; *ālambati*, hangs on; holds on to.",
        "pali": "ādīyati"
       },
       {
@@ -1984,8 +2811,8 @@
       },
       {
        "tipo": "ej",
-       "es": "se dirigió.",
-       "en": "addressed.",
+       "es": "se dirigió a, llamó \\[a los bhikkhus\\].",
+       "en": "addressed, called \\[the bhikkhus\\].",
        "pali": "āmantesi"
       }
      ]
@@ -2012,19 +2839,19 @@
       },
       {
        "tipo": "ej",
-       "es": "trasciende el fin.",
-       "en": "transcends the end.",
+       "es": "absolutamente, por completo (lit. que ha sobrepasado el fin). M. iii 55 (PTS iii 4): *accantaṃ niṭṭhaṃ nibbānaṃ ārādhenti*.",
+       "en": "absolutely, completely (lit. that has gone beyond the end). M. iii 55 (PTS iii 4): *accantaṃ niṭṭhaṃ nibbānaṃ ārādhenti*.",
        "pali": "accantaṃ"
       },
       {
        "tipo": "txt",
-       "es": "Abundancia (*atisaya*):",
-       "en": "Abundance (*atisaya*):"
+       "es": "Excelencia, grado sumo (*atisaya*):",
+       "en": "Excellence, highest degree (*atisaya*):"
       },
       {
        "tipo": "ej",
-       "es": "mucho mérito.",
-       "en": "much merit.",
+       "es": "sumamente hábil (o: sumamente bueno).",
+       "en": "extremely skilful (or: extremely good).",
        "pali": "atikusalo"
       },
       {
@@ -2040,9 +2867,21 @@
       },
       {
        "tipo": "ej",
-       "es": "mucho crecimiento.",
-       "en": "much growth.",
+       "es": "mucho crecimiento.[^26]",
+       "en": "much growth.[^26]",
        "pali": "ativuddhi"
+      },
+      {
+       "tipo": "txt",
+       "es": "Hacia adentro (*antobhāva*):[^27]",
+       "en": "Inwards (*antobhāva*):[^27]",
+       "nuevo": true
+      },
+      {
+       "tipo": "ej",
+       "es": "habiendo metido dentro una cama o un asiento.",
+       "en": "having brought a bed or a seat inside.",
+       "pali": "mañcaṃ vā pīṭhaṃ vā atiharitvā"
       }
      ]
     },
@@ -2052,8 +2891,8 @@
      "bloques": [
       {
        "tipo": "txt",
-       "es": "Honor, reverencia (*sambhāvanā*):",
-       "en": "Honour, reverence (*sambhāvanā*):"
+       "es": "Suposición enfática, hipérbole «incluso» (*sambhāvanā*):",
+       "en": "Emphatic supposition, hyperbole “even” (*sambhāvanā*):"
       },
       {
        "tipo": "ej",
@@ -2113,8 +2952,8 @@
       },
       {
        "tipo": "ej",
-       "es": "¿el venerable obtuvo alimentos?",
-       "en": "did the venerable obtain food?",
+       "es": "¿obtuvo usted limosna, venerable señor?",
+       "en": "did you obtain almsfood, venerable sir?",
        "pali": "api bhante bhikkhaṃ labhittha"
       }
      ]
@@ -2208,8 +3047,8 @@
       },
       {
        "tipo": "txt",
-       "es": "Surgimiento, nacimiento; imparcialidad, justicia (*upapatti*):",
-       "en": "Arising, birth; impartiality, fairness (*upapatti*):"
+       "es": "Renacer (*upapatti*):",
+       "en": "Rebirth (*upapatti*):"
       },
       {
        "tipo": "ej",
@@ -2218,9 +3057,14 @@
        "pali": "saggaṃ lokaṃ upapajjati"
       },
       {
+       "tipo": "txt",
+       "es": "Razón, lo razonable (*yutti*):",
+       "en": "Reason, what is reasonable (*yutti*):"
+      },
+      {
        "tipo": "ej",
-       "es": "ecuanimidad, significa ver con imparcialidad.",
-       "en": "equanimity means seeing with impartiality.",
+       "es": "*upekkhā* (ecuanimidad) es mirar (*ikkhati*) conforme a razón (*upapattito*), es decir, con imparcialidad.",
+       "en": "*upekkhā* (equanimity) is looking (*ikkhati*) in accordance with reason (*upapattito*), that is, impartially.",
        "pali": "upapattito ikkhatī ti upekkhā"
       },
       {
@@ -2230,9 +3074,9 @@
       },
       {
        "tipo": "ej",
-       "es": "símil.",
-       "en": "simile.",
-       "pali": "upamānaṃ"
+       "es": "símil, comparación.",
+       "en": "simile, comparison.",
+       "pali": "upamānaṃ, upamā"
       },
       {
        "tipo": "txt",
@@ -2241,8 +3085,8 @@
       },
       {
        "tipo": "ej",
-       "es": "un *doṇa* excede a un *khāri*.[^12]",
-       "en": "a *doṇa* exceeds a *khāri*.[^12]",
+       "es": "un *doṇa* por encima de un *khāri* (un *khāri* más un *doṇa*).[^12]",
+       "en": "a *doṇa* over and above a *khāri* (a *khāri* plus a *doṇa*).[^12]",
        "pali": "upa khāriyaṃ doṇo"
       },
       {
@@ -2274,14 +3118,14 @@
       },
       {
        "tipo": "ej",
-       "es": "reprende.",
-       "en": "reproaches.",
+       "es": "censura a otro.",
+       "en": "censures another.",
        "pali": "paraṃ upavadati"
       },
       {
        "tipo": "txt",
-       "es": "Marca (*saññā*):",
-       "en": "Mark (*saññā*):"
+       "es": "Nombre técnico, designación (*saññā*):",
+       "en": "Technical name, designation (*saññā*):"
       },
       {
        "tipo": "ej",
@@ -2313,14 +3157,14 @@
       },
       {
        "tipo": "ej",
-       "es": "uno que venera al Buddha.",
-       "en": "one who venerates the Buddha.",
+       "es": "el que sirve (asiste) al Buddha.",
+       "en": "one who serves (attends on) the Buddha.",
        "pali": "buddhupaṭṭhāko"
       },
       {
        "tipo": "ej",
-       "es": "uno que atiende a la madre.",
-       "en": "one who attends on the mother.",
+       "es": "el cuidado (servicio) de la madre (SnA. ii 23, PTS i 300).",
+       "en": "the care (service) of the mother (SnA. ii 23, PTS i 300).",
        "pali": "mātupaṭṭhānaṃ"
       },
       {
@@ -2330,8 +3174,8 @@
       },
       {
        "tipo": "ej",
-       "es": "la pureza como manifestación.",
-       "en": "purity as manifestation.",
+       "es": "que tiene la pureza como manifestación.",
+       "en": "having purity as its manifestation.",
        "pali": "soceyyapaccupaṭṭhānaṃ"
       },
       {
@@ -3545,8 +4389,8 @@
      ],
      "notas": [],
      "fuente": {
-      "es": "Abhidhānappadīpikā v. 1150, texto principal: «antarena’ntarā anto, vassaṃ nūna ca nicchaye». Su ṭīkā (Abh-ṭ., M 601) explica en cambio *avassaṃ* (sc. *avaśyam*): «antarena antarā anto cā ti ete abbhantare iccatthe; avassaṃ nūna ca nicchayatthe». No se ha hallado en CST *vassaṃ* suelto con este sentido; los ejemplos tienen la forma *avassaṃ*.",
-      "en": "Abhidhānappadīpikā v. 1150, main text: «antarena’ntarā anto, vassaṃ nūna ca nicchaye». Its ṭīkā (Abh-ṭ., M 601) explains *avassaṃ* instead (Skt. *avaśyam*): «antarena antarā anto cā ti ete abbhantare iccatthe; avassaṃ nūna ca nicchayatthe». *vassaṃ* on its own in this sense has not been found in CST; the examples have the form *avassaṃ*."
+      "es": "Abhidhānappadīpikā v. 1150, texto principal: «antarena’ntarā anto, vassaṃ nūna ca nicchaye». Su ṭīkā (Abh-ṭ., M 601) explica en cambio *avassaṃ*: «antarena antarā anto cā ti ete abbhantare iccatthe; avassaṃ nūna ca nicchayatthe». No se ha hallado en CST *vassaṃ* suelto con este sentido; los ejemplos tienen la forma *avassaṃ*.",
+      "en": "Abhidhānappadīpikā v. 1150, main text: «antarena’ntarā anto, vassaṃ nūna ca nicchaye». Its ṭīkā (Abh-ṭ., M 601) explains *avassaṃ* instead: «antarena antarā anto cā ti ete abbhantare iccatthe; avassaṃ nūna ca nicchayatthe». *vassaṃ* on its own in this sense has not been found in CST; the examples have the form *avassaṃ*."
      }
     },
     {
@@ -4020,8 +4864,8 @@
      "lema": "doso",
      "nuevo": true,
      "cab": {
-      "es": "**doso**, (sc. *doṣā*) (adv.) De noche.",
-      "en": "**doso**, (Skt. *doṣā*) (adv.) At night."
+      "es": "**doso**, (adv.) De noche.",
+      "en": "**doso**, (adv.) At night."
      },
      "caso": [],
      "nir": "",
@@ -4034,8 +4878,8 @@
      ],
      "notas": [],
      "fuente": {
-      "es": "Abhidhānappadīpikā v. 1147: «nattaṃ doso divā tva’he» (*doso* en el texto; la nota «rattaṃ (ṭī.)» se refiere a *nattaṃ*); Abh-ṭ. 600: «nattaṃ doso ca rajanīyamiccatthe» (*nattaṃ* y *doso*, en el sentido de «noche»). Vinayālaṅkāra-ṭīkā i 11 cita Abh con la misma lectura: «nattaṃ doso divā tvahe». La forma *dosā* (como el sánscrito *doṣā*) no aparece en CST. No se ha hallado en CST ningún ejemplo de uso.",
-      "en": "Abhidhānappadīpikā v. 1147: «nattaṃ doso divā tva’he» (*doso* in the text; the note «rattaṃ (ṭī.)» refers to *nattaṃ*); Abh-ṭ. 600: «nattaṃ doso ca rajanīyamiccatthe» (*nattaṃ* and *doso*, in the sense of “night”). Vinayālaṅkāra-ṭīkā i 11 quotes Abh with the same reading: «nattaṃ doso divā tvahe». The form *dosā* (like Sanskrit *doṣā*) does not occur in CST. No example of use has been found in CST."
+      "es": "Abhidhānappadīpikā v. 1147: «nattaṃ doso divā tva’he» (*doso* en el texto; la nota «rattaṃ (ṭī.)» se refiere a *nattaṃ*); Abh-ṭ. 600: «nattaṃ doso ca rajanīyamiccatthe» (*nattaṃ* y *doso*, en el sentido de «noche»). Vinayālaṅkāra-ṭīkā i 11 cita Abh con la misma lectura: «nattaṃ doso divā tvahe». La forma *dosā* no aparece en CST. No se ha hallado en CST ningún ejemplo de uso.",
+      "en": "Abhidhānappadīpikā v. 1147: «nattaṃ doso divā tva’he» (*doso* in the text; the note «rattaṃ (ṭī.)» refers to *nattaṃ*); Abh-ṭ. 600: «nattaṃ doso ca rajanīyamiccatthe» (*nattaṃ* and *doso*, in the sense of “night”). Vinayālaṅkāra-ṭīkā i 11 quotes Abh with the same reading: «nattaṃ doso divā tvahe». The form *dosā* does not occur in CST. No example of use has been found in CST."
      }
     },
     {
@@ -4193,25 +5037,12 @@
      "lema": "hevaṃ",
      "nuevo": true,
      "cab": {
-      "es": "**hevaṃ**, (ind.) Así, de ese modo (*ha* + *evaṃ*); casi siempre en *mā hevaṃ* «¡no [digas] así!».",
-      "en": "**hevaṃ**, (ind.) Thus, so (*ha* + *evaṃ*); almost always in *mā hevaṃ* «do not [say] so!»."
+      "es": "**hevaṃ**, véase *ha*. (= *ha* + *evaṃ*; los comentarios llaman a *ha* «nipātamatta»; Niruttidīpanī (p. 44) explica la *h* como aumento ante vocal: «*sare pare bahulaṃ hāgamo*».)",
+      "en": "**hevaṃ**, see *ha*. (= *ha* + *evaṃ*; the commentaries call *ha* «nipātamatta»; Niruttidīpanī (p. 44) explains the *h* as an augment before a vowel: «*sare pare bahulaṃ hāgamo*».)"
      },
      "caso": [],
      "nir": "",
-     "bloques": [
-      {
-       "tipo": "txt",
-       "es": "Con *mā*, prohibición; *ha* es mero nipāta:",
-       "en": "With *mā*, prohibition; *ha* is a mere particle:"
-      },
-      {
-       "tipo": "ej",
-       "pali": "mā hevaṃ, ānanda, avaca, mā hevaṃ, ānanda, avaca. gambhīro cāyaṃ, ānanda, paṭiccasamuppādo gambhīrāvabhāso ca",
-       "ref": "D. ii 47",
-       "es": "¡No digas eso, Ānanda, no digas eso! Profundo es este surgimiento dependiente, Ānanda, y profundo parece.",
-       "en": "Do not say so, Ānanda, do not say so! Deep is this dependent origination, Ānanda, and deep it appears."
-      }
-     ],
+     "bloques": [],
      "notas": [],
      "fuente": {
       "es": "Comentario: DA. ii 76 y SA. ii 81: «mā hevanti ha-kāro nipātamattaṃ, evaṃ mā bhaṇīti attho»; SṬ. i 188 da otro análisis: «māhevanti mā aha evanti chedo, ahāti nipātamattaṃ, māti paṭisedhe nipāto». Los comentarios llaman nipāta a *ha* (o *aha*), no a *hevaṃ* entero; *hevaṃ* es *ha* + *evaṃ*.",
@@ -4244,8 +5075,8 @@
      ],
      "notas": [],
      "fuente": {
-      "es": "Comentario: Nettivibhāvinī 44 (sobre esta estrofa): «khūti avadhāraṇatthe nipāto, tena disālocananayo koci atthaviseso na hotīti dassetī».",
-      "en": "Commentary: Nettivibhāvinī 44 (on this verse): «khūti avadhāraṇatthe nipāto, tena disālocananayo koci atthaviseso na hotīti dassetī»."
+      "es": "Comentario: NettiA. 31: «khu ti ca nipāto avadhāraṇe, tena olokanameva ayaṃ nayo na koci atthavisesoti dasseti»; también Nettivibhāvinī 44: «khūti avadhāraṇatthe nipāto…».",
+      "en": "Commentary: NettiA. 31: «khu ti ca nipāto avadhāraṇe, tena olokanameva ayaṃ nayo na koci atthavisesoti dasseti»; also Nettivibhāvinī 44: «khūti avadhāraṇatthe nipāto…»."
      }
     },
     {
@@ -4529,36 +5360,6 @@
       "es": "Comentario: MṬ. i 186: «kiñcāpīti ayaṃ ‘yadipī’ti iminā samānattho nipāto»; MA. i 99 glosa kiñcāpi con yadipi: «idaṃ vuttaṃ hoti – yadipi so bhikkhu…». La ṭīkā llama nipāta a *kiñcāpi* y dice que equivale a *yadipi*; de *yadipi* mismo no se ha hallado que se diga «nipāto». *yadipi* = *yadi* + *pi*.",
       "en": "Commentary: MṬ. i 186: «kiñcāpīti ayaṃ ‘yadipī’ti iminā samānattho nipāto»; MA. i 99 glosses kiñcāpi with yadipi: «idaṃ vuttaṃ hoti – yadipi so bhikkhu…». The ṭīkā calls *kiñcāpi* a nipāta and says it is equivalent to *yadipi*; it has not been found said of *yadipi* itself that it is a «nipāto». *yadipi* = *yadi* + *pi*."
      }
-    },
-    {
-     "id": "n-byattam",
-     "lema": "byattaṃ",
-     "nuevo": true,
-     "cab": {
-      "es": "**byattaṃ**, (adv.) Claramente, evidentemente, sin duda. Usado por los comentarios para glosar *have*, *ve*, *ha*.",
-      "en": "**byattaṃ**, (adv.) Clearly, evidently, certainly. Used by the commentaries to gloss *have*, *ve*, *ha*."
-     },
-     "caso": [],
-     "nir": "",
-     "bloques": [
-      {
-       "tipo": "txt",
-       "es": "Certeza (*ekaṃsa*):",
-       "en": "Certainty (*ekaṃsa*):"
-      },
-      {
-       "tipo": "ej",
-       "pali": "sa ve nibbānasantiketi so byattaṃ nibbānassa samīpe",
-       "ref": "Vis-ṭ. i 11",
-       "es": "«Él ciertamente está cerca del nibbāna»: él, evidentemente, [está] en la cercanía del nibbāna.",
-       "en": "«He is indeed close to nibbāna»: he, evidently, [is] in the vicinity of nibbāna."
-      }
-     ],
-     "notas": [],
-     "fuente": {
-      "es": "Comentarios: UdA. 40 (sobre «yadā have pātubhavanti dhammā», Ud. 77) y Sārattha-ṭ. iii 137: «haveti byattanti imasmiṃ atthe nipāto»; Sārattha-ṭ. iii 153 y SṬ. i 232: «ha-iti vā byattanti etasmiṃ atthe nipāto. Ekaṃsattheti keci»; ItA. 52: «veti byattaṃ ekaṃsenāti vā etasmiṃ atthe nipāto». En las citas, los nipātas son *have*, *ha* y *ve*; *byattaṃ* es el sentido que expresan. *byattaṃ* mismo es el neutro adverbial de *byatta* («claro, manifiesto»); su uso adverbial solo se ha hallado en comentarios y ṭīkās.",
-      "en": "Commentaries: UdA. 40 (on «yadā have pātubhavanti dhammā», Ud. 77) and Sārattha-ṭ. iii 137: «haveti byattanti imasmiṃ atthe nipāto»; Sārattha-ṭ. iii 153 and SṬ. i 232: «ha-iti vā byattanti etasmiṃ atthe nipāto. Ekaṃsattheti keci»; ItA. 52: «veti byattaṃ ekaṃsenāti vā etasmiṃ atthe nipāto». In the quotations the nipātas are *have*, *ha* and *ve*; *byattaṃ* is the sense they express. *byattaṃ* itself is the adverbial neuter of *byatta* (“clear, manifest”); its adverbial use has been found only in commentaries and ṭīkās."
-     }
     }
    ]
   },
@@ -4566,14 +5367,14 @@
    "id": "vibhatti",
    "n": 3,
    "titulo": {
-    "es": "3\\. **voces terminadas en sufijos que representan inflexiones (*vibhatti-paccaya-pada*)**",
-    "en": "3\\. **words ending in suffixes that represent inflections (*vibhatti-paccaya-pada*)**"
+    "es": "**3. voces terminadas en sufijos que representan inflexiones (*vibhatti-paccaya-pada*)**",
+    "en": "**3. words ending in suffixes that represent inflections (*vibhatti-paccaya-pada*)**"
    },
    "intro": [
     {
      "tipo": "txt",
-     "es": "Estos sufijos tienen la misma forma en los tres géneros y dos números (singular y plural). Hay quince mencionados en el *Padarūpasiddhi*: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ.",
-     "en": "These suffixes have the same form in the three genders and two numbers (singular and plural). Fifteen are mentioned in the *Padarūpasiddhi*: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ."
+     "es": "Estos sufijos tienen la misma forma en los tres géneros y dos números (singular y plural). Hay quince mencionados en el *Padarūpasiddhi*: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ.[^28]",
+     "en": "These suffixes have the same form in the three genders and two numbers (singular and plural). Fifteen are mentioned in the *Padarūpasiddhi*: to, tra, tha, dā, dācanaṃ, dāni, dha, dhi, dhunā, rahi, va, ha, haṃ, hiṃ, hiñcanaṃ.[^28]"
     }
    ],
    "tabla": [
@@ -4617,8 +5418,8 @@
       "en": "seventh (*sattamī*) (place and time)"
      },
      {
-      "es": "*sabbatra* (en todo)",
-      "en": "*sabbatra* (in all)"
+      "es": "*sabbatra* (en todas partes)",
+      "en": "*sabbatra* (everywhere)"
      }
     ],
     [
@@ -4639,8 +5440,8 @@
       "en": "seventh (*sattamī*) (place and time)"
      },
      {
-      "es": "*sabbattha* (en todo)",
-      "en": "*sabbattha* (in all)"
+      "es": "*sabbattha* (en todas partes)",
+      "en": "*sabbattha* (everywhere)"
      }
     ],
     [
@@ -4661,8 +5462,8 @@
       "en": "- seventh (*sattamī*) (time) (After *kiṃ*, *sabba*, *añña*, *eka*, *ya*)\n\n- seventh (*sattamī*) (time) (After ‘ta’)"
      },
      {
-      "es": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *aññadā,* en otro día, *ekadā,* una vez, *yadā,* ¿cuándo?\n*tadā,* luego, después, en ese tiempo",
-      "en": "*kadā*, when?, *sabbadā,* always, *aññadā,* on another day, *ekadā,* once, *yadā,* when\n*tadā,* then, afterwards, at that time"
+      "es": "*kadā*, ¿cuándo?, *sabbadā,* siempre, *sadā,* siempre (‘sa’ por ‘sabba’ ante ‘dā’, Rū. §277), *aññadā,* en otro momento, en otra ocasión, *ekadā,* una vez, *yadā,* cuando (relativo)\n*tadā,* luego, después, en ese tiempo",
+      "en": "*kadā*, when?, *sabbadā,* always, *sadā,* always (‘sa’ for ‘sabba’ before ‘dā’, Rū. §277), *aññadā,* at another time, on another occasion, *ekadā,* once, *yadā,* when (relative)\n*tadā,* then, afterwards, at that time"
      }
     ],
     [
@@ -4683,8 +5484,8 @@
       "en": "seventh (*sattamī*) (time) (After *ku* < *kiṃ*)"
      },
      {
-      "es": "*kudācanaṃ,* a veces, en cualquier tiempo",
-      "en": "*kudācanaṃ,* sometimes, at any time"
+      "es": "*kudācanaṃ,* en algún momento, alguna vez (con negación: nunca, p. ej. *na … kudācanaṃ*) (Dhp. v. 5, p. 14; también M. iii 192 (PTS iii 154); V. iii 496 (PTS Vin i 349))",
+      "en": "*kudācanaṃ,* at some time, ever (with negation: never, e.g. *na … kudācanaṃ*) (Dhp. v. 5, p. 14; also M. iii 192 (PTS iii 154); V. iii 496 (PTS Vin i 349))"
      }
     ],
     [
@@ -4749,8 +5550,8 @@
       "en": "seventh (*sattamī*) (Only after *sabba*)"
      },
      {
-      "es": "*sabbadhi,* en todo",
-      "en": "*sabbadhi,* in all"
+      "es": "*sabbadhi,* en todas partes",
+      "en": "*sabbadhi,* everywhere"
      }
     ],
     [
@@ -4855,12 +5656,12 @@
       "en": "271\n273"
      },
      {
-      "es": "- séptima (*sattamī*) (lugar y tiempo) (Después de *kiṃ* y *ta*)\n\n- séptima (*sattamī*) (lugar y tiempo) (Después de *ta*)",
-      "en": "- seventh (*sattamī*) (place and time) (After *kiṃ* and *ta*)\n\n- seventh (*sattamī*) (place and time) (After *ta*)"
+      "es": "- séptima (*sattamī*) (lugar y tiempo) (Después de *kiṃ*)\n\n- séptima (*sattamī*) (lugar y tiempo) (Después de *ta*)",
+      "en": "- seventh (*sattamī*) (place and time) (After *kiṃ*)\n\n- seventh (*sattamī*) (place and time) (After *ta*)"
      },
      {
-      "es": "*kuhaṃ,* ¿dónde?\n*tahaṃ,* en eso, allí",
-      "en": "*kuhaṃ,* where?\n*tahaṃ,* in that, there"
+      "es": "*kuhaṃ, kahaṃ,* ¿dónde? (‘ka’ por ‘kiṃ’ en virtud de ‘ca’ de Kacc. §227 / Rū. §270)\n*tahaṃ,* en eso, allí",
+      "en": "*kuhaṃ, kahaṃ,* where? (‘ka’ for ‘kiṃ’ by virtue of the ‘ca’ of Kacc. §227 / Rū. §270)\n*tahaṃ,* in that, there"
      }
     ],
     [
@@ -4903,8 +5704,8 @@
       "en": "seventh (*sattamī*) (place and time) (After *kiṃ*)"
      },
      {
-      "es": "*kuhiñcanaṃ,* ¿dónde?",
-      "en": "*kuhiñcanaṃ,* where?"
+      "es": "*kuhiñcanaṃ,* ¿dónde?; dondequiera (con negación: en ninguna parte)",
+      "en": "*kuhiñcanaṃ,* where?; wherever (with negation: nowhere)"
      }
     ]
    ],
@@ -4973,8 +5774,8 @@
    "intro": [
     {
      "tipo": "txt",
-     "es": "El primer miembro del compuesto es un indeclinable, el segundo un nombre. Este tipo de compuesto normalmente tiene la primera terminación neutra. Ejemplos, *upa-nagaraṃ*, cerca de la ciudad; *niddarathaṃ*, sin aflicción.",
-     "en": "The first member of the compound is an indeclinable, the second a noun. This type of compound normally takes the first neuter ending. Examples, *upa-nagaraṃ*, near the city; *niddarathaṃ*, without affliction."
+     "es": "El primer miembro del compuesto es un prefijo (*upasagga*) o una partícula (*nipāta*); el segundo, un nombre. El compuesto es de género neutro: si termina en ‘a’, las inflexiones devienen por lo general (*kvaci*) ‘aṃ’ (*upanagaraṃ*); si no termina en ‘a’, la vocal final se abrevia y la inflexión se elide (*adhikumāri*, *upavadhu*). Ejemplos, *upa-nagaraṃ*, cerca de la ciudad; *niddarathaṃ*, ausencia de aflicción; *yathāvuḍḍhaṃ*, según la antigüedad; *yāvajīvaṃ*, mientras dure la vida; *adhicittaṃ*, (con referencia a la) mente superior; *tiropabbataṃ*, a través de la montaña; *antopāsādaṃ*, dentro de la mansión; *upagaṅgaṃ*, cerca del Ganges; *adhikumāri*, (charla) acerca de las doncellas; *upavadhu*, cerca de la nuera.",
+     "en": "The first member of the compound is a prefix (*upasagga*) or a particle (*nipāta*); the second, a noun. The compound is of neuter gender: if it ends in ‘a’, the inflections generally (*kvaci*) become ‘aṃ’ (*upanagaraṃ*); if it does not end in ‘a’, the final vowel is shortened and the inflection is elided (*adhikumāri*, *upavadhu*). Examples, *upa-nagaraṃ*, near the city; *niddarathaṃ*, absence of affliction; *yathāvuḍḍhaṃ*, according to seniority; *yāvajīvaṃ*, as long as life lasts; *adhicittaṃ*, (concerning) the higher mind; *tiropabbataṃ*, across the mountain; *antopāsādaṃ*, inside the mansion; *upagaṅgaṃ*, near the Ganges; *adhikumāri*, (talk) about the maidens; *upavadhu*, near the daughter-in-law."
     }
    ]
   },
@@ -4992,10 +5793,9 @@
      "en": "The following secondary suffixes are indeclinable:"
     },
     {
-     "tipo": "ej",
-     "es": "usado para dividir números e indicar veces.",
-     "en": "used to divide numbers and indicate times.",
-     "pali": "kkhattuṃ"
+     "tipo": "txt",
+     "es": "1)  *kkhattuṃ*, tras numerales, en lugar de *sakiṃ*, en el sentido de ‘vez’ (*vāra*) (Kacc. §646 / Rū. §419); Rū. lo cuenta entre las voces de distribución numérica (*saṅkhyāvibhāga*).",
+     "en": "1)  *kkhattuṃ*, after numerals, in place of *sakiṃ*, in the sense of ‘time’ (*vāra*) (Kacc. §646 / Rū. §419); Rū. counts it among the words of numerical distribution (*saṅkhyāvibhāga*)."
     },
     {
      "tipo": "ej",
@@ -5016,10 +5816,9 @@
      "pali": "katikkhattuṃ"
     },
     {
-     "tipo": "ej",
-     "es": "usado para dividir.",
-     "en": "used to divide.",
-     "pali": "dhā"
+     "tipo": "txt",
+     "es": "2)  *dhā*, en el sentido de división (*vibhāga*): ‘en tantas partes, de tantos modos’.",
+     "en": "2)  *dhā*, in the sense of division (*vibhāga*): ‘in so many parts, in so many ways’."
     },
     {
      "tipo": "ej",
@@ -5035,8 +5834,8 @@
     },
     {
      "tipo": "txt",
-     "es": "1)  *jjhaṃ*",
-     "en": "1)  *jjhaṃ*"
+     "es": "3)  *jjha* (formas: *ekajjhaṃ*, *dvejjhaṃ*)[^29]",
+     "en": "3)  *jjha* (forms: *ekajjhaṃ*, *dvejjhaṃ*)[^29]"
     },
     {
      "tipo": "ej",
@@ -5046,19 +5845,19 @@
     },
     {
      "tipo": "txt",
-     "es": "2)  *so*",
-     "en": "2)  *so*"
+     "es": "4)  *so*",
+     "en": "4)  *so*"
     },
     {
      "tipo": "ej",
-     "es": "de acuerdo con los discursos.",
-     "en": "according to the discourses.",
+     "es": "por suttas, sutta por sutta.",
+     "en": "by suttas, sutta by sutta.",
      "pali": "suttaso"
     },
     {
      "tipo": "txt",
-     "es": "3)  *thā*",
-     "en": "3)  *thā*"
+     "es": "5)  *thā*",
+     "en": "5)  *thā*"
     },
     {
      "tipo": "ej",
@@ -5068,8 +5867,8 @@
     },
     {
      "tipo": "txt",
-     "es": "4)  *thattā*",
-     "en": "4)  *thattā*"
+     "es": "6)  *thattā*[^30]",
+     "en": "6)  *thattā*[^30]"
     },
     {
      "tipo": "ej",
@@ -5079,8 +5878,8 @@
     },
     {
      "tipo": "txt",
-     "es": "5)  *thaṃ*",
-     "en": "5)  *thaṃ*"
+     "es": "7)  *thaṃ*[^31]",
+     "en": "7)  *thaṃ*[^31]"
     },
     {
      "tipo": "ej",
@@ -5106,8 +5905,8 @@
    "intro": [
     {
      "tipo": "txt",
-     "es": "Son indeclinables las voces terminadas en los siguientes sufijos primarios:",
-     "en": "Words ending in the following primary suffixes are indeclinable:"
+     "es": "Son indeclinables las voces terminadas en los siguientes sufijos primarios:[^33]",
+     "en": "Words ending in the following primary suffixes are indeclinable:[^33]"
     },
     {
      "tipo": "ej",
@@ -5141,9 +5940,15 @@
     },
     {
      "tipo": "ej",
-     "es": "habiendo visto/después de haber visto",
-     "en": "having seen/after having seen",
+     "es": "habiendo visto/después de haber visto (forma de gramáticos, Rū.)",
+     "en": "having seen/after having seen (a grammarians’ form, Rū.)",
      "pali": "passituna"
+    },
+    {
+     "tipo": "ej",
+     "es": "habiendo hecho/después de haber hecho (Kacc. §564 / Rū. §640)",
+     "en": "having done/after having done (Kacc. §564 / Rū. §640)",
+     "pali": "kātuna"
     },
     {
      "tipo": "ej",
@@ -5153,8 +5958,8 @@
     },
     {
      "tipo": "ej",
-     "es": "hacer",
-     "en": "to do",
+     "es": "(para) hacer",
+     "en": "(in order) to do",
      "pali": "kātuṃ"
     },
     {
@@ -5165,8 +5970,8 @@
     },
     {
      "tipo": "ej",
-     "es": "hacer",
-     "en": "to do",
+     "es": "(para) hacer",
+     "en": "(in order) to do",
      "pali": "kātave"
     },
     {
@@ -5183,20 +5988,20 @@
     },
     {
      "tipo": "ej",
-     "es": "habiendo considerado/después de haber considerado",
-     "en": "having considered/after having considered",
+     "es": "habiendo examinado/después de haber examinado",
+     "en": "having examined/after having examined",
      "pali": "viceyya"
     },
     {
      "tipo": "ej",
      "es": "",
      "en": "",
-     "pali": "tya"
+     "pali": "racca[^32]"
     },
     {
      "tipo": "ej",
-     "es": "habiéndose acercado, después de haberse acercado.",
-     "en": "having approached, after having approached.",
+     "es": "habiéndose acercado/después de haberse acercado",
+     "en": "having approached/after having approached",
      "pali": "upecca"
     }
    ]

@@ -150,12 +150,12 @@ es:{title:'Indeclinables',estado:M.estado.es,sb_open:'Desplegar',sb_close:'Plega
   tabs:{upasagga:['Prefijos','upasagga'],nipata:['Partículas','nipāta'],vibhatti:['Sufijos de caso','vibhattipaccaya'],abyayibhava:['Compuestos','abyayībhāva'],taddhita:['Sufijos secundarios','abyayataddhita'],tvadi:['tvā, etc.','tvādipaccaya']},
   rows:(n,c)=>n+' '+({upasagga:n===1?'prefijo':'prefijos',nipata:n===1?'partícula':'partículas',vibhatti:n===1?'sufijo':'sufijos'}[c]||(n===1?'bloque':'bloques')),
   entradilla:'Los indeclinables (<i>abyaya</i>) del pāḷi en sus seis clases: prefijos, partículas, voces con sufijos de caso, compuestos <i>abyayībhāva</i>, voces con sufijos secundarios indeclinables y voces en <i>tvā</i>, etc. Con sus sentidos y ejemplos.',
-  aviso:'<b>En revisión.</b> Son los textos de 2013 de Bhikkhu Nandisena —«Indeclinables» y «Partículas»— con las erratas evidentes corregidas; la lista está al pie de la página. Las partículas con la etiqueta <b>IEBH</b> son añadidos de esta edición, con su fuente. La revisión completa, entrada por entrada contra las fuentes, está en curso.',
+  aviso:'<b>En revisión.</b> Son los textos de 2013 de Bhikkhu Nandisena —«Indeclinables» y «Partículas»—. «Indeclinables» está revisado entrada por entrada contra las fuentes; «Partículas», sólo con las erratas evidentes corregidas. Las listas de cambios están al pie de la página. Lo marcado <b>IEBH</b> es añadido de esta edición, con su fuente.',
   caso:{'1':'1.ª','1v':'Vocativo','2':'2.ª','3':'3.ª','4':'4.ª','5':'5.ª','6':'6.ª','7':'7.ª'},
   caso_tit:'En qué inflexión se usa (sentido de caso), según Rūpasiddhi y Saddanīti',
   nir_tit:c=>'Niruttidīpanī la da en el sentido de la '+c+' inflexión',
   ref_tit:'Página de la edición birmana del Sexto Concilio (Chaṭṭhasaṅgāyana)',
-  nuevo:'IEBH',nuevo_tit:'Entrada añadida por IEBH; no está en el documento de 2013',fuente:'Fuente',
+  nuevo:'IEBH',nuevo_tit:'Entrada añadida por IEBH; no está en el documento de 2013',nuevo_s_tit:'Sentido añadido por IEBH; no está en el documento de 2013',correc_i:'Correcciones revisadas en «Indeclinables» (versión 0.3)',fuente:'Fuente',
   cols:['#','sufijo','Rū. §','inflexión','ejemplos'],kacc:'Sutta de Kaccāyana correspondiente (concordancia del IEBH)',
   notas_h:'Notas',
   hero:(p,n,s)=>`<div><b>${p}</b> prefijos</div><div><b>${n}</b> partículas</div><div><b>${s}</b> sufijos de caso</div>`,
@@ -175,12 +175,12 @@ en:{title:'Indeclinables',estado:M.estado.en,sb_open:'Expand',sb_close:'Collapse
   tabs:{upasagga:['Prefixes','upasagga'],nipata:['Particles','nipāta'],vibhatti:['Case suffixes','vibhattipaccaya'],abyayibhava:['Compounds','abyayībhāva'],taddhita:['Secondary suffixes','abyayataddhita'],tvadi:['tvā, etc.','tvādipaccaya']},
   rows:(n,c)=>n+' '+({upasagga:n===1?'prefix':'prefixes',nipata:n===1?'particle':'particles',vibhatti:n===1?'suffix':'suffixes'}[c]||(n===1?'block':'blocks')),
   entradilla:'The Pāḷi indeclinables (<i>abyaya</i>) in their six classes: prefixes, particles, words with case suffixes, <i>abyayībhāva</i> compounds, words with indeclinable secondary suffixes and words in <i>tvā</i>, etc. With their senses and examples.',
-  aviso:'<b>Under review.</b> These are Bhikkhu Nandisena’s 2013 texts —«Indeclinables» and «Particles»— with the obvious errata corrected; they are listed at the foot of the page. The particles labelled <b>IEBH</b> are additions of this edition, with their source. The full revision, entry by entry against the sources, is in progress. <b>The English is a draft translation</b> of the Spanish.',
+  aviso:'<b>Under review.</b> These are Bhikkhu Nandisena’s 2013 texts —«Indeclinables» and «Particles». «Indeclinables» has been revised entry by entry against the sources; «Particles» only has the obvious errata corrected. The lists of changes are at the foot of the page. What is labelled <b>IEBH</b> is an addition of this edition, with its source. <b>The English is a draft translation</b> of the Spanish.',
   caso:{'1':'1st','1v':'Vocative','2':'2nd','3':'3rd','4':'4th','5':'5th','6':'6th','7':'7th'},
   caso_tit:'Inflection in whose sense it is used (case sense), according to Rūpasiddhi and Saddanīti',
   nir_tit:c=>'Niruttidīpanī gives it in the sense of the '+c+' inflection',
   ref_tit:'Page of the Burmese Sixth Council (Chaṭṭhasaṅgāyana) edition',
-  nuevo:'IEBH',nuevo_tit:'Entry added by IEBH; not in the 2013 document',fuente:'Source',
+  nuevo:'IEBH',nuevo_tit:'Entry added by IEBH; not in the 2013 document',nuevo_s_tit:'Sense added by IEBH; not in the 2013 document',correc_i:'Reviewed corrections in «Indeclinables» (version 0.3), in Spanish',fuente:'Source',
   cols:['#','suffix','Rū. §','inflection','examples'],kacc:'Corresponding Kaccāyana sutta (IEBH concordance)',
   notas_h:'Notes',
   hero:(p,n,s)=>`<div><b>${p}</b> prefixes</div><div><b>${n}</b> particles</div><div><b>${s}</b> case suffixes</div>`,
@@ -225,7 +225,7 @@ function bloques(bs,id){
       if(ul===null)ul=`<ul class="ejs${b.nivel===2?' n2':''}">`;
       const ref=b.ref?`<span class="rf" title="${esc(t.ref_tit)}">${esc(b.ref)}</span>`:'';
       ul+=`<li><span class="p">${md(b.pali,id)}${ref}</span><span class="t">${md(b[L]||b.es,id)}</span></li>`;
-    }else{cerrar();h+=`<p class="bl${b.nivel===2?' n2':''}">${md(b[L]||b.es,id)}</p>`}
+    }else{cerrar();h+=`<p class="bl${b.nivel===2?' n2':''}">${md(b[L]||b.es,id)}${b.nuevo?` <span class="chip nuevo" title="${esc(t.nuevo_s_tit)}">${t.nuevo}</span>`:''}</p>`}
   });
   cerrar();return h;
 }
@@ -333,7 +333,8 @@ function textos(){
   const tabla=l=>'<table class="erratas"><tbody>'+l.map(r=>`<tr><td>${esc(r.id)}</td><td><del>${md(r.antes.replace(/<\/?em>/g,'*').replace(/<\/?td>/g,''))}</del></td><td>${md(r.despues.replace(/<\/?em>/g,'*').replace(/<\/?td>/g,''))}</td></tr>`).join('')+'</tbody></table>';
   const EI=M.erratas_indeclinables||[];
   document.getElementById('notas-pie').innerHTML=t.notas(M.erratas.length,EI.length)+
-    `<p class="erratas-h">${t.erratas_p}</p>`+tabla(M.erratas)+`<p class="erratas-h">${t.erratas_i}</p>`+tabla(EI);
+    `<p class="erratas-h">${t.erratas_p}</p>`+tabla(M.erratas)+`<p class="erratas-h">${t.erratas_i}</p>`+tabla(EI)+
+    ((M.correcciones_indeclinables||[]).length?`<p class="erratas-h">${t.correc_i}</p>`+tabla(M.correcciones_indeclinables):'');
   document.getElementById('f-caso').innerHTML=`<button data-v="all" aria-pressed="${caso==='all'}">${t.todas}</button>`+
     CASOS.map(c=>`<button data-v="${c}" aria-pressed="${caso===c}">${esc(t.caso[c])}</button>`).join('');
   document.getElementById('f-caso').setAttribute('aria-label',t.caso_tit);

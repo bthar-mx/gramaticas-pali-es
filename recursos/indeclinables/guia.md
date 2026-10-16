@@ -4,7 +4,7 @@
 
 La página [Indeclinables (abyaya)](https://gramaticas.buddha-dhamma.net/recursos/indeclinables/) reúne en seis pestañas las seis clases de palabras indeclinables del pāḷi: los prefijos, las partículas, las voces con sufijos de caso, los compuestos *abyayībhāva*, las voces con sufijos secundarios indeclinables y las voces en *tvā*, etc. Para cada prefijo y cada partícula da sus sentidos —con el término técnico pāḷi de cada uno— y ejemplos, con su traducción; las partículas, además, su equivalente sánscrito cuando lo hay y ejemplos del Canon y de los comentarios.
 
-El texto son dos documentos de Bhikkhu Nandisena (2013), *Indeclinables (Avyaya)* y *Partículas (Nipāta)*, en edición revisada por IEBH: el primero da las seis clases, y el segundo desarrolla la segunda, las partículas. Esta versión publica los textos de 2013 con las erratas evidentes corregidas (la lista está al pie de la página) y añade, con la etiqueta **IEBH** y su fuente, las partículas que el documento de 2013 no trae. La revisión completa, entrada por entrada contra las fuentes, está en curso: por eso la página lleva la etiqueta **En revisión**. La versión inglesa es una traducción provisional del español.
+El texto son dos documentos de Bhikkhu Nandisena (2013), *Indeclinables (Avyaya)* y *Partículas (Nipāta)*, en edición revisada por IEBH: el primero da las seis clases, y el segundo desarrolla la segunda, las partículas. «Indeclinables» está revisado entrada por entrada contra las fuentes: traducciones, sentidos, ejemplos y referencias corregidos, y los sentidos que faltaban añadidos con la etiqueta **IEBH**. «Partículas» lleva sólo las erratas evidentes corregidas, y se le añaden, con la etiqueta **IEBH** y su fuente, las partículas que el documento de 2013 no trae. Todas las listas de cambios están al pie de la página. La revisión de «Partículas» sigue en curso: por eso la página lleva la etiqueta **En revisión**. La versión inglesa es una traducción provisional del español.
 
 La dirección antigua de las partículas, …/recursos/particulas/, lleva ahora a la pestaña de las partículas de esta página.
 
@@ -242,7 +242,7 @@ Las referencias de los ejemplos remiten a la **edición birmana del Sexto Concil
 ## 6. Lo que esta versión no tiene todavía
 
 - **La revisión completa.** Las correcciones de fondo —sentidos, traducciones, referencias dudosas, añadidos de Rūpasiddhi-ṭīkā y de Saddanīti— están preparadas y pendientes de aprobación. Entrarán en una próxima versión.
-- **Partículas añadidas.** Las 72 partículas con la etiqueta **IEBH** no están en el documento de 2013: las recogen las gramáticas, Abhidhānappadīpikā o los propios comentarios. Cada una dice su fuente; cuando el Canon y los comentarios no dan un ejemplo, la entrada lo dice.
+- **Partículas añadidas.** Las 71 partículas con la etiqueta **IEBH** no están en el documento de 2013: las recogen las gramáticas, Abhidhānappadīpikā o los propios comentarios. Cada una dice su fuente; cuando el Canon y los comentarios no dan un ejemplo, la entrada lo dice.
 - **El inglés** es provisional.
 
 ## 7. Fuentes y cómo citar
@@ -261,7 +261,7 @@ Las referencias de los ejemplos remiten a la **edición birmana del Sexto Concil
 
 The page [Indeclinables (abyaya)](https://gramaticas.buddha-dhamma.net/recursos/indeclinables/?lang=en) gathers in six tabs the six classes of Pāḷi indeclinable words: the prefixes, the particles, the words with case suffixes, the *abyayībhāva* compounds, the words with indeclinable secondary suffixes and the words in *tvā*, etc. For each prefix and each particle it gives its senses —each with its Pāḷi technical term— and examples, with their translation; for the particles, also the Sanskrit equivalent where there is one and examples from the Canon and the commentaries.
 
-The text is two documents by Bhikkhu Nandisena (2013), *Indeclinables (Avyaya)* and *Partículas (Nipāta)*, edited by IEBH: the first gives the six classes, and the second develops the second class, the particles. This version publishes the 2013 texts with the obvious errata corrected (the list is at the foot of the page) and adds, with the label **IEBH** and their source, the particles that the 2013 document does not have. The full revision, entry by entry against the sources, is in progress, which is why the page is labelled **Under review**. The English is a provisional translation of the Spanish.
+The text is two documents by Bhikkhu Nandisena (2013), *Indeclinables (Avyaya)* and *Partículas (Nipāta)*, edited by IEBH: the first gives the six classes, and the second develops the second class, the particles. «Indeclinables» has been revised entry by entry against the sources: translations, senses, examples and references corrected, and the missing senses added with the label **IEBH**. «Partículas» only has the obvious errata corrected, and the particles that the 2013 document does not have are added, with the label **IEBH** and their source. All the lists of changes are at the foot of the page. The revision of «Partículas» is still in progress, which is why the page is labelled **Under review**. The English is a provisional translation of the Spanish.
 
 The former address of the particles, …/recursos/particulas/, now leads to the particles tab of this page.
 
@@ -499,7 +499,7 @@ The references of the examples point to the **Burmese Sixth Council edition** (C
 ## 6. What this version does not have yet
 
 - **The full revision.** The substantive corrections —senses, translations, doubtful references, additions from Rūpasiddhi-ṭīkā and Saddanīti— are prepared and awaiting approval. They will come in a later version.
-- **Added particles.** The 72 particles labelled **IEBH** are not in the 2013 document: they are recorded by the grammars, Abhidhānappadīpikā or the commentaries themselves. Each gives its source; where the Canon and the commentaries offer no example, the entry says so.
+- **Added particles.** The 71 particles labelled **IEBH** are not in the 2013 document: they are recorded by the grammars, Abhidhānappadīpikā or the commentaries themselves. Each gives its source; where the Canon and the commentaries offer no example, the entry says so.
 - **The English** is provisional.
 
 ## 7. Sources and how to cite
