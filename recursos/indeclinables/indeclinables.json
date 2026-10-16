@@ -1,14 +1,14 @@
 {
  "meta": {
-  "version": "0.3",
+  "version": "0.4",
   "fecha": "2026-10-15",
   "estado": {
-   "es": "En revisión",
-   "en": "Under review"
+   "es": "Revisado",
+   "en": "Revised"
   },
   "nota_version": {
-   "es": "«Indeclinables» revisado entrada por entrada contra las fuentes (Rūpasiddhi, Niruttidīpanī, Payogasiddhi, Saddanīti, Abhidhānappadīpikā y el Canon): traducciones, sentidos, ejemplos y referencias corregidos, y sentidos añadidos con la etiqueta IEBH; la lista está al pie. Partículas añadidas: 71 (se retira byattaṃ; hevaṃ remite a ha). Antes, en la versión 0.2 (15 de octubre de 2026), una sola página para las seis clases, con 72 partículas añadidas.",
-   "en": "«Indeclinables» revised entry by entry against the sources (Rūpasiddhi, Niruttidīpanī, Payogasiddhi, Saddanīti, Abhidhānappadīpikā and the Canon): translations, senses, examples and references corrected, and senses added with the IEBH label; the list is at the foot. Added particles: 71 (byattaṃ withdrawn; hevaṃ refers to ha). Earlier, in version 0.2 (15 October 2026), a single page for the six classes, with 72 added particles."
+   "es": "«Partículas» revisado entrada por entrada contra las gramáticas y el Canon, como «Indeclinables» en la 0.3: traducciones, sentidos, ejemplos y referencias corregidos, sentidos añadidos con la etiqueta IEBH, la página PTS junto a la del Sexto Concilio y dos erratas de la 0.1 revertidas (C-119, C-151); la lista está al pie. Sin la etiqueta «En revisión». Antes, en la versión 0.3 (15 de octubre de 2026), la revisión de «Indeclinables».",
+   "en": "«Particles» revised entry by entry against the grammars and the Canon, as «Indeclinables» was in 0.3: translations, senses, examples and references corrected, senses added with the IEBH label, the PTS page beside the Sixth Council page, and two errata from 0.1 reverted (C-119, C-151); the list is at the foot. No longer labelled «Under review». Earlier, in version 0.3 (15 October 2026), the revision of «Indeclinables»."
   },
   "atribucion": {
    "es": "Bhikkhu Nandisena, edición revisada por IEBH",
@@ -110,6 +110,1668 @@
     "id": "C-433",
     "antes": "La partículas se dividen",
     "despues": "Las partículas se dividen"
+   }
+  ],
+  "correcciones_particulas": [
+   {
+    "id": "G-C002",
+    "antes": "Referencias sólo con la página CST, p. ej. «D. ii 95».",
+    "despues": "305 referencias de ejemplos con la página PTS de la tabla, en la forma «D. ii 95 (PTS ii 113)»; «(PTS Vin iii 18)» cuando el libro PTS es otro (Vinaya; Thī en *atha*); «(PTS p. N)» para obras de un solo tomo."
+   },
+   {
+    "id": "G-C005",
+    "antes": "en conformidad con la Palabra del Conquistador (= el Buddha)",
+    "despues": "conforme a la palabra del Victorioso (Buddha)"
+   },
+   {
+    "id": "G-P2",
+    "antes": "20 referencias ±1",
+    "despues": "Corregidas a la página CST por los ítems de los lotes; además *jitamha vata bho ambakāya*: D. ii 82 → D. ii 83 (PTS ii 97), el único ±1 de la tabla que ningún ítem cubría."
+   },
+   {
+    "id": "P-101",
+    "antes": "estados de no aprendices.",
+    "despues": "estados del que ya no está en entrenamiento (del *arahant*). Ref. (Dhs. 2) añadida según la nota del editor."
+   },
+   {
+    "id": "P-102",
+    "antes": "*amanusso* (D. ii 196)",
+    "despues": "*amanusso* (D. ii 195)"
+   },
+   {
+    "id": "P-103",
+    "antes": "*abhāvo* (Vis. i 330)",
+    "despues": "*abhāvo* (Vis. i 327)"
+   },
+   {
+    "id": "P-104",
+    "antes": "—",
+    "despues": "Nuevo sentido «Mera partícula (*nipātamatta*)» con *khipiṃ anantakaṃ* y *na cāpi apunappunaṃ* (J. i 34) y la nota sobre *a-*/*mā* (texto enmendado)."
+   },
+   {
+    "id": "P-105",
+    "antes": "*Tayājja guttā viharemu divasaṃ* (J. i 38), por usted hoy día protegidos, viviremos durante el día.",
+    "despues": "*tayājja guttā viharemu divasaṃ* (J. i 38), protegidos hoy por ti, pasemos el día."
+   },
+   {
+    "id": "P-106",
+    "antes": "[^1]: Sad. 381.",
+    "despues": "[^1]: Sad. iii 381."
+   },
+   {
+    "id": "P-107",
+    "antes": "—",
+    "despues": "Añadido el párrafo de Sad. sobre los cuatro sentidos de *ajjhatta*."
+   },
+   {
+    "id": "P-108",
+    "antes": "*aññatra buddhuppādā abhisamayo natthi*, cuando no hay surgimiento de Buddha…",
+    "despues": "Exclusión (*parivajjana*): *aññatra buddhuppādā abhisamayo natthi* (Sad.), fuera del surgimiento de un Buddha no hay penetración (de las verdades)."
+   },
+   {
+    "id": "P-109",
+    "antes": "ciertamente, se convirtieron en discípulos del asceta Gotama.",
+    "despues": "ciertamente, se hacen discípulos del propio asceta Gotama."
+   },
+   {
+    "id": "P-110",
+    "antes": "En otro momento; en otro día; antes",
+    "despues": "En otro momento; en otro día; antes."
+   },
+   {
+    "id": "P-111",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*): *atha puriso āgaccheyya* (M. i 106), [y] llegara un hombre."
+   },
+   {
+    "id": "P-112",
+    "antes": "*atha naṃ āha* (Khu ii 426)",
+    "despues": "*atha naṃ āha* (Sad.), luego le dijo. Cf. Thī, Khu ii 426 (PTS Thī 165): *atha naṃ bhaṇati*."
+   },
+   {
+    "id": "P-113",
+    "antes": "—",
+    "despues": "Después de eso (*tato paraṃ*): *atha dakkhasi bhaddante nigrodhaṃ madhurapphalaṃ* (Sad.; cf. J. ii 332), luego verás, señor, un baniano de frutos dulces."
+   },
+   {
+    "id": "P-114",
+    "antes": "*Pakkhantaropadassanatthe nipāto* (Mogp. 181).",
+    "despues": "*athavā ti pakkhantaropadassanatthe nipāto* (Moggallānapañcikāṭīkā, CST p. 181): partícula en el sentido de presentar otra alternativa."
+   },
+   {
+    "id": "P-115",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*): *atho maṃ anukampasi* (J. i 152), y te compadeces de mí."
+   },
+   {
+    "id": "P-116",
+    "antes": "bienvenido a ti, gran rey, entonces, tú no eres mal venido.",
+    "despues": "bienvenido seas, gran rey, y tu llegada no es inoportuna."
+   },
+   {
+    "id": "P-117",
+    "antes": "(sc. as)",
+    "despues": "(sc. *asti*)"
+   },
+   {
+    "id": "P-118",
+    "antes": "—",
+    "despues": "*atthi* es a la vez verbo y partícula (*ākhyātanipātavasena bhijjati*; Sad. Pad., CST p. 396)… *natthi*, en cambio, es sólo partícula."
+   },
+   {
+    "id": "P-119",
+    "antes": "—",
+    "despues": "Con sujeto plural: *puttā m’ atthi dhanam m’ atthi* (Dh. 22; Sad.), tengo hijos, tengo riqueza."
+   },
+   {
+    "id": "P-120",
+    "antes": "vive viendo y conociendo este dhamma.",
+    "despues": "vive conociendo y viendo este Dhamma."
+   },
+   {
+    "id": "P-121",
+    "antes": "definitivamente tú serás el Buddha.",
+    "despues": "ciertamente tú serás un Buddha."
+   },
+   {
+    "id": "P-122",
+    "antes": "Ajita, el general de los Licchavis ha muerto ahora y reconectado en Tāvatiṃsa.",
+    "despues": "Ajita, el general de los Licchavis, que acaba de morir, ha renacido en la compañía de los Tāvatiṃsa."
+   },
+   {
+    "id": "P-123",
+    "antes": "(adv.,7ª inflexión)",
+    "despues": "(adv., 7ª inflexión)"
+   },
+   {
+    "id": "P-124",
+    "antes": "[^5]: Sad. 380.",
+    "despues": "[^5]: Sad. iii 380."
+   },
+   {
+    "id": "P-125",
+    "antes": "por el camino entre Nāḷanda y Rājagaha.",
+    "despues": "por el camino entre Rājagaha y Nāḷandā."
+   },
+   {
+    "id": "P-126",
+    "antes": "—",
+    "despues": "Sad. da cinco sentidos de *antarā*: causa…, momento…, mente…, en medio… y hueco o intervalo…"
+   },
+   {
+    "id": "P-127",
+    "antes": "*… paribhuñjā* (M. ii 242)",
+    "despues": "*… paribhuñja* (M. ii 243)"
+   },
+   {
+    "id": "P-128",
+    "antes": "después de tomar arroz de dentro de la olla y salsa de la cacerola, coma.",
+    "despues": "toma las gachas (*kummāsa*) de dentro del cesto y la salsa de la cazuela, y come."
+   },
+   {
+    "id": "P-129",
+    "antes": "(S. i 187)",
+    "despues": "(S. i 188)"
+   },
+   {
+    "id": "P-130",
+    "antes": "sale en la tarde o en el día siguiente.",
+    "despues": "sale al atardecer, o al día siguiente a la hora [de la ronda de limosna]."
+   },
+   {
+    "id": "P-131",
+    "antes": "En el oeste.",
+    "despues": "Abajo, hacia abajo (*adho*, *heṭṭhā*)."
+   },
+   {
+    "id": "P-132",
+    "antes": "(ejemplo sin traducción)",
+    "despues": "*uddhaṃ tiriyaṃ apācīnaṃ, nandī tesaṃ na vijjati* (S. ii 69), arriba, alrededor y abajo, no se halla en ellos deleite."
+   },
+   {
+    "id": "P-133",
+    "antes": "—",
+    "despues": "Como partícula, *api* se usa en estos sentidos: *sambhāvanā* (Dh. 41), *apekkhā* (V. i 290), *samuccaya*, *garahā*, *pañha*, cada uno con su ejemplo."
+   },
+   {
+    "id": "P-134",
+    "antes": "(adv.). Pero; además.",
+    "despues": "(adv.) Pero; además."
+   },
+   {
+    "id": "P-135",
+    "antes": "(adv.). Tal vez.",
+    "despues": "(adv.) Tal vez."
+   },
+   {
+    "id": "P-136",
+    "antes": "tal vez después (yo) iría.",
+    "despues": "tal vez entonces (yo) iría."
+   },
+   {
+    "id": "P-137",
+    "antes": "quizá yo pueda traer al asceta Pāthikaputta a esta congregación.",
+    "despues": "quizá yo también pueda traer a esta asamblea al asceta desnudo Pāthikaputta."
+   },
+   {
+    "id": "P-138",
+    "antes": "por lo tanto bhikkhus, debéis tener…",
+    "despues": "por lo tanto, bhikkhus, debéis tener…"
+   },
+   {
+    "id": "P-139",
+    "antes": "(adv.,7ª inflexión)",
+    "despues": "(adv., 7ª inflexión)"
+   },
+   {
+    "id": "P-140",
+    "antes": "éste es mi esposo, soy feliz cerca de él.",
+    "despues": "éste es mi señor; me deleito a su lado."
+   },
+   {
+    "id": "P-141",
+    "antes": "—",
+    "despues": "Rige 2.ª: *abhito gāmaṃ*, frente a la aldea (= *gāmassa abhimukhe*)."
+   },
+   {
+    "id": "P-142",
+    "antes": "*sabbakiccesu amā vattatī ti amacco* (DAA i 325), un ministro es aquel que existe con todas las funciones.",
+    "despues": "*amā saha bhavanti kiccesū ti amaccā* (DAṬ. i 325), los ministros (*amacca*) son los que están junto [al rey] (*amā* = *saha*) en los asuntos."
+   },
+   {
+    "id": "P-143",
+    "antes": "—",
+    "despues": "*amāvāsī divaso*, el día de luna nueva; *amāvāsikā ratti*, la noche de luna nueva (Sad.)."
+   },
+   {
+    "id": "P-144",
+    "antes": "De acuerdo al Rū-ṭī. se usa para dirigirse…",
+    "despues": "De acuerdo con Rū-ṭī, se usa para dirigirse…"
+   },
+   {
+    "id": "P-145",
+    "antes": "(M. ii 326)",
+    "despues": "(M. ii 327)"
+   },
+   {
+    "id": "P-146",
+    "antes": "Partícula vocativa usada en lenguaje abusivo (*hiṃsālapana*).",
+    "despues": "Partícula vocativa para dirigirse a un inferior (*hīnassa ālapana*) o con desprecio."
+   },
+   {
+    "id": "P-147",
+    "antes": "(DhA. I 134)",
+    "despues": "(DhA. i 134)"
+   },
+   {
+    "id": "P-148",
+    "antes": "*alaṃ mallo mallassa*, el luchador puede…",
+    "despues": "*alaṃ mallo mallassa* (Kacc. §277), el luchador puede…"
+   },
+   {
+    "id": "P-149",
+    "antes": "(= es un digno rival.)",
+    "despues": "(= es un digno rival)."
+   },
+   {
+    "id": "P-150",
+    "antes": "—",
+    "despues": "*alaṃ* y *halaṃ* van al principio o al final, nunca en medio: … (Sad.)."
+   },
+   {
+    "id": "P-151",
+    "antes": "—",
+    "despues": "*nāssu ’dha koci bhagavantaṃ upasaṅkamati* (S. iii 278); *tay’ assu dhammā jahitā bhavanti* (Khp. 6); *assu* es también «lágrima» y forma verbal de plural (Sad.)."
+   },
+   {
+    "id": "P-152",
+    "antes": "—",
+    "despues": "*tyāssudaṃ bhagavā atirocati* (S. i 196), y entre ellos el Sublime resplandece. Comentario: … (SA. i 260)."
+   },
+   {
+    "id": "P-153",
+    "antes": "—",
+    "despues": "Kacc. la incluye entre las partículas (§221 y §284, vutti), y DA la explica en este mismo ejemplo: *ahe ti āmantanaṃ* (DA. ii 296)."
+   },
+   {
+    "id": "P-154",
+    "antes": "¡oh buena mujer, yo te deseo a ti!",
+    "despues": "a ti, oh buena mujer, te elegiría [como don]."
+   },
+   {
+    "id": "P-155",
+    "antes": "**ahe**, part. vocativa usada para dirigirse a iguales (muy rara).",
+    "despues": "**ahe**, partícula vocativa (*āmantana*; DA. ii 296)."
+   },
+   {
+    "id": "P-156",
+    "antes": "*aho vata re amhākaṃ paṇḍitaka*[^6] (D. i 100)",
+    "despues": "*aho vata re amhākaṃ paṇḍitaka* (D. i 100), ¡oh nuestro pedante![^6]"
+   },
+   {
+    "id": "P-157",
+    "antes": "*aho buddho, aho dhammo, aho saṃgho* … ¡Oh Sangha!",
+    "despues": "*aho buddho, aho dhammo, aho saṅgho* … ¡Oh Saṅgha!"
+   },
+   {
+    "id": "P-158",
+    "antes": "Aspiración, deseo (*patthanā*):",
+    "despues": "Aspiración, deseo (*patthana*):"
+   },
+   {
+    "id": "P-159",
+    "antes": "Sorpresa:",
+    "despues": "Sorpresa (*vimhaya*):"
+   },
+   {
+    "id": "P-160",
+    "antes": "El comentario (D.A. i 247)",
+    "despues": "El comentario (DA. i 247)"
+   },
+   {
+    "id": "P-162",
+    "antes": "(JA. vi 264)",
+    "despues": "(J. ii 206; JA. vi 264)"
+   },
+   {
+    "id": "P-163",
+    "antes": "después de consentir, el loro Mādhara dijo “sí”.",
+    "despues": "habiendo asentido con un «sí», el sabio loro Mādhara…"
+   },
+   {
+    "id": "P-164",
+    "antes": "Sīha, reconexión en el futuro, nueva existencia, ha sido extinguida por el Tathāgata.",
+    "despues": "Sīha, el Tathāgata ha abandonado el yacer futuro en un vientre y la producción de una nueva existencia."
+   },
+   {
+    "id": "P-165",
+    "antes": "—",
+    "despues": "Rige 5.ª …, y también 2.ª y 3.ª: … (Kacc. §275)."
+   },
+   {
+    "id": "P-166",
+    "antes": "(Dh. 49)",
+    "despues": "*ārā so āsavakkhayā* (Dh. 50)"
+   },
+   {
+    "id": "P-167",
+    "antes": "(part..usada en 7ª inflexión)",
+    "despues": "(part. usada en la 7ª inflexión)"
+   },
+   {
+    "id": "P-168",
+    "antes": "(D. ii 67)",
+    "despues": "(D. ii 68)"
+   },
+   {
+    "id": "P-169",
+    "antes": "ve amigo Ānanda a Kusināra.",
+    "despues": "ve, amigo Ānanda, a Kusinārā."
+   },
+   {
+    "id": "P-170",
+    "antes": "de prisa",
+    "despues": "deprisa"
+   },
+   {
+    "id": "P-171",
+    "antes": "(*codana*).¡Vamos!",
+    "despues": "(*codana*). ¡Vamos!"
+   },
+   {
+    "id": "P-172",
+    "antes": "ve Ānanda y trae agua para beber.",
+    "despues": "vamos, Ānanda, tráeme agua para beber."
+   },
+   {
+    "id": "P-174",
+    "antes": "Sir Monier Monier Williams",
+    "despues": "Sir Monier Monier-Williams"
+   },
+   {
+    "id": "P-175",
+    "antes": "realmente, Cunda, como se dijo antes, aquí el maestro es censurado.",
+    "despues": "así, Cunda, en ese caso también el maestro es censurable."
+   },
+   {
+    "id": "P-176",
+    "antes": "Causa (hetu).",
+    "despues": "Causa (*hetu*)."
+   },
+   {
+    "id": "P-177",
+    "antes": "(sentido «causa» sin ejemplo)",
+    "despues": "*ruppatī ti kho, bhikkhave, tasmā rūpan ti vuccati* (S. ii 71), «se deteriora», bhikkhus: por eso se llama materia (ejemplo de *hetu* en Vis-ṭ i 3)."
+   },
+   {
+    "id": "P-178",
+    "antes": "—",
+    "despues": "Abh. añade los sentidos de modo (*pakāra*), «etcétera» (*ādi*), énfasis (*avadhāraṇa*), cambio del sentido de la palabra … (*padatthavipallāsa*), y conclusión (*samāpana*)."
+   },
+   {
+    "id": "P-179",
+    "antes": "—",
+    "despues": "*sīle patiṭṭhāya naro sapañño … iti h’ idaṃ vuttaṃ* (Vis. i 1), así precisamente se ha dicho esto."
+   },
+   {
+    "id": "P-180",
+    "antes": "aquí viviremos durante la estación de lluvias.",
+    "despues": "aquí pasaré la estación de lluvias."
+   },
+   {
+    "id": "P-181",
+    "antes": "*ekam eko ’va maccānaṃ, go vajjho viya nīyati* (Sn. 371), …",
+    "despues": "Se retira ese ejemplo; para la forma abreviada: *tūlaṃ bhaṭṭhaṃ va māluto* (Sad. (Smith p. 897); PTS S i 127), como el viento [se lleva] un copo de algodón caído."
+   },
+   {
+    "id": "P-202",
+    "antes": "—",
+    "despues": "Alternativa (*vikappa*): (etiqueta añadida antes de los ejemplos)"
+   },
+   {
+    "id": "P-203",
+    "antes": "—",
+    "despues": "Alternativa (*vikappa*). Se usa en interrogaciones: (etiqueta añadida antes de los ejemplos)"
+   },
+   {
+    "id": "P-204",
+    "antes": "parado en el firmamento encima del joven Ambaṭṭha",
+    "despues": "de pie en el aire, encima del joven brahmán Ambaṭṭha"
+   },
+   {
+    "id": "P-205",
+    "antes": "Venerable Señor, no continúe el discurso religioso más lejos",
+    "despues": "Venerable Señor, no prolongue más la enseñanza del Dhamma"
+   },
+   {
+    "id": "P-206",
+    "antes": "—",
+    "despues": "Nota de caso: Nir. lo clasifica entre los *abyayataddhita*, con elisión de la 3.ª; Rū. y Sad. lo ponen en 7.ª."
+   },
+   {
+    "id": "P-207",
+    "antes": "va a buscar comida en las dos ciudades",
+    "despues": "anda por limosna en las dos ciudades"
+   },
+   {
+    "id": "P-208",
+    "antes": "…el Tathāgata es respetado, venerado, estimado, reverenciado y honrado",
+    "despues": "…es el Tathāgata respetado, venerado, estimado, reverenciado ni honrado"
+   },
+   {
+    "id": "P-209",
+    "antes": "(sin ejemplo)",
+    "despues": "*yatv ādhikaraṇam enaṃ cakkhundriyaṃ asaṃvutaṃ viharantaṃ* (D. i 66 (PTS i 70); Sad.), con la advertencia de Visuddhimagga (i 21)."
+   },
+   {
+    "id": "P-210",
+    "antes": "—",
+    "despues": "Permanencia en un estado (*avaṭṭhāna*): *pubbe va me, bhikkhave, … etad ahosi* (A. i 260), …"
+   },
+   {
+    "id": "P-211",
+    "antes": "—",
+    "despues": "Nota a «énfasis y restricción»: la triple exclusión (*ayoga*, *aññayoga*, *accantayoga*) con sus tres ejemplos."
+   },
+   {
+    "id": "P-212",
+    "antes": "ahora mismo Ānanda.",
+    "despues": "ahora mismo, Ānanda."
+   },
+   {
+    "id": "P-213",
+    "antes": "*evaṃ āvuso* (M. i 333)",
+    "despues": "*evaṃ āvuso* (M. i 324 (PTS i 258))"
+   },
+   {
+    "id": "P-214",
+    "antes": "(sampahaṃsana) … (garahana)",
+    "despues": "(*sampahaṃsana*) … (*garahana*)"
+   },
+   {
+    "id": "P-215",
+    "antes": "así es sublime; así es Afortunado.",
+    "despues": "así es, Sublime; así es, Afortunado."
+   },
+   {
+    "id": "P-216",
+    "antes": "(S. i 27)",
+    "despues": "(DA. i 27; cf. S. i 162 (PTS i 160))"
+   },
+   {
+    "id": "P-217",
+    "antes": "así y asá, en esto y aquello, esta paria dice elogios de este asceta rapado.",
+    "despues": "¡Así, a la menor ocasión, esta paria habla en alabanza de ese ascetilla rapado!"
+   },
+   {
+    "id": "P-218",
+    "antes": "(M. i 322)",
+    "despues": "(M. i 323 (PTS i 256); también M. i 183 (PTS i 130))"
+   },
+   {
+    "id": "P-219",
+    "antes": "9. Énfasis (*avadhāraṇa*).",
+    "despues": "9. Énfasis (*avadhāraṇa*): *evaṃ no ettha hotī ti* (A. i 191), «así nos parece en este asunto» (respuesta de los Kālāmas)."
+   },
+   {
+    "id": "P-220",
+    "antes": "¡así es, gran rey, así es gran rey, el Dhamma, gran rey, ha sido bien expuesto por mí!",
+    "despues": "¡así es, gran rey; así es, gran rey! El Dhamma, gran rey, ha sido bien expuesto por mí."
+   },
+   {
+    "id": "P-221",
+    "antes": "así, Venerable Señor, el Sublime ha revelado el Dhamma en varias formas.",
+    "despues": "del mismo modo, Venerable Señor, el Sublime ha expuesto el Dhamma de muchas maneras."
+   },
+   {
+    "id": "P-222",
+    "antes": "(D. ii 232)",
+    "despues": "D. ii 233 (PTS ii 292)"
+   },
+   {
+    "id": "P-223",
+    "antes": "de esta forma, bhikkhus, …",
+    "despues": "también así, bhikkhus, …"
+   },
+   {
+    "id": "P-224",
+    "antes": "—",
+    "despues": "Puede ser también nombre (*nāmika*; Rū-ṭī: *imāni tīṇi nāmikāni pi honti* …)."
+   },
+   {
+    "id": "P-225",
+    "antes": "(M. ii 259)",
+    "despues": "M. ii 260 (PTS ii 72)"
+   },
+   {
+    "id": "P-226",
+    "antes": "—",
+    "despues": "Abhidhānappadīpikā le da además el sentido de expresar un deseo (*kāmappavedana*): ¿acaso…?, ojalá… — con el ejemplo de Abh-ṭ *kacci jīvati te mātā*."
+   },
+   {
+    "id": "P-227",
+    "antes": "¿cómo está usted soportando Kassapa? ¿está usted mejorando?",
+    "despues": "¿lo vas soportando, Kassapa? ¿lo vas sobrellevando?"
+   },
+   {
+    "id": "P-228",
+    "antes": "(J. ii 331)",
+    "despues": "J. ii 330"
+   },
+   {
+    "id": "P-229",
+    "antes": "—",
+    "despues": "*na mano vā sarīraṃ vā maṃ kate, sakka, …* (J. i 203), que nunca, Sakka, por mi causa sean dañados la mente o el cuerpo de nadie."
+   },
+   {
+    "id": "P-230",
+    "antes": "Partícula de interrogación.",
+    "despues": "Partícula interrogativa que pregunta por el medio o el modo (*upāyapucchana*)."
+   },
+   {
+    "id": "P-231",
+    "antes": "¿cómo cruza la correntada?",
+    "despues": "¿cómo se cruza la corriente? (y, según la nota, «¿cómo se cruza el océano?» en el ejemplo siguiente)"
+   },
+   {
+    "id": "P-232",
+    "antes": "los (seres en los) cuatro estados de sufrimiento obtienen con dificultad…",
+    "despues": "[hay] cuatro estados de perdición, y los dos destinos [humano y celestial] se obtienen con dificultad."
+   },
+   {
+    "id": "P-235",
+    "antes": "—",
+    "despues": "Sentido de lugar en 7.ª («¿dónde?») con *kahaṃ ekaputtaka, kahaṃ ekaputtaka* (DhA. i 18) y la explicación de Sad., Nir., Abh. y Rū."
+   },
+   {
+    "id": "P-237",
+    "antes": "Partícula interrogativa.¿Qué?",
+    "despues": "Partícula interrogativa. ¿Qué?"
+   },
+   {
+    "id": "P-238",
+    "antes": "Partícula interrogativa.",
+    "despues": "Partícula interrogativa; pregunta por la cosa (*vatthupucchana*)."
+   },
+   {
+    "id": "P-239",
+    "antes": "¿cómo tú entenderás esta disciplina y doctrina?",
+    "despues": "¿cómo vas a entender tú esta doctrina y disciplina?"
+   },
+   {
+    "id": "P-240",
+    "antes": "¿por qué este rey corre como un amo de casa?",
+    "despues": "¿por qué corre este rey como un cabeza de familia?"
+   },
+   {
+    "id": "P-241",
+    "antes": "Partícula interrogativa.¿Qué?",
+    "despues": "Partícula interrogativa. ¿Qué?"
+   },
+   {
+    "id": "P-242",
+    "antes": "Denota concesión (*anuggaha*) No obstante",
+    "despues": "Denota concesión (*anuggaha*). No obstante"
+   },
+   {
+    "id": "P-243",
+    "antes": "—",
+    "despues": "Rū-ṭī lo glosa *yadi nāmā ti attho* («aun si»)."
+   },
+   {
+    "id": "P-244",
+    "antes": "no obstante que ellos dirían.",
+    "despues": "aunque ellos dijeran así."
+   },
+   {
+    "id": "P-245",
+    "antes": "—",
+    "despues": "Nota tras la traducción: «Así lo explica la Aṭṭhakathā: *kiñca* es aquí nipāta de reproche y de concesión a la vez…»"
+   },
+   {
+    "id": "P-246",
+    "antes": "¿Hasta que punto?",
+    "despues": "¿Hasta qué punto?"
+   },
+   {
+    "id": "P-247",
+    "antes": "(Ud. 80)",
+    "despues": "Ud. 81 (PTS p. 4)"
+   },
+   {
+    "id": "P-248",
+    "antes": "EN: In what respect, friend, is it called ‘feeling’?",
+    "despues": "EN: Why, friend, is it called ‘feeling’?"
+   },
+   {
+    "id": "P-249",
+    "antes": "por este medio.",
+    "despues": "¿por qué medio? (*kena upāyena*)."
+   },
+   {
+    "id": "P-250",
+    "antes": "¿cómo ni los reyes ni los ladrones se robarán mi riqueza?",
+    "despues": "¿cómo [haré] para que ni los reyes ni los ladrones se lleven mi riqueza?"
+   },
+   {
+    "id": "P-251",
+    "antes": "por este medio aquellos compañeros … vendrían.",
+    "despues": "[pensando:] «¿cómo podrían venir los compañeros de vida pura, de buena conducta, que aún no han venido?»."
+   },
+   {
+    "id": "P-252",
+    "antes": "**kin tu**, pero.",
+    "despues": "**kin tu**, partícula que pregunta por una diferencia mínima (*appamattavisesapucchā*): *kin tu «vipākānī» ti nānākaraṇaṃ* (Sad.). En la prosa de las ṭīkās es además adversativa: pero, sino."
+   },
+   {
+    "id": "P-253",
+    "antes": "¿imaginas, Malvado, que el mal no madura?",
+    "despues": "¿imaginas, Malvado, que mi mal no madura?"
+   },
+   {
+    "id": "P-254",
+    "antes": "(Iti. 246)",
+    "despues": "Iti. 247 (PTS p. 77)"
+   },
+   {
+    "id": "P-255",
+    "antes": "¿puedes estar separado de él?",
+    "despues": "¿por qué vives apartado de él [aun un instante, Piṅgiya]?"
+   },
+   {
+    "id": "P-256",
+    "antes": "—",
+    "despues": "Ejemplo de *assaddheyya* (*arucisūcana*, Sad.): *khaṇavatthuparittattā … yesaṃ rūpādayo kira* (Abhidh-av. 56) …"
+   },
+   {
+    "id": "P-257",
+    "antes": "ha arribado en Sāvatthī.",
+    "despues": "ha llegado a Sāvatthī."
+   },
+   {
+    "id": "P-258",
+    "antes": "**kismiṃ viya**, [sin glosa]",
+    "despues": "**kismiṃ viya**, muestra el modo de la vergüenza (*lajjanākāranidassana*). Ejemplo: «sería como algo vergonzoso ir con las manos vacías»."
+   },
+   {
+    "id": "P-259",
+    "antes": "¿Cuanto tiempo, Uposatha,",
+    "despues": "¿Cuánto tiempo, Uposathā,"
+   },
+   {
+    "id": "P-260",
+    "antes": "Siempre; alguna vez; en cualquier tiempo.",
+    "despues": "Alguna vez; en algún momento; en cualquier tiempo."
+   },
+   {
+    "id": "P-261",
+    "antes": "**kuhiṃ** ó **kva**",
+    "despues": "**kuhiṃ** o **kva**"
+   },
+   {
+    "id": "P-262",
+    "antes": "¿Dónde, oh rey, está tu fuerza? ¿Dónde está tu carroza real?",
+    "despues": "¿Dónde, gran rey, está tu ejército? ¿Dónde está tu carro?"
+   },
+   {
+    "id": "P-263",
+    "antes": "no encontré en alguna parte alguien más querido que mí mismo.",
+    "despues": "no encontró en parte alguna nada más querido que uno mismo."
+   },
+   {
+    "id": "P-264",
+    "antes": "—",
+    "despues": "Fuera de su uso como nipāta, *khalu* es también nombre de un ave (*pakkhibheda*) …"
+   },
+   {
+    "id": "P-265",
+    "antes": "dicen que el asceta Gotama.",
+    "despues": "dicen, señores, que el asceta Gotama…"
+   },
+   {
+    "id": "P-266",
+    "antes": "un brahmán de Verañja escuchó.",
+    "despues": "el brahmán de Verañjā escuchó."
+   },
+   {
+    "id": "P-268",
+    "antes": "comida y bebida y ropa-habitación.",
+    "despues": "comida y bebida y ropa y alojamiento."
+   },
+   {
+    "id": "P-269",
+    "antes": "el asceta está parado y el brahmán está parado.",
+    "despues": "el asceta está de pie y el brahmán está de pie."
+   },
+   {
+    "id": "P-270",
+    "antes": "(Kac. §472) … solamente cuando sigue el sufijo ‘cha’",
+    "despues": "*byañjanantassa co chapaccayesu ca* (Kacc. §472) … solamente cuando sigue el sufijo ‘cha’. Así lo explica Rū-ṭī: *chapaccayevā ti attho*."
+   },
+   {
+    "id": "P-271",
+    "antes": "… (Khu i 42), pero aquel que…",
+    "despues": "(Dh. 41–42 (v. 190; PTS p. 28)) …pero aquel que [ha ido por refugio] al Buddha y al Dhamma."
+   },
+   {
+    "id": "P-272",
+    "antes": "Expletivo (padapūraṇa).",
+    "despues": "Expletivo (*padapūraṇa*)."
+   },
+   {
+    "id": "P-273",
+    "antes": "—",
+    "despues": "*kathañ carahi, samaṇa, bhuñjasī ti* (S. ii 200), ¿cómo comes, pues, asceta?"
+   },
+   {
+    "id": "P-274",
+    "antes": "(Kp. 8)",
+    "despues": "Khp. 8 (PTS p. 6)"
+   },
+   {
+    "id": "P-275",
+    "antes": "*cirassaṃ vata passāmi*, después de mucho tiempo realmente veo.",
+    "despues": "*cirassaṃ vata passāmi brāhmaṇaṃ parinibbutaṃ*, ¡después de mucho tiempo, por fin veo a un brahmán totalmente extinguido!"
+   },
+   {
+    "id": "P-301",
+    "antes": "—",
+    "despues": "Abhidhānappadīpikā da además *jātu* como sinónimo de *kadāci* … (*kadāci jātu tulyā*)."
+   },
+   {
+    "id": "P-302",
+    "antes": "**jātucche**, (sc. ) (adv.)",
+    "despues": "**jātucche**, (adv.)"
+   },
+   {
+    "id": "P-303",
+    "antes": "—",
+    "despues": "Lectura dudosa; variante *jātucca* (ed. cingalesa y PTS; CST, J. ii 171)."
+   },
+   {
+    "id": "P-304",
+    "antes": "ciertamente nunca, Migājina, yo he hecho daño a ningún familiar.",
+    "despues": "ciertamente nunca, Migājina, he despojado injustamente a pariente alguno."
+   },
+   {
+    "id": "P-305",
+    "antes": "Partícula vocativa usada para dirigirse con autoridad a una esclava o a persona inferior.",
+    "despues": "Partícula vocativa con que un señor se dirige con autoridad a una esclava (*dāsī*); en el ejemplo se usa con una cortesana."
+   },
+   {
+    "id": "P-306",
+    "antes": "(sc. tad.)",
+    "despues": "(sc. *tad*)"
+   },
+   {
+    "id": "P-307",
+    "antes": "—",
+    "despues": "*taṃ kissa hetu* (M. i 1; PTS M I 1), ¿por qué razón? Y nota: «Sad. dice que *taṃ* aparece como nipāta y también como acusativo (*upayoga*)»."
+   },
+   {
+    "id": "P-308",
+    "antes": "(sc. tad + gha)",
+    "despues": "(sc. *tad + gha*)"
+   },
+   {
+    "id": "P-309",
+    "antes": "—",
+    "despues": "*tato ca maghavā sakko atthadassī purindado* (J. ii 7), y Maghavā Sakka, que ve el bien, el destructor de ciudades…"
+   },
+   {
+    "id": "P-310",
+    "antes": "*yathā, bhante, devatānaṃ adhippāyo, tathā hoti*",
+    "despues": "*yathā, bhante, devatānaṃ adhippāyo, tathā hotu*"
+   },
+   {
+    "id": "P-311",
+    "antes": "—",
+    "despues": "Nir. (sutta 288) pone *tathā* … entre los nipātas tras los cuales se elide la desinencia de la 3ª inflexión (es decir, con sentido de 3ª)."
+   },
+   {
+    "id": "P-312",
+    "antes": "Porque, jóvenes señores, he invitado…",
+    "despues": "porque, jóvenes señores, he invitado…"
+   },
+   {
+    "id": "P-313",
+    "antes": "en ese tiempo el Bodhisatta reconectó en el vientre de la reina principal.",
+    "despues": "en ese tiempo el Bodhisatta renació en el vientre de su reina principal."
+   },
+   {
+    "id": "P-314",
+    "antes": "Junto con el sufijo tuṃ",
+    "despues": "Junto con el sufijo **tuṃ**"
+   },
+   {
+    "id": "P-315",
+    "antes": "una vez va a un lado.",
+    "despues": "a veces va de través. (EN: «sometimes he goes across»)"
+   },
+   {
+    "id": "P-316",
+    "antes": "pasa sin obstrucción a través de paredes, … como si fuera por el aire.",
+    "despues": "desapareciendo, pasa sin obstrucción a través de paredes, … como si fuera por el espacio."
+   },
+   {
+    "id": "P-317",
+    "antes": "(part..)",
+    "despues": "(part.)"
+   },
+   {
+    "id": "P-318",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*; Payogasiddhi)."
+   },
+   {
+    "id": "P-319",
+    "antes": "(sc. tūrṇam)",
+    "despues": "(sc. *tūrṇam*)"
+   },
+   {
+    "id": "P-320",
+    "antes": "(sc. tūṣṇīm) no hablar (*abhāsana*). Silencio.",
+    "despues": "(sc. *tūṣṇīm*) No hablar (*abhāsana*). Silencio."
+   },
+   {
+    "id": "P-321",
+    "antes": "el rey de Māgadha Ajātasattu",
+    "despues": "el rey de Magadha, Ajātasattu,"
+   },
+   {
+    "id": "P-322",
+    "antes": "—",
+    "despues": "Etiqueta añadida: «Se usa en el sentido de *ussukkana*: …»"
+   },
+   {
+    "id": "P-323",
+    "antes": "—",
+    "despues": "Etiqueta añadida: «Se usa en el sentido de *ussukkana*: …»"
+   },
+   {
+    "id": "P-324",
+    "antes": "—",
+    "despues": "Etiqueta añadida: «Se usa en el sentido de *ussukkana*: …»"
+   },
+   {
+    "id": "P-325",
+    "antes": "**tuvaṭaṃ**, (sc. *tvatitam*) (adv.) …",
+    "despues": "**tuvaṭaṃ**, (adv.) …"
+   },
+   {
+    "id": "P-326",
+    "antes": "señor regrese pronto.",
+    "despues": "joven señor, regresa pronto."
+   },
+   {
+    "id": "P-327",
+    "antes": "*samaṃ suvibhattaṃ* (errata C-119)",
+    "despues": "*samaṃ savibhattaṃ* (lectura de Nandisena); C-119 retirada de meta.erratas; EN «into eight equal portions»."
+   },
+   {
+    "id": "P-328",
+    "antes": "*aniccato*, por el modo de impermanente.",
+    "despues": "*aniccato*, como impermanente."
+   },
+   {
+    "id": "P-329",
+    "antes": "*mātito ca pitito saṃsuddhagahaṇiko*",
+    "despues": "*mātito ca pitito ca saṃsuddhagahaṇiko*"
+   },
+   {
+    "id": "P-330",
+    "antes": "—",
+    "despues": "Nota de caso: Nir. admite *-to* también en sentido de 1ª, 2ª, 3ª y 6ª …; para la 5ª: Kacc. §248."
+   },
+   {
+    "id": "P-331",
+    "antes": "—",
+    "despues": "Tras pronombres, en el sentido de la 7ª (Kacc. §249: *tra-tha sattamiyā sabbanāmehi*)."
+   },
+   {
+    "id": "P-332",
+    "antes": "**thā**, (sufijo usado en la 7ª inflexión) Se usa con relación a lugar y tiempo. *sabbathā*, en todas las formas…",
+    "despues": "**thā**, (sufijo) Forma adverbios de modo (…). *sabbathā*, de todas las maneras. — **tha**, (sufijo usado en la 7ª inflexión, tras pronombres) … *yattha*, *tattha*, *sabbattha* (Kacc. §249; Rū. 133)."
+   },
+   {
+    "id": "P-333",
+    "antes": "(Adv., part. 1ª , 2ª y 7ª (tiempo) inflexión)",
+    "despues": "(Adv., part. 1ª, 2ª y 7ª (tiempo) inflexión; 1ª y 2ª: Rū. 133 y Sad.; 7ª de tiempo: Rū. 134 y Sad., lista de *kālasattamī*)"
+   },
+   {
+    "id": "P-334",
+    "antes": "**dhi**, (sc. *dhik*) = **dhī**",
+    "despues": "**dhi**, (sc. *dhik*) = **dhī**. Interjección de reproche (*garaha*)."
+   },
+   {
+    "id": "P-335",
+    "antes": "(M. ii 252)",
+    "despues": "(M. ii 253 (PTS ii 64))"
+   },
+   {
+    "id": "P-336",
+    "antes": "de éste ciertamente no hay nada estable.",
+    "despues": "[el cuerpo] que no tiene permanencia firme. Ejemplo del sentido «firme» (*thira*)."
+   },
+   {
+    "id": "P-337",
+    "antes": "*dhuvaṃ buddho bhavissati*",
+    "despues": "*dhuvaṃ buddho bhavissasi* (Bv. 312 (PTS p. 11)), ciertamente serás un Buddha. Ejemplo del sentido de certeza (*ekaṃsa*)."
+   },
+   {
+    "id": "P-338",
+    "antes": "oh ave de alas doradas, ida de la ciega oscuridad.",
+    "despues": "lo cual, oh tú de alas doradas, sería como algo hecho en la ciega oscuridad. Según el comentario, …"
+   },
+   {
+    "id": "P-339",
+    "antes": "—",
+    "despues": "*na naṃ sujāto samaṇo gotamo, dujjāto ’ham asmi* (D. iii 69 (PTS iii 84)), no [lo hace pensando]: «…». Nota: «muchas ediciones leen aquí *nanu*»."
+   },
+   {
+    "id": "P-340",
+    "antes": "perciba la extinción del deseo día y noche.",
+    "despues": "contempla día y noche la extinción del deseo."
+   },
+   {
+    "id": "P-341",
+    "antes": "—",
+    "despues": "Sirve para volver al interlocutor hacia uno … (*codetukāmatāya parassa abhimukhīkaraṇe*). Abh. … (*virodhakathana*)."
+   },
+   {
+    "id": "P-342",
+    "antes": "—",
+    "despues": "Subentrada **nanu ca**: «Indica contradicción total (*accantavirodha*): *nanu ca bho saddakkamānurūpena atthena bhavitabbaṃ*, …»"
+   },
+   {
+    "id": "P-343",
+    "antes": "¿no ves, deva?",
+    "despues": "¿no ves, oh deidad (*devatā*)?"
+   },
+   {
+    "id": "P-344",
+    "antes": "homenaje a ti, el Buddha; héroe, liberado en todas partes.",
+    "despues": "homenaje a ti, oh Buddha, héroe; estás liberado en todo respecto."
+   },
+   {
+    "id": "P-345",
+    "antes": "…nombre (*saññā*), pregunta (*pañha*), énfasis.",
+    "despues": "…nombre (*saññā*) y pregunta (*pañha*). Ejemplos rotulados: reproche, nombre, pregunta."
+   },
+   {
+    "id": "P-346",
+    "antes": "Ānanda, seréis indiferentes del venerable bhikkhu que está siendo puesto en dificultad.",
+    "despues": "¡cómo, Ānanda! ¿Vais a quedaros indiferentes mientras hostigan a un bhikkhu anciano?"
+   },
+   {
+    "id": "P-347",
+    "antes": "AA. iii 59 (nota 9)",
+    "despues": "AA. iii 58 (PTS iii 298)"
+   },
+   {
+    "id": "P-348",
+    "antes": "—",
+    "despues": "Elogio (*pasaṃsana*): *yatra hi nāma sāvako … karissati* (S. i 447 (PTS ii 255)), ¡que un discípulo llegue a conocer, ver o atestiguar algo así!"
+   },
+   {
+    "id": "P-349",
+    "antes": "*ahaṃ bhante nāgo nāma* (sin referencia)",
+    "despues": "*ahaṃ bhante nāgo nāma* (cf. Vimativinodanī-ṭīkā, CST ii 130)"
+   },
+   {
+    "id": "P-350",
+    "antes": "(sc. nānānam?)",
+    "despues": "(sc. *nānānam*?)"
+   },
+   {
+    "id": "P-351",
+    "antes": "un mismo significado, pero diferentes nombres.",
+    "despues": "el significado es uno; sólo la expresión es diferente."
+   },
+   {
+    "id": "P-352",
+    "antes": "…de diferentes países, … han renunciado del hogar a la vida sin hogar.",
+    "despues": "…de diferente nacimiento, … habéis renunciado al hogar por la vida sin hogar."
+   },
+   {
+    "id": "P-353",
+    "antes": "—",
+    "despues": "Abhidhānappadīpikā da también *nānā* en el sentido de exclusión (*vajjana*), como *vinā*, *rite*, *antarena*: sin."
+   },
+   {
+    "id": "P-354",
+    "antes": "que siempre se esfuerzan.",
+    "despues": "siempre firmes en el esfuerzo."
+   },
+   {
+    "id": "P-355",
+    "antes": "*nīcaṃ āsanaṃ gahetvā ekamantaṃ nisīdiṃsu* (D. ii 75)",
+    "despues": "Antes: *uccaṃ bhāsati nīcaṃ bhāsati* (J. ii 121), habla en voz alta, habla en voz baja; se mantiene D. ii 75 con la advertencia «aquí *nīcaṃ* es el adjetivo *nīca* concordado con *āsanaṃ*»."
+   },
+   {
+    "id": "P-356",
+    "antes": "¿quién es usted señor?",
+    "despues": "¿quién es usted, señor?"
+   },
+   {
+    "id": "P-357",
+    "antes": "un buitre, verdaderamente, ve los cuerpos a más de cien leguas.",
+    "despues": "como se sabe, el buitre divisa cadáveres a más de cien *yojanas* [¿cómo es que tú no adviertes la red y el lazo, aun tropezando con ellos?]."
+   },
+   {
+    "id": "P-358",
+    "antes": "ciertamente ésta no es una doctrina y disciplina inferior.",
+    "despues": "sin duda no es inferior esa doctrina y disciplina [en la que el príncipe Vipassī se ha ordenado]."
+   },
+   {
+    "id": "P-359",
+    "antes": "y si tomo la vida [= lo mato] de este asceta.",
+    "despues": "¿y si yo privara de la vida [= matara] a este asceta?"
+   },
+   {
+    "id": "P-360",
+    "antes": "Certeza (*ekaṃsa*):",
+    "despues": "Certeza (*ekaṃsa*; Abh.: *nicchaya*):"
+   },
+   {
+    "id": "P-361",
+    "antes": "ciertamente no Señor.",
+    "despues": "ciertamente no, Venerable Señor."
+   },
+   {
+    "id": "P-362",
+    "antes": "(Khu i 5)",
+    "despues": "(Khp. 5 (PTS p. 4))"
+   },
+   {
+    "id": "P-363",
+    "antes": "—",
+    "despues": "Fuera de estos usos, *no* es pronombre (…), y entonces no es nipāta."
+   },
+   {
+    "id": "P-364",
+    "antes": "puede ser experimentado por los sabios individualmente.",
+    "despues": "ha de ser experimentado por los sabios, cada uno por sí mismo."
+   },
+   {
+    "id": "P-365",
+    "antes": "—",
+    "despues": "Rū. lee *patirūpaṃ*; Sad. y Payogasiddhi, *paṭirūpaṃ*. Es también nombre (*nāmika*), como *lahu* y *opāyikaṃ*."
+   },
+   {
+    "id": "P-366",
+    "antes": "**patirūpan** ti (V. iii 57), sí.",
+    "despues": "*patirūpan ti* (V. iii 57 (PTS Vin i 45)), «está bien»: es una de las fórmulas con que el preceptor acepta al discípulo."
+   },
+   {
+    "id": "P-367",
+    "antes": "*kasmā pan’ etaṃ vuttaṃ* (sin referencia)",
+    "despues": "*kasmā pan’ etaṃ vuttaṃ* (Vis. i 1)"
+   },
+   {
+    "id": "P-401",
+    "antes": "cuando uno habla indirectamente (*parammukhā*), enviando un mensaje o mensajero, uno aconseja.",
+    "despues": "en ausencia [del otro] (*parammukhā*), enviándole un mensajero o un mensaje, se dice que uno instruye (*anusāsati*)."
+   },
+   {
+    "id": "P-402",
+    "antes": "*api ’ssudam parito gāmesu*",
+    "despues": "*api ’ssudaṃ parito gāmesu*"
+   },
+   {
+    "id": "P-404",
+    "antes": "ellos buscan la comida para la cena en el atardecer y para el almuerzo en el amanecer.",
+    "despues": "buscan alimento (*bhikkhaṃ*) al atardecer para la cena y temprano por la mañana (*pāto*) para el desayuno (*pātarāsa*)."
+   },
+   {
+    "id": "P-405",
+    "antes": "el Maestro bien temprano se dirigió al monje Mahāmoggallana.",
+    "despues": "el Maestro, bien temprano, se dirigió al thera Mahāmoggallāna."
+   },
+   {
+    "id": "P-406",
+    "antes": "(M. ii 259)",
+    "despues": "(M. ii 260)"
+   },
+   {
+    "id": "P-407",
+    "antes": "y anhela el otro lado del océano.",
+    "despues": "desearía también (*pi*) la otra orilla del océano."
+   },
+   {
+    "id": "P-408",
+    "antes": "*puthu kilese janetī ti puthujjano*, (DA. i 59), un ser ordinario (*puthujjana*) es aquel que genera…",
+    "despues": "*puthu kilese janentī ti puthujjanā* (DA. i 59), los seres ordinarios (*puthujjana*) son los que generan muchas impurezas mentales."
+   },
+   {
+    "id": "P-409",
+    "antes": "y de nuevo, Gran Rey, el bhikkhu al haber eliminado la aplicación inicial y la aplicación sostenida.",
+    "despues": "y además, gran rey, el bhikkhu, con el apaciguamiento (*vūpasamā*) de la aplicación inicial y de la aplicación sostenida…"
+   },
+   {
+    "id": "P-410",
+    "antes": "no será nuevamente tal.",
+    "despues": "no volverá a suceder algo así."
+   },
+   {
+    "id": "P-411",
+    "antes": "—",
+    "despues": "Abh. y su ṭīkā dan a **purā** los sentidos … *purā vassati devo* (Dīgha-ṭīkā i 22), pronto lloverá. Con **pure** o **purā** el presente vale por futuro próximo."
+   },
+   {
+    "id": "P-412",
+    "antes": "aquello que debería decirse después, lo dice antes.",
+    "despues": "dijiste antes lo que debía decirse después."
+   },
+   {
+    "id": "P-413",
+    "antes": "en el futuro lo contrario al Dhamma brillará. …",
+    "despues": "pronto (*pure*) brillará lo contrario al Dhamma. Aquí **pure** se usa para referirse al futuro próximo: según las ṭīkās …"
+   },
+   {
+    "id": "P-414",
+    "antes": "enredo interno, enredo externo.",
+    "despues": "enredo por dentro, enredo por fuera."
+   },
+   {
+    "id": "P-416",
+    "antes": "(Dh. 69)",
+    "despues": "(Dh. 69–70)"
+   },
+   {
+    "id": "P-418",
+    "antes": "(sin traducción)",
+    "despues": "*evaṃ byā kho* equivale a *evaṃ viya kho*, “así, al parecer”."
+   },
+   {
+    "id": "P-419",
+    "antes": "—",
+    "despues": "*evaṃ byā kho ahaṃ, bhante, … ājānāmi* (M. i 184), así es, al parecer, como yo entiendo, Venerable Señor, … Nir. explica *byā* como forma de *viya* …"
+   },
+   {
+    "id": "P-420",
+    "antes": "(part. voc., sg. y pl, m.)",
+    "despues": "(part. voc., sg. y pl., m.)"
+   },
+   {
+    "id": "P-421",
+    "antes": "vaya hombre y averigüe acerca del niño Ciravāsī.",
+    "despues": "ve, buen hombre (*bhaṇe*), y entérate de [cómo está] el joven Ciravāsī."
+   },
+   {
+    "id": "P-422",
+    "antes": "Venerable Gotama, el rey de Māgadha Ajātasattu, hijo de la reina Vedhi, desea aniquilar a los Vajjis.",
+    "despues": "Señor (*bho*) Gotama, el rey de Magadha, Ajātasattu, hijo de Vedehī, desea atacar a los Vajjīs."
+   },
+   {
+    "id": "P-423",
+    "antes": "Casi; un poco.",
+    "despues": "Casi, sin llegar del todo (*īsakaṃ apattabhāve*); un poco (*appa*)."
+   },
+   {
+    "id": "P-424",
+    "antes": "*atipaṇḍitena puttena, manam hi upakūḷito*",
+    "despues": "*atipaṇḍitena puttena, manamhi upakūḷito* (en la traducción: «*manamhi* = *manaṃ hi*», según la nota del editor)"
+   },
+   {
+    "id": "P-425",
+    "antes": "fui casi quemado por su muy sabio hijo.",
+    "despues": "por un hijo demasiado listo (*atipaṇḍita*) casi fui chamuscado."
+   },
+   {
+    "id": "P-426",
+    "antes": "casi desaparecemos.",
+    "despues": "¡por poco nos perdemos, señores (*bho*)!"
+   },
+   {
+    "id": "P-427",
+    "antes": "—",
+    "despues": "Sad. explica que *samma*, *sammā*, *mārisa* y *mārisā* se cuentan entre los nipātas porque …"
+   },
+   {
+    "id": "P-430",
+    "antes": "sería bueno que el Sublime por compasión se siente un momento.",
+    "despues": "sería bueno, Venerable Señor, que el Sublime se sentara un momento por compasión."
+   },
+   {
+    "id": "P-431",
+    "antes": "—",
+    "despues": "Sentido de anuncio (*ārocana*): *yagghe ’yye jāneyyāsi, …* (M. ii 251); como expletivo, Sad. da *yagghe, mahārāja, jāneyyāsi* (M. ii 259); y la nota del editor sobre *codanatthe nipāto* (DA., SA.)."
+   },
+   {
+    "id": "P-432",
+    "antes": "expresa oposición (*paṭisedha*).",
+    "despues": "expresa negación (*paṭisedha*): «[X es mejor] y no Y»."
+   },
+   {
+    "id": "P-433",
+    "antes": "(S. i 177)",
+    "despues": "(S. i 178)"
+   },
+   {
+    "id": "P-434",
+    "antes": "por lo tanto habiendo aprehendido el signo en cada uno de éstos de acuerdo con los once modos.",
+    "despues": "por lo tanto, habiendo aprehendido el signo de once modos en cualquiera de ellos…"
+   },
+   {
+    "id": "P-435",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*): *yathā kathaṃ pana te, mahārāja, byākariṃsu* (D. i 48), ¿y cómo te respondieron, gran rey?"
+   },
+   {
+    "id": "P-436",
+    "antes": "él se hace a sí mismo lo que sólo un enemigo desea para uno.",
+    "despues": "él se hace a sí mismo lo que un enemigo le desearía."
+   },
+   {
+    "id": "P-437",
+    "antes": "Adecuación, conformidad (*yogattā*):",
+    "despues": "Adecuación, conformidad (*yoggatā*):"
+   },
+   {
+    "id": "P-438",
+    "antes": "*yathānurūpaṃ upasaṃharati*; *ye ye vuḍḍhā yathāvuḍḍhaṃ*; *yathākkamaṃ*; *vuḍḍhānaṃ paṭipāṭi yathāvuḍḍhaṃ* (sin referencia)",
+    "despues": "los cuatro ejemplos con «(Sad.)»"
+   },
+   {
+    "id": "P-439",
+    "antes": "Repetición, difusión (*vicchā*):",
+    "despues": "Repetición distributiva (*vicchā*):"
+   },
+   {
+    "id": "P-440",
+    "antes": "—",
+    "despues": "Rū-ṭī ilustra con otros ejemplos: … (párrafo añadido tras el sentido *padatthānativatta*)"
+   },
+   {
+    "id": "P-441",
+    "antes": "*yathā kulūpako* (A ii 120), así como uno que frecuenta una familia.",
+    "despues": "*ko gassa, yathā kulūpako* (Kacc. §20), «k en lugar de g», por ejemplo *kulūpako*."
+   },
+   {
+    "id": "P-442",
+    "antes": "Orden, sucesión (paṭipāṭi):",
+    "despues": "Orden, sucesión (*paṭipāṭi*):"
+   },
+   {
+    "id": "P-443",
+    "antes": "así como un hombre fornido, … puede permanecer parado todo el día.",
+    "despues": "así como un hombre fuerte, tras levantarse de su asiento, podría permanecer de pie incluso (*pi*) todo el día."
+   },
+   {
+    "id": "P-444",
+    "antes": "así como una montaña de roca sólida, extensa, tocando el cielo.",
+    "despues": "así como montañas de roca sólida, extensas, que tocan el cielo…"
+   },
+   {
+    "id": "P-445",
+    "antes": "Otra forma es **yathar iva**.",
+    "despues": "Otra forma es **yatha-r-iva**."
+   },
+   {
+    "id": "P-446",
+    "antes": "(S. ii 75)",
+    "despues": "(S. ii 76)"
+   },
+   {
+    "id": "P-447",
+    "antes": "a la comunidad de Bhikkhus en el pasado.",
+    "despues": "a la comunidad de bhikkhus en el pasado."
+   },
+   {
+    "id": "P-448",
+    "antes": "cada vez que me viene el miedo debido al crujir de ramas.",
+    "despues": "cuando quiera que me llegue el peligro (*bhayaṃ*), me llegará del lugar donde se soltó la rama."
+   },
+   {
+    "id": "P-449",
+    "antes": "—",
+    "despues": "Sad. añade *yadi* en el sentido de *yadā*: *yadi passanti pavane dārakā phaline dume* (J. ii 330), …"
+   },
+   {
+    "id": "P-450",
+    "antes": "Porque, bhikkhus, la materia es no alma, ésta conduce a la aflicción.",
+    "despues": "y puesto que, bhikkhus, la materia es no alma, por eso (*tasmā*) conduce a la aflicción."
+   },
+   {
+    "id": "P-451",
+    "antes": "mientras su cuerpo permanezca, entonces, devas y hombres lo verán.",
+    "despues": "mientras permanezca su cuerpo, durante ese tiempo (*tāva*) lo verán devas y hombres."
+   },
+   {
+    "id": "P-452",
+    "antes": "*… abbhugacchi*, el sonido se extendió hasta el mundo de los Brahmas.",
+    "despues": "*yāva brahmalokā saddo abbhuggacchi*, el sonido se elevó hasta el mundo de Brahmā."
+   },
+   {
+    "id": "P-453",
+    "antes": "*… ete aggo, …*",
+    "despues": "*… ete aggā, …*"
+   },
+   {
+    "id": "P-454",
+    "antes": "bhikkhus, mientras haya fenómenos condicionados, incondicionados, …",
+    "despues": "de cuantos fenómenos hay, bhikkhus, condicionados o incondicionados, el desapego (*virāga*) es declarado el supremo."
+   },
+   {
+    "id": "P-456",
+    "antes": "(sin traducción)",
+    "despues": "sin un hijo, habiendo hecho mérito, [él] da."
+   },
+   {
+    "id": "P-457",
+    "antes": "—",
+    "despues": "Con *rahitā* el nombre va en 5.ª inflexión, y también en 2.ª o 3.ª: …"
+   },
+   {
+    "id": "P-458",
+    "antes": "(D. ii 67)",
+    "despues": "(D. ii 68)"
+   },
+   {
+    "id": "P-459",
+    "antes": "¿de dónde uno obtiene felicidad aparte del buen Dhamma?",
+    "despues": "sin el buen Dhamma, ¿dónde [uno] puede obtener la felicidad?"
+   },
+   {
+    "id": "P-460",
+    "antes": "—",
+    "despues": "Con *rite* el nombre va en 5.ª inflexión, y también en 2.ª o 3.ª: …"
+   },
+   {
+    "id": "P-461",
+    "antes": "Partícula vocativa usada en lenguaje abusivo (*hiṃsālapana*).",
+    "despues": "Partícula vocativa para dirigirse a un inferior (*hīnassa ālapana*)."
+   },
+   {
+    "id": "P-462",
+    "antes": "—",
+    "despues": "*lahu*, como *opāyikaṃ* y *patirūpaṃ*, es también nombre (*nāmika*); como nipāta de asentimiento es un indeclinable de forma nominal (*nāmapatirūpaka*)."
+   },
+   {
+    "id": "P-463",
+    "antes": "*lahū ti* (V. iii 57), sí.",
+    "despues": "*lahū ti* (V. iii 57), “de acuerdo” (lit. “[es] ligero”: ser tu preceptor no me es una carga)."
+   },
+   {
+    "id": "P-464",
+    "antes": "**lahu** (dos entradas)",
+    "despues": "**lahu**,<sup>1</sup> y **lahu**,<sup>2</sup>"
+   },
+   {
+    "id": "P-466",
+    "antes": "—",
+    "despues": "Abh. da además a **vā** el sentido de duda (*saṃsaya*)."
+   },
+   {
+    "id": "P-467",
+    "antes": "*madhu vā maññati* (Dh. 23)",
+    "despues": "*madhu vā maññati* (Dh. 23) … CST lee *madhuvā*."
+   },
+   {
+    "id": "P-468",
+    "antes": "opcionalmente la [vocal se elide] cuando está precedida por una [vocal] disimilar.",
+    "despues": "opcionalmente, [se elide] la [vocal] siguiente después de [una vocal] disímil."
+   },
+   {
+    "id": "P-469",
+    "antes": "—",
+    "despues": "Sad. critica la formulación: … Aggavaṃsa formula la regla como *paro vā asarūpā*."
+   },
+   {
+    "id": "P-501",
+    "antes": "*Kapaṇo vatāyaṃ bhikkhu* (errata C-151)",
+    "despues": "*Kapaṇo vatayaṃ bhikkhu* con nota «*vatayaṃ* = *vata ayaṃ*; así CST; PTS y Sad. leen *vatāyaṃ*»; C-151 retirada de meta.erratas."
+   },
+   {
+    "id": "P-502",
+    "antes": "¡que él sea feo!",
+    "despues": "¡ojalá este se volviera feo!"
+   },
+   {
+    "id": "P-503",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*): *acchariyaṃ vata bho, abbhutaṃ vata bho* (D. ii 90), ¡qué maravilloso, señores, qué asombroso!"
+   },
+   {
+    "id": "P-504",
+    "antes": "—",
+    "despues": "Rige 3.ª inflexión y también 5.ª o 2.ª (Kacc. §272): *vinā saddhammā …*, sin el buen Dhamma no existe en el mundo ningún otro refugio; *vinā saddhammaṃ*, *vinā saddhammena*."
+   },
+   {
+    "id": "P-505",
+    "antes": "—",
+    "despues": "*tadajj’ ahaṃ niggahessāmi yoniso, hatthippabhinnaṃ viya aṅkusaggaho* (Dh. 60), hoy refrenaré sabiamente [esta mente], …"
+   },
+   {
+    "id": "P-506",
+    "antes": "Particula que denota",
+    "despues": "Partícula que denota"
+   },
+   {
+    "id": "P-507",
+    "antes": "*na vāyaṃ kumārako mattam aññāsi*",
+    "despues": "Tras la traducción: «Aquí *vāyaṃ* = *ve* + *ayaṃ*.»"
+   },
+   {
+    "id": "P-508",
+    "antes": "EN: This boy certainly did not know his measure.",
+    "despues": "EN: This boy certainly does not know his measure."
+   },
+   {
+    "id": "P-509",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*): *sa ve etena yānena nibbānass’ eva santike* (S. i 30), con este vehículo uno está cerca del Nibbāna."
+   },
+   {
+    "id": "P-510",
+    "antes": "**vo**, (part.) Expletivo (*padapūraṇa*).",
+    "despues": "**vo**, (part.) Expletivo (*padapūraṇa*): *sadevakassa lokassa ete vo sukhasammatā* (Sn. 397), …; fuera de este uso, *vo* es pronombre (= *tumhe*, *tumhākaṃ*; …) y no nipāta."
+   },
+   {
+    "id": "P-511",
+    "antes": "el completamente Iluminado",
+    "despues": "el que se iluminó correctamente y por sí mismo (también en **sammā**²)"
+   },
+   {
+    "id": "P-512",
+    "antes": "sufijo usado en la partición de números (*saṅkhyāvibhāga*)",
+    "despues": "partícula usada en la división numérica (*saṅkhyāvibhāga*)"
+   },
+   {
+    "id": "P-513",
+    "antes": "ahora yo conozco con mí misma",
+    "despues": "ahora yo misma lo sé directamente (lit. con mis propios ojos)"
+   },
+   {
+    "id": "P-514",
+    "antes": "se contamina lentamente",
+    "despues": "[con el uso] se ensucia lentamente"
+   },
+   {
+    "id": "P-515",
+    "antes": "no separación con su hijo",
+    "despues": "el no estar separado de su hijo"
+   },
+   {
+    "id": "P-516",
+    "antes": "un valor similar a mil",
+    "despues": "[una ofrenda dada de lo poco] se mide igual que mil"
+   },
+   {
+    "id": "P-517",
+    "antes": "*tassābhisekena samaṃ* (Mahāvaṃsa V 23), a partir de su consagración.",
+    "despues": "*tassābhisekena samaṃ* (Mhv. V 23), al mismo tiempo que su consagración."
+   },
+   {
+    "id": "P-518",
+    "antes": "(D.ii 229)",
+    "despues": "(D. ii 229)"
+   },
+   {
+    "id": "P-519",
+    "antes": "(D. ii 148)",
+    "despues": "(D. ii 147)"
+   },
+   {
+    "id": "P-520",
+    "antes": "venga amigo Vissakamma",
+    "despues": "ven, amigo Vissakamma"
+   },
+   {
+    "id": "P-521",
+    "antes": "—",
+    "despues": "Añadido en **samma** y en **sammā**¹: «Sad. cuenta *samma, sammā, mārisa, mārisā* entre los nipātas …»"
+   },
+   {
+    "id": "P-522",
+    "antes": "(como mi maestro)?.",
+    "despues": "(como mi maestro)?"
+   },
+   {
+    "id": "P-523",
+    "antes": "(adv., part. 3ª inflexión)",
+    "despues": "Nota de caso: Rū. y Sad., 3.ª; Nir., 1.ª y 3.ª; Bālāvatāra, 3.ª y 6.ª (*sayaṃsaddā tatiyā chaṭṭhī ca*)."
+   },
+   {
+    "id": "P-524",
+    "antes": "*puttena saha āgato*, (sin referencia)",
+    "despues": "*puttena saha āgato* (Nir. 180)"
+   },
+   {
+    "id": "P-525",
+    "antes": "(T. i 325)",
+    "despues": "(Th. 325)"
+   },
+   {
+    "id": "P-526",
+    "antes": "resplandece con los atuendos",
+    "despues": "resplandece provisto de vestidos (no desnudo)"
+   },
+   {
+    "id": "P-527",
+    "antes": "el Yakkha, deseoso de abundancia, se marchó con Vidhura",
+    "despues": "el yakkha, de gran riqueza, se marchó con Vidhura (EN «the yakkha, of great wealth, …»)"
+   },
+   {
+    "id": "P-528",
+    "antes": "sería bueno que el Sublime me enseñe el Dhamma en breve",
+    "despues": "sería bueno que el Sublime me enseñara el Dhamma en breve"
+   },
+   {
+    "id": "P-529",
+    "antes": "*pāto anusiṭṭho sāyaṃ visesaṃ adhigamissati* (M. ii 300), instruido en el amanecer obtendrá distinción en el atardecer.",
+    "despues": "*pātam anusiṭṭho sāyaṃ visesaṃ adhigamissati* (M. ii 300), instruido al amanecer, al atardecer alcanzará la distinción."
+   },
+   {
+    "id": "P-530",
+    "antes": "**su**, prefijo usado en el significado de rápido (*sīgha*).",
+    "despues": "**su**, partícula usada en el significado de rápido (*sīgha*): *lahuṃ lahuṃ bhuñjati gacchatī ti suddo*, se llama *sudda* porque come deprisa y se va deprisa (Sad.)."
+   },
+   {
+    "id": "P-531",
+    "antes": "También usado como mera partícula (*nipātamatta*) o expletivo (*padapūraṇa*).",
+    "despues": "… con ejemplos: *na sūpahatacittomhi* (S. i 240; SA. i 324) y *kiṃ sūdha vittaṃ purisassa seṭṭhaṃ* (Sn. 306; SnA. i 224)."
+   },
+   {
+    "id": "P-532",
+    "antes": "—",
+    "despues": "Abh. lo da además en el sentido de exceso, «muy» (*atisaya*…), y de elogio (*pasaṃsā*…)."
+   },
+   {
+    "id": "P-533",
+    "antes": "—",
+    "despues": "*tatra sudaṃ bhagavā nātike viharati giñjakāvasathe* (V. iii 327), allí el Sublime residía en Nātika, en la Casa de Ladrillos."
+   },
+   {
+    "id": "P-534",
+    "antes": "Cuál es éste *(taṃ katamaṃ*).",
+    "despues": "En el sentido de «¿cuál es?» (*taṃ katamaṃ*)."
+   },
+   {
+    "id": "P-535",
+    "antes": "(sufijo usado en la 3ª, 5ª y 7ª inflexión)",
+    "despues": "(sufijo usado en la 3ª y 5ª inflexión)"
+   },
+   {
+    "id": "P-536",
+    "antes": "*suttaso* / *dīghaso* / *oraso* (sin referencia)",
+    "despues": "los tres con «(Rū. 133)» y tras *oraso*: «*dīghaso, oraso* = *dīghamhā, oramhā*: *so* sustituye a *smā* (Kacc. §106).»"
+   },
+   {
+    "id": "P-537",
+    "antes": "—",
+    "despues": "Nota en **sotthi** y en **suvatthi**: «Sad. advierte que *sotthi* aparece también con inflexión … porque en las demás inflexiones no varía.»"
+   },
+   {
+    "id": "P-538",
+    "antes": "(part..)",
+    "despues": "(part.)"
+   },
+   {
+    "id": "P-539",
+    "antes": "(*vavassagga*).¡Vamos!",
+    "despues": "(*vavassagga*). ¡Vamos!"
+   },
+   {
+    "id": "P-540",
+    "antes": "(los dos ejemplos sin separar)",
+    "despues": "Bajo *codana*: *handa ’dāni, bhikkhave, …* (D. ii 128); bajo *vavassagga*: *handa dāni apāyāmi* (J. ii 225), bien, ahora me marcho, y *handa, mayam pi appamattā viharāma* (S. i 89)."
+   },
+   {
+    "id": "P-541",
+    "antes": "“todos los fenómenos condicionados están sujetos a un cesar”, afanaos con diligencia",
+    "despues": "«los fenómenos condicionados están sujetos a desaparecer»; esforzaos con diligencia"
+   },
+   {
+    "id": "P-542",
+    "antes": "Partícula vocativa usada en lenguaje abusivo (*hiṃsālapana*).",
+    "despues": "Partícula vocativa para dirigirse a un inferior (*hīnassa ālapana*)."
+   },
+   {
+    "id": "P-543",
+    "antes": "(JA. I 286)",
+    "despues": "(JA. i 286)"
+   },
+   {
+    "id": "P-544",
+    "antes": "—",
+    "despues": "*kicchena me adhigataṃ, halaṃ dāni pakāsituṃ* (M. i 224), lo alcancé con dificultad: ¡basta ya de proclamarlo! *alaṃ* y *halaṃ* van al principio o al final de la frase, nunca en medio."
+   },
+   {
+    "id": "P-545",
+    "antes": "(Vin iii 2; Ud. 78)",
+    "despues": "(V. iii 2; Ud. 78)"
+   },
+   {
+    "id": "P-546",
+    "antes": "Expletivo (*padapūraṇa*).",
+    "despues": "Expletivo (*padapūraṇa*): *have te bhonto samaṇabrāhmaṇā …* (M. i 20), esos señores ascetas y brahmanes atraen sobre sí miedo y pavor nocivos."
+   },
+   {
+    "id": "P-547",
+    "antes": "*kahaṃ ekaputtaka* (DhA. i 18), ¡oh mi único hijo!",
+    "despues": "Se mantiene bajo *visāda* (Rū. 133) con la traducción literal: ¿dónde [estás], hijo único?"
+   },
+   {
+    "id": "P-548",
+    "antes": "—",
+    "despues": "Sad. añade el sentido de mostrar el modo de ese lamento (*tadākāranidassana*): *hā canda hā canda*, ¡ay, Canda, ay, Canda! Abh. lo da en el sentido de aflicción (*khede*)."
+   },
+   {
+    "id": "P-549",
+    "antes": "*jinavacanayuttaṃ hi* (Kac. §52), en conformidad con la Palabra del Conquistador (= el Buddha).",
+    "despues": "*jinavacanayuttaṃ hi* (Kacc. §52), conforme a la palabra del Victorioso (Buddha)."
+   },
+   {
+    "id": "P-550",
+    "antes": "*vuttañ hi* (S. i 13), porque se dijo.",
+    "despues": "*vuttañ hi*, en efecto, se ha dicho."
+   },
+   {
+    "id": "P-551",
+    "antes": "un amigo estaría parado abajo al pie de la montaña",
+    "despues": "uno de los amigos se quedaría de pie abajo, al pie de la montaña"
    }
   ],
   "correcciones_indeclinables": [

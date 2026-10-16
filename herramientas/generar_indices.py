@@ -155,10 +155,10 @@ RECURSOS = [
      "<i>abyayībhāva</i>, sufijos secundarios y voces en <i>tvā</i>, "
      "etc.—, con sus sentidos y ejemplos: los documentos "
      "«Indeclinables» y «Partículas» de Bhikkhu Nandisena (2013), "
-     "edición revisada por IEBH, con las partículas que faltaban "
-     "añadidas y su fuente. Buscador que ignora los diacríticos, "
-     "filtro por el sentido de caso e índice por el alfabeto pāḷi. En "
-     "revisión.",
+     "revisados entrada por entrada por IEBH contra las gramáticas y el "
+     "Canon, con las partículas que faltaban añadidas y su fuente. "
+     "Buscador que ignora los diacríticos, filtro por el sentido de "
+     "caso e índice por el alfabeto pāḷi.",
      ("indeclinables/guia/", "Guía para el estudiante", "Student guide")),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
@@ -372,18 +372,19 @@ EN = {
     "<i>abyayībhāva</i>, sufijos secundarios y voces en <i>tvā</i>, "
     "etc.—, con sus sentidos y ejemplos: los documentos "
     "«Indeclinables» y «Partículas» de Bhikkhu Nandisena (2013), "
-    "edición revisada por IEBH, con las partículas que faltaban "
-    "añadidas y su fuente. Buscador que ignora los diacríticos, "
-    "filtro por el sentido de caso e índice por el alfabeto pāḷi. En "
-    "revisión.":
+    "revisados entrada por entrada por IEBH contra las gramáticas y el "
+    "Canon, con las partículas que faltaban añadidas y su fuente. "
+    "Buscador que ignora los diacríticos, filtro por el sentido de "
+    "caso e índice por el alfabeto pāḷi.":
         "The Pāḷi indeclinables (<i>abyaya</i>) in their six classes "
         "—prefixes, particles, words with case suffixes, "
         "<i>abyayībhāva</i> compounds, secondary suffixes and words in "
         "<i>tvā</i>, etc.—, with their senses and examples: Bhikkhu "
-        "Nandisena's «Indeclinables» and «Particles» (2013), edited by "
-        "IEBH, with the missing particles added and their source. Search "
-        "ignores diacritics, with a filter by case sense and an index by "
-        "the Pāḷi alphabet. Under review; the English is a draft.",
+        "Nandisena's «Indeclinables» and «Particles» (2013), revised "
+        "entry by entry by IEBH against the grammars and the Canon, with "
+        "the missing particles added and their source. Search ignores "
+        "diacritics, with a filter by case sense and an index by the Pāḷi "
+        "alphabet. The English is a draft.",
     "Clasificación de los suttas de Kaccāyana":
         "Classification of the Kaccāyana suttas",
     "Cada aforismo de Kaccāyana clasificado según "
