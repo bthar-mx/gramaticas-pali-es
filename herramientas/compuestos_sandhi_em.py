@@ -48,7 +48,11 @@ def aplicar_texto(s, cambios):
             fallos.append("L{0}: no existe la línea".format(c["L"]))
             continue
         ln = lineas[i]
-        if c["antes"] in ln:
+        # Si «antes» está contenido en «despues» (un añadido al final, como
+        # C-031), mirar primero «despues»: si no, cada corrida lo añade otra vez.
+        if c["antes"] in c["despues"] and c["despues"] in ln:
+            ya += 1
+        elif c["antes"] in ln:
             lineas[i] = ln.replace(c["antes"], c["despues"])
             hechos += 1
         elif c["despues"] in ln:
@@ -62,7 +66,9 @@ def aplicar_guia(s, cambios):
     hechos, ya, fallos = 0, 0, []
     for c in cambios:
         n = s.count(c["antes"])
-        if n == 1:
+        if c["antes"] in c["despues"] and c["despues"] in s:
+            ya += 1
+        elif n == 1:
             s = s.replace(c["antes"], c["despues"])
             hechos += 1
         elif n == 0 and c["despues"] in s:

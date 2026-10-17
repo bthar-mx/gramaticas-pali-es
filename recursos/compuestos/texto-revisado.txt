@@ -1,11 +1,11 @@
 # samasa6.doc — texto REVISADO (U Nandisena, 2004–2005; revisión del IEBH)
 # Lo escribe herramientas/compuestos_aplicar.py a partir de base.txt y de las
 # propuestas verificadas. No se edita a mano: se rehace.
-#meta version=0.3
+#meta version=0.3.1
 #meta fecha=2026-10-17
 #meta estado=Borrador revisado (pendiente de aprobación del IEBH)
 #meta estado_en=Revised draft (pending IEBH approval)
-#meta nota_version=Se aplicaron las propuestas de revisión según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); primera ronda de la revisión del IEBH (177 puntos conformes, ninguno revertido); a la espera de la aprobación del resto.
+#meta nota_version=Se aplicaron las propuestas de revisión según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); primera ronda de la revisión del IEBH (177 puntos conformes, ninguno revertido); a la espera de la aprobación del resto. v0.3.1: título del documento en inglés, «Compound (samāsa)»; llamadas de nota protegidas de la traducción automática del navegador. Sāvatthī (no «Sāvatthi») en el ejemplo del compuesto relativo de la segunda inflexión. Edición inglesa de la página, en borrador (sin revisar por el IEBH).
 
 0001  {Normal} Compuesto (samāsa)
 0002  {Normal} 
@@ -1309,14 +1309,14 @@
 0999  {Normal} āgatā (venidos) samaṇā (monjes) imaṃ (a este) saṃghārāmaṃ (monasterio del Saṃgha), so (éste) āgatasamaṇo Saṃghārāmo (monasterio del Saṃgha a donde vinieron los monjes).
 1000  {Normal} 
 1001  {Normal} āgatasamaṇā
-1002  {Normal} āgatā (venidos) samaṇā  (monjes) imaṃ (a este) Sāvatthiṃ (Sāvatthi), sā (ésta) āgatasamaṇā Sāvatthi (Sāvatthi a donde los monjes vinieron).
+1002  {Normal} āgatā (venidos) samaṇā  (monjes) imaṃ (a este) Sāvatthiṃ (Sāvatthī), sā (ésta) āgatasamaṇā Sāvatthī (Sāvatthī a donde los monjes vinieron).
 1003  {Normal} 
 1004  {Normal} āgatasamaṇaṃ
 1005  {Normal} āgatā (venidos) samaṇā (monjes) imaṃ (a este) Jetavanaṃ (Jetavana), taṃ (éste) āgatasamaṇaṃ Jetavanaṃ (Jetavana a donde los monjes vinieron).
 1006  {Normal} 
-1007  {Normal} En los tres ejemplos anteriores, "Saṃghārāmo", monasterio del Saṃgha, "Sāvatthi" y "Jetavana", son los significados denotados (abhidheyya) por el compuesto y la otra palabra (aññapada), en este caso "imaṃ". Debido a que están en el significado de la segunda inflexión, se dice que este tipo de compuesto pertenece a la segunda inflexión.
+1007  {Normal} En los tres ejemplos anteriores, "Saṃghārāmo", monasterio del Saṃgha, "Sāvatthī" y "Jetavana", son los significados denotados (abhidheyya) por el compuesto y la otra palabra (aññapada), en este caso "imaṃ". Debido a que están en el significado de la segunda inflexión, se dice que este tipo de compuesto pertenece a la segunda inflexión.
 1007a  {Normal} 
-1007b  {IEBH fuente="Rūpasiddhi" forma=p} Rūpasiddhi explica por qué «saṃghārāmo» no lleva la segunda inflexión: āgata y samaṇa dejan su propio significado y se aplican al de la otra palabra, que es el de la segunda inflexión; «saṃghārāmo» se añade sólo para aclarar ese significado, y como el compuesto ya expresa el significado del objeto, no se repite la segunda. El pronombre «imaṃ» no se emplea con el compuesto, y así en todos los casos (Rū. §352 (p. 200)).
+1007b  {IEBH fuente="Rūpasiddhi · Saddanīti · Niruttidīpanī" forma=p} Rūpasiddhi explica por qué «saṃghārāmo» no lleva la segunda inflexión: āgata y samaṇa dejan su propio significado y se aplican al de la otra palabra, que es el de la segunda inflexión; «saṃghārāmo» se añade sólo para aclarar ese significado, y como el compuesto ya expresa el significado del objeto, no se repite la segunda. El pronombre «imaṃ» no se emplea con el compuesto, y así en todos los casos (Rū. §352 (p. 200)); en el ejemplo, Rūpasiddhi (p. 200) y Niruttidīpanī (ed. VRI) leen «āgatasamaṇā sāvatthi», como escribe por lo general el nominativo la edición del Sexto Concilio (p. ej. M. i 200 (PTS i 146): «yena sāvatthi tena cārikaṃ pakkāmi»); aquí se escribe «Sāvatthī», la forma del tema femenino en -ī, como en Sad. (Smith p. 760).
 1007c  {Normal} 
 1008  {Normal} 
 1009  {Normal} Otros ejemplos:

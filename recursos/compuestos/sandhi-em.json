@@ -739,6 +739,42 @@
    "regla": "retoque del IEBH (C-031)",
    "fuente": "Rū., p. 189",
    "nota": "idem"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1002",
+   "antes": "Sāvatthiṃ (Sāvatthi), sā (ésta) āgatasamaṇā Sāvatthi (Sāvatthi a donde",
+   "despues": "Sāvatthiṃ (Sāvatthī), sā (ésta) āgatasamaṇā Sāvatthī (Sāvatthī a donde",
+   "regla": "retoque del IEBH (Sāvatthī)",
+   "fuente": "Sad. (Smith p. 760): «āgatasamaṇā · Sāvatthī»; M. i 200 (PTS i 146): «yena sāvatthi tena cārikaṃ pakkāmi»",
+   "nota": "Pedido del IEBH (2026-10-17): Sāvatthī, forma del tema femenino en -ī (la CST escribe por lo general «sāvatthi» en nominativo); el acusativo Sāvatthiṃ no cambia."
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1007",
+   "antes": "\"Sāvatthi\" y \"Jetavana\"",
+   "despues": "\"Sāvatthī\" y \"Jetavana\"",
+   "regla": "retoque del IEBH (Sāvatthī)",
+   "fuente": "Sad. (Smith p. 760): «āgatasamaṇā · Sāvatthī»; M. i 200 (PTS i 146): «yena sāvatthi tena cārikaṃ pakkāmi»",
+   "nota": "idem"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1007b",
+   "antes": "{IEBH fuente=\"Rūpasiddhi\" forma=p}",
+   "despues": "{IEBH fuente=\"Rūpasiddhi · Saddanīti · Niruttidīpanī\" forma=p}",
+   "regla": "retoque del IEBH (Sāvatthī)",
+   "fuente": "Sad. (Smith p. 760): «āgatasamaṇā · Sāvatthī»; M. i 200 (PTS i 146): «yena sāvatthi tena cārikaṃ pakkāmi»",
+   "nota": "idem: fuentes de la nota añadida"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1007b",
+   "antes": "así en todos los casos (Rū. §352 (p. 200)).",
+   "despues": "así en todos los casos (Rū. §352 (p. 200)); en el ejemplo, Rūpasiddhi (p. 200) y Niruttidīpanī (ed. VRI) leen «āgatasamaṇā sāvatthi», como escribe por lo general el nominativo la edición del Sexto Concilio (p. ej. M. i 200 (PTS i 146): «yena sāvatthi tena cārikaṃ pakkāmi»); aquí se escribe «Sāvatthī», la forma del tema femenino en -ī, como en Sad. (Smith p. 760).",
+   "regla": "retoque del IEBH (Sāvatthī)",
+   "fuente": "Sad. (Smith p. 760): «āgatasamaṇā · Sāvatthī»; M. i 200 (PTS i 146): «yena sāvatthi tena cārikaṃ pakkāmi»",
+   "nota": "idem: nota de lectura"
   }
  ],
  "ocr": [],

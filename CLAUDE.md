@@ -577,7 +577,7 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
 
 ## Estado de recursos/compuestos
 
-La referencia de los compuestos (`/recursos/compuestos/`, v0.3, **borrador
+La referencia de los compuestos (`/recursos/compuestos/`, v0.3.1, **borrador
 revisado, pendiente de la aprobación del IEBH**, 2026-10-17; primera ronda
 de la revisión del IEBH aplicada: 177 conformes, ninguno revertido) es el documento
 «Compuesto (samāsa)» de **Bhikkhu Nandisena** (Word, 2004–2005; sigue a
@@ -609,6 +609,13 @@ La cadena es de tres pasos, y cada uno se rehace solo:
   la aplica `herramientas/compuestos_sandhi_em.py` al final de
   `compuestos_aplicar.py`. El formato de negritas del original está en
   `recursos/compuestos/samasa6-formato.json`.
+- **Edición inglesa** (borrador, 2026-10-17, sin revisar por el IEBH):
+  `recursos/compuestos/ingles.json` va de cada cadena española de `compuestos.json`
+  a su inglés; `herramientas/compuestos_ingles.py` rellena los «en» vacíos y lo
+  llama `compuestos_a_json.py` antes de escribir. Si una cadena cambia en español,
+  su inglés deja de aplicarse: `python3 herramientas/compuestos_ingles.py --faltan`
+  lista lo que falta (la página muestra entonces el español). El título del
+  documento en inglés es «Compound (samāsa)» (IEBH, 2026-10-17).
 - `generar_compuestos.py` no publica si falla algo: seis clases en orden, ids
   únicos, NFC sin ṁ, toda llamada con su nota, todo bloque IEBH con su fuente,
   todo Kacc. §N con su página `/s/N/`.
@@ -624,10 +631,9 @@ La cadena es de tres pasos, y cada uno se rehace solo:
 - `compuestos_aplicar.py` omite los lotes sin `verif-X.json` (el lote N, género
   de los compuestos según la nota de Nandisena, espera verificación y la marca
   del IEBH; D-016 incluido).
-- **Pendiente**: el resto de la revisión del IEBH (pasos 3–5, unos 190 puntos), el lote N, la edición inglesa
-  (no hay inglés de Nandisena para este documento: se traduce siguiendo su inglés
-  del cap. 4 y la terminología de U Sīlānanda,
-  `docs/privado/compuestos/terminologia-ingles.md`) y la mitad inglesa de la guía.
+- **Pendiente**: el resto de la revisión del IEBH (pasos 3–5, unos 190 puntos), el lote N,
+  la revisión del inglés por el IEBH y la mitad inglesa de la guía (terminología:
+  `docs/privado/compuestos/terminologia-ingles.md`).
 
 ## Estado de recursos/paradigmas
 

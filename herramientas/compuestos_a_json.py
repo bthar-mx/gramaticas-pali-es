@@ -957,6 +957,10 @@ def main(argv):
     }
     out = {"meta": meta, "intro": intro, "clases": clases,
            "resumen": resumen, "notas": notas}
+    # edición inglesa: rellena los «en» vacíos con recursos/compuestos/ingles.json
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import compuestos_ingles
+    en_hechos, en_faltan = compuestos_ingles.rellenar(out)
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
     s = json.dumps(out, ensure_ascii=False, indent=1)
     open(DESTINO, "w", encoding="utf-8").write(nfc(s) + "\n")
@@ -977,6 +981,8 @@ def main(argv):
                     if b["tipo"] == "ejemplos" for f in b["filas"] if f.get("iebh"))
         print("  bloques del IEBH: {0} · anexos: {1} (de ellos, {3} notas pasadas a su tarjeta) · filas del IEBH en tablas: {2}".format(
             iebh, anex, filas, anexadas))
+    print("  inglés: {0} campos rellenados; {1} sin inglés (compuestos_ingles.py --faltan)".format(
+        en_hechos, len(en_faltan)))
     for a in AVISOS:
         print("  ⚠ " + a)
     return 0

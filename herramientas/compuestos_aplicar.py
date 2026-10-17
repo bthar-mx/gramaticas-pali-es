@@ -56,14 +56,15 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESTINO = os.path.join(RAIZ, "recursos", "compuestos", "texto-revisado.txt")
 REGISTRO = os.path.join(RAIZ, "recursos", "compuestos", "aplicado.json")
 
-VERSION = "0.3"
+VERSION = "0.3.1"
 FECHA = "2026-10-17"
 ESTADO_ES = "Borrador revisado (pendiente de aprobación del IEBH)"
 ESTADO_EN = "Revised draft (pending IEBH approval)"
 NOTA_VERSION = ("Se aplicaron las propuestas de revisión según el consejo verificado "
                 "(correcciones, referencias y añadidos rotulados IEBH); primera ronda de "
                 "la revisión del IEBH (177 puntos conformes, ninguno revertido); a la "
-                "espera de la aprobación del resto.")
+                "espera de la aprobación del resto."
+                " v0.3.1: título del documento en inglés, «Compound (samāsa)»; llamadas de nota protegidas de la traducción automática del navegador. Sāvatthī (no «Sāvatthi») en el ejemplo del compuesto relativo de la segunda inflexión. Edición inglesa de la página, en borrador (sin revisar por el IEBH).")
 
 # Notas propuestas como «[^n]: …» que ningún texto llama y que tienen un
 # destino mejor que un párrafo suelto en su L. Cada una, con su porqué en el
