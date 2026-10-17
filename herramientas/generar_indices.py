@@ -406,7 +406,7 @@ EN = {
         "—<i>abyayībhāva</i>, <i>kammadhāraya</i>, <i>digu</i>, <i>tappurisa</i>, "
         "<i>bahubbīhi</i> and <i>dvanda</i>— with their subtypes and the "
         "resolution (<i>viggaha</i>) of every example word by word: Bhikkhu "
-        "Nandisena's document «Compuesto (samāsa)» (2004–2005), under revision "
+        "Nandisena's document «Compound (samāsa)» (2004–2005), under revision "
         "by IEBH. Search ignores diacritics, with a practice mode and a guide "
         "to recognising the class of a compound. Draft under review.",
     "Clasificación de los suttas de Kaccāyana":
