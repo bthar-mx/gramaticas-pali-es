@@ -850,7 +850,7 @@ GRUPOS_RECURSOS = [
          "Prefijos, partículas y demás indeclinables (<i>abyaya</i>) de "
          "Bhikkhu Nandisena",
          "Bhikkhu Nandisena's prefixes, particles and other indeclinables "
-         "(<i>abyaya</i>)", True),
+         "(<i>abyaya</i>)", False),
         ("compuestos/", "Compuestos", "Compounds",
          "Las seis clases de <i>samāsa</i> de Bhikkhu Nandisena, con la "
          "resolución de cada ejemplo y un modo de práctica",
