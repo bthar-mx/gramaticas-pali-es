@@ -721,6 +721,24 @@
    "regla": "enclítico aparte",
    "fuente": "Tipiṭaka CST (VRI): convertido por regla",
    "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0535",
+   "antes": "| pavaddhaṃ | resolución del compuesto | bhusaṃ | vaddhaṃ |",
+   "despues": "| pavaddhaṃ | resolución del compuesto | bhusaṃ | vaddhaṃ | (sarīraṃ) |",
+   "regla": "retoque del IEBH (C-031)",
+   "fuente": "Rū., p. 189: «bhusaṃ vaddhaṃ pavaddhaṃ, sarīraṃ»",
+   "nota": "Nota del IEBH en la revisión (2026-10-17): añadir «sarīraṃ», que da Rūpasiddhi."
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0536",
+   "antes": "| muy crecido / (el cuerpo) |  | mucho | crecido |",
+   "despues": "| muy crecido (el cuerpo) |  | mucho | crecido | (el cuerpo) |",
+   "regla": "retoque del IEBH (C-031)",
+   "fuente": "Rū., p. 189",
+   "nota": "idem"
   }
  ],
  "ocr": [],

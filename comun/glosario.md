@@ -297,6 +297,28 @@ Normativo. Un término pāḷi se traduce siempre igual en todo el repositorio.
 | *liṅgattha* | significado de la base | «Liṅgatthe paṭhamā»: lo que va en la primera inflexión, incluido el agente u objeto ya expresado («ākhyātakitataddhitasamāsehi vutto»). | Saddanīti, IEBH 2026-10-14 — Sadd. §577 · Kacc. §284 · Rū. 283 |
 | *upādāpaññatti* | concepto derivado | «ghaṭapaṭādivohārattho»: lo designado en dependencia de formas, etc.; uno de los dos *liṅgattha*. | Saddanīti, IEBH 2026-10-14 — Sadd. §577 |
 | *tajjāpaññatti* | concepto de lo real | «kakkhaḷattādisāmaññākāro» de las realidades últimas; el otro *liṅgattha*. | Saddanīti, IEBH 2026-10-14 — Sadd. §577 |
+| *sadda-samasana* / *attha-samasana* | agrupación de voces / agrupación de significado | Las dos agrupaciones del compuesto; equivalencias de Nandisena en «Compuesto (samāsa)». El compuesto sin elisión (*alutta*) sólo tiene la segunda, según Nandisena; Rūpasiddhi admite también las dos. | Compuestos, IEBH 2026-10-17 — Rū. §331; Sad. (Smith p. 741) |
+| *lutta-samāsa* | compuesto con [inflexión] elidida | Pareja de *alutta-samāsa*. | Compuestos, IEBH 2026-10-17 — Rū. §331 |
+| *pubbapadatthappadhāna* / *uttarapadatthappadhāna* / *ubhayapadatthappadhāna* / *aññapadatthappadhāna* | con predominio del significado del primer miembro / del último / de ambos / de otra palabra | Clasificación por predominio del verso final del Samāsakaṇḍa: compuesto adverbial / determinativo / copulativo / relativo. | Compuestos, IEBH 2026-10-17 — Rū., p. 215 |
+| *mariyādā* / *abhividhi* | límite excluyente / límite incluyente | Sentidos de *ā* en el compuesto adverbial: *āpāṇakoṭikaṃ*, *ākumāraṃ*. | Compuestos, IEBH 2026-10-17 — Rū. §336 |
+| *nicca-samāsa* / *anicca-samāsa* | compuesto obligatorio («siempre compuesto», Nandisena) / compuesto facultativo | El obligatorio no se resuelve con sus propias palabras. | Compuestos, IEBH 2026-10-17 — Rū. §330; Sad. (Smith p. 745) |
+| *asapada-viggaha* (*assapada-viggaha*) | resolución con otra palabra (que no es miembro del compuesto) | Rū. imprime «assapadaviggaho»; Sad., «asapada-»; Mogg-p-ṭ., «asakapadaviggaho». | Compuestos, IEBH 2026-10-17 — Rū. §330; Sad. (Smith p. 752); Mogg-p-ṭ. |
+| *pavattinimitta* | motivo de aplicación (de una palabra) | Lo que hace que una palabra se aplique a una cosa; en el *kammadhāraya* los dos miembros tienen motivos distintos y un mismo referente. | Compuestos, IEBH 2026-10-17 — Rū. §339 |
+| *sambhāvanāpubbapada* | (compuesto adjetivo) cuyo primer miembro expresa lo que se considera o se atribuye | Quinta de las nueve clases de *kammadhāraya*; resolución con *iti*, *hutvā* o *bhūta*. **No** «el primer miembro indica el origen». | Compuestos, IEBH 2026-10-17 — Rū. §339; Nir.; Suttaniddesa, ad Kacc. §324 |
+| *pasajjappaṭisedha* / *pariyudāsa* | negación absoluta / negación por exclusión | «Pasajjappaṭisedhassa, lakkhaṇaṃ vatthunatthitā; vatthuto aññatra vutti, pariyudāsalakkhaṇaṃ». | Compuestos, IEBH 2026-10-17 — Rū. §344 |
+| *ayuttatthasamāsa* | compuesto de miembros no ligados en significado | Contrario de *yuttattha* (significado conectado). | Compuestos, IEBH 2026-10-17 — Rū., p. 190; Nir. |
+| *samāhāra-digu* / *asamāhāra-digu* | compuesto numérico colectivo / compuesto numérico individual | Términos de Nandisena; «individual» en paralelo con el *dvanda*. | Compuestos, IEBH 2026-10-17 — Rū. §349–§350 |
+| *alopa-tappurisa* / *alutta-tappurisa* | compuesto determinativo sin elisión [de la inflexión] | Rū. «Alopatappuriso»; Nir. «aluttatappurisa». | Compuestos, IEBH 2026-10-17 — Rū. §351; Kacc. §317 |
+| *abhidheyya* | significado denotado (lo denotado por el compuesto) | El compuesto relativo toma su género y número: «abhidheyyaliṅgavacano». | Compuestos, IEBH 2026-10-17 — Rū. §352 |
+| *itarītarayoga* | (compuesto copulativo) individual | Los miembros conservan su individualidad; el compuesto va en plural. | Compuestos, IEBH 2026-10-17 — Rū. §357 |
+| *kevalasamuccaya* / *anvācaya* | colección simple / adición secundaria | Los dos sentidos de *ca* que no forman compuesto. | Compuestos, IEBH 2026-10-17 — Rū. §357 |
+| *samāhāra* | colectivo (compuesto); conjunto | En *samāhāra-digu* y *samāhāra-dvanda*. Distinto de *samūha* = «agregación». | Compuestos, IEBH 2026-10-17 — Rū. §349, §359 |
+| *accitatara* | el más venerable | Regla de orden del *dvanda*: «accitataraṃ pubbaṃ nipatati». | Compuestos, IEBH 2026-10-17 — Rū. §357 |
+| *visabhāga* (en el *dvanda*) | distintos pero afines | «Vividhā ca te lakkhaṇato sabhāgā ca kiccato»: distintos por su característica, semejantes por su función. **No** «opuesto». | Compuestos, IEBH 2026-10-17 — Rū. §359 |
+| *pacanacaṇḍāla* | gente de baja condición | Clase de *samāhāra-dvanda*: *orabbhikasūkarikaṃ*, *sapākacaṇḍālaṃ*… | Compuestos, IEBH 2026-10-17 — Rū. §359 |
+| *viggaha* | resolución (de un compuesto) | Nandisena: «resolución (viggaha, vākya)»; para *kita* y *taddhita*, «definición etimológica» (Thitzana: *Etymological Definition*). | Compuestos, IEBH 2026-10-17 — Rū. §331; Mogg-p-ṭ. |
+| *vutti* | forma compuesta o derivada (frente a *vākya*, la frase) | En la teoría del compuesto. No confundir con la *vutti* (glosa en prosa) de un sutta. | Compuestos, IEBH 2026-10-17 — Rū. §351; Nir. |
+| *gamakatta* | capacidad de transmitir el significado | «sāpekkhatte sati pi gamakattā samāso». | Compuestos, IEBH 2026-10-17 — Kacc. §328 |
 
 ## En discusión
 
