@@ -435,7 +435,7 @@ es:{title:'Compuestos (samāsa)',sb:'Compuestos',
   resumen_iebh:'compuesto y resolución en blanco en el original; los completa el IEBH con ejemplos del propio documento',
   kacc_tit:'Sutta de Kaccāyana que define la clase (numeración de Nandisena)',
   vacio:'<p>Bhikkhu Nandisena dejó esta sección sin redactar: el documento tiene el rótulo y nada más, y en la tabla del resumen la fila del <i>dvanda</i> también está en blanco.</p><p>Mientras tanto, el sutta que define la clase está en Kaccāyana: <a class="k" href="../../s/329/">Kacc. §329</a>, <i>Nāmānaṃ samuccayo dvando</i>.</p>',
-  resumen_t:'Tabla de resumen',resumen_s:'La tabla con la que Nandisena cierra el documento. Él sólo llenó las dos primeras filas; las otras cuatro las completa el IEBH (rotuladas).',
+  resumen_t:'Tabla de resumen',resumen_s:'La tabla con la que Nandisena cierra el documento. Él sólo llenó las dos primeras filas; las otras cuatro las completa el IEBH. La columna del significado da las glosas de Nandisena.',
   vaciaCelda:'en blanco en el original',
   mapa_t:'Las seis clases',mapa_s:'Cada tarjeta lleva a su pestaña. El ejemplo es el primero que da el documento.',
   sb_clases:'Las clases',sb_vacio:'Esta pestaña no tiene subtítulos.',
@@ -467,7 +467,7 @@ en:{title:'Compounds (samāsa)',sb:'Compounds',
   resumen_iebh:'compound and resolution blank in the original; IEBH fills them with examples from the document itself',
   kacc_tit:'Kaccāyana sutta that defines the class (Nandisena’s numbering)',
   vacio:'<p>Bhikkhu Nandisena left this section unwritten: the document has the heading and nothing else, and the <i>dvanda</i> row of the summary table is blank too.</p><p>Meanwhile, the sutta that defines the class is in Kaccāyana: <a class="k" href="../../s/329/?lang=en">Kacc. §329</a>, <i>Nāmānaṃ samuccayo dvando</i>.</p>',
-  resumen_t:'Summary table',resumen_s:'The table with which Nandisena closes the document. He filled only the first two rows; IEBH completes the other four (labelled).',
+  resumen_t:'Summary table',resumen_s:'The table with which Nandisena closes the document. He filled only the first two rows; IEBH completes the other four. The meaning column gives Nandisena’s glosses.',
   vaciaCelda:'blank in the original',
   mapa_t:'The six classes',mapa_s:'Each card leads to its tab. The example is the first one the document gives.',
   sb_clases:'The classes',sb_vacio:'This tab has no subheadings.',
@@ -672,8 +672,8 @@ function resumen(){
   const t=T[lang],r=D.resumen;if(!r)return '';
   const cl=CL.map(c=>c.id);
   return `<h2 class="sec">${t.resumen_t}<small>${t.resumen_s}</small></h2><div class="rc-desliza" data-b="resumen" id="resumen"><table class="gtab"><thead><tr>${r.cabecera.map(x=>`<th>${md(L(x))}</th>`).join('')}</tr></thead><tbody>`+
-    r.filas.map((f,i)=>{const fi=(r.filas_iebh||[]).includes(i),ci=((r.celdas_iebh||{})[i]||[]);return `<tr${fi?' class="iebh"':''}>${f.map((x,j)=>{const s=L(x);if(!s.trim())return `<td class="vacia" title="${esc(t.vaciaCelda)}">—</td>`;
-      if(ci.includes(j))return `<td lang="pi" class="td-iebh">${j===ci[0]?chipI({iebh:1,fuente:t.resumen_iebh+(r.fuente_iebh?' · '+r.fuente_iebh:'')}):''}<i>${esc(s)}</i></td>`;
+    r.filas.map((f,i)=>{const ns=r.significado?f.length-1:-1;return `<tr>${f.map((x,j)=>{const s=L(x)||(j===ns?(x.es||''):'');if(!s.trim())return `<td class="vacia" title="${esc(t.vaciaCelda)}">—</td>`;
+      if(j===ns)return `<td>${md(s)}</td>`;
       if(j===1&&cl[i])return `<td><a href="?c=${cl[i]}" data-ir="${cl[i]}">${md(s)}</a></td>`;return `<td${j>=2?' lang="pi"':''}>${j>=2?'<i>'+esc(s)+'</i>':md(s)}</td>`}).join('')}</tr>`}).join('')+'</tbody></table></div>'+notasDe([r]);
 }
 

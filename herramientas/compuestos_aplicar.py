@@ -56,13 +56,14 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESTINO = os.path.join(RAIZ, "recursos", "compuestos", "texto-revisado.txt")
 REGISTRO = os.path.join(RAIZ, "recursos", "compuestos", "aplicado.json")
 
-VERSION = "0.2"
+VERSION = "0.3"
 FECHA = "2026-10-17"
 ESTADO_ES = "Borrador revisado (pendiente de aprobación del IEBH)"
 ESTADO_EN = "Revised draft (pending IEBH approval)"
 NOTA_VERSION = ("Se aplicaron las propuestas de revisión según el consejo verificado "
-                "(correcciones, referencias y añadidos rotulados IEBH), a la espera de "
-                "la aprobación del IEBH.")
+                "(correcciones, referencias y añadidos rotulados IEBH); primera ronda de "
+                "la revisión del IEBH (177 puntos conformes, ninguno revertido); a la "
+                "espera de la aprobación del resto.")
 
 # Notas propuestas como «[^n]: …» que ningún texto llama y que tienen un
 # destino mejor que un párrafo suelto en su L. Cada una, con su porqué en el
@@ -217,6 +218,8 @@ def puntos(props, ver, aud, ov, extra):
     """Los puntos que se aplican, con su texto final; y los que no, con el porqué."""
     aplicar, no = [], []
     for i in sorted(props):
+        if i not in ver:  # lote aún sin verificar (p. ej. N): no se aplica
+            continue
         p, v = props[i], ver[i]
         consejo = ov[i]["rec"] if i in ov else v["consejo"]
         if p["L"] == "0000":

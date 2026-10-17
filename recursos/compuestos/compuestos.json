@@ -1,6 +1,6 @@
 {
  "meta": {
-  "version": "0.2",
+  "version": "0.3",
   "fecha": "2026-10-17",
   "estado": {
    "es": "Borrador revisado (pendiente de aprobación del IEBH)",
@@ -13,7 +13,7 @@
   "titulo_doc": "Compuesto (samāsa)",
   "fuente": "texto-revisado.txt",
   "nota_version": {
-   "es": "Se aplicaron las propuestas de revisión según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH), a la espera de la aprobación del IEBH.",
+   "es": "Se aplicaron las propuestas de revisión según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); primera ronda de la revisión del IEBH (177 puntos conformes, ninguno revertido); a la espera de la aprobación del resto.",
    "en": ""
   }
  },
@@ -13747,6 +13747,10 @@
    {
     "es": "Resolución (viggaha, vākya)",
     "en": ""
+   },
+   {
+    "es": "Significado",
+    "en": "Meaning"
    }
   ],
   "filas": [
@@ -13766,6 +13770,10 @@
     {
      "es": "nagarassa samīpaṃ",
      "en": ""
+    },
+    {
+     "es": "cerca de la ciudad",
+     "en": "near the city"
     }
    ],
    [
@@ -13784,6 +13792,10 @@
     {
      "es": "Buddhaghoso ca so ācariyo ca",
      "en": ""
+    },
+    {
+     "es": "el maestro Buddhaghosa",
+     "en": "the teacher Buddhaghosa"
     }
    ],
    [
@@ -13802,6 +13814,10 @@
     {
      "es": "tayo lokā samāhaṭā",
      "en": ""
+    },
+    {
+     "es": "los tres mundos",
+     "en": "the three worlds"
     }
    ],
    [
@@ -13820,6 +13836,10 @@
     {
      "es": "rañño putto",
      "en": ""
+    },
+    {
+     "es": "hijo del rey",
+     "en": "son of the king"
     }
    ],
    [
@@ -13838,6 +13858,10 @@
     {
      "es": "chinnā hatthā yassa so",
      "en": ""
+    },
+    {
+     "es": "(hombre) cuyas manos han sido cortadas",
+     "en": "(a man) whose hands have been cut off"
     }
    ],
    [
@@ -13856,9 +13880,14 @@
     {
      "es": "Sāriputto ca Moggallāno ca",
      "en": ""
+    },
+    {
+     "es": "Sāriputta y Moggallāna",
+     "en": "Sāriputta and Moggallāna"
     }
    ]
   ],
+  "significado": true,
   "filas_iebh": [
    2,
    3,

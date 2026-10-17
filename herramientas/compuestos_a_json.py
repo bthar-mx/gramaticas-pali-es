@@ -98,6 +98,19 @@ AVISOS = []
 META = {}
 
 
+
+# Significado de los compuestos de la tabla de resumen (glosas de Nandisena:
+# texto del documento y Kaccāyana, cap. 4, §319, §322, §324, §326, §329)
+SIGNIFICADO_RESUMEN = {
+    "upanagaraṃ": {"es": "cerca de la ciudad", "en": "near the city"},
+    "Buddhaghosācariyo": {"es": "el maestro Buddhaghosa", "en": "the teacher Buddhaghosa"},
+    "tilokaṃ": {"es": "los tres mundos", "en": "the three worlds"},
+    "rājaputto": {"es": "hijo del rey", "en": "son of the king"},
+    "chinnahattho": {"es": "(hombre) cuyas manos han sido cortadas",
+                     "en": "(a man) whose hands have been cut off"},
+    "Sāriputtamoggallānā": {"es": "Sāriputta y Moggallāna", "en": "Sāriputta and Moggallāna"},
+}
+
 def avisar(L, txt):
     AVISOS.append("L{0}: {1}".format(L, txt))
 
@@ -473,6 +486,16 @@ def bloque_tabla(tipo, L, hasta, filas, fmt_celdas, filas_iebh=()):
     if tipo == "resumen":
         b = {"tipo": "resumen", "cabecera": [bil(c) for c in filas[0]],
              "filas": [[bil(c) for c in f] for f in filas[1:]]}
+        # columna del significado (pedido del IEBH, 2026-10-17): las glosas de
+        # Nandisena en este documento y en el capítulo 4 (español e inglés)
+        b["cabecera"].append({"es": "Significado", "en": "Meaning"})
+        for f in b["filas"]:
+            g = SIGNIFICADO_RESUMEN.get(f[2]["es"].strip())
+            if g is None:
+                avisar(L, "resumen: sin significado para «{0}»".format(f[2]["es"]))
+                g = {"es": "", "en": ""}
+            f.append(dict(g))
+        b["significado"] = True
         if iebh:
             b["filas_iebh"] = [i - 1 for i in sorted(iebh)]
             # las celdas que llenó el IEBH (las demás de la fila son de Nandisena)
