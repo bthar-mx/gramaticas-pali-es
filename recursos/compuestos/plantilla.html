@@ -270,6 +270,8 @@ kbd{font:600 10px/1 var(--mono);border:1px solid var(--border2);border-bottom-wi
 .cual-prueba .il-c{font-size:21px}
 .cual-prueba .il-t{font-size:15px}
 .cual-prueba .vacio{color:var(--text2);font-size:15px}
+.cual-prueba .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text2);flex-basis:100%}
+.cual .cual-prueba{margin:10px 0 14px}
 .camino{list-style:none;margin:18px 0 0;padding:0;counter-reset:paso}
 .camino li{position:relative;margin:0 0 10px;padding:0 0 0 42px;counter-increment:paso}
 .camino li::before{content:counter(paso);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;
@@ -504,13 +506,13 @@ en:{tit:'Practise',sub:'A random compound from the whole page. Say which class i
   teclas:'Keyboard: 1–6 for the class, Enter to check and to go to the next one.',
   stats:'By class'}};
 const G={
-es:{tit:'¿Qué compuesto es?',intro:'Unas pocas preguntas, de sí o no, que llevan a la clase. Vaya contestando con el compuesto delante.',
+es:{tit:'¿Qué compuesto es?',intro:'Conteste Sí o No a cada pregunta pensando en este compuesto: cada respuesta lleva a la siguiente pregunta o a la clase. Con «Otro» cambia el compuesto; las preguntas sirven también para cualquier compuesto que usted tenga delante.',comp:'Compuesto',
   aviso:'Orientación del IEBH a partir de las formas de resolución que da el documento; no es una regla de las gramáticas.',
   probar:'Probar con un compuesto de la página',otro:'Otro',sin:'Puede contestar pensando en cualquier compuesto, o pedir uno de la página.',
   si:'Sí',no:'No',ej:'Ejemplo',deNuevo:'Volver a empezar',atras:'← Atrás',es:'Es',ojo:'Ojo',
   ir:c=>`Ver el ${c} en la página →`,acierto:c=>`Bien: el documento lo da como ${c}.`,fallo:(c,d)=>`El documento lo da como ${d}, no como ${c}. Vea dónde se torció el camino.`,
   noDecide:'Sin decidir',resp:{si:'sí',no:'no'}},
-en:{tit:'Which compound is it?',intro:'A few yes-or-no questions that lead to the class. Answer them with the compound in front of you.',
+en:{tit:'Which compound is it?',intro:'Answer Yes or No to each question with this compound in mind: each answer leads to the next question or to the class. «Another» changes the compound; the questions also work for any compound you have in front of you.',comp:'Compound',
   aviso:'An IEBH aid built from the forms of resolution the document gives; it is not a rule of the grammars.',
   probar:'Try with a compound from the page',otro:'Another',sin:'You can answer with any compound in mind, or ask for one from the page.',
   si:'Yes',no:'No',ej:'Example',deNuevo:'Start again',atras:'← Back',es:'It is',ojo:'Note',
@@ -844,13 +846,14 @@ addEventListener('keydown',e=>{
 let cualCamino=[],cualPrueba=null;
 function cualHTML(){
   const g=G[lang];
-  return `<section class="cual"><h2>${g.tit}</h2><p class="intro">${g.intro}</p><p class="aviso-g">${g.aviso}</p>
-  <div class="cual-prueba" id="cual-prueba"></div><ol class="camino" id="camino"></ol><div id="cual-fin"></div></section>`;
+  return `<section class="cual"><h2>${g.tit}</h2><div class="cual-prueba" id="cual-prueba"></div><p class="intro">${g.intro}</p><p class="aviso-g">${g.aviso}</p>
+  <ol class="camino" id="camino"></ol><div id="cual-fin"></div></section>`;
 }
 function cualPintar(){
   const g=G[lang],t=T[lang];
   const pr=document.getElementById('cual-prueba');
-  pr.innerHTML=(cualPrueba?`<span class="il-c" lang="pi">${esc(cualPrueba.comp)}</span>${L(cualPrueba.trad)?`<span class="il-t">${trad(L(cualPrueba.trad))}</span>`:''}`:`<span class="vacio">${g.sin}</span>`)+
+  if(!cualPrueba&&BANCO.length)cualPrueba=BANCO[Math.floor(Math.random()*BANCO.length)];
+  pr.innerHTML=`<span class="lbl">${g.comp}</span>`+(cualPrueba?`<span class="il-c" lang="pi">${esc(cualPrueba.comp)}</span>${L(cualPrueba.trad)?`<span class="il-t">${trad(L(cualPrueba.trad))}</span>`:''}`:`<span class="vacio">${g.sin}</span>`)+
     ` <button class="btn sec" id="cual-otro" style="margin-left:auto">${cualPrueba?g.otro:g.probar}</button>`;
   document.getElementById('cual-otro').onclick=()=>{cualPrueba=BANCO[Math.floor(Math.random()*BANCO.length)];cualCamino=[];cualPintar()};
   const ol=document.getElementById('camino');let h='',id=GUIA[0].id,fin=null;
