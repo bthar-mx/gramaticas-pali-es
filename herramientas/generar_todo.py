@@ -128,6 +128,12 @@ def main():
     if os.path.exists(os.path.join(recursos, "indeclinables", "plantilla.html")):
         fallos += correr("generar_indeclinables.py")
 
+    # compuestos (samāsa) · Bhikkhu Nandisena, en revisión por IEBH (borrador).
+    # Publica recursos/compuestos/compuestos.json, que escribe
+    # compuestos_a_json.py a partir del texto revisado (no se rehace aquí).
+    if os.path.exists(os.path.join(recursos, "compuestos", "plantilla.html")):
+        fallos += correr("generar_compuestos.py")
+
     # términos técnicos sin entrada en el glosario de los globos (aviso, no
     # error): palabras pāḷi del texto explicativo de la clasificación y del
     # análisis que no cubre ninguna forma de recursos/terminos/terminos.json

@@ -575,6 +575,56 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
   `docs/casos/usos-revision.md`), y cotejar los ejemplos canónicos con el
   corpus del Sexto Concilio.
 
+## Estado de recursos/compuestos
+
+La referencia de los compuestos (`/recursos/compuestos/`, v0.2, **borrador
+revisado, pendiente de la aprobación del IEBH**, 2026-10-17) es el documento
+«Compuesto (samāsa)» de **Bhikkhu Nandisena** (Word, 2004–2005; sigue a
+Rūpasiddhi y a Kaccāyana; quedó sin terminar), en edición revisada por IEBH.
+Atribución: «Bhikkhu Nandisena, edición revisada por IEBH»; lo añadido lleva la
+etiqueta **IEBH** y su fuente.
+
+La cadena es de tres pasos, y cada uno se rehace solo:
+
+    python3 herramientas/compuestos_aplicar.py <carpeta de trabajo>   # → recursos/compuestos/texto-revisado.txt
+    python3 herramientas/compuestos_a_json.py recursos/compuestos/texto-revisado.txt   # → compuestos.json
+    python3 herramientas/generar_compuestos.py                        # → site/recursos/compuestos/
+
+- `compuestos_aplicar.py` aplica al texto congelado de Nandisena las propuestas
+  verificadas, según la decisión de cada una; la carpeta de trabajo (propuestas,
+  verificaciones, auditoría de referencias) es privada:
+  `docs/privado/compuestos/` (`trabajo-revision.tgz`). Deja el registro en
+  `recursos/compuestos/aplicado.json`.
+- **Para corregir el texto ya publicado sin rehacer la revisión**, se edita
+  `recursos/compuestos/texto-revisado.txt` (formato `NNNN  {estilo} texto`;
+  líneas `{IEBH …}` para lo añadido) y se corren los dos últimos pasos. Ojo:
+  correr de nuevo `compuestos_aplicar.py` sobreescribe esas ediciones (salvo
+  la grafía de los sandhis, que reaplica `compuestos_sandhi_em.py`).
+- **Sandhi en «edición moderna»** (pedido del IEBH, 2026-10-17): el pāḷi citado
+  va con las palabras separadas en la juntura —apóstrofo para la vocal elidida,
+  «ti» y los enclíticos aparte: *c’ assa*, *samāso ti*, *nāmānam eva*—, como en
+  la edición del IEBH de Rūpasiddhi; los compuestos nunca se parten. La tabla de
+  cambios es `recursos/compuestos/sandhi-em.json` (con las dudas pendientes) y
+  la aplica `herramientas/compuestos_sandhi_em.py` al final de
+  `compuestos_aplicar.py`. El formato de negritas del original está en
+  `recursos/compuestos/samasa6-formato.json`.
+- `generar_compuestos.py` no publica si falla algo: seis clases en orden, ids
+  únicos, NFC sin ṁ, toda llamada con su nota, todo bloque IEBH con su fuente,
+  todo Kacc. §N con su página `/s/N/`.
+- Orden de la página: el del documento (Rūpasiddhi). dvanda = «compuesto
+  copulativo» (decisión T-001); Nandisena dejó la sección vacía y la escribió el
+  IEBH a partir de Rū. §357–§360.
+- Citas: Rū. por § (CST, 330–360) y página birmana; Niruttidīpanī por **página
+  birmana** («Nir. 247», como Nandisena), no por la del PDF de la VRI;
+  Moggallāna-pañcikā-ṭīkā = «Mogg-p-ṭ., p. N»; Saddanīti XXIII = «Sad. (Smith
+  p. N)»; las clases de U Sīlānanda, «según U Sīlānanda (clase N)». El IEBH
+  decidió el 2026-10-17 publicar las citas de Sad. (Smith) y de las clases tal
+  como están.
+- **Pendiente**: la revisión del IEBH sobre la página v0.2, la edición inglesa
+  (no hay inglés de Nandisena para este documento: se traduce siguiendo su inglés
+  del cap. 4 y la terminología de U Sīlānanda,
+  `docs/privado/compuestos/terminologia-ingles.md`) y la mitad inglesa de la guía.
+
 ## Estado de recursos/paradigmas
 
 La referencia de paradigmas (`/recursos/paradigmas/`, v1.18) son **85 paradigmas**

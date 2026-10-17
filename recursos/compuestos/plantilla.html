@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Compuestos (samāsa)</title>
+<meta name="version" content="__VERSION__">
+<meta name="version-date" content="__VERSION_DATE__">
+<meta name="description" content="Los compuestos (samāsa) del pāḷi en sus seis clases —abyayībhāva, kammadhāraya, digu, tappurisa, bahubbīhi y dvanda—, con la resolución (viggaha) de cada ejemplo palabra por palabra: el documento de Bhikkhu Nandisena (2004–2005), en revisión por IEBH. Con un modo de práctica y una guía para reconocer la clase.">
+<style>
+/* La paleta, la letra, el bloque del título, el índice lateral, la barra
+   de mandos, el ↑ y el pie son comunes: site/assets/base.css y
+   site/assets/recursos.css (etapa 4b). Aquí, lo que sólo tiene esta página. */
+html{scroll-padding-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 12px)}
+main.wrap{min-height:40vh}
+.sidebar a{padding:3px 18px;font-size:14px;line-height:1.35}
+.sidebar a.n3{padding-left:32px;font-size:13.5px;color:var(--text2)}
+.sidebar a i{font-style:italic}
+.sidebar a .sd{display:block;font-size:12px;line-height:1.3;color:var(--text3);margin-top:1px;white-space:normal}
+.sidebar a.on .sd{color:inherit;opacity:.8}
+.sidebar a .sn{font:600 10px/1 var(--mono);color:var(--text3);margin-right:6px}
+.sidebar a[hidden]{display:none}
+.sb-vacio{padding:6px 18px;font-size:13.5px;color:var(--text2)}
+
+/* el aviso y el enlace a la guía */
+.aviso{margin:14px 0 0;max-width:70ch;font-size:14.5px;color:var(--text2);border-left:2px solid var(--rakta);padding-left:10px}
+.guia-l{margin:10px 0 0;font-size:15px}
+.guia-l a{color:var(--accent);text-decoration:none;border-bottom:1px dotted currentColor}
+.guia-l a:hover{color:var(--haritala)}
+
+/* las pestañas: el texto (introducción, seis clases, resumen) y las dos
+   herramientas (practicar, ¿qué compuesto es?) */
+.tabs-fila{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:flex-start;margin:18px 0 0}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0}
+.tabs.herr{margin-left:auto}
+.tabs button{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.04em;border:1px solid var(--border);background:var(--bg2);
+  color:var(--text2);padding:6px 10px;border-radius:2px;cursor:pointer;display:flex;gap:6px;align-items:baseline}
+.tabs button .tn{color:var(--haritala)}
+.tabs button .tp{font-family:var(--serif);font-style:italic;font-weight:400;font-size:14px;letter-spacing:0;color:var(--text)}
+.tabs button .te{font-weight:500}
+.tabs button[aria-selected=true]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.tabs button[aria-selected=true] .tn,.tabs button[aria-selected=true] .tp{color:var(--bg)}
+.tabs button .hits{font-size:10px;color:var(--accent);min-width:0}
+.tabs button .hits:empty{display:none}
+.tabs button[aria-selected=true] .hits{color:var(--bg)}
+.tabs button.cero{opacity:.45}
+.tabs.herr button{border-style:dashed;border-color:var(--border2)}
+.tabs.herr button .ic{color:var(--haritala);font-size:12px}
+.tabs.herr button[aria-selected=true]{border-style:solid}
+.tabs.herr button[aria-selected=true] .ic{color:var(--bg)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+/* la cabecera de una clase */
+.clcab{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 18px;align-items:end;margin:30px 0 8px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.clcab .num{grid-row:1/3;font:700 64px/0.85 var(--serif);color:var(--haritala);opacity:.9}
+.clcab h2{margin:0;font:italic 700 34px/1.1 var(--serif);letter-spacing:-.01em;overflow-wrap:anywhere}
+.clcab .sub{margin:4px 0 0;font-size:17px;color:var(--text2)}
+.clcab .meta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:12px;font:11px/1.4 var(--mono);color:var(--text2)}
+.ref-k{color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:999px;padding:1px 9px;background:var(--bg2)}
+.ref-k:hover{background:var(--accent-bg)}
+.clcab .meta .dato{padding:2px 0}
+
+/* los bloques de texto */
+.bl{margin:12px 0 0;max-width:76ch;line-height:1.62}
+a.k{color:var(--accent);text-decoration:none;border-bottom:1px dotted currentColor}
+h3.st,h4.st{scroll-margin-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 12px);position:relative}
+h3.st{margin:38px 0 4px;font:700 21px/1.3 var(--serif);max-width:60ch}
+h3.st::before{content:'';display:block;width:34px;height:2px;background:var(--haritala);margin-bottom:12px}
+h4.st{margin:28px 0 2px;font:600 17.5px/1.35 var(--serif);color:var(--haritala);padding-left:12px;border-left:2px solid var(--haritala)}
+.st .pal{font-style:italic;color:var(--text2);font-weight:400}
+.st .ref-h{font:400 13.5px/1.4 var(--sans);color:var(--text3);white-space:normal}
+.todo-iebh .ej-w>.chip.iebh{display:none}
+a.ancla{position:absolute;left:-22px;top:auto;opacity:0;color:var(--text3);text-decoration:none;font:400 15px/1 var(--mono);padding:2px}
+.st:hover a.ancla,.il:hover a.ancla,.def:hover a.ancla{opacity:1}
+ul.lst{margin:10px 0 0;padding-left:22px;max-width:74ch}
+ul.lst li{margin:3px 0;line-height:1.5}
+dl.pares{display:grid;grid-template-columns:minmax(0,15em) minmax(0,1fr);gap:6px 22px;margin:12px 0 0;max-width:74ch;padding:12px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:3px}
+dl.pares dt{font:600 13px/1.5 var(--sans);color:var(--text2)}
+dl.pares dd{margin:0;line-height:1.5}
+.def{position:relative;margin:18px 0 0;max-width:76ch;padding:12px 16px;border-left:3px solid var(--haritala);background:var(--bg2);line-height:1.6;scroll-margin-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 12px)}
+.def b:first-child{font-style:italic;font-size:18px}
+.vacio-cl{margin:24px 0 0;max-width:66ch;padding:16px 18px;border:1px dashed var(--border2);border-radius:3px;color:var(--text2)}
+.vacio-cl p{margin:0 0 8px}
+.vacio-cl p:last-child{margin:0}
+.chip{display:inline-block;font:600 10px/1.5 var(--mono);letter-spacing:.05em;border-radius:2px;padding:0 6px;vertical-align:2px;margin-left:6px;cursor:help;white-space:nowrap}
+.chip.iebh{color:var(--bg2);background:var(--haritala)}
+.chip .ck{font-weight:400;letter-spacing:.02em;opacity:.9;margin-left:4px}
+/* lo que añade el IEBH: rotulado, pero más callado que el texto de Nandisena */
+.bl.iebh{font-size:14.5px;line-height:1.55;color:var(--text2);padding:1px 0 1px 12px;border-left:2px solid var(--border2);max-width:80ch}
+.bl.iebh .chip.iebh,.il-anexo .chip.iebh,.ejt .chip.iebh,.gtab .chip.iebh{margin:0 7px 0 0;vertical-align:1px;font-size:9px;padding:0 5px;opacity:.85}
+.def.iebh{background:none;border-left-color:var(--border2)}
+h3.st.iebh::before{background:var(--border2)}
+.il.iebh{border-style:dashed}
+.il.iebh .il-cab{padding-right:46px}
+.il-anexo{margin:8px 0 0;font-size:13.5px;line-height:1.45;color:var(--text2)}
+.il .il-anexo .chip{position:static}
+.ilgrid>.bl.iebh{grid-column:1/-1;margin:2px 0}
+.verso-u .verso{margin:8px 0 6px 18px;font-style:italic;font-size:16px;line-height:1.6;color:var(--text)}
+.verso-u .verso-t{margin:0}
+.td-iebh{box-shadow:inset 2px 0 0 var(--border2)}
+.ejt tr.iebh td.re,.ejt tr.iebh td.co,.ejt tr.iebh td.tr{opacity:.88}
+.ejt tr.iebh td:first-child{box-shadow:inset 2px 0 0 var(--border2)}
+.fuente.chica{font-size:12.5px;border-left-color:var(--border2);color:var(--text3)}
+.solo-iebh{margin:18px 0 0;max-width:72ch;font-size:14.5px;color:var(--text2);padding:10px 14px;border:1px dashed var(--border2);border-radius:3px}
+.solo-iebh .chip{margin:0 4px 0 0}
+/* en una sección que sólo tiene texto del IEBH (dvanda), el texto va a tamaño normal */
+.todo-iebh .bl.iebh{font-size:inherit;line-height:1.62;color:var(--text);border-left:0;padding-left:0;max-width:76ch}
+.todo-iebh .bl.iebh>.chip.iebh,.todo-iebh h3.st>.chip.iebh,.todo-iebh h4.st>.chip.iebh{display:none}
+.todo-iebh h3.st.iebh::before{background:var(--haritala)}
+.fuente{margin:6px 0 0;font-size:13.5px;color:var(--text2);border-left:2px solid var(--haritala);padding-left:9px;max-width:76ch}
+.fuente b{font:600 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--haritala);margin-right:6px}
+sup.fn a{color:var(--accent);text-decoration:none;font-family:var(--mono);font-size:.72em;padding:0 1px}
+
+/* la resolución palabra por palabra */
+.ilgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin:14px 0 0}
+.il{position:relative;background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:14px 16px 13px;min-width:0;
+  scroll-margin-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 12px);transition:border-color .15s,box-shadow .15s}
+.il.ancho{grid-column:1/-1}
+.il:hover{border-color:var(--border2)}
+.il.foco{border-color:var(--haritala);box-shadow:0 0 0 2px var(--hl)}
+.il-cab{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;padding-right:18px}
+.il-c{font:italic 700 23px/1.2 var(--serif);color:var(--text);overflow-wrap:anywhere}
+.il-t{font-size:16px;line-height:1.4;color:var(--text2)}
+.il-t::before{content:'«'}
+.il-t::after{content:'»'}
+.il-v{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px 14px;margin-top:11px;padding-top:10px;border-top:1px dashed var(--border)}
+.il-v .lv{flex:0 0 100%;font:600 9.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:-2px}
+.tk{display:inline-flex;flex-direction:column;min-width:0;max-width:100%}
+.tk .p{font:italic 17.5px/1.25 var(--serif);color:var(--accent);overflow-wrap:anywhere}
+.tk .g{margin-top:3px;padding-top:3px;border-top:1px solid var(--border);font:400 12.5px/1.3 var(--sans);color:var(--text2);max-width:20ch}
+.tk.sinG .g{border-top-color:transparent}
+.tk.sep{margin-left:-10px}
+.tk.sep .p{color:var(--text2);font-style:normal}
+.tk.r .p{color:var(--haritala);font-weight:700}
+.tk.r .g{border-top:2px solid var(--haritala);color:var(--text)}
+.il-alt{margin-top:8px}
+.il-alt .lv{color:var(--text3)}
+.il-resto{margin:8px 0 0;font-size:14.5px;color:var(--text2)}
+.il-sin{margin:9px 0 0;font-size:13.5px;color:var(--text3);font-style:italic}
+.il .chip{position:absolute;top:10px;right:12px;margin:0}
+.il a.ancla{left:auto;right:8px;top:auto;bottom:6px;font-size:13px}
+.il.glosa{background:none;border-style:dashed;justify-self:start;max-width:100%}
+.il.glosa .il-v{margin-top:0;padding-top:0;border-top:0}
+
+/* ejemplos en tabla: sentido · resolución · compuesto · traducción */
+.ejt{width:100%;border-collapse:collapse;margin:14px 0 0;font-size:15.5px}
+.ejt th{text-align:left;font:600 10px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text2);padding:8px 10px;border-bottom:1px solid var(--text2);vertical-align:bottom}
+.ejt td{padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:baseline}
+.ejt tr:has(+ tr.sigue) td{border-bottom-style:dotted}
+.ejt td.se{color:var(--text2);font-size:14.5px;width:22%}
+.ejt td.re{font-style:italic;color:var(--accent)}
+.ejt td.co{font-style:italic;font-weight:700;white-space:nowrap}
+.ejt td.tr{color:var(--text2)}
+.ejt tr.grupo td{border-top:1px solid var(--border2)}
+.ejt tbody tr:target td,.ejt tbody tr.foco td{background:var(--hl)}
+@media (max-width:700px){
+  .ejt thead{display:none}
+  .ejt,.ejt tbody,.ejt tr,.ejt td{display:block;width:auto}
+  .ejt tr{display:flex;flex-wrap:wrap;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--border)}
+  .ejt td.se{order:0;flex:0 0 100%}.ejt td.co{order:1}.ejt td.tr{order:2}.ejt td.re{order:3;flex:0 0 100%}
+  .ejt td{border:0;padding:0}
+  .ejt td.se{width:auto;font:600 10.5px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--haritala);margin-bottom:4px}
+  .ejt td.se:empty{display:none}
+  .ejt td.co{font-size:19px;white-space:normal;display:inline}
+  .ejt td.tr{display:inline;margin-left:8px}
+  .ejt td.tr:not(:empty)::before{content:'«'}
+  .ejt td.tr:not(:empty)::after{content:'»'}
+  .ejt td.re{margin-top:4px}
+  .ejt td.re::before{content:'= ';font-style:normal;color:var(--text3)}
+  .ejt tr.grupo td{border-top:0}
+}
+
+/* paradigmas y tablas */
+.ptab{border-collapse:collapse;font-size:15.5px;margin:14px 0 0;min-width:min(100%,420px)}
+.ptab th{text-align:left;font:600 10px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text2);padding:7px 12px;border-bottom:1px solid var(--text2)}
+.ptab td{padding:6px 12px;border-bottom:1px solid var(--border);vertical-align:baseline}
+.ptab td:first-child{font:500 12px/1.4 var(--mono);color:var(--text2);white-space:nowrap}
+.ptab td.f{font-style:italic}
+.gtab{border-collapse:collapse;font-size:15px;margin:14px 0 0;width:100%}
+.gtab td,.gtab th{padding:7px 10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:baseline}
+.gtab th{font:600 10px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text2);border-bottom-color:var(--text2)}
+.gtab td.vacia{color:var(--text3)}
+.gtab td a{color:var(--accent);text-decoration:none}
+
+/* las notas de cada pestaña */
+.gnotas{margin:34px 0 0;padding:10px 0 0;border-top:1px dashed var(--border);font-size:14.5px;color:var(--text2);max-width:78ch}
+.gnotas h3{font:600 10.5px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;color:var(--text2)}
+.gnotas p{margin:4px 0;line-height:1.55;scroll-margin-top:calc(var(--cabecera-h,0px) + var(--barh,74px) + 12px)}
+.gnotas p:target{background:var(--hl)}
+.gnotas .nn{font:600 10.5px/1 var(--mono);color:var(--accent);margin-right:7px}
+.gnotas .nadd{display:block;margin:4px 0 0 18px;font-size:13.5px}
+.gnotas .chip.iebh{margin:0 6px 0 0;font-size:9px;padding:0 5px;vertical-align:1px;opacity:.85}
+
+/* el mapa de las clases (introducción) */
+.mapa{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:12px;margin:18px 0 0}
+.mapa a.mc{display:block;text-decoration:none;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:14px 16px 12px;transition:border-color .15s}
+.mapa a.mc:hover{border-color:var(--haritala)}
+.mc .mn{font:700 13px/1 var(--mono);color:var(--haritala)}
+.mc .mp{display:block;margin-top:6px;font:italic 700 21px/1.2 var(--serif)}
+.mc .ms{display:block;margin-top:2px;font-size:15px;color:var(--text2)}
+.mc .mx{display:block;margin-top:10px;font:11px/1.5 var(--mono);color:var(--text2)}
+.mc .mv{display:block;margin-top:8px;font-size:14px;color:var(--text2);border-top:1px dashed var(--border);padding-top:8px}
+.mc .mv i{color:var(--accent)}
+h2.sec{margin:34px 0 0;font:700 22px/1.25 var(--serif)}
+h2.sec small{display:block;font:400 15px/1.4 var(--serif);color:var(--text2);margin-top:2px}
+
+/* practicar */
+.pr{margin:22px 0 0;max-width:820px}
+.pr-cab{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end;justify-content:space-between}
+.pr-cab h2{margin:0;font:700 26px/1.2 var(--serif)}
+.pr-cab p{margin:4px 0 0;color:var(--text2);max-width:58ch;font-size:15.5px}
+.pr-marc{display:flex;gap:18px;align-items:baseline;font:12px/1.3 var(--mono);color:var(--text2)}
+.pr-marc b{font:700 24px/1 var(--serif);color:var(--text);margin-right:4px}
+.pr-marc button{font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;background:none;color:var(--text2);border:1px solid var(--border);border-radius:2px;padding:5px 7px;cursor:pointer}
+.pr-op{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 0}
+.pr-op .lbl{margin-right:2px}
+.pr-filtro button .tp{font-family:var(--serif);font-style:italic;font-weight:400;font-size:13px;letter-spacing:0;text-transform:none}
+.pr-tarj{margin:16px 0 0;background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:26px 26px 22px;box-shadow:0 6px 24px var(--shadow)}
+.pr-q{font:600 10.5px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--text2);margin:0}
+.pr-c{margin:12px 0 0;font:italic 700 clamp(30px,6vw,46px)/1.1 var(--serif);overflow-wrap:anywhere;color:var(--text)}
+.pr-t{margin:6px 0 0;font-size:18px;color:var(--text2)}
+.pr-t:empty{display:none}
+.pr-ops{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:8px;margin:20px 0 0}
+.pr-ops button{display:flex;align-items:baseline;gap:9px;text-align:left;font:15px/1.3 var(--serif);color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:11px 13px;cursor:pointer;min-height:44px}
+.pr-ops button .n{font:700 12px/1 var(--mono);color:var(--haritala)}
+.pr-ops button .tp{font-style:italic;font-weight:700}
+.pr-ops button .te{color:var(--text2);font-size:13.5px}
+.pr-ops button:hover:not(:disabled){border-color:var(--text2)}
+.pr-ops button:disabled{cursor:default}
+.pr-ops button.bien{border-color:var(--marakata);background:var(--green-bg);box-shadow:inset 3px 0 0 var(--marakata)}
+.pr-ops button.mal{border-color:var(--rakta);background:var(--hl-ce);box-shadow:inset 3px 0 0 var(--rakta)}
+.pr-ops button.atenua{opacity:.5}
+.pr-esc{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+.pr-esc input{flex:1 1 280px;min-width:0;font:italic 18px/1.3 var(--serif);color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:10px 12px}
+.pr-esc input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.btn{font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--bg2);border:1px solid var(--accent);border-radius:2px;padding:11px 15px;cursor:pointer;min-height:42px}
+.btn.sec{background:var(--bg);color:var(--text);border-color:var(--border2)}
+.btn:focus-visible{outline:2px solid var(--haritala);outline-offset:2px}
+.pr-res{margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--border)}
+.pr-ver{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 10px;font-size:17px}
+.pr-ver .v{font:700 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:5px 8px;border-radius:2px}
+.pr-ver .v.bien{background:var(--marakata);color:var(--bg2)}
+.pr-ver .v.mal{background:var(--rakta);color:var(--bg2)}
+.pr-ver .v.casi{background:var(--haritala);color:var(--bg2)}
+.pr-sol{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;font-size:15.5px;margin:0 0 6px}
+.pr-sol dt{font:600 10px/1.9 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text2)}
+.pr-sol dd{margin:0}
+.pr-sol dd i{color:var(--accent)}
+.pr-res .il{margin-top:10px;background:var(--bg)}
+.pr-acc{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 0}
+.pr-acc a{color:var(--accent);font-size:15px}
+.pr-tuya{font-style:italic;color:var(--text2)}
+.pr-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,120px),1fr));gap:8px;margin:18px 0 0}
+.pr-stats div{font:11px/1.4 var(--mono);color:var(--text2)}
+.pr-stats i{font-family:var(--serif);font-size:14px;color:var(--text)}
+.pr-stats .prb{display:block;position:relative;height:4px;background:var(--border);border-radius:2px;margin-top:4px;overflow:hidden}
+.pr-stats .prb span{position:absolute;left:0;top:0;bottom:0;background:var(--marakata)}
+.pr-teclas{margin:10px 0 0;font:11px/1.4 var(--mono);color:var(--text3)}
+.pr-nada{padding:30px 0;color:var(--text2)}
+kbd{font:600 10px/1 var(--mono);border:1px solid var(--border2);border-bottom-width:2px;border-radius:3px;padding:1px 4px;background:var(--bg)}
+
+/* ¿qué compuesto es? */
+.cual{margin:22px 0 0;max-width:780px}
+.cual h2{margin:0;font:700 26px/1.2 var(--serif)}
+.cual .intro{margin:6px 0 0;color:var(--text2);max-width:62ch}
+.cual .aviso-g{margin:10px 0 0;font-size:13.5px;color:var(--text2);border-left:2px solid var(--haritala);padding-left:9px;max-width:62ch}
+.cual-prueba{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 0;padding:12px 14px;border:1px dashed var(--border2);border-radius:3px}
+.cual-prueba .il-c{font-size:21px}
+.cual-prueba .il-t{font-size:15px}
+.cual-prueba .vacio{color:var(--text2);font-size:15px}
+.camino{list-style:none;margin:18px 0 0;padding:0;counter-reset:paso}
+.camino li{position:relative;margin:0 0 10px;padding:0 0 0 42px;counter-increment:paso}
+.camino li::before{content:counter(paso);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font:700 12px/1 var(--mono);background:var(--bg2);border:1px solid var(--border2);color:var(--text2)}
+.camino li.hecho{opacity:.72}
+.camino li.hecho::before{background:var(--text2);color:var(--bg2);border-color:var(--text2)}
+.camino li.ahora::before{background:var(--haritala);color:var(--bg2);border-color:var(--haritala)}
+.camino .pq{margin:0;font-size:17.5px;line-height:1.45}
+.camino .ej{margin:6px 0 0;font-size:14.5px;color:var(--text2)}
+.camino .ej i{color:var(--accent)}
+.camino .resp{margin-left:8px;font:600 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--haritala)}
+.camino .sino{display:flex;gap:8px;margin:10px 0 2px}
+.camino .sino button{min-width:84px}
+.cual-fin{margin:6px 0 0 42px;padding:18px 20px;background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--haritala);border-radius:3px}
+.cual-fin .lbl{display:block}
+.cual-fin h3{margin:4px 0 0;font:italic 700 28px/1.15 var(--serif)}
+.cual-fin h3 small{display:block;font:400 16px/1.4 var(--serif);font-style:normal;color:var(--text2);margin-top:2px}
+.cual-fin p{margin:10px 0 0;line-height:1.55}
+.cual-fin .ojo{font-size:14.5px;color:var(--text2)}
+.cual-fin .ojo b{font:600 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--haritala);margin-right:6px}
+.cual-fin .cmp{margin-top:12px;font-size:15px}
+.cual-fin .cmp.bien{color:var(--marakata)}
+.cual-fin .cmp.mal{color:var(--rakta)}
+.cual-acc{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 0}
+.cual-acc a{color:var(--accent)}
+
+footer.rc-pie p{max-width:78ch}
+.vacia-s{color:var(--text3)}
+@media (max-width:640px){
+  .tabs button .te{display:none}
+  .tabs.herr{margin-left:0}
+  .clcab .num{font-size:48px}
+  .clcab h2{font-size:28px}
+  .il{padding:13px 13px 12px}
+  .il-c{font-size:21px}
+  .pr-tarj{padding:20px 16px 18px}
+  dl.pares{grid-template-columns:1fr;gap:0 0;padding:10px 12px}
+  dl.pares dd{margin-bottom:8px}
+  .cual-fin{margin-left:0}
+  .camino li{padding-left:38px}
+  a.ancla{display:none}
+}
+@media (pointer:coarse){.tabs button{min-height:40px;padding:8px 11px}}
+@media print{.bar,.sidebar,#top-btn,.tabs-fila{display:none!important}body{padding-left:0}.il{break-inside:avoid}}
+</style>
+</head>
+<body>
+<nav class="sidebar" id="sidebar" aria-label="Índice">
+  <button class="sb-close" id="sbclose" aria-label="Ocultar el índice">☰</button>
+  <div class="sb-brand"><b id="sb-tit">Compuestos</b><span class="lbl">samāsa</span></div>
+  <div id="sb-list"></div>
+</nav>
+<div class="scrim" id="scrim"></div>
+<button id="volver-barra" aria-label="Mostrar el índice">☰</button>
+
+<rc-titulo>
+  <rc-ceja>Instituto de Estudios Buddhistas Hispano</rc-ceja>
+  <rc-h1 id="h1">Compuestos (samāsa)</rc-h1>
+  <rc-desc id="entradilla"></rc-desc>
+  <rc-insignias><span class="version-badge" id="vbadge"></span><span class="borrador" id="borr">borrador</span><button type="button" id="lang-btn"><span class="lang-seg" data-l="es">ES</span><span class="lang-seg" data-l="en">EN</span></button></rc-insignias>
+  <rc-lado><div class="hero fija" id="hero"></div></rc-lado>
+  <rc-debajo>
+  <p class="aviso" id="aviso"></p>
+  <p class="guia-l"><a id="guia-l" href="guia/"></a></p>
+  </rc-debajo>
+</rc-titulo>
+
+<div class="bar" id="bar"><div class="wrap">
+  <button class="icon-btn" id="burger" aria-label="Índice">☰</button>
+  <input type="search" id="q" aria-label="Buscar">
+  <button class="icon-btn" id="theme" aria-label="Claro / oscuro">◐</button>
+  <span class="count" id="count" aria-live="polite"></span>
+</div></div>
+
+<div class="wrap"><div class="tabs-fila">
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="tabs herr" id="tabs-herr" role="tablist"></div>
+</div></div>
+<main class="wrap" id="out"></main>
+<div class="wrap"><div class="empty" id="empty" hidden><p id="empty-t"></p></div></div>
+<button id="top-btn" aria-label="↑">↑</button>
+
+<rc-pie>
+<rc-notas><summary id="notas-sum">Notas y fuentes</summary>
+  <p class="version-foot" id="vfoot"></p>
+  <div id="notas-pie"></div>
+</rc-notas>
+<rc-licencia><span id="lic"></span></rc-licencia>
+</rc-pie>
+<script>
+(function(){
+const D=/*__DATOS__*/{}/*__FIN__*/;
+const M=D.meta, CL=D.clases, byId={};CL.forEach(c=>byId[c.id]=c);
+
+/* ── «¿Qué compuesto es?» ──────────────────────────────────────────
+   Las preguntas, en orden. Son una ORIENTACIÓN del IEBH sacada de las
+   formas de resolución que da el documento (L = su línea), no una regla de
+   las gramáticas: se pueden reordenar o reescribir aquí mismo. «si» y «no»
+   llevan a otra pregunta (su id) o a una clase; «fin» = no se decide. */
+const GUIA=[
+ {id:'relativo',si:'bahubbihi',no:'ca',
+  q:{es:'¿El compuesto designa otra cosa, distinta de lo que dicen sus miembros, y para resolverlo hace falta un pronombre relativo (<i>ya-</i>: <i>yassa</i>, <i>yena</i>, <i>yaṃ</i>…) o la otra palabra (<i>aññapada</i>)?',
+     en:'Does the compound denote something else, other than what its members say, so that resolving it needs a relative pronoun (<i>ya-</i>: <i>yassa</i>, <i>yena</i>, <i>yaṃ</i>…) or the «other word» (<i>aññapada</i>)?'},
+  ej:{es:'<i>chinnahattho</i>: <i>chinnā hatthā yassa purisassa, so ayaṃ chinnahattho puriso</i>, «hombre cuyas manos han sido cortadas» (L1066).',
+      en:'<i>chinnahattho</i>: <i>chinnā hatthā yassa purisassa, so ayaṃ chinnahattho puriso</i>, «a man whose hands have been cut off» (L1066).'}},
+ {id:'ca',si:'dvanda',no:'prefijo',
+  q:{es:'¿Se resuelve juntando los miembros con «<i>ca</i> … <i>ca</i>», cada uno por su cuenta, sin el pronombre <i>ta-</i> (<i>so</i>, <i>sā</i>, <i>taṃ</i>) que los iguala?',
+     en:'Is it resolved by joining the members with «<i>ca</i> … <i>ca</i>», each taken on its own, without the pronoun <i>ta-</i> (<i>so</i>, <i>sā</i>, <i>taṃ</i>) that equates them?'},
+  ej:{es:'<i>sītañ ca uṇhañ ca</i> = <i>sītuṇhaṃ</i>, «frío y calor» (L0272).',en:'<i>sītañ ca uṇhañ ca</i> = <i>sītuṇhaṃ</i>, «cold and heat» (L0272).'}},
+ {id:'prefijo',si:'abyayibhava',no:'numeral',
+  q:{es:'¿El primer miembro es un prefijo (<i>upasagga</i>) o una partícula (<i>nipāta</i>), y la resolución necesita otra palabra que diga su sentido (<i>samīpaṃ</i>, <i>abhāvo</i>, <i>pacchā</i>…)?',
+     en:'Is the first member a prefix (<i>upasagga</i>) or a particle (<i>nipāta</i>), and does the resolution need another word to state its sense (<i>samīpaṃ</i>, <i>abhāvo</i>, <i>pacchā</i>…)?'},
+  ej:{es:'<i>upanagaraṃ</i>: <i>nagarassa samīpaṃ</i>, «cerca de la ciudad» (L0053).',en:'<i>upanagaraṃ</i>: <i>nagarassa samīpaṃ</i>, «near the city» (L0053).'}},
+ {id:'numeral',si:'digu',no:'mismo',
+  q:{es:'¿El primer miembro es un numeral?',en:'Is the first member a numeral?'},
+  ej:{es:'<i>tilokaṃ</i>: <i>tayo lokā samāhaṭā</i> (L0637); <i>ekapuggalo</i>: <i>eko ca so puggalo ca</i> (L0707).',en:'<i>tilokaṃ</i>: <i>tayo lokā samāhaṭā</i> (L0637); <i>ekapuggalo</i>: <i>eko ca so puggalo ca</i> (L0707).'}},
+ {id:'mismo',si:'kammadharaya',no:'caso',
+  q:{es:'¿Los dos miembros se refieren a la misma cosa, de modo que se resuelve con «… <i>ca so</i> … <i>ca</i>» (o con <i>iti</i>, <i>eva</i>, <i>viya</i>)?',
+     en:'Do both members refer to the same thing, so that it is resolved with «… <i>ca so</i> … <i>ca</i>» (or with <i>iti</i>, <i>eva</i>, <i>viya</i>)?'},
+  ej:{es:'<i>mahāpuriso</i>: <i>mahanto ca so puriso ca</i> (L0130); <i>guṇadhanaṃ</i>: <i>guṇo eva dhanaṃ</i> (L0406).',en:'<i>mahāpuriso</i>: <i>mahanto ca so puriso ca</i> (L0130); <i>guṇadhanaṃ</i>: <i>guṇo eva dhanaṃ</i> (L0406).'}},
+ {id:'caso',si:'tappurisa',no:'fin',
+  q:{es:'En la resolución, ¿el primer miembro va en un caso oblicuo —de la segunda a la séptima inflexión— y determina al segundo?',
+     en:'In the resolution, is the first member in an oblique case —second to seventh inflection— determining the second?'},
+  ej:{es:'<i>rājaputto</i>: <i>rañño putto</i>, «hijo del rey» (L0919); <i>araññagato</i>: <i>araññaṃ gato</i> (L0755).',en:'<i>rājaputto</i>: <i>rañño putto</i>, «son of the king» (L0919); <i>araññagato</i>: <i>araññaṃ gato</i> (L0755).'}}
+];
+/* lo que se dice al llegar a cada clase: el patrón y la cautela, con la
+   línea del documento que lo apoya */
+const GUIA_FIN={
+ bahubbihi:{es:{p:'La resolución pide la otra palabra (<i>aññapada</i>): el compuesto califica a algo que no nombra.',o:'Cualquier compuesto —adverbial, adjetivo, numérico, determinativo o copulativo— «si es usado como adjetivo, se convierte en un compuesto relativo» (L0985). Por eso esta pregunta va primero.'},
+            en:{p:'The resolution needs the «other word» (<i>aññapada</i>): the compound qualifies something it does not name.',o:'Any compound —adverbial, adjectival, numerical, determinative or copulative— «used as an adjective becomes a relative compound» (L0985). That is why this question comes first.'}},
+ dvanda:{es:{p:'Los miembros se suman, cada uno con su propio sentido.',o:'No se confunda con el <i>kammadhāraya</i> «ambos miembros califican» (<i>sītuṇhaṃ</i> = <i>sītañ ca taṃ uṇhañ ca</i>): allí los dos califican a una sola cosa (L0272).'},
+         en:{p:'The members are added together, each with its own sense.',o:'Do not confuse it with the <i>kammadhāraya</i> «both members qualify» (<i>sītuṇhaṃ</i> = <i>sītañ ca taṃ uṇhañ ca</i>): there both qualify one single thing (L0272).'}},
+ abyayibhava:{es:{p:'Predomina el primer miembro, el indeclinable; el compuesto suele terminar en <i>aṃ</i> neutro y no se declina (L0030).',o:'Con <i>na</i>, <i>ku</i> y <i>pa</i>, etc., el prefijo puede calificar al segundo miembro, y entonces es <i>kammadhāraya</i> (clases 7–9): <i>kudiṭṭhi</i> = <i>kucchitā diṭṭhi</i> (L0511).'},
+              en:{p:'The first member, the indeclinable, predominates; the compound usually ends in neuter <i>aṃ</i> and is not declined (L0030).',o:'With <i>na</i>, <i>ku</i> and <i>pa</i>, etc., the prefix may qualify the second member, and then it is a <i>kammadhāraya</i> (classes 7–9): <i>kudiṭṭhi</i> = <i>kucchitā diṭṭhi</i> (L0511).'}},
+ digu:{es:{p:'Colectivo (<i>samāhāra</i>), en neutro singular, o individual (<i>asamāhāra</i>), en plural (L0634, L0704).',o:'El <i>digu</i> «puede ser incluido dentro de la categoría de compuestos adjetivos» (L0628): <i>ekapuggalo</i> se resuelve como un <i>kammadhāraya</i>.'},
+       en:{p:'Collective (<i>samāhāra</i>), in the neuter singular, or individual (<i>asamāhāra</i>), in the plural (L0634, L0704).',o:'The <i>digu</i> «can be included within the category of adjectival compounds» (L0628): <i>ekapuggalo</i> is resolved like a <i>kammadhāraya</i>.'}},
+ kammadharaya:{es:{p:'Los dos miembros tienen la misma referencia (<i>tulyādhikaraṇa</i>): uno califica y otro es calificado (L0102).',o:'Hay nueve clases según cómo se relacionan los miembros: calificativo delante o detrás, comparación con <i>viya</i>, <i>iti</i>, <i>eva</i>, y los primeros miembros <i>na</i>, <i>ku</i> y <i>pa</i> (L0115–L0124).'},
+               en:{p:'Both members have the same reference (<i>tulyādhikaraṇa</i>): one qualifies and the other is qualified (L0102).',o:'There are nine classes according to how the members relate: the qualifier before or after, comparison with <i>viya</i>, <i>iti</i>, <i>eva</i>, and the first members <i>na</i>, <i>ku</i> and <i>pa</i> (L0115–L0124).'}},
+ tappurisa:{es:{p:'Recibe el nombre de la inflexión del primer miembro: <i>dutiyā-</i>, <i>tatiyā-</i>… <i>sattamī-tappurisa</i> (L0746).',o:'Hay además los <i>upapada</i>, que no se resuelven como los demás (<i>kumbhakāro</i>, L0833), y los que no eliden la inflexión (<i>alutta</i>: <i>manasikāro</i>, L0969).'},
+            en:{p:'It is named after the inflection of the first member: <i>dutiyā-</i>, <i>tatiyā-</i>… <i>sattamī-tappurisa</i> (L0746).',o:'There are also the <i>upapada</i>, which are not resolved like the rest (<i>kumbhakāro</i>, L0833), and those that keep the inflection (<i>alutta</i>: <i>manasikāro</i>, L0969).'}},
+ fin:{es:{p:'Las preguntas no deciden este compuesto.',o:'Puede ser un <i>tappurisa</i> que no se resuelve como los demás (<i>upapada</i>, L0833) o un compuesto que conserva la inflexión del primer miembro (<i>alutta</i>, L0969). Mírelo en la pestaña del <i>tappurisa</i>, o vuelva a empezar.'},
+      en:{p:'The questions do not decide this compound.',o:'It may be a <i>tappurisa</i> not resolved like the rest (<i>upapada</i>, L0833) or a compound that keeps the inflection of its first member (<i>alutta</i>, L0969). Look in the <i>tappurisa</i> tab, or start again.'}}
+};
+
+const T={
+es:{title:'Compuestos (samāsa)',sb:'Compuestos',
+  entradilla:'Los compuestos (<i>samāsa</i>) del pāḷi en sus seis clases, con la resolución (<i>viggaha</i>) de cada ejemplo palabra por palabra.',
+  aviso:'Es el documento <i>Compuesto (samāsa)</i> de Bhikkhu Nandisena (2004–2005), que sigue a Rūpasiddhi y a Kaccāyana y quedó sin terminar. <b>Borrador revisado, pendiente de la aprobación del IEBH</b>: se aplicaron las propuestas de revisión según el consejo verificado —las erratas y las referencias, corregidas en el texto; lo añadido, rotulado <span class="chip iebh">IEBH</span> con su fuente—. El IEBH puede revertir cualquiera de ellas.',
+  guia:'Guía para el estudiante: qué es un compuesto y su resolución, cómo se reconocen las seis clases y cómo usar esta página →',
+  search:'Buscar en pāḷi, español o referencia (sin diacríticos)…',
+  intro:['Introducción',''],resumen:['Resumen',''],practicar:'Practicar',cual:'¿Qué compuesto es?',
+  cl:{abyayibhava:'adverbial',kammadharaya:'adjetivo',digu:'numérico',tappurisa:'determinativo',bahubbihi:'relativo',dvanda:'copulativo'},
+  clLargo:{abyayibhava:'Compuesto adverbial',kammadharaya:'Compuesto adjetivo',digu:'Compuesto numérico',tappurisa:'Compuesto determinativo',bahubbihi:'Compuesto relativo',dvanda:'Compuesto copulativo'},
+  bloques:n=>n+(n===1?' bloque':' bloques'),
+  ejemplos:n=>n+(n===1?' compuesto resuelto':' compuestos resueltos'),
+  subtipos:n=>n+(n===1?' subtipo':' subtipos'),
+  hits_otras:(n,m)=>`${n} aquí · ${m} en otras pestañas`,
+  empty:'Nada coincide en esta pestaña.',empty_otras:'Nada coincide aquí; mire las pestañas que llevan un número.',
+  viggaha:'Resolución (viggaha)',porPalabra:'Palabra por palabra',otra:'Otra resolución',sinViggaha:'El documento no da la resolución.',
+  cols4:['Sentido','Resolución','Compuesto','Traducción'],cols3:['Resolución','Compuesto','Traducción'],
+  notas_h:'Notas',nota_add:'Añadido del IEBH',fuente:'Fuente',iebh_tit:'Añadido por IEBH; no está en el documento de Nandisena',
+  solo_iebh:'<span class="chip iebh">IEBH</span> Bhikkhu Nandisena dejó esta sección sin redactar: el documento tiene el rótulo y nada más. Todo lo que sigue es del IEBH, a partir de Rūpasiddhi y Kaccāyana (Kacc. §329; Rū. §357–§360), con sus fuentes en el texto.',
+  resumen_iebh:'compuesto y resolución en blanco en el original; los completa el IEBH con ejemplos del propio documento',
+  kacc_tit:'Sutta de Kaccāyana que define la clase (numeración de Nandisena)',
+  vacio:'<p>Bhikkhu Nandisena dejó esta sección sin redactar: el documento tiene el rótulo y nada más, y en la tabla del resumen la fila del <i>dvanda</i> también está en blanco.</p><p>Mientras tanto, el sutta que define la clase está en Kaccāyana: <a class="k" href="../../s/329/">Kacc. §329</a>, <i>Nāmānaṃ samuccayo dvando</i>.</p>',
+  resumen_t:'Tabla de resumen',resumen_s:'La tabla con la que Nandisena cierra el documento. Él sólo llenó las dos primeras filas; las otras cuatro las completa el IEBH (rotuladas).',
+  vaciaCelda:'en blanco en el original',
+  mapa_t:'Las seis clases',mapa_s:'Cada tarjeta lleva a su pestaña. El ejemplo es el primero que da el documento.',
+  sb_clases:'Las clases',sb_vacio:'Esta pestaña no tiene subtítulos.',
+  hero:(a,b,c)=>`<div><b>${a}</b> clases</div><div><b>${b}</b> subtipos</div><div><b>${c}</b> compuestos resueltos</div>`,
+  lic:'Material del Instituto de Estudios Buddhistas Hispano (IEBH), a partir de la obra de Bhikkhu Nandisena.<br>Este material puede ser reproducido para uso personal y distribuido de forma gratuita.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a>.',
+  notas_sum:'Notas y fuentes',ver:'Versión',
+  notas:()=>`<p><strong>Qué es esta página.</strong> El documento <i>${esc(M.titulo_doc)}</i> de Bhikkhu Nandisena (2004–2005), escrito a partir de Rūpasiddhi (Rū.) y de Kaccāyana (Kacc.), que el autor dejó sin terminar: la sección del compuesto copulativo (<i>dvanda</i>) y la tabla final no estaban redactadas; las completa el IEBH. Atribución: ${esc(M.atribucion.es)}.</p>
+  <p><strong>El texto.</strong> Es el del documento con la revisión aplicada según el consejo verificado, pendiente de la aprobación del IEBH: las erratas, los términos y las referencias se corrigen en el propio texto de Nandisena; todo lo añadido (notas, atestaciones, filas, la sección del <i>dvanda</i>) va aparte y rotulado <span class="chip iebh">IEBH</span>, con la fuente en el texto y en la etiqueta. Además cambia la presentación: las voces pāḷi, que el original pone entre comillas, van en cursiva (decisión del IEBH), y la ṁ se escribe ṃ. Cada bloque recuerda su línea en el texto de trabajo (L), y se puede enlazar.</p>
+  <p><strong>La resolución palabra por palabra.</strong> El documento da las resoluciones de dos maneras: en tablas de dos filas —el compuesto y sus voces arriba, la traducción y las glosas abajo— y en líneas como «<i>Buddhabhāsito</i> (dicho por el Buddha): <i>Buddhena</i> (por el Buddha) <i>bhāsito</i> (dicho)». La página dispone las dos igual, cada voz con su glosa debajo; las palabras son las de Nandisena, y la disposición, de la página. En las del <i>bahubbīhi</i> se resalta la voz que lleva el propio compuesto.</p>
+  <p><strong>Las referencias.</strong> Las de Rūpasiddhi son de Nandisena: por página (Rūpasiddhi 177) o por sutta (Rū. §352). El enlace al sutta de Kaccāyana de cada clase, en la numeración de Nandisena, es un añadido del IEBH; cada «Kacc. §N» lleva a la página de ese sutta.</p>
+  <p><strong>«Practicar» y «¿Qué compuesto es?»</strong> son ayudas del IEBH para el estudio, no parte del documento. La práctica saca los compuestos de las resoluciones y las tablas de ejemplos de esta página, con su clase y su subtipo. Las preguntas de la guía resumen las formas de resolución que el documento da para cada clase: orientan, pero no sustituyen a las reglas de las gramáticas.</p>`},
+en:{title:'Compounds (samāsa)',sb:'Compounds',
+  entradilla:'The Pāḷi compounds (<i>samāsa</i>) in their six classes, with the resolution (<i>viggaha</i>) of every example word by word.',
+  aviso:'This is Bhikkhu Nandisena’s document <i>Compuesto (samāsa)</i> (2004–2005), which follows Rūpasiddhi and Kaccāyana and was left unfinished. <b>Revised draft, pending IEBH’s approval</b>: the revision proposals have been applied according to the verified advice —errata and references corrected in the text; additions labelled <span class="chip iebh">IEBH</span> with their source—. IEBH may reverse any of them. <b>The English is a draft translation</b>; until it is ready, the text of the document is shown in Spanish.',
+  guia:'Student guide: what a compound and its resolution are, how to recognise the six classes and how to use this page →',
+  search:'Search Pāḷi, Spanish or a reference (diacritics optional)…',
+  intro:['Introduction',''],resumen:['Summary',''],practicar:'Practise',cual:'Which compound is it?',
+  cl:{abyayibhava:'adverbial',kammadharaya:'adjectival',digu:'numerical',tappurisa:'determinative',bahubbihi:'relative',dvanda:'copulative'},
+  clLargo:{abyayibhava:'Adverbial compound',kammadharaya:'Adjectival compound',digu:'Numerical compound',tappurisa:'Determinative compound',bahubbihi:'Relative compound',dvanda:'Copulative compound'},
+  bloques:n=>n+(n===1?' block':' blocks'),
+  ejemplos:n=>n+(n===1?' resolved compound':' resolved compounds'),
+  subtipos:n=>n+(n===1?' subtype':' subtypes'),
+  hits_otras:(n,m)=>`${n} here · ${m} in other tabs`,
+  empty:'Nothing matches in this tab.',empty_otras:'Nothing matches here; see the tabs that show a number.',
+  viggaha:'Resolution (viggaha)',porPalabra:'Word by word',otra:'Another resolution',sinViggaha:'The document gives no resolution.',
+  cols4:['Sense','Resolution','Compound','Translation'],cols3:['Resolution','Compound','Translation'],
+  notas_h:'Notes',nota_add:'IEBH addition',fuente:'Source',iebh_tit:'Added by IEBH; not in Nandisena’s document',
+  solo_iebh:'<span class="chip iebh">IEBH</span> Bhikkhu Nandisena left this section unwritten: the document has the heading and nothing else. Everything below is IEBH’s, from Rūpasiddhi and Kaccāyana (Kacc. §329; Rū. §357–§360), with its sources in the text.',
+  resumen_iebh:'compound and resolution blank in the original; IEBH fills them with examples from the document itself',
+  kacc_tit:'Kaccāyana sutta that defines the class (Nandisena’s numbering)',
+  vacio:'<p>Bhikkhu Nandisena left this section unwritten: the document has the heading and nothing else, and the <i>dvanda</i> row of the summary table is blank too.</p><p>Meanwhile, the sutta that defines the class is in Kaccāyana: <a class="k" href="../../s/329/?lang=en">Kacc. §329</a>, <i>Nāmānaṃ samuccayo dvando</i>.</p>',
+  resumen_t:'Summary table',resumen_s:'The table with which Nandisena closes the document. He filled only the first two rows; IEBH completes the other four (labelled).',
+  vaciaCelda:'blank in the original',
+  mapa_t:'The six classes',mapa_s:'Each card leads to its tab. The example is the first one the document gives.',
+  sb_clases:'The classes',sb_vacio:'This tab has no subheadings.',
+  hero:(a,b,c)=>`<div><b>${a}</b> classes</div><div><b>${b}</b> subtypes</div><div><b>${c}</b> resolved compounds</div>`,
+  lic:'Material of the Instituto de Estudios Buddhistas Hispano (IEBH), based on the work of Bhikkhu Nandisena.<br>This material may be reproduced for personal use and distributed free of charge.<br>Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Published under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener" target="_blank">CC&nbsp;BY-NC-ND&nbsp;4.0</a> licence.',
+  notas_sum:'Notes and sources',ver:'Version',
+  notas:()=>`<p><strong>What this page is.</strong> Bhikkhu Nandisena’s document <i>${esc(M.titulo_doc)}</i> (2004–2005), written from Rūpasiddhi (Rū.) and Kaccāyana (Kacc.), which the author left unfinished: the section on the copulative compound (<i>dvanda</i>) and the final table were not written; IEBH completes them. Attribution: ${esc(M.atribucion.en)}. The English is a draft translation.</p>
+  <p><strong>The text.</strong> It is the document with the revision applied according to the verified advice, pending IEBH’s approval: errata, terms and references are corrected in Nandisena’s own text; everything added (notes, attestations, rows, the <i>dvanda</i> section) stands apart, labelled <span class="chip iebh">IEBH</span>, with its source in the text and on the label. The presentation also changes: the Pāḷi words, which the original puts in quotation marks, are in italics (an IEBH decision), and ṁ is written ṃ. Each block records its line in the working text (L) and can be linked to.</p>
+  <p><strong>The word-by-word resolution.</strong> The document gives resolutions in two ways: in two-row tables —the compound and its words above, the translation and the glosses below— and in lines such as «<i>Buddhabhāsito</i> (dicho por el Buddha): <i>Buddhena</i> (por el Buddha) <i>bhāsito</i> (dicho)». The page lays both out alike, each word with its gloss beneath; the words are Nandisena’s, the layout is the page’s. In the <i>bahubbīhi</i> resolutions the word carrying the compound itself is highlighted.</p>
+  <p><strong>References.</strong> Those to Rūpasiddhi are Nandisena’s: by page (Rūpasiddhi 177) or by sutta (Rū. §352). The link to each class’s Kaccāyana sutta, in Nandisena’s numbering, is an IEBH addition; every «Kacc. §N» leads to that sutta’s page.</p>
+  <p><strong>«Practise» and «Which compound is it?»</strong> are IEBH study aids, not part of the document. Practice draws the compounds from this page’s resolutions and example tables, with their class and subtype. The guide’s questions summarise the forms of resolution the document gives for each class: they orient, but do not replace the rules of the grammars.</p>`}};
+/* la práctica */
+const P={
+es:{tit:'Practicar',sub:'Un compuesto al azar de toda la página. Diga de qué clase es, o escriba su resolución, y compruebe.',
+  modo:'Modo',mClase:'Elegir la clase',mRes:'Escribir la resolución',clases:'Clases',todas:'Todas',
+  qClase:'¿De qué clase es este compuesto?',qRes:'Escriba la resolución (viggaha)',
+  ph:'p. ej. rañño putto',comprobar:'Comprobar',sig:'Siguiente →',verla:'Verlo en la página →',reset:'Empezar de cero',
+  aciertos:'aciertos',de:'de',racha:'seguidos',
+  bien:'Correcto',mal:'No',casi:'Casi',casiT:'Igual salvo los diacríticos.',
+  igual:'¿Su resolución dice lo mismo?',si:'Sí, la doy por buena',no:'No',
+  dl:{clase:'Clase',sub:'Subtipo',res:'Resolución',tr:'Traducción',sentido:'Sentido'},
+  tuya:'Su respuesta',nada:'No hay compuestos con este filtro.',
+  teclas:'Teclado: 1–6 para la clase, Intro para comprobar y para pasar al siguiente.',
+  stats:'Por clase'},
+en:{tit:'Practise',sub:'A random compound from the whole page. Say which class it belongs to, or type its resolution, and check.',
+  modo:'Mode',mClase:'Choose the class',mRes:'Type the resolution',clases:'Classes',todas:'All',
+  qClase:'Which class does this compound belong to?',qRes:'Type the resolution (viggaha)',
+  ph:'e.g. rañño putto',comprobar:'Check',sig:'Next →',verla:'See it on the page →',reset:'Start over',
+  aciertos:'correct',de:'of',racha:'in a row',
+  bien:'Correct',mal:'No',casi:'Almost',casiT:'The same except for diacritics.',
+  igual:'Does your resolution say the same?',si:'Yes, count it',no:'No',
+  dl:{clase:'Class',sub:'Subtype',res:'Resolution',tr:'Translation',sentido:'Sense'},
+  tuya:'Your answer',nada:'No compounds with this filter.',
+  teclas:'Keyboard: 1–6 for the class, Enter to check and to go to the next one.',
+  stats:'By class'}};
+const G={
+es:{tit:'¿Qué compuesto es?',intro:'Unas pocas preguntas, de sí o no, que llevan a la clase. Vaya contestando con el compuesto delante.',
+  aviso:'Orientación del IEBH a partir de las formas de resolución que da el documento; no es una regla de las gramáticas.',
+  probar:'Probar con un compuesto de la página',otro:'Otro',sin:'Puede contestar pensando en cualquier compuesto, o pedir uno de la página.',
+  si:'Sí',no:'No',ej:'Ejemplo',deNuevo:'Volver a empezar',atras:'← Atrás',es:'Es',ojo:'Ojo',
+  ir:c=>`Ver el ${c} en la página →`,acierto:c=>`Bien: el documento lo da como ${c}.`,fallo:(c,d)=>`El documento lo da como ${d}, no como ${c}. Vea dónde se torció el camino.`,
+  noDecide:'Sin decidir',resp:{si:'sí',no:'no'}},
+en:{tit:'Which compound is it?',intro:'A few yes-or-no questions that lead to the class. Answer them with the compound in front of you.',
+  aviso:'An IEBH aid built from the forms of resolution the document gives; it is not a rule of the grammars.',
+  probar:'Try with a compound from the page',otro:'Another',sin:'You can answer with any compound in mind, or ask for one from the page.',
+  si:'Yes',no:'No',ej:'Example',deNuevo:'Start again',atras:'← Back',es:'It is',ojo:'Note',
+  ir:c=>`See the ${c} on the page →`,acierto:c=>`Right: the document gives it as a ${c}.`,fallo:(c,d)=>`The document gives it as a ${d}, not a ${c}. See where the path went astray.`,
+  noDecide:'Undecided',resp:{si:'yes',no:'no'}}};
+
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>String(s||'').normalize('NFD').replace(/\p{M}/gu,'').replace(/[*]/g,'').toLowerCase();
+const root=document.documentElement;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const mq=c=>{try{return !!(window.matchMedia&&matchMedia(c).matches)}catch(e){return false}};
+function paliLang(){const g=store.get('pali_lang');if(g==='en'||g==='es')return g;
+  const n=(navigator.languages&&navigator.languages[0])||navigator.language||'';return /^en\b/i.test(n)?'en':'es'}
+const QS=new URLSearchParams(location.search);
+let lang=(QS.get('lang')||paliLang())==='en'?'en':'es';
+const L=o=>o==null?'':(typeof o==='string'?o:(o[lang]||o.es||''));
+const lq=()=>lang==='en'?'?lang=en':'';
+
+/* «§N» y «Kacc. §N» llevan a la página del sutta; los de Rūpasiddhi,
+   Saddanīti o Niruttidīpanī («Rū. §352», «Rū. 199, §352») no. */
+function enlazar(h){
+  /* tampoco los § de Rūpasiddhi o Saddanīti que la revisión escribe sin «Rū.»: «Rū. §330 (p. 178) y §341»,
+     «Rū. §357–§358», «Rūpasiddhi (§349)», «Saddanīti las da en §702» (sin un punto de por medio) */
+  return h.replace(/((?:Rū|Sad|Nir)\.\s*(?:\d+,\s*)?§\s?\d+(?:\s*\([^()]*\))?(?:\s*(?:–|y|,)\s*§\s?\d+)*|(?:Rūpasiddhi|Saddanīti|Niruttidīpanī)[^§.;]{0,60}?§\s?\d+)|((?:Kacc?\.\s*)?§\s?(\d+))/g,(m,otra,k,n)=>otra?otra:
+    `<a class="k" href="../../s/${n}/${lq()}">${k}</a>`);
+}
+function md(s){
+  return enlazar(esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<i>$1</i>'))
+    .replace(/\[\^(\w+)\]/g,(m,n)=>`<sup class="fn"><a href="#nota-${n}" id="ll-${n}">${n}</a></sup>`)
+    .replace(/\n/g,'<br>');
+}
+/* la referencia que la revisión añadió al final de un rótulo: «… (upamānuttarapada) (Kacc. §324; Rū. §339 (pp. 186–187))» */
+const REF_FIN=/\s*\((?:Kacc?|Rū|Sad|Nir)\.[^()]*(?:\([^()]*\)[^()]*)*\)\s*$/;
+function partirRef(s){const m=REF_FIN.exec(s);return m?[s.slice(0,m.index),m[0].trim()]:[s,'']}
+const chipI=b=>b.iebh?`<span class="chip iebh" title="${esc(T[lang].iebh_tit+(b.fuente?' · '+T[lang].fuente+': '+b.fuente:''))}">IEBH${b.clase&&L(b.clase)?`<span class="ck">· ${esc(L(b.clase))}</span>`:''}</span>`:'';
+/* la fuente a la vista sólo en las tablas del IEBH: los párrafos ya citan en el texto (y la llevan en la etiqueta) */
+const fuenteI=b=>b.iebh&&b.fuente&&(b.tipo==='ejemplos'||b.tipo==='tabla')?`<p class="fuente chica"><b>${T[lang].fuente}</b>${md(b.fuente)}</p>`:'';
+/* lo que el IEBH añade a un bloque (una referencia, una atestación, la fuente de una resolución) */
+const anexosI=b=>(b.anexos||[]).map(x=>`<p class="il-anexo">${b.iebh&&!x.clase?'':chipI({iebh:1,fuente:x.fuente,clase:x.clase})}${md(L(x))}</p>`).join('');
+
+/* ── los datos, recorridos una vez: subtipo de cada bloque, pestaña de cada
+   id, y el banco de la práctica ─────────────────────────────────── */
+const SECC=[{id:'intro',bloques:D.intro}].concat(CL.map(c=>({id:c.id,bloques:c.bloques})));
+const TAB_DE={}, SUB_DE={};
+SECC.forEach(s=>{let h2=null,h3=null;s.bloques.forEach(b=>{
+  TAB_DE[b.id]=s.id;
+  if(b.tipo==='h'){if(b.nivel===2){h2=b;h3=null}else h3=b}
+  else if(b.def){h2=b;h3=null}
+  SUB_DE[b.id]=h3?(h2&&h2!==h3?[h2,h3]:[h3]):(h2?[h2]:[]);
+})});
+function subTexto(b){return (SUB_DE[b.id]||[]).map(x=>x.def?'*'+x.def+'*':L(x.texto)).join(' · ')}
+const sinGlosa=t=>!t.g||!L(t.g);
+function resolucionDe(v){return v.filter(t=>!/^[,;.]+$/.test(t.p)).map(t=>t.p).join(' ')}
+const BANCO=[];
+(function(){const vistos=new Set();
+  CL.forEach(c=>c.bloques.forEach(b=>{
+    if(b.tipo==='interlineal'&&b.compuesto){
+      const res=resolucionDe(b.viggaha);const k=c.id+'|'+b.compuesto+'|'+res;if(vistos.has(k))return;vistos.add(k);
+      BANCO.push({c:c.id,id:b.id,comp:b.compuesto,trad:b.traduccion,res,b,sub:subTexto(b)});
+    }else if(b.tipo==='ejemplos'){let se=null;
+      b.filas.forEach((f,i)=>{if(L(f.sentido))se=f.sentido;
+        const cs=f.compuesto.split('\n'),rs=f.resolucion.split('\n'),ts=(f.traduccion.es||'').split('\n'),te=(f.traduccion.en||'').split('\n');
+        cs.forEach((x,j)=>{if(!x.trim())return;const k=c.id+'|'+x+'|'+(rs[j]||'');if(vistos.has(k))return;vistos.add(k);
+          BANCO.push({c:c.id,id:b.id+'-f'+(i+1),comp:x.trim(),trad:{es:ts[j]||'',en:te[j]||''},res:(rs[j]||'').trim(),sentido:se,sub:subTexto(b)})})})}
+  }))})();
+const N_SUB=CL.reduce((a,c)=>a+c.bloques.filter(b=>b.tipo==='h'||b.def).length,0);
+
+/* ── pintar los bloques ───────────────────────────────────────────── */
+function token(t){
+  const sep=/^[,;.]+$/.test(t.p);
+  return `<span class="tk${sep?' sep':''}${t.r?' r':''}${sinGlosa(t)?' sinG':''}"><span class="p">${esc(t.p)}</span><span class="g">${md(L(t.g))||'&nbsp;'}</span></span>`;
+}
+function trad(s){/* «a\nb»: salto real sólo si la segunda parte es un paréntesis */
+  return md(String(s||'').replace(/\n(?!\()/g,' '));
+}
+function interlineal(b,extra){
+  const t=T[lang];
+  if(!b.compuesto){return `<div class="il glosa ancho" id="${b.id}" data-b="${b.id}"><div class="il-v"><span class="lv">${t.porPalabra}</span>${b.viggaha.map(token).join('')}</div></div>`}
+  const ancho=b.viggaha.length>6||b.alternativas;
+  let h=`<article class="il${ancho?' ancho':''}${b.iebh?' iebh':''}${extra||''}" id="${b.id}" data-b="${b.id}">${chipI(b)}<div class="il-cab"><span class="il-c" lang="pi">${esc(b.compuesto)}</span>${L(b.traduccion)?`<span class="il-t">${trad(L(b.traduccion))}</span>`:''}</div>`;
+  if(b.viggaha.length) h+=`<div class="il-v"><span class="lv">${t.viggaha}</span>${b.viggaha.map(token).join('')}</div>`;
+  else if(!b.resto) h+=`<p class="il-sin">${t.sinViggaha}</p>`;
+  (b.alternativas||[]).forEach(a=>{h+=`<div class="il-v il-alt"><span class="lv">${t.otra}</span>${a.viggaha.map(token).join('')}</div>`});
+  if(b.resto) h+=`<p class="il-resto">${md(L(b.resto))}</p>`;
+  h+=anexosI(b)+fuenteI(b)+`<a class="ancla" href="#${b.id}" aria-label="L${esc(b.L)}" title="L${esc(b.L)}">¶</a></article>`;
+  return h;
+}
+function ejemplos(b){
+  const t=T[lang],cuatro=b.columnas===4,cols=cuatro?t.cols4:t.cols3;
+  let h=`<div class="ej-w" id="${b.id}" data-b="${b.id}">${chipI(b)}<table class="ejt"><thead><tr>${cols.map(x=>`<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>`;
+  b.filas.forEach((f,i)=>{
+    const cs=f.compuesto.split('\n'),rs=f.resolucion.split('\n'),ts=L(f.traduccion).split('\n');
+    const n=Math.max(cs.length,rs.length,ts.length),se=L(f.sentido);
+    for(let j=0;j<n;j++){
+      const id=j===0?` id="${b.id}-f${i+1}"`:'';
+      const ch=j===0&&f.iebh?chipI({iebh:1,fuente:f.fuente}):'';
+      h+=`<tr${id} class="${j?'sigue':''}${j===0&&se&&i?' grupo':''}${f.iebh?' iebh':''}">`+(cuatro?`<td class="se">${j===0?ch+md(se):''}</td>`:'')+
+        `<td class="re" lang="pi">${cuatro?'':ch}${esc(rs[j]||'')}</td><td class="co" lang="pi">${esc(cs[j]||'')}</td><td class="tr">${md(ts[j]||'')}</td></tr>`;
+    }
+  });
+  return h+'</tbody></table></div>'+fuenteI(b);
+}
+function bloque(b){
+  const t=T[lang];
+  switch(b.tipo){
+  case 'h':{const tag=b.nivel===3?'h4':'h3';const [t0,ref]=partirRef(L(b.texto));
+    const tx=md(t0).replace(/\(([^()]+)\)\s*$/,'<span class="pal">($1)</span>')+(ref?` <span class="ref-h">${md(ref)}</span>`:'');
+    return `<${tag} class="st${b.iebh?' iebh':''}" id="${b.id}" data-b="${b.id}"><a class="ancla" href="#${b.id}" aria-label="§">§</a>${tx}${chipI(b)}</${tag}>`+fuenteI(b)}
+  case 'p':
+    if(b.def) return `<div class="def${b.iebh?' iebh':''}" id="${b.id}" data-b="${b.id}"><a class="ancla" href="#${b.id}" aria-label="§">§</a>${md(L(b.texto))}${chipI(b)}${anexosI(b)}</div>`+fuenteI(b);
+    if(b.verso) return `<div class="bl iebh verso-u" data-b="${b.id}" id="${b.id}">${chipI(b)}${md(L(b.texto))}<p class="verso" lang="pi">${esc(L(b.verso)).replace(/\n/g,'<br>')}</p><p class="verso-t">${md(L(b.traduccion_verso))}</p></div>`;
+    if(b.iebh) return `<p class="bl iebh" data-b="${b.id}" id="${b.id}">${chipI(b)}${md(L(b.texto))}</p>`+anexosI(b);
+    return `<p class="bl" data-b="${b.id}" id="${b.id}">${md(L(b.texto))}</p>`+anexosI(b);
+  case 'lista':
+    if(b.forma==='pares'){let h=`<dl class="pares" data-b="${b.id}" id="${b.id}">`;for(let i=0;i<b.items.length;i+=2)h+=`<dt>${md(L(b.items[i]))}</dt><dd>${md(L(b.items[i+1]||''))}</dd>`;return h+'</dl>'+fuenteI(b)}
+    return `<ul class="lst" data-b="${b.id}" id="${b.id}">${b.items.map(x=>`<li>${md(L(x))}</li>`).join('')}</ul>${chipI(b)}`+fuenteI(b);
+  case 'paradigma':
+    return `<div class="rc-desliza" data-b="${b.id}" id="${b.id}"><table class="ptab"><thead><tr>${b.cabecera.map(x=>`<th>${md(L(x))}</th>`).join('')}</tr></thead><tbody>`+
+      b.filas.map(f=>`<tr>${f.map((x,i)=>i?`<td class="f" lang="pi">${esc(x)}</td>`:`<td>${md(L(x))}</td>`).join('')}</tr>`).join('')+'</tbody></table></div>'+fuenteI(b);
+  case 'tabla':
+    return `<div class="rc-desliza" data-b="${b.id}" id="${b.id}"><table class="gtab"><tbody>`+b.filas.map(f=>`<tr>${f.map(x=>`<td>${md(L(x))}</td>`).join('')}</tr>`).join('')+'</tbody></table></div>'+fuenteI(b);
+  case 'ejemplos': return ejemplos(b);
+  case 'interlineal': return interlineal(b);
+  }
+  return '';
+}
+function bloques(bs){
+  let h='',grid=null;
+  const cerrar=()=>{if(grid!==null){h+=`<div class="ilgrid">${grid}</div>`;grid=null}};
+  bs.forEach((b,i)=>{if(b.tipo==='interlineal'){if(grid===null)grid='';grid+=interlineal(b)}
+    /* una nota del IEBH sobre varias tarjetas, entre tarjetas: a todo lo ancho, dentro de la rejilla */
+    else if(grid!==null&&b.iebh&&b.tipo==='p'&&bs[i+1]&&bs[i+1].tipo==='interlineal'){grid+=bloque(b)}
+    else{cerrar();h+=bloque(b)}});
+  cerrar();return h;
+}
+function notasDe(bs,extra){
+  const txt=JSON.stringify(bs)+(extra||'');const ns=[...new Set([...txt.matchAll(/\[\^(\w+)\]/g)].map(m=>m[1]))];
+  if(!ns.length)return '';
+  const t=T[lang];
+  return `<div class="gnotas"><h3>${t.notas_h}</h3>`+ns.map(n=>{const v=D.notas[n];if(!v)return '';
+    const add=(Array.isArray(v.iebh)?v.iebh:[]).map(x=>`<span class="nadd">${chipI({iebh:1,fuente:x.fuente})}${md(L(x))}</span>`).join('');
+    return `<p id="nota-${n}"${v.iebh===true?' class="niebh"':''}><a class="nn" href="#ll-${n}">${n}</a>${v.iebh===true?chipI({iebh:1,fuente:v.fuente}):''}${md(L(v))}${add}</p>`}).join('')+'</div>';
+}
+function nEjemplos(c){return BANCO.filter(x=>x.c===c.id).length}
+function cabClase(c){
+  const t=T[lang];
+  return `<header class="clcab"><span class="num">${c.n}</span><h2 lang="pi">${esc(c.pali)}</h2><p class="sub">${esc(lang==='en'?t.clLargo[c.id]:(L(c.titulo)||t.clLargo[c.id]))}</p>
+    <div class="meta">${c.kacc.map(k=>`<a class="ref-k" href="../../s/${k}/${lq()}" title="${esc(t.kacc_tit)}">Kacc. §${k}</a>`).join('')}${c.ref&&c.ref.replace(/^Kacc\. §\d+;?\s*/,"")?`<span class="dato">${md(c.ref.replace(/^Kacc\. §\d+;?\s*/,""))}</span>`:""}
+    <span class="dato">${t.ejemplos(nEjemplos(c))}</span><span class="dato">· ${t.subtipos(c.bloques.filter(b=>b.tipo==='h'||b.def).length)}</span></div></header>`;
+}
+function mapa(){
+  const t=T[lang];
+  return `<h2 class="sec">${t.mapa_t}<small>${t.mapa_s}</small></h2><div class="mapa">`+CL.map(c=>{
+    const e=BANCO.find(x=>x.c===c.id);
+    return `<a class="mc" href="?c=${c.id}${lang==='en'?'&lang=en':''}" data-ir="${c.id}"><span class="mn">${c.n}</span><span class="mp" lang="pi">${esc(c.pali)}</span><span class="ms">${esc(t.clLargo[c.id])}</span>
+      <span class="mx">Kacc. §${c.kacc.join(', §')} · ${t.ejemplos(nEjemplos(c))}</span>${e?`<span class="mv"><i>${esc(e.comp)}</i>${L(e.trad)?' «'+esc(L(e.trad).replace(/\n/g,' '))+'»':''}</span>`:''}</a>`}).join('')+'</div>';
+}
+function resumen(){
+  const t=T[lang],r=D.resumen;if(!r)return '';
+  const cl=CL.map(c=>c.id);
+  return `<h2 class="sec">${t.resumen_t}<small>${t.resumen_s}</small></h2><div class="rc-desliza" data-b="resumen" id="resumen"><table class="gtab"><thead><tr>${r.cabecera.map(x=>`<th>${md(L(x))}</th>`).join('')}</tr></thead><tbody>`+
+    r.filas.map((f,i)=>{const fi=(r.filas_iebh||[]).includes(i),ci=((r.celdas_iebh||{})[i]||[]);return `<tr${fi?' class="iebh"':''}>${f.map((x,j)=>{const s=L(x);if(!s.trim())return `<td class="vacia" title="${esc(t.vaciaCelda)}">—</td>`;
+      if(ci.includes(j))return `<td lang="pi" class="td-iebh">${j===ci[0]?chipI({iebh:1,fuente:t.resumen_iebh+(r.fuente_iebh?' · '+r.fuente_iebh:'')}):''}<i>${esc(s)}</i></td>`;
+      if(j===1&&cl[i])return `<td><a href="?c=${cl[i]}" data-ir="${cl[i]}">${md(s)}</a></td>`;return `<td${j>=2?' lang="pi"':''}>${j>=2?'<i>'+esc(s)+'</i>':md(s)}</td>`}).join('')}</tr>`}).join('')+'</tbody></table></div>'+notasDe([r]);
+}
+
+/* ── las pestañas ─────────────────────────────────────────────────── */
+const TABS=['intro'].concat(CL.map(c=>c.id),['resumen']);
+const HERR=['practicar','cual'];
+let cl=(()=>{const c=QS.get('c');if(TABS.includes(c)||HERR.includes(c))return c;
+  const h=decodeURIComponent(location.hash.slice(1));if(TAB_DE[h])return TAB_DE[h];return 'intro'})();
+/* el texto de búsqueda de cada bloque, una vez por lengua */
+const BUSCA={};
+function textoBloque(b){const k=b.id+lang;if(BUSCA[k]!=null)return BUSCA[k];
+  return BUSCA[k]=norm(JSON.stringify(b,(kk,v)=>kk==='en'&&lang==='es'&&!v?undefined:v)).replace(/[{}\[\]":,]+/g,' ')}
+function bloquesDe(tab){if(tab==='intro')return D.intro;if(tab==='resumen')return D.resumen?[Object.assign({id:'resumen'},D.resumen)]:[];return byId[tab]?byId[tab].bloques:[]}
+function q(){return norm(document.getElementById('q').value.trim())}
+function hitsDe(tab,qq){if(!qq)return null;return bloquesDe(tab).filter(b=>b.tipo!=='h'&&textoBloque(b).includes(qq)).length}
+function pestañas(){
+  const t=T[lang],qq=q();
+  document.getElementById('tabs').innerHTML=TABS.map(id=>{
+    const sel=id===cl,h=hitsDe(id,qq),cero=qq&&h===0?' cero':'';
+    const hits=qq?`<span class="hits">${h}</span>`:'<span class="hits"></span>';
+    if(id==='intro'||id==='resumen')return `<button role="tab" data-c="${id}" aria-selected="${sel}" class="${cero}">${esc(t[id][0])}${hits}</button>`;
+    const c=byId[id];return `<button role="tab" data-c="${id}" aria-selected="${sel}" class="${cero}" title="${esc(t.clLargo[id])}"><span class="tn">${c.n}</span><span class="tp">${esc(c.pali)}</span><span class="te">${esc(t.cl[id])}</span>${hits}</button>`}).join('');
+  document.getElementById('tabs-herr').innerHTML=HERR.map(id=>`<button role="tab" data-c="${id}" aria-selected="${id===cl}"><span class="ic">${id==='practicar'?'✦':'?'}</span>${esc(t[id])}</button>`).join('');
+}
+/* el índice lateral: los subtipos de la pestaña */
+function indice(){
+  const t=T[lang];let h='';
+  if(byId[cl]){
+    const bs=byId[cl].bloques.filter(b=>b.tipo==='h'||b.def);
+    h=`<p class="sb-tit">${esc(byId[cl].pali)}</p>`+(bs.length?bs.map(b=>{
+      let tx;
+      if(b.def)tx=`<i>${esc(b.def)}</i>`;
+      else{const s=partirRef(L(b.texto).replace(/\[\^\w+\]/g,'').trim())[0],m=/^(\([0-9ivx]+\))\s*(.*?)\s*\(([^()]+)\)$/.exec(s);
+        tx=m?`<span class="sn">${esc(m[1])}</span><i>${esc(m[3])}</i><span class="sd">${md(m[2])}</span>`:md(s)}
+      return `<a href="#${b.id}" data-c="${b.id}" class="${b.nivel===3?'n3':''}">${tx}</a>`}).join(''):`<p class="sb-vacio">${t.sb_vacio}</p>`);
+  }
+  h+=`<p class="sb-tit">${t.sb_clases}</p>`+CL.map(c=>`<a href="?c=${c.id}" data-ir="${c.id}" class="${c.id===cl?'on':''}"><span class="sn">${c.n}</span><i>${esc(c.pali)}</i></a>`).join('')+
+    `<a href="?c=resumen" data-ir="resumen"><span class="sn">∑</span>${esc(t.resumen[0])}</a><a href="?c=practicar" data-ir="practicar"><span class="sn">✦</span>${esc(t.practicar)}</a><a href="?c=cual" data-ir="cual"><span class="sn">?</span>${esc(t.cual)}</a>`;
+  document.getElementById('sb-list').innerHTML=h;
+}
+function render(){
+  const t=T[lang];let h='';
+  if(cl==='intro'){h=bloques(D.intro)+mapa()+notasDe(D.intro)}
+  else if(cl==='resumen'){h=resumen()}
+  else if(cl==='practicar'){h=practicaHTML()}
+  else if(cl==='cual'){h=cualHTML()}
+  else{const c=byId[cl];const todo=c.bloques.length&&c.bloques.every(b=>b.iebh);
+    h=cabClase(c)+(c.bloques.length?(todo?`<div class="solo-iebh">${t.solo_iebh}</div><div class="todo-iebh">${bloques(c.bloques)}</div>`:bloques(c.bloques)):`<div class="vacio-cl">${t.vacio}</div>`)+notasDe(c.bloques)}
+  document.getElementById('out').innerHTML=h;
+  indice();
+  if(cl==='practicar')practicaIniciar();
+  if(cl==='cual')cualPintar();
+  filtrar();
+}
+/* buscar: se ocultan los bloques que no coinciden; un subtítulo se queda si
+   coincide algo de su sección */
+function filtrar(){
+  const t=T[lang],qq=q(),herr=HERR.includes(cl);
+  document.querySelector('.bar input').disabled=false;
+  let n=0;
+  if(!herr){
+    const bs=bloquesDe(cl),vis={};
+    bs.forEach(b=>{vis[b.id]=!qq||(b.tipo!=='h'&&textoBloque(b).includes(qq));if(vis[b.id]&&b.tipo!=='h')n++});
+    if(qq)bs.forEach(b=>{if(vis[b.id])(SUB_DE[b.id]||[]).forEach(s=>vis[s.id]=true)});
+    document.querySelectorAll('#out [data-b]').forEach(el=>{const v=vis[el.dataset.b];if(v!==undefined)el.hidden=!v});
+    document.querySelectorAll('#out .ilgrid').forEach(g=>{g.hidden=!g.querySelector('.il:not([hidden])')});
+    document.querySelectorAll('#out .mapa,#out h2.sec,#out .vacio-cl').forEach(e=>{if(cl!=='resumen')e.hidden=!!qq});
+    document.querySelectorAll('#out .gnotas').forEach(e=>e.hidden=!!qq);
+    document.querySelectorAll('#sb-list a[data-c]').forEach(a=>{const el=document.getElementById(a.dataset.c);a.hidden=!el||el.hidden});
+    const otras=qq?TABS.filter(x=>x!==cl).reduce((a,x)=>a+hitsDe(x,qq),0):0;
+    document.getElementById('count').textContent=qq?(otras?t.hits_otras(n,otras):n+''):(byId[cl]?t.ejemplos(nEjemplos(byId[cl])):'');
+    document.getElementById('empty').hidden=!(qq&&!n);
+    document.getElementById('empty-t').textContent=otras?t.empty_otras:t.empty;
+  }else{document.getElementById('count').textContent='';document.getElementById('empty').hidden=true}
+  pestañas();espiar();
+}
+
+/* ── practicar ────────────────────────────────────────────────────── */
+const PR_K='compuestos_practica';
+let PR=(()=>{try{const v=JSON.parse(store.get(PR_K)||'null');if(v&&typeof v==='object')return Object.assign({ok:0,n:0,racha:0,modo:'clase',fil:[],por:{}},v)}catch(e){}return {ok:0,n:0,racha:0,modo:'clase',fil:[],por:{}}})();
+let prCur=null,prHecho=false;
+const guardaPR=()=>store.set(PR_K,JSON.stringify(PR));
+function prPool(){return BANCO.filter(x=>!PR.fil.length||PR.fil.includes(x.c))}
+function practicaHTML(){
+  const p=P[lang];
+  return `<section class="pr"><div class="pr-cab"><div><h2>${p.tit}</h2><p>${p.sub}</p></div><div class="pr-marc" id="pr-marc"></div></div>
+  <div class="pr-op"><span class="lbl">${p.modo}</span><div class="filtros" id="pr-modo"><button data-m="clase">${p.mClase}</button><button data-m="res">${p.mRes}</button></div></div>
+  <div class="pr-op"><span class="lbl">${p.clases}</span><div class="filtros pr-filtro" id="pr-fil"><button data-f="">${p.todas}</button>${CL.map(c=>`<button data-f="${c.id}"><span class="tp">${esc(c.pali)}</span></button>`).join('')}</div></div>
+  <div class="pr-tarj" id="pr-tarj" aria-live="polite"></div>
+  <p class="pr-teclas">${p.teclas}</p>
+  <p class="lbl" style="margin-top:20px">${p.stats}</p><div class="pr-stats" id="pr-stats"></div></section>`;
+}
+function prMarcador(){
+  const p=P[lang];
+  document.getElementById('pr-marc').innerHTML=`<span><b>${PR.ok}</b>${p.aciertos} ${p.de} ${PR.n}</span><span><b>${PR.racha}</b>${p.racha}</span><button id="pr-reset">${p.reset}</button>`;
+  document.getElementById('pr-reset').onclick=()=>{PR.ok=0;PR.n=0;PR.racha=0;PR.por={};guardaPR();prMarcador();prStats()};
+  document.querySelectorAll('#pr-modo button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===PR.modo));
+  document.querySelectorAll('#pr-fil button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f?PR.fil.includes(b.dataset.f):!PR.fil.length));
+}
+function prStats(){
+  document.getElementById('pr-stats').innerHTML=CL.map(c=>{const s=PR.por[c.id]||{ok:0,n:0};const pc=s.n?Math.round(100*s.ok/s.n):0;
+    return `<div><i>${esc(c.pali)}</i><br>${s.ok}/${s.n}<span class="prb"><span style="width:${pc}%"></span></span></div>`}).join('');
+}
+function prNuevo(){
+  const pool=prPool(),p=P[lang],box=document.getElementById('pr-tarj');
+  if(!pool.length){box.innerHTML=`<p class="pr-nada">${p.nada}</p>`;prCur=null;return}
+  let x;do{x=pool[Math.floor(Math.random()*pool.length)]}while(pool.length>1&&prCur&&x.comp===prCur.comp);
+  prCur=x;prHecho=false;
+  let h=`<p class="pr-q">${PR.modo==='clase'?p.qClase:p.qRes}</p><p class="pr-c" lang="pi">${esc(x.comp)}</p><p class="pr-t">${L(x.trad)?'«'+trad(L(x.trad))+'»':''}</p>`;
+  if(PR.modo==='clase') h+=`<div class="pr-ops" id="pr-ops">${CL.map(c=>`<button data-c="${c.id}"><span class="n">${c.n}</span><span><span class="tp" lang="pi">${esc(c.pali)}</span> <span class="te">${esc(T[lang].cl[c.id])}</span></span></button>`).join('')}</div>`;
+  else h+=`<form class="pr-esc" id="pr-esc" autocomplete="off"><input id="pr-in" lang="pi" spellcheck="false" autocapitalize="off" placeholder="${esc(p.ph)}" aria-label="${esc(p.qRes)}"><button class="btn" type="submit">${p.comprobar}</button></form>`;
+  h+='<div id="pr-res"></div>';
+  box.innerHTML=h;
+  if(PR.modo==='clase')document.querySelectorAll('#pr-ops button').forEach(b=>b.onclick=()=>prClase(b.dataset.c));
+  else{document.getElementById('pr-esc').onsubmit=e=>{e.preventDefault();prRes()};
+    if(innerWidth>700)setTimeout(()=>{const i=document.getElementById('pr-in');if(i)i.focus({preventScroll:true})},0)}
+}
+function prApunta(ok){PR.n++;if(ok){PR.ok++;PR.racha++}else PR.racha=0;const s=PR.por[prCur.c]||(PR.por[prCur.c]={ok:0,n:0});s.n++;if(ok)s.ok++;guardaPR();prMarcador();prStats()}
+function prSolucion(veredicto,tuya){
+  const p=P[lang],x=prCur,c=byId[x.c];
+  let h=`<div class="pr-res">${veredicto}`;
+  if(tuya!=null)h+=`<p class="pr-tuya">${p.tuya}: ${esc(tuya)||'—'}</p>`;
+  h+=`<dl class="pr-sol"><dt>${p.dl.clase}</dt><dd><b>${c.n}</b> · <i lang="pi">${esc(c.pali)}</i> — ${esc(T[lang].clLargo[c.id])}</dd>`;
+  if(x.sub)h+=`<dt>${p.dl.sub}</dt><dd>${md(x.sub)}</dd>`;
+  if(x.sentido&&L(x.sentido))h+=`<dt>${p.dl.sentido}</dt><dd>${md(L(x.sentido))}</dd>`;
+  if(!x.b){h+=`<dt>${p.dl.res}</dt><dd><i lang="pi">${esc(x.res)}</i></dd>`;if(L(x.trad))h+=`<dt>${p.dl.tr}</dt><dd>${trad(L(x.trad))}</dd>`}
+  h+='</dl>';
+  if(x.b)h+=interlineal(x.b).replace(/ id="[^"]*"/,'').replace(/<a class="ancla"[^>]*>¶<\/a>/,'');
+  h+=`<div class="pr-acc"><button class="btn" id="pr-sig">${p.sig}</button><a href="?c=${x.c}#${x.id}" data-ir-id="${x.id}">${p.verla}</a></div></div>`;
+  document.getElementById('pr-res').innerHTML=h;
+  document.getElementById('pr-sig').onclick=prNuevo;
+  prHecho=true;
+  setTimeout(()=>{const s=document.getElementById('pr-sig');if(s)s.focus({preventScroll:true})},0);
+}
+function prClase(id){
+  if(prHecho||!prCur)return;const p=P[lang],ok=id===prCur.c;
+  document.querySelectorAll('#pr-ops button').forEach(b=>{b.disabled=true;if(b.dataset.c===prCur.c)b.classList.add('bien');else if(b.dataset.c===id)b.classList.add('mal');else b.classList.add('atenua')});
+  prApunta(ok);
+  prSolucion(`<p class="pr-ver"><span class="v ${ok?'bien':'mal'}">${ok?p.bien:p.mal}</span></p>`);
+}
+const limpiaRes=s=>String(s||'').normalize('NFC').toLowerCase().replace(/[^\p{L}\p{M}\s]/gu,' ').replace(/\s+/g,' ').trim();
+function prRes(){
+  if(prHecho||!prCur)return;const p=P[lang],tuya=document.getElementById('pr-in').value.trim();
+  document.querySelector('#pr-esc input').disabled=true;document.querySelector('#pr-esc button').disabled=true;
+  const a=limpiaRes(tuya),b=limpiaRes(prCur.res);
+  if(a&&a===b){prApunta(true);return prSolucion(`<p class="pr-ver"><span class="v bien">${p.bien}</span></p>`,tuya)}
+  if(a&&norm(a)===norm(b)){prApunta(true);return prSolucion(`<p class="pr-ver"><span class="v casi">${p.casi}</span>${p.casiT}</p>`,tuya)}
+  prSolucion(`<p class="pr-ver">${p.igual} <button class="btn sec" id="pr-si">${p.si}</button> <button class="btn sec" id="pr-no">${p.no}</button></p>`,tuya);
+  prHecho='duda';
+  const fin=ok=>{prApunta(ok);const v=document.querySelector('#pr-res .pr-ver');v.innerHTML=`<span class="v ${ok?'bien':'mal'}">${ok?p.bien:p.mal}</span>`;prHecho=true;const s=document.getElementById('pr-sig');if(s)s.focus({preventScroll:true})};
+  document.getElementById('pr-si').onclick=()=>fin(true);document.getElementById('pr-no').onclick=()=>fin(false);
+}
+function practicaIniciar(){
+  prMarcador();prStats();prNuevo();
+  document.getElementById('pr-modo').onclick=e=>{const b=e.target.closest('button');if(!b)return;PR.modo=b.dataset.m;guardaPR();prMarcador();prNuevo()};
+  document.getElementById('pr-fil').onclick=e=>{const b=e.target.closest('button');if(!b)return;const f=b.dataset.f;
+    if(!f)PR.fil=[];else PR.fil=PR.fil.includes(f)?PR.fil.filter(x=>x!==f):PR.fil.concat(f);
+    if(PR.fil.length===CL.length)PR.fil=[];guardaPR();prMarcador();prNuevo()};
+}
+addEventListener('keydown',e=>{
+  if(cl!=='practicar'||e.altKey||e.ctrlKey||e.metaKey)return;
+  const enInput=e.target.closest&&e.target.closest('input,textarea');
+  if(PR.modo==='clase'&&!prHecho&&/^[1-6]$/.test(e.key)&&!enInput){const c=CL[+e.key-1];if(c){e.preventDefault();prClase(c.id)}}
+  else if(e.key==='Enter'&&prHecho===true&&!e.target.closest('a,button')){e.preventDefault();prNuevo()}
+});
+
+/* ── ¿qué compuesto es? ───────────────────────────────────────────── */
+let cualCamino=[],cualPrueba=null;
+function cualHTML(){
+  const g=G[lang];
+  return `<section class="cual"><h2>${g.tit}</h2><p class="intro">${g.intro}</p><p class="aviso-g">${g.aviso}</p>
+  <div class="cual-prueba" id="cual-prueba"></div><ol class="camino" id="camino"></ol><div id="cual-fin"></div></section>`;
+}
+function cualPintar(){
+  const g=G[lang],t=T[lang];
+  const pr=document.getElementById('cual-prueba');
+  pr.innerHTML=(cualPrueba?`<span class="il-c" lang="pi">${esc(cualPrueba.comp)}</span>${L(cualPrueba.trad)?`<span class="il-t">${trad(L(cualPrueba.trad))}</span>`:''}`:`<span class="vacio">${g.sin}</span>`)+
+    ` <button class="btn sec" id="cual-otro" style="margin-left:auto">${cualPrueba?g.otro:g.probar}</button>`;
+  document.getElementById('cual-otro').onclick=()=>{cualPrueba=BANCO[Math.floor(Math.random()*BANCO.length)];cualCamino=[];cualPintar()};
+  const ol=document.getElementById('camino');let h='',id=GUIA[0].id,fin=null;
+  for(let i=0;;i++){
+    const paso=GUIA.find(x=>x.id===id);if(!paso){fin=id;break}
+    const r=cualCamino[i];
+    h+=`<li class="${r?'hecho':'ahora'}"><p class="pq">${L(paso.q)}${r?`<span class="resp">${g.resp[r]}</span>`:''}</p>`;
+    if(!r){h+=`<p class="ej">${g.ej}: ${enlazarL(L(paso.ej))}</p><div class="sino"><button class="btn" data-r="si">${g.si}</button><button class="btn sec" data-r="no">${g.no}</button>${i?`<button class="btn sec" data-r="atras">${g.atras}</button>`:''}</div></li>`;break}
+    h+='</li>';id=r==='si'?paso.si:paso.no;
+  }
+  ol.innerHTML=h;
+  ol.querySelectorAll('.sino button').forEach(b=>b.onclick=()=>{if(b.dataset.r==='atras')cualCamino.pop();else cualCamino.push(b.dataset.r);cualPintar();
+    const a=document.querySelector('#camino li.ahora, #cual-fin .cual-fin');if(a&&a.getBoundingClientRect().bottom>innerHeight)a.scrollIntoView({block:'center',behavior:'smooth'})});
+  const f=document.getElementById('cual-fin');
+  if(!fin){f.innerHTML='';return}
+  const c=byId[fin],x=GUIA_FIN[fin]||GUIA_FIN.fin,tx=x[lang]||x.es;
+  let cmp='';
+  if(cualPrueba&&c){const ok=cualPrueba.c===fin;cmp=`<p class="cmp ${ok?'bien':'mal'}">${ok?g.acierto('<i>'+esc(c.pali)+'</i>'):g.fallo('<i>'+esc(c.pali)+'</i>','<i>'+esc(byId[cualPrueba.c].pali)+'</i>')}</p>`}
+  else if(cualPrueba&&!c){cmp=`<p class="cmp">${g.acierto('<i>'+esc(byId[cualPrueba.c].pali)+'</i>').replace(/^[^:]*:/,'')}</p>`}
+  f.innerHTML=`<div class="cual-fin"><span class="lbl">${c?g.es:g.noDecide}</span><h3 lang="pi">${c?esc(c.pali):'—'}${c?`<small>${esc(t.clLargo[c.id])} · <a class="k" href="../../s/${c.kacc[0]}/${lq()}">Kacc. §${c.kacc[0]}</a></small>`:''}</h3>
+    <p>${enlazarL(tx.p)}</p><p class="ojo"><b>${g.ojo}</b>${enlazarL(tx.o)}</p>${cmp}
+    <div class="cual-acc"><button class="btn" id="cual-de-nuevo">${g.deNuevo}</button>${c?`<a href="?c=${c.id}" data-ir="${c.id}">${g.ir('<i>'+esc(c.pali)+'</i>')}</a>`:`<a href="?c=tappurisa" data-ir="tappurisa">${g.ir('<i>tappurisa</i>')}</a>`}${cualPrueba?` <a href="?c=${cualPrueba.c}#${cualPrueba.id}" data-ir-id="${cualPrueba.id}">${P[lang].verla}</a>`:''}</div></div>`;
+  document.getElementById('cual-de-nuevo').onclick=()=>{cualCamino=[];cualPintar();scrollTo({top:document.getElementById('bar').offsetTop})};
+}
+/* «(L0985)» en la guía: un enlace al bloque de esa línea */
+const POR_L={};SECC.forEach(s=>s.bloques.forEach(b=>{if(b.L&&!POR_L[b.L])POR_L[b.L]=b.id;if(b.L_resolucion&&!POR_L[b.L_resolucion])POR_L[b.L_resolucion]=b.id}));
+function idDeL(n){/* la línea exacta o la del bloque que la contiene */
+  if(POR_L[n])return POR_L[n];let mejor=null;SECC.forEach(s=>s.bloques.forEach(b=>{const a=+b.L,z=+(b.hasta||b.L);if(+n>=a&&+n<=z)mejor=b.id}));return mejor}
+function enlazarL(h){return h.replace(/L(\d{4})/g,(m,n)=>{const id=idDeL(n);return id?`<a class="k" href="?c=${TAB_DE[id]}#${id}" data-ir-id="${id}">${m}</a>`:m})}
+
+/* ── textos fijos, idioma, tema, índice ───────────────────────────── */
+function textos(){
+  const t=T[lang];root.lang=lang;
+  document.getElementById('q').placeholder=t.search;
+  document.title=t.title;
+  document.getElementById('h1').textContent=t.title;
+  document.getElementById('sb-tit').textContent=t.sb;
+  document.getElementById('entradilla').innerHTML=t.entradilla;
+  document.getElementById('aviso').innerHTML=t.aviso;
+  const gl=document.getElementById('guia-l');gl.textContent=t.guia;gl.href='guia/'+lq();
+  document.getElementById('hero').innerHTML=t.hero(CL.length,N_SUB,BANCO.length);
+  document.getElementById('lic').innerHTML=t.lic;
+  document.getElementById('borr').textContent=lang==='en'?'draft':'borrador';
+  document.getElementById('vbadge').innerHTML=`v${esc(M.version)} · <time datetime="${M.fecha}">${M.fecha}</time>`;
+  document.getElementById('vbadge').title=L(M.estado);
+  document.getElementById('notas-sum').textContent=t.notas_sum;
+  document.getElementById('vfoot').innerHTML=`<strong>${t.ver} ${esc(M.version)}</strong> — <time datetime="${M.fecha}">${M.fecha}</time>. ${esc(L(M.estado))}. ${esc(L(M.nota_version))}`;
+  document.getElementById('notas-pie').innerHTML=t.notas();
+  const lb=document.getElementById('lang-btn');lb.querySelectorAll('.lang-seg').forEach(s=>s.classList.toggle('lang-cur',s.dataset.l===lang));
+  lb.title=lang==='en'?'Ver esta página en español':'View this page in English';lb.setAttribute('aria-label',lb.title);
+}
+function irA(tab,id){
+  if(tab&&tab!==cl){cl=tab;render()}
+  try{history.replaceState(null,'','?c='+cl+(lang==='en'?'&lang=en':'')+(id?'#'+id:''))}catch(_){}
+  if(id){const el=document.getElementById(id);if(el){if(el.hidden){document.getElementById('q').value='';filtrar()}
+    el.scrollIntoView({block:'start'});el.classList.add('foco');setTimeout(()=>el.classList.remove('foco'),1800)}}
+  else scrollTo({top:document.getElementById('bar').offsetTop});
+}
+document.getElementById('q').addEventListener('input',filtrar);
+document.querySelector('.tabs-fila').addEventListener('click',e=>{const b=e.target.closest('button[data-c]');if(!b)return;irA(b.dataset.c)});
+document.addEventListener('click',e=>{const a=e.target.closest('a[data-ir],a[data-ir-id]');if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();
+  if(a.dataset.irId){const id=a.dataset.irId;irA(TAB_DE[id]||(id.split('-f')[0]&&TAB_DE[id.replace(/-f\d+$/,'')])||cl,id)}else irA(a.dataset.ir);
+  if(!ancha())cerrarSb()});
+document.getElementById('lang-btn').onclick=()=>{lang=lang==='en'?'es':'en';store.set('pali_lang',lang);textos();render();
+  try{history.replaceState(null,'','?c='+cl+(lang==='en'?'&lang=en':'')+location.hash)}catch(_){}};
+const saved=store.get('pali_dark');
+if(saved==='1'||(saved===null&&mq('(prefers-color-scheme: dark)'))) root.dataset.theme='dark';
+document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';store.set('pali_dark',root.dataset.theme==='dark'?'1':'0')};
+const sbEl=document.getElementById('sidebar'),scr=document.getElementById('scrim'),burger=document.getElementById('burger'),barEl=document.getElementById('bar');
+const ancha=()=>innerWidth>900;
+function medirBarra(){root.style.setProperty('--barh',barEl.offsetHeight+'px')}
+medirBarra();addEventListener('resize',medirBarra);
+if(window.ResizeObserver)new ResizeObserver(medirBarra).observe(barEl);
+const cerrarSb=()=>{sbEl.classList.remove('open');scr.classList.remove('on')};
+function pintarBarra(oc){root.classList.toggle('sin-barra',oc)}
+burger.onclick=()=>{if(ancha())pintarBarra(!root.classList.contains('sin-barra'));else{sbEl.classList.toggle('open');scr.classList.toggle('on')}};
+document.getElementById('sbclose').onclick=()=>{if(ancha())pintarBarra(true);else cerrarSb()};
+document.getElementById('volver-barra').onclick=()=>pintarBarra(false);
+addEventListener('resize',()=>{if(!ancha())root.classList.remove('sin-barra')});
+scr.onclick=cerrarSb;
+addEventListener('keydown',e=>{if(e.key==='Escape')cerrarSb()});
+sbEl.addEventListener('click',e=>{if(e.target.closest('a[href^="#"]')&&!ancha())cerrarSb()});
+let spyF=0;
+function espiar(){
+  const links=document.querySelectorAll('#sb-list a[data-c]');let cur=null;const lim=barEl.getBoundingClientRect().bottom+40;
+  for(const a of links){if(a.hidden)continue;const el=document.getElementById(a.dataset.c);if(!el)continue;if(el.getBoundingClientRect().top<=lim)cur=a;else break}
+  links.forEach(a=>a.classList.toggle('on',a===cur));
+}
+const topBtn=document.getElementById('top-btn');
+addEventListener('scroll',()=>{topBtn.classList.toggle('show',scrollY>600);if(!spyF)spyF=requestAnimationFrame(()=>{spyF=0;espiar()})},{passive:true});
+topBtn.onclick=()=>scrollTo({top:0});
+textos();render();
+function irAncla(){const id=decodeURIComponent(location.hash.slice(1));if(!id)return;
+  if(/^nota-|^ll-/.test(id)){const t=document.getElementById(id);if(t)setTimeout(()=>t.scrollIntoView(),0);return}
+  const tab=TAB_DE[id]||TAB_DE[id.replace(/-f\d+$/,'')];if(tab&&tab!==cl){cl=tab;render()}
+  const t=document.getElementById(id);if(t)setTimeout(()=>{t.scrollIntoView();t.classList.add('foco');setTimeout(()=>t.classList.remove('foco'),1800)},0)}
+addEventListener('hashchange',irAncla);irAncla();
+})();
+</script>
+</body>
+</html>

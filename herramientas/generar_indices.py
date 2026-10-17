@@ -160,6 +160,15 @@ RECURSOS = [
      "Buscador que ignora los diacríticos, filtro por el sentido de "
      "caso e índice por el alfabeto pāḷi.",
      ("indeclinables/guia/", "Guía para el estudiante", "Student guide")),
+    ("compuestos/", "__COMPUESTOS_BADGE__", "Compuestos — samāsa",
+     "Los compuestos (<i>samāsa</i>) del pāḷi en sus seis clases "
+     "—<i>abyayībhāva</i>, <i>kammadhāraya</i>, <i>digu</i>, <i>tappurisa</i>, "
+     "<i>bahubbīhi</i> y <i>dvanda</i>— con sus subtipos y la resolución "
+     "(<i>viggaha</i>) de cada ejemplo palabra por palabra: el documento "
+     "«Compuesto (samāsa)» de Bhikkhu Nandisena (2004–2005), en revisión por "
+     "IEBH. Buscador que ignora los diacríticos, un modo de práctica y una "
+     "guía para reconocer la clase de un compuesto. Borrador en revisión.",
+     ("compuestos/guia/", "Guía para el estudiante", "Student guide")),
     ("glosario/", "__GLOSARIO_BADGE__", "Glosario de terminología gramatical",
      "Los términos técnicos de la gramática pāḷi en una sola lista "
      "alfabética, con tres capas por lema: <i>Glosario de términos "
@@ -385,6 +394,21 @@ EN = {
         "the missing particles added and their source. Search ignores "
         "diacritics, with a filter by case sense and an index by the Pāḷi "
         "alphabet. The English is a draft.",
+    "Compuestos — samāsa": "Compounds — samāsa",
+    "Los compuestos (<i>samāsa</i>) del pāḷi en sus seis clases "
+    "—<i>abyayībhāva</i>, <i>kammadhāraya</i>, <i>digu</i>, <i>tappurisa</i>, "
+    "<i>bahubbīhi</i> y <i>dvanda</i>— con sus subtipos y la resolución "
+    "(<i>viggaha</i>) de cada ejemplo palabra por palabra: el documento "
+    "«Compuesto (samāsa)» de Bhikkhu Nandisena (2004–2005), en revisión por "
+    "IEBH. Buscador que ignora los diacríticos, un modo de práctica y una "
+    "guía para reconocer la clase de un compuesto. Borrador en revisión.":
+        "The Pāḷi compounds (<i>samāsa</i>) in their six classes "
+        "—<i>abyayībhāva</i>, <i>kammadhāraya</i>, <i>digu</i>, <i>tappurisa</i>, "
+        "<i>bahubbīhi</i> and <i>dvanda</i>— with their subtypes and the "
+        "resolution (<i>viggaha</i>) of every example word by word: Bhikkhu "
+        "Nandisena's document «Compuesto (samāsa)» (2004–2005), under revision "
+        "by IEBH. Search ignores diacritics, with a practice mode and a guide "
+        "to recognising the class of a compound. Draft under review.",
     "Clasificación de los suttas de Kaccāyana":
         "Classification of the Kaccāyana suttas",
     "Cada aforismo de Kaccāyana clasificado según "
@@ -762,6 +786,17 @@ def cuenta_particulas():
     return len(d["entradas"]) + nuevas, pref, ind["meta"]["version"]
 
 
+def cuenta_compuestos():
+    """(clases, subtipos, compuestos resueltos, versión) de compuestos.json."""
+    import json
+    p = os.path.join(RAIZ, "recursos", "compuestos", "compuestos.json")
+    if not os.path.exists(p):
+        return None
+    import generar_compuestos
+    d = json.load(open(p, encoding="utf-8"))
+    return generar_compuestos.cuenta(d) + (d["meta"]["version"],)
+
+
 def cuenta_raices():
     """(raíces, con cognado sánscrito) de raices.json, para la insignia."""
     import json
@@ -816,6 +851,11 @@ GRUPOS_RECURSOS = [
          "Bhikkhu Nandisena",
          "Bhikkhu Nandisena's prefixes, particles and other indeclinables "
          "(<i>abyaya</i>)", True),
+        ("compuestos/", "Compuestos", "Compounds",
+         "Las seis clases de <i>samāsa</i> de Bhikkhu Nandisena, con la "
+         "resolución de cada ejemplo y un modo de práctica",
+         "Bhikkhu Nandisena's six classes of <i>samāsa</i>, with the resolution "
+         "of every example and a practice mode", True),
     ]),
     (("Derivar y practicar", "Derive and practise"), [
         ("sandhi/", "Sandhi", "Sandhi",
@@ -1216,7 +1256,12 @@ def indice_recursos():
     badge_pti = (bi("{1} prefijos · {0} partículas · v{2}".format(*n_pti),
                     "{1} prefixes · {0} particles · v{2}".format(*n_pti))
                  if n_pti else "indeclinables")
+    n_cmp = cuenta_compuestos()
+    badge_cmp = (bi("{0} clases · {2} compuestos · v{3}".format(*n_cmp),
+                    "{0} classes · {2} compounds · v{3}".format(*n_cmp))
+                 if n_cmp else "compuestos")
     insignias = {"__SANDHI_BADGE__": badge, "__PARADIGMAS_BADGE__": badge_par,
+                 "__COMPUESTOS_BADGE__": badge_cmp,
                  "__PARTICULAS_BADGE__": badge_pti,
                  "__CASOS_BADGE__": badge_cas,
                  "__CLASIFICACION_BADGE__": badge_cla,
@@ -1243,7 +1288,8 @@ def indice_recursos():
                 and (ins != "__CLASIFICACION_BADGE__" or n_cla)
                 and (ins != "__ANALISIS_BADGE__" or n_ana)
                 and (ins != "__COMENTARIOS_BADGE__" or n_com)
-                and (ins != "__PARTICULAS_BADGE__" or n_pti)]
+                and (ins != "__PARTICULAS_BADGE__" or n_pti)
+                and (ins != "__COMPUESTOS_BADGE__" or n_cmp)]
 
     # El número de paradigmas, de los datos: la descripción decía «83» a
     # mano mientras la insignia contaba 85 (2026-10-08).

@@ -178,6 +178,12 @@ PAGINAS = {
     "indeclinables-guia": dict(raiz="../../../", seccion="recursos", indice=False,
                                idioma="alterna", ctl_idioma="#lang-btn",
                                tema="atributo", ctl_tema="#theme"),
+    "compuestos": dict(raiz="../../", seccion="recursos", indice=False,
+                       idioma="alterna", ctl_idioma="#lang-btn",
+                       tema="atributo", ctl_tema="#theme"),
+    "compuestos-guia": dict(raiz="../../../", seccion="recursos", indice=False,
+                            idioma="alterna", ctl_idioma="#lang-btn",
+                            tema="atributo", ctl_tema="#theme"),
     # documentos en prosa de recursos/*.md (hoy ninguno se publica)
     "recurso":     dict(raiz="../../", seccion="recursos", indice=False,
                         idioma="solo-es", tema="clase", ctl_tema="#dark-btn"),
@@ -350,7 +356,8 @@ FUENTES = ("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght
 CON_RECURSOS_CSS = {"recursos", "sandhi", "solucionador", "nombre", "verbo",
                     "paradigmas", "raices", "glosario", "casos", "clasificacion",
                     "analisis", "analisis-guia", "comentarios",
-                    "indeclinables", "indeclinables-guia"}
+                    "indeclinables", "indeclinables-guia",
+                    "compuestos", "compuestos-guia"}
 
 MARCA_INI = "<!-- cabecera:inicio -->"
 MARCA_FIN = "<!-- cabecera:fin -->"

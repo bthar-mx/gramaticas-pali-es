@@ -1,0 +1,777 @@
+{
+ "descripcion": "Post-paso EM («edición moderna») de las citas pāḷi de la página «Compuestos (samāsa)»: sustituciones exactas por línea (texto-revisado.txt, por id de línea; guia.md, por número de línea orientativo). Lo aplica herramientas/compuestos_sandhi_em.py; compuestos_aplicar.py lo llama al final.",
+ "fecha": "2026-10-17",
+ "cambios": [
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0003b",
+   "antes": "(sayañca nāmikattā)",
+   "despues": "(sayañ ca nāmikattā)",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": "forma de la casa citada por el IEBH: «sayañ ca»"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0005b",
+   "antes": "visessamanupavīsati",
+   "despues": "visessam anupavīsati",
+   "regla": "nasal en forma de sandhi ante vocal",
+   "fuente": "Moggallāna-pañcikā-ṭīkā: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0005b",
+   "antes": "«tadaññaṃ vākyamiti ruḷhaṃ»",
+   "despues": "«tadaññaṃ vākyam iti ruḷhaṃ»",
+   "regla": "nasal en forma de sandhi ante vocal",
+   "fuente": "Rūpasiddhi: forma ya presente en la guía (guia.md, texto de la casa)",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0007b",
+   "antes": "«tatthāpi vā ekapadattūpagamanato duvidhampi labbhateva»",
+   "despues": "«tatth’ āpi vā ekapadattūpagamanato duvidham pi labbhat’ eva»",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": "Cotejado con la edición del IEBH de Rūpasiddhi («tatth’ āpi vā»)."
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0030b",
+   "antes": "vibhāvayatīti abyayībhāvo",
+   "despues": "vibhāvayatī ti abyayībhāvo",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0030b",
+   "antes": "abyayaṃ bhavatīti»",
+   "despues": "abyayaṃ bhavatī ti»",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0097b",
+   "antes": "gacchati seyyathāpi ākāse",
+   "despues": "gacchati seyyathā pi ākāse",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0097e",
+   "antes": "«Koyaṃ majjhe samuddasmiṃ, apassaṃ tīramāyuhe»",
+   "despues": "«Ko ’yaṃ majjhe samuddasmiṃ, apassaṃ tīram āyuhe»",
+   "regla": "vocal elidida con apóstrofo; nasal en forma de sandhi ante vocal",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "«ko ’yaṃ» como en la guía (G37)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0113h",
+   "antes": "sakatthanānāttepi",
+   "despues": "sakatthanānātte pi",
+   "regla": "enclítico aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0142b",
+   "antes": "«Satto saṃsāramāpādi, dukkhamassa mahabbhayaṃ»",
+   "despues": "«Satto saṃsāram āpādi, dukkham assa mahabbhayaṃ»",
+   "regla": "nasal en forma de sandhi ante vocal",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0148b",
+   "antes": "Idhekacco puggalo pāṇātipātā",
+   "despues": "Idh’ ekacco puggalo pāṇātipātā",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0155b",
+   "antes": "«Pañcime, bhikkhave,",
+   "despues": "«Pañc’ ime, bhikkhave,",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0169b",
+   "antes": "tesaṃ aggamakkhāyati»",
+   "despues": "tesaṃ aggam akkhāyati»",
+   "regla": "nasal en forma de sandhi ante vocal",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0343b",
+   "antes": "Idhekacco puggalo tiṇṇaṃ",
+   "despues": "Idh’ ekacco puggalo tiṇṇaṃ",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0448b",
+   "antes": "na cāpi apunappunaṃ",
+   "despues": "na cā pi apunappunaṃ",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "como «tathā pi», «aññatrā pi» de la casa"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0448e",
+   "antes": "taṃsadisatadaññatabbiruddhatadabhāvesupi",
+   "despues": "taṃsadisatadaññatabbiruddhatadabhāvesu pi",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0448e",
+   "antes": "akāro virahappake’’ti evaṃ",
+   "despues": "akāro virahappake’’ ti evaṃ",
+   "regla": "ti aparte",
+   "fuente": "Apadāna-aṭṭhakathā / Sīmavisodhanī: convertido por regla",
+   "nota": "se conserva la comilla de cierre de la CST"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0448e",
+   "antes": "aññatthe sadisepi ca;",
+   "despues": "aññatthe sadise pi ca;",
+   "regla": "enclítico aparte",
+   "fuente": "Apadāna-aṭṭhakathā / Sīmavisodhanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0452e",
+   "antes": "asato cāphalo tasmā, kathamabrāhmaṇoti ce?",
+   "despues": "asato c’ āphalo tasmā, katham abrāhmaṇo ti ce?",
+   "regla": "vocal elidida con apóstrofo; nasal en forma de sandhi ante vocal; ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0452e",
+   "antes": "«abrāhmaṇoti brāhmaṇasadisoti vuttaṃ hoti»",
+   "despues": "«abrāhmaṇo ti brāhmaṇasadiso ti vuttaṃ hoti»",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0493b",
+   "antes": "«kucchitamannanti niccasamāsattā",
+   "despues": "«kucchitam annan ti niccasamāsattā",
+   "regla": "nasal en forma de sandhi ante vocal; ti aparte",
+   "fuente": "Rūpasiddhi: forma ya presente en la guía (guia.md, texto de la casa)",
+   "nota": "igual que la guía (G171)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0525b",
+   "antes": "«Pādipubbapado ca niccasamāsova»",
+   "despues": "«Pādipubbapado ca niccasamāso ’va»",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": "eva → ’va como «parā ’va», «iminā ’va» de la casa (datos.json)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0578b",
+   "antes": "katañca sukataṃ seyyo, yaṃ katvā nānutappati",
+   "despues": "katañ ca sukataṃ seyyo, yaṃ katvā n’ ānutappati",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "«n’ ā-» como «n’ ābhibhāsasi» (01) y «n’ ānuvattetabbaṃ» (Rū 337, datos.json)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0584b",
+   "antes": "«ayuttatthattā nāññena samāso»",
+   "despues": "«ayuttatthattā n’ āññena samāso»",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0584b",
+   "antes": "ayuttatthānampi samāso",
+   "despues": "ayuttatthānam pi samāso",
+   "regla": "enclítico aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0584b",
+   "antes": "puna gāyitabbāti punageyyā",
+   "despues": "puna gāyitabbā ti punageyyā",
+   "regla": "ti aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0639b",
+   "antes": "«Samāhāradigussetaṃ gahaṇaṃ»",
+   "despues": "«Samāhāradiguss’ etaṃ gahaṇaṃ»",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0644b",
+   "antes": "«sabbatthekavacanameva hoti»",
+   "despues": "«sabbatth’ ekavacanam eva hoti»",
+   "regla": "vocal elidida con apóstrofo; enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0644b",
+   "antes": "napuṃsakameva rassantameva ekavacanantameva",
+   "despues": "napuṃsakam eva rassantam eva ekavacanantam eva",
+   "regla": "enclítico aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0675e",
+   "antes": "«Tiye dutāpi ca»",
+   "despues": "«Tiye du-tāpi ca»",
+   "regla": "texto de la casa (regla 2)",
+   "fuente": "Kaccāyana publicado: kaccayana/05-taddhita-kappa.md (§386)",
+   "nota": "título del sutta como en el cap. 5 publicado"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0675e",
+   "antes": "Caggahaṇena dviiccetassa dikāro hoti",
+   "despues": "Caggahaṇena dvi icc etassa dikāro hoti",
+   "regla": "texto de la casa (regla 2)",
+   "fuente": "Kaccāyana publicado: kaccayana/05-taddhita-kappa.md (§386)",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0731b",
+   "antes": "vacanadvayañca vākyañca",
+   "despues": "vacanadvayañ ca vākyañ ca",
+   "regla": "enclítico aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0738b",
+   "antes": "appakasireneva catuddisā",
+   "despues": "appakasiren’ eva catuddisā",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0833b",
+   "antes": "«kammaṃ karotīti kammakāro»",
+   "despues": "«kammaṃ karotī ti kammakāro»",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi: forma ya presente en la guía (guia.md, texto de la casa)",
+   "nota": "igual que la guía (G42)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0833b",
+   "antes": "«niccasamāsoyeva»",
+   "despues": "«niccasamāso yeva»",
+   "regla": "enclítico aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0838e",
+   "antes": "pana vuttiyeva tassa niccattā",
+   "despues": "pana vutti yeva tassa niccattā",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": "«vutti yeva» como en la frase española de la misma línea"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0838e",
+   "antes": "tavantumānantādikitantehi vākyameva",
+   "despues": "tavantumānantādikitantehi vākyam eva",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0855b",
+   "antes": "«piyehi vippayogopi dukkho»",
+   "despues": "«piyehi vippayogo pi dukkho»",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0856b",
+   "antes": "(urena gacchatīti,",
+   "despues": "(urena gacchatī ti,",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0884b",
+   "antes": "«saṅghassatthāya bhattaṃ",
+   "despues": "«saṅghass’ atthāya bhattaṃ",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0950b",
+   "antes": "(vane caratīti,",
+   "despues": "(vane caratī ti,",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0969b",
+   "antes": "(pabhaṃ karotīti,",
+   "despues": "(pabhaṃ karotī ti,",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1023b",
+   "antes": "«Jitindriyaṃ buddhamanomanikkamaṃ»",
+   "despues": "«Jitindriyaṃ buddham anomanikkamaṃ»",
+   "regla": "nasal en forma de sandhi ante vocal",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1029b",
+   "antes": "«Bhāvitattāpi arahanto",
+   "despues": "«Bhāvitattā pi arahanto",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1036b",
+   "antes": "chinno rukkho yenāti chinnarukkho",
+   "despues": "chinno rukkho yenā ti chinnarukkho",
+   "regla": "ti aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1058a",
+   "antes": "niratthaṃva kaliṅgaraṃ",
+   "despues": "niratthaṃ ’va kaliṅgaraṃ",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "iva → ’va como «uttattaṃ ’va» (01)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1066b",
+   "antes": "chando jāto assāti chandajāto",
+   "despues": "chando jāto assā ti chandajāto",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1069b",
+   "antes": "«Yo nāccasārī na paccasārī, sabbaṃ vitathamidanti vītarāgo»",
+   "despues": "«Yo n’ āccasārī na paccasārī, sabbaṃ vitatham idan ti vītarāgo»",
+   "regla": "vocal elidida con apóstrofo; nasal en forma de sandhi ante vocal; ti aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "«vitatham idan ti» como la guía (G369)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1081j",
+   "antes": "«Punāparaṃ dasabalo",
+   "despues": "«Pun’ āparaṃ dasabalo",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "como «Pun’ ārambha-» de la casa"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1081p",
+   "antes": "«Vamodudantānaṃ»",
+   "despues": "«Vam od-udantānaṃ»",
+   "regla": "texto de la casa (regla 2)",
+   "fuente": "Kaccāyana publicado: kaccayana/01-sandhi-kappa.md (§18)",
+   "nota": "título del sutta como en el cap. 1 publicado"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1098f",
+   "antes": "«Anutīre mahiyekarattivāso»",
+   "despues": "«Anutīre mahiy’ ekarattivāso»",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "la propia línea da el análisis «mahiyā + ekarattivāso»"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1104b",
+   "antes": "«Hetu ceva sahetuko ca»",
+   "despues": "«Hetu c’ eva sahetuko ca»",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1110",
+   "antes": "sā 'yaṃ pubbadakkhiṇā",
+   "despues": "sā ’yaṃ pubbadakkhiṇā",
+   "regla": "apóstrofo de la casa (’)",
+   "fuente": "Nandisena (samasa6.doc)",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1112i",
+   "antes": "pupphāni cāti nānādumapatitapupphāni",
+   "despues": "pupphāni cā ti nānādumapatitapupphāni",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi: forma ya presente en la guía (guia.md, texto de la casa)",
+   "nota": "igual que la guía (G283)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1112i",
+   "antes": "pabbatassa soyaṃ nānādumapatitapupphavāsitasānu",
+   "despues": "pabbatassa so ’yaṃ nānādumapatitapupphavāsitasānu",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi: forma ya presente en la guía (guia.md, texto de la casa)",
+   "nota": "igual que la guía (G285)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125ai",
+   "antes": "\"Yathā vā paneke bhonto",
+   "despues": "\"Yathā vā pan’ eke bhonto",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125at",
+   "antes": "«‘jānipatī’ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ti»",
+   "despues": "«‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti»",
+   "regla": "ti aparte",
+   "fuente": "Moggallāna / Pañcikā-ṭīkā: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125at",
+   "antes": "«nāyampayogoti tudampatippayogaṃ",
+   "despues": "«nā ’yam payogo ti tudampatippayogaṃ",
+   "regla": "vocal elidida con apóstrofo; enclítico aparte; ti aparte",
+   "fuente": "Moggallāna-pañcikā-ṭīkā: convertido por regla",
+   "nota": "«ayaṃ» → «’yaṃ» como «na cā ’yaṃ» (Rū 335, datos.json)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125at",
+   "antes": "aññehi cāti iminā",
+   "despues": "aññehi cā ti iminā",
+   "regla": "ti aparte",
+   "fuente": "Moggallāna-pañcikā-ṭīkā: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125bc",
+   "antes": "\"Aṃmo niggahītaṃ jhalapehi\"",
+   "despues": "\"Aṃ-mo niggahitaṃ jha-la-pehi\"",
+   "regla": "texto de la casa (regla 2)",
+   "fuente": "Kaccāyana publicado: kaccayana/02-nama-kappa.md (§82)",
+   "nota": "título del sutta como en el cap. 2 publicado y en L0183b"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125j",
+   "antes": "\"Yodha sītañca uṇhañca, tiṇā",
+   "despues": "\"Yo ’dha sītañ ca uṇhañ ca, tiṇā",
+   "regla": "vocal elidida con apóstrofo; enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "«’dha» como «kiṃ sū ’dha» (01)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1146a",
+   "antes": "«Na pañcamyāyamambhāvo, kvacīti adhikārato; tatiyāsattamīchaṭṭhīnantu hoti vikappato»",
+   "despues": "«Na pañcamyāyam ambhāvo, kvaci ti adhikārato; tatiyāsattamī-chaṭṭhīnan tu hoti vikappato»",
+   "regla": "texto de la casa (regla 2)",
+   "fuente": "Rūpasiddhi: extracto EM de la casa en recursos/clasificacion/datos.json (Rū 336)",
+   "nota": "la casa conserva «pañcamyāyam» unido y escribe «kvaci ti» (vocal breve)"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1147a",
+   "antes": "«na kiñci parivajjetīti attho»",
+   "despues": "«na kiñci parivajjetī ti attho»",
+   "regla": "ti aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1147a",
+   "antes": "so gilati, jaccandhova samakkhikaṃ",
+   "despues": "so gilati, jaccandho ’va samakkhikaṃ",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "iva → ’va"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1153c",
+   "antes": "tagguṇena saheva viññāṇo aññapadattho yasminti tagguṇasaṃviññāṇo",
+   "despues": "tagguṇena sah’ eva viññāṇo aññapadattho yasmin ti tagguṇasaṃviññāṇo",
+   "regla": "vocal elidida con apóstrofo; ti aparte",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "15",
+   "antes": "(*vuttañhi*)",
+   "despues": "(*vuttañ hi*)",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "25",
+   "antes": "visessamanupavīsati",
+   "despues": "visessam anupavīsati",
+   "regla": "nasal en forma de sandhi ante vocal",
+   "fuente": "Moggallāna-pañcikā-ṭīkā: convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "42",
+   "antes": "*upapadasamāse pana vuttiyeva tassa niccattā*",
+   "despues": "*upapadasamāse pana vutti yeva tassa niccattā*",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "42",
+   "antes": "*tavantumānantādikitantehi vākyameva*",
+   "despues": "*tavantumānantādikitantehi vākyam eva*",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "55",
+   "antes": "*bahubbīhi cāyaṃ abhidheyyaliṅgavacano*",
+   "despues": "*bahubbīhi cā ’yaṃ abhidheyyaliṅgavacano*",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": "como «na cā ’yaṃ» (Rū 335, datos.json)"
+  },
+  {
+   "archivo": "guia.md",
+   "L": "81",
+   "antes": "(*iccādīnaṃ*)",
+   "despues": "(*icc ādīnaṃ*)",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Niruttidīpanī: convertido por regla",
+   "nota": "como «“pabhaṅkaro” ti ādīsu» (Rū 332, datos.json) e «icc evamādīnaṃ» (04)"
+  },
+  {
+   "archivo": "guia.md",
+   "L": "116",
+   "antes": "*byadhikaraṇānampi bāhiratthasamāso hoti*",
+   "despues": "*byadhikaraṇānam pi bāhiratthasamāso hoti*",
+   "regla": "enclítico aparte",
+   "fuente": "ṭīkā (Tipiṭaka CST): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "171",
+   "antes": "*pādipubbapado ca niccasamāsova*",
+   "despues": "*pādipubbapado ca niccasamāso ’va*",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "185",
+   "antes": "*aññatra pana bahuvacanampi*",
+   "despues": "*aññatra pana bahuvacanam pi*",
+   "regla": "enclítico aparte",
+   "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "312",
+   "antes": "*Seyyathāpi, bhikkhave,",
+   "despues": "*Seyyathā pi, bhikkhave,",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "333",
+   "antes": "gacchati seyyathāpi ākāse*",
+   "despues": "gacchati seyyathā pi ākāse*",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "351",
+   "antes": "*balavā saṅkhadhamo appakasireneva catuddisā viññāpeyya*",
+   "despues": "*balavā saṅkhadhamo appakasiren’ eva catuddisā viññāpeyya*",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "369",
+   "antes": "*Yo nāccasārī na paccasārī,",
+   "despues": "*Yo n’ āccasārī na paccasārī,",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  },
+  {
+   "archivo": "guia.md",
+   "L": "373",
+   "antes": "*Chuddho apetaviññāṇo, niratthaṃ va kaliṅgaraṃ*",
+   "despues": "*Chuddho apetaviññāṇo, niratthaṃ ’va kaliṅgaraṃ*",
+   "regla": "vocal elidida con apóstrofo",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": "iva → ’va"
+  },
+  {
+   "archivo": "guia.md",
+   "L": "377",
+   "antes": "*Ayañhi, deva,",
+   "despues": "*Ayañ hi, deva,",
+   "regla": "enclítico aparte",
+   "fuente": "Tipiṭaka CST (VRI): convertido por regla",
+   "nota": ""
+  }
+ ],
+ "ocr": [],
+ "dudas": [
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0005b",
+   "forma": "ñāyatyaneneti",
+   "por_que": "ñāyati anena iti: no consta en los textos de la casa cómo se separa «-a + iti» que da «-eti» (¿«anene ti»? ¿«anenā ti»?); se deja unido"
+  },
+  {
+   "archivo": "guia.md",
+   "L": "31",
+   "forma": "ñāyatyaneneti",
+   "por_que": "la misma cita que L0005b"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0005b",
+   "forma": "visuṃyevā vatiṭṭhate",
+   "por_que": "la división impresa es dudosa (¿visuṃ yeva avatiṭṭhate / visuṃ yev’ āvatiṭṭhate / visuṃ yeva vatiṭṭhate?); hay que verla en el impreso de la Mogg-p-ṭ."
+  },
+  {
+   "archivo": "guia.md",
+   "L": "25",
+   "forma": "visuṃyevā vatiṭṭhate",
+   "por_que": "la misma cita que L0005b"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0452e",
+   "forma": "micchāñāṇattā-khyāpanāyopapajjate",
+   "por_que": "¿«-khyāpanāy’ opapajjate» (-āya + upapajjate)? No hay texto de la casa; además el guion de la CST parte un compuesto"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0873c",
+   "forma": "vuttipadenevopasittādikiriyāyākhyāpanato",
+   "por_que": "¿«vuttipaden’ ev’ opasittādikiriyāy’ ākhyāpanato»? No es seguro dónde acaba el compuesto (upasitta-ādi-kiriyā) ni si «ākhyāpanato» es palabra aparte; se separó sólo «natth’ āyuttatthatā»"
+  },
+  {
+   "archivo": "guia.md",
+   "L": "385",
+   "forma": "cārihaṃ",
+   "por_que": "Thī. «satta vassāni cārihaṃ»: ¿cāriṃ ahaṃ / cariṃ ahaṃ? sin texto de la casa no se separa"
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0448e",
+   "forma": "viraha’ppake",
+   "por_que": "forma de Sīmavisodhanī con apóstrofo interno (¿virahe appake?); se deja como está"
+  }
+ ]
+}
