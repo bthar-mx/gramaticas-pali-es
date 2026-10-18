@@ -577,8 +577,8 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
 
 ## Estado de recursos/compuestos
 
-La referencia de los compuestos (`/recursos/compuestos/`, v0.5, **borrador
-revisado**, 2026-10-18; v0.5 añade los nombres propios con la inserción ‘nu’, pendientes en `claude/compuestos-nu-pendientes.md` del proyecto; revisión del IEBH completa, todo aprobado según el
+La referencia de los compuestos (`/recursos/compuestos/`, v0.6, **borrador
+revisado**, 2026-10-18; v0.5 añade los nombres propios con la inserción ‘nu’, pendientes en `claude/compuestos-nu-pendientes.md` del proyecto; v0.6, el nombre kitanta-samāsa; revisión del IEBH completa, todo aprobado según el
 consejo verificado, lote N incluido; falta la revisión de la página completa) es el documento
 «Compuesto (samāsa)» de **Bhikkhu Nandisena** (Word, 2004–2005; sigue a
 Rūpasiddhi y a Kaccāyana; quedó sin terminar), en edición revisada por IEBH.

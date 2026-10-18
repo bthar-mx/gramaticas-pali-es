@@ -1,11 +1,11 @@
 # samasa6.doc — texto REVISADO (U Nandisena, 2004–2005; revisión del IEBH)
 # Lo escribe herramientas/compuestos_aplicar.py a partir de base.txt y de las
 # propuestas verificadas. No se edita a mano: se rehace.
-#meta version=0.5
+#meta version=0.6
 #meta fecha=2026-10-18
 #meta estado=Borrador revisado (pendiente de aprobación del IEBH)
 #meta estado_en=Revised draft (pending IEBH approval)
-#meta nota_version=Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la página, en borrador (sin revisar por el IEBH). v0.5 (2026-10-18): nombres propios con la inserción ‘nu’ (arindamo, vessantaro, taṇhaṅkaro, medhaṅkaro, saraṇaṅkaro, dīpaṅkaro, purindado), con las dos lecturas de las fuentes sobre la elisión de la inflexión.
+#meta nota_version=Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la página, en borrador (sin revisar por el IEBH). v0.5 (2026-10-18): nombres propios con la inserción ‘nu’ (arindamo, vessantaro, taṇhaṅkaro, medhaṅkaro, saraṇaṅkaro, dīpaṅkaro, purindado), con las dos lecturas de las fuentes sobre la elisión de la inflexión. v0.6 (2026-10-18): el otro nombre de los compuestos con miembro precedente, kitanta-samāsa (Glosario de Nandisena; Suttaniddesa).
 
 0001  {Normal} Compuesto (samāsa)
 0002  {Normal} 
@@ -1097,6 +1097,8 @@
 0833a  {Normal} 
 0833b  {IEBH fuente="Rūpasiddhi · Niruttidīpanī" forma=p} Rūpasiddhi da la razón: en el upapada-samāsa «sólo hay compuesto (vutti), porque es obligatorio (nicca)» (Rū. §351 (p. 193)). Por eso la resolución se hace con el verbo («kammaṃ karotī ti kammakāro») y no con los dos miembros del compuesto. Niruttidīpanī lo dice de los derivados primarios formados con un objeto como miembro precedente: «niccasamāso yeva» (Nir. 224).
 0833c  {Normal} 
+0833d  {IEBH fuente="Glosario de Nandisena · Suttaniddesa" forma=p} Estos compuestos se llaman también kitanta-samāsa. Nandisena lo define así: «un tipo de compuesto que tiene "kita", un derivativo primario, como último miembro. Estos compuestos son fijos (nicca-samāsa), es decir, sus miembros no pueden ser separados. Ej., "kumbhakāro", alfarero» (Glosario de Nandisena, p. 11; también p. 8, s. v. upapada). Suttaniddesa usa los dos nombres juntos: «ime kammapubbikā kammakārādipayogā niccavasena kitantasamāsā», estas formas con objeto delante, como kammakāro, son compuestos de derivado primario y obligatorios (Suttaniddesa, ad «Dhātuyā kammādimhi ṇo»). El nombre no implica que la inflexión del primer miembro se elida: Suttaniddesa llama a vassaṃvuttho «aluttakitantasamāso», compuesto de derivado primario sin elisión (Suttaniddesa, ad «Vasato uttha»).
+0833e  {Normal} 
 0834  {Normal} 
 0835  {Normal} kammakāro (trabajador): kammaṃ (trabajo) karoti (hace).
 0836  {Normal} kumbhakāro (alfarero): kumbhaṃ (vasijas) karoti (hace)

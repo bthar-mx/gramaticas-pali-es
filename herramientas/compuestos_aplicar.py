@@ -56,7 +56,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESTINO = os.path.join(RAIZ, "recursos", "compuestos", "texto-revisado.txt")
 REGISTRO = os.path.join(RAIZ, "recursos", "compuestos", "aplicado.json")
 
-VERSION = "0.5"
+VERSION = "0.6"
 FECHA = "2026-10-18"
 ESTADO_ES = "Borrador revisado (pendiente de aprobación del IEBH)"
 ESTADO_EN = "Revised draft (pending IEBH approval)"
@@ -65,7 +65,8 @@ NOTA_VERSION = ("Revisión del IEBH completa: todas las propuestas aplicadas seg
                 "de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con "
                 "el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la "
                 "página, en borrador (sin revisar por el IEBH)."
-                " v0.5 (2026-10-18): nombres propios con la inserción ‘nu’ (arindamo, vessantaro, taṇhaṅkaro, medhaṅkaro, saraṇaṅkaro, dīpaṅkaro, purindado), con las dos lecturas de las fuentes sobre la elisión de la inflexión.")
+                " v0.5 (2026-10-18): nombres propios con la inserción ‘nu’ (arindamo, vessantaro, taṇhaṅkaro, medhaṅkaro, saraṇaṅkaro, dīpaṅkaro, purindado), con las dos lecturas de las fuentes sobre la elisión de la inflexión."
+                " v0.6 (2026-10-18): el otro nombre de los compuestos con miembro precedente, kitanta-samāsa (Glosario de Nandisena; Suttaniddesa).")
 
 # Notas propuestas como «[^n]: …» que ningún texto llama y que tienen un
 # destino mejor que un párrafo suelto en su L. Cada una, con su porqué en el
