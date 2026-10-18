@@ -271,6 +271,102 @@ document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.th
 pintar();
 })();
 </script>
+<style>/* ── emergentes de las referencias (Kacc. §N, Rū., Nir., Sad., canon, L0000) ── */
+.rt{border-bottom:1px dotted var(--border2);cursor:help}
+a.k[data-tip]{cursor:pointer}
+#rtip{position:fixed;z-index:300;display:none;max-width:min(360px,calc(100vw - 24px));background:var(--bg2);color:var(--text);
+  border:1px solid var(--border2);border-radius:4px;padding:8px 11px;font:14px/1.45 var(--serif);box-shadow:0 4px 16px rgba(0,0,0,.16);pointer-events:none}
+#rtip .tk{display:block;font:600 10.5px/1.35 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+#rtip .tp{font-style:italic}
+.cual-fin .lbl.ver{font-weight:700;letter-spacing:.08em}
+.cual-fin .lbl.ver.bien{color:var(--marakata)}
+.cual-fin .lbl.ver.mal{color:var(--rakta)}
+</style>
+<script>(function(){
+const lang=(document.documentElement.lang||'es').slice(0,2)==='en'?'en':'es';
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KTIP={"18":{"es":{"pali":"Vam od-udantānaṃ","glosa":"‘V’, de los que terminan en ‘o’ y ‘u’."},"en":{"pali":"Vam od-udantānaṃ","glosa":"‘V’ of those that end in ‘o’ and ‘u’."}},"31":{"es":{"pali":"Vaggantaṃ vā vagge","glosa":"Opcionalmente, cuando una [consonante] agrupada sigue, la final del grupo."},"en":{"pali":"Vaggantaṃ vā vagge","glosa":"Optionally, when a grouped [consonant] follows, the end of the group."}},"82":{"es":{"pali":"Aṃ-mo niggahitaṃ jha-la-pehi","glosa":"Después de ‘jha’, ‘la’ y ‘pa’, niggahita [de] ‘aṃ’ y ‘ma’."},"en":{"pali":"Aṃ-mo niggahitaṃ jha-la-pehi","glosa":"After ‘jha’, ‘la’ and ‘pa’, niggahita [of] ‘aṃ’ and ‘ma’."}},"83":{"es":{"pali":"Saralopo ’mādesa-paccayādimhi saralope tu pakati","glosa":"Cuando siguen ‘aṃ’, una sustitución, un sufijo, etc., [hay] elisión de la vocal; cuando hay elisión de la vocal, [la vocal restante permanece] natural."},"en":{"pali":"Saralopo ’mādesa-paccayādimhi saralope tu pakati","glosa":"When ‘aṃ’, a substitution, a suffix, etc., follow, [there is] elision of the vowel; when there is elision of the vowel, [the remaining vowel remains] natural."}},"185":{"es":{"pali":"Santasaddassa so bhe bo c’ ante","glosa":"Cuando sigue ‘bh’, [hay] ‘sa’ de la palabra “santa”, y ‘b’ al final."},"en":{"pali":"Santasaddassa so bhe bo c’ ante","glosa":"When ‘bh’ follows, [there is] ‘sa’ of the word “santa”, and ‘b’ at the end."}},"219":{"es":{"pali":"Si ’ṃ","glosa":"‘Si’ [deviene] ‘aṃ’."},"en":{"pali":"Si ’ṃ","glosa":"‘Si’ [becomes] ‘aṃ’."}},"222":{"es":{"pali":"Pumassa liṅgādīsu samāsesu","glosa":"En los compuestos de “puma”, cuando [la palabra] “liṅga”, etc."},"en":{"pali":"Pumassa liṅgādīsu samāsesu","glosa":"In the compounds of “puma”, when [the word] “liṅga”, etc."}},"316":{"es":{"pali":"Nāmānaṃ samāso yuttattho","glosa":"El significado conectado de nombres [recibe el nombre] “samāsa” (compuesto)."},"en":{"pali":"Nāmānaṃ samāso yuttattho","glosa":"The connected meaning of nouns [has the name] “samāsa” (compound)."}},"317":{"es":{"pali":"Tesaṃ vibhattiyo lopā ca","glosa":"Y las inflexiones de esos se eliden."},"en":{"pali":"Tesaṃ vibhattiyo lopā ca","glosa":"And the inflections of those are elided."}},"318":{"es":{"pali":"Pakati c’ assa sarantassa","glosa":"Y hay la forma natural de los que terminan en vocal."},"en":{"pali":"Pakati c’ assa sarantassa","glosa":"And there is the original form of those that end in a vowel."}},"319":{"es":{"pali":"Upasagga-nipātapubbako abyayībhāvo","glosa":"Ese que tiene delante un prefijo o una partícula es un “abyayībhāva” (compuesto adverbial)."},"en":{"pali":"Upasagga-nipātapubbako abyayībhāvo","glosa":"That which has a prefix or a particle in front is an “abyayībhāva” (adverbial compound)."}},"320":{"es":{"pali":"So napuṃsakaliṅgo","glosa":"Éste tiene el género neutro."},"en":{"pali":"So napuṃsakaliṅgo","glosa":"It has the neuter gender."}},"321":{"es":{"pali":"Diguss’ ekattaṃ","glosa":"Hay el estado de uno de un “digu” (compuesto numérico)."},"en":{"pali":"Diguss’ ekattaṃ","glosa":"There is the state of one of a “digu” (numerical compound)."}},"322":{"es":{"pali":"Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca","glosa":"Asimismo, en un compuesto copulativo (dvanda) hay también [singular y género neutro] de las partes de los seres (pāṇi-aṅga), los instrumentos musicales (tūriya-aṅga), las partes de un vehículo (yogga-aṅga), las partes de un ejército (senaṅga), las criaturas pequeñas (khuddajantuka), los diversos enemigos (vividhaviruddha), el significado opuesto (visabhāgattha), etcétera (ādi)."},"en":{"pali":"Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca","glosa":"Likewise, in a copulative compound (dvanda) there is also [singular and neuter gender] of parts of beings (pāṇi-aṅga), musical instruments (tūriya-aṅga), parts of a vehicle (yogga-aṅga), parts of an army (senaṅga), small creatures (khuddajantuka), different enemies (vividhaviruddha), opposite meaning (visabhāgattha), etc. (ādi)."}},"323":{"es":{"pali":"Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca","glosa":"Y facultativamente de “rukkha” (árbol), “tiṇa” (hierba), “pasu” (animal), “dhana” (riqueza), “dhañña” (grano), “janapada” (distrito), etcétera."},"en":{"pali":"Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca","glosa":"And facultatively of “rukkha” (tree), “tiṇa” (grass), “pasu” (beast), “dhana” (wealth), “dhañña” (grain), “janapada” (district), etc."}},"324":{"es":{"pali":"Dvipade tulyādhikaraṇe kammadhārayo","glosa":"Cuando dos palabras que se refieren a la misma cosa [forman un compuesto], hay un “kammadhāraya” (compuesto adjetivo)."},"en":{"pali":"Dvipade tulyādhikaraṇe kammadhārayo","glosa":"When two words referring to the same thing [are compounded], there is a “kammadhāraya” (adjectival compound)."}},"325":{"es":{"pali":"Saṅkhyāpubbo digu","glosa":"[El compuesto adjetivo] que tiene un numeral como primer miembro es un “digu” (compuesto numérico)."},"en":{"pali":"Saṅkhyāpubbo digu","glosa":"[The adjectival compound] that has a numeral as its first member is a “digu” (numerical compound)."}},"326":{"es":{"pali":"Ubhe tappurisā","glosa":"Ambos son “tappurisa” (compuestos determinativos)."},"en":{"pali":"Ubhe tappurisā","glosa":"Both are “tappurisa” (determinative compounds)."}},"327":{"es":{"pali":"Amādayo parapadebhi","glosa":"‘Aṃ’, etc., con los nombres siguientes."},"en":{"pali":"Amādayo parapadebhi","glosa":"‘Aṃ’, etc., with the following nouns."}},"328":{"es":{"pali":"Aññapadatthesu bahubbīhi","glosa":"En los significados de otras palabras hay un “bahubbīhi” (compuesto relativo)."},"en":{"pali":"Aññapadatthesu bahubbīhi","glosa":"In the meaning of other words there is a “bahubbīhi” (relative compound)."}},"329":{"es":{"pali":"Nāmānaṃ samuccayo dvando","glosa":"Una colección de nombres [recibe el nombre] “dvanda” (compuesto copulativo)."},"en":{"pali":"Nāmānaṃ samuccayo dvando","glosa":"A collection of nouns [has the name] “dvanda” (copulative compound)."}},"330":{"es":{"pali":"Mahataṃ mahā tulyādhikaraṇe pade","glosa":"Cuando hay una palabra que tiene el mismo locus, hay “mahā” de [las voces] “mahanta”."},"en":{"pali":"Mahataṃ mahā tulyādhikaraṇe pade","glosa":"When there is a word having the same locus, there is “mahā” of [the words] “mahanta”."}},"331":{"es":{"pali":"Itthiyaṃ bhāsitapum’-itthī pumā ’va ce","glosa":"En el femenino, si un femenino indicó masculino, [se debe considerar] como masculino."},"en":{"pali":"Itthiyaṃ bhāsitapum’-itthī pumā ’va ce","glosa":"In the feminine, if a feminine indicated masculine, [it should be regarded] as masculine."}},"332":{"es":{"pali":"Kammadhārayasaññe ca","glosa":"Y en un compuesto adjetivo."},"en":{"pali":"Kammadhārayasaññe ca","glosa":"Also in an adjectival compound."}},"333":{"es":{"pali":"Attaṃ nassa tappurise","glosa":"En un compuesto determinativo, hay ‘a’ de “na”."},"en":{"pali":"Attaṃ nassa tappurise","glosa":"In a determinative compound, there is ‘a’ of “na”."}},"334":{"es":{"pali":"Sare an","glosa":"Cuando sigue una vocal, hay ‘an’."},"en":{"pali":"Sare an","glosa":"When a vowel follows, there is ‘an’."}},"335":{"es":{"pali":"Kad kussa","glosa":"Hay ‘kad’ de ‘ku’."},"en":{"pali":"Kad kussa","glosa":"There is ‘kad’ of ‘ku’."}},"336":{"es":{"pali":"Kā ’ppatthesu ca","glosa":"Y en los significados de pocos, hay ‘kā’."},"en":{"pali":"Kā ’ppatthesu ca","glosa":"Also in the meanings of little, there is ‘kā’."}},"337":{"es":{"pali":"Kvaci samāsantagatānam akāranto","glosa":"A veces hay ‘a’ de la vocal final de los que están al final de un compuesto."},"en":{"pali":"Kvaci samāsantagatānam akāranto","glosa":"Sometimes there is ‘a’ of the end vowel of those that stand at the end of a compound."}},"338":{"es":{"pali":"Nadimhā ca","glosa":"Y después de “nadī”."},"en":{"pali":"Nadimhā ca","glosa":"Also after “nadī”."}},"339":{"es":{"pali":"Jāyāya tudaṃ-jāni","glosa":"Cuando sigue “pati”, hay “tudaṃ” y “jāni” de “jāyā”."},"en":{"pali":"Jāyāya tudaṃ-jāni","glosa":"When “pati” follows, there are “tudaṃ” and “jāni” of “jāyā”."}},"340":{"es":{"pali":"Dhanumh’ ā ca","glosa":"Y hay ‘ā’ después de “dhanu”."},"en":{"pali":"Dhanumh’ ā ca","glosa":"Also there is ‘ā’ after “dhanu”."}},"341":{"es":{"pali":"Aṃ vibhattīnam akārantā abyayībhāvā","glosa":"Después de un compuesto adverbial que termina en ‘a’, las inflexiones devienen ‘aṃ’."},"en":{"pali":"Aṃ vibhattīnam akārantā abyayībhāvā","glosa":"After an adverbial compound that ends in ‘a’, the inflections become ‘aṃ’."}},"342":{"es":{"pali":"Saro rasso napuṃsake","glosa":"En el neutro hay vocal corta."},"en":{"pali":"Saro rasso napuṃsake","glosa":"In the neuter there is a short vowel."}},"343":{"es":{"pali":"Aññasmā lopo ca","glosa":"Y hay elisión después de otros."},"en":{"pali":"Aññasmā lopo ca","glosa":"Also there is elision after others."}},"344":{"es":{"pali":"Vā ṇ’ apacce","glosa":"Opcionalmente, [hay] ‘ṇa’ en [el significado de] descendiente."},"en":{"pali":"Vā ṇ’ apacce","glosa":"Optionally, [there is] ‘ṇa’ in [the meaning of] offspring."}},"349":{"es":{"pali":"Ṇera vidhavādito","glosa":"Tras “vidhavā” y otros, [hay] ‘ṇera’."},"en":{"pali":"Ṇera vidhavādito","glosa":"After “vidhavā” and others, [there is] ‘ṇera’."}},"350":{"es":{"pali":"Yena vā saṃsaṭṭhaṃ tarati carati vahati ṇiko","glosa":"[Hay] ‘ṇika’ [en estos significados]: mezclado con eso, cruza con eso, va con eso, transporta con eso."},"en":{"pali":"Yena vā saṃsaṭṭhaṃ tarati carati vahati ṇiko","glosa":"[There is] ‘ṇika’ [in these meanings]: mixed with that, he crosses by that, he goes by that, he carries by that."}},"380":{"es":{"pali":"Vīsati-dasesu bā dvissa tu","glosa":"Pero cuando siguen “vīsati” (veinte) y “dasa” (diez), [hay] ‘bā’ de “dvi”."},"en":{"pali":"Vīsati-dasesu bā dvissa tu","glosa":"But when “vīsati” (twenty) and “dasa” (ten) follow, [there is] ‘bā’ of “dvi”."}},"383":{"es":{"pali":"Dv’-ek’-aṭṭhānam ākāro vā","glosa":"Opcionalmente, [hay] ‘ā’ de “dvi” (dos), “eka” (uno) y “aṭṭha” (ocho)."},"en":{"pali":"Dv’-ek’-aṭṭhānam ākāro vā","glosa":"Optionally, [there is] ‘ā’ of “dvi” (two), “eka” (one) and “aṭṭha” (eight)."}},"386":{"es":{"pali":"Tiye du-tāpi ca","glosa":"Y también, cuando sigue ‘tiya’, [hay] ‘du’ y ‘ta’."},"en":{"pali":"Tiye du-tāpi ca","glosa":"And also, when ‘tiya’ follows, [there are] ‘du’ and ‘ta’."}},"403":{"es":{"pali":"Kvac’ ādi-majjh’-uttarānaṃ dīgha-rassā paccayesu ca","glosa":"Y a veces, cuando siguen sufijos, [las vocales] iniciales, medias y finales [se vuelven] largas o cortas."},"en":{"pali":"Kvac’ ādi-majjh’-uttarānaṃ dīgha-rassā paccayesu ca","glosa":"And sometimes, when suffixes follow, the initial, middle and final [vowels] [become] long or short."}},"404":{"es":{"pali":"Tesu vuddhi-lopāgama-vikāra-viparītādesā ca","glosa":"Y en esos [lugares hay] fortalecimiento, elisión, inserción, cambio, inversión y sustitución."},"en":{"pali":"Tesu vuddhi-lopāgama-vikāra-viparītādesā ca","glosa":"And in those [places there are] strengthening, elision, insertion, change, reversal and substitution."}}};
+const OBRAS_T={
+ 'Rū':['Padarūpasiddhi (Buddhappiya)','Padarūpasiddhi (Buddhappiya)'],
+ 'Nir':['Niruttidīpanī (Ledi Sayadaw)','Niruttidīpanī (Ledi Sayadaw)'],
+ 'Sad':['Saddanīti (Aggavaṃsa)','Saddanīti (Aggavaṃsa)'],
+ 'Mogg-p-ṭ':['Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī)','Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī)'],
+ 'Mogg':['Moggallānabyākaraṇa','Moggallānabyākaraṇa'],'Moggallāna':['Moggallānabyākaraṇa','Moggallānabyākaraṇa'],
+ 'D':['Dīghanikāya','Dīghanikāya'],'M':['Majjhimanikāya','Majjhimanikāya'],'S':['Saṃyuttanikāya','Saṃyuttanikāya'],
+ 'A':['Aṅguttaranikāya','Aṅguttaranikāya'],'V':['Vinayapiṭaka','Vinayapiṭaka'],'Vin':['Vinayapiṭaka','Vinayapiṭaka'],
+ 'Dh':['Dhammapada','Dhammapada'],'Dhs':['Dhammasaṅgaṇī','Dhammasaṅgaṇī'],'J':['Jātaka','Jātaka'],
+ 'JA':['Jātaka-aṭṭhakathā','Jātaka-aṭṭhakathā'],'Vv':['Vimānavatthu','Vimānavatthu'],'VvA':['Vimānavatthu-aṭṭhakathā','Vimānavatthu-aṭṭhakathā'],
+ 'Pu':['Puggalapaññatti','Puggalapaññatti'],'Sn':['Suttanipāta','Suttanipāta'],'Ud':['Udāna','Udāna'],
+ 'Thag':['Theragāthā','Theragāthā'],'Thī':['Therīgāthā','Therīgāthā'],'ThīA':['Therīgāthā-aṭṭhakathā','Therīgāthā-aṭṭhakathā'],
+ 'SA':['Saṃyuttanikāya-aṭṭhakathā','Saṃyuttanikāya-aṭṭhakathā'],'DA':['Dīghanikāya-aṭṭhakathā','Dīghanikāya-aṭṭhakathā'],
+ 'MA':['Majjhimanikāya-aṭṭhakathā','Majjhimanikāya-aṭṭhakathā'],'AA':['Aṅguttaranikāya-aṭṭhakathā','Aṅguttaranikāya-aṭṭhakathā'],
+ 'Paṭṭh':['Paṭṭhāna','Paṭṭhāna'],'Vis':['Visuddhimagga','Visuddhimagga'],'Vism':['Visuddhimagga','Visuddhimagga'],
+ 'Vis-ṭ':['Visuddhimagga-mahāṭīkā','Visuddhimagga-mahāṭīkā'],'Ap':['Apadāna','Apadāna'],'ApA':['Apadāna-aṭṭhakathā','Apadāna-aṭṭhakathā'],
+ 'Bv':['Buddhavaṃsa','Buddhavaṃsa'],'ItA':['Itivuttaka-aṭṭhakathā','Itivuttaka-aṭṭhakathā']};
+const TX={
+ es:{sutta:'sutta',suttas:'suttas',p:'p.',pp:'pp.',vol:'vol.',bir:'de la edición birmana del Sexto Concilio',
+     smith:'de la edición de Helmer Smith (Lund, 1928–1966)',cst:'numeración del Sexto Concilio',sm:'de la Suttamālā',
+     pts:'PTS',lin:n=>`Documento de Nandisena · línea ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`},
+ en:{sutta:'sutta',suttas:'suttas',p:'p.',pp:'pp.',vol:'vol.',bir:'of the Burmese Sixth Council edition',
+     smith:'of Helmer Smith’s edition (Lund, 1928–1966)',cst:'Sixth Council numbering',sm:'of the Suttamālā',
+     pts:'PTS',lin:n=>`Nandisena’s document · line ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`}};
+const tipAttr=(tk,tp,txt)=>` data-tk="${esc(tk)}" data-tip="${esc(txt)}"${tp?` data-tp="${esc(tp)}"`:''}`;
+function pags(r){const m=[...r.matchAll(/pp?\.\s*(\d+(?:\s*[–-]\s*\d+)?)/g)].map(x=>x[1]);return m}
+function descCita(sig,r){
+  const t=TX[lang],partes=[];
+  const ss=[...r.matchAll(/§\s?(\d+)(?:\s*[–-]\s*§?\s?(\d+))?/g)].map(x=>x[2]?x[1]+'–'+x[2]:x[1]);
+  if(sig==='Sad'){
+    const sm=/\(\s*Smith\s+(pp?\.)\s*([^)]*)\)/.exec(r);
+    if(sm)partes.push(`${sm[1]} ${sm[2]} ${t.smith}`);
+    const mala=/\((Padamālā|Dhātumālā)\)\s*pp?\.\s*([\d–]+)/.exec(r);
+    if(mala)partes.push(`${mala[1]}, ${t.p} ${mala[2]} ${t.bir}`);
+    if(ss.length)partes.unshift(`${ss.length>1?t.suttas:t.sutta} ${ss.join(', ')} ${t.sm}`);
+    return partes.join(' · ');
+  }
+  if(ss.length)partes.push(`${ss.length>1?t.suttas:t.sutta} ${ss.join(', ')}${sig==='Rū'?' ('+t.cst+')':''}`);
+  let pg=pags(r);
+  if(sig==='Nir'&&!pg.length){const n=/^\s*(\d+(?:\s*[–-]\s*\d+)?)/.exec(r);if(n)pg=[n[1]]}
+  if(pg.length)partes.push(`${pg.length>1||/[–-]/.test(pg[0])?t.pp:t.p} ${pg.join(', ')} ${t.bir}`);
+  return partes.join(' · ');
+}
+function descCanon(vp,pts){
+  const t=TX[lang],f=x=>{const m=/^(?:([ivx]+)\s+)?(?:pp?\.\s*)?(\d+(?:\s*[–-]\s*\d+)?)$/.exec(x.trim());return m?((m[1]?`${t.vol} ${m[1]}, `:'')+`${/[–-]/.test(m[2])?t.pp:t.p} ${m[2]}`):x};
+  return `${f(vp)} ${t.bir}`+(pts?` · ${t.pts}: ${f(pts)}`:'');
+}
+const RE_GRAM=/(Mogg-p-ṭ\.|Rū\.|Nir\.|Sad\.|Moggallāna|Mogg\.)((?:,?\s*(?:\((?:Smith|Padamālā|Dhātumālā)[^()]*\)(?:\s*pp?\.\s*[\d–]+)?|§\s?\d+(?:\s*[–-]\s*§?\s?\d+)?(?:\s*\([^()]*\))?|pp?\.\s*\d+(?:\s*[–-]\s*\d+)?|\d+(?:\s*[–-]\s*\d+)?(?![\d.]))(?:\s*(?:y|and|,)\s*(?=§|pp?\.))?)+)/g;
+const RE_CANON=/(^|[^\wāīūṃñṅṭḍṇḷ\-])(Vis-ṭ|Paṭṭh|Thag|ThīA|Thī|VvA|ApA|ItA|Dhs|Vin|Vism|Vis|Vv|Pu|Sn|Ud|JA|SA|DA|MA|AA|Ap|Bv|Dh|D|M|S|A|V|J)\.\s+((?:[ivx]+\s+)?(?:pp?\.\s*)?\d+(?:\s*[–-]\s*\d+)?)(\s*\(PTS\s+((?:[ivx]+\s+)?(?:pp?\.\s*)?\d+(?:\s*[–-]\s*\d+)?)\))?/g;
+
+const rtip=document.createElement('div');rtip.id='rtip';rtip.setAttribute('role','tooltip');document.body.appendChild(rtip);
+let rtEl=null,rtToque=false;
+function rtMostrar(el){
+  const tk=el.getAttribute('data-tk'),tx=el.getAttribute('data-tip'),tp=el.getAttribute('data-tp');
+  rtip.innerHTML=(tk?`<span class="tk">${esc(tk)}</span>`:'')+(tp?`<span class="tp">${esc(tp)}</span>${tx?' — ':''}`:'')+esc(tx||'');
+  rtip.style.display='block';const r=el.getBoundingClientRect(),w=rtip.offsetWidth,h=rtip.offsetHeight;
+  let x=Math.min(Math.max(12,r.left+r.width/2-w/2),innerWidth-w-12),y=r.top-h-8;if(y<8)y=r.bottom+8;
+  rtip.style.left=x+'px';rtip.style.top=y+'px';rtEl=el;
+}
+function rtOcultar(){rtip.style.display='none';rtEl=null}
+document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const el=e.target.closest('[data-tip]');if(el&&el!==rtEl)rtMostrar(el)});
+document.addEventListener('pointerout',e=>{if(e.pointerType==='touch')return;const el=e.target.closest('[data-tip]');if(el&&!el.contains(e.relatedTarget))rtOcultar()});
+document.addEventListener('focusin',e=>{const el=e.target.closest&&e.target.closest('[data-tip]');if(el)rtMostrar(el)});
+document.addEventListener('focusout',()=>rtOcultar());
+document.addEventListener('pointerdown',e=>{rtToque=e.pointerType==='touch'},true);
+document.addEventListener('click',e=>{const el=e.target.closest('[data-tip]');
+  if(!el){if(rtEl)rtOcultar();return}
+  if(rtToque&&rtEl!==el){e.preventDefault();e.stopPropagation();rtMostrar(el)}},true);
+addEventListener('scroll',()=>{if(rtEl)rtOcultar()},{passive:true});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&rtEl)rtOcultar()});
+document.querySelectorAll('a[href*="/s/"]').forEach(a=>{const m=/\/s\/(\d+)\//.exec(a.getAttribute('href'));const x=m&&KTIP[m[1]];
+  if(x){const v=x[lang]||x.es;a.setAttribute('data-tk',TX[lang].kacc(m[1]));a.setAttribute('data-tp',v.pali);a.setAttribute('data-tip',v.glosa)}});
+const raiz=document.querySelector('main')||document.body,mv=[];
+const w=document.createTreeWalker(raiz,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,script,style,code,pre,.rt,#rtip')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+while(w.nextNode())mv.push(w.currentNode);
+mv.forEach(n=>{const t=esc(n.nodeValue);let h=t.replace(RE_GRAM,(m,sig,r)=>{const k=sig.replace(/\.$/,''),kk=k==='Moggallāna'?'Mogg':k,o=OBRAS_T[kk];if(!o)return m;
+    return `<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCita(kk,r)||m)}>${m}</span>`});
+  h=h.split(/(<[^>]+>[^<]*<\/span>)/).map(seg=>seg.startsWith('<')?seg:seg.replace(RE_CANON,(m,pre,sig,vp,_p,pts)=>{const o=OBRAS_T[sig];if(!o)return m;
+    return `${pre}<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCanon(vp,pts))}>${m.slice(pre.length)}</span>`})).join('');
+  if(h!==t){const s=document.createElement('span');s.innerHTML=h;n.replaceWith(...s.childNodes)}});
+})();</script>
 <!-- cabecera:inicio -->
 <script defer src="../../../assets/cabecera.js?v=70c73f6b"></script>
 <!-- cabecera:fin -->

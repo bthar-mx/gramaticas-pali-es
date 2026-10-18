@@ -316,6 +316,17 @@ footer.rc-pie p{max-width:78ch}
 }
 @media (pointer:coarse){.tabs button{min-height:40px;padding:8px 11px}}
 @media print{.bar,.sidebar,#top-btn,.tabs-fila{display:none!important}body{padding-left:0}.il{break-inside:avoid}}
+
+/* ── emergentes de las referencias (Kacc. §N, Rū., Nir., Sad., canon, L0000) ── */
+.rt{border-bottom:1px dotted var(--border2);cursor:help}
+a.k[data-tip]{cursor:pointer}
+#rtip{position:fixed;z-index:300;display:none;max-width:min(360px,calc(100vw - 24px));background:var(--bg2);color:var(--text);
+  border:1px solid var(--border2);border-radius:4px;padding:8px 11px;font:14px/1.45 var(--serif);box-shadow:0 4px 16px rgba(0,0,0,.16);pointer-events:none}
+#rtip .tk{display:block;font:600 10.5px/1.35 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+#rtip .tp{font-style:italic}
+.cual-fin .lbl.ver{font-weight:700;letter-spacing:.08em}
+.cual-fin .lbl.ver.bien{color:var(--marakata)}
+.cual-fin .lbl.ver.mal{color:var(--rakta)}
 </style>
 </head>
 <body>
@@ -509,13 +520,13 @@ const G={
 es:{tit:'¿Qué compuesto es?',intro:'Conteste Sí o No a cada pregunta pensando en este compuesto: cada respuesta lleva a la siguiente pregunta o a la clase. Con «Otro» cambia el compuesto; las preguntas sirven también para cualquier compuesto que usted tenga delante.',comp:'Compuesto',
   aviso:'Orientación del IEBH a partir de las formas de resolución que da el documento; no es una regla de las gramáticas.',
   probar:'Probar con un compuesto de la página',otro:'Otro',sin:'Puede contestar pensando en cualquier compuesto, o pedir uno de la página.',
-  si:'Sí',no:'No',ej:'Ejemplo',deNuevo:'Volver a empezar',atras:'← Atrás',es:'Es',ojo:'Ojo',
+  si:'Sí',no:'No',ej:'Ejemplo',deNuevo:'Volver a empezar',atras:'← Atrás',es:'Es',ojo:'Ojo',correcto:'Correcto',incorrecto:'Incorrecto',
   ir:c=>`Ver el ${c} en la página →`,acierto:c=>`Bien: el documento lo da como ${c}.`,fallo:(c,d)=>`El documento lo da como ${d}, no como ${c}. Vea dónde se torció el camino.`,
   noDecide:'Sin decidir',resp:{si:'sí',no:'no'}},
 en:{tit:'Which compound is it?',intro:'Answer Yes or No to each question with this compound in mind: each answer leads to the next question or to the class. «Another» changes the compound; the questions also work for any compound you have in front of you.',comp:'Compound',
   aviso:'An IEBH aid built from the forms of resolution the document gives; it is not a rule of the grammars.',
   probar:'Try with a compound from the page',otro:'Another',sin:'You can answer with any compound in mind, or ask for one from the page.',
-  si:'Yes',no:'No',ej:'Example',deNuevo:'Start again',atras:'← Back',es:'It is',ojo:'Note',
+  si:'Yes',no:'No',ej:'Example',deNuevo:'Start again',atras:'← Back',es:'It is',ojo:'Note',correcto:'Correct',incorrecto:'Incorrect',
   ir:c=>`See the ${c} on the page →`,acierto:c=>`Right: the document gives it as a ${c}.`,fallo:(c,d)=>`The document gives it as a ${d}, not a ${c}. See where the path went astray.`,
   noDecide:'Undecided',resp:{si:'yes',no:'no'}}};
 
@@ -537,12 +548,13 @@ function enlazar(h){
   /* tampoco los § de Rūpasiddhi o Saddanīti que la revisión escribe sin «Rū.»: «Rū. §330 (p. 178) y §341»,
      «Rū. §357–§358», «Rūpasiddhi (§349)», «Saddanīti las da en §702» (sin un punto de por medio) */
   return h.replace(/((?:Rū|Sad|Nir)\.\s*(?:\d+,\s*)?§\s?\d+(?:\s*\([^()]*\))?(?:\s*(?:–|y|,)\s*§\s?\d+)*|(?:Rūpasiddhi|Saddanīti|Niruttidīpanī)[^§.;]{0,60}?§\s?\d+)|((?:Kacc?\.\s*)?§\s?(\d+))/g,(m,otra,k,n)=>otra?otra:
-    `<a class="k" href="../../s/${n}/${lq()}">${k}</a>`);
+    `<a class="k" href="../../s/${n}/${lq()}"${kTip(n)}>${k}</a>`);
 }
+function kTip(n){const x=(D.ktip||{})[n];if(!x)return '';const v=x[lang]||x.es;return tipAttr(TX[lang].kacc(n),v.pali,v.glosa)}
 function md(s){
   return enlazar(esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<i>$1</i>'))
     .replace(/\[\^(\w+)\]/g,(m,n)=>`<sup class="fn notranslate" translate="no"><a href="#nota-${n}" id="ll-${n}">${n}</a></sup>`)
-    .replace(/\n/g,'<br>');
+    .replace(/\n/g,'<br>').replace(/^[\s\S]*$/,h=>tipCitas(h));
 }
 /* la referencia que la revisión añadió al final de un rótulo: «… (upamānuttarapada) (Kacc. §324; Rū. §339 (pp. 186–187))» */
 const REF_FIN=/\s*\((?:Kacc?|Rū|Sad|Nir)\.[^()]*(?:\([^()]*\)[^()]*)*\)\s*$/;
@@ -660,7 +672,7 @@ function nEjemplos(c){return BANCO.filter(x=>x.c===c.id).length}
 function cabClase(c){
   const t=T[lang];
   return `<header class="clcab"><span class="num">${c.n}</span><h2 lang="pi">${esc(c.pali)}</h2><p class="sub">${esc(lang==='en'?t.clLargo[c.id]:(L(c.titulo)||t.clLargo[c.id]))}</p>
-    <div class="meta">${c.kacc.map(k=>`<a class="ref-k" href="../../s/${k}/${lq()}" title="${esc(t.kacc_tit)}">Kacc. §${k}</a>`).join('')}${c.ref&&c.ref.replace(/^Kacc\. §\d+;?\s*/,"")?`<span class="dato">${md(c.ref.replace(/^Kacc\. §\d+;?\s*/,""))}</span>`:""}
+    <div class="meta">${c.kacc.map(k=>`<a class="ref-k" href="../../s/${k}/${lq()}"${kTip(k)||` title="${esc(t.kacc_tit)}"`}>Kacc. §${k}</a>`).join('')}${c.ref&&c.ref.replace(/^Kacc\. §\d+;?\s*/,"")?`<span class="dato">${md(c.ref.replace(/^Kacc\. §\d+;?\s*/,""))}</span>`:""}
     <span class="dato">${t.ejemplos(nEjemplos(c))}</span><span class="dato">· ${t.subtipos(c.bloques.filter(b=>b.tipo==='h'||b.def).length)}</span></div></header>`;
 }
 function mapa(){
@@ -873,16 +885,114 @@ function cualPintar(){
   let cmp='';
   if(cualPrueba&&c){const ok=cualPrueba.c===fin;cmp=`<p class="cmp ${ok?'bien':'mal'}">${ok?g.acierto('<i>'+esc(c.pali)+'</i>'):g.fallo('<i>'+esc(c.pali)+'</i>','<i>'+esc(byId[cualPrueba.c].pali)+'</i>')}</p>`}
   else if(cualPrueba&&!c){cmp=`<p class="cmp">${g.acierto('<i>'+esc(byId[cualPrueba.c].pali)+'</i>').replace(/^[^:]*:/,'')}</p>`}
-  f.innerHTML=`<div class="cual-fin"><span class="lbl">${c?g.es:g.noDecide}</span><h3 lang="pi">${c?esc(c.pali):'—'}${c?`<small>${esc(t.clLargo[c.id])} · <a class="k" href="../../s/${c.kacc[0]}/${lq()}">Kacc. §${c.kacc[0]}</a></small>`:''}</h3>
+  const veredicto=c?(cualPrueba?(cualPrueba.c===fin?`<span class="lbl ver bien">${g.correcto}</span>`:`<span class="lbl ver mal">${g.incorrecto}</span>`):`<span class="lbl">${g.es}</span>`):`<span class="lbl">${g.noDecide}</span>`;
+  f.innerHTML=`<div class="cual-fin">${veredicto}<h3 lang="pi">${c?esc(c.pali):'—'}${c?`<small>${esc(t.clLargo[c.id])} · <a class="k" href="../../s/${c.kacc[0]}/${lq()}">Kacc. §${c.kacc[0]}</a></small>`:''}</h3>
     <p>${enlazarL(tx.p)}</p><p class="ojo"><b>${g.ojo}</b>${enlazarL(tx.o)}</p>${cmp}
     <div class="cual-acc"><button class="btn" id="cual-de-nuevo">${g.deNuevo}</button>${c?`<a href="?c=${c.id}" data-ir="${c.id}">${g.ir('<i>'+esc(c.pali)+'</i>')}</a>`:`<a href="?c=tappurisa" data-ir="tappurisa">${g.ir('<i>tappurisa</i>')}</a>`}${cualPrueba?` <a href="?c=${cualPrueba.c}#${cualPrueba.id}" data-ir-id="${cualPrueba.id}">${P[lang].verla}</a>`:''}</div></div>`;
   document.getElementById('cual-de-nuevo').onclick=()=>{cualCamino=[];cualPintar();scrollTo({top:document.getElementById('bar').offsetTop})};
 }
+
+/* ── emergentes de las referencias ───────────────────────────────────
+   Cada referencia lleva su explicación legible: Kacc. §N, el sutta
+   (D.ktip, sacado de los capítulos publicados); Rū., Nir., Sad., Mogg-p-ṭ.,
+   la obra y qué numeran las cifras; el canon, obra, tomo y página de la
+   edición del Sexto Concilio y de la PTS; L0000, la línea del documento. */
+const OBRAS_T={
+ 'Rū':['Padarūpasiddhi (Buddhappiya)','Padarūpasiddhi (Buddhappiya)'],
+ 'Nir':['Niruttidīpanī (Ledi Sayadaw)','Niruttidīpanī (Ledi Sayadaw)'],
+ 'Sad':['Saddanīti (Aggavaṃsa)','Saddanīti (Aggavaṃsa)'],
+ 'Mogg-p-ṭ':['Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī)','Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī)'],
+ 'Mogg':['Moggallānabyākaraṇa','Moggallānabyākaraṇa'],'Moggallāna':['Moggallānabyākaraṇa','Moggallānabyākaraṇa'],
+ 'D':['Dīghanikāya','Dīghanikāya'],'M':['Majjhimanikāya','Majjhimanikāya'],'S':['Saṃyuttanikāya','Saṃyuttanikāya'],
+ 'A':['Aṅguttaranikāya','Aṅguttaranikāya'],'V':['Vinayapiṭaka','Vinayapiṭaka'],'Vin':['Vinayapiṭaka','Vinayapiṭaka'],
+ 'Dh':['Dhammapada','Dhammapada'],'Dhs':['Dhammasaṅgaṇī','Dhammasaṅgaṇī'],'J':['Jātaka','Jātaka'],
+ 'JA':['Jātaka-aṭṭhakathā','Jātaka-aṭṭhakathā'],'Vv':['Vimānavatthu','Vimānavatthu'],'VvA':['Vimānavatthu-aṭṭhakathā','Vimānavatthu-aṭṭhakathā'],
+ 'Pu':['Puggalapaññatti','Puggalapaññatti'],'Sn':['Suttanipāta','Suttanipāta'],'Ud':['Udāna','Udāna'],
+ 'Thag':['Theragāthā','Theragāthā'],'Thī':['Therīgāthā','Therīgāthā'],'ThīA':['Therīgāthā-aṭṭhakathā','Therīgāthā-aṭṭhakathā'],
+ 'SA':['Saṃyuttanikāya-aṭṭhakathā','Saṃyuttanikāya-aṭṭhakathā'],'DA':['Dīghanikāya-aṭṭhakathā','Dīghanikāya-aṭṭhakathā'],
+ 'MA':['Majjhimanikāya-aṭṭhakathā','Majjhimanikāya-aṭṭhakathā'],'AA':['Aṅguttaranikāya-aṭṭhakathā','Aṅguttaranikāya-aṭṭhakathā'],
+ 'Paṭṭh':['Paṭṭhāna','Paṭṭhāna'],'Vis':['Visuddhimagga','Visuddhimagga'],'Vism':['Visuddhimagga','Visuddhimagga'],
+ 'Vis-ṭ':['Visuddhimagga-mahāṭīkā','Visuddhimagga-mahāṭīkā'],'Ap':['Apadāna','Apadāna'],'ApA':['Apadāna-aṭṭhakathā','Apadāna-aṭṭhakathā'],
+ 'Bv':['Buddhavaṃsa','Buddhavaṃsa'],'ItA':['Itivuttaka-aṭṭhakathā','Itivuttaka-aṭṭhakathā']};
+const TX={
+ es:{sutta:'sutta',suttas:'suttas',p:'p.',pp:'pp.',vol:'vol.',bir:'de la edición birmana del Sexto Concilio',
+     smith:'de la edición de Helmer Smith (Lund, 1928–1966)',cst:'numeración del Sexto Concilio',sm:'de la Suttamālā',
+     pts:'PTS',lin:n=>`Documento de Nandisena · línea ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`},
+ en:{sutta:'sutta',suttas:'suttas',p:'p.',pp:'pp.',vol:'vol.',bir:'of the Burmese Sixth Council edition',
+     smith:'of Helmer Smith’s edition (Lund, 1928–1966)',cst:'Sixth Council numbering',sm:'of the Suttamālā',
+     pts:'PTS',lin:n=>`Nandisena’s document · line ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`}};
+const tipAttr=(tk,tp,txt)=>` data-tk="${esc(tk)}" data-tip="${esc(txt)}"${tp?` data-tp="${esc(tp)}"`:''}`;
+function pags(r){const m=[...r.matchAll(/pp?\.\s*(\d+(?:\s*[–-]\s*\d+)?)/g)].map(x=>x[1]);return m}
+function descCita(sig,r){
+  const t=TX[lang],partes=[];
+  const ss=[...r.matchAll(/§\s?(\d+)(?:\s*[–-]\s*§?\s?(\d+))?/g)].map(x=>x[2]?x[1]+'–'+x[2]:x[1]);
+  if(sig==='Sad'){
+    const sm=/\(\s*Smith\s+(pp?\.)\s*([^)]*)\)/.exec(r);
+    if(sm)partes.push(`${sm[1]} ${sm[2]} ${t.smith}`);
+    const mala=/\((Padamālā|Dhātumālā)\)\s*pp?\.\s*([\d–]+)/.exec(r);
+    if(mala)partes.push(`${mala[1]}, ${t.p} ${mala[2]} ${t.bir}`);
+    if(ss.length)partes.unshift(`${ss.length>1?t.suttas:t.sutta} ${ss.join(', ')} ${t.sm}`);
+    return partes.join(' · ');
+  }
+  if(ss.length)partes.push(`${ss.length>1?t.suttas:t.sutta} ${ss.join(', ')}${sig==='Rū'?' ('+t.cst+')':''}`);
+  let pg=pags(r);
+  if(sig==='Nir'&&!pg.length){const n=/^\s*(\d+(?:\s*[–-]\s*\d+)?)/.exec(r);if(n)pg=[n[1]]}
+  if(pg.length)partes.push(`${pg.length>1||/[–-]/.test(pg[0])?t.pp:t.p} ${pg.join(', ')} ${t.bir}`);
+  return partes.join(' · ');
+}
+function descCanon(vp,pts){
+  const t=TX[lang],f=x=>{const m=/^(?:([ivx]+)\s+)?(?:pp?\.\s*)?(\d+(?:\s*[–-]\s*\d+)?)$/.exec(x.trim());return m?((m[1]?`${t.vol} ${m[1]}, `:'')+`${/[–-]/.test(m[2])?t.pp:t.p} ${m[2]}`):x};
+  return `${f(vp)} ${t.bir}`+(pts?` · ${t.pts}: ${f(pts)}`:'');
+}
+const RE_GRAM=/(Mogg-p-ṭ\.|Rū\.|Nir\.|Sad\.|Moggallāna|Mogg\.)((?:,?\s*(?:\((?:Smith|Padamālā|Dhātumālā)[^()]*\)(?:\s*pp?\.\s*[\d–]+)?|§\s?\d+(?:\s*[–-]\s*§?\s?\d+)?(?:\s*\([^()]*\))?|pp?\.\s*\d+(?:\s*[–-]\s*\d+)?|\d+(?:\s*[–-]\s*\d+)?(?![\d.]))(?:\s*(?:y|and|,)\s*(?=§|pp?\.))?)+)/g;
+const RE_CANON=/(^|[^\wāīūṃñṅṭḍṇḷ\-])(Vis-ṭ|Paṭṭh|Thag|ThīA|Thī|VvA|ApA|ItA|Dhs|Vin|Vism|Vis|Vv|Pu|Sn|Ud|JA|SA|DA|MA|AA|Ap|Bv|Dh|D|M|S|A|V|J)\.\s+((?:[ivx]+\s+)?(?:pp?\.\s*)?\d+(?:\s*[–-]\s*\d+)?)(\s*\(PTS\s+((?:[ivx]+\s+)?(?:pp?\.\s*)?\d+(?:\s*[–-]\s*\d+)?)\))?/g;
+function bloquePorId(id){for(const s of SECC){const b=s.bloques.find(x=>x.id===id);if(b)return b}return null}
+function textoBloque(b){if(!b)return '';let t=L(b.texto)||L(b.titulo)||'';
+  if(!t&&b.filas&&b.filas[0])t=b.filas.map(f=>Array.isArray(f)?f.map(L).join(' · '):[f.compuesto,L(f.traduccion)].filter(Boolean).join(' — ')).slice(0,2).join(' / ');
+  if(!t&&b.compuesto)t=b.compuesto+(L(b.traduccion)?' — '+L(b.traduccion):'');
+  t=t.replace(/\*\*?|\[\^\w+\]/g,'').replace(/\s+/g,' ').trim();return t.length>230?t.slice(0,228)+'…':t}
+function tipL(n){try{const id=idDeL(n);if(!id)return null;return {id,tk:TX[lang].lin(+n),tx:textoBloque(bloquePorId(id))}}catch(e){return null}}
+/* sólo en el texto que no está ya dentro de un enlace o de un emergente; tres pasadas */
+function enTexto(h,f){
+  let dentro=0;
+  return h.split(/(<[^>]+>)/).map(seg=>{
+    if(seg.startsWith('<')){if(/^<(a|span class="rt")\b/.test(seg))dentro++;else if(/^<\/(a|span)>/.test(seg)&&dentro)dentro--;return seg}
+    return dentro?seg:f(seg)}).join('');
+}
+function tipCitas(h){
+  h=enTexto(h,seg=>seg.replace(RE_GRAM,(m,sig,r)=>{const k=sig.replace(/\.$/,''),kk=k==='Moggallāna'?'Mogg':k,o=OBRAS_T[kk];if(!o)return m;
+    return `<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCita(kk,r)||m)}>${m}</span>`}));
+  h=enTexto(h,seg=>seg.replace(RE_CANON,(m,pre,sig,vp,_p,pts)=>{const o=OBRAS_T[sig];if(!o)return m;
+    return `${pre}<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCanon(vp,pts))}>${m.slice(pre.length)}</span>`}));
+  h=enTexto(h,seg=>seg.replace(/\bL(\d{4})\b/g,(m,n)=>{const x=tipL(n);
+    return x?`<a class="k" href="?c=${TAB_DE[x.id]}#${x.id}" data-ir-id="${x.id}"${tipAttr(x.tk,'',x.tx)}>${m}</a>`:m}));
+  return h;
+}
+const rtip=document.createElement('div');rtip.id='rtip';rtip.setAttribute('role','tooltip');document.body.appendChild(rtip);
+let rtEl=null,rtToque=false;
+function rtMostrar(el){
+  const tk=el.getAttribute('data-tk'),tx=el.getAttribute('data-tip'),tp=el.getAttribute('data-tp');
+  rtip.innerHTML=(tk?`<span class="tk">${esc(tk)}</span>`:'')+(tp?`<span class="tp">${esc(tp)}</span>${tx?' — ':''}`:'')+esc(tx||'');
+  rtip.style.display='block';const r=el.getBoundingClientRect(),w=rtip.offsetWidth,h=rtip.offsetHeight;
+  let x=Math.min(Math.max(12,r.left+r.width/2-w/2),innerWidth-w-12),y=r.top-h-8;if(y<8)y=r.bottom+8;
+  rtip.style.left=x+'px';rtip.style.top=y+'px';rtEl=el;
+}
+function rtOcultar(){rtip.style.display='none';rtEl=null}
+document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const el=e.target.closest('[data-tip]');if(el&&el!==rtEl)rtMostrar(el)});
+document.addEventListener('pointerout',e=>{if(e.pointerType==='touch')return;const el=e.target.closest('[data-tip]');if(el&&!el.contains(e.relatedTarget))rtOcultar()});
+document.addEventListener('focusin',e=>{const el=e.target.closest&&e.target.closest('[data-tip]');if(el)rtMostrar(el)});
+document.addEventListener('focusout',()=>rtOcultar());
+document.addEventListener('pointerdown',e=>{rtToque=e.pointerType==='touch'},true);
+document.addEventListener('click',e=>{const el=e.target.closest('[data-tip]');
+  if(!el){if(rtEl)rtOcultar();return}
+  if(rtToque&&rtEl!==el){e.preventDefault();e.stopPropagation();rtMostrar(el)}},true);
+addEventListener('scroll',()=>{if(rtEl)rtOcultar()},{passive:true});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&rtEl)rtOcultar()});
 /* «(L0985)» en la guía: un enlace al bloque de esa línea */
 const POR_L={};SECC.forEach(s=>s.bloques.forEach(b=>{if(b.L&&!POR_L[b.L])POR_L[b.L]=b.id;if(b.L_resolucion&&!POR_L[b.L_resolucion])POR_L[b.L_resolucion]=b.id}));
 function idDeL(n){/* la línea exacta o la del bloque que la contiene */
   if(POR_L[n])return POR_L[n];let mejor=null;SECC.forEach(s=>s.bloques.forEach(b=>{const a=+b.L,z=+(b.hasta||b.L);if(+n>=a&&+n<=z)mejor=b.id}));return mejor}
-function enlazarL(h){return h.replace(/L(\d{4})/g,(m,n)=>{const id=idDeL(n);return id?`<a class="k" href="?c=${TAB_DE[id]}#${id}" data-ir-id="${id}">${m}</a>`:m})}
+function enlazarL(h){return tipCitas(h)}
 
 /* ── textos fijos, idioma, tema, índice ───────────────────────────── */
 function textos(){
