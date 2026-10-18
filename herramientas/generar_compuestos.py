@@ -148,7 +148,7 @@ def guia(version, fecha):
         GI.GUIA, GI.GUIA_PLANTILLA = viejo
 
 
-def script_guia(plantilla, ktip):
+def script_guia(plantilla, ktip, refs=None):
     """Los emergentes de las referencias para la guía (página aparte): las
     mismas funciones de la plantilla (OBRAS_T … RE_CANON y el emergente
     flotante), sacadas de ella para no tener dos copias, más un recorrido del
@@ -158,17 +158,17 @@ def script_guia(plantilla, ktip):
     fin = m + len("addEventListener('keydown',e=>{if(e.key==='Escape'&&rtEl)rtOcultar()});")
     css_i = plantilla.index("/* ── emergentes de las referencias (Kacc.")
     css_f = plantilla.index("</style>", css_i)
-    datos = json.dumps(ktip, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    datos = json.dumps({"ktip": ktip, "refs": refs or {}}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     js = ("(function(){\nconst lang=(document.documentElement.lang||'es').slice(0,2)==='en'?'en':'es';\n"
           "const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));\n"
-          "const KTIP=" + datos + ";\n" + plantilla[i:j] + "\n" + plantilla[k:fin] + """
+          "const D=" + datos + ",KTIP=D.ktip;\n" + plantilla[i:j] + "\n" + plantilla[k:fin] + """
 document.querySelectorAll('a[href*="/s/"]').forEach(a=>{const m=/\\/s\\/(\\d+)\\//.exec(a.getAttribute('href'));const x=m&&KTIP[m[1]];
   if(x){const v=x[lang]||x.es;a.setAttribute('data-tk',TX[lang].kacc(m[1]));a.setAttribute('data-tp',v.pali);a.setAttribute('data-tip',v.glosa)}});
 const raiz=document.querySelector('main')||document.body,mv=[];
 const w=document.createTreeWalker(raiz,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,script,style,code,pre,.rt,#rtip')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
 while(w.nextNode())mv.push(w.currentNode);
 mv.forEach(n=>{const t=esc(n.nodeValue);let h=t.replace(RE_GRAM,(m,sig,r)=>{const k=sig.replace(/\\.$/,''),kk=k==='Moggallāna'?'Mogg':k,o=OBRAS_T[kk];if(!o)return m;
-    return `<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCita(kk,r)||m)}>${m}</span>`});
+    const [tp,ds]=infoCita(kk,r);return `<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],tp,ds||m)}>${m}</span>`});
   h=h.split(/(<[^>]+>[^<]*<\\/span>)/).map(seg=>seg.startsWith('<')?seg:seg.replace(RE_CANON,(m,pre,sig,vp,_p,pts)=>{const o=OBRAS_T[sig];if(!o)return m;
     return `${pre}<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCanon(vp,pts))}>${m.slice(pre.length)}</span>`})).join('');
   if(h!==t){const s=document.createElement('span');s.innerHTML=h;n.replaceWith(...s.childNodes)}});
@@ -187,6 +187,9 @@ def suttas_citados(d, plantilla):
     # todos los «§N» que no son de Rūpasiddhi, Saddanīti o Niruttidīpanī (como enlazar() en la plantilla)
     sin_otros = re.sub(r"(?:Rū|Sad|Nir)\.\s*(?:\d+,\s*)?§\s?\d+(?:\s*\([^()]*\))?(?:\s*(?:–|y|,)\s*§\s?\d+)*", "", texto)
     nums = {int(n) for n in re.findall(r"§\s?(\d+)", sin_otros)}
+    # y los de Kaccāyana que corresponden a los suttas citados de Rūpasiddhi y Saddanīti
+    for clase in ("ru", "sad"):
+        nums |= {x["kacc"] for x in d.get("refs", {}).get(clase, {}).values() if x.get("kacc")}
     tip = {}
     for lengua in ("es", "en"):
         for clave in GC.CAPITULOS:
@@ -221,6 +224,11 @@ def main():
     if not m:
         print("La plantilla no tiene el marcador /*__DATOS__*/…/*__FIN__*/")
         return 1
+    ruta_refs = os.path.join(os.path.dirname(DATOS), "referencias.json")
+    if os.path.exists(ruta_refs):
+        refs = json.load(open(ruta_refs, encoding="utf-8"))
+        refs.pop("_nota", None)
+        d["refs"] = refs
     d["ktip"] = suttas_citados(d, pl)
     datos = json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     html = pl[:m.start()] + datos + pl[m.end():]
@@ -229,7 +237,7 @@ def main():
     os.makedirs(os.path.dirname(DESTINO), exist_ok=True)
     open(DESTINO, "w", encoding="utf-8").write(cabecera.insertar(html, "compuestos"))
     if "</body>" in pagina_guia:
-        pagina_guia = pagina_guia.replace("</body>", script_guia(pl, d["ktip"]) + "</body>", 1)
+        pagina_guia = pagina_guia.replace("</body>", script_guia(pl, d["ktip"], d.get("refs", {})) + "</body>", 1)
     os.makedirs(os.path.dirname(GUIA_DESTINO), exist_ok=True)
     open(GUIA_DESTINO, "w", encoding="utf-8").write(
         cabecera.insertar(pagina_guia, "compuestos-guia"))

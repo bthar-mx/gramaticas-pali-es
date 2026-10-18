@@ -886,7 +886,7 @@ function cualPintar(){
   if(cualPrueba&&c){const ok=cualPrueba.c===fin;cmp=`<p class="cmp ${ok?'bien':'mal'}">${ok?g.acierto('<i>'+esc(c.pali)+'</i>'):g.fallo('<i>'+esc(c.pali)+'</i>','<i>'+esc(byId[cualPrueba.c].pali)+'</i>')}</p>`}
   else if(cualPrueba&&!c){cmp=`<p class="cmp">${g.acierto('<i>'+esc(byId[cualPrueba.c].pali)+'</i>').replace(/^[^:]*:/,'')}</p>`}
   const veredicto=c?(cualPrueba?(cualPrueba.c===fin?`<span class="lbl ver bien">${g.correcto}</span>`:`<span class="lbl ver mal">${g.incorrecto}</span>`):`<span class="lbl">${g.es}</span>`):`<span class="lbl">${g.noDecide}</span>`;
-  f.innerHTML=`<div class="cual-fin">${veredicto}<h3 lang="pi">${c?esc(c.pali):'—'}${c?`<small>${esc(t.clLargo[c.id])} · <a class="k" href="../../s/${c.kacc[0]}/${lq()}">Kacc. §${c.kacc[0]}</a></small>`:''}</h3>
+  f.innerHTML=`<div class="cual-fin">${veredicto}<h3 lang="pi">${c?esc(c.pali):'—'}${c?`<small>${esc(t.clLargo[c.id])} · <a class="k" href="../../s/${c.kacc[0]}/${lq()}"${kTip(c.kacc[0])}>Kacc. §${c.kacc[0]}</a></small>`:''}</h3>
     <p>${enlazarL(tx.p)}</p><p class="ojo"><b>${g.ojo}</b>${enlazarL(tx.o)}</p>${cmp}
     <div class="cual-acc"><button class="btn" id="cual-de-nuevo">${g.deNuevo}</button>${c?`<a href="?c=${c.id}" data-ir="${c.id}">${g.ir('<i>'+esc(c.pali)+'</i>')}</a>`:`<a href="?c=tappurisa" data-ir="tappurisa">${g.ir('<i>tappurisa</i>')}</a>`}${cualPrueba?` <a href="?c=${cualPrueba.c}#${cualPrueba.id}" data-ir-id="${cualPrueba.id}">${P[lang].verla}</a>`:''}</div></div>`;
   document.getElementById('cual-de-nuevo').onclick=()=>{cualCamino=[];cualPintar();scrollTo({top:document.getElementById('bar').offsetTop})};
@@ -917,10 +917,10 @@ const OBRAS_T={
 const TX={
  es:{sutta:'sutta',suttas:'suttas',p:'p.',pp:'pp.',vol:'vol.',bir:'de la edición birmana del Sexto Concilio',
      smith:'de la edición de Helmer Smith (Lund, 1928–1966)',cst:'numeración del Sexto Concilio',sm:'de la Suttamālā',
-     pts:'PTS',lin:n=>`Documento de Nandisena · línea ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`},
+     pts:'PTS',lin:n=>`Documento de Nandisena · línea ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`,secc:'en esta página',coment:n=>`en el comentario del sutta ${n}`},
  en:{sutta:'sutta',suttas:'suttas',p:'p.',pp:'pp.',vol:'vol.',bir:'of the Burmese Sixth Council edition',
      smith:'of Helmer Smith’s edition (Lund, 1928–1966)',cst:'Sixth Council numbering',sm:'of the Suttamālā',
-     pts:'PTS',lin:n=>`Nandisena’s document · line ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`}};
+     pts:'PTS',lin:n=>`Nandisena’s document · line ${n}`,kacc:n=>`Kaccāyana · sutta ${n}`,secc:'on this page',coment:n=>`in the commentary on sutta ${n}`}};
 const tipAttr=(tk,tp,txt)=>` data-tk="${esc(tk)}" data-tip="${esc(txt)}"${tp?` data-tp="${esc(tp)}"`:''}`;
 function pags(r){const m=[...r.matchAll(/pp?\.\s*(\d+(?:\s*[–-]\s*\d+)?)/g)].map(x=>x[1]);return m}
 function descCita(sig,r){
@@ -939,6 +939,22 @@ function descCita(sig,r){
   if(sig==='Nir'&&!pg.length){const n=/^\s*(\d+(?:\s*[–-]\s*\d+)?)/.exec(r);if(n)pg=[n[1]]}
   if(pg.length)partes.push(`${pg.length>1||/[–-]/.test(pg[0])?t.pp:t.p} ${pg.join(', ')} ${t.bir}`);
   return partes.join(' · ');
+}
+/* el sutta citado: Rū. §N (o el sutta que se comenta en esa página), Sad. §N o (Smith p. N),
+   y en Niruttidīpanī las secciones de la página; con su sutta de Kaccāyana (D.refs, D.ktip) */
+const claveS=s=>String(s||'').normalize('NFC').toLowerCase().replace(/[\s’'.-]/g,'');
+function infoCita(k,r){
+  const R=D.refs||{},t=TX[lang],desc=descCita(k,r);let x=null,n=null,enPag=false;
+  const ss=[...r.matchAll(/§\s?(\d+)/g)].map(m=>m[1]),pg=pags(r);
+  if(k==='Rū'){n=ss[0];if(!n&&pg[0]){n=(R.ru_pag||{})[pg[0].split(/[–-]/)[0].trim()];enPag=!!n}if(n)x=(R.ru||{})[n]}
+  if(k==='Sad'){n=ss[0];const sm=/Smith\s+pp?\.\s*(\d+)/.exec(r);if(!n&&sm){n=(R.sad_pag||{})[sm[1]];enPag=!!n}if(n)x=(R.sad||{})[n]}
+  if(k==='Nir'){const p=(pg[0]||(/^\s*(\d+)/.exec(r)||[])[1]||'').split(/[–-]/)[0].trim(),h=(R.nir_pag||{})[p];
+    return ['',desc+(h?` · ${t.secc}: ${h.join(', ')}`:'')]}
+  if(!x)return ['',desc];
+  let extra=enPag?` · ${t.coment(n)}`:'';
+  const kc=x.kacc&&(D.ktip||{})[x.kacc],kv=kc&&(kc[lang]||kc.es);
+  if(kv)extra+=` · = Kacc. §${x.kacc}`+(claveS(kv.pali)!==claveS(x.pali)?` (${kv.pali})`:'')+`: ${kv.glosa}`;
+  return [x.pali,desc+extra];
 }
 function descCanon(vp,pts){
   const t=TX[lang],f=x=>{const m=/^(?:([ivx]+)\s+)?(?:pp?\.\s*)?(\d+(?:\s*[–-]\s*\d+)?)$/.exec(x.trim());return m?((m[1]?`${t.vol} ${m[1]}, `:'')+`${/[–-]/.test(m[2])?t.pp:t.p} ${m[2]}`):x};
@@ -961,7 +977,7 @@ function enTexto(h,f){
 }
 function tipCitas(h){
   h=enTexto(h,seg=>seg.replace(RE_GRAM,(m,sig,r)=>{const k=sig.replace(/\.$/,''),kk=k==='Moggallāna'?'Mogg':k,o=OBRAS_T[kk];if(!o)return m;
-    return `<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCita(kk,r)||m)}>${m}</span>`}));
+    const [tp,ds]=infoCita(kk,r);return `<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],tp,ds||m)}>${m}</span>`}));
   h=enTexto(h,seg=>seg.replace(RE_CANON,(m,pre,sig,vp,_p,pts)=>{const o=OBRAS_T[sig];if(!o)return m;
     return `${pre}<span class="rt" tabindex="0"${tipAttr(o[lang==='en'?1:0],'',descCanon(vp,pts))}>${m.slice(pre.length)}</span>`}));
   h=enTexto(h,seg=>seg.replace(/\bL(\d{4})\b/g,(m,n)=>{const x=tipL(n);
