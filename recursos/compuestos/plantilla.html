@@ -47,6 +47,13 @@ main.wrap{min-height:40vh}
 .tabs button[aria-selected=true] .hits{color:var(--bg)}
 .tabs button.cero{background:transparent;border-style:dashed}
 .tabs button.cero,.tabs button.cero .tn,.tabs button.cero .tp,.tabs button.cero .hits{color:var(--text3)}
+.tabs button.con{border-color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent)}
+.tabs button.con .hits{font-weight:700}
+.empty .ir-tabs{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.empty .ir-tabs button{font:600 12px/1.4 var(--mono);letter-spacing:.03em;border:1px solid var(--accent);background:var(--bg2);color:var(--text);padding:7px 12px;border-radius:2px;cursor:pointer}
+.empty .ir-tabs button:hover{background:var(--bg3)}
+.empty .ir-tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.empty .ir-tabs .tp{font-family:var(--serif);font-style:italic;font-weight:400;font-size:14px;letter-spacing:0}
 .tabs.herr button{border-style:dashed;border-color:var(--border2)}
 .tabs.herr button .ic{color:var(--haritala);font-size:12px}
 .tabs.herr button[aria-selected=true]{border-style:solid}
@@ -441,7 +448,7 @@ es:{title:'Compuestos (samāsa)',sb:'Compuestos',
   ejemplos:n=>n+(n===1?' compuesto resuelto':' compuestos resueltos'),
   subtipos:n=>n+(n===1?' subtipo':' subtipos'),
   hits_otras:(n,m)=>`${n} aquí · ${m} en otras pestañas`,
-  empty:'Nada coincide en esta pestaña.',empty_otras:'Nada coincide aquí; mire las pestañas que llevan un número.',
+  empty:'Nada coincide en esta pestaña.',empty_otras:'Nada coincide en esta pestaña. Se encontró en:',
   viggaha:'Resolución (viggaha)',porPalabra:'Palabra por palabra',otra:'Otra resolución',sinViggaha:'El documento no da la resolución.',
   cols4:['Sentido','Resolución','Compuesto','Traducción'],cols3:['Resolución','Compuesto','Traducción'],
   notas_h:'Notas',nota_add:'Añadido del IEBH',fuente:'Fuente',iebh_tit:'Añadido por IEBH; no está en el documento de Nandisena',
@@ -473,7 +480,7 @@ en:{title:'Compounds (samāsa)',sb:'Compounds',
   ejemplos:n=>n+(n===1?' resolved compound':' resolved compounds'),
   subtipos:n=>n+(n===1?' subtype':' subtypes'),
   hits_otras:(n,m)=>`${n} here · ${m} in other tabs`,
-  empty:'Nothing matches in this tab.',empty_otras:'Nothing matches here; see the tabs that show a number.',
+  empty:'Nothing matches in this tab.',empty_otras:'Nothing matches in this tab. Found in:',
   viggaha:'Resolution (viggaha)',porPalabra:'Word by word',otra:'Another resolution',sinViggaha:'The document gives no resolution.',
   cols4:['Sense','Resolution','Compound','Translation'],cols3:['Resolution','Compound','Translation'],
   notas_h:'Notes',nota_add:'IEBH addition',fuente:'Source',iebh_tit:'Added by IEBH; not in Nandisena’s document',
@@ -707,7 +714,7 @@ function hitsDe(tab,qq){if(!qq)return null;return bloquesDe(tab).filter(b=>b.tip
 function pestañas(){
   const t=T[lang],qq=q();
   document.getElementById('tabs').innerHTML=TABS.map(id=>{
-    const sel=id===cl,h=hitsDe(id,qq),cero=qq&&h===0?' cero':'';
+    const sel=id===cl,h=hitsDe(id,qq),cero=qq&&h===0?' cero':(qq&&h>0&&!sel?' con':'');
     const hits=qq?`<span class="hits">${h}</span>`:'<span class="hits"></span>';
     if(id==='intro'||id==='resumen')return `<button role="tab" data-c="${id}" aria-selected="${sel}" class="${cero}">${esc(t[id][0])}${hits}</button>`;
     const c=byId[id];return `<button role="tab" data-c="${id}" aria-selected="${sel}" class="${cero}" title="${esc(t.clLargo[id])}"><span class="tn">${c.n}</span><span class="tp">${esc(c.pali)}</span><span class="te">${esc(t.cl[id])}</span>${hits}</button>`}).join('');
@@ -761,7 +768,12 @@ function filtrar(){
     const otras=qq?TABS.filter(x=>x!==cl).reduce((a,x)=>a+hitsDe(x,qq),0):0;
     document.getElementById('count').textContent=qq?(otras?t.hits_otras(n,otras):n+''):(byId[cl]?t.ejemplos(nEjemplos(byId[cl])):'');
     document.getElementById('empty').hidden=!(qq&&!n);
-    document.getElementById('empty-t').textContent=otras?t.empty_otras:t.empty;
+    const et=document.getElementById('empty-t');
+    if(otras){const con=TABS.filter(x=>x!==cl).map(x=>[x,hitsDe(x,qq)]).filter(x=>x[1]>0);
+      et.innerHTML=esc(t.empty_otras)+'<span class="ir-tabs">'+con.map(([x,h])=>{const c=byId[x];
+        const r=c?`${c.n} <span class="tp">${esc(c.pali)}</span> ${esc(t.cl[x])}`:esc(t[x][0]);
+        return `<button type="button" data-ir-tab="${x}">${r} · ${h}</button>`}).join('')+'</span>'}
+    else et.textContent=t.empty;
   }else{document.getElementById('count').textContent='';document.getElementById('empty').hidden=true}
   pestañas();espiar();
 }
@@ -1040,6 +1052,7 @@ function irA(tab,id){
   else scrollTo({top:document.getElementById('bar').offsetTop});
 }
 document.getElementById('q').addEventListener('input',filtrar);
+document.getElementById('empty').addEventListener('click',e=>{const b=e.target.closest('button[data-ir-tab]');if(b)irA(b.dataset.irTab)});
 document.querySelector('.tabs-fila').addEventListener('click',e=>{const b=e.target.closest('button[data-c]');if(!b)return;irA(b.dataset.c)});
 document.addEventListener('click',e=>{const a=e.target.closest('a[data-ir],a[data-ir-id]');if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();
   if(a.dataset.irId){const id=a.dataset.irId;irA(TAB_DE[id]||(id.split('-f')[0]&&TAB_DE[id.replace(/-f\d+$/,'')])||cl,id)}else irA(a.dataset.ir);
