@@ -1,6 +1,6 @@
 {
  "meta": {
-  "version": "0.4",
+  "version": "0.5",
   "fecha": "2026-10-18",
   "estado": {
    "es": "Borrador revisado (pendiente de aprobación del IEBH)",
@@ -13,8 +13,8 @@
   "titulo_doc": "Compuesto (samāsa)",
   "fuente": "texto-revisado.txt",
   "nota_version": {
-   "es": "Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la página, en borrador (sin revisar por el IEBH).",
-   "en": "IEBH review complete: all proposals applied according to the verified advice (corrections, references and additions labelled IEBH); the gender of each class, according to Nandisena’s note «Qué género tienen cada uno de los seis compuestos» (2004); the quoted Pāḷi, with the sandhi in the modern edition according to IEBH’s edition of Kaccāyana; English edition of the page, as a draft (not yet reviewed by IEBH)."
+   "es": "Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la página, en borrador (sin revisar por el IEBH). v0.5 (2026-10-18): nombres propios con la inserción ‘nu’ (arindamo, vessantaro, taṇhaṅkaro, medhaṅkaro, saraṇaṅkaro, dīpaṅkaro, purindado), con las dos lecturas de las fuentes sobre la elisión de la inflexión.",
+   "en": "IEBH review complete: all proposals applied according to the verified advice (corrections, references and additions labelled IEBH); the gender of each class, according to Nandisena’s note «Qué género tienen cada uno de los seis compuestos» (2004); the quoted Pāḷi, with the sandhi in the modern edition according to IEBH’s edition of Kaccāyana; English edition of the page, as a draft (not yet reviewed by IEBH). v0.5 (2026-10-18): proper names with the insertion ‘nu’ (arindamo, vessantaro, taṇhaṅkaro, medhaṅkaro, saraṇaṅkaro, dīpaṅkaro, purindado), with the two readings of the sources on the elision of the inflection."
   }
  },
  "intro": [
