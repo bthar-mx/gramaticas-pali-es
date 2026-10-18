@@ -1,13 +1,13 @@
 {
- "version": "0.3",
- "fecha": "2026-10-17",
- "aplicados": 297,
+ "version": "0.4",
+ "fecha": "2026-10-18",
+ "aplicados": 309,
  "por_tipo": {
   "corrección": 42,
   "referencia": 54,
   "errata": 51,
-  "añadido": 78,
-  "nota": 54,
+  "añadido": 84,
+  "nota": 60,
   "término": 9,
   "armonización": 9
  },
@@ -18,7 +18,7 @@
   "convertida en inserción": 1,
   "fila del resumen rellenada": 4,
   "filas añadidas a una tabla": 3,
-  "inserción": 124,
+  "inserción": 136,
   "nota al pie nueva": 9,
   "nota sin llamada → párrafo": 2,
   "referencia plegada al rótulo": 2,
@@ -99,6 +99,10 @@
   {
    "id": "D-014",
    "motivo": "consejo «answered»: No source supports the doc's viggaha; the attested one is genitive."
+  },
+  {
+   "id": "D-016",
+   "motivo": "consejo «reject» (overrides.json): Superseded by N-006 (amended), which rewrites the same sentence of L0704 (IEBH, 2026-10-18: everything approved as advised)."
   },
   {
    "id": "D-021",
@@ -261,6 +265,18 @@
    "motivo": "consejo «reject»: Duplicate of G-028; keep G-028."
   },
   {
+   "id": "N-013",
+   "motivo": "consejo «reject» (overrides.json): Applied as the «Género» column of the summary table by compuestos_a_json.py (GENERO_RESUMEN), like the «Significado» column, with the amended wording; not as extra rows."
+  },
+  {
+   "id": "N-016",
+   "motivo": "consejo «reject»: The test does not discriminate between classes (the individual dvanda also takes the last member's gender) and contradicts N-012."
+  },
+  {
+   "id": "N-021",
+   "motivo": "consejo «reject»: Correct but redundant once N-020 is accepted."
+  },
+  {
    "id": "S-007",
    "motivo": "consejo «answered»: Both readings fit the facts, but verif-C's «not by another rule» explains the causal «ayuttatthattā» and echoes «avihitalakkhaṇā»; the teacher's does not."
   },
@@ -323,6 +339,38 @@
   {
    "id": "K-008",
    "motivo": "punto K: es de otra página"
+  },
+  {
+   "id": "N-015",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §3 Paso 1)"
+  },
+  {
+   "id": "N-017",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §3 Paso 4)"
+  },
+  {
+   "id": "N-018",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §4.1)"
+  },
+  {
+   "id": "N-019",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §4.2)"
+  },
+  {
+   "id": "N-020",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §4.3)"
+  },
+  {
+   "id": "N-022",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §4.4)"
+  },
+  {
+   "id": "N-023",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §4.5)"
+  },
+  {
+   "id": "N-024",
+   "motivo": "guía: se aplica en recursos/compuestos/guia.md (guia §4.6)"
   }
  ],
  "llamadas_G": {
@@ -453,6 +501,15 @@
    "modo": "inserción",
    "como": "inserción del IEBH tras L0023",
    "texto": "[Añadido IEBH] Rūpasiddhi cierra el capítulo de compuestos con dos estrofas que lo clasifican de otro modo. Por el miembro cuyo significado predomina, el compuesto es de cuatro clases: con predominio del significado del primer miembro (pubbapadatthappadhāna), del último miembro (uttarapadatthappadhāna), de ambos (ubhayapadatthappadhāna) o de otra palabra (aññapadatthappadhāna); con el compuesto numérico y el compuesto adjetivo, de seis. Son, respectivamente, el compuesto adverbial, el compuesto determinativo, el compuesto copulativo y el compuesto relativo (Sad. (Smith pp. 746, 754, 759, 768); para el adverbial y el determinativo, también Rū. §330 (p. 178) y §341 (p. 184)). Por sus subdivisiones, el compuesto adverbial es de dos clases, el compuesto adjetivo de nueve, el compuesto numérico de dos, el compuesto determinativo de ocho, el compuesto relativo de nueve y el compuesto copulativo de dos: en total, treinta y dos (caturaṭṭhadhā, «cuatro veces ocho») (Rū., pp. 214–215). La tradición de Kaccāyana cuenta veintisiete (el compuesto adjetivo de seis clases y el relativo de siete) y, según algunos, veintiocho si se añade el compuesto determinativo de primera inflexión (Suttaniddesa, ad Kacc. §316; cf. Sad. (Smith p. 745), «sattavīsatividho aṭṭhavīsatividho»)."
+  },
+  {
+   "id": "N-001",
+   "L": "0023c",
+   "tipo": "añadido",
+   "origen": "enmienda",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0023c",
+   "texto": "Lo que se dice del género en cada clase («Este compuesto tiene el género…») procede de otra nota de Nandisena, «Qué género tienen cada uno de los seis compuestos» (6 de febrero de 2004). Coincide en lo esencial, y en el mismo orden, con el repaso del género con que U Sīlānanda cierra el capítulo de compuestos de Kaccāyana (clase de Kaccāyana n.º 10), salvo en dos precisiones propias de la nota («el género del primer miembro», «generalmente»); la grabación termina antes del compuesto copulativo. Las precisiones de las fuentes van en cada clase, rotuladas IEBH."
   },
   {
    "id": "A-012",
@@ -794,6 +851,15 @@
    ]
   },
   {
+   "id": "N-004",
+   "L": "0102",
+   "tipo": "añadido",
+   "origen": "propuesta",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0102",
+   "texto": "Este compuesto tiene el género del último miembro (generalmente)."
+  },
+  {
    "id": "B-006",
    "L": "0104",
    "tipo": "errata",
@@ -825,6 +891,15 @@
    "modo": "inserción",
    "como": "inserción del IEBH tras L0104",
    "texto": "IEBH: Según Rūpasiddhi, se llaman así por su semejanza con la propia palabra «tappurisa» («tassa puriso», el hombre de él), en la que predomina el significado del último miembro; y este compuesto toma el número de lo que designa (abhidheyyavacana) y el género del último miembro (paraliṅga) (Rū. §341)."
+  },
+  {
+   "id": "N-005",
+   "L": "0104b",
+   "tipo": "nota",
+   "origen": "enmienda",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0104b",
+   "texto": "Niruttidīpanī lo dice también sin restricción («Ayam pi kammadhārayasamāso abhidheyyavacano parapadaliṅgo ca», Nir. 239). Cuando ambos miembros califican (visesanobhayapada), el último no tiene género propio y el compuesto toma el de lo que califica: «siniddho ca so uṇho cā ti siniddhuṇho», māso (Rū., p. 186); «sītañ ca taṃ uṇhañ cā ti sītuṇhaṃ», bhattaṃ (Sad. (Smith p. 753)). Y el compuesto numérico colectivo, que Nandisena incluye arriba con el adjetivo, no toma el género del último miembro: es neutro y singular (Kacc. §321; Rū. §349)."
   },
   {
    "id": "S-003",
@@ -1830,16 +1905,25 @@
    "texto": "IEBH. Rūpasiddhi (§349) da además: tayo daṇḍā tidaṇḍaṃ (tres bastones), tilakkhaṇaṃ (tres características), catasso disā catuddisaṃ (cuatro direcciones), pañcasikkhāpadaṃ (cinco reglas de entrenamiento), saḷāyatanaṃ (seis āyatana), navalokuttaraṃ (nueve [dhammas] supramundanos), dasasīlaṃ (diez preceptos), y, con la «a» de Kacc. §337, tirattaṃ, dvaṅgulaṃ, sattagodāvaraṃ y pañcagavaṃ. En catuddisaṃ, la ā de disā se acorta por Kacc. §342 (Rū. §337) «Saro rasso napuṃsake»: Kaccāyana la enuncia para el abyayībhāva, pero Rūpasiddhi advierte que ahí no ha de arrastrarse «abyayībhāva», de modo que el acortamiento vale también en el digu, el dvanda y el bahubbīhi neutros. Catuddisaṃ se lee en el canon: «cattāro naṃ devaputtā catuddisaṃ rakkhāya upagacchanti» (D. ii 11 (PTS ii 12))."
   },
   {
-   "id": "D-016",
+   "id": "N-006",
    "L": "0704",
    "tipo": "corrección",
-   "origen": "propuesta",
+   "origen": "enmienda",
    "modo": "sustitución",
    "como": "sustitución",
-   "texto": "Puede tener terminación singular o plural.",
+   "texto": "Tiene el género del último miembro y terminación plural; con «eka» (uno), terminación singular: ekapuggalo, ekadhammo, ekaputto.",
    "lineas": [
     "0704"
    ]
+  },
+  {
+   "id": "N-007",
+   "L": "0704",
+   "tipo": "nota",
+   "origen": "propuesta",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0704",
+   "texto": "El compuesto numérico es también compuesto determinativo («Ubhe tappurisā», Kacc. §326; Rū. §341), y de éste dice Rūpasiddhi que toma el número de lo que designa y el género del último miembro («abhidheyyavacano, paraliṅgo ca», Rū. §341). Por eso, en los ejemplos de Rūpasiddhi del no colectivo, el número es el de las cosas contadas —singular con «eka»: ekapuggalo, ekadhammo, ekaputto; plural con los demás numerales: tibhavā, catuddisā, dasasahassacakkavāḷāni— y el género, el del último miembro: ekapuggalo, masculino; catuddisā, femenino; dasasahassacakkavāḷāni, neutro (Rū. §350). En el canon, en singular: «Ekadhammo, bhikkhave, bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattati» (A. i 31 (PTS i 30))."
   },
   {
    "id": "D-017",
@@ -1890,6 +1974,15 @@
    ]
   },
   {
+   "id": "N-008",
+   "L": "0746",
+   "tipo": "añadido",
+   "origen": "propuesta",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0746",
+   "texto": "Este compuesto tiene el género del último miembro."
+  },
+  {
    "id": "T-004",
    "L": "0746",
    "tipo": "nota",
@@ -1915,6 +2008,15 @@
    "modo": "inserción",
    "como": "inserción del IEBH tras L0748",
    "texto": "IEBH: «saraṇagato» está atestiguado en Mahāniddesa: «… leṇagato leṇappatto saraṇagato saraṇappatto …» (Nidd. I 16 (PTS i 20)). La frase sin componer es la fórmula común: «buddhaṃ saraṇaṃ gato hoti» (citada en DA. i 209 (PTS i 234))."
+  },
+  {
+   "id": "N-009",
+   "L": "0748b",
+   "tipo": "nota",
+   "origen": "enmienda",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0748b",
+   "texto": "Niruttidīpanī da además una excepción, tomada de Moggallāna, que la formula con las mismas palabras: en el compuesto determinativo en la sexta inflexión con «chāyā» (sombra) y «sabhā» (asamblea), a veces el compuesto es neutro y singular («Kvac’ ekattañ ca chaṭṭhiyā», Nir. 256; Moggallāna, M p. 128): salabhānaṃ chāyā salabhacchāyaṃ, sakaṭacchāyaṃ, gharacchāyaṃ, pero rukkhacchāyā, pabbatacchāyā; brahmūnaṃ sabhā brahmasabhaṃ, devasabhaṃ, pero, si la asamblea es de seres humanos, khattiyasabhā, rājasabhā. Rūpasiddhi y Kaccāyana no tienen esta regla, y fuera de las gramáticas estas formas sólo aparecen en acusativo, femenino donde se distingue: «sudhammaṃ devasabhaṃ» (S. ii 404 (PTS iv 202))."
   },
   {
    "id": "E-004",
@@ -2482,6 +2584,15 @@
    "modo": "añadido a una nota",
    "como": "nota «[^n]» sin llamada → añadido del IEBH a la nota 11 (como pidió el verificador)",
    "texto": "[^n]: [IEBH] Saddanīti distingue las dos clases por la resolución: es tagguṇasaṃviññāṇa «yattha avayavena viggaho samudāyo samāsattho», cuando se resuelve con la parte y el sentido del compuesto es el conjunto (lambakaṇṇo); y atagguṇasaṃviññāṇa «yattha pana samudāyena viggaho samudāyo samāsattho», cuando se resuelve con el conjunto (bahudhano) (Sad. (Smith p. 760))."
+  },
+  {
+   "id": "N-010",
+   "L": "0983",
+   "tipo": "añadido",
+   "origen": "propuesta",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0983",
+   "texto": "Este compuesto tiene el género de la otra palabra (aññapada)."
   },
   {
    "id": "F-030",
@@ -3258,6 +3369,15 @@
    ]
   },
   {
+   "id": "N-014",
+   "L": "1139",
+   "tipo": "nota",
+   "origen": "enmienda",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L1139 (después de la tabla L1131–L1139)",
+   "texto": "Para las precisiones de las fuentes sobre el género véase cada clase: en el compuesto adverbial es el compuesto entero el que se considera neutro (Kacc. §320; Rū. §335); el compuesto numérico no colectivo va en singular con «eka» (ekapuggalo, Rū. §350); en el compuesto copulativo, Rūpasiddhi da el género del último miembro para el individual y el neutro singular para el colectivo (Rū. §357; Rū. §359)."
+  },
+  {
    "id": "A-002",
    "L": "1143",
    "tipo": "referencia",
@@ -3414,6 +3534,26 @@
    "texto": "IEBH: En estos nombres, «guṇa» no significa «virtud» sino el calificativo: es el significado secundario de los miembros del compuesto, que, por calificar al significado de la otra palabra, se llama «su cualidad» (tagguṇa); y «saṃviññāṇa» es el entenderse junto con: tagguṇasaṃviññāṇa es el compuesto relativo en el que el significado de la otra palabra se entiende junto con su calificativo, sin dejarlo («tagguṇaṃ amuñcitvā tagguṇena saheva viññāṇo aññapadattho yasminti tagguṇasaṃviññāṇo», Niruttidīpanī p. 129; cf. Rū. §352, M p. 200). Así lo explica también U Sīlānanda (clase de Rūpasiddhi n.º 47)."
   },
   {
+   "id": "N-002",
+   "L": "0030",
+   "tipo": "añadido",
+   "origen": "propuesta",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0030e (colocado tras L0030e, como pide el coordinador)",
+   "texto": "Este compuesto tiene el género del primer miembro, neutro.",
+   "colocado_tras": "L0030e"
+  },
+  {
+   "id": "N-003",
+   "L": "0030e",
+   "tipo": "nota",
+   "origen": "enmienda",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L0030e (colocado tras L0030e, como pide el coordinador)",
+   "texto": "Nandisena dice «el género del primer miembro»; pero el primer miembro, un indeclinable, no tiene género propio: se llama abyaya porque no cambia aunque cambien el género y el número («liṅgavacanabhede pi byayarahitattā», Rū. §330). Lo que fija la regla es que el compuesto entero se considera neutro, aunque el último miembro sea femenino: adhikumāri, upavadhu, upagaṅgaṃ (Kacc. §320; Rū. §335). Saddanīti, al explicar por qué en este compuesto la palabra femenina no se trata como masculina, da la razón de fondo: el compuesto adverbial tiene la naturaleza del indeclinable y no toma el género ni el número de lo que designa («tassa avyayalakkhaṇattā anabhidheyyaliṅgavacanattā ca», Sad. (Smith p. 775)). Así lo explica también U Sīlānanda (clase de Kaccāyana n.º 7).",
+   "colocado_tras": "L0030e"
+  },
+  {
    "id": "I-008",
    "L": "0100",
    "tipo": "añadido",
@@ -3472,6 +3612,26 @@
    "como": "inserción del IEBH tras L1112 (colocado tras L1112, como pide la verificación)",
    "texto": "[IEBH] Resolución de los compuestos complejos. Un compuesto que contiene otros compuestos (gabbha) se resuelve por pasos, cada uno con su propia resolución, y el último paso da la clase del conjunto. Rūpasiddhi resuelve así nānādumapatitapupphavāsitasānu, [el monte] de valles perfumados por las flores caídas de varios árboles: «nānappakārā dumā nānādumā, nānādumehi patitāni nānādumapatitāni, nānādumapatitāni ca tāni pupphāni cāti nānādumapatitapupphāni, tehi vāsitā nānādumapatitapupphavāsitā, nānādumapatitapupphavāsitā sānū yassa pabbatassa soyaṃ nānādumapatitapupphavāsitasānu pabbato. Ayaṃ pana kammadhārayatappurisagabbho tulyādhikaraṇabahubbīhi», éste es un compuesto relativo que tiene la misma localización y que contiene un compuesto adjetivo y un compuesto determinativo (Rū., pp. 203–204). La vutti de Kaccāyana trae una docena de casos semejantes, casi todos con una segunda resolución como compuesto relativo que no tiene la misma localización (bhinnādhikaraṇabahubbīhi): «Vāsitā sānū vāsitasānu; sāpekkhatte sati pi gamakattā samāso», valles perfumados [se llaman] vāsitasānu; aunque mira a otro lugar, porque puede transmitir el significado, es un compuesto (Kacc. §328).",
    "colocado_tras": "L1112"
+  },
+  {
+   "id": "N-011",
+   "L": "1125e",
+   "tipo": "añadido",
+   "origen": "propuesta",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L1125n (colocado tras L1125n, como pide el coordinador)",
+   "texto": "Este compuesto tiene el género de ambos miembros.",
+   "colocado_tras": "L1125n"
+  },
+  {
+   "id": "N-012",
+   "L": "1125e",
+   "tipo": "nota",
+   "origen": "enmienda",
+   "modo": "inserción",
+   "como": "inserción del IEBH tras L1125n (colocado tras L1125n, como pide el coordinador)",
+   "texto": "Las gramáticas lo precisan así. En el compuesto copulativo individual, el compuesto toma el género del último miembro («parass’ eva liṅgañ ca», Rū. §357 (p. 209); «ekattābhāve bahuvacanaṃ, parass’ eva liṅgañ ca», Rū. §360 (p. 213)): mātāpitaro, masculino, como pitā; bhikkhubhikkhuniyo, femenino, como bhikkhunī («evam eva mayhaṃ bhikkhubhikkhuniyo», S. ii 501 (PTS iv 315)). En el colectivo es neutro y singular, sea cual sea el género de los miembros: mukhanāsikaṃ, de mukha, neutro, y nāsikā, femenino (Kacc. §322; Rū. §359). La frase de Nandisena se cumple tal cual sólo en el individual cuyos dos miembros tienen el mismo género: Sāriputtamoggallānā, samaṇabrāhmaṇā.",
+   "colocado_tras": "L1125n"
   }
  ]
 }

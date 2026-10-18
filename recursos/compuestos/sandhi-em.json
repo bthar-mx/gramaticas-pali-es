@@ -33,8 +33,8 @@
    "archivo": "texto-revisado.txt",
    "L": "0007b",
    "antes": "«tatthāpi vā ekapadattūpagamanato duvidhampi labbhateva»",
-   "despues": "«tatth’ āpi vā ekapadattūpagamanato duvidham pi labbhat’ eva»",
-   "regla": "enclítico aparte; vocal elidida con apóstrofo",
+   "despues": "«tatthā pi vā ekapadattūpagamanato duvidham pi labbhat’ eva»",
+   "regla": "enclítico aparte; vocal elidida con apóstrofo · EM según la edición de Kaccāyana del IEBH",
    "fuente": "Rūpasiddhi (CST/VRI): convertido por regla; el doc del Proyecto «4. - Samāsa-Rūpasiddhi.md» no se pudo leer en esta sesión",
    "nota": "Cotejado con la edición del IEBH de Rūpasiddhi («tatth’ āpi vā»)."
   },
@@ -499,7 +499,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125ai",
+   "L": "1125ao",
    "antes": "\"Yathā vā paneke bhonto",
    "despues": "\"Yathā vā pan’ eke bhonto",
    "regla": "vocal elidida con apóstrofo",
@@ -508,7 +508,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125at",
+   "L": "1125az",
    "antes": "«‘jānipatī’ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ti»",
    "despues": "«‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti»",
    "regla": "ti aparte",
@@ -517,7 +517,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125at",
+   "L": "1125az",
    "antes": "«nāyampayogoti tudampatippayogaṃ",
    "despues": "«nā ’yam payogo ti tudampatippayogaṃ",
    "regla": "vocal elidida con apóstrofo; enclítico aparte; ti aparte",
@@ -526,7 +526,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125at",
+   "L": "1125az",
    "antes": "aññehi cāti iminā",
    "despues": "aññehi cā ti iminā",
    "regla": "ti aparte",
@@ -535,7 +535,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125bc",
+   "L": "1125bi",
    "antes": "\"Aṃmo niggahītaṃ jhalapehi\"",
    "despues": "\"Aṃ-mo niggahitaṃ jha-la-pehi\"",
    "regla": "texto de la casa (regla 2)",
@@ -922,7 +922,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125at",
+   "L": "1125az",
    "antes": "(Moggallāna, M p. 137)",
    "despues": "(Moggallāna, p. 137)",
    "regla": "retoque del IEBH (erratas halladas al traducir)",
@@ -931,7 +931,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125cx",
+   "L": "1125dd",
    "antes": "(Rū. §359, M p. 212;",
    "despues": "(Rū. §359 (p. 212);",
    "regla": "retoque del IEBH (erratas halladas al traducir)",
@@ -967,7 +967,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125ct",
+   "L": "1125cz",
    "antes": " (\"dāsī\" → \"dāsi\").[^19]",
    "despues": " (\"dāsī\" → \"dāsi\").",
    "regla": "retoque del IEBH (erratas halladas al traducir)",
@@ -976,7 +976,7 @@
   },
   {
    "archivo": "texto-revisado.txt",
-   "L": "1125cm",
+   "L": "1125cs",
    "antes": "| largo y mediano |",
    "despues": "| largo y mediano[^19] |",
    "regla": "retoque del IEBH (erratas halladas al traducir)",
@@ -1144,22 +1144,73 @@
    "regla": "retoque del IEBH (erratas halladas al traducir)",
    "fuente": "",
    "nota": "Pedido del IEBH (2026-10-17): erratas del español halladas al preparar la edición inglesa."
-  }
- ],
- "ocr": [],
- "dudas": [
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0425b",
+   "antes": "Attaṃ nassa tappurise",
+   "despues": "Attaṃ n’ assa tappurise",
+   "regla": "EM según la edición de Kaccāyana del IEBH",
+   "fuente": "kaccayana/0N-*.md",
+   "nota": "Pedido del IEBH (2026-10-18): sandhi en edición moderna según la edición de Kaccāyana del IEBH (kaccayana/0N-*.md)."
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1102f",
+   "antes": "Attaṃ nassa tappurise",
+   "despues": "Attaṃ n’ assa tappurise",
+   "regla": "EM según la edición de Kaccāyana del IEBH",
+   "fuente": "kaccayana/0N-*.md",
+   "nota": "Pedido del IEBH (2026-10-18): sandhi en edición moderna según la edición de Kaccāyana del IEBH (kaccayana/0N-*.md)."
+  },
   {
    "archivo": "texto-revisado.txt",
    "L": "0005b",
-   "forma": "ñāyatyaneneti",
-   "por_que": "ñāyati anena iti: no consta en los textos de la casa cómo se separa «-a + iti» que da «-eti» (¿«anene ti»? ¿«anenā ti»?); se deja unido"
+   "antes": "ñāyatyaneneti",
+   "despues": "ñāyaty anenā ti",
+   "regla": "EM según la edición de Kaccāyana del IEBH",
+   "fuente": "kaccayana/0N-*.md",
+   "nota": "Pedido del IEBH (2026-10-18): sandhi en edición moderna según la edición de Kaccāyana del IEBH (kaccayana/0N-*.md)."
   },
   {
    "archivo": "guia.md",
    "L": "31",
-   "forma": "ñāyatyaneneti",
-   "por_que": "la misma cita que L0005b"
+   "antes": "ñāyatyaneneti",
+   "despues": "ñāyaty anenā ti",
+   "regla": "EM según la edición de Kaccāyana del IEBH",
+   "fuente": "kaccayana/0N-*.md",
+   "nota": "Pedido del IEBH (2026-10-18): sandhi en edición moderna según la edición de Kaccāyana del IEBH (kaccayana/0N-*.md)."
   },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0748d",
+   "antes": "Moggallāna, M p. 128)",
+   "despues": "Moggallāna, p. 128)",
+   "regla": "retoque del IEBH (erratas halladas al traducir)",
+   "fuente": "",
+   "nota": "Forma de la casa para las páginas (IEBH, 2026-10-18)."
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "0452e",
+   "antes": "(Rū. M p. 188)",
+   "despues": "(Rū., p. 188)",
+   "regla": "retoque del IEBH (erratas halladas al traducir)",
+   "fuente": "",
+   "nota": "Forma de la casa para las páginas (IEBH, 2026-10-18)."
+  },
+  {
+   "archivo": "texto-revisado.txt",
+   "L": "1125az",
+   "antes": "(Moggallāna-pañcikā-ṭīkā, M p. 185)",
+   "despues": "(Mogg-p-ṭ., p. 185)",
+   "regla": "retoque del IEBH (erratas halladas al traducir)",
+   "fuente": "",
+   "nota": "Forma de la casa para las páginas (IEBH, 2026-10-18)."
+  }
+ ],
+ "ocr": [],
+ "dudas": [
   {
    "archivo": "texto-revisado.txt",
    "L": "0005b",

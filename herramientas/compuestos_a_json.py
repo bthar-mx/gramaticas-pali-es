@@ -111,6 +111,22 @@ SIGNIFICADO_RESUMEN = {
     "Sāriputtamoggallānā": {"es": "Sāriputta y Moggallāna", "en": "Sāriputta and Moggallāna"},
 }
 
+# Género de cada clase en la tabla de resumen: la nota de Nandisena «Qué género
+# tienen cada uno de los seis compuestos» (6-II-2004), con la enmienda verificada
+# del lote N (N-013; IEBH, 2026-10-18)
+GENERO_RESUMEN = {
+    "upanagaraṃ": {"es": "el género del primer miembro, neutro",
+                   "en": "the gender of the first member, neuter"},
+    "Buddhaghosācariyo": {"es": "el género del último miembro (generalmente)",
+                          "en": "the gender of the last member (generally)"},
+    "tilokaṃ": {"es": "colectivo (samāhāra-digu): neutro singular; no colectivo (asamāhāra-digu): el género del último miembro y es plural",
+                "en": "collective (samāhāra-digu): neuter singular; non-collective (asamāhāra-digu): the gender of the last member, and plural"},
+    "rājaputto": {"es": "el género del último miembro", "en": "the gender of the last member"},
+    "chinnahattho": {"es": "el género de la otra palabra (aññapada)",
+                     "en": "the gender of the other word (aññapada)"},
+    "Sāriputtamoggallānā": {"es": "el género de ambos miembros", "en": "the gender of both members"},
+}
+
 def avisar(L, txt):
     AVISOS.append("L{0}: {1}".format(L, txt))
 
@@ -495,7 +511,16 @@ def bloque_tabla(tipo, L, hasta, filas, fmt_celdas, filas_iebh=()):
                 avisar(L, "resumen: sin significado para «{0}»".format(f[2]["es"]))
                 g = {"es": "", "en": ""}
             f.append(dict(g))
+        # columna del género (lote N, N-013): la nota de Nandisena sobre el género
+        b["cabecera"].append({"es": "Género", "en": "Gender"})
+        for f in b["filas"]:
+            g = GENERO_RESUMEN.get(f[2]["es"].strip())
+            if g is None:
+                avisar(L, "resumen: sin género para «{0}»".format(f[2]["es"]))
+                g = {"es": "", "en": ""}
+            f.append(dict(g))
         b["significado"] = True
+        b["cols_pali"] = 4   # las cuatro primeras columnas; significado y género son texto
         if iebh:
             b["filas_iebh"] = [i - 1 for i in sorted(iebh)]
             # las celdas que llenó el IEBH (las demás de la fila son de Nandisena)

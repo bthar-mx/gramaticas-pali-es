@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "0.3.1",
-  "fecha": "2026-10-17",
+  "version": "0.4",
+  "fecha": "2026-10-18",
   "estado": {
    "es": "Borrador revisado (pendiente de aprobación del IEBH)",
    "en": "Revised draft (pending IEBH approval)"
@@ -13,8 +13,8 @@
   "titulo_doc": "Compuesto (samāsa)",
   "fuente": "texto-revisado.txt",
   "nota_version": {
-   "es": "Se aplicaron las propuestas de revisión según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); primera ronda de la revisión del IEBH (177 puntos conformes, ninguno revertido); a la espera de la aprobación del resto. v0.3.1: título del documento en inglés, «Compound (samāsa)»; llamadas de nota protegidas de la traducción automática del navegador. Sāvatthī (no «Sāvatthi») en el ejemplo del compuesto relativo de la segunda inflexión. Edición inglesa de la página, en borrador (sin revisar por el IEBH).",
-   "en": "The revision proposals were applied according to the verified advice (corrections, references and additions labelled IEBH); first round of the IEBH review (177 points approved, none reverted); awaiting approval of the rest. v0.3.1: document title in English, “Compound (samāsa)”; footnote calls protected from the browser’s automatic translation. Sāvatthī (not “Sāvatthi”) in the example of the relative compound of the second inflection. English edition of the page, as a draft (not yet reviewed by IEBH)."
+   "es": "Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la página, en borrador (sin revisar por el IEBH).",
+   "en": "IEBH review complete: all proposals applied according to the verified advice (corrections, references and additions labelled IEBH); the gender of each class, according to Nandisena’s note «Qué género tienen cada uno de los seis compuestos» (2004); the quoted Pāḷi, with the sandhi in the modern edition according to IEBH’s edition of Kaccāyana; English edition of the page, as a draft (not yet reviewed by IEBH)."
   }
  },
  "intro": [
@@ -50,8 +50,8 @@
   {
    "tipo": "p",
    "texto": {
-    "es": "**La resolución (viggaha).** La resolución, también llamada viggaha-vākya, es la frase desplegada, con la inflexión propia de cada miembro, de la que el compuesto es la abreviación. Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī) explica el término así: «visesena gayhati ñāyatyaneneti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ», se denomina viggaha porque por medio de él [el significado] se capta y se conoce de manera distinta; o bien viggaha es la captación distinta, y la frase que tiene ese propósito es la viggaha-vākya (Mogg-p-ṭ., pp. 145–146). Rūpasiddhi llama vākya a la expresión no compuesta: «tadaññaṃ vākyam iti ruḷhaṃ», lo otro [lo que no es compuesto] se conoce convencionalmente como vākya (Rū. §331); frente a ella, la forma compuesta se llama vutti (sutta 364; Nir. 261). La misma ṭīkā cita la diferencia entre ambas: «samāse visesanaṃ visessam anupavīsati ekībhavati visesanaṃ, vākye tu visesanaṃ visessato visuṃyevā vatiṭṭhate», en el compuesto el calificativo entra en lo calificado y se hace uno con él; en la frase permanece separado de lo calificado (Mogg-p-ṭ., p. 145).",
-    "en": "**The resolution (viggaha).** The resolution, also called viggaha-vākya, is the unfolded phrase, with the proper inflection of each member, of which the compound is the abbreviation. Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī) explains the term thus: “visesena gayhati ñāyatyaneneti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ”, it is called viggaha because by means of it [the meaning] is grasped and known distinctly; or else viggaha is the distinct grasping, and the phrase that has that purpose is the viggaha-vākya (Mogg-p-ṭ., pp. 145–146). Rūpasiddhi calls the uncompounded expression vākya: “tadaññaṃ vākyam iti ruḷhaṃ”, the other [what is not a compound] is conventionally known as vākya (Rū. §331); in contrast to it, the compounded form is called vutti (sutta 364; Nir. 261). The same ṭīkā cites the difference between the two: “samāse visesanaṃ visessam anupavīsati ekībhavati visesanaṃ, vākye tu visesanaṃ visessato visuṃyevā vatiṭṭhate”, in the compound the qualifier enters into the qualified and becomes one with it; in the phrase it remains separate from the qualified (Mogg-p-ṭ., p. 145)."
+    "es": "**La resolución (viggaha).** La resolución, también llamada viggaha-vākya, es la frase desplegada, con la inflexión propia de cada miembro, de la que el compuesto es la abreviación. Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī) explica el término así: «visesena gayhati ñāyaty anenā ti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ», se denomina viggaha porque por medio de él [el significado] se capta y se conoce de manera distinta; o bien viggaha es la captación distinta, y la frase que tiene ese propósito es la viggaha-vākya (Mogg-p-ṭ., pp. 145–146). Rūpasiddhi llama vākya a la expresión no compuesta: «tadaññaṃ vākyam iti ruḷhaṃ», lo otro [lo que no es compuesto] se conoce convencionalmente como vākya (Rū. §331); frente a ella, la forma compuesta se llama vutti (sutta 364; Nir. 261). La misma ṭīkā cita la diferencia entre ambas: «samāse visesanaṃ visessam anupavīsati ekībhavati visesanaṃ, vākye tu visesanaṃ visessato visuṃyevā vatiṭṭhate», en el compuesto el calificativo entra en lo calificado y se hace uno con él; en la frase permanece separado de lo calificado (Mogg-p-ṭ., p. 145).",
+    "en": "**The resolution (viggaha).** The resolution, also called viggaha-vākya, is the unfolded phrase, with the proper inflection of each member, of which the compound is the abbreviation. Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī) explains the term thus: “visesena gayhati ñāyaty anenā ti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ”, it is called viggaha because by means of it [the meaning] is grasped and known distinctly; or else viggaha is the distinct grasping, and the phrase that has that purpose is the viggaha-vākya (Mogg-p-ṭ., pp. 145–146). Rūpasiddhi calls the uncompounded expression vākya: “tadaññaṃ vākyam iti ruḷhaṃ”, the other [what is not a compound] is conventionally known as vākya (Rū. §331); in contrast to it, the compounded form is called vutti (sutta 364; Nir. 261). The same ṭīkā cites the difference between the two: “samāse visesanaṃ visessam anupavīsati ekībhavati visesanaṃ, vākye tu visesanaṃ visessato visuṃyevā vatiṭṭhate”, in the compound the qualifier enters into the qualified and becomes one with it; in the phrase it remains separate from the qualified (Mogg-p-ṭ., p. 145)."
    },
    "L": "0005b",
    "iebh": true,
@@ -92,8 +92,8 @@
   {
    "tipo": "p",
    "texto": {
-    "es": "Rūpasiddhi añade que también en el compuesto sin elisión pueden darse las dos agrupaciones, porque sus miembros llegan a ser una sola palabra: «tatth’ āpi vā ekapadattūpagamanato duvidham pi labbhat’ eva» (Rū. §331); lo mismo dice Nyāsa ad Kacc. §316. Saddanīti da como ejemplos de agrupación de significado en compuestos sin elisión «dūre-nidānaṃ», «gavam-pati», «urasi-lomo» y «devānaṃ-piya-Tisso» (Sad. (Smith p. 741)).",
-    "en": "Rūpasiddhi adds that the two combinations may also occur in the compound without elision, because its members come to be a single word: “tatth’ āpi vā ekapadattūpagamanato duvidham pi labbhat’ eva” (Rū. §331); Nyāsa ad Kacc. §316 says the same. Saddanīti gives as examples of combination of meaning in compounds without elision “dūre-nidānaṃ”, “gavam-pati”, “urasi-lomo” and “devānaṃ-piya-Tisso” (Sad. (Smith p. 741))."
+    "es": "Rūpasiddhi añade que también en el compuesto sin elisión pueden darse las dos agrupaciones, porque sus miembros llegan a ser una sola palabra: «tatthā pi vā ekapadattūpagamanato duvidham pi labbhat’ eva» (Rū. §331); lo mismo dice Nyāsa ad Kacc. §316. Saddanīti da como ejemplos de agrupación de significado en compuestos sin elisión «dūre-nidānaṃ», «gavam-pati», «urasi-lomo» y «devānaṃ-piya-Tisso» (Sad. (Smith p. 741)).",
+    "en": "Rūpasiddhi adds that the two combinations may also occur in the compound without elision, because its members come to be a single word: “tatthā pi vā ekapadattūpagamanato duvidham pi labbhat’ eva” (Rū. §331); Nyāsa ad Kacc. §316 says the same. Saddanīti gives as examples of combination of meaning in compounds without elision “dūre-nidānaṃ”, “gavam-pati”, “urasi-lomo” and “devānaṃ-piya-Tisso” (Sad. (Smith p. 741))."
    },
    "L": "0007b",
    "iebh": true,
@@ -180,6 +180,17 @@
    "iebh": true,
    "fuente": "Rūpasiddhi · Kaccāyana · Saddanīti · Suttaniddesa",
    "id": "intro-l0023b"
+  },
+  {
+   "tipo": "p",
+   "texto": {
+    "es": "Lo que se dice del género en cada clase («Este compuesto tiene el género…») procede de otra nota de Nandisena, «Qué género tienen cada uno de los seis compuestos» (6 de febrero de 2004). Coincide en lo esencial, y en el mismo orden, con el repaso del género con que U Sīlānanda cierra el capítulo de compuestos de Kaccāyana (clase de Kaccāyana n.º 10), salvo en dos precisiones propias de la nota («el género del primer miembro», «generalmente»); la grabación termina antes del compuesto copulativo. Las precisiones de las fuentes van en cada clase, rotuladas IEBH.",
+    "en": "What is said about gender in each class (“This compound has the gender…”) comes from another note by Nandisena, «Qué género tienen cada uno de los seis compuestos» (6 February 2004). It agrees in substance, and in the same order, with the review of gender with which U Sīlānanda closes the compound chapter of Kaccāyana (Kaccāyana class no. 10), except for two qualifications of the note’s own (“the gender of the first member”, “generally”); the recording ends before the copulative compound. The qualifications from the sources are given in each class, labelled IEBH."
+   },
+   "L": "0023e",
+   "iebh": true,
+   "fuente": "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004) · Kaccāyana · U Sīlānanda",
+   "id": "intro-l0023e"
   }
  ],
  "clases": [
@@ -235,6 +246,28 @@
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
      "id": "abyayibhava-l0030e"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Este compuesto tiene el género del primer miembro, neutro.",
+      "en": "This compound has the gender of the first member, neuter."
+     },
+     "L": "0030g",
+     "iebh": true,
+     "fuente": "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)",
+     "id": "abyayibhava-l0030g"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Nandisena dice «el género del primer miembro»; pero el primer miembro, un indeclinable, no tiene género propio: se llama abyaya porque no cambia aunque cambien el género y el número («liṅgavacanabhede pi byayarahitattā», Rū. §330). Lo que fija la regla es que el compuesto entero se considera neutro, aunque el último miembro sea femenino: adhikumāri, upavadhu, upagaṅgaṃ (Kacc. §320; Rū. §335). Saddanīti, al explicar por qué en este compuesto la palabra femenina no se trata como masculina, da la razón de fondo: el compuesto adverbial tiene la naturaleza del indeclinable y no toma el género ni el número de lo que designa («tassa avyayalakkhaṇattā anabhidheyyaliṅgavacanattā ca», Sad. (Smith p. 775)). Así lo explica también U Sīlānanda (clase de Kaccāyana n.º 7).",
+      "en": "Nandisena says “the gender of the first member”; but the first member, an indeclinable, has no gender of its own: it is called abyaya because it does not change even when gender and number change (“liṅgavacanabhede pi byayarahitattā”, Rū. §330). What fixes the rule is that the whole compound is regarded as neuter, even when the last member is feminine: adhikumāri, upavadhu, upagaṅgaṃ (Kacc. §320; Rū. §335). Saddanīti, explaining why in this compound the feminine word is not treated as masculine, gives the underlying reason: the adverbial compound has the nature of an indeclinable and does not take the gender or number of what it denotes (“tassa avyayalakkhaṇattā anabhidheyyaliṅgavacanattā ca”, Sad. (Smith p. 775)). U Sīlānanda explains it the same way (Kaccāyana class no. 7)."
+     },
+     "L": "0030j",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Saddanīti · U Sīlānanda",
+     "id": "abyayibhava-l0030j"
     },
     {
      "tipo": "p",
@@ -937,6 +970,17 @@
     {
      "tipo": "p",
      "texto": {
+      "es": "Este compuesto tiene el género del último miembro (generalmente).",
+      "en": "This compound has the gender of the last member (generally)."
+     },
+     "L": "0102b",
+     "iebh": true,
+     "fuente": "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)",
+     "id": "kammadharaya-l0102b"
+    },
+    {
+     "tipo": "p",
+     "texto": {
       "es": "El compuesto adjetivo (kammadhāraya) y el compuesto numérico (digu) reciben también el nombre de compuesto determinativo (tappurisa-samāsa) (Kacc. §326; Rū. §341), donde el significado del último miembro es predominante; además, el género está determinado por el último miembro y, a diferencia del compuesto adverbial, pueden ser singular y plural y asumir diferentes inflexiones.",
       "en": "The adjectival compound (kammadhāraya) and the numerical compound (digu) are also called determinative compound (tappurisa-samāsa) (Kacc. §326; Rū. §341), in which the meaning of the last member is predominant; moreover, the gender is determined by the last member and, unlike the adverbial compound, they can be singular and plural and take different inflections."
      },
@@ -953,6 +997,17 @@
      "iebh": true,
      "fuente": "Rūpasiddhi",
      "id": "kammadharaya-l0104b"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Niruttidīpanī lo dice también sin restricción («Ayam pi kammadhārayasamāso abhidheyyavacano parapadaliṅgo ca», Nir. 239). Cuando ambos miembros califican (visesanobhayapada), el último no tiene género propio y el compuesto toma el de lo que califica: «siniddho ca so uṇho cā ti siniddhuṇho», māso (Rū., p. 186); «sītañ ca taṃ uṇhañ cā ti sītuṇhaṃ», bhattaṃ (Sad. (Smith p. 753)). Y el compuesto numérico colectivo, que Nandisena incluye arriba con el adjetivo, no toma el género del último miembro: es neutro y singular (Kacc. §321; Rū. §349).",
+      "en": "Niruttidīpanī also states it without restriction (“Ayam pi kammadhārayasamāso abhidheyyavacano parapadaliṅgo ca”, Nir. 239). When both members qualify (visesanobhayapada), the last has no gender of its own and the compound takes that of what it qualifies: “siniddho ca so uṇho cā ti siniddhuṇho”, māso (Rū., p. 186); “sītañ ca taṃ uṇhañ cā ti sītuṇhaṃ”, bhattaṃ (Sad. (Smith p. 753)). And the collective numerical compound, which Nandisena includes above with the adjectival, does not take the gender of the last member: it is neuter and singular (Kacc. §321; Rū. §349)."
+     },
+     "L": "0104d",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī",
+     "id": "kammadharaya-l0104d"
     },
     {
      "tipo": "p",
@@ -3489,8 +3544,8 @@
     {
      "tipo": "p",
      "texto": {
-      "es": "Son Kacc. §333 (Rū. §344), «Attaṃ nassa tappurise», y Kacc. §334 (Rū. §345), «Sare an». Rūpasiddhi forma primero el compuesto adjetivo (na brāhmaṇo) y le da el nombre de compuesto determinativo por «Ubhe tappurisā» (Kacc. §326, Rū. §341), porque los dos suttas sólo actúan en un tappurisa.",
-      "en": "These are Kacc. §333 (Rū. §344), “Attaṃ nassa tappurise”, and Kacc. §334 (Rū. §345), “Sare an”. Rūpasiddhi first forms the adjectival compound (na brāhmaṇo) and gives it the name of determinative compound by “Ubhe tappurisā” (Kacc. §326, Rū. §341), because the two suttas operate only in a tappurisa."
+      "es": "Son Kacc. §333 (Rū. §344), «Attaṃ n’ assa tappurise», y Kacc. §334 (Rū. §345), «Sare an». Rūpasiddhi forma primero el compuesto adjetivo (na brāhmaṇo) y le da el nombre de compuesto determinativo por «Ubhe tappurisā» (Kacc. §326, Rū. §341), porque los dos suttas sólo actúan en un tappurisa.",
+      "en": "These are Kacc. §333 (Rū. §344), “Attaṃ n’ assa tappurise”, and Kacc. §334 (Rū. §345), “Sare an”. Rūpasiddhi first forms the adjectival compound (na brāhmaṇo) and gives it the name of determinative compound by “Ubhe tappurisā” (Kacc. §326, Rū. §341), because the two suttas operate only in a tappurisa."
      },
      "L": "0425b",
      "iebh": true,
@@ -3649,7 +3704,7 @@
     {
      "tipo": "p",
      "texto": {
-      "es": "Rūpasiddhi plantea la dificultad en una estrofa: «Na nisedho sato yutto, desādiniyamaṃ vinā; asato c’ āphalo tasmā, katham abrāhmaṇo ti ce?», no es apropiado negar lo que existe sin precisar el lugar, etc., y negar lo que no existe es inútil; entonces, ¿cómo [puede decirse] «abrāhmaṇo»? Y responde: «Nisedhatthānuvādena, paṭisedhavidhi kvaci; parassa micchāñāṇattā-khyāpanāyopapajjate», a veces la negación, repitiendo lo que se niega, es apropiada para hacer saber a otro que su conocimiento es erróneo (Rū. §344 (p. 187)). Como explica U Sīlānanda (clase de Rūpasiddhi n.º 43), se dice «no es un brahmán» a quien toma por brahmán a alguien que sólo lo parece; por eso concluye Rūpasiddhi: «abrāhmaṇo ti brāhmaṇasadiso ti vuttaṃ hoti», «abrāhmaṇo» quiere decir «semejante a un brahmán» (Rū. M p. 188).",
+      "es": "Rūpasiddhi plantea la dificultad en una estrofa: «Na nisedho sato yutto, desādiniyamaṃ vinā; asato c’ āphalo tasmā, katham abrāhmaṇo ti ce?», no es apropiado negar lo que existe sin precisar el lugar, etc., y negar lo que no existe es inútil; entonces, ¿cómo [puede decirse] «abrāhmaṇo»? Y responde: «Nisedhatthānuvādena, paṭisedhavidhi kvaci; parassa micchāñāṇattā-khyāpanāyopapajjate», a veces la negación, repitiendo lo que se niega, es apropiada para hacer saber a otro que su conocimiento es erróneo (Rū. §344 (p. 187)). Como explica U Sīlānanda (clase de Rūpasiddhi n.º 43), se dice «no es un brahmán» a quien toma por brahmán a alguien que sólo lo parece; por eso concluye Rūpasiddhi: «abrāhmaṇo ti brāhmaṇasadiso ti vuttaṃ hoti», «abrāhmaṇo» quiere decir «semejante a un brahmán» (Rū., p. 188).",
       "en": "Rūpasiddhi raises the difficulty in a stanza: “Na nisedho sato yutto, desādiniyamaṃ vinā; asato c’ āphalo tasmā, katham abrāhmaṇo ti ce?”, it is not appropriate to negate what exists without specifying the place, etc., and to negate what does not exist is useless; then how [can one say] “abrāhmaṇo”? And it answers: “Nisedhatthānuvādena, paṭisedhavidhi kvaci; parassa micchāñāṇattā-khyāpanāyopapajjate”, sometimes negation, repeating what is negated, is appropriate for making known to another that his knowledge is mistaken (Rū. §344 (p. 187)). As U Sīlānanda explains (Rūpasiddhi class no. 43), one says “he is not a brahmin” to someone who takes for a brahmin a person who only looks like one; that is why Rūpasiddhi concludes: “abrāhmaṇo ti brāhmaṇasadiso ti vuttaṃ hoti”, “abrāhmaṇo” means “resembling a brahmin” (Rū., p. 188)."
      },
      "L": "0452e",
@@ -4997,11 +5052,22 @@
     {
      "tipo": "p",
      "texto": {
-      "es": "Compuesto numérico no-colectivo. Este tipo de compuesto no expresa la totalidad sino los objetos individualmente. Puede tener terminación singular o plural. Ej., *tayo + bhavā* = *tibhavā* (los tres estadios de existencia).",
-      "en": "Non-collective numerical compound. This kind of compound does not express totality but the objects individually. It can have a singular or plural ending. E.g., *tayo + bhavā* = *tibhavā* (the three stages of existence)."
+      "es": "Compuesto numérico no-colectivo. Este tipo de compuesto no expresa la totalidad sino los objetos individualmente. Tiene el género del último miembro y terminación plural; con «eka» (uno), terminación singular: ekapuggalo, ekadhammo, ekaputto. Ej., *tayo + bhavā* = *tibhavā* (los tres estadios de existencia).",
+      "en": "Non-collective numerical compound. This kind of compound does not express totality but the objects individually. It has the gender of the last member and a plural ending; with “eka” (one), a singular ending: ekapuggalo, ekadhammo, ekaputto. E.g., *tayo + bhavā* = *tibhavā* (the three stages of existence)."
      },
      "L": "0704",
      "id": "digu-l0704"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "El compuesto numérico es también compuesto determinativo («Ubhe tappurisā», Kacc. §326; Rū. §341), y de éste dice Rūpasiddhi que toma el número de lo que designa y el género del último miembro («abhidheyyavacano, paraliṅgo ca», Rū. §341). Por eso, en los ejemplos de Rūpasiddhi del no colectivo, el número es el de las cosas contadas —singular con «eka»: ekapuggalo, ekadhammo, ekaputto; plural con los demás numerales: tibhavā, catuddisā, dasasahassacakkavāḷāni— y el género, el del último miembro: ekapuggalo, masculino; catuddisā, femenino; dasasahassacakkavāḷāni, neutro (Rū. §350). En el canon, en singular: «Ekadhammo, bhikkhave, bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattati» (A. i 31 (PTS i 30)).",
+      "en": "The numerical compound is also a determinative compound (“Ubhe tappurisā”, Kacc. §326; Rū. §341), and of the latter Rūpasiddhi says that it takes the number of what it denotes and the gender of the last member (“abhidheyyavacano, paraliṅgo ca”, Rū. §341). Hence, in Rūpasiddhi’s examples of the non-collective, the number is that of the things counted —singular with “eka”: ekapuggalo, ekadhammo, ekaputto; plural with the other numerals: tibhavā, catuddisā, dasasahassacakkavāḷāni— and the gender that of the last member: ekapuggalo, masculine; catuddisā, feminine; dasasahassacakkavāḷāni, neuter (Rū. §350). In the canon, in the singular: “Ekadhammo, bhikkhave, bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattati” (A. i 31 (PTS i 30))."
+     },
+     "L": "0704b",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Tipiṭaka",
+     "id": "digu-l0704b"
     },
     {
      "tipo": "interlineal",
@@ -5247,13 +5313,24 @@
     {
      "tipo": "p",
      "texto": {
-      "es": "Rūpasiddhi cuenta ocho clases de *tappurisa* («Digu dudhā tappuriso, aṭṭhadhā …», Rū., p. 215): estas seis, más el *amādipara-tappurisa* y el *alopa-tappurisa*, que aquí se tratan más abajo como «compuestos determinativos irregulares» y «compuestos determinativos donde la inflexión del primer miembro no se elide».",
-      "en": "Rūpasiddhi counts eight kinds of *tappurisa* (“Digu dudhā tappuriso, aṭṭhadhā …”, Rū., p. 215): these six, plus the *amādipara-tappurisa* and the *alopa-tappurisa*, which are treated further below as “irregular determinative compounds” and “determinative compounds in which the inflection of the first member is not elided”."
+      "es": "Este compuesto tiene el género del último miembro.",
+      "en": "This compound has the gender of the last member."
      },
      "L": "0746b",
      "iebh": true,
-     "fuente": "Rūpasiddhi",
+     "fuente": "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004) · Niruttidīpanī",
      "id": "tappurisa-l0746b"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Rūpasiddhi cuenta ocho clases de *tappurisa* («Digu dudhā tappuriso, aṭṭhadhā …», Rū., p. 215): estas seis, más el *amādipara-tappurisa* y el *alopa-tappurisa*, que aquí se tratan más abajo como «compuestos determinativos irregulares» y «compuestos determinativos donde la inflexión del primer miembro no se elide».",
+      "en": "Rūpasiddhi counts eight kinds of *tappurisa* (“Digu dudhā tappuriso, aṭṭhadhā …”, Rū., p. 215): these six, plus the *amādipara-tappurisa* and the *alopa-tappurisa*, which are treated further below as “irregular determinative compounds” and “determinative compounds in which the inflection of the first member is not elided”."
+     },
+     "L": "0746e",
+     "iebh": true,
+     "fuente": "Rūpasiddhi",
+     "id": "tappurisa-l0746e"
     },
     {
      "tipo": "p",
@@ -5278,13 +5355,24 @@
     {
      "tipo": "p",
      "texto": {
+      "es": "Niruttidīpanī da además una excepción, tomada de Moggallāna, que la formula con las mismas palabras: en el compuesto determinativo en la sexta inflexión con «chāyā» (sombra) y «sabhā» (asamblea), a veces el compuesto es neutro y singular («Kvac’ ekattañ ca chaṭṭhiyā», Nir. 256; Moggallāna, p. 128): salabhānaṃ chāyā salabhacchāyaṃ, sakaṭacchāyaṃ, gharacchāyaṃ, pero rukkhacchāyā, pabbatacchāyā; brahmūnaṃ sabhā brahmasabhaṃ, devasabhaṃ, pero, si la asamblea es de seres humanos, khattiyasabhā, rājasabhā. Rūpasiddhi y Kaccāyana no tienen esta regla, y fuera de las gramáticas estas formas sólo aparecen en acusativo, femenino donde se distingue: «sudhammaṃ devasabhaṃ» (S. ii 404 (PTS iv 202)).",
+      "en": "Niruttidīpanī also gives an exception, taken from Moggallāna, who states it in the same words: in the determinative compound in the sixth inflection with “chāyā” (shade) and “sabhā” (assembly), the compound is sometimes neuter and singular (“Kvac’ ekattañ ca chaṭṭhiyā”, Nir. 256; Moggallāna, p. 128): salabhānaṃ chāyā salabhacchāyaṃ, sakaṭacchāyaṃ, gharacchāyaṃ, but rukkhacchāyā, pabbatacchāyā; brahmūnaṃ sabhā brahmasabhaṃ, devasabhaṃ, but, if the assembly is of human beings, khattiyasabhā, rājasabhā. Rūpasiddhi and Kaccāyana do not have this rule, and outside the grammars these forms occur only in the accusative, feminine where it can be told: “sudhammaṃ devasabhaṃ” (S. ii 404 (PTS iv 202))."
+     },
+     "L": "0748d",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Niruttidīpanī · Moggallāna · Tipiṭaka",
+     "id": "tappurisa-l0748d"
+    },
+    {
+     "tipo": "p",
+     "texto": {
       "es": "«saraṇagato» está atestiguado en Mahāniddesa: «… leṇagato leṇappatto saraṇagato saraṇappatto …» (Nidd. I 16 (PTS i 20)). La frase sin componer es la fórmula común: «buddhaṃ saraṇaṃ gato hoti» (citada en DA. i 209 (PTS i 234)).",
       "en": "“saraṇagato” is attested in the Mahāniddesa: “… leṇagato leṇappatto saraṇagato saraṇappatto …” (Nidd. I 16 (PTS i 20)). The uncompounded phrase is the common formula: “buddhaṃ saraṇaṃ gato hoti” (quoted in DA. i 209 (PTS i 234))."
      },
-     "L": "0748e",
+     "L": "0748h",
      "iebh": true,
      "fuente": "Tipiṭaka · Aṭṭhakathā",
-     "id": "tappurisa-l0748e"
+     "id": "tappurisa-l0748h"
     },
     {
      "tipo": "h",
@@ -9272,6 +9360,17 @@
     {
      "tipo": "p",
      "texto": {
+      "es": "Este compuesto tiene el género de la otra palabra (aññapada).",
+      "en": "This compound has the gender of the other word (aññapada)."
+     },
+     "L": "0983b",
+     "iebh": true,
+     "fuente": "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004) · Rūpasiddhi · Kaccāyana · U Sīlānanda",
+     "id": "bahubbihi-l0983b"
+    },
+    {
+     "tipo": "p",
+     "texto": {
       "es": "Cualquier tipo de compuesto, adverbial, adjetivo, numérico, determinativo y copulativo, si es usado como adjetivo, se convierte en un compuesto relativo. El compuesto relativo debe concordar en número, género y caso gramatical con el nombre que califica.",
       "en": "Any kind of compound, adverbial, adjectival, numerical, determinative and copulative, if it is used as an adjective, becomes a relative compound. The relative compound must agree in number, gender and grammatical case with the noun it qualifies."
      },
@@ -11999,8 +12098,8 @@
      "L_resolucion": "1102e",
      "anexos": [
       {
-       "es": "Na pasa a a por «Attaṃ nassa tappurise» (Kacc. §333), tomado aparte (yogavibhāga).",
-       "en": "Na becomes a by “Attaṃ nassa tappurise” (Kacc. §333), taken separately (yogavibhāga).",
+       "es": "Na pasa a a por «Attaṃ n’ assa tappurise» (Kacc. §333), tomado aparte (yogavibhāga).",
+       "en": "Na becomes a by “Attaṃ n’ assa tappurise” (Kacc. §333), taken separately (yogavibhāga).",
        "fuente": "Rūpasiddhi · Kaccāyana · Tipiṭaka",
        "L": "1102f"
       }
@@ -12842,13 +12941,35 @@
      "id": "dvanda-l1125n"
     },
     {
+     "tipo": "p",
+     "texto": {
+      "es": "Este compuesto tiene el género de ambos miembros.",
+      "en": "This compound has the gender of both members."
+     },
+     "L": "1125p",
+     "iebh": true,
+     "fuente": "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)",
+     "id": "dvanda-l1125p"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Las gramáticas lo precisan así. En el compuesto copulativo individual, el compuesto toma el género del último miembro («parass’ eva liṅgañ ca», Rū. §357 (p. 209); «ekattābhāve bahuvacanaṃ, parass’ eva liṅgañ ca», Rū. §360 (p. 213)): mātāpitaro, masculino, como pitā; bhikkhubhikkhuniyo, femenino, como bhikkhunī («evam eva mayhaṃ bhikkhubhikkhuniyo», S. ii 501 (PTS iv 315)). En el colectivo es neutro y singular, sea cual sea el género de los miembros: mukhanāsikaṃ, de mukha, neutro, y nāsikā, femenino (Kacc. §322; Rū. §359). La frase de Nandisena se cumple tal cual sólo en el individual cuyos dos miembros tienen el mismo género: Sāriputtamoggallānā, samaṇabrāhmaṇā.",
+      "en": "The grammars qualify it as follows. In the individual copulative compound, the compound takes the gender of the last member (“parass’ eva liṅgañ ca”, Rū. §357 (p. 209); “ekattābhāve bahuvacanaṃ, parass’ eva liṅgañ ca”, Rū. §360 (p. 213)): mātāpitaro, masculine, like pitā; bhikkhubhikkhuniyo, feminine, like bhikkhunī (“evam eva mayhaṃ bhikkhubhikkhuniyo”, S. ii 501 (PTS iv 315)). In the collective it is neuter and singular, whatever the gender of the members: mukhanāsikaṃ, from mukha, neuter, and nāsikā, feminine (Kacc. §322; Rū. §359). Nandisena’s sentence holds as it stands only in the individual compound whose two members have the same gender: Sāriputtamoggallānā, samaṇabrāhmaṇā."
+     },
+     "L": "1125s",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Tipiṭaka",
+     "id": "dvanda-l1125s"
+    },
+    {
      "tipo": "h",
      "nivel": 2,
      "texto": {
       "es": "(1) Individual (itarītarayoga-dvanda)",
       "en": "(1) Individual (itarītarayoga-dvanda)"
      },
-     "L": "1125r",
+     "L": "1125x",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana · Moggallāna",
      "id": "dvanda-itaritarayoga-dvanda"
@@ -12859,10 +12980,10 @@
       "es": "En este tipo cada miembro conserva su propio significado y es predominante (avayavappadhāna); por eso el compuesto está siempre en plural [salvo cuando depende de «yuga», par: véase la nota], en todas las inflexiones, y tiene el género del último miembro: *Sāriputtamoggallānā*, *Sāriputtamoggallāne*, *Sāriputtamoggallānehi*, etc. (Rū. §357)[^14]",
       "en": "In this type each member keeps its own meaning and predominates (avayavappadhāna); that is why the compound is always in the plural [except when it depends on “yuga”, pair: see the note], in all the inflections, and has the gender of the last member: *Sāriputtamoggallānā*, *Sāriputtamoggallāne*, *Sāriputtamoggallānehi*, etc. (Rū. §357)[^14]"
      },
-     "L": "1125t",
+     "L": "1125z",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana · Moggallāna",
-     "id": "dvanda-l1125t"
+     "id": "dvanda-l1125z"
     },
     {
      "tipo": "ejemplos",
@@ -12967,11 +13088,11 @@
        "en": "translation"
       }
      ],
-     "L": "1125v",
-     "hasta": "1125ae",
+     "L": "1125ab",
+     "hasta": "1125ak",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana · Moggallāna",
-     "id": "dvanda-l1125v"
+     "id": "dvanda-l1125ab"
     },
     {
      "tipo": "p",
@@ -12979,10 +13100,10 @@
       "es": "En *mātāpitaro* y *pitāputtā* la *u* final del primer miembro (*mātu*, *pitu*) se convierte en *ā* en el compuesto copulativo, por la regla *Tesu vuddhi…* (Kacc. §404; Rū. §370).",
       "en": "In *mātāpitaro* and *pitāputtā* the final *u* of the first member (*mātu*, *pitu*) becomes *ā* in the copulative compound, by the rule *Tesu vuddhi…* (Kacc. §404; Rū. §370)."
      },
-     "L": "1125ag",
+     "L": "1125am",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana · Moggallāna",
-     "id": "dvanda-l1125ag"
+     "id": "dvanda-l1125am"
     },
     {
      "tipo": "p",
@@ -12990,10 +13111,10 @@
       "es": "Orden de los miembros. Generalmente el miembro más venerable (accitatara) se coloca primero: *Sāriputtamoggallānā*, *samaṇabrāhmaṇā*, *devamanussā*, *mātāpitaro*. A veces se coloca primero el miembro de menos vocales (appasara): *cando ca sūriyo ca* = *candasūriyā*, la luna y el sol; *nigamā ca janapadā ca* = *nigamajanapadā*, pueblos y distritos. A veces se coloca primero el miembro terminado en *i* o en *u*: *aggi ca dhūmo ca* = *aggidhūmā*, fuego y humo; *dhātavo ca liṅgāni ca* = *dhātuliṅgāni*, raíces y bases. A veces, entre miembros terminados en *a*, se coloca primero el que empieza con vocal: *attho ca dhammo ca* = *atthadhammā*, el significado y el Dhamma; también *atthasaddā* o *saddatthā*, el significado y la palabra. Cuando los miembros son muchos, no hay un orden fijo. (Rū. §357–§358)",
       "en": "Order of the members. Generally the more honoured member (accitatara) is placed first: *Sāriputtamoggallānā*, *samaṇabrāhmaṇā*, *devamanussā*, *mātāpitaro*. Sometimes the member with fewer vowels (appasara) is placed first: *cando ca sūriyo ca* = *candasūriyā*, the moon and the sun; *nigamā ca janapadā ca* = *nigamajanapadā*, towns and districts. Sometimes the member ending in *i* or in *u* is placed first: *aggi ca dhūmo ca* = *aggidhūmā*, fire and smoke; *dhātavo ca liṅgāni ca* = *dhātuliṅgāni*, roots and bases. Sometimes, between members ending in *a*, the one beginning with a vowel is placed first: *attho ca dhammo ca* = *atthadhammā*, the meaning and the Dhamma; also *atthasaddā* or *saddatthā*, the meaning and the word. When the members are many, there is no fixed order. (Rū. §357–§358)"
      },
-     "L": "1125ak",
+     "L": "1125aq",
      "iebh": true,
      "fuente": "Rūpasiddhi",
-     "id": "dvanda-l1125ak"
+     "id": "dvanda-l1125aq"
     },
     {
      "tipo": "p",
@@ -13009,10 +13130,10 @@
       "es": "En el compuesto copulativo [generalmente] va primero [el miembro] más venerable y el de menos vocales; a veces, el terminado en *i* o en *u*; [y] el terminado en *a* que empieza con vocal; cuando son muchos, no hay regla fija.",
       "en": "In the copulative compound [generally] the more honoured [member] and the one with fewer vowels come first; sometimes, the one ending in *i* or in *u*; [and] the one ending in *a* that begins with a vowel; when they are many, there is no fixed rule."
      },
-     "L": "1125am",
+     "L": "1125as",
      "iebh": true,
      "fuente": "Rūpasiddhi",
-     "id": "dvanda-l1125am"
+     "id": "dvanda-l1125as"
     },
     {
      "tipo": "p",
@@ -13020,21 +13141,21 @@
       "es": "Cuando sigue *pati*, esposo, a *jāyā*, esposa, a veces se reemplaza por *tudaṃ* o por *jāni* (Kacc. §339; Rū. §358): *jāyā ca pati ca* = *tudaṃpati*, *jānipati*, esposa y esposo. También *jayampatikā*, donde se añade el niggahīta y se acorta la vocal.[^15]",
       "en": "When *pati*, husband, follows *jāyā*, wife, it is sometimes replaced by *tudaṃ* or by *jāni* (Kacc. §339; Rū. §358): *jāyā ca pati ca* = *tudaṃpati*, *jānipati*, wife and husband. Also *jayampatikā*, where the niggahīta is added and the vowel is shortened.[^15]"
      },
-     "L": "1125ap",
+     "L": "1125av",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125ap"
+     "id": "dvanda-l1125av"
     },
     {
      "tipo": "p",
      "texto": {
-      "es": "Moggallāna no admite «tudaṃpati». Da «jayampatī», y «jānipatī», «dampatī», «jampatī» como palabras distintas, no como sustituciones de «jāyā»: «‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti» (Moggallāna, p. 137). Según su ṭīkā, la Pañcikā excluye expresamente el uso «tudampati», y con «aññehi ca», «y por otros», se refiere a Rūpasiddhi: «nā ’yam payogo ti tudampatippayogaṃ nivattetvā … aññehi cā ti iminā rūpasiddhiṃ gaṇhāti» (Moggallāna-pañcikā-ṭīkā, M p. 185).",
-      "en": "Moggallāna does not admit “tudaṃpati”. He gives “jayampatī”, and “jānipatī”, “dampatī”, “jampatī” as distinct words, not as substitutions of “jāyā”: “‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti” (Moggallāna, p. 137). According to its ṭīkā, the Pañcikā expressly excludes the usage “tudampati”, and with “aññehi ca”, “and by others”, refers to Rūpasiddhi: “nā ’yam payogo ti tudampatippayogaṃ nivattetvā … aññehi cā ti iminā rūpasiddhiṃ gaṇhāti” (Moggallāna-pañcikā-ṭīkā, M p. 185)."
+      "es": "Moggallāna no admite «tudaṃpati». Da «jayampatī», y «jānipatī», «dampatī», «jampatī» como palabras distintas, no como sustituciones de «jāyā»: «‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti» (Moggallāna, p. 137). Según su ṭīkā, la Pañcikā excluye expresamente el uso «tudampati», y con «aññehi ca», «y por otros», se refiere a Rūpasiddhi: «nā ’yam payogo ti tudampatippayogaṃ nivattetvā … aññehi cā ti iminā rūpasiddhiṃ gaṇhāti» (Mogg-p-ṭ., p. 185).",
+      "en": "Moggallāna does not admit “tudaṃpati”. He gives “jayampatī”, and “jānipatī”, “dampatī”, “jampatī” as distinct words, not as substitutions of “jāyā”: “‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti” (Moggallāna, p. 137). According to its ṭīkā, the Pañcikā expressly excludes the usage “tudampati”, and with “aññehi ca”, “and by others”, refers to Rūpasiddhi: “nā ’yam payogo ti tudampatippayogaṃ nivattetvā … aññehi cā ti iminā rūpasiddhiṃ gaṇhāti” (Mogg-p-ṭ., p. 185)."
      },
-     "L": "1125at",
+     "L": "1125az",
      "iebh": true,
      "fuente": "Rūpasiddhi · Moggallāna-pañcikā-ṭīkā · Moggallāna",
-     "id": "dvanda-l1125at"
+     "id": "dvanda-l1125az"
     },
     {
      "tipo": "h",
@@ -13043,7 +13164,7 @@
       "es": "(2) Colectivo (samāhāra-dvanda)",
       "en": "(2) Collective (samāhāra-dvanda)"
      },
-     "L": "1125aw",
+     "L": "1125bc",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
      "id": "dvanda-samahara-dvanda"
@@ -13054,10 +13175,10 @@
       "es": "Compuesto copulativo colectivo. Los miembros se toman como un conjunto y no individualmente; por eso, igual que el compuesto numérico colectivo (samāhāra-digu), este compuesto está en singular y en género neutro. Ej., *cakkhu ca sotañ ca* = *cakkhusotaṃ*, ojo y oído. (Kacc. §322; Rū. §359)",
       "en": "Collective copulative compound. The members are taken as a whole and not individually; that is why, like the collective numerical compound (samāhāra-digu), this compound is in the singular and in the neuter gender. E.g., *cakkhu ca sotañ ca* = *cakkhusotaṃ*, eye and ear. (Kacc. §322; Rū. §359)"
      },
-     "L": "1125ay",
+     "L": "1125be",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125ay"
+     "id": "dvanda-l1125be"
     },
     {
      "tipo": "p",
@@ -13065,10 +13186,10 @@
       "es": "Se declina en singular según el paradigma de *tilokaṃ*, aplicable a todos los compuestos colectivos (véase el compuesto numérico): *cakkhusotaṃ, he cakkhusota, cakkhusotaṃ, cakkhusotena*, etc. (Rū. §359).[^16]",
       "en": "It is declined in the singular following the paradigm of *tilokaṃ*, which applies to all collective compounds (see the numerical compound): *cakkhusotaṃ, he cakkhusota, cakkhusotaṃ, cakkhusotena*, etc. (Rū. §359).[^16]"
      },
-     "L": "1125ba",
+     "L": "1125bg",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125ba"
+     "id": "dvanda-l1125bg"
     },
     {
      "tipo": "p",
@@ -13076,10 +13197,10 @@
       "es": "El compuesto copulativo es colectivo, por regla y no facultativamente, cuando sus miembros significan partes de los seres, instrumentos musicales, partes de un vehículo, partes de un ejército, criaturas pequeñas, diversos enemigos y cosas distintas pero afines (visabhāga),[^17] etc. (*Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca*, Kacc. §322; Rū. §359). Sin embargo, formas como *hatthapādā*, manos y pies, y *maṃsalohitāni*, carne y sangre, se explican como compuesto copulativo individual (Rū. §359).[^18]",
       "en": "The copulative compound is collective, by rule and not facultatively, when its members signify parts of beings, musical instruments, parts of a vehicle, parts of an army, small creatures, different enemies and things different but alike (visabhāga),[^17] etc. (*Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca*, Kacc. §322; Rū. §359). However, forms such as *hatthapādā*, hands and feet, and *maṃsalohitāni*, flesh and blood, are explained as an individual copulative compound (Rū. §359).[^18]"
      },
-     "L": "1125be",
+     "L": "1125bk",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125be"
+     "id": "dvanda-l1125bk"
     },
     {
      "tipo": "ejemplos",
@@ -13308,11 +13429,11 @@
        "en": "translation"
       }
      ],
-     "L": "1125bg",
-     "hasta": "1125bz",
+     "L": "1125bm",
+     "hasta": "1125cf",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125bg"
+     "id": "dvanda-l1125bm"
     },
     {
      "tipo": "p",
@@ -13320,10 +13441,10 @@
       "es": "Por la palabra *ādi*, etc., del aforismo, Rūpasiddhi incluye también: nombres que se distinguen por el género (aññoññaliṅgavisesita), números y medidas (saṅkhyāparimāṇa), gente de baja condición (pacanacaṇḍāla) y direcciones (disā). (Rū. §359)",
       "en": "By the word *ādi*, etc., of the aphorism, Rūpasiddhi also includes: nouns distinguished by gender (aññoññaliṅgavisesita), numbers and measures (saṅkhyāparimāṇa), people of low standing (pacanacaṇḍāla) and directions (disā). (Rū. §359)"
      },
-     "L": "1125cd",
+     "L": "1125cj",
      "iebh": true,
      "fuente": "Rūpasiddhi",
-     "id": "dvanda-l1125cd"
+     "id": "dvanda-l1125cj"
     },
     {
      "tipo": "ejemplos",
@@ -13468,11 +13589,11 @@
        "en": "translation"
       }
      ],
-     "L": "1125cf",
-     "hasta": "1125cr",
+     "L": "1125cl",
+     "hasta": "1125cx",
      "iebh": true,
      "fuente": "Rūpasiddhi",
-     "id": "dvanda-l1125cf"
+     "id": "dvanda-l1125cl"
     },
     {
      "tipo": "p",
@@ -13480,10 +13601,10 @@
       "es": "En los compuestos de números el número menor va primero: *ekakadukaṃ*, *dukatikaṃ*, *tikacatukkaṃ*. En *dāsidāsaṃ* se acorta la vocal del medio (*dāsī* → *dāsi*).",
       "en": "In compounds of numbers the smaller number comes first: *ekakadukaṃ*, *dukatikaṃ*, *tikacatukkaṃ*. In *dāsidāsaṃ* the middle vowel is shortened (*dāsī* → *dāsi*)."
      },
-     "L": "1125ct",
+     "L": "1125cz",
      "iebh": true,
      "fuente": "Rūpasiddhi",
-     "id": "dvanda-l1125ct"
+     "id": "dvanda-l1125cz"
     },
     {
      "tipo": "p",
@@ -13491,10 +13612,10 @@
       "es": "En «pacanacaṇḍāla», «pacana» no es aquí «cocinar». Según U Sīlānanda (clase de Rūpasiddhi n.º 50), se dice en sentido figurado de los que dañan a otros seres, como si los quemaran, como los que matan ovejas, cerdos, aves y animales de caza (orabbhika, sūkarika, sākuṇika, māgavika); y «caṇḍāla» es el nombre de un grupo de gente que hacía trabajos despreciables, como cuidar los cementerios y quemar los cadáveres. Rūpasiddhi y Niruttidīpanī dan la clase y sus ejemplos sin explicar el nombre (Rū. §359 (p. 212); Niruttidīpanī p. 135).",
       "en": "In “pacanacaṇḍāla”, “pacana” does not mean “cooking” here. According to U Sīlānanda (Rūpasiddhi class no. 50), it is said figuratively of those who harm other beings, as if they burned them, such as those who kill sheep, pigs, birds and game animals (orabbhika, sūkarika, sākuṇika, māgavika); and “caṇḍāla” is the name of a group of people who did despised work, such as tending the cemeteries and burning the corpses. Rūpasiddhi and Niruttidīpanī give the class and its examples without explaining the name (Rū. §359 (p. 212); Niruttidīpanī p. 135)."
      },
-     "L": "1125cx",
+     "L": "1125dd",
      "iebh": true,
      "fuente": "Rūpasiddhi · Niruttidīpanī · U Sīlānanda",
-     "id": "dvanda-l1125cx"
+     "id": "dvanda-l1125dd"
     },
     {
      "tipo": "p",
@@ -13502,10 +13623,10 @@
       "es": "Con los nombres de árboles, hierbas, animales, riquezas, granos y distritos, etc., el compuesto copulativo es colectivo facultativamente: está en singular y en género neutro o, si no, en plural y con el género del último miembro (*Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca*, Kacc. §323; Rū. §360).",
       "en": "With the names of trees, grasses, animals, wealth, grains and districts, etc., the copulative compound is facultatively collective: it is in the singular and in the neuter gender or, otherwise, in the plural and with the gender of the last member (*Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca*, Kacc. §323; Rū. §360)."
      },
-     "L": "1125da",
+     "L": "1125dg",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125da"
+     "id": "dvanda-l1125dg"
     },
     {
      "tipo": "ejemplos",
@@ -13626,11 +13747,11 @@
        "en": "translation"
       }
      ],
-     "L": "1125dc",
-     "hasta": "1125dm",
+     "L": "1125di",
+     "hasta": "1125ds",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125dc"
+     "id": "dvanda-l1125di"
     },
     {
      "tipo": "p",
@@ -13638,10 +13759,10 @@
       "es": "Por la palabra *ādi*, etc., Rūpasiddhi incluye aquí también los opuestos (aññoññappaṭipakkhadhamma) y las aves (sakuṇa):[^20]",
       "en": "By the word *ādi*, etc., Rūpasiddhi here also includes opposites (aññoññappaṭipakkhadhamma) and birds (sakuṇa):[^20]"
      },
-     "L": "1125do",
+     "L": "1125du",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125do"
+     "id": "dvanda-l1125du"
     },
     {
      "tipo": "ejemplos",
@@ -13726,11 +13847,22 @@
        "en": "translation"
       }
      ],
-     "L": "1125dq",
-     "hasta": "1125dx",
+     "L": "1125dw",
+     "hasta": "1125ed",
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
-     "id": "dvanda-l1125dq"
+     "id": "dvanda-l1125dw"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Para las precisiones de las fuentes sobre el género véase cada clase: en el compuesto adverbial es el compuesto entero el que se considera neutro (Kacc. §320; Rū. §335); el compuesto numérico no colectivo va en singular con «eka» (ekapuggalo, Rū. §350); en el compuesto copulativo, Rūpasiddhi da el género del último miembro para el individual y el neutro singular para el colectivo (Rū. §357; Rū. §359).",
+      "en": "For the qualifications from the sources on gender, see each class: in the adverbial compound it is the whole compound that is regarded as neuter (Kacc. §320; Rū. §335); the non-collective numerical compound is singular with “eka” (ekapuggalo, Rū. §350); in the copulative compound, Rūpasiddhi gives the gender of the last member for the individual and the neuter singular for the collective (Rū. §357; Rū. §359)."
+     },
+     "L": "1139b",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "id": "dvanda-l1139b"
     }
    ],
    "ref": "Kacc. §329; Rū. §357 (pp. 207–208); Sad. (Smith p. 767)"
@@ -13758,6 +13890,10 @@
    {
     "es": "Significado",
     "en": "Meaning"
+   },
+   {
+    "es": "Género",
+    "en": "Gender"
    }
   ],
   "filas": [
@@ -13781,6 +13917,10 @@
     {
      "es": "cerca de la ciudad",
      "en": "near the city"
+    },
+    {
+     "es": "el género del primer miembro, neutro",
+     "en": "the gender of the first member, neuter"
     }
    ],
    [
@@ -13803,6 +13943,10 @@
     {
      "es": "el maestro Buddhaghosa",
      "en": "the teacher Buddhaghosa"
+    },
+    {
+     "es": "el género del último miembro (generalmente)",
+     "en": "the gender of the last member (generally)"
     }
    ],
    [
@@ -13825,6 +13969,10 @@
     {
      "es": "los tres mundos",
      "en": "the three worlds"
+    },
+    {
+     "es": "colectivo (samāhāra-digu): neutro singular; no colectivo (asamāhāra-digu): el género del último miembro y es plural",
+     "en": "collective (samāhāra-digu): neuter singular; non-collective (asamāhāra-digu): the gender of the last member, and plural"
     }
    ],
    [
@@ -13847,6 +13995,10 @@
     {
      "es": "hijo del rey",
      "en": "son of the king"
+    },
+    {
+     "es": "el género del último miembro",
+     "en": "the gender of the last member"
     }
    ],
    [
@@ -13869,6 +14021,10 @@
     {
      "es": "(hombre) cuyas manos han sido cortadas",
      "en": "(a man) whose hands have been cut off"
+    },
+    {
+     "es": "el género de la otra palabra (aññapada)",
+     "en": "the gender of the other word (aññapada)"
     }
    ],
    [
@@ -13891,10 +14047,15 @@
     {
      "es": "Sāriputta y Moggallāna",
      "en": "Sāriputta and Moggallāna"
+    },
+    {
+     "es": "el género de ambos miembros",
+     "en": "the gender of both members"
     }
    ]
   ],
   "significado": true,
+  "cols_pali": 4,
   "filas_iebh": [
    2,
    3,
@@ -14038,28 +14199,28 @@
    "es": "Moggallāna da para las dos primeras otros ejemplos: *dhave ca khadire ca palāse ca chinda*, corta los dhava, los khadira y los palāsa (colección simple), y *bhikkhañ cara gāvo cānaye*, ve por limosna y trae las vacas (adición secundaria). Niruttidīpanī (sutta 357; Nir. 251) no acepta del todo la restricción: la colección simple también forma compuesto, como en *cīvarapiṇḍapātasenāsanagilānappaccayabhesajjaparikkhārānaṃ* (M. i 39 (PTS i 33)), y también la adición secundaria, como en *mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā* (D. i 5 (PTS i 5)).",
    "en": "For the first two Moggallāna gives other examples: *dhave ca khadire ca palāse ca chinda*, cut the dhava, the khadira and the palāsa (simple collection), and *bhikkhañ cara gāvo cānaye*, go for alms and bring the cows (secondary addition). Niruttidīpanī (sutta 357; Nir. 251) does not wholly accept the restriction: simple collection also forms a compound, as in *cīvarapiṇḍapātasenāsanagilānappaccayabhesajjaparikkhārānaṃ* (M. i 39 (PTS i 33)), and so does secondary addition, as in *mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā* (D. i 5 (PTS i 5)).",
    "iebh": true,
-   "L": "1125p",
+   "L": "1125v",
    "fuente": "Niruttidīpanī · Moggallāna · Tipiṭaka"
   },
   "14": {
    "es": "En el canon: *Pesalā Sāriputtamoggallānā*, Sāriputta y Moggallāna son de buena conducta (S. i 151 (PTS i 149)), y el locativo *Sāriputtamoggallānesu* en el mismo pasaje; *Yathā vā pan’ eke bhonto samaṇabrāhmaṇā* (D. i 6 (PTS i 6)); *tāva naṃ dakkhanti devamanussā*, mientras tanto lo verán los devas y los seres humanos (D. i 42 (PTS i 46)); *yato ca candimasūriyā uggacchanti* (D. i 226 (PTS i 240)); *mātāpitaro sukhenti pīṇenti* (D. i 48 (PTS i 51)). Cuando el compuesto depende de *yuga*, par, el canon lo usa en singular: *Sāriputtamoggallānaṃ nāma sāvakayugaṃ*, el par de discípulos llamado Sāriputta y Moggallāna (D. ii 4 (PTS ii 5)); Saddanīti lo señala (Sad. (Smith p. 768)).",
    "en": "In the canon: *Pesalā Sāriputtamoggallānā*, Sāriputta and Moggallāna are of good conduct (S. i 151 (PTS i 149)), and the locative *Sāriputtamoggallānesu* in the same passage; *Yathā vā pan’ eke bhonto samaṇabrāhmaṇā* (D. i 6 (PTS i 6)); *tāva naṃ dakkhanti devamanussā*, for so long will devas and human beings see him (D. i 42 (PTS i 46)); *yato ca candimasūriyā uggacchanti* (D. i 226 (PTS i 240)); *mātāpitaro sukhenti pīṇenti* (D. i 48 (PTS i 51)). When the compound depends on *yuga*, pair, the canon uses it in the singular: *Sāriputtamoggallānaṃ nāma sāvakayugaṃ*, the pair of disciples named Sāriputta and Moggallāna (D. ii 4 (PTS ii 5)); Saddanīti points this out (Sad. (Smith p. 768)).",
    "iebh": true,
-   "L": "1125ai",
+   "L": "1125ao",
    "fuente": "Saddanīti · Moggallāna · Tipiṭaka"
   },
   "15": {
    "es": "En el canon aparecen en plural, como compuestos copulativos individuales: *dve jāyampatikā*, dos esposos (S. i 322 (PTS ii 98)), donde la edición del VRI lee *jāyampatikā* y anota la variante *jayampatikā*; y *Te honti jānipatayo* (A. i 370 (PTS ii 59)). *Tudaṃpati* no se encuentra en los textos canónicos de la edición del Sexto Concilio; sólo en las gramáticas y en una ṭīkā que remite a Kaccāyana.",
    "en": "In the canon they appear in the plural, as individual copulative compounds: *dve jāyampatikā*, two spouses (S. i 322 (PTS ii 98)), where the VRI edition reads *jāyampatikā* and notes the variant *jayampatikā*; and *Te honti jānipatayo* (A. i 370 (PTS ii 59)). *Tudaṃpati* is not found in the canonical texts of the Sixth Council edition; only in the grammars and in a ṭīkā that refers to Kaccāyana.",
    "iebh": true,
-   "L": "1125ar",
+   "L": "1125ax",
    "fuente": "Kaccāyana · Tipiṭaka"
   },
   "16": {
    "es": "En el canon: *Aguttaṃ cakkhusotasmiṃ*, desprotegido en el ojo y el oído (A. i 284 (PTS i 281)), con la séptima inflexión singular del paradigma. Rūpasiddhi advierte que a veces el compuesto colectivo no es neutro, como lo muestra la forma *aṃmo* del aforismo *Aṃ-mo niggahitaṃ jha-la-pehi* (Kacc. §82; Rū. §149); así *ādhipaccaparivāro*, *chandapārisuddhi*, *paṭisandhippavattiyaṃ* (Rū. §359). Suttaniddesa da también *cittuppādo* (Suttaniddesa, ad Kacc. §82).",
    "en": "In the canon: *Aguttaṃ cakkhusotasmiṃ*, unguarded in the eye and the ear (A. i 284 (PTS i 281)), with the seventh inflection singular of the paradigm. Rūpasiddhi notes that sometimes the collective compound is not neuter, as the form *aṃmo* of the aphorism *Aṃ-mo niggahitaṃ jha-la-pehi* (Kacc. §82; Rū. §149) shows; thus *ādhipaccaparivāro*, *chandapārisuddhi*, *paṭisandhippavattiyaṃ* (Rū. §359). Suttaniddesa also gives *cittuppādo* (Suttaniddesa, ad Kacc. §82).",
    "iebh": true,
-   "L": "1125bc",
+   "L": "1125bi",
    "fuente": "Rūpasiddhi · Kaccāyana · Suttaniddesa · Tipiṭaka"
   },
   "17": {
@@ -14073,21 +14234,21 @@
    "es": "En el canon: *samathavipassanaṃ yuganaddhaṃ bhāveti*, desarrolla la tranquilidad y la introspección unidas (A. i 475 (PTS ii 157)), frente a la resolución *samatho ca vipassanā ca* (D. iii 179 (PTS iii 213)); *viññāṇapaccayā nāmarūpaṃ* (D. ii 28 (PTS ii 32)); *tibbaṃ me hirottappaṃ paccupaṭṭhitaṃ bhavissati* (S. i 420 (PTS ii 220)).",
    "en": "In the canon: *samathavipassanaṃ yuganaddhaṃ bhāveti*, he develops tranquillity and insight yoked together (A. i 475 (PTS ii 157)), as against the resolution *samatho ca vipassanā ca* (D. iii 179 (PTS iii 213)); *viññāṇapaccayā nāmarūpaṃ* (D. ii 28 (PTS ii 32)); *tibbaṃ me hirottappaṃ paccupaṭṭhitaṃ bhavissati* (S. i 420 (PTS ii 220)).",
    "iebh": true,
-   "L": "1125cb",
+   "L": "1125ch",
    "fuente": "Tipiṭaka"
   },
   "19": {
    "es": "Niruttidīpanī entiende *dīghamajjhimaṃ* de otra manera: lo pone en una clase propia, la de las colecciones de una misma recitación (ekasaṅgītidvanda), junto con *aṅguttarasaṃyuttakaṃ* y *khandhakavibhaṅgaṃ*; es decir, el Dīgha y el Majjhima. En el canon, compuestos colectivos de esta clase y de la siguiente aparecen juntos en un solo pasaje: *Puttabhariyaṃ … dāsidāsaṃ jātidhammaṃ, ajeḷakaṃ jātidhammaṃ, kukkuṭasūkaraṃ jātidhammaṃ, hatthigavāssavaḷavaṃ jātidhammaṃ, jātarūparajataṃ jātidhammaṃ* (M. i 217 (PTS i 162)); y *pattacīvaraṃ paṭiggahesuṃ* (M. i 228 (PTS i 171)).",
    "en": "Niruttidīpanī understands *dīghamajjhimaṃ* differently: it places it in a class of its own, that of the collections of one and the same recitation (ekasaṅgītidvanda), together with *aṅguttarasaṃyuttakaṃ* and *khandhakavibhaṅgaṃ*; that is, the Dīgha and the Majjhima. In the canon, collective compounds of this class and of the next appear together in a single passage: *Puttabhariyaṃ … dāsidāsaṃ jātidhammaṃ, ajeḷakaṃ jātidhammaṃ, kukkuṭasūkaraṃ jātidhammaṃ, hatthigavāssavaḷavaṃ jātidhammaṃ, jātarūparajataṃ jātidhammaṃ* (M. i 217 (PTS i 162)); and *pattacīvaraṃ paṭiggahesuṃ* (M. i 228 (PTS i 171)).",
    "iebh": true,
-   "L": "1125cv",
+   "L": "1125db",
    "fuente": "Niruttidīpanī · Tipiṭaka"
   },
   "20": {
    "es": "Rūpasiddhi cuenta *kusalākusalaṃ* entre los facultativos (Rū. §360), y Kaccāyana pone del mismo modo *sāvajjānavajjaṃ*, *hīnapaṇītaṃ* y *kaṇhasukkaṃ* bajo el *ādi* de este aforismo (Kacc. §323). En cambio, para Saddanīti es un caso de los diversos enemigos (vividhaviruddha) (Sad. (Smith p. 750)), y Niruttidīpanī (sutta 358; Nir. 253) lo pone entre los opuestos (vividhaviruddha), que distingue de los enemigos (niccaveri); para ambos el colectivo es obligatorio. En el canon el plural aparece sólo como calificativo (*kusalākusalānaṃ dhammānaṃ vipākā*, Dhs. 145 (PTS p. 124)); como nombre aparece en singular: *saṃkhittena kusalākusalaṃ desetu*, que me enseñe brevemente el kusala y el akusala (M. ii 157 (PTS i 489)). Otras atestaciones: *rājā pasenadi kosalo kāsikosalaṃ ajjhāvasati* (D. i 217 (PTS i 227)); *pahūtaṃ hiraññasuvaṇṇaṃ ohāya* (D. i 108 (PTS i 115)); *imaṃ rattindivaṃ vītināmeyya* (M. i 16 (PTS i 13)); *Ahorattaṃ anuyuñjaṃ* (S. i 123 (PTS i 122)).",
    "en": "Rūpasiddhi counts *kusalākusalaṃ* among the facultative ones (Rū. §360), and Kaccāyana likewise places *sāvajjānavajjaṃ*, *hīnapaṇītaṃ* and *kaṇhasukkaṃ* under the *ādi* of this aphorism (Kacc. §323). By contrast, for Saddanīti it is a case of the different enemies (vividhaviruddha) (Sad. (Smith p. 750)), and Niruttidīpanī (sutta 358; Nir. 253) places it among the opposites (vividhaviruddha), which it distinguishes from the enemies (niccaveri); for both, the collective is obligatory. In the canon the plural appears only as a qualifier (*kusalākusalānaṃ dhammānaṃ vipākā*, Dhs. 145 (PTS p. 124)); as a noun it appears in the singular: *saṃkhittena kusalākusalaṃ desetu*, may he teach me kusala and akusala briefly (M. ii 157 (PTS i 489)). Other attestations: *rājā pasenadi kosalo kāsikosalaṃ ajjhāvasati* (D. i 217 (PTS i 227)); *pahūtaṃ hiraññasuvaṇṇaṃ ohāya* (D. i 108 (PTS i 115)); *imaṃ rattindivaṃ vītināmeyya* (M. i 16 (PTS i 13)); *Ahorattaṃ anuyuñjaṃ* (S. i 123 (PTS i 122)).",
    "iebh": true,
-   "L": "1125dz",
+   "L": "1125ef",
    "fuente": "Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī · Tipiṭaka"
   }
  }

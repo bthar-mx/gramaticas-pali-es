@@ -28,7 +28,7 @@ Una advertencia para quien use este sitio: en la traducción de Kaccāyana, «*v
 
 ### La resolución (viggaha)
 
-La frase que despliega un compuesto se llama *viggaha* o *viggaha-vākya*. Moggallāna-pañcikā-ṭīkā explica el término: *visesena gayhati ñāyatyaneneti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ*, se llama *viggaha* aquello por lo que [el significado] se capta y se conoce de manera distinta; o bien *viggaha* es la captación distinta, y la frase que tiene ese propósito es la *viggaha-vākya* (Mogg-p-ṭ., pp. 145–146). Nandisena lo traduce «resolución», y así lo hace esta guía.
+La frase que despliega un compuesto se llama *viggaha* o *viggaha-vākya*. Moggallāna-pañcikā-ṭīkā explica el término: *visesena gayhati ñāyaty anenā ti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ*, se llama *viggaha* aquello por lo que [el significado] se capta y se conoce de manera distinta; o bien *viggaha* es la captación distinta, y la frase que tiene ese propósito es la *viggaha-vākya* (Mogg-p-ṭ., pp. 145–146). Nandisena lo traduce «resolución», y así lo hace esta guía.
 
 Thitzana lo llama *Etymological Definition*, «definición etimológica», y le da la importancia que tiene: según Thitzana, una vez que el estudiante entiende la resolución de un compuesto, puede decir en el acto a qué clase pertenece (*Kaccāyana*, vol. 2, p. 45). Pero también según Thitzana, escribir resoluciones propias es destreza de estudioso avanzado; al principio basta con leerlas y entenderlas (p. 45). Es el orden de esta guía: primero leer las de las gramáticas, después proponer las propias.
 
@@ -54,7 +54,7 @@ El último miembro es el único que lleva inflexión, y su terminación dice muc
 
 - Si el compuesto **concuerda con otra palabra de la frase** que no es ninguno de sus miembros —*āgatasamaṇo saṅghārāmo*, *dīghajaṅgho puriso*—, probablemente es un compuesto relativo: toma el género y el número de aquello a que se refiere (*bahubbīhi cā ’yaṃ abhidheyyaliṅgavacano*, Rū. §352, p. 200).
 - Si está en **neutro singular** y su último miembro no es neutro por sí mismo, conviene pensar en un compuesto colectivo (numérico o copulativo) o en uno adverbial.
-- Si está en **plural** y nombra varias cosas, conviene pensar en un compuesto copulativo individual.
+- Si está en **plural** y nombra varias cosas, conviene pensar en un compuesto copulativo individual; si el primer miembro es un numeral, en un compuesto numérico no colectivo (*tibhavā*, *catuddisā*).
 - Si es **invariable**, como *adhitthi* o *upagu*, es un compuesto adverbial que no termina en *a* (Kacc. [§343](https://gramaticas.buddha-dhamma.net/s/343/); Rū. §338).
 
 ### Paso 2. Preguntar a qué se refiere el compuesto
@@ -109,7 +109,7 @@ Una resolución sólo vale si, al quitarle las palabras auxiliares y las inflexi
 5. quitar las inflexiones y lo que de ellas resultó, hasta volver a la base (*rāja-putta*);
 6. tratar la base como un nombre y declinarla (*rājaputto*).
 
-Si la comprobación falla —el número no concuerda, sobra un miembro, el sentido no es el del pasaje—, la resolución está mal o la clase es otra.
+Si la comprobación falla —el número o el género no concuerda, sobra un miembro, el sentido no es el del pasaje—, la resolución está mal o la clase es otra.
 
 ### Paso 5. Si hay más de una resolución, que decida el texto
 
@@ -144,6 +144,7 @@ Cuando dos resoluciones pasan la comprobación, la gramática no basta. El Tipi�
 
 **Las trampas.**
 
+- *«El género del primer miembro».* Así resume Nandisena el género del compuesto adverbial: «el género del primer miembro, neutro». El indeclinable no tiene género propio (*liṅgavacanabhede pi byayarahitattā*, Rū. §330); lo que fija la regla es que el compuesto entero se considera neutro, aunque el último miembro sea femenino: *kumārī* → *adhikumāri*, *gaṅgā* → *upagaṅgaṃ* (Kacc. §320; Rū. §335), y por eso se acorta su vocal final (Kacc. §342; Rū. §337).
 - *Dos resoluciones en la tradición.* Rūpasiddhi resuelve *nagarassa samīpaṃ*; la vutti de Kaccāyana, *nagarassa samīpe pavattati kathā iti upanagaraṃ*, «la conversación que surge cerca de la ciudad» (Kacc. §319). Las dos son de las fuentes.
 - *Gramáticos y comentaristas.* *paccattaṃ*: los gramáticos lo resuelven *attānaṃ attānaṃ pati*; los comentaristas, *pati pati attānaṃ* (Sad. (Smith p. 747)).
 - *Adverbial o relativo.* *niddarathaṃ* es *darathānaṃ abhāvo*, «ausencia de aflicción» (Rū., p. 181); pero Saddanīti admite también *n’ atthi daratho etassā ti niddaratho*, «aquel que no tiene aflicción», compuesto relativo (Sad. (Smith p. 747)). Como paralelo aduce el verso *niddaro hoti nippāpo* (Dh. 43 (PTS p. 31)), donde se lee *niddaro*, no *niddaratho*.
@@ -152,7 +153,7 @@ Cuando dos resoluciones pasan la comprobación, la gramática no basta. El Tipi�
 
 ### 4.2 Compuesto adjetivo (kammadhāraya)
 
-**Qué es.** Dos palabras que se refieren a la misma cosa (*tulyādhikaraṇa*), una que califica y otra calificada (Kacc. [§324](https://gramaticas.buddha-dhamma.net/s/324/), *Dvipade tulyādhikaraṇe kammadhārayo* = Rū. §339). Con el compuesto numérico, recibe también el nombre de compuesto determinativo (Kacc. [§326](https://gramaticas.buddha-dhamma.net/s/326/), *Ubhe tappurisā* = Rū. §341): predomina el significado del último miembro.
+**Qué es.** Dos palabras que se refieren a la misma cosa (*tulyādhikaraṇa*), una que califica y otra calificada (Kacc. [§324](https://gramaticas.buddha-dhamma.net/s/324/), *Dvipade tulyādhikaraṇe kammadhārayo* = Rū. §339). Con el compuesto numérico, recibe también el nombre de compuesto determinativo (Kacc. [§326](https://gramaticas.buddha-dhamma.net/s/326/), *Ubhe tappurisā* = Rū. §341): predomina el significado del último miembro. Toma el género del último miembro, «generalmente», dice Nandisena (*paraliṅgo*, Rū. §341): *mahāpuriso*, *mahādevī*, *nīluppalaṃ*. Cuando ambos miembros califican, el compuesto toma el género de lo que califica: *siniddhuṇho māso* (Rū., p. 186), *sītuṇhaṃ bhattaṃ* (Sad. (Smith p. 753)).
 
 **Cómo se resuelve.** Con *ca … ca* y el pronombre *ta* en el género del último miembro: *mahanto ca so puriso ca*, *mukhañ ca taṃ cando ca*. Rūpasiddhi explica para qué: *tulyādhikaraṇabhāvappasiddhatthaṃ casadda tasaddappayogo*, se emplean *ca* y *ta* para dejar claro que las dos palabras se refieren a la misma cosa (Rū., p. 183). Niruttidīpanī admite tres maneras de escribirla: *mahā ca so puriso cā ti*, *mahanto puriso*, sin palabras auxiliares, o completa, *mahanto ca so puriso cā ti* (Nir. 233). Las clases (4) a (9) tienen además su propia marca en la resolución:
 
@@ -182,7 +183,7 @@ Las clases (8) y (9) son compuestos obligatorios y se resuelven con una palabra 
 
 ### 4.3 Compuesto numérico (digu)
 
-**Qué es.** El compuesto adjetivo cuyo primer miembro es un numeral (Kacc. [§325](https://gramaticas.buddha-dhamma.net/s/325/), *Saṅkhyāpubbo digu* = Rū. §348). Es de dos clases: colectivo (*samāhāra-digu*), siempre singular y neutro (Kacc. [§321](https://gramaticas.buddha-dhamma.net/s/321/), *Diguss’ ekattaṃ* = Rū. §349), y no colectivo (*asamāhāra-digu*), que puede ser singular o plural (*aññatra pana bahuvacanam pi*, Rū. §349).
+**Qué es.** El compuesto adjetivo cuyo primer miembro es un numeral (Kacc. [§325](https://gramaticas.buddha-dhamma.net/s/325/), *Saṅkhyāpubbo digu* = Rū. §348). Es de dos clases: colectivo (*samāhāra-digu*), siempre singular y neutro (Kacc. [§321](https://gramaticas.buddha-dhamma.net/s/321/), *Diguss’ ekattaṃ* = Rū. §349), y no colectivo (*asamāhāra-digu*), que toma el género del último miembro, como dice Nandisena, y va en plural; con *eka*, en singular, porque toma el número de lo que designa (*aññatra pana bahuvacanam pi*, Rū. §349; *ekapuggalo*, Rū. §350; *abhidheyyavacano*, Rū. §341).
 
 **Cómo se resuelve.** El colectivo, con el participio *samāhaṭā* o con el sustantivo *samāhāro*: *tayo lokā samāhaṭā cittena sampiṇḍitā*, «los tres mundos reunidos, juntados por la mente», o *tiṇṇaṃ lokānaṃ samāhāro*, «la reunión de los tres mundos» (Rū. §348, p. 190). El no colectivo, como un compuesto adjetivo: *eko ca so puggalo ca* → *ekapuggalo* (Rū. §350, p. 191).
 
@@ -201,7 +202,7 @@ Las clases (8) y (9) son compuestos obligatorios y se resuelven con una palabra 
 
 ### 4.4 Compuesto determinativo (tappurisa)
 
-**Qué es.** El primer miembro estaba en una inflexión de la segunda a la séptima y determina al segundo (Kacc. [§327](https://gramaticas.buddha-dhamma.net/s/327/), *Amādayo parapadebhi* = Rū. §351). Predomina el significado del último miembro. Rūpasiddhi cuenta ocho clases: las seis de inflexión y dos más, el de miembros transpuestos (*amādipara*: *velaṃ atikkanto ativelo*) y el que no elide la inflexión (*alopa*: *pabhaṃ karotī ti pabhaṅkaro*, por el «ca» de Kacc. §317) (Rū., pp. 198–199, y los versos finales, p. 215).
+**Qué es.** El primer miembro estaba en una inflexión de la segunda a la séptima y determina al segundo (Kacc. [§327](https://gramaticas.buddha-dhamma.net/s/327/), *Amādayo parapadebhi* = Rū. §351). Predomina el significado del último miembro. Rūpasiddhi cuenta ocho clases: las seis de inflexión y dos más, el de miembros transpuestos (*amādipara*: *velaṃ atikkanto ativelo*) y el que no elide la inflexión (*alopa*: *pabhaṃ karotī ti pabhaṅkaro*, por el «ca» de Kacc. §317) (Rū., pp. 198–199, y los versos finales, p. 215). Toma el género del último miembro (Nandisena; *parapadaliṅgo*, Nir. 231): *rājaputto*, *rukkhamūlaṃ*. Cuando el último miembro es un derivado primario como *gata*, que tiene los tres géneros, toma el género y el número de aquello a que se refiere: *so saraṇagato*, *sā saraṇagatā*, *taṃ kulaṃ saraṇagataṃ* (*abhidheyyavacanaliṅgo*, Rū. §351, p. 193).
 
 **Cómo se resuelve.** Devolviendo al primer miembro su inflexión, sin pronombre ni partícula.
 
@@ -223,7 +224,7 @@ Las clases (8) y (9) son compuestos obligatorios y se resuelven con una palabra 
 
 ### 4.5 Compuesto relativo (bahubbīhi)
 
-**Qué es.** Los miembros, juntos, designan otra cosa: el significado de otra palabra (*aññapadattha*) (Kacc. [§328](https://gramaticas.buddha-dhamma.net/s/328/), *Aññapadatthesu bahubbīhi* = Rū. §352). El compuesto toma el género y el número de lo que designa: *āgatasamaṇo saṃghārāmo*, *āgatasamaṇā Sāvatthi*, *āgatasamaṇaṃ Jetavanaṃ* (Nandisena, tras Rū., p. 200).
+**Qué es.** Los miembros, juntos, designan otra cosa: el significado de otra palabra (*aññapadattha*) (Kacc. [§328](https://gramaticas.buddha-dhamma.net/s/328/), *Aññapadatthesu bahubbīhi* = Rū. §352). El compuesto toma el género y el número de lo que designa: *āgatasamaṇo saṃghārāmo*, *āgatasamaṇā Sāvatthi*, *āgatasamaṇaṃ Jetavanaṃ* (Nandisena, tras Rū., p. 200). Nandisena lo resume así: «el género de la otra palabra (*aññapada*)».
 
 **Cómo se resuelve.** Con la otra palabra, un pronombre *ya-, ta-, eta-* o *ima-*, en la inflexión que corresponda, y de ordinario *so ’yaṃ*. Esa inflexión da la subclase:
 
@@ -257,6 +258,7 @@ Las clases de primera inflexión —con *saha* (*saha hetunā yo vattate ti sahe
 
 **Las trampas.**
 
+- *«El género de ambos miembros».* Así resume Nandisena el género del compuesto copulativo, y sólo vale tal cual en el individual cuyos dos miembros tienen el mismo género (*Sāriputtamoggallānā*). Las gramáticas lo precisan: el individual toma el género del último miembro (*parass’ eva liṅgañ ca*, Rū. §357, p. 209): *mātāpitaro*, masculino; *bhikkhubhikkhuniyo*, femenino (S. ii 501 (PTS iv 315)); el colectivo es neutro singular aunque los miembros no lo sean: *mukhanāsikaṃ*, de *mukha* y *nāsikā* (Kacc. §322; Rū. §359).
 - *Compuesto copulativo o adjetivo.* Véase *sītuṇhaṃ* en 4.2 y el ejercicio 15.
 - *Plural o singular según cómo se mire.* El Canon dice *Pesalā Sāriputtamoggallānā*, en plural (S. i 151 (PTS i 149)), y también *Sāriputtamoggallānaṃ nāma sāvakayugaṃ*, en singular, porque depende de *yuga*, «par» (D. ii 4 (PTS ii 5)); Saddanīti lo señala (Sad. (Smith p. 768)). Véase el ejercicio 14.
 - *No toda colección forma compuesto.* Rūpasiddhi distingue cuatro clases de colección y dice que en dos no hay compuesto, porque cada nombre depende del verbo y no de los otros: *cīvaraṃ piṇḍapātañ ca paccayaṃ sayanāsanaṃ adāsi*, «dio la túnica, la comida, el requisito y el alojamiento»; *dānañ ca dehi, sīlañ ca rakkhāhi*, «da dádivas y guarda la virtud» (Rū., p. 208). Niruttidīpanī no lo acepta del todo: el Canon dice *lābhī hoti cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhārānaṃ*, en compuesto (Nir. 251).

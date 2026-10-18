@@ -1,11 +1,11 @@
 # samasa6.doc — texto REVISADO (U Nandisena, 2004–2005; revisión del IEBH)
 # Lo escribe herramientas/compuestos_aplicar.py a partir de base.txt y de las
 # propuestas verificadas. No se edita a mano: se rehace.
-#meta version=0.3.1
-#meta fecha=2026-10-17
+#meta version=0.4
+#meta fecha=2026-10-18
 #meta estado=Borrador revisado (pendiente de aprobación del IEBH)
 #meta estado_en=Revised draft (pending IEBH approval)
-#meta nota_version=Se aplicaron las propuestas de revisión según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); primera ronda de la revisión del IEBH (177 puntos conformes, ninguno revertido); a la espera de la aprobación del resto. v0.3.1: título del documento en inglés, «Compound (samāsa)»; llamadas de nota protegidas de la traducción automática del navegador. Sāvatthī (no «Sāvatthi») en el ejemplo del compuesto relativo de la segunda inflexión. Edición inglesa de la página, en borrador (sin revisar por el IEBH).
+#meta nota_version=Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado (correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la página, en borrador (sin revisar por el IEBH).
 
 0001  {Normal} Compuesto (samāsa)
 0002  {Normal} 
@@ -16,7 +16,7 @@
 0004  {Normal} 
 0005  {Normal} Un compuesto es una abreviación de palabras (samāso padasaṅkhepo; Kacc. §316; Rū. §331). Generalmente cada uno de los componentes del compuesto, excepto el último miembro, pierde su inflexión. En "rāja-putto", hijo del rey, se elide la inflexión del primer miembro "rāja", rey. Por lo tanto, para poder entender correctamente un compuesto se requiere la "resolución" (viggaha, vākya) del mismo en sus partes constituyentes; "rāja-putto", hijo del rey, se "resuelve" en "rañño", del rey, y "putto", hijo. Además, la resolución del compuesto permite conocer la clase a la que el compuesto pertenece porque cada clase de compuesto tiene una peculiar forma de resolución.
 0005a  {Normal} 
-0005b  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī · Moggallāna-pañcikā-ṭīkā" forma=p} **La resolución (viggaha).** La resolución, también llamada viggaha-vākya, es la frase desplegada, con la inflexión propia de cada miembro, de la que el compuesto es la abreviación. Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī) explica el término así: «visesena gayhati ñāyatyaneneti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ», se denomina viggaha porque por medio de él [el significado] se capta y se conoce de manera distinta; o bien viggaha es la captación distinta, y la frase que tiene ese propósito es la viggaha-vākya (Mogg-p-ṭ., pp. 145–146). Rūpasiddhi llama vākya a la expresión no compuesta: «tadaññaṃ vākyam iti ruḷhaṃ», lo otro [lo que no es compuesto] se conoce convencionalmente como vākya (Rū. §331); frente a ella, la forma compuesta se llama vutti (sutta 364; Nir. 261). La misma ṭīkā cita la diferencia entre ambas: «samāse visesanaṃ visessam anupavīsati ekībhavati visesanaṃ, vākye tu visesanaṃ visessato visuṃyevā vatiṭṭhate», en el compuesto el calificativo entra en lo calificado y se hace uno con él; en la frase permanece separado de lo calificado (Mogg-p-ṭ., p. 145).
+0005b  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī · Moggallāna-pañcikā-ṭīkā" forma=p} **La resolución (viggaha).** La resolución, también llamada viggaha-vākya, es la frase desplegada, con la inflexión propia de cada miembro, de la que el compuesto es la abreviación. Moggallāna-pañcikā-ṭīkā (Sāratthavilāsinī) explica el término así: «visesena gayhati ñāyaty anenā ti viggaho … visesena vā gahaṇaṃ viggaho, tadatthaṃ vākyaṃ viggahavākyaṃ», se denomina viggaha porque por medio de él [el significado] se capta y se conoce de manera distinta; o bien viggaha es la captación distinta, y la frase que tiene ese propósito es la viggaha-vākya (Mogg-p-ṭ., pp. 145–146). Rūpasiddhi llama vākya a la expresión no compuesta: «tadaññaṃ vākyam iti ruḷhaṃ», lo otro [lo que no es compuesto] se conoce convencionalmente como vākya (Rū. §331); frente a ella, la forma compuesta se llama vutti (sutta 364; Nir. 261). La misma ṭīkā cita la diferencia entre ambas: «samāse visesanaṃ visessam anupavīsati ekībhavati visesanaṃ, vākye tu visesanaṃ visessato visuṃyevā vatiṭṭhate», en el compuesto el calificativo entra en lo calificado y se hace uno con él; en la frase permanece separado de lo calificado (Mogg-p-ṭ., p. 145).
 0005c  {Normal} 
 0005d  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī · Moggallāna-pañcikā-ṭīkā" forma=p} Hay compuestos que son siempre compuestos (niccasamāsa) y otros que no lo son (aniccasamāsa) (Sad. (Smith p. 745)); el que es siempre compuesto no se resuelve con sus propias palabras: «niccayamāsāna maviggaho [léase niccasamāsānam aviggaho], asakapadaviggaho vā yutto», al compuesto obligatorio le corresponde no tener resolución, o tenerla con una palabra ajena (Mogg-p-ṭ., p. 147). Así el compuesto adverbial: nagarassa samīpaṃ, upanagaraṃ, cerca de la ciudad, con samīpaṃ en lugar de upa (véase la nota 3). La vutti de Kaccāyana lo resuelve en cambio nagarassa samīpe pavattati kathā iti upanagaraṃ, la conversación que surge cerca de la ciudad [se denomina] upanagaraṃ (Kacc. §319); las palabras así añadidas se conocen «samāsasāmatthiyena», por la fuerza del compuesto (sutta 336; Nir. 217).
 0005e  {Normal} 
@@ -25,7 +25,7 @@
 0006  {Normal} 
 0007  {Normal} Cuando se forma un compuesto hay (1) agrupación de voces (sadda-samasana) y (2) agrupación de significado (attha-samasana). En el caso de un compuesto donde la inflexión del primer miembro no se elide (alutta-samāsa), solamente existe agrupación de significado.[^2] Pero cuando la terminación del primer miembro se elide (lutta-samāsa), existe tanto agrupación de voces como agrupación de significado. 
 0007a  {Normal} 
-0007b  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Nyāsa" forma=p} Rūpasiddhi añade que también en el compuesto sin elisión pueden darse las dos agrupaciones, porque sus miembros llegan a ser una sola palabra: «tatth’ āpi vā ekapadattūpagamanato duvidham pi labbhat’ eva» (Rū. §331); lo mismo dice Nyāsa ad Kacc. §316. Saddanīti da como ejemplos de agrupación de significado en compuestos sin elisión «dūre-nidānaṃ», «gavam-pati», «urasi-lomo» y «devānaṃ-piya-Tisso» (Sad. (Smith p. 741)).
+0007b  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Nyāsa" forma=p} Rūpasiddhi añade que también en el compuesto sin elisión pueden darse las dos agrupaciones, porque sus miembros llegan a ser una sola palabra: «tatthā pi vā ekapadattūpagamanato duvidham pi labbhat’ eva» (Rū. §331); lo mismo dice Nyāsa ad Kacc. §316. Saddanīti da como ejemplos de agrupación de significado en compuestos sin elisión «dūre-nidānaṃ», «gavam-pati», «urasi-lomo» y «devānaṃ-piya-Tisso» (Sad. (Smith p. 741)).
 0007c  {Normal} 
 0008  {Normal} 
 0009  {Normal} Se dice que hay dos ventajas en la formación de un compuesto: (1) la condición de una única palabra y (2) la condición de una única inflexión (ekapadatta, ekavibhattitta; Rū. §331).
@@ -49,6 +49,9 @@
 0023a  {Normal} 
 0023b  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Suttaniddesa" forma=p} Rūpasiddhi cierra el capítulo de compuestos con dos estrofas que lo clasifican de otro modo. Por el miembro cuyo significado predomina, el compuesto es de cuatro clases: con predominio del significado del primer miembro (pubbapadatthappadhāna), del último miembro (uttarapadatthappadhāna), de ambos (ubhayapadatthappadhāna) o de otra palabra (aññapadatthappadhāna); con el compuesto numérico y el compuesto adjetivo, de seis. Son, respectivamente, el compuesto adverbial, el compuesto determinativo, el compuesto copulativo y el compuesto relativo (Sad. (Smith pp. 746, 754, 759, 768); para el adverbial y el determinativo, también Rū. §330 (p. 178) y §341 (p. 184)). Por sus subdivisiones, el compuesto adverbial es de dos clases, el compuesto adjetivo de nueve, el compuesto numérico de dos, el compuesto determinativo de ocho, el compuesto relativo de nueve y el compuesto copulativo de dos: en total, treinta y dos (caturaṭṭhadhā, «cuatro veces ocho») (Rū., pp. 214–215). La tradición de Kaccāyana cuenta veintisiete (el compuesto adjetivo de seis clases y el relativo de siete) y, según algunos, veintiocho si se añade el compuesto determinativo de primera inflexión (Suttaniddesa, ad Kacc. §316; cf. Sad. (Smith p. 745), «sattavīsatividho aṭṭhavīsatividho»).
 0023c  {Normal} 
+0023d  {Normal} 
+0023e  {IEBH fuente="Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004) · Kaccāyana · U Sīlānanda" forma=p} Lo que se dice del género en cada clase («Este compuesto tiene el género…») procede de otra nota de Nandisena, «Qué género tienen cada uno de los seis compuestos» (6 de febrero de 2004). Coincide en lo esencial, y en el mismo orden, con el repaso del género con que U Sīlānanda cierra el capítulo de compuestos de Kaccāyana (clase de Kaccāyana n.º 10), salvo en dos precisiones propias de la nota («el género del primer miembro», «generalmente»); la grabación termina antes del compuesto copulativo. Las precisiones de las fuentes van en cada clase, rotuladas IEBH.
+0023f  {Normal} 
 0024  {Normal} 
 0025  {Normal} 
 0026  {Normal num=3/0} Compuesto Adverbial (abyayībhāva-samāsa) (Kacc. §319; Rū. §330)
@@ -62,6 +65,12 @@
 0030d  {Normal} 
 0030e  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} En rigor, es el compuesto entero el que se considera neutro («So napuṃsakaliṅgo», Kacc. §320; Rū. §335), y después del compuesto adverbial que termina en «a» las inflexiones devienen «aṃ» sólo «a veces» (kvaci; Kacc. §341; Rū. §336): de ahí las formas opcionales en -ena, -ehi, -ā, -assa, etc. del paradigma siguiente. Después del que no termina en «a» las inflexiones se eliden (Kacc. §343; Rū. §338).
 0030f  {Normal} 
+0030g  {IEBH fuente="Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)" forma=p} Este compuesto tiene el género del primer miembro, neutro.
+0030h  {Normal} 
+0030i  {Normal} 
+0030j  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · U Sīlānanda" forma=p} Nandisena dice «el género del primer miembro»; pero el primer miembro, un indeclinable, no tiene género propio: se llama abyaya porque no cambia aunque cambien el género y el número («liṅgavacanabhede pi byayarahitattā», Rū. §330). Lo que fija la regla es que el compuesto entero se considera neutro, aunque el último miembro sea femenino: adhikumāri, upavadhu, upagaṅgaṃ (Kacc. §320; Rū. §335). Saddanīti, al explicar por qué en este compuesto la palabra femenina no se trata como masculina, da la razón de fondo: el compuesto adverbial tiene la naturaleza del indeclinable y no toma el género ni el número de lo que designa («tassa avyayalakkhaṇattā anabhidheyyaliṅgavacanattā ca», Sad. (Smith p. 775)). Así lo explica también U Sīlānanda (clase de Kaccāyana n.º 7).
+0030k  {Normal} 
+0030l  {Normal} 
 0031  {Normal} 
 0032  {Normal} El siguiente es un paradigma de las posibles inflexiones del compuesto "upanagaraṃ" (Kacc. §341; Rū. §336).[^4] Este paradigma es aplicable a otros compuestos adverbiales terminados en "aṃ" como "upakumbhaṃ", cerca de la vasija, etc.
 0033  {Normal} 
@@ -155,11 +164,17 @@
 0100  {Normal num=3/0} Compuesto adjetivo (kammadhāraya-samāsa) (Kacc. §324; Rū. §339)
 0101  {Normal} 
 0102  {Normal} Cuando dos nombres se refieren a la misma cosa (tulyādhikaraṇa),[^6] el compuesto se denomina "kammadhāraya",[^7] compuesto adjetivo. Generalmente en este tipo de compuesto se combinan dos palabras diferentes, una que califica (adjetivo) y otra que es calificada (sustantivo), las cuales al formar el compuesto adquieren un significado único.
+0102a  {Normal} 
+0102b  {IEBH fuente="Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)" forma=p} Este compuesto tiene el género del último miembro (generalmente).
+0102c  {Normal} 
 0103  {Normal} 
 0104  {Normal} El compuesto adjetivo (kammadhāraya) y el compuesto numérico (digu) reciben también el nombre de compuesto determinativo (tappurisa-samāsa) (Kacc. §326; Rū. §341), donde el significado del último miembro es predominante; además, el género está determinado por el último miembro y, a diferencia del compuesto adverbial, pueden ser singular y plural y asumir diferentes inflexiones.
 0104a  {Normal} 
 0104b  {IEBH fuente="Rūpasiddhi" forma=p} Según Rūpasiddhi, se llaman así por su semejanza con la propia palabra «tappurisa» («tassa puriso», el hombre de él), en la que predomina el significado del último miembro; y este compuesto toma el número de lo que designa (abhidheyyavacana) y el género del último miembro (paraliṅga) (Rū. §341).
 0104c  {Normal} 
+0104d  {IEBH fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī" forma=p} Niruttidīpanī lo dice también sin restricción («Ayam pi kammadhārayasamāso abhidheyyavacano parapadaliṅgo ca», Nir. 239). Cuando ambos miembros califican (visesanobhayapada), el último no tiene género propio y el compuesto toma el de lo que califica: «siniddho ca so uṇho cā ti siniddhuṇho», māso (Rū., p. 186); «sītañ ca taṃ uṇhañ cā ti sītuṇhaṃ», bhattaṃ (Sad. (Smith p. 753)). Y el compuesto numérico colectivo, que Nandisena incluye arriba con el adjetivo, no toma el género del último miembro: es neutro y singular (Kacc. §321; Rū. §349).
+0104e  {Normal} 
+0104f  {Normal} 
 0105  {Normal} 
 0106  {Normal} 
 0107  {Normal} Para la resolución de este tipo de compuesto y para mostrar que ambos miembros se refieren a la misma cosa se usa el pronombre-artículo "ta", éste/ésta, y la partícula "ca", y. El compuesto "mahāpuriso", gran hombre, se resuelve de la siguiente manera:
@@ -566,7 +581,7 @@
 0424  {Normal} 
 0425  {Normal} El primer miembro es la partícula 'na', no. Esta partícula de negación se reemplaza por 'a' antes de una consonante y por 'an' antes de una vocal. Ej., "na" + "kusala" = "akusala", no sano, insano; "na" + "ariyo" = "anariyo", no noble, innoble.
 0425a  {Normal} 
-0425b  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Son Kacc. §333 (Rū. §344), «Attaṃ nassa tappurise», y Kacc. §334 (Rū. §345), «Sare an». Rūpasiddhi forma primero el compuesto adjetivo (na brāhmaṇo) y le da el nombre de compuesto determinativo por «Ubhe tappurisā» (Kacc. §326, Rū. §341), porque los dos suttas sólo actúan en un tappurisa.
+0425b  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Son Kacc. §333 (Rū. §344), «Attaṃ n’ assa tappurise», y Kacc. §334 (Rū. §345), «Sare an». Rūpasiddhi forma primero el compuesto adjetivo (na brāhmaṇo) y le da el nombre de compuesto determinativo por «Ubhe tappurisā» (Kacc. §326, Rū. §341), porque los dos suttas sólo actúan en un tappurisa.
 0425c  {Normal} 
 0426  {Normal} 
 0427  {Normal} La partícula de negación "a" puede tener los siguientes significados:
@@ -605,7 +620,7 @@
 0452b  {IEBH fuente="Rūpasiddhi · Niruttidīpanī" forma=p} Rūpasiddhi (§344, p. 188) lo resume en una estrofa: «Pasajjappaṭisedhassa, lakkhaṇaṃ vatthunatthitā; vatthuto aññatra vutti, pariyudāsalakkhaṇaṃ», la característica del pasajjappaṭisedha es la inexistencia de la cosa; la característica del pariyudāsa es la aplicación a algo distinto de la cosa. Niruttidīpanī (Nir. 237) precisa que el pasajjappaṭisedha niega sólo la acción (kriyāmattanisedha: akatvā, akātuṃ, akaronto) y el pariyudāsa niega la cosa (dabbanisedha: abrāhmaṇo, asamaṇo, amitto).
 0452c  {Normal} 
 0452d  {Normal} 
-0452e  {IEBH fuente="Rūpasiddhi · U Sīlānanda" forma=p} Rūpasiddhi plantea la dificultad en una estrofa: «Na nisedho sato yutto, desādiniyamaṃ vinā; asato c’ āphalo tasmā, katham abrāhmaṇo ti ce?», no es apropiado negar lo que existe sin precisar el lugar, etc., y negar lo que no existe es inútil; entonces, ¿cómo [puede decirse] «abrāhmaṇo»? Y responde: «Nisedhatthānuvādena, paṭisedhavidhi kvaci; parassa micchāñāṇattā-khyāpanāyopapajjate», a veces la negación, repitiendo lo que se niega, es apropiada para hacer saber a otro que su conocimiento es erróneo (Rū. §344 (p. 187)). Como explica U Sīlānanda (clase de Rūpasiddhi n.º 43), se dice «no es un brahmán» a quien toma por brahmán a alguien que sólo lo parece; por eso concluye Rūpasiddhi: «abrāhmaṇo ti brāhmaṇasadiso ti vuttaṃ hoti», «abrāhmaṇo» quiere decir «semejante a un brahmán» (Rū. M p. 188).
+0452e  {IEBH fuente="Rūpasiddhi · U Sīlānanda" forma=p} Rūpasiddhi plantea la dificultad en una estrofa: «Na nisedho sato yutto, desādiniyamaṃ vinā; asato c’ āphalo tasmā, katham abrāhmaṇo ti ce?», no es apropiado negar lo que existe sin precisar el lugar, etc., y negar lo que no existe es inútil; entonces, ¿cómo [puede decirse] «abrāhmaṇo»? Y responde: «Nisedhatthānuvādena, paṭisedhavidhi kvaci; parassa micchāñāṇattā-khyāpanāyopapajjate», a veces la negación, repitiendo lo que se niega, es apropiada para hacer saber a otro que su conocimiento es erróneo (Rū. §344 (p. 187)). Como explica U Sīlānanda (clase de Rūpasiddhi n.º 43), se dice «no es un brahmán» a quien toma por brahmán a alguien que sólo lo parece; por eso concluye Rūpasiddhi: «abrāhmaṇo ti brāhmaṇasadiso ti vuttaṃ hoti», «abrāhmaṇo» quiere decir «semejante a un brahmán» (Rū., p. 188).
 0452f  {Normal} 
 0453  {Normal} 
 0454  {Normal} Otros ejemplos:
@@ -919,7 +934,10 @@
 0701  {Normal} 
 0702  {Normal} (2) No-colectivo (asamāhāra-digu)
 0703  {Normal} 
-0704  {Normal} Compuesto numérico no-colectivo. Este tipo de compuesto no expresa la totalidad sino los objetos individualmente. Puede tener terminación singular o plural. Ej., "tayo + bhavā" = "tibhavā" (los tres estadios de existencia).
+0704  {Normal} Compuesto numérico no-colectivo. Este tipo de compuesto no expresa la totalidad sino los objetos individualmente. Tiene el género del último miembro y terminación plural; con «eka» (uno), terminación singular: ekapuggalo, ekadhammo, ekaputto. Ej., "tayo + bhavā" = "tibhavā" (los tres estadios de existencia).
+0704a  {Normal} 
+0704b  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka" forma=p} El compuesto numérico es también compuesto determinativo («Ubhe tappurisā», Kacc. §326; Rū. §341), y de éste dice Rūpasiddhi que toma el número de lo que designa y el género del último miembro («abhidheyyavacano, paraliṅgo ca», Rū. §341). Por eso, en los ejemplos de Rūpasiddhi del no colectivo, el número es el de las cosas contadas —singular con «eka»: ekapuggalo, ekadhammo, ekaputto; plural con los demás numerales: tibhavā, catuddisā, dasasahassacakkavāḷāni— y el género, el del último miembro: ekapuggalo, masculino; catuddisā, femenino; dasasahassacakkavāḷāni, neutro (Rū. §350). En el canon, en singular: «Ekadhammo, bhikkhave, bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattati» (A. i 31 (PTS i 30)).
+0704c  {Normal} 
 0705  {Normal} 
 0706  <<TABLA>>
 0707  | ekapuggalo | resolución del compuesto | eko | ca | so | puggalo | ca |
@@ -975,16 +993,22 @@
 0745  {Normal} 
 0746  {Normal} En este tipo de compuesto el primer miembro es un nombre, en cualquier inflexión excepto la primera (nominativo o vocativo), explicando o determinando el segundo miembro. Hay seis clases: (1) en la segunda inflexión (dutiyā-tappurisa), (2) en la tercera inflexión (tatiyā-tappurisa), (3) en la cuarta inflexión (catutthī-tappurisa), (4) en la quinta inflexión (pañcamī-tappurisa), (5) en la sexta inflexión (chaṭṭhī-tappurisa) y (6) en la séptima inflexión (sattamī-tappurisa). (Kacc. §327; Rū. §351)
 0746a  {Normal} 
-0746b  {IEBH fuente="Rūpasiddhi" forma=p} Rūpasiddhi cuenta ocho clases de *tappurisa* («Digu dudhā tappuriso, aṭṭhadhā …», Rū., p. 215): estas seis, más el *amādipara-tappurisa* y el *alopa-tappurisa*, que aquí se tratan más abajo como «compuestos determinativos irregulares» y «compuestos determinativos donde la inflexión del primer miembro no se elide».
+0746b  {IEBH fuente="Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004) · Niruttidīpanī" forma=p} Este compuesto tiene el género del último miembro.
 0746c  {Normal} 
+0746d  {Normal} 
+0746e  {IEBH fuente="Rūpasiddhi" forma=p} Rūpasiddhi cuenta ocho clases de *tappurisa* («Digu dudhā tappuriso, aṭṭhadhā …», Rū., p. 215): estas seis, más el *amādipara-tappurisa* y el *alopa-tappurisa*, que aquí se tratan más abajo como «compuestos determinativos irregulares» y «compuestos determinativos donde la inflexión del primer miembro no se elide».
+0746f  {Normal} 
 0747  {Normal} 
 0748  {Normal} Cuando califica a un nombre, este compuesto tiene el mismo género y número de lo que califica. Ejemplos: "so saraṇagato", él ha ido por refugio; "te saraṇagatā", ellos han ido por refugio; "sā saraṇagatā", ella ha ido por refugio; "tā saraṇagatāyo", ellas han ido por refugio; "taṃ kulaṃ saraṇagataṃ", esa familia ha ido por refugio; "tāni kulāni saraṇagatāni", esas familias han ido por refugio.
 0748a  {Normal} 
 0748b  {IEBH fuente="Rūpasiddhi · Niruttidīpanī" forma=p} Rūpasiddhi dice que este tappurisa toma el número y el género de aquello a lo que se refiere (abhidheyyavacanaliṅga), porque «gata», etc., son derivados primarios y tienen los tres géneros (Rū. §351 (p. 193)). Cuando el último miembro es un sustantivo de género fijo, el compuesto conserva el género de éste: rājaputto, rukkhamūlaṃ, itthirūpaṃ. Niruttidīpanī lo dice de todo el tipo: «abhidheyyavacano parapadaliṅgo ca», el número del referente y el género del miembro siguiente (Nir. 231).
 0748c  {Normal} 
-0748d  {Normal} 
-0748e  {IEBH fuente="Tipiṭaka · Aṭṭhakathā" forma=p} «saraṇagato» está atestiguado en Mahāniddesa: «… leṇagato leṇappatto saraṇagato saraṇappatto …» (Nidd. I 16 (PTS i 20)). La frase sin componer es la fórmula común: «buddhaṃ saraṇaṃ gato hoti» (citada en DA. i 209 (PTS i 234)).
+0748d  {IEBH fuente="Rūpasiddhi · Kaccāyana · Niruttidīpanī · Moggallāna · Tipiṭaka" forma=p} Niruttidīpanī da además una excepción, tomada de Moggallāna, que la formula con las mismas palabras: en el compuesto determinativo en la sexta inflexión con «chāyā» (sombra) y «sabhā» (asamblea), a veces el compuesto es neutro y singular («Kvac’ ekattañ ca chaṭṭhiyā», Nir. 256; Moggallāna, p. 128): salabhānaṃ chāyā salabhacchāyaṃ, sakaṭacchāyaṃ, gharacchāyaṃ, pero rukkhacchāyā, pabbatacchāyā; brahmūnaṃ sabhā brahmasabhaṃ, devasabhaṃ, pero, si la asamblea es de seres humanos, khattiyasabhā, rājasabhā. Rūpasiddhi y Kaccāyana no tienen esta regla, y fuera de las gramáticas estas formas sólo aparecen en acusativo, femenino donde se distingue: «sudhammaṃ devasabhaṃ» (S. ii 404 (PTS iv 202)).
+0748e  {Normal} 
 0748f  {Normal} 
+0748g  {Normal} 
+0748h  {IEBH fuente="Tipiṭaka · Aṭṭhakathā" forma=p} «saraṇagato» está atestiguado en Mahāniddesa: «… leṇagato leṇappatto saraṇagato saraṇappatto …» (Nidd. I 16 (PTS i 20)). La frase sin componer es la fórmula común: «buddhaṃ saraṇaṃ gato hoti» (citada en DA. i 209 (PTS i 234)).
+0748i  {Normal} 
 0749  {Normal} 
 0750  {Normal} (1) En la segunda inflexión (dutiyā-tappurisa)
 0751  {Normal} 
@@ -1285,6 +1309,9 @@
 0981  {Normal num=3/0} Compuesto relativo (bahubbīhi-samāsa) (Kacc. §328; Rū. §352)
 0982  {Normal} 
 0983  {Normal} Compuesto que denota algo diferente de lo que cada uno de sus miembros representan. "Bahubbīhi" que significa un lugar donde hay mucho grano ejemplifica este tipo de compuesto ("bahu", mucho, y "vīhi", grano).[^8] Los miembros individuales no son suficientes para explicar el significado del compuesto. Se requiere el uso de otra palabra (aññapada),[^9] "ya", "ta", "eta" e "ima", para la resolución del compuesto. En un compuesto relativo el significado de la otra palabra es predominante.
+0983a  {Normal} 
+0983b  {IEBH fuente="Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004) · Rūpasiddhi · Kaccāyana · U Sīlānanda" forma=p} Este compuesto tiene el género de la otra palabra (aññapada).
+0983c  {Normal} 
 0984  {Normal} 
 0985  {Normal} Cualquier tipo de compuesto, adverbial, adjetivo, numérico, determinativo y copulativo, si es usado como adjetivo, se convierte en un compuesto relativo. El compuesto relativo debe concordar en número, género y caso gramatical con el nombre que califica.
 0985a  {Normal} 
@@ -1474,7 +1501,7 @@
 1102c  {Normal} 
 1102d  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka"} asamo
 1102e  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka"} natthi (no hay) etassa (de éste) samo (igual) ti (por lo tanto) asamo Bhagavā (el Sublime, que no tiene igual).
-1102f  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka" forma=anexo} Na pasa a a por «Attaṃ nassa tappurise» (Kacc. §333), tomado aparte (yogavibhāga).
+1102f  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka" forma=anexo} Na pasa a a por «Attaṃ n’ assa tappurise» (Kacc. §333), tomado aparte (yogavibhāga).
 1102g  {Normal} 
 1102h  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka"} anuttaro
 1102i  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka"} natthi (no hay) etassa (de éste) uttaro (superior) ti (por lo tanto) anuttaro (uno que no tiene superior).
@@ -1564,121 +1591,127 @@
 1125m  {Normal} 
 1125n  {IEBH fuente="Rūpasiddhi" forma=p} Por lo tanto, hay dos clases de compuesto copulativo: (1) individual (itarītarayoga-dvanda) y (2) colectivo (samāhāra-dvanda). (Rū. §357)
 1125o  {Normal} 
-1125p  {IEBH-nota fuente="Niruttidīpanī · Moggallāna · Tipiṭaka"} [^13]: Moggallāna da para las dos primeras otros ejemplos: "dhave ca khadire ca palāse ca chinda", corta los dhava, los khadira y los palāsa (colección simple), y "bhikkhañ cara gāvo cānaye", ve por limosna y trae las vacas (adición secundaria). Niruttidīpanī (sutta 357; Nir. 251) no acepta del todo la restricción: la colección simple también forma compuesto, como en "cīvarapiṇḍapātasenāsanagilānappaccayabhesajjaparikkhārānaṃ" (M. i 39 (PTS i 33)), y también la adición secundaria, como en "mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā" (D. i 5 (PTS i 5)).
+1125p  {IEBH fuente="Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)" forma=p} Este compuesto tiene el género de ambos miembros.
 1125q  {Normal} 
-1125r  {IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna" forma=h} (1) Individual (itarītarayoga-dvanda)
-1125s  {Normal} 
-1125t  {IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna" forma=p} En este tipo cada miembro conserva su propio significado y es predominante (avayavappadhāna); por eso el compuesto está siempre en plural [salvo cuando depende de «yuga», par: véase la nota], en todas las inflexiones, y tiene el género del último miembro: "Sāriputtamoggallānā", "Sāriputtamoggallāne", "Sāriputtamoggallānehi", etc. (Rū. §357)[^14]
+1125r  {Normal} 
+1125s  {IEBH fuente="Rūpasiddhi · Kaccāyana · Tipiṭaka" forma=p} Las gramáticas lo precisan así. En el compuesto copulativo individual, el compuesto toma el género del último miembro («parass’ eva liṅgañ ca», Rū. §357 (p. 209); «ekattābhāve bahuvacanaṃ, parass’ eva liṅgañ ca», Rū. §360 (p. 213)): mātāpitaro, masculino, como pitā; bhikkhubhikkhuniyo, femenino, como bhikkhunī («evam eva mayhaṃ bhikkhubhikkhuniyo», S. ii 501 (PTS iv 315)). En el colectivo es neutro y singular, sea cual sea el género de los miembros: mukhanāsikaṃ, de mukha, neutro, y nāsikā, femenino (Kacc. §322; Rū. §359). La frase de Nandisena se cumple tal cual sólo en el individual cuyos dos miembros tienen el mismo género: Sāriputtamoggallānā, samaṇabrāhmaṇā.
+1125t  {Normal} 
 1125u  {Normal} 
-1125v  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna">>
-1125w  | resolución | compuesto | traducción |
-1125x  | Sāriputto ca Moggallāno ca | Sāriputtamoggallānā | Sāriputta y Moggallāna |
-1125y  | samaṇo ca brāhmaṇo ca | samaṇabrāhmaṇā | ascetas y brahmanes |
-1125z  | devā ca manussā ca | devamanussā | devas y seres humanos |
-1125aa  | candimā ca sūriyo ca | candimasūriyā | la luna y el sol |
-1125ab  | brāhmaṇo ca gahapatiko ca | brāhmaṇagahapatikā | brahmanes y dueños de casa |
-1125ac  | mātā ca pitā ca | mātāpitaro | madre y padre |
-1125ad  | pitā ca putto ca | pitāputtā | padre e hijo |
-1125ae  <</TABLA>>
-1125af  {Normal} 
-1125ag  {IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna" forma=p} En "mātāpitaro" y "pitāputtā" la "u" final del primer miembro ("mātu", "pitu") se convierte en "ā" en el compuesto copulativo, por la regla "Tesu vuddhi…" (Kacc. §404; Rū. §370).
-1125ah  {Normal} 
-1125ai  {IEBH-nota fuente="Saddanīti · Moggallāna · Tipiṭaka"} [^14]: En el canon: "Pesalā Sāriputtamoggallānā", Sāriputta y Moggallāna son de buena conducta (S. i 151 (PTS i 149)), y el locativo "Sāriputtamoggallānesu" en el mismo pasaje; "Yathā vā pan’ eke bhonto samaṇabrāhmaṇā" (D. i 6 (PTS i 6)); "tāva naṃ dakkhanti devamanussā", mientras tanto lo verán los devas y los seres humanos (D. i 42 (PTS i 46)); "yato ca candimasūriyā uggacchanti" (D. i 226 (PTS i 240)); "mātāpitaro sukhenti pīṇenti" (D. i 48 (PTS i 51)). Cuando el compuesto depende de "yuga", par, el canon lo usa en singular: "Sāriputtamoggallānaṃ nāma sāvakayugaṃ", el par de discípulos llamado Sāriputta y Moggallāna (D. ii 4 (PTS ii 5)); Saddanīti lo señala (Sad. (Smith p. 768)).
-1125aj  {Normal} 
-1125ak  {IEBH fuente="Rūpasiddhi" forma=p} Orden de los miembros. Generalmente el miembro más venerable (accitatara) se coloca primero: "Sāriputtamoggallānā", "samaṇabrāhmaṇā", "devamanussā", "mātāpitaro". A veces se coloca primero el miembro de menos vocales (appasara): "cando ca sūriyo ca" = "candasūriyā", la luna y el sol; "nigamā ca janapadā ca" = "nigamajanapadā", pueblos y distritos. A veces se coloca primero el miembro terminado en "i" o en "u": "aggi ca dhūmo ca" = "aggidhūmā", fuego y humo; "dhātavo ca liṅgāni ca" = "dhātuliṅgāni", raíces y bases. A veces, entre miembros terminados en "a", se coloca primero el que empieza con vocal: "attho ca dhammo ca" = "atthadhammā", el significado y el Dhamma; también "atthasaddā" o "saddatthā", el significado y la palabra. Cuando los miembros son muchos, no hay un orden fijo. (Rū. §357–§358)
+1125v  {IEBH-nota fuente="Niruttidīpanī · Moggallāna · Tipiṭaka"} [^13]: Moggallāna da para las dos primeras otros ejemplos: "dhave ca khadire ca palāse ca chinda", corta los dhava, los khadira y los palāsa (colección simple), y "bhikkhañ cara gāvo cānaye", ve por limosna y trae las vacas (adición secundaria). Niruttidīpanī (sutta 357; Nir. 251) no acepta del todo la restricción: la colección simple también forma compuesto, como en "cīvarapiṇḍapātasenāsanagilānappaccayabhesajjaparikkhārānaṃ" (M. i 39 (PTS i 33)), y también la adición secundaria, como en "mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā" (D. i 5 (PTS i 5)).
+1125w  {Normal} 
+1125x  {IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna" forma=h} (1) Individual (itarītarayoga-dvanda)
+1125y  {Normal} 
+1125z  {IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna" forma=p} En este tipo cada miembro conserva su propio significado y es predominante (avayavappadhāna); por eso el compuesto está siempre en plural [salvo cuando depende de «yuga», par: véase la nota], en todas las inflexiones, y tiene el género del último miembro: "Sāriputtamoggallānā", "Sāriputtamoggallāne", "Sāriputtamoggallānehi", etc. (Rū. §357)[^14]
+1125aa  {Normal} 
+1125ab  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna">>
+1125ac  | resolución | compuesto | traducción |
+1125ad  | Sāriputto ca Moggallāno ca | Sāriputtamoggallānā | Sāriputta y Moggallāna |
+1125ae  | samaṇo ca brāhmaṇo ca | samaṇabrāhmaṇā | ascetas y brahmanes |
+1125af  | devā ca manussā ca | devamanussā | devas y seres humanos |
+1125ag  | candimā ca sūriyo ca | candimasūriyā | la luna y el sol |
+1125ah  | brāhmaṇo ca gahapatiko ca | brāhmaṇagahapatikā | brahmanes y dueños de casa |
+1125ai  | mātā ca pitā ca | mātāpitaro | madre y padre |
+1125aj  | pitā ca putto ca | pitāputtā | padre e hijo |
+1125ak  <</TABLA>>
 1125al  {Normal} 
-1125am  {IEBH fuente="Rūpasiddhi" forma=verso} Rūpasiddhi lo resume en un verso: ‖ Accitappasaraṃ pubbaṃ, ivaṇṇuvaṇṇakaṃ kvaci; // dvande sarādyakārantaṃ, bahūsv aniyamo bhave. ‖ En el compuesto copulativo [generalmente] va primero [el miembro] más venerable y el de menos vocales; a veces, el terminado en "i" o en "u"; [y] el terminado en "a" que empieza con vocal; cuando son muchos, no hay regla fija.
+1125am  {IEBH fuente="Rūpasiddhi · Kaccāyana · Moggallāna" forma=p} En "mātāpitaro" y "pitāputtā" la "u" final del primer miembro ("mātu", "pitu") se convierte en "ā" en el compuesto copulativo, por la regla "Tesu vuddhi…" (Kacc. §404; Rū. §370).
 1125an  {Normal} 
-1125ao  {Normal} 
-1125ap  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Cuando sigue "pati", esposo, a "jāyā", esposa, a veces se reemplaza por "tudaṃ" o por "jāni" (Kacc. §339; Rū. §358): "jāyā ca pati ca" = "tudaṃpati", "jānipati", esposa y esposo. También "jayampatikā", donde se añade el niggahīta y se acorta la vocal.[^15]
-1125aq  {Normal} 
-1125ar  {IEBH-nota fuente="Kaccāyana · Tipiṭaka"} [^15]: En el canon aparecen en plural, como compuestos copulativos individuales: "dve jāyampatikā", dos esposos (S. i 322 (PTS ii 98)), donde la edición del VRI lee "jāyampatikā" y anota la variante "jayampatikā"; y "Te honti jānipatayo" (A. i 370 (PTS ii 59)). "Tudaṃpati" no se encuentra en los textos canónicos de la edición del Sexto Concilio; sólo en las gramáticas y en una ṭīkā que remite a Kaccāyana.
-1125as  {Normal} 
-1125at  {IEBH fuente="Rūpasiddhi · Moggallāna-pañcikā-ṭīkā · Moggallāna" forma=p} Moggallāna no admite «tudaṃpati». Da «jayampatī», y «jānipatī», «dampatī», «jampatī» como palabras distintas, no como sustituciones de «jāyā»: «‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti» (Moggallāna, p. 137). Según su ṭīkā, la Pañcikā excluye expresamente el uso «tudampati», y con «aññehi ca», «y por otros», se refiere a Rūpasiddhi: «nā ’yam payogo ti tudampatippayogaṃ nivattetvā … aññehi cā ti iminā rūpasiddhiṃ gaṇhāti» (Moggallāna-pañcikā-ṭīkā, M p. 185).
+1125ao  {IEBH-nota fuente="Saddanīti · Moggallāna · Tipiṭaka"} [^14]: En el canon: "Pesalā Sāriputtamoggallānā", Sāriputta y Moggallāna son de buena conducta (S. i 151 (PTS i 149)), y el locativo "Sāriputtamoggallānesu" en el mismo pasaje; "Yathā vā pan’ eke bhonto samaṇabrāhmaṇā" (D. i 6 (PTS i 6)); "tāva naṃ dakkhanti devamanussā", mientras tanto lo verán los devas y los seres humanos (D. i 42 (PTS i 46)); "yato ca candimasūriyā uggacchanti" (D. i 226 (PTS i 240)); "mātāpitaro sukhenti pīṇenti" (D. i 48 (PTS i 51)). Cuando el compuesto depende de "yuga", par, el canon lo usa en singular: "Sāriputtamoggallānaṃ nāma sāvakayugaṃ", el par de discípulos llamado Sāriputta y Moggallāna (D. ii 4 (PTS ii 5)); Saddanīti lo señala (Sad. (Smith p. 768)).
+1125ap  {Normal} 
+1125aq  {IEBH fuente="Rūpasiddhi" forma=p} Orden de los miembros. Generalmente el miembro más venerable (accitatara) se coloca primero: "Sāriputtamoggallānā", "samaṇabrāhmaṇā", "devamanussā", "mātāpitaro". A veces se coloca primero el miembro de menos vocales (appasara): "cando ca sūriyo ca" = "candasūriyā", la luna y el sol; "nigamā ca janapadā ca" = "nigamajanapadā", pueblos y distritos. A veces se coloca primero el miembro terminado en "i" o en "u": "aggi ca dhūmo ca" = "aggidhūmā", fuego y humo; "dhātavo ca liṅgāni ca" = "dhātuliṅgāni", raíces y bases. A veces, entre miembros terminados en "a", se coloca primero el que empieza con vocal: "attho ca dhammo ca" = "atthadhammā", el significado y el Dhamma; también "atthasaddā" o "saddatthā", el significado y la palabra. Cuando los miembros son muchos, no hay un orden fijo. (Rū. §357–§358)
+1125ar  {Normal} 
+1125as  {IEBH fuente="Rūpasiddhi" forma=verso} Rūpasiddhi lo resume en un verso: ‖ Accitappasaraṃ pubbaṃ, ivaṇṇuvaṇṇakaṃ kvaci; // dvande sarādyakārantaṃ, bahūsv aniyamo bhave. ‖ En el compuesto copulativo [generalmente] va primero [el miembro] más venerable y el de menos vocales; a veces, el terminado en "i" o en "u"; [y] el terminado en "a" que empieza con vocal; cuando son muchos, no hay regla fija.
+1125at  {Normal} 
 1125au  {Normal} 
-1125av  {Normal} 
-1125aw  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=h} (2) Colectivo (samāhāra-dvanda)
-1125ax  {Normal} 
-1125ay  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Compuesto copulativo colectivo. Los miembros se toman como un conjunto y no individualmente; por eso, igual que el compuesto numérico colectivo (samāhāra-digu), este compuesto está en singular y en género neutro. Ej., "cakkhu ca sotañ ca" = "cakkhusotaṃ", ojo y oído. (Kacc. §322; Rū. §359)
-1125az  {Normal} 
-1125ba  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Se declina en singular según el paradigma de "tilokaṃ", aplicable a todos los compuestos colectivos (véase el compuesto numérico): "cakkhusotaṃ, he cakkhusota, cakkhusotaṃ, cakkhusotena", etc. (Rū. §359).[^16]
+1125av  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Cuando sigue "pati", esposo, a "jāyā", esposa, a veces se reemplaza por "tudaṃ" o por "jāni" (Kacc. §339; Rū. §358): "jāyā ca pati ca" = "tudaṃpati", "jānipati", esposa y esposo. También "jayampatikā", donde se añade el niggahīta y se acorta la vocal.[^15]
+1125aw  {Normal} 
+1125ax  {IEBH-nota fuente="Kaccāyana · Tipiṭaka"} [^15]: En el canon aparecen en plural, como compuestos copulativos individuales: "dve jāyampatikā", dos esposos (S. i 322 (PTS ii 98)), donde la edición del VRI lee "jāyampatikā" y anota la variante "jayampatikā"; y "Te honti jānipatayo" (A. i 370 (PTS ii 59)). "Tudaṃpati" no se encuentra en los textos canónicos de la edición del Sexto Concilio; sólo en las gramáticas y en una ṭīkā que remite a Kaccāyana.
+1125ay  {Normal} 
+1125az  {IEBH fuente="Rūpasiddhi · Moggallāna-pañcikā-ṭīkā · Moggallāna" forma=p} Moggallāna no admite «tudaṃpati». Da «jayampatī», y «jānipatī», «dampatī», «jampatī» como palabras distintas, no como sustituciones de «jāyā»: «‘jānipatī’ ti pakatantarena siddhaṃ, tathā ‘dampatī, jampatī’ ti» (Moggallāna, p. 137). Según su ṭīkā, la Pañcikā excluye expresamente el uso «tudampati», y con «aññehi ca», «y por otros», se refiere a Rūpasiddhi: «nā ’yam payogo ti tudampatippayogaṃ nivattetvā … aññehi cā ti iminā rūpasiddhiṃ gaṇhāti» (Mogg-p-ṭ., p. 185).
+1125ba  {Normal} 
 1125bb  {Normal} 
-1125bc  {IEBH-nota fuente="Rūpasiddhi · Kaccāyana · Suttaniddesa · Tipiṭaka"} [^16]: En el canon: "Aguttaṃ cakkhusotasmiṃ", desprotegido en el ojo y el oído (A. i 284 (PTS i 281)), con la séptima inflexión singular del paradigma. Rūpasiddhi advierte que a veces el compuesto colectivo no es neutro, como lo muestra la forma "aṃmo" del aforismo "Aṃ-mo niggahitaṃ jha-la-pehi" (Kacc. §82; Rū. §149); así "ādhipaccaparivāro", "chandapārisuddhi", "paṭisandhippavattiyaṃ" (Rū. §359). Suttaniddesa da también "cittuppādo" (Suttaniddesa, ad Kacc. §82).
+1125bc  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=h} (2) Colectivo (samāhāra-dvanda)
 1125bd  {Normal} 
-1125be  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} El compuesto copulativo es colectivo, por regla y no facultativamente, cuando sus miembros significan partes de los seres, instrumentos musicales, partes de un vehículo, partes de un ejército, criaturas pequeñas, diversos enemigos y cosas distintas pero afines (visabhāga),[^17] etc. ("Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca", Kacc. §322; Rū. §359). Sin embargo, formas como "hatthapādā", manos y pies, y "maṃsalohitāni", carne y sangre, se explican como compuesto copulativo individual (Rū. §359).[^18]
+1125be  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Compuesto copulativo colectivo. Los miembros se toman como un conjunto y no individualmente; por eso, igual que el compuesto numérico colectivo (samāhāra-digu), este compuesto está en singular y en género neutro. Ej., "cakkhu ca sotañ ca" = "cakkhusotaṃ", ojo y oído. (Kacc. §322; Rū. §359)
 1125bf  {Normal} 
-1125bg  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana">>
-1125bh  | significado | resolución | compuesto | traducción |
-1125bi  | partes de los seres (pāṇyaṅga) | cakkhu ca sotañ ca | cakkhusotaṃ | ojo y oído |
-1125bj  |  | mukhañ ca nāsikā ca | mukhanāsikaṃ | boca y nariz |
-1125bk  |  | chavi ca maṃsañ ca lohitañ ca | chavimaṃsalohitaṃ | piel, carne y sangre |
-1125bl  | instrumentos musicales (tūriyaṅga) | gītañ ca vāditañ ca | gītavāditaṃ | canto y música instrumental |
-1125bm  |  | saṅkho ca paṇavo ca | saṅkhapaṇavaṃ | concha y tambor pequeño |
-1125bn  | partes de un vehículo (yoggaṅga) | yugañ ca naṅgalañ ca | yuganaṅgalaṃ | yugo y arado |
-1125bo  |  | phālo ca pācanañ ca | phālapācanaṃ | reja de arado y aguijada |
-1125bp  | partes de un ejército (senaṅga) | hatthino ca assā ca | hatthiassaṃ | elefantes y caballos |
-1125bq  |  | asi ca cammañ ca | asicammaṃ | espada y escudo |
-1125br  | criaturas pequeñas (khuddajantuka) | ḍaṃsā ca makasā ca | ḍaṃsamakasaṃ | moscas y mosquitos |
-1125bs  |  | kuntho ca kipilliko ca | kunthakipillikaṃ | hormiga y hormiga blanca |
-1125bt  | diversos enemigos (vividhaviruddha) | ahi ca nakulo ca | ahinakulaṃ | serpiente y mangosta |
-1125bu  |  | kāko ca ulūko ca | kākolūkaṃ | cuervo y búho |
-1125bv  | cosas distintas pero afines (visabhāga) | sīlañ ca paññāṇañ ca | sīlapaññāṇaṃ | virtud y sabiduría |
-1125bw  |  | samatho ca vipassanā ca | samathavipassanaṃ | tranquilidad e introspección |
-1125bx  |  | nāmañ ca rūpañ ca | nāmarūpaṃ | nāma y rūpa |
-1125by  |  | hiri ca ottappañ ca | hirottappaṃ | hiri y ottappa |
-1125bz  <</TABLA>>
-1125ca  {Normal} 
-1125cb  {IEBH-nota fuente="Tipiṭaka"} [^18]: En el canon: "samathavipassanaṃ yuganaddhaṃ bhāveti", desarrolla la tranquilidad y la introspección unidas (A. i 475 (PTS ii 157)), frente a la resolución "samatho ca vipassanā ca" (D. iii 179 (PTS iii 213)); "viññāṇapaccayā nāmarūpaṃ" (D. ii 28 (PTS ii 32)); "tibbaṃ me hirottappaṃ paccupaṭṭhitaṃ bhavissati" (S. i 420 (PTS ii 220)).
-1125cc  {Normal} 
-1125cd  {IEBH fuente="Rūpasiddhi" forma=p} Por la palabra "ādi", etc., del aforismo, Rūpasiddhi incluye también: nombres que se distinguen por el género (aññoññaliṅgavisesita), números y medidas (saṅkhyāparimāṇa), gente de baja condición (pacanacaṇḍāla) y direcciones (disā). (Rū. §359)
-1125ce  {Normal} 
-1125cf  <<TABLA IEBH fuente="Rūpasiddhi">>
-1125cg  | significado | resolución | compuesto | traducción |
-1125ch  | distinguidos por el género (aññoññaliṅgavisesita) | dāsī ca dāso ca | dāsidāsaṃ | esclava y esclavo |
-1125ci  |  | itthī ca pumā ca | itthipumaṃ | mujer y hombre |
-1125cj  |  | patto ca cīvarañ ca | pattacīvaraṃ | cuenco y túnica |
-1125ck  | números y medidas (saṅkhyāparimāṇa) | ekakañ ca dukañ ca | ekakadukaṃ | la unidad y la díada |
-1125cl  |  | tikañ ca catukkañ ca | tikacatukkaṃ | tríada y tétrada |
-1125cm  |  | dīgho ca majjhimo ca | dīghamajjhimaṃ | largo y mediano[^19] |
-1125cn  | gente de baja condición (pacanacaṇḍāla) | orabbhikā ca sūkarikā ca | orabbhikasūkarikaṃ | carniceros de ovejas y de cerdos |
-1125co  |  | sākuṇiko ca māgaviko ca | sākuṇikamāgavikaṃ | pajarero y cazador |
-1125cp  | direcciones (disā) | pubbā ca aparā ca | pubbāparaṃ | este y oeste |
-1125cq  |  | dakkhiṇā ca uttarā ca | dakkhiṇuttaraṃ | sur y norte |
-1125cr  <</TABLA>>
-1125cs  {Normal} 
-1125ct  {IEBH fuente="Rūpasiddhi" forma=p} En los compuestos de números el número menor va primero: "ekakadukaṃ", "dukatikaṃ", "tikacatukkaṃ". En "dāsidāsaṃ" se acorta la vocal del medio ("dāsī" → "dāsi").
-1125cu  {Normal} 
-1125cv  {IEBH-nota fuente="Niruttidīpanī · Tipiṭaka"} [^19]: Niruttidīpanī entiende "dīghamajjhimaṃ" de otra manera: lo pone en una clase propia, la de las colecciones de una misma recitación (ekasaṅgītidvanda), junto con "aṅguttarasaṃyuttakaṃ" y "khandhakavibhaṅgaṃ"; es decir, el Dīgha y el Majjhima. En el canon, compuestos colectivos de esta clase y de la siguiente aparecen juntos en un solo pasaje: "Puttabhariyaṃ … dāsidāsaṃ jātidhammaṃ, ajeḷakaṃ jātidhammaṃ, kukkuṭasūkaraṃ jātidhammaṃ, hatthigavāssavaḷavaṃ jātidhammaṃ, jātarūparajataṃ jātidhammaṃ" (M. i 217 (PTS i 162)); y "pattacīvaraṃ paṭiggahesuṃ" (M. i 228 (PTS i 171)).
-1125cw  {Normal} 
-1125cx  {IEBH fuente="Rūpasiddhi · Niruttidīpanī · U Sīlānanda" forma=p} En «pacanacaṇḍāla», «pacana» no es aquí «cocinar». Según U Sīlānanda (clase de Rūpasiddhi n.º 50), se dice en sentido figurado de los que dañan a otros seres, como si los quemaran, como los que matan ovejas, cerdos, aves y animales de caza (orabbhika, sūkarika, sākuṇika, māgavika); y «caṇḍāla» es el nombre de un grupo de gente que hacía trabajos despreciables, como cuidar los cementerios y quemar los cadáveres. Rūpasiddhi y Niruttidīpanī dan la clase y sus ejemplos sin explicar el nombre (Rū. §359 (p. 212); Niruttidīpanī p. 135).
+1125bg  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Se declina en singular según el paradigma de "tilokaṃ", aplicable a todos los compuestos colectivos (véase el compuesto numérico): "cakkhusotaṃ, he cakkhusota, cakkhusotaṃ, cakkhusotena", etc. (Rū. §359).[^16]
+1125bh  {Normal} 
+1125bi  {IEBH-nota fuente="Rūpasiddhi · Kaccāyana · Suttaniddesa · Tipiṭaka"} [^16]: En el canon: "Aguttaṃ cakkhusotasmiṃ", desprotegido en el ojo y el oído (A. i 284 (PTS i 281)), con la séptima inflexión singular del paradigma. Rūpasiddhi advierte que a veces el compuesto colectivo no es neutro, como lo muestra la forma "aṃmo" del aforismo "Aṃ-mo niggahitaṃ jha-la-pehi" (Kacc. §82; Rū. §149); así "ādhipaccaparivāro", "chandapārisuddhi", "paṭisandhippavattiyaṃ" (Rū. §359). Suttaniddesa da también "cittuppādo" (Suttaniddesa, ad Kacc. §82).
+1125bj  {Normal} 
+1125bk  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} El compuesto copulativo es colectivo, por regla y no facultativamente, cuando sus miembros significan partes de los seres, instrumentos musicales, partes de un vehículo, partes de un ejército, criaturas pequeñas, diversos enemigos y cosas distintas pero afines (visabhāga),[^17] etc. ("Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddha-visabhāgatthādīnañ ca", Kacc. §322; Rū. §359). Sin embargo, formas como "hatthapādā", manos y pies, y "maṃsalohitāni", carne y sangre, se explican como compuesto copulativo individual (Rū. §359).[^18]
+1125bl  {Normal} 
+1125bm  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana">>
+1125bn  | significado | resolución | compuesto | traducción |
+1125bo  | partes de los seres (pāṇyaṅga) | cakkhu ca sotañ ca | cakkhusotaṃ | ojo y oído |
+1125bp  |  | mukhañ ca nāsikā ca | mukhanāsikaṃ | boca y nariz |
+1125bq  |  | chavi ca maṃsañ ca lohitañ ca | chavimaṃsalohitaṃ | piel, carne y sangre |
+1125br  | instrumentos musicales (tūriyaṅga) | gītañ ca vāditañ ca | gītavāditaṃ | canto y música instrumental |
+1125bs  |  | saṅkho ca paṇavo ca | saṅkhapaṇavaṃ | concha y tambor pequeño |
+1125bt  | partes de un vehículo (yoggaṅga) | yugañ ca naṅgalañ ca | yuganaṅgalaṃ | yugo y arado |
+1125bu  |  | phālo ca pācanañ ca | phālapācanaṃ | reja de arado y aguijada |
+1125bv  | partes de un ejército (senaṅga) | hatthino ca assā ca | hatthiassaṃ | elefantes y caballos |
+1125bw  |  | asi ca cammañ ca | asicammaṃ | espada y escudo |
+1125bx  | criaturas pequeñas (khuddajantuka) | ḍaṃsā ca makasā ca | ḍaṃsamakasaṃ | moscas y mosquitos |
+1125by  |  | kuntho ca kipilliko ca | kunthakipillikaṃ | hormiga y hormiga blanca |
+1125bz  | diversos enemigos (vividhaviruddha) | ahi ca nakulo ca | ahinakulaṃ | serpiente y mangosta |
+1125ca  |  | kāko ca ulūko ca | kākolūkaṃ | cuervo y búho |
+1125cb  | cosas distintas pero afines (visabhāga) | sīlañ ca paññāṇañ ca | sīlapaññāṇaṃ | virtud y sabiduría |
+1125cc  |  | samatho ca vipassanā ca | samathavipassanaṃ | tranquilidad e introspección |
+1125cd  |  | nāmañ ca rūpañ ca | nāmarūpaṃ | nāma y rūpa |
+1125ce  |  | hiri ca ottappañ ca | hirottappaṃ | hiri y ottappa |
+1125cf  <</TABLA>>
+1125cg  {Normal} 
+1125ch  {IEBH-nota fuente="Tipiṭaka"} [^18]: En el canon: "samathavipassanaṃ yuganaddhaṃ bhāveti", desarrolla la tranquilidad y la introspección unidas (A. i 475 (PTS ii 157)), frente a la resolución "samatho ca vipassanā ca" (D. iii 179 (PTS iii 213)); "viññāṇapaccayā nāmarūpaṃ" (D. ii 28 (PTS ii 32)); "tibbaṃ me hirottappaṃ paccupaṭṭhitaṃ bhavissati" (S. i 420 (PTS ii 220)).
+1125ci  {Normal} 
+1125cj  {IEBH fuente="Rūpasiddhi" forma=p} Por la palabra "ādi", etc., del aforismo, Rūpasiddhi incluye también: nombres que se distinguen por el género (aññoññaliṅgavisesita), números y medidas (saṅkhyāparimāṇa), gente de baja condición (pacanacaṇḍāla) y direcciones (disā). (Rū. §359)
+1125ck  {Normal} 
+1125cl  <<TABLA IEBH fuente="Rūpasiddhi">>
+1125cm  | significado | resolución | compuesto | traducción |
+1125cn  | distinguidos por el género (aññoññaliṅgavisesita) | dāsī ca dāso ca | dāsidāsaṃ | esclava y esclavo |
+1125co  |  | itthī ca pumā ca | itthipumaṃ | mujer y hombre |
+1125cp  |  | patto ca cīvarañ ca | pattacīvaraṃ | cuenco y túnica |
+1125cq  | números y medidas (saṅkhyāparimāṇa) | ekakañ ca dukañ ca | ekakadukaṃ | la unidad y la díada |
+1125cr  |  | tikañ ca catukkañ ca | tikacatukkaṃ | tríada y tétrada |
+1125cs  |  | dīgho ca majjhimo ca | dīghamajjhimaṃ | largo y mediano[^19] |
+1125ct  | gente de baja condición (pacanacaṇḍāla) | orabbhikā ca sūkarikā ca | orabbhikasūkarikaṃ | carniceros de ovejas y de cerdos |
+1125cu  |  | sākuṇiko ca māgaviko ca | sākuṇikamāgavikaṃ | pajarero y cazador |
+1125cv  | direcciones (disā) | pubbā ca aparā ca | pubbāparaṃ | este y oeste |
+1125cw  |  | dakkhiṇā ca uttarā ca | dakkhiṇuttaraṃ | sur y norte |
+1125cx  <</TABLA>>
 1125cy  {Normal} 
-1125cz  {Normal} 
-1125da  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Con los nombres de árboles, hierbas, animales, riquezas, granos y distritos, etc., el compuesto copulativo es colectivo facultativamente: está en singular y en género neutro o, si no, en plural y con el género del último miembro ("Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca", Kacc. §323; Rū. §360).
-1125db  {Normal} 
-1125dc  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana">>
-1125dd  | significado | resolución | compuesto | traducción |
-1125de  | árboles (rukkha) | assatthā ca kapitthā ca | assatthakapitthaṃ, assatthakapitthā vā | higueras sagradas y manzanos de madera |
-1125df  | hierbas (tiṇa) | usīrāni ca bīraṇāni ca | usīrabīraṇaṃ, usīrabīraṇāni vā | usīra y bīraṇa (hierbas) |
-1125dg  | animales (pasu) | ajā ca eḷakā ca | ajeḷakaṃ, ajeḷakā vā | cabras y ovejas |
-1125dh  |  | hatthī ca gāvo ca assā ca vaḷavā ca | hatthigavassavaḷavaṃ, hatthigavassavaḷavā vā | elefantes, vacas, caballos y yeguas |
-1125di  | riquezas (dhana) | hiraññañ ca suvaṇṇañ ca | hiraññasuvaṇṇaṃ, hiraññasuvaṇṇāni vā | plata y oro |
-1125dj  | granos (dhañña) | sālī ca yavā ca | sāliyavaṃ, sāliyavā vā | arroz y cebada |
-1125dk  | distritos (janapada) | kāsī ca kosalā ca | Kāsikosalaṃ, Kāsikosalā vā | Kāsī y Kosalā |
-1125dl  |  | vajjī ca mallā ca | Vajjimallaṃ, Vajjimallā vā | Vajjī y Mallā |
-1125dm  <</TABLA>>
-1125dn  {Normal} 
-1125do  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Por la palabra "ādi", etc., Rūpasiddhi incluye aquí también los opuestos (aññoññappaṭipakkhadhamma) y las aves (sakuṇa):[^20]
-1125dp  {Normal} 
-1125dq  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana">>
-1125dr  | significado | resolución | compuesto | traducción |
-1125ds  | opuestos (aññoññappaṭipakkhadhamma) | kusalañ ca akusalañ ca | kusalākusalaṃ, kusalākusalā vā | kusala y akusala |
-1125dt  |  | sukhañ ca dukkhañ ca | sukhadukkhaṃ, sukhadukkhāni vā | placer y dolor |
-1125du  |  | ratti ca divā ca | rattindivaṃ, rattindivā vā | noche y día |
-1125dv  |  | ahañ ca ratti ca | ahorattaṃ, ahorattā vā | día y noche |
-1125dw  | aves (sakuṇa) | haṃsā ca bakā ca | haṃsabakaṃ, haṃsabakā vā | cisnes y garzas |
-1125dx  <</TABLA>>
-1125dy  {Normal} 
-1125dz  {IEBH-nota fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī · Tipiṭaka"} [^20]: Rūpasiddhi cuenta "kusalākusalaṃ" entre los facultativos (Rū. §360), y Kaccāyana pone del mismo modo "sāvajjānavajjaṃ", "hīnapaṇītaṃ" y "kaṇhasukkaṃ" bajo el "ādi" de este aforismo (Kacc. §323). En cambio, para Saddanīti es un caso de los diversos enemigos (vividhaviruddha) (Sad. (Smith p. 750)), y Niruttidīpanī (sutta 358; Nir. 253) lo pone entre los opuestos (vividhaviruddha), que distingue de los enemigos (niccaveri); para ambos el colectivo es obligatorio. En el canon el plural aparece sólo como calificativo ("kusalākusalānaṃ dhammānaṃ vipākā", Dhs. 145 (PTS p. 124)); como nombre aparece en singular: "saṃkhittena kusalākusalaṃ desetu", que me enseñe brevemente el kusala y el akusala (M. ii 157 (PTS i 489)). Otras atestaciones: "rājā pasenadi kosalo kāsikosalaṃ ajjhāvasati" (D. i 217 (PTS i 227)); "pahūtaṃ hiraññasuvaṇṇaṃ ohāya" (D. i 108 (PTS i 115)); "imaṃ rattindivaṃ vītināmeyya" (M. i 16 (PTS i 13)); "Ahorattaṃ anuyuñjaṃ" (S. i 123 (PTS i 122)).
+1125cz  {IEBH fuente="Rūpasiddhi" forma=p} En los compuestos de números el número menor va primero: "ekakadukaṃ", "dukatikaṃ", "tikacatukkaṃ". En "dāsidāsaṃ" se acorta la vocal del medio ("dāsī" → "dāsi").
+1125da  {Normal} 
+1125db  {IEBH-nota fuente="Niruttidīpanī · Tipiṭaka"} [^19]: Niruttidīpanī entiende "dīghamajjhimaṃ" de otra manera: lo pone en una clase propia, la de las colecciones de una misma recitación (ekasaṅgītidvanda), junto con "aṅguttarasaṃyuttakaṃ" y "khandhakavibhaṅgaṃ"; es decir, el Dīgha y el Majjhima. En el canon, compuestos colectivos de esta clase y de la siguiente aparecen juntos en un solo pasaje: "Puttabhariyaṃ … dāsidāsaṃ jātidhammaṃ, ajeḷakaṃ jātidhammaṃ, kukkuṭasūkaraṃ jātidhammaṃ, hatthigavāssavaḷavaṃ jātidhammaṃ, jātarūparajataṃ jātidhammaṃ" (M. i 217 (PTS i 162)); y "pattacīvaraṃ paṭiggahesuṃ" (M. i 228 (PTS i 171)).
+1125dc  {Normal} 
+1125dd  {IEBH fuente="Rūpasiddhi · Niruttidīpanī · U Sīlānanda" forma=p} En «pacanacaṇḍāla», «pacana» no es aquí «cocinar». Según U Sīlānanda (clase de Rūpasiddhi n.º 50), se dice en sentido figurado de los que dañan a otros seres, como si los quemaran, como los que matan ovejas, cerdos, aves y animales de caza (orabbhika, sūkarika, sākuṇika, māgavika); y «caṇḍāla» es el nombre de un grupo de gente que hacía trabajos despreciables, como cuidar los cementerios y quemar los cadáveres. Rūpasiddhi y Niruttidīpanī dan la clase y sus ejemplos sin explicar el nombre (Rū. §359 (p. 212); Niruttidīpanī p. 135).
+1125de  {Normal} 
+1125df  {Normal} 
+1125dg  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Con los nombres de árboles, hierbas, animales, riquezas, granos y distritos, etc., el compuesto copulativo es colectivo facultativamente: está en singular y en género neutro o, si no, en plural y con el género del último miembro ("Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca", Kacc. §323; Rū. §360).
+1125dh  {Normal} 
+1125di  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana">>
+1125dj  | significado | resolución | compuesto | traducción |
+1125dk  | árboles (rukkha) | assatthā ca kapitthā ca | assatthakapitthaṃ, assatthakapitthā vā | higueras sagradas y manzanos de madera |
+1125dl  | hierbas (tiṇa) | usīrāni ca bīraṇāni ca | usīrabīraṇaṃ, usīrabīraṇāni vā | usīra y bīraṇa (hierbas) |
+1125dm  | animales (pasu) | ajā ca eḷakā ca | ajeḷakaṃ, ajeḷakā vā | cabras y ovejas |
+1125dn  |  | hatthī ca gāvo ca assā ca vaḷavā ca | hatthigavassavaḷavaṃ, hatthigavassavaḷavā vā | elefantes, vacas, caballos y yeguas |
+1125do  | riquezas (dhana) | hiraññañ ca suvaṇṇañ ca | hiraññasuvaṇṇaṃ, hiraññasuvaṇṇāni vā | plata y oro |
+1125dp  | granos (dhañña) | sālī ca yavā ca | sāliyavaṃ, sāliyavā vā | arroz y cebada |
+1125dq  | distritos (janapada) | kāsī ca kosalā ca | Kāsikosalaṃ, Kāsikosalā vā | Kāsī y Kosalā |
+1125dr  |  | vajjī ca mallā ca | Vajjimallaṃ, Vajjimallā vā | Vajjī y Mallā |
+1125ds  <</TABLA>>
+1125dt  {Normal} 
+1125du  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Por la palabra "ādi", etc., Rūpasiddhi incluye aquí también los opuestos (aññoññappaṭipakkhadhamma) y las aves (sakuṇa):[^20]
+1125dv  {Normal} 
+1125dw  <<TABLA IEBH fuente="Rūpasiddhi · Kaccāyana">>
+1125dx  | significado | resolución | compuesto | traducción |
+1125dy  | opuestos (aññoññappaṭipakkhadhamma) | kusalañ ca akusalañ ca | kusalākusalaṃ, kusalākusalā vā | kusala y akusala |
+1125dz  |  | sukhañ ca dukkhañ ca | sukhadukkhaṃ, sukhadukkhāni vā | placer y dolor |
+1125ea  |  | ratti ca divā ca | rattindivaṃ, rattindivā vā | noche y día |
+1125eb  |  | ahañ ca ratti ca | ahorattaṃ, ahorattā vā | día y noche |
+1125ec  | aves (sakuṇa) | haṃsā ca bakā ca | haṃsabakaṃ, haṃsabakā vā | cisnes y garzas |
+1125ed  <</TABLA>>
+1125ee  {Normal} 
+1125ef  {IEBH-nota fuente="Rūpasiddhi · Kaccāyana · Saddanīti · Niruttidīpanī · Tipiṭaka"} [^20]: Rūpasiddhi cuenta "kusalākusalaṃ" entre los facultativos (Rū. §360), y Kaccāyana pone del mismo modo "sāvajjānavajjaṃ", "hīnapaṇītaṃ" y "kaṇhasukkaṃ" bajo el "ādi" de este aforismo (Kacc. §323). En cambio, para Saddanīti es un caso de los diversos enemigos (vividhaviruddha) (Sad. (Smith p. 750)), y Niruttidīpanī (sutta 358; Nir. 253) lo pone entre los opuestos (vividhaviruddha), que distingue de los enemigos (niccaveri); para ambos el colectivo es obligatorio. En el canon el plural aparece sólo como calificativo ("kusalākusalānaṃ dhammānaṃ vipākā", Dhs. 145 (PTS p. 124)); como nombre aparece en singular: "saṃkhittena kusalākusalaṃ desetu", que me enseñe brevemente el kusala y el akusala (M. ii 157 (PTS i 489)). Otras atestaciones: "rājā pasenadi kosalo kāsikosalaṃ ajjhāvasati" (D. i 217 (PTS i 227)); "pahūtaṃ hiraññasuvaṇṇaṃ ohāya" (D. i 108 (PTS i 115)); "imaṃ rattindivaṃ vītināmeyya" (M. i 16 (PTS i 13)); "Ahorattaṃ anuyuñjaṃ" (S. i 123 (PTS i 122)).
 1126  {Normal} 
 1127  {Normal} 
 1128  {Normal} 
@@ -1693,6 +1726,9 @@
 1137  | {IEBH fuente="Rūpasiddhi" celdas="2,3"} 5 | Compuesto relativo (bahubbīhi-samāsa) | chinnahattho | chinnā hatthā yassa so |
 1138  | {IEBH fuente="Rūpasiddhi" celdas="2,3"} 6 | Compuesto copulativo (dvanda-samāsa) | Sāriputtamoggallānā | Sāriputto ca Moggallāno ca |
 1139  <</TABLA>>
+1139a  {Normal} 
+1139b  {IEBH fuente="Rūpasiddhi · Kaccāyana" forma=p} Para las precisiones de las fuentes sobre el género véase cada clase: en el compuesto adverbial es el compuesto entero el que se considera neutro (Kacc. §320; Rū. §335); el compuesto numérico no colectivo va en singular con «eka» (ekapuggalo, Rū. §350); en el compuesto copulativo, Rūpasiddhi da el género del último miembro para el individual y el neutro singular para el colectivo (Rū. §357; Rū. §359).
+1139c  {Normal} 
 1140  {Normal} 
 1141  
 1142  <<NOTAS>>

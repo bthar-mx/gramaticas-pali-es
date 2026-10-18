@@ -56,15 +56,15 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESTINO = os.path.join(RAIZ, "recursos", "compuestos", "texto-revisado.txt")
 REGISTRO = os.path.join(RAIZ, "recursos", "compuestos", "aplicado.json")
 
-VERSION = "0.3.1"
-FECHA = "2026-10-17"
+VERSION = "0.4"
+FECHA = "2026-10-18"
 ESTADO_ES = "Borrador revisado (pendiente de aprobación del IEBH)"
 ESTADO_EN = "Revised draft (pending IEBH approval)"
-NOTA_VERSION = ("Se aplicaron las propuestas de revisión según el consejo verificado "
-                "(correcciones, referencias y añadidos rotulados IEBH); primera ronda de "
-                "la revisión del IEBH (177 puntos conformes, ninguno revertido); a la "
-                "espera de la aprobación del resto."
-                " v0.3.1: título del documento en inglés, «Compound (samāsa)»; llamadas de nota protegidas de la traducción automática del navegador. Sāvatthī (no «Sāvatthi») en el ejemplo del compuesto relativo de la segunda inflexión. Edición inglesa de la página, en borrador (sin revisar por el IEBH).")
+NOTA_VERSION = ("Revisión del IEBH completa: todas las propuestas aplicadas según el consejo verificado "
+                "(correcciones, referencias y añadidos rotulados IEBH); el género de cada clase, según la nota "
+                "de Nandisena «Qué género tienen cada uno de los seis compuestos» (2004); el pāḷi citado, con "
+                "el sandhi en edición moderna según la edición de Kaccāyana del IEBH; edición inglesa de la "
+                "página, en borrador (sin revisar por el IEBH).")
 
 # Notas propuestas como «[^n]: …» que ningún texto llama y que tienen un
 # destino mejor que un párrafo suelto en su L. Cada una, con su porqué en el
@@ -81,6 +81,12 @@ DESTINO_NOTA = {
 COLOCACION_EXTRA = {
     # C-012 partía «… los siguientes significados:» de su lista: va tras la lista (y tras C-019)
     "C-012": "0448",
+    # N-011 y N-012 usan «individual» y «colectivo», que el texto introduce en 1125n (verif-N)
+    # N-002 (la frase de Nandisena) va delante de N-003, que la comenta
+    "N-002": "0030e",
+    "N-003": "0030e",
+    "N-011": "1125n",
+    "N-012": "1125n",
 }
 
 # Referencias puras que se pliegan al rótulo, como las de las demás clases
@@ -168,6 +174,7 @@ ROTULOS = [
 ]
 
 OBRAS = [
+    (r"Qué género tienen", "Nandisena, «Qué género tienen cada uno de los seis compuestos» (2004)"),
     (r"\bRū\.|Rūpasiddhi", "Rūpasiddhi"),
     (r"\bKacc?\.|Kaccāyana", "Kaccāyana"),
     (r"\bSad\.|Saddanīti", "Saddanīti"),
@@ -274,6 +281,7 @@ class Texto:
         self.c = {}           # L → contenido actual («{Normal} …», «| … |», «[^n]: …»)
         self.orig = {}
         self.tras = {}        # L → lista de líneas insertadas detrás
+        self.tras_de = {}     # L original → [(sufijo de una línea insertada, líneas)] detrás de ésta
         self.tablas = []      # (desde, hasta)
         self.notas_desde = None
         abierta = None
@@ -312,9 +320,38 @@ class Texto:
         return [x for x in self.L if x != "NOTAS" and L <= x <= hasta]
 
     def insertar(self, L, lineas):
-        self.tras.setdefault(L, []).extend(lineas)
+        if L in self.c or L == "NOTAS":
+            self.tras.setdefault(L, []).extend(lineas)
+            return
+        # L es una línea que ya insertó otro punto («0030e»): se inserta justo detrás
+        # de ella, dentro de la lista de su línea original. Antes de 2026-10-18 esto
+        # se guardaba en tras[«0030e»] y no se escribía nunca.
+        m = re.match(r"^(\d{4})([a-z]+)$", L)
+        if not m or m.group(1) not in self.c:
+            raise SystemExit("✗ insertar: no existe la línea {0}".format(L))
+        base, suf = m.groups()
+        # se resuelve al escribir, sobre la lista de su línea original tal como quedó
+        # con las inserciones normales; varias en el mismo punto conservan su orden
+        self.tras_de.setdefault(base, []).append((suf, list(lineas)))
+
+    def resolver_tras_de(self):
+        for base, pend in self.tras_de.items():
+            lista = self.tras.get(base, [])
+            sufs = [sufijo(k) for k in range(len(lista))]
+            for suf, _ in pend:
+                if suf not in sufs:
+                    raise SystemExit("✗ insertar: no existe la línea {0}{1}".format(base, suf))
+            nueva = []
+            for k, linea in enumerate(lista):
+                nueva.append(linea)
+                for suf, lineas in pend:
+                    if suf == sufs[k]:
+                        nueva.extend(lineas)
+            self.tras[base] = nueva
+        self.tras_de = {}
 
     def escribir(self):
+        self.resolver_tras_de()
         out = list(self.cab)
         for L in self.L:
             if L == "NOTAS":
@@ -577,6 +614,10 @@ def main(argv):
     trabajo = argv[1]
     props, ver, aud, ov, extra = cargar(trabajo)
     items, no_aplicados = puntos(props, ver, aud, ov, extra)
+    # los puntos de la guía (L «guia …») no van en este texto: se aplican a mano en guia.md
+    for it in [x for x in items if str(x["L"]).startswith("guia")]:
+        no_aplicados.append({"id": it["id"], "motivo": "guía: se aplica en recursos/compuestos/guia.md ({0})".format(it["L"])})
+    items = [x for x in items if not str(x["L"]).startswith("guia")]
     T = Texto(os.path.join(trabajo, "base.txt"))
     registro = []
     conflictos = []

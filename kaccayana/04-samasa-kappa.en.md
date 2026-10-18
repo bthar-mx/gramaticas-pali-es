@@ -169,7 +169,7 @@ Examples:
 
 Digussa samāsassa ekattaṃ hoti, napuṃsakaliṅgattañ ca.
 
-Tayo lokā tilokaṃ; tayo daṇḍā tidaṇḍaṃ; tīṇi nayanāni tinayanaṃ; tayo siṅgā tisiṅgaṃ. Catasso disā catuddisaṃ (D. i, 243); pañca indriyāni pañcindriyaṃ (A. i, 468).
+Tayo lokā tilokaṃ; tayo daṇḍā tidaṇḍaṃ; tīṇi nayanāni tinayanaṃ; tayo siṅgā tisiṅgaṃ. Catasso disā catuddisaṃ (D. ii, 11); pañca indriyāni pañcindriyaṃ (A. i, 468).
 
 ---
 
@@ -246,7 +246,7 @@ Thus in the meaning of parts of a vehicle.
 
 Thus in the meaning of parts of an army.
 
-1. Daṃsā ca makasā ca **daṃsamakasaṃ** (fly and mosquito).
+1. Ḍaṃsā ca makasā ca **ḍaṃsamakasaṃ** (fly and mosquito).
 2. Kuntho ca kipilliko ca **kunthakipillikaṃ** (ant and white ant).
 3. Kīṭo ca sarīsapo ca **kīṭasarīsapaṃ** (moth and snake).
 
@@ -330,7 +330,7 @@ What is the use of the name “kammadhāraya” (adjectival compound)? For the u
 
 Saṅkhyāpubbo kammadhārayasamāso **digu**sañño hoti.
 
-Tīṇi malāni timalaṃ; tīṇi phalāni tiphalaṃ; tayo lokā tilokaṃ; tayo daṇḍā tidaṇḍaṃ; catasso disā catuddisaṃ (D. i, 234); pañca indriyāni pañcindriyaṃ (A. i, 468); satta Godāvariyo sattagodāvaraṃ.
+Tīṇi malāni timalaṃ; tīṇi phalāni tiphalaṃ; tayo lokā tilokaṃ; tayo daṇḍā tidaṇḍaṃ; catasso disā catuddisaṃ (D. ii, 11); pañca indriyāni pañcindriyaṃ (A. i, 468); satta Godāvariyo sattagodāvaraṃ.
 
 **Digu** icc anena kvattho? Diguss’ ekattaṃ.
 
@@ -423,7 +423,7 @@ Examples:
 
 Aññesaṃ padānaṃ atthesu dve nāmāni, bahūni nāmāni yadā samasyante, tadā so samāso **bahubbīhi**sañño hoti.
 
-Āgatā samaṇā imaṃ saṃghārāmaṃ so ’yaṃ āgatasamaṇo, saṃghārāmo. Jitāni indriyāni anena samaṇena so ’yaṃ jitindriyo (VimānaA. 262), samaṇo. Dinno suṅkho yassa rañño so ’yaṃ dinnasuṅkho, rājā. Niggatā janā asmā gāmā so ’yaṃ niggatajano, gāmo. Chinno hattho yassa purisassa so ’yaṃ chinnahattho, puriso. Sampannāni sassāni yasmiṃ janapade so ’yaṃ sampannasasso, janapado.
+Āgatā samaṇā imaṃ saṃghārāmaṃ so ’yaṃ āgatasamaṇo, saṃghārāmo. Jitāni indriyāni anena samaṇena so ’yaṃ jitindriyo (VimānaA. 263), samaṇo. Dinno suṅkho yassa rañño so ’yaṃ dinnasuṅkho, rājā. Niggatā janā asmā gāmā so ’yaṃ niggatajano, gāmo. Chinno hattho yassa purisassa so ’yaṃ chinnahattho, puriso. Sampannāni sassāni yasmiṃ janapade so ’yaṃ sampannasasso, janapado.
 
 Nigrodhassa parimaṇḍalo nigrodhaparimaṇḍalo, nigrodhaparimaṇḍalo iva parimaṇḍalo yo rājakumāro so ’yaṃ nigrodhaparimaṇḍalo. Atha vā nigrodhaparimaṇḍalo iva parimaṇḍalo yassa rājakumārassa so ’yaṃ nigrodhaparimaṇḍalo (D. ii, 15; DA. ii, 40; D. iii, 118), rājakumāro.
 

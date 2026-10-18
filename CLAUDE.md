@@ -577,9 +577,9 @@ Kacc. dentro de §271–§315, fuentes declaradas, NFC— y no publica si algo f
 
 ## Estado de recursos/compuestos
 
-La referencia de los compuestos (`/recursos/compuestos/`, v0.3.1, **borrador
-revisado, pendiente de la aprobación del IEBH**, 2026-10-17; primera ronda
-de la revisión del IEBH aplicada: 177 conformes, ninguno revertido) es el documento
+La referencia de los compuestos (`/recursos/compuestos/`, v0.4, **borrador
+revisado**, 2026-10-18; revisión del IEBH completa, todo aprobado según el
+consejo verificado, lote N incluido; falta la revisión de la página completa) es el documento
 «Compuesto (samāsa)» de **Bhikkhu Nandisena** (Word, 2004–2005; sigue a
 Rūpasiddhi y a Kaccāyana; quedó sin terminar), en edición revisada por IEBH.
 Atribución: «Bhikkhu Nandisena, edición revisada por IEBH»; lo añadido lleva la
@@ -628,11 +628,13 @@ La cadena es de tres pasos, y cada uno se rehace solo:
   p. N)»; las clases de U Sīlānanda, «según U Sīlānanda (clase N)». El IEBH
   decidió el 2026-10-17 publicar las citas de Sad. (Smith) y de las clases tal
   como están.
-- `compuestos_aplicar.py` omite los lotes sin `verif-X.json` (el lote N, género
-  de los compuestos según la nota de Nandisena, espera verificación y la marca
-  del IEBH; D-016 incluido).
-- **Pendiente**: el resto de la revisión del IEBH (pasos 3–5, unos 190 puntos), el lote N,
-  la revisión del inglés por el IEBH y la mitad inglesa de la guía (terminología:
+- `compuestos_aplicar.py` omite los lotes sin `verif-X.json`; los puntos de la
+  guía (L «guia …») no los aplica: van a mano en `guia.md`. El lote N (género)
+  está aplicado; N-006 sustituye a D-016 (overrides.json).
+- **Pendiente**: la revisión de la página completa por el IEBH; las erratas K
+  «later» del cap. 4 (K-002…K-006, necesitan el PDF de Nandisena o una nota del
+  traductor); las correcciones H al documento de Google del IEBH sobre el
+  viggaha; la revisión del inglés y la mitad inglesa de la guía (terminología:
   `docs/privado/compuestos/terminologia-ingles.md`).
 
 ## Estado de recursos/paradigmas
