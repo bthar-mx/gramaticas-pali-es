@@ -964,11 +964,11 @@ function descCanon(vp,pts){
 const RE_GRAM=/(Mogg-p-ṭ\.|Rū\.|Nir\.|Sad\.|Moggallāna|Mogg\.)((?:,?\s*(?:\((?:Smith|Padamālā|Dhātumālā)[^()]*\)(?:\s*pp?\.\s*[\d–]+)?|§\s?\d+(?:\s*[–-]\s*§?\s?\d+)?(?:\s*\([^()]*\))?|pp?\.\s*\d+(?:\s*[–-]\s*\d+)?|\d+(?:\s*[–-]\s*\d+)?(?![\d.]))(?:\s*(?:y|and|,)\s*(?=§|pp?\.))?)+)/g;
 const RE_CANON=/(^|[^\wāīūṃñṅṭḍṇḷ\-])(Vis-ṭ|Paṭṭh|Thag|ThīA|Thī|VvA|ApA|ItA|Dhs|Vin|Vism|Vis|Vv|Pu|Sn|Ud|JA|SA|DA|MA|AA|Ap|Bv|Dh|D|M|S|A|V|J)\.\s+((?:[ivx]+\s+)?(?:pp?\.\s*)?\d+(?:\s*[–-]\s*\d+)?)(\s*\(PTS\s+((?:[ivx]+\s+)?(?:pp?\.\s*)?\d+(?:\s*[–-]\s*\d+)?)\))?/g;
 function bloquePorId(id){for(const s of SECC){const b=s.bloques.find(x=>x.id===id);if(b)return b}return null}
-function textoBloque(b){if(!b)return '';let t=L(b.texto)||L(b.titulo)||'';
+function textoBreve(b){if(!b)return '';let t=L(b.texto)||L(b.titulo)||'';
   if(!t&&b.filas&&b.filas[0])t=b.filas.map(f=>Array.isArray(f)?f.map(L).join(' · '):[f.compuesto,L(f.traduccion)].filter(Boolean).join(' — ')).slice(0,2).join(' / ');
   if(!t&&b.compuesto)t=b.compuesto+(L(b.traduccion)?' — '+L(b.traduccion):'');
   t=t.replace(/\*\*?|\[\^\w+\]/g,'').replace(/\s+/g,' ').trim();return t.length>230?t.slice(0,228)+'…':t}
-function tipL(n){try{const id=idDeL(n);if(!id)return null;return {id,tk:TX[lang].lin(+n),tx:textoBloque(bloquePorId(id))}}catch(e){return null}}
+function tipL(n){try{const id=idDeL(n);if(!id)return null;return {id,tk:TX[lang].lin(+n),tx:textoBreve(bloquePorId(id))}}catch(e){return null}}
 /* sólo en el texto que no está ya dentro de un enlace o de un emergente; tres pasadas */
 function enTexto(h,f){
   let dentro=0;
