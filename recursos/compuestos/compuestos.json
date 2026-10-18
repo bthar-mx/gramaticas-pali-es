@@ -5920,6 +5920,294 @@
      "tipo": "h",
      "nivel": 2,
      "texto": {
+      "es": "Nombres propios con la inserción ‘nu’",
+      "en": "Proper names with the insertion ‘nu’"
+     },
+     "L": "0838g",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "id": "tappurisa-nombres-propios-con-la-insercion-nu"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "Cuando el compuesto con miembro precedente es un nombre propio (saññā), la raíz toma el sufijo ‘a’ y al final del miembro precedente se inserta ‘nu’: «Saññāyam a nu» (Rū. §565). Al final de la palabra, esa ‘nu’ se convierte en la niggahita, «Nu niggahītaṃ padante» (Rū. §566), y la niggahita, ante una consonante agrupada, en la nasal de su grupo (Kacc. §31): ari-nu-dama → ariṃdama → arindama. Como los anteriores, son compuestos obligatorios y se resuelven con el verbo. El sufijo ‘a’ no lleva ‘ṇ’ y por eso no hay fortalecimiento (vuddhi): dama, no dāma, «vuddhābhāvo ’va viseso» (Rū. §566).",
+      "en": "When a compound with a preceding member is a proper name (saññā), the root takes the suffix ‘a’ and ‘nu’ is inserted at the end of the preceding member: “Saññāyam a nu” (Rū. §565). At the end of the word that ‘nu’ becomes the niggahita, “Nu niggahītaṃ padante” (Rū. §566), and the niggahita, before a consonant of a group, becomes the nasal of its group (Kacc. §31): ari-nu-dama → ariṃdama → arindama. Like the preceding ones, they are obligatory compounds and are resolved with the verb. The suffix ‘a’ has no ‘ṇ’, so there is no strengthening (vuddhi): dama, not dāma, “vuddhābhāvo ’va viseso” (Rū. §566)."
+     },
+     "L": "0838h",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Nyāsa",
+     "id": "tappurisa-l0838h"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Arindamo",
+     "traduccion": {
+      "es": "el que somete a los enemigos, nombre de un rey",
+      "en": "subduer of enemies, name of a king"
+     },
+     "viggaha": [
+      {
+       "p": "ariṃ",
+       "g": {
+        "es": "al enemigo",
+        "en": "the enemy"
+       }
+      },
+      {
+       "p": "dameti",
+       "g": {
+        "es": "somete",
+        "en": "subdues"
+       }
+      }
+     ],
+     "L": "0838j",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "texto": {
+      "es": "Arindamo (el que somete a los enemigos, nombre de un rey): ariṃ (al enemigo) dameti (somete)",
+      "en": "Arindamo (subduer of enemies, name of a king): ariṃ (the enemy) dameti (subdues)"
+     },
+     "id": "c-arindamo"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Vessantaro",
+     "traduccion": {
+      "es": "nombre de un rey",
+      "en": "name of a king"
+     },
+     "viggaha": [
+      {
+       "p": "vessaṃ",
+       "g": {
+        "es": "la calle de los mercaderes",
+        "en": "the merchants’ street"
+       }
+      },
+      {
+       "p": "tarati",
+       "g": {
+        "es": "cruza",
+        "en": "crosses"
+       }
+      }
+     ],
+     "L": "0838k",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Thitzana",
+     "texto": {
+      "es": "Vessantaro (nombre de un rey): vessaṃ (la calle de los mercaderes) tarati (cruza)",
+      "en": "Vessantaro (name of a king): vessaṃ (the merchants’ street) tarati (crosses)"
+     },
+     "id": "c-vessantaro"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Taṇhaṅkaro",
+     "traduccion": {
+      "es": "nombre de un Buddha",
+      "en": "name of a Buddha"
+     },
+     "viggaha": [
+      {
+       "p": "taṇhaṃ",
+       "g": {
+        "es": "el ansia",
+        "en": "craving"
+       }
+      },
+      {
+       "p": "karoti",
+       "g": {
+        "es": "destruye",
+        "en": "destroys"
+       }
+      }
+     ],
+     "L": "0838l",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "texto": {
+      "es": "Taṇhaṅkaro (nombre de un Buddha): taṇhaṃ (el ansia) karoti (destruye)",
+      "en": "Taṇhaṅkaro (name of a Buddha): taṇhaṃ (craving) karoti (destroys)"
+     },
+     "anexos": [
+      {
+       "es": "Aquí «karoti» significa «destruye»: «taṇhaṃ karoti hiṃsatī ti Taṇhaṅkaro» (Rū. §566).",
+       "en": "Here “karoti” means “destroys”: “taṇhaṃ karoti hiṃsatī ti Taṇhaṅkaro” (Rū. §566).",
+       "fuente": "Rūpasiddhi",
+       "L": "0838m"
+      }
+     ],
+     "id": "c-tanhankaro"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Medhaṅkaro",
+     "traduccion": {
+      "es": "nombre de un Buddha",
+      "en": "name of a Buddha"
+     },
+     "viggaha": [
+      {
+       "p": "medhaṃ",
+       "g": {
+        "es": "la sabiduría",
+        "en": "wisdom"
+       }
+      },
+      {
+       "p": "karoti",
+       "g": {
+        "es": "hace",
+        "en": "makes"
+       }
+      }
+     ],
+     "L": "0838n",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "texto": {
+      "es": "Medhaṅkaro (nombre de un Buddha): medhaṃ (la sabiduría) karoti (hace)",
+      "en": "Medhaṅkaro (name of a Buddha): medhaṃ (wisdom) karoti (makes)"
+     },
+     "id": "c-medhankaro"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Saraṇaṅkaro",
+     "traduccion": {
+      "es": "nombre de un Buddha",
+      "en": "name of a Buddha"
+     },
+     "viggaha": [
+      {
+       "p": "saraṇaṃ",
+       "g": {
+        "es": "el refugio",
+        "en": "refuge"
+       }
+      },
+      {
+       "p": "karoti",
+       "g": {
+        "es": "hace",
+        "en": "makes"
+       }
+      }
+     ],
+     "L": "0838o",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "texto": {
+      "es": "Saraṇaṅkaro (nombre de un Buddha): saraṇaṃ (el refugio) karoti (hace)",
+      "en": "Saraṇaṅkaro (name of a Buddha): saraṇaṃ (refuge) karoti (makes)"
+     },
+     "id": "c-saranankaro"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Dīpaṅkaro",
+     "traduccion": {
+      "es": "nombre de un Buddha",
+      "en": "name of a Buddha"
+     },
+     "viggaha": [
+      {
+       "p": "dīpaṃ",
+       "g": {
+        "es": "la lámpara",
+        "en": "the lamp"
+       }
+      },
+      {
+       "p": "karoti",
+       "g": {
+        "es": "hace",
+        "en": "makes"
+       }
+      }
+     ],
+     "L": "0838p",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "texto": {
+      "es": "Dīpaṅkaro (nombre de un Buddha): dīpaṃ (la lámpara) karoti (hace)",
+      "en": "Dīpaṅkaro (name of a Buddha): dīpaṃ (the lamp) karoti (makes)"
+     },
+     "id": "c-dipankaro"
+    },
+    {
+     "tipo": "interlineal",
+     "origen": "linea",
+     "compuesto": "Purindado",
+     "traduccion": {
+      "es": "nombre de Sakka, rey de los devas",
+      "en": "name of Sakka, king of the devas"
+     },
+     "viggaha": [
+      {
+       "p": "pure",
+       "g": {
+        "es": "antes",
+        "en": "formerly"
+       }
+      },
+      {
+       "p": "dānaṃ",
+       "g": {
+        "es": "dádivas",
+        "en": "gifts"
+       }
+      },
+      {
+       "p": "adāsi",
+       "g": {
+        "es": "dio",
+        "en": "gave"
+       }
+      }
+     ],
+     "L": "0838q",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana",
+     "texto": {
+      "es": "Purindado (nombre de Sakka, rey de los devas): pure (antes) dānaṃ (dádivas) adāsi (dio)",
+      "en": "Purindado (name of Sakka, king of the devas): pure (formerly) dānaṃ (gifts) adāsi (gave)"
+     },
+     "anexos": [
+      {
+       "es": "Aquí no hay ‘nu’: con «pura» delante de la raíz «dada», la ‘a’ final de «pura» se sustituye por ‘iṃ’, «Pure dadā ca iṃ» (Rū. §567), y también esa sustitución se hace después de elidir la inflexión: «idhā pi vibhattilope kate yeva iṃādeso» (Rū. §567).",
+       "en": "Here there is no ‘nu’: with “pura” before the root “dada”, the final ‘a’ of “pura” is replaced by ‘iṃ’, “Pure dadā ca iṃ” (Rū. §567), and this replacement too is made after the inflection is elided: “idhā pi vibhattilope kate yeva iṃādeso” (Rū. §567).",
+       "fuente": "Rūpasiddhi · Kaccāyana",
+       "L": "0838r"
+      }
+     ],
+     "id": "c-purindado"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "¿Se elide aquí la inflexión? En arindamo, taṇhaṅkaro o dīpaṅkaro parece que el primer miembro conserva el acusativo (ariṃ, taṇhaṃ, dīpaṃ). Las fuentes lo explican de dos maneras. Para Rūpasiddhi la inflexión se elide y la nasal es la inserción ‘nu’: «ayaṃ pana nvāgamo samāsaṃ katvā upapadavibhattilope kate yeva hoti», esta inserción se hace sólo después de formar el compuesto y elidir la inflexión del miembro precedente (Rū. §565); Nyāsa deriva arindamo del mismo modo. Son, así, compuestos con inflexión elidida (lutta-samāsa). En cambio, la vutti de Kaccāyana da Medhaṅkaro y Dīpaṅkaro también como ejemplos de que la inflexión no se elide, por el «ca» de «Tesaṃ vibhattiyo lopā ca» (Kacc. §317), y Niruttidīpanī pone dīpaṅkaro, pabhaṅkaro, purindado y vessantaro entre los compuestos determinativos sin elisión (aluttatappurisa) (Nir., «Aluttatappurisa»). Véase más abajo el compuesto determinativo donde la inflexión del primer miembro no se elide.",
+      "en": "Is the inflection elided here? In arindamo, taṇhaṅkaro or dīpaṅkaro the first member seems to keep its accusative (ariṃ, taṇhaṃ, dīpaṃ). The sources explain this in two ways. For Rūpasiddhi the inflection is elided and the nasal is the insertion ‘nu’: “ayaṃ pana nvāgamo samāsaṃ katvā upapadavibhattilope kate yeva hoti”, this insertion is made only after the compound is formed and the inflection of the preceding member is elided (Rū. §565); Nyāsa derives arindamo in the same way. They are thus compounds with the inflection elided (lutta-samāsa). The Kaccāyana vutti, on the other hand, also gives Medhaṅkaro and Dīpaṅkaro as examples of the inflection not being elided, by the “ca” of “Tesaṃ vibhattiyo lopā ca” (Kacc. §317), and Niruttidīpanī places dīpaṅkaro, pabhaṅkaro, purindado and vessantaro among the determinative compounds without elision (aluttatappurisa) (Nir., “Aluttatappurisa”). See below the determinative compound in which the inflection of the first member is not elided."
+     },
+     "L": "0838t",
+     "iebh": true,
+     "fuente": "Rūpasiddhi · Kaccāyana · Nyāsa · Niruttidīpanī",
+     "id": "tappurisa-l0838t"
+    },
+    {
+     "tipo": "h",
+     "nivel": 2,
+     "texto": {
       "es": "(2) En la tercera inflexión (tatiyā-tappurisa)",
       "en": "(2) In the third inflection (tatiyā-tappurisa)"
      },
@@ -9003,6 +9291,17 @@
      "iebh": true,
      "fuente": "Rūpasiddhi · Kaccāyana",
      "id": "tappurisa-l0969b"
+    },
+    {
+     "tipo": "p",
+     "texto": {
+      "es": "La vutti de Kaccāyana da como ejemplos de esta regla, junto a Pabhaṅkaro y amatandado, también Medhaṅkaro y Dīpaṅkaro (Kacc. §317), que Rūpasiddhi explica en cambio con la inserción ‘nu’ de los nombres propios (Rū. §565–§566); véanse los nombres propios en el compuesto determinativo en segunda inflexión.",
+      "en": "The Kaccāyana vutti gives as examples of this rule, besides Pabhaṅkaro and amatandado, also Medhaṅkaro and Dīpaṅkaro (Kacc. §317), which Rūpasiddhi instead explains with the insertion ‘nu’ of proper names (Rū. §565–§566); see the proper names under the determinative compound in the second inflection."
+     },
+     "L": "0969d",
+     "iebh": true,
+     "fuente": "Kaccāyana · Rūpasiddhi",
+     "id": "tappurisa-l0969d"
     },
     {
      "tipo": "interlineal",
