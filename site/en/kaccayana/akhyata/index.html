@@ -6,8 +6,8 @@
 <link href="../../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/kaccayana/akhyata/" hreflang="es" rel="alternate"/>
 <title>Kaccāyana-Byākaraṇaṃ · 6-Ākhyāta-Kappa</title>
-<meta content="1.0" name="version"/>
-<meta content="2026-10-12" name="version-date"/>
+<meta content="1.1" name="version"/>
+<meta content="2026-10-18" name="version-date"/>
 <!-- cabecera:inicio -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -72,7 +72,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <div class="hdr-grammar">Kacc<span class="dia">ā</span>yana-By<span class="dia">ā</span>kara<span class="dia">ṇ</span>a<span class="dia">ṃ</span></div>
 <div class="hdr-sub">Kaccāyana's Grammar</div>
 <div class="hdr-chapter">6-Ākhyāta-Kappa · 6-Verb Chapter</div>
-<div class="hdr-meta">Bilingual Pāḷi–English edition · 118 suttas · 4 sections<span aria-label="Version 1.0 · 12 October 2026 · First English edition: Bhikkhu Nandisena's translation with the apparatus of the Spanish edition (numbered examples, word-count breakdowns after Thitzana, formation sequences, references and notes, two of them by Ven. A. Thitzana) and the corrections to the English recorded in the deviations memo." class="version-badge" data-tip="Version 1.0 · 12 October 2026 · First English edition: Bhikkhu Nandisena's translation with the apparatus of the Spanish edition (numbered examples, word-count breakdowns after Thitzana, formation sequences, references and notes, two of them by Ven. A. Thitzana) and the corrections to the English recorded in the deviations memo.">v1.0<time datetime="2026-10-12">2026-10-12</time></span><a aria-label="Ver este capítulo en español" data-tip="Ver este capítulo en español" href="/kaccayana/akhyata/" id="lang-btn" onclick="try{localStorage.setItem('pali_lang','es')}catch(e){};this.href='/kaccayana/akhyata/'+location.hash"><span class="lang-seg">ES</span><span class="lang-seg lang-cur">EN</span></a></div>
+<div class="hdr-meta">Bilingual Pāḷi–English edition · 118 suttas · 4 sections<span aria-label="Version 1.1 · 18 October 2026 · First English edition: Bhikkhu Nandisena's translation with the apparatus of the Spanish edition (numbered examples, word-count breakdowns after Thitzana, formation sequences, references and notes, two of them by Ven. A. Thitzana) and the corrections to the English recorded in the deviations memo. Version 1.1 adds the card of the introductory verses (K, Kh, G) and puts dashes in the word breakdowns." class="version-badge" data-tip="Version 1.1 · 18 October 2026 · First English edition: Bhikkhu Nandisena's translation with the apparatus of the Spanish edition (numbered examples, word-count breakdowns after Thitzana, formation sequences, references and notes, two of them by Ven. A. Thitzana) and the corrections to the English recorded in the deviations memo. Version 1.1 adds the card of the introductory verses (K, Kh, G) and puts dashes in the word breakdowns.">v1.1<time datetime="2026-10-18">2026-10-18</time></span><a aria-label="Ver este capítulo en español" data-tip="Ver este capítulo en español" href="/kaccayana/akhyata/" id="lang-btn" onclick="try{localStorage.setItem('pali_lang','es')}catch(e){};this.href='/kaccayana/akhyata/'+location.hash"><span class="lang-seg">ES</span><span class="lang-seg lang-cur">EN</span></a></div>
 </div>
 <div class="search-wrap">
 <input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="Search sutta (Pāḷi or English)…" type="search"/>
@@ -97,7 +97,25 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <span class="done-count" id="done-count" title="Suttas studied">0 / 118 studied</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
 </div>
-<div class="kanda-nav" id="kanda-nav"><span class="kanda-nav-label">Kaṇḍa:</span><button aria-label="Go to the first section (Paṭhama-Kaṇḍa, §406–§431)" class="kanda-nav-btn" id="knav-1" onclick="jumpKanda(1)" data-tip="Go to the first section (Paṭhama-Kaṇḍa, §406–§431)">Paṭhama</button><button aria-label="Go to the second section (Dutiya-Kaṇḍa, §432–§457)" class="kanda-nav-btn" id="knav-2" onclick="jumpKanda(2)" data-tip="Go to the second section (Dutiya-Kaṇḍa, §432–§457)">Dutiya</button><button aria-label="Go to the third section (Tatiya-Kaṇḍa, §458–§481)" class="kanda-nav-btn" id="knav-3" onclick="jumpKanda(3)" data-tip="Go to the third section (Tatiya-Kaṇḍa, §458–§481)">Tatiya</button><button aria-label="Go to the fourth section (Catuttha-Kaṇḍa, §482–§523)" class="kanda-nav-btn" id="knav-4" onclick="jumpKanda(4)" data-tip="Go to the fourth section (Catuttha-Kaṇḍa, §482–§523)">Catuttha</button><input aria-label="Go to sutta number…" class="kanda-jump" id="kanda-jump" onkeydown="kandaJumpKey(event)" placeholder="§…" type="search"/></div><div class="kanda-section">
+<div class="kanda-nav" id="kanda-nav"><span class="kanda-nav-label">Kaṇḍa:</span><button aria-label="Go to the first section (Paṭhama-Kaṇḍa, §406–§431)" class="kanda-nav-btn" id="knav-1" onclick="jumpKanda(1)" data-tip="Go to the first section (Paṭhama-Kaṇḍa, §406–§431)">Paṭhama</button><button aria-label="Go to the second section (Dutiya-Kaṇḍa, §432–§457)" class="kanda-nav-btn" id="knav-2" onclick="jumpKanda(2)" data-tip="Go to the second section (Dutiya-Kaṇḍa, §432–§457)">Dutiya</button><button aria-label="Go to the third section (Tatiya-Kaṇḍa, §458–§481)" class="kanda-nav-btn" id="knav-3" onclick="jumpKanda(3)" data-tip="Go to the third section (Tatiya-Kaṇḍa, §458–§481)">Tatiya</button><button aria-label="Go to the fourth section (Catuttha-Kaṇḍa, §482–§523)" class="kanda-nav-btn" id="knav-4" onclick="jumpKanda(4)" data-tip="Go to the fourth section (Catuttha-Kaṇḍa, §482–§523)">Catuttha</button><input aria-label="Go to sutta number…" class="kanda-jump" id="kanda-jump" onkeydown="kandaJumpKey(event)" placeholder="§…" type="search"/></div><div class="sutta-card" id="intro"><div class="sutta-header" onclick="toggleCard('intro')" role="button" tabindex="0"><div class="sutta-meta"><div class="sutta-ref-line"><span class="sutta-pali-title">Introductory verses</span></div></div><svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg></div><div class="sutta-body"><div class="intro-block"><div class="intro-verse"><div class="intro-num">K</div><div class="intro-pali">Ākhyātasāgaram ath’ ajjatanītaraṅgaṃ,<br/>Dhātujjalaṃ vikaraṇ’-āgama-kālamīnaṃ.<br/>Lopānubandhariyam atthavibhāgatīraṃ,<span class="fn-tip"><span class="fn-sup">1</span><span class="fn-tip-box">Lopānubandharayam atthavibhāgatīraṃ (Sī, K).</span></span><br/>Dhīrā taranti kavino puthubuddhināvā.</div><div class="intro-trans">The wise poets by a ship of great knowledge cross the ocean of verbs which has inflections as waves, which has roots as water, which has conjugational signs, augments and tenses as fish, which has elisions and indicatory letters as force, and which has division of meanings as its shore.</div></div><div class="intro-verse"><div class="intro-num">Kh</div><div class="intro-pali">Vicittasaṅkhāraparikkhitaṃ imaṃ,<br/>Ākhyātasaddaṃ vipulaṃ asesato.<br/>Paṇamya sambuddham anantagocaraṃ,<br/>Sugocaraṃ yaṃ vadato suṇātha me.</div><div class="intro-trans">Having paid homage to the Buddha who possesses [a knowledge that has] infinite sphere and who has a good object (Nibbāna), listen fully to me who is about to speak this vast [grammar of] verbs enclosed by variegated formations.</div></div><div class="intro-verse"><div class="intro-num">G</div><div class="intro-pali">Adhikāre maṅgale c’ eva, nipphanne c’ āvadhāraṇe.<br/>Anantare c’ apādāne, athasaddo pavattati.</div><div class="intro-trans">The word “atha” exists [in these meanings]: (i) following (adhikāra), (ii) blessing (maṅgala), (iii) completion (nipphanna), (iv) limiting (avadhāraṇa), (v) no-gap (anantara), and (vi) separation (apādāna).</div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('intro')" title="Mark as studied">
+<span class="done-cb" id="cb-intro"></span>
+<span class="done-label">Studied</span>
+</span>
+<button class="share-btn" onclick="shareSutta('intro')" title="Copy link to this sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Link
+        </button>
+<button class="copy-btn" onclick="copySutta('intro')" title="Copy sutta to clipboard">Copy §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Back to top">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Top ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="kanda-section">
 <div class="kanda-heading" id="kanda-1">Paṭhama-Kaṇḍa<span class="kanda-es">· First section</span></div>
 <div class="sutta-card" id="s406">
 <div class="sutta-header" onclick="toggleCard('s406')" role="button" tabindex="0">
@@ -3989,7 +4007,7 @@ Hover over the Pāḷi terms or the numeric superscripts to see their meaning. E
 <div class="footer-box-copy">
 <span class="marca-lockup"></span>
 Pāḷi text and English translation by Bhikkhu Nandisena; edition, apparatus and glossary by the Instituto de Estudios Buddhistas Hispano (IEBH). This material may be reproduced for personal use and distributed free of charge. Copyright © 2026 IEBH. Published under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> · DOI <a href="https://doi.org/10.5281/zenodo.21948010">10.5281/zenodo.21948010</a>.
-<p class="version-foot">Version 1.0 — <time datetime="2026-10-12">12 October 2026</time>. First English edition: Bhikkhu Nandisena's translation with the apparatus of the Spanish edition (numbered examples, word-count breakdowns after Thitzana, formation sequences, references and notes, two of them by Ven. A. Thitzana) and the corrections to the English recorded in the deviations memo.</p></div>
+<p class="version-foot">Version 1.1 — <time datetime="2026-10-18">18 October 2026</time>. First English edition: Bhikkhu Nandisena's translation with the apparatus of the Spanish edition (numbered examples, word-count breakdowns after Thitzana, formation sequences, references and notes, two of them by Ven. A. Thitzana) and the corrections to the English recorded in the deviations memo. Version 1.1 adds the card of the introductory verses (K, Kh, G) and puts dashes in the word breakdowns.</p></div>
 </div>
 </div>
 </div>

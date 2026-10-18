@@ -6,8 +6,8 @@
 <link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/en/kaccayana/akhyata/" hreflang="en" rel="alternate"/>
 <title>Kaccāyana-Byākaraṇaṃ · 6-Ākhyāta-Kappa</title>
-<meta content="1.0" name="version"/>
-<meta content="2026-10-12" name="version-date"/>
+<meta content="1.1" name="version"/>
+<meta content="2026-10-18" name="version-date"/>
 <!-- cabecera:inicio -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -72,7 +72,7 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <div class="hdr-grammar">Kacc<span class="dia">ā</span>yana-By<span class="dia">ā</span>kara<span class="dia">ṇ</span>a<span class="dia">ṃ</span></div>
 <div class="hdr-sub">Gramática de Kaccāyana</div>
 <div class="hdr-chapter">6-Ākhyāta-Kappa · 6-Capítulo del verbo</div>
-<div class="hdr-meta">Edición bilingüe Pāḷi–Español · 118 suttas · 4 secciones<span aria-label="Versión 1.0 · 12 de octubre de 2026 · Primera edición: §406–§523, los 118 suttas del Ākhyāta-kappa en sus cuatro secciones, revisados por el IEBH, con las referencias canónicas de la edición base, las 71 notas de Nandisena y las añadidas en la revisión —dos de ellas de Ven. A. Thitzana, en §445 y §458—, y las secuencias de formación de los signos de conjugación." class="version-badge" data-tip="Versión 1.0 · 12 de octubre de 2026 · Primera edición: §406–§523, los 118 suttas del Ākhyāta-kappa en sus cuatro secciones, revisados por el IEBH, con las referencias canónicas de la edición base, las 71 notas de Nandisena y las añadidas en la revisión —dos de ellas de Ven. A. Thitzana, en §445 y §458—, y las secuencias de formación de los signos de conjugación.">v1.0<time datetime="2026-10-12">2026-10-12</time></span><a aria-label="View this chapter in English" data-tip="View this chapter in English" href="/en/kaccayana/akhyata/" id="lang-btn" onclick="try{localStorage.setItem('pali_lang','en')}catch(e){};this.href='/en/kaccayana/akhyata/'+location.hash"><span class="lang-seg lang-cur">ES</span><span class="lang-seg">EN</span></a></div>
+<div class="hdr-meta">Edición bilingüe Pāḷi–Español · 118 suttas · 4 secciones<span aria-label="Versión 1.1 · 18 de octubre de 2026 · Primera edición: §406–§523, los 118 suttas del Ākhyāta-kappa en sus cuatro secciones, revisados por el IEBH, con las referencias canónicas de la edición base, las 71 notas de Nandisena y las añadidas en la revisión —dos de ellas de Ven. A. Thitzana, en §445 y §458—, y las secuencias de formación de los signos de conjugación. La 1.1 añade la tarjeta de los versos introductorios (K, Kh, G) y pone guiones en los desgloses." class="version-badge" data-tip="Versión 1.1 · 18 de octubre de 2026 · Primera edición: §406–§523, los 118 suttas del Ākhyāta-kappa en sus cuatro secciones, revisados por el IEBH, con las referencias canónicas de la edición base, las 71 notas de Nandisena y las añadidas en la revisión —dos de ellas de Ven. A. Thitzana, en §445 y §458—, y las secuencias de formación de los signos de conjugación. La 1.1 añade la tarjeta de los versos introductorios (K, Kh, G) y pone guiones en los desgloses.">v1.1<time datetime="2026-10-18">2026-10-18</time></span><a aria-label="View this chapter in English" data-tip="View this chapter in English" href="/en/kaccayana/akhyata/" id="lang-btn" onclick="try{localStorage.setItem('pali_lang','en')}catch(e){};this.href='/en/kaccayana/akhyata/'+location.hash"><span class="lang-seg lang-cur">ES</span><span class="lang-seg">EN</span></a></div>
 </div>
 <div class="search-wrap">
 <input class="search-input" id="search-box" oninput="doSearch(this.value)" placeholder="Buscar sutta (pāḷi o español)…" type="search"/>
@@ -97,7 +97,25 @@ return /^en\b/i.test(n)?'en':'es';}</script>
 <span class="done-count" id="done-count" title="Suttas estudiados">0 / 118 estudiados</span>
 <button class="epub-btn" onclick="exportEpub()">EPUB</button>
 </div>
-<div class="kanda-nav" id="kanda-nav"><span class="kanda-nav-label">Kaṇḍa:</span><button aria-label="Ir a la primera sección (Paṭhama-Kaṇḍa, §406–§431)" class="kanda-nav-btn" id="knav-1" onclick="jumpKanda(1)" data-tip="Ir a la primera sección (Paṭhama-Kaṇḍa, §406–§431)">Paṭhama</button><button aria-label="Ir a la segunda sección (Dutiya-Kaṇḍa, §432–§457)" class="kanda-nav-btn" id="knav-2" onclick="jumpKanda(2)" data-tip="Ir a la segunda sección (Dutiya-Kaṇḍa, §432–§457)">Dutiya</button><button aria-label="Ir a la tercera sección (Tatiya-Kaṇḍa, §458–§481)" class="kanda-nav-btn" id="knav-3" onclick="jumpKanda(3)" data-tip="Ir a la tercera sección (Tatiya-Kaṇḍa, §458–§481)">Tatiya</button><button aria-label="Ir a la cuarta sección (Catuttha-Kaṇḍa, §482–§523)" class="kanda-nav-btn" id="knav-4" onclick="jumpKanda(4)" data-tip="Ir a la cuarta sección (Catuttha-Kaṇḍa, §482–§523)">Catuttha</button><input aria-label="Ir al sutta número…" class="kanda-jump" id="kanda-jump" onkeydown="kandaJumpKey(event)" placeholder="§…" type="search"/></div><div class="kanda-section">
+<div class="kanda-nav" id="kanda-nav"><span class="kanda-nav-label">Kaṇḍa:</span><button aria-label="Ir a la primera sección (Paṭhama-Kaṇḍa, §406–§431)" class="kanda-nav-btn" id="knav-1" onclick="jumpKanda(1)" data-tip="Ir a la primera sección (Paṭhama-Kaṇḍa, §406–§431)">Paṭhama</button><button aria-label="Ir a la segunda sección (Dutiya-Kaṇḍa, §432–§457)" class="kanda-nav-btn" id="knav-2" onclick="jumpKanda(2)" data-tip="Ir a la segunda sección (Dutiya-Kaṇḍa, §432–§457)">Dutiya</button><button aria-label="Ir a la tercera sección (Tatiya-Kaṇḍa, §458–§481)" class="kanda-nav-btn" id="knav-3" onclick="jumpKanda(3)" data-tip="Ir a la tercera sección (Tatiya-Kaṇḍa, §458–§481)">Tatiya</button><button aria-label="Ir a la cuarta sección (Catuttha-Kaṇḍa, §482–§523)" class="kanda-nav-btn" id="knav-4" onclick="jumpKanda(4)" data-tip="Ir a la cuarta sección (Catuttha-Kaṇḍa, §482–§523)">Catuttha</button><input aria-label="Ir al sutta número…" class="kanda-jump" id="kanda-jump" onkeydown="kandaJumpKey(event)" placeholder="§…" type="search"/></div><div class="sutta-card" id="intro"><div class="sutta-header" onclick="toggleCard('intro')" role="button" tabindex="0"><div class="sutta-meta"><div class="sutta-ref-line"><span class="sutta-pali-title">Versos introductorios</span></div></div><svg class="chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M5 7.5l5 5 5-5"></path></svg></div><div class="sutta-body"><div class="intro-block"><div class="intro-verse"><div class="intro-num">K</div><div class="intro-pali">Ākhyātasāgaram ath’ ajjatanītaraṅgaṃ,<br/>Dhātujjalaṃ vikaraṇ’-āgama-kālamīnaṃ.<br/>Lopānubandhariyam atthavibhāgatīraṃ,<span class="fn-tip"><span class="fn-sup">1</span><span class="fn-tip-box">Lopānubandharayam atthavibhāgatīraṃ (Sī, K).</span></span><br/>Dhīrā taranti kavino puthubuddhināvā.</div><div class="intro-trans">Los sabios poetas cruzan, con la nave de la vasta sabiduría, el océano de los verbos que tiene por olas las inflexiones, por agua las raíces, por peces los signos de conjugación, los aumentos y los tiempos, por corriente las elisiones y las letras indicativas, y por orilla la división de los significados.</div></div><div class="intro-verse"><div class="intro-num">Kh</div><div class="intro-pali">Vicittasaṅkhāraparikkhitaṃ imaṃ,<br/>Ākhyātasaddaṃ vipulaṃ asesato.<br/>Paṇamya sambuddham anantagocaraṃ,<br/>Sugocaraṃ yaṃ vadato suṇātha me.</div><div class="intro-trans">Habiendo rendido homenaje al Perfectamente Iluminado, que posee [un conocimiento de] esfera infinita y que tiene un buen objeto (Nibbāna), escuchadme completamente que voy a exponer esta vasta [gramática de los] verbos, provista de una variedad de formaciones.</div></div><div class="intro-verse"><div class="intro-num">G</div><div class="intro-pali">Adhikāre maṅgale c’ eva, nipphanne c’ āvadhāraṇe.<br/>Anantare c’ apādāne, athasaddo pavattati.</div><div class="intro-trans">La palabra “atha” se emplea [en estos significados]: (i) continuación (adhikāra), (ii) bendición (maṅgala), (iii) compleción (nipphanna), (iv) limitación (avadhāraṇa), (v) inmediatez (anantara) y (vi) separación (apādāna).</div></div></div>
+<div class="sutta-footer">
+<span class="done-wrap" onclick="toggleDone('intro')" title="Marcar como estudiado">
+<span class="done-cb" id="cb-intro"></span>
+<span class="done-label">Estudiado</span>
+</span>
+<button class="share-btn" onclick="shareSutta('intro')" title="Copiar enlace a este sutta">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><circle cx="15" cy="5" r="2"></circle><circle cx="5" cy="10" r="2"></circle><circle cx="15" cy="15" r="2"></circle><path d="M7 11l6 3M7 9l6-3"></path></svg>
+          Enlace
+        </button>
+<button class="copy-btn" onclick="copySutta('intro')" title="Copiar sutta al portapapeles">Copiar §</button>
+<button class="back-top-btn" onclick="volverArriba()" title="Volver al inicio">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 15V5M5 10l5-5 5 5"></path></svg>
+          Inicio ↑
+        </button>
+</div>
+</div>
+</div>
+<div class="kanda-section">
 <div class="kanda-heading" id="kanda-1">Paṭhama-Kaṇḍa<span class="kanda-es">· Primera sección</span></div>
 <div class="sutta-card" id="s406">
 <div class="sutta-header" onclick="toggleCard('s406')" role="button" tabindex="0">
@@ -3989,7 +4007,7 @@ Pasa el cursor sobre los términos pāḷi o los superíndices numéricos para v
 <div class="footer-box-copy">
 <span class="marca-lockup"></span>
 Edición del texto en pāḷi y traducción al español por Bhikkhu Nandisena. Este material puede ser reproducido para uso personal y distribuido de forma gratuita. Copyright © 2026 Instituto de Estudios Buddhistas Hispano (IEBH). Publicado bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license">CC BY-NC-ND 4.0</a> · DOI <a href="https://doi.org/10.5281/zenodo.21948010">10.5281/zenodo.21948010</a>.
-<p class="version-foot">Versión 1.0 — <time datetime="2026-10-12">12 de octubre de 2026</time>. Primera edición: §406–§523, los 118 suttas del Ākhyāta-kappa en sus cuatro secciones, revisados por el IEBH, con las referencias canónicas de la edición base, las 71 notas de Nandisena y las añadidas en la revisión —dos de ellas de Ven. A. Thitzana, en §445 y §458—, y las secuencias de formación de los signos de conjugación.</p></div>
+<p class="version-foot">Versión 1.1 — <time datetime="2026-10-18">18 de octubre de 2026</time>. Primera edición: §406–§523, los 118 suttas del Ākhyāta-kappa en sus cuatro secciones, revisados por el IEBH, con las referencias canónicas de la edición base, las 71 notas de Nandisena y las añadidas en la revisión —dos de ellas de Ven. A. Thitzana, en §445 y §458—, y las secuencias de formación de los signos de conjugación. La 1.1 añade la tarjeta de los versos introductorios (K, Kh, G) y pone guiones en los desgloses.</p></div>
 </div>
 </div>
 </div>

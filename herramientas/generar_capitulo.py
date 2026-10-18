@@ -232,24 +232,28 @@ CAPITULOS = {
         "titulo_en": "6-Verb Chapter",
         "anterior": "5-Taddhita-Kappa",
         "siguiente": "7-Kibbidhāna-Kappa",   # en preparación: botón inactivo
-        "version": "1.0",
-        "version_fecha": "2026-10-12",
+        "version": "1.1",
+        "version_fecha": "2026-10-18",
         "version_nota": "Primera edición: §406–§523, los 118 suttas del "
                         "Ākhyāta-kappa en sus cuatro secciones, revisados "
                         "por el IEBH, con las referencias canónicas de la "
                         "edición base, las 71 notas de Nandisena y las "
                         "añadidas en la revisión —dos de ellas de Ven. A. "
                         "Thitzana, en §445 y §458—, y las secuencias de "
-                        "formación de los signos de conjugación.",
-        "version_en": "1.0",
-        "version_fecha_en": "2026-10-12",
+                        "formación de los signos de conjugación. La 1.1 "
+                        "añade la tarjeta de los versos introductorios "
+                        "(K, Kh, G) y pone guiones en los desgloses.",
+        "version_en": "1.1",
+        "version_fecha_en": "2026-10-18",
         "version_nota_en": "First English edition: Bhikkhu Nandisena's "
                            "translation with the apparatus of the Spanish "
                            "edition (numbered examples, word-count "
                            "breakdowns after Thitzana, formation sequences, "
                            "references and notes, two of them by Ven. A. "
                            "Thitzana) and the corrections to the English "
-                           "recorded in the deviations memo.",
+                           "recorded in the deviations memo. Version 1.1 "
+                           "adds the card of the introductory verses (K, Kh, "
+                           "G) and puts dashes in the word breakdowns.",
     },
 }
 
@@ -666,6 +670,8 @@ def leer_notas(lineas):
     return notas, orden
 
 
+# Verso introductorio rotulado: «(K) Ākhyātasāgaram …» (capítulo 6).
+RE_VERSO_ROT = re.compile(r'^\s*\((K|Kh|G)\)\s+')
 RE_CIERRE_PALI = re.compile(r'^\*\*(Iti\s+.+?kaṇḍo)\.?\*\*$')
 RE_FIN_PALI = re.compile(r'^\*\*(.+?[Nn]iṭṭhito)\.?\*\*$')
 RE_FIN_ES = re.compile(r'^\*\*((?:Fin del capítulo|End of the .+? [Cc]hapter).*?)\.?\*\*$')
@@ -777,6 +783,30 @@ def parsear(path):
                     trad.append(lineas[k].strip())
                 k += 1
             versos.append({"pali": pali, "trad": " ".join(trad)})
+            i = k
+            continue
+        mv = RE_VERSO_ROT.match(l) if not suttas else None
+        if mv:
+            # Verso rotulado (capítulo 6: «(K)», «(Kh)», «(G)»): el pāḷi es
+            # el párrafo que empieza con el rótulo; la traducción, el
+            # párrafo siguiente, tras una línea en blanco. El rótulo se
+            # conserva en la tarjeta en lugar del número.
+            pali = [l[mv.end():].rstrip()]
+            k = i + 1
+            while k < fin_cuerpo and lineas[k].strip():
+                pali.append(lineas[k].strip())
+                k += 1
+            while k < fin_cuerpo and not lineas[k].strip():
+                k += 1
+            trad = []
+            while k < fin_cuerpo and lineas[k].strip() \
+                    and not RE_VERSO_ROT.match(lineas[k]) \
+                    and not RE_SUTTA.match(lineas[k]) \
+                    and lineas[k].strip() != "---":
+                trad.append(lineas[k].strip())
+                k += 1
+            versos.append({"pali": pali, "trad": " ".join(trad),
+                           "num": mv.group(1)})
             i = k
             continue
         i += 1
@@ -1098,6 +1128,7 @@ def pie_tarjeta(sid):
 def render_intro(versos, notas):
     bloques = []
     for k, v in enumerate(versos, start=1):
+        k = v.get("num", k)
         pali = "<br/>".join(inline(x, notas) for x in v["pali"])
         bloques.append(
             '<div class="intro-verse"><div class="intro-num">{0}</div>'
