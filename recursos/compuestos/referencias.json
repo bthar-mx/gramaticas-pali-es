@@ -1,157 +1,233 @@
 {
-"_nota": "Para los emergentes de la página Compuestos: suttas de Rūpasiddhi (CST e0805n, número y página birmana en que empieza cada sutta) y de Saddanīti (Suttamālā, ed. Smith, cap. XXIII), con su sutta de Kaccāyana según comun/concordancia.json; secciones de Niruttidīpanī (CST e0201n) por página. Lo genera docs/privado/compuestos/em/referencias.py; no se edita a mano.",
+"_nota": "Para los emergentes de la página Compuestos: suttas de Rūpasiddhi (CST e0805n, número y página birmana en que empieza cada sutta) y de Saddanīti (Suttamālā, ed. Smith, cap. XXIII), con su sutta de Kaccāyana según comun/concordancia.json; secciones de Niruttidīpanī (CST e0201n) por página. Lo genera docs/privado/compuestos/em/referencias.py; no se edita a mano. El texto pāḷi de Rū. es el de la edición de Bhikkhu Nandisena (ru_nandisena.py; el del CST queda en «cst»).",
 "ru": {
 "67": {
-"pali": "Saralopo’mādesappaccayādimhi saralope tu pakati",
-"kacc": 83
+"pali": "Saralopo ‘mādesa-paccayādimhi saralope tu pakati.",
+"kacc": 83,
+"cst": "Saralopo’mādesappaccayādimhi saralope tu pakati",
+"fuente": "Nandisena"
 },
 "112": {
-"pali": "Santasaddassa so bhe bo cante",
-"kacc": 185
+"pali": "Santasaddassa so bhe bo c’ ante.",
+"kacc": 185,
+"cst": "Santasaddassa so bhe bo cante",
+"fuente": "Nandisena"
 },
 "149": {
-"pali": "Aṃ mo niggahītaṃ jhalapehi",
-"kacc": 82
+"pali": "Aṃ-mo niggahītaṃ jha-la-pehi.",
+"kacc": 82,
+"cst": "Aṃ mo niggahītaṃ jhalapehi",
+"fuente": "Nandisena"
 },
 "195": {
-"pali": "Siṃ",
-"kacc": 219
+"pali": "Si ‘ṃ.",
+"kacc": 219,
+"cst": "Siṃ",
+"fuente": "Nandisena"
 },
 "255": {
-"pali": "Vīsatidasesu bā dvissa tu",
-"kacc": 380
+"pali": "Vīsati-dasesu bā dvissa tu.",
+"kacc": 380,
+"cst": "Vīsatidasesu bā dvissa tu",
+"fuente": "Nandisena"
 },
 "324": {
-"pali": "Kammakaraṇanimittatthesu sattamī",
-"kacc": 310
+"pali": "Kamma-karaṇa-nimittatthesu sattamī.",
+"kacc": 310,
+"cst": "Kammakaraṇanimittatthesu sattamī",
+"fuente": "Nandisena"
 },
 "330": {
-"pali": "Upasagganipātapubbako abyayībhāvo",
-"kacc": 319
+"pali": "Upasagga-nipātapubbako abyayībhāvo.",
+"kacc": 319,
+"cst": "Upasagganipātapubbako abyayībhāvo",
+"fuente": "Nandisena"
 },
 "331": {
-"pali": "Nāmānaṃ samāso yuttattho",
-"kacc": 316
+"pali": "Nāmānaṃ samāso yuttattho.",
+"kacc": 316,
+"cst": "Nāmānaṃ samāso yuttattho",
+"fuente": "Nandisena"
 },
 "332": {
-"pali": "Tesaṃ vibhattiyo lopā ca",
-"kacc": 317
+"pali": "Tesaṃ vibhattiyo lopā ca.",
+"kacc": 317,
+"cst": "Tesaṃ vibhattiyo lopā ca",
+"fuente": "Nandisena"
 },
 "333": {
-"pali": "Pakati cassa sarantassa",
-"kacc": 318
+"pali": "Pakati c’ assa sarantassa.",
+"kacc": 318,
+"cst": "Pakati cassa sarantassa",
+"fuente": "Nandisena"
 },
 "335": {
-"pali": "So napuṃsakaliṅgo",
-"kacc": 320
+"pali": "So napuṃsakaliṅgo.",
+"kacc": 320,
+"cst": "So napuṃsakaliṅgo",
+"fuente": "Nandisena"
 },
 "336": {
-"pali": "Aṃ vibhattīnamakārantā abyayībhāvā",
-"kacc": 341
+"pali": "Aṃ vibhattīnam akārantā abyayībhāvā.",
+"kacc": 341,
+"cst": "Aṃ vibhattīnamakārantā abyayībhāvā",
+"fuente": "Nandisena"
 },
 "337": {
-"pali": "Saro rasso napuṃsake",
-"kacc": 342
+"pali": "Saro rasso napuṃsake.",
+"kacc": 342,
+"cst": "Saro rasso napuṃsake",
+"fuente": "Nandisena"
 },
 "338": {
-"pali": "Aññasmā lopo ca",
-"kacc": 343
+"pali": "Aññasmā lopo ca.",
+"kacc": 343,
+"cst": "Aññasmā lopo ca",
+"fuente": "Nandisena"
 },
 "339": {
-"pali": "Dvipade tulyādhikaraṇe kammadhārayo",
-"kacc": 324
+"pali": "Dvipade tulyādhikaraṇe kammadhārayo.",
+"kacc": 324,
+"cst": "Dvipade tulyādhikaraṇe kammadhārayo",
+"fuente": "Nandisena"
 },
 "340": {
-"pali": "Mahataṃ mahā tulyādhikaraṇe pade",
-"kacc": 330
+"pali": "Mahataṃ mahā tulyādhikaraṇe pade.",
+"kacc": 330,
+"cst": "Mahataṃ mahā tulyādhikaraṇe pade",
+"fuente": "Nandisena"
 },
 "341": {
-"pali": "Ubhe tappurisā",
-"kacc": 326
+"pali": "Ubhe tappurisā.",
+"kacc": 326,
+"cst": "Ubhe tappurisā",
+"fuente": "Nandisena"
 },
 "342": {
-"pali": "Pumassa liṅgādīsu samāsesu",
-"kacc": 222
+"pali": "Pumassa liṅgādīsu samāsesu.",
+"kacc": 222,
+"cst": "Pumassa liṅgādīsu samāsesu",
+"fuente": "Nandisena"
 },
 "343": {
-"pali": "Kammadhārayasaññe ca",
-"kacc": 332
+"pali": "Kammadhārayasaññe ca.",
+"kacc": 332,
+"cst": "Kammadhārayasaññe ca",
+"fuente": "Nandisena"
 },
 "344": {
-"pali": "Attaṃ nassa tappurise",
-"kacc": 333
+"pali": "Attaṃ nassa tappurise.",
+"kacc": 333,
+"cst": "Attaṃ nassa tappurise",
+"fuente": "Nandisena"
 },
 "345": {
-"pali": "Sare ana",
-"kacc": 334
+"pali": "Sare an.",
+"kacc": 334,
+"cst": "Sare ana",
+"fuente": "Nandisena"
 },
 "346": {
-"pali": "Kadada kussa",
-"kacc": 335
+"pali": "Kad kussa.",
+"kacc": 335,
+"cst": "Kadada kussa",
+"fuente": "Nandisena"
 },
 "347": {
-"pali": "Kāppatthesu ca",
-"kacc": 336
+"pali": "Kā ‘ppatthesu ca.",
+"kacc": 336,
+"cst": "Kāppatthesu ca",
+"fuente": "Nandisena"
 },
 "348": {
-"pali": "Saṅkhyāpubbo digu",
-"kacc": 325
+"pali": "Saṅkhyāpubbo digu.",
+"kacc": 325,
+"cst": "Saṅkhyāpubbo digu",
+"fuente": "Nandisena"
 },
 "349": {
-"pali": "Digussekattaṃ",
-"kacc": 321
+"pali": "Diguss’ ekattaṃ.",
+"kacc": 321,
+"cst": "Digussekattaṃ",
+"fuente": "Nandisena"
 },
 "350": {
-"pali": "Kvaci samāsantagatānamakāranto",
-"kacc": 337
+"pali": "Kvaci samāsantagatānam akāranto.",
+"kacc": 337,
+"cst": "Kvaci samāsantagatānamakāranto",
+"fuente": "Nandisena"
 },
 "351": {
-"pali": "Amādayo parapadebhi",
-"kacc": 327
+"pali": "Amādayo parapadebhi.",
+"kacc": 327,
+"cst": "Amādayo parapadebhi",
+"fuente": "Nandisena"
 },
 "352": {
-"pali": "Aññapadatthesu bahubbīhi",
-"kacc": 328
+"pali": "Aññapadatthesu bahubbīhi.",
+"kacc": 328,
+"cst": "Aññapadatthesu bahubbīhi",
+"fuente": "Nandisena"
 },
 "353": {
-"pali": "Itthiyaṃ bhāsitapumitthī pumāva ce",
-"kacc": 331
+"pali": "Itthiyaṃ bhasitapum’-itthī pumā ‘va ce.",
+"kacc": 331,
+"cst": "Itthiyaṃ bhāsitapumitthī pumāva ce",
+"fuente": "Nandisena"
 },
 "354": {
-"pali": "Kvacādimajjhuttarānaṃ dīgharassāpaccayesu ca",
-"kacc": 403
+"pali": "Kvac’ ādi-majjh’-uttarānaṃ dīgha-rassā paccayesu ca.",
+"kacc": 403,
+"cst": "Kvacādimajjhuttarānaṃ dīgharassāpaccayesu ca",
+"fuente": "Nandisena"
 },
 "355": {
-"pali": "Dhanumhā ca",
-"kacc": 340
+"pali": "Dhanumh’ ā ca.",
+"kacc": 340,
+"cst": "Dhanumhā ca",
+"fuente": "Nandisena"
 },
 "356": {
-"pali": "Nadimhā ca",
-"kacc": 338
+"pali": "Nadimhā ca.",
+"kacc": 338,
+"cst": "Nadimhā ca",
+"fuente": "Nandisena"
 },
 "357": {
-"pali": "Nāmānaṃ samuccayo dvando",
-"kacc": 329
+"pali": "Nāmānaṃ samuccayo dvando.",
+"kacc": 329,
+"cst": "Nāmānaṃ samuccayo dvando",
+"fuente": "Nandisena"
 },
 "358": {
-"pali": "Jāyāya tudaṃ jāni patimhi",
-"kacc": 339
+"pali": "Jāyaya tudaṃ-jāni patimhi.",
+"kacc": 339,
+"cst": "Jāyāya tudaṃ jāni patimhi",
+"fuente": "Nandisena"
 },
 "359": {
-"pali": "Tathā dvande pāṇi tūriya yogga senaṅga khuddajantuka vividha viruddha visabhāgatthādīnañca",
-"kacc": 322
+"pali": "Tathā dvande pāṇitūriyayoggasenaṅga-khuddajantuka-vividhaviruddhavisabhāgatthādīnañ ca.",
+"kacc": 322,
+"cst": "Tathā dvande pāṇi tūriya yogga senaṅga khuddajantuka vividha viruddha visabhāgatthādīnañca",
+"fuente": "Nandisena"
 },
 "360": {
-"pali": "Vibhāsā rukkha tiṇa pasu dhana dhañña janapadādīnañca",
-"kacc": 323
+"pali": "Vibhāsā rukkha-tiṇa-pasu-dhana-dhañña-janapadādīnañ ca.",
+"kacc": 323,
+"cst": "Vibhāsā rukkha tiṇa pasu dhana dhañña janapadādīnañca",
+"fuente": "Nandisena"
 },
 "370": {
-"pali": "Tesu vuddhilopāgamavikāraviparītādesā ca",
-"kacc": 404
+"pali": "Tesu vuddhi-lopāgama-vikāra-viparītādesā ca.",
+"kacc": 404,
+"cst": "Tesu vuddhilopāgamavikāraviparītādesā ca",
+"fuente": "Nandisena"
 },
 "410": {
-"pali": "Tiye dutāpi ca",
-"kacc": 386
+"pali": "Tiye du-tāpi ca.",
+"kacc": 386,
+"cst": "Tiye dutāpi ca",
+"fuente": "Nandisena"
 }
 },
 "ru_pag": {
