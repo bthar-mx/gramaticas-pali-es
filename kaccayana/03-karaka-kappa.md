@@ -304,7 +304,7 @@ Ejemplos:
 
 Ejemplos:
 
-1. Lobhaniyehi **dhammehi** suddho asaṃsaṭṭho (puro y sin mezcla con las cosas que provocan apego).  
+1. **Lobhaniyehi** **dhammehi** suddho asaṃsaṭṭho (puro y sin mezcla con las cosas que provocan apego).  
 2. **Mātito** ca **pitito** ca suddho asaṃsaṭṭho anupakuddho agarahito (puro, sin mezcla, intachable e irreprochable por el lado de la madre y por el lado del padre), etc.
 
 (10) **En la liberación**:
@@ -327,7 +327,7 @@ Ejemplos:
 
 Ejemplos:
 
-1. Vivitto pāpakā **dhammā** (apartado de los malos dhammas), vivicc eva **kāmehi** (apartado de los placeres sensuales), vivicca akusalehi **dhammehi** (apartado de los dhammas insanos), etc.
+1. Vivitto **pāpakā** **dhammā** (apartado de los malos dhammas), vivicc eva **kāmehi** (apartado de los placeres sensuales), vivicca **akusalehi** **dhammehi** (apartado de los dhammas insanos), etc.
 
 (13) **En la medición**:
 
@@ -991,7 +991,7 @@ En conexión con \[palabras\] que tienen el significado de “saha” y otros ha
 Ejemplos:
 
 1. Sahā ’pi **Gaggena** saṃgho uposathaṃ kareyya, vinā pi **Gaggena** (el Sangha debería hacer el uposatha con Gagga o sin Gagga).  
-2. Mahatā **bhikkhusaṃghena** saddhiṃ (junto con la gran comunidad de bhikkhus).  
+2. **Mahatā** **bhikkhusaṃghena** saddhiṃ (junto con la gran comunidad de bhikkhus).  
 3. **Sahassena** samaṃ mitā (medidas por igual con mil).
 
 ---
