@@ -11,11 +11,17 @@ repositorio, se leyeron en el escaneo, por los pasajes que aquí importan:
 - *Padarūpasiddhiṭīkā* (Buddhasāsanasamiti, 1956; escaneo del IEBH,
   `~/Tipitaka/nissaya/scans/tika/padarupasiddhitika.pdf`, PDF = p. + 10).
   Se cita «Rū-ṭ.». Las transcripciones son lectura de Claude sobre la imagen,
-  no OCR; las palabras dudosas van con ⟨?⟩.
+  no OCR, revisadas a mayor resolución el 2026-10-20.
 - *Padarūpasiddhi-bhāsāṭīkā* (birmano; `scans/annya/033.pdf` y `034.pdf`).
   Se cita «Rū-bh.». En el vol. 1, PDF = p. + 20; en el vol. 2, PDF = p.
-- *Kaccāyana-bhāsāṭīkā*, vol. 2 (birmano; `scans/annya/023.pdf`). Se cita
-  «Kacc-bh.».
+- *Kaccāyana-bhāsāṭīkā*, vol. 2 (birmano; `scans/annya/023.pdf`, PDF = p.).
+  Se cita «Kacc-bh.».
+- *Nyāsa*, ed. 1933 (`docs/fuentes/nyasa/Nyasa_1933_escaneo_bitonal_200dpi.pdf`).
+- *Saddanīti, Suttamālā*, ed. Smith (PTS, reimpr. 2001;
+  `docs/fuentes/saddaniti/Saddaniti-Suttamala-Smith-PTS2001.pdf`, PDF =
+  p. − 600), y su transcripción privada del IEBH
+  (`docs/fuentes/saddaniti/suttamala/`, primera pasada); cada pasaje citado
+  aquí se cotejó con la imagen.
 
 Lo que se da de las dos bhāsāṭīkā es **paráfrasis española del birmano**,
 no traducción literal; los términos pāḷi que ellas citan van entre «».
@@ -47,6 +53,9 @@ no traducción literal; los términos pāḷi que ellas citan van entre «».
   «Vibhatyantaṃ padaṃ» (trad.: palabra es lo que termina en inflexión). La
   nota de la edición remite a Kātantra II 1, 1. Es, por tanto, una
   *parasamaññā*: Kaccāyana no la formula; la toma prestada su tradición.
+  Smith, en su nota a Saddanīti §196, da la misma filiación: «Rūp 11 … 282a
+  < Kāt II 1: 1, *cf.* Pāṇ I 2: 45» (Suttamālā, p. 641). El Saddanīti, en
+  cambio, la hace sutta propio (ver §8).
 - **Rūpasiddhi la aplica** al menos tres veces:
   - en kumbhakāro: «paccayantass’ āliṅgattā syādimhi asampatte» (Rū. §563;
     trad.: como lo que termina en sufijo no es liṅga, no le llegan ‘si’ y
@@ -133,8 +142,10 @@ considerar] como nombres, salvo en ‘tave’, ‘tuna’, etc.), lo resuelve po
   y no «liṅgaṃ»: los dos términos valen lo mismo, «nāmavibhattīnaṃ liṅgesv
   eva vihitattā» (trad.: porque las inflexiones nominales están prescritas
   sólo para los liṅga).
-- **Nyāsa, sobre §601** (`Nyasa_Pali_Mukhamattadipani_master.md`, l. 4297;
-  OCR), con vāsiṭṭho: «liṅgābhāve liṅgatthe paṭhamā ti paṭhamāvibhattiyā
+- **Nyāsa, sobre §601** (ed. 1933, p. 428, PDF 466; cotejado con la imagen.
+  En `Nyasa_Pali_Mukhamattadipani_master.md`, l. 4297, el pasaje queda bajo
+  la marca «[p. 427]», pero en el escaneo §601 empieza en la p. 428), con
+  vāsiṭṭho: «liṅgābhāve liṅgatthe paṭhamā ti paṭhamāvibhattiyā
   asampatte iminā taddhitattā nāmam iva katvā» (trad.: como, al no ser liṅga,
   no le llega la primera inflexión por «Liṅgatthe paṭhamā», por este [sutta],
   por ser taddhita, se la considera como nombre).
@@ -153,8 +164,15 @@ considerar] como nombres, salvo en ‘tave’, ‘tuna’, etc.), lo resuelve po
   que termina en inflexión es palabra (*pada*); sin inflexión no puede entrar
   en la oración, como quien no es miembro no entra en una asamblea. La
   *Padarūpasiddhi-bhāsāṭīkā* da la misma razón del *dabba* (vol. 1, p. 541).
-  <!-- DUDA: no se ha localizado la fuente pāḷi de «dabbavācakaṃ nāmaṃ», que
-  las dos bhāsāṭīkā citan como principio conocido. -->
+  Ninguna de las dos dice de dónde toma «dabbavācakaṃ nāmaṃ»: lo citan como
+  principio conocido.
+  <!-- DUDA: fuente pāḷi de «dabbavācakaṃ nāmaṃ» no localizada. Se buscó en
+  los textos del repositorio (GRETIL, Saddanīti Padamālā y Suttamālā,
+  Niruttidīpanī, Nyāsa) y en la web, sin resultado. Lo más cercano: Bālāvatāra
+  «Taṃ ca jātiguṇakriyādabbannāmaṃ’tyanekadhā» (GRETIL, l. 2598; trad.: y ese
+  [nombre] es de muchas clases: nombre de clase, de cualidad, de acción, de
+  cosa), que no es la misma idea. No se debe citar como de una obra
+  determinada mientras no aparezca. -->
 
 **Lo que la definición no explica.** El mismo razonamiento vale para el
 derivado nominal (vāsiṭṭho: ‘ṇa’ es sufijo), para el femenino (kaññā: ‘ā’ es
@@ -201,14 +219,20 @@ dio la extensión de la designación de nombre).
 > dīpeti, nāpi purisamattaṃ, api tu rājasambandhipurisavisesaṃ dīpeti, tato
 > pubbuttarānaṃ dvinnam pi padānaṃ sakatthamattassa adīpanato, paccekaṃ
 > niratthakattā liṅgasaññāya asambhavato vibhattuppatti na siyā ti tassa
-> padassa ⟨?⟩ nāmabyapadesassātidesatthaṃ idaṃ vuttan ti adhippāyo.»
+> padassa saṅghassa nāmabyapadesassātidesatthaṃ idaṃ vuttan ti adhippāyo.»
+
+<!-- DUDA leve: se lee «ပဒဿ သင်္ဃဿ» (padassa saṅghassa), con espacio entre
+las dos palabras; la consonante tras el kinzi es ‘gha’ (‘bha’ es imposible
+tras ‘ṅ’). Podría esperarse «padasaṅghassa» (del grupo de palabras); el
+sentido es el mismo. -->
 
 Trad.: «Por carecer de su propio significado»: la palabra «rājapuriso» no
 indica al rey, ni sólo al hombre, sino a un hombre concreto relacionado con el
 rey. Como ninguno de los dos miembros, el primero y el segundo, indica su
 propio significado, y como cada uno por separado carece de significado, no
 cabe el nombre de liṅga y no habría inflexión; por eso se dijo esto: para
-extender a esa palabra la designación de nombre. Ésta es la intención.
+extender a esa palabra, al grupo [de dos palabras], la designación de nombre.
+Ésta es la intención.
 
 Y sigue:
 
@@ -262,12 +286,26 @@ grupos de palabras con significado hubieran de recibir la designación de
 nombre, ésta corresponde sólo al compuesto, no a la oración». También eso es
 correcto.
 
-- Paralelo sánscrito, **fuera de nuestras fuentes y sin cotejar**: Pāṇini
-  1.2.45 (*arthavad adhātur apratyayaḥ prātipadikam*) y 1.2.46
-  (*kṛttaddhitasamāsāś ca*), donde la mención del compuesto se explica igual,
-  como restricción. La ṭīkā confirma que la opinión viene de gramáticos de
-  fuera, pero no nombra la obra; si se cita a Pāṇini, hay que verificarlo
-  antes en la Kāśikā.
+- **Paralelo sánscrito** (fuera de la tradición pāḷi; la ṭīkā no nombra la
+  obra). Pāṇini 1.2.45 *arthavad adhātur apratyayaḥ prātipadikam* (trad.: lo
+  que tiene significado y no es raíz ni sufijo es «prātipadika», tema
+  nominal) y 1.2.46 *kṛttaddhitasamāsāś ca* (trad.: también los kṛt, los
+  taddhita y los compuestos). La Kāśikā sobre 1.2.46 da la misma explicación
+  que los «otros» de Rūpasiddhi:
+  - «apratyayaḥ iti pūrvatra paryudāsāt kṛdantasya taddhitāntasya ca anena
+    prātipadikasaṃjñā vidhīyate» (trad.: como en el sutta anterior se excluye
+    con «no es sufijo», por éste se da el nombre de prātipadika a lo que
+    termina en kṛt o en taddhita);
+  - «arthavatsamudāyānāṃ samāsagrahaṇaṃ niyamārtham» (trad.: entre los grupos
+    con significado, la mención del compuesto sirve para restringir);
+  - «samāsagrahaṇasya niyamārthatvād vākyasya arthavataḥ saṃjñā na bhavati»
+    (trad.: como la mención del compuesto restringe, la oración, aunque tenga
+    significado, no recibe ese nombre).
+  - Ejemplos de la Kāśikā: kṛt, *kārakaḥ*, *hārakaḥ*, *kartā*, *hartā*;
+    taddhita, *aupagavaḥ*, *kāpaṭavaḥ*; compuesto, *rājapuruṣaḥ*,
+    *brāhmaṇakambalaḥ*. Es el mismo «rājapuriso» de Rūpasiddhi-ṭīkā.
+  - Texto tomado de sanskritdocuments.org (Aṣṭādhyāyī con Kāśikā, 1.2.46),
+    consultado el 2026-10-20; no se ha cotejado con una edición impresa.
 
 ### 4.3 Cuándo se aplica §601 en el compuesto con miembro precedente
 
@@ -282,7 +320,7 @@ hecho «como nombre» por ser compuesto, vienen ‘si’ y las demás).
 > «Kumbhaṃ karotī ti atthe ti upapadasamāsassa niccattā ākhyātabhūtena
 > aññapadena viggahadassanam etaṃ. Yadi hi samāsato pubbe yeva
 > kārasaddassa kitantattā tato syādyuppatti bhaveyya, tadā “kumbhaṃ kāro” ti
-> sakapaden’ eva vākyaṃ bhaveyya, “bhūmigato” ti ādīsu ⟨gata⟩saddass’ eva.
+> sakapaden’ eva vākyaṃ bhaveyya, “bhūmigato” ti ādīsu **gata**saddass’ eva.
 > “Kāro” ti imassa visuṃ payogo pi āpajjeyya, na ca taṃ yuttaṃ, “dhātuyā
 > kammādimhī” ti ca sutte kammūpapade sati yeva ṇappaccayavidhānato. Evaṃ
 > sati “kāro” ti ayaṃ saddo avibhattyanto va kumbhasaddena samasīyatī ti
@@ -406,15 +444,64 @@ designación de nombre, por ser taddhita, con «Taddhitasamāsa…»).
 
 ## 8. Saddanīti
 
-- **Suttamālā.** Nandisena no da número del Saddanīti para §601, y Pind
-  tampoco remite a la Saddanīti en su 603, a diferencia de todos sus
-  vecinos (`docs/borradores/sesion-27-suttas-590-606.md`, §3, punto 1). Todo
-  indica que la Suttamālā no tiene un aforismo equivalente.
-  <!-- DUDA: no se ha podido comprobar en el texto. El PDF de la Suttamālā del
-  proyecto no tiene capa de texto legible, y la Suttamālā no está en el
-  repositorio. Tampoco se ha podido ver si la Suttamālā recoge la definición
-  de liṅga en otro lugar. -->
-- **Padamālā** (`docs/fuentes/saddaniti/Saddaniti-padamala.md`), dos lugares:
+### 8.1 Suttamālā: la definición de liṅga es sutta propio
+
+El Saddanīti abre su Nāmakappa (pariccheda XXI) con una serie de definiciones
+de liṅga (Smith, p. 641; cotejado con la imagen):
+
+- «**192 Visadattādisahitaṃ līnatthagamakaṃ nipphannavacanaṃ liṅgaṃ.**
+  Visadabhāvādisahitaṃ līnass’ atthassa gamakaṃ nipphannavacanaṃ liṅgaṃ nāma
+  bhavati: *buddho Bhagavā* icc ādi» (trad.: la expresión ya formada,
+  acompañada de claridad y lo demás, que da a conocer un significado oculto,
+  es liṅga: «buddho», «Bhagavā», etc.). Le siguen §193–195, que definen el
+  masculino, el femenino y el neutro por la «claridad» (*visada*).
+- «**196 Dhātu-ppaccaya-vibhattivajjitaṃ atthavaṃ liṅgaṃ.**
+  Dhātu-paccaya-vibhattīhi vivajjitaṃ atthavantaṃ paṭicchannam aṅgaṃ
+  nipphannapadānaṃ paṭhamaṃ ṭhapetabbarūpaṃ liṅgaṃ nāma bhavati: *purisa
+  citta mālā* icc ādi» (trad.: lo que no es raíz, sufijo ni inflexión y tiene
+  significado es liṅga. Lo que carece de raíz, sufijo e inflexión y tiene
+  significado, el miembro oculto, la forma que de las palabras formadas se ha
+  de poner primero, se llama liṅga: «purisa», «citta», «mālā», etc.). Smith
+  (n. 16) explica «paṭicchannam aṅgaṃ» por «rahassaṅgaṃ = liṅgaṃ»
+  (Abhidhānappadīpikā 273): juego con el otro sentido de *liṅga*.
+- «**197 Upasagga-nipātā ca.** Upasagga-nipātā ca liṅgaṃ nāma bhavanti:
+  *pati*, *atthi sakkā* icc ādayo» (trad.: y también los prefijos y las
+  partículas: se llaman liṅga «pati», «atthi», «sakkā», etc.).
+- «**199 Syādayo nāme, tyādayo ākhyāte.**» (Smith, p. 642; trad.: ‘si’ y las
+  demás, en el nombre; ‘ti’ y las demás, en el verbo).
+
+Es decir: lo que en Kaccāyana es una *parasamaññā* citada por Rūpasiddhi, en
+el Saddanīti es sutta (§196), con su misma filiación (nota de Smith: «Rūp 11
+… < Kāt II 1: 1, *cf.* Pāṇ I 2: 45»). Pero va precedido de una definición
+más amplia (§192), en la que liṅga es la «expresión ya formada»
+(*nipphannavacana*), y seguido de la extensión a prefijos y partículas
+(§197).
+
+### 8.2 Suttamālā: no hay equivalente de §601
+
+- Nandisena no da número del Saddanīti para §601; el texto pāḷi del proyecto
+  pone entre paréntesis el número del Saddanīti a §600 («(1205)») y a §602
+  («(10)»), y no a §601 (`docs/7- Kibbidhāna-Kappa-Kaccāyana.md`, ll. 1112,
+  1124, 1136). Pind tampoco remite a la Saddanīti en su 603
+  (`docs/borradores/sesion-27-suttas-590-606.md`, §3, punto 1).
+- Smith, en las notas de la Suttamālā, da los paralelos de Kaccāyana con la
+  numeración de Pind («Kc», = nuestro § + 2 en esta parte): «§ 1203 Kc 600»,
+  «§ 1204 Kc 601», «§ 1205 = Kc 602» y, a continuación, «§ 1208 Kc 606»
+  (p. 857; cotejado con la imagen). «Kc 603», que es nuestro §601, no aparece
+  en ninguna nota de la Suttamālā (búsqueda en la transcripción completa;
+  «Kc 604» y «Kc 605» sí aparecen, en las notas a Sadd. §9–10).
+- Queda comprobado, por tanto, en lo que alcanza el aparato de Smith: la
+  Suttamālā no tiene un aforismo que corresponda a §601.
+
+**Lectura del IEBH (no la dice el Saddanīti).** El Saddanīti no necesita la
+designación de §601: con §192 el derivado ya formado es liṅga, y con §199 las
+inflexiones ‘si’ y demás van «en el nombre», y la Padamālā cuenta el
+derivado primario entre los nombres (*kitanāma*, ver 8.3). Coincide así con
+la posición de Niruttidīpanī (§6), no con la de Kaccāyana.
+
+### 8.3 Padamālā
+- `docs/fuentes/saddaniti/Saddaniti-padamala.md`, dos lugares (Smith, en la
+  Suttamālā, remite §192–195 a Padamālā pp. 220–225):
   - Al tratar los sufijos (VRI, p. 2), distingue cinco clases de palabras en
     las que aparecen: «nāmanāma kitanāma samāsanāma taddhitanāmākhyātesu»
     (trad.: en el nombre simple, el nombre kita, el nombre compuesto, el
@@ -442,7 +529,8 @@ designación de nombre, por ser taddhita, con «Taddhitasamāsa…»).
 ## 9. Resumen
 
 1. La definición de liṅga es una *parasamaññā* tomada de otros gramáticos
-   (Rū. §11; Kātantra II 1, 1). Rūpasiddhi-ṭīkā sólo explica por qué
+   (Rū. §11; Kātantra II 1, 1; cf. Pāṇini 1.2.45). El Saddanīti la hace sutta
+   propio (§196). Rūpasiddhi-ṭīkā sólo explica por qué
    «vibhatti» va aparte de «paccaya»; la glosa término por término está en
    Niruttidīpanī.
 2. El derivado primario no es liṅga porque termina en sufijo; §601 lo
@@ -452,7 +540,8 @@ designación de nombre, por ser taddhita, con «Taddhitasamāsa…»).
 3. El compuesto tampoco lo es: según Rūpasiddhi y su ṭīkā, porque sus
    miembros pierden dentro de él su propio significado («rājapuriso»); según
    «otros» —gramáticos de fuera, dice la ṭīkā—, §601 lo nombra para que entre
-   los grupos de palabras sólo él sea nombre.
+   los grupos de palabras sólo él sea nombre, y no la oración: es la
+   explicación de la Kāśikā a Pāṇini 1.2.46.
 4. En el compuesto con miembro precedente, «kāra» se compone sin inflexión
    y §601 se aplica una sola vez, a la forma unida (Rū-ṭ. ad §563; Rū-bh.,
    que considera añadida la frase contraria de Rūpasiddhi).
@@ -461,19 +550,24 @@ designación de nombre, por ser taddhita, con «Taddhitasamāsa…»).
    explica la base: raíz y sādhana (Kibbidhāna, con el Ākhyāta) frente a
    nombre (Samāsa, Taddhita, dentro del Nāma-kappa).
 6. Niruttidīpanī (escuela de Moggallāna) no necesita §601.
-7. El Saddanīti no parece tener equivalente de §601 (sin verificar en la
-   Suttamālā). La Padamālā llama al derivado primario *kitanāma* y lo trata
-   desde la raíz.
+7. El Saddanīti no tiene equivalente de §601 (comprobado en el aparato de
+   Smith). Define liṅga dos veces (§192, la expresión ya formada; §196, la
+   fórmula de Kātantra) y la Padamālā llama al derivado primario *kitanāma*;
+   por eso, a nuestro juicio, no necesita la designación.
 
-## Pendientes
+## Estado de las comprobaciones (2026-10-20)
 
-- Cotejar con el libro las transcripciones de Rū-ṭ. pp. 134–135 y 219–220,
-  en especial la palabra ⟨?⟩ de p. 134 («tassa padassa ⟨?⟩
-  nāmabyapadesassa…») y «⟨gata⟩saddass’ eva» de p. 219.
-- Fuente pāḷi de «dabbavācakaṃ nāmaṃ» (citado por las dos bhāsāṭīkā).
-- Comprobar en la Suttamālā la ausencia de un equivalente de §601 y de la
-  definición de liṅga.
-- Si se cita el paralelo de Pāṇini 1.2.45–46, verificarlo antes en la
-  Kāśikā.
-- Revisar en la imagen del Nyāsa (1933) la cita de §601, que aquí viene del
-  OCR.
+- Rū-ṭ. p. 134: leído «padassa saṅghassa» (duda leve, ver nota). Rū-ṭ.
+  p. 220: «gatasaddass’ eva» confirmado (en negrita en el original). El
+  pasaje de §563 empieza al pie de p. 219 y sigue en p. 220.
+- Nyāsa, §601: cotejado con el escaneo de 1933 (p. 428).
+- Suttamālā: §192, §196, §197 y §199 cotejados con el escaneo de Smith;
+  ausencia de equivalente de §601 comprobada en sus notas.
+- Kāśikā a Pāṇini 1.2.46: comprobada en sanskritdocuments.org; falta cotejo
+  con edición impresa, si se quiere citar en el sitio.
+- **Sigue abierto:** la fuente pāḷi de «dabbavācakaṃ nāmaṃ». Ninguna de las
+  dos bhāsāṭīkā la nombra; no aparece en los textos del repositorio ni en la
+  web.
+- **Derechos:** la Suttamālā de Smith es de uso privado del IEBH hasta el
+  1-1-2027. Esta nota cita sólo los suttas y una nota de referencias; el IEBH
+  decide si eso puede ir en el repositorio público antes de esa fecha.
