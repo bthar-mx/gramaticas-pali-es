@@ -265,6 +265,7 @@ def ingles_faltante(agrupado, normativo, nandisena, estado_en_nand):
                               "«en» en recursos/glosario/glosario-ingles.json"))
         for i in gr["n"]:
             e = nandisena[i]
+            # un borrador publicado (en_borrador) ya no sale en español: no falta
             if e.get("es") and not e.get("en") and not e.get("remite_a"):
                 lema = e["pali"] + (" {0}".format(e["homonimo"])
                                     if e.get("homonimo") else "")
@@ -360,6 +361,7 @@ def main():
     estado_en_nand = {}   # índice → por qué no se publica su inglés
     nand_en_total = 0
     nand_en_adjudicadas = 0
+    nand_en_borradores = 0
     if os.path.exists(INGLES_NANDISENA) and nand["entradas"]:
         ing_nand = json.load(open(INGLES_NANDISENA, encoding="utf-8"))
         f2, a2, borr = verificar_ingles_nandisena(nand["entradas"], ing_nand)
@@ -374,6 +376,11 @@ def main():
                 return bool(ing_nand.get("adjudicado"))
             return bool(tandas.get(str(t), {}).get("adjudicado"))
 
+        # «publicar_borrador» (IEBH, 2026-10-21): lo redactado y aún sin
+        # adjudicar también se publica, pero ROTULADO «borrador» en cada
+        # entrada (en_borrador: true), como ya hace la página de raíces. Al
+        # adjudicar una tanda, sus entradas pierden el rótulo solas.
+        publicar_borrador = bool(ing_nand.get("publicar_borrador"))
         for i, (clave, e) in enumerate(zip(claves_nandisena(nand["entradas"]),
                                            nand["entradas"])):
             if clave in borr and adjudicada(borr[clave]):
@@ -382,7 +389,12 @@ def main():
             elif clave in borr:
                 t = borr[clave].get("tanda")
                 estado_en_nand[i] = ("redactado, sin adjudicar"
-                                     + (" (tanda {0})".format(t) if t is not None else ""))
+                                     + (" (tanda {0})".format(t) if t is not None else "")
+                                     + (", publicado como borrador" if publicar_borrador else ""))
+                if publicar_borrador:
+                    e["en"] = borr[clave]["en"]
+                    e["en_borrador"] = True
+                    nand_en_borradores += 1
 
     if fallos:
         print("No se publica. {0} fallo(s):".format(len(fallos)))
@@ -424,7 +436,8 @@ def main():
                                     "homonimo": g.get("homonimo"),
                                     "refs": g.get("refs", []),
                                     "remite_a": g.get("remite_a")},
-                                   **({"en": g["en"]} if g.get("en") else {}))
+                                   **({"en": g["en"]} if g.get("en") else {}),
+                              **({"en_borrador": True} if g.get("en_borrador") else {}))
                               for g in gemelas]
 
     # ---- la vista alfabética única -------------------------------------
@@ -533,6 +546,7 @@ def main():
             "fecha": ing_nand.get("fecha"),
             "redactadas": nand_en_total,
             "adjudicadas": nand_en_adjudicadas,
+            "borradores": nand_en_borradores,
             "total": len(nand["entradas"]),
         },
         "agrupado": agrupado,
@@ -597,10 +611,12 @@ def main():
     if nand["entradas"] and nand_en_total:
         print("  inglés del Glosario de Nandisena: {0} de {1} entradas redactadas; "
               "{2} PUBLICADAS (tandas adjudicadas por {3}) y {4} sin adjudicar, "
-              "comprobadas y no publicadas (docs/glosario/ingles-por-adjudicar.md)"
+              "comprobadas y {5} (docs/glosario/ingles-por-adjudicar.md)"
               .format(nand_en_total, len(nand["entradas"]), nand_en_adjudicadas,
                       ing_nand.get("adjudicado_por") or "—",
-                      nand_en_total - nand_en_adjudicadas))
+                      nand_en_total - nand_en_adjudicadas,
+                      "publicadas como borrador, rotuladas «draft»" if nand_en_borradores
+                      else "no publicadas"))
     return 0
 
 
