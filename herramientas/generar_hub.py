@@ -75,6 +75,7 @@ T = {
             "Sin las notas al pie: están en la tarjeta del capítulo.",
         "titulo_sitio": "Gramáticas Pāḷi",
         "cap_de": "capítulo {n} de 8",
+        "volver_inicio": "Volver al inicio",
     },
     "en": {
         "inicio": "Home", "migas": "Breadcrumb", "anterior": "Previous sutta",
@@ -96,6 +97,7 @@ T = {
             "Without the footnotes: they are on the chapter card.",
         "titulo_sitio": "Pāḷi Grammars",
         "cap_de": "chapter {n} of 8",
+        "volver_inicio": "Back to top",
     },
 }
 
@@ -434,6 +436,7 @@ return /^en\\b/i.test(n)?'en':'es';}}
 try{{if(paliLang()==='{otra_lang}')location.replace('{otra_url}'+location.hash)}}catch(e){{}}</script>
 <button id="dark-btn" type="button" aria-label="{tema}" onclick="document.body.classList.toggle('dark');try{{localStorage.setItem('pali_dark',document.body.classList.contains('dark')?'1':'0')}}catch(e){{}}">◐</button>
 <a id="lang-btn" href="{otra_url}" onclick="try{{localStorage.setItem('pali_lang','{otra_lang}')}}catch(e){{}};this.href='{otra_url}'+location.hash">{otra_lang_may}</a>
+<button aria-label="{volver_inicio}" id="top-btn" type="button" onclick="volverArriba()" title="{volver_inicio}">↑</button>
 <main class="hub">
 {cuerpo}
 <div class="idx-foot hub-pie">
@@ -442,6 +445,14 @@ try{{if(paliLang()==='{otra_lang}')location.replace('{otra_url}'+location.hash)}
 </div>
 </main>
 <script>
+/* Botón flotante «volver al inicio», como en los capítulos (aquí no se carga
+   pali.js): aparece al bajar; salto inmediato si se está lejos o si se pide
+   menos movimiento. */
+function volverArriba(){{var q=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var l=window.scrollY>=window.innerHeight*2;
+try{{window.scrollTo({{top:0,behavior:(l||q)?'instant':'smooth'}})}}catch(e){{window.scrollTo(0,0)}}}}
+window.addEventListener('scroll',function(){{var b=document.getElementById('top-btn');
+if(b)b.classList.toggle('show',window.scrollY>600);}},{{passive:true}});
 /* «Preguntar»: la misma sonda que el análisis —GET /api/preguntar?json=1 con
    redirect:'manual'; sin sesión, Access redirige y no se lee nada—. Sólo
    cambia el texto de la línea de estado; la pregunta se hace en el análisis. */
@@ -561,6 +572,7 @@ def pagina(n, lengua, s, conc_s, info, prev, sig, citas_html, hubs, kanda_nombre
         lang=lengua, titulo=e(titulo), descripcion=e(re.sub(r"\s+", " ", descripcion)),
         raiz=raiz, v=cabecera.version_assets(), otra_lang=otra, otra_url=otra_url,
         otra_lang_may=otra.upper(), tema=e(cabecera.TEXTOS[lengua]["tema"]),
+        volver_inicio=e(t["volver_inicio"]),
         cuerpo=cuerpo,
         copyright=GC.COPYRIGHT_EN if lengua == "en" else GC.COPYRIGHT,
         preg_ok=json.dumps(t["preg_ok"], ensure_ascii=False),

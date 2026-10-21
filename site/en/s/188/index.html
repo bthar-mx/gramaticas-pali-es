@@ -53,6 +53,7 @@ return /^en\b/i.test(n)?'en':'es';}
 try{if(paliLang()==='es')location.replace('/s/188/'+location.hash)}catch(e){}</script>
 <button id="dark-btn" type="button" aria-label="Dark mode" onclick="document.body.classList.toggle('dark');try{localStorage.setItem('pali_dark',document.body.classList.contains('dark')?'1':'0')}catch(e){}">◐</button>
 <a id="lang-btn" href="/s/188/" onclick="try{localStorage.setItem('pali_lang','es')}catch(e){};this.href='/s/188/'+location.hash">ES</a>
+<button aria-label="Back to top" id="top-btn" type="button" onclick="volverArriba()" title="Back to top">↑</button>
 <main class="hub">
 <div class="hub-cab"><nav class="hub-migas" aria-label="Breadcrumb"><ol><li><a href="../../../?lang=en">Home</a></li><li><a href="../../../kaccayana/?lang=en">Kaccāyana</a></li><li><a href="../../../en/kaccayana/nama/">Nāma-Kappa</a></li><li><a href="../../../en/kaccayana/nama/#kanda-3">Tatiya-Kaṇḍa</a></li><li aria-current="page">§188</li></ol></nav><div class="hub-pasos"><a class="hub-paso prev" href="../187/" rel="prev" aria-label="Previous sutta: §187 Sesesu ntu ’va"><span aria-hidden="true">←</span> §187 <i>Sesesu ntu ’va</i></a><a class="hub-paso sig" href="../189/" rel="next" aria-label="Next sutta: §189 Sy ā ca"><i>Sy ā ca</i> §189 <span aria-hidden="true">→</span></a></div></div>
 <header class="hub-titulo">
@@ -77,6 +78,14 @@ try{if(paliLang()==='es')location.replace('/s/188/'+location.hash)}catch(e){}</s
 </div>
 </main>
 <script>
+/* Botón flotante «volver al inicio», como en los capítulos (aquí no se carga
+   pali.js): aparece al bajar; salto inmediato si se está lejos o si se pide
+   menos movimiento. */
+function volverArriba(){var q=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var l=window.scrollY>=window.innerHeight*2;
+try{window.scrollTo({top:0,behavior:(l||q)?'instant':'smooth'})}catch(e){window.scrollTo(0,0)}}
+window.addEventListener('scroll',function(){var b=document.getElementById('top-btn');
+if(b)b.classList.toggle('show',window.scrollY>600);},{passive:true});
 /* «Preguntar»: la misma sonda que el análisis —GET /api/preguntar?json=1 con
    redirect:'manual'; sin sesión, Access redirige y no se lee nada—. Sólo
    cambia el texto de la línea de estado; la pregunta se hace en el análisis. */
