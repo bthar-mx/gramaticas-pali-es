@@ -211,7 +211,7 @@ Dūratthe, antikatthe, addhanimmāne, kālanimmāne, tvālope, disāyoge, vibhat
 
 **Vivittatthe**: Vivitto pāpakā dhammā, vivicc eva kāmehi, vivicca akusalehi dhammehi icc evamādi.
 
-**Pamāṇe**: Dīghaso navavidatthiyo sugatavidatthiyā; pamāṇikā kāretabbā (Vin. ii, 225); majjhimassa purisassa aḍḍhateḷasahatthā icc evamādi.
+**Pamāṇe**: Dīghaso navavidatthiyo sugatavidatthiyā pamāṇikā kāretabbā (Vin. ii, 225); majjhimassa purisassa aḍḍhateḷasahatthā icc evamādi.
 
 **Pubbayoge**: Pubbe ’va sambodhā (M. i, 219; A. i, 261\) icc evamādi.
 
@@ -244,7 +244,7 @@ Examples:
 1. Kīvadūro **ito** Naḷakāragāmo (how far from here is the village of Naḷakāra?).
 2. **Dūrato** v’ āgamma (having come from far).
 3. Ārakā te moghapurisā **imasmā** **dhammavinayā** (those foolish men are far away from this Dhamma-Vinaya).
-4. Also the second and the third \[inflection\] \[are used\]. Dūraṃ gāmaṃ āgato, dūrena gāmena vā āgato (\[he\] came from a far village). Ārakā imaṃ dhammavinayaṃ, anena dhammavinayena vā (far from this Dhamma-Vinaya), etc.
+4. Also the second and the third \[inflection\] \[are used\]. **Dūraṃ** **gāmaṃ** āgato, **dūrena** **gāmena** vā āgato (\[he\] came from a far village). Ārakā **imaṃ** **dhammavinayaṃ**, **anena** **dhammavinayena** vā (far from this Dhamma-Vinaya), etc.
 
 (2) **In the meaning of near**:
 
@@ -252,7 +252,7 @@ Examples:
 
 1. Antikaṃ **gāmā** (near the village); āsannaṃ **gāmā** (close to the village); samīpaṃ **gāmā** (next to the village).
 2. Samīpaṃ **saddhammā** (near the good Dhamma).
-3. Also the second and the third \[inflection\]. Antikaṃ gāmaṃ, antikaṃ gāmena vā. Āsannaṃ gāmaṃ, āsannaṃ gāmena vā. Samīpaṃ gāmaṃ, samīpaṃ gāmena vā. Samīpaṃ saddhammaṃ, samīpaṃ saddhammena vā, etc.
+3. Also the second and the third \[inflection\]. Antikaṃ **gāmaṃ**, antikaṃ **gāmena** vā. Āsannaṃ **gāmaṃ**, āsannaṃ **gāmena** vā. Samīpaṃ **gāmaṃ**, samīpaṃ **gāmena** vā. Samīpaṃ **saddhammaṃ**, samīpaṃ **saddhammena** vā, etc.
 
 (3) **In the measurement of distance**:
 
@@ -333,7 +333,7 @@ Examples:
 
 Examples:
 
-1. **Dīghaso** navavidatthiyo sugatavidatthiyā (in length, nine spans of the span of the Well-Gone One); pamāṇikā kāretabbā (it should be made according to the regular measurements); majjhimassa purisassa aḍḍhateḷasahatthā (twelve and a half cubits of the average man), etc.
+1. **Dīghaso** navavidatthiyo **sugatavidatthiyā** (in length, nine spans of the span of the Well-Gone One) pamāṇikā kāretabbā (it should be made according to the regular measurements); majjhimassa purisassa **aḍḍhateḷasahatthā** (twelve and a half cubits of the average man), etc.
 
 (14) **In connection with the past**:
 
@@ -346,7 +346,7 @@ Examples:
 Examples:
 
 1. **Satasmā** bandho naro (the man is imprisoned because of one hundred \[of debt\]).
-2. Also the third \[inflection\] \[is used\]. Satena bandho naro raññā iṇatthena (the man was imprisoned by the king because of a debt of one hundred), etc.
+2. Also the third \[inflection\] \[is used\]. **Satena** bandho naro raññā **iṇatthena** (the man was imprisoned by the king because of a debt of one hundred), etc.
 
 (16) **In the expression of quality \[both good and bad\]**:
 
@@ -363,7 +363,7 @@ Examples:
 
 1. **Abhidhammā** pucchanti (they ask about the Abhidhamma), Abhidhammaṃ sutvā, Abhidhamme ṭhatvā (pucchanti) vā (having listened to the Abhidhamma, or having stood on the Abhidhamma, they ask).
 2. **Vinayā** pucchanti (they ask about the Vinaya), vinayaṃ sutvā, vinaye ṭhatvā (pucchanti) vā (having listened to the Vinaya, or having stood on the Vinaya, they ask).
-3. Also the second and the third \[inflection\]. Abhidhammaṃ, abhidhammena vā. Vinayaṃ, vinayena vā. Likewise with the suttas, the geyyas, the gāthās, the veyyākaraṇas, the udānas, the itivuttakas, the jātakas, the abbhutadhammas and the vedallas, etc.
+3. Also the second and the third \[inflection\]. **Abhidhammaṃ**, **abhidhammena** vā. **Vinayaṃ**, **vinayena** vā. Likewise with the suttas, the geyyas, the gāthās, the veyyākaraṇas, the udānas, the itivuttakas, the jātakas, the abbhutadhammas and the vedallas, etc.
 
 (18) **In talking, when there is elision of \[a word ending in\] ‘tvā’**, \[also used\] in the object (kamma) and in the place (adhikaraṇa):
 
@@ -371,14 +371,14 @@ Examples:
 
 1. **Abhidhammā** kathayanti (they talk about the Abhidhamma), abhidhammaṃ sutvā, abhidhamme ṭhatvā (kathayanti) (having listened to the Abhidhamma, or having stood on the Abhidhamma, they talk).
 2. **Vinayā** kathayanti (they talk about the Vinaya), vinayaṃ sutvā, vinaye ṭhatvā (kathayanti) (having listened to the Vinaya, or having stood on the Vinaya, they talk).
-3. Also the second and the third \[inflection\] \[are used\]. Abhidhammaṃ, abhidhammena vā. Vinayaṃ, vinayena vā. Likewise with the suttas, the geyyas, the gāthās, the veyyākaraṇas, the udānas, the itivuttakas, the jātakas, the abbhutadhammas and the vedallas, etc.
+3. Also the second and the third \[inflection\] \[are used\]. **Abhidhammaṃ**, **abhidhammena** vā. **Vinayaṃ**, **vinayena** vā. Likewise with the suttas, the geyyas, the gāthās, the veyyākaraṇas, the udānas, the itivuttakas, the jātakas, the abbhutadhammas and the vedallas, etc.
 
 (19) **In little**:
 
 Examples:
 
 1. **Thokā** muccanti (they are liberated with little \[effort\]); **appamattakā** muccanti (they are liberated with not much); **kicchā** muccanti (they are liberated with difficulty).
-2. Also the third \[inflection\] \[is used\]. Thokena, appamattakena, kicchena vā, etc.
+2. Also the third \[inflection\] \[is used\]. **Thokena**, **appamattakena**, **kicchena** vā, etc.
 
 (20) **And in no-agent**:[^18]
 
@@ -643,7 +643,7 @@ Examples:
 1. **Gāmassa** pādena gato (gone to the village on foot); **nagarassa** pādena gato (gone to the city on foot).
 2. Appo **saggāya** gacchati (few go to heaven), **saggassa** gamanena vā (or by going to heaven).
 3. **Mūlāya** paṭikasseyya saṃgho (the Saṅgha should draw \[him\] back to the beginning).
-4. Also the second \[inflection\] \[is used\]. Gāmaṃ pādena gato, nagaraṃ pādena gato, appo saggaṃ gacchati, saggaṃ gamanena vā. Mūlaṃ paṭikasseyya saṃgho \[the same examples\], etc.
+4. Also the second \[inflection\] \[is used\]. **Gāmaṃ** pādena gato, **nagaraṃ** pādena gato, appo **saggaṃ** gacchati, **saggaṃ** gamanena vā. **Mūlaṃ** paṭikasseyya saṃgho \[the same examples\], etc.
 
 (17) **In the meaning of benediction**:
 
